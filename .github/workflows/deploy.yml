@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # 또는 배포를 원하는 브랜치명
+      - main  # or your deployment branch
 
 jobs:
   build-and-deploy:
@@ -22,9 +22,7 @@ jobs:
         run: npm install
 
       - name: Build Next.js app
-        run: |
-          npm run build
-          npm run export
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
