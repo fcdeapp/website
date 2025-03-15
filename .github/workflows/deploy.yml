@@ -16,7 +16,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  
+          node-version: '18'
+
+      # Create a .env file using GitHub Secrets
+      - name: Create .env file
+        run: |
+          echo "NEXT_PUBLIC_SERVER_URL=${{ secrets.NEXT_PUBLIC_SERVER_URL }}" > .env
 
       - name: Install dependencies
         run: npm install
