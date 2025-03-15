@@ -1,20 +1,25 @@
 // src/app/layout.tsx
 import React from "react";
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const pretendard = localFont({
+  src: [
+    {
+      path: "../public/fonts/Pretendard-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Pretendard-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-pretendard",
 });
 
-const robotoMono = Roboto_Mono({
-  variable: "--font-roboto-mono",
-  subsets: ["latin"],
-});
-
-// Metadata object for SEO, etc.
 export const metadata: Metadata = {
   title: "Facade",
   description: "Connecting people and cultures abroad.",
@@ -27,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${(inter as any).variable} ${(robotoMono as any).variable} antialiased`}>
+      <body className={`${pretendard.className} antialiased`}>
         {children}
       </body>
     </html>
