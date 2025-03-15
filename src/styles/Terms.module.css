@@ -1,59 +1,84 @@
-/* styles/Terms.module.css */
+/* src/styles/Terms.module.css */
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #F8F8FE;
-    padding: 0 1rem;
-  }
-  
-  .header {
-    padding: 2rem 0;
-    text-align: center;
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #0A1045;
-    margin: 0;
-  }
-  
-  .toggleButton {
-    margin-top: 1rem;
-    background-color: #F7F7F7;
-    color: #555;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .main {
-    flex: 1;
-    padding: 2rem 0;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .content {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .footer {
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #888;
-    background-color: #fff;
-    border-top: 1px solid #eee;
-  }
-  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8fe;
+  padding: 0 1rem;
+}
+
+.header {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0a1045;
+  margin: 0;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggleButton {
+  background-color: #f7f7f7;
+  color: #555;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggleButton:hover {
+  background-color: #e0e0e0;
+}
+
+.select {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Preserve line breaks in the terms content */
+.content p {
+  white-space: pre-wrap;
+}
+
+.footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
