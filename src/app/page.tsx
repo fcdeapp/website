@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
@@ -11,11 +13,11 @@ export default function Home() {
   const [modalImage, setModalImage] = useState<string | null>(null);
 
   const screenshots: Screenshot[] = [
-    { name: 'Map', src: '/public/screenshots/map.png' },
-    { name: 'Home', src: '/public/screenshots/home.png' },
-    { name: 'Create Event', src: '/public/screenshots/create.png' },
-    { name: 'Chat', src: '/public/screenshots/chat.png' },
-    { name: 'Profile', src: '/public/screenshots/profile.png' },
+    { name: 'Map', src: '/screenshots/map.png' },
+    { name: 'Home', src: '/screenshots/home.png' },
+    { name: 'Create Event', src: '/screenshots/create.png' },
+    { name: 'Chat', src: '/screenshots/chat.png' },
+    { name: 'Profile', src: '/screenshots/profile.png' },
   ];
 
   const openModal = (src: string) => {
