@@ -20,13 +20,8 @@ export default function Home() {
     { name: 'Profile', src: '/screenshots/profile.png' },
   ];
 
-  const openModal = (src: string) => {
-    setModalImage(src);
-  };
-
-  const closeModal = () => {
-    setModalImage(null);
-  };
+  const openModal = (src: string) => setModalImage(src);
+  const closeModal = () => setModalImage(null);
 
   return (
     <div className={styles.container}>
@@ -47,7 +42,8 @@ export default function Home() {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Why Facade?</h2>
           <p className={styles.sectionText}>
-            Facade is a mobile app and web service designed to help international students and workers overcome isolation and language barriers. With AI-based event recommendations, a trust badge system, and local buddy groups, we make it easy and safe to join offline gatherings.
+            Facade is a mobile app and web service designed to help international students and workers overcome isolation and language barriers.
+            With AI-based event recommendations, a trust badge system, and local buddy groups, we make it easy and safe to join offline gatherings.
           </p>
         </section>
 
