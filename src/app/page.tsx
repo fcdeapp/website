@@ -140,7 +140,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className={styles.footer}>
-        © {new Date().getFullYear()} Facade. All rights reserved.
+        © {new Date().getFullYear()} Doh Jung‑min. All rights reserved.
       </footer>
     </div>
   );
