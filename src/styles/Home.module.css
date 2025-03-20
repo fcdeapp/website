@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   background-color: #F8F8FE;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
 }
 
 /* Hero Section */
@@ -60,12 +60,17 @@
 /* Main Content */
 .main {
   flex: 1;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
+/* Section styling with generous whitespace & layering */
 .section {
   margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -80,6 +85,7 @@
   color: #555;
   margin: 0 auto;
   max-width: 800px;
+  line-height: 1.6;
 }
 
 /* Features & Journey Lists */
@@ -91,6 +97,7 @@
   color: #555;
   font-size: 1.1rem;
   padding-left: 1.5rem;
+  line-height: 1.6;
 }
 
 .featuresList li {
@@ -181,9 +188,17 @@
 /* Demo Video */
 .demoVideo {
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+/* For desktop: constrain demo video size */
+@media (min-width: 768px) {
+  .demoVideo {
+    max-width: 600px;
+  }
 }
 
 /* Call-to-Action Buttons */
@@ -223,4 +238,15 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Extra spacing for larger screens */
+@media (min-width: 1024px) {
+  .main {
+    padding: 3rem;
+  }
+  .section {
+    margin-bottom: 4rem;
+    padding: 2.5rem;
+  }
 }
