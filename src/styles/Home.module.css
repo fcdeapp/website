@@ -381,7 +381,21 @@
     gap: 1rem;
   }
   .ctaButton {
+    max-width: 100%;
     width: 100%;
-    text-align: center;
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Reduce overall mobile font sizes */
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  .sectionText,
+  .featuresList,
+  .journeyList,
+  .betaSubtitle {
+    font-size: 0.95rem;
   }
 }
