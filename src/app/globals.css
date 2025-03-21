@@ -1,85 +1,107 @@
-/* Logo — much smaller, consistent padding */
-.logo {
-  height: 32px;
-  width: auto;
-  margin-right: 1rem;
-}
-
-/* Header background slightly darker for contrast */
+/* Make header sticky at the top with a subtle translucent blur */
 .header {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255,255,255,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(180%) blur(10px);
+  background-color: rgba(255,255,255,0.75);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-/* Right‑side action buttons */
-.action-buttons a {
-  font-size: 0.9rem;
-  font-weight: 600;
-  border-radius: 999px;
-  padding: 0.5rem 1.25rem;
-  transition: background .2s, color .2s;
-}
-
-.login-button {
-  background: transparent;
-  color: rgba(26,26,26,0.8);
-  border: 1px solid rgba(26,26,26,0.3);
-}
-
-.login-button:hover {
-  background: rgba(26,26,26,0.1);
-}
-
-.signup-button {
-  background: rgba(10,16,69,0.9);
-  color: #fff;
-}
-
-.signup-button:hover {
-  background: rgba(10,16,69,1);
-}
-
-/* Tweak nav‑links spacing & color */
-.nav-links a {
-  color: rgba(26,26,26,0.7);
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: rgba(26,26,26,1);
-}
-
-/* Reduce header padding for sleeker look */
+/* Main nav container (max width, centered) */
 .header-nav {
-  padding: 0.5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Link styling (bright & airy) */
+/* Logo: small, “big tech” style */
+.logo {
+  display: block;
+  height: 36px;
+  width: auto;
+}
+
+/* Center navigation links */
 .nav-links {
   display: flex;
-  gap: 2rem; /* wider gap between links */
+  gap: 2rem;
   align-items: center;
 }
-
-/* Logo */
-.header-nav img {
-  display: block;
+.nav-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.nav-links a:hover {
+  color: #000;
 }
 
-/* Dark‑mode fallback */
-@media (prefers-color-scheme: dark) {
-  .header {
-    background-color: rgba(26,26,26,0.6);
-  }
-  .nav-links a {
-    color: rgba(255,255,255,0.9);
-  }
+/* Right action buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.login-button,
+.signup-button {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.2s, opacity 0.2s;
 }
 
-/* Hide header on mobile (width <768px) */
+/* Login: outline style */
+.login-button {
+  color: #333;
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+.login-button:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Sign Up: filled style */
+.signup-button {
+  color: #fff;
+  background-color: #0A1045;
+  border: none;
+}
+.signup-button:hover {
+  opacity: 0.85;
+}
+
+/* Hide header on mobile (<768px) */
 @media (max-width: 767px) {
   .header {
     display: none;
+  }
+}
+
+/* Light/dark mode fallback */
+@media (prefers-color-scheme: dark) {
+  .header {
+    background-color: rgba(26,26,26,0.75);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.85);
+  }
+  .nav-links a:hover {
+    color: #fff;
+  }
+  .login-button {
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .login-button:hover {
+    background-color: rgba(255,255,255,0.1);
   }
 }
 
