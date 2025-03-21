@@ -88,7 +88,7 @@ export default function TermsPage() {
         )}
       </main>
       <footer className={styles.footer}>
-        © {new Date().getFullYear()} Facade. All rights reserved.
+        © {new Date().getFullYear()} Doh Jung‑min. All rights reserved.
       </footer>
     </div>
   );
