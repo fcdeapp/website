@@ -3,18 +3,21 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="header">
-      <nav className="header-nav container mx-auto flex items-center justify-between">
+      <nav className="header-nav">
+        {/* Left: Logo */}
         <Link href="/">
           <img src="/FacadeWebLogo.png" alt="Facade Logo" className="logo" />
         </Link>
 
-        <div className="nav-links flex gap-8">
+        {/* Center: Nav Links */}
+        <div className="nav-links">
           <Link href="/about">About</Link>
           <Link href="/posts">Posts</Link>
           <Link href="/terms">Terms</Link>
         </div>
 
-        <div className="action-buttons flex gap-4">
+        {/* Right: Action Buttons */}
+        <div className="action-buttons">
           <Link href="/login">
             <a className="login-button">Login</a>
           </Link>
