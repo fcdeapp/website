@@ -55,6 +55,11 @@
   }
 }
 
+/* Prevent unwanted horizontal scrolling everywhere */
+html, body {
+  overflow-x: hidden;
+}
+
 /* Prevent content bleeding under notch on iOS Safari / in‑app browsers */
 @supports(padding: env(safe-area-inset-top)) {
   body {
