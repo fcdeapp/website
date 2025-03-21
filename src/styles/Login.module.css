@@ -1,50 +1,87 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 2rem;
-  background: #F8F8FE;
-}
-.form {
-  background: #fff;
-  padding: 3rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  width: 100%;
-  max-width: 400px;
-}
-.title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: center;
-  color: #0A1045;
-}
-.field {
-  margin-bottom: 1.5rem;
-}
-.field label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
-.field input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-.error { color: #E53E3E; font-size: 0.875rem; margin-top: 0.5rem; }
-.submit {
-  width: 100%;
-  padding: 0.75rem;
-  background: #0A1045;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: background 0.2s;
-}
-.submit:disabled { background: #A0AEC0; }
-.submit:hover:not(:disabled) { background: #08174a; }
-.footerText { margin-top: 1rem; text-align: center; font-size: 0.875rem; }
-.footerText a { color: #3C5AFE; font-weight: 600; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #F8F8FE;
+    padding: 2rem;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0A1045;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .rules {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .rulePass { color: #4CAF50; }
+  .ruleFail { color: #E53E3E; }
+  
+  .strengthBar {
+    width: 100%;
+    height: 6px;
+    background: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  
+  .strength0 { width: 0%; }
+  .strength1 { width: 20%; background: #E53E3E; }
+  .strength2 { width: 40%; background: #F6AD55; }
+  .strength3 { width: 60%; background: #ECC94B; }
+  .strength4 { width: 80%; background: #68D391; }
+  .strength5 { width: 100%; background: #48BB78; }
+  
+  .submit {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #0A1045;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .submit:disabled {
+    background: #A0AEC0;
+    cursor: not-allowed;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }
+  
