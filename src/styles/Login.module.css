@@ -4,16 +4,14 @@
     align-items: center;
     min-height: 100vh;
     background: #F8F8FE;
-    /* 필요하다면 최대 폭 제한: */
+    padding: 0 1rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
   }
   
   .form {
     width: 100%;
     max-width: 360px;
-    margin: 0;
     background: #fff;
     padding: 3rem;
     border-radius: 16px;
@@ -21,7 +19,7 @@
   }
   
   .passwordWrapper {
-    position: relative; /* 토글 버튼 절대배치 기준 */
+    position: relative;
   }
   
   .toggleButton {
@@ -35,13 +33,7 @@
     border-radius: 9999px;
     border: 1px solid rgba(10,16,69,0.2);
     background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    transition: background 0.15s, box-shadow 0.15s;
     cursor: pointer;
-  }
-  .toggleButton:hover {
-    background: rgba(10,16,69,0.05);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
   }
   
   .title {
@@ -66,21 +58,15 @@
     margin-bottom: 1rem;
   }
   
-  /* 비밀번호 규칙 리스트 */
   .rules {
     list-style: none;
     padding-left: 0;
     margin-bottom: 1rem;
   }
   
-  .rulePass {
-    color: #4CAF50;
-  }
-  .ruleFail {
-    color: #E53E3E;
-  }
+  .rulePass { color: #4CAF50; }
+  .ruleFail { color: #E53E3E; }
   
-  /* 비밀번호 강도 막대 */
   .strengthBar {
     width: 100%;
     height: 6px;
@@ -90,7 +76,17 @@
     margin-bottom: 1.5rem;
   }
   
-  /* 규칙 몇 개 만족했는지에 따라 너비/색 다르게 */
+  /* Inner bar must fill parent height */
+  .strength0,
+  .strength1,
+  .strength2,
+  .strength3,
+  .strength4,
+  .strength5 {
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+  
   .strength0 { width: 0%; }
   .strength1 { width: 20%; background: #E53E3E; }
   .strength2 { width: 40%; background: #F6AD55; }
@@ -107,8 +103,8 @@
     color: #fff;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s;
   }
+  
   .submit:disabled {
     background: #A0AEC0;
     cursor: not-allowed;
