@@ -1,3 +1,8 @@
+  /* Make width/padding/border all count inside the same 100% */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
   .container {
     display: flex;
     justify-content: center;
@@ -5,8 +10,8 @@
     min-height: 100vh;
     background: #F8F8FE;
     padding: 0 1rem;
-    max-width: 1200px;       /* 전체 페이지 너비 제한 */
-    margin: 0 auto;         /* 페이지 중앙 정렬 */
+    max-width: 1200px;      
+    margin: 0 auto;   
   }
   
   .form {
