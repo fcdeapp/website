@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* Make header sticky at the top with a subtle translucent blur */
 .header {
   position: sticky;
