@@ -4,20 +4,17 @@
     align-items: center;
     min-height: 100vh;
     background: #F8F8FE;
+    padding: 0 2rem; /* ← 좌·우 여백 균형을 위해 추가 */
   }
   
   .form {
     width: 100%;
     max-width: 360px;
-    margin: 0 1rem;
+    margin: 0 auto; /* ← 좌우 자동 중앙 정렬 */
     background: #fff;
     padding: 3rem;
     border-radius: 16px;
     box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-  }
-  
-  .passwordWrapper {
-    position: relative;
   }
   
   .toggleButton {
@@ -25,12 +22,26 @@
     top: 50%;
     right: 0.75rem;
     transform: translateY(-50%);
-    border: none;
-    background: transparent;
-    font-size: 0.875rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    border: 1px solid rgba(10,16,69,0.2);
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background 0.2s, box-shadow 0.2s;
     cursor: pointer;
-  }  
-
+  }
+  
+  .toggleButton:hover {
+    background: rgba(10,16,69,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .passwordWrapper {
+    position: relative;
+  }
+  
   .title {
     font-size: 2rem;
     font-weight: 700;
