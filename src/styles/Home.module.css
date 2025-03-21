@@ -312,61 +312,32 @@
 /* Responsive Styles for Mobile */
 /* --------------------------- */
 @media (max-width: 767px) {
-  /* Hero Section - 고정 높이 제거, 최소 높이로 */
-  .hero {
-    height: auto;
-    min-height: 50vh;
-  }
-  .heroOverlay {
-    padding: 1.5rem;
-  }
-  .title {
-    font-size: 2.5rem;
-  }
-  .subtitle {
-    font-size: 1.25rem;
-  }
-  
-  /* Main Content & Sections */
+  /* Remove vertical line by making sections full‑width */
   .main {
+    max-width: 100%;
     padding: 1rem;
   }
   .section {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-  }
-  .sectionTitle {
-    font-size: 2rem;
-  }
-  .sectionText {
-    font-size: 1.1rem;
-  }
-  .featuresList,
-  .journeyList {
-    font-size: 1rem;
-    padding-left: 1rem;
-  }
-  
-  /* Screenshots Grid */
-  .screenshotsGrid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-  
-  /* Beta Section */
-  .betaSection {
-    padding: 2rem 1rem;
-  }
-  .betaCard {
-    padding: 2rem 1.5rem;
-  }
-  
-  /* Call-to-Action Buttons: Stack vertically */
-  .ctaButtons {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .ctaButton {
     width: 100%;
-    text-align: center;
+    margin: 0 0 2rem;
+    border-radius: 12px;
+  }
+
+  /* Horizontal scroll for screenshots */
+  .screenshotsGrid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    margin: 0 -1rem;
+  }
+  .screenshotItem {
+    flex: 0 0 auto;
+    min-width: 160px;
+    scroll-snap-align: start;
+    margin-left: 1rem;
+  }
+  .screenshotItem:first-child {
+    margin-left: 0;
   }
 }
