@@ -300,11 +300,31 @@
 /* Extra spacing for larger screens */
 @media (min-width: 1024px) {
   .main {
-    padding: 3rem;
+    padding: 4rem 2rem;
   }
+
   .section {
-    margin-bottom: 5rem;
-    padding: 3.5rem 3rem;
+    max-width: 50vw;           /* occupy half the viewport */
+    margin: 0 auto 5rem;       /* center + bottom spacing */
+    padding: 4rem 3rem;        /* extra padding */
+  }
+
+  .sectionTitle {
+    font-size: 2.25rem;        /* slightly smaller heading */
+  }
+
+  .sectionText {
+    font-size: 1rem;           /* reduce body text */
+    max-width: 600px;          /* narrower line‑length for readability */
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+
+  .featuresList,
+  .journeyList {
+    font-size: 1rem;           /* smaller list text */
+    max-width: 500px;
+    margin: 2rem auto;
   }
 }
 
