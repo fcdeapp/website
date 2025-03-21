@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import styles from '../../styles/Login.module.css';
 
 type PasswordRules = { label: string; regex: RegExp };
@@ -15,6 +16,7 @@ const RULES: PasswordRules[] = [
 ];
 
 export default function LoginPage() {
+  const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [valid, setValid] = useState(false);
@@ -29,11 +31,32 @@ export default function LoginPage() {
     setValid(username.length >= 6 && completedCount === RULES.length);
   }, [username, completedCount]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!valid) return;
-    // TODO: 실제 로그인 처리 로직
-    alert('로그인 로직 실행!');
+
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_SERVER_URL || ''}/auth/web/login`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include', // <— important to store HttpOnly cookie
+          body: JSON.stringify({ username, password })
+        }
+      );
+
+      const data = await res.json();
+
+      if (res.ok) {
+        router.push('/');
+      } else {
+        alert(data.message || 'Login failed');
+      }
+    } catch (error) {
+      console.error('Login error', error);
+      alert('Network error — please try again.');
+    }
   };
 
   return (
