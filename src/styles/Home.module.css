@@ -341,6 +341,11 @@
     margin: 0 0 2rem;
     border-radius: 12px;
   }
+  .sectionText {
+    max-width: 100%;      /* remove fixed cap */
+    padding: 0 1rem;      /* horizontal breathing room */
+    overflow-wrap: break-word; /* prevent awkward overflow */
+  }
   /* Horizontal scroll for screenshots */
   .screenshotsGrid {
     display: flex;
