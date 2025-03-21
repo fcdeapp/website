@@ -312,7 +312,6 @@
 /* Responsive Styles for Mobile */
 /* --------------------------- */
 @media (max-width: 767px) {
-  /* Remove vertical line by making sections full‑width */
   .main {
     max-width: 100%;
     padding: 1rem;
@@ -339,5 +338,23 @@
   }
   .screenshotItem:first-child {
     margin-left: 0;
+  }
+  
+  /* Beta Section */
+  .betaSection {
+    padding: 2rem 1rem;
+  }
+  .betaCard {
+    padding: 2rem 1.5rem;
+  }
+  
+  /* Call-to-Action Buttons: Stack vertically */
+  .ctaButtons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .ctaButton {
+    width: 100%;
+    text-align: center;
   }
 }
