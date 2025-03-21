@@ -108,27 +108,29 @@ export default function Home() {
 
         {/* Download & Signup Call-to-Action → Beta Signup */}
         <section className={styles.betaSection}>
-          <h2 className={styles.sectionTitle}>Join Our Closed Beta</h2>
-          <p className={styles.sectionText}>
-            Facade is currently in beta testing — help us shape the product by giving feedback on new features before public release.
-          </p>
-          <div className={styles.ctaButtons}>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.ctaButton}
-            >
-              Apply for Beta (KR)
-            </a>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe489LaaOkRxUXYFx64aEee5Q5_IhKmMPKrb6--P8sSrHNGfQ/viewform?usp=dialog"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.ctaButton}
-            >
-              Apply for Beta (EN)
-            </a>
+          <div className={styles.betaCard}>
+            <h2 className={styles.betaTitle}>Join Our Closed Beta</h2>
+            <p className={styles.betaSubtitle}>
+              Help shape Facade by testing upcoming features before anyone else — your feedback matters!
+            </p>
+            <div className={styles.ctaButtons}>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.ctaButton}
+              >
+                Apply for Beta (KR)
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe489LaaOkRxUXYFx64aEee5Q5_IhKmMPKrb6--P8sSrHNGfQ/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.ctaButton}
+              >
+                Apply for Beta (EN)
+              </a>
+            </div>
           </div>
         </section>
       </main>
