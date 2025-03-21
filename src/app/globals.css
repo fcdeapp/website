@@ -21,7 +21,7 @@
 .nav-links a {
   font-size: 0.95rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.85);
+  color: rgba(26,26,26,0.6);
 }
 .nav-links a:hover {
   opacity: 0.6;
@@ -39,5 +39,12 @@
   }
   .nav-links a {
     color: rgba(255,255,255,0.9);
+  }
+}
+
+/* Hide header on mobile (width <768px) */
+@media (max-width: 767px) {
+  .header {
+    display: none;
   }
 }
