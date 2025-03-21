@@ -1,3 +1,22 @@
+/* ------------------------------------ */
+/* 1) 전역 리셋 & viewport 대응 (예시)   */
+/* ------------------------------------ */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 모바일에서 이상한 수평 스크롤이 생기는 경우 방지 */
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* ------------------------------------ */
+/* 2) 기존 CSS                          */
+/* ------------------------------------ */
+
 /* Global Container & Typography */
 .container {
   min-height: 100vh;
@@ -11,6 +30,7 @@
 .hero {
   position: relative;
   width: 100%;
+  /* height: 65vh; -> 데스크톱 기준이지만, 모바일에선 별도 처리 */
   height: 65vh;
   background-image: url('/getty-images-J6t63pNs5t0-unsplash.jpg');
   background-size: cover;
@@ -311,9 +331,10 @@
 /* Responsive Styles for Mobile */
 /* --------------------------- */
 @media (max-width: 767px) {
-  /* Adjust Hero Section */
+  /* Hero Section - 고정 높이 제거, 최소 높이로 */
   .hero {
-    height: 50vh;
+    height: auto;
+    min-height: 50vh;
   }
   .heroOverlay {
     padding: 1.5rem;
