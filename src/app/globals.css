@@ -5,16 +5,53 @@
   margin-right: 1rem;
 }
 
-/* Navigation bar padding tightened */
-.header-nav {
-  max-width: 1200px;
-  padding: 0.75rem 1.5rem;
-}
-
 /* Header background slightly darker for contrast */
 .header {
   backdrop-filter: blur(10px);
   background-color: rgba(255,255,255,0.5);
+}
+
+/* Right‑side action buttons */
+.action-buttons a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  transition: background .2s, color .2s;
+}
+
+.login-button {
+  background: transparent;
+  color: rgba(26,26,26,0.8);
+  border: 1px solid rgba(26,26,26,0.3);
+}
+
+.login-button:hover {
+  background: rgba(26,26,26,0.1);
+}
+
+.signup-button {
+  background: rgba(10,16,69,0.9);
+  color: #fff;
+}
+
+.signup-button:hover {
+  background: rgba(10,16,69,1);
+}
+
+/* Tweak nav‑links spacing & color */
+.nav-links a {
+  color: rgba(26,26,26,0.7);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: rgba(26,26,26,1);
+}
+
+/* Reduce header padding for sleeker look */
+.header-nav {
+  padding: 0.5rem 1.5rem;
 }
 
 /* Link styling (bright & airy) */
@@ -22,15 +59,6 @@
   display: flex;
   gap: 2rem; /* wider gap between links */
   align-items: center;
-}
-
-.nav-links a {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: rgba(26,26,26,0.6);
-}
-.nav-links a:hover {
-  opacity: 0.6;
 }
 
 /* Logo */
