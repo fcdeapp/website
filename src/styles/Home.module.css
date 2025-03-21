@@ -321,25 +321,27 @@
     margin: 0 0 2rem;
     border-radius: 12px;
   }
-
   /* Horizontal scroll for screenshots */
   .screenshotsGrid {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 1rem;
-    margin: 0 -1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
   .screenshotItem {
-    flex: 0 0 auto;
-    min-width: 160px;
-    scroll-snap-align: start;
-    margin-left: 1rem;
+    flex: 0 0 45%;          /* two cards per row */
+    max-width: 45%;
+    box-sizing: border-box;
+    margin: 0;
   }
-  .screenshotItem:first-child {
-    margin-left: 0;
+  .screenshotImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;     /* avoid cropping */
+    border-radius: 12px;
   }
-  
   /* Beta Section */
   .betaSection {
     padding: 2rem 1rem;
