@@ -336,11 +336,6 @@
     max-width: 100%;
     padding: 1rem;
   }
-  .section {
-    width: 100%;
-    margin: 0 0 2rem;
-    border-radius: 12px;
-  }
   .sectionText {
     max-width: 100%;      /* remove fixed cap */
     padding: 0 1rem;      /* horizontal breathing room */
@@ -371,8 +366,17 @@
   .betaSection {
     padding: 2rem 1rem;
   }
+  .section,
   .betaCard {
-    padding: 2rem 1.5rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    margin: 0 0 2rem;
+  }
+  html, body, .container, .main {
+    overflow-x: hidden;
+    width: 100%;
   }
   
   /* Call-to-Action Buttons: Stack vertically */
