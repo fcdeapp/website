@@ -1,18 +1,42 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Header container */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background-color: rgba(255,255,255,0.6);
+  z-index: 50;
 }
 
+/* Navigation bar */
+.header-nav {
+  max-width: 1200px;
+  padding: 1rem 2rem;
+}
+
+/* Logo */
+.header-nav img {
+  display: block;
+}
+
+/* Link styling */
+.nav-links a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.9);
+  transition: opacity .2s;
+}
+
+.nav-links a:hover {
+  opacity: .75;
+}
+
+/* Dark‑mode fallback */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .header {
+    background-color: rgba(26,26,26,0.6);
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
+  .nav-links a {
+    color: rgba(255,255,255,0.9);
+  }
 }
