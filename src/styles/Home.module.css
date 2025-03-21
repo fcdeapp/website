@@ -212,23 +212,18 @@
 
 /* Call-to-Action Buttons */
 .ctaButtons {
-  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
-
 .ctaButton {
-  display: inline-block;
-  padding: 1rem 2.5rem;
+  padding: 1rem 3rem;
+  border-radius: 12px;
   background-color: #0A1045;
   color: #fff;
-  border-radius: 10px;
-  text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color .3s, transform .3s;
 }
-
 .ctaButton:hover {
   background-color: #08306b;
   transform: translateY(-2px);
