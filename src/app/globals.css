@@ -18,6 +18,12 @@
 }
 
 /* Link styling (bright & airy) */
+.nav-links {
+  display: flex;
+  gap: 2rem; /* wider gap between links */
+  align-items: center;
+}
+
 .nav-links a {
   font-size: 0.95rem;
   font-weight: 500;
@@ -46,5 +52,15 @@
 @media (max-width: 767px) {
   .header {
     display: none;
+  }
+}
+
+/* Prevent content bleeding under notch on iOS Safari / in‑app browsers */
+@supports(padding: env(safe-area-inset-top)) {
+  body {
+    padding-top: max(env(safe-area-inset-top), 1rem);
+    padding-left: max(env(safe-area-inset-left), 1rem);
+    padding-right: max(env(safe-area-inset-right), 1rem);
+    padding-bottom: max(env(safe-area-inset-bottom), 1rem);
   }
 }
