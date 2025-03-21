@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import styles from '../styles/Login.module.css';
+import styles from '../../styles/Login.module.css';
 
 export default function LoginPage() {
   const [username, setUsername] = useState('');
