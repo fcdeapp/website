@@ -11,7 +11,7 @@ export default function LoginPage() {
   const [valid, setValid] = useState(false);
 
   useEffect(() => {
-    const newErrors: any = {};
+    const newErrors: { username?: string; password?: string } = {};
     if (username && username.length < 6) newErrors.username = 'Username must be at least 6 characters';
     const pwdViolations: string[] = [];
     if (password.length < 8) pwdViolations.push('Min 8 characters');
