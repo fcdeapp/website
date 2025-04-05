@@ -11,7 +11,7 @@ import PasswordExpiredModal from "../components/PasswordExpiredModal";
 import axios from "axios";
 import { getDistrictNameFromCoordinates } from "../utils/locationUtils";
 import { useRouter } from "next/navigation";
-import "../globals.css";
+import "./globals.css";
 
 // Next.js 폰트 설정 (예시)
 import localFont from "next/font/local";
