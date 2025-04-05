@@ -226,7 +226,7 @@ const Post: React.FC = () => {
         <div className={styles.header}>
           <button className={styles.logoButton} onClick={() => { /* Owl click animation */ }}>
             <Lottie
-              animationData={require("assets/HomeOwlPink.json")}
+              animationData={require("/assets/HomeOwlPink.json")}
               loop={false}
               className={styles.owlAnimation}
               onComplete={() => {}}
