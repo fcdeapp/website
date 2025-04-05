@@ -8,8 +8,8 @@ import "./globals.css";
 // 클라이언트 전용 코드가 없다면 "use client"를 제거합니다.
 const pretendard = localFont({
   src: [
-    { path: "fonts/Pretendard-Regular.woff2", weight: "400", style: "normal" },
-    { path: "fonts/Pretendard-Bold.woff2", weight: "700", style: "normal" },
+    { path: "./public/fonts/Pretendard-Regular.woff2", weight: "400", style: "normal" },
+    { path: "./public/fonts/Pretendard-Bold.woff2", weight: "700", style: "normal" },
   ],
   variable: "--font-pretendard",
 });
