@@ -1,12 +1,8 @@
 // src/utils/distanceUtils.ts
-import * as Location from 'expo-location';
 import haversine from 'haversine-distance';
-import * as Localization from 'expo-localization';
-import { Platform } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';  
 
 /**
- * 현재 위치와 타겟 위치 간의 거리를 계산하는 함수
+ * 현재 위치와 타겟 위치 간의 거리를 계산하는 함수 (웹용)
  * @param latitude 타겟 위치의 위도
  * @param longitude 타겟 위치의 경도
  * @param t 다국어 번역 함수
@@ -18,37 +14,34 @@ export const calculateDistance = async (
   t: (key: string) => string
 ): Promise<string> => {
   try {
-    const token = await AsyncStorage.getItem('token');
+    const token = localStorage.getItem('token');
     if (!token) {
       console.log('Not logged in: skipping location fetch.');
-      return;
+      return '';
     }
 
-    const { status, canAskAgain } = await Location.getForegroundPermissionsAsync();
-    if (status !== 'granted') {
-      if (canAskAgain) {
-        // 재요청 가능하면 권한 재요청
-        const { status: requestStatus } = await Location.requestForegroundPermissionsAsync();
-        if (requestStatus !== 'granted') {
-          // 재요청 후에도 권한이 거부되면 기본 메시지 반환
-          return t('placeDetails.locationPermissionDenied');
+    // 브라우저의 Geolocation API를 프로미스로 감싸기
+    const getCurrentPosition = (): Promise<GeolocationPosition> => {
+      return new Promise((resolve, reject) => {
+        if (!navigator.geolocation) {
+          return reject(new Error('Geolocation is not supported by this browser.'));
         }
-      } else {
-        // 재요청 불가능한 상태라면 바로 종료
-        return t('placeDetails.locationPermissionDenied');
-      }
-    }
+        navigator.geolocation.getCurrentPosition(resolve, reject, {
+          enableHighAccuracy: true,
+        });
+      });
+    };
 
-    const location = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.High });
+    const position = await getCurrentPosition();
     const currentLocation = {
-      latitude: location.coords.latitude,
-      longitude: location.coords.longitude,
+      latitude: position.coords.latitude,
+      longitude: position.coords.longitude,
     };
     const targetLocation = { latitude, longitude };
     const distanceInMeters = haversine(currentLocation, targetLocation);
 
-    // expo-localization에서 제공하는 isMetric 속성을 사용
-    const isMetric = Localization.isMetric;
+    // 간단한 로케일 기반 미터법 여부 판별: 미국(en-US)인 경우 비미터법, 그 외는 미터법으로 가정
+    const isMetric = !navigator.language.includes('US');
 
     return formatDistance(distanceInMeters, isMetric);
   } catch (error) {

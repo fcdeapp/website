@@ -30,7 +30,6 @@ async function reverseGeocodeAsyncWeb(latitude: number, longitude: number): Prom
     throw new Error('Reverse geocoding failed');
   }
   const data = await response.json();
-  // OpenStreetMap의 응답을 expo-location의 reverseGeocodeAsync와 유사한 형태로 가공
   const address = data.address;
   return [{
     city: address.city || address.town || address.village || '',
