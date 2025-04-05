@@ -1,4 +1,7 @@
 // src/app/layout.tsx
+
+"use client";
+
 import React, { useEffect, useState, useRef } from "react";
 import type { Metadata } from "next";
 import { ConfigProvider } from "../context/ConfigContext";
