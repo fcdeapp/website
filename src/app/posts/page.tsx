@@ -14,8 +14,8 @@ import { getDistrictNameFromCoordinates } from "../../utils/locationUtils";
 import Lottie from "lottie-react";
 import styles from "../../styles/pages/Post.module.css";
 import ProfileWithFlag from "../../components/ProfileWithFlag";
+import homeOwlAnimationData from "../../../public/assets/HomeOwlPink.json";
 
-const homeOwlAnimation = "/assets/HomeOwlPink.json";
 
 const getScreenWidth = () =>
   typeof window !== "undefined" ? window.innerWidth : 375;
@@ -368,7 +368,7 @@ const Post: React.FC = () => {
             }}
           >
             <Lottie
-              animationData={homeOwlAnimation}
+              animationData={homeOwlAnimationData}
               loop={false}
               className={styles.owlAnimation}
               onComplete={() => {}}
