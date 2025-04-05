@@ -11,7 +11,6 @@ import PasswordExpiredModal from "../components/PasswordExpiredModal";
 import axios from "axios";
 import { getDistrictNameFromCoordinates } from "../utils/locationUtils";
 import { useRouter } from "next/navigation";
-import StartPage from "../components/StartPage";
 import "./globals.css";
 
 // Next.js 폰트 설정 (예시)
@@ -230,9 +229,6 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     };
   }, []);
 
-  // 기존의 /startPage로 이동하는 로직은 App.tsx와 로직을 맞추기 위해 제거합니다.
-  // (localStorage 체크 등은 StartPage 내부에서 처리)
-
   return (
     <html lang="en" className={pretendard.className}>
       <body>
@@ -257,7 +253,6 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               )}
               {/* 실제 콘텐츠 영역 */}
               <main>{children}</main>
-              {/* splash overlay: 래퍼 컴포넌트로 StartPage에 onFinish 전달 */}
               {showSplash && (
                 <div
                   style={{
@@ -268,9 +263,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     bottom: 0,
                     zIndex: 9999,
                   }}
-                >
-                  <StartPage onFinish={() => setShowSplash(false)} />
-                </div>
+                />
               )}
             </I18nextProvider>
           </ErrorBoundary>
