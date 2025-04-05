@@ -1,4 +1,4 @@
-// src/app/layout.server.tsx
+// src/app/layout.tsx
 import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
