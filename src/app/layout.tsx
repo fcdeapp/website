@@ -1,9 +1,7 @@
 // src/app/layout.tsx
-
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-import type { Metadata } from "next";
 import { ConfigProvider } from "../context/ConfigContext";
 import { I18nextProvider } from "react-i18next";
 import i18n from "../config/i18n";
@@ -25,10 +23,11 @@ const pretendard = localFont({
   variable: "--font-pretendard",
 });
 
-export const metadata: Metadata = {
-  title: "Facade",
-  description: "Connecting people and cultures abroad.",
-};
+// metadata export 제거 — 클라이언트 컴포넌트에서는 사용 불가합니다.
+// export const metadata: Metadata = {
+//   title: "Facade",
+//   description: "Connecting people and cultures abroad.",
+// };
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
@@ -42,7 +41,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const healthDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // localStorage는 클라이언트 전용이므로 useEffect에서 사용
+  // localStorage는 클라이언트 전용이므로, useEffect 내에서 사용
   const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || "https://yourserver.com";
 
   // 서버 상태 체크 (건강 체크)
@@ -199,7 +198,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     setupAxiosInterceptors();
   }, []);
 
-  // 앱 초기화: 서버 상태, 앱 버전 체크
+  // 앱 초기화: 서버 상태 및 앱 버전 체크
   useEffect(() => {
     const initializeApp = async () => {
       try {
@@ -236,7 +235,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     };
   }, []);
 
-  // StartPage 미리 보지 않았다면 /startPage로 이동 (Next.js 라우터 이용)
+  // 사용자가 아직 시작 페이지를 보지 않았다면 /startPage로 이동
   useEffect(() => {
     const seen = localStorage.getItem("hasSeenStartPage");
     if (seen !== "true") {
