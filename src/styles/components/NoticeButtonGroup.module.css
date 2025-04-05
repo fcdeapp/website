@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px 0;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 0 8px;
+    width: 40%;
+  }
+  
+  .verticalButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 6px;
+    background-color: #f8f8fe;
+    border-radius: 12px;
+    margin: 8px 0;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .horizontalButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    padding: 2px 16px;
+    justify-content: center;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    padding: 6px 0;
+    background-color: #f8f8fe;
+    border-radius: 12px;
+    margin: 8px 0;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    /* 만약 tintColor 효과가 필요하면, 미리 색상이 적용된 아이콘 사용 또는 CSS filter 적용 */
+  }
+  
+  .label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+  }
+  
+  .mapImage {
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  

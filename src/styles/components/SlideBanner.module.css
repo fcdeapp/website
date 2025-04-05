@@ -1,0 +1,80 @@
+.container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+  
+  .scrollContainer {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .slide {
+    scroll-snap-align: center;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .slideImage {
+    border-radius: 24px;
+    object-fit: cover;
+  }
+  
+  .textOverlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .indicatorContainer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .counterText {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  
+  .pauseButton {
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .pauseIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: invert(1);
+  }
+  

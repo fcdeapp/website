@@ -1,0 +1,61 @@
+.countryScroll {
+    margin-top: 10px;
+    overflow-x: auto;
+  }
+  
+  .countryScrollContainer {
+    display: flex;
+    padding: 0 10px;
+  }
+  
+  .countryButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    margin-right: 12px;
+    border: none;
+    border-radius: 25px; /* 기본 borderRadius */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: border-radius 200ms ease;
+    cursor: pointer;
+  }
+  
+  .selectedCountryButton {
+    border: 2px solid #0A1045;
+    border-radius: 12px;
+  }
+  
+  .countryFlag {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    object-fit: cover;
+  }
+  
+  .countryName {
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .checkMarkContainer {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: #1A1045;
+    border-radius: 10px;
+    padding: 2px 4px;
+    transition: transform 200ms ease;
+  }
+  
+  .checkMark {
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  

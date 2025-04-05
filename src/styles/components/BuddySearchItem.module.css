@@ -1,0 +1,92 @@
+.buddySearchItem {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-width: 300px;
+  }
+  
+  .buddyInfoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .buddyInfoTextContainer {
+    margin-left: 15px;
+    flex: 1;
+  }
+  
+  .buddyGroupName {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a1045;
+    margin-bottom: 5px;
+  }
+  
+  .buddyGroupDescription {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .memberCountText {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .memberListContainer {
+    margin-top: 10px;
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 5px;
+  }
+  
+  .memberProfileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .memberNickname {
+    font-size: 12px;
+    color: #1a1045;
+    margin-top: 5px;
+  }
+  
+  .joinRequestButton {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .buddyPageButton {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .removeBuddyButton {
+    background-color: #d8315b;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
