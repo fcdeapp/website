@@ -2,7 +2,7 @@
 
 import React from "react";
 import axios from "axios";
-import { useConfig } from "../../context/ConfigContext";
+import { useConfig } from "../context/ConfigContext";
 import styles from "../styles/components/ErrorBoundaryWrapper.module.css";
 
 interface ErrorBoundaryProps {
