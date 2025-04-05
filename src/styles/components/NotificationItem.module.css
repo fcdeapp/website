@@ -1,0 +1,134 @@
+.noticeFrame {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .noticeRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .buddyInfoButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .noticeGroupIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .noticeTitle {
+    flex: 1;
+    font-size: 15px;
+    color: #1a1045;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .noticeFull {
+    margin-top: 10px;
+  }
+  
+  .noticeDescription {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .noticeImageExample {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  
+  .meetingDetails {
+    margin-top: 15px;
+    background-color: #f8f8fe;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  
+  .meetingDetailTitle {
+    font-size: 14px;
+    color: #1a1045;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .meetingDetailContent {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .feedbackForm {
+    margin-top: 15px;
+  }
+  
+  .feedbackInput {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .feedbackButton {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .timeContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .timeText {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .detailDelete {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .deleteButton {
+    background: none;
+    border: none;
+    font-size: 12px;
+    color: #d8315b;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .feedbackButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

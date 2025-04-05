@@ -1,0 +1,93 @@
+.friendItem {
+    background-color: #fff;
+    border-radius: 25px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .rowContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .nickname {
+    font-size: 16px;
+    color: #1a1045;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  
+  .expandedContent {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  .infoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  
+  .infoBlock {
+    width: 48%;
+    margin-bottom: 16px;
+  }
+  
+  .sectionTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1045;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  .infoRow {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flagIcon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    object-fit: cover;
+  }
+  
+  .infoText {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .buttonRow {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .button {
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #555;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .pendingRequestText {
+    display: block;
+    text-align: center;
+    color: #999;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

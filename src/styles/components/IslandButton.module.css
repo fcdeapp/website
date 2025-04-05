@@ -1,0 +1,61 @@
+.container {
+    position: absolute;
+    height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 999;
+    border: 1px solid #ccc;
+    transition: width 300ms ease, transform 300ms ease;
+  }
+  
+  .touchArea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .gradientBackground {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    background: linear-gradient(to bottom right, #fff, #f7f7f7);
+  }
+  
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: width 300ms ease, opacity 300ms ease;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: grayscale(100%);
+  }
+  
+  .textContainer {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    transition: opacity 300ms ease;
+  }
+  
+  .text {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  

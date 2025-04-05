@@ -1,0 +1,55 @@
+.container {
+    margin: 15px 0;
+  }
+  
+  .topicToggleContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 8px 0;
+    overflow: hidden;
+  }
+  
+  .topicMarker {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 30px;
+    opacity: 0.6;
+    transition: left 300ms ease, width 300ms ease, background-color 300ms ease;
+  }
+  
+  .horizontalScroll {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 11px;
+  }
+  
+  .topicButton {
+    flex: none;
+    padding: 10px 20px;
+    margin: 0 6px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    scroll-snap-align: center;
+    cursor: pointer;
+    transition: background-color 300ms ease, border-color 300ms ease;
+  }
+  
+  .selectedButton {
+    background-color: currentColor;
+    border-color: currentColor;
+  }
+  
+  .topicText {
+    font-weight: 600;
+    color: #333;
+  }
+  

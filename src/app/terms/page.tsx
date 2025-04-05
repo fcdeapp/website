@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import styles from "../../styles/Terms.module.css";
+import styles from "../../styles/pages/Terms.module.css";
 
 type TermsType = "service" | "privacy" | "community";
 

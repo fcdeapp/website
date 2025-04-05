@@ -1,0 +1,235 @@
+.pollItem {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #FFF;
+    margin: 10px 0;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+  .pollTitle {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .pollDescription {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .metaContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+  }
+  
+  .metaItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  
+  .metaIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    filter: brightness(0.7);
+  }
+  
+  .metaText {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  }
+  
+  .legendContainer {
+    margin-left: 20px;
+  }
+  
+  .legendItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .legendColorBox {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  
+  .legendText {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .optionButton {
+    position: relative;
+    padding: 12px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    margin: 6px 0;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .selectedOptionButton {
+    background-color: rgba(216, 49, 91, 0.8);
+  }
+  
+  .optionText {
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .selectedOptionText {
+    color: #FFF;
+  }
+  
+  .selectionRate {
+    font-size: 13px;
+    color: #555;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+  }
+  
+  .rippleEffect {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(216, 49, 91, 0.6);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: ripple 0.5s ease-out;
+  }
+  
+  @keyframes ripple {
+    from {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 1;
+    }
+    to {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+    }
+  }
+  
+  .iconContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .iconPoll {
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .actionsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .actionButton {
+    background-color: rgba(216, 49, 91, 0.8);
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .deleteButton {
+    background-color: #555;
+  }
+  
+  .resultsContainer {
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .chartContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .chartWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .modalContainer {
+    width: 80%;
+    max-width: 400px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+  }
+  
+  .modalTitle {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .voterItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  
+  .voterImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .closeButton {
+    padding: 8px 15px;
+    background-color: rgba(216, 49, 91, 0.8);
+    border: none;
+    border-radius: 8px;
+    color: #FFF;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .closeModalText {
+    font-size: 16px;
+  }
+  

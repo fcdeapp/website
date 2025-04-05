@@ -1,0 +1,90 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContainer {
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+  
+  .modalHeader {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #212121;
+  }
+  
+  .infoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .infoLabel {
+    font-size: 16px;
+    font-weight: 600;
+    color: #424242;
+  }
+  
+  .infoText {
+    font-size: 16px;
+    color: #424242;
+  }
+  
+  .modalInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fafafa;
+    resize: vertical;
+    margin-bottom: 15px;
+  }
+  
+  .modalButtonContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .primaryButton {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 5px;
+    background: linear-gradient(to right, #ff7e5f, #fd3a69);
+  }
+  
+  .cancelButton {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: #121212;
+  }
+  
+  .buttonText {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

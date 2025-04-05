@@ -1,0 +1,360 @@
+/* PostMain.module.css */
+
+.box {
+    margin-bottom: 20px;
+    padding-left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    border-radius: 30px;
+    border: 3px solid #fff;
+  }
+  
+  .cardContainer {
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .postMain {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    overflow: hidden;
+    /* 웹에서는 box-shadow로 그림자 효과 적용 */
+    box-shadow: 3px 6px 12px rgba(216, 49, 91, 0.3);
+  }
+  
+  .postContent {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .transparentBackground {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .textContent {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .authorInformation {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .profileImage {
+    margin-right: 10px;
+    margin-top: 10px;
+    /* 간단한 그림자 효과 */
+    box-shadow: 6px 6px 10px rgba(216, 49, 91, 0.1);
+  }
+  
+  .author {
+    background-color: transparent;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .authorText {
+    margin-top: 15px;
+    color: #333;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .timeCategoryText {
+    color: #666;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .postTextSet {
+    width: 60%;
+    margin: 15px 1px;
+  }
+  
+  .postTitle {
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  
+  .postContents {
+    color: #666;
+    font-weight: 300;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  
+  .postTextImageSet {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .postInformation {
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .iconInfo,
+  .iconInfoAll {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .iconInfoAll {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  
+  .iconText {
+    color: #888;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 8px;
+    align-self: center;
+    letter-spacing: 0.4px;
+    padding: 0 4px;
+    opacity: 0.9;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .mapIcon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .postImage {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .postImageCover {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: transparent;
+    margin-right: 10px;
+  }
+  
+  /* Recruitment Badge */
+  .recruitmentBadge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #FF7E5F, #FD3A69);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .badgeIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .recruitmentBadgeText {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  /* Circle / Progress indicator (if not using a library) */
+  .circleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  /* Marquee */
+  .marqueeContainer {
+    overflow: hidden;
+  }
+  
+  .marqueeWrapper {
+    display: inline-flex;
+  }
+  
+  .marqueeText {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  /* Floating Heart */
+  .floatingHeart {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    filter: hue-rotate(0deg);
+  }
+  
+  /* Map styles */
+  .mapBackground {
+    width: 100%;
+    height: 200px;
+    z-index: 10;
+  }
+  
+  .mapPreviewContainer {
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .mapImage {
+    width: 100%;
+    height: 150px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: -140px;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .mapOverlay {
+    position: absolute;
+    bottom: -50px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 4px 8px;
+    border-radius: 5px;
+    z-index: 2;
+  }
+  
+  .distanceOverlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  
+  .distanceText {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* Transparent background (used on map overlay) */
+  .transparentBackground {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Map place text */
+  .mapPlaceText {
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin-right: 10px;
+    text-align: left;
+  }
+  
+  /* Icon row & Place row */
+  .iconRow,
+  .placeRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px;
+    margin-top: 10px;
+  }
+  
+  /* Applicants section */
+  .applicantsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    padding: 10px;
+    background-color: #f8f8fe;
+    border-top-left-radius: 24px;
+    width: 100%;
+  }
+  
+  .appilcantsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 40px;
+  }
+  
+  .appilcantsText {
+    margin-left: 5px;
+    color: #d8315b;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  /* Author info */
+  .authorText {
+    margin-top: 15px;
+    color: #333;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .timeCategoryText {
+    color: #666;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  /* Post text */
+  .postTextSet {
+    width: 60%;
+    margin: 15px 1px;
+  }
+  
+  .postTitle {
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+  
+  .postContents {
+    color: #666;
+    font-weight: 300;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  
+  /* Scroll container if needed */
+  .scrollContainer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  

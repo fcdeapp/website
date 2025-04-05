@@ -1,0 +1,58 @@
+.container {
+    margin: 15px 0;
+  }
+  
+  .topicToggleContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .slider {
+    position: absolute;
+    border-radius: 30px;
+    transition: left 300ms ease, width 300ms ease, background-color 300ms ease;
+  }
+  
+  .sliderGradient {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(to right, #e8e8e8, #dcdcdc);
+  }
+  
+  .horizontalScroll {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 11px;
+  }
+  
+  .topicButton {
+    flex: none;
+    padding: 10px 20px;
+    margin: 0 6px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    scroll-snap-align: center;
+    cursor: pointer;
+    transition: background-color 300ms ease, border-color 300ms ease;
+  }
+  
+  .itemText {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .selectedButton {
+    /* 선택된 버튼에 대한 추가 스타일을 필요 시 추가하세요 */
+    color: #222;
+    font-weight: 700;
+  }
+  

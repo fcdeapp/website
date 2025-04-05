@@ -1,0 +1,253 @@
+/* BuddyGroupDetailModal.module.css */
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContainer {
+    width: 90%;
+    max-height: 85vh;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .scrollContainer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .closeIcon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1045;
+    text-align: center;
+  }
+  
+  .buddyGroupLoadingContainer {
+    width: 90%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 0 auto;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-left-color: #d8315b;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loadingText {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #1a1045;
+    font-weight: 400;
+  }
+  
+  .errorContainer {
+    width: 90%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .errorText {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .retryButton {
+    background-color: #d8315b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .retryButtonText {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .detailsContainer {
+    width: 100%;
+  }
+  
+  .mapContainer {
+    margin-bottom: 20px;
+    height: 150px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .map {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+  }
+  
+  .mapOverlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: rgba(216, 49, 91, 0.8);
+    border-radius: 8px;
+  }
+  
+  .mapOverlayText {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .groupImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-right: 16px;
+    object-fit: cover;
+  }
+  
+  .groupTextContainer {
+    flex: 1;
+  }
+  
+  .groupTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1045;
+    margin: 0;
+  }
+  
+  .groupDescription {
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-top: 4px;
+  }
+  
+  .sectionTitle {
+    font-size: 18px;
+    color: #1a1045;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .memberList {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 10px;
+    margin-bottom: 16px;
+  }
+  
+  .memberCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .memberNickname {
+    font-size: 14px;
+    color: #1a1045;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .goToBuddyPageButton {
+    border-radius: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .goToBuddyPageButtonGradient {
+    background: linear-gradient(45deg, #d8315b, #f2542d);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .goToBuddyPageTouchable {
+    padding: 14px 0;
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .goToBuddyPageButtonText {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  

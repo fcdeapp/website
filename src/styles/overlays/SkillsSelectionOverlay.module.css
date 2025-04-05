@@ -1,0 +1,110 @@
+.overlayBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .overlayContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    max-height: 80%;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .headerTitle {
+    font-family: "Pretendard", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1045;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .deleteIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .scrollContent {
+    padding: 10px 0;
+    flex-grow: 1;
+  }
+  
+  .skillSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .skillButton {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #d9d9d9;
+    margin: 6px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .skillText {
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .addCustomSkillContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .customSkillInput {
+    flex: 1;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  }
+  
+  .addButton {
+    background-color: #1a1045;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .addButtonText {
+    color: #f8f8fe;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  

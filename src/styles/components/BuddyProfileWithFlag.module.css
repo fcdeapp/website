@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .profileImage {
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+  
+  .flagWrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+  }
+  
+  .flagImage {
+    object-fit: cover;
+  }
+  
