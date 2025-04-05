@@ -3,7 +3,7 @@ import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "../components/Header";
-import ClientEffects from "../components/ClientEffects"; // 클라이언트 전용 효과
+import ClientEffects from "../components/ClientEffects";
 import "./globals.css";
 
 const pretendard = localFont({
