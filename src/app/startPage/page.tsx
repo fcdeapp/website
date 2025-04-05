@@ -26,10 +26,10 @@ const languages = [
 ];
 
 interface StartPageProps {
-  onFinish: () => void;
+  onFinish?: () => void;
 }
 
-const StartPage: React.FC<StartPageProps> = ({ onFinish }) => {
+const StartPage: React.FC<StartPageProps> = ({ onFinish = () => {} }) => {
   const { SERVER_URL } = useConfig();
   const { t } = useTranslation();
   const screenHeight = window.innerHeight;
