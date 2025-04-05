@@ -32,7 +32,7 @@ interface StartPageProps {
 const StartPage: React.FC<StartPageProps> = ({ onFinish = () => {} }) => {
   const { SERVER_URL } = useConfig();
   const { t } = useTranslation();
-  const screenHeight = window.innerHeight;
+  const [screenHeight, setScreenHeight] = useState(0);
 
   // 상태 변수들
   const [hasSeenStartPage, setHasSeenStartPage] = useState<boolean>(false);
@@ -59,6 +59,12 @@ const StartPage: React.FC<StartPageProps> = ({ onFinish = () => {} }) => {
   // Carousel taglines
   const taglines = [t("tagline_connect"), t("tagline_explore"), t("tagline_belong")];
   const [currentTaglineIndex, setCurrentTaglineIndex] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenHeight(window.innerHeight);
+    }
+  }, []);
 
   // 시작 페이지 본인 확인
   useEffect(() => {

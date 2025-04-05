@@ -176,7 +176,7 @@ const PostMain: React.FC<PostMainProps> = ({
   const [distance, setDistance] = useState<string | null>(null);
   const lastLikePressTime = useRef(0);
   const screenWidth = window.innerWidth;
-  const screenHeight = window.innerHeight;
+  const [screenHeight, setScreenHeight] = useState(0); 
 
   // 거리 계산
   useEffect(() => {
@@ -188,6 +188,12 @@ const PostMain: React.FC<PostMainProps> = ({
     };
     fetchDistance();
   }, [latitude, longitude, t]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenHeight(window.innerHeight);
+    }
+  }, []);
 
   const handleLayout = useCallback((e: UIEvent<HTMLDivElement>) => {
     const width = e.currentTarget.offsetWidth;
