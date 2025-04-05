@@ -1,6 +1,6 @@
 // src/app/layout.tsx
 import React from "react";
-import { ConfigProvider } from "../contexts/ConfigContext"; 
+import { ConfigProvider } from "../context/ConfigContext"; 
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "../components/Header";
