@@ -1,5 +1,6 @@
 // src/app/layout.tsx
 import React from "react";
+import { ConfigProvider } from "../contexts/ConfigContext"; 
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "../components/Header";
@@ -26,10 +27,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${pretendard.className} antialiased`}>
-        <Header />
-        <ClientEffects />
-        <main>{children}</main>
+      <body>
+        <ConfigProvider>
+          <Header />
+          <ClientEffects />
+          <main>{children}</main>
+        </ConfigProvider>
       </body>
     </html>
   );
