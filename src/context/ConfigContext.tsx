@@ -1,4 +1,5 @@
 // ConfigContext.tsx
+"use client";
 import React, { createContext, useContext } from "react";
 import config from "../config/config"; // config.json 대신 동적 config.ts를 불러옵니다.
 
