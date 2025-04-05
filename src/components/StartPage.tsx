@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "../config/i18n";
 import { countries } from "../constants/countries";
 import { motion, AnimatePresence } from "framer-motion";
-import styles from "../../styles/pages/StartPage.module.css";
+import styles from "../styles/pages/StartPage.module.css";
 
 // 언어 목록 (이미지는 public/assets/flags에 위치)
 const languages = [

@@ -11,6 +11,7 @@ import PasswordExpiredModal from "../components/PasswordExpiredModal";
 import axios from "axios";
 import { getDistrictNameFromCoordinates } from "../utils/locationUtils";
 import { useRouter } from "next/navigation";
+import StartPage from "../components/StartPage";
 import "./globals.css";
 
 // Next.js 폰트 설정 (예시)
@@ -22,9 +23,6 @@ const pretendard = localFont({
   ],
   variable: "--font-pretendard",
 });
-
-// StartPage 컴포넌트 (래퍼로 onFinish 전달)
-import StartPage from "./startPage/page";
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
