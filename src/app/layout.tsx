@@ -11,6 +11,7 @@ import PasswordExpiredModal from "../components/PasswordExpiredModal";
 import axios from "axios";
 import { getDistrictNameFromCoordinates } from "../utils/locationUtils";
 import { useRouter } from "next/navigation";
+import Header from "../components/Header";
 import "./globals.css";
 
 // Next.js 폰트 설정 (예시)
@@ -25,7 +26,6 @@ const pretendard = localFont({
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
-  // 앱 전역 상태
   const [isLoading, setIsLoading] = useState(true);
   const [maintenanceVisible, setMaintenanceVisible] = useState(false);
   const [passwordExpired, setPasswordExpired] = useState(false);
@@ -244,6 +244,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   onClose={() => setShowPasswordExpiredModal(false)}
                 />
               )}
+              <Header />
               {/* 실제 콘텐츠 영역 */}
               <main>{children}</main>
             </I18nextProvider>
