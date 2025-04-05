@@ -354,7 +354,6 @@ const Post: React.FC = () => {
   if (isLoading && page === 1) {
     return (
       <div className={styles.loadingContainer}>
-        <img src="/assets/ActivityIndicatorOWLPink.gif" alt="Loading" className={styles.lottieAnimation} />
         <p className={styles.loadingText}>{t("loading_posts")}</p>
       </div>
     );
