@@ -23,11 +23,8 @@ const pretendard = localFont({
   variable: "--font-pretendard",
 });
 
-// metadata export 제거 — 클라이언트 컴포넌트에서는 사용 불가합니다.
-// export const metadata: Metadata = {
-//   title: "Facade",
-//   description: "Connecting people and cultures abroad.",
-// };
+// StartPage 컴포넌트 (래퍼로 onFinish 전달)
+import StartPage from "./startPage/page";
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
@@ -212,7 +209,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     initializeApp();
   }, []);
 
-  // 스플래시 화면 제거 (3초 후)
+  // 스플래시 화면 제거 (3초 후 제거하는 로직이 App.tsx와 유사할 수 있음)
   useEffect(() => {
     const splashTimer = setTimeout(() => setShowSplash(false), 3000);
     return () => clearTimeout(splashTimer);
@@ -235,13 +232,8 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     };
   }, []);
 
-  // 사용자가 아직 시작 페이지를 보지 않았다면 /startPage로 이동
-  useEffect(() => {
-    const seen = localStorage.getItem("hasSeenStartPage");
-    if (seen !== "true") {
-      router.push("/startPage");
-    }
-  }, [router]);
+  // 기존의 /startPage로 이동하는 로직은 App.tsx와 로직을 맞추기 위해 제거합니다.
+  // (localStorage 체크 등은 StartPage 내부에서 처리)
 
   return (
     <html lang="en" className={pretendard.className}>
@@ -265,7 +257,23 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   onClose={() => setShowPasswordExpiredModal(false)}
                 />
               )}
+              {/* 실제 콘텐츠 영역 */}
               <main>{children}</main>
+              {/* splash overlay: 래퍼 컴포넌트로 StartPage에 onFinish 전달 */}
+              {showSplash && (
+                <div
+                  style={{
+                    position: "fixed",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    zIndex: 9999,
+                  }}
+                >
+                  <StartPage onFinish={() => setShowSplash(false)} />
+                </div>
+              )}
             </I18nextProvider>
           </ErrorBoundary>
         </ConfigProvider>
