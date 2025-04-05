@@ -13,11 +13,11 @@ import { useConfig } from "../../context/ConfigContext";
 import TopicSlider from "../../components/TopicSlider";
 import PostMain from "../../components/PostMain";
 import FilterOverlay from "../../components/FilterOverlay";
-import MySubjectOrderChangeOverlay from "../../overlays/Mysubjectorderchangeoverlay";
+import MySubjectOrderChangeOverlay from "../../overlays/MySubjectOrderChangeOverlay";
 import LoginDecisionOverlay from "../../overlays/LoginDecisionOverlay";
 import { getDistrictNameFromCoordinates } from "../../utils/locationUtils";
 import Lottie from "lottie-react";
-import styles from "../styles/pages/Post.module.css";
+import styles from "../../styles/pages/Post.module.css";
 import ProfileWithFlag from "../../components/ProfileWithFlag";
 
 const getScreenWidth = () => (typeof window !== "undefined" ? window.innerWidth : 375);
@@ -226,7 +226,7 @@ const Post: React.FC = () => {
         <div className={styles.header}>
           <button className={styles.logoButton} onClick={() => { /* Owl click animation */ }}>
             <Lottie
-              animationData={require("../../../assets/HomeOwlPink.json")}
+              animationData={require("../../assets/HomeOwlPink.json")}
               loop={false}
               className={styles.owlAnimation}
               onComplete={() => {}}
