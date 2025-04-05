@@ -30,7 +30,6 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [maintenanceVisible, setMaintenanceVisible] = useState(false);
   const [passwordExpired, setPasswordExpired] = useState(false);
   const [showPasswordExpiredModal, setShowPasswordExpiredModal] = useState(false);
-  const [showSplash, setShowSplash] = useState(true);
 
   const healthDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -206,12 +205,6 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     initializeApp();
   }, []);
 
-  // 스플래시 화면 제거 (3초 후 제거하는 로직이 App.tsx와 유사할 수 있음)
-  useEffect(() => {
-    const splashTimer = setTimeout(() => setShowSplash(false), 3000);
-    return () => clearTimeout(splashTimer);
-  }, []);
-
   // 네트워크 상태 변화 감지
   useEffect(() => {
     const handleOnline = () => {
@@ -253,18 +246,6 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               )}
               {/* 실제 콘텐츠 영역 */}
               <main>{children}</main>
-              {showSplash && (
-                <div
-                  style={{
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    zIndex: 9999,
-                  }}
-                />
-              )}
             </I18nextProvider>
           </ErrorBoundary>
         </ConfigProvider>
