@@ -3,7 +3,7 @@ import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Header from "../components/Header";
-import "../globals.css";
+import "./globals.css";
 
 // 클라이언트 전용 코드가 없다면 "use client"를 제거합니다.
 const pretendard = localFont({
