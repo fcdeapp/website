@@ -8,7 +8,7 @@
     font-family: sans-serif;
   }
   
-  /* Fixed header at top – 검색창 줄을 위에서 좀 더 떨어지게 함 */
+  /* Fixed header – 검색창 줄은 상단에서 조금 떨어지게 */
   .fixedHeader {
     position: fixed;
     top: 0;
@@ -69,46 +69,40 @@
     cursor: pointer;
   }
   
-  /* Topic slider & filter controls – 헤더 바로 아래에 배치 */
-  .topicSlideContainer {
-    margin-top: 10px;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0 15px;
-  }
-  
-  .sortAndFilterRow {
+  /* Topic row: 필터 버튼, 주제 슬라이더, 주제 리스트 버튼를 한 줄에 배치 */
+  .topicRow {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    margin: 10px 0 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
   }
   
-  .togglesContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 30%;
-  }
-  
-  .changeTopicButton {
+  .filterButton,
+  .subjectListButton {
     background-color: #fff;
     border: none;
     border-radius: 25px;
-    padding: 15px;
+    padding: 10px 15px;
     cursor: pointer;
-  }
-  
-  .changeTopicButtonText {
-    color: #1a1045;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
+    color: #1a1045;
   }
   
-  /* Flat list of posts */
+  .topicSliderWrapper {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  /* Flat list of posts: 2열 반응형 레이아웃 */
   .flatList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 10px 15px 80px;
     padding-bottom: 80px;
   }
@@ -118,9 +112,10 @@
     margin-bottom: 10px;
   }
   
-  .postContainerTablet {
-    width: 49%;
-    margin-bottom: 10px;
+  @media (min-width: 768px) {
+    .postContainer {
+      width: 48%;
+    }
   }
   
   /* Loading state */
@@ -152,6 +147,7 @@
   
   /* Ad container */
   .adContainer {
+    width: 100%;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
