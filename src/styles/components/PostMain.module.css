@@ -8,6 +8,7 @@
   }
   
   .cardContainer {
+    position: relative; /* 추가: 자식의 absolute 위치가 이 영역 내에서 적용 */
     border-radius: 30px;
     overflow: hidden;
   }
@@ -78,6 +79,7 @@
     border-bottom-left-radius: 24px;
     padding: 10px;
     text-align: right;
+    z-index: 2;
   }
   
   .checkText {
@@ -188,6 +190,7 @@
     justify-content: flex-start;
     gap: 15px;
     position: relative;
+    z-index: 1;
   }
   
   .iconInfo,
@@ -288,6 +291,7 @@
     bottom: 0;
     backdrop-filter: blur(6px);
     pointer-events: none;
+    z-index: 3;
   }
   
   .recruitmentBadge {
@@ -300,6 +304,7 @@
     border-radius: 20px;
     background: linear-gradient(45deg, #ff7e5f, #fd3a69);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    z-index: 4;
   }
   
   .badgeIcon {

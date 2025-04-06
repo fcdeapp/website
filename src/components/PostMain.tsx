@@ -18,7 +18,6 @@ import styles from "../styles/components/PostMain.module.css";
 
 // ─────────────────────────────────────────────────────────────
 // Helper: 동적 이미지 URL 처리 함수  
-// (URL이 http:// 또는 https:// 로 시작하면 그대로 사용하고, 아니면 /assets/ 경로를 접두어로 붙임)
 const getFullImageUrl = (url: string | undefined): string => {
   if (!url) return "";
   return url.startsWith("http") || url.startsWith("/assets/")
@@ -157,7 +156,7 @@ export interface PostMainProps {
 
 // ─────────────────────────────────────────────────────────────
 // PostMain 컴포넌트 (웹용)
-// 앱 버전과 동일한 디자인과 기능을 구현 (애니메이션은 CSS와 setTimeout 등으로 모방)
+// 앱 버전과 동일한 기능 및 디자인을 구현하며, 블러와 모집 완료 배지는 cardContainer 내부에 적용됩니다.
 const PostMain: React.FC<PostMainProps> = ({
   postId,
   author,
@@ -192,7 +191,7 @@ const PostMain: React.FC<PostMainProps> = ({
   const { t } = useTranslation();
   const router = useRouter();
 
-  // 상태 변수 선언
+  // 상태 변수들
   const [isTranslated, setIsTranslated] = useState(false);
   const [isTranslating, setIsTranslating] = useState(false);
   const [translatedText, setTranslatedText] = useState({ title, content });
@@ -207,16 +206,16 @@ const PostMain: React.FC<PostMainProps> = ({
   const [showMap, setShowMap] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [floatingHearts, setFloatingHearts] = useState<string[]>([]);
-  // 지도 애니메이션 관련 state (웹에서는 setState + CSS 전환)
+  // 지도 애니메이션 관련 (웹에서는 state와 CSS 전환)
   const [mapSlide, setMapSlide] = useState<number>(window.innerWidth);
   const [mapOpacity, setMapOpacity] = useState<number>(0);
   const [mapHeight, setMapHeight] = useState<number>(0);
   const [isLiking, setIsLiking] = useState(false);
   const [isCheckingStatus, setIsCheckingStatus] = useState(true);
   const [isContentExpanded, setIsContentExpanded] = useState(false);
-  // 부모 컨테이너 너비 (MarqueeText 전달)
+  // 부모 컨테이너 너비 (MarqueeText에 전달)
   const [parentWidth, setParentWidth] = useState<number>(0);
-  // ★ setDistance 관련: distance 상태 선언 (오류 해결)
+  // distance 상태 (setDistance 오류 해결)
   const [distance, setDistance] = useState<string | null>(null);
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -224,7 +223,7 @@ const PostMain: React.FC<PostMainProps> = ({
   const screenHeight = window.innerHeight;
   const lastLikePressTime = useRef(0);
 
-  // 모집률 및 텍스트 계산 (앱 버전 로직 동일)
+  // 모집률 및 텍스트 계산 (앱 버전 동일)
   const getRecruitmentRate = () => {
     if (nicknameOption === "AI") {
       return recruitmentCount > 0 ? applicantsCount / recruitmentCount : 0;
@@ -347,7 +346,7 @@ const PostMain: React.FC<PostMainProps> = ({
     fetchDistance();
   }, [latitude, longitude, t]);
 
-  // 지도 보이기/숨기기 (웹에서는 setState + CSS 전환)
+  // 지도 보이기/숨기기 (웹: setState + CSS 전환)
   const startMapAnimation = () => {
     setMapSlide(0);
     setMapOpacity(1);
@@ -399,7 +398,9 @@ const PostMain: React.FC<PostMainProps> = ({
       const { data } = await axios.get(url, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      setTranslatedText(isTranslated ? { title, content } : { title: data.title, content: data.content });
+      setTranslatedText(
+        isTranslated ? { title, content } : { title: data.title, content: data.content }
+      );
       setIsTranslated(!isTranslated);
     } catch (err) {
       console.error(err);
@@ -448,7 +449,7 @@ const PostMain: React.FC<PostMainProps> = ({
     }
   };
 
-  // 플로팅 하트 컴포넌트 (CSS 애니메이션은 PostMain.module.css에 정의)
+  // 플로팅 하트 컴포넌트 (CSS 애니메이션은 CSS 파일에서 처리)
   const FloatingHeart = ({ width, height }: { width: number; height: number }) => {
     const randomLeft = Math.random() * width * 0.8 + width * 0.1;
     const style: React.CSSProperties = {
@@ -467,7 +468,7 @@ const PostMain: React.FC<PostMainProps> = ({
     );
   };
 
-  // 게시물 클릭 시 FullPost 페이지로 이동 (쿼리 스트링 전달)
+  // 게시물 클릭 시 FullPost 페이지로 이동 (쿼리스트링 전달)
   const handlePostPress = async () => {
     if (isCheckingStatus) return;
     try {
@@ -531,10 +532,7 @@ const PostMain: React.FC<PostMainProps> = ({
       }}
     >
       <div className={styles.cardContainer}>
-        <div
-          className={styles.postMain}
-          style={{ boxShadow: "0px 2px 4px rgba(0,0,0,0.2)" }}
-        >
+        <div className={styles.postMain} style={{ boxShadow: "0px 2px 4px rgba(0,0,0,0.2)" }}>
           <div className={`${styles.postContent} ${showMap ? styles.transparentBackground : ""}`}>
             <div className={styles.textContent}>
               <div className={styles.authorInformation}>
@@ -773,15 +771,19 @@ const PostMain: React.FC<PostMainProps> = ({
           </div>
         </div>
         {applicantsCount >= recruitmentCount && (
-          <div className={styles.blurOverlay}>
-            {/* CSS Blur 효과 적용 */}
-          </div>
-        )}
-        {applicantsCount >= recruitmentCount && (
-          <div className={styles.recruitmentBadge}>
-            <img src={getFullImageUrl("checkedComponent.png")} alt="badge" className={styles.badgeIcon} />
-            <p className={styles.recruitmentBadgeText}>{t("recruitment_status_complete")}</p>
-          </div>
+          <>
+            <div className={styles.blurOverlay}>
+              {/* 블러 효과는 이 영역(cardContainer) 내에서만 적용 */}
+            </div>
+            <div className={styles.recruitmentBadge}>
+              <img
+                src={getFullImageUrl("checkedComponent.png")}
+                alt="badge"
+                className={styles.badgeIcon}
+              />
+              <p className={styles.recruitmentBadgeText}>{t("recruitment_status_complete")}</p>
+            </div>
+          </>
         )}
       </div>
     </div>
