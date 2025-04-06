@@ -11,7 +11,7 @@ export interface Topic {
 
 interface TopicSliderProps {
   myTopics: Topic[];
-  selectedTopics: string[]; // e.g. ['tech', 'sports', ...] or, for all selected: ['tech', ..., 'no_topic']
+  selectedTopics: string[]; // 예: ['tech', 'sports', ...] 또는 전체 선택 시 ['tech', ..., 'no_topic']
   setSelectedTopics: (topics: string[]) => void;
   isCompact: boolean;
   handleSelectTopic: (topicKey: string, index: number) => void;
@@ -26,7 +26,7 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
   handleSelectTopic,
   t,
 }) => {
-  // Use window.innerWidth for screen width in web environment.
+  // 화면 넓이 (웹 환경)
   const screenWidth = typeof window !== "undefined" ? window.innerWidth : 375;
   const scrollRef = useRef<HTMLDivElement>(null);
   const [positions, setPositions] = useState<number[]>([]);
@@ -35,10 +35,13 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
   const [sliderWidth, setSliderWidth] = useState(0);
   const [currentTopicColor, setCurrentTopicColor] = useState("#0A1045");
 
-  // Array to hold refs for each button.
+  // 각 버튼 ref 배열
   const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
-  // Measure each button's layout and store its x-position in the positions array.
+  // "All" 버튼 포함 전체 주제 수 (All 버튼은 인덱스 0)
+  const itemCount = myTopics.length + 1;
+
+  // 각 버튼의 위치를 측정
   const handleLayoutItem = useCallback((index: number) => {
     if (scrollRef.current && buttonRefs.current[index]) {
       const containerRect = scrollRef.current.getBoundingClientRect();
@@ -49,16 +52,15 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
         temp[index] = pos;
         return temp;
       });
-      // Save the width of the first button.
+      // 첫 번째 버튼의 너비 저장
       if (index === 0) {
         setButtonSize(rect.width);
       }
     }
   }, []);
 
-  // On mount and on window resize, measure all button layouts.
+  // mount 및 윈도우 리사이즈 시 모든 버튼 레이아웃 측정
   useEffect(() => {
-    const itemCount = myTopics.length + 1; // +1 for "All" button.
     for (let i = 0; i < itemCount; i++) {
       handleLayoutItem(i);
     }
@@ -69,9 +71,9 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [myTopics, handleLayoutItem]);
+  }, [myTopics, handleLayoutItem, itemCount]);
 
-  // Update the slider position and width based on the selected topic.
+  // 선택된 주제에 따라 슬라이더의 위치와 너비 업데이트
   useEffect(() => {
     let index = 0;
     if (selectedTopics.includes("no_topic")) {
@@ -82,7 +84,7 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
         selectedTopics.includes(topic.key)
       );
       if (foundIndex !== -1) {
-        index = foundIndex + 1; // "All" button is at index 0.
+        index = foundIndex + 1; // All 버튼은 인덱스 0
         setCurrentTopicColor(myTopics[foundIndex].color);
       }
     }
@@ -103,44 +105,83 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
     }
   }, [selectedTopics, positions, buttonSize, myTopics]);
 
-  const handlePress = (topicKey: string, index: number) => {
-    handleSelectTopic(topicKey, index);
-  };
-
-  // "All" button logic: if not all topics are selected, select all (including "no_topic").
+  // 앱 버전과 동일하게 "All" 버튼 선택 시 모든 주제를 선택하도록 함
   const handleSelectAll = () => {
-    if (!selectedTopics.includes("no_topic") || (selectedTopics.length - 1) !== myTopics.length) {
+    if (
+      !selectedTopics.includes("no_topic") ||
+      (selectedTopics.length - 1) !== myTopics.length
+    ) {
       setSelectedTopics([...myTopics.map((topic) => topic.key), "no_topic"]);
     }
     handleSelectTopic("no_topic", 0);
   };
 
-  // Inline style for the container.
-  const containerStyle: React.CSSProperties = {
-    width: "300px",
-    height: "60px",
-    display: "flex",
-    flexDirection: "row",
+  // 버튼 클릭 시 처리
+  const handlePress = (topicKey: string, index: number) => {
+    handleSelectTopic(topicKey, index);
   };
 
-  // Inline style for the slider.
+  // 앱 버전과 동일한 효과: 선택된 주제 수 (no_topic 제외)
+  const effectiveSelectedCount = selectedTopics.includes("no_topic")
+    ? selectedTopics.length - 1
+    : selectedTopics.length;
+
+  // All 버튼 스타일 (앱 버전 LinearGradient 효과 모방)
+  const allButtonStyle: React.CSSProperties = {
+    height: isCompact ? 48 : 40,
+    borderRadius: 30,
+    padding: "0 16px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    background: effectiveSelectedCount === myTopics.length
+      ? "linear-gradient(to right, #FF7E5F, #FD3A69)"
+      : "#EEEEEE",
+  };
+
+  const allTextStyle: React.CSSProperties = {
+    fontSize: isCompact ? 16 : 14,
+    fontWeight: 600,
+    color: effectiveSelectedCount === myTopics.length ? "#fff" : "#888",
+  };
+
+  // 컨테이너는 CSS 모듈의 스타일을 사용하고, 필요 시 추가 inline 스타일 지정
+  const containerStyle: React.CSSProperties = {
+    width: "100%",
+    height: "60px",
+  };
+
+  // 슬라이더 marker 스타일 (좌측 위치에 11px padding 추가)
   const sliderStyle: React.CSSProperties = {
-    left: sliderLeft + 11 + "px", // Add 11px for padding.
+    left: sliderLeft + 11 + "px",
     width: sliderWidth + "px",
     top: "0",
     bottom: "0",
     position: "absolute",
   };
 
+  // 각 주제 버튼의 텍스트 처리 (앱 버전과 동일)
+  const getDisplayText = (rawTranslation: string, isSelected: boolean) => {
+    const emojiOnly = rawTranslation.split(" ")[0];
+    if (isSelected && isCompact) {
+      return emojiOnly;
+    } else if (isSelected && !isCompact) {
+      return rawTranslation;
+    } else if (!isSelected && !isCompact) {
+      return rawTranslation.replace(/[\u{1F600}-\u{1F64F}]/gu, "").trim();
+    }
+    return "";
+  };
+
   return (
     <div className={styles.container} style={containerStyle}>
       <div className={styles.topicToggleContainer}>
-        {/* Slider (marker) */}
+        {/* 슬라이더 marker */}
         <div className={styles.slider} style={sliderStyle}>
           <div className={styles.sliderGradient}></div>
         </div>
         <div className={styles.horizontalScroll} ref={scrollRef}>
-          {/* "All" button */}
+          {/* All 버튼 */}
           <button
             ref={(el) => {
               buttonRefs.current[0] = el;
@@ -154,23 +195,24 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
             }}
             onClick={handleSelectAll}
           >
-            <div className={styles.allButton} style={{ height: isCompact ? 48 : 40 }}>
-              <span className={styles.allTopicText}>{t("select_all")}</span>
+            <div
+              className={styles.allButton}
+              style={Object.assign(
+                { height: isCompact ? 48 : 40 },
+                allButtonStyle
+              )}
+            >
+              <span className={styles.allTopicText} style={allTextStyle}>
+                {t("select_all")}
+              </span>
             </div>
           </button>
           {myTopics.map((topic, index) => {
             const isSelected = selectedTopics.includes(topic.key);
+            // Compact 모드에서는 선택되지 않은 주제는 렌더링하지 않음
             if (!isSelected && isCompact) return null;
             const rawTranslation = t(`topics.${topic.key}`);
-            const emojiOnly = rawTranslation.split(" ")[0];
-            let displayText = "";
-            if (isSelected && isCompact) {
-              displayText = emojiOnly;
-            } else if (isSelected && !isCompact) {
-              displayText = rawTranslation;
-            } else if (!isSelected && !isCompact) {
-              displayText = rawTranslation.replace(/[\u{1F600}-\u{1F64F}]/gu, "").trim();
-            }
+            const displayText = getDisplayText(rawTranslation, isSelected);
             return (
               <div key={topic.key} style={{ transform: "scale(1)" }}>
                 <button
@@ -190,8 +232,14 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
                   <span
                     className={styles.topicText}
                     style={{
-                      fontSize: isSelected ? (isCompact ? 30 : 14) : (isCompact ? 22 : 12),
-                      color: isSelected ? "#F8F8FE" : "#888",
+                      fontSize: isSelected
+                        ? isCompact
+                          ? 30
+                          : 14
+                        : isCompact
+                        ? 22
+                        : 12,
+                      color: isSelected ? topic.color : "#888",
                     }}
                   >
                     {displayText}
