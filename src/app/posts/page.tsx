@@ -404,10 +404,8 @@ const Post: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className={styles.flatList} key={flatListKey}>
-        {getInterleavedData().map(renderItem)}
-        {isLoading && <div className={styles.loadingIndicator}>{t("loading_posts")}</div>}
-      </div>
+      
+      {/* 주제 슬라이더 및 필터/순서 변경 버튼 – 헤더 바로 아래에 위치 */}
       <div className={styles.topicSlideContainer}>
         <TopicSlider
           myTopics={myTopics}
@@ -437,6 +435,11 @@ const Post: React.FC = () => {
             {t("change_topic_order")}
           </button>
         </div>
+      </div>
+
+      <div className={styles.flatList} key={flatListKey}>
+        {getInterleavedData().map(renderItem)}
+        {isLoading && <div className={styles.loadingIndicator}>{t("loading_posts")}</div>}
       </div>
       <FilterOverlay
         visible={filterVisible}
