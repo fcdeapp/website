@@ -337,20 +337,19 @@ const Post: React.FC = () => {
   };
 
   /* ─── 광고 또는 게시물 렌더링 ──────────────────────────────────── */
-  const renderItem = ({ item }: { item: any; index: number }) => {
+  const renderItem = (item: any, index: number) => {
     if (item.type === "ad") {
       return (
-        <div className={styles.adContainer} key={item.key}>
+        <div className={styles.adContainer} key={`ad-${index}`}>
           <p>AD</p>
           {/* 광고 컴포넌트 추가 가능 */}
         </div>
       );
     } else {
-      const post = item.data ? item.data : item;
-      return renderPost(post);
+      return renderPost(item.data ? item.data : item);
     }
   };
-
+  
   if (isLoading && page === 1) {
     return (
       <div className={styles.loadingContainer}>
