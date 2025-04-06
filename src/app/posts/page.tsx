@@ -23,19 +23,19 @@ const Post: React.FC = () => {
   const { t } = useTranslation();
   const router = useRouter();
 
-  /* ─── 기본 상태 ───────────────────────────────────────────── */
+  // 기본 상태
   const [screenWidth, setScreenWidth] = useState(getScreenWidth());
   const [isTablet, setIsTablet] = useState(screenWidth >= 768);
   const [flatListKey, setFlatListKey] = useState("default");
   const [isIdle, setIsIdle] = useState(false);
   const idleTimer = useRef<NodeJS.Timeout | null>(null);
 
-  /* ─── 로그인 및 프로필 ─────────────────────────────────────── */
+  // 로그인 및 프로필
   const [userId, setUserId] = useState<string | null>(null);
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
   const [loginOverlayVisible, setLoginOverlayVisible] = useState<boolean>(false);
 
-  /* ─── 토픽/필터 ────────────────────────────────────────────── */
+  // 토픽 및 필터
   const defaultTopics = [
     { key: "language_study", color: "#D8315B" },
     { key: "cooking_enthusiasts", color: "#F2542D" },
@@ -52,14 +52,14 @@ const Post: React.FC = () => {
   const [filterVisible, setFilterVisible] = useState<boolean>(false);
   const [overlayVisible, setOverlayVisible] = useState<boolean>(false);
 
-  /* ─── 게시물 및 페이징 ───────────────────────────────────────── */
+  // 게시물 및 페이징
   const [postData, setPostData] = useState<any[]>([]);
   const [allPosts, setAllPosts] = useState<any[]>([]);
   const [page, setPage] = useState<number>(1);
   const [hasMore, setHasMore] = useState<boolean>(true);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  /* ─── 사용자/위치 정보 ───────────────────────────────────────── */
+  // 사용자/위치 정보
   const [regionInfo, setRegionInfo] = useState<string>("");
   const [profileImage, setProfileImage] = useState<string | null>(null);
   const [profileThumbnail, setProfileThumbnail] = useState<string | null>(null);
@@ -67,18 +67,18 @@ const Post: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [cachedLocation, setCachedLocation] = useState<{ latitude: number; longitude: number } | null>(null);
 
-  /* ─── 이전 필터 상태 (비교용) ────────────────────────────────── */
+  // 이전 필터 상태 (비교용)
   const [prevSortOption, setPrevSortOption] = useState<string>(sortOption);
   const [prevNearbyOption, setPrevNearbyOption] = useState<string>(nearbyOption);
   const [prevCountryOption, setPrevCountryOption] = useState<string>(countryOption);
   const [prevSelectedTopics, setPrevSelectedTopics] = useState<string[]>(selectedTopics);
   const [prevMyTopics, setPrevMyTopics] = useState(defaultTopics);
 
-  /* ─── 헤더 축소 상태 ────────────────────────────────────────── */
+  // 헤더 축소 상태
   const [isCompact, setIsCompact] = useState(false);
   const [headerOpacity, setHeaderOpacity] = useState(1);
 
-  /* ─── Idle Timer ───────────────────────────────────────────── */
+  // Idle Timer 설정
   const resetIdleTimer = () => {
     if (idleTimer.current) clearTimeout(idleTimer.current);
     setIsIdle(false);
@@ -97,13 +97,13 @@ const Post: React.FC = () => {
     };
   }, []);
 
-  /* ─── 로그인 상태 체크 ─────────────────────────────────────── */
+  // 로그인 상태 체크
   useEffect(() => {
     const token = localStorage.getItem("token");
     setIsLoggedIn(!!token);
   }, []);
 
-  /* ─── 화면 크기 업데이트 ───────────────────────────────────── */
+  // 화면 크기 업데이트
   useEffect(() => {
     const handleResize = () => {
       const updatedWidth = window.innerWidth;
@@ -118,7 +118,7 @@ const Post: React.FC = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [isTablet]);
 
-  /* ─── 프로필 데이터 fetch ───────────────────────────────────── */
+  // 프로필 데이터 fetch
   useEffect(() => {
     if (isLoggedIn) {
       const token = localStorage.getItem("token");
@@ -142,7 +142,7 @@ const Post: React.FC = () => {
     }
   }, [isLoggedIn, SERVER_URL]);
 
-  /* ─── Geolocation 및 역지오코딩 ────────────────────────────────── */
+  // Geolocation 및 역지오코딩
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -172,7 +172,7 @@ const Post: React.FC = () => {
     }
   }, [SERVER_URL, t]);
 
-  /* ─── 게시물 데이터 fetch (필터, 무한 스크롤) ───────────────────── */
+  // 게시물 데이터 fetch (필터, 무한 스크롤)
   const fetchFilteredPosts = async (pageNumber: number, isRefreshing = false) => {
     setIsLoading(true);
     try {
@@ -222,20 +222,20 @@ const Post: React.FC = () => {
     }
   };
 
-  /* ─── 초기 게시물 fetch ─────────────────────────────────────── */
+  // 초기 게시물 fetch
   useEffect(() => {
     setPage(1);
     fetchFilteredPosts(1, true);
   }, []);
 
-  /* ─── 페이지 번호 변화에 따른 추가 데이터 fetch (무한 스크롤) ───── */
+  // 페이지 번호 변화에 따른 추가 데이터 fetch (무한 스크롤)
   useEffect(() => {
     if (page > 1) {
       fetchFilteredPosts(page);
     }
   }, [page]);
 
-  /* ─── 필터 오버레이 종료 후 변경 적용 ────────────────────────── */
+  // 필터 오버레이 종료 후 변경 적용
   useEffect(() => {
     if (!filterVisible) {
       const hasChanges =
@@ -254,7 +254,7 @@ const Post: React.FC = () => {
     }
   }, [filterVisible]);
 
-  /* ─── 토픽 순서 오버레이 종료 후 변경 적용 ───────────────────────── */
+  // 토픽 순서 오버레이 종료 후 변경 적용
   useEffect(() => {
     if (!overlayVisible) {
       const hasChanges = JSON.stringify(prevMyTopics) !== JSON.stringify(myTopics);
@@ -266,7 +266,7 @@ const Post: React.FC = () => {
     }
   }, [overlayVisible]);
 
-  /* ─── 스크롤 이벤트: 헤더 축소 및 무한 스크롤 ───────────────────── */
+  // 스크롤 이벤트: 헤더 축소 및 무한 스크롤
   const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
     const { scrollTop, scrollHeight, clientHeight } = e.currentTarget;
     if (scrollTop > 50 && !isCompact) {
@@ -281,16 +281,16 @@ const Post: React.FC = () => {
     }
   };
 
-  /* ─── 검색 처리 ───────────────────────────────────────────── */
+  // 검색 처리
   const handleSearch = () => {
     if (searchTerm.trim()) {
       router.push(`/search?searchTerm=${encodeURIComponent(searchTerm)}`);
     }
   };
 
-  /* ─── 개별 게시물 렌더링 ────────────────────────────────────── */
+  // 개별 게시물 렌더링 – PostMain은 CSS 미디어 쿼리로 2열 반응형으로 표시됨
   const renderPost = (post: any) => (
-    <div key={post._id} className={isTablet ? styles.postContainerTablet : styles.postContainer}>
+    <div key={post._id} className={styles.postContainer}>
       <PostMain
         postId={post._id}
         author={post.author}
@@ -324,7 +324,7 @@ const Post: React.FC = () => {
     </div>
   );
 
-  /* ─── 인터리브 데이터 (광고 등 삽입) ───────────────────────────── */
+  // 인터리브 데이터 (광고 등 삽입)
   const getInterleavedData = () => {
     const interleaved: any[] = [];
     postData.forEach((post, index) => {
@@ -336,7 +336,7 @@ const Post: React.FC = () => {
     return interleaved;
   };
 
-  /* ─── 광고 또는 게시물 렌더링 ──────────────────────────────────── */
+  // 광고 또는 게시물 렌더링
   const renderItem = (item: any, index: number) => {
     if (item.type === "ad") {
       return (
@@ -349,7 +349,7 @@ const Post: React.FC = () => {
       return renderPost(item.data ? item.data : item);
     }
   };
-  
+
   if (isLoading && page === 1) {
     return (
       <div className={styles.loadingContainer}>
@@ -405,36 +405,34 @@ const Post: React.FC = () => {
         </div>
       </div>
       
-      {/* 주제 슬라이더 및 필터/순서 변경 버튼 – 헤더 바로 아래에 위치 */}
-      <div className={styles.topicSlideContainer}>
-        <TopicSlider
-          myTopics={myTopics}
-          selectedTopics={selectedTopics}
-          setSelectedTopics={setSelectedTopics}
-          isCompact={isCompact}
-          handleSelectTopic={(topicKey, index) => {
-            if (topicKey === "no_topic") {
-              setSelectedTopics([...myTopics.map((t) => t.key), "no_topic"]);
-            } else {
-              let updated = selectedTopics.includes(topicKey)
-                ? selectedTopics.filter((t) => t !== topicKey)
-                : [...selectedTopics, topicKey];
-              if (!updated.includes("no_topic")) updated.push("no_topic");
-              setSelectedTopics(updated);
-            }
-          }}
-          t={t}
-        />
-        <div className={styles.sortAndFilterRow}>
-          <div className={styles.togglesContainer}>
-            <button className={styles.changeTopicButton} onClick={() => setFilterVisible(true)}>
-              {t("filter")}
-            </button>
-          </div>
-          <button className={styles.changeTopicButton} onClick={() => setOverlayVisible(true)}>
-            {t("change_topic_order")}
-          </button>
+      {/* 주제 슬라이드는 필터 오버레이 버튼과 주제 리스트 버튼 사이에 한 줄로 위치 */}
+      <div className={styles.topicRow}>
+        <button className={styles.filterButton} onClick={() => setFilterVisible(true)}>
+          {t("filter")}
+        </button>
+        <div className={styles.topicSliderWrapper}>
+          <TopicSlider
+            myTopics={myTopics}
+            selectedTopics={selectedTopics}
+            setSelectedTopics={setSelectedTopics}
+            isCompact={isCompact}
+            handleSelectTopic={(topicKey, index) => {
+              if (topicKey === "no_topic") {
+                setSelectedTopics([...myTopics.map((t) => t.key), "no_topic"]);
+              } else {
+                let updated = selectedTopics.includes(topicKey)
+                  ? selectedTopics.filter((t) => t !== topicKey)
+                  : [...selectedTopics, topicKey];
+                if (!updated.includes("no_topic")) updated.push("no_topic");
+                setSelectedTopics(updated);
+              }
+            }}
+            t={t}
+          />
         </div>
+        <button className={styles.subjectListButton} onClick={() => setOverlayVisible(true)}>
+          {t("subject_list")}
+        </button>
       </div>
 
       <div className={styles.flatList} key={flatListKey}>
