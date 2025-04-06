@@ -431,7 +431,7 @@ const Post: React.FC = () => {
           />
         </div>
         <button className={styles.subjectListButton} onClick={() => setOverlayVisible(true)}>
-          {t("subject_list")}
+          {t("topic_list")}
         </button>
       </div>
 
