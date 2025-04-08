@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useConfig } from '../../context/ConfigContext';
 import { useTranslation } from 'react-i18next';
