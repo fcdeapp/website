@@ -370,9 +370,11 @@ const Fullpost: React.FC = () => {
   };
 
   useEffect(() => {
-    fetchPostData();
-    addVisitor();
-  }, []);
+    if (queryParams && queryParams.id) {
+      fetchPostData();
+      addVisitor();
+    }
+  }, [queryParams]);  
 
   // 지원 신청/취소 처리
   const handleApplication = async () => {
