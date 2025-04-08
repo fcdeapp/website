@@ -53,12 +53,12 @@ const Fullpost: React.FC = () => {
   const { t } = useTranslation();
   const router = useRouter();
   const [queryParams, setQueryParams] = useState<FullpostRouteParams | null>(null);
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const sp = new URLSearchParams(window.location.search);
-      setQueryParams(Object.fromEntries(sp.entries()) as FullpostRouteParams);
-    }
-  }, []);
+  const searchParams = useSearchParams();
+
+    useEffect(() => {
+    // searchParams는 객체이므로 entries() 메서드 사용 가능
+    setQueryParams(Object.fromEntries(searchParams.entries()) as FullpostRouteParams);
+    }, [searchParams]);
 
   // queryParams 준비 여부에 따른 플래그
   const isQueryReady = queryParams !== null;
