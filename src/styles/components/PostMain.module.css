@@ -59,20 +59,22 @@
     justify-content: center;
     margin-top: 10px;
     margin-left: 20px;
-    gap: 5px;
   }
   
   .authorText {
-    margin-top: 10px; 
+    margin-top: 24px; 
     color: #333;
     font-weight: 700;
     font-size: 14px;
+    padding: 0;
   }
   
   .timeCategoryText {
     color: #666;
     font-weight: 400;
     font-size: 12px;
+    margin-top: 4px; 
+    padding: 0;
   }
   
   .recruitmentInfo {
