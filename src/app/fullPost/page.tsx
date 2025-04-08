@@ -53,41 +53,42 @@ const Fullpost: React.FC = () => {
   const { t } = useTranslation();
   const router = useRouter();
   const [queryParams, setQueryParams] = useState<FullpostRouteParams | null>(null);
-
-    useEffect(() => {
+  useEffect(() => {
     if (typeof window !== 'undefined') {
-        const sp = new URLSearchParams(window.location.search);
-        setQueryParams(Object.fromEntries(sp.entries()) as FullpostRouteParams);
+      const sp = new URLSearchParams(window.location.search);
+      setQueryParams(Object.fromEntries(sp.entries()) as FullpostRouteParams);
     }
-    }, []);
-    if (!queryParams) return <div>Loading...</div>;
+  }, []);
 
-  // 라우트 파라미터 추출
+  // queryParams 준비 여부에 따른 플래그
+  const isQueryReady = queryParams !== null;
+
+  // queryParams가 준비되었을 때 사용할 값들 (준비 전에는 기본값 또는 빈 값 사용)
   const {
-    id,
-    author: routeAuthor,
-    time,
-    meetingTime,
-    category,
-    title,
-    content,
-    likes,
-    comments,
-    visitors,
-    recruitmentCount,
-    applicantsCount,
-    profileImage: routeProfileImage,
-    profileThumbnail: routeProfileThumbnail,
-    image: routeImage,
-    thumbnail: routeThumbnail,
-    nicknameOption: routeNicknameOption,
-    meetingPlace,
-    meetingCity,
-    meetingCountry,
-    mapboxImage,
-    isBuddyPost,
-    applicants: routeApplicants,
-  } = queryParams;
+    id = "",
+    author: routeAuthor = "Anonymous",
+    time = "",
+    meetingTime = "",
+    category = "",
+    title = "",
+    content = "",
+    likes = "0",
+    comments = "0",
+    visitors = "0",
+    recruitmentCount = "0",
+    applicantsCount = "0",
+    profileImage: routeProfileImage = "",
+    profileThumbnail: routeProfileThumbnail = "",
+    image: routeImage = "",
+    thumbnail: routeThumbnail = "",
+    nicknameOption: routeNicknameOption = "",
+    meetingPlace = "",
+    meetingCity = "",
+    meetingCountry = "",
+    mapboxImage = "",
+    isBuddyPost = "false",
+    applicants: routeApplicants = "0",
+  } = queryParams || {} as FullpostRouteParams;
 
   if (!id) {
     return <div>Loading...</div>;
