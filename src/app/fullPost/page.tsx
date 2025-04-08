@@ -14,7 +14,6 @@ import LoginDecisionOverlay from '../../overlays/LoginDecisionOverlay';
 import ReportOverlay from '../../components/ReportOverlay';
 import styles from '../../styles/pages/Fullpost.module.css';
 export const dynamic = 'force-dynamic';
-export const revalidate = 0; 
 
 // 모든 라우트 파라미터를 문자열로 받도록 타입 정의 (추후 내부에서 변환)
 type FullpostRouteParams = {
@@ -53,9 +52,16 @@ const Fullpost: React.FC = () => {
   const { SERVER_URL } = useConfig();
   const { t } = useTranslation();
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const params = searchParams ? Object.fromEntries([...searchParams.entries()]) as FullpostRouteParams : {} as FullpostRouteParams;
-  
+  const [queryParams, setQueryParams] = useState<FullpostRouteParams | null>(null);
+
+    useEffect(() => {
+    if (typeof window !== 'undefined') {
+        const sp = new URLSearchParams(window.location.search);
+        setQueryParams(Object.fromEntries(sp.entries()) as FullpostRouteParams);
+    }
+    }, []);
+    if (!queryParams) return <div>Loading...</div>;
+
   // 라우트 파라미터 추출
   const {
     id,
@@ -81,7 +87,7 @@ const Fullpost: React.FC = () => {
     mapboxImage,
     isBuddyPost,
     applicants: routeApplicants,
-  } = params;
+  } = queryParams;
 
   if (!id) {
     return <div>Loading...</div>;
