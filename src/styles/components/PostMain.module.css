@@ -58,11 +58,12 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: 20px;
+    gap: 5px;
   }
   
   .authorText {
-    margin-top: 10px; /* 기존 15px에서 10px로 조정 혹은 필요 시 더 늘리세요 */
+    margin-top: 10px; 
     color: #333;
     font-weight: 700;
     font-size: 14px;
