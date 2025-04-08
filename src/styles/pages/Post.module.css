@@ -75,8 +75,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 100px 15px 0; 
-    max-width: calc(100% - 30px);
+    margin: 100px auto 0;
+    width: calc(100% - 30px);
     box-sizing: border-box;
   }  
   
@@ -85,7 +85,7 @@
     background-color: #fff;
     border: none;
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 15px 15px;
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
