@@ -105,10 +105,10 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
   const { SERVER_URL } = useConfig();
   const { t } = useTranslation();
 
-  // Animation states for slide and fade
+  // Animation states for slide and fade of the overlay container.
   const [slide, setSlide] = useState<number>(visible ? 0 : 200);
   const [fade, setFade] = useState<number>(visible ? 1 : 0);
-  // For each topic, manage animation values for position (itemAnim) and scale (scaleAnim)
+  // For each topic, manage animation values for horizontal position and scale.
   const [itemAnimValues, setItemAnimValues] = useState<number[]>(allTopics.map(() => -200));
   const [scaleValues, setScaleValues] = useState<number[]>(allTopics.map(() => 1));
   const [isGroupedView, setIsGroupedView] = useState<boolean>(false);
@@ -117,7 +117,7 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
   // Animate overlay open/close based on "visible"
   useEffect(() => {
     if (visible) {
-      // Opening: slide to 0 and fade to 1; animate each item from -200 to 0 staggered.
+      // Opening: slide to 0 and fade to 1; animate each topic from -200 to 0 staggered.
       setSlide(0);
       setFade(1);
       allTopics.forEach((_, index) => {
@@ -130,7 +130,7 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
         }, index * 100);
       });
     } else {
-      // Closing: slide to 200 and fade to 0; animate each item from 0 to -200.
+      // Closing: slide to 200 and fade to 0; animate each topic from 0 to -200.
       setSlide(200);
       setFade(0);
       allTopics.forEach((_, index) => {
@@ -148,7 +148,7 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
     }
   }, [visible, onClose]);
 
-  // When isGroupedView changes, animate items back to 0.
+  // When isGroupedView changes (except first render), animate all items back to their default (translateX:0, scale:1).
   useEffect(() => {
     if (!isFirstRender.current) {
       allTopics.forEach((_, index) => {
@@ -178,6 +178,7 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
     }
   };
 
+  // Handle topic selection with scale animation and update myTopics.
   const handleTopicSelect = (topicKey: string, index: number) => {
     let updatedTopics: Topic[] | undefined;
     if (myTopics.some((topic) => topic.key === topicKey)) {
@@ -220,12 +221,6 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
     }
   };
 
-  // Group topics into rows of 4 items each.
-  const topicRows = [];
-  for (let i = 0; i < allTopics.length; i += 4) {
-    topicRows.push(allTopics.slice(i, i + 4));
-  }
-
   return (
     <div className={styles.modal} onClick={onClose}>
       <div className={styles.overlayBackground} />
@@ -238,7 +233,10 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
         <div className={styles.header}>
           <div className={styles.headerLeft}>
             <h2 className={styles.headerTitle}>{t("change_topic_order")}</h2>
-            <button className={styles.toggleViewButton} onClick={() => setIsGroupedView((prev) => !prev)}>
+            <button
+              className={styles.toggleViewButton}
+              onClick={() => setIsGroupedView((prev) => !prev)}
+            >
               <span className={styles.toggleViewButtonText}>
                 {isGroupedView ? t("toggle_ungroup_view") : t("toggle_group_view")}
               </span>
@@ -252,19 +250,38 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
         {/* Scrollable Topics */}
         <div className={styles.scrollContent}>
           {isGroupedView ? (
-            topicRows.map((row, rowIndex) => (
-              <div key={rowIndex} className={styles.groupContainer}>
-                {row.map((topic) => {
-                  const isSelected = myTopics.some((selected) => selected.key === topic.key);
-                  const index = allTopics.findIndex((item) => item.key === topic.key);
+            // 그룹별 렌더링 (모바일 앱과 동일한 그룹 정의 사용)
+            topicGroups.map((group, groupIndex) => (
+              <div key={groupIndex} className={styles.groupContainer}>
+                <div className={styles.groupHeader}>
+                  {t(group.groupNameKey)}
+                </div>
+                {group.keys.map((key) => {
+                  const topic = allTopics.find((item) => item.key === key);
+                  if (!topic) return null;
+                  const index = allTopics.findIndex((item) => item.key === key);
+                  const isSelected = myTopics.some((selected) => selected.key === key);
                   return (
                     <div
-                      key={topic.key}
+                      key={key}
                       className={styles.topicItem}
                       style={{ transform: `scale(${scaleValues[index]})`, margin: "4px 0" }}
                     >
-                      <button className={styles.topicButton} onClick={() => handleTopicSelect(topic.key, index)}>
-                        <span className={styles.topicText}>{t(`topics.${topic.key}`)}</span>
+                      <button
+                        className={styles.topicButton}
+                        onClick={() => handleTopicSelect(key, index)}
+                        style={{
+                          borderColor: isSelected ? topic.color : "transparent",
+                          borderWidth: "1px",
+                          borderStyle: "solid",
+                        }}
+                      >
+                        <span
+                          className={styles.topicText}
+                          style={{ color: isSelected ? topic.color : "#D9D9D9" }}
+                        >
+                          {t(`topics.${key}`)}
+                        </span>
                       </button>
                     </div>
                   );
@@ -272,19 +289,38 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
               </div>
             ))
           ) : (
-            allTopics.map((topic, index) => (
-              <div
-                key={topic.key}
-                className={styles.topicButtonWrapper}
-                style={{
-                  transform: `translateX(${itemAnimValues[index]}px) scale(${scaleValues[index]})`,
-                }}
-              >
-                <button className={styles.topicButton} onClick={() => handleTopicSelect(topic.key, index)}>
-                  <span className={styles.topicText}>{t(`topics.${topic.key}`)}</span>
-                </button>
-              </div>
-            ))
+            // 일반(비그룹) 뷰: 모든 토픽을 좌우 슬라이드 애니메이션 효과와 함께 렌더링
+            allTopics.map((topic, index) => {
+              const isSelected = myTopics.some(
+                (selected) => selected.key === topic.key
+              );
+              return (
+                <div
+                  key={topic.key}
+                  className={styles.topicButtonWrapper}
+                  style={{
+                    transform: `translateX(${itemAnimValues[index]}px) scale(${scaleValues[index]})`,
+                  }}
+                >
+                  <button
+                    className={styles.topicButton}
+                    onClick={() => handleTopicSelect(topic.key, index)}
+                    style={{
+                      borderColor: isSelected ? topic.color : "transparent",
+                      borderWidth: "1px",
+                      borderStyle: "solid",
+                    }}
+                  >
+                    <span
+                      className={styles.topicText}
+                      style={{ color: isSelected ? topic.color : "#D9D9D9" }}
+                    >
+                      {t(`topics.${topic.key}`)}
+                    </span>
+                  </button>
+                </div>
+              );
+            })
           )}
         </div>
       </div>
