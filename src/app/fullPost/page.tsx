@@ -13,6 +13,7 @@ import AnimatedMarker from '../../components/AnimatedMarker';
 import LoginDecisionOverlay from '../../overlays/LoginDecisionOverlay';
 import ReportOverlay from '../../components/ReportOverlay';
 import styles from '../../styles/pages/Fullpost.module.css';
+export const dynamic = 'force-dynamic';
 
 // 모든 라우트 파라미터를 문자열로 받도록 타입 정의 (추후 내부에서 변환)
 type FullpostRouteParams = {
@@ -138,6 +139,7 @@ const Fullpost: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loginOverlayVisible, setLoginOverlayVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const getToken = () => (typeof window !== "undefined" ? localStorage.getItem("token") : null);
 
   // 헤더 애니메이션 계산
   const headerOpacity = Math.min(1, scrollY / HEADER_APPEAR_RANGE);
@@ -245,7 +247,7 @@ const Fullpost: React.FC = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const fetchUserId = async () => {
-        const token = localStorage.getItem('token');
+        const token = getToken();
         if (token) {
           try {
             const { data, status } = await axios.get(`${SERVER_URL}/users/me`, {
@@ -270,7 +272,7 @@ const Fullpost: React.FC = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const fetchApplicantsProfiles = async () => {
-        const token = localStorage.getItem('token');
+        const token = getToken();
         if (!token || !routeApplicants) return;
         try {
           const applicantIds = String(routeApplicants).split(',');
@@ -318,7 +320,7 @@ const Fullpost: React.FC = () => {
         window.alert(t("error") + ": " + "Missing post ID");
         return;
       }
-    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+    const token = getToken();
     try {
       const { data, status } = await axios.get(`${baseUrl}/${id}`, {
         headers: { Authorization: token ? `Bearer ${token}` : '' },
@@ -344,7 +346,7 @@ const Fullpost: React.FC = () => {
   };
 
   const addVisitor = async () => {
-    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+    const token = getToken();
     if (!token) return;
     try {
       const { data, status } = await axios.post(`${baseUrl}/${id}/visit`, null, {
@@ -367,7 +369,7 @@ const Fullpost: React.FC = () => {
 
   // 지원 신청/취소 처리
   const handleApplication = async () => {
-    const token = localStorage.getItem('token');
+    const token = getToken();
     if (!token) return;
     if (isLoading) return;
     setIsLoading(true);
@@ -431,7 +433,7 @@ const Fullpost: React.FC = () => {
   const recruitmentRate = getRecruitmentRate();
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
+    const token = getToken();
     setIsLoggedIn(!!token);
   }, []);
 
@@ -445,7 +447,7 @@ const Fullpost: React.FC = () => {
       setLoginOverlayVisible(true);
       return;
     }
-    const token = localStorage.getItem('token');
+    const token = getToken();
     if (!token) return;
     try {
       const { data, status } = await axios.post(`${baseUrl}/${id}/like`, null, {
@@ -465,7 +467,7 @@ const Fullpost: React.FC = () => {
 
   const handleAddComment = async (commentMessage: string) => {
     if (commentMessage.trim()) {
-      const token = localStorage.getItem('token');
+      const token = getToken();
       if (!token) return;
       try {
         const { data: userData, status: userStatus } = await axios.get(`${SERVER_URL}/users/me`, {
@@ -506,7 +508,7 @@ const Fullpost: React.FC = () => {
 
   const handleDeletePost = async () => {
     try {
-      const token = localStorage.getItem('token');
+      const token = getToken();
       if (!token) return;
       const { status } = await axios.delete(`${baseUrl}/${id}/delete`, {
         headers: { Authorization: `Bearer ${token}` },
@@ -544,7 +546,7 @@ const Fullpost: React.FC = () => {
       return;
     }
     try {
-      const token = localStorage.getItem('token');
+      const token = getToken();
       if (!token) {
         window.alert(t('error') + ': ' + t('login_required'));
         return;
@@ -631,7 +633,7 @@ const Fullpost: React.FC = () => {
   };
 
   const handleCompleteRecruitment = async () => {
-    const token = localStorage.getItem('token');
+    const token = getToken();
     try {
       const { data, status } = await axios.post(`${baseUrl}/${id}/completeRecruitment`, null, {
         headers: { Authorization: `Bearer ${token}` },
