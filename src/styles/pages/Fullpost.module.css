@@ -1,0 +1,546 @@
+.fullpost {
+    background-color: #f8f8fe;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .fullPostHeaderArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+  
+  .fullPostHeader {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    align-items: center;
+    pointer-events: auto;
+  }
+  
+  .iconWrapper {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .mainLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .logoImage {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .menuIcon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .scrollContainer {
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+    padding-top: 90px;
+  }
+  
+  .heroContainer {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+  
+  .heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .heroGradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    background: linear-gradient(to top, rgba(248,248,254,1), rgba(248,248,254,0.8), rgba(248,248,254,0.6), rgba(188,188,184,0.65), rgba(0,0,0,0.5), rgba(0,0,0,0.3), rgba(0,0,0,0));
+  }
+  
+  .backButton {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    z-index: 10;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .backButtonIcon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  .menuButton {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 10;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menuButtonIcon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  .heroTextOverlay {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+  }
+  
+  .heroTitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  
+  .heroCategory {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .fullPostMainFrame {
+    background-color: #fff;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 24px;
+  }
+  
+  .recruitmentInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .recruitmentInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .recruitmentText {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 5px 25px 5px 5px;
+  }
+  
+  .recruitmentCompleteText {
+    font-size: 16px;
+    font-weight: 700;
+    color: #D8315B;
+    text-align: center;
+  }
+  
+  .circleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10px solid #D8315B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .applyButton {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 24px;
+    text-align: center;
+    margin: 10px 20px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .applyButtonComplete {
+    background-color: #f7f7f7;
+    padding: 30px 10px;
+    border-radius: 24px;
+    text-align: center;
+    margin: 10px 20px;
+    cursor: not-allowed;
+    border: none;
+  }
+  
+  .applyButtonText {
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .disabledButton {
+    background-color: #B0B0B0;
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8FE;
+  }
+  
+  .authorInformation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .friendProfileImage {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    margin-right: 10px;
+  }
+  
+  .authorText {
+    color: #333;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  .author {
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .timeCategoryText {
+    color: #666;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .fullPostContents {
+    margin: 10px;
+    color: #0A1045;
+  }
+  
+  .textContent {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  .postInformation {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 10px;
+  }
+  
+  .iconInfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .iconText {
+    color: #0A1045;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .fullApplicantsProfile {
+    background-color: #fff;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 24px;
+  }
+  
+  .fullMapContents {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .fullCommentsTitle {
+    color: #0A1045;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .distanceText {
+    color: #0A1045;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  
+  .messageInputForm {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding-bottom: 80px;
+  }
+  
+  .mapPreviewContainer {
+    position: relative;
+    margin-top: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .mapImage {
+    width: 100%;
+    height: 150px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  
+  .mapOverlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0,0,0,0.3);
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
+  
+  .overlayCityCountry {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .overlayDistance {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .fullPostTitle {
+    color: #0A1045;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .fullComments {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 24px;
+  }
+  
+  .applicantsContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #fff;
+    border-radius: 24px;
+    margin: 0 15px 10px;
+  }
+  
+  .menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    z-index: 1000;
+  }
+  
+  .menuContainer {
+    width: 140px;
+    height: 250px;
+    background-color: #F8F8FE;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .menuItem {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menuText {
+    color: #0A1045;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fullScreenMapContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 1200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fullScreenMap {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .mapBackButton {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mapBackButtonIcon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  .mapInfoOverlay {
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 15px;
+    z-index: 10;
+    color: #fff;
+  }
+  
+  .mapInfoPlace {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .mapInfoLocation {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .mapInfoDistance {
+    font-size: 14px;
+  }
+  
+  .reduceButton {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background-color: #D8315B;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .reduceButtonText {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .commentList {
+    padding-bottom: 100px;
+  }
+  
+  .iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  

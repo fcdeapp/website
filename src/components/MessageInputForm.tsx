@@ -13,10 +13,12 @@ interface SendMessagePayload {
   imageUri: string | null;
 }
 
-interface MessageInputFormProps {
-  onSendMessage: (payload: SendMessagePayload) => void;
-  showPhotoIcon?: boolean;
-}
+  export interface MessageInputFormProps {
+    onSendMessage: (payload: SendMessagePayload) => void;
+    showPhotoIcon: boolean;
+  }
+  
+  
 
 const MessageInputForm: React.FC<MessageInputFormProps> = ({
   onSendMessage,
