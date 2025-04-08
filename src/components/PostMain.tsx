@@ -464,7 +464,7 @@ const PostMain: React.FC<PostMainProps> = ({
     }
     const params = new URLSearchParams({
       id: postId,
-      author,
+      author: nickname || 'Anonymous',
       time,
       meetingTime,
       meetingPlace,
