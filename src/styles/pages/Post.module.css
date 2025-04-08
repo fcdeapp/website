@@ -5,7 +5,7 @@
     height: 100vh;
     overflow-y: auto;
     position: relative;
-    font-family: sans-serif;
+    box-sizing: border-box;
   }
   
   /* Fixed header – 검색창 줄은 상단에서 조금 떨어지게 */
@@ -75,9 +75,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 100px 15px 0;  /* 위쪽 여백은 그대로, 좌우 마진 15px */
-    width: calc(100% - 30px); /* 전체 폭에서 좌우 마진 총 30px 만큼 뺌 */
-    box-sizing: border-box; /* 패딩, 보더까지 포함해서 크기 계산 */
+    margin: 100px 15px 0; 
+    max-width: calc(100% - 30px);
+    box-sizing: border-box;
   }  
   
   .filterButton,
@@ -90,10 +90,12 @@
     font-size: 14px;
     font-weight: bold;
     color: #1a1045;
-    flex: none;          /* 고정 너비로 설정 */
-    width: 100px;        /* 예시: 100px 고정 너비 */
+    flex: none;   
     text-align: center;
     margin-bottom: 12px;
+    white-space: nowrap;       /* 텍스트 줄바꿈 안 함 */
+    overflow: hidden;          /* 넘치는 텍스트 숨김 */
+    text-overflow: ellipsis; 
   }
   
   .topicSliderWrapper {
