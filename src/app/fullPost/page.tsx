@@ -5,7 +5,7 @@ import { useConfig } from '../../context/ConfigContext';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import _ from 'lodash';
-import { useRouter, useParams } from 'next/navigation';
+import { useRouter, useParams, useSearchParams } from 'next/navigation';
 import MessageInputForm from '../../components/MessageInputForm';
 import MessageBubble from '../../components/MessageBubble';
 import ProfileWithFlag from '../../components/ProfileWithFlag';
@@ -51,7 +51,8 @@ const Fullpost: React.FC = () => {
   const { SERVER_URL } = useConfig();
   const { t } = useTranslation();
   const router = useRouter();
-  const params = useParams<FullpostRouteParams>();
+  const searchParams = useSearchParams();
+  const params = Object.fromEntries([...searchParams.entries()]) as FullpostRouteParams;
 
   // 라우트 파라미터 추출
   const {
@@ -308,6 +309,11 @@ const Fullpost: React.FC = () => {
   };
 
   const fetchPostData = async () => {
+    if (!id) {
+        console.error("Error: Missing post ID. Cannot fetch post data.");
+        window.alert(t("error") + ": " + "Missing post ID");
+        return;
+      }
     const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
     try {
       const { data, status } = await axios.get(`${baseUrl}/${id}`, {
