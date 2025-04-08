@@ -1,6 +1,7 @@
 "use client";
 
-import React, { Suspense, useState, useEffect, useCallback } from 'react';
+import React, { Suspense, useState, useEffect, useMemo, useCallback } from 'react';
+import dynamic from 'next/dynamic';
 import { useConfig } from '../context/ConfigContext';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
@@ -58,18 +59,15 @@ const Fullpost: React.FC = () => {
   const { SERVER_URL } = useConfig();
   const { t } = useTranslation();
   const router = useRouter();
-  const [queryParams, setQueryParams] = useState<FullpostRouteParams | null>(null);
   const searchParams = useSearchParams();
 
-  useEffect(() => {
-    // searchParams는 객체이므로 entries() 메서드 사용 가능
-    setQueryParams(Object.fromEntries(searchParams.entries()) as FullpostRouteParams);
-  }, [searchParams]);
+  // useMemo를 사용해 searchParams를 한 번만 객체로 변환함으로써 렌더링 순서가 일정하도록 처리
+  const queryParams = useMemo(
+    () => Object.fromEntries(searchParams.entries()) as FullpostRouteParams,
+    [searchParams]
+  );
 
-  // queryParams 준비 여부에 따른 플래그
-  const isQueryReady = queryParams !== null;
-
-  // queryParams가 준비되었을 때 사용할 값들 (준비 전에는 기본값 또는 빈 값 사용)
+  // queryParams가 준비되어 있지 않아 id가 없으면 로딩 상태를 표시합니다.
   const {
     id = "",
     author: routeAuthor = "Anonymous",
@@ -94,7 +92,7 @@ const Fullpost: React.FC = () => {
     mapboxImage = "",
     isBuddyPost = "false",
     applicants: routeApplicants = "0",
-  } = queryParams || {} as FullpostRouteParams;
+  } = queryParams;
 
   if (!id) {
     return <div>Loading...</div>;
@@ -691,7 +689,7 @@ const Fullpost: React.FC = () => {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-    {isQueryReady ? (
+    {Object.keys(queryParams).length > 0 ? (
     <div className={styles.fullpost}>
       {/* 헤더 영역 */}
       <div
