@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useConfig } from '../../context/ConfigContext';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import _ from 'lodash';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useRouter, useParams } from 'next/navigation';
 import MessageInputForm from '../../components/MessageInputForm';
 import MessageBubble from '../../components/MessageBubble';
 import ProfileWithFlag from '../../components/ProfileWithFlag';
@@ -14,7 +14,7 @@ import LoginDecisionOverlay from '../../overlays/LoginDecisionOverlay';
 import ReportOverlay from '../../components/ReportOverlay';
 import styles from '../../styles/pages/Fullpost.module.css';
 
-// 모든 라우트 파라미터를 문자열로 받도록 수정 (추후 내부에서 변환)
+// 모든 라우트 파라미터를 문자열로 받도록 타입 정의 (추후 내부에서 변환)
 type FullpostRouteParams = {
   id: string;
   author: string;
@@ -38,7 +38,7 @@ type FullpostRouteParams = {
   meetingCountry: string;
   mapboxImage?: string;
   isBuddyPost: string; // "true" 또는 "false" 문자열
-  applicants?: string; // applicants의 길이를 나타내는 문자열(있다면)
+  applicants?: string; // applicants의 길이를 나타내는 문자열 (있다면)
 };
 
 interface MySendMessagePayload {
@@ -50,10 +50,10 @@ const HEADER_APPEAR_RANGE = 120;
 const Fullpost: React.FC = () => {
   const { SERVER_URL } = useConfig();
   const { t } = useTranslation();
-  const navigate = useNavigate();
+  const router = useRouter();
   const params = useParams<FullpostRouteParams>();
 
-  // 라우트로 전달된 파라미터 추출 (undefined 방지를 위해 nullish coalescing 사용)
+  // 라우트 파라미터 추출
   const {
     id,
     author: routeAuthor,
@@ -76,11 +76,11 @@ const Fullpost: React.FC = () => {
     meetingCity,
     meetingCountry,
     mapboxImage,
-    isBuddyPost, // 문자열 "true" 또는 "false"
-    applicants: routeApplicants, // applicants 길이 (문자열) 혹은 undefined
+    isBuddyPost,
+    applicants: routeApplicants,
   } = params;
 
-  // 숫자로 변환
+  // 문자열을 숫자로 변환
   const initialLikes = Number(likes);
   const initialComments = Number(comments);
   const initialVisitors = Number(visitors);
@@ -114,11 +114,13 @@ const Fullpost: React.FC = () => {
   const [thumbnail, setThumbnail] = useState(routeThumbnail);
   const [applicantsProfiles, setApplicantsProfiles] = useState<any[]>([]);
   const [isRecruitmentComplete, setIsRecruitmentComplete] = useState(false);
+
   // isBuddyPost가 문자열이므로 boolean 변환
   const isBuddyPostBool = isBuddyPost === 'true';
   const baseUrl = isBuddyPostBool ? `${SERVER_URL}/buddy-post` : `${SERVER_URL}/posts`;
-  const [isPlayingOwlAnimation, setIsPlayingOwlAnimation] = useState(false);
-  const owlAnimationRef = useRef<any>(null);
+
+  // 클라이언트 전용 상태/변수
+  const [isPlayingOwlAnimation, setIsPlayingOwlAnimation] = useState(false); // 사용하지 않지만 남겨둔 상태 (필요 시 제거)
   const [meetingLatitude, setMeetingLatitude] = useState<number | null>(null);
   const [meetingLongitude, setMeetingLongitude] = useState<number | null>(null);
   const [currentLatitude, setCurrentLatitude] = useState<number | null>(null);
@@ -132,24 +134,27 @@ const Fullpost: React.FC = () => {
   const [loginOverlayVisible, setLoginOverlayVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
-  // 헤더 애니메이션: opacity, translateY
+  // 헤더 애니메이션 계산
   const headerOpacity = Math.min(1, scrollY / HEADER_APPEAR_RANGE);
   const headerTranslateY = 30 - (scrollY / HEADER_APPEAR_RANGE) * 30;
 
+  // MessageInputForm에 전달하는 함수 (SendMessagePayload와 일치)
   const handleAddCommentWrapper = (payload: { text: string; imageUri: string | null }): void => {
     void handleAddComment(payload.text);
-  };  
+  };
 
   // URL 쿼리에서 referrer 추출
   useEffect(() => {
-    const query = new URLSearchParams(window.location.search);
-    const ref = query.get('ref');
-    if (ref) setReferrer(ref);
+    if (typeof window !== 'undefined') {
+      const query = new URLSearchParams(window.location.search);
+      const ref = query.get('ref');
+      if (ref) setReferrer(ref);
+    }
   }, []);
 
   const createWebLink = () => {
     const postLink = `${SERVER_URL}/posts/${id}?ref=${userId}`;
-    const appLink = `${window.location.origin}/post/${id}?ref=${userId}`;
+    const appLink = `${typeof window !== 'undefined' ? window.location.origin : ''}/post/${id}?ref=${userId}`;
     console.log('web link:', postLink);
     console.log('app link:', appLink);
     return { postLink, appLink };
@@ -158,23 +163,21 @@ const Fullpost: React.FC = () => {
   const handleSharePost = async () => {
     const { postLink } = createWebLink();
     try {
-      await navigator.clipboard.writeText(postLink);
-      window.alert('Link copied! Share with your friends.');
-      if (navigator.share) {
-        await navigator.share({ url: postLink });
+      if (typeof window !== 'undefined') {
+        await navigator.clipboard.writeText(postLink);
+        window.alert('Link copied! Share with your friends.');
+        if (navigator.share) {
+          await navigator.share({ url: postLink });
+        }
       }
     } catch (error) {
       console.error('Error sharing post:', error);
     }
   };
 
-  // 브라우저 geolocation API 사용 (위치정보 가져오기)
+  // 브라우저 geolocation API 사용 (클라이언트 전용)
   useEffect(() => {
-    const getCurrentLocation = () => {
-      if (!navigator.geolocation) {
-        console.log('Geolocation not available');
-        return;
-      }
+    if (typeof window !== 'undefined' && navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           setCurrentLatitude(position.coords.latitude);
@@ -185,8 +188,7 @@ const Fullpost: React.FC = () => {
         },
         { enableHighAccuracy: true, timeout: 20000 }
       );
-    };
-    getCurrentLocation();
+    }
   }, []);
 
   const getDistanceString = () => {
@@ -204,20 +206,15 @@ const Fullpost: React.FC = () => {
     const deltaLat = ((meetingLatitude - currentLatitude) * Math.PI) / 180;
     const deltaLng = ((meetingLongitude - currentLongitude) * Math.PI) / 180;
     const a =
-      Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +
-      Math.cos(lat1) *
-        Math.cos(lat2) *
-        Math.sin(deltaLng / 2) *
-        Math.sin(deltaLng / 2);
+      Math.sin(deltaLat / 2) ** 2 +
+      Math.cos(lat1) * Math.cos(lat2) * Math.sin(deltaLng / 2) ** 2;
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     const distanceInMeters = R * c;
 
-    const deviceLocale = navigator.language;
-    // 영어권(미국, 영국)인 경우 비미터법 사용, 그 외는 미터법
+    const deviceLocale = typeof window !== 'undefined' ? navigator.language : 'en-US';
     const isMetric = !deviceLocale.includes('en-US') && !deviceLocale.includes('en-GB');
     let distanceValue: number;
     if (!isMetric) {
-      // miles
       distanceValue = distanceInMeters / 1609.34;
       if (distanceValue >= 6.214) {
         return `${Math.round(distanceValue)}mi`;
@@ -228,7 +225,6 @@ const Fullpost: React.FC = () => {
         return `${Math.round(meters)}m`;
       }
     } else {
-      // kilometers
       distanceValue = distanceInMeters / 1000;
       if (distanceValue >= 10) {
         return `${Math.round(distanceValue)}km`;
@@ -240,70 +236,65 @@ const Fullpost: React.FC = () => {
     }
   };
 
-  // 사용자 토큰(localStorage) 기반 사용자 정보 불러오기
+  // 사용자 정보 불러오기 (localStorage 사용 전 클라이언트 체크)
   useEffect(() => {
-    const fetchUserId = async () => {
-      const token = localStorage.getItem('token');
-      if (token) {
-        try {
-          const { data, status } = await axios.get(`${SERVER_URL}/users/me`, {
-            headers: { Authorization: `Bearer ${token}` },
-          });
-          if (status >= 200 && status < 300) {
-            setUserId(data.userId);
-            // routeApplicants는 URL 파라미터로 전달된 문자열이므로 실제 데이터가 있을 경우 서버 데이터를 이용해야 할 수 있음
-            if (data && data.userId && routeApplicants) {
-              // 예시: 서버의 지원자 정보와 비교하여 적용 여부를 판단
-              // 여기서는 단순 비교로 처리합니다.
-              setHasApplied(String(routeApplicants).includes(data.userId));
+    if (typeof window !== 'undefined') {
+      const fetchUserId = async () => {
+        const token = localStorage.getItem('token');
+        if (token) {
+          try {
+            const { data, status } = await axios.get(`${SERVER_URL}/users/me`, {
+              headers: { Authorization: `Bearer ${token}` },
+            });
+            if (status >= 200 && status < 300) {
+              setUserId(data.userId);
+              if (data && data.userId && routeApplicants) {
+                setHasApplied(String(routeApplicants).includes(data.userId));
+              }
             }
+          } catch (error) {
+            console.error('Error fetching user data:', error);
           }
-        } catch (error) {
-          console.error('Error fetching user data:', error);
         }
-      }
-    };
-    fetchUserId();
+      };
+      fetchUserId();
+    }
   }, [routeApplicants, SERVER_URL]);
 
   // 지원자 프로필 불러오기
   useEffect(() => {
-    const fetchApplicantsProfiles = async () => {
-      const token = localStorage.getItem('token');
-      if (!token || !routeApplicants) return;
-      try {
-        const applicantIds = String(routeApplicants).split(','); // 만약 여러 값이 콤마로 전달되었다면
-        const { data, status } = await axios.post(
-          `${SERVER_URL}/users/profiles`,
-          { userIds: applicantIds },
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-              'Content-Type': 'application/json',
-            },
+    if (typeof window !== 'undefined') {
+      const fetchApplicantsProfiles = async () => {
+        const token = localStorage.getItem('token');
+        if (!token || !routeApplicants) return;
+        try {
+          const applicantIds = String(routeApplicants).split(',');
+          const { data, status } = await axios.post(
+            `${SERVER_URL}/users/profiles`,
+            { userIds: applicantIds },
+            {
+              headers: {
+                Authorization: `Bearer ${token}`,
+                'Content-Type': 'application/json',
+              },
+            }
+          );
+          if (status >= 200 && status < 300) {
+            setApplicantsProfiles(data.users);
+          } else {
+            console.error('Failed to fetch applicants profiles:', status);
           }
-        );
-        if (status >= 200 && status < 300) {
-          setApplicantsProfiles(data.users);
-        } else {
-          console.error('Failed to fetch applicants profiles:', status);
+        } catch (error) {
+          console.error('Error fetching applicants profiles:', error);
         }
-      } catch (error) {
-        console.error('Error fetching applicants profiles:', error);
-      }
-    };
-    fetchApplicantsProfiles();
+      };
+      fetchApplicantsProfiles();
+    }
   }, [routeApplicants, SERVER_URL]);
 
   const renderAuthorProfile = () => {
     if (postNicknameOption === 'AI') {
-      return (
-        <img
-          className={styles.friendProfileImage}
-          src="/assets/AI.png"
-          alt="AI"
-        />
-      );
+      return <img className={styles.friendProfileImage} src="/assets/AI.png" alt="AI" />;
     } else {
       return (
         <ProfileWithFlag
@@ -316,12 +307,11 @@ const Fullpost: React.FC = () => {
     }
   };
 
-  // 게시글 데이터 불러오기
   const fetchPostData = async () => {
-    const token = localStorage.getItem('token');
+    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
     try {
       const { data, status } = await axios.get(`${baseUrl}/${id}`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { Authorization: token ? `Bearer ${token}` : '' },
       });
       setCommentList(data.commentList);
       setLikeCount(data.likes);
@@ -343,9 +333,8 @@ const Fullpost: React.FC = () => {
     }
   };
 
-  // 방문자 수 추가
   const addVisitor = async () => {
-    const token = localStorage.getItem('token');
+    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
     if (!token) return;
     try {
       const { data, status } = await axios.post(`${baseUrl}/${id}/visit`, null, {
@@ -366,13 +355,12 @@ const Fullpost: React.FC = () => {
     addVisitor();
   }, []);
 
-  // 지원(신청/취소) 처리
+  // 지원 신청/취소 처리
   const handleApplication = async () => {
     const token = localStorage.getItem('token');
     if (!token) return;
     if (isLoading) return;
     setIsLoading(true);
-    // 낙관적 업데이트
     setHasApplied(!hasApplied);
     setApplicants(!hasApplied ? applicants + 1 : applicants - 1);
     if (!hasApplied) {
@@ -398,7 +386,6 @@ const Fullpost: React.FC = () => {
         throw new Error('Application update failed');
       }
     } catch (error) {
-      // 이전 상태 복원
       setHasApplied(!hasApplied);
       setApplicants(hasApplied ? applicants + 1 : applicants - 1);
       setApplicantsProfiles(
@@ -414,7 +401,6 @@ const Fullpost: React.FC = () => {
   };
 
   const getRecruitmentRate = () => {
-    // 숫자 변환 후 계산
     const effectiveRecruitmentCount = initialRecruitmentCount;
     if (postNicknameOption === 'AI') {
       return effectiveRecruitmentCount > 0 ? applicants / effectiveRecruitmentCount : 0;
@@ -435,11 +421,8 @@ const Fullpost: React.FC = () => {
   const recruitmentRate = getRecruitmentRate();
 
   useEffect(() => {
-    const checkLoginStatus = async () => {
-      const token = localStorage.getItem('token');
-      setIsLoggedIn(!!token);
-    };
-    checkLoginStatus();
+    const token = localStorage.getItem('token');
+    setIsLoggedIn(!!token);
   }, []);
 
   const onRefresh = useCallback(() => {
@@ -520,7 +503,7 @@ const Fullpost: React.FC = () => {
       });
       if (status >= 200 && status < 300) {
         window.alert(t('delete_success') + ': ' + t('delete_success_message'));
-        navigate(-1);
+        router.back();
       } else {
         window.alert(t('error') + ': ' + t('delete_error'));
       }
@@ -628,16 +611,9 @@ const Fullpost: React.FC = () => {
     }
   };
 
+  // Lottie 관련 코드는 제거되었으며, handleOwlClick은 단순히 fetchPostData()를 호출합니다.
   const handleOwlClick = () => {
-    setIsPlayingOwlAnimation(true);
-    if (owlAnimationRef.current) {
-      owlAnimationRef.current.anim.play();
-    }
     fetchPostData();
-  };
-
-  const onAnimationFinish = () => {
-    setIsPlayingOwlAnimation(false);
   };
 
   const toggleMapFullScreen = () => {
@@ -666,7 +642,6 @@ const Fullpost: React.FC = () => {
     _.debounce(() => {
       handleApplication();
     }, 1000, { leading: true, trailing: false }),
-    // handleApplication은 의존성 배열에 포함하지 않아도 됩니다.
     []
   );
 
@@ -694,7 +669,7 @@ const Fullpost: React.FC = () => {
         style={{ opacity: headerOpacity, transform: `translateY(${headerTranslateY}px)` }}
       >
         <div className={styles.fullPostHeader}>
-          <button className={styles.iconWrapper} onClick={() => navigate(-1)}>
+          <button className={styles.iconWrapper} onClick={() => router.back()}>
             <img className={styles.iconWrapper} src="/assets/BackIcon.png" alt="Back" />
           </button>
           <img className={styles.logoImage} src="/assets/Owl-icon-pink.png" alt="Logo" />
@@ -726,7 +701,7 @@ const Fullpost: React.FC = () => {
               onError={(error) => console.error('Failed to load image:', error)}
             />
             <div className={styles.heroGradient}></div>
-            <button className={styles.backButton} onClick={() => navigate(-1)}>
+            <button className={styles.backButton} onClick={() => router.back()}>
               <img src="/assets/back-light.png" className={styles.backButtonIcon} alt="Back" />
             </button>
             <button className={styles.menuButton} onClick={toggleMenu}>
@@ -758,7 +733,6 @@ const Fullpost: React.FC = () => {
                   <p className={styles.recruitmentCompleteText}>{t('recruitment_status_complete')}</p>
                 ) : (
                   <div className={styles.circleContainer}>
-                    {/* 원형 진행률 표시 */}
                     <div className={styles.circle}>
                       <span>{Math.round(recruitmentRate * 100)}%</span>
                     </div>
@@ -892,7 +866,6 @@ const Fullpost: React.FC = () => {
           {isMapFullScreen && (
             <div className={styles.fullScreenMapContainer}>
               <div className={styles.fullScreenMap}>
-                {/* 구글맵 iframe (좌표 기반) */}
                 <iframe
                   title="Full Screen Map"
                   src={`https://www.google.com/maps?q=${meetingLatitude},${meetingLongitude}&z=15&output=embed`}
@@ -929,7 +902,7 @@ const Fullpost: React.FC = () => {
                 {t('comments')} {commentCount}
               </p>
             </div>
-            {(commentCount > 0) && (
+            {commentCount > 0 && (
               <div className={styles.commentList}>
                 {commentList.map((item, index) => renderCommentItem(item, index))}
               </div>
@@ -940,10 +913,7 @@ const Fullpost: React.FC = () => {
 
       {/* 댓글 입력 폼 */}
       <div className={styles.messageInputForm}>
-        <MessageInputForm
-          onSendMessage={handleAddCommentWrapper}
-          showPhotoIcon={false}
-        />
+        <MessageInputForm onSendMessage={handleAddCommentWrapper} showPhotoIcon={false} />
       </div>
 
       <ReportOverlay
@@ -988,7 +958,7 @@ const Fullpost: React.FC = () => {
             visible={true}
             onLogin={() => {
               setLoginOverlayVisible(false);
-              navigate('/signin');
+              router.push('/signin');
             }}
             onBrowse={() => {
               setLoginOverlayVisible(false);
