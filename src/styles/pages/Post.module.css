@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     z-index: 100;
-    padding: 80px 20px 0;
+    padding: 120px 20px 0; 
     background-color: transparent;
   }
   
@@ -78,7 +78,7 @@
     padding: 10px 15px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
+    margin-top: 20px;  /* 위쪽 여백 추가 */
   }
   
   .filterButton,
@@ -91,12 +91,15 @@
     font-size: 14px;
     font-weight: bold;
     color: #1a1045;
+    flex: none;          /* 고정 너비로 설정 */
+    width: 100px;        /* 예시: 100px 고정 너비 */
+    text-align: center;
   }
   
   .topicSliderWrapper {
-    flex: 1;
+    flex: 1;         /* 남은 공간 차지 */
     margin: 0 10px;
-  }
+  }  
   
   /* Flat list of posts: 2열 반응형 레이아웃 */
   .flatList {
