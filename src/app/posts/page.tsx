@@ -329,7 +329,7 @@ const Post: React.FC = () => {
     const interleaved: any[] = [];
     postData.forEach((post, index) => {
       interleaved.push({ type: "post", data: post });
-      if ((index + 1) % 5 === 0) {
+      if ((index + 1) % 6 === 0) {
         interleaved.push({ type: "ad", key: `ad-${index}` });
       }
     });

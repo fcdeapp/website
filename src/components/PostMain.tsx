@@ -1,12 +1,6 @@
 "use client";
 
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  useCallback,
-  UIEvent,
-} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import { useConfig } from "../context/ConfigContext";
@@ -27,7 +21,7 @@ const getFullImageUrl = (url: string | undefined): string => {
 
 // ─────────────────────────────────────────────────────────────
 // MarqueeText 컴포넌트 (웹용)
-// CSS keyframes 애니메이션은 PostMain.module.css에 정의되어 있음
+// (이 컴포넌트는 앱용 코드와 동일한 MarqueeText 효과를 위해 남겨두었으나, 현재 지도 영역에는 사용하지 않습니다.)
 interface MarqueeTextProps {
   text: string;
   style?: React.CSSProperties;
@@ -156,7 +150,12 @@ export interface PostMainProps {
 
 // ─────────────────────────────────────────────────────────────
 // PostMain 컴포넌트 (웹용)
-// 앱 버전과 동일한 기능 및 디자인을 구현하며, 블러와 모집 완료 배지는 cardContainer 내부에 적용됩니다.
+// 앱버전과 동일한 기능 및 디자인을 구현합니다.
+// 주요 변경점:  
+// 1. 닉네임이 더 아래쪽에 위치 (CSS 수정)  
+// 2. 프로필 이미지와 텍스트 사이 간격 보완 (CSS 수정)  
+// 3. 아이콘 묶음(지도, 참여자, 번역)은 미활성 상태일 때 오른쪽 정렬됨 (CSS 수정)
+// 4. 지도 영역은 iframe으로 표시 (Google Maps URL 이용)
 const PostMain: React.FC<PostMainProps> = ({
   postId,
   author,
@@ -206,24 +205,17 @@ const PostMain: React.FC<PostMainProps> = ({
   const [showMap, setShowMap] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [floatingHearts, setFloatingHearts] = useState<string[]>([]);
-  // 지도 애니메이션 관련 (웹에서는 state와 CSS 전환)
-  const [mapSlide, setMapSlide] = useState<number>(window.innerWidth);
-  const [mapOpacity, setMapOpacity] = useState<number>(0);
-  const [mapHeight, setMapHeight] = useState<number>(0);
-  const [isLiking, setIsLiking] = useState(false);
-  const [isCheckingStatus, setIsCheckingStatus] = useState(true);
-  const [isContentExpanded, setIsContentExpanded] = useState(false);
+  // 지도 관련 단순 상태 (이전 애니메이션 관련 state 제거)
+  const screenWidth = window.innerWidth;
+  const lastLikePressTime = useRef(0);
   // 부모 컨테이너 너비 (MarqueeText에 전달)
   const [parentWidth, setParentWidth] = useState<number>(0);
-  // distance 상태 (setDistance 오류 해결)
+  // distance 상태
   const [distance, setDistance] = useState<string | null>(null);
 
   const containerRef = useRef<HTMLDivElement>(null);
-  const screenWidth = window.innerWidth;
-  const screenHeight = window.innerHeight;
-  const lastLikePressTime = useRef(0);
 
-  // 모집률 및 텍스트 계산 (앱 버전 동일)
+  // 모집률 및 텍스트 계산
   const getRecruitmentRate = () => {
     if (nicknameOption === "AI") {
       return recruitmentCount > 0 ? applicantsCount / recruitmentCount : 0;
@@ -243,11 +235,9 @@ const PostMain: React.FC<PostMainProps> = ({
   // 방문자 및 좋아요 상태 확인
   useEffect(() => {
     const checkStatus = async () => {
-      setIsCheckingStatus(true);
       const token = localStorage.getItem("token");
       if (!token) {
         console.log("No token found, skipping status check.");
-        setIsCheckingStatus(false);
         return;
       }
       try {
@@ -262,11 +252,11 @@ const PostMain: React.FC<PostMainProps> = ({
         });
         setLiked(postData.likedUsers.includes(userId));
         setLikeCount(postData.likes);
-        setCommented(postData.commentList.some((comment: any) => comment.author === userId));
+        setCommented(
+          postData.commentList.some((comment: any) => comment.author === userId)
+        );
       } catch (error) {
         console.error("Error updating status:", error);
-      } finally {
-        setIsCheckingStatus(false);
       }
     };
     checkStatus();
@@ -298,7 +288,7 @@ const PostMain: React.FC<PostMainProps> = ({
         } catch (error) {
           console.error("Error fetching applicants profiles:", error);
         }
-        await new Promise((resolve) => setTimeout(resolve, 1000 * (4 - attempts)));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
         attempts -= 1;
       }
     };
@@ -346,26 +336,13 @@ const PostMain: React.FC<PostMainProps> = ({
     fetchDistance();
   }, [latitude, longitude, t]);
 
-  // 지도 보이기/숨기기 (웹: setState + CSS 전환)
-  const startMapAnimation = () => {
-    setMapSlide(0);
-    setMapOpacity(1);
-    setMapHeight(200);
-    setShowMap(true);
-  };
-
+  // 지도 보이기 / 숨기기 (단순 state 토글)
   const showMapHandler = () => {
     if (!latitude || !longitude) return;
-    startMapAnimation();
+    setShowMap(true);
   };
-
   const hideMapHandler = () => {
-    setMapOpacity(0);
-    setMapSlide(screenWidth);
-    setMapHeight(0);
-    setTimeout(() => {
-      setShowMap(false);
-    }, 500);
+    setShowMap(false);
   };
 
   // 지원자 토글
@@ -427,10 +404,9 @@ const PostMain: React.FC<PostMainProps> = ({
     const now = Date.now();
     if (now - lastLikePressTime.current < 500) return;
     lastLikePressTime.current = now;
-    if (isLiking || isCheckingStatus) return;
+    if (isTranslating) return;
     const token = localStorage.getItem("token");
     if (!token) return;
-    setIsLiking(true);
     try {
       setLiked(!liked);
       generateFloatingHeart();
@@ -444,8 +420,6 @@ const PostMain: React.FC<PostMainProps> = ({
       setLikeCount(data.likes);
     } catch (error) {
       console.error("Error liking post:", error);
-    } finally {
-      setIsLiking(false);
     }
   };
 
@@ -468,56 +442,51 @@ const PostMain: React.FC<PostMainProps> = ({
     );
   };
 
-  // 게시물 클릭 시 FullPost 페이지로 이동 (쿼리스트링 전달)
+  // 게시물 클릭 시 FullPost 페이지로 이동 (각 정보 querystring 전달)
   const handlePostPress = async () => {
-    if (isCheckingStatus) return;
-    try {
-      const token = localStorage.getItem("token");
-      const baseUrl = isBuddyPost ? `${SERVER_URL}/buddy-post` : `${SERVER_URL}/posts`;
-      let updatedVisitorCount = visitorCount;
-      if (token) {
-        try {
-          const { data } = await axios.post(
-            `${baseUrl}/${postId}/visit`,
-            null,
-            { headers: { Authorization: `Bearer ${token}` } }
-          );
-          updatedVisitorCount = data.visitors;
-          setVisitorCount(updatedVisitorCount);
-        } catch (error) {
-          console.error("Failed to update visitor count", error);
-        }
-      } else {
-        console.log("Token not found, skipping visitor update.");
+    const token = localStorage.getItem("token");
+    const baseUrl = isBuddyPost ? `${SERVER_URL}/buddy-post` : `${SERVER_URL}/posts`;
+    let updatedVisitorCount = visitorCount;
+    if (token) {
+      try {
+        const { data } = await axios.post(
+          `${baseUrl}/${postId}/visit`,
+          null,
+          { headers: { Authorization: `Bearer ${token}` } }
+        );
+        updatedVisitorCount = data.visitors;
+        setVisitorCount(updatedVisitorCount);
+      } catch (error) {
+        console.error("Failed to update visitor count", error);
       }
-      const params = new URLSearchParams({
-        id: postId,
-        author,
-        time,
-        meetingTime,
-        meetingPlace,
-        meetingCity,
-        meetingCountry,
-        category,
-        title,
-        content,
-        likes: likeCount.toString(),
-        comments: comments.toString(),
-        visitors: visitorCount.toString(),
-        profileImage: getFullImageUrl(profileImage),
-        image: getFullImageUrl(image),
-        thumbnail: getFullImageUrl(thumbnail),
-        recruitmentCount: recruitmentCount.toString(),
-        applicantsCount: applicantsCount.toString(),
-        applicants: JSON.stringify(applicants),
-        isBuddyPost: isBuddyPost ? "true" : "false",
-        latitude: latitude?.toString() || "",
-        longitude: longitude?.toString() || "",
-      });
-      router.push(`/fullPost?${params.toString()}`);
-    } catch (error) {
-      console.error("Error visiting post:", error);
+    } else {
+      console.log("Token not found, skipping visitor update.");
     }
+    const params = new URLSearchParams({
+      id: postId,
+      author,
+      time,
+      meetingTime,
+      meetingPlace,
+      meetingCity,
+      meetingCountry,
+      category,
+      title,
+      content,
+      likes: likeCount.toString(),
+      comments: comments.toString(),
+      visitors: updatedVisitorCount.toString(),
+      profileImage: getFullImageUrl(profileImage),
+      image: getFullImageUrl(image),
+      thumbnail: getFullImageUrl(thumbnail),
+      recruitmentCount: recruitmentCount.toString(),
+      applicantsCount: applicantsCount.toString(),
+      applicants: JSON.stringify(applicants),
+      isBuddyPost: isBuddyPost ? "true" : "false",
+      latitude: latitude?.toString() || "",
+      longitude: longitude?.toString() || "",
+    });
+    router.push(`/fullPost?${params.toString()}`);
   };
 
   return (
@@ -532,8 +501,10 @@ const PostMain: React.FC<PostMainProps> = ({
       }}
     >
       <div className={styles.cardContainer}>
-        <div className={styles.postMain} style={{ boxShadow: "0px 2px 4px rgba(0,0,0,0.2)" }}>
-          <div className={`${styles.postContent} ${showMap ? styles.transparentBackground : ""}`}>
+        <div className={styles.postMain}>
+          <div
+            className={`${styles.postContent} ${showMap ? styles.transparentBackground : ""}`}
+          >
             <div className={styles.textContent}>
               <div className={styles.authorInformation}>
                 <div className={styles.profileImage}>
@@ -541,19 +512,28 @@ const PostMain: React.FC<PostMainProps> = ({
                     <img
                       src={getFullImageUrl("AI.png")}
                       alt="AI"
-                      style={{ width: 48, height: 48, borderRadius: 24, objectFit: "cover" }}
+                      style={{
+                        width: 48,
+                        height: 48,
+                        borderRadius: 24,
+                        objectFit: "cover",
+                      }}
                     />
                   ) : (
                     <ProfileWithFlag
                       userId={userId}
                       nickname={author}
-                      profileImage={getFullImageUrl(profileImage) || getFullImageUrl("Annonymous.png")}
+                      profileImage={
+                        getFullImageUrl(profileImage) ||
+                        getFullImageUrl("Annonymous.png")
+                      }
                       profileThumbnail={getFullImageUrl(profileThumbnail)}
                       size={48}
                       countryName={undefined}
                     />
                   )}
                 </div>
+                {/* 수정: 닉네임과 시간 텍스트에 여분의 마진 추가 (아래로 내려짐) */}
                 <div className={styles.author}>
                   <p className={styles.authorText}>{author}</p>
                   <p className={styles.timeCategoryText}>
@@ -564,47 +544,54 @@ const PostMain: React.FC<PostMainProps> = ({
                   {applicantsCount >= recruitmentCount ? (
                     <>
                       <p className={styles.checkText}>✓</p>
-                      <p className={styles.recruitmentCompleteText}>{t("recruitment_status_complete")}</p>
+                      <p className={styles.recruitmentCompleteText}>
+                        {t("recruitment_status_complete")}
+                      </p>
                     </>
                   ) : (
                     <div className={styles.circleWrapper}>
                       <div
                         className={styles.circle}
                         style={{
-                          background: `conic-gradient(#D8315B ${recruitmentRate * 100}%, #fff ${recruitmentRate * 100}%)`,
+                          background: `conic-gradient(#D8315B ${
+                            recruitmentRate * 100
+                          }%, #fff ${recruitmentRate * 100}%)`,
                         }}
                       ></div>
                     </div>
                   )}
-                  <p
-                    className={styles.recruitmentText}
-                    style={{
-                      color: applicantsCount < recruitmentCount && showApplicants ? "#1a1045" : "transparent",
-                      fontSize: applicantsCount < recruitmentCount && showApplicants ? 12 : 1,
-                      marginTop: applicantsCount < recruitmentCount && showApplicants ? 5 : 0,
-                    }}
-                  >
+                  <p className={styles.recruitmentText}>
                     {getRecruitmentText()}
                   </p>
                 </div>
               </div>
               <div className={styles.postTextImageSet}>
-                <div className={styles.postTextSet} style={{ width: image ? "60%" : "100%" }}>
+                <div
+                  className={styles.postTextSet}
+                  style={{ width: image ? "60%" : "100%" }}
+                >
                   <p className={styles.postTitle}>{translatedText.title}</p>
                   <div className={styles.meetingRow}>
-                    <p className={styles.meetingTime}>{formatDateToLocalTimezone(meetingTime)}</p>
+                    <p className={styles.meetingTime}>
+                      {formatDateToLocalTimezone(meetingTime)}
+                    </p>
                     <div className={styles.meetingStatus}>
-                      <p className={styles.meetingStatusText}>{formatTimeUntil(meetingTime, t)}</p>
+                      <p className={styles.meetingStatusText}>
+                        {formatTimeUntil(meetingTime, t)}
+                      </p>
                     </div>
                   </div>
                   <div
                     onClick={(e) => {
                       e.stopPropagation();
-                      setIsContentExpanded((prev) => !prev);
+                      setIsExpanded((prev) => !prev);
                     }}
                   >
                     <p className={styles.postContents}>
-                      {truncateText(translatedText.content, isContentExpanded ? 1000 : 100)}
+                      {truncateText(
+                        translatedText.content,
+                        isExpanded ? 1000 : 100
+                      )}
                     </p>
                   </div>
                 </div>
@@ -614,7 +601,9 @@ const PostMain: React.FC<PostMainProps> = ({
                       className={styles.postImage}
                       src={getFullImageUrl(thumbnail || image)}
                       alt="post"
-                      onError={(e) => console.warn("Failed to load image:", e)}
+                      onError={(e) =>
+                        console.warn("Failed to load image:", e)
+                      }
                     />
                   </div>
                 ) : (
@@ -634,7 +623,11 @@ const PostMain: React.FC<PostMainProps> = ({
                   }}
                   style={{ backgroundColor: "transparent", borderRadius: 8 }}
                 >
-                  <img src={getFullImageUrl("eye-colored.png")} alt="visitor" className={styles.icon} />
+                  <img
+                    src={getFullImageUrl("eye-colored.png")}
+                    alt="visitor"
+                    className={styles.icon}
+                  />
                   <p className={styles.iconText}>{visitorCount}</p>
                 </div>
                 <div
@@ -646,7 +639,11 @@ const PostMain: React.FC<PostMainProps> = ({
                   style={{ backgroundColor: "transparent", borderRadius: 8 }}
                 >
                   <img
-                    src={liked ? getFullImageUrl("like-colored.png") : getFullImageUrl("like-icon.png")}
+                    src={
+                      liked
+                        ? getFullImageUrl("like-colored.png")
+                        : getFullImageUrl("like-icon.png")
+                    }
                     alt="like"
                     className={styles.icon}
                   />
@@ -654,7 +651,7 @@ const PostMain: React.FC<PostMainProps> = ({
                 </div>
                 <div className={styles.floatingHeartsContainer}>
                   {floatingHearts.map((id) => (
-                    <FloatingHeart key={id} width={screenWidth} height={screenHeight} />
+                    <FloatingHeart key={id} width={window.innerWidth} height={window.innerHeight} />
                   ))}
                 </div>
                 <div
@@ -665,7 +662,11 @@ const PostMain: React.FC<PostMainProps> = ({
                   }}
                   style={{ backgroundColor: "transparent", borderRadius: 8 }}
                 >
-                  <img src={getFullImageUrl("comment-icon.png")} alt="comment" className={styles.icon} />
+                  <img
+                    src={getFullImageUrl("comment-icon.png")}
+                    alt="comment"
+                    className={styles.icon}
+                  />
                   <p className={styles.iconText}>{comments}</p>
                 </div>
               </div>
@@ -679,34 +680,37 @@ const PostMain: React.FC<PostMainProps> = ({
               >
                 <div className={styles.iconInfoAll}>
                   <div className={styles.iconInfo}>
-                    <img src={getFullImageUrl("plus-icon.png")} alt="plus" className={styles.icon} />
+                    <img
+                      src={getFullImageUrl("plus-icon.png")}
+                      alt="plus"
+                      className={styles.icon}
+                    />
                   </div>
                 </div>
               </div>
             )}
             {showMap ? (
+              // 지도 보이는 경우: iframe 사용 (Google Maps)
               <div
-                className={styles.placeRow}
-                style={{
-                  transform: `translateX(${mapSlide}px)`,
-                  opacity: mapOpacity,
-                  zIndex: 10,
-                }}
+                className={styles.mapIframeContainer}
                 onClick={(e) => e.stopPropagation()}
               >
-                <div onClick={hideMapHandler}>
-                  <img src={getFullImageUrl("map-colored.png")} alt="map" className={styles.mapIcon} />
-                </div>
-                <div onClick={hideMapHandler} style={{ maxWidth: screenWidth * 0.6 }}>
-                  <MarqueeText
-                    text={meetingPlace || t("defaultMeetingPlace")}
-                    style={undefined}
-                    parentWidth={parentWidth || 0}
-                    containerStyle={{ maxWidth: screenWidth * 0.6, alignSelf: "flex-start" }}
-                    speed={6000}
-                    repeatSpacer={80}
-                  />
-                </div>
+                <button
+                  className={styles.closeMapButton}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    hideMapHandler();
+                  }}
+                >
+                  ×
+                </button>
+                <iframe
+                  src={`https://www.google.com/maps?q=${latitude},${longitude}&z=15&output=embed`}
+                  title="Meeting Location"
+                  className={styles.mapIframe}
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
               </div>
             ) : showApplicants && applicants.length > 0 ? (
               <div
@@ -736,6 +740,7 @@ const PostMain: React.FC<PostMainProps> = ({
                 </div>
               </div>
             ) : (
+              // 미활성 상태일 때 아이콘 묶음 오른쪽 정렬
               <div className={styles.iconRow}>
                 <div
                   onClick={(e) => {
@@ -746,13 +751,29 @@ const PostMain: React.FC<PostMainProps> = ({
                     }
                   }}
                 >
-                  <img src={getFullImageUrl("map-icon.png")} alt="map icon" className={styles.icon} />
-                </div>
-                <div onClick={(e) => { e.stopPropagation(); handleApplicantsToggle(); }}>
-                  <img src={getFullImageUrl("participants-icon.png")} alt="participants icon" className={styles.icon} />
+                  <img
+                    src={getFullImageUrl("map-icon.png")}
+                    alt="map icon"
+                    className={styles.icon}
+                  />
                 </div>
                 <div
-                  onClick={(e) => { e.stopPropagation(); toggleTranslation(); }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleApplicantsToggle();
+                  }}
+                >
+                  <img
+                    src={getFullImageUrl("participants-icon.png")}
+                    alt="participants icon"
+                    className={styles.icon}
+                  />
+                </div>
+                <div
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleTranslation();
+                  }}
                   className={styles.translateButton}
                   style={{ pointerEvents: isTranslating ? "none" : "auto" }}
                 >
@@ -772,16 +793,16 @@ const PostMain: React.FC<PostMainProps> = ({
         </div>
         {applicantsCount >= recruitmentCount && (
           <>
-            <div className={styles.blurOverlay}>
-              {/* 블러 효과는 이 영역(cardContainer) 내에서만 적용 */}
-            </div>
+            <div className={styles.blurOverlay}></div>
             <div className={styles.recruitmentBadge}>
               <img
                 src={getFullImageUrl("checkedComponent.png")}
                 alt="badge"
                 className={styles.badgeIcon}
               />
-              <p className={styles.recruitmentBadgeText}>{t("recruitment_status_complete")}</p>
+              <p className={styles.recruitmentBadgeText}>
+                {t("recruitment_status_complete")}
+              </p>
             </div>
           </>
         )}
