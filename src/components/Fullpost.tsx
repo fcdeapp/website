@@ -12,7 +12,7 @@ import ProfileWithFlag from './ProfileWithFlag';
 import AnimatedMarker from './AnimatedMarker';
 import LoginDecisionOverlay from '../overlays/LoginDecisionOverlay';
 import ReportOverlay from './ReportOverlay';
-import styles from '../../styles/pages/Fullpost.module.css';
+import styles from '../styles/pages/Fullpost.module.css';
 
 // 모든 라우트 파라미터를 문자열로 받도록 타입 정의 (추후 내부에서 변환)
 type FullpostRouteParams = {
