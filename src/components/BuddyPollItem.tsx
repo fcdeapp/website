@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useRef, useEffect, MouseEvent } from 'react';
 import styles from '../styles/components/BuddyPollItem.module.css';
 import axios from 'axios';
