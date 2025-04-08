@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { Suspense, useState, useEffect, useCallback } from 'react';
 import { useConfig } from '../../context/ConfigContext';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
@@ -52,8 +52,8 @@ const Fullpost: React.FC = () => {
   const { t } = useTranslation();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const params = Object.fromEntries([...searchParams.entries()]) as FullpostRouteParams;
-
+  const params = searchParams ? Object.fromEntries([...searchParams.entries()]) as FullpostRouteParams : {} as FullpostRouteParams;
+  
   // 라우트 파라미터 추출
   const {
     id,
@@ -80,6 +80,10 @@ const Fullpost: React.FC = () => {
     isBuddyPost,
     applicants: routeApplicants,
   } = params;
+
+  if (!id) {
+    return <div>Loading...</div>;
+  }
 
   // 문자열을 숫자로 변환
   const initialLikes = Number(likes);
@@ -668,6 +672,7 @@ const Fullpost: React.FC = () => {
   };
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <div className={styles.fullpost}>
       {/* 헤더 영역 */}
       <div
@@ -973,6 +978,7 @@ const Fullpost: React.FC = () => {
         </div>
       )}
     </div>
+    </Suspense>
   );
 };
 
