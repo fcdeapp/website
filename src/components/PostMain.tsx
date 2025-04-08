@@ -481,7 +481,7 @@ const PostMain: React.FC<PostMainProps> = ({
       thumbnail: getFullImageUrl(thumbnail),
       recruitmentCount: recruitmentCount.toString(),
       applicantsCount: applicantsCount.toString(),
-      applicants: JSON.stringify(applicants),
+      applicants: applicants.join(","),
       isBuddyPost: isBuddyPost ? "true" : "false",
       latitude: latitude?.toString() || "",
       longitude: longitude?.toString() || "",
