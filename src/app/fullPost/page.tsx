@@ -685,6 +685,7 @@ const Fullpost: React.FC = () => {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
+    {isQueryReady ? (
     <div className={styles.fullpost}>
       {/* 헤더 영역 */}
       <div
@@ -990,6 +991,9 @@ const Fullpost: React.FC = () => {
         </div>
       )}
     </div>
+    ) : (
+        <div>Loading...</div>
+    )}
     </Suspense>
   );
 };
