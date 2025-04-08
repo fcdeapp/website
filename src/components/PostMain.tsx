@@ -206,7 +206,7 @@ const PostMain: React.FC<PostMainProps> = ({
   const [isExpanded, setIsExpanded] = useState(false);
   const [floatingHearts, setFloatingHearts] = useState<string[]>([]);
   // 지도 관련 단순 상태 (이전 애니메이션 관련 state 제거)
-  const screenWidth = window.innerWidth;
+  const [screenWidth, setScreenWidth] = useState<number>(0);
   const lastLikePressTime = useRef(0);
   // 부모 컨테이너 너비 (MarqueeText에 전달)
   const [parentWidth, setParentWidth] = useState<number>(0);
@@ -214,6 +214,12 @@ const PostMain: React.FC<PostMainProps> = ({
   const [distance, setDistance] = useState<string | null>(null);
 
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenWidth(window.innerWidth);
+    }
+  }, []);
 
   // 모집률 및 텍스트 계산
   const getRecruitmentRate = () => {
