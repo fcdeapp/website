@@ -6,7 +6,6 @@ import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import _ from 'lodash';
 import { useNavigate, useParams } from 'react-router-dom';
-import Lottie from 'react-lottie';
 import MessageInputForm from '../../components/MessageInputForm';
 import MessageBubble from '../../components/MessageBubble';
 import ProfileWithFlag from '../../components/ProfileWithFlag';
@@ -140,16 +139,6 @@ const Fullpost: React.FC = () => {
   const handleAddCommentWrapper = (payload: { text: string; imageUri: string | null }): void => {
     void handleAddComment(payload.text);
   };  
-
-  // Lottie 애니메이션 옵션 (오월 아이콘)
-  const defaultOwlOptions = {
-    loop: false,
-    autoplay: false,
-    animationData: require('../../../assets/HomeOwlPink.json'),
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  };
 
   // URL 쿼리에서 referrer 추출
   useEffect(() => {
@@ -708,27 +697,7 @@ const Fullpost: React.FC = () => {
           <button className={styles.iconWrapper} onClick={() => navigate(-1)}>
             <img className={styles.iconWrapper} src="/assets/BackIcon.png" alt="Back" />
           </button>
-          <button className={styles.mainLogo} onClick={handleOwlClick}>
-            {isPlayingOwlAnimation ? (
-              <div className={styles.logoImage}>
-                <Lottie
-                  options={defaultOwlOptions}
-                  height={54}
-                  width={54}
-                  isStopped={!isPlayingOwlAnimation}
-                  eventListeners={[
-                    {
-                      eventName: 'complete',
-                      callback: onAnimationFinish,
-                    },
-                  ]}
-                  ref={owlAnimationRef}
-                />
-              </div>
-            ) : (
-              <img className={styles.logoImage} src="/assets/Owl-icon-pink.png" alt="Logo" />
-            )}
-          </button>
+          <img className={styles.logoImage} src="/assets/Owl-icon-pink.png" alt="Logo" />
           <button
             className={styles.iconWrapper}
             onClick={() => {
@@ -821,25 +790,6 @@ const Fullpost: React.FC = () => {
               </button>
             )}
           </div>
-
-          {isLoading && (
-            <div className={styles.loadingContainer}>
-              <Lottie
-                options={{
-                  loop: true,
-                  autoplay: true,
-                  animationData: window.navigator.userAgent.includes('Android')
-                    ? require('../../../assets/ActivityIndicatorAndroid.json')
-                    : require('../../../assets/ActivityIndicatorOWLPink.json'),
-                  rendererSettings: {
-                    preserveAspectRatio: 'xMidYMid slice',
-                  },
-                }}
-                height={150}
-                width={150}
-              />
-            </div>
-          )}
 
           <div className={styles.fullPostMainFrame}>
             <div className={styles.authorInformation}>
