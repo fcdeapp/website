@@ -3,7 +3,7 @@
 import React from "react";
 import axios from "axios";
 import { useConfig } from "../context/ConfigContext";
-import styles from "../styles/components/ErrorBoundaryWrapper.module.css";
+import styles from "../styles/components/ErrorBoundary.module.css";
 
 interface ErrorBoundaryProps {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ interface ErrorBoundaryState {
   hasError: boolean;
 }
 
-const ErrorBoundaryWrapper: React.FC<ErrorBoundaryProps> = ({ children }) => {
+const ErrorBoundary: React.FC<ErrorBoundaryProps> = ({ children }) => {
   const { SERVER_URL } = useConfig();
 
   class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
@@ -64,4 +64,4 @@ const ErrorBoundaryWrapper: React.FC<ErrorBoundaryProps> = ({ children }) => {
   return <ErrorBoundary>{children}</ErrorBoundary>;
 };
 
-export default ErrorBoundaryWrapper;
+export default ErrorBoundary;
