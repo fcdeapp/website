@@ -4,13 +4,14 @@
   
   .topicToggleContainer {
     position: relative;
-    display: block;
+    display: inline-flex;
     align-items: center;
     background-color: #fff;
     border-radius: 30px;
     overflow-x: auto;
     overflow-y: hidden; 
     border: 1px solid #fff;
+    width: 100%
   }
   
   .horizontalScroll {
@@ -21,8 +22,9 @@
     overflow-x: auto;     /* 넘치는 부분 스크롤 */
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    padding: 0 10px;
+    padding: 2px 10px;
     width: max-content;
+    box-sizing: border-box;
   }  
   
   /* All 버튼 */
