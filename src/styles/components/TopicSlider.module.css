@@ -4,7 +4,7 @@
   
   .topicToggleContainer {
     position: relative;
-    display: flex;
+    display: block;
     align-items: center;
     background-color: #fff;
     border-radius: 30px;
@@ -22,6 +22,7 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     padding: 0 10px;
+    width: max-content;
   }  
   
   /* All 버튼 */
