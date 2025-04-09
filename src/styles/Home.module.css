@@ -480,4 +480,12 @@
   .betaSubtitle {
     font-size: 0.85rem;
   }
+
+  @media (min-width: 1024px) {
+    .footerText {
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  }
+  
 }
