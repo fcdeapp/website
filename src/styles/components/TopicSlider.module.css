@@ -12,7 +12,7 @@
     border-radius: 30px;
     border: 1px solid #fff;
     box-sizing: border-box;
-    width: 80%; 
+    width: 100%; 
   }
   
   .horizontalScroll {
@@ -23,7 +23,7 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     padding: 2px 10px;
-    width: 100%; 
+    width: 80%; 
     box-sizing: border-box;
   }  
   
