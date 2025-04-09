@@ -711,7 +711,16 @@ const Fullpost: React.FC = () => {
               <img src="/assets/menu-light.png" className={styles.menuButtonIcon} alt="Menu" />
             </button>
             <div className={styles.heroTextOverlay}>
-              <button onClick={() => setIsTextExpanded(!isTextExpanded)}>
+            <button
+              onClick={() => setIsTextExpanded(!isTextExpanded)}
+              style={{
+                  background: 'transparent',
+                  border: 'none',
+                  padding: 0,
+                  margin: 0,
+                  cursor: 'pointer'
+              }}
+              >
                 <h1
                   className={styles.heroTitle}
                   style={{
