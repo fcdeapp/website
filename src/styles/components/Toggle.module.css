@@ -32,8 +32,9 @@
     white-space: nowrap;
     overflow-x: auto;            /* 자식이 넘칠 시 가로 스크롤 */
     -webkit-overflow-scrolling: touch;
-    width: 100%;                 /* 부모(.topicToggleContainer) 너비에 맞춤 */
-    padding: 0 10px;             /* 필요하면 여백 조정 */
+    padding: 0 10px;
+    width: auto;
+    min-width: 100%;
     box-sizing: border-box;
   }
   

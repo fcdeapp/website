@@ -217,3 +217,12 @@
     bottom: 0;
   }
   
+  /* 모바일 환경 (화면 너비 768px 이하) */
+  @media (max-width: 768px) {
+    .fixedHeader {
+      padding: 100px 15px 0;  /* 상단 패딩 100px로 변경 */
+    }
+    .topicRow {
+      margin: 30px 15px 0 15px; /* 상단 마진 30px로 변경 */
+    }
+  }
