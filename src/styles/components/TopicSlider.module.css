@@ -14,6 +14,11 @@
     overflow: hidden;  
   }
   
+  .sliderWrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .horizontalScroll {
     display: inline-flex;
     flex-direction: row;
