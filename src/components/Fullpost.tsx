@@ -691,31 +691,6 @@ const Fullpost: React.FC = () => {
     <Suspense fallback={<div>Loading...</div>}>
     {Object.keys(queryParams).length > 0 ? (
     <div className={styles.fullpost}>
-      {/* 헤더 영역 */}
-      <div
-        className={styles.fullPostHeaderArea}
-        style={{ opacity: headerOpacity, transform: `translateY(${headerTranslateY}px)` }}
-      >
-        <div className={styles.fullPostHeader}>
-          <button className={styles.iconWrapper} onClick={() => router.back()}>
-            <img className={styles.iconWrapper} src="/assets/BackIcon.png" alt="Back" />
-          </button>
-          <img className={styles.logoImage} src="/assets/Owl-icon-pink.png" alt="Logo" />
-          <button
-            className={styles.iconWrapper}
-            onClick={() => {
-              if (!isLoggedIn) {
-                setLoginOverlayVisible(true);
-              } else {
-                toggleMenu();
-              }
-            }}
-          >
-            <img src="/assets/full-post-menu-icon.png" className={styles.menuIcon} alt="Menu" />
-          </button>
-        </div>
-      </div>
-
       {/* 스크롤 영역 */}
       <div className={styles.scrollContainer} onScroll={handleScroll}>
         <div>

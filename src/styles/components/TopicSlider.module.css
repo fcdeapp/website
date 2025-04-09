@@ -29,7 +29,12 @@
     touch-action: pan-x; 
     padding: 2px 10px;
     box-sizing: border-box;
+    scrollbar-width: none; 
   }  
+
+  .horizontalScroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari 등 WebKit 브라우저에서 스크롤바 숨김 */
+  }
   
   /* All 버튼 */
   .topicButtonAll {
