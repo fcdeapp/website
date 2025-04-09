@@ -14,7 +14,7 @@
   }
   
   .horizontalScroll {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap; 
     white-space: nowrap; 
@@ -22,7 +22,6 @@
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x; 
     padding: 2px 10px;
-    width: 100%; 
     box-sizing: border-box;
   }  
   
