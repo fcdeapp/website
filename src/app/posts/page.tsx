@@ -370,7 +370,7 @@ const Post: React.FC = () => {
           onBrowse={() => setLoginOverlayVisible(false)}
         />
       )}
-      <div className={styles.fixedHeader}>
+      <div className={styles.fixedHeaderOut}>
       <div className={styles.fixedHeader} style={{ opacity: headerOpacity }}>
         <div className={styles.header}>
           <button className={styles.logoButton} onClick={() => {}}>
