@@ -4,11 +4,12 @@
   
   .topicToggleContainer {
     position: relative;
-    display: flex;
+    display: block;
     align-items: center;
     background-color: #f7f7f7;
     border-radius: 30px;
-    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
   }
   
   .slider {
@@ -27,10 +28,13 @@
   .horizontalScroll {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;            /* 자식이 넘칠 시 가로 스크롤 */
     -webkit-overflow-scrolling: touch;
-    padding: 0 11px;
+    width: 100%;                 /* 부모(.topicToggleContainer) 너비에 맞춤 */
+    padding: 0 10px;             /* 필요하면 여백 조정 */
+    box-sizing: border-box;
   }
   
   .topicButton {
