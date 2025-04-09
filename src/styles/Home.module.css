@@ -95,7 +95,7 @@
   color: #0A1045;
   margin-bottom: 1.5rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.04em;
 }
 
 .sectionText {
@@ -104,6 +104,7 @@
   margin: 0 auto;
   max-width: 800px;
   line-height: 1.7;
+  letter-spacing: -0.04em;
 }
 
 /* Features & Journey Lists */
@@ -246,6 +247,7 @@
   color: #0A1045;
   margin-bottom: 0.5rem;
   position: relative;
+  letter-spacing: -0.04em;
 }
 
 .betaTitle::after {
@@ -269,6 +271,7 @@
   color: #555;
   margin-bottom: 2rem;
   line-height: 1.6;
+  letter-spacing: -0.04em;
 }
 
 .ctaButtons {
@@ -298,6 +301,7 @@
   color: #F8F8FE;
   padding: 2rem;
   font-size: 0.7rem;
+  letter-spacing: -0.04em;
 }
 
 .footerContainer {
@@ -317,11 +321,13 @@
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  letter-spacing: -0.04em;
 }
 
 .footerText {
   font-size: 0.7rem;
   line-height: 1.6;
+  letter-spacing: -0.04em;
 }
 
 .footerLinks {
