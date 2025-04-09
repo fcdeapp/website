@@ -136,11 +136,12 @@
   }
   
   /* AOS Animation Override (Optional) */
-  [data-aos] {
+  :global([data-aos]) {
     opacity: 0;
     transition-property: opacity, transform;
   }
-  [data-aos].aos-animate {
+  
+  :global([data-aos].aos-animate) {
     opacity: 1;
   }
   
