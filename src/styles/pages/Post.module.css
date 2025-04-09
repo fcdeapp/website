@@ -12,10 +12,10 @@
   .fixedHeader {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 100;
-    padding: 120px 20px 0; 
+    width: 100%;
+    padding: 120px 15px 0; 
+    box-sizing: border-box;
     background-color: transparent;
   }
   
@@ -75,8 +75,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 100px auto 0;
-    width: calc(100% - 30px);
+    margin: 100px auto 0; /* 자동 중앙 정렬 */
+    width: calc(100% - 30px); /* 좌우 15px씩 */
     box-sizing: border-box;
   }  
   
@@ -110,6 +110,7 @@
     justify-content: space-between;
     margin: 10px 15px 80px;
     padding-bottom: 80px;
+    box-sizing: border-box;
   }
   
   .postContainer {
