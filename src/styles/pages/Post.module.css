@@ -79,6 +79,8 @@
     justify-content: space-between;
     margin: 100px 15px 0;
     box-sizing: border-box;
+    width: 100%;
+    overflow: hidden; 
   }  
   
   .filterButton,
@@ -102,6 +104,7 @@
   .topicSliderWrapper {
     flex: 1;         /* 남은 공간 차지 */
     margin: 0 10px;
+    box-sizing: border-box;
   }  
   
   /* Flat list of posts: 2열 반응형 레이아웃 */
