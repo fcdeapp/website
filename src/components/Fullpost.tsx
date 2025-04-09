@@ -838,12 +838,21 @@ const Fullpost: React.FC = () => {
               <img src="/assets/map-colored.png" className={styles.mapIcon} alt="Map" />
               <p className={styles.fullPostTitle}>{meetingPlace}</p>
             </div>
-            {(!meetingLatitude || !meetingLongitude) ? (
+            {(!meetingLatitude || !meetingLongitude) && (
               <>
                 <div className={styles.fullPostContents}>
                   <p className={styles.fullPostTitle}>
                     {meetingCity}, {meetingCountry}
                   </p>
+                </div>
+                <div className={styles.halfScreenMap}>
+                  <iframe
+                    title="Full Screen Map"
+                    src={`https://www.google.com/maps?q=${meetingLatitude},${meetingLongitude}&z=15&output=embed`}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                  ></iframe>
                 </div>
                 <div className={styles.fullPostContents}>
                   <p className={styles.distanceText}>
@@ -851,16 +860,6 @@ const Fullpost: React.FC = () => {
                   </p>
                 </div>
               </>
-            ) : (
-              <div className={styles.fullImage}>
-                <button className={styles.mapPreviewContainer} onClick={toggleMapFullScreen}>
-                  <img src="/assets/mapComponent.png" className={styles.mapImage} alt="Map Preview" />
-                  <div className={styles.mapOverlay}>
-                    <p className={styles.overlayCityCountry}>{meetingCity}, {meetingCountry}</p>
-                    <p className={styles.overlayDistance}>{t('distance')}: {getDistanceString()}</p>
-                  </div>
-                </button>
-              </div>
             )}
 
             <div className={styles.fullPostContents}>
