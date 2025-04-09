@@ -78,6 +78,7 @@
     border: none;
     padding: 0;
     cursor: pointer;
+    margin-right: 15px;
   }
   
   /* Topic row: 필터 버튼, 주제 슬라이더, 주제 리스트 버튼를 한 줄에 배치 */
@@ -87,7 +88,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 80px 15px 0 15px;
-    padding-right: 15px;
     width: auto;
     box-sizing: border-box;
   }  
