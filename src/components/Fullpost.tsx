@@ -838,7 +838,7 @@ const Fullpost: React.FC = () => {
               <img src="/assets/map-colored.png" className={styles.mapIcon} alt="Map" />
               <p className={styles.fullPostTitle}>{meetingPlace}</p>
             </div>
-            {(!meetingLatitude || !meetingLongitude) && (
+            {(meetingLatitude || meetingLongitude) && (
               <>
                 <div className={styles.fullPostContents}>
                   <p className={styles.fullPostTitle}>
