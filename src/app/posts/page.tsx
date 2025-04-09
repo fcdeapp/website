@@ -370,6 +370,7 @@ const Post: React.FC = () => {
           onBrowse={() => setLoginOverlayVisible(false)}
         />
       )}
+      <div className={styles.fixedHeader}>
       <div className={styles.fixedHeader} style={{ opacity: headerOpacity }}>
         <div className={styles.header}>
           <button className={styles.logoButton} onClick={() => {}}>
@@ -433,6 +434,7 @@ const Post: React.FC = () => {
         <button className={styles.subjectListButton} onClick={() => setOverlayVisible(true)}>
           {t("change_topic_order")}
         </button>
+      </div>
       </div>
 
       <div className={styles.flatList} key={flatListKey}>
