@@ -118,6 +118,18 @@
     padding: 0.5rem;
     border-radius: 50%;
   }
+
+  /* AOS Animation Override (Optional) */
+  :global {
+    [data-aos] {
+      opacity: 0;
+      transition-property: opacity, transform;
+    }
+    
+    [data-aos].aos-animate {
+      opacity: 1;
+    }
+  }
   
   /* Responsive Styles */
   @media (max-width: 768px) {
@@ -134,14 +146,3 @@
       font-size: 1rem;
     }
   }
-  
-  /* AOS Animation Override (Optional) */
-  :global([data-aos]) {
-    opacity: 0;
-    transition-property: opacity, transform;
-  }
-  
-  :global([data-aos].aos-animate) {
-    opacity: 1;
-  }
-  
