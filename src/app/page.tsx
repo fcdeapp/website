@@ -38,9 +38,6 @@ export default function Home() {
           <div className={styles.heroOverlay}>
             <h1 className={styles.title}>Welcome to Facade</h1>
             <p className={styles.subtitle}>Connecting People and Cultures Abroad</p>
-            <Link href="/terms">
-              <a className={styles.button}>Terms &amp; Conditions</a>
-            </Link>
           </div>
         </header>
 
@@ -164,8 +161,70 @@ export default function Home() {
 
         {/* Footer */}
         <footer className={styles.footer}>
-          © {new Date().getFullYear()} Doh Jung‑min. All rights reserved.
+          <div className={styles.footerContainer}>
+            <div className={styles.footerSection}>
+              <h3 className={styles.footerTitle}>About Facade</h3>
+              <p className={styles.footerText}>
+                Facade is dedicated to connecting international minds through cultural exchange and real events.
+                Join our community and explore a world of possibilities.
+              </p>
+            </div>
+            <div className={styles.footerSection}>
+              <h3 className={styles.footerTitle}>Quick Links</h3>
+              <ul className={styles.footerLinks}>
+                <li>
+                  <Link href="/about">
+                    <a>About Us</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact">
+                    <a>Contact</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/faq">
+                    <a>FAQ</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/terms">
+                    <a>Terms of Service</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy">
+                    <a>Privacy Policy</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.footerSection}>
+              <h3 className={styles.footerTitle}>Follow Us</h3>
+              <div className={styles.socialIcons}>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/icons/twitter.svg" alt="Twitter" />
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/icons/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/icons/instagram.svg" alt="Instagram" />
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/icons/tiktok.svg" alt="TikTok" />
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/icons/youtube.svg" alt="YouTube" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.footerBottom}>
+            <p>© {new Date().getFullYear()} Facade. All rights reserved.</p>
+          </div>
         </footer>
+
       </div>
     </>
   );
