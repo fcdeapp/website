@@ -14,8 +14,8 @@
     position: fixed;
     top: 0;
     z-index: 100;
-    width: 100% - 15px;
-    padding: 20px 15px 0; 
+    width: 100%;
+    padding: 110px 15px 0; 
     box-sizing: border-box;
     background-color: transparent;
   }
@@ -86,7 +86,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 100px 15px 0;
+    margin: 20px 15px 0;
     width: 100%;
     box-sizing: border-box;
   }  
