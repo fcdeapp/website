@@ -176,6 +176,7 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
   return (
     <div className={styles.container} style={containerStyle}>
       <div className={styles.topicToggleContainer}>
+      <div className={styles.sliderWrapper}>
         <div className={styles.horizontalScroll} ref={scrollRef}>
           {/* All 버튼 */}
           <button
@@ -244,6 +245,7 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
               </div>
             );
           })}
+        </div>
         </div>
       </div>
     </div>
