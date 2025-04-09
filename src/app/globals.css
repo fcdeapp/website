@@ -118,10 +118,8 @@ html, body {
 @media (max-width: 767px) {
   @supports (padding: env(safe-area-inset-top)) {
     body {
-      padding-top: max(env(safe-area-inset-top), 1rem);
-      padding-right: max(env(safe-area-inset-right), 1rem);
-      padding-bottom: max(env(safe-area-inset-bottom), 1rem);
-      padding-left: max(env(safe-area-inset-left), 1rem);
+      padding-top: max(env(safe-area-inset-top), 0.5rem);
+      padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);
     }
   }
 }
