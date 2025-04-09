@@ -36,7 +36,7 @@ export default function Home() {
         {/* Hero Section */}
         <header className={styles.hero}>
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title}>Welcome to Facade</h1>
+            <h1 className={styles.title}>Facade</h1>
             <p className={styles.subtitle}>Connecting People and Cultures Abroad</p>
           </div>
         </header>
@@ -203,19 +203,19 @@ export default function Home() {
               <h3 className={styles.footerTitle}>Follow Us</h3>
               <div className={styles.socialIcons}>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/icons/twitter.svg" alt="Twitter" />
+                  <img src="/icons/twitter.png" alt="Twitter" />
                 </a>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/icons/facebook.svg" alt="Facebook" />
+                  <img src="/icons/facebook.png" alt="Facebook" />
                 </a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/icons/instagram.svg" alt="Instagram" />
+                  <img src="/icons/instagram.png" alt="Instagram" />
                 </a>
                 <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/icons/tiktok.svg" alt="TikTok" />
+                  <img src="/icons/tiktok.png" alt="TikTok" />
                 </a>
                 <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/icons/youtube.svg" alt="YouTube" />
+                  <img src="/icons/youtube.png" alt="YouTube" />
                 </a>
               </div>
             </div>
