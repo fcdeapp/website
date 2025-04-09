@@ -37,12 +37,10 @@ export default function About() {
             data-aos="zoom-in"
             data-aos-delay="400"
           >
-            <Image
+            <img
               src="/about/community-connection.png"
               alt="Community graphic"
-              layout="responsive"
-              width={800}
-              height={500}
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
         </section>
@@ -50,11 +48,10 @@ export default function About() {
         {/* Section: Mission */}
         <section className={styles.section}>
           <div className={styles.split} data-aos="fade-right">
-            <Image
+            <img
               src="/about/mission.png"
               alt="Mission graphic"
-              width={600}
-              height={400}
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
           <div className={styles.split} data-aos="fade-left">
@@ -81,11 +78,10 @@ export default function About() {
             </p>
           </div>
           <div className={styles.split} data-aos="fade-up">
-            <Image
+            <img
               src="/about/problem.png"
               alt="Problem chart"
-              width={600}
-              height={400}
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
         </section>
@@ -96,11 +92,10 @@ export default function About() {
           <div className={styles.teamGrid}>
             {/* Current team member card */}
             <div className={styles.teamCard}>
-              <Image
+              <img
                 src="/about/team-founder.png"
                 alt="Doh Jung-min"
-                width={150}
-                height={150}
+                style={{ width: "150px", height: "150px", borderRadius: "50%" }}
               />
               <h3>Doh Jung-min</h3>
               <p>Founder & CEO</p>
@@ -108,11 +103,10 @@ export default function About() {
             {/* Co-Founder & Team Member Recruitment Card */}
             <div className={styles.teamCard}>
               <div className={styles.hiringBadge}>
-                <Image
+                <img
                   src="/about/hiring.png"
                   alt="Join Our Founding Team"
-                  width={150}
-                  height={150}
+                  style={{ width: "150px", height: "150px", borderRadius: "50%" }}
                 />
               </div>
               <h3>Join Our Founding Team</h3>
@@ -128,11 +122,10 @@ export default function About() {
         {/* Section: Future Vision */}
         <section className={styles.sectionAlt}>
           <div className={styles.split} data-aos="fade-right">
-            <Image
+            <img
               src="/about/vision.png"
               alt="Vision roadmap"
-              width={600}
-              height={400}
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
           <div className={styles.split} data-aos="fade-left">
