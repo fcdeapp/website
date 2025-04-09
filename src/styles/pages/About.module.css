@@ -120,15 +120,13 @@
   }
 
   /* AOS Animation Override (Optional) */
-  :global {
-    [data-aos] {
-      opacity: 0;
-      transition-property: opacity, transform;
-    }
-    
-    [data-aos].aos-animate {
-      opacity: 1;
-    }
+  .aosWrapper :global([data-aos]) {
+    opacity: 0;
+    transition-property: opacity, transform;
+  }
+  
+  .aosWrapper :global([data-aos].aos-animate) {
+    opacity: 1;
   }
   
   /* Responsive Styles */
