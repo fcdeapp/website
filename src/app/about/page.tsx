@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/About.module.css";
+import WebFooter from "../../components/WebFooter";
 
 export default function About() {
   useEffect(() => {
@@ -139,6 +140,7 @@ export default function About() {
           </div>
         </section>
       </div>
+      <WebFooter />
     </>
   );
 }
