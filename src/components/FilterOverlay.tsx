@@ -158,7 +158,7 @@ const FilterOverlay: React.FC<FilterOverlayProps> = ({
                   <div className={styles.optionGroup}>
                     <span className={styles.optionLabel}>{t("current_location")}</span>
                     <div className={styles.locationInfoContainer}>
-                      {currentCountry !== "Unknown" && currentCountry !== "" && (
+                      {currentCountry !== "Unknown Country" && currentCountry !== "Unknown" && currentCountry !== "" && (
                         <img
                         src={(countryFlags as Record<string, string>)[currentCountry] || ""}
                           alt={currentCountry}
