@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import styles from "../../styles/pages/Terms.module.css";
+import WebFooter from "../../components/WebFooter";
 
 type TermsType = "service" | "privacy" | "community";
 
@@ -10,6 +11,16 @@ export default function TermsPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [termsLanguage, setTermsLanguage] = useState("en");
   const [termsType, setTermsType] = useState<TermsType>("privacy");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedType = localStorage.getItem("termsType") as TermsType | null;
+      if (storedType) {
+        setTermsType(storedType);
+        localStorage.removeItem("termsType");
+      }
+    }
+  }, []);
 
   const fetchTerms = async (lang: string, type: TermsType) => {
     setIsLoading(true);
@@ -87,9 +98,7 @@ export default function TermsPage() {
           </section>
         )}
       </main>
-      <footer className={styles.footer}>
-        © {new Date().getFullYear()} Doh Jung‑min. All rights reserved.
-      </footer>
+      <WebFooter />
     </div>
   );
 }
