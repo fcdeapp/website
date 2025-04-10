@@ -1,9 +1,11 @@
 "use client";
 
-import Head from 'next/head';
-import React, { useState } from 'react';
-import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import styles from "../styles/Home.module.css";
 
 type Screenshot = {
   name: string;
@@ -13,12 +15,16 @@ type Screenshot = {
 export default function Home() {
   const [modalImage, setModalImage] = useState<string | null>(null);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const screenshots: Screenshot[] = [
-    { name: 'Map', src: '/screenshots/map.png' },
-    { name: 'Home', src: '/screenshots/home.png' },
-    { name: 'Create Event', src: '/screenshots/create.png' },
-    { name: 'Chat', src: '/screenshots/chat.png' },
-    { name: 'Profile', src: '/screenshots/profile.png' },
+    { name: "Map", src: "/screenshots/map.png" },
+    { name: "Home", src: "/screenshots/home.png" },
+    { name: "Create Event", src: "/screenshots/create.png" },
+    { name: "Chat", src: "/screenshots/chat.png" },
+    { name: "Profile", src: "/screenshots/profile.png" },
   ];
 
   const openModal = (src: string) => setModalImage(src);
@@ -26,7 +32,6 @@ export default function Home() {
 
   return (
     <>
-      {/* 1) Viewport 메타태그 필수 */}
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Facade | Connecting People and Cultures Abroad</title>
@@ -34,49 +39,79 @@ export default function Home() {
 
       <div className={styles.container}>
         {/* Hero Section */}
-        <header className={styles.hero}>
+        <header className={styles.hero} data-aos="fade-in">
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title}>Facade</h1>
-            <p className={styles.subtitle}>Connecting People and Cultures Abroad</p>
+            <h1 className={styles.title} data-aos="fade-up">Facade</h1>
+            <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="200">
+              Connecting People and Cultures Abroad
+            </p>
           </div>
         </header>
 
-        {/* Main Content */}
         <main className={styles.main}>
           {/* Value Proposition Section */}
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Why Facade?</h2>
-            <p className={styles.sectionText}>
-              Facade is a mobile app and web service designed to help international students and workers overcome isolation and language barriers.
-              With AI-based event recommendations, a trust badge system, and local buddy groups, we make it easy and safe to join offline gatherings.
-            </p>
+          <section className={styles.section} data-aos="fade-up">
+            <div className={styles.split} data-aos="fade-right">
+              <div>
+                <h2 className={styles.sectionTitle}>Why Facade?</h2>
+                <p className={styles.sectionText}>
+                  Facade is a mobile app and web service designed to help international students and workers overcome isolation and language barriers.
+                  With AI-based event recommendations, a trust badge system, and local buddy groups, we make it easy and safe to join offline gatherings.
+                </p>
+              </div>
+            </div>
+            <div className={styles.split} data-aos="zoom-in" data-aos-delay="300">
+              <img
+                src="/screenshots/value-proposition.png"
+                alt="Value Proposition"
+                className={styles.sectionImage}
+              />
+            </div>
           </section>
 
           {/* Key Features Section */}
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Key Features</h2>
-            <ul className={styles.featuresList}>
-              <li>AI-Powered Personalized Event Recommendations</li>
-              <li>Easy and Fast Event Creation</li>
-              <li>Trust Badge System for Safe Meetups</li>
-              <li>Local Buddy Groups for Seamless Cultural Exchange</li>
-              <li>Real-time Chat and Notification Integration</li>
-            </ul>
+          <section className={styles.sectionAlt} data-aos="fade-up">
+            <div className={styles.split} data-aos="fade-right">
+              <img
+                src="/screenshots/features.png"
+                alt="Key Features"
+                className={styles.sectionImage}
+              />
+            </div>
+            <div className={styles.split} data-aos="fade-left">
+              <h2 className={styles.sectionTitle}>Key Features</h2>
+              <ul className={styles.featuresList}>
+                <li>AI-Powered Personalized Event Recommendations</li>
+                <li>Easy and Fast Event Creation</li>
+                <li>Trust Badge System for Safe Meetups</li>
+                <li>Local Buddy Groups for Seamless Cultural Exchange</li>
+                <li>Real-time Chat and Notification Integration</li>
+              </ul>
+            </div>
           </section>
 
           {/* User Journey Section */}
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>User Journey</h2>
-            <ol className={styles.journeyList}>
-              <li>Sign Up and Create Your Profile</li>
-              <li>Get Personalized Event Suggestions</li>
-              <li>Join or Create an Event with One Click</li>
-              <li>Connect with Local Buddies and Build Your Network</li>
-            </ol>
+          <section className={styles.section} data-aos="fade-up">
+            <div className={styles.split} data-aos="fade-right">
+              <h2 className={styles.sectionTitle}>User Journey</h2>
+              <ol className={styles.journeyList}>
+                <li>Sign Up and Create Your Profile</li>
+                <li>Get Personalized Event Suggestions</li>
+                <li>Join or Create an Event with One Click</li>
+                <li>Connect with Local Buddies and Build Your Network</li>
+              </ol>
+            </div>
+            <div className={styles.split} data-aos="zoom-in" data-aos-delay="300">
+              <img
+                src="/screenshots/journey.png"
+                alt="User Journey"
+                className={styles.sectionImage}
+              />
+            </div>
           </section>
 
           {/* App Screenshots Section */}
-          <section className={styles.section}>
+          <section className={styles.sectionAlt} data-aos="fade-up">
             <h2 className={styles.sectionTitle}>App Screenshots</h2>
             <div className={styles.screenshotsGrid}>
               {screenshots.map((screen) => (
@@ -84,6 +119,8 @@ export default function Home() {
                   key={screen.name}
                   className={styles.screenshotItem}
                   onClick={() => openModal(screen.src)}
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
                 >
                   <img
                     src={screen.src}
@@ -97,7 +134,7 @@ export default function Home() {
           </section>
 
           {/* App Demo Video Section */}
-          <section className={styles.section}>
+          <section className={styles.section} data-aos="fade-up">
             <h2 className={styles.sectionTitle}>App Demo</h2>
             <video
               className={styles.demoVideo}
@@ -105,14 +142,16 @@ export default function Home() {
               muted
               playsInline
               loop
+              data-aos="zoom-in"
+              data-aos-delay="200"
             >
               <source src="/demo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </section>
 
-          {/* Download & Signup Call-to-Action → Beta Signup */}
-          <section className={styles.betaSection}>
+          {/* Beta Section */}
+          <section className={styles.betaSection} data-aos="fade-up">
             <div className={styles.betaCard}>
               <h2 className={styles.betaTitle}>Join Our Closed Beta</h2>
               <p className={styles.betaSubtitle}>
@@ -224,7 +263,6 @@ export default function Home() {
             <p>© {new Date().getFullYear()} Facade. All rights reserved.</p>
           </div>
         </footer>
-
       </div>
     </>
   );
