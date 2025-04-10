@@ -82,7 +82,7 @@ export default function About() {
             <img
               src="/about/problem.png"
               alt="Problem chart"
-              style={{ width: "100%", height: "auto" }}
+              className={styles.sectionImage}
             />
           </div>
         </section>
@@ -126,7 +126,7 @@ export default function About() {
             <img
               src="/about/vision.png"
               alt="Vision roadmap"
-              style={{ width: "100%", height: "auto" }}
+              className={styles.sectionImage}
             />
           </div>
           <div className={styles.split} data-aos="fade-left">
