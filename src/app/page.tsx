@@ -42,8 +42,10 @@ export default function Home() {
         {/* Hero Section */}
         <header className={styles.hero} data-aos="fade-in">
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title} data-aos="fade-up">Facade</h1>
-            <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="200">
+            <h1 className={styles.title} data-aos="fade-up">
+              Facade
+            </h1>
+            <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
               Connecting People and Cultures Abroad
             </p>
           </div>
