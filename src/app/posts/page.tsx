@@ -284,7 +284,7 @@ const Post: React.FC = () => {
   // 검색 처리
   const handleSearch = () => {
     if (searchTerm.trim()) {
-      router.push(`/search?searchTerm=${encodeURIComponent(searchTerm)}`);
+      router.push(`/searchPage?searchTerm=${encodeURIComponent(searchTerm)}`);
     }
   };
 

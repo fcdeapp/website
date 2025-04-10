@@ -1,0 +1,255 @@
+/* Container: full width, no side padding */
+.container {
+    min-height: 100vh;
+    background-color: #f8f8fe;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  .header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.8s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .searchBarContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .searchBar {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #0a1045;
+  }
+  
+  .clearButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .clearIcon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0.7);
+  }
+  
+  .searchButton {
+    background-color: #f7f7f7;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    margin-left: 10px;
+  }
+  
+  .toggleWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .toggleButton {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggleButton:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .activeToggle {
+    background-color: #f7f7f7;
+    border: 1px solid #d9d9d9;
+  }
+  
+  /* Results Container */
+  .resultsContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Load More Button */
+  .loadMoreButton {
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #0a1045;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Loading */
+  .loadingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .loadingIndicator {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #ddd;
+    border-top: 4px solid #D8315B;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .loadingText {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Placeholder styles for search result items */
+  .postMain {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  .friendItem, .buddyItem {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .friendImage, .buddyImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Login Overlay */
+  .loginOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .loginOverlayContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .loginOverlayButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .loginButton, .browseButton {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .loginButton {
+    background-color: #0a1045;
+    color: #fff;
+  }
+  
+  .browseButton {
+    background-color: #f7f7f7;
+    color: #0a1045;
+  }
+  
+  /* Footer */
+  .footer {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .searchBarContainer {
+      width: 90%;
+    }
+  }
+  
