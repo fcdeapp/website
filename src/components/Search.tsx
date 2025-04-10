@@ -100,11 +100,6 @@ const SearchPage = () => {
     if (!searchTerm.trim()) return;
     setIsLoading(true);
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-      if (!token) {
-        setIsLoading(false);
-        return;
-      }
       const searchEndpoint =
         searchType === "post"
           ? "posts"
@@ -118,7 +113,6 @@ const SearchPage = () => {
         )}&page=${page}&limit=${limit}`,
         {
           headers: {
-            Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
           },
         }
