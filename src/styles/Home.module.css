@@ -206,6 +206,14 @@
   color: #555;
 }
 
+/* Mobile: Features & Journey Lists 텍스트 크기 조정 */
+@media (max-width: 767px) {
+  .featureItem span,
+  .journeyItem span {
+    font-size: 0.85rem;  /* 기존 1.15rem 대신 0.85rem */
+  }
+}
+
 /* Screenshots Grid */
 .screenshotsGrid {
   display: grid;
