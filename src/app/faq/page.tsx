@@ -138,9 +138,6 @@ export default function Faq() {
           </div>
         </main>
 
-        {/* Footer (필요 시 페이지 하단에 추가) */}
-        <WebFooter />
-
         {/* 문의하기 모달 */}
         {inquiryVisible && (
           <div className={styles.modalOverlay} onClick={() => setInquiryVisible(false)}>
@@ -165,6 +162,7 @@ export default function Faq() {
           </div>
         )}
       </div>
+      <WebFooter />
     </>
   );
 }

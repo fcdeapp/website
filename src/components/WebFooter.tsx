@@ -4,6 +4,13 @@ import Link from "next/link";
 import styles from "../styles/components/WebFooter.module.css";
 
 export default function WebFooter() {
+  // onClick 핸들러로 클릭 시 선택된 TermsType 값을 localStorage에 저장
+  const handleTermsClick = (type: "service" | "privacy") => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("termsType", type);
+    }
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
@@ -32,14 +39,16 @@ export default function WebFooter() {
                 <a>FAQ</a>
               </Link>
             </li>
+            {/* Terms of Service와 Privacy Policy 둘 다 href는 "/terms"로 설정,
+                onClick 핸들러에서 각각 다른 TermsType을 localStorage에 저장 */}
             <li>
               <Link href="/terms">
-                <a>Terms of Service</a>
+                <a onClick={() => handleTermsClick("service")}>Terms of Service</a>
               </Link>
             </li>
             <li>
-              <Link href="/privacy">
-                <a>Privacy Policy</a>
+              <Link href="/terms">
+                <a onClick={() => handleTermsClick("privacy")}>Privacy Policy</a>
               </Link>
             </li>
           </ul>
