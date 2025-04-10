@@ -60,15 +60,10 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
   const [deactivationReason, setDeactivationReason] = useState("");
   const [deactivationDuration, setDeactivationDuration] = useState<number | null>(null);
 
-  const getAuthHeader = async () => {
-    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-    return { Authorization: `Bearer ${token}` };
-  };
-
   const fetchMemberDetails = async (memberId: string) => {
     try {
-      const headers = await getAuthHeader();
-      const response = await axios.get(`${SERVER_URL}/users/members/${memberId}`, { headers });
+      
+      const response = await axios.get(`${SERVER_URL}/users/members/${memberId}`);
       if (response.data) {
         setMemberDetails(response.data);
       }
@@ -96,11 +91,10 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
   // 채팅 시작
   const handleChat = async () => {
     try {
-      const headers = await getAuthHeader();
+      
       const response = await axios.post(
         `${SERVER_URL}/chats/one-on-one`,
-        { friendId: friend.userId },
-        { headers }
+        { friendId: friend.userId }
       );
       if (response.data && response.data.chatRoomId) {
         router.push(
@@ -122,11 +116,11 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
       return;
     }
     try {
-      const headers = await getAuthHeader();
+      
       const response = await axios.post(
         `${SERVER_URL}/friend/friend-request`,
         { senderId: userId, receiverId: friend.userId },
-        { headers: { "Content-Type": "application/json", ...headers } }
+        { headers: { "Content-Type": "application/json" } }
       );
       if (response.status === 200) {
         alert(t("friendSearch.friendRequestSuccess"));
@@ -145,11 +139,11 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
       return;
     }
     try {
-      const headers = await getAuthHeader();
+      
       const response = await axios.post(
         `${SERVER_URL}/friend/friend-request/cancel`,
         { senderId: userId, receiverId: friend.userId },
-        { headers: { "Content-Type": "application/json", ...headers } }
+        { headers: { "Content-Type": "application/json" } }
       );
       if (response.status === 200) {
         alert(t("friendSearch.cancelRequestSuccess"));
@@ -164,11 +158,11 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
 
   const handleAcceptRequest = async () => {
     try {
-      const headers = await getAuthHeader();
+      
       const response = await axios.post(
         `${SERVER_URL}/friend/friend-request/accept`,
         { receiverId: userId, senderId: friend.userId, accept: true },
-        { headers: { "Content-Type": "application/json", ...headers } }
+        { headers: { "Content-Type": "application/json" } }
       );
       if (response.status === 200) {
         alert(t("friendSearch.acceptRequestSuccess"));
@@ -183,11 +177,11 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
 
   const handleRemoveFriend = async () => {
     try {
-      const headers = await getAuthHeader();
+      
       const response = await axios.post(
         `${SERVER_URL}/friend/remove`,
         { userId: userId, friendId: friend.userId },
-        { headers: { "Content-Type": "application/json", ...headers } }
+        { headers: { "Content-Type": "application/json" } }
       );
       if (response.status === 200) {
         alert(t("friendSearch.removeFriendSuccess"));
@@ -203,11 +197,10 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
   const handleAcceptJoinRequest = async () => {
     if (!buddyGroupId) return;
     try {
-      const headers = await getAuthHeader();
+      
       await axios.post(
         `${SERVER_URL}/buddy-groups/join-request/accept`,
-        { buddyGroupId, userId: friend.userId },
-        { headers }
+        { buddyGroupId, userId: friend.userId }
       );
       alert(t("friendSearch.joinAcceptSuccess"));
     } catch (error) {
@@ -219,11 +212,10 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
   const handleRejectJoinRequest = async () => {
     if (!buddyGroupId) return;
     try {
-      const headers = await getAuthHeader();
+      
       await axios.post(
         `${SERVER_URL}/buddy-groups/join-request/reject`,
-        { buddyGroupId, userId: friend.userId },
-        { headers }
+        { buddyGroupId, userId: friend.userId }
       );
       alert(t("friendSearch.joinRejectSuccess"));
     } catch (error) {
@@ -234,11 +226,10 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
 
   const handleReactivateUser = async () => {
     try {
-      const headers = await getAuthHeader();
+      
       const response = await axios.post(
         `${SERVER_URL}/api/admin/users/reactivate`,
-        { userId: friend.userId },
-        { headers }
+        { userId: friend.userId }
       );
       if (response.status === 200) {
         alert(t("friendSearch.reactivateUser"));
@@ -254,11 +245,10 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
 
   const handleDeactivateUser = async () => {
     try {
-      const headers = await getAuthHeader();
+      
       const response = await axios.post(
         `${SERVER_URL}/api/admin/users/deactivate`,
-        { userId: friend.userId, reason: deactivationReason, durationInDays: deactivationDuration },
-        { headers }
+        { userId: friend.userId, reason: deactivationReason, durationInDays: deactivationDuration }
       );
       if (response.status === 200) {
         alert(t("friendSearch.deactivateUserSuccess"));
@@ -275,8 +265,8 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
 
   const refreshUserStatus = async () => {
     try {
-      const headers = await getAuthHeader();
-      const response = await axios.get(`${SERVER_URL}/users/members/${friend.userId}`, { headers });
+      
+      const response = await axios.get(`${SERVER_URL}/users/members/${friend.userId}`);
       if (response.data) {
         setIsDeactivated(response.data.isDeactivated);
         setMemberDetails(response.data);
@@ -290,8 +280,8 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
     // Check admin status
     const checkAdminStatus = async () => {
       try {
-        const headers = await getAuthHeader();
-        const response = await axios.get(`${SERVER_URL}/users/me`, { headers });
+        
+        const response = await axios.get(`${SERVER_URL}/users/me`);
         if (response.data) {
           setIsAdmin(response.data.isAdmin);
         }
