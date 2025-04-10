@@ -39,17 +39,29 @@ export default function Home() {
       </Head>
 
       <div className={styles.container}>
-        {/* Hero Section */}
-        <header className={styles.hero} data-aos="fade-in">
-          <div className={styles.heroOverlay}>
-            <h1 className={styles.title} data-aos="fade-up">
-              Facade
-            </h1>
-            <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
-              Connecting People and Cultures Abroad
-            </p>
+      {/* Hero Section */}
+      <header className={styles.hero} data-aos="fade-in">
+        <div className={styles.heroOverlay}>
+          <h1 className={styles.title} data-aos="fade-up">Facade</h1>
+          <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
+            Connecting People and Cultures Abroad
+          </p>
+          <div className={styles.heroArrow} data-aos="fade-up" data-aos-delay="500">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#F7F7F7"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
           </div>
-        </header>
+        </div>
+      </header>
 
         <main className={styles.main}>
           {/* Value Proposition Section */}
