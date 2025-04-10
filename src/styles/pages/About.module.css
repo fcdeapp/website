@@ -190,15 +190,6 @@
     }
     .teamCard p {
       font-size: 0.85rem;
-    }
-  
-    /* Global text shrink */
-    :global(body),
-    :global(p),
-    :global(span),
-    :global(a),
-    :global(li) {
-      font-size: 0.9rem;
-    }    
+    }  
   }
   
