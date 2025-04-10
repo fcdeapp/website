@@ -73,14 +73,14 @@ export default function TermsPage() {
       <header className={styles.header}>
         <h1 className={styles.title}>
           {termsType === "service"
-            ? termsLanguage === "en"
+            ? termsLanguage !== "ko"
               ? "Terms of Service"
               : "서비스 이용약관"
             : termsType === "privacy"
-            ? termsLanguage === "en"
+            ? termsLanguage !== "ko"
               ? "Privacy Policy"
               : "개인정보처리방침"
-            : termsLanguage === "en"
+            : termsLanguage !== "ko"
             ? "Community Guidelines"
             : "커뮤니티 이용약관"}
         </h1>
@@ -94,13 +94,13 @@ export default function TermsPage() {
               onChange={handleTermsTypeChange}
             >
               <option value="service">
-                {termsLanguage === "en" ? "Terms of Service" : "서비스 이용약관"}
+                {termsLanguage !== "ko" ? "Terms of Service" : "서비스 이용약관"}
               </option>
               <option value="privacy">
-                {termsLanguage === "en" ? "Privacy Policy" : "개인정보처리방침"}
+                {termsLanguage !== "ko" ? "Privacy Policy" : "개인정보처리방침"}
               </option>
               <option value="community">
-                {termsLanguage === "en" ? "Community Guidelines" : "커뮤니티 이용약관"}
+                {termsLanguage !== "ko" ? "Community Guidelines" : "커뮤니티 이용약관"}
               </option>
             </select>
           </div>
