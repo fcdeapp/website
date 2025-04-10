@@ -1,5 +1,5 @@
 /* Global Container & Typography */
-  .container {
+.container {
     background-color: #f8f8fe;
     padding: 4rem 2rem;
     color: #0a1045;
@@ -122,7 +122,7 @@
     padding: 0.5rem;
     border-radius: 50%;
   }
-
+  
   /* AOS Animation Override (Optional) */
   .aosWrapper :global([data-aos]) {
     opacity: 0;
@@ -133,18 +133,72 @@
     opacity: 1;
   }
   
-  /* Responsive Styles */
+  /* Responsive Styles for Desktop */
+  @media (min-width: 1024px) {
+    .main {
+      padding: 4rem 2rem;
+    }
+    .section {
+      max-width: 50vw;
+      margin: 0 auto 5rem;
+      padding: 4rem 3rem;
+    }
+    .sectionTitle {
+      font-size: 2.25rem;
+    }
+    .sectionText {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .featuresList,
+    .journeyList {
+      font-size: 1rem;
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+  }
+  
+  /* Responsive Styles for Mobile */
   @media (max-width: 768px) {
     .section,
     .sectionAlt {
       flex-direction: column;
     }
   
+    /* Hero Section */
     .heroText h1 {
       font-size: 2.2rem;
     }
-  
     .heroText p {
       font-size: 1rem;
     }
+  
+    /* Sections */
+    .section h2 {
+      font-size: 1.75rem;
+    }
+    .section p,
+    .sectionAlt p {
+      font-size: 1rem;
+    }
+  
+    /* Team Section */
+    .teamCard h3 {
+      font-size: 1rem;
+    }
+    .teamCard p {
+      font-size: 0.85rem;
+    }
+  
+    /* Global text shrink */
+    body,
+    p,
+    span,
+    a,
+    li {
+      font-size: 0.9rem;
+    }
   }
+  
