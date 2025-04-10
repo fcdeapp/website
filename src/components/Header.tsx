@@ -47,7 +47,7 @@ export default function Header() {
           padding: 10px 20px;
         }
         .logo {
-          width: 40px; /* 로고 크기를 줄임 */
+          width: 80px; /* 로고 크기를 줄임 */
           height: auto;
         }
         .nav-links {
