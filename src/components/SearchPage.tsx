@@ -81,7 +81,7 @@ const SearchPage = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [hasMore, setHasMore] = useState<boolean>(true);
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
-  const [LoginDecisionOverlayVisible, setLoginDecisionOverlayVisible] = useState<boolean>(false);
+  const [overlayVisible, setOverlayVisible] = useState<boolean>(false);
 
   const lastSearchTimeRef = useRef<number>(0);
   const SEARCH_THROTTLE_MS = 1000;
@@ -166,6 +166,15 @@ const SearchPage = () => {
       setIsLoggedIn(!!token);
     }
   }, []);
+
+  // 로그인 상태에 따라 오버레이 표시 여부를 결정합니다.
+  useEffect(() => {
+    if (isLoggedIn) {
+      setOverlayVisible(false);
+    } else {
+      setOverlayVisible(true);
+    }
+  }, [isLoggedIn]);
 
   // 사용자 정보 fetch
   useEffect(() => {
@@ -322,11 +331,11 @@ const SearchPage = () => {
         </div>
       </header>
 
-      {!isLoggedIn && (
+      {!isLoggedIn && overlayVisible && (
         <LoginDecisionOverlay
-          visible={!isLoggedIn}
-          onLogin={() => router.push("/SignInLogIn")}
-          onBrowse={() => {}}
+          visible={overlayVisible}
+          onLogin={() => router.push("/login")}
+          onBrowse={() => setOverlayVisible(false)}
         />
       )}
 
