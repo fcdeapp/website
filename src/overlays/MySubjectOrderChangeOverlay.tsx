@@ -114,23 +114,23 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
   const [isGroupedView, setIsGroupedView] = useState<boolean>(false);
   const isFirstRender = useRef(true);
 
-  // Animate overlay open/close based on "visible"
+  // 애니메이션: visible이 변경될 때 오버레이와 토픽 아이템 애니메이션 처리
   useEffect(() => {
     if (visible) {
-      // Opening: slide to 0 and fade to 1; animate each topic from -200 to 0 staggered.
+      // 오버레이 열기: 슬라이드 값 0, 페이드 1로 변경
       setSlide(0);
       setFade(1);
       allTopics.forEach((_, index) => {
         setTimeout(() => {
           setItemAnimValues((prev) => {
             const newValues = [...prev];
-            newValues[index] = 0;
+            newValues[index] = 0;  // 0: 원래 위치
             return newValues;
           });
-        }, index * 100);
+        }, index * 120); // 기존 100ms -> 120ms씩 증가
       });
     } else {
-      // Closing: slide to 200 and fade to 0; animate each topic from 0 to -200.
+      // 오버레이 닫기: 슬라이드 값 200, 페이드 0으로 변경
       setSlide(200);
       setFade(0);
       allTopics.forEach((_, index) => {
@@ -140,7 +140,7 @@ const MySubjectOrderChangeOverlay: React.FC<MySubjectOrderChangeOverlayProps> = 
             newValues[index] = -200;
             return newValues;
           });
-        }, index * 100);
+        }, index * 120);
       });
       setTimeout(() => {
         onClose();

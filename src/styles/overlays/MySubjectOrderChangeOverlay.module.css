@@ -27,8 +27,7 @@
   padding: 20px;
   max-height: 70%;
   overflow-y: auto;
-  transition: transform 300ms ease, opacity 300ms ease;
-  /* 그림자 효과 (모바일 앱과 동일) */
+  transition: transform 0.5s ease, opacity 0.5s ease;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -99,6 +98,7 @@
 
 .topicButtonWrapper {
   margin: 8px 0;
+  transition: transform 0.5s ease;
 }
 
 .topicButton {
