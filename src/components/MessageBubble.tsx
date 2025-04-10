@@ -84,7 +84,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({
       endpoint = `${SERVER_URL}/district-chat/${chatContextId}/message/${_id}`;
     }
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const response = await axios.patch(
         endpoint,
         { message: editedContent },
@@ -111,7 +111,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({
       endpoint = `${SERVER_URL}/district-chat/${chatContextId}/message/${_id}`;
     }
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const response = await axios.delete(endpoint, {
         headers: { Authorization: `Bearer ${token}` },
       });

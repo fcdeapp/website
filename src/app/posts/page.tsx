@@ -99,7 +99,7 @@ const Post: React.FC = () => {
 
   // 로그인 상태 체크
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
     setIsLoggedIn(!!token);
   }, []);
 
@@ -121,7 +121,7 @@ const Post: React.FC = () => {
   // 프로필 데이터 fetch
   useEffect(() => {
     if (isLoggedIn) {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const id = localStorage.getItem("userId");
       setUserId(id);
       axios
@@ -176,7 +176,7 @@ const Post: React.FC = () => {
   const fetchFilteredPosts = async (pageNumber: number, isRefreshing = false) => {
     setIsLoading(true);
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const topicsQuery = selectedTopics.join(",");
       const response = await axios.get(`${SERVER_URL}/posts/filter`, {
         headers: { Authorization: token ? `Bearer ${token}` : "" },

@@ -28,7 +28,7 @@ const PasswordChangeModal: React.FC<PasswordChangeModalProps> = ({ visible, onCl
     setPasswordMatchError(false);
     setIsSubmitting(true);
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       await axios.post(
         `${SERVER_URL}/password/change-password`,
         { currentPassword, newPassword },

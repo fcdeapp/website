@@ -38,7 +38,7 @@ const PasswordOTPRequestModal: React.FC<PasswordOTPRequestModalProps> = ({ visib
     }
     setIsSubmitting(true);
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (!token) throw new Error(t("auth_token_missing"));
       await axios.post(
         `${SERVER_URL}/api/users/request-password-otp`,
@@ -67,7 +67,7 @@ const PasswordOTPRequestModal: React.FC<PasswordOTPRequestModalProps> = ({ visib
     }
     setIsSubmitting(true);
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (!token) throw new Error(t("auth_token_missing"));
       await axios.post(
         `${SERVER_URL}/api/users/verify-password-otp`,

@@ -59,7 +59,7 @@ const BuddyGroupDetailModal: React.FC<BuddyGroupDetailModalProps> = ({
       setBuddyLoading(true);
       setError(null);
       try {
-        const token = localStorage.getItem("token");
+        const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
         if (!token) {
           throw new Error(t("modal.noTokenError"));
         }
@@ -130,7 +130,7 @@ const BuddyGroupDetailModal: React.FC<BuddyGroupDetailModalProps> = ({
                 setBuddyGroupDetails(null);
                 setBuddyLoading(true);
                 try {
-                  const token = localStorage.getItem("token");
+                  const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
                   if (!token) {
                     alert(`${t("modal.errorAlert")}: ${t("modal.noTokenError")}`);
                     setBuddyLoading(false);

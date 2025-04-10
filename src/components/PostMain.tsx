@@ -241,7 +241,7 @@ const PostMain: React.FC<PostMainProps> = ({
   // 방문자 및 좋아요 상태 확인
   useEffect(() => {
     const checkStatus = async () => {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (!token) {
         console.log("No token found, skipping status check.");
         return;
@@ -274,7 +274,7 @@ const PostMain: React.FC<PostMainProps> = ({
       let attempts = 3;
       while (attempts > 0) {
         try {
-          const token = localStorage.getItem("token");
+          const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
           if (!token) {
             console.log("No token found");
             return;
@@ -306,7 +306,7 @@ const PostMain: React.FC<PostMainProps> = ({
   // 사용자 정보 불러오기
   useEffect(() => {
     const fetchUserId = async () => {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (token) {
         try {
           const { data } = await axios.get(`${SERVER_URL}/users/me`, {
@@ -369,7 +369,7 @@ const PostMain: React.FC<PostMainProps> = ({
   // 번역 토글
   const toggleTranslation = async () => {
     setIsTranslating(true);
-    const token = localStorage.getItem("token");
+    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
     if (!token) {
       alert(t("noToken"));
       setIsTranslating(false);
@@ -411,7 +411,7 @@ const PostMain: React.FC<PostMainProps> = ({
     if (now - lastLikePressTime.current < 500) return;
     lastLikePressTime.current = now;
     if (isTranslating) return;
-    const token = localStorage.getItem("token");
+    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
     if (!token) return;
     try {
       setLiked(!liked);
@@ -450,7 +450,7 @@ const PostMain: React.FC<PostMainProps> = ({
 
   // 게시물 클릭 시 FullPost 페이지로 이동 (각 정보 querystring 전달)
   const handlePostPress = async () => {
-    const token = localStorage.getItem("token");
+    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
     const baseUrl = isBuddyPost ? `${SERVER_URL}/buddy-post` : `${SERVER_URL}/posts`;
     let updatedVisitorCount = visitorCount;
     if (token) {

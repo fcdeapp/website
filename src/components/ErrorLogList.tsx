@@ -54,7 +54,7 @@ const ErrorLogItem: React.FC<ErrorLogItemProps> = ({ errorLog, onDelete }) => {
 
     try {
       setDeleting(true);
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const region = errorLog.locationData?.region || "default-region";
       await axios.delete(`${SERVER_URL}/api/logs/delete/${errorLog._id}`, {
         headers: {

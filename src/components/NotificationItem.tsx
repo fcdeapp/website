@@ -55,7 +55,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification }) => 
 
   const hideNotification = async () => {
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (!token) throw new Error("No auth token");
 
       const endpoint = notification.buddyGroupId
@@ -84,7 +84,7 @@ const NotificationItem: React.FC<NotificationItemProps> = ({ notification }) => 
     }
     setSubmittingFeedback(true);
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (!token) throw new Error(t("auth_token_missing"));
 
       const url = `${SERVER_URL}/trust-badge/feedback/${notification._id}`;

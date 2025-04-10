@@ -93,13 +93,14 @@ const SearchPage = () => {
   }, [querySearchTerm]);
 
   const handleSearch = async (page = 1) => {
+    if (typeof window === "undefined") return;
     const now = Date.now();
     if (now - lastSearchTimeRef.current < SEARCH_THROTTLE_MS) return;
     lastSearchTimeRef.current = now;
     if (!searchTerm.trim()) return;
     setIsLoading(true);
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (!token) {
         setIsLoading(false);
         return;
@@ -161,7 +162,7 @@ const SearchPage = () => {
   // 로그인 상태 체크
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       setIsLoggedIn(!!token);
     }
   }, []);
@@ -170,7 +171,7 @@ const SearchPage = () => {
   useEffect(() => {
     const fetchUserId = async () => {
       if (typeof window !== "undefined") {
-        const token = localStorage.getItem("token");
+        const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
         if (token) {
           try {
             const response = await axios.get(`${SERVER_URL}/users/me`, {

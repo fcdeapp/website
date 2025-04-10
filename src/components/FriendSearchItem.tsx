@@ -59,7 +59,7 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
 
   // AsyncStorage 대신 localStorage를 사용
   const getAuthHeader = async () => {
-    const token = localStorage.getItem("token");
+    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
     return { Authorization: `Bearer ${token}` };
   };
 
@@ -92,7 +92,7 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
   // 채팅 시작 (예시)
   const handleChat = async () => {
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const headers = { Authorization: `Bearer ${token}` };
       const response = await axios.post(
         `${SERVER_URL}/chats/one-on-one`,
@@ -119,7 +119,7 @@ const FriendSearchItem: React.FC<FriendSearchItemProps> = ({
       return;
     }
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const headers = { "Content-Type": "application/json", Authorization: `Bearer ${token}` };
       const response = await axios.post(
         `${SERVER_URL}/friend/friend-request`,

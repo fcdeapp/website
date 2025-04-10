@@ -66,7 +66,7 @@ const ProfileWithFlag: React.FC<ProfileWithFlagProps> = ({
       const fetchUserDetails = async () => {
         try {
           setLoading(true);
-          const token = localStorage.getItem("token");
+          const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
           if (!token) {
             setLoading(false);
             return;
@@ -109,7 +109,7 @@ const ProfileWithFlag: React.FC<ProfileWithFlagProps> = ({
 
   // 로그인 상태 체크
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
     setIsLoggedIn(!!token);
   }, []);
 

@@ -52,7 +52,7 @@ const CreateNotificationModal: React.FC<CreateNotificationModalProps> = ({
     if (!searchTerm) return;
     setLoadingSearch(true);
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const pageToFetch = reset ? 1 : searchPage;
       let endpoint = "";
       if (buddyGroupId) {
@@ -120,7 +120,7 @@ const CreateNotificationModal: React.FC<CreateNotificationModalProps> = ({
       return;
     }
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       let imageUrl = "";
       if (newImage) {
         // 이미지 업로드
