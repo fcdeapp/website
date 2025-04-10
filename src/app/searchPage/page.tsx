@@ -11,7 +11,7 @@ import { useConfig } from "../../context/ConfigContext";
 import PostMain from "../../components/PostMain";
 import FriendSearchItem from "../../components/FriendSearchItem";
 import BuddySearchItem from "../../components/BuddySearchItem";
-import LoginOverlay from "../../overlays/LoginDecisionOverlay";
+import LoginDecisionOverlay from "../../overlays/LoginDecisionOverlay";
 import WebFooter from "../../components/WebFooter";
 
   interface Post {
@@ -81,7 +81,7 @@ const SearchPage = () => {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [hasMore, setHasMore] = useState<boolean>(true);
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
-  const [loginOverlayVisible, setLoginOverlayVisible] = useState<boolean>(false);
+  const [LoginDecisionOverlayVisible, setLoginDecisionOverlayVisible] = useState<boolean>(false);
 
   const lastSearchTimeRef = useRef<number>(0);
   const SEARCH_THROTTLE_MS = 1000;
@@ -322,7 +322,7 @@ const SearchPage = () => {
       </header>
 
       {!isLoggedIn && (
-        <LoginOverlay
+        <LoginDecisionOverlay
           visible={!isLoggedIn}
           onLogin={() => router.push("/SignInLogIn")}
           onBrowse={() => {}}
