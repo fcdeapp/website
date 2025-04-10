@@ -56,17 +56,13 @@
   text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Hero Hint 텍스트 - 더 아래에 배치하고 작은 글씨, 파도 애니메이션 */
+/* Hero Hint 텍스트 - 조금 더 아래쪽에 배치, 작게 표시, 파도치듯 투명도 변동 */
 .heroHint {
-  position: absolute;
-  bottom: 60px; /* 아래쪽으로 더 내림 */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.85rem; /* 더 작게 */
+  margin-top: 3rem; /* 기존보다 더 아래쪽 배치 */
+  font-size: 1rem;
   color: #F7F7F7;
   opacity: 0.4;
   animation: textWave 3s infinite;
-  text-align: center;
 }
 
 @keyframes textWave {
@@ -74,22 +70,19 @@
   50% { opacity: 1; }
 }
 
-/* Hero Arrows - 화살표 두 개를 세로로, 간격 거의 없음 */
+/* Hero Arrows: 두 개 화살표를 세로 배열, 간격 매우 좁게 */
 .heroArrows {
-  position: absolute;
-  bottom: 30px; /* 텍스트보다 아래 */
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: -1px; /* 아주 작은 간격 */
+  gap: 0.1rem; /* 간격을 아주 좁게 */
   animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
+  50% { transform: translateY(10px); }
 }
 
 .button {
