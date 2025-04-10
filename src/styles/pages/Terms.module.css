@@ -1,21 +1,30 @@
-/* src/styles/Terms.module.css */
+/* Container: full width, no horizontal padding */
 .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #f8f8fe;
-  padding: 0 1rem;
+  padding: 0;
+  margin: 0;
 }
 
+/* Header: full width with no side gaps */
 .header {
+  width: 100%;
   padding: 2rem 0;
   text-align: center;
   background-color: #ffffff;
   border-bottom: 1px solid #eee;
+  animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #0a1045;
   margin: 0;
@@ -29,19 +38,10 @@
   align-items: center;
 }
 
-.toggleButton {
-  background-color: #f7f7f7;
-  color: #555;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.toggleButton:hover {
-  background-color: #e0e0e0;
+.selectWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .select {
@@ -53,6 +53,7 @@
   background-color: #ffffff;
 }
 
+/* Main: centered, with vertical padding */
 .main {
   flex: 1;
   padding: 2rem 0;
@@ -60,6 +61,12 @@
   margin: 0 auto;
   color: #555;
   line-height: 1.6;
+  animation: fadeInContent 1s ease-in-out;
+}
+
+@keyframes fadeInContent {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .content {
@@ -69,16 +76,31 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Preserve line breaks in the terms content */
 .content p {
   white-space: pre-wrap;
 }
 
+/* Loading text */
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+  margin: 2rem 0;
+}
+
+/* Footer: full width with no side padding */
 .footer {
-  padding: 1rem;
+  width: 100%;
+  padding: 1rem 0;
   text-align: center;
   font-size: 0.9rem;
   color: #888;
   background-color: #fff;
   border-top: 1px solid #eee;
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
