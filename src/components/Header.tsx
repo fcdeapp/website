@@ -11,9 +11,18 @@ export default function Header() {
 
         {/* Center: Nav Links */}
         <div className="nav-links">
-          <Link href="/about">About</Link>
-          <Link href="/posts">Posts</Link>
-          <Link href="/terms">Terms</Link>
+          <Link href="/about">
+            <a className="nav-link">About</a>
+          </Link>
+          <Link href="/posts">
+            <a className="nav-link">Posts</a>
+          </Link>
+          <Link href="/terms">
+            <a className="nav-link">Terms</a>
+          </Link>
+          <Link href="/searchPage">
+            <a className="nav-link">Search</a>
+          </Link>
         </div>
 
         {/* Right: Action Buttons */}
@@ -26,6 +35,42 @@ export default function Header() {
           </Link>
         </div>
       </nav>
+      <style jsx>{`
+        .header-nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+        }
+        .logo {
+          width: 120px;
+          height: auto;
+        }
+        .nav-links {
+          display: flex;
+          gap: 20px;
+        }
+        .nav-link {
+          text-decoration: none;
+          color: inherit;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+        }
+        .nav-link:hover {
+          background-color: #f0f0f0;
+        }
+        .action-buttons a {
+          text-decoration: none;
+          margin-left: 15px;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+        }
+        .action-buttons a:hover {
+          background-color: #f0f0f0;
+        }
+      `}</style>
     </header>
   );
 }
