@@ -56,10 +56,10 @@
   text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Hero Hint 텍스트 - 파도치듯 투명도 변동 */
+/* Hero Hint 텍스트 - 조금 더 작게, 파도치듯 투명도 변동 */
 .heroHint {
-  margin-top: 2rem;
-  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  font-size: 1rem; /* 작게 변경 */
   color: #F7F7F7;
   opacity: 0.4;
   animation: textWave 3s infinite;
@@ -70,12 +70,13 @@
   50% { opacity: 1; }
 }
 
-/* 아래 방향 화살표들을 담는 컨테이너 */
+/* Hero Arrows: 두 개 화살표를 세로 배열, 간격 최소화 */
 .heroArrows {
-  margin-top: 3rem; /* 기존보다 더 아래에 배치 */
+  margin-top: 1rem; /* 텍스트 아래 아주 약간의 간격 */
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column; /* 세로 배열 */
+  align-items: center;
+  gap: 0.25rem; /* 아주 작은 간격 */
   animation: bounce 2s infinite;
 }
 

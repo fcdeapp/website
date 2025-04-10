@@ -39,46 +39,46 @@ export default function Home() {
       </Head>
 
       <div className={styles.container}>
-        {/* Hero Section */}
-        <header className={styles.hero} data-aos="fade-in">
-          <div className={styles.heroOverlay}>
-            <h1 className={styles.title} data-aos="fade-up">Facade</h1>
-            <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
-              Connecting People and Cultures Abroad
-            </p>
-            {/* 아래쪽 힌트 텍스트 */}
-            <div className={styles.heroHint} data-aos="fade-up" data-aos-delay="500">
-              Swipe to Explore
-            </div>
-            {/* 아래 방향 화살표 두 개 */}
-            <div className={styles.heroArrows} data-aos="fade-up" data-aos-delay="600">
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#F7F7F7"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-              <svg
-                width="30"
-                height="30"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#F7F7F7"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </div>
+      {/* Hero Section */}
+      <header className={styles.hero} data-aos="fade-in">
+        <div className={styles.heroOverlay}>
+          <h1 className={styles.title} data-aos="fade-up">Facade</h1>
+          <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
+            Connecting People and Cultures Abroad
+          </p>
+          {/* 작은 크기의 힌트 텍스트 */}
+          <div className={styles.heroHint} data-aos="fade-up" data-aos-delay="500">
+            Swipe to Explore
           </div>
-        </header>
+          {/* 아래 방향 화살표 두 개를 세로 방향으로 배열 */}
+          <div className={styles.heroArrows} data-aos="fade-up" data-aos-delay="600">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#F7F7F7"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#F7F7F7"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+        </div>
+      </header>
 
         <main className={styles.main}>
           {/* Value Proposition Section */}
