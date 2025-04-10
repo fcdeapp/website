@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/router";
+import { useRouter, useSearchParams } from "next/navigation"; 
 import styles from "../../styles/pages/SearchPage.module.css";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
@@ -70,7 +70,8 @@ const SearchPage = () => {
   const { SERVER_URL } = useConfig();
   const { t } = useTranslation();
   const router = useRouter();
-  const { searchTerm: querySearchTerm } = router.query;
+  const searchParams = useSearchParams();
+  const querySearchTerm = searchParams.get("searchTerm") || "";
 
   const [userId, setUserId] = useState<string>("");
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -86,7 +87,7 @@ const SearchPage = () => {
   const SEARCH_THROTTLE_MS = 1000;
 
   useEffect(() => {
-    if (typeof querySearchTerm === "string") {
+    if (querySearchTerm) {
       setSearchTerm(querySearchTerm);
     }
   }, [querySearchTerm]);
@@ -159,24 +160,28 @@ const SearchPage = () => {
 
   // 로그인 상태 체크
   useEffect(() => {
-    const token = localStorage.getItem("token");
-    setIsLoggedIn(!!token);
+    if (typeof window !== "undefined") {
+      const token = localStorage.getItem("token");
+      setIsLoggedIn(!!token);
+    }
   }, []);
 
   // 사용자 정보 fetch
   useEffect(() => {
     const fetchUserId = async () => {
-      const token = localStorage.getItem("token");
-      if (token) {
-        try {
-          const response = await axios.get(`${SERVER_URL}/users/me`, {
-            headers: { Authorization: `Bearer ${token}` },
-          });
-          if (response.status === 200) {
-            setUserId(response.data.userId);
+      if (typeof window !== "undefined") {
+        const token = localStorage.getItem("token");
+        if (token) {
+          try {
+            const response = await axios.get(`${SERVER_URL}/users/me`, {
+              headers: { Authorization: `Bearer ${token}` },
+            });
+            if (response.status === 200) {
+              setUserId(response.data.userId);
+            }
+          } catch (error) {
+            console.error("Error fetching user data:", error);
           }
-        } catch (error) {
-          console.error("Error fetching user data:", error);
         }
       }
     };
