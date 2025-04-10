@@ -180,7 +180,8 @@
     
     /* 섹션 이미지가 부모 너비를 넘지 않도록 설정 */
     .sectionImage {
-      max-width: 80%;
+      width: 100%;
+      max-width: 100%;
       height: auto;
       padding-right: 1rem;
       align-self: center;
