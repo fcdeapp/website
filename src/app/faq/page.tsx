@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/Faq.module.css";
 import Link from "next/link";
+import WebFooter from "../../components/WebFooter";
 
 // QnA 항목 타입 선언
 interface QnAItem {
@@ -128,7 +129,7 @@ export default function Faq() {
           <div className={styles.inquirySection} data-aos="zoom-in" data-aos-delay="200">
             <button className={styles.inquiryButton} onClick={() => setInquiryVisible(true)}>
               <img
-                src="/icons/friend-icon.png"
+                src="/assets/friend-icon.png"
                 alt="Inquiry Icon"
                 className={styles.icon}
               />
@@ -138,22 +139,7 @@ export default function Faq() {
         </main>
 
         {/* Footer (필요 시 페이지 하단에 추가) */}
-        <footer className={styles.footer} data-aos="fade-up">
-          <div className={styles.footerContainer}>
-            <Link href="/">
-              <a className={styles.footerLink}>Home</a>
-            </Link>
-            <Link href="/about">
-              <a className={styles.footerLink}>About</a>
-            </Link>
-            <Link href="/contact">
-              <a className={styles.footerLink}>Contact</a>
-            </Link>
-          </div>
-          <p className={styles.footerCopyright}>
-            © {new Date().getFullYear()} Facade. All rights reserved.
-          </p>
-        </footer>
+        <WebFooter />
 
         {/* 문의하기 모달 */}
         {inquiryVisible && (
