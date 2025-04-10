@@ -184,6 +184,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         }
       }
       axios.interceptors.request.use((config) => {
+        config.withCredentials = true;
         config.headers["x-region"] = cachedRegion;
         return config;
       });
