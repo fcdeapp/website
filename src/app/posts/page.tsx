@@ -373,13 +373,16 @@ const Post: React.FC = () => {
       <div className={styles.fixedHeaderOut}>
       <div className={styles.fixedHeader} style={{ opacity: headerOpacity }}>
         <div className={styles.header}>
-          <button className={styles.logoButton} onClick={() => {}}>
-            <img
-              className={styles.logo}
-              src={isIdle ? "/assets/sleepingOwl.png" : "/assets/Owl-icon-pink.png"}
-              alt="Logo"
-            />
-          </button>
+        <button
+          className={styles.logoButton}
+          onClick={() => router.push("/")}
+        >
+          <img
+            className={styles.logo}
+            src={isIdle ? "/assets/sleepingOwl.png" : "/assets/Owl-icon-pink.png"}
+            alt="Logo"
+          />
+        </button>
           <div className={styles.gradientBorderSearch}>
             <input
               className={styles.searchBar}

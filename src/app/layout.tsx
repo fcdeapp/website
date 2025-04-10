@@ -10,7 +10,7 @@ import MaintenanceModal from "../components/MaintenanceModal";
 import PasswordExpiredModal from "../components/PasswordExpiredModal";
 import axios from "axios";
 import { getDistrictNameFromCoordinates } from "../utils/locationUtils";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Header from "../components/Header";
 import "./globals.css";
 
@@ -26,6 +26,7 @@ const pretendard = localFont({
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
+  const pathname = usePathname();
   const [isLoading, setIsLoading] = useState(true);
   const [maintenanceVisible, setMaintenanceVisible] = useState(false);
   const [passwordExpired, setPasswordExpired] = useState(false);
@@ -245,7 +246,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   onClose={() => setShowPasswordExpiredModal(false)}
                 />
               )}
-              <Header />
+              {pathname !== "/posts" && <Header />}
               {/* 실제 콘텐츠 영역 */}
               <main>{children}</main>
             </I18nextProvider>
