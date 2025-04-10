@@ -161,21 +161,47 @@
 /* Features & Journey Lists */
 .featuresList,
 .journeyList {
-  text-align: left;
-  max-width: 700px;
+  list-style: none;
+  padding: 0;
   margin: 2rem auto;
-  color: #555;
+  max-width: 700px;
+}
+
+.featureItem, .journeyItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeInItem 0.8s forwards;
+}
+
+@keyframes fadeInItem {
+  to { opacity: 1; }
+}
+
+.featureIcon {
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.featureItem span {
   font-size: 1.15rem;
-  padding-left: 1.5rem;
-  line-height: 1.7;
+  color: #555;
 }
 
-.featuresList li {
-  list-style-type: disc;
+.journeyItem {
+  display: flex;
+  align-items: center;
 }
 
-.journeyList li {
-  list-style-type: decimal;
+.journeyMarker {
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.journeyItem span {
+  font-size: 1.15rem;
+  color: #555;
 }
 
 /* Screenshots Grid */

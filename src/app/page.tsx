@@ -31,6 +31,21 @@ export default function Home() {
   const openModal = (src: string) => setModalImage(src);
   const closeModal = () => setModalImage(null);
 
+  const features = [
+    "AI-Powered Personalized Event Recommendations",
+    "Easy and Fast Event Creation",
+    "Trust Badge System for Safe Meetups",
+    "Local Buddy Groups for Seamless Cultural Exchange",
+    "Real-time Chat and Notification Integration",
+  ];
+
+  const journeySteps = [
+    "Sign Up and Create Your Profile",
+    "Get Personalized Event Suggestions",
+    "Join or Create an Event with One Click",
+    "Connect with Local Buddies and Build Your Network",
+  ];
+
   return (
     <>
       <Head>
@@ -113,11 +128,28 @@ export default function Home() {
             <div className={styles.split} data-aos="fade-left">
               <h2 className={styles.sectionTitle}>Key Features</h2>
               <ul className={styles.featuresList}>
-                <li>AI-Powered Personalized Event Recommendations</li>
-                <li>Easy and Fast Event Creation</li>
-                <li>Trust Badge System for Safe Meetups</li>
-                <li>Local Buddy Groups for Seamless Cultural Exchange</li>
-                <li>Real-time Chat and Notification Integration</li>
+                {features.map((feature, index) => (
+                  <li
+                    key={index}
+                    className={styles.featureItem}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
+                    {/* SVG 아이콘 */}
+                    <svg
+                      className={styles.featureIcon}
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#3C5AFE"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span>{feature}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </section>
@@ -127,10 +159,28 @@ export default function Home() {
             <div className={styles.split} data-aos="fade-right">
               <h2 className={styles.sectionTitle}>User Journey</h2>
               <ol className={styles.journeyList}>
-                <li>Sign Up and Create Your Profile</li>
-                <li>Get Personalized Event Suggestions</li>
-                <li>Join or Create an Event with One Click</li>
-                <li>Connect with Local Buddies and Build Your Network</li>
+                {journeySteps.map((step, index) => (
+                  <li
+                    key={index}
+                    className={styles.journeyItem}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
+                    <div className={styles.journeyMarker}>
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#3C5AFE"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="3" />
+                      </svg>
+                    </div>
+                    <span>{step}</span>
+                  </li>
+                ))}
               </ol>
             </div>
             <div className={styles.split} data-aos="zoom-in" data-aos-delay="300">
