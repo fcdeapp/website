@@ -180,10 +180,9 @@
     
     /* 섹션 이미지가 부모 너비를 넘지 않도록 설정 */
     .sectionImage {
-      width: 100%;
       max-width: 100%;
       height: auto;
-      margin-right: 1rem;
+      padding-right: 1rem;
     }
     
     /* 섹션 텍스트 최대너비를 100%로 설정하여 오버플로우 방지 */
