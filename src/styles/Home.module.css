@@ -131,6 +131,7 @@
   margin-bottom: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.04em;
+  padding-right: 1rem;
 }
 
 .sectionText {
@@ -572,7 +573,7 @@
     font-size: 0.85rem;  /* 텍스트 크기 축소 */
     word-wrap: break-word; /* 단어가 넘칠 경우 줄바꿈 */
   }
-  
+
   @media (min-width: 767px) {
     .footerText {
       max-width: 60%;
