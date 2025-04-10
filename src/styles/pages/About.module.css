@@ -193,12 +193,12 @@
     }
   
     /* Global text shrink */
-    body,
-    p,
-    span,
-    a,
-    li {
+    :global(body),
+    :global(p),
+    :global(span),
+    :global(a),
+    :global(li) {
       font-size: 0.9rem;
-    }
+    }    
   }
   
