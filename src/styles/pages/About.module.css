@@ -162,20 +162,41 @@
   
   /* Responsive Styles for Mobile */
   @media (max-width: 768px) {
+    /* 섹션 및 섹션Alt 전체 너비를 100%로 적용하고 패딩을 조정 */
     .section,
     .sectionAlt {
       flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 2rem 1rem; /* 패딩을 축소하여 부모 영역 내에 맞춤 */
+      margin: 2rem 0; /* 위아래 여백도 줄임 */
     }
-  
-    /* Hero Section */
+    
+    /* 섹션 이미지가 부모 너비를 넘지 않도록 설정 */
+    .sectionImage {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    
+    /* 섹션 텍스트 최대너비를 100%로 설정하여 오버플로우 방지 */
+    .section p,
+    .sectionAlt p,
+    .sectionText {
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow-wrap: break-word; /* 텍스트가 길어질 때 줄바꿈 적용 */
+    }
+    
+    /* 기존 모바일 텍스트 조정 부분은 그대로 유지 */
     .heroText h1 {
       font-size: 2.2rem;
     }
     .heroText p {
       font-size: 1rem;
     }
-  
-    /* Sections */
     .section h2 {
       font-size: 1.75rem;
     }
@@ -183,13 +204,11 @@
     .sectionAlt p {
       font-size: 1rem;
     }
-  
-    /* Team Section */
     .teamCard h3 {
       font-size: 1rem;
     }
     .teamCard p {
       font-size: 0.85rem;
-    }  
+    }
   }
   
