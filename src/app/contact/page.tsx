@@ -17,14 +17,26 @@ export default function Contact() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // 실제 전송 로직 구현 필요 (API 연동 등)
-    console.log("Message sent:", { name, email, message });
-    alert("Thank you for contacting us!");
-    setName("");
-    setEmail("");
-    setMessage("");
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL || ''}/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+      if (res.ok) {
+        alert("Thank you for contacting us!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        alert("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("An error occurred. Please try again later.");
+    }
   };
 
   return (
