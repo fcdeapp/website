@@ -81,13 +81,18 @@
 }
 
 /* Section styling with generous whitespace & layering */
-.section {
+.section, .sectionAlt {
   margin-bottom: 4rem;
   padding: 3rem 2rem;
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   animation: fadeIn 1s ease-in-out;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
 }
 
 .sectionTitle {
@@ -105,6 +110,22 @@
   max-width: 800px;
   line-height: 1.7;
   letter-spacing: -0.04em;
+}
+
+/* Split layout & Section Images */
+.split {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.sectionImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 /* Features & Journey Lists */
@@ -215,7 +236,7 @@
   margin: 0 auto;
 }
 
-/* For desktop: constrain demo video size */
+/* Desktop: Constrain demo video size */
 @media (min-width: 768px) {
   .demoVideo {
     max-width: 300px;
@@ -295,9 +316,8 @@
 }
 
 /* Footer */
-/* Footer */
 .footer {
-  background-color: #0A1045; /* 어두운 블루 계열 배경 */
+  background-color: #0A1045;
   color: #F8F8FE;
   padding: 2rem;
   font-size: 0.7rem;
@@ -384,46 +404,39 @@
   .main {
     padding: 4rem 2rem;
   }
-
   .section {
-    max-width: 50vw;           /* occupy half the viewport */
-    margin: 0 auto 5rem;       /* center + bottom spacing */
-    padding: 4rem 3rem;        /* extra padding */
+    max-width: 50vw;
+    margin: 0 auto 5rem;
+    padding: 4rem 3rem;
   }
-
   .sectionTitle {
-    font-size: 2.25rem;        /* slightly smaller heading */
+    font-size: 2.25rem;
   }
-
   .sectionText {
-    font-size: 1rem;           /* reduce body text */
-    max-width: 600px;          /* narrower line‑length for readability */
+    font-size: 1rem;
+    max-width: 600px;
     margin: 0 auto;
     line-height: 1.8;
   }
-
   .featuresList,
   .journeyList {
-    font-size: 1rem;           /* smaller list text */
+    font-size: 1rem;
     max-width: 500px;
     margin: 2rem auto;
   }
 }
 
-/* --------------------------- */
 /* Responsive Styles for Mobile */
-/* --------------------------- */
 @media (max-width: 767px) {
   .main {
     max-width: 100%;
     padding: 1rem;
   }
   .sectionText {
-    max-width: 100%;      /* remove fixed cap */
-    padding: 0 1rem;      /* horizontal breathing room */
-    overflow-wrap: break-word; /* prevent awkward overflow */
+    max-width: 100%;
+    padding: 0 1rem;
+    overflow-wrap: break-word;
   }
-  /* Horizontal scroll for screenshots */
   .screenshotsGrid {
     display: flex;
     flex-wrap: wrap;
@@ -433,7 +446,7 @@
     margin: 0;
   }
   .screenshotItem {
-    flex: 0 0 45%;          /* two cards per row */
+    flex: 0 0 45%;
     max-width: 45%;
     box-sizing: border-box;
     margin: 0;
@@ -441,10 +454,9 @@
   .screenshotImage {
     width: 100%;
     height: auto;
-    object-fit: contain;     /* avoid cropping */
+    object-fit: contain;
     border-radius: 12px;
   }
-  /* Beta Section */
   .betaSection {
     padding: 2rem 1rem;
   }
@@ -456,8 +468,6 @@
     padding: 2rem 1rem;
     margin: 0 0 2rem;
   }
-  
-  /* Call-to-Action Buttons: Stack vertically */
   .ctaButtons {
     flex-direction: column;
     gap: 1rem;
@@ -469,8 +479,6 @@
     padding: 0.75rem 1rem;
     font-size: 0.85rem;
   }
-
-  /* Reduce overall mobile font sizes */
   .sectionTitle {
     font-size: 1.75rem;
   }
@@ -480,12 +488,10 @@
   .betaSubtitle {
     font-size: 0.85rem;
   }
-
   @media (min-width: 767px) {
     .footerText {
       max-width: 60%;
       margin: 0 auto;
     }
   }
-  
 }
