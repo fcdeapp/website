@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Suspense } from "react";
-import SearchPage from "../../components/SearchPage";
+import SearchPage from "../../components/Search";
 
 const SearchPageWrapper = () => (
   <Suspense fallback={<div>Loading...</div>}>
