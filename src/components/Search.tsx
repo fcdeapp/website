@@ -115,6 +115,7 @@ const SearchPage = () => {
           headers: {
             "Content-Type": "application/json",
           },
+          withCredentials: true, 
         }
       );
       if (response.status !== 200) {
@@ -174,11 +175,12 @@ const SearchPage = () => {
   useEffect(() => {
     const fetchUserId = async () => {
       if (typeof window !== "undefined") {
-        const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-        if (token) {
           try {
             const response = await axios.get(`${SERVER_URL}/users/me`, {
-              headers: { Authorization: `Bearer ${token}` },
+              headers: { 
+                "Content-Type": "application/json",
+              },
+              withCredentials: true, 
             });
             if (response.status === 200) {
               setUserId(response.data.userId);
@@ -186,7 +188,6 @@ const SearchPage = () => {
           } catch (error) {
             console.error("Error fetching user data:", error);
           }
-        }
       }
     };
     fetchUserId();
