@@ -46,11 +46,11 @@ export default function Home() {
           <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
             Connecting People and Cultures Abroad
           </p>
-          {/* 작은 크기의 힌트 텍스트 */}
+          {/* 작은 크기의 힌트 텍스트를 더 아래쪽에 배치 */}
           <div className={styles.heroHint} data-aos="fade-up" data-aos-delay="500">
             Swipe to Explore
           </div>
-          {/* 아래 방향 화살표 두 개를 세로 방향으로 배열 */}
+          {/* 아래 방향 화살표 두 개를 세로로 아주 좁게 배열 */}
           <div className={styles.heroArrows} data-aos="fade-up" data-aos-delay="600">
             <svg
               width="30"
