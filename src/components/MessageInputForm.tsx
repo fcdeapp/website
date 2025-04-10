@@ -38,7 +38,7 @@ const MessageInputForm: React.FC<MessageInputFormProps> = ({
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
     setIsLoggedIn(!!token);
   }, []);
 

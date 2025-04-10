@@ -58,7 +58,7 @@ export default function Faq() {
     }
 
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       if (!token) {
         throw new Error(t("auth_token_missing", "Authentication token missing."));
       }

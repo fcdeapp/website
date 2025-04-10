@@ -29,7 +29,7 @@ const GroupedErrorLogList: React.FC<GroupedErrorLogListProps> = ({ region }) => 
   const fetchGroupedLogs = async () => {
     setLoading(true);
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const response = await axios.get(`${SERVER_URL}/api/logs/grouped?region=${region}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -49,7 +49,7 @@ const GroupedErrorLogList: React.FC<GroupedErrorLogListProps> = ({ region }) => 
     if (!confirmed) return;
 
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       await axios.delete(`${SERVER_URL}/api/logs/deleteByMessage`, {
         headers: {
           Authorization: `Bearer ${token}`,

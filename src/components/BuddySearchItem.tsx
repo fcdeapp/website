@@ -59,7 +59,7 @@ const BuddySearchItem: React.FC<BuddySearchItemProps> = ({
 
   const handleRemoveBuddy = async (buddyGroupId: string) => {
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const response = await axios.post(
         `${SERVER_URL}/buddy-groups/remove`,
         { buddyGroupId },
@@ -83,7 +83,7 @@ const BuddySearchItem: React.FC<BuddySearchItemProps> = ({
 
   const sendJoinRequest = async (buddyGroupId: string) => {
     try {
-      const token = localStorage.getItem("token");
+      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const response = await axios.post(
         `${SERVER_URL}/buddy-groups/join-request`,
         { buddyGroupId },
