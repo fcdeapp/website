@@ -241,21 +241,17 @@ const PostMain: React.FC<PostMainProps> = ({
   // 방문자 및 좋아요 상태 확인
   useEffect(() => {
     const checkStatus = async () => {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-      if (!token) {
-        console.log("No token found, skipping status check.");
+      if (localStorage.getItem("isLoggedIn") !== "true") {
+        console.log("skipping status check.");
         return;
       }
       try {
         const { data: visitorData } = await axios.post(
           `${SERVER_URL}/posts/${postId}/visit`,
-          { id: postId },
-          { headers: { Authorization: `Bearer ${token}` } }
+          { id: postId }
         );
         setVisitorCount(visitorData.visitors);
-        const { data: postData } = await axios.get(`${SERVER_URL}/posts/${postId}`, {
-          headers: { Authorization: `Bearer ${token}` },
-        });
+        const { data: postData } = await axios.get(`${SERVER_URL}/posts/${postId}`);
         setLiked(postData.likedUsers.includes(userId));
         setLikeCount(postData.likes);
         setCommented(
@@ -274,17 +270,14 @@ const PostMain: React.FC<PostMainProps> = ({
       let attempts = 3;
       while (attempts > 0) {
         try {
-          const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-          if (!token) {
-            console.log("No token found");
-            return;
-          }
+            if (localStorage.getItem("isLoggedIn") !== "true") {
+                return;
+              }
           const { data } = await axios.post(
             `${SERVER_URL}/users/profiles`,
             { userIds: applicants },
             {
               headers: {
-                Authorization: `Bearer ${token}`,
                 "Content-Type": "application/json",
               },
             }
@@ -306,19 +299,16 @@ const PostMain: React.FC<PostMainProps> = ({
   // 사용자 정보 불러오기
   useEffect(() => {
     const fetchUserId = async () => {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-      if (token) {
+      if (localStorage.getItem("isLoggedIn") === "true") {
         try {
-          const { data } = await axios.get(`${SERVER_URL}/users/me`, {
-            headers: { Authorization: `Bearer ${token}` },
-          });
+          const { data } = await axios.get(`${SERVER_URL}/users/me`);
           setMyUserId(data.userId);
           setNickname(data.nickname);
         } catch (error) {
           console.log("Error fetching user data:", error);
         }
       } else {
-        console.log("No token found");
+        console.log("User not logged in, skipping user data fetch.");
       }
     };
     fetchUserId();
@@ -369,18 +359,15 @@ const PostMain: React.FC<PostMainProps> = ({
   // 번역 토글
   const toggleTranslation = async () => {
     setIsTranslating(true);
-    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-    if (!token) {
-      alert(t("noToken"));
-      setIsTranslating(false);
-      return;
-    }
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+        alert(t("not_logged_in", "You must be logged in to translate."));
+        setIsTranslating(false);
+        return;
+      }
     try {
       const language = localStorage.getItem("language");
       const url = `${SERVER_URL}/translate/posts/${postId}?targetLanguage=${language}`;
-      const { data } = await axios.get(url, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const { data } = await axios.get(url);
       setTranslatedText(
         isTranslated ? { title, content } : { title: data.title, content: data.content }
       );
@@ -411,8 +398,7 @@ const PostMain: React.FC<PostMainProps> = ({
     if (now - lastLikePressTime.current < 500) return;
     lastLikePressTime.current = now;
     if (isTranslating) return;
-    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-    if (!token) return;
+    if (localStorage.getItem("isLoggedIn") !== "true") return;
     try {
       setLiked(!liked);
       generateFloatingHeart();
@@ -421,7 +407,6 @@ const PostMain: React.FC<PostMainProps> = ({
       const { data } = await axios({
         url: `${baseUrl}/${postId}/like`,
         method,
-        headers: { Authorization: `Bearer ${token}` },
       });
       setLikeCount(data.likes);
     } catch (error) {
@@ -450,23 +435,18 @@ const PostMain: React.FC<PostMainProps> = ({
 
   // 게시물 클릭 시 FullPost 페이지로 이동 (각 정보 querystring 전달)
   const handlePostPress = async () => {
-    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
     const baseUrl = isBuddyPost ? `${SERVER_URL}/buddy-post` : `${SERVER_URL}/posts`;
     let updatedVisitorCount = visitorCount;
-    if (token) {
+    if (localStorage.getItem("isLoggedIn") === "true") {
       try {
-        const { data } = await axios.post(
-          `${baseUrl}/${postId}/visit`,
-          null,
-          { headers: { Authorization: `Bearer ${token}` } }
-        );
+        const { data } = await axios.post(`${baseUrl}/${postId}/visit`, null);
         updatedVisitorCount = data.visitors;
         setVisitorCount(updatedVisitorCount);
       } catch (error) {
         console.error("Failed to update visitor count", error);
       }
     } else {
-      console.log("Token not found, skipping visitor update.");
+      console.log("skipping visitor update.");
     }
     const params = new URLSearchParams({
       id: postId,
