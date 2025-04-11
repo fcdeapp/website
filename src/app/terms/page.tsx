@@ -19,17 +19,30 @@ const languageOptions = [
   { code: "ko", label: "Korean" },
   { code: "pt", label: "Portuguese" },
   { code: "ru", label: "Russian" },
-  { code: "zh", label: "Chinese" }
+  { code: "zh", label: "Chinese" },
 ];
+
+// 기본 terms 콘텐츠 문자열에 날짜 및 이메일 형식을 감싸는 함수
+const formatContent = (content: string): string => {
+  // YYYY-MM-DD 형태 날짜 감지
+  const dateRegex = /(\d{4}-\d{2}-\d{2})/g;
+  // 이메일 형식 감지 (간단한 정규식)
+  const emailRegex = /([\w\.-]+@[\w\.-]+\.[A-Za-z]{2,6})/g;
+  let formatted = content;
+  formatted = formatted.replace(dateRegex, `<span class="${styles.date}">$1</span>`);
+  formatted = formatted.replace(emailRegex, `<span class="${styles.email}">$1</span>`);
+  return formatted;
+};
 
 export default function TermsPage() {
   const [termsContent, setTermsContent] = useState("");
+  const [formattedContent, setFormattedContent] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [termsLanguage, setTermsLanguage] = useState("en");
   const [termsType, setTermsType] = useState<TermsType>("privacy");
   const [licensesVisible, setLicensesVisible] = useState(false);
 
-  // 페이지 로드시 localStorage에 저장된 TermsType 값 반영 후 삭제
+  // 로컬에 저장된 termsType 값 반영 후 삭제
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storedType = localStorage.getItem("termsType") as TermsType | null;
@@ -61,6 +74,11 @@ export default function TermsPage() {
   useEffect(() => {
     fetchTerms(termsLanguage, termsType);
   }, [termsLanguage, termsType]);
+
+  // 형식 적용
+  useEffect(() => {
+    setFormattedContent(formatContent(termsContent));
+  }, [termsContent]);
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setTermsLanguage(e.target.value);
@@ -136,7 +154,8 @@ export default function TermsPage() {
           <p className={styles.loading}>Loading terms...</p>
         ) : (
           <section className={styles.content}>
-            <p>{termsContent}</p>
+            {/* dangeroulsySetInnerHTML를 사용하여 포맷팅된 HTML 출력 */}
+            <p dangerouslySetInnerHTML={{ __html: formattedContent }} />
           </section>
         )}
         <button className={styles.licensesButton} onClick={toggleLicenses}>
