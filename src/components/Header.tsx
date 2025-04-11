@@ -108,7 +108,7 @@ export default function Header() {
                   userId={userId}
                   profileImage={profileImage || undefined}
                   profileThumbnail={profileThumbnail || undefined}
-                  size={30}
+                  size={48}
                 />
               </div>
             </>
