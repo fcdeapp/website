@@ -37,7 +37,7 @@
   margin: 0;
 }
 
-/* 컨트롤 영역: Picker를 세로 배치(모바일 우선) */
+/* 컨트롤 영역: Picker를 세로 배치 및 넉넉한 여백 */
 .controls {
   margin-top: 1.5rem;
   display: flex;
@@ -97,8 +97,26 @@
 
 .content p {
   white-space: pre-wrap;
-  font-size: 1.1rem;
   margin: 0;
+}
+
+/* 텍스트 크기 스타일: 첫 줄, 리스트 항목, 그 외 본문 */
+.firstLine {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.listLine {
+  font-size: 1.1rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.bodyText {
+  font-size: 0.95rem;
+  display: block;
+  margin: 0.3rem 0;
 }
 
 /* 날짜와 이메일 스타일 */
@@ -147,14 +165,8 @@
 }
 
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive Styles */
@@ -179,5 +191,15 @@
   }
   .controls {
     flex-direction: column;
+  }
+  .content p,
+  .bodyText {
+    font-size: 0.85rem;
+  }
+  .selectLabel {
+    font-size: 0.9rem;
+  }
+  .footer {
+    font-size: 0.85rem;
   }
 }

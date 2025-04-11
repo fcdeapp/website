@@ -22,16 +22,37 @@ const languageOptions = [
   { code: "zh", label: "Chinese" },
 ];
 
-// 기본 terms 콘텐츠 문자열에 날짜 및 이메일 형식을 감싸는 함수
+// 업데이트된 formatContent 함수:
+// - 콘텐츠를 줄 단위로 분리
+// - 첫 번째 줄은 .firstLine, 숫자. 으로 시작하는 줄은 .listLine, 그 외는 .bodyText로 감쌉니다.
+// - 각 줄 내 날짜(YYYY-MM-DD)와 이메일 형식은 각각 .date, .email 클래스로 감쌉니다.
 const formatContent = (content: string): string => {
-  // YYYY-MM-DD 형태 날짜 감지
-  const dateRegex = /(\d{4}-\d{2}-\d{2})/g;
-  // 이메일 형식 감지 (간단한 정규식)
-  const emailRegex = /([\w\.-]+@[\w\.-]+\.[A-Za-z]{2,6})/g;
-  let formatted = content;
-  formatted = formatted.replace(dateRegex, `<span class="${styles.date}">$1</span>`);
-  formatted = formatted.replace(emailRegex, `<span class="${styles.email}">$1</span>`);
-  return formatted;
+  const lines = content.split(/\r?\n/);
+  return lines
+    .map((line, index) => {
+      let wrapped = "";
+      if (index === 0) {
+        wrapped = `<span class="${styles.firstLine}">${line}</span>`;
+      } else if (/^\d+\.\s+/.test(line)) {
+        wrapped = `<span class="${styles.listLine}">${line}</span>`;
+      } else {
+        wrapped = `<span class="${styles.bodyText}">${line}</span>`;
+      }
+      // 날짜: YYYY-MM-DD
+      const dateRegex = /(\d{4}-\d{2}-\d{2})/g;
+      wrapped = wrapped.replace(
+        dateRegex,
+        `<span class="${styles.date}">$1</span>`
+      );
+      // 이메일 형식
+      const emailRegex = /([\w\.-]+@[\w\.-]+\.[A-Za-z]{2,6})/g;
+      wrapped = wrapped.replace(
+        emailRegex,
+        `<span class="${styles.email}">$1</span>`
+      );
+      return wrapped;
+    })
+    .join("<br/>");
 };
 
 export default function TermsPage() {
@@ -42,12 +63,12 @@ export default function TermsPage() {
   const [termsType, setTermsType] = useState<TermsType>("privacy");
   const [licensesVisible, setLicensesVisible] = useState(false);
 
-  // 로컬에 저장된 termsType 값 반영 후 삭제
+  // 저장된 termsType 반영 후 제거
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const storedType = localStorage.getItem("termsType") as TermsType | null;
-      if (storedType) {
-        setTermsType(storedType);
+      const stored = localStorage.getItem("termsType") as TermsType | null;
+      if (stored) {
+        setTermsType(stored);
         localStorage.removeItem("termsType");
       }
     }
@@ -75,7 +96,6 @@ export default function TermsPage() {
     fetchTerms(termsLanguage, termsType);
   }, [termsLanguage, termsType]);
 
-  // 형식 적용
   useEffect(() => {
     setFormattedContent(formatContent(termsContent));
   }, [termsContent]);
@@ -120,13 +140,19 @@ export default function TermsPage() {
               onChange={handleTermsTypeChange}
             >
               <option value="service">
-                {termsLanguage !== "ko" ? "Terms of Service" : "서비스 이용약관"}
+                {termsLanguage !== "ko"
+                  ? "Terms of Service"
+                  : "서비스 이용약관"}
               </option>
               <option value="privacy">
-                {termsLanguage !== "ko" ? "Privacy Policy" : "개인정보처리방침"}
+                {termsLanguage !== "ko"
+                  ? "Privacy Policy"
+                  : "개인정보처리방침"}
               </option>
               <option value="community">
-                {termsLanguage !== "ko" ? "Community Guidelines" : "커뮤니티 이용약관"}
+                {termsLanguage !== "ko"
+                  ? "Community Guidelines"
+                  : "커뮤니티 이용약관"}
               </option>
             </select>
           </div>
@@ -154,7 +180,6 @@ export default function TermsPage() {
           <p className={styles.loading}>Loading terms...</p>
         ) : (
           <section className={styles.content}>
-            {/* dangeroulsySetInnerHTML를 사용하여 포맷팅된 HTML 출력 */}
             <p dangerouslySetInnerHTML={{ __html: formattedContent }} />
           </section>
         )}
