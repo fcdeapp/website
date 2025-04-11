@@ -200,6 +200,7 @@ export default function Header() {
           background-color: #fff;
           color: #0a1045;
           border: 1px solid #0a1045;
+          margin-top: 4px;
         }
         .logout-button:hover {
           background-color: #f7f7f7;
