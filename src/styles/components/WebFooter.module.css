@@ -34,18 +34,22 @@
   /* 미디어 쿼리: 화면 너비에 따른 기본 padding 조정 */
   @media (min-width: 768px) {
     .footerSection {
+      margin: 1rem; 
       padding-right: 2rem;
     }
     .footerSection:hover {
+      margin: 1rem; 
       padding-right: 3rem;
     }
   }
   
   @media (min-width: 1024px) {
     .footerSection {
+      margin: 1.5rem; 
       padding-right: 4rem;
     }
     .footerSection:hover {
+      margin: 1.5rem; 
       padding-right: 5rem;
     }
   }
