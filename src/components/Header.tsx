@@ -5,10 +5,14 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import axios from "axios";
+import ProfileWithFlag from "../components/ProfileWithFlag";
 
 export default function Header() {
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userId, setUserId] = useState<string>("");
+  const [profileImage, setProfileImage] = useState<string>("");
+  const [profileThumbnail, setProfileThumbnail] = useState<string>("");
 
   // 로그인 상태 체크: 절대 URL을 사용하여 API 호출 (withCredentials:true)
   useEffect(() => {
@@ -27,6 +31,27 @@ export default function Header() {
     };
     checkStatus();
   }, []);
+
+  useEffect(() => {
+    const fetchUserDetails = async () => {
+      try {
+        const res = await axios.get(
+          `${process.env.NEXT_PUBLIC_SERVER_URL}/users/me`,
+          { withCredentials: true }
+        );
+        const fetchedUserId = res.data.userId || "";
+        setUserId(fetchedUserId);
+        localStorage.setItem("userId", fetchedUserId);
+        setProfileImage(res.data.profileImage || "");
+        setProfileThumbnail(res.data.profileThumbnail || "");
+      } catch (err) {
+        console.error("Error fetching user details in header", err);
+      }
+    };
+    if (isLoggedIn) {
+      fetchUserDetails();
+    }
+  }, [isLoggedIn]);
 
   // 로그아웃 핸들러: 로그아웃 API 호출 후 상태 업데이트
   const handleLogout = async () => {
@@ -74,9 +99,19 @@ export default function Header() {
         {/* Right: Action Buttons */}
         <div className="action-buttons">
           {isLoggedIn ? (
-            <button className="logout-button" onClick={handleLogout}>
-              Logout
-            </button>
+            <>
+              <button className="logout-button" onClick={handleLogout}>
+                Logout
+              </button>
+              <div style={{ marginLeft: "10px" }}>
+                <ProfileWithFlag
+                  userId={userId}
+                  profileImage={profileImage || undefined}
+                  profileThumbnail={profileThumbnail || undefined}
+                  size={30}
+                />
+              </div>
+            </>
           ) : (
             <>
               <Link href="/login">

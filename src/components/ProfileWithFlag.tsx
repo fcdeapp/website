@@ -62,20 +62,18 @@ const ProfileWithFlag: React.FC<ProfileWithFlagProps> = ({
 
   // 필요한 사용자 정보를 서버에서 불러오기 (국가, 프로필 이미지, trustBadge 등)
   useEffect(() => {
+    const localLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    setIsLoggedIn(localLoggedIn);
+
     if ((!countryName || (!profileThumbnail && !profileImage) || trustBadge === undefined) && userId) {
       const fetchUserDetails = async () => {
         try {
           setLoading(true);
-          const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-          if (!token) {
+          if (!localLoggedIn) {
             setLoading(false);
             return;
           }
-          const response = await axios.get(`${SERVER_URL}/users/country?userId=${userId}`, {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          });
+          const response = await axios.get(`${SERVER_URL}/users/country?userId=${userId}`);
           if (response.status === 200) {
             const data = response.data;
             setResolvedCountryName(data.originCountry);
@@ -106,12 +104,6 @@ const ProfileWithFlag: React.FC<ProfileWithFlagProps> = ({
   const country = countries.find((c) => c.name === resolvedCountryName);
   const flagImage = country ? country.flag : null;
   const sourceForProfile = getSafeImageSource(resolvedProfileImage);
-
-  // 로그인 상태 체크
-  useEffect(() => {
-    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-    setIsLoggedIn(!!token);
-  }, []);
 
   const handlePress = () => {
     if (!isLoggedIn) {
