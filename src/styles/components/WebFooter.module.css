@@ -27,7 +27,7 @@
   
   .footerSection:hover {
     padding-right: 2rem;
-    background-color: #fcfcfc; /* hover 시 조금 더 밝은 회색 느낌 */
+    background-color: #f7f7f7; /* hover 시 조금 더 밝은 회색 느낌 */
     border-radius: 12px; /* 모서리를 둥글게 */
   }
   
@@ -94,14 +94,14 @@
   
   .socialIcons a:hover {
     transform: translateY(-3px);
-    filter: invert(50%); /* 배경과 대비되도록 아이콘 색상 변경 */
+    filter: invert(50%); 
   }
   
   .socialIcons img {
     width: 24px;
     height: 24px;
-    /* 기본 상태에서는 invert(0%) */
-    filter: invert(0%);
+    filter: invert(100%);
+    transition: filter 0.3s ease;
   }
   
   /* Footer 하단 */
