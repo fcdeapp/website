@@ -14,7 +14,7 @@ export default function Header() {
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        const res = await axios.get("/authStatus/status", { withCredentials: true });
+        const res = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/authStatus/status`, { withCredentials: true });
         setIsLoggedIn(res.data.loggedIn);
       } catch (err) {
         console.error("Failed to check login status", err);
@@ -27,7 +27,7 @@ export default function Header() {
   // 로그아웃 핸들러: /auth/logout 호출 후 로그인 상태 업데이트 및 홈으로 이동
   const handleLogout = async () => {
     try {
-      await axios.post("/authStatus/logout", {}, { withCredentials: true });
+      await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/authStatus/logout`, {}, { withCredentials: true });
       setIsLoggedIn(false);
       router.push("/");
     } catch (err) {
