@@ -75,4 +75,15 @@
     font-size: 0.6rem;
     color: #ccc;
   }
+
+  @media (min-width: 768px) {
+    .footerSection {
+      padding-right: 2rem;
+    }
+  }
   
+  @media (min-width: 1024px) {
+    .footerSection {
+      padding-right: 4rem;
+    }
+  }
