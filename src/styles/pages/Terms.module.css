@@ -8,13 +8,14 @@
   margin: 0;
 }
 
-/* Header: full width with no side gaps */
+/* Header: full width with gradient background and slide-down animation */
 .header {
   width: 100%;
   padding: 2rem 0;
   text-align: center;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eee;
+  background: linear-gradient(135deg, #ff7e5f, #fd3a69);
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   animation: slideDown 0.8s ease-out;
 }
 
@@ -26,7 +27,6 @@
 .title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #0a1045;
   margin: 0;
 }
 
@@ -50,10 +50,10 @@
   border-radius: 8px;
   border: 1px solid #ddd;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-/* Main: centered, with vertical padding */
+/* Main Content */
 .main {
   flex: 1;
   padding: 2rem 0;
@@ -69,26 +69,40 @@
   to { opacity: 1; }
 }
 
+/* Content Section */
 .content {
   background-color: #fff;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
 }
 
 .content p {
   white-space: pre-wrap;
 }
 
-/* Loading text */
-.loading {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #888;
-  margin: 2rem 0;
+/* Licenses Button */
+.licensesButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #ff7e5f, #fd3a69);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Footer: full width with no side padding */
+.licensesButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
 .footer {
   width: 100%;
   padding: 1rem 0;
@@ -103,4 +117,25 @@
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .select {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .licensesButton {
+    font-size: 0.9rem;
+    padding: 0.65rem 1.25rem;
+  }
 }
