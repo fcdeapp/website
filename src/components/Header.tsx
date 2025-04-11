@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -132,12 +131,13 @@ export default function Header() {
           padding: 10px 20px;
         }
         .logo {
-          width: 60px; /* 기본 크기 60px */
+          width: 50px; /* 크기를 기존보다 줄임 */
           height: auto;
+          margin: 10px 0; /* 상하에 마진 추가 */
           transition: transform 0.3s ease;
         }
         .logo:hover {
-          transform: scale(1.333); /* 60px * 1.333 ≈ 80px */
+          transform: scale(1.333);
         }
         .nav-links {
           display: flex;
@@ -157,7 +157,8 @@ export default function Header() {
         .logout-button {
           text-decoration: none;
           margin-left: 15px;
-          padding: 8px 16px;
+          /* 내부 텍스트의 위아래 패딩을 줄임 */
+          padding: 4px 16px;
           border-radius: 25px;
           font-weight: bold;
           transition: transform 0.2s ease, box-shadow 0.2s ease;
