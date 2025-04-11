@@ -374,7 +374,7 @@ const MyProfile: React.FC = () => {
                 }
               }}
             >
-              <Image src={countryFlags[country as keyof typeof countryFlags]} alt={t(country)} width={24} height={24} />
+              <img src={countryFlags[country as keyof typeof countryFlags]} alt={t(country)} width={24} height={24} />
               <span className={styles.countryText}>{t(country)}</span>
             </button>
           ))}
@@ -409,7 +409,7 @@ const MyProfile: React.FC = () => {
         style={{ top: `${headerOffset}px` }}
       >
         <button className={styles.backButton} onClick={() => router.back()}>
-          <Image src="/assets/BackIcon.png" alt="Back" width={24} height={24} />
+          <img src="/assets/back-light.png" alt="Back" width={24} height={24} />
         </button>
         <h1 className={styles.headerTitle}>{t("my_profile")}</h1>
         <button className={styles.logoutButton} onClick={handleLogout}>
@@ -449,7 +449,7 @@ const MyProfile: React.FC = () => {
             </h2>
             {userData.trustBadge && (
               <div className={styles.trustBadge}>
-                <Image src="/assets/TrustBadge.png" alt="Trust Badge" width={24} height={24} />
+                <img src="/assets/TrustBadge.png" alt="Trust Badge" width={24} height={24} />
               </div>
             )}
           </div>
