@@ -7,9 +7,16 @@ import axios from "axios";
 import { useConfig } from "../../context/ConfigContext";
 import { useTranslation } from "react-i18next";
 
+// 앱과 동일한 컴포넌트 및 오버레이 임포트
 import ProfileWithFlag from "../../components/ProfileWithFlag";
 import WebFooter from "../../components/WebFooter";
 import Licenses from "../../components/Licenses";
+import HobbiesSelectionOverlay from "../../overlays/HobbiesSelectionOverlay";
+import SkillsSelectionOverlay from "../../overlays/SkillsSelectionOverlay";
+
+// 국가 및 언어 플래그 (앱과 동일한 데이터)
+import countryFlags from "../../constants/countryFlags";
+import languageFlags from "../../constants/languageFlags";
 
 import styles from "../../styles/pages/MyProfile.module.css";
 
@@ -97,11 +104,7 @@ const MyProfile: React.FC = () => {
   // 스크롤 이벤트 – 헤더 배경 애니메이션 (스크롤 50px 이상 시 불투명 처리)
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        setHeaderOpaque(true);
-      } else {
-        setHeaderOpaque(false);
-      }
+      setHeaderOpaque(window.scrollY > 50);
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -191,21 +194,20 @@ const MyProfile: React.FC = () => {
   };
 
   // 학습 언어 토글 – 선택한 언어 업데이트 후 서버에 저장
-  const toggleLanguageSelection = (lang: string) => {
-    let updated = [...selectedLanguages];
-    if (updated.includes(lang)) {
-      updated = updated.filter((l) => l !== lang);
-    } else {
-      updated.push(lang);
-    }
-    setSelectedLanguages(updated);
-    axios
-      .put(
-        `${SERVER_URL}/users/settings`,
-        { learningLanguage: updated },
-        { withCredentials: true }
-      )
-      .catch((error) => console.error("Error updating learning languages:", error));
+  const toggleLanguageSelection = (languageCode: string) => {
+    setSelectedLanguages((prevSelectedLanguages) => {
+      const updatedLanguages = prevSelectedLanguages.includes(languageCode)
+        ? prevSelectedLanguages.filter((code) => code !== languageCode)
+        : [...prevSelectedLanguages, languageCode];
+      axios
+        .put(
+          `${SERVER_URL}/users/settings`,
+          { learningLanguage: updatedLanguages },
+          { withCredentials: true }
+        )
+        .catch((error) => console.error("Error updating learning languages:", error));
+      return updatedLanguages;
+    });
   };
 
   // 계정 공개 토글 변경
@@ -249,7 +251,6 @@ const MyProfile: React.FC = () => {
       async (position) => {
         const { latitude, longitude } = position.coords;
         try {
-          // 서버에 위치 업데이트 요청 (서버가 업데이트 후 currentCountry/currentCity 정보를 반환한다고 가정)
           const res = await axios.put(
             `${SERVER_URL}/users/update-location`,
             { latitude, longitude },
@@ -273,6 +274,108 @@ const MyProfile: React.FC = () => {
     );
   };
 
+  // ------------------------ 모달 컴포넌트 ------------------------
+
+  // 닉네임 편집 모달
+  const renderEditNicknameModal = () => (
+    <div className={styles.modalOverlay} onClick={() => setShowEditNickname(false)}>
+      <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+        <h3>{t("edit_nickname")}</h3>
+        <input
+          type="text"
+          className={styles.modalInput}
+          value={newNickname}
+          onChange={(e) => setNewNickname(e.target.value)}
+          placeholder={t("enter_new_nickname")}
+        />
+        <button className={styles.saveButton} onClick={updateNickname}>
+          {t("save")}
+        </button>
+      </div>
+    </div>
+  );
+
+  // 설명 편집 모달
+  const renderEditDescriptionModal = () => (
+    <div className={styles.modalOverlay} onClick={() => setShowEditDescription(false)}>
+      <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+        <h3>{t("edit_description")}</h3>
+        <textarea
+          className={styles.modalTextarea}
+          value={newDescription}
+          onChange={(e) => setNewDescription(e.target.value)}
+          placeholder={t("enter_description")}
+        />
+        <button className={styles.saveButton} onClick={updateDescription}>
+          {t("save")}
+        </button>
+      </div>
+    </div>
+  );
+
+  // 학습 언어 선택 모달
+  const renderLanguageModal = () => (
+    <div className={styles.modalOverlay} onClick={() => setShowLanguageModal(false)}>
+      <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+        <h3>{t("select_languages")}</h3>
+        <div className={styles.languageOptions}>
+          {Object.keys(languageFlags).map((lang) => (
+            <button
+              key={lang}
+              className={`${styles.languageButton} ${
+                selectedLanguages.includes(lang) ? styles.selectedLanguage : ""
+              }`}
+              onClick={() => toggleLanguageSelection(lang)}
+            >
+              {lang.toUpperCase()}
+            </button>
+          ))}
+        </div>
+        <button className={styles.saveButton} onClick={() => setShowLanguageModal(false)}>
+          {t("confirm")}
+        </button>
+      </div>
+    </div>
+  );
+
+  // 원산지 국가 선택 모달 – 앱과 동일한 로직: countryFlags 객체를 순회
+  const renderOriginCountryModal = () => (
+    <div className={styles.modalOverlay} onClick={() => setShowOriginCountryModal(false)}>
+      <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+        <h3>{t("select_origin_country")}</h3>
+        <div className={styles.countryOptions}>
+          {Object.keys(countryFlags).map((country) => (
+            <button
+              key={country}
+              className={styles.countryButton}
+              onClick={async () => {
+                try {
+                  await axios.put(
+                    `${SERVER_URL}/users/settings`,
+                    { originCountry: country },
+                    { withCredentials: true }
+                  );
+                  setUserData((prev) =>
+                    prev ? { ...prev, originCountry: country } : prev
+                  );
+                  setShowOriginCountryModal(false);
+                } catch (error) {
+                  console.error("Error updating origin country:", error);
+                }
+              }}
+            >
+              <Image src={countryFlags[country as keyof typeof countryFlags]} alt={t(country)} width={24} height={24} />
+              <span className={styles.countryText}>{t(country)}</span>
+            </button>
+          ))}
+        </div>
+        <button className={styles.saveButton} onClick={() => setShowOriginCountryModal(false)}>
+          {t("confirm")}
+        </button>
+      </div>
+    </div>
+  );
+
   if (isLoading) {
     return (
       <div className={styles.loadingContainer}>
@@ -293,7 +396,7 @@ const MyProfile: React.FC = () => {
     <div className={styles.container}>
       <header className={`${styles.header} ${headerOpaque ? styles.opaque : ""}`}>
         <button className={styles.backButton} onClick={() => router.back()}>
-          &larr;
+          <Image src="/assets/back-arrow.png" alt="Back" width={24} height={24} />
         </button>
         <h1 className={styles.headerTitle}>{t("my_profile")}</h1>
         <button className={styles.logoutButton} onClick={handleLogout}>
@@ -333,12 +436,7 @@ const MyProfile: React.FC = () => {
             </h2>
             {userData.trustBadge && (
               <div className={styles.trustBadge}>
-                <Image
-                  src="/assets/TrustBadge.png"
-                  alt="Trust Badge"
-                  width={24}
-                  height={24}
-                />
+                <Image src="/assets/TrustBadge.png" alt="Trust Badge" width={24} height={24} />
               </div>
             )}
           </div>
@@ -388,13 +486,10 @@ const MyProfile: React.FC = () => {
               {(userData.skills && userData.skills.join(", ")) || t("none")}
             </p>
           </div>
-          <div
-            className={styles.infoSection}
-            onClick={() => {
+          <div className={styles.infoSection} onClick={() => {
               setNewDescription(userData.description || "");
               setShowEditDescription(true);
-            }}
-          >
+            }}>
             <h3 className={styles.infoTitle}>{t("description")}</h3>
             <p className={styles.infoText}>
               {userData.description || t("no_description")}
@@ -407,22 +502,14 @@ const MyProfile: React.FC = () => {
           <div className={styles.toggleRow}>
             <span>{t("account_visible")}</span>
             <label className={styles.switch}>
-              <input
-                type="checkbox"
-                checked={accountPublic}
-                onChange={handleAccountToggle}
-              />
+              <input type="checkbox" checked={accountPublic} onChange={handleAccountToggle} />
               <span className={styles.slider}></span>
             </label>
           </div>
           <div className={styles.toggleRow}>
             <span>{t("new_message_enabled")}</span>
             <label className={styles.switch}>
-              <input
-                type="checkbox"
-                checked={messageEnabled}
-                onChange={handleMessageToggle}
-              />
+              <input type="checkbox" checked={messageEnabled} onChange={handleMessageToggle} />
               <span className={styles.slider}></span>
             </label>
           </div>
@@ -439,7 +526,7 @@ const MyProfile: React.FC = () => {
           </button>
         </div>
 
-        {/* 퀵 메뉴 */}
+        {/* 퀵 메뉴 (디자인은 덜 눈에 띄게 변경) */}
         <div className={styles.quickMenu}>
           {quickMenuItems.map((item, index) => (
             <button
@@ -452,11 +539,7 @@ const MyProfile: React.FC = () => {
           ))}
         </div>
 
-        {/* 라이선스 보기 버튼 */}
-        <button
-          className={styles.licensesButton}
-          onClick={() => setShowLicenses(true)}
-        >
+        <button className={styles.licensesButton} onClick={() => setShowLicenses(true)}>
           {t("view_licenses")}
         </button>
       </main>
@@ -464,131 +547,13 @@ const MyProfile: React.FC = () => {
       <WebFooter />
 
       {/* 모달들 */}
-      {showEditNickname && (
-        <div
-          className={styles.modalOverlay}
-          onClick={() => setShowEditNickname(false)}
-        >
-          <div
-            className={styles.modalContent}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3>{t("edit_nickname")}</h3>
-            <input
-              type="text"
-              className={styles.modalInput}
-              value={newNickname}
-              onChange={(e) => setNewNickname(e.target.value)}
-            />
-            <button className={styles.saveButton} onClick={updateNickname}>
-              {t("save")}
-            </button>
-          </div>
-        </div>
-      )}
-
-      {showEditDescription && (
-        <div
-          className={styles.modalOverlay}
-          onClick={() => setShowEditDescription(false)}
-        >
-          <div
-            className={styles.modalContent}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3>{t("edit_description")}</h3>
-            <textarea
-              className={styles.modalTextarea}
-              value={newDescription}
-              onChange={(e) => setNewDescription(e.target.value)}
-            />
-            <button className={styles.saveButton} onClick={updateDescription}>
-              {t("save")}
-            </button>
-          </div>
-        </div>
-      )}
-
-      {showLanguageModal && (
-        <div
-          className={styles.modalOverlay}
-          onClick={() => setShowLanguageModal(false)}
-        >
-          <div
-            className={styles.modalContent}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3>{t("select_languages")}</h3>
-            <div className={styles.languageOptions}>
-              {["en", "ko", "es", "fr"].map((lang) => (
-                <button
-                  key={lang}
-                  className={`${styles.languageButton} ${
-                    selectedLanguages.includes(lang)
-                      ? styles.selectedLanguage
-                      : ""
-                  }`}
-                  onClick={() => toggleLanguageSelection(lang)}
-                >
-                  {lang.toUpperCase()}
-                </button>
-              ))}
-            </div>
-            <button
-              className={styles.saveButton}
-              onClick={() => setShowLanguageModal(false)}
-            >
-              {t("confirm")}
-            </button>
-          </div>
-        </div>
-      )}
-
-      {showOriginCountryModal && (
-        <div
-          className={styles.modalOverlay}
-          onClick={() => setShowOriginCountryModal(false)}
-        >
-          <div
-            className={styles.modalContent}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3>{t("select_origin_country")}</h3>
-            <div className={styles.countryOptions}>
-              {["US", "KR", "JP", "CN"].map((country) => (
-                <button
-                  key={country}
-                  className={styles.countryButton}
-                  onClick={async () => {
-                    try {
-                      await axios.put(
-                        `${SERVER_URL}/users/settings`,
-                        { originCountry: country },
-                        { withCredentials: true }
-                      );
-                      setUserData((prev) =>
-                        prev ? { ...prev, originCountry: country } : prev
-                      );
-                      setShowOriginCountryModal(false);
-                    } catch (error) {
-                      console.error("Error updating origin country:", error);
-                    }
-                  }}
-                >
-                  {country}
-                </button>
-              ))}
-            </div>
-            <button
-              className={styles.saveButton}
-              onClick={() => setShowOriginCountryModal(false)}
-            >
-              {t("confirm")}
-            </button>
-          </div>
-        </div>
-      )}
-
+      {showEditNickname && renderEditNicknameModal()}
+      {showEditDescription && renderEditDescriptionModal()}
+      {showLanguageModal && renderLanguageModal()}
+      {showOriginCountryModal && renderOriginCountryModal()}
+      {/* 앱에서 제공하는 Hobbies/Skills 오버레이 – 웹에서는 별도 인터페이스가 이미 있으므로 동일하게 처리 */}
+      <HobbiesSelectionOverlay visible={false} onClose={() => {}} selectedHobbies={[]} setSelectedHobbies={() => {}} />
+      <SkillsSelectionOverlay visible={false} onClose={() => {}} selectedSkills={[]} setSelectedSkills={() => {}} />
       {showLicenses && <Licenses onClose={() => setShowLicenses(false)} />}
     </div>
   );
