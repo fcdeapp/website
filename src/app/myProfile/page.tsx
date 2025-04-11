@@ -71,9 +71,19 @@ const MyProfile: React.FC = () => {
   const [messageEnabled, setMessageEnabled] = useState(true);
   const [updatingLocation, setUpdatingLocation] = useState(false);
   const [headerOpaque, setHeaderOpaque] = useState(false);
-
-  // 파일 입력(ref) – 프로필 이미지 변경용
+  const [headerOffset, setHeaderOffset] = useState(90);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const onScroll = () => {
+      // window.scrollY가 0부터 90px까지는 offset이 (90 - scrollY)로 감소하고,
+      // 90px 이상일 경우 0으로 고정합니다.
+      setHeaderOffset(Math.max(90 - window.scrollY, 0));
+      setHeaderOpaque(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   // 로그인 체크 (로컬스토리지에 isLoggedIn 값 확인)
   const isLoggedIn =
@@ -394,7 +404,10 @@ const MyProfile: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <header className={`${styles.header} ${headerOpaque ? styles.opaque : ""}`}>
+      <header
+        className={`${styles.header} ${headerOpaque ? styles.opaque : ""}`}
+        style={{ top: `${headerOffset}px` }}
+      >
         <button className={styles.backButton} onClick={() => router.back()}>
           <Image src="/assets/BackIcon.png" alt="Back" width={24} height={24} />
         </button>

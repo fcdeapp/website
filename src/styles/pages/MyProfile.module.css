@@ -20,12 +20,11 @@
     background: linear-gradient(135deg, #ff7e5f, #fd3a69);
     color: #ffffff;
     position: fixed;
-    top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    transition: background 0.3s ease;
-  }
+    transition: background 0.3s ease, top 0.3s ease;
+  }  
   .header.opaque {
     background: rgba(253, 58, 105, 0.95);
   }
