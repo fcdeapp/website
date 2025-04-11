@@ -123,7 +123,7 @@ export default function LoginPage() {
 
         <p className={styles.footer}>
           Don’t have an account?{' '}
-          <Link href="/signup">Sign Up</Link>
+          <Link href="/signUpForm">Sign Up</Link>
         </p>
       </form>
     </main>

@@ -1,6 +1,40 @@
+// src/components/Header.tsx
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import axios from "axios";
 
 export default function Header() {
+  const router = useRouter();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  // 로그인 상태 체크: /auth/status 엔드포인트 호출 (쿠키 전송을 위해 withCredentials:true 사용)
+  useEffect(() => {
+    const checkStatus = async () => {
+      try {
+        const res = await axios.get("/authStatus/status", { withCredentials: true });
+        setIsLoggedIn(res.data.loggedIn);
+      } catch (err) {
+        console.error("Failed to check login status", err);
+        setIsLoggedIn(false);
+      }
+    };
+    checkStatus();
+  }, []);
+
+  // 로그아웃 핸들러: /auth/logout 호출 후 로그인 상태 업데이트 및 홈으로 이동
+  const handleLogout = async () => {
+    try {
+      await axios.post("/authStatus/logout", {}, { withCredentials: true });
+      setIsLoggedIn(false);
+      router.push("/");
+    } catch (err) {
+      console.error("Logout failed", err);
+    }
+  };
+
   return (
     <header className="header">
       <nav className="header-nav">
@@ -31,12 +65,20 @@ export default function Header() {
 
         {/* Right: Action Buttons */}
         <div className="action-buttons">
-          <Link href="/login">
-            <a className="login-button">Login</a>
-          </Link>
-          <Link href="/signup">
-            <a className="signup-button">Sign Up</a>
-          </Link>
+          {isLoggedIn ? (
+            <button className="logout-button" onClick={handleLogout}>
+              Logout
+            </button>
+          ) : (
+            <>
+              <Link href="/login">
+                <a className="login-button">Login</a>
+              </Link>
+              <Link href="/signUpForm">
+                <a className="signup-button">Sign Up</a>
+              </Link>
+            </>
+          )}
         </div>
       </nav>
       <style jsx>{`
@@ -47,7 +89,7 @@ export default function Header() {
           padding: 10px 20px;
         }
         .logo {
-          width: 80px; /* 로고 크기를 줄임 */
+          width: 80px;
           height: auto;
         }
         .nav-links {
@@ -64,19 +106,22 @@ export default function Header() {
         .nav-link:hover {
           background-color: #f0f0f0;
         }
-        .action-buttons a {
+        .action-buttons a,
+        .logout-button {
           text-decoration: none;
           margin-left: 15px;
           padding: 8px 16px;
           border-radius: 25px;
           font-weight: bold;
           transition: transform 0.2s ease, box-shadow 0.2s ease;
+          cursor: pointer;
+          border: none;
         }
-        .action-buttons a:hover {
+        .action-buttons a:hover,
+        .logout-button:hover {
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-        /* 로그인 버튼: 깔끔한 다크 테마 */
         .login-button {
           background-color: #0a1045;
           color: #fff;
@@ -86,13 +131,20 @@ export default function Header() {
           background-color: #0a1045;
           opacity: 0.9;
         }
-        /* 회원가입 버튼: 하얀색 배경에 다크 테마 글자 및 테두리 */
         .signup-button {
           background-color: #fff;
           color: #0a1045;
           border: 1px solid #0a1045;
         }
         .signup-button:hover {
+          background-color: #f7f7f7;
+        }
+        .logout-button {
+          background-color: #fff;
+          color: #0a1045;
+          border: 1px solid #0a1045;
+        }
+        .logout-button:hover {
           background-color: #f7f7f7;
         }
       `}</style>

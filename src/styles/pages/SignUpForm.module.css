@@ -1,0 +1,224 @@
+/* Global Container & Typography */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #f8f8fe;
+    color: #0A1045;
+  }
+  
+  /* Form Container */
+  .form {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Title & Step Indicator */
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .stepIndicator {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Step Container */
+  .stepContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Labels & Inputs */
+  .label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  /* 버튼 스타일 */
+  .checkButton,
+  .sendCodeButton,
+  .verifyCodeButton {
+    padding: 0.5rem 1rem;
+    background-color: #0A1045;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .checkButton {
+    margin-top: 0.5rem;
+    align-self: flex-start;
+  }
+  
+  /* Verification Container */
+  .verificationContainer {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Input with Toggle (for password fields) */
+  .inputWithToggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Password Strength Bar */
+  .strengthBarContainer {
+    width: 100%;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  
+  .strengthBarBackground {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+  }
+  
+  .strengthBarFill {
+    height: 100%;
+    background-color: green;
+    transition: width 0.3s ease;
+  }
+  
+  .strengthText {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0A1045;
+    margin-top: 0.25rem;
+  }
+  
+  /* Violations List */
+  .violationsList {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+  }
+  
+  .violationItem {
+    font-size: 0.8rem;
+    color: #E53E3E;
+  }
+  
+  /* Agreements */
+  .agreementRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .agreementLabel {
+    font-size: 0.9rem;
+    color: #0A1045;
+  }
+  
+  /* Navigation Buttons */
+  .navigationButtons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .navButton {
+    flex: 1;
+    padding: 0.75rem;
+    background-color: #0A1045;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navButton:disabled {
+    background-color: #A0AEC0;
+    cursor: not-allowed;
+  }
+  
+  /* Warning & Footer */
+  .warningText {
+    color: #E53E3E;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .footerLink {
+    color: #0A1045;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Responsive Adjustments (mobile) */
+  @media (max-width: 768px) {
+    .form {
+      padding: 2rem 1.5rem;
+    }
+    .title {
+      font-size: 1.75rem;
+    }
+    .stepIndicator {
+      font-size: 1rem;
+    }
+    .label,
+    .agreementLabel {
+      font-size: 0.9rem;
+    }
+    .input {
+      font-size: 0.95rem;
+      padding: 0.65rem;
+    }
+    .checkButton,
+    .sendCodeButton,
+    .verifyCodeButton,
+    .navButton {
+      font-size: 0.85rem;
+      padding: 0.6rem;
+    }
+    .strengthText {
+      font-size: 0.8rem;
+    }
+    .violationsList,
+    .violationItem {
+      font-size: 0.75rem;
+    }
+  }
+  
