@@ -337,7 +337,7 @@ const MyProfile: React.FC = () => {
               }`}
               onClick={() => toggleLanguageSelection(lang)}
             >
-              <Image
+              <img
                 src={languageFlags[lang as keyof typeof languageFlags]}
                 alt={t(lang)}
                 width={24}
