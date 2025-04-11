@@ -1,6 +1,6 @@
 /* Footer 기본 스타일 */
 .footer {
-    background-color: #ffffff;
+    background-color: #fefefe; /* 조금 더 밝은 흰색 */
     color: #444;
     padding: 2rem;
     font-size: 0.9rem;
@@ -22,13 +22,13 @@
     min-width: 250px;
     margin: 1rem 0;
     padding-right: 1rem;
-    transition: padding-right 0.3s ease, background-color 0.3s ease;
+    transition: padding-right 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
   }
   
-  /* 마우스 오버 시 Footer 섹션 반응 효과 */
   .footerSection:hover {
     padding-right: 2rem;
-    background-color: #f7f7f7;
+    background-color: #fcfcfc; /* hover 시 조금 더 밝은 회색 느낌 */
+    border-radius: 12px; /* 모서리를 둥글게 */
   }
   
   /* 미디어 쿼리: 화면 너비에 따른 기본 padding 조정 */
@@ -85,25 +85,29 @@
     color: #3C5AFE;
   }
   
+  /* 소셜 아이콘 */
   .socialIcons a {
     display: inline-block;
     margin-right: 1rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
   
   .socialIcons a:hover {
     transform: translateY(-3px);
+    filter: invert(50%); /* 배경과 대비되도록 아이콘 색상 변경 */
   }
   
   .socialIcons img {
     width: 24px;
     height: 24px;
-    filter: brightness(1.5);
+    /* 기본 상태에서는 invert(0%) */
+    filter: invert(0%);
   }
   
+  /* Footer 하단 */
   .footerBottom {
     text-align: center;
-    border-top: 1px solid rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: 1rem;
     font-size: 0.85rem;
     color: #777;
