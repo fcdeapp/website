@@ -29,7 +29,7 @@ export default function TermsPage() {
   const [termsType, setTermsType] = useState<TermsType>("privacy");
   const [licensesVisible, setLicensesVisible] = useState(false);
 
-  // 로컬에 저장된 termsType 값이 있으면 반영
+  // 페이지 로드시 localStorage에 저장된 TermsType 값 반영 후 삭제
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storedType = localStorage.getItem("termsType") as TermsType | null;
@@ -92,7 +92,9 @@ export default function TermsPage() {
         </h1>
         <div className={styles.controls}>
           <div className={styles.selectWrapper}>
-            <label htmlFor="termsType">Type:</label>
+            <label htmlFor="termsType" className={styles.selectLabel}>
+              Type
+            </label>
             <select
               id="termsType"
               className={styles.select}
@@ -111,7 +113,9 @@ export default function TermsPage() {
             </select>
           </div>
           <div className={styles.selectWrapper}>
-            <label htmlFor="language">Language:</label>
+            <label htmlFor="language" className={styles.selectLabel}>
+              Language
+            </label>
             <select
               id="language"
               className={styles.select}
