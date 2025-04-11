@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../../styles/pages/Terms.module.css";
 import WebFooter from "../../components/WebFooter";
+import Licenses from "../../components/Licenses";
 
 type TermsType = "service" | "privacy" | "community";
 
@@ -18,7 +19,7 @@ const languageOptions = [
   { code: "ko", label: "Korean" },
   { code: "pt", label: "Portuguese" },
   { code: "ru", label: "Russian" },
-  { code: "zh", label: "Chinese" },
+  { code: "zh", label: "Chinese" }
 ];
 
 export default function TermsPage() {
@@ -26,8 +27,9 @@ export default function TermsPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [termsLanguage, setTermsLanguage] = useState("en");
   const [termsType, setTermsType] = useState<TermsType>("privacy");
+  const [licensesVisible, setLicensesVisible] = useState(false);
 
-  // 페이지 로드시 localStorage에 저장된 TermsType 값이 있으면 반영
+  // 로컬에 저장된 termsType 값이 있으면 반영
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storedType = localStorage.getItem("termsType") as TermsType | null;
@@ -68,6 +70,10 @@ export default function TermsPage() {
     setTermsType(e.target.value as TermsType);
   };
 
+  const toggleLicenses = () => {
+    setLicensesVisible((prev) => !prev);
+  };
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -86,7 +92,7 @@ export default function TermsPage() {
         </h1>
         <div className={styles.controls}>
           <div className={styles.selectWrapper}>
-            <label htmlFor="termsType">Type: </label>
+            <label htmlFor="termsType">Type:</label>
             <select
               id="termsType"
               className={styles.select}
@@ -105,7 +111,7 @@ export default function TermsPage() {
             </select>
           </div>
           <div className={styles.selectWrapper}>
-            <label htmlFor="language">Language: </label>
+            <label htmlFor="language">Language:</label>
             <select
               id="language"
               className={styles.select}
@@ -129,8 +135,12 @@ export default function TermsPage() {
             <p>{termsContent}</p>
           </section>
         )}
+        <button className={styles.licensesButton} onClick={toggleLicenses}>
+          {licensesVisible ? "Close Licenses" : "View Licenses"}
+        </button>
       </main>
       <WebFooter />
+      {licensesVisible && <Licenses onClose={() => setLicensesVisible(false)} />}
     </div>
   );
 }
