@@ -60,13 +60,22 @@
   .checkButton,
   .sendCodeButton,
   .verifyCodeButton {
-    padding: 0.5rem 1rem;
-    background-color: #0A1045;
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(135deg, #3C5AFE, #00C6FF);
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .checkButton:hover,
+  .sendCodeButton:hover,
+  .verifyCodeButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
   .checkButton {
@@ -149,21 +158,26 @@
     margin-top: 1.5rem;
   }
   
-  .navButton {
+  .navButton,
+  .logout-button {
     flex: 1;
-    padding: 0.75rem;
-    background-color: #0A1045;
+    padding: 0.75rem 1.2rem;
+    background: linear-gradient(135deg, #3C5AFE, #00C6FF);
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     font-weight: 600;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
   .navButton:disabled {
-    background-color: #A0AEC0;
+    background: #ccc;
     cursor: not-allowed;
+  }
+  .navButton:hover,
+  .logout-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
   /* Warning & Footer */
