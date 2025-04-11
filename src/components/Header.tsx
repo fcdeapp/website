@@ -153,20 +153,29 @@ export default function Header() {
         .nav-link:hover {
           background-color: #f0f0f0;
         }
+        /* 공통 버튼 스타일: 높이 및 패딩 통일 */
         .action-buttons a,
-        .logout-button {
+        .logout-button,
+        .login-button,
+        .signup-button {
           text-decoration: none;
           margin-left: 15px;
-          /* 내부 텍스트의 위아래 패딩을 줄임 */
-          padding: 4px 16px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 36px; /* 버튼 높이 설정 */
+          padding: 0 16px; /* 좌우 패딩, 상하는 height로 고정 */
           border-radius: 25px;
           font-weight: bold;
           transition: transform 0.2s ease, box-shadow 0.2s ease;
           cursor: pointer;
           border: none;
+          box-sizing: border-box;
         }
         .action-buttons a:hover,
-        .logout-button:hover {
+        .logout-button:hover,
+        .login-button:hover,
+        .signup-button:hover {
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
