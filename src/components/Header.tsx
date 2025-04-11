@@ -10,11 +10,14 @@ export default function Header() {
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // 로그인 상태 체크: /auth/status 엔드포인트 호출 (쿠키 전송을 위해 withCredentials:true 사용)
+  // 로그인 상태 체크: 절대 URL을 사용하여 API 호출 (withCredentials:true)
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        const res = await axios.get(`${process.env.NEXT_PUBLIC_SERVER_URL}/authStatus/status`, { withCredentials: true });
+        const res = await axios.get(
+          `${process.env.NEXT_PUBLIC_SERVER_URL}/authStatus/status`,
+          { withCredentials: true }
+        );
         setIsLoggedIn(res.data.loggedIn);
       } catch (err) {
         console.error("Failed to check login status", err);
@@ -24,10 +27,14 @@ export default function Header() {
     checkStatus();
   }, []);
 
-  // 로그아웃 핸들러: /auth/logout 호출 후 로그인 상태 업데이트 및 홈으로 이동
+  // 로그아웃 핸들러: 로그아웃 API 호출 후 상태 업데이트
   const handleLogout = async () => {
     try {
-      await axios.post(`${process.env.NEXT_PUBLIC_SERVER_URL}/authStatus/logout`, {}, { withCredentials: true });
+      await axios.post(
+        `${process.env.NEXT_PUBLIC_SERVER_URL}/authStatus/logout`,
+        {},
+        { withCredentials: true }
+      );
       setIsLoggedIn(false);
       router.push("/");
     } catch (err) {
@@ -89,8 +96,12 @@ export default function Header() {
           padding: 10px 20px;
         }
         .logo {
-          width: 80px;
+          width: 60px; /* 기본 크기 60px */
           height: auto;
+          transition: transform 0.3s ease;
+        }
+        .logo:hover {
+          transform: scale(1.333); /* 60px * 1.333 ≈ 80px */
         }
         .nav-links {
           display: flex;
