@@ -1,21 +1,31 @@
-/* src/components/MyProfile.module.css */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     font-family: 'Segoe UI', Roboto, sans-serif;
+    position: relative;
   }
   
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
     background: linear-gradient(135deg, #ff7e5f, #fd3a69);
     color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+  }
+  
+  .header.opaque {
+    background: rgba(253,58,105, 0.95);
   }
   
   .backButton {
@@ -27,7 +37,7 @@
   }
   
   .headerTitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
   }
   
@@ -47,14 +57,13 @@
   }
   
   .main {
-    flex: 1;
+    margin-top: 80px;
     padding: 2rem;
-    color: #444;
-    line-height: 1.6;
-    animation: fadeInContent 1s ease-in-out;
+    flex: 1;
+    animation: fadeIn 0.8s ease-in-out;
   }
   
-  @keyframes fadeInContent {
+  @keyframes fadeIn {
     from {
       opacity: 0;
     }
@@ -67,8 +76,35 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
+  }
+  
+  .imageWrapper {
+    position: relative;
+  }
+  
+  .changeImageButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(135deg, #ff7e5f, #fd3a69);
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .changeImageButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fileInput {
+    display: none;
   }
   
   .profileInfo {
@@ -81,7 +117,7 @@
     font-size: 2rem;
     font-weight: 800;
     color: #1a1045;
-    margin: 0;
+    cursor: pointer;
   }
   
   .trustBadge {
@@ -101,6 +137,12 @@
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .infoSection:hover {
+    transform: translateY(-3px);
   }
   
   .infoTitle {
@@ -114,6 +156,87 @@
     font-size: 1.1rem;
     color: #333;
     margin: 0;
+  }
+  
+  .settingsSection {
+    margin-bottom: 2rem;
+  }
+  
+  .toggleRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #fd3a69;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .locationSection {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .locationButton {
+    background: linear-gradient(135deg, #ff7e5f, #fd3a69);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .locationButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .locationButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
   
   .quickMenu {
@@ -159,55 +282,121 @@
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
   }
   
+  /* 모달 스타일 */
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    animation: fadeInModal 0.3s ease;
+  }
+  
+  @keyframes fadeInModal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .modalContent {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    animation: slideIn 0.3s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .modalInput,
+  .modalTextarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .saveButton {
+    background: #fd3a69;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .saveButton:hover {
+    background: #e32e5a;
+  }
+  
+  .languageOptions,
+  .countryOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  .languageButton,
+  .countryButton {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .languageButton:hover,
+  .countryButton:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selectedLanguage {
+    background-color: #fd3a69;
+    color: #fff;
+    border-color: #fd3a69;
+  }
+  
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .error {
+    padding: 2rem;
+    text-align: center;
+    color: red;
+  }
+  
+  /* 반응형 */
   @media (min-width: 768px) {
     .infoSections {
       grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .main {
-      padding: 3rem;
-    }
-    .profileSection {
-      gap: 3rem;
-    }
-    .nickname {
-      font-size: 2.5rem;
-    }
-    .infoTitle {
-      font-size: 1.5rem;
-    }
-    .infoText {
-      font-size: 1.2rem;
-    }
-    .quickMenuButton {
-      padding: 0.85rem 1.4rem;
-      font-size: 1.1rem;
-    }
-  }
-  
-  /* Date and Email styling within terms content */
-  .date {
-    font-family: monospace;
-    color: #fd3a69;
-    font-weight: 600;
-  }
-  
-  .email {
-    font-family: monospace;
-    color: #ff7e5f;
-    text-decoration: underline;
-  }
-  
-  /* Responsive adjustments for TermsPage text */
-  @media (max-width: 768px) {
-    .content p {
-      font-size: 1rem;
-    }
-    .select,
-    .selectLabel {
-      font-size: 0.9rem;
     }
   }
   
