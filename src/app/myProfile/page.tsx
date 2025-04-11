@@ -337,7 +337,13 @@ const MyProfile: React.FC = () => {
               }`}
               onClick={() => toggleLanguageSelection(lang)}
             >
-              {lang.toUpperCase()}
+              <Image
+                src={languageFlags[lang as keyof typeof languageFlags]}
+                alt={t(lang)}
+                width={24}
+                height={24}
+              />
+              <span className={styles.languageText}>{t(lang)}</span>
             </button>
           ))}
         </div>
@@ -347,7 +353,7 @@ const MyProfile: React.FC = () => {
       </div>
     </div>
   );
-
+  
   // 원산지 국가 선택 모달 – 앱과 동일한 로직: countryFlags 객체를 순회
   const renderOriginCountryModal = () => (
     <div className={styles.modalOverlay} onClick={() => setShowOriginCountryModal(false)}>
