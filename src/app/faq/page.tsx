@@ -58,10 +58,11 @@ export default function Faq() {
     }
 
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-      if (!token) {
-        throw new Error(t("auth_token_missing", "Authentication token missing."));
-      }
+        const loggedIn = typeof window !== "undefined" && localStorage.getItem("isLoggedIn") === "true";
+        if (!loggedIn) {
+          alert(t("not_logged_in", "User not logged in."));
+          return;
+        }
 
       const response = await axios.post(
         `${SERVER_URL}/report/inquiries`,
@@ -71,8 +72,7 @@ export default function Faq() {
         },
         {
           headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${token}`,
+            "Content-Type": "application/json"
           },
         }
       );

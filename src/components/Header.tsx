@@ -19,6 +19,7 @@ export default function Header() {
           { withCredentials: true }
         );
         setIsLoggedIn(res.data.loggedIn);
+        localStorage.setItem("isLoggedIn", res.data.loggedIn ? "true" : "false");
       } catch (err) {
         console.error("Failed to check login status", err);
         setIsLoggedIn(false);

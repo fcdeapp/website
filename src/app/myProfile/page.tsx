@@ -53,20 +53,17 @@ const MyProfile: React.FC = () => {
   const [userData, setUserData] = useState<UserResponse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [licensesVisible, setLicensesVisible] = useState(false);
+  const loggedIn = typeof window !== "undefined" && localStorage.getItem("isLoggedIn") === "true";
 
   // 유저 데이터 및 로그인 상태 fetch
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const token = localStorage.getItem("token");
-        if (!token) {
-          router.push("/login");
-          return;
-        }
-        const res = await axios.get(`${SERVER_URL}/users/me`, {
-          headers: { Authorization: `Bearer ${token}` },
-          withCredentials: true,
-        });
+        if (!loggedIn) {
+            router.push("/login");
+            return;
+          }
+        const res = await axios.get(`${SERVER_URL}/users/me`, { withCredentials: true });
         setUserData(res.data);
       } catch (error) {
         console.error("Error fetching user data:", error);
@@ -80,7 +77,7 @@ const MyProfile: React.FC = () => {
   const handleLogout = async () => {
     try {
       await axios.post(`${SERVER_URL}/authStatus/logout`, {}, { withCredentials: true });
-      localStorage.removeItem("token");
+      localStorage.removeItem("isLoggedIn");
       router.push("/login");
     } catch (err) {
       console.error("Logout failed", err);
@@ -89,11 +86,10 @@ const MyProfile: React.FC = () => {
 
   const handleImageChange = async (newImageUrl: string) => {
     try {
-      const token = localStorage.getItem("token");
+      if (!loggedIn) return;
       const res = await axios.put(
         `${SERVER_URL}/api/my-profile/select-character/${userData?.userId}`,
-        { profileImage: newImageUrl },
-        { headers: { Authorization: `Bearer ${token}` } }
+        { profileImage: newImageUrl }
       );
       if (res.status === 200) {
         setUserData((prev) =>
