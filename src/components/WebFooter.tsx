@@ -15,9 +15,9 @@ export default function WebFooter() {
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.footerSection}>
-          <h3 className={styles.footerTitle}>About Facade</h3>
+          <h3 className={styles.footerTitle}>About Abrody</h3>
           <p className={styles.footerText}>
-            Facade is dedicated to connecting international minds through cultural exchange and real events.
+            Abrody is dedicated to connecting international minds through cultural exchange and real events.
             Join our community and explore a world of possibilities.
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function WebFooter() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>© {new Date().getFullYear()} Facade. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Abrody. All rights reserved.</p>
       </div>
     </footer>
   );

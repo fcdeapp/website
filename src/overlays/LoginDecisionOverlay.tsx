@@ -95,7 +95,7 @@ const LoginDecisionOverlay: React.FC<LoginDecisionOverlayProps> = ({ visible, on
       <div style={gradientBackgroundStyle}>
         <div style={blurContainerStyle}>
           <div style={cardStyle}>
-            <h2 style={titleStyle}>Welcome to Facade</h2>
+            <h2 style={titleStyle}>Welcome to Abrody</h2>
             <p style={messageStyle}>
               To see announcements and recommendations, please log in.
             </p>

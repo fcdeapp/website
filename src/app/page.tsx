@@ -50,14 +50,14 @@ export default function Home() {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Facade | Connecting People and Cultures Abroad</title>
+        <title>Abrody | Connecting People and Cultures Abroad</title>
       </Head>
 
       <div className={styles.container}>
       {/* Hero Section */}
       <header className={styles.hero} data-aos="fade-in">
         <div className={styles.heroOverlay}>
-          <h1 className={styles.title} data-aos="fade-up">Facade</h1>
+          <h1 className={styles.title} data-aos="fade-up">Abrody</h1>
           <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
             Connecting People and Cultures Abroad
           </p>
@@ -100,9 +100,9 @@ export default function Home() {
           <section className={styles.section} data-aos="fade-up">
             <div className={styles.split} data-aos="fade-right">
               <div>
-                <h2 className={styles.sectionTitle}>Why Facade?</h2>
+                <h2 className={styles.sectionTitle}>Why Abrody?</h2>
                 <p className={styles.sectionText}>
-                  Facade is a mobile app and web service designed to help international students and workers overcome isolation and language barriers.
+                  Abrody is a mobile app and web service designed to help international students and workers overcome isolation and language barriers.
                   With AI-based event recommendations, a trust badge system, and local buddy groups, we make it easy and safe to join offline gatherings.
                 </p>
               </div>
@@ -237,7 +237,7 @@ export default function Home() {
             <div className={styles.betaCard}>
               <h2 className={styles.betaTitle}>Join Our Closed Beta</h2>
               <p className={styles.betaSubtitle}>
-                Help shape Facade by testing upcoming features before anyone else — your feedback matters!
+                Help shape Abrody by testing upcoming features before anyone else — your feedback matters!
               </p>
               <div className={styles.ctaButtons}>
                 <a

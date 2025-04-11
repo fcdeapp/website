@@ -93,7 +93,7 @@ export default function Faq() {
   return (
     <>
       <Head>
-        <title>{t("faq_header", "Frequently Asked Questions")} | Facade</title>
+        <title>{t("faq_header", "Frequently Asked Questions")} | Abrody</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className={styles.container}>

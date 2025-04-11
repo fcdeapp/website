@@ -488,11 +488,11 @@ const AdminDashboard: React.FC = () => {
         style={{ top: `${headerOffset}px` }}
       >
         <button className={styles.backButton} onClick={handleGoBack}>
-          <Image src="/assets/BackIcon.png" alt="Back" width={24} height={24} />
+          <Image src="/assets/back-light.png" alt="Back" width={24} height={24} />
         </button>
-        <h1 className={styles.headerTitle}>{t("my_profile")}</h1>
-        <button className={styles.logoutButton} onClick={handleLogout}>
-          {t("logout")}
+        <h1 className={styles.headerTitle}>{t("dashboard")}</h1>
+        <button className={styles.logoutButton}>
+          {t("more")}
         </button>
       </header>
 

@@ -219,7 +219,7 @@ export default function SignUpForm() {
   return (
     <main className={styles.container}>
       <form className={styles.form} onSubmit={(e) => { e.preventDefault(); handleSignUp(); }}>
-        <h1 className={styles.title}>Sign Up for Facade</h1>
+        <h1 className={styles.title}>Sign Up for Abrody</h1>
         <div className={styles.stepIndicator}>Step {currentStep} of 3</div>
         
         {currentStep === 1 && (

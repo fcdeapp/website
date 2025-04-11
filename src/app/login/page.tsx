@@ -63,7 +63,7 @@ export default function LoginPage() {
   return (
     <main className={styles.container}>
       <form className={styles.form} onSubmit={handleSubmit} noValidate>
-        <h1 className={styles.title}>Sign In to Facade</h1>
+        <h1 className={styles.title}>Sign In to Abrody</h1>
 
         <label className={styles.label}>Username</label>
         <input

@@ -16,7 +16,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About Us | Facade</title>
+        <title>About Us | Abrody</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
@@ -28,7 +28,7 @@ export default function About() {
               Connecting Cultures. Building Communities.
             </h1>
             <p data-aos="fade-up" data-aos-delay="200">
-              Facade is a platform designed to bring together international
+              Abrody is a platform designed to bring together international
               residents, students, and workers through meaningful offline
               events and group interactions.
             </p>
@@ -132,7 +132,7 @@ export default function About() {
           <div className={styles.split} data-aos="fade-left">
             <h2>Our Vision</h2>
             <p>
-              Facade aims to expand into international markets starting with
+              Abrody aims to expand into international markets starting with
               Canada, Australia, and the UK. With AI-based event sorting and
               buddy-group governance, we envision a trusted ecosystem for real-life
               connections around the world.
