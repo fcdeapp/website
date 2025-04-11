@@ -43,7 +43,7 @@ export default function Contact() {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact Us | Facade</title>
+        <title>Contact Us | Abrody</title>
       </Head>
       <div className={styles.container}>
         {/* Hero Section */}
