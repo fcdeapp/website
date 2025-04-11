@@ -1,10 +1,12 @@
-/* Footer */
+/* Footer 기본 스타일 */
 .footer {
-    background-color: #0A1045;
-    color: #F8F8FE;
+    background-color: #ffffff;
+    color: #444;
     padding: 2rem;
-    font-size: 0.7rem;
-    letter-spacing: -0.04em;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    border-top: 1px solid #ddd;
+    transition: background-color 0.3s ease;
   }
   
   .footerContainer {
@@ -14,28 +16,59 @@
     margin-bottom: 1.5rem;
   }
   
+  /* 각 Footer 섹션 기본 스타일 및 반응 */
   .footerSection {
     flex: 1;
     min-width: 250px;
     margin: 1rem 0;
+    padding-right: 1rem;
+    transition: padding-right 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* 마우스 오버 시 Footer 섹션 반응 효과 */
+  .footerSection:hover {
+    padding-right: 2rem;
+    background-color: #f7f7f7;
+  }
+  
+  /* 미디어 쿼리: 화면 너비에 따른 기본 padding 조정 */
+  @media (min-width: 768px) {
+    .footerSection {
+      padding-right: 2rem;
+    }
+    .footerSection:hover {
+      padding-right: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .footerSection {
+      padding-right: 4rem;
+    }
+    .footerSection:hover {
+      padding-right: 5rem;
+    }
   }
   
   .footerTitle {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     letter-spacing: -0.04em;
+    color: #333;
   }
   
   .footerText {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     line-height: 1.6;
     letter-spacing: -0.04em;
+    color: #555;
   }
   
   .footerLinks {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
   .footerLinks li {
@@ -43,7 +76,7 @@
   }
   
   .footerLinks a {
-    color: #F8F8FE;
+    color: #555;
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -70,20 +103,9 @@
   
   .footerBottom {
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(0,0,0,0.1);
     padding-top: 1rem;
-    font-size: 0.6rem;
-    color: #ccc;
-  }
-
-  @media (min-width: 768px) {
-    .footerSection {
-      padding-right: 2rem;
-    }
+    font-size: 0.85rem;
+    color: #777;
   }
   
-  @media (min-width: 1024px) {
-    .footerSection {
-      padding-right: 4rem;
-    }
-  }
