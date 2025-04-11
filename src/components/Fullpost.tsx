@@ -15,13 +15,6 @@ import LoginDecisionOverlay from '../overlays/LoginDecisionOverlay';
 import ReportOverlay from './ReportOverlay';
 import styles from '../styles/pages/Fullpost.module.css';
 
-console.log('MessageInputForm:', MessageInputForm);
-console.log('MessageBubble:', MessageBubble);
-console.log('ProfileWithFlag:', ProfileWithFlag);
-console.log('AnimatedMarker:', AnimatedMarker);
-console.log('LoginDecisionOverlay:', LoginDecisionOverlay);
-console.log('ReportOverlay:', ReportOverlay);
-
 // 모든 라우트 파라미터를 문자열로 받도록 타입 정의 (추후 내부에서 변환)
 type FullpostRouteParams = {
   id: string;
@@ -151,7 +144,7 @@ const Fullpost: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loginOverlayVisible, setLoginOverlayVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const getToken = () => (typeof window !== "undefined" ? localStorage.getItem("token") : null);
+  const loggedIn = typeof window !== "undefined" && localStorage.getItem("isLoggedIn") === "true";
 
   // 헤더 애니메이션 계산
   const headerOpacity = Math.min(1, scrollY / HEADER_APPEAR_RANGE);
@@ -255,15 +248,14 @@ const Fullpost: React.FC = () => {
     }
   };
 
-  // 사용자 정보 불러오기 (localStorage 사용 전 클라이언트 체크)
+  // 사용자 정보 불러오기 
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const fetchUserId = async () => {
-        const token = getToken();
-        if (token) {
+        if (loggedIn) {
           try {
             const { data, status } = await axios.get(`${SERVER_URL}/users/me`, {
-              headers: { Authorization: `Bearer ${token}` },
+              headers: { 'Content-Type': 'application/json' },
             });
             if (status >= 200 && status < 300) {
               setUserId(data.userId);
@@ -284,8 +276,7 @@ const Fullpost: React.FC = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const fetchApplicantsProfiles = async () => {
-        const token = getToken();
-        if (!token || !routeApplicants) return;
+        if (!loggedIn || !routeApplicants) return;
         try {
           const applicantIds = String(routeApplicants).split(',');
           const { data, status } = await axios.post(
@@ -293,7 +284,6 @@ const Fullpost: React.FC = () => {
             { userIds: applicantIds },
             {
               headers: {
-                Authorization: `Bearer ${token}`,
                 'Content-Type': 'application/json',
               },
             }
@@ -332,10 +322,9 @@ const Fullpost: React.FC = () => {
         window.alert(t("error") + ": " + "Missing post ID");
         return;
       }
-    const token = getToken();
     try {
       const { data, status } = await axios.get(`${baseUrl}/${id}`, {
-        headers: { Authorization: token ? `Bearer ${token}` : '' },
+        headers: { 'Content-Type': 'application/json' },
       });
       setCommentList(data.commentList);
       setLikeCount(data.likes);
@@ -358,11 +347,10 @@ const Fullpost: React.FC = () => {
   };
 
   const addVisitor = async () => {
-    const token = getToken();
-    if (!token) return;
+    if (!loggedIn) return;
     try {
       const { data, status } = await axios.post(`${baseUrl}/${id}/visit`, null, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { 'Content-Type': 'application/json' },
       });
       if (status >= 200 && status < 300) {
         setVisitorCount(data.visitors);
@@ -383,8 +371,7 @@ const Fullpost: React.FC = () => {
 
   // 지원 신청/취소 처리
   const handleApplication = async () => {
-    const token = getToken();
-    if (!token) return;
+    if (!loggedIn) return;
     if (isLoading) return;
     setIsLoading(true);
     setHasApplied(!hasApplied);
@@ -399,7 +386,6 @@ const Fullpost: React.FC = () => {
         url: `${baseUrl}/${id}/${hasApplied ? 'removeApplicant' : 'addApplicant'}`,
         method: hasApplied ? 'DELETE' : 'POST',
         headers: {
-          Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
         data: { userId },
@@ -446,10 +432,13 @@ const Fullpost: React.FC = () => {
 
   const recruitmentRate = getRecruitmentRate();
 
-  useEffect(() => {
-    const token = getToken();
-    setIsLoggedIn(!!token);
-  }, []);
+  const requireLogin = () => {
+    if (!loggedIn) {
+      setLoginOverlayVisible(true);
+      return false;
+    }
+    return true;
+  };
 
   const onRefresh = useCallback(() => {
     setRefreshing(true);
@@ -461,11 +450,10 @@ const Fullpost: React.FC = () => {
       setLoginOverlayVisible(true);
       return;
     }
-    const token = getToken();
-    if (!token) return;
+    if (!loggedIn) return;
     try {
       const { data, status } = await axios.post(`${baseUrl}/${id}/like`, null, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { 'Content-Type': 'application/json' },
       });
       if (status >= 200 && status < 300) {
         setLikeCount(data.likes);
@@ -481,11 +469,10 @@ const Fullpost: React.FC = () => {
 
   const handleAddComment = async (commentMessage: string) => {
     if (commentMessage.trim()) {
-      const token = getToken();
-      if (!token) return;
+        if (!loggedIn) return;
       try {
         const { data: userData, status: userStatus } = await axios.get(`${SERVER_URL}/users/me`, {
-          headers: { Authorization: `Bearer ${token}` },
+          headers: { 'Content-Type': 'application/json' },
         });
         if (userStatus < 200 || userStatus >= 300) {
           throw new Error('Error fetching user information.');
@@ -501,7 +488,6 @@ const Fullpost: React.FC = () => {
         const { status } = await axios.post(`${baseUrl}/${id}/comment`, newComment, {
           headers: {
             'Content-Type': 'application/json',
-            Authorization: `Bearer ${token}`,
           },
         });
         if (status >= 200 && status < 300) {
@@ -522,10 +508,9 @@ const Fullpost: React.FC = () => {
 
   const handleDeletePost = async () => {
     try {
-      const token = getToken();
-      if (!token) return;
+        if (!loggedIn) return;
       const { status } = await axios.delete(`${baseUrl}/${id}/delete`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { 'Content-Type': 'application/json' },
       });
       if (status >= 200 && status < 300) {
         window.alert(t('delete_success') + ': ' + t('delete_success_message'));
@@ -560,11 +545,7 @@ const Fullpost: React.FC = () => {
       return;
     }
     try {
-      const token = getToken();
-      if (!token) {
-        window.alert(t('error') + ': ' + t('login_required'));
-        return;
-      }
+        if (!loggedIn) return;
       const payload = {
         reason: reportReason,
         ...(id && { postId: id }),
@@ -573,7 +554,6 @@ const Fullpost: React.FC = () => {
       const { status } = await axios.post(`${SERVER_URL}/report/post`, payload, {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
         },
       });
       if (status >= 200 && status < 300) {
@@ -647,10 +627,9 @@ const Fullpost: React.FC = () => {
   };
 
   const handleCompleteRecruitment = async () => {
-    const token = getToken();
     try {
       const { data, status } = await axios.post(`${baseUrl}/${id}/completeRecruitment`, null, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { 'Content-Type': 'application/json' },
       });
       if (status >= 200 && status < 300) {
         window.alert(t('recruitment_complete') + ': ' + t('recruitment_complete_message'));

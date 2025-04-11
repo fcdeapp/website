@@ -99,8 +99,9 @@ const Post: React.FC = () => {
 
   // 로그인 상태 체크
   useEffect(() => {
-    const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-    setIsLoggedIn(!!token);
+    if (typeof window !== "undefined") {
+      setIsLoggedIn(localStorage.getItem("isLoggedIn") === "true");
+    }
   }, []);
 
   // 화면 크기 업데이트
@@ -120,14 +121,11 @@ const Post: React.FC = () => {
 
   // 프로필 데이터 fetch
   useEffect(() => {
-    if (isLoggedIn) {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
+    if (typeof window !== "undefined" && localStorage.getItem("isLoggedIn") === "true") {
       const id = localStorage.getItem("userId");
       setUserId(id);
       axios
-        .get(`${SERVER_URL}/users/me`, {
-          headers: { Authorization: `Bearer ${token}` },
-        })
+        .get(`${SERVER_URL}/users/me`)
         .then((response) => {
           const { profileImage, profileThumbnail, originCountry } = response.data;
           setProfileImage(profileImage || null);
@@ -176,10 +174,8 @@ const Post: React.FC = () => {
   const fetchFilteredPosts = async (pageNumber: number, isRefreshing = false) => {
     setIsLoading(true);
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const topicsQuery = selectedTopics.join(",");
       const response = await axios.get(`${SERVER_URL}/posts/filter`, {
-        headers: { Authorization: token ? `Bearer ${token}` : "" },
         params: {
           sort: sortOption,
           nearbyOption,

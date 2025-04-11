@@ -157,8 +157,7 @@ const SearchPage = () => {
   // 로그인 상태 체크
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-      setIsLoggedIn(!!token);
+      setIsLoggedIn(localStorage.getItem("isLoggedIn") === "true");
     }
   }, []);
 
