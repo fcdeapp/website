@@ -1,4 +1,4 @@
-/* Container: full width, no horizontal padding */
+/* 기본 컨테이너: 좌우 패딩 없이 전체 너비로 사용 */
 .container {
   min-height: 100vh;
   display: flex;
@@ -9,7 +9,7 @@
   font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Header: 고급스러운 그라데이션 배경과 넉넉한 여백 */
+/* 헤더: 대담하고 고급스런 그라데이션 및 넉넉한 여백 */
 .header {
   width: 100%;
   padding: 3rem 0;
@@ -37,7 +37,7 @@
   margin: 0;
 }
 
-/* Controls: Picker 영역의 레이아웃 */
+/* 컨트롤 영역: Picker를 세로 배치(모바일 우선) */
 .controls {
   margin-top: 1.5rem;
   display: flex;
@@ -82,12 +82,8 @@
 }
 
 @keyframes fadeInContent {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Content Section */
@@ -105,7 +101,20 @@
   margin: 0;
 }
 
-/* Licenses Button: 고급스럽고 과감한 버튼 디자인 */
+/* 날짜와 이메일 스타일 */
+.date {
+  font-family: monospace;
+  color: #fd3a69;
+  font-weight: 600;
+}
+
+.email {
+  font-family: monospace;
+  color: #ff7e5f;
+  text-decoration: underline;
+}
+
+/* Licenses Button */
 .licensesButton {
   display: inline-block;
   margin-top: 2rem;
@@ -167,5 +176,8 @@
   .licensesButton {
     font-size: 0.9rem;
     padding: 0.75rem 1.4rem;
+  }
+  .controls {
+    flex-direction: column;
   }
 }
