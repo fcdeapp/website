@@ -396,7 +396,7 @@ const MyProfile: React.FC = () => {
     <div className={styles.container}>
       <header className={`${styles.header} ${headerOpaque ? styles.opaque : ""}`}>
         <button className={styles.backButton} onClick={() => router.back()}>
-          <Image src="/assets/back-arrow.png" alt="Back" width={24} height={24} />
+          <Image src="/assets/BackIcon.png" alt="Back" width={24} height={24} />
         </button>
         <h1 className={styles.headerTitle}>{t("my_profile")}</h1>
         <button className={styles.logoutButton} onClick={handleLogout}>
