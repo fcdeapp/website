@@ -1,0 +1,98 @@
+/* AdminPlan.module.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+  
+  .calendarWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .calendar {
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .formContainer {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .scheduleForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputField {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .textareaField {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .submitButton {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .scheduleListContainer {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scheduleList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .scheduleItem {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .scheduleItem p {
+    margin: 0.5rem 0 0;
+  }
+  
