@@ -13,6 +13,7 @@ import { getDistrictNameFromCoordinates } from "../utils/locationUtils";
 import { useRouter, usePathname } from "next/navigation";
 import Header from "../components/Header";
 import "./globals.css";
+import '../styles/react-calendar-overrides.css';
 
 // Next.js 폰트 설정 (예시)
 import localFont from "next/font/local";
