@@ -226,10 +226,7 @@ const AdminDashboard: React.FC = () => {
     const fetchDashboardData = async () => {
       setLoadingDashboard(true);
       try {
-        const token = localStorage.getItem("token");
-        const res = await axios.get(`${SERVER_URL}/api/admin/stats`, {
-          headers: { Authorization: `Bearer ${token}` },
-        });
+        const res = await axios.get(`${SERVER_URL}/api/admin/stats`);
         const allStats: DailyStats[] = res.data.allStats || [];
         setDailyStats(allStats);
         if (allStats.length > 0) {
@@ -258,29 +255,22 @@ const AdminDashboard: React.FC = () => {
     const fetchReportsData = async () => {
       setLoadingReports(true);
       try {
-        const token = localStorage.getItem("token");
         if (["error", "report", "inquiry"].includes(selectedCategory)) {
-          const res = await axios.get(`${SERVER_URL}/api/admin/reports`, {
-            headers: { Authorization: `Bearer ${token}` },
-          });
+          const res = await axios.get(`${SERVER_URL}/api/admin/reports`);
           setReportsData(res.data.regions || []);
         } else if (selectedCategory === "notifications") {
           let url = `${SERVER_URL}/api/admin/nl/adminNotifications`;
           if (selectedRegion !== "All Regions") {
             url += `?region=${selectedRegion}`;
           }
-          const res = await axios.get(url, {
-            headers: { Authorization: `Bearer ${token}` },
-          });
+          const res = await axios.get(url);
           setNotifications(res.data || []);
         } else if (selectedCategory === "disabledUsers") {
           let url = `${SERVER_URL}/api/admin/users/disabled`;
           if (selectedRegion !== "All Regions") {
             url += `?region=${selectedRegion}`;
           }
-          const res = await axios.get(url, {
-            headers: { Authorization: `Bearer ${token}` },
-          });
+          const res = await axios.get(url);
           setDisabledUsersData(res.data.regions || []);
         }
       } catch (error) {
