@@ -41,7 +41,7 @@ export default function LoginPage() {
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          credentials: 'include', // <— important to store HttpOnly cookie
+          credentials: 'include', 
           body: JSON.stringify({ username, password })
         }
       );
