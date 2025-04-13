@@ -45,7 +45,7 @@ export default function AdminPlan() {
   const fetchSchedules = async () => {
     try {
       const res = await axios.get<Schedule[]>(
-        `${SERVER_URL}/adminPlan/schedules?region=ap-northeast-2`,
+        `${SERVER_URL}/api/adminPlan/schedules?region=ap-northeast-2`,
         { withCredentials: true }
       );
       setSchedules(res.data);
@@ -67,7 +67,7 @@ export default function AdminPlan() {
         formData.append("file", file);
       }
       await axios.post(
-        `${SERVER_URL}/adminPlan/schedules`,
+        `${SERVER_URL}/api/adminPlan/schedules`,
         formData,
         {
           withCredentials: true,
