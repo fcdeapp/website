@@ -2,6 +2,7 @@
 
 import { useState, useEffect, ChangeEvent, FormEvent } from "react";
 import Calendar from "react-calendar";
+// react-calendar 기본 스타일 대신 custom 스타일이 우선 적용되도록 CSS 임포트 순서를 조정하거나 기본 임포트를 제거하세요.
 import "react-calendar/dist/Calendar.css";
 import axios from "axios";
 import { useConfig } from "../../context/ConfigContext";
@@ -15,6 +16,7 @@ interface Schedule {
   location: string;
   title: string;
   description?: string;
+  fileUrl?: string; // 파일 URL (있을 경우)
 }
 
 interface NewSchedule {
@@ -34,6 +36,7 @@ export default function AdminPlan() {
     title: "",
     description: "",
   });
+  const [file, setFile] = useState<File | null>(null);
 
   useEffect(() => {
     fetchSchedules();
@@ -54,12 +57,25 @@ export default function AdminPlan() {
   const handleScheduleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
+      const formData = new FormData();
+      formData.append("eventDate", newSchedule.eventDate);
+      formData.append("location", newSchedule.location);
+      formData.append("title", newSchedule.title);
+      formData.append("description", newSchedule.description);
+      formData.append("region", "ap-northeast-2");
+      if (file) {
+        formData.append("file", file);
+      }
       await axios.post(
         `${SERVER_URL}/adminPlan/schedules`,
-        { ...newSchedule, region: "ap-northeast-2" },
-        { withCredentials: true }
+        formData,
+        {
+          withCredentials: true,
+          headers: { "Content-Type": "multipart/form-data" },
+        }
       );
       setNewSchedule({ eventDate: "", location: "", title: "", description: "" });
+      setFile(null);
       fetchSchedules();
     } catch (error) {
       console.error("Error creating schedule", error);
@@ -132,6 +148,19 @@ export default function AdminPlan() {
                 className={styles.textareaField}
               />
             </div>
+            <div className={styles.formGroup}>
+              <label className={styles.label}>File (jpeg, png, pdf):</label>
+              <input
+                type="file"
+                accept=".jpeg,.jpg,.png,.pdf"
+                onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                  if (e.target.files && e.target.files.length > 0) {
+                    setFile(e.target.files[0]);
+                  }
+                }}
+                className={styles.inputField}
+              />
+            </div>
             <button type="submit" className={styles.submitButton}>
               Add Schedule
             </button>
@@ -146,6 +175,13 @@ export default function AdminPlan() {
                 {new Date(schedule.eventDate).toLocaleDateString()} at{" "}
                 {schedule.location}
                 {schedule.description && <p>{schedule.description}</p>}
+                {schedule.fileUrl && (
+                  <p>
+                    <a href={schedule.fileUrl} target="_blank" rel="noopener noreferrer">
+                      View File
+                    </a>
+                  </p>
+                )}
               </li>
             ))}
           </ul>
