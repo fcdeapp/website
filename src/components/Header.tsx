@@ -61,6 +61,7 @@ export default function Header() {
         { withCredentials: true }
       );
       setIsLoggedIn(false);
+      localStorage.setItem("isLoggedIn", "false"); 
       router.push("/");
     } catch (err) {
       console.error("Logout failed", err);
