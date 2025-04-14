@@ -64,20 +64,24 @@
     border-radius: 8px;
   }
   
-  /* 뷰 토글 버튼 */
-  .viewToggle {
+  /* 수직 뷰 토글 버튼 그룹 */
+  .viewToggleVertical {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
+    margin-top: 1rem;
+    width: 150px;
   }
   .toggleButton {
     background-color: transparent;
     border: 1px solid #ccc;
-    padding: 0.3rem 0.7rem;
+    padding: 0.5rem;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.8rem;
     color: #555;
     transition: background 0.3s, color 0.3s;
+    text-align: center;
   }
   .toggleButton:hover {
     background-color: #f0f0f0;
@@ -201,6 +205,29 @@
   }
   .scheduleFile a:hover {
     text-decoration: underline;
+  }
+  
+  /* Analysis Mode 스타일 */
+  .analysisContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .analysisTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  .analysisTable th,
+  .analysisTable td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .chartContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
   
   /* 반응형 디자인 */
