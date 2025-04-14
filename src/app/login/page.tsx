@@ -33,7 +33,7 @@ export default function LoginPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // if (!valid) return;
+    if (!valid) return;
 
     try {
       const res = await fetch(

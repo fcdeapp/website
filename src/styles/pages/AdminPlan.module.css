@@ -1,7 +1,5 @@
-/* AdminPlan.module.css */
-
 /* 기본 레이아웃 */
-  .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
@@ -12,7 +10,7 @@
     overflow-x: hidden;
   }
   
-  /* 헤더 */
+  /* 헤더 스타일 */
   .header {
     display: flex;
     justify-content: center;
@@ -24,7 +22,6 @@
     top: 0;
     z-index: 1000;
   }
-  
   .headerTitle {
     font-size: 2rem;
     font-weight: 700;
@@ -37,142 +34,44 @@
     padding: 2rem;
     animation: fadeIn 0.8s ease-in-out;
   }
-  
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
   }
   
-  /* 캘린더 래퍼 */
-  .calendarWrapper {
+  /* 상단 컨트롤 영역 (캘린더, 뷰 토글, 추가 버튼) */
+  .topControls {
     display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  
-  /* Custom Calendar Styles */
-  .react-calendar {
-    width: 100%;
-    max-width: 100%;
-    background: #fff;
-    border: none;
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    color: #333;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .react-calendar__navigation {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 0.75rem 1rem;
-    background: linear-gradient(135deg, #ff7e5f, #fd3a69);
-    color: #fff;
-  }
-  
-  .react-calendar__navigation button {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    color: #fff;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-  
-  .react-calendar__navigation button:hover {
-    transform: scale(1.1);
-  }
-  
-  .react-calendar__month-view__weekdays {
-    background: linear-gradient(135deg, #fd3a69, #ff7e5f);
-    color: #fff;
-    font-weight: 700;
-    text-align: center;
-    padding: 0.5rem 0;
-  }
-  
-  .react-calendar__month-view__weekdays__weekday {
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-  }
-  
-  .react-calendar__month-view__days__day {
-    text-align: center;
-    padding: 0.8rem 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .react-calendar__month-view__days__day:hover {
-    background-color: rgba(253, 58, 105, 0.1);
-  }
-  
-  .react-calendar__tile--now {
-    background: rgba(253, 58, 105, 0.3);
-    border-radius: 8px;
-  }
-  
-  .react-calendar__tile--active {
-    background: linear-gradient(135deg, #ff7e5f, #fd3a69);
-    color: #fff;
-    border-radius: 8px;
-    transition: background 0.3s;
-  }
-  
-  /* 폼 및 버튼 스타일 */
-  .formContainer {
-    background-color: #f8f8fe;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    gap: 1.5rem;
     margin-bottom: 2rem;
   }
-  
-  .sectionTitle {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #0a1045;
-    text-align: center;
-    margin-bottom: 1.5rem;
+  .calendar {
+    width: 100%;
+    max-width: 350px;
   }
-  
-  .scheduleForm {
+  .viewToggle {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
-  
-  .formGroup {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .label {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
-  
-  .inputField {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+  .toggleButton {
+    background: none;
+    border: 2px solid #fd3a69;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
     font-size: 1rem;
   }
-  
-  .textareaField {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    min-height: 100px;
-    resize: vertical;
+  .toggleButton:hover {
+    transform: translateY(-2px);
   }
-  
-  .submitButton {
+  .active {
+    background: linear-gradient(135deg, #ff7e5f, #fd3a69);
+    color: #fff;
+  }
+  .addScheduleButton {
     background: linear-gradient(135deg, #ff7e5f, #fd3a69);
     color: #fff;
     border: none;
@@ -182,34 +81,70 @@
     font-weight: 700;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
   }
-  
-  .submitButton:hover {
+  .addScheduleButton:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
   }
   
+  /* 일정 리스트 영역 */
   .scheduleListContainer {
-    background-color: #ffffff;
+    background-color: #f8f8fe;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+  .sectionTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0a1045;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .scheduleGroup {
     margin-bottom: 2rem;
   }
-  
+  .groupTitle {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #fd3a69;
+  }
   .scheduleList {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
   .scheduleItem {
-    padding: 1.5rem;
-    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  .scheduleItem:hover {
+    transform: translateY(-2px);
+  }
+  .scheduleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .scheduleLocation {
+    font-size: 0.9rem;
+    color: #888;
   }
   
-  .scheduleItem p {
-    margin: 0.5rem 0 0;
+  /* 반응형 디자인 */
+  @media (min-width: 768px) {
+    .topControls {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .calendar {
+      max-width: 300px;
+    }
   }
   
