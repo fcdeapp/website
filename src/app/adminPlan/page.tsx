@@ -80,35 +80,39 @@ export default function AdminPlan() {
       </header>
       <main className={styles.main}>
         <div className={styles.topControls}>
-          <Calendar
-            onChange={(value) => {
-              if (value instanceof Date) {
-                setDate(value);
-              }
-            }}
-            value={date}
-            className={styles.calendar}
-          />
-          <div className={styles.viewToggle}>
+          <div className={styles.controlRow}>
+            <Calendar
+              onChange={(value) => {
+                if (value instanceof Date) {
+                  setDate(value);
+                }
+              }}
+              value={date}
+              className={styles.calendar}
+            />
+            <div className={styles.viewToggle}>
+              <button
+                onClick={() => setViewMode("daily")}
+                className={`${styles.toggleButton} ${viewMode === "daily" ? styles.active : ""}`}
+              >
+                Daily View
+              </button>
+              <button
+                onClick={() => setViewMode("weekly")}
+                className={`${styles.toggleButton} ${viewMode === "weekly" ? styles.active : ""}`}
+              >
+                Weekly View
+              </button>
+            </div>
+          </div>
+          <div className={styles.addButtonRow}>
             <button
-              onClick={() => setViewMode("daily")}
-              className={`${styles.toggleButton} ${viewMode === "daily" ? styles.active : ""}`}
+              onClick={() => setModalOpen(true)}
+              className={styles.addScheduleButton}
             >
-              Daily View
-            </button>
-            <button
-              onClick={() => setViewMode("weekly")}
-              className={`${styles.toggleButton} ${viewMode === "weekly" ? styles.active : ""}`}
-            >
-              Weekly View
+              Add New Schedule
             </button>
           </div>
-          <button
-            onClick={() => setModalOpen(true)}
-            className={styles.addScheduleButton}
-          >
-            Add New Schedule
-          </button>
         </div>
         <div className={styles.scheduleListContainer}>
           <h2 className={styles.sectionTitle}>
