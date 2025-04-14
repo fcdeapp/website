@@ -10,6 +10,8 @@ interface NewSchedule {
   location: string;
   title: string;
   description: string;
+  tag: string;
+  amount: string; // 금액을 KRW 기준으로 입력 (필수 아님)
 }
 
 interface ScheduleModalProps {
@@ -24,6 +26,8 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
     location: "",
     title: "",
     description: "",
+    tag: "",
+    amount: ""
   });
   const [file, setFile] = useState<File | null>(null);
   const [error, setError] = useState("");
@@ -36,6 +40,8 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
       formData.append("location", newSchedule.location);
       formData.append("title", newSchedule.title);
       formData.append("description", newSchedule.description);
+      formData.append("tag", newSchedule.tag);
+      formData.append("amount", newSchedule.amount);
       formData.append("region", "ap-northeast-2");
       if (file) {
         formData.append("file", file);
@@ -49,7 +55,14 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
         }
       );
       // 폼 초기화 및 상위 컴포넌트에 알림
-      setNewSchedule({ eventDate: "", location: "", title: "", description: "" });
+      setNewSchedule({
+        eventDate: "",
+        location: "",
+        title: "",
+        description: "",
+        tag: "",
+        amount: ""
+      });
       setFile(null);
       onScheduleAdded();
       onClose();
@@ -108,10 +121,32 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
             />
           </div>
           <div className={styles.formGroup}>
+            <label>Tag:</label>
+            <input
+              type="text"
+              value={newSchedule.tag}
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setNewSchedule({ ...newSchedule, tag: e.target.value })
+              }
+              placeholder="예: 행사, 모임 등"
+            />
+          </div>
+          <div className={styles.formGroup}>
+            <label>Amount (KRW):</label>
+            <input
+              type="number"
+              value={newSchedule.amount}
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setNewSchedule({ ...newSchedule, amount: e.target.value })
+              }
+              placeholder="예: 10000"
+            />
+          </div>
+          <div className={styles.formGroup}>
             <label>File (jpeg, png, pdf):</label>
             <input
               type="file"
-              accept=".jpeg,.jpg,.png,.pdf"
+              accept=".jpeg,.jpg,.png,.pdf,.zip"
               onChange={(e: ChangeEvent<HTMLInputElement>) => {
                 if (e.target.files && e.target.files.length > 0) {
                   setFile(e.target.files[0]);
