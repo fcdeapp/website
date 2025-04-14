@@ -8,7 +8,7 @@ import WebFooter from "../../components/WebFooter";
 import ScheduleModal from "../../components/ScheduleModal";
 import styles from "../../styles/pages/AdminPlan.module.css";
 
-// 일정 인터페이스
+// 일정 인터페이스 (태그와 금액을 선택적으로 포함)
 interface Schedule {
   _id: string;
   eventDate: string; // 서버에서 받은 날짜 문자열
@@ -16,6 +16,8 @@ interface Schedule {
   title: string;
   description?: string;
   fileUrl?: string;
+  tag?: string;     // 추가: 태그
+  amount?: string;  // 추가: 금액
 }
 
 export default function AdminPlan() {
@@ -137,6 +139,12 @@ export default function AdminPlan() {
                     </div>
                     {schedule.description && (
                       <p className={styles.scheduleDescription}>{schedule.description}</p>
+                    )}
+                    {schedule.tag && (
+                      <p className={styles.scheduleTag}>Tag: {schedule.tag}</p>
+                    )}
+                    {schedule.amount && (
+                      <p className={styles.scheduleAmount}>Amount: {schedule.amount} KRW</p>
                     )}
                     {schedule.fileUrl && (
                       <p className={styles.scheduleFile}>
