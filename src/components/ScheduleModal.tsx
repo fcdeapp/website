@@ -143,10 +143,10 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
             />
           </div>
           <div className={styles.formGroup}>
-            <label>File (jpeg, png, pdf):</label>
+            <label>File (jpeg, jpg, png, pdf, zip, eml):</label>
             <input
               type="file"
-              accept=".jpeg,.jpg,.png,.pdf,.zip"
+              accept=".jpeg,.jpg,.png,.pdf,.zip,.eml"
               onChange={(e: ChangeEvent<HTMLInputElement>) => {
                 if (e.target.files && e.target.files.length > 0) {
                   setFile(e.target.files[0]);
