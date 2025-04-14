@@ -115,7 +115,7 @@ export default function AdminPlan() {
             {viewMode === "daily" ? "Schedules by Day" : "Schedules by Week"}
           </h2>
           {Object.keys(groupedSchedules).length === 0 && (
-            <p>No schedules available.</p>
+            <p className={styles.noSchedule}>No schedules available.</p>
           )}
           {Object.keys(groupedSchedules).map((groupKey) => (
             <div key={groupKey} className={styles.scheduleGroup}>
@@ -128,12 +128,14 @@ export default function AdminPlan() {
                 {groupedSchedules[groupKey].map((schedule) => (
                   <li key={schedule._id} className={styles.scheduleItem}>
                     <div className={styles.scheduleHeader}>
-                      <strong>{schedule.title}</strong>
+                      <span className={styles.scheduleTitle}>{schedule.title}</span>
                       <span className={styles.scheduleLocation}>{schedule.location}</span>
                     </div>
-                    {schedule.description && <p>{schedule.description}</p>}
+                    {schedule.description && (
+                      <p className={styles.scheduleDescription}>{schedule.description}</p>
+                    )}
                     {schedule.fileUrl && (
-                      <p>
+                      <p className={styles.scheduleFile}>
                         <a href={schedule.fileUrl} target="_blank" rel="noopener noreferrer">
                           View File
                         </a>
