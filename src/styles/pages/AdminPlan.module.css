@@ -248,11 +248,12 @@
 
   /* 인라인 파일 보기 영역 */
   .inlineFileList {
-    background-color: #f7f7f7;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   
   .inlineFileList ul {
@@ -262,12 +263,13 @@
   }
   
   .inlineFileList li {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
   }
   
   .inlineFileList a {
-    color: #0070f3;
+    color: #555;
     text-decoration: none;
+    font-weight: 500;
   }
   
   .inlineFileList a:hover {
