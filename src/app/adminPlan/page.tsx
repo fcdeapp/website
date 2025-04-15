@@ -47,8 +47,8 @@ export default function AdminPlan() {
   // 수정 시 선택한 스케줄 데이터를 저장 (null이면 새 일정 생성)
   const [editingSchedule, setEditingSchedule] = useState<Schedule | null>(null);
   const [viewMode, setViewMode] = useState<"daily" | "weekly" | "monthly" | "analysis">("daily");
-  // 파일 보기 모달 상태 (첨부파일 및 보조파일 목록)
-  const [fileModal, setFileModal] = useState<{ files: { label: string; fileUrl: string }[] } | null>(null);
+  // 각 일정 항목의 파일 보기 상태 (현재 열려있는 파일 뷰의 스케줄 id)
+  const [openFileScheduleId, setOpenFileScheduleId] = useState<string | null>(null);
 
   useEffect(() => {
     fetchSchedules();
@@ -193,23 +193,13 @@ export default function AdminPlan() {
     setModalOpen(true);
   };
 
-  // 파일 보기 버튼 클릭 핸들러
-  const handleViewFiles = (schedule: Schedule) => {
-    const files: { label: string; fileUrl: string }[] = [];
-    console.log("Viewing files for schedule:", schedule);
-    if (schedule.fileUrl && schedule.fileUrl.trim() !== "") {
-      files.push({ label: "Main File", fileUrl: schedule.fileUrl });
+  // 파일 보기 버튼 클릭 핸들러 (인라인 토글)
+  const toggleFileView = (scheduleId: string) => {
+    if (openFileScheduleId === scheduleId) {
+      setOpenFileScheduleId(null);
+    } else {
+      setOpenFileScheduleId(scheduleId);
     }
-    if (schedule.supportFiles && schedule.supportFiles.length > 0) {
-      schedule.supportFiles.forEach((file, index) => {
-        if (file.fileUrl && file.fileUrl.trim() !== "") {
-          files.push({ label: `Support File ${index + 1}`, fileUrl: file.fileUrl });
-        }
-      });
-    }
-    console.log("Files array:", files);
-    // 파일이 하나라도 있거나 없더라도 모달을 열어 확인할 수 있게 함
-    setFileModal({ files });
   };
 
   // 계산: 전체 첨부 파일 개수 (기본 파일 + 보조파일)
@@ -311,10 +301,10 @@ export default function AdminPlan() {
                         {schedule.tag && (
                           <p className={styles.scheduleTag}>Tag: {schedule.tag}</p>
                         )}
-                        {schedule.amount && schedule.amount !== "0" && (
+                        {schedule.amount && parseFloat(schedule.amount) > 0 && (
                           <p className={styles.scheduleAmount}>Amount: {schedule.amount} KRW</p>
                         )}
-                        {/* 파일 관련: 기본 파일 및 보조파일이 있을 경우 총 파일 수 표시 및 링크 클릭 시 파일 보기 */}
+                        {/* 파일 관련: 기본 파일 및 보조파일이 있을 경우 총 파일 수 표시 및 링크 클릭 시 인라인 파일 목록 표시 */}
                         {(schedule.fileUrl ||
                           (schedule.supportFiles && schedule.supportFiles.length > 0)) && (
                           <p className={styles.scheduleFile}>
@@ -322,14 +312,42 @@ export default function AdminPlan() {
                               href="#"
                               onClick={(e) => {
                                 e.preventDefault();
-                                handleViewFiles(schedule);
+                                toggleFileView(schedule._id);
                               }}
                             >
                               View File ({getTotalFileCount(schedule)} {getTotalFileCount(schedule) > 1 ? "files" : "file"})
                             </a>
                           </p>
                         )}
-                        {/* 수정 버튼 추가 */}
+                        {/* 인라인 파일 보기 영역 */}
+                        {openFileScheduleId === schedule._id && (
+                          <div className={styles.inlineFileList}>
+                            <ul>
+                              {schedule.fileUrl && schedule.fileUrl.trim() !== "" && (
+                                <li>
+                                  <a href={schedule.fileUrl} target="_blank" rel="noopener noreferrer">
+                                    Main File
+                                  </a>
+                                </li>
+                              )}
+                              {schedule.supportFiles && schedule.supportFiles.length > 0 && (
+                                schedule.supportFiles.map((file, index) => (
+                                  file.fileUrl && file.fileUrl.trim() !== "" && (
+                                    <li key={index}>
+                                      <a href={file.fileUrl} target="_blank" rel="noopener noreferrer">
+                                        Support File {index + 1}
+                                      </a>
+                                    </li>
+                                  )
+                                ))
+                              )}
+                              {getTotalFileCount(schedule) === 0 && (
+                                <li>No attached files.</li>
+                              )}
+                            </ul>
+                          </div>
+                        )}
+                        {/* 수정 버튼 */}
                         <button 
                           onClick={() => handleEdit(schedule)}
                           className={styles.editButton}
@@ -417,28 +435,6 @@ export default function AdminPlan() {
               : undefined
           }
         />
-      )}
-      {/* 파일 보기 모달 */}
-      {fileModal && (
-        <div className={styles.modalOverlay}>
-          <div className={styles.modal}>
-            <h2>첨부 파일 확인</h2>
-            <ul>
-              {fileModal.files.length > 0 ? (
-                fileModal.files.map((file, idx) => (
-                  <li key={idx}>
-                    <a href={file.fileUrl} target="_blank" rel="noopener noreferrer">
-                      {file.label}
-                    </a>
-                  </li>
-                ))
-              ) : (
-                <li>첨부된 파일이 없습니다.</li>
-              )}
-            </ul>
-            <button onClick={() => setFileModal(null)}>Close</button>
-          </div>
-        </div>
       )}
       <WebFooter />
     </div>
