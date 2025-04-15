@@ -196,25 +196,28 @@ export default function AdminPlan() {
   // 파일 보기 버튼 클릭 핸들러
   const handleViewFiles = (schedule: Schedule) => {
     const files: { label: string; fileUrl: string }[] = [];
-    if (schedule.fileUrl) {
+    console.log("Viewing files for schedule:", schedule);
+    if (schedule.fileUrl && schedule.fileUrl.trim() !== "") {
       files.push({ label: "Main File", fileUrl: schedule.fileUrl });
     }
     if (schedule.supportFiles && schedule.supportFiles.length > 0) {
       schedule.supportFiles.forEach((file, index) => {
-        files.push({ label: `Support File ${index + 1}`, fileUrl: file.fileUrl });
+        if (file.fileUrl && file.fileUrl.trim() !== "") {
+          files.push({ label: `Support File ${index + 1}`, fileUrl: file.fileUrl });
+        }
       });
     }
-    if (files.length > 0) {
-      setFileModal({ files });
-    }
+    console.log("Files array:", files);
+    // 파일이 하나라도 있거나 없더라도 모달을 열어 확인할 수 있게 함
+    setFileModal({ files });
   };
 
   // 계산: 전체 첨부 파일 개수 (기본 파일 + 보조파일)
   const getTotalFileCount = (schedule: Schedule) => {
     let count = 0;
-    if (schedule.fileUrl) count++;
+    if (schedule.fileUrl && schedule.fileUrl.trim() !== "") count++;
     if (schedule.supportFiles && schedule.supportFiles.length > 0) {
-      count += schedule.supportFiles.length;
+      count += schedule.supportFiles.filter(sf => sf.fileUrl && sf.fileUrl.trim() !== "").length;
     }
     return count;
   };
@@ -421,13 +424,17 @@ export default function AdminPlan() {
           <div className={styles.modal}>
             <h2>첨부 파일 확인</h2>
             <ul>
-              {fileModal.files.map((file, idx) => (
-                <li key={idx}>
-                  <a href={file.fileUrl} target="_blank" rel="noopener noreferrer">
-                    {file.label}
-                  </a>
-                </li>
-              ))}
+              {fileModal.files.length > 0 ? (
+                fileModal.files.map((file, idx) => (
+                  <li key={idx}>
+                    <a href={file.fileUrl} target="_blank" rel="noopener noreferrer">
+                      {file.label}
+                    </a>
+                  </li>
+                ))
+              ) : (
+                <li>첨부된 파일이 없습니다.</li>
+              )}
             </ul>
             <button onClick={() => setFileModal(null)}>Close</button>
           </div>
