@@ -20,7 +20,11 @@ interface ScheduleModalProps {
   initialData?: NewSchedule & { _id?: string };
 }
 
-const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded, initialData }) => {
+const ScheduleModal: React.FC<ScheduleModalProps> = ({
+  onClose,
+  onScheduleAdded,
+  initialData,
+}) => {
   const { SERVER_URL } = useConfig();
   const [scheduleData, setScheduleData] = useState<NewSchedule>({
     eventDate: initialData?.eventDate || "",
@@ -28,9 +32,10 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded,
     title: initialData?.title || "",
     description: initialData?.description || "",
     tag: initialData?.tag || "",
-    amount: initialData?.amount || ""
+    amount: initialData?.amount || "",
   });
   const [file, setFile] = useState<File | null>(null);
+  const [supportFiles, setSupportFiles] = useState<File[]>([]);
   const [error, setError] = useState("");
 
   // 만약 initialData가 변경되었을 경우 폼 데이터 업데이트
@@ -42,7 +47,7 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded,
         title: initialData.title,
         description: initialData.description,
         tag: initialData.tag,
-        amount: initialData.amount
+        amount: initialData.amount,
       });
     }
   }, [initialData]);
@@ -58,8 +63,17 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded,
       formData.append("tag", scheduleData.tag);
       formData.append("amount", scheduleData.amount);
       formData.append("region", "ap-northeast-2");
+
+      // 기본 파일 추가
       if (file) {
         formData.append("file", file);
+      }
+      // 보조 파일 추가 (최대 두 개)
+      if (supportFiles && supportFiles.length > 0) {
+        // supportFiles 배열의 각 파일을 FormData에 추가
+        supportFiles.forEach((supportFile) =>
+          formData.append("supportFiles", supportFile)
+        );
       }
 
       if (initialData && initialData._id) {
@@ -73,15 +87,11 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded,
           }
         );
       } else {
-        // 신규 생성 모드: 기존 POST 요청
-        await axios.post(
-          `${SERVER_URL}/api/adminPlan/schedules`,
-          formData,
-          {
-            withCredentials: true,
-            headers: { "Content-Type": "multipart/form-data" },
-          }
-        );
+        // 신규 생성 모드: POST 요청
+        await axios.post(`${SERVER_URL}/api/adminPlan/schedules`, formData, {
+          withCredentials: true,
+          headers: { "Content-Type": "multipart/form-data" },
+        });
       }
       // 폼 초기화 및 상위 컴포넌트에 알림
       setScheduleData({
@@ -90,9 +100,10 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded,
         title: "",
         description: "",
         tag: "",
-        amount: ""
+        amount: "",
       });
       setFile(null);
+      setSupportFiles([]);
       onScheduleAdded();
       onClose();
     } catch (err) {
@@ -145,7 +156,10 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded,
             <textarea
               value={scheduleData.description}
               onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-                setScheduleData({ ...scheduleData, description: e.target.value })
+                setScheduleData({
+                  ...scheduleData,
+                  description: e.target.value,
+                })
               }
             />
           </div>
@@ -183,8 +197,27 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded,
               }}
             />
           </div>
+          <div className={styles.formGroup}>
+            <label>Support Files (최대 2개):</label>
+            <input
+              type="file"
+              multiple
+              accept=".jpeg,.jpg,.png,.pdf,.zip,.eml"
+              onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                if (e.target.files) {
+                  // Array.from()으로 FileList를 배열로 변환 후 최대 2개 제한
+                  const selectedFiles = Array.from(e.target.files).slice(0, 2);
+                  setSupportFiles(selectedFiles);
+                }
+              }}
+            />
+          </div>
           <div className={styles.buttonGroup}>
-            <button type="button" onClick={onClose} className={styles.cancelButton}>
+            <button
+              type="button"
+              onClick={onClose}
+              className={styles.cancelButton}
+            >
               Cancel
             </button>
             <button type="submit" className={styles.submitButton}>
