@@ -276,7 +276,7 @@ export default function AdminPlan() {
                         {schedule.tag && (
                           <p className={styles.scheduleTag}>Tag: {schedule.tag}</p>
                         )}
-                        {schedule.amount && (
+                        {schedule.amount && schedule.amount !== "0" && (
                           <p className={styles.scheduleAmount}>Amount: {schedule.amount} KRW</p>
                         )}
                         {schedule.fileUrl && (
