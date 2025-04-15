@@ -301,10 +301,11 @@ export default function AdminPlan() {
                         {schedule.tag && (
                           <p className={styles.scheduleTag}>Tag: {schedule.tag}</p>
                         )}
+                        {/* 금액이 0보다 큰 경우에만 금액 정보를 표시 */}
                         {schedule.amount && parseFloat(schedule.amount) > 0 && (
                           <p className={styles.scheduleAmount}>Amount: {schedule.amount} KRW</p>
                         )}
-                        {/* 파일 관련: 기본 파일 및 보조파일이 있을 경우 총 파일 수 표시 및 링크 클릭 시 인라인 파일 목록 표시 */}
+                        {/* 파일 관련: 기본 파일 및 보조파일이 있을 경우 총 파일 수 표시 및 클릭 시 인라인 파일 목록 토글 */}
                         {(schedule.fileUrl ||
                           (schedule.supportFiles && schedule.supportFiles.length > 0)) && (
                           <p className={styles.scheduleFile}>
@@ -330,17 +331,16 @@ export default function AdminPlan() {
                                   </a>
                                 </li>
                               )}
-                              {schedule.supportFiles && schedule.supportFiles.length > 0 && (
-                                schedule.supportFiles.map((file, index) => (
-                                  file.fileUrl && file.fileUrl.trim() !== "" && (
+                              {schedule.supportFiles &&
+                                schedule.supportFiles.map((file, index) =>
+                                  file.fileUrl && file.fileUrl.trim() !== "" ? (
                                     <li key={index}>
                                       <a href={file.fileUrl} target="_blank" rel="noopener noreferrer">
                                         Support File {index + 1}
                                       </a>
                                     </li>
-                                  )
-                                ))
-                              )}
+                                  ) : null
+                                )}
                               {getTotalFileCount(schedule) === 0 && (
                                 <li>No attached files.</li>
                               )}
@@ -364,7 +364,7 @@ export default function AdminPlan() {
             // Analysis Mode 화면: 월별/태그별 금액 합산 표와 차트
             <div className={styles.analysisContainer}>
               <h2 className={styles.sectionTitle}>Monthly Payment Analysis</h2>
-              {Object.keys(monthlyAggregates).length === 0 ? (
+              {Object.entries(monthlyAggregates).filter(([, total]) => total > 0).length === 0 ? (
                 <p className={styles.noSchedule}>No payment data available.</p>
               ) : (
                 <>
@@ -376,12 +376,14 @@ export default function AdminPlan() {
                       </tr>
                     </thead>
                     <tbody>
-                      {Object.entries(monthlyAggregates).map(([month, total]) => (
-                        <tr key={month}>
-                          <td>{month}</td>
-                          <td>{total.toLocaleString()}</td>
-                        </tr>
-                      ))}
+                      {Object.entries(monthlyAggregates)
+                        .filter(([, total]) => total > 0)
+                        .map(([month, total]) => (
+                          <tr key={month}>
+                            <td>{month}</td>
+                            <td>{total.toLocaleString()} KRW</td>
+                          </tr>
+                        ))}
                     </tbody>
                   </table>
                   <div className={styles.chartContainer}>
@@ -391,7 +393,7 @@ export default function AdminPlan() {
               )}
 
               <h2 className={styles.sectionTitle}>Tag Payment Analysis</h2>
-              {Object.keys(tagAggregates).length === 0 ? (
+              {Object.entries(tagAggregates).filter(([, total]) => total > 0).length === 0 ? (
                 <p className={styles.noSchedule}>No tag data available.</p>
               ) : (
                 <>
@@ -403,12 +405,14 @@ export default function AdminPlan() {
                       </tr>
                     </thead>
                     <tbody>
-                      {Object.entries(tagAggregates).map(([tag, total]) => (
-                        <tr key={tag}>
-                          <td>{tag}</td>
-                          <td>{total.toLocaleString()}</td>
-                        </tr>
-                      ))}
+                      {Object.entries(tagAggregates)
+                        .filter(([, total]) => total > 0)
+                        .map(([tag, total]) => (
+                          <tr key={tag}>
+                            <td>{tag}</td>
+                            <td>{total.toLocaleString()} KRW</td>
+                          </tr>
+                        ))}
                     </tbody>
                   </table>
                   <div className={styles.chartContainer}>
