@@ -107,6 +107,22 @@
     background-color: #eaeaea;
     transform: translateY(-2px);
   }
+
+  /* 기존 스케줄 추가 버튼 스타일 재사용 */
+.editButton {
+    background-color: #f7f7f7;
+    color: #888;
+    border: 1px solid #ccc;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+.editButton:hover {
+    background-color: #eaeaea;
+    transform: translateY(-2px);
+}
   
   /* 일정 리스트 영역 */
   .scheduleListContainer {
