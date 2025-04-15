@@ -23,7 +23,7 @@ import { Bar } from "react-chartjs-2";
 // ChartJS 등록
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-// 일정 인터페이스 (태그와 금액을 선택적으로 포함)
+// 일정 인터페이스 (보조파일(supportFiles) 추가)
 export interface Schedule {
   _id: string;
   eventDate: string; // 서버에서 받은 날짜 문자열
@@ -33,6 +33,10 @@ export interface Schedule {
   fileUrl?: string;
   tag?: string;     // 추가: 태그
   amount?: string;  // 추가: 금액
+  supportFiles?: {
+    fileUrl: string;
+    fileKey: string;
+  }[];
 }
 
 export default function AdminPlan() {
@@ -43,6 +47,8 @@ export default function AdminPlan() {
   // 수정 시 선택한 스케줄 데이터를 저장 (null이면 새 일정 생성)
   const [editingSchedule, setEditingSchedule] = useState<Schedule | null>(null);
   const [viewMode, setViewMode] = useState<"daily" | "weekly" | "monthly" | "analysis">("daily");
+  // 파일 보기 모달 상태 (첨부파일 및 보조파일 목록)
+  const [fileModal, setFileModal] = useState<{ files: { label: string; fileUrl: string }[] } | null>(null);
 
   useEffect(() => {
     fetchSchedules();
@@ -187,6 +193,32 @@ export default function AdminPlan() {
     setModalOpen(true);
   };
 
+  // 파일 보기 버튼 클릭 핸들러
+  const handleViewFiles = (schedule: Schedule) => {
+    const files: { label: string; fileUrl: string }[] = [];
+    if (schedule.fileUrl) {
+      files.push({ label: "Main File", fileUrl: schedule.fileUrl });
+    }
+    if (schedule.supportFiles && schedule.supportFiles.length > 0) {
+      schedule.supportFiles.forEach((file, index) => {
+        files.push({ label: `Support File ${index + 1}`, fileUrl: file.fileUrl });
+      });
+    }
+    if (files.length > 0) {
+      setFileModal({ files });
+    }
+  };
+
+  // 계산: 전체 첨부 파일 개수 (기본 파일 + 보조파일)
+  const getTotalFileCount = (schedule: Schedule) => {
+    let count = 0;
+    if (schedule.fileUrl) count++;
+    if (schedule.supportFiles && schedule.supportFiles.length > 0) {
+      count += schedule.supportFiles.length;
+    }
+    return count;
+  };
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -279,10 +311,18 @@ export default function AdminPlan() {
                         {schedule.amount && schedule.amount !== "0" && (
                           <p className={styles.scheduleAmount}>Amount: {schedule.amount} KRW</p>
                         )}
-                        {schedule.fileUrl && (
+                        {/* 파일 관련: 기본 파일 및 보조파일이 있을 경우 총 파일 수 표시 및 링크 클릭 시 파일 보기 */}
+                        {(schedule.fileUrl ||
+                          (schedule.supportFiles && schedule.supportFiles.length > 0)) && (
                           <p className={styles.scheduleFile}>
-                            <a href={schedule.fileUrl} target="_blank" rel="noopener noreferrer">
-                              View File
+                            <a
+                              href="#"
+                              onClick={(e) => {
+                                e.preventDefault();
+                                handleViewFiles(schedule);
+                              }}
+                            >
+                              View File ({getTotalFileCount(schedule)} {getTotalFileCount(schedule) > 1 ? "files" : "file"})
                             </a>
                           </p>
                         )}
@@ -361,20 +401,38 @@ export default function AdminPlan() {
       </main>
       {modalOpen && (
         <ScheduleModal
-            onClose={handleCloseModal}
-            onScheduleAdded={fetchSchedules}
-            initialData={
+          onClose={handleCloseModal}
+          onScheduleAdded={fetchSchedules}
+          initialData={
             editingSchedule
-                ? {
-                    ...editingSchedule,
-                    description: editingSchedule.description ?? "",
-                    tag: editingSchedule.tag ?? "",
-                    amount: editingSchedule.amount ?? ""
+              ? {
+                  ...editingSchedule,
+                  description: editingSchedule.description ?? "",
+                  tag: editingSchedule.tag ?? "",
+                  amount: editingSchedule.amount ?? ""
                 }
-                : undefined
-            }
+              : undefined
+          }
         />
-        )}
+      )}
+      {/* 파일 보기 모달 */}
+      {fileModal && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modal}>
+            <h2>첨부 파일 확인</h2>
+            <ul>
+              {fileModal.files.map((file, idx) => (
+                <li key={idx}>
+                  <a href={file.fileUrl} target="_blank" rel="noopener noreferrer">
+                    {file.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <button onClick={() => setFileModal(null)}>Close</button>
+          </div>
+        </div>
+      )}
       <WebFooter />
     </div>
   );
