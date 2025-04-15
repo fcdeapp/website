@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import axios from "axios";
 import { useConfig } from "../context/ConfigContext";
 import styles from "../styles/components/ScheduleModal.module.css";
@@ -11,51 +11,80 @@ interface NewSchedule {
   title: string;
   description: string;
   tag: string;
-  amount: string; // 금액을 KRW 기준으로 입력 (필수 아님)
+  amount: string; // 금액 (KRW 기준)
 }
 
 interface ScheduleModalProps {
   onClose: () => void;
   onScheduleAdded: () => void;
+  initialData?: NewSchedule & { _id?: string };
 }
 
-const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded }) => {
+const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded, initialData }) => {
   const { SERVER_URL } = useConfig();
-  const [newSchedule, setNewSchedule] = useState<NewSchedule>({
-    eventDate: "",
-    location: "",
-    title: "",
-    description: "",
-    tag: "",
-    amount: ""
+  const [scheduleData, setScheduleData] = useState<NewSchedule>({
+    eventDate: initialData?.eventDate || "",
+    location: initialData?.location || "",
+    title: initialData?.title || "",
+    description: initialData?.description || "",
+    tag: initialData?.tag || "",
+    amount: initialData?.amount || ""
   });
   const [file, setFile] = useState<File | null>(null);
   const [error, setError] = useState("");
+
+  // 만약 initialData가 변경되었을 경우 폼 데이터 업데이트
+  useEffect(() => {
+    if (initialData) {
+      setScheduleData({
+        eventDate: initialData.eventDate,
+        location: initialData.location,
+        title: initialData.title,
+        description: initialData.description,
+        tag: initialData.tag,
+        amount: initialData.amount
+      });
+    }
+  }, [initialData]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       const formData = new FormData();
-      formData.append("eventDate", newSchedule.eventDate);
-      formData.append("location", newSchedule.location);
-      formData.append("title", newSchedule.title);
-      formData.append("description", newSchedule.description);
-      formData.append("tag", newSchedule.tag);
-      formData.append("amount", newSchedule.amount);
+      formData.append("eventDate", scheduleData.eventDate);
+      formData.append("location", scheduleData.location);
+      formData.append("title", scheduleData.title);
+      formData.append("description", scheduleData.description);
+      formData.append("tag", scheduleData.tag);
+      formData.append("amount", scheduleData.amount);
       formData.append("region", "ap-northeast-2");
       if (file) {
         formData.append("file", file);
       }
-      await axios.post(
-        `${SERVER_URL}/api/adminPlan/schedules`,
-        formData,
-        {
-          withCredentials: true,
-          headers: { "Content-Type": "multipart/form-data" },
-        }
-      );
+
+      if (initialData && initialData._id) {
+        // 수정 모드: 기존 일정 업데이트 (PUT 요청)
+        await axios.put(
+          `${SERVER_URL}/api/adminPlan/schedules/${initialData._id}`,
+          formData,
+          {
+            withCredentials: true,
+            headers: { "Content-Type": "multipart/form-data" },
+          }
+        );
+      } else {
+        // 신규 생성 모드: 기존 POST 요청
+        await axios.post(
+          `${SERVER_URL}/api/adminPlan/schedules`,
+          formData,
+          {
+            withCredentials: true,
+            headers: { "Content-Type": "multipart/form-data" },
+          }
+        );
+      }
       // 폼 초기화 및 상위 컴포넌트에 알림
-      setNewSchedule({
+      setScheduleData({
         eventDate: "",
         location: "",
         title: "",
@@ -67,24 +96,24 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
       onScheduleAdded();
       onClose();
     } catch (err) {
-      console.error("Error creating schedule", err);
-      setError("일정 생성에 실패했습니다. 다시 시도해주세요.");
+      console.error("Error submitting schedule", err);
+      setError("일정 전송에 실패했습니다. 다시 시도해주세요.");
     }
   };
 
   return (
     <div className={styles.modalOverlay}>
       <div className={styles.modal}>
-        <h2>Add New Schedule</h2>
+        <h2>{initialData ? "Edit Schedule" : "Add New Schedule"}</h2>
         {error && <p className={styles.error}>{error}</p>}
         <form onSubmit={handleSubmit} className={styles.scheduleForm}>
           <div className={styles.formGroup}>
             <label>Date:</label>
             <input
               type="date"
-              value={newSchedule.eventDate}
+              value={scheduleData.eventDate}
               onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                setNewSchedule({ ...newSchedule, eventDate: e.target.value })
+                setScheduleData({ ...scheduleData, eventDate: e.target.value })
               }
               required
             />
@@ -93,9 +122,9 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
             <label>Location:</label>
             <input
               type="text"
-              value={newSchedule.location}
+              value={scheduleData.location}
               onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                setNewSchedule({ ...newSchedule, location: e.target.value })
+                setScheduleData({ ...scheduleData, location: e.target.value })
               }
               required
             />
@@ -104,9 +133,9 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
             <label>Title:</label>
             <input
               type="text"
-              value={newSchedule.title}
+              value={scheduleData.title}
               onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                setNewSchedule({ ...newSchedule, title: e.target.value })
+                setScheduleData({ ...scheduleData, title: e.target.value })
               }
               required
             />
@@ -114,9 +143,9 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
           <div className={styles.formGroup}>
             <label>Description:</label>
             <textarea
-              value={newSchedule.description}
+              value={scheduleData.description}
               onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-                setNewSchedule({ ...newSchedule, description: e.target.value })
+                setScheduleData({ ...scheduleData, description: e.target.value })
               }
             />
           </div>
@@ -124,20 +153,20 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
             <label>Tag:</label>
             <input
               type="text"
-              value={newSchedule.tag}
+              value={scheduleData.tag}
               onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                setNewSchedule({ ...newSchedule, tag: e.target.value })
+                setScheduleData({ ...scheduleData, tag: e.target.value })
               }
-              placeholder="예: 행사, 모임 등"
+              placeholder="예: 결제증명, 인보이스 등"
             />
           </div>
           <div className={styles.formGroup}>
             <label>Amount (KRW):</label>
             <input
               type="number"
-              value={newSchedule.amount}
+              value={scheduleData.amount}
               onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                setNewSchedule({ ...newSchedule, amount: e.target.value })
+                setScheduleData({ ...scheduleData, amount: e.target.value })
               }
               placeholder="예: 10000"
             />
@@ -159,7 +188,7 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({ onClose, onScheduleAdded 
               Cancel
             </button>
             <button type="submit" className={styles.submitButton}>
-              Add Schedule
+              {initialData ? "Update Schedule" : "Add Schedule"}
             </button>
           </div>
         </form>
