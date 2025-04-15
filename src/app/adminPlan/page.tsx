@@ -24,7 +24,7 @@ import { Bar } from "react-chartjs-2";
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 // 일정 인터페이스 (태그와 금액을 선택적으로 포함)
-interface Schedule {
+export interface Schedule {
   _id: string;
   eventDate: string; // 서버에서 받은 날짜 문자열
   location: string;
@@ -40,6 +40,8 @@ export default function AdminPlan() {
   const [date, setDate] = useState<Date>(new Date());
   const [schedules, setSchedules] = useState<Schedule[]>([]);
   const [modalOpen, setModalOpen] = useState(false);
+  // 수정 시 선택한 스케줄 데이터를 저장 (null이면 새 일정 생성)
+  const [editingSchedule, setEditingSchedule] = useState<Schedule | null>(null);
   const [viewMode, setViewMode] = useState<"daily" | "weekly" | "monthly" | "analysis">("daily");
 
   useEffect(() => {
@@ -173,6 +175,18 @@ export default function AdminPlan() {
     ],
   };
 
+  // 모달 닫기 시 새 일정 생성/수정 초기화
+  const handleCloseModal = () => {
+    setEditingSchedule(null);
+    setModalOpen(false);
+  };
+
+  // 일정 항목 수정 버튼 핸들러
+  const handleEdit = (schedule: Schedule) => {
+    setEditingSchedule(schedule);
+    setModalOpen(true);
+  };
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -272,6 +286,13 @@ export default function AdminPlan() {
                             </a>
                           </p>
                         )}
+                        {/* 수정 버튼 추가 */}
+                        <button 
+                          onClick={() => handleEdit(schedule)}
+                          className={styles.editButton}
+                        >
+                          Edit
+                        </button>
                       </li>
                     ))}
                   </ul>
@@ -340,10 +361,20 @@ export default function AdminPlan() {
       </main>
       {modalOpen && (
         <ScheduleModal
-          onClose={() => setModalOpen(false)}
-          onScheduleAdded={fetchSchedules}
+            onClose={handleCloseModal}
+            onScheduleAdded={fetchSchedules}
+            initialData={
+            editingSchedule
+                ? {
+                    ...editingSchedule,
+                    description: editingSchedule.description ?? "",
+                    tag: editingSchedule.tag ?? "",
+                    amount: editingSchedule.amount ?? ""
+                }
+                : undefined
+            }
         />
-      )}
+        )}
       <WebFooter />
     </div>
   );
