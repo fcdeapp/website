@@ -13,6 +13,8 @@ type FilterOverlayProps = {
   setSortOption: React.Dispatch<React.SetStateAction<string>>;
   nearbyOption: string;
   setNearbyOption: React.Dispatch<React.SetStateAction<string>>;
+  recruitmentOption?: string;
+  setRecruitmentOption?: React.Dispatch<React.SetStateAction<string>>;
   countryOption?: string;
   setCountryOption?: React.Dispatch<React.SetStateAction<string>>;
   currentCountry?: string;
@@ -26,6 +28,8 @@ const FilterOverlay: React.FC<FilterOverlayProps> = ({
   setSortOption,
   nearbyOption,
   setNearbyOption,
+  recruitmentOption,
+  setRecruitmentOption,
   countryOption,
   setCountryOption,
   currentCountry,
@@ -65,6 +69,9 @@ const FilterOverlay: React.FC<FilterOverlayProps> = ({
   const [nearbyOpacity, setNearbyOpacity] = useState(1);
   const [countryScale, setCountryScale] = useState(1);
   const [countryOpacity, setCountryOpacity] = useState(1);
+  // 모집중 옵션 애니메이션 상태
+  const [recruitScale, setRecruitScale] = useState(1);
+  const [recruitOpacity, setRecruitOpacity] = useState(1);
 
   const handleSortChange = () => {
     const options = ["latest", "popularity", "recommended", "distance"];
@@ -91,6 +98,22 @@ const FilterOverlay: React.FC<FilterOverlayProps> = ({
       setNearbyOpacity(1);
       setTimeout(() => {
         setNearbyScale(1);
+      }, 100);
+    }, 200);
+  };
+
+  const handleRecruitmentChange = () => {
+    if (!setRecruitmentOption || !recruitmentOption) return;
+    // 예시: "active" (모집중인 게시물만 보기)와 "all" (전체 게시물 보기)의 두 가지 모드
+    const newOption = recruitmentOption === "active" ? "all" : "active";
+    setRecruitScale(0.8);
+    setRecruitOpacity(0);
+    setTimeout(() => {
+      setRecruitmentOption(newOption);
+      setRecruitScale(1.1);
+      setRecruitOpacity(1);
+      setTimeout(() => {
+        setRecruitScale(1);
       }, 100);
     }, 200);
   };
@@ -149,6 +172,24 @@ const FilterOverlay: React.FC<FilterOverlayProps> = ({
               </button>
             </div>
 
+            {/* 모집중 옵션 (현재위치 영역 바로 위에 추가) */}
+            {recruitmentOption !== undefined && setRecruitmentOption !== undefined && (
+              <div className={styles.optionGroup}>
+                <span className={styles.optionLabel}>{t("recruitment_filter_options")}</span>
+                <button className={styles.optionButton} onClick={handleRecruitmentChange}>
+                  <span
+                    className={styles.optionText}
+                    style={{
+                      transform: `scale(${recruitScale})`,
+                      opacity: recruitOpacity,
+                    }}
+                  >
+                    {t(`recruitment_options.${recruitmentOption}`)}
+                  </span>
+                </button>
+              </div>
+            )}
+
             {countryOption !== undefined &&
               setCountryOption !== undefined &&
               currentCountry !== undefined &&
@@ -158,13 +199,15 @@ const FilterOverlay: React.FC<FilterOverlayProps> = ({
                   <div className={styles.optionGroup}>
                     <span className={styles.optionLabel}>{t("current_location")}</span>
                     <div className={styles.locationInfoContainer}>
-                      {currentCountry !== "Unknown Country" && currentCountry !== "Unknown" && currentCountry !== "" && (
-                        <img
-                        src={(countryFlags as Record<string, string>)[currentCountry] || ""}
-                          alt={currentCountry}
-                          className={styles.locationFlag}
-                        />
-                      )}
+                      {currentCountry !== "Unknown Country" &&
+                        currentCountry !== "Unknown" &&
+                        currentCountry !== "" && (
+                          <img
+                            src={(countryFlags as Record<string, string>)[currentCountry] || ""}
+                            alt={currentCountry}
+                            className={styles.locationFlag}
+                          />
+                        )}
                       <div className={styles.locationTextContainer}>
                         <span className={styles.locationText}>{currentCountry}</span>
                         <span className={styles.locationText}>{currentCity}</span>
