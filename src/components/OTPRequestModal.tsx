@@ -36,15 +36,12 @@ const OTPRequestModal: React.FC<OTPRequestModalProps> = ({ visible, onClose }) =
     }
     setIsSubmitting(true);
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-      if (!token) throw new Error(t("auth_token_missing"));
       await axios.post(
         `${SERVER_URL}/password/request-otp`,
         { email },
         {
           headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json"
           },
         }
       );
@@ -64,15 +61,12 @@ const OTPRequestModal: React.FC<OTPRequestModalProps> = ({ visible, onClose }) =
     }
     setIsSubmitting(true);
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-      if (!token) throw new Error(t("auth_token_missing"));
       await axios.post(
         `${SERVER_URL}/password/verify-otp`,
         { email, otp },
         {
           headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json"
           },
         }
       );
