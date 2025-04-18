@@ -533,19 +533,7 @@ const MyProfile: React.FC = () => {
             </label>
           </div>
         </div>
-
-        {/* 위치 업데이트 버튼 */}
-        <div className={styles.locationSection}>
-          <button
-            className={styles.locationButton}
-            onClick={updateLocation}
-            disabled={updatingLocation}
-          >
-            {updatingLocation ? t("updating_location") : t("update_location")}
-          </button>
-        </div>
-
-        {/* 퀵 메뉴 (디자인은 덜 눈에 띄게 변경) */}
+        {/* 퀵 메뉴  추가 액션 버튼 */}
         <div className={styles.quickMenu}>
           {quickMenuItems.map((item, index) => (
             <button
@@ -556,11 +544,22 @@ const MyProfile: React.FC = () => {
               {item.title}
             </button>
           ))}
+          {/* Update Location */}
+          <button
+            className={styles.quickMenuButton}
+            onClick={updateLocation}
+            disabled={updatingLocation}
+          >
+            {updatingLocation ? t("updating_location") : t("update_location")}
+          </button>
+          {/* View Licenses */}
+          <button
+            className={styles.quickMenuButton}
+            onClick={() => setShowLicenses(true)}
+          >
+            {t("view_licenses")}
+          </button>
         </div>
-
-        <button className={styles.licensesButton} onClick={() => setShowLicenses(true)}>
-          {t("view_licenses")}
-        </button>
       </main>
 
       <WebFooter />
