@@ -120,7 +120,6 @@ const CreateNotificationModal: React.FC<CreateNotificationModalProps> = ({
       return;
     }
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       let imageUrl = "";
       if (newImage) {
         // 이미지 업로드
@@ -134,7 +133,6 @@ const CreateNotificationModal: React.FC<CreateNotificationModalProps> = ({
           formData,
           {
             headers: {
-              Authorization: `Bearer ${token}`,
               "Content-Type": "multipart/form-data",
             },
           }
@@ -158,7 +156,6 @@ const CreateNotificationModal: React.FC<CreateNotificationModalProps> = ({
         }
         await axios.post(`${SERVER_URL}/buddy-notifications/${buddyGroupId}/notifications`, body, {
           headers: {
-            Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
           },
         });
@@ -188,7 +185,6 @@ const CreateNotificationModal: React.FC<CreateNotificationModalProps> = ({
             };
             await axios.post(`${SERVER_URL}/api/admin/nl/postNotifications`, body, {
               headers: {
-                Authorization: `Bearer ${token}`,
                 "Content-Type": "application/json",
               },
             });
@@ -205,7 +201,6 @@ const CreateNotificationModal: React.FC<CreateNotificationModalProps> = ({
             };
             await axios.post(`${SERVER_URL}/api/admin/nl/postNotifications`, body, {
               headers: {
-                Authorization: `Bearer ${token}`,
                 "Content-Type": "application/json",
               },
             });

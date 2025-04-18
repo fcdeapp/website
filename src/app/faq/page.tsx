@@ -58,12 +58,6 @@ export default function Faq() {
     }
 
     try {
-        const loggedIn = typeof window !== "undefined" && localStorage.getItem("isLoggedIn") === "true";
-        if (!loggedIn) {
-          alert(t("not_logged_in", "User not logged in."));
-          return;
-        }
-
       const response = await axios.post(
         `${SERVER_URL}/report/inquiries`,
         {
