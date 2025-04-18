@@ -1,6 +1,8 @@
+"use client";
+
 import React, { useEffect, useState, FocusEvent } from 'react';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import { jsPDF } from 'jspdf';
 import { useTranslation } from 'react-i18next';
