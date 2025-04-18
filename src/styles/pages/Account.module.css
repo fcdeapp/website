@@ -9,7 +9,6 @@
     margin: 0 auto;
     padding: 16px;
     background: #F8F8FE;
-    font-family: sans-serif;
   }
   
   /* Header */
@@ -35,7 +34,7 @@
   .title {
     flex: 1;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #1a1045;
   }
   
@@ -55,7 +54,7 @@
     flex-direction: column;
   }
   
-  /* First section (user info) has no extra border */
+  /* First section: remove extra border on its first item */
   .section:first-of-type .item {
     border: none;
   }
@@ -63,7 +62,7 @@
   /* Individual items */
   .item {
     font-size: 1rem;
-    padding: 12px 16px;
+    padding: 20px 20px;        /* larger “칸” */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,29 +72,29 @@
     text-align: left;
   }
   
-  /* Divider */
+  /* Divider between items */
   .item + .item {
     border-top: 1px solid #eee;
   }
   
-  /* Labels and values */
+  /* Labels and values: thinner text */
   .label {
-    font-weight: 700;
+    font-weight: 400;
     color: #1a1045;
   }
   
   .value {
-    font-weight: 500;
+    font-weight: 400;
     color: #555;
   }
   
-  /* Chevron for navigation */
+  /* Chevron */
   .chevron {
     font-size: 1.5rem;
     color: #888;
   }
   
-  /* Email description box */
+  /* Description box under email */
   .description {
     background: #FFF4E5;
     padding: 12px 16px;
@@ -117,7 +116,7 @@
       font-size: 1.25rem;
     }
     .item {
-      padding: 10px 12px;
+      padding: 16px 12px;
       font-size: 0.95rem;
     }
   }
