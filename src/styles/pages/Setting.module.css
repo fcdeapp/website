@@ -14,6 +14,7 @@
     font-family: sans-serif;
   }
   
+  /* Header */
   .header {
     display: flex;
     align-items: center;
@@ -39,12 +40,14 @@
     font-weight: bold;
   }
   
+  /* Main layout */
   .main {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
   
+  /* 각 카드 섹션 */
   .section {
     background: #fff;
     border-radius: 12px;
@@ -53,6 +56,21 @@
     flex-direction: column;
   }
   
+  /* 맨 위 계정관리만 흰 배경(이미 흰색이지만 명시), 테두리 제거 */
+  .section:first-of-type {
+    background: #fff;
+  }
+  .section:first-of-type .item {
+    border: none;
+  }
+  
+  /* 버튼·아이템 공통 폰트 크기 통일 */
+  .item,
+  .link {
+    font-size: 1rem;
+  }
+  
+  /* 리스트 아이템 */
   .item {
     padding: 12px 16px;
     display: flex;
@@ -61,25 +79,37 @@
     cursor: pointer;
   }
   
+  /* 링크 버튼 */
   .link {
     padding: 12px 16px;
     background: #fff;
     border: none;
     text-align: left;
     cursor: pointer;
-    font-size: 1rem;
   }
   
+  /* 카드 내부 구분선 */
   .item + .item,
   .link + .link {
     border-top: 1px solid #eee;
   }
   
+  /* 우측 화살표 */
   .chevron {
     color: #888;
     font-size: 1.5rem;
   }
   
+  /* 단독 링크(관리자 OTP 요청 버튼)에 카드 스타일 적용 */
+  .main > .link {
+    display: block;
+    margin-top: 16px;
+    background: #fff;
+    border-radius: 12px;
+    /* 이미 .link에 padding이 있으므로 추가 설정 불필요 */
+  }
+  
+  /* 모달 백드롭 */
   .backdrop {
     position: fixed;
     inset: 0;
@@ -89,6 +119,7 @@
     justify-content: center;
   }
   
+  /* 모달 박스 */
   .modal {
     background: #fff;
     border-radius: 12px;
@@ -98,12 +129,12 @@
     text-align: center;
   }
   
+  /* 신고 버튼 그룹 */
   .actionButtons {
     display: flex;
     gap: 8px;
     margin: 16px 0;
   }
-  
   .actionButtons button {
     flex: 1;
     padding: 10px;
@@ -114,11 +145,13 @@
     cursor: pointer;
   }
   
+  /* 연락처 정보 */
   .contactInfo {
     margin-top: 12px;
     text-align: left;
   }
   
+  /* 모달 닫기 버튼 */
   .closeBtn {
     margin-top: 16px;
     border: none;
@@ -128,9 +161,17 @@
     cursor: pointer;
   }
   
+  /* 반응형 */
   @media (max-width: 480px) {
-    .container { padding: 8px; }
-    .title { font-size: 1.25rem; }
-    .item, .link { padding: 10px 12px; }
+    .container {
+      padding: 8px;
+    }
+    .title {
+      font-size: 1.25rem;
+    }
+    .item,
+    .link {
+      padding: 10px 12px;
+    }
   }
   
