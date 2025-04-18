@@ -1,0 +1,124 @@
+.pageWrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: #F8F8FE;
+  }
+  
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 16px;
+    background: #F8F8FE;
+    font-family: sans-serif;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .backBtn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 12px;
+  }
+  
+  .backIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .title {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1045;
+  }
+  
+  /* Main layout */
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Card sections */
+  .section {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* First section (user info) has no extra border */
+  .section:first-of-type .item {
+    border: none;
+  }
+  
+  /* Individual items */
+  .item {
+    font-size: 1rem;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  /* Divider */
+  .item + .item {
+    border-top: 1px solid #eee;
+  }
+  
+  /* Labels and values */
+  .label {
+    font-weight: 700;
+    color: #1a1045;
+  }
+  
+  .value {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Chevron for navigation */
+  .chevron {
+    font-size: 1.5rem;
+    color: #888;
+  }
+  
+  /* Email description box */
+  .description {
+    background: #FFF4E5;
+    padding: 12px 16px;
+    border-radius: 8px;
+  }
+  
+  .descriptionText {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .container {
+      padding: 8px;
+    }
+    .title {
+      font-size: 1.25rem;
+    }
+    .item {
+      padding: 10px 12px;
+      font-size: 0.95rem;
+    }
+  }
+  
