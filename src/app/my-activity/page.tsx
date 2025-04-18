@@ -183,7 +183,7 @@ const MyActivityPage: React.FC = () => {
             <>
               {/* Past Meetings */}
               {userData.pastMeetings.length>0 && (
-                <section>
+                <section className={styles.sectionContainer}>
                   <h2>{t('myActivity.pastMeetings')}</h2>
                   {userData.pastMeetings.map((m,i)=>(
                     <div key={i} className={styles.itemCard}>
@@ -200,7 +200,7 @@ const MyActivityPage: React.FC = () => {
 
               {/* Reported Posts */}
               {userData.reportedPosts.length>0 && (
-                <section>
+                <section className={styles.sectionContainer}>
                   <h2>{t('myActivity.reportedPosts')}</h2>
                   {userData.reportedPosts.map((p,i)=>(
                     <div key={i} className={styles.itemCard}>
@@ -217,7 +217,7 @@ const MyActivityPage: React.FC = () => {
 
               {/* Buddy Groups */}
               {userData.buddyGroups.length>0 && (
-                <section>
+                <section className={styles.sectionContainer}>
                   <h2>{t('myActivity.buddyGroups')}</h2>
                   {userData.buddyGroups.map((b,i)=>(
                     <BuddySearchItem key={i} {...b} />
@@ -227,7 +227,7 @@ const MyActivityPage: React.FC = () => {
 
               {/* Friends */}
               {userData.friends.length>0 && (
-                <section>
+                <section className={styles.sectionContainer}>
                   <h2>{t('myActivity.friends')}</h2>
                   <p className={styles.subtitle}>{t('myActivity.friendsHint')}</p>
                   {userData.friends.map(f=>(
@@ -245,7 +245,7 @@ const MyActivityPage: React.FC = () => {
 
               {/* Reviews */}
               {userData.review.length>0 && (
-                <section>
+                <section className={styles.sectionContainer}>
                   <h2>{t('myActivity.reviews')}</h2>
                   {userData.review.map((r,i)=>(
                     <div key={i} className={styles.itemCard}>
@@ -263,7 +263,7 @@ const MyActivityPage: React.FC = () => {
 
               {/* Reports/Inquiries */}
               {userData.reportInquiries.length>0 && (
-                <section>
+                <section className={styles.sectionContainer}>
                   <h2>{t('myActivity.reportsInquiries')}</h2>
                   {userData.reportInquiries.map((ri,i)=>(
                     <div key={ri._id||i} className={styles.itemCard}>
@@ -293,7 +293,7 @@ const MyActivityPage: React.FC = () => {
 
               {/* Hosted Posts */}
               {userData.userPosts.length>0 && (
-                <section>
+                <section className={styles.sectionContainer}>
                   <h2>{t('myActivity.hostedPosts')}</h2>
                   {userData.userPosts.map(p=>(
                     <PostMain key={p._id} {...p} isBuddyPost={false}/>
@@ -303,7 +303,7 @@ const MyActivityPage: React.FC = () => {
 
               {/* Hosted Buddy Posts */}
               {userData.userBuddyPosts.length>0 && (
-                <section>
+                <section className={styles.sectionContainer}>
                   <h2>{t('myActivity.hostedBuddyPosts')}</h2>
                   {userData.userBuddyPosts.map(bp=>(
                     <PostMain key={bp._id} {...bp} isBuddyPost={true}/>
