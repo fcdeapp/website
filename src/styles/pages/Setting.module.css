@@ -37,6 +37,7 @@
     flex: 1;
     font-size: 1.5rem;
     font-weight: bold;
+    color: #1a1045;
   }
   
   /* Main layout */
@@ -76,6 +77,11 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .item:hover {
+    background-color: #f0f0f0;
   }
   
   /* 링크 버튼 */
