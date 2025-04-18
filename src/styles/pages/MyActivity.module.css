@@ -41,14 +41,14 @@
     padding: 40px;
     color: #555;
   }
-  .sectionCard, section {
+  .sectionContainer {
     margin-bottom: 24px;
   }
-  .sectionCard h2, section h2 {
+  .sectionContainer h2 {
     font-size: 18px;
     color: #1A1045;
     margin-bottom: 12px;
-  }
+  }  
   .itemCard {
     background: #fff;
     border-radius: 12px;
