@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 
@@ -13,14 +13,6 @@ import EmailUpdateModal from '../../components/EmailUpdateModal';
 import schoolData from '../../constants/school.json';
 
 import styles from '../../styles/pages/Account.module.css';
-
-type RootStackParamList = {
-  SignInLogIn: undefined;
-  MyActivity: undefined;
-  UpgradePlan: undefined;
-  FriendList: undefined;
-  BuddyList: undefined;
-};
 
 interface MyConfig {
   SERVER_URL: string;
@@ -46,28 +38,29 @@ const AccountPage: React.FC = () => {
   const [otpModal, setOtpModal] = useState(false);
   const [pwChangeModal, setPwChangeModal] = useState(false);
   const [emailUpdateModal, setEmailUpdateModal] = useState(false);
-  const [devicePermModal, setDevicePermModal] = useState(false);
 
-  // Helper to mask
+  // Helper to mask username
   const getMasked = (s: string) =>
     s.length <= 2 ? '*'.repeat(s.length) : '*'.repeat(s.length - 2) + s.slice(-2);
+
+  // Helper to mask email
   const getMaskedEmail = (e: string) => {
-    const [l, d] = e.split('@');
-    if (!d) return e;
-    return '*'.repeat(Math.max(0, l.length - 2)) + l.slice(-2) + '@' + d;
+    const [local, domain] = e.split('@');
+    if (!domain) return e;
+    return '*'.repeat(Math.max(0, local.length - 2)) + local.slice(-2) + '@' + domain;
   };
 
-  // Find school by domain
+  // Find school by email domain
   const findSchoolByEmailDomain = (e: string) => {
     const parts = e.split('@');
     if (parts.length !== 2) return '';
     const domain = parts[1].toLowerCase();
-    const all = Object.values(schoolData).flat();
-    const found = (all as any[]).find(s => s.domain.toLowerCase() === domain);
+    const allSchools = Object.values(schoolData).flat() as any[];
+    const found = allSchools.find(s => s.domain.toLowerCase() === domain);
     return found?.name ?? '';
   };
 
-  // Fetch user on mount
+  // Fetch user data on mount
   useEffect(() => {
     axios
       .get(`${SERVER_URL}/users/me`)
@@ -85,27 +78,27 @@ const AccountPage: React.FC = () => {
       });
   }, [SERVER_URL, router, t]);
 
-  // Logout / cache clear / delete
+  // Handlers
   const handleLogout = () => {
     if (confirm(t('confirm_logout'))) {
       localStorage.clear();
       router.replace('/signInLogIn');
     }
   };
+
   const handleClearCache = () => {
     if (confirm(t('confirm_clear_cache'))) {
       localStorage.clear();
       router.replace('/signInLogIn');
     }
   };
+
   const handleDeleteAccount = () => {
     if (!confirm(t('confirm_delete_account'))) return;
     axios
       .delete(`${SERVER_URL}/delete-account`)
       .catch(console.error)
-      .finally(() => {
-        router.replace('/signInLogIn');
-      });
+      .finally(() => router.replace('/signInLogIn'));
   };
 
   return (
@@ -130,8 +123,9 @@ const AccountPage: React.FC = () => {
           <h1 className={styles.title}>{t('account_management')}</h1>
         </header>
 
+        {/* Content */}
         <main className={styles.main}>
-          {/* User Info */}
+          {/* User Info Section */}
           <section className={styles.section}>
             <button
               type="button"
@@ -189,7 +183,7 @@ const AccountPage: React.FC = () => {
             </button>
           </section>
 
-          {/* Device & Activity */}
+          {/* Device & Activity Section */}
           <section className={styles.section}>
             <button
               type="button"
@@ -227,7 +221,7 @@ const AccountPage: React.FC = () => {
             </button>
           </section>
 
-          {/* Actions */}
+          {/* Actions Section */}
           <section className={styles.section}>
             <button
               type="button"
@@ -254,19 +248,34 @@ const AccountPage: React.FC = () => {
         </main>
 
         {/* Modals */}
-        <PasswordOTPRequestModal
-          visible={otpModal}
-          onClose={() => setOtpModal(false)}
-          onVerified={() => setPwChangeModal(true)}
-        />
-        <PasswordChangeModal
-          visible={pwChangeModal}
-          onClose={() => setPwChangeModal(false)}
-        />
-        <EmailUpdateModal
-          visible={emailUpdateModal}
-          onClose={() => setEmailUpdateModal(false)}
-        />
+        <AnimatePresence>
+          {otpModal && (
+            <PasswordOTPRequestModal
+              visible
+              onClose={() => setOtpModal(false)}
+              onVerified={() => {
+                setOtpModal(false);
+                setPwChangeModal(true);
+              }}
+            />
+          )}
+        </AnimatePresence>
+        <AnimatePresence>
+          {pwChangeModal && (
+            <PasswordChangeModal
+              visible
+              onClose={() => setPwChangeModal(false)}
+            />
+          )}
+        </AnimatePresence>
+        <AnimatePresence>
+          {emailUpdateModal && (
+            <EmailUpdateModal
+              visible
+              onClose={() => setEmailUpdateModal(false)}
+            />
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
