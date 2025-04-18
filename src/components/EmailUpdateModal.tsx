@@ -37,15 +37,12 @@ const EmailUpdateModal: React.FC<EmailUpdateModalProps> = ({ visible, onClose })
     }
     setIsSubmitting(true);
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-      if (!token) throw new Error(t("auth_token_missing"));
       await axios.post(
         `${SERVER_URL}/password/request-email-otp`,
         { newEmail },
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
           },
         }
       );
@@ -66,9 +63,6 @@ const EmailUpdateModal: React.FC<EmailUpdateModalProps> = ({ visible, onClose })
     }
     setIsSubmitting(true);
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-      if (!token) throw new Error(t("auth_token_missing"));
-
       // OTP 검증
       await axios.post(
         `${SERVER_URL}/password/verify-email-otp`,
@@ -76,7 +70,6 @@ const EmailUpdateModal: React.FC<EmailUpdateModalProps> = ({ visible, onClose })
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
           },
         }
       );
@@ -87,7 +80,6 @@ const EmailUpdateModal: React.FC<EmailUpdateModalProps> = ({ visible, onClose })
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
           },
         }
       );
