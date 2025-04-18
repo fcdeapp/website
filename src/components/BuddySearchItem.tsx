@@ -59,14 +59,12 @@ const BuddySearchItem: React.FC<BuddySearchItemProps> = ({
 
   const handleRemoveBuddy = async (buddyGroupId: string) => {
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const response = await axios.post(
         `${SERVER_URL}/buddy-groups/remove`,
         { buddyGroupId },
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
           },
         }
       );
@@ -83,14 +81,12 @@ const BuddySearchItem: React.FC<BuddySearchItemProps> = ({
 
   const sendJoinRequest = async (buddyGroupId: string) => {
     try {
-      const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const response = await axios.post(
         `${SERVER_URL}/buddy-groups/join-request`,
         { buddyGroupId },
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
           },
         }
       );

@@ -207,7 +207,6 @@ const BuddyPollItem: React.FC<BuddyPollItemProps> = (props) => {
     }
 
     try {
-      const token = localStorage.getItem('token');
       const storedUserId = localStorage.getItem('userId');
       if (!storedUserId) {
         alert('User ID is not available.');
@@ -219,7 +218,6 @@ const BuddyPollItem: React.FC<BuddyPollItemProps> = (props) => {
       const response = await axios.post(
         `${SERVER_URL}/buddy-polls/${buddyGroupId}/polls/${pollId}/vote`,
         { userId: storedUserId, selectedOptions: [optionText] },
-        { headers: { Authorization: `Bearer ${token}` } }
       );
 
       if (response.status === 200) {
@@ -238,11 +236,9 @@ const BuddyPollItem: React.FC<BuddyPollItemProps> = (props) => {
 
   const handleClosePoll = async (pollId: string) => {
     try {
-      const token = localStorage.getItem('token');
       await axios.post(
         `${SERVER_URL}/buddy-polls/${buddyGroupId}/polls/${pollId}/close`,
         {},
-        { headers: { Authorization: `Bearer ${token}` } }
       );
       alert(t('poll.closePollSuccess'));
       onPollUpdate();
@@ -254,10 +250,8 @@ const BuddyPollItem: React.FC<BuddyPollItemProps> = (props) => {
 
   const handleDeletePoll = async (pollId: string) => {
     try {
-      const token = localStorage.getItem('token');
       await axios.delete(
         `${SERVER_URL}/buddy-polls/${buddyGroupId}/polls/${pollId}`,
-        { headers: { Authorization: `Bearer ${token}` } }
       );
       alert(t('poll.deletePollSuccess'));
       onPollUpdate();
@@ -280,11 +274,9 @@ const BuddyPollItem: React.FC<BuddyPollItemProps> = (props) => {
     }
 
     try {
-      const token = localStorage.getItem('token');
       const response = await axios.post(
         `${SERVER_URL}/users/profiles`,
         { userIds: voterIds },
-        { headers: { Authorization: `Bearer ${token}` } }
       );
       setCurrentOptionVoters(response.data.users);
       setVoterModalVisible(true);
