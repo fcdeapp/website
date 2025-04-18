@@ -69,13 +69,14 @@
     color: #888;
   }
   
-  input[type="checkbox"] {
+  /* GLOBAL selector must be wrapped in :global(...) */
+  :global(input[type="checkbox"]) {
     width: 1.2rem;
     height: 1.2rem;
     cursor: pointer;
   }
   
-  /* 모달 백드롭 */
+  /* modal backdrop */
   .backdrop {
     position: fixed;
     inset: 0;
