@@ -2,7 +2,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #f8f8fe;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@
     }
   }
   .infoSection {
-    background-color: #f8f8fe;
+    background-color: #fff;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
@@ -284,7 +284,7 @@
   .modalContent {
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 15px;
     width: 80vw;       /* 화면 너비의 80% */
     max-height: 80vh;  /* 화면 높이의 80% */
     overflow-y: auto;  /* 내용이 많으면 세로 스크롤 */
@@ -300,7 +300,7 @@
     padding: 0.75rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 1rem;
     box-sizing: border-box;
   }
@@ -309,7 +309,7 @@
     border: none;
     color: #fff;
     padding: 0.75rem 1.5rem;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     font-weight: 600;
     width: 100%;
@@ -386,7 +386,7 @@
     object-fit: cover;
   }
   .contentContainer {
-    padding: 15px;
+    padding: 25px;
     background-color: #F8F8FE;
     width: 100%;
     z-index: 5;
@@ -417,13 +417,13 @@
   /* 모달 내부 */
   .modalContainer {
     background-color: #F8F8FE;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 15px;
     width: 90%;
   }
   .modalContent {
     background-color: #F8F8FE;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 15px;
   }
   
