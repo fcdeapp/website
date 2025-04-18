@@ -48,7 +48,7 @@ const quickMenuItems: QuickMenuItem[] = [
   { title: "My Posts", route: "/my-posts" },
   { title: "Manage Buddies", route: "/buddy-list" },
   { title: "Manage Friends", route: "/friend-list" },
-  { title: "Settings", route: "/settings" },
+  { title: "Settings", route: "/setting" },
 ];
 
 const MyProfile: React.FC = () => {
