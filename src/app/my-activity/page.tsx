@@ -4,6 +4,7 @@ import React, { useEffect, useState, FocusEvent } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
+import { useConfig } from "../../context/ConfigContext";
 import { jsPDF } from 'jspdf';
 import { useTranslation } from 'react-i18next';
 import PostMain from '../../components/PostMain';
@@ -28,6 +29,7 @@ interface MyActivityData {
 }
 
 const MyActivityPage: React.FC = () => {
+  const { SERVER_URL } = useConfig();
   const { t } = useTranslation();
   const router = useRouter();
 
@@ -40,7 +42,7 @@ const MyActivityPage: React.FC = () => {
   // 1) Fetch user activity
   const fetchUserData = async() => {
     try {
-      const resp = await axios.get<MyActivityData>('/my-activity/all', { withCredentials: true });
+      const resp = await axios.get<MyActivityData>(`${SERVER_URL}/my-activity/all`, { withCredentials: true });
       const data = resp.data;
       setUserData(data);
 
@@ -119,7 +121,7 @@ const MyActivityPage: React.FC = () => {
   // 5) Handle delete
   const handleDelete = (type: ItemType, idx: number) => {
     if (!confirm(t('deleteConfirmationMessage'))) return;
-    axios.delete('/my-activity/delete', {
+    axios.delete(`${SERVER_URL}/my-activity/delete`, {
       data: { type, index: idx },
       withCredentials: true
     })
@@ -133,7 +135,7 @@ const MyActivityPage: React.FC = () => {
   // 6) Handle reason edit on blur
   const handleReasonEdit = (idx: number, newReason: string) => {
     const report = userData!.reportInquiries[idx];
-    axios.put('/my-activity/report/edit', { reportId: report._id, reason: newReason }, { withCredentials: true })
+    axios.put(`${SERVER_URL}/my-activity/report/edit`, { reportId: report._id, reason: newReason }, { withCredentials: true })
       .then(()=> {
         alert(t('reportUpdatedSuccessfully'));
         fetchUserData();
@@ -143,9 +145,8 @@ const MyActivityPage: React.FC = () => {
 
   // 7) Login check
   const ensureLogin = async() => {
-    // cookie-based; try a ping endpoint
     try {
-      await axios.get('/auth/check', { withCredentials: true });
+      await axios.get(`${SERVER_URL}/auth/check`, { withCredentials: true });
       return true;
     } catch {
       setLoginOverlayVisible(true);
