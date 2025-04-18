@@ -1,11 +1,16 @@
 /* styles/pages/Setting.module.css */
 
-.container {
+.pageWrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: #F8F8FE;
+  }
+  
+  .container {
     max-width: 640px;
     margin: 0 auto;
     padding: 16px;
     background: #F8F8FE;
-    min-height: 100vh;
     font-family: sans-serif;
   }
   
@@ -18,9 +23,14 @@
   .backBtn {
     border: none;
     background: none;
-    font-size: 1.5rem;
+    padding: 0;
     cursor: pointer;
     margin-right: 12px;
+  }
+  
+  .backIcon {
+    width: 1.5rem;
+    height: 1.5rem;
   }
   
   .title {
@@ -67,9 +77,9 @@
   
   .chevron {
     color: #888;
+    font-size: 1.5rem;
   }
   
-  /* modal backdrop */
   .backdrop {
     position: fixed;
     inset: 0;
@@ -79,7 +89,6 @@
     justify-content: center;
   }
   
-  /* 신고 안내 모달 */
   .modal {
     background: #fff;
     border-radius: 12px;
@@ -119,7 +128,6 @@
     cursor: pointer;
   }
   
-  /* 반응형 */
   @media (max-width: 480px) {
     .container { padding: 8px; }
     .title { font-size: 1.25rem; }
