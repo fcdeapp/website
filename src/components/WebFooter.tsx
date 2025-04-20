@@ -75,7 +75,7 @@ export default function WebFooter() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>© {new Date().getFullYear()} Abrody. All rights reserved.</p>
+        <p>ⓒ {new Date().getFullYear()} Abrody, operated by FacadeConnect Co., Ltd. All rights reserved.</p>
       </div>
     </footer>
   );
