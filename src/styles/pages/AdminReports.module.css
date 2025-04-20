@@ -151,3 +151,20 @@
     background: #ccc;
   }
   
+  /* counts table */
+.countTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  .countTable th,
+  .countTable td {
+    border: 1px solid #ddd;
+    padding: 0.6rem;
+    text-align: center;
+  }
+  .countTable th {
+    background: #f0f0f0;
+    font-weight: 600;
+  }
+  

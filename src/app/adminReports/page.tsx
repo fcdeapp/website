@@ -40,6 +40,15 @@ interface RegionGroup<T> {
   disabledUsers?: DisabledUser[];
 }
 
+interface CountRow {
+    region: string;
+    errorLogs: number;
+    reports: number;
+    inquiries: number;
+    notifications: number;
+    disabledUsers: number;
+  }
+
 const ITEMS_PER_PAGE = 8;
 const DEFAULT_REGIONS = ["ap-northeast-2", "ap-southeast-2", "ca-central-1", "eu-west-2"];
 
@@ -56,6 +65,7 @@ export default function AdminReports() {
   const [regionData, setRegionData] = useState<RegionGroup<any>[]>([]);
   const [notifications, setNotifications] = useState<NotificationItem[]>([]);
   const [disabledUsersData, setDisabledUsersData] = useState<RegionGroup<DisabledUser>[]>([]);
+  const [counts, setCounts] = useState<CountRow[]>([]);
 
   // 페이징
   const [page, setPage] = useState(1);
@@ -103,6 +113,14 @@ export default function AdminReports() {
       }
     })();
   }, [category, SERVER_URL]);
+
+  // 데이터 불러오기 useEffect 에서 추가:
+    useEffect(() => {
+    axios.get<{ counts: CountRow[] }>(
+        `${SERVER_URL}/api/admin/reports/counts`, { withCredentials: true }
+    ).then(res => setCounts(res.data.counts))
+    .catch(err => console.error(err));
+    }, [SERVER_URL]);
 
   // --- 지역 옵션 계산 ---
   const regionOptions: string[] = (() => {
@@ -234,6 +252,31 @@ export default function AdminReports() {
   return (
     <div className={styles.container}>
       <h1 className={styles.header}>Admin Reports</h1>
+
+      <table className={styles.countTable}>
+        <thead>
+            <tr>
+            <th>Region</th>
+            <th>Error Logs</th>
+            <th>Reports</th>
+            <th>Inquiries</th>
+            <th>Notifications</th>
+            <th>Disabled Users</th>
+            </tr>
+        </thead>
+        <tbody>
+            {counts.map(row => (
+            <tr key={row.region}>
+                <td>{row.region}</td>
+                <td>{row.errorLogs}</td>
+                <td>{row.reports}</td>
+                <td>{row.inquiries}</td>
+                <td>{row.notifications}</td>
+                <td>{row.disabledUsers}</td>
+            </tr>
+            ))}
+        </tbody>
+        </table>
 
       <div className={styles.filterRow}>
         <select value={category} onChange={e => setCategory(e.target.value as any)}>
