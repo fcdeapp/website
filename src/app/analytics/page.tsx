@@ -92,17 +92,125 @@ export default function AdminAnalyticsPage() {
       .finally(() => setLoading(false));
   }, [SERVER_URL, region, start, end]);
 
-  // 공통 함수: 날짜 레이블
-  const labels = data.map((row) => row.date.slice(0, 10));
+  // 공통 레이블
+  const labels = data.map((r) => r.date.slice(0, 10));
 
-  // 차트 데이터 생성 헬퍼
-  const makeLineDataset = (label: string, values: number[], color: string) => ({
-    label,
-    data: values,
-    borderColor: color,
-    backgroundColor: "transparent",
-    tension: 0.3,
-  });
+  // 데이터셋 준비
+  const totalDataset = {
+    labels,
+    datasets: [
+      {
+        label: "Total Users",
+        data: data.map((r) => r.totalUsers),
+        borderColor: "#556cd6",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "Daily Active",
+        data: data.map((r) => r.dailyActiveUsers),
+        borderColor: "#19857b",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+    ],
+  };
+
+  const usageDataset = {
+    labels,
+    datasets: [
+      {
+        label: "App Load",
+        data: data.map((r) => r.avgAppLoadCount),
+        borderColor: "#556cd6",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "Map Search",
+        data: data.map((r) => r.avgMapSearchCount),
+        borderColor: "#19857b",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "AI Posts",
+        data: data.map((r) => r.avgAiPostCount),
+        borderColor: "#ff8a65",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "Banner Ads",
+        data: data.map((r) => r.avgBannerAdViewCount),
+        borderColor: "#9c27b0",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "Interstitial Ads",
+        data: data.map((r) => r.avgInterstitialAdViewCount),
+        borderColor: "#ffca28",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "Buddy Groups",
+        data: data.map((r) => r.avgBuddyGroups),
+        borderColor: "#00838f",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+    ],
+  };
+
+  const ratioDataset = {
+    labels,
+    datasets: [
+      {
+        label: "Trust Badge",
+        data: data.map((r) => r.trustBadgeRatio * 100),
+        borderColor: "#556cd6",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "Push Notif",
+        data: data.map((r) => r.pushNotificationEnabledRatio * 100),
+        borderColor: "#19857b",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "New Msg",
+        data: data.map((r) => r.newMessageEnabledRatio * 100),
+        borderColor: "#ff8a65",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "Account Public",
+        data: data.map((r) => r.isAccountPublicRatio * 100),
+        borderColor: "#9c27b0",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "Email Verified",
+        data: data.map((r) => r.isEmailVerifiedRatio * 100),
+        borderColor: "#ffca28",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+      {
+        label: "Google Account",
+        data: data.map((r) => r.isGoogleAccountRatio * 100),
+        borderColor: "#00838f",
+        backgroundColor: "transparent",
+        tension: 0.3,
+      },
+    ],
+  };
 
   return (
     <div className={styles.container}>
@@ -111,7 +219,10 @@ export default function AdminAnalyticsPage() {
       <div className={styles.filters}>
         <div className={styles.filterItem}>
           <label>Region</label>
-          <select value={region} onChange={(e) => setRegion(e.target.value)}>
+          <select
+            value={region}
+            onChange={(e) => setRegion(e.target.value)}
+          >
             {REGIONS.map((r) => (
               <option key={r} value={r}>
                 {r}
@@ -143,132 +254,146 @@ export default function AdminAnalyticsPage() {
         <div className={styles.error}>{error}</div>
       ) : (
         <>
-          {/* 표 */}
-          <div className={styles.tableWrapper}>
-            <table className={styles.table}>
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Total Users</th>
-                  <th>Email Opt‑Ins</th>
-                  <th>Daily Active</th>
-                  <th>Avg App Load</th>
-                  <th>Avg Map Search</th>
-                  <th>Avg AI Posts</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((row) => (
-                  <tr key={row.date}>
-                    <td>{row.date.slice(0, 10)}</td>
-                    <td>{row.totalUsers}</td>
-                    <td>{row.emailOptInUsers}</td>
-                    <td>{row.dailyActiveUsers}</td>
-                    <td>{row.avgAppLoadCount.toFixed(1)}</td>
-                    <td>{row.avgMapSearchCount.toFixed(1)}</td>
-                    <td>{row.avgAiPostCount.toFixed(1)}</td>
+          {/* 1. Users & Daily Active */}
+          <section className={styles.section}>
+            <div className={styles.tableWrapper}>
+              <h2 className={styles.sectionTitle}>
+                Users &amp; Daily Active
+              </h2>
+              <table className={styles.table}>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Total Users</th>
+                    <th>Daily Active</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* 그래프 그리드 */}
-          <div className={styles.chartGrid}>
-            {/* 1) Users & Active */}
-            <div className={styles.chartCard}>
-              <h3>Total vs Daily Active Users</h3>
+                </thead>
+                <tbody>
+                  {data.map((r) => (
+                    <tr key={r.date}>
+                      <td>{r.date.slice(0, 10)}</td>
+                      <td>{r.totalUsers}</td>
+                      <td>{r.dailyActiveUsers}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className={styles.chartContainer}>
               <Line
-                data={{
-                  labels,
-                  datasets: [
-                    makeLineDataset(
-                      "Total Users",
-                      data.map((r) => r.totalUsers),
-                      "#6C63FF"
-                    ),
-                    makeLineDataset(
-                      "Daily Active",
-                      data.map((r) => r.dailyActiveUsers),
-                      "#FF6B6B"
-                    ),
-                  ],
-                }}
+                data={totalDataset}
                 options={{
                   responsive: true,
                   plugins: { legend: { position: "bottom" } },
+                  scales: { y: { beginAtZero: true } },
                 }}
               />
             </div>
+          </section>
 
-            {/* 2) Avg Counts */}
-            <div className={styles.chartCard}>
-              <h3>Average Usage Counts</h3>
+          {/* 2. Usage Counts */}
+          <section className={styles.section}>
+            <div className={styles.tableWrapper}>
+              <h2 className={styles.sectionTitle}>Usage Counts</h2>
+              <table className={styles.table}>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>App Load</th>
+                    <th>Map Search</th>
+                    <th>AI Posts</th>
+                    <th>Banner Ads</th>
+                    <th>Interstitial Ads</th>
+                    <th>Buddy Groups</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.map((r) => (
+                    <tr key={r.date}>
+                      <td>{r.date.slice(0, 10)}</td>
+                      <td>{r.avgAppLoadCount.toFixed(1)}</td>
+                      <td>{r.avgMapSearchCount.toFixed(1)}</td>
+                      <td>{r.avgAiPostCount.toFixed(1)}</td>
+                      <td>{r.avgBannerAdViewCount.toFixed(1)}</td>
+                      <td>{r.avgInterstitialAdViewCount.toFixed(1)}</td>
+                      <td>{r.avgBuddyGroups.toFixed(1)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className={styles.chartContainer}>
               <Line
-                data={{
-                  labels,
-                  datasets: [
-                    makeLineDataset(
-                      "App Load",
-                      data.map((r) => r.avgAppLoadCount),
-                      "#1A1045"
-                    ),
-                    makeLineDataset(
-                      "Map Search",
-                      data.map((r) => r.avgMapSearchCount),
-                      "#6C63FF"
-                    ),
-                    makeLineDataset(
-                      "AI Posts",
-                      data.map((r) => r.avgAiPostCount),
-                      "#FF6B6B"
-                    ),
-                  ],
-                }}
+                data={usageDataset}
                 options={{
                   responsive: true,
                   plugins: { legend: { position: "bottom" } },
+                  scales: { y: { beginAtZero: true } },
                 }}
               />
             </div>
+          </section>
 
-            {/* 3) Ratios */}
-            <div className={styles.chartCardFull}>
-              <h3>Feature Ratios (%)</h3>
+          {/* 3. Feature Ratios */}
+          <section className={styles.section}>
+            <div className={styles.tableWrapper}>
+              <h2 className={styles.sectionTitle}>Feature Ratios (%)</h2>
+              <table className={styles.table}>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Trust Badge</th>
+                    <th>Push Notif</th>
+                    <th>New Msg</th>
+                    <th>Public Acc</th>
+                    <th>Email Verified</th>
+                    <th>Google Acc</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.map((r) => (
+                    <tr key={r.date}>
+                      <td>{r.date.slice(0, 10)}</td>
+                      <td>{(r.trustBadgeRatio * 100).toFixed(1)}%</td>
+                      <td>
+                        {(r.pushNotificationEnabledRatio * 100).toFixed(
+                          1
+                        )}
+                        %
+                      </td>
+                      <td>
+                        {(r.newMessageEnabledRatio * 100).toFixed(1)}%
+                      </td>
+                      <td>
+                        {(r.isAccountPublicRatio * 100).toFixed(1)}%
+                      </td>
+                      <td>
+                        {(r.isEmailVerifiedRatio * 100).toFixed(1)}%
+                      </td>
+                      <td>
+                        {(r.isGoogleAccountRatio * 100).toFixed(1)}%
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className={styles.chartContainer}>
               <Line
-                data={{
-                  labels,
-                  datasets: [
-                    makeLineDataset(
-                      "Trust Badge",
-                      data.map((r) => r.trustBadgeRatio * 100),
-                      "#6C63FF"
-                    ),
-                    makeLineDataset(
-                      "Push Notif",
-                      data.map((r) => r.pushNotificationEnabledRatio * 100),
-                      "#FF6B6B"
-                    ),
-                    makeLineDataset(
-                      "New Msg",
-                      data.map((r) => r.newMessageEnabledRatio * 100),
-                      "#1A1045"
-                    ),
-                    makeLineDataset(
-                      "Email Verified",
-                      data.map((r) => r.isEmailVerifiedRatio * 100),
-                      "#00A86B"
-                    ),
-                  ],
-                }}
+                data={ratioDataset}
                 options={{
                   responsive: true,
                   plugins: { legend: { position: "bottom" } },
-                  scales: { y: { ticks: { callback: (v) => `${v}%` } } },
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      ticks: { callback: (v) => `${v}%` },
+                    },
+                  },
                 }}
               />
             </div>
-          </div>
+          </section>
         </>
       )}
     </div>

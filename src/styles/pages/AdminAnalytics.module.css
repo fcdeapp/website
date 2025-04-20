@@ -2,14 +2,14 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    background: #fafafa;
+    background: #f4f6f8;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .header {
-    font-size: 2.25rem;
-    font-weight: bold;
     text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
     margin-bottom: 1.5rem;
     color: #333;
   }
@@ -39,6 +39,13 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .filterItem select:focus,
+  .filterItem input[type="date"]:focus {
+    outline: none;
+    border-color: #556cd6;
   }
   
   .loader,
@@ -50,12 +57,42 @@
   }
   
   .error {
-    color: #d8315b;
+    color: #d32f2f;
   }
   
-  .tableWrapper {
-    overflow-x: auto;
+  /* 각 섹션: 테이블 + 차트 2열, 반응형 1열 */
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
     margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* 섹션 제목 */
+  .sectionTitle {
+    font-size: 1.1rem;
+    margin: 0 0 0.75rem 0;
+    color: #444;
+    text-align: center;
+  }
+  
+  /* 테이블 스타일 */
+  .tableWrapper {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+    transition: transform 0.2s ease;
+  }
+  
+  .tableWrapper:hover {
+    transform: translateY(-2px);
   }
   
   .table {
@@ -66,13 +103,13 @@
   .table th,
   .table td {
     padding: 0.75rem 1rem;
-    border: 1px solid #e0e0e0;
     text-align: center;
+    border-bottom: 1px solid #e0e0e0;
   }
   
   .table th {
-    background: #1a1045;
-    color: #fff;
+    background: #eceff1;
+    color: #333;
     font-weight: 600;
   }
   
@@ -80,30 +117,23 @@
     background: #f9f9f9;
   }
   
-  .chartGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
+  .table tr:hover {
+    background: #f1f3f5;
   }
   
-  .chartCard,
-  .chartCardFull {
+  /* 차트 컨테이너 */
+  .chartContainer {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     padding: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
   }
   
-  .chartCardFull {
-    grid-column: 1 / -1;
-  }
-  
-  .chartCard h3,
-  .chartCardFull h3 {
-    margin: 0 0 0.75rem 0;
-    font-size: 1.1rem;
-    color: #333;
-    text-align: center;
+  .chartContainer:hover {
+    transform: translateY(-2px);
   }
   
