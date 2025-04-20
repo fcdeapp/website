@@ -95,7 +95,7 @@ export default function AdminReports() {
           setRegionData(res.data.regions || []);
         } else if (category === "notifications") {
           const res = await axios.get<NotificationItem[]>(
-            `${SERVER_URL}/api/admin/nl/adminNotifications`,
+            `${SERVER_URL}/api/admin/nl/adminOnlyNotifications?region=${region}`,
             { withCredentials: true }
           );
           setNotifications(res.data || []);
@@ -112,7 +112,7 @@ export default function AdminReports() {
         setLoading(false);
       }
     })();
-  }, [category, SERVER_URL]);
+  }, [category, region, SERVER_URL]);
 
   // 데이터 불러오기 useEffect 에서 추가:
     useEffect(() => {
@@ -213,10 +213,11 @@ export default function AdminReports() {
     }
     setCreateModalOpen(true);
   };
+
   const submitCreate = async () => {
     try {
       const url = editingNotif
-        ? `${SERVER_URL}/api/admin/nl/updateNotification`
+        ? `${SERVER_URL}/api/admin/nl/editNotifications/${editingNotif._id}`
         : `${SERVER_URL}/api/admin/nl/postNotifications`;
       await axios.post(
         url,
@@ -225,7 +226,10 @@ export default function AdminReports() {
           title: formTitle,
           message: formMessage,
           sendTo: region === "all" ? null : region,
-          type: editingNotif?.type || "Broadcast",
+          type: "All",
+          region,
+          // → 관리자 전용 플래그 추가
+          isAdminNotification: true,
         },
         { withCredentials: true }
       );
@@ -236,13 +240,18 @@ export default function AdminReports() {
       alert("Failed");
     }
   };
+
   const deleteNotif = async (id: string) => {
     if (!confirm("Delete this notification?")) return;
     try {
-      await axios.delete(`${SERVER_URL}/api/admin/nl/deleteNotification/${id}`, {
-        withCredentials: true,
-      });
-      setNotifications((n) => n.filter(x => x._id !== id));
+      await axios.delete(
+        `${SERVER_URL}/api/admin/nl/deleteNotifications/${id}`,
+        {
+          data: { region }, // region 필수
+          withCredentials: true,
+        }
+      );
+      setNotifications(n => n.filter(x => x._id !== id));
     } catch (e) {
       console.error(e);
       alert("Failed to delete");
