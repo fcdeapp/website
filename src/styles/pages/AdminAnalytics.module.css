@@ -1,25 +1,32 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;        /* 상하 여백 확대 */
     background: #f4f6f8;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .header {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;      /* 상하 여백 확대 */
     color: #333;
+  }
+  
+  /* 필터 + 다운로드 버튼을 한 줄에 배치 */
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
   }
   
   .filters {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
-    margin-bottom: 2rem;
   }
   
   .filterItem {
@@ -35,9 +42,9 @@
   
   .filterItem select,
   .filterItem input[type="date"] {
-    padding: 0.5rem 0.75rem;
+    padding: 0.6rem 0.8rem;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.2s ease;
   }
@@ -48,11 +55,34 @@
     border-color: #556cd6;
   }
   
+  .downloadButton {
+    padding: 0.65rem 1.2rem;
+    background: #556cd6;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  
+  .downloadButton:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
+  
+  .downloadButton:not(:disabled):hover {
+    background: #4051a4;
+    transform: translateY(-1px);
+  }
+  
+  /* 로딩 & 에러 */
   .loader,
   .error {
     text-align: center;
-    font-size: 1.1rem;
-    padding: 2rem;
+    font-size: 1.2rem;
+    padding: 2.5rem;
     color: #777;
   }
   
@@ -60,12 +90,13 @@
     color: #d32f2f;
   }
   
-  /* 각 섹션: 테이블 + 차트 2열, 반응형 1열 */
+  /* 섹션: 테이블 + 차트 2열, 반응형 1열 */
   .section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+    gap: 2rem;
+    margin-bottom: 3rem;      /* 섹션 간 상하 여백 확대 */
+    padding: 1rem 0;          /* 섹션 내 상하 여백 */
   }
   
   @media (max-width: 768px) {
@@ -76,8 +107,8 @@
   
   /* 섹션 제목 */
   .sectionTitle {
-    font-size: 1.1rem;
-    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
     color: #444;
     text-align: center;
   }
@@ -85,14 +116,14 @@
   /* 테이블 스타일 */
   .tableWrapper {
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     overflow-x: auto;
     transition: transform 0.2s ease;
   }
   
   .tableWrapper:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
   
   .table {
@@ -102,7 +133,7 @@
   
   .table th,
   .table td {
-    padding: 0.75rem 1rem;
+    padding: 0.85rem 1rem;
     text-align: center;
     border-bottom: 1px solid #e0e0e0;
   }
@@ -124,8 +155,8 @@
   /* 차트 컨테이너 */
   .chartContainer {
     background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -134,6 +165,6 @@
   }
   
   .chartContainer:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
   

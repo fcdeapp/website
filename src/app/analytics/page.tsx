@@ -92,6 +92,20 @@ export default function AdminAnalyticsPage() {
       .finally(() => setLoading(false));
   }, [SERVER_URL, region, start, end]);
 
+  // JSON 다운로드 핸들러
+  const handleDownload = () => {
+    const filename = `analytics_${region}_${start}_${end}.json`;
+    const blob = new Blob([JSON.stringify(data, null, 2)], {
+      type: "application/json",
+    });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
   // 공통 레이블
   const labels = data.map((r) => r.date.slice(0, 10));
 
@@ -216,36 +230,45 @@ export default function AdminAnalyticsPage() {
     <div className={styles.container}>
       <h1 className={styles.header}>📊 User Analytics Dashboard</h1>
 
-      <div className={styles.filters}>
-        <div className={styles.filterItem}>
-          <label>Region</label>
-          <select
-            value={region}
-            onChange={(e) => setRegion(e.target.value)}
-          >
-            {REGIONS.map((r) => (
-              <option key={r} value={r}>
-                {r}
-              </option>
-            ))}
-          </select>
+      <div className={styles.toolbar}>
+        <div className={styles.filters}>
+          <div className={styles.filterItem}>
+            <label>Region</label>
+            <select
+              value={region}
+              onChange={(e) => setRegion(e.target.value)}
+            >
+              {REGIONS.map((r) => (
+                <option key={r} value={r}>
+                  {r}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className={styles.filterItem}>
+            <label>Start Date</label>
+            <input
+              type="date"
+              value={start}
+              onChange={(e) => setStart(e.target.value)}
+            />
+          </div>
+          <div className={styles.filterItem}>
+            <label>End Date</label>
+            <input
+              type="date"
+              value={end}
+              onChange={(e) => setEnd(e.target.value)}
+            />
+          </div>
         </div>
-        <div className={styles.filterItem}>
-          <label>Start Date</label>
-          <input
-            type="date"
-            value={start}
-            onChange={(e) => setStart(e.target.value)}
-          />
-        </div>
-        <div className={styles.filterItem}>
-          <label>End Date</label>
-          <input
-            type="date"
-            value={end}
-            onChange={(e) => setEnd(e.target.value)}
-          />
-        </div>
+        <button
+          className={styles.downloadButton}
+          onClick={handleDownload}
+          disabled={!data.length}
+        >
+          Download JSON
+        </button>
       </div>
 
       {loading ? (
