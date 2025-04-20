@@ -1,0 +1,153 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+    background: #fafafa;
+  }
+  .header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .filterRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  .filterRow select {
+    padding: 0.4rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .toggleBtn, .createBtn {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #1a1045;
+    color: #fff;
+    font-weight: 600;
+  }
+  .createBtn {
+    background: #fd3a69;
+  }
+  
+  .loader {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .listItem {
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .listItem small {
+    color: #999;
+    margin-left: 0.5rem;
+  }
+  .respondBtn {
+    padding: 0.3rem 0.6rem;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .crudBtns button {
+    margin-left: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .crudBtns button:first-child {
+    background: #1a1045;
+    color: #fff;
+  }
+  .crudBtns button:last-child {
+    background: #d8315b;
+    color: #fff;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .pagination button {
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    background: #ddd;
+    cursor: pointer;
+  }
+  .pagination span {
+    font-weight: 600;
+  }
+  
+  /* Modal 공통 */
+  .modalOverlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  .modal h3 {
+    margin-top: 0;
+  }
+  .modal input,
+  .modal textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+  }
+  .modalBtns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  .modalBtns button {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .modalBtns button:first-child {
+    background: #1a1045;
+    color: #fff;
+  }
+  .modalBtns button:last-child {
+    background: #ccc;
+  }
+  
