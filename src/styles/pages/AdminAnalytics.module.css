@@ -1,0 +1,109 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background: #fafafa;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .header {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .filterItem {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .filterItem label {
+    margin-bottom: 0.25rem;
+  }
+  
+  .filterItem select,
+  .filterItem input[type="date"] {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .loader,
+  .error {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 2rem;
+    color: #777;
+  }
+  
+  .error {
+    color: #d8315b;
+  }
+  
+  .tableWrapper {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+  }
+  
+  .table th {
+    background: #1a1045;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .chartGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .chartCard,
+  .chartCardFull {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: 320px;
+  }
+  
+  .chartCardFull {
+    grid-column: 1 / -1;
+  }
+  
+  .chartCard h3,
+  .chartCardFull h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+  }
+  
