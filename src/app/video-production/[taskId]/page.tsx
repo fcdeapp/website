@@ -1,5 +1,3 @@
-'use client';
-
 // src/app/video-production/[taskId]/page.tsx
 import { Metadata } from 'next';
 import React from 'react';
