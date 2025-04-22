@@ -1,22 +1,15 @@
 // src/app/video-production/[taskId]/page.tsx
-
 import React from 'react';
 import VideoProductionPage from '../../../components/VideoProductionPage';
 
+// CSR 강제(dynamic routing)
 export const dynamic = 'force-dynamic';
 
-// 이거 꼭 추가!
-export async function generateStaticParams() {
-  return []; // 빈 배열 리턴해도 타입 문제 해결됨!
-}
-
-interface PageProps {
+export default function VideoProductionTaskPage({
+  params,
+}: {
   params: { taskId: string };
-}
-
-const VideoProductionTaskPage = ({ params }: PageProps) => {
-  const { taskId } = params;
+}) {
+  const taskId = params.taskId;
   return <VideoProductionPage taskId={taskId} />;
-};
-
-export default VideoProductionTaskPage;
+}
