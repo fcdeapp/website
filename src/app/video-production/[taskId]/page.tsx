@@ -9,15 +9,19 @@ type Params = {
   taskId: string;
 };
 
+export const dynamic = 'force-dynamic';
+
+export const generateStaticParams = async () => {
+  return []; // Next.js가 dynamic으로 처리
+};
+
 interface PageProps {
-  params: Params; // 명확하게 정의
+  params: { taskId: string };
   searchParams?: { [key: string]: string | string[] | undefined };
 }
 
-export const dynamic = 'force-dynamic'; // 동적 설정
-
-const VideoProductionTaskPage = (props: PageProps) => {
-  const { taskId } = props.params;
+const VideoProductionTaskPage = ({ params }: PageProps) => {
+  const { taskId } = params;
   return <VideoProductionPage taskId={taskId} />;
 };
 
