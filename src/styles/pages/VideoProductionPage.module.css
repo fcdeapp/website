@@ -1,0 +1,134 @@
+/* styles/pages/VideoProductionPage.module.css */
+
+.container {
+    background-color: #F8F8FE;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .scrollContent {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 20px 90px;
+  }
+  .pageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1A1045;
+    text-align: center;
+    margin: 30px 0 20px;
+  }
+  .formContainer,
+  .stepContainer {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .formLabel,
+  .subLabel {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #1A1045;
+  }
+  .textInput {
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+  }
+  .picker {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  .button,
+  .buttonWide {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+  }
+  .buttonWide {
+    width: 100%;
+  }
+  .buttonContainer,
+  .buttonContainerImages,
+  .buttonContainerVertical,
+  .editButtonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .buttonContainerVertical {
+    flex-direction: column;
+  }
+  .stepTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1A1045;
+  }
+  .resultContainer {
+    max-height: 500px;
+    overflow-y: auto;
+    margin: 10px 0;
+  }
+  .resultText,
+  .infoText,
+  .errorText {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .infoText { color: #888; }
+  .errorText { color: red; }
+  .sceneContainer {
+    background-color: #EFEFEF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .sceneHeader {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #1A1045;
+  }
+  .imagePreview {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  .loader {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .spinner {
+    width: 36px;
+    height: 36px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #1A1045;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  

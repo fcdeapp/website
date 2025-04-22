@@ -1,0 +1,200 @@
+/* pages/VideoTaskList.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F9FA;
+    padding: 40px 20px 80px;
+    position: relative;
+    min-height: 100vh;
+  }
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .header {
+    font-size: 28px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0;
+  }
+  .toggleButton {
+    background-color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  .toggleText {
+    color: #555;
+    font-weight: 600;
+  }
+  .list {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .loader {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #0D6EFD;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 20px 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  .taskTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: #343A40;
+  }
+  .metaRow {
+    display: flex;
+    justify-content: space-between;
+  }
+  .status {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0D6EFD;
+  }
+  .step {
+    font-size: 14px;
+    font-weight: 500;
+    color: #6C757D;
+  }
+  .error {
+    color: #DC3545;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .fab {
+    position: absolute;
+    right: 24px;
+    bottom: 104px;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .fabText {
+    font-size: 32px;
+    color: #555;
+    line-height: 36px;
+  }
+  .footer {
+    margin: 20px auto;
+    font-size: 12px;
+    color: #ADB5BD;
+  }
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .modalContent {
+    width: 85%;
+    max-width: 400px;
+    background-color: #FFF;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .modalTitle {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #212529;
+  }
+  .modalSubTitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #212529;
+    align-self: flex-start;
+  }
+  .optionRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .optionButton {
+    padding: 8px 12px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    margin: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  .optionButtonSelected {
+    background-color: #fff;
+    border: 3px solid #d8315b;
+  }
+  .optionButtonText {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .timeText {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+  }
+  .modalButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: none;
+    cursor: pointer;
+  }
+  .modalButtonText {
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .modalCancel {
+    margin-top: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .modalCancelText {
+    color: #DC3545;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
