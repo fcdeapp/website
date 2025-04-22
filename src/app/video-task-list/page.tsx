@@ -131,7 +131,7 @@ const VideoTaskList: React.FC = () => {
     <div
       key={item._id}
       className={styles.card}
-      onClick={() => router.push(`/video-production/${item._id}`)}
+      onClick={() => router.push(`/video-production?taskId=${item._id}`)}
     >
       <h2 className={styles.taskTitle}>Task #{item._id.slice(-6)}</h2>
       <div className={styles.metaRow}>

@@ -24,16 +24,14 @@ type ScenarioResult = {
   newsArticles?: Article[];
 };
 
-interface VideoProductionPageProps {
-    taskId?: string;
-  }
+interface VideoProductionPageProps {}
   
-  const VideoProductionPage: React.FC<VideoProductionPageProps> = ({ taskId: initialTaskId }) => {
+  const VideoProductionPage: React.FC<VideoProductionPageProps> = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { SERVER_URL } = useConfig();
 
-  const [taskId, setTaskId] = useState<string | null>(initialTaskId || null);
+  const [taskId, setTaskId] = useState<string | null>(null);
   const [currentStep, setCurrentStep] = useState<number>(0);
   const [loading,     setLoading]     = useState<boolean>(false);
   const [error,       setError]       = useState<string>('');
