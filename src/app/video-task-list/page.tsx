@@ -2,7 +2,7 @@
 // pages/video-task-list.tsx
 
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from "next/navigation";
 import axios from 'axios';
 import styles from '../../styles/pages/VideoTaskList.module.css';
 import { useConfig } from '../../context/ConfigContext';

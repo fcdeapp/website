@@ -1,7 +1,7 @@
 // app/video-production/page.tsx
 'use client';
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter, useSearchParams } from "next/navigation";
 import axios from 'axios';
 import { useConfig } from '../../context/ConfigContext';
 import styles from '../../styles/pages/VideoProductionPage.module.css';
@@ -26,9 +26,10 @@ type ScenarioResult = {
 
 const VideoProductionPage: React.FC = () => {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { SERVER_URL } = useConfig();
 
-  const [taskId,    setTaskId]    = useState<string | null>((router.query.taskId as string) || null);
+  const [taskId, setTaskId] = useState<string | null>(null);
   const [currentStep, setCurrentStep] = useState<number>(0);
   const [loading,     setLoading]     = useState<boolean>(false);
   const [error,       setError]       = useState<string>('');
@@ -51,6 +52,11 @@ const VideoProductionPage: React.FC = () => {
   const [finalVideo,     setFinalVideo]     = useState<string>('');
 
   const resetError = () => setError('');
+
+  useEffect(() => {
+    const param = searchParams.get('taskId');
+    if (param) setTaskId(param);
+  }, [searchParams]);
 
   // CREATE new task
   useEffect(() => {
