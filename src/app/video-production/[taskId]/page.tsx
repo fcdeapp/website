@@ -1,16 +1,17 @@
 'use client';
 
+// src/app/video-production/[taskId]/page.tsx
 import { Metadata } from 'next';
 import React from 'react';
 import VideoProductionPage from '../../../components/VideoProductionPage';
 
-// Next.js PageProps 타입
 interface PageProps {
   params: {
     taskId: string;
   };
-  searchParams?: { [key: string]: string | string[] | undefined };
 }
+
+export const dynamic = 'force-dynamic'; // 추가로 dynamic routing 설정
 
 const VideoProductionTaskPage = ({ params }: PageProps) => {
   const { taskId } = params;
@@ -19,4 +20,3 @@ const VideoProductionTaskPage = ({ params }: PageProps) => {
 };
 
 export default VideoProductionTaskPage;
-
