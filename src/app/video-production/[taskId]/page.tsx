@@ -1,7 +1,7 @@
 // src/app/video-production/[taskId]/page.tsx
 import React from 'react';
 import VideoProductionPage from '../../../components/VideoProductionPage';
-
+/*
 // CSR 강제(dynamic routing)
 export const dynamic = 'force-dynamic';
 
@@ -10,3 +10,4 @@ export default function VideoProductionTaskPage(props: any) {
   const { taskId } = props.params as { taskId: string };
   return <VideoProductionPage taskId={taskId} />;
 }
+*/

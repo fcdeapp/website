@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
+  output: "export",
   eslint: {
     // 프로덕션 빌드 시 ESLint 오류 무시 (임시 조치)
     ignoreDuringBuilds: true,
