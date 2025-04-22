@@ -5,17 +5,19 @@ import { Metadata } from 'next';
 import React from 'react';
 import VideoProductionPage from '../../../components/VideoProductionPage';
 
+type Params = {
+  taskId: string;
+};
+
 interface PageProps {
-  params: {
-    taskId: string;
-  };
+  params: Params; // 명확하게 정의
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
-export const dynamic = 'force-dynamic'; // 추가로 dynamic routing 설정
+export const dynamic = 'force-dynamic'; // 동적 설정
 
-const VideoProductionTaskPage = ({ params }: PageProps) => {
-  const { taskId } = params;
-
+const VideoProductionTaskPage = (props: PageProps) => {
+  const { taskId } = props.params;
   return <VideoProductionPage taskId={taskId} />;
 };
 
