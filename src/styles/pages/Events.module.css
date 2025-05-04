@@ -1,0 +1,118 @@
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .addButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .addButton:hover { background-color: #005bb5; }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table th, .table td {
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  .editBtn, .delBtn {
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .editBtn { background: #f7b500; color: #fff; }
+  .delBtn { background: #e00; color: #fff; }
+  .editBtn:hover { background: #d49b00; }
+  .delBtn:hover { background: #c00; }
+  
+  /* Modal */
+  .modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal {
+    background: white;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 6px;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: grid;
+    gap: 0.75rem;
+  }
+  .modal h2 {
+    margin: 0 0 1rem;
+    text-align: center;
+  }
+  .modal label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+  .modal input[type="text"],
+  .modal input[type="url"],
+  .modal input[type="date"],
+  .modal textarea,
+  .modal select {
+    padding: 0.4rem;
+    margin-top: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .checkboxLabel {
+    flex-direction: row;
+    align-items: center;
+  }
+  .checkboxLabel input {
+    margin-right: 0.5rem;
+  }
+  .modalButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .saveBtn {
+    background: #0070f3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .cancelBtn {
+    background: #aaa;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .saveBtn:hover { background: #005bb5; }
+  .cancelBtn:hover { background: #888; }
+  
