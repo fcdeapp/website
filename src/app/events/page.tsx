@@ -269,6 +269,7 @@ export default function EventsPage() {
                 <option value="Canada">Canada</option>
                 <option value="Australia">Australia</option>
                 <option value="United Kingdom">United Kingdom</option>
+                <option value="South Korea">South Korea</option>
               </select>
             </label>
             <label>
