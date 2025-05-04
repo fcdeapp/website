@@ -19,7 +19,7 @@ interface Event {
     address?: string;
     city?: string;
     provinceOrState?: string;
-    country: "Canada" | "Australia" | "United Kingdom";
+    country: "Canada" | "Australia" | "United Kingdom" | "South Korea";
   };
   location: { coordinates: [number, number] };
   tags: string[];
