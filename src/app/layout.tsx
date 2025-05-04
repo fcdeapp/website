@@ -37,12 +37,12 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // localStorage는 클라이언트 전용이므로, useEffect 내에서 사용
-  const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || "https://yourserver.com";
+  const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || "https://beta.fcde.app";
 
   // 서버 상태 체크 (건강 체크)
   const checkServerHealth = async () => {
     try {
-      await fetch(`${SERVER_URL}/health`);
+      await fetch(`${SERVER_URL}/healthWeb`);
       setMaintenanceVisible(false);
     } catch (err) {
       setMaintenanceVisible(true);
