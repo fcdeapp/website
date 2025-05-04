@@ -63,7 +63,7 @@ export default function EventsPage() {
 
   async function fetchEvents() {
     try {
-      const res = await axios.get<Event[]>(`${SERVER_URL}/api/events/${region}`);
+      const res = await axios.get<Event[]>(`${SERVER_URL}/api/events/events/${region}`);
       setEvents(res.data);
     } catch (err) {
       console.error(err);
@@ -102,7 +102,7 @@ export default function EventsPage() {
 
   async function handleDelete(id?: string) {
     if (!id) return;
-    await axios.delete(`${SERVER_URL}/api/events/${region}/${id}`);
+    await axios.delete(`${SERVER_URL}/api/events/events/${region}/${id}`);
     fetchEvents();
   }
 
@@ -121,9 +121,9 @@ export default function EventsPage() {
     e.preventDefault();
     try {
       if (editing?._id) {
-        await axios.put(`${SERVER_URL}/api/events/${region}/${editing._id}`, form);
+        await axios.put(`${SERVER_URL}/api/events/events/${region}/${editing._id}`, form);
       } else {
-        await axios.post(`${SERVER_URL}/api/events/${region}`, form);
+        await axios.post(`${SERVER_URL}/api/events/events/${region}`, form);
       }
       setModalOpen(false);
       fetchEvents();
