@@ -37,6 +37,8 @@ const REGIONS = [
 
 export default function EventsPage() {
   const { SERVER_URL } = useConfig();
+  const [jsonModalOpen, setJsonModalOpen] = useState(false);
+  const [jsonContent, setJsonContent] = useState<string>("");
   const [region, setRegion] = useState<string>(REGIONS[0].code);
   const [events, setEvents] = useState<Event[]>([]);
   const [modalOpen, setModalOpen] = useState(false);
@@ -106,6 +108,11 @@ export default function EventsPage() {
     fetchEvents();
   }
 
+  function openJson(ev: Event) {
+    setJsonContent(JSON.stringify(ev, null, 2));
+    setJsonModalOpen(true);
+  }
+
   function handleChange<K extends keyof Event>(field: K, value: Event[K]) {
     setForm(f => ({ ...f, [field]: value }));
   }
@@ -160,6 +167,7 @@ export default function EventsPage() {
               <td>
                 <button onClick={() => openEdit(ev)} className={styles.editBtn}>Edit</button>
                 <button onClick={() => handleDelete(ev._id)} className={styles.delBtn}>Delete</button>
+                <button onClick={() => openJson(ev)} className={styles.jsonBtn}>JSON</button>
               </td>
             </tr>
           ))}
@@ -331,6 +339,23 @@ export default function EventsPage() {
           </form>
         </div>
       )}
+
+     {jsonModalOpen && (
+       <div className={styles.modalBackdrop}>
+         <div className={styles.modal}>
+           <h2>Event JSON</h2>
+           <pre style={{ whiteSpace: "pre-wrap", wordBreak: "break-all", maxHeight: "60vh", overflowY: "auto" }}>
+             {jsonContent}
+           </pre>
+           <div className={styles.modalButtons}>
+             <button onClick={() => setJsonModalOpen(false)} className={styles.cancelBtn}>
+               Close
+             </button>
+           </div>
+         </div>
+       </div>
+     )}
+
     </div>
   );
 }
