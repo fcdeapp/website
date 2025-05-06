@@ -1,3 +1,4 @@
+// src/pages/owl-videos.tsx
 "use client";
 
 import { useState, useEffect, ChangeEvent } from "react";
@@ -32,30 +33,35 @@ export default function OwlVideosPage() {
   const { SERVER_URL } = useConfig();
   const region = "ap-northeast-2";
 
+  // 전체 비디오 리스트
   const [videos, setVideos] = useState<OwlVideo[]>([]);
+
+  // 생성용 state
   const [userId, setUserId] = useState<string>("");
   const [country, setCountry] = useState<string>("");
   const [description, setDescription] = useState<string>("");
-  const [generating, setGenerating] = useState<Record<string, boolean>>({});
-  const [scenePrompts, setScenePrompts] = useState<Record<string, string>>({});
-
-  // 신규 생성 폼용 동적 씬 배열
   const [newScenes, setNewScenes] = useState<NewScene[]>([
     { image: null, audio: null, video: null, prompt: "" },
   ]);
 
-  // 기존 영상 불러오기
+  // 편집용 state
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editCountry, setEditCountry] = useState<string>("");
+  const [editDescription, setEditDescription] = useState<string>("");
+  const [editScenes, setEditScenes] = useState<NewScene[]>([]);
+
+  // 씬별 AI 생성
+  const [scenePrompts, setScenePrompts] = useState<Record<string, string>>({});
+  const [generating, setGenerating] = useState<Record<string, boolean>>({});
+
+  // 초기 로드
   useEffect(() => {
     fetchVideos();
-  }, []);
-
-  // 로컬스토리지에서 userId 로드
-  useEffect(() => {
     const stored = localStorage.getItem("userId");
     if (stored) setUserId(stored);
   }, []);
 
-  const fetchVideos = async () => {
+  async function fetchVideos() {
     try {
       const res = await axios.get<OwlVideo[]>(
         `${SERVER_URL}/owl-videos?region=${region}`,
@@ -63,12 +69,32 @@ export default function OwlVideosPage() {
       );
       setVideos(res.data);
     } catch (err) {
-      console.error("Error fetching owl videos", err);
+      console.error(err);
+      alert("Failed to fetch videos");
     }
-  };
+  }
 
-  // 새 영상 생성
-  const handleCreate = async () => {
+  // ============ Create ============
+  function addNewScene() {
+    setNewScenes((prev) => [
+      ...prev,
+      { image: null, audio: null, video: null, prompt: "" },
+    ]);
+  }
+  function removeNewScene(idx: number) {
+    setNewScenes((prev) => prev.filter((_, i) => i !== idx));
+  }
+  function updateNewSceneField(
+    idx: number,
+    field: keyof NewScene,
+    value: File | string | null
+  ) {
+    setNewScenes((prev) =>
+      prev.map((s, i) => (i === idx ? { ...s, [field]: value } : s))
+    );
+  }
+
+  async function handleCreate() {
     if (!userId || !country) {
       alert("User ID, country required.");
       return;
@@ -78,46 +104,103 @@ export default function OwlVideosPage() {
     form.append("country", country);
     form.append("description", description);
     form.append("region", region);
-    // 씬별로 이미지/오디오/비디오/프롬프트 append
-    newScenes.forEach(scene => {
-      if (scene.image) {
-        form.append("images", scene.image, scene.image.name);
-      }
-      if (scene.audio) {
-        form.append("audios", scene.audio, scene.audio.name);
-      }
-      if (scene.video) {
-        form.append("videos", scene.video, scene.video.name);
-      }
+
+    newScenes.forEach((scene) => {
+      if (scene.image) form.append("images", scene.image, scene.image.name);
+      if (scene.audio) form.append("audios", scene.audio, scene.audio.name);
+      if (scene.video) form.append("videos", scene.video, scene.video.name);
       form.append("prompts", scene.prompt);
     });
+
     try {
-      await axios.post(
-        `${SERVER_URL}/owl-videos`,
-        form,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-          withCredentials: true,
-        }
-      );
+      await axios.post(`${SERVER_URL}/owl-videos`, form, {
+        headers: { "Content-Type": "multipart/form-data" },
+        withCredentials: true,
+      });
       // 초기화
       setCountry("");
       setDescription("");
       setNewScenes([{ image: null, audio: null, video: null, prompt: "" }]);
       fetchVideos();
     } catch (err) {
-      console.error("Error creating owl video", err);
-      alert("Failed to create.");
+      console.error(err);
+      alert("Failed to create video");
     }
-  };
+  }
 
-  // 씬별 미디어 PATCH
-  const handlePatchMedia = async (
+  // ============ Edit ============
+  function enterEditMode(video: OwlVideo) {
+    setEditingId(video._id);
+    setEditCountry(video.country);
+    setEditDescription(video.description);
+    setEditScenes(
+      video.scenes.map((s) => ({
+        image: null,
+        audio: null,
+        video: null,
+        prompt: scenePrompts[`${video._id}-${s.sceneNumber}`] || "",
+      }))
+    );
+  }
+  function exitEditMode() {
+    setEditingId(null);
+  }
+  function addEditScene() {
+    setEditScenes((prev) => [
+      ...prev,
+      { image: null, audio: null, video: null, prompt: "" },
+    ]);
+  }
+  function removeEditScene(idx: number) {
+    setEditScenes((prev) => prev.filter((_, i) => i !== idx));
+  }
+  function updateEditSceneField(
+    idx: number,
+    field: keyof NewScene,
+    value: File | string | null
+  ) {
+    setEditScenes((prev) =>
+      prev.map((s, i) => (i === idx ? { ...s, [field]: value } : s))
+    );
+  }
+
+  async function handleSave(video: OwlVideo) {
+    if (!editCountry) {
+      alert("Country required.");
+      return;
+    }
+    const form = new FormData();
+    form.append("country", editCountry);
+    form.append("description", editDescription);
+    form.append("region", region);
+
+    editScenes.forEach((scene) => {
+      if (scene.image) form.append("images", scene.image, scene.image.name);
+      if (scene.audio) form.append("audios", scene.audio, scene.audio.name);
+      if (scene.video) form.append("videos", scene.video, scene.video.name);
+      form.append("prompts", scene.prompt);
+    });
+
+    try {
+      await axios.put(`${SERVER_URL}/owl-videos/${video._id}`, form, {
+        headers: { "Content-Type": "multipart/form-data" },
+        withCredentials: true,
+      });
+      exitEditMode();
+      fetchVideos();
+    } catch (err) {
+      console.error(err);
+      alert("Failed to save edits");
+    }
+  }
+
+  // ============ Patch Media & Generate ============
+  async function handlePatchMedia(
     videoId: string,
     sceneNumber: number,
     field: "image" | "audio" | "video",
     file: File
-  ) => {
+  ) {
     const form = new FormData();
     form.append("region", region);
     form.append(field, file);
@@ -129,15 +212,13 @@ export default function OwlVideosPage() {
       );
       fetchVideos();
     } catch (err) {
-      console.error(`Error updating ${field}`, err);
-      alert(`Failed to update ${field}.`);
+      console.error(err);
+      alert(`Failed to update ${field}`);
     }
-  };
-
-  // 씬별 AI 비디오 생성 요청
-  const handleGenerateVideo = async (videoId: string, sceneNumber: number) => {
+  }
+  async function handleGenerateVideo(videoId: string, sceneNumber: number) {
     const key = `${videoId}-${sceneNumber}`;
-    setGenerating(prev => ({ ...prev, [key]: true }));
+    setGenerating((prev) => ({ ...prev, [key]: true }));
     try {
       const prompt = scenePrompts[key] || "";
       await axios.post(
@@ -147,16 +228,16 @@ export default function OwlVideosPage() {
       );
       alert("Video generation started.");
     } catch (err) {
-      console.error("Error generating video", err);
-      alert("Failed to start video generation.");
+      console.error(err);
+      alert("Failed to start video generation");
     } finally {
-      setGenerating(prev => ({ ...prev, [key]: false }));
+      setGenerating((prev) => ({ ...prev, [key]: false }));
     }
-  };
+  }
 
-  // 영상 전체 삭제
-  const handleDeleteVideo = async (videoId: string) => {
-    if (!confirm("Delete this video entirely?")) return;
+  // ============ Delete ============
+  async function handleDeleteVideo(videoId: string) {
+    if (!confirm("진짜 삭제하시겠습니까?")) return;
     try {
       await axios.delete(
         `${SERVER_URL}/owl-videos/${videoId}?region=${region}`,
@@ -164,24 +245,10 @@ export default function OwlVideosPage() {
       );
       fetchVideos();
     } catch (err) {
-      console.error("Error deleting owl video", err);
-      alert("Failed to delete.");
+      console.error(err);
+      alert("Failed to delete video");
     }
-  };
-
-  // 신규 씬 추가/삭제/업데이트
-  const addScene = () =>
-    setNewScenes(prev => [...prev, { image: null, audio: null, video: null, prompt: "" }]);
-  const removeScene = (idx: number) =>
-    setNewScenes(prev => prev.filter((_, i) => i !== idx));
-  const updateSceneField = (
-    idx: number,
-    field: keyof NewScene,
-    value: File | string | null
-  ) =>
-    setNewScenes(prev =>
-      prev.map((s, i) => (i === idx ? { ...s, [field]: value } : s))
-    );
+  }
 
   return (
     <div className={styles.container}>
@@ -191,20 +258,21 @@ export default function OwlVideosPage() {
       <main className={styles.main}>
 
         {/* — Create New Owl Video — */}
-        <section className={styles.section}>
+        <section className={styles.createSection}>
           <h2 className={styles.sectionTitle}>Create New Owl Video</h2>
+
           <div className={styles.formRow}>
             <input
+              className={styles.input}
               type="text"
               placeholder="User ID"
               value={userId}
               readOnly
-              className={styles.input}
             />
             <select
+              className={styles.select}
               value={country}
-              onChange={e => setCountry(e.target.value)}
-              className={styles.input}
+              onChange={(e) => setCountry(e.target.value)}
             >
               <option value="">Select country</option>
               <option value="Canada">Canada</option>
@@ -213,211 +281,330 @@ export default function OwlVideosPage() {
               <option value="South Korea">South Korea</option>
             </select>
           </div>
+
           <div className={styles.formRow}>
             <textarea
+              className={styles.textarea}
               placeholder="Description"
               value={description}
-              onChange={e => setDescription(e.target.value)}
-              className={styles.textarea}
+              onChange={(e) => setDescription(e.target.value)}
             />
           </div>
 
-          {newScenes.map((scene, idx) => (
-            <div key={idx} className={styles.sceneCard}>
-              <h3>New Scene {idx + 1}</h3>
-              <div className={styles.mediaRow}>
-                <div className={styles.mediaBox}>
-                <button className={styles.fileBtn}>
-                    {scene.image ? scene.image.name : "Select Image"}
-                    <input
-                    type="file"
-                    accept="image/*"
-                    onChange={(e) =>
-                        updateSceneField(idx, "image", e.target.files?.[0] || null)
-                    }
-                    />
-                </button>
+          <div className={styles.sceneGrid}>
+            {newScenes.map((scene, idx) => (
+              <div key={idx} className={styles.sceneCard}>
+                <h3>Scene {idx + 1}</h3>
+                <div className={styles.mediaRow}>
+                  <div className={styles.mediaBox}>
+                    <button className={styles.fileBtn}>
+                      {scene.image?.name || "Select Image"}
+                      <input
+                        type="file"
+                        accept="image/*"
+                        onChange={(e) =>
+                          updateNewSceneField(idx, "image", e.target.files?.[0] || null)
+                        }
+                      />
+                    </button>
+                  </div>
+                  <div className={styles.mediaBox}>
+                    <button className={styles.fileBtnLight}>
+                      {scene.audio?.name || "Select Audio"}
+                      <input
+                        type="file"
+                        accept="audio/*"
+                        onChange={(e) =>
+                          updateNewSceneField(idx, "audio", e.target.files?.[0] || null)
+                        }
+                      />
+                    </button>
+                  </div>
+                  <div className={styles.mediaBox}>
+                    <button className={styles.fileBtn}>
+                      {scene.video?.name || "Select Video"}
+                      <input
+                        type="file"
+                        accept="video/*"
+                        onChange={(e) =>
+                          updateNewSceneField(idx, "video", e.target.files?.[0] || null)
+                        }
+                      />
+                    </button>
+                  </div>
                 </div>
-                <div className={styles.mediaBox}>
-                <button className={styles.fileBtnLight}>
-                    {scene.audio ? scene.audio.name : "Select Audio"}
-                    <input
-                    type="file"
-                    accept="audio/*"
-                    onChange={(e) =>
-                        updateSceneField(idx, "audio", e.target.files?.[0] || null)
-                    }
-                    />
-                </button>
-                </div>
-                <div className={styles.mediaBox}>
-                <button className={styles.fileBtn}>
-                    {scene.video ? scene.video.name : "Select Video"}
-                    <input
-                    type="file"
-                    accept="video/*"
-                    onChange={(e) =>
-                        updateSceneField(idx, "video", e.target.files?.[0] || null)
-                    }
-                    />
-                </button>
-                </div>
+                <input
+                  className={styles.promptInput}
+                  type="text"
+                  placeholder="Scene prompt"
+                  value={scene.prompt}
+                  onChange={(e) =>
+                    updateNewSceneField(idx, "prompt", e.target.value)
+                  }
+                />
+                {newScenes.length > 1 && (
+                  <button
+                    className={styles.removeScene}
+                    onClick={() => removeNewScene(idx)}
+                  >
+                    Remove Scene
+                  </button>
+                )}
               </div>
-              <input
-                type="text"
-                placeholder="Scene prompt"
-                value={scene.prompt}
-                onChange={e => updateSceneField(idx, "prompt", e.target.value)}
-                className={styles.input}
-              />
-              {newScenes.length > 1 && (
-                <button
-                  onClick={() => removeScene(idx)}
-                  className={styles.removeButton}
-                >
-                  Remove Scene
-                </button>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
 
-          <button onClick={addScene} className={styles.button}>
-          <span className={styles.plus}>＋</span> Add Scene
+          <button className={styles.addScene} onClick={addNewScene}>
+            <span className={styles.plus}>＋</span> Add Scene
           </button>
-          <button onClick={handleCreate} className={styles.buttonPrimary}>
+          <button className={styles.buttonPrimary} onClick={handleCreate}>
             Create Owl Video
           </button>
         </section>
 
         {/* — Existing Owl Videos — */}
-        <section className={styles.section}>
+        <section className={styles.listSection}>
           <h2 className={styles.sectionTitle}>Existing Owl Videos</h2>
           {videos.length === 0 && <p>No videos found.</p>}
-          {videos.map(v => (
-            <div key={v._id} className={styles.videoCard}>
-              <div className={styles.cardHeader}>
-                <div>
-                  <strong>Country:</strong> {v.country} &nbsp;|&nbsp;
-                  <strong>Uploaded:</strong>{" "}
-                  {new Date(v.uploadedAt).toLocaleString()}
-                </div>
-                <button
-                  onClick={() => handleDeleteVideo(v._id)}
-                  className={styles.deleteButton}
-                >
-                  Delete Video
-                </button>
-              </div>
-              <p className={styles.description}>{v.description}</p>
-              <div className={styles.scenesContainer}>
-                {v.scenes.map(s => (
-                  <div key={s.sceneNumber} className={styles.sceneCard}>
-                    <h3>Scene {s.sceneNumber}</h3>
-                    <div className={styles.mediaRow}>
-                      <div className={styles.mediaBox}>
-                        <img
-                          src={s.imageUrl}
-                          alt={`scene ${s.sceneNumber}`}
-                          className={styles.previewImage}
-                        />
-                        <label className={styles.fileBtnSmall}>
-                          <input
-                            type="file"
-                            accept="image/*"
-                            onChange={e =>
-                              e.target.files?.[0] &&
-                              handlePatchMedia(
-                                v._id,
-                                s.sceneNumber,
-                                "image",
-                                e.target.files[0]
-                              )
-                            }
-                            className={styles.fileInput}
-                          />
-                          <i className="icon-upload" /> Change Image
-                        </label>
-                      </div>
-                      <div className={styles.mediaBox}>
-                        <audio
-                          controls
-                          src={s.audioUrl}
-                          className={styles.audioPlayer}
-                        />
-                        <label className={styles.patchLabel}>
-                          Change Audio
-                          <input
-                            type="file"
-                            accept="audio/*"
-                            onChange={e =>
-                              e.target.files?.[0] &&
-                              handlePatchMedia(
-                                v._id,
-                                s.sceneNumber,
-                                "audio",
-                                e.target.files[0]
-                              )
-                            }
-                            className={styles.fileInput}
-                          />
-                        </label>
-                      </div>
-                      <div className={styles.mediaBox}>
-                        <video
-                          controls
-                          src={s.videoUrl}
-                          className={styles.videoPlayer}
-                        />
-                        <label className={styles.patchLabel}>
-                          Change Video
-                          <input
-                            type="file"
-                            accept="video/*"
-                            onChange={e =>
-                              e.target.files?.[0] &&
-                              handlePatchMedia(
-                                v._id,
-                                s.sceneNumber,
-                                "video",
-                                e.target.files[0]
-                              )
-                            }
-                            className={styles.fileInput}
-                          />
-                        </label>
-                      </div>
-                    </div>
+          <div className={styles.videoGrid}>
+            {videos.map((v) => (
+              <div key={v._id} className={styles.videoCard}>
+                {/* Edit / Cancel / Save */}
+                {editingId !== v._id ? (
+                  <button
+                    className={styles.buttonPrimary}
+                    onClick={() => enterEditMode(v)}
+                  >
+                    Edit
+                  </button>
+                ) : (
+                  <>
+                    <button className={styles.removeScene} onClick={exitEditMode}>
+                      Cancel
+                    </button>
+                    <button className={styles.buttonPrimary} onClick={() => handleSave(v)}>
+                      Save
+                    </button>
+                  </>
+                )}
 
-                    {s.imageUrl && (
-                      <>
-                        <input
-                          type="text"
-                          placeholder="Enter generation prompt"
-                          value={scenePrompts[`${v._id}-${s.sceneNumber}`] || ""}
-                          onChange={e =>
-                            setScenePrompts(prev => ({
-                              ...prev,
-                              [`${v._id}-${s.sceneNumber}`]: e.target.value
-                            }))
-                          }
-                          className={styles.input}
-                        />
-                        <button
-                          onClick={() => handleGenerateVideo(v._id, s.sceneNumber)}
-                          disabled={generating[`${v._id}-${s.sceneNumber}`]}
-                          className={styles.generateButton}
-                        >
-                          {generating[`${v._id}-${s.sceneNumber}`]
-                            ? "Generating..."
-                            : "Generate Video"}
-                        </button>
-                      </>
-                    )}
+                {/* Country / Description */}
+                {editingId === v._id ? (
+                  <div className={styles.formRow}>
+                    <input
+                      className={styles.input}
+                      value={editCountry}
+                      onChange={(e) => setEditCountry(e.target.value)}
+                    />
+                    <textarea
+                      className={styles.textarea}
+                      value={editDescription}
+                      onChange={(e) => setEditDescription(e.target.value)}
+                    />
+                  </div>
+                ) : (
+                  <div className={styles.cardHeader}>
+                    <div>
+                      <strong>Country:</strong> {v.country} &nbsp;|&nbsp;
+                      <strong>Uploaded:</strong>{" "}
+                      {new Date(v.uploadedAt).toLocaleString()}
+                    </div>
+                    <button
+                      className={styles.deleteButton}
+                      onClick={() => handleDeleteVideo(v._id)}
+                    >
+                      Delete Video
+                    </button>
+                  </div>
+                )}
+
+                {/* Description (readonly) */}
+                {editingId !== v._id && (
+                  <p className={styles.description}>{v.description}</p>
+                )}
+
+                {/* Scenes */}
+                <div className={styles.sceneGrid}>
+                  {editingId === v._id
+                    ? editScenes.map((s, idx) => {
+                        const sceneNumber = idx + 1;
+                        return (
+                          <div key={sceneNumber} className={styles.sceneCard}>
+                            <h3>Scene {sceneNumber}</h3>
+                            <div className={styles.mediaRow}>
+                              <button className={styles.fileBtn}>
+                                {s.image?.name || "Change Image"}
+                                <input
+                                  type="file"
+                                  accept="image/*"
+                                  onChange={(e) =>
+                                    updateEditSceneField(
+                                      idx,
+                                      "image",
+                                      e.target.files?.[0] || null
+                                    )
+                                  }
+                                />
+                              </button>
+                              <button className={styles.fileBtnLight}>
+                                {s.audio?.name || "Change Audio"}
+                                <input
+                                  type="file"
+                                  accept="audio/*"
+                                  onChange={(e) =>
+                                    updateEditSceneField(
+                                      idx,
+                                      "audio",
+                                      e.target.files?.[0] || null
+                                    )
+                                  }
+                                />
+                              </button>
+                              <button className={styles.fileBtn}>
+                                {s.video?.name || "Change Video"}
+                                <input
+                                  type="file"
+                                  accept="video/*"
+                                  onChange={(e) =>
+                                    updateEditSceneField(
+                                      idx,
+                                      "video",
+                                      e.target.files?.[0] || null
+                                    )
+                                  }
+                                />
+                              </button>
+                            </div>
+                            <input
+                              className={styles.promptInput}
+                              value={s.prompt}
+                              onChange={(e) =>
+                                updateEditSceneField(idx, "prompt", e.target.value)
+                              }
+                            />
+                            {editScenes.length > 1 && (
+                              <button
+                                className={styles.removeScene}
+                                onClick={() => removeEditScene(idx)}
+                              >
+                                Remove Scene
+                              </button>
+                            )}
+                          </div>
+                        );
+                      })
+                    : v.scenes.map((s) => (
+                        <div key={s.sceneNumber} className={styles.sceneCard}>
+                          <h3>Scene {s.sceneNumber}</h3>
+                          <img
+                            className={styles.previewImage}
+                            src={s.imageUrl}
+                            alt={`scene ${s.sceneNumber}`}
+                          />
+                          <div className={styles.mediaRow}>
+                            <div className={styles.mediaBox}>
+                              <audio
+                                className={styles.audioPlayer}
+                                controls
+                                src={s.audioUrl}
+                              />
+                            </div>
+                            <div className={styles.mediaBox}>
+                              <video
+                                className={styles.videoPlayer}
+                                controls
+                                src={s.videoUrl}
+                              />
+                            </div>
+                          </div>
+                          <label className={styles.patchLabel}>
+                            Change Image
+                            <input
+                              type="file"
+                              accept="image/*"
+                              onChange={(e) =>
+                                e.target.files?.[0] &&
+                                handlePatchMedia(
+                                  v._id,
+                                  s.sceneNumber,
+                                  "image",
+                                  e.target.files[0]
+                                )
+                              }
+                            />
+                          </label>
+                          <label className={styles.patchLabel}>
+                            Change Audio
+                            <input
+                              type="file"
+                              accept="audio/*"
+                              onChange={(e) =>
+                                e.target.files?.[0] &&
+                                handlePatchMedia(
+                                  v._id,
+                                  s.sceneNumber,
+                                  "audio",
+                                  e.target.files[0]
+                                )
+                              }
+                            />
+                          </label>
+                          <label className={styles.patchLabel}>
+                            Change Video
+                            <input
+                              type="file"
+                              accept="video/*"
+                              onChange={(e) =>
+                                e.target.files?.[0] &&
+                                handlePatchMedia(
+                                  v._id,
+                                  s.sceneNumber,
+                                  "video",
+                                  e.target.files[0]
+                                )
+                              }
+                            />
+                          </label>
+                        </div>
+                      ))}
+                </div>
+
+                {/* edit 모드에서 씬 추가 */}
+                {editingId === v._id && (
+                  <button className={styles.addScene} onClick={addEditScene}>
+                    <span className={styles.plus}>＋</span> Add Scene
+                  </button>
+                )}
+
+                {/* AI Generate */}
+                {v.scenes.map((s) => (
+                  <div key={s.sceneNumber} className={styles.sceneCard}>
+                    <input
+                      className={styles.input}
+                      type="text"
+                      placeholder="Enter generation prompt"
+                      value={scenePrompts[`${v._id}-${s.sceneNumber}`] || ""}
+                      onChange={(e) =>
+                        setScenePrompts((prev) => ({
+                          ...prev,
+                          [`${v._id}-${s.sceneNumber}`]: e.target.value,
+                        }))
+                      }
+                    />
+                    <button
+                      className={styles.generateButton}
+                      disabled={generating[`${v._id}-${s.sceneNumber}`]}
+                      onClick={() => handleGenerateVideo(v._id, s.sceneNumber)}
+                    >
+                      {generating[`${v._id}-${s.sceneNumber}`]
+                        ? "Generating..."
+                        : "Generate Video"}
+                    </button>
                   </div>
                 ))}
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </section>
       </main>
     </div>
