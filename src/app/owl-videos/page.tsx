@@ -30,6 +30,7 @@ export default function OwlVideosPage() {
   const [country, setCountry] = useState<string>("");
   const [description, setDescription] = useState<string>("");
   const [generating, setGenerating] = useState<Record<string, boolean>>({});
+  const [scenePrompts, setScenePrompts] = useState<Record<string,string>>({});
 
   const [newImages, setNewImages] = useState<FileList | null>(null);
   const [newAudios, setNewAudios] = useState<FileList | null>(null);
@@ -39,9 +40,11 @@ export default function OwlVideosPage() {
      const key = `${videoId}-${sceneNumber}`;
      setGenerating(prev => ({ ...prev, [key]: true }));
      try {
+       const key = `${videoId}-${sceneNumber}`;
+       const prompt = scenePrompts[key] || "";
        await axios.post(
          `${SERVER_URL}/owl-videos/${videoId}/scenes/${sceneNumber}/generate-video`,
-         { region },
+         { region, prompt },
          { withCredentials: true }
        );
        alert("Video generation started.");
@@ -55,6 +58,12 @@ export default function OwlVideosPage() {
 
   useEffect(() => {
     fetchVideos();
+  }, []);
+
+  // load userId from localStorage
+  useEffect(() => {
+    const stored = localStorage.getItem("userId");
+    if (stored) setUserId(stored);
   }, []);
 
   const fetchVideos = async () => {
@@ -155,16 +164,20 @@ export default function OwlVideosPage() {
               type="text"
               placeholder="User ID"
               value={userId}
-              onChange={(e) => setUserId(e.target.value)}
+              readOnly
               className={styles.input}
             />
-            <input
-              type="text"
-              placeholder="Country"
+            <select
               value={country}
               onChange={(e) => setCountry(e.target.value)}
               className={styles.input}
-            />
+            >
+              <option value="">Select country</option>
+              <option value="Canada">Canada</option>
+              <option value="Australia">Australia</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="South Korea">South Korea</option>
+            </select>
           </div>
           <div className={styles.formRow}>
             <textarea
@@ -318,12 +331,24 @@ export default function OwlVideosPage() {
                         </label>
                       </div>
                     </div>
+                    <input
+                      type="text"
+                      placeholder="Enter generation prompt"
+                      value={scenePrompts[`${v._id}-${s.sceneNumber}`] || ""}
+                      onChange={(e) =>
+                        setScenePrompts(prev => ({
+                          ...prev,
+                          [`${v._id}-${s.sceneNumber}`]: e.target.value
+                        }))
+                      }
+                      className={styles.input}
+                    />
                     <button
-                    onClick={() => handleGenerateVideo(v._id, s.sceneNumber)}
-                    disabled={generating[`${v._id}-${s.sceneNumber}`]}
-                    className={styles.generateButton}
+                      onClick={() => handleGenerateVideo(v._id, s.sceneNumber)}
+                      disabled={generating[`${v._id}-${s.sceneNumber}`]}
+                      className={styles.generateButton}
                     >
-                    {generating[`${v._id}-${s.sceneNumber}`] ? "Generating..." : "Generate Video"}
+                      {generating[`${v._id}-${s.sceneNumber}`] ? "Generating..." : "Generate Video"}
                     </button>
                   </div>
                 ))}
