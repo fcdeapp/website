@@ -260,6 +260,101 @@
     line-height: 1.4;
   }
   
+  .fileBtn, .fileBtnLight {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .fileBtn {
+    background: var(--primary-light);
+    color: #fff;
+    border-color: var(--primary);
+  }
+  .fileBtnLight {
+    background: #fafafa;
+    color: var(--text);
+    border-color: var(--border);
+  }
+  .fileBtn input,
+  .fileBtnLight input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .fileBtn:hover {
+    background: var(--primary);
+  }
+  .fileBtnLight:hover {
+    background: #f0f0f0;
+  }
+  .fileBtnSmall {
+    background: transparent;
+    border: none;
+    color: var(--primary);
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+  }
+  .fileBtnSmall input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .fileBtnSmall:hover {
+    color: var(--primary-light);
+  }
+  .addScene {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .addScene:hover {
+    color: #db2777;
+  }
+  .plus {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  .buttonPrimary {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.4rem;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: background 0.2s, transform 0.1s;
+  }
+  .buttonPrimary:hover {
+    background: var(--primary-light);
+    transform: translateY(-2px);
+  }
+  .buttonPrimary:active {
+    transform: translateY(0);
+  }
+
   @media (max-width: 768px) {
     .formRow,
     .mediaRow {

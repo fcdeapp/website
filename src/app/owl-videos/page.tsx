@@ -221,43 +221,40 @@ export default function OwlVideosPage() {
               <h3>New Scene {idx + 1}</h3>
               <div className={styles.mediaRow}>
                 <div className={styles.mediaBox}>
-                  <label className={styles.fileLabel}>
-                    Image
+                <button className={styles.fileBtn}>
+                    {scene.image ? scene.image.name : "Select Image"}
                     <input
-                      type="file"
-                      accept="image/*"
-                      onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                    type="file"
+                    accept="image/*"
+                    onChange={(e) =>
                         updateSceneField(idx, "image", e.target.files?.[0] || null)
-                      }
-                      className={styles.fileInput}
+                    }
                     />
-                  </label>
+                </button>
                 </div>
                 <div className={styles.mediaBox}>
-                  <label className={styles.fileLabel}>
-                    Audio
+                <button className={styles.fileBtnLight}>
+                    {scene.audio ? scene.audio.name : "Select Audio"}
                     <input
-                      type="file"
-                      accept="audio/*"
-                      onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                    type="file"
+                    accept="audio/*"
+                    onChange={(e) =>
                         updateSceneField(idx, "audio", e.target.files?.[0] || null)
-                      }
-                      className={styles.fileInput}
+                    }
                     />
-                  </label>
+                </button>
                 </div>
                 <div className={styles.mediaBox}>
-                  <label className={styles.fileLabel}>
-                    Video
+                <button className={styles.fileBtn}>
+                    {scene.video ? scene.video.name : "Select Video"}
                     <input
-                      type="file"
-                      accept="video/*"
-                      onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                    type="file"
+                    accept="video/*"
+                    onChange={(e) =>
                         updateSceneField(idx, "video", e.target.files?.[0] || null)
-                      }
-                      className={styles.fileInput}
+                    }
                     />
-                  </label>
+                </button>
                 </div>
               </div>
               <input
@@ -279,9 +276,9 @@ export default function OwlVideosPage() {
           ))}
 
           <button onClick={addScene} className={styles.button}>
-            + Add Scene
+          <span className={styles.plus}>＋</span> Add Scene
           </button>
-          <button onClick={handleCreate} className={styles.button}>
+          <button onClick={handleCreate} className={styles.buttonPrimary}>
             Create Owl Video
           </button>
         </section>
@@ -317,8 +314,7 @@ export default function OwlVideosPage() {
                           alt={`scene ${s.sceneNumber}`}
                           className={styles.previewImage}
                         />
-                        <label className={styles.patchLabel}>
-                          Change Image
+                        <label className={styles.fileBtnSmall}>
                           <input
                             type="file"
                             accept="image/*"
@@ -333,6 +329,7 @@ export default function OwlVideosPage() {
                             }
                             className={styles.fileInput}
                           />
+                          <i className="icon-upload" /> Change Image
                         </label>
                       </div>
                       <div className={styles.mediaBox}>
