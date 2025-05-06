@@ -1,215 +1,202 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    background: #fff;
+:root {
+    --clr-bg: #f0f4f8;
+    --clr-card: #ffffff;
+    --clr-primary: #6C63FF;
+    --clr-primary-light: #9a92ff;
+    --clr-accent: #FF6584;
+    --clr-muted: #a0a0a0;
+    --clr-text: #333;
+    --radius: 0.6rem;
+    --shadow: 0 4px 12px rgba(0,0,0,0.05);
+    --font: 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .page {
+    background: var(--clr-bg);
     min-height: 100vh;
-    box-sizing: border-box;
+    padding: 2rem;
+    font-family: var(--font);
   }
   
   .header {
     text-align: center;
     margin-bottom: 2rem;
   }
-  
-  .title {
-    font-size: 2rem;
-    color: #0070f3;
-    margin: 0;
+  .header h1 {
+    color: var(--clr-primary);
+    font-size: 2.5rem;
   }
   
-  .main {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  .createSection, .listSection {
+    background: var(--clr-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    margin-bottom: 2rem;
   }
   
-  .section {
-    background: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  
-  .sectionTitle {
-    margin: 0 0 1rem;
-    font-size: 1.5rem;
-    color: #333;
+  .createSection h2, .listSection h2 {
+    color: var(--clr-text);
+    margin-bottom: 1rem;
   }
   
   .formRow {
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1rem;
   }
-  
-  .input, .textarea {
+  .input, .select, .textarea {
     flex: 1;
-    padding: 0.6rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--clr-muted);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    color: var(--clr-text);
+    background: #fff;
   }
-  
   .textarea {
-    min-height: 60px;
+    min-height: 80px;
     resize: vertical;
   }
   
-  .fileLabel {
+  .sceneGrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+  }
+  
+  .sceneCard {
+    background: var(--clr-card);
+    border: 1px solid var(--clr-muted);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .fileButton, .fileButtonLight {
+    position: relative;
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius);
+    text-align: center;
     font-size: 0.9rem;
-    color: #555;
-  }
-  
-  .fileInput {
-    margin-top: 0.3rem;
-  }
-  
-  .button {
-    background: #0070f3;
-    color: white;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    font-size: 0.95rem;
-    border-radius: 4px;
     cursor: pointer;
-    transition: background 0.2s;
-    margin-right: 0.5rem;
-    margin-top: 0.5rem;
+    overflow: hidden;
   }
-  
-  .button:hover {
-    background: #005bb5;
-  }
-  
-  .removeButton {
-    background: #e00;
+  .fileButton {
+    background: var(--clr-primary);
     color: #fff;
-    border: none;
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
+  }
+  .fileButtonLight {
+    background: #f7f7f7;
+    color: var(--clr-text);
+  }
+  .fileButton input,
+  .fileButtonLight input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
     cursor: pointer;
-    font-size: 0.85rem;
-    margin-top: 0.5rem;
-    transition: background 0.2s;
   }
   
-  .removeButton:hover {
-    background: #c00;
+  .primaryBtn {
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-light));
+    color: #fff;
+    font-size: 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+  }
+  .primaryBtn:hover {
+    transform: scale(1.03);
+  }
+  
+  .addScene, .removeScene, .trashBtn, .generateBtn {
+    border: none;
+    cursor: pointer;
+  }
+  .addScene {
+    margin-top: 1rem;
+    color: var(--clr-primary);
+    font-weight: bold;
+  }
+  .removeScene {
+    background: var(--clr-accent);
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: var(--radius);
+  }
+  .removeScene:hover { opacity: 0.9; }
+  
+  .listSection .videoGrid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
   }
   
   .videoCard {
-    background: #fff;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
+    background: var(--clr-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     padding: 1rem;
-    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
   
   .cardHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.8rem;
+  }
+  .trashBtn {
+    background: transparent;
+    font-size: 1.2rem;
   }
   
-  .description {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1rem;
-  }
-  
-  .deleteButton {
-    background: #e00;
-    color: #fff;
-    border: none;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.85rem;
-    transition: background 0.2s;
-  }
-  
-  .deleteButton:hover {
-    background: #c00;
-  }
-  
-  .scenesContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .sceneCard {
-    background: #fdfdfd;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 1rem;
-  }
-  
-  .mediaRow {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .mediaBox {
-    flex: 1;
-    min-width: 200px;
-    text-align: center;
-  }
-  
-  .previewImage {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 0.5rem;
-  }
-  
-  .audioPlayer, .videoPlayer {
+  .preview {
     width: 100%;
-    border-radius: 4px;
-    margin-bottom: 0.5rem;
+    border-radius: var(--radius);
+    object-fit: cover;
   }
   
-  .patchLabel {
-    display: inline-block;
-    font-size: 0.85rem;
-    color: #0070f3;
-    cursor: pointer;
+  .controlsRow {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
   }
   
-  .patchLabel input {
-    display: none;
-  }
-  
-  .generateButton {
-    background: #28a745;
+  .generateBtn {
+    margin-top: auto;
+    background: var(--clr-accent);
     color: #fff;
-    border: none;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    cursor: pointer;
-    margin-top: 0.5rem;
+    padding: 0.6rem;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
     transition: background 0.2s;
   }
-  
-  .generateButton:hover {
-    background: #218838;
+  .generateBtn:hover {
+    background: #e0486d;
   }
-  
-  .generateButton:disabled {
+  .generateBtn:disabled {
     background: #ccc;
     cursor: not-allowed;
   }
   
-  @media (max-width: 768px) {
-    .mediaRow {
-      flex-direction: column;
-    }
+  .description {
+    font-size: 0.9rem;
+    color: var(--clr-text);
+  }
+  
+  @media (max-width: 600px) {
+    .formRow { flex-direction: column; }
+    .sceneGrid { grid-template-columns: 1fr; }
   }
   
