@@ -80,9 +80,15 @@ export default function OwlVideosPage() {
     form.append("region", region);
     // 씬별로 이미지/오디오/비디오/프롬프트 append
     newScenes.forEach(scene => {
-      form.append("images", scene.image as Blob, scene.image!.name);
-      form.append("audios", scene.audio as Blob, scene.audio!.name);
-      form.append("videos", scene.video as Blob, scene.video!.name);
+      if (scene.image) {
+        form.append("images", scene.image, scene.image.name);
+      }
+      if (scene.audio) {
+        form.append("audios", scene.audio, scene.audio.name);
+      }
+      if (scene.video) {
+        form.append("videos", scene.video, scene.video.name);
+      }
       form.append("prompts", scene.prompt);
     });
     try {
