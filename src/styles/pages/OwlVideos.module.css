@@ -121,39 +121,6 @@
     font-size: 0.95rem;
     color: var(--text);
   }
-  
-  .addScene {
-    background: none;
-    border: none;
-    color: var(--primary);
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    transition: color 0.2s;
-  }
-  .addScene:hover {
-    color: var(--primary-light);
-  }
-  
-  .buttonPrimary {
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background: var(--primary);
-    color: #fff;
-    border: none;
-    border-radius: var(--radius);
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: var(--shadow);
-    transition: background 0.2s, transform 0.1s;
-  }
-  .buttonPrimary:hover {
-    background: var(--primary-light);
-    transform: translateY(-1px);
-  }
-  
-  /* ==== List Section ==== */
-  
   .listSection {
     background: var(--card);
     border-radius: var(--radius);
