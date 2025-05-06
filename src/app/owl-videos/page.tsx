@@ -117,7 +117,6 @@ export default function OwlVideosPage() {
         headers: { "Content-Type": "multipart/form-data" },
         withCredentials: true,
       });
-      // 초기화
       setCountry("");
       setDescription("");
       setNewScenes([{ image: null, audio: null, video: null, prompt: "" }]);
@@ -426,11 +425,42 @@ export default function OwlVideosPage() {
                 {/* Scenes */}
                 <div className={styles.sceneGrid}>
                   {editingId === v._id
-                    ? editScenes.map((s, idx) => {
-                        const sceneNumber = idx + 1;
+                    ? /* + edit: 편집 모드에서도 원본 미디어+장면번호 보여주기 */
+                      editScenes.map((s, idx) => {
+                        const orig = v.scenes[idx];
+                        const sceneNumber = orig ? orig.sceneNumber : idx + 1;
                         return (
-                          <div key={sceneNumber} className={styles.sceneCard}>
+                          <div key={idx} className={styles.sceneCard}>
                             <h3>Scene {sceneNumber}</h3>
+
+                            {/* 원본 미디어 미리보기 */}
+                            {orig && (
+                              <div className={styles.mediaRow}>
+                                <div className={styles.mediaBox}>
+                                  <img
+                                    src={orig.imageUrl}
+                                    alt={`scene ${sceneNumber}`}
+                                    className={styles.previewImage}
+                                  />
+                                </div>
+                                <div className={styles.mediaBox}>
+                                  <audio
+                                    controls
+                                    src={orig.audioUrl}
+                                    className={styles.audioPlayer}
+                                  />
+                                </div>
+                                <div className={styles.mediaBox}>
+                                  <video
+                                    controls
+                                    src={orig.videoUrl}
+                                    className={styles.videoPlayer}
+                                  />
+                                </div>
+                              </div>
+                            )}
+
+                            {/* 교체용 파일 선택 버튼 */}
                             <div className={styles.mediaRow}>
                               <button className={styles.fileBtn}>
                                 {s.image?.name || "Change Image"}
@@ -475,6 +505,8 @@ export default function OwlVideosPage() {
                                 />
                               </button>
                             </div>
+
+                            {/* 프롬프트 */}
                             <input
                               className={styles.promptInput}
                               value={s.prompt}
@@ -482,6 +514,8 @@ export default function OwlVideosPage() {
                                 updateEditSceneField(idx, "prompt", e.target.value)
                               }
                             />
+
+                            {/* 장면 제거 버튼 */}
                             {editScenes.length > 1 && (
                               <button
                                 className={styles.removeScene}
@@ -493,7 +527,8 @@ export default function OwlVideosPage() {
                           </div>
                         );
                       })
-                    : v.scenes.map((s) => (
+                    : /* 보기 모드 */
+                      v.scenes.map((s) => (
                         <div key={s.sceneNumber} className={styles.sceneCard}>
                           <h3>Scene {s.sceneNumber}</h3>
                           <img
