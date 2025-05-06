@@ -77,10 +77,28 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.2s;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
   }
   
   .button:hover {
     background: #005bb5;
+  }
+  
+  .removeButton {
+    background: #e00;
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    transition: background 0.2s;
+  }
+  
+  .removeButton:hover {
+    background: #c00;
   }
   
   .videoCard {
@@ -179,14 +197,16 @@
     margin-top: 0.5rem;
     transition: background 0.2s;
   }
+  
   .generateButton:hover {
     background: #218838;
   }
+  
   .generateButton:disabled {
     background: #ccc;
     cursor: not-allowed;
   }
-
+  
   @media (max-width: 768px) {
     .mediaRow {
       flex-direction: column;
