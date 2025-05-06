@@ -69,7 +69,7 @@ export default function OwlVideosPage() {
 
   // 새 영상 생성
   const handleCreate = async () => {
-    if (!userId || !country || newScenes.some(s => !s.image || !s.audio || !s.video)) {
+    if (!userId || !country) {
       alert("User ID, country, and all scene files are required.");
       return;
     }
