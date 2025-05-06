@@ -1,4 +1,4 @@
-:global(:root) {
+  .container {
     --clr-bg: #f0f4f8;
     --clr-card: #ffffff;
     --clr-primary: #6C63FF;
@@ -8,9 +8,14 @@
     --clr-text: #333;
     --radius: 0.6rem;
     --shadow: 0 4px 12px rgba(0,0,0,0.05);
-    --font: 'Segoe UI', Roboto, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--clr-bg);
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: var(--font);
   }
-  
   .page {
     background: var(--clr-bg);
     min-height: 100vh;
