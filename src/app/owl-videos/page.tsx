@@ -39,17 +39,17 @@ export default function OwlVideosPage() {
   const [generating, setGenerating] = useState<Record<string, boolean>>({});
   const [scenePrompts, setScenePrompts] = useState<Record<string, string>>({});
 
-  // For new-creation form: dynamic scenes
+  // 신규 생성 폼용 동적 씬 배열
   const [newScenes, setNewScenes] = useState<NewScene[]>([
     { image: null, audio: null, video: null, prompt: "" },
   ]);
 
-  // Load existing videos
+  // 기존 영상 불러오기
   useEffect(() => {
     fetchVideos();
   }, []);
 
-  // Load userId from localStorage
+  // 로컬스토리지에서 userId 로드
   useEffect(() => {
     const stored = localStorage.getItem("userId");
     if (stored) setUserId(stored);
@@ -67,6 +67,7 @@ export default function OwlVideosPage() {
     }
   };
 
+  // 새 영상 생성
   const handleCreate = async () => {
     if (!userId || !country || newScenes.some(s => !s.image || !s.audio || !s.video)) {
       alert("User ID, country, and all scene files are required.");
@@ -77,21 +78,23 @@ export default function OwlVideosPage() {
     form.append("country", country);
     form.append("description", description);
     form.append("region", region);
-
-    newScenes.forEach((scene, idx) => {
+    // 씬별로 이미지/오디오/비디오/프롬프트 append
+    newScenes.forEach(scene => {
       form.append("images", scene.image as Blob, scene.image!.name);
       form.append("audios", scene.audio as Blob, scene.audio!.name);
       form.append("videos", scene.video as Blob, scene.video!.name);
-      // Include prompt per scene
-      form.append(`prompts`, scene.prompt);
+      form.append("prompts", scene.prompt);
     });
-
     try {
-      await axios.post(`${SERVER_URL}/owl-videos`, form, {
-        headers: { "Content-Type": "multipart/form-data" },
-        withCredentials: true,
-      });
-      // reset form
+      await axios.post(
+        `${SERVER_URL}/owl-videos`,
+        form,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+          withCredentials: true,
+        }
+      );
+      // 초기화
       setCountry("");
       setDescription("");
       setNewScenes([{ image: null, audio: null, video: null, prompt: "" }]);
@@ -102,6 +105,7 @@ export default function OwlVideosPage() {
     }
   };
 
+  // 씬별 미디어 PATCH
   const handlePatchMedia = async (
     videoId: string,
     sceneNumber: number,
@@ -111,15 +115,11 @@ export default function OwlVideosPage() {
     const form = new FormData();
     form.append("region", region);
     form.append(field, file);
-
     try {
       await axios.patch(
         `${SERVER_URL}/owl-videos/${videoId}/scenes/${sceneNumber}/${field}`,
         form,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-          withCredentials: true,
-        }
+        { headers: { "Content-Type": "multipart/form-data" }, withCredentials: true }
       );
       fetchVideos();
     } catch (err) {
@@ -128,6 +128,7 @@ export default function OwlVideosPage() {
     }
   };
 
+  // 씬별 AI 비디오 생성 요청
   const handleGenerateVideo = async (videoId: string, sceneNumber: number) => {
     const key = `${videoId}-${sceneNumber}`;
     setGenerating(prev => ({ ...prev, [key]: true }));
@@ -147,12 +148,14 @@ export default function OwlVideosPage() {
     }
   };
 
+  // 영상 전체 삭제
   const handleDeleteVideo = async (videoId: string) => {
     if (!confirm("Delete this video entirely?")) return;
     try {
-      await axios.delete(`${SERVER_URL}/owl-videos/${videoId}?region=${region}`, {
-        withCredentials: true,
-      });
+      await axios.delete(
+        `${SERVER_URL}/owl-videos/${videoId}?region=${region}`,
+        { withCredentials: true }
+      );
       fetchVideos();
     } catch (err) {
       console.error("Error deleting owl video", err);
@@ -160,25 +163,19 @@ export default function OwlVideosPage() {
     }
   };
 
-  const addScene = () => {
+  // 신규 씬 추가/삭제/업데이트
+  const addScene = () =>
     setNewScenes(prev => [...prev, { image: null, audio: null, video: null, prompt: "" }]);
-  };
-
-  const removeScene = (index: number) => {
-    setNewScenes(prev => prev.filter((_, i) => i !== index));
-  };
-
+  const removeScene = (idx: number) =>
+    setNewScenes(prev => prev.filter((_, i) => i !== idx));
   const updateSceneField = (
-    index: number,
+    idx: number,
     field: keyof NewScene,
     value: File | string | null
-  ) => {
+  ) =>
     setNewScenes(prev =>
-      prev.map((s, i) =>
-        i === index ? { ...s, [field]: value } : s
-      )
+      prev.map((s, i) => (i === idx ? { ...s, [field]: value } : s))
     );
-  };
 
   return (
     <div className={styles.container}>
@@ -186,7 +183,8 @@ export default function OwlVideosPage() {
         <h1 className={styles.title}>Owl Videos Management</h1>
       </header>
       <main className={styles.main}>
-        {/* Create New Video */}
+
+        {/* — Create New Owl Video — */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Create New Owl Video</h2>
           <div className={styles.formRow}>
@@ -217,6 +215,7 @@ export default function OwlVideosPage() {
               className={styles.textarea}
             />
           </div>
+
           {newScenes.map((scene, idx) => (
             <div key={idx} className={styles.sceneCard}>
               <h3>New Scene {idx + 1}</h3>
@@ -278,6 +277,7 @@ export default function OwlVideosPage() {
               )}
             </div>
           ))}
+
           <button onClick={addScene} className={styles.button}>
             + Add Scene
           </button>
@@ -286,7 +286,7 @@ export default function OwlVideosPage() {
           </button>
         </section>
 
-        {/* List and Edit Videos */}
+        {/* — Existing Owl Videos — */}
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Existing Owl Videos</h2>
           {videos.length === 0 && <p>No videos found.</p>}
@@ -384,27 +384,32 @@ export default function OwlVideosPage() {
                         </label>
                       </div>
                     </div>
-                    <input
-                      type="text"
-                      placeholder="Enter generation prompt"
-                      value={scenePrompts[`${v._id}-${s.sceneNumber}`] || ""}
-                      onChange={e =>
-                        setScenePrompts(prev => ({
-                          ...prev,
-                          [`${v._id}-${s.sceneNumber}`]: e.target.value
-                        }))
-                      }
-                      className={styles.input}
-                    />
-                    <button
-                      onClick={() => handleGenerateVideo(v._id, s.sceneNumber)}
-                      disabled={generating[`${v._id}-${s.sceneNumber}`]}
-                      className={styles.generateButton}
-                    >
-                      {generating[`${v._id}-${s.sceneNumber}`]
-                        ? "Generating..."
-                        : "Generate Video"}
-                    </button>
+
+                    {s.imageUrl && (
+                      <>
+                        <input
+                          type="text"
+                          placeholder="Enter generation prompt"
+                          value={scenePrompts[`${v._id}-${s.sceneNumber}`] || ""}
+                          onChange={e =>
+                            setScenePrompts(prev => ({
+                              ...prev,
+                              [`${v._id}-${s.sceneNumber}`]: e.target.value
+                            }))
+                          }
+                          className={styles.input}
+                        />
+                        <button
+                          onClick={() => handleGenerateVideo(v._id, s.sceneNumber)}
+                          disabled={generating[`${v._id}-${s.sceneNumber}`]}
+                          className={styles.generateButton}
+                        >
+                          {generating[`${v._id}-${s.sceneNumber}`]
+                            ? "Generating..."
+                            : "Generate Video"}
+                        </button>
+                      </>
+                    )}
                   </div>
                 ))}
               </div>
