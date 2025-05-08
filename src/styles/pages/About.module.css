@@ -1,8 +1,11 @@
 /* Global Container & Typography */
 .container {
-    background-color: #f8f8fe;
+    background-color: #fff;
     padding: 4rem 2rem;
-    color: #0a1045;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   /* Hero Section */
@@ -19,7 +22,10 @@
     font-weight: 800;
     margin-bottom: 1.2rem;
     letter-spacing: -0.04em;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .heroText p {
