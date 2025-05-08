@@ -426,39 +426,38 @@ export default function OwlVideosPage() {
                 <div className={styles.sceneGrid}>
                   {editingId === v._id
                     ? /* + edit: 편집 모드에서도 원본 미디어+장면번호 보여주기 */
-                      editScenes.map((s, idx) => {
-                        const orig = v.scenes[idx];
-                        const sceneNumber = orig ? orig.sceneNumber : idx + 1;
-                        return (
-                          <div key={idx} className={styles.sceneCard}>
-                            <h3>Scene {sceneNumber}</h3>
-
-                            {/* 원본 미디어 미리보기 */}
-                            {orig && (
-                              <div className={styles.mediaRow}>
-                                <div className={styles.mediaBox}>
-                                  <img
-                                    src={orig.imageUrl}
-                                    alt={`scene ${sceneNumber}`}
-                                    className={styles.previewImage}
-                                  />
-                                </div>
-                                <div className={styles.mediaBox}>
-                                  <audio
-                                    controls
-                                    src={orig.audioUrl}
-                                    className={styles.audioPlayer}
-                                  />
-                                </div>
-                                <div className={styles.mediaBox}>
-                                  <video
-                                    controls
-                                    src={orig.videoUrl}
-                                    className={styles.videoPlayer}
-                                  />
-                                </div>
-                              </div>
-                            )}
+              editScenes.map((s, idx) => {
+                const orig = v.scenes[idx];
+                const sceneNumber = orig ? orig.sceneNumber : idx + 1;
+                return (
+                  <div key={idx} className={styles.sceneCard}>
+                    <h3>Scene {sceneNumber}</h3>
+                    {/* + 원본 미디어 미리보기: 이 블록이 반드시 sceneCard 맨 위에 와야 합니다 */}
+                    {orig && (
+                      <div className={styles.mediaRow}>
+                        <div className={styles.mediaBox}>
+                          <img
+                            src={orig.imageUrl}
+                            alt={`scene ${sceneNumber}`}
+                            className={styles.previewImage}
+                          />
+                        </div>
+                        <div className={styles.mediaBox}>
+                          <audio
+                            controls
+                            src={orig.audioUrl}
+                            className={styles.audioPlayer}
+                          />
+                        </div>
+                        <div className={styles.mediaBox}>
+                          <video
+                            controls
+                            src={orig.videoUrl}
+                            className={styles.videoPlayer}
+                          />
+                        </div>
+                      </div>
+                    )}
 
                             {/* 교체용 파일 선택 버튼 */}
                             <div className={styles.mediaRow}>
