@@ -156,15 +156,16 @@
 .section, .sectionAlt {
   margin-bottom: 4rem;
   padding: 3rem 2rem;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   animation: fadeIn 1s ease-in-out;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .sectionTitle {
