@@ -19,20 +19,11 @@ type Screenshot = {
 };
 
 export default function Home() {
-  //--- 데이터 정의 ---
-  const featureItems: CarouselItem[] = [
-    { label: "Smart Event Picks", image: "/images/features/smart.png" },
-    { label: "Quick Event Creation", image: "/images/features/quick.png" },
-    { label: "Verified Hosts", image: "/images/features/verified.png" },
-    { label: "Local Buddy Circles", image: "/images/features/buddy.png" },
-    { label: "Live Chat & Alerts", image: "/images/features/chat.png" },
-  ];
-
   const journeyItems: CarouselItem[] = [
-    { label: "Create Profile", image: "/images/journey/profile.png" },
-    { label: "Tailored Suggestions", image: "/images/journey/suggestions.png" },
-    { label: "Join or Start Event", image: "/images/journey/join.png" },
-    { label: "Meet Local Buddies", image: "/images/journey/meet.png" },
+    { label: "Make Global Friends", image: "/journey/phone4.png" },
+    { label: "Pick Your Interests", image: "/journey/phone1.png" },
+    { label: "Join Meetups Near You", image: "/journey/phone2.png" },
+    { label: "Find Nearby Expats", image: "/journey/phone3.png" },
   ];
 
   const screenshots: Screenshot[] = [
@@ -56,15 +47,6 @@ export default function Home() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  //--- 자동 슬라이드 ---
-  useEffect(() => {
-    const iv = setInterval(() => {
-      setFeatDir(1);
-      setFeatIdx((i) => (i + 1) % featureItems.length);
-    }, 5000);
-    return () => clearInterval(iv);
-  }, []);
-
   useEffect(() => {
     const iv = setInterval(() => {
       setJourneyDir(1);
@@ -79,19 +61,6 @@ export default function Home() {
     }, 7000);
     return () => clearInterval(iv);
   }, []);
-
-  //--- 수동 클릭 핸들러 ---
-  const handleFeatClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    const { width, left } = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - left;
-    if (x > width / 2) {
-      setFeatDir(1);
-      setFeatIdx((i) => (i + 1) % featureItems.length);
-    } else {
-      setFeatDir(-1);
-      setFeatIdx((i) => (i - 1 + featureItems.length) % featureItems.length);
-    }
-  };
 
   const handleJourneyClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const { width, left } = e.currentTarget.getBoundingClientRect();
@@ -140,49 +109,6 @@ export default function Home() {
         </header>
 
         <main className={styles.main}>
-          {/* Key Features Carousel */}
-          <section
-            className={styles.section}
-            data-aos="fade-in"
-            onClick={handleFeatClick}
-          >
-            <h2 className={styles.sectionTitle}>Key Feature</h2>
-            <div className={styles.carouselContainer}>
-              <AnimatePresence initial={false} custom={featDir}>
-               <motion.div
-                 key={featIdx}
-                 custom={featDir}
-                 variants={{
-                   enter: (dir) => ({
-                     x: dir > 0 ? 300 : -300,
-                     scale: 0.8,
-                     opacity: 0
-                   }),
-                   center: { x: 0, scale: 1, opacity: 1 },
-                   exit: (dir) => ({
-                     x: dir > 0 ? -300 : 300,
-                     scale: 0.8,
-                     opacity: 0
-                   })
-                 }}
-                 initial="enter"
-                 animate="center"
-                 exit="exit"
-                 transition={{ duration: 0.6, ease: "easeInOut" }}
-               >
-                  <img
-                    src={featureItems[featIdx].image}
-                    alt={featureItems[featIdx].label}
-                    className={styles.carouselImage}
-                  />
-                  <p className={styles.carouselItem}>
-                    {featureItems[featIdx].label}
-                  </p>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-          </section>
-
           {/* User Journey Carousel */}
           <section
             className={styles.sectionAlt}
