@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #F8F8FE;
+  background-color: #FFF;
   color: #333;
 }
 
@@ -21,7 +21,10 @@
 
 .carouselItem {
   font-size: 1.8rem;
-  color: #0A1045;
+  background: linear-gradient(to right, #D8315B, #F2542D);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
   max-width: 700px;
   margin: 1rem 0;
@@ -373,7 +376,7 @@
   display: flex;
   justify-content: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #F0F4FF, #FFFFFF);
+  background: #FFFFFF;
 }
 
 .betaCard {
