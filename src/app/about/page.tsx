@@ -38,11 +38,6 @@ export default function About() {
             data-aos="zoom-in"
             data-aos-delay="400"
           >
-            <img
-              src="/about/community-connection.png"
-              alt="Community graphic"
-              style={{ width: "100%", height: "auto" }}
-            />
           </div>
         </section>
 
