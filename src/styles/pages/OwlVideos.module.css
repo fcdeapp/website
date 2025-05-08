@@ -321,6 +321,11 @@
   .buttonPrimary:active {
     transform: translateY(0);
   }
+.editInfo p {
+  font-size: 0.9rem;
+  color: var(--subtext);
+  margin-bottom: 0.5rem;
+}
 
   @media (max-width: 768px) {
     .formRow,

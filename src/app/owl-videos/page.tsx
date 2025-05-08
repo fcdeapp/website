@@ -424,45 +424,49 @@ export default function OwlVideosPage() {
 
                 {/* Scenes */}
                 <div className={styles.sceneGrid}>
-                  {editingId === v._id
-                    ? /* + edit: 편집 모드에서도 원본 미디어+장면번호 보여주기 */
-              editScenes.map((s, idx) => {
-                const orig = v.scenes[idx];
-                const sceneNumber = orig ? orig.sceneNumber : idx + 1;
-                return (
-                  <div key={idx} className={styles.sceneCard}>
-                    <h3>Scene {sceneNumber}</h3>
-                    {/* + 원본 미디어 미리보기: 이 블록이 반드시 sceneCard 맨 위에 와야 합니다 */}
-                    {orig && (
-                      <div className={styles.mediaRow}>
-                        <div className={styles.mediaBox}>
-                          <img
-                            src={orig.imageUrl}
-                            alt={`scene ${sceneNumber}`}
-                            className={styles.previewImage}
-                          />
-                        </div>
-                        <div className={styles.mediaBox}>
-                          <audio
-                            controls
-                            src={orig.audioUrl}
-                            className={styles.audioPlayer}
-                          />
-                        </div>
-                        <div className={styles.mediaBox}>
-                          <video
-                            controls
-                            src={orig.videoUrl}
-                            className={styles.videoPlayer}
-                          />
-                        </div>
+                  {editingId === v._id ? (
+                    <>
+                      {/* ① 원본 장면 개수 표시 */}
+                      <div className={styles.editInfo}>
+                        <p>Original scenes: {v.scenes.length}</p>
                       </div>
-                    )}
+                      {/* ② 편집 모드: scene map */}
+                      {editScenes.map((s, idx) => {
+                        const orig = v.scenes[idx];
+                        const sceneNumber = orig ? orig.sceneNumber : idx + 1;
+                        return (
+                          <div key={idx} className={styles.sceneCard}>
+                            <h3>Scene {sceneNumber}</h3>
+                            {orig && (
+                              <div className={styles.mediaRow}>
+                                <div className={styles.mediaBox}>
+                                <img
+                                    src={orig.imageUrl}
+                                    alt={`scene ${sceneNumber}`}
+                                    className={styles.previewImage}
+                                />
+                                </div>
+                                <div className={styles.mediaBox}>
+                                <audio
+                                    controls
+                                    src={orig.audioUrl}
+                                    className={styles.audioPlayer}
+                                />
+                                </div>
+                                <div className={styles.mediaBox}>
+                                <video
+                                    controls
+                                    src={orig.videoUrl}
+                                    className={styles.videoPlayer}
+                                />
+                                </div>
+                            </div>
+                            )}
 
                             {/* 교체용 파일 선택 버튼 */}
                             <div className={styles.mediaRow}>
                               <button className={styles.fileBtn}>
-                                {s.image?.name || "Change Image"}
+                              {s.image?.name || (orig?.imageUrl ? "Existing Image" : "Change Image")}
                                 <input
                                   type="file"
                                   accept="image/*"
@@ -476,7 +480,7 @@ export default function OwlVideosPage() {
                                 />
                               </button>
                               <button className={styles.fileBtnLight}>
-                                {s.audio?.name || "Change Audio"}
+                              {s.audio?.name || (orig?.audioUrl ? "Existing Audio" : "Change Audio")}
                                 <input
                                   type="file"
                                   accept="audio/*"
@@ -490,7 +494,7 @@ export default function OwlVideosPage() {
                                 />
                               </button>
                               <button className={styles.fileBtn}>
-                                {s.video?.name || "Change Video"}
+                              {s.video?.name || (orig?.videoUrl ? "Existing Video" : "Change Video")}
                                 <input
                                   type="file"
                                   accept="video/*"
@@ -525,9 +529,10 @@ export default function OwlVideosPage() {
                             )}
                           </div>
                         );
-                      })
-                    : /* 보기 모드 */
-                      v.scenes.map((s) => (
+                    })}
+                  </>
+                ) : (
+                  v.scenes.map((s) => (
                         <div key={s.sceneNumber} className={styles.sceneCard}>
                           <h3>Scene {s.sceneNumber}</h3>
                           <img
@@ -600,7 +605,7 @@ export default function OwlVideosPage() {
                             />
                           </label>
                         </div>
-                      ))}
+                      )))}
                 </div>
 
                 {/* edit 모드에서 씬 추가 */}
