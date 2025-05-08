@@ -72,6 +72,10 @@
     font-size: 2rem;
     margin-bottom: 1rem;
     letter-spacing: -0.04em;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   .section p,
