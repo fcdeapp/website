@@ -7,6 +7,56 @@
   color: #333;
 }
 
+.carouselContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  padding: 3rem 1rem;
+}
+
+.carouselItem {
+  font-size: 1.8rem;
+  color: #0A1045;
+  text-align: center;
+  max-width: 700px;
+  animation: fadeIn 0.8s ease-in-out;
+  margin: 1rem 0;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .carouselItem {
+    font-size: 2.2rem;
+  }
+}
+
+/* Carousel Image override */
+.carouselImage {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  animation: fadeIn 0.8s ease-in-out;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+/* FadeIn keyframes already defined at bottom of your CSS */
+/* If you don’t already have it, ensure you have: */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Hero Section */
 .hero {
   position: relative;

@@ -15,203 +15,194 @@ type Screenshot = {
 
 export default function Home() {
   const [modalImage, setModalImage] = useState<string | null>(null);
+  const [featIdx, setFeatIdx] = useState(0);
+  const [journeyIdx, setJourneyIdx] = useState(0);
+  const [shotIdx, setShotIdx] = useState(0);
 
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
   const screenshots: Screenshot[] = [
-    { name: "Map", src: "/screenshots/map.png" },
-    { name: "Home", src: "/screenshots/home.png" },
-    { name: "Create Event", src: "/screenshots/create.png" },
-    { name: "Chat", src: "/screenshots/chat.png" },
-    { name: "Profile", src: "/screenshots/profile.png" },
+    { name: "Map View", src: "/screenshots/map.png" },
+    { name: "Home Feed", src: "/screenshots/home.png" },
+    { name: "New Event", src: "/screenshots/create.png" },
+    { name: "Chat Room", src: "/screenshots/chat.png" },
+    { name: "Profile Page", src: "/screenshots/profile.png" },
   ];
 
   const openModal = (src: string) => setModalImage(src);
   const closeModal = () => setModalImage(null);
 
   const features = [
-    "AI-Powered Personalized Event Recommendations",
-    "Easy and Fast Event Creation",
-    "Trust Badge System for Safe Meetups",
-    "Local Buddy Groups for Seamless Cultural Exchange",
-    "Real-time Chat and Notification Integration",
+    "Smart Event Picks",
+    "Quick Event Creation",
+    "Verified Hosts",
+    "Local Buddy Circles",
+    "Live Chat & Alerts",
   ];
 
   const journeySteps = [
-    "Sign Up and Create Your Profile",
-    "Get Personalized Event Suggestions",
-    "Join or Create an Event with One Click",
-    "Connect with Local Buddies and Build Your Network",
+    "Create Your Profile",
+    "Get Tailored Suggestions",
+    "Join or Start an Event",
+    "Meet Local Buddies",
   ];
+
+  // advance / retreat functions
+  const next = (len: number, idx: number, set: (i: number) => void) =>
+    set((idx + 1) % len);
+  const prev = (len: number, idx: number, set: (i: number) => void) =>
+    set((idx - 1 + len) % len);
+
+  // auto-advance
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
+  useEffect(() => {
+    const iv = setInterval(() => next(features.length, featIdx, setFeatIdx), 5000);
+    return () => clearInterval(iv);
+  }, [featIdx]);
+
+  useEffect(() => {
+    const iv = setInterval(
+      () => next(journeySteps.length, journeyIdx, setJourneyIdx),
+      5000
+    );
+    return () => clearInterval(iv);
+  }, [journeyIdx]);
+
+  useEffect(() => {
+    const iv = setInterval(
+      () => next(screenshots.length, shotIdx, setShotIdx),
+      7000
+    );
+    return () => clearInterval(iv);
+  }, [shotIdx]);
+
+  // click handler: left half → prev, right half → next
+  const handleClick =
+    (len: number, idx: number, set: (i: number) => void) =>
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      const { width, left } = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - left;
+      if (x > width / 2) next(len, idx, set);
+      else prev(len, idx, set);
+    };
 
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Abrody | Connecting People and Cultures Abroad</title>
+        <title>Abrody | Connecting People Abroad</title>
       </Head>
 
       <div className={styles.container}>
-      {/* Hero Section */}
-      <header className={styles.hero} data-aos="fade-in">
-        <div className={styles.heroOverlay}>
-          <h1 className={styles.title} data-aos="fade-up">Abrody</h1>
-          <p className={styles.subtitle} data-aos="fade-up" data-aos-delay="300">
-            Connecting People and Cultures Abroad
-          </p>
-          {/* 작은 크기의 힌트 텍스트를 더 아래쪽에 배치 */}
-          <div className={styles.heroHint} data-aos="fade-up" data-aos-delay="500">
-            Swipe to Explore
-          </div>
-          {/* 아래 방향 화살표 두 개를 세로로 아주 좁게 배열 */}
-          <div className={styles.heroArrows} data-aos="fade-up" data-aos-delay="600">
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#F7F7F7"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+        {/* Hero */}
+        <header className={styles.hero} data-aos="fade-in">
+          <div className={styles.heroOverlay}>
+            <h1 className={styles.title} data-aos="fade-up">
+              Abrody
+            </h1>
+            <p
+              className={styles.subtitle}
+              data-aos="fade-up"
+              data-aos-delay={300}
             >
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#F7F7F7"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              Connecting People and Cultures Abroad
+            </p>
+            <div
+              className={styles.heroHint}
+              data-aos="fade-up"
+              data-aos-delay={500}
             >
-              <polyline points="6 9 12 15 18 9" />
-            </svg>
+              Swipe to Explore
+            </div>
+            <div
+              className={styles.heroArrows}
+              data-aos="fade-up"
+              data-aos-delay={600}
+            >
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#F7F7F7"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#F7F7F7"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
 
         <main className={styles.main}>
-          {/* Value Proposition Section */}
-          <section className={styles.section} data-aos="fade-up">
-            <div className={styles.split} data-aos="fade-right">
-              <div>
-                <h2 className={styles.sectionTitle}>Why Abrody?</h2>
-                <p className={styles.sectionText}>
-                  Abrody is a mobile app and web service designed to help international students and workers overcome isolation and language barriers.
-                  With AI-based event recommendations, a trust badge system, and local buddy groups, we make it easy and safe to join offline gatherings.
-                </p>
-              </div>
-            </div>
-            <div className={styles.split} data-aos="zoom-in" data-aos-delay="300">
-              <img
-                src="/screenshots/value-proposition.png"
-                alt="Value Proposition"
-                className={styles.sectionImage}
-              />
+          {/* Key Features Carousel */}
+          <section
+            className={styles.section}
+            onClick={handleClick(features.length, featIdx, setFeatIdx)}
+            data-aos="fade-in"
+          >
+            <h2 className={styles.sectionTitle}>Key Feature</h2>
+            <div className={styles.carouselContainer}>
+              <p className={styles.carouselItem}>{features[featIdx]}</p>
             </div>
           </section>
 
-          {/* Key Features Section */}
-          <section className={styles.sectionAlt} data-aos="fade-up">
-            <div className={styles.split} data-aos="fade-right">
-              <img
-                src="/screenshots/features.png"
-                alt="Key Features"
-                className={styles.sectionImage}
-              />
-            </div>
-            <div className={styles.split} data-aos="fade-left">
-              <h2 className={styles.sectionTitle}>Key Features</h2>
-              <ul className={styles.featuresList}>
-                {features.map((feature, index) => (
-                  <li
-                    key={index}
-                    className={styles.featureItem}
-                    data-aos="fade-up"
-                    data-aos-delay={index * 100}
-                  >
-                    {/* SVG 아이콘 */}
-                    <svg
-                      className={styles.featureIcon}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#3C5AFE"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
+          {/* User Journey Carousel */}
+          <section
+            className={styles.sectionAlt}
+            onClick={handleClick(
+              journeySteps.length,
+              journeyIdx,
+              setJourneyIdx
+            )}
+            data-aos="fade-in"
+          >
+            <h2 className={styles.sectionTitle}>Your Journey</h2>
+            <div className={styles.carouselContainer}>
+              <p className={styles.carouselItem}>
+                {journeySteps[journeyIdx]}
+              </p>
             </div>
           </section>
 
-          {/* User Journey Section */}
-          <section className={styles.section} data-aos="fade-up">
-            <div className={styles.split} data-aos="fade-right">
-              <h2 className={styles.sectionTitle}>User Journey</h2>
-              <ol className={styles.journeyList}>
-                {journeySteps.map((step, index) => (
-                  <li
-                    key={index}
-                    className={styles.journeyItem}
-                    data-aos="fade-up"
-                    data-aos-delay={index * 100}
-                  >
-                    <div className={styles.journeyMarker}>
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="#3C5AFE"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <circle cx="12" cy="12" r="3" />
-                      </svg>
-                    </div>
-                    <span>{step}</span>
-                  </li>
-                ))}
-              </ol>
-            </div>
-            <div className={styles.split} data-aos="zoom-in" data-aos-delay="300">
+          {/* Screenshots Carousel */}
+          <section
+            className={styles.section}
+            onClick={handleClick(
+              screenshots.length,
+              shotIdx,
+              setShotIdx
+            )}
+            data-aos="fade-in"
+          >
+            <h2 className={styles.sectionTitle}>Preview</h2>
+            <div className={styles.carouselContainer}>
               <img
-                src="/screenshots/journey.png"
-                alt="User Journey"
-                className={styles.sectionImage}
+                src={screenshots[shotIdx].src}
+                alt={screenshots[shotIdx].name}
+                className={styles.carouselImage}
               />
-            </div>
-          </section>
-
-          {/* App Screenshots Section */}
-          <section className={styles.sectionAlt} data-aos="fade-up">
-            <h2 className={styles.sectionTitle}>App Screenshots</h2>
-            <div className={styles.screenshotsGrid}>
-              {screenshots.map((screen) => (
-                <div
-                  key={screen.name}
-                  className={styles.screenshotItem}
-                  onClick={() => openModal(screen.src)}
-                  data-aos="zoom-in"
-                  data-aos-delay="200"
-                >
-                  <img
-                    src={screen.src}
-                    alt={screen.name}
-                    className={styles.screenshotImage}
-                  />
-                  <p className={styles.screenshotLabel}>{screen.name}</p>
-                </div>
-              ))}
+              <p className={styles.carouselItem}>
+                {screenshots[shotIdx].name}
+              </p>
             </div>
           </section>
 
