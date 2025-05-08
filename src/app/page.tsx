@@ -119,6 +119,7 @@ export default function Home() {
             <div className={styles.carouselContainer}>
               <AnimatePresence initial={false} custom={journeyDir}>
                  <motion.div
+                   className={styles.carouselSlide}
                    key={journeyIdx}
                    custom={journeyDir}
                    variants={{

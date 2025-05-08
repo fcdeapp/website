@@ -7,6 +7,18 @@
   color: #333;
 }
 
+.carouselSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Carousel Helpers */
 .carouselContainer {
   position: relative;
@@ -392,7 +404,10 @@
 .betaTitle {
   font-size: 2.75rem;
   font-weight: 800;
-  color: #0A1045;
+  background: linear-gradient(to right, #D8315B, #F2542D);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
   position: relative;
   letter-spacing: -0.04em;
