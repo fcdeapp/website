@@ -169,7 +169,7 @@ export default function Home() {
                 alt={screenshots[shotIdx].name}
                 className={styles.carouselImage}
               />
-              <p className={styles.carouselItem}>
+              <p className={styles.carouselItemPreview}>
                 {screenshots[shotIdx].name}
               </p>
             </div>
