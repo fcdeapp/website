@@ -19,6 +19,12 @@ type Screenshot = {
 };
 
 export default function Home() {
+  const [videoOrder, setVideoOrder] = useState<string[]>([
+    "/DemoAbrody_1.mp4",
+    "/DemoAbrody_2.mp4",
+    "/DemoAbrody_3.mp4",
+  ]);
+
   const journeyItems: CarouselItem[] = [
     { label: "Make Global Friends", image: "/journey/phone4.png" },
     { label: "Pick Your Interests", image: "/journey/phone1.png" },
@@ -45,6 +51,17 @@ export default function Home() {
   //--- AOS 초기화 ---
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
+  }, []);
+
+  //--- 비디오 순서 자동 순환 애니메이션 ---
+  useEffect(() => {
+    const iv = setInterval(() => {
+      setVideoOrder((prev) => {
+        // 맨 앞을 뒤로 보내는 로테이션
+        return [...prev.slice(1), prev[0]];
+      });
+    }, 5000); // 5초마다 순환
+    return () => clearInterval(iv);
   }, []);
 
   useEffect(() => {
@@ -178,38 +195,25 @@ export default function Home() {
           {/* App Demo Videos */}
           <section className={styles.section} data-aos="fade-up">
             <h2 className={styles.sectionTitle}>App Demo</h2>
-            <div className={styles.demoVideosContainer}>
-              <video
-                className={styles.demoVideo}
-                autoPlay
-                muted
-                playsInline
-                loop
-                preload="metadata" 
-              >
-                <source src="/DemoAbrody_2.mp4" type="video/mp4" />
-              </video>
-              <video
-                className={styles.demoVideo}
-                autoPlay
-                muted
-                playsInline
-                loop
-                preload="metadata" 
-              >
-                <source src="/DemoAbrody_2.mp4" type="video/mp4" />
-              </video>
-              <video
-                className={styles.demoVideo}
-                autoPlay
-                muted
-                playsInline
-                loop
-                preload="metadata" 
-              >
-                <source src="/DemoAbrody_3.mp4" type="video/mp4" />
-              </video>
-            </div>
+            <motion.div
+              className={styles.demoVideosContainer}
+              layout
+            >
+              {videoOrder.map((src) => (
+                <motion.video
+                  key={src}
+                  className={styles.demoVideo}
+                  src={src}
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
+                  preload="metadata"
+                  layout
+                  transition={{ layout: { duration: 0.8, ease: "easeInOut" } }}
+                />
+              ))}
+            </motion.div>
           </section>
 
           {/* Beta Section */}
