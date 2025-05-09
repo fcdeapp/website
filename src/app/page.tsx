@@ -185,6 +185,8 @@ export default function Home() {
                 muted
                 playsInline
                 loop
+                controls
+                preload="metadata" 
               >
                 <source src="/DemoAbrody_1.mp4" type="video/mp4" />
               </video>
@@ -194,8 +196,10 @@ export default function Home() {
                 muted
                 playsInline
                 loop
+                controls
+                preload="metadata" 
               >
-                <source src="/DemoAbrody_1.mp4" type="video/mp4" />
+                <source src="/DemoAbrody_2.mp4" type="video/mp4" />
               </video>
               <video
                 className={styles.demoVideo}
@@ -203,6 +207,8 @@ export default function Home() {
                 muted
                 playsInline
                 loop
+                controls
+                preload="metadata" 
               >
                 <source src="/DemoAbrody_1.mp4" type="video/mp4" />
               </video>
