@@ -175,21 +175,38 @@ export default function Home() {
             </div>
           </section>
 
-          {/* App Demo Video */}
+          {/* App Demo Videos */}
           <section className={styles.section} data-aos="fade-up">
             <h2 className={styles.sectionTitle}>App Demo</h2>
-            <video
-              className={styles.demoVideo}
-              autoPlay
-              muted
-              playsInline
-              loop
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            >
-              <source src="/DemoAbrody_1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div className={styles.demoVideosContainer}>
+              <video
+                className={styles.demoVideo}
+                autoPlay
+                muted
+                playsInline
+                loop
+              >
+                <source src="/DemoAbrody_1.mp4" type="video/mp4" />
+              </video>
+              <video
+                className={styles.demoVideo}
+                autoPlay
+                muted
+                playsInline
+                loop
+              >
+                <source src="/DemoAbrody_1.mp4" type="video/mp4" />
+              </video>
+              <video
+                className={styles.demoVideo}
+                autoPlay
+                muted
+                playsInline
+                loop
+              >
+                <source src="/DemoAbrody_1.mp4" type="video/mp4" />
+              </video>
+            </div>
           </section>
 
           {/* Beta Section */}

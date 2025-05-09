@@ -386,12 +386,17 @@
 }
 
 /* Demo Video */
+.demoVideosContainer {
+  display: flex;            /* ➕ arrange videos in a row */
+  gap: 1rem;                /* ➕ space between videos */
+  justify-content: center;  /* ➕ center them */
+}
+
 .demoVideo {
-  width: 100%;
-  max-width: 100%;
+  flex: 1;                  /* ➕ each takes equal space */
+  max-width: 300px;         /* ➕ cap width */
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
 }
 
 /* Desktop: Constrain demo video size */
