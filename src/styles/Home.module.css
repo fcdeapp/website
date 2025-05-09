@@ -109,29 +109,29 @@
 .title {
   font-size: 6rem;
   font-weight: 900;
-  background: linear-gradient(to right, #D8315B, #F2542D);
+  background: linear-gradient(45deg, #D8315B, #F2542D);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
   letter-spacing: -0.05em;
-  text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
 }
 
 .subtitle {
   font-size: 2.5rem;
   font-weight: 400;
-  color: #555;
+  background: linear-gradient(45deg, #D8315B, #F2542D);
   margin-top: 1.5rem;
   letter-spacing: -0.03em;
-  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
 }
 
 /* Hero Hint 텍스트 - 조금 더 아래쪽에 배치, 작게 표시, 파도치듯 투명도 변동 */
 .heroHint {
   margin-top: 3rem; /* 기존보다 더 아래쪽 배치 */
   font-size: 1rem;
-  color: #F7F7F7;
+  color: #888;
   opacity: 0.4;
   animation: textWave 3s infinite;
 }
@@ -148,6 +148,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.1rem; /* 간격을 아주 좁게 */
+  color: #888;
   animation: bounce 2s infinite;
 }
 
