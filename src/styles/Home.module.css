@@ -32,7 +32,7 @@
 }
 
 .sectionAlt .carouselContainer {
-  height: 450px;
+  min-height: 450px;
   overflow: hidden;
 }
 
@@ -72,7 +72,7 @@
 
 .carouselImage {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   border-radius: 12px;
   margin-bottom: 1rem;
