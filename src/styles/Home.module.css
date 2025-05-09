@@ -24,7 +24,7 @@
 .carouselContainer {
   position: relative;
   display: flex;
-  flex-direction: column;
+  overflow: hidden;     
   align-items: center;
   justify-content: center;
   min-height: 300px;
@@ -33,7 +33,7 @@
 }
 
 .sectionAlt .carouselContainer {
-  min-height: 450px;
+  height: 500px;   
   overflow: hidden;
 }
 
