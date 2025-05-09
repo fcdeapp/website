@@ -172,7 +172,7 @@ export default function Home() {
 
           {/* Screenshots Carousel */}
           <section
-            className={styles.section}
+            className={`${styles.section} ${styles.previewSection}`}
             data-aos="fade-in"
             onClick={() => {
               /* 이전처럼 클릭으로 이동 */
