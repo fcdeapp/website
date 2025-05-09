@@ -41,10 +41,7 @@ export default function Home() {
   ];
 
   //--- 상태 관리 ---
-  const [featIdx, setFeatIdx] = useState(0);
-  const [featDir, setFeatDir] = useState(0);
-  const [journeyIdx, setJourneyIdx] = useState(0);
-  const [journeyDir, setJourneyDir] = useState(0);
+  const [journeyOrder, setJourneyOrder] = useState<CarouselItem[]>(journeyItems);
   const [shotIdx, setShotIdx] = useState(0);
   const [modalImage, setModalImage] = useState<string | null>(null);
 
@@ -66,8 +63,7 @@ export default function Home() {
 
   useEffect(() => {
     const iv = setInterval(() => {
-      setJourneyDir(1);
-      setJourneyIdx((i) => (i + 1) % journeyItems.length);
+      setJourneyOrder((prev) => [...prev.slice(1), prev[0]]);
     }, 5000);
     return () => clearInterval(iv);
   }, []);
@@ -78,18 +74,6 @@ export default function Home() {
     }, 7000);
     return () => clearInterval(iv);
   }, []);
-
-  const handleJourneyClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    const { width, left } = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - left;
-    if (x > width / 2) {
-      setJourneyDir(1);
-      setJourneyIdx((i) => (i + 1) % journeyItems.length);
-    } else {
-      setJourneyDir(-1);
-      setJourneyIdx((i) => (i - 1 + journeyItems.length) % journeyItems.length);
-    }
-  };
 
   const openModal = (src: string) => setModalImage(src);
   const closeModal = () => setModalImage(null);
@@ -130,44 +114,25 @@ export default function Home() {
           <section
             className={styles.sectionAlt}
             data-aos="fade-in"
-            onClick={handleJourneyClick}
           >
             <h2 className={styles.sectionTitle}>Your Journey</h2>
-            <div className={styles.carouselContainer}>
-              <AnimatePresence initial={false} custom={journeyDir}>
-                 <motion.div
-                   className={styles.carouselSlide}
-                   key={journeyIdx}
-                   custom={journeyDir}
-                   variants={{
-                     enter: (dir) => ({
-                       x: dir > 0 ? 300 : -300,
-                       scale: 0.8,
-                       opacity: 0
-                     }),
-                     center: { x: 0, scale: 1, opacity: 1 },
-                     exit: (dir) => ({
-                       x: dir > 0 ? -300 : 300,
-                       scale: 0.8,
-                       opacity: 0
-                     })
-                   }}
-                   initial="enter"
-                   animate="center"
-                   exit="exit"
-                   transition={{ duration: 0.6, ease: "easeInOut" }}
-                 >
-                  <img
-                    src={journeyItems[journeyIdx].image}
-                    alt={journeyItems[journeyIdx].label}
-                    className={styles.carouselImage}
-                  />
-                  <p className={styles.carouselItem}>
-                    {journeyItems[journeyIdx].label}
-                  </p>
-                </motion.div>
-              </AnimatePresence>
-            </div>
+          <motion.div className={styles.journeyContainer} layout>
+            {journeyOrder.slice(0, 3).map((item) => (
+              <motion.div
+                key={item.label}
+                className={styles.journeyItemContainer}
+                layout
+                transition={{ duration: 0.6, ease: "easeInOut" }}
+              >
+                <img
+                  src={item.image}
+                  alt={item.label}
+                  className={styles.carouselImage}
+                />
+                <p className={styles.carouselItem}>{item.label}</p>
+              </motion.div>
+            ))}
+          </motion.div>
           </section>
 
           {/* Screenshots Carousel */}
