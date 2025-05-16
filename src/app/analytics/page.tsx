@@ -65,7 +65,7 @@ type RegionAnalytics = {
 
 export default function AdminAnalyticsPage() {
   const { SERVER_URL } = useConfig();
-
+  const [isMounted, setIsMounted] = useState(false);
   const [region, setRegion] = useState<string>("all");
   const [start, setStart] = useState<string>(() => {
     const d = new Date();
@@ -119,6 +119,14 @@ export default function AdminAnalyticsPage() {
     }
   }, [SERVER_URL, region, start, end]);
 
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return <div className={styles.container}>Loading analytics…</div>;
+  }
+  
   // Download JSON (단일 리전)
   const handleDownload = () => {
     if (!data.length) return;

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-
+import { useConfig } from "../../context/ConfigContext";
 import Licenses from '../../components/Licenses';
 import OTPRequestModal from '../../components/OTPRequestModal';
 import TermsModal from '../../components/TermsModal';
@@ -16,6 +16,7 @@ import styles from '../../styles/pages/Setting.module.css';
 type TermsType = 'service' | 'privacy' | 'community';
 
 const SettingPage: React.FC = () => {
+  const { SERVER_URL } = useConfig();
   const router = useRouter();
   const { t } = useTranslation();
 
@@ -38,7 +39,7 @@ const SettingPage: React.FC = () => {
 
   // 1) 유저 정보 불러오기
   useEffect(() => {
-    fetch('/api/users/me', { credentials: 'include' })
+    fetch(`${SERVER_URL}/users/me`, { credentials: 'include' })
       .then(r => r.json())
       .then(data => {
         setIsAdmin(data.isAdmin);
