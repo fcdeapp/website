@@ -68,9 +68,13 @@ export default function Analyze() {
       }
 
       const data = await res.json()
-      const parsed: Result[] =
-        data.analysis.results ?? (data.analysis as Result[])
-      setResults(parsed)
+      let arr: any = data.analysis?.results ?? data.analysis
+      if (!Array.isArray(arr)) {
+        console.error('Unexpected analysis payload:', data.analysis)
+        throw new Error('Invalid analysis format received')
+      }
+      // Now safe to setResults
+      setResults(arr as Result[])
     } catch (err) {
       console.error(err)
       setError('Analysis failed. Please try again.')
