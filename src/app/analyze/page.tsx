@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
+import { useConfig } from '../../context/ConfigContext'
 import styles from '../../styles/pages/Analyze.module.css'
 
 interface Result {
@@ -10,14 +11,34 @@ interface Result {
 }
 
 export default function Analyze() {
+  const { SERVER_URL } = useConfig()
   const [file, setFile] = useState<File | null>(null)
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null)
   const [results, setResults] = useState<Result[] | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
+  // clean up preview URL when file changes
+  useEffect(() => {
+    return () => {
+      if (previewUrl) URL.revokeObjectURL(previewUrl)
+    }
+  }, [previewUrl])
+
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files?.[0]) setFile(e.target.files[0])
+    const picked = e.target.files?.[0]
+    if (picked) {
+      setFile(picked)
+      const url = URL.createObjectURL(picked)
+      setPreviewUrl(url)
+      setResults(null)
+      setError(null)
+    }
+  }
+
+  const openFilePicker = () => {
+    inputRef.current?.click()
   }
 
   const handleAnalyze = async () => {
@@ -33,10 +54,13 @@ export default function Analyze() {
       const formData = new FormData()
       formData.append('profileImage', file)
 
-      const res = await fetch('/api/userAnalysis/analyze-user-image-only', {
-        method: 'POST',
-        body: formData,
-      })
+      const res = await fetch(
+        `${SERVER_URL}/api/userAnalysis/analyze-user-image-only`,
+        {
+          method: 'POST',
+          body: formData,
+        }
+      )
 
       if (!res.ok) {
         const txt = await res.text()
@@ -44,7 +68,6 @@ export default function Analyze() {
       }
 
       const data = await res.json()
-      // endpoint returns { analysis: { results: [...] } }
       const parsed: Result[] =
         data.analysis.results ?? (data.analysis as Result[])
       setResults(parsed)
@@ -56,9 +79,7 @@ export default function Analyze() {
     }
   }
 
-  const handleClose = () => {
-    setResults(null)
-  }
+  const handleClose = () => setResults(null)
 
   const handleShare = () => {
     if (!results) return
@@ -79,6 +100,7 @@ export default function Analyze() {
       <h1 className={styles.title}>Analyze Profile Image</h1>
 
       <div className={styles.form}>
+        {/* Hidden file input */}
         <input
           ref={inputRef}
           type="file"
@@ -86,6 +108,26 @@ export default function Analyze() {
           onChange={handleFileChange}
           className={styles.fileInput}
         />
+
+        {/* Preview or placeholder */}
+        <div
+          className={styles.previewContainer}
+          onClick={openFilePicker}
+          title="Click to select or change image"
+        >
+          {previewUrl ? (
+            <img
+              src={previewUrl}
+              alt="Preview"
+              className={styles.previewImage}
+            />
+          ) : (
+            <div className={styles.previewPlaceholder}>
+              Click to choose an image
+            </div>
+          )}
+        </div>
+
         <button
           onClick={handleAnalyze}
           disabled={loading}
@@ -98,7 +140,10 @@ export default function Analyze() {
 
       {results && (
         <div className={styles.backdrop} onClick={handleClose}>
-          <div className={styles.modal} onClick={e => e.stopPropagation()}>
+          <div
+            className={styles.modal}
+            onClick={(e) => e.stopPropagation()}
+          >
             <h2 className={styles.modalTitle}>Popularity Prediction</h2>
 
             <div className={styles.modalBody}>
