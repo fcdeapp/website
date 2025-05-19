@@ -30,8 +30,7 @@ export default function Analyze() {
     const picked = e.target.files?.[0]
     if (picked) {
       setFile(picked)
-      const url = URL.createObjectURL(picked)
-      setPreviewUrl(url)
+      setPreviewUrl(URL.createObjectURL(picked))
       setResults(null)
       setError(null)
     }
@@ -73,7 +72,6 @@ export default function Analyze() {
         console.error('Unexpected analysis payload:', data.analysis)
         throw new Error('Invalid analysis format received')
       }
-      // Now safe to setResults
       setResults(arr as Result[])
     } catch (err) {
       console.error(err)
@@ -100,89 +98,129 @@ export default function Analyze() {
   }
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Analyze Profile Image</h1>
-
-      <div className={styles.form}>
-        {/* Hidden file input */}
-        <input
-          ref={inputRef}
-          type="file"
-          accept="image/*"
-          onChange={handleFileChange}
-          className={styles.fileInput}
-        />
-
-        {/* Preview or placeholder */}
-        <div
-          className={styles.previewContainer}
-          onClick={openFilePicker}
-          title="Click to select or change image"
-        >
-          {previewUrl ? (
+    <div className={styles.pageWrapper}>
+      <div className={styles.container}>
+        {/* Header */}
+        <div className={styles.header}>
+          <button className={styles.backBtn} onClick={() => history.back()}>
             <img
-              src={previewUrl}
-              alt="Preview"
-              className={styles.previewImage}
+              src="/icons/arrow-left.svg"
+              alt="Back"
+              className={styles.backIcon}
             />
-          ) : (
-            <div className={styles.previewPlaceholder}>
-              Click to choose an image
+          </button>
+          <h1 className={styles.title}>Instant Popularity Snapshot</h1>
+        </div>
+
+        {/* Subtitle / Instructions */}
+        <p className={styles.subtitle}>
+          This quick test uses AI to predict in which countries you’d be most popular based <strong>only</strong> on your photo.  
+          <strong> Note:</strong> Results are for entertainment purposes and may not reflect real outcomes.
+        </p>
+
+        <div className={styles.form}>
+          <input
+            ref={inputRef}
+            type="file"
+            accept="image/*"
+            onChange={handleFileChange}
+            className={styles.fileInput}
+          />
+
+          <div
+            className={styles.previewContainer}
+            onClick={openFilePicker}
+            title="Click to select or change image"
+          >
+            {previewUrl ? (
+              <img
+                src={previewUrl}
+                alt="Preview"
+                className={styles.previewImage}
+              />
+            ) : (
+              <div className={styles.previewPlaceholder}>
+                Click here to choose your photo
+              </div>
+            )}
+          </div>
+
+          <button
+            onClick={handleAnalyze}
+            disabled={loading}
+            className={styles.analyzeButton}
+          >
+            {loading ? 'Analyzing…' : 'Run Analysis'}
+          </button>
+          {error && <p className={styles.error}>{error}</p>}
+
+          {/* More detailed analysis CTA */}
+          {!results && !loading && (
+            <div className={styles.moreInfo}>
+              For deeper insights, complete your profile in the Abrody app:
+              <div className={styles.storeButtons}>
+                <a
+                  href="https://apps.apple.com/app/abrody/id123456789"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.storeButton}
+                >
+                  Download iOS
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.abrody.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.storeButton}
+                >
+                  Download Android
+                </a>
+              </div>
             </div>
           )}
         </div>
 
-        <button
-          onClick={handleAnalyze}
-          disabled={loading}
-          className={styles.analyzeButton}
-        >
-          {loading ? 'Analyzing…' : 'Analyze'}
-        </button>
-        {error && <p className={styles.error}>{error}</p>}
-      </div>
-
-      {results && (
-        <div className={styles.backdrop} onClick={handleClose}>
-          <div
-            className={styles.modal}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h2 className={styles.modalTitle}>Popularity Prediction</h2>
-
-            <div className={styles.modalBody}>
-              {results.map((item, i) => (
-                <div key={i} className={styles.row}>
-                  <span className={styles.country}>{item.country}</span>
-                  <div className={styles.barBg}>
-                    <div
-                      className={styles.barFill}
-                      style={{ width: `${item.percentage}%` }}
-                    />
+        {/* Results Modal */}
+        {results && (
+          <div className={styles.backdrop} onClick={handleClose}>
+            <div
+              className={styles.modal}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h2 className={styles.modalTitle}>Popularity Prediction</h2>
+              <div className={styles.modalBody}>
+                {results.map((item, i) => (
+                  <div key={i} className={styles.row}>
+                    <span className={styles.country}>{item.country}</span>
+                    <div className={styles.barBg}>
+                      <div
+                        className={styles.barFill}
+                        style={{ width: `${item.percentage}%` }}
+                      />
+                    </div>
+                    <span className={styles.pct}>{item.percentage}%</span>
+                    <p className={styles.reason}>{item.reason}</p>
                   </div>
-                  <span className={styles.pct}>{item.percentage}%</span>
-                  <p className={styles.reason}>{item.reason}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className={styles.btnRow}>
-              <button
-                onClick={handleShare}
-                className={`${styles.btn} ${styles.btnPrimary}`}
-              >
-                Share
-              </button>
-              <button
-                onClick={handleClose}
-                className={`${styles.btn} ${styles.btnSecondary}`}
-              >
-                Close
-              </button>
+                ))}
+              </div>
+              <div className={styles.btnRow}>
+                <button
+                  onClick={handleShare}
+                  className={`${styles.btn} ${styles.btnPrimary}`}
+                >
+                  Share
+                </button>
+                <button
+                  onClick={handleClose}
+                  className={`${styles.btn} ${styles.btnSecondary}`}
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }

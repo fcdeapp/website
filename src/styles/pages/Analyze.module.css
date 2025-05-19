@@ -1,54 +1,72 @@
-.container {
+.pageWrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: #F8F8FE;
+  }
+  
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 16px;
+    background: #F8F8FE;
+  }
+  
+  /* Header */
+  .header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    margin-bottom: 16px;
   }
-  
-  /* Title with clipped gradient text */
+  .backBtn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 12px;
+  }
+  .backIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
   .title {
-    font-size: 2rem;
+    flex: 1;
+    font-size: 1.75rem;
     font-weight: 800;
-    background-image: linear-gradient(90deg, #D8315B, #F2542D);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s;
-  }
-  .title:hover {
-    transform: scale(1.05);
+    color: #1a1045;
   }
   
+  /* Subtitle / instructions */
+  .subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  /* Form */
   .form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  
-  /* hide real input */
   .fileInput {
     display: none;
   }
   
-  /* clickable preview */
   .previewContainer {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border: 2px dashed #ccc;
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-    position: relative;
     transition: border-color 0.3s, transform 0.3s;
   }
   .previewContainer:hover {
     border-color: #D8315B;
     transform: scale(1.02);
   }
-  
-  /* placeholder */
   .previewPlaceholder {
     width: 100%;
     height: 100%;
@@ -56,19 +74,16 @@
     align-items: center;
     justify-content: center;
     color: #888;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
   }
-  
-  /* actual image */
   .previewImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
   
-  /* analyze button */
   .analyzeButton {
     padding: 0.75rem 1.5rem;
     background-image: linear-gradient(90deg, #D8315B, #F2542D);
@@ -93,13 +108,38 @@
     margin-top: 0.5rem;
   }
   
-  /* modal backdrop */
+  /* More info + store buttons */
+  .moreInfo {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .storeButtons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .storeButton {
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(90deg, #D8315B, #F2542D);
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .storeButton:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Modal backdrop */
   .backdrop {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
@@ -108,18 +148,17 @@
     animation: fadeIn 0.3s ease;
   }
   
-  /* scale-up animation */
+  /* Animations */
   @keyframes scaleUp {
     from { transform: scale(0.8); opacity: 0; }
     to   { transform: scale(1);   opacity: 1; }
   }
-  
-  /* slide-down fade-in */
   @keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
   }
   
+  /* Modal panel */
   .modal {
     background: #fff;
     border-radius: 12px;
@@ -141,8 +180,7 @@
   }
   .modalTitle::after {
     content: '';
-    width: 40px;
-    height: 4px;
+    width: 40px; height: 4px;
     background: #D8315B;
     display: block;
     margin: 0.5rem auto 0;
@@ -150,9 +188,7 @@
     animation: scaleUp 0.5s ease forwards;
   }
   
-  .modalBody {
-    margin-bottom: 1rem;
-  }
+  .modalBody { margin-bottom: 1rem; }
   
   .row {
     margin-bottom: 1.25rem;
@@ -176,7 +212,6 @@
     overflow: hidden;
     margin: 0.5rem 0;
   }
-  
   .barFill {
     height: 8px;
     background: linear-gradient(90deg, #F2542D, #D8315B);
@@ -187,7 +222,6 @@
     font-size: 0.9rem;
     color: #888;
   }
-  
   .reason {
     font-size: 0.95rem;
     color: #444;
@@ -222,5 +256,14 @@
   .btnSecondary {
     background: #ddd;
     color: #333;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .container { padding: 8px; }
+    .title { font-size: 1.5rem; }
+    .subtitle { font-size: 0.9rem; }
+    .previewContainer { width: 180px; height: 180px; }
+    .storeButton { font-size: 0.8rem; }
   }
   
