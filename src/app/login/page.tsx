@@ -50,6 +50,9 @@ export default function LoginPage() {
 
       if (res.ok) {
         localStorage.setItem("isLoggedIn", "true");
+        if (data.region) {
+          localStorage.setItem("region", data.region);
+        }
         router.push('/');
       } else {
         alert(data.message || 'Login failed');

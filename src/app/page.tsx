@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "../styles/Home.module.css";
 import WebFooter from "../components/WebFooter";
+import RecordingModal from "../components/RecordingModal";
 
 type CarouselItem = {
   label: string;
@@ -44,6 +45,7 @@ export default function Home() {
   const [journeyOrder, setJourneyOrder] = useState<CarouselItem[]>(journeyItems);
   const [shotIdx, setShotIdx] = useState(0);
   const [modalImage, setModalImage] = useState<string | null>(null);
+  const [isRecorderOpen, setIsRecorderOpen] = useState(false);
 
   //--- AOS 초기화 ---
   useEffect(() => {
@@ -179,6 +181,20 @@ export default function Home() {
                 />
               ))}
             </motion.div>
+          </section>
+
+          {/* Real-time Conversation Checker Section */}
+          <section className={styles.section} data-aos="fade-up">
+            <h2 className={styles.sectionTitle}>Real-time Conversation Checker</h2>
+            <p className={styles.sectionText}>
+              Try our browser-based, real-time speech transcription & grammar check (English only).
+            </p>
+            <button
+              className={`${styles.button} ${styles.recordButton}`}
+              onClick={() => setIsRecorderOpen(true)}
+            >
+              Try It Now
+            </button>
           </section>
 
           {/* Beta Section */}

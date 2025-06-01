@@ -45,7 +45,7 @@ export const calculateDistance = async (
 
     return formatDistance(distanceInMeters, isMetric);
   } catch (error) {
-    console.error('Error fetching location:', error);
+    console.log('Error fetching location:', error);
     return t('placeDetails.locationError');
   }
 };
