@@ -25,10 +25,11 @@ export default function About() {
         <section className={styles.heroSection}>
           <div className={styles.heroText}>
             <h1 data-aos="fade-up">
-              실제 만남, 내 언어로 성장하다
+              내 언어로 성장하다
             </h1>
             <p data-aos="fade-up" data-aos-delay="200">
-              Abrody는 외국인과 현지인이 모여, 자연스럽게 친구가 되고 언어를 함께 익히는 새로운 공간입니다.
+            누구에게나 똑같은 교재는 이제 그만.
+            Abrody는 내 생활, 내 대화에서 필요한 표현만 뽑아 진짜 내게 맞는 학습 자료를 만듭니다.
             </p>
           </div>
           <div
@@ -117,8 +118,9 @@ export default function About() {
           <div className={styles.split} data-aos="fade-left">
             <h2>우리의 비전</h2>
             <p>
-            전 세계 어디서든, 소모임에서 언어가 자라고 AI가 내 학습을 맞춤 지원합니다.
-            캐나다, 호주, 한국, 영국에서 시작해 누구나 쉽고 자연스럽게 언어와 친구를 얻을 수 있도록 만들겠습니다.
+            전 세계 어디에서든, 소모임에서 사람들과 자연스럽게 언어를 배우세요.
+            AI가 내 대화와 경험을 분석해, 나에게 꼭 맞는 학습을 만들어줍니다.
+            캐나다, 호주, 한국, 영국에서 시작해, 누구나 쉽게 친구도 만들고, 언어도 내 삶 속에서 익힐 수 있게 하겠습니다.
             </p>
           </div>
         </section>
