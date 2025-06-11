@@ -110,12 +110,7 @@ export default function Home() {
             </div>
 
         <main className={styles.main}>
-          {/* User Journey Carousel */}
-          <section
-            className={styles.sectionAlt}
-            data-aos="fade-in"
-          >
-            <h2 className={styles.sectionTitle}>Your Journey</h2>
+          <h2 className={styles.sectionTitle}>Your Journey</h2>
           <motion.div className={styles.journeyContainer} layout>
             {journeyOrder.slice(0, 5).map((item) => (
               <motion.div
@@ -133,7 +128,6 @@ export default function Home() {
               </motion.div>
             ))}
           </motion.div>
-          </section>
 
           {/* App Demo Videos */}
           <section className={styles.section} data-aos="fade-up">
