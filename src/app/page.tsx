@@ -111,18 +111,13 @@ export default function Home() {
           </div>
         </header>
 
-        <section className={styles.section} data-aos="fade-up">
             <div className={styles.languageConcept} data-aos="fade-up">
               <img
                 src="/images/language_concept.jpg"
                 alt="Language Journey"
                 className={styles.languageImage}
               />
-              <p className={styles.languageText}>
-                Every conversation shapes your personalized language journey.
-              </p>
             </div>
-          </section>
 
         <main className={styles.main}>
           {/* User Journey Carousel */}
