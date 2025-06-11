@@ -1,7 +1,7 @@
 /* Footer 기본 스타일 */
 .footer {
     background-color: #fefefe; /* 조금 더 밝은 흰색 */
-    color: #444;
+    color: rgba(216, 49, 91, 0.75);
     padding: 2rem;
     font-size: 0.9rem;
     border-top: 1px solid #ddd;
@@ -26,7 +26,7 @@
   
   .footerSection:hover {
     padding-right: 2rem;
-    background-color: #f7f7f7; /* hover 시 조금 더 밝은 회색 느낌 */
+    background-color: rgba(216, 49, 91, 0.15);
     border-radius: 12px; /* 모서리를 둥글게 */
   }
   
@@ -58,14 +58,14 @@
     font-weight: 700;
     margin-bottom: 1rem;
     letter-spacing: -0.04em;
-    color: #333;
+    color: rgba(216, 49, 91, 0.95);
   }
   
   .footerText {
     font-size: 0.9rem;
     line-height: 1.6;
     letter-spacing: -0.04em;
-    color: #555;
+    color: rgba(216, 49, 91, 0.75);
   }
   
   .footerLinks {
@@ -79,13 +79,13 @@
   }
   
   .footerLinks a {
-    color: #555;
+    color: rgba(216, 49, 91, 0.85);
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .footerLinks a:hover {
-    color: #3C5AFE;
+    color: #D8315B;
   }
   
   /* 소셜 아이콘 */
@@ -113,6 +113,6 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: 1rem;
     font-size: 0.85rem;
-    color: #777;
+    color: rgba(216, 49, 91, 0.75);
   }
   

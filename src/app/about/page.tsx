@@ -25,12 +25,10 @@ export default function About() {
         <section className={styles.heroSection}>
           <div className={styles.heroText}>
             <h1 data-aos="fade-up">
-              Connecting Cultures. Building Communities.
+              Building Real-World Connections, Empowering Personalized Language Learning.
             </h1>
             <p data-aos="fade-up" data-aos-delay="200">
-              Abrody is a platform designed to bring together international
-              residents, students, and workers through meaningful offline
-              events and group interactions.
+              Abrody isn’t just a meetup platform—it’s where expats and locals form communities, build friendships, and naturally master languages together, both online and offline.
             </p>
           </div>
           <div
@@ -45,19 +43,15 @@ export default function About() {
         <section className={styles.section}>
           <div className={styles.split} data-aos="fade-right">
             <img
-              src="/about/mission.png"
+              src="/about/mission_banner.jpg"
               alt="Mission graphic"
               style={{ width: "100%", height: "auto" }}
             />
           </div>
           <div className={styles.split} data-aos="fade-left">
-            <h2>Our Mission</h2>
+            <h2>Why Language Apps Fall Short</h2>
             <p>
-              We aim to solve the issues of loneliness and cultural barriers
-              faced by foreigners by enabling localized offline meetups, trust
-              systems, and hobby-based buddy groups. With AI-powered
-              recommendations, users can discover personalized opportunities to
-              connect with others in a safe, trusted environment.
+              Traditional language apps rely on generic lessons and one-way teaching. Learners are left with materials that don’t reflect their real needs or daily conversations.
             </p>
           </div>
         </section>
@@ -65,18 +59,15 @@ export default function About() {
         {/* Section: Market Problem */}
         <section className={styles.sectionAlt}>
           <div className={styles.split} data-aos="fade-left">
-            <h2>The Problem We Solve</h2>
+            <h2>How Abrody Changes Everything</h2>
             <p>
-              Many international students and migrant residents struggle with
-              social isolation, lack of local support, and difficulties joining
-              meaningful groups. Existing platforms lack real-world group
-              functionalities, trust mechanisms, and local relevance.
+              At Abrody, learning starts with your actual conversations. Every group chat, meetup, and message becomes a personalized study resource—AI turns your own words and mistakes into targeted practice, making learning social, relevant, and truly yours.
             </p>
           </div>
           <div className={styles.split} data-aos="fade-up">
             <img
-              src="/about/problem.png"
-              alt="Problem chart"
+              src="/images/speak_owl.png"
+              alt="Problem"
               className={styles.sectionImage}
             />
           </div>
@@ -127,10 +118,7 @@ export default function About() {
           <div className={styles.split} data-aos="fade-left">
             <h2>Our Vision</h2>
             <p>
-              Abrody aims to expand into international markets starting with
-              Canada, Australia, and the UK. With AI-based event sorting and
-              buddy-group governance, we envision a trusted ecosystem for real-life
-              connections around the world.
+              We’re building a new standard for global communities—where local meetups drive language mastery and AI personalizes every step. Launching in Canada, Australia, Korea, and the UK, Abrody is on a mission to make personalized social learning accessible everywhere.
             </p>
           </div>
         </section>
