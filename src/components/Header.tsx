@@ -146,7 +146,7 @@ export default function Header() {
         }
         .nav-link {
           text-decoration: none;
-          color: #555555;
+          color: rgba(216, 49, 91, 0.75);
           padding: 5px 10px;
           border-radius: 5px;
           transition: background-color 0.3s ease;
@@ -183,7 +183,7 @@ export default function Header() {
         .login-button {
           background-color: rgba(216, 49, 91, 0.1);
           color: #D8315B; 
-          border: 1px solid #555555;
+          border: 1px solid rgba(216, 49, 91, 0.65);
         }
         .login-button:hover {
           background-color: rgba(216, 49, 91, 0.15);
