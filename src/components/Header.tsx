@@ -146,7 +146,7 @@ export default function Header() {
         }
         .nav-link {
           text-decoration: none;
-          color: inherit;
+          color: #555555;
           padding: 5px 10px;
           border-radius: 5px;
           transition: background-color 0.3s ease;
@@ -181,26 +181,26 @@ export default function Header() {
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         .login-button {
-          background-color: #555555;
-          color: #fff;
+          background-color: rgba(216, 49, 91, 0.1);
+          color: #D8315B; 
           border: 1px solid #555555;
         }
         .login-button:hover {
-          background-color: #555555;
+          background-color: rgba(216, 49, 91, 0.15);
           opacity: 0.9;
         }
         .signup-button {
           background-color: #fff;
-          color: #555555;
-          border: 1px solid #555555;
+          color: rgba(216, 49, 91, 0.65);
+          border: 1px solid rgba(216, 49, 91, 0.65);
         }
         .signup-button:hover {
           background-color: #f7f7f7;
         }
         .logout-button {
           background-color: #fff;
-          color: #555555;
-          border: 1px solid #555555;
+          color: rgba(216, 49, 91, 0.65);
+          border: 1px solid rgba(216, 49, 91, 0.65);
           margin-top: 4px;
         }
         .logout-button:hover {

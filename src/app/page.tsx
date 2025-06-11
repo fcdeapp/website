@@ -117,7 +117,7 @@ export default function Home() {
           >
             <h2 className={styles.sectionTitle}>Your Journey</h2>
           <motion.div className={styles.journeyContainer} layout>
-            {journeyOrder.slice(0, 3).map((item) => (
+            {journeyOrder.slice(0, 5).map((item) => (
               <motion.div
                 key={item.label}
                 className={styles.journeyItemContainer}
