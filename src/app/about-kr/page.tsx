@@ -42,7 +42,7 @@ export default function About() {
 
             <div className={styles.languageConcept} data-aos="fade-up">
               <img
-                src="/images/language_concept.jpg"
+                src="/images/language_conceptKR.jpg"
                 alt="Language Journey"
                 className={styles.languageImage}
               />
