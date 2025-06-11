@@ -110,7 +110,12 @@ export default function Home() {
             </div>
 
         <main className={styles.main}>
-          <h2 className={styles.sectionTitle}>Your Journey</h2>
+          <div className={styles.journeyHeader}>
+            <h2 className={styles.sectionTitle}>Every Conversation is a Lesson</h2>
+            <p className={styles.sectionSubtitle}>
+              Talk naturally, meet in person, and learn exactly what you need.
+            </p>
+          </div>
           <motion.div className={styles.journeyContainer} layout>
             {journeyOrder.slice(0, 5).map((item) => (
               <motion.div

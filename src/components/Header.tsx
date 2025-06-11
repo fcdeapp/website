@@ -152,7 +152,8 @@ export default function Header() {
           transition: background-color 0.3s ease;
         }
         .nav-link:hover {
-          background-color: #f0f0f0;
+          background-color: rgba(216, 49, 91, 0.15);
+          color: rgba(216, 49, 91, 0.9);
         }
         /* 공통 버튼 스타일: 높이 및 패딩 통일 */
         .action-buttons a,

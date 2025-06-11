@@ -78,9 +78,17 @@
   min-height: 450px;
   overflow: hidden;
 }
-
+.journeyHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.sectionSubtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
 .carouselItem {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   background: linear-gradient(to right, #D8315B, #F2542D);
   background-clip: text;
   -webkit-background-clip: text;
