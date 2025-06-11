@@ -137,6 +137,9 @@ export default function Home() {
           {/* App Demo Videos */}
           <section className={styles.section} data-aos="fade-up">
             <h2 className={styles.sectionTitle}>App Demo</h2>
+            <p className={styles.sectionSubtitleSmall}>
+              Join our community: meet, chat, and transform every group conversation into your own personalized language journey.
+            </p>
             <motion.div
               className={styles.demoVideosContainer}
               layout

@@ -87,6 +87,13 @@
   color: #555;
   margin-top: 0.5rem;
 }
+.sectionSubtitleSmall {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+  max-width: 600px;
+  text-align: center;
+}
 .carouselItem {
   font-size: 1.4rem;
   background: linear-gradient(to right, #D8315B, #F2542D);
