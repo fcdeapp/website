@@ -99,8 +99,8 @@ export default function Analyze() {
 
   return (
     <div className={styles.pageWrapper}>
+      {/*
       <div className={styles.container}>
-        {/* Header */}
         <div className={styles.header}>
           <button className={styles.backBtn} onClick={() => history.back()}>
             <svg
@@ -119,7 +119,6 @@ export default function Analyze() {
           <h1 className={styles.title}>Instant Popularity Snapshot</h1>
         </div>
 
-        {/* Subtitle / Instructions */}
         <p className={styles.subtitle}>
           This quick test uses AI to predict in which countries you’d be most popular based <strong>only</strong> on your photo.  
           <strong> Note:</strong> Results are for entertainment purposes and may not reflect real outcomes.
@@ -161,7 +160,6 @@ export default function Analyze() {
           </button>
           {error && <p className={styles.error}>{error}</p>}
 
-          {/* More detailed analysis CTA */}
           {!results && !loading && (
             <div className={styles.moreInfo}>
               For deeper insights, complete your profile in the Abrody app:
@@ -187,7 +185,6 @@ export default function Analyze() {
           )}
         </div>
 
-        {/* Results Modal */}
         {results && (
           <div className={styles.backdrop} onClick={handleClose}>
             <div
@@ -228,6 +225,7 @@ export default function Analyze() {
           </div>
         )}
       </div>
+      */}
     </div>
   )
 }
