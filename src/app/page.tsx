@@ -191,14 +191,13 @@ export default function Home() {
             </motion.div>
           </section>
 
-          {/* Real-time Conversation Checker Section */}
           <section className={styles.section} data-aos="fade-up">
-            <h2 className={styles.sectionTitle}>Real-time Conversation Checker</h2>
+            <h2 className={styles.sectionTitle}>Speak. Chat. Master.</h2>
             <p className={styles.sectionText}>
               Speak naturally—learn exactly what you need.
             </p>
             <img
-              src="/images/speak_owl.png"
+              src="/images/speak_chat_master_owl.jpg"
               alt="Speak. Chat. Master."
               className={styles.recordButtonImage}
             />
