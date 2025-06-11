@@ -84,11 +84,6 @@ const BuddyCreateModal: React.FC<BuddyCreateModalProps> = ({ visible, onClose, S
       window.alert(`${t('error')}: ${t('all_fields_required')}`);
       return;
     }
-    const token = localStorage.getItem('token');
-    if (!token) {
-      window.alert(`${t('error')}: ${t('auth_required')}`);
-      return;
-    }
     try {
       setIsLoading(true);
       const formData = new FormData();
@@ -107,7 +102,6 @@ const BuddyCreateModal: React.FC<BuddyCreateModalProps> = ({ visible, onClose, S
 
       const response = await axios.post(`${SERVER_URL}/buddy-groups`, formData, {
         headers: {
-          Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',
         },
       });

@@ -93,7 +93,7 @@ export default function Home() {
           <div className={styles.heroOverlay}>
             <h1 className={styles.title} data-aos="fade-up">Abrody</h1>
             <p className={styles.subtitle} data-aos="fade-up" data-aos-delay={300}>
-              Connecting People and Cultures Abroad
+              Your Words Matter
             </p>
             <div className={styles.heroHint} data-aos="fade-up" data-aos-delay={500}>
               Swipe to Explore
@@ -110,6 +110,19 @@ export default function Home() {
             </div>
           </div>
         </header>
+
+        <section className={styles.section} data-aos="fade-up">
+            <div className={styles.languageConcept} data-aos="fade-up">
+              <img
+                src="/images/language_concept.jpg"
+                alt="Language Journey"
+                className={styles.languageImage}
+              />
+              <p className={styles.languageText}>
+                Every conversation shapes your personalized language journey.
+              </p>
+            </div>
+          </section>
 
         <main className={styles.main}>
           {/* User Journey Carousel */}
@@ -187,14 +200,13 @@ export default function Home() {
           <section className={styles.section} data-aos="fade-up">
             <h2 className={styles.sectionTitle}>Real-time Conversation Checker</h2>
             <p className={styles.sectionText}>
-              Try our browser-based, real-time speech transcription & grammar check (English only).
+              Speak naturally—learn exactly what you need.
             </p>
-            <button
-              className={`${styles.button} ${styles.recordButton}`}
-              onClick={() => setIsRecorderOpen(true)}
-            >
-              Try It Now
-            </button>
+            <img
+              src="/images/speak_owl.png"
+              alt="Speak. Chat. Master."
+              className={styles.recordButtonImage}
+            />
           </section>
 
           {/* Beta Section */}

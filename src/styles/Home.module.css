@@ -19,6 +19,27 @@
   justify-content: center;
 }
 
+.languageConcept {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.languageImage {
+  width: 200px;
+  max-width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.languageText {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
 /* Carousel Helpers */
 .carouselContainer {
   position: relative;
@@ -511,7 +532,7 @@
 /* Footer */
 .footer {
   background-color: #0A1045;
-  color: #F8F8FE;
+  color: #FAFAFA;
   padding: 2rem;
   font-size: 0.7rem;
   letter-spacing: -0.04em;
@@ -553,7 +574,7 @@
 }
 
 .footerLinks a {
-  color: #F8F8FE;
+  color: #FAFAFA;
   text-decoration: none;
   transition: color 0.3s ease;
 }

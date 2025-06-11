@@ -2,7 +2,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f8f8fe;
+    background-color: #FAFAFA;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -386,7 +386,7 @@
   }
   .contentContainer {
     padding: 25px;
-    background-color: #F8F8FE;
+    background-color: #FAFAFA;
     width: 100%;
     z-index: 5;
   }
@@ -415,13 +415,13 @@
   
   /* 모달 내부 */
   .modalContainer {
-    background-color: #F8F8FE;
+    background-color: #FAFAFA;
     padding: 25px;
     border-radius: 15px;
     width: 90%;
   }
   .modalContent {
-    background-color: #F8F8FE;
+    background-color: #FAFAFA;
     padding: 20px;
     border-radius: 15px;
   }

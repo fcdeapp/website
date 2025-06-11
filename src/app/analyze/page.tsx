@@ -175,7 +175,7 @@ export default function Analyze() {
                   Download iOS
                 </a>
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.abrody.app"
+                  href="https://play.google.com/store/apps/details?id=com.fcdeapp.facade"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.storeButton}

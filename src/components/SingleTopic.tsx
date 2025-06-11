@@ -111,7 +111,7 @@ const SingleTopic: React.FC<SingleTopicProps> = ({ topics, selectedTopic, onTopi
                 className={styles.topicText}
                 style={{
                   fontSize: selectedTopic === topic.key ? 16 : 14,
-                  color: selectedTopic === topic.key ? "#F8F8FE" : topic.color,
+                  color: selectedTopic === topic.key ? "#FAFAFA" : topic.color,
                 }}
               >
                 {t(`topics.${topic.key}`)}
