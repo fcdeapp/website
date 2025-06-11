@@ -27,18 +27,15 @@ export default function Home() {
   ]);
 
   const journeyItems: CarouselItem[] = [
-    { label: "Make Global Friends", image: "/journey/phone4.png" },
-    { label: "Pick Your Interests", image: "/journey/phone1.png" },
-    { label: "Join Meetups Near You", image: "/journey/phone2.png" },
-    { label: "Find Nearby Expats", image: "/journey/phone3.png" },
-  ];
-
-  const screenshots: Screenshot[] = [
-    { name: "Map View", src: "/screenshots/map.png" },
-    { name: "Home Feed", src: "/screenshots/home.png" },
-    { name: "New Event", src: "/screenshots/create.png" },
-    { name: "Chat Room", src: "/screenshots/chat.png" },
-    { name: "Profile Page", src: "/screenshots/profile.png" },
+    { label: "Turn Your Mistakes into Quizzes", image: "/journey/iPhoneJourney.jpg" },
+    { label: "Talk with AI like a Friend", image: "/journey/iPhoneJourney2.jpg" },
+    { label: "AI Generates Personalized Notes", image: "/journey/iPhoneJourney3.jpg" },
+    { label: "Meet in Your Language", image: "/journey/iPhoneJourney4.jpg" },
+    { label: "Check Grammar Live", image: "/journey/iPhoneJourney5.jpg" },
+    { label: "Pick Your Interests", image: "/journey/iPhoneJourney6.jpg" },
+    { label: "Join Meetups Near You", image: "/journey/iPhoneJourney7.jpg" },
+    { label: "Find Nearby Expats", image: "/journey/iPhoneJourney8.jpg" },
+    { label: "Make Global Friends", image: "/journey/iPhoneJourney9.jpg" },
   ];
 
   //--- 상태 관리 ---
@@ -67,13 +64,6 @@ export default function Home() {
     const iv = setInterval(() => {
       setJourneyOrder((prev) => [...prev.slice(1), prev[0]]);
     }, 5000);
-    return () => clearInterval(iv);
-  }, []);
-
-  useEffect(() => {
-    const iv = setInterval(() => {
-      setShotIdx((i) => (i + 1) % screenshots.length);
-    }, 7000);
     return () => clearInterval(iv);
   }, []);
 
@@ -143,28 +133,6 @@ export default function Home() {
               </motion.div>
             ))}
           </motion.div>
-          </section>
-
-          {/* Screenshots Carousel */}
-          <section
-            className={`${styles.section} ${styles.previewSection}`}
-            data-aos="fade-in"
-            onClick={() => {
-              /* 이전처럼 클릭으로 이동 */
-              setShotIdx((i) => (i + 1) % screenshots.length);
-            }}
-          >
-            <h2 className={styles.sectionTitle}>Preview</h2>
-            <div className={styles.carouselContainer}>
-              <img
-                src={screenshots[shotIdx].src}
-                alt={screenshots[shotIdx].name}
-                className={styles.carouselImage}
-              />
-              <p className={styles.carouselItemPreview}>
-                {screenshots[shotIdx].name}
-              </p>
-            </div>
           </section>
 
           {/* App Demo Videos */}

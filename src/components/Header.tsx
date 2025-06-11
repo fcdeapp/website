@@ -181,26 +181,26 @@ export default function Header() {
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         .login-button {
-          background-color: #d9d9d9;
+          background-color: #555555;
           color: #fff;
-          border: 1px solid #d9d9d9;
+          border: 1px solid #555555;
         }
         .login-button:hover {
-          background-color: #d9d9d9;
+          background-color: #555555;
           opacity: 0.9;
         }
         .signup-button {
           background-color: #fff;
-          color: #d9d9d9;
-          border: 1px solid #d9d9d9;
+          color: #555555;
+          border: 1px solid #555555;
         }
         .signup-button:hover {
           background-color: #f7f7f7;
         }
         .logout-button {
           background-color: #fff;
-          color: #d9d9d9;
-          border: 1px solid #d9d9d9;
+          color: #555555;
+          border: 1px solid #555555;
           margin-top: 4px;
         }
         .logout-button:hover {
