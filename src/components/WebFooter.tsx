@@ -39,8 +39,6 @@ export default function WebFooter() {
                 <a>FAQ</a>
               </Link>
             </li>
-            {/* Terms of Service와 Privacy Policy 둘 다 href는 "/terms"로 설정,
-                onClick 핸들러에서 각각 다른 TermsType을 localStorage에 저장 */}
             <li>
               <Link href="/terms">
                 <a onClick={() => handleTermsClick("service")}>Terms of Service</a>

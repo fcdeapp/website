@@ -103,7 +103,7 @@
   .socialIcons img {
     width: 24px;
     height: 24px;
-    filter: invert(100%);
+    filter: brightness(0) saturate(100%) invert(27%) sepia(85%) saturate(600%) hue-rotate(345deg) brightness(95%);
     transition: filter 0.3s ease;
   }
   

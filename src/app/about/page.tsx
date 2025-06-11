@@ -39,8 +39,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Section: Mission */}
-        <section className={styles.section}>
           <div className={styles.split} data-aos="fade-right">
             <img
               src="/about/mission_banner.jpg"
@@ -48,13 +46,14 @@ export default function About() {
               style={{ width: "100%", height: "auto" }}
             />
           </div>
+          <section className={styles.section}>
           <div className={styles.split} data-aos="fade-left">
             <h2>Why Language Apps Fall Short</h2>
             <p>
               Traditional language apps rely on generic lessons and one-way teaching. Learners are left with materials that don’t reflect their real needs or daily conversations.
             </p>
           </div>
-        </section>
+          </section>
 
         {/* Section: Market Problem */}
         <section className={styles.sectionAlt}>
@@ -110,7 +109,7 @@ export default function About() {
         <section className={styles.sectionAlt}>
           <div className={styles.split} data-aos="fade-right">
             <img
-              src="/about/vision.png"
+              src="/about/vision_banner.jpg"
               alt="Vision roadmap"
               className={styles.sectionImage}
             />
