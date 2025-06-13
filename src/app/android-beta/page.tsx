@@ -185,28 +185,32 @@ export default function AndroidBeta() {
           </section>
 
           {/* Beta Section */}
-          <section className={styles.betaSection} data-aos="fade-up">
-            <div className={styles.betaCard}>
-              <h2 className={styles.betaTitle}>안드로이드 베타테스터 모집</h2>
-              <p className={styles.betaSubtitle}>
-                Abrody의 새로운 기능을  
-                가장 먼저 경험해보고  
-                여러분의 의견을 들려주세요!
-                추첨을 통해 안드로이드 베타테스트에 참여한 분들께 스타벅스 키프티콘을 드려요
-                * 7/1 추첨예정이며 참여하신 분들 중 총 10분께 드려요
-              </p>
-              <div className={styles.ctaButtons}>
+          <div className={styles.betaCard}>
+            <h2 className={styles.betaTitle}>안드로이드 베타테스터 모집</h2>
+            {/* 메인 안내 문구 */}
+            <p className={styles.betaSubtitle}>
+                Abrody의 새로운 기능을<br />
+                가장 먼저 경험해보고<br />
+                여러분의 소중한 의견을 들려주세요!
+            </p>
+            <div className={styles.ctaButtons}>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.ctaButton}
+                href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.ctaButton}
                 >
-                  베타테스터 지원하기
+                베타테스터 지원하기
                 </a>
-              </div>
             </div>
-          </section>
+            {/* 이벤트 안내 문구 (별도 스타일 적용) */}
+            <div className={styles.eventNotice}>
+                <span className={styles.eventMain}>🎁 베타테스터 이벤트</span><br />
+                안드로이드 베타테스트에 참여하신 분 중<br />
+                <strong>추첨을 통해 10분께 스타벅스 커피 기프티콘</strong>을 드립니다.<br />
+                <span className={styles.eventDate}>* 추첨일: 7/1 예정</span>
+            </div>
+          </div>
         </main>
 
         {/* Modal */}

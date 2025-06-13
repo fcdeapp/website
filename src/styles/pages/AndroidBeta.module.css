@@ -6,6 +6,37 @@
     background-color: #FFF;
     color: #333;
   }
+
+  /* ... 기존 betaCard, ctaButton 스타일 위에 아래 추가 ... */
+.eventNotice {
+    margin-top: 2rem;
+    background: linear-gradient(120deg, #f8f8f8 80%, #ffe7ef 100%);
+    border-radius: 12px;
+    padding: 1.2rem 1rem 1rem 1rem;
+    color: #b65173;
+    font-size: 1rem;
+    box-shadow: 0 2px 12px rgba(216,49,91,0.04);
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+  
+  .eventMain {
+    font-weight: 700;
+    color: #D8315B;
+    font-size: 1.08rem;
+  }
+  
+  .eventNotice strong {
+    color: #D8315B;
+    font-weight: 700;
+  }
+  
+  .eventDate {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.96rem;
+    color: #888;
+  }  
   
   .carouselSlide {
     top: 0;
