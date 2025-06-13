@@ -196,7 +196,7 @@ export default function AndroidBeta() {
             </p>
             <div className={styles.ctaButtons}>
                 <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
+                href="/android-beta-redirect"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.ctaButton}
