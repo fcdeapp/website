@@ -185,6 +185,7 @@ export default function AndroidBeta() {
           </section>
 
           {/* Beta Section */}
+          <section className={styles.section} data-aos="fade-up">
           <div className={styles.betaCard}>
             <h2 className={styles.betaTitle}>안드로이드 베타테스터 모집</h2>
             {/* 메인 안내 문구 */}
@@ -211,6 +212,7 @@ export default function AndroidBeta() {
                 <span className={styles.eventDate}>* 추첨일: 7/1 예정</span>
             </div>
           </div>
+          </section>
         </main>
 
         {/* Modal */}
