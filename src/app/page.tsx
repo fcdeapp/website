@@ -181,10 +181,53 @@ export default function Home() {
             />
           </section>
 
+          <section className={styles.betaSection} data-aos="fade-up">
+            <div className={styles.betaCard}>
+              <h2 className={styles.betaTitle}>Install on iOS</h2>
+              <p className={styles.betaSubtitle}>
+                Available for Canada, Australia, UK &amp; Korea
+              </p>
+              <div className={styles.ctaButtons}>
+                <a
+                  href="https://apps.apple.com/ca/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.ctaButton}
+                >
+                  iOS (Canada)
+                </a>
+                <a
+                  href="https://apps.apple.com/au/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.ctaButton}
+                >
+                  iOS (Australia)
+                </a>
+                <a
+                  href="https://apps.apple.com/gb/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.ctaButton}
+                >
+                  iOS (UK)
+                </a>
+                <a
+                  href="https://apps.apple.com/kr/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.ctaButton}
+                >
+                  iOS (Korea)
+                </a>
+              </div>
+            </div>
+          </section>
+
           {/* Beta Section */}
           <section className={styles.betaSection} data-aos="fade-up">
             <div className={styles.betaCard}>
-              <h2 className={styles.betaTitle}>Join Our Closed Beta</h2>
+              <h2 className={styles.betaTitle}>Android Beta Test</h2>
               <p className={styles.betaSubtitle}>
                 Help shape Abrody by testing upcoming features before anyone else — your feedback matters!
               </p>
