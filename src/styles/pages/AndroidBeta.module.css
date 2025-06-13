@@ -1,0 +1,766 @@
+/* Global Container & Typography */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    color: #333;
+  }
+  
+  .carouselSlide {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3rem 1rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .languageConcept {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .languageImage {
+    width: 100%; 
+    max-width: none; 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .languageText {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+    max-width: 600px;
+    line-height: 1.4;
+  }
+  .recordButtonImage {
+    width: 100%;
+    max-height: 500px;
+    width: auto;
+    object-fit: contain;
+  }
+  /* Carousel Helpers */
+  .carouselContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    padding: 3rem 1rem;
+    overflow: hidden;
+  }
+  
+  .journeyContainer {
+    display: flex;
+    gap: 1rem;                /* + 아이템 사이 간격 */
+    justify-content: center;  /* + 중앙 정렬 */
+    flex-wrap: nowrap;        /* + 한 줄에 고정 */
+    overflow: hidden;         /* + 넘치는 부분 숨김 */
+  }
+  
+  /* + 각 항목 박스 스타일 */
+  .journeyItemContainer {
+    flex: 0 0 20%;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (max-width: 767px) {
+    .journeyItemContainer {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+  
+  .sectionAlt .carouselContainer {
+    min-height: 450px;
+    overflow: hidden;
+  }
+  .journeyHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .sectionSubtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  .sectionSubtitleSmall {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  .carouselItem {
+    font-size: 1.4rem;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    max-width: 700px;
+    margin: 1rem 0;
+    line-height: 1.4;
+  }
+  
+  .carouselItemPreview {
+    font-size: 0.8rem;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    max-width: 280px;
+    margin: 1rem 0;
+    line-height: 1.4;
+  }
+  
+  .previewSection .carouselImage {
+    max-width: 200px;
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .carouselItem {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .carouselItemPreview {
+      font-size: 0.45rem;
+    }
+  }
+  
+  .carouselImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
+  
+  /* FadeIn keyframes */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* 높이를 늘려 넉넉한 여백 */
+    background-image: linear-gradient(
+      to bottom,
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 1)
+      ),
+      url('/WebsiteBanner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heroOverlay {
+    position: relative;
+    z-index: 1;
+    padding: 6rem 3rem;
+    text-align: center;
+    animation: fadeInHero 1.2s ease-out;
+  }
+  
+  @keyframes fadeInHero {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .title {
+    font-size: 6rem;
+    font-weight: 900;
+    background: linear-gradient(45deg, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    letter-spacing: -0.05em;
+  }
+  
+  .subtitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    background: linear-gradient(45deg, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 1.5rem;
+    letter-spacing: -0.03em;
+    text-shadow: 0px 4px 12px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Hero Hint 텍스트 - 조금 더 아래쪽에 배치, 작게 표시, 파도치듯 투명도 변동 */
+  .heroHint {
+    margin-top: 3rem; /* 기존보다 더 아래쪽 배치 */
+    font-size: 1rem;
+    color: #888;
+    opacity: 0.4;
+    animation: textWave 3s infinite;
+  }
+  
+  @keyframes textWave {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+  
+  /* Hero Arrows: 두 개 화살표를 세로 배열, 간격 매우 좁게 */
+  .heroArrows {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem; 
+    color: rgba(136, 136, 136, 0.5);
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    background-color: #F7F7F7;
+    color: #555;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+  }
+  
+  /* Main Content */
+  .main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section styling with generous whitespace & layering */
+  .section, .sectionAlt {
+    margin-bottom: 4rem;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .sectionAlt {
+     margin: 4rem auto;
+     padding: 2rem 1rem;
+     background-color: #fff;
+     border-radius: 16px;
+     box-shadow: 0 6px 20px rgba(0,0,0,0);
+     animation: fadeIn 1s ease-in-out;
+     max-width: 500px;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+  }
+  
+  .sectionText {
+    font-size: 1.3rem;
+    color: #555;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.7;
+    letter-spacing: -0.04em;
+  }
+  
+  /* Split layout & Section Images */
+  .split {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .sectionImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  /* Features & Journey Lists */
+  .featuresList,
+  .journeyList {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 700px;
+  }
+  
+  .featureItem, .journeyItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInItem 0.8s forwards;
+  }
+  
+  @keyframes fadeInItem {
+    to { opacity: 1; }
+  }
+  
+  .featureIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+  }
+  
+  .featureItem span {
+    font-size: 1.15rem;
+    color: #555;
+  }
+  
+  .journeyItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .journeyMarker {
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+  }
+  
+  .journeyItem span {
+    font-size: 1.15rem;
+    color: #555;
+  }
+  
+  /* Mobile: Features & Journey Lists 텍스트 크기 조정 */
+  @media (max-width: 767px) {
+    .featureItem span,
+    .journeyItem span {
+      font-size: 0.85rem;  /* 기존 1.15rem 대신 0.85rem */
+    }
+  }
+  
+  /* Screenshots Grid */
+  .screenshotsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .screenshotItem {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .screenshotItem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  }
+  
+  .screenshotImage {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .screenshotLabel {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .modalContent {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    animation: scaleUp 0.5s ease;
+  }
+  
+  @keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .modalImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .modalClose {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background-color: #0A1045;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Demo Video */
+  .demoVideosContainer {
+    display: flex;            /* ➕ arrange videos in a row */
+    gap: 1rem;                /* ➕ space between videos */
+    justify-content: center;  /* ➕ center them */
+  }
+  
+  .demoVideo {
+    flex: 1;                  /* ➕ each takes equal space */
+    max-width: 300px;         /* ➕ cap width */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Desktop: Constrain demo video size */
+  @media (min-width: 768px) {
+    .demoVideo {
+      max-width: 300px;
+    }
+  }
+  
+  /* Beta Section */
+  .betaSection {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background: #FFFFFF;
+  }
+  
+  .betaCard {
+    max-width: 600px;
+    text-align: center;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(10, 16, 69, 0.08);
+    padding: 3rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .betaTitle {
+    font-size: 2.75rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    position: relative;
+    letter-spacing: -0.04em;
+  }
+  
+  .betaTitle::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #0A1045;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+    animation: expandWidth 1s ease forwards;
+  }
+  
+  @keyframes expandWidth {
+    from { width: 0; }
+    to { width: 60px; }
+  }
+  
+  .betaSubtitle {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    letter-spacing: -0.04em;
+  }
+  
+  .ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .ctaButton {
+    padding: 0.75rem 2rem;
+    border-radius: 999px;
+    background: rgba(216, 49, 91, 0.1);
+    border: 1px solid rgba(216, 49, 91, 0.4);
+    color: #D8315B;
+    font-weight: 600;
+    box-shadow: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .ctaButton:hover {
+    background-color: rgba(216, 49, 91, 0.15);
+    color: #F2542D;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #0A1045;
+    color: #FAFAFA;
+    padding: 2rem;
+    font-size: 0.7rem;
+    letter-spacing: -0.04em;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footerSection {
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem 0;
+  }
+  
+  .footerTitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.04em;
+  }
+  
+  .footerText {
+    font-size: 0.7rem;
+    line-height: 1.6;
+    letter-spacing: -0.04em;
+  }
+  
+  .footerLinks {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerLinks li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footerLinks a {
+    color: #FAFAFA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footerLinks a:hover {
+    color: #3C5AFE;
+  }
+  
+  .socialIcons a {
+    display: inline-block;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .socialIcons a:hover {
+    transform: translateY(-3px);
+  }
+  
+  .socialIcons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(1.5);
+  }
+  
+  .footerBottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 1rem;
+    font-size: 0.6rem;
+    color: #ccc;
+  }
+  
+  /* FadeIn Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Extra spacing for larger screens */
+  @media (min-width: 1024px) {
+    .main {
+      padding: 4rem 2rem;
+    }
+    .section {
+      max-width: 50vw;
+      margin: 0 auto 5rem;
+      padding: 4rem 3rem;
+    }
+    .sectionTitle {
+      font-size: 2.25rem;
+    }
+    .sectionText {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    .featuresList,
+    .journeyList {
+      font-size: 1rem;
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 767px) {
+    .main {
+      max-width: 100%;
+      padding: 1rem;
+    }
+    .sectionText {
+      max-width: 100%;
+      padding: 0 1rem;
+      overflow-wrap: break-word;
+    }
+    .screenshotsGrid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    .screenshotItem {
+      flex: 0 0 45%;
+      max-width: 45%;
+      box-sizing: border-box;
+      margin: 0;
+    }
+    .screenshotImage {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+    .betaSection {
+      padding: 2rem 1rem;
+    }
+    .section,
+    .betaCard {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      padding: 2rem 1rem;
+      margin: 0 0 2rem;
+    }
+    .ctaButtons {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .ctaButton {
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+    }
+    .sectionTitle {
+      font-size: 1.75rem;
+    }
+    .sectionText,
+    .featuresList,
+    .journeyList,
+    .betaSubtitle {
+      font-size: 0.85rem;
+    }
+    .featuresList,
+    .journeyList {
+      max-width: 100%;
+      padding: 0 1rem; /* 여백 추가 */
+    }
+    
+    .featureIcon,
+    .journeyMarker {
+      width: 16px;  /* 이미지 크기 축소 */
+      height: 16px;
+      margin-right: 0.4rem;
+    }
+    
+    .featureItem span,
+    .journeyItem span {
+      font-size: 0.85rem;  /* 텍스트 크기 축소 */
+      word-wrap: break-word; /* 단어가 넘칠 경우 줄바꿈 */
+    }
+  
+    @media (min-width: 767px) {
+      .footerText {
+        max-width: 60%;
+        margin: 0 auto;
+      }
+    }
+  }
+  
