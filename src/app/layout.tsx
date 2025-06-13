@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
+import Script from "next/script";
 import { ConfigProvider } from "../context/ConfigContext";
 import { I18nextProvider } from "react-i18next";
 import i18n from "../config/i18n";
@@ -227,6 +228,19 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <html lang="en" className={pretendard.className}>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17197212587"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-17197212587');
+        `}
+      </Script>
       <body>
         <ConfigProvider>
           <ErrorBoundary>
