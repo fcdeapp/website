@@ -136,6 +136,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .carouselItemPreview {
+    font-size: 0.7rem;
+  }
+}
+
 .carouselImage {
   width: 100%;
   max-width: 300px;
