@@ -103,6 +103,14 @@ export default function Home() {
 
             <div className={styles.languageConcept} data-aos="fade-up">
               <img
+                src="/images/AdsBanner.jpg"
+                alt="Language Journey"
+                className={styles.languageImage}
+              />
+            </div>
+
+            <div className={styles.languageConcept} data-aos="fade-up">
+              <img
                 src="/images/language_concept.jpg"
                 alt="Language Journey"
                 className={styles.languageImage}

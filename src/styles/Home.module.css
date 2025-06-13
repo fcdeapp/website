@@ -74,6 +74,13 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .journeyItemContainer {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
 .sectionAlt .carouselContainer {
   min-height: 450px;
   overflow: hidden;
