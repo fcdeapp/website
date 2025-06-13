@@ -213,6 +213,25 @@ export default function AndroidBeta() {
             </div>
           </div>
           </section>
+
+          <section className={styles.betaSection} data-aos="fade-up">
+            <div className={styles.betaCard}>
+              <h2 className={styles.betaTitle}>iOS 사용자이신가요?</h2>
+              <p className={styles.betaSubtitle}>
+              앱스토어에서 Abrody를 지금 바로 만나보세요.
+              </p>
+              <div className={styles.ctaButtons}>
+                <a
+                  href="https://apps.apple.com/kr/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.ctaButton}
+                >
+                  iOS 앱 다운로드
+                </a>
+              </div>
+            </div>
+          </section>
         </main>
 
         {/* Modal */}
