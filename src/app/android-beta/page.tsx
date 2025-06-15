@@ -224,10 +224,12 @@ export default function AndroidBeta() {
               </p>
               <div className={styles.ctaButtons}>
                 <a
-                  href="https://apps.apple.com/kr/app/id6743047157"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.ctaButton}
+                    href="https://apps.apple.com/kr/app/id6743047157"
+                    className={styles.ctaButton}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        (window as any).gtag_report_conversion_ios("https://apps.apple.com/kr/app/id6743047157");
+                    }}
                 >
                   iOS 앱 다운로드
                 </a>

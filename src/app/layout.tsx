@@ -241,7 +241,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           gtag('config', 'AW-17197212587');
         `}
       </Script>
-      
+
       <Script id="gtag-conversion-snippet" strategy="afterInteractive">
         {`
           function gtag_report_conversion(url) {
@@ -252,6 +252,25 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             };
             gtag('event', 'conversion', {
               'send_to': 'AW-17197212587/ejXLCPi7ptsaEKvHoohA',
+              'value': 1.0,
+              'currency': 'KRW',
+              'event_callback': callback
+            });
+            return false;
+          }
+        `}
+      </Script>
+      
+      <Script id="gtag-ios-conversion-snippet" strategy="afterInteractive">
+        {`
+          function gtag_report_conversion_ios(url) {
+            var callback = function() {
+              if (typeof(url) !== 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17197212587/YPrICMaop9saEKvHoohA',
               'value': 1.0,
               'currency': 'KRW',
               'event_callback': callback
