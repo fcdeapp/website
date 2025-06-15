@@ -196,10 +196,12 @@ export default function AndroidBeta() {
             </p>
             <div className={styles.ctaButtons}>
                 <a
-                href="/android-beta-redirect"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.ctaButton}
+                    href="/android-beta-redirect"
+                    className={styles.ctaButton}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        (window as any).gtag_report_conversion("/android-beta-redirect");
+                    }}
                 >
                 베타테스터 지원하기
                 </a>
