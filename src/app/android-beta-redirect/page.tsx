@@ -6,10 +6,19 @@ import { useRouter } from "next/navigation";
 
 export default function AndroidBetaRedirect() {
   const router = useRouter();
+
   useEffect(() => {
-    // 1. 전환 스크립트(gtag) 등 실행 후
-    // 2. 구글 폼으로 리디렉트
-    window.location.href = 
+    // 1) Conversion 이벤트 호출
+    if (typeof window !== "undefined") {
+      (window as any).gtag("event", "conversion", {
+        send_to: "AW-17197212587/VtpkCPCfmdsaEKvHoohA",
+        value: 1.0,
+        currency: "KRW",
+      });
+    }
+
+    // 2) Google Form 페이지로 리디렉트
+    window.location.href =
       "https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog";
   }, [router]);
 
