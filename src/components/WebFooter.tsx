@@ -54,19 +54,19 @@ export default function WebFooter() {
         <div className={styles.footerSection}>
           <h3 className={styles.footerTitle}>Follow Us</h3>
           <div className={styles.socialIcons}>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/facadeconnect/status/1934952417680150568" target="_blank" rel="noopener noreferrer">
               <img src="/icons/twitter.png" alt="Twitter" />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/share/1HrNxiJxV8/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
               <img src="/icons/facebook.png" alt="Facebook" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/abrody.app?igsh=MWo2ajQyMWZpdXFxNg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
               <img src="/icons/instagram.png" alt="Instagram" />
             </a>
-            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tiktok.com/@abrody.language.m/video/7516879247135509778?is_from_webapp=1&sender_device=pc&web_id=7516889198793377298" target="_blank" rel="noopener noreferrer">
               <img src="/icons/tiktok.png" alt="TikTok" />
             </a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://youtu.be/0-ZbuoKICVQ" target="_blank" rel="noopener noreferrer">
               <img src="/icons/youtube.png" alt="YouTube" />
             </a>
           </div>
