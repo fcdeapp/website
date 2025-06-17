@@ -39,6 +39,17 @@ export default function About() {
           </div>
         </section>
 
+        <section className={styles.videoSection}>
+          <video
+            src="/videos/GoogleAdsProject250617.mp4"
+            className={styles.fullscreenVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </section>
+
           <div className={styles.split} data-aos="fade-right">
             <img
               src="/about/mission_banner.jpg"
