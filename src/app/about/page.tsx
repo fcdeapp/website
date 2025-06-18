@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/About.module.css";
 import WebFooter from "../../components/WebFooter";
+import CountryBall from "../../components/CountryBall";
 
 export default function About() {
   useEffect(() => {
@@ -75,11 +76,18 @@ export default function About() {
             </p>
           </div>
           <div className={styles.split} data-aos="fade-up">
-            <img
-              src="/images/speak_owl.png"
-              alt="Problem"
-              className={styles.sectionImage}
-            />
+            <div className={styles.ballContainer}>
+              {[
+                "UKCountryBallX.png",
+                "FranceCountryBallX.png",
+                "SpainCountryBallX.png",
+                "ChinaCountryBallX.png",
+                "JapanCountryBallX.png",
+                "KoreaCountryBallX.png",
+              ].map((file) => (
+                <CountryBall key={file} src={`/images/${file}`} size={60} />
+              ))}
+            </div>
           </div>
         </section>
 
