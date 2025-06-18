@@ -42,7 +42,7 @@ export default function About() {
 
         <section className={styles.videoSection}>
           <video
-            src="/videos/GoogleAdsProject250617.mp4"
+            src="/videos/GoogleAdsProjectKR250617(2).mp4"
             className={styles.fullscreenVideo}
             autoPlay
             muted
@@ -90,38 +90,6 @@ export default function About() {
               alt="Problem"
               className={styles.sectionImage}
             />
-          </div>
-        </section>
-
-        {/* Section: Our Team */}
-        <section className={styles.section} data-aos="fade-up">
-          <h2 className={styles.center}>팀 소개</h2>
-          <div className={styles.teamGrid}>
-            {/* Current team member card */}
-            <div className={styles.teamCard}>
-              <img
-                src="/about/team-founder.png"
-                alt="Doh Jung-min"
-                style={{ width: "150px", height: "150px", borderRadius: "50%" }}
-              />
-              <h3>도정민</h3>
-              <p>창업자 & 대표</p>
-            </div>
-            {/* Co-Founder & Team Member Recruitment Card */}
-            <div className={styles.teamCard}>
-              <div className={styles.hiringBadge}>
-                <img
-                  src="/about/hiring.png"
-                  alt="Join Our Founding Team"
-                  style={{ width: "150px", height: "150px", borderRadius: "50%" }}
-                />
-              </div>
-              <h3>함께할 공동 창업자를 찾습니다</h3>
-              <p>
-              현재 1인팀으로 운영 중이며,
-              마케팅/디자인/개발 공동창업자를 적극 모집 중입니다.
-              </p>
-            </div>
           </div>
         </section>
 
