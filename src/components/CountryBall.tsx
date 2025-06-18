@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useRef, useState, useEffect } from "react";
-import styles from "./CountryBall.module.css";
+import styles from "../styles/components/CountryBall.module.css";
 
 interface CountryBallProps {
   src: string;
