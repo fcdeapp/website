@@ -101,6 +101,17 @@ export default function Home() {
           </div>
         </header>
 
+        <section className={styles.videoSection}>
+          <video
+            src="/videos/GoogleAdsProject250617.mp4"
+            className={styles.fullscreenVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </section>
+
             <div className={styles.languageConcept} data-aos="fade-up">
               <img
                 src="/images/AdsBannerFirst.jpg"
