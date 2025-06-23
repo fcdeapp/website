@@ -59,10 +59,9 @@ export default function About() {
                 className={styles.languageImage}
               />
             </div>
-
           <div className={styles.split} data-aos="fade-right">
             <img
-              src="/about/mission_bannerKR.jpg"
+              src="/images/GoogleAdsBannerKR.jpg"
               alt="Mission graphic"
               style={{ width: "100%", height: "auto" }}
             />

@@ -53,7 +53,7 @@ export default function About() {
 
           <div className={styles.split} data-aos="fade-right">
             <img
-              src="/about/mission_banner.jpg"
+              src="/about/GoogleAdsBannerEN.jpg"
               alt="Mission graphic"
               style={{ width: "100%", height: "auto" }}
             />
