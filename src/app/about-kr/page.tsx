@@ -26,11 +26,11 @@ export default function About() {
         <section className={styles.heroSection}>
           <div className={styles.heroText}>
             <h1 data-aos="fade-up">
-              내 언어로 성장하다
+              내 대화를 배우다
             </h1>
             <p data-aos="fade-up" data-aos-delay="200">
-            누구에게나 똑같은 교재는 이제 그만.
-            Abrody는 내 생활, 내 대화에서 필요한 표현만 뽑아 진짜 내게 맞는 학습 자료를 만듭니다.
+            누구에게나 똑같은 학습는 이제 그만.
+            Abrody는 내 생활, 내 대화에서 나온 표현만 뽑아 진짜 내게 맞는 학습 자료를 만듭니다.
             </p>
           </div>
           <div
