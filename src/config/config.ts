@@ -2,46 +2,48 @@
 import configJson from './config.json';
 
 const getServerUrl = (): string => {
-  const defaultRegion = 'KR';
-  let region = defaultRegion;
+  // 1) Try explicitly set region in localStorage
+  let region = '';
+  try {
+    const stored = localStorage.getItem('region');
+    if (stored) {
+      region = stored;
+    }
+  } catch {
+    // localStorage not available or error — fall back
+  }
 
-  if (typeof navigator !== 'undefined' && navigator.language) {
-    // Example: "en-US" → extract "US"
+  // 2) If no stored region, derive from browser
+  if (!region && typeof navigator !== 'undefined' && navigator.language) {
     const parts = navigator.language.split('-');
     if (parts.length > 1) {
       region = parts[1];
     }
   }
 
-  let domainPrefix = '';
+  // 3) Normalize to lowercase for matching
+  const r = region.toLowerCase();
 
-  switch (region.toUpperCase()) {
-    case 'CA':
-      domainPrefix = 'ca.';
-      break;
-    case 'AU':
-      domainPrefix = 'au.';
-      break;
-    case 'GB':
-      domainPrefix = 'uk.';
-      break;
-    case 'KR':
-      domainPrefix = '';
-      break;
-    default:
-      domainPrefix = '';
-      break;
+  // 4) Hardcoded mapping for special endpoints
+  if (r === 'beta') {
+    return 'https://beta.fcde.app';
+  }
+  if (r === 'development') {
+    return 'https://fcde.app';
   }
 
-  console.log("domainPrefix: ", domainPrefix);
-  console.log("region: ", region);
+  // 5) AWS‐style region → domainPrefix
+  const awsPrefixMap: Record<string, string> = {
+    'ca-central-1': 'ca.',
+    'ap-southeast-2': 'au.',
+    'eu-west-2'    : 'uk.',
+    'ap-northeast-2': '',
+  };
 
-  // You can adjust the returned URL based on your needs:
-  // return `https://${domainPrefix}fcde.app`; // Normal Case
-  // return `https://www.${domainPrefix}fcde.app`; // Dev Case
-  // return `https://beta.fcde.app`; // Beta Test Case
+  const domainPrefix = awsPrefixMap[r] ?? '';
 
-  return `https://beta.fcde.app`;
+  // 6) Default (KR or anything else) → no prefix
+  return `https://${domainPrefix}fcde.app`;
 };
 
 export default {
