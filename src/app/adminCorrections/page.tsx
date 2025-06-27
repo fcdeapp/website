@@ -19,6 +19,8 @@ interface Correction {
   languageCode: string;
   importanceScore: number;
   difficultyScore: number;
+  originalSentence: string; 
+  correctedSentence: string;
 }
 const EMPTY: Correction = {
   ruleId: '', type: 'grammar', pattern: '',
@@ -26,6 +28,8 @@ const EMPTY: Correction = {
   category: { id: '', name: '' },
   languageCode: '',
   importanceScore: 0, difficultyScore: 0,
+  originalSentence: '',
+  correctedSentence: '',
 };
 
 /*──────── Component ────────*/
@@ -137,6 +141,8 @@ export default function AdminCorrections() {
             { label:'Category ID', key:'category.id' },
             { label:'Category Name', key:'category.name' },
             { label:'Language Code', key:'languageCode' },
+            { label:'Original Sentence', key:'originalSentence' },
+            { label:'Corrected Sentence', key:'correctedSentence' },
           ].map(({label,key,disabled})=>{
             const [k1,k2] = key.split('.');
             const val = k2? (form as any)[k1][k2] : (form as any)[k1];
@@ -150,7 +156,7 @@ export default function AdminCorrections() {
                     if(k2) setForm(f=>({ ...f, [k1]:{... (f as any)[k1], [k2]:e.target.value} }));
                     else onChange(k1 as keyof Correction)(e);
                   }}
-                  required={['ruleId','suggestion','description','category.id','category.name','languageCode'].includes(key)}
+                  required={['ruleId','suggestion','description','category.id','category.name','languageCode','originalSentence','correctedSentence'].includes(key)}
                 />
               </div>
             );
