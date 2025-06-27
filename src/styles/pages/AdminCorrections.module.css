@@ -1,6 +1,24 @@
 .container{
   max-width:1000px;margin:2rem auto;padding:1.5rem;background:#fafafa;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.06)
 }
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rangeDelete {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.rangeInput {
+  padding: .35rem .55rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .95rem;
+  width: 100px;
+}
 .header{font-size:2rem;font-weight:600;text-align:center;margin-bottom:1.25rem;color:#333}
 .topBar{display:flex;justify-content:space-between;margin-bottom:1rem}
 .newBtn,.jsonBtn{

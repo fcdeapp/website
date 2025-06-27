@@ -43,6 +43,28 @@ export default function AdminCorrections() {
   const [bulkMode, setBulkMode] = useState(false);
   const [bulkJson, setBulkJson] = useState('[]');
   const [bulkResp, setBulkResp] = useState<any>(null);
+  const [rangeStart, setRangeStart] = useState('');
+  const [rangeEnd, setRangeEnd]   = useState('');
+  const [rangeError, setRangeError] = useState('');
+  // ruleId 범위 삭제 핸들러
+  const deleteRange = async () => {
+    if (!rangeStart || !rangeEnd) {
+      setRangeError('시작과 종료 ruleId를 모두 입력하세요.');
+      return;
+    }
+    if (!confirm(`${rangeStart}부터 ${rangeEnd}까지 정말 삭제할까요?`)) return;
+    try {
+      await axios.delete(`${SERVER_URL}/api/corrections/range`, {
+        params: { start: rangeStart, end: rangeEnd }
+      });
+      setRangeError('');
+      setRangeStart('');
+      setRangeEnd('');
+      load();
+    } catch (e: any) {
+      setRangeError(e.response?.data?.error || '삭제 실패');
+    }
+  };
 
   /*──── fetch list ────*/
   const load = async () => {
@@ -107,6 +129,22 @@ export default function AdminCorrections() {
         <button className={styles.jsonBtn} onClick={() => { setBulkMode(!bulkMode); setError(''); }}>
           {bulkMode ? '← Back to form' : '⇪ Bulk JSON'}
         </button>
+        <div className={styles.rangeDelete}>
+          <input
+            className={styles.rangeInput}
+            placeholder="Start ruleId"
+            value={rangeStart}
+            onChange={e => setRangeStart(e.target.value)}
+          />
+          <input
+            className={styles.rangeInput}
+            placeholder="End ruleId"
+            value={rangeEnd}
+            onChange={e => setRangeEnd(e.target.value)}
+          />
+          <button className={styles.delBtn} onClick={deleteRange}>Delete Range</button>
+        </div>
+        {rangeError && <div className={styles.error}>{rangeError}</div>}
       </div>
 
       {/*──── Bulk JSON pane ────*/}
