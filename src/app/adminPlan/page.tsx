@@ -57,7 +57,7 @@ export default function AdminPlan() {
   const fetchSchedules = async () => {
     try {
       const res = await axios.get<Schedule[]>(
-        `${SERVER_URL}/api/adminPlan/schedules?region=ap-northeast-2`,
+        `${SERVER_URL}/api/adminPlan/schedules?region=beta`,
         { withCredentials: true }
       );
       setSchedules(res.data);
