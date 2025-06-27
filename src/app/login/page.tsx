@@ -47,11 +47,12 @@ export default function LoginPage() {
       );
 
       const data = await res.json();
+      localStorage.setItem("region", 'beta');
 
       if (res.ok) {
         localStorage.setItem("isLoggedIn", "true");
         if (data.region) {
-          localStorage.setItem("region", data.region);
+          // localStorage.setItem("region", data.region); 
         }
         router.push('/');
       } else {
