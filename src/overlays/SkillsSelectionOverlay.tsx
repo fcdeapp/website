@@ -85,7 +85,7 @@ const SkillsSelectionOverlay: React.FC<SkillsSelectionOverlayProps> = ({
     if (duplicate) {
       handleSkillSelect(duplicate);
     } else {
-      const newSkill: Skill = { key: customSkill.trim(), color: "#0A1045" };
+      const newSkill: Skill = { key: customSkill.trim(), color: "#120C3A" };
       const updatedAllSkills = [...allSkillsList, newSkill];
       setAllSkillsList(updatedAllSkills);
       handleSkillSelect(newSkill);

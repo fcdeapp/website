@@ -23,7 +23,7 @@ const SingleTopic: React.FC<SingleTopicProps> = ({ topics, selectedTopic, onTopi
   const [buttonLayouts, setButtonLayouts] = useState<{ [index: number]: { x: number; width: number } }>({});
   const [markerLeft, setMarkerLeft] = useState(0);
   const [markerWidth, setMarkerWidth] = useState(0);
-  const [markerColor, setMarkerColor] = useState("#0A1045");
+  const [markerColor, setMarkerColor] = useState("#120C3A");
   const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // 측정: 각 버튼의 레이아웃 정보를 저장
@@ -53,7 +53,7 @@ const SingleTopic: React.FC<SingleTopicProps> = ({ topics, selectedTopic, onTopi
     let index = 0;
     if (selectedTopic === "no_topic") {
       index = 0;
-      setMarkerColor("#0A1045");
+      setMarkerColor("#120C3A");
     } else {
       const foundIndex = topics.findIndex((topic) => topic.key === selectedTopic);
       if (foundIndex !== -1) {

@@ -188,7 +188,7 @@ export default function AdminDashboard() {
                     {
                       label: "New Users",
                       data: latest.combined.users.newUsers.map((u) => sanitize(u.count)),
-                      borderColor: "#1A1045",
+                      borderColor: "#120C3A",
                       fill: false,
                     },
                   ],
@@ -209,7 +209,7 @@ export default function AdminDashboard() {
                         sanitize(latest.combined.reports.total),
                         sanitize(latest.combined.reports.inquiries),
                       ],
-                      backgroundColor: ["#FF6B6B", "#1A1045"],
+                      backgroundColor: ["#FF6B6B", "#120C3A"],
                     },
                   ],
                 }}
@@ -255,7 +255,7 @@ export default function AdminDashboard() {
                     {
                       label: "Total Users",
                       data: stats.map((d) => sanitize(d.combined.users.total)),
-                      borderColor: "#1A1045",
+                      borderColor: "#120C3A",
                       fill: false,
                     },
                   ],
@@ -299,7 +299,7 @@ export default function AdminDashboard() {
                     {
                       label: "Organic Growth (%)",
                       data: stats.map((d) => sanitize(d.organicGrowthRate * 100)),
-                      borderColor: "#1A1045",
+                      borderColor: "#120C3A",
                       fill: false,
                     },
                   ],

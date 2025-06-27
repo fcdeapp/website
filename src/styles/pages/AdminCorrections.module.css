@@ -1,0 +1,106 @@
+/* app/adminCorrections/AdminCorrections.module.css */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .header {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .newBtn {
+    background: #2d9cdb;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  .form {
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  .row label {
+    width: 140px;
+    font-weight: 500;
+  }
+  .row input,
+  .row select {
+    flex: 1;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .saveBtn {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .cancelBtn {
+    background: #e0e0e0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .error {
+    color: #c0392b;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .loader {
+    text-align: center;
+    padding: 1rem;
+    color: #777;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table th,
+  .table td {
+    padding: 0.5rem;
+    border: 1px solid #eee;
+    text-align: left;
+  }
+  .actionsCell {
+    display: flex;
+    gap: 0.25rem;
+  }
+  .editBtn {
+    background: #f1c40f;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+  }
+  .delBtn {
+    background: #e74c3c;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+  }
+  
