@@ -221,7 +221,7 @@ export default function AndroidBeta() {
                 <span className={styles.eventMain}>🎁 베타테스터 이벤트</span><br />
                 안드로이드 베타테스트에 참여하신 분 중<br />
                 <strong>추첨을 통해 10분께 스타벅스 커피 기프티콘</strong>을 드립니다.<br />
-                <span className={styles.eventDate}>* 추첨일: 7/1 예정</span>
+                <span className={styles.eventDate}>* 추첨일: 7/7 예정</span>
             </div>
           </div>
           </section>
