@@ -72,9 +72,7 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     axios
-      .get<{ allStats: DailyStats[] }>(`${SERVER_URL}/api/admin/stats`, {
-        withCredentials: true,
-      })
+      .get<{ allStats: DailyStats[] }>(`${SERVER_URL}/api/admin/stats`)
       .then((res) => setStats(res.data.allStats || []))
       .catch(console.error)
       .finally(() => setLoading(false));
