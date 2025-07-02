@@ -63,7 +63,7 @@
   justify-content: center;  /* + 중앙 정렬 */
   flex-wrap: nowrap;        /* + 한 줄에 고정 */
   overflow: hidden;         /* + 넘치는 부분 숨김 */
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 /* + 각 항목 박스 스타일 */
@@ -556,7 +556,7 @@
   background: rgba(216, 49, 91, 0.01);
   border: 0.5px solid rgba(216, 49, 91, 0.3);
   color: #D8315B;
-  font-weight: 400;
+  font-weight: 500;
   box-shadow: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
