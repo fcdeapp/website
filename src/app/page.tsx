@@ -134,7 +134,8 @@ export default function Home() {
           </motion.div>
 
 
-          <section className={styles.videoSection}>
+          <section className={styles.section} data-aos="fade-up">
+            <section className={styles.videoSection}>
             <video
               src="/videos/GoogleAdsProject250617.mp4"
               className={styles.fullscreenVideo}
@@ -143,6 +144,7 @@ export default function Home() {
               loop
               playsInline
             />
+            </section>
           </section>
 
 
