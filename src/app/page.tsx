@@ -21,9 +21,9 @@ type Screenshot = {
 
 export default function Home() {
   const [videoOrder, setVideoOrder] = useState<string[]>([
-    "/DemoAbrody_1.mp4",
-    "/DemoAbrody_2.mp4",
-    "/DemoAbrody_3.mp4",
+    "/fr_1.mp4",
+    "/fr_2.mp4",
+    "/fr_3.mp4",
   ]);
 
   const journeyItems: CarouselItem[] = [
@@ -82,9 +82,13 @@ export default function Home() {
         {/* Hero */}
         <header className={styles.hero} data-aos="fade-in">
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title} data-aos="fade-up">Abrody</h1>
+            <h1 className={styles.title} data-aos="fade-up">
+              The Easiest Way to Learn English — From Your Own Words
+            </h1>
             <p className={styles.subtitle} data-aos="fade-up" data-aos-delay={300}>
-              Your Words Matter
+              Tried language apps but never felt like you were truly improving? <br />
+              With Abrody, every chat — with AI or friends — instantly turns into personalized, interactive quizzes just for you.<br />
+              Learn smarter, see real progress, and feel more engaged with your study.
             </p>
             <div className={styles.heroHint} data-aos="fade-up" data-aos-delay={500}>
               Swipe to Explore
@@ -104,10 +108,13 @@ export default function Home() {
 
         <main className={styles.main}>
           <div className={styles.journeyHeader}>
-            <h2 className={styles.sectionTitle}>Every Conversation is a Lesson</h2>
-            <p className={styles.sectionSubtitle}>
-              Talk naturally, meet in person, and learn exactly what you need.
-            </p>
+          <h2 className={styles.sectionTitle}>
+            Learn from Your Own Words, Not Someone Else’s
+          </h2>
+          <p className={styles.sectionSubtitle}>
+            Abrody transforms your real conversations into personalized quizzes.  
+            Progress you can feel, every day.
+          </p>
           </div>
           <motion.div className={styles.journeyContainer} layout>
             {journeyOrder.slice(0, 5).map((item) => (
@@ -143,7 +150,8 @@ export default function Home() {
           <section className={styles.section} data-aos="fade-up">
             <h2 className={styles.sectionTitle}>App Demo</h2>
             <p className={styles.sectionSubtitleSmall}>
-              Join our community: meet, chat, and transform every group conversation into your own personalized language journey.
+              See how Abrody turns every chat into a quiz made just for you.  
+              Speak, make mistakes, and learn naturally — it’s all automatic.
             </p>
             <motion.div
               className={styles.demoVideosContainer}
@@ -169,10 +177,11 @@ export default function Home() {
           <section className={styles.section} data-aos="fade-up">
             <h2 className={styles.sectionTitle}>Speak. Chat. Master.</h2>
             <p className={styles.sectionText}>
-              Speak naturally—learn exactly what you need.
+              Chat with friends or AI.  
+              Your mistakes turn into personalized quizzes — learning that actually sticks. 
             </p>
             <img
-              src="/images/speak_chat_master_owl.jpg"
+              src="/images/WebInfo.jpg"
               alt="Speak. Chat. Master."
               className={styles.recordButtonImage}
             />
