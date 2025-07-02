@@ -26,10 +26,12 @@ export default function About() {
         <section className={styles.heroSection}>
           <div className={styles.heroText}>
             <h1 data-aos="fade-up">
-              Building Real-World Connections, Empowering Personalized Language Learning.
+              The Easiest Way to Learn a Language — From Your Own Words
             </h1>
             <p data-aos="fade-up" data-aos-delay="200">
-              Abrody isn’t just a meetup platform—it’s where expats and locals form communities, build friendships, and naturally master languages together, both online and offline.
+              Tried language apps but never felt like you were improving? <br />
+              Abrody turns your actual conversations — with friends or our AI — into personalized quizzes and interactive study materials. <br />
+              Learn smarter, not harder. See real progress and get truly engaged, every day.
             </p>
           </div>
           <div
@@ -60,10 +62,10 @@ export default function About() {
           </div>
           <section className={styles.section}>
           <div className={styles.split} data-aos="fade-left">
-            <h2>Why Language Apps Fall Short</h2>
-            <p>
-              Traditional language apps rely on generic lessons and one-way teaching. Learners are left with materials that don’t reflect their real needs or daily conversations.
-            </p>
+          <h2>Why Most Language Apps Don’t Really Work</h2>
+          <p>
+            Most apps teach you with generic, scripted lessons. But what you actually need is to learn from your own life and real conversations — not someone else’s.
+          </p>
           </div>
           </section>
 
@@ -72,7 +74,9 @@ export default function About() {
           <div className={styles.split} data-aos="fade-left">
             <h2>How Abrody Changes Everything</h2>
             <p>
-              At Abrody, learning starts with your actual conversations. Every group chat, meetup, and message becomes a personalized study resource—AI turns your own words and mistakes into targeted practice, making learning social, relevant, and truly yours.
+              With Abrody, your chats — whether with friends or our AI — instantly become your own personal study materials. <br />
+              Every mistake turns into a quiz, every conversation becomes real, targeted practice. <br />
+              Stop memorizing random phrases. Start mastering a language that’s truly yours.
             </p>
           </div>
           <div className={styles.split} data-aos="fade-up">
@@ -136,7 +140,7 @@ export default function About() {
           <div className={styles.split} data-aos="fade-left">
             <h2>Our Vision</h2>
             <p>
-              We’re building a new standard for global communities—where local meetups drive language mastery and AI personalizes every step. Launching in Canada, Australia, Korea, and the UK, Abrody is on a mission to make personalized social learning accessible everywhere.
+            We're building a future where learning a new language is as natural as chatting with friends.
             </p>
           </div>
         </section>

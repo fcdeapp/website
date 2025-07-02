@@ -25,13 +25,14 @@ export default function About() {
         {/* Section: Intro */}
         <section className={styles.heroSection}>
           <div className={styles.heroText}>
-            <h1 data-aos="fade-up">
-              내 대화를 배우다
-            </h1>
-            <p data-aos="fade-up" data-aos-delay="200">
-            누구에게나 똑같은 학습는 이제 그만.
-            Abrody는 내 생활, 내 대화에서 나온 표현만 뽑아 진짜 내게 맞는 학습 자료를 만듭니다.
-            </p>
+          <h1 data-aos="fade-up">
+          영어를 배우는 가장 쉬운 방법 — 내 대화에서 시작하세요
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="200">
+          언어학습 앱을 써도 실력이 느는 느낌이 없었다면, Abrody가 새로운 방법을 제안합니다.<br />
+          내 대화에서 퀴즈와 학습자료가 자동으로 만들어지니,<br />
+          쉽고 몰입감 있게 진짜 실력을 쌓을 수 있어요.
+          </p>
           </div>
           <div
             className={styles.heroImage}
@@ -68,10 +69,11 @@ export default function About() {
           </div>
           <section className={styles.section}>
           <div className={styles.split} data-aos="fade-left">
-            <h2>기존 언어 앱이 놓치는 것</h2>
-            <p>
-              일방적인 강의, 내 삶과 동떨어진 표현들. 실제 대화와는 거리가 멀어요.
-            </p>
+          <h2>기존 언어 앱, 왜 실력이 안 늘까?</h2>
+          <p>
+            내 얘기는 없고, 남 얘기만 가득한 예문들.<br />
+            현실과 동떨어진 강의, 한 방향 수업. 그래서 실제로 써먹기 힘들죠.
+          </p>
           </div>
           </section>
 
@@ -80,8 +82,9 @@ export default function About() {
           <div className={styles.split} data-aos="fade-left">
             <h2>Abrody가 바꾸는 언어 학습</h2>
             <p>
-            실제 모임, 실제 채팅이 곧 나만의 학습 자료가 됩니다.
-            내가 한 대화와 실수가 바로 AI가 만들어주는 맞춤 연습문제가 되어, 진짜 필요했던 표현을 자연스럽게 익힙니다.
+            Abrody에서는 친구·AI와 나눈 모든 대화가 바로 내 학습 자료가 됩니다.<br />
+            내가 실수한 부분이 퀴즈로, 내가 자주 쓰는 말이 맞춤 학습으로.<br />
+            남의 문장이 아니라, 내 언어 실력이 눈에 띄게 늘어나는 걸 직접 느껴보세요.
             </p>
           </div>
           <div className={styles.split} data-aos="fade-up">
@@ -112,9 +115,10 @@ export default function About() {
           <div className={styles.split} data-aos="fade-left">
             <h2>우리의 비전</h2>
             <p>
-            전 세계 어디에서든, 소모임에서 사람들과 자연스럽게 언어를 배우세요.
-            AI가 내 대화와 경험을 분석해, 나에게 꼭 맞는 학습을 만들어줍니다.
-            캐나다, 호주, 한국, 영국에서 시작해, 누구나 쉽게 친구도 만들고, 언어도 내 삶 속에서 익힐 수 있게 하겠습니다.
+              전 세계 어디서나, Abrody와 함께라면<br />
+              내 삶과 대화 속에서 자연스럽게 언어를 배우고,<br />
+              AI가 만들어주는 맞춤 학습으로 진짜 실력을 쌓을 수 있습니다.<br />
+              이제 언어, 더 이상 남의 얘기가 아닙니다.
             </p>
           </div>
         </section>
