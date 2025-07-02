@@ -10,6 +10,7 @@
 /* dynamicLang 페이드+슬라이드 애니메이션 */
 .dynamicLang {
   display: inline-block;
+  min-width: 7ch;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
