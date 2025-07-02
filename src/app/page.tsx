@@ -44,6 +44,17 @@ export default function Home() {
   const [shotIdx, setShotIdx] = useState(0);
   const [modalImage, setModalImage] = useState<string | null>(null);
   const [isRecorderOpen, setIsRecorderOpen] = useState(false);
+  const languages = ["English", "Français", "Español", "中文", "日本語", "한국어"];
+  // ② 현재 인덱스 관리
+  const [langIndex, setLangIndex] = useState(0);
+
+  // ③ 3초마다 인덱스 순환
+  useEffect(() => {
+    const iv = setInterval(() => {
+      setLangIndex(i => (i + 1) % languages.length);
+    }, 3000);
+    return () => clearInterval(iv);
+  }, []);
 
   //--- AOS 초기화 ---
   useEffect(() => {
@@ -82,9 +93,18 @@ export default function Home() {
         {/* Hero */}
         <header className={styles.hero} data-aos="fade-in">
           <div className={styles.heroOverlay}>
-            <h1 className={styles.title} data-aos="fade-up">
-              The Easiest Way to Learn English — From Your Own Words
-            </h1>
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={langIndex}
+              className={styles.dynamicLang}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              {languages[langIndex]}
+            </motion.span>
+          </AnimatePresence>
             <p className={styles.subtitle} data-aos="fade-up" data-aos-delay={300}>
               Tried language apps but never felt like you were truly improving? <br />
               With Abrody, every chat — with AI or friends — instantly turns into personalized, interactive quizzes just for you.<br />

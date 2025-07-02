@@ -7,6 +7,19 @@
   color: #333;
 }
 
+/* dynamicLang 페이드+슬라이드 애니메이션 */
+.dynamicLang {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+/* 렌더 후 바로 활성화 상태 */
+.dynamicLang {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .carouselSlide {
   top: 0;
   left: 0;
