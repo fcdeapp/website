@@ -93,18 +93,22 @@ export default function Home() {
         {/* Hero */}
         <header className={styles.hero} data-aos="fade-in">
           <div className={styles.heroOverlay}>
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={langIndex}
-              className={styles.dynamicLang}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.5 }}
-            >
-              {languages[langIndex]}
-            </motion.span>
-          </AnimatePresence>
+            <h1 className={styles.title} data-aos="fade-up">
+              The Easiest Way to Learn&nbsp;
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={langIndex}
+                  className={styles.dynamicLang}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  {languages[langIndex]}
+                </motion.span>
+              </AnimatePresence>
+              &nbsp;— From Your Own Words
+            </h1>
             <p className={styles.subtitle} data-aos="fade-up" data-aos-delay={300}>
               Tried language apps but never felt like you were truly improving? <br />
               With Abrody, every chat — with AI or friends — instantly turns into personalized, interactive quizzes just for you.<br />

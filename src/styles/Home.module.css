@@ -13,6 +13,14 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: linear-gradient(45deg, #D8315B, #F2542D);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  letter-spacing: -0.05em;
 }
 /* 렌더 후 바로 활성화 상태 */
 .dynamicLang {
