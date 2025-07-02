@@ -27,15 +27,16 @@ export default function Home() {
   ]);
 
   const journeyItems: CarouselItem[] = [
-    { label: "Turn Your Mistakes into Quizzes", image: "/journey/iPhoneJourney.jpg" },
-    { label: "Talk with AI like a Friend", image: "/journey/iPhoneJourney2.jpg" },
-    { label: "AI Generates Personalized Notes", image: "/journey/iPhoneJourney3.jpg" },
-    { label: "Meet in Your Language", image: "/journey/iPhoneJourney4.jpg" },
-    { label: "Check Grammar Live", image: "/journey/iPhoneJourney5.jpg" },
-    { label: "Pick Your Interests", image: "/journey/iPhoneJourney6.jpg" },
-    { label: "Join Meetups Near You", image: "/journey/iPhoneJourney7.jpg" },
-    { label: "Find Nearby Expats", image: "/journey/iPhoneJourney8.jpg" },
-    { label: "Make Global Friends", image: "/journey/iPhoneJourney9.jpg" },
+    { label: "Turn Your Mistakes into Quizzes", image: "/journey/AppStoreImageiPhoneEN2507011.jpg" },
+    { label: "Talk with AI like a Friend", image: "/journey/AppStoreImageiPhoneEN2507012.jpg" },
+    { label: "AI Generates Personalized Notes", image: "/journey/AppStoreImageiPhoneEN2507013.jpg" },
+    { label: "Meet in Your Language", image: "/journey/AppStoreImageiPhoneEN2507014.jpg" },
+    { label: "Check Grammar Live", image: "/journey/AppStoreImageiPhoneEN2507015.jpg" },
+    { label: "Pick Your Interests", image: "/journey/AppStoreImageiPhoneEN2507016.jpg" },
+    { label: "Join Meetups Near You", image: "/journey/AppStoreImageiPhoneEN2507017.jpg" },
+    { label: "Find Nearby Expats", image: "/journey/AppStoreImageiPhoneEN2507018.jpg" },
+    { label: "Make Global Friends", image: "/journey/AppStoreImageiPhoneEN2507019.jpg" },
+    { label: "Make Global Friends", image: "/journey/AppStoreImageiPhoneEN25070110.jpg" },
   ];
 
   //--- 상태 관리 ---
@@ -120,14 +121,6 @@ export default function Home() {
               />
             </div>
 
-            <div className={styles.languageConcept} data-aos="fade-up">
-              <img
-                src="/images/language_concept.jpg"
-                alt="Language Journey"
-                className={styles.languageImage}
-              />
-            </div>
-
         <main className={styles.main}>
           <div className={styles.journeyHeader}>
             <h2 className={styles.sectionTitle}>Every Conversation is a Lesson</h2>
@@ -148,7 +141,6 @@ export default function Home() {
                   alt={item.label}
                   className={styles.carouselImage}
                 />
-                <p className={styles.carouselItem}>{item.label}</p>
               </motion.div>
             ))}
           </motion.div>
