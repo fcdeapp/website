@@ -106,11 +106,14 @@ export default function About() {
         {/* Section: Future Vision */}
         <section className={styles.sectionAlt}>
           <div className={styles.split} data-aos="fade-right">
-            <img
-              src="/about/vision_bannerKR.jpg"
-              alt="Vision roadmap"
-              className={styles.sectionImage}
-            />
+          <video
+             src="/videos/autoCheckEnglish.mp4"
+             className={styles.sectionImage}
+             autoPlay
+             loop
+             muted
+             playsInline
+           />
           </div>
           <div className={styles.split} data-aos="fade-left">
             <h2>우리의 비전</h2>
