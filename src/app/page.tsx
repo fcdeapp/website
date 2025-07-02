@@ -198,7 +198,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className={styles.ctaButton}
                 >
-                  iOS (Canada)
+                  Canada
                 </a>
                 <a
                   href="https://apps.apple.com/au/app/id6743047157"
@@ -206,7 +206,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className={styles.ctaButton}
                 >
-                  iOS (Australia)
+                  Australia
                 </a>
                 <a
                   href="https://apps.apple.com/gb/app/id6743047157"
@@ -214,7 +214,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className={styles.ctaButton}
                 >
-                  iOS (UK)
+                  UK
                 </a>
                 <a
                   href="https://apps.apple.com/kr/app/id6743047157"
@@ -222,7 +222,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className={styles.ctaButton}
                 >
-                  iOS (Korea)
+                  Korea
                 </a>
               </div>
             </div>
