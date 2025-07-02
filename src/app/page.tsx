@@ -133,19 +133,6 @@ export default function Home() {
             ))}
           </motion.div>
 
-
-          <section className={styles.section} data-aos="fade-up">
-            <video
-              src="/videos/GoogleAdsProject250617.mp4"
-              className={styles.fullscreenVideo}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-          </section>
-
-
           {/* App Demo Videos */}
           <section className={styles.section} data-aos="fade-up">
             <h2 className={styles.sectionTitle}>App Demo</h2>
@@ -172,6 +159,17 @@ export default function Home() {
                 />
               ))}
             </motion.div>
+          </section>
+
+          <section className={styles.section} data-aos="fade-up">
+            <video
+              src="/videos/GoogleAdsProject250617.mp4"
+              className={styles.fullscreenVideo}
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
           </section>
 
           <section className={styles.section} data-aos="fade-up">
