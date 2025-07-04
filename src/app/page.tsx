@@ -27,16 +27,16 @@ export default function Home() {
   ]);
 
   const journeyItems: CarouselItem[] = [
-    { label: "Turn Your Mistakes into Quizzes", image: "/journey/AppStoreImageiPhoneEN2507011.jpg" },
-    { label: "Talk with AI like a Friend", image: "/journey/AppStoreImageiPhoneEN2507012.jpg" },
-    { label: "AI Generates Personalized Notes", image: "/journey/AppStoreImageiPhoneEN2507013.jpg" },
-    { label: "Meet in Your Language", image: "/journey/AppStoreImageiPhoneEN2507014.jpg" },
-    { label: "Check Grammar Live", image: "/journey/AppStoreImageiPhoneEN2507015.jpg" },
-    { label: "Pick Your Interests", image: "/journey/AppStoreImageiPhoneEN2507016.jpg" },
-    { label: "Join Meetups Near You", image: "/journey/AppStoreImageiPhoneEN2507017.jpg" },
-    { label: "Find Nearby Expats", image: "/journey/AppStoreImageiPhoneEN2507018.jpg" },
-    { label: "Make Global Friends", image: "/journey/AppStoreImageiPhoneEN25070110.jpg" },
-    { label: "Make Global Friends", image: "/journey/AppStoreImageiPhoneEN2507019.jpg" },
+    { label: "1", image: "/journey/AppStoreImageiPhoneEN2507011.jpg" },
+    { label: "2", image: "/journey/AppStoreImageiPhoneEN2507012.jpg" },
+    { label: "3", image: "/journey/AppStoreImageiPhoneEN2507013.jpg" },
+    { label: "4", image: "/journey/AppStoreImageiPhoneEN2507014.jpg" },
+    { label: "5", image: "/journey/AppStoreImageiPhoneEN2507015.jpg" },
+    { label: "6", image: "/journey/AppStoreImageiPhoneEN2507016.jpg" },
+    { label: "7", image: "/journey/AppStoreImageiPhoneEN2507017.jpg" },
+    { label: "8", image: "/journey/AppStoreImageiPhoneEN2507018.jpg" },
+    { label: "9", image: "/journey/AppStoreImageiPhoneEN2507019.jpg" },
+    { label: "10", image: "/journey/AppStoreImageiPhoneEN25070110.jpg" },
   ];
 
   //--- 상태 관리 ---
