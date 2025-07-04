@@ -35,8 +35,8 @@ export default function Home() {
     { label: "Pick Your Interests", image: "/journey/AppStoreImageiPhoneEN2507016.jpg" },
     { label: "Join Meetups Near You", image: "/journey/AppStoreImageiPhoneEN2507017.jpg" },
     { label: "Find Nearby Expats", image: "/journey/AppStoreImageiPhoneEN2507018.jpg" },
-    { label: "Make Global Friends", image: "/journey/AppStoreImageiPhoneEN2507019.jpg" },
     { label: "Make Global Friends", image: "/journey/AppStoreImageiPhoneEN25070110.jpg" },
+    { label: "Make Global Friends", image: "/journey/AppStoreImageiPhoneEN2507019.jpg" },
   ];
 
   //--- 상태 관리 ---
