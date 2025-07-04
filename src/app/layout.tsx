@@ -15,6 +15,7 @@ import { useRouter, usePathname } from "next/navigation";
 import Header from "../components/Header";
 import "./globals.css";
 import '../styles/react-calendar-overrides.css';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 // Next.js 폰트 설정 (예시)
 import localFont from "next/font/local";
@@ -228,6 +229,28 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <html lang="en" className={pretendard.className}>
+      <Head>
+        {/* Basic */}
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Personalized quizzes generated from your own conversations." />
+
+        {/* Open Graph */}
+        <meta property="og:type"        content="website" />
+        <meta property="og:title"       content="Abrody – AI Conversational Language Learning" />
+        <meta property="og:description" content="Personalized quizzes generated from your own conversations." />
+        <meta property="og:image"       content="https://website.fcde.app/og-image.png" />
+        <meta property="og:image:width"  content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url"         content="https://website.fcde.app/" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card"        content="summary_large_image" />
+        <meta name="twitter:title"       content="Abrody – AI Conversational Language Learning" />
+        <meta name="twitter:description" content="Personalized quizzes generated from your own conversations." />
+        <meta name="twitter:image"       content="https://website.fcde.app/og-image.png" />
+        <meta name="twitter:image:alt"   content="Abrody – AI Conversational Language Learning" />
+      </Head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-17197212587"
         strategy="afterInteractive"
@@ -260,7 +283,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           }
         `}
       </Script>
-      
+
       <Script id="gtag-ios-conversion-snippet" strategy="afterInteractive">
         {`
           function gtag_report_conversion_ios(url) {
