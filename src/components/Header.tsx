@@ -74,7 +74,7 @@ export default function Header() {
         {/* Left: Logo */}
         <Link href="/">
           <img
-            src="/FacadeWebLogo.png"
+            src="/AbrodyWebIcon.png"
             alt="Facade Logo"
             className="logo"
           />

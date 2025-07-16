@@ -375,7 +375,7 @@ const Post: React.FC = () => {
         >
           <img
             className={styles.logo}
-            src={isIdle ? "/assets/sleepingOwl.png" : "/assets/Owl-icon-pink.png"}
+            src={isIdle ? "/assets/FoxIconMain.png" : "/assets/FoxIconMain.png"}
             alt="Logo"
           />
         </button>

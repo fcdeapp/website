@@ -172,7 +172,7 @@ const StartPage: React.FC<StartPageProps> = ({ onFinish = () => {} }) => {
           style={{ opacity: fadeOutScreen }}
         >
           <motion.img
-            src="/assets/owlBackgroundPink.png"
+            src="/assets/foxBackground.png"
             alt="Hero Background"
             className={styles.heroImage}
             animate={{ scale: heroImageScale, translateY: heroImageTranslateY }}
