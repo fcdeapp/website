@@ -102,7 +102,7 @@ export default function About() {
             {/* Current team member card */}
             <div className={styles.teamCard}>
               <img
-                src="/about/team-founder.png"
+                src="/about/AbrodyWebIcon.png"
                 alt="Doh Jung-min"
                 style={{ width: "150px", height: "150px", borderRadius: "50%" }}
               />
@@ -113,7 +113,7 @@ export default function About() {
             <div className={styles.teamCard}>
               <div className={styles.hiringBadge}>
                 <img
-                  src="/about/hiring.png"
+                  src="/about/FoxIconWithoutEyes.png"
                   alt="Join Our Founding Team"
                   style={{ width: "150px", height: "150px", borderRadius: "50%" }}
                 />
