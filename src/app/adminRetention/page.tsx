@@ -64,7 +64,7 @@ export default function AdminRetention() {
   const dateLabels = data
     .map((d) => new Date(d.date).toISOString().split("T")[0])
     .slice()
-    .reverse(); // 원본 훼손 방지
+    .reverse();
 
   const overallD7 = data.map((d) => d.retentionRateD7 * 100).slice().reverse();
   const overallD30 = data
@@ -76,7 +76,7 @@ export default function AdminRetention() {
     <div className={styles.container}>
       <h1 className={styles.header}>Retention Analysis</h1>
 
-      {/* ----------- 전체 리텐션 ----------- */}
+      {/* 전체 리텐션 */}
       <div className={styles.card}>
         <h3>Overall (D7 vs. D30)</h3>
         <Line
@@ -103,7 +103,7 @@ export default function AdminRetention() {
         />
       </div>
 
-      {/* ----------- 리전별 ----------- */}
+      {/* 리전별 리텐션 */}
       <section className={styles.grid}>
         {data[0].byRegion.map((region, idx) => {
           const regionD7 = data
