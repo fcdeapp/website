@@ -60,6 +60,18 @@ export default function AdminPlan() {
    "Domain & Certificates",
    "Miscellaneous",
  ];
+
+const colorMap: { [key: string]: string } = {
+  "Cloud Infrastructure": "#1f77b4",
+  "AI Services":           "#ff7f0e",
+  "Advertising & Marketing":"#2ca02c",
+  "Software Licenses & Tools":"#d62728",
+  "Office & Administrative":"#9467bd",
+  "Legal & Compliance":    "#8c564b",
+  "Domain & Certificates": "#e377c2",
+  "Miscellaneous":         "#7f7f7f",
+};
+
  const [tagCategories, setTagCategories] = useState<{[tag:string]:string}>(() => {
    if (typeof window !== "undefined") {
      const stored = localStorage.getItem("tagCategories");
@@ -199,25 +211,14 @@ export default function AdminPlan() {
 
   // 차트 데이터 준비 (월별)
  const monthlyChartData = {
-   labels: Object.keys(monthlyAggregates),
-   datasets: [
-     {
-       label: "Total Amount (KRW)",
-       data: Object.values(monthlyAggregates),
-       backgroundColor: "rgba(0, 112, 243, 0.6)",
-     },
-     // 분류별 누적 막대
-     ...categories.map((cat) => ({
-       label: cat,
-       data: Object.keys(monthlyAggregates).map(
-         (m) => monthlyCategoryAggregates[m]?.[cat] || 0
-       ),
-       backgroundColor:
-         cat === "AI Services"
-           ? "rgba(255,102,0,0.6)"
-           : "rgba(0,112,243,0.3)", // 원하는 색상으로 조정
-     })),
-   ],
+    labels: Object.keys(monthlyAggregates),
+    datasets: categories.map((cat) => ({
+      label: cat,
+      data: Object.keys(monthlyAggregates).map(
+        (m) => monthlyCategoryAggregates[m]?.[cat] || 0
+      ),
+      backgroundColor: colorMap[cat],
+    })),
  };
 
   // 차트 데이터 준비 (태그별)
@@ -466,6 +467,7 @@ export default function AdminPlan() {
                              {/* 분류 드롭다운 */}
                              <td>
                                <select
+                                 style={{ color: colorMap[tagCategories[tag] || "Miscellaneous"] }}
                                  value={tagCategories[tag] || "Miscellaneous"}
                                  onChange={(e) =>
                                    setTagCategories({
