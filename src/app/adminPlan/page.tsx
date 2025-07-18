@@ -279,7 +279,9 @@ export default function AdminPlan() {
               {Object.keys(groupedSchedules).length === 0 && (
                 <p className={styles.noSchedule}>No schedules available.</p>
               )}
-              {Object.keys(groupedSchedules).map((groupKey) => (
+               {Object.keys(groupedSchedules)
+                   .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())
+                   .map((groupKey) => (
                 <div key={groupKey} className={styles.scheduleGroup}>
                   <h3 className={styles.groupTitle}>
                     {viewMode === "daily"
