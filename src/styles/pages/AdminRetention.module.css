@@ -1,18 +1,28 @@
-/* --- 색상 팔레트 & 유틸 --- */
-:root {
-    --bg-gradient: linear-gradient(145deg, #f8f9ff 0%, #e8ecff 40%, #f6f7ff 100%);
-    --card-bg: rgba(255, 255, 255, 0.55);
-    --card-border: rgba(255, 255, 255, 0.35);
-    --glass-blur: 14px;
-    --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    --radius: 1.25rem;
-    --text-primary: #120c3a;
-    --accent-1: #6c63ff;
-    --accent-2: #ff6b6b;
-    --loader-size: 52px;
+/* --- 전역 변수 & 애니메이션 --- */
+:global {
+    /* CSS 변수 전역 선언 */
+    :root {
+      --bg-gradient: linear-gradient(145deg, #f8f9ff 0%, #e8ecff 40%, #f6f7ff 100%);
+      --card-bg: rgba(255, 255, 255, 0.55);
+      --card-border: rgba(255, 255, 255, 0.35);
+      --glass-blur: 14px;
+      --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      --radius: 1.25rem;
+      --text-primary: #120c3a;
+      --accent-1: #6c63ff;
+      --accent-2: #ff6b6b;
+      --loader-size: 52px;
+    }
+  
+    /* 로딩용 회전 애니메이션 */
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
   }
   
-  /* --- 레이아웃 --- */
+  /* --- 레이아웃 & 카드 스타일 --- */
   .container {
     min-height: 100vh;
     padding: 4rem 6%;
@@ -39,7 +49,6 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
   
-  /* --- 카드 / 차트 컨테이너 --- */
   .card {
     background: var(--card-bg);
     backdrop-filter: blur(var(--glass-blur));
@@ -61,12 +70,11 @@
   }
   
   .card canvas {
-    /* 차트 크기 제어 */
     flex: 1;
     max-height: 260px;
   }
   
-  /* --- 로딩 --- */
+  /* --- 로더 스타일 --- */
   .loader {
     width: var(--loader-size);
     height: var(--loader-size);
@@ -77,13 +85,7 @@
     margin: 8rem auto;
   }
   
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /* --- 반응형 간단 조정 --- */
+  /* --- 반응형 조정 --- */
   @media (max-width: 480px) {
     .container {
       padding: 3rem 5%;
