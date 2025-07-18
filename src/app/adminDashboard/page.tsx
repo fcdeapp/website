@@ -72,11 +72,13 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     axios
-      .get<{ allStats: DailyStats[] }>(`${SERVER_URL}/api/admin/stats`)
+      .get<{ allStats: DailyStats[] }>(`${SERVER_URL}/api/admin/stats`, {
+        withCredentials: true, // ✅ 추가
+      })
       .then((res) => setStats(res.data.allStats || []))
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, [SERVER_URL]);
+  }, [SERVER_URL]);  
 
   if (loading) return <div className={styles.loader}>Loading dashboard…</div>;
   if (!stats.length) return <div className={styles.loader}>No data available</div>;
