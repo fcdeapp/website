@@ -79,7 +79,7 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({
       if (initialData && initialData._id) {
         // 수정 모드: 기존 일정 업데이트 (PUT 요청)
         await axios.put(
-          `${SERVER_URL}/api/adminPlan/schedules/${initialData._id}`,
+          `${SERVER_URL}/api/adminPlan/schedules/${initialData._id}?region=beta`,
           formData,
           {
             withCredentials: true,
@@ -88,7 +88,7 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({
         );
       } else {
         // 신규 생성 모드: POST 요청
-        await axios.post(`${SERVER_URL}/api/adminPlan/schedules`, formData, {
+        await axios.post(`${SERVER_URL}/api/adminPlan/schedules?region=beta`, formData, {
           withCredentials: true,
           headers: { "Content-Type": "multipart/form-data" },
         });
