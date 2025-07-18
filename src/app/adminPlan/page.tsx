@@ -50,6 +50,46 @@ export default function AdminPlan() {
   // 각 일정 항목의 파일 보기 상태 (현재 열려있는 파일 뷰의 스케줄 id)
   const [openFileScheduleId, setOpenFileScheduleId] = useState<string | null>(null);
 
+ const categories = [
+   "Cloud Infrastructure",
+   "AI Services",
+   "Advertising & Marketing",
+   "Software Licenses & Tools",
+   "Office & Administrative",
+   "Legal & Compliance",
+   "Domain & Certificates",
+   "Miscellaneous",
+ ];
+ const [tagCategories, setTagCategories] = useState<{[tag:string]:string}>(() => {
+   if (typeof window !== "undefined") {
+     const stored = localStorage.getItem("tagCategories");
+     return stored ? JSON.parse(stored) : {};
+   }
+   return {};
+ });
+ useEffect(() => {
+   if (typeof window !== "undefined") {
+     localStorage.setItem("tagCategories", JSON.stringify(tagCategories));
+   }
+ }, [tagCategories]);
+
+ const getMonthlyCategoryAggregates = () => {
+   const result: { [month: string]: { [cat: string]: number } } = {};
+   schedules.forEach((schedule) => {
+     if (schedule.amount && schedule.tag) {
+       const month = new Date(schedule.eventDate).toISOString().slice(0, 7);
+       const cat = tagCategories[schedule.tag] || "Miscellaneous";
+       const val = parseFloat(schedule.amount);
+       if (!isNaN(val)) {
+         if (!result[month]) result[month] = {};
+         result[month][cat] = (result[month][cat] || 0) + val;
+       }
+     }
+   });
+   return result;
+ };
+ const monthlyCategoryAggregates = getMonthlyCategoryAggregates();
+
   useEffect(() => {
     fetchSchedules();
   }, []);
@@ -158,16 +198,27 @@ export default function AdminPlan() {
   const tagAggregates = getTagAggregates();
 
   // 차트 데이터 준비 (월별)
-  const monthlyChartData = {
-    labels: Object.keys(monthlyAggregates),
-    datasets: [
-      {
-        label: "Monthly Total Amount (KRW)",
-        data: Object.values(monthlyAggregates),
-        backgroundColor: "rgba(0, 112, 243, 0.6)",
-      },
-    ],
-  };
+ const monthlyChartData = {
+   labels: Object.keys(monthlyAggregates),
+   datasets: [
+     {
+       label: "Total Amount (KRW)",
+       data: Object.values(monthlyAggregates),
+       backgroundColor: "rgba(0, 112, 243, 0.6)",
+     },
+     // 분류별 누적 막대
+     ...categories.map((cat) => ({
+       label: cat,
+       data: Object.keys(monthlyAggregates).map(
+         (m) => monthlyCategoryAggregates[m]?.[cat] || 0
+       ),
+       backgroundColor:
+         cat === "AI Services"
+           ? "rgba(255,102,0,0.6)"
+           : "rgba(0,112,243,0.3)", // 원하는 색상으로 조정
+     })),
+   ],
+ };
 
   // 차트 데이터 준비 (태그별)
   const tagChartData = {
@@ -402,24 +453,51 @@ export default function AdminPlan() {
                   <table className={styles.analysisTable}>
                     <thead>
                       <tr>
+                        <th>Category</th>
                         <th>Tag</th>
                         <th>Total Amount (KRW)</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {Object.entries(tagAggregates)
-                        .filter(([, total]) => total > 0)
-                        .map(([tag, total]) => (
-                          <tr key={tag}>
-                            <td>{tag}</td>
-                            <td>{total.toLocaleString()} KRW</td>
-                          </tr>
-                        ))}
+                       {Object.entries(tagAggregates)
+                         .filter(([, total]) => total > 0)
+                         .map(([tag, total]) => (
+                           <tr key={tag}>
+                             {/* 분류 드롭다운 */}
+                             <td>
+                               <select
+                                 value={tagCategories[tag] || "Miscellaneous"}
+                                 onChange={(e) =>
+                                   setTagCategories({
+                                     ...tagCategories,
+                                     [tag]: e.target.value,
+                                   })
+                                 }
+                               >
+                                 {categories.map((cat) => (
+                                   <option key={cat} value={cat}>
+                                     {cat}
+                                   </option>
+                                 ))}
+                               </select>
+                             </td>
+                             <td>{tag}</td>
+                             <td>{total.toLocaleString()} KRW</td>
+                           </tr>
+                         ))}
                     </tbody>
                   </table>
-                  <div className={styles.chartContainer}>
-                    <Bar data={tagChartData} options={{ responsive: true, plugins: { legend: { position: 'top' } } }} />
-                  </div>
+                   <div className={styles.chartContainer}>
+                     {/* 누적 막대 옵션 추가 */}
+                     <Bar
+                       data={monthlyChartData}
+                       options={{
+                         responsive: true,
+                         plugins: { legend: { position: "top" } },
+                         scales: { x: { stacked: true }, y: { stacked: true } },
+                       }}
+                     />
+                   </div>
                 </>
               )}
             </div>
