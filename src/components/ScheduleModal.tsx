@@ -62,7 +62,7 @@ const ScheduleModal: React.FC<ScheduleModalProps> = ({
       formData.append("description", scheduleData.description);
       formData.append("tag", scheduleData.tag);
       formData.append("amount", scheduleData.amount);
-      formData.append("region", "ap-northeast-2");
+      formData.append("region", "beta");
 
       // 기본 파일 추가
       if (file) {
