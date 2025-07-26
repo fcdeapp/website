@@ -99,14 +99,21 @@ export default function About() {
         {/* Section: Future Vision */}
         <section className={styles.sectionAlt}>
           <div className={styles.split} data-aos="fade-right">
-          <video
-             src="/videos/autoCheckEnglish.mp4"
-             className={styles.sectionImage}
-             autoPlay
-             loop
-             muted
-             playsInline
-           />
+              <img
+                src="/images/flow-1.png"
+                alt="Flow step 1: Snap & Scenario"
+                className={styles.languageImage}
+              />
+              <img
+                src="/images/flow-2.png"
+                alt="Flow step 2: AI Chat & Correction"
+                className={styles.languageImage}
+              />
+              <img
+                src="/images/flow-3.png"
+                alt="Flow step 3: Instant Quiz"
+                className={styles.languageImage}
+              />
           </div>
           <div className={styles.split} data-aos="fade-left">
             <h2>우리의 비전</h2>

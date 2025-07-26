@@ -141,14 +141,21 @@ export default function About() {
         <section className={styles.sectionAlt}>
           <div className={styles.split} data-aos="fade-right">
             <div className={styles.languageConcept}>
-              {["flow-1.png", "flow-2.png", "flow-3.png"].map((img, i) => (
-                <Image
-                  key={i}
-                  src={`/${img}`}
-                  alt={`Flow step ${i + 1}`}
-                  className={styles.languageImage}
-                />
-              ))}
+              <img
+                src="/images/flow-1.png"
+                alt="Flow step 1: Snap & Scenario"
+                className={styles.languageImage}
+              />
+              <img
+                src="/images/flow-2.png"
+                alt="Flow step 2: AI Chat & Correction"
+                className={styles.languageImage}
+              />
+              <img
+                src="/images/flow-3.png"
+                alt="Flow step 3: Instant Quiz"
+                className={styles.languageImage}
+              />
             </div>
           </div>
           <div className={styles.split} data-aos="fade-left">
