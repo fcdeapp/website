@@ -251,7 +251,7 @@ export default function BusinessPage() {
             },
             {
               name: "Taeyeon Kim · CFO & Growth",
-              bio: "Dual major CS & Business. Intern at PwC and UNESCO. Data‑driven growth, finance, and CAC wins.",
+              bio: "Dual major in Computer Science & Business at SNU. Intern at PwC and UNESCO. Data‑driven growth, finance, and CAC wins.",
             },
           ].map((m, i) => (
             <motion.article

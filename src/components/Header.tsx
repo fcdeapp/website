@@ -147,7 +147,7 @@ export default function Header() {
         .logo-text {
           margin-left: 8px;
           font-size: 1.2rem;
-          font-weight: 500;
+          font-weight: 400;
           background: linear-gradient(90deg, #d8315b, #f2542d);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
