@@ -78,8 +78,7 @@ function Digit({ finalChar, duration, loops }: DigitProps) {
     <span className="digit">
       <motion.span
         initial={{ y: "0%" }}
-        whileInView={{ y: keyframes }}
-        viewport={{ once: true, amount: 0 }}
+        animate={{ y: keyframes }}
         transition={{
           duration: duration / 1000,
           times,
