@@ -1,8 +1,8 @@
 // components/FlipNumber.tsx
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 
 interface Props {
   /** 최종 표시할 문자열 (예: "54 %") */
@@ -61,12 +61,7 @@ interface DigitProps {
 }
 
 function Digit({ finalChar, duration, loops }: DigitProps) {
-  // 1) ref + inView + controls 세팅
-  const ref = useRef<HTMLSpanElement>(null);
-  const controls = useAnimation();
-  const inView = useInView(ref, { once: true, amount: 0.5 });
-
-  // 2) 0–9를 loops회 반복 후 최종 숫자 스택 생성
+  // 0–9를 loops회 반복 후 최종 숫자 스택 생성
   const stack: string[] = [];
   for (let i = 0; i < loops; i++) {
     stack.push(...Array.from({ length: 10 }, (_, n) => String(n)));
@@ -74,23 +69,17 @@ function Digit({ finalChar, duration, loops }: DigitProps) {
   stack.push(finalChar);
 
   const steps = stack.length - 1;
-  // 각 스텝마다 translateY 값
+  // 각 스텝마다 translateY 값 (퍼센트)
   const keyframes = stack.map((_, i) => `-${i * 100}%`);
-  // 앞은 빠르게, 뒤는 느리게
+  // 앞은 빠르게, 뒤는 느리게 (ease times)
   const times = stack.map((_, i) => Math.pow(i / steps, 2));
 
-  // 3) inView 가 true 될 때만 애니메이션 시작
-  useEffect(() => {
-    if (inView) {
-      controls.start({ y: keyframes });
-    }
-  }, [inView, controls, keyframes]);
-
   return (
-    <span ref={ref} className="digit">
+    <span className="digit">
       <motion.span
         initial={{ y: "0%" }}
-        animate={controls}
+        whileInView={{ y: keyframes }}
+        viewport={{ once: true, amount: 0 }}
         transition={{
           duration: duration / 1000,
           times,
