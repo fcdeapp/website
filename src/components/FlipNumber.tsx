@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 interface Props {
   target: string | number;   // 예: "54 %"
@@ -54,59 +55,61 @@ export default function FlipNumber({
 
 /* ───────── Digit (단일 숫자) ───────── */
 function Digit({
-  finalChar,
-  duration,
-  loops,
-}: {
-  finalChar: string;
-  duration: number;
-  loops: number;
-}) {
-  /* 0‑9 를 loops바퀴 돌리고 마지막에 목표 숫자 삽입 */
-  const stack: string[] = [];
-  for (let i = 0; i < loops; i++)
-    stack.push(...Array.from({ length: 10 }, (_, n) => String(n)));
-  stack.push(finalChar);
-
-  const steps = stack.length - 1;        // 이동해야 할 단계 수
-  const keyframes = stack.map((_, i) => `${-i * 100}%`);  // "0%" → "-100%" …
-
-  /* 처음엔 촘촘, 끝으로 갈수록 느려지는 가속 커브 */
-  const times = stack.map((_, i) => (i / steps) ** 2);
-
-  return (
-    <span className="digit">
-      <motion.span
-        initial={{ translateY: "0%" }}
-        whileInView={{ translateY: keyframes }}   /* 뷰포트에 들어올 때 시작 */
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{
-          duration: duration / 1000,              // ms → s
-          times,
-          ease: "linear",
-        }}
-      >
-        {stack.map((c, i) => (
-          <span className="line" key={i}>
-            {c}
-          </span>
-        ))}
-      </motion.span>
-
-      <style jsx>{`
-        .digit {
-          display: inline-block;
-          width: 0.75em;     /* 숫자 간격 */
-          height: 1em;
-          overflow: hidden;
-        }
-        .line {
-          display: block;
-          height: 1em;
-          line-height: 1em;
-          text-align: center;
-        }
-      `}</style>
-    </span>
-  );
-}
+    finalChar,
+    duration,
+    loops,
+  }: {
+    finalChar: string;
+    duration: number;
+    loops: number;
+  }) {
+    /* 0‑9 → loops바퀴 → 최종 숫자 스택 */
+    const stack: string[] = [];
+    for (let i = 0; i < loops; i++)
+      stack.push(...Array.from({ length: 10 }, (_, n) => String(n)));
+    stack.push(finalChar);
+  
+    /* keyframes, times (앞부분 빠르고 끝에서 느려짐) */
+    const steps = stack.length - 1;
+    const keyframes = stack.map((_, i) => `${-i * 100}%`);
+    const times = stack.map((_, i) => Math.pow(i / steps, 2));
+  
+    /* 👉 뷰포트 진입 감지 */
+    const ref = useRef<HTMLSpanElement>(null);
+    const inView = useInView(ref, { once: true, margin: "-20% 0px" });
+  
+    return (
+      <span className="digit" ref={ref}>
+        <motion.span
+          initial={{ translateY: "0%" }}
+          animate={inView ? { translateY: keyframes } : { translateY: "0%" }}
+          transition={{
+            duration: duration / 1000,
+            times,
+            ease: "linear",
+          }}
+        >
+          {stack.map((c, i) => (
+            <span className="line" key={i}>
+              {c}
+            </span>
+          ))}
+        </motion.span>
+  
+        <style jsx>{`
+          .digit {
+            display: inline-block;
+            width: 0.75em;
+            height: 1em;
+            overflow: hidden;
+          }
+          .line {
+            display: block;
+            height: 1em;
+            line-height: 1em;
+            text-align: center;
+          }
+        `}</style>
+      </span>
+    );
+  }
