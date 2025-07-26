@@ -53,13 +53,6 @@ export default function About() {
           />
         </section>
         
-          <div className={styles.split} data-aos="fade-right">
-            <img
-              src="/images/GoogleAdsBannerKR.jpg"
-              alt="Mission graphic"
-              style={{ width: "100%", height: "auto" }}
-            />
-          </div>
           <section className={styles.section}>
           <div className={styles.split} data-aos="fade-left">
           <h2>기존 언어 앱, 왜 실력이 안 늘까?</h2>

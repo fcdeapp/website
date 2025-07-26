@@ -53,13 +53,6 @@ export default function About() {
           />
         </section>
 
-          <div className={styles.split} data-aos="fade-right">
-            <img
-              src="/images/GoogleAdsBannerEN.jpg"
-              alt="Mission graphic"
-              style={{ width: "100%", height: "auto" }}
-            />
-          </div>
           <section className={styles.section}>
           <div className={styles.split} data-aos="fade-left">
           <h2>Why Most Language Apps Don’t Really Work</h2>
