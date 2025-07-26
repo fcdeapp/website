@@ -144,7 +144,7 @@ export default function About() {
               {["flow-1.png", "flow-2.png", "flow-3.png"].map((img, i) => (
                 <Image
                   key={i}
-                  src={`/images/${img}`}
+                  src={`/${img}`}
                   alt={`Flow step ${i + 1}`}
                   className={styles.languageImage}
                 />
