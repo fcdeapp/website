@@ -84,11 +84,11 @@
     flex-direction: column;
     gap: 3.5rem;
   }
-  .sectionAlt { background: #f8f8fe; }
+  .sectionAlt { background: #ffffff; }
   
   /* Roadmap 색 반전용 */
   .sectionRoad {
-    background: linear-gradient(180deg, #f8f8fe 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
   }
   
   /* ───────── Titles ───────── */
@@ -103,7 +103,7 @@
   .waveSplit, .waveSplitFlip {
     width: 100%;
     height: 96px;
-    background: #f8f8fe;
+    background: #ffffff;
   }
   .waveSplit { clip-path: polygon(0 0, 100% 0, 100% 100%); }
   .waveSplitFlip {
@@ -167,7 +167,7 @@
     height: 36px;
     line-height: 36px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #6a00ff 0%, #ff4ec4 100%);
+    background: linear-gradient(135deg, #fff 0%, #ff4ec4 100%);
     color: #fff;
     font-weight: 700;
     text-align: center;

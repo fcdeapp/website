@@ -133,6 +133,11 @@ export default function Header() {
           justify-content: space-between;
           padding: 0.75rem 1.5rem;
         }
+        .left .logo {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+        }
         .left .logo img {
           height: 40px;
           transition: transform 0.3s ease;
@@ -144,7 +149,15 @@ export default function Header() {
           margin-left: 8px;
           font-size: 1.2rem;
           font-weight: 700;
-          color: #1a1045;
+          color: #d8315b;
+          text-decoration: none; /* 밑줄 제거 */
+        }
+
+        /* 모바일에서 텍스트 숨김 */
+        @media (max-width: 640px) {
+          .logo-text {
+            display: none;
+          }
         }
 
         .center.nav-links {
