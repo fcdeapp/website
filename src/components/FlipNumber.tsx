@@ -2,83 +2,67 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 interface Props {
-  /** 최종 표시할 숫자 (정수 또는 퍼센트 문자열) */
+  /** 최종값(문자열 OK) – 예: "54 %" */
   target: string | number;
-  /** ms 단위 전체 애니메이션 시간 (기본 1200) */
+  /** 애니메이션 길이(ms) */
   duration?: number;
 }
 
 export default function FlipNumber({ target, duration = 1200 }: Props) {
-  // ‘65 %’ → ['6','5',' ','%']
   const chars = String(target).split("");
-  const [done, setDone] = useState(false);
-
-  useEffect(() => {
-    const id = setTimeout(() => setDone(true), duration);
-    return () => clearTimeout(id);
-  }, [duration]);
 
   return (
-    <span className="flip-wrapper">
-      {chars.map((c, i) => (
-        <span key={i} className="flip-col">
-          <AnimatePresence>
-            {done ? (
-              <motion.span
-                key={c}
-                initial={{ y: "100%", opacity: 0 }}
-                animate={{ y: "0%", opacity: 1 }}
-                exit={{ y: "-100%", opacity: 0 }}
-                transition={{ duration: 0.35, ease: "easeOut" }}
-              >
-                {c}
-              </motion.span>
-            ) : (
-              // 초반에는 0–9를 빠르게 두세 번 돌려준다
-              Array.from({ length: 3 }).map((_, j) => (
-                <motion.span
-                  key={j}
-                  initial={{ y: 0 }}
-                  animate={{ y: "-100%" }}
-                  transition={{
-                    repeat: 1,
-                    duration: duration / 3000,
-                    repeatType: "loop",
-                    ease: "easeIn",
-                  }}
-                >
-                  {Math.floor(Math.random() * 10)}
-                </motion.span>
-              ))
-            )}
-          </AnimatePresence>
-        </span>
+    <span className="flipWrap">
+      {chars.map((ch, i) => (
+        <Roll key={i} char={ch} duration={duration} />
       ))}
+
       <style jsx>{`
-        .flip-wrapper {
+        .flipWrap {
           display: inline-flex;
-          font-size: 3rem;
           font-weight: 700;
+          font-size: 3rem;      /* 숫자 크기 */
           color: #d8315b;
           line-height: 1;
-          perspective: 400px;
-        }
-        .flip-col {
-          position: relative;
-          width: 1ch;
-          overflow: hidden;
-          height: 1em;
-        }
-        .flip-col span {
-          position: absolute;
-          left: 0;
-          width: 100%;
-          text-align: center;
         }
       `}</style>
     </span>
+  );
+}
+
+function Roll({ char, duration }: { char: string; duration?: number }) {
+  // 숫자가 아니면 그냥 고정 출력
+  if (isNaN(Number(char))) return <span>{char}</span>;
+
+  // 0‒9 를 두 번 돌고 마지막에 목표 숫자
+  const sequence = [...Array(20).keys()].map(v => String(v % 10)).concat(char);
+
+  // keyframe 길이 = sequence.length
+  const keyName = `roll${char}`;
+  const stepCount = sequence.length - 1;
+
+  return (
+    <>
+      <span className={keyName}>{sequence.join("")}</span>
+
+      <style jsx>{`
+        @keyframes ${keyName} {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-${stepCount}em);
+          }
+        }
+        .${keyName} {
+          display: inline-block;
+          height: 1em;
+          overflow: hidden;
+          animation: ${keyName} ${duration}ms steps(${stepCount}) forwards;
+        }
+      `}</style>
+    </>
   );
 }
