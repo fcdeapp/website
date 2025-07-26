@@ -169,19 +169,54 @@
   /* Team Section */
   .teamGrid {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 2.5rem;
   }
   
   .teamCard {
+    display: flex;
     background: #fff;
     padding: 2rem;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(10, 16, 69, 0.08);
-    text-align: center;
-    width: 220px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
     transition: transform 0.3s ease;
+  }
+
+  .cardLeft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cardAvatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .cardInfo h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .cardInfo .role {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  .cardRight {
+    flex: 1;
+    margin-left: 2rem;
+  }
+  .cardRight p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
   }
   
   .teamCard:hover {

@@ -92,24 +92,37 @@ export default function About() {
         <section className={styles.section} data-aos="fade-up">
           <h2 className={styles.center}>Meet the Team</h2>
           <div className={styles.teamGrid}>
-            {/* Current team member card */}
             <div className={styles.teamCard}>
-              <img src="/about/AbrodyWebIcon.png" alt="Do Jeongmin" style={{ width: 150, height: 150, borderRadius: "50%" }} />
-              <h3>Do Jeongmin · CEO & Founder</h3>
-              <p>
-                B.S. Architecture, College of Engineering, Seoul National University<br/>
-                <strong>Programming:</strong> React Native (TS), Node.js, HCL, MongoDB, AWS (EC2, CodeDeploy, S3, Route53, VPC), GitHub Actions CI/CD<br/>
-                <strong>Design:</strong> Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Rhino, Blender, V‑Ray, Enscape, Figma
-              </p>
+              <div className={styles.cardLeft}>
+                <img src="/about/AbrodyWebIcon.png" alt="Do Jeongmin" className={styles.cardAvatar} />
+                <div className={styles.cardInfo}>
+                  <h3>Do Jeongmin</h3>
+                  <p className={styles.role}>CEO &amp; Founder</p>
+                </div>
+              </div>
+              <div className={styles.cardRight}>
+                <p>
+                  B.S. Architecture, College of Engineering, Seoul National University<br/>
+                  <strong>Programming:</strong> React Native (TS), Node.js, HCL, MongoDB, AWS (EC2, CodeDeploy, S3, Route53, VPC), GitHub Actions CI/CD<br/>
+                  <strong>Design:</strong> Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Rhino, Blender, V‑Ray, Enscape, Figma
+                </p>
+              </div>
             </div>
             <div className={styles.teamCard}>
-              <img src="/about/AbrodyWebIcon.png" alt="Taeyeon Kim" style={{ width: 150, height: 150, borderRadius: "50%" }} />
-              <h3>Taeyeon Kim · CFO & Growth</h3>
-              <p>
-                B.S. Computer Engineering & B.S. Business Administration (dual major), Seoul National University<br/>
-                <strong>Programming:</strong> Unity (game development)<br/>
-                <strong>Accounting & Marketing:</strong> PwC (intern), UNESCO (intern)
-              </p>
+              <div className={styles.cardLeft}>
+                <img src="/about/AbrodyWebIcon.png" alt="Taeyeon Kim" className={styles.cardAvatar} />
+                <div className={styles.cardInfo}>
+                  <h3>Taeyeon Kim</h3>
+                  <p className={styles.role}>CFO &amp; Growth</p>
+                </div>
+              </div>
+              <div className={styles.cardRight}>
+                <p>
+                  B.S. Computer Engineering & B.S. Business Administration (dual major), Seoul National University<br/>
+                  <strong>Programming:</strong> Unity (game development)<br/>
+                  <strong>Accounting &amp; Marketing:</strong> PwC (intern), UNESCO (intern)
+                </p>
+              </div>
             </div>
             {/* Co-Founder & Team Member Recruitment Card */}
             <div className={styles.teamCard}>
