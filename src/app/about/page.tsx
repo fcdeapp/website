@@ -126,7 +126,7 @@ export default function About() {
             </div>
             {/* Co-Founder & Team Member Recruitment Card */}
             <div className={styles.teamCard}>
-              <div className={styles.hiringBadge}>
+              <div className={styles.cardAvatar}>
                 <img
                   src="/about/FoxIconWithoutEyes.png"
                   alt="Join Our Founding Team"

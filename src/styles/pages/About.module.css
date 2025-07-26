@@ -17,6 +17,7 @@
   .flowDesc {
     margin-top: 0.5rem;
     font-size: 0.9rem;
+    font-weight: 400;
     color: #666;
     opacity: 0.8;
   }
@@ -85,7 +86,7 @@
   
   .heroText p {
     font-size: 1.1rem;
-    max-width: 700px;
+    max-width: 400px;
     line-height: 1.6;
     letter-spacing: -0.04em;
     color: #888;
@@ -206,6 +207,7 @@
   .cardInfo .role {
     margin: 0;
     font-size: 0.95rem;
+    font-weight: 400;
     color: #666;
   }
 
@@ -215,6 +217,7 @@
   }
   .cardRight p {
     font-size: 0.95rem;
+    font-weight: 400;
     color: #444;
     line-height: 1.6;
   }

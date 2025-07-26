@@ -92,21 +92,26 @@ export default function About() {
         {/* Section: Future Vision */}
         <section className={styles.sectionAlt}>
           <div className={styles.split} data-aos="fade-right">
-              <img
-                src="/images/flow-1.png"
-                alt="Flow step 1: Snap & Scenario"
-                className={styles.languageImage}
-              />
-              <img
-                src="/images/flow-2.png"
-                alt="Flow step 2: AI Chat & Correction"
-                className={styles.languageImage}
-              />
-              <img
-                src="/images/flow-3.png"
-                alt="Flow step 3: Instant Quiz"
-                className={styles.languageImage}
-              />
+          <div className={styles.languageConcept}>
+              <div className={styles.flowItem}>
+                <img src="/images/flow-1.png" alt="Snap & Scenario" className={styles.languageImage} />
+                <p className={styles.flowDesc}>
+                  Take a photo to automatically build your learning scenario.
+                </p>
+              </div>
+              <div className={styles.flowItem}>
+                <img src="/images/flow-2.png" alt="AI Chat & Correction" className={styles.languageImage} />
+                <p className={styles.flowDesc}>
+                  Chat with our AI tutor—get real‑time corrections.
+                </p>
+              </div>
+              <div className={styles.flowItem}>
+                <img src="/images/flow-3.png" alt="Instant Quiz" className={styles.languageImage} />
+                <p className={styles.flowDesc}>
+                  Jump straight into a quiz to reinforce what you learned.
+                </p>
+              </div>
+            </div>
           </div>
           <div className={styles.split} data-aos="fade-left">
             <h2>우리의 비전</h2>
