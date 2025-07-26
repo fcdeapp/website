@@ -80,7 +80,7 @@
   }
   
   .footerLinks a {
-    color: rgba(216, 49, 91, 0.85);
+    color: #888;
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -102,8 +102,8 @@
   }
   
   .socialIcons img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     filter: brightness(0) saturate(100%) invert(27%) sepia(85%) saturate(600%) hue-rotate(345deg) brightness(95%);
     transition: filter 0.3s ease;
   }

@@ -342,4 +342,19 @@
       font-size: 0.85rem;
     }
   }
+
+  @media (max-width: 768px) {
+    /* 팀 카드 전체를 세로 스택으로 전환 */
+    .teamCard {
+      flex-direction: column;
+    }
+    /* 좌측 블록(이미지+이름) 아래에 여유 추가 */
+    .cardLeft {
+      margin-bottom: 1rem;
+    }
+    /* 우측 블록은 좌측 마진 해제 */
+    .cardRight {
+      margin-left: 0;
+    }
+  }
   
