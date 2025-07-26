@@ -3,6 +3,7 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import styles from "../../styles/pages/Business.module.css";
+import FlipNumber from "../../components/FlipNumber";
 
 /* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
@@ -142,27 +143,10 @@ export default function BusinessPage() {
         custom={3}
         viewport={{ once: true, amount: 0.4 }}
         >
-        CTL‑based instruction lifts speaking clarity by{" "}
-        <motion.span
-            className={styles.animatedNumber}
-            variants={numberVariant}
-            initial="hidden"
-            animate="visible"
-            custom={0}
-        >
-            54 %
-        </motion.span>{" "}
-        and fluency by{" "}
-        <motion.span
-            className={styles.animatedNumber}
-            variants={numberVariant}
-            initial="hidden"
-            animate="visible"
-            custom={1}
-        >
-            65 %
-        </motion.span>
-        . Abrody automates CTL everywhere. <em>— Yusyac et al., 2021</em>
+            CTL‑based instruction lifts speaking clarity by{" "}
+            <FlipNumber target="54 %" /> and fluency by{" "}
+            <FlipNumber target="65 %" />. Abrody automates CTL everywhere.{" "}
+            <em>— Yusyac et al., 2021</em>
         </motion.blockquote>
       </section>
 
