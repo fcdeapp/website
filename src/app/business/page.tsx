@@ -32,6 +32,15 @@ const zoomIn: Variants = {
   }),
 };
 
+const numberVariant: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i: number = 0) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: 0.4 + i * 0.3, duration: 0.6, ease: "easeOut" },
+    }),
+  };
+
 export default function BusinessPage() {
   return (
     <motion.main
@@ -128,14 +137,32 @@ export default function BusinessPage() {
         </motion.div>
 
         <motion.blockquote
-          className={styles.quote}
-          variants={fadeLeft}
-          custom={3}
-          viewport={{ once: true, amount: 0.4 }}
+        className={styles.quote}
+        variants={fadeLeft}
+        custom={3}
+        viewport={{ once: true, amount: 0.4 }}
         >
-          CTL‑based instruction lifts speaking clarity by{" "}
-          <strong>54 %</strong> and fluency by <strong>65 %</strong>. Abrody
-          automates CTL everywhere. <em>— Yusyac et al., 2021</em>
+        CTL‑based instruction lifts speaking clarity by{" "}
+        <motion.span
+            className={styles.animatedNumber}
+            variants={numberVariant}
+            initial="hidden"
+            animate="visible"
+            custom={0}
+        >
+            54 %
+        </motion.span>{" "}
+        and fluency by{" "}
+        <motion.span
+            className={styles.animatedNumber}
+            variants={numberVariant}
+            initial="hidden"
+            animate="visible"
+            custom={1}
+        >
+            65 %
+        </motion.span>
+        . Abrody automates CTL everywhere. <em>— Yusyac et al., 2021</em>
         </motion.blockquote>
       </section>
 
@@ -247,7 +274,7 @@ export default function BusinessPage() {
           {[
             {
               name: "Jungmin Doh · CEO & Founder",
-              bio: "Full‑stack developer (React Native, Node.js, AWS) & designer. SNU architecture — unites tech, design, and learning science.",
+              bio: "Full‑stack developer (React Native, Node.js, AWS) & designer. SNU architecture — uniting tech and design.",
             },
             {
               name: "Taeyeon Kim · CFO & Growth",
