@@ -173,6 +173,12 @@
     font-weight: 700;
     text-align: center;
   }
+  .ctaNote {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.85);
+    text-align: center;
+  }  
 
   .flowGrid {
     display: grid;

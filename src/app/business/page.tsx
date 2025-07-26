@@ -278,17 +278,15 @@ export default function BusinessPage() {
           Ready to rewrite language learning?
         </motion.h2>
 
-        <motion.a
+        <a
           href="mailto:tommydoh@abrody.app"
           className={styles.ctaButton}
-          whileHover={{
-            scale: 1.08,
-            boxShadow: "0 14px 32px rgba(0,0,0,0.2)",
-          }}
-          whileTap={{ scale: 0.92 }}
         >
           Contact us
-        </motion.a>
+        </a>
+        <p className={styles.ctaNote}>
+          We are currently raising pre‑seed to seed funding. Please reach out if you’d like to chat!
+        </p>
       </section>
     </motion.main>
   );
