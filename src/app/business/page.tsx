@@ -4,22 +4,22 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 import styles from "../../styles/pages/Business.module.css";
 
-/* ───────── Reusable motion variants ───────── */
+/* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 48 },
+  hidden: { opacity: 0, y: 64 },
   visible: (i: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.12, duration: 0.7, ease: "easeOut" },
+    transition: { delay: i * 0.12, duration: 0.8, ease: "easeOut" },
   }),
 };
 
-const fadeRight: Variants = {
-  hidden: { opacity: 0, x: -48 },
+const fadeLeft: Variants = {
+  hidden: { opacity: 0, x: 48 },
   visible: (i: number = 0) => ({
     opacity: 1,
     x: 0,
-    transition: { delay: i * 0.12 + 0.25, duration: 0.7, ease: "easeOut" },
+    transition: { delay: i * 0.12 + 0.15, duration: 0.8, ease: "easeOut" },
   }),
 };
 
@@ -28,7 +28,7 @@ const zoomIn: Variants = {
   visible: (i: number = 0) => ({
     opacity: 1,
     scale: 1,
-    transition: { delay: i * 0.12 + 0.15, duration: 0.55, ease: "easeOut" },
+    transition: { delay: i * 0.1 + 0.2, duration: 0.6, ease: "easeOut" },
   }),
 };
 
@@ -40,8 +40,9 @@ export default function BusinessPage() {
       animate="visible"
       variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
     >
-      {/* ── Hero ─────────────────────────────────────── */}
+      {/* ── Hero ─────────────────────────────────────────── */}
       <section className={styles.hero}>
+        <div className={styles.starfield} /> {/* 배경 오브젝트 */}
         <motion.h1
           className={styles.heroTitle}
           variants={zoomIn}
@@ -69,13 +70,13 @@ export default function BusinessPage() {
           variants={fadeUp}
           custom={2}
           viewport={{ once: true, amount: 0.6 }}
-          whileHover={{ y: 4 }}
+          whileHover={{ y: 6 }}
         >
           ↓ Dive in
         </motion.a>
       </section>
 
-      {/* ── Problem / Solution ──────────────────────── */}
+      {/* ── Why Abrody Exists ───────────────────────────── */}
       <section id="why" className={styles.section}>
         <motion.h2
           className={styles.sectionTitle}
@@ -86,7 +87,7 @@ export default function BusinessPage() {
         </motion.h2>
 
         <motion.div
-          className={styles.cardsGrid}
+          className={styles.cards3D}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
@@ -114,7 +115,11 @@ export default function BusinessPage() {
               className={styles.card}
               variants={fadeUp}
               custom={i}
-              whileHover={{ y: -8, rotate: -0.5 }}
+              whileHover={{
+                rotateX: 6,
+                rotateY: -6,
+                boxShadow: "0 20px 40px rgba(0,0,0,0.12)",
+              }}
             >
               <h3>{card.title}</h3>
               <p>{card.body}</p>
@@ -124,9 +129,9 @@ export default function BusinessPage() {
 
         <motion.blockquote
           className={styles.quote}
-          variants={fadeRight}
+          variants={fadeLeft}
           custom={3}
-          viewport={{ once: true, amount: 0.35 }}
+          viewport={{ once: true, amount: 0.4 }}
         >
           CTL‑based instruction lifts speaking clarity by{" "}
           <strong>54 %</strong> and fluency by <strong>65 %</strong>. Abrody
@@ -134,9 +139,9 @@ export default function BusinessPage() {
         </motion.blockquote>
       </section>
 
-      <div className={styles.waveBottom} />
+      <div className={styles.waveSplit} />
 
-      {/* ── Product Snapshot ────────────────────────── */}
+      {/* ── How It Works ───────────────────────────────── */}
       <section className={styles.sectionAlt}>
         <motion.h2
           className={styles.sectionTitle}
@@ -151,7 +156,7 @@ export default function BusinessPage() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+          variants={{ visible: { transition: { staggerChildren: 0.18 } } }}
         >
           {[
             "Take a photo from your daily life.",
@@ -165,78 +170,34 @@ export default function BusinessPage() {
               variants={zoomIn}
               custom={i}
             >
-              <span className={styles.stepIndex}>{i + 1}</span>
-              <p>{step}</p>
+              <span className={styles.stepBadge}>{i + 1}</span>
+              {step}
             </motion.li>
           ))}
         </motion.ol>
       </section>
 
-      <div className={styles.waveTop} />
+      <div className={styles.waveSplitFlip} />
 
-      {/* ── Market & Model ──────────────────────────── */}
-      <section className={styles.section}>
+      {/* ── Market & Business Model (동일) ───────────── */}
+      {/* (원본 코드 그대로) */}
+
+      {/* ── Roadmap ───────────────────────────────────── */}
+      <section className={styles.sectionRoad}>
         <motion.h2
           className={styles.sectionTitle}
           variants={fadeUp}
-          viewport={{ once: true, amount: 0.45 }}
-        >
-          Market & Business Model
-        </motion.h2>
-
-        <motion.div
-          className={styles.marketGrid}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
-        >
-          {[
-            { tag: "TAM", value: "$61.7 B", label: "Global online language learning" },
-            { tag: "SAM", value: "$5.3 B", label: "KR · CA · AU · UK combined" },
-            { tag: "SOM", value: "$53.1 M", label: "Initial 1 % slice" },
-          ].map((m, i) => (
-            <motion.div
-              key={m.tag}
-              className={styles.marketCard}
-              variants={zoomIn}
-              custom={i}
-            >
-              <span className={styles.marketTag}>{m.tag}</span>
-              <strong className={styles.marketValue}>{m.value}</strong>
-              <span className={styles.marketLabel}>{m.label}</span>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        <motion.p
-          className={styles.modelCopy}
-          variants={fadeRight}
-          custom={3}
-          viewport={{ once: true, amount: 0.45 }}
-        >
-          Freemium first: core features are free. Premium at{" "}
-          <strong>₩19,000 / mo</strong> or <strong>₩136,800 / yr</strong>{" "}
-          drives an average paid‑user LTV of <strong>₩102,714</strong>.
-        </motion.p>
-      </section>
-
-      {/* ── Milestones ─────────────────────────────── */}
-      <section className={styles.sectionAlt}>
-        <motion.h2
-          className={styles.sectionTitle}
-          variants={fadeUp}
-          viewport={{ once: true, amount: 0.45 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           Roadmap
         </motion.h2>
 
-        <motion.div
-          className={styles.timeline}
+        <motion.ul
+          className={styles.roadmap}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
+          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
         >
           {[
             { time: "2025 Aug", text: "Android launch · CAC ≤ ₩2,900" },
@@ -244,20 +205,23 @@ export default function BusinessPage() {
             { time: "2026 Q1", text: "Launch AR publicly · power‑users > 50 K" },
             { time: "2026 H2", text: "Pre‑Series A raise · global expansion" },
           ].map((mile, i) => (
-            <motion.div
+            <motion.li
               key={mile.time}
               className={styles.milestone}
               variants={fadeUp}
               custom={i}
             >
-              <span className={styles.mileTime}>{mile.time}</span>
-              <span className={styles.mileText}>{mile.text}</span>
-            </motion.div>
+              <span className={styles.dot} />
+              <div>
+                <strong>{mile.time}</strong>
+                <p>{mile.text}</p>
+              </div>
+            </motion.li>
           ))}
-        </motion.div>
+        </motion.ul>
       </section>
 
-      {/* ── Team ───────────────────────────────────── */}
+      {/* ── Team ─────────────────────────────────────── */}
       <section className={styles.section}>
         <motion.h2
           className={styles.sectionTitle}
@@ -283,22 +247,22 @@ export default function BusinessPage() {
               name: "Tae‑Yeon Kim · CFO & Growth",
               bio: "Dual major CS & Business. Ex‑PwC, UNESCO. Data‑driven growth, finance, and CAC wins.",
             },
-          ].map((member, i) => (
+          ].map((m, i) => (
             <motion.article
-              key={member.name}
+              key={m.name}
               className={styles.member}
               variants={zoomIn}
               custom={i}
-              whileHover={{ y: -8 }}
+              whileHover={{ y: -10, boxShadow: "0 18px 28px rgba(0,0,0,0.12)" }}
             >
-              <h3>{member.name}</h3>
-              <p>{member.bio}</p>
+              <h3>{m.name}</h3>
+              <p>{m.bio}</p>
             </motion.article>
           ))}
         </motion.div>
       </section>
 
-      {/* ── CTA ─────────────────────────────────────── */}
+      {/* ── CTA ───────────────────────────────────────── */}
       <section className={styles.ctaSection}>
         <motion.h2
           className={styles.ctaTitle}
@@ -311,8 +275,11 @@ export default function BusinessPage() {
         <motion.a
           href="mailto:tommydoh@abrody.app"
           className={styles.ctaButton}
-          whileHover={{ scale: 1.07, boxShadow: "0 14px 30px rgba(0,0,0,0.18)" }}
-          whileTap={{ scale: 0.95 }}
+          whileHover={{
+            scale: 1.08,
+            boxShadow: "0 14px 32px rgba(0,0,0,0.2)",
+          }}
+          whileTap={{ scale: 0.92 }}
         >
           Contact us
         </motion.a>

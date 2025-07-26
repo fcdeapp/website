@@ -1,4 +1,4 @@
-/* ───────── Layout root ───────── */
+/* ───────── Global Layout ───────── */
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -10,231 +10,193 @@
   
   /* ───────── Hero ───────── */
   @keyframes gradientShift {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 150% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    100% { background-position: 150% 50%; }
   }
-  
   .hero {
-    padding: 9rem 1.25rem 12rem;
+    padding: 10rem 1.25rem 13rem;
     text-align: center;
-    background: linear-gradient(135deg, #1a1045 0%, #d8315b 100%);
+    background: linear-gradient(135deg, #110c2b 0%, #d8315b 100%);
     background-size: 200% 200%;
     animation: gradientShift 12s ease-in-out infinite;
     color: #ffffff;
     position: relative;
+    overflow: hidden;
+  }
+  .starfield::before,
+  .starfield::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(#ffffff44 0.5px, transparent 0.5px);
+    background-size: 3px 3px;
+    animation: starScroll 50s linear infinite;
+  }
+  .starfield::after { animation-direction: reverse; opacity: 0.4; }
+  
+  @keyframes starScroll {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-1000px); }
   }
   
   .hero::after {
-    /* subtle angled cut‑off */
     content: "";
     position: absolute;
     bottom: -1px;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 100px;
     background: #ffffff;
     clip-path: polygon(0 0, 100% 100%, 0 100%);
   }
   
   .heroTitle {
-    font-size: clamp(2.8rem, 6.5vw, 4.5rem);
+    font-size: clamp(3rem, 6.5vw, 5rem);
     font-weight: 800;
     line-height: 1.15;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.035em;
   }
-  
   .brandGradient {
     background: linear-gradient(90deg, #ff8a5c, #ffd46b);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
   .heroSubtitle {
     margin-top: 1.5rem;
     font-size: 1.25rem;
     opacity: 0.92;
   }
-  
   .scrollHint {
     display: inline-block;
     margin-top: 3.5rem;
     font-size: 1rem;
-    opacity: 0.85;
+    opacity: 0.9;
     text-decoration: none;
     transition: transform 0.25s ease;
   }
   
   /* ───────── Sections ───────── */
-  .section,
-  .sectionAlt {
-    max-width: 76rem;
+  .section, .sectionAlt, .sectionRoad {
+    max-width: 78rem;
     margin: 0 auto;
     padding: 6rem 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
   }
+  .sectionAlt { background: #f8f8fe; }
   
-  .sectionAlt {
-    background: #f8f8fe;
+  /* Roadmap 색 반전용 */
+  .sectionRoad {
+    background: linear-gradient(180deg, #f8f8fe 0%, #ffffff 100%);
   }
   
+  /* ───────── Titles ───────── */
   .sectionTitle {
-    font-size: 2.25rem;
+    font-size: 2.4rem;
     font-weight: 700;
     text-align: center;
     color: #1a1045;
   }
   
-  /* ───────── Decorative waves ───────── */
-  .waveBottom,
-  .waveTop {
-    height: 80px;
+  /* ───────── Decorative Waves ───────── */
+  .waveSplit, .waveSplitFlip {
     width: 100%;
+    height: 96px;
     background: #f8f8fe;
   }
-  .waveBottom {
-    clip-path: polygon(0 0, 100% 0, 100% 100%);
-  }
-  .waveTop {
+  .waveSplit { clip-path: polygon(0 0, 100% 0, 100% 100%); }
+  .waveSplitFlip {
     background: #ffffff;
     clip-path: polygon(0 0, 100% 0, 0 100%);
   }
   
-  /* ───────── Cards Grid ───────── */
-  .cardsGrid {
+  /* ───────── Cards (Why) ───────── */
+  .cards3D {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+    perspective: 1200px;
   }
-  
   .card {
+    padding: 2rem 1.9rem;
+    border-radius: 22px;
     background: #ffffff;
-    padding: 2rem 1.75rem;
-    border-radius: 20px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform-style: preserve-3d;
   }
-  
   .card h3 {
-    margin-bottom: 0.9rem;
-    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
     color: #d8315b;
   }
   
-  /* ───────── Quotation ───────── */
+  /* ───────── Quote ───────── */
   .quote {
     font-size: 1rem;
-    max-width: 54rem;
+    max-width: 56rem;
     margin: 0 auto;
     background: rgba(216, 49, 91, 0.12);
-    padding: 1.75rem 1.25rem;
-    border-left: 4px solid #d8315b;
-    border-radius: 0 20px 20px 0;
+    padding: 2rem 1.5rem 2rem 2rem;
+    border-left: 5px solid #d8315b;
+    border-radius: 0 22px 22px 0;
   }
   
   /* ───────── Steps ───────── */
   .steps {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 68rem;
     margin: 0 auto;
   }
-  
   .stepItem {
     position: relative;
     background: #ffffff;
-    padding: 1.25rem 1.75rem 1.25rem 4rem;
-    border-radius: 20px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    padding: 2.2rem 1.75rem 1.8rem 2.75rem;
+    border-radius: 22px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   }
-  
-  .stepIndex {
+  .stepBadge {
     position: absolute;
     left: 1.25rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: 700;
-    background: #d8315b;
-    color: #ffffff;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    text-align: center;
+    top: 1.25rem;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
     border-radius: 50%;
-  }
-  
-  /* ───────── Market & Model ───────── */
-  .marketGrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.75rem;
-    justify-content: center;
-  }
-  
-  .marketCard {
-    flex: 1 1 180px;
-    text-align: center;
-    padding: 1.8rem 1.25rem;
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-  }
-  
-  .marketTag {
-    font-size: 0.9rem;
-    opacity: 0.7;
-  }
-  
-  .marketValue {
-    display: block;
-    font-size: 1.9rem;
+    background: linear-gradient(135deg, #6a00ff 0%, #ff4ec4 100%);
+    color: #fff;
     font-weight: 700;
-    margin: 0.3rem 0;
-  }
-  
-  .marketLabel {
-    font-size: 0.85rem;
-    opacity: 0.8;
-  }
-  
-  .modelCopy {
-    max-width: 50rem;
-    margin: 0 auto;
     text-align: center;
   }
   
-  /* ───────── Timeline ───────── */
-  .timeline {
+  /* ───────── Roadmap ───────── */
+  .roadmap {
     display: flex;
     flex-direction: column;
     gap: 1.75rem;
-    max-width: 42rem;
+    max-width: 44rem;
     margin: 0 auto;
   }
-  
   .milestone {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    background: #ffffff;
+    gap: 1.25rem;
+    align-items: flex-start;
     padding: 1.25rem 1.5rem;
-    border-radius: 20px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   }
-  
-  .mileTime {
-    font-weight: 700;
-    color: #d8315b;
-  }
-  
-  .mileText {
-    flex: 1;
+  .dot {
+    flex: none;
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    border-radius: 50%;
+    background: #d8315b;
   }
   
   /* ───────── Team ───────── */
@@ -243,18 +205,16 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
   }
-  
   .member {
     background: #ffffff;
-    padding: 2rem 1.75rem;
-    border-radius: 20px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease;
+    padding: 2.2rem 1.9rem;
+    border-radius: 22px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
   .member h3 {
-    margin-bottom: 0.9rem;
-    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
     color: #d8315b;
   }
   
@@ -263,37 +223,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2.8rem;
     background: #d8315b;
     color: #ffffff;
-    padding: 7rem 1.25rem;
+    padding: 8rem 1.25rem;
   }
-  
   .ctaTitle {
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 700;
     text-align: center;
-    max-width: 42rem;
+    max-width: 44rem;
   }
-  
   .ctaButton {
     background: #ffffff;
     color: #d8315b;
-    padding: 1rem 2.25rem;
-    border-radius: 22px;
+    padding: 1.1rem 2.5rem;
+    border-radius: 24px;
     font-weight: 700;
     text-decoration: none;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
   
-  /* ───────── Media Queries ───────── */
-  @media (min-width: 768px) {
-    .heroSubtitle {
-      font-size: 1.35rem;
-    }
-    .sectionTitle {
-      font-size: 2.5rem;
-    }
+  /* ───────── Media ───────── */
+  @media (min-width: 900px) {
+    .heroSubtitle { font-size: 1.4rem; }
+    .sectionTitle { font-size: 2.65rem; }
   }
   

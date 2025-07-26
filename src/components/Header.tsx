@@ -69,142 +69,154 @@ export default function Header() {
   };
 
   return (
-    <header className="header">
-      <nav className="header-nav">
-        {/* Left: Logo */}
-        <Link href="/">
-          <img
-            src="/AbrodyWebIcon.png"
-            alt="Facade Logo"
-            className="logo"
-          />
-        </Link>
+    <>
+      <header>
+        <nav>
+          <div className="left">
+            <Link href="/">
+              <a className="logo">
+                <img src="/AbrodyWebIcon.png" alt="Abrody Logo" />
+              </a>
+            </Link>
+          </div>
 
-        {/* Center: Nav Links */}
-        <div className="nav-links">
-          <Link href="/about">
-            <a className="nav-link">About</a>
-          </Link>
-          <Link href="/business">
-            <a className="nav-link">IR</a>
-          </Link>
-          <Link href="/terms">
-            <a className="nav-link">Terms</a>
-          </Link>
-        </div>
+          <div className="center nav-links">
+            <Link href="/about"><a>About</a></Link>
+            <Link href="/business"><a>IR</a></Link>
+            <Link href="/terms"><a>Terms</a></Link>
+          </div>
 
-        {/* Right: Action Buttons */}
-        <div className="action-buttons">
-          {isLoggedIn ? (
-            <>
-              <button className="logout-button" onClick={handleLogout}>
-                Logout
-              </button>
-              <div style={{ marginLeft: "10px" }}>
+          <div className="right action-buttons">
+            {isLoggedIn ? (
+              <>
+                <button onClick={handleLogout} className="logout-button">
+                  Logout
+                </button>
                 <ProfileWithFlag
                   userId={userId}
                   profileImage={profileImage || undefined}
                   profileThumbnail={profileThumbnail || undefined}
-                  size={48}
+                  size={40}
                 />
-              </div>
-            </>
-          ) : (
-            <>
-              <Link href="/login">
-                <a className="login-button">Login</a>
-              </Link>
-              <Link href="/signUpForm">
-                <a className="signup-button">Sign Up</a>
-              </Link>
-            </>
-          )}
-        </div>
-      </nav>
+              </>
+            ) : (
+              <>
+                <Link href="/login">
+                  <a className="login-button">Login</a>
+                </Link>
+                <Link href="/signUpForm">
+                  <a className="signup-button">Sign Up</a>
+                </Link>
+              </>
+            )}
+          </div>
+        </nav>
+      </header>
+
       <style jsx>{`
-        .header-nav {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px 20px;
+        header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          backdrop-filter: saturate(180%) blur(20px);
+          background: rgba(255, 255, 255, 0.85);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          z-index: 1000;
         }
-        .logo {
-          width: 50px; /* 크기를 기존보다 줄임 */
-          height: auto;
-          margin: 10px 0; /* 상하에 마진 추가 */
+        nav {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0.75rem 1.5rem;
+        }
+        .left .logo img {
+          height: 40px;
           transition: transform 0.3s ease;
         }
-        .logo:hover {
-          transform: scale(1.333);
+        .left .logo:hover img {
+          transform: scale(1.1);
         }
-        .nav-links {
+
+        .center.nav-links {
           display: flex;
-          gap: 20px;
+          gap: 2rem;
         }
-        .nav-link {
+        .nav-links a {
+          position: relative;
+          font-size: 0.95rem;
+          font-weight: 500;
+          color: #333;
           text-decoration: none;
-          color: rgba(216, 49, 91, 0.75);
-          padding: 5px 10px;
-          border-radius: 5px;
-          transition: background-color 0.3s ease;
+          padding: 0.25rem 0;
+          transition: color 0.3s ease;
         }
-        .nav-link:hover {
-          background-color: rgba(216, 49, 91, 0.15);
-          color: rgba(216, 49, 91, 0.9);
+        .nav-links a::after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: linear-gradient(90deg, #6a00ff, #ff4ec4);
+          transition: width 0.3s ease;
         }
-        /* 공통 버튼 스타일: 높이 및 패딩 통일 */
-        .action-buttons a,
-        .logout-button,
-        .login-button,
-        .signup-button {
-          text-decoration: none;
-          margin-left: 15px;
-          display: inline-flex;
+        .nav-links a:hover {
+          color: #6a00ff;
+        }
+        .nav-links a:hover::after {
+          width: 100%;
+        }
+
+        .right.action-buttons {
+          display: flex;
           align-items: center;
-          justify-content: center;
-          height: 36px; /* 버튼 높이 설정 */
-          padding: 0 16px; /* 좌우 패딩, 상하는 height로 고정 */
-          border-radius: 25px;
-          font-weight: bold;
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
-          cursor: pointer;
-          border: none;
-          box-sizing: border-box;
+          gap: 1rem;
         }
-        .action-buttons a:hover,
-        .logout-button:hover,
-        .login-button:hover,
-        .signup-button:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        .action-buttons .login-button,
+        .action-buttons .signup-button,
+        .action-buttons .logout-button {
+          font-size: 0.9rem;
+          padding: 0.5rem 1.2rem;
+          border-radius: 20px;
+          border: 2px solid transparent;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          text-decoration: none;
         }
         .login-button {
-          background-color: rgba(216, 49, 91, 0.1);
-          color: #D8315B; 
-          border: 1px solid rgba(216, 49, 91, 0.65);
+          color: #6a00ff;
+          background: transparent;
         }
         .login-button:hover {
-          background-color: rgba(216, 49, 91, 0.15);
-          opacity: 0.9;
+          color: #fff;
+          background: linear-gradient(90deg, #6a00ff, #ff4ec4);
         }
+
         .signup-button {
-          background-color: #fff;
-          color: rgba(216, 49, 91, 0.65);
-          border: 1px solid rgba(216, 49, 91, 0.65);
+          color: #fff;
+          background: linear-gradient(90deg, #6a00ff, #ff4ec4);
         }
         .signup-button:hover {
-          background-color: #f7f7f7;
+          opacity: 0.85;
         }
+
         .logout-button {
-          background-color: #fff;
-          color: rgba(216, 49, 91, 0.65);
-          border: 1px solid rgba(216, 49, 91, 0.65);
-          margin-top: 4px;
+          color: #6a00ff;
+          background: transparent;
         }
         .logout-button:hover {
-          background-color: #f7f7f7;
+          color: #fff;
+          background: linear-gradient(90deg, #6a00ff, #ff4ec4);
+        }
+
+        /* 본문이 헤더 아래에서 시작하도록 여유 주기 */
+        :global(body) {
+          padding-top: 64px;
         }
       `}</style>
-    </header>
+    </>
   );
 }
