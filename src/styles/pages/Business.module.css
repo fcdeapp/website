@@ -292,4 +292,12 @@
     .heroSubtitle { font-size: 1.4rem; }
     .sectionTitle { font-size: 2.65rem; }
   }
+
+  @media (max-width: 640px) {
+    .flowGrid {
+      grid-template-columns: 1fr;
+      /* optional: add gap if you want more spacing */
+      gap: 1.5rem;
+    }
+  }
   
