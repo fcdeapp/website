@@ -127,13 +127,11 @@ export default function About() {
             {/* Co-Founder & Team Member Recruitment Card */}
             <div className={styles.teamCard}>
             <div className={styles.cardLeft}>
-              <div className={styles.cardAvatar}>
                 <img
                   src="/about/FoxIconWithoutEyes.png"
                   alt="Join Our Founding Team"
-                  style={{ width: "150px", height: "150px", borderRadius: "50%" }}
+                  className={styles.cardAvatar}
                 />
-              </div>
               <div className={styles.cardInfo}>
                 <h3>Join Our Founding Team</h3>
                 <p className={styles.role}>-</p>
