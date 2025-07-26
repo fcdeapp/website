@@ -1,40 +1,78 @@
+/* ───────── Layout root ───────── */
 .wrapper {
     display: flex;
     flex-direction: column;
     gap: 8rem;
-    padding: 6rem 1.25rem 8rem;
     background: #ffffff;
     color: #1a1045;
     line-height: 1.6;
   }
   
-  /* Hero */
+  /* ───────── Hero ───────── */
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 150% 50%;
+    }
+  }
+  
   .hero {
-    max-width: 64rem;
-    margin: 0 auto;
+    padding: 9rem 1.25rem 12rem;
     text-align: center;
+    background: linear-gradient(135deg, #1a1045 0%, #d8315b 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 12s ease-in-out infinite;
+    color: #ffffff;
+    position: relative;
+  }
+  
+  .hero::after {
+    /* subtle angled cut‑off */
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
   }
   
   .heroTitle {
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(2.8rem, 6.5vw, 4.5rem);
     font-weight: 800;
+    line-height: 1.15;
     letter-spacing: -0.03em;
   }
   
-  .brand {
-    color: #d8315b;
+  .brandGradient {
+    background: linear-gradient(90deg, #ff8a5c, #ffd46b);
+    -webkit-text-fill-color: transparent;
   }
   
   .heroSubtitle {
-    margin-top: 1.25rem;
-    font-size: 1.125rem;
-    opacity: 0.85;
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    opacity: 0.92;
   }
   
-  /* Sections */
-  .section {
-    max-width: 72rem;
+  .scrollHint {
+    display: inline-block;
+    margin-top: 3.5rem;
+    font-size: 1rem;
+    opacity: 0.85;
+    text-decoration: none;
+    transition: transform 0.25s ease;
+  }
+  
+  /* ───────── Sections ───────── */
+  .section,
+  .sectionAlt {
+    max-width: 76rem;
     margin: 0 auto;
+    padding: 6rem 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
@@ -42,16 +80,31 @@
   
   .sectionAlt {
     background: #f8f8fe;
-    padding: 6rem 1.25rem;
   }
   
   .sectionTitle {
-    font-size: 2.125rem;
+    font-size: 2.25rem;
     font-weight: 700;
     text-align: center;
+    color: #1a1045;
   }
   
-  /* Cards & grids */
+  /* ───────── Decorative waves ───────── */
+  .waveBottom,
+  .waveTop {
+    height: 80px;
+    width: 100%;
+    background: #f8f8fe;
+  }
+  .waveBottom {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+  .waveTop {
+    background: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  
+  /* ───────── Cards Grid ───────── */
   .cardsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -59,61 +112,78 @@
   }
   
   .card {
-    background: #f8f8fe;
-    padding: 2rem 1.5rem;
-    border-radius: 18px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    background: #ffffff;
+    padding: 2rem 1.75rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .card h3 {
-    margin-bottom: 0.75rem;
-    font-size: 1.25rem;
+    margin-bottom: 0.9rem;
+    font-size: 1.3rem;
     color: #d8315b;
   }
   
+  /* ───────── Quotation ───────── */
   .quote {
-    font-size: 0.95rem;
-    max-width: 52rem;
+    font-size: 1rem;
+    max-width: 54rem;
     margin: 0 auto;
-    background: rgba(216, 49, 91, 0.15);
-    padding: 1.5rem 1rem;
+    background: rgba(216, 49, 91, 0.12);
+    padding: 1.75rem 1.25rem;
     border-left: 4px solid #d8315b;
-    border-radius: 0 18px 18px 0;
+    border-radius: 0 20px 20px 0;
   }
   
-  /* Steps */
+  /* ───────── Steps ───────── */
   .steps {
-    list-style: decimal inside;
+    list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    max-width: 56rem;
+    gap: 1.5rem;
+    max-width: 60rem;
     margin: 0 auto;
   }
   
   .stepItem {
+    position: relative;
     background: #ffffff;
-    padding: 1rem 1.5rem;
-    border-radius: 18px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 1.25rem 1.75rem 1.25rem 4rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
   }
   
-  /* Market */
+  .stepIndex {
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 700;
+    background: #d8315b;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  /* ───────── Market & Model ───────── */
   .marketGrid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1.75rem;
     justify-content: center;
   }
   
   .marketCard {
-    flex: 1 1 160px;
+    flex: 1 1 180px;
     text-align: center;
-    padding: 1.5rem 1rem;
-    border-radius: 18px;
-    background: #f8f8fe;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 1.8rem 1.25rem;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
   }
   
   .marketTag {
@@ -123,28 +193,28 @@
   
   .marketValue {
     display: block;
-    font-size: 1.75rem;
+    font-size: 1.9rem;
     font-weight: 700;
-    margin: 0.25rem 0;
+    margin: 0.3rem 0;
   }
   
   .marketLabel {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     opacity: 0.8;
   }
   
   .modelCopy {
-    max-width: 48rem;
+    max-width: 50rem;
     margin: 0 auto;
     text-align: center;
   }
   
-  /* Timeline */
+  /* ───────── Timeline ───────── */
   .timeline {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    max-width: 40rem;
+    gap: 1.75rem;
+    max-width: 42rem;
     margin: 0 auto;
   }
   
@@ -153,9 +223,9 @@
     align-items: center;
     gap: 1rem;
     background: #ffffff;
-    padding: 1rem 1.25rem;
-    border-radius: 18px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 1.25rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
   }
   
   .mileTime {
@@ -167,7 +237,7 @@
     flex: 1;
   }
   
-  /* Team */
+  /* ───────── Team ───────── */
   .teamGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -175,60 +245,55 @@
   }
   
   .member {
-    background: #f8f8fe;
-    padding: 1.75rem 1.5rem;
-    border-radius: 18px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    padding: 2rem 1.75rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
   }
   
   .member h3 {
-    margin-bottom: 0.75rem;
-    font-size: 1.125rem;
+    margin-bottom: 0.9rem;
+    font-size: 1.2rem;
     color: #d8315b;
   }
   
-  /* CTA */
+  /* ───────── CTA ───────── */
   .ctaSection {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
     background: #d8315b;
     color: #ffffff;
-    padding: 6rem 1.25rem;
-    border-radius: 18px 18px 0 0;
+    padding: 7rem 1.25rem;
   }
   
   .ctaTitle {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    max-width: 40rem;
+    max-width: 42rem;
   }
   
   .ctaButton {
     background: #ffffff;
     color: #d8315b;
-    padding: 0.9rem 2rem;
-    border-radius: 18px;
+    padding: 1rem 2.25rem;
+    border-radius: 22px;
     font-weight: 700;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
     text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
   
-  .ctaButton:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
-  }
-  
+  /* ───────── Media Queries ───────── */
   @media (min-width: 768px) {
     .heroSubtitle {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
     }
     .sectionTitle {
-      font-size: 2.25rem;
+      font-size: 2.5rem;
     }
   }
   

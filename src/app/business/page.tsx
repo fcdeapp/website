@@ -1,18 +1,25 @@
-// app/business/page.tsx
-// ───────────────────────────────────────────────────────────
 "use client";
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import styles from "../../styles/pages/Business.module.css";
 
-// Reusable motion variants
+/* ───────── Reusable motion variants ───────── */
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 48 },
   visible: (i: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.12, duration: 0.6, ease: "easeOut" },
+    transition: { delay: i * 0.12, duration: 0.7, ease: "easeOut" },
+  }),
+};
+
+const fadeRight: Variants = {
+  hidden: { opacity: 0, x: -48 },
+  visible: (i: number = 0) => ({
+    opacity: 1,
+    x: 0,
+    transition: { delay: i * 0.12 + 0.25, duration: 0.7, ease: "easeOut" },
   }),
 };
 
@@ -21,7 +28,7 @@ const zoomIn: Variants = {
   visible: (i: number = 0) => ({
     opacity: 1,
     scale: 1,
-    transition: { delay: i * 0.12 + 0.2, duration: 0.55, ease: "easeOut" },
+    transition: { delay: i * 0.12 + 0.15, duration: 0.55, ease: "easeOut" },
   }),
 };
 
@@ -29,51 +36,61 @@ export default function BusinessPage() {
   return (
     <motion.main
       className={styles.wrapper}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
+      initial="hidden"
+      animate="visible"
+      variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
     >
-      {/* ── Hero ─────────────────────────────────────────────*/}
+      {/* ── Hero ─────────────────────────────────────── */}
       <section className={styles.hero}>
         <motion.h1
           className={styles.heroTitle}
           variants={zoomIn}
-          initial="hidden"
-          animate="visible"
+          viewport={{ once: true, amount: 0.6 }}
         >
           Everyday Life,
-          <br /> Fluent English — <span className={styles.brand}>Abrody</span>
+          <br />
+          Fluent English —{" "}
+          <span className={styles.brandGradient}>Abrody</span>
         </motion.h1>
+
         <motion.p
           className={styles.heroSubtitle}
           variants={fadeUp}
-          initial="hidden"
-          animate="visible"
           custom={1}
+          viewport={{ once: true, amount: 0.6 }}
         >
-          Snap • Speak • Succeed — AI‑powered English coaching drawn from your day‑to‑day experiences.
+          Snap • Speak • Succeed — AI‑powered English coaching drawn from your
+          day‑to‑day experiences.
         </motion.p>
+
+        <motion.a
+          href="#why"
+          className={styles.scrollHint}
+          variants={fadeUp}
+          custom={2}
+          viewport={{ once: true, amount: 0.6 }}
+          whileHover={{ y: 4 }}
+        >
+          ↓ Dive in
+        </motion.a>
       </section>
 
-      {/* ── Problem / Solution ───────────────────────────────*/}
-      <section className={styles.section}>
+      {/* ── Problem / Solution ──────────────────────── */}
+      <section id="why" className={styles.section}>
         <motion.h2
           className={styles.sectionTitle}
           variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.45 }}
         >
           Why Abrody Exists
         </motion.h2>
+
         <motion.div
           className={styles.cardsGrid}
           initial="hidden"
-          whileInView={{
-            opacity: 1,
-            transition: { staggerChildren: 0.15 },
-          }}
-          viewport={{ once: true, amount: 0.2 }}
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
         >
           {[
             {
@@ -97,36 +114,38 @@ export default function BusinessPage() {
               className={styles.card}
               variants={fadeUp}
               custom={i}
-              whileHover={{ y: -6, boxShadow: "0 12px 20px rgba(0,0,0,0.08)" }}
+              whileHover={{ y: -8, rotate: -0.5 }}
             >
               <h3>{card.title}</h3>
               <p>{card.body}</p>
             </motion.article>
           ))}
         </motion.div>
+
         <motion.blockquote
           className={styles.quote}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.4 }}
+          variants={fadeRight}
           custom={3}
+          viewport={{ once: true, amount: 0.35 }}
         >
-          CTL‑based instruction lifts speaking clarity by <strong>54 %</strong> and fluency by <strong>65 %</strong>. Abrody automates CTL everywhere. <em>— Yusyac et al., 2021</em>
+          CTL‑based instruction lifts speaking clarity by{" "}
+          <strong>54 %</strong> and fluency by <strong>65 %</strong>. Abrody
+          automates CTL everywhere. <em>— Yusyac et al., 2021</em>
         </motion.blockquote>
       </section>
 
-      {/* ── Product Snapshot ─────────────────────────────────*/}
+      <div className={styles.waveBottom} />
+
+      {/* ── Product Snapshot ────────────────────────── */}
       <section className={styles.sectionAlt}>
         <motion.h2
           className={styles.sectionTitle}
           variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.45 }}
         >
           How It Works
         </motion.h2>
+
         <motion.ol
           className={styles.steps}
           initial="hidden"
@@ -143,34 +162,34 @@ export default function BusinessPage() {
             <motion.li
               key={i}
               className={styles.stepItem}
-              variants={fadeUp}
+              variants={zoomIn}
               custom={i}
             >
-              {step}
+              <span className={styles.stepIndex}>{i + 1}</span>
+              <p>{step}</p>
             </motion.li>
           ))}
         </motion.ol>
       </section>
 
-      {/* ── Market & Model ───────────────────────────────────*/}
+      <div className={styles.waveTop} />
+
+      {/* ── Market & Model ──────────────────────────── */}
       <section className={styles.section}>
         <motion.h2
           className={styles.sectionTitle}
           variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.45 }}
         >
           Market & Business Model
         </motion.h2>
+
         <motion.div
           className={styles.marketGrid}
           initial="hidden"
-          whileInView={{
-            opacity: 1,
-            transition: { staggerChildren: 0.15 },
-          }}
-          viewport={{ once: true, amount: 0.2 }}
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
         >
           {[
             { tag: "TAM", value: "$61.7 B", label: "Global online language learning" },
@@ -189,34 +208,34 @@ export default function BusinessPage() {
             </motion.div>
           ))}
         </motion.div>
+
         <motion.p
           className={styles.modelCopy}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          variants={fadeRight}
           custom={3}
+          viewport={{ once: true, amount: 0.45 }}
         >
-          Freemium first: core features are free. Premium at <strong>₩19,000 / mo</strong> or <strong>₩136,800 / yr</strong> drives an average paid‑user LTV of <strong>₩102,714</strong>.
+          Freemium first: core features are free. Premium at{" "}
+          <strong>₩19,000 / mo</strong> or <strong>₩136,800 / yr</strong>{" "}
+          drives an average paid‑user LTV of <strong>₩102,714</strong>.
         </motion.p>
       </section>
 
-      {/* ── Milestones ───────────────────────────────────────*/}
+      {/* ── Milestones ─────────────────────────────── */}
       <section className={styles.sectionAlt}>
         <motion.h2
           className={styles.sectionTitle}
           variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.45 }}
         >
           Roadmap
         </motion.h2>
+
         <motion.div
           className={styles.timeline}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
           variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
         >
           {[
@@ -238,25 +257,22 @@ export default function BusinessPage() {
         </motion.div>
       </section>
 
-      {/* ── Team ─────────────────────────────────────────────*/}
+      {/* ── Team ───────────────────────────────────── */}
       <section className={styles.section}>
         <motion.h2
           className={styles.sectionTitle}
           variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.45 }}
         >
           Team
         </motion.h2>
+
         <motion.div
           className={styles.teamGrid}
           initial="hidden"
-          whileInView={{
-            opacity: 1,
-            transition: { staggerChildren: 0.15 },
-          }}
-          viewport={{ once: true, amount: 0.2 }}
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
         >
           {[
             {
@@ -273,7 +289,7 @@ export default function BusinessPage() {
               className={styles.member}
               variants={zoomIn}
               custom={i}
-              whileHover={{ translateY: -6, boxShadow: "0 12px 20px rgba(0,0,0,0.08)" }}
+              whileHover={{ y: -8 }}
             >
               <h3>{member.name}</h3>
               <p>{member.bio}</p>
@@ -282,22 +298,21 @@ export default function BusinessPage() {
         </motion.div>
       </section>
 
-      {/* ── CTA ───────────────────────────────────────────*/}
+      {/* ── CTA ─────────────────────────────────────── */}
       <section className={styles.ctaSection}>
         <motion.h2
           className={styles.ctaTitle}
           variants={zoomIn}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.55 }}
         >
           Ready to rewrite language learning?
         </motion.h2>
+
         <motion.a
           href="mailto:tommydoh@abrody.app"
           className={styles.ctaButton}
-          whileHover={{ scale: 1.07, boxShadow: "0 10px 20px rgba(0,0,0,0.18)" }}
-          whileTap={{ scale: 0.97 }}
+          whileHover={{ scale: 1.07, boxShadow: "0 14px 30px rgba(0,0,0,0.18)" }}
+          whileTap={{ scale: 0.95 }}
         >
           Contact us
         </motion.a>
