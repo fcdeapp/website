@@ -76,6 +76,7 @@ export default function Header() {
             <Link href="/">
               <a className="logo">
                 <img src="/AbrodyWebIcon.png" alt="Abrody Logo" />
+                <span className="logo-text">Abrody</span>
               </a>
             </Link>
           </div>
@@ -139,6 +140,12 @@ export default function Header() {
         .left .logo:hover img {
           transform: scale(1.1);
         }
+        .logo-text {
+          margin-left: 8px;
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: #1a1045;
+        }
 
         .center.nav-links {
           display: flex;
@@ -160,11 +167,11 @@ export default function Header() {
           left: 0;
           width: 0;
           height: 2px;
-          background: linear-gradient(90deg, #6a00ff, #ff4ec4);
+          background: linear-gradient(90deg, #d8315b, #f2542d);
           transition: width 0.3s ease;
         }
         .nav-links a:hover {
-          color: #6a00ff;
+          color: #d8315b;
         }
         .nav-links a:hover::after {
           width: 100%;
@@ -187,29 +194,29 @@ export default function Header() {
           text-decoration: none;
         }
         .login-button {
-          color: #6a00ff;
+          color: #d8315b;
           background: transparent;
         }
         .login-button:hover {
           color: #fff;
-          background: linear-gradient(90deg, #6a00ff, #ff4ec4);
+          background: linear-gradient(90deg, #d8315b, #f2542d);
         }
 
         .signup-button {
           color: #fff;
-          background: linear-gradient(90deg, #6a00ff, #ff4ec4);
+          background: linear-gradient(90deg, #d8315b, #f2542d);
         }
         .signup-button:hover {
           opacity: 0.85;
         }
 
         .logout-button {
-          color: #6a00ff;
+          color: #d8315b;
           background: transparent;
         }
         .logout-button:hover {
           color: #fff;
-          background: linear-gradient(90deg, #6a00ff, #ff4ec4);
+          background: linear-gradient(90deg, #d8315b, #f2542d);
         }
 
         /* 본문이 헤더 아래에서 시작하도록 여유 주기 */
