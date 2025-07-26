@@ -144,8 +144,8 @@ export default function BusinessPage() {
         viewport={{ once: true, amount: 0.4 }}
         >
         CTL‑based instruction lifts speaking clarity by{" "}
-        <FlipNumber target="54 %" duration={1500} /> and fluency by{" "}
-        <FlipNumber target="65 %" duration={1500} />. Abrody automates CTL
+        <FlipNumber target="54 %" duration={1400} /> and fluency by{" "}
+        <FlipNumber target="65 %" duration={1400} />. Abrody automates CTL
         everywhere. <em>— Yusyac et al., 2021</em>
         </motion.blockquote>
       </section>

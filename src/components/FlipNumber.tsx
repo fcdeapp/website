@@ -1,29 +1,32 @@
 // components/FlipNumber.tsx
 "use client";
 
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 interface Props {
-  /** 최종값(문자열 OK) – 예: "54 %" */
-  target: string | number;
-  /** 애니메이션 길이(ms) */
-  duration?: number;
+  target: string | number;   // "54 %" 처럼 문자 포함 가능
+  duration?: number;         // ms (기본 1200)
+  loops?: number;            // 0‒9 몇 번 돌릴지 (기본 2바퀴)
 }
 
-export default function FlipNumber({ target, duration = 1200 }: Props) {
+export default function FlipNumber({ target, duration = 1200, loops = 2 }: Props) {
   const chars = String(target).split("");
 
   return (
     <span className="flipWrap">
-      {chars.map((ch, i) => (
-        <Roll key={i} char={ch} duration={duration} />
-      ))}
+      {chars.map((ch, idx) =>
+        /\d/.test(ch) ? (
+          <Digit key={idx} finalChar={ch} duration={duration} loops={loops} />
+        ) : (
+          <span key={idx}>{ch}</span>
+        )
+      )}
 
       <style jsx>{`
         .flipWrap {
           display: inline-flex;
-          font-weight: 700;
-          font-size: 3rem;      /* 숫자 크기 */
+          font-size: 3rem;        /* 숫자 크기 */
+          font-weight: 400;
           color: #d8315b;
           line-height: 1;
         }
@@ -32,37 +35,53 @@ export default function FlipNumber({ target, duration = 1200 }: Props) {
   );
 }
 
-function Roll({ char, duration }: { char: string; duration?: number }) {
-  // 숫자가 아니면 그냥 고정 출력
-  if (isNaN(Number(char))) return <span>{char}</span>;
+function Digit({
+  finalChar,
+  duration,
+  loops,
+}: {
+  finalChar: string;
+  duration: number;
+  loops: number;
+}) {
+  /* 스택 만들기 : 0‒9 를 loops 회 + 최종 숫자 */
+  const roll: string[] = [];
+  for (let i = 0; i < loops; i++) roll.push(...Array.from({ length: 10 }, (_, n) => String(n)));
+  roll.push(finalChar);
 
-  // 0‒9 를 두 번 돌고 마지막에 목표 숫자
-  const sequence = [...Array(20).keys()].map(v => String(v % 10)).concat(char);
-
-  // keyframe 길이 = sequence.length
-  const keyName = `roll${char}`;
-  const stepCount = sequence.length - 1;
+  const stepCnt = roll.length - 1;
 
   return (
-    <>
-      <span className={keyName}>{sequence.join("")}</span>
+    <span className="digit">
+      <motion.span
+        initial={{ translateY: "0%" }}
+        animate={{ translateY: `-${stepCnt * 100}%` }}
+        transition={{
+          duration: duration / 1000,
+          ease: `steps(${stepCnt}, end)`,
+        }}
+      >
+        {roll.map((c, i) => (
+          <span className="line" key={i}>
+            {c}
+          </span>
+        ))}
+      </motion.span>
 
       <style jsx>{`
-        @keyframes ${keyName} {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(-${stepCount}em);
-          }
-        }
-        .${keyName} {
+        .digit {
           display: inline-block;
+          width: 0.75em;        /* 자간 비슷하게 */
           height: 1em;
           overflow: hidden;
-          animation: ${keyName} ${duration}ms steps(${stepCount}) forwards;
+        }
+        .line {
+          display: block;
+          height: 1em;
+          line-height: 1em;
+          text-align: center;
         }
       `}</style>
-    </>
+    </span>
   );
 }
