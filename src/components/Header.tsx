@@ -162,12 +162,6 @@ export default function Header() {
           }
         }
 
-        @media (max-width: 640px) {
-          .right.action-buttons {
-            display: none;
-          }
-        }
-
         .center.nav-links {
           display: flex;
           gap: 2rem;
@@ -203,6 +197,13 @@ export default function Header() {
           align-items: center;
           gap: 1rem;
         }
+          
+        @media (max-width: 640px) {
+          .right.action-buttons {
+            display: none !important;
+          }
+        }
+
         .action-buttons .login-button,
         .action-buttons .signup-button,
         .action-buttons .logout-button {
