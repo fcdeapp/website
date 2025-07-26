@@ -281,6 +281,10 @@ export default function BusinessPage() {
         <a
           href="mailto:tommydoh@abrody.app"
           className={styles.ctaButton}
+          onClick={e => {
+            e.preventDefault();
+            window.location.href = "mailto:tommydoh@abrody.app";
+          }}
         >
           Contact us
         </a>
