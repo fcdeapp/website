@@ -50,7 +50,7 @@ export default function BusinessPage() {
         >
           Everyday Life,
           <br />
-          Fluent English —{" "}
+          Fluent Language —{" "}
           <span className={styles.brandGradient}>Abrody</span>
         </motion.h1>
 
@@ -60,7 +60,7 @@ export default function BusinessPage() {
           custom={1}
           viewport={{ once: true, amount: 0.6 }}
         >
-          Snap • Speak • Succeed — AI‑powered English coaching drawn from your
+          Snap • Speak • Succeed — AI‑powered Language coaching drawn from your
           day‑to‑day experiences.
         </motion.p>
 
