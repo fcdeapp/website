@@ -1,0 +1,234 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 6rem 1.25rem 8rem;
+    background: #ffffff;
+    color: #1a1045;
+    line-height: 1.6;
+  }
+  
+  /* Hero */
+  .hero {
+    max-width: 64rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .heroTitle {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+  
+  .brand {
+    color: #d8315b;
+  }
+  
+  .heroSubtitle {
+    margin-top: 1.25rem;
+    font-size: 1.125rem;
+    opacity: 0.85;
+  }
+  
+  /* Sections */
+  .section {
+    max-width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+  
+  .sectionAlt {
+    background: #f8f8fe;
+    padding: 6rem 1.25rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2.125rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Cards & grids */
+  .cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: #f8f8fe;
+    padding: 2rem 1.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    color: #d8315b;
+  }
+  
+  .quote {
+    font-size: 0.95rem;
+    max-width: 52rem;
+    margin: 0 auto;
+    background: rgba(216, 49, 91, 0.15);
+    padding: 1.5rem 1rem;
+    border-left: 4px solid #d8315b;
+    border-radius: 0 18px 18px 0;
+  }
+  
+  /* Steps */
+  .steps {
+    list-style: decimal inside;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 56rem;
+    margin: 0 auto;
+  }
+  
+  .stepItem {
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Market */
+  .marketGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .marketCard {
+    flex: 1 1 160px;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-radius: 18px;
+    background: #f8f8fe;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .marketTag {
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  .marketValue {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0.25rem 0;
+  }
+  
+  .marketLabel {
+    font-size: 0.82rem;
+    opacity: 0.8;
+  }
+  
+  .modelCopy {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Timeline */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  
+  .milestone {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .mileTime {
+    font-weight: 700;
+    color: #d8315b;
+  }
+  
+  .mileText {
+    flex: 1;
+  }
+  
+  /* Team */
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  
+  .member {
+    background: #f8f8fe;
+    padding: 1.75rem 1.5rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .member h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    color: #d8315b;
+  }
+  
+  /* CTA */
+  .ctaSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: #d8315b;
+    color: #ffffff;
+    padding: 6rem 1.25rem;
+    border-radius: 18px 18px 0 0;
+  }
+  
+  .ctaTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 40rem;
+  }
+  
+  .ctaButton {
+    background: #ffffff;
+    color: #d8315b;
+    padding: 0.9rem 2rem;
+    border-radius: 18px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+  }
+  
+  .ctaButton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  @media (min-width: 768px) {
+    .heroSubtitle {
+      font-size: 1.25rem;
+    }
+    .sectionTitle {
+      font-size: 2.25rem;
+    }
+  }
+  

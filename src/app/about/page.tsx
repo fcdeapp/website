@@ -103,11 +103,20 @@ export default function About() {
             <div className={styles.teamCard}>
               <img
                 src="/about/AbrodyWebIcon.png"
-                alt="Doh Jung-min"
+                alt="Jungmin Doh"
                 style={{ width: "150px", height: "150px", borderRadius: "50%" }}
               />
-              <h3>Doh Jung-min</h3>
+              <h3>Jungmin Doh</h3>
               <p>Founder & CEO</p>
+            </div>
+            <div className={styles.teamCard}>
+              <img
+                src="/about/AbrodyWebIcon.png"
+                alt="Taeyeon Kim"
+                style={{ width: "150px", height: "150px", borderRadius: "50%" }}
+              />
+              <h3>Taeyeon Kim</h3>
+              <p>Co-Founder & CFO</p>
             </div>
             {/* Co-Founder & Team Member Recruitment Card */}
             <div className={styles.teamCard}>

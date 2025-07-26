@@ -85,14 +85,11 @@ export default function Header() {
           <Link href="/about">
             <a className="nav-link">About</a>
           </Link>
-          <Link href="/posts">
-            <a className="nav-link">Posts</a>
+          <Link href="/business">
+            <a className="nav-link">IR</a>
           </Link>
           <Link href="/terms">
             <a className="nav-link">Terms</a>
-          </Link>
-          <Link href="/searchPage">
-            <a className="nav-link">Search</a>
           </Link>
         </div>
 
