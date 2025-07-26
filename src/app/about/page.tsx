@@ -140,14 +140,18 @@ export default function About() {
         {/* Section: Future Vision */}
         <section className={styles.sectionAlt}>
           <div className={styles.split} data-aos="fade-right">
-           <video
-             src="/videos/autoCheckFrench.mp4"
-             className={styles.sectionImage}
-             autoPlay
-             loop
-             muted
-             playsInline
-           />
+            <div className={styles.languageConcept}>
+              {["flow-1.png", "flow-2.png", "flow-3.png"].map((img, i) => (
+                <Image
+                  key={i}
+                  src={`/images/${img}`}
+                  alt={`Flow step ${i + 1}`}
+                  width={400}
+                  height={240}
+                  className={styles.languageImage}
+                />
+              ))}
+            </div>
           </div>
           <div className={styles.split} data-aos="fade-left">
             <h2>Our Vision</h2>
