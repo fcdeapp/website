@@ -151,30 +151,36 @@ export default function BusinessPage() {
           How It Works
         </motion.h2>
 
-        <motion.ol
-          className={styles.steps}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={{ visible: { transition: { staggerChildren: 0.18 } } }}
-        >
-          {[
-            "Take a photo from your daily life.",
-            "Our AI detects context and crafts a personalised dialogue, quiz, and real‑time feedback.",
-            "Key phrases are saved into an auto‑generated smart notebook for spaced review.",
-            "Upgrade for unlimited chats, longer memory, natural TTS voices, and an ad‑free experience.",
-          ].map((step, i) => (
-            <motion.li
-              key={i}
-              className={styles.stepItem}
-              variants={zoomIn}
-              custom={i}
+        <div className={styles.flowGrid}>
+            {[
+            {
+                img: "/images/flow-1.png",
+                title: "1. Snap & Scenario",
+                desc: "Take a photo to automatically build your learning scenario.",
+            },
+            {
+                img: "/images/flow-2.png",
+                title: "2. AI Chat & Correction",
+                desc: "Chat with our AI tutor—get real‑time corrections.",
+            },
+            {
+                img: "/images/flow-3.png",
+                title: "3. Instant Quiz",
+                desc: "Jump straight into a quiz to reinforce what you learned.",
+            },
+            ].map((step, i) => (
+            <motion.div
+                key={i}
+                className={styles.flowStep}
+                variants={zoomIn}
+                custom={i}
             >
-              <span className={styles.stepBadge}>{i + 1}</span>
-              {step}
-            </motion.li>
-          ))}
-        </motion.ol>
+                <img src={step.img} alt={step.title} />
+                <h3>{step.title}</h3>
+                <p>{step.desc}</p>
+            </motion.div>
+            ))}
+        </div>
       </section>
 
       <div className={styles.waveSplitFlip} />
