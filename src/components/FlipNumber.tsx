@@ -19,19 +19,24 @@ export default function FlipNumber({
 
   return (
     <span className="flipWrap">
-      {chars.map((ch, idx) =>
+      {chars.map((ch, idx) => (
         /\d/.test(ch) ? (
-          <Digit key={idx} finalChar={ch} duration={duration} loops={loops} />
+          <Digit
+            key={idx}
+            finalChar={ch}
+            duration={duration}
+            loops={loops}
+          />
         ) : (
           <span key={idx} className="unit">{ch}</span>
         )
-      )}
+      ))}
 
       <style jsx>{`
         .flipWrap {
           display: inline-flex;
           font-size: 3rem;      /* 숫자 크기 */
-          font-weight: 400;
+          font-weight: 700;
           color: #d8315b;
           line-height: 1;
         }
@@ -60,8 +65,9 @@ function Digit({ finalChar, duration, loops }: DigitProps) {
   stack.push(finalChar);
 
   const steps = stack.length - 1;
+  // 각 스텝마다 translateY 값을 문자열로 준비
   const keyframes = stack.map((_, i) => `-${i * 100}%`);
-  // 앞은 빠르게, 뒤는 느리게: (i/steps)^2
+  // 전체 애니메이션 진행 비율: 앞부분은 빠르게, 뒷부분은 느리게
   const times = stack.map((_, i) => Math.pow(i / steps, 2));
 
   return (
