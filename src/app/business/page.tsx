@@ -278,16 +278,25 @@ export default function BusinessPage() {
           Ready to rewrite language learning?
         </motion.h2>
 
-        <a
-          href="mailto:tommydoh@abrody.app"
-          className={styles.ctaButton}
-          onClick={e => {
-            e.preventDefault();
-            window.location.href = "mailto:tommydoh@abrody.app";
-          }}
-        >
-          Contact us
-        </a>
+        <div className={styles.ctaButtons}>
+          <a
+            href="mailto:tommydoh@abrody.app"
+            className={styles.ctaButton}
+            onClick={e => {
+              e.preventDefault();
+              window.location.href = "mailto:tommydoh@abrody.app";
+            }}
+          >
+            Contact us
+          </a>
+          <a
+            href="/1-pager(KR).pdf"
+            download
+            className={styles.ctaButton}
+          >
+            Download 1‑Pager (KR)
+          </a>
+        </div>
         <p className={styles.ctaNote}>
           We are currently raising pre‑seed to seed funding. Please reach out if you’d like to chat!
         </p>

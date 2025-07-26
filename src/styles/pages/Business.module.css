@@ -286,6 +286,11 @@
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
+  .ctaButtons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
   
   /* ───────── Media ───────── */
   @media (min-width: 900px) {

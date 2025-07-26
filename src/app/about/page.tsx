@@ -134,7 +134,10 @@ export default function About() {
                   style={{ width: "150px", height: "150px", borderRadius: "50%" }}
                 />
               </div>
-              <h3>Join Our Founding Team</h3>
+              <div className={styles.cardInfo}>
+                <h3>Join Our Founding Team</h3>
+                <p className={styles.role}>-</p>
+              </div>
             </div>
             <div className={styles.cardRight}>
               <p>
