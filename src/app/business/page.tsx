@@ -240,11 +240,11 @@ export default function BusinessPage() {
         >
           {[
             {
-              name: "Tommy Doh · CEO & Founder",
+              name: "Jungmin Doh · CEO & Founder",
               bio: "Full‑stack developer (React Native, Node.js, AWS) & designer. SNU architecture — unites tech, design, and learning science.",
             },
             {
-              name: "Tae‑Yeon Kim · CFO & Growth",
+              name: "Taeyeon Kim · CFO & Growth",
               bio: "Dual major CS & Business. Ex‑PwC, UNESCO. Data‑driven growth, finance, and CAC wins.",
             },
           ].map((m, i) => (

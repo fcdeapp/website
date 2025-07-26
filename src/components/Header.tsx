@@ -136,7 +136,7 @@ export default function Header() {
         .left .logo {
           display: flex;
           align-items: center;
-          text-decoration: none;
+          text-decoration: none !important;
         }
         .left .logo img {
           height: 40px;
@@ -148,9 +148,9 @@ export default function Header() {
         .logo-text {
           margin-left: 8px;
           font-size: 1.2rem;
-          font-weight: 700;
+          font-weight: 400;
           color: #d8315b;
-          text-decoration: none; /* 밑줄 제거 */
+          text-decoration: none !important;
         }
 
         /* 모바일에서 텍스트 숨김 */
@@ -167,7 +167,7 @@ export default function Header() {
         .nav-links a {
           position: relative;
           font-size: 0.95rem;
-          font-weight: 500;
+          font-weight: 400;
           color: #333;
           text-decoration: none;
           padding: 0.25rem 0;
