@@ -75,7 +75,7 @@
   padding: 3rem 2rem;
   max-width: 900px;
   margin: 0 auto;
-  color: #444;
+  color: #666;
   line-height: 1.7;
   animation: fadeInContent 1s ease-in-out;
 }
@@ -90,7 +90,6 @@
   background-color: #fff;
   border-radius: 12px;
   padding: 2.5rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   margin-bottom: 2.5rem;
 }
 
@@ -99,7 +98,6 @@
   margin: 0;
 }
 
-/* 텍스트 크기 스타일: 첫 줄, 리스트 항목, 그 외 본문 */
 .firstLine {
   font-size: 1.1rem;
   display: block;
@@ -120,12 +118,12 @@
 
 /* 날짜와 이메일 스타일 */
 .date {
-  color: #fd3a69;
-  font-weight: 600;
+  color: #333;
+  font-weight: 500;
 }
 
 .email {
-  color: #ff7e5f;
+  color: #d8315b;
   text-decoration: underline;
 }
 
@@ -134,12 +132,11 @@
   display: inline-block;
   margin-top: 2rem;
   padding: 0.85rem 1.6rem;
-  background: linear-gradient(135deg, #ff7e5f, #fd3a69);
-  color: #fff;
+  color: #888;
   border: none;
   border-radius: 30px;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

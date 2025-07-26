@@ -126,6 +126,7 @@ export default function About() {
             </div>
             {/* Co-Founder & Team Member Recruitment Card */}
             <div className={styles.teamCard}>
+            <div className={styles.cardLeft}>
               <div className={styles.cardAvatar}>
                 <img
                   src="/about/FoxIconWithoutEyes.png"
@@ -134,11 +135,14 @@ export default function About() {
                 />
               </div>
               <h3>Join Our Founding Team</h3>
+            </div>
+            <div className={styles.cardRight}>
               <p>
                 Currently operating as a one-person team—I'm actively seeking
                 co-founders and talented team members in marketing, design, and
                 development to help build and expand our venture.
               </p>
+            </div>
             </div>
           </div>
         </section>
