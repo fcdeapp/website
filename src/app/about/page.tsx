@@ -146,8 +146,6 @@ export default function About() {
                   key={i}
                   src={`/images/${img}`}
                   alt={`Flow step ${i + 1}`}
-                  width={400}
-                  height={240}
                   className={styles.languageImage}
                 />
               ))}
