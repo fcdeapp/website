@@ -94,22 +94,22 @@ export default function About() {
           <div className={styles.teamGrid}>
             {/* Current team member card */}
             <div className={styles.teamCard}>
-              <img
-                src="/about/AbrodyWebIcon.png"
-                alt="Jungmin Doh"
-                style={{ width: "150px", height: "150px", borderRadius: "50%" }}
-              />
-              <h3>Jungmin Doh</h3>
-              <p>Founder & CEO</p>
+              <img src="/about/AbrodyWebIcon.png" alt="Do Jeongmin" style={{ width: 150, height: 150, borderRadius: "50%" }} />
+              <h3>Do Jeongmin · CEO & Founder</h3>
+              <p>
+                B.S. Architecture, College of Engineering, Seoul National University<br/>
+                <strong>Programming:</strong> React Native (TS), Node.js, HCL, MongoDB, AWS (EC2, CodeDeploy, S3, Route53, VPC), GitHub Actions CI/CD<br/>
+                <strong>Design:</strong> Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Rhino, Blender, V‑Ray, Enscape, Figma
+              </p>
             </div>
             <div className={styles.teamCard}>
-              <img
-                src="/about/AbrodyWebIcon.png"
-                alt="Taeyeon Kim"
-                style={{ width: "150px", height: "150px", borderRadius: "50%" }}
-              />
-              <h3>Taeyeon Kim</h3>
-              <p>Co-Founder & CFO</p>
+              <img src="/about/AbrodyWebIcon.png" alt="Taeyeon Kim" style={{ width: 150, height: 150, borderRadius: "50%" }} />
+              <h3>Taeyeon Kim · CFO & Growth</h3>
+              <p>
+                B.S. Computer Engineering & B.S. Business Administration (dual major), Seoul National University<br/>
+                <strong>Programming:</strong> Unity (game development)<br/>
+                <strong>Accounting & Marketing:</strong> PwC (intern), UNESCO (intern)
+              </p>
             </div>
             {/* Co-Founder & Team Member Recruitment Card */}
             <div className={styles.teamCard}>
@@ -134,21 +134,24 @@ export default function About() {
         <section className={styles.sectionAlt}>
           <div className={styles.split} data-aos="fade-right">
             <div className={styles.languageConcept}>
-              <img
-                src="/images/flow-1.png"
-                alt="Flow step 1: Snap & Scenario"
-                className={styles.languageImage}
-              />
-              <img
-                src="/images/flow-2.png"
-                alt="Flow step 2: AI Chat & Correction"
-                className={styles.languageImage}
-              />
-              <img
-                src="/images/flow-3.png"
-                alt="Flow step 3: Instant Quiz"
-                className={styles.languageImage}
-              />
+              <div className={styles.flowItem}>
+                <img src="/images/flow-1.png" alt="Snap & Scenario" className={styles.languageImage} />
+                <p className={styles.flowDesc}>
+                  Take a photo to automatically build your learning scenario.
+                </p>
+              </div>
+              <div className={styles.flowItem}>
+                <img src="/images/flow-2.png" alt="AI Chat & Correction" className={styles.languageImage} />
+                <p className={styles.flowDesc}>
+                  Chat with our AI tutor—get real‑time corrections.
+                </p>
+              </div>
+              <div className={styles.flowItem}>
+                <img src="/images/flow-3.png" alt="Instant Quiz" className={styles.languageImage} />
+                <p className={styles.flowDesc}>
+                  Jump straight into a quiz to reinforce what you learned.
+                </p>
+              </div>
             </div>
           </div>
           <div className={styles.split} data-aos="fade-left">

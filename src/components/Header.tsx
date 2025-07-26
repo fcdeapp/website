@@ -162,6 +162,12 @@ export default function Header() {
           }
         }
 
+        @media (max-width: 640px) {
+          .right.action-buttons {
+            display: none;
+          }
+        }
+
         .center.nav-links {
           display: flex;
           gap: 2rem;
