@@ -1,13 +1,16 @@
 // components/FlipNumber.tsx
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 interface Props {
-  target: string | number;   // 최종 표시할 문자열 (예: "54 %")
-  duration?: number;         // 전체 애니메이션 시간(ms) – 기본 1200
-  loops?: number;            // 0–9 몇 바퀴 돌릴지 – 기본 2
+  /** 최종 표시할 문자열 (예: "54 %") */
+  target: string | number;
+  /** 전체 애니메이션 시간(ms) – 기본 1200 */
+  duration?: number;
+  /** 숫자 0–9 몇 바퀴 돌릴지 – 기본 2 */
+  loops?: number;
 }
 
 export default function FlipNumber({
@@ -19,7 +22,7 @@ export default function FlipNumber({
 
   return (
     <span className="flipWrap">
-      {chars.map((ch, idx) => (
+      {chars.map((ch, idx) =>
         /\d/.test(ch) ? (
           <Digit
             key={idx}
@@ -28,15 +31,16 @@ export default function FlipNumber({
             loops={loops}
           />
         ) : (
-          <span key={idx} className="unit">{ch}</span>
+          <span key={idx} className="unit">
+            {ch}
+          </span>
         )
-      ))}
-
+      )}
       <style jsx>{`
         .flipWrap {
           display: inline-flex;
-          font-size: 3rem;      /* 숫자 크기 */
-          font-weight: 700;
+          font-size: 3rem;
+          font-weight: 400;
           color: #d8315b;
           line-height: 1;
         }
@@ -57,7 +61,12 @@ interface DigitProps {
 }
 
 function Digit({ finalChar, duration, loops }: DigitProps) {
-  // 0–9를 loops회 반복한 뒤 최종 문자 스택 생성
+  // 1) ref + inView + controls 세팅
+  const ref = useRef<HTMLSpanElement>(null);
+  const controls = useAnimation();
+  const inView = useInView(ref, { once: true, amount: 0.5 });
+
+  // 2) 0–9를 loops회 반복 후 최종 숫자 스택 생성
   const stack: string[] = [];
   for (let i = 0; i < loops; i++) {
     stack.push(...Array.from({ length: 10 }, (_, n) => String(n)));
@@ -65,17 +74,23 @@ function Digit({ finalChar, duration, loops }: DigitProps) {
   stack.push(finalChar);
 
   const steps = stack.length - 1;
-  // 각 스텝마다 translateY 값을 문자열로 준비
+  // 각 스텝마다 translateY 값
   const keyframes = stack.map((_, i) => `-${i * 100}%`);
-  // 전체 애니메이션 진행 비율: 앞부분은 빠르게, 뒷부분은 느리게
+  // 앞은 빠르게, 뒤는 느리게
   const times = stack.map((_, i) => Math.pow(i / steps, 2));
 
+  // 3) inView 가 true 될 때만 애니메이션 시작
+  useEffect(() => {
+    if (inView) {
+      controls.start({ y: keyframes });
+    }
+  }, [inView, controls, keyframes]);
+
   return (
-    <span className="digit">
+    <span ref={ref} className="digit">
       <motion.span
         initial={{ y: "0%" }}
-        whileInView={{ y: keyframes }}
-        viewport={{ once: true, amount: 0.5 }}
+        animate={controls}
         transition={{
           duration: duration / 1000,
           times,
