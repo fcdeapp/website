@@ -29,7 +29,7 @@ export interface MessageBubbleProps {
   content: string;
   isMine: boolean;
   timestamp: string;
-  messageType: MessageType;
+  messageType?: MessageType;
   issues?: Issue[];
   profileImage?: string | null;
   profileThumbnail?: string | null;
