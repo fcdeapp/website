@@ -1,0 +1,114 @@
+/* ----- overlay ------------------------------------------------------ */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+    z-index: 9999;
+  }
+  
+  /* ----- card --------------------------------------------------------- */
+  .card {
+    width: 90%;
+    max-width: 480px;
+    border-radius: 21px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ----- hero image --------------------------------------------------- */
+  .image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 70%,
+      #fff 100%
+    );
+  }
+  
+  .textWrap {
+    position: absolute;
+    inset-inline: 16px;
+    bottom: 16px;
+    color: #333;
+  }
+  
+  .title {
+    margin: 0;
+    font: 600 18px/1.2 "Inter", sans-serif;
+  }
+  
+  .scenario {
+    margin: 4px 0 0;
+    font: 14px/1.4 "Inter", sans-serif;
+    color: #555;
+  }
+  
+  /* ----- persona box -------------------------------------------------- */
+  .personaBox {
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+  }
+  
+  .personaTrait {
+    margin: 0 0 4px;
+    font: 14px/1.4 "Inter", sans-serif;
+    color: #333;
+  }
+  
+  .personaCatch {
+    margin: 6px 0 0;
+    font: italic 13px/1.4 "Inter", sans-serif;
+    color: #555;
+    text-align: end;
+  }
+  
+  /* ----- buttons ------------------------------------------------------ */
+  .btnRow {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0 18px;
+  }
+  
+  .btn,
+  .btnLeave {
+    padding: 8px 24px;
+    border: none;
+    border-radius: 20px;
+    font: 400 14px/1 "Inter", sans-serif;
+    cursor: pointer;
+    transition: opacity 0.25s;
+  }
+  
+  .btn {
+    background: #fafafa;
+    color: #555;
+  }
+  
+  .btnLeave {
+    background: rgba(216, 49, 91, 0.06);
+    color: #d8315b;
+  }
+  
+  .disabled,
+  .btn:disabled,
+  .btnLeave:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+  

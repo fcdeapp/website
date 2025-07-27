@@ -1,0 +1,152 @@
+/* layout */
+.wrapper {
+    position: relative;
+    padding: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 16px;
+    background: #fff;
+    min-height: 45vh;
+  }
+  
+  /* attempts + timer */
+  .attemptRow {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  
+  .attemptDot,
+  .activeDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  
+  .activeDot {
+    background: rgba(216, 49, 91, 0.45);
+    border-color: rgba(216, 49, 91, 0.45);
+  }
+  
+  .timer {
+    margin-left: 12px;
+    font: 10px/1 "Inter", sans-serif;
+    color: #666;
+    opacity: 0.7;
+  }
+  
+  /* word lines */
+  .line,
+  .suggestionLine {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+    padding-top: 60px; /* space for timer */
+  }
+  
+  /* gaps */
+  .gap,
+  .gapSmall {
+    display: inline-block;
+    width: 20px;
+    height: 38px;
+  }
+  
+  .gapSmall {
+    width: 16px;
+    height: 30px;
+  }
+  
+  .gapActive {
+    background: rgba(216, 49, 91, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* word chip */
+  .word {
+    position: relative;
+    padding: 6px 10px;
+    border-radius: 20px;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.15s;
+  }
+  
+  .wordSentence {
+    background: rgba(100, 100, 255, 0.1);
+    color: #003366;
+  }
+  
+  .wordSuggestion {
+    background: rgba(216, 49, 91, 0.1);
+    color: #d8315b;
+  }
+  
+  .dragging {
+    opacity: 0.4;
+  }
+  
+  /* hint mark */
+  .hintMark {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font: 700 16px/1 "Inter", sans-serif;
+    color: #d8315b;
+  }
+  
+  /* buttons */
+  .btnRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    gap: 12px;
+  }
+  
+  .hintBtn,
+  .checkBtn {
+    flex: 1 1 0;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font: 400 14px/1 "Inter", sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, border 0.2s;
+  }
+  
+  .hintBtn {
+    background: rgba(242, 84, 45, 0.02);
+    border-color: rgba(242, 84, 45, 0.3);
+    color: #f2542d;
+  }
+  .hintBtn:hover {
+    background: rgba(242, 84, 45, 0.07);
+  }
+  
+  .checkBtn {
+    background: rgba(216, 49, 91, 0.02);
+    border-color: rgba(216, 49, 91, 0.3);
+    color: #d8315b;
+  }
+  .checkBtn:hover {
+    background: rgba(216, 49, 91, 0.07);
+  }
+  
+  /* result texts */
+  .reveal,
+  .correct {
+    text-align: center;
+    margin-top: 12px;
+    font: 13px/1.4 "Inter", sans-serif;
+    color: #666;
+  }
+  
+  .correct {
+    color: green;
+    font-weight: 600;
+  }
+  

@@ -1,0 +1,141 @@
+/* container */
+.card {
+    position: relative;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 16px;
+    padding: 16px 16px 90px;
+    min-height: 45vh;
+  }
+  
+  /* attempts & timer */
+  .attemptRow {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  
+  .dot,
+  .activeDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  .activeDot {
+    background: rgba(216, 49, 91, 0.45);
+    border-color: rgba(216, 49, 91, 0.45);
+  }
+  
+  .timer {
+    margin-left: 12px;
+    font: 10px/1 "Inter", sans-serif;
+    color: #666;
+    opacity: 0.7;
+  }
+  
+  /* sentence row */
+  .sentence {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 54px; /* space for timer */
+    margin-bottom: 24px;
+  }
+  
+  .fixed {
+    font: 400 18px/28px "Inter", sans-serif;
+    color: #555;
+    letter-spacing: 0.4px;
+  }
+  
+  .blank {
+    min-width: 42px;
+    min-height: 24px;
+    border-bottom: 2px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .blankActive {
+    border-color: #d8315b;
+  }
+  .blankWrong {
+    border-color: #ff0000;
+  }
+  
+  .filled {
+    color: #d8315b;
+    font: 400 16px/22px "Inter", sans-serif;
+  }
+  
+  /* suggestions */
+  .suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-top: 1px solid #ccc;
+    padding-top: 16px;
+  }
+  
+  .chip {
+    background: rgba(216, 49, 91, 0.1);
+    color: #d8315b;
+    padding: 6px 10px;
+    border-radius: 20px;
+    cursor: grab;
+    user-select: none;
+  }
+  
+  /* buttons */
+  .btnRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  
+  .hintBtn,
+  .checkBtn {
+    flex: 1 1 0;
+    padding: 12px 0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font: 400 14px/1 "Inter", sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, border 0.2s;
+  }
+  
+  .hintBtn {
+    border-color: rgba(242, 84, 45, 0.3);
+    background: rgba(242, 84, 45, 0.02);
+    color: #f2542d;
+  }
+  .hintBtn:hover {
+    background: rgba(242, 84, 45, 0.07);
+  }
+  
+  .checkBtn {
+    border-color: rgba(216, 49, 91, 0.3);
+    background: rgba(216, 49, 91, 0.02);
+    color: #d8315b;
+  }
+  .checkBtn:hover {
+    background: rgba(216, 49, 91, 0.07);
+  }
+  
+  /* reveal answer */
+  .reveal {
+    margin-top: 12px;
+    text-align: center;
+    font: 13px/1.4 "Inter", sans-serif;
+    color: #666;
+    opacity: 0.85;
+  }
+  

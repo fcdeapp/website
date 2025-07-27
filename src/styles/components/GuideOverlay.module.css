@@ -1,0 +1,81 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;      /* let inner buttons manage their own events */
+  }
+  
+  .svgLayer {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+  }
+  
+  /* dimmed glass behind the hole */
+  .backdrop {
+    fill: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+  }
+  
+  /* -------------------------------------------------- */
+  /* Call‑out box                                       */
+  /* -------------------------------------------------- */
+  .callout {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    background: #ffffffee;
+    border-radius: 18px;
+    padding: 20px 18px 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    pointer-events: auto;      /* enable interaction */
+  }
+  
+  .title {
+    margin: 0 0 6px;
+    font: 700 17px/1.3 "Inter", sans-serif;
+    color: #120c3a;
+  }
+  
+  .desc {
+    margin: 0;
+    font: 14px/1.45 "Inter", sans-serif;
+    color: #424242;
+  }
+  
+  .navRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    gap: 8px;
+  }
+  
+  .navBtn {
+    flex: 1 1 0;
+    padding: 7px 0;
+    border: none;
+    border-radius: 20px;
+    font: 600 13px/1 "Inter", sans-serif;
+    color: #fff;
+    background-image: linear-gradient(90deg, #d8315b, #f2542d);
+    cursor: pointer;
+  }
+  
+  .navBtn.disabled,
+  .navBtn:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+  
+  .skip {
+    margin-top: 12px;
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font: 12px/1 "Inter", sans-serif;
+    color: #888;
+    cursor: pointer;
+  }
+  

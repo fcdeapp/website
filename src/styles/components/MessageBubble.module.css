@@ -1,191 +1,71 @@
-.myContainer {
-    display: flex;
-    flex-direction: row-reverse;
-    align-self: flex-end;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .friendContainer {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .myBubble {
-    background-color: #120C3A;
-    padding: 8px;
-    border-radius: 15px;
-    max-width: 80%;
-  }
-  
-  .friendBubble {
-    background-color: #f2542d;
-    padding: 8px;
-    border-radius: 15px;
-    margin-left: 5px;
-    max-width: 70%;
-  }
-  
-  .myMessageText {
-    color: #ededed;
-    font-size: 14px;
-    margin: 8px;
-  }
-  
-  .friendMessageText {
-    color: #ffffff;
-    font-size: 14px;
-    margin: 8px;
-  }
-  
-  .messageTimeRight {
-    color: #666;
-    font-size: 10px;
-    margin: 0 10px;
-    align-self: flex-end;
-  }
-  
-  .messageTimeLeft {
-    color: #666;
-    font-size: 10px;
-    margin: 0 10px;
-    align-self: flex-end;
-  }
-  
-  .optionsContainer {
-    margin-right: 10px;
-    display: flex;
-    flex-direction: row;
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 8px 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-  }
-  
-  .optionButton {
-    margin: 0 10px;
-    background: none;
-    border: none;
-    font-size: 14px;
-    color: #120C3A;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  
-  .editTextInput {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #120C3A;
-    border-radius: 13px;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .imageWrapper {
-    position: relative;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(248, 248, 254, 0.8);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .loadErrorText {
-    color: red;
-    font-size: 12px;
-    text-align: center;
-  }
-  
-  .chatImage {
-    width: 150px;
-    height: 150px;
-    border-radius: 13px;
-    object-fit: cover;
-  }
-  
-  .loadingWrapper {
-    width: 200px;
-    height: 200px;
-    border-radius: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FAFAFA;
-  }
-  
-  .optionsContainer {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .buttonRow {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 200;
-  }
-  
-  .imageViewer {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    background: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .closeButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 20px;
-    padding: 8px 15px;
-    cursor: pointer;
-  }
-  
-  .closeButtonText {
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .zoomedImage {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 8px;
-  }
-  
+/* ---------- 레이아웃 ---------- */
+.container           { margin: 6px 0; position: relative; display: flex; align-items: flex-start; }
+.toRight             { flex-direction: row-reverse; }
+
+/* ---------- 말풍선 ---------- */
+.bubble              { max-width: 78%; padding: 2px; border-radius: 15px; word-break: break-word; position: relative; }
+.my                  { background: #d8315b; }                       /* 내 메시지 */
+.their               { background: #ffffff; border: 1px solid #cccccc; }
+.myIssue             { background: #ffffff; border: 1px solid #cccccc; }
+
+/* ---------- 텍스트 / 업로드 Shimmer ---------- */
+.textWrapper         { position: relative; }
+.uploading .content  { opacity: 0.25; }
+
+@keyframes shimmer {
+  0%   { transform: translateX(-130%); }
+  100% { transform: translateX(130%); }
+}
+.shimmer             { position: absolute; inset: 0 auto 0 0; width: 120px;
+                       background: linear-gradient(90deg, transparent, rgba(255,255,255,.9), transparent);
+                       animation: shimmer 1.3s linear infinite; pointer-events: none; }
+
+/* ---------- 텍스트 스타일 ---------- */
+.content             { font-size: 14px; line-height: 1.4; white-space: pre-wrap; color: #ededed; }
+.their .content      { color: #333333; }
+.issueWord           { text-decoration: underline; text-decoration-color: red; color: red; }
+.lowFreq             { background: none; border: none; padding: 0; margin: 0; cursor: pointer;
+                       color: #ffeb3b; text-decoration: underline; }
+
+/* ---------- 이미지 ---------- */
+.imageWrap           { position: relative; cursor: zoom-in; }
+.chatImage           { border-radius: 13px; width: 160px; height: 160px; object-fit: cover; }
+.imageSkeleton       { position: absolute; inset: 0; background: #fafafa; display: flex;
+                       align-items: center; justify-content: center; border-radius: 13px; }
+
+/* ---------- 시간 ---------- */
+.time                { font-size: 10px; color: #666; align-self: flex-end; height: 40px; line-height: 40px; padding: 0 6px; }
+.timeRight           { order: -1; }
+
+/* ---------- 옵션 메뉴 ---------- */
+.optBox              { position: absolute; right: -6px; top: -40px; display: flex; gap: 8px; padding: 8px 10px;
+                       background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.14); z-index: 20; }
+.optBtn              { background: none; border: none; font-size: 13px; color: #120c3a; cursor: pointer; }
+
+/* ---------- 이슈 피드백 & 퀴즈 ---------- */
+.issueArea           { margin-top: 4px; }
+.issueLine           { font-size: 12px; color: #333; margin: 0 0 4px; }
+.quizRow             { display: flex; gap: 6px; }
+.quizBtn             { padding: 2px 8px; border-radius: 12px; font-size: 12px; background: rgba(216,49,91,.08);
+                       color: #d8315b; border: none; cursor: pointer; }
+
+/* ---------- 수정 모드 ---------- */
+.editInput           { width: 100%; padding: 6px 10px; border: 1px solid #120c3a; border-radius: 13px; font-size: 14px; }
+
+/* ---------- 사전 저장 모달 ---------- */
+.vocabOverlay        { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: flex;
+                       align-items: center; justify-content: center; z-index: 1200; }
+.vocabModal          { width: 320px; background: #fff; border-radius: 12px; padding: 24px 20px; }
+.vocabWord           { font-size: 20px; margin: 8px 0 20px; text-align: center; }
+.vocabBtns           { display: flex; gap: 10px; }
+.vocabCancel         { flex: 1; padding: 8px 0; background: #fefefe; border: 1px solid #d9d9d9;
+                       border-radius: 8px; font-size: 14px; cursor: pointer; }
+.vocabConfirm        { flex: 1; padding: 8px 0; background: linear-gradient(90deg,#F2542D 0%,#D8315B 100%);
+                       border: none; border-radius: 8px; font-size: 14px; color: #fff; cursor: pointer; }
+
+/* ---------- 이미지 프리뷰 ---------- */
+.previewOverlay      { position: fixed; inset: 0; background: rgba(0,0,0,.9); display: flex;
+                       align-items: center; justify-content: center; z-index: 1100; }
+.previewImg          { max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 4px; }
+.closePreview        { position: fixed; top: 24px; right: 24px; background: none;
+                       border: none; color: #fff; font-size: 32px; cursor: pointer; }

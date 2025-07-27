@@ -1,0 +1,100 @@
+/* ───────── Layout ───────── */
+.container {
+    display: flex;
+    height: 100vh;
+    background: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  /* Sidebar – 닫힘 60 px, 열림 220 px */
+  .sidebar {
+    width: 60px;
+    background: #2d3139;
+    color: #fff;
+    transition: width 0.25s ease;
+    overflow: hidden;
+  }
+  .sidebar.open { width: 220px; }
+  
+  .toggleBtn {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 24px;
+    padding: 16px 0;
+    cursor: pointer;
+  }
+  
+  .navMenu { margin-top: 24px; }
+  .navMenu ul { list-style: none; padding: 0; margin: 0; }
+  .navMenu li {
+    padding: 12px 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    white-space: nowrap;
+    transition: background 0.2s, opacity 0.2s;
+  }
+  .navMenu li:hover { background: #414651; opacity: 1; }
+  .navMenu .active { background: #414651; opacity: 1; }
+  
+  /* Main */
+  .main {
+    flex: 1;
+    overflow-y: auto;
+    padding: 32px 24px;
+  }
+  .title {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+  }
+  .info {
+    color: #777;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  /* Chat List */
+  .chatList { list-style: none; margin: 0; padding: 0; }
+  .chatItem {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+  .chatItem:hover { background: #f0f0f0; }
+  
+  .avatar {
+    border-radius: 50%;
+    margin-right: 12px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+  
+  .chatInfo { flex: 1; min-width: 0; }
+  .nickname {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 2px;
+  }
+  .lastMsg {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .time {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #999;
+    flex-shrink: 0;
+  }
+  

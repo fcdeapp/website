@@ -1,0 +1,30 @@
+.container {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    font-weight: 400;
+    /* subtle inset for iOS‑like “island” 느낌 */
+    border: 1px solid #e5e7eb; /* zinc‑200 */
+  }
+  
+  /* scale‑bounce keyframes */
+  @keyframes pulse-bounce {
+    0% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pulse {
+    animation: pulse-bounce 0.6s ease-out;
+  }
+  
+  .count {
+    line-height: 1;
+  }
+  

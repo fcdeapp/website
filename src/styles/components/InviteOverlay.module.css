@@ -1,0 +1,136 @@
+/* ───────── 전체 배경(어둡게) ───────── */
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 중앙 정렬용 래퍼 */
+  .wrapper {
+    position: relative;
+    width: 80%;
+    max-height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 흐림(Blur) 레이어 – underDevelopment=true 일 때만 표시 */
+  .blurLayer {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    z-index: 1;
+  }
+  
+  /* 메인 카드 */
+  .card {
+    position: relative;
+    z-index: 2; /* blurLayer 위 */
+    width: 100%;
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: 70vh;
+    overflow: hidden;
+  }
+  
+  .title {
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* 스크롤 영역 */
+  .list {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 6px; /* 스크롤바 여백 */
+  }
+  
+  .empty {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  /* 친구 한 줄 */
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    background: #ddd;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  
+  .name {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* 초대 버튼 */
+  .inviteBtn {
+    background: #d9d9d9;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .inviteBtn:hover {
+    background: #c9c9c9;
+  }
+  
+  /* 카드 하단 닫기 버튼 */
+  .closeBtn {
+    align-self: center;
+    background: #d9d9d9;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .closeBtn:hover {
+    background: #c9c9c9;
+  }
+  
+  /* 개발 중 안내 배지 */
+  .devBadge {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffffdd;
+    border: 1px solid #d9d9d9;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #888;
+    z-index: 3;
+    text-align: center;
+  }
+  

@@ -1,0 +1,115 @@
+/* 전체 레이아웃 */
+.container{
+    display:flex;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    background:#fafafa;
+    position:relative;
+  }
+  
+  /* 사이드바 (PersonalChats) */
+  .sidebar{
+    width:0;
+    transition:width .3s;
+    overflow:hidden;
+    background:#fff;
+    border-right:1px solid #eee;
+  }
+  .sidebar.open{ width:300px; }
+  
+  /* 헤더 */
+  .header{
+    position:fixed;
+    top:0;left:0;right:0;
+    height:60px;
+    background:#fafafa;
+    border-bottom:1px solid #eee;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 12px;
+    z-index:20;
+  }
+  .iconBtn{ background:none;border:none;padding:4px;cursor:pointer; }
+  .titleArea{
+    display:flex;align-items:center;gap:4px;
+    background:none;border:none;cursor:pointer;
+  }
+  .title{ font-size:18px;font-weight:500;color:#333; }
+  
+  /* 채팅 영역 */
+  .chatPane{
+    flex:1; overflow-y:auto;
+    display:flex; flex-direction:column-reverse;
+    padding:12px 16px 110px;
+    margin-top:60px;         /* 헤더 높이 */
+  }
+  
+  /* 입력 영역 */
+  .inputPane{
+    position:fixed;
+    left:0;right:0;bottom:0;
+    padding:12px;
+    background:#fff;
+    border-top:1px solid #eee;
+    z-index:10;
+  }
+  
+  /* 오버레이(반투명) */
+  .overlay{
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    background:rgba(0,0,0,.5);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:30;
+  }
+  
+  /* 메뉴 카드 */
+  .menuCard{
+    width:90%;max-width:340px;max-height:90%;
+    background:#fff;border-radius:20px;padding:20px;
+    position:relative;overflow:auto;
+  }
+  .closeBtn{position:absolute;top:12px;right:12px;background:none;border:none;cursor:pointer;}
+  .menuBtn{
+    width:100%;padding:12px;margin:6px 0;
+    background:#fafafa;border:1px solid #eee;
+    border-radius:12px;cursor:pointer;font-size:15px;
+  }
+  .row{display:flex;align-items:center;gap:8px;margin:12px 0;}
+  .chip{
+    padding:6px 12px;font-size:13px;border-radius:18px;
+    background:#eee;border:none;cursor:pointer;
+  }
+  .chipOn{background:#D8315B;color:#fff;}
+  .toggle{
+    padding:6px 12px;border-radius:18px;border:none;cursor:pointer;
+    background:#eee;font-size:13px;
+  }
+  .toggleOn{background:#D8315B;color:#fff;}
+  .scenarioScroll{
+    display:flex;overflow-x:auto;gap:8px;padding:8px 0;
+  }
+  .scenarioChip{
+    flex:0 0 auto;
+    padding:6px 12px;border-radius:18px;font-size:13px;
+    background:#eee;border:none;cursor:pointer;
+  }
+  .scenarioOn{background:#F2542D;color:#fff;}
+  
+  /* 퀴즈 카드 */
+  .quizCard{
+    width:90%;max-width:540px;max-height:90%;
+    background:#fff;border-radius:20px;padding:16px;overflow:auto;
+  }
+  
+  /* 로딩 */
+  .loading{
+    width:100%;height:100vh;display:flex;
+    align-items:center;justify-content:center;
+    font-size:18px;color:#666;
+  }
+  
