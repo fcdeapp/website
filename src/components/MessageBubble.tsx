@@ -14,13 +14,13 @@ import Lottie from 'lottie-react';
 import styles from '../styles/components/MessageBubble.module.css';
 import ProfileWithFlag from './ProfileWithFlag';
 import { useTranslation } from 'react-i18next';
-import { formatTimeDifference } from '@/utils/timeUtils';
+import { formatTimeDifference } from '../utils/timeUtils';
 import {
   getCurrentLanguage,
   getWordFrequency,
   setWordFrequency,
   getZipf,
-} from '@/context/freqStore';
+} from '../context/freqStore';
 
 /* ---------------- types ---------------- */
 export type MessageType = 'buddy' | 'regional' | 'normal' | 'ai';
@@ -211,7 +211,7 @@ function MessageBubble(props: MessageBubbleProps) {
       {isImageUploading && (
         <div className={styles.imageSkeleton}>
           <Lottie
-            animationData={require('@/public/lottie/ActivityIndicator.json')}
+            animationData={require('../../public/lottie/ActivityIndicator.json')}
             loop
             autoplay
             style={{ width: 80, height: 80 }}
