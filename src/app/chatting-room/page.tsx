@@ -98,7 +98,7 @@ const addIndexes = (sentence:string, issues:Issue[]):Issue[] => {
 };
 
 /* ───────────────────────── 메인 페이지 ─────────────────────────────────── */
-const ChattingRoomPage:React.FC = () => {
+function ChattingRoomPage() {
   const router = useRouter();
   const params = useSearchParams();
 
@@ -510,4 +510,6 @@ const ChattingRoomPage:React.FC = () => {
   );
 };
 
-export default ChattingRoomPage;
+export default dynamic(() => Promise.resolve(ChattingRoomPage), {
+    ssr: false,        // 서버‑사이드 렌더링 완전 OFF
+  });
