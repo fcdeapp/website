@@ -10,13 +10,17 @@
   
   /* 사이드바 (PersonalChats) */
   .sidebar{
-    width:0;
-    transition:width .3s;
-    overflow:hidden;
-    background:#fff;
-    border-right:1px solid #eee;
+    width: 300px;
+    transition: width .3s;
+    overflow: hidden;
+    background: #fff;
+    border-right: 1px solid #eee;
   }
-  .sidebar.open{ width:300px; }
+
+  /* 만약 토글 기능을 유지하고 싶다면 */
+  .open {
+    width: 300px;
+  }
   
   /* 헤더 */
   .header{
