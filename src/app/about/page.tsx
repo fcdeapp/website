@@ -96,16 +96,18 @@ export default function About() {
               <div className={styles.cardLeft}>
                 <img src="/about/AbrodyWebIcon.png" alt="Do Jeongmin" className={styles.cardAvatar} />
                 <div className={styles.cardInfo}>
-                  <h3>Do Jeongmin</h3>
-                  <p className={styles.role}>CEO &amp; Founder</p>
+                  <h3>Jungmin Doh</h3>
+                  <p className={styles.role}>
+                    Founder<br/>
+                    & CEO
+                  </p>
                 </div>
               </div>
               <div className={styles.cardRight}>
-                <p>
-                  B.S. Architecture, College of Engineering, Seoul National University<br/>
-                  <strong>Programming:</strong> React Native (TS), Node.js, HCL, MongoDB, AWS (EC2, CodeDeploy, S3, Route53, VPC), GitHub Actions CI/CD<br/>
-                  <strong>Design:</strong> Photoshop, Illustrator, InDesign, Premiere Pro, After Effects, Rhino, Blender, V‑Ray, Enscape, Figma
-                </p>
+              <p>
+                “I believe learning should feel like living, not just studying.<br/>
+                As a developer and designer, I built Abrody to finally make language apps as engaging as our daily lives — creative, practical, and genuinely helpful.”
+              </p>
               </div>
             </div>
             <div className={styles.teamCard}>
@@ -113,15 +115,17 @@ export default function About() {
                 <img src="/about/AbrodyWebIcon.png" alt="Taeyeon Kim" className={styles.cardAvatar} />
                 <div className={styles.cardInfo}>
                   <h3>Taeyeon Kim</h3>
-                  <p className={styles.role}>CFO &amp; Growth</p>
+                  <p className={styles.role}>
+                    Founding Team<br/>
+                    Growth · Finance
+                  </p>
                 </div>
               </div>
               <div className={styles.cardRight}>
-                <p>
-                  B.S. Computer Engineering & B.S. Business Administration (dual major), Seoul National University<br/>
-                  <strong>Programming:</strong> Unity (game development)<br/>
-                  <strong>Accounting &amp; Marketing:</strong> PwC (intern), UNESCO (intern)
-                </p>
+              <p>
+                “I joined Abrody to help create real value for learners — not vanity metrics.<br/>
+                My background in tech, business, and data helps us reach more people and build a sustainable future together.”
+              </p>
               </div>
             </div>
             {/* Co-Founder & Team Member Recruitment Card */}
