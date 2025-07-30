@@ -263,7 +263,7 @@ export default function BusinessPage() {
             },
             {
                 name: "Taeyeon Kim",
-                role: "Co‑founder\n( Growth · Finance )",
+                role: "Executive\nCFO",
                 bio: `“I’m here to turn insight into impact — using data and strategy to grow our community sustainably and meaningfully.”`,
             },
           ].map((m, i) => (

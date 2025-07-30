@@ -116,7 +116,7 @@ export default function About() {
                 <div className={styles.cardInfo}>
                   <h3>Taeyeon Kim</h3>
                   <p className={styles.role}>
-                    Founding Team<br/>
+                    Executive<br/>
                     Growth · Finance
                   </p>
                 </div>
