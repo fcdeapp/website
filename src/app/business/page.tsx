@@ -308,11 +308,11 @@ export default function BusinessPage() {
             Contact us
           </a>
           <a
-            href="/1-pager(KR).pdf"
+            href="/1-pager.pdf"
             download
             className={styles.ctaButton}
           >
-            Download 1‑Pager (KR)
+            Download 1‑Pager
           </a>
         </div>
         <p className={styles.ctaNote}>
