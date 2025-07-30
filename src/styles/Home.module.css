@@ -234,7 +234,7 @@
 /* Hero Hint 텍스트 - 조금 더 아래쪽에 배치, 작게 표시, 파도치듯 투명도 변동 */
 .heroHint {
   margin-top: 3rem; /* 기존보다 더 아래쪽 배치 */
-  font-size: 1rem;
+  font-size: 0.7rem;
   color: #888;
   opacity: 0.4;
   animation: textWave 3s infinite;
