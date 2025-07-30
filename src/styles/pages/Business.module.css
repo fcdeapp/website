@@ -272,6 +272,31 @@
     color: #d8315b;
   }
   
+  /* Team member 이름 */
+  .memberName {
+    font-size: 1.25rem;
+    font-weight: 300;   /* 가늘게 */
+    color: #d8315b;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Team member 역할(role) */
+  .memberRole {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+  
+  /* Team member 소개(bio) */
+  .memberBio {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #555;
+    line-height: 1.6;
+  }
+  
   /* ───────── CTA ───────── */
   .ctaSection {
     display: flex;

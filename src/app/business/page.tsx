@@ -257,12 +257,14 @@ export default function BusinessPage() {
         >
           {[
             {
-              name: "Jungmin Doh · CEO & Founder",
-              bio: "Full‑stack developer (React Native, Node.js, AWS) & designer. SNU architecture — uniting tech and design.",
+                name: "Jungmin Doh",
+                role: "Founder\nCEO",
+                bio: `“I build products that feel like a natural extension of your day — blending tech, design, and genuine human moments to make learning stick.”`,
             },
             {
-              name: "Taeyeon Kim · CFO & Growth",
-              bio: "Dual major in Computer Science & Business at SNU. Intern at PwC and UNESCO. Data‑driven growth, finance, and CAC wins.",
+                name: "Taeyeon Kim",
+                role: "Co‑founder\n( Growth · Finance )",
+                bio: `“I’m here to turn insight into impact — using data and strategy to grow our community sustainably and meaningfully.”`,
             },
           ].map((m, i) => (
             <motion.article
@@ -272,8 +274,13 @@ export default function BusinessPage() {
               custom={i}
               whileHover={{ y: -10, boxShadow: "0 18px 28px rgba(0,0,0,0.12)" }}
             >
-              <h3>{m.name}</h3>
-              <p>{m.bio}</p>
+                <h3 className={styles.memberName}>{m.name}</h3>
+                <p className={styles.memberRole} style={{ whiteSpace: "pre-line" }}>
+                    {m.role}
+                </p>
+                <p className={styles.memberBio}>
+                    {m.bio}
+                </p>
             </motion.article>
           ))}
         </motion.div>
