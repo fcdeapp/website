@@ -17,8 +17,7 @@ export default function WebFooter() {
         <div className={styles.footerSection}>
           <h3 className={styles.footerTitle}>About Abrody</h3>
           <p className={styles.footerText}>
-            Abrody is dedicated to connecting international minds through cultural exchange and real events.
-            Join our community and explore a world of possibilities.
+          Abrody turns your real life into real language learning—any language, any moment. Just snap a photo, and get instant, personalized lessons for the situations you care about.
           </p>
         </div>
         <div className={styles.footerSection}>
