@@ -131,6 +131,7 @@
     margin-bottom: 1rem;
     font-size: 1.35rem;
     color: #d8315b;
+    font-weight: 400;
   }
   
   /* ───────── Quote ───────── */
@@ -247,6 +248,9 @@
     margin-top: 3px;
     border-radius: 50%;
     background: #d8315b;
+  }
+  .milestone .dot + div {
+    font-weight: 400;
   }
   
   /* ───────── Team ───────── */
