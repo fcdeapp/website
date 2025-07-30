@@ -233,7 +233,7 @@
 
 /* Hero Hint 텍스트 - 조금 더 아래쪽에 배치, 작게 표시, 파도치듯 투명도 변동 */
 .heroHint {
-  margin-top: 3rem; /* 기존보다 더 아래쪽 배치 */
+  margin-top: 5rem; /* 기존보다 더 아래쪽 배치 */
   font-size: 0.7rem;
   color: #888;
   opacity: 0.4;
@@ -247,7 +247,7 @@
 
 /* Hero Arrows: 두 개 화살표를 세로 배열, 간격 매우 좁게 */
 .heroArrows {
-  margin-top: 1rem;
+  margin-top: 1.8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
