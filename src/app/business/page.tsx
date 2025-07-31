@@ -308,7 +308,7 @@ export default function BusinessPage() {
             Contact us
           </a>
           <a
-            href="/1-pager.pdf"
+            href="/1-pager(EN).pdf"
             download
             className={styles.ctaButton}
           >
