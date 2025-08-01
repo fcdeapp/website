@@ -266,6 +266,11 @@ export default function BusinessPage() {
                 role: "Executive\nCFO",
                 bio: `“I’m here to turn insight into impact — using data and strategy to grow our community sustainably and meaningfully.”`,
             },
+            {
+              name: "Chaewon Kim",
+              role: "Executive\nCMO",
+              bio: `“I turn market insight into growth — leveraging segmentation, content, and influencer campaigns to reach and engage the right users, globally.”`,
+            },      
           ].map((m, i) => (
             <motion.article
               key={m.name}
