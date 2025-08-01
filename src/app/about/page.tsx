@@ -141,9 +141,8 @@ export default function About() {
               </div>
               <div className={styles.cardRight}>
                 <p>
-                “I believe effective marketing starts with a deep understanding of people.<br/>
-                With hands-on experience in social venture marketing and creating content that truly matters, I always take a user-centric approach.<br/>
-                At Abrody, I’m passionate about making our messaging reflect real, everyday language needs—so users feel genuinely connected to what we build.”
+                “I believe effective marketing starts with a deep understanding of people and a user-centric approach.<br/>
+                At Abrody, my goal is to craft messaging that reflects real-life language needs, so users feel truly connected to what we build.”
                 </p>
               </div>
             </div>
