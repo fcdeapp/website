@@ -94,7 +94,7 @@ export default function About() {
           <div className={styles.teamGrid}>
             <div className={styles.teamCard}>
               <div className={styles.cardLeft}>
-                <img src="/about/AbrodyWebIcon.png" alt="Do Jeongmin" className={styles.cardAvatar} />
+                <img src="/about/AbrodyWebIcon.png" alt="Doh Jungmin" className={styles.cardAvatar} />
                 <div className={styles.cardInfo}>
                   <h3>Jungmin Doh</h3>
                   <p className={styles.role}>
@@ -128,15 +128,9 @@ export default function About() {
               </p>
               </div>
             </div>
-            <div className={styles.teamCard} data-aos="fade-up" data-aos-delay="300">
+            <div className={styles.teamCard}>
               <div className={styles.cardLeft}>
-                <Image
-                  src="/about/AbrodyWebIcon.png"
-                  alt="Chaewon Kim"
-                  width={80}
-                  height={80}
-                  className={styles.cardAvatar}
-                />
+                <img src="/about/AbrodyWebIcon.png" alt="Chaewon Kim" className={styles.cardAvatar} />
                 <div className={styles.cardInfo}>
                   <h3>Chaewon Kim</h3>
                   <p className={styles.role}>
