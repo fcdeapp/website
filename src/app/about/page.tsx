@@ -128,6 +128,31 @@ export default function About() {
               </p>
               </div>
             </div>
+            <div className={styles.teamCard} data-aos="fade-up" data-aos-delay="300">
+              <div className={styles.cardLeft}>
+                <Image
+                  src="/about/AbrodyWebIcon.png"
+                  alt="Chaewon Kim"
+                  width={80}
+                  height={80}
+                  className={styles.cardAvatar}
+                />
+                <div className={styles.cardInfo}>
+                  <h3>Chaewon Kim</h3>
+                  <p className={styles.role}>
+                    Executive<br/>
+                    Marketing · Content Strategy
+                  </p>
+                </div>
+              </div>
+              <div className={styles.cardRight}>
+                <p>
+                “I believe effective marketing starts with a deep understanding of people.<br/>
+                With hands-on experience in social venture marketing and creating content that truly matters, I always take a user-centric approach.<br/>
+                At Abrody, I’m passionate about making our messaging reflect real, everyday language needs—so users feel genuinely connected to what we build.”
+                </p>
+              </div>
+            </div>
             {/* Co-Founder & Team Member Recruitment Card */}
             <div className={styles.teamCard}>
             <div className={styles.cardLeft}>
