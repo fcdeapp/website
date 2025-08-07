@@ -16,15 +16,12 @@ export default function Profile() {
     <>
       <Head>
         <title>Founder | JungMin Doh</title>
-        <meta
-          name="description"
-          content="Founder & CEO JungMin Doh’s professional profile"
-        />
+        <meta name="description" content="Founder & CEO JungMin Doh’s professional profile" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <div className={styles.container}>
-        {/* ───── Hero ───── */}
+        {/* ─── Hero ─────────────────────────────────────────── */}
         <section className={styles.hero} data-aos="fade-up">
           <div className={styles.photoWrapper}>
             <Image
@@ -45,28 +42,26 @@ export default function Profile() {
           </div>
         </section>
 
-        {/* ───── Contact ───── */}
+        {/* ─── Contact ─────────────────────────────────────── */}
         <section className={styles.section} data-aos="fade-right">
           <h2>Contact</h2>
           <ul className={styles.contactList}>
-            <li>Email&nbsp;&nbsp;·&nbsp;&nbsp;
-              <a href="mailto:tommydoh@snu.ac.kr">tommydoh@snu.ac.kr</a>
-            </li>
-            <li>Phone&nbsp;&nbsp;·&nbsp;&nbsp;+82&nbsp;10-6854-9906</li>
-            <li>Location&nbsp;&nbsp;·&nbsp;&nbsp;Seocho-gu, Seoul</li>
+            <li>Email&nbsp;·&nbsp;<a href="mailto:tommydoh@snu.ac.kr">tommydoh@snu.ac.kr</a></li>
+            <li>Phone&nbsp;·&nbsp;+82&nbsp;10-6854-9906</li>
+            <li>Location&nbsp;·&nbsp;Seocho-gu, Seoul</li>
           </ul>
         </section>
 
-        {/* ───── Education ───── */}
+        {/* ─── Education ───────────────────────────────────── */}
         <section className={styles.sectionAlt} data-aos="fade-left">
           <h2>Education</h2>
           <div className={styles.card}>
             <p><strong>Seoul National University</strong></p>
-            <p>B.Sc. in Architectural Engineering<br />Expected Feb 2027</p>
+            <p>B.Sc. Architectural Engineering · Expected Feb 2027</p>
           </div>
         </section>
 
-        {/* ───── Skills ───── */}
+        {/* ─── Skills ──────────────────────────────────────── */}
         <section className={styles.section} data-aos="fade-up">
           <h2>Technical Skills</h2>
           <div className={styles.grid}>
@@ -89,7 +84,7 @@ export default function Profile() {
           </div>
         </section>
 
-        {/* ───── Languages ───── */}
+        {/* ─── Languages ───────────────────────────────────── */}
         <section className={styles.sectionAlt} data-aos="fade-up">
           <h2>Languages</h2>
           <ul className={styles.languages}>
@@ -101,56 +96,45 @@ export default function Profile() {
           </ul>
         </section>
 
-        {/* ───── Activities ───── */}
+        {/* ─── Activities ─────────────────────────────────── */}
         <section className={styles.section} data-aos="fade-right">
           <h2>External Activities</h2>
           <div className={styles.card}>
-            <p><strong>SNU Buddy</strong> Jan – Jun 2022 · Design lead for exchange-student guidance</p>
-            <p><strong>Junior Fellow</strong> Mar – Dec 2022 · Japan-focused lectures &amp; discussions</p>
-            <p><strong>MZ Asia</strong> Jun – Nov 2022 · English magazine design &amp; presentation</p>
-            <p><strong>CAD Training</strong> Feb 2022 · ZWCAD winter special lecture</p>
+            <p><strong>SNU Buddy</strong> Jan–Jun 2022 · Design lead</p>
+            <p><strong>Junior Fellow</strong> Mar–Dec 2022 · JP studies</p>
+            <p><strong>MZ Asia</strong> Jun–Nov 2022 · Magazine design</p>
+            <p><strong>CAD Training</strong> Feb 2022 · ZWCAD workshop</p>
           </div>
         </section>
 
-        {/* ───── Courses ───── */}
+        {/* ─── Courses ─────────────────────────────────────── */}
         <section className={styles.sectionAlt} data-aos="fade-left">
           <h2>Courses & Certifications</h2>
           <ul className={styles.list}>
-            <li>Structures in Architecture · Environmental Planning · Materials Mechanics</li>
+            <li>Structures, Environmental Planning, Materials Mechanics</li>
             <li>Advanced English: Drama Workshop (2022-2)</li>
             <li>Research Paper Writing – Concise 20 (Jan 2023)</li>
             <li>JPT 670 (Jan 2022) · HSK 4 (Aug 2021)</li>
           </ul>
         </section>
 
-        {/* ───── Design Report ───── */}
+        {/* ─── Design Report ───────────────────────────────── */}
         <section className={styles.section} data-aos="fade-up">
           <h2>Design Report · Computational Thinking</h2>
           <p className={styles.smallNote}>
-            Basic Studio 4 &nbsp;·&nbsp; “Develop&nbsp;the&nbsp;Koshino House” team project
+            Basic Studio 4&nbsp;—&nbsp;“Develop the Koshino House” team project
           </p>
-
-          {/* PDF previews */}
           <div className={styles.pdfGrid}>
             <figure className={styles.pdfFrame}>
-              <embed
-                src="/downloads/Panel.pdf"
-                type="application/pdf"
-                className={styles.pdf}
-              />
+              <embed src="/downloads/Panel.pdf" type="application/pdf" className={styles.pdf} />
               <figcaption>
                 <a className={styles.downloadLink} href="/downloads/Panel.pdf" download>
                   Download Panel.pdf
                 </a>
               </figcaption>
             </figure>
-
             <figure className={styles.pdfFrame}>
-              <embed
-                src="/downloads/DesignReport.pdf"
-                type="application/pdf"
-                className={styles.pdf}
-              />
+              <embed src="/downloads/DesignReport.pdf" type="application/pdf" className={styles.pdf} />
               <figcaption>
                 <a className={styles.downloadLink} href="/downloads/DesignReport.pdf" download>
                   Download DesignReport.pdf
@@ -160,16 +144,13 @@ export default function Profile() {
           </div>
         </section>
 
-        {/* ───── Military ───── */}
+        {/* ─── Military ───────────────────────────────────── */}
         <section className={styles.sectionAlt} data-aos="fade-left">
           <h2>Military Service</h2>
           <div className={styles.card}>
+            <p><strong>Republic of Korea Army · Bridge Company (Bailey bridge)</strong><br />Jul 2023 – Jan 2025</p>
             <p>
-              <strong>Republic of Korea Army · Bridge Company (Bailey bridge)</strong><br />
-              Jul 2023 – Jan 2025
-            </p>
-            <p>
-              Participated in Bailey bridge assembly and routine training.<br />
+              Participated in Bailey-bridge assembly and training.<br />
               Received a <strong>Division Commander’s Commendation</strong> for a startup idea during service.
             </p>
           </div>

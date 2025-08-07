@@ -1,39 +1,31 @@
-/* ——— Layout & Base ——— */
+/* ——— Base ——— */
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 4rem 2rem;
     font-family: "Pretendard", sans-serif;
     color: #444;
+    font-weight: 300;
     line-height: 1.7;
-    font-weight: 300;              /* lighter overall */
   }
   
-  section {
-    margin-bottom: 4.5rem;         /* generous breathing room */
+  /* global element styles */
+  :global(section) {
+    margin-bottom: 4.5rem;
   }
-  
-  h1,
-  h2,
-  h3 {
+  :global(h1),
+  :global(h2),
+  :global(h3) {
     font-weight: 400;
     letter-spacing: -0.03em;
-  }
-  
-  h2 {
-    font-size: 1.9rem;
-    margin-bottom: 1.4rem;
-    background: linear-gradient(90deg, #d8315b, #f2542d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   
   /* ——— Hero ——— */
   .hero {
     display: flex;
-    align-items: center;
-    gap: 3rem;
     flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
     text-align: center;
   }
   
@@ -43,11 +35,7 @@
     overflow: hidden;
     box-shadow: 0 6px 28px rgba(10, 16, 69, 0.08);
   }
-  
-  .photo {
-    border-radius: 50%;
-    object-fit: cover;
-  }
+  .photo { border-radius: 50%; object-fit: cover; }
   
   .heroText h1 {
     font-size: 2.8rem;
@@ -56,23 +44,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .title   { margin: .4rem 0 .8rem; font-size: 1.15rem; color: #666; font-weight: 500; }
+  .tagline { font-size: 1.05rem; max-width: 420px; margin: 0 auto; }
   
-  .title {
-    margin: 0.4rem 0 0.8rem;
-    font-size: 1.15rem;
-    color: #666;
-    font-weight: 500;
-  }
-  
-  .tagline {
-    font-size: 1.05rem;
-    max-width: 420px;
-    margin: 0 auto;
+  /* ——— Headings ——— */
+  h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.4rem;
+    background: linear-gradient(90deg, #d8315b, #f2542d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   
   /* ——— Cards & Lists ——— */
   .card {
-    background: #ffffff;
+    background: #fff;
     border-radius: 16px;
     padding: 2rem;
     box-shadow: 0 8px 32px rgba(10, 16, 69, 0.06);
@@ -83,7 +69,6 @@
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.8rem;
   }
-  
   .grid h3 {
     margin: 0 0 0.4rem;
     font-size: 1.05rem;
@@ -98,77 +83,43 @@
     padding: 0;
     margin: 0;
   }
-  
   .contactList li,
   .languages li,
-  .list li {
-    margin-bottom: 0.4rem;
-  }
+  .list li { margin-bottom: 0.4rem; }
+  .contactList a { color: #d8315b; text-decoration: none; }
+  .contactList a:hover { text-decoration: underline; }
   
-  .contactList a {
-    color: #d8315b;
-    text-decoration: none;
-  }
-  
-  .contactList a:hover {
-    text-decoration: underline;
-  }
-  
-  /* ——— Alternate Section Background ——— */
+  /* ——— Alt section bg ——— */
   .sectionAlt {
     background: #f7f7f7;
     border-radius: 18px;
     padding: 3rem 2rem;
   }
   
-  /* ——— PDF Previews ——— */
+  /* ——— PDFs ——— */
   .pdfGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
   }
-  
-  .pdfFrame {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.6rem;
-  }
-  
+  .pdfFrame { display: flex; flex-direction: column; gap: .6rem; }
   .pdf {
     width: 100%;
     height: 420px;
     border: 1px solid #e1e1e1;
     border-radius: 8px;
   }
-  
   .downloadLink {
-    align-self: flex-start;
     color: #3c5afe;
     font-weight: 500;
     text-decoration: none;
   }
-  
-  .downloadLink:hover {
-    text-decoration: underline;
-  }
-  
-  .smallNote {
-    margin-top: -0.6rem;
-    margin-bottom: 1.3rem;
-    font-size: 0.92rem;
-    color: #777;
-  }
+  .downloadLink:hover { text-decoration: underline; }
+  .smallNote { margin: -0.6rem 0 1.3rem; font-size: .92rem; color: #777; }
   
   /* ——— Responsive ——— */
   @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      gap: 2rem;
-    }
-  
-    .pdf {
-      height: 360px;
-    }
+    .hero { flex-direction: column; gap: 2rem; }
+    .pdf  { height: 360px; }
   }
   
