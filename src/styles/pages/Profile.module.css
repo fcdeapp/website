@@ -1,186 +1,141 @@
-/* ───────── Base Layout ───────── */
+/* ─── Base Layout ─── */
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 4rem 2rem;
     font-family: "Pretendard", sans-serif;
     color: #444;
-    font-weight: 300;         /* 얇은 서체 */
+    font-weight: 300;
     line-height: 1.7;
   }
   
-  /* ───────── Section Wrapper ───────── */
-  .section {
-    margin-bottom: 4.5rem;
-  }
+  /* ─── Sections ─── */
+  .section,
+  .sectionAlt { margin-bottom: 4rem; }
+  
   .sectionAlt {
-    margin-bottom: 4.5rem;
-    background: #f7f7f7;
-    border-radius: 18px;
+    background: #fafafa;
+    border-radius: 16px;
     padding: 3rem 2rem;
-  }
-
-  .imageWrapper {
-    margin: 2rem 0;
-    text-align: center;
-  }
-  .responsiveImage {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(10, 16, 69, 0.04);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
   }
   
-  /* ───────── Headings ───────── */
+  /* ─── Headings ─── */
   .heading2 {
-    font-size: 1.9rem;
-    margin-bottom: 1.4rem;
+    font-size: 1.85rem;
     font-weight: 400;
-    letter-spacing: -0.03em;
-    background: linear-gradient(90deg, #d8315b, #f2542d);
+    margin-bottom: 1.3rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #3a4b97, #6a84d7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .gridHeading {
-    margin: 0 0 0.4rem;
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: #333;
-  }
   
-  /* ───────── Hero ───────── */
+  .gridHeading { margin: 0 0 0.4rem; font-size: 1.05rem; font-weight: 500; color: #333; }
+  
+  /* ─── Hero ─── */
   .hero {
     display: flex;
-    justify-content: center;      /* 좌우 중앙 정렬 */
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2.5rem;
     text-align: center;
   }
   .photoWrapper {
     flex: 0 0 120px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 6px 28px rgba(10, 16, 69, 0.08);
+    box-shadow: 0 4px 18px rgba(10,16,69,0.08);
   }
-  .photo {
-    border-radius: 50%;
-    object-fit: cover;
-  }
+  .photo { width: 100%; height: auto; display: block; }
   .heroTitle {
-    font-size: 2.8rem;
-    margin: 0;
+    font-size: 2.6rem;
     font-weight: 400;
-    background: linear-gradient(90deg, #d8315b, #f2542d);
+    margin: 0;
+    background: linear-gradient(90deg, #3a4b97, #6a84d7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .title {
-    margin: 0.4rem 0 0.8rem;
-    font-size: 1.15rem;
-    color: #666;
-    font-weight: 500;
-  }
-  .tagline {
-    font-size: 1.05rem;
-    max-width: 420px;
-    margin: 0 auto;
-  }
+  .title    { margin: 0.35rem 0 0.8rem; font-size: 1.1rem; color: #666; font-weight: 500; }
+  .tagline  { font-size: 1.02rem; max-width: 420px; margin: 0 auto; }
   
-  /* ───────── Cards & Grids ───────── */
+  /* ─── Cards & Grid ─── */
   .card {
     background: #fff;
-    border-radius: 16px;
+    border-radius: 14px;
     padding: 2rem;
-    box-shadow: 0 8px 32px rgba(10, 16, 69, 0.06);
+    box-shadow: 0 6px 24px rgba(10,16,69,0.05);
   }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.8rem;
+    gap: 1.6rem;
   }
   
-  /* ───────── Lists ───────── */
+  /* ─── Lists ─── */
   .contactList,
   .languages,
-  .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  .list { list-style: none; padding: 0; margin: 0; }
   .contactList li,
   .languages li,
-  .list li {
-    margin-bottom: 0.4rem;
-  }
-  .contactList a {
-    color: #d8315b;
-    text-decoration: none;
-  }
-  .contactList a:hover {
-    text-decoration: underline;
-  }
+  .list li { margin-bottom: 0.35rem; }
+  .contactList a { color: #3a4b97; text-decoration: none; }
+  .contactList a:hover { text-decoration: underline; }
   
-  /* ───────── PDF Preview ───────── */
-  .pdfGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-  .pdfFrame {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-  }
+  /* ─── PDFs ─── */
+  .pdfGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+  .pdfFrame { display: flex; flex-direction: column; gap: 0.5rem; }
   .pdf {
     width: 100%;
     height: 420px;
-    border: 1px solid #e1e1e1;
+    border: 1px solid #e3e3e3;
     border-radius: 8px;
   }
-  .downloadLink {
-    color: #3c5afe;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  .downloadLink:hover {
-    text-decoration: underline;
-  }
-  .smallNote {
-    margin-top: -0.6rem;
-    margin-bottom: 1.3rem;
-    font-size: 0.92rem;
-    color: #777;
-  }
+  .downloadLink { color: #3c5afe; font-weight: 500; text-decoration: none; }
+  .downloadLink:hover { text-decoration: underline; }
   
-  /* ───────── Ad Section ───────── */
-.adSection {
-    margin-bottom: 4.5rem;
-    text-align: center;
-  }
-  .adText {
-    font-size: 1rem;
-    max-width: 700px;
-    margin: 0 auto 1.5rem;
-    color: #555;
-    font-weight: 300;
-  }
-  .adImage {
+  /* ─── Images ─── */
+  .imageWrapper   { margin: 2rem 0; text-align: center; }
+  .responsiveImage{
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(10,16,69,0.04);
-    display: inline-block;
-  }  
+  }
   
-  /* ───────── Responsive ───────── */
+  /* ─── Abrody Section ─── */
+  .adSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+  }
+  .adTextBlock { flex: 1 1 300px; text-align: left; }
+  .adText {
+    font-size: 1rem;
+    color: #555;
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  .adImage {
+    flex: 0 1 50%;
+    max-width: 50%;
+    min-width: 220px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(10,16,69,0.04);
+  }
+  
+  /* ─── Small Note ─── */
+  .smallNote { margin: -0.55rem 0 1.2rem; font-size: 0.9rem; color: #777; }
+  
+  /* ─── Responsive ─── */
   @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      gap: 2rem;
-    }
-    .pdf {
-      height: 360px;
-    }
+    .hero { flex-direction: column; gap: 2rem; }
+    .adSection { flex-direction: column; text-align: center; }
+    .adImage   { max-width: 100%; }
+    .pdf       { height: 360px; }
   }
   
