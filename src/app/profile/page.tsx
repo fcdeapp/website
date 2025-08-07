@@ -27,13 +27,12 @@ export default function Profile() {
         {/* ─────────────────── Hero ─────────────────── */}
         <section className={styles.hero} data-aos="fade-up">
           <div className={styles.photoWrapper}>
-            <Image
+            <img
               src="/about/jungmin.jpeg"
               alt="JungMin Doh"
-              width={220}
-              height={220}
+              width={120}
+              height={120}
               className={styles.photo}
-              priority
             />
           </div>
           <div className={styles.heroText}>
@@ -200,6 +199,25 @@ export default function Profile() {
             </p>
           </div>
         </section>
+
+        {/* ───── Simulation & Modeling ───── */}
+        <section className={styles.section} data-aos="fade-up">
+        <h2 className={styles.heading2}>Simulation & Modeling</h2>
+        <p className={styles.smallNote}>
+            Excel VBA / 2D Modeling I: U‐value, Thermal bridge analysis / Building energy simulation
+        </p>
+        <div className={styles.imageWrapper}>
+            <Image
+            src="/images/BuildingThermalLoad.png"
+            alt="Building Thermal Load Diagram"
+            width={800}
+            height={450}
+            className={styles.responsiveImage}
+            priority
+            />
+        </div>
+        </section>
+
       </div>
     </>
   );

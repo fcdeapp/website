@@ -19,6 +19,17 @@
     border-radius: 18px;
     padding: 3rem 2rem;
   }
+
+  .imageWrapper {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .responsiveImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(10, 16, 69, 0.04);
+  }
   
   /* ───────── Headings ───────── */
   .heading2 {
