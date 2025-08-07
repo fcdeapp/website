@@ -1,0 +1,148 @@
+/* src/styles/pages/Profile.module.css */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    font-family: "Pretendard", sans-serif;
+    color: #333;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .photoWrapper {
+    flex: 0 0 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(10, 16, 69, 0.1);
+  }
+  
+  .photo {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .heroText h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #666;
+    margin: 0.2rem 0 1rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .section,
+  .sectionAlt {
+    margin-bottom: 3rem;
+  }
+  
+  .section h2,
+  .sectionAlt h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .section p,
+  .sectionAlt p,
+  .section li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .sectionAlt {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 16px;
+  }
+  
+  .contactList,
+  .languages,
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contactList li,
+  .languages li,
+  .list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contactList a {
+    color: #D8315B;
+    text-decoration: none;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(10, 16, 69, 0.05);
+    padding: 1.5rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .grid h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .grid p {
+    margin: 0.3rem 0 0;
+  }
+
+  .downloadList {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+  }
+  .downloadLink {
+    color: #3c5afe;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .downloadLink:hover {
+    text-decoration: underline;
+  }
+  .smallNote {
+    margin: 0 0 0.6rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+    .photoWrapper {
+      margin: 0 auto;
+    }
+  }
+  

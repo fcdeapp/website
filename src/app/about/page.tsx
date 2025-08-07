@@ -148,22 +148,22 @@ export default function About() {
             </div>
             {/* Co-Founder & Team Member Recruitment Card */}
             <div className={styles.teamCard}>
-            <div className={styles.cardLeft}>
-                <img
-                  src="/about/FoxIconWithoutEyes.png"
-                  alt="Join Our Founding Team"
-                  className={styles.cardAvatar}
-                />
-              <div className={styles.cardInfo}>
-                <h3>Join Our Founding Team</h3>
-                <p className={styles.role}>-</p>
+              <div className={styles.cardLeft}>
+                  <img
+                    src="/about/FoxIconWithoutEyes.png"
+                    alt="Join Our Founding Team"
+                    className={styles.cardAvatar}
+                  />
+                <div className={styles.cardInfo}>
+                  <h3>Join Our Founding Team</h3>
+                  <p className={styles.role}>-</p>
+                </div>
               </div>
-            </div>
-            <div className={styles.cardRight}>
-              <p>
-                Abrody is now run by a two-person founding team, and we’re excited to welcome new co-founders or teammates in marketing, design, or development who want to build something meaningful from the ground up with us!
-              </p>
-            </div>
+              <div className={styles.cardRight}>
+                <p>
+                  Abrody is now run by a two-person founding team, and we’re excited to welcome new co-founders or teammates in marketing, design, or development who want to build something meaningful from the ground up with us!
+                </p>
+              </div>
             </div>
           </div>
         </section>
