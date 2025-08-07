@@ -25,9 +25,6 @@ export default function Profile() {
           <div className={styles.heroText}>
             <h1 className={styles.heroTitle}>JungMin Doh</h1>
             <p className={styles.title}>Founder&nbsp;&amp;&nbsp;CEO</p>
-            <p className={styles.tagline}>
-              “Building bridges between real life&nbsp;and&nbsp;language learning.”
-            </p>
           </div>
           <div className={styles.photoWrapper}>
             <img

@@ -108,6 +108,9 @@ export default function About() {
                 “I believe learning should feel like living, not just studying.<br/>
                 As a developer and designer, I built Abrody to finally make language apps as engaging as our daily lives — creative, practical, and genuinely helpful.”
               </p>
+               <a href="/ceo-profile" className={styles.learnMore}>
+                 Learn more
+               </a>
               </div>
             </div>
             <div className={styles.teamCard}>
