@@ -217,6 +217,22 @@ export default function Profile() {
         </div>
         </section>
 
+        {/* ───────────── About Abrody ───────────── */}
+        <section className={styles.adSection} data-aos="fade-up">
+        <h2 className={styles.heading2}>About Abrody</h2>
+        <p className={styles.adText}>
+            Abrody turns your real-life conversations into interactive, AI-powered
+            language quizzes—making learning truly personal and engaging.
+        </p>
+        <div className={styles.imageWrapper}>
+            <img
+            src="/images/Ads250806EN.jpg"
+            alt="Abrody Advertisement"
+            className={styles.adImage}
+            />
+        </div>
+        </section>
+
       </div>
     </>
   );

@@ -51,9 +51,10 @@
   /* ───────── Hero ───────── */
   .hero {
     display: flex;
+    justify-content: center;      /* 좌우 중앙 정렬 */
+    align-items: center;
     flex-wrap: wrap;
     gap: 3rem;
-    align-items: center;
     text-align: center;
   }
   .photoWrapper {
@@ -151,6 +152,26 @@
     font-size: 0.92rem;
     color: #777;
   }
+  
+  /* ───────── Ad Section ───────── */
+.adSection {
+    margin-bottom: 4.5rem;
+    text-align: center;
+  }
+  .adText {
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    color: #555;
+    font-weight: 300;
+  }
+  .adImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(10,16,69,0.04);
+    display: inline-block;
+  }  
   
   /* ───────── Responsive ───────── */
   @media (max-width: 768px) {
