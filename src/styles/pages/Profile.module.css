@@ -1,79 +1,94 @@
-/* src/styles/pages/Profile.module.css */
+/* ——— Layout & Base ——— */
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 3rem 1.5rem;
+    padding: 4rem 2rem;
     font-family: "Pretendard", sans-serif;
-    color: #333;
+    color: #444;
+    line-height: 1.7;
+    font-weight: 300;              /* lighter overall */
   }
   
+  section {
+    margin-bottom: 4.5rem;         /* generous breathing room */
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-weight: 400;
+    letter-spacing: -0.03em;
+  }
+  
+  h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.4rem;
+    background: linear-gradient(90deg, #d8315b, #f2542d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* ——— Hero ——— */
   .hero {
     display: flex;
     align-items: center;
+    gap: 3rem;
     flex-wrap: wrap;
-    gap: 2rem;
     text-align: center;
-    margin-bottom: 4rem;
   }
   
   .photoWrapper {
-    flex: 0 0 200px;
+    flex: 0 0 220px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(10, 16, 69, 0.1);
+    box-shadow: 0 6px 28px rgba(10, 16, 69, 0.08);
   }
   
   .photo {
-    object-fit: cover;
     border-radius: 50%;
+    object-fit: cover;
   }
   
   .heroText h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin: 0;
-    background: linear-gradient(to right, #D8315B, #F2542D);
+    background: linear-gradient(90deg, #d8315b, #f2542d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
   .title {
-    font-size: 1.1rem;
-    font-weight: 600;
+    margin: 0.4rem 0 0.8rem;
+    font-size: 1.15rem;
     color: #666;
-    margin: 0.2rem 0 1rem;
+    font-weight: 500;
   }
   
   .tagline {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
+    font-size: 1.05rem;
+    max-width: 420px;
+    margin: 0 auto;
   }
   
-  .section,
-  .sectionAlt {
-    margin-bottom: 3rem;
-  }
-  
-  .section h2,
-  .sectionAlt h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(to right, #D8315B, #F2542D);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .section p,
-  .sectionAlt p,
-  .section li {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  .sectionAlt {
-    background: #f9f9f9;
-    padding: 2rem;
+  /* ——— Cards & Lists ——— */
+  .card {
+    background: #ffffff;
     border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(10, 16, 69, 0.06);
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.8rem;
+  }
+  
+  .grid h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #333;
   }
   
   .contactList,
@@ -87,62 +102,73 @@
   .contactList li,
   .languages li,
   .list li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
   }
   
   .contactList a {
-    color: #D8315B;
+    color: #d8315b;
     text-decoration: none;
   }
   
-  .card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 24px rgba(10, 16, 69, 0.05);
-    padding: 1.5rem;
+  .contactList a:hover {
+    text-decoration: underline;
   }
   
-  .grid {
+  /* ——— Alternate Section Background ——— */
+  .sectionAlt {
+    background: #f7f7f7;
+    border-radius: 18px;
+    padding: 3rem 2rem;
+  }
+  
+  /* ——— PDF Previews ——— */
+  .pdfGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
   }
   
-  .grid h3 {
-    margin-top: 0;
-    font-size: 1.1rem;
-    color: #444;
+  .pdfFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.6rem;
   }
   
-  .grid p {
-    margin: 0.3rem 0 0;
+  .pdf {
+    width: 100%;
+    height: 420px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
   }
-
-  .downloadList {
-    list-style: none;
-    padding: 0;
-    margin: 0.5rem 0 0;
-  }
+  
   .downloadLink {
+    align-self: flex-start;
     color: #3c5afe;
+    font-weight: 500;
     text-decoration: none;
-    font-weight: 600;
   }
+  
   .downloadLink:hover {
     text-decoration: underline;
   }
+  
   .smallNote {
-    margin: 0 0 0.6rem;
-    font-size: 0.9rem;
-    color: #666;
+    margin-top: -0.6rem;
+    margin-bottom: 1.3rem;
+    font-size: 0.92rem;
+    color: #777;
   }
   
+  /* ——— Responsive ——— */
   @media (max-width: 768px) {
     .hero {
       flex-direction: column;
+      gap: 2rem;
     }
-    .photoWrapper {
-      margin: 0 auto;
+  
+    .pdf {
+      height: 360px;
     }
   }
   
