@@ -36,11 +36,15 @@
   /* ─── Hero ─── */
   .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;  /* 이미지 우측 정렬 */
     align-items: center;
     flex-wrap: wrap;
-    gap: 2.5rem;
-    text-align: center;
+    gap: 2rem;
+  }
+  .heroText {
+    flex: 1 1 auto;
+    text-align: left;                /* 텍스트 좌측 정렬 */
+    max-width: 600px;                /* 너비 제한 선택 사항 */
   }
   .photoWrapper {
     flex: 0 0 120px;
