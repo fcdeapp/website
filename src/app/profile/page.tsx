@@ -207,13 +207,12 @@ export default function Profile() {
             Excel VBA / 2D Modeling I: U‐value, Thermal bridge analysis / Building energy simulation
         </p>
         <div className={styles.imageWrapper}>
-            <Image
-            src="/images/BuildingThermalLoad.png"
-            alt="Building Thermal Load Diagram"
-            width={800}
-            height={450}
-            className={styles.responsiveImage}
-            priority
+            <img
+                src="/images/BuildingThermalLoad.png"
+                alt="Building Thermal Load Diagram"
+                width={800}
+                height={450}
+                className={styles.responsiveImage}
             />
         </div>
         </section>
