@@ -27,16 +27,16 @@ export default function Home() {
   ]);
 
   const journeyItems: CarouselItem[] = [
-    { label: "1", image: "/journey/AppStoreImageiPhoneEN2507161.jpg" },
-    { label: "2", image: "/journey/AppStoreImageiPhoneEN2507162.jpg" },
-    { label: "3", image: "/journey/AppStoreImageiPhoneEN2507163.jpg" },
-    { label: "4", image: "/journey/AppStoreImageiPhoneEN2507164.jpg" },
-    { label: "5", image: "/journey/AppStoreImageiPhoneEN2507165.jpg" },
-    { label: "6", image: "/journey/AppStoreImageiPhoneEN2507166.jpg" },
-    { label: "7", image: "/journey/AppStoreImageiPhoneEN2507167.jpg" },
-    { label: "8", image: "/journey/AppStoreImageiPhoneEN2507168.jpg" },
-    { label: "9", image: "/journey/AppStoreImageiPhoneEN2507169.jpg" },
-    { label: "10", image: "/journey/AppStoreImageiPhoneEN25071610.jpg" },
+    { label: "1", image: "/journey/AppStoreImageiPhoneEN2508111.jpg" },
+    { label: "2", image: "/journey/AppStoreImageiPhoneEN2508112.jpg" },
+    { label: "3", image: "/journey/AppStoreImageiPhoneEN2508113.jpg" },
+    { label: "4", image: "/journey/AppStoreImageiPhoneEN2508114.jpg" },
+    { label: "5", image: "/journey/AppStoreImageiPhoneEN2508115.jpg" },
+    { label: "6", image: "/journey/AppStoreImageiPhoneEN2508116.jpg" },
+    { label: "7", image: "/journey/AppStoreImageiPhoneEN2508117.jpg" },
+    { label: "8", image: "/journey/AppStoreImageiPhoneEN2508118.jpg" },
+    { label: "9", image: "/journey/AppStoreImageiPhoneEN2508119.jpg" },
+    { label: "10", image: "/journey/AppStoreImageiPhoneEN25081110.jpg" },
   ];
 
   //--- 상태 관리 ---
