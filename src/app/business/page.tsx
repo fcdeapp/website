@@ -293,40 +293,6 @@ export default function BusinessPage() {
         </motion.div>
       </section>
 
-      {/* ── CTA ───────────────────────────────────────── */}
-      <section className={styles.ctaSection}>
-        <motion.h2
-          className={styles.ctaTitle}
-          variants={zoomIn}
-          viewport={{ once: true, amount: 0.55 }}
-        >
-          Ready to rewrite language learning?
-        </motion.h2>
-
-        <div className={styles.ctaButtons}>
-          <a
-            href="mailto:tommydoh@abrody.app"
-            className={styles.ctaButton}
-            onClick={e => {
-              e.preventDefault();
-              window.location.href = "mailto:tommydoh@abrody.app";
-            }}
-          >
-            Contact us
-          </a>
-          <a
-            href="/1-pager(EN).pdf"
-            download
-            className={styles.ctaButton}
-          >
-            Download 1‑Pager
-          </a>
-        </div>
-        <p className={styles.ctaNote}>
-          We are currently raising pre‑seed to seed funding. Please reach out if you’d like to chat!
-        </p>
-      </section>
-
       <section className={styles.downloadSection}>
         <h3 className={styles.downloadTitle}>Downloads</h3>
         <div className={styles.downloadGrid}>
@@ -377,6 +343,31 @@ export default function BusinessPage() {
               </a>
             </div>
           </motion.article>
+
+          {/* 1-Pager (EN) Card */}
+          <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.12}}>
+            <div className={styles.dHead}>
+              <h4 className={styles.dTitle}>1-Pager</h4>
+              <span className={styles.dMeta}>PDF · English</span>
+            </div>
+            <p className={styles.dDesc}>A one-page overview of Abrody’s mission, product, and traction.</p>
+            <div className={styles.actions}>
+              <button
+                className={`${styles.btn} ${styles.btnPrimary}`}
+                onClick={() => setPreview({ type: "pdf", src: "/1-pager(EN).pdf" })}
+              >
+                Preview
+              </button>
+              <a
+                href="/1-pager(EN).pdf"
+                download
+                className={`${styles.btn} ${styles.btnGhost}`}
+              >
+                Download
+              </a>
+            </div>
+          </motion.article>
+
         </div>
       </section>
 
@@ -415,6 +406,33 @@ export default function BusinessPage() {
         </motion.div>
       </motion.div>
     )}
+    
+     {/* ── CTA ───────────────────────────────────────── */}
+     <section className={styles.ctaSection}>
+        <motion.h2
+          className={styles.ctaTitle}
+          variants={zoomIn}
+          viewport={{ once: true, amount: 0.55 }}
+        >
+          Ready to rewrite language learning?
+        </motion.h2>
+
+        <div className={styles.ctaButtons}>
+          <a
+            href="mailto:tommydoh@abrody.app"
+            className={styles.ctaButton}
+            onClick={e => {
+              e.preventDefault();
+              window.location.href = "mailto:tommydoh@abrody.app";
+            }}
+          >
+            Contact us
+          </a>
+        </div>
+        <p className={styles.ctaNote}>
+          We are currently raising pre‑seed to seed funding. Please reach out if you’d like to chat!
+        </p>
+      </section>
 
     </motion.main>
   );
