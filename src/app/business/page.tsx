@@ -311,6 +311,14 @@ export default function BusinessPage() {
                 Preview
               </button>
               <a
+                className={`${styles.btn} ${styles.btnGhost}`}
+                href={encodeURI("/(주)파사드커넥트_도정민_피치덱.pdf")}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in new tab
+              </a>
+              <a
                 href="/(주)파사드커넥트_도정민_피치덱.pdf"
                 download
                 className={`${styles.btn} ${styles.btnGhost}`}
@@ -335,6 +343,14 @@ export default function BusinessPage() {
                 Preview
               </button>
               <a
+                className={`${styles.btn} ${styles.btnGhost}`}
+                href={encodeURI("/demoAbrody.mp4")}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in new tab
+              </a>
+              <a
                 href="/demoAbrody.mp4"
                 download
                 className={`${styles.btn} ${styles.btnGhost}`}
@@ -352,14 +368,6 @@ export default function BusinessPage() {
             </div>
             <p className={styles.dDesc}>A one-page overview of Abrody’s mission, product, and traction.</p>
             <div className={styles.actions}>
-            <a
-              className={`${styles.btn} ${styles.btnGhost}`}
-              href={encodeURI("/1-pager(EN).pdf")}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open in new tab
-            </a>
               <a
                 href="/1-pager(EN).pdf"
                 download
