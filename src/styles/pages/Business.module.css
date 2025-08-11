@@ -7,6 +7,46 @@
     color: #333;
     line-height: 1.6;
   }
+  .downloadSection {
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: 4rem 1.25rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+  }
+  
+  .downloadTitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #444;
+  }
+  
+  .downloadButtons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .downloadButton {
+    background: #110c2b;
+    color: #fff;
+    padding: 0.95rem 1.6rem;
+    border-radius: 22px;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .downloadButton:hover { transform: translateY(-2px); }
+  .downloadNote {
+    font-size: 0.9rem;
+    color: #666;
+    opacity: 0.9;
+  }  
   
   /* ───────── Hero ───────── */
   @keyframes gradientShift {

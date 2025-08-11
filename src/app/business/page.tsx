@@ -143,9 +143,9 @@ export default function BusinessPage() {
         custom={3}
         viewport={{ once: true, amount: 0.4 }}
         >
-        CTL‑based instruction lifts speaking clarity by{" "}
-        <FlipNumber target="54 %" duration={1400} /> and fluency by{" "}
-        <FlipNumber target="65 %" duration={1400} />. Abrody automates CTL
+        CTL-based instruction lifts speaking clarity by
+        <span className={styles.animatedNumber}>54%</span> and fluency by
+        <span className={styles.animatedNumber}>65%</span>. Abrody automates CTL
         everywhere. <em>— Yusyac et al., 2021</em>
         </motion.blockquote>
       </section>
@@ -324,6 +324,28 @@ export default function BusinessPage() {
           We are currently raising pre‑seed to seed funding. Please reach out if you’d like to chat!
         </p>
       </section>
+
+      {/* ── Downloads (Bottom) ───────────────────────── */}
+      <section className={styles.downloadSection}>
+        <h3 className={styles.downloadTitle}>자료 다운로드</h3>
+        <div className={styles.downloadButtons}>
+          <a
+            href="/(주)파사드커넥트_도정민_피치덱.pdf"
+            download
+            className={styles.downloadButton}
+          >
+            Download Pitch Deck (PDF, KR)
+          </a>
+          <a
+            href="/demoAbrody.mp4"
+            download
+            className={styles.downloadButton}
+          >
+            Download Demo Video (MP4)
+          </a>
+        </div>
+      </section>
+
     </motion.main>
   );
 }
