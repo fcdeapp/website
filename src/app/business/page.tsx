@@ -352,12 +352,9 @@ export default function BusinessPage() {
             </div>
             <p className={styles.dDesc}>A one-page overview of Abrody’s mission, product, and traction.</p>
             <div className={styles.actions}>
-              <button
-                className={`${styles.btn} ${styles.btnPrimary}`}
-                onClick={() => setPreview({ type: "pdf", src: "/1-pager(EN).pdf" })}
-              >
-                Preview
-              </button>
+              <a className={`${styles.btn} ${styles.btnGhost}`} href={encodeURI(preview.src)} target="_blank" rel="noopener noreferrer">
+                Open in new tab
+              </a>
               <a
                 href="/1-pager(EN).pdf"
                 download
@@ -388,7 +385,7 @@ export default function BusinessPage() {
           <button className={styles.modalClose} onClick={() => setPreview(null)}>✕</button>
           {preview.type === "pdf" ? (
             <iframe
-              className={styles.previewFrame}
+              className={styles.previewFrame} 
               src={preview.src}
               title="Pitch Deck Preview"
             />
@@ -406,7 +403,7 @@ export default function BusinessPage() {
         </motion.div>
       </motion.div>
     )}
-    
+
      {/* ── CTA ───────────────────────────────────────── */}
      <section className={styles.ctaSection}>
         <motion.h2
