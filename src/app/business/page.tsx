@@ -43,6 +43,8 @@ const numberVariant: Variants = {
   };
 
 export default function BusinessPage() {
+  const [preview, setPreview] = React.useState<null | { type: "pdf" | "video"; src: string }>(null);
+
   return (
     <motion.main
       className={styles.wrapper}
@@ -325,26 +327,94 @@ export default function BusinessPage() {
         </p>
       </section>
 
-      {/* ── Downloads (Bottom) ───────────────────────── */}
       <section className={styles.downloadSection}>
-        <h3 className={styles.downloadTitle}>자료 다운로드</h3>
-        <div className={styles.downloadButtons}>
-          <a
-            href="/(주)파사드커넥트_도정민_피치덱.pdf"
-            download
-            className={styles.downloadButton}
-          >
-            Download Pitch Deck (PDF, KR)
-          </a>
-          <a
-            href="/demoAbrody.mp4"
-            download
-            className={styles.downloadButton}
-          >
-            Download Demo Video (MP4)
-          </a>
+        <h3 className={styles.downloadTitle}>Downloads</h3>
+        <div className={styles.downloadGrid}>
+          {/* Pitch Deck Card */}
+          <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
+            <div className={styles.dHead}>
+              <h4 className={styles.dTitle}>Pitch Deck</h4>
+              <span className={styles.dMeta}>PDF · Korean</span>
+            </div>
+            <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
+            <div className={styles.actions}>
+              <button
+                className={`${styles.btn} ${styles.btnPrimary}`}
+                onClick={() => setPreview({ type: "pdf", src: "/(주)파사드커넥트_도정민_피치덱.pdf" })}
+              >
+                Preview
+              </button>
+              <a
+                href="/(주)파사드커넥트_도정민_피치덱.pdf"
+                download
+                className={`${styles.btn} ${styles.btnGhost}`}
+              >
+                Download
+              </a>
+            </div>
+          </motion.article>
+
+          {/* Demo Video Card */}
+          <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.06}}>
+            <div className={styles.dHead}>
+              <h4 className={styles.dTitle}>Demo Video</h4>
+              <span className={styles.dMeta}>MP4 · English</span>
+            </div>
+            <p className={styles.dDesc}>A quick walkthrough of Abrody’s core user flow and features.</p>
+            <div className={styles.actions}>
+              <button
+                className={`${styles.btn} ${styles.btnPrimary}`}
+                onClick={() => setPreview({ type: "video", src: "/demoAbrody.mp4" })}
+              >
+                Preview
+              </button>
+              <a
+                href="/demoAbrody.mp4"
+                download
+                className={`${styles.btn} ${styles.btnGhost}`}
+              >
+                Download
+              </a>
+            </div>
+          </motion.article>
         </div>
       </section>
+
+    {/* ── Preview Modal ───────────────────────────── */}
+    {preview && (
+      <motion.div
+        className={styles.modalBackdrop}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        onClick={() => setPreview(null)}
+      >
+        <motion.div
+          className={styles.modalBody}
+          initial={{ scale: 0.96, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button className={styles.modalClose} onClick={() => setPreview(null)}>✕</button>
+          {preview.type === "pdf" ? (
+            <iframe
+              className={styles.previewFrame}
+              src={preview.src}
+              title="Pitch Deck Preview"
+            />
+          ) : (
+            <video className={styles.previewVideo} src={preview.src} controls playsInline />
+          )}
+          <div className={styles.modalActions}>
+            <a className={`${styles.btn} ${styles.btnPrimary}`} href={preview.src} download>
+              Download
+            </a>
+            <button className={`${styles.btn} ${styles.btnGhost}`} onClick={() => setPreview(null)}>
+              Close
+            </button>
+          </div>
+        </motion.div>
+      </motion.div>
+    )}
 
     </motion.main>
   );
