@@ -352,9 +352,14 @@ export default function BusinessPage() {
             </div>
             <p className={styles.dDesc}>A one-page overview of Abrody’s mission, product, and traction.</p>
             <div className={styles.actions}>
-              <a className={`${styles.btn} ${styles.btnGhost}`} href={encodeURI(preview.src)} target="_blank" rel="noopener noreferrer">
-                Open in new tab
-              </a>
+            <a
+              className={`${styles.btn} ${styles.btnGhost}`}
+              href={encodeURI("/1-pager(EN).pdf")}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open in new tab
+            </a>
               <a
                 href="/1-pager(EN).pdf"
                 download
