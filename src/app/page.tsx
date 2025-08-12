@@ -217,11 +217,6 @@ export default function Home() {
           </section>
 
           <section className={styles.section} data-aos="fade-up">
-            <h2 className={styles.sectionTitle}>Speak. Chat. Master.</h2>
-            <p className={styles.sectionText}>
-              Chat with friends or AI.  
-              Your mistakes turn into personalized quizzes — learning that actually sticks. 
-            </p>
             <img
               src="/images/Ads250812EN.jpg"
               alt="Speak. Chat. Master."
