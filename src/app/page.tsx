@@ -223,7 +223,7 @@ export default function Home() {
               Your mistakes turn into personalized quizzes — learning that actually sticks. 
             </p>
             <img
-              src="/images/WebInfo.jpg"
+              src="/images/Ads250811EN.jpg"
               alt="Speak. Chat. Master."
               className={styles.recordButtonImage}
             />

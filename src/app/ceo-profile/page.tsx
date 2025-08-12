@@ -164,7 +164,7 @@ export default function Profile() {
             </p>
           </div>
           <img
-            src="/images/Ads250806EN.jpg"
+            src="/images/Ads250811EN.jpg"
             alt="Abrody Advertisement"
             className={styles.adImage}
           />
