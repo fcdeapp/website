@@ -104,15 +104,12 @@ export default function Home() {
         <meta name="twitter:description" content="With Abrody, every chat turns into personalized quizzes—learn smarter, see real progress, and enjoy language learning." />
         <meta name="twitter:image"       content="https://website.fcde.app/og-image.jpg" />
         <meta name="twitter:image:alt"   content="Abrody | Connecting People Abroad" />
-
-        {/* Keep your responsive viewport if you want */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <div className={styles.container}>
-        {/* Hero */}
-        <header className={styles.hero} data-aos="fade-in">
-          <div className={styles.heroOverlay}>
+      <header className={`${styles.hero} ${styles.heroBrand}`} data-aos="fade-in">
+        <div className={styles.starfield} aria-hidden />
+        <div className={styles.heroOverlay}>
             <h1 className={styles.title} data-aos="fade-up">
               The Easiest Way to Learn&nbsp;
               <AnimatePresence mode="wait">
@@ -151,64 +148,70 @@ export default function Home() {
         </header>
 
         <main className={styles.main}>
-          <div className={styles.journeyHeader}>
+        <div className={styles.journeyHeader}>
+          <span className={styles.sectionKicker}>How it works</span>
           <h2 className={styles.sectionTitle}>
             Learn from Your Own Words, Not Someone Else’s
           </h2>
-          <p className={styles.sectionSubtitle}>
-            Abrody transforms your real conversations into personalized quizzes.  
+          <p className={styles.sectionLead}>
+            Abrody transforms your real conversations into personalized quizzes.
             Progress you can feel, every day.
           </p>
-          </div>
-          <motion.div className={styles.journeyContainer} layout>
-            {journeyOrder.slice(0, 5).map((item) => (
-              <motion.div
-                key={item.label}
-                className={styles.journeyItemContainer}
-                layout
-                transition={{ duration: 0.6, ease: "easeInOut" }}
-              >
-                <img
-                  src={item.image}
-                  alt={item.label}
-                  className={styles.carouselImage}
-                />
-              </motion.div>
-            ))}
-          </motion.div>
+        </div>
+
+        <motion.div className={styles.journeyContainer} layout>
+          {journeyOrder.slice(0, 5).map((item) => (
+            <motion.div
+              key={item.label}
+              className={`${styles.journeyItemContainer} ${styles.card}`}
+              layout
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+              whileHover={{ y: -6 }}
+            >
+              <img
+                src={item.image}
+                alt={`App journey screen ${item.label}`}
+                className={styles.carouselImage}
+                loading="lazy"
+              />
+            </motion.div>
+          ))}
+        </motion.div>
 
           {/* App Demo Videos */}
           <section className={styles.section} data-aos="fade-up">
-            <h2 className={styles.sectionTitle}>App Demo</h2>
-            <p className={styles.sectionSubtitleSmall}>
-              See how Abrody turns every chat into a quiz made just for you.  
-              Speak, make mistakes, and learn naturally — it’s all automatic.
-            </p>
-            <motion.div
-              className={styles.demoVideosContainer}
-              layout
-            >
+            <div className={styles.sectionHead}>
+              <span className={styles.sectionKicker}>Product</span>
+              <h2 className={styles.sectionTitle}>App Demo</h2>
+              <p className={styles.sectionLeadSmall}>
+                See how Abrody turns every chat into a quiz made just for you. 
+                Speak, make mistakes, and learn naturally — it’s all automatic.
+              </p>
+            </div>
+
+            <motion.div className={`${styles.demoVideosContainer} ${styles.demoRail}`} layout>
               {videoOrder.map((src) => (
-                <motion.video
-                  key={src}
-                  className={styles.demoVideo}
-                  src={src}
-                  autoPlay
-                  muted
-                  playsInline
-                  loop
-                  preload="metadata"
-                  layout
-                  transition={{ layout: { duration: 0.8, ease: "easeInOut" } }}
-                />
+                <motion.div key={src} className={styles.videoCard} layout>
+                  <motion.video
+                    className={styles.demoVideo}
+                    src={src}
+                    autoPlay
+                    muted
+                    playsInline
+                    loop
+                    preload="metadata"
+                    layout
+                    transition={{ layout: { duration: 0.8, ease: "easeInOut" } }}
+                  />
+                </motion.div>
               ))}
             </motion.div>
           </section>
 
-          <section className={styles.section} data-aos="fade-up">
+          <section className={styles.edgeVideoSection} data-aos="fade-up">
             <video
               src="/videos/GoogleAdsProject250617.mp4"
-              className={styles.fullscreenVideo}
+              className={styles.edgeVideo}
               autoPlay
               muted
               loop
@@ -225,17 +228,20 @@ export default function Home() {
           </section>
 
           <section className={styles.betaSection} data-aos="fade-up">
-            <div className={styles.betaCard}>
-              <h2 className={styles.betaTitle}>Install on iOS</h2>
-              <p className={styles.betaSubtitle}>
-                Available for Canada, Australia, UK &amp; Korea
-              </p>
+            <div className={`${styles.betaCard} ${styles.glassCard}`}>
+              <div className={styles.sectionHead}>
+                <span className={styles.sectionKicker}>Download</span>
+                <h2 className={styles.betaTitle}>Install on iOS</h2>
+                <p className={styles.betaSubtitle}>
+                  Available for Canada, Australia, UK &amp; Korea
+                </p>
+              </div>
               <div className={styles.ctaButtons}>
                 <a
                   href="https://apps.apple.com/ca/app/id6743047157"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.ctaButton}
+                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
                 >
                   Canada
                 </a>
@@ -243,7 +249,7 @@ export default function Home() {
                   href="https://apps.apple.com/au/app/id6743047157"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.ctaButton}
+                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
                 >
                   Australia
                 </a>
@@ -251,7 +257,7 @@ export default function Home() {
                   href="https://apps.apple.com/gb/app/id6743047157"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.ctaButton}
+                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
                 >
                   UK
                 </a>
@@ -259,7 +265,7 @@ export default function Home() {
                   href="https://apps.apple.com/kr/app/id6743047157"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.ctaButton}
+                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
                 >
                   Korea
                 </a>
@@ -267,19 +273,21 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Beta Section */}
           <section className={styles.betaSection} data-aos="fade-up">
-            <div className={styles.betaCard}>
-              <h2 className={styles.betaTitle}>Android Beta Test</h2>
-              <p className={styles.betaSubtitle}>
-                Help shape Abrody by testing upcoming features before anyone else — your feedback matters!
-              </p>
+            <div className={`${styles.betaCard} ${styles.glassCard}`}>
+              <div className={styles.sectionHead}>
+                <span className={styles.sectionKicker}>Early Access</span>
+                <h2 className={styles.betaTitle}>Android Beta Test</h2>
+                <p className={styles.betaSubtitle}>
+                  Help shape Abrody by testing upcoming features before anyone else — your feedback matters!
+                </p>
+              </div>
               <div className={styles.ctaButtons}>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.ctaButton}
+                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
                 >
                   Apply for Beta (KR)
                 </a>
@@ -287,7 +295,7 @@ export default function Home() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSe489LaaOkRxUXYFx64aEee5Q5_IhKmMPKrb6--P8sSrHNGfQ/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.ctaButton}
+                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
                 >
                   Apply for Beta (EN)
                 </a>
