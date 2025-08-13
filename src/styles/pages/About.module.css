@@ -518,3 +518,66 @@
     }
   }
   
+  /* 공통 섹션 헤더 패턴 */
+.sectionHeader { text-align: center; max-width: 64rem; margin: 0 auto; }
+.sectionKicker {
+  display:inline-block; margin-bottom:.5rem; font-size:.9rem; letter-spacing:.12em;
+  text-transform:uppercase; color:#d8315b; background:rgba(216,49,91,.08);
+  padding:.25rem .6rem; border-radius:999px;
+}
+.sectionTitle { font-size:2.2rem; font-weight:300; color:#555; margin:0.2rem 0; }
+.sectionLead { font-size:1.05rem; color:#666; line-height:1.75; margin: .6rem auto 0; }
+
+/* 스크롤 힌트 */
+.scrollHint {
+  display:inline-block; margin-top:1.75rem; font-size:1rem; color:#999; text-decoration:none;
+  transition: transform .2s ease, color .2s ease;
+}
+.scrollHint:hover { color:#666; transform: translateY(2px); }
+
+/* Diff 그리드/카드 (Business와 톤 일치) */
+.diffGrid {
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap:1.4rem; max-width:78rem; margin:2rem auto 0;
+}
+.diffCard {
+  background:#fff; border-radius:20px; padding:1.6rem 1.4rem;
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.diffCard h3 { font-size:1.05rem; color:#d8315b; margin-bottom:.5rem; font-weight:500; }
+.diffCard p { font-size:.97rem; color:#4a4a4a; line-height:1.55; }
+
+/* Flow (Business ‘How it works’와 톤 맞춤) */
+.flowGrid {
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap:2rem; max-width:68rem; margin:2rem auto 0;
+}
+.flowStep {
+  text-align:center; padding:1rem; border-radius:20px; background:#fff;
+  box-shadow:0 4px 14px rgba(0,0,0,0.08); transition: transform .25s ease, box-shadow .25s ease;
+}
+.flowStep:hover { transform: translateY(-6px); box-shadow:0 16px 36px rgba(10,16,69,.12); }
+.flowDesc { margin-top:.6rem; font-size:.95rem; color:#555; }
+
+/* CountryBall 래퍼 약간 여백 */
+.ballWrap { margin-top: 1rem; }
+.ballContainer { height: 300px; }
+
+/* Team: 타이포 일치 */
+.memberName { font-size:1.15rem; font-weight:300; color:#d8315b; margin:0 0 .35rem; }
+.memberRole { font-size:1rem; font-weight:400; color:#333; line-height:1.35; }
+
+/* Hero: 버튼/텍스트 간격 조정 */
+.heroText { max-width: 820px; }
+.heroText p { max-width: 560px; }
+
+/* 반응형 */
+@media (min-width: 900px) {
+  .sectionTitle { font-size: 2.5rem; }
+  .sectionLead { font-size: 1.1rem; }
+}
+@media (max-width: 768px) {
+  .sectionTitle { font-size: 1.85rem; }
+  .sectionLead { font-size: .98rem; }
+}
