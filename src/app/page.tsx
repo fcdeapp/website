@@ -208,17 +208,6 @@ export default function Home() {
             </motion.div>
           </section>
 
-          <section className={styles.edgeVideoSection} data-aos="fade-up">
-            <video
-              src="/videos/GoogleAdsProject250617.mp4"
-              className={styles.edgeVideo}
-              autoPlay
-              muted
-              loop
-              playsInline
-            />
-          </section>
-
           <section className={styles.section} data-aos="fade-up">
             <img
               src="/images/Ads250812EN.jpg"

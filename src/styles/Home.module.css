@@ -16,7 +16,7 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
   font-size: 2.5rem;
   font-weight: 400;
-  background: linear-gradient(45deg, #D8315B, #F2542D);
+  background: linear-gradient(45deg, #ff7a59, #ff5fa0);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -836,9 +836,9 @@
 
 /* 기존 .hero 유지 + 브랜드 버전 */
 .heroBrand{
-  background-image: linear-gradient(135deg, #f2542d 0%, #d8315b 100%), url('/WebsiteBanner.jpg');
+  background-image: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
   background-size: 200% 200%, cover;
-  background-blend-mode: multiply;
+  background-blend-mode: normal;
   animation: heroGradientShift 12s ease-in-out infinite;
   color:#fff;
 }
