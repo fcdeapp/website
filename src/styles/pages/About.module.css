@@ -399,6 +399,82 @@
     flex: 0.85;
   }
 
+  /* === Future Vision: 섹션을 세로 스택으로 고정 === */
+  .futureVisionSection {
+    display: flex;
+    flex-direction: column;     /* 항상 위=그리드, 아래=텍스트 */
+    gap: 2.5rem;
+    padding-top: 3rem;          /* 약간 여유 */
+  }
+
+  /* 그리드: 더 크게 보이도록 칼럼 폭 상향 */
+  .futureVisionGrid {
+    /* 기존 languageConceptLarge를 확장 */
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 2.4rem;
+  }
+
+  /* 카드 자체를 조금 더 키움 */
+  .futureVisionGrid .flowItem {
+    padding: 1.25rem;           /* 카드 내부 여백 증가 */
+  }
+
+  /* === 이미지: 잘리지 않게 + 더 크게 === */
+  .noCrop {
+    /* 기존 languageImage의 cover를 덮어씌움 */
+    object-fit: contain;         /* 잘리지 않게 표시 */
+    background: #fff;            /* 여백이 생길 때 깔끔하게 */
+    padding: 6px;                /* 살짝 내부 여백으로 안정감 */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+
+  /* languageConceptLarge 기본 비율을 제거해 실제 이미지 비율로 확대 */
+  .futureVisionSection .languageImage {
+    width: 100%;
+    height: auto;                /* 비율 고정 해제 */
+    max-height: 480px;           /* 너무 커져 레이아웃 깨짐 방지 */
+  }
+
+  /* Our Vision 텍스트 블록은 중앙 정렬 + 아래 배치 여유 */
+  .visionTextBlock {
+    max-width: 900px;
+    margin: 0 auto;              /* 중앙 정렬 */
+    text-align: center;
+  }
+  .visionTextBlock h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: -0.04em;
+    background: linear-gradient(to right, #D8315B, #F2542D);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .visionTextBlock p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #888;
+    letter-spacing: -0.02em;
+  }
+
+  /* 반응형: 태블릿/모바일에서도 크게 보이게 */
+  @media (max-width: 1200px) {
+    .futureVisionGrid {
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+  }
+  @media (max-width: 768px) {
+    .futureVisionGrid {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+    .futureVisionSection .languageImage {
+      max-height: 420px;   /* 모바일에서도 크게 */
+    }
+  }
+
   /* 태블릿 이하에서는 2열로, 모바일에서는 1열로 크게 표시 */
   @media (max-width: 1024px) {
     .languageConceptLarge {
