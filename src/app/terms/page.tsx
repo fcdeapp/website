@@ -115,74 +115,59 @@ export default function TermsPage() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
+        <span className={styles.kicker}>Legal</span>
         <h1 className={styles.title}>
-          {termsType === "service"
-            ? termsLanguage !== "ko"
-              ? "Terms of Service"
-              : "서비스 이용약관"
-            : termsType === "privacy"
-            ? termsLanguage !== "ko"
-              ? "Privacy Policy"
-              : "개인정보처리방침"
-            : termsLanguage !== "ko"
-            ? "Community Guidelines"
-            : "커뮤니티 이용약관"}
+          <span className={styles.brandGradientText}>
+            {termsType === "service"
+              ? termsLanguage !== "ko" ? "Terms of Service" : "서비스 이용약관"
+              : termsType === "privacy"
+              ? termsLanguage !== "ko" ? "Privacy Policy" : "개인정보처리방침"
+              : termsLanguage !== "ko" ? "Community Guidelines" : "커뮤니티 이용약관"}
+          </span>
         </h1>
+        <p className={styles.subtitle}>
+          Keep things clear and respectful. Choose a <strong>type</strong> and <strong>language</strong> below.
+        </p>
+
+        {/* 컨트롤 바는 헤더 안으로 끌어올려 시각적으로 묶어줌 */}
         <div className={styles.controls}>
-          <div className={styles.selectWrapper}>
-            <label htmlFor="termsType" className={styles.selectLabel}>
-              Type
-            </label>
-            <select
-              id="termsType"
-              className={styles.select}
-              value={termsType}
-              onChange={handleTermsTypeChange}
-            >
-              <option value="service">
-                {termsLanguage !== "ko"
-                  ? "Terms of Service"
-                  : "서비스 이용약관"}
-              </option>
-              <option value="privacy">
-                {termsLanguage !== "ko"
-                  ? "Privacy Policy"
-                  : "개인정보처리방침"}
-              </option>
-              <option value="community">
-                {termsLanguage !== "ko"
-                  ? "Community Guidelines"
-                  : "커뮤니티 이용약관"}
-              </option>
-            </select>
-          </div>
-          <div className={styles.selectWrapper}>
-            <label htmlFor="language" className={styles.selectLabel}>
-              Language
-            </label>
-            <select
-              id="language"
-              className={styles.select}
-              value={termsLanguage}
-              onChange={handleLanguageChange}
-            >
-              {languageOptions.map((lang) => (
-                <option key={lang.code} value={lang.code}>
-                  {lang.label}
-                </option>
-              ))}
-            </select>
+          <div className={styles.controlCard}>
+            <div className={styles.selectRow}>
+              <div className={styles.selectWrapper}>
+                <label htmlFor="termsType" className={styles.selectLabel}>Type</label>
+                <select id="termsType" className={styles.select} value={termsType} onChange={handleTermsTypeChange}>
+                  <option value="service">{termsLanguage !== "ko" ? "Terms of Service" : "서비스 이용약관"}</option>
+                  <option value="privacy">{termsLanguage !== "ko" ? "Privacy Policy" : "개인정보처리방침"}</option>
+                  <option value="community">{termsLanguage !== "ko" ? "Community Guidelines" : "커뮤니티 이용약관"}</option>
+                </select>
+              </div>
+              <div className={styles.selectWrapper}>
+                <label htmlFor="language" className={styles.selectLabel}>Language</label>
+                <select id="language" className={styles.select} value={termsLanguage} onChange={handleLanguageChange}>
+                  {languageOptions.map((lang) => (
+                    <option key={lang.code} value={lang.code}>{lang.label}</option>
+                  ))}
+                </select>
+              </div>
+            </div>
+            <div className={styles.metaHint}>
+              <span className={styles.metaDot} /> Updated content is fetched dynamically.
+            </div>
           </div>
         </div>
       </header>
       <main className={styles.main}>
-        {isLoading ? (
-          <p className={styles.loading}>Loading terms...</p>
-        ) : (
-          <section className={styles.content}>
-            <p dangerouslySetInnerHTML={{ __html: formattedContent }} />
-          </section>
-        )}
+      {isLoading ? (
+        <div className={styles.skeleton}>
+          <div className={styles.skelLine} />
+          <div className={styles.skelLine} />
+          <div className={styles.skelLineShort} />
+        </div>
+      ) : (
+        <section className={styles.content}>
+          <p dangerouslySetInnerHTML={{ __html: formattedContent }} />
+        </section>
+      )}
         <button className={styles.licensesButton} onClick={toggleLicenses}>
           {licensesVisible ? "Close Licenses" : "View Licenses"}
         </button>
