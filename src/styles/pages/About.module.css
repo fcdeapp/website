@@ -355,6 +355,67 @@
     }
   }
 
+  /* Future Vision 전용: 크게 보이기 */
+  .languageConceptLarge {
+    /* 가로 3장 그리드 (여유 있는 카드 간격) */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 2rem; /* 카드 사이 간격 증가 */
+    align-items: stretch;
+  }
+
+  /* 각 단계를 카드처럼 키우고, 안쪽 여백 추가 */
+  .languageConceptLarge .flowItem {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 10px 28px rgba(10,16,69,0.08);
+    transform: translateZ(0); /* GPU hint */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  /* 이미지 자체도 더 크고 안정적인 비율로 */
+  .languageConceptLarge .languageImage {
+    width: 100%;
+    aspect-ratio: 16 / 10;    /* 일정한 비율로 크게 */
+    object-fit: cover;        /* 꽉 채워 보이도록 */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  }
+
+  /* 호버 시 살짝 상승 & 강조 (데스크톱 UX 향상) */
+  @media (hover: hover) and (pointer: fine) {
+    .languageConceptLarge .flowItem:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(10,16,69,0.12);
+    }
+  }
+
+  /* 이 섹션만 왼쪽(이미지 단계) 폭을 더 넓게 쓰고 싶다면 */
+  .futureVision .split:first-child {
+    flex: 1.35; /* 기본 1에서 조금 넓힘 -> 카드가 더 커짐 */
+  }
+  .futureVision .split:last-child {
+    flex: 0.85;
+  }
+
+  /* 태블릿 이하에서는 2열로, 모바일에서는 1열로 크게 표시 */
+  @media (max-width: 1024px) {
+    .languageConceptLarge {
+      grid-template-columns: repeat(2, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .languageConceptLarge {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+    .languageConceptLarge .languageImage {
+      aspect-ratio: 16 / 11; /* 세로로 더 여유 */
+    }
+  }
+
   @media (max-width: 768px) {
     /* 팀 카드 전체를 세로 스택으로 전환 */
     .teamCard {

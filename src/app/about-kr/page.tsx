@@ -91,28 +91,22 @@ export default function About() {
 
         {/* Section: Future Vision */}
         <section className={styles.sectionAlt}>
-          <div className={styles.split} data-aos="fade-right">
-          <div className={styles.languageConcept}>
-              <div className={styles.flowItem}>
-                <img src="/images/flow-1.png" alt="Snap & Scenario" className={styles.languageImage} />
-                <p className={styles.flowDesc}>
-                  Take a photo to automatically build your learning scenario.
-                </p>
-              </div>
-              <div className={styles.flowItem}>
-                <img src="/images/flow-4.png" alt="AI Chat & Correction" className={styles.languageImage} />
-                <p className={styles.flowDesc}>
-                  Chat with our AI tutor—get real‑time corrections.
-                </p>
-              </div>
-              <div className={styles.flowItem}>
-                <img src="/images/flow-5.png" alt="Instant Quiz" className={styles.languageImage} />
-                <p className={styles.flowDesc}>
-                  Jump straight into a quiz to reinforce what you learned.
-                </p>
-              </div>
+        <div className={styles.split} data-aos="fade-right">
+          <div className={`${styles.languageConcept} ${styles.languageConceptLarge}`}>
+            <div className={styles.flowItem} data-aos="zoom-in-up" data-aos-delay="0">
+              <img src="/images/flow-1.png" alt="Snap & Scenario" className={styles.languageImage} />
+              <p className={styles.flowDesc}>Take a photo to automatically build your learning scenario.</p>
+            </div>
+            <div className={styles.flowItem} data-aos="zoom-in-up" data-aos-delay="150">
+              <img src="/images/flow-4.png" alt="AI Chat & Correction" className={styles.languageImage} />
+              <p className={styles.flowDesc}>Chat with our AI tutor—get real-time corrections.</p>
+            </div>
+            <div className={styles.flowItem} data-aos="zoom-in-up" data-aos-delay="300">
+              <img src="/images/flow-5.png" alt="Instant Quiz" className={styles.languageImage} />
+              <p className={styles.flowDesc}>Jump straight into a quiz to reinforce what you learned.</p>
             </div>
           </div>
+        </div>
           <div className={styles.split} data-aos="fade-left">
             <h2>우리의 비전</h2>
             <p>
