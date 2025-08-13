@@ -7,6 +7,54 @@
     color: #333;
     line-height: 1.6;
   }
+  /* ───────── Differentiators ───────── */
+  .diffLead {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.75;
+  }
+  .diffLead em { opacity: 0.9; }
+  .diffLead strong { color: #d8315b; font-weight: 600; }
+
+  .diffGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    max-width: 78rem;
+    margin: 0 auto;
+  }
+
+  .diffCard {
+    background: #fff;
+    border-radius: 20px;
+    padding: 1.6rem 1.4rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .diffCard h3 {
+    font-size: 1.05rem;
+    color: #d8315b;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  .diffCard p {
+    font-size: 0.97rem;
+    color: #4a4a4a;
+    line-height: 1.55;
+  }
+
+  .diffNote {
+    max-width: 56rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.98rem;
+    color: #666;
+    opacity: 0.95;
+    padding-top: .5rem;
+  }
   .downloadSection {
     max-width: 78rem;
     margin: 0 auto;
@@ -84,13 +132,13 @@
   }
   
   .btnPrimary{
-    color:#fff; background: linear-gradient(135deg, #110c2b 0%, #d8315b 100%);
+    color:#fff; background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
     box-shadow: 0 10px 20px rgba(216,49,91,.18);
   }
   .btnPrimary:hover{ transform: translateY(-2px); }
   
   .btnGhost{
-    color:#110c2b; background: #fff; border:1px solid rgba(17,12,43,.12);
+    color:#f2542d; background: #fff; border:1px solid rgba(17,12,43,.12);
   }
   .btnGhost:hover{ transform: translateY(-2px); }
   

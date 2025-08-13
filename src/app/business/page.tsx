@@ -139,6 +139,91 @@ export default function BusinessPage() {
           ))}
         </motion.div>
 
+
+        {/* ── Differentiators ───────────────────────────── */}
+        <section className={styles.sectionAlt}>
+          <motion.h2
+            className={styles.sectionTitle}
+            variants={fadeUp}
+            viewport={{ once: true, amount: 0.45 }}
+          >
+            What Makes Abrody Different
+          </motion.h2>
+
+          <motion.p
+            className={styles.diffLead}
+            variants={fadeUp}
+            custom={1}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            We flip the direction of learning. It no longer flows <em>from</em> the platform <em>to</em> the user.
+            With Abrody, everything starts <strong>from you</strong> — your situations, your context, your words.
+          </motion.p>
+
+          <motion.div
+            className={styles.diffGrid}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
+          >
+            {[
+              {
+                title: "User-Origin Learning",
+                body:
+                  "Real life leads, the platform follows. Lessons are seeded by your own conversations and moments, not scripted drills.",
+              },
+              {
+                title: "Context at the Core",
+                body:
+                  "Situation, intent, and phrasing come from your day-to-day context—so practice instantly feels relevant and transferable.",
+              },
+              {
+                title: "Hyper-Personalization",
+                body:
+                  "Your mistakes become tailored quizzes, your favorite phrases become targeted practice. Progress is personal, not generic.",
+              },
+              {
+                title: "AI-Powered, Not App-Powered",
+                body:
+                  "AI turns your lived moments into dialogues, feedback, and review—automating a CTL-style loop that actually builds fluency.",
+              },
+              {
+                title: "Less Gamification, More Growth",
+                body:
+                  "We optimize for speaking clarity and confidence—not just streaks. Learn in a way that sticks when you talk to real people.",
+              },
+              {
+                title: "From Daily Life to Daily Wins",
+                body:
+                  "Snap → Chat → Quiz, repeatedly—each micro-loop converts life into practice and builds durable skill, day after day.",
+              },
+            ].map((f, i) => (
+              <motion.article
+                key={f.title}
+                className={styles.diffCard}
+                variants={fadeUp}
+                custom={i}
+                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
+              >
+                <h3>{f.title}</h3>
+                <p>{f.body}</p>
+              </motion.article>
+            ))}
+          </motion.div>
+
+          <motion.p
+            className={styles.diffNote}
+            variants={fadeLeft}
+            custom={3}
+            viewport={{ once: true, amount: 0.4 }}
+          >
+            This user-first, contextual approach aligns with our vision—connecting daily life to language learning—
+            and with research showing CTL can lift speaking clarity and fluency substantially. :contentReference[oaicite:0]{index=0}
+          </motion.p>
+        </section>
+
+
         <motion.blockquote
         className={styles.quote}
         variants={fadeLeft}
