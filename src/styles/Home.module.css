@@ -7,7 +7,6 @@
   color: #333;
 }
 
-/* dynamicLang 페이드+슬라이드 애니메이션 */
 .dynamicLang {
   display: inline-block;
   min-width: 7ch;
@@ -20,9 +19,15 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0.25em 0.6em;                 /* 내부 여백 */
+  background-color: #fff;                /* 배경 흰색 */
+  border-radius: 0.75em;                  /* 코너 둥글게 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 살짝 그림자 */
+
   margin: 0;
   letter-spacing: -0.05em;
 }
+
 /* 렌더 후 바로 활성화 상태 */
 .dynamicLang {
   opacity: 1;
