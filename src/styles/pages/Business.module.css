@@ -138,12 +138,43 @@
   .btnPrimary:hover{ transform: translateY(-2px); }
   
   .btnGhost{
-    color:#f2542d; background: #fff; border:1px solid rgba(17,12,43,.12);
+    color:#110c2b; background: #fff; border:1px solid rgba(17,12,43,.12);
   }
   .btnGhost:hover{ transform: translateY(-2px); }
   
   @media (max-width:480px){
     .btn{ width:100%; text-align:center; }
+  }
+
+  /* 인용문 안의 % 숫자: 텍스트 그라데이션 */
+  .gradientNumber {
+    display: inline-block;
+    font-size: 2.5rem;         /* 필요 시 숫자 크기 조절 */
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0.25rem;
+    background: linear-gradient(90deg, #ff8a5c 0%, #ffd46b 50%, #f2542d 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* 실제 텍스트에 그라데이션 적용 */
+    text-fill-color: transparent;
+  }
+
+  /* 출처를 더 작고 옅게 */
+  .quoteCite {
+    display: block;           /* 줄바꿈해서 본문과 분리 */
+    margin-top: 0.65rem;
+    font-size: 0.9rem;        /* 더 작은 텍스트 */
+    color: #888;              /* 옅은 컬러 */
+    font-style: normal;       /* 기울임 해제(원하면 italic로 바꿔도 됨) */
+    opacity: 0.95;
+  }
+
+  /* (선택) 모바일에서 숫자 크기 살짝 줄이기 */
+  @media (max-width: 640px) {
+    .gradientNumber {
+      font-size: 2rem;
+    }
   }
   
   /* === Modal === */

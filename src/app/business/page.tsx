@@ -225,16 +225,19 @@ export default function BusinessPage() {
 
 
         <motion.blockquote
-        className={styles.quote}
-        variants={fadeLeft}
-        custom={3}
-        viewport={{ once: true, amount: 0.4 }}
+          className={styles.quote}
+          variants={fadeLeft}
+          custom={3}
+          viewport={{ once: true, amount: 0.4 }}
         >
-        CTL-based instruction lifts speaking clarity by
-        <span className={styles.animatedNumber}>54%</span> and fluency by
-        <span className={styles.animatedNumber}>65%</span>. Abrody automates CTL
-        everywhere. <em>— Yusyac et al., 2021</em>
+          CTL-based instruction lifts speaking clarity by
+          <span className={styles.gradientNumber}>54%</span>
+          and fluency by
+          <span className={styles.gradientNumber}>65%</span>.
+          Abrody automates CTL everywhere.
+          <cite className={styles.quoteCite}>— Yusyac et al., 2021</cite>
         </motion.blockquote>
+
       </section>
 
       <div className={styles.waveSplit} />
