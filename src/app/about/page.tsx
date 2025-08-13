@@ -42,17 +42,6 @@ export default function About() {
           </div>
         </section>
 
-        <section className={styles.videoSection}>
-          <video
-            src="/videos/GoogleAdsProject250617.mp4"
-            className={styles.fullscreenVideo}
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-        </section>
-
           <section className={styles.section}>
           <div className={styles.split} data-aos="fade-left">
           <h2>Why Most Language Apps Don’t Really Work</h2>
