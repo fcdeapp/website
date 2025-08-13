@@ -7,33 +7,47 @@
   color: #333;
 }
 
-.dynamicLang-bg {
-  display: inline-block;
-  background-color: #fff;       /* 흰 배경 */
-  border-radius: 0.75em;        /* 둥근 모서리 */
-  padding: 0.25em 0.6em;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+/* 흰 배경 래퍼 */
+.dynamicLangBg {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  background: #fff;
+  border-radius: 0.8em;
+  padding: 0.22em 0.55em;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border: 1px solid rgba(17,12,43,0.06);
+  transform: translateZ(0); /* 글리치 방지 */
 }
 
+/* 그라디언트 텍스트 (밝게) */
 .dynamicLang {
   min-width: 7ch;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
   font-size: 2.5rem;
-  font-weight: 400;
-  background: linear-gradient(45deg, #ff7a59, #ff5fa0);
-  background-clip: text;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+
+  /* 더 밝은 그라디언트 */
+  background: linear-gradient(45deg, #ff9bd0 0%, #ff7a59 50%, #ffd36e 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
-  letter-spacing: -0.05em;
 }
 
-/* 렌더 후 바로 활성화 상태 */
+/* 활성화 상태 */
 .dynamicLang {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* 모바일에서 너무 커보이지 않게 */
+@media (max-width: 767px) {
+  .dynamicLang { font-size: 2rem; }
+  .dynamicLangBg { padding: 0.18em 0.48em; border-radius: 0.72em; }
 }
 
 .carouselSlide {
