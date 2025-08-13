@@ -90,54 +90,56 @@ export default function BusinessPage() {
 
       {/* ── Why Abrody Exists ───────────────────────────── */}
       <section id="why" className={styles.section}>
-        <motion.h2
-          className={styles.sectionTitle}
-          variants={fadeUp}
-          viewport={{ once: true, amount: 0.45 }}
-        >
-          Why Abrody Exists
-        </motion.h2>
+      <motion.div
+        className={styles.whyHeader}
+        variants={fadeUp}
+        viewport={{ once: true, amount: 0.45 }}
+      >
+        <span className={styles.sectionKicker}>The Problem</span>
+        <h2 className={styles.sectionTitle}>Why Abrody Exists</h2>
+        <p className={styles.sectionLead}>
+          Traditional apps push scripted content at learners. We start from real life —
+          letting your daily context generate what you practice next.
+        </p>
+      </motion.div>
 
-        <motion.div
-          className={styles.cards3D}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
-        >
-          {[
-            {
-              title: "Lowest App Retention",
-              body:
-                "Education apps post the worst 30‑day retention (2.1 %). Learners quit before progress. — AppsFlyer 2025",
-            },
-            {
-              title: "Study ≠ Speaking",
-              body:
-                "Grammar drills and XP rarely yield spontaneous conversation; anxiety stays high even after years of study.",
-            },
-            {
-              title: "Costly Yet Ineffective",
-              body:
-                "South Korea spends ₩29.2 T (≈ $21 B) annually on English, yet ranks 50th in EF EPI proficiency.",
-            },
-          ].map((card, i) => (
-            <motion.article
-              key={card.title}
-              className={styles.card}
-              variants={fadeUp}
-              custom={i}
-              whileHover={{
-                rotateX: 6,
-                rotateY: -6,
-                boxShadow: "0 20px 40px rgba(0,0,0,0.12)",
-              }}
-            >
-              <h3>{card.title}</h3>
-              <p>{card.body}</p>
-            </motion.article>
-          ))}
-        </motion.div>
+      <motion.div
+        className={styles.cards3D}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+      >
+        {[
+          {
+            icon: "↓",
+            title: "Lowest App Retention",
+            body: "Education apps post the worst 30-day retention (2.1 %). Learners quit before progress. — AppsFlyer 2025",
+          },
+          {
+            icon: "≠",
+            title: "Study ≠ Speaking",
+            body: "Grammar drills and XP rarely yield spontaneous conversation; anxiety stays high even after years of study.",
+          },
+          {
+            icon: "₩",
+            title: "Costly Yet Ineffective",
+            body: "South Korea spends ₩29.2 T (≈ $21 B) annually on English, yet ranks 50th in EF EPI proficiency.",
+          },
+        ].map((card, i) => (
+          <motion.article
+            key={card.title}
+            className={`${styles.card} ${styles.statCard}`}
+            variants={fadeUp}
+            custom={i}
+            whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.12)" }}
+          >
+            <span className={styles.statBadge} aria-hidden>{card.icon}</span>
+            <h3>{card.title}</h3>
+            <p>{card.body}</p>
+          </motion.article>
+        ))}
+      </motion.div>
 
 
         {/* ── Differentiators ───────────────────────────── */}
@@ -286,46 +288,45 @@ export default function BusinessPage() {
 
       <div className={styles.waveSplitFlip} />
 
-      {/* ── Market & Business Model (동일) ───────────── */}
-      {/* (원본 코드 그대로) */}
-
-      {/* ── Roadmap ───────────────────────────────────── */}
+      {/* ── Roadmap (Timeline) ───────────────────────── */}
       <section className={styles.sectionRoad}>
-        <motion.h2
-          className={styles.sectionTitle}
+        <motion.div
+          className={styles.roadmapHeader}
           variants={fadeUp}
           viewport={{ once: true, amount: 0.5 }}
         >
-          Roadmap
-        </motion.h2>
+          <span className={styles.sectionKicker}>Plan</span>
+          <h2 className={styles.sectionTitle}>Roadmap</h2>
+        </motion.div>
 
-        <motion.ul
-          className={styles.roadmap}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
-        >
+        <div className={styles.roadmapWrap}>
+          <div className={styles.roadmapTrack} aria-hidden />
           {[
-            { time: "2025 Aug", text: "Android launch · CAC ≤ ₩2,900" },
-            { time: "2025 Q4", text: "AR practice beta · New pricing tiers" },
-            { time: "2026 Q1", text: "Launch AR publicly · power‑users > 50 K" },
-            { time: "2026 H2", text: "Pre‑Series A raise · global expansion" },
+            { time: "2025 Aug", text: "Android launch · CAC ≤ ₩2,900", status: "next" },
+            { time: "2025 Q4", text: "AR practice beta · New pricing tiers", status: "planned" },
+            { time: "2026 Q1", text: "Launch AR publicly · power-users > 50 K", status: "planned" },
+            { time: "2026 H2", text: "Pre-Series A raise · global expansion", status: "planned" },
           ].map((mile, i) => (
-            <motion.li
+            <motion.article
               key={mile.time}
-              className={styles.milestone}
+              className={`${styles.milestoneCard} ${i % 2 ? styles.right : styles.left}`}
               variants={fadeUp}
               custom={i}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
             >
-              <span className={styles.dot} />
-              <div>
-                <strong>{mile.time}</strong>
-                <p>{mile.text}</p>
-              </div>
-            </motion.li>
+              <span className={`${styles.mileDot} ${styles[mile.status]}`} />
+              <header className={styles.mileHead}>
+                <span className={styles.mileTime}>{mile.time}</span>
+                <span className={`${styles.milePill} ${styles[mile.status]}`}>
+                  {mile.status === "next" ? "Next" : "Planned"}
+                </span>
+              </header>
+              <p className={styles.mileText}>{mile.text}</p>
+            </motion.article>
           ))}
-        </motion.ul>
+        </div>
       </section>
 
       {/* ── Team ─────────────────────────────────────── */}

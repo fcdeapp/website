@@ -548,3 +548,120 @@
     }
   }
   
+  /* Why: 섹션 헤더(Kicker + Lead) */
+  .whyHeader { text-align: center; max-width: 56rem; margin: 0 auto 0.5rem; }
+  .sectionKicker {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #d8315b;
+    background: rgba(216,49,91,.08);
+    padding: .25rem .6rem;
+    border-radius: 999px;
+  }
+  .sectionLead {
+    margin: .75rem auto 0;
+    font-size: 1.05rem;
+    color: #666;
+    line-height: 1.75;
+  }
+
+  /* Why: 카드 아이콘/강조 */
+  .statCard { padding-top: 1.6rem; position: relative; }
+  .statCard h3 { margin-top: 0.35rem; }
+  .statBadge {
+    position: absolute;
+    top: -16px; left: 1.6rem;
+    width: 42px; height: 42px; line-height: 42px; text-align: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
+    color: #fff; font-weight: 700;
+    box-shadow: 0 8px 18px rgba(216,49,91,.18);
+  }
+  @media (max-width: 640px) {
+    .sectionLead { font-size: 1rem; }
+    .statBadge { left: 1.4rem; }
+  }
+
+  /* Roadmap 헤더 */
+.roadmapHeader { text-align: center; }
+
+/* Roadmap: 중앙 트랙 + 좌/우 카드 */
+.roadmapWrap {
+  position: relative;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.roadmapTrack {
+  position: absolute;
+  top: 0; bottom: 0; left: 50%;
+  width: 4px; transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(242,84,45,.25), rgba(216,49,91,.25));
+  border-radius: 2px;
+}
+
+/* 타임라인 카드 */
+.milestoneCard {
+  position: relative;
+  width: calc(50% - 2rem);
+  margin: 0.75rem 0 2rem;
+  padding: 1.2rem 1.25rem 1.25rem 1.25rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+.left  { margin-right: auto; }
+.right { margin-left:  auto; }
+
+/* 트랙 위 포인트 */
+.mileDot {
+  position: absolute;
+  top: 1.2rem; /* 카드 내부 상단 기준 */
+  width: 14px; height: 14px; border-radius: 50%;
+  left: calc(100% + 1.4rem); /* left 카드일 때 오른쪽에 점 */
+  box-shadow: 0 0 0 4px rgba(216,49,91,.08);
+  background: #d8315b;
+}
+.right .mileDot {
+  left: auto;
+  right: calc(100% + 1.4rem); /* right 카드일 때 왼쪽에 점 */
+}
+
+/* 상태별 색 (선택) */
+.next   { background: #f2542d !important; }
+.planned{ background: #d8315b !important; }
+
+/* 카드 헤더 */
+.mileHead {
+  display: flex; align-items: center; gap: .6rem;
+  margin-bottom: .35rem;
+}
+.mileTime {
+  font-weight: 600; color: #110c2b;
+  background: rgba(17,12,43,.04);
+  padding: .25rem .55rem; border-radius: 10px;
+  font-size: .95rem;
+}
+.milePill {
+  font-size: .8rem;
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  color: #fff;
+  background: #d8315b;
+}
+
+/* 본문 */
+.mileText { color: #4a4a4a; font-size: .98rem; line-height: 1.55; }
+
+/* 반응형: 모바일에선 단일 컬럼 */
+@media (max-width: 900px) {
+  .roadmapTrack { left: 18px; transform: none; }
+  .milestoneCard { width: 100%; padding-left: 2.75rem; }
+  .left, .right { margin: 0 0 1.25rem 0; }
+  .mileDot {
+    left: -7px; right: auto; top: 1.15rem;
+  }
+}
