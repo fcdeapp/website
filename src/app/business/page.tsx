@@ -219,7 +219,7 @@ export default function BusinessPage() {
             viewport={{ once: true, amount: 0.4 }}
           >
             This user-first, contextual approach aligns with our vision—connecting daily life to language learning—
-            and with research showing CTL can lift speaking clarity and fluency substantially. :contentReference[oaicite:0]{index=0}
+            and with research showing CTL can lift speaking clarity and fluency substantially.
           </motion.p>
         </section>
 
