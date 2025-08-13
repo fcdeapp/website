@@ -182,13 +182,13 @@ export default function About() {
                 </p>
               </div>
               <div className={styles.flowItem}>
-                <img src="/images/flow-2.png" alt="AI Chat & Correction" className={styles.languageImage} />
+                <img src="/images/flow-4.png" alt="AI Chat & Correction" className={styles.languageImage} />
                 <p className={styles.flowDesc}>
                   Chat with our AI tutor—get real‑time corrections.
                 </p>
               </div>
               <div className={styles.flowItem}>
-                <img src="/images/flow-3.png" alt="Instant Quiz" className={styles.languageImage} />
+                <img src="/images/flow-5.png" alt="Instant Quiz" className={styles.languageImage} />
                 <p className={styles.flowDesc}>
                   Jump straight into a quiz to reinforce what you learned.
                 </p>

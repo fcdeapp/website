@@ -172,12 +172,12 @@ export default function BusinessPage() {
                 desc: "Take a photo to automatically build your learning scenario.",
             },
             {
-                img: "/images/flow-2.png",
+                img: "/images/flow-4.png",
                 title: "2. AI Chat & Correction",
                 desc: "Chat with our AI tutor—get real‑time corrections.",
             },
             {
-                img: "/images/flow-3.png",
+                img: "/images/flow-5.png",
                 title: "3. Instant Quiz",
                 desc: "Jump straight into a quiz to reinforce what you learned.",
             },
