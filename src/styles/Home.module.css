@@ -7,8 +7,15 @@
   color: #333;
 }
 
-.dynamicLang {
+.dynamicLang-bg {
   display: inline-block;
+  background-color: #fff;       /* 흰 배경 */
+  border-radius: 0.75em;        /* 둥근 모서리 */
+  padding: 0.25em 0.6em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.dynamicLang {
   min-width: 7ch;
   opacity: 0;
   transform: translateY(20px);
@@ -19,11 +26,6 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0.25em 0.6em;                 /* 내부 여백 */
-  background-color: #fff;                /* 배경 흰색 */
-  border-radius: 0.75em;                  /* 코너 둥글게 */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 살짝 그림자 */
-
   margin: 0;
   letter-spacing: -0.05em;
 }
