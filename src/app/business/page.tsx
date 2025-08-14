@@ -152,6 +152,17 @@ export default function BusinessPage() {
             What Makes Abrody Different
           </motion.h2>
 
+          <motion.div
+            className={styles.flipHeader}
+            variants={fadeUp}
+            custom={2}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            <span className={styles.flowLabel}>Platform → User</span>
+            <span className={styles.flipSwitch} aria-hidden>⇄</span>
+            <span className={`${styles.flowLabel} ${styles.active}`}>User → Platform</span>
+          </motion.div>
+
           <motion.p
             className={styles.diffLead}
             variants={fadeUp}
@@ -208,7 +219,10 @@ export default function BusinessPage() {
                 custom={i}
                 whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
               >
-                <h3>{f.title}</h3>
+                <h3>
+                  <span className={styles.flipTag} aria-hidden>↺</span>
+                  {f.title}
+                </h3>
                 <p>{f.body}</p>
               </motion.article>
             ))}
@@ -348,20 +362,20 @@ export default function BusinessPage() {
         >
           {[
             {
-                name: "Jungmin Doh",
-                role: "Founder\nCEO",
-                bio: `“I build products that feel like a natural extension of your day — blending tech, design, and genuine human moments to make learning stick.”`,
+              name: "Jungmin Doh",
+              role: "Founder\nCEO",
+              bio: `“I build products that feel like a natural extension of your day — blending tech, design, and genuine human moments to make learning stick.”`,
             },
             {
-                name: "Taeyeon Kim",
-                role: "Executive\nCFO",
-                bio: `“I’m here to turn insight into impact — using data and strategy to grow our community sustainably and meaningfully.”`,
+              name: "Taeyeon Kim",
+              role: "Executive\nCFO",
+              bio: `“I’m here to turn insight into impact — using data and strategy to grow our community sustainably and meaningfully.”`,
             },
             {
               name: "Chaewon Kim",
               role: "Executive\nCMO",
               bio: `“I turn market insight into growth — leveraging segmentation, content, and influencer campaigns to reach and engage the right users, globally.”`,
-            },      
+            },
           ].map((m, i) => (
             <motion.article
               key={m.name}
@@ -370,13 +384,18 @@ export default function BusinessPage() {
               custom={i}
               whileHover={{ y: -10, boxShadow: "0 18px 28px rgba(0,0,0,0.12)" }}
             >
-                <h3 className={styles.memberName}>{m.name}</h3>
-                <p className={styles.memberRole} style={{ whiteSpace: "pre-line" }}>
-                    {m.role}
-                </p>
-                <p className={styles.memberBio}>
-                    {m.bio}
-                </p>
+              <h3 className={styles.memberName}>{m.name}</h3>
+              <p className={styles.memberRole} style={{ whiteSpace: "pre-line" }}>
+                {m.role}
+              </p>
+              <p className={styles.memberBio}>{m.bio}</p>
+
+              {/* ↓ CEO에게만 Learn more 노출 */}
+              {m.role.includes("CEO") && (
+                <a href="/ceo-profile" className={styles.learnMore}>
+                  Learn more
+                </a>
+              )}
             </motion.article>
           ))}
         </motion.div>
