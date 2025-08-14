@@ -79,6 +79,16 @@ import MoveQuiz from "../../components/MoveQuiz";
 import FillQuiz from "../../components/FillQuiz";
 import BuddyProfileWithFlag from "../../components/BuddyProfileWithFlag";
 
+interface ChatMessage {
+  _id: string;
+  senderId: string;
+  message: string;
+  timestamp: string;
+  profileImage?: string | null;
+  imageUrl?: string | null;
+  isUploading?: boolean;
+}
+
 /* ───────────────────────── Constants ───────────────────────── */
 const defaults: SupportedLang[] = [
   "en",
@@ -185,7 +195,7 @@ export default function ChattingRoomPage() {
   const [chatTitle, setChatTitle] = useState<string>("");
 
   /* messages */
-  const [messages, setMessages] = useState<any[]>([]);
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [hasMoreMessages, setHasMoreMessages] = useState(true);
   const [nextCursor, setNextCursor] = useState<string | null>(null);
@@ -573,8 +583,7 @@ export default function ChattingRoomPage() {
     })();
   }, [SERVER_URL, isAIChat, otherUserId]);
 
-  /* ───────── messages (AI or not) initial fetch ───────── */
-  const normalizeAIMessage = (m: any) => ({
+  const normalizeAIMessage = (m: any): ChatMessage => ({
     _id: m._id,
     senderId: m.role === "assistant" ? "brody-ai" : userId,
     message: m.content,
@@ -601,13 +610,16 @@ export default function ChattingRoomPage() {
         try {
           const res = await axios.get(url, { headers: { Authorization: `Bearer ${token}` } });
           const raw = res.data.messages || [];
-          const newMsgs = raw.map(normalizeAIMessage);
+          const newMsgs: ChatMessage[] = raw.map(normalizeAIMessage);
           setNextCursor(res.data.nextCursor || null);
           setHasMoreMessages(!!res.data.nextCursor);
           if (isInitial) {
             setMessages(newMsgs.reverse());
           } else {
-            setMessages((prev) => [...prev, ...newMsgs.filter((m) => !prev.some((p) => p._id === m._id))]);
+            setMessages((prev) => [
+              ...prev,
+              ...newMsgs.filter((m: any) => !prev.some((p: any) => p._id === m._id)),
+            ])            
           }
         } catch (e) {
           console.error("fetch AI msgs error", e);
