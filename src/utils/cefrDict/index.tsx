@@ -39,7 +39,7 @@ const normalizePunc = (s: string) =>
 const stripDiacritics = (s: string) =>
   normalizePunc(String(s ?? ''))
     .normalize('NFD')
-    // @ts-expect-error: unicode property escapes supported at runtime
+    // @ts-expect-error unicode property escapes ok at runtime
     .replace(/\p{Diacritic}/gu, '')
     .replace(/ß/g, 'ss')
     .toLowerCase();
@@ -50,45 +50,40 @@ function toTier(v: any): CEFR | null {
   return (['A1','A2','B1','B2','C1','C2'] as CEFR[]).includes(s) ? s : null;
 }
 
-/* ───────────────────────── 동적 import 맵 ───────────────────────── */
-// JSON을 코드 스플리팅으로 로드합니다. (tsconfig: resolveJsonModule 필요)
-type JsonMod<T> = { default: T };
-
-type LEntry = { form: string; CEFR?: CEFR | string | null; norm?: string };
-
-const loadLight = (lang: SupportedLang): Promise<LEntry[] | null> => {
-  const m: Partial<Record<SupportedLang, () => Promise<JsonMod<LEntry[]>>>> = {
-    en: () => import('../../constants/cefr_form_cefr/english_form_cefr.json'),
-    es: () => import('../../constants/cefr_form_cefr/spanish_form_cefr.json'),
-    fr: () => import('../../constants/cefr_form_cefr/french_form_cefr.json'),
-    zh: () => import('../../constants/cefr_form_cefr/chinese_form_cefr.json'),
-    ja: () => import('../../constants/cefr_form_cefr/japanese_form_cefr.json'),
-    de: () => import('../../constants/cefr_form_cefr/german_form_cefr.json'),
-    ar: () => import('../../constants/cefr_form_cefr/arabic_form_cefr.json'),
-    it: () => import('../../constants/cefr_form_cefr/italian_form_cefr.json'),
-    pt: () => import('../../constants/cefr_form_cefr/portuguese_form_cefr.json'),
-  };
-  const fn = m[lang];
-  return fn ? fn().then(mod => mod.default as LEntry[]) : Promise.resolve(null);
+/* ───────────────────────── 런타임 fetch 경로 ───────────────────────── */
+const LIGHT_URL: Partial<Record<SupportedLang, string>> = {
+  en: '/cefr_form_cefr/english_form_cefr.json',
+  es: '/cefr_form_cefr/spanish_form_cefr.json',
+  fr: '/cefr_form_cefr/french_form_cefr.json',
+  zh: '/cefr_form_cefr/chinese_form_cefr.json',
+  ja: '/cefr_form_cefr/japanese_form_cefr.json',
+  de: '/cefr_form_cefr/german_form_cefr.json',
+  ar: '/cefr_form_cefr/arabic_form_cefr.json',
+  it: '/cefr_form_cefr/italian_form_cefr.json',
+  pt: '/cefr_form_cefr/portuguese_form_cefr.json',
 };
 
-const loadFull = (lang: SupportedLang): Promise<CEntry[] | null> => {
-  const m: Partial<Record<SupportedLang, () => Promise<JsonMod<CEntry[]>>>> = {
-    en: () => import('../../constants/cefr/english_vocab_with_cefr.json'),
-    es: () => import('../../constants/cefr/spanish_vocab_with_cefr.json'),
-    fr: () => import('../../constants/cefr/french_vocab_with_cefr.json'),
-    zh: () => import('../../constants/cefr/chinese_vocab_with_cefr.json'),
-    ja: () => import('../../constants/cefr/japanese_vocab_with_cefr.json'),
-    de: () => import('../../constants/cefr/german_vocab_with_cefr.json'),
-    ar: () => import('../../constants/cefr/arabic_vocab_with_cefr.json'),
-    it: () => import('../../constants/cefr/italian_vocab_with_cefr.json'),
-    pt: () => import('../../constants/cefr/portuguese_vocab_with_cefr.json'),
-  };
-  const fn = m[lang];
-  return fn ? fn().then(mod => mod.default as CEntry[]) : Promise.resolve(null);
+const FULL_URL: Partial<Record<SupportedLang, string>> = {
+  en: '/cefr/english_vocab_with_cefr.json',
+  es: '/cefr/spanish_vocab_with_cefr.json',
+  fr: '/cefr/french_vocab_with_cefr.json',
+  zh: '/cefr/chinese_vocab_with_cefr.json',
+  ja: '/cefr/japanese_vocab_with_cefr.json',
+  de: '/cefr/german_vocab_with_cefr.json',
+  ar: '/cefr/arabic_vocab_with_cefr.json',
+  it: '/cefr/italian_vocab_with_cefr.json',
+  pt: '/cefr/portuguese_vocab_with_cefr.json',
 };
+
+async function fetchJson<T>(url: string): Promise<T> {
+  const res = await fetch(url, { cache: 'force-cache' });
+  if (!res.ok) throw new Error(`Failed to fetch ${url} (${res.status})`);
+  return res.json() as Promise<T>;
+}
 
 /* ───────────────────────── LIGHT 룩업 (경량) ───────────────────────── */
+type LEntry = { form: string; CEFR?: CEFR | string | null; norm?: string };
+
 type LightLookup = {
   byFormCEFR: Map<string, CEFR[]>;
   byNormCEFR: Map<string, CEFR[]>;
@@ -122,7 +117,9 @@ function buildLightLookupSync(arr: LEntry[] | null): LightLookup | null {
 }
 
 async function buildLightLookup(lang: SupportedLang): Promise<LightLookup | null> {
-  const arr = await loadLight(lang);
+  const url = LIGHT_URL[lang];
+  if (!url) return null;
+  const arr = await fetchJson<LEntry[]>(url);
   const lk = buildLightLookupSync(arr);
   if (lk) lightCache.set(lang, lk);
   return lk;
@@ -190,7 +187,6 @@ function isTargetChar(lang: SupportedLang, ch: string): boolean {
 type DictInfo = { set: Set<string>; maxLen: number };
 const dictSetCache = new Map<SupportedLang, DictInfo>();
 
-// FULL 어휘 집합은 fullCache 구축 시 함께 채워집니다.
 function getDictInfo(lang: SupportedLang): DictInfo | null {
   return dictSetCache.get(lang) ?? null;
 }
@@ -216,7 +212,6 @@ function segmentRunWithDict(lang: SupportedLang, run: string, info: DictInfo): s
 function segmentNoSpaceWithDict(lang: SupportedLang, text: string): string[] {
   const info = getDictInfo(lang);
   if (!info) {
-    // 사전 세트가 아직 없으면 최소 분해
     return text.replace(/\s+/g, '').split('');
   }
   const s = normalizePunc(text);
@@ -265,7 +260,6 @@ function buildLookupSync(arr: CEntry[] | null, lang: SupportedLang): Lookup | nu
   const byForm = new Map<string, CEntry[]>();
   const byNorm = new Map<string, CEntry[]>();
 
-  // 동시에 DictInfo(세그먼트용)도 구성
   const set = new Set<string>();
   let maxLen = 1;
 
@@ -273,13 +267,14 @@ function buildLookupSync(arr: CEntry[] | null, lang: SupportedLang): Lookup | nu
     const f = safeLower(e.form);
     if (f) {
       byForm.set(f, [...(byForm.get(f) || []), e]);
-      if (f) { set.add(normalizePunc(e.form)); if (f.length > maxLen) maxLen = Math.max(maxLen, f.length); }
+      const nf = normalizePunc(e.form);
+      if (nf) { set.add(nf); if (nf.length > maxLen) maxLen = Math.max(maxLen, nf.length); }
     }
     const n = e.norm != null ? safeLower(e.norm) : stripDiacritics(coerce(e.form));
     if (n) {
       byNorm.set(n, [...(byNorm.get(n) || []), e]);
-      const normV = normalizePunc(e.norm ?? e.form);
-      if (normV) { set.add(normV); if (normV.length > maxLen) maxLen = Math.max(maxLen, normV.length); }
+      const nn = normalizePunc(e.norm ?? e.form);
+      if (nn) { set.add(nn); if (nn.length > maxLen) maxLen = Math.max(maxLen, nn.length); }
     }
   }
 
@@ -288,7 +283,9 @@ function buildLookupSync(arr: CEntry[] | null, lang: SupportedLang): Lookup | nu
 }
 
 async function buildLookup(lang: SupportedLang): Promise<Lookup | null> {
-  const arr = await loadFull(lang);
+  const url = FULL_URL[lang];
+  if (!url) return null;
+  const arr = await fetchJson<CEntry[]>(url);
   const lk = buildLookupSync(arr, lang);
   if (lk) fullCache.set(lang, lk);
   return lk;
@@ -390,26 +387,23 @@ export async function findEntriesAsync(
   enrichCandidates(lang, token, norm, candidates);
 
   const picked = new Map<string, CEntry>();
+  const richness = (x: CEntry) => {
+    const defs = (x.definitions?.length ?? 0);
+    const exs  = (x.examples?.length ?? 0);
+    const enD  = ((x as any).en_definitions?.length ?? 0);
+    const forms= ((x as any).forms?.length ?? 0);
+    const hasP = !!(x as any).pinyin ||
+      !!(((x as any).forms?.[0]?.transcriptions?.pinyin));
+    return defs*10 + enD*8 + exs*2 + forms*1 + (hasP?2:0);
+  };
+
   for (const cand of candidates) {
     const arrs = [ lk.byForm.get(cand) || [], lk.byNorm.get(cand) || [] ];
     for (const arr of arrs) {
       for (const e of arr) {
         const key = `${e.form}|${e.CEFR}`;
         const prev = picked.get(key);
-        if (!prev) picked.set(key, e);
-        else {
-          // 풍부한 쪽 선택
-          const richness = (x: CEntry) => {
-            const defs = (x.definitions?.length ?? 0);
-            const exs  = (x.examples?.length ?? 0);
-            const enD  = ((x as any).en_definitions?.length ?? 0);
-            const forms= ((x as any).forms?.length ?? 0);
-            const hasP = !!(x as any).pinyin ||
-              !!(((x as any).forms?.[0]?.transcriptions?.pinyin));
-            return defs*10 + enD*8 + exs*2 + forms*1 + (hasP?2:0);
-          };
-          if (richness(e) > richness(prev)) picked.set(key, e);
-        }
+        if (!prev || richness(e) > richness(prev)) picked.set(key, e);
       }
     }
   }
@@ -443,25 +437,23 @@ export function findEntries(lang: SupportedLang, token: string): CEntry[] {
   enrichCandidates(lang, token, norm, candidates);
 
   const picked = new Map<string, CEntry>();
+  const richness = (x: CEntry) => {
+    const defs = (x.definitions?.length ?? 0);
+    const exs  = (x.examples?.length ?? 0);
+    const enD  = ((x as any).en_definitions?.length ?? 0);
+    const forms= ((x as any).forms?.length ?? 0);
+    const hasP = !!(x as any).pinyin ||
+      !!(((x as any).forms?.[0]?.transcriptions?.pinyin));
+    return defs*10 + enD*8 + exs*2 + forms*1 + (hasP?2:0);
+  };
+
   for (const cand of candidates) {
     const arrs = [ lk.byForm.get(cand) || [], lk.byNorm.get(cand) || [] ];
     for (const arr of arrs) {
       for (const e of arr) {
         const key = `${e.form}|${e.CEFR}`;
         const prev = picked.get(key);
-        if (!prev) picked.set(key, e);
-        else {
-          const richness = (x: CEntry) => {
-            const defs = (x.definitions?.length ?? 0);
-            const exs  = (x.examples?.length ?? 0);
-            const enD  = ((x as any).en_definitions?.length ?? 0);
-            const forms= ((x as any).forms?.length ?? 0);
-            const hasP = !!(x as any).pinyin ||
-              !!(((x as any).forms?.[0]?.transcriptions?.pinyin));
-            return defs*10 + enD*8 + exs*2 + forms*1 + (hasP?2:0);
-          };
-          if (richness(e) > richness(prev)) picked.set(key, e);
-        }
+        if (!prev || richness(e) > richness(prev)) picked.set(key, e);
       }
     }
   }
