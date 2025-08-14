@@ -1294,7 +1294,8 @@ function ChattingRoomPageInner() {
   const renderMessage = (item: any) => {
     const isMine = item.senderId === userId;
     const messageType = isAIChat ? "ai" : buddyGroupId ? "buddy" : "normal";
-    const chatContextId: string | undefined = buddyGroupId ?? (chatId ?? undefined);
+    const chatContextId: string | undefined = buddyGroupId
+      ?? (chatId ?? undefined);
 
     return (
       <MessageBubble
@@ -1322,7 +1323,7 @@ function ChattingRoomPageInner() {
 
   /* ───────── JSX ───────── */
   return (
-    <div ref={bubbleRef as any} className={styles.wrapper}>
+    <div ref={bubbleRef} className={styles.wrapper}>
       {/* Header */}
       <header className={styles.header}>
         <button className={styles.iconBtn} onClick={() => router.back()} aria-label="Back">
