@@ -509,14 +509,15 @@ function MessageBubble(props: MessageBubbleProps) {
             {/* 간단 정의/예문 (있을 때만) */}
             {selectedEntries && selectedEntries.length > 0 && (
               <div style={{ maxHeight: 260, overflowY: 'auto', width: '100%', textAlign: 'left' }}>
-                {selectedEntries.map((e, i) => {
-                  const defLines =
-                    (e.definitions && e.definitions.length > 0)
-                      ? e.definitions
-                      : ((e as any).en_definitions && (e as any).en_definitions.length > 0)
-                        ? (e as any).en_definitions
-                        : ((e as any).meaning ? [String((e as any).meaning)] : []);
-                  const exLines = (e.examples || []);
+                {selectedEntries.map((e: CEntry, i: number) => {
+                  const defLines: string[] =
+                  (e.definitions && e.definitions.length > 0)
+                    ? e.definitions as string[]
+                    : ((e as any).en_definitions && (e as any).en_definitions.length > 0)
+                      ? (e as any).en_definitions as string[]
+                      : ((e as any).meaning ? [String((e as any).meaning)] : []);
+                
+                  const exLines: string[] = (e.examples || []) as string[];
                   return (
                     <div key={`${e.form}-${e.CEFR}-${i}`} style={{ marginBottom: 12 }}>
                       <div style={{ fontWeight: 500, marginBottom: 4 }}>
@@ -525,8 +526,8 @@ function MessageBubble(props: MessageBubbleProps) {
                       {defLines.length > 0 && (
                         <>
                           <div style={{ fontSize: 12, color: '#888' }}>{t('definitions') || 'Definitions'}</div>
-                          <div style={{ whiteSpace: 'pre-wrap', fontSize: 14, lineHeight: '20px' }}>
-                            {defLines.map((d, j) => `• ${d}`).join('\n')}
+                          <div style={{ whiteSpace: 'pre-wrap', fontSize: 13, lineHeight: '18px', fontStyle: 'italic' }}>
+                            {exLines.map((x: string, j: number) => `• ${x}`).join('\n')}
                           </div>
                         </>
                       )}
