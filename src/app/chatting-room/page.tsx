@@ -947,9 +947,9 @@ export default function ChattingRoomPage() {
       // AI chat path
       if (isAIChat) {
         const tempId = Date.now().toString();
-        const tempMsg = {
+        const tempMsg: ChatMessage = {
           _id: tempId,
-          senderId: me,
+          senderId: (me ?? userId ?? "unknown"),
           message: text || "",
           timestamp: new Date().toISOString(),
           imageUrl: null,
@@ -1010,9 +1010,9 @@ export default function ChattingRoomPage() {
 
       // normal/buddy chat path
       const temporaryId = Date.now().toString();
-      const temporaryMessage = {
+      const temporaryMessage: ChatMessage = {
         _id: temporaryId,
-        senderId: me,
+        senderId: (me ?? userId ?? "unknown"),
         message: text || "",
         timestamp: new Date().toISOString(),
         imageUrl: imageUri || null,
