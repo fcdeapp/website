@@ -49,7 +49,8 @@ import React, {
   useEffect,
   useRef,
   useMemo,
-  useCallback,
+  useCallback, 
+  Suspense
 } from "react";
 import Image from "next/image";
 import classNames from "classnames";
@@ -173,8 +174,11 @@ declare global {
   }
 }
 
-/* ───────────────────────── Page Component ───────────────────────── */
-export default function ChattingRoomPage() {
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+export const fetchCache = "default-no-store";
+
+function ChattingRoomPageInner() {
   const { SERVER_URL, FEATURE_UNDER_DEV } = useConfig();
   const { t } = useTranslation();
   const router = useRouter();
@@ -305,16 +309,17 @@ export default function ChattingRoomPage() {
 
   /* ───────── helpers: storage ───────── */
   const lsGet = (k: string) => {
+    if (typeof window === "undefined") return null;
     try {
-      const v = localStorage.getItem(k);
-      return v;
+      return window.localStorage.getItem(k);
     } catch {
       return null;
     }
   };
   const lsSet = (k: string, v: string) => {
+    if (typeof window === "undefined") return;
     try {
-      localStorage.setItem(k, v);
+      window.localStorage.setItem(k, v);
     } catch {}
   };
 
@@ -1829,5 +1834,13 @@ export default function ChattingRoomPage() {
         onClose={() => setShowGuide(false)}
       />
     </div>
+  );
+}
+
+export default function ChattingRoomPage() {
+  return (
+    <Suspense fallback={null}>
+      <ChattingRoomPageInner />
+    </Suspense>
   );
 }
