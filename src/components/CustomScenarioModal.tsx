@@ -20,7 +20,7 @@ interface Props {
   scenarioText: string;
   persona?: Persona;
   onClose: () => void;
-  onLeave: () => void;
+  onLeave: () => void | Promise<void>;
   onShare: () => Promise<void>;
   chatId: string;
 }
