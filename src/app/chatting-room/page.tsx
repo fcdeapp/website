@@ -174,10 +174,6 @@ declare global {
   }
 }
 
-export const dynamic = "force-dynamic";
-export const revalidate = 0;
-export const fetchCache = "default-no-store";
-
 function ChattingRoomPageInner() {
   const { SERVER_URL, FEATURE_UNDER_DEV } = useConfig();
   const { t } = useTranslation();
