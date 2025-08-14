@@ -262,13 +262,13 @@ function ChattingRoomPageInner() {
   const [customModalVisible, setCustomModalVisible] = useState(false);
 
   /* selection/guide measure */
-  const [aiBtnRef, aiBtnPos] = useMeasure();
-  const [scenarioRef, scenarioPos] = useMeasure();
-  const [badgeRef, badgePos] = useMeasure();
-  const [langBtnRef, langBtnPos] = useMeasure();
-  const [mcqBtnRef, mcqBtnPos] = useMeasure();
-  const [bubbleRef, bubblePos] = useMeasure();
-  const [sendBtnRef, sendBtnPos] = useMeasure();
+  const [aiBtnRef, aiBtnPos]       = useMeasure<HTMLDivElement>();
+  const [scenarioRef, scenarioPos] = useMeasure<HTMLDivElement>();
+  const [badgeRef, badgePos]       = useMeasure<HTMLDivElement>();
+  const [langBtnRef, langBtnPos]   = useMeasure<HTMLButtonElement>();
+  const [mcqBtnRef, mcqBtnPos]     = useMeasure<HTMLButtonElement>();
+  const [bubbleRef, bubblePos]     = useMeasure<HTMLDivElement>();
+  const [sendBtnRef, sendBtnPos]   = useMeasure<HTMLDivElement>();  
 
   const [showGuide, setShowGuide] = useState(false);
   const storageKey = "chatRoomGuide";
@@ -1364,7 +1364,7 @@ function ChattingRoomPageInner() {
         <>
           <div
             className={classNames(styles.aiBar, { [styles.aiBarExpanded]: isAiMenuExpanded })}
-            ref={aiBtnRef as any}
+            ref={aiBtnRef}
           >
             {!isAiMenuExpanded ? (
               <div className={styles.aiBarCollapsed}>
@@ -1376,7 +1376,7 @@ function ChattingRoomPageInner() {
                   <button className={styles.aiPlus} onClick={() => setCustomModalVisible(true)} />
                 )}
 
-                <div className={styles.scenarioRow} ref={scenarioRef as any}>
+                <div className={styles.scenarioRow} ref={scenarioRef}>
                   {!isCustomAI ? (
                     <div className={styles.scenarioScroll}>
                       {SCENARIOS.map((s) => {
@@ -1504,14 +1504,14 @@ function ChattingRoomPageInner() {
 
           {/* badges row */}
           {!isAiMenuExpanded && !pendingChoices && (
-            <div className={styles.badges} ref={badgeRef as any}>
+            <div className={styles.badges} ref={badgeRef}>
               <div className={styles.badgeScroll}>
                 <GramIsleBadge count={grammarCnt} icon="edit-3" accent="#F2542D" />
                 <GramIsleBadge count={expressionCnt} icon="type" accent="#D8315B" />
 
                 <button
                   className={classNames(styles.langBtn, { [styles.langBtnActive]: isLanguageExpanded })}
-                  ref={langBtnRef as any}
+                  ref={langBtnRef}
                   onClick={() => setIsLanguageExpanded((v) => !v)}
                 >
                   <img
@@ -1541,7 +1541,7 @@ function ChattingRoomPageInner() {
 
                 <button
                   className={classNames(styles.smallPill, { [styles.smallPillActive]: enableMCQ })}
-                  ref={mcqBtnRef as any}
+                  ref={mcqBtnRef}
                   onClick={() => setEnableMCQ((v) => !v)}
                 >
                   {t("toggle_mcq")}
@@ -1588,7 +1588,7 @@ function ChattingRoomPageInner() {
 
       {/* Input (hidden when MCQ open) */}
       {!pendingChoices && (
-        <div ref={sendBtnRef as any}>
+        <div ref={sendBtnRef}>
           <MessageInputFormAI
             value={voiceBuffer}
             onChangeText={(v: string) => setVoiceBuffer(v)}
