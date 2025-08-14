@@ -135,7 +135,7 @@ const MessageInputFormAI: React.FC<Props> = ({
             className={styles.previewCard}
             onClick={(e) => e.stopPropagation()}
           >
-            <Image
+            <img
               src={selectedImage}
               alt="preview"
               fill
@@ -224,7 +224,7 @@ const MessageInputFormAI: React.FC<Props> = ({
             onClick={handleSend}
             disabled={sending}
           >
-            <Image
+            <img
               src="/assets/chatInputSend.png"
               alt="send"
               width={24}
