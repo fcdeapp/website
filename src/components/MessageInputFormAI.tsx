@@ -171,7 +171,7 @@ const MessageInputFormAI: React.FC<Props> = ({
               disabled={sending}
               onClick={pickImage}
             >
-              <Image
+              <img
                 src="/assets/chatInputImage.png"
                 alt="img"
                 width={24}
@@ -205,7 +205,7 @@ const MessageInputFormAI: React.FC<Props> = ({
             onClick={onToggleVoiceChatMode}
             disabled={sending}
           >
-            <Image
+            <img
               src={
                 isVoiceChatMode
                   ? "/assets/chatInputPlayOn.png"
