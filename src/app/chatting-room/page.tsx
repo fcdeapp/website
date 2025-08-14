@@ -1325,7 +1325,7 @@ function ChattingRoomPageInner() {
       {/* Header */}
       <header className={styles.header}>
         <button className={styles.iconBtn} onClick={() => router.back()} aria-label="Back">
-          <Image src="/BackIcon.png" alt="Back" width={28} height={28} />
+          <img src="/image/BackIcon.png" alt="Back" width={28} height={28} />
         </button>
 
         <button
@@ -1345,14 +1345,14 @@ function ChattingRoomPageInner() {
               ? `${chatTitle} (${chat?.userIds?.length || 0})`
               : savedAssistant || nickname || savedPersona?.name || ""}
           </span>
-          <Image src="/chev-down.svg" alt="" width={14} height={14} />
+          <img src="/image/chev-down.svg" alt="" width={14} height={14} />
         </button>
 
         {buddyGroupId ? (
           <BuddyProfileWithFlag buddyGroupId={buddyGroupId} buddyPhoto={""} activityCountry={""} size={32} />
         ) : (
           <button className={styles.iconBtn} onClick={() => setMenuVisible(true)} aria-label="Menu">
-            <Image src="/full-post-menu-icon.png" alt="menu" width={28} height={28} />
+            <img src="/full-post-menu-icon.png" alt="menu" width={28} height={28} />
           </button>
         )}
       </header>
