@@ -38,7 +38,7 @@ function makeUrlFromKey(key: string): string {
       return "https://kr.fcde.app";
 
     default:
-      return "https://fcde.app";
+      return "https://www.fcde.app";
   }
 }
 
@@ -68,7 +68,7 @@ export function getDefaultServerUrl(): string {
     return process.env.NEXT_PUBLIC_SERVER_URL;
   }
   // SSR/CSR 모두 fallback 하나로 고정(원하면 원하는 기본값으로 바꾸기)
-  return "https://fcde.app";
+  return "https://www.fcde.app";
 }
 
 // 교차출처 fetch를 없애기 위해 isHealthy / getServerUrlAsync 제거 또는 비활성화
