@@ -39,8 +39,11 @@ const normalizePunc = (s: string) =>
 const stripDiacritics = (s: string) =>
   normalizePunc(String(s ?? ''))
     .normalize('NFD')
-    // @ts-expect-error unicode property escapes ok at runtime
-    .replace(/\p{Diacritic}/gu, '')
+    // 결합 분음 부호(Combining Marks) 전체 범위 제거
+    .replace(
+      /[\u0300-\u036f\u1ab0-\u1aff\u1dc0-\u1dff\u20d0-\u20ff\uFE20-\uFE2F]/g,
+      ''
+    )
     .replace(/ß/g, 'ss')
     .toLowerCase();
 
