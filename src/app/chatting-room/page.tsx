@@ -695,8 +695,12 @@ export default function ChattingRoomPage() {
     if (!chatId && !buddyGroupId) return;
     const socket = io(SERVER_URL, { transports: ["websocket", "polling"] });
     socketRef.current = socket;
-    const roomId = buddyGroupId ? buddyGroupId : isAIChat ? `ai:${chatId}` : chatId;
-    socket.emit("joinRoom", roomId);
+    const roomId: string | undefined = buddyGroupId
+      ?? (isAIChat ? (chatId ? `ai:${chatId}` : undefined) : (chatId ?? undefined));
+
+    if (roomId) {
+      socket.emit("joinRoom", roomId);
+    }
 
     socket.on("newMessage", (newMessage: any) => {
       setMessages((prev) => {
@@ -1288,6 +1292,8 @@ export default function ChattingRoomPage() {
   const renderMessage = (item: any) => {
     const isMine = item.senderId === userId;
     const messageType = isAIChat ? "ai" : buddyGroupId ? "buddy" : "normal";
+    const chatContextId: string | undefined = buddyGroupId ?? (chatId ?? undefined);
+
     return (
       <MessageBubble
         content={item.message}
@@ -1300,7 +1306,7 @@ export default function ChattingRoomPage() {
         isTextUploading={!item.imageUrl && item.isUploading}
         _id={item._id}
         messageType={messageType}
-        chatContextId={buddyGroupId ? buddyGroupId : chatId}
+        chatContextId={chatContextId}
         onDelete={(messageId) => setMessages((prev) => prev.filter((m) => m._id !== messageId))}
         issues={grammarIssues[item._id || ""] || []}
         onOpenQuiz={(mode, sentence, rawIssues) => {
