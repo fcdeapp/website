@@ -591,7 +591,7 @@ function ChattingRoomPageInner() {
     senderId: m.role === "assistant" ? "brody-ai" : userId,
     message: m.content,
     timestamp: m.timestamp,
-    profileImage: m.role === "assistant" ? "/AIProfile.png" : null,
+    profileImage: m.role === "assistant" ? "/assets/AIProfile.png" : null,
     imageUrl: null,
   });
 
@@ -740,7 +740,7 @@ function ChattingRoomPageInner() {
           senderId: "brody-ai",
           message: data.assistantReply || "",
           timestamp: new Date().toISOString(),
-          profileImage: "/AIProfile.png",
+          profileImage: "/assets/AIProfile.png",
         };
         setMessages((prev) => [aiMsg, ...prev]);
         if (Array.isArray(data.choices) && data.choices.length) {
@@ -993,7 +993,7 @@ function ChattingRoomPageInner() {
             senderId: "brody-ai",
             message: assistantReply,
             timestamp: new Date().toISOString(),
-            profileImage: "/AIProfile.png",
+            profileImage: "/assets/AIProfile.png",
           };
           setMessages((prev) => [aiMessageObj, ...prev]);
 
@@ -1353,7 +1353,7 @@ function ChattingRoomPageInner() {
           <BuddyProfileWithFlag buddyGroupId={buddyGroupId} buddyPhoto={""} activityCountry={""} size={32} />
         ) : (
           <button className={styles.iconBtn} onClick={() => setMenuVisible(true)} aria-label="Menu">
-            <img src="/full-post-menu-icon.png" alt="menu" width={28} height={28} />
+            <img src="/assets/full-post-menu-icon.png" alt="menu" width={28} height={28} />
           </button>
         )}
       </header>
@@ -1513,8 +1513,8 @@ function ChattingRoomPageInner() {
                   ref={langBtnRef as any}
                   onClick={() => setIsLanguageExpanded((v) => !v)}
                 >
-                  <Image
-                    src={(languageFlags as any)[selectedLanguage] || "/flags/en.png"}
+                  <img
+                    src={(languageFlags as any)[selectedLanguage] || "/assets/flags/en.png"}
                     alt={selectedLanguage}
                     width={16}
                     height={16}
@@ -1576,7 +1576,7 @@ function ChattingRoomPageInner() {
 
           {noMessages && (
             <div className={styles.empty}>
-              <Image src="/plus-icon.png" alt="" width={16} height={16} />
+              <img src="/assets/plus-icon.png" alt="" width={16} height={16} />
               <span>{t("start_first_message")}</span>
             </div>
           )}
@@ -1686,8 +1686,8 @@ function ChattingRoomPageInner() {
                           setIsLanguageExpanded(false);
                         }}
                       >
-                        <Image
-                          src={(languageFlags as any)[code] || "/flags/en.png"}
+                        <img
+                          src={(languageFlags as any)[code] || "/assets/flags/en.png"}
                           alt={code}
                           width={24}
                           height={24}
