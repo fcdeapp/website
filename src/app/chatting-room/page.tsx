@@ -57,6 +57,7 @@ import styles from "../../styles/pages/ChattingRoom.module.css";
 import { useSearchParams, useRouter } from "next/navigation";
 import axios from "axios";
 import io from "socket.io-client";
+import type { Socket } from "socket.io-client";
 
 /* Shared contexts & utils */
 import { useConfig } from "../../context/ConfigContext";
@@ -281,6 +282,7 @@ export default function ChattingRoomPage() {
 
   /* socket */
   const socketRef = useRef<any>(null);
+  const socket: Socket = io(SERVER_URL, { transports: ["websocket", "polling"] });
 
   /* voice recognition / TTS */
   const recognitionRef = useRef<any>(null);
@@ -749,7 +751,10 @@ export default function ChattingRoomPage() {
       });
     }
 
-    socket.on("connect_error", (err) => console.error("socket error", err));
+    socket.on("connect_error", (err: Error) => {
+      console.error("socket error", err.message, err);
+    });
+
     return () => {
       socket.disconnect();
     };
