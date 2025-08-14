@@ -76,7 +76,7 @@ export function getDefaultServerUrl(): string {
   }
 
   // 3) SSR 기본
-  return "https://fcde.app";
+  return "https://www.fcde.app";
 }
 
 /** /health 체크 (간단 버전) */
@@ -127,7 +127,7 @@ export async function getServerUrlAsync(): Promise<string> {
 /** 기본 export: 앱과 동일하게 부가 플래그/버전 포함 */
 const config = {
   // 즉시 사용이 필요할 때는 기본값(SSR 안전)
-  SERVER_URL: getDefaultServerUrl(),
+  SERVER_URL: getDefaultServerUrl() || "https://www.fcde.app",
   APP_VERSION: process.env.NEXT_PUBLIC_APP_VERSION || "",
   FACEBOOK_INTERSTITIAL_PLACEMENT_ID:
     process.env.NEXT_PUBLIC_FACEBOOK_INTERSTITIAL_PLACEMENT_ID || "",

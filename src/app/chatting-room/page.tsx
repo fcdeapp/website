@@ -66,6 +66,7 @@ import * as freqStore from "../../context/freqStore";
 import languageFlags from "../../constants/languageFlags";
 import useMeasure from "../../hooks/useMeasure";
 import { ensureIndexedIssues, applyIssues } from "../../utils/grammarUtils";
+import { ChevronDown } from "lucide-react";
 
 /* Reused components */
 import MessageBubble from "../../components/MessageBubble";
@@ -1325,7 +1326,7 @@ function ChattingRoomPageInner() {
       {/* Header */}
       <header className={styles.header}>
         <button className={styles.iconBtn} onClick={() => router.back()} aria-label="Back">
-          <img src="/image/BackIcon.png" alt="Back" width={28} height={28} />
+          <img src="/assets/BackIcon.png" alt="Back" width={28} height={28} />
         </button>
 
         <button
@@ -1345,7 +1346,7 @@ function ChattingRoomPageInner() {
               ? `${chatTitle} (${chat?.userIds?.length || 0})`
               : savedAssistant || nickname || savedPersona?.name || ""}
           </span>
-          <img src="/image/chev-down.svg" alt="" width={14} height={14} />
+          <ChevronDown size={14} aria-hidden="true" className={styles.chevIcon} />
         </button>
 
         {buddyGroupId ? (
