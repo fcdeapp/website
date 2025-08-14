@@ -14,7 +14,7 @@ export interface Persona {
   catchPhrase?: string;
 }
 
-interface Props {d
+interface Props {
   visible: boolean;
   imageUri: string;
   scenarioText: string;
