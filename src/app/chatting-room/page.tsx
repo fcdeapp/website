@@ -56,7 +56,7 @@ import classNames from "classnames";
 import styles from "../../styles/pages/ChattingRoom.module.css";
 import { useSearchParams, useRouter } from "next/navigation";
 import axios from "axios";
-import io from "socket.io-client";
+import { io } from "socket.io-client";
 import type { Socket } from "socket.io-client";
 
 /* Shared contexts & utils */
@@ -281,8 +281,7 @@ export default function ChattingRoomPage() {
   } | null>(null);
 
   /* socket */
-  const socketRef = useRef<any>(null);
-  const socket: Socket = io(SERVER_URL, { transports: ["websocket", "polling"] });
+  const socketRef = useRef<Socket | null>(null);
 
   /* voice recognition / TTS */
   const recognitionRef = useRef<any>(null);
