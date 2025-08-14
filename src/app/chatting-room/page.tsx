@@ -187,7 +187,6 @@ function ChattingRoomPageInner() {
   const otherUserId = params.get("otherUserId") || undefined;
   const buddyGroupId = params.get("buddyGroupId") || undefined;
   const routeChatId = params.get("chatId") || undefined;
-  const district = params.get("district") || undefined;
 
   /* identity & session */
   const [userId, setUserId] = useState<string>("");
@@ -251,7 +250,6 @@ function ChattingRoomPageInner() {
     !otherUserId || otherUserId === "brody-ai" || otherUserId.startsWith("custom-ai");
   const isCustomAI = !!otherUserId?.startsWith("custom-ai");
   const isFullyActive = isVoiceChatMode && isRolePlayMode;
-  const isRegionalChat = !!district && !buddyGroupId && !otherUserId;
 
   /* custom-AI saved state */
   const [savedScenario, setSavedScenario] = useState<Scenario | null>(null);
@@ -634,47 +632,6 @@ function ChattingRoomPageInner() {
 
   const fetchMessages = useCallback(
     async (isInitial = false) => {
-
-      if (isRegionalChat) {
-        const { token } = await fetchUserData();
-        if (!token || !district) return;
-  
-        const limit = 20;
-        let url = `${SERVER_URL}/district-chat/${encodeURIComponent(district)}/messages?limit=${limit}`;
-        if (!isInitial && nextCursor) url += `&cursor=${encodeURIComponent(nextCursor)}`;
-  
-        if (isInitial) {
-          setMessages([]);
-          setNextCursor(null);
-        }
-        setIsLoadingMore(true);
-        try {
-          const res = await axios.get(url, { headers: { Authorization: `Bearer ${token}` } });
-          const newMessages = res.data.messages || [];
-          setNextCursor(res.data.nextCursor || null);
-          setHasMoreMessages(!!res.data.nextCursor);
-  
-          if (isInitial) {
-            setMessages(newMessages);
-          } else {
-            setMessages((prev) => {
-              const uniq = newMessages.filter((m: any) => !prev.some((p: any) => p._id === m._id));
-              return [...prev, ...uniq];
-            });
-          }
-        } catch (e: any) {
-          if (e?.response?.status === 404 && isInitial) {
-            setMessages([]);
-            setNextCursor(null);
-          } else {
-            console.error("fetch regional msgs error", e);
-          }
-        } finally {
-          setIsLoadingMore(false);
-        }
-        return;
-      }
-
       if (isAIChat) {
         const { token } = await fetchUserData();
         if (!token || !chatId) return;
@@ -1017,50 +974,6 @@ function ChattingRoomPageInner() {
       options: { skipGrammarCheck?: boolean; extraIssue?: Issue } = {}
     ) => {
       setNoMessages(false);
-
-      if (isRegionalChat) {
-        const { userId: me } = await fetchUserData();
-        const token = await ensureLoggedIn();
-        if (!token || !district) return;
-  
-        const temporaryId = Date.now().toString();
-        const temporaryMessage: ChatMessage = {
-          _id: temporaryId,
-          senderId: (me ?? userId ?? "unknown"),
-          message: text || "",
-          timestamp: new Date().toISOString(),
-          imageUrl: imageUri || null,
-          isUploading: !!imageUri,
-        };
-        setMessages((prev) => [temporaryMessage, ...prev]);
-  
-        try {
-          const form = new FormData();
-          form.append("userId", me || "");
-          form.append("timestamp", new Date().toISOString());
-          if (text) form.append("content", text);
-          if (imageUri) {
-            const fileName = imageUri.split("/").pop() || "district.jpg";
-            form.append("image", new File([], fileName));
-          }
-          const { data: newMessage, status } = await axios.post(
-            `${SERVER_URL}/district-chat/${encodeURIComponent(district)}`,
-            form,
-            { headers: { Authorization: `Bearer ${token}` } }
-          );
-          if (status >= 200 && status < 300) {
-            newMessage.isUploading = false;
-            setMessages((prev) => prev.map((m) => (m._id === temporaryId ? newMessage : m)));
-          } else {
-            throw new Error("failed");
-          }
-        } catch (e) {
-          console.error(e);
-          setMessages((prev) => prev.filter((m) => m._id !== temporaryId));
-        }
-        return;
-      }
-
       const { userId: me } = await fetchUserData();
       const token = await ensureLoggedIn();
       if (!token) return;
@@ -1412,7 +1325,7 @@ function ChattingRoomPageInner() {
   /* ───────── Render helpers ───────── */
   const renderMessage = (item: any) => {
     const isMine = item.senderId === userId;
-    const messageType = isRegionalChat ? "regional" : (isAIChat ? "ai" : buddyGroupId ? "buddy" : "normal");
+    const messageType = isAIChat ? "ai" : buddyGroupId ? "buddy" : "normal";
     const chatContextId: string | undefined = buddyGroupId
       ?? (chatId ?? undefined);
 
@@ -1467,11 +1380,9 @@ function ChattingRoomPageInner() {
             className={classNames(styles.title, { [styles.titleGradient]: isNameGradient })}
             aria-live="polite"
           >
-            {isRegionalChat
-              ? `${district} ${t("chat_room")}`
-              : (chat?.type === "group"
-                  ? `${chatTitle} (${chat?.userIds?.length || 0})`
-                  : savedAssistant || nickname || savedPersona?.name || "")}
+            {chat?.type === "group"
+              ? `${chatTitle} (${chat?.userIds?.length || 0})`
+              : savedAssistant || nickname || savedPersona?.name || ""}
           </span>
           <ChevronDown size={14} aria-hidden="true" className={styles.chevIcon} />
         </button>
@@ -2015,17 +1926,12 @@ function ChattingRoomPageInner() {
             case "group":
               q.set("buddyGroupId", payload.buddyGroupId);
               break;
-            case "region":
-              // (선택) 지역 채팅을 같이 쓰려면 'district' 파라미터도 지원
-              q.set("district", payload.district);
-              break;
           }
 
           // 기존 쿼리와 충돌되지 않게 필요 없는 것들은 지움
           if (payload.type !== "group") q.delete("buddyGroupId");
           if (payload.type !== "personal") q.delete("chatId");
           if (payload.type !== "ai" && payload.type !== "custom-ai" && payload.type !== "personal") q.delete("otherUserId");
-          if (payload.type !== "region") q.delete("district");
 
           router.replace(`/chatting-room?${q.toString()}`);
         }}
