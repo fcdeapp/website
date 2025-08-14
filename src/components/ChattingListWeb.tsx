@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import classNames from "classnames";
 import styles from "../styles/components/ChattingListWeb.module.css";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import io from "socket.io-client";
 
 /* 외부(앱과 공통) 컴포넌트/훅/유틸이 이미 존재한다고 가정 */
 import { useConfig } from "../context/ConfigContext";
@@ -14,13 +13,10 @@ import GuideOverlay, { GuideStep } from "../components/GuideOverlay";
 import useMeasure from "../hooks/useMeasure";
 import BuddyProfileWithFlag from "../components/BuddyProfileWithFlag";
 import ProfileWithFlag from "../components/ProfileWithFlag";
-import BuddyGroupDetailModal from "../components/BuddyGroupDetailModal";
-import BuddyCreateModal from "../components/BuddyCreateModal";
 import { formatTimeDifference } from "../utils/timeUtils";
-import { getDistrictNameFromCoordinates } from "../utils/locationUtils";
 
 /* ───────────────────── Types ───────────────────── */
-type TabKey = "personal" | "buddy" | "region" | "search";
+type TabKey = "personal" | "buddy";
 
 interface Chat {
   _id: string;
@@ -61,8 +57,7 @@ type SelectPayload =
   | { type: "ai"; otherUserId: "brody-ai" }
   | { type: "custom-ai"; otherUserId: string; chatId?: string }
   | { type: "personal"; chatId: string; otherUserId: string }
-  | { type: "group"; buddyGroupId: string }
-  | { type: "region"; district: string };
+  | { type: "group"; buddyGroupId: string };
 
 interface Props {
   /** 좌측 패널 오픈/클로즈 */
@@ -77,8 +72,6 @@ interface Props {
 const TABS: { key: TabKey; i18n: string }[] = [
   { key: "personal", i18n: "personal" },
   { key: "buddy", i18n: "buddy" },
-  { key: "region", i18n: "region" },
-  { key: "search", i18n: "search.search" },
 ];
 
 const ls = {
@@ -88,11 +81,6 @@ const ls = {
     } catch {
       return null;
     }
-  },
-  set: (k: string, v: string) => {
-    try {
-      if (typeof window !== "undefined") window.localStorage.setItem(k, v);
-    } catch {}
   },
 };
 
@@ -117,25 +105,12 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
   const [aiRef, aiTarget] = useMeasure<HTMLDivElement>();
   const [friendsRef, friendsTarget] = useMeasure<HTMLDivElement>();
   const [buddyRef, buddyTarget] = useMeasure<HTMLDivElement>();
-  const [regionRef, regionTarget] = useMeasure<HTMLDivElement>();
 
   const [showChatGuide, setShowChatGuide] = useState(false);
-  const CHAT_GUIDE_KEY = "overlay_chatlist_web_v1";
+  const CHAT_GUIDE_KEY = "overlay_chatlist_web_v2";
 
-  /* Region (district) */
-  const [district, setDistrict] = useState<string>("");
-  const geoAbortRef = useRef<number | null>(null);
-
-  const chatGuideSteps: GuideStep[] = useMemo(() => {
-    const base = [
-      { tgt: toggleTarget, key: "chatGuide.step1" },
-      { tgt: aiTarget, key: "chatGuide.step2" },
-      { tgt: friendsTarget, key: "chatGuide.step3" },
-      { tgt: buddyTarget, key: "chatGuide.step4" },
-      { tgt: regionTarget, key: "chatGuide.step5" },
-    ];
-    return base.filter(({ tgt }) => !!tgt).map(({ tgt, key }) => ({ key, target: tgt! }));
-  }, [toggleTarget, aiTarget, friendsTarget, buddyTarget, regionTarget]);
+  const segIndex = selectedTab === "personal" ? 0 : 1;
+  const segLeft = `${segIndex * 50}%`;
 
   /* ───────── Login/Me ───────── */
   useEffect(() => {
@@ -161,8 +136,10 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
 
   /* ───────── First-time guide ───────── */
   useEffect(() => {
-    const v = ls.get(CHAT_GUIDE_KEY);
-    if (v === null) setShowChatGuide(true);
+    try {
+      const v = window.localStorage.getItem(CHAT_GUIDE_KEY);
+      if (v === null) setShowChatGuide(true);
+    } catch {}
   }, []);
 
   /* ───────── Data loaders ───────── */
@@ -267,71 +244,6 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
     })();
   }, [isLoggedIn]);
 
-  /* ───────── Region (get district) ───────── */
-  const getDistrict = async () => {
-    const token = ls.get("token");
-    if (!token) {
-      setDistrict(t("login_required"));
-      return;
-    }
-
-    const cachedDistrict = ls.get("cachedDistrict");
-    if (cachedDistrict) {
-      setDistrict(cachedDistrict);
-    }
-
-    const geo = navigator.geolocation;
-    if (!geo) {
-      setDistrict(t("location_not_available"));
-      return;
-    }
-
-    // geolocation timeout (20s)
-    const timeoutId = window.setTimeout(() => {
-      geoAbortRef.current = null;
-      console.warn("Geolocation timeout");
-    }, 20000);
-    geoAbortRef.current = timeoutId;
-
-    geo.getCurrentPosition(
-      async (pos) => {
-        if (geoAbortRef.current) {
-          clearTimeout(geoAbortRef.current);
-          geoAbortRef.current = null;
-        }
-        const { latitude, longitude } = pos.coords;
-        try {
-          const info = await getDistrictNameFromCoordinates(latitude, longitude, SERVER_URL);
-          if (info?.city) {
-            setDistrict(info.city);
-            ls.set("cachedDistrict", info.city);
-            ls.set("cachedLocation", JSON.stringify({ latitude, longitude }));
-          } else {
-            setDistrict("Unknown City");
-          }
-        } catch (e) {
-          console.error(e);
-          setDistrict("Unknown City");
-        }
-      },
-      (err) => {
-        if (geoAbortRef.current) {
-          clearTimeout(geoAbortRef.current);
-          geoAbortRef.current = null;
-        }
-        console.error(err);
-        setDistrict(t("location_permission_denied"));
-      },
-      { enableHighAccuracy: true }
-    );
-  };
-
-  useEffect(() => {
-    if (selectedTab === "region" && !district) {
-      getDistrict();
-    }
-  }, [selectedTab]);
-
   /* ───────── Derived ───────── */
   const hasAIChat = useMemo(() => chats.some((c) => c.userIds.includes("brody-ai")), [chats]);
 
@@ -373,21 +285,22 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
           </button>
         </div>
 
-        {/* Tabs */}
-        <div ref={toggleRef} className={styles.tabs}>
-          <div className={styles.slider} style={{ "--tab-index": TABS.findIndex((t) => t.key === selectedTab) } as any} />
+        {/* Tabs (Segmented) */}
+        <div
+          ref={toggleRef}
+          className={styles.seg}
+          style={{ ["--seg-left" as any]: segLeft }}
+          role="tablist"
+          aria-label="chat tabs"
+        >
+          <div className={styles.segTrack} aria-hidden />
           {TABS.map((tab) => (
             <button
               key={tab.key}
-              className={classNames(styles.tabBtn, { [styles.tabBtnActive]: selectedTab === tab.key })}
-              onClick={() => {
-                if (tab.key === "search") {
-                  // 검색 페이지로 이동 (패널은 닫지 않음)
-                  router.push("/search");
-                  return;
-                }
-                setSelectedTab(tab.key);
-              }}
+              role="tab"
+              aria-selected={selectedTab === tab.key}
+              className={classNames(styles.segBtn, { [styles.segBtnActive]: selectedTab === tab.key })}
+              onClick={() => setSelectedTab(tab.key)}
             >
               {t(tab.i18n)}
             </button>
@@ -403,10 +316,13 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
               {!hasAIChat && (
                 <div ref={aiRef} className={styles.item}>
                   <img className={styles.avatar} src="/assets/AIProfile.png" alt="AI" width={48} height={48} />
-                  <div className={styles.itemMain} onClick={() => onSelectChat({ type: "ai", otherUserId: "brody-ai" })}>
+                  <button
+                    className={styles.itemMainBtn}
+                    onClick={() => onSelectChat({ type: "ai", otherUserId: "brody-ai" })}
+                  >
                     <div className={styles.nickname}>Brody (AI)</div>
                     <div className={styles.message}>{t("start_ai_chat")}</div>
-                  </div>
+                  </button>
                   <div className={styles.time}>{formatTimeDifference(new Date().toISOString(), t)}</div>
                 </div>
               )}
@@ -487,7 +403,11 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
                 </div>
               ) : (
                 buddyGroups.map((bg) => (
-                  <div key={bg.buddyGroupId} className={styles.item} onClick={() => onSelectChat({ type: "group", buddyGroupId: bg.buddyGroupId })}>
+                  <div
+                    key={bg.buddyGroupId}
+                    className={styles.item}
+                    onClick={() => onSelectChat({ type: "group", buddyGroupId: bg.buddyGroupId })}
+                  >
                     <BuddyProfileWithFlag
                       buddyGroupId={bg.buddyGroupId}
                       buddyPhoto={bg.buddyPhoto || ""}
@@ -508,35 +428,17 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
               )}
             </div>
           )}
-
-          {/* REGION */}
-          {selectedTab === "region" && (
-            <div ref={regionRef} className={styles.regionSection}>
-              <div className={styles.regionHero}>
-                <img src="/assets/foxBackground.png" alt="" />
-                <div className={styles.regionOverlay} />
-                <div className={styles.regionContent}>
-                  <div className={styles.regionTitle}>{district ? `${district} ${t("chat_room")}` : t("regional_chat")}</div>
-                  <div className={styles.regionDesc}>{t("join_regional_chat_desc")}</div>
-                  <button
-                    className={styles.ctaPrimary}
-                    disabled={!district || district === "Unknown City" || district === t("location_permission_denied")}
-                    onClick={() => onSelectChat({ type: "region", district: district || "Unknown City" })}
-                  >
-                    {t("enter")}
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* SEARCH 탭은 즉시 라우팅해서 별도 UI 불필요 */}
         </div>
 
         {/* 가이드 */}
         <GuideOverlay
-          visible={showChatGuide && chatGuideSteps.length > 0}
-          steps={chatGuideSteps}
+          visible={showChatGuide && [toggleTarget, aiTarget, friendsTarget, buddyTarget].filter(Boolean).length > 0}
+          steps={[
+            ...(toggleTarget ? [{ key: "chatGuide.step1", target: toggleTarget }] : []),
+            ...(aiTarget ? [{ key: "chatGuide.step2", target: aiTarget }] : []),
+            ...(friendsTarget ? [{ key: "chatGuide.step3", target: friendsTarget }] : []),
+            ...(buddyTarget ? [{ key: "chatGuide.step4", target: buddyTarget }] : []),
+          ]}
           storageKey={CHAT_GUIDE_KEY}
           onClose={() => setShowChatGuide(false)}
         />

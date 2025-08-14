@@ -64,44 +64,90 @@
     letter-spacing: -0.02em;
   }
   
-  /* Tabs */
-  .tabs {
+  /* Segmented tabs */
+  .seg {
     position: sticky;
     top: 64px;
-    display: flex;
-    gap: 10px;
-    align-items: center;
+    background: #fff;
+    z-index: 1;
     padding: 10px 12px;
     border-bottom: 1px solid rgba(17,12,43,.06);
-    background: #fff;
-  }
-  .tabBtn {
-    position: relative;
-    padding: 8px 12px;
-    font-size: 13px;
-    color: #666;
-    background: transparent;
-    border: 0;
-    border-radius: 999px;
-    transition: color .2s ease, background .2s ease;
-  }
-  .tabBtnActive {
-    color: #333;
-    background: #f7f7f7;
-    border: 1px solid #e8e8e8;
   }
   
-  /* little slider hint (animated position) */
-  .slider {
-    position: absolute;
-    height: 36px;
-    width: 74px;
-    background: rgba(242,84,45,.08);
-    border: 1px solid rgba(242,84,45,.18);
+  .seg::after { content: ""; display: block; }
+  
+  .seg > .segInner {
+    display: none;
+  }
+  
+  /* Track + buttons */
+  .seg {
+    --seg-left: 0%;
+  }
+  .segContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    background: #fafafa;
+    border: 1px solid #eaeaea;
     border-radius: 999px;
-    transform: translateX(calc(8px + var(--tab-index, 0) * 86px));
-    pointer-events: none;
-    transition: transform .25s ease;
+    padding: 4px;
+    height: 44px;
+  }
+  
+  .segTrack {
+    position: relative;
+    height: 36px;
+    width: calc(50% - 8px);
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid rgba(242,84,45,.20);
+    box-shadow: 0 6px 16px rgba(216,49,91,.12);
+    transition: left .22s ease, box-shadow .22s ease, border .22s ease;
+  }
+  .seg .segTrack {
+    position: absolute;
+    top: 4px;
+    left: var(--seg-left);
+  }
+  
+  .segBtn {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color .2s ease, transform .2s ease;
+  }
+  .segBtn:hover { transform: translateY(-1px); }
+  .segBtnActive { color: #120C3A; }
+  
+  .segBtn:nth-of-type(1),
+  .segBtn:nth-of-type(2) {
+    /* Center buttons vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Lay buttons in grid */
+  .seg {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  .segContainer {
+    grid-row: 2 / 3;
+  }
+  .segRow {
+    display: contents;
+  }
+  .segRow .segBtn {
+    height: 36px;
   }
   
   /* Content */
@@ -130,17 +176,30 @@
     border-color: rgba(17,12,43,.18);
     box-shadow: 0 10px 20px rgba(17,12,43,.06);
   }
+  
+  .itemMain { display: grid; gap: 3px; }
+  .itemMainBtn {
+    display: grid;
+    gap: 3px;
+    text-align: left;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  
   .avatar {
     width: 48px;
     height: 48px;
     border-radius: 24px;
     border: 1px solid #fff;
     object-fit: cover;
+    display: block;
   }
-  .itemMain { display: grid; gap: 3px; }
+  
   .nickname {
     color: #120C3A;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     letter-spacing: -0.02em;
   }
@@ -156,6 +215,7 @@
     padding-right: 4px;
   }
   
+  /* Empty & CTA */
   .empty {
     display: grid;
     place-items: center;
@@ -168,7 +228,6 @@
     color: #666;
   }
   
-  /* CTA buttons */
   .ctaBtn {
     appearance: none;
     background: #fff;
@@ -183,19 +242,6 @@
   }
   .ctaBtn:hover { transform: translateY(-1px); box-shadow: 0 8px 16px rgba(17,12,43,.06); }
   
-  .ctaPrimary {
-    appearance: none;
-    background: linear-gradient(90deg, #f2542d, #d8315b);
-    color: #fff;
-    border: 0;
-    border-radius: 999px;
-    padding: 12px 18px;
-    font-weight: 600;
-    box-shadow: 0 10px 22px rgba(216,49,91,.24);
-    transition: transform .15s ease, box-shadow .15s ease;
-  }
-  .ctaPrimary:hover { transform: translateY(-1px); box-shadow: 0 12px 26px rgba(216,49,91,.28); }
-  
   /* Spinner */
   .spinner {
     width: 44px;
@@ -208,48 +254,23 @@
   }
   @keyframes s { to { transform: rotate(360deg); } }
   
-  /* Region section */
-  .regionSection { padding: 8px; }
-  .regionHero {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid rgba(17,12,43,.08);
-    min-height: 200px;
-    display: grid;
-    place-items: center;
-  }
-  .regionHero > img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .regionOverlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(255,255,255,.0), rgba(255,255,255,.85) 60%, #fff 90%);
-  }
-  .regionContent {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    display: grid;
-    gap: 8px;
-    padding: 30px 12px;
-  }
-  .regionTitle {
-    color: #120C3A;
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .regionDesc {
-    color: #555;
-    font-size: 13px;
-  }
-  
-  /* Scrolling */
+  /* Scrollbar */
   .content::-webkit-scrollbar { width: 8px; }
   .content::-webkit-scrollbar-thumb { background: rgba(0,0,0,.08); border-radius: 999px; }
+  
+  /* Layout for segmented inner buttons */
+  .seg > .segContainer {
+    margin: 0 auto;
+    max-width: 360px;
+  }
+  .seg > .segContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .seg > .segContainer > .segRow {
+    display: contents;
+  }
+  .seg > .segContainer > .segRow > .segBtn {
+    height: 36px;
+  }
   
