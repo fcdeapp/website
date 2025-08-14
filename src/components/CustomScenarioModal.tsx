@@ -14,7 +14,7 @@ export interface Persona {
   catchPhrase?: string;
 }
 
-interface Props {
+interface Props {d
   visible: boolean;
   imageUri: string;
   scenarioText: string;
@@ -36,15 +36,6 @@ const CustomScenarioModal: React.FC<Props> = ({
   chatId,
 }) => {
   const { t } = useTranslation();
-
-  /* ------------------------------------------------------------------ */
-  /* early‑exit                                                          */
-  /* ------------------------------------------------------------------ */
-  if (!visible) return null;
-
-  /* ------------------------------------------------------------------ */
-  /* state                                                               */
-  /* ------------------------------------------------------------------ */
   const [isLeaving, setIsLeaving] = useState(false);
   const [isSharing, setIsSharing] = useState(false);
   const [hasShared, setHasShared] = useState(false);
@@ -53,6 +44,8 @@ const CustomScenarioModal: React.FC<Props> = ({
     const flag = localStorage.getItem(`shared_chat_${chatId}`) === "true";
     setHasShared(flag);
   }, [chatId]);
+
+  if (!visible) return null;
 
   /* ------------------------------------------------------------------ */
   /* handlers                                                            */

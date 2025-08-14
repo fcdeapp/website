@@ -31,19 +31,14 @@ const GuideOverlay: React.FC<Props> = ({
   onStepChange,
 }) => {
   const { t } = useTranslation();
-
-  /* ------------------------------------------------------------------ */
-  /* early exits                                                         */
-  /* ------------------------------------------------------------------ */
-  const hidden = typeof window !== "undefined" && localStorage.getItem(storageKey) === "hidden";
-  if (!visible || hidden || !steps.length) return null;
-
-  /* ------------------------------------------------------------------ */
-  /* state                                                               */
-  /* ------------------------------------------------------------------ */
   const [idx, setIdx] = useState(0);
-  /** tell parent each step change (for fixed‑camera mode) */
   useEffect(() => { onStepChange?.(idx); }, [idx, onStepChange]);
+
+  // ✅ 훅 호출 "이후"에 가드
+  const hidden =
+    typeof window !== "undefined" &&
+    localStorage.getItem(storageKey) === "hidden";
+  if (!visible || hidden || !steps.length) return null;
 
   /** ----------------------------------------------------------------- */
   /** skip forever                                                      */
