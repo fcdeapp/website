@@ -34,7 +34,8 @@
     "post_type": "帖子类型",
     "buddy_group": "Buddy 群组",
     "meeting_country": "会议国家",
-    "meeting_city": "会议城市"
+    "meeting_city": "会议城市",
+    "language_select": "选择语言"
   },
   "form_placeholders": {
     "title": "请输入帖子标题（必填）",
@@ -57,7 +58,9 @@
     "전체": "全部",
     "모임": "聚会",
     "버디": "Buddy",
+    "학교": "学校",
     "친구": "朋友",
+    "이벤트": "事件",
     "map_hide": "隐藏地图",
     "map_show": "显示地图",
     "exclude_time": "排除时间",
@@ -328,7 +331,9 @@
     "clear_all_title": "清除所有通知",
     "clear_all_confirmation": "确定要清除所有通知吗？",
     "no_notifications": "暂无通知。",
-    "clear_all": "清除所有通知"
+    "clear_all": "清除所有通知",
+    "clear_all_success": "所有通知已被清除。",
+    "clear_all_error": "清除通知失败。"
   },
   "recommendations": {
     "today_activity": "今天做什么？",
@@ -834,7 +839,9 @@
       "meetingContent": "会议内容"
     },
     "createdAt": "创建时间：{{time}}",
-    "hideNotification": "隐藏通知"
+    "hideNotification": "隐藏通知",
+    "deleteSuccess": "通知已成功删除。",
+    "deleteError": "删除通知失败。"
   },
   "placeDetails": {
     "locationPermissionDenied": "位置权限被拒绝。",
@@ -1075,5 +1082,933 @@
     "title": "需要更新",
     "defaultMessage": "有新版本可用。请更新以继续使用。",
     "button": "立即更新"
+  },
+  "username_check_required": "请检查用户名是否可用",
+  "otp_verification_required": "请使用验证码验证您的电子邮件",
+  "password_strength_requirement": "密码必须满足五项规则中的至少四项",
+  "required_agreements": "您必须同意所有必需条款",
+  "explore_button": "探索",
+  "toggle_group_view": "分组视图",
+  "toggle_ungroup_view": "取消分组视图",
+  "groups.learning_culture": "学习与文化",
+  "groups.food_drink": "美食与饮品",
+  "groups.outdoors_active": "户外与活跃",
+  "groups.creative_social": "创意与社交",
+  "groups.community_exchange": "社区与交流",
+  "groups.relaxation_fun": "放松与娱乐",
+  "groups.travel_exploration": "旅行与探索",
+  "groups.special_interest": "特殊兴趣",
+  "defaultMeetingPlace": "尚未设置。请与主持人讨论。",
+  "minutes_remaining": "{{count}} 分钟剩余",
+  "hours_remaining": "{{count}} 小时剩余",
+  "days_remaining": "{{count}} 天剩余",
+  "meeting_passed": "会议时间已过",
+  "view_map": "查看地图",
+  "view_friends": "查找朋友",
+  "view_search": "搜索帖子",
+  "password_outdated": "您的密码已过时，需要更改。",
+  "warning_invalid_email": "电子邮件地址无效。",
+  "password_expired_title": "密码已过期",
+  "password_expired_message": "您的密码已过期。请更改后继续使用应用。",
+  "change_now": "立即更改",
+  "qna": {
+    "helpNeeded": "需要帮助？"
+  },
+  "deactivated": {
+    "title": "账户已停用",
+    "info": "由于政策违规或累计举报，您的账户已被停用。如果您认为这是错误操作，可以在下方提交申诉。",
+    "reasonLabel": "停用原因",
+    "dateLabel": "停用日期",
+    "durationLabel": "停用期限",
+    "days": "天",
+    "noReason": "未提供具体原因",
+    "note": "如需更多详情或对本决定提出异议，请提交申诉。我们的支持团队会审核并回复您。",
+    "fileComplaint": "提交申诉",
+    "backToLogin": "返回登录",
+    "complaintSubmitted": "您的申诉已提交。我们的支持团队将尽快审核。"
+  },
+  "report_now": "立即举报",
+  "contact_now": "立即联系",
+  "no_comments_prompt": "发表第一个评论！",
+  "no_applicants_prompt": "等待有人加入！",
+  "result_change_pw": "密码修改成功",
+  "school": "学校",
+  "apply_school_filter": "应用学校筛选",
+  "on": "开",
+  "off": "关",
+  "school_filter_description": "启用学校筛选后，只有拥有已验证学校邮箱的用户才能加入该群组。",
+  "email_description": "您的电子邮件用于账户找回和密码修改等安全操作。如果您希望加入与特定学校相关的组织，建议使用您的学校官方邮箱。",
+  "email_not_set": "出于安全考虑，请尽快设置您的电子邮件。",
+  "commenting_disabled": "不允许发表评论。",
+  "schoolEmailVerification": "{{schoolName}}\\n需要学校邮箱验证才能加入。",
+  "scenario_request_heading": "分享您的有趣留学经历",
+  "scenario_request_info": "此场景用于分享您在留学期间的有趣经历。提交并经管理员审核后，将基于您的场景生成 AI 视频并上传至我们的营销账号。如获选，您将在应用内享受一个月无广告体验。",
+  "scenes": "场景",
+  "scene": "场景",
+  "enter_dialogue": "输入对话",
+  "enter_image_prompt": "输入图片提示",
+  "remove": "移除",
+  "add_scene": "+ 添加场景",
+  "select_platforms": "选择平台",
+  "select_platforms_info": "请选择至少一个平台以发布您的场景。",
+  "maximum_scene_reached": "已达到最大场景数量。",
+  "title_required": "标题为必填项。",
+  "platform_selection_required": "请选择至少一个平台。",
+  "scenario_submitted": "场景提交成功。",
+  "submission_failed": "提交失败：",
+  "recruitment_filter_options": "招募筛选",
+  "recruitment_options": {
+    "active": "招募中",
+    "all": "全部"
+  },
+  "under_development": "此功能正在开发中",
+  "hero_alt_text": "长按此处以使用分步表单（测试版）",
+  "requests": "请求",
+  "members": "成员",
+  "week": "周",
+  "month": "月",
+  "longPressToViewMap": "长按以在地图上查看",
+  "select_country_prompt": "请选择国家",
+  "select_language_prompt": "请选择语言",
+  "lite_mode": "精简模式",
+  "recurrence.title": "选择重复",
+  "recurrence.frequency": "重复频率",
+  "recurrence.daily": "每天",
+  "recurrence.weekly": "每周",
+  "recurrence.monthly": "每月",
+  "recurrence.every_n": "每 N 个间隔",
+  "recurrence.weekdays": "选择星期",
+  "recurrence.time_of_day": "时间",
+  "recurrence.every": "每",
+  "recurrence.one_off": "一次性",
+  "recurrence.recurring": "重复",
+  "recurrence_filter": "重复",
+  "recurrence_filter_options": {
+    "all": "所有帖子",
+    "one_off": "仅一次",
+    "recurring": "仅重复"
+  },
+  "schedule": "日程",
+  "edit_menu": "编辑",
+  "check_availability": "检查可用性",
+  "nickname_available": "此昵称可用！",
+  "nickname_unavailable": "抱歉，该昵称已被占用。",
+  "nickname_check_failed": "无法检查昵称可用性，请重试。",
+  "enter_new_nickname_label": "请输入您的新昵称",
+  "recruitStatus": {
+    "all": "全部",
+    "open": "开放",
+    "closed": "已结束"
+  },
+  "eventDetails": {
+    "period": "期间",
+    "hours": "时间",
+    "venue": "地点",
+    "description": "描述",
+    "tags": "标签",
+    "moreInfo": "了解更多",
+    "unverifiedWarning": "此活动信息由 AI 收集—请在制定计划前仔细核对详细信息。",
+    "createMeetingHere": "在此创建会议"
+  },
+  "unverifiedWarning": "此活动信息由 AI 收集—请在制定计划前仔细核对详细信息。",
+  "select_server": "选择服务器",
+  "current_data_region": "当前数据区域",
+  "select_data_region": "选择数据区域",
+  "selected": "已选择",
+  "region_names": {
+    "Canada": "加拿大",
+    "Australia": "澳大利亚",
+    "UK": "英国",
+    "Korea": "韩国",
+    "Beta": "测试版",
+    "Development": "开发"
+  },
+  "server_modal_description": "请选择应用连接的服务器。",
+  "data_region_modal_description": "请选择存储您数据的位置。",
+  "restart_required": "更改将在重启应用后生效。",
+  "select_data_country": "我们应在哪里存储您的数据？（以后很难更改）",
+  "data_country_note": "必须与您使用服务时所处的国家相同。",
+  "ai_analysis": "AI 分析",
+  "ai_analysis_instruction_title": "AI 个人资料分析",
+  "ai_analysis_instruction_line1": "请上传您的个人资料图片。",
+  "ai_analysis_instruction_line2": "请使用清晰的面部照片以获得最佳效果。",
+  "ai_analysis_instruction_line3": "分析仅供娱乐使用。",
+  "start_analysis": "开始分析",
+  "analysis_loading": "分析中… 请稍候。",
+  "popularity_prediction": "全球受欢迎度预测",
+  "analysis_failed": "分析失败。",
+  "share_message": "查看我的受欢迎度预测！",
+  "analysis_limit_reached": "您已达到今日5次AI分析上限。",
+  "ai_analysis_feature_description": "此功能将分析您的个人资料并预测您在哪些国家最受欢迎。",
+  "schoolDetails": {
+    "domain": "电子邮件域名",
+    "code": "学校代码",
+    "distance": "距离",
+    "calculating": "计算中..."
+  },
+  "login_with_apple": "使用 Apple 登录",
+  "only_representative_can_edit": "只有代表可以编辑此项。",
+  "buddy_updated": "好友组已更新。",
+  "save_failed": "保存失败。请重试。",
+  "set_to_school_location": "将地图设置为 {{schoolName}} 位置",
+  "recurrence": {
+    "title": "重复",
+    "frequency": "频率",
+    "daily": "每日",
+    "weekly": "每周",
+    "monthly": "每月",
+    "every_n": "每隔 N",
+    "weekdays": "选择星期",
+    "time_of_day": "时间",
+    "summary_label": "摘要",
+    "one_off_at": "仅在 {{time}} 举行一次",
+    "summary_daily": "每 {{interval}} 日于 {{time}}",
+    "summary_weekly": "每 {{interval}} 周的 {{days}} 于 {{time}}",
+    "summary_monthly": "每 {{interval}} 月于 {{time}}",
+    "month_day": "每月日期",
+    "verbose": {
+      "one_off": "这是一次性会议，时间：{{time}}。",
+      "daily": "此会议将于 {{time}} 举行。",
+      "daily_interval": "此会议将于每 {{interval}} 日的 {{time}} 举行。",
+      "weekly": "此会议将于每 {{days}} 的 {{time}} 举行。",
+      "weekly_interval": "此会议将于每 {{interval}} 周的 {{days}} 的 {{time}} 举行。",
+      "monthly": "此会议将于 {{time}} 举行。",
+      "monthly_interval": "此会议将于每 {{interval}} 月的 {{time}} 举行。",
+      "monthly_on_day": "每 {{day}} 日 {{time}} 举行。",
+      "monthly_on_day_interval": "此会议将于每 {{interval}} 月的 {{day}} 日 {{time}} 举行。"
+    }
+  },
+  "weekdays": {
+    "SU": "日",
+    "MO": "一",
+    "TU": "二",
+    "WE": "三",
+    "TH": "四",
+    "FR": "五",
+    "SA": "六"
+  },
+  "language_change_notice": "您需要重新启动应用才能应用语言更改。屏幕可能会暂时冻结。",
+  "block_user": "屏蔽",
+  "unblock_user": "取消屏蔽",
+  "block_successfully": " 用户已被屏蔽。",
+  "unblock_successfully": " 用户的屏蔽已被取消。",
+  "chat_disabled_user": "您无法与此用户聊天。",
+  "chat_disabled_icon_accessibility": "已屏蔽用户图标",
+  "advertisement_contact_title": "广告咨询",
+  "advertisement_contact_message": "如需广告咨询，请发送电子邮件至 {{email}}。",
+  "createNotif": {
+    "title": "创建通知",
+    "selectType": "选择通知类型：",
+    "type": {
+      "all": "全部通知",
+      "individual": "单独通知"
+    },
+    "placeholder": {
+      "searchUser": "按昵称或ID搜索用户",
+      "title": "标题",
+      "message": "消息"
+    },
+    "noUsers": "未找到用户。",
+    "button": {
+      "uploadImage": "上传图片",
+      "send": "发送通知",
+      "cancel": "取消"
+    }
+  },
+  "noise_desc_low": "低噪声：具有相似档案的人主要被分组",
+  "noise_desc_medium": "中等噪声：相似性与随机性的平衡混合",
+  "noise_desc_high": "高噪声：几乎随机匹配所有成员",
+  "loading_text": "加载中...",
+  "no_buddies": "您尚未加入任何好友组。",
+  "no_notifications": {
+    "no_general": "没有任何常规通知。",
+    "no_buddy": "没有任何好友通知。",
+    "no_recommendations": "暂无推荐。"
+  },
+  "languages": {
+    "no_lang": "不限",
+    "en": "英语",
+    "es": "西班牙语",
+    "zh": "中文",
+    "hi": "印地语",
+    "fr": "法语",
+    "ko": "韩语",
+    "ja": "日语",
+    "de": "德语",
+    "ar": "阿拉伯语",
+    "pt": "葡萄牙语",
+    "ru": "俄语",
+    "it": "意大利语",
+    "tr": "土耳其语",
+    "nl": "荷兰语",
+    "pl": "波兰语",
+    "th": "泰语",
+    "vi": "越南语",
+    "ms": "马来语",
+    "sv": "瑞典语",
+    "no": "挪威语",
+    "fi": "芬兰语",
+    "el": "希腊语",
+    "hu": "匈牙利语",
+    "cs": "捷克语",
+    "ro": "罗马尼亚语",
+    "da": "丹麦语",
+    "he": "希伯来语",
+    "id": "印尼语",
+    "uk": "乌克兰语",
+    "fa": "波斯语",
+    "bn": "孟加拉语"
+  },
+  "meetingLanguages": {
+    "no_lang": "无语言限制",
+    "en": "此会议使用英语",
+    "es": "此会议使用西班牙语",
+    "zh": "此会议使用中文",
+    "hi": "此会议使用印地语",
+    "fr": "此会议使用法语",
+    "ko": "此会议使用韩语",
+    "ja": "此会议使用日语",
+    "de": "此会议使用德语",
+    "ar": "此会议使用阿拉伯语",
+    "pt": "此会议使用葡萄牙语",
+    "ru": "此会议使用俄语",
+    "it": "此会议使用意大利语",
+    "tr": "此会议使用土耳其语",
+    "nl": "此会议使用荷兰语",
+    "pl": "此会议使用波兰语",
+    "th": "此会议使用泰语",
+    "vi": "此会议使用越南语",
+    "ms": "此会议使用马来语",
+    "sv": "此会议使用瑞典语",
+    "no": "此会议使用挪威语",
+    "fi": "此会议使用芬兰语",
+    "el": "此会议使用希腊语",
+    "hu": "此会议使用匈牙利语",
+    "cs": "此会议使用捷克语",
+    "ro": "此会议使用罗马尼亚语",
+    "da": "此会议使用丹麦语",
+    "he": "此会议使用希伯来语",
+    "id": "此会议使用印尼语",
+    "uk": "此会议使用乌克兰语",
+    "fa": "此会议使用波斯语",
+    "bn": "此会议使用孟加拉语"
+  },
+  "installed_models": "已安装模型",
+  "available_models": "可用模型",
+  "install": "安装",
+  "no_installed_models": "未安装任何模型。",
+  "no_available_models": "暂无可用模型。",
+  "download_success": "下载成功",
+  "model_downloaded": "模型“{{name}}”已下载。",
+  "download_failed": "下载失败",
+  "model_download_failed": "下载模型“{{name}}”失败。",
+  "confirm_delete_title": "确认删除",
+  "confirm_delete_message": "您确定要删除“{{name}}”吗？",
+  "model_deleted": "已删除模型“{{name}}”。",
+  "delete_failed": "删除失败",
+  "model_delete_failed": "删除模型“{{name}}”失败。",
+  "language_models": "语言模型",
+  "language_filter": "语言过滤",
+  "record_modal_title": "录音与分析",
+  "record": "录制",
+  "stop": "停止",
+  "start_talking": "开始说话以查看实时转录...",
+  "speech_recognition_error": "语音识别错误。",
+  "share_prompt": "分享此帖链接。",
+  "model_not_found": "未找到语言模型。",
+  "already_installed": "已安装",
+  "model_already_installed": "模型“{{name}}”已安装。",
+  "install_model": "安装模型",
+  "analyze_recording": "录音后分析语法",
+  "auto_check_on": "自动检查：开启",
+  "auto_check_off": "自动检查：关闭",
+  "conversation_analysis": "对话分析",
+  "analysis_no_models_info": "要执行对话分析，请点击以下按钮安装语言模型。",
+  "record_error": "无法开始录音",
+  "warning_mobile_performance": "此模型较大，可能在移动设备上运行缓慢，请自行斟酌使用。",
+  "loginOverlay": {
+    "title": "欢迎使用 Abrody",
+    "message": "要查看公告和推荐，请先登录。",
+    "loginButton": "登录",
+    "guestButton": "以访客身份继续"
+  },
+  "voice_record_on": "语音录制已开启",
+  "voice_record_off": "语音录制已关闭",
+  "auto_send_on": "自动发送已开启",
+  "auto_send_off": "自动发送已关闭",
+  "check_language": "检测语言",
+  "grammar_report": "语法表达报告",
+  "request_scores": "请求评分",
+  "overview_statistics": "统计概览",
+  "total_entries": "总条目数",
+  "avg_issues": "平均问题数",
+  "issues_over_time": "问题随时间变化",
+  "no_data": "暂无数据",
+  "entries_by_language": "按语言分类的条目",
+  "history_entries": "历史条目",
+  "timestamp": "时间戳",
+  "request_language": "请求语言",
+  "ui_language": "界面语言",
+  "issues_found": "发现问题数",
+  "classification": "分类",
+  "comment": "评论",
+  "edit_entry": "编辑条目",
+  "class_none": "无",
+  "class_reviewed": "已审阅",
+  "class_important": "重要",
+  "comment_placeholder": "在此添加您的评论…",
+  "no_history": "暂无历史条目",
+  "insufficient_data": "数据不足，无法显示此图表。",
+  "start_ai_chat": "开始 AI 聊天",
+  "difficulty": "难度",
+  "difficulty_easy": "简单",
+  "difficulty_medium": "中等",
+  "difficulty_hard": "困难",
+  "topic": "主题",
+  "topic_none": "无特定主题",
+  "topic_law": "法律",
+  "topic_medicine": "医学",
+  "topic_science": "科学",
+  "topic_art": "艺术",
+  "add_to_vocab": "添加到词汇表",
+  "vocab": "词汇",
+  "grammar": "语法",
+  "expression": "表达",
+  "no_vocab_saved": "尚未保存任何词汇",
+  "no_grammar_history": "暂无语法历史",
+  "no_expression_history": "暂无表达历史",
+  "category_breakdown": "类别分布",
+  "no_issues": "尚未记录任何问题。",
+  "uncategorized": "未分类",
+  "show_stats": "显示统计",
+  "show_my_data": "显示我的数据",
+  "swipe_hint": "« 左右滑动 »",
+  "study": "学习",
+  "show_study_words": "学习词汇",
+  "show_saved_words": "已保存词汇",
+  "time_order": "时间顺序",
+  "freq_order": "频率顺序",
+  "avg_freq": "平均 Zipf",
+  "no_saved_words": "您还未保存任何词汇。",
+  "no_saved_grammar": "您还未保存任何语法条目。",
+  "no_saved_expressions": "您还未保存任何表达。",
+  "help_study_mode": "在学习模式下，应用会根据您已保存词汇的难度自动调整词汇。",
+  "save_history": "保存历史",
+  "known_word": "已知单词",
+  "unknown_word": "未知单词",
+  "unmark_known": "取消标记已知单词",
+  "unmark_unknown": "取消标记未知单词",
+  "current_language": "语言",
+  "change_language": "更改",
+  "quiz": "测验",
+  "hint": "提示",
+  "try_again": "再试一次！",
+  "correct": "正确",
+  "well_done": "做得好！",
+  "incorrect": "错误",
+  "hint_button": "提示",
+  "check_answer_button": "查看答案",
+  "correct_answer": "🎉 正确！",
+  "history_settings": "历史设置",
+  "load_more": "加载更多",
+  "create_meeting": "创建活动",
+  "show_banner": "显示横幅",
+  "hide_banner": "隐藏横幅",
+  "create_post": "创建帖子",
+  "startpage": {
+    "title": "你的话很重要",
+    "descriptionLine1": "每次对话都塑造你的个性化语言学习之旅。",
+    "descriptionLine2": "自然表达—精准学习所需内容。",
+    "tagline1": "说话",
+    "tagline2": "聊天",
+    "tagline3": "精通"
+  },
+  "quizPage": {
+    "tabs": {
+      "vocab": "词汇",
+      "grammar": "语法",
+      "expression": "表达"
+    },
+    "loadingGrammar": "正在加载语法数据…",
+    "loadingExpression": "正在加载表达数据…",
+    "empty": {
+      "noSavedGrammar": "您还未保存任何语法测验。",
+      "noSavedExpressions": "您还未保存任何表达测验。"
+    },
+    "lang": {
+      "change": "切换语言",
+      "close": "关闭"
+    },
+    "actions": {
+      "learn": "开始学习"
+    },
+    "quizButton": {
+      "arrow": "▶"
+    }
+  },
+  "grammarReport": {
+    "datasets": {
+      "quizGrammar": "语法测验",
+      "quizExpression": "表达测验",
+      "quizVocab": "词汇测验",
+      "quizSets": "测验合集",
+      "savedVocab": "已保存词汇",
+      "grammarCheck": "语法检查",
+      "expressionCheck": "表达检查",
+      "hiddenWords": "隐藏词",
+      "knownWords": "已知词",
+      "unknownWords": "未知词"
+    },
+    "header": {
+      "report": "报告",
+      "historySettings": "历史设置",
+      "overviewStatistics": "统计概览",
+      "historyEntries": "历史条目"
+    },
+    "entry": {
+      "correctness": "正确性",
+      "time": "时间",
+      "seconds": "秒"
+    },
+    "stats": {
+      "total": "总数",
+      "accuracy": "准确率",
+      "avgTime": "平均时间"
+    },
+    "chart": {
+      "issuesOverTime": "随时间变化的问题数",
+      "entriesByLanguage": "按语言分类的条目",
+      "insufficientData": "数据不足"
+    },
+    "noData": "无数据",
+    "noHistory": "暂无历史记录",
+    "loadMore": "加载更多",
+    "toggle": {
+      "saveHistory": "保存历史",
+      "requestScores": "请求分数"
+    }
+  },
+  "vocabQuiz": {
+    "preparing": "正在准备 {{prepared}}/{{total}} 道题…",
+    "congratulations": "干得漂亮！"
+  },
+  "quizSetsList": {
+    "preparing": "正在准备 {{prepared}}/{{total}} 道题…",
+    "quizSetTitle": "测验合集 {{number}}",
+    "deleteSet": "删除合集",
+    "createSet": "创建测验合集"
+  },
+  "start_quiz": "开始测验",
+  "quizGrammar": {
+    "description": "将下面的单词拖动到上方句子中的正确位置。若放错，请将其拖回下方，直至句子语法正确。"
+  },
+  "quizExpression": {
+    "description": "将正确的单词从下方拖入上方空格，完成表达。"
+  },
+  "ai_options": "AI 选项",
+  "quizPage_modes": {
+    "move": "移动单词",
+    "fill": "填空"
+  },
+  "maintenance_offline": {
+    "offline_note": "即使离线，也可以访问学习页面。",
+    "go_to_learning": "前往学习页面"
+  },
+  "enable_voice_chat": "启用语音聊天",
+  "disable_voice_chat": "禁用语音聊天",
+  "enable_roleplay": "启用角色扮演",
+  "disable_roleplay": "禁用角色扮演",
+
+  "scenario_cafe": "咖啡馆点单",
+  "scenario_cafe_desc": "你正在咖啡馆点饮料。",
+  "scenario_hotel": "酒店入住",
+  "scenario_hotel_desc": "你正在办理酒店入住，并要求城市景观房。",
+  "scenario_directions": "询问路线",
+  "scenario_directions_desc": "你需要找到最近的地铁站。",
+  "scenario_grocery": "杂货购物",
+  "scenario_grocery_desc": "你正在寻找无麸质意大利面。",
+  "scenario_clothes": "购买衣物",
+  "scenario_clothes_desc": "你正在试穿衣服并询问其他尺码。",
+  "scenario_interview": "求职面试",
+  "scenario_interview_desc": "你是面试者，正在回答面试问题。",
+  "scenario_meeting": "商务会议",
+  "scenario_meeting_desc": "你正在展示季度销售数据。",
+  "scenario_call": "商务电话",
+  "scenario_call_desc": "你正在给客户打电话跟进。",
+  "scenario_hospital": "看医生",
+  "scenario_hospital_desc": "你正在向医生描述你的症状。",
+  "scenario_emergency": "紧急情况",
+  "scenario_emergency_desc": "你目睹有人晕倒并呼救。",
+  "scenario_dating": "交友",
+  "scenario_dating_desc": "你遇到新朋友并聊起爱好。",
+  "scenario_party": "派对策划",
+  "scenario_party_desc": "你正在邀请朋友参加晚宴聚会。",
+  "view_list": "列表视图",
+  "view_card": "卡片视图",
+  "refresh_words": "刷新单词",
+  "quiz_corrects": "正确答案",
+  "known_words": "已掌握单词",
+  "stats_overview": "统计概览",
+  "show_chart": "显示图表",
+  "conversation_practice": "对话练习",
+  "rank_suffix": "位",
+  "backToSets": "返回到题组",
+  "history": {
+    "remoteTitle": "示例条目",
+    "remoteMessage": "此示例仅供参考，无法删除。当您与 AI 或朋友聊天时，您的学习数据将会收集到此处。"
+  },
+  "learn": "学习",
+  "reveal_answer": "答案：{{answer}}",
+  "study_report": "学习报告",
+  "mcq_prompt": "请选择语法正确的句子",
+  "disable_quiz": "关闭",
+  "last_ai_chat": {
+    "close": "关闭",
+    "study": "与 AI 一起学习",
+    "start_ai_chat": "点击开始与 AI 聊天"
+  },
+  "toggle_ai_options": "AI 选项",
+  "toggle_mcq": "四选一测验",
+  "toggle_auto_check": "自动检查",
+  "first_chat_prompt": "开始第一次对话！",
+  "guide": {
+    "next": "下一步",
+    "prev": "上一步",
+    "finish": "明白了",
+    "dontShowAgain": "不再显示"
+  },
+  "homeGuide": {
+    "step1": {
+      "title": "寻找学习伙伴",
+      "desc": "浏览线上/线下帖子并结识朋友。与 AI 聊天，立即检查语法。"
+    },
+    "step2": {
+      "title": "编辑您的资料",
+      "desc": "点击您的头像以查看并编辑个人信息。"
+    },
+    "step3": {
+      "title": "按主题筛选",
+      "desc": "滑动主题滑块或点击列表图标，自定义可见主题。"
+    },
+    "step4": {
+      "title": "高级筛选",
+      "desc": "使用筛选图标按距离、重复性等条件缩小帖子范围。"
+    },
+    "step5": {
+      "title": "AI 测验与聊天",
+      "desc": "尝试动态的 AI 四选一测验或角色扮演聊天，提升语言技能。"
+    },
+    "step6": {
+      "title": "创建帖子",
+      "desc": "与社区分享您的聚会或问题。"
+    }
+  },
+  "noticeGuide": {
+    "step1": {
+      "title": "实时对话分析",
+      "desc": "点击此按钮，检查您在真实聚会中的实时对话。"
+    },
+    "step2": {
+      "title": "跟踪您的进度",
+      "desc": "一目了然地快速查看您的语言学习统计。"
+    },
+    "step3": {
+      "title": "发现并保持知情",
+      "desc": "在此查看附近的学习聚会和所有重要通知。"
+    }
+  },
+  "quizGuide": {
+    "step1": {
+      "title": "选择测验类型",
+      "desc": "在顶部选择“词汇”、“语法”或“表达”以开始相应测验。"
+    },
+    "step2": {
+      "title": "更改语言和模式",
+      "desc": "点击语言按钮切换语言。对于“语法/表达”，您还可以切换模式。"
+    },
+    "step3": {
+      "title": "生成新测验",
+      "desc": "点击“生成测验”，稍等片刻，我们将根据已保存的学习数据生成测验。"
+    }
+  },
+  "learningGuide": {
+    "step1": {
+      "title": "按标签练习",
+      "desc": "选择标签，在词汇、语法和表达练习之间切换。"
+    },
+    "step2": {
+      "title": "更改语言",
+      "desc": "点击此处更改您想学习的语言。"
+    },
+    "step3": {
+      "title": "刷新单词",
+      "desc": "按此刷新按钮，选择适合您水平的新单词。"
+    },
+    "step4": {
+      "title": "卡片/列表视图",
+      "desc": "在词汇的卡片视图和列表视图之间切换。"
+    },
+    "step5": {
+      "title": "已保存单词",
+      "desc": "切换以查看仅您已保存（书签）的单词。"
+    },
+    "step6": {
+      "title": "单词卡操作",
+      "desc": "点击单词卡查看其在您语言中的含义。标记单词为“已知”或“未知”，以调整您的学习等级。"
+    }
+  },
+  "chatGuide": {
+    "step1": {
+      "title": "选择聊天类型",
+      "desc": "在顶部，点击切换按钮，轻松在个人聊天、好友群聊和区域聊天之间切换。选择适合您目的的聊天类型！"
+    },
+    "step2": {
+      "title": "AI 聊天 — 您的学习伙伴",
+      "desc": "在您的个人聊天列表顶部是 AI 聊天。这是应用的核心功能！在这里，您可以与 AI 进行真实对话，练习口语，并立即基于对话进行个性化测验。"
+    },
+    "step3": {
+      "title": "与朋友聊天一起学习",
+      "desc": "在 AI 聊天下方，您将看到所有与朋友的个人聊天。您可以随时通过“设置 > 管理好友”添加或删除朋友。"
+    },
+    "step4": {
+      "title": "好友群聊 — 团队学习",
+      "desc": "在“好友”选项卡中，您会找到所有群聊。您可以通过“搜索”页面或“设置 > 管理群聊”创建或加入好友群组。"
+    },
+    "step5": {
+      "title": "区域聊天 — 结识附近的人",
+      "desc": "在区域聊天中，您可以与附近的人加入对话。这是结识新朋友和发现本地社区的极好方式！"
+    }
+  },
+  "chatRoomGuide": {
+    "step1": {
+      "title": "微调您的 AI 聊天",
+      "desc": "点击“AI +”按钮，打开详细控制：设置难度、主题、语音聊天或角色扮演选项。"
+    },
+    "step2": {
+      "title": "语音角色扮演",
+      "desc": "在右侧选择一个场景标签。打开语音聊天后，直接说话，AI 会与您演绎场景。"
+    },
+    "step3": {
+      "title": "跟踪学习积分",
+      "desc": "每次保存语法或表达时，这里的计数器都会增加。您可以稍后在“学习”或“测验”页面查看。"
+    },
+    "step4": {
+      "title": "设置检查语言与自动检查",
+      "desc": "选择语法检查应使用的语言。默认开启自动检查，但您可以随时在此切换。"
+    },
+    "step5": {
+      "title": "多选测验（仅 AI）",
+      "desc": "此开关可基于 AI 对话提供四选一测验，仅在 AI 聊天中可用。"
+    },
+    "step6": {
+      "title": "编辑或删除消息",
+      "desc": "长按您发送的任何气泡，以修改或删除它。"
+    },
+    "step7": {
+      "title": "发送文字或语音",
+      "desc": "输入文字并点击纸飞机图标发送。若输入框为空，将显示麦克风图标，点击即可开始语音聊天。"
+    }
+  },
+  "view_offline_meetings": "查看线下聚会",
+  "view_online_meetings": "查看在线聚会",
+  "posting_toggle": {
+    "mode": "聚会模式",
+    "offline": "线下聚会",
+    "online": "在线聚会"
+  },
+  "postingGuide": {
+    "step1": {
+      "title": "创建线下和在线语言聚会",
+      "desc": "开始您自己的语言聚会——线下或在线。在这里创建并启动您的小组。"
+    },
+    "step2": {
+      "title": "选择主题并命名聚会",
+      "desc": "为聚会选择主题并设置标题。例如：“清晨英语学习”、“法语咖啡小组”等。"
+    },
+    "step3": {
+      "title": "选择聚会时间",
+      "desc": "选择活动的日期和时间。您可以举办一次性聚会或创建定期重复的聚会。"
+    },
+    "step4": {
+      "title": "选择聚会地点",
+      "desc": "查看地图并点击中央的图钉图标设置位置。星形图钉将移动到那里并保存为聚会地点。"
+    },
+    "step5": {
+      "title": "选择聚会语言",
+      "desc": "选择您在小组中使用或想要练习的语言。"
+    },
+    "step6": {
+      "title": "让 AI 为您撰写帖子",
+      "desc": "如果您不知道写什么，只需点击一次，AI 会自动生成聚会帖文。"
+    },
+    "step7": {
+      "title": "上传并管理聚会",
+      "desc": "点击“上传”以发布您的小组。您可以随时在主屏幕或个人资料中查看和编辑帖子，并将草稿保存以便稍后完成。"
+    }
+  },
+  "profileGuide": {
+    "step1": {
+      "title": "更改个人资料图片",
+      "desc": "点击头像旁的按钮以更新您的图片。友好的头像有助于他人记住您！"
+    },
+    "step2": {
+      "title": "设置您的昵称",
+      "desc": "点击您的昵称以设置唯一名称。拥有自己的昵称可帮助您更轻松地交友和学习语言。"
+    },
+    "step3": {
+      "title": "选择主要语言",
+      "desc": "选择您的主要语言。应用界面将显示为您选择的语言。"
+    },
+    "step4": {
+      "title": "管理个人资料隐私",
+      "desc": "他人可以查看您的学习语言等信息。若要保持私密，可在此关闭账户可见性。"
+    },
+    "step5": {
+      "title": "快速菜单功能",
+      "desc": "通过快速菜单管理您的帖子、小组和好友。点击设置图标查看更多选项。"
+    }
+  },
+  "buddyGuide": {
+    "step1": {
+      "title": "好友小组",
+      "desc": "好友小组是一起学习语言的社区。“好友”选项卡显示您加入的小组。"
+    },
+    "step2": {
+      "title": "好友请求",
+      "desc": "“请求”选项卡显示您对加入小组的请求状态。"
+    },
+    "step3": {
+      "title": "搜索好友小组",
+      "desc": "在“搜索”选项卡中，您可以查找要加入的好友小组。"
+    },
+    "step4": {
+      "title": "创建好友小组",
+      "desc": "点击右下角的岛屿图标以创建您自己的好友小组。"
+    }
+  },
+  "friendListGuide": {
+    "step1": {
+      "title": "您的好友",
+      "desc": "在此查看所有好友。您可以在此删除好友或直接开始聊天。"
+    },
+    "step2": {
+      "title": "好友请求",
+      "desc": "查看您发送或收到的好友请求。可接受或拒绝，并查看其状态。"
+    }
+  },
+  "fullScreenMapGuide": {
+    "step1": {
+      "title": "过滤内容",
+      "desc": "使用顶部切换在聚会、好友小组、学校和活动之间过滤。"
+    },
+    "step2": {
+      "title": "创建 AI 生成的聚会",
+      "desc": "点击右下角的岛屿图标绘制圆形。选择主题后再次点击，AI 将根据选定区域和主题生成聚会帖子。"
+    }
+  },
+  "buddyInfoGuide": {
+    "step1": {
+      "title": "概览",
+      "desc": "此页面显示您好友小组的总体情况。"
+    },
+    "step2": {
+      "title": "查看帖子",
+      "desc": "点击“查看帖子”按钮进入小组留言板。"
+    },
+    "step3": {
+      "title": "管理加入请求",
+      "desc": "处理想加入您小组的用户请求。"
+    },
+    "step4": {
+      "title": "日程、通知和投票",
+      "desc": "使用选项卡与语言学习伙伴管理日程、通知和投票。"
+    }
+  },
+  "buddyPageGuide": {
+    "step1": {
+      "title": "欢迎来到小组公告板",
+      "desc": "在这里您和小组成员可以分享帖子。"
+    },
+    "step2": {
+      "title": "筛选您的动态",
+      "desc": "点击此处对帖子进行排序或筛选。"
+    },
+    "step3": {
+      "title": "选择主题",
+      "desc": "选择您感兴趣的主题。"
+    },
+    "step4": {
+      "title": "浏览帖子",
+      "desc": "滚动查看小组成员分享的帖子。"
+    }
+  },
+  "ugc_policy": {
+    "title": "社区准则与条款",
+    "intro": "本社区由您的参与共同维护。为确保这里对所有人来说安全友好，请同意以下内容：",
+    "points": [
+      "根据我们的使用条款，禁止发布不当或辱骂性内容",
+      "自动过滤辱骂性语言和图片",
+      "您可以在帖子页面直接举报有害或不当内容",
+      "您可以通过访问用户个人主页来屏蔽或限制不良用户",
+      "我们承诺在24小时内处理有效的举报"
+    ],
+    "agree": "我同意以上条款"
+  },
+  "scenario": "情景",
+  "leave_custom_session": "结束聊天会话",
+  "leave_custom_session_success": "已结束您的自定义 AI 会话。",
+  "leave_custom_session_error": "结束聊天会话失败。",
+  "nothing_to_share": "没有可分享的内容",
+  "shared_scenario": "共享场景",
+  "start_ai_language_learning": "使用此场景开始 AI 语言学习",
+  "shared_label": "已共享",
+  "shared_scenario_label": "共享场景",
+  "photoRolePlay": {
+    "selectLangGuide": "选择您想练习的语言",
+    "description": "描述您的照片并开始角色扮演。",
+    "takePhoto": "拍照",
+    "choosePhoto": "从相册选择",
+    "generate": "生成",
+    "pickOne": "选择一个场景",
+    "hint": "选择最适合您照片的场景",
+    "pickPersona": "选择角色",
+    "selectedScenario": "已选场景",
+    "startChat": "开始聊天"
+  },
+  "homeNew": {
+    "prompt_visit_1": "{{nickname}}，你去了哪里？",
+    "prompt_visit_2": "{{nickname}}，今天去了什么新地方？",
+    "prompt_visit_3": "嗨{{nickname}}，最近发现了什么有趣的地方吗？",
+    "prompt_visit_4": "{{nickname}}，有没有去过难忘的地点？",
+    "prompt_visit_5": "{{nickname}}，分享你的最新冒险吧！",
+    "prompt_learn_1": "{{nickname}}，想为哪种情境学习？",
+    "prompt_learn_2": "{{nickname}}，有想练习的场景吗？",
+    "prompt_learn_3": "想为哪个语境做准备，{{nickname}}？",
+    "prompt_learn_4": "{{nickname}}，告诉我你感兴趣的真实场景。",
+    "prompt_learn_5": "{{nickname}}，接下来想用语言表达什么？",
+    "ongoing_learning": "正在进行的课程",
+    "today_learning": "今日课程",
+    "quiz": "测验",
+    "analysis": "会话分析",
+    "situation_learning": "情境学习",
+    "learning_report": "学习报告",
+    "quick_menu": "快捷菜单",
+    "legacy_button": "经典视图",
+    "setting_button": "设置",
+    "profile_button": "我的资料",
+    "friend_button": "好友",
+    "buddy_button": "伙伴",
+    "mypost_button": "我的帖子",
+    "account_button": "账户",
+    "learning_tools": "学习工具",
+    "vocab": "词汇",
+    "grammar": "语法",
+    "expression": "表达",
+    "move": "词序",
+    "fill": "填空"
   }
+
+
+
+
 }

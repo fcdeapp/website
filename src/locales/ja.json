@@ -34,7 +34,8 @@
     "post_type": "投稿タイプ",
     "buddy_group": "バディグループ",
     "meeting_country": "ミーティングの国",
-    "meeting_city": "ミーティングの市"
+    "meeting_city": "ミーティングの市",
+    "language_select": "言語を選択"
   },
   "form_placeholders": {
     "title": "投稿のタイトルを入力してください（必須）",
@@ -57,7 +58,9 @@
     "전체": "すべて",
     "모임": "ミーティング",
     "버디": "バディ",
+    "학교": "学校",
     "친구": "友達",
+    "이벤트": "イベント",
     "map_hide": "マップを隠す",
     "map_show": "マップを表示",
     "exclude_time": "時間を除外",
@@ -328,7 +331,9 @@
     "clear_all_title": "すべての通知をクリア",
     "clear_all_confirmation": "本当にすべての通知をクリアしますか？",
     "no_notifications": "通知はありません。",
-    "clear_all": "すべての通知をクリア"
+    "clear_all": "すべての通知をクリア",
+    "clear_all_success": "すべての通知が削除されました。",
+    "clear_all_error": "通知の削除に失敗しました。"
   },
   "recommendations": {
     "today_activity": "今日の予定は？",
@@ -833,7 +838,9 @@
       "meetingContent": "内容"
     },
     "createdAt": "作成日時: {{time}}",
-    "hideNotification": "通知を隠す"
+    "hideNotification": "通知を隠す",
+    "deleteSuccess": "通知が正常に削除されました。",
+    "deleteError": "通知の削除に失敗しました。"
   },
   "placeDetails": {
     "locationPermissionDenied": "位置情報の許可が拒否されました。",
@@ -1074,5 +1081,933 @@
     "title": "アップデートが必要です",
     "defaultMessage": "新しいバージョンが利用可能です。続行するにはアップデートしてください。",
     "button": "今すぐアップデート"
+  },
+  "username_check_required": "ユーザー名の利用可能性を確認してください",
+  "otp_verification_required": "コードでメールアドレスを確認してください",
+  "password_strength_requirement": "パスワードは5つのルールのうち少なくとも4つを満たす必要があります",
+  "required_agreements": "すべての必須利用規約に同意する必要があります",
+  "explore_button": "探索",
+  "toggle_group_view": "グループ表示",
+  "toggle_ungroup_view": "グループ解除表示",
+  "groups.learning_culture": "学習と文化",
+  "groups.food_drink": "飲食",
+  "groups.outdoors_active": "屋外とアクティブ",
+  "groups.creative_social": "創造的＆社交",
+  "groups.community_exchange": "コミュニティ＆交流",
+  "groups.relaxation_fun": "リラクゼーション＆楽しみ",
+  "groups.travel_exploration": "旅行＆探索",
+  "groups.special_interest": "特別な興味",
+  "defaultMeetingPlace": "まだ設定されていません。ホストと相談してください。",
+  "minutes_remaining": "{{count}}分残り",
+  "hours_remaining": "{{count}}時間残り",
+  "days_remaining": "{{count}}日残り",
+  "meeting_passed": "ミーティング時間が過ぎました",
+  "view_map": "地図を探索",
+  "view_friends": "友達を探す",
+  "view_search": "投稿を検索",
+  "password_outdated": "パスワードが古くなっているため、変更が必要です。",
+  "warning_invalid_email": "メールアドレスが無効です。",
+  "password_expired_title": "パスワードの有効期限切れ",
+  "password_expired_message": "パスワードの有効期限が切れています。アプリを使い続けるために変更してください。",
+  "change_now": "今すぐ変更",
+  "qna": {
+    "helpNeeded": "ヘルプが必要ですか？"
+  },
+  "deactivated": {
+    "title": "アカウントが無効化されました",
+    "info": "ポリシー違反や報告の蓄積により、アカウントが無効化されました。誤りだと思われる場合は、以下から異議申し立てを行うことができます。",
+    "reasonLabel": "無効化理由",
+    "dateLabel": "無効化日",
+    "durationLabel": "期間",
+    "days": "日",
+    "noReason": "特定の理由は提供されていません",
+    "note": "詳細や異議申し立ては、異議申し立てを提出してください。サポートチームが審査し、ご連絡します。",
+    "fileComplaint": "異議を申し立てる",
+    "backToLogin": "ログインに戻る",
+    "complaintSubmitted": "異議申し立てが送信されました。サポートチームがまもなく審査します。"
+  },
+  "report_now": "今すぐ報告",
+  "contact_now": "今すぐ連絡",
+  "no_comments_prompt": "最初のコメントを残してください！",
+  "no_applicants_prompt": "参加者が集まるのを待っています！",
+  "result_change_pw": "パスワードが正常に変更されました",
+  "school": "学校",
+  "apply_school_filter": "学校フィルターを適用",
+  "on": "オン",
+  "off": "オフ",
+  "school_filter_description": "学校フィルターを有効にすると、認証された学校のメールアドレスを持つユーザーのみがグループに参加できます。",
+  "email_description": "メールアドレスは、ID検索やパスワード変更などのセキュリティ操作に使用されます。特定の学校に関連する組織に参加する場合は、公式の学校メールアドレスを使用することをお勧めします。",
+  "email_not_set": "セキュリティ上の理由から、できるだけ早くメールアドレスを設定してください。",
+  "commenting_disabled": "コメントは許可されていません。",
+  "schoolEmailVerification": "{{schoolName}}\\n参加するにはメール認証が必要です。",
+  "scenario_request_heading": "楽しい留学体験を共有してください",
+  "scenario_request_info": "このシナリオは、留学中の楽しい体験を共有するものです。投稿および管理者の承認後、お客様のシナリオに基づいてAI動画が作成され、マーケティングアカウントにアップロードされます。選ばれた場合、アプリ内で1か月間広告なしでお楽しみいただけます。",
+  "scenes": "シーン",
+  "scene": "シーン",
+  "enter_dialogue": "セリフを入力してください",
+  "enter_image_prompt": "画像プロンプトを入力してください",
+  "remove": "削除",
+  "add_scene": "+ シーンを追加",
+  "select_platforms": "プラットフォームを選択",
+  "select_platforms_info": "シナリオを投稿するには少なくとも1つのプラットフォームを選択してください。",
+  "maximum_scene_reached": "シーンの最大数に達しました。",
+  "title_required": "タイトルは必須です。",
+  "platform_selection_required": "少なくとも1つのプラットフォームを選択してください。",
+  "scenario_submitted": "シナリオが正常に送信されました。",
+  "submission_failed": "送信に失敗しました：",
+  "recruitment_filter_options": "募集フィルター",
+  "recruitment_options": {
+    "active": "募集中",
+    "all": "全て"
+  },
+  "under_development": "この機能は開発中です",
+  "hero_alt_text": "ここを長押ししてステップバイステップフォームを表示（ベータ）",
+  "requests": "リクエスト",
+  "members": "メンバー",
+  "week": "週",
+  "month": "月",
+  "longPressToViewMap": "地図で表示するには長押し",
+  "select_country_prompt": "国を選択してください",
+  "select_language_prompt": "言語を選択してください",
+  "lite_mode": "ライトモード",
+  "recurrence.title": "繰り返しを選択",
+  "recurrence.frequency": "繰り返し頻度",
+  "recurrence.daily": "毎日",
+  "recurrence.weekly": "毎週",
+  "recurrence.monthly": "毎月",
+  "recurrence.every_n": "N間隔ごと",
+  "recurrence.weekdays": "曜日を選択",
+  "recurrence.time_of_day": "時間帯",
+  "recurrence.every": "毎",
+  "recurrence.one_off": "一度限り",
+  "recurrence.recurring": "定期",
+  "recurrence_filter": "繰り返し",
+  "recurrence_filter_options": {
+    "all": "すべての投稿",
+    "one_off": "一度限りのみ",
+    "recurring": "定期のみ"
+  },
+  "schedule": "スケジュール",
+  "edit_menu": "編集",
+  "check_availability": "空き状況を確認",
+  "nickname_available": "このニックネームは使用可能です！",
+  "nickname_unavailable": "申し訳ありません、そのニックネームは既に使用されています。",
+  "nickname_check_failed": "ニックネームの確認に失敗しました。もう一度お試しください。",
+  "enter_new_nickname_label": "新しいニックネームを入力してください",
+  "recruitStatus": {
+    "all": "すべて",
+    "open": "募集中",
+    "closed": "募集終了"
+  },
+  "eventDetails": {
+    "period": "期間",
+    "hours": "時間",
+    "venue": "会場",
+    "description": "説明",
+    "tags": "タグ",
+    "moreInfo": "詳細を見る",
+    "unverifiedWarning": "このイベント情報はAIによって収集されたものです。計画前に詳細を再確認してください。",
+    "createMeetingHere": "ここでミーティングを作成"
+  },
+  "unverifiedWarning": "このイベント情報はAIによって収集されたものです。計画前に詳細を再確認してください。",
+  "select_server": "サーバーを選択",
+  "current_data_region": "現在のデータリージョン",
+  "select_data_region": "データリージョンを選択",
+  "selected": "選択済み",
+  "region_names": {
+    "Canada": "カナダ",
+    "Australia": "オーストラリア",
+    "UK": "イギリス",
+    "Korea": "韓国",
+    "Beta": "ベータ",
+    "Development": "開発用"
+  },
+  "server_modal_description": "アプリが接続するサーバーを選択してください。",
+  "data_region_modal_description": "データを保存する場所を選択してください。",
+  "restart_required": "変更を反映するにはアプリを再起動してください。",
+  "select_data_country": "データをどこに保存しますか？（後から変更するのは難しい場合があります）",
+  "data_country_note": "サービス利用中に滞在する国と一致している必要があります。",
+  "ai_analysis": "AI分析",
+  "ai_analysis_instruction_title": "AIプロフィール分析",
+  "ai_analysis_instruction_line1": "プロフィール画像をアップロードしてください。",
+  "ai_analysis_instruction_line2": "より良い結果のために、顔がはっきり写った写真を使用してください。",
+  "ai_analysis_instruction_line3": "分析はエンターテインメント目的です。",
+  "start_analysis": "分析開始",
+  "analysis_loading": "解析中…少々お待ちください。",
+  "popularity_prediction": "世界的な人気予測",
+  "analysis_failed": "分析に失敗しました。",
+  "share_message": "私の人気予測をチェックしてみてください！",
+  "analysis_limit_reached": "本日のAI分析は5回の制限に達しました。",
+  "ai_analysis_feature_description": "この機能はプロフィールを分析し、どの国で最も人気があるかを予測します。",
+  "schoolDetails": {
+    "domain": "メールドメイン",
+    "code": "学校コード",
+    "distance": "距離",
+    "calculating": "計算中..."
+  },
+  "login_with_apple": "Appleでサインイン",
+  "only_representative_can_edit": "代表者のみがこれを編集できます。",
+  "buddy_updated": "バディグループが更新されました。",
+  "save_failed": "保存に失敗しました。もう一度お試しください。",
+  "set_to_school_location": "{{schoolName}} の場所に地図を設定",
+  "recurrence": {
+    "title": "繰り返し",
+    "frequency": "頻度",
+    "daily": "毎日",
+    "weekly": "毎週",
+    "monthly": "毎月",
+    "every_n": "間隔",
+    "weekdays": "曜日",
+    "time_of_day": "時間",
+    "summary_label": "概要",
+    "one_off_at": "{{time}} に一度きり",
+    "summary_daily": "{{interval}}日ごとに {{time}} に",
+    "summary_weekly": "{{interval}}週間ごとに {{days}} に {{time}} に",
+    "summary_monthly": "{{interval}}か月ごとに {{time}} に",
+    "month_day": "月の日",
+    "verbose": {
+      "one_off": "このミーティングは一度きりで、{{time}} に開催されます。",
+      "daily": "このミーティングは毎日 {{time}} に開催されます。",
+      "daily_interval": "このミーティングは {{interval}}日ごとに {{time}} に開催されます。",
+      "weekly": "このミーティングは毎週 {{days}} に {{time}} に開催されます。",
+      "weekly_interval": "このミーティングは {{interval}}週間ごとに {{days}} に {{time}} に開催されます。",
+      "monthly": "このミーティングは毎月 {{time}} に開催されます。",
+      "monthly_interval": "このミーティングは {{interval}}か月ごとに {{time}} に開催されます。",
+      "monthly_on_day": "毎月 {{day}}日に {{time}} に開催されます。",
+      "monthly_on_day_interval": "このミーティングは {{interval}}か月ごとに毎月 {{day}}日に {{time}} に開催されます。"
+    }
+  },
+  "weekdays": {
+    "SU": "日",
+    "MO": "月",
+    "TU": "火",
+    "WE": "水",
+    "TH": "木",
+    "FR": "金",
+    "SA": "土"
+  },
+  "language_change_notice": "言語変更を適用するにはアプリを再起動する必要があります。画面が一時的にフリーズすることがあります。",
+  "block_user": "ブロック",
+  "unblock_user": "ブロック解除",
+  "block_successfully": " ユーザーがブロックされました。",
+  "unblock_successfully": " ユーザーのブロックを解除しました。",
+  "chat_disabled_user": "このユーザーとはチャットできません。",
+  "chat_disabled_icon_accessibility": "ブロックユーザーアイコン",
+  "advertisement_contact_title": "広告お問い合わせ",
+  "advertisement_contact_message": "広告に関するお問い合わせは{{email}}までご連絡ください。",
+  "createNotif": {
+    "title": "通知を作成",
+    "selectType": "通知タイプを選択：",
+    "type": {
+      "all": "全員への通知",
+      "individual": "個別通知"
+    },
+    "placeholder": {
+      "searchUser": "ニックネームまたはIDで検索",
+      "title": "タイトル",
+      "message": "メッセージ"
+    },
+    "noUsers": "ユーザーが見つかりませんでした。",
+    "button": {
+      "uploadImage": "画像をアップロード",
+      "send": "通知を送信",
+      "cancel": "キャンセル"
+    }
+  },
+  "noise_desc_low": "ノイズ低：似たプロフィールの人が主にグループ化されます",
+  "noise_desc_medium": "ノイズ中：類似性とランダム性のバランスが取れています",
+  "noise_desc_high": "ノイズ高：ほぼランダムにマッチングされます",
+  "loading_text": "読み込み中…",
+  "no_buddies": "まだバディグループに参加していません。",
+  "no_notifications": {
+    "no_general": "一般のお知らせはありません。",
+    "no_buddy": "バディの通知はありません。",
+    "no_recommendations": "おすすめはありません。"
+  },
+  "languages": {
+    "no_lang": "制限なし",
+    "en": "英語",
+    "es": "スペイン語",
+    "zh": "中国語",
+    "hi": "ヒンディー語",
+    "fr": "フランス語",
+    "ko": "韓国語",
+    "ja": "日本語",
+    "de": "ドイツ語",
+    "ar": "アラビア語",
+    "pt": "ポルトガル語",
+    "ru": "ロシア語",
+    "it": "イタリア語",
+    "tr": "トルコ語",
+    "nl": "オランダ語",
+    "pl": "ポーランド語",
+    "th": "タイ語",
+    "vi": "ベトナム語",
+    "ms": "マレー語",
+    "sv": "スウェーデン語",
+    "no": "ノルウェー語",
+    "fi": "フィンランド語",
+    "el": "ギリシャ語",
+    "hu": "ハンガリー語",
+    "cs": "チェコ語",
+    "ro": "ルーマニア語",
+    "da": "デンマーク語",
+    "he": "ヘブライ語",
+    "id": "インドネシア語",
+    "uk": "ウクライナ語",
+    "fa": "ペルシア語",
+    "bn": "ベンガル語"
+  },
+  "meetingLanguages": {
+    "no_lang": "言語制限なし",
+    "en": "このミーティングは英語で行われます",
+    "es": "このミーティングはスペイン語で行われます",
+    "zh": "このミーティングは中国語で行われます",
+    "hi": "このミーティングはヒンディー語で行われます",
+    "fr": "このミーティングはフランス語で行われます",
+    "ko": "このミーティングは韓国語で行われます",
+    "ja": "このミーティングは日本語で行われます",
+    "de": "このミーティングはドイツ語で行われます",
+    "ar": "このミーティングはアラビア語で行われます",
+    "pt": "このミーティングはポルトガル語で行われます",
+    "ru": "このミーティングはロシア語で行われます",
+    "it": "このミーティングはイタリア語で行われます",
+    "tr": "このミーティングはトルコ語で行われます",
+    "nl": "このミーティングはオランダ語で行われます",
+    "pl": "このミーティングはポーランド語で行われます",
+    "th": "このミーティングはタイ語で行われます",
+    "vi": "このミーティングはベトナム語で行われます",
+    "ms": "このミーティングはマレー語で行われます",
+    "sv": "このミーティングはスウェーデン語で行われます",
+    "no": "このミーティングはノルウェー語で行われます",
+    "fi": "このミーティングはフィンランド語で行われます",
+    "el": "このミーティングはギリシャ語で行われます",
+    "hu": "このミーティングはハンガリー語で行われます",
+    "cs": "このミーティングはチェコ語で行われます",
+    "ro": "このミーティングはルーマニア語で行われます",
+    "da": "このミーティングはデンマーク語で行われます",
+    "he": "このミーティングはヘブライ語で行われます",
+    "id": "このミーティングはインドネシア語で行われます",
+    "uk": "このミーティングはウクライナ語で行われます",
+    "fa": "このミーティングはペルシア語で行われます",
+    "bn": "このミーティングはベンガル語で行われます"
+  },
+  "installed_models": "インストール済みモデル",
+  "available_models": "利用可能なモデル",
+  "install": "インストール",
+  "no_installed_models": "インストールされたモデルはありません。",
+  "no_available_models": "利用可能なモデルはありません。",
+  "download_success": "ダウンロードに成功しました",
+  "model_downloaded": "モデル「{{name}}」がダウンロードされました。",
+  "download_failed": "ダウンロードに失敗しました",
+  "model_download_failed": "モデル「{{name}}」のダウンロードに失敗しました。",
+  "confirm_delete_title": "削除の確認",
+  "confirm_delete_message": "「{{name}}」を本当に削除しますか？",
+  "model_deleted": "モデル「{{name}}」が削除されました。",
+  "delete_failed": "削除に失敗しました",
+  "model_delete_failed": "モデル「{{name}}」の削除に失敗しました。",
+  "language_models": "言語モデル",
+  "language_filter": "言語フィルター",
+  "record_modal_title": "録音と解析",
+  "record": "録音",
+  "stop": "停止",
+  "start_talking": "話し始めてライブ文字起こしを見る...",
+  "speech_recognition_error": "音声認識エラーが発生しました。",
+  "share_prompt": "投稿のリンクを共有する。",
+  "model_not_found": "言語モデルが見つかりません。",
+  "already_installed": "すでにインストール済み",
+  "model_already_installed": "モデル「{{name}}」はすでにインストールされています。",
+  "install_model": "モデルをインストール",
+  "analyze_recording": "録音後に文法を解析する",
+  "auto_check_on": "自動チェック：オン",
+  "auto_check_off": "自動チェック：オフ",
+  "conversation_analysis": "会話の解析",
+  "analysis_no_models_info": "会話分析を行うには、下のボタンをタップして言語モデルをインストールしてください。",
+  "record_error": "録音を開始できませんでした",
+  "warning_mobile_performance": "このモデルは大きいため、モバイルデバイスで動作が遅くなる可能性があります。自己責任でご利用ください。",
+  "loginOverlay": {
+    "title": "Abrodyへようこそ",
+    "message": "お知らせやおすすめを表示するには、ログインしてください。",
+    "loginButton": "ログイン",
+    "guestButton": "ゲストとして続行"
+  },
+  "voice_record_on": "音声録音オン",
+  "voice_record_off": "音声録音オフ",
+  "auto_send_on": "自動送信オン",
+  "auto_send_off": "自動送信オフ",
+  "check_language": "チェックする言語",
+  "grammar_report": "文法表現レポート",
+  "request_scores": "スコアをリクエスト",
+  "overview_statistics": "統計概要",
+  "total_entries": "総エントリ数",
+  "avg_issues": "平均問題数",
+  "issues_over_time": "時間経過による問題数",
+  "no_data": "表示できるデータがありません",
+  "entries_by_language": "言語別エントリ数",
+  "history_entries": "履歴エントリ",
+  "timestamp": "タイムスタンプ",
+  "request_language": "リクエスト言語",
+  "ui_language": "UI言語",
+  "issues_found": "発見された問題",
+  "classification": "分類",
+  "comment": "コメント",
+  "edit_entry": "エントリを編集",
+  "class_none": "なし",
+  "class_reviewed": "レビュー済み",
+  "class_important": "重要",
+  "comment_placeholder": "コメントを追加してください…",
+  "no_history": "履歴エントリがありません",
+  "insufficient_data": "チャートを表示するのに十分なデータがありません。",
+  "start_ai_chat": "AIチャットを開始",
+  "difficulty": "難易度",
+  "difficulty_easy": "簡単",
+  "difficulty_medium": "普通",
+  "difficulty_hard": "難しい",
+  "topic": "トピック",
+  "topic_none": "特定のトピックなし",
+  "topic_law": "法律",
+  "topic_medicine": "医療",
+  "topic_science": "科学",
+  "topic_art": "芸術",
+  "add_to_vocab": "語彙に追加",
+  "vocab": "単語帳",
+  "grammar": "文法",
+  "expression": "表現",
+  "no_vocab_saved": "保存された単語がありません",
+  "no_grammar_history": "保存された文法履歴がありません",
+  "no_expression_history": "保存された表現履歴がありません",
+  "category_breakdown": "カテゴリ内訳",
+  "no_issues": "まだ問題は記録されていません。",
+  "uncategorized": "未分類",
+  "show_stats": "統計を表示",
+  "show_my_data": "自分のデータを表示",
+  "swipe_hint": "« 左右にスワイプ »",
+  "study": "学習",
+  "show_study_words": "学習単語",
+  "show_saved_words": "保存単語",
+  "time_order": "時間順",
+  "freq_order": "頻度順",
+  "avg_freq": "平均Zipf",
+  "no_saved_words": "まだ単語を保存していません。",
+  "no_saved_grammar": "まだ文法エントリを保存していません。",
+  "no_saved_expressions": "まだ表現を保存していません。",
+  "help_study_mode": "学習モードでは、保存された語彙の難易度に合わせて単語が自動的に調整されます。",
+  "save_history": "履歴を保存",
+  "known_word": "知っている単語",
+  "unknown_word": "知らない単語",
+  "unmark_known": "知っている単語を解除",
+  "unmark_unknown": "知らない単語を解除",
+  "current_language": "言語",
+  "change_language": "変更",
+  "quiz": "クイズ",
+  "hint": "ヒント",
+  "try_again": "もう一度試してください！",
+  "correct": "正解",
+  "well_done": "よくできました！",
+  "incorrect": "不正解",
+  "hint_button": "ヒント",
+  "check_answer_button": "解答を確認",
+  "correct_answer": "🎉 正解！",
+  "history_settings": "履歴設定",
+  "load_more": "もっと読み込む",
+  "create_meeting": "ミーティングを作成",
+  "show_banner": "バナーを表示",
+  "hide_banner": "バナーを非表示",
+  "create_post": "投稿を作成",
+  "startpage": {
+    "title": "あなたの言葉が大切",
+    "descriptionLine1": "すべての会話があなた専用の語学学習の旅を形作ります。",
+    "descriptionLine2": "自然に話して—必要なものだけを学びましょう。",
+    "tagline1": "話す",
+    "tagline2": "チャット",
+    "tagline3": "習得"
+  },
+  "quizPage": {
+    "tabs": {
+      "vocab": "語彙",
+      "grammar": "文法",
+      "expression": "表現"
+    },
+    "loadingGrammar": "文法データを読み込み中…",
+    "loadingExpression": "表現データを読み込み中…",
+    "empty": {
+      "noSavedGrammar": "まだ文法クイズを保存していません。",
+      "noSavedExpressions": "まだ表現クイズを保存していません。"
+    },
+    "lang": {
+      "change": "言語を変更",
+      "close": "閉じる"
+    },
+    "actions": {
+      "learn": "学習開始"
+    },
+    "quizButton": {
+      "arrow": "▶"
+    }
+  },
+  "grammarReport": {
+    "datasets": {
+      "quizGrammar": "文法クイズ",
+      "quizExpression": "表現クイズ",
+      "quizVocab": "語彙クイズ",
+      "quizSets": "クイズセット",
+      "savedVocab": "保存済み語彙",
+      "grammarCheck": "文法チェック",
+      "expressionCheck": "表現チェック",
+      "hiddenWords": "非表示単語",
+      "knownWords": "知っている単語",
+      "unknownWords": "知らない単語"
+    },
+    "header": {
+      "report": "レポート",
+      "historySettings": "履歴設定",
+      "overviewStatistics": "概要統計",
+      "historyEntries": "履歴項目"
+    },
+    "entry": {
+      "correctness": "正解／不正解",
+      "time": "時間",
+      "seconds": "秒"
+    },
+    "stats": {
+      "total": "合計",
+      "accuracy": "正確度",
+      "avgTime": "平均時間"
+    },
+    "chart": {
+      "issuesOverTime": "時間経過ごとの誤り数",
+      "entriesByLanguage": "言語別エントリ数",
+      "insufficientData": "データ不足"
+    },
+    "noData": "データがありません",
+    "noHistory": "履歴がありません",
+    "loadMore": "もっと読み込む",
+    "toggle": {
+      "saveHistory": "履歴を保存",
+      "requestScores": "スコアをリクエスト"
+    }
+  },
+  "vocabQuiz": {
+    "preparing": "{{total}}問中{{prepared}}問を準備中…",
+    "congratulations": "よくできました！"
+  },
+  "quizSetsList": {
+    "preparing": "{{total}}問中{{prepared}}問を準備中…",
+    "quizSetTitle": "クイズセット{{number}}",
+    "deleteSet": "セットを削除",
+    "createSet": "クイズセットを作成"
+  },
+  "start_quiz": "クイズを開始",
+  "quizGrammar": {
+    "description": "下の単語をドラッグして上の文に並べ替えましょう。誤って配置した単語は下に戻して、文法的に正しい文章を完成させてください。"
+  },
+  "quizExpression": {
+    "description": "下から正しい単語をドラッグして、上の文の空欄を埋めてみましょう。"
+  },
+  "ai_options": "AIオプション",
+  "quizPage_modes": {
+    "move": "単語を移動",
+    "fill": "穴埋め"
+  },
+  "maintenance_offline": {
+    "offline_note": "オフラインでも学習ページにアクセスできます。",
+    "go_to_learning": "学習ページへ移動"
+  },
+  "enable_voice_chat": "音声チャットを有効にする",
+  "disable_voice_chat": "音声チャットを無効にする",
+  "enable_roleplay": "ロールプレイを有効にする",
+  "disable_roleplay": "ロールプレイを無効にする",
+
+  "scenario_cafe": "カフェでの注文",
+  "scenario_cafe_desc": "カフェで飲み物を注文しています。",
+  "scenario_hotel": "ホテルのチェックイン",
+  "scenario_hotel_desc": "ホテルにチェックインしてシティビュールームをお願いしています。",
+  "scenario_directions": "道案内を聞く",
+  "scenario_directions_desc": "最寄りの地下鉄駅を探す必要があります。",
+  "scenario_grocery": "食料品の買い物",
+  "scenario_grocery_desc": "グルテンフリーパスタを探しています。",
+  "scenario_clothes": "洋服の購入",
+  "scenario_clothes_desc": "洋服を試着して別のサイズをお願いしています。",
+  "scenario_interview": "就職面接",
+  "scenario_interview_desc": "面接官として質問に答えています。",
+  "scenario_meeting": "ビジネスミーティング",
+  "scenario_meeting_desc": "四半期の売上数字をプレゼンしています。",
+  "scenario_call": "ビジネス電話",
+  "scenario_call_desc": "クライアントに電話でフォローアップしています。",
+  "scenario_hospital": "医者の診察",
+  "scenario_hospital_desc": "医者に症状を説明しています。",
+  "scenario_emergency": "緊急事態",
+  "scenario_emergency_desc": "人が倒れるのを目撃して助けを呼んでいます。",
+  "scenario_dating": "友達作り",
+  "scenario_dating_desc": "新しい人に出会い、趣味について話しています。",
+  "scenario_party": "パーティーの計画",
+  "scenario_party_desc": "友達をディナーパーティーに招待しています。",
+  "view_list": "リストビュー",
+  "view_card": "カードビュー",
+  "refresh_words": "単語を更新",
+  "quiz_corrects": "正解数",
+  "known_words": "既知の単語",
+  "stats_overview": "統計概要",
+  "show_chart": "グラフを表示",
+  "conversation_practice": "会話練習",
+  "rank_suffix": "位",
+  "backToSets": "セットに戻る",
+  "history": {
+    "remoteTitle": "例のエントリ",
+    "remoteMessage": "この例は参考用に表示されており、削除できません。AIや友達とチャットすると、あなたの学習データがここに蓄積されます。"
+  },
+  "learn": "学習",
+  "reveal_answer": "答え：{{answer}}",
+  "study_report": "学習レポート",
+  "mcq_prompt": "文法的に正しい文を選んでください",
+  "disable_quiz": "クイズをオフ",
+  "last_ai_chat": {
+    "close": "閉じる",
+    "study": "AIと学習する",
+    "start_ai_chat": "AIとチャットを始めるにはタップしてください"
+  },
+  "toggle_ai_options": "AIオプション",
+  "toggle_mcq": "4択クイズ",
+  "toggle_auto_check": "自動チェック",
+  "first_chat_prompt": "最初の会話を始めましょう！",
+  "guide": {
+    "next": "次へ",
+    "prev": "戻る",
+    "finish": "了解",
+    "dontShowAgain": "今後表示しない"
+  },
+  "homeGuide": {
+    "step1": {
+      "title": "学習パートナーを探す",
+      "desc": "オンライン/オフラインの投稿を閲覧して友達を見つけましょう。AIチャットで文法チェックも瞬時に行えます。"
+    },
+    "step2": {
+      "title": "プロフィールを編集",
+      "desc": "写真をタップしてプロフィール情報の表示・編集ができます。"
+    },
+    "step3": {
+      "title": "トピックでフィルター",
+      "desc": "トピックスライダーをスワイプ、またはリストアイコンをタップして表示トピックをカスタマイズします。"
+    },
+    "step4": {
+      "title": "詳細フィルター",
+      "desc": "フィルターアイコンから距離や繰り返しなどで投稿を絞り込みます。"
+    },
+    "step5": {
+      "title": "AIクイズ＆チャット",
+      "desc": "動的なAIによる4択クイズやロールプレイチャットで語学力を高めましょう。"
+    },
+    "step6": {
+      "title": "投稿を作成",
+      "desc": "ミートアップや質問をコミュニティに共有しましょう。"
+    }
+  },
+  "noticeGuide": {
+    "step1": {
+      "title": "リアルタイム会話分析",
+      "desc": "このボタンをタップして実際のミートアップ中の会話をすぐにチェックできます。"
+    },
+    "step2": {
+      "title": "進捗を追跡",
+      "desc": "語学学習の統計を一目で確認できます。"
+    },
+    "step3": {
+      "title": "発見＆最新情報",
+      "desc": "近くの学習ミートアップや重要なお知らせをここで確認しましょう。"
+    }
+  },
+  "quizGuide": {
+    "step1": {
+      "title": "クイズタイプを選択",
+      "desc": "上部で「語彙」「文法」「表現」を選んでクイズを開始します。"
+    },
+    "step2": {
+      "title": "言語＆モード変更",
+      "desc": "言語ボタンをタップして言語を切り替えます。文法/表現ではモードも変更可能です。"
+    },
+    "step3": {
+      "title": "新しいクイズを生成",
+      "desc": "「クイズ生成」をタップして、保存された学習データからクイズを作成します。"
+    }
+  },
+  "learningGuide": {
+    "step1": {
+      "title": "タブで練習",
+      "desc": "語彙、文法、表現のタブを切り替えて練習します。"
+    },
+    "step2": {
+      "title": "言語を変更",
+      "desc": "ここをタップして学習したい言語を変更します。"
+    },
+    "step3": {
+      "title": "単語を更新",
+      "desc": "この更新ボタンであなたのレベルに合わせた新しい単語を選びます。"
+    },
+    "step4": {
+      "title": "カード/リスト表示",
+      "desc": "語彙をカード表示とリスト表示で切り替えます。"
+    },
+    "step5": {
+      "title": "保存済み単語",
+      "desc": "保存（ブックマーク）した単語のみを表示します。"
+    },
+    "step6": {
+      "title": "単語カード操作",
+      "desc": "カードをタップして意味を確認し、知っている/知らないをマークして学習レベルを調整します。"
+    }
+  },
+  "chatGuide": {
+    "step1": {
+      "title": "チャットタイプを選択",
+      "desc": "画面上部のトグルで「パーソナル」「バディグループ」「地域チャット」を切り替えます。目的に合わせて選択しましょう！"
+    },
+    "step2": {
+      "title": "AIチャット — 学習パートナー",
+      "desc": "個人チャットリストのトップにあるAIチャットで、実際の会話練習とクイズができます。"
+    },
+    "step3": {
+      "title": "友達とチャットして学ぶ",
+      "desc": "AIチャットの下に友達とのチャット一覧が表示されます。「設定>友達管理」で追加・削除可能です。"
+    },
+    "step4": {
+      "title": "バディグループチャット — チーム学習",
+      "desc": "バディタブでグループチャットに参加。検索ページや「設定>バディ管理」で作成/参加できます。"
+    },
+    "step5": {
+      "title": "地域チャット — 近くの人と交流",
+      "desc": "地域チャットで現在地近くの人と会話できます。新しい友達作りにも最適です。"
+    }
+  },
+  "chatRoomGuide": {
+    "step1": {
+      "title": "AIチャットを細かく設定",
+      "desc": "「AI＋」ボタンをタップして難易度、トピック、音声、ロールプレイを設定します。"
+    },
+    "step2": {
+      "title": "音声ロールプレイ",
+      "desc": "右のシチュエーションチップを選択し、音声チャットONでAIとシーンを演じます。"
+    },
+    "step3": {
+      "title": "学習ポイントを確認",
+      "desc": "文法や表現を保存するたびにポイントが増えます。後で学習・クイズページで見返せます。"
+    },
+    "step4": {
+      "title": "チェック言語＆自動チェック設定",
+      "desc": "文法チェッカーの言語を選択。自動チェックはデフォルトONですが切り替え可能です。"
+    },
+    "step5": {
+      "title": "選択式クイズ（AI限定）",
+      "desc": "AIチャット内容に基づく4択クイズが利用できます。"
+    },
+    "step6": {
+      "title": "メッセージ編集/削除",
+      "desc": "送信したバブルを長押しして修正または削除できます。"
+    },
+    "step7": {
+      "title": "テキスト送信＆音声",
+      "desc": "テキスト入力後飛行機アイコンをタップ送信。空欄時はマイクが表示され、タップで音声チャット開始します。"
+    }
+  },
+  "view_offline_meetings": "オフラインミートアップを見る",
+  "view_online_meetings": "オンラインミートアップを見る",
+  "posting_toggle": {
+    "mode": "ミートアップモード",
+    "offline": "オフラインミートアップ",
+    "online": "オンラインミートアップ"
+  },
+  "postingGuide": {
+    "step1": {
+      "title": "オフライン＆オンラインミートアップ作成",
+      "desc": "対面またはオンラインでミートアップを作成し、開始します。"
+    },
+    "step2": {
+      "title": "トピック選択＆命名",
+      "desc": "ミートアップのトピックを選び、タイトルを設定します（例：’朝の英語学習’）。"
+    },
+    "step3": {
+      "title": "ミートアップ時間を設定",
+      "desc": "日付と時間を選択。一回限りや定期開催も可能です。"
+    },
+    "step4": {
+      "title": "場所を選択",
+      "desc": "地図上のピンをタップして開催場所を設定します。"
+    },
+    "step5": {
+      "title": "使用言語を選択",
+      "desc": "ミートアップで使用する言語を選びます。"
+    },
+    "step6": {
+      "title": "AIによる投稿作成",
+      "desc": "文章に迷ったらAIに自動生成させることもできます。"
+    },
+    "step7": {
+      "title": "投稿＆管理",
+      "desc": "「投稿」をタップして公開。ホームやプロフィールから編集、下書き保存が可能です。"
+    }
+  },
+  "profileGuide": {
+    "step1": {
+      "title": "プロフィール画像を変更",
+      "desc": "写真横のボタンをタップして画像を更新しましょう。"
+    },
+    "step2": {
+      "title": "ニックネーム設定",
+      "desc": "ニックネームをタップして設定します。学習や交流がスムーズに！"
+    },
+    "step3": {
+      "title": "メイン言語を選択",
+      "desc": "メイン言語を選ぶとUIがその言語になります。"
+    },
+    "step4": {
+      "title": "プライバシー設定",
+      "desc": "学習言語などの公開設定をここで切り替えられます。"
+    },
+    "step5": {
+      "title": "クイックメニュー機能",
+      "desc": "クイックメニューで投稿・バディ・友達管理ができます。"
+    }
+  },
+  "buddyGuide": {
+    "step1": {
+      "title": "バディグループ",
+      "desc": "バディグループは語学学習コミュニティです。「バディ」タブに所属グループが表示されます。"
+    },
+    "step2": {
+      "title": "参加リクエスト",
+      "desc": "「リクエスト」タブで参加申請の状況を確認できます。"
+    },
+    "step3": {
+      "title": "グループ検索",
+      "desc": "「検索」タブで参加したいグループを探せます。"
+    },
+    "step4": {
+      "title": "グループ作成",
+      "desc": "画面右下のアイコンをタップして新しいバディグループを作成します。"
+    }
+  },
+  "friendListGuide": {
+    "step1": {
+      "title": "友達リスト",
+      "desc": "友達一覧が表示されます。ここからチャット開始や削除が可能です。"
+    },
+    "step2": {
+      "title": "フレンドリクエスト",
+      "desc": "送受信した友達リクエストを確認し、承認/拒否できます。"
+    }
+  },
+  "fullScreenMapGuide": {
+    "step1": {
+      "title": "コンテンツフィルタ",
+      "desc": "上部のトグルでミートアップ、バディ、スクール、イベントを切り替えられます。"
+    },
+    "step2": {
+      "title": "AI生成ミートアップ",
+      "desc": "右下のアイコンで円を描くと、選択した範囲とトピックに基づきAIが投稿を作成します。"
+    }
+  },
+  "buddyInfoGuide": {
+    "step1": {
+      "title": "概要",
+      "desc": "バディグループの概要を表示します。"
+    },
+    "step2": {
+      "title": "投稿を見る",
+      "desc": "「投稿を見る」をタップしてグループ掲示板へ移動します。"
+    },
+    "step3": {
+      "title": "参加リクエスト管理",
+      "desc": "参加申請を承認または拒否できます。"
+    },
+    "step4": {
+      "title": "予定・通知・投票",
+      "desc": "タブで予定、通知、投票を管理します。"
+    }
+  },
+  "buddyPageGuide": {
+    "step1": {
+      "title": "バディ掲示板へようこそ",
+      "desc": "ここでグループメンバーと投稿を共有できます。"
+    },
+    "step2": {
+      "title": "フィードをフィルタ",
+      "desc": "ここをタップして投稿の並び替えや絞り込みを行います。"
+    },
+    "step3": {
+      "title": "トピックを選択",
+      "desc": "興味のあるトピックを選びましょう。"
+    },
+    "step4": {
+      "title": "投稿を閲覧",
+      "desc": "グループメンバーの投稿をスクロールして確認します。"
+    }
+  },
+  "ugc_policy": {
+    "title": "コミュニティガイドラインと利用規約",
+    "intro": "このコミュニティは、あなたの参加によって支えられています。すべての方にとって安全で安心できる場を保つため、以下の内容に同意してください。",
+    "points": [
+      "利用規約に基づき、不適切または攻撃的なコンテンツは禁止されています",
+      "攻撃的な言葉や画像の自動フィルタリング",
+      "投稿ページから有害または不適切な投稿を直接通報できます",
+      "ユーザープロフィールページから悪質なユーザーをブロックまたは制限できます",
+      "有効な通報には24時間以内に対応します"
+    ],
+    "agree": "これらの条件に同意します"
+  },
+  "scenario": "シナリオ",
+  "leave_custom_session": "チャットセッションを終了する",
+  "leave_custom_session_success": "カスタムAIセッションが終了しました。",
+  "leave_custom_session_error": "チャットセッションの終了に失敗しました。",
+  "nothing_to_share": "共有するものがありません",
+  "shared_scenario": "共有シナリオ",
+  "start_ai_language_learning": "このシナリオでAI言語学習を開始する",
+  "shared_label": "共有済み",
+  "shared_scenario_label": "共有シナリオ",
+  "photoRolePlay": {
+    "selectLangGuide": "練習したい言語を選択してください",
+    "description": "写真を説明してロールプレイを始めましょう。",
+    "takePhoto": "写真を撮る",
+    "choosePhoto": "ライブラリから選択",
+    "generate": "生成",
+    "pickOne": "シナリオを選択",
+    "hint": "写真に最も適したシナリオを選んでください",
+    "pickPersona": "ペルソナを選択",
+    "selectedScenario": "選択されたシナリオ",
+    "startChat": "チャット開始"
+  },
+  "homeNew": {
+    "prompt_visit_1": "{{nickname}}、どこへ行ったの？",
+    "prompt_visit_2": "{{nickname}}、今日はどんな新しい場所に行った？",
+    "prompt_visit_3": "ねえ{{nickname}}、最近おもしろい所を見つけた？",
+    "prompt_visit_4": "{{nickname}}、印象に残ったスポットはあった？",
+    "prompt_visit_5": "{{nickname}}、最近の冒険をシェアして！",
+    "prompt_learn_1": "{{nickname}}、どんな場面を学びたい？",
+    "prompt_learn_2": "{{nickname}}、練習したいシチュエーションはある？",
+    "prompt_learn_3": "{{nickname}}、どんな状況に備えたい？",
+    "prompt_learn_4": "{{nickname}}、気になる実生活の場面を教えて。",
+    "prompt_learn_5": "{{nickname}}、次は何を表現したい？",
+    "ongoing_learning": "進行中のレッスン",
+    "today_learning": "今日のレッスン",
+    "quiz": "クイズ",
+    "analysis": "会話分析",
+    "situation_learning": "シチュエーション学習",
+    "learning_report": "学習レポート",
+    "quick_menu": "クイックメニュー",
+    "legacy_button": "旧ビュー",
+    "setting_button": "設定",
+    "profile_button": "マイプロフィール",
+    "friend_button": "友達",
+    "buddy_button": "バディ",
+    "mypost_button": "マイ投稿",
+    "account_button": "アカウント",
+    "learning_tools": "学習ツール",
+    "vocab": "語彙",
+    "grammar": "文法",
+    "expression": "表現",
+    "move": "語順",
+    "fill": "穴埋め"
   }
+
+
+
+
 }

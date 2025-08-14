@@ -34,7 +34,8 @@
     "post_type": "Beitragstyp",
     "buddy_group": "Buddy-Gruppe",
     "meeting_country": "Treffland",
-    "meeting_city": "Treffstadt"
+    "meeting_city": "Treffstadt",
+    "language_select": "Sprache auswählen"
   },
   "form_placeholders": {
     "title": "Gib den Titel deines Beitrags ein (erforderlich)",
@@ -57,7 +58,9 @@
     "전체": "Alle",
     "모임": "Treffen",
     "버디": "Buddy",
+    "학교": "Schule",
     "친구": "Freunde",
+    "이벤트": "Ereignis",
     "map_hide": "Karte ausblenden",
     "map_show": "Karte anzeigen",
     "exclude_time": "Zeit ausschließen",
@@ -328,7 +331,9 @@
     "clear_all_title": "Alle Benachrichtigungen löschen",
     "clear_all_confirmation": "Möchtest du wirklich alle Benachrichtigungen löschen?",
     "no_notifications": "Keine Benachrichtigungen verfügbar.",
-    "clear_all": "Alle Benachrichtigungen löschen"
+    "clear_all": "Alle Benachrichtigungen löschen",
+    "clear_all_success": "Alle Benachrichtigungen wurden gelöscht.",
+    "clear_all_error": "Löschen der Benachrichtigungen fehlgeschlagen."
   },
   "recommendations": {
     "today_activity": "Was tun wir heute?",
@@ -833,7 +838,9 @@
       "meetingContent": "Treffinhalte"
     },
     "createdAt": "Erstellt am: {{time}}",
-    "hideNotification": "Benachrichtigung ausblenden"
+    "hideNotification": "Benachrichtigung ausblenden",
+    "deleteSuccess": "Benachrichtigung erfolgreich gelöscht.",
+    "deleteError": "Löschen der Benachrichtigung fehlgeschlagen."
   },
   "placeDetails": {
     "locationPermissionDenied": "Standortzugriff verweigert.",
@@ -1074,5 +1081,934 @@
     "title": "Update erforderlich",
     "defaultMessage": "Eine neue Version ist verfügbar. Bitte aktualisiere, um fortzufahren.",
     "button": "Jetzt aktualisieren"
+  },
+  "username_check_required": "Bitte überprüfe die Verfügbarkeit des Benutzernamens",
+  "otp_verification_required": "Bitte verifiziere deine E‑Mail mit dem Code",
+  "password_strength_requirement": "Das Passwort muss mindestens 4 von 5 Regeln erfüllen",
+  "required_agreements": "Du musst allen erforderlichen Bedingungen zustimmen",
+  "explore_button": "Entdecken",
+  "toggle_group_view": "Gruppierte Ansicht",
+  "toggle_ungroup_view": "Ungruppierte Ansicht",
+  "groups.learning_culture": "Lernen & Kultur",
+  "groups.food_drink": "Essen & Trinken",
+  "groups.outdoors_active": "Draußen & Aktiv",
+  "groups.creative_social": "Kreativ & Soziales",
+  "groups.community_exchange": "Gemeinschaft & Austausch",
+  "groups.relaxation_fun": "Entspannung & Spaß",
+  "groups.travel_exploration": "Reisen & Erkundung",
+  "groups.special_interest": "Spezialinteresse",
+  "defaultMeetingPlace": "Noch nicht festgelegt. Bitte mit dem Gastgeber besprechen.",
+  "minutes_remaining": "{{count}} Minuten verbleibend",
+  "hours_remaining": "{{count}} Stunden verbleibend",
+  "days_remaining": "{{count}} Tage verbleibend",
+  "meeting_passed": "Meeting-Zeit abgelaufen",
+  "view_map": "Karte erkunden",
+  "view_friends": "Freunde finden",
+  "view_search": "Beiträge durchsuchen",
+  "password_outdated": "Dein Passwort ist veraltet und muss geändert werden.",
+  "warning_invalid_email": "Die E‑Mail-Adresse ist ungültig.",
+  "password_expired_title": "Passwort abgelaufen",
+  "password_expired_message": "Dein Passwort ist abgelaufen. Bitte ändere es, um die App weiter nutzen zu können.",
+  "change_now": "Jetzt ändern",
+  "qna": {
+    "helpNeeded": "Brauchst du Hilfe?"
+  },
+  "deactivated": {
+    "title": "Konto deaktiviert",
+    "info": "Dein Konto wurde aufgrund von Richtlinienverstößen oder gesammelten Meldungen deaktiviert. Wenn du glaubst, dass dies ein Fehler ist, kannst du unten eine Beschwerde einreichen.",
+    "reasonLabel": "Grund der Deaktivierung",
+    "dateLabel": "Deaktiviert am",
+    "durationLabel": "Dauer",
+    "days": "Tage",
+    "noReason": "Kein spezifischer Grund angegeben",
+    "note": "Für weitere Details oder um gegen diese Entscheidung Einspruch zu erheben, reiche bitte deine Beschwerde ein. Unser Support-Team wird deinen Fall prüfen und sich bei dir melden.",
+    "fileComplaint": "Beschwerde einreichen",
+    "backToLogin": "Zurück zur Anmeldung",
+    "complaintSubmitted": "Deine Beschwerde wurde eingereicht. Unser Support-Team wird sie in Kürze prüfen."
+  },
+  "report_now": "Jetzt melden",
+  "contact_now": "Jetzt kontaktieren",
+  "no_comments_prompt": "Sei der Erste, der kommentiert!",
+  "no_applicants_prompt": "Warte darauf, dass sich Leute versammeln!",
+  "result_change_pw": "Passwort erfolgreich geändert",
+  "school": "Schule",
+  "apply_school_filter": "Schulfilter anwenden",
+  "on": "Ein",
+  "off": "Aus",
+  "school_filter_description": "Wenn der Schulfilter aktiviert ist, können nur Nutzer mit verifizierter Schul‑E‑Mail der Gruppe beitreten.",
+  "email_description": "Deine E‑Mail wird für sichere Vorgänge wie Kontowiederherstellung und Passwortänderungen verwendet. Wenn du Organisationen beitreten möchtest, die mit einer bestimmten Schule verbunden sind, empfehlen wir dir, deine offizielle Schul‑E‑Mail zu nutzen.",
+  "email_not_set": "Aus Sicherheitsgründen setze bitte deine E‑Mail so bald wie möglich.",
+  "commenting_disabled": "Kommentare sind nicht erlaubt.",
+  "schoolEmailVerification": "{{schoolName}}\\nE‑Mail‑Verifizierung ist erforderlich, um beizutreten.",
+  "scenario_request_heading": "Teile deine lustigen Auslandserfahrungen",
+  "scenario_request_info": "In diesem Szenario geht es darum, die unterhaltsamen Erlebnisse zu teilen, die du während deines Auslandsstudiums hattest. Nach Einreichung und Genehmigung durch einen Administrator wird basierend auf deinem Szenario ein KI-Video erstellt und in unserem Marketing-Kanal hochgeladen. Wenn ausgewählt, genießt du einen werbefreien Monat in unserer App.",
+  "scenes": "Szenen",
+  "scene": "Szene",
+  "enter_dialogue": "Dialog eingeben",
+  "enter_image_prompt": "Bildbeschreibung eingeben",
+  "remove": "Entfernen",
+  "add_scene": "+ Szene hinzufügen",
+  "select_platforms": "Plattformen auswählen",
+  "select_platforms_info": "Wähle mindestens eine Plattform, um dein Szenario zu posten.",
+  "maximum_scene_reached": "Maximale Anzahl an Szenen erreicht.",
+  "title_required": "Titel ist erforderlich.",
+  "platform_selection_required": "Bitte wähle mindestens eine Plattform aus.",
+  "scenario_submitted": "Szenario erfolgreich eingereicht.",
+  "submission_failed": "Einreichung fehlgeschlagen:",
+  "recruitment_filter_options": "Rekrutierungsfilter",
+  "recruitment_options": {
+    "active": "Aktiv",
+    "all": "Alle"
+  },
+  "under_development": "Diese Funktion befindet sich in Entwicklung",
+  "hero_alt_text": "Hier lange drücken für das Schritt-für-Schritt-Formular (Beta)",
+  "requests": "Anfragen",
+  "members": "Mitglieder",
+  "week": "Woche",
+  "month": "Monat",
+  "longPressToViewMap": "Lange drücken, um auf der Karte anzuzeigen",
+  "select_country_prompt": "Bitte wählen Sie ein Land aus",
+  "select_language_prompt": "Bitte wählen Sie eine Sprache aus",
+  "lite_mode": "Lite-Modus",
+  "recurrence.title": "Wiederholung auswählen",
+  "recurrence.frequency": "Wiederholungshäufigkeit",
+  "recurrence.daily": "Täglich",
+  "recurrence.weekly": "Wöchentlich",
+  "recurrence.monthly": "Monatlich",
+  "recurrence.every_n": "Alle N Intervalle",
+  "recurrence.weekdays": "Wochentage auswählen",
+  "recurrence.time_of_day": "Tageszeit",
+  "recurrence.every": "Alle",
+  "recurrence.one_off": "Einmalig",
+  "recurrence.recurring": "Wiederkehrend",
+  "recurrence_filter": "Wiederholung",
+  "recurrence_filter_options": {
+    "all": "Alle Beiträge",
+    "one_off": "Nur Einmalige",
+    "recurring": "Nur Wiederkehrende"
+  },
+  "schedule": "Zeitplan",
+  "edit_menu": "Bearbeiten",
+  "check_availability": "Verfügbarkeit prüfen",
+  "nickname_available": "Dieser Spitzname ist verfügbar!",
+  "nickname_unavailable": "Dieser Spitzname ist leider bereits vergeben.",
+  "nickname_check_failed": "Spitznamen-Prüfung fehlgeschlagen. Bitte erneut versuchen.",
+  "enter_new_nickname_label": "Bitte geben Sie Ihren neuen Spitznamen ein",
+  "recruitStatus": {
+    "all": "Alle",
+    "open": "Offen",
+    "closed": "Abgeschlossen"
+  },
+  "eventDetails": {
+    "period": "Zeitraum",
+    "hours": "Öffnungszeiten",
+    "venue": "Ort",
+    "description": "Beschreibung",
+    "tags": "Tags",
+    "moreInfo": "Mehr erfahren",
+    "unverifiedWarning": "Diese Veranstaltung wurde durch KI gesammelt – bitte überprüfen Sie die Details, bevor Sie planen.",
+    "createMeetingHere": "Hier Treffen erstellen"
+  },
+  "unverifiedWarning": "Diese Veranstaltung wurde durch KI gesammelt – bitte überprüfen Sie die Details, bevor Sie planen.",
+  "select_server": "Server auswählen",
+  "current_data_region": "Aktuelle Datenregion",
+  "select_data_region": "Datenregion auswählen",
+  "selected": "Ausgewählt",
+  "region_names": {
+    "Canada": "Kanada",
+    "Australia": "Australien",
+    "UK": "Vereinigtes Königreich",
+    "Korea": "Korea",
+    "Beta": "Beta",
+    "Development": "Entwicklung"
+  },
+  "server_modal_description": "Wählen Sie, mit welchem Server die App eine Verbindung herstellt.",
+  "data_region_modal_description": "Wählen Sie, wo Ihre Daten gespeichert werden.",
+  "restart_required": "Änderungen werden nach einem Neustart der App wirksam.",
+  "select_data_country": "Wo sollen Ihre Daten gespeichert werden? (Später nur schwer änderbar)",
+  "data_country_note": "Es muss mit dem Land übereinstimmen, in dem Sie den Dienst nutzen werden.",
+  "ai_analysis": "KI-Analyse",
+  "ai_analysis_instruction_title": "KI-Profilanalyse",
+  "ai_analysis_instruction_line1": "Bitte laden Sie Ihr Profilbild hoch.",
+  "ai_analysis_instruction_line2": "Verwenden Sie ein klares Foto Ihres Gesichts für beste Ergebnisse.",
+  "ai_analysis_instruction_line3": "Die Analyse dient nur Unterhaltungszwecken.",
+  "start_analysis": "Analyse starten",
+  "analysis_loading": "Analyse läuft… Bitte warten.",
+  "popularity_prediction": "Globale Beliebtheitsprognose",
+  "analysis_failed": "Analyse fehlgeschlagen.",
+  "share_message": "Schau dir meine Beliebtheitsprognose an!",
+  "analysis_limit_reached": "Sie haben das heutige Limit von 5 KI-Analysen erreicht.",
+  "ai_analysis_feature_description": "Diese Funktion analysiert Ihr Profil und sagt vorher, in welchen Ländern Sie am beliebtesten sein würden.",
+  "schoolDetails": {
+    "domain": "E-Mail-Domain",
+    "code": "Schulcode",
+    "distance": "Entfernung",
+    "calculating": "Wird berechnet…"
+  },
+  "login_with_apple": "Mit Apple anmelden",
+  "only_representative_can_edit": "Nur der Vertreter kann dies bearbeiten.",
+  "buddy_updated": "Buddy-Gruppe aktualisiert.",
+  "save_failed": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+  "set_to_school_location": "Karte auf {{schoolName}}-Ort einstellen",
+  "recurrence": {
+    "title": "Wiederholung",
+    "frequency": "Frequenz",
+    "daily": "Täglich",
+    "weekly": "Wöchentlich",
+    "monthly": "Monatlich",
+    "every_n": "Alle N",
+    "weekdays": "Wochentage",
+    "time_of_day": "Uhrzeit",
+    "summary_label": "Zusammenfassung",
+    "one_off_at": "Einmalig um {{time}}",
+    "summary_daily": "Alle {{interval}} Tag(e) um {{time}}",
+    "summary_weekly": "Alle {{interval}} Woche(n) am {{days}} um {{time}}",
+    "summary_monthly": "Alle {{interval}} Monat(e) um {{time}}",
+    "month_day": "Tag des Monats",
+    "verbose": {
+      "one_off": "Dies ist ein einmaliges Treffen um {{time}}.",
+      "daily": "Dieses Treffen findet alle Tage um {{time}} statt.",
+      "daily_interval": "Dieses Treffen findet alle {{interval}} Tage um {{time}} statt.",
+      "weekly": "Dieses Treffen findet alle Wochen am {{days}} um {{time}} statt.",
+      "weekly_interval": "Dieses Treffen findet alle {{interval}} Wochen am {{days}} um {{time}} statt.",
+      "monthly": "Dieses Treffen findet alle Monate um {{time}} statt.",
+      "monthly_interval": "Dieses Treffen findet alle {{interval}} Monate um {{time}} statt.",
+      "monthly_on_day": "Alle Monate am {{day}}. Tag um {{time}}.",
+      "monthly_on_day_interval": "Dieses Treffen findet alle {{interval}} Monate am {{day}}. Tag um {{time}} statt."
+    }
+  },
+  "weekdays": {
+    "SU": "So",
+    "MO": "Mo",
+    "TU": "Di",
+    "WE": "Mi",
+    "TH": "Do",
+    "FR": "Fr",
+    "SA": "Sa"
+  },
+  "language_change_notice": "Sie müssen die App neu starten, damit die Sprachänderung wirksam wird. Der Bildschirm kann vorübergehend einfrieren.",
+  "block_user": "Blockieren",
+  "unblock_user": "Entblocken",
+  "block_successfully": " Benutzer wurde blockiert.",
+  "unblock_successfully": " Benutzer wurde entblockt.",
+  "chat_disabled_user": "Du kannst mit diesem Benutzer nicht chatten.",
+  "chat_disabled_icon_accessibility": "Icon für blockierten Benutzer",
+  "advertisement_contact_title": "Werbeanfragen",
+  "advertisement_contact_message": "Für Werbeanfragen senden Sie bitte eine E-Mail an {{email}}.",
+  "createNotif": {
+    "title": "Benachrichtigung erstellen",
+    "selectType": "Benachrichtigungstyp auswählen:",
+    "type": {
+      "all": "Alle Benachrichtigung",
+      "individual": "Einzelne Benachrichtigung"
+    },
+    "placeholder": {
+      "searchUser": "Nach Benutzername oder ID suchen",
+      "title": "Titel",
+      "message": "Nachricht"
+    },
+    "noUsers": "Keine Benutzer gefunden.",
+    "button": {
+      "uploadImage": "Bild hochladen",
+      "send": "Benachrichtigung senden",
+      "cancel": "Abbrechen"
+    }
+  },
+  "noise_desc_low": "Niedriges Rauschen: Personen mit ähnlichen Profilen werden meist gruppiert",
+  "noise_desc_medium": "Mittleres Rauschen: ausgewogenes Verhältnis von Ähnlichkeit und Zufälligkeit",
+  "noise_desc_high": "Hohes Rauschen: nahezu zufällige Zuordnung aller Mitglieder",
+  "loading_text": "Lädt…",
+  "no_buddies": "Du bist noch keiner Buddy-Gruppe beigetreten.",
+  "no_notifications": {
+    "no_general": "Es gibt keine allgemeinen Mitteilungen.",
+    "no_buddy": "Es gibt keine Buddy-Benachrichtigungen.",
+    "no_recommendations": "Keine Empfehlungen verfügbar."
+  },
+  "languages": {
+    "no_lang": "Keine Einschränkung",
+    "en": "Englisch",
+    "es": "Spanisch",
+    "zh": "Chinesisch",
+    "hi": "Hindi",
+    "fr": "Französisch",
+    "ko": "Koreanisch",
+    "ja": "Japanisch",
+    "de": "Deutsch",
+    "ar": "Arabisch",
+    "pt": "Portugiesisch",
+    "ru": "Russisch",
+    "it": "Italienisch",
+    "tr": "Türkisch",
+    "nl": "Niederländisch",
+    "pl": "Polnisch",
+    "th": "Thailändisch",
+    "vi": "Vietnamesisch",
+    "ms": "Malaiisch",
+    "sv": "Schwedisch",
+    "no": "Norwegisch",
+    "fi": "Finnisch",
+    "el": "Griechisch",
+    "hu": "Ungarisch",
+    "cs": "Tschechisch",
+    "ro": "Rumänisch",
+    "da": "Dänisch",
+    "he": "Hebräisch",
+    "id": "Indonesisch",
+    "uk": "Ukrainisch",
+    "fa": "Persisch",
+    "bn": "Bengalisch"
+  },
+  "meetingLanguages": {
+    "no_lang": "Keine Sprachbeschränkung",
+    "en": "Dieses Meeting findet auf Englisch statt",
+    "es": "Dieses Meeting findet auf Spanisch statt",
+    "zh": "Dieses Meeting findet auf Chinesisch statt",
+    "hi": "Dieses Meeting findet auf Hindi statt",
+    "fr": "Dieses Meeting findet auf Französisch statt",
+    "ko": "Dieses Meeting findet auf Koreanisch statt",
+    "ja": "Dieses Meeting findet auf Japanisch statt",
+    "de": "Dieses Meeting findet auf Deutsch statt",
+    "ar": "Dieses Meeting findet auf Arabisch statt",
+    "pt": "Dieses Meeting findet auf Portugiesisch statt",
+    "ru": "Dieses Meeting findet auf Russisch statt",
+    "it": "Dieses Meeting findet auf Italienisch statt",
+    "tr": "Dieses Meeting findet auf Türkisch statt",
+    "nl": "Dieses Meeting findet auf Niederländisch statt",
+    "pl": "Dieses Meeting findet auf Polnisch statt",
+    "th": "Dieses Meeting findet auf Thailändisch statt",
+    "vi": "Dieses Meeting findet auf Vietnamesisch statt",
+    "ms": "Dieses Meeting findet auf Malaiisch statt",
+    "sv": "Dieses Meeting findet auf Schwedisch statt",
+    "no": "Dieses Meeting findet auf Norwegisch statt",
+    "fi": "Dieses Meeting findet auf Finnisch statt",
+    "el": "Dieses Meeting findet auf Griechisch statt",
+    "hu": "Dieses Meeting findet auf Ungarisch statt",
+    "cs": "Dieses Meeting findet auf Tschechisch statt",
+    "ro": "Dieses Meeting findet auf Rumänisch statt",
+    "da": "Dieses Meeting findet auf Dänisch statt",
+    "he": "Dieses Meeting findet auf Hebräisch statt",
+    "id": "Dieses Meeting findet auf Indonesisch statt",
+    "uk": "Dieses Meeting findet auf Ukrainisch statt",
+    "fa": "Dieses Meeting findet auf Persisch statt",
+    "bn": "Dieses Meeting findet auf Bengalisch statt"
+  },
+  "installed_models": "Installierte Modelle",
+  "available_models": "Verfügbare Modelle",
+  "install": "Installieren",
+  "no_installed_models": "Keine installierten Modelle.",
+  "no_available_models": "Keine verfügbaren Modelle.",
+  "download_success": "Download erfolgreich",
+  "model_downloaded": "Modell „{{name}}“ wurde heruntergeladen.",
+  "download_failed": "Download fehlgeschlagen",
+  "model_download_failed": "Herunterladen des Modells „{{name}}“ fehlgeschlagen.",
+  "confirm_delete_title": "Löschen bestätigen",
+  "confirm_delete_message": "Möchten Sie „{{name}}“ wirklich löschen?",
+  "model_deleted": "„{{name}}“ wurde gelöscht.",
+  "delete_failed": "Löschen fehlgeschlagen",
+  "model_delete_failed": "Löschen des Modells „{{name}}“ fehlgeschlagen.",
+  "language_models": "Sprachmodelle",
+  "language_filter": "Sprachfilter",
+  "record_modal_title": "Aufnahme & Analyse",
+  "record": "Aufnehmen",
+  "stop": "Stopp",
+  "start_talking": "Beginnen Sie zu sprechen, um Live-Transkription zu sehen…",
+  "speech_recognition_error": "Spracherkennungsfehler.",
+  "share_prompt": "Link zu diesem Beitrag teilen.",
+  "model_not_found": "Sprachmodell nicht gefunden.",
+  "already_installed": "Bereits installiert",
+  "model_already_installed": "Modell „{{name}}“ ist bereits installiert.",
+  "install_model": "Modell installieren",
+  "analyze_recording": "Grammatik nach Aufnahme analysieren",
+  "auto_check_on": "Automatische Prüfung: AN",
+  "auto_check_off": "Automatische Prüfung: AUS",
+  "conversation_analysis": "Konversationsanalyse",
+  "analysis_no_models_info": "Um die Konversationsanalyse durchzuführen, installieren Sie bitte das Sprachmodell, indem Sie unten auf die Schaltfläche tippen.",
+  "record_error": "Aufnahme konnte nicht gestartet werden",
+  "warning_mobile_performance": "Dieses Modell ist größer und kann auf Mobilgeräten langsam laufen. Nutzung auf eigene Gefahr.",
+  "loginOverlay": {
+    "title": "Willkommen bei Abrody",
+    "message": "Um Ankündigungen und Empfehlungen zu sehen, melden Sie sich bitte an.",
+    "loginButton": "Anmelden",
+    "guestButton": "Als Gast fortfahren"
+  },
+  "voice_record_on": "Sprachaufzeichnung aktiviert",
+  "voice_record_off": "Sprachaufzeichnung deaktiviert",
+  "auto_send_on": "Automatisches Senden aktiviert",
+  "auto_send_off": "Automatisches Senden deaktiviert",
+  "check_language": "Zu überprüfende Sprache",
+  "grammar_report": "Grammatik- und Ausdrucksbericht",
+  "request_scores": "Punktestand anfordern",
+  "overview_statistics": "Übersichtsstatistiken",
+  "total_entries": "Gesamteinträge",
+  "avg_issues": "Durchschnittliche Probleme",
+  "issues_over_time": "Probleme im Zeitverlauf",
+  "no_data": "Keine Daten verfügbar",
+  "entries_by_language": "Einträge nach Sprache",
+  "history_entries": "Verlaufseinträge",
+  "timestamp": "Zeitstempel",
+  "request_language": "Angeforderte Sprache",
+  "ui_language": "UI-Sprache",
+  "issues_found": "Gefundene Probleme",
+  "classification": "Klassifizierung",
+  "comment": "Kommentar",
+  "edit_entry": "Eintrag bearbeiten",
+  "class_none": "Keine",
+  "class_reviewed": "Überprüft",
+  "class_important": "Wichtig",
+  "comment_placeholder": "Fügen Sie hier Ihren Kommentar hinzu…",
+  "no_history": "Keine Verlaufs­einträge",
+  "insufficient_data": "Nicht genügend Daten, um dieses Diagramm anzuzeigen.",
+  "start_ai_chat": "KI-Chat starten",
+  "difficulty": "Schwierigkeitsgrad",
+  "difficulty_easy": "Leicht",
+  "difficulty_medium": "Mittel",
+  "difficulty_hard": "Schwer",
+  "topic": "Thema",
+  "topic_none": "Kein spezifisches Thema",
+  "topic_law": "Recht",
+  "topic_medicine": "Medizin",
+  "topic_science": "Wissenschaft",
+  "topic_art": "Kunst",
+  "add_to_vocab": "Zum Wortschatz hinzufügen",
+  "vocab": "Wortschatz",
+  "grammar": "Grammatik",
+  "expression": "Ausdruck",
+  "no_vocab_saved": "Kein Wortschatz gespeichert",
+  "no_grammar_history": "Keine Grammatik­verläufe",
+  "no_expression_history": "Keine Ausdrucks­verläufe",
+  "category_breakdown": "Kategorien­aufschlüsselung",
+  "no_issues": "Noch keine Probleme aufgezeichnet.",
+  "uncategorized": "Unkategorisiert",
+  "show_stats": "Statistiken anzeigen",
+  "show_my_data": "Meine Daten anzeigen",
+  "swipe_hint": "« nach links oder rechts wischen »",
+  "study": "Lernen",
+  "show_study_words": "Lernwörter",
+  "show_saved_words": "Gespeicherte Wörter",
+  "time_order": "Zeit­reihenfolge",
+  "freq_order": "Häufigkeits­reihenfolge",
+  "avg_freq": "Ø Zipf",
+  "no_saved_words": "Sie haben noch keine Wörter gespeichert.",
+  "no_saved_grammar": "Sie haben noch keine Grammatik­einträge gespeichert.",
+  "no_saved_expressions": "Sie haben noch keine Ausdrücke gespeichert.",
+  "help_study_mode": "Im Lernmodus passt die App die Wörter automatisch an das Schwierigkeitsniveau Ihres gespeicherten Wortschatzes an.",
+  "save_history": "Verlauf speichern",
+  "known_word": "Bekanntes Wort",
+  "unknown_word": "Unbekanntes Wort",
+  "unmark_known": "Bekanntes Wort entfernen",
+  "unmark_unknown": "Unbekanntes Wort entfernen",
+  "current_language": "Sprache",
+  "change_language": "Ändern",
+  "quiz": "Quiz",
+  "hint": "Hinweis",
+  "try_again": "Erneut versuchen!",
+  "correct": "Richtig",
+  "well_done": "Gut gemacht!",
+  "incorrect": "Falsch",
+  "hint_button": "Hinweis",
+  "check_answer_button": "Antwort prüfen",
+  "correct_answer": "🎉 Richtig!",
+  "history_settings": "Verlaufs-Einstellungen",
+  "load_more": "Mehr laden",
+  "create_meeting": "Treffen erstellen",
+  "show_banner": "Banner anzeigen",
+  "hide_banner": "Banner ausblenden",
+  "create_post": "Beitrag erstellen",
+  "startpage": {
+    "title": "Deine Worte zählen",
+    "descriptionLine1": "Jedes Gespräch prägt deine persönliche Sprachreise.",
+    "descriptionLine2": "Sprich natürlich – lerne genau das, was du brauchst.",
+    "tagline1": "Sprich",
+    "tagline2": "Chatte",
+    "tagline3": "Meistere"
+  },
+  "quizPage": {
+    "tabs": {
+      "vocab": "Wortschatz",
+      "grammar": "Grammatik",
+      "expression": "Ausdruck"
+    },
+    "loadingGrammar": "Lade Grammatikdaten…",
+    "loadingExpression": "Lade Ausdrucksdaten…",
+    "empty": {
+      "noSavedGrammar": "Du hast noch keine Grammatikübungen gespeichert.",
+      "noSavedExpressions": "Du hast noch keine Ausdrucksübungen gespeichert."
+    },
+    "lang": {
+      "change": "Sprache ändern",
+      "close": "Schließen"
+    },
+    "actions": {
+      "learn": "Lernen"
+    },
+    "quizButton": {
+      "arrow": "▶"
+    }
+  },
+  "grammarReport": {
+    "datasets": {
+      "quizGrammar": "Grammatik-Quiz",
+      "quizExpression": "Ausdrucks-Quiz",
+      "quizVocab": "Wortschatz-Quiz",
+      "quizSets": "Quiz-Sets",
+      "savedVocab": "Gespeicherter Wortschatz",
+      "grammarCheck": "Grammatikprüfung",
+      "expressionCheck": "Ausdrucksprüfung",
+      "hiddenWords": "Verborgene Wörter",
+      "knownWords": "Bekannte Wörter",
+      "unknownWords": "Unbekannte Wörter"
+    },
+    "header": {
+      "report": "Bericht",
+      "historySettings": "Verlaufseinstellungen",
+      "overviewStatistics": "Übersichtsstatistik",
+      "historyEntries": "Verlaufseinträge"
+    },
+    "entry": {
+      "correctness": "Richtigkeit",
+      "time": "Zeit",
+      "seconds": "s"
+    },
+    "stats": {
+      "total": "Gesamt",
+      "accuracy": "Genauigkeit",
+      "avgTime": "Ø Zeit"
+    },
+    "chart": {
+      "issuesOverTime": "Fehler im Zeitverlauf",
+      "entriesByLanguage": "Einträge nach Sprache",
+      "insufficientData": "Nicht genug Daten"
+    },
+    "noData": "Keine Daten",
+    "noHistory": "Noch kein Verlauf",
+    "loadMore": "Mehr laden",
+    "toggle": {
+      "saveHistory": "Verlauf speichern",
+      "requestScores": "Punkte anfordern"
+    }
+  },
+  "vocabQuiz": {
+    "preparing": "Bereite {{prepared}}/{{total}} Fragen vor…",
+    "congratulations": "Gut gemacht!"
+  },
+  "quizSetsList": {
+    "preparing": "Bereite {{prepared}}/{{total}} Fragen vor…",
+    "quizSetTitle": "Quiz-Set {{number}}",
+    "deleteSet": "Set löschen",
+    "createSet": "Quiz-Set erstellen"
+  },
+  "start_quiz": "Quiz starten",
+  "quizGrammar": {
+    "description": "Ordne die Wörter per Drag & Drop im obigen Satz an. Ziehe falsch platzierte Wörter zurück nach unten, bis der Satz grammatisch korrekt ist."
+  },
+  "quizExpression": {
+    "description": "Fülle die Lücken oben, indem du die richtigen Wörter aus dem unteren Bereich hineinschiebst."
+  },
+  "ai_options": "KI-Optionen",
+  "quizPage_modes": {
+    "move": "Wörter verschieben",
+    "fill": "Lücken füllen"
+  },
+  "maintenance_offline": {
+    "offline_note": "Du kannst die Lernseite auch offline nutzen.",
+    "go_to_learning": "Zur Lernseite gehen"
+  },
+  "enable_voice_chat": "Sprachchat aktivieren",
+  "disable_voice_chat": "Sprachchat deaktivieren",
+  "enable_roleplay": "Rollenspiel aktivieren",
+  "disable_roleplay": "Rollenspiel deaktivieren",
+
+  "scenario_cafe": "Café-Bestellung",
+  "scenario_cafe_desc": "Du bestellst Getränke in einem Café.",
+  "scenario_hotel": "Hotel-Check-in",
+  "scenario_hotel_desc": "Du checkst in ein Hotel ein und bittest um ein Zimmer mit Stadtblick.",
+  "scenario_directions": "Wegbeschreibung erfragen",
+  "scenario_directions_desc": "Du musst die nächste U-Bahn-Station finden.",
+  "scenario_grocery": "Lebensmitteleinkauf",
+  "scenario_grocery_desc": "Du suchst nach glutenfreier Pasta.",
+  "scenario_clothes": "Kleidung kaufen",
+  "scenario_clothes_desc": "Du probierst Kleidung an und fragst nach einer anderen Größe.",
+  "scenario_interview": "Bewerbungsgespräch",
+  "scenario_interview_desc": "Du bist Kandidat und beantwortest Interviewfragen.",
+  "scenario_meeting": "Geschäftstreffen",
+  "scenario_meeting_desc": "Du präsentierst die Quartalsumsätze.",
+  "scenario_call": "Geschäftsanruf",
+  "scenario_call_desc": "Du folgst telefonisch bei einem Kunden nach.",
+  "scenario_hospital": "Arztbesuch",
+  "scenario_hospital_desc": "Du beschreibst dem Arzt deine Symptome.",
+  "scenario_emergency": "Notfall",
+  "scenario_emergency_desc": "Du siehst, wie jemand ohnmächtig wird, und rufst um Hilfe.",
+  "scenario_dating": "Freundschaften schließen",
+  "scenario_dating_desc": "Du triffst neue Leute und sprichst über Hobbys.",
+  "scenario_party": "Partyplanung",
+  "scenario_party_desc": "Du lädst Freunde zu einer Dinnerparty ein.",
+  "view_list": "Listenansicht",
+  "view_card": "Kartenansicht",
+  "refresh_words": "Wörter aktualisieren",
+  "quiz_corrects": "Richtige Antworten",
+  "known_words": "Bekannte Wörter",
+  "stats_overview": "Statistikübersicht",
+  "show_chart": "Diagramm anzeigen",
+  "conversation_practice": "Gesprächsübung",
+  "rank_suffix": ".",
+  "backToSets": "Zurück zu den Sets",
+  "history": {
+    "remoteTitle": "Beispiel-Eintrag",
+    "remoteMessage": "Dieses Beispiel dient nur zur Ansicht und kann nicht gelöscht werden. Wenn du mit der KI oder Freunden chattest, werden deine eigenen Lerndaten hier gesammelt."
+  },
+  "learn": "Lernen",
+  "reveal_answer": "Antwort: {{answer}}",
+  "study_report": "Lernbericht",
+  "mcq_prompt": "Wähle den grammatikalisch korrekten Satz",
+  "disable_quiz": "Quiz ausschalten",
+  "last_ai_chat": {
+    "close": "Schließen",
+    "study": "Mit KI lernen",
+    "start_ai_chat": "Tippe, um mit der KI zu chatten"
+  },
+  "toggle_ai_options": "KI-Optionen",
+  "toggle_mcq": "4-Auswahl-Quiz",
+  "toggle_auto_check": "Automatische Prüfung",
+  "first_chat_prompt": "Starten Sie die erste Unterhaltung!",
+  "guide": {
+    "next": "Weiter",
+    "prev": "Zurück",
+    "finish": "Verstanden",
+    "dontShowAgain": "Nicht erneut anzeigen"
+  },
+  "homeGuide": {
+    "step1": {
+      "title": "Lernpartner finden",
+      "desc": "Durchstöbere Online-/Offline-Beiträge und triff Freunde. Chatte mit KI für sofortige Grammatik-Checks."
+    },
+    "step2": {
+      "title": "Profil bearbeiten",
+      "desc": "Tippe auf dein Bild, um Profilinformationen anzusehen und zu bearbeiten."
+    },
+    "step3": {
+      "title": "Nach Themen filtern",
+      "desc": "Wische den Themen-Slider oder tippe auf das Listen-Symbol, um angezeigte Themen anzupassen."
+    },
+    "step4": {
+      "title": "Erweiterte Filter",
+      "desc": "Verwende das Filtersymbol, um Beiträge nach Entfernung, Wiederholung und mehr einzugrenzen."
+    },
+    "step5": {
+      "title": "KI-Quiz & Chat",
+      "desc": "Teste das dynamische KI-4-Wahl-Quiz oder Rollenspiel-Chat, um deine Sprachfähigkeiten zu verbessern."
+    },
+    "step6": {
+      "title": "Einen Beitrag erstellen",
+      "desc": "Teile dein eigenes Treffen oder Frage mit der Community."
+    }
+  },
+  "noticeGuide": {
+    "step1": {
+      "title": "Echtzeit-Konversationsanalyse",
+      "desc": "Tippe diesen Button, um deine Live-Gespräche in echten Treffen zu überprüfen."
+    },
+    "step2": {
+      "title": "Verfolge deinen Fortschritt",
+      "desc": "Sieh deine Sprachlern-Statistiken auf einen Blick."
+    },
+    "step3": {
+      "title": "Entdecken & informiert bleiben",
+      "desc": "Finde Lern-Treffen in der Nähe und alle wichtigen Benachrichtigungen hier."
+    }
+  },
+  "quizGuide": {
+    "step1": {
+      "title": "Quiz-Typ wählen",
+      "desc": "Wähle oben „Vokabeln“, „Grammatik“ oder „Ausdruck“, um das Quiz zu starten."
+    },
+    "step2": {
+      "title": "Sprache & Modus ändern",
+      "desc": "Tippe den Sprach-Button, um die Sprache zu wechseln. Für Grammatik/Ausdruck kannst du auch den Modus anpassen."
+    },
+    "step3": {
+      "title": "Neues Quiz generieren",
+      "desc": "Drücke „Quiz erstellen“ und warte, während wir dein Quiz anhand gespeicherter Lerndaten generieren."
+    }
+  },
+  "learningGuide": {
+    "step1": {
+      "title": "Nach Tab üben",
+      "desc": "Wähle einen Tab, um zwischen Vokabel-, Grammatik- und Ausdrucksübungen zu wechseln."
+    },
+    "step2": {
+      "title": "Sprache ändern",
+      "desc": "Tippe hier, um die zu lernende Sprache zu wechseln."
+    },
+    "step3": {
+      "title": "Wörter aktualisieren",
+      "desc": "Drücke den Aktualisieren-Button, um neue Wörter passend zu deinem Niveau auszuwählen."
+    },
+    "step4": {
+      "title": "Karten-/Listenansicht",
+      "desc": "Wechsle zwischen Kartenansicht und Listenansicht für Vokabeln."
+    },
+    "step5": {
+      "title": "Gespeicherte Wörter",
+      "desc": "Aktiviere diese Option, um nur deine gespeicherten (markierten) Wörter zu sehen."
+    },
+    "step6": {
+      "title": "Aktionen auf Wortkarten",
+      "desc": "Tippe auf eine Wortkarte, um ihre Bedeutung in deiner Sprache zu sehen. Markiere Wörter als bekannt oder unbekannt, um dein Lernniveau anzupassen."
+    }
+  },
+  "chatGuide": {
+    "step1": {
+      "title": "Chat-Typ auswählen",
+      "desc": "Oben kannst du per Toggle zwischen Persönlichem Chat, Buddy-Gruppen-Chat und Regional-Chat wechseln. Wähle, was am besten zu dir passt!"
+    },
+    "step2": {
+      "title": "KI-Chat – dein Lernpartner",
+      "desc": "Im KI-Chat (ganz oben in deiner Liste) führst du echte Gespräche mit der KI, übst Sprechen und machst sofort personalisierte Quizze."
+    },
+    "step3": {
+      "title": "Mit Freunden chatten & gemeinsam lernen",
+      "desc": "Unter dem KI-Chat siehst du deine Chats mit Freunden. Über „Einstellungen > Freunde verwalten“ kannst du jederzeit Freunde hinzufügen oder entfernen. Übt zusammen und macht Lernen sozial und spaßig!"
+    },
+    "step4": {
+      "title": "Buddy-Gruppen-Chats – im Team lernen",
+      "desc": "Im Buddy-Tab findest du alle Gruppen-Chats. Erstelle oder trete Buddy-Gruppen über die Suche oder „Einstellungen > Buddies verwalten“ bei."
+    },
+    "step5": {
+      "title": "Regionaler Chat – Leute in der Nähe treffen",
+      "desc": "Im Regional-Chat nimmst du an Gesprächen mit Menschen in deiner Umgebung teil. Eine großartige Möglichkeit, neue Sprachpartner zu finden!"
+    }
+  },
+  "chatRoomGuide": {
+    "step1": {
+      "title": "KI-Chat feinjustieren",
+      "desc": "Tippe „AI +“, um Schwierigkeitsgrad, Themen, Voice-Chat oder Rollenspiel-Optionen einzustellen."
+    },
+    "step2": {
+      "title": "Rollenspiel mit Live-Stimme",
+      "desc": "Wähle rechts einen Situations-Chip. Bei aktiviertem Voice-Chat sprichst du einfach, und die KI spielt die Szene mit."
+    },
+    "step3": {
+      "title": "Lernpunkte verfolgen",
+      "desc": "Jedes Mal, wenn du eine Grammatik oder einen Ausdruck speicherst, erhöhen sich die Zähler hier. Später in Lern- oder Quiz-Seiten einsehbar."
+    },
+    "step4": {
+      "title": "Sprache & Auto-Check einstellen",
+      "desc": "Wähle die Sprache für den Grammatikprüfer. Auto-Check ist standardmäßig an, kann aber jederzeit umgeschaltet werden."
+    },
+    "step5": {
+      "title": "Multiple-Choice-Quiz (nur KI)",
+      "desc": "Aktiviere dieses Feature für 4-Felder-Quizze basierend auf deinem KI-Gespräch. Nur in KI-Chats verfügbar."
+    },
+    "step6": {
+      "title": "Nachricht bearbeiten/löschen",
+      "desc": "Halte deine gesendete Sprechblase gedrückt, um sie zu bearbeiten oder zu entfernen – praktisch zur Fehlerkorrektur vor dem Check!"
+    },
+    "step7": {
+      "title": "Text senden oder sprechen",
+      "desc": "Gib Text ein und tippe das Papierflugzeug-Symbol zum Senden. Ist das Feld leer, erscheint ein Mikrofon: Tippe es an, um Voice-Chat zu starten. Das Symbol färbt sich bei Aktivierung."
+    }
+  },
+  "view_offline_meetings": "Offline-Treffen anzeigen",
+  "view_online_meetings": "Online-Treffen anzeigen",
+  "posting_toggle": {
+    "mode": "Treffmodus",
+    "offline": "Offline-Treffen",
+    "online": "Online-Treffen"
+  },
+  "postingGuide": {
+    "step1": {
+      "title": "Offline- & Online-Sprachtreffen erstellen",
+      "desc": "Starte dein eigenes Sprachtreffen – persönlich oder online. Hier legst du deine Gruppe an und startest sie."
+    },
+    "step2": {
+      "title": "Thema wählen & Titel vergeben",
+      "desc": "Wähle ein Thema und gib deinem Treffen einen Titel, z. B. „Morgen Englisch lernen“ oder „Französisches Café“."
+    },
+    "step3": {
+      "title": "Zeit festlegen",
+      "desc": "Lege Datum und Uhrzeit fest. Einmalige oder regelmäßig wiederkehrende Treffen sind möglich."
+    },
+    "step4": {
+      "title": "Ort bestimmen",
+      "desc": "Tippe auf das mittlere Pin-Symbol in der Karte, um deinen Treffpunkt zu setzen."
+    },
+    "step5": {
+      "title": "Sprache auswählen",
+      "desc": "Bestimme die Sprache, die du sprechen oder üben möchtest."
+    },
+    "step6": {
+      "title": "KI-Post verfassen lassen",
+      "desc": "Lass bei Unsicherheit die KI den Beitrag automatisch für dich schreiben – mit einem Fingertipp."
+    },
+    "step7": {
+      "title": "Hochladen & verwalten",
+      "desc": "Tippe „Hochladen“, um zu veröffentlichen. Du kannst Beiträge später bearbeiten oder als Entwurf speichern."
+    }
+  },
+  "profileGuide": {
+    "step1": {
+      "title": "Profilbild ändern",
+      "desc": "Tippe den Button neben deinem Profilfoto, um es zu aktualisieren. Ein sympathisches Bild bleibt besser in Erinnerung!"
+    },
+    "step2": {
+      "title": "Spitznamen festlegen",
+      "desc": "Tippe deinen Spitznamen an, um einen einzigartigen Namen zu wählen. Das erleichtert das Kennenlernen."
+    },
+    "step3": {
+      "title": "Hauptsprache auswählen",
+      "desc": "Wähle deine Hauptsprache – die App-Oberfläche wird in dieser Sprache angezeigt."
+    },
+    "step4": {
+      "title": "Privatsphäre des Profils verwalten",
+      "desc": "Lege fest, wer deine Profilinfos (z. B. Lernsprachen) sehen darf."
+    },
+    "step5": {
+      "title": "Schnellmenü-Funktionen",
+      "desc": "Über das Schnellmenü verwaltest du Beiträge, Buddies und Freunde. Tippe auf das Zahnrad für weitere Optionen."
+    }
+  },
+  "buddyGuide": {
+    "step1": {
+      "title": "Buddy-Gruppen",
+      "desc": "Buddy-Gruppen sind Gemeinschaften zum gemeinsamen Sprachenlernen. Im Tab „Buddies“ siehst du deine Gruppen."
+    },
+    "step2": {
+      "title": "Buddy-Anfragen",
+      "desc": "Im Tab „Anfragen“ findest du den Status deiner Beitrittsanfragen."
+    },
+    "step3": {
+      "title": "Buddy-Gruppen suchen",
+      "desc": "Im Tab „Suche“ kannst du nach Gruppen zum Beitreten suchen."
+    },
+    "step4": {
+      "title": "Buddy-Gruppe erstellen",
+      "desc": "Tippe das Insel-Symbol unten rechts, um eine neue Gruppe anzulegen."
+    }
+  },
+  "friendListGuide": {
+    "step1": {
+      "title": "Deine Freunde",
+      "desc": "Hier siehst du alle deine Freunde. Du kannst Freunde entfernen oder direkt einen Chat starten."
+    },
+    "step2": {
+      "title": "Freundschaftsanfragen",
+      "desc": "Überprüfe gesendete und empfangene Anfragen. Du kannst sie annehmen oder ablehnen."
+    }
+  },
+  "fullScreenMapGuide": {
+    "step1": {
+      "title": "Inhalte filtern",
+      "desc": "Nutze den oberen Toggle, um zwischen Treffen, Buddy-Gruppen, Schulen und Events zu filtern."
+    },
+    "step2": {
+      "title": "KI-generiertes Treffen erstellen",
+      "desc": "Tippe das Insel-Symbol unten rechts, zeichne einen Kreis auf der Karte, wähle dein Thema und lass die KI den Beitrag verfassen."
+    }
+  },
+  "buddyInfoGuide": {
+    "step1": {
+      "title": "Übersicht",
+      "desc": "Diese Seite zeigt eine Zusammenfassung deiner Buddy-Gruppe."
+    },
+    "step2": {
+      "title": "Beiträge anzeigen",
+      "desc": "Tippe „Beiträge anzeigen“, um zum Message-Board der Gruppe zu gelangen."
+    },
+    "step3": {
+      "title": "Beitrittsanfragen verwalten",
+      "desc": "Bearbeite eingehende Anfragen von Nutzern, die deiner Gruppe beitreten möchten."
+    },
+    "step4": {
+      "title": "Termine, Ankündigungen & Umfragen",
+      "desc": "Verwalte Termine, Ankündigungen und Umfragen über die Reiter."
+    }
+  },
+  "buddyPageGuide": {
+    "step1": {
+      "title": "Willkommen auf deinem Buddy-Board",
+      "desc": "Hier kannst du und deine Gruppenmitglieder Beiträge teilen."
+    },
+    "step2": {
+      "title": "Deinen Feed filtern",
+      "desc": "Tippe hier, um Beiträge zu sortieren oder einzuschränken."
+    },
+    "step3": {
+      "title": "Themen auswählen",
+      "desc": "Wähle die Themen aus, die dich interessieren."
+    },
+    "step4": {
+      "title": "Beiträge durchsehen",
+      "desc": "Scrolle durch die Beiträge, die deine Gruppe geteilt hat."
+    }
+  },
+  "ugc_policy": {
+    "title": "Community-Richtlinien & Nutzungsbedingungen",
+    "intro": "Diese Community lebt von deiner Beteiligung. Damit sie für alle sicher und einladend bleibt, stimme bitte den folgenden Punkten zu:",
+    "points": [
+      "Kein anstößiger oder missbräuchlicher Inhalt gemäß unseren Nutzungsbedingungen",
+      "Automatische Filterung von beleidigender Sprache und Bildern",
+      "Du kannst unangemessene oder schädliche Beiträge direkt auf der Beitragsseite melden",
+      "Du kannst missbräuchliche Nutzer auf deren Profilseite blockieren oder einschränken",
+      "Wir verpflichten uns, auf gültige Meldungen innerhalb von 24 Stunden zu reagieren"
+    ],
+    "agree": "Ich stimme diesen Bedingungen zu"
+  },
+  "scenario": "Szenario",
+  "leave_custom_session": "Chat-Sitzung beenden",
+  "leave_custom_session_success": "Ihre benutzerdefinierte KI-Sitzung wurde beendet.",
+  "leave_custom_session_error": "Fehler beim Beenden der Chat-Sitzung.",
+  "nothing_to_share": "Nichts zu teilen",
+  "shared_scenario": "Geteiltes Szenario",
+  "start_ai_language_learning": "KI-Sprachlernen mit diesem Szenario starten",
+  "shared_label": "Geteilt",
+  "shared_scenario_label": "Geteiltes Szenario",
+  "photoRolePlay": {
+    "selectLangGuide": "Wähle die Sprache, die du üben möchtest",
+    "description": "Beschreibe dein Foto und starte ein Rollenspiel.",
+    "takePhoto": "Foto aufnehmen",
+    "choosePhoto": "Aus Galerie wählen",
+    "generate": "Erstellen",
+    "pickOne": "Wähle ein Szenario",
+    "hint": "Wähle das Szenario, das am besten zu deinem Foto passt",
+    "pickPersona": "Wähle eine Persona",
+    "selectedScenario": "Ausgewähltes Szenario",
+    "startChat": "Chat starten"
+  },
+  "homeNew": {
+    "prompt_visit_1": "{{nickname}}, wo warst du unterwegs?",
+    "prompt_visit_2": "{{nickname}}, welchen neuen Ort hast du heute besucht?",
+    "prompt_visit_3": "Hey {{nickname}}, hast du kürzlich etwas Interessantes entdeckt?",
+    "prompt_visit_4": "{{nickname}}, welche erinnerungswürdigen Orte hast du dir angesehen?",
+    "prompt_visit_5": "{{nickname}}, erzähl von deinem letzten Abenteuer!",
+    "prompt_learn_1": "{{nickname}}, welche Situation möchtest du üben?",
+    "prompt_learn_2": "{{nickname}}, gibt es eine Situation, die du trainieren willst?",
+    "prompt_learn_3": "Für welchen Kontext willst du dich vorbereiten, {{nickname}}?",
+    "prompt_learn_4": "{{nickname}}, nenne mir ein reales Szenario, das dich interessiert.",
+    "prompt_learn_5": "{{nickname}}, was möchtest du als Nächstes ausdrücken?",
+    "ongoing_learning": "Laufende Lektionen",
+    "today_learning": "Heutige Lektion",
+    "quiz": "Quiz",
+    "analysis": "Gesprächsanalyse",
+    "situation_learning": "Situationslernen",
+    "learning_report": "Lernbericht",
+    "quick_menu": "Schnellmenü",
+    "legacy_button": "Klassische Ansicht",
+    "setting_button": "Einstellungen",
+    "profile_button": "Mein Profil",
+    "friend_button": "Freunde",
+    "buddy_button": "Buddys",
+    "mypost_button": "Meine Beiträge",
+    "account_button": "Konto",
+    "learning_tools": "Lernwerkzeuge",
+    "vocab": "Wortschatz",
+    "grammar": "Grammatik",
+    "expression": "Ausdruck",
+    "move": "Wortstellung",
+    "fill": "Lücke füllen"
   }
+
+
+
+
+
 }

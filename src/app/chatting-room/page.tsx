@@ -49,10 +49,10 @@ import React, {
   useEffect,
   useRef,
   useMemo,
-  useCallback, 
-  Suspense
+  useCallback,
+  Suspense,
 } from "react";
-import Image from "next/image";
+import { createPortal } from "react-dom";
 import classNames from "classnames";
 import styles from "../../styles/pages/ChattingRoom.module.css";
 import { useSearchParams, useRouter } from "next/navigation";
@@ -172,6 +172,7 @@ declare global {
   interface Window {
     webkitSpeechRecognition?: any;
     SpeechRecognition?: any;
+    speechSynthesis: SpeechSynthesis;
   }
 }
 
@@ -268,7 +269,7 @@ function ChattingRoomPageInner() {
   const [langBtnRef, langBtnPos]   = useMeasure<HTMLButtonElement>();
   const [mcqBtnRef, mcqBtnPos]     = useMeasure<HTMLButtonElement>();
   const [bubbleRef, bubblePos]     = useMeasure<HTMLDivElement>();
-  const [sendBtnRef, sendBtnPos]   = useMeasure<HTMLDivElement>();  
+  const [sendBtnRef, sendBtnPos]   = useMeasure<HTMLDivElement>();
 
   const [showGuide, setShowGuide] = useState(false);
   const storageKey = "chatRoomGuide";
@@ -281,8 +282,8 @@ function ChattingRoomPageInner() {
   } | null>(null);
 
   /* socket */
- type SocketLike = ReturnType<typeof io>;
- const socketRef = useRef<SocketLike | null>(null);
+  type SocketLike = ReturnType<typeof io>;
+  const socketRef = useRef<SocketLike | null>(null);
 
   /* voice recognition / TTS */
   const recognitionRef = useRef<any>(null);
@@ -303,6 +304,39 @@ function ChattingRoomPageInner() {
   const hasAutoGreeted = useRef(false);
   const [languageReady, setLanguageReady] = useState(false);
   const [initialMessagesFetched, setInitialMessagesFetched] = useState(false);
+
+  /* Portal target (for overlays to escape stacking contexts) */
+  const portalTarget = typeof window !== "undefined" ? document.body : null;
+
+  /* Horizontal scroll wheel helper (trackpad-friendly, like app swipe) */
+  const scenarioScrollRef = useRef<HTMLDivElement>(null);
+  const onHorizWheel = (e: React.WheelEvent<HTMLDivElement>) => {
+    // Convert vertical wheel to horizontal scroll if predominant
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+      e.currentTarget.scrollLeft += e.deltaY;
+      e.preventDefault();
+    }
+  };
+
+  /* Body scroll lock when any overlay is open (app parity) */
+  const anyOverlayOpen =
+    menuVisible ||
+    inviteOverlayVisible ||
+    buddyGroupDetailVisible ||
+    !!quizMode ||
+    !!pendingChoices ||
+    customModalVisible ||
+    showGuide;
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+    if (anyOverlayOpen) {
+      const prev = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = prev;
+      };
+    }
+  }, [anyOverlayOpen]);
 
   /* ───────── helpers: storage ───────── */
   const lsGet = (k: string) => {
@@ -500,8 +534,6 @@ function ChattingRoomPageInner() {
             headers: { Authorization: `Bearer ${token}` },
           });
           const groupData = groupRes.data;
-          const buddyPhoto = groupData.buddyPhoto;
-          const activityCountry = groupData.activityCountry;
 
           const chatRes = await axios.get(`${SERVER_URL}/buddy-chat/${buddyGroupId}`, {
             headers: { Authorization: `Bearer ${token}` },
@@ -622,7 +654,7 @@ function ChattingRoomPageInner() {
             setMessages((prev) => [
               ...prev,
               ...newMsgs.filter((m: any) => !prev.some((p: any) => p._id === m._id)),
-            ])            
+            ]);
           }
         } catch (e) {
           console.error("fetch AI msgs error", e);
@@ -756,11 +788,10 @@ function ChattingRoomPageInner() {
       });
     }
 
-  socket.on("connect_error", (err: unknown) => {
-    if (err instanceof Error) console.error("socket error", err.message, err);
-    else console.error("socket error", err);
-  });
-
+    socket.on("connect_error", (err: unknown) => {
+      if (err instanceof Error) console.error("socket error", err.message, err);
+      else console.error("socket error", err);
+    });
 
     return () => {
       socket.disconnect();
@@ -795,7 +826,9 @@ function ChattingRoomPageInner() {
       { key: "chatRoomGuide.step6", tgt: bubblePos },
       { key: "chatRoomGuide.step7", tgt: sendBtnPos },
     ];
-    return raw.filter(({ tgt }) => tgt && tgt.x !== 0).map(({ key, tgt }) => ({ key, target: tgt! }));
+    return raw
+      .filter(({ tgt }) => tgt && tgt.x !== 0)
+      .map(({ key, tgt }) => ({ key, target: tgt! }));
   }, [aiBtnPos, scenarioPos, badgePos, langBtnPos, mcqBtnPos, bubblePos, sendBtnPos]);
 
   /* ───────── Grammar check (web) ───────── */
@@ -1091,8 +1124,23 @@ function ChattingRoomPageInner() {
   );
 
   /* ───────── Voice (Web Speech) ───────── */
+  const languageCodeMap: Record<SupportedLang, string> = {
+    en: "en-US",
+    es: "es-ES",
+    fr: "fr-FR",
+    zh: "zh-CN",
+    ja: "ja-JP",
+    ko: "ko-KR",
+    ar: "ar-SA",
+    de: "de-DE",
+    hi: "hi-IN",
+    it: "it-IT",
+    pt: "pt-PT",
+    ru: "ru-RU",
+  };
+
   const startRecognition = () => {
-    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
     if (!SR) return;
     if (recognitionRef.current) stopRecognition();
 
@@ -1115,7 +1163,6 @@ function ChattingRoomPageInner() {
       if (finalText) {
         fullTranscriptRef.current = (fullTranscriptRef.current + " " + finalText).trim();
         if (isAutoCheckActive) {
-          // wait for silence 1.5s
           if (voiceTimeoutRef.current) clearTimeout(voiceTimeoutRef.current);
           voiceTimeoutRef.current = setTimeout(() => {
             finalizeAndSendVoiceText(fullTranscriptRef.current);
@@ -1129,7 +1176,6 @@ function ChattingRoomPageInner() {
       stopRecognition();
     };
     rec.onend = () => {
-      // restart if still in mode
       if (isVoiceChatMode) startRecognition();
     };
 
@@ -1171,21 +1217,6 @@ function ChattingRoomPageInner() {
     } catch (e) {
       console.warn("TTS unsupported", e);
     }
-  };
-
-  const languageCodeMap: Record<SupportedLang, string> = {
-    en: "en-US",
-    es: "es-ES",
-    fr: "fr-FR",
-    zh: "zh-CN",
-    ja: "ja-JP",
-    ko: "ko-KR",
-    ar: "ar-SA",
-    de: "de-DE",
-    hi: "hi-IN",
-    it: "it-IT",
-    pt: "pt-PT",
-    ru: "ru-RU",
   };
 
   /* ───────── UI helpers ───────── */
@@ -1378,7 +1409,11 @@ function ChattingRoomPageInner() {
 
                 <div className={styles.scenarioRow} ref={scenarioRef}>
                   {!isCustomAI ? (
-                    <div className={styles.scenarioScroll}>
+                    <div
+                      className={styles.scenarioScroll}
+                      ref={scenarioScrollRef}
+                      onWheel={onHorizWheel}
+                    >
                       {SCENARIOS.map((s) => {
                         const selected = isFullyActive && selectedScenario === s.id;
                         const disabled = !isFullyActive;
@@ -1436,7 +1471,7 @@ function ChattingRoomPageInner() {
                 {/* difficulty */}
                 <div className={styles.row}>
                   <span className={styles.label}>{t("difficulty")}:</span>
-                  <div className={styles.scrollRow}>
+                  <div className={styles.scrollRow} onWheel={onHorizWheel}>
                     {(["A1", "A2", "B1", "B2", "C1", "C2"] as CEFR[]).map((lvl) => (
                       <button
                         key={lvl}
@@ -1452,7 +1487,7 @@ function ChattingRoomPageInner() {
                 {/* topic */}
                 <div className={styles.row}>
                   <span className={styles.label}>{t("topic")}:</span>
-                  <div className={styles.scrollRow}>
+                  <div className={styles.scrollRow} onWheel={onHorizWheel}>
                     {["none", "law", "medicine", "science", "art"].map((tp) => (
                       <button
                         key={tp}
@@ -1482,7 +1517,7 @@ function ChattingRoomPageInner() {
                   {isRolePlayMode && (
                     <>
                       <p className={styles.scenarioDesc}>{t(`scenario_${selectedScenario}_desc`)}</p>
-                      <div className={styles.scrollRow}>
+                      <div className={styles.scrollRow} onWheel={onHorizWheel}>
                         {SCENARIOS.map((s) => (
                           <button
                             key={s.id}
@@ -1600,237 +1635,265 @@ function ChattingRoomPageInner() {
         </div>
       )}
 
-      {/* Menu modal */}
-      {menuVisible && (
-        <div className={styles.menuOverlay} onClick={() => setMenuVisible(false)}>
-          <div className={styles.menu} onClick={(e) => e.stopPropagation()}>
-            {!isAIChat && (
-              <>
-                <button className={styles.menuBtn} onClick={handleLeaveChat}>
-                  {t("leave_chat")}
-                </button>
-                {otherUserId && (
+      {/* Menu modal (rendered via Portal to avoid being covered) */}
+      {menuVisible && portalTarget &&
+        createPortal(
+          <div className={styles.menuOverlay} onClick={() => setMenuVisible(false)} aria-modal="true" role="dialog">
+            <div className={styles.menu} onClick={(e) => e.stopPropagation()}>
+              {!isAIChat && (
+                <>
+                  <button className={styles.menuBtn} onClick={handleLeaveChat}>
+                    {t("leave_chat")}
+                  </button>
+                  {otherUserId && (
+                    <button
+                      className={styles.menuBtn}
+                      onClick={async () => {
+                        setMenuVisible(false);
+                        const token = lsGet("token");
+                        if (!token) return setLoginOverlayVisible(true);
+                        try {
+                          const url = `${SERVER_URL}/users/${isBlocked ? "unblock" : "block"}/${otherUserId}`;
+                          const res = await axios.post(url, {}, { headers: { Authorization: `Bearer ${token}` } });
+                          if (res.status === 200) {
+                            setIsBlocked((v) => !v);
+                            alert(isBlocked ? t("unblock_successfully") : t("block_successfully"));
+                          }
+                        } catch (e) {
+                          alert(t("server_error"));
+                        }
+                      }}
+                    >
+                      {isBlocked ? t("unblock_user") : t("block_user")}
+                    </button>
+                  )}
                   <button
                     className={styles.menuBtn}
-                    onClick={async () => {
+                    onClick={() => {
                       setMenuVisible(false);
-                      const token = lsGet("token");
-                      if (!token) return setLoginOverlayVisible(true);
-                      try {
-                        const url = `${SERVER_URL}/users/${isBlocked ? "unblock" : "block"}/${otherUserId}`;
-                        const res = await axios.post(url, {}, { headers: { Authorization: `Bearer ${token}` } });
-                        if (res.status === 200) {
-                          setIsBlocked((v) => !v);
-                          alert(isBlocked ? t("unblock_successfully") : t("block_successfully"));
-                        }
-                      } catch (e) {
-                        alert(t("server_error"));
-                      }
+                      setInviteOverlayVisible(true);
                     }}
                   >
-                    {isBlocked ? t("unblock_user") : t("block_user")}
+                    {t("invite")}
                   </button>
-                )}
-                <button
-                  className={styles.menuBtn}
-                  onClick={() => {
-                    setMenuVisible(false);
-                    setInviteOverlayVisible(true);
-                  }}
-                >
-                  {t("invite")}
-                </button>
-              </>
-            )}
+                </>
+              )}
 
-            {isAIChat && (
-              <>
-                <div className={styles.menuBadges}>
-                  <GramIsleBadge count={grammarCnt} icon="edit-3" accent="#F2542D" />
-                  <GramIsleBadge count={expressionCnt} icon="type" accent="#D8315B" />
-                </div>
+              {isAIChat && (
+                <>
+                  <div className={styles.menuBadges}>
+                    <GramIsleBadge count={grammarCnt} icon="edit-3" accent="#F2542D" />
+                    <GramIsleBadge count={expressionCnt} icon="type" accent="#D8315B" />
+                  </div>
 
-                <button className={styles.menuBtn} onClick={() => setIsVoiceChatMode((v) => !v)}>
-                  {isVoiceChatMode ? t("voice_record_on") : t("voice_record_off")}
-                </button>
+                  <button className={styles.menuBtn} onClick={() => setIsVoiceChatMode((v) => !v)}>
+                    {isVoiceChatMode ? t("voice_record_on") : t("voice_record_off")}
+                  </button>
 
-                <button className={styles.menuBtn} onClick={() => setIsAutoCheckActive((v) => !v)}>
-                  {isAutoCheckActive ? t("auto_check_on") : t("auto_check_off")}
-                </button>
+                  <button className={styles.menuBtn} onClick={() => setIsAutoCheckActive((v) => !v)}>
+                    {isAutoCheckActive ? t("auto_check_on") : t("auto_check_off")}
+                  </button>
 
-                {/* quick difficulty row */}
-                <div className={styles.scrollRow}>
-                  {(["A1", "A2", "B1", "B2", "C1", "C2"] as CEFR[]).map((lvl) => (
-                    <button
-                      key={lvl}
-                      className={classNames(styles.pill, { [styles.pillActive]: difficulty === lvl })}
-                      onClick={() => setDifficulty(lvl)}
-                    >
-                      {lvl}
-                    </button>
-                  ))}
-                </div>
-
-                {/* language picker */}
-                <button className={styles.menuBtn} onClick={() => setIsLanguageExpanded((v) => !v)}>
-                  {t("check_language")}: {t(`languages.${selectedLanguage}`)}
-                </button>
-
-                {isLanguageExpanded && (
-                  <div className={styles.langGrid}>
-                    {(showDefaultsList ? defaults : availableLanguages).map((code) => (
+                  {/* quick difficulty row */}
+                  <div className={styles.scrollRow} onWheel={onHorizWheel}>
+                    {(["A1", "A2", "B1", "B2", "C1", "C2"] as CEFR[]).map((lvl) => (
                       <button
-                        key={code}
-                        className={classNames(styles.langCell, { [styles.langCellActive]: selectedLanguage === code })}
-                        onClick={() => {
-                          setSelectedLanguage(code);
-                          setIsLanguageExpanded(false);
-                        }}
+                        key={lvl}
+                        className={classNames(styles.pill, { [styles.pillActive]: difficulty === lvl })}
+                        onClick={() => setDifficulty(lvl)}
                       >
-                        <img
-                          src={(languageFlags as any)[code] || "/assets/flags/en.png"}
-                          alt={code}
-                          width={24}
-                          height={24}
-                        />
-                        <span>{t(`languages.${code}`)}</span>
+                        {lvl}
                       </button>
                     ))}
-                    <button className={styles.langCell} onClick={() => setShowDefaultsList((v) => !v)}>
-                      {showDefaultsList ? "－" : "＋"}
-                    </button>
                   </div>
-                )}
-              </>
-            )}
-          </div>
-        </div>
-      )}
 
-      {/* Buddy group detail */}
-      <BuddyGroupDetailModal
-        visible={buddyGroupDetailVisible}
-        onClose={() => setBuddyGroupDetailVisible(false)}
-        buddyGroupId={buddyGroupId || ""}
-      />
+                  {/* language picker */}
+                  <button className={styles.menuBtn} onClick={() => setIsLanguageExpanded((v) => !v)}>
+                    {t("check_language")}: {t(`languages.${selectedLanguage}`)}
+                  </button>
 
-      {/* MCQ */}
-      {enableMCQ && pendingChoices && (
-        <MultipleChoiceOptions
-          choices={pendingChoices}
-          onSelect={(picked) => {
-            let extra: Issue | undefined;
-            const correctText = pendingChoices.find((c) => c.isCorrect)!.text;
-            if (!picked.isCorrect) {
-              extra = {
-                error: picked.text,
-                suggestion: correctText,
-                explanation: picked.explanation || "",
-                index: -1,
-              };
-              extra = addIndexes(picked.text, [extra])[0];
-            }
-            if (extra) appendWrongMcq(picked.text, correctText, picked.explanation || "");
-            handleSendMessage({ text: picked.text }, { skipGrammarCheck: true, extraIssue: extra });
-            setPendingChoices(null);
-          }}
-          onClose={() => setPendingChoices(null)}
-          onDisable={() => {
-            setEnableMCQ(false);
-            setPendingChoices(null);
-          }}
-        />
-      )}
+                  {isLanguageExpanded && (
+                    <div className={styles.langGrid}>
+                      {(showDefaultsList ? defaults : availableLanguages).map((code) => (
+                        <button
+                          key={code}
+                          className={classNames(styles.langCell, { [styles.langCellActive]: selectedLanguage === code })}
+                          onClick={() => {
+                            setSelectedLanguage(code);
+                            setIsLanguageExpanded(false);
+                          }}
+                        >
+                          <img
+                            src={(languageFlags as any)[code] || "/assets/flags/en.png"}
+                            alt={code}
+                            width={24}
+                            height={24}
+                          />
+                          <span>{t(`languages.${code}`)}</span>
+                        </button>
+                      ))}
+                      <button className={styles.langCell} onClick={() => setShowDefaultsList((v) => !v)}>
+                        {showDefaultsList ? "－" : "＋"}
+                      </button>
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+          </div>,
+          portalTarget
+        )
+      }
 
-      {/* Quizzes */}
-      {quizMode && quizPayload && (
-        <div className={styles.quizOverlay} onClick={() => setQuizMode(null)}>
-          <div className={styles.quizCard} onClick={(e) => e.stopPropagation()}>
-            {quizMode === "move" ? (
-              <MoveQuiz
-                sentence={quizPayload.sentence}
-                issues={quizPayload.issues}
-                started
-                learnLanguage={selectedLanguage}
-                onSubmit={() => setTimeout(() => setQuizMode(null), 3000)}
-              />
-            ) : (
-              <FillQuiz
-                sentence={quizPayload.sentence}
-                issues={quizPayload.issues}
-                started
-                learnLanguage={selectedLanguage}
-                onSubmit={() => setTimeout(() => setQuizMode(null), 3000)}
-              />
-            )}
-          </div>
-        </div>
-      )}
+      {/* Buddy group detail (Portal) */}
+      {buddyGroupDetailVisible && portalTarget &&
+        createPortal(
+          <BuddyGroupDetailModal
+            visible={buddyGroupDetailVisible}
+            onClose={() => setBuddyGroupDetailVisible(false)}
+            buddyGroupId={buddyGroupId || ""}
+          />,
+          portalTarget
+        )
+      }
 
-      {/* Custom scenario modal */}
-      <CustomScenarioModal
-        visible={customModalVisible}
-        imageUri={savedSituationImg || ""}
-        scenarioText={savedScenario || ""}
-        persona={savedPersona || undefined}
-        onClose={() => setCustomModalVisible(false)}
-        onLeave={handleDeleteAISession}
-        onShare={async () => {
-          if (!savedScenario || !savedSituationImg) return alert(t("nothing_to_share"));
-          const token = lsGet("token");
-          if (!token) return setLoginOverlayVisible(true);
-          try {
-            const meRes = await axios.get(`${SERVER_URL}/users/me`, {
-              headers: { Authorization: `Bearer ${token}` },
-            });
-            const me = meRes.data;
-            const fd = new FormData();
-            fd.append("userId", me.userId);
-            fd.append("author", me.nickname || me.userId);
-            fd.append("time", new Date().toISOString());
-            fd.append("category", "language_study");
-            fd.append("title", savedAssistant ? `${savedAssistant} - ${t("shared_scenario")}` : t("shared_scenario"));
-            fd.append("content", savedScenario);
-            fd.append("isOffline", "false");
-            fd.append("recruitmentCount", "1");
-            fd.append("visitors", "0");
-            fd.append("likes", "0");
-            fd.append("comments", "0");
-            fd.append("language", selectedLanguage);
-            fd.append("meetingTime", new Date().toISOString());
-            fd.append("commentsOption", "all");
-            fd.append("sameCountryOnly", "false");
-            // NOTE: you should fetch the blob yourself; here we append empty File for demo parity
-            fd.append("image", new File([], "scenario.jpg", { type: "image/jpeg" }));
-            const res = await axios.post(`${SERVER_URL}/posts/create`, fd, {
-              headers: { Authorization: `Bearer ${token}` },
-            });
-            if (res.status >= 200 && res.status < 300) alert(t("post_saved_successfully"));
-          } catch (e: any) {
-            console.error(e);
-            alert(e?.message || t("unknown_error"));
-          }
-        }}
-        chatId={chatId || ""}
-      />
+      {/* MCQ (Portal) */}
+      {enableMCQ && pendingChoices && portalTarget &&
+        createPortal(
+          <MultipleChoiceOptions
+            choices={pendingChoices}
+            onSelect={(picked) => {
+              let extra: Issue | undefined;
+              const correctText = pendingChoices.find((c) => c.isCorrect)!.text;
+              if (!picked.isCorrect) {
+                extra = {
+                  error: picked.text,
+                  suggestion: correctText,
+                  explanation: picked.explanation || "",
+                  index: -1,
+                };
+                extra = addIndexes(picked.text, [extra])[0];
+              }
+              if (extra) appendWrongMcq(picked.text, correctText, picked.explanation || "");
+              handleSendMessage({ text: picked.text }, { skipGrammarCheck: true, extraIssue: extra });
+              setPendingChoices(null);
+            }}
+            onClose={() => setPendingChoices(null)}
+            onDisable={() => {
+              setEnableMCQ(false);
+              setPendingChoices(null);
+            }}
+          />,
+          portalTarget
+        )
+      }
 
-      {/* Invite overlay */}
-      <InviteOverlay
-        visible={inviteOverlayVisible}
-        onClose={() => setInviteOverlayVisible(false)}
-        friends={friends}
-        chatUserIds={chat?.userIds || []}
-        onInvite={handleInviteFriend}
-        underDevelopment={FEATURE_UNDER_DEV}
-      />
+      {/* Quizzes (Portal) */}
+      {quizMode && quizPayload && portalTarget &&
+        createPortal(
+          <div className={styles.quizOverlay} onClick={() => setQuizMode(null)} role="dialog" aria-modal="true">
+            <div className={styles.quizCard} onClick={(e) => e.stopPropagation()}>
+              {quizMode === "move" ? (
+                <MoveQuiz
+                  sentence={quizPayload.sentence}
+                  issues={quizPayload.issues}
+                  started
+                  learnLanguage={selectedLanguage}
+                  onSubmit={() => setTimeout(() => setQuizMode(null), 3000)}
+                />
+              ) : (
+                <FillQuiz
+                  sentence={quizPayload.sentence}
+                  issues={quizPayload.issues}
+                  started
+                  learnLanguage={selectedLanguage}
+                  onSubmit={() => setTimeout(() => setQuizMode(null), 3000)}
+                />
+              )}
+            </div>
+          </div>,
+          portalTarget
+        )
+      }
 
-      {/* Guide */}
-      <GuideOverlay
-        visible={showGuide && chatRoomGuideSteps.length > 0}
-        steps={chatRoomGuideSteps}
-        storageKey={storageKey}
-        onClose={() => setShowGuide(false)}
-      />
+      {/* Custom scenario modal (Portal) */}
+      {customModalVisible && portalTarget &&
+        createPortal(
+          <CustomScenarioModal
+            visible={customModalVisible}
+            imageUri={savedSituationImg || ""}
+            scenarioText={savedScenario || ""}
+            persona={savedPersona || undefined}
+            onClose={() => setCustomModalVisible(false)}
+            onLeave={handleDeleteAISession}
+            onShare={async () => {
+              if (!savedScenario || !savedSituationImg) return alert(t("nothing_to_share"));
+              const token = lsGet("token");
+              if (!token) return setLoginOverlayVisible(true);
+              try {
+                const meRes = await axios.get(`${SERVER_URL}/users/me`, {
+                  headers: { Authorization: `Bearer ${token}` },
+                });
+                const me = meRes.data;
+                const fd = new FormData();
+                fd.append("userId", me.userId);
+                fd.append("author", me.nickname || me.userId);
+                fd.append("time", new Date().toISOString());
+                fd.append("category", "language_study");
+                fd.append("title", savedAssistant ? `${savedAssistant} - ${t("shared_scenario")}` : t("shared_scenario"));
+                fd.append("content", savedScenario);
+                fd.append("isOffline", "false");
+                fd.append("recruitmentCount", "1");
+                fd.append("visitors", "0");
+                fd.append("likes", "0");
+                fd.append("comments", "0");
+                fd.append("language", selectedLanguage);
+                fd.append("meetingTime", new Date().toISOString());
+                fd.append("commentsOption", "all");
+                fd.append("sameCountryOnly", "false");
+                fd.append("image", new File([], "scenario.jpg", { type: "image/jpeg" }));
+                const res = await axios.post(`${SERVER_URL}/posts/create`, fd, {
+                  headers: { Authorization: `Bearer ${token}` },
+                });
+                if (res.status >= 200 && res.status < 300) alert(t("post_saved_successfully"));
+              } catch (e: any) {
+                console.error(e);
+                alert(e?.message || t("unknown_error"));
+              }
+            }}
+            chatId={chatId || ""}
+          />,
+          portalTarget
+        )
+      }
+
+      {/* Invite overlay (Portal) */}
+      {inviteOverlayVisible && portalTarget &&
+        createPortal(
+          <InviteOverlay
+            visible={inviteOverlayVisible}
+            onClose={() => setInviteOverlayVisible(false)}
+            friends={friends}
+            chatUserIds={chat?.userIds || []}
+            onInvite={handleInviteFriend}
+            underDevelopment={FEATURE_UNDER_DEV}
+          />,
+          portalTarget
+        )
+      }
+
+      {/* Guide (Portal) */}
+      {showGuide && chatRoomGuideSteps.length > 0 && portalTarget &&
+        createPortal(
+          <GuideOverlay
+            visible={showGuide && chatRoomGuideSteps.length > 0}
+            steps={chatRoomGuideSteps}
+            storageKey={storageKey}
+            onClose={() => setShowGuide(false)}
+          />,
+          portalTarget
+        )
+      }
     </div>
   );
 }

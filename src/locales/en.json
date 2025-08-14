@@ -35,7 +35,8 @@
     "post_type": "Post Type",
     "buddy_group": "Buddy Group",
     "meeting_country": "Meet-up Country",
-    "meeting_city": "Meet-up City"
+    "meeting_city": "Meet-up City",
+    "language_select": "Select Language"
   },
 
   "form_placeholders": {
@@ -60,7 +61,9 @@
     "전체": "All",
     "모임": "Meetings",
     "버디": "Buddy",
+    "학교": "School",
     "친구": "Friends",
+    "이벤트": "Events",
     "map_hide": "Hide Map",
     "map_show": "Show Map",
     "exclude_time": "Exclude Time",
@@ -341,7 +344,9 @@
     "clear_all_title": "Clear All Notifications",
     "clear_all_confirmation": "Are you sure you want to clear all notifications?",
     "no_notifications": "No notifications available.",
-    "clear_all": "Clear all notifications"
+    "clear_all": "Clear all notifications",
+    "clear_all_success": "All notifications have been cleared.",
+    "clear_all_error": "Failed to clear notifications."
   },
   "recommendations": {
     "today_activity": "What to do today?",
@@ -848,7 +853,9 @@
       "meetingContent": "Content"
     },
     "createdAt": "Created At: {{time}}",
-    "hideNotification": "Hide Notification"
+    "hideNotification": "Hide Notification",
+    "deleteSuccess": "Notification deleted successfully.",
+    "deleteError": "Failed to delete the notification."
   },
   "placeDetails": {
     "locationPermissionDenied": "Location permission denied.",
@@ -1143,21 +1150,893 @@
   },
   "report_now": "Report Now",
   "contact_now": "Contact Now",
-  "load_more": "Load More",
-  "already_have_account": "Already have an account?",
-  "sign_in": "Sign In",
-  "view_licenses": "View Licenses",
-  "set_nickname": "Set Nickname",
-  "new_message_enabled": "New Message Enabled",
-  "change_image": "Change Image",
-  "update_location": "Update Location",
-  "error_loading_profile": "Failed to load profile.",
+  "no_comments_prompt": "Leave the first comment!",
+  "no_applicants_prompt": "Waiting for people to gather!",
+  "result_change_pw": "Password changed successfully",
+  "school": "School",
+  "apply_school_filter": "Apply School Filter",
+  "on": "On",
+  "off": "Off",
+  "school_filter_description": "When the school filter is enabled, only users with a verified school email can join the group.",
+  "email_description": "Your email is used for secure operations like finding your ID and password changes. If you wish to join organizations affiliated with a specific school, we recommend using your official school email address.",
+  "email_not_set": "For security reasons, please set your email as soon as possible.",
+  "commenting_disabled": "Comments are not allowed.",
+  "schoolEmailVerification": "{{schoolName}}\nEmail verification is required to join.",
+  "scenario_request_heading": "Share Your Fun Study Abroad Experience",
+  "scenario_request_info": "This scenario is about sharing the fun experiences you had while studying abroad. After submission and admin approval, an AI video will be produced based on your scenario and uploaded to our marketing account. If selected, you will enjoy an ad-free month in our app.",
+  "scenes": "Scenes",
+  "scene": "Scene",
+  "enter_dialogue": "Enter dialogue",
+  "enter_image_prompt": "Enter image prompt",
+  "remove": "Remove",
+  "add_scene": "+ Add Scene",
+  "select_platforms": "Select Platforms",
+  "select_platforms_info": "Select at least one platform for posting your scenario.",
+  "maximum_scene_reached": "Maximum number of scenes reached.",
+  "title_required": "Title is required.",
+  "platform_selection_required": "Please select at least one platform.",
+  "scenario_submitted": "Scenario submitted successfully.",
+  "submission_failed": "Submission failed:",
   "recruitment_filter_options": "Recruitment Filter",
   "recruitment_options": {
     "active": "Active",
     "all": "All"
   },
-  "update_email": "Update Email"
+  "under_development": "This feature is under development",
+  "hero_alt_text": "Long‑press here for the step‑by‑step form (beta)",
+  "requests": "Requests",
+  "members": "Members",
+  "week": "Week",
+  "month": "Month",
+  "longPressToViewMap": "Long press to view on map",
+  "select_country_prompt": "Please select a country",
+  "select_language_prompt": "Please select a language",
+  "lite_mode": "Lite Mode",
+  "recurrence.title": "Select Recurrence",
+  "recurrence.frequency": "Repeat Frequency",
+  "recurrence.daily": "Daily",
+  "recurrence.weekly": "Weekly",
+  "recurrence.monthly": "Monthly",
+  "recurrence.every_n": "Every N intervals",
+  "recurrence.weekdays": "Select Weekdays",
+  "recurrence.time_of_day": "Time of Day",
+  "recurrence.every": "Every",
+  "recurrence.one_off": "One-off",
+  "recurrence.recurring": "Recurring",
+  "recurrence_filter": "Recurrence",
+  "recurrence_filter_options": {
+    "all": "All posts",
+    "one_off": "One-off only",
+    "recurring": "Recurring only"
+  },
+  "schedule": "Schedule",
+  "edit_menu": "Edit",
+  "check_availability": "Check availability",
+  "nickname_available": "This nickname is available!",
+  "nickname_unavailable": "Sorry, that nickname is already taken.",
+  "nickname_check_failed": "Failed to check nickname availability. Please try again.",
+  "enter_new_nickname_label": "Please enter your new nickname",
+  "recruitStatus": {
+    "all": "All",
+    "open": "Open",
+    "closed": "Closed"
+  },
+  "eventDetails": {
+    "period": "Period",
+    "hours": "Hours",
+    "venue": "Venue",
+    "description": "Description",
+    "tags": "Tags",
+    "moreInfo": "Learn More",
+    "unverifiedWarning": "This event was gathered by AI—please double-check details before making plans.",
+    "createMeetingHere": "Create Meeting Here"
+  },
+  "unverifiedWarning": "This event was gathered by AI—please double-check details before making plans.",
+  "current_server": "Current Server",
+  "select_server": "Select Server",
+  "current_data_region": "Current data region",
+  "select_data_region": "Select data region",
+  "selected": "Selected",
+  "region_names": {
+    "Canada": "Canada",
+    "Australia": "Australia",
+    "UK": "United Kingdom",
+    "Korea": "Korea",
+    "Beta": "Beta",
+    "Development": "Development"
+  },
+  "server_modal_description": "Choose which server the app connects to.",
+  "data_region_modal_description": "Choose where your data is stored.",
+  "restart_required": "Changes will take effect after restarting the app.",
+  "select_data_country": "Where should we store your data? (This will be hard to change later)",
+  "data_country_note": "It must match the country where you’ll be located while using the service.",
+  "ai_analysis": "AI Analysis",
+  "ai_analysis_instruction_title": "AI Profile Analysis",
+  "ai_analysis_instruction_line1": "Please upload your profile image.",
+  "ai_analysis_instruction_line2": "Use a clear photo of your face for best results.",
+  "ai_analysis_instruction_line3": "Analysis is for entertainment only.",
+  "start_analysis": "Start Analysis",
+  "analysis_loading": "Analyzing… Please wait.",
+  "popularity_prediction": "Global Popularity Prediction",
+  "analysis_failed": "Failed to analyze.",
+  "share_message": "Check out my popularity prediction!",
+  "analysis_limit_reached": "You have reached today’s 5 AI analyses limit.",
+  "ai_analysis_feature_description": "This feature analyzes your profile and predicts in which countries you’d be most popular.",
+  "schoolDetails": {
+    "domain": "Email Domain",
+    "code": "School Code",
+    "distance": "Distance",
+    "calculating": "Calculating..."
+  },
+  "login_with_apple": "Sign in with Apple",
+  "only_representative_can_edit": "Only the representative can edit this.",
+  "buddy_updated": "Buddy group updated.",
+  "save_failed": "Save failed. Please try again.",
+  "set_to_school_location": "Set map to {{schoolName}} location",
+  "recurrence": {
+    "title": "Recurrence",
+    "frequency": "Frequency",
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "every_n": "Every N",
+    "weekdays": "Days of Week",
+    "time_of_day": "Time of Day",
+    "summary_label": "Summary",
+    "one_off_at": "One-time at {{time}}",
+    "summary_daily": "Every {{interval}} day(s) at {{time}}",
+    "summary_weekly": "Every {{interval}} week(s) on {{days}} at {{time}}",
+    "summary_monthly": "Every {{interval}} month(s) at {{time}}",
+    "month_day":      "Day of month",
+    "verbose": {
+      "one_off":     "This is a one-time meeting at {{time}}.",
+      "daily":       "This meeting will happen every day at {{time}}.",
+      "daily_interval": "This meeting will happen every {{interval}} days at {{time}}.",
+      "weekly":      "This meeting will happen every week on {{days}} at {{time}}.",
+      "weekly_interval": "This meeting will happen every {{interval}} weeks on {{days}} at {{time}}.",
+      "monthly":     "This meeting will happen every month at {{time}}.",
+      "monthly_interval": "This meeting will happen every {{interval}} months at {{time}}.",
+      "monthly_on_day":     "Every month on day {{day}} at {{time}}.",
+      "monthly_on_day_interval": "This meeting will happen every {{interval}} months on day {{day}} at {{time}}."
+    }
+  },
+  "weekdays": {
+    "SU": "Sun",
+    "MO": "Mon",
+    "TU": "Tue",
+    "WE": "Wed",
+    "TH": "Thu",
+    "FR": "Fri",
+    "SA": "Sat"
+  },
+  "language_change_notice": "You need to restart the app to apply the language change. The screen may freeze temporarily.",
+  "block_user": "Block",
+  "unblock_user": "Unblock",
+  "block_successfully": " user has been blocked.",
+  "unblock_successfully": " user has been unblocked.",
+  "chat_disabled_user": "You cannot chat with this user.",
+  "chat_disabled_icon_accessibility": "Blocked user icon",
+  "advertisement_contact_title": "Ad Inquiries",
+  "advertisement_contact_message": "For advertisement inquiries, please email {{email}}.",
+  "createNotif": {
+    "title": "Create Notification",
+    "selectType": "Select notification type:",
+    "type": {
+      "all": "All Notification",
+      "individual": "Individual Notification"
+    },
+    "placeholder": {
+      "searchUser": "Search user by nickname or ID",
+      "title": "Title",
+      "message": "Message"
+    },
+    "noUsers": "No users found.",
+    "button": {
+      "uploadImage": "Upload Image",
+      "send": "Send Notification",
+      "cancel": "Cancel"
+    }
+  },
+  "noise_desc_low": "Low noise: people with similar profiles mostly grouped",
+  "noise_desc_medium": "Medium noise: a balanced mix of similarity and randomness",
+  "noise_desc_high": "High noise: almost random matching across all members",
+  "loading_text": "Loading...",
+  "no_buddies": "You haven’t joined any buddy groups yet.",
+  "no_notifications": {
+    "no_general":       "There are no general notices.",
+    "no_buddy":         "There are no buddy notifications.",
+    "no_recommendations":"No recommendations available.",
+    "...": "..."
+  },
+  "languages": {
+    "no_lang": "No restriction",
+    "en": "English",
+    "es": "Spanish",
+    "zh": "Chinese",
+    "hi": "Hindi",
+    "fr": "French",
+    "ko": "Korean",
+    "ja": "Japanese",
+    "de": "German",
+    "ar": "Arabic",
+    "pt": "Portuguese",
+    "ru": "Russian",
+    "it": "Italian",
+    "tr": "Turkish",
+    "nl": "Dutch",
+    "pl": "Polish",
+    "th": "Thai",
+    "vi": "Vietnamese",
+    "ms": "Malay",
+    "sv": "Swedish",
+    "no": "Norwegian",
+    "fi": "Finnish",
+    "el": "Greek",
+    "hu": "Hungarian",
+    "cs": "Czech",
+    "ro": "Romanian",
+    "da": "Danish",
+    "he": "Hebrew",
+    "id": "Indonesian",
+    "uk": "Ukrainian",
+    "fa": "Persian",
+    "bn": "Bengali"
+  },
+  "meetingLanguages": {
+    "no_lang": "No language restriction",
+    "en": "This meeting uses English",
+    "es": "This meeting uses Spanish",
+    "zh": "This meeting uses Chinese",
+    "hi": "This meeting uses Hindi",
+    "fr": "This meeting uses French",
+    "ko": "This meeting uses Korean",
+    "ja": "This meeting uses Japanese",
+    "de": "This meeting uses German",
+    "ar": "This meeting uses Arabic",
+    "pt": "This meeting uses Portuguese",
+    "ru": "This meeting uses Russian",
+    "it": "This meeting uses Italian",
+    "tr": "This meeting uses Turkish",
+    "nl": "This meeting uses Dutch",
+    "pl": "This meeting uses Polish",
+    "th": "This meeting uses Thai",
+    "vi": "This meeting uses Vietnamese",
+    "ms": "This meeting uses Malay",
+    "sv": "This meeting uses Swedish",
+    "no": "This meeting uses Norwegian",
+    "fi": "This meeting uses Finnish",
+    "el": "This meeting uses Greek",
+    "hu": "This meeting uses Hungarian",
+    "cs": "This meeting uses Czech",
+    "ro": "This meeting uses Romanian",
+    "da": "This meeting uses Danish",
+    "he": "This meeting uses Hebrew",
+    "id": "This meeting uses Indonesian",
+    "uk": "This meeting uses Ukrainian",
+    "fa": "This meeting uses Persian",
+    "bn": "This meeting uses Bengali"
+  },
+  "installed_models": "Installed Models",
+  "available_models": "Available Models",
+  "install": "Install",
+  "no_installed_models": "No models installed.",
+  "no_available_models": "No models available.",
+  "download_success": "Download Successful",
+  "model_downloaded": "Model \"{{name}}\" has been downloaded.",
+  "download_failed": "Download Failed",
+  "model_download_failed": "Failed to download model \"{{name}}\".",
+  "confirm_delete_title": "Confirm Delete",
+  "confirm_delete_message": "Are you sure you want to delete \"{{name}}\"?",
+  "model_deleted": "\"{{name}}\" has been deleted.",
+  "delete_failed": "Delete Failed",
+  "model_delete_failed": "Failed to delete \"{{name}}\".",
+  "language_models": "Language Models",
+  "language_filter": "Language Filter",
+  "record_modal_title": "Recording & Analysis",
+  "record": "Record",
+  "stop": "Stop",
+  "start_talking": "Start speaking to see live transcription...",
+  "speech_recognition_error": "Speech recognition error.",
+  "share_prompt": "Share this post link.",
+  "model_not_found": "Language model not found.",
+  "already_installed": "Already installed",
+  "model_already_installed": "{{name}} model is already installed.",
+  "install_model": "Install Model",
+  "analyze_recording": "Analyze Grammar After Recording",
+  "auto_check_on": "Auto-check: ON",
+  "auto_check_off": "Auto-check: OFF",
+  "conversation_analysis": "Conversation Analysis",
+  "analysis_no_models_info": "To perform conversation analysis, please install the language model by tapping the button below.",
+  "record_error": "Failed to start recording",
+  "warning_mobile_performance": "This model is larger and may run slowly on mobile devices. Use at your own risk.",
+  "loginOverlay": {
+    "title": "Welcome to Abrody",
+    "message": "To see announcements and recommendations, please log in.",
+    "loginButton": "Log In",
+    "guestButton": "Continue as Guest"
+  },
+  "voice_record_on": "Voice Recording On",
+  "voice_record_off": "Voice Recording Off",
+  "auto_send_on": "Auto Send On",
+  "auto_send_off": "Auto Send Off",
+  "check_language": "Language to check",
+  "grammar_report": "Grammar Expression Report",
+  "request_scores": "Request Scores",
+  "overview_statistics": "Overview Statistics",
+  "total_entries": "Total Entries",
+  "avg_issues": "Average Issues",
+  "issues_over_time": "Issues Over Time",
+  "no_data": "No Data Available",
+  "entries_by_language": "Entries by Language",
+  "history_entries": "History Entries",
+  "timestamp": "Timestamp",
+  "request_language": "Requested Language",
+  "ui_language": "UI Language",
+  "issues_found": "Issues Found",
+  "classification": "Classification",
+  "comment": "Comment",
+  "edit_entry": "Edit Entry",
+  "class_none": "None",
+  "class_reviewed": "Reviewed",
+  "class_important": "Important",
+  "comment_placeholder": "Add your comment here...",
+  "no_history": "No history entries",
+  "insufficient_data": "Not enough data to display this chart.",
+  "start_ai_chat": "Start AI chat",
+  "difficulty": "Difficulty",
+  "difficulty_easy": "Easy",
+  "difficulty_medium": "Medium",
+  "difficulty_hard": "Hard",
+  "topic": "Topic",
+  "topic_none": "No Specific Topic",
+  "topic_law": "Law",
+  "topic_medicine": "Medicine",
+  "topic_science": "Science",
+  "topic_art": "Art",
+  "add_to_vocab": "Add to Vocabulary",
+  "vocab": "Vocab",
+  "grammar": "Grammar",
+  "expression": "Expression",
+  "no_vocab_saved": "No vocabulary saved",
+  "no_grammar_history": "No grammar history",
+  "no_expression_history": "No expression history",
+  "category_breakdown": "Category Breakdown",
+  "no_issues": "No issues recorded yet.",
+  "uncategorized": "Uncategorized",
+  "show_stats": "Show stats",
+  "show_my_data": "Show my data",
+  "swipe_hint": "« swipe left or right »",
+  "study": "Study",
+  "show_study_words": "Study Words",
+  "show_saved_words": "Saved Words",
+  "time_order": "Time Order",
+  "freq_order": "Frequency Order",
+  "avg_freq": "Avg. Zipf",
+  "no_saved_words": "You haven’t saved any words yet.",
+  "no_saved_grammar": "You haven’t saved any grammar entries yet.",
+  "no_saved_expressions": "You haven’t saved any expressions yet.",
+  "help_study_mode": "In Study mode, the app automatically tailors the words to your saved vocabulary’s difficulty level.",
+  "save_history": "Save history",
+  "known_word": "Known word",
+  "unknown_word": "Unknown word",
+  "unmark_known": "Unmark known word",
+  "unmark_unknown": "Unmark unknown word",
+  "current_language": "Language",
+  "change_language": "Change",
+  "quiz": "Quiz",
+  "hint": "Hint",
+  "try_again": "Try again!",
+  "correct": "Correct",
+  "well_done": "Well done!",
+  "incorrect": "Incorrect",
+  "hint_button": "Hint",
+  "check_answer_button": "Check Answer",
+  "correct_answer": "🎉 Correct!",
+  "history_settings": "History Settings",
+  "load_more": "Load more",
+  "create_meeting": "Create Meeting",
+  "show_banner": "Show Banner",
+  "hide_banner": "Hide Banner",
+  "create_post": "Create Post",
+  "startpage": {
+    "title": "Learn from your conversations",
+    "descriptionLine1": "Your conversations turn into your personal study material.",
+    "descriptionLine2": "No memorizing—just pick up what you really say and use.",
+    "tagline1": "Your words,",
+    "tagline2": "your lessons,",
+    "tagline3": "your fluency"
+  },
+  "quizPage": {
+    "tabs": {
+      "vocab": "Vocab",
+      "grammar": "Grammar",
+      "expression": "Expression"
+    },
+    "loadingGrammar": "Loading grammar data…",
+    "loadingExpression": "Loading expression data…",
+    "empty": {
+      "noSavedGrammar": "You haven’t saved any grammar quizzes yet.",
+      "noSavedExpressions": "You haven’t saved any expressions yet."
+    },
+    "lang": {
+      "change": "Change language",
+      "close": "Close"
+    },
+    "actions": {
+      "learn": "Learn"
+    },
+    "quizButton": {
+      "arrow": "▶"
+    }
+  },
+  "grammarReport": {
+    "datasets": {
+      "quizGrammar": "Grammar Quiz",
+      "quizExpression": "Expression Quiz",
+      "quizVocab": "Vocab Quiz",
+      "quizSets": "Quiz Sets",
+      "savedVocab": "Saved Vocab",
+      "grammarCheck": "Grammar Checks",
+      "expressionCheck": "Expression Checks",
+      "hiddenWords": "Hidden Words",
+      "knownWords": "Known Words",
+      "unknownWords": "Unknown Words"
+    },
+    "header": {
+      "report": "Report",
+      "historySettings": "History Settings",
+      "overviewStatistics": "Overview Statistics",
+      "historyEntries": "History Entries"
+    },
+    "entry": {
+      "correctness": "Correctness",
+      "time": "Time",
+      "seconds": "s"
+    },
+    "stats": {
+      "total": "Total",
+      "accuracy": "Accuracy",
+      "avgTime": "Avg Time"
+    },
+    "chart": {
+      "issuesOverTime": "Issues Over Time",
+      "entriesByLanguage": "Entries by Language",
+      "insufficientData": "Insufficient data"
+    },
+    "noData": "No data",
+    "noHistory": "No history yet",
+    "loadMore": "Load more",
+    "toggle": {
+      "saveHistory": "Save history",
+      "requestScores": "Request scores"
+    }
+  },
+  "vocabQuiz": {
+    "preparing": "Preparing {{prepared}}/{{total}} questions...",
+    "congratulations": "Great job!"
+  },
+  "quizSetsList": {
+    "preparing": "Preparing {{prepared}}/{{total}} questions...",
+    "quizSetTitle": "Quiz Set {{number}}",
+    "deleteSet": "Delete Set",
+    "createSet": "Create Quiz Set"
+  },
+  "start_quiz": "Start Quiz",
+  "quizGrammar": {
+    "description": "Rearrange the words by dragging them into the sentence above. Move any misplaced words back down until your sentence is grammatically correct."
+  },
+  "quizExpression": {
+    "description": "Fill in the blanks above by dragging the correct words from below."
+  },
+  "ai_options": "AI Options",
+  "quizPage_modes": {
+    "move": "Move Words",
+    "fill": "Fill Blanks"
+  },
+  "maintenance_offline": {
+    "offline_note": "You can access the learning page even when offline.",
+    "go_to_learning": "Go to Learning Page"
+  },
+  "enable_voice_chat": "Enable Voice Chat",
+  "disable_voice_chat": "Disable Voice Chat",
+  "enable_roleplay": "Enable role-play",
+  "disable_roleplay": "Disable role-play",
+
+  "scenario_cafe": "Café order",
+  "scenario_cafe_desc": "You are ordering drinks at a café.",
+  "scenario_hotel": "Hotel check-in",
+  "scenario_hotel_desc": "You are checking into a hotel and asking for a city-view room.",
+  "scenario_directions": "Asking directions",
+  "scenario_directions_desc": "You need to find the nearest subway station.",
+  "scenario_grocery": "Grocery shopping",
+  "scenario_grocery_desc": "You are looking for gluten-free pasta.",
+  "scenario_clothes": "Buying clothes",
+  "scenario_clothes_desc": "You are trying on clothes and asking for a different size.",
+  "scenario_interview": "Job interview",
+  "scenario_interview_desc": "You are a candidate answering interview questions.",
+  "scenario_meeting": "Business meeting",
+  "scenario_meeting_desc": "You are presenting quarterly sales figures.",
+  "scenario_call": "Business call",
+  "scenario_call_desc": "You are following up with a client on the phone.",
+  "scenario_hospital": "Doctor visit",
+  "scenario_hospital_desc": "You are describing your symptoms to a doctor.",
+  "scenario_emergency": "Emergency",
+  "scenario_emergency_desc": "You witness someone faint and call for help.",
+  "scenario_dating": "Making friends",
+  "scenario_dating_desc": "You meet someone new and talk about hobbies.",
+  "scenario_party": "Party planning",
+  "scenario_party_desc": "You are inviting friends to a dinner party.",
+  "view_list": "List View",
+  "view_card": "Card View",
+  "refresh_words": "Refresh words",
+  "quiz_corrects": "Correct Answers",
+  "known_words": "Known Words",
+  "stats_overview": "Stats Overview",
+  "show_chart": "Show Chart",
+  "conversation_practice": "Conversation Practice",
+  "rank_suffix": "th",
+  "backToSets": "Back to sets",
+  "history": {
+    "remoteTitle": "Example Entry",
+    "remoteMessage": "This example is shown for reference and can't be deleted. When you chat with AI or friends, your own learning data will be collected here."
+  },
+  "learn": "Learning",
+  "reveal_answer": "Answer: {{answer}}",
+  "study_report": "Study Report",
+  "mcq_prompt": "Pick the grammatically correct sentence",
+  "disable_quiz": "Turn off",
+  "last_ai_chat": {
+    "close": "Close",
+    "study": "Study with AI",
+    "start_ai_chat": "Tap to start chatting with AI"
+  },
+  "toggle_ai_options": "AI Options",
+  "toggle_mcq": "4-Choice Quiz",
+  "toggle_auto_check": "Auto Check",
+  "first_chat_prompt": "Start the first conversation!",
+  "guide": {
+    "next": "Next",
+    "prev": "Back",
+    "finish": "Got it",
+    "dontShowAgain": "Don't show again"
+  },
+  "homeGuide": {
+    "step1": { "title": "Find study partners", "desc": "Browse online/offline posts and meet friends. Chat with AI for instant grammar checks." },
+    "step2": { "title": "Edit your profile", "desc": "Tap your picture to view and edit profile info." },
+    "step3": { "title": "Filter by topics", "desc": "Swipe the topic slider or tap the list icon to customise visible topics." },
+    "step4": { "title": "Advanced filters", "desc": "Use the filter icon to narrow down posts by distance, recurrence and more." },
+    "step5": { "title": "AI quiz & chat", "desc": "Try the dynamic AI 4-choice quiz or role-play chat to boost your language skills." },
+    "step6": { "title": "Create a post", "desc": "Share your own meetup or question with the community." }
+  },
+  "noticeGuide": {
+    "step1": {
+      "title": "Real-time Conversation Analysis",
+      "desc": "Tap this button to check your live conversations in your real meetups."
+    },
+    "step2": {
+      "title": "Track Your Progress",
+      "desc": "Quickly see your language-learning stats at a glance."
+    },
+    "step3": {
+      "title": "Discover & Stay Informed",
+      "desc": "Find nearby learning meetups and all your important notifications here."
+    }
+  },
+  "quizGuide": {
+    "step1": {
+      "title": "Choose your quiz type",
+      "desc":  "Select Vocabulary, Grammar, or Expression at the top to start that quiz."
+    },
+    "step2": {
+      "title": "Change language & mode",
+      "desc":  "Tap the language button to switch languages. For Grammar/Expression you can also switch modes."
+    },
+    "step3": {
+      "title": "Generate a new quiz",
+      "desc":  "Hit “Generate Quiz” and wait while we build your quiz from saved study data."
+    }
+  },
+  "learningGuide": {
+    "step1": {
+      "title": "Practice by Tab",
+      "desc": "Select a tab to switch between vocabulary, grammar, and expression practice."
+    },
+    "step2": {
+      "title": "Change Language",
+      "desc": "Tap here to change the language you want to study."
+    },
+    "step3": {
+      "title": "Refresh Words",
+      "desc": "Press this refresh button to select new words tailored to your level."
+    },
+    "step4": {
+      "title": "Card/List View",
+      "desc": "Switch between card view and list view for vocabulary."
+    },
+    "step5": {
+      "title": "Saved Words",
+      "desc": "Toggle to see only your saved (bookmarked) words."
+    },
+    "step6": {
+      "title": "Word Card Actions",
+      "desc": "Tap a word card to see its meaning in your language. Mark words as known or unknown to adjust your learning level."
+    }
+  },
+  "chatGuide": {
+    "step1": {
+      "title": "Select Your Chat Type",
+      "desc": "At the very top, you can easily switch between Personal Chat, Buddy Group Chat, and Regional Chat by tapping the toggle. Choose the type of chat that suits your purpose!"
+    },
+    "step2": {
+      "title": "AI Chat — Your Study Partner",
+      "desc": "At the top of your personal chat list is AI Chat. This is the heart of the app! Here, you can have real conversations with AI, practice speaking, and instantly take personalized quizzes based on your chats."
+    },
+    "step3": {
+      "title": "Chat with Friends & Learn Together",
+      "desc": "Below the AI Chat, you’ll see all your personal chats with friends. You can add or remove friends anytime through 'Settings > Manage Friends'. To start a chat with a friend, just use this list or go to 'Settings > Manage Friends'. Practice languages together and make learning social and fun!"
+    },
+    "step4": {
+      "title": "Buddy Group Chats — Study as a Team",
+      "desc": "In the Buddy tab, you’ll find all your group chats. Buddy groups are for learning and practicing together with a team. You can create or join buddy groups from the Search page or from 'Settings > Manage Buddies'. Team up with others and share your language journey!"
+    },
+    "step5": {
+      "title": "Regional Chat — Meet People Nearby",
+      "desc": "In Regional Chat, you can join conversations with people near your current location. It’s a great way to make new friends and discover local communities. You might even find new language partners in your area!"
+    }
+  },
+  "chatRoomGuide": {
+    "step1": {
+      "title": "Fine-tune your AI chat",
+      "desc": "Tap the “AI +” button to open detailed controls: set difficulty, topics, voice chat, or role-play options."
+    },
+    "step2": {
+      "title": "Role-play with live speech",
+      "desc": "Choose a situation chip on the right. When Voice Chat is ON, simply speak and the AI will act out the scene with you."
+    },
+    "step3": {
+      "title": "Track your learning points",
+      "desc": "Every time a Grammar or Expression is saved, the counters here go up. You can review them later in the Learning or Quiz pages."
+    },
+    "step4": {
+      "title": "Set check-language & auto-check",
+      "desc": "Pick which language the grammar checker should use. Auto-check is ON by default but you can toggle it here any time."
+    },
+    "step5": {
+      "title": "Multiple-choice quizzes (AI only)",
+      "desc": "This switch gives you 4-choice quizzes based on your AI conversation. It’s available only in AI chats."
+    },
+    "step6": {
+      "title": "Edit or delete a message",
+      "desc": "Long-press on any bubble you sent to revise or remove it. Handy for fixing mistakes before they’re checked!"
+    },
+    "step7": {
+      "title": "Send text or speak",
+      "desc": "Type and tap the paper-plane icon to send. If the field is empty you’ll see a mic: tap it to start voice chat. The icon turns color while active."
+    }
+  },
+  "view_offline_meetings": "View offline meetings",
+  "view_online_meetings": "View online meetings",
+  "posting_toggle": {
+    "mode": "Meeting Mode",
+    "offline": "Offline Meeting",
+    "online": "Online Meeting"
+  },
+  "postingGuide": {
+    "step1": {
+      "title": "Create Offline & Online Language Meetups",
+      "desc": "Start your own language meetup—either in-person or online. This is where you create and launch your group."
+    },
+    "step2": {
+      "title": "Choose Topic & Name Your Meetup",
+      "desc": "Pick a topic for your meetup and set a title. For example: 'Morning English Study', 'French Café Group', etc."
+    },
+    "step3": {
+      "title": "Select Meetup Time",
+      "desc": "Choose the date and time for your event. You can host a one-time meetup or set up a regular, repeating group."
+    },
+    "step4": {
+      "title": "Choose the Meetup Location",
+      "desc": "Look at the map and tap the central pin icon to set your location. The star-shaped pin will move there, and that spot will be saved as your meetup place."
+    },
+    "step5": {
+      "title": "Select Meetup Language",
+      "desc": "Choose the language you’ll use or want to practice in your group. Pick any language you like."
+    },
+    "step6": {
+      "title": "Let AI Write the Post for You",
+      "desc": "If you’re not sure what to write, just let AI automatically create the meetup post with one tap."
+    },
+    "step7": {
+      "title": "Upload & Manage Your Meetup",
+      "desc": "Tap ‘Upload’ to post your group. You can find and edit your posts anytime from the home screen or your profile, and save drafts to finish later."
+    }
+  },
+  "profileGuide": {
+    "step1": {
+      "title": "Change your profile image",
+      "desc": "Tap the button next to your profile photo to update your image. A friendly profile picture helps others remember you!"
+    },
+    "step2": {
+      "title": "Set your nickname",
+      "desc": "Tap your nickname to set a unique name. Having your own nickname makes it easier to make friends and learn languages effectively."
+    },
+    "step3": {
+      "title": "Select your main language",
+      "desc": "Choose your main language. The app’s UI will be displayed in the language you select."
+    },
+    "step4": {
+      "title": "Manage your profile privacy",
+      "desc": "Others can see your profile information like learning languages. If you want to keep your info private, you can turn off account visibility here."
+    },
+    "step5": {
+      "title": "Quick Menu features",
+      "desc": "From the Quick Menu, you can manage your posts, buddies, and friends. Tap the settings icon for more detailed options."
+    }
+  },
+  "buddyGuide": {
+    "step1": {
+      "title": "Buddy Groups",
+      "desc": "Buddy groups are communities of users learning languages together. The 'Buddies' tab shows the groups you belong to."
+    },
+    "step2": {
+      "title": "Buddy Requests",
+      "desc": "The 'Requests' tab shows the approval status of any join requests you've made to buddy groups."
+    },
+    "step3": {
+      "title": "Search Buddy Groups",
+      "desc": "In the 'Search' tab, you can look up buddy groups to join."
+    },
+    "step4": {
+      "title": "Create a Buddy Group",
+      "desc": "Tap the island icon at the bottom right to create your own buddy group."
+    }
+  },
+  "friendListGuide": {
+    "step1": {
+      "title": "Your Friends",
+      "desc": "Check all users who are your friends here. You can remove a friend or start a chat directly from this list."
+    },
+    "step2": {
+      "title": "Friend Requests",
+      "desc": "See friend requests you've sent or received. You can accept or reject requests, and see their status at a glance."
+    }
+  },
+  "fullScreenMapGuide": {
+    "step1": {
+      "title": "Filter Content",
+      "desc": "Use the top toggle to filter between Meetups, Buddy Groups, Schools, and Events."
+    },
+    "step2": {
+      "title": "Create AI-Generated Meetup",
+      "desc": "Tap the island icon in the bottom-right to draw a circle. Choose your topic, then tap it again to have AI draft a meetup post based on your selected area and topic."
+    }
+  },
+  "buddyInfoGuide": {
+    "step1": {
+      "title": "Overview",
+      "desc": "This page shows an overview of your buddy group."
+    },
+    "step2": {
+      "title": "View Posts",
+      "desc": "Tap the “View Posts” button to go to the group’s message board."
+    },
+    "step3": {
+      "title": "Manage Join Requests",
+      "desc": "Handle incoming join requests from users wanting to join your group."
+    },
+    "step4": {
+      "title": "Schedules, Notices & Polls",
+      "desc": "Use the tabs to manage schedules, notifications, and polls with your language-learning buddies."
+    }
+  },
+  "buddyPageGuide": {
+    "step1": {
+      "title": "Welcome to your Buddy Board",
+      "desc": "Here you and your group members can share posts."
+    },
+    "step2": {
+      "title": "Filter Your Feed",
+      "desc": "Tap here to sort or narrow down posts."
+    },
+    "step3": {
+      "title": "Choose Topics",
+      "desc": "Select the topics you're interested in."
+    },
+    "step4": {
+      "title": "Browse Posts",
+      "desc": "Scroll through posts shared by your group."
+    }
+  },
+  "ugc_policy": {
+    "title": "Community Guidelines & Terms",
+    "intro": "This is a community powered by your participation. To help keep it safe and welcoming for everyone, please agree to the following:",
+    "points": [
+      "No objectionable or abusive content, as described in our Terms of Use",
+      "Automatic filtering of abusive language and images",
+      "You can report harmful or inappropriate posts directly from the post page",
+      "You can block or restrict abusive users by visiting their profile page",
+      "We commit to respond to valid reports within 24 hours"
+    ],
+    "agree": "I agree to these terms"
+  },
+  "scenario": "Scenario",
+  "leave_custom_session": "End chat session",
+  "leave_custom_session_success": "Your custom AI session has been ended.",
+  "leave_custom_session_error": "Failed to end chat session.",
+  "nothing_to_share": "Nothing to share",
+  "shared_scenario": "Shared scenario",
+  "start_ai_language_learning": "Start AI language learning with this scenario",
+  "shared_label": "Shared",
+  "shared_scenario_label": "Shared scenario",
+  "smart_limit_reached_title": "Limit reached",
+  "smart_limit_reached_message": "You've reached the daily limit of 30 smart-mode messages.",
+  "photoRolePlay": {
+    "selectLangGuide": "Select the language you want to practice",
+    "description": "Describe your photo and start a role-play.",
+    "takePhoto": "Take Photo",
+    "choosePhoto": "Choose from Library",
+    "generate": "Generate",
+    "pickOne": "Pick one scenario",
+    "hint": "Select the scenario that best fits your photo",
+    "pickPersona": "Choose a persona",
+    "selectedScenario": "Selected scenario",
+    "startChat": "Start Chat"
+  },
+  "homeNew": {
+    "prompt_visit_1": "{{nickname}}, where did you visit?",
+    "prompt_visit_2": "{{nickname}}, what new place did you go to today?",
+    "prompt_visit_3": "Hey {{nickname}}, did you discover anywhere interesting lately?",
+    "prompt_visit_4": "{{nickname}}, any memorable spots you checked out?",
+    "prompt_visit_5": "{{nickname}}, share your latest adventure!",
+    "prompt_learn_1": "{{nickname}}, what kind of situation do you want to learn for?",
+    "prompt_learn_2": "{{nickname}}, is there any situation you want to practice?",
+    "prompt_learn_3": "What context do you want to prepare for, {{nickname}}?",
+    "prompt_learn_4": "{{nickname}}, tell me a real-life scenario you’re curious about.",
+    "prompt_learn_5": "{{nickname}}, what would you like to express in language next?",
+    "ongoing_learning"    : "Ongoing Lessons",
+    "today_learning"      : "Today's Lesson",
+    "quiz"                : "Quiz",
+    "analysis"            : "Conversation Analysis",
+    "situation_learning"  : "Situation Learning",
+    "learning_report"     : "Learning Report",
+    "quick_menu"          : "Quick Menu",
+    "legacy_button"       : "Legacy View",
+    "setting_button":   "Settings",
+    "profile_button":   "My Profile",
+    "friend_button":    "Friends",
+    "buddy_button":     "Buddies",
+    "mypost_button":    "My Posts",
+    "account_button":   "Account",
+    "learning_tools":   "Learning Tools",
+    "vocab": "Vocabulary",
+    "grammar": "Grammar",
+    "expression": "Expression",
+    "move": "Word Order",
+    "fill": "Fill in Blank"
+  },
+  "show_translation_hint": "Tap here to reveal meaning",
+  "ai-rt": {
+    "banner": {
+      "smart": "Generating with the smart model…",
+      "helper": "Another model is helping…",
+      "fast": "Thinking with the fast model…"
+    },
+    "status": {
+      "waiting": "Connecting…",
+      "streaming": "Streaming response…",
+      "finalizing": "Finalizing…"
+    }
+  },
+  "calendar-footer": "Calendar",
+  "related": {
+    "semanticTitle": "Semantic neighbors",
+    "morphTitle": "Affix/stem grouping",
+    "empty": "No items to show",
+    "error": {
+      "not_in_cefr": "This word is not in the CEFR dataset for this language.",
+      "calc_failed": "Failed to compute related words."
+    }
+  }
 
 
 }

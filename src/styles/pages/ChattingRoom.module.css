@@ -1,8 +1,33 @@
+/* ====== Reset for app-like look (remove odd borders/highlights) ====== */
+.wrapper * {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper button,
+.wrapper [role="button"] {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper img {
+  border: 0;
+}
+
+/* prevent accidental text selection during sliding chips */
+.scenarioRow,
+.scenarioScroll,
+.scrollRow {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* ====== Theme ====== */
 .wrapper {
   --pink: #d8315b;
   --orange: #f2542d;
   --ink: #110c2b;
   --bg: #fafafa;
+  --hairline: rgba(17, 12, 43, 0.06);
 
   display: flex;
   flex-direction: column;
@@ -22,7 +47,9 @@
   top: 0;
   z-index: 30;
   background: var(--bg);
-  border-bottom: 1px solid rgba(17, 12, 43, 0.06);
+  border-bottom: 1px solid var(--hairline);
+  -webkit-backdrop-filter: saturate(120%) blur(2px);
+  backdrop-filter: saturate(120%) blur(2px);
 }
 
 .iconBtn {
@@ -35,9 +62,11 @@
   display: grid;
   place-items: center;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  transition: transform .2s ease;
+  transition: transform .2s ease, box-shadow .2s ease;
+  touch-action: manipulation;
 }
 .iconBtn:hover { transform: translateY(-1px); }
+.iconBtn:active { transform: translateY(0); box-shadow: 0 4px 14px rgba(0,0,0,.06); }
 
 .titleBtn {
   appearance: none;
@@ -47,6 +76,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
+  touch-action: manipulation;
 }
 .title {
   font-size: 18px;
@@ -58,12 +88,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.chevIcon { color: #999; }
 
 .modelStatus {
   text-align: center;
   color: #888;
   font-size: 12px;
   padding: 6px 0 2px;
+  pointer-events: none;
 }
 
 /* AI bar */
@@ -98,6 +130,7 @@
   color: var(--pink);
   border: 1px solid rgba(17,12,43,.12);
   font-weight: 600;
+  touch-action: manipulation;
 }
 .scenarioRow { position: relative; }
 .scenarioScroll {
@@ -105,7 +138,14 @@
   gap: 6px;
   overflow-x: auto;
   scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;     /* iOS momentum scroll */
+  overscroll-behavior-x: contain;        /* keep swipe self-contained */
+  touch-action: pan-x pinch-zoom;        /* enable horizontal pan */
+  scroll-snap-type: x proximity;
 }
+.scenarioScroll::-webkit-scrollbar { height: 6px; }
+.scenarioScroll::-webkit-scrollbar-thumb { background: rgba(0,0,0,.12); border-radius: 999px; }
+
 .scenarioChip {
   padding: 10px 12px;
   border-radius: 999px;
@@ -113,6 +153,8 @@
   border: 1px solid rgba(17,12,43,.12);
   color: #555;
   font-size: 12px;
+  scroll-snap-align: start;
+  touch-action: manipulation;
 }
 .scenarioChipSelected {
   background: #fff3f6;
@@ -123,6 +165,7 @@
 .scenarioChipDisabled {
   border-color: transparent;
   color: #aaa;
+  pointer-events: auto; /* still show but non-emphasized */
 }
 
 .customScenarioBtn {
@@ -130,6 +173,7 @@
   grid-template-columns: auto 1fr;
   gap: 8px;
   align-items: baseline;
+  min-width: 0;
 }
 .customScenarioTitle {
   font-size: 12px; color: #555; font-weight: 500;
@@ -148,7 +192,18 @@
 
 .row { display: grid; grid-template-columns: 100px 1fr; gap: 8px; align-items: center; }
 .label { font-size: 12px; color: #555; }
-.scrollRow { display: flex; overflow-x: auto; gap: 8px; }
+.scrollRow {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x pinch-zoom;
+  scrollbar-width: thin;
+}
+.scrollRow::-webkit-scrollbar { height: 6px; }
+.scrollRow::-webkit-scrollbar-thumb { background: rgba(0,0,0,.12); border-radius: 999px; }
+
 .pill {
   padding: 8px 12px; border-radius: 999px; background: #fff; border: 1px solid rgba(17,12,43,.12); font-size: 12px; color: #555;
 }
@@ -186,18 +241,9 @@
 }
 .badgeScroll {
   display: flex; align-items: center; gap: 8px; width: 100%; overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pinch-zoom;
 }
-
-.langBtn {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 8px 10px; border-radius: 16px; border: 1px solid rgba(17,12,43,.12); background: #fff; color: var(--pink); font-size: 12px;
-}
-.langBtnActive { border-color: rgba(216,49,91,.24); }
-
-.smallPill {
-  padding: 8px 10px; border-radius: 16px; background: #fff; border: 1px solid rgba(17,12,43,.12); font-size: 12px; color: #888;
-}
-.smallPillActive { color: var(--pink); border-color: rgba(216,49,91,.24); }
 
 /* list (inverted) */
 .list {
@@ -228,18 +274,22 @@
   background: linear-gradient(180deg, rgba(255,255,255,0), #fff);
 }
 
-/* menu */
+/* menu (overlay via Portal, always on top) */
 .menuOverlay {
-  position: fixed; inset: 0; background: rgba(0,0,0,.5);
+  position: fixed; inset: 0; background: rgba(0,0,0,.48);
   display: grid; place-items: start end; padding: 70px 16px 16px;
+  z-index: 9999; /* above anything in the page */
 }
 .menu {
-  width: 320px; min-height: 380px; border-radius: 20px; background: #fff; padding: 12px;
+  width: 320px; min-height: 380px; max-height: calc(100vh - 120px);
+  border-radius: 20px; background: #fff; padding: 12px;
   display: grid; gap: 10px; box-shadow: 0 30px 80px rgba(0,0,0,.25);
+  overflow: hidden;
 }
 .menuBtn {
   border: 0; background: #fafafa; border-radius: 10px; padding: 10px 12px; color:#333; text-align: center;
 }
+.menuBtn:active { transform: scale(.997); }
 .menuBadges { display:flex; justify-content:center; gap:12px; }
 
 /* language grid */
@@ -247,22 +297,36 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
+  padding-top: 4px;
 }
 .langCell {
   display:flex; gap:6px; align-items:center; justify-content:center;
-  padding:8px; border-radius:10px; background:#fafafa;
+  padding:8px; border-radius:10px; background:#fafafa; border:1px solid transparent;
 }
 .langCellActive { background:#fff; border:1px solid var(--pink); }
 
-/* quizzes */
+.langBtn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 10px; border-radius: 16px; border: 1px solid rgba(17,12,43,.12); background: #fff; color: var(--pink); font-size: 12px;
+}
+.langBtnActive { border-color: rgba(216,49,91,.24); }
+
+.smallPill {
+  padding: 8px 10px; border-radius: 16px; background: #fff; border: 1px solid rgba(17,12,43,.12); font-size: 12px; color: #888;
+}
+.smallPillActive { color: var(--pink); border-color: rgba(216,49,91,.24); }
+
+/* quizzes (overlay) */
 .quizOverlay {
   position: fixed; inset: 0; background: rgba(0,0,0,.5);
   display: grid; place-items: center;
+  z-index: 10000; /* higher than menuOverlay just in case */
 }
 .quizCard {
   width: min(820px, 92vw);
   max-height: 90vh; min-height: 60vh;
   background: #fff; border-radius: 20px; overflow: hidden; padding: 10px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
 }
 
 /* responsive */
