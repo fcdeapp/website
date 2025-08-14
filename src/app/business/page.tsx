@@ -220,7 +220,6 @@ export default function BusinessPage() {
                 whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
               >
                 <h3>
-                  <span className={styles.flipTag} aria-hidden>↺</span>
                   {f.title}
                 </h3>
                 <p>{f.body}</p>
