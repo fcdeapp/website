@@ -138,7 +138,6 @@ const MessageInputFormAI: React.FC<Props> = ({
             <img
               src={selectedImage}
               alt="preview"
-              fill
               style={{ objectFit: "cover", borderRadius: 10 }}
             />
             <button
