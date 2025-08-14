@@ -56,8 +56,7 @@ import classNames from "classnames";
 import styles from "../../styles/pages/ChattingRoom.module.css";
 import { useSearchParams, useRouter } from "next/navigation";
 import axios from "axios";
-import { io } from "socket.io-client";
-import type { Socket } from "socket.io-client";
+import io from "socket.io-client";
 
 /* Shared contexts & utils */
 import { useConfig } from "../../context/ConfigContext";
@@ -281,7 +280,8 @@ export default function ChattingRoomPage() {
   } | null>(null);
 
   /* socket */
-  const socketRef = useRef<Socket | null>(null);
+ type SocketLike = ReturnType<typeof io>;
+ const socketRef = useRef<SocketLike | null>(null);
 
   /* voice recognition / TTS */
   const recognitionRef = useRef<any>(null);
@@ -750,9 +750,11 @@ export default function ChattingRoomPage() {
       });
     }
 
-    socket.on("connect_error", (err: Error) => {
-      console.error("socket error", err.message, err);
-    });
+  socket.on("connect_error", (err: unknown) => {
+    if (err instanceof Error) console.error("socket error", err.message, err);
+    else console.error("socket error", err);
+  });
+
 
     return () => {
       socket.disconnect();
