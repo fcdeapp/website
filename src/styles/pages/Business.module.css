@@ -1488,100 +1488,177 @@
 .swAndroid{ background:#ff9e80; }
 .swSum{ background:#d8315b; }
 
-/* ========== Mobile tweaks for "What Makes Abrody Different" ========== */
+/* ========== Mobile + Responsive tweaks for "What Makes Abrody Different" ========== */
+/* Replaces previous mobile tweak block. Keeps the decorative border (::before) but adapts it per breakpoint. */
 
-/* 1) small screens: single-column, larger gap, reduced padding for cards */
+/* base: ensure consistent card sizing and stacking behavior across widths */
+.diffGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr)); /* desktop default: 4-up when space allows */
+  gap: 1.5rem;
+  align-items: stretch;       /* make cards align height-wise */
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+/* make cards flexible and accessible */
+.diffCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.6rem 1.4rem;
+  border-radius: 20px;
+  min-height: 140px;
+  transition: transform .25s ease, box-shadow .25s ease, background-position .45s ease;
+  position: relative; /* for ::before */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* keep decorative border but tone it down slightly on smaller screens */
+.diffCard::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(90deg, #ffd36e, #ff8a5c, #d8315b);
+  background-size: 220% 100%;
+  background-position: 0% 50%;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  pointer-events: none;
+  transition: background-position .45s ease, opacity .25s ease;
+  opacity: 1;
+}
+
+/* typography inside cards */
+.diffCard h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem 0;
+  color: #d8315b;
+  line-height: 1.15;
+}
+.diffCard p {
+  font-size: 0.97rem;
+  color: #4a4a4a;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* small desktop -> 3 columns */
+@media (max-width: 1200px) {
+  .diffGrid {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 1.25rem;
+  }
+  .diffCard { min-height: 130px; padding: 1.45rem 1.25rem; }
+  .diffCard::before { background-size: 180% 100%; opacity: 0.98; }
+}
+
+/* tablet -> 2 columns */
+@media (max-width: 900px) {
+  .diffGrid {
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 1rem;
+    padding: 0 0.75rem;
+  }
+  .diffCard {
+    padding: 1.25rem 1rem;
+    min-height: 120px;
+    border-radius: 16px;
+  }
+  .diffCard h3 { font-size: 1.01rem; }
+  .diffCard p { font-size: 0.96rem; }
+  .diffCard::before { background-size: 160% 100%; opacity: 0.95; }
+}
+
+/* small mobile -> 1 column */
 @media (max-width: 640px) {
   .diffGrid {
-    grid-template-columns: 1fr;      /* 한 줄에 하나 */
-    gap: 1rem;                       /* 카드 간격 약간 늘림 */
-    padding: 0 0.5rem;               /* 측면 여유 */
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding: 0 0.6rem;
   }
 
   .diffCard {
-    padding: 1.1rem 1rem;            /* 패딩 축소 (모바일에 맞게) */
-    border-radius: 14px;             /* 약간 작게 */
-    min-height: auto;                /* 높이 고정 해제 */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    -webkit-tap-highlight-color: transparent; /* 터치 하이라이트 제거 */
-    touch-action: manipulation;      /* 빠른 터치 반응 유도 */
+    padding: 1.05rem 0.95rem;
+    border-radius: 14px;
+    min-height: auto; /* let content define height on narrow screens */
+    box-shadow: 0 8px 22px rgba(17,12,43,0.06);
   }
 
-  .diffCard h3 {
-    font-size: 1rem;                 /* 제목 크기 조정 */
-    margin-bottom: 0.4rem;
-  }
+  .diffCard h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+  .diffCard p { font-size: 0.98rem; line-height: 1.55; margin-bottom: 0.15rem; }
 
-  .diffCard p {
-    font-size: 0.95rem;              /* 본문 약간 키워 가독성 보정 */
-    line-height: 1.55;
-    margin-bottom: 0.25rem;
-  }
-
-  /* 카드 장식(외곽 그라데이션)은 모바일에서 제거하여 렌더링 비용 절감 */
+  /* keep border but soften on mobile for readability & perf */
   .diffCard::before {
-    display: none !important;
-  }
-
-  /* flip header: 세로 스택(토글/라벨이 좁아질 때 깨지지 않도록) */
-  .flipHeader {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-    margin: 0.25rem 0 1rem;
-  }
-  .flowLabel, .flipSwitch {
-    width: auto;                     /* 축소된 공간에 맞춤 */
-    line-height: 1;
-  }
-
-  /* diffLead (설명문) 모바일 최적화 */
-  .diffLead {
-    font-size: 1rem;
-    max-width: 36rem;
-    padding: 0 0.5rem;
+    background-size: 140% 100%;
+    opacity: 0.85;
+    filter: blur(0.2px);
   }
 }
 
-/* 2) Disable hover effects on touch-only devices, keep them on pointer-capable devices */
-@media (hover: none) and (pointer: coarse) {
-  .diffCard,
-  .card,
-  .flowStep {
-    transition: transform .18s ease, box-shadow .18s ease; /* 경미한 트랜지션만 유지 */
-  }
-  .diffCard:hover,
-  .card:hover,
-  .flowStep:hover {
-    transform: none !important;
-    box-shadow: 0 6px 18px rgba(17,12,43,0.06) !important; /* 과도한 hover 제거 */
-  }
-}
-
-/* 3) Keep hover effects for desktop / pointer devices only (avoid janky mobile hover) */
+/* preserve hover polish on pointer devices only; remove heavy hover on touch devices */
 @media (hover: hover) and (pointer: fine) {
   .diffCard {
     cursor: pointer;
   }
-  .diffCard:active {
-    transform: translateY(-2px);
+  .diffCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(17,12,43,0.12);
+  }
+  .diffCard:hover::before {
+    background-position: 100% 50%;
   }
 }
 
-/* 4) Focus-visible for keyboard users (접근성) */
+/* Touch-first devices: avoid relying on :hover; provide subtle active feedback */
+@media (hover: none) and (pointer: coarse) {
+  .diffCard {
+    transition: box-shadow .18s ease, transform .12s ease;
+  }
+  .diffCard:active {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(17,12,43,0.08);
+  }
+}
+
+/* keyboard accessibility: visible focus */
 .diffCard:focus-visible {
   outline: 3px solid rgba(216,49,91,0.12);
   outline-offset: 4px;
-  box-shadow: 0 10px 30px rgba(17,12,43,0.06);
+  box-shadow: 0 12px 30px rgba(17,12,43,0.08);
 }
 
-/* 5) Slightly enlarge the touch target for legend / flip controls on small screens */
+/* flipHeader and small controls responsiveness */
+.flipHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  margin: -0.5rem 0 1.2rem;
+  flex-wrap: wrap;
+}
+
+/* make small chips easier to tap on smaller screens */
 @media (max-width: 640px) {
   .flowLabel, .flipSwitch {
     padding: 0.35rem 0.7rem;
     font-size: 0.9rem;
     border-radius: 999px;
+  }
+}
+
+/* optional small-equalizing helpers (keep if you want uniform card heights) */
+.diffGrid.equalHeights .diffCard {
+  align-self: stretch;
+}
+
+/* micro-optimizations: reduce decorative motion on low-power devices */
+@media (prefers-reduced-motion: reduce) {
+  .diffCard, .diffCard::before {
+    transition: none !important;
   }
 }
