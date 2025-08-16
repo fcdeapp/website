@@ -655,6 +655,39 @@ export default function BusinessPage() {
         <div className={styles.downloadGrid}>
           {/* Pitch Deck Card */}
           <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-13</span>
+            <div className={styles.dHead}>
+              <h4 className={styles.dTitle}>Pitch Deck</h4>
+              <span className={styles.dMeta}>PDF · English</span>
+            </div>
+            <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
+            <div className={styles.actions}>
+              <button
+                className={`${styles.btn} ${styles.btnPrimary}`}
+                onClick={() => setPreview({ type: "pdf", src: "/Abrody_Pitch_Deck_250813_EN.pdf" })}
+              >
+                Preview
+              </button>
+              <a
+                className={`${styles.btn} ${styles.btnGhost}`}
+                href={encodeURI("/Abrody_Pitch_Deck_250813_EN.pdf")}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in new tab
+              </a>
+              <a
+                href="/Abrody_Pitch_Deck_250813_EN.pdf"
+                download
+                className={`${styles.btn} ${styles.btnGhost}`}
+              >
+                Download
+              </a>
+            </div>
+          </motion.article>
+
+          <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-07</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Pitch Deck</h4>
               <span className={styles.dMeta}>PDF · Korean</span>
@@ -687,6 +720,7 @@ export default function BusinessPage() {
 
           {/* Demo Video Card */}
           <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.06}}>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-04</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Demo Video</h4>
               <span className={styles.dMeta}>MP4 · English</span>
@@ -719,6 +753,7 @@ export default function BusinessPage() {
 
           {/* 1-Pager (EN) Card */}
           <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.12}}>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-01</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>1-Pager</h4>
               <span className={styles.dMeta}>PDF · English</span>
