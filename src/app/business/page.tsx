@@ -4,6 +4,7 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 import styles from "../../styles/pages/Business.module.css";
 import FlipNumber from "../../components/FlipNumber";
+import ChainQuizzesSection from "../../components/ChainQuizzesSection";
 
 /* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
@@ -256,6 +257,8 @@ export default function BusinessPage() {
       </section>
 
       <div className={styles.waveSplit} />
+
+      <ChainQuizzesSection />
 
       {/* ── How It Works ───────────────────────────────── */}
       <section className={styles.sectionAlt}>
