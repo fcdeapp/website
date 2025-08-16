@@ -351,14 +351,19 @@ function StreamingSentence({
       setIndicatorPos({ x: Math.round(cx), y: Math.round(cy) });
     }, [showN, tokens.length]);
   
-    const firstVisible = showN >= 1 ? tokenRefs.current[0] ?? null : null;
-    const lastTo = showN >= 2 ? tokenRefs.current[showN - 1] ?? null : null;
+    const lastIdx = showN - 1;
   
     return (
       <div className={styles.streamShell} ref={shellRef}>
-        {showN >= 2 && (
-        <Connector fromEl={firstVisible} toEl={lastTo} host={shellRef.current} />
-        )}
+        {showN >= 2 &&
+        tokenRefs.current.slice(0, showN - 1).map((fromEl, idx) => (
+            <Connector
+            key={`conn-${idx}-${showN}`}
+            fromEl={fromEl}
+            toEl={tokenRefs.current[lastIdx] ?? null}
+            host={shellRef.current}
+            />
+        ))}
     
     <motion.div
     className={styles.streamIndicator}
@@ -421,6 +426,8 @@ function WebChainQuiz({
   const [done, setDone] = React.useState(false);
   const [picked, setPicked] = React.useState<string | null>(null);
   const [timeLeft, setTimeLeft] = React.useState(TIME_PER_WORD[level]);
+  const rafRef = React.useRef<number | null>(null);
+  const deadlineRef = React.useRef<number>(0);
   const [round, setRound] = React.useState(0);
 
   React.useEffect(() => {
@@ -436,23 +443,31 @@ function WebChainQuiz({
 
   React.useEffect(() => {
     if (done) return;
-    setTimeLeft(TIME_PER_WORD[level]);
+    const dur = TIME_PER_WORD[level] * 1000;
+    deadlineRef.current = performance.now() + dur;
+    setTimeLeft(TIME_PER_WORD[level]); // 숫자 표기 초기화
   }, [round, level, done]);
 
   React.useEffect(() => {
     if (done) return;
-    const t = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          handlePick("__timeout__", false);
-          return TIME_PER_WORD[level];
-        }
-        return prev - 1;
-      });
-    }, 1000);
-    return () => clearInterval(t);
-    // eslint-disable-next-line react-hooks/exhaustive-comments
-  }, [round, done, level]);
+  
+    const tick = (t: number) => {
+      const msLeft = Math.max(0, deadlineRef.current - t);
+      const secLeft = msLeft / 1000;
+      setTimeLeft(secLeft);
+  
+      if (msLeft <= 0) {
+        handlePick("__timeout__", false);
+        return;
+      }
+      rafRef.current = requestAnimationFrame(tick);
+    };
+  
+    rafRef.current = requestAnimationFrame(tick);
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, [round, level, done]);
 
   const correct = tokens[i] || "";
   const options = React.useMemo(() => {
@@ -497,12 +512,14 @@ function WebChainQuiz({
           <span className={styles.wordLead}>Next word</span>
           <div className={styles.timerWrap}>
             <div className={styles.timerBg}>
-              <div
+                <div
                 className={styles.timerFill}
-                style={{ width: `${(timeLeft / TIME_PER_WORD[level]) * 100}%` }}
-              />
+                style={{
+                    width: `${Math.max(0, Math.min(1, timeLeft / TIME_PER_WORD[level])) * 100}%`,
+                }}
+                />
             </div>
-            <span className={styles.timerText}>{timeLeft}s</span>
+            <span className={styles.timerText}>{Math.ceil(timeLeft)}s</span>
           </div>
           <div className={styles.scorePill}>
             {score} / {Math.max(1, tokens.length - Math.min(2, tokens.length))}
