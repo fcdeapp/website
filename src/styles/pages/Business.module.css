@@ -805,18 +805,29 @@
 
 /* streaming line: keep on one row for connector accuracy */
 .streamShell { position: relative; }
-.streamBox {
+.streamBox{
   display:block;
-  white-space: normal;     /* ← 줄바꿈 허용 */
-  overflow: visible;       /* ← 스크롤 박스 제거 */
+  white-space: normal;
+  overflow: visible;
   padding-top: 8px;
+
+  line-height: 1.8; /* 줄 간격 확보 */
 }
+
+/* token 하단 여유 추가 (단어들 사이 줄바꿈 됐을 때 간격) */
 .token {
-  display:inline-block; padding:.25rem .42rem; border-radius:10px;
-  background:#f7f7f9; border:1px solid rgba(0,0,0,.05);
-  font-size:.98rem; color:#333; transform: translateY(6px); opacity:0;
+  display:inline-block;
+  padding:.25rem .42rem;
+  border-radius:10px;
+  background:#f7f7f9;
+  border:1px solid rgba(0,0,0,.05);
+  font-size:.98rem;
+  color:#333;
+  transform: translateY(6px);
+  opacity:0;
   transition: transform .28s ease, opacity .28s ease, background .28s ease;
   margin-right: .25rem;
+  margin-bottom: 0.45rem; /* ← 줄바꿈 시 라인 간격 확보 */
 }
 .tokenIn { transform: translateY(0); opacity:1; background:#fff; }
 .tokenGhost { opacity:.35; transform: translateY(6px); }
@@ -850,7 +861,12 @@
 }
 .timerWrap { display:flex; align-items:center; gap:.5rem; }
 .timerBg { width:140px; height:8px; background:#f1f1f4; border-radius:999px; overflow:hidden; }
-.timerFill { height:8px; background:#d8315b; transition: width .9s linear; }
+.timerFill {
+  height: 8px;
+  background: #d8315b;
+  transition: width 1s linear; /* ← 정확히 1초로 맞춤 (setInterval 1000ms와 동기) */
+  will-change: width;
+}
 .timerText { color:#666; font-size:.85rem; min-width: 2.4rem; text-align:right; }
 
 .assembledLine { display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; }
@@ -927,19 +943,19 @@
   filter: drop-shadow(0 1px 2px rgba(216,49,91,.12));
 }
 
-/* 단어 영역 외곽 박스 */
+/* 텍스트 영역 배경을 더 연하게 */
 .streamBoxFrame{
   border:1px solid #f1f2f6;
   border-radius:14px;
   padding:.55rem .8rem;
-  background: linear-gradient(180deg,#fcfcfe 0%, #ffffff 100%);
+  background: linear-gradient(180deg,#f8f9fb 0%, #ffffff 100%); /* 더 연한 톤 */
   box-shadow: inset 0 1px 0 rgba(17,12,43,.02);
   overflow-x:auto;
 }
 
-/* 마지막(활성) 토큰 링 강조 */
+/* 선택된 단어: 연한 핑크 테두리 제거 -> subtle glow/underline만 유지 */
 .tokenActive{
-  border:none;
+  border:none; /* 테두리 제거 */
   box-shadow: 0 6px 18px rgba(17,12,43,.06);
   background: linear-gradient(180deg, #fff 0%, #fff 100%);
   position: relative;
@@ -1002,4 +1018,21 @@
 @keyframes beamSweep{
   0%{ background-position: 200% 0; opacity:.9; }
   100%{ background-position: 0% 0; opacity:1; }
+}
+
+.scanHalo{
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(216,49,91,0.95) 0%, rgba(216,49,91,0.35) 40%, rgba(216,49,91,0.06) 100%);
+  filter: blur(6px);
+  opacity: 0.9;
+  transform-origin: center;
+  animation: haloPulse 1.2s ease-in-out infinite;
+  box-shadow: 0 8px 24px rgba(216,49,91,0.12);
+}
+@keyframes haloPulse {
+  0% { transform: scale(0.8); opacity: 0.7; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.75; }
 }
