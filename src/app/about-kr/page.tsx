@@ -60,88 +60,232 @@ export default function About() {
           <motion.div className={styles.heroImage} variants={zoomIn} />
         </section>
 
-        <section id="why" className={styles.section}>
-          <motion.div className={styles.sectionHeader} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.45 }}>
-            <span className={styles.sectionKicker}>문제</span>
-            <h2 className={styles.sectionTitle}>왜 대부분의 언어 앱은 효과가 없을까</h2>
-            <p className={styles.sectionLead}>
-            대부분의 앱은 미리 만들어진 문장을 일방적으로 제공합니다. 하지만 진짜 유창함은 남의 문장이 아니라, 나만의 순간과 나만의 말에서 나옵니다.
-            </p>
+      {/* ── Why Abrody Exists ───────────────────────────── */}
+      <section id="why" className={stylesB.section}>
+      <motion.div
+        className={stylesB.whyHeader}
+        variants={fadeUp}
+        viewport={{ once: true, amount: 0.45 }}
+      >
+        <span className={stylesB.sectionKicker}>문제</span>
+        <h2 className={stylesB.sectionTitle}>Abrody가 필요한 이유</h2>
+        <p className={stylesB.sectionLead}>
+        대부분의 앱은 정해진 학습 콘텐츠를 일방적으로 제공합니다.  
+        우리는 반대로, 당신의 일상에서 출발해 학습 내용을 만듭니다.
+        </p>
+      </motion.div>
+
+      <motion.div
+        className={stylesB.cards3D}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+      >
+        {[
+          {
+            icon: "↓",
+            title: "최악의 학습 앱 유지율",
+            body: "교육 앱의 30일 유지율은 고작 2.1%. 많은 학습자들이 성과를 느끼기도 전에 포기합니다. — AppsFlyer 2025",
+          },
+          {
+            icon: "≠",
+            title: "공부 ≠ 말하기",
+            body: "문법 문제 풀이와 점수 올리기는 자연스러운 대화를 만들어주지 못합니다. 수년을 투자해도 말할 때 불안은 여전합니다.",
+          },
+          {
+            icon: "₩",
+            title: "많은 비용, 낮은 효과",
+            body: "한국은 매년 약 29.2조 원(약 210억 달러)을 영어에 투자하지만, EF EPI 영어 능력 순위는 50위에 불과합니다.",
+          },
+        ].map((card, i) => (
+          <motion.article
+            key={card.title}
+            className={`${stylesB.card} ${stylesB.statCard}`}
+            variants={fadeUp}
+            custom={i}
+            whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.12)" }}
+          >
+            <span className={stylesB.statBadge} aria-hidden>{card.icon}</span>
+            <h3>{card.title}</h3>
+            <p>{card.body}</p>
+          </motion.article>
+        ))}
+      </motion.div>
+
+
+        {/* ── Differentiators ───────────────────────────── */}
+        <section className={stylesB.sectionAlt}>
+          <motion.h2
+            className={stylesB.sectionTitle}
+            variants={fadeUp}
+            viewport={{ once: true, amount: 0.45 }}
+          >
+            Abrody만의 차별점
+          </motion.h2>
+
+          <motion.div
+            className={stylesB.flipHeader}
+            variants={fadeUp}
+            custom={2}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            <span className={stylesB.flowLabel}>플랫폼 중심</span>
+            <span className={stylesB.flipSwitch} aria-hidden>⇄</span>
+            <span className={`${stylesB.flowLabel} ${stylesB.active}`}>사용자 중심</span>
           </motion.div>
 
-          <motion.div className={styles.diffGrid} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}
-            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}>
+          <motion.p
+            className={stylesB.diffLead}
+            variants={fadeUp}
+            custom={1}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            학습의 방향을 완전히 뒤집었습니다.  
+            Abrody에서는 모든 것이 <strong>사용자</strong>—당신의 상황, 맥락, 말에서 시작됩니다.
+          </motion.p>
+
+          <motion.div
+            className={stylesB.diffGrid}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
+          >
             {[
-              { title: "천편일률적인 학습", body: "정해진 문장과 문제들은 내 삶과 목표에 맞지 않습니다." },
-              { title: "일방향 학습", body: "콘텐츠가 플랫폼에서 사용자에게만 전달되고, 반대 방향의 흐름은 없습니다." },
-              { title: "낮은 학습 지속률", body: "내게 필요한 내용이 아니면 앱을 다시 열지 않게 되고, 실력 향상도 멈춥니다." },
+              {
+                title: "사용자가 시작하는 학습",
+                body: "정해진 커리큘럼이 아니라, 실제 대화와 경험에서 학습이 출발합니다.",
+              },
+              {
+                title: "맥락이 곧 교재",
+                body: "매일 겪는 상황과 의도가 그대로 학습 내용이 되어, 배운 즉시 활용할 수 있습니다.",
+              },
+              {
+                title: "초개인화 학습",
+                body: "내가 한 실수는 곧 퀴즈가 되고, 내가 즐겨 쓰는 표현은 집중 연습으로 이어집니다. 학습은 나에게 꼭 맞게 설계됩니다.",
+              },
+              {
+                title: "AI가 만드는 실시간 피드백",
+                body: "AI가 일상의 순간을 대화, 교정, 복습으로 바꾸어 CTL 방식 루프를 자동으로 완성합니다.",
+              },
+              {
+                title: "게임이 아닌 실력",
+                body: "연속 기록이나 점수가 아니라, 말할 때의 명확성과 자신감을 목표로 합니다.",
+              },
+              {
+                title: "일상에서 성취로",
+                body: "Snap → Chat → Quiz. 생활 속 순간이 학습으로 전환되어 하루하루 실력이 쌓입니다.",
+              },
+              {
+                title: "체인 퀴즈로 깊은 기억",
+                body: "단계적으로 연결된 퀴즈가 학습 흐름을 이어가며, 답할수록 다음 답이 쉬워집니다.",
+              },
+              {
+                title: "문맥 속 어휘 연결",
+                body: "단어를 따로 외우는 대신, 실제 문맥 속에서 연습해 대화할 때 자연스럽게 떠오릅니다.",
+              },              
             ].map((f, i) => (
-              <motion.article key={f.title} className={styles.diffCard} variants={fadeUp} custom={i}
-                whileHover={{ y: -6, boxShadow: "0 18px 38px rgba(17,12,43,.12)" }}>
-                <h3>{f.title}</h3>
+              <motion.article
+                key={f.title}
+                className={stylesB.diffCard}
+                variants={fadeUp}
+                custom={i}
+                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
+              >
+                <h3>
+                  {f.title}
+                </h3>
                 <p>{f.body}</p>
               </motion.article>
             ))}
           </motion.div>
+
+          <motion.p
+            className={stylesB.diffNote}
+            variants={fadeLeft}
+            custom={3}
+            viewport={{ once: true, amount: 0.4 }}
+          >
+              Abrody의 방식은 우리의 목표와 같습니다.
+              일상과 학습을 자연스럽게 연결하고, 연구에서 증명된 CTL 방식으로 언어 실력을 눈에 띄게 끌어올립니다.
+          </motion.p>
         </section>
 
-        <section className={styles.sectionAlt}>
-          <motion.div className={styles.sectionHeader} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.45 }}>
-            <span className={styles.sectionKicker}>Abrody의 방식</span>
-            <h2 className={styles.sectionTitle}>Abrody가 바꾸는 언어 학습</h2>
-            <p className={styles.sectionLead}>
-            우리는 학습의 방향을 바꿉니다. 모든 것이 나의 상황, 맥락, 그리고 내가 쓰는 말에서 시작됩니다.
-            </p>
-          </motion.div>
 
-          <motion.div className={styles.diffGrid} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}
-            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}>
-            {[
-              { title: "사용자 중심 학습", body: "실제 대화가 레슨과 복습의 재료가 됩니다." },
-              { title: "맥락 중심", body: "연습이 내 삶에 연결되어 있어, 바로 말하기로 이어집니다." },
-              { title: "초개인화 학습", body: "내 실수는 맞춤 퀴즈로, 내가 자주 쓰는 말은 집중 연습으로 전환됩니다." },
-              { title: "AI 기반 CTL 학습 루프", body: "AI가 나의 순간을 대화·피드백·퀴즈로 변환해, 학습 효과를 계속 쌓아갑니다." },
-            ].map((f, i) => (
-              <motion.article key={f.title} className={styles.diffCard} variants={fadeUp} custom={i}
-                whileHover={{ y: -6, boxShadow: "0 18px 38px rgba(17,12,43,.12)" }}>
-                <h3>{f.title}</h3>
-                <p>{f.body}</p>
-              </motion.article>
-            ))}
-          </motion.div>
+        <motion.blockquote
+          className={stylesB.quote}
+          variants={fadeLeft}
+          custom={3}
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          CTL 기반 학습은 말하기 명료성을
+          <span className={stylesB.gradientNumber}>54%</span>
+          유창성을
+          <span className={stylesB.gradientNumber}>65%</span> 향상시킵니다.  
+          Abrody는 이 방식을 전 과정에 자동화합니다.
+          <cite className={stylesB.quoteCite}>— Yusyac 외, 2021</cite>
+        </motion.blockquote>
 
-          <motion.div className={styles.ballWrap} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.35 }}>
-            <div className={styles.ballContainer}>
-              {["UKCountryBallX.png","FranceCountryBallX.png","SpainCountryBallX.png","ChinaCountryBallX.png","JapanCountryBallX.png","KoreaCountryBallX.png"]
-                .map((file) => (<CountryBall key={file} src={`/images/${file}`} size={60} />))}
-            </div>
-          </motion.div>
-        </section>
+      </section>
 
-        {/* Section: Future Vision */}
-        <section className={`${styles.sectionAlt} ${styles.futureVisionSection}`}>
-          {/* 카드 그리드 (위) */}
-          <motion.div className={`${styles.flowGrid} ${styles.futureVisionGrid}`} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.35 }}>
-            <div className={styles.flowItem} data-aos="zoom-in-up" data-aos-delay="0">
-              <img src="/images/flow-1.png" alt="Snap & Scenario" className={`${styles.languageImage} ${styles.noCrop}`} />
-              <p className={styles.flowDesc}>사진 한 장으로 나만의 학습 시나리오가 자동 생성됩니다.</p>
-            </div>
-            <div className={styles.flowItem} data-aos="zoom-in-up" data-aos-delay="150">
-              <img src="/images/flow-4.png" alt="AI Chat & Correction" className={`${styles.languageImage} ${styles.noCrop}`} />
-              <p className={styles.flowDesc}>AI 튜터와 대화하며, 실시간 교정을 받아보세요.</p>
-            </div>
-            <div className={styles.flowItem} data-aos="zoom-in-up" data-aos-delay="300">
-              <img src="/images/flow-5.png" alt="Instant Quiz" className={`${styles.languageImage} ${styles.noCrop}`} />
-              <p className={styles.flowDesc}>방금 배운 내용을 퀴즈로 바로 복습하세요.</p>
-            </div>
-          </motion.div>
+      <div className={stylesB.waveSplit} />
 
-          <motion.div className={styles.sectionHeader} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.45 }}>
-            <span className={styles.sectionKicker}>비전</span>
-            <h2 className={styles.sectionTitle}>우리의 비전</h2>
-            <p className={styles.sectionLead}>우리는 친구와 대화하듯 자연스럽게 새로운 언어를 배우는 미래를 만들고 있습니다.</p>
-          </motion.div>
-        </section>
+      <ChainQuizzesSection />
+
+      {/* ── How It Works ───────────────────────────────── */}
+      <section className={stylesB.sectionAlt}>
+        <motion.div
+          className={stylesB.whyHeader}
+          variants={fadeUp}
+          viewport={{ once: true, amount: 0.45 }}
+        >
+          <span className={stylesB.sectionKicker}>학습 흐름</span>
+          <h2 className={stylesB.sectionTitle}>Abrody는 이렇게 작동합니다</h2>
+        </motion.div>
+
+        <div className={stylesB.flowGrid}>
+          {[
+            {
+              kicker: "Snap",
+              img: "/images/flow-1.png",
+              title: "사진으로 상황 만들기",
+              desc: "사진 한 장이면, 그 순간에 맞는 학습 시나리오가 자동 생성됩니다.",
+            },
+            {
+              kicker: "Chat",
+              img: "/images/flow-4.png",
+              title: "AI 대화 & 교정",
+              desc: "AI 튜터와 대화하며 문맥에 맞는 교정을 즉시 받습니다.",
+            },
+            {
+              kicker: "Quiz",
+              img: "/images/flow-5.png",
+              title: "즉시 복습 퀴즈",
+              desc: "방금 배운 내용을 짧고 집중적인 퀴즈로 바로 연습합니다.",
+            },
+          ].map((step, i) => (
+            <motion.div
+              key={i}
+              className={stylesB.flowStep}
+              variants={zoomIn}
+              custom={i}
+            >
+              {/* 작은 칩 — 이미지(또는 제목) 위에 표시 */}
+              <span className={stylesB.stepKicker} aria-hidden>
+                {step.kicker}
+              </span>
+
+              <img src={step.img} alt={step.title} />
+              <h3>{step.title}</h3>
+              <p>{step.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      <div className={stylesB.waveSplitFlip} />
+
       </div>
       <WebFooter />
     </>

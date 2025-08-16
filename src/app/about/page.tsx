@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/About.module.css";
+import stylesB from "../../styles/pages/Business.module.css";
 import WebFooter from "../../components/WebFooter";
 import CountryBall from "../../components/CountryBall";
 
@@ -60,172 +61,240 @@ export default function About() {
           <motion.div className={styles.heroImage} variants={zoomIn} />
         </section>
 
-        <section id="why" className={styles.section}>
-          <motion.div className={styles.sectionHeader} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.45 }}>
-            <span className={styles.sectionKicker}>The Problem</span>
-            <h2 className={styles.sectionTitle}>Why Most Language Apps Don’t Really Work</h2>
-            <p className={styles.sectionLead}>
-              Apps push scripted content at you. But fluency comes from your own moments and words — not someone else’s.
-            </p>
+      {/* ── Why Abrody Exists ───────────────────────────── */}
+      <section id="why" className={stylesB.section}>
+      <motion.div
+        className={stylesB.whyHeader}
+        variants={fadeUp}
+        viewport={{ once: true, amount: 0.45 }}
+      >
+        <span className={stylesB.sectionKicker}>The Problem</span>
+        <h2 className={stylesB.sectionTitle}>Why Abrody Exists</h2>
+        <p className={stylesB.sectionLead}>
+          Traditional apps push scripted content at learners. We start from real life —
+          letting your daily context generate what you practice next.
+        </p>
+      </motion.div>
+
+      <motion.div
+        className={stylesB.cards3D}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+      >
+        {[
+          {
+            icon: "↓",
+            title: "Lowest App Retention",
+            body: "Education apps post the worst 30-day retention (2.1 %). Learners quit before progress. — AppsFlyer 2025",
+          },
+          {
+            icon: "≠",
+            title: "Study ≠ Speaking",
+            body: "Grammar drills and XP rarely yield spontaneous conversation; anxiety stays high even after years of study.",
+          },
+          {
+            icon: "₩",
+            title: "Costly Yet Ineffective",
+            body: "South Korea spends ₩29.2 T (≈ $21 B) annually on English, yet ranks 50th in EF EPI proficiency.",
+          },
+        ].map((card, i) => (
+          <motion.article
+            key={card.title}
+            className={`${stylesB.card} ${stylesB.statCard}`}
+            variants={fadeUp}
+            custom={i}
+            whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.12)" }}
+          >
+            <span className={stylesB.statBadge} aria-hidden>{card.icon}</span>
+            <h3>{card.title}</h3>
+            <p>{card.body}</p>
+          </motion.article>
+        ))}
+      </motion.div>
+
+
+        {/* ── Differentiators ───────────────────────────── */}
+        <section className={stylesB.sectionAlt}>
+          <motion.h2
+            className={stylesB.sectionTitle}
+            variants={fadeUp}
+            viewport={{ once: true, amount: 0.45 }}
+          >
+            What Makes Abrody Different
+          </motion.h2>
+
+          <motion.div
+            className={stylesB.flipHeader}
+            variants={fadeUp}
+            custom={2}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            <span className={stylesB.flowLabel}>Platform → User</span>
+            <span className={stylesB.flipSwitch} aria-hidden>⇄</span>
+            <span className={`${stylesB.flowLabel} ${stylesB.active}`}>User → Platform</span>
           </motion.div>
 
-          <motion.div className={styles.diffGrid} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}
-            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}>
+          <motion.p
+            className={stylesB.diffLead}
+            variants={fadeUp}
+            custom={1}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            We flip the direction of learning. It no longer flows <em>from</em> the platform <em>to</em> the user.
+            With Abrody, everything starts <strong>from you</strong> — your situations, your context, your words.
+          </motion.p>
+
+          <motion.div
+            className={stylesB.diffGrid}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
+          >
             {[
-              { title: "Generic Lessons", body: "Prewritten drills don’t fit your life or goals." },
-              { title: "One-Way Learning", body: "Content flows from platform to user — not the other way around." },
-              { title: "Low Retention", body: "When it’s irrelevant, you stop returning — and stop improving." },
+              {
+                title: "User-Origin Learning",
+                body:
+                  "Real life leads, the platform follows. Lessons are seeded by your own conversations and moments, not scripted drills.",
+              },
+              {
+                title: "Context at the Core",
+                body:
+                  "Situation, intent, and phrasing come from your day-to-day context—so practice instantly feels relevant and transferable.",
+              },
+              {
+                title: "Hyper-Personalization",
+                body:
+                  "Your mistakes become tailored quizzes, your favorite phrases become targeted practice. Progress is personal, not generic.",
+              },
+              {
+                title: "AI-Powered, Not App-Powered",
+                body:
+                  "AI turns your lived moments into dialogues, feedback, and review—automating a CTL-style loop that actually builds fluency.",
+              },
+              {
+                title: "Less Gamification, More Growth",
+                body:
+                  "We optimize for speaking clarity and confidence—not just streaks. Learn in a way that sticks when you talk to real people.",
+              },
+              {
+                title: "From Daily Life to Daily Wins",
+                body:
+                  "Snap → Chat → Quiz, repeatedly—each micro-loop converts life into practice and builds durable skill, day after day.",
+              },
+              {
+                title: "Chain Quizzes for Deeper Recall",
+                body:
+                  "Linked questions guide you step-by-step, mirroring how large language models learn — so each answer strengthens the next.",
+              },
+              {
+                title: "Word Chains That Stick",
+                body:
+                  "Vocabulary connects in context, not isolation. Chained practice weaves words into patterns you’ll actually recall when speaking.",
+              },
             ].map((f, i) => (
-              <motion.article key={f.title} className={styles.diffCard} variants={fadeUp} custom={i}
-                whileHover={{ y: -6, boxShadow: "0 18px 38px rgba(17,12,43,.12)" }}>
-                <h3>{f.title}</h3>
+              <motion.article
+                key={f.title}
+                className={stylesB.diffCard}
+                variants={fadeUp}
+                custom={i}
+                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
+              >
+                <h3>
+                  {f.title}
+                </h3>
                 <p>{f.body}</p>
               </motion.article>
             ))}
           </motion.div>
-        </section>
 
-        <section className={styles.sectionAlt}>
-          <motion.div className={styles.sectionHeader} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.45 }}>
-            <span className={styles.sectionKicker}>Our Approach</span>
-            <h2 className={styles.sectionTitle}>How Abrody Changes Everything</h2>
-            <p className={styles.sectionLead}>
-              We flip the direction of learning: everything starts from you — your situations, context, and words.
-            </p>
-          </motion.div>
-
-          <motion.div className={styles.diffGrid} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}
-            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}>
-            {[
-              { title: "User-Origin Learning", body: "Real conversations seed lessons and reviews." },
-              { title: "Context at the Core", body: "Practice maps to your life, so it transfers to speaking." },
-              { title: "Hyper-Personalization", body: "Your mistakes → targeted quizzes; your phrases → focused practice." },
-              { title: "AI-Powered CTL Loop", body: "AI turns moments into dialogue, feedback, and quizzes that compound." },
-            ].map((f, i) => (
-              <motion.article key={f.title} className={styles.diffCard} variants={fadeUp} custom={i}
-                whileHover={{ y: -6, boxShadow: "0 18px 38px rgba(17,12,43,.12)" }}>
-                <h3>{f.title}</h3>
-                <p>{f.body}</p>
-              </motion.article>
-            ))}
-          </motion.div>
-
-          <motion.div className={styles.ballWrap} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.35 }}>
-            <div className={styles.ballContainer}>
-              {["UKCountryBallX.png","FranceCountryBallX.png","SpainCountryBallX.png","ChinaCountryBallX.png","JapanCountryBallX.png","KoreaCountryBallX.png"]
-                .map((file) => (<CountryBall key={file} src={`/images/${file}`} size={60} />))}
-            </div>
-          </motion.div>
-        </section>
-
-        {/* Section: Our Team */}
-        <section className={styles.section} data-aos="fade-up">
-          <h2 className={styles.center}>Meet the Team</h2>
-          <div className={styles.teamGrid}>
-            <div className={styles.teamCard}>
-              <div className={styles.cardLeft}>
-                <img src="/about/AbrodyWebIcon.png" alt="Doh Jungmin" className={styles.cardAvatar} />
-                <div className={styles.cardInfo}>
-                <h3 className={styles.memberName}>Jungmin Doh</h3>
-                  <p className={styles.memberRole}>
-                    Founder<br/>
-                    & CEO
-                  </p>
-                </div>
-              </div>
-              <div className={styles.cardRight}>
-              <p>
-                “I believe learning should feel like living, not just studying.<br/>
-                As a developer and designer, I built Abrody to finally make language apps as engaging as our daily lives — creative, practical, and genuinely helpful.”
-              </p>
-               <a href="/ceo-profile" className={styles.learnMore}>
-                 Learn more
-               </a>
-              </div>
-            </div>
-            <div className={styles.teamCard}>
-              <div className={styles.cardLeft}>
-                <img src="/about/AbrodyWebIcon.png" alt="Taeyeon Kim" className={styles.cardAvatar} />
-                <div className={styles.cardInfo}>
-                <h3 className={styles.memberName}>Taeyeon Kim</h3>
-                  <p className={styles.memberRole}>
-                    Executive<br/>
-                    Growth · Finance
-                  </p>
-                </div>
-              </div>
-              <div className={styles.cardRight}>
-              <p>
-                “I joined Abrody to help create real value for learners — not vanity metrics.<br/>
-                My background in tech, business, and data helps us reach more people and build a sustainable future together.”
-              </p>
-              </div>
-            </div>
-            <div className={styles.teamCard}>
-              <div className={styles.cardLeft}>
-                <img src="/about/AbrodyWebIcon.png" alt="Chaewon Kim" className={styles.cardAvatar} />
-                <div className={styles.cardInfo}>
-                <h3 className={styles.memberName}>Chaewon Kim</h3>
-                  <p className={styles.memberRole}>
-                    Executive<br/>
-                    Marketing · Content Strategy
-                  </p>
-                </div>
-              </div>
-              <div className={styles.cardRight}>
-                <p>
-                “I believe effective marketing starts with a deep understanding of people and a user-centric approach.<br/>
-                At Abrody, my goal is to craft messaging that reflects real-life language needs, so users feel truly connected to what we build.”
-                </p>
-              </div>
-            </div>
-            {/* Co-Founder & Team Member Recruitment Card */}
-            <div className={styles.teamCard}>
-              <div className={styles.cardLeft}>
-                  <img
-                    src="/about/FoxIconWithoutEyes.png"
-                    alt="Join Our Founding Team"
-                    className={styles.cardAvatar}
-                  />
-                <div className={styles.cardInfo}>
-                <h3 className={styles.memberName}>Join Our Founding Team</h3>
-                  <p className={styles.memberRole}>-</p>
-                </div>
-              </div>
-              <div className={styles.cardRight}>
-                <p>
-                  Abrody is now run by a two-person founding team, and we’re excited to welcome new co-founders or teammates in marketing, design, or development who want to build something meaningful from the ground up with us!
-                </p>
-              </div>
-            </div>
-          </div>
+          <motion.p
+            className={stylesB.diffNote}
+            variants={fadeLeft}
+            custom={3}
+            viewport={{ once: true, amount: 0.4 }}
+          >
+            This user-first, contextual approach aligns with our vision—connecting daily life to language learning—
+            and with research showing CTL can lift speaking clarity and fluency substantially.
+          </motion.p>
         </section>
 
 
-        {/* Section: Future Vision */}
-        <section className={`${styles.sectionAlt} ${styles.futureVisionSection}`}>
-          {/* 카드 그리드 (위) */}
-          <motion.div className={`${styles.flowGrid} ${styles.futureVisionGrid}`} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.35 }}>
-            <div className={styles.flowItem} data-aos="zoom-in-up" data-aos-delay="0">
-              <img src="/images/flow-1.png" alt="Snap & Scenario" className={`${styles.languageImage} ${styles.noCrop}`} />
-              <p className={styles.flowDesc}>Take a photo to automatically build your learning scenario.</p>
-            </div>
-            <div className={styles.flowItem} data-aos="zoom-in-up" data-aos-delay="150">
-              <img src="/images/flow-4.png" alt="AI Chat & Correction" className={`${styles.languageImage} ${styles.noCrop}`} />
-              <p className={styles.flowDesc}>Chat with our AI tutor—get real-time corrections.</p>
-            </div>
-            <div className={styles.flowItem} data-aos="zoom-in-up" data-aos-delay="300">
-              <img src="/images/flow-5.png" alt="Instant Quiz" className={`${styles.languageImage} ${styles.noCrop}`} />
-              <p className={styles.flowDesc}>Jump straight into a quiz to reinforce what you learned.</p>
-            </div>
-          </motion.div>
+        <motion.blockquote
+          className={stylesB.quote}
+          variants={fadeLeft}
+          custom={3}
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          CTL-based instruction lifts speaking clarity by
+          <span className={stylesB.gradientNumber}>54%</span>
+          and fluency by
+          <span className={stylesB.gradientNumber}>65%</span>.
+          Abrody automates CTL everywhere.
+          <cite className={stylesB.quoteCite}>— Yusyac et al., 2021</cite>
+        </motion.blockquote>
 
-          <motion.div className={styles.sectionHeader} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.45 }}>
-            <span className={styles.sectionKicker}>Vision</span>
-            <h2 className={styles.sectionTitle}>Our Vision</h2>
-            <p className={styles.sectionLead}>We're building a future where learning a new language is as natural as chatting with friends.</p>
-          </motion.div>
-        </section>
+      </section>
+
+      <div className={stylesB.waveSplit} />
+
+      <ChainQuizzesSection />
+
+      {/* ── How It Works ───────────────────────────────── */}
+      <section className={stylesB.sectionAlt}>
+        <motion.div
+          className={stylesB.whyHeader}
+          variants={fadeUp}
+          viewport={{ once: true, amount: 0.45 }}
+        >
+          <span className={stylesB.sectionKicker}>Flow</span>
+          <h2 className={stylesB.sectionTitle}>How It Works</h2>
+        </motion.div>
+
+        <div className={stylesB.flowGrid}>
+          {[
+            {
+              kicker: "Snap",
+              img: "/images/flow-1.png",
+              title: "Snap & Scenario",
+              desc: "Take a photo to automatically build a learning scenario from your moment.",
+            },
+            {
+              kicker: "Chat",
+              img: "/images/flow-4.png",
+              title: "AI Chat & Correction",
+              desc: "Chat with our AI tutor and get instant, contextual corrections.",
+            },
+            {
+              kicker: "Quiz",
+              img: "/images/flow-5.png",
+              title: "Instant Quiz",
+              desc: "Practice what you learned in a quick, targeted quiz.",
+            },
+          ].map((step, i) => (
+            <motion.div
+              key={i}
+              className={stylesB.flowStep}
+              variants={zoomIn}
+              custom={i}
+            >
+              {/* 작은 칩 — 이미지(또는 제목) 위에 표시 */}
+              <span className={stylesB.stepKicker} aria-hidden>
+                {step.kicker}
+              </span>
+
+              <img src={step.img} alt={step.title} />
+              <h3>{step.title}</h3>
+              <p>{step.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      <div className={stylesB.waveSplitFlip} />
+
       </div>
       <WebFooter />
     </>
