@@ -93,6 +93,7 @@ const numberVariant: Variants = {
 export default function BusinessPage() {
   const [preview, setPreview] = React.useState<null | { type: "pdf" | "video"; src: string }>(null);
   const [showStatus, setShowStatus] = React.useState(false);
+  const [hoverIdx, setHoverIdx] = React.useState<number | null>(null);
 
   // ============ 데이터 선언 위치 (여기에 있어야 함) ============
   const downloadData = [
@@ -121,6 +122,25 @@ export default function BusinessPage() {
   const minT = Math.min(...downloadData.map(d => toTs(d.date)));
   const maxT = Math.max(...downloadData.map(d => toTs(d.date)));
   const xForTick = (t: number) => padLeft + ((t - minT) / Math.max(1, maxT - minT)) * usableW;
+
+  // [ADD] y 좌표 변환 헬퍼(그래프와 동일 스케일)
+  const yFor = (v: number) => {
+    const topPad = 8;
+    const bottomPad = 8;
+    const rangeV = globalMax - globalMin || 1;
+    const normalized = (v - globalMin) / rangeV;
+    return svgH - (normalized * (svgH - topPad - bottomPad) + bottomPad);
+  };
+
+  // [ADD] 툴팁 위치/데이터 메모
+  const tip = React.useMemo(() => {
+    if (hoverIdx == null) return null;
+    const d = downloadData[hoverIdx];
+    const x = xForTick(toTs(d.date));
+    const y = yFor(d.sum); // 총합 기준으로 툴팁 위치
+    return { x, y, d };
+  }, [hoverIdx, downloadData, xForTick, globalMin, globalMax]);
+
 
   return (
     <motion.main
@@ -427,7 +447,8 @@ export default function BusinessPage() {
           aria-hidden={!showStatus}
         >
           <div className={styles.statusInner}>
-            <div className={styles.chartWrapper}>
+          <div className={styles.chartWrapper}>
+            <div className={styles.chartBox} onMouseLeave={() => setHoverIdx(null)}>
               <svg
                 className={styles.sparklineSvg}
                 viewBox="0 0 600 180"
@@ -436,55 +457,88 @@ export default function BusinessPage() {
                 aria-label="Download counts over time"
               >
                 <defs>
-                <linearGradient id="areaSumGrad" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="0%" stopColor="#fbe9ec" stopOpacity="0.6" />
-                  <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
-                </linearGradient>
+                  <linearGradient id="areaSumGrad" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stopColor="#fbe9ec" stopOpacity="0.6" />
+                    <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
+                  </linearGradient>
                 </defs>
 
-                {/* area for sum (filled) */}
-                <path
-                  d={
-                    // take the path for sum and then close to the bottom along real time axis
-                    `${buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`
-                  }
-                  fill="url(#areaSumGrad)"
-                  className={styles.areaSum}
-                />
-
-                {/* individual lines */}
+                {/* area / lines (기존 그대로) */}
+                <path d={`${buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`} fill="url(#areaSumGrad)" className={styles.areaSum} />
                 <path d={buildPathFromPoints(pointsIos, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineIos} />
                 <path d={buildPathFromPoints(pointsAndroid, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineAndroid} />
                 <path d={buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2.5} className={styles.lineSum} />
 
-                {/* x-axis ticks (dates) --> use timestamp-based xForTick */}
+                {/* x-axis ticks (기존 그대로) */}
                 {downloadData.map((d) => {
                   const x = xForTick(toTs(d.date));
                   return (
                     <g key={d.date}>
                       <line x1={x} x2={x} y1={svgH - 6} y2={svgH - 2} stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
-                      <text
-                        x={x}
-                        y={svgH + 16}
-                        textAnchor="middle"
-                        fontSize="11"
-                        fill="#666"
-                        className={styles.xLabel}
-                      >
+                      <text x={x} y={svgH + 16} textAnchor="middle" fontSize="11" fill="#666" className={styles.xLabel}>
                         {shortLabel(d.date)}
                       </text>
                     </g>
                   );
                 })}
+
+                {/* [ADD] 각 날짜에 투명 히트타겟 (hover 인덱스 설정) */}
+                {downloadData.map((d, i) => {
+                  const x = xForTick(toTs(d.date));
+                  const y = yFor(d.sum);
+                  return (
+                    <g key={`hit-${d.date}`} onMouseEnter={() => setHoverIdx(i)}>
+                      {/* 넓은 히트존: 이동/포커스 안정성 */}
+                      <rect x={x - 12} y={0} width={24} height={svgH} fill="transparent" />
+                      {/* 작게 보이는 포인트(시각적 힌트) */}
+                      <circle cx={x} cy={y} r={hoverIdx === i ? 3 : 2} className={styles.pointSum} />
+                    </g>
+                  );
+                })}
+
+                {/* [ADD] 포커스 라인/포인트 */}
+                {hoverIdx != null && (() => {
+                  const d = downloadData[hoverIdx];
+                  const x = xForTick(toTs(d.date));
+                  const yS = yFor(d.sum);
+                  const yI = yFor(d.ios);
+                  const yA = yFor(d.android);
+                  return (
+                    <g key="focus">
+                      {/* 가이드 라인 */}
+                      <line x1={x} x2={x} y1={8} y2={svgH - 8} className={styles.focusLine} />
+                      {/* 포인트들 */}
+                      <circle cx={x} cy={yI} r={4} className={styles.dotIos} />
+                      <circle cx={x} cy={yA} r={4} className={styles.dotAndroid} />
+                      <circle cx={x} cy={yS} r={5} className={styles.dotSum} />
+                    </g>
+                  );
+                })()}
               </svg>
 
-              {/* legend */}
-              <div className={styles.statusLegend}>
-                <div className={styles.legendItem}><span className={styles.legendSwatchIos} /> iOS</div>
-                <div className={styles.legendItem}><span className={styles.legendSwatchAndroid} /> Android</div>
-                <div className={styles.legendItem}><span className={styles.legendSwatchSum} /> Total</div>
-              </div>
+              {/* [ADD] HTML 툴팁 (절대 배치) */}
+              {tip && (
+                <div
+                  className={styles.chartTooltip}
+                  style={{
+                    left: `calc(${(tip.x / svgW) * 100}% + 8px)`,
+                    top: `${Math.max(0, tip.y - 42)}px`,
+                  }}
+                >
+                  <div className={styles.tipDate}>{shortLabel(tip.d.date)}</div>
+                  <div className={styles.tipRow}><span className={styles.swIos} /> iOS&nbsp;<b>{tip.d.ios}</b></div>
+                  <div className={styles.tipRow}><span className={styles.swAndroid} /> Android&nbsp;<b>{tip.d.android}</b></div>
+                  <div className={styles.tipRow}><span className={styles.swSum} /> Total&nbsp;<b>{tip.d.sum}</b></div>
+                </div>
+              )}
             </div>
+
+            <div className={styles.statusLegend}>
+              <div className={styles.legendItem}><span className={styles.legendSwatchIos} /> iOS</div>
+              <div className={styles.legendItem}><span className={styles.legendSwatchAndroid} /> Android</div>
+              <div className={styles.legendItem}><span className={styles.legendSwatchSum} /> Total</div>
+            </div>
+          </div>
 
             {/* summary line with latest totals */}
             <div className={styles.statusSummary}>

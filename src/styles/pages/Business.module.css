@@ -1374,21 +1374,21 @@
 }
 /* ===== Sparkline colors aligned with brand palette ===== */
 .lineIos {
-  stroke: #f2542d !important;   /* iOS = 브랜드 레드 */
+  stroke: #f2542d !important;
   stroke-linecap: round;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
 }
 
 .lineAndroid {
-  stroke: #ffd46b !important;   /* Android = 웜 오렌지 */
+  stroke: #ff9e80 !important;
   stroke-linecap: round;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
 }
 
 .lineSum {
-  stroke: #d8315b !important;   /* Total = 딥 네이비 */
+  stroke: #d8315b !important;
   stroke-linecap: round;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
@@ -1396,7 +1396,7 @@
 
 /* Legend swatches */
 .legendSwatchIos { background: #f2542d !important; box-shadow: 0 4px 14px rgba(216,49,91,0.12); }
-.legendSwatchAndroid { background: #ffd46b !important; box-shadow: 0 4px 14px rgba(242,84,45,0.12); }
+.legendSwatchAndroid { background: #ff9e80 !important; box-shadow: 0 4px 14px rgba(242,84,45,0.12); }
 .legendSwatchSum { background: #d8315b !important; box-shadow: 0 6px 18px rgba(17,12,43,0.12); }
 
 /* summary below chart */
@@ -1423,3 +1423,67 @@
   .sparklineSvg { height: 140px; }
   .statusSummary { flex-direction: column; align-items:flex-start; gap:.5rem; }
 }
+
+/* [ADD] 차트 오버레이용 컨테이너 */
+.chartBox { position: relative; }
+
+/* [ADD] 포커스 라인/포인트 */
+.focusLine {
+  stroke: rgba(17,12,43,0.18);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 4;
+}
+
+.pointSum {
+  fill: #d8315b;
+  opacity: .25;
+}
+
+.dotIos { fill: #f2542d; stroke: #fff; stroke-width: 2; }
+.dotAndroid { fill: #ff9e80; stroke: #fff; stroke-width: 2; }
+.dotSum { fill: #d8315b; stroke: #fff; stroke-width: 2.5; }
+
+/* [ADD] HTML 툴팁 */
+.chartTooltip{
+  position: absolute;
+  transform: translateY(-8px);
+  background: #fff;
+  border: 1px solid rgba(17,12,43,.08);
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(17,12,43,.10);
+  padding: .6rem .7rem;
+  min-width: 140px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.tipDate{
+  font-weight: 700;
+  color: #110c2b;
+  font-size: .9rem;
+  margin-bottom: .25rem;
+  background: rgba(17,12,43,.04);
+  padding: .18rem .45rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.tipRow{
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  font-size: .92rem;
+  color: #444;
+  line-height: 1.3;
+  margin-top: .15rem;
+}
+
+.tipRow b{ color:#d8315b; }
+
+/* 작은 색상 스와치 */
+.swIos, .swAndroid, .swSum{
+  width: 10px; height: 10px; border-radius: 2px; display: inline-block;
+}
+.swIos{ background:#f2542d; }
+.swAndroid{ background:#ff9e80; }
+.swSum{ background:#d8315b; }
