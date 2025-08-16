@@ -1,5 +1,36 @@
+/* ==== Pretendard only ==== */
+.section,
+.hero,
+.heroInner,
+.sectionKicker,
+.heroTitle,
+.heroSubtitle,
+.scrollHint,
+.faqList,
+.faqCard,
+.cardHead,
+.question,
+.answerWrap,
+.answer,
+.emptyCard,
+.inquiryStrip,
+.inquiryText,
+.btn,
+.btnPrimary,
+.btnGhost,
+.btnLight,
+.skeletonWrap,
+.skeletonCard,
+.modalOverlay,
+.modalBody,
+.modalClose,
+.modalHeader,
+.modalInput,
+.modalActions {
+  font-family: 'Pretendard';
+}
+
 /* ===== Root / Section ===== */
-.container { /* 사용 안함: 페이지 레이아웃은 hero + section 으로 구성 */}
 .section {
   max-width: 78rem;
   margin: 0 auto;
@@ -12,10 +43,7 @@
 }
 
 /* ===== Hero (브랜드 룩) ===== */
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 150% 50%; }
-}
+@keyframes gradientShift { 0% { background-position: 0% 50% } 100% { background-position: 150% 50% } }
 .hero {
   position: relative;
   padding: 8rem 1.25rem 10rem;
@@ -36,10 +64,7 @@
   animation: starScroll 50s linear infinite;
 }
 .starfield::after { animation-direction: reverse; opacity: 0.4; }
-@keyframes starScroll {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-1000px); }
-}
+@keyframes starScroll { from { transform: translateY(0); } to { transform: translateY(-1000px); } }
 .hero::after {
   content: "";
   position: absolute;
@@ -89,16 +114,17 @@
   gap: 1rem;
 }
 
-/* 카드: 그라디언트 보더 유지 */
+/* 카드: 그라디언트 보더 + 일관된 보더 박스 */
 .faqCard {
   position: relative;
   background: #fff;
   border-radius: 18px;
   padding: 1.25rem 1.1rem;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, opacity .2s ease;
   border: 1px solid transparent;
   background-clip: padding-box;
+  opacity: 1; /* AOS와의 충돌 방지 기본값 */
 }
 .faqCard::before {
   content: "";
@@ -113,6 +139,8 @@
 }
 .faqCard:hover { transform: translateY(-3px); box-shadow: 0 14px 28px rgba(0,0,0,0.08); }
 .faqCard:hover::before { background-position: 100% 50%; }
+/* 카드가 열린 상태일 때 살짝 강조 */
+.cardOpen { box-shadow: 0 14px 28px rgba(17,12,43,0.08); }
 
 /* 질문 행 */
 .cardHead {
@@ -121,7 +149,7 @@
 }
 .question {
   font-size: clamp(1rem, 2.4vw, 1.15rem);
-  font-weight: 600;
+  font-weight: 700;
   color: #110c2b;
   margin: 0;
 }
@@ -133,6 +161,17 @@
 }
 .chevOpen { transform: rotate(180deg); }
 
+/* 답변(접힘/펼침 애니메이션) */
+.answerWrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 320ms cubic-bezier(.2,.9,.2,1), opacity 260ms ease, margin-top 260ms ease;
+  opacity: 0;
+  margin-top: 0;
+  will-change: max-height, opacity;
+  overflow-anchor: none; /* 스크롤 앵커로 인한 점프 방지 */
+}
+.open { opacity: 1 !important; margin-top: .6rem; }
 .answer {
   font-size: 0.98rem;
   line-height: 1.7;
@@ -141,11 +180,7 @@
 }
 
 /* ===== 스켈레톤 ===== */
-.skeletonWrap {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
+.skeletonWrap { display: grid; grid-template-columns: 1fr; gap: 1rem; }
 .skeletonCard {
   height: 86px;
   border-radius: 16px;
@@ -154,10 +189,7 @@
   animation: shimmer 1.2s linear infinite;
   box-shadow: 0 6px 18px rgba(0,0,0,0.04);
 }
-@keyframes shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
 
 /* 빈 상태 */
 .emptyCard {
@@ -184,12 +216,12 @@
 }
 .inquiryText {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -.01em;
   opacity: .95;
 }
 
-/* ===== Buttons (브랜드 공통 룩) ===== */
+/* ===== Buttons ===== */
 .btn {
   appearance: none;
   border: none;
@@ -221,7 +253,7 @@
 }
 .btnLight:hover { transform: translateY(-2px); }
 
-/* ===== Modal ===== */
+/* ===== Modal (폼 잘림 방지) ===== */
 .modalOverlay {
   position: fixed; inset: 0;
   background: rgba(0,0,0,.45);
@@ -231,45 +263,59 @@
 .modalBody {
   position: relative;
   width: min(100%, 680px);
-  max-height: min(90vh, 900px);
+  max-height: min(92vh, 820px);   /* 뷰포트 기준 안전 높이 */
   background: #fff;
   border-radius: 18px;
   display: flex; flex-direction: column;
-  overflow: hidden;
+  overflow: auto;                 /* 내부 스크롤로 잘림 방지 */
   box-shadow: 0 30px 80px rgba(0,0,0,.25);
   border: 1px solid rgba(17,12,43,.06);
-  padding-bottom: .75rem;
+  padding: 1rem;                  /* 상하좌우 패딩 */
+  box-sizing: border-box;
 }
 .modalClose {
-  position: absolute; top: .6rem; right: .6rem; z-index: 2;
+  position: sticky; top: 0; align-self: flex-end;
+  margin-left: auto;
   width: 36px; height: 36px; border-radius: 50%;
   border: none; cursor: pointer;
   background: #111; color: #fff;
-  font-size: 16px; line-height: 36px; opacity: .85;
+  font-size: 16px; line-height: 36px; opacity: .9;
   transition: opacity .2s ease, transform .2s ease;
+  z-index: 1;
 }
 .modalClose:hover { opacity: 1; transform: translateY(-1px); }
 .modalHeader {
-  padding: 2rem 1.25rem 0.5rem;
   text-align: center;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #110c2b;
+  margin: .75rem 0 1rem;
 }
 .modalInput {
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.1rem;
   font-size: 1rem;
   border-radius: 12px;
   border: 1px solid #e8e8ef;
   background: #fafafe;
-  color: #333;
-  margin: 0 1rem 1rem;
+  color: #222;
+  margin: 0 0 1rem 0;
   resize: vertical;
-  font-family: 'Pretendard', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  box-sizing: border-box;
+}
+.modalInput::placeholder {
+  color: rgba(17, 12, 43, 0.38);
+  font-style: italic;
+  font-weight: 400;
+  opacity: 1;
+}
+.modalInput:focus {
+  outline: none;
+  border-color: rgba(216,49,91,0.22);
+  box-shadow: 0 10px 24px rgba(216,49,91,0.06);
 }
 .modalActions {
-  display: flex; gap: .6rem; justify-content: flex-end; padding: .6rem 1rem 1rem;
+  display: flex; gap: .6rem; justify-content: flex-end; padding-top: .6rem;
   border-top: 1px solid rgba(17,12,43,.06);
 }
 
@@ -290,34 +336,8 @@
   .btn { width: 100%; text-align: center; }
 }
 
-/* ===== Placeholder 스타일 (입력/텍스트 영역 전역) ===== */
-.modalInput::placeholder,
-.fieldInput::placeholder,
-.fieldTextarea::placeholder {
-  color: rgba(17, 12, 43, 0.38);
-  font-style: italic;
-  font-weight: 400;
-  opacity: 1; /* 일부 브라우저의 기본 placeholder 투명도 덮어쓰기 */
-}
-
-.answerWrap {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 320ms cubic-bezier(.2,.9,.2,1), opacity 260ms ease, margin-top 260ms ease;
-  opacity: 0;
-  margin-top: 0;
-  will-change: max-height, opacity;
-  /* AOS 등 외부 라이브러리로 인한 인라인 opacity 변경에 덮어씌우도록 준비 */
-}
-
-/* 강제 우선순위로 열린 상태의 불투명도 보장 (AOS와 충돌 시 해결) */
-.answerWrap.open {
+/* AOS 충돌 방지: 카드 자체는 항상 표시 */
+.faqCard[data-aos] {
   opacity: 1 !important;
-  margin-top: .6rem;
-  /* max-height는 JS 인라인 스타일로 제어하도록 권장(아래 JS 참고) */
-}
-
-/* 패널 내 텍스트가 순간 사라지는 문제 방지(포인터 이벤트 유지) */
-.answerWrap p {
-  pointer-events: auto;
+  transform: none !important;
 }

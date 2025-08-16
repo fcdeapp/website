@@ -1,4 +1,4 @@
-/* ===== Contact.module.css (no :root variables) ===== */
+/* ===== Contact.module.css (Pretendard only) ===== */
 
 /* ===== Root layout ===== */
 .page {
@@ -7,7 +7,29 @@
   flex-direction: column;
   background: #ffffff;
   color: #11121a;
-  font-family: Pretendard, Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: 'Pretendard';
+}
+
+/* Force key UI elements to use Pretendard explicitly */
+.page,
+.container,
+.hero,
+.kicker,
+.title,
+.lead,
+.infoCard,
+.formCard,
+.infoTitle,
+.infoBody,
+.formTitle,
+.label,
+.input,
+.textarea,
+.btn,
+.actions,
+.primary,
+.ghost {
+  font-family: 'Pretendard';
 }
 
 /* ===== Hero ===== */
@@ -124,8 +146,12 @@
   color: #222;
   background: #fff;
   transition: box-shadow .15s ease, border-color .15s ease;
+  /* ensure Pretendard is used even if element style resets elsewhere */
+  font-family: 'Pretendard';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.input::placeholder, .textarea::placeholder { color: #9aa0a6; font-weight: 400; }
+.input::placeholder, .textarea::placeholder { color: #9aa0a6; font-weight: 400; font-family: 'Pretendard'; }
 .input:focus, .textarea:focus { outline: none; border-color: rgba(216,49,91,0.22); box-shadow: 0 10px 24px rgba(216,49,91,0.06); }
 
 .textarea { min-height: 150px; resize: vertical; }
@@ -135,6 +161,7 @@
 .btn {
   appearance:none; border:none; cursor:pointer; font-weight:700;
   border-radius:12px; padding:.72rem 1rem; transition: transform .16s ease, box-shadow .16s ease;
+  font-family: 'Pretendard';
 }
 .primary {
   color:#fff; background: linear-gradient(135deg, #f2542d, #d8315b);
@@ -167,4 +194,4 @@
 .input:focus, .textarea:focus, .btn:focus { outline: none; box-shadow: 0 12px 30px rgba(17,12,43,0.08); }
 
 /* small helper */
-.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; font-size: .95rem; }
+.mono { font-family: 'Pretendard'; font-size: .95rem; }

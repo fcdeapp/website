@@ -8,7 +8,6 @@ import "aos/dist/aos.css";
 import styles from "../../styles/pages/Faq.module.css";
 import WebFooter from "../../components/WebFooter";
 
-// QnA 항목 타입 선언
 interface QnAItem {
   question: string;
   answer: string;
@@ -23,15 +22,13 @@ export default function Faq() {
   const [inquiryText, setInquiryText] = useState("");
   const [loading, setLoading] = useState<boolean>(true);
 
-  // 다국어 처리(예시: i18n 사용 시) 및 번역 함수는 필요 시 추가하세요.
   const t = (text: string, fallback?: string) => fallback || text;
 
   useEffect(() => {
     AOS.init({ duration: 900, once: true });
-
     const fetchQnA = async () => {
       try {
-        const lang = "en"; // 다국어 적용 시 i18n.language 등을 활용
+        const lang = "en";
         const response = await axios.get(`${SERVER_URL}/api/qna?lang=${lang}`);
         setQnaData(response.data || []);
       } catch (error: any) {
@@ -41,41 +38,43 @@ export default function Faq() {
         setLoading(false);
       }
     };
-
     fetchQnA();
   }, [SERVER_URL]);
 
-// replace existing toggleItem with this
-const toggleItem = (index: number) => {
-  setExpandedItems(prev => {
-    const isOpen = prev.includes(index);
-    const next = isOpen ? prev.filter(i => i !== index) : [...prev, index];
+  // 토글: reflow 후 안전하게 높이/투명도 애니메이션
+  const toggleItem = (index: number) => {
+    setExpandedItems(prev => {
+      const isOpen = prev.includes(index);
+      const next = isOpen ? prev.filter(i => i !== index) : [...prev, index];
 
-    // DOM 업데이트가 반영된 후에 높이 애니메이션을 적용
-    // setTimeout은 microtask 보장(짧은 딜레이) — React 상태 반영 후 DOM 접근
-    setTimeout(() => {
-      const panel = document.getElementById(`faq-panel-${index}`);
-      if (!panel) return;
+      // DOM 업데이트 후 패널 높이 계산
+      requestAnimationFrame(() => {
+        const panel = document.getElementById(`faq-panel-${index}`);
+        if (!panel) return;
 
-      if (!isOpen) {
-        // 열 때: 실제 내용 높이만큼 설정 -> 부드러운 expand
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        panel.style.opacity = "1";
-      } else {
-        // 닫을 때: 높이를 현재 높이로 고정한 뒤 0으로 트랜지션
-        // (레이아웃 점프 방지)
-        panel.style.maxHeight = panel.scrollHeight + "px";
-        // force reflow for reliable transition
-        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-        panel.offsetHeight;
-        panel.style.maxHeight = "0px";
-        panel.style.opacity = "0";
-      }
-    }, 40);
+        // 항상 transition이 적용되도록 한 번 강제 reflow
+        const _ = panel.scrollHeight; // eslint-disable-line @typescript-eslint/no-unused-vars
 
-    return next;
-  });
-};
+        if (!isOpen) {
+          // 열기
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel.style.opacity = "1";
+          panel.classList.add(styles.open);
+        } else {
+          // 닫기
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          // 다음 프레임에 0으로 전환
+          requestAnimationFrame(() => {
+            panel.style.maxHeight = "0px";
+            panel.style.opacity = "0";
+            panel.classList.remove(styles.open);
+          });
+        }
+      });
+
+      return next;
+    });
+  };
 
   const onKeyToggle = (e: React.KeyboardEvent<HTMLDivElement>, index: number) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -89,21 +88,15 @@ const toggleItem = (index: number) => {
       alert(t("error", "Error") + ": " + t("enter_inquiry_text", "Please enter your inquiry."));
       return;
     }
-
     try {
       const response = await axios.post(
         `${SERVER_URL}/report/inquiries`,
-        {
-          reason: inquiryText,
-          type: "inquiry",
-        },
+        { reason: inquiryText, type: "inquiry" },
         { headers: { "Content-Type": "application/json" } }
       );
-
       if (response.status !== 200) {
         throw new Error(response.data?.message || "Failed to submit inquiry");
       }
-
       alert(
         t("inquiry_submitted", "Inquiry submitted") +
           "\n" +
@@ -171,15 +164,13 @@ const toggleItem = (index: number) => {
               return (
                 <div
                   key={index}
-                  className={`${styles.faqCard} ${isOpen ? styles.open : ""}`}
+                  className={`${styles.faqCard} ${isOpen ? styles.cardOpen : ""}`}
                   onClick={() => toggleItem(index)}
                   onKeyDown={(e) => onKeyToggle(e, index)}
                   role="button"
                   tabIndex={0}
                   aria-expanded={isOpen}
                   aria-controls={`faq-panel-${index}`}
-                  data-aos="fade-up"
-                  data-aos-delay={`${index * 60}`}
                 >
                   <div className={styles.cardHead}>
                     <h2 className={styles.question}>{t(item.question, item.question)}</h2>
@@ -203,7 +194,9 @@ const toggleItem = (index: number) => {
 
                   <div
                     id={`faq-panel-${index}`}
-                    className={`${styles.answerWrap} ${isOpen ? styles.open : ""}`}
+                    className={styles.answerWrap}
+                    // 첫 렌더 시 높이 0, 열릴 때 JS로 maxHeight 설정
+                    style={isOpen ? { maxHeight: "1000px", opacity: 1 } : undefined}
                   >
                     <p className={styles.answer}>{t(item.answer, item.answer)}</p>
                   </div>
@@ -221,7 +214,10 @@ const toggleItem = (index: number) => {
               We’re preparing helpful answers. In the meantime, feel free to reach out with
               your questions.
             </p>
-            <button className={`${styles.btn} ${styles.btnPrimary}`} onClick={() => setInquiryVisible(true)}>
+            <button
+              className={`${styles.btn} ${styles.btnPrimary}`}
+              onClick={() => setInquiryVisible(true)}
+            >
               Ask a question
             </button>
           </div>
