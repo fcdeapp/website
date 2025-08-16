@@ -46,103 +46,103 @@ const LANGS: { key: LangKey; label: string }[] = [
 ];
 
 const EXAMPLES: Record<LangKey, Record<CEFR, string>> = {
-  en: {
-    A1: "I like coffee in the morning.",
-    A2: "She usually takes the bus to work.",
-    B1: "We decided to cancel the trip.",
-    B2: "They negotiated better terms for us.",
-    C1: "Her research substantially advances the field.",
-    C2: "The findings defy conventional wisdom entirely.",
-  },
-  fr: {
-    A1: "Je bois du café le matin.",
-    A2: "Elle prend souvent le bus pour aller au travail.",
-    B1: "Nous avons décidé d'annuler le voyage.",
-    B2: "Ils ont négocié de meilleures conditions pour nous.",
-    C1: "Ses recherches font avancer le domaine de manière notable.",
-    C2: "Les résultats remettent entièrement en cause les idées reçues.",
-  },
-  es: {
-    A1: "Me gusta el café por la mañana.",
-    A2: "Ella suele tomar el autobús al trabajo.",
-    B1: "Decidimos cancelar el viaje.",
-    B2: "Negociaron mejores condiciones para nosotros.",
-    C1: "Su investigación avanza el campo de forma notable.",
-    C2: "Los hallazgos desafían por completo la sabiduría convencional.",
-  },
-  zh: {
-    A1: "我早上喜欢喝咖啡。",
-    A2: "她通常坐公交车去上班。",
-    B1: "我们决定取消旅行。",
-    B2: "他们为我们谈判了更好的条件。",
-    C1: "她的研究显著推进了该领域。",
-    C2: "这些发现完全挑战了传统观念。",
-  },
-  ja: {
-    A1: "朝はコーヒーが好きです。",
-    A2: "彼女はふつうバスで会社に行きます。",
-    B1: "私たちは旅行を中止することに決めました。",
-    B2: "彼らは私たちのためにより良い条件を交渉しました。",
-    C1: "彼女の研究はこの分野を大きく前進させています。",
-    C2: "その発見は通説を完全に覆します。",
-  },
-  ko: {
-    A1: "아침에 저는 커피를 좋아해요.",
-    A2: "그녀는 보통 버스를 타고 출근해요.",
-    B1: "우리는 여행을 취소하기로 결정했어요.",
-    B2: "그들은 우리를 위해 더 좋은 조건을 협상했어요.",
-    C1: "그녀의 연구는 이 분야를 크게 발전시킵니다.",
-    C2: "그 발견은 기존 통념을 완전히 뒤엎습니다.",
-  },
-  ar: {
-    A1: "أحب القهوة في الصباح.",
-    A2: "هي عادةً تستقل الحافلة إلى العمل.",
-    B1: "قررنا إلغاء الرحلة.",
-    B2: "تفاوضوا على شروط أفضل لنا.",
-    C1: "بحثها يطوّر المجال بشكل ملحوظ.",
-    C2: "النتائج تتحدى الحكمة التقليدية تمامًا.",
-  },
-  it: {
-    A1: "Mi piace il caffè al mattino.",
-    A2: "Di solito prende l'autobus per andare al lavoro.",
-    B1: "Abbiamo deciso di cancellare il viaggio.",
-    B2: "Hanno negoziato condizioni migliori per noi.",
-    C1: "La sua ricerca fa progredire notevolmente il settore.",
-    C2: "I risultati contraddicono completamente la saggezza comune.",
-  },
-  de: {
-    A1: "Ich mag morgens Kaffee.",
-    A2: "Sie fährt meist mit dem Bus zur Arbeit.",
-    B1: "Wir beschlossen, die Reise abzusagen.",
-    B2: "Sie handelten bessere Bedingungen für uns aus.",
-    C1: "Ihre Forschung treibt das Fachgebiet deutlich voran.",
-    C2: "Die Ergebnisse stellen die gängige Meinung vollständig in Frage.",
-  },
-  pt: {
-    A1: "Eu gosto de café de manhã.",
-    A2: "Ela costuma pegar o ônibus para o trabalho.",
-    B1: "Decidimos cancelar a viagem.",
-    B2: "Eles negociaram condições melhores para nós.",
-    C1: "A pesquisa dela avança a área de forma significativa.",
-    C2: "As descobertas desafiam completamente o senso comum.",
-  },
-  hi: {
-    A1: "मुझे सुबह कॉफ़ी पसंद है।",
-    A2: "वह आमतौर पर बस से काम पर जाती है।",
-    B1: "हमने यात्रा रद्द करने का फैसला किया।",
-    B2: "उन्होंने हमारे लिए बेहतर शर्तों पर बातचीत की।",
-    C1: "उसका शोध इस क्षेत्र को काफ़ी आगे बढ़ाता है।",
-    C2: "निष्कर्ष पारंपरिक मान्यताओं को पूरी तरह चुनौती देते हैं।",
-  },
-  ru: {
-    A1: "Мне нравится кофе по утрам.",
-    A2: "Она обычно ездит на работу на автобусе.",
-    B1: "Мы решили отменить поездку.",
-    B2: "Они договорились о лучших условиях для нас.",
-    C1: "Её исследование существенно продвигает область.",
-    C2: "Выводы полностью опровергают общепринятое мнение.",
-  },
-};
+    en: {
+      A1: "I like coffee in the morning.",
+      A2: "She usually takes the bus to work after breakfast.",
+      B1: "We decided to cancel the trip because the weather looked bad.",
+      B2: "They negotiated better terms for us after comparing several proposals.",
+      C1: "Her research substantially advances the field by revealing previously overlooked patterns.",
+      C2: "The findings, while provisional, thoroughly challenge and reframe long-standing assumptions.",
+    },
+    fr: {
+      A1: "Je bois du café le matin.",
+      A2: "Elle prend souvent le bus pour aller au travail après le petit-déjeuner.",
+      B1: "Nous avons décidé d'annuler le voyage parce que la météo s'annonçait mauvaise.",
+      B2: "Ils ont négocié pour nous de meilleures conditions après avoir comparé plusieurs offres.",
+      C1: "Ses recherches font progresser le domaine en mettant au jour des schémas jusque-là négligés.",
+      C2: "Ces résultats, bien que provisoires, bousculent en profondeur des présupposés de longue date.",
+    },
+    es: {
+      A1: "Me gusta el café por la mañana.",
+      A2: "Ella suele tomar el autobús al trabajo después del desayuno.",
+      B1: "Decidimos cancelar el viaje porque el clima se veía mal.",
+      B2: "Negociaron mejores condiciones para nosotros tras comparar varias ofertas.",
+      C1: "Su investigación impulsa el campo al revelar patrones antes pasados por alto.",
+      C2: "Los hallazgos, aunque provisionales, cuestionan y reconfiguran supuestos arraigados.",
+    },
+    zh: {
+      A1: "我早上喜欢喝咖啡。",
+      A2: "她通常吃完早餐后坐公交车去上班。",
+      B1: "因为天气不好，我们决定取消旅行。",
+      B2: "他们在比较多份方案后为我们谈下了更好的条件。",
+      C1: "她的研究通过揭示以往被忽视的模式，显著推进了该领域。",
+      C2: "这些初步结论全面挑战并重塑了长期以来的既有假设。",
+    },
+    ja: {
+      A1: "朝はコーヒーが好きです。",
+      A2: "彼女は朝食のあと、たいていバスで会社に行きます。",
+      B1: "天気が悪そうだったので、私たちは旅行を中止することにしました。",
+      B2: "いくつかの提案を比較した結果、彼らは私たちに有利な条件を引き出しました。",
+      C1: "彼女の研究は、見過ごされてきたパターンを明らかにすることで分野を大きく前進させています。",
+      C2: "その知見は暫定的ながら、長年の前提を根本から揺さぶり再定義します。",
+    },
+    ko: {
+      A1: "아침에 저는 커피를 좋아해요.",
+      A2: "그녀는 보통 아침을 먹고 버스를 타고 출근해요.",
+      B1: "날씨가 나빠 보였기 때문에 우리는 여행을 취소하기로 했어요.",
+      B2: "여러 제안을 비교한 끝에 그들은 우리에게 더 유리한 조건을 이끌어냈어요.",
+      C1: "그녀의 연구는 그동안 간과되던 패턴을 밝혀내며 분야를 크게 진전시킵니다.",
+      C2: "이 발견은 잠정적이지만 오랜 가정을 근본적으로 재구성합니다.",
+    },
+    ar: {
+      A1: "أحب القهوة في الصباح.",
+      A2: "غالبًا ما تستقل الحافلة إلى العمل بعد الإفطار.",
+      B1: "قررنا إلغاء الرحلة لأن الطقس بدا سيئًا.",
+      B2: "بعد مقارنة عدة عروض، تفاوضوا على شروط أفضل لنا.",
+      C1: "يدفع بحثُها المجال قدمًا بكشف أنماط كانت مُهمَلة من قبل.",
+      C2: "تُعيد هذه النتائج، رغم أنها أولية، تشكيل افتراضات راسخة منذ زمن.",
+    },
+    it: {
+      A1: "Mi piace il caffè al mattino.",
+      A2: "Di solito dopo la colazione prende l'autobus per andare al lavoro.",
+      B1: "Abbiamo deciso di cancellare il viaggio perché il meteo sembrava brutto.",
+      B2: "Dopo aver confrontato varie proposte, hanno negoziato condizioni migliori per noi.",
+      C1: "La sua ricerca fa avanzare il settore rivelando schemi finora trascurati.",
+      C2: "I risultati, sebbene preliminari, mettono profondamente in discussione e ridefiniscono presupposti di lunga data.",
+    },
+    de: {
+      A1: "Ich mag morgens Kaffee.",
+      A2: "Sie fährt nach dem Frühstück meist mit dem Bus zur Arbeit.",
+      B1: "Wir beschlossen, die Reise abzusagen, weil das Wetter schlecht aussah.",
+      B2: "Nach dem Vergleich mehrerer Angebote handelten sie bessere Bedingungen für uns aus.",
+      C1: "Ihre Forschung treibt das Fachgebiet voran, indem sie bislang übersehene Muster aufdeckt.",
+      C2: "Die Ergebnisse, wenngleich vorläufig, stellen langjährige Annahmen grundlegend in Frage und ordnen sie neu.",
+    },
+    pt: {
+      A1: "Eu gosto de café de manhã.",
+      A2: "Ela costuma, após o café da manhã, pegar o ônibus para o trabalho.",
+      B1: "Decidimos cancelar a viagem porque o tempo parecia ruim.",
+      B2: "Depois de comparar várias propostas, negociaram condições melhores para nós.",
+      C1: "A pesquisa dela avança a área ao revelar padrões antes negligenciados.",
+      C2: "As conclusões, ainda preliminares, desafiam e reconfiguram pressupostos de longa data.",
+    },
+    hi: {
+      A1: "मुझे सुबह कॉफ़ी पसंद है।",
+      A2: "वह अक्सर नाश्ते के बाद बस से काम पर जाती है।",
+      B1: "मौसम खराब लगने पर हमने यात्रा रद्द करने का फैसला किया।",
+      B2: "कई प्रस्तावों की तुलना के बाद उन्होंने हमारे लिए बेहतर शर्तें तय कीं।",
+      C1: "उसका शोध, पहले अनदेखे पैटर्न उजागर करके, क्षेत्र को काफ़ी आगे बढ़ाता है।",
+      C2: "ये निष्कर्ष, भले ही प्रारंभिक हों, पुरानी धारणाओं को गहराई से चुनौती देकर पुनर्परिभाषित करते हैं।",
+    },
+    ru: {
+      A1: "Мне нравится кофе по утрам.",
+      A2: "После завтрака она обычно едет на работу на автобусе.",
+      B1: "Мы решили отменить поездку, потому что погода обещала быть плохой.",
+      B2: "Сравнив несколько предложений, они договорились о более выгодных условиях для нас.",
+      C1: "Её исследование продвигает область, выявляя ранее упускаемые закономерности.",
+      C2: "Эти, пусть и предварительные, выводы радикально пересматривают давние предпосылки.",
+    },
+  };  
 
 /* ───────────────────────── Utils ───────────────────────── */
 const isCJK = (lang: LangKey) => lang === "zh" || lang === "ja" || lang === "ko";
@@ -291,7 +291,7 @@ function StreamingSentence({
           return (
             <span
               key={i}
-              ref={(el) => (tokenRefs.current[i] = el)}
+              ref={(el) => { tokenRefs.current[i] = el; }}
               className={`${styles.token} ${visible ? styles.tokenIn : styles.tokenGhost}`}
             >
               {tk}
