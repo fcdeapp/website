@@ -241,44 +241,51 @@ function Connector({
   
     if (!path) return null;
   
+    /* Connector의 return 내부만 이 부분으로 바꿔주세요 */
     return (
-      <motion.svg
+        <motion.svg
         className={styles.connectorSvg}
         aria-hidden
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         style={{ pointerEvents: "none" }}
-      >
+        >
         <defs>
-          <linearGradient
+            <linearGradient
             id={`chainGrad-${gid}`}
             gradientUnits="userSpaceOnUse"
             x1={grad?.x1 ?? 0}
             y1={grad?.y1 ?? 0}
             x2={grad?.x2 ?? 0}
             y2={grad?.y2 ?? 0}
-          >
+            >
             <stop offset="0%" stopColor="#f2542d" />
             <stop offset="100%" stopColor="#d8315b" />
-          </linearGradient>
+            </linearGradient>
         </defs>
-  
+    
         {/* 베이스 라인 */}
-        <motion.path d={path} className={styles.connectorBase} />
-  
-        {/* 하이라이트(경로 일부가 채워지는 애니메이션) */}
         <motion.path
-          d={path}
-          className={styles.connectorHighlight}
-          stroke={`url(#chainGrad-${gid})`}
-          initial={{ pathLength: 0.3, pathOffset: 1 }}
-          animate={{ pathLength: 0.3, pathOffset: 0 }}
-          exit={{ pathLength: 0.3, pathOffset: 0.2, opacity: 0 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
+            d={path}
+            className={styles.connectorBase}
+            pathLength={1}
+        />
+    
+        {/* 경로 일부가 앞으로 "흘러가는" 하이라이트 */}
+        <motion.path
+            key={`hl-${path}`}                 // ← path가 바뀔 때마다 재생
+            d={path}
+            className={styles.connectorHighlight}
+            stroke={`url(#chainGrad-${gid})`}
+            pathLength={1}                      // ← 정규화
+            initial={{ pathLength: 0.32, pathOffset: 1 }}
+            animate={{ pathLength: 0.32, pathOffset: 0 }}
+            exit={{ pathLength: 0.32, pathOffset: 0.2, opacity: 0 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
         />
       </motion.svg>
-    );
+    );  
   }  
   
 /* ───────────────────────── Streaming sentence ───────────────────────── */
@@ -343,22 +350,20 @@ function StreamingSentence({
           <Connector fromEl={lastFrom} toEl={lastTo} host={shellRef.current} />
         )}
     
-        <motion.div
-            className={styles.streamIndicator}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{
-                opacity: indicatorPos ? 1 : 0,
-                left: indicatorPos ? indicatorPos.x : 0,
-                top: indicatorPos ? indicatorPos.y - 6 : 0,
-                scale: indicatorPos ? 1 : 0.8,
-            }}
-            transition={{ type: "spring", stiffness: 280, damping: 28 }}
-            aria-hidden
-            >
-            <span className={styles.pulseDot} />
-            <span className={styles.pulseDot} />
-            <span className={styles.pulseDot} />
-        </motion.div>
+    <motion.div
+    className={styles.streamIndicator}
+    initial={{ opacity: 0, scale: 0.9 }}
+    animate={{
+        opacity: indicatorPos ? 1 : 0,
+        left: indicatorPos ? indicatorPos.x : 0,
+        top: indicatorPos ? indicatorPos.y - 6 : 0,
+        scale: indicatorPos ? 1 : 0.9,
+    }}
+    transition={{ type: "spring", stiffness: 280, damping: 26 }}
+    aria-hidden
+    >
+    <span className={styles.scanBeam} />
+    </motion.div>
   
   <div className={styles.streamBoxFrame}>
     <div className={styles.streamBox}>

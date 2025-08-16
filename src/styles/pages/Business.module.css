@@ -927,58 +927,55 @@
   filter: drop-shadow(0 1px 2px rgba(216,49,91,.12));
 }
 
-/* 진행 인디케이터 (토큰 우측의 동그라미 형태) */
-.streamIndicator {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #ff6b8a, #d8315b);
-  box-shadow: 0 6px 18px rgba(216,49,91,.12);
-  transform: translate(-50%, -50%);
-  z-index: 22;
-  pointer-events: none;
-}
-
 /* 단어 영역 외곽 박스 */
 .streamBoxFrame{
-  border:1px solid #ececf1;
+  border:1px solid #f1f2f6;
   border-radius:14px;
   padding:.55rem .8rem;
-  background: linear-gradient(180deg,#fafbff 0%, #ffffff 100%);
-  box-shadow: inset 0 1px 0 rgba(17,12,43,.03);
-  overflow-x:auto; /* 긴 문장 대응 */
+  background: linear-gradient(180deg,#fcfcfe 0%, #ffffff 100%);
+  box-shadow: inset 0 1px 0 rgba(17,12,43,.02);
+  overflow-x:auto;
 }
 
 /* 마지막(활성) 토큰 링 강조 */
 .tokenActive{
-  box-shadow: 0 0 0 2px rgba(216,49,91,.18), 0 8px 22px rgba(17,12,43,.06);
-  border:1px solid rgba(17,12,43,.08);
+  border:none;
+  box-shadow: 0 6px 18px rgba(17,12,43,.06);
+  background: linear-gradient(180deg, #fff 0%, #fff 100%);
+  position: relative;
+}
+.tokenActive::after{
+  content:"";
+  position:absolute;
+  left:10%; right:10%; bottom:2px; height:2px;
+  border-radius:999px;
+  background: linear-gradient(90deg,#f2542d, #d8315b);
+  opacity:.6;
 }
 
-/* 커넥터: 베이스/하이라이트 분리 */
+/* 선 베이스를 더 은은하게 */
 .connectorBase{
   fill:none;
-  stroke: rgba(17,12,43,.12);
+  stroke: rgba(17,12,43,.10);
   stroke-width: 2;
   stroke-linecap: round;
 }
 
+/* 하이라이트는 살짝 두껍고 광택 */
 .connectorHighlight{
   fill:none;
-  stroke-width: 2.4;
+  stroke-width: 2.6;
   stroke-linecap: round;
-  filter: drop-shadow(0 1px 3px rgba(216,49,91,.18));
+  filter: drop-shadow(0 1px 3px rgba(216,49,91,.22));
 }
 
-/* 3점 펄스 인디케이터 */
 .streamIndicator{
-  position: absolute;
+  position:absolute;
   transform: translate(-50%, -50%);
-  display:flex;
-  gap:3px;
   z-index:22;
   pointer-events:none;
+  width:28px; height:10px;          /* 캡슐 느낌 */
+  display:flex; align-items:center; justify-content:center;
 }
 .pulseDot{
   width:6px; height:6px; border-radius:999px;
@@ -991,4 +988,18 @@
 @keyframes pulseDot{
   0%,80%,100%{ transform: scale(.6); opacity:.35; }
   40%{ transform: scale(1); opacity:1; }
+}
+
+.scanBeam{
+  width:100%; height:4px; border-radius:999px;
+  background: linear-gradient(90deg, rgba(242,84,45,0) 0%,
+    rgba(242,84,45,.9) 25%, rgba(216,49,91,.95) 50%,
+    rgba(242,84,45,.9) 75%, rgba(216,49,91,0) 100%);
+  background-size:200% 100%;
+  animation: beamSweep 1.1s linear infinite;
+  filter: drop-shadow(0 2px 6px rgba(216,49,91,.20));
+}
+@keyframes beamSweep{
+  0%{ background-position: 200% 0; opacity:.9; }
+  100%{ background-position: 0% 0; opacity:1; }
 }
