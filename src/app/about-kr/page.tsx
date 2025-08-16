@@ -9,6 +9,7 @@ import styles from "../../styles/pages/About.module.css";
 import stylesB from "../../styles/pages/Business.module.css";
 import WebFooter from "../../components/WebFooter";
 import CountryBall from "../../components/CountryBall";
+import ChainQuizzesSection from "../../components/ChainQuizzesSection";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
