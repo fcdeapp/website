@@ -80,13 +80,7 @@ export default function Profile() {
             custom={2}
             viewport={{ once: true, amount: 0.6 }}
           >
-            <a
-              className={styles.metaChip}
-              href="mailto:tommydoh@snu.ac.kr"
-              title="Email"
-            >
-              tommydoh@snu.ac.kr
-            </a>
+            <span className={styles.metaChip}>tommydoh@snu.ac.kr</span>
             <span className={styles.metaChip}>+82 10-6854-9906</span>
             <span className={styles.metaChip}>Seocho-gu, Seoul</span>
           </motion.div>
@@ -126,11 +120,7 @@ export default function Profile() {
             {[
               {
                 title: "Email",
-                body: (
-                  <>
-                    <a href="mailto:tommydoh@snu.ac.kr">tommydoh@snu.ac.kr</a>
-                  </>
-                ),
+                body: <>tommydoh@snu.ac.kr</>,
               },
               { title: "Phone", body: <>+82 10-6854-9906</> },
               { title: "Location", body: <>Seocho-gu, Seoul</> },
