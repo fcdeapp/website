@@ -212,6 +212,16 @@ export default function BusinessPage() {
                 body:
                   "Snap → Chat → Quiz, repeatedly—each micro-loop converts life into practice and builds durable skill, day after day.",
               },
+              {
+                title: "Chain Quizzes for Deeper Recall",
+                body:
+                  "Linked questions guide you step-by-step, mirroring how large language models learn — so each answer strengthens the next.",
+              },
+              {
+                title: "Word Chains That Stick",
+                body:
+                  "Vocabulary connects in context, not isolation. Chained practice weaves words into patterns you’ll actually recall when speaking.",
+              },
             ].map((f, i) => (
               <motion.article
                 key={f.title}
