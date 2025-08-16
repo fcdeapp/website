@@ -1,242 +1,304 @@
-/* Global Container & Typography */
-.container {
-    min-height: 100vh;
-    background-color: #FFF;
-    color: #120C3A;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-  }
-  
-  /* Header Section */
-  .headerSection {
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-  
-  .headerTitle {
-    font-size: 1.6rem;
-    font-weight: 500;
-    letter-spacing: -0.04em;
-    margin-bottom: 1rem;
-  }
-  
-  .headerSubtitle {
-    font-size: 1.25rem;
-    color: #555;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  /* Main Content */
-  .mainContent {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  /* FAQ Card */
-  .card {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
-  }
-  
-  .question {
-    font-size: 1.1rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-  }
-  
-  .answer {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #424242;
-  }
-  
-  /* Inquiry Button Section */
-  .inquirySection {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  
-  .inquiryButton {
-    display: inline-flex;
-    align-items: center;
-    padding: 1rem 2rem;
-    border: 0.5px solid #ccc;
-    border-radius: 30px;
-    background-color: #fff;
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: #555;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .inquiryButton:hover {
-    transform: translateY(-3px);
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 0.5rem;
-  }
-  
-  /* Footer */
-  .footer {
-    text-align: center;
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .footerContainer {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-  }
-  
-  .footerLink {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #120C3A;
-    transition: color 0.3s ease;
-  }
-  
-  .footerLink:hover {
-    color: #3c5afe;
-  }
-  
-  .footerCopyright {
-    font-size: 0.8rem;
-    color: #777;
-  }
-  
-  /* Modal Overlay & Container */
-  .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    padding: 1rem;
-  }
-  
-  .modalContainer {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 2rem;
-    width: 100%;
-    max-width: 500px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Modal Header & Input */
-  .modalHeader {
-    font-size: 1.25rem;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .modalInput {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
-    background-color: #fafafe;
-    color: #424242;
-    margin-bottom: 1.5rem;
-    resize: vertical;
-    font-family: 'Pretendard';
-  }
-  
-  /* Modal Buttons */
-  .modalButtonContainer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .primaryButton {
-    background: linear-gradient(90deg, #ff7e5f, #fd3a69);
-    border: none;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 400;
-    transition: transform 0.3s ease;
-  }
-  
-  .primaryButton:hover {
-    transform: translateY(-3px);
-  }
-  
-  .cancelButton {
-    background-color: #121212;
-    border: none;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 400;
-    transition: transform 0.3s ease;
-  }
-  
-  .cancelButton:hover {
-    transform: translateY(-3px);
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .headerTitle {
-      font-size: 1.2rem;
-    }
-  
-    .headerSubtitle {
-      font-size: 0.9rem;
-      padding: 0 1rem;
-    }
-  
-    .card {
-      padding: 1.5rem;
-    }
-  
-    .question {
-      font-size: 0.85rem;
-    }
-  
-    .answer {
-      font-size: 0.7rem;
-    }
-  
-    .inquiryButton {
-      font-size: 0.7rem;
-      padding: 0.8rem 1.5rem;
-    }
-  }
-  
+/* ===== Root / Section ===== */
+.container { /* 사용 안함: 페이지 레이아웃은 hero + section 으로 구성 */}
+.section {
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 4.5rem 1.25rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #ffffff;
+  color: #120C3A;
+}
+
+/* ===== Hero (브랜드 룩) ===== */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 150% 50%; }
+}
+.hero {
+  position: relative;
+  padding: 8rem 1.25rem 10rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 12s ease-in-out infinite;
+  overflow: hidden;
+}
+.starfield::before,
+.starfield::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#ffffff33 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+  animation: starScroll 50s linear infinite;
+}
+.starfield::after { animation-direction: reverse; opacity: 0.4; }
+@keyframes starScroll {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-1000px); }
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; left: 0; width: 100%; height: 90px;
+  background: #ffffff;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.heroInner { position: relative; z-index: 1; max-width: 56rem; margin: 0 auto; }
+.sectionKicker {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(255,255,255,0.16);
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.26);
+}
+.heroTitle {
+  font-size: clamp(2.1rem, 6vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin: 0.2rem 0 0.5rem;
+}
+.heroSubtitle {
+  margin: 0 auto;
+  opacity: .92;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  max-width: 44rem;
+}
+.scrollHint {
+  display: inline-block;
+  margin-top: 2.6rem;
+  color: #fff;
+  opacity: .9;
+  text-decoration: none;
+  transition: transform .25s ease;
+}
+.scrollHint:hover { transform: translateY(3px); }
+
+/* ===== FAQ List ===== */
+.faqList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* 카드: 그라디언트 보더 유지 */
+.faqCard {
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.25rem 1.1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+.faqCard::before {
+  content: "";
+  position: absolute; inset: -1px; border-radius: inherit; padding: 1px;
+  background: linear-gradient(90deg, #ffd36e, #ff8a5c, #d8315b);
+  background-size: 200% 100%;
+  background-position: 0% 50%;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  pointer-events: none;
+  transition: background-position .45s ease;
+}
+.faqCard:hover { transform: translateY(-3px); box-shadow: 0 14px 28px rgba(0,0,0,0.08); }
+.faqCard:hover::before { background-position: 100% 50%; }
+
+/* 질문 행 */
+.cardHead {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: .75rem;
+}
+.question {
+  font-size: clamp(1rem, 2.4vw, 1.15rem);
+  font-weight: 600;
+  color: #110c2b;
+  margin: 0;
+}
+.chev {
+  flex: none;
+  color: #d8315b;
+  opacity: .9;
+  transition: transform .25s ease, opacity .25s ease;
+}
+.chevOpen { transform: rotate(180deg); }
+
+/* 답변(접힘/펼침 애니메이션) */
+.answerWrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .34s ease, opacity .3s ease, margin-top .3s ease;
+  opacity: 0;
+  margin-top: 0;
+}
+.answerWrap.open {
+  max-height: 500px; /* 충분히 크게 */
+  opacity: 1;
+  margin-top: .6rem;
+}
+.answer {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+}
+
+/* ===== 스켈레톤 ===== */
+.skeletonWrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.skeletonCard {
+  height: 86px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #f6f7fb 0%, #eef0f7 50%, #f6f7fb 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s linear infinite;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* 빈 상태 */
+.emptyCard {
+  text-align: center;
+  border: 1px solid rgba(17,12,43,.06);
+  border-radius: 18px;
+  padding: 2rem 1.25rem;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(17,12,43,.06);
+}
+.emptyCard h3 { margin: 0 0 .4rem; font-weight: 700; color: #110c2b; }
+.emptyCard p { margin: 0 0 .9rem; color: #555; }
+
+/* ===== CTA 스트립 ===== */
+.inquiryStrip {
+  margin-top: 1rem;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap;
+  border-radius: 16px;
+  padding: 1rem 1rem;
+  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
+  box-shadow: 0 10px 24px rgba(17,12,43,.06);
+  color: #fff;
+}
+.inquiryText {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -.01em;
+  opacity: .95;
+}
+
+/* ===== Buttons (브랜드 공통 룩) ===== */
+.btn {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 14px;
+  padding: .75rem 1.1rem;
+  line-height: 1;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, opacity .2s ease;
+}
+.btnPrimary {
+  color: #fff;
+  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
+  box-shadow: 0 10px 20px rgba(216,49,91,.18);
+}
+.btnPrimary:hover { transform: translateY(-2px); }
+.btnGhost {
+  color: #110c2b;
+  background: #fff;
+  border: 1px solid rgba(17,12,43,.12);
+}
+.btnGhost:hover { transform: translateY(-2px); }
+.btnLight {
+  color: #d8315b;
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(255,255,255,0.6);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+.btnLight:hover { transform: translateY(-2px); }
+
+/* ===== Modal ===== */
+.modalOverlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.45);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9999; padding: 1rem;
+}
+.modalBody {
+  position: relative;
+  width: min(100%, 680px);
+  max-height: min(90vh, 900px);
+  background: #fff;
+  border-radius: 18px;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,.25);
+  border: 1px solid rgba(17,12,43,.06);
+  padding-bottom: .75rem;
+}
+.modalClose {
+  position: absolute; top: .6rem; right: .6rem; z-index: 2;
+  width: 36px; height: 36px; border-radius: 50%;
+  border: none; cursor: pointer;
+  background: #111; color: #fff;
+  font-size: 16px; line-height: 36px; opacity: .85;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.modalClose:hover { opacity: 1; transform: translateY(-1px); }
+.modalHeader {
+  padding: 2rem 1.25rem 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #110c2b;
+}
+.modalInput {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #e8e8ef;
+  background: #fafafe;
+  color: #333;
+  margin: 0 1rem 1rem;
+  resize: vertical;
+  font-family: 'Pretendard', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+.modalActions {
+  display: flex; gap: .6rem; justify-content: flex-end; padding: .6rem 1rem 1rem;
+  border-top: 1px solid rgba(17,12,43,.06);
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 900px) {
+  .heroSubtitle { font-size: 1.2rem; }
+}
+@media (max-width: 900px) {
+  .inquiryStrip { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 680px) {
+  .hero { padding: 7rem 1rem 9rem; }
+  .answer { font-size: .95rem; }
+}
+@media (max-width: 480px) {
+  .question { font-size: 1rem; }
+  .inquiryText { font-size: .95rem; }
+  .btn { width: 100%; text-align: center; }
+}
