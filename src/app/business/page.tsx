@@ -47,6 +47,7 @@ export default function BusinessPage() {
   const [preview, setPreview] = React.useState<null | { type: "pdf" | "video"; src: string }>(null);
   const [showStatus, setShowStatus] = React.useState(false);
 
+  // ============ 데이터 선언 위치 (여기에 있어야 함) ============
   const downloadData = [
     { date: "2024-06-16", ios: 16, android: 5, sum: 21 },
     { date: "2024-07-01", ios: 51, android: 6, sum: 57 },
@@ -55,29 +56,72 @@ export default function BusinessPage() {
     { date: "2024-08-16", ios: 328, android: 25, sum: 353 },
   ];
 
-  // helper: readable label (e.g., "6/16")
-  const shortLabel = (isoDate: string) => {
-    const d = new Date(isoDate);
-    return `${d.getMonth() + 1}/${d.getDate()}`;
+  // prepare points + global scale (AFTER downloadData and toTs/buildPathFromPoints are defined)
+  const pointsSum = downloadData.map(d => ({ t: toTs(d.date), v: d.sum }));
+  const pointsIos = downloadData.map(d => ({ t: toTs(d.date), v: d.ios }));
+  const pointsAndroid = downloadData.map(d => ({ t: toTs(d.date), v: d.android }));
+
+  const allVals = downloadData.flatMap(d => [d.ios, d.android, d.sum]);
+  const globalMin = Math.min(...allVals);
+  const globalMax = Math.max(...allVals);
+
+  // helpers for tick positions
+  const padLeft = 20;
+  const padRight = 20;
+  const svgW = 600;
+  const svgH = 160;
+  const usableW = svgW - padLeft - padRight;
+  const minT = Math.min(...downloadData.map(d => toTs(d.date)));
+  const maxT = Math.max(...downloadData.map(d => toTs(d.date)));
+  const xForTick = (t: number) => padLeft + ((t - minT) / Math.max(1, maxT - minT)) * usableW;
+
+
+// place these BEFORE you compute points or use them
+// helper: readable label (e.g., "6/16")
+const shortLabel = (isoDate: string) => {
+  const d = new Date(isoDate);
+  return `${d.getMonth() + 1}/${d.getDate()}`;
+};
+
+// new helper: convert ISO date -> timestamp (ms)
+const toTs = (iso: string) => new Date(iso).getTime();
+
+// buildPath: points = [{t: number (ms), v: number}, ...]
+// scales x by timestamp (actual spacing), scales y by given globalMin/globalMax
+const buildPathFromPoints = (
+  points: { t: number; v: number }[],
+  w = 600,
+  h = 160,
+  padLeft = 20,
+  padRight = 20,
+  globalMin?: number,
+  globalMax?: number
+) => {
+  if (!points || points.length === 0) return "";
+
+  const times = points.map((p) => p.t);
+  const vals = points.map((p) => p.v);
+
+  const minT = Math.min(...times);
+  const maxT = Math.max(...times);
+  const minV = globalMin !== undefined ? globalMin : Math.min(...vals);
+  const maxV = globalMax !== undefined ? globalMax : Math.max(...vals);
+  const rangeV = maxV - minV || 1;
+  const usableW = Math.max(1, w - padLeft - padRight);
+
+  const xFor = (t: number) =>
+    padLeft + ((t - minT) / Math.max(1, maxT - minT)) * usableW;
+  const yFor = (v: number) => {
+    const topPad = 8;
+    const bottomPad = 8;
+    const normalized = (v - minV) / rangeV;
+    return h - (normalized * (h - topPad - bottomPad) + bottomPad);
   };
 
-  // helper: build svg path 'd' for a series
-  const buildPath = (values: number[], w = 600, h = 160, padLeft = 20, padRight = 20) => {
-    if (!values || values.length === 0) return "";
-    const min = Math.min(...values);
-    const max = Math.max(...values);
-    const range = max - min || 1;
-    const n = values.length;
-    const usableW = Math.max(1, w - padLeft - padRight);
-    const xFor = (i: number) => padLeft + (i / (n - 1)) * usableW;
-    const yFor = (v: number) => {
-      const normalized = (v - min) / range;
-      return h - normalized * (h - 24) - 8; // top/bottom padding
-    };
-    return values
-      .map((v, i) => `${i === 0 ? "M" : "L"} ${xFor(i).toFixed(2)} ${yFor(v).toFixed(2)}`)
-      .join(" ");
-  };
+  return points
+    .map((p, i) => `${i === 0 ? "M" : "L"} ${xFor(p.t).toFixed(2)} ${yFor(p.v).toFixed(2)}`)
+    .join(" ");
+};
 
   return (
     <motion.main
@@ -393,52 +437,36 @@ export default function BusinessPage() {
                 aria-label="Download counts over time"
               >
                 <defs>
-                  <linearGradient id="areaSumGrad" x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="0%" stopColor="#ffd7d9" stopOpacity="0.95" />
-                    <stop offset="100%" stopColor="#fff" stopOpacity="0.0" />
-                  </linearGradient>
+                <linearGradient id="areaSumGrad" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0%" stopColor="#fbe9ec" stopOpacity="0.6" />
+                  <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
+                </linearGradient>
                 </defs>
 
                 {/* area for sum (filled) */}
                 <path
-                  d={`${buildPath(downloadData.map(d => d.sum), 600, 160)} L ${600 - 20} ${160 - 8} L 20 ${160 - 8} Z`}
+                  d={
+                    // take the path for sum and then close to the bottom along real time axis
+                    `${buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`
+                  }
                   fill="url(#areaSumGrad)"
                   className={styles.areaSum}
                 />
 
-                {/* lines: ios, android, sum */}
-                <path
-                  d={buildPath(downloadData.map(d => d.ios), 600, 160)}
-                  fill="none"
-                  strokeWidth={2}
-                  className={styles.lineIos}
-                />
-                <path
-                  d={buildPath(downloadData.map(d => d.android), 600, 160)}
-                  fill="none"
-                  strokeWidth={2}
-                  className={styles.lineAndroid}
-                />
-                <path
-                  d={buildPath(downloadData.map(d => d.sum), 600, 160)}
-                  fill="none"
-                  strokeWidth={2.5}
-                  className={styles.lineSum}
-                />
+                {/* individual lines */}
+                <path d={buildPathFromPoints(pointsIos, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineIos} />
+                <path d={buildPathFromPoints(pointsAndroid, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineAndroid} />
+                <path d={buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2.5} className={styles.lineSum} />
 
-                {/* x-axis ticks (dates) */}
-                {downloadData.map((d, i) => {
-                  const n = downloadData.length;
-                  const padLeft = 20;
-                  const padRight = 20;
-                  const usableW = 600 - padLeft - padRight;
-                  const x = padLeft + (i / (n - 1)) * usableW;
+                {/* x-axis ticks (dates) --> use timestamp-based xForTick */}
+                {downloadData.map((d) => {
+                  const x = xForTick(toTs(d.date));
                   return (
                     <g key={d.date}>
-                      <line x1={x} x2={x} y1={160 - 6} y2={160 - 2} stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
+                      <line x1={x} x2={x} y1={svgH - 6} y2={svgH - 2} stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
                       <text
                         x={x}
-                        y={176}
+                        y={svgH + 16}
                         textAnchor="middle"
                         fontSize="11"
                         fill="#666"
