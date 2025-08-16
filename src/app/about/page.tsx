@@ -11,6 +11,7 @@ import stylesC from "../../styles/Home.module.css";
 import WebFooter from "../../components/WebFooter";
 import CountryBall from "../../components/CountryBall";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
+import AOS from "aos";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -39,6 +40,18 @@ const zoomIn: Variants = {
 
 
 export default function About() {
+
+  useEffect(() => {
+    // AOS 초기화 (클라이언트에서만 실행)
+    AOS.init({
+      once: true,          // 한 번만 애니메이션
+      duration: 700,       // 0.7s
+      easing: "ease-out",
+      offset: 80,          // 트리거 오프셋
+    });
+    // 콘텐츠/이미지 로드 후 레이아웃 바뀌면 다시 계산
+    AOS.refresh();
+  }, []);
 
   return (
     <>
