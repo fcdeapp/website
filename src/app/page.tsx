@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import styles from "../styles/Home.module.css";
 import WebFooter from "../components/WebFooter";
 import RecordingModal from "../components/RecordingModal";
+import ChainQuizzesSection from "../components/ChainQuizzesSection";
 
 type CarouselItem = {
   label: string;
@@ -179,6 +180,8 @@ export default function Home() {
             </motion.div>
           ))}
         </motion.div>
+
+        <ChainQuizzesSection />
 
           {/* App Demo Videos */}
           <section className={styles.section} data-aos="fade-up">
