@@ -591,6 +591,7 @@ export function ChainQuizzesSection() {
 
   return (
     <section id="chain-quizzes" className={styles.sectionAlt}>
+        <span className={styles.sectionKicker}>Practice</span>
       <motion.h2
         className={styles.sectionTitle}
         variants={fadeUp}
@@ -601,17 +602,26 @@ export function ChainQuizzesSection() {
         Chain Quizzes
       </motion.h2>
 
-      <motion.p
-        className={styles.chainLead}
+      <motion.div
+        className={styles.chainHeader}
         variants={fadeUp}
         custom={1}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
       >
-        Learn exactly the way LLMs do — by predicting the <em>next token</em>.
-        We stream real sentences and ask your brain to complete them step by step, building a fluent chain.
-      </motion.p>
+        {/* The Problem에서 쓰던 칩 스타일 재사용 */}
+        <span className={styles.sectionKicker}>Practice</span>
+
+        {/* 간결한 타이틀 */}
+        <h3 className={styles.chainTitle}>Train like an LLM — predict the next word</h3>
+
+        {/* 다듬은 본문 (자연스럽고 짧게) */}
+        <p className={styles.chainLead}>
+            We stream short, natural sentences and turn them into quick, focused drills.
+            Predict the next word, lock it in, and let the sentence grow — small, repeatable wins that build real fluency.
+        </p>
+      </motion.div>
 
       {/* Language selector */}
       <motion.div
@@ -646,7 +656,9 @@ export function ChainQuizzesSection() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
     >
-    <span className={styles.levelLabel}>Difficulty</span>
+        <span className={styles.sectionKicker} style={{ marginRight: ".6rem" }}>
+        Difficulty
+        </span>
 
     {/* 변경: 버튼이 언어 칩과 같은 스타일이 되도록, 선택된 항목에만 시간 노출 */}
     <div className={styles.levelChips}>
