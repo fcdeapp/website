@@ -1307,44 +1307,9 @@
   padding: .45rem .25rem;
 }
 
-/* simple sparkline svg */
-.sparklineSvg{
-  width: 300px;
-  height: 48px;
-  color: #d8315b; /* line color */
-  flex: 0 0 300px;
-}
-
-/* legend items under sparkline */
-.statusLegend{
-  display:flex;
-  gap:.6rem;
-  flex-wrap:wrap;
-  align-items:center;
-}
-.statusLegendItem{
-  display:inline-flex;
-  gap:.4rem;
-  align-items:center;
-  padding: .28rem .5rem;
-  border-radius:999px;
-  background: rgba(216,49,91,0.06);
-  font-weight:600;
-  color:#333;
-}
 .statusDate { opacity:0.8; font-size:.9rem; }
 .statusSum { color:#d8315b; font-weight:700; }
 
-/* table */
-.statusTable{
-  width:100%;
-  border-collapse: collapse;
-  margin-top: .6rem;
-  font-size: .95rem;
-  box-shadow: 0 6px 18px rgba(17,12,43,0.04);
-  border-radius: 10px;
-  overflow: hidden;
-}
 .statusTable thead th{
   text-align:left;
   padding: .6rem .8rem;
@@ -1360,8 +1325,83 @@
 }
 .statusTable tbody tr:last-child td{ border-bottom: none; }
 
-/* responsive tweaks */
+/* --- chart-focused styles --- */
+.chartWrapper {
+  display:flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: stretch;
+  padding: 0.6rem 0.25rem;
+}
+
+/* larger svg */
+.sparklineSvg {
+  width: 100%;
+  height: 180px;
+  color: #d8315b; /* fallback */
+  display: block;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(250,250,250,0.9));
+  border-radius: 10px;
+  overflow: visible;
+  box-shadow: 0 10px 24px rgba(17,12,43,0.04);
+}
+
+/* area fill subtle */
+.areaSum { transition: opacity .3s ease; }
+
+/* line styles */
+.lineIos { stroke: #2b8cff; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.lineAndroid { stroke: #1fbf6b; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.lineSum { stroke: #d8315b; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+
+/* x-axis label */
+.xLabel { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+/* legend */
+.statusLegend {
+  display:flex;
+  gap: 0.75rem;
+  align-items:center;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+  margin-top: 0.2rem;
+}
+.legendItem {
+  display:inline-flex;
+  gap:0.5rem;
+  align-items:center;
+  font-size:0.95rem;
+  color:#444;
+  font-weight:600;
+}
+.legendSwatchIos, .legendSwatchAndroid, .legendSwatchSum {
+  width:12px; height:12px; border-radius:3px; display:inline-block;
+}
+.legendSwatchIos { background:#2b8cff; box-shadow: 0 4px 14px rgba(43,140,255,0.12); }
+.legendSwatchAndroid { background:#1fbf6b; box-shadow: 0 4px 14px rgba(31,191,107,0.12); }
+.legendSwatchSum { background:#d8315b; box-shadow: 0 6px 18px rgba(216,49,91,0.12); }
+
+/* summary below chart */
+.statusSummary {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  padding: .45rem .6rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg,#fff,#fbfbfc);
+  border: 1px solid rgba(17,12,43,0.03);
+  box-shadow: 0 6px 16px rgba(17,12,43,0.03);
+}
+.latestLabel { color:#777; font-weight:600; font-size:.95rem; }
+.latestNumbers { display:flex; gap:1.25rem; font-weight:600; color:#333; }
+.latestNumbers strong { color:#d8315b; font-weight:800; }
+
+/* remove old table visuals if present */
+.statusTable { display:none !important; }
+
+/* responsive: svg height reduce on small */
 @media (max-width: 680px) {
-  .sparklineSvg { width: 100%; flex-basis: 100%; }
-  .statusLegend { justify-content: flex-start; }
+  .sparklineSvg { height: 140px; }
+  .statusSummary { flex-direction: column; align-items:flex-start; gap:.5rem; }
 }

@@ -61,18 +61,21 @@ export default function BusinessPage() {
     return `${d.getMonth() + 1}/${d.getDate()}`;
   };
 
-  // helper: build sparkline points (0..100% scaled)
-  const buildSparkPoints = (values: number[], w = 300, h = 48) => {
+  // helper: build svg path 'd' for a series
+  const buildPath = (values: number[], w = 600, h = 160, padLeft = 20, padRight = 20) => {
     if (!values || values.length === 0) return "";
     const min = Math.min(...values);
     const max = Math.max(...values);
     const range = max - min || 1;
+    const n = values.length;
+    const usableW = Math.max(1, w - padLeft - padRight);
+    const xFor = (i: number) => padLeft + (i / (n - 1)) * usableW;
+    const yFor = (v: number) => {
+      const normalized = (v - min) / range;
+      return h - normalized * (h - 24) - 8; // top/bottom padding
+    };
     return values
-      .map((v, i) => {
-        const x = (i / (values.length - 1)) * w;
-        const y = h - ((v - min) / range) * h;
-        return `${x},${y}`;
-      })
+      .map((v, i) => `${i === 0 ? "M" : "L"} ${xFor(i).toFixed(2)} ${yFor(v).toFixed(2)}`)
       .join(" ");
   };
 
@@ -374,6 +377,100 @@ export default function BusinessPage() {
           </div>
         </motion.div>
 
+        {/* ── REPLACE: downloads status panel (graph-focused) ── */}
+        <div
+          id="downloads-status-panel"
+          className={`${styles.statusPanel} ${showStatus ? styles.open : ""}`}
+          aria-hidden={!showStatus}
+        >
+          <div className={styles.statusInner}>
+            <div className={styles.chartWrapper}>
+              <svg
+                className={styles.sparklineSvg}
+                viewBox="0 0 600 180"
+                preserveAspectRatio="none"
+                role="img"
+                aria-label="Download counts over time"
+              >
+                <defs>
+                  <linearGradient id="areaSumGrad" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stopColor="#ffd7d9" stopOpacity="0.95" />
+                    <stop offset="100%" stopColor="#fff" stopOpacity="0.0" />
+                  </linearGradient>
+                </defs>
+
+                {/* area for sum (filled) */}
+                <path
+                  d={`${buildPath(downloadData.map(d => d.sum), 600, 160)} L ${600 - 20} ${160 - 8} L 20 ${160 - 8} Z`}
+                  fill="url(#areaSumGrad)"
+                  className={styles.areaSum}
+                />
+
+                {/* lines: ios, android, sum */}
+                <path
+                  d={buildPath(downloadData.map(d => d.ios), 600, 160)}
+                  fill="none"
+                  strokeWidth={2}
+                  className={styles.lineIos}
+                />
+                <path
+                  d={buildPath(downloadData.map(d => d.android), 600, 160)}
+                  fill="none"
+                  strokeWidth={2}
+                  className={styles.lineAndroid}
+                />
+                <path
+                  d={buildPath(downloadData.map(d => d.sum), 600, 160)}
+                  fill="none"
+                  strokeWidth={2.5}
+                  className={styles.lineSum}
+                />
+
+                {/* x-axis ticks (dates) */}
+                {downloadData.map((d, i) => {
+                  const n = downloadData.length;
+                  const padLeft = 20;
+                  const padRight = 20;
+                  const usableW = 600 - padLeft - padRight;
+                  const x = padLeft + (i / (n - 1)) * usableW;
+                  return (
+                    <g key={d.date}>
+                      <line x1={x} x2={x} y1={160 - 6} y2={160 - 2} stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
+                      <text
+                        x={x}
+                        y={176}
+                        textAnchor="middle"
+                        fontSize="11"
+                        fill="#666"
+                        className={styles.xLabel}
+                      >
+                        {shortLabel(d.date)}
+                      </text>
+                    </g>
+                  );
+                })}
+              </svg>
+
+              {/* legend */}
+              <div className={styles.statusLegend}>
+                <div className={styles.legendItem}><span className={styles.legendSwatchIos} /> iOS</div>
+                <div className={styles.legendItem}><span className={styles.legendSwatchAndroid} /> Android</div>
+                <div className={styles.legendItem}><span className={styles.legendSwatchSum} /> Total</div>
+              </div>
+            </div>
+
+            {/* summary line with latest totals */}
+            <div className={styles.statusSummary}>
+              <div className={styles.latestLabel}>Latest ( {shortLabel(downloadData[downloadData.length - 1].date)} )</div>
+              <div className={styles.latestNumbers}>
+                <div>iOS: <strong>{downloadData[downloadData.length - 1].ios}</strong></div>
+                <div>Android: <strong>{downloadData[downloadData.length - 1].android}</strong></div>
+                <div>Total: <strong>{downloadData[downloadData.length - 1].sum}</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.roadmapWrap}>
           <div className={styles.roadmapTrack} aria-hidden />
           {[
@@ -402,54 +499,6 @@ export default function BusinessPage() {
             </motion.article>
           ))}
         </div>
-
-        {/* ── ADD: downloads status panel (collapsible) ── */}
-        <div id="downloads-status-panel" className={`${styles.statusPanel} ${showStatus ? styles.open : ""}`} aria-hidden={!showStatus}>
-          <div className={styles.statusInner}>
-            {/* small sparkline + totals */}
-            <div className={styles.statusChart}>
-              <svg viewBox="0 0 300 48" preserveAspectRatio="none" className={styles.sparklineSvg}>
-                <polyline
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  points={buildSparkPoints(downloadData.map(d => d.sum), 300, 48)}
-                />
-              </svg>
-              <div className={styles.statusLegend}>
-                {downloadData.map((d) => (
-                  <div key={d.date} className={styles.statusLegendItem}>
-                    <span className={styles.statusDate}>{shortLabel(d.date)}</span>
-                    <span className={styles.statusSum}>{d.sum}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* table: detailed breakdown */}
-            <table className={styles.statusTable} role="table" aria-label="Download counts by platform">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>iOS</th>
-                  <th>Android</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                {downloadData.map((d) => (
-                  <tr key={d.date}>
-                    <td>{shortLabel(d.date)}</td>
-                    <td>{d.ios}</td>
-                    <td>{d.android}</td>
-                    <td>{d.sum}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
       </section>
 
       {/* ── Team ─────────────────────────────────────── */}
