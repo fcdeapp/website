@@ -101,7 +101,7 @@ export default function BusinessPage() {
     { date: "2024-07-01", ios: 51, android: 6, sum: 57 },
     { date: "2024-07-16", ios: 159, android: 7, sum: 166 },
     { date: "2024-08-01", ios: 203, android: 6, sum: 209 },
-    { date: "2024-08-16", ios: 328, android: 25, sum: 353 },
+    { date: "2024-08-16", ios: 330, android: 25, sum: 355 },
   ];
 
   // prepare points + global scale (AFTER downloadData and toTs/buildPathFromPoints are defined)
