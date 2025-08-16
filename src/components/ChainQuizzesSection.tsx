@@ -591,7 +591,6 @@ export function ChainQuizzesSection() {
 
   return (
     <section id="chain-quizzes" className={styles.sectionAlt}>
-        <span className={styles.sectionKicker}>Practice</span>
       <motion.h2
         className={styles.sectionTitle}
         variants={fadeUp}

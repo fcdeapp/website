@@ -262,43 +262,52 @@ export default function BusinessPage() {
 
       {/* ── How It Works ───────────────────────────────── */}
       <section className={styles.sectionAlt}>
-        <motion.h2
-          className={styles.sectionTitle}
+        <motion.div
+          className={styles.whyHeader}
           variants={fadeUp}
           viewport={{ once: true, amount: 0.45 }}
         >
-          How It Works
-        </motion.h2>
+          <span className={styles.sectionKicker}>Flow</span>
+          <h2 className={styles.sectionTitle}>How It Works</h2>
+        </motion.div>
 
         <div className={styles.flowGrid}>
-            {[
+          {[
             {
-                img: "/images/flow-1.png",
-                title: "1. Snap & Scenario",
-                desc: "Take a photo to automatically build your learning scenario.",
+              kicker: "Snap",
+              img: "/images/flow-1.png",
+              title: "Snap & Scenario",
+              desc: "Take a photo to automatically build a learning scenario from your moment.",
             },
             {
-                img: "/images/flow-4.png",
-                title: "2. AI Chat & Correction",
-                desc: "Chat with our AI tutor—get real‑time corrections.",
+              kicker: "Chat",
+              img: "/images/flow-4.png",
+              title: "AI Chat & Correction",
+              desc: "Chat with our AI tutor and get instant, contextual corrections.",
             },
             {
-                img: "/images/flow-5.png",
-                title: "3. Instant Quiz",
-                desc: "Jump straight into a quiz to reinforce what you learned.",
+              kicker: "Quiz",
+              img: "/images/flow-5.png",
+              title: "Instant Quiz",
+              desc: "Practice what you learned in a quick, targeted quiz.",
             },
-            ].map((step, i) => (
+          ].map((step, i) => (
             <motion.div
-                key={i}
-                className={styles.flowStep}
-                variants={zoomIn}
-                custom={i}
+              key={i}
+              className={styles.flowStep}
+              variants={zoomIn}
+              custom={i}
             >
-                <img src={step.img} alt={step.title} />
-                <h3>{step.title}</h3>
-                <p>{step.desc}</p>
+              {/* 작은 칩 — 이미지(또는 제목) 위에 표시 */}
+              <span className={styles.stepKicker} aria-hidden>
+                {step.kicker}
+              </span>
+
+              <img src={step.img} alt={step.title} />
+              <h3>{step.title}</h3>
+              <p>{step.desc}</p>
             </motion.div>
-            ))}
+          ))}
         </div>
       </section>
 
@@ -347,13 +356,14 @@ export default function BusinessPage() {
 
       {/* ── Team ─────────────────────────────────────── */}
       <section className={styles.section}>
-        <motion.h2
-          className={styles.sectionTitle}
+        <motion.div
+          className={styles.whyHeader}
           variants={fadeUp}
           viewport={{ once: true, amount: 0.45 }}
         >
-          Team
-        </motion.h2>
+          <span className={styles.sectionKicker}>Team</span>
+          <h2 className={styles.sectionTitle}>Team</h2>
+        </motion.div>
 
         <motion.div
           className={styles.teamGrid}
@@ -404,7 +414,15 @@ export default function BusinessPage() {
       </section>
 
       <section className={styles.downloadSection}>
-        <h3 className={styles.downloadTitle}>Downloads</h3>
+        <motion.div
+          className={styles.whyHeader}
+          variants={fadeUp}
+          viewport={{ once: true, amount: 0.45 }}
+        >
+          <span className={styles.sectionKicker}>Resources</span>
+          <h2 className={styles.sectionTitle}>Downloads</h2>
+        </motion.div>
+
         <div className={styles.downloadGrid}>
           {/* Pitch Deck Card */}
           <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
