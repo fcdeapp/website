@@ -1374,30 +1374,30 @@
 }
 /* ===== Sparkline colors aligned with brand palette ===== */
 .lineIos {
-  stroke: #d8315b !important;   /* iOS = 브랜드 레드 */
+  stroke: #f2542d !important;   /* iOS = 브랜드 레드 */
   stroke-linecap: round;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
 }
 
 .lineAndroid {
-  stroke: #f2542d !important;   /* Android = 웜 오렌지 */
+  stroke: #ffd46b !important;   /* Android = 웜 오렌지 */
   stroke-linecap: round;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
 }
 
 .lineSum {
-  stroke: #110c2b !important;   /* Total = 딥 네이비 */
+  stroke: #d8315b !important;   /* Total = 딥 네이비 */
   stroke-linecap: round;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
 }
 
 /* Legend swatches */
-.legendSwatchIos { background: #d8315b !important; box-shadow: 0 4px 14px rgba(216,49,91,0.12); }
-.legendSwatchAndroid { background: #f2542d !important; box-shadow: 0 4px 14px rgba(242,84,45,0.12); }
-.legendSwatchSum { background: #110c2b !important; box-shadow: 0 6px 18px rgba(17,12,43,0.12); }
+.legendSwatchIos { background: #f2542d !important; box-shadow: 0 4px 14px rgba(216,49,91,0.12); }
+.legendSwatchAndroid { background: #ffd46b !important; box-shadow: 0 4px 14px rgba(242,84,45,0.12); }
+.legendSwatchSum { background: #d8315b !important; box-shadow: 0 6px 18px rgba(17,12,43,0.12); }
 
 /* summary below chart */
 .statusSummary {
