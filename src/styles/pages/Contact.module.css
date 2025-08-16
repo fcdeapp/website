@@ -1,5 +1,7 @@
-/* Page root */
-.pageWrap {
+/* ===== Contact.module.css (no :root variables) ===== */
+
+/* ===== Root layout ===== */
+.page {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,122 +10,83 @@
   font-family: Pretendard, Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
-/* ===== Hero (brand gradient + starfield) ===== */
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 150% 50%; }
-}
+/* ===== Hero ===== */
+@keyframes gradientShift { 0% { background-position: 0% 50% } 100% { background-position: 150% 50% } }
 .hero {
-  position: relative;
-  padding: 7.5rem 1.25rem 8.5rem;
-  text-align: center;
-  color: #fff;
   background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
   background-size: 200% 200%;
-  animation: gradientShift 12s ease-in-out infinite;
+  animation: gradientShift 12s linear infinite;
+  color: #fff;
+  padding: 6.5rem 1.25rem 7.5rem;
+  text-align: center;
+  position: relative;
   overflow: hidden;
 }
-.starfield::before,
-.starfield::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(#ffffff33 0.5px, transparent 0.5px);
-  background-size: 3px 3px;
-  animation: starScroll 48s linear infinite;
-}
-.starfield::after { animation-direction: reverse; opacity: 0.45; }
-@keyframes starScroll { from { transform: translateY(0); } to { transform: translateY(-1000px); } }
-
-.heroInner {
-  position: relative;
-  z-index: 1;
-  max-width: 62rem;
-  margin: 0 auto;
-}
-.sectionKicker {
-  display: inline-block;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
+.kicker {
+  display:inline-block;
+  font-size:0.85rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
   background: rgba(255,255,255,0.12);
-  padding: .22rem .6rem;
+  padding: .18rem .6rem;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.2);
-  margin-bottom: .8rem;
+  border: 1px solid rgba(255,255,255,0.16);
 }
-.heroTitle {
-  font-size: clamp(2.2rem, 6vw, 3.8rem);
+.title {
+  font-size: clamp(2rem, 5.5vw, 3.6rem);
+  margin: 0.6rem 0 0.5rem;
   font-weight: 800;
-  margin: 0.2rem 0 0.6rem;
-  line-height: 1.05;
+  line-height: 1.06;
 }
-.heroSubtitle {
-  font-size: clamp(1rem, 2.2vw, 1.15rem);
-  opacity: 0.95;
-  max-width: 48rem;
-  margin: 0 auto;
+.lead {
+  max-width: 56rem;
+  margin: 0.6rem auto 0;
+  color: rgba(255,255,255,0.95);
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
-.scrollHint {
-  display: inline-block;
-  margin-top: 2rem;
-  color: #fff;
-  opacity: .95;
+.ctaLink {
+  display:inline-block;
+  margin-top: 1.6rem;
+  color: rgba(255,255,255,0.95);
   text-decoration: none;
+  font-weight: 700;
 }
-.scrollHint:hover { transform: translateY(3px); }
 
 /* ===== Main container ===== */
 .container {
+  width: 100%;
   max-width: 78rem;
-  margin: -5rem auto 3rem; /* slight overlap with hero bottom to feel connected */
-  padding: 2rem 1.25rem;
+  margin: -4.25rem auto 3rem; /* overlap hero */
+  padding: 0 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 2.25rem;
+  gap: 2rem;
 }
 
-/* Section title */
-.sectionTitle {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #110c2b;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-/* ===== Info grid (cards with gradient border) ===== */
+/* ===== Info cards grid ===== */
+.infoSection { padding-top: .5rem; }
 .infoGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.25rem;
-  align-items: start;
+  gap: 1rem;
 }
-
 .infoCard {
   position: relative;
   background: #fff;
   border-radius: 16px;
   padding: 1.25rem;
   box-shadow: 0 10px 28px rgba(17,12,43,0.06);
-  transition: transform .22s ease, box-shadow .22s ease;
+  transition: transform .18s ease, box-shadow .18s ease;
   border: 1px solid transparent;
   background-clip: padding-box;
 }
-.infoCard h3 {
-  margin: 0 0 .5rem;
-  color: #d8315b;
-  font-size: 1.05rem;
-}
-.infoCard p {
-  margin: 0;
-  color: #444;
-  line-height: 1.6;
-}
+.infoCard:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(17,12,43,0.08); }
+.infoTitle { margin: 0 0 .5rem; color: #d8315b; font-size: 1.05rem; }
+.infoBody { margin: 0; color: #333; line-height: 1.6; }
 
-/* gradient border effect (same pattern used across other pages) */
-.gradientCard::before{
+/* gradient border decoration (consistent with other pages) */
+.gradientBorder::before{
   content: "";
   position: absolute; inset: -1px; border-radius: inherit; padding: 1px;
   background: linear-gradient(90deg, #ffd36e, #ff8a5c, #d8315b);
@@ -134,124 +97,74 @@
   pointer-events: none;
   transition: background-position .45s ease;
 }
-.infoCard:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(17,12,43,0.08); }
-.infoCard:hover::before { background-position: 100% 50%; }
+.gradientBorder:hover::before { background-position: 100% 50%; }
 
-/* monospace small text */
-.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Helvetica Neue", monospace; }
-
-/* ===== Form layout (two-column on wide, stacked on small) ===== */
-.formSection {
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
+/* ===== Form section/card ===== */
+.formSection { padding-top: 0.5rem; }
+.formCard {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 28px rgba(17,12,43,0.06);
+  border: 1px solid rgba(17,12,43,0.04);
 }
-.formGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  align-items: start;
-}
+.formTitle { margin: 0 0 .35rem; font-size: 1.25rem; color: #110c2b; font-weight:700; }
+.formSubtitle { margin: 0 0 1rem; color: #666; font-size: .95rem; }
 
-/* left column (name/email) and right column (message + actions) */
-.formLeft { display:flex; flex-direction: column; gap: 1rem; }
-.formRight { display:flex; flex-direction: column; gap: 1rem; }
+/* form layout */
+.form { display:flex; flex-direction:column; gap:1rem; }
+.row { display:grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 
-/* labels & inputs */
-.label {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  font-weight: 600;
-  color: #333;
-  font-size: .95rem;
-}
-.input {
-  padding: .9rem 1rem;
+.label { display:flex; flex-direction:column; gap:.5rem; font-weight:600; color:#333; font-size:.95rem; }
+.input, .textarea {
   border-radius: 10px;
   border: 1px solid rgba(17,12,43,0.06);
-  background: #fff;
-  font-size: 1rem;
-  color: #222;
-  transition: border-color .18s ease, box-shadow .18s ease;
-}
-.input:focus {
-  outline: none;
-  border-color: rgba(216,49,91,0.28);
-  box-shadow: 0 8px 20px rgba(216,49,91,0.06);
-}
-.textarea {
-  padding: 1rem;
-  border-radius: 12px;
-  border: 1px solid rgba(17,12,43,0.06);
-  min-height: 180px;
-  resize: vertical;
+  padding: .85rem 1rem;
   font-size: 1rem;
   color: #222;
   background: #fff;
+  transition: box-shadow .15s ease, border-color .15s ease;
 }
-.textarea:focus {
-  outline: none;
-  border-color: rgba(216,49,91,0.28);
-  box-shadow: 0 8px 20px rgba(216,49,91,0.06);
-}
+.input::placeholder, .textarea::placeholder { color: #9aa0a6; font-weight: 400; }
+.input:focus, .textarea:focus { outline: none; border-color: rgba(216,49,91,0.22); box-shadow: 0 10px 24px rgba(216,49,91,0.06); }
 
-/* form actions */
-.formActions {
-  display: flex;
-  gap: .75rem;
-  justify-content: flex-start;
-  align-items: center;
-}
+.textarea { min-height: 150px; resize: vertical; }
 
-/* ===== Buttons (shared brand style) ===== */
+/* actions */
+.actions { display:flex; gap:.75rem; margin-top:.25rem; }
 .btn {
-  appearance: none;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-  border-radius: 14px;
-  padding: .72rem 1rem;
-  transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+  appearance:none; border:none; cursor:pointer; font-weight:700;
+  border-radius:12px; padding:.72rem 1rem; transition: transform .16s ease, box-shadow .16s ease;
 }
-.btnPrimary {
-  color: #fff;
-  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
-  box-shadow: 0 10px 22px rgba(216,49,91,0.16);
+.primary {
+  color:#fff; background: linear-gradient(135deg, #f2542d, #d8315b);
+  box-shadow: 0 10px 22px rgba(216,49,91,0.14);
 }
-.btnPrimary:hover { transform: translateY(-3px); }
-.btnGhost {
-  color: #110c2b;
-  background: #fff;
-  border: 1px solid rgba(17,12,43,0.08);
+.primary:hover { transform: translateY(-3px); }
+.ghost {
+  color:#110c2b; background:#fff; border:1px solid rgba(17,12,43,0.06);
 }
-.btnGhost:hover { transform: translateY(-3px); }
+.ghost:hover { transform: translateY(-3px); }
 
-/* ===== Small screens / responsive ===== */
+/* ===== Responsiveness ===== */
 @media (max-width: 980px) {
-  .container { margin-top: -4rem; padding: 1.5rem; }
-  .formGrid { grid-template-columns: 1fr; }
-  .formRight { order: 2; }
-  .formLeft { order: 1; }
-  .hero { padding: 6.5rem 1rem 7.5rem; }
-}
-
-@media (max-width: 640px) {
-  .heroTitle { font-size: 1.9rem; }
-  .heroSubtitle { font-size: .98rem; }
-  .infoGrid { grid-template-columns: 1fr; }
-  .infoCard { padding: 1rem; border-radius: 14px; }
-  .input, .textarea { font-size: .96rem; padding: .85rem; }
-  .sectionTitle { font-size: 1.25rem; }
-  .mono { font-size: .95rem; }
-  .formActions { flex-direction: column; align-items: stretch; }
+  .container { margin-top: -3.5rem; padding: 0 1rem; }
+  .row { grid-template-columns: 1fr; }
+  .actions { flex-direction: column; }
   .btn { width: 100%; }
 }
 
-/* accessibility focus */
-.input:focus, .textarea:focus, .btn:focus {
-  box-shadow: 0 8px 20px rgba(17,12,43,0.08);
-  outline: none;
+@media (max-width: 640px) {
+  .hero { padding: 4.5rem 1rem 5rem; }
+  .lead { font-size: .98rem; }
+  .title { font-size: 1.75rem; }
+  .infoGrid { grid-template-columns: 1fr; }
+  .formCard { padding: 1rem; border-radius: 14px; }
+  .input, .textarea { font-size: .96rem; padding: .75rem .9rem; }
 }
 
-/* small polish: clickable reset button secondary look */
-.btnGhost[disabled] { opacity: .6; cursor: not-allowed; }
+/* Focus outlines for accessibility */
+.input:focus, .textarea:focus, .btn:focus { outline: none; box-shadow: 0 12px 30px rgba(17,12,43,0.08); }
+
+/* small helper */
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; font-size: .95rem; }

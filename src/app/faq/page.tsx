@@ -45,11 +45,37 @@ export default function Faq() {
     fetchQnA();
   }, [SERVER_URL]);
 
-  const toggleItem = (index: number) => {
-    setExpandedItems(prev =>
-      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
-    );
-  };
+// replace existing toggleItem with this
+const toggleItem = (index: number) => {
+  setExpandedItems(prev => {
+    const isOpen = prev.includes(index);
+    const next = isOpen ? prev.filter(i => i !== index) : [...prev, index];
+
+    // DOM 업데이트가 반영된 후에 높이 애니메이션을 적용
+    // setTimeout은 microtask 보장(짧은 딜레이) — React 상태 반영 후 DOM 접근
+    setTimeout(() => {
+      const panel = document.getElementById(`faq-panel-${index}`);
+      if (!panel) return;
+
+      if (!isOpen) {
+        // 열 때: 실제 내용 높이만큼 설정 -> 부드러운 expand
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.opacity = "1";
+      } else {
+        // 닫을 때: 높이를 현재 높이로 고정한 뒤 0으로 트랜지션
+        // (레이아웃 점프 방지)
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        // force reflow for reliable transition
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+        panel.offsetHeight;
+        panel.style.maxHeight = "0px";
+        panel.style.opacity = "0";
+      }
+    }, 40);
+
+    return next;
+  });
+};
 
   const onKeyToggle = (e: React.KeyboardEvent<HTMLDivElement>, index: number) => {
     if (e.key === "Enter" || e.key === " ") {
