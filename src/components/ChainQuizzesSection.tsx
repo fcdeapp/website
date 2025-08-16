@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import styles from "../styles/pages/Business.module.css";
+import styles from "../../styles/pages/Business.module.css";
 
-/* Re-use your existing variants if you like */
+/* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 32 },
   visible: (i: number = 0) => ({
@@ -22,11 +22,14 @@ const zoomIn: Variants = {
 };
 
 /* ───────────────────────── Data ───────────────────────── */
-type CEFR = "A1"|"A2"|"B1"|"B2"|"C1"|"C2";
-const LEVELS: CEFR[] = ["A1","A2","B1","B2","C1","C2"];
-const TIME_PER_WORD: Record<CEFR, number> = { A1:6, A2:5, B1:4, B2:3, C1:2, C2:1 };
+type CEFR = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+const LEVELS: CEFR[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const TIME_PER_WORD: Record<CEFR, number> = { A1: 6, A2: 5, B1: 4, B2: 3, C1: 2, C2: 1 };
 
-type LangKey = "en"|"fr"|"es"|"zh"|"ja"|"ko";
+type LangKey =
+  | "en" | "fr" | "es" | "zh" | "ja" | "ko"
+  | "ar" | "it" | "de" | "pt" | "hi" | "ru";
+
 const LANGS: { key: LangKey; label: string }[] = [
   { key: "en", label: "English" },
   { key: "fr", label: "Français" },
@@ -34,6 +37,12 @@ const LANGS: { key: LangKey; label: string }[] = [
   { key: "zh", label: "中文" },
   { key: "ja", label: "日本語" },
   { key: "ko", label: "한국어" },
+  { key: "ar", label: "العربية" },
+  { key: "it", label: "Italiano" },
+  { key: "de", label: "Deutsch" },
+  { key: "pt", label: "Português" },
+  { key: "hi", label: "हिन्दी" },
+  { key: "ru", label: "Русский" },
 ];
 
 const EXAMPLES: Record<LangKey, Record<CEFR, string>> = {
@@ -85,50 +94,117 @@ const EXAMPLES: Record<LangKey, Record<CEFR, string>> = {
     C1: "그녀의 연구는 이 분야를 크게 발전시킵니다.",
     C2: "그 발견은 기존 통념을 완전히 뒤엎습니다.",
   },
+  ar: {
+    A1: "أحب القهوة في الصباح.",
+    A2: "هي عادةً تستقل الحافلة إلى العمل.",
+    B1: "قررنا إلغاء الرحلة.",
+    B2: "تفاوضوا على شروط أفضل لنا.",
+    C1: "بحثها يطوّر المجال بشكل ملحوظ.",
+    C2: "النتائج تتحدى الحكمة التقليدية تمامًا.",
+  },
+  it: {
+    A1: "Mi piace il caffè al mattino.",
+    A2: "Di solito prende l'autobus per andare al lavoro.",
+    B1: "Abbiamo deciso di cancellare il viaggio.",
+    B2: "Hanno negoziato condizioni migliori per noi.",
+    C1: "La sua ricerca fa progredire notevolmente il settore.",
+    C2: "I risultati contraddicono completamente la saggezza comune.",
+  },
+  de: {
+    A1: "Ich mag morgens Kaffee.",
+    A2: "Sie fährt meist mit dem Bus zur Arbeit.",
+    B1: "Wir beschlossen, die Reise abzusagen.",
+    B2: "Sie handelten bessere Bedingungen für uns aus.",
+    C1: "Ihre Forschung treibt das Fachgebiet deutlich voran.",
+    C2: "Die Ergebnisse stellen die gängige Meinung vollständig in Frage.",
+  },
+  pt: {
+    A1: "Eu gosto de café de manhã.",
+    A2: "Ela costuma pegar o ônibus para o trabalho.",
+    B1: "Decidimos cancelar a viagem.",
+    B2: "Eles negociaram condições melhores para nós.",
+    C1: "A pesquisa dela avança a área de forma significativa.",
+    C2: "As descobertas desafiam completamente o senso comum.",
+  },
+  hi: {
+    A1: "मुझे सुबह कॉफ़ी पसंद है।",
+    A2: "वह आमतौर पर बस से काम पर जाती है।",
+    B1: "हमने यात्रा रद्द करने का फैसला किया।",
+    B2: "उन्होंने हमारे लिए बेहतर शर्तों पर बातचीत की।",
+    C1: "उसका शोध इस क्षेत्र को काफ़ी आगे बढ़ाता है।",
+    C2: "निष्कर्ष पारंपरिक मान्यताओं को पूरी तरह चुनौती देते हैं।",
+  },
+  ru: {
+    A1: "Мне нравится кофе по утрам.",
+    A2: "Она обычно ездит на работу на автобусе.",
+    B1: "Мы решили отменить поездку.",
+    B2: "Они договорились о лучших условиях для нас.",
+    C1: "Её исследование существенно продвигает область.",
+    C2: "Выводы полностью опровергают общепринятое мнение.",
+  },
 };
 
 /* ───────────────────────── Utils ───────────────────────── */
 const isCJK = (lang: LangKey) => lang === "zh" || lang === "ja" || lang === "ko";
+
 const tokenize = (s: string, lang: LangKey) => {
   if (isCJK(lang)) {
-    // Simple visual tokenization for demo: split by characters, keeping punctuation as separate tokens.
-    return s.replace(/\s+/g,"").split("").filter(Boolean);
+    // Visual tokenization for CJK: per character (spaces removed).
+    return s.replace(/\s+/g, "").split("").filter(Boolean);
   }
+  // Others: whitespace tokenization.
   return s.trim().split(/\s+/);
 };
 
-const clean = (w: string) => w.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
+const clean = (w: string) =>
+  w.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
 
-function buildDistractors(lang: LangKey, idx: number, level: CEFR, correctToken: string): string[] {
+function buildDistractors(
+  lang: LangKey,
+  idx: number,
+  level: CEFR,
+  correctToken: string
+): string[] {
   const pool: string[] = [];
-  // use other sentences at same/neighbor index
-  LEVELS.forEach(lv => {
+  LEVELS.forEach((lv) => {
     if (lv === level) return;
     const toks = tokenize(EXAMPLES[lang][lv], lang);
     if (toks[idx]) pool.push(toks[idx]);
-    if (toks[idx-1]) pool.push(toks[idx-1]);
-    if (toks[idx+1]) pool.push(toks[idx+1]);
+    if (toks[idx - 1]) pool.push(toks[idx - 1]);
+    if (toks[idx + 1]) pool.push(toks[idx + 1]);
   });
-  // filter out same token
-  const uniq = Array.from(new Set(pool.filter(t => clean(t).toLowerCase() !== clean(correctToken).toLowerCase())));
-  // fallback words
-  const fallback = {
-    en: ["and","with","from","on","into","about","over","before"],
-    fr: ["et","avec","dans","pour","sur","avant","après","chez"],
-    es: ["y","con","de","para","en","sobre","antes","después"],
-    zh: ["在","和","到","把","对","从","给","向"],
-    ja: ["と","に","で","から","まで","より","へ","を"],
-    ko: ["그리고","에서","으로","에게","부터","까지","보다","에"]
-  }[lang];
 
-  const picks = uniq.slice(0, 6).concat(fallback).filter(w => clean(w) && clean(w) !== clean(correctToken));
-  // choose 2
+  const uniq = Array.from(
+    new Set(pool.filter((t) => clean(t).toLowerCase() !== clean(correctToken).toLowerCase()))
+  );
+
+  const fallbackMap: Record<LangKey, string[]> = {
+    en: ["and", "with", "from", "on", "into", "about", "over,","before"],
+    fr: ["et", "avec", "dans", "pour", "sur", "avant", "après", "chez"],
+    es: ["y", "con", "de", "para", "en", "sobre", "antes", "después"],
+    zh: ["在", "和", "到", "把", "对", "从", "给", "向"],
+    ja: ["と", "に", "で", "から", "まで", "より", "へ", "を"],
+    ko: ["그리고", "에서", "으로", "에게", "부터", "까지", "보다", "에"],
+    ar: ["و", "من", "إلى", "على", "عن", "مع", "قبل", "بعد"],
+    it: ["e", "con", "da", "di", "per", "su", "prima", "dopo"],
+    de: ["und", "mit", "von", "zu", "für", "auf", "vor", "nach"],
+    pt: ["e", "com", "de", "para", "em", "sobre", "antes", "depois"],
+    hi: ["और", "से", "को", "में", "पर", "के", "तक", "बाद"],
+    ru: ["и", "с", "к", "на", "для", "о", "до", "после"],
+  };
+
+  const fallback = fallbackMap[lang] || fallbackMap.en;
+  const picks = uniq
+    .slice(0, 6)
+    .concat(fallback)
+    .filter((w) => clean(w) && clean(w) !== clean(correctToken));
+
   const chosen: string[] = [];
   for (const w of picks) {
     if (!chosen.includes(w)) chosen.push(w);
     if (chosen.length >= 2) break;
   }
-  return chosen.slice(0,2);
+  return chosen.slice(0, 2);
 }
 
 /* ───────────────────────── Streaming sentence (LLM-like) ───────────────────────── */
@@ -136,7 +212,11 @@ function StreamingSentence({
   sentence,
   lang,
   speed = 520,
-}: { sentence: string; lang: LangKey; speed?: number }) {
+}: {
+  sentence: string;
+  lang: LangKey;
+  speed?: number;
+}) {
   const tokens = React.useMemo(() => tokenize(sentence, lang), [sentence, lang]);
   const [showN, setShowN] = React.useState(0);
 
@@ -171,11 +251,18 @@ function WebChainQuiz({
   lang,
   level,
   onClose,
-}: { lang: LangKey; level: CEFR; onClose: () => void }) {
+}: {
+  lang: LangKey;
+  level: CEFR;
+  onClose: () => void;
+}) {
   const base = EXAMPLES[lang][level];
   const tokens = React.useMemo(() => tokenize(base, lang), [base, lang]);
-  const [i, setI] = React.useState(Math.min(2, Math.max(0, tokens.length-1))); // reveal from 3rd token
-  const [assembled, setAssembled] = React.useState(tokens.slice(0, i).join(isCJK(lang) ? "" : " "));
+  const startIndex = Math.min(2, Math.max(0, tokens.length - 1));
+  const [i, setI] = React.useState(startIndex); // reveal from 3rd token
+  const [assembled, setAssembled] = React.useState(
+    tokens.slice(0, startIndex).join(isCJK(lang) ? "" : " ")
+  );
   const [score, setScore] = React.useState(0);
   const [done, setDone] = React.useState(false);
   const [picked, setPicked] = React.useState<string | null>(null);
@@ -183,9 +270,14 @@ function WebChainQuiz({
   const [round, setRound] = React.useState(0);
 
   React.useEffect(() => {
-    setI(Math.min(2, Math.max(0, tokens.length-1)));
+    const si = Math.min(2, Math.max(0, tokens.length - 1));
+    setI(si);
     setAssembled(tokens.slice(0, Math.min(2, tokens.length)).join(isCJK(lang) ? "" : " "));
-    setScore(0); setDone(false); setPicked(null); setTimeLeft(TIME_PER_WORD[level]); setRound(0);
+    setScore(0);
+    setDone(false);
+    setPicked(null);
+    setTimeLeft(TIME_PER_WORD[level]);
+    setRound(0);
   }, [lang, level, tokens]);
 
   React.useEffect(() => {
@@ -196,9 +288,8 @@ function WebChainQuiz({
   React.useEffect(() => {
     if (done) return;
     const t = setInterval(() => {
-      setTimeLeft(prev => {
+      setTimeLeft((prev) => {
         if (prev <= 1) {
-          // timeout → advance
           handlePick("__timeout__", false);
           return TIME_PER_WORD[level];
         }
@@ -212,10 +303,14 @@ function WebChainQuiz({
   const correct = tokens[i] || "";
   const options = React.useMemo(() => {
     const ds = buildDistractors(lang, i, level, correct);
-    const arr = [{ text: correct, correct: true }, { text: ds[0] || correct+"*", correct: false }, { text: ds[1] || correct+"**", correct: false }];
+    const arr = [
+      { text: correct, correct: true },
+      { text: ds[0] || correct + "*", correct: false },
+      { text: ds[1] || correct + "**", correct: false },
+    ];
     // shuffle
-    for (let k = arr.length-1; k>0; k--) {
-      const r = Math.floor(Math.random()*(k+1));
+    for (let k = arr.length - 1; k > 0; k--) {
+      const r = Math.floor(Math.random() * (k + 1));
       [arr[k], arr[r]] = [arr[r], arr[k]];
     }
     return arr;
@@ -225,10 +320,10 @@ function WebChainQuiz({
     if (picked) return;
     setPicked(txt);
     setTimeout(() => {
-      // lock in the true next token visually regardless of choice
+      // visually attach the true next token regardless of choice
       const newAsm = (assembled + (isCJK(lang) ? "" : " ") + (tokens[i] || "")).trim();
       setAssembled(newAsm);
-      if (isCorrect) setScore(s => s + 1);
+      if (isCorrect) setScore((s) => s + 1);
 
       const next = i + 1;
       if (next >= tokens.length) {
@@ -237,7 +332,7 @@ function WebChainQuiz({
       }
       setI(next);
       setPicked(null);
-      setRound(r => r + 1);
+      setRound((r) => r + 1);
     }, 320);
   }
 
@@ -248,15 +343,24 @@ function WebChainQuiz({
           <span className={styles.wordLead}>Next word</span>
           <div className={styles.timerWrap}>
             <div className={styles.timerBg}>
-              <div className={styles.timerFill} style={{ width: `${(timeLeft / TIME_PER_WORD[level]) * 100}%` }} />
+              <div
+                className={styles.timerFill}
+                style={{ width: `${(timeLeft / TIME_PER_WORD[level]) * 100}%` }}
+              />
             </div>
             <span className={styles.timerText}>{timeLeft}s</span>
           </div>
-          <div className={styles.scorePill}>{score} / {Math.max(1, tokens.length - Math.min(2, tokens.length))}</div>
+          <div className={styles.scorePill}>
+            {score} / {Math.max(1, tokens.length - Math.min(2, tokens.length))}
+          </div>
         </div>
         <div className={styles.assembledLine}>
           <span className={styles.assembledLabel}>Sentence</span>
-          <span className={styles.assembledText}>{assembled}{i < tokens.length ? (isCJK(lang) ? "" : " "): ""}{i < tokens.length ? "…" : ""}</span>
+          <span className={styles.assembledText}>
+            {assembled}
+            {i < tokens.length ? (isCJK(lang) ? "" : " ") : ""}
+            {i < tokens.length ? "…" : ""}
+          </span>
         </div>
       </div>
 
@@ -265,7 +369,7 @@ function WebChainQuiz({
           {options.map((op, idx) => {
             const selected = picked === op.text;
             const wrongSelected = selected && !op.correct && picked !== "__timeout__";
-            const showTick = picked && op.correct;
+            const showTick = !!picked && op.correct;
             return (
               <button
                 key={idx}
@@ -291,7 +395,9 @@ function WebChainQuiz({
           <h4 className={styles.summaryTitle}>Result</h4>
           <p className={styles.summaryLine}>Score: {score}</p>
           <div className={styles.summaryActions}>
-            <button className={`${styles.btn} ${styles.btnPrimary}`} onClick={onClose}>Close</button>
+            <button className={`${styles.btn} ${styles.btnPrimary}`} onClick={onClose}>
+              Close
+            </button>
           </div>
         </div>
       )}
@@ -306,28 +412,52 @@ export function ChainQuizzesSection() {
   const [showQuiz, setShowQuiz] = React.useState(false);
 
   const sentences = React.useMemo(
-    () => LEVELS.map(lv => ({ lv, text: EXAMPLES[lang][lv] })),
+    () => LEVELS.map((lv) => ({ lv, text: EXAMPLES[lang][lv] })),
     [lang]
   );
 
   return (
     <section id="chain-quizzes" className={styles.sectionAlt}>
-      <motion.h2 className={styles.sectionTitle} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }}>
+      <motion.h2
+        className={styles.sectionTitle}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
         Chain Quizzes
       </motion.h2>
 
-      <motion.p className={styles.chainLead} variants={fadeUp} custom={1} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }}>
+      <motion.p
+        className={styles.chainLead}
+        variants={fadeUp}
+        custom={1}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
         Learn exactly the way LLMs do — by predicting the <em>next token</em>.
         We stream real sentences and ask your brain to complete them step by step, building a fluent chain.
       </motion.p>
 
       {/* Language selector */}
-      <motion.div className={styles.langBar} variants={fadeUp} custom={2} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.45 }}>
-        {LANGS.map(l => (
+      <motion.div
+        className={styles.langBar}
+        variants={fadeUp}
+        custom={2}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.45 }}
+      >
+        {LANGS.map((l) => (
           <button
             key={l.key}
             className={`${styles.langChip} ${lang === l.key ? styles.langChipActive : ""}`}
-            onClick={() => { setLang(l.key); setShowQuiz(false); }}
+            onClick={() => {
+              setLang(l.key);
+              setShowQuiz(false);
+            }}
+            dir={l.key === "ar" ? "rtl" : "ltr"}
           >
             {l.label}
           </button>
@@ -335,32 +465,70 @@ export function ChainQuizzesSection() {
       </motion.div>
 
       {/* Streaming examples (CEFR A1→C2) */}
-      <motion.div className={styles.streamGrid} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.35 }} variants={{ visible: { transition: { staggerChildren: 0.1 } } }}>
-        {sentences.map((s, i) => (
-          <motion.article key={s.lv} className={styles.streamCard} variants={zoomIn} whileHover={{ y: -6, boxShadow: "0 16px 36px rgba(0,0,0,0.12)" }}>
+      <motion.div
+        className={styles.streamGrid}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.35 }}
+        variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+      >
+        {sentences.map((s) => (
+          <motion.article
+            key={`${lang}-${s.lv}`}
+            className={styles.streamCard}
+            variants={zoomIn}
+            whileHover={{ y: -6, boxShadow: "0 16px 36px rgba(0,0,0,0.12)" }}
+            dir={lang === "ar" ? "rtl" : "ltr"}
+          >
             <div className={styles.levelPill}>{s.lv}</div>
             <StreamingSentence sentence={s.text} lang={lang} />
           </motion.article>
         ))}
       </motion.div>
 
-      <motion.p className={styles.chainNote} variants={fadeUp} custom={3} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.4 }}>
-        Your mind can learn this way too. Predict one word at a time, lock it in, and let the chain grow into a sentence — then into fluent speech.
+      <motion.p
+        className={styles.chainNote}
+        variants={fadeUp}
+        custom={3}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.4 }}
+      >
+        Your mind can learn this way too. Predict one word at a time, lock it in,
+        and let the chain grow into a sentence — then into fluent speech.
       </motion.p>
 
       {/* Difficulty selector */}
-      <motion.div className={styles.levelBar} variants={fadeUp} custom={4} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.4 }}>
+      <motion.div
+        className={styles.levelBar}
+        variants={fadeUp}
+        custom={4}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.4 }}
+      >
         <span className={styles.levelLabel}>Difficulty</span>
         <div className={styles.levelChips}>
-          {LEVELS.map(lv => (
-            <button key={lv} className={`${styles.levelChip} ${level === lv ? styles.levelChipActive : ""}`} onClick={() => setLevel(lv)}>
+          {LEVELS.map((lv) => (
+            <button
+              key={lv}
+              className={`${styles.levelChip} ${level === lv ? styles.levelChipActive : ""}`}
+              onClick={() => setLevel(lv)}
+            >
               {lv} <span className={styles.levelTime}>{TIME_PER_WORD[lv]}s/word</span>
             </button>
           ))}
         </div>
       </motion.div>
 
-      <motion.div className={styles.ctaRow} variants={fadeUp} custom={5} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }}>
+      <motion.div
+        className={styles.ctaRow}
+        variants={fadeUp}
+        custom={5}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+      >
         {!showQuiz ? (
           <button className={`${styles.btn} ${styles.btnPrimary}`} onClick={() => setShowQuiz(true)}>
             Try it
@@ -373,10 +541,18 @@ export function ChainQuizzesSection() {
       </motion.div>
 
       {showQuiz && (
-        <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: false, amount: 0.3 }}>
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <WebChainQuiz lang={lang} level={level} onClose={() => setShowQuiz(false)} />
         </motion.div>
       )}
     </section>
   );
 }
+
+/* Default export so `import ChainQuizzesSection from ".../ChainQuizzesSection"` works */
+export default ChainQuizzesSection;
