@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import styles from "../../styles/pages/Business.module.css";
+import styles from "../styles/pages/Business.module.css";
 
 /* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
