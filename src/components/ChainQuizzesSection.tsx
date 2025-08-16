@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion, Variants } from "framer-motion";
+import { motion, Variants, AnimatePresence } from "framer-motion";
 import styles from "../styles/pages/Business.module.css";
 
 /* ───────── Motion variants ───────── */
@@ -149,10 +149,9 @@ const isCJK = (lang: LangKey) => lang === "zh" || lang === "ja" || lang === "ko"
 
 const tokenize = (s: string, lang: LangKey) => {
   if (isCJK(lang)) {
-    // Visual tokenization for CJK: per character (spaces removed).
+    // CJK: 한 줄로 띄어쓰기 없이 시각적 토큰화(문자 단위)
     return s.replace(/\s+/g, "").split("").filter(Boolean);
   }
-  // Others: whitespace tokenization.
   return s.trim().split(/\s+/);
 };
 
@@ -179,7 +178,7 @@ function buildDistractors(
   );
 
   const fallbackMap: Record<LangKey, string[]> = {
-    en: ["and", "with", "from", "on", "into", "about", "over,","before"],
+    en: ["and", "with", "from", "on", "into", "about", "over", "before"],
     fr: ["et", "avec", "dans", "pour", "sur", "avant", "après", "chez"],
     es: ["y", "con", "de", "para", "en", "sobre", "antes", "después"],
     zh: ["在", "和", "到", "把", "对", "从", "给", "向"],
@@ -207,7 +206,48 @@ function buildDistractors(
   return chosen.slice(0, 2);
 }
 
-/* ───────────────────────── Streaming sentence (LLM-like) ───────────────────────── */
+/* ───────────────────────── Token Connector (SVG curve) ───────────────────────── */
+function Connector({
+  fromEl,
+  toEl,
+  host,
+}: {
+  fromEl: HTMLElement | null;
+  toEl: HTMLElement | null;
+  host: HTMLElement | null;
+}) {
+  const [path, setPath] = React.useState<string | null>(null);
+
+  React.useLayoutEffect(() => {
+    if (!fromEl || !toEl || !host) return;
+    const fr = fromEl.getBoundingClientRect();
+    const tr = toEl.getBoundingClientRect();
+    const hr = host.getBoundingClientRect();
+
+    const ax = fr.left + fr.width / 2 - hr.left;
+    const bx = tr.left + tr.width / 2 - hr.left;
+    const y = 12;               // 토큰 상단 근처
+    const lift = -10;           // 위로 들어 올릴 정도(곡선 높이)
+
+    const d = `M ${ax},${y} C ${ax},${y + lift} ${bx},${y + lift} ${bx},${y}`;
+    setPath(d);
+  }, [fromEl, toEl, host]);
+
+  if (!path) return null;
+  return (
+    <svg className={styles.connectorSvg} aria-hidden>
+      <motion.path
+        d={path}
+        className={styles.connectorPath}
+        initial={{ pathLength: 0, opacity: 0.8 }}
+        animate={{ pathLength: 1, opacity: 1 }}
+        transition={{ duration: 0.45, ease: "easeOut" }}
+      />
+    </svg>
+  );
+}
+
+/* ───────────────────────── Streaming sentence ───────────────────────── */
 function StreamingSentence({
   sentence,
   lang,
@@ -219,6 +259,8 @@ function StreamingSentence({
 }) {
   const tokens = React.useMemo(() => tokenize(sentence, lang), [sentence, lang]);
   const [showN, setShowN] = React.useState(0);
+  const shellRef = React.useRef<HTMLDivElement | null>(null);
+  const tokenRefs = React.useRef<(HTMLSpanElement | null)[]>([]);
 
   React.useEffect(() => {
     setShowN(0);
@@ -231,17 +273,33 @@ function StreamingSentence({
     return () => clearInterval(timer);
   }, [sentence, lang, speed, tokens.length]);
 
+  const lastFrom =
+    showN >= 2 ? tokenRefs.current[showN - 2] ?? null : null;
+  const lastTo =
+    showN >= 2 ? tokenRefs.current[showN - 1] ?? null : null;
+
   return (
-    <div className={styles.streamBox}>
-      {tokens.map((tk, i) => {
-        const visible = i < showN;
-        return (
-          <span key={i} className={`${styles.token} ${visible ? styles.tokenIn : styles.tokenGhost}`}>
-            {tk}
-          </span>
-        );
-      })}
-      {showN < tokens.length && <span className={styles.cursor} aria-hidden>▌</span>}
+    <div className={styles.streamShell} ref={shellRef}>
+      {/* 마지막 두 토큰을 연결하는 곡선 */}
+      {showN >= 2 && (
+        <Connector fromEl={lastFrom} toEl={lastTo} host={shellRef.current} />
+      )}
+
+      <div className={styles.streamBox}>
+        {tokens.map((tk, i) => {
+          const visible = i < showN;
+          return (
+            <span
+              key={i}
+              ref={(el) => (tokenRefs.current[i] = el)}
+              className={`${styles.token} ${visible ? styles.tokenIn : styles.tokenGhost}`}
+            >
+              {tk}
+            </span>
+          );
+        })}
+        {showN < tokens.length && <span className={styles.cursor} aria-hidden>▌</span>}
+      </div>
     </div>
   );
 }
@@ -259,7 +317,7 @@ function WebChainQuiz({
   const base = EXAMPLES[lang][level];
   const tokens = React.useMemo(() => tokenize(base, lang), [base, lang]);
   const startIndex = Math.min(2, Math.max(0, tokens.length - 1));
-  const [i, setI] = React.useState(startIndex); // reveal from 3rd token
+  const [i, setI] = React.useState(startIndex); // 3번째 토큰부터 선택
   const [assembled, setAssembled] = React.useState(
     tokens.slice(0, startIndex).join(isCJK(lang) ? "" : " ")
   );
@@ -297,7 +355,7 @@ function WebChainQuiz({
       });
     }, 1000);
     return () => clearInterval(t);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-comments
   }, [round, done, level]);
 
   const correct = tokens[i] || "";
@@ -320,7 +378,7 @@ function WebChainQuiz({
     if (picked) return;
     setPicked(txt);
     setTimeout(() => {
-      // visually attach the true next token regardless of choice
+      // 실제 다음 정답 토큰을 체인에 붙임(시각적으로)
       const newAsm = (assembled + (isCJK(lang) ? "" : " ") + (tokens[i] || "")).trim();
       setAssembled(newAsm);
       if (isCorrect) setScore((s) => s + 1);
@@ -370,6 +428,7 @@ function WebChainQuiz({
             const selected = picked === op.text;
             const wrongSelected = selected && !op.correct && picked !== "__timeout__";
             const showTick = !!picked && op.correct;
+            const showAnswerHint = wrongSelected; // 틀리면 정답 힌트 노출
             return (
               <button
                 key={idx}
@@ -385,6 +444,11 @@ function WebChainQuiz({
                 <div className={styles.optMeta}>
                   {showTick && <span className={styles.tick}>✓</span>}
                   {wrongSelected && <span className={styles.cross}>✕</span>}
+                  {showAnswerHint && (
+                    <span className={styles.suggestionPill}>
+                      Answer: <span className={styles.suggestionText}>{correct}</span>
+                    </span>
+                  )}
                 </div>
               </button>
             );
@@ -411,10 +475,7 @@ export function ChainQuizzesSection() {
   const [level, setLevel] = React.useState<CEFR>("B1");
   const [showQuiz, setShowQuiz] = React.useState(false);
 
-  const sentences = React.useMemo(
-    () => LEVELS.map((lv) => ({ lv, text: EXAMPLES[lang][lv] })),
-    [lang]
-  );
+  const currentSentence = React.useMemo(() => EXAMPLES[lang][level], [lang, level]);
 
   return (
     <section id="chain-quizzes" className={styles.sectionAlt}>
@@ -455,7 +516,7 @@ export function ChainQuizzesSection() {
             className={`${styles.langChip} ${lang === l.key ? styles.langChipActive : ""}`}
             onClick={() => {
               setLang(l.key);
-              setShowQuiz(false);
+              // 선택만 바꾸고 스테이지는 유지(크로스페이드로 자연 전환)
             }}
             dir={l.key === "ar" ? "rtl" : "ltr"}
           >
@@ -464,45 +525,11 @@ export function ChainQuizzesSection() {
         ))}
       </motion.div>
 
-      {/* Streaming examples (CEFR A1→C2) */}
-      <motion.div
-        className={styles.streamGrid}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.35 }}
-        variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-      >
-        {sentences.map((s) => (
-          <motion.article
-            key={`${lang}-${s.lv}`}
-            className={styles.streamCard}
-            variants={zoomIn}
-            whileHover={{ y: -6, boxShadow: "0 16px 36px rgba(0,0,0,0.12)" }}
-            dir={lang === "ar" ? "rtl" : "ltr"}
-          >
-            <div className={styles.levelPill}>{s.lv}</div>
-            <StreamingSentence sentence={s.text} lang={lang} />
-          </motion.article>
-        ))}
-      </motion.div>
-
-      <motion.p
-        className={styles.chainNote}
-        variants={fadeUp}
-        custom={3}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.4 }}
-      >
-        Your mind can learn this way too. Predict one word at a time, lock it in,
-        and let the chain grow into a sentence — then into fluent speech.
-      </motion.p>
-
-      {/* Difficulty selector */}
+      {/* Difficulty selector (퀴즈 시간도 연동) */}
       <motion.div
         className={styles.levelBar}
         variants={fadeUp}
-        custom={4}
+        custom={3}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
@@ -520,6 +547,35 @@ export function ChainQuizzesSection() {
           ))}
         </div>
       </motion.div>
+
+      {/* Single streaming sentence (cross-fade on lang/level change) */}
+      <div className={styles.streamStage}>
+        <AnimatePresence mode="popLayout">
+          <motion.article
+            key={`${lang}-${level}`}
+            className={styles.streamCard}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.35, ease: "easeOut" }}
+            dir={lang === "ar" ? "rtl" : "ltr"}
+          >
+            <div className={styles.levelPill}>{level}</div>
+            <StreamingSentence sentence={currentSentence} lang={lang} />
+          </motion.article>
+        </AnimatePresence>
+      </div>
+
+      <motion.p
+        className={styles.chainNote}
+        variants={fadeUp}
+        custom={4}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.4 }}
+      >
+        Your mind can learn this way too. Predict one word at a time, lock it in, and let the chain grow into a sentence — then into fluent speech.
+      </motion.p>
 
       <motion.div
         className={styles.ctaRow}
@@ -554,5 +610,5 @@ export function ChainQuizzesSection() {
   );
 }
 
-/* Default export so `import ChainQuizzesSection from ".../ChainQuizzesSection"` works */
+/* Default export so page can `import ChainQuizzesSection from ".../ChainQuizzesSection"` */
 export default ChainQuizzesSection;
