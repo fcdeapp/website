@@ -1487,3 +1487,101 @@
 .swIos{ background:#f2542d; }
 .swAndroid{ background:#ff9e80; }
 .swSum{ background:#d8315b; }
+
+/* ========== Mobile tweaks for "What Makes Abrody Different" ========== */
+
+/* 1) small screens: single-column, larger gap, reduced padding for cards */
+@media (max-width: 640px) {
+  .diffGrid {
+    grid-template-columns: 1fr;      /* 한 줄에 하나 */
+    gap: 1rem;                       /* 카드 간격 약간 늘림 */
+    padding: 0 0.5rem;               /* 측면 여유 */
+  }
+
+  .diffCard {
+    padding: 1.1rem 1rem;            /* 패딩 축소 (모바일에 맞게) */
+    border-radius: 14px;             /* 약간 작게 */
+    min-height: auto;                /* 높이 고정 해제 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    -webkit-tap-highlight-color: transparent; /* 터치 하이라이트 제거 */
+    touch-action: manipulation;      /* 빠른 터치 반응 유도 */
+  }
+
+  .diffCard h3 {
+    font-size: 1rem;                 /* 제목 크기 조정 */
+    margin-bottom: 0.4rem;
+  }
+
+  .diffCard p {
+    font-size: 0.95rem;              /* 본문 약간 키워 가독성 보정 */
+    line-height: 1.55;
+    margin-bottom: 0.25rem;
+  }
+
+  /* 카드 장식(외곽 그라데이션)은 모바일에서 제거하여 렌더링 비용 절감 */
+  .diffCard::before {
+    display: none !important;
+  }
+
+  /* flip header: 세로 스택(토글/라벨이 좁아질 때 깨지지 않도록) */
+  .flipHeader {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.25rem 0 1rem;
+  }
+  .flowLabel, .flipSwitch {
+    width: auto;                     /* 축소된 공간에 맞춤 */
+    line-height: 1;
+  }
+
+  /* diffLead (설명문) 모바일 최적화 */
+  .diffLead {
+    font-size: 1rem;
+    max-width: 36rem;
+    padding: 0 0.5rem;
+  }
+}
+
+/* 2) Disable hover effects on touch-only devices, keep them on pointer-capable devices */
+@media (hover: none) and (pointer: coarse) {
+  .diffCard,
+  .card,
+  .flowStep {
+    transition: transform .18s ease, box-shadow .18s ease; /* 경미한 트랜지션만 유지 */
+  }
+  .diffCard:hover,
+  .card:hover,
+  .flowStep:hover {
+    transform: none !important;
+    box-shadow: 0 6px 18px rgba(17,12,43,0.06) !important; /* 과도한 hover 제거 */
+  }
+}
+
+/* 3) Keep hover effects for desktop / pointer devices only (avoid janky mobile hover) */
+@media (hover: hover) and (pointer: fine) {
+  .diffCard {
+    cursor: pointer;
+  }
+  .diffCard:active {
+    transform: translateY(-2px);
+  }
+}
+
+/* 4) Focus-visible for keyboard users (접근성) */
+.diffCard:focus-visible {
+  outline: 3px solid rgba(216,49,91,0.12);
+  outline-offset: 4px;
+  box-shadow: 0 10px 30px rgba(17,12,43,0.06);
+}
+
+/* 5) Slightly enlarge the touch target for legend / flip controls on small screens */
+@media (max-width: 640px) {
+  .flowLabel, .flipSwitch {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.9rem;
+    border-radius: 999px;
+  }
+}
