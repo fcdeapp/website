@@ -7,6 +7,7 @@ import { motion, Variants } from "framer-motion";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/About.module.css";
 import stylesB from "../../styles/pages/Business.module.css";
+import stylesC from "../../styles/Home.module.css";
 import WebFooter from "../../components/WebFooter";
 import CountryBall from "../../components/CountryBall";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
@@ -295,6 +296,82 @@ export default function About() {
       </section>
 
       <div className={stylesB.waveSplitFlip} />
+
+          <section className={stylesC.betaSection} data-aos="fade-up">
+            <div className={`${stylesC.betaCard} ${stylesC.glassCard}`}>
+              <div className={stylesC.sectionHead}>
+                <span className={stylesC.sectionKicker}>Download</span>
+                <h2 className={stylesC.betaTitle}>Install on iOS</h2>
+                <p className={stylesC.betaSubtitle}>
+                  Available for Canada, Australia, UK &amp; Korea
+                </p>
+              </div>
+              <div className={stylesC.ctaButtons}>
+                <a
+                  href="https://apps.apple.com/ca/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  Canada
+                </a>
+                <a
+                  href="https://apps.apple.com/au/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  Australia
+                </a>
+                <a
+                  href="https://apps.apple.com/gb/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  UK
+                </a>
+                <a
+                  href="https://apps.apple.com/kr/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  Korea
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section className={stylesC.betaSection} data-aos="fade-up">
+            <div className={`${stylesC.betaCard} ${stylesC.glassCard}`}>
+              <div className={stylesC.sectionHead}>
+                <span className={stylesC.sectionKicker}>Early Access</span>
+                <h2 className={stylesC.betaTitle}>Android Beta Test</h2>
+                <p className={stylesC.betaSubtitle}>
+                  Help shape Abrody by testing upcoming features before anyone else — your feedback matters!
+                </p>
+              </div>
+              <div className={stylesC.ctaButtons}>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  Apply for Beta (KR)
+                </a>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSe489LaaOkRxUXYFx64aEee5Q5_IhKmMPKrb6--P8sSrHNGfQ/viewform?usp=dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  Apply for Beta (EN)
+                </a>
+              </div>
+            </div>
+          </section>
 
       </div>
       <WebFooter />

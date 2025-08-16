@@ -7,6 +7,7 @@ import { motion, Variants } from "framer-motion";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/About.module.css";
 import stylesB from "../../styles/pages/Business.module.css";
+import stylesC from "../../styles/Home.module.css";
 import WebFooter from "../../components/WebFooter";
 import CountryBall from "../../components/CountryBall";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
@@ -287,6 +288,59 @@ export default function About() {
       </section>
 
       <div className={stylesB.waveSplitFlip} />
+
+          <section className={stylesC.betaSection} data-aos="fade-up">
+            <div className={`${stylesC.betaCard} ${stylesC.glassCard}`}>
+              <div className={stylesC.sectionHead}>
+                <span className={stylesC.sectionKicker}>다운로드</span>
+                <h2 className={stylesC.betaTitle}>iOS에서 설치하기</h2>
+                <p className={stylesC.betaSubtitle}>
+                캐나다, 호주, 영국, 한국에서 이용 가능합니다
+                </p>
+              </div>
+              <div className={stylesC.ctaButtons}>
+                <a
+                  href="https://apps.apple.com/kr/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  클릭
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section className={stylesC.betaSection} data-aos="fade-up">
+            <div className={`${stylesC.betaCard} ${stylesC.glassCard}`}>
+              <div className={stylesC.sectionHead}>
+                <span className={stylesC.sectionKicker}>얼리 액세스</span>
+                <h2 className={stylesC.betaTitle}>안드로이드 베타 테스트</h2>
+                <p className={stylesC.betaSubtitle}>
+                정식 출시 전에 새로운 기능을 먼저 체험하고 의견을 들려주세요.  
+                여러분의 피드백이 Abrody를 더 나은 서비스로 만듭니다!
+                </p>
+              </div>
+              <div className={stylesC.ctaButtons}>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  베타 신청 (한국어)
+                </a>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSe489LaaOkRxUXYFx64aEee5Q5_IhKmMPKrb6--P8sSrHNGfQ/viewform?usp=dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  베타 신청 (영어)
+                </a>
+              </div>
+            </div>
+          </section>
 
       </div>
       <WebFooter />
