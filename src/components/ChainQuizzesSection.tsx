@@ -237,26 +237,52 @@ function Connector({
     }, [fromEl, toEl, host]);
   
     if (!path) return null;
-  
+    const gid = React.useId();
+    const [grad, setGrad] = React.useState<{x1:number;y1:number;x2:number;y2:number} | null>(null);
+    setGrad({ x1: ax, y1: y, x2: bx, y2: y });
+
     return (
-      <motion.svg
-        className={styles.connectorSvg}
-        aria-hidden
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        style={{ pointerEvents: "none" }}
-      >
-        <motion.path
-          d={path}
-          className={styles.connectorPath}
-          initial={{ pathLength: 0 }}
-          animate={{ pathLength: 1 }}
-          exit={{ pathLength: 0 }}
-          transition={{ duration: 0.45, ease: "easeOut" }}
-        />
-      </motion.svg>
-    );
+        <motion.svg
+          className={styles.connectorSvg}
+          aria-hidden
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          style={{ pointerEvents: "none" }}
+        >
+          {/* 경로 방향에 맞춘 그라디언트 정의 */}
+          <defs>
+            <linearGradient
+              id={`chainGrad-${gid}`}
+              gradientUnits="userSpaceOnUse"
+              x1={grad?.x1 ?? 0}
+              y1={grad?.y1 ?? 0}
+              x2={grad?.x2 ?? 0}
+              y2={grad?.y2 ?? 0}
+            >
+              <stop offset="0%" stopColor="#f2542d" />
+              <stop offset="100%" stopColor="#d8315b" />
+            </linearGradient>
+          </defs>
+      
+          {/* 연한 베이스 라인 */}
+          <motion.path
+            d={path}
+            className={styles.connectorBase}
+          />
+      
+          {/* 경로를 따라 이동하는 하이라이트(부분 채색) */}
+          <motion.path
+            d={path}
+            className={styles.connectorHighlight}
+            stroke={`url(#chainGrad-${gid})`}
+            initial={{ pathLength: 0.3, pathOffset: 1 }}
+            animate={{ pathLength: 0.3, pathOffset: 0 }}
+            exit={{ pathLength: 0.3, pathOffset: 0.2, opacity: 0 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+          />
+        </motion.svg>
+      );      
   }
   
 /* ───────────────────────── Streaming sentence ───────────────────────── */
@@ -320,36 +346,45 @@ function StreamingSentence({
         {showN >= 2 && (
           <Connector fromEl={lastFrom} toEl={lastTo} host={shellRef.current} />
         )}
-  
-        {/* 진행 인디케이터: 깜빡이 대신 움직이는 점 */}
+    
         <motion.div
-          className={styles.streamIndicator}
-          initial={{ opacity: 0, scale: 0.6 }}
-          animate={{
-            opacity: indicatorPos ? 1 : 0,
-            left: indicatorPos ? indicatorPos.x : 0,
-            top: indicatorPos ? indicatorPos.y - 6 : 0,
-            scale: indicatorPos ? 1 : 0.6,
-          }}
-          transition={{ type: "spring", stiffness: 280, damping: 28 }}
-          aria-hidden
-        />
+            className={styles.streamIndicator}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{
+                opacity: indicatorPos ? 1 : 0,
+                left: indicatorPos ? indicatorPos.x : 0,
+                top: indicatorPos ? indicatorPos.y - 6 : 0,
+                scale: indicatorPos ? 1 : 0.8,
+            }}
+            transition={{ type: "spring", stiffness: 280, damping: 28 }}
+            aria-hidden
+            >
+            <span className={styles.pulseDot} />
+            <span className={styles.pulseDot} />
+            <span className={styles.pulseDot} />
+        </motion.div>
   
-        <div className={styles.streamBox}>
-          {tokens.map((tk, i) => {
-            const visible = i < showN;
-            return (
-              <span
-                key={i}
-                ref={(el) => { tokenRefs.current[i] = el; }}
-                className={`${styles.token} ${visible ? styles.tokenIn : styles.tokenGhost}`}
-              >
-                {tk}
-              </span>
-            );
-          })}
-          {/* 기존 깜빡이 커서 제거 — 대신 인디케이터 사용 */}
-        </div>
+  <div className={styles.streamBoxFrame}>
+    <div className={styles.streamBox}>
+        {tokens.map((tk, i) => {
+        const visible = i < showN;
+        const isActive = visible && i === showN - 1;
+        return (
+            <span
+            key={i}
+            ref={(el) => { tokenRefs.current[i] = el; }}
+            className={[
+                styles.token,
+                visible ? styles.tokenIn : styles.tokenGhost,
+                isActive ? styles.tokenActive : ""
+            ].join(" ")}
+            >
+            {tk}
+            </span>
+        );
+        })}
+    </div>
+    </div>
       </div>
     );  
 }
