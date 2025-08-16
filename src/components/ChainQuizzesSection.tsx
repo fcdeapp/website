@@ -47,105 +47,105 @@ const LANGS: { key: LangKey; label: string }[] = [
 
 const EXAMPLES: Record<LangKey, Record<CEFR, string>> = {
     en: {
-      A1: "I like coffee in the morning.",
+      A1: "I drink coffee every morning.",
       A2: "She usually takes the bus to work after breakfast.",
-      B1: "We decided to cancel the trip because the weather looked bad.",
-      B2: "They negotiated better terms for us after comparing several proposals.",
-      C1: "Her research substantially advances the field by revealing previously overlooked patterns.",
-      C2: "The findings, while provisional, thoroughly challenge and reframe long-standing assumptions.",
+      B1: "We decided to cancel the trip because the forecast looked terrible.",
+      B2: "After comparing several proposals, they managed to negotiate better terms for us.",
+      C1: "Her recent research significantly advances the field by identifying previously overlooked patterns.",
+      C2: "The provisional findings rigorously challenge long-standing assumptions and compel a thorough reevaluation of established theories.",
     },
     fr: {
-      A1: "Je bois du café le matin.",
-      A2: "Elle prend souvent le bus pour aller au travail après le petit-déjeuner.",
-      B1: "Nous avons décidé d'annuler le voyage parce que la météo s'annonçait mauvaise.",
-      B2: "Ils ont négocié pour nous de meilleures conditions après avoir comparé plusieurs offres.",
-      C1: "Ses recherches font progresser le domaine en mettant au jour des schémas jusque-là négligés.",
-      C2: "Ces résultats, bien que provisoires, bousculent en profondeur des présupposés de longue date.",
+      A1: "Je bois du café tous les matins.",
+      A2: "Après le petit-déjeuner, elle prend généralement le bus pour aller au travail.",
+      B1: "Nous avons décidé d’annuler le voyage parce que les prévisions annonçaient du mauvais temps.",
+      B2: "Après avoir comparé plusieurs offres, ils ont réussi à négocier de meilleures conditions pour nous.",
+      C1: "Ses recherches font progresser le domaine en révélant des schémas jusque-là négligés.",
+      C2: "Ces résultats provisoires remettent en cause des hypothèses anciennes et imposent une redéfinition en profondeur.",
     },
     es: {
-      A1: "Me gusta el café por la mañana.",
-      A2: "Ella suele tomar el autobús al trabajo después del desayuno.",
-      B1: "Decidimos cancelar el viaje porque el clima se veía mal.",
-      B2: "Negociaron mejores condiciones para nosotros tras comparar varias ofertas.",
-      C1: "Su investigación impulsa el campo al revelar patrones antes pasados por alto.",
-      C2: "Los hallazgos, aunque provisionales, cuestionan y reconfiguran supuestos arraigados.",
+      A1: "Bebo café todas las mañanas.",
+      A2: "Después del desayuno, ella suele ir al trabajo en autobús.",
+      B1: "Decidimos cancelar el viaje porque el pronóstico anunciaba mal tiempo.",
+      B2: "Tras comparar varias propuestas, lograron negociar condiciones más favorables para nosotros.",
+      C1: "Su investigación impulsa el campo al descubrir patrones que antes se habían pasado por alto.",
+      C2: "Los resultados provisionales cuestionan rigurosamente supuestos arraigados y obligan a replantearlos por completo.",
     },
     zh: {
-      A1: "我早上喜欢喝咖啡。",
+      A1: "我每天早上都喝咖啡。",
       A2: "她通常吃完早餐后坐公交车去上班。",
-      B1: "因为天气不好，我们决定取消旅行。",
-      B2: "他们在比较多份方案后为我们谈下了更好的条件。",
-      C1: "她的研究通过揭示以往被忽视的模式，显著推进了该领域。",
-      C2: "这些初步结论全面挑战并重塑了长期以来的既有假设。",
+      B1: "因为天气预报不好，我们决定取消旅行。",
+      B2: "他们在比较多个方案后，为我们谈下了更有利的条件。",
+      C1: "她的研究通过揭示以往被忽视的模式，显著推动了该领域的发展。",
+      C2: "这些初步结论严格地挑战长期以来的假设，并迫使我们重新审视既有理论。",
     },
     ja: {
-      A1: "朝はコーヒーが好きです。",
+      A1: "毎朝コーヒーを飲みます。",
       A2: "彼女は朝食のあと、たいていバスで会社に行きます。",
-      B1: "天気が悪そうだったので、私たちは旅行を中止することにしました。",
+      B1: "天気予報が悪かったので、私たちは旅行を中止することにしました。",
       B2: "いくつかの提案を比較した結果、彼らは私たちに有利な条件を引き出しました。",
       C1: "彼女の研究は、見過ごされてきたパターンを明らかにすることで分野を大きく前進させています。",
-      C2: "その知見は暫定的ながら、長年の前提を根本から揺さぶり再定義します。",
+      C2: "その暫定的な知見は、長年の前提を根本から揺さぶり、再定義を迫ります。",
     },
     ko: {
-      A1: "아침에 저는 커피를 좋아해요.",
+      A1: "저는 매일 아침 커피를 마셔요.",
       A2: "그녀는 보통 아침을 먹고 버스를 타고 출근해요.",
-      B1: "날씨가 나빠 보였기 때문에 우리는 여행을 취소하기로 했어요.",
-      B2: "여러 제안을 비교한 끝에 그들은 우리에게 더 유리한 조건을 이끌어냈어요.",
-      C1: "그녀의 연구는 그동안 간과되던 패턴을 밝혀내며 분야를 크게 진전시킵니다.",
-      C2: "이 발견은 잠정적이지만 오랜 가정을 근본적으로 재구성합니다.",
+      B1: "날씨 예보가 좋지 않아서 우리는 여행을 취소하기로 했어요.",
+      B2: "여러 제안을 비교한 끝에 그들은 우리에게 더 유리한 조건을 끌어냈어요.",
+      C1: "그녀의 연구는 그동안 간과되던 패턴을 밝혀내며 학문 분야를 크게 진전시킵니다.",
+      C2: "이 잠정적인 발견은 오랫동안 굳어져 있던 가정을 철저히 재검토하고 근본적으로 재구성합니다.",
     },
     ar: {
-      A1: "أحب القهوة في الصباح.",
-      A2: "غالبًا ما تستقل الحافلة إلى العمل بعد الإفطار.",
-      B1: "قررنا إلغاء الرحلة لأن الطقس بدا سيئًا.",
-      B2: "بعد مقارنة عدة عروض، تفاوضوا على شروط أفضل لنا.",
-      C1: "يدفع بحثُها المجال قدمًا بكشف أنماط كانت مُهمَلة من قبل.",
-      C2: "تُعيد هذه النتائج، رغم أنها أولية، تشكيل افتراضات راسخة منذ زمن.",
+      A1: "أشرب القهوة كل صباح.",
+      A2: "بعد الإفطار، غالبًا ما تستقلّ الحافلة إلى العمل.",
+      B1: "قررنا إلغاء الرحلة لأنّ النشرة الجوية كانت سيئة.",
+      B2: "بعد مقارنة عدة عروض، نجحوا في التفاوض على شروط أفضل لنا.",
+      C1: "يدفع بحثُها المجال قُدُمًا بكشف أنماطٍ كانت مُهمَلة من قبل.",
+      C2: "تعيد هذه النتائج الأولية، رغم كونها مؤقتة، صياغة افتراضات راسخة منذ زمن طويل.",
     },
     it: {
-      A1: "Mi piace il caffè al mattino.",
-      A2: "Di solito dopo la colazione prende l'autobus per andare al lavoro.",
-      B1: "Abbiamo deciso di cancellare il viaggio perché il meteo sembrava brutto.",
-      B2: "Dopo aver confrontato varie proposte, hanno negoziato condizioni migliori per noi.",
-      C1: "La sua ricerca fa avanzare il settore rivelando schemi finora trascurati.",
-      C2: "I risultati, sebbene preliminari, mettono profondamente in discussione e ridefiniscono presupposti di lunga data.",
+      A1: "Bevo caffè ogni mattina.",
+      A2: "Dopo la colazione prende di solito l’autobus per andare al lavoro.",
+      B1: "Abbiamo deciso di cancellare il viaggio perché le previsioni del tempo erano brutte.",
+      B2: "Dopo aver confrontato varie proposte, sono riusciti a negoziare condizioni migliori per noi.",
+      C1: "La sua ricerca fa progredire il settore mettendo in luce schemi finora trascurati.",
+      C2: "I risultati provvisori mettono in discussione presupposti di lunga data e li ridefiniscono a fondo.",
     },
     de: {
-      A1: "Ich mag morgens Kaffee.",
-      A2: "Sie fährt nach dem Frühstück meist mit dem Bus zur Arbeit.",
-      B1: "Wir beschlossen, die Reise abzusagen, weil das Wetter schlecht aussah.",
-      B2: "Nach dem Vergleich mehrerer Angebote handelten sie bessere Bedingungen für uns aus.",
-      C1: "Ihre Forschung treibt das Fachgebiet voran, indem sie bislang übersehene Muster aufdeckt.",
-      C2: "Die Ergebnisse, wenngleich vorläufig, stellen langjährige Annahmen grundlegend in Frage und ordnen sie neu.",
+      A1: "Ich trinke jeden Morgen Kaffee.",
+      A2: "Nach dem Frühstück fährt sie meistens mit dem Bus zur Arbeit.",
+      B1: "Wir beschlossen, die Reise abzusagen, weil die Wettervorhersage schlecht war.",
+      B2: "Nach dem Vergleich mehrerer Angebote handelten sie für uns bessere Konditionen aus.",
+      C1: "Ihre Forschung treibt das Fachgebiet voran, indem sie bislang übersehene Muster sichtbar macht.",
+      C2: "Die vorläufigen Ergebnisse stellen langjährige Annahmen ernsthaft infrage und ordnen sie neu.",
     },
     pt: {
-      A1: "Eu gosto de café de manhã.",
-      A2: "Ela costuma, após o café da manhã, pegar o ônibus para o trabalho.",
-      B1: "Decidimos cancelar a viagem porque o tempo parecia ruim.",
-      B2: "Depois de comparar várias propostas, negociaram condições melhores para nós.",
-      C1: "A pesquisa dela avança a área ao revelar padrões antes negligenciados.",
-      C2: "As conclusões, ainda preliminares, desafiam e reconfiguram pressupostos de longa data.",
+      A1: "Eu tomo café todas as manhãs.",
+      A2: "Depois do café da manhã, ela geralmente pega o ônibus para o trabalho.",
+      B1: "Decidimos cancelar a viagem porque a previsão do tempo era ruim.",
+      B2: "Após comparar várias propostas, conseguiram negociar condições melhores para nós.",
+      C1: "A pesquisa dela faz a área avançar ao revelar padrões antes negligenciados.",
+      C2: "Os resultados provisórios questionam pressupostos antigos e os redefinem de forma profunda.",
     },
     hi: {
-      A1: "मुझे सुबह कॉफ़ी पसंद है।",
-      A2: "वह अक्सर नाश्ते के बाद बस से काम पर जाती है।",
-      B1: "मौसम खराब लगने पर हमने यात्रा रद्द करने का फैसला किया।",
-      B2: "कई प्रस्तावों की तुलना के बाद उन्होंने हमारे लिए बेहतर शर्तें तय कीं।",
-      C1: "उसका शोध, पहले अनदेखे पैटर्न उजागर करके, क्षेत्र को काफ़ी आगे बढ़ाता है।",
-      C2: "ये निष्कर्ष, भले ही प्रारंभिक हों, पुरानी धारणाओं को गहराई से चुनौती देकर पुनर्परिभाषित करते हैं।",
+      A1: "मैं हर सुबह कॉफ़ी पीता हूँ।",
+      A2: "नाश्ते के बाद वह आमतौर पर बस से काम पर जाती है।",
+      B1: "मौसम का पूर्वानुमान खराब था, इसलिए हमने यात्रा रद्द करने का फैसला किया।",
+      B2: "कई प्रस्तावों की तुलना करने के बाद उन्होंने हमारे लिए बेहतर शर्तें तय कीं।",
+      C1: "उसका शोध पहले अनदेखे पैटर्न उजागर करके इस क्षेत्र को काफी आगे बढ़ाता है।",
+      C2: "ये प्रारंभिक निष्कर्ष पुरानी धारणाओं को गहराई से चुनौती देकर उन्हें नए सिरे से परिभाषित करते हैं।",
     },
     ru: {
-      A1: "Мне нравится кофе по утрам.",
+      A1: "Я каждое утро пью кофе.",
       A2: "После завтрака она обычно едет на работу на автобусе.",
-      B1: "Мы решили отменить поездку, потому что погода обещала быть плохой.",
-      B2: "Сравнив несколько предложений, они договорились о более выгодных условиях для нас.",
+      B1: "Мы решили отменить поездку, потому что прогноз погоды был плохим.",
+      B2: "Сравнив несколько предложений, они добились для нас более выгодных условий.",
       C1: "Её исследование продвигает область, выявляя ранее упускаемые закономерности.",
-      C2: "Эти, пусть и предварительные, выводы радикально пересматривают давние предпосылки.",
+      C2: "Эти предварительные выводы серьёзно пересматривают давние предпосылки и переосмысливают их.",
     },
   };  
 
 /* ───────────────────────── Utils ───────────────────────── */
-const isCJK = (lang: LangKey) => lang === "zh" || lang === "ja" || lang === "ko";
+const isCJK = (lang: LangKey) => lang === "zh" || lang === "ja";
 
 const tokenize = (s: string, lang: LangKey) => {
   if (isCJK(lang)) {
@@ -208,45 +208,57 @@ function buildDistractors(
 
 /* ───────────────────────── Token Connector (SVG curve) ───────────────────────── */
 function Connector({
-  fromEl,
-  toEl,
-  host,
-}: {
-  fromEl: HTMLElement | null;
-  toEl: HTMLElement | null;
-  host: HTMLElement | null;
-}) {
-  const [path, setPath] = React.useState<string | null>(null);
-
-  React.useLayoutEffect(() => {
-    if (!fromEl || !toEl || !host) return;
-    const fr = fromEl.getBoundingClientRect();
-    const tr = toEl.getBoundingClientRect();
-    const hr = host.getBoundingClientRect();
-
-    const ax = fr.left + fr.width / 2 - hr.left;
-    const bx = tr.left + tr.width / 2 - hr.left;
-    const y = 12;               // 토큰 상단 근처
-    const lift = -10;           // 위로 들어 올릴 정도(곡선 높이)
-
-    const d = `M ${ax},${y} C ${ax},${y + lift} ${bx},${y + lift} ${bx},${y}`;
-    setPath(d);
-  }, [fromEl, toEl, host]);
-
-  if (!path) return null;
-  return (
-    <svg className={styles.connectorSvg} aria-hidden>
-      <motion.path
-        d={path}
-        className={styles.connectorPath}
-        initial={{ pathLength: 0, opacity: 0.8 }}
-        animate={{ pathLength: 1, opacity: 1 }}
-        transition={{ duration: 0.45, ease: "easeOut" }}
-      />
-    </svg>
-  );
-}
-
+    fromEl,
+    toEl,
+    host,
+  }: {
+    fromEl: HTMLElement | null;
+    toEl: HTMLElement | null;
+    host: HTMLElement | null;
+  }) {
+    const [path, setPath] = React.useState<string | null>(null);
+  
+    React.useLayoutEffect(() => {
+      if (!fromEl || !toEl || !host) {
+        setPath(null);
+        return;
+      }
+      const fr = fromEl.getBoundingClientRect();
+      const tr = toEl.getBoundingClientRect();
+      const hr = host.getBoundingClientRect();
+  
+      const ax = fr.left + fr.width / 2 - hr.left;
+      const bx = tr.left + tr.width / 2 - hr.left;
+      const y = Math.max(fr.top - hr.top, 12); // 안전한 y 위치
+      const lift = -14; // 곡선 높이(좀 더 눈에 띄게)
+  
+      const d = `M ${ax},${y} C ${ax},${y + lift} ${bx},${y + lift} ${bx},${y}`;
+      setPath(d);
+    }, [fromEl, toEl, host]);
+  
+    if (!path) return null;
+  
+    return (
+      <motion.svg
+        className={styles.connectorSvg}
+        aria-hidden
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        style={{ pointerEvents: "none" }}
+      >
+        <motion.path
+          d={path}
+          className={styles.connectorPath}
+          initial={{ pathLength: 0 }}
+          animate={{ pathLength: 1 }}
+          exit={{ pathLength: 0 }}
+          transition={{ duration: 0.45, ease: "easeOut" }}
+        />
+      </motion.svg>
+    );
+  }
+  
 /* ───────────────────────── Streaming sentence ───────────────────────── */
 function StreamingSentence({
   sentence,
@@ -257,51 +269,89 @@ function StreamingSentence({
   lang: LangKey;
   speed?: number;
 }) {
-  const tokens = React.useMemo(() => tokenize(sentence, lang), [sentence, lang]);
-  const [showN, setShowN] = React.useState(0);
-  const shellRef = React.useRef<HTMLDivElement | null>(null);
-  const tokenRefs = React.useRef<(HTMLSpanElement | null)[]>([]);
-
-  React.useEffect(() => {
-    setShowN(0);
-    let i = 0;
-    const timer = setInterval(() => {
-      i++;
-      setShowN(Math.min(i, tokens.length));
-      if (i >= tokens.length) clearInterval(timer);
-    }, speed);
-    return () => clearInterval(timer);
-  }, [sentence, lang, speed, tokens.length]);
-
-  const lastFrom =
-    showN >= 2 ? tokenRefs.current[showN - 2] ?? null : null;
-  const lastTo =
-    showN >= 2 ? tokenRefs.current[showN - 1] ?? null : null;
-
-  return (
-    <div className={styles.streamShell} ref={shellRef}>
-      {/* 마지막 두 토큰을 연결하는 곡선 */}
-      {showN >= 2 && (
-        <Connector fromEl={lastFrom} toEl={lastTo} host={shellRef.current} />
-      )}
-
-      <div className={styles.streamBox}>
-        {tokens.map((tk, i) => {
-          const visible = i < showN;
-          return (
-            <span
-              key={i}
-              ref={(el) => { tokenRefs.current[i] = el; }}
-              className={`${styles.token} ${visible ? styles.tokenIn : styles.tokenGhost}`}
-            >
-              {tk}
-            </span>
-          );
-        })}
-        {showN < tokens.length && <span className={styles.cursor} aria-hidden>▌</span>}
+    const tokens = React.useMemo(() => tokenize(sentence, lang), [sentence, lang]);
+    const [showN, setShowN] = React.useState(0);
+    const shellRef = React.useRef<HTMLDivElement | null>(null);
+    const tokenRefs = React.useRef<(HTMLSpanElement | null)[]>([]);
+    const [indicatorPos, setIndicatorPos] = React.useState<{ x: number; y: number } | null>(null);
+  
+    React.useEffect(() => {
+      setShowN(0);
+      let i = 0;
+      const timer = setInterval(() => {
+        i++;
+        setShowN((prev) => {
+          const next = Math.min(i, tokens.length);
+          return next;
+        });
+        if (i >= tokens.length) clearInterval(timer);
+      }, speed);
+      return () => clearInterval(timer);
+    }, [sentence, lang, speed, tokens.length]);
+  
+    // showN이 바뀔 때 마지막 토큰 위치를 계산해서 인디케이터 이동
+    React.useLayoutEffect(() => {
+      const hr = shellRef.current;
+      if (!hr) {
+        setIndicatorPos(null);
+        return;
+      }
+      const idx = Math.min(Math.max(showN - 1, 0), tokens.length - 1);
+      const el = tokenRefs.current[idx] ?? null;
+      if (!el || showN === 0) {
+        setIndicatorPos(null);
+        return;
+      }
+      const er = el.getBoundingClientRect();
+      const hrRect = hr.getBoundingClientRect();
+      const cx = er.left + er.width / 2 - hrRect.left;
+      const cy = er.top + er.height / 2 - hrRect.top;
+      setIndicatorPos({ x: Math.round(cx), y: Math.round(cy) });
+    }, [showN, tokens.length]);
+  
+    const lastFrom =
+      showN >= 2 ? tokenRefs.current[showN - 2] ?? null : null;
+    const lastTo =
+      showN >= 2 ? tokenRefs.current[showN - 1] ?? null : null;
+  
+    return (
+      <div className={styles.streamShell} ref={shellRef}>
+        {/* 마지막 두 토큰을 연결하는 곡선 (위에 렌더) */}
+        {showN >= 2 && (
+          <Connector fromEl={lastFrom} toEl={lastTo} host={shellRef.current} />
+        )}
+  
+        {/* 진행 인디케이터: 깜빡이 대신 움직이는 점 */}
+        <motion.div
+          className={styles.streamIndicator}
+          initial={{ opacity: 0, scale: 0.6 }}
+          animate={{
+            opacity: indicatorPos ? 1 : 0,
+            left: indicatorPos ? indicatorPos.x : 0,
+            top: indicatorPos ? indicatorPos.y - 6 : 0,
+            scale: indicatorPos ? 1 : 0.6,
+          }}
+          transition={{ type: "spring", stiffness: 280, damping: 28 }}
+          aria-hidden
+        />
+  
+        <div className={styles.streamBox}>
+          {tokens.map((tk, i) => {
+            const visible = i < showN;
+            return (
+              <span
+                key={i}
+                ref={(el) => { tokenRefs.current[i] = el; }}
+                className={`${styles.token} ${visible ? styles.tokenIn : styles.tokenGhost}`}
+              >
+                {tk}
+              </span>
+            );
+          })}
+          {/* 기존 깜빡이 커서 제거 — 대신 인디케이터 사용 */}
+        </div>
       </div>
-    </div>
-  );
+    );  
 }
 
 /* ───────────────────────── Web Quiz (lightweight) ───────────────────────── */

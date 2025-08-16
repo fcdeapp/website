@@ -802,16 +802,6 @@
   margin: 0 auto 0.25rem;
   min-height: 88px;            /* 교체 중에도 공간 유지 */
 }
-.streamCard {
-  position:relative; padding:1.1rem 1rem 1.25rem; border-radius:18px;
-  background:#fff; border:1px solid rgba(0,0,0,.06);
-  box-shadow:0 8px 22px rgba(17,12,43,.06);
-}
-.levelPill {
-  position:absolute; top:.8rem; right:.8rem; font-size:.8rem; font-weight:600;
-  color:#d8315b; background:rgba(216,49,91,.08); border:1px solid rgba(216,49,91,.18);
-  border-radius:999px; padding:.12rem .5rem;
-}
 
 /* streaming line: keep on one row for connector accuracy */
 .streamShell { position: relative; }
@@ -835,26 +825,10 @@
 }
 @keyframes blink { 50% { opacity:0; } }
 
-/* connector curve (SVG above tokens) */
-.connectorSvg {
-  position: absolute;
-  left: 0; right: 0; top: 0;
-  height: 26px;                /* 토큰 위 공간 */
-  pointer-events: none;
-}
-.connectorPath {
-  fill: none;
-  stroke: url(#chainGradient);
-  stroke-width: 2;
-  filter: drop-shadow(0 1px 2px rgba(216,49,91,.15));
-}
 .connectorSvg::before {
   /* optional visual polish */
   content: "";
 }
-
-/* gradient definition via CSS fallback (solid color) */
-.connectorPath { stroke: #d8315b; }
 
 /* CTA row */
 .ctaRow { display:flex; justify-content:center; }
@@ -915,3 +889,54 @@
 .summaryTitle { margin:0 0 .35rem; font-size:1.05rem; color:#222; font-weight:700; }
 .summaryLine { color:#555; }
 .summaryActions { margin-top:.6rem; display:flex; justify-content:flex-end; gap:.5rem; }
+
+/* streamCard 상단 여유 확보(레벨 배지가 단어에 가리지 않도록) */
+.streamCard { padding-top: 1.6rem; }
+
+/* 레벨 배지를 위로 올리고 z-index 증가 */
+.levelPill {
+  position:absolute;
+  top:0.6rem; /* 약간 위로 */
+  right:.8rem;
+  z-index: 30; /* 충분히 큰 값 */
+  font-size:.8rem;
+  font-weight:600;
+  color:#d8315b;
+  background:rgba(216,49,91,.08);
+  border:1px solid rgba(216,49,91,.18);
+  border-radius:999px;
+  padding:.12rem .5rem;
+}
+
+/* connector SVG 높이 여유를 좀 더 줌 */
+.connectorSvg {
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 36px;                /* 확대 */
+  pointer-events: none;
+  overflow: visible;
+  z-index: 18;
+}
+
+/* 선 스타일: 그라데이션은 없으면 단색 fallback */
+.connectorPath {
+  fill: none;
+  stroke: #d8315b;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 1px 2px rgba(216,49,91,.12));
+}
+
+/* 진행 인디케이터 (토큰 우측의 동그라미 형태) */
+.streamIndicator {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ff6b8a, #d8315b);
+  box-shadow: 0 6px 18px rgba(216,49,91,.12);
+  transform: translate(-50%, -50%);
+  z-index: 22;
+  pointer-events: none;
+}
