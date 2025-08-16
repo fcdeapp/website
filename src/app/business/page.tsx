@@ -3,8 +3,55 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import styles from "../../styles/pages/Business.module.css";
-import FlipNumber from "../../components/FlipNumber";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
+
+// helper: readable label (e.g., "6/16")
+function shortLabel(isoDate: string) {
+  const d = new Date(isoDate);
+  return `${d.getMonth() + 1}/${d.getDate()}`;
+}
+
+// new helper: convert ISO date -> timestamp (ms)
+function toTs(iso: string) {
+  return new Date(iso).getTime();
+}
+
+// buildPath: (function declaration so it's hoisted)
+function buildPathFromPoints(
+  points: { t: number; v: number }[],
+  w = 600,
+  h = 160,
+  padLeft = 20,
+  padRight = 20,
+  globalMin?: number,
+  globalMax?: number
+) {
+  if (!points || points.length === 0) return "";
+
+  const times = points.map((p) => p.t);
+  const vals = points.map((p) => p.v);
+
+  const minT = Math.min(...times);
+  const maxT = Math.max(...times);
+  const minV = globalMin !== undefined ? globalMin : Math.min(...vals);
+  const maxV = globalMax !== undefined ? globalMax : Math.max(...vals);
+  const rangeV = maxV - minV || 1;
+  const usableW = Math.max(1, w - padLeft - padRight);
+
+  const xFor = (t: number) =>
+    padLeft + ((t - minT) / Math.max(1, maxT - minT)) * usableW;
+  const yFor = (v: number) => {
+    const topPad = 8;
+    const bottomPad = 8;
+    const normalized = (v - minV) / rangeV;
+    return h - (normalized * (h - topPad - bottomPad) + bottomPad);
+  };
+
+  return points
+    .map((p, i) => `${i === 0 ? "M" : "L"} ${xFor(p.t).toFixed(2)} ${yFor(p.v).toFixed(2)}`)
+    .join(" ");
+}
+
 
 /* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
@@ -74,54 +121,6 @@ export default function BusinessPage() {
   const minT = Math.min(...downloadData.map(d => toTs(d.date)));
   const maxT = Math.max(...downloadData.map(d => toTs(d.date)));
   const xForTick = (t: number) => padLeft + ((t - minT) / Math.max(1, maxT - minT)) * usableW;
-
-
-// place these BEFORE you compute points or use them
-// helper: readable label (e.g., "6/16")
-const shortLabel = (isoDate: string) => {
-  const d = new Date(isoDate);
-  return `${d.getMonth() + 1}/${d.getDate()}`;
-};
-
-// new helper: convert ISO date -> timestamp (ms)
-const toTs = (iso: string) => new Date(iso).getTime();
-
-// buildPath: points = [{t: number (ms), v: number}, ...]
-// scales x by timestamp (actual spacing), scales y by given globalMin/globalMax
-const buildPathFromPoints = (
-  points: { t: number; v: number }[],
-  w = 600,
-  h = 160,
-  padLeft = 20,
-  padRight = 20,
-  globalMin?: number,
-  globalMax?: number
-) => {
-  if (!points || points.length === 0) return "";
-
-  const times = points.map((p) => p.t);
-  const vals = points.map((p) => p.v);
-
-  const minT = Math.min(...times);
-  const maxT = Math.max(...times);
-  const minV = globalMin !== undefined ? globalMin : Math.min(...vals);
-  const maxV = globalMax !== undefined ? globalMax : Math.max(...vals);
-  const rangeV = maxV - minV || 1;
-  const usableW = Math.max(1, w - padLeft - padRight);
-
-  const xFor = (t: number) =>
-    padLeft + ((t - minT) / Math.max(1, maxT - minT)) * usableW;
-  const yFor = (v: number) => {
-    const topPad = 8;
-    const bottomPad = 8;
-    const normalized = (v - minV) / rangeV;
-    return h - (normalized * (h - topPad - bottomPad) + bottomPad);
-  };
-
-  return points
-    .map((p, i) => `${i === 0 ? "M" : "L"} ${xFor(p.t).toFixed(2)} ${yFor(p.v).toFixed(2)}`)
-    .join(" ");
-};
 
   return (
     <motion.main
