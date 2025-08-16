@@ -291,15 +291,13 @@
 }
 
 /* ===== Placeholder 스타일 (입력/텍스트 영역 전역) ===== */
-input::placeholder,
-textarea::placeholder,
-.modalInput::placeholder {
-  /* 더 은은하고 읽기 쉬운 회색, 기울임꼴로 가벼운 시각적 구분 */
+.modalInput::placeholder,
+.fieldInput::placeholder,
+.fieldTextarea::placeholder {
   color: rgba(17, 12, 43, 0.38);
   font-style: italic;
   font-weight: 400;
-  /* 브라우저별 기본 placeholder opacity 무시 */
-  opacity: 1;
+  opacity: 1; /* 일부 브라우저의 기본 placeholder 투명도 덮어쓰기 */
 }
 
 .answerWrap {
