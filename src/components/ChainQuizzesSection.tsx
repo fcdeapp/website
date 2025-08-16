@@ -206,7 +206,6 @@ function buildDistractors(
   return chosen.slice(0, 2);
 }
 
-/* ───────────────────────── Token Connector (SVG curve) ───────────────────────── */
 function Connector({
     fromEl,
     toEl,
@@ -216,11 +215,14 @@ function Connector({
     toEl: HTMLElement | null;
     host: HTMLElement | null;
   }) {
+    const gid = React.useId(); // hook must be called unconditionally
     const [path, setPath] = React.useState<string | null>(null);
+    const [grad, setGrad] = React.useState<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
   
     React.useLayoutEffect(() => {
       if (!fromEl || !toEl || !host) {
         setPath(null);
+        setGrad(null);
         return;
       }
       const fr = fromEl.getBoundingClientRect();
@@ -229,61 +231,55 @@ function Connector({
   
       const ax = fr.left + fr.width / 2 - hr.left;
       const bx = tr.left + tr.width / 2 - hr.left;
-      const y = Math.max(fr.top - hr.top, 12); // 안전한 y 위치
-      const lift = -14; // 곡선 높이(좀 더 눈에 띄게)
+      const y = Math.max(fr.top - hr.top, 12);
+      const lift = -14;
   
       const d = `M ${ax},${y} C ${ax},${y + lift} ${bx},${y + lift} ${bx},${y}`;
       setPath(d);
+      setGrad({ x1: ax, y1: y, x2: bx, y2: y });
     }, [fromEl, toEl, host]);
   
     if (!path) return null;
-    const gid = React.useId();
-    const [grad, setGrad] = React.useState<{x1:number;y1:number;x2:number;y2:number} | null>(null);
-    setGrad({ x1: ax, y1: y, x2: bx, y2: y });
-
+  
     return (
-        <motion.svg
-          className={styles.connectorSvg}
-          aria-hidden
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          style={{ pointerEvents: "none" }}
-        >
-          {/* 경로 방향에 맞춘 그라디언트 정의 */}
-          <defs>
-            <linearGradient
-              id={`chainGrad-${gid}`}
-              gradientUnits="userSpaceOnUse"
-              x1={grad?.x1 ?? 0}
-              y1={grad?.y1 ?? 0}
-              x2={grad?.x2 ?? 0}
-              y2={grad?.y2 ?? 0}
-            >
-              <stop offset="0%" stopColor="#f2542d" />
-              <stop offset="100%" stopColor="#d8315b" />
-            </linearGradient>
-          </defs>
-      
-          {/* 연한 베이스 라인 */}
-          <motion.path
-            d={path}
-            className={styles.connectorBase}
-          />
-      
-          {/* 경로를 따라 이동하는 하이라이트(부분 채색) */}
-          <motion.path
-            d={path}
-            className={styles.connectorHighlight}
-            stroke={`url(#chainGrad-${gid})`}
-            initial={{ pathLength: 0.3, pathOffset: 1 }}
-            animate={{ pathLength: 0.3, pathOffset: 0 }}
-            exit={{ pathLength: 0.3, pathOffset: 0.2, opacity: 0 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-          />
-        </motion.svg>
-      );      
-  }
+      <motion.svg
+        className={styles.connectorSvg}
+        aria-hidden
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        style={{ pointerEvents: "none" }}
+      >
+        <defs>
+          <linearGradient
+            id={`chainGrad-${gid}`}
+            gradientUnits="userSpaceOnUse"
+            x1={grad?.x1 ?? 0}
+            y1={grad?.y1 ?? 0}
+            x2={grad?.x2 ?? 0}
+            y2={grad?.y2 ?? 0}
+          >
+            <stop offset="0%" stopColor="#f2542d" />
+            <stop offset="100%" stopColor="#d8315b" />
+          </linearGradient>
+        </defs>
+  
+        {/* 베이스 라인 */}
+        <motion.path d={path} className={styles.connectorBase} />
+  
+        {/* 하이라이트(경로 일부가 채워지는 애니메이션) */}
+        <motion.path
+          d={path}
+          className={styles.connectorHighlight}
+          stroke={`url(#chainGrad-${gid})`}
+          initial={{ pathLength: 0.3, pathOffset: 1 }}
+          animate={{ pathLength: 0.3, pathOffset: 0 }}
+          exit={{ pathLength: 0.3, pathOffset: 0.2, opacity: 0 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        />
+      </motion.svg>
+    );
+  }  
   
 /* ───────────────────────── Streaming sentence ───────────────────────── */
 function StreamingSentence({
