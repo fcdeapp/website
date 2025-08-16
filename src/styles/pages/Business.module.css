@@ -1349,11 +1349,6 @@
 /* area fill subtle */
 .areaSum { transition: opacity .3s ease; }
 
-/* line styles */
-.lineIos { stroke: #2b8cff; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-.lineAndroid { stroke: #1fbf6b; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-.lineSum { stroke: #d8315b; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
-
 /* x-axis label */
 .xLabel { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
 
@@ -1377,9 +1372,34 @@
 .legendSwatchIos, .legendSwatchAndroid, .legendSwatchSum {
   width:12px; height:12px; border-radius:3px; display:inline-block;
 }
-.legendSwatchIos { background:#2b8cff; box-shadow: 0 4px 14px rgba(43,140,255,0.12); }
-.legendSwatchAndroid { background:#1fbf6b; box-shadow: 0 4px 14px rgba(31,191,107,0.12); }
-.legendSwatchSum { background:#d8315b; box-shadow: 0 6px 18px rgba(216,49,91,0.12); }
+/* ===== Sparkline colors ONLY (lines + legend) ===== */
+/* iOS = Apple Blue, Android = Android Green, Total = 기존 메인 색상 */
+
+.lineIos {
+  stroke: #007aff !important;           /* iOS: Apple Blue */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.lineAndroid {
+  stroke: #3ddc84 !important;           /* Android: Android Green */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.lineSum {
+  stroke: #d8315b !important;           /* Total: 기존 브랜드 핑크/버건디 */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Legend swatches to match the lines */
+.legendSwatchIos { background: #007aff !important; box-shadow: 0 4px 14px rgba(0,122,255,0.12); }
+.legendSwatchAndroid { background: #3ddc84 !important; box-shadow: 0 4px 14px rgba(61,220,132,0.12); }
+.legendSwatchSum { background: #d8315b !important; box-shadow: 0 6px 18px rgba(216,49,91,0.12); }
 
 /* summary below chart */
 .statusSummary {
@@ -1405,159 +1425,3 @@
   .sparklineSvg { height: 140px; }
   .statusSummary { flex-direction: column; align-items:flex-start; gap:.5rem; }
 }
-
-/* ---------- Graph & small UI color refresh ---------- */
-/* subtle neutral background for chart container */
-.chartWrapper {
-  display:flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  align-items: stretch;
-  padding: 0.6rem 0.25rem;
-}
-
-/* larger svg — lighter background, softer shadow */
-.sparklineSvg {
-  width: 100%;
-  height: 180px;
-  color: #b33a52; /* fallback */
-  display: block;
-  background: linear-gradient(180deg, #ffffff, #fbfbfc);
-  border-radius: 10px;
-  overflow: visible;
-  box-shadow: 0 8px 20px rgba(17,12,43,0.04);
-}
-
-/* area fill subtle — muted berry tint */
-.areaSum {
-  transition: opacity .3s ease;
-  fill-opacity: 0.85;
-}
-
-/* line styles — desaturated & harmonious */
-.lineIos {
-  stroke: #3a8ee6;          /* calmer blue */
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  vector-effect: non-scaling-stroke;
-  stroke-opacity: 0.98;
-}
-.lineAndroid {
-  stroke: #16a65a;          /* muted green */
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  vector-effect: non-scaling-stroke;
-  stroke-opacity: 0.98;
-}
-.lineSum {
-  stroke: #b23352;          /* muted berry (primary accent) */
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  vector-effect: non-scaling-stroke;
-  stroke-opacity: 1;
-}
-
-/* x-axis label: small, neutral */
-.xLabel {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  fill: #666;
-  font-size: 11px;
-}
-
-/* legend — simpler background + swatches tuned */
-.statusLegend {
-  display:flex;
-  gap: 0.6rem;
-  align-items:center;
-  justify-content:flex-start;
-  flex-wrap:wrap;
-  margin-top: 0.2rem;
-}
-.legendItem {
-  display:inline-flex;
-  gap:0.5rem;
-  align-items:center;
-  font-size:0.95rem;
-  color:#444;
-  font-weight:600;
-  background: rgba(0,0,0,0.02);
-  padding: .18rem .36rem;
-  border-radius: 999px;
-}
-.legendSwatchIos, .legendSwatchAndroid, .legendSwatchSum {
-  width:12px; height:12px; border-radius:3px; display:inline-block;
-}
-.legendSwatchIos { background:#3a8ee6; box-shadow: 0 6px 18px rgba(58,142,230,0.07); }
-.legendSwatchAndroid { background:#16a65a; box-shadow: 0 6px 18px rgba(22,166,90,0.07); }
-.legendSwatchSum { background:#b23352; box-shadow: 0 6px 18px rgba(178,51,82,0.08); }
-
-/* summary below chart — neutral card with subtle accent on numbers */
-.statusSummary {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:1rem;
-  padding: .45rem .6rem;
-  border-radius: 10px;
-  background: linear-gradient(180deg,#fff,#fbfbfc);
-  border: 1px solid rgba(17,12,43,0.03);
-  box-shadow: 0 6px 16px rgba(17,12,43,0.03);
-}
-.latestLabel { color:#6f6f6f; font-weight:600; font-size:.95rem; }
-.latestNumbers { display:flex; gap:1.25rem; font-weight:600; color:#333; }
-.latestNumbers strong { color:#b23352; font-weight:800; }
-
-/* hide old table visuals if present */
-.statusTable { display:none !important; }
-
-/* responsive: svg height reduce on small screens */
-@media (max-width: 680px) {
-  .sparklineSvg { height: 140px; }
-  .statusSummary { flex-direction: column; align-items:flex-start; gap:.5rem; }
-}
-
-/* ---------- Gradient for area fill (replace the existing linearGradient id or stop colors) ---------- */
-/* in SVG defs: use softer stops, example given in JSX (id=areaSumGrad) */
-/* recommended: <stop offset="0%" stopColor="#fbe9ec" stopOpacity="0.6" /> -> top soft berry tint */
-/*            : <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" /> -> fade to transparent */
-
-/* ---------- Buttons & CTA refinement (make palette cohesive) ---------- */
-.btnPrimary {
-  color: #fff;
-  /* softer coral -> berry blend */
-  background: linear-gradient(135deg, #f15a3a 0%, #b23352 100%);
-  box-shadow: 0 8px 20px rgba(178,51,82,0.12);
-}
-.btnPrimary:hover { transform: translateY(-2px); }
-
-/* ghost buttons: keep neutral */
-.btnGhost {
-  color:#110c2b;
-  background: #fff;
-  border:1px solid rgba(17,12,43,.08);
-}
-
-/* Hero accent (brandGradient) — keep but slightly warmer */
-.brandGradient {
-  background: linear-gradient(90deg, #ff8a5c, #f6c36d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* subtle reduction of heavy shadows sitewide for refined look */
-.dCard, .card, .member, .milestoneCard {
-  box-shadow: 0 8px 22px rgba(17,12,43,0.06);
-}
-
-/* ensure mileDot variant colors use updated palette (no :root) */
-.mileDot { background: #b23352; box-shadow: 0 0 0 4px rgba(178,51,82,0.06); }
-.next { background: #f15a3a !important; }
-.planned { background: #b23352 !important; }
-
-/* small text colors unified */
-.sectionTitle, .diffLead, .chainLead, .memberRole {
-  color: #4b4b4b;
-}
-
-/* keep neutral background overall */
-.wrapper { background: #ffffff; color: #333; }
