@@ -1136,3 +1136,65 @@
   line-height: 1.65;
   opacity: 0.95;
 }
+
+/* =============================== */
+/* Profile scope: 이미지 축소/보호  */
+/* (Replace the existing profileRoot image rules with this) */
+/* =============================== */
+
+/* 페이지 전역: 이미지 기본 최대 너비를 더 작게 제한 (비율 유지, 잘림 방지) */
+.profileRoot img {
+  max-width: 560px;   /* <- 전체 이미지의 최대 너비를 작게 제한 */
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* 잘리지 않게 비율 유지 */
+}
+
+/* 히어로 아바타 더 작게 (원형) */
+.profileRoot .heroAvatar {
+  width: 72px;        /* <- 축소: 88 -> 72 */
+  height: 72px;
+  border: 2px solid rgba(17,12,43,0.10);
+  box-shadow: 0 8px 18px rgba(17,12,43,0.10);
+}
+
+/* 시뮬레이션 이미지 카드: 카드 자체 너비를 줄여 내부 이미지도 작아지게 함 */
+.profileRoot .imageCard {
+  max-width: 560px;   /* <- 680 -> 560 */
+  padding: 0.5rem;
+}
+.profileRoot .imageCard img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 광고(About Abrody) 이미지 축소 */
+.profileRoot .adBlockImage {
+  width: min(100%, 560px); /* <- 680 -> 560 */
+  height: auto;
+  object-fit: contain;
+}
+
+/* 다운로드 카드 썸네일/임시 이미지 크기 제한 */
+.profileRoot .dCard img {
+  max-width: 100%;
+  max-height: 140px;  /* <- 180 -> 140 */
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* 반응형: 모바일에서는 더 작게 */
+@media (max-width: 768px) {
+  .profileRoot img { max-width: 420px; }
+  .profileRoot .imageCard { max-width: 420px; }
+  .profileRoot .adBlockImage { width: min(100%, 420px); }
+  .profileRoot .heroAvatar { width: 64px; height: 64px; }
+}
+
+@media (max-width: 420px) {
+  .profileRoot img { max-width: 320px; }
+  .profileRoot .imageCard { max-width: 320px; }
+  .profileRoot .adBlockImage { width: min(100%, 320px); }
+  .profileRoot .heroAvatar { width: 56px; height: 56px; }
+}
