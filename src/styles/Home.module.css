@@ -738,6 +738,27 @@
   }
 }
 
+/* ===== Mobile fix: Ads image cutting on small screens ===== */
+@media (max-width: 767px) {
+  .recordButtonImage {
+    /* 데스크탑 규칙 유지되도록, 모바일에서만 최대 넓이를 줄임 */
+    max-width: 92%;
+    width: auto;        /* 고정 100% 대신 auto로 너비 비율 유지 */
+    height: auto;       /* 종횡비 보장 */
+    max-height: 420px;  /* 너무 높지 않게 제한 (필요시 조정) */
+    object-fit: contain;/* 잘림 없이 전체 이미지 보이도록 */
+    display: block;
+    margin: 0 auto;     /* 가운데 정렬 */
+  }
+
+  /* 만약 이미지 부모 컨테이너가 overflow:hidden으로 잘라버리면 안전장치로 부모 여백 보장 */
+  .section { 
+    /* 섹션 자체는 그대로 두되, 모바일에서 패딩을 늘려 이미지가 잘리지 않게 함 */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 /* Responsive Styles for Mobile */
 @media (max-width: 767px) {
   .main {
