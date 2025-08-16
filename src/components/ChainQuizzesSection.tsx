@@ -356,9 +356,8 @@ function StreamingSentence({
   
     return (
       <div className={styles.streamShell} ref={shellRef}>
-        {/* 마지막 두 토큰을 연결하는 곡선 (위에 렌더) */}
         {showN >= 2 && (
-          <Connector fromEl={lastFrom} toEl={lastTo} host={shellRef.current} />
+        <Connector fromEl={firstVisible} toEl={lastTo} host={shellRef.current} />
         )}
     
     <motion.div
