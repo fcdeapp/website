@@ -215,77 +215,90 @@ function Connector({
     toEl: HTMLElement | null;
     host: HTMLElement | null;
   }) {
-    const gid = React.useId(); // hook must be called unconditionally
+    /* ── Connector 내부: 계산부 + return 전체 교체 ── */
+    const gid = React.useId();
     const [path, setPath] = React.useState<string | null>(null);
-    const [grad, setGrad] = React.useState<{ x1: number; y1: number; x2: number; y2: number } | null>(null);
-  
+    const [grad, setGrad] = React.useState<{ x1:number;y1:number;x2:number;y2:number } | null>(null);
+    const [alive, setAlive] = React.useState(true);
+
     React.useLayoutEffect(() => {
-      if (!fromEl || !toEl || !host) {
+    if (!fromEl || !toEl || !host) {
         setPath(null);
         setGrad(null);
+        setAlive(false);
         return;
-      }
-      const fr = fromEl.getBoundingClientRect();
-      const tr = toEl.getBoundingClientRect();
-      const hr = host.getBoundingClientRect();
-  
-      const ax = fr.left + fr.width / 2 - hr.left;
-      const bx = tr.left + tr.width / 2 - hr.left;
-      const y = Math.max(fr.top - hr.top, 12);
-      const lift = -14;
-  
-      const d = `M ${ax},${y} C ${ax},${y + lift} ${bx},${y + lift} ${bx},${y}`;
-      setPath(d);
-      setGrad({ x1: ax, y1: y, x2: bx, y2: y });
+    }
+    const fr = fromEl.getBoundingClientRect();
+    const tr = toEl.getBoundingClientRect();
+    const hr = host.getBoundingClientRect();
+
+    // 멀티라인 대응: 시작/끝 각각의 중앙 Y 사용
+    const ax = fr.left + fr.width / 2 - hr.left;
+    const ay = fr.top + fr.height / 2 - hr.top;
+    const bx = tr.left + tr.width / 2 - hr.left;
+    const by = tr.top + tr.height / 2 - hr.top;
+
+    // 수직 간격에 비례해 자연스러운 아치
+    const lift = -Math.max(14, Math.abs(by - ay) * 0.4);
+
+    const d = `M ${ax},${ay} C ${ax},${ay + lift} ${bx},${by + lift} ${bx},${by}`;
+    setPath(d);
+
+    // 그라디언트(방향 반전): x1/y1 ↔ x2/y2 스왑
+    setGrad({ x1: bx, y1: by, x2: ax, y2: ay });
+
+    // 새 경로가 만들어질 때마다 다시 보이도록
+    setAlive(true);
     }, [fromEl, toEl, host]);
-  
-    if (!path) return null;
-  
-    /* Connector의 return 내부만 이 부분으로 바꿔주세요 */
+
+    if (!path || !alive) return null;
+
     return (
-        <motion.svg
+    <motion.svg
         className={styles.connectorSvg}
         aria-hidden
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         style={{ pointerEvents: "none" }}
-        >
+    >
         <defs>
-            <linearGradient
+        <linearGradient
             id={`chainGrad-${gid}`}
             gradientUnits="userSpaceOnUse"
-            x1={grad?.x1 ?? 0}
-            y1={grad?.y1 ?? 0}
-            x2={grad?.x2 ?? 0}
-            y2={grad?.y2 ?? 0}
-            >
-            <stop offset="0%" stopColor="#f2542d" />
+            x1={grad?.x1 ?? 0} y1={grad?.y1 ?? 0}
+            x2={grad?.x2 ?? 0} y2={grad?.y2 ?? 0}
+        >
+            <stop offset="0%"  stopColor="#f2542d" />
             <stop offset="100%" stopColor="#d8315b" />
-            </linearGradient>
+        </linearGradient>
         </defs>
-    
-        {/* 베이스 라인 */}
+
+        {/* 베이스(은은) */}
+        <motion.path d={path} className={styles.connectorBase} pathLength={1} />
+
+        {/* 하이라이트(앞으로 흘러가고, 끝나면 사라짐) */}
         <motion.path
-            d={path}
-            className={styles.connectorBase}
-            pathLength={1}
+        key={`hl-${path}`}                      /* path 변할 때마다 재생 */
+        d={path}
+        className={styles.connectorHighlight}
+        stroke={`url(#chainGrad-${gid})`}
+        pathLength={1}
+        initial={{ pathLength: 0.32, pathOffset: 1, opacity: 1 }}
+        animate={{
+            pathLength: 0.32,
+            pathOffset: 0,                        /* ← 진행 방향 */
+            opacity: [1, 1, 0],                   /* 끝나면 페이드아웃 */
+        }}
+        transition={{
+            duration: 0.8,
+            ease: "easeInOut",
+            opacity: { duration: 0.2, ease: "easeOut", delay: 0.75 }
+        }}
+        onAnimationComplete={() => setAlive(false)}  /* ← 끝난 뒤 아예 제거 */
         />
-    
-        {/* 경로 일부가 앞으로 "흘러가는" 하이라이트 */}
-        <motion.path
-            key={`hl-${path}`}                 // ← path가 바뀔 때마다 재생
-            d={path}
-            className={styles.connectorHighlight}
-            stroke={`url(#chainGrad-${gid})`}
-            pathLength={1}                      // ← 정규화
-            initial={{ pathLength: 0.32, pathOffset: 1 }}
-            animate={{ pathLength: 0.32, pathOffset: 0 }}
-            exit={{ pathLength: 0.32, pathOffset: 0.2, opacity: 0 }}
-            transition={{ duration: 0.7, ease: "easeInOut" }}
-        />
-      </motion.svg>
-    );  
+    </motion.svg>
+    ); 
   }  
   
 /* ───────────────────────── Streaming sentence ───────────────────────── */

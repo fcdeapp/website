@@ -806,10 +806,10 @@
 /* streaming line: keep on one row for connector accuracy */
 .streamShell { position: relative; }
 .streamBox {
-  display:inline-block;
-  white-space: nowrap;         /* 한 줄 유지 */
-  overflow-x: auto;
-  padding-top: 8px;            /* 곡선이 겹치지 않도록 */
+  display:block;
+  white-space: normal;     /* ← 줄바꿈 허용 */
+  overflow: visible;       /* ← 스크롤 박스 제거 */
+  padding-top: 8px;
 }
 .token {
   display:inline-block; padding:.25rem .42rem; border-radius:10px;
@@ -909,12 +909,12 @@
 }
 
 .connectorSvg {
-  position: absolute;
-  left: 0; right: 0; top: 0;
-  height: 42px;                /* 36px → 42px */
-  pointer-events: none;
-  overflow: visible;
-  z-index: 18;
+  position:absolute;
+  left:0; right:0; top:0;
+  height:100%;              /* ← 42px 고정 → 컨테이너 전체 */
+  pointer-events:none;
+  overflow:visible;
+  z-index:18;
 }
 
 /* 선 스타일: 그라데이션은 없으면 단색 fallback */
