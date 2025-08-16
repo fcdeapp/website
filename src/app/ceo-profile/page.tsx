@@ -5,7 +5,7 @@ import React from "react";
 import { motion, Variants } from "framer-motion";
 import styles from "../../styles/pages/Business.module.css";
 
-/* ───────── Motion variants (Business 페이지와 동일 톤) ───────── */
+/* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 64 },
   visible: (i: number = 0) => ({
@@ -38,19 +38,20 @@ export default function Profile() {
         <title>Founder | JungMin Doh</title>
         <meta
           name="description"
-          content="Founder & CEO JungMin Doh’s professional profile"
+          content="Founder & CEO JungMin Doh’s profile"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
+      {/* profileRoot로 이미지 축소/비율 유지 규칙을 스코프 */}
       <motion.main
-        className={styles.wrapper}
+        className={`${styles.wrapper} ${styles.profileRoot}`}
         initial="hidden"
         animate="visible"
         variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
       >
-        {/* ── Hero (Business hero 스타일 재사용) ───────────────────────── */}
-        <section className={styles.hero}>
+        {/* ── Hero : 밝은 배경 + 어두운 텍스트 ───────────────────────── */}
+        <section className={`${styles.hero} ${styles.heroLight}`}>
           <div className={styles.starfield} />
           <motion.h1
             className={styles.heroTitle}
@@ -72,7 +73,7 @@ export default function Profile() {
             <span className={styles.brandGradient}>Abrody</span>
           </motion.p>
 
-          {/* 히어로 메타 칩 + 아바타 */}
+          {/* 히어로 메타 칩 + 아바타(더 작게) */}
           <motion.div
             className={styles.profileHeroMeta}
             variants={fadeUp}
@@ -84,10 +85,10 @@ export default function Profile() {
               href="mailto:tommydoh@snu.ac.kr"
               title="Email"
             >
-              ✉︎ tommydoh@snu.ac.kr
+              tommydoh@snu.ac.kr
             </a>
-            <span className={styles.metaChip}>📞 +82 10-6854-9906</span>
-            <span className={styles.metaChip}>📍 Seocho-gu, Seoul</span>
+            <span className={styles.metaChip}>+82 10-6854-9906</span>
+            <span className={styles.metaChip}>Seocho-gu, Seoul</span>
           </motion.div>
 
           <motion.img
@@ -214,7 +215,7 @@ export default function Profile() {
           </motion.div>
         </section>
 
-        {/* ── Languages (칩 스타일 재사용) ───────────────────────────── */}
+        {/* ── Languages ──────────────────────────────────────────────── */}
         <section className={styles.sectionAlt}>
           <motion.div
             className={styles.whyHeader}
@@ -308,7 +309,7 @@ export default function Profile() {
           </motion.ul>
         </section>
 
-        {/* ── Work Samples (PDFs → Business 다운로드 카드 스타일) ─────── */}
+        {/* ── Work Samples ───────────────────────────────────────────── */}
         <section className={styles.section}>
           <motion.div
             className={styles.whyHeader}
@@ -401,7 +402,7 @@ export default function Profile() {
           </motion.article>
         </section>
 
-        {/* ── Simulation & Modeling ─────────────────────────────────── */}
+        {/* ── Simulation & Modeling (이미지 더 작게, 비율 유지) ───────── */}
         <section className={styles.section}>
           <motion.div
             className={styles.whyHeader}
@@ -428,7 +429,7 @@ export default function Profile() {
           </motion.div>
         </section>
 
-        {/* ── About Abrody (Business 톤) ─────────────────────────────── */}
+        {/* ── About Abrody (광고 이미지 더 작게) ─────────────────────── */}
         <section className={styles.sectionAlt}>
           <motion.div
             className={styles.whyHeader}
@@ -457,7 +458,7 @@ export default function Profile() {
           </motion.div>
         </section>
 
-        {/* ── CTA (Business CTA 스타일 재사용) ───────────────────────── */}
+        {/* ── CTA ───────────────────────────────────────────────────── */}
         <section className={styles.ctaSection}>
           <motion.h2
             className={styles.ctaTitle}
