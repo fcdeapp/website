@@ -305,8 +305,16 @@ export default function About() {
                   rel="noopener noreferrer"
                   className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
                 >
-                  클릭
+                  국내
                 </a>
+                <a
+                  href="https://apps.apple.com/app/id6743047157"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
+                >
+                  국외
+                </a>                
               </div>
             </div>
           </section>
