@@ -232,11 +232,10 @@ function Connector({
       const tr = toEl.getBoundingClientRect();
       const hr = host.getBoundingClientRect();
   
-      // center points (supports multiline)
       const ax = fr.left + fr.width / 2 - hr.left;
-      const ay = fr.top + fr.height / 2 - hr.top;
+      const ay = fr.top - hr.top + 6;   // token top + 6px offset (값은 취향대로 조정)
       const bx = tr.left + tr.width / 2 - hr.left;
-      const by = tr.top + tr.height / 2 - hr.top;
+      const by = tr.top - hr.top + 6;   // token top + 6px offset
   
       // arch lift scales with vertical distance
       const lift = -Math.max(14, Math.abs(by - ay) * 0.4);
@@ -585,7 +584,7 @@ function WebChainQuiz({
 /* ───────────────────────── Main Section ───────────────────────── */
 export function ChainQuizzesSection() {
   const [lang, setLang] = React.useState<LangKey>("en");
-  const [level, setLevel] = React.useState<CEFR>("B1");
+  const [level, setLevel] = React.useState<CEFR>("B2");
   const [showQuiz, setShowQuiz] = React.useState(false);
 
   const currentSentence = React.useMemo(() => EXAMPLES[lang][level], [lang, level]);
@@ -638,28 +637,38 @@ export function ChainQuizzesSection() {
         ))}
       </motion.div>
 
-      {/* Difficulty selector (퀴즈 시간도 연동) */}
-      <motion.div
+    {/* Difficulty selector (퀴즈 시간도 연동) */}
+    <motion.div
         className={styles.levelBar}
         variants={fadeUp}
         custom={3}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.4 }}
-      >
-        <span className={styles.levelLabel}>Difficulty</span>
-        <div className={styles.levelChips}>
-          {LEVELS.map((lv) => (
-            <button
-              key={lv}
-              className={`${styles.levelChip} ${level === lv ? styles.levelChipActive : ""}`}
-              onClick={() => setLevel(lv)}
-            >
-              {lv} <span className={styles.levelTime}>{TIME_PER_WORD[lv]}s/word</span>
-            </button>
-          ))}
-        </div>
-      </motion.div>
+    >
+    <span className={styles.levelLabel}>Difficulty</span>
+
+    {/* 변경: 버튼이 언어 칩과 같은 스타일이 되도록, 선택된 항목에만 시간 노출 */}
+    <div className={styles.levelChips}>
+        {LEVELS.map((lv) => (
+        <button
+            key={lv}
+            role="radio"
+            aria-checked={level === lv}
+            className={`${styles.levelChip} ${level === lv ? styles.levelChipActive : ""}`}
+            onClick={() => setLevel(lv)}
+        >
+            <span className={styles.levelShort}>{lv}</span>
+            {/* 시간은 선택된 항목에서만 렌더 */}
+            {level === lv && (
+            <span className={styles.levelTime}>
+                {TIME_PER_WORD[lv]}s/word
+            </span>
+            )}
+        </button>
+        ))}
+    </div>
+    </motion.div>
 
       {/* Single streaming sentence (cross-fade on lang/level change) */}
       <div className={styles.streamStage}>
