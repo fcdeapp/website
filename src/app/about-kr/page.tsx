@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/About.module.css";
+import stylesB from "../../styles/pages/Business.module.css";
 import WebFooter from "../../components/WebFooter";
 import CountryBall from "../../components/CountryBall";
 
