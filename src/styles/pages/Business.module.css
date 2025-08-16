@@ -1252,3 +1252,116 @@
   .profileRoot .heroAvatar { width: 56px; height: 56px; }
   .profileRoot img { max-width: 100%; }
 }
+
+.plainLink { color: inherit; text-decoration: none; }
+
+/* ===== ADD: Roadmap status toggle & panel ===== */
+.statusToggle{
+  appearance:none;
+  border:1px solid rgba(17,12,43,0.08);
+  background:#fff;
+  color:#110c2b;
+  padding:0.55rem 0.9rem;
+  border-radius:12px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow: 0 6px 16px rgba(17,12,43,0.06);
+  transition: transform .16s ease, box-shadow .16s ease, background .18s ease;
+}
+.statusToggle:hover{ transform: translateY(-2px); box-shadow: 0 10px 24px rgba(17,12,43,0.08); }
+
+/* collapsible panel (hidden by default) */
+.statusPanel{
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height .4s cubic-bezier(.2,.9,.2,1), opacity .28s ease;
+  margin-top: 0.75rem;
+  border-radius: 14px;
+  border: 1px solid rgba(17,12,43,0.04);
+  background: linear-gradient(180deg,#fff,#fafafa);
+  padding: 0 1rem;
+}
+
+/* open state */
+.statusPanel.open{
+  opacity: 1;
+  max-height: 720px; /* 충분히 큰 높이 (내용 길이에 맞춰 조정 가능) */
+  padding: 0.8rem 1rem 1rem;
+}
+
+/* inner layout */
+.statusInner{
+  display:flex;
+  gap:1rem;
+  flex-direction:column;
+  align-items: stretch;
+}
+
+/* chart + legend row */
+.statusChart{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  flex-wrap:wrap;
+  padding: .45rem .25rem;
+}
+
+/* simple sparkline svg */
+.sparklineSvg{
+  width: 300px;
+  height: 48px;
+  color: #d8315b; /* line color */
+  flex: 0 0 300px;
+}
+
+/* legend items under sparkline */
+.statusLegend{
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.statusLegendItem{
+  display:inline-flex;
+  gap:.4rem;
+  align-items:center;
+  padding: .28rem .5rem;
+  border-radius:999px;
+  background: rgba(216,49,91,0.06);
+  font-weight:600;
+  color:#333;
+}
+.statusDate { opacity:0.8; font-size:.9rem; }
+.statusSum { color:#d8315b; font-weight:700; }
+
+/* table */
+.statusTable{
+  width:100%;
+  border-collapse: collapse;
+  margin-top: .6rem;
+  font-size: .95rem;
+  box-shadow: 0 6px 18px rgba(17,12,43,0.04);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.statusTable thead th{
+  text-align:left;
+  padding: .6rem .8rem;
+  background: rgba(17,12,43,0.03);
+  color:#110c2b;
+  font-weight:700;
+  border-bottom:1px solid rgba(17,12,43,0.04);
+}
+.statusTable tbody td{
+  padding: .6rem .8rem;
+  border-bottom:1px solid rgba(17,12,43,0.04);
+  color:#444;
+}
+.statusTable tbody tr:last-child td{ border-bottom: none; }
+
+/* responsive tweaks */
+@media (max-width: 680px) {
+  .sparklineSvg { width: 100%; flex-basis: 100%; }
+  .statusLegend { justify-content: flex-start; }
+}

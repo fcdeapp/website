@@ -45,6 +45,36 @@ const numberVariant: Variants = {
 
 export default function BusinessPage() {
   const [preview, setPreview] = React.useState<null | { type: "pdf" | "video"; src: string }>(null);
+  const [showStatus, setShowStatus] = React.useState(false);
+
+  const downloadData = [
+    { date: "2024-06-16", ios: 16, android: 5, sum: 21 },
+    { date: "2024-07-01", ios: 51, android: 6, sum: 57 },
+    { date: "2024-07-16", ios: 159, android: 7, sum: 166 },
+    { date: "2024-08-01", ios: 203, android: 6, sum: 209 },
+    { date: "2024-08-16", ios: 328, android: 25, sum: 353 },
+  ];
+
+  // helper: readable label (e.g., "6/16")
+  const shortLabel = (isoDate: string) => {
+    const d = new Date(isoDate);
+    return `${d.getMonth() + 1}/${d.getDate()}`;
+  };
+
+  // helper: build sparkline points (0..100% scaled)
+  const buildSparkPoints = (values: number[], w = 300, h = 48) => {
+    if (!values || values.length === 0) return "";
+    const min = Math.min(...values);
+    const max = Math.max(...values);
+    const range = max - min || 1;
+    return values
+      .map((v, i) => {
+        const x = (i / (values.length - 1)) * w;
+        const y = h - ((v - min) / range) * h;
+        return `${x},${y}`;
+      })
+      .join(" ");
+  };
 
   return (
     <motion.main
@@ -332,6 +362,16 @@ export default function BusinessPage() {
         >
           <span className={styles.sectionKicker}>Plan</span>
           <h2 className={styles.sectionTitle}>Roadmap</h2>
+          <div style={{ marginTop: "0.75rem" }}>
+            <button
+              className={styles.statusToggle}
+              onClick={() => setShowStatus((s) => !s)}
+              aria-expanded={showStatus}
+              aria-controls="downloads-status-panel"
+            >
+              {showStatus ? "Hide status" : "View status"}
+            </button>
+          </div>
         </motion.div>
 
         <div className={styles.roadmapWrap}>
@@ -362,6 +402,54 @@ export default function BusinessPage() {
             </motion.article>
           ))}
         </div>
+
+        {/* ── ADD: downloads status panel (collapsible) ── */}
+        <div id="downloads-status-panel" className={`${styles.statusPanel} ${showStatus ? styles.open : ""}`} aria-hidden={!showStatus}>
+          <div className={styles.statusInner}>
+            {/* small sparkline + totals */}
+            <div className={styles.statusChart}>
+              <svg viewBox="0 0 300 48" preserveAspectRatio="none" className={styles.sparklineSvg}>
+                <polyline
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  points={buildSparkPoints(downloadData.map(d => d.sum), 300, 48)}
+                />
+              </svg>
+              <div className={styles.statusLegend}>
+                {downloadData.map((d) => (
+                  <div key={d.date} className={styles.statusLegendItem}>
+                    <span className={styles.statusDate}>{shortLabel(d.date)}</span>
+                    <span className={styles.statusSum}>{d.sum}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* table: detailed breakdown */}
+            <table className={styles.statusTable} role="table" aria-label="Download counts by platform">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>iOS</th>
+                  <th>Android</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                {downloadData.map((d) => (
+                  <tr key={d.date}>
+                    <td>{shortLabel(d.date)}</td>
+                    <td>{d.ios}</td>
+                    <td>{d.android}</td>
+                    <td>{d.sum}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </section>
 
       {/* ── Team ─────────────────────────────────────── */}

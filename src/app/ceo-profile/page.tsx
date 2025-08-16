@@ -120,7 +120,7 @@ export default function Profile() {
             {[
               {
                 title: "Email",
-                body: <>tommydoh@snu.ac.kr</>,
+                body: <a className={styles.plainLink} href="mailto:tommydoh@snu.ac.kr">tommydoh@snu.ac.kr</a>,
               },
               { title: "Phone", body: <>+82 10-6854-9906</> },
               { title: "Location", body: <>Seocho-gu, Seoul</> },
