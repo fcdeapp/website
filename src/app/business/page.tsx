@@ -195,8 +195,7 @@ export default function BusinessPage() {
         <span className={styles.sectionKicker}>The Problem</span>
         <h2 className={styles.sectionTitle}>Why Abrody Exists</h2>
         <p className={styles.sectionLead}>
-          Traditional apps push scripted content at learners. We start from real life —
-          letting your daily context generate what you practice next.
+          Most apps push scripted drills. We start from real life—so Gen X learners practice what they’ll actually say at work and in daily moments.
         </p>
       </motion.div>
 
@@ -210,18 +209,18 @@ export default function BusinessPage() {
         {[
           {
             icon: "↓",
-            title: "Lowest App Retention",
-            body: "Education apps post the worst 30-day retention (2.1 %). Learners quit before progress. — AppsFlyer 2025",
+            title: "Apps That Don’t Stick",
+            body: "Many learning apps lose adults fast. Gen X needs relevant, transferable practice—not streaks.",
           },
           {
             icon: "≠",
             title: "Study ≠ Speaking",
-            body: "Grammar drills and XP rarely yield spontaneous conversation; anxiety stays high even after years of study.",
+            body: "Endless grammar and XP don’t unlock spontaneous speaking. Confidence stays low without real-context practice.",
           },
           {
             icon: "₩",
-            title: "Costly Yet Ineffective",
-            body: "South Korea spends ₩29.2 T (≈ $21 B) annually on English, yet ranks 50th in EF EPI proficiency.",
+            title: "Big Spend, Small Gains",
+            body: "Time and money go in, practical results don’t. Abrody focuses on outcomes Gen X can use at work.",
           },
         ].map((card, i) => (
           <motion.article
@@ -279,44 +278,39 @@ export default function BusinessPage() {
           >
             {[
               {
-                title: "User-Origin Learning",
-                body:
-                  "Real life leads, the platform follows. Lessons are seeded by your own conversations and moments, not scripted drills.",
+                title: "Learn From Your Own Documents",
+                body: "Upload your proposals, papers, and slides. Abrody’s AI extracts key points and core vocabulary, then turns them into repeatable practice.",
               },
               {
-                title: "Context at the Core",
+                title: "AI-Powered Summaries & Drills",
+                body: "No more manual note-taking. Abrody auto-generates concise summaries and targeted quizzes from your real work.",
+              },
+              {
+                title: "More Natural Voice Learning",
+                body: "Abrody’s voices sound real—so you can listen, repeat, and practice in real-world scenarios, anytime, anywhere.",
+              },
+              {
+                title: "Instant AI Dialogs From Your Files",
+                body: "Jump into natural AI conversations based on the content you actually need—emails, reports, even presentations.",
+              },
+              {
+                title: "Progress That Transfers to Work",
+                body: "Every session is grounded in your actual job context, so what you practice transfers to real workplace results.",
+              },
+              {
+                title: "Context First",
                 body:
-                  "Situation, intent, and phrasing come from your day-to-day context—so practice instantly feels relevant and transferable.",
+                  "Situation, intent, and phrasing come from your day—so it transfers.",
               },
               {
                 title: "Hyper-Personalization",
                 body:
-                  "Your mistakes become tailored quizzes, your favorite phrases become targeted practice. Progress is personal, not generic.",
+                  "Your mistakes become targeted quizzes. Your phrases become practice.",
               },
               {
-                title: "AI-Powered, Not App-Powered",
+                title: "Less Game, More Gain",
                 body:
-                  "AI turns your lived moments into dialogues, feedback, and review—automating a CTL-style loop that actually builds fluency.",
-              },
-              {
-                title: "Less Gamification, More Growth",
-                body:
-                  "We optimize for speaking clarity and confidence—not just streaks. Learn in a way that sticks when you talk to real people.",
-              },
-              {
-                title: "From Daily Life to Daily Wins",
-                body:
-                  "Snap → Chat → Quiz, repeatedly—each micro-loop converts life into practice and builds durable skill, day after day.",
-              },
-              {
-                title: "Chain Quizzes for Deeper Recall",
-                body:
-                  "Linked questions guide you step-by-step, mirroring how large language models learn — so each answer strengthens the next.",
-              },
-              {
-                title: "Word Chains That Stick",
-                body:
-                  "Vocabulary connects in context, not isolation. Chained practice weaves words into patterns you’ll actually recall when speaking.",
+                  "We optimize clarity and confidence—not points or streaks.",
               },
             ].map((f, i) => (
               <motion.article
