@@ -63,14 +63,14 @@ export default function About() {
       <div className={`${styles.container} ${styles.aosWrapper}`}>
         <section className={styles.heroSection}>
           <motion.div className={styles.heroText} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.6 }}>
-            <motion.h1 variants={zoomIn}>The Easiest Way to Learn a Language — From Your Own Words</motion.h1>
+            <motion.h1 variants={zoomIn}>Built for Gen X — Learn From Your Own Life</motion.h1>
             <motion.p variants={fadeUp} custom={1}>
-              Tried language apps but never felt like you were improving? <br />
-              Abrody turns your actual conversations — with friends or our AI — into personalized quizzes and interactive study materials. <br />
-              Learn smarter, not harder. See real progress and get truly engaged, every day.
+              Tried language apps that felt like a game, not progress? <br />
+              Abrody turns your real conversations—at work or with our AI—into targeted quizzes and practice. <br />
+              Learn what matters, see results you can use.
             </motion.p>
             <motion.a href="#why" className={styles.scrollHint} variants={fadeUp} custom={2} whileHover={{ y: 4 }}>
-              ↓ See why
+             ↓ Why it works for Gen X
             </motion.a>
           </motion.div>
           <motion.div className={styles.heroImage} variants={zoomIn} />
@@ -84,10 +84,9 @@ export default function About() {
         viewport={{ once: true, amount: 0.45 }}
       >
         <span className={stylesB.sectionKicker}>The Problem</span>
-        <h2 className={stylesB.sectionTitle}>Why Abrody Exists</h2>
+        <h2 className={stylesB.sectionTitle}>Why Abrody Exists for Gen X</h2>
         <p className={stylesB.sectionLead}>
-          Traditional apps push scripted content at learners. We start from real life —
-          letting your daily context generate what you practice next.
+          Most apps push scripted drills. We start from real life—so Gen X learners practice what they’ll actually say at work and in daily moments.
         </p>
       </motion.div>
 
@@ -101,18 +100,18 @@ export default function About() {
         {[
           {
             icon: "↓",
-            title: "Lowest App Retention",
-            body: "Education apps post the worst 30-day retention (2.1 %). Learners quit before progress. — AppsFlyer 2025",
+            title: "Apps That Don’t Stick",
+            body: "Many learning apps lose adults fast. Gen X needs relevant, transferable practice—not streaks.",
           },
           {
             icon: "≠",
             title: "Study ≠ Speaking",
-            body: "Grammar drills and XP rarely yield spontaneous conversation; anxiety stays high even after years of study.",
+            body: "Endless grammar and XP don’t unlock spontaneous speaking. Confidence stays low without real-context practice.",
           },
           {
             icon: "₩",
-            title: "Costly Yet Ineffective",
-            body: "South Korea spends ₩29.2 T (≈ $21 B) annually on English, yet ranks 50th in EF EPI proficiency.",
+            title: "Big Spend, Small Gains",
+            body: "Time and money go in, practical results don’t. Abrody focuses on outcomes Gen X can use at work.",
           },
         ].map((card, i) => (
           <motion.article
@@ -137,7 +136,7 @@ export default function About() {
             variants={fadeUp}
             viewport={{ once: true, amount: 0.45 }}
           >
-            What Makes Abrody Different
+            Why Gen X Chooses Abrody
           </motion.h2>
 
           <motion.div
@@ -170,44 +169,39 @@ export default function About() {
           >
             {[
               {
-                title: "User-Origin Learning",
-                body:
-                  "Real life leads, the platform follows. Lessons are seeded by your own conversations and moments, not scripted drills.",
+                title: "Learn From Your Own Documents",
+                body: "Upload your proposals, papers, and slides. Abrody’s AI extracts key points and core vocabulary, then turns them into repeatable practice.",
               },
               {
-                title: "Context at the Core",
+                title: "AI-Powered Summaries & Drills",
+                body: "No more manual note-taking. Abrody auto-generates concise summaries and targeted quizzes from your real work.",
+              },
+              {
+                title: "More Natural Voice Learning",
+                body: "Abrody’s voices sound real—so you can listen, repeat, and practice in real-world scenarios, anytime, anywhere.",
+              },
+              {
+                title: "Instant AI Dialogs From Your Files",
+                body: "Jump into natural AI conversations based on the content you actually need—emails, reports, even presentations.",
+              },
+              {
+                title: "Progress That Transfers to Work",
+                body: "Every session is grounded in your actual job context, so what you practice transfers to real workplace results.",
+              },
+              {
+                title: "Context First",
                 body:
-                  "Situation, intent, and phrasing come from your day-to-day context—so practice instantly feels relevant and transferable.",
+                  "Situation, intent, and phrasing come from your day—so it transfers.",
               },
               {
                 title: "Hyper-Personalization",
                 body:
-                  "Your mistakes become tailored quizzes, your favorite phrases become targeted practice. Progress is personal, not generic.",
+                  "Your mistakes become targeted quizzes. Your phrases become practice.",
               },
               {
-                title: "AI-Powered, Not App-Powered",
+                title: "Less Game, More Gain",
                 body:
-                  "AI turns your lived moments into dialogues, feedback, and review—automating a CTL-style loop that actually builds fluency.",
-              },
-              {
-                title: "Less Gamification, More Growth",
-                body:
-                  "We optimize for speaking clarity and confidence—not just streaks. Learn in a way that sticks when you talk to real people.",
-              },
-              {
-                title: "From Daily Life to Daily Wins",
-                body:
-                  "Snap → Chat → Quiz, repeatedly—each micro-loop converts life into practice and builds durable skill, day after day.",
-              },
-              {
-                title: "Chain Quizzes for Deeper Recall",
-                body:
-                  "Linked questions guide you step-by-step, mirroring how large language models learn — so each answer strengthens the next.",
-              },
-              {
-                title: "Word Chains That Stick",
-                body:
-                  "Vocabulary connects in context, not isolation. Chained practice weaves words into patterns you’ll actually recall when speaking.",
+                  "We optimize clarity and confidence—not points or streaks.",
               },
             ].map((f, i) => (
               <motion.article
@@ -286,7 +280,7 @@ export default function About() {
               kicker: "Quiz",
               img: "/images/flow-5.png",
               title: "Instant Quiz",
-              desc: "Practice what you learned in a quick, targeted quiz.",
+              desc: "Lock it in with a quick, targeted quiz.",
             },
           ].map((step, i) => (
             <motion.div
@@ -359,28 +353,20 @@ export default function About() {
           <section className={stylesC.betaSection} data-aos="fade-up">
             <div className={`${stylesC.betaCard} ${stylesC.glassCard}`}>
               <div className={stylesC.sectionHead}>
-                <span className={stylesC.sectionKicker}>Early Access</span>
-                <h2 className={stylesC.betaTitle}>Android Beta Test</h2>
+                <span className={stylesC.sectionKicker}>Get Abrody</span>
+                <h2 className={stylesC.betaTitle}>Get Abrody on Android</h2>
                 <p className={stylesC.betaSubtitle}>
-                  Help shape Abrody by testing upcoming features before anyone else — your feedback matters!
+                  Download Abrody on Google Play
                 </p>
               </div>
               <div className={stylesC.ctaButtons}>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
+                  href="https://play.google.com/store/apps/details?id=com.fcdeapp.facade"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
                 >
-                  Apply for Beta (KR)
-                </a>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSe489LaaOkRxUXYFx64aEee5Q5_IhKmMPKrb6--P8sSrHNGfQ/viewform?usp=dialog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
-                >
-                  Apply for Beta (EN)
+                  Download on Google Play
                 </a>
               </div>
             </div>

@@ -87,7 +87,7 @@ export default function Home() {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Abrody | Connecting People Abroad</title>
+        <title>Abrody | Built for Gen X — Learn from Your Own Documents</title>
         <meta name="description" content="With Abrody, every chat turns into personalized quizzes—learn smarter, see real progress, and enjoy language learning." />
 
         {/* Open Graph for link previews */}
@@ -189,8 +189,8 @@ export default function Home() {
               <span className={styles.sectionKicker}>Product</span>
               <h2 className={styles.sectionTitle}>App Demo</h2>
               <p className={styles.sectionLeadSmall}>
-                See how Abrody turns every chat into a quiz made just for you. 
-                Speak, make mistakes, and learn naturally — it’s all automatic.
+              Watch Abrody turn documents into summaries, vocabulary loops, and natural voice practice.
+              Chat with AI, get contextual corrections, and lock it in with an instant quiz.
               </p>
             </div>
 
@@ -270,28 +270,20 @@ export default function Home() {
           <section className={styles.betaSection} data-aos="fade-up">
             <div className={`${styles.betaCard} ${styles.glassCard}`}>
               <div className={styles.sectionHead}>
-                <span className={styles.sectionKicker}>Early Access</span>
-                <h2 className={styles.betaTitle}>Android Beta Test</h2>
+                <span className={styles.sectionKicker}>Download</span>
+                <h2 className={styles.betaTitle}>Get Abrody on Android</h2>
                 <p className={styles.betaSubtitle}>
-                  Help shape Abrody by testing upcoming features before anyone else — your feedback matters!
+                  Download Abrody on Google Play
                 </p>
               </div>
               <div className={styles.ctaButtons}>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
+                  href="https://play.google.com/store/apps/details?id=com.fcdeapp.facade"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${styles.ctaButton} ${styles.btnPrimary}`}
                 >
-                  Apply for Beta (KR)
-                </a>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSe489LaaOkRxUXYFx64aEee5Q5_IhKmMPKrb6--P8sSrHNGfQ/viewform?usp=dialog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
-                >
-                  Apply for Beta (EN)
+                  Download on Google Play
                 </a>
               </div>
             </div>

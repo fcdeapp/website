@@ -63,14 +63,14 @@ export default function About() {
       <div className={`${styles.container} ${styles.aosWrapper}`}>
         <section className={styles.heroSection}>
           <motion.div className={styles.heroText} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.6 }}>
-            <motion.h1 variants={zoomIn}>영어를 배우는 가장 쉬운 방법 — 내 대화에서 시작하세요</motion.h1>
+            <motion.h1 variants={zoomIn}>4050을 위한 실전 영어 — 일상과 업무에서 바로 쓰는 표현으로 배우세요</motion.h1>
             <motion.p variants={fadeUp} custom={1}>
-            여러 언어 앱을 써봐도 실력이 늘지 않는 것 같나요? <br />
-            Abrody는 친구나 AI와 나눈 실제 대화를 맞춤형 퀴즈와 학습 자료로 바꿔 드립니다. <br />
-            더 똑똑하게, 더 재미있게 배우고 매일 실력 향상을 느껴보세요.
+            게임처럼 느껴지는 언어 앱에 지치셨나요? <br />
+            어브로디는 직장과 일상에서 실제로 사용하는 대화를 AI가 분석해, 즉시 연습 가능한 맞춤 퀴즈와 음성 학습으로 바꿉니다. <br />
+            필요한 표현을 빠르게 익히고 업무 현장에서 바로 써먹으세요.
             </motion.p>
             <motion.a href="#why" className={styles.scrollHint} variants={fadeUp} custom={2} whileHover={{ y: 4 }}>
-            ↓ 이유 보기
+            ↓ 4050에 적합한 이유 보기
             </motion.a>
           </motion.div>
           <motion.div className={styles.heroImage} variants={zoomIn} />
@@ -84,10 +84,9 @@ export default function About() {
         viewport={{ once: true, amount: 0.45 }}
       >
         <span className={stylesB.sectionKicker}>문제</span>
-        <h2 className={stylesB.sectionTitle}>Abrody가 필요한 이유</h2>
+        <h2 className={stylesB.sectionTitle}>4050을 위한 어브로디가 필요한 이유</h2>
         <p className={stylesB.sectionLead}>
-        대부분의 앱은 정해진 학습 콘텐츠를 일방적으로 제공합니다.  
-        우리는 반대로, 당신의 일상에서 출발해 학습 내용을 만듭니다.
+        당신의 업무와 일상에서 시작해, 즉시 현업에 적용 가능한 학습을 만듭니다.
         </p>
       </motion.div>
 
@@ -137,7 +136,7 @@ export default function About() {
             variants={fadeUp}
             viewport={{ once: true, amount: 0.45 }}
           >
-            Abrody만의 차별점
+            어브로디만의 차별점
           </motion.h2>
 
           <motion.div
@@ -157,8 +156,7 @@ export default function About() {
             custom={1}
             viewport={{ once: true, amount: 0.5 }}
           >
-            학습의 방향을 완전히 뒤집었습니다.  
-            Abrody에서는 모든 것이 <strong>사용자</strong>—당신의 상황, 맥락, 말에서 시작됩니다.
+            학습의 방향을 완전히 바꿨습니다. 어브로디는 사용자의 업무와 생활 맥락에서 시작해, 바로 현업에서 쓸 수 있는 연습으로 연결합니다.
           </motion.p>
 
           <motion.div
@@ -170,37 +168,37 @@ export default function About() {
           >
             {[
               {
-                title: "사용자가 시작하는 학습",
-                body: "정해진 커리큘럼이 아니라, 실제 대화와 경험에서 학습이 출발합니다.",
+                title: "문서에서 시작하는 학습",
+                body: "제안서·논문·발표자료를 업로드하면 AI가 핵심 문장과 어휘를 추출해 반복 연습 콘텐츠로 자동 변환합니다.",
               },
               {
-                title: "맥락이 곧 교재",
-                body: "매일 겪는 상황과 의도가 그대로 학습 내용이 되어, 배운 즉시 활용할 수 있습니다.",
+                title: "AI 요약·자동 드릴",
+                body: "수동 요약 불필요. Abrody가 핵심 요약과 맞춤 퀴즈를 자동 생성해 즉시 학습으로 연결합니다.",
               },
               {
-                title: "초개인화 학습",
-                body: "내가 한 실수는 곧 퀴즈가 되고, 내가 즐겨 쓰는 표현은 집중 연습으로 이어집니다. 학습은 나에게 꼭 맞게 설계됩니다.",
+                title: "자연스러운 음성 학습",
+                body: "더 자연스러운 TTS로 듣고 따라하세요. 단어장·대화 모두에서 실제에 가까운 음성 재생을 지원합니다.",
               },
               {
-                title: "AI가 만드는 실시간 피드백",
-                body: "AI가 일상의 순간을 대화, 교정, 복습으로 바꾸어 CTL 방식 루프를 자동으로 완성합니다.",
+                title: "파일 기반의 실제 대화",
+                body: "업무 문서를 바탕으로 이메일·보고·프레젠테이션 대화를 연습할 수 있는 실제 시나리오를 제공합니다.",
               },
               {
-                title: "게임이 아닌 실력",
-                body: "연속 기록이나 점수가 아니라, 말할 때의 명확성과 자신감을 목표로 합니다.",
+                title: "업무로 연결되는 성과",
+                body: "모든 연습은 실제 업무 맥락에 기반하므로 배운 표현을 즉시 현장에서 사용할 수 있습니다.",
               },
               {
-                title: "일상에서 성취로",
-                body: "Snap → Chat → Quiz. 생활 속 순간이 학습으로 전환되어 하루하루 실력이 쌓입니다.",
+                title: "맥락 중심 학습",
+                body: "상황·의도·표현이 일치하는 연습으로 학습 전이가 쉬워집니다.",
               },
               {
-                title: "체인 퀴즈로 깊은 기억",
-                body: "단계적으로 연결된 퀴즈가 학습 흐름을 이어가며, 답할수록 다음 답이 쉬워집니다.",
+                title: "초개인화",
+                body: "실수와 사용 빈도에 따른 맞춤 퀴즈로 약점을 빠르게 보완합니다.",
               },
               {
-                title: "문맥 속 어휘 연결",
-                body: "단어를 따로 외우는 대신, 실제 문맥 속에서 연습해 대화할 때 자연스럽게 떠오릅니다.",
-              },              
+                title: "점수보다 실력",
+                body: "연속 기록이나 점수가 목표가 아니라, 말할 때의 명료성과 자신감을 높입니다.",
+              },                        
             ].map((f, i) => (
               <motion.article
                 key={f.title}
@@ -239,7 +237,7 @@ export default function About() {
           <span className={stylesB.gradientNumber}>54%</span>
           유창성을
           <span className={stylesB.gradientNumber}>65%</span> 향상시킵니다.  
-          Abrody는 이 방식을 전 과정에 자동화합니다.
+          어브로디는 이 방식을 전 과정에 자동화합니다.
           <cite className={stylesB.quoteCite}>— Yusyac 외, 2021</cite>
         </motion.blockquote>
 
@@ -257,7 +255,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.45 }}
         >
           <span className={stylesB.sectionKicker}>학습 흐름</span>
-          <h2 className={stylesB.sectionTitle}>Abrody는 이렇게 작동합니다</h2>
+          <h2 className={stylesB.sectionTitle}>어브로디는 이렇게 작동합니다</h2>
         </motion.div>
 
         <div className={stylesB.flowGrid}>
@@ -335,29 +333,18 @@ export default function About() {
           <section className={stylesC.betaSection} data-aos="fade-up">
             <div className={`${stylesC.betaCard} ${stylesC.glassCard}`}>
               <div className={stylesC.sectionHead}>
-                <span className={stylesC.sectionKicker}>얼리 액세스</span>
-                <h2 className={stylesC.betaTitle}>안드로이드 베타 테스트</h2>
-                <p className={stylesC.betaSubtitle}>
-                정식 출시 전에 새로운 기능을 먼저 체험하고 의견을 들려주세요.  
-                여러분의 피드백이 Abrody를 더 나은 서비스로 만듭니다!
-                </p>
+                <span className={stylesC.sectionKicker}>다운로드</span>
+                <h2 className={stylesC.betaTitle}>Android에서 어브로디 받기</h2>
+                <p className={stylesC.betaSubtitle}>Google Play에서 바로 다운로드하세요</p>
               </div>
               <div className={stylesC.ctaButtons}>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSegOW7ihlRB7tOnMGwJtJXE_dqPvro0gdhw_W5cOItTSWySYg/viewform?usp=dialog"
+                  href="https://play.google.com/store/apps/details?id=com.fcdeapp.facade"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
                 >
-                  베타 신청 (한국어)
-                </a>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSe489LaaOkRxUXYFx64aEee5Q5_IhKmMPKrb6--P8sSrHNGfQ/viewform?usp=dialog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${stylesC.ctaButton} ${stylesC.btnPrimary}`}
-                >
-                  베타 신청 (영어)
+                  Google Play에서 다운로드
                 </a>
               </div>
             </div>
