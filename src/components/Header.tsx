@@ -75,7 +75,7 @@ export default function Header() {
           <div className="left">
             <Link href="/">
               <a className="logo">
-                <img src="/AbrodyFoxB.png" alt="Abrody Logo" />
+                <img src="/AbrodyFoxGRA.png" alt="Abrody Logo" />
                 <span className="logo-text">Abrody</span>
               </a>
             </Link>
