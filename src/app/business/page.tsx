@@ -655,7 +655,7 @@ export default function BusinessPage() {
         <div className={styles.downloadGrid}>
           {/* Pitch Deck Card */}
           <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
-          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-13</span>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Pitch Deck</h4>
               <span className={styles.dMeta}>PDF · English</span>
@@ -664,20 +664,20 @@ export default function BusinessPage() {
             <div className={styles.actions}>
               <button
                 className={`${styles.btn} ${styles.btnPrimary}`}
-                onClick={() => setPreview({ type: "pdf", src: "/Abrody_Pitch_Deck_250813_EN.pdf" })}
+                onClick={() => setPreview({ type: "pdf", src: "/Abrody_Pitch_Deck_EN_250825.pdf" })}
               >
                 Preview
               </button>
               <a
                 className={`${styles.btn} ${styles.btnGhost}`}
-                href={encodeURI("/Abrody_Pitch_Deck_250813_EN.pdf")}
+                href={encodeURI("/Abrody_Pitch_Deck_EN_250825.pdf")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Open in new tab
               </a>
               <a
-                href="/Abrody_Pitch_Deck_250813_EN.pdf"
+                href="/Abrody_Pitch_Deck_EN_250825.pdf"
                 download
                 className={`${styles.btn} ${styles.btnGhost}`}
               >
@@ -687,7 +687,7 @@ export default function BusinessPage() {
           </motion.article>
 
           <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
-          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-07</span>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Pitch Deck</h4>
               <span className={styles.dMeta}>PDF · Korean</span>
@@ -696,20 +696,20 @@ export default function BusinessPage() {
             <div className={styles.actions}>
               <button
                 className={`${styles.btn} ${styles.btnPrimary}`}
-                onClick={() => setPreview({ type: "pdf", src: "/(주)파사드커넥트_도정민_피치덱.pdf" })}
+                onClick={() => setPreview({ type: "pdf", src: "/Abrody_Pitch_Deck_KR_250825.pdf" })}
               >
                 Preview
               </button>
               <a
                 className={`${styles.btn} ${styles.btnGhost}`}
-                href={encodeURI("/(주)파사드커넥트_도정민_피치덱.pdf")}
+                href={encodeURI("/Abrody_Pitch_Deck_KR_250825.pdf")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Open in new tab
               </a>
               <a
-                href="/(주)파사드커넥트_도정민_피치덱.pdf"
+                href="/Abrody_Pitch_Deck_KR_250825.pdf"
                 download
                 className={`${styles.btn} ${styles.btnGhost}`}
               >
