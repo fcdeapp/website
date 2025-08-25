@@ -549,8 +549,7 @@ export default function BusinessPage() {
         <div className={styles.roadmapWrap}>
           <div className={styles.roadmapTrack} aria-hidden />
           {[
-              { time: "2025 Aug", text: "Android launch · CAC ≤ ₩2,900", status: "next" },
-              { time: "2025 Q4", text: "AI Voice v1 · Extended context & personalized corrections", status: "planned" },
+              { time: "2025 Q4", text: "AI Voice v2 · CAC ≤ ₩2,900", status: "next" },
               { time: "2026 Q1", text: "Retention & Growth · UX experiments, onboarding A/B tests", status: "planned" },
               { time: "2026 H1", text: "Localization & Partnerships · Pilot with schools & enterprise partners", status: "planned" },
               { time: "2026 H2", text: "Pre-Series A · scale growth & broaden market reach", status: "planned" },
@@ -747,7 +746,7 @@ export default function BusinessPage() {
 
           {/* 1-Pager (EN) Card */}
           <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.12}}>
-          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-01</span>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>1-Pager</h4>
               <span className={styles.dMeta}>PDF · English</span>
@@ -755,7 +754,7 @@ export default function BusinessPage() {
             <p className={styles.dDesc}>A one-page overview of Abrody’s mission, product, and traction.</p>
             <div className={styles.actions}>
               <a
-                href="/1-pager(EN).pdf"
+                href="/1-pager_EN_250825.pdf"
                 download
                 className={`${styles.btn} ${styles.btnGhost}`}
               >
