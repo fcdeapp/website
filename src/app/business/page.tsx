@@ -90,7 +90,14 @@ const numberVariant: Variants = {
       transition: { delay: 0.4 + i * 0.3, duration: 0.6, ease: "easeOut" },
     }),
   };
-
+  
+// Stagger 부모
+const heroParent: Variants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08, delayChildren: 0.1 }
+  }
+};
 
 // 떠다니는 오브(구체)
 const floatOrb: Variants = {
