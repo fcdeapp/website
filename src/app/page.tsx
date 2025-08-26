@@ -8,7 +8,6 @@ import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from
 import styles from "../styles/Home.module.css";
 import WebFooter from "../components/WebFooter";
 import RecordingModal from "../components/RecordingModal";
-import ChainQuizzesSection from "../components/ChainQuizzesSection";
 
 type CarouselItem = {
   label: string;
@@ -96,14 +95,11 @@ export default function Home() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Abrody | Built for Mid-Career Pros — Learn from Your Work</title>
-        <meta
-          name="description"
-          content="Upload your PDFs, emails, or slides. Abrody turns your real work into audio drills, AI chats, and micro-quizzes—10 minutes a day, results you can use at work."
-        />
-        <meta property="og:title" content="Abrody | Built for Mid-Career Pros" />
-        <meta property="og:description" content="Turn your own documents into practice that transfers to work." />
-        <meta name="twitter:title" content="Abrody | Built for Mid-Career Pros" />
-        <meta name="twitter:description" content="Practice from your own documents—audio drills, AI chats, micro-quizzes." />
+        <meta name="description" content="Upload a document and get short, practical language practice built from your own work — voice drills, AI coaching and quick quizzes so you can use the language confidently at work in just 10 minutes a day." />
+        <meta property="og:title" content="Abrody — Practical workplace language practice" />
+        <meta name="twitter:title" content="Abrody — Practical workplace language practice" />
+        <meta property="og:description" content="Turn your PDFs, emails and slides into short practice sessions that make your on-the-job communication clearer and more confident." />
+        <meta name="twitter:description" content="Work-focused voice drills, AI coaching and quick quizzes built from your documents — practice that transfers to meetings and emails." />
 
         {/* Open Graph for link previews */}
         <meta property="og:type"        content="website" />
@@ -139,7 +135,7 @@ export default function Home() {
           style={{ rotateX: tiltX, rotateY: tiltY }}
         >
           <h1 className={styles.heroTitle}>
-            Built for Mid-Career Pros — Learn&nbsp;
+          Real-work language practice for mid-career professionals — Learn&nbsp;
             <span className={styles.dynamicLangBg}>
               <AnimatePresence mode="wait">
                 <motion.span
@@ -158,13 +154,11 @@ export default function Home() {
           </h1>
 
           <motion.p className={styles.heroLead}>
-            Upload PDFs, emails, or slides—Abrody turns your real content into
-            short audio drills, AI chats, and micro-quizzes. Ten minutes a day:
-            practice that transfers to work.
+          Upload a document and get short, work-tailored practice — voice drills, AI coaching and micro-quizzes that make your meetings, emails and presentations clearer in minutes a day.
           </motion.p>
 
           <div className={styles.heroCtas}>
-            <a href="#how" className={styles.primaryCta}>Start with My Files</a>
+            <a href="#how" className={styles.primaryCta}>Practice with my documents</a>
             <a href="#product" className={styles.secondaryCta}>Watch the demo</a>
             <span className={styles.scrollHintBig} aria-hidden>⌄</span>
           </div>
@@ -177,12 +171,11 @@ export default function Home() {
 
         <main className={styles.main}>
         <div id="how" className={styles.journeyHeader}>
-          <span className={styles.sectionKicker}>How it works</span>
-          <h2 className={styles.sectionTitle}>Turn your work into practice</h2>
-          <p className={styles.sectionLead}>
-            Upload a file or snap a moment. Abrody builds audio drills, AI chats,
-            and micro-quizzes—so 10 minutes a day actually sticks.
-          </p>
+        <span className={styles.sectionKicker}>How it helps</span>
+        <h2 className={styles.sectionTitle}>Practice that improves your work</h2>
+        <p className={styles.sectionLead}>
+          Upload one document or a photo. Abrody creates short, job-relevant practice that improves your confidence and clarity in meetings, calls and emails.
+        </p>
         </div>
 
 
@@ -197,7 +190,7 @@ export default function Home() {
             >
               <img
                 src={item.image}
-                alt={`App journey screen ${item.label}`}
+                alt={`Screens showing how short practice improves work communication — step ${item.label}`}
                 className={styles.carouselImage}
                 loading="lazy"
               />
@@ -205,17 +198,13 @@ export default function Home() {
           ))}
         </motion.div>
 
-        <ChainQuizzesSection />
-
           {/* App Demo Videos */}
           <section className={styles.section} data-aos="fade-up">
           <div className={styles.sectionHead}>
             <span className={styles.sectionKicker}>Product</span>
             <h2 className={styles.sectionTitle}>See it in action</h2>
             <p className={styles.sectionLeadSmall}>
-              Watch Abrody turn your documents into summaries, key phrases, and natural
-              voice practice. Chat with AI for contextual corrections, then lock it in
-              with an instant quiz.
+              See Abrody convert your files into bite-size practice: natural voice drills, contextual AI coaching and quick quizzes — all focused on improving real work outcomes.
             </p>
           </div>
 
@@ -241,7 +230,7 @@ export default function Home() {
           <section className={styles.section} data-aos="fade-up">
             <img
               src="/images/Ads250812EN.jpg"
-              alt="Speak. Chat. Master."
+              alt="Practice that improves your meetings and emails"
               className={styles.recordButtonImage}
             />
           </section>
