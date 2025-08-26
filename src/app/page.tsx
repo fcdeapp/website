@@ -4,7 +4,7 @@ import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
 import styles from "../styles/Home.module.css";
 import WebFooter from "../components/WebFooter";
 import RecordingModal from "../components/RecordingModal";
@@ -44,6 +44,17 @@ export default function Home() {
   const languages = ["English", "Français", "Español", "中文", "日本語", "한국어"];
   // ② 현재 인덱스 관리
   const [langIndex, setLangIndex] = useState(0);
+  
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
+  const sx = useSpring(mx, { stiffness: 120, damping: 18, mass: 0.25 });
+  const sy = useSpring(my, { stiffness: 120, damping: 18, mass: 0.25 });
+  const tiltX = useTransform(sy, v => v / -8);
+  const tiltY = useTransform(sx, v => v / 8);
+  const layerSlow = { x: useTransform(sx, v => v * -0.25), y: useTransform(sy, v => v * -0.25) };
+  const layerMed  = { x: useTransform(sx, v => v * -0.5 ), y: useTransform(sy, v => v * -0.5 ) };
+  const layerFast = { x: useTransform(sx, v => v *  0.8 ), y: useTransform(sy, v => v *  0.8 ) };
+
 
   // ③ 3초마다 인덱스 순환
   useEffect(() => {
@@ -79,84 +90,101 @@ export default function Home() {
   const openModal = (src: string) => setModalImage(src);
   const closeModal = () => setModalImage(null);
 
+
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Abrody | Built for Gen X — Learn from Your Own Documents</title>
-        <meta name="description" content="With Abrody, every chat turns into personalized quizzes—learn smarter, see real progress, and enjoy language learning." />
+        <title>Abrody | Built for Mid-Career Pros — Learn from Your Work</title>
+        <meta
+          name="description"
+          content="Upload your PDFs, emails, or slides. Abrody turns your real work into audio drills, AI chats, and micro-quizzes—10 minutes a day, results you can use at work."
+        />
+        <meta property="og:title" content="Abrody | Built for Mid-Career Pros" />
+        <meta property="og:description" content="Turn your own documents into practice that transfers to work." />
+        <meta name="twitter:title" content="Abrody | Built for Mid-Career Pros" />
+        <meta name="twitter:description" content="Practice from your own documents—audio drills, AI chats, micro-quizzes." />
 
         {/* Open Graph for link previews */}
         <meta property="og:type"        content="website" />
-        <meta property="og:title"       content="Abrody | Connecting People Abroad" />
-        <meta property="og:description" content="With Abrody, every chat turns into personalized quizzes—learn smarter, see real progress, and enjoy language learning." />
-        <meta property="og:image"       content="https://website.fcde.app/og-image.jpg" />
+        <meta property="og:image"       content="https://website.fcde.app/AbrodyFoxB.png" />
         <meta property="og:url"         content="https://website.fcde.app/" />
         <meta property="og:image:width"  content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter Card */}
         <meta name="twitter:card"        content="summary_large_image" />
-        <meta name="twitter:title"       content="Abrody | Connecting People Abroad" />
-        <meta name="twitter:description" content="With Abrody, every chat turns into personalized quizzes—learn smarter, see real progress, and enjoy language learning." />
-        <meta name="twitter:image"       content="https://website.fcde.app/og-image.jpg" />
+        <meta name="twitter:image"       content="https://website.fcde.app/AbrodyFoxB.png" />
         <meta name="twitter:image:alt"   content="Abrody | Connecting People Abroad" />
       </Head>
 
       <div className={styles.container}>
-      <header className={`${styles.hero} ${styles.heroBrand}`} data-aos="fade-in">
-        <div className={styles.starfield} aria-hidden />
-        <div className={styles.heroOverlay}>
-        <h1 className={styles.title} data-aos="fade-up">
-          The Easiest Way to Learn&nbsp;
-          <AnimatePresence mode="wait">
+      <section
+        className={styles.heroSection}
+        onMouseMove={(e) => {
+          const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
+          const relX = ((e.clientX - r.left) / r.width - 0.5) * 80; // -40~40
+          const relY = ((e.clientY - r.top) / r.height - 0.5) * 80;
+          mx.set(relX); my.set(relY);
+        }}
+      >
+        {/* 배경 FX */}
+        <motion.div aria-hidden className={styles.fxMesh} style={layerSlow} />
+        <motion.div aria-hidden className={styles.fxBeams} style={layerMed} />
+        <motion.div aria-hidden className={styles.fxGrid} />
+
+        {/* 전경 콘텐츠 (3D 틸트) */}
+        <motion.div
+          className={styles.heroInner}
+          style={{ rotateX: tiltX, rotateY: tiltY }}
+        >
+          <h1 className={styles.heroTitle}>
+            Built for Mid-Career Pros — Learn&nbsp;
             <span className={styles.dynamicLangBg}>
-              <motion.span
-                key={langIndex}
-                className={styles.dynamicLang}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-              >
-                {languages[langIndex]}
-              </motion.span>
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={langIndex}
+                  className={styles.dynamicLang}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  {languages[langIndex]}
+                </motion.span>
+              </AnimatePresence>
             </span>
-          </AnimatePresence>
-          &nbsp;— From Your Own Words
-        </h1>
-            <p className={styles.subtitle} data-aos="fade-up" data-aos-delay={300}>
-              Tried language apps but never felt like you were truly improving? <br />
-              With Abrody, every chat — with AI or friends — instantly turns into personalized, interactive quizzes just for you.<br />
-              Learn smarter, see real progress, and feel more engaged with your study.
-            </p>
-            <div className={styles.heroHint} data-aos="fade-up" data-aos-delay={500}>
-              Swipe to Explore
-            </div>
-            <div className={styles.heroArrows} data-aos="fade-up" data-aos-delay={600}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </div>
+            &nbsp;From Your Work
+          </h1>
+
+          <motion.p className={styles.heroLead}>
+            Upload PDFs, emails, or slides—Abrody turns your real content into
+            short audio drills, AI chats, and micro-quizzes. Ten minutes a day:
+            practice that transfers to work.
+          </motion.p>
+
+          <div className={styles.heroCtas}>
+            <a href="#how" className={styles.primaryCta}>Start with My Files</a>
+            <a href="#product" className={styles.secondaryCta}>Watch the demo</a>
+            <span className={styles.scrollHintBig} aria-hidden>⌄</span>
           </div>
-        </header>
+        </motion.div>
+
+        {/* 비주얼 오브젝트(구체) */}
+        <motion.div className={styles.orb} style={layerFast} aria-hidden />
+        <div className={styles.orbGlow} aria-hidden />
+      </section>
 
         <main className={styles.main}>
-        <div className={styles.journeyHeader}>
+        <div id="how" className={styles.journeyHeader}>
           <span className={styles.sectionKicker}>How it works</span>
-          <h2 className={styles.sectionTitle}>
-            Learn from Your Own Words, Not Someone Else’s
-          </h2>
+          <h2 className={styles.sectionTitle}>Turn your work into practice</h2>
           <p className={styles.sectionLead}>
-            Abrody transforms your real conversations into personalized quizzes.
-            Progress you can feel, every day.
+            Upload a file or snap a moment. Abrody builds audio drills, AI chats,
+            and micro-quizzes—so 10 minutes a day actually sticks.
           </p>
         </div>
+
 
         <motion.div className={styles.journeyContainer} layout>
           {journeyOrder.slice(0, 5).map((item) => (
@@ -181,14 +209,15 @@ export default function Home() {
 
           {/* App Demo Videos */}
           <section className={styles.section} data-aos="fade-up">
-            <div className={styles.sectionHead}>
-              <span className={styles.sectionKicker}>Product</span>
-              <h2 className={styles.sectionTitle}>App Demo</h2>
-              <p className={styles.sectionLeadSmall}>
-              Watch Abrody turn documents into summaries, vocabulary loops, and natural voice practice.
-              Chat with AI, get contextual corrections, and lock it in with an instant quiz.
-              </p>
-            </div>
+          <div className={styles.sectionHead}>
+            <span className={styles.sectionKicker}>Product</span>
+            <h2 className={styles.sectionTitle}>See it in action</h2>
+            <p className={styles.sectionLeadSmall}>
+              Watch Abrody turn your documents into summaries, key phrases, and natural
+              voice practice. Chat with AI for contextual corrections, then lock it in
+              with an instant quiz.
+            </p>
+          </div>
 
             <motion.div className={`${styles.demoVideosContainer} ${styles.demoRail}`} layout>
               {videoOrder.map((src) => (

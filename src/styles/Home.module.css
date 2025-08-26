@@ -998,3 +998,12 @@
   inset: 0;
   pointer-events: none;
 }
+
+.secondaryCta {
+  background: transparent;
+  color: rgba(10,16,69,0.9);
+  padding: .66rem .9rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
