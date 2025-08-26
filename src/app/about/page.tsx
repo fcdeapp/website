@@ -221,7 +221,12 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <div className={`${styles.container} ${styles.aosWrapper}`}>
+      <motion.main
+        className={stylesB.wrapper}
+        initial="hidden"
+        animate="visible"
+        variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+      >
         <section
           className={styles.heroSection}
           onMouseMove={handleMouseMove}
@@ -611,7 +616,7 @@ export default function About() {
             </div>
           </section>
 
-      </div>
+      </motion.main>
       <WebFooter />
     </>
   );

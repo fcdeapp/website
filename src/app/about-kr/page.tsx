@@ -223,7 +223,12 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <div className={`${styles.container} ${styles.aosWrapper}`}>
+      <motion.main
+        className={stylesB.wrapper}
+        initial="hidden"
+        animate="visible"
+        variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+      >
         <section
           className={styles.heroSection}
           onMouseMove={handleMouseMove}
@@ -597,8 +602,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               </div>
             </div>
           </section>
-
-      </div>
+      </motion.main>
       <WebFooter />
     </>
   );
