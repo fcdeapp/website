@@ -380,48 +380,48 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
             {[
-              {
-                id: "docAudio",
-                title: "문서 → 오디오",
-                value: "회의 직전 10분, 내 보고서가 ‘말’로 몸에 붙습니다.",
-                feature: "PDF·PPT·보고서에서 핵심 문장·용어를 추출해 듣고-따라하는 반복 오디오를 즉시 생성합니다.",
-                badge: "🔊"
-              },
-              {
-                id: "fileChat",
-                title: "파일 기반 AI 대화",
-                value: "메일·보고가 막히지 않고 술술 나옵니다.",
-                feature: "내 문서 내용으로 이메일·보고·프레젠테이션 대화를 만들어 자연스럽게 연습합니다.",
-                badge: "💬"
-              },
-              {
-                id: "photoCTL",
-                title: "한 장 사진으로 상황 학습(CTL)",
-                value: "현장에서 필요한 표현을 현장에서 만듭니다.",
-                feature: "사진 한 장을 찍으면 그 상황에 맞는 학습 시나리오가 자동으로 만들어집니다.",
-                badge: "📷"
-              },
-              {
-                id: "quiz",
-                title: "개인화 퀴즈",
-                value: "자주 틀리는 것만 정확히 고쳐집니다.",
-                feature: "실수·빈출 표현을 자동 수집해 내 약점만 콕 집어 퀴즈로 보완합니다.",
-                badge: "🧩"
-              },
-              {
-                id: "voice",
-                title: "자연스러운 AI 보이스",
-                value: "실제 회의 같은 몰입감으로 말이 빨라집니다.",
-                feature: "실제 대화에 가까운 음성으로 듣기/말하기 훈련의 몰입감을 높입니다.",
-                badge: "🎙"
-              },
-              {
-                id: "transfer",
-                title: "업무로 바로 전이",
-                value: "배운 것이 곧 성과로 이어집니다.",
-                feature: "학습이 ‘내 업무 맥락’에서 시작되기에 성과가 현장으로 곧장 이어집니다.",
-                badge: "🎯"
-              },
+                {
+                  id: "docAudio",
+                  title: "보고서를 말로 익히기",
+                  value: "회의 10분 전, 보고서 핵심이 자연스럽게 말로 나옵니다.",
+                  feature: "PDF, PPT, 보고서에서 핵심 문장과 용어를 추출해 반복 듣기·따라하기 오디오를 즉시 생성합니다.",
+                  badge: "🔊"
+                },
+                {
+                  id: "fileChat",
+                  title: "문서로 실제 상황 대화 연습",
+                  value: "메일과 보고를 더 빠르고 자연스럽게 만들 수 있습니다.",
+                  feature: "내 문서 내용을 바탕으로 이메일·보고·발표용 대화를 생성해 자연스럽게 연습합니다.",
+                  badge: "💬"
+                },
+                {
+                  id: "photoCTL",
+                  title: "사진으로 현장 표현 만들기",
+                  value: "현장 사진만으로 그 상황에서 바로 쓸 표현을 만듭니다.",
+                  feature: "사진 한 장으로 상황에 맞는 학습 시나리오와 표현을 자동 생성합니다.",
+                  badge: "📷"
+                },
+                {
+                  id: "quiz",
+                  title: "나만의 취약점만 고치는 퀴즈",
+                  value: "자주 틀리는 표현을 집중적으로 교정합니다.",
+                  feature: "실수와 빈출 표현을 자동 수집해 개인별 약점만 골라 퀴즈로 보완합니다.",
+                  badge: "🧩"
+                },
+                {
+                  id: "voice",
+                  title: "실전 감각을 높이는 자연스러운 음성",
+                  value: "회의처럼 들리고 말하는 연습의 몰입감이 높아집니다.",
+                  feature: "실제 대화에 가까운 AI 음성으로 듣기와 말하기 훈련의 몰입감을 제공합니다.",
+                  badge: "🎙"
+                },
+                {
+                  id: "transfer",
+                  title: "배운 내용이 바로 업무 성과로",
+                  value: "학습한 표현이 다음 업무 결과로 곧장 연결됩니다.",
+                  feature: "학습이 사용자의 실제 업무 맥락에서 시작되어 현장에서 바로 적용되는 성과를 만듭니다.",
+                  badge: "🎯"
+                },
             ].map((f, i) => (
               <FeatureCard key={f.id} item={f} idx={i} />
             ))}
@@ -439,8 +439,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             aria-expanded={quoteOpen}
           >
             일과 학습을 끊김 없이 잇는 CTL 철학으로, 학습은 <em>그날의 일</em>에 스며들고
-            결과는 <strong>현장</strong>에서 확인됩니다. 기능을 따르는 게 아니라,
-            <em>사용자가 느끼는 변화</em>에 집중합니다.
+            결과는 <strong>현장</strong>에서 확인됩니다. 
           </motion.p>
         </section>
 
