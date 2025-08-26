@@ -312,28 +312,28 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
       variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
     >
       <section
-        className={styles.heroSection}
+        className={stylesB.heroSection}
         onMouseMove={handleMouseMove}
       >
         {/* --- background FX layers (absolute) --- */}
         <motion.div
           aria-hidden
-          className={styles.fxMesh}
+          className={stylesB.fxMesh}
           style={layerSlow}
         />
         <motion.div
           aria-hidden
-          className={styles.fxBeams}
+          className={stylesB.fxBeams}
           style={layerMed}
         />
         <motion.div
           aria-hidden
-          className={styles.fxGrid}
+          className={stylesB.fxGrid}
         />
 
         {/* --- foreground content (3D tilt) --- */}
         <motion.div
-          className={styles.heroInner}
+          className={stylesB.heroInner}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.7 }}
@@ -341,23 +341,23 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           style={{ rotateX: tiltX, rotateY: tiltY }}
         >
           {/* title: word-by-word reveal */}
-          <h1 className={styles.heroTitle}>
+          <h1 className={stylesB.heroTitle}>
             {"Practical English for busy professionals in their 40s and 50s".split(" ").map((w, i) => (
-              <motion.span key={i} className={styles.word} variants={titleReveal}>
+              <motion.span key={i} className={stylesB.word} variants={titleReveal}>
                 {w}&nbsp;
               </motion.span>
             ))}
           </h1>
 
-          <motion.p className={styles.heroLead} variants={wordReveal} custom={1}>
+          <motion.p className={stylesB.heroLead} variants={wordReveal} custom={1}>
             AI instantly analyzes your documents, emails, and reports, then turns key expressions into voice drills, guided conversations, and quizzes. Ten minutes on your commute, focused on phrases you can use at work today.
           </motion.p>
 
           {/* CTA / scroll hint */}
-          <div className={styles.heroCtas}>
+          <div className={stylesB.heroCtas}>
             <motion.a
               href="#why"
-              className={styles.primaryCta}
+              className={stylesB.primaryCta}
               variants={wordReveal}
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -365,7 +365,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               Start with my document
             </motion.a>
             <motion.span
-              className={styles.scrollHintBig}
+              className={stylesB.scrollHintBig}
               variants={wordReveal}
               aria-hidden
             >
@@ -376,7 +376,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
 
         {/* visual orb — replaces heroImage */}
         <motion.div
-          className={styles.orb}
+          className={stylesB.orb}
           variants={floatOrb}
           initial="initial"
           animate="animate"
@@ -384,7 +384,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           aria-hidden
         />
         {/* halo glow layer (pure DOM) */}
-        <div className={styles.orbGlow} aria-hidden />
+        <div className={stylesB.orbGlow} aria-hidden />
       </section>
 
       {/* ── Why Abrody Exists ───────────────────────────── */}
