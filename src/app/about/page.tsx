@@ -2,8 +2,8 @@
 
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect } from "react";
-import { motion, Variants } from "framer-motion";
+import { motion, Variants, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useEffect, useRef } from "react";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/About.module.css";
 import stylesB from "../../styles/pages/Business.module.css";
@@ -38,6 +38,34 @@ const zoomIn: Variants = {
   }),
 };
 
+// Stagger 부모
+const heroParent: Variants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08, delayChildren: 0.1 }
+  }
+};
+
+// 단어 단위 텍스트 리빌
+const wordReveal: Variants = {
+  hidden: { opacity: 0, y: 16, filter: "blur(6px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.6, ease: "easeOut" }
+  }
+};
+
+// 떠다니는 오브(구체)
+const floatOrb: Variants = {
+  initial: { y: 0, rotate: 0 },
+  animate: {
+    y: [-4, 6, -2, 0],
+    rotate: [0, 1.2, -0.6, 0],
+    transition: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+  }
+};
 
 export default function About() {
 
@@ -53,6 +81,29 @@ export default function About() {
     AOS.refresh();
   }, []);
 
+  // 마우스 파랄랙스
+const mx = useMotionValue(0);   // -40 ~ 40(px)
+const my = useMotionValue(0);
+const sx = useSpring(mx, { stiffness: 120, damping: 18, mass: 0.25 });
+const sy = useSpring(my, { stiffness: 120, damping: 18, mass: 0.25 });
+
+// 3D 틸트 각도
+const tiltX = useTransform(sy, v => v / -8); // deg
+const tiltY = useTransform(sx, v => v / 8);  // deg
+
+// 레이어별 파랄랙스 깊이
+const layerSlow  = { x: useTransform(sx, v => v * -0.25), y: useTransform(sy, v => v * -0.25) };
+const layerMed   = { x: useTransform(sx, v => v * -0.5 ), y: useTransform(sy, v => v * -0.5 ) };
+const layerFast  = { x: useTransform(sx, v => v *  0.8 ), y: useTransform(sy, v => v *  0.8 ) };
+
+function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
+  const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
+  const relX = ((e.clientX - r.left) / r.width  - 0.5) * 80; // -40~40
+  const relY = ((e.clientY - r.top)  / r.height - 0.5) * 80;
+  mx.set(relX);
+  my.set(relY);
+}
+
   return (
     <>
       <Head>
@@ -61,20 +112,82 @@ export default function About() {
       </Head>
 
       <div className={`${styles.container} ${styles.aosWrapper}`}>
-        <section className={styles.heroSection}>
-          <motion.div className={styles.heroText} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.6 }}>
-            <motion.h1 variants={zoomIn}>Built for Gen X — Learn From Your Own Life</motion.h1>
-            <motion.p variants={fadeUp} custom={1}>
-              Tried language apps that felt like a game, not progress? <br />
-              Abrody turns your real conversations—at work or with our AI—into targeted quizzes and practice. <br />
-              Learn what matters, see results you can use.
-            </motion.p>
-            <motion.a href="#why" className={styles.scrollHint} variants={fadeUp} custom={2} whileHover={{ y: 4 }}>
-             ↓ Why it works for Gen X
+      <section
+        className={styles.heroSection}
+        onMouseMove={handleMouseMove}
+      >
+        {/* --- 배경 FX 레이어들 (절대배치) --- */}
+        <motion.div
+          aria-hidden
+          className={styles.fxMesh}
+          style={layerSlow}
+        />
+        <motion.div
+          aria-hidden
+          className={styles.fxBeams}
+          style={layerMed}
+        />
+        <motion.div
+          aria-hidden
+          className={styles.fxGrid}
+        />
+
+        {/* --- 전경 콘텐츠 (3D 틸트 적용) --- */}
+        <motion.div
+          className={styles.heroInner}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.7 }}
+          variants={heroParent}
+          style={{ rotateX: tiltX, rotateY: tiltY }}
+        >
+          {/* 타이틀: 단어별 리빌 */}
+          <h1 className={styles.heroTitle}>
+            {"Built for Gen X — Learn From Your Own Life".split(" ").map((w, i) => (
+              <motion.span key={i} className={styles.word} variants={wordReveal}>
+                {w}&nbsp;
+              </motion.span>
+            ))}
+          </h1>
+
+          {/* 서브카피 */}
+          <motion.p className={styles.heroLead} variants={wordReveal} custom={1}>
+            Tried language apps that felt like a game, not progress? <br />
+            Abrody turns your real conversations—at work or with our AI—into targeted quizzes and practice. <br />
+            Learn what matters, see results you can use.
+          </motion.p>
+
+          {/* CTA / 스크롤 힌트 */}
+          <div className={styles.heroCtas}>
+            <motion.a
+              href="#why"
+              className={styles.primaryCta}
+              variants={wordReveal}
+              whileHover={{ y: -2, scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              Why it works for Gen X
             </motion.a>
-          </motion.div>
-          <motion.div className={styles.heroImage} variants={zoomIn} />
-        </section>
+            <motion.span
+              className={styles.scrollHintBig}
+              variants={wordReveal}
+              aria-hidden
+            >
+              ⌄
+            </motion.span>
+          </div>
+        </motion.div>
+
+        {/* 비주얼 오브젝트(구체) — heroImage 대체 */}
+        <motion.div
+          className={styles.orb}
+          variants={floatOrb}
+          initial="initial"
+          animate="animate"
+          style={layerFast}
+          aria-hidden
+        />
+      </section>
 
       {/* ── Why Abrody Exists ───────────────────────────── */}
       <section id="why" className={stylesB.section}>

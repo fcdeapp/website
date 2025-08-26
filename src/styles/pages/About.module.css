@@ -76,14 +76,6 @@
     background: transparent;
     margin: 0 auto;
   }
-  /* Hero Section */
-  .heroSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 5rem;
-  }
   
   .heroText h1 {
     font-size: 3rem;
@@ -580,4 +572,166 @@
 @media (max-width: 768px) {
   .sectionTitle { font-size: 1.85rem; }
   .sectionLead { font-size: .98rem; }
+}
+
+/* ====== Big-Tech Hero Rework ====== */
+.heroSection {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  min-height: clamp(560px, 72vh, 880px);
+  padding: clamp(4rem, 10vw, 8rem) 1.5rem 5rem;
+  display: grid;
+  place-items: center;
+  perspective: 1200px;
+  background: radial-gradient(1200px 1200px at 50% 0%,
+              rgba(10,16,69,.06), transparent 60%);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  max-width: min(1100px, 92vw);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.heroTitle {
+  margin: 0 0 1rem 0;
+  font-size: clamp(2.2rem, 5.2vw, 4rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  /* 그라데이션 텍스트 + 은은한 스트로크 */
+  background: linear-gradient(90deg, #D8315B 0%, #F2542D 35%, #0A1045 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 10px 40px rgba(210, 55, 90, .18);
+}
+
+.word { display: inline-block; white-space: pre; }
+
+.heroLead {
+  margin: .6rem auto 0;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.7;
+  color: #53565c;
+  max-width: 640px;
+  letter-spacing: -0.012em;
+}
+
+.heroCtas {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: .9rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.primaryCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .9rem 1.2rem;
+  border-radius: 14px;
+  font-size: .98rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background:
+    radial-gradient(120% 120% at 0% 0%, rgba(255,255,255,.22), transparent 35%),
+    linear-gradient(90deg, #D8315B, #F2542D);
+  box-shadow:
+    0 10px 24px rgba(210,55,90,.28),
+    inset 0 1px 0 rgba(255,255,255,.35);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+  will-change: transform, filter;
+}
+.primaryCta:hover {
+  box-shadow:
+    0 18px 44px rgba(210,55,90,.34),
+    inset 0 1px 0 rgba(255,255,255,.45);
+  filter: saturate(1.08);
+}
+
+.scrollHintBig {
+  font-size: 1.4rem;
+  color: #9aa0a6;
+  animation: nudge 1.8s ease-in-out infinite;
+}
+@keyframes nudge {
+  0%, 100% { transform: translateY(0) }
+  50%      { transform: translateY(6px) }
+}
+
+/* 시네마틱 배경 레이어들 */
+.fxMesh,
+.fxBeams,
+.fxGrid {
+  position: absolute;
+  inset: -12% -12% -16% -12%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fxMesh {
+  /* 복수의 라디얼로 메쉬 느낌 */
+  background:
+    radial-gradient(800px 800px at 20% 8%, rgba(242,84,45,.12), transparent 55%),
+    radial-gradient(900px 900px at 82% 6%, rgba(216,49,91,.12), transparent 55%),
+    radial-gradient(900px 900px at 50% 95%, rgba(10,16,69,.12), transparent 55%);
+  filter: blur(20px) saturate(1.1);
+  mix-blend-mode: screen;
+}
+
+.fxBeams {
+  /* 스크린 블렌드 빛줄기 */
+  background:
+    conic-gradient(from 250deg at 50% -10%, rgba(255,255,255,.35), rgba(255,255,255,0) 40%);
+  filter: blur(60px) saturate(1.15);
+  mix-blend-mode: screen;
+  opacity: .85;
+}
+
+.fxGrid {
+  /* 아주 미세한 그리드 + 느린 이동 */
+  background-image:
+    linear-gradient(to right, rgba(10,16,69,.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10,16,69,.06) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px;
+  mask: radial-gradient(70% 60% at 50% 25%, #000, transparent 80%);
+  animation: gridMove 28s linear infinite;
+}
+@keyframes gridMove {
+  from { background-position: 0 0, 0 0; }
+  to   { background-position: 120px 0, 0 120px; }
+}
+
+/* 비주얼 오브젝트(구체) – heroImage 대체 */
+.orb {
+  position: absolute;
+  z-index: 4;
+  bottom: clamp(-40px, -6vh, -10px);
+  right: 50%;
+  transform: translateX(50%);
+  width: min(54vmin, 560px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background:
+    radial-gradient(40% 40% at 30% 30%, rgba(255,255,255,.9), rgba(255,255,255,.06) 60%),
+    conic-gradient(from 10deg at 50% 50%, #F2542D, #D8315B, #0A1045, #F2542D);
+  box-shadow:
+    0 40px 120px rgba(216,49,91,.35),
+    inset 0 -20px 60px rgba(10,16,69,.35);
+  mix-blend-mode: screen;
+  filter: saturate(1.05);
+  will-change: transform, filter;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .heroLead { max-width: 88vw; }
+  .orb { width: min(66vmin, 520px); }
 }
