@@ -48,25 +48,8 @@ function FeatureCard({
     >
       <div className={stylesB.featHead}>
         <h3 className={stylesB.featTitle}>
-          {/* 배지 위치(기능 모드에서 상단 배지로 전환) */}
-          <motion.span
-            className={stylesB.featBadge}
-            layoutId={`badge-${item.id}`}
-            data-mode={mode}
-          >
-            {item.badge}
-          </motion.span>
           {item.title}
         </h3>
-
-        <button
-          type="button"
-          className={stylesB.featToggle}
-          onClick={(e) => { e.stopPropagation(); setMode(m => (m === "value" ? "feature" : "value")); }}
-          aria-label={`${item.title} ${mode === "value" ? "기능 보기" : "가치 보기"}`}
-        >
-          {mode === "value" ? "기능 보기" : "가치 보기"}
-        </button>
       </div>
 
       <div className={stylesB.featBody}>
