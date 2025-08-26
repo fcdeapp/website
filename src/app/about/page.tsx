@@ -148,18 +148,16 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         >
           {/* 타이틀: 단어별 리빌 */}
           <h1 className={styles.heroTitle}>
-            {"Built for Gen X — Learn From Your Own Life".split(" ").map((w, i) => (
-              <motion.span key={i} className={styles.word} variants={wordReveal}>
+            {"Built for Mid-Career Pros — Learn From Your Work".split(" ").map((w, i) => (
+              <motion.span key={i} className={styles.word} variants={titleReveal}>
                 {w}&nbsp;
               </motion.span>
             ))}
           </h1>
 
-          {/* 서브카피 */}
           <motion.p className={styles.heroLead} variants={wordReveal} custom={1}>
-            Tried language apps that felt like a game, not progress? <br />
-            Abrody turns your real conversations—at work or with our AI—into targeted quizzes and practice. <br />
-            Learn what matters, see results you can use.
+            Upload PDFs, emails, or slides and our AI extracts the expressions you actually use—then turns them into short audio drills,
+            contextual chats, and targeted quizzes. Ten minutes a day: practice that transfers directly to work.
           </motion.p>
 
           {/* CTA / 스크롤 힌트 */}
@@ -171,7 +169,16 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Why it works for Gen X
+              Start with My Files
+            </motion.a>
+            <motion.a
+              href="#how"
+              className={styles.secondaryCta}
+              variants={wordReveal}
+              whileHover={{ y: -2, scale: 1.02 }}
+              style={{ marginLeft: 12, textDecoration: "underline", color: "rgba(10,16,69,0.8)" }}
+            >
+              See how it works
             </motion.a>
             <motion.span
               className={styles.scrollHintBig}
@@ -219,19 +226,19 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
       >
         {[
           {
-            icon: "↓",
-            title: "Apps That Don’t Stick",
-            body: "Many learning apps lose adults fast. Gen X needs relevant, transferable practice—not streaks.",
+            icon: "🎯",
+            title: "Practice, not transfer",
+            body: "Most apps teach exercises—rarely the phrases you need at work. People need practice that transfers to real tasks.",
           },
           {
-            icon: "≠",
-            title: "Study ≠ Speaking",
-            body: "Endless grammar and XP don’t unlock spontaneous speaking. Confidence stays low without real-context practice.",
+            icon: "⏱",
+            title: "No time for irrelevant drills",
+            body: "Commute and lunch breaks are short. Learners need bite-sized sessions tied to their own emails and reports.",
           },
           {
-            icon: "₩",
-            title: "Big Spend, Small Gains",
-            body: "Time and money go in, practical results don’t. Abrody focuses on outcomes Gen X can use at work.",
+            icon: "🎙",
+            title: "Fluency needs context",
+            body: "Real context builds confidence.",
           },
         ].map((card, i) => (
           <motion.article
@@ -288,41 +295,30 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
             {[
-              {
-                title: "Learn From Your Own Documents",
-                body: "Upload your proposals, papers, and slides. Abrody’s AI extracts key points and core vocabulary, then turns them into repeatable practice.",
-              },
-              {
-                title: "AI-Powered Summaries & Drills",
-                body: "No more manual note-taking. Abrody auto-generates concise summaries and targeted quizzes from your real work.",
-              },
-              {
-                title: "More Natural Voice Learning",
-                body: "Abrody’s voices sound real—so you can listen, repeat, and practice in real-world scenarios, anytime, anywhere.",
-              },
-              {
-                title: "Instant AI Dialogs From Your Files",
-                body: "Jump into natural AI conversations based on the content you actually need—emails, reports, even presentations.",
-              },
-              {
-                title: "Progress That Transfers to Work",
-                body: "Every session is grounded in your actual job context, so what you practice transfers to real workplace results.",
-              },
-              {
-                title: "Context First",
-                body:
-                  "Situation, intent, and phrasing come from your day—so it transfers.",
-              },
-              {
-                title: "Hyper-Personalization",
-                body:
-                  "Your mistakes become targeted quizzes. Your phrases become practice.",
-              },
-              {
-                title: "Less Game, More Gain",
-                body:
-                  "We optimize clarity and confidence—not points or streaks.",
-              },
+                {
+                  title: "Document → Audio Drills",
+                  body: "Upload your PDFs, slides, or emails. Abrody extracts the key sentences and turns them into short listening & repeat drills.",
+                },
+                {
+                  title: "File-based AI Conversations",
+                  body: "Practice emails, reports, and presentations in natural dialogues built from your own documents.",
+                },
+                {
+                  title: "One-tap Scenario from Photos",
+                  body: "Take a photo of a moment and we generate a contextual scenario you can practice immediately.",
+                },
+                {
+                  title: "Personalized Micro-Quizzes",
+                  body: "We detect your frequent mistakes and create tiny, focused quizzes that fix exactly what you need.",
+                },
+                {
+                  title: "Natural AI Voices",
+                  body: "High-quality, natural TTS for listening and shadowing—closer to real conversation than robotic prompts.",
+                },
+                {
+                  title: "Work-ready Transfer",
+                  body: "Every exercise starts from your work context—so what you practice transfers to real outcomes faster.",
+                },
             ].map((f, i) => (
               <motion.article
                 key={f.title}
@@ -385,22 +381,22 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         <div className={stylesB.flowGrid}>
           {[
             {
-              kicker: "Snap",
-              img: "/images/flow-1.png",
-              title: "Snap & Scenario",
-              desc: "Take a photo to automatically build a learning scenario from your moment.",
+              kicker: "Upload",
+              img: "/images/flow-6.png",
+              title: "Upload your files",
+              desc: "Drop a PDF, slide deck, or email—Abrody auto-summarizes and extracts useful phrases and vocabulary.",
             },
             {
               kicker: "Chat",
-              img: "/images/flow-4.png",
-              title: "AI Chat & Correction",
-              desc: "Chat with our AI tutor and get instant, contextual corrections.",
+              img: "/images/flow-7.png",
+              title: "AI chat & correction",
+              desc: "Practice workplace dialogues generated from your content and get instant, contextual corrections.",
             },
             {
-              kicker: "Quiz",
-              img: "/images/flow-5.png",
-              title: "Instant Quiz",
-              desc: "Lock it in with a quick, targeted quiz.",
+              kicker: "Drill",
+              img: "/images/flow-8.png",
+              title: "Audio drills & quick quizzes",
+              desc: "Listen, shadow, and lock it in with short drills and micro-quizzes tailored to your needs.",
             },
           ].map((step, i) => (
             <motion.div
