@@ -24,7 +24,6 @@ function FeatureCard({
     title: string;
     value: string;
     feature: string;
-    img: string;
     badge: string;
   };
   idx: number;
@@ -63,12 +62,6 @@ function FeatureCard({
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.28 }}
             >
-              {/* 큰 이미지 → 배지로 수축 (공유 layoutId) */}
-              <motion.div
-                className={stylesB.featMedia}
-                style={{ backgroundImage: `url(${item.img})` }}
-                layoutId={`media-${item.id}`}
-              />
               <p className={stylesB.valueText}>{item.value}</p>
             </motion.div>
           ) : (
@@ -376,7 +369,6 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                 title: "문서 → 오디오",
                 value: "회의 직전 10분, 내 보고서가 ‘말’로 몸에 붙습니다.",
                 feature: "PDF·PPT·보고서에서 핵심 문장·용어를 추출해 듣고-따라하는 반복 오디오를 즉시 생성합니다.",
-                img: "/images/feat-doc-audio.png",
                 badge: "🔊"
               },
               {
@@ -384,7 +376,6 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                 title: "파일 기반 AI 대화",
                 value: "메일·보고가 막히지 않고 술술 나옵니다.",
                 feature: "내 문서 내용으로 이메일·보고·프레젠테이션 대화를 만들어 자연스럽게 연습합니다.",
-                img: "/images/feat-file-chat.png",
                 badge: "💬"
               },
               {
@@ -392,7 +383,6 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                 title: "한 장 사진으로 상황 학습(CTL)",
                 value: "현장에서 필요한 표현을 현장에서 만듭니다.",
                 feature: "사진 한 장을 찍으면 그 상황에 맞는 학습 시나리오가 자동으로 만들어집니다.",
-                img: "/images/feat-photo-ctl.png",
                 badge: "📷"
               },
               {
@@ -400,7 +390,6 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                 title: "개인화 퀴즈",
                 value: "자주 틀리는 것만 정확히 고쳐집니다.",
                 feature: "실수·빈출 표현을 자동 수집해 내 약점만 콕 집어 퀴즈로 보완합니다.",
-                img: "/images/feat-quiz.png",
                 badge: "🧩"
               },
               {
@@ -408,7 +397,6 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                 title: "자연스러운 AI 보이스",
                 value: "실제 회의 같은 몰입감으로 말이 빨라집니다.",
                 feature: "실제 대화에 가까운 음성으로 듣기/말하기 훈련의 몰입감을 높입니다.",
-                img: "/images/feat-voice.png",
                 badge: "🎙"
               },
               {
@@ -416,7 +404,6 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                 title: "업무로 바로 전이",
                 value: "배운 것이 곧 성과로 이어집니다.",
                 feature: "학습이 ‘내 업무 맥락’에서 시작되기에 성과가 현장으로 곧장 이어집니다.",
-                img: "/images/feat-transfer.png",
                 badge: "🎯"
               },
             ].map((f, i) => (
