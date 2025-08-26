@@ -574,7 +574,6 @@
   .sectionLead { font-size: .98rem; }
 }
 
-/* ====== Big-Tech Hero Rework ====== */
 .heroSection {
   position: relative;
   isolation: isolate;
@@ -603,7 +602,8 @@
   font-weight: 600;
   line-height: 1.08;
   letter-spacing: -0.03em;
-  /* 그라데이션 텍스트 + 은은한 스트로크 */
+  -webkit-text-stroke: 0.25px rgba(0,0,0,0.22);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 12px 36px rgba(10,16,33,0.14);
   background: linear-gradient(90deg, #D8315B 0%, #F2542D 35%, #0A1045 100%);
   -webkit-background-clip: text;
   background-clip: text;

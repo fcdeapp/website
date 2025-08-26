@@ -67,6 +67,10 @@ const floatOrb: Variants = {
   }
 };
 
+const titleReveal: Variants = {
+  hidden: { opacity: 0, y: 18 },         // blur 제거!
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
 
 export default function About() {
 
@@ -145,18 +149,16 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           >
             {/* 타이틀: 단어별 리빌 */}
             <h1 className={styles.heroTitle}>
-              {"4050을 위한 실전 영어 — 일상과 업무에서 바로 쓰는 표현으로 배우세요".split(" ").map((w, i) => (
-                <motion.span key={i} className={styles.word} variants={wordReveal}>
+              {"4050 직장인을 위한 실전 영어".split(" ").map((w, i) => (
+                <motion.span key={i} className={styles.word} variants={titleReveal}>
                   {w}&nbsp;
                 </motion.span>
               ))}
             </h1>
 
-            {/* 서브카피 */}
             <motion.p className={styles.heroLead} variants={wordReveal} custom={1}>
-              게임처럼 느껴지는 언어 앱에 지치셨나요? <br />
-              어브로디는 직장과 일상에서 실제로 사용하는 대화를 AI가 분석해, 즉시 연습 가능한 맞춤 퀴즈와 음성 학습으로 바꿉니다. <br />
-              필요한 표현을 빠르게 익히고 업무 현장에서 바로 써먹으세요.
+              내 문서·이메일·보고서를 AI가 즉시 분석해 핵심 표현을
+              음성 드릴·대화·퀴즈로 바꿉니다. 출퇴근 10분, 업무에 바로 쓰는 표현만.
             </motion.p>
 
             {/* CTA / 스크롤 힌트 */}
@@ -168,7 +170,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                 whileHover={{ y: -2, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                4050에 적합한 이유 보기
+                내 문서로 시작하기
               </motion.a>
               <motion.span
                 className={styles.scrollHintBig}
@@ -216,19 +218,19 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
       >
         {[
           {
-            icon: "↓",
-            title: "최악의 학습 앱 유지율",
-            body: "교육 앱의 30일 유지율은 고작 2.1%. 많은 학습자들이 성과를 느끼기도 전에 포기합니다. — AppsFlyer 2025",
+            icon: "🎯",
+            title: "게임은 쉬워도, 업무는 어렵다",
+            body: "캐릭터·XP가 아니라 ‘일에서 바로 쓰는 결과’가 필요합니다. 어브로디는 업무 연결형 학습을 전제로 만듭니다.",
           },
           {
-            icon: "≠",
-            title: "공부 ≠ 말하기",
-            body: "문법 문제 풀이와 점수 올리기는 자연스러운 대화를 만들어주지 못합니다. 수년을 투자해도 말할 때 불안은 여전합니다.",
+            icon: "⏱",
+            title: "시간은 없고, 맥락은 중요하다",
+            body: "바쁜 출퇴근 사이, 내 일의 문서·메시지·통화 맥락으로 빠르게 배우는 게 핵심입니다.",
           },
           {
-            icon: "₩",
-            title: "많은 비용, 낮은 효과",
-            body: "한국은 매년 약 29.2조 원(약 210억 달러)을 영어에 투자하지만, EF EPI 영어 능력 순위는 50위에 불과합니다.",
+            icon: "🎙",
+            title: "자신감·전달력",
+            body: "우리는 실전 맥락 기반으로 명료성·유창성을 끌어올립니다.",
           },
         ].map((card, i) => (
           <motion.article
@@ -284,38 +286,30 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
             {[
-              {
-                title: "문서에서 시작하는 학습",
-                body: "제안서·논문·발표자료를 업로드하면 AI가 핵심 문장과 어휘를 추출해 반복 연습 콘텐츠로 자동 변환합니다.",
-              },
-              {
-                title: "AI 요약·자동 드릴",
-                body: "수동 요약 불필요. Abrody가 핵심 요약과 맞춤 퀴즈를 자동 생성해 즉시 학습으로 연결합니다.",
-              },
-              {
-                title: "자연스러운 음성 학습",
-                body: "더 자연스러운 TTS로 듣고 따라하세요. 단어장·대화 모두에서 실제에 가까운 음성 재생을 지원합니다.",
-              },
-              {
-                title: "파일 기반의 실제 대화",
-                body: "업무 문서를 바탕으로 이메일·보고·프레젠테이션 대화를 연습할 수 있는 실제 시나리오를 제공합니다.",
-              },
-              {
-                title: "업무로 연결되는 성과",
-                body: "모든 연습은 실제 업무 맥락에 기반하므로 배운 표현을 즉시 현장에서 사용할 수 있습니다.",
-              },
-              {
-                title: "맥락 중심 학습",
-                body: "상황·의도·표현이 일치하는 연습으로 학습 전이가 쉬워집니다.",
-              },
-              {
-                title: "초개인화",
-                body: "실수와 사용 빈도에 따른 맞춤 퀴즈로 약점을 빠르게 보완합니다.",
-              },
-              {
-                title: "점수보다 실력",
-                body: "연속 기록이나 점수가 목표가 아니라, 말할 때의 명료성과 자신감을 높입니다.",
-              },                        
+                {
+                  title: "문서 → 오디오",
+                  body: "PDF·PPT·보고서에서 핵심 문장·용어를 추출해 듣고-따라하는 반복 오디오를 즉시 생성합니다.",
+                },
+                {
+                  title: "파일 기반 AI 대화",
+                  body: "내 문서 내용으로 이메일·보고·프레젠테이션 대화를 만들어 자연스럽게 연습합니다.",
+                },
+                {
+                  title: "한 장 사진으로 상황 학습(CTL)",
+                  body: "사진 한 장을 찍으면 그 상황에 맞는 학습 시나리오가 자동으로 만들어집니다.",
+                },
+                {
+                  title: "개인화 퀴즈",
+                  body: "실수·빈출 표현을 자동 수집해 내 약점만 콕 집어 퀴즈로 보완합니다.",
+                },
+                {
+                  title: "자연스러운 AI 보이스",
+                  body: "실제 대화에 가까운 음성으로 듣기/말하기 훈련의 몰입감을 높입니다.",
+                },
+                {
+                  title: "업무로 바로 전이",
+                  body: "학습이 ‘내 업무 맥락’에서 시작되기에 성과가 현장으로 곧장 이어집니다.",
+                },                 
             ].map((f, i) => (
               <motion.article
                 key={f.title}
@@ -378,22 +372,22 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         <div className={stylesB.flowGrid}>
           {[
             {
-              kicker: "Snap",
-              img: "/images/flow-1.png",
-              title: "사진으로 상황 만들기",
-              desc: "사진 한 장이면, 그 순간에 맞는 학습 시나리오가 자동 생성됩니다.",
+              kicker: "Upload",
+              img: "/images/flow-6.png",
+              title: "업무 문서 업로드",
+              desc: "PDF·슬라이드·보고서를 올리면 핵심 문장/용어를 자동 추출하고 요약합니다.",
             },
             {
               kicker: "Chat",
-              img: "/images/flow-4.png",
+              img: "/images/flow-7.png",
               title: "AI 대화 & 교정",
-              desc: "AI 튜터와 대화하며 문맥에 맞는 교정을 즉시 받습니다.",
+              desc: "문서 맥락으로 이메일/보고/발표 대화를 만들고, 즉시 교정을 받습니다.",
             },
             {
-              kicker: "Quiz",
-              img: "/images/flow-5.png",
-              title: "즉시 복습 퀴즈",
-              desc: "방금 배운 내용을 짧고 집중적인 퀴즈로 바로 연습합니다.",
+              kicker: "Drill",
+              img: "/images/flow-8.png",
+              title: "오디오 & 퀴즈",
+              desc: "핵심 표현을 듣고-따라하고-테스트하며 기억에 박습니다.",
             },
           ].map((step, i) => (
             <motion.div

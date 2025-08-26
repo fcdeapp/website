@@ -67,6 +67,11 @@ const floatOrb: Variants = {
   }
 };
 
+const titleReveal: Variants = {
+  hidden: { opacity: 0, y: 18 },         // blur 제거!
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
+
 export default function About() {
 
   useEffect(() => {
