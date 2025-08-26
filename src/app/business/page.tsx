@@ -342,7 +342,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         >
           {/* title: word-by-word reveal */}
           <h1 className={stylesB.heroTitle}>
-            {"Practical English for busy professionals in their 40s and 50s".split(" ").map((w, i) => (
+            {"Confident communication in any language, for busy professionals in their 40s and 50s".split(" ").map((w, i) => (
               <motion.span key={i} className={stylesB.word} variants={titleReveal}>
                 {w}&nbsp;
               </motion.span>
