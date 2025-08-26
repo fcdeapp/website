@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { motion, Variants } from "framer-motion";
+import { motion, Variants, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useEffect, useRef } from "react";
 import styles from "../../styles/pages/Business.module.css";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
 
@@ -90,6 +91,22 @@ const numberVariant: Variants = {
     }),
   };
 
+
+// 떠다니는 오브(구체)
+const floatOrb: Variants = {
+  initial: { y: 0, rotate: 0 },
+  animate: {
+    y: [-4, 6, -2, 0],
+    rotate: [0, 1.2, -0.6, 0],
+    transition: { duration: 7, repeat: Infinity, ease: "easeInOut" }
+  }
+};
+
+const titleReveal: Variants = {
+  hidden: { opacity: 0, y: 18 },         // blur 제거!
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
+
 export default function BusinessPage() {
   const [preview, setPreview] = React.useState<null | { type: "pdf" | "video"; src: string }>(null);
   const [showStatus, setShowStatus] = React.useState(false);
@@ -141,6 +158,28 @@ export default function BusinessPage() {
     return { x, y, d };
   }, [hoverIdx, downloadData, xForTick, globalMin, globalMax]);
 
+// 마우스 파랄랙스
+const mx = useMotionValue(0);   // -40 ~ 40(px)
+const my = useMotionValue(0);
+const sx = useSpring(mx, { stiffness: 120, damping: 18, mass: 0.25 });
+const sy = useSpring(my, { stiffness: 120, damping: 18, mass: 0.25 });
+
+// 3D 틸트 각도
+const tiltX = useTransform(sy, v => v / -8); // deg
+const tiltY = useTransform(sx, v => v / 8);  // deg
+
+// 레이어별 파랄랙스 깊이
+const layerSlow  = { x: useTransform(sx, v => v * -0.25), y: useTransform(sy, v => v * -0.25) };
+const layerMed   = { x: useTransform(sx, v => v * -0.5 ), y: useTransform(sy, v => v * -0.5 ) };
+const layerFast  = { x: useTransform(sx, v => v *  0.8 ), y: useTransform(sy, v => v *  0.8 ) };
+
+function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
+  const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
+  const relX = ((e.clientX - r.left) / r.width  - 0.5) * 80; // -40~40
+  const relY = ((e.clientY - r.top)  / r.height - 0.5) * 80;
+  mx.set(relX);
+  my.set(relY);
+}
 
   return (
     <motion.main
