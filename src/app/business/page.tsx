@@ -90,12 +90,23 @@ const numberVariant: Variants = {
       transition: { delay: 0.4 + i * 0.3, duration: 0.6, ease: "easeOut" },
     }),
   };
-  
+
 // Stagger 부모
 const heroParent: Variants = {
   hidden: {},
   visible: {
     transition: { staggerChildren: 0.08, delayChildren: 0.1 }
+  }
+};
+
+// 단어 단위 텍스트 리빌
+const wordReveal: Variants = {
+  hidden: { opacity: 0, y: 16, filter: "blur(6px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.6, ease: "easeOut" }
   }
 };
 
