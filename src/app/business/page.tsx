@@ -1,11 +1,97 @@
 "use client";
 
-import React from "react";
-import { motion, Variants, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { motion, Variants, useMotionValue, useSpring, useTransform, AnimatePresence } from "framer-motion";
 import styles from "../../styles/pages/Business.module.css";
 import stylesB from "../../styles/pages/About.module.css";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
+
+// ADD: value ↔ feature toggle card
+function FeatureCard({
+  item,
+  idx,
+  onFeatureOpen,
+  onFeatureClose,
+}: {
+  item: {
+    id: string;
+    title: string;
+    value: string;
+    feature: string;
+    badge: string;
+  };
+  idx: number;
+  onFeatureOpen?: (id: string) => void;
+  onFeatureClose?: (id: string) => void;
+}) {
+  const [mode, setMode] = React.useState<"value" | "feature">("value");
+  const toggleMode = () => {
+    setMode((m) => {
+      const next = m === "value" ? "feature" : "value";
+      if (next === "feature") onFeatureOpen?.(item.id);
+      else onFeatureClose?.(item.id);
+      return next;
+    });
+  };
+
+  return (
+    <motion.article
+      className={`${styles.diffCard} ${styles.featCard}`}
+      variants={fadeUp}
+      custom={idx}
+      layout
+      whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
+      onClick={toggleMode}
+      role="button"
+      aria-pressed={mode === "feature"}
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") toggleMode();
+      }}
+    >
+      <div className={styles.featHead}>
+        <h3 className={styles.featTitle}>
+          {item.title}
+        </h3>
+      </div>
+
+      <div className={styles.featBody}>
+        <AnimatePresence mode="wait">
+          {mode === "value" ? (
+            <motion.div
+              key="value"
+              className={styles.featValue}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.28 }}
+            >
+              <p className={styles.valueText}>{item.value}</p>
+            </motion.div>
+          ) : (
+            <motion.div
+              key="feature"
+              className={styles.featFeature}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.28 }}
+            >
+              {/* swap to small badge + show feature description */}
+              <motion.div
+                className={styles.featMediaBadge}
+                layoutId={`media-${item.id}`}
+              >
+                <span aria-hidden>{item.badge}</span>
+              </motion.div>
+              <p>{item.feature}</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </motion.article>
+  );
+}
 
 // helper: readable label (e.g., "6/16")
 function shortLabel(isoDate: string) {
@@ -126,10 +212,28 @@ const titleReveal: Variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
+const quoteVariants: Variants = {
+  hidden: { opacity: 0, y: 10, scale: 0.995 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.44, ease: "easeOut" },
+  },
+  exit: { opacity: 0, y: 8, scale: 0.995, transition: { duration: 0.28 } },
+};
+
+const citeVariants: Variants = {
+  hidden: { opacity: 0, y: 6 },
+  visible: { opacity: 1, y: 0, transition: { delay: 0.16, duration: 0.36 } },
+};
+
 export default function BusinessPage() {
   const [preview, setPreview] = React.useState<null | { type: "pdf" | "video"; src: string }>(null);
   const [showStatus, setShowStatus] = React.useState(false);
   const [hoverIdx, setHoverIdx] = React.useState<number | null>(null);
+  const [quoteOpen, setQuoteOpen] = useState(false);
+  const [openFeatureId, setOpenFeatureId] = useState<string | null>(null);  
 
   // ============ 데이터 선언 위치 (여기에 있어야 함) ============
   const downloadData = [
@@ -207,72 +311,61 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
       animate="visible"
       variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
     >
-      {/* ── Hero ─────────────────────────────────────────── */}
       <section
-        className={stylesB.heroSection}
+        className={styles.heroSection}
         onMouseMove={handleMouseMove}
       >
-        {/* --- 배경 FX 레이어들 (절대배치) --- */}
+        {/* --- background FX layers (absolute) --- */}
         <motion.div
           aria-hidden
-          className={stylesB.fxMesh}
+          className={styles.fxMesh}
           style={layerSlow}
         />
         <motion.div
           aria-hidden
-          className={stylesB.fxBeams}
+          className={styles.fxBeams}
           style={layerMed}
         />
         <motion.div
           aria-hidden
-          className={stylesB.fxGrid}
+          className={styles.fxGrid}
         />
 
-        {/* --- 전경 콘텐츠 (3D 틸트 적용) --- */}
+        {/* --- foreground content (3D tilt) --- */}
         <motion.div
-          className={stylesB.heroInner}
+          className={styles.heroInner}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.7 }}
           variants={heroParent}
           style={{ rotateX: tiltX, rotateY: tiltY }}
         >
-          {/* 타이틀: 단어별 리빌 */}
-          <h1 className={stylesB.heroTitle}>
-            {"Built for Mid-Career Pros — Learn From Your Work".split(" ").map((w, i) => (
-              <motion.span key={i} className={stylesB.word} variants={titleReveal}>
+          {/* title: word-by-word reveal */}
+          <h1 className={styles.heroTitle}>
+            {"Practical English for busy professionals in their 40s and 50s".split(" ").map((w, i) => (
+              <motion.span key={i} className={styles.word} variants={titleReveal}>
                 {w}&nbsp;
               </motion.span>
             ))}
           </h1>
 
-          <motion.p className={stylesB.heroLead} variants={wordReveal} custom={1}>
-            Upload PDFs, emails, or slides and our AI extracts the expressions you actually use—then turns them into short audio drills,
-            contextual chats, and targeted quizzes. Ten minutes a day: practice that transfers directly to work.
+          <motion.p className={styles.heroLead} variants={wordReveal} custom={1}>
+            AI instantly analyzes your documents, emails, and reports, then turns key expressions into voice drills, guided conversations, and quizzes. Ten minutes on your commute, focused on phrases you can use at work today.
           </motion.p>
 
-          {/* CTA / 스크롤 힌트 */}
-          <div className={stylesB.heroCtas}>
+          {/* CTA / scroll hint */}
+          <div className={styles.heroCtas}>
             <motion.a
               href="#why"
-              className={stylesB.primaryCta}
+              className={styles.primaryCta}
               variants={wordReveal}
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Start with My Files
-            </motion.a>
-            <motion.a
-              href="#how"
-              className={stylesB.secondaryCta}
-              variants={wordReveal}
-              whileHover={{ y: -2, scale: 1.02 }}
-              style={{ marginLeft: 12, textDecoration: "underline", color: "rgba(10,16,69,0.8)" }}
-            >
-              See how it works
+              Start with my document
             </motion.a>
             <motion.span
-              className={stylesB.scrollHintBig}
+              className={styles.scrollHintBig}
               variants={wordReveal}
               aria-hidden
             >
@@ -281,9 +374,9 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </div>
         </motion.div>
 
-        {/* 비주얼 오브젝트(구체) — heroImage 대체 */}
+        {/* visual orb — replaces heroImage */}
         <motion.div
-          className={stylesB.orb}
+          className={styles.orb}
           variants={floatOrb}
           initial="initial"
           animate="animate"
@@ -291,61 +384,60 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           aria-hidden
         />
         {/* halo glow layer (pure DOM) */}
-        <div className={stylesB.orbGlow} aria-hidden />
+        <div className={styles.orbGlow} aria-hidden />
       </section>
 
       {/* ── Why Abrody Exists ───────────────────────────── */}
       <section id="why" className={styles.section}>
-      <motion.div
-        className={styles.whyHeader}
-        variants={fadeUp}
-        viewport={{ once: true, amount: 0.45 }}
-      >
-        <span className={styles.sectionKicker}>The Problem</span>
-        <h2 className={styles.sectionTitle}>Why Abrody Exists for Gen X</h2>
-        <p className={styles.sectionLead}>
-          Most apps push scripted drills. We start from real life—so Gen X learners practice what they’ll actually say at work and in daily moments.
-        </p>
-      </motion.div>
+        <motion.div
+          className={styles.whyHeader}
+          variants={fadeUp}
+          viewport={{ once: true, amount: 0.45 }}
+        >
+          <span className={styles.sectionKicker}>The Problem</span>
+          <h2 className={styles.sectionTitle}>Why Abrody matters for professionals in their 40s and 50s</h2>
+          <p className={styles.sectionLead}>
+            We start from your work and daily context to build learning you can apply immediately on the job.
+          </p>
+        </motion.div>
 
-      <motion.div
-        className={styles.cards3D}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
-      >
-        {[
-          {
-            icon: "🎯",
-            title: "Practice, not transfer",
-            body: "Most apps teach exercises—rarely the phrases you need at work. People need practice that transfers to real tasks.",
-          },
-          {
-            icon: "⏱",
-            title: "No time for irrelevant drills",
-            body: "Commute and lunch breaks are short. Learners need bite-sized sessions tied to their own emails and reports.",
-          },
-          {
-            icon: "🎙",
-            title: "Fluency needs context",
-            body: "Real context builds confidence.",
-          },
-        ].map((card, i) => (
-          <motion.article
-            key={card.title}
-            className={`${styles.card} ${styles.statCard}`}
-            variants={fadeUp}
-            custom={i}
-            whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.12)" }}
-          >
-            <span className={styles.statBadge} aria-hidden>{card.icon}</span>
-            <h3>{card.title}</h3>
-            <p>{card.body}</p>
-          </motion.article>
-        ))}
-      </motion.div>
-
+        <motion.div
+          className={styles.cards3D}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+        >
+          {[
+            {
+              icon: "🎯",
+              title: "Games are easy, work is hard",
+              body: "You don’t need characters or XP — you need results at work. Abrody is built for work-connected learning."
+            },
+            {
+              icon: "⏱",
+              title: "Time is short, context is everything",
+              body: "Between commutes and meetings, what matters is learning fast in the context of your documents, messages, and calls."
+            },
+            {
+              icon: "🎙",
+              title: "Confidence and clarity",
+              body: "We raise clarity and fluency through real-world contexts you face every day."
+            },
+          ].map((card, i) => (
+            <motion.article
+              key={card.title}
+              className={`${styles.card} ${styles.statCard}`}
+              variants={fadeUp}
+              custom={i}
+              whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.12)" }}
+            >
+              <span className={styles.statBadge} aria-hidden>{card.icon}</span>
+              <h3>{card.title}</h3>
+              <p>{card.body}</p>
+            </motion.article>
+          ))}
+        </motion.div>
 
         {/* ── Differentiators ───────────────────────────── */}
         <section className={styles.sectionAlt}>
@@ -354,7 +446,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             variants={fadeUp}
             viewport={{ once: true, amount: 0.45 }}
           >
-            Why Gen X Chooses Abrody
+            What makes Abrody different
           </motion.h2>
 
           <motion.div
@@ -363,9 +455,9 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             custom={2}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <span className={styles.flowLabel}>Platform → User</span>
+            <span className={styles.flowLabel}>Platform first</span>
             <span className={styles.flipSwitch} aria-hidden>⇄</span>
-            <span className={`${styles.flowLabel} ${styles.active}`}>User → Platform</span>
+            <span className={`${styles.flowLabel} ${styles.active}`}>User first</span>
           </motion.div>
 
           <motion.p
@@ -374,8 +466,8 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             custom={1}
             viewport={{ once: true, amount: 0.5 }}
           >
-            We flip the direction of learning. It no longer flows <em>from</em> the platform <em>to</em> the user.
-            With Abrody, everything starts <strong>from you</strong> — your situations, your context, your words.
+            We design for <strong>moments when outcomes change</strong>, not time spent in an app.
+            We start from your documents and conversations to create results that show up in your <em>next meeting, email,</em> or <em>presentation</em>.
           </motion.p>
 
           <motion.div
@@ -386,77 +478,106 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
             {[
-                {
-                  title: "Document → Audio Drills",
-                  body: "Upload your PDFs, slides, or emails. Abrody extracts the key sentences and turns them into short listening & repeat drills.",
-                },
-                {
-                  title: "File-based AI Conversations",
-                  body: "Practice emails, reports, and presentations in natural dialogues built from your own documents.",
-                },
-                {
-                  title: "One-tap Scenario from Photos",
-                  body: "Take a photo of a moment and we generate a contextual scenario you can practice immediately.",
-                },
-                {
-                  title: "Personalized Micro-Quizzes",
-                  body: "We detect your frequent mistakes and create tiny, focused quizzes that fix exactly what you need.",
-                },
-                {
-                  title: "Natural AI Voices",
-                  body: "High-quality, natural TTS for listening and shadowing—closer to real conversation than robotic prompts.",
-                },
-                {
-                  title: "Work-ready Transfer",
-                  body: "Every exercise starts from your work context—so what you practice transfers to real outcomes faster.",
-                },
+              {
+                id: "docAudio",
+                title: "Learn your report by speaking",
+                value: "Ten minutes before a meeting, your key points come out naturally.",
+                feature: "We extract key sentences and terms from PDFs, slides, and reports to instantly create listen-and-repeat audio drills.",
+                badge: "🔊"
+              },
+              {
+                id: "fileChat",
+                title: "Practice real situations from your documents",
+                value: "Write emails and reports faster and more naturally.",
+                feature: "We turn your document content into practice conversations for email, reports, and presentations.",
+                badge: "💬"
+              },
+              {
+                id: "photoCTL",
+                title: "Build on-site language from a photo",
+                value: "Snap a photo and get the exact phrases you need for that situation.",
+                feature: "One photo generates a tailored learning scenario and expressions for the moment.",
+                badge: "📷"
+              },
+              {
+                id: "quiz",
+                title: "Fix only your weak spots",
+                value: "Target and correct the expressions you miss most.",
+                feature: "We automatically collect mistakes and frequent patterns to quiz you on your personal gaps.",
+                badge: "🧩"
+              },
+              {
+                id: "voice",
+                title: "Natural voices that feel like real meetings",
+                value: "Immersive practice that speeds up your speaking.",
+                feature: "Human-like AI voices make listening and speaking practice feel real.",
+                badge: "🎙"
+              },
+              {
+                id: "transfer",
+                title: "Learning turns into business results",
+                value: "What you learn shows up in your very next deliverable.",
+                feature: "Because we start from your actual work context, results transfer directly to the field.",
+                badge: "🎯"
+              },
             ].map((f, i) => (
-              <motion.article
-                key={f.title}
-                className={styles.diffCard}
-                variants={fadeUp}
-                custom={i}
-                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
-              >
-                <h3>
-                  {f.title}
-                </h3>
-                <p>{f.body}</p>
-              </motion.article>
+              <FeatureCard
+                key={f.id}
+                item={f}
+                idx={i}
+                onFeatureOpen={(id) => setOpenFeatureId(id)}
+                onFeatureClose={(id) => {
+                  setOpenFeatureId((prev) => (prev === id ? null : prev));
+                }}
+              />
             ))}
           </motion.div>
 
           <motion.p
-            className={styles.diffNote}
+            className={styles.diffNoteClickable}
             variants={fadeLeft}
             custom={3}
             viewport={{ once: true, amount: 0.4 }}
+            onClick={() => setQuoteOpen(v => !v)}
+            onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setQuoteOpen(v => !v); }}
+            role="button"
+            tabIndex={0}
+            aria-expanded={quoteOpen}
           >
-            This user-first, contextual approach aligns with our vision—connecting daily life to language learning—
-            and with research showing CTL can lift speaking clarity and fluency substantially.
+            With a CTL philosophy that connects work and learning seamlessly, learning blends into <em>today’s tasks</em> and results are proven <strong>on the job</strong>. 
           </motion.p>
         </section>
 
+        <AnimatePresence>
+          {quoteOpen && (
+            <motion.blockquote
+              className={styles.quoteReveal}
+              variants={quoteVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              role="region"
+              aria-live="polite"
+            >
+              <div className={styles.quoteBody}>
+                CTL-based learning improves speaking clarity by
+                <span className={styles.gradientNumber}>54%</span>
+                and fluency by
+                <span className={styles.gradientNumber}>65%</span>.
+                Abrody automates this approach across the entire experience.
+              </div>
 
-        <motion.blockquote
-          className={styles.quote}
-          variants={fadeLeft}
-          custom={3}
-          viewport={{ once: true, amount: 0.4 }}
-        >
-          CTL-based instruction lifts speaking clarity by
-          <span className={styles.gradientNumber}>54%</span>
-          and fluency by
-          <span className={styles.gradientNumber}>65%</span>.
-          Abrody automates CTL everywhere.
-          <cite className={styles.quoteCite}>— Yusyac et al., 2021</cite>
-        </motion.blockquote>
-
+              <motion.cite className={styles.quoteCiteReveal} variants={citeVariants}>
+                — Yusyac et al., 2021
+              </motion.cite>
+            </motion.blockquote>
+          )}
+        </AnimatePresence>
       </section>
 
-      <div className={styles.waveSplit} />
+    <div className={styles.waveSplit} />
 
-      <ChainQuizzesSection />
+    {openFeatureId === "quiz" && <ChainQuizzesSection />}
 
       {/* ── How It Works ───────────────────────────────── */}
       <section className={styles.sectionAlt}>
