@@ -264,7 +264,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
 
             <motion.p className={styles.heroLead} variants={wordReveal} custom={1}>
               내 문서·이메일·보고서를 AI가 즉시 분석해 핵심 표현을
-              음성 드릴·대화·퀴즈로 바꿉니다. 출퇴근 10분, 업무에 바로 쓰는 표현만.
+              음성·대화·퀴즈로 바꿉니다. 출퇴근 10분, 업무에 바로 쓰는 표현만.
             </motion.p>
 
             {/* CTA / 스크롤 힌트 */}

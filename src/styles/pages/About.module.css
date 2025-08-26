@@ -574,12 +574,14 @@
   .sectionLead { font-size: .98rem; }
 }
 
+/* 기존 .heroSection (교체용) */
 .heroSection {
   position: relative;
   isolation: isolate;
   overflow: clip;
   min-height: clamp(560px, 72vh, 880px);
-  padding: clamp(4rem, 10vw, 8rem) 1.5rem 5rem;
+  /* 변경: 수평 패딩을 뷰포트 기반으로 유연하게 조정 */
+  padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 4vw, 3rem) 5rem;
   display: grid;
   place-items: center;
   perspective: 1200px;
@@ -587,13 +589,28 @@
               rgba(10,16,69,.06), transparent 60%);
 }
 
+/* 기존 .heroInner (교체용) */
 .heroInner {
   position: relative;
   z-index: 5;
   text-align: center;
-  max-width: min(1100px, 92vw);
+  /* 변경: 데스크탑에서 더 넓게 확장, 모바일에선 패딩으로 안정화 */
+  width: 100%;
+  max-width: 1400px;              /* 더 넉넉한 최대폭 */
+  padding-inline: clamp(1rem, 4vw, 3rem); /* 좌우 내측 여백 */
   transform-style: preserve-3d;
   will-change: transform;
+  margin-inline: auto;            /* 가운데 정렬 유지 */
+}
+
+/* heroLead 보정 (선택사항 — 줄 길이 적당히 유지) */
+.heroLead {
+  margin: .6rem auto 0;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.7;
+  color: #53565c;
+  max-width: 840px;               /* 기존 640px에서 늘려 내용이 잘 퍼지도록 */
+  letter-spacing: -0.012em;
 }
 
 .heroTitle {
@@ -612,15 +629,6 @@
 }
 
 .word { display: inline-block; white-space: pre; }
-
-.heroLead {
-  margin: .6rem auto 0;
-  font-size: clamp(1rem, 1.6vw, 1.15rem);
-  line-height: 1.7;
-  color: #53565c;
-  max-width: 640px;
-  letter-spacing: -0.012em;
-}
 
 .heroCtas {
   margin-top: 1.6rem;
