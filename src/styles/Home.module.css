@@ -1289,13 +1289,11 @@
   display: inline-flex;
   align-items: center;
   line-height: 1;
-  background: #ffffff; /* solid white chip so underlying gradient doesn't show through */
+  background: #ffffff;
   border-radius: 0.9em;
   padding: 0.18em 0.56em;
   box-shadow: 0 8px 26px rgba(0,0,0,0.08);
   border: 1px solid rgba(17,12,43,0.06);
-
-  /* make sure chip sits above text gradient/spans */
   position: relative;
   z-index: 9;
 }

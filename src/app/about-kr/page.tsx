@@ -1,8 +1,9 @@
 "use client";
 
+import React from "react"; 
 import Head from "next/head";
 import Image from "next/image";
-import { motion, Variants, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion, Variants, useMotionValue, useSpring, useTransform, AnimatePresence } from "framer-motion";
 import { useEffect, useRef } from "react";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/About.module.css";
@@ -12,6 +13,106 @@ import WebFooter from "../../components/WebFooter";
 import CountryBall from "../../components/CountryBall";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
 import AOS from "aos";
+
+// ADD: 가치↔기능 토글 카드
+function FeatureCard({
+  item,
+  idx
+}: {
+  item: {
+    id: string;
+    title: string;
+    value: string;
+    feature: string;
+    img: string;
+    badge: string;
+  };
+  idx: number;
+}) {
+  const [mode, setMode] = React.useState<"value" | "feature">("value");
+
+  return (
+    <motion.article
+      className={`${stylesB.diffCard} ${stylesB.featCard}`}
+      variants={fadeUp}
+      custom={idx}
+      layout
+      whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
+      onClick={() => setMode(m => (m === "value" ? "feature" : "value"))}
+      role="button"
+      aria-pressed={mode === "feature"}
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") setMode(m => (m === "value" ? "feature" : "value"));
+      }}
+    >
+      <div className={stylesB.featHead}>
+        <h3 className={stylesB.featTitle}>
+          {/* 배지 위치(기능 모드에서 상단 배지로 전환) */}
+          <motion.span
+            className={stylesB.featBadge}
+            layoutId={`badge-${item.id}`}
+            data-mode={mode}
+          >
+            {item.badge}
+          </motion.span>
+          {item.title}
+        </h3>
+
+        <button
+          type="button"
+          className={stylesB.featToggle}
+          onClick={(e) => { e.stopPropagation(); setMode(m => (m === "value" ? "feature" : "value")); }}
+          aria-label={`${item.title} ${mode === "value" ? "기능 보기" : "가치 보기"}`}
+        >
+          {mode === "value" ? "기능 보기" : "가치 보기"}
+        </button>
+      </div>
+
+      <div className={stylesB.featBody}>
+        <AnimatePresence mode="wait">
+          {mode === "value" ? (
+            <motion.div
+              key="value"
+              className={stylesB.featValue}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.28 }}
+            >
+              {/* 큰 이미지 → 배지로 수축 (공유 layoutId) */}
+              <motion.div
+                className={stylesB.featMedia}
+                style={{ backgroundImage: `url(${item.img})` }}
+                layoutId={`media-${item.id}`}
+              />
+              <p className={stylesB.valueText}>{item.value}</p>
+            </motion.div>
+          ) : (
+            <motion.div
+              key="feature"
+              className={stylesB.featFeature}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.28 }}
+            >
+              {/* 작은 배지로 전환 + 본문은 기능 설명 */}
+              <motion.div
+                className={stylesB.featMediaBadge}
+                layoutId={`media-${item.id}`}
+              >
+                <span aria-hidden>{item.badge}</span>
+              </motion.div>
+              <p>{item.feature}</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </motion.article>
+  );
+}
+
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -275,7 +376,8 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             custom={1}
             viewport={{ once: true, amount: 0.5 }}
           >
-            학습의 방향을 완전히 바꿨습니다. 어브로디는 사용자의 업무와 생활 맥락에서 시작해, 바로 현업에서 쓸 수 있는 연습으로 연결합니다.
+            우리는 ‘앱을 쓰는 시간’이 아니라 <strong>‘성과가 바뀌는 순간’</strong>을 디자인합니다.
+            내 일의 문서·대화에서 출발해, <em>다음 회의·메일·발표</em>에서 달라지는 결과를 만듭니다.
           </motion.p>
 
           <motion.div
@@ -286,43 +388,56 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
             {[
-                {
-                  title: "문서 → 오디오",
-                  body: "PDF·PPT·보고서에서 핵심 문장·용어를 추출해 듣고-따라하는 반복 오디오를 즉시 생성합니다.",
-                },
-                {
-                  title: "파일 기반 AI 대화",
-                  body: "내 문서 내용으로 이메일·보고·프레젠테이션 대화를 만들어 자연스럽게 연습합니다.",
-                },
-                {
-                  title: "한 장 사진으로 상황 학습(CTL)",
-                  body: "사진 한 장을 찍으면 그 상황에 맞는 학습 시나리오가 자동으로 만들어집니다.",
-                },
-                {
-                  title: "개인화 퀴즈",
-                  body: "실수·빈출 표현을 자동 수집해 내 약점만 콕 집어 퀴즈로 보완합니다.",
-                },
-                {
-                  title: "자연스러운 AI 보이스",
-                  body: "실제 대화에 가까운 음성으로 듣기/말하기 훈련의 몰입감을 높입니다.",
-                },
-                {
-                  title: "업무로 바로 전이",
-                  body: "학습이 ‘내 업무 맥락’에서 시작되기에 성과가 현장으로 곧장 이어집니다.",
-                },                 
+              {
+                id: "docAudio",
+                title: "문서 → 오디오",
+                value: "회의 직전 10분, 내 보고서가 ‘말’로 몸에 붙습니다.",
+                feature: "PDF·PPT·보고서에서 핵심 문장·용어를 추출해 듣고-따라하는 반복 오디오를 즉시 생성합니다.",
+                img: "/images/feat-doc-audio.png",
+                badge: "🔊"
+              },
+              {
+                id: "fileChat",
+                title: "파일 기반 AI 대화",
+                value: "메일·보고가 막히지 않고 술술 나옵니다.",
+                feature: "내 문서 내용으로 이메일·보고·프레젠테이션 대화를 만들어 자연스럽게 연습합니다.",
+                img: "/images/feat-file-chat.png",
+                badge: "💬"
+              },
+              {
+                id: "photoCTL",
+                title: "한 장 사진으로 상황 학습(CTL)",
+                value: "현장에서 필요한 표현을 현장에서 만듭니다.",
+                feature: "사진 한 장을 찍으면 그 상황에 맞는 학습 시나리오가 자동으로 만들어집니다.",
+                img: "/images/feat-photo-ctl.png",
+                badge: "📷"
+              },
+              {
+                id: "quiz",
+                title: "개인화 퀴즈",
+                value: "자주 틀리는 것만 정확히 고쳐집니다.",
+                feature: "실수·빈출 표현을 자동 수집해 내 약점만 콕 집어 퀴즈로 보완합니다.",
+                img: "/images/feat-quiz.png",
+                badge: "🧩"
+              },
+              {
+                id: "voice",
+                title: "자연스러운 AI 보이스",
+                value: "실제 회의 같은 몰입감으로 말이 빨라집니다.",
+                feature: "실제 대화에 가까운 음성으로 듣기/말하기 훈련의 몰입감을 높입니다.",
+                img: "/images/feat-voice.png",
+                badge: "🎙"
+              },
+              {
+                id: "transfer",
+                title: "업무로 바로 전이",
+                value: "배운 것이 곧 성과로 이어집니다.",
+                feature: "학습이 ‘내 업무 맥락’에서 시작되기에 성과가 현장으로 곧장 이어집니다.",
+                img: "/images/feat-transfer.png",
+                badge: "🎯"
+              },
             ].map((f, i) => (
-              <motion.article
-                key={f.title}
-                className={stylesB.diffCard}
-                variants={fadeUp}
-                custom={i}
-                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
-              >
-                <h3>
-                  {f.title}
-                </h3>
-                <p>{f.body}</p>
-              </motion.article>
+              <FeatureCard key={f.id} item={f} idx={i} />
             ))}
           </motion.div>
 
@@ -332,8 +447,9 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             custom={3}
             viewport={{ once: true, amount: 0.4 }}
           >
-              Abrody의 방식은 우리의 목표와 같습니다.
-              일상과 학습을 자연스럽게 연결하고, 연구에서 증명된 CTL 방식으로 언어 실력을 눈에 띄게 끌어올립니다.
+            일과 학습을 끊김 없이 잇는 CTL 철학으로, 학습은 <em>그날의 일</em>에 스며들고
+            결과는 <strong>현장</strong>에서 확인됩니다. 기능을 따르는 게 아니라,
+            <em>사용자가 느끼는 변화</em>에 집중합니다.
           </motion.p>
         </section>
 

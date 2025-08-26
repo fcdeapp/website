@@ -1692,3 +1692,83 @@
     transition: none !important;
   }
 }
+
+/* === 가치↔기능 토글 카드 === */
+.featCard { cursor: pointer; }
+
+.featHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem;
+  margin-bottom: .5rem;
+}
+
+.featTitle { display: flex; align-items: center; gap: .5rem; }
+
+.featToggle {
+  appearance: none;
+  border: 1px solid rgba(17,12,43,.10);
+  background: #fff;
+  color: #110c2b;
+  padding: .38rem .7rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: .88rem;
+  cursor: pointer;
+  transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
+}
+.featToggle:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(17,12,43,.08); }
+
+.featBody { position: relative; }
+
+.valueText { margin-top: .65rem; color:#444; font-size: .98rem; line-height: 1.55; }
+
+/* 큰 이미지(가치 모드) — 배지로 수축하도록 layoutId 공유 */
+.featMedia {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+/* 상단 배지(기능 모드에서 강조) */
+.featBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  border-radius: 12px;       /* 🎯⏱🎙 과 유사한 칩 형태 */
+  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
+  color: #fff; font-weight: 700;
+  box-shadow: 0 8px 18px rgba(216,49,91,.18);
+  flex: 0 0 auto;
+}
+
+/* 가치 모드에서는 배지를 흐리게(큰 이미지가 메인) */
+.featBadge[data-mode="value"] {
+  opacity: .5;
+  filter: saturate(.7);
+}
+
+/* 기능 모드 본문 */
+.featFeature p { color:#4a4a4a; font-size: .98rem; line-height: 1.55; }
+
+/* 기능 모드의 ‘작은 미디어’(배지 자리로 수축) */
+.featMediaBadge {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
+  color: #fff; font-weight: 800;
+  box-shadow: 0 8px 18px rgba(216,49,91,.18);
+  margin-bottom: .45rem;
+}
+
+/* 접근성: 키보드 포커스 */
+.featCard:focus-visible {
+  outline: 3px solid rgba(216,49,91,0.12);
+  outline-offset: 4px;
+}
