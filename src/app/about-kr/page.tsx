@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react"; 
+import React, { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { motion, Variants, useMotionValue, useSpring, useTransform, AnimatePresence } from "framer-motion";
-import { useEffect, useRef } from "react";
 import "aos/dist/aos.css";
 import styles from "../../styles/pages/About.module.css";
 import stylesB from "../../styles/pages/Business.module.css";
@@ -145,11 +144,28 @@ const floatOrb: Variants = {
 };
 
 const titleReveal: Variants = {
-  hidden: { opacity: 0, y: 18 },         // blur 제거!
+  hidden: { opacity: 0, y: 18 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
+const quoteVariants: Variants = {
+  hidden: { opacity: 0, y: 10, scale: 0.995 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.44, ease: "easeOut" },
+  },
+  exit: { opacity: 0, y: 8, scale: 0.995, transition: { duration: 0.28 } },
+};
+
+const citeVariants: Variants = {
+  hidden: { opacity: 0, y: 6 },
+  visible: { opacity: 1, y: 0, transition: { delay: 0.16, duration: 0.36 } },
+};
+
 export default function About() {
+  const [quoteOpen, setQuoteOpen] = useState(false);
 
   useEffect(() => {
     // AOS 초기화 (클라이언트에서만 실행)
@@ -412,10 +428,15 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </motion.div>
 
           <motion.p
-            className={stylesB.diffNote}
+            className={stylesB.diffNoteClickable}
             variants={fadeLeft}
             custom={3}
             viewport={{ once: true, amount: 0.4 }}
+            onClick={() => setQuoteOpen(v => !v)}
+            onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setQuoteOpen(v => !v); }}
+            role="button"
+            tabIndex={0}
+            aria-expanded={quoteOpen}
           >
             일과 학습을 끊김 없이 잇는 CTL 철학으로, 학습은 <em>그날의 일</em>에 스며들고
             결과는 <strong>현장</strong>에서 확인됩니다. 기능을 따르는 게 아니라,
@@ -423,21 +444,31 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </motion.p>
         </section>
 
+        <AnimatePresence>
+            {quoteOpen && (
+              <motion.blockquote
+                className={stylesB.quoteReveal}
+                variants={quoteVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                role="region"
+                aria-live="polite"
+              >
+                <div className={stylesB.quoteBody}>
+                  CTL 기반 학습은 말하기 명료성을
+                  <span className={stylesB.gradientNumber}>54%</span>
+                  유창성을
+                  <span className={stylesB.gradientNumber}>65%</span> 향상시킵니다.
+                  어브로디는 이 방식을 전 과정에 자동화합니다.
+                </div>
 
-        <motion.blockquote
-          className={stylesB.quote}
-          variants={fadeLeft}
-          custom={3}
-          viewport={{ once: true, amount: 0.4 }}
-        >
-          CTL 기반 학습은 말하기 명료성을
-          <span className={stylesB.gradientNumber}>54%</span>
-          유창성을
-          <span className={stylesB.gradientNumber}>65%</span> 향상시킵니다.  
-          어브로디는 이 방식을 전 과정에 자동화합니다.
-          <cite className={stylesB.quoteCite}>— Yusyac 외, 2021</cite>
-        </motion.blockquote>
-
+                <motion.cite className={stylesB.quoteCiteReveal} variants={citeVariants}>
+                  — Yusyac 외, 2021
+                </motion.cite>
+              </motion.blockquote>
+            )}
+          </AnimatePresence>
       </section>
 
       <div className={stylesB.waveSplit} />

@@ -1772,3 +1772,85 @@
   outline: 3px solid rgba(216,49,91,0.12);
   outline-offset: 4px;
 }
+
+/* ---------- 클릭 가능한 설명 (겉문구; 버튼처럼 보이지 않게) ---------- */
+.diffNoteClickable {
+  max-width: 56rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.98rem;
+  color: #525252;
+  line-height: 1.68;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: background .25s ease, transform .12s ease;
+  /* NOTE: cursor는 기본값으로 두어 '버튼'처럼 보이지 않게 처리 */
+  cursor: default;
+}
+
+/* 미세한 상호작용(보이지만 버튼처럼은 아님) */
+@media (hover: hover) and (pointer: fine) {
+  .diffNoteClickable:hover {
+    background: linear-gradient(180deg, rgba(242,242,246,0.6), rgba(255,255,255,0.6));
+    transform: translateY(-2px);
+  }
+}
+
+/* ---------- 나타나는 인용문 카드 디자인 ---------- */
+.quoteReveal {
+  max-width: 62rem;
+  margin: 1.25rem auto 0;
+  padding: 1.25rem 1.25rem;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #fff, #fff);
+  box-shadow: 0 18px 40px rgba(17,12,43,0.08);
+  border: 1px solid rgba(216,49,91,0.08);
+  display: block;
+  color: #2f2f2f;
+  line-height: 1.6;
+  transform-origin: top center;
+}
+
+/* 인용문 본문(텍스트 + 퍼센트 강조) */
+.quoteBody {
+  font-size: 1.05rem;
+  color: #323232;
+  margin-bottom: .6rem;
+  text-align: left;
+}
+
+/* 퍼센트 숫자 (기존 스타일 유지하되 크기 약간 조정) */
+.gradientNumber {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0.35rem;
+  background: linear-gradient(90deg, #d8315b 0%, #f2542d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 출처: 작게, 오른쪽 정렬(카드 안에서 오른쪽에 붙여감) */
+.quoteCiteReveal {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  color: #8b8b8b;
+  text-align: right;
+  font-style: normal; /* 기울임 해제 */
+}
+
+/* mobile: 카드 여백 축소 */
+@media (max-width: 640px) {
+  .quoteReveal { padding: 1rem; margin-top: 0.9rem; }
+  .quoteBody { font-size: 1rem; }
+  .gradientNumber { font-size: 1.65rem; }
+}
+
+/* 키보드 포커스 스타일(시각적 버튼이 아니라 접근성용) */
+.diffNoteClickable:focus {
+  outline: 3px solid rgba(216,49,91,0.08);
+  outline-offset: 6px;
+  border-radius: 12px;
+}
+
