@@ -187,6 +187,8 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           style={layerFast}
           aria-hidden
         />
+        {/* halo glow layer (pure DOM) */}
+        <div className={styles.orbGlow} aria-hidden />
       </section>
 
       {/* ── Why Abrody Exists ───────────────────────────── */}

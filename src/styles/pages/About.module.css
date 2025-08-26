@@ -709,25 +709,121 @@
   to   { background-position: 120px 0, 0 120px; }
 }
 
-/* 비주얼 오브젝트(구체) – heroImage 대체 */
+/* ====== Orb: bright glass + halo (replace previous .orb) ====== */
 .orb {
   position: absolute;
   z-index: 4;
-  bottom: clamp(-40px, -6vh, -10px);
-  right: 50%;
-  transform: translateX(50%);
-  width: min(54vmin, 560px);
-  aspect-ratio: 1/1;
+  /* 화면에 맞춰 오른쪽에 위치 (데스크탑), 모바일에서 자동 정렬 */
+  right: clamp(4%, 6vw, 8%);
+  bottom: clamp(-30px, -4vh, 2vh);
+  width: min(44vmin, 420px);
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background:
-    radial-gradient(40% 40% at 30% 30%, rgba(255,255,255,.9), rgba(255,255,255,.06) 60%),
-    conic-gradient(from 10deg at 50% 50%, #F2542D, #D8315B, #0A1045, #F2542D);
-  box-shadow:
-    0 40px 120px rgba(216,49,91,.35),
-    inset 0 -20px 60px rgba(10,16,69,.35);
-  mix-blend-mode: screen;
-  filter: saturate(1.05);
+  overflow: hidden;
+  transform-origin: center;
   will-change: transform, filter;
+  transition: transform .35s ease, filter .35s ease;
+  /* layered bright gradients to make a glassy, warm orb */
+  background:
+    radial-gradient(40% 40% at 30% 30%, rgba(255,255,255,0.95), rgba(255,255,255,0.06) 55%),
+    radial-gradient(60% 60% at 60% 65%,
+      rgba(255,244,220,0.94) 0%,
+      rgba(255,210,160,0.86) 20%,
+      rgba(242,84,45,0.55) 45%,
+      rgba(216,49,91,0.32) 70%,
+      rgba(10,16,69,0.06) 100%);
+  box-shadow:
+    0 36px 110px rgba(242,84,45,0.18),
+    0 10px 36px rgba(10,16,69,0.08),
+    inset 0 -22px 56px rgba(255,220,180,0.09);
+  border: 1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(6px) saturate(1.08);
+  mix-blend-mode: normal;
+}
+
+/* glossy hemisphere highlight for realism */
+.orb::before {
+  content: "";
+  position: absolute;
+  inset: 6% 6% 56% 6%;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.28));
+  filter: blur(8px);
+  transform: translateY(-6%);
+  opacity: 0.96;
+  pointer-events: none;
+}
+
+/* thin reflective band across surface */
+.orb::after {
+  content: "";
+  position: absolute;
+  left: -12%;
+  top: 42%;
+  width: 160%;
+  height: 24%;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.14), rgba(255,255,255,0.02));
+  transform: rotate(-18deg);
+  filter: blur(6px);
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+/* soft halo glow behind orb (add this element in JSX or keep as absolutely positioned pseudo if preferred) */
+.orbGlow {
+  position: absolute;
+  z-index: 3;
+  right: calc(clamp(4%, 6vw, 8%) - 6%);
+  bottom: calc(clamp(-30px, -4vh, 2vh) + 2%);
+  width: calc(min(44vmin, 420px) * 1.28);
+  height: calc(min(44vmin, 420px) * 1.28);
+  border-radius: 50%;
+  background: radial-gradient(closest-side,
+    rgba(255,230,200,0.18),
+    rgba(242,84,45,0.12),
+    rgba(216,49,91,0.06),
+    transparent 52%);
+  filter: blur(28px) saturate(1.05);
+  pointer-events: none;
+  transform: translateZ(-1px);
+}
+
+/* gentle float animation (works even if framer motion anim not applied) */
+@keyframes orbFloat {
+  0% { transform: translateY(0) rotate(0.01deg); }
+  50% { transform: translateY(-8px) rotate(0.6deg); }
+  100% { transform: translateY(0) rotate(0.01deg); }
+}
+.orb { animation: orbFloat 9s ease-in-out infinite; }
+
+/* ====== Improve text contrast: subtle dark vignette behind heroInner ====== */
+.heroInner {
+  position: relative; /* ensure pseudo sits under text */
+  z-index: 5;
+  transform-style: preserve-3d;
+}
+
+/* small dark radial to increase contrast behind text without making it look heavy */
+.heroInner::before {
+  content: "";
+  position: absolute;
+  inset: -8% -6% -8% -6%;
+  z-index: 4; /* behind text (heroInner content is above) */
+  border-radius: 18px;
+  pointer-events: none;
+  background: radial-gradient(60% 40% at 50% 28%,
+    rgba(10,16,33,0.06),
+    rgba(10,16,33,0.09) 48%,
+    rgba(255,255,255,0) 78%);
+  mix-blend-mode: multiply;
+}
+
+/* stronger but soft title shadow for legibility over bright orb */
+.heroTitle {
+  text-shadow:
+    0 20px 40px rgba(10,16,33,0.12),
+    0 4px 10px rgba(10,16,33,0.08);
 }
 
 /* 반응형 */
