@@ -16,7 +16,9 @@ import AOS from "aos";
 // ADD: 가치↔기능 토글 카드
 function FeatureCard({
   item,
-  idx
+  idx,
+  onFeatureOpen,
+  onFeatureClose,
 }: {
   item: {
     id: string;
@@ -26,8 +28,18 @@ function FeatureCard({
     badge: string;
   };
   idx: number;
+  onFeatureOpen?: (id: string) => void;
+  onFeatureClose?: (id: string) => void;
 }) {
   const [mode, setMode] = React.useState<"value" | "feature">("value");
+  const toggleMode = () => {
+    setMode((m) => {
+      const next = m === "value" ? "feature" : "value";
+      if (next === "feature") onFeatureOpen?.(item.id);
+      else onFeatureClose?.(item.id);
+      return next;
+    });
+  };
 
   return (
     <motion.article
@@ -36,12 +48,12 @@ function FeatureCard({
       custom={idx}
       layout
       whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
-      onClick={() => setMode(m => (m === "value" ? "feature" : "value"))}
+      onClick={toggleMode}
       role="button"
       aria-pressed={mode === "feature"}
       tabIndex={0}
       onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") setMode(m => (m === "value" ? "feature" : "value"));
+        if (e.key === "Enter" || e.key === " ") toggleMode();
       }}
     >
       <div className={stylesB.featHead}>
@@ -166,6 +178,7 @@ const citeVariants: Variants = {
 
 export default function About() {
   const [quoteOpen, setQuoteOpen] = useState(false);
+  const [openFeatureId, setOpenFeatureId] = useState<string | null>(null);
 
   useEffect(() => {
     // AOS 초기화 (클라이언트에서만 실행)
@@ -423,7 +436,15 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                   badge: "🎯"
                 },
             ].map((f, i) => (
-              <FeatureCard key={f.id} item={f} idx={i} />
+              <FeatureCard
+                key={f.id}
+                item={f}
+                idx={i}
+                onFeatureOpen={(id) => setOpenFeatureId(id)}
+                onFeatureClose={(id) => {
+                  setOpenFeatureId((prev) => (prev === id ? null : prev));
+                }}
+              />
             ))}
           </motion.div>
 
@@ -472,7 +493,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
 
       <div className={stylesB.waveSplit} />
 
-      <ChainQuizzesSection />
+      {openFeatureId === "quiz" && <ChainQuizzesSection />}
 
       {/* ── How It Works ───────────────────────────────── */}
       <section className={stylesB.sectionAlt}>
