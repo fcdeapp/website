@@ -4,6 +4,7 @@ import React from "react";
 import { motion, Variants, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
 import styles from "../../styles/pages/Business.module.css";
+import stylesB from "../../styles/pages/About.module.css";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
 
 // helper: readable label (e.g., "6/16")
@@ -208,28 +209,28 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
     >
       {/* ── Hero ─────────────────────────────────────────── */}
       <section
-        className={styles.heroSection}
+        className={stylesB.heroSection}
         onMouseMove={handleMouseMove}
       >
         {/* --- 배경 FX 레이어들 (절대배치) --- */}
         <motion.div
           aria-hidden
-          className={styles.fxMesh}
+          className={stylesB.fxMesh}
           style={layerSlow}
         />
         <motion.div
           aria-hidden
-          className={styles.fxBeams}
+          className={stylesB.fxBeams}
           style={layerMed}
         />
         <motion.div
           aria-hidden
-          className={styles.fxGrid}
+          className={stylesB.fxGrid}
         />
 
         {/* --- 전경 콘텐츠 (3D 틸트 적용) --- */}
         <motion.div
-          className={styles.heroInner}
+          className={stylesB.heroInner}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.7 }}
@@ -237,24 +238,24 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           style={{ rotateX: tiltX, rotateY: tiltY }}
         >
           {/* 타이틀: 단어별 리빌 */}
-          <h1 className={styles.heroTitle}>
+          <h1 className={stylesB.heroTitle}>
             {"Built for Mid-Career Pros — Learn From Your Work".split(" ").map((w, i) => (
-              <motion.span key={i} className={styles.word} variants={titleReveal}>
+              <motion.span key={i} className={stylesB.word} variants={titleReveal}>
                 {w}&nbsp;
               </motion.span>
             ))}
           </h1>
 
-          <motion.p className={styles.heroLead} variants={wordReveal} custom={1}>
+          <motion.p className={stylesB.heroLead} variants={wordReveal} custom={1}>
             Upload PDFs, emails, or slides and our AI extracts the expressions you actually use—then turns them into short audio drills,
             contextual chats, and targeted quizzes. Ten minutes a day: practice that transfers directly to work.
           </motion.p>
 
           {/* CTA / 스크롤 힌트 */}
-          <div className={styles.heroCtas}>
+          <div className={stylesB.heroCtas}>
             <motion.a
               href="#why"
-              className={styles.primaryCta}
+              className={stylesB.primaryCta}
               variants={wordReveal}
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -263,7 +264,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             </motion.a>
             <motion.a
               href="#how"
-              className={styles.secondaryCta}
+              className={stylesB.secondaryCta}
               variants={wordReveal}
               whileHover={{ y: -2, scale: 1.02 }}
               style={{ marginLeft: 12, textDecoration: "underline", color: "rgba(10,16,69,0.8)" }}
@@ -271,7 +272,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               See how it works
             </motion.a>
             <motion.span
-              className={styles.scrollHintBig}
+              className={stylesB.scrollHintBig}
               variants={wordReveal}
               aria-hidden
             >
@@ -282,7 +283,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
 
         {/* 비주얼 오브젝트(구체) — heroImage 대체 */}
         <motion.div
-          className={styles.orb}
+          className={stylesB.orb}
           variants={floatOrb}
           initial="initial"
           animate="animate"
@@ -290,7 +291,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           aria-hidden
         />
         {/* halo glow layer (pure DOM) */}
-        <div className={styles.orbGlow} aria-hidden />
+        <div className={stylesB.orbGlow} aria-hidden />
       </section>
 
       {/* ── Why Abrody Exists ───────────────────────────── */}
