@@ -1038,24 +1038,33 @@
   padding: 0 1rem;
 }
 
-/* title styling + subtle glossy shadow for legibility */
 .heroTitle {
+  /* ensure text uses its own gradient fill (cross-browser) */
+  display: inline-block;
   margin: 0 0 0.85rem 0;
   font-size: clamp(2.2rem, 5.2vw, 3.6rem);
   font-weight: 700;
   line-height: 1.06;
   letter-spacing: -0.02em;
-  color: transparent;
+
+  /* gradient fill for glyphs */
+  background: linear-gradient(90deg, #D8315B 0%, #F2542D 38%, #0A1045 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  background: linear-gradient(90deg, #D8315B 0%, #F2542D 38%, #0A1045 100%);
-  text-shadow:
-    0 18px 36px rgba(10,16,33,0.08),
-    0 6px 18px rgba(10,16,33,0.06);
+  -webkit-text-fill-color: transparent; /* Safari/WebKit fix */
+  color: transparent;
+
+  /* make sure it sits above subtle overlay FX */
+  position: relative;
+  z-index: 7;
+
+  /* avoid mixing/blending with background layers */
+  mix-blend-mode: normal;
+  text-rendering: optimizeLegibility;
 }
 
-/* word wrapper used by About (keeps per-word reveal working) */
-.word { display: inline-block; white-space: pre; }
+/* keep per-word spans consistent */
+.word { display: inline-block; white-space: pre; position: relative; z-index: 7; }
 
 /* hero lead paragraph */
 .heroLead {
@@ -1275,22 +1284,23 @@
   mix-blend-mode: multiply;
 }
 
-/* ==========================
-   Dynamic language chip (ensure crisp look)
-   ========================== */
-
+/* language chip: always above hero text and visually crisp */
 .dynamicLangBg {
   display: inline-flex;
   align-items: center;
   line-height: 1;
-  background: #fff;
+  background: #ffffff; /* solid white chip so underlying gradient doesn't show through */
   border-radius: 0.9em;
-  padding: 0.2em 0.6em;
+  padding: 0.18em 0.56em;
   box-shadow: 0 8px 26px rgba(0,0,0,0.08);
   border: 1px solid rgba(17,12,43,0.06);
-  transform: translateZ(0);
+
+  /* make sure chip sits above text gradient/spans */
+  position: relative;
+  z-index: 9;
 }
 
+/* language text inside chip: gradient text still OK */
 .dynamicLang {
   display: inline-block;
   min-width: 6ch;
@@ -1298,12 +1308,17 @@
   font-size: clamp(1.25rem, 3.2vw, 2.2rem);
   line-height: 1;
   margin: 0;
+
   background: linear-gradient(45deg, #ff9bd0 0%, #ff7a59 50%, #ffd36e 100%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: transform .4s cubic-bezier(.2,.9,.3,1), opacity .35s ease;
+  -webkit-text-fill-color: transparent; /* ensure visible on Safari */
+  color: transparent;
+
+  transition: transform .35s cubic-bezier(.2,.9,.3,1), opacity .3s ease;
   will-change: transform, opacity;
+  position: relative;
+  z-index: 10;
 }
 
 /* small screens: tighten chip */
