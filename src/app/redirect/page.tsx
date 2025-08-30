@@ -60,7 +60,7 @@ export default function RedirectLanding() {
     <>
       <Head>
         {/* Final URL과 동일 페이지를 항상 200으로 제공 */}
-        <title>앱으로 이동 | FACDE</title>
+        <title>앱으로 이동 | Abrody</title>
         <meta name="robots" content="all" />
         <link rel="canonical" href="https://website.fcde.app/redirect" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -131,7 +131,7 @@ const styles: Record<string, React.CSSProperties> = {
     background: "#f7f8fb",
     padding: "32px 16px",
     fontFamily:
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans KR'",
+      "'Pretendard', 'Noto Sans KR'",
     color: "#0f172a",
   },
   card: {
@@ -201,7 +201,7 @@ const styles: Record<string, React.CSSProperties> = {
     background: "#f1f5f9",
     borderRadius: 6,
     padding: "2px 6px",
-    fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace",
+    fontFamily: "'Pretendard', 'Noto Sans KR'",
     fontSize: 12,
   },
   details: { marginTop: 14 },
