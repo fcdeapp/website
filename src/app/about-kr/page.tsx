@@ -260,7 +260,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           >
             {/* 타이틀: 단어별 리빌 */}
             <h1 className={styles.heroTitle}>
-              {"4050 직장인을 위한 실전 영어".split(" ").map((w, i) => (
+              {"전문가를 위한 외국어".split(" ").map((w, i) => (
                 <motion.span key={i} className={styles.word} variants={titleReveal}>
                   {w}&nbsp;
                 </motion.span>
@@ -313,10 +313,10 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         variants={fadeUp}
         viewport={{ once: true, amount: 0.45 }}
       >
-        <span className={stylesB.sectionKicker}>문제</span>
-        <h2 className={stylesB.sectionTitle}>4050을 위한 어브로디가 필요한 이유</h2>
+        <span className={stylesB.sectionKicker}>전문성</span>
+        <h2 className={stylesB.sectionTitle}>오로지 전문가들을 위해</h2>
         <p className={stylesB.sectionLead}>
-        당신의 업무와 일상에서 시작해, 즉시 현업에 적용 가능한 학습을 만듭니다.
+          당신의 업무와 일상에서 시작해, 전문분야에 적용 가능한 학습을 만듭니다.
         </p>
       </motion.div>
 

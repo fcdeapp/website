@@ -258,7 +258,7 @@ export default function About() {
           >
             {/* title: word-by-word reveal */}
             <h1 className={styles.heroTitle}>
-              {"Confident communication in any language, for busy professionals in their 40s and 50s".split(" ").map((w, i) => (
+              {"Confident communication in any language, for busy professionals".split(" ").map((w, i) => (
                 <motion.span key={i} className={styles.word} variants={titleReveal}>
                   {w}&nbsp;
                 </motion.span>
@@ -311,7 +311,7 @@ export default function About() {
             viewport={{ once: true, amount: 0.45 }}
           >
             <span className={stylesB.sectionKicker}>The Problem</span>
-            <h2 className={stylesB.sectionTitle}>Why Abrody matters for professionals in their 40s and 50s</h2>
+            <h2 className={stylesB.sectionTitle}>Why Abrody matters for professionals</h2>
             <p className={stylesB.sectionLead}>
               We start from your work and daily context to build learning you can apply immediately on the job.
             </p>

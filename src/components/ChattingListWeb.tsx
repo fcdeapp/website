@@ -169,7 +169,7 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
           {
             userId: "brody-ai",
             nickname: "Brody (AI Chat)",
-            profileImage: "/assets/AIProfile.png",
+            profileImage: "/assets/AbrodyFoxGB.png",
           } as any,
         ],
         lastMessage: aiSummary.lastMessage,
@@ -198,7 +198,7 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
             {
               userId: s.otherUserId,
               nickname: s.assistantName || "AI Chat",
-              profileImage: "/assets/AIProfile.png",
+              profileImage: "/assets/AbrodyFoxGB.png",
             },
           ],
           lastMessage: s.lastMessage,
@@ -259,7 +259,7 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
   const getProfileImage = (chat: Chat, me: string): string => {
     if (chat.type === "group") return "/assets/groupChat.png";
     const other = chat.userDetails.find((u) => u.userId !== me);
-    return other?.profileImage || "/assets/Annonymous.png";
+    return other?.profileImage || "/assets/AbrodyFoxGB.png";
   };
 
   /* ───────── Render ───────── */
@@ -315,7 +315,7 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
               {/* AI Quick Start */}
               {!hasAIChat && (
                 <div ref={aiRef} className={styles.item}>
-                  <img className={styles.avatar} src="/assets/AIProfile.png" alt="AI" width={48} height={48} />
+                  <img className={styles.avatar} src="/assets/AbrodyFoxGB.png" alt="AI" width={48} height={48} />
                   <button
                     className={styles.itemMainBtn}
                     onClick={() => onSelectChat({ type: "ai", otherUserId: "brody-ai" })}
@@ -363,7 +363,7 @@ export default function ChattingListWeb({ open, onClose, onSelectChat }: Props) 
                         }}
                       >
                         {isAI ? (
-                          <img className={styles.avatar} src="/assets/AIProfile.png" alt="AI" width={48} height={48} />
+                          <img className={styles.avatar} src="/assets/AbrodyFoxGB.png" alt="AI" width={48} height={48} />
                         ) : (
                           <ProfileWithFlag
                             userId={otherUserId}

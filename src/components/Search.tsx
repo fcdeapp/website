@@ -275,7 +275,7 @@ const SearchPage = () => {
       <header className={styles.header}>
         <div className={styles.logoContainer}>
           <img
-            src="/assets/FoxIconMain.png"
+            src="/assets/AbrodyFoxBlack.png"
             alt="Owl Logo"
             className={styles.logo}
           />

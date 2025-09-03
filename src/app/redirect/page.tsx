@@ -204,7 +204,17 @@ const styles: Record<string, React.CSSProperties> = {
     fontFamily: "'Pretendard', 'Noto Sans KR'",
     fontSize: 12,
   },
-  details: { marginTop: 14 },
-  summary: { cursor: "pointer", color: "#0b1220", fontWeight: 700 },
-  note: { color: "#64748b", marginTop: 8, lineHeight: 1.6 },
+  details: { 
+    marginTop: 14 
+  },
+  summary: { 
+    cursor: "pointer", 
+    color: "#0b1220", 
+    fontWeight: 700 
+  },
+  note: { 
+    color: "#64748b", 
+    marginTop: 8, 
+    lineHeight: 1.6 
+  },
 };

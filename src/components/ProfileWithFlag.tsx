@@ -26,7 +26,7 @@ type ProfileWithFlagProps = {
         : `/assets/${imageValue}`;
     }
     // 기본 이미지 경로 (public 폴더 내에 위치)
-    return "/assets/Annonymous.png";
+    return "/assets/AbrodyFoxGB.png";
   };
 
 const ProfileWithFlag: React.FC<ProfileWithFlagProps> = ({
