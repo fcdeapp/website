@@ -260,7 +260,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           >
             {/* 타이틀: 단어별 리빌 */}
             <h1 className={styles.heroTitle}>
-              {"전문가를 위한 외국어".split(" ").map((w, i) => (
+              {"일상에서 배워요".split(" ").map((w, i) => (
                 <motion.span key={i} className={styles.word} variants={titleReveal}>
                   {w}&nbsp;
                 </motion.span>
@@ -268,8 +268,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             </h1>
 
             <motion.p className={styles.heroLead} variants={wordReveal} custom={1}>
-              내 문서·이메일·보고서를 AI가 즉시 분석해 핵심 표현을
-              음성·대화·퀴즈로 바꿉니다. 출퇴근 10분, 업무에 바로 쓰는 표현만.
+            지금의 경험을 바로 쓰는 말로 익혀요. 사진 한 장으로 시작하고, 오늘에 맞는 말로 끝나요.
             </motion.p>
 
             {/* CTA / 스크롤 힌트 */}
@@ -281,7 +280,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                 whileHover={{ y: -2, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                내 문서로 시작하기
+                사진으로 시작하기
               </motion.a>
               <motion.span
                 className={styles.scrollHintBig}
@@ -313,10 +312,10 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         variants={fadeUp}
         viewport={{ once: true, amount: 0.45 }}
       >
-        <span className={stylesB.sectionKicker}>전문성</span>
-        <h2 className={stylesB.sectionTitle}>오로지 전문가들을 위해</h2>
+        <span className={stylesB.sectionKicker}>오직 나에 의해</span>
+        <h2 className={stylesB.sectionTitle}>방금 있었던 일을 말로 풀어봐요</h2>
         <p className={stylesB.sectionLead}>
-          당신의 업무와 일상에서 시작해, 전문분야에 적용 가능한 학습을 만듭니다.
+        일과 생활에서 바로 쓸 표현을 익혀요. 새 단어가 내 경험에 연결돼 기억에 남아요.
         </p>
       </motion.div>
 
@@ -329,19 +328,19 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
       >
         {[
           {
-            icon: "🎯",
-            title: "게임은 쉬워도, 업무는 어렵다",
-            body: "캐릭터·XP가 아니라 ‘일에서 바로 쓰는 결과’가 필요합니다. 어브로디는 업무 연결형 학습을 전제로 만듭니다.",
+            icon: "📷",
+            title: "사진이 내 단어장이 돼요",
+            body: "내가 찍은 순간이 곧 주제가 돼요."
           },
           {
-            icon: "⏱",
-            title: "시간은 없고, 맥락은 중요하다",
-            body: "바쁜 출퇴근 사이, 내 일의 문서·메시지·통화 맥락으로 빠르게 배우는 게 핵심입니다.",
+            icon: "🧠",
+            title: "기억에 남는 이유",
+            body: "새 단어가 내 경험에 연결돼 오래가요."
           },
           {
-            icon: "🎙",
-            title: "자신감·전달력",
-            body: "우리는 실전 맥락 기반으로 명료성·유창성을 끌어올립니다.",
+            icon: "✨",
+            title: "군더더기 없이 딱 필요한 것만",
+            body: "지금 상황에 맞는 표현만 빠르게 익혀요."
           },
         ].map((card, i) => (
           <motion.article
@@ -386,8 +385,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             custom={1}
             viewport={{ once: true, amount: 0.5 }}
           >
-            우리는 ‘앱을 쓰는 시간’이 아니라 <strong>‘성과가 바뀌는 순간’</strong>을 디자인합니다.
-            내 일의 문서·대화에서 출발해, <em>다음 회의·메일·발표</em>에서 달라지는 결과를 만듭니다.
+            <strong>맥락은 사진과 경험에서.</strong> 연습은 우리가 준비해요. 군더더기 없이, 나에게 필요한 것만 배워요.
           </motion.p>
 
           <motion.div
@@ -398,48 +396,48 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
             {[
-                {
-                  id: "docAudio",
-                  title: "보고서를 말로 익히기",
-                  value: "회의 10분 전, 보고서 핵심이 자연스럽게 말로 나옵니다.",
-                  feature: "PDF, PPT, 보고서에서 핵심 문장과 용어를 추출해 반복 듣기·따라하기 오디오를 즉시 생성합니다.",
-                  badge: "🔊"
-                },
-                {
-                  id: "fileChat",
-                  title: "문서로 실제 상황 대화 연습",
-                  value: "메일과 보고를 더 빠르고 자연스럽게 만들 수 있습니다.",
-                  feature: "내 문서 내용을 바탕으로 이메일·보고·발표용 대화를 생성해 자연스럽게 연습합니다.",
-                  badge: "💬"
-                },
-                {
-                  id: "photoCTL",
-                  title: "사진으로 현장 표현 만들기",
-                  value: "현장 사진만으로 그 상황에서 바로 쓸 표현을 만듭니다.",
-                  feature: "사진 한 장으로 상황에 맞는 학습 시나리오와 표현을 자동 생성합니다.",
-                  badge: "📷"
-                },
-                {
-                  id: "quiz",
-                  title: "나만의 취약점만 고치는 퀴즈",
-                  value: "자주 틀리는 표현을 집중적으로 교정합니다.",
-                  feature: "실수와 빈출 표현을 자동 수집해 개인별 약점만 골라 퀴즈로 보완합니다.",
-                  badge: "🧩"
-                },
-                {
-                  id: "voice",
-                  title: "실전 감각을 높이는 자연스러운 음성",
-                  value: "회의처럼 들리고 말하는 연습의 몰입감이 높아집니다.",
-                  feature: "실제 대화에 가까운 AI 음성으로 듣기와 말하기 훈련의 몰입감을 제공합니다.",
-                  badge: "🎙"
-                },
-                {
-                  id: "transfer",
-                  title: "배운 내용이 바로 업무 성과로",
-                  value: "학습한 표현이 다음 업무 결과로 곧장 연결됩니다.",
-                  feature: "학습이 사용자의 실제 업무 맥락에서 시작되어 현장에서 바로 적용되는 성과를 만듭니다.",
-                  badge: "🎯"
-                },
+              {
+                id: "docAudio",
+                title: "사진에서 바로 말하기",
+                value: "사진 속 순간을 한 줄 말로.",
+                feature: "내 사진과 경험을 짧은 듣기로 바꿔줘요.",
+                badge: "🔊"
+              },
+              {
+                id: "fileChat",
+                title: "내 순간으로 대화 연습",
+                value: "방금 일을 자연스럽게 말해봐요.",
+                feature: "사진/메모를 바탕으로 실제 같은 대화를 만들어 연습해요.",
+                badge: "💬"
+              },
+              {
+                id: "photoCTL",
+                title: "사진 한 장으로 시작",
+                value: "오늘에 맞는 표현만 골라줘요.",
+                feature: "한 장의 사진으로 상황 맞춤 표현과 학습 시나리오를 생성해요.",
+                badge: "📷"
+              },
+              {
+                id: "quiz",
+                title: "약점만 콕, 퀴즈",
+                value: "자주 헷갈리는 부분만 빠르게.",
+                feature: "내가 틀리거나 자주 쓰는 패턴을 모아 개인 맞춤 퀴즈로 복습해요.",
+                badge: "🧩"
+              },
+              {
+                id: "voice",
+                title: "자연스러운 목소리",
+                value: "실제 대화처럼 듣고 말해요.",
+                feature: "사람 같은 AI 음성으로 몰입감 있게 연습해요.",
+                badge: "🎙"
+              },
+              {
+                id: "transfer",
+                title: "오늘 바로 쓰는 학습",
+                value: "배운 표현이 오늘 대화에.",
+                feature: "내 순간에서 시작하니 결과가 바로 일상에 이어져요.",
+                badge: "🎯"
+              },
             ].map((f, i) => (
               <FeatureCard
                 key={f.id}
@@ -481,7 +479,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                 aria-live="polite"
               >
                 <div className={stylesB.quoteBody}>
-                  CTL 기반 학습은 말하기 명료성을
+                  사진·경험 기반 연습은 기억 고정과 말하기 자신감을
                   <span className={stylesB.gradientNumber}>54%</span>
                   유창성을
                   <span className={stylesB.gradientNumber}>65%</span> 향상시킵니다.
@@ -514,22 +512,22 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         <div className={stylesB.flowGrid}>
           {[
             {
-              kicker: "Upload",
+              kicker: "Snap",
               img: "/images/flow-6.png",
-              title: "업무 문서 업로드",
-              desc: "PDF·슬라이드·보고서를 올리면 핵심 문장/용어를 자동 추출하고 요약합니다.",
+              title: "사진 한 장으로 시작",
+              desc: "지금 이 순간을 찍으면 주제와 단어장이 바로 정해져요.",
             },
             {
-              kicker: "Chat",
+              kicker: "Talk",
               img: "/images/flow-7.png",
-              title: "AI 대화 & 교정",
-              desc: "문서 맥락으로 이메일/보고/발표 대화를 만들고, 즉시 교정을 받습니다.",
+              title: "방금 있었던 일을 말로 풀기",
+              desc: "상황에 맞는 자연스러운 표현을 바로 익혀요.",
             },
             {
-              kicker: "Drill",
+              kicker: "Remember",
               img: "/images/flow-8.png",
-              title: "오디오 & 퀴즈",
-              desc: "핵심 표현을 듣고-따라하고-테스트하며 기억에 박습니다.",
+              title: "사진으로 기억에 남기기",
+              desc: "내 경험이 금방 내 표현이 돼요.",
             },
           ].map((step, i) => (
             <motion.div
