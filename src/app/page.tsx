@@ -200,7 +200,7 @@ export default function Home() {
         </motion.div>
 
           {/* App Demo Videos */}
-          <section className={styles.section} data-aos="fade-up">
+          <section className={`${styles.section} ${styles.ivSection}`} data-aos="fade-up">
           <div className={styles.sectionHead}>
             <span className={styles.sectionKicker}>Product</span>
             <h2 className={styles.sectionTitle}>See it in action</h2>

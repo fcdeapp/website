@@ -509,13 +509,22 @@
   font-size: 1rem;
 }
 
+ .ivSection{
+   box-shadow: none;          /* 섹션 카드 그림자 제거 */
+   overflow: visible;         /* 내부 스크롤 영역이 잘리지 않도록 */
+ }
+
 /* Demo Video */
 .demoVideosContainer {
   display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  flex-wrap: wrap;        /* NEW: 한 줄에서 눌리지 않고 다음 줄로 */
-  align-items: flex-start;/* NEW: 줄바꿈 시 위쪽 맞춤 */
+  gap: 1rem;
+  align-items: stretch;
+  flex-wrap: nowrap;             /* 한 줄(줄바꿈 없음) */
+  overflow-x: auto;              /* 가로 스크롤 */
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; /* 옵션: 스냅 */
+  padding: .25rem .25rem .5rem;
 }
 
 .demoVideo {
@@ -1348,9 +1357,14 @@
 
 /* ==== Image Vocab overlay cards ==== */
 .ivCard { 
-  padding: .5rem; 
-  flex: 0 0 clamp(280px, 30vw, 460px); /* NEW: 최소~최대 폭 고정 */
+  padding: .5rem;
+  flex: 0 0 clamp(240px, 28vw, 360px); /* 필요시 조절 */
+  scroll-snap-align: start;
 }
+
+ .ivSection .videoCard{ box-shadow: none; }
+ .ivSection .ivImgWrap{ box-shadow: none; }
+ .ivSection .card:hover{ box-shadow: none; }
 
 .ivImgWrap{
   position: relative;
