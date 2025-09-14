@@ -20,12 +20,14 @@ type Screenshot = {
 };
 
 export default function Home() {
-  const [imageOrder, setImageOrder] = useState<string[]>([
-    "/imageVocab/imageVocab_1.jpg",
-    "/imageVocab/imageVocab_2.jpg",
-    "/imageVocab/imageVocab_3.jpg",
-    "/imageVocab/imageVocab_4.jpg",
-    "/imageVocab/imageVocab_5.jpg",
+  type IVItem = { label: string; src: string };
+
+  const [ivItems, setIvItems] = useState<IVItem[]>([
+    { label: "coffee",       src: "/imageVocab/imageVocab_1.png" }, // 커피
+    { label: "bread",        src: "/imageVocab/imageVocab_2.png" }, // 빵
+    { label: "tempura bowl", src: "/imageVocab/imageVocab_3.png" }, // 텐동(영문 표기)
+    { label: "cat",          src: "/imageVocab/imageVocab_4.png" }, // 고양이
+    { label: "pigeon",       src: "/imageVocab/imageVocab_5.png" }, // 비둘기
   ]);
 
   const journeyItems: CarouselItem[] = [
@@ -72,7 +74,7 @@ export default function Home() {
 
   useEffect(() => {
     const iv = setInterval(() => {
-      setImageOrder((prev) => [...prev.slice(1), prev[0]]);
+      setIvItems((prev) => [...prev.slice(1), prev[0]]);
     }, 5000);
     return () => clearInterval(iv);
   }, []);
@@ -208,16 +210,21 @@ export default function Home() {
           </div>
 
           <motion.div className={`${styles.demoVideosContainer} ${styles.demoRail}`} layout>
-            {imageOrder.map((src) => (
-              <motion.div key={src} className={styles.videoCard} layout>
-                <motion.img
-                  className={styles.demoVideo}
-                  src={src}
-                  alt="App feature preview"
-                  loading="lazy"
-                  layout
-                  transition={{ layout: { duration: 0.8, ease: "easeInOut" } }}
-                />
+            {ivItems.map((it) => (
+              <motion.div key={it.src} className={`${styles.videoCard} ${styles.ivCard}`} layout>
+                <div className={styles.ivImgWrap}>
+                  <img
+                    className={styles.ivImg}
+                    src={it.src}
+                    alt={`Image vocabulary — ${it.label}`}
+                    loading="lazy"
+                  />
+                  {/* 앱 스타일: 흰 두꺼운 테두리 + 짙은 회색 텍스트 (겹쳐서 표시) */}
+                  <div className={styles.ivLabel} aria-hidden="true">
+                    <span className={styles.ivWordStroke}>{it.label}</span>
+                    <span className={styles.ivWordFill}>{it.label}</span>
+                  </div>
+                </div>
               </motion.div>
             ))}
           </motion.div>
