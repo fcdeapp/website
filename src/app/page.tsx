@@ -20,10 +20,12 @@ type Screenshot = {
 };
 
 export default function Home() {
-  const [videoOrder, setVideoOrder] = useState<string[]>([
-    "/fr_1.mp4",
-    "/fr_2.mp4",
-    "/fr_3.mp4",
+  const [imageOrder, setImageOrder] = useState<string[]>([
+    "/imageVocab/imageVocab_1.jpg",
+    "/imageVocab/imageVocab_2.jpg",
+    "/imageVocab/imageVocab_3.jpg",
+    "/imageVocab/imageVocab_4.jpg",
+    "/imageVocab/imageVocab_5.jpg",
   ]);
 
   const journeyItems: CarouselItem[] = [
@@ -68,14 +70,10 @@ export default function Home() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  //--- 비디오 순서 자동 순환 애니메이션 ---
   useEffect(() => {
     const iv = setInterval(() => {
-      setVideoOrder((prev) => {
-        // 맨 앞을 뒤로 보내는 로테이션
-        return [...prev.slice(1), prev[0]];
-      });
-    }, 5000); // 5초마다 순환
+      setImageOrder((prev) => [...prev.slice(1), prev[0]]);
+    }, 5000);
     return () => clearInterval(iv);
   }, []);
 
@@ -135,7 +133,7 @@ export default function Home() {
           style={{ rotateX: tiltX, rotateY: tiltY }}
         >
           <h1 className={styles.heroTitle}>
-          Real-work language practice for mid-career professionals — Learn&nbsp;
+          Learn&nbsp;
             <span className={styles.dynamicLangBg}>
               <AnimatePresence mode="wait">
                 <motion.span
@@ -150,11 +148,11 @@ export default function Home() {
                 </motion.span>
               </AnimatePresence>
             </span>
-            &nbsp;From Your Work
+            &nbsp;where life happens
           </h1>
 
           <motion.p className={styles.heroLead}>
-          Upload a document and get short, work-tailored practice — voice drills, AI coaching and micro-quizzes that make your meetings, emails and presentations clearer in minutes a day.
+            Start with a photo. Finish with words that fit your day. Your moments become language you’ll remember and use.
           </motion.p>
 
           <div className={styles.heroCtas}>
@@ -172,9 +170,10 @@ export default function Home() {
         <main className={styles.main}>
         <div id="how" className={styles.journeyHeader}>
         <span className={styles.sectionKicker}>How it helps</span>
-        <h2 className={styles.sectionTitle}>Practice that improves your work</h2>
+        <h2 className={styles.sectionTitle}>Your moments become your vocabulary</h2>
         <p className={styles.sectionLead}>
-          Upload one document or a photo. Abrody creates short, job-relevant practice that improves your confidence and clarity in meetings, calls and emails.
+          Talk about what just happened. Use the right expressions at work and in life.
+          New words stick because they’re tied to your memory. No filler—only what matters to you.
         </p>
         </div>
 
@@ -204,27 +203,24 @@ export default function Home() {
             <span className={styles.sectionKicker}>Product</span>
             <h2 className={styles.sectionTitle}>See it in action</h2>
             <p className={styles.sectionLeadSmall}>
-              See Abrody convert your files into bite-size practice: natural voice drills, contextual AI coaching and quick quizzes — all focused on improving real work outcomes.
+              You bring the context. We bring the practice.
             </p>
           </div>
 
-            <motion.div className={`${styles.demoVideosContainer} ${styles.demoRail}`} layout>
-              {videoOrder.map((src) => (
-                <motion.div key={src} className={styles.videoCard} layout>
-                  <motion.video
-                    className={styles.demoVideo}
-                    src={src}
-                    autoPlay
-                    muted
-                    playsInline
-                    loop
-                    preload="metadata"
-                    layout
-                    transition={{ layout: { duration: 0.8, ease: "easeInOut" } }}
-                  />
-                </motion.div>
-              ))}
-            </motion.div>
+          <motion.div className={`${styles.demoVideosContainer} ${styles.demoRail}`} layout>
+            {imageOrder.map((src) => (
+              <motion.div key={src} className={styles.videoCard} layout>
+                <motion.img
+                  className={styles.demoVideo}
+                  src={src}
+                  alt="App feature preview"
+                  loading="lazy"
+                  layout
+                  transition={{ layout: { duration: 0.8, ease: "easeInOut" } }}
+                />
+              </motion.div>
+            ))}
+          </motion.div>
           </section>
 
           <section className={styles.section} data-aos="fade-up">
