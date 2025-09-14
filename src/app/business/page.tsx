@@ -342,7 +342,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         >
           {/* title: word-by-word reveal */}
           <h1 className={stylesB.heroTitle}>
-            {"Confident communication in any language, for busy professionals in their 40s and 50s".split(" ").map((w, i) => (
+            {"Learn where life happens".split(" ").map((w, i) => (
               <motion.span key={i} className={stylesB.word} variants={titleReveal}>
                 {w}&nbsp;
               </motion.span>
@@ -350,7 +350,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </h1>
 
           <motion.p className={stylesB.heroLead} variants={wordReveal} custom={1}>
-            AI instantly analyzes your documents, emails, and reports, then turns key expressions into voice drills, guided conversations, and quizzes. Ten minutes on your commute, focused on phrases you can use at work today.
+            Your moments become language you’ll remember and use. Start with a photo. Finish with words that fit your day.
           </motion.p>
 
           {/* CTA / scroll hint */}
@@ -362,7 +362,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Start with my document
+              Start with a photo
             </motion.a>
             <motion.span
               className={stylesB.scrollHintBig}
@@ -394,10 +394,10 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           variants={fadeUp}
           viewport={{ once: true, amount: 0.45 }}
         >
-          <span className={styles.sectionKicker}>The Problem</span>
-          <h2 className={styles.sectionTitle}>Why Abrody matters for professionals in their 40s and 50s</h2>
+          <span className={styles.sectionKicker}>The Why</span>
+          <h2 className={styles.sectionTitle}>Talk about what just happened.</h2>
           <p className={styles.sectionLead}>
-            We start from your work and daily context to build learning you can apply immediately on the job.
+            Use the right expressions at work and in life. New words stick because they’re tied to your memory.
           </p>
         </motion.div>
 
@@ -410,19 +410,19 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         >
           {[
             {
-              icon: "🎯",
-              title: "Games are easy, work is hard",
-              body: "You don’t need characters or XP — you need results at work. Abrody is built for work-connected learning."
+              icon: "📷",
+              title: "Start with a photo",
+              body: "Snap what you see. Your photos become your vocabulary."
             },
             {
-              icon: "⏱",
-              title: "Time is short, context is everything",
-              body: "Between commutes and meetings, what matters is learning fast in the context of your documents, messages, and calls."
+              icon: "🗣️",
+              title: "Talk about what just happened",
+              body: "Get natural, situation-ready phrases for your day."
             },
             {
-              icon: "🎙",
-              title: "Confidence and clarity",
-              body: "We raise clarity and fluency through real-world contexts you face every day."
+              icon: "✨",
+              title: "No filler — only what matters",
+              body: "Focus on words you’ll actually use. Remember because it’s yours."
             },
           ].map((card, i) => (
             <motion.article
@@ -466,8 +466,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             custom={1}
             viewport={{ once: true, amount: 0.5 }}
           >
-            We design for <strong>moments when outcomes change</strong>, not time spent in an app.
-            We start from your documents and conversations to create results that show up in your <em>next meeting, email,</em> or <em>presentation</em>.
+            <strong>You bring the context. We bring the practice.</strong> No filler — only what matters to you. Your photos become your vocabulary.
           </motion.p>
 
           <motion.div
@@ -480,44 +479,44 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             {[
               {
                 id: "docAudio",
-                title: "Learn your report by speaking",
-                value: "Ten minutes before a meeting, your key points come out naturally.",
-                feature: "We extract key sentences and terms from PDFs, slides, and reports to instantly create listen-and-repeat audio drills.",
+                title: "Speak from your moments",
+                value: "Turn key lines into natural speech.",
+                feature: "We turn your photos and daily moments into short listen-and-repeat drills.",
                 badge: "🔊"
               },
               {
                 id: "fileChat",
-                title: "Practice real situations from your documents",
-                value: "Write emails and reports faster and more naturally.",
-                feature: "We turn your document content into practice conversations for email, reports, and presentations.",
+                title: "Practice real situations",
+                value: "Chat through what just happened.",
+                feature: "Use your photos and notes to generate realistic back-and-forth practice.",
                 badge: "💬"
               },
               {
                 id: "photoCTL",
-                title: "Build on-site language from a photo",
-                value: "Snap a photo and get the exact phrases you need for that situation.",
-                feature: "One photo generates a tailored learning scenario and expressions for the moment.",
+                title: "Start with a photo",
+                value: "Get the exact phrases you need today.",
+                feature: "One photo creates a tailored scenario with expressions that fit your day.",
                 badge: "📷"
               },
               {
                 id: "quiz",
                 title: "Fix only your weak spots",
-                value: "Target and correct the expressions you miss most.",
-                feature: "We automatically collect mistakes and frequent patterns to quiz you on your personal gaps.",
+                value: "Target what you miss most.",
+                feature: "We collect mistakes and frequent patterns to quiz you on your personal gaps.",
                 badge: "🧩"
               },
               {
                 id: "voice",
-                title: "Natural voices that feel like real meetings",
-                value: "Immersive practice that speeds up your speaking.",
-                feature: "Human-like AI voices make listening and speaking practice feel real.",
+                title: "Natural voices, real-life feel",
+                value: "Listen and speak like a real chat.",
+                feature: "Human-like AI voices make practice immersive and memorable.",
                 badge: "🎙"
               },
               {
                 id: "transfer",
-                title: "Learning turns into business results",
-                value: "What you learn shows up in your very next deliverable.",
-                feature: "Because we start from your actual work context, results transfer directly to the field.",
+                title: "Learning that shows up today",
+                value: "Use it in your next conversation.",
+                feature: "Because we start from your own context, results transfer to real life.",
                 badge: "🎯"
               },
             ].map((f, i) => (
@@ -544,7 +543,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             tabIndex={0}
             aria-expanded={quoteOpen}
           >
-            With a CTL philosophy that connects work and learning seamlessly, learning blends into <em>today’s tasks</em> and results are proven <strong>on the job</strong>. 
+            With a flow that ties your photos and experiences to practice, learning blends into <em>today</em> and shows up in your next <strong>conversation</strong>.
           </motion.p>
         </section>
 
@@ -593,22 +592,22 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         <div className={styles.flowGrid}>
           {[
             {
-              kicker: "Upload",
+              kicker: "Snap",
               img: "/images/flow-6.png",
-              title: "Upload your files",
-              desc: "Drop a PDF, slide deck, or email—Abrody auto-summarizes and extracts useful phrases and vocabulary.",
+              title: "Start with a photo",
+              desc: "Take a quick photo. Your own moment sets the topic and vocabulary.",
             },
             {
-              kicker: "Chat",
+              kicker: "Talk",
               img: "/images/flow-7.png",
-              title: "AI chat & correction",
-              desc: "Practice workplace dialogues generated from your content and get instant, contextual corrections.",
+              title: "Talk about what just happened",
+              desc: "Get natural expressions for the exact situation — travel, friends, campus, or work.",
             },
             {
-              kicker: "Drill",
+              kicker: "Remember",
               img: "/images/flow-8.png",
-              title: "Audio drills & quick quizzes",
-              desc: "Listen, shadow, and lock it in with short drills and micro-quizzes tailored to your needs.",
+              title: "Make it stick with a photo",
+              desc: "Your moments quickly become your words.",
             },
           ].map((step, i) => (
             <motion.div
