@@ -258,7 +258,7 @@ export default function About() {
           >
             {/* title: word-by-word reveal */}
             <h1 className={styles.heroTitle}>
-              {"Confident communication in any language, for busy professionals".split(" ").map((w, i) => (
+              {"Learn where life happens".split(" ").map((w, i) => (
                 <motion.span key={i} className={styles.word} variants={titleReveal}>
                   {w}&nbsp;
                 </motion.span>
@@ -266,7 +266,7 @@ export default function About() {
             </h1>
 
             <motion.p className={styles.heroLead} variants={wordReveal} custom={1}>
-              AI instantly analyzes your documents, emails, and reports, then turns key expressions into voice drills, guided conversations, and quizzes. Ten minutes on your commute, focused on phrases you can use at work today.
+              Your moments become language you’ll remember and use. Start with a photo. Finish with words that fit your day.
             </motion.p>
 
             {/* CTA / scroll hint */}
@@ -278,7 +278,7 @@ export default function About() {
                 whileHover={{ y: -2, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Start with my document
+                Start with a photo
               </motion.a>
               <motion.span
                 className={styles.scrollHintBig}
@@ -311,9 +311,9 @@ export default function About() {
             viewport={{ once: true, amount: 0.45 }}
           >
             <span className={stylesB.sectionKicker}>The Problem</span>
-            <h2 className={stylesB.sectionTitle}>Why Abrody matters for professionals</h2>
+            <h2 className={stylesB.sectionTitle}>Talk about what just happened.</h2>
             <p className={stylesB.sectionLead}>
-              We start from your work and daily context to build learning you can apply immediately on the job.
+            Use the right expressions at work and in life. New words stick because they’re tied to your memory.
             </p>
           </motion.div>
 
@@ -382,8 +382,7 @@ export default function About() {
               custom={1}
               viewport={{ once: true, amount: 0.5 }}
             >
-              We design for <strong>moments when outcomes change</strong>, not time spent in an app.
-              We start from your documents and conversations to create results that show up in your <em>next meeting, email,</em> or <em>presentation</em>.
+              <strong>You bring the context. We bring the practice.</strong> No filler — only what matters to you. Your photos and files turn into phrases you can use today.
             </motion.p>
 
             <motion.div

@@ -511,9 +511,11 @@
 
 /* Demo Video */
 .demoVideosContainer {
-  display: flex;            /* ➕ arrange videos in a row */
-  gap: 1rem;                /* ➕ space between videos */
-  justify-content: center;  /* ➕ center them */
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;        /* NEW: 한 줄에서 눌리지 않고 다음 줄로 */
+  align-items: flex-start;/* NEW: 줄바꿈 시 위쪽 맞춤 */
 }
 
 .demoVideo {
@@ -1345,7 +1347,10 @@
 }
 
 /* ==== Image Vocab overlay cards ==== */
-.ivCard { padding: .5rem; }
+.ivCard { 
+  padding: .5rem; 
+  flex: 0 0 clamp(280px, 30vw, 460px); /* NEW: 최소~최대 폭 고정 */
+}
 
 .ivImgWrap{
   position: relative;
@@ -1408,7 +1413,7 @@
   text-shadow: none;
 }
 
-/* 모바일에서 카드가 2열처럼 보이도록 살짝 축소 (선택) */
 @media (max-width: 767px){
-  .ivImgWrap{ max-width: 220px; }
+  .ivCard{ flex-basis: clamp(180px, 46vw, 280px); } /* 모바일에서도 보기 좋게 */
+  .ivImgWrap{ max-width: 100%; }
 }
