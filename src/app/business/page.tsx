@@ -237,11 +237,11 @@ export default function BusinessPage() {
 
   // ============ 데이터 선언 위치 (여기에 있어야 함) ============
   const downloadData = [
-    { date: "2024-06-16", ios: 16, android: 5, sum: 21 },
-    { date: "2024-07-01", ios: 51, android: 6, sum: 57 },
-    { date: "2024-07-16", ios: 159, android: 7, sum: 166 },
-    { date: "2024-08-01", ios: 203, android: 6, sum: 209 },
-    { date: "2024-08-16", ios: 330, android: 25, sum: 355 },
+    { date: "2025-06-16", ios: 16, android: 5, sum: 21 },
+    { date: "2025-07-01", ios: 51, android: 6, sum: 57 },
+    { date: "2025-08-01", ios: 203, android: 6, sum: 209 },
+    { date: "2025-09-01", ios: 373, android: 34, sum: 407 },
+    { date: "2025-10-01", ios: 499, android: 193, sum: 692 },
   ];
 
   // prepare points + global scale (AFTER downloadData and toTs/buildPathFromPoints are defined)
