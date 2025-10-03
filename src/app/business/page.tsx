@@ -593,19 +593,19 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           {[
             {
               kicker: "Snap",
-              img: "/images/flow-6.png",
+              img: "/images/flow-9.png",
               title: "Start with a photo",
               desc: "Take a quick photo. Your own moment sets the topic and vocabulary.",
             },
             {
               kicker: "Talk",
-              img: "/images/flow-7.png",
+              img: "/images/flow-10.png",
               title: "Talk about what just happened",
               desc: "Get natural expressions for the exact situation — travel, friends, campus, or work.",
             },
             {
               kicker: "Remember",
-              img: "/images/flow-8.png",
+              img: "/images/flow-11.png",
               title: "Make it stick with a photo",
               desc: "Your moments quickly become your words.",
             },
