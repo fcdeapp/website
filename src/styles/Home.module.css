@@ -12,11 +12,10 @@
   display: inline-flex;
   align-items: center;
   line-height: 1;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 0.8em;
   padding: 0.22em 0.55em;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transform: translateZ(0); /* 글리치 방지 */
+  transform: translateZ(0);
 }
 
 /* 그라디언트 텍스트 (밝게) */
