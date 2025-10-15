@@ -58,8 +58,6 @@ export default function Home() {
   const layerMed  = { x: useTransform(sx, v => v * -0.5 ), y: useTransform(sy, v => v * -0.5 ) };
   const layerFast = { x: useTransform(sx, v => v *  0.8 ), y: useTransform(sy, v => v *  0.8 ) };
 
-
-  // ③ 3초마다 인덱스 순환
   useEffect(() => {
     const iv = setInterval(() => {
       setLangIndex(i => (i + 1) % languages.length);
@@ -67,7 +65,6 @@ export default function Home() {
     return () => clearInterval(iv);
   }, []);
 
-  //--- AOS 초기화 ---
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -135,7 +132,7 @@ export default function Home() {
           style={{ rotateX: tiltX, rotateY: tiltY }}
         >
           <h1 className={styles.heroTitle}>
-          Learn&nbsp;
+            <span>Learn&nbsp;</span>
             <span className={styles.dynamicLangBg}>
               <AnimatePresence mode="wait">
                 <motion.span
@@ -150,7 +147,11 @@ export default function Home() {
                 </motion.span>
               </AnimatePresence>
             </span>
-            &nbsp;where life happens
+            
+            <span>&nbsp;where&nbsp;</span>
+            <span className={styles.wordAlt}>life</span>
+            <span>&nbsp;</span>
+            <span className={styles.wordAlt}>happens</span>
           </h1>
 
           <motion.p className={styles.heroLead}>
