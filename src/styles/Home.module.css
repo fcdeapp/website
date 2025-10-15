@@ -12,11 +12,10 @@
   display: inline-flex;
   align-items: center;
   line-height: 1;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 0.8em;
   padding: 0.22em 0.55em;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  border: 1px solid rgba(17,12,43,0.06);
   transform: translateZ(0); /* 글리치 방지 */
 }
 
@@ -1256,20 +1255,6 @@
     rgba(10,16,33,0.08) 48%,
     rgba(255,255,255,0) 78%);
   mix-blend-mode: multiply;
-}
-
-/* language chip: always above hero text and visually crisp */
-.dynamicLangBg {
-  display: inline-flex;
-  align-items: center;
-  line-height: 1;
-  background: #ffffff;
-  border-radius: 0.9em;
-  padding: 0.18em 0.56em;
-  box-shadow: 0 8px 26px rgba(0,0,0,0.08);
-  border: 1px solid rgba(17,12,43,0.06);
-  position: relative;
-  z-index: 9;
 }
 
 /* language text inside chip: gradient text still OK */
