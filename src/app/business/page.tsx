@@ -368,13 +368,24 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           variants={heroParent}
           style={{ rotateX: tiltX, rotateY: tiltY }}
         >
-          {/* title: word-by-word reveal */}
           <h1 className={stylesB.heroTitle}>
-            {"Learn where life happens".split(" ").map((w, i) => (
-              <motion.span key={i} className={stylesB.word} variants={titleReveal}>
-                {w}&nbsp;
-              </motion.span>
-            ))}
+            {(() => {
+              const titleWords = ["Learn", "where", "life", "happens"];
+              const emphasize = new Set(["life"]);
+              return titleWords.map((w, i) => {
+                const key = w.replace(/[^a-z]/gi, "") + i;
+                const isAlt = emphasize.has(w.toLowerCase());
+                return (
+                  <motion.span
+                    key={key}
+                    className={`${stylesB.word} ${isAlt ? stylesB.wordAlt : ""}`}
+                    variants={titleReveal}
+                  >
+                    {w}&nbsp;
+                  </motion.span>
+                );
+              });
+            })()}
           </h1>
 
           <motion.p className={stylesB.heroLead} variants={wordReveal} custom={1}>

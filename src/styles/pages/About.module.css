@@ -613,22 +613,38 @@
   letter-spacing: -0.012em;
 }
 
+/* 제목을 무채색 그RADIENT로 */
 .heroTitle {
   margin: 0 0 1rem 0;
   font-size: clamp(2.2rem, 5.2vw, 4rem);
   font-weight: 600;
   line-height: 1.08;
   letter-spacing: -0.03em;
-  -webkit-text-stroke: 0.25px rgba(0,0,0,0.22);
-  text-shadow: 0 2px 8px rgba(0,0,0,0.10), 0 12px 36px rgba(10,16,33,0.14);
-  background: linear-gradient(90deg, #D8315B 0%, #F2542D 35%, #0A1045 100%);
+  -webkit-text-stroke: 0.25px rgba(0,0,0,0.18);
+  text-shadow:
+    0 20px 40px rgba(10,16,33,0.10),
+    0 4px 10px rgba(10,16,33,0.06);
+
+  /* 🔽 브랜드 컬러 그라데이션 제거 + 무채색 그라데이션 적용 */
+  background: linear-gradient(90deg, #111 0%, #4b5563 45%, #9ca3af 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 0 10px 40px rgba(210, 55, 90, .18);
 }
 
-.word { display: inline-block; white-space: pre; }
+/* 단어 기본 스타일(기존) */
+.word { display:inline-block; white-space:pre; }
+
+/* 🔽 강조 단어: 제주명조 + 이탤릭 + 무채색 단색으로 덮어쓰기 */
+.wordAlt {
+  font-family: "Jeju Myeongjo", serif;
+  font-style: italic;
+
+  /* 부모의 그라데이션을 끊고 단색 적용 */
+  background: none !important;
+  color: #1f2937;                 /* 진회색 */
+  -webkit-text-fill-color: #1f2937; /* 사파리 대응 */
+}
 
 .heroCtas {
   margin-top: 1.6rem;
@@ -858,13 +874,6 @@
     rgba(10,16,33,0.09) 48%,
     rgba(255,255,255,0) 78%);
   mix-blend-mode: multiply;
-}
-
-/* stronger but soft title shadow for legibility over bright orb */
-.heroTitle {
-  text-shadow:
-    0 20px 40px rgba(10,16,33,0.12),
-    0 4px 10px rgba(10,16,33,0.08);
 }
 
 /* 반응형 */

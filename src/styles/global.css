@@ -13,4 +13,10 @@
   *, *::before, *::after {
     box-sizing: inherit;
   }
+
+  @font-face {
+    font-family: "Jeju Myeongjo";
+    src: url("/ttf/JejuMyeongjo.ttf") format("truetype");
+    font-display: swap;
+  }
   
