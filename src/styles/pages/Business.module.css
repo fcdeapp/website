@@ -1,5 +1,5 @@
-/* ───────── Global Layout ───────── */
-.wrapper {
+  /* ───────── Global Layout ───────── */
+  .wrapper {
     display: flex;
     flex-direction: column;
     gap: 8rem;
@@ -7,6 +7,21 @@
     color: #333;
     line-height: 1.6;
   }
+  /* CPC line (Cost per Conversion) */
+  .lineCAC {
+    stroke: #d8315b !important;      /* brand main */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+
+  /* Legend swatch for CPC */
+  .legendSwatchCAC {
+    width:12px; height:12px; border-radius:3px; display:inline-block;
+    background: #d8315b !important;
+    box-shadow: 0 6px 18px rgba(17,12,43,0.12);
+  }
+
   /* ───────── Differentiators ───────── */
   .diffLead {
     max-width: 60rem;

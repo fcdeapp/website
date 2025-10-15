@@ -6,7 +6,6 @@ import styles from "../../styles/pages/Business.module.css";
 import stylesB from "../../styles/pages/About.module.css";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
 
-// ADD: value ↔ feature toggle card
 function FeatureCard({
   item,
   idx,
@@ -253,7 +252,6 @@ export default function BusinessPage() {
   const globalMin = Math.min(...allVals);
   const globalMax = Math.max(...allVals);
 
-  // helpers for tick positions
   const padLeft = 20;
   const padRight = 20;
   const svgW = 600;
@@ -262,8 +260,38 @@ export default function BusinessPage() {
   const minT = Math.min(...downloadData.map(d => toTs(d.date)));
   const maxT = Math.max(...downloadData.map(d => toTs(d.date)));
   const xForTick = (t: number) => padLeft + ((t - minT) / Math.max(1, maxT - minT)) * usableW;
+  
+  const cpcData = [
+    { date: "2025-07-01", cpc: 3201 },
+    { date: "2025-08-01", cpc: 3125 },
+    { date: "2025-09-01", cpc: 1442 },
+    { date: "2025-10-01", cpc: 1254 }, // current-to-date
+  ];
 
-  // [ADD] y 좌표 변환 헬퍼(그래프와 동일 스케일)
+  // points for CPC chart (independent scale)
+  const pointsCPC = cpcData.map(d => ({ t: toTs(d.date), v: d.cpc }));
+  const cpcMin = Math.min(...cpcData.map(d => d.cpc));
+  const cpcMax = Math.max(...cpcData.map(d => d.cpc));
+
+  // x helper for CPC chart (same width/padding as downloads)
+  const minTCPC = Math.min(...cpcData.map(d => toTs(d.date)));
+  const maxTCPC = Math.max(...cpcData.map(d => toTs(d.date)));
+  const xForTickCPC = (t: number) =>
+    padLeft + ((t - minTCPC) / Math.max(1, maxTCPC - minTCPC)) * usableW;
+
+  // y helper for CPC chart (own min/max)
+  const yForCPC = (v: number) => {
+    const topPad = 8;
+    const bottomPad = 8;
+    const rangeV = cpcMax - cpcMin || 1;
+    const normalized = (v - cpcMin) / rangeV;
+    return svgH - (normalized * (svgH - topPad - bottomPad) + bottomPad);
+  };
+
+  // currency formatter (₩ with thousands)
+  const krw = (n: number) => `₩${n.toLocaleString("en-US")}`;
+
+  // y 좌표 변환 헬퍼(그래프와 동일 스케일)
   const yFor = (v: number) => {
     const topPad = 8;
     const bottomPad = 8;
@@ -272,7 +300,7 @@ export default function BusinessPage() {
     return svgH - (normalized * (svgH - topPad - bottomPad) + bottomPad);
   };
 
-  // [ADD] 툴팁 위치/데이터 메모
+  // 툴팁 위치/데이터 메모
   const tip = React.useMemo(() => {
     if (hoverIdx == null) return null;
     const d = downloadData[hoverIdx];
@@ -631,6 +659,200 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
 
       <div className={styles.waveSplitFlip} />
 
+      {/* ── Metrics (tables/graphs hub) ───────────────────── */}
+      <section className={styles.sectionAlt}>
+        <motion.div
+          className={styles.whyHeader}
+          variants={fadeUp}
+          viewport={{ once: true, amount: 0.45 }}
+        >
+          <span className={styles.sectionKicker}>Metrics</span>
+          <h2 className={styles.sectionTitle}>Key Performance</h2>
+          <div style={{ marginTop: "0.75rem" }}>
+            <button
+              className={styles.statusToggle}
+              onClick={() => setShowStatus((s) => !s)}
+              aria-expanded={showStatus}
+              aria-controls="metrics-panel"
+            >
+              {showStatus ? "Hide metrics" : "View metrics"}
+            </button>
+          </div>
+        </motion.div>
+
+        {/* Collapsible panel that groups ALL charts (CPC + Downloads) */}
+        <div
+          id="metrics-panel"
+          className={`${styles.statusPanel} ${showStatus ? styles.open : ""}`}
+          aria-hidden={!showStatus}
+        >
+          <div className={styles.statusInner}>
+
+            {/* ===== 1) Monthly Cost per Conversion (CPC) ===== */}
+            <div className={styles.chartWrapper}>
+              <div className={styles.chartBox}>
+                <svg
+                  className={styles.sparklineSvg}
+                  viewBox="0 0 600 180"
+                  preserveAspectRatio="none"
+                  role="img"
+                  aria-label="Monthly Cost per Conversion"
+                >
+                  <defs>
+                    <linearGradient id="areaCPCGrad" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stopColor="#fdebee" stopOpacity="0.6" />
+                      <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
+                    </linearGradient>
+                  </defs>
+
+                  {/* Area + Line (brand-consistent) */}
+                  <path
+                    d={`${buildPathFromPoints(pointsCPC, 600, 160, 20, 20, cpcMin, cpcMax)} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`}
+                    fill="url(#areaCPCGrad)"
+                    className={styles.areaSum}
+                  />
+                  <path
+                    d={buildPathFromPoints(pointsCPC, 600, 160, 20, 20, cpcMin, cpcMax)}
+                    fill="none"
+                    strokeWidth={2.5}
+                    className={styles.lineCAC}
+                  />
+
+                  {/* X ticks + labels: show “7/1, 8/1, …” */}
+                  {cpcData.map((d) => {
+                    const x = xForTickCPC(toTs(d.date));
+                    return (
+                      <g key={`cpc-${d.date}`}>
+                        <line x1={x} x2={x} y1={svgH - 6} y2={svgH - 2} stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
+                        <text x={x} y={svgH + 16} textAnchor="middle" fontSize="11" fill="#666" className={styles.xLabel}>
+                          {shortLabel(d.date)}
+                        </text>
+                      </g>
+                    );
+                  })}
+                </svg>
+              </div>
+
+              <div className={styles.statusSummary}>
+                <div className={styles.latestLabel}>Monthly Cost per Conversion</div>
+                <div className={styles.latestNumbers}>
+                  {cpcData.map((d) => (
+                    <div key={`cpc-sum-${d.date}`}>
+                      {new Date(d.date).toLocaleString("en-US", { month: "short" })}: <strong>{krw(d.cpc)}</strong>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className={styles.statusLegend}>
+                <div className={styles.legendItem}><span className={styles.legendSwatchCAC} /> Cost per Conversion (₩)</div>
+              </div>
+            </div>
+
+            {/* ===== 2) Downloads (moved from Roadmap’s status panel) ===== */}
+            <div className={styles.chartWrapper}>
+              <div className={styles.chartBox} onMouseLeave={() => setHoverIdx(null)}>
+                <svg
+                  className={styles.sparklineSvg}
+                  viewBox="0 0 600 180"
+                  preserveAspectRatio="none"
+                  role="img"
+                  aria-label="Download counts over time"
+                >
+                  <defs>
+                    <linearGradient id="areaSumGrad" x1="0" x2="0" y1="0" y2="1">
+                      <stop offset="0%" stopColor="#fbe9ec" stopOpacity="0.6" />
+                      <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
+                    </linearGradient>
+                  </defs>
+
+                  {/* area / lines (existing) */}
+                  <path d={`${buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`} fill="url(#areaSumGrad)" className={styles.areaSum} />
+                  <path d={buildPathFromPoints(pointsIos, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineIos} />
+                  <path d={buildPathFromPoints(pointsAndroid, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineAndroid} />
+                  <path d={buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2.5} className={styles.lineSum} />
+
+                  {/* x-axis ticks */}
+                  {downloadData.map((d) => {
+                    const x = xForTick(toTs(d.date));
+                    return (
+                      <g key={d.date}>
+                        <line x1={x} x2={x} y1={svgH - 6} y2={svgH - 2} stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
+                        <text x={x} y={svgH + 16} textAnchor="middle" fontSize="11" fill="#666" className={styles.xLabel}>
+                          {shortLabel(d.date)}
+                        </text>
+                      </g>
+                    );
+                  })}
+
+                  {/* hover targets + focus (same as before) */}
+                  {downloadData.map((d, i) => {
+                    const x = xForTick(toTs(d.date));
+                    const y = yFor(d.sum);
+                    return (
+                      <g key={`hit-${d.date}`} onMouseEnter={() => setHoverIdx(i)}>
+                        <rect x={x - 12} y={0} width={24} height={svgH} fill="transparent" />
+                        <circle cx={x} cy={y} r={hoverIdx === i ? 3 : 2} className={styles.pointSum} />
+                      </g>
+                    );
+                  })}
+
+                  {hoverIdx != null && (() => {
+                    const d = downloadData[hoverIdx];
+                    const x = xForTick(toTs(d.date));
+                    const yS = yFor(d.sum);
+                    const yI = yFor(d.ios);
+                    const yA = yFor(d.android);
+                    return (
+                      <g key="focus">
+                        <line x1={x} x2={x} y1={8} y2={svgH - 8} className={styles.focusLine} />
+                        <circle cx={x} cy={yI} r={4} className={styles.dotIos} />
+                        <circle cx={x} cy={yA} r={4} className={styles.dotAndroid} />
+                        <circle cx={x} cy={yS} r={5} className={styles.dotSum} />
+                      </g>
+                    );
+                  })()}
+                </svg>
+
+                {/* tooltip */}
+                {tip && (
+                  <div
+                    className={styles.chartTooltip}
+                    style={{
+                      left: `calc(${(tip.x / svgW) * 100}% + 8px)`,
+                      top: `${Math.max(0, tip.y - 42)}px`,
+                    }}
+                  >
+                    <div className={styles.tipDate}>{shortLabel(tip.d.date)}</div>
+                    <div className={styles.tipRow}><span className={styles.swIos} /> iOS&nbsp;<b>{tip.d.ios}</b></div>
+                    <div className={styles.tipRow}><span className={styles.swAndroid} /> Android&nbsp;<b>{tip.d.android}</b></div>
+                    <div className={styles.tipRow}><span className={styles.swSum} /> Total&nbsp;<b>{tip.d.sum}</b></div>
+                  </div>
+                )}
+              </div>
+
+              <div className={styles.statusLegend}>
+                <div className={styles.legendItem}><span className={styles.legendSwatchIos} /> iOS</div>
+                <div className={styles.legendItem}><span className={styles.legendSwatchAndroid} /> Android</div>
+                <div className={styles.legendItem}><span className={styles.legendSwatchSum} /> Total</div>
+              </div>
+
+              <div className={styles.statusSummary}>
+                <div className={styles.latestLabel}>
+                  Latest ( {shortLabel(downloadData[downloadData.length - 1].date)} )
+                </div>
+                <div className={styles.latestNumbers}>
+                  <div>iOS: <strong>{downloadData[downloadData.length - 1].ios}</strong></div>
+                  <div>Android: <strong>{downloadData[downloadData.length - 1].android}</strong></div>
+                  <div>Total: <strong>{downloadData[downloadData.length - 1].sum}</strong></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* ── Roadmap (Timeline) ───────────────────────── */}
       <section className={styles.sectionRoad}>
         <motion.div
@@ -640,129 +862,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         >
           <span className={styles.sectionKicker}>Plan</span>
           <h2 className={styles.sectionTitle}>Roadmap</h2>
-          <div style={{ marginTop: "0.75rem" }}>
-            <button
-              className={styles.statusToggle}
-              onClick={() => setShowStatus((s) => !s)}
-              aria-expanded={showStatus}
-              aria-controls="downloads-status-panel"
-            >
-              {showStatus ? "Hide status" : "View status"}
-            </button>
-          </div>
         </motion.div>
-
-        {/* ── REPLACE: downloads status panel (graph-focused) ── */}
-        <div
-          id="downloads-status-panel"
-          className={`${styles.statusPanel} ${showStatus ? styles.open : ""}`}
-          aria-hidden={!showStatus}
-        >
-          <div className={styles.statusInner}>
-          <div className={styles.chartWrapper}>
-            <div className={styles.chartBox} onMouseLeave={() => setHoverIdx(null)}>
-              <svg
-                className={styles.sparklineSvg}
-                viewBox="0 0 600 180"
-                preserveAspectRatio="none"
-                role="img"
-                aria-label="Download counts over time"
-              >
-                <defs>
-                  <linearGradient id="areaSumGrad" x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="0%" stopColor="#fbe9ec" stopOpacity="0.6" />
-                    <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
-                  </linearGradient>
-                </defs>
-
-                {/* area / lines (기존 그대로) */}
-                <path d={`${buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`} fill="url(#areaSumGrad)" className={styles.areaSum} />
-                <path d={buildPathFromPoints(pointsIos, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineIos} />
-                <path d={buildPathFromPoints(pointsAndroid, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineAndroid} />
-                <path d={buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2.5} className={styles.lineSum} />
-
-                {/* x-axis ticks (기존 그대로) */}
-                {downloadData.map((d) => {
-                  const x = xForTick(toTs(d.date));
-                  return (
-                    <g key={d.date}>
-                      <line x1={x} x2={x} y1={svgH - 6} y2={svgH - 2} stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
-                      <text x={x} y={svgH + 16} textAnchor="middle" fontSize="11" fill="#666" className={styles.xLabel}>
-                        {shortLabel(d.date)}
-                      </text>
-                    </g>
-                  );
-                })}
-
-                {/* [ADD] 각 날짜에 투명 히트타겟 (hover 인덱스 설정) */}
-                {downloadData.map((d, i) => {
-                  const x = xForTick(toTs(d.date));
-                  const y = yFor(d.sum);
-                  return (
-                    <g key={`hit-${d.date}`} onMouseEnter={() => setHoverIdx(i)}>
-                      {/* 넓은 히트존: 이동/포커스 안정성 */}
-                      <rect x={x - 12} y={0} width={24} height={svgH} fill="transparent" />
-                      {/* 작게 보이는 포인트(시각적 힌트) */}
-                      <circle cx={x} cy={y} r={hoverIdx === i ? 3 : 2} className={styles.pointSum} />
-                    </g>
-                  );
-                })}
-
-                {/* [ADD] 포커스 라인/포인트 */}
-                {hoverIdx != null && (() => {
-                  const d = downloadData[hoverIdx];
-                  const x = xForTick(toTs(d.date));
-                  const yS = yFor(d.sum);
-                  const yI = yFor(d.ios);
-                  const yA = yFor(d.android);
-                  return (
-                    <g key="focus">
-                      {/* 가이드 라인 */}
-                      <line x1={x} x2={x} y1={8} y2={svgH - 8} className={styles.focusLine} />
-                      {/* 포인트들 */}
-                      <circle cx={x} cy={yI} r={4} className={styles.dotIos} />
-                      <circle cx={x} cy={yA} r={4} className={styles.dotAndroid} />
-                      <circle cx={x} cy={yS} r={5} className={styles.dotSum} />
-                    </g>
-                  );
-                })()}
-              </svg>
-
-              {/* [ADD] HTML 툴팁 (절대 배치) */}
-              {tip && (
-                <div
-                  className={styles.chartTooltip}
-                  style={{
-                    left: `calc(${(tip.x / svgW) * 100}% + 8px)`,
-                    top: `${Math.max(0, tip.y - 42)}px`,
-                  }}
-                >
-                  <div className={styles.tipDate}>{shortLabel(tip.d.date)}</div>
-                  <div className={styles.tipRow}><span className={styles.swIos} /> iOS&nbsp;<b>{tip.d.ios}</b></div>
-                  <div className={styles.tipRow}><span className={styles.swAndroid} /> Android&nbsp;<b>{tip.d.android}</b></div>
-                  <div className={styles.tipRow}><span className={styles.swSum} /> Total&nbsp;<b>{tip.d.sum}</b></div>
-                </div>
-              )}
-            </div>
-
-            <div className={styles.statusLegend}>
-              <div className={styles.legendItem}><span className={styles.legendSwatchIos} /> iOS</div>
-              <div className={styles.legendItem}><span className={styles.legendSwatchAndroid} /> Android</div>
-              <div className={styles.legendItem}><span className={styles.legendSwatchSum} /> Total</div>
-            </div>
-          </div>
-
-            {/* summary line with latest totals */}
-            <div className={styles.statusSummary}>
-              <div className={styles.latestLabel}>Latest ( {shortLabel(downloadData[downloadData.length - 1].date)} )</div>
-              <div className={styles.latestNumbers}>
-                <div>iOS: <strong>{downloadData[downloadData.length - 1].ios}</strong></div>
-                <div>Android: <strong>{downloadData[downloadData.length - 1].android}</strong></div>
-                <div>Total: <strong>{downloadData[downloadData.length - 1].sum}</strong></div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div className={styles.roadmapWrap}>
           <div className={styles.roadmapTrack} aria-hidden />
