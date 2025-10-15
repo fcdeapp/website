@@ -259,7 +259,7 @@ export default function About() {
             <h1 className={styles.heroTitle}>
               {(() => {
                 const titleWords = ["Learn", "where", "life", "happens"];
-                const emphasize = new Set(["life"]);
+                const emphasize = new Set(["life", "happens"]);
                 return titleWords.map((w, i) => {
                   const key = w.replace(/[^a-z]/gi, "") + i;
                   const isAlt = emphasize.has(w.toLowerCase());
