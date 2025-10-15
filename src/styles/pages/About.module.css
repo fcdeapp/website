@@ -722,85 +722,79 @@
   z-index: 1;
 }
 
+/* 시네마틱 배경 레이어: 무채색 톤으로 정리 */
 .fxMesh {
-  /* 복수의 라디얼로 메쉬 느낌 */
   background:
-    radial-gradient(800px 800px at 20% 8%, rgba(242,84,45,.12), transparent 55%),
-    radial-gradient(900px 900px at 82% 6%, rgba(216,49,91,.12), transparent 55%),
-    radial-gradient(900px 900px at 50% 95%, rgba(10,16,69,.12), transparent 55%);
-  filter: blur(20px) saturate(1.1);
+    radial-gradient(800px 800px at 20% 8%,  rgba(140,145,155,0.14), transparent 55%),
+    radial-gradient(900px 900px at 82% 6%,  rgba(200,205,215,0.12), transparent 55%),
+    radial-gradient(900px 900px at 50% 95%, rgba(30,34,42,0.10),  transparent 55%);
+  filter: blur(20px) saturate(1.0);
   mix-blend-mode: screen;
 }
 
 .fxBeams {
-  /* 스크린 블렌드 빛줄기 */
-  background:
-    conic-gradient(from 250deg at 50% -10%, rgba(255,255,255,.35), rgba(255,255,255,0) 40%);
-  filter: blur(60px) saturate(1.15);
+  /* 흰색 하이라이트만 남긴 빔 */
+  background: conic-gradient(from 250deg at 50% -10%, rgba(255,255,255,0.35), rgba(255,255,255,0) 40%);
+  filter: blur(60px) saturate(1.0);
   mix-blend-mode: screen;
   opacity: .85;
 }
 
 .fxGrid {
-  /* 아주 미세한 그리드 + 느린 이동 */
   background-image:
-    linear-gradient(to right, rgba(10,16,69,.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(10,16,69,.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0,0,0,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.06) 1px, transparent 1px);
   background-size: 40px 40px, 40px 40px;
   mask: radial-gradient(70% 60% at 50% 25%, #000, transparent 80%);
   animation: gridMove 28s linear infinite;
 }
-@keyframes gridMove {
-  from { background-position: 0 0, 0 0; }
-  to   { background-position: 120px 0, 0 120px; }
-}
 
-/* ====== Orb: bright glass + halo (replace previous .orb) ====== */
+/* 오브 본체: 그레이 글라스 + 아주 연한 포인트 링 */
 .orb {
   position: absolute;
   z-index: 4;
-  /* 화면에 맞춰 오른쪽에 위치 (데스크탑), 모바일에서 자동 정렬 */
   right: clamp(4%, 6vw, 8%);
   bottom: clamp(-30px, -4vh, 2vh);
   width: min(44vmin, 420px);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
   transform-origin: center;
   will-change: transform, filter;
   transition: transform .35s ease, filter .35s ease;
-  /* layered bright gradients to make a glassy, warm orb */
   background:
-    radial-gradient(40% 40% at 30% 30%, rgba(255,255,255,0.95), rgba(255,255,255,0.06) 55%),
+    /* 상단 하이라이트 */
+    radial-gradient(40% 40% at 30% 30%, rgba(255,255,255,0.95), rgba(255,255,255,0.08) 55%),
+    /* 바디 톤 (무채색) */
     radial-gradient(60% 60% at 60% 65%,
-      rgba(255,244,220,0.94) 0%,
-      rgba(255,210,160,0.86) 20%,
-      rgba(242,84,45,0.55) 45%,
-      rgba(216,49,91,0.32) 70%,
-      rgba(10,16,69,0.06) 100%);
+      rgba(245,246,248,0.92) 0%,
+      rgba(230,232,236,0.85) 25%,
+      rgba(205,208,215,0.55) 55%,
+      rgba(160,165,175,0.28) 75%,
+      rgba(120,125,135,0.12) 100%),
+    /* 아주 연한 포인트 링 */
+    radial-gradient(80% 80% at 55% 70%, rgba(216,49,91,0.08), transparent 60%);
   box-shadow:
-    0 36px 110px rgba(242,84,45,0.18),
-    0 10px 36px rgba(10,16,69,0.08),
-    inset 0 -22px 56px rgba(255,220,180,0.09);
+    0 36px 110px rgba(0,0,0,0.14),
+    0 10px 36px rgba(0,0,0,0.10),
+    inset 0 -22px 56px rgba(255,255,255,0.10);
   border: 1px solid rgba(255,255,255,0.5);
-  backdrop-filter: blur(6px) saturate(1.08);
+  backdrop-filter: blur(6px) saturate(1.0);
   mix-blend-mode: normal;
 }
 
-/* glossy hemisphere highlight for realism */
 .orb::before {
   content: "";
   position: absolute;
   inset: 6% 6% 56% 6%;
   border-radius: 50%;
-  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.28));
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.20));
   filter: blur(8px);
   transform: translateY(-6%);
   opacity: 0.96;
   pointer-events: none;
 }
 
-/* thin reflective band across surface */
 .orb::after {
   content: "";
   position: absolute;
@@ -809,14 +803,14 @@
   width: 160%;
   height: 24%;
   border-radius: 50%;
-  background: linear-gradient(90deg, rgba(255,255,255,0.14), rgba(255,255,255,0.02));
+  background: linear-gradient(90deg, rgba(255,255,255,0.16), rgba(255,255,255,0.02));
   transform: rotate(-18deg);
   filter: blur(6px);
   pointer-events: none;
   mix-blend-mode: screen;
 }
 
-/* soft halo glow behind orb (add this element in JSX or keep as absolutely positioned pseudo if preferred) */
+/* 오브 글로우: 무채색 기반 + 포인트 아주 연하게 */
 .orbGlow {
   position: absolute;
   z-index: 3;
@@ -826,11 +820,12 @@
   height: calc(min(44vmin, 420px) * 1.28);
   border-radius: 50%;
   background: radial-gradient(closest-side,
-    rgba(255,230,200,0.18),
-    rgba(242,84,45,0.12),
-    rgba(216,49,91,0.06),
-    transparent 52%);
-  filter: blur(28px) saturate(1.05);
+    rgba(255,255,255,0.18),
+    rgba(180,185,195,0.12),
+    rgba(120,125,135,0.06),
+    transparent 52%),
+    radial-gradient(closest-side, rgba(216,49,91,0.08), transparent 60%); /* 포인트 */
+  filter: blur(28px) saturate(1.0);
   pointer-events: none;
   transform: translateZ(-1px);
 }
