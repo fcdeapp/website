@@ -113,7 +113,7 @@
   .downloadGrid{
     width:100%;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-template-columns: 1fr;
     gap:1rem;
   }
   
@@ -1276,15 +1276,6 @@
   }
 }
 
-/* 다운로드 카드 그룹 가운데 정렬(아이템 위치 보정) */
-.profileRoot .downloadGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
-  align-items: start;
-}
-
-/* ----- 추가: 모바일/반응형 보정 ----- */
 @media (max-width: 880px) {
   .profileHeroMeta { justify-content: center; gap: 0.6rem; }
   .profileRoot .heroAvatar { right: 1rem; bottom: 1rem; width: 64px; height: 64px; }
@@ -1892,4 +1883,15 @@
   color: #6b7280 !important;                  /* 중립 회색 */
   background: rgba(107,114,128,0.12) !important;
   border-color: rgba(107,114,128,0.22) !important;
+}
+
+/* 연하고 눈에 띄게(다른 텍스트와 구분) */
+.dNoteOutdated{
+  color:#777;          /* 더 연한 톤 */
+  opacity:.75;         /* 살짝 투명 */
+  font-style: italic;  /* 구분감 */
+  background: #faf7f8; /* 매우 연한 배경 */
+  border: 1px dashed rgba(216,49,91,.25);
+  padding: .5rem .65rem;
+  border-radius: 10px;
 }

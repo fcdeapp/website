@@ -984,7 +984,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               <h4 className={styles.dTitle}>Pitch Deck</h4>
               <span className={styles.dMeta}>PDF · English</span>
             </div>
-            <p className={styles.dDesc}>{OUTDATED_NOTE}</p>
+            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>{OUTDATED_NOTE}</p>
             <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
             <div className={styles.actions}>
               <button
@@ -1017,7 +1017,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               <h4 className={styles.dTitle}>Pitch Deck</h4>
               <span className={styles.dMeta}>PDF · Korean</span>
             </div>
-            <p className={styles.dDesc}>{OUTDATED_NOTE}</p>
+            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>{OUTDATED_NOTE}</p>
             <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
             <div className={styles.actions}>
               <button
@@ -1051,7 +1051,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               <h4 className={styles.dTitle}>Demo Video</h4>
               <span className={styles.dMeta}>MP4 · English</span>
             </div>
-            <p className={styles.dDesc}>{OUTDATED_NOTE}</p>
+            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>{OUTDATED_NOTE}</p>
             <p className={styles.dDesc}>A quick walkthrough of Abrody’s core user flow and features.</p>
             <div className={styles.actions}>
               <button
