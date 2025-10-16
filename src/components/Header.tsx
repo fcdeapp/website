@@ -147,15 +147,23 @@ export default function Header() {
         .logo-text {
           margin-left: 8px;
           font-size: 1.2rem;
-          font-weight: 400;
-          background: linear-gradient(90deg, #d8315b, #f2542d);
+          font-weight: 500;
+          letter-spacing: -0.02em;
+          background: linear-gradient(90deg, #6b7280 0%, #111827 100%);
           -webkit-background-clip: text;
+          background-clip: text;
           -webkit-text-fill-color: transparent;
-          text-decoration: underline;
-          text-decoration-color: #ffffff;
+          text-decoration: none;
+          opacity: .92;
+          text-shadow: 0 1px 12px rgba(17,24,39,0.08);
+          transition: opacity .2s ease, filter .2s ease, transform .2s ease;
         }
-
-        /* 모바일에서 텍스트 숨김 */
+        .left .logo:hover .logo-text {
+          opacity: 1;
+          filter: contrast(105%);
+          transform: translateY(-1px);
+        }
+          
         @media (max-width: 640px) {
           .logo-text {
             display: none;
@@ -208,40 +216,74 @@ export default function Header() {
         .action-buttons .signup-button,
         .action-buttons .logout-button {
           font-size: 0.9rem;
-          padding: 0.5rem 1.2rem;
-          border-radius: 20px;
-          border: 2px solid transparent;
-          cursor: pointer;
-          transition: all 0.3s ease;
+          padding: 0.5rem 1.1rem;
+          border-radius: 999px;
+          border: 1px solid rgba(17, 24, 39, 0.14);   /* 중립 윤곽 */
+          background: rgba(255,255,255,0.55);         /* 헤더의 blur와 어울리게 */
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          color: #111827;
+          box-shadow: 0 6px 16px rgba(0,0,0,0.06);
           text-decoration: none;
+          transition: transform .16s ease, box-shadow .16s ease, background .16s ease, color .16s ease, border-color .16s ease;
         }
-        .login-button {
-          color: #d8315b;
-          background: transparent;
+
+        .login-button,
+        .logout-button {
+          background: rgba(255,255,255,0.4);
+          color: #374151; /* Gray-700 */
         }
-        .login-button:hover {
-          color: #fff;
-          background: linear-gradient(90deg, #d8315b, #f2542d);
+        .login-button:hover,
+        .logout-button:hover {
+          background: rgba(255,255,255,0.75);
+          border-color: rgba(17,24,39,0.22);
+          color: #111827; /* Gray-900 */
+          transform: translateY(-1px);
+          box-shadow: 0 10px 24px rgba(0,0,0,0.10);
         }
 
         .signup-button {
-          color: #fff;
-          background: linear-gradient(90deg, #d8315b, #f2542d);
+          background: linear-gradient(180deg, rgba(243,244,246,0.9), rgba(229,231,235,0.9)); /* Gray-100→200 */
+          color: #111827;
+          border-color: rgba(17,24,39,0.12);
         }
         .signup-button:hover {
-          opacity: 0.85;
+          background: linear-gradient(180deg, rgba(229,231,235,0.95), rgba(209,213,219,0.95)); /* 살짝만 진하게 */
+          border-color: rgba(17,24,39,0.2);
+          transform: translateY(-1px);
+          box-shadow: 0 10px 24px rgba(0,0,0,0.10);
         }
 
-        .logout-button {
-          color: #d8315b;
-          background: transparent;
-        }
-        .logout-button:hover {
-          color: #fff;
-          background: linear-gradient(90deg, #d8315b, #f2542d);
+        .action-buttons .login-button:active,
+        .action-buttons .signup-button:active,
+        .action-buttons .logout-button:active {
+          transform: translateY(0);
+          box-shadow: 0 6px 16px rgba(0,0,0,0.06);
         }
 
-        /* 본문이 헤더 아래에서 시작하도록 여유 주기 */
+        @media (prefers-color-scheme: dark) {
+          .action-buttons .login-button,
+          .action-buttons .signup-button,
+          .action-buttons .logout-button {
+            background: rgba(17,17,20,0.4);
+            color: #e5e7eb; /* Gray-200 */
+            border-color: rgba(255,255,255,0.16);
+          }
+          .login-button:hover,
+          .logout-button:hover {
+            background: rgba(24,24,28,0.6);
+            color: #f3f4f6;
+            border-color: rgba(255,255,255,0.24);
+          }
+          .signup-button {
+            background: linear-gradient(180deg, rgba(31,31,36,0.8), rgba(24,24,28,0.8));
+            color: #f3f4f6;
+          }
+          .signup-button:hover {
+            background: linear-gradient(180deg, rgba(36,36,42,0.85), rgba(28,28,33,0.85));
+          }
+        }
+
         :global(body) {
           padding-top: 64px;
         }
