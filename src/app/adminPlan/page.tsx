@@ -17,11 +17,12 @@ import {
   Title,
   Tooltip,
   Legend,
+  ArcElement,
 } from "chart.js";
-import { Bar } from "react-chartjs-2";
+import { Bar, Pie } from "react-chartjs-2";
 
 // ChartJS 등록
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
 
 // 일정 인터페이스 (보조파일(supportFiles) 추가)
 export interface Schedule {
@@ -204,6 +205,50 @@ const colorMap: { [key: string]: string } = {
   } else if (viewMode === "monthly") {
     groupedSchedules = groupSchedulesByMonth();
   }
+
+  // 전체 기간: 카테고리별 합계 (tag → category 매핑 사용)
+  const getAllTimeCategoryTotals = () => {
+    const totals: { [cat: string]: number } = {};
+    schedules.forEach((s) => {
+      if (!s.amount || !s.tag) return;
+      const cat = tagCategories[s.tag] || "Miscellaneous";
+      const val = parseFloat(s.amount);
+      if (isNaN(val)) return;
+      totals[cat] = (totals[cat] || 0) + val;
+    });
+    return totals;
+  };
+
+  const allTimeCategoryTotals = getAllTimeCategoryTotals();
+
+  // 파이 차트(Donut로 바꾸고 싶으면 Pie → Doughnut) 데이터
+  const pieChartData = {
+    labels: categories,
+    datasets: [
+      {
+        data: categories.map((c) => allTimeCategoryTotals[c] || 0),
+        backgroundColor: categories.map((c) => colorMap[c]),
+        borderWidth: 1,
+        borderColor: "#fff",
+      },
+    ],
+  };
+
+  const pieOptions = {
+    responsive: true,
+    plugins: {
+      legend: { position: "right" as const },
+      tooltip: {
+        callbacks: {
+          label: (ctx: any) => {
+            const label = ctx.label || "";
+            const v = ctx.parsed || 0;
+            return `${label}: ${v.toLocaleString()} KRW`;
+          },
+        },
+      },
+    },
+  };
 
   // Analysis Mode 데이터
   const monthlyAggregates = getMonthlyAggregates();
@@ -502,6 +547,17 @@ const colorMap: { [key: string]: string } = {
                    </div>
                 </>
               )}
+
+              {/* === All-Time by Category (Pie) === */}
+              <h2 className={styles.sectionTitle}>All-Time Spend by Category</h2>
+              {categories.every((c) => (allTimeCategoryTotals[c] || 0) === 0) ? (
+                <p className={styles.noSchedule}>No category spend data available.</p>
+              ) : (
+                <div className={styles.chartContainer}>
+                  <Pie data={pieChartData} options={pieOptions} />
+                </div>
+              )}
+
             </div>
           )}
         </div>

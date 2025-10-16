@@ -878,10 +878,10 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         <div className={styles.roadmapWrap}>
           <div className={styles.roadmapTrack} aria-hidden />
           {[
-              { time: "2025 Q4", text: "AI Voice v2 · CAC ≤ ₩2,900", status: "next" },
-              { time: "2026 Q1", text: "Retention & Growth · UX experiments, onboarding A/B tests", status: "planned" },
-              { time: "2026 H1", text: "Localization & Partnerships · Pilot with schools & enterprise partners", status: "planned" },
-              { time: "2026 H2", text: "Pre-Series A · scale growth & broaden market reach", status: "planned" },
+              { time: "2025 Q4", text: "Launch paid subscriptions · Upgrade scenario-based learning", status: "next" },
+              { time: "2026 Q1", text: "Speed up image boundary segmentation", status: "planned" },
+              { time: "2026 Q2-Q3", text: "Lower CAC by 10% · Advance AI (context memory, natural voices, smarter drills)", status: "planned" },
+              { time: "2026 Q4", text: "Increase marketing budget · Polish UX", status: "planned" },
           ].map((mile, i) => (
             <motion.article
               key={mile.time}
