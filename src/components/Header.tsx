@@ -153,7 +153,8 @@ export default function Header() {
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
-          text-decoration: none;
+          text-decoration: underline;
+          text-decoration-color: #ffffff;
           opacity: .92;
           text-shadow: 0 1px 12px rgba(17,24,39,0.08);
           transition: opacity .2s ease, filter .2s ease, transform .2s ease;
