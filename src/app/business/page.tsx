@@ -234,6 +234,8 @@ export default function BusinessPage() {
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [openFeatureId, setOpenFeatureId] = useState<string | null>(null);  
 
+  const OUTDATED_NOTE =
+    "This is an older version, and the content has changed. An updated version will be uploaded soon.";
   // ============ 데이터 선언 위치 (여기에 있어야 함) ============
   const downloadData = [
     { date: "2025-06-16", ios: 16, android: 5, sum: 21 },
@@ -976,12 +978,13 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
 
         <div className={styles.downloadGrid}>
           {/* Pitch Deck Card */}
-          <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
+          <motion.article className={`${styles.dCard} ${styles.dCardDisabled}`} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
           <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Pitch Deck</h4>
               <span className={styles.dMeta}>PDF · English</span>
             </div>
+            <p className={styles.dDesc}>{OUTDATED_NOTE}</p>
             <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
             <div className={styles.actions}>
               <button
@@ -1008,12 +1011,13 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             </div>
           </motion.article>
 
-          <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
+          <motion.article className={`${styles.dCard} ${styles.dCardDisabled}`} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
           <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Pitch Deck</h4>
               <span className={styles.dMeta}>PDF · Korean</span>
             </div>
+            <p className={styles.dDesc}>{OUTDATED_NOTE}</p>
             <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
             <div className={styles.actions}>
               <button
@@ -1041,12 +1045,13 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </motion.article>
 
           {/* Demo Video Card */}
-          <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.06}}>
+          <motion.article className={`${styles.dCard} ${styles.dCardDisabled}`} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.06}}>
           <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-04</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Demo Video</h4>
               <span className={styles.dMeta}>MP4 · English</span>
             </div>
+            <p className={styles.dDesc}>{OUTDATED_NOTE}</p>
             <p className={styles.dDesc}>A quick walkthrough of Abrody’s core user flow and features.</p>
             <div className={styles.actions}>
               <button
@@ -1075,7 +1080,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
 
           {/* 1-Pager (EN) Card */}
           <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.12}}>
-          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-10-16</span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>1-Pager</h4>
               <span className={styles.dMeta}>PDF · English</span>
@@ -1083,7 +1088,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             <p className={styles.dDesc}>A one-page overview of Abrody’s mission, product, and traction.</p>
             <div className={styles.actions}>
               <a
-                href="/1-pager_EN_250825.pdf"
+                href="/1-pager_EN_251016.pdf"
                 download
                 className={`${styles.btn} ${styles.btnGhost}`}
               >

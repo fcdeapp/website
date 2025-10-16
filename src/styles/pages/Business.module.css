@@ -1869,3 +1869,27 @@
   border-radius: 12px;
 }
 
+/* 카드 전체 비활성 상태 */
+.dCardDisabled {
+  opacity: 0.55;
+  filter: grayscale(0.85) saturate(0.7);
+  pointer-events: none;             /* 내부 클릭 막기 */
+  box-shadow: 0 6px 18px rgba(17,12,43,0.04); /* hover 대비 약한 그림자 */
+}
+
+/* 비활성 버튼 룩 */
+.btnDisabled {
+  background: #f2f2f4 !important;
+  color: #9aa0a6 !important;
+  border: 1px solid rgba(17,12,43,0.08) !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Outdated 배지 (Updated 칩과 톤 다르게) */
+.dBadgeOutdated {
+  color: #6b7280 !important;                  /* 중립 회색 */
+  background: rgba(107,114,128,0.12) !important;
+  border-color: rgba(107,114,128,0.22) !important;
+}
