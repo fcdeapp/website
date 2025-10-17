@@ -1,7 +1,16 @@
 /* CEO.module.css */
 
-/* Google Fonts (Jeju Myeongjo) — 컴포넌트 Head에도 링크 있지만, CSS 단독 사용 대비 */
-@import url("https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap");
+/* ===== 제주명조: 스타일 코드(@font-face)로 로드 =====
+   - 외부 <link> / @import 사용하지 않음
+   - 사용자 환경에 폰트 미설치 시 system serif로 안전 폴백
+*/
+@font-face{
+  font-family:"Jeju Myeongjo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Jeju Myeongjo"), local("JejuMyeongjo");
+}
 
 /* ===== 기본 레이아웃 ===== */
 .wrapper{
@@ -10,25 +19,31 @@
 }
 .profileRoot img{ max-width:100%; height:auto; display:block; }
 
-/* ===== 히어로(무채색) ===== */
+/* ===== 히어로(orb + 시네마틱 fx) ===== */
 @keyframes monoShift {
   0%{ background-position: 0% 50%; }
   100%{ background-position: 120% 50%; }
 }
+
 .hero{
   position:relative;
-  padding: 9rem 1.25rem 12rem;
-  text-align:center;
-  color: #ffffff;
-  overflow:hidden;
+  isolation:isolate;
+  overflow:clip;
+  min-height: clamp(560px, 72vh, 880px);
+  padding: clamp(4rem, 10vw, 8rem) clamp(1rem, 4vw, 3rem) 5rem;
+  display: grid;
+  place-items: center;
+  perspective: 1200px;
+  color:#fff;
 }
 .heroMono{
-  /* 다크→라이트 무채색 그라데이션 */
-  background: linear-gradient(135deg, #0f1115 0%, #1b1f27 55%, #222833 100%);
+  background: radial-gradient(1200px 1200px at 50% 0%,
+              rgba(10,16,69,.06), transparent 60%),
+              linear-gradient(135deg, #0f1115 0%, #1b1f27 55%, #222833 100%);
   background-size: 200% 200%;
   animation: monoShift 16s ease-in-out infinite alternate;
 }
-/* 미세 노이즈 */
+/* noise layer */
 .heroMono::before{
   content:"";
   position:absolute; inset:0;
@@ -37,12 +52,152 @@
   opacity:.5;
   pointer-events:none;
 }
-/* 하단 컷 */
+/* bottom white cut */
 .hero::after{
   content:""; position:absolute; left:0; bottom:-1px; width:100%; height:100px;
   background:#ffffff; clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 
+/* background FX layers */
+.fxMesh,
+.fxBeams,
+.fxGrid{
+  position:absolute;
+  inset:-12% -12% -16% -12%;
+  pointer-events:none;
+  z-index:1;
+}
+.fxMesh{
+  background:
+    radial-gradient(800px 800px at 20% 8%,  rgba(140,145,155,0.14), transparent 55%),
+    radial-gradient(900px 900px at 82% 6%,  rgba(200,205,215,0.12), transparent 55%),
+    radial-gradient(900px 900px at 50% 95%, rgba(30,34,42,0.10),  transparent 55%);
+  filter: blur(20px) saturate(1.0);
+  mix-blend-mode: screen;
+}
+.fxBeams{
+  background: conic-gradient(from 250deg at 50% -10%, rgba(255,255,255,0.35), rgba(255,255,255,0) 40%);
+  filter: blur(60px) saturate(1.0);
+  mix-blend-mode: screen;
+  opacity:.85;
+}
+@keyframes gridMove { from{background-position:0 0} to{background-position:40px 40px} }
+.fxGrid{
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px;
+  mask: radial-gradient(70% 60% at 50% 25%, #000, transparent 80%);
+  animation: gridMove 28s linear infinite;
+}
+
+/* orb + halo */
+.orb{
+  position:absolute;
+  z-index:4;
+  right: clamp(4%, 6vw, 8%);
+  bottom: clamp(-30px, -4vh, 2vh);
+  width: min(44vmin, 420px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  transform-origin: center;
+  will-change: transform, filter;
+  transition: transform .35s ease, filter .35s ease;
+  background:
+    radial-gradient(40% 40% at 30% 30%, rgba(255,255,255,0.95), rgba(255,255,255,0.08) 55%),
+    radial-gradient(60% 60% at 60% 65%,
+      rgba(245,246,248,0.92) 0%,
+      rgba(230,232,236,0.85) 25%,
+      rgba(205,208,215,0.55) 55%,
+      rgba(160,165,175,0.28) 75%,
+      rgba(120,125,135,0.12) 100%),
+    radial-gradient(80% 80% at 55% 70%, rgba(216,49,91,0.08), transparent 60%);
+  box-shadow:
+    0 36px 110px rgba(0,0,0,0.14),
+    0 10px 36px rgba(0,0,0,0.10),
+    inset 0 -22px 56px rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.5);
+  backdrop-filter: blur(6px) saturate(1.0);
+  mix-blend-mode: normal;
+  animation: orbFloat 9s ease-in-out infinite;
+}
+@keyframes orbFloat {
+  0% { transform: translateY(0) rotate(0.01deg); }
+  50% { transform: translateY(-8px) rotate(0.6deg); }
+  100% { transform: translateY(0) rotate(0.01deg); }
+}
+.orb::before{
+  content:"";
+  position:absolute;
+  inset:6% 6% 56% 6%;
+  border-radius:50%;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.20));
+  filter: blur(8px);
+  transform: translateY(-6%);
+  opacity: .96;
+  pointer-events: none;
+}
+.orb::after{
+  content:"";
+  position:absolute;
+  left:-12%;
+  top:42%;
+  width:160%;
+  height:24%;
+  border-radius:50%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.16), rgba(255,255,255,0.02));
+  transform: rotate(-18deg);
+  filter: blur(6px);
+  pointer-events:none;
+  mix-blend-mode: screen;
+}
+.orbGlow{
+  position:absolute;
+  z-index:3;
+  right: calc(clamp(4%, 6vw, 8%) - 6%);
+  bottom: calc(clamp(-30px, -4vh, 2vh) + 2%);
+  width: calc(min(44vmin, 420px) * 1.28);
+  height: calc(min(44vmin, 420px) * 1.28);
+  border-radius: 50%;
+  background: radial-gradient(closest-side,
+    rgba(255,255,255,0.18),
+    rgba(180,185,195,0.12),
+    rgba(120,125,135,0.06),
+    transparent 52%),
+    radial-gradient(closest-side, rgba(216,49,91,0.08), transparent 60%);
+  filter: blur(28px) saturate(1.0);
+  pointer-events: none;
+  transform: translateZ(-1px);
+}
+
+/* hero inner + subtle dark vignette behind text */
+.heroInner{
+  position: relative;
+  z-index:5;
+  text-align:center;
+  width:100%;
+  max-width:1400px;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+  transform-style: preserve-3d;
+  will-change: transform;
+  margin-inline:auto;
+}
+.heroInner::before{
+  content:"";
+  position:absolute;
+  inset:-8% -6% -8% -6%;
+  z-index:4;
+  border-radius:18px;
+  pointer-events:none;
+  background: radial-gradient(60% 40% at 50% 28%,
+    rgba(10,16,33,0.06),
+    rgba(10,16,33,0.09) 48%,
+    rgba(255,255,255,0) 78%);
+  mix-blend-mode: multiply;
+}
+
+/* titles */
 .heroTitle{
   font-size: clamp(3rem, 6.5vw, 5rem);
   font-weight: 800;
@@ -52,14 +207,13 @@
 }
 .heroSubtitle{ margin-top:1.1rem; font-size:1.15rem; opacity:.95; }
 
-/* 섹션 키커(기본: 라이트 배경용) */
+/* 섹션 키커 */
 .sectionKicker{
   display:inline-block; margin-bottom:0.5rem; font-size:0.88rem;
   letter-spacing:.14em; text-transform:uppercase;
   color:#333; background: #f3f4f6;
   padding:.32rem .66rem; border-radius:999px; border:1px solid #e5e7eb;
 }
-/* 히어로 안에서는 밝게 뒤집기 */
 .heroMono .sectionKicker{
   color:#e9eaee; background: rgba(255,255,255,.08);
   border-color: rgba(255,255,255,.14);
@@ -76,7 +230,7 @@
   border:1px solid rgba(0,0,0,.08); font-weight:700;
 }
 
-/* 아바타(호버시 등장) */
+/* 아바타 */
 .heroAvatar{
   position:absolute; right:clamp(1rem,4vw,2rem); bottom:clamp(1.2rem,4vw,2rem);
   width:72px; height:72px; object-fit:cover; border-radius:50%;
@@ -143,7 +297,7 @@
 }
 .btnPrimary:hover{ transform: translateY(-2px); box-shadow:0 10px 22px rgba(0,0,0,.18); }
 
-/* 이미지 카드(비율 유지 중앙정렬) */
+/* 이미지 카드 */
 .imageCard{ text-align:center; }
 .imageCard img{ margin:0 auto; max-width:100%; height:auto; object-fit:contain; border-radius:12px; }
 
@@ -168,28 +322,33 @@
   padding:.45rem .8rem; border:1px solid rgba(0,0,0,.08); background:#ffffff; border-radius:999px;
   font-size:.95rem; color:#4e5562; transition:transform .16s ease, box-shadow .16s ease;
 }
-.langChip:hover{ transform: translateY(-2px); box-shadow:0 8px 18px rgba(0,0,0,.08); }
+.langChip:hover{ transform: translateY(-2px); box-shadow:0 8px 18px rgba(0,0,0,0.08); }
 
-/* ===== 리스트 (누락 방지) ===== */
+/* ===== 리스트 ===== */
 .profileList{
   max-width:56rem; margin:0 auto; padding-left:1.1rem; color:#3c4048; line-height:1.7;
 }
 .profileList li{ margin:.3rem 0; }
 
-/* ===== 제주명조 포인트 ===== */
+/* ===== 제주명조 — 중요 단어에만 사용 ===== */
 .jm{
   font-family: "Jeju Myeongjo", "Apple SD Gothic Neo", "Noto Serif KR", serif !important;
-  letter-spacing: -0.01em; font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  background:none !important;
+  color:#1f2937;
+  -webkit-text-fill-color:#1f2937;
 }
-.jmUnderline{ position:relative; }
-.jmUnderline::after{
-  content:""; position:absolute; left:8%; right:8%; bottom:-2px; height:2px; border-radius:999px;
-  background: linear-gradient(90deg, rgba(255,255,255,.6), rgba(255,255,255,0));
+.jmAccent{
+  text-underline-offset: 2px;
+  text-decoration-thickness: 0.06em;
 }
 
-/* ===== 유틸 ===== */
+/* 유틸 */
 .plainLink{ color:inherit; text-decoration:none; }
 
+/* 반응형 */
 @media (max-width: 880px){
   .heroAvatar{ width:64px; height:64px; }
 }

@@ -2,7 +2,13 @@
 
 import Head from "next/head";
 import React from "react";
-import { motion, Variants } from "framer-motion";
+import {
+  motion,
+  Variants,
+  useMotionValue,
+  useSpring,
+  useTransform,
+} from "framer-motion";
 import styles from "../../styles/pages/CEO.module.css";
 
 /* ───────── Motion variants ───────── */
@@ -32,18 +38,45 @@ const zoomIn: Variants = {
 };
 
 export default function Profile() {
+  /* ── mouse parallax for hero (orb + layers + subtle 3D tilt) ── */
+  const mx = useMotionValue(0);
+  const my = useMotionValue(0);
+  const sx = useSpring(mx, { stiffness: 120, damping: 18, mass: 0.25 });
+  const sy = useSpring(my, { stiffness: 120, damping: 18, mass: 0.25 });
+
+  // 3D tilt (deg)
+  const tiltX = useTransform(sy, (v) => v / -8);
+  const tiltY = useTransform(sx, (v) => v / 8);
+
+  // depth layers
+  const layerSlow = {
+    x: useTransform(sx, (v) => v * -0.25),
+    y: useTransform(sy, (v) => v * -0.25),
+  };
+  const layerMed = {
+    x: useTransform(sx, (v) => v * -0.5),
+    y: useTransform(sy, (v) => v * -0.5),
+  };
+  const layerFast = {
+    x: useTransform(sx, (v) => v * 0.8),
+    y: useTransform(sy, (v) => v * 0.8),
+  };
+
+  function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
+    const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
+    const relX = ((e.clientX - r.left) / r.width - 0.5) * 80; // -40~40
+    const relY = ((e.clientY - r.top) / r.height - 0.5) * 80;
+    mx.set(relX);
+    my.set(relY);
+  }
+
   return (
     <>
       <Head>
         <title>Founder | JungMin Doh</title>
         <meta name="description" content="Founder & CEO JungMin Doh’s profile" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* 제주명조 로드 */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap"
-          rel="stylesheet"
-        />
+        {/* 폰트는 CSS @font-face 로드 (링크/임포트 사용 안 함) */}
       </Head>
 
       <motion.main
@@ -52,43 +85,64 @@ export default function Profile() {
         animate="visible"
         variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
       >
-        {/* ── Hero : 무채색 배경 + 화이트 텍스트 ─────────────────────── */}
-        <section className={`${styles.hero} ${styles.heroMono}`}>
-          <motion.h1
-            className={styles.heroTitle}
-            variants={zoomIn}
-            viewport={{ once: true, amount: 0.6 }}
-          >
-            JungMin <span className={styles.jm}>Doh</span>
-          </motion.h1>
+        {/* ── Hero : orb + mesh/beams/grid + 제주명조(핵심 단어만) ─────────────────────── */}
+        <section
+          className={`${styles.hero} ${styles.heroMono}`}
+          onMouseMove={handleMouseMove}
+        >
+          {/* background FX layers */}
+          <motion.div aria-hidden className={styles.fxMesh} style={layerSlow} />
+          <motion.div aria-hidden className={styles.fxBeams} style={layerMed} />
+          <motion.div aria-hidden className={styles.fxGrid} />
 
-          <motion.p
-            className={styles.heroSubtitle}
-            variants={fadeUp}
-            custom={1}
-            viewport={{ once: true, amount: 0.6 }}
-          >
-            <span className={styles.sectionKicker} style={{ marginRight: 8 }}>
-              Founder &amp; CEO
-            </span>
-            <span className={`${styles.jm} ${styles.jmUnderline}`}>Abrody</span>
-          </motion.p>
-
+          {/* foreground (subtle 3D tilt) */}
           <motion.div
-            className={styles.profileHeroMeta}
-            variants={fadeUp}
-            custom={2}
-            viewport={{ once: true, amount: 0.6 }}
+            className={styles.heroInner}
+            style={{ rotateX: tiltX, rotateY: tiltY }}
           >
-            <a className={styles.metaChip} href="mailto:tommydoh@snu.ac.kr">
-              tommydoh@snu.ac.kr
-            </a>
-            <span className={styles.metaChip}>+82 10-6854-9906</span>
-            <span className={styles.metaChip}>
-              <span className={styles.jm}>Seocho-gu</span>, Seoul
-            </span>
+            <motion.h1
+              className={styles.heroTitle}
+              variants={zoomIn}
+              viewport={{ once: true, amount: 0.6 }}
+            >
+              JungMin{" "}
+              <span className={`${styles.jm} ${styles.jmAccent}`}>Doh</span>
+            </motion.h1>
+
+            <motion.p
+              className={styles.heroSubtitle}
+              variants={fadeUp}
+              custom={1}
+              viewport={{ once: true, amount: 0.6 }}
+            >
+              <span className={styles.sectionKicker} style={{ marginRight: 8 }}>
+                Founder &amp; CEO
+              </span>
+              {/* 중요 단어: Abrody */}
+              <span className={`${styles.jm} ${styles.jmUnderline}`}>Abrody</span>
+            </motion.p>
+
+            <motion.div
+              className={styles.profileHeroMeta}
+              variants={fadeUp}
+              custom={2}
+              viewport={{ once: true, amount: 0.6 }}
+            >
+              <a className={styles.metaChip} href="mailto:tommydoh@snu.ac.kr">
+                tommydoh@snu.ac.kr
+              </a>
+              <span className={styles.metaChip}>+82 10-6854-9906</span>
+              <span className={styles.metaChip}>
+                <span className={styles.jm}>Seocho-gu</span>, Seoul
+              </span>
+            </motion.div>
           </motion.div>
 
+          {/* glassy orb + halo */}
+          <motion.div className={styles.orb} style={layerFast} aria-hidden />
+          <div className={styles.orbGlow} aria-hidden />
+
+          {/* portrait (kept) */}
           <motion.img
             src="/about/jungmin.jpeg"
             alt="JungMin Doh"
@@ -108,12 +162,15 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Contact</span>
             <h2 className={styles.sectionTitle}>
-              Get in <span className={styles.jm}>touch</span>
+              Get in <span className={`${styles.jm} ${styles.jmAccent}`}>touch</span>
             </h2>
             <p className={styles.sectionLead}>
               Reach out anytime — I’m building{" "}
-              <span className={styles.jm}>Abrody</span> and always happy to
-              connect with founders, educators, and product people.
+              <span className={`${styles.jm} ${styles.jmAccent}`}>Abrody</span> and
+              always happy to connect with{" "}
+              <span className={styles.jm}>founders</span>,{" "}
+              <span className={styles.jm}>educators</span>, and{" "}
+              <span className={styles.jm}>product</span> people.
             </p>
           </motion.div>
 
@@ -144,7 +201,13 @@ export default function Profile() {
                 whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.12)" }}
               >
                 <h3>
-                  {c.title === "Email" ? <span className={styles.jm}>Email</span> : c.title}
+                  {c.title === "Email" ? (
+                    <>
+                      <span className={`${styles.jm} ${styles.jmAccent}`}>Email</span>
+                    </>
+                  ) : (
+                    c.title
+                  )}
                 </h3>
                 <p>{c.body}</p>
               </motion.article>
@@ -161,7 +224,9 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Education</span>
             <h2 className={styles.sectionTitle}>
-              <span className={styles.jm}>Seoul National University</span>
+              <span className={`${styles.jm} ${styles.jmAccent}`}>
+                Seoul National University
+              </span>
             </h2>
             <p className={styles.sectionLead}>
               B.Sc. in Architectural Engineering · Expected Feb 2027
@@ -178,7 +243,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Skills</span>
             <h2 className={styles.sectionTitle}>
-              Technical <span className={styles.jm}>Skills</span>
+              Technical <span className={`${styles.jm} ${styles.jmAccent}`}>Skills</span>
             </h2>
           </motion.div>
 
@@ -212,7 +277,7 @@ export default function Profile() {
                 <h3>
                   {i === 0 ? (
                     <>
-                      Frontend · <span className={styles.jm}>Mobile</span>
+                      Frontend · <span className={`${styles.jm} ${styles.jmAccent}`}>Mobile</span>
                     </>
                   ) : (
                     b.title
@@ -233,7 +298,8 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Languages</span>
             <h2 className={styles.sectionTitle}>
-              Language <span className={styles.jm}>Proficiency</span>
+              Language{" "}
+              <span className={`${styles.jm} ${styles.jmAccent}`}>Proficiency</span>
             </h2>
           </motion.div>
 
@@ -265,7 +331,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Activities</span>
             <h2 className={styles.sectionTitle}>
-              External <span className={styles.jm}>Activities</span>
+              External <span className={`${styles.jm} ${styles.jmAccent}`}>Activities</span>
             </h2>
           </motion.div>
 
@@ -289,7 +355,7 @@ export default function Profile() {
                 custom={i}
                 whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.12)" }}
               >
-                <h3>{i === 1 ? <span className={styles.jm}>{a.title}</span> : a.title}</h3>
+                <h3>{i === 1 ? <span className={`${styles.jm} ${styles.jmAccent}`}>{a.title}</span> : a.title}</h3>
                 <p>{a.body}</p>
               </motion.article>
             ))}
@@ -305,7 +371,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Courses</span>
             <h2 className={styles.sectionTitle}>
-              Courses & <span className={styles.jm}>Certifications</span>
+              Courses & <span className={`${styles.jm} ${styles.jmAccent}`}>Certifications</span>
             </h2>
           </motion.div>
 
@@ -330,7 +396,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Work</span>
             <h2 className={styles.sectionTitle}>
-              Design Report · <span className={styles.jm}>Computational</span> Thinking
+              Design Report · <span className={`${styles.jm} ${styles.jmAccent}`}>Computational</span> Thinking
             </h2>
             <p className={styles.sectionLead}>
               Basic Studio 4 — “Develop the Koshino House” team project
@@ -363,7 +429,11 @@ export default function Profile() {
               >
                 <div className={styles.dHead}>
                   <h4 className={styles.dTitle}>
-                    {i === 0 ? <span className={styles.jm}>{d.title}</span> : d.title}
+                    {i === 0 ? (
+                      <span className={`${styles.jm} ${styles.jmAccent}`}>{d.title}</span>
+                    ) : (
+                      d.title
+                    )}
                   </h4>
                   <span className={styles.dMeta}>{d.meta}</span>
                 </div>
@@ -395,7 +465,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Service</span>
             <h2 className={styles.sectionTitle}>
-              Military <span className={styles.jm}>Service</span>
+              Military <span className={`${styles.jm} ${styles.jmAccent}`}>Service</span>
             </h2>
           </motion.div>
 
@@ -423,7 +493,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Simulation</span>
             <h2 className={styles.sectionTitle}>
-              Simulation & <span className={styles.jm}>Modeling</span>
+              Simulation & <span className={`${styles.jm} ${styles.jmAccent}`}>Modeling</span>
             </h2>
             <p className={styles.sectionLead}>
               Excel VBA / 2D Modeling I — U-value & thermal-bridge analysis / Building-energy
@@ -452,7 +522,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Product</span>
             <h2 className={styles.sectionTitle}>
-              About <span className={styles.jm}>Abrody</span>
+              About <span className={`${styles.jm} ${styles.jmAccent}`}>Abrody</span>
             </h2>
             <p className={styles.sectionLead}>
               Abrody turns everyday conversations into interactive, AI-powered language
@@ -466,7 +536,7 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.4 }}
           >
             <img
-              src="/images/Ads250811EN.jpg"
+              src="/images/1-pager_EN_251016.jpg"
               alt="Abrody Advertisement"
             />
           </motion.div>
@@ -479,7 +549,7 @@ export default function Profile() {
             variants={zoomIn}
             viewport={{ once: true, amount: 0.55 }}
           >
-            Want to <span className={styles.jm}>collaborate</span> or chat?
+            Want to <span className={`${styles.jm} ${styles.jmAccent}`}>collaborate</span> or chat?
           </motion.h2>
 
           <div className={styles.ctaButtons}>
