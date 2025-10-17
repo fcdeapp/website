@@ -149,7 +149,7 @@ export default function Header() {
           font-size: 1.2rem;
           font-weight: 500;
           letter-spacing: -0.02em;
-          background: linear-gradient(90deg, #6b7280 0%, #111827 100%);
+          background: linear-gradient(90deg, #111111 0%, #111827 100%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
