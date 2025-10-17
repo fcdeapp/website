@@ -436,7 +436,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           viewport={{ once: true, amount: 0.45 }}
         >
           <span className={styles.sectionKicker}>The Why</span>
-          <h2 className={styles.sectionTitle}>Talk about what just happened.</h2>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>Talk about what just happened.</h2>
           <p className={styles.sectionLead}>
             Use the right expressions at work and in life. New words stick because they’re tied to your memory.
           </p>
@@ -627,7 +627,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           viewport={{ once: true, amount: 0.45 }}
         >
           <span className={styles.sectionKicker}>Flow</span>
-          <h2 className={styles.sectionTitle}>How It Works</h2>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>How It Works</h2>
         </motion.div>
 
         <div className={styles.flowGrid}>
@@ -680,7 +680,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           viewport={{ once: true, amount: 0.45 }}
         >
           <span className={styles.sectionKicker}>Metrics</span>
-          <h2 className={styles.sectionTitle}>Key Performance</h2>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>Key Performance</h2>
           <div style={{ marginTop: "0.75rem" }}>
             <button
               className={styles.statusToggle}
@@ -874,7 +874,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           viewport={{ once: true, amount: 0.5 }}
         >
           <span className={styles.sectionKicker}>Plan</span>
-          <h2 className={styles.sectionTitle}>Roadmap</h2>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>Roadmap</h2>
         </motion.div>
 
         <div className={styles.roadmapWrap}>
@@ -915,7 +915,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           viewport={{ once: true, amount: 0.45 }}
         >
           <span className={styles.sectionKicker}>Team</span>
-          <h2 className={styles.sectionTitle}>Team</h2>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>Team</h2>
         </motion.div>
 
         <motion.div
@@ -950,7 +950,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               whileHover={{ y: -10, boxShadow: "0 18px 28px rgba(0,0,0,0.12)" }}
             >
               <h3 className={styles.memberName}>{m.name}</h3>
-              <p className={styles.memberRole} style={{ whiteSpace: "pre-line" }}>
+              <p className={`${styles.memberRole} ${styles.jm}`} style={{ whiteSpace: "pre-line" }}>
                 {m.role}
               </p>
               <p className={styles.memberBio}>{m.bio}</p>
@@ -973,7 +973,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           viewport={{ once: true, amount: 0.45 }}
         >
           <span className={styles.sectionKicker}>Resources</span>
-          <h2 className={styles.sectionTitle}>Downloads</h2>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>Downloads</h2>
         </motion.div>
 
         <div className={styles.downloadGrid}>
