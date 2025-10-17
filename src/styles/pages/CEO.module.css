@@ -356,3 +356,14 @@
   .hero{ padding: 7.5rem 1rem 9rem; }
   .heroAvatar{ width:56px; height:56px; }
 }
+
+.heroMono .heroTitle,
+.heroMono .heroSubtitle,
+.heroMono .jm {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.heroAvatar {
+  display: none !important;
+}
