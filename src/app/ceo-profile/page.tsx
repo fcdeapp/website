@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import React from "react";
+import React, { useMemo, useState } from "react";
 import {
   motion,
   Variants,
@@ -38,6 +38,43 @@ const zoomIn: Variants = {
 };
 
 export default function Profile() {
+  const [granularity, setGranularity] = useState<"month" | "day">("month");
+
+  type TLItem = { date: string; title: string };
+  const timelineItems: TLItem[] = [
+    { date: "2025-03-21", title: "iOS & Android beta test begins" },
+    { date: "2025-04-01", title: "Office lease signed" },
+    { date: "2025-04-07", title: "FacadeConnect Co., Ltd. incorporated" },
+    { date: "2025-04-21", title: "Business registration" },
+    { date: "2025-04-21", title: "English Business Registration Certificate issued" },
+    { date: "2025-05-28", title: "iOS launch" },
+    { date: "2025-07-02", title: "Court Registry OTP issued" },
+    { date: "2025-09-08", title: "Articles of Incorporation amended" },
+    { date: "2025-09-12", title: "Court Registry OTP renewal issued" },
+  ];
+
+  function fmtMonth(d: Date) {
+    return d.toLocaleString("en-US", { month: "short", year: "numeric" }); // e.g., "Mar 2025"
+  }
+  function fmtDay(d: Date) {
+    return d.toLocaleString("en-US", { month: "short", day: "2-digit", year: "numeric" }); // "Mar 21, 2025"
+  }
+
+  const itemsSorted = useMemo(
+    () => [...timelineItems].sort((a, b) => +new Date(a.date) - +new Date(b.date)),
+    []
+  );
+
+  const groupedByMonth = useMemo(() => {
+    const m = new Map<string, TLItem[]>();
+    for (const it of itemsSorted) {
+      const key = fmtMonth(new Date(it.date));
+      if (!m.has(key)) m.set(key, []);
+      m.get(key)!.push(it);
+    }
+    return Array.from(m.entries()); // [ [ "Mar 2025", [..] ], ... ]
+  }, [itemsSorted]);
+
   /* ── mouse parallax for hero (orb + layers + subtle 3D tilt) ── */
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
@@ -151,6 +188,104 @@ export default function Profile() {
             custom={2}
             viewport={{ once: true, amount: 0.6 }}
           />
+        </section>
+
+        {/* ── Progress Timeline (place this section right ABOVE the Contact / Get in touch section) ── */}
+        <section className={`${styles.sectionAlt} ${styles.timelineSection}`}>
+          <motion.div
+            className={styles.whyHeader}
+            variants={fadeUp}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            <span className={styles.sectionKicker}>Progress</span>
+            <h2 className={styles.sectionTitle}>
+              Project <span className={`${styles.jm} ${styles.jmAccent}`}>Timeline</span>
+            </h2>
+            <p className={styles.sectionLead}>
+              A quick look at how things are moving — switch between monthly and daily views.
+            </p>
+
+            {/* Toggle */}
+            <div className={styles.timelineToggle} role="tablist" aria-label="Timeline granularity">
+              <button
+                role="tab"
+                aria-selected={granularity === "month"}
+                className={`${styles.tlTab} ${granularity === "month" ? styles.tlTabActive : ""}`}
+                onClick={() => setGranularity("month")}
+              >
+                Monthly
+              </button>
+              <button
+                role="tab"
+                aria-selected={granularity === "day"}
+                className={`${styles.tlTab} ${granularity === "day" ? styles.tlTabActive : ""}`}
+                onClick={() => setGranularity("day")}
+              >
+                Daily
+              </button>
+            </div>
+          </motion.div>
+
+          {/* Monthly view */}
+          {granularity === "month" && (
+            <motion.div
+              className={styles.tlGrid}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
+            >
+              {groupedByMonth.map(([month, items], i) => (
+                <motion.article key={month} className={styles.tlCard} variants={fadeUp} custom={i}>
+                  <div className={styles.tlCardHead}>
+                    <h3 className={styles.tlMonth}>{month}</h3>
+                    <span className={styles.tlCount}>{items.length} update{items.length > 1 ? "s" : ""}</span>
+                  </div>
+                  <ul className={styles.tlList}>
+                    {items.map((it) => {
+                      const d = new Date(it.date);
+                      return (
+                        <li key={it.date + it.title} className={styles.tlListItem}>
+                          <span className={styles.tlDot} aria-hidden />
+                          <span className={styles.tlListDate}>{fmtDay(d)}</span>
+                          <span className={styles.tlListTitle}>{it.title}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </motion.article>
+              ))}
+            </motion.div>
+          )}
+
+          {/* Daily view */}
+          {granularity === "day" && (
+            <motion.ol
+              className={styles.tlDaily}
+              variants={fadeUp}
+              viewport={{ once: true, amount: 0.4 }}
+            >
+              {itemsSorted.map((it, i) => {
+                const d = new Date(it.date);
+                return (
+                  <li key={it.date + i} className={styles.tlRow}>
+                    <div className={styles.tlWhen}>
+                      <span className={styles.tlWhenDay}>{d.toLocaleString("en-US", { day: "2-digit" })}</span>
+                      <span className={styles.tlWhenMon}>{d.toLocaleString("en-US", { month: "short" })}</span>
+                      <span className={styles.tlWhenYear}>{d.getFullYear()}</span>
+                    </div>
+                    <div className={styles.tlLine} aria-hidden />
+                    <div className={styles.tlBody}>
+                      <h4 className={styles.tlTitle}>{it.title}</h4>
+                      <time className={styles.tlTime} dateTime={it.date}>
+                        {fmtDay(d)}
+                      </time>
+                    </div>
+                  </li>
+                );
+              })}
+            </motion.ol>
+          )}
         </section>
 
         {/* ── Contact ─────────────────────────────────────────────────── */}
@@ -549,7 +684,7 @@ export default function Profile() {
             variants={zoomIn}
             viewport={{ once: true, amount: 0.55 }}
           >
-            Want to <span className={`${styles.jm} ${styles.jmAccent}`}>collaborate</span> or chat?
+            Want to collaborate or chat?
           </motion.h2>
 
           <div className={styles.ctaButtons}>
