@@ -3,40 +3,27 @@
 /* Google Fonts (Jeju Myeongjo) — 컴포넌트 Head에도 링크 있지만, CSS 단독 사용 대비 */
 @import url("https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap");
 
-:root{
-  --bg:#0f1115;
-  --ink:#111217;
-  --ink-2:#1a1c22;
-  --ink-3:#22252d;
-  --fg:#ffffff;
-  --muted:#a0a3ab;
-  --chip:#f5f6f8;
-  --brand:#d8315b; /* 기존 브랜드 포인트 컬러는 버튼 등에만 소량 사용 */
-}
-
 /* ===== 기본 레이아웃 ===== */
 .wrapper{
   display:flex; flex-direction:column; gap:8rem;
-  background:#fff; color:#2b2e35; line-height:1.65;
+  background:#ffffff; color:#2b2e35; line-height:1.65;
 }
-.profileRoot img{ max-width:100%; height:auto;}
+.profileRoot img{ max-width:100%; height:auto; display:block; }
 
 /* ===== 히어로(무채색) ===== */
 @keyframes monoShift {
   0%{ background-position: 0% 50%; }
   100%{ background-position: 120% 50%; }
 }
-/* 공통 히어로 컨테이너 */
 .hero{
   position:relative;
   padding: 9rem 1.25rem 12rem;
   text-align:center;
-  color: #fff;
+  color: #ffffff;
   overflow:hidden;
 }
-/* 모노크롬 변형 */
 .heroMono{
-  /* 아주 약한 다크→라이트 그라데이션(무채색) */
+  /* 다크→라이트 무채색 그라데이션 */
   background: linear-gradient(135deg, #0f1115 0%, #1b1f27 55%, #222833 100%);
   background-size: 200% 200%;
   animation: monoShift 16s ease-in-out infinite alternate;
@@ -50,11 +37,10 @@
   opacity:.5;
   pointer-events:none;
 }
-
-/* 아래 컷 */
+/* 하단 컷 */
 .hero::after{
   content:""; position:absolute; left:0; bottom:-1px; width:100%; height:100px;
-  background:#fff; clip-path: polygon(0 0, 100% 100%, 0 100%);
+  background:#ffffff; clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
 
 .heroTitle{
@@ -64,15 +50,19 @@
   line-height:1.12;
   text-shadow: 0 8px 30px rgba(0,0,0,.35);
 }
+.heroSubtitle{ margin-top:1.1rem; font-size:1.15rem; opacity:.95; }
 
-.heroSubtitle{
-  margin-top:1.1rem; font-size:1.15rem; opacity:.95;
-}
+/* 섹션 키커(기본: 라이트 배경용) */
 .sectionKicker{
-  display:inline-block; margin-bottom:0.4rem; font-size:0.86rem;
+  display:inline-block; margin-bottom:0.5rem; font-size:0.88rem;
   letter-spacing:.14em; text-transform:uppercase;
+  color:#333; background: #f3f4f6;
+  padding:.32rem .66rem; border-radius:999px; border:1px solid #e5e7eb;
+}
+/* 히어로 안에서는 밝게 뒤집기 */
+.heroMono .sectionKicker{
   color:#e9eaee; background: rgba(255,255,255,.08);
-  padding:.28rem .64rem; border-radius:999px; border:1px solid rgba(255,255,255,.14);
+  border-color: rgba(255,255,255,.14);
 }
 
 /* 메타 칩 — 다크 바탕 위 */
@@ -101,9 +91,10 @@
 
 /* ===== 섹션 공통 ===== */
 .section, .sectionAlt{
-  max-width:78rem; margin:0 auto; padding:6rem 1.25rem; display:flex; flex-direction:column; gap:3rem;
+  max-width:78rem; margin:0 auto; padding:6rem 1.25rem;
+  display:flex; flex-direction:column; gap:3rem;
 }
-.sectionAlt{ background:#fff; }
+.sectionAlt{ background:#ffffff; }
 .whyHeader{ text-align:center; max-width:56rem; margin:0 auto .25rem; }
 .sectionTitle{
   font-size:2.2rem; font-weight:300; color:#2f333b; letter-spacing:-0.01em;
@@ -118,7 +109,7 @@
   gap:1.25rem; max-width:78rem; margin:0 auto;
 }
 .diffCard{
-  background:#fff; border:1px solid rgba(0,0,0,.06); border-radius:18px;
+  background:#ffffff; border:1px solid rgba(0,0,0,.06); border-radius:18px;
   padding:1.35rem; box-shadow:0 8px 22px rgba(0,0,0,.06);
   transition: transform .22s ease, box-shadow .22s ease;
 }
@@ -129,7 +120,7 @@
 /* 다운로드 카드 */
 .downloadGrid{ width:100%; display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:1rem; }
 .dCard{
-  position:relative; padding:1.2rem; border-radius:18px; background:#fff;
+  position:relative; padding:1.2rem; border-radius:18px; background:#ffffff;
   border:1px solid rgba(0,0,0,.06); box-shadow:0 10px 28px rgba(0,0,0,.06);
   transition: transform .22s ease, box-shadow .22s ease;
 }
@@ -139,31 +130,32 @@
 .dMeta{ font-size:.82rem; color:#111; background:#eee; padding:.12rem .5rem; border-radius:999px; }
 .dDesc{ margin:.6rem 0 .9rem; color:#525865; font-size:.96rem; }
 .actions{ display:flex; gap:.5rem; flex-wrap:wrap; }
+
 .btn{
-  appearance:none; border:1px solid rgba(0,0,0,.08); background:#fff; color:#222;
+  appearance:none; border:1px solid rgba(0,0,0,.08); background:#ffffff; color:#222222;
   border-radius:12px; padding:.7rem 1rem; text-decoration:none; font-weight:700;
   box-shadow:0 6px 16px rgba(0,0,0,.06);
   transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
 }
 .btnGhost:hover{ transform: translateY(-2px); }
 .btnPrimary{
-  background:#111; color:#fff; border-color:#111;
+  background:#111111; color:#ffffff; border-color:#111111;
 }
 .btnPrimary:hover{ transform: translateY(-2px); box-shadow:0 10px 22px rgba(0,0,0,.18); }
 
 /* 이미지 카드(비율 유지 중앙정렬) */
 .imageCard{ text-align:center; }
-.imageCard img{ display:block; margin:0 auto; max-width:100%; height:auto; object-fit:contain; }
+.imageCard img{ margin:0 auto; max-width:100%; height:auto; object-fit:contain; border-radius:12px; }
 
 /* ===== CTA ===== */
 .ctaSection{
   display:flex; flex-direction:column; align-items:center; gap:2.6rem;
-  background:#111317; color:#fff; padding:7rem 1.25rem; text-align:center;
+  background:#111317; color:#ffffff; padding:7rem 1.25rem; text-align:center;
 }
 .ctaTitle{ font-size:2.1rem; font-weight:400; }
 .ctaButtons{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
 .ctaButton{
-  background:#fff; color:#111; padding:1rem 2.2rem; border-radius:24px; font-weight:700; text-decoration:none;
+  background:#ffffff; color:#111111; padding:1rem 2.2rem; border-radius:24px; font-weight:700; text-decoration:none;
   box-shadow:0 10px 22px rgba(0,0,0,.18);
   transition: transform .2s ease, box-shadow .2s ease;
 }
@@ -173,21 +165,23 @@
 /* ===== 언어/칩 ===== */
 .langBar{ display:flex; gap:.5rem; flex-wrap:wrap; justify-content:center; }
 .langChip{
-  padding:.45rem .8rem; border:1px solid rgba(0,0,0,.08); background:#fff; border-radius:999px;
+  padding:.45rem .8rem; border:1px solid rgba(0,0,0,.08); background:#ffffff; border-radius:999px;
   font-size:.95rem; color:#4e5562; transition:transform .16s ease, box-shadow .16s ease;
 }
 .langChip:hover{ transform: translateY(-2px); box-shadow:0 8px 18px rgba(0,0,0,.08); }
 
-/* ===== 제주명조 트렌드 믹스 ===== */
+/* ===== 리스트 (누락 방지) ===== */
+.profileList{
+  max-width:56rem; margin:0 auto; padding-left:1.1rem; color:#3c4048; line-height:1.7;
+}
+.profileList li{ margin:.3rem 0; }
+
+/* ===== 제주명조 포인트 ===== */
 .jm{
   font-family: "Jeju Myeongjo", "Apple SD Gothic Neo", "Noto Serif KR", serif !important;
-  letter-spacing: -0.01em;
-  font-weight: 400;
+  letter-spacing: -0.01em; font-weight: 400;
 }
-/* 명조 강조용 얇은 밑줄 */
-.jmUnderline{
-  position:relative;
-}
+.jmUnderline{ position:relative; }
 .jmUnderline::after{
   content:""; position:absolute; left:8%; right:8%; bottom:-2px; height:2px; border-radius:999px;
   background: linear-gradient(90deg, rgba(255,255,255,.6), rgba(255,255,255,0));

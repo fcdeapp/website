@@ -39,7 +39,7 @@ export default function Profile() {
         <meta name="description" content="Founder & CEO JungMin Doh’s profile" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        {/* 제주명조 로드 (안전하게 Head에도 포함) */}
+        {/* 제주명조 로드 */}
         <link
           href="https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap"
           rel="stylesheet"
@@ -141,10 +141,7 @@ export default function Profile() {
                 className={styles.diffCard}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 18px 40px rgba(0,0,0,0.12)",
-                }}
+                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.12)" }}
               >
                 <h3>
                   {c.title === "Email" ? <span className={styles.jm}>Email</span> : c.title}
@@ -210,10 +207,7 @@ export default function Profile() {
                 className={styles.diffCard}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 18px 40px rgba(0,0,0,0.12)",
-                }}
+                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.12)" }}
               >
                 <h3>
                   {i === 0 ? (
@@ -293,14 +287,9 @@ export default function Profile() {
                 className={styles.diffCard}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 18px 40px rgba(0,0,0,0.12)",
-                }}
+                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.12)" }}
               >
-                <h3>
-                  {i === 1 ? <span className={styles.jm}>{a.title}</span> : a.title}
-                </h3>
+                <h3>{i === 1 ? <span className={styles.jm}>{a.title}</span> : a.title}</h3>
                 <p>{a.body}</p>
               </motion.article>
             ))}
@@ -479,7 +468,6 @@ export default function Profile() {
             <img
               src="/images/Ads250811EN.jpg"
               alt="Abrody Advertisement"
-              style={{ borderRadius: 12 }}
             />
           </motion.div>
         </section>
