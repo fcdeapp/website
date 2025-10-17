@@ -435,13 +435,17 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           variants={fadeUp}
           viewport={{ once: true, amount: 0.45 }}
         >
-          <span className={styles.sectionKicker}>The Why</span>
-          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>Talk about what just happened.</h2>
+          <span className={styles.sectionKicker}>Why Abrody</span>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>
+            Learn from the moments you actually live.
+          </h2>
           <p className={styles.sectionLead}>
-            Use the right expressions at work and in life. New words stick because they’re tied to your memory.
+            Most lessons feel unrelated, too long, and don’t transfer to real conversations.
+            Abrody flips it: start from your photo, then practice lines you can use today.
           </p>
         </motion.div>
 
+        {/* 3 value pillars — light / stick / transfer */}
         <motion.div
           className={styles.cards3D}
           initial="hidden"
@@ -451,19 +455,19 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         >
           {[
             {
-              icon: "📷",
-              title: "Start with a photo",
-              body: "Snap what you see. Your photos become your vocabulary."
+              title: "Make it light",
+              body:
+                "1–3 minute practices you can finish anywhere. No friction.",
             },
             {
-              icon: "🗣️",
-              title: "Talk about what just happened",
-              body: "Get natural, situation-ready phrases for your day."
+              title: "Make it stick",
+              body:
+                "Your image becomes a clean sticker-style word card you’ll remember.",
             },
             {
-              icon: "✨",
-              title: "No filler — only what matters",
-              body: "Focus on words you’ll actually use. Remember because it’s yours."
+              title: "Make it transfer",
+              body:
+                "Place-based lines that show up in the next café, meeting, or train ride.",
             },
           ].map((card, i) => (
             <motion.article
@@ -471,16 +475,19 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               className={`${styles.card} ${styles.statCard}`}
               variants={fadeUp}
               custom={i}
-              whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.12)" }}
+              whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.10)" }}
             >
-              <span className={styles.statBadge} aria-hidden>{card.icon}</span>
-              <h3>{card.title}</h3>
-              <p>{card.body}</p>
+              {/* neutral badge dot */}
+              <span className={`${styles.statBadge} ${styles.neutralBadge}`} aria-hidden>
+                ●
+              </span>
+              <h3 className={styles.neutralTitle}>{card.title}</h3>
+              <p className={styles.neutralBody}>{card.body}</p>
             </motion.article>
           ))}
         </motion.div>
 
-        {/* ── Differentiators ───────────────────────────── */}
+        {/* ── Differentiators (no bright emoji, neutral chips) ───────────────── */}
         <section className={styles.sectionAlt}>
           <motion.h2
             className={styles.sectionTitle}
@@ -490,24 +497,14 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             What makes Abrody different
           </motion.h2>
 
-          <motion.div
-            className={styles.flipHeader}
-            variants={fadeUp}
-            custom={2}
-            viewport={{ once: true, amount: 0.5 }}
-          >
-            <span className={styles.flowLabel}>Platform first</span>
-            <span className={styles.flipSwitch} aria-hidden>⇄</span>
-            <span className={`${styles.flowLabel} ${styles.active}`}>User first</span>
-          </motion.div>
-
           <motion.p
             className={styles.diffLead}
             variants={fadeUp}
             custom={1}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <strong>You bring the <span className={stylesB.jm}>context</span>. We bring the <span className={stylesB.jm}>practice</span>.</strong> No filler — only what matters to you. Your photos become your vocabulary.
+            You bring the <span className={styles.jm}>context</span>. We bring focused
+            <span className={styles.jm}> practice</span>. Start with your world — not a generic unit.
           </motion.p>
 
           <motion.div
@@ -519,46 +516,52 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           >
             {[
               {
-                id: "docAudio",
-                title: "Speak from your moments",
-                value: "Turn key lines into natural speech.",
-                feature: "We turn your photos and daily moments into short listen-and-repeat drills.",
-                badge: "🔊"
+                id: "imageVocab",
+                title: "Image Vocab",
+                value: "Auto-cuts edges into clean stickers.",
+                feature:
+                  "Turn your photo into crisp, shareable vocabulary cards that anchor memory.",
+                badge: "●",
               },
               {
-                id: "fileChat",
-                title: "Practice real situations",
-                value: "Chat through what just happened.",
-                feature: "Use your photos and notes to generate realistic back-and-forth practice.",
-                badge: "💬"
+                id: "situationPractice",
+                title: "Situation Practice",
+                value: "Place-based lines that fit the moment.",
+                feature:
+                  "Upload a place photo (café, station, office) and get lines, voice drills, and a quick quiz for that scene.",
+                badge: "●",
               },
               {
-                id: "photoCTL",
-                title: "Start with a photo",
-                value: "Get the exact phrases you need today.",
-                feature: "One photo creates a tailored scenario with expressions that fit your day.",
-                badge: "📷"
+                id: "quickDrills",
+                title: "Light, daily drills",
+                value: "1–3 minute sessions you’ll actually do.",
+                feature:
+                  "Short listen-and-repeat + micro-quizzes keep momentum without burnout.",
+                badge: "●",
               },
               {
-                id: "quiz",
-                title: "Fix only your weak spots",
-                value: "Target what you miss most.",
-                feature: "We collect mistakes and frequent patterns to quiz you on your personal gaps.",
-                badge: "🧩"
+                id: "notesMemory",
+                title: "Auto notes & review",
+                value: "Everything you say is saved.",
+                feature:
+                  "Every line is captured as a note, so review is always one tap away.",
+                badge: "●",
               },
               {
-                id: "voice",
-                title: "Natural voices, real-life feel",
-                value: "Listen and speak like a real chat.",
-                feature: "Human-like AI voices make practice immersive and memorable.",
-                badge: "🎙"
+                id: "voices",
+                title: "Natural voices",
+                value: "Human-like audio for real feel.",
+                feature:
+                  "Speak with voices that sound like real people — not a textbook.",
+                badge: "●",
               },
               {
-                id: "transfer",
-                title: "Learning that shows up today",
-                value: "Use it in your next conversation.",
-                feature: "Because we start from your own context, results transfer to real life.",
-                badge: "🎯"
+                id: "transferNow",
+                title: "Use it today",
+                value: "From phone to life fast.",
+                feature:
+                  "Because practice starts from your moments, results transfer to your next conversation.",
+                badge: "●",
               },
             ].map((f, i) => (
               <FeatureCard
@@ -574,50 +577,22 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </motion.div>
 
           <motion.p
-            className={styles.diffNoteClickable}
+            className={styles.diffNote}
             variants={fadeLeft}
             custom={3}
             viewport={{ once: true, amount: 0.4 }}
-            onClick={() => setQuoteOpen(v => !v)}
-            onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setQuoteOpen(v => !v); }}
-            role="button"
-            tabIndex={0}
-            aria-expanded={quoteOpen}
           >
-            With a flow that ties your photos and experiences to practice, learning blends into <em>today</em> and shows up in your next <strong><span className={stylesB.jm}>conversation</span></strong>.
+            Abrody is designed to be contextual, light, and transferable — built from your photos
+            and places, not from abstract units.
           </motion.p>
         </section>
 
-        <AnimatePresence>
-          {quoteOpen && (
-            <motion.blockquote
-              className={styles.quoteReveal}
-              variants={quoteVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              role="region"
-              aria-live="polite"
-            >
-              <div className={styles.quoteBody}>
-                CTL-based learning improves speaking clarity by
-                <span className={styles.gradientNumber}>54%</span>
-                and fluency by
-                <span className={styles.gradientNumber}>65%</span>.
-                Abrody automates this approach across the entire experience.
-              </div>
-
-              <motion.cite className={styles.quoteCiteReveal} variants={citeVariants}>
-                — Yusyac et al., 2021
-              </motion.cite>
-            </motion.blockquote>
-          )}
-        </AnimatePresence>
+        {/* optional quote removed (kept UI calmer & monochrome) */}
       </section>
 
-    <div className={styles.waveSplit} />
+      <div className={styles.waveSplit} />
 
-    {openFeatureId === "quiz" && <ChainQuizzesSection />}
+      {openFeatureId === "quiz" && <ChainQuizzesSection />}
 
       {/* ── How It Works ───────────────────────────────── */}
       <section className={styles.sectionAlt}>
@@ -635,20 +610,23 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             {
               kicker: "Snap",
               img: "/images/flow-9.png",
-              title: "Start with a photo",
-              desc: "Take a quick photo. Your own moment sets the topic and vocabulary.",
+              title: "Upload Image → Sticker Wordbook",
+              desc:
+                "Abrody auto-cuts irregular edges to make a clean, memorable word sticker.",
             },
             {
-              kicker: "Talk",
+              kicker: "Practice",
               img: "/images/flow-10.png",
-              title: "Talk about what just happened",
-              desc: "Get natural expressions for the exact situation — travel, friends, campus, or work.",
+              title: "Place-based Lines & Quick Drills",
+              desc:
+                "Upload a place photo (café, station, office) and practice lines built for that scene.",
             },
             {
-              kicker: "Remember",
+              kicker: "Review",
               img: "/images/flow-11.png",
-              title: "Make it stick with a photo",
-              desc: "Your moments quickly become your words.",
+              title: "Notes Save Automatically",
+              desc:
+                "Every line you speak is saved as a note, so review is always ready.",
             },
           ].map((step, i) => (
             <motion.div
@@ -657,14 +635,13 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               variants={zoomIn}
               custom={i}
             >
-              {/* 작은 칩 — 이미지(또는 제목) 위에 표시 */}
-              <span className={styles.stepKicker} aria-hidden>
+              <span className={`${styles.stepKicker} ${styles.neutralChip}`} aria-hidden>
                 {step.kicker}
               </span>
 
               <img src={step.img} alt={step.title} />
-              <h3>{step.title}</h3>
-              <p>{step.desc}</p>
+              <h3 className={styles.neutralTitle}>{step.title}</h3>
+              <p className={styles.neutralBody}>{step.desc}</p>
             </motion.div>
           ))}
         </div>

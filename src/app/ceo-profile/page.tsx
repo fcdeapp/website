@@ -133,7 +133,7 @@ export default function Profile() {
               </a>
               <span className={styles.metaChip}>+82 10-6854-9906</span>
               <span className={styles.metaChip}>
-                <span className={styles.jm}>Seocho-gu</span>, Seoul
+                Seocho-gu, Seoul
               </span>
             </motion.div>
           </motion.div>
