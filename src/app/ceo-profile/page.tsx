@@ -3,7 +3,7 @@
 import Head from "next/head";
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import styles from "../../styles/pages/Business.module.css";
+import styles from "../../styles/pages/CEO.module.css";
 
 /* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
@@ -36,29 +36,30 @@ export default function Profile() {
     <>
       <Head>
         <title>Founder | JungMin Doh</title>
-        <meta
-          name="description"
-          content="Founder & CEO JungMin Doh’s profile"
-        />
+        <meta name="description" content="Founder & CEO JungMin Doh’s profile" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        {/* 제주명조 로드 (안전하게 Head에도 포함) */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Jeju+Myeongjo&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
-      {/* profileRoot로 이미지 축소/비율 유지 규칙을 스코프 */}
       <motion.main
         className={`${styles.wrapper} ${styles.profileRoot}`}
         initial="hidden"
         animate="visible"
         variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
       >
-        {/* ── Hero : 밝은 배경 + 어두운 텍스트 ───────────────────────── */}
-        <section className={`${styles.hero} ${styles.heroLight}`}>
-          <div className={styles.starfield} />
+        {/* ── Hero : 무채색 배경 + 화이트 텍스트 ─────────────────────── */}
+        <section className={`${styles.hero} ${styles.heroMono}`}>
           <motion.h1
             className={styles.heroTitle}
             variants={zoomIn}
             viewport={{ once: true, amount: 0.6 }}
           >
-            JungMin Doh
+            JungMin <span className={styles.jm}>Doh</span>
           </motion.h1>
 
           <motion.p
@@ -70,19 +71,22 @@ export default function Profile() {
             <span className={styles.sectionKicker} style={{ marginRight: 8 }}>
               Founder &amp; CEO
             </span>
-            <span className={styles.brandGradient}>Abrody</span>
+            <span className={`${styles.jm} ${styles.jmUnderline}`}>Abrody</span>
           </motion.p>
 
-          {/* 히어로 메타 칩 + 아바타(더 작게) */}
           <motion.div
             className={styles.profileHeroMeta}
             variants={fadeUp}
             custom={2}
             viewport={{ once: true, amount: 0.6 }}
           >
-            <span className={styles.metaChip}>tommydoh@snu.ac.kr</span>
+            <a className={styles.metaChip} href="mailto:tommydoh@snu.ac.kr">
+              tommydoh@snu.ac.kr
+            </a>
             <span className={styles.metaChip}>+82 10-6854-9906</span>
-            <span className={styles.metaChip}>Seocho-gu, Seoul</span>
+            <span className={styles.metaChip}>
+              <span className={styles.jm}>Seocho-gu</span>, Seoul
+            </span>
           </motion.div>
 
           <motion.img
@@ -103,9 +107,12 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <span className={styles.sectionKicker}>Contact</span>
-            <h2 className={styles.sectionTitle}>Get in touch</h2>
+            <h2 className={styles.sectionTitle}>
+              Get in <span className={styles.jm}>touch</span>
+            </h2>
             <p className={styles.sectionLead}>
-              Reach out anytime — I’m building Abrody and always happy to
+              Reach out anytime — I’m building{" "}
+              <span className={styles.jm}>Abrody</span> and always happy to
               connect with founders, educators, and product people.
             </p>
           </motion.div>
@@ -120,7 +127,11 @@ export default function Profile() {
             {[
               {
                 title: "Email",
-                body: <a className={styles.plainLink} href="mailto:tommydoh@snu.ac.kr">tommydoh@snu.ac.kr</a>,
+                body: (
+                  <a className={styles.plainLink} href="mailto:tommydoh@snu.ac.kr">
+                    tommydoh@snu.ac.kr
+                  </a>
+                ),
               },
               { title: "Phone", body: <>+82 10-6854-9906</> },
               { title: "Location", body: <>Seocho-gu, Seoul</> },
@@ -132,10 +143,12 @@ export default function Profile() {
                 custom={i}
                 whileHover={{
                   y: -6,
-                  boxShadow: "0 18px 40px rgba(17,12,43,0.12)",
+                  boxShadow: "0 18px 40px rgba(0,0,0,0.12)",
                 }}
               >
-                <h3>{c.title}</h3>
+                <h3>
+                  {c.title === "Email" ? <span className={styles.jm}>Email</span> : c.title}
+                </h3>
                 <p>{c.body}</p>
               </motion.article>
             ))}
@@ -150,7 +163,9 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <span className={styles.sectionKicker}>Education</span>
-            <h2 className={styles.sectionTitle}>Seoul National University</h2>
+            <h2 className={styles.sectionTitle}>
+              <span className={styles.jm}>Seoul National University</span>
+            </h2>
             <p className={styles.sectionLead}>
               B.Sc. in Architectural Engineering · Expected Feb 2027
             </p>
@@ -165,7 +180,9 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <span className={styles.sectionKicker}>Skills</span>
-            <h2 className={styles.sectionTitle}>Technical Skills</h2>
+            <h2 className={styles.sectionTitle}>
+              Technical <span className={styles.jm}>Skills</span>
+            </h2>
           </motion.div>
 
           <motion.div
@@ -195,10 +212,18 @@ export default function Profile() {
                 custom={i}
                 whileHover={{
                   y: -6,
-                  boxShadow: "0 18px 40px rgba(17,12,43,0.12)",
+                  boxShadow: "0 18px 40px rgba(0,0,0,0.12)",
                 }}
               >
-                <h3>{b.title}</h3>
+                <h3>
+                  {i === 0 ? (
+                    <>
+                      Frontend · <span className={styles.jm}>Mobile</span>
+                    </>
+                  ) : (
+                    b.title
+                  )}
+                </h3>
                 <p>{b.body}</p>
               </motion.article>
             ))}
@@ -213,7 +238,9 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <span className={styles.sectionKicker}>Languages</span>
-            <h2 className={styles.sectionTitle}>Language Proficiency</h2>
+            <h2 className={styles.sectionTitle}>
+              Language <span className={styles.jm}>Proficiency</span>
+            </h2>
           </motion.div>
 
           <motion.div
@@ -243,7 +270,9 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <span className={styles.sectionKicker}>Activities</span>
-            <h2 className={styles.sectionTitle}>External Activities</h2>
+            <h2 className={styles.sectionTitle}>
+              External <span className={styles.jm}>Activities</span>
+            </h2>
           </motion.div>
 
           <motion.div
@@ -266,10 +295,12 @@ export default function Profile() {
                 custom={i}
                 whileHover={{
                   y: -6,
-                  boxShadow: "0 18px 40px rgba(17,12,43,0.12)",
+                  boxShadow: "0 18px 40px rgba(0,0,0,0.12)",
                 }}
               >
-                <h3>{a.title}</h3>
+                <h3>
+                  {i === 1 ? <span className={styles.jm}>{a.title}</span> : a.title}
+                </h3>
                 <p>{a.body}</p>
               </motion.article>
             ))}
@@ -284,7 +315,9 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <span className={styles.sectionKicker}>Courses</span>
-            <h2 className={styles.sectionTitle}>Courses & Certifications</h2>
+            <h2 className={styles.sectionTitle}>
+              Courses & <span className={styles.jm}>Certifications</span>
+            </h2>
           </motion.div>
 
           <motion.ul
@@ -308,7 +341,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Work</span>
             <h2 className={styles.sectionTitle}>
-              Design Report · Computational Thinking
+              Design Report · <span className={styles.jm}>Computational</span> Thinking
             </h2>
             <p className={styles.sectionLead}>
               Basic Studio 4 — “Develop the Koshino House” team project
@@ -340,7 +373,9 @@ export default function Profile() {
                 viewport={{ once: true, amount: 0.3 }}
               >
                 <div className={styles.dHead}>
-                  <h4 className={styles.dTitle}>{d.title}</h4>
+                  <h4 className={styles.dTitle}>
+                    {i === 0 ? <span className={styles.jm}>{d.title}</span> : d.title}
+                  </h4>
                   <span className={styles.dMeta}>{d.meta}</span>
                 </div>
                 <p className={styles.dDesc}>{d.desc}</p>
@@ -353,11 +388,7 @@ export default function Profile() {
                   >
                     Open
                   </a>
-                  <a
-                    href={d.href}
-                    download
-                    className={`${styles.btn} ${styles.btnPrimary}`}
-                  >
+                  <a href={d.href} download className={`${styles.btn} ${styles.btnPrimary}`}>
                     Download
                   </a>
                 </div>
@@ -374,7 +405,9 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <span className={styles.sectionKicker}>Service</span>
-            <h2 className={styles.sectionTitle}>Military Service</h2>
+            <h2 className={styles.sectionTitle}>
+              Military <span className={styles.jm}>Service</span>
+            </h2>
           </motion.div>
 
           <motion.article
@@ -385,14 +418,14 @@ export default function Profile() {
             <h3>Republic of Korea Army · Bridge Company (Bailey bridge)</h3>
             <p>Jul 2023 – Jan 2025</p>
             <p style={{ marginTop: ".4rem" }}>
-              Participated in Bailey-bridge assembly & routine training. Received
-              a <strong>Division Commander’s Commendation</strong> for a startup
-              idea during service.
+              Participated in Bailey-bridge assembly & routine training. Received a{" "}
+              <strong>Division Commander’s Commendation</strong> for a startup idea during
+              service.
             </p>
           </motion.article>
         </section>
 
-        {/* ── Simulation & Modeling (이미지 더 작게, 비율 유지) ───────── */}
+        {/* ── Simulation & Modeling ──────────────────────────────────── */}
         <section className={styles.section}>
           <motion.div
             className={styles.whyHeader}
@@ -400,10 +433,12 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <span className={styles.sectionKicker}>Simulation</span>
-            <h2 className={styles.sectionTitle}>Simulation & Modeling</h2>
+            <h2 className={styles.sectionTitle}>
+              Simulation & <span className={styles.jm}>Modeling</span>
+            </h2>
             <p className={styles.sectionLead}>
-              Excel VBA / 2D Modeling I — U-value & thermal-bridge analysis /
-              Building-energy simulation
+              Excel VBA / 2D Modeling I — U-value & thermal-bridge analysis / Building-energy
+              simulation
             </p>
           </motion.div>
 
@@ -419,7 +454,7 @@ export default function Profile() {
           </motion.div>
         </section>
 
-        {/* ── About Abrody (광고 이미지 더 작게) ─────────────────────── */}
+        {/* ── About Abrody ───────────────────────────────────────────── */}
         <section className={styles.sectionAlt}>
           <motion.div
             className={styles.whyHeader}
@@ -427,23 +462,24 @@ export default function Profile() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <span className={styles.sectionKicker}>Product</span>
-            <h2 className={styles.sectionTitle}>About Abrody</h2>
+            <h2 className={styles.sectionTitle}>
+              About <span className={styles.jm}>Abrody</span>
+            </h2>
             <p className={styles.sectionLead}>
-              Abrody turns everyday conversations into interactive, AI-powered
-              language quizzes—so you learn vocabulary and expressions that
-              truly matter to you.
+              Abrody turns everyday conversations into interactive, AI-powered language
+              quizzes—so you learn vocabulary and expressions that truly matter to you.
             </p>
           </motion.div>
 
           <motion.div
-            className={styles.adBlock}
+            className={styles.imageCard}
             variants={fadeLeft}
             viewport={{ once: true, amount: 0.4 }}
           >
             <img
               src="/images/Ads250811EN.jpg"
               alt="Abrody Advertisement"
-              className={styles.adBlockImage}
+              style={{ borderRadius: 12 }}
             />
           </motion.div>
         </section>
@@ -455,7 +491,7 @@ export default function Profile() {
             variants={zoomIn}
             viewport={{ once: true, amount: 0.55 }}
           >
-            Want to collaborate or chat?
+            Want to <span className={styles.jm}>collaborate</span> or chat?
           </motion.h2>
 
           <div className={styles.ctaButtons}>
