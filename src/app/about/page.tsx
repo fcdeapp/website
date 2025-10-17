@@ -314,192 +314,167 @@ export default function About() {
           <div className={styles.orbGlow} aria-hidden />
         </section>
 
-        {/* ── Why Abrody Exists ───────────────────────────── */}
-        <section id="why" className={stylesB.section}>
-          <motion.div
-            className={stylesB.whyHeader}
+      {/* ── Why Abrody Exists ───────────────────────────── */}
+      <section id="why" className={stylesB.section}>
+        <motion.div
+          className={stylesB.whyHeader}
+          variants={fadeUp}
+          viewport={{ once: true, amount: 0.45 }}
+        >
+          <span className={stylesB.sectionKicker}>Why Abrody</span>
+          <h2 className={`${stylesB.sectionTitle} ${stylesB.jm}`}>
+            Learn from the moments you actually live.
+          </h2>
+          <p className={stylesB.sectionLead}>
+            Most lessons feel unrelated, too long, and don’t transfer to real conversations.
+            Abrody flips it: start from your photo, then practice lines you can use today.
+          </p>
+        </motion.div>
+
+        {/* 3 value pillars — light / stick / transfer */}
+        <motion.div
+          className={stylesB.cards3D}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+        >
+          {[
+            {
+              title: "Make it light",
+              body:
+                "1–3 minute practices you can finish anywhere. No friction.",
+            },
+            {
+              title: "Make it stick",
+              body:
+                "Your image becomes a clean sticker-style word card you’ll remember.",
+            },
+            {
+              title: "Make it transfer",
+              body:
+                "Place-based lines that show up in the next café, meeting, or train ride.",
+            },
+          ].map((card, i) => (
+            <motion.article
+              key={card.title}
+              className={`${stylesB.card} ${stylesB.statCard}`}
+              variants={fadeUp}
+              custom={i}
+              whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.10)" }}
+            >
+              {/* neutral badge dot */}
+              <span className={`${stylesB.statBadge} ${stylesB.neutralBadge}`} aria-hidden>
+                ●
+              </span>
+              <h3 className={stylesB.neutralTitle}>{card.title}</h3>
+              <p className={stylesB.neutralBody}>{card.body}</p>
+            </motion.article>
+          ))}
+        </motion.div>
+
+        {/* ── Differentiators (no bright emoji, neutral chips) ───────────────── */}
+        <section className={stylesB.sectionAlt}>
+          <motion.h2
+            className={stylesB.sectionTitle}
             variants={fadeUp}
             viewport={{ once: true, amount: 0.45 }}
           >
-            <span className={stylesB.sectionKicker}>The Problem</span>
-            <h2 className={stylesB.sectionTitle}>Talk about what just happened.</h2>
-            <p className={stylesB.sectionLead}>
-            Use the right expressions at work and in life. New words stick because they’re tied to your memory.
-            </p>
-          </motion.div>
+            What makes Abrody different
+          </motion.h2>
+
+          <motion.p
+            className={stylesB.diffLead}
+            variants={fadeUp}
+            custom={1}
+            viewport={{ once: true, amount: 0.5 }}
+          >
+            You bring the <span className={stylesB.jm}>context</span>. We bring focused
+            <span className={stylesB.jm}> practice</span>. Start with your world — not a generic unit.
+          </motion.p>
 
           <motion.div
-            className={stylesB.cards3D}
+            className={stylesB.diffGrid}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+            variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
           >
             {[
               {
-                icon: "📸",
-                title: "Start with a photo",
-                body: "Snap what you see. Your own moments set the topic."
+                id: "imageVocab",
+                title: "Image Vocab",
+                value: "Auto-cuts edges into clean stickers.",
+                feature:
+                  "Turn your photo into crisp, shareable vocabulary cards that anchor memory.",
+                badge: "●",
               },
               {
-                icon: "🗣️",
-                title: "Talk about what just happened",
-                body: "Get the exact phrases for the situation you’re in."
+                id: "situationPractice",
+                title: "Situation Practice",
+                value: "Place-based lines that fit the moment.",
+                feature:
+                  "Upload a place photo (café, station, office) and get lines, voice drills, and a quick quiz for that scene.",
+                badge: "●",
               },
               {
-                icon: "🧠",
-                title: "Remember because it’s yours",
-                body: "New words stick when they’re tied to your memory. No filler — only what matters to you."
+                id: "quickDrills",
+                title: "Light, daily drills",
+                value: "1–3 minute sessions you’ll actually do.",
+                feature:
+                  "Short listen-and-repeat + micro-quizzes keep momentum without burnout.",
+                badge: "●",
               },
-            ].map((card, i) => (
-              <motion.article
-                key={card.title}
-                className={`${stylesB.card} ${stylesB.statCard}`}
-                variants={fadeUp}
-                custom={i}
-                whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.12)" }}
-              >
-                <span className={stylesB.statBadge} aria-hidden>{card.icon}</span>
-                <h3>{card.title}</h3>
-                <p>{card.body}</p>
-              </motion.article>
+              {
+                id: "notesMemory",
+                title: "Auto notes & review",
+                value: "Everything you say is saved.",
+                feature:
+                  "Every line is captured as a note, so review is always one tap away.",
+                badge: "●",
+              },
+              {
+                id: "voices",
+                title: "Natural voices",
+                value: "Human-like audio for real feel.",
+                feature:
+                  "Speak with voices that sound like real people — not a textbook.",
+                badge: "●",
+              },
+              {
+                id: "transferNow",
+                title: "Use it today",
+                value: "From phone to life fast.",
+                feature:
+                  "Because practice starts from your moments, results transfer to your next conversation.",
+                badge: "●",
+              },
+            ].map((f, i) => (
+              <FeatureCard
+                key={f.id}
+                item={f}
+                idx={i}
+                onFeatureOpen={(id) => setOpenFeatureId(id)}
+                onFeatureClose={(id) => {
+                  setOpenFeatureId((prev) => (prev === id ? null : prev));
+                }}
+              />
             ))}
           </motion.div>
 
-          {/* ── Differentiators ───────────────────────────── */}
-          <section className={stylesB.sectionAlt}>
-            <motion.h2
-              className={stylesB.sectionTitle}
-              variants={fadeUp}
-              viewport={{ once: true, amount: 0.45 }}
-            >
-              What makes Abrody different
-            </motion.h2>
-
-            <motion.div
-              className={stylesB.flipHeader}
-              variants={fadeUp}
-              custom={2}
-              viewport={{ once: true, amount: 0.5 }}
-            >
-              <span className={stylesB.flowLabel}>Platform first</span>
-              <span className={stylesB.flipSwitch} aria-hidden>⇄</span>
-              <span className={`${stylesB.flowLabel} ${stylesB.active}`}>User first</span>
-            </motion.div>
-
-            <motion.p
-              className={stylesB.diffLead}
-              variants={fadeUp}
-              custom={1}
-              viewport={{ once: true, amount: 0.5 }}
-            >
-              <strong>You bring the context. We bring the practice.</strong> No filler — only what matters to you. Your photos and files turn into phrases you can use today.
-            </motion.p> 
-
-            <motion.div
-              className={stylesB.diffGrid}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
-            >
-              {[
-                {
-                  id: "docAudio",
-                  title: "Say it out loud from your day",
-                  value: "Speak key lines for what just happened.",
-                  feature: "We turn your photos & moments into short listening drills.",
-                  badge: "🔊"
-                },
-                {
-                  id: "fileChat",
-                  title: "Practice real situations from your life",
-                  value: "Chat through the situation you’re in.",
-                  feature: "Use your photos and notes to generate realistic back-and-forth practice.",
-                  badge: "💬"
-                },
-                {
-                  id: "photoCTL",
-                  title: "Start with a photo",
-                  value: "Snap a moment; get the exact phrases you need.",
-                  feature: "One photo generates a tailored learning scenario and expressions for the moment.",
-                  badge: "📷"
-                },
-                {
-                  id: "quiz",
-                  title: "Fix only your weak spots",
-                  value: "Target and correct the expressions you miss most.",
-                  feature: "We automatically collect mistakes and frequent patterns to quiz you on your personal gaps.",
-                  badge: "🧩"
-                },
-                {
-                  id: "voice",
-                  title: "Natural voices that feel like real life",
-                  value: "Immersive practice that speeds up your speaking.",
-                  feature: "Human-like AI voices make listening and speaking practice feel real.",
-                  badge: "🎙"
-                },
-                {
-                  id: "transfer",
-                  title: "Learning that shows up in your day",
-                  value: "What you learn appears in your next conversation.",
-                  feature: "Because practice starts from your moment, it transfers to real life.",
-                  badge: "🎯"
-                },
-              ].map((f, i) => (
-                <FeatureCard
-                  key={f.id}
-                  item={f}
-                  idx={i}
-                  onFeatureOpen={(id) => setOpenFeatureId(id)}
-                  onFeatureClose={(id) => {
-                    setOpenFeatureId((prev) => (prev === id ? null : prev));
-                  }}
-                />
-              ))}
-            </motion.div>
-
-            <motion.p
-              className={stylesB.diffNoteClickable}
-              variants={fadeLeft}
-              custom={3}
-              viewport={{ once: true, amount: 0.4 }}
-              onClick={() => setQuoteOpen(v => !v)}
-              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setQuoteOpen(v => !v); }}
-              role="button"
-              tabIndex={0}
-              aria-expanded={quoteOpen}
-            >
-              With a CTL philosophy that connects work and learning seamlessly, learning blends into <em>today’s tasks</em> and results are proven <strong>on the job</strong>. 
-            </motion.p>
-          </section>
-
-          <AnimatePresence>
-            {quoteOpen && (
-              <motion.blockquote
-                className={stylesB.quoteReveal}
-                variants={quoteVariants}
-                initial="hidden"
-                animate="visible"
-                exit="exit"
-                role="region"
-                aria-live="polite"
-              >
-                <div className={stylesB.quoteBody}>
-                  CTL-based learning improves speaking clarity by
-                  <span className={stylesB.gradientNumber}>54%</span>
-                  and fluency by
-                  <span className={stylesB.gradientNumber}>65%</span>.
-                  Abrody automates this approach across the entire experience.
-                </div>
-
-                <motion.cite className={stylesB.quoteCiteReveal} variants={citeVariants}>
-                  — Yusyac et al., 2021
-                </motion.cite>
-              </motion.blockquote>
-            )}
-          </AnimatePresence>
+          <motion.p
+            className={stylesB.diffNote}
+            variants={fadeLeft}
+            custom={3}
+            viewport={{ once: true, amount: 0.4 }}
+          >
+            Abrody is designed to be contextual, light, and transferable — built from your photos
+            and places, not from abstract units.
+          </motion.p>
         </section>
+
+        {/* optional quote removed (kept UI calmer & monochrome) */}
+      </section>
 
       <div className={stylesB.waveSplit} />
 
@@ -513,7 +488,7 @@ export default function About() {
           viewport={{ once: true, amount: 0.45 }}
         >
           <span className={stylesB.sectionKicker}>Flow</span>
-          <h2 className={stylesB.sectionTitle}>How It Works</h2>
+          <h2 className={`${stylesB.sectionTitle} ${stylesB.jm}`}>How It Works</h2>
         </motion.div>
 
         <div className={stylesB.flowGrid}>
@@ -521,20 +496,23 @@ export default function About() {
             {
               kicker: "Snap",
               img: "/images/flow-9.png",
-              title: "Start with a photo",
-              desc: "Take a quick photo. Your own moment sets the topic and vocabulary.",
+              title: "Upload Image → Sticker Wordbook",
+              desc:
+                "Abrody auto-cuts irregular edges to make a clean, memorable word sticker.",
             },
             {
-              kicker: "Talk",
+              kicker: "Practice",
               img: "/images/flow-10.png",
-              title: "Talk about what just happened",
-              desc: "Get natural expressions for the exact situation — travel, friends, campus, or work.",
+              title: "Place-based Lines & Quick Drills",
+              desc:
+                "Upload a place photo (café, station, office) and practice lines built for that scene.",
             },
             {
-              kicker: "Remember",
+              kicker: "Review",
               img: "/images/flow-11.png",
-              title: "Make it stick with a photo",
-              desc: "Your moments quickly become your words.",
+              title: "Notes Save Automatically",
+              desc:
+                "Every line you speak is saved as a note, so review is always ready.",
             },
           ].map((step, i) => (
             <motion.div
@@ -543,14 +521,13 @@ export default function About() {
               variants={zoomIn}
               custom={i}
             >
-              {/* 작은 칩 — 이미지(또는 제목) 위에 표시 */}
-              <span className={stylesB.stepKicker} aria-hidden>
+              <span className={`${stylesB.stepKicker} ${stylesB.neutralChip}`} aria-hidden>
                 {step.kicker}
               </span>
 
               <img src={step.img} alt={step.title} />
-              <h3>{step.title}</h3>
-              <p>{step.desc}</p>
+              <h3 className={stylesB.neutralTitle}>{step.title}</h3>
+              <p className={stylesB.neutralBody}>{step.desc}</p>
             </motion.div>
           ))}
         </div>
