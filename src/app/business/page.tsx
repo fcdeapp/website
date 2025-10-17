@@ -391,7 +391,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </h1>
 
           <motion.p className={stylesB.heroLead} variants={wordReveal} custom={1}>
-            Your moments become language you’ll remember and use. Start with a photo. Finish with words that fit your day.
+            Your moments become language you’ll remember and use. Start with a <span className={stylesB.jm}>photo</span>. Finish with <span className={stylesB.jm}>words</span> that fit your day.
           </motion.p>
 
           {/* CTA / scroll hint */}
@@ -507,7 +507,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             custom={1}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <strong>You bring the context. We bring the practice.</strong> No filler — only what matters to you. Your photos become your vocabulary.
+            <strong>You bring the <span className={stylesB.jm}>context</span>. We bring the <span className={stylesB.jm}>practice</span>.</strong> No filler — only what matters to you. Your photos become your vocabulary.
           </motion.p>
 
           <motion.div
@@ -584,7 +584,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             tabIndex={0}
             aria-expanded={quoteOpen}
           >
-            With a flow that ties your photos and experiences to practice, learning blends into <em>today</em> and shows up in your next <strong>conversation</strong>.
+            With a flow that ties your photos and experiences to practice, learning blends into <em>today</em> and shows up in your next <strong><span className={stylesB.jm}>conversation</span></strong>.
           </motion.p>
         </section>
 
@@ -932,8 +932,8 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               bio: `“I build products that feel like a natural extension of your day — blending tech, design, and genuine human moments to make learning stick.”`,
             },
             {
-              name: "Taeyeon Kim",
-              role: "Executive\nCFO",
+              name: "Taeyeon Kim (prospective)",
+              role: "Executive\nCFO (prospective)",
               bio: `“I’m here to turn insight into impact — using data and strategy to grow our community sustainably and meaningfully.”`,
             },
             {

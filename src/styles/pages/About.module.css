@@ -635,12 +635,9 @@
 /* 단어 기본 스타일(기존) */
 .word { display:inline-block; white-space:pre; }
 
-/* 🔽 강조 단어: 제주명조 + 이탤릭 + 무채색 단색으로 덮어쓰기 */
 .wordAlt {
   font-family: "Jeju Myeongjo", serif;
   font-style: italic;
-
-  /* 부모의 그라데이션을 끊고 단색 적용 */
   background: none !important;
   color: #1f2937;                 /* 진회색 */
   -webkit-text-fill-color: #1f2937; /* 사파리 대응 */
@@ -654,68 +651,39 @@
   justify-content: center;
 }
 
-/* ===== Hero CTA (softer, trendy, fits page) ===== */
-.primaryCta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: .45rem;
+/* ===== Hero CTA (muted monochrome) ===== */
+.primaryCta{
+  display:inline-flex; align-items:center; justify-content:center; gap:.45rem;
+  padding:.85rem 1.15rem; border-radius:14px;
 
-  padding: 0.9rem 1.25rem;
-  border-radius: 14px;
+  /* 무채색 글라스톤 */
+  background: rgba(255,255,255,0.52);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
 
-  /* 은은한 글라스톤 */
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  /* 텍스트도 무채색으로 낮춤 */
+  color:#3b3f45;
+  font-weight:600; text-decoration:none;
 
-  /* 브랜드 색은 텍스트로만 살짝 */
-  color: #d8315b;
-  font-weight: 700;
-  text-decoration: none;
-
-  /* 아주 연한 테두리 + 낮은 그림자 */
-  border: 1px solid rgba(216, 49, 91, 0.18);
-  box-shadow: 0 6px 16px rgba(17, 12, 43, 0.06);
-
-  transition:
-    background .25s ease,
-    border-color .25s ease,
-    box-shadow .25s ease,
-    color .25s ease;
+  /* 연한 테두리 + 아주 낮은 그림자 */
+  border:1px solid rgba(0,0,0,0.12);
+  box-shadow:0 6px 16px rgba(0,0,0,0.05);
+  transition: background .25s ease, border-color .25s ease, box-shadow .25s ease, color .25s ease;
 }
-
-/* hover: 살짝 더 또렷해지게만 */
-.primaryCta:hover {
-  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.75));
-  border-color: rgba(216, 49, 91, 0.28);
-  box-shadow: 0 10px 24px rgba(17, 12, 43, 0.10);
+.primaryCta:hover{
+  background: rgba(255,255,255,0.72);
+  border-color: rgba(0,0,0,0.16);
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
 }
+.primaryCta:active{ background: rgba(255,255,255,0.64); }
+.primaryCta:focus-visible{ outline:2px solid rgba(0,0,0,0.18); outline-offset:3px; }
 
-/* active: 눌림감 */
-.primaryCta:active {
-  background: rgba(255,255,255,0.7);
-  box-shadow: 0 6px 16px rgba(17,12,43,0.08);
-}
-
-/* 접근성: 키보드 포커스 */
-.primaryCta:focus-visible {
-  outline: 3px solid rgba(216,49,91,0.22);
-  outline-offset: 3px;
-}
-
-/* 다크 모드 대비(있다면): 배경을 조금 더 어둡게 */
-@media (prefers-color-scheme: dark) {
-  .primaryCta {
-    background: rgba(255,255,255,0.1);
-    color: #ffd0dc; /* 과하지 않은 핑크 톤 */
-    border-color: rgba(255,255,255,0.18);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+@media (prefers-color-scheme: dark){
+  .primaryCta{
+    background: rgba(255,255,255,0.08);
+    color:#e5e7eb;
+    border-color: rgba(255,255,255,0.14);
   }
-  .primaryCta:hover {
-    background: rgba(255,255,255,0.16);
-    border-color: rgba(255,255,255,0.28);
-  }
+  .primaryCta:hover{ background: rgba(255,255,255,0.12); }
 }
 
 .scrollHintBig {
