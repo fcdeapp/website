@@ -40,7 +40,13 @@ const zoomIn: Variants = {
 export default function Profile() {
   const [granularity, setGranularity] = useState<"month" | "day">("month");
 
-  type TLItem = { date: string; title: string };
+  type TLItem = {
+    date: string;                  // ISO (YYYY-MM-DD)
+    title: string;                 // 메인 텍스트
+    note?: string;                 // 서브(세부 설명) - 선택
+    kind?: "milestone" | "release" // 스타일 구분을 위한 타입
+  };
+
   const timelineItems: TLItem[] = [
     { date: "2025-03-21", title: "iOS & Android beta test begins" },
     { date: "2025-04-01", title: "Office lease signed" },
@@ -53,6 +59,21 @@ export default function Profile() {
     { date: "2025-09-12", title: "Court Registry OTP renewal issued" },
   ];
 
+  // ── Release notes (in English, subtle style) ─────────────────
+  const releaseNotes: TLItem[] = [
+    { date: "2025-10-13", title: "v1.2.7 — UI refresh; bug fixes", note: "Partial UI revamp and stability fixes.", kind: "release" },
+    { date: "2025-10-03", title: "v1.2.6 — Contextual examples from images", note: "Generates situation-based example expressions after uploading an image.", kind: "release" },
+    { date: "2025-09-25", title: "v1.2.5 — UI improvements; bug fixes", note: "Polish and reliability updates.", kind: "release" },
+    { date: "2025-09-15", title: "v1.2.4 — Image Vocabulary", note: "Upload an image to surface related word tags; select one to auto-cut a neat irregular-boundary sticker.", kind: "release" },
+    { date: "2025-09-03", title: "v1.2.3 — Calendar upgrades", note: "Feature and performance improvements to the Calendar page.", kind: "release" },
+    { date: "2025-08-30", title: "v1.2.2 — Learn via text input", note: "Personalized learning from typed text.", kind: "release" },
+    { date: "2025-08-25", title: "v1.2.1 — AI voice; auto-play highlights", note: "Introduces AI voice; auto-play for summaries and key vocabulary.", kind: "release" },
+    { date: "2025-08-23", title: "v1.2.0 — Learn from PDFs + UI refresh", note: "Study from papers/proposals/slides via OCR+AI; logo & UI renewal.", kind: "release" },
+    { date: "2025-08-16", title: "v1.1.10 — Chain Quizzes", note: "Learn in an LLM-like chain style.", kind: "release" },
+    { date: "2025-08-13", title: "v1.1.9 — Similar-word groupings", note: "Group semantically/visually similar words from a dataset.", kind: "release" },
+    { date: "2025-08-12", title: "v1.1.8 — Finer difficulty; chat translation", note: "Check words/meanings by difficulty; chat bubble translation; UI tweaks.", kind: "release" },
+  ];
+
   function fmtMonth(d: Date) {
     return d.toLocaleString("en-US", { month: "short", year: "numeric" }); // e.g., "Mar 2025"
   }
@@ -60,10 +81,13 @@ export default function Profile() {
     return d.toLocaleString("en-US", { month: "short", day: "2-digit", year: "numeric" }); // "Mar 21, 2025"
   }
 
-  const itemsSorted = useMemo(
-    () => [...timelineItems].sort((a, b) => +new Date(a.date) - +new Date(b.date)),
-    []
-  );
+  // Merge milestone items with release notes, then sort by date ASC
+  const itemsSorted = useMemo(() => {
+    const milestones = timelineItems.map(it => ({ ...it, kind: "milestone" as const }));
+    return [...milestones, ...releaseNotes].sort(
+      (a, b) => +new Date(a.date) - +new Date(b.date)
+    );
+  }, []);
 
   const groupedByMonth = useMemo(() => {
     const m = new Map<string, TLItem[]>();
@@ -242,16 +266,29 @@ export default function Profile() {
                     <span className={styles.tlCount}>{items.length} update{items.length > 1 ? "s" : ""}</span>
                   </div>
                   <ul className={styles.tlList}>
-                    {items.map((it) => {
-                      const d = new Date(it.date);
-                      return (
-                        <li key={it.date + it.title} className={styles.tlListItem}>
-                          <span className={styles.tlDot} aria-hidden />
-                          <span className={styles.tlListDate}>{fmtDay(d)}</span>
-                          <span className={styles.tlListTitle}>{it.title}</span>
-                        </li>
-                      );
-                    })}
+                  {items.map((it) => {
+                    const d = new Date(it.date);
+                    const isRelease = it.kind === "release";
+                    return (
+                      <li
+                        key={it.date + it.title}
+                        className={`${styles.tlListItem} ${isRelease ? styles.tlListItemRelease : ""}`}
+                      >
+                        <span className={`${styles.tlDot} ${isRelease ? styles.tlDotRelease : ""}`} aria-hidden />
+                        <div className={styles.tlListMain}>
+                          <span className={`${styles.tlListDate} ${isRelease ? styles.tlListDateRelease : ""}`}>
+                            {fmtDay(d)}
+                          </span>
+                          <span className={`${styles.tlListTitle} ${isRelease ? styles.tlListTitleRelease : ""}`}>
+                            {it.title}
+                          </span>
+                          {it.note && (
+                            <span className={styles.tlListNote}>{it.note}</span>
+                          )}
+                        </div>
+                      </li>
+                    );
+                  })}
                   </ul>
                 </motion.article>
               ))}
@@ -265,25 +302,30 @@ export default function Profile() {
               variants={fadeUp}
               viewport={{ once: true, amount: 0.4 }}
             >
-              {itemsSorted.map((it, i) => {
-                const d = new Date(it.date);
-                return (
-                  <li key={it.date + i} className={styles.tlRow}>
-                    <div className={styles.tlWhen}>
-                      <span className={styles.tlWhenDay}>{d.toLocaleString("en-US", { day: "2-digit" })}</span>
-                      <span className={styles.tlWhenMon}>{d.toLocaleString("en-US", { month: "short" })}</span>
-                      <span className={styles.tlWhenYear}>{d.getFullYear()}</span>
-                    </div>
-                    <div className={styles.tlLine} aria-hidden />
-                    <div className={styles.tlBody}>
-                      <h4 className={styles.tlTitle}>{it.title}</h4>
-                      <time className={styles.tlTime} dateTime={it.date}>
-                        {fmtDay(d)}
-                      </time>
-                    </div>
-                  </li>
-                );
-              })}
+            {itemsSorted.map((it, i) => {
+              const d = new Date(it.date);
+              const isRelease = it.kind === "release";
+              return (
+                <li
+                  key={it.date + i}
+                  className={`${styles.tlRow} ${isRelease ? styles.tlRowRelease : ""}`}
+                >
+                  <div className={styles.tlWhen}>
+                    <span className={styles.tlWhenDay}>{d.toLocaleString("en-US", { day: "2-digit" })}</span>
+                    <span className={styles.tlWhenMon}>{d.toLocaleString("en-US", { month: "short" })}</span>
+                    <span className={styles.tlWhenYear}>{d.getFullYear()}</span>
+                  </div>
+                  <div className={`${styles.tlLine} ${isRelease ? styles.tlLineRelease : ""}`} aria-hidden />
+                  <div className={`${styles.tlBody} ${isRelease ? styles.tlBodyRelease : ""}`}>
+                    <h4 className={`${styles.tlTitle} ${isRelease ? styles.tlTitleRelease : ""}`}>{it.title}</h4>
+                    {it.note && <p className={styles.tlNote}>{it.note}</p>}
+                    <time className={styles.tlTime} dateTime={it.date}>
+                      {fmtDay(d)}
+                    </time>
+                  </div>
+                </li>
+              );
+            })}
             </motion.ol>
           )}
         </section>
