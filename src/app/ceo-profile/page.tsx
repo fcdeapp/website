@@ -72,6 +72,20 @@ export default function Profile() {
     { date: "2025-08-16", title: "v1.1.10 — Chain Quizzes", note: "Learn in an LLM-like chain style.", kind: "release" },
     { date: "2025-08-13", title: "v1.1.9 — Similar-word groupings", note: "Group semantically/visually similar words from a dataset.", kind: "release" },
     { date: "2025-08-12", title: "v1.1.8 — Finer difficulty; chat translation", note: "Check words/meanings by difficulty; chat bubble translation; UI tweaks.", kind: "release" },
+    { date: "2025-08-10", title: "v1.1.7 — Smarter AI for better learning", note: "Quizzes and chat context finely adapt to selected difficulty; friendlier quiz UI.", kind: "release" },
+    { date: "2025-08-07", title: "v1.1.6 — Improved word-meaning datasets (ES, DE, AR, IT, PT)", note: "Merged CEFR data with open-source glossaries to enrich vocabulary sets.", kind: "release" },
+    { date: "2025-08-05", title: "v1.1.5 — Improved word-meaning datasets (EN, FR, ZH, JA)", note: "Merged CEFR data with open-source glossaries to enrich vocabulary sets.", kind: "release" },
+    { date: "2025-08-04", title: "v1.1.4 — UI tweaks; bug fixes", note: "Visual polish and reliability improvements.", kind: "release" },
+    { date: "2025-07-23", title: "v1.1.3 — Language-learning AI persona; UI updates", note: "Introduced an AI persona tailored for language learning; refreshed UI.", kind: "release" },
+    { date: "2025-07-20", title: "v1.1.2 — Added language support", note: "Arabic, German, Hindi, Italian, Portuguese, and Russian are now supported.", kind: "release" },
+    { date: "2025-07-16", title: "v1.1.1 — Selectable smarter AI model", note: "Choose enhanced AI models; UI tweaks and bug fixes.", kind: "release" },
+    { date: "2025-07-15", title: "v1.1.0 — Photo-based role-play", note: "Role-play with real photos; updated icons & character designs; fixes and performance.", kind: "release" },
+    { date: "2025-07-10", title: "v1.0.10 — More stable AI chat", note: "Stability improvements for AI chat; fixed 1:1 chat issues.", kind: "release" },
+    { date: "2025-07-02", title: "v1.0.8 — Multiple-choice quizzes; chatroom revamp", note: "Added 4-option quizzes and redesigned chatroom UI.", kind: "release" },
+    { date: "2025-06-29", title: "v1.0.7 — Word list redesign; leaderboard", note: "Refreshed word list layout and added a global leaderboard.", kind: "release" },
+    { date: "2025-06-23", title: "v1.0.6 — Bug fixes; stronger multilingual support", note: "Smoother learning experience with broader language coverage.", kind: "release" },
+    { date: "2025-06-17", title: "v1.0.5 — AI upgrades; role-play; chat UI", note: "AI performance improvements, new role-play feature, and chat UI updates.", kind: "release" },
+    { date: "2025-06-16", title: "v1.0.4 — Quiz fixes; stability; UI tweaks", note: "Resolved quiz issues, improved app stability, and refined UI.", kind: "release" },
   ];
 
   function fmtMonth(d: Date) {
