@@ -884,6 +884,262 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         </div>
       </section>
 
+      {/* ── Team ─────────────────────────────────────── */}
+      <section className={styles.section}>
+        <motion.div
+          className={styles.whyHeader}
+          variants={fadeUp}
+          viewport={{ once: true, amount: 0.45 }}
+        >
+          <span className={styles.sectionKicker}>Team</span>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>Team</h2>
+        </motion.div>
+
+        <motion.div
+          className={styles.teamGrid}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
+        >
+          {[
+            {
+              name: "Jungmin Doh",
+              role: "Founder\nCEO",
+              bio: `“I build products that feel like a natural extension of your day — blending tech, design, and genuine human moments to make learning stick.”`,
+            },
+            {
+              name: "Taeyeon Kim (prospective)",
+              role: "Executive\nCFO (prospective)",
+              bio: `“I’m here to turn insight into impact — using data and strategy to grow our community sustainably and meaningfully.”`,
+            },
+            {
+              name: "Chaewon Kim",
+              role: "Executive\nCMO",
+              bio: `“I turn market insight into growth — leveraging segmentation, content, and influencer campaigns to reach and engage the right users, globally.”`,
+            },
+          ].map((m, i) => (
+            <motion.article
+              key={m.name}
+              className={styles.member}
+              variants={zoomIn}
+              custom={i}
+              whileHover={{ y: -10, boxShadow: "0 18px 28px rgba(0,0,0,0.12)" }}
+            >
+              <h3 className={styles.memberName}>{m.name}</h3>
+              <p className={`${styles.memberRole} ${styles.jm}`} style={{ whiteSpace: "pre-line" }}>
+                {m.role}
+              </p>
+              <p className={styles.memberBio}>{m.bio}</p>
+
+              {/* ↓ CEO에게만 Learn more 노출 */}
+              {m.role.includes("CEO") && (
+                <a href="/ceo-profile" className={styles.learnMore}>
+                  Learn more
+                </a>
+              )}
+            </motion.article>
+          ))}
+        </motion.div>
+      </section>
+
+      <section className={styles.downloadSection}>
+        <motion.div
+          className={styles.whyHeader}
+          variants={fadeUp}
+          viewport={{ once: true, amount: 0.45 }}
+        >
+          <span className={styles.sectionKicker}>Resources</span>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>Downloads</h2>
+        </motion.div>
+
+        <div className={styles.downloadGrid}>
+          {/* Pitch Deck Card */}
+          <motion.article className={`${styles.dCard} ${styles.dCardDisabled}`} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
+            <div className={styles.dHead}>
+              <h4 className={styles.dTitle}>Pitch Deck</h4>
+              <span className={styles.dMeta}>PDF · English</span>
+            </div>
+            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>{OUTDATED_NOTE}</p>
+            <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
+            <div className={styles.actions}>
+              <button
+                className={`${styles.btn} ${styles.btnPrimary}`}
+                onClick={() => setPreview({ type: "pdf", src: "/Abrody_Pitch_Deck_EN_250825.pdf" })}
+              >
+                Preview
+              </button>
+              <a
+                className={`${styles.btn} ${styles.btnGhost}`}
+                href={encodeURI("/Abrody_Pitch_Deck_EN_250825.pdf")}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in new tab
+              </a>
+              <a
+                href="/Abrody_Pitch_Deck_EN_250825.pdf"
+                download
+                className={`${styles.btn} ${styles.btnGhost}`}
+              >
+                Download
+              </a>
+            </div>
+          </motion.article>
+
+          <motion.article className={`${styles.dCard} ${styles.dCardDisabled}`} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
+            <div className={styles.dHead}>
+              <h4 className={styles.dTitle}>Pitch Deck</h4>
+              <span className={styles.dMeta}>PDF · Korean</span>
+            </div>
+            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>{OUTDATED_NOTE}</p>
+            <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
+            <div className={styles.actions}>
+              <button
+                className={`${styles.btn} ${styles.btnPrimary}`}
+                onClick={() => setPreview({ type: "pdf", src: "/Abrody_Pitch_Deck_KR_250825.pdf" })}
+              >
+                Preview
+              </button>
+              <a
+                className={`${styles.btn} ${styles.btnGhost}`}
+                href={encodeURI("/Abrody_Pitch_Deck_KR_250825.pdf")}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in new tab
+              </a>
+              <a
+                href="/Abrody_Pitch_Deck_KR_250825.pdf"
+                download
+                className={`${styles.btn} ${styles.btnGhost}`}
+              >
+                Download
+              </a>
+            </div>
+          </motion.article>
+
+          {/* Demo Video Card */}
+          <motion.article className={`${styles.dCard} ${styles.dCardDisabled}`} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.06}}>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-04</span>
+            <div className={styles.dHead}>
+              <h4 className={styles.dTitle}>Demo Video</h4>
+              <span className={styles.dMeta}>MP4 · English</span>
+            </div>
+            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>{OUTDATED_NOTE}</p>
+            <p className={styles.dDesc}>A quick walkthrough of Abrody’s core user flow and features.</p>
+            <div className={styles.actions}>
+              <button
+                className={`${styles.btn} ${styles.btnPrimary}`}
+                onClick={() => setPreview({ type: "video", src: "/demoAbrody.mp4" })}
+              >
+                Preview
+              </button>
+              <a
+                className={`${styles.btn} ${styles.btnGhost}`}
+                href={encodeURI("/demoAbrody.mp4")}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open in new tab
+              </a>
+              <a
+                href="/demoAbrody.mp4"
+                download
+                className={`${styles.btn} ${styles.btnGhost}`}
+              >
+                Download
+              </a>
+            </div>
+          </motion.article>
+
+          {/* 1-Pager (EN) Card */}
+          <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.12}}>
+          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-10-16</span>
+            <div className={styles.dHead}>
+              <h4 className={styles.dTitle}>1-Pager</h4>
+              <span className={styles.dMeta}>PDF · English</span>
+            </div>
+            <p className={styles.dDesc}>A one-page overview of Abrody’s mission, product, and traction.</p>
+            <div className={styles.actions}>
+              <a
+                href="/1-pager_EN_251016.pdf"
+                download
+                className={`${styles.btn} ${styles.btnGhost}`}
+              >
+                Download
+              </a>
+            </div>
+          </motion.article>
+
+        </div>
+      </section>
+
+    {/* ── Preview Modal ───────────────────────────── */}
+    {preview && (
+      <motion.div
+        className={styles.modalBackdrop}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        onClick={() => setPreview(null)}
+      >
+        <motion.div
+          className={styles.modalBody}
+          initial={{ scale: 0.96, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button className={styles.modalClose} onClick={() => setPreview(null)}>✕</button>
+          {preview.type === "pdf" ? (
+            <iframe
+              className={styles.previewFrame} 
+              src={preview.src}
+              title="Pitch Deck Preview"
+            />
+          ) : (
+            <video className={styles.previewVideo} src={preview.src} controls playsInline />
+          )}
+          <div className={styles.modalActions}>
+            <a className={`${styles.btn} ${styles.btnPrimary}`} href={preview.src} download>
+              Download
+            </a>
+            <button className={`${styles.btn} ${styles.btnGhost}`} onClick={() => setPreview(null)}>
+              Close
+            </button>
+          </div>
+        </motion.div>
+      </motion.div>
+    )}
+
+     {/* ── CTA ───────────────────────────────────────── */}
+     <section className={styles.ctaSection}>
+        <motion.h2
+          className={styles.ctaTitle}
+          variants={zoomIn}
+          viewport={{ once: true, amount: 0.55 }}
+        >
+          Ready to rewrite language learning?
+        </motion.h2>
+
+        <div className={styles.ctaButtons}>
+          <a
+            href="mailto:tommydoh@abrody.app"
+            className={styles.ctaButton}
+            onClick={e => {
+              e.preventDefault();
+              window.location.href = "mailto:tommydoh@abrody.app";
+            }}
+          >
+            Contact us
+          </a>
+        </div>
+        <p className={styles.ctaNote}>
+          We are currently raising pre‑seed to seed funding. Please reach out if you’d like to chat!
+        </p>
+      </section>
+
     </motion.main>
   );
 }
