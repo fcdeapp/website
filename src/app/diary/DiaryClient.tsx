@@ -80,7 +80,7 @@ function buildMonthGroups(entries: DiaryEntry[]): MonthGroup[] {
     monthMap.get(key)!.entryByDay.set(day, entry);
   }
 
-  return Array.from(monthMap.values()).sort((a, b) => b.key.localeCompare(a.key));
+  return Array.from(monthMap.values()).sort((a, b) => a.key.localeCompare(b.key));
 }
 
 const WEEK_LABELS = ["일", "월", "화", "수", "목", "금", "토"];
@@ -175,18 +175,18 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
     title: string;
   } | null>(null);
 
-  const sortedEntries = useMemo(() => {
+    const sortedEntries = useMemo(() => {
     return [...entries].sort((a, b) => {
-      const aDate = parseDate(a.date);
-      const bDate = parseDate(b.date);
+        const aDate = parseDate(a.date);
+        const bDate = parseDate(b.date);
 
-      if (!aDate && !bDate) return 0;
-      if (!aDate) return 1;
-      if (!bDate) return -1;
+        if (!aDate && !bDate) return 0;
+        if (!aDate) return 1;
+        if (!bDate) return -1;
 
-      return bDate.getTime() - aDate.getTime();
+        return aDate.getTime() - bDate.getTime();
     });
-  }, [entries]);
+    }, [entries]);
 
   const [selectedSlug, setSelectedSlug] = useState<string>(sortedEntries[0]?.slug ?? "");
 
@@ -269,7 +269,9 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
             </button>
           </div>
 
-          <h2 className={styles.sectionTitle}>날짜별 기록 보기</h2>
+            {showIntro && (
+            <h2 className={styles.sectionTitle}>날짜별 기록 보기</h2>
+            )}
 
           {showIntro && (
             <p className={styles.sectionLead}>
@@ -406,12 +408,14 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
             </div>
 
             <section className={styles.archiveSection}>
-              <div className={styles.archiveHead}>
+            {showIntro && (
+                <div className={styles.archiveHead}>
                 <h3 className={styles.archiveTitle}>전체 기록 한눈에 보기</h3>
                 <p className={styles.archiveText}>
-                  카드 목록에서도 원하는 날짜를 눌러 바로 해당 기록으로 이동할 수 있습니다.
+                    카드 목록에서도 원하는 날짜를 눌러 바로 해당 기록으로 이동할 수 있습니다.
                 </p>
-              </div>
+                </div>
+            )}
 
               <div className={styles.diaryGrid}>
                 {sortedEntries.map((entry) => {

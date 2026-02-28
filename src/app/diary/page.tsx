@@ -176,16 +176,16 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
       })
     );
 
-    return entries.sort((a, b) => {
-      const aDate = parseDate(a.date);
-      const bDate = parseDate(b.date);
+        return entries.sort((a, b) => {
+        const aDate = parseDate(a.date);
+        const bDate = parseDate(b.date);
 
-      if (!aDate && !bDate) return 0;
-      if (!aDate) return 1;
-      if (!bDate) return -1;
+        if (!aDate && !bDate) return 0;
+        if (!aDate) return 1;
+        if (!bDate) return -1;
 
-      return bDate.getTime() - aDate.getTime();
-    });
+        return aDate.getTime() - bDate.getTime();
+        });
   } catch (error) {
     console.error("Failed to load diary entries:", error);
     return [];
