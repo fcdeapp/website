@@ -126,17 +126,17 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
               <span className={styles.sectionKicker}>Diary</span>
 
               <h1 className={styles.heroTitle}>
-                경험
+                경험,
                 <br />
                 기록
               </h1>
 
-              <p className={styles.heroLead}>
-                가지 않은 길을 되돌아보는 나쁜 습관이 있습니다
+                <p className={styles.heroLead}>
+                {`가지 않은 길을 되돌아보는 나쁜 습관이 있습니다
                 저는 다만 빛나는 삶들이 부러웠습니다
                 돌리지 못할 그 선택들이
-                그것이 모든 것을 바꾸었다고
-              </p>
+                그것이 모든 것을 바꾸었다고`}
+                </p>
 
               <div className={styles.heroMeta}>
                 <span className={styles.metaChip}>총 {entries.length}개의 기록</span>
