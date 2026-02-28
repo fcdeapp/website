@@ -1,8 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
-import styles from "../../styles//pages/Diary.module.css";
+import styles from "../styles/pages/Diary.module.css";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
 type DiaryEntry = {
   slug: string;
@@ -13,11 +13,16 @@ type DiaryEntry = {
 
 const DIARY_DIR = path.join(process.cwd(), "content", "diary");
 
-function formatKoreanDate(dateStr: string) {
-  const date = new Date(dateStr);
-  if (Number.isNaN(date.getTime())) return dateStr;
+function parseDate(value: string) {
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
 
-  return new Intl.DateTimeFormat("ko-KR", {
+function formatDate(value: string) {
+  const date = parseDate(value);
+  if (!date) return value;
+
+  return new Intl.DateTimeFormat("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -33,20 +38,20 @@ function getExcerpt(text: string, maxLength = 180) {
 
 async function getDiaryEntries(): Promise<DiaryEntry[]> {
   try {
-    const files = await fs.readdir(DIARY_DIR);
+    const fileNames = await fs.readdir(DIARY_DIR);
 
-    const txtFiles = files.filter((file) => file.endsWith(".txt"));
+    const txtFiles = fileNames.filter((file) => file.toLowerCase().endsWith(".txt"));
 
     const entries = await Promise.all(
-      txtFiles.map(async (file) => {
-        const fullPath = path.join(DIARY_DIR, file);
+      txtFiles.map(async (fileName) => {
+        const fullPath = path.join(DIARY_DIR, fileName);
         const raw = await fs.readFile(fullPath, "utf-8");
 
         const lines = raw.split(/\r?\n/);
 
         let date = "";
         let title = "";
-        const contentLines: string[] = [];
+        const bodyLines: string[] = [];
 
         for (const line of lines) {
           if (!date && /^date\s*:/i.test(line)) {
@@ -59,14 +64,14 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
             continue;
           }
 
-          contentLines.push(line);
+          bodyLines.push(line);
         }
 
-        const slug = file.replace(/\.txt$/, "");
-        const fallbackDate = slug.match(/^\d{4}-\d{2}-\d{2}$/) ? slug : "";
-        const finalDate = date || fallbackDate || "No date";
+        const slug = fileName.replace(/\.txt$/i, "");
+        const fallbackDate = /^\d{4}-\d{2}-\d{2}$/.test(slug) ? slug : "";
+        const finalDate = date || fallbackDate || "Unknown date";
         const finalTitle = title || `Diary - ${finalDate}`;
-        const finalContent = contentLines.join("\n").trim();
+        const finalContent = bodyLines.join("\n").trim();
 
         return {
           slug,
@@ -78,17 +83,17 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
     );
 
     return entries.sort((a, b) => {
-      const aTime = new Date(a.date).getTime();
-      const bTime = new Date(b.date).getTime();
+      const aDate = parseDate(a.date);
+      const bDate = parseDate(b.date);
 
-      if (Number.isNaN(aTime) && Number.isNaN(bTime)) return 0;
-      if (Number.isNaN(aTime)) return 1;
-      if (Number.isNaN(bTime)) return -1;
+      if (!aDate && !bDate) return 0;
+      if (!aDate) return 1;
+      if (!bDate) return -1;
 
-      return bTime - aTime;
+      return bDate.getTime() - aDate.getTime();
     });
   } catch (error) {
-    console.error("Failed to read diary entries:", error);
+    console.error("Failed to load diary entries:", error);
     return [];
   }
 }
@@ -104,20 +109,23 @@ export default async function DiaryPage() {
 
         <div className={styles.heroInner}>
           <span className={styles.sectionKicker}>Diary</span>
+
           <h1 className={styles.heroTitle}>
-            Moments, thoughts,
+            Quiet records,
             <br />
-            and quiet records
+            daily traces
           </h1>
+
           <p className={styles.heroLead}>
-            Local text files are loaded from a fixed directory and displayed
-            with their date and content.
+            This page statically reads diary text files from a fixed directory and
+            displays them with their dates and content.
           </p>
+
           <div className={styles.heroMeta}>
             <span className={styles.metaChip}>
-              Total {entries.length} entr{entries.length === 1 ? "y" : "ies"}
+              {entries.length} entr{entries.length === 1 ? "y" : "ies"}
             </span>
-            <span className={styles.metaChip}>Source: /content/diary</span>
+            <span className={styles.metaChip}>content/diary</span>
           </div>
         </div>
       </section>
@@ -125,11 +133,10 @@ export default async function DiaryPage() {
       <section className={styles.section}>
         <div className={styles.headerBlock}>
           <span className={styles.sectionKicker}>Archive</span>
-          <h2 className={styles.sectionTitle}>Daily Notes</h2>
+          <h2 className={styles.sectionTitle}>Diary Entries</h2>
           <p className={styles.sectionLead}>
-            Each card is generated from a <code>.txt</code> file.  
-            You can manage entries by simply adding, editing, or deleting files
-            in the diary folder.
+            Add or edit <code>.txt</code> files inside <code>content/diary</code>,
+            then rebuild the site to update this page.
           </p>
         </div>
 
@@ -137,8 +144,7 @@ export default async function DiaryPage() {
           <div className={styles.emptyCard}>
             <h3 className={styles.emptyTitle}>No diary entries found</h3>
             <p className={styles.emptyText}>
-              Create <code>.txt</code> files inside <code>content/diary</code>{" "}
-              and they will appear here.
+              Put text files in <code>content/diary</code> and rebuild.
             </p>
           </div>
         ) : (
@@ -146,16 +152,12 @@ export default async function DiaryPage() {
             {entries.map((entry) => (
               <article key={entry.slug} className={styles.diaryCard}>
                 <div className={styles.cardTop}>
-                  <span className={styles.datePill}>
-                    {formatKoreanDate(entry.date)}
-                  </span>
+                  <span className={styles.datePill}>{formatDate(entry.date)}</span>
                 </div>
 
                 <h3 className={styles.cardTitle}>{entry.title}</h3>
 
-                <p className={styles.cardExcerpt}>
-                  {getExcerpt(entry.content)}
-                </p>
+                <p className={styles.cardExcerpt}>{getExcerpt(entry.content)}</p>
 
                 <div className={styles.divider} />
 
