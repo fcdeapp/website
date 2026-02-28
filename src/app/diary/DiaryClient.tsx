@@ -105,18 +105,6 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
         <div className={styles.heroBgGlow} aria-hidden />
 
         <div className={styles.heroInner}>
-          <div className={styles.heroTopBar}>
-            <div />
-            <button
-              type="button"
-              className={styles.hiddenToggleButtonSecondary}
-              onClick={() => setShowIntro((prev) => !prev)}
-              aria-expanded={showIntro}
-            >
-              {showIntro ? "설명 숨기기" : "설명 보기"}
-            </button>
-          </div>
-
           {showIntro && (
             <div className={styles.heroReveal}>
               <span className={styles.sectionKicker}>Diary</span>
@@ -144,6 +132,7 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
       <section className={styles.section}>
         <div className={styles.headerBlock}>
           <div className={styles.archiveTopRow}>
+            <div className={styles.archiveTopSpacer} aria-hidden />
             <span className={styles.sectionKicker}>Archive</span>
             <button
               type="button"
