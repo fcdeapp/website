@@ -11,7 +11,7 @@ type DiaryEntry = {
   content: string;
 };
 
-const DIARY_DIR = path.join(process.cwd(), "app", "diary", "content");
+const DIARY_DIR = path.join(process.cwd(), "src", "app", "diary", "content");
 
 function parseDate(value: string) {
   const date = new Date(value);
