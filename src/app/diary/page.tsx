@@ -1,6 +1,5 @@
 import fs from "fs/promises";
 import path from "path";
-import styles from "../../styles/pages/Diary.module.css";
 import DiaryClient from "./DiaryClient";
 
 export const dynamic = "force-static";
@@ -10,13 +9,64 @@ export type DiaryEntry = {
   date: string;
   title: string;
   content: string;
+  imageDataUrl: string | null;
+  imageExtension: string | null;
 };
 
 const DIARY_DIR = path.join(process.cwd(), "src", "app", "diary", "content");
+const IMAGE_EXTENSIONS = ["png", "jpg", "jpeg", "webp", "gif", "avif"] as const;
 
 function parseDate(value: string) {
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function getMimeType(ext: string) {
+  switch (ext.toLowerCase()) {
+    case "png":
+      return "image/png";
+    case "jpg":
+    case "jpeg":
+      return "image/jpeg";
+    case "webp":
+      return "image/webp";
+    case "gif":
+      return "image/gif";
+    case "avif":
+      return "image/avif";
+    default:
+      return "application/octet-stream";
+  }
+}
+
+async function getImageDataUrl(baseName: string): Promise<{
+  imageDataUrl: string | null;
+  imageExtension: string | null;
+}> {
+  for (const ext of IMAGE_EXTENSIONS) {
+    const imagePath = path.join(DIARY_DIR, `${baseName}.${ext}`);
+
+    try {
+      const stat = await fs.stat(imagePath);
+      if (!stat.isFile()) continue;
+
+      const buffer = await fs.readFile(imagePath);
+      const mimeType = getMimeType(ext);
+      const base64 = buffer.toString("base64");
+
+      return {
+        imageDataUrl: `data:${mimeType};base64,${base64}`,
+        imageExtension: ext,
+      };
+    } catch {
+      // ignore
+    }
+  }
+
+  return {
+    imageDataUrl: null,
+    imageExtension: null,
+  };
 }
 
 async function getDiaryEntries(): Promise<DiaryEntry[]> {
@@ -60,11 +110,15 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
         const finalTitle = title || `기록 - ${finalDate}`;
         const finalContent = bodyLines.join("\n").trim();
 
+        const { imageDataUrl, imageExtension } = await getImageDataUrl(slug);
+
         return {
           slug,
           date: finalDate,
           title: finalTitle,
           content: finalContent,
+          imageDataUrl,
+          imageExtension,
         };
       })
     );
@@ -87,57 +141,5 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
 
 export default async function DiaryPage() {
   const entries = await getDiaryEntries();
-
-  return (
-    <main className={styles.wrapper}>
-      <section className={styles.heroSection}>
-        <div className={styles.heroBgMesh} aria-hidden />
-        <div className={styles.heroBgGlow} aria-hidden />
-
-        <div className={styles.heroInner}>
-          <span className={styles.sectionKicker}>Diary</span>
-
-          <h1 className={styles.heroTitle}>
-            조용히 남겨 둔 마음들,
-            <br />
-            날짜 위의 기록
-          </h1>
-
-          <p className={styles.heroLead}>
-            이곳에는 지나간 생각과 고민, 흔들리던 날의 감정들을 차분히 모아두었습니다.
-            원하는 날짜를 누르면 그날의 기록을 바로 펼쳐볼 수 있습니다.
-          </p>
-
-          <div className={styles.heroMeta}>
-            <span className={styles.metaChip}>
-              총 {entries.length}개의 기록
-            </span>
-            <span className={styles.metaChip}>src/app/diary/content</span>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <div className={styles.headerBlock}>
-          <span className={styles.sectionKicker}>Archive</span>
-          <h2 className={styles.sectionTitle}>날짜별 기록 보기</h2>
-          <p className={styles.sectionLead}>
-            이 페이지는 단순한 메모 보관함이 아니라, 그날그날의 고민과 마음을 다시 들여다보는 작은 아카이브입니다.
-            아래 달력에서 날짜를 누르면 해당 기록만 바로 확인할 수 있습니다.
-          </p>
-        </div>
-
-        {entries.length === 0 ? (
-          <div className={styles.emptyCard}>
-            <h3 className={styles.emptyTitle}>아직 표시할 기록이 없습니다</h3>
-            <p className={styles.emptyText}>
-              <code>src/app/diary/content</code> 폴더에 <code>.txt</code> 파일을 추가한 뒤 다시 빌드하면 이 페이지에 반영됩니다.
-            </p>
-          </div>
-        ) : (
-          <DiaryClient entries={entries} />
-        )}
-      </section>
-    </main>
-  );
+  return <DiaryClient entries={entries} />;
 }
