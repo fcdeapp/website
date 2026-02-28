@@ -13,8 +13,24 @@ type MonthGroup = {
 };
 
 function parseDate(value: string) {
-  const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? null : date;
+  const normalized = value.trim();
+
+  if (/^\d{4}$/.test(normalized)) {
+    return new Date(Number(normalized), 0, 1);
+  }
+
+  if (/^\d{4}-\d{2}$/.test(normalized)) {
+    const [year, month] = normalized.split("-").map(Number);
+    return new Date(year, month - 1, 1);
+  }
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(normalized)) {
+    const [year, month, day] = normalized.split("-").map(Number);
+    return new Date(year, month - 1, day);
+  }
+
+  const fallback = new Date(normalized);
+  return Number.isNaN(fallback.getTime()) ? null : fallback;
 }
 
 function formatFullDate(value: string) {
@@ -110,19 +126,20 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
               <span className={styles.sectionKicker}>Diary</span>
 
               <h1 className={styles.heroTitle}>
-                조용히 남겨 둔 마음들,
+                경험
                 <br />
-                날짜 위의 기록
+                기록
               </h1>
 
               <p className={styles.heroLead}>
-                이곳에는 지나간 생각과 고민, 흔들리던 날의 감정들을 차분히 모아두었습니다.
-                원하는 날짜를 누르면 그날의 기록을 바로 펼쳐볼 수 있습니다.
+                가지 않은 길을 되돌아보는 나쁜 습관이 있습니다
+                저는 다만 빛나는 삶들이 부러웠습니다
+                돌리지 못할 그 선택들이
+                그것이 모든 것을 바꾸었다고
               </p>
 
               <div className={styles.heroMeta}>
                 <span className={styles.metaChip}>총 {entries.length}개의 기록</span>
-                <span className={styles.metaChip}>src/app/diary/content</span>
               </div>
             </div>
           )}
@@ -148,7 +165,6 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
 
           {showIntro && (
             <p className={styles.sectionLead}>
-              이 페이지는 단순한 메모 보관함이 아니라, 그날그날의 고민과 마음을 다시 들여다보는 작은 아카이브입니다.
               아래 달력에서 날짜를 누르면 해당 기록만 바로 확인할 수 있습니다.
             </p>
           )}

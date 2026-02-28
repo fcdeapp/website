@@ -17,8 +17,24 @@ const DIARY_DIR = path.join(process.cwd(), "src", "app", "diary", "content");
 const IMAGE_EXTENSIONS = ["png", "jpg", "jpeg", "webp", "gif", "avif"] as const;
 
 function parseDate(value: string) {
-  const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? null : date;
+  const normalized = value.trim();
+
+  if (/^\d{4}$/.test(normalized)) {
+    return new Date(Number(normalized), 0, 1);
+  }
+
+  if (/^\d{4}-\d{2}$/.test(normalized)) {
+    const [year, month] = normalized.split("-").map(Number);
+    return new Date(year, month - 1, 1);
+  }
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(normalized)) {
+    const [year, month, day] = normalized.split("-").map(Number);
+    return new Date(year, month - 1, day);
+  }
+
+  const fallback = new Date(normalized);
+  return Number.isNaN(fallback.getTime()) ? null : fallback;
 }
 
 function getMimeType(ext: string) {
@@ -105,7 +121,12 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
         }
 
         const slug = fileName.replace(/\.txt$/i, "");
-        const fallbackDate = /^\d{4}-\d{2}-\d{2}$/.test(slug) ? slug : "";
+        const fallbackDate =
+        /^\d{4}$/.test(slug) ||
+        /^\d{4}-\d{2}$/.test(slug) ||
+        /^\d{4}-\d{2}-\d{2}$/.test(slug)
+            ? slug
+            : "";
         const finalDate = date || fallbackDate || "날짜 미상";
         const finalTitle = title || `기록 - ${finalDate}`;
         const finalContent = bodyLines.join("\n").trim();
