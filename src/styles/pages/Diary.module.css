@@ -362,27 +362,92 @@
 
 .selectedImageWrapSmall {
   margin-top: 1rem;
-  max-width: 240px;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(17, 12, 43, 0.08);
-  background: #f8fafc;
+  max-width: 260px;
 }
 
-.selectedImageButton {
+.imageStackButton,
+.imageStackDisplay {
   display: block;
-  width: 100%;
-  border: none;
   background: transparent;
+  border: none;
   padding: 0;
+  width: 100%;
+}
+
+.imageStackButtonLarge,
+.imageStackDisplayLarge {
+  width: 100%;
+  max-width: 260px;
+}
+
+.imageStackButtonSmall,
+.imageStackDisplaySmall {
+  width: 100%;
+}
+
+.imageStackButton {
   cursor: zoom-in;
 }
 
-.selectedImageSmall {
+.imageStack {
+  position: relative;
+  width: 100%;
+}
+
+.imageStackLarge {
+  aspect-ratio: 4 / 3;
+}
+
+.imageStackSmall {
+  aspect-ratio: 16 / 10;
+}
+
+.imageStackLayer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid rgba(17, 12, 43, 0.08);
+  box-shadow: 0 10px 24px rgba(17, 12, 43, 0.08);
+  transform: translateY(var(--stack-y)) rotate(var(--stack-rotate));
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    filter 0.35s ease;
+}
+
+.imageStackImg {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+}
+
+.imageStackButton:hover .imageStackLayer,
+.imageStackDisplay:hover .imageStackLayer {
+  transform: translateX(var(--fan-x)) translateY(var(--stack-y)) rotate(var(--fan-rotate));
+  box-shadow: 0 16px 34px rgba(17, 12, 43, 0.12);
+}
+
+.imageCountChip {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 28px;
+  padding: 0 0.6rem;
+  border-radius: 999px;
+  background: rgba(17, 12, 43, 0.78);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 18px rgba(17, 12, 43, 0.16);
 }
 
 .imageHint {
@@ -498,17 +563,6 @@
 
 .cardThumbWrap {
   margin-top: 0.85rem;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(17, 12, 43, 0.08);
-  background: #f8fafc;
-}
-
-.cardThumb {
-  display: block;
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
 }
 
 .cardExcerpt {
@@ -546,8 +600,9 @@
 
 .imageModalContent {
   position: relative;
-  max-width: min(92vw, 980px);
-  max-height: 90vh;
+  max-width: min(92vw, 1040px);
+  max-height: 92vh;
+  width: 100%;
 }
 
 .imageModalClose {
@@ -565,12 +620,70 @@
   backdrop-filter: blur(8px);
 }
 
+.imageModalNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  appearance: none;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.imageModalPrev {
+  left: 14px;
+}
+
+.imageModalNext {
+  right: 14px;
+}
+
 .imageModalImage {
   display: block;
-  max-width: 100%;
-  max-height: 86vh;
+  width: 100%;
+  max-height: 76vh;
+  object-fit: contain;
   border-radius: 18px;
   box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+  background: #111827;
+}
+
+.imageModalThumbRow {
+  display: flex;
+  gap: 0.65rem;
+  overflow-x: auto;
+  margin-top: 0.9rem;
+  padding-bottom: 0.2rem;
+}
+
+.imageModalThumbButton {
+  appearance: none;
+  border: 2px solid transparent;
+  background: transparent;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.imageModalThumbButtonActive {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.imageModalThumb {
+  display: block;
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
 }
 
 /* Responsive */
@@ -637,11 +750,12 @@
     font-size: 0.86rem;
   }
 
-  .cardThumb {
-    height: 160px;
+  .selectedImageWrapSmall {
+    max-width: 200px;
   }
 
-  .selectedImageWrapSmall {
-    max-width: 180px;
+  .imageModalThumb {
+    width: 68px;
+    height: 68px;
   }
 }

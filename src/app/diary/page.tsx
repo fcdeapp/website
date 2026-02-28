@@ -4,13 +4,18 @@ import DiaryClient from "./DiaryClient";
 
 export const dynamic = "force-static";
 
+export type DiaryImage = {
+  fileName: string;
+  dataUrl: string;
+  extension: string;
+};
+
 export type DiaryEntry = {
   slug: string;
   date: string;
   title: string;
   content: string;
-  imageDataUrl: string | null;
-  imageExtension: string | null;
+  images: DiaryImage[];
 };
 
 const DIARY_DIR = path.join(process.cwd(), "src", "app", "diary", "content");
@@ -55,34 +60,61 @@ function getMimeType(ext: string) {
   }
 }
 
-async function getImageDataUrl(baseName: string): Promise<{
-  imageDataUrl: string | null;
-  imageExtension: string | null;
-}> {
-  for (const ext of IMAGE_EXTENSIONS) {
-    const imagePath = path.join(DIARY_DIR, `${baseName}.${ext}`);
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
 
-    try {
-      const stat = await fs.stat(imagePath);
-      if (!stat.isFile()) continue;
+async function getImagesForBaseName(
+  baseName: string,
+  allFileNames: string[]
+): Promise<DiaryImage[]> {
+  const escapedBaseName = escapeRegExp(baseName);
+  const pattern = new RegExp(
+    `^${escapedBaseName}(?:\\((\\d+)\\))?\\.(${IMAGE_EXTENSIONS.join("|")})$`,
+    "i"
+  );
 
+  const matchedFiles = allFileNames
+    .map((fileName) => {
+      const match = fileName.match(pattern);
+      if (!match) return null;
+
+      return {
+        fileName,
+        order: match[1] ? Number(match[1]) : 0,
+        extension: match[2].toLowerCase(),
+      };
+    })
+    .filter(
+      (
+        item
+      ): item is {
+        fileName: string;
+        order: number;
+        extension: string;
+      } => item !== null
+    )
+    .sort((a, b) => {
+      if (a.order !== b.order) return a.order - b.order;
+      return a.fileName.localeCompare(b.fileName);
+    });
+
+  const images = await Promise.all(
+    matchedFiles.map(async (item) => {
+      const imagePath = path.join(DIARY_DIR, item.fileName);
       const buffer = await fs.readFile(imagePath);
-      const mimeType = getMimeType(ext);
+      const mimeType = getMimeType(item.extension);
       const base64 = buffer.toString("base64");
 
       return {
-        imageDataUrl: `data:${mimeType};base64,${base64}`,
-        imageExtension: ext,
+        fileName: item.fileName,
+        extension: item.extension,
+        dataUrl: `data:${mimeType};base64,${base64}`,
       };
-    } catch {
-      // ignore
-    }
-  }
+    })
+  );
 
-  return {
-    imageDataUrl: null,
-    imageExtension: null,
-  };
+  return images;
 }
 
 async function getDiaryEntries(): Promise<DiaryEntry[]> {
@@ -122,24 +154,24 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
 
         const slug = fileName.replace(/\.txt$/i, "");
         const fallbackDate =
-        /^\d{4}$/.test(slug) ||
-        /^\d{4}-\d{2}$/.test(slug) ||
-        /^\d{4}-\d{2}-\d{2}$/.test(slug)
+          /^\d{4}$/.test(slug) ||
+          /^\d{4}-\d{2}$/.test(slug) ||
+          /^\d{4}-\d{2}-\d{2}$/.test(slug)
             ? slug
             : "";
+
         const finalDate = date || fallbackDate || "날짜 미상";
         const finalTitle = title || `기록 - ${finalDate}`;
         const finalContent = bodyLines.join("\n").trim();
 
-        const { imageDataUrl, imageExtension } = await getImageDataUrl(slug);
+        const images = await getImagesForBaseName(slug, fileNames);
 
         return {
           slug,
           date: finalDate,
           title: finalTitle,
           content: finalContent,
-          imageDataUrl,
-          imageExtension,
+          images,
         };
       })
     );

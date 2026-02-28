@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import styles from "../../styles/pages/Diary.module.css";
-import type { DiaryEntry } from "./page";
+import type { DiaryEntry, DiaryImage } from "./page";
 
 type MonthGroup = {
   key: string;
@@ -85,9 +85,95 @@ function buildMonthGroups(entries: DiaryEntry[]): MonthGroup[] {
 
 const WEEK_LABELS = ["일", "월", "화", "수", "목", "금", "토"];
 
+function ImageStack({
+  images,
+  title,
+  size = "large",
+  clickable = false,
+  onOpen,
+}: {
+  images: DiaryImage[];
+  title: string;
+  size?: "large" | "small";
+  clickable?: boolean;
+  onOpen?: () => void;
+}) {
+  const previewImages = images.slice(0, 4);
+  const center = (previewImages.length - 1) / 2;
+
+  const inner = (
+    <div
+      className={`${styles.imageStack} ${
+        size === "small" ? styles.imageStackSmall : styles.imageStackLarge
+      }`}
+    >
+      {previewImages.map((image, index) => {
+        const stackY = index * 3;
+        const stackRotate = (index - center) * 1.8;
+        const fanX = (index - center) * 22;
+        const fanRotate = (index - center) * 8;
+
+        return (
+          <div
+            key={image.fileName}
+            className={styles.imageStackLayer}
+            style={
+              {
+                "--stack-y": `${stackY}px`,
+                "--stack-rotate": `${stackRotate}deg`,
+                "--fan-x": `${fanX}px`,
+                "--fan-rotate": `${fanRotate}deg`,
+                zIndex: previewImages.length - index,
+              } as React.CSSProperties
+            }
+          >
+            <img
+              src={image.dataUrl}
+              alt={`${title} 이미지 ${index + 1}`}
+              className={styles.imageStackImg}
+            />
+          </div>
+        );
+      })}
+
+      {images.length > 1 ? (
+        <span className={styles.imageCountChip}>{images.length}장</span>
+      ) : null}
+    </div>
+  );
+
+  if (clickable) {
+    return (
+      <button
+        type="button"
+        className={`${styles.imageStackButton} ${
+          size === "small" ? styles.imageStackButtonSmall : styles.imageStackButtonLarge
+        }`}
+        onClick={onOpen}
+      >
+        {inner}
+      </button>
+    );
+  }
+
+  return (
+    <div
+      className={`${styles.imageStackDisplay} ${
+        size === "small" ? styles.imageStackDisplaySmall : styles.imageStackDisplayLarge
+      }`}
+    >
+      {inner}
+    </div>
+  );
+}
+
 export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
   const [showIntro, setShowIntro] = useState(false);
-  const [isImageExpanded, setIsImageExpanded] = useState(false);
+  const [modalState, setModalState] = useState<{
+    images: DiaryImage[];
+    index: number;
+    title: string;
+  } | null>(null);
 
   const sortedEntries = useMemo(() => {
     return [...entries].sort((a, b) => {
@@ -111,7 +197,29 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
 
   const handleSelectEntry = (slug: string) => {
     setSelectedSlug(slug);
-    setIsImageExpanded(false);
+    setModalState(null);
+  };
+
+  const openModal = (images: DiaryImage[], title: string, index = 0) => {
+    setModalState({ images, title, index });
+  };
+
+  const closeModal = () => setModalState(null);
+
+  const goPrevImage = () => {
+    setModalState((prev) => {
+      if (!prev) return prev;
+      const nextIndex = (prev.index - 1 + prev.images.length) % prev.images.length;
+      return { ...prev, index: nextIndex };
+    });
+  };
+
+  const goNextImage = () => {
+    setModalState((prev) => {
+      if (!prev) return prev;
+      const nextIndex = (prev.index + 1) % prev.images.length;
+      return { ...prev, index: nextIndex };
+    });
   };
 
   return (
@@ -131,12 +239,12 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
                 기록
               </h1>
 
-                <p className={styles.heroLead}>
+              <p className={styles.heroLead}>
                 {`가지 않은 길을 되돌아보는 나쁜 습관이 있습니다
-                저는 다만 빛나는 삶들이 부러웠습니다
-                돌리지 못할 그 선택들이
-                그것이 모든 것을 바꾸었다고`}
-                </p>
+저는 다만 빛나는 삶들이 부러웠습니다
+돌리지 못할 그 선택들이
+그것이 모든 것을 바꾸었다고`}
+              </p>
 
               <div className={styles.heroMeta}>
                 <span className={styles.metaChip}>총 {entries.length}개의 기록</span>
@@ -263,23 +371,24 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
 
                     <h3 className={styles.selectedTitle}>{selectedEntry.title}</h3>
 
-                    {selectedEntry.imageDataUrl ? (
+                    {selectedEntry.images.length > 0 ? (
                       <>
                         <div className={styles.selectedImageWrapSmall}>
-                          <button
-                            type="button"
-                            className={styles.selectedImageButton}
-                            onClick={() => setIsImageExpanded(true)}
-                          >
-                            <img
-                              src={selectedEntry.imageDataUrl}
-                              alt={`${selectedEntry.title} 관련 이미지`}
-                              className={styles.selectedImageSmall}
-                            />
-                          </button>
+                          <ImageStack
+                            images={selectedEntry.images}
+                            title={selectedEntry.title}
+                            size="large"
+                            clickable
+                            onOpen={() => openModal(selectedEntry.images, selectedEntry.title, 0)}
+                          />
                         </div>
 
-                        <p className={styles.imageHint}>이미지를 누르면 크게 볼 수 있습니다.</p>
+                        <p className={styles.imageHint}>
+                          이미지를 누르면 크게 볼 수 있습니다.
+                          {selectedEntry.images.length > 1
+                            ? ` 총 ${selectedEntry.images.length}장입니다.`
+                            : ""}
+                        </p>
                       </>
                     ) : null}
 
@@ -323,12 +432,12 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
 
                       <h3 className={styles.cardTitle}>{entry.title}</h3>
 
-                      {entry.imageDataUrl ? (
+                      {entry.images.length > 0 ? (
                         <div className={styles.cardThumbWrap}>
-                          <img
-                            src={entry.imageDataUrl}
-                            alt={`${entry.title} 썸네일`}
-                            className={styles.cardThumb}
+                          <ImageStack
+                            images={entry.images}
+                            title={entry.title}
+                            size="small"
                           />
                         </div>
                       ) : null}
@@ -349,10 +458,10 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
         )}
       </section>
 
-      {selectedEntry?.imageDataUrl && isImageExpanded ? (
+      {modalState ? (
         <div
           className={styles.imageModalBackdrop}
-          onClick={() => setIsImageExpanded(false)}
+          onClick={closeModal}
           role="button"
           tabIndex={0}
         >
@@ -363,15 +472,60 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
             <button
               type="button"
               className={styles.imageModalClose}
-              onClick={() => setIsImageExpanded(false)}
+              onClick={closeModal}
             >
               닫기
             </button>
+
+            {modalState.images.length > 1 ? (
+              <>
+                <button
+                  type="button"
+                  className={`${styles.imageModalNav} ${styles.imageModalPrev}`}
+                  onClick={goPrevImage}
+                >
+                  ‹
+                </button>
+                <button
+                  type="button"
+                  className={`${styles.imageModalNav} ${styles.imageModalNext}`}
+                  onClick={goNextImage}
+                >
+                  ›
+                </button>
+              </>
+            ) : null}
+
             <img
-              src={selectedEntry.imageDataUrl}
-              alt={`${selectedEntry.title} 크게 보기`}
+              src={modalState.images[modalState.index].dataUrl}
+              alt={`${modalState.title} 크게 보기 ${modalState.index + 1}`}
               className={styles.imageModalImage}
             />
+
+            {modalState.images.length > 1 ? (
+              <div className={styles.imageModalThumbRow}>
+                {modalState.images.map((image, index) => (
+                  <button
+                    key={image.fileName}
+                    type="button"
+                    className={`${styles.imageModalThumbButton} ${
+                      index === modalState.index ? styles.imageModalThumbButtonActive : ""
+                    }`}
+                    onClick={() =>
+                      setModalState((prev) =>
+                        prev ? { ...prev, index } : prev
+                      )
+                    }
+                  >
+                    <img
+                      src={image.dataUrl}
+                      alt={`${modalState.title} 썸네일 ${index + 1}`}
+                      className={styles.imageModalThumb}
+                    />
+                  </button>
+                ))}
+              </div>
+            ) : null}
           </div>
         </div>
       ) : null}
