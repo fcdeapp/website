@@ -1,0 +1,277 @@
+.wrapper {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #2f2f2f;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Hero */
+.heroSection {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(5rem, 10vw, 8rem) 1.25rem clamp(4rem, 8vw, 6rem);
+  background:
+    radial-gradient(circle at top left, rgba(216, 49, 91, 0.08), transparent 30%),
+    radial-gradient(circle at top right, rgba(242, 84, 45, 0.08), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, #fbfbfc 100%);
+  border-bottom: 1px solid rgba(17, 12, 43, 0.06);
+}
+
+.heroBgMesh {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(17, 12, 43, 0.04), transparent 22%),
+    radial-gradient(circle at 80% 30%, rgba(17, 12, 43, 0.03), transparent 20%),
+    radial-gradient(circle at 50% 100%, rgba(17, 12, 43, 0.03), transparent 30%);
+  pointer-events: none;
+}
+
+.heroBgGlow {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  right: -80px;
+  top: -80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(216, 49, 91, 0.12), transparent 65%);
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 78rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionKicker {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(216, 49, 91, 0.08);
+  border: 1px solid rgba(216, 49, 91, 0.12);
+  color: #d8315b;
+  font-size: 0.84rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.heroLead {
+  max-width: 48rem;
+  margin: 1.25rem auto 0;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5b6472;
+}
+
+.heroMeta {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.metaChip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 12, 43, 0.08);
+  box-shadow: 0 8px 22px rgba(17, 12, 43, 0.05);
+  color: #4b5563;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+/* Main section */
+.section {
+  max-width: 78rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 1.25rem 6rem;
+}
+
+.headerBlock {
+  text-align: center;
+  max-width: 52rem;
+  margin: 0 auto 2.2rem;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 500;
+  color: #333;
+}
+
+.sectionLead {
+  margin: 0.9rem auto 0;
+  color: #667085;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.sectionLead code,
+.emptyText code {
+  background: #f6f7f9;
+  border: 1px solid rgba(17, 12, 43, 0.08);
+  border-radius: 8px;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.92em;
+}
+
+/* Empty */
+.emptyCard {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 12, 43, 0.08);
+  box-shadow: 0 10px 28px rgba(17, 12, 43, 0.05);
+  text-align: center;
+}
+
+.emptyTitle {
+  margin: 0 0 0.6rem;
+  color: #1f2937;
+  font-size: 1.2rem;
+}
+
+.emptyText {
+  margin: 0;
+  color: #667085;
+  line-height: 1.7;
+}
+
+/* Diary grid */
+.diaryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.diaryCard {
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  padding: 1.35rem 1.2rem 1.25rem;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 12, 43, 0.08);
+  box-shadow: 0 8px 24px rgba(17, 12, 43, 0.05);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.diaryCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(17, 12, 43, 0.09);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.9rem;
+}
+
+.datePill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.34rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(17, 12, 43, 0.05);
+  color: #4b5563;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.cardExcerpt {
+  margin: 0.85rem 0 0;
+  color: #667085;
+  line-height: 1.7;
+  font-size: 0.97rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(17, 12, 43, 0.07);
+  margin: 1rem 0 0.9rem;
+}
+
+.cardBody {
+  flex: 1;
+  min-height: 0;
+}
+
+.contentText {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  font-family: inherit;
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: #3f4752;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .diaryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-top: 3.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroSection {
+    padding-top: 4.5rem;
+    padding-bottom: 3.8rem;
+  }
+
+  .heroLead {
+    font-size: 0.98rem;
+  }
+
+  .diaryCard {
+    padding: 1.1rem 1rem;
+    border-radius: 18px;
+  }
+
+  .cardTitle {
+    font-size: 1.08rem;
+  }
+
+  .contentText {
+    font-size: 0.95rem;
+  }
+}
