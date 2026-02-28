@@ -1,10 +1,11 @@
 import fs from "fs/promises";
 import path from "path";
 import styles from "../../styles/pages/Diary.module.css";
+import DiaryClient from "./DiaryClient";
 
 export const dynamic = "force-static";
 
-type DiaryEntry = {
+export type DiaryEntry = {
   slug: string;
   date: string;
   title: string;
@@ -16,24 +17,6 @@ const DIARY_DIR = path.join(process.cwd(), "src", "app", "diary", "content");
 function parseDate(value: string) {
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? null : date;
-}
-
-function formatDate(value: string) {
-  const date = parseDate(value);
-  if (!date) return value;
-
-  return new Intl.DateTimeFormat("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    weekday: "long",
-  }).format(date);
-}
-
-function getExcerpt(text: string, maxLength = 180) {
-  const normalized = text.replace(/\s+/g, " ").trim();
-  if (normalized.length <= maxLength) return normalized;
-  return normalized.slice(0, maxLength).trim() + "...";
 }
 
 async function getDiaryEntries(): Promise<DiaryEntry[]> {
@@ -73,8 +56,8 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
 
         const slug = fileName.replace(/\.txt$/i, "");
         const fallbackDate = /^\d{4}-\d{2}-\d{2}$/.test(slug) ? slug : "";
-        const finalDate = date || fallbackDate || "Unknown date";
-        const finalTitle = title || `Diary - ${finalDate}`;
+        const finalDate = date || fallbackDate || "날짜 미상";
+        const finalTitle = title || `기록 - ${finalDate}`;
         const finalContent = bodyLines.join("\n").trim();
 
         return {
@@ -115,21 +98,21 @@ export default async function DiaryPage() {
           <span className={styles.sectionKicker}>Diary</span>
 
           <h1 className={styles.heroTitle}>
-            Quiet records,
+            조용히 남겨 둔 마음들,
             <br />
-            daily traces
+            날짜 위의 기록
           </h1>
 
           <p className={styles.heroLead}>
-            This page statically reads diary text files from
-            <code> app/diary/content</code> and displays them with their dates and content.
+            이곳에는 지나간 생각과 고민, 흔들리던 날의 감정들을 차분히 모아두었습니다.
+            원하는 날짜를 누르면 그날의 기록을 바로 펼쳐볼 수 있습니다.
           </p>
 
           <div className={styles.heroMeta}>
             <span className={styles.metaChip}>
-              {entries.length} entr{entries.length === 1 ? "y" : "ies"}
+              총 {entries.length}개의 기록
             </span>
-            <span className={styles.metaChip}>app/diary/content</span>
+            <span className={styles.metaChip}>src/app/diary/content</span>
           </div>
         </div>
       </section>
@@ -137,40 +120,22 @@ export default async function DiaryPage() {
       <section className={styles.section}>
         <div className={styles.headerBlock}>
           <span className={styles.sectionKicker}>Archive</span>
-          <h2 className={styles.sectionTitle}>Diary Entries</h2>
+          <h2 className={styles.sectionTitle}>날짜별 기록 보기</h2>
           <p className={styles.sectionLead}>
-            Add or edit <code>.txt</code> files inside <code>app/diary/content</code>,
-            then rebuild the site to update this page.
+            이 페이지는 단순한 메모 보관함이 아니라, 그날그날의 고민과 마음을 다시 들여다보는 작은 아카이브입니다.
+            아래 달력에서 날짜를 누르면 해당 기록만 바로 확인할 수 있습니다.
           </p>
         </div>
 
         {entries.length === 0 ? (
           <div className={styles.emptyCard}>
-            <h3 className={styles.emptyTitle}>No diary entries found</h3>
+            <h3 className={styles.emptyTitle}>아직 표시할 기록이 없습니다</h3>
             <p className={styles.emptyText}>
-              Put text files in <code>app/diary/content</code> and rebuild.
+              <code>src/app/diary/content</code> 폴더에 <code>.txt</code> 파일을 추가한 뒤 다시 빌드하면 이 페이지에 반영됩니다.
             </p>
           </div>
         ) : (
-          <div className={styles.diaryGrid}>
-            {entries.map((entry) => (
-              <article key={entry.slug} className={styles.diaryCard}>
-                <div className={styles.cardTop}>
-                  <span className={styles.datePill}>{formatDate(entry.date)}</span>
-                </div>
-
-                <h3 className={styles.cardTitle}>{entry.title}</h3>
-
-                <p className={styles.cardExcerpt}>{getExcerpt(entry.content)}</p>
-
-                <div className={styles.divider} />
-
-                <div className={styles.cardBody}>
-                  <pre className={styles.contentText}>{entry.content}</pre>
-                </div>
-              </article>
-            ))}
-          </div>
+          <DiaryClient entries={entries} />
         )}
       </section>
     </main>

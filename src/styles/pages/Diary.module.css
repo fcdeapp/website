@@ -80,6 +80,16 @@
   color: #5b6472;
 }
 
+.heroLead code,
+.sectionLead code,
+.emptyText code {
+  background: #f6f7f9;
+  border: 1px solid rgba(17, 12, 43, 0.08);
+  border-radius: 8px;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.92em;
+}
+
 .heroMeta {
   display: flex;
   justify-content: center;
@@ -111,7 +121,7 @@
 
 .headerBlock {
   text-align: center;
-  max-width: 52rem;
+  max-width: 56rem;
   margin: 0 auto 2.2rem;
 }
 
@@ -126,16 +136,7 @@
   margin: 0.9rem auto 0;
   color: #667085;
   font-size: 1rem;
-  line-height: 1.75;
-}
-
-.sectionLead code,
-.emptyText code {
-  background: #f6f7f9;
-  border: 1px solid rgba(17, 12, 43, 0.08);
-  border-radius: 8px;
-  padding: 0.15rem 0.45rem;
-  font-size: 0.92em;
+  line-height: 1.8;
 }
 
 /* Empty */
@@ -162,6 +163,203 @@
   line-height: 1.7;
 }
 
+/* Interactive layout */
+.diaryInteractiveWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.diaryTopLayout {
+  display: grid;
+  grid-template-columns: minmax(320px, 420px) minmax(0, 1fr);
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.calendarPanel,
+.selectedPanel {
+  background: #ffffff;
+  border: 1px solid rgba(17, 12, 43, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(17, 12, 43, 0.05);
+}
+
+.calendarPanel {
+  padding: 1.2rem 1rem 1.1rem;
+}
+
+.selectedPanel {
+  padding: 1.35rem 1.25rem 1.3rem;
+  min-height: 520px;
+}
+
+.panelHead {
+  margin-bottom: 1rem;
+}
+
+.panelTitle {
+  margin: 0;
+  font-size: 1.08rem;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.panelText {
+  margin: 0.45rem 0 0;
+  color: #667085;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.calendarMonthList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.monthBlock {
+  padding: 0.95rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfc 100%);
+  border: 1px solid rgba(17, 12, 43, 0.06);
+}
+
+.monthHeader {
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.weekHeader,
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.38rem;
+}
+
+.weekHeader {
+  margin-bottom: 0.45rem;
+}
+
+.weekCell {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #8b95a1;
+  font-weight: 700;
+  padding: 0.2rem 0;
+}
+
+.calendarCell {
+  min-height: 38px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.92rem;
+}
+
+.calendarCellEmpty {
+  background: transparent;
+}
+
+.calendarCellMuted {
+  background: rgba(17, 12, 43, 0.035);
+  color: #b5bcc7;
+}
+
+.calendarDateButton {
+  appearance: none;
+  border: 1px solid rgba(216, 49, 91, 0.1);
+  background: rgba(216, 49, 91, 0.08);
+  color: #b4234a;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.calendarDateButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(17, 12, 43, 0.07);
+  background: rgba(216, 49, 91, 0.14);
+}
+
+.calendarDateButtonActive {
+  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 12px 26px rgba(216, 49, 91, 0.18);
+}
+
+.selectedTop {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.9rem;
+}
+
+.selectedDatePill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.38rem 0.78rem;
+  border-radius: 999px;
+  background: rgba(17, 12, 43, 0.05);
+  color: #4b5563;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.selectedTitle {
+  margin: 0;
+  color: #1f2937;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.selectedDivider {
+  width: 100%;
+  height: 1px;
+  background: rgba(17, 12, 43, 0.07);
+  margin: 1rem 0 1rem;
+}
+
+.selectedContent {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.95;
+  color: #3f4752;
+}
+
+/* Archive */
+.archiveSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.archiveHead {
+  text-align: left;
+}
+
+.archiveTitle {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.archiveText {
+  margin: 0.45rem 0 0;
+  color: #667085;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
 /* Diary grid */
 .diaryGrid {
   display: grid;
@@ -172,18 +370,30 @@
 .diaryCard {
   display: flex;
   flex-direction: column;
-  min-height: 320px;
+  min-height: 260px;
   padding: 1.35rem 1.2rem 1.25rem;
   border-radius: 22px;
   background: #ffffff;
   border: 1px solid rgba(17, 12, 43, 0.08);
   box-shadow: 0 8px 24px rgba(17, 12, 43, 0.05);
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.diaryCardButton {
+  appearance: none;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
 }
 
 .diaryCard:hover {
   transform: translateY(-4px);
   box-shadow: 0 18px 40px rgba(17, 12, 43, 0.09);
+}
+
+.diaryCardActive {
+  border-color: rgba(216, 49, 91, 0.22);
+  box-shadow: 0 18px 42px rgba(216, 49, 91, 0.1);
 }
 
 .cardTop {
@@ -225,23 +435,24 @@
   margin: 1rem 0 0.9rem;
 }
 
-.cardBody {
-  flex: 1;
-  min-height: 0;
-}
-
-.contentText {
-  margin: 0;
-  white-space: pre-wrap;
-  word-break: keep-all;
-  overflow-wrap: break-word;
-  font-family: inherit;
-  font-size: 0.98rem;
-  line-height: 1.8;
-  color: #3f4752;
+.cardHint {
+  margin-top: auto;
+  color: #b4234a;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 /* Responsive */
+@media (max-width: 1080px) {
+  .diaryTopLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .selectedPanel {
+    min-height: auto;
+  }
+}
+
 @media (max-width: 900px) {
   .diaryGrid {
     grid-template-columns: 1fr;
@@ -262,16 +473,32 @@
     font-size: 0.98rem;
   }
 
+  .calendarPanel,
+  .selectedPanel,
   .diaryCard {
-    padding: 1.1rem 1rem;
     border-radius: 18px;
   }
 
-  .cardTitle {
+  .calendarPanel,
+  .selectedPanel {
+    padding: 1rem 0.9rem;
+  }
+
+  .diaryCard {
+    padding: 1.1rem 1rem;
+  }
+
+  .cardTitle,
+  .selectedTitle {
     font-size: 1.08rem;
   }
 
-  .contentText {
-    font-size: 0.95rem;
+  .selectedContent {
+    font-size: 0.96rem;
+  }
+
+  .calendarCell {
+    min-height: 34px;
+    font-size: 0.86rem;
   }
 }
