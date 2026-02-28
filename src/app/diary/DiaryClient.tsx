@@ -71,6 +71,7 @@ const WEEK_LABELS = ["일", "월", "화", "수", "목", "금", "토"];
 
 export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
   const [showIntro, setShowIntro] = useState(false);
+  const [isImageExpanded, setIsImageExpanded] = useState(false);
 
   const sortedEntries = useMemo(() => {
     return [...entries].sort((a, b) => {
@@ -92,6 +93,11 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
 
   const monthGroups = useMemo(() => buildMonthGroups(sortedEntries), [sortedEntries]);
 
+  const handleSelectEntry = (slug: string) => {
+    setSelectedSlug(slug);
+    setIsImageExpanded(false);
+  };
+
   return (
     <main className={styles.wrapper}>
       <section className={styles.heroSection}>
@@ -99,29 +105,28 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
         <div className={styles.heroBgGlow} aria-hidden />
 
         <div className={styles.heroInner}>
-          <div className={styles.hiddenToggleRow}>
+          <div className={styles.heroTopBar}>
+            <div />
             <button
               type="button"
-              className={styles.hiddenToggleButton}
+              className={styles.hiddenToggleButtonSecondary}
               onClick={() => setShowIntro((prev) => !prev)}
               aria-expanded={showIntro}
-              aria-label={showIntro ? "설명 숨기기" : "설명 보기"}
-              title={showIntro ? "설명 숨기기" : "설명 보기"}
             >
-              ···
+              {showIntro ? "설명 숨기기" : "설명 보기"}
             </button>
           </div>
 
-          <span className={styles.sectionKicker}>Diary</span>
-
-          <h1 className={styles.heroTitle}>
-            조용히 남겨 둔 마음들,
-            <br />
-            날짜 위의 기록
-          </h1>
-
           {showIntro && (
-            <>
+            <div className={styles.heroReveal}>
+              <span className={styles.sectionKicker}>Diary</span>
+
+              <h1 className={styles.heroTitle}>
+                조용히 남겨 둔 마음들,
+                <br />
+                날짜 위의 기록
+              </h1>
+
               <p className={styles.heroLead}>
                 이곳에는 지나간 생각과 고민, 흔들리던 날의 감정들을 차분히 모아두었습니다.
                 원하는 날짜를 누르면 그날의 기록을 바로 펼쳐볼 수 있습니다.
@@ -131,7 +136,7 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
                 <span className={styles.metaChip}>총 {entries.length}개의 기록</span>
                 <span className={styles.metaChip}>src/app/diary/content</span>
               </div>
-            </>
+            </div>
           )}
         </div>
       </section>
@@ -206,7 +211,7 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
                             className={`${styles.calendarCell} ${styles.calendarDateButton} ${
                               isActive ? styles.calendarDateButtonActive : ""
                             }`}
-                            onClick={() => setSelectedSlug(entry.slug)}
+                            onClick={() => handleSelectEntry(entry.slug)}
                             aria-pressed={isActive}
                             title={`${group.label} ${day}일 기록 보기`}
                           >
@@ -254,13 +259,23 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
                     <h3 className={styles.selectedTitle}>{selectedEntry.title}</h3>
 
                     {selectedEntry.imageDataUrl ? (
-                      <div className={styles.selectedImageWrap}>
-                        <img
-                          src={selectedEntry.imageDataUrl}
-                          alt={`${selectedEntry.title} 관련 이미지`}
-                          className={styles.selectedImage}
-                        />
-                      </div>
+                      <>
+                        <div className={styles.selectedImageWrapSmall}>
+                          <button
+                            type="button"
+                            className={styles.selectedImageButton}
+                            onClick={() => setIsImageExpanded(true)}
+                          >
+                            <img
+                              src={selectedEntry.imageDataUrl}
+                              alt={`${selectedEntry.title} 관련 이미지`}
+                              className={styles.selectedImageSmall}
+                            />
+                          </button>
+                        </div>
+
+                        <p className={styles.imageHint}>이미지를 누르면 크게 볼 수 있습니다.</p>
+                      </>
                     ) : null}
 
                     <div className={styles.selectedDivider} />
@@ -295,7 +310,7 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
                       className={`${styles.diaryCard} ${styles.diaryCardButton} ${
                         isActive ? styles.diaryCardActive : ""
                       }`}
-                      onClick={() => setSelectedSlug(entry.slug)}
+                      onClick={() => handleSelectEntry(entry.slug)}
                     >
                       <div className={styles.cardTop}>
                         <span className={styles.datePill}>{formatFullDate(entry.date)}</span>
@@ -328,6 +343,33 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
           </div>
         )}
       </section>
+
+      {selectedEntry?.imageDataUrl && isImageExpanded ? (
+        <div
+          className={styles.imageModalBackdrop}
+          onClick={() => setIsImageExpanded(false)}
+          role="button"
+          tabIndex={0}
+        >
+          <div
+            className={styles.imageModalContent}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              className={styles.imageModalClose}
+              onClick={() => setIsImageExpanded(false)}
+            >
+              닫기
+            </button>
+            <img
+              src={selectedEntry.imageDataUrl}
+              alt={`${selectedEntry.title} 크게 보기`}
+              className={styles.imageModalImage}
+            />
+          </div>
+        </div>
+      ) : null}
     </main>
   );
 }
