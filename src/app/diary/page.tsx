@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
-import styles from "../styles/pages/Diary.module.css";
+import styles from "../../styles/pages/Diary.module.css";
 
 export const dynamic = "force-static";
 
