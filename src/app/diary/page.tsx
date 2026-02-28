@@ -11,7 +11,7 @@ type DiaryEntry = {
   content: string;
 };
 
-const DIARY_DIR = path.join(process.cwd(), "content", "diary");
+const DIARY_DIR = path.join(process.cwd(), "app", "diary", "content");
 
 function parseDate(value: string) {
   const date = new Date(value);
@@ -38,8 +38,12 @@ function getExcerpt(text: string, maxLength = 180) {
 
 async function getDiaryEntries(): Promise<DiaryEntry[]> {
   try {
-    const fileNames = await fs.readdir(DIARY_DIR);
+    const dirStat = await fs.stat(DIARY_DIR);
+    if (!dirStat.isDirectory()) {
+      return [];
+    }
 
+    const fileNames = await fs.readdir(DIARY_DIR);
     const txtFiles = fileNames.filter((file) => file.toLowerCase().endsWith(".txt"));
 
     const entries = await Promise.all(
@@ -117,15 +121,15 @@ export default async function DiaryPage() {
           </h1>
 
           <p className={styles.heroLead}>
-            This page statically reads diary text files from a fixed directory and
-            displays them with their dates and content.
+            This page statically reads diary text files from
+            <code> app/diary/content</code> and displays them with their dates and content.
           </p>
 
           <div className={styles.heroMeta}>
             <span className={styles.metaChip}>
               {entries.length} entr{entries.length === 1 ? "y" : "ies"}
             </span>
-            <span className={styles.metaChip}>content/diary</span>
+            <span className={styles.metaChip}>app/diary/content</span>
           </div>
         </div>
       </section>
@@ -135,7 +139,7 @@ export default async function DiaryPage() {
           <span className={styles.sectionKicker}>Archive</span>
           <h2 className={styles.sectionTitle}>Diary Entries</h2>
           <p className={styles.sectionLead}>
-            Add or edit <code>.txt</code> files inside <code>content/diary</code>,
+            Add or edit <code>.txt</code> files inside <code>app/diary/content</code>,
             then rebuild the site to update this page.
           </p>
         </div>
@@ -144,7 +148,7 @@ export default async function DiaryPage() {
           <div className={styles.emptyCard}>
             <h3 className={styles.emptyTitle}>No diary entries found</h3>
             <p className={styles.emptyText}>
-              Put text files in <code>content/diary</code> and rebuild.
+              Put text files in <code>app/diary/content</code> and rebuild.
             </p>
           </div>
         ) : (
