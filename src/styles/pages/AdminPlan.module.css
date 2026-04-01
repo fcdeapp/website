@@ -423,6 +423,23 @@
   text-decoration: underline;
 }
 
+.itemWithLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.itemLogo {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
 /* 반응형 디자인 */
 @media (min-width: 768px) {
   .controlRow {

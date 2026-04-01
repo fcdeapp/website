@@ -71,6 +71,45 @@ const colorMap: Record<Category, string> = {
   "Miscellaneous": "#7f7f7f",
 };
 
+const logoMap: Record<string, string> = {
+  "Facebook Ads": "/logos/facebook-ads.png",
+  "TikTok Promote": "/logos/tiktok-promote.png",
+  "OpenAI ChatGPT": "/logos/openai-chatgpt.png",
+  "M Studio AI": "/logos/m-studio-ai.png",
+  "AIMLAPI": "/logos/aimlapi.png",
+  "Anthropic": "/logos/anthropic.png",
+  "Stability AI": "/logos/stability-ai.png",
+  "Resemble AI": "/logos/resemble-ai.png",
+  "Amazon AWS": "/logos/amazon-aws.png",
+  "Google Ads": "/logos/google-ads.png",
+  "Google": "/logos/google-cloud.png",
+  "MongoDB Cloud": "/logos/mongodb-cloud.png",
+  "Dynadot": "/logos/dynadot.png",
+  "Registration License Tax": "/logos/registration-license-tax.png",
+  "Corporate 공동인증서": "/logos/corporate-certificate.png",
+  "Court Administration Office": "/logos/court-administration-office.png",
+  "Office Lease": "/logos/office-lease.png",
+  "Microsoft": "/logos/microsoft.png",
+  "Adobe": "/logos/adobe.png",
+  "Expo": "/logos/expo.png",
+  "Replit": "/logos/replit.png",
+  "Parallels Desktop for Mac": "/logos/parallels.png",
+  "Apple": "/logos/apple.png",
+  "Daiso": "/logos/daiso.png",
+  "Printing & Scanning": "/logos/printing-scanning.png",
+
+  /* 현재 표에 raw 문자열로 남아 있는 것들 대응 */
+  "애플코리아유한회사": "/logos/apple.png",
+  "법원행정처": "/logos/court-administration-office.png",
+  "아성다이소": "/logos/daiso.png",
+  "(주)더싼(인쇄/스캔)": "/logos/printing-scanning.png",
+  "(주)더싼(인쇄/스캔) - 이미지 세 개 포함": "/logos/printing-scanning.png",
+};
+
+function getLogoSrc(itemName: string): string {
+  return logoMap[itemName] || "/logos/default.png";
+}
+
 const LOCAL_STORAGE_KEY = "tagCategories_v2";
 
 function normalizeTag(tag?: string): string {
@@ -783,7 +822,16 @@ export default function AdminPlan() {
                             {row.category}
                           </span>
                         </td>
-                        <td className={styles.itemName}>{row.item}</td>
+                        <td className={styles.itemName}>
+                          <div className={styles.itemWithLogo}>
+                            <img
+                              src={getLogoSrc(row.item)}
+                              alt={`${row.item} logo`}
+                              className={styles.itemLogo}
+                            />
+                            <span>{row.item}</span>
+                          </div>
+                        </td>
                         <td>{row.total.toLocaleString()} KRW</td>
                       </tr>
                     ))}
@@ -811,7 +859,16 @@ export default function AdminPlan() {
 
                       return (
                         <tr key={normalizedTag}>
-                          <td className={styles.itemName}>{normalizedTag}</td>
+                          <td className={styles.itemName}>
+                            <div className={styles.itemWithLogo}>
+                              <img
+                                src={getLogoSrc(normalizedTag)}
+                                alt={`${normalizedTag} logo`}
+                                className={styles.itemLogo}
+                              />
+                              <span>{normalizedTag}</span>
+                            </div>
+                          </td>
                           <td>
                             <select
                               className={styles.categorySelect}
