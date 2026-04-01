@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Calendar from "react-calendar";
 import axios from "axios";
 import { useConfig } from "../../context/ConfigContext";
@@ -8,7 +8,6 @@ import WebFooter from "../../components/WebFooter";
 import ScheduleModal from "../../components/ScheduleModal";
 import styles from "../../styles/pages/AdminPlan.module.css";
 
-// Chart.js 관련 import (npm install chart.js react-chartjs-2)
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -21,87 +20,259 @@ import {
 } from "chart.js";
 import { Bar, Pie } from "react-chartjs-2";
 
-// ChartJS 등록
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+  ArcElement
+);
 
-// 일정 인터페이스 (보조파일(supportFiles) 추가)
 export interface Schedule {
   _id: string;
-  eventDate: string; // 서버에서 받은 날짜 문자열
+  eventDate: string;
   location: string;
   title: string;
   description?: string;
   fileUrl?: string;
-  tag?: string;     // 추가: 태그
-  amount?: string;  // 추가: 금액
+  tag?: string;
+  amount?: string;
   supportFiles?: {
     fileUrl: string;
     fileKey: string;
   }[];
 }
 
+type ViewMode = "daily" | "weekly" | "monthly" | "analysis";
+
+const categories = [
+  "Cloud Infrastructure",
+  "AI Services",
+  "Advertising & Marketing",
+  "Software Licenses & Tools",
+  "Office & Administrative",
+  "Legal & Compliance",
+  "Domain & Certificates",
+  "Miscellaneous",
+] as const;
+
+type Category = (typeof categories)[number];
+
+const colorMap: Record<Category, string> = {
+  "Cloud Infrastructure": "#1f77b4",
+  "AI Services": "#ff7f0e",
+  "Advertising & Marketing": "#2ca02c",
+  "Software Licenses & Tools": "#d62728",
+  "Office & Administrative": "#9467bd",
+  "Legal & Compliance": "#8c564b",
+  "Domain & Certificates": "#e377c2",
+  "Miscellaneous": "#7f7f7f",
+};
+
+const LOCAL_STORAGE_KEY = "tagCategories_v2";
+
+function normalizeTag(tag?: string): string {
+  if (!tag) return "";
+
+  const raw = tag.trim();
+  const lower = raw.toLowerCase();
+
+  if (
+    lower.includes("google digital inc") ||
+    lower.includes("google* google digital") ||
+    lower.includes("mountain view usa")
+  ) {
+    return "Google";
+  }
+
+  if (lower.includes("amazon_aws") || lower.includes("aws")) {
+    return "Amazon AWS";
+  }
+
+  if (lower.includes("openai *chatgpt") || lower.includes("openai")) {
+    return "OpenAI ChatGPT";
+  }
+
+  if (lower.includes("adobe")) {
+    return "Adobe";
+  }
+
+  if (lower.includes("replit")) {
+    return "Replit";
+  }
+
+  if (lower.includes("mongodbcloud") || lower.includes("mongodb")) {
+    return "MongoDB Cloud";
+  }
+
+  if (lower.includes("anthropic")) {
+    return "Anthropic";
+  }
+
+  if (lower.includes("stability")) {
+    return "Stability AI";
+  }
+
+  if (lower.includes("aimlapi")) {
+    return "AIMLAPI";
+  }
+
+  if (lower.includes("m studio ai")) {
+    return "M Studio AI";
+  }
+
+  if (lower.includes("resemble")) {
+    return "Resemble AI";
+  }
+
+  if (lower.includes("650 industries") || lower.includes("expo")) {
+    return "Expo";
+  }
+
+  if (lower.includes("microso")) {
+    return "Microsoft";
+  }
+
+  if (lower.includes("parallels")) {
+    return "Parallels Desktop for Mac";
+  }
+
+  if (lower.includes("dynadot")) {
+    return "Dynadot";
+  }
+
+  if (lower.includes("apple")) {
+    return "Apple";
+  }
+
+  if (lower.includes("facebook") || lower.includes("facebk")) {
+    return "Facebook Ads";
+  }
+
+  if (lower.includes("tiktok")) {
+    return "TikTok Promote";
+  }
+
+  if (lower.includes("구글애드워즈")) {
+    return "Google Ads";
+  }
+
+  if (lower.includes("사무실계약")) {
+    return "Office Lease";
+  }
+
+  if (lower.includes("등록면허세")) {
+    return "Registration License Tax";
+  }
+
+  if (lower.includes("법원행정처")) {
+    return "Court Administration Office";
+  }
+
+  if (lower.includes("법인공동인증서")) {
+    return "Corporate 공동인증서";
+  }
+
+  if (lower.includes("더싼") || lower.includes("인쇄") || lower.includes("스캔")) {
+    return "Printing & Scanning";
+  }
+
+  if (lower.includes("다이소")) {
+    return "Daiso";
+  }
+
+  return raw;
+}
+
+function getDefaultCategory(normalizedTag: string): Category {
+  const key = normalizedTag.toLowerCase();
+
+  if (
+    key.includes("amazon aws") ||
+    key.includes("google") ||
+    key.includes("mongodb cloud")
+  ) {
+    return "Cloud Infrastructure";
+  }
+
+  if (
+    key.includes("openai") ||
+    key.includes("anthropic") ||
+    key.includes("stability") ||
+    key.includes("aimlapi") ||
+    key.includes("m studio ai") ||
+    key.includes("resemble")
+  ) {
+    return "AI Services";
+  }
+
+  if (
+    key.includes("google ads") ||
+    key.includes("facebook ads") ||
+    key.includes("tiktok promote")
+  ) {
+    return "Advertising & Marketing";
+  }
+
+  if (
+    key.includes("adobe") ||
+    key.includes("replit") ||
+    key.includes("expo") ||
+    key.includes("microsoft") ||
+    key.includes("parallels") ||
+    key.includes("apple")
+  ) {
+    return "Software Licenses & Tools";
+  }
+
+  if (
+    key.includes("office lease") ||
+    key.includes("daiso") ||
+    key.includes("printing & scanning")
+  ) {
+    return "Office & Administrative";
+  }
+
+  if (
+    key.includes("registration license tax") ||
+    key.includes("court administration office") ||
+    key.includes("corporate 공동인증서")
+  ) {
+    return "Legal & Compliance";
+  }
+
+  if (key.includes("dynadot")) {
+    return "Domain & Certificates";
+  }
+
+  return "Miscellaneous";
+}
+
 export default function AdminPlan() {
   const { SERVER_URL } = useConfig();
+
   const [date, setDate] = useState<Date>(new Date());
   const [schedules, setSchedules] = useState<Schedule[]>([]);
   const [modalOpen, setModalOpen] = useState(false);
-  // 수정 시 선택한 스케줄 데이터를 저장 (null이면 새 일정 생성)
   const [editingSchedule, setEditingSchedule] = useState<Schedule | null>(null);
-  const [viewMode, setViewMode] = useState<"daily" | "weekly" | "monthly" | "analysis">("daily");
-  // 각 일정 항목의 파일 보기 상태 (현재 열려있는 파일 뷰의 스케줄 id)
+  const [viewMode, setViewMode] = useState<ViewMode>("daily");
   const [openFileScheduleId, setOpenFileScheduleId] = useState<string | null>(null);
 
- const categories = [
-   "Cloud Infrastructure",
-   "AI Services",
-   "Advertising & Marketing",
-   "Software Licenses & Tools",
-   "Office & Administrative",
-   "Legal & Compliance",
-   "Domain & Certificates",
-   "Miscellaneous",
- ];
+  const [tagCategories, setTagCategories] = useState<Record<string, Category>>(() => {
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem(LOCAL_STORAGE_KEY);
+      return stored ? JSON.parse(stored) : {};
+    }
+    return {};
+  });
 
-const colorMap: { [key: string]: string } = {
-  "Cloud Infrastructure": "#1f77b4",
-  "AI Services":           "#ff7f0e",
-  "Advertising & Marketing":"#2ca02c",
-  "Software Licenses & Tools":"#d62728",
-  "Office & Administrative":"#9467bd",
-  "Legal & Compliance":    "#8c564b",
-  "Domain & Certificates": "#e377c2",
-  "Miscellaneous":         "#7f7f7f",
-};
-
- const [tagCategories, setTagCategories] = useState<{[tag:string]:string}>(() => {
-   if (typeof window !== "undefined") {
-     const stored = localStorage.getItem("tagCategories");
-     return stored ? JSON.parse(stored) : {};
-   }
-   return {};
- });
- useEffect(() => {
-   if (typeof window !== "undefined") {
-     localStorage.setItem("tagCategories", JSON.stringify(tagCategories));
-   }
- }, [tagCategories]);
-
- const getMonthlyCategoryAggregates = () => {
-   const result: { [month: string]: { [cat: string]: number } } = {};
-   schedules.forEach((schedule) => {
-     if (schedule.amount && schedule.tag) {
-       const month = new Date(schedule.eventDate).toISOString().slice(0, 7);
-       const cat = tagCategories[schedule.tag] || "Miscellaneous";
-       const val = parseFloat(schedule.amount);
-       if (!isNaN(val)) {
-         if (!result[month]) result[month] = {};
-         result[month][cat] = (result[month][cat] || 0) + val;
-       }
-     }
-   });
-   return result;
- };
- const monthlyCategoryAggregates = getMonthlyCategoryAggregates();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(tagCategories));
+    }
+  }, [tagCategories]);
 
   useEffect(() => {
     fetchSchedules();
@@ -119,85 +290,154 @@ const colorMap: { [key: string]: string } = {
     }
   };
 
-  // 일정들을 일별로 그룹화
+  const categorizedEntries = useMemo(() => {
+    return schedules
+      .filter((schedule) => schedule.amount && schedule.tag)
+      .map((schedule) => {
+        const normalizedTag = normalizeTag(schedule.tag);
+        const defaultCategory = getDefaultCategory(normalizedTag);
+        const selectedCategory = tagCategories[normalizedTag] || defaultCategory;
+        const amountValue = parseFloat(schedule.amount || "0");
+
+        return {
+          ...schedule,
+          normalizedTag,
+          defaultCategory,
+          category: selectedCategory,
+          amountValue: isNaN(amountValue) ? 0 : amountValue,
+        };
+      })
+      .filter((entry) => entry.amountValue > 0 && entry.normalizedTag);
+  }, [schedules, tagCategories]);
+
+  const tagAnalysisRows = useMemo(() => {
+    const grouped: Record<string, { category: Category; item: string; total: number }> = {};
+
+    categorizedEntries.forEach((entry) => {
+      const groupKey = `${entry.category}__${entry.normalizedTag}`;
+
+      if (!grouped[groupKey]) {
+        grouped[groupKey] = {
+          category: entry.category,
+          item: entry.normalizedTag,
+          total: 0,
+        };
+      }
+
+      grouped[groupKey].total += entry.amountValue;
+    });
+
+    return Object.values(grouped).sort((a, b) => {
+      if (a.category !== b.category) return a.category.localeCompare(b.category);
+      return b.total - a.total;
+    });
+  }, [categorizedEntries]);
+
+  const uniqueNormalizedTags = useMemo(() => {
+    return Array.from(
+      new Set(
+        schedules
+          .filter((schedule) => schedule.tag)
+          .map((schedule) => normalizeTag(schedule.tag))
+          .filter(Boolean)
+      )
+    ).sort((a, b) => a.localeCompare(b));
+  }, [schedules]);
+
+  const getCategoryForItem = (normalizedTag: string): Category => {
+    return tagCategories[normalizedTag] || getDefaultCategory(normalizedTag);
+  };
+
+  const handleCategoryChange = (normalizedTag: string, category: Category) => {
+    setTagCategories((prev) => ({
+      ...prev,
+      [normalizedTag]: category,
+    }));
+  };
+
   const groupSchedulesByDay = () => {
-    const grouped: { [key: string]: Schedule[] } = {};
+    const grouped: Record<string, Schedule[]> = {};
     schedules.forEach((schedule) => {
       const dayKey = new Date(schedule.eventDate).toLocaleDateString();
-      if (!grouped[dayKey]) {
-        grouped[dayKey] = [];
-      }
+      if (!grouped[dayKey]) grouped[dayKey] = [];
       grouped[dayKey].push(schedule);
     });
     return grouped;
   };
 
-  // 일정들을 주별로 그룹화 (해당 주의 일요일 기준)
   const groupSchedulesByWeek = () => {
-    const grouped: { [key: string]: Schedule[] } = {};
+    const grouped: Record<string, Schedule[]> = {};
     schedules.forEach((schedule) => {
       const dateObj = new Date(schedule.eventDate);
-      const dayOfWeek = dateObj.getDay(); // 0(일) ~ 6(토)
+      const dayOfWeek = dateObj.getDay();
       const startOfWeek = new Date(dateObj);
       startOfWeek.setDate(dateObj.getDate() - dayOfWeek);
       const weekKey = startOfWeek.toLocaleDateString();
-      if (!grouped[weekKey]) {
-        grouped[weekKey] = [];
-      }
+
+      if (!grouped[weekKey]) grouped[weekKey] = [];
       grouped[weekKey].push(schedule);
     });
     return grouped;
   };
 
-  // 일정들을 월별로 그룹화 (YYYY-MM 형식)
   const groupSchedulesByMonth = () => {
-    const grouped: { [key: string]: Schedule[] } = {};
+    const grouped: Record<string, Schedule[]> = {};
     schedules.forEach((schedule) => {
       const dateObj = new Date(schedule.eventDate);
       const monthKey = `${dateObj.getFullYear()}-${(dateObj.getMonth() + 1)
         .toString()
         .padStart(2, "0")}`;
-      if (!grouped[monthKey]) {
-        grouped[monthKey] = [];
-      }
+
+      if (!grouped[monthKey]) grouped[monthKey] = [];
       grouped[monthKey].push(schedule);
     });
     return grouped;
   };
 
-  // Analysis Mode: 월별 금액 합산, 태그별 금액 합산
   const getMonthlyAggregates = () => {
-    const monthlyTotals: { [key: string]: number } = {};
+    const monthlyTotals: Record<string, number> = {};
+
     schedules.forEach((schedule) => {
-      if (schedule.amount) {
-        const dateObj = new Date(schedule.eventDate);
-        const monthKey = `${dateObj.getFullYear()}-${(dateObj.getMonth() + 1)
-          .toString()
-          .padStart(2, "0")}`;
-        const value = parseFloat(schedule.amount);
-        if (!isNaN(value)) {
-          monthlyTotals[monthKey] = (monthlyTotals[monthKey] || 0) + value;
-        }
+      if (!schedule.amount) return;
+
+      const dateObj = new Date(schedule.eventDate);
+      const monthKey = `${dateObj.getFullYear()}-${(dateObj.getMonth() + 1)
+        .toString()
+        .padStart(2, "0")}`;
+
+      const value = parseFloat(schedule.amount);
+      if (!isNaN(value)) {
+        monthlyTotals[monthKey] = (monthlyTotals[monthKey] || 0) + value;
       }
     });
+
     return monthlyTotals;
   };
 
-  const getTagAggregates = () => {
-    const tagTotals: { [key: string]: number } = {};
-    schedules.forEach((schedule) => {
-      if (schedule.amount && schedule.tag) {
-        const value = parseFloat(schedule.amount);
-        if (!isNaN(value)) {
-          tagTotals[schedule.tag] = (tagTotals[schedule.tag] || 0) + value;
-        }
-      }
+  const getMonthlyCategoryAggregates = () => {
+    const result: Record<string, Record<string, number>> = {};
+
+    categorizedEntries.forEach((entry) => {
+      const month = new Date(entry.eventDate).toISOString().slice(0, 7);
+
+      if (!result[month]) result[month] = {};
+      result[month][entry.category] = (result[month][entry.category] || 0) + entry.amountValue;
     });
-    return tagTotals;
+
+    return result;
   };
 
-  // 선택한 뷰 모드에 따른 그룹 데이터
-  let groupedSchedules: { [key: string]: Schedule[] } = {};
+  const getAllTimeCategoryTotals = () => {
+    const totals: Record<string, number> = {};
+
+    categorizedEntries.forEach((entry) => {
+      totals[entry.category] = (totals[entry.category] || 0) + entry.amountValue;
+    });
+
+    return totals;
+  };
+
+  let groupedSchedules: Record<string, Schedule[]> = {};
   if (viewMode === "daily") {
     groupedSchedules = groupSchedulesByDay();
   } else if (viewMode === "weekly") {
@@ -206,30 +446,29 @@ const colorMap: { [key: string]: string } = {
     groupedSchedules = groupSchedulesByMonth();
   }
 
-  // 전체 기간: 카테고리별 합계 (tag → category 매핑 사용)
-  const getAllTimeCategoryTotals = () => {
-    const totals: { [cat: string]: number } = {};
-    schedules.forEach((s) => {
-      if (!s.amount || !s.tag) return;
-      const cat = tagCategories[s.tag] || "Miscellaneous";
-      const val = parseFloat(s.amount);
-      if (isNaN(val)) return;
-      totals[cat] = (totals[cat] || 0) + val;
-    });
-    return totals;
-  };
-
+  const monthlyAggregates = getMonthlyAggregates();
+  const monthlyCategoryAggregates = getMonthlyCategoryAggregates();
   const allTimeCategoryTotals = getAllTimeCategoryTotals();
 
-  // 파이 차트(Donut로 바꾸고 싶으면 Pie → Doughnut) 데이터
+  const monthlyChartData = {
+    labels: Object.keys(monthlyAggregates),
+    datasets: categories.map((cat) => ({
+      label: cat,
+      data: Object.keys(monthlyAggregates).map(
+        (month) => monthlyCategoryAggregates[month]?.[cat] || 0
+      ),
+      backgroundColor: colorMap[cat],
+    })),
+  };
+
   const pieChartData = {
     labels: categories,
     datasets: [
       {
-        data: categories.map((c) => allTimeCategoryTotals[c] || 0),
-        backgroundColor: categories.map((c) => colorMap[c]),
+        data: categories.map((cat) => allTimeCategoryTotals[cat] || 0),
+        backgroundColor: categories.map((cat) => colorMap[cat]),
         borderWidth: 1,
-        borderColor: "#fff",
+        borderColor: "#ffffff",
       },
     ],
   };
@@ -242,55 +481,24 @@ const colorMap: { [key: string]: string } = {
         callbacks: {
           label: (ctx: any) => {
             const label = ctx.label || "";
-            const v = ctx.parsed || 0;
-            return `${label}: ${v.toLocaleString()} KRW`;
+            const value = ctx.parsed || 0;
+            return `${label}: ${value.toLocaleString()} KRW`;
           },
         },
       },
     },
   };
 
-  // Analysis Mode 데이터
-  const monthlyAggregates = getMonthlyAggregates();
-  const tagAggregates = getTagAggregates();
-
-  // 차트 데이터 준비 (월별)
- const monthlyChartData = {
-    labels: Object.keys(monthlyAggregates),
-    datasets: categories.map((cat) => ({
-      label: cat,
-      data: Object.keys(monthlyAggregates).map(
-        (m) => monthlyCategoryAggregates[m]?.[cat] || 0
-      ),
-      backgroundColor: colorMap[cat],
-    })),
- };
-
-  // 차트 데이터 준비 (태그별)
-  const tagChartData = {
-    labels: Object.keys(tagAggregates),
-    datasets: [
-      {
-        label: "Tag Total Amount (KRW)",
-        data: Object.values(tagAggregates),
-        backgroundColor: "rgba(255, 102, 0, 0.6)",
-      },
-    ],
-  };
-
-  // 모달 닫기 시 새 일정 생성/수정 초기화
   const handleCloseModal = () => {
     setEditingSchedule(null);
     setModalOpen(false);
   };
 
-  // 일정 항목 수정 버튼 핸들러
   const handleEdit = (schedule: Schedule) => {
     setEditingSchedule(schedule);
     setModalOpen(true);
   };
 
-  // 파일 보기 버튼 클릭 핸들러 (인라인 토글)
   const toggleFileView = (scheduleId: string) => {
     if (openFileScheduleId === scheduleId) {
       setOpenFileScheduleId(null);
@@ -299,61 +507,82 @@ const colorMap: { [key: string]: string } = {
     }
   };
 
-  // 계산: 전체 첨부 파일 개수 (기본 파일 + 보조파일)
   const getTotalFileCount = (schedule: Schedule) => {
     let count = 0;
+
     if (schedule.fileUrl && schedule.fileUrl.trim() !== "") count++;
+
     if (schedule.supportFiles && schedule.supportFiles.length > 0) {
-      count += schedule.supportFiles.filter(sf => sf.fileUrl && sf.fileUrl.trim() !== "").length;
+      count += schedule.supportFiles.filter(
+        (sf) => sf.fileUrl && sf.fileUrl.trim() !== ""
+      ).length;
     }
+
     return count;
   };
 
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.headerTitle}>Admin Calendar - Schedule Manager</h1>
+        <div className={styles.headerTitleWrap}>
+          <h1 className={styles.headerTitleTop}>Admin Calendar</h1>
+          <p className={styles.headerTitleBottom}>Schedule Manager</p>
+        </div>
       </header>
+
       <main className={styles.main}>
         <div className={styles.topControls}>
           <div className={styles.controlRow}>
-            <Calendar
-              onChange={(value) => {
-                if (value instanceof Date) {
-                  setDate(value);
-                }
-              }}
-              value={date}
-              className={styles.calendar}
-            />
-            {/* 수직 버튼 그룹 */}
+            <div className={styles.calendar}>
+              <Calendar
+                onChange={(value) => {
+                  if (value instanceof Date) {
+                    setDate(value);
+                  }
+                }}
+                value={date}
+              />
+            </div>
+
             <div className={styles.viewToggleVertical}>
               <button
                 onClick={() => setViewMode("daily")}
-                className={`${styles.toggleButton} ${viewMode === "daily" ? styles.active : ""}`}
+                className={`${styles.toggleButton} ${
+                  viewMode === "daily" ? styles.active : ""
+                }`}
               >
                 Daily View
               </button>
+
               <button
                 onClick={() => setViewMode("weekly")}
-                className={`${styles.toggleButton} ${viewMode === "weekly" ? styles.active : ""}`}
+                className={`${styles.toggleButton} ${
+                  viewMode === "weekly" ? styles.active : ""
+                }`}
               >
                 Weekly View
               </button>
+
               <button
                 onClick={() => setViewMode("monthly")}
-                className={`${styles.toggleButton} ${viewMode === "monthly" ? styles.active : ""}`}
+                className={`${styles.toggleButton} ${
+                  viewMode === "monthly" ? styles.active : ""
+                }`}
               >
                 Monthly View
               </button>
+
               <button
                 onClick={() => setViewMode("analysis")}
-                className={`${styles.toggleButton} ${viewMode === "analysis" ? styles.active : ""}`}
+                className={`${styles.toggleButton} ${
+                  viewMode === "analysis" ? styles.active : ""
+                }`}
               >
                 Analysis Mode
               </button>
             </div>
           </div>
+
           <div className={styles.addButtonRow}>
             <button
               onClick={() => setModalOpen(true)}
@@ -363,6 +592,7 @@ const colorMap: { [key: string]: string } = {
             </button>
           </div>
         </div>
+
         <div className={styles.scheduleListContainer}>
           {viewMode !== "analysis" ? (
             <>
@@ -373,96 +603,119 @@ const colorMap: { [key: string]: string } = {
                   ? "Schedules by Week"
                   : "Schedules by Month"}
               </h2>
+
               {Object.keys(groupedSchedules).length === 0 && (
                 <p className={styles.noSchedule}>No schedules available.</p>
               )}
-               {Object.keys(groupedSchedules)
-                   .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())
-                   .map((groupKey) => (
-                <div key={groupKey} className={styles.scheduleGroup}>
-                  <h3 className={styles.groupTitle}>
-                    {viewMode === "daily"
-                      ? `Date: ${groupKey}`
-                      : viewMode === "weekly"
-                      ? `Week Starting: ${groupKey}`
-                      : `Month: ${groupKey}`}
-                  </h3>
-                  <ul className={styles.scheduleList}>
-                    {groupedSchedules[groupKey].map((schedule) => (
-                      <li key={schedule._id} className={styles.scheduleItem}>
-                        <div className={styles.scheduleHeader}>
-                          <span className={styles.scheduleTitle}>{schedule.title}</span>
-                          <span className={styles.scheduleLocation}>{schedule.location}</span>
-                        </div>
-                        {schedule.description && (
-                          <p className={styles.scheduleDescription}>{schedule.description}</p>
-                        )}
-                        {schedule.tag && (
-                          <p className={styles.scheduleTag}>Tag: {schedule.tag}</p>
-                        )}
-                        {/* 금액이 0보다 큰 경우에만 금액 정보를 표시 */}
-                        {schedule.amount && parseFloat(schedule.amount) > 0 && (
-                          <p className={styles.scheduleAmount}>Amount: {schedule.amount} KRW</p>
-                        )}
-                        {/* 파일 관련: 기본 파일 및 보조파일이 있을 경우 총 파일 수 표시 및 클릭 시 인라인 파일 목록 토글 */}
-                        {(schedule.fileUrl ||
-                          (schedule.supportFiles && schedule.supportFiles.length > 0)) && (
-                          <p className={styles.scheduleFile}>
-                            <a
-                              href="#"
-                              onClick={(e) => {
-                                e.preventDefault();
-                                toggleFileView(schedule._id);
-                              }}
-                            >
-                              View File ({getTotalFileCount(schedule)} {getTotalFileCount(schedule) > 1 ? "files" : "file"})
-                            </a>
-                          </p>
-                        )}
-                        {/* 인라인 파일 보기 영역 */}
-                        {openFileScheduleId === schedule._id && (
-                          <div className={styles.inlineFileList}>
-                            <ul>
-                              {schedule.fileUrl && schedule.fileUrl.trim() !== "" && (
-                                <li>
-                                  <a href={schedule.fileUrl} target="_blank" rel="noopener noreferrer">
-                                    Main File
-                                  </a>
-                                </li>
-                              )}
-                              {schedule.supportFiles &&
-                                schedule.supportFiles.map((file, index) =>
-                                  file.fileUrl && file.fileUrl.trim() !== "" ? (
-                                    <li key={index}>
-                                      <a href={file.fileUrl} target="_blank" rel="noopener noreferrer">
-                                        Support File {index + 1}
-                                      </a>
-                                    </li>
-                                  ) : null
-                                )}
-                              {getTotalFileCount(schedule) === 0 && (
-                                <li>No attached files.</li>
-                              )}
-                            </ul>
+
+              {Object.keys(groupedSchedules)
+                .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())
+                .map((groupKey) => (
+                  <div key={groupKey} className={styles.scheduleGroup}>
+                    <h3 className={styles.groupTitle}>
+                      {viewMode === "daily"
+                        ? `Date: ${groupKey}`
+                        : viewMode === "weekly"
+                        ? `Week Starting: ${groupKey}`
+                        : `Month: ${groupKey}`}
+                    </h3>
+
+                    <ul className={styles.scheduleList}>
+                      {groupedSchedules[groupKey].map((schedule) => (
+                        <li key={schedule._id} className={styles.scheduleItem}>
+                          <div className={styles.scheduleHeader}>
+                            <span className={styles.scheduleTitle}>{schedule.title}</span>
+                            <span className={styles.scheduleLocation}>
+                              {schedule.location}
+                            </span>
                           </div>
-                        )}
-                        {/* 수정 버튼 */}
-                        <button 
-                          onClick={() => handleEdit(schedule)}
-                          className={styles.editButton}
-                        >
-                          Edit
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+
+                          {schedule.description && (
+                            <p className={styles.scheduleDescription}>
+                              {schedule.description}
+                            </p>
+                          )}
+
+                          {schedule.tag && (
+                            <p className={styles.scheduleTag}>Tag: {schedule.tag}</p>
+                          )}
+
+                          {schedule.amount && parseFloat(schedule.amount) > 0 && (
+                            <p className={styles.scheduleAmount}>
+                              Amount: {parseFloat(schedule.amount).toLocaleString()} KRW
+                            </p>
+                          )}
+
+                          {(schedule.fileUrl ||
+                            (schedule.supportFiles &&
+                              schedule.supportFiles.length > 0)) && (
+                            <p className={styles.scheduleFile}>
+                              <a
+                                href="#"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  toggleFileView(schedule._id);
+                                }}
+                              >
+                                View File ({getTotalFileCount(schedule)}{" "}
+                                {getTotalFileCount(schedule) > 1 ? "files" : "file"})
+                              </a>
+                            </p>
+                          )}
+
+                          {openFileScheduleId === schedule._id && (
+                            <div className={styles.inlineFileList}>
+                              <ul>
+                                {schedule.fileUrl && schedule.fileUrl.trim() !== "" && (
+                                  <li>
+                                    <a
+                                      href={schedule.fileUrl}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      Main File
+                                    </a>
+                                  </li>
+                                )}
+
+                                {schedule.supportFiles &&
+                                  schedule.supportFiles.map((file, index) =>
+                                    file.fileUrl && file.fileUrl.trim() !== "" ? (
+                                      <li key={index}>
+                                        <a
+                                          href={file.fileUrl}
+                                          target="_blank"
+                                          rel="noopener noreferrer"
+                                        >
+                                          Support File {index + 1}
+                                        </a>
+                                      </li>
+                                    ) : null
+                                  )}
+
+                                {getTotalFileCount(schedule) === 0 && (
+                                  <li>No attached files.</li>
+                                )}
+                              </ul>
+                            </div>
+                          )}
+
+                          <button
+                            onClick={() => handleEdit(schedule)}
+                            className={styles.editButton}
+                          >
+                            Edit
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
             </>
           ) : (
-            // Analysis Mode 화면: 월별/태그별 금액 합산 표와 차트
             <div className={styles.analysisContainer}>
               <h2 className={styles.sectionTitle}>Monthly Payment Analysis</h2>
+
               {Object.entries(monthlyAggregates).filter(([, total]) => total > 0).length === 0 ? (
                 <p className={styles.noSchedule}>No payment data available.</p>
               ) : (
@@ -477,6 +730,7 @@ const colorMap: { [key: string]: string } = {
                     <tbody>
                       {Object.entries(monthlyAggregates)
                         .filter(([, total]) => total > 0)
+                        .sort(([a], [b]) => a.localeCompare(b))
                         .map(([month, total]) => (
                           <tr key={month}>
                             <td>{month}</td>
@@ -485,83 +739,120 @@ const colorMap: { [key: string]: string } = {
                         ))}
                     </tbody>
                   </table>
+
                   <div className={styles.chartContainer}>
-                    <Bar data={monthlyChartData} options={{ responsive: true, plugins: { legend: { position: 'top' } } }} />
+                    <Bar
+                      data={monthlyChartData}
+                      options={{
+                        responsive: true,
+                        plugins: { legend: { position: "top" } },
+                        scales: {
+                          x: { stacked: true },
+                          y: { stacked: true },
+                        },
+                      }}
+                    />
                   </div>
                 </>
               )}
 
-              <h2 className={styles.sectionTitle}>Tag Payment Analysis</h2>
-              {Object.entries(tagAggregates).filter(([, total]) => total > 0).length === 0 ? (
-                <p className={styles.noSchedule}>No tag data available.</p>
+              <h2 className={styles.sectionTitle}>Grouped Payment Analysis</h2>
+              <p className={styles.analysisSubtitle}>
+                Same normalized item names are merged into one row in analysis mode.
+              </p>
+
+              {tagAnalysisRows.length === 0 ? (
+                <p className={styles.noSchedule}>No grouped payment data available.</p>
               ) : (
-                <>
-                  <table className={styles.analysisTable}>
-                    <thead>
-                      <tr>
-                        <th>Category</th>
-                        <th>Tag</th>
-                        <th>Total Amount (KRW)</th>
+                <table className={styles.analysisTable}>
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Grouped Item</th>
+                      <th>Total Amount (KRW)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {tagAnalysisRows.map((row) => (
+                      <tr key={`${row.category}-${row.item}`}>
+                        <td>
+                          <span
+                            className={styles.categoryBadge}
+                            style={{ backgroundColor: colorMap[row.category] }}
+                          >
+                            {row.category}
+                          </span>
+                        </td>
+                        <td className={styles.itemName}>{row.item}</td>
+                        <td>{row.total.toLocaleString()} KRW</td>
                       </tr>
-                    </thead>
-                    <tbody>
-                       {Object.entries(tagAggregates)
-                         .filter(([, total]) => total > 0)
-                         .map(([tag, total]) => (
-                           <tr key={tag}>
-                             {/* 분류 드롭다운 */}
-                             <td>
-                               <select
-                                 style={{ color: colorMap[tagCategories[tag] || "Miscellaneous"] }}
-                                 value={tagCategories[tag] || "Miscellaneous"}
-                                 onChange={(e) =>
-                                   setTagCategories({
-                                     ...tagCategories,
-                                     [tag]: e.target.value,
-                                   })
-                                 }
-                               >
-                                 {categories.map((cat) => (
-                                   <option key={cat} value={cat}>
-                                     {cat}
-                                   </option>
-                                 ))}
-                               </select>
-                             </td>
-                             <td>{tag}</td>
-                             <td>{total.toLocaleString()} KRW</td>
-                           </tr>
-                         ))}
-                    </tbody>
-                  </table>
-                   <div className={styles.chartContainer}>
-                     {/* 누적 막대 옵션 추가 */}
-                     <Bar
-                       data={monthlyChartData}
-                       options={{
-                         responsive: true,
-                         plugins: { legend: { position: "top" } },
-                         scales: { x: { stacked: true }, y: { stacked: true } },
-                       }}
-                     />
-                   </div>
-                </>
+                    ))}
+                  </tbody>
+                </table>
               )}
 
-              {/* === All-Time by Category (Pie) === */}
+              <h2 className={styles.sectionTitle}>Category Defaults & Manual Overrides</h2>
+
+              {uniqueNormalizedTags.length === 0 ? (
+                <p className={styles.noSchedule}>No tag data available.</p>
+              ) : (
+                <table className={styles.analysisTable}>
+                  <thead>
+                    <tr>
+                      <th>Grouped Item</th>
+                      <th>Category</th>
+                      <th>Default Rule</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {uniqueNormalizedTags.map((normalizedTag) => {
+                      const currentCategory = getCategoryForItem(normalizedTag);
+                      const defaultCategory = getDefaultCategory(normalizedTag);
+
+                      return (
+                        <tr key={normalizedTag}>
+                          <td className={styles.itemName}>{normalizedTag}</td>
+                          <td>
+                            <select
+                              className={styles.categorySelect}
+                              style={{ color: colorMap[currentCategory] }}
+                              value={currentCategory}
+                              onChange={(e) =>
+                                handleCategoryChange(
+                                  normalizedTag,
+                                  e.target.value as Category
+                                )
+                              }
+                            >
+                              {categories.map((cat) => (
+                                <option key={cat} value={cat}>
+                                  {cat}
+                                </option>
+                              ))}
+                            </select>
+                          </td>
+                          <td>{defaultCategory}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              )}
+
               <h2 className={styles.sectionTitle}>All-Time Spend by Category</h2>
-              {categories.every((c) => (allTimeCategoryTotals[c] || 0) === 0) ? (
+
+              {categories.every((cat) => (allTimeCategoryTotals[cat] || 0) === 0) ? (
                 <p className={styles.noSchedule}>No category spend data available.</p>
               ) : (
                 <div className={styles.chartContainer}>
                   <Pie data={pieChartData} options={pieOptions} />
                 </div>
               )}
-
             </div>
           )}
         </div>
       </main>
+
       {modalOpen && (
         <ScheduleModal
           onClose={handleCloseModal}
@@ -572,12 +863,13 @@ const colorMap: { [key: string]: string } = {
                   ...editingSchedule,
                   description: editingSchedule.description ?? "",
                   tag: editingSchedule.tag ?? "",
-                  amount: editingSchedule.amount ?? ""
+                  amount: editingSchedule.amount ?? "",
                 }
               : undefined
           }
         />
       )}
+
       <WebFooter />
     </div>
   );

@@ -1,290 +1,437 @@
 /* 기본 레이아웃 */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    box-sizing: border-box;
-  }
-  
-  /* 헤더 스타일 */
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #f5f7fa;
-    border-bottom: 1px solid #eaeaea;
-    margin-bottom: 2rem;
-  }
-  .headerTitle {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0;
-  }
-  
-  /* 메인 영역 */
-  .main {
-    flex: 1;
-    padding: 1rem;
-    animation: fadeIn 0.8s ease-in-out;
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  /* 상단 컨트롤 영역 */
-  .topControls {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  .controlRow {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .addButtonRow {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* 캘린더 */
-  .calendar {
-    width: 100%;
-    max-width: 320px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-  }
-  
-  /* 수직 뷰 토글 버튼 그룹 */
-  .viewToggleVertical {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    width: 150px;
-  }
-  .toggleButton {
-    background-color: transparent;
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.8rem;
-    color: #555;
-    transition: background 0.3s, color 0.3s;
-    text-align: center;
-  }
-  .toggleButton:hover {
-    background-color: #f0f0f0;
-  }
-  .active {
-    background-color: #0070f3;
-    color: #ffffff;
-    border-color: #0070f3;
-  }
-  
-  /* 스케줄 추가 버튼 */
-  .addScheduleButton {
-    background-color: #f7f7f7;
-    color: #888;
-    border: 1px solid #ccc;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
-  }
-  .addScheduleButton:hover {
-    background-color: #eaeaea;
-    transform: translateY(-2px);
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 
-  /* 기존 스케줄 추가 버튼 스타일 재사용 */
+/* 헤더 스타일 */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 2rem;
+}
+
+.headerTitleWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.headerTitleTop {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.1;
+  color: #111827;
+}
+
+.headerTitleBottom {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+}
+
+/* 메인 영역 */
+.main {
+  flex: 1;
+  padding: 1rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 상단 컨트롤 영역 */
+.topControls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.controlRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.addButtonRow {
+  display: flex;
+  justify-content: center;
+}
+
+/* 캘린더 */
+.calendar {
+  width: 100%;
+  max-width: 340px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* react-calendar 내부 스타일 */
+.calendar :global(.react-calendar) {
+  width: 100%;
+  border: none;
+  background: #ffffff;
+  color: #111827;
+  font-family: inherit;
+}
+
+.calendar :global(.react-calendar__navigation) {
+  background: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  margin-bottom: 0;
+}
+
+.calendar :global(.react-calendar__navigation button) {
+  background: #ffffff;
+  color: #111827;
+  min-width: 44px;
+  font-size: 0.95rem;
+}
+
+.calendar :global(.react-calendar__navigation button:enabled:hover),
+.calendar :global(.react-calendar__navigation button:enabled:focus) {
+  background: #f8fafc;
+}
+
+.calendar :global(.react-calendar__month-view__weekdays) {
+  background: #ffffff;
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.calendar :global(.react-calendar__tile) {
+  background: #ffffff;
+  color: #111827;
+  border-radius: 8px;
+}
+
+.calendar :global(.react-calendar__tile:enabled:hover),
+.calendar :global(.react-calendar__tile:enabled:focus) {
+  background: #f3f4f6;
+}
+
+.calendar :global(.react-calendar__tile--active) {
+  background: #111827 !important;
+  color: #ffffff !important;
+}
+
+.calendar :global(.react-calendar__tile--now) {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+/* 수직 뷰 토글 버튼 그룹 */
+.viewToggleVertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 170px;
+}
+
+.toggleButton {
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #4b5563;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  text-align: center;
+}
+
+.toggleButton:hover {
+  background-color: #f3f4f6;
+}
+
+.active {
+  background-color: #111827;
+  color: #ffffff;
+  border-color: #111827;
+}
+
+/* 스케줄 추가 버튼 */
+.addScheduleButton {
+  background-color: #111827;
+  color: #ffffff;
+  border: 1px solid #111827;
+  padding: 0.55rem 0.95rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, opacity 0.3s;
+}
+
+.addScheduleButton:hover {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+/* 수정 버튼 */
 .editButton {
-    background-color: #f7f7f7;
-    color: #888;
-    border: 1px solid #ccc;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+  background-color: #f9fafb;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
 }
+
 .editButton:hover {
-    background-color: #eaeaea;
-    transform: translateY(-2px);
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
 }
-  
-  /* 일정 리스트 영역 */
-  .scheduleListContainer {
-    background-color: #fafafa;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-    margin-bottom: 2rem;
-  }
-  .sectionTitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  .noSchedule {
-    text-align: center;
-    color: #888;
-    font-size: 0.95rem;
-  }
-  
-  /* 스케줄 그룹 및 아이템 */
-  .scheduleGroup {
-    margin-bottom: 2rem;
-  }
-  .groupTitle {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #0070f3;
-  }
-  
-  /* 스케줄 항목 리스트: 기본적으로 세로 레이아웃, 넓은 화면에서는 2열 레이아웃 */
+
+/* 일정 리스트 영역 */
+.scheduleListContainer {
+  background-color: #fafafa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.noSchedule {
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+/* 스케줄 그룹 및 아이템 */
+.scheduleGroup {
+  margin-bottom: 2rem;
+}
+
+.groupTitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+/* 스케줄 항목 리스트 */
+.scheduleList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
   .scheduleList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-  @media (min-width: 1024px) {
-    .scheduleList {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-    }
-  }
-  
-  /* 스케줄 아이템 스타일 */
-  .scheduleItem {
-    background-color: #ffffff;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #eaeaea;
-    border-radius: 6px;
-    transition: transform 0.3s ease;
-  }
-  .scheduleItem:hover {
-    transform: translateY(-2px);
-  }
-  .scheduleHeader {
-    display: flex;
+}
+
+/* 스케줄 아이템 스타일 */
+.scheduleItem {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.scheduleItem:hover {
+  transform: translateY(-2px);
+}
+
+.scheduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.scheduleTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.scheduleLocation {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.scheduleDescription {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin: 0.5rem 0;
+}
+
+.scheduleTag {
+  font-size: 0.85rem;
+  color: #2563eb;
+  margin: 0.3rem 0;
+}
+
+.scheduleAmount {
+  font-size: 0.85rem;
+  color: #ea580c;
+  margin: 0.3rem 0;
+}
+
+.scheduleFile a {
+  font-size: 0.8rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.scheduleFile a:hover {
+  text-decoration: underline;
+}
+
+/* Analysis Mode 스타일 */
+.analysisContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.analysisTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.analysisTable th,
+.analysisTable td {
+  border: 1px solid #e5e7eb;
+  padding: 0.7rem 0.6rem;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+.analysisTable th {
+  background-color: #f9fafb;
+  color: #111827;
+  font-weight: 600;
+}
+
+.chartContainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.categorySelect {
+  min-width: 220px;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.analysisSubtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.categoryBadge {
+  display: inline-block;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.itemName {
+  font-weight: 500;
+  color: #111827;
+}
+
+/* 인라인 파일 보기 영역 */
+.inlineFileList {
+  background-color: #fafafa;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inlineFileList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inlineFileList li {
+  margin-bottom: 0.5rem;
+}
+
+.inlineFileList a {
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.inlineFileList a:hover {
+  text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (min-width: 768px) {
+  .controlRow {
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-  .scheduleTitle {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #333;
-  }
-  .scheduleLocation {
-    font-size: 0.8rem;
-    color: #777;
-  }
-  .scheduleDescription {
-    font-size: 0.85rem;
-    color: #555;
-    margin: 0.5rem 0;
-  }
-  .scheduleTag {
-    font-size: 0.85rem;
-    color: #0070f3;
-    margin: 0.3rem 0;
-  }
-  .scheduleAmount {
-    font-size: 0.85rem;
-    color: #ff6600;
-    margin: 0.3rem 0;
-  }
-  .scheduleFile a {
-    font-size: 0.8rem;
-    color: #0070f3;
-    text-decoration: none;
-  }
-  .scheduleFile a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Analysis Mode 스타일 */
-  .analysisContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .analysisTable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-  }
-  .analysisTable th,
-  .analysisTable td {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
-    text-align: center;
-  }
-  .chartContainer {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    align-items: flex-start;
   }
 
-  /* 인라인 파일 보기 영역 */
-  .inlineFileList {
-    background-color: #fafafa;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .calendar {
+    max-width: 340px;
   }
-  
-  .inlineFileList ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .inlineFileList li {
-    margin-bottom: 0.5rem;
-  }
-  
-  .inlineFileList a {
-    color: #555;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .inlineFileList a:hover {
-    text-decoration: underline;
-  }  
-  
-  /* 반응형 디자인 */
-  @media (min-width: 768px) {
-    .controlRow {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .calendar {
-      max-width: 300px;
-    }
-  }
-  
+}
