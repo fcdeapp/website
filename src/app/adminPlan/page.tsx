@@ -190,8 +190,16 @@ function getDefaultCategory(normalizedTag: string): Category {
   const key = normalizedTag.toLowerCase();
 
   if (
+    key.includes("google ads") ||
+    key.includes("facebook ads") ||
+    key.includes("tiktok promote")
+  ) {
+    return "Advertising & Marketing";
+  }
+
+  if (
     key.includes("amazon aws") ||
-    key.includes("google") ||
+    key === "google" ||
     key.includes("mongodb cloud")
   ) {
     return "Cloud Infrastructure";
@@ -206,14 +214,6 @@ function getDefaultCategory(normalizedTag: string): Category {
     key.includes("resemble")
   ) {
     return "AI Services";
-  }
-
-  if (
-    key.includes("google ads") ||
-    key.includes("facebook ads") ||
-    key.includes("tiktok promote")
-  ) {
-    return "Advertising & Marketing";
   }
 
   if (
