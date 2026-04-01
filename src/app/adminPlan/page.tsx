@@ -462,7 +462,7 @@ export default function AdminPlan() {
   };
 
   const pieChartData = {
-    labels: categories,
+    labels: Array.from(categories),
     datasets: [
       {
         data: categories.map((cat) => allTimeCategoryTotals[cat] || 0),
