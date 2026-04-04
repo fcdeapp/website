@@ -942,6 +942,80 @@ export default function AdminPlan() {
                   </div>
                 </>
               )}
+
+              <h2 className={styles.sectionTitle}>Grouped Payment Analysis</h2>
+              <p className={styles.analysisSubtitle}>
+                Same normalized item names are merged into one row in analysis mode.
+              </p>
+
+              {tagAnalysisRows.length === 0 ? (
+                <p className={styles.noSchedule}>No grouped payment data available.</p>
+              ) : (
+                <table className={styles.analysisTable}>
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Logo</th>
+                      <th>Item</th>
+                      <th>Total Amount (KRW)</th>
+                      <th>Change Category</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {tagAnalysisRows.map((row) => (
+                      <tr key={`${row.category}-${row.item}`}>
+                        <td>
+                          <span
+                            className={styles.categoryBadge}
+                            style={{ backgroundColor: colorMap[row.category] }}
+                          >
+                            {row.category}
+                          </span>
+                        </td>
+                        <td>
+                          <img
+                            src={getLogoSrc(row.item)}
+                            alt={row.item}
+                            className={styles.itemLogo}
+                          />
+                        </td>
+                        <td>
+                          <div className={styles.itemWithLogo}>
+                            <span className={styles.itemName}>{row.item}</span>
+                          </div>
+                        </td>
+                        <td>{row.total.toLocaleString()} KRW</td>
+                        <td>
+                          <select
+                            className={styles.categorySelect}
+                            value={getCategoryForItem(row.item)}
+                            onChange={(e) =>
+                              handleCategoryChange(row.item, e.target.value as Category)
+                            }
+                          >
+                            {categories.map((cat) => (
+                              <option key={cat} value={cat}>
+                                {cat}
+                              </option>
+                            ))}
+                          </select>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+
+              <h2 className={styles.sectionTitle}>Category Distribution</h2>
+
+              {Object.values(allTimeCategoryTotals).every((value) => value === 0) ? (
+                <p className={styles.noSchedule}>No category distribution data available.</p>
+              ) : (
+                <div className={styles.chartContainer}>
+                  <Pie data={pieChartData} options={pieOptions} />
+                </div>
+              )}
+
             </div>
           )}
         </div>
