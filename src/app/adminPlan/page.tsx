@@ -46,6 +46,7 @@ export interface Schedule {
 }
 
 type ViewMode = "daily" | "weekly" | "monthly" | "analysis";
+type AnalysisRangeMode = "monthly" | "cumulative";
 
 const categories = [
   "Cloud Infrastructure",
@@ -80,28 +81,43 @@ const logoMap: Record<string, string> = {
   "Anthropic": "/logos/anthropic.png",
   "Stability AI": "/logos/stability-ai.png",
   "Resemble AI": "/logos/resemble-ai.png",
+  "Replicate": "/logos/replicate.png",
+
   "Amazon AWS": "/logos/amazon-aws.png",
   "Google Ads": "/logos/google-ads.png",
   "Google": "/logos/google-cloud.png",
   "MongoDB Cloud": "/logos/mongodb-cloud.png",
+
   "Dynadot": "/logos/dynadot.png",
+
   "Registration License Tax": "/logos/registration-license-tax.png",
   "Corporate 공동인증서": "/logos/corporate-certificate.png",
   "Court Administration Office": "/logos/court-administration-office.png",
+  "Law Firm / Legal Service": "/logos/legal-service.png",
+
   "Office Lease": "/logos/office-lease.png",
+  "Daiso": "/logos/daiso.png",
+  "Printing & Scanning": "/logos/printing-scanning.png",
+
   "Microsoft": "/logos/microsoft.png",
   "Adobe": "/logos/adobe.png",
   "Expo": "/logos/expo.png",
   "Replit": "/logos/replit.png",
   "Parallels Desktop for Mac": "/logos/parallels.png",
   "Apple": "/logos/apple.png",
-  "Daiso": "/logos/daiso.png",
-  "Printing & Scanning": "/logos/printing-scanning.png",
+  "GitHub": "/logos/github.png",
 
   /* 현재 표에 raw 문자열로 남아 있는 것들 대응 */
   "애플코리아유한회사": "/logos/apple.png",
   "법원행정처": "/logos/court-administration-office.png",
   "아성다이소": "/logos/daiso.png",
+  "구글애드워즈": "/logos/google-ads.png",
+  "사무실계약": "/logos/office-lease.png",
+  "법무법인미션": "/logos/legal-service.png",
+  "용인시등록면허세": "/logos/registration-license-tax.png",
+  "CLAUDE.AI": "/logos/anthropic.png",
+  "REPLICATE": "/logos/replicate.png",
+  "GITHUB, INC.": "/logos/github.png",
   "(주)더싼(인쇄/스캔)": "/logos/printing-scanning.png",
   "(주)더싼(인쇄/스캔) - 이미지 세 개 포함": "/logos/printing-scanning.png",
 };
@@ -117,6 +133,8 @@ function normalizeTag(tag?: string): string {
 
   const raw = tag.trim();
   const lower = raw.toLowerCase();
+  const normalized = raw.normalize("NFC");
+  const normalizedLower = normalized.toLowerCase();
 
   if (
     lower.includes("google digital inc") ||
@@ -126,11 +144,19 @@ function normalizeTag(tag?: string): string {
     return "Google";
   }
 
-  if (lower.includes("amazon_aws") || lower.includes("aws")) {
+  if (
+    lower.includes("amazon_aws") ||
+    lower.includes("aws") ||
+    normalizedLower.includes("amazon aws")
+  ) {
     return "Amazon AWS";
   }
 
-  if (lower.includes("openai *chatgpt") || lower.includes("openai")) {
+  if (
+    lower.includes("openai *chatgpt") ||
+    lower.includes("openai") ||
+    normalizedLower.includes("chatgpt")
+  ) {
     return "OpenAI ChatGPT";
   }
 
@@ -150,6 +176,10 @@ function normalizeTag(tag?: string): string {
     return "Anthropic";
   }
 
+  if (lower.includes("claude.ai") || normalizedLower.includes("claude")) {
+    return "Anthropic";
+  }
+
   if (lower.includes("stability")) {
     return "Stability AI";
   }
@@ -166,12 +196,20 @@ function normalizeTag(tag?: string): string {
     return "Resemble AI";
   }
 
+  if (lower.includes("replicate")) {
+    return "Replicate";
+  }
+
   if (lower.includes("650 industries") || lower.includes("expo")) {
     return "Expo";
   }
 
   if (lower.includes("microso")) {
     return "Microsoft";
+  }
+
+  if (lower.includes("github")) {
+    return "GitHub";
   }
 
   if (lower.includes("parallels")) {
@@ -182,7 +220,7 @@ function normalizeTag(tag?: string): string {
     return "Dynadot";
   }
 
-  if (lower.includes("apple")) {
+  if (lower.includes("apple") || normalized.includes("애플")) {
     return "Apple";
   }
 
@@ -194,35 +232,51 @@ function normalizeTag(tag?: string): string {
     return "TikTok Promote";
   }
 
-  if (lower.includes("구글애드워즈")) {
+  if (
+    normalized.includes("구글애드워즈") ||
+    normalized.includes("구글 애드워즈") ||
+    normalized.includes("구글애드") ||
+    normalized.includes("구글 광고")
+  ) {
     return "Google Ads";
   }
 
-  if (lower.includes("사무실계약")) {
+  if (normalized.includes("사무실계약")) {
     return "Office Lease";
   }
 
-  if (lower.includes("등록면허세")) {
+  if (normalized.includes("등록면허세")) {
     return "Registration License Tax";
   }
 
-  if (lower.includes("법원행정처")) {
+  if (normalized.includes("용인시등록면허세")) {
+    return "Registration License Tax";
+  }
+
+  if (normalized.includes("법원행정처")) {
     return "Court Administration Office";
   }
 
-  if (lower.includes("법인공동인증서")) {
+  if (normalized.includes("법인공동인증서")) {
     return "Corporate 공동인증서";
   }
 
-  if (lower.includes("더싼") || lower.includes("인쇄") || lower.includes("스캔")) {
+  if (
+    normalized.includes("법무법인") ||
+    normalized.includes("미션")
+  ) {
+    return "Law Firm / Legal Service";
+  }
+
+  if (normalized.includes("더싼") || normalized.includes("인쇄") || normalized.includes("스캔")) {
     return "Printing & Scanning";
   }
 
-  if (lower.includes("다이소")) {
+  if (normalized.includes("다이소")) {
     return "Daiso";
   }
 
-  return raw;
+  return normalized;
 }
 
 function getDefaultCategory(normalizedTag: string): Category {
@@ -250,7 +304,8 @@ function getDefaultCategory(normalizedTag: string): Category {
     key.includes("stability") ||
     key.includes("aimlapi") ||
     key.includes("m studio ai") ||
-    key.includes("resemble")
+    key.includes("resemble") ||
+    key.includes("replicate")
   ) {
     return "AI Services";
   }
@@ -261,7 +316,8 @@ function getDefaultCategory(normalizedTag: string): Category {
     key.includes("expo") ||
     key.includes("microsoft") ||
     key.includes("parallels") ||
-    key.includes("apple")
+    key.includes("apple") ||
+    key.includes("github")
   ) {
     return "Software Licenses & Tools";
   }
@@ -277,7 +333,8 @@ function getDefaultCategory(normalizedTag: string): Category {
   if (
     key.includes("registration license tax") ||
     key.includes("court administration office") ||
-    key.includes("corporate 공동인증서")
+    key.includes("corporate 공동인증서") ||
+    key.includes("law firm / legal service")
   ) {
     return "Legal & Compliance";
   }
@@ -297,6 +354,7 @@ export default function AdminPlan() {
   const [modalOpen, setModalOpen] = useState(false);
   const [editingSchedule, setEditingSchedule] = useState<Schedule | null>(null);
   const [viewMode, setViewMode] = useState<ViewMode>("daily");
+  const [analysisRangeMode, setAnalysisRangeMode] = useState<AnalysisRangeMode>("monthly");
   const [openFileScheduleId, setOpenFileScheduleId] = useState<string | null>(null);
 
   const [tagCategories, setTagCategories] = useState<Record<string, Category>>(() => {
@@ -436,18 +494,9 @@ export default function AdminPlan() {
   const getMonthlyAggregates = () => {
     const monthlyTotals: Record<string, number> = {};
 
-    schedules.forEach((schedule) => {
-      if (!schedule.amount) return;
-
-      const dateObj = new Date(schedule.eventDate);
-      const monthKey = `${dateObj.getFullYear()}-${(dateObj.getMonth() + 1)
-        .toString()
-        .padStart(2, "0")}`;
-
-      const value = parseFloat(schedule.amount);
-      if (!isNaN(value)) {
-        monthlyTotals[monthKey] = (monthlyTotals[monthKey] || 0) + value;
-      }
+    categorizedEntries.forEach((entry) => {
+      const monthKey = new Date(entry.eventDate).toISOString().slice(0, 7);
+      monthlyTotals[monthKey] = (monthlyTotals[monthKey] || 0) + entry.amountValue;
     });
 
     return monthlyTotals;
@@ -464,6 +513,51 @@ export default function AdminPlan() {
     });
 
     return result;
+  };
+
+  const getSortedMonthKeys = () => {
+    return Array.from(
+      new Set(
+        categorizedEntries.map((entry) =>
+          new Date(entry.eventDate).toISOString().slice(0, 7)
+        )
+      )
+    ).sort((a, b) => a.localeCompare(b));
+  };
+
+  const getCumulativeMonthlyTotals = () => {
+    const monthKeys = getSortedMonthKeys();
+    const monthlyTotals = getMonthlyAggregates();
+
+    let runningTotal = 0;
+    const cumulative: Record<string, number> = {};
+
+    monthKeys.forEach((month) => {
+      runningTotal += monthlyTotals[month] || 0;
+      cumulative[month] = runningTotal;
+    });
+
+    return cumulative;
+  };
+
+  const getCumulativeMonthlyCategoryAggregates = () => {
+    const monthKeys = getSortedMonthKeys();
+    const monthlyCategoryTotals = getMonthlyCategoryAggregates();
+
+    const runningByCategory: Record<string, number> = {};
+    const cumulative: Record<string, Record<string, number>> = {};
+
+    monthKeys.forEach((month) => {
+      cumulative[month] = {};
+
+      categories.forEach((cat) => {
+        runningByCategory[cat] =
+          (runningByCategory[cat] || 0) + (monthlyCategoryTotals[month]?.[cat] || 0);
+        cumulative[month][cat] = runningByCategory[cat];
+      });
+    });
+
+    return cumulative;
   };
 
   const getAllTimeCategoryTotals = () => {
@@ -487,14 +581,32 @@ export default function AdminPlan() {
 
   const monthlyAggregates = getMonthlyAggregates();
   const monthlyCategoryAggregates = getMonthlyCategoryAggregates();
+  const cumulativeMonthlyAggregates = getCumulativeMonthlyTotals();
+  const cumulativeMonthlyCategoryAggregates = getCumulativeMonthlyCategoryAggregates();
   const allTimeCategoryTotals = getAllTimeCategoryTotals();
 
+  const analysisMonthKeys = (
+    analysisRangeMode === "monthly"
+      ? Object.keys(monthlyAggregates)
+      : Object.keys(cumulativeMonthlyAggregates)
+  ).sort((a, b) => a.localeCompare(b));
+
+  const analysisTotals =
+    analysisRangeMode === "monthly"
+      ? monthlyAggregates
+      : cumulativeMonthlyAggregates;
+
+  const analysisCategoryAggregates =
+    analysisRangeMode === "monthly"
+      ? monthlyCategoryAggregates
+      : cumulativeMonthlyCategoryAggregates;
+
   const monthlyChartData = {
-    labels: Object.keys(monthlyAggregates),
+    labels: analysisMonthKeys,
     datasets: categories.map((cat) => ({
       label: cat,
-      data: Object.keys(monthlyAggregates).map(
-        (month) => monthlyCategoryAggregates[month]?.[cat] || 0
+      data: analysisMonthKeys.map(
+        (month) => analysisCategoryAggregates[month]?.[cat] || 0
       ),
       backgroundColor: colorMap[cat],
     })),
@@ -755,7 +867,34 @@ export default function AdminPlan() {
             <div className={styles.analysisContainer}>
               <h2 className={styles.sectionTitle}>Monthly Payment Analysis</h2>
 
-              {Object.entries(monthlyAggregates).filter(([, total]) => total > 0).length === 0 ? (
+              <div className={styles.analysisModeToggle}>
+                <button
+                  type="button"
+                  onClick={() => setAnalysisRangeMode("monthly")}
+                  className={`${styles.toggleButton} ${
+                    analysisRangeMode === "monthly" ? styles.active : ""
+                  }`}
+                >
+                  Monthly
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setAnalysisRangeMode("cumulative")}
+                  className={`${styles.toggleButton} ${
+                    analysisRangeMode === "cumulative" ? styles.active : ""
+                  }`}
+                >
+                  Cumulative
+                </button>
+              </div>
+
+              <p className={styles.analysisSubtitle}>
+                {analysisRangeMode === "monthly"
+                  ? "Shows category totals for each individual month."
+                  : "Shows cumulative category totals up to each month."}
+              </p>
+
+              {Object.entries(analysisTotals).filter(([, total]) => total > 0).length === 0 ? (
                 <p className={styles.noSchedule}>No payment data available.</p>
               ) : (
                 <>
@@ -767,7 +906,7 @@ export default function AdminPlan() {
                       </tr>
                     </thead>
                     <tbody>
-                      {Object.entries(monthlyAggregates)
+                      {Object.entries(analysisTotals)
                         .filter(([, total]) => total > 0)
                         .sort(([a], [b]) => a.localeCompare(b))
                         .map(([month, total]) => (
@@ -784,7 +923,16 @@ export default function AdminPlan() {
                       data={monthlyChartData}
                       options={{
                         responsive: true,
-                        plugins: { legend: { position: "top" } },
+                        plugins: {
+                          legend: { position: "top" },
+                          title: {
+                            display: true,
+                            text:
+                              analysisRangeMode === "monthly"
+                                ? "Monthly Spend by Category"
+                                : "Cumulative Spend by Category",
+                          },
+                        },
                         scales: {
                           x: { stacked: true },
                           y: { stacked: true },
@@ -793,117 +941,6 @@ export default function AdminPlan() {
                     />
                   </div>
                 </>
-              )}
-
-              <h2 className={styles.sectionTitle}>Grouped Payment Analysis</h2>
-              <p className={styles.analysisSubtitle}>
-                Same normalized item names are merged into one row in analysis mode.
-              </p>
-
-              {tagAnalysisRows.length === 0 ? (
-                <p className={styles.noSchedule}>No grouped payment data available.</p>
-              ) : (
-                <table className={styles.analysisTable}>
-                  <thead>
-                    <tr>
-                      <th>Category</th>
-                      <th>Grouped Item</th>
-                      <th>Total Amount (KRW)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {tagAnalysisRows.map((row) => (
-                      <tr key={`${row.category}-${row.item}`}>
-                        <td>
-                          <span
-                            className={styles.categoryBadge}
-                            style={{ backgroundColor: colorMap[row.category] }}
-                          >
-                            {row.category}
-                          </span>
-                        </td>
-                        <td className={styles.itemName}>
-                          <div className={styles.itemWithLogo}>
-                            <img
-                              src={getLogoSrc(row.item)}
-                              alt={`${row.item} logo`}
-                              className={styles.itemLogo}
-                            />
-                            <span>{row.item}</span>
-                          </div>
-                        </td>
-                        <td>{row.total.toLocaleString()} KRW</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              )}
-
-              <h2 className={styles.sectionTitle}>Category Defaults & Manual Overrides</h2>
-
-              {uniqueNormalizedTags.length === 0 ? (
-                <p className={styles.noSchedule}>No tag data available.</p>
-              ) : (
-                <table className={styles.analysisTable}>
-                  <thead>
-                    <tr>
-                      <th>Grouped Item</th>
-                      <th>Category</th>
-                      <th>Default Rule</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {uniqueNormalizedTags.map((normalizedTag) => {
-                      const currentCategory = getCategoryForItem(normalizedTag);
-                      const defaultCategory = getDefaultCategory(normalizedTag);
-
-                      return (
-                        <tr key={normalizedTag}>
-                          <td className={styles.itemName}>
-                            <div className={styles.itemWithLogo}>
-                              <img
-                                src={getLogoSrc(normalizedTag)}
-                                alt={`${normalizedTag} logo`}
-                                className={styles.itemLogo}
-                              />
-                              <span>{normalizedTag}</span>
-                            </div>
-                          </td>
-                          <td>
-                            <select
-                              className={styles.categorySelect}
-                              style={{ color: colorMap[currentCategory] }}
-                              value={currentCategory}
-                              onChange={(e) =>
-                                handleCategoryChange(
-                                  normalizedTag,
-                                  e.target.value as Category
-                                )
-                              }
-                            >
-                              {categories.map((cat) => (
-                                <option key={cat} value={cat}>
-                                  {cat}
-                                </option>
-                              ))}
-                            </select>
-                          </td>
-                          <td>{defaultCategory}</td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              )}
-
-              <h2 className={styles.sectionTitle}>All-Time Spend by Category</h2>
-
-              {categories.every((cat) => (allTimeCategoryTotals[cat] || 0) === 0) ? (
-                <p className={styles.noSchedule}>No category spend data available.</p>
-              ) : (
-                <div className={styles.chartContainer}>
-                  <Pie data={pieChartData} options={pieOptions} />
-                </div>
               )}
             </div>
           )}
