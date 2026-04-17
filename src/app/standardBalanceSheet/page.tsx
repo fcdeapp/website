@@ -93,7 +93,10 @@ type AccountBalanceMap = Record<string, number>;
 type MappingMap = Record<string, ItemMapping>;
 
 const LOAN_TRANCHES = [
-  { date: "2025-04-06", amount: 1081205 },
+  { date: "2025-04-06", amount: 1081205 }, // 설립 전 누계
+  { date: "2025-04-30", amount: 245938 },  // 4/7~4/30
+  { date: "2025-05-31", amount: 638374 },  // 5/1~5/31
+  { date: "2025-06-02", amount: 354203 },  // 6/1~6/2
   { date: "2025-12-19", amount: 1500000 },
   { date: "2026-01-24", amount: 1000000 },
   { date: "2026-04-01", amount: 1500000 },
