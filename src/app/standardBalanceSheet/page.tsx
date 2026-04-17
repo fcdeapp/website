@@ -93,6 +93,7 @@ type AccountBalanceMap = Record<string, number>;
 type MappingMap = Record<string, ItemMapping>;
 
 const LOAN_TRANCHES = [
+  { date: "2025-04-06", amount: 1081205 },
   { date: "2025-12-19", amount: 1500000 },
   { date: "2026-01-24", amount: 1000000 },
   { date: "2026-04-01", amount: 1500000 },
