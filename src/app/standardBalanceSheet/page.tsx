@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -6,6 +5,28 @@ import axios from "axios";
 import { useConfig } from "../../context/ConfigContext";
 import WebFooter from "../../components/WebFooter";
 import styles from "../../styles/pages/StandardBalanceSheet.module.css";
+
+function parseScheduleDate(input?: string): Date | null {
+  if (!input) return null;
+  const trimmed = String(input).trim();
+  if (!trimmed) return null;
+
+  const isoLike = trimmed.replace(/\./g, "-").replace(/\//g, "-").replace(/\s+/g, "");
+  const match = isoLike.match(/^(\d{2,4})-(\d{1,2})-(\d{1,2})/);
+  if (match) {
+    let year = Number(match[1]);
+    const month = Number(match[2]);
+    const day = Number(match[3]);
+    if (year < 100) year += 2000;
+    const parsed = new Date(year, month - 1, day);
+    if (!Number.isNaN(parsed.getTime())) return parsed;
+  }
+
+  const fallback = new Date(trimmed);
+  if (!Number.isNaN(fallback.getTime())) return fallback;
+  return null;
+}
+
 
 export interface Schedule {
   _id: string;
@@ -565,6 +586,7 @@ export default function StandardBalanceSheetPage() {
   const [tagCategories, setTagCategories] = useState<Record<string, Category>>({});
   const [mappings, setMappings] = useState<MappingMap>({});
   const [query, setQuery] = useState("");
+  const [cutoffDate, setCutoffDate] = useState("");
   const [mappingMode] = useState<MappingMode>("debitCredit");
 
   useEffect(() => {
@@ -612,10 +634,23 @@ export default function StandardBalanceSheetPage() {
     fetchSchedules();
   }, [SERVER_URL]);
 
+  const effectiveSchedules = useMemo(() => {
+    if (!cutoffDate) return schedules;
+    const cutoff = parseScheduleDate(cutoffDate);
+    if (!cutoff) return schedules;
+    cutoff.setHours(23, 59, 59, 999);
+
+    return schedules.filter((schedule) => {
+      const parsed = parseScheduleDate(schedule.eventDate);
+      if (!parsed) return false;
+      return parsed.getTime() <= cutoff.getTime();
+    });
+  }, [schedules, cutoffDate]);
+
   const normalizedItems = useMemo(() => {
     const grouped: Record<string, { amount: number; schedules: Schedule[] }> = {};
 
-    schedules
+    effectiveSchedules
       .filter((schedule) => schedule.tag && schedule.amount)
       .forEach((schedule) => {
         const normalizedTag = normalizeTag(schedule.tag);
@@ -641,7 +676,7 @@ export default function StandardBalanceSheetPage() {
         };
       })
       .sort((a, b) => b.amount - a.amount);
-  }, [schedules, tagCategories, mappings]);
+  }, [effectiveSchedules, tagCategories, mappings]);
 
   const filteredItems = useMemo(() => {
     if (!query.trim()) return normalizedItems;
@@ -801,6 +836,41 @@ export default function StandardBalanceSheetPage() {
             기본 흐름: 결제 항목별로 <strong>차변 계정 + 대변 계정</strong>을 지정하고,
             필요 시 각 코드별 수동조정 금액을 입력하면 됩니다.
           </p>
+          <p>
+            아래의 <strong>기준일</strong>을 선택하면, 그 날짜까지 발생한 일정/비용 기여분만 반영해서 재무상태를 볼 수 있습니다.
+          </p>
+        </section>
+
+        <section className={styles.filterBar}>
+          <div className={styles.filterGroup}>
+            <label className={styles.filterLabel} htmlFor="cutoffDate">
+              기준일
+            </label>
+            <input
+              id="cutoffDate"
+              type="date"
+              className={styles.dateInput}
+              value={cutoffDate}
+              onChange={(e) => setCutoffDate(e.target.value)}
+            />
+            {cutoffDate && (
+              <button
+                type="button"
+                className={styles.clearButton}
+                onClick={() => setCutoffDate("")}
+              >
+                날짜 초기화
+              </button>
+            )}
+          </div>
+          <div className={styles.filterMeta}>
+            {cutoffDate
+              ? `${cutoffDate}까지의 일정/비용만 반영 중`
+              : "전체 기간의 일정/비용을 반영 중"}
+            <span className={styles.filterCount}>
+              {effectiveSchedules.length}건 반영 / 전체 {schedules.length}건
+            </span>
+          </div>
         </section>
 
         <section className={styles.panel}>
