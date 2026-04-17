@@ -58,6 +58,12 @@ type ItemMapping = {
 type AccountBalanceMap = Record<string, number>;
 type MappingMap = Record<string, ItemMapping>;
 
+const DEFAULT_MANUAL_BALANCES: AccountBalanceMap = {
+  "003": 9000000,
+  "236": 4000000,
+  "334": 5000000,
+};
+
 const LOCAL_STORAGE_CATEGORY_KEY = "balanceSheet_tagCategories_v1";
 const LOCAL_STORAGE_MAPPING_KEY = "balanceSheet_itemMappings_v1";
 const LOCAL_STORAGE_MANUAL_KEY = "balanceSheet_manualBalances_v1";
@@ -569,7 +575,11 @@ export default function StandardBalanceSheetPage() {
 
     if (storedCategories) setTagCategories(JSON.parse(storedCategories));
     if (storedMappings) setMappings(JSON.parse(storedMappings));
-    if (storedManual) setManualBalances(JSON.parse(storedManual));
+    if (storedManual) {
+      setManualBalances({ ...DEFAULT_MANUAL_BALANCES, ...JSON.parse(storedManual) });
+    } else {
+      setManualBalances(DEFAULT_MANUAL_BALANCES);
+    }
   }, []);
 
   useEffect(() => {
@@ -781,6 +791,11 @@ export default function StandardBalanceSheetPage() {
           <p>
             현재 페이지는 <strong>AdminPlan의 결제 데이터</strong>를 기준으로 잔액 변동을 계산합니다.
             그래서 실제 신고용 재무상태표로 쓰려면 <strong>기초잔액/수동조정</strong>을 함께 넣어야 합니다.
+          </p>
+          <p>
+            기본 예시값으로는 <strong>자본금 5,000,000원(코드 334)</strong>,
+            <strong>대표자 무이자 대여금 4,000,000원(코드 236)</strong>,
+            그리고 이에 대응되는 <strong>현금 및 현금성자산 9,000,000원(코드 003)</strong>을 반영해 두었습니다.
           </p>
           <p>
             기본 흐름: 결제 항목별로 <strong>차변 계정 + 대변 계정</strong>을 지정하고,
