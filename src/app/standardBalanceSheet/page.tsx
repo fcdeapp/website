@@ -92,18 +92,51 @@ type ItemMapping = {
 type AccountBalanceMap = Record<string, number>;
 type MappingMap = Record<string, ItemMapping>;
 
+type HardcodedAdjustment = {
+  date: string;
+  label: string;
+  amount: number;
+  debitCode: string;
+  creditCode: string;
+  note?: string;
+};
+
 const LOAN_TRANCHES = [
   { date: "2025-04-06", amount: 1081205 }, // 설립 전 누계
-  { date: "2025-04-30", amount: 245938 },  // 4/7~4/30
-  { date: "2025-05-31", amount: 638374 },  // 5/1~5/31
-  { date: "2025-06-02", amount: 311580 },  // 6/1~6/2, (NL) FACEBK, (SG) Google Digital Inc.
-  { date: "2025-06-09", amount: 327152 },  // (SG) MICROSOFT
-  { date: "2025-06-17", amount: 30685 },  // (US)OPENAI *CHATGPT
-  { date: "2025-06-29", amount: 9112 },  // (NL) FACEBK
-  { date: "2025-07-01", amount: 20953 },  // (SG) Google Digital Inc.
+  { date: "2025-04-30", amount: 245938 }, // 4/7~4/30
+  { date: "2025-05-31", amount: 638374 }, // 5/1~5/31
+  { date: "2025-06-02", amount: 311580 }, // 6/1~6/2, (NL) FACEBK, (SG) Google Digital Inc.
+  { date: "2025-06-09", amount: 327152 }, // (SG) MICROSOFT
+  { date: "2025-06-17", amount: 30685 }, // (US)OPENAI *CHATGPT
+  { date: "2025-06-29", amount: 9112 }, // (NL) FACEBK
+  { date: "2025-07-01", amount: 20953 }, // (SG) Google Digital Inc.
   { date: "2025-12-19", amount: 1500000 },
   { date: "2026-01-24", amount: 1000000 },
   { date: "2026-04-01", amount: 1500000 },
+] as const;
+
+const HARDCODED_ADJUSTMENTS: HardcodedAdjustment[] = [
+  { date: "2025-06-21", label: "예금이자", amount: 887, debitCode: "003", creditCode: "372", note: "이자수익 유입" },
+  { date: "2025-07-08", label: "메타 환급", amount: 222, debitCode: "003", creditCode: "069", note: "기존 메타 광고/결제분 환급" },
+  { date: "2025-07-09", label: "메타 환급", amount: 158, debitCode: "003", creditCode: "069", note: "기존 메타 광고/결제분 환급" },
+  { date: "2025-07-10", label: "메타 환급", amount: 121, debitCode: "003", creditCode: "069", note: "기존 메타 광고/결제분 환급" },
+  { date: "2025-07-10", label: "신한할인캐쉬백", amount: 1400, debitCode: "003", creditCode: "372", note: "카드 캐시백 유입" },
+  { date: "2025-07-11", label: "메타 환급", amount: 10471, debitCode: "003", creditCode: "069", note: "기존 메타 광고/결제분 환급" },
+  { date: "2025-07-12", label: "메타 환급", amount: 79, debitCode: "003", creditCode: "069", note: "기존 메타 광고/결제분 환급" },
+  { date: "2025-08-11", label: "메타 환급", amount: 3553, debitCode: "003", creditCode: "069", note: "기존 메타 광고/결제분 환급" },
+  { date: "2025-09-10", label: "법무법인 미션 환불", amount: 18000, debitCode: "003", creditCode: "069", note: "법률서비스 관련 환불" },
+  { date: "2025-09-10", label: "신한할인캐쉬백", amount: 1027, debitCode: "003", creditCode: "372", note: "카드 캐시백 유입" },
+  { date: "2025-09-20", label: "예금이자", amount: 717, debitCode: "003", creditCode: "372", note: "이자수익 유입" },
+  { date: "2025-10-10", label: "신한할인캐쉬백", amount: 1604, debitCode: "003", creditCode: "372", note: "카드 캐시백 유입" },
+  { date: "2025-11-10", label: "신한할인캐쉬백", amount: 1473, debitCode: "003", creditCode: "372", note: "카드 캐시백 유입" },
+  { date: "2025-12-10", label: "신한할인캐쉬백", amount: 1486, debitCode: "003", creditCode: "372", note: "카드 캐시백 유입" },
+  { date: "2025-12-20", label: "예금이자", amount: 278, debitCode: "003", creditCode: "372", note: "이자수익 유입" },
+  { date: "2026-01-10", label: "신한할인캐쉬백", amount: 1574, debitCode: "003", creditCode: "372", note: "카드 캐시백 유입" },
+  { date: "2026-02-10", label: "신한할인캐쉬백", amount: 1643, debitCode: "003", creditCode: "372", note: "카드 캐시백 유입" },
+  { date: "2026-03-10", label: "신한할인캐쉬백", amount: 1648, debitCode: "003", creditCode: "372", note: "카드 캐시백 유입" },
+  { date: "2026-03-21", label: "예금이자", amount: 320, debitCode: "003", creditCode: "372", note: "이자수익 유입" },
+  { date: "2026-04-05", label: "어도비 환불", amount: 72000, debitCode: "003", creditCode: "069", note: "소프트웨어/선급비용 환불" },
+  { date: "2026-04-10", label: "신한할인캐쉬백", amount: 2229, debitCode: "003", creditCode: "372", note: "카드 캐시백 유입" },
 ] as const;
 
 const DEFAULT_MANUAL_BALANCES: AccountBalanceMap = {
@@ -687,6 +720,36 @@ function getLoanAmountUntil(cutoffDate?: string): number {
   }, 0);
 }
 
+function getHardcodedAdjustmentsUntil(cutoffDate?: string): HardcodedAdjustment[] {
+  const cutoff = cutoffDate ? parseScheduleDate(cutoffDate) : null;
+  if (cutoff) cutoff.setHours(23, 59, 59, 999);
+
+  return HARDCODED_ADJUSTMENTS.filter((entry) => {
+    const parsed = parseScheduleDate(entry.date);
+    if (!parsed) return false;
+    return !cutoff || parsed.getTime() <= cutoff.getTime();
+  });
+}
+
+function buildAdjustmentBalanceMap(entries: HardcodedAdjustment[]): Record<string, number> {
+  const map: Record<string, number> = {};
+  entries.forEach((entry) => {
+    map[entry.debitCode] = (map[entry.debitCode] || 0) + entry.amount;
+    map[entry.creditCode] = (map[entry.creditCode] || 0) - entry.amount;
+  });
+  return map;
+}
+
+function mergeBalanceMaps(...maps: Record<string, number>[]): Record<string, number> {
+  const merged: Record<string, number> = {};
+  maps.forEach((map) => {
+    Object.entries(map).forEach(([code, amount]) => {
+      merged[code] = (merged[code] || 0) + amount;
+    });
+  });
+  return merged;
+}
+
 export default function StandardBalanceSheetPage() {
   const { SERVER_URL } = useConfig();
 
@@ -756,6 +819,21 @@ export default function StandardBalanceSheetPage() {
     });
   }, [schedules, cutoffDate]);
 
+  const effectiveAdjustments = useMemo(() => getHardcodedAdjustmentsUntil(cutoffDate), [cutoffDate]);
+
+  const visibleAdjustments = useMemo(() => {
+    if (!query.trim()) return effectiveAdjustments;
+    const lowered = query.trim().toLowerCase();
+    return effectiveAdjustments.filter((entry) => {
+      return (
+        entry.label.toLowerCase().includes(lowered)
+        || (entry.note || "").toLowerCase().includes(lowered)
+        || entry.debitCode.includes(lowered)
+        || entry.creditCode.includes(lowered)
+      );
+    });
+  }, [effectiveAdjustments, query]);
+
   const normalizedItems = useMemo(() => {
     const grouped: Record<string, { amount: number; schedules: Schedule[] }> = {};
 
@@ -802,12 +880,17 @@ export default function StandardBalanceSheetPage() {
     });
   }, [normalizedItems, query]);
 
-  const transactionBalances = useMemo(
-    () => buildTransactionBalanceMap(effectiveSchedules, tagCategories, mappings),
-    [effectiveSchedules, tagCategories, mappings]
-  );
+  const transactionBalances = useMemo(() => {
+    const scheduleMap = buildTransactionBalanceMap(effectiveSchedules, tagCategories, mappings);
+    const adjustmentMap = buildAdjustmentBalanceMap(effectiveAdjustments);
+    return mergeBalanceMaps(scheduleMap, adjustmentMap);
+  }, [effectiveSchedules, effectiveAdjustments, tagCategories, mappings]);
 
   const loanAmountUntilCutoff = useMemo(() => getLoanAmountUntil(cutoffDate), [cutoffDate]);
+  const adjustmentTotal = useMemo(
+    () => effectiveAdjustments.reduce((sum, entry) => sum + entry.amount, 0),
+    [effectiveAdjustments]
+  );
 
   const directBalances = useMemo(
     () => buildDirectBalanceMap(manualBalances, transactionBalances, loanAmountUntilCutoff),
@@ -1269,12 +1352,56 @@ export default function StandardBalanceSheetPage() {
           </ol>
         </section>
 
-        <section className={styles.chartPanel}>
+        <section className={styles.panel}>
+        <div className={styles.panelHeader}>
+          <div>
+            <h2>자동 반영 환급 · 이자 · 캐시백 내역</h2>
+            <p>날짜 필터를 적용하면 해당 시점까지의 하드코딩된 유입 내역만 반영됩니다.</p>
+          </div>
+        </div>
+
+        <div className={styles.tableWrap}>
+          <table className={styles.mappingTable}>
+            <thead>
+              <tr>
+                <th>일자</th>
+                <th>항목</th>
+                <th>차변 코드</th>
+                <th>대변 코드</th>
+                <th>금액</th>
+                <th>비고</th>
+              </tr>
+            </thead>
+            <tbody>
+              {visibleAdjustments.length === 0 ? (
+                <tr>
+                  <td colSpan={6} className={styles.emptyCell}>반영할 자동 조정 내역이 없습니다.</td>
+                </tr>
+              ) : (
+                visibleAdjustments.map((entry, index) => (
+                  <tr key={`${entry.date}-${entry.label}-${index}`}>
+                    <td>{entry.date}</td>
+                    <td>
+                      <div className={styles.itemTitle}>{entry.label}</div>
+                    </td>
+                    <td>{entry.debitCode}</td>
+                    <td>{entry.creditCode}</td>
+                    <td>{formatCurrency(entry.amount)}</td>
+                    <td className={styles.noteCell}>{entry.note || "-"}</td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className={styles.chartPanel}>
           <div className={styles.panelHeader}>
             <div>
               <h2>월별 자산·부채·자본 변화</h2>
               <p>
-                기준일이 선택되면 해당 기준일까지의 월별 누적 상태만 그래프로 표시합니다.
+                기준일이 선택되면 해당 기준일까지의 월별 누적 상태만 그래프로 표시합니다. 스케줄, 대표자 차입금, 환급·이자·캐시백을 함께 반영합니다.
               </p>
             </div>
           </div>
