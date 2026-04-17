@@ -97,6 +97,10 @@ const LOAN_TRANCHES = [
   { date: "2025-04-30", amount: 245938 },  // 4/7~4/30
   { date: "2025-05-31", amount: 638374 },  // 5/1~5/31
   { date: "2025-06-02", amount: 354203 },  // 6/1~6/2
+  { date: "2025-06-09", amount: 327152 },  // (SG) MICROSOFT
+  { date: "2025-06-17", amount: 30685 },  // (US)OPENAI *CHATGPT
+  { date: "2025-06-29", amount: 9112 },  // (NL) FACEBK
+  { date: "2025-07-01", amount: 20953 },  // (SG) Google Digital Inc.
   { date: "2025-12-19", amount: 1500000 },
   { date: "2026-01-24", amount: 1000000 },
   { date: "2026-04-01", amount: 1500000 },
