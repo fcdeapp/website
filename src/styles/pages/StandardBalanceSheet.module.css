@@ -385,3 +385,20 @@
     width: 100%;
   }
 }
+
+
+.chartPanel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+  padding: 20px;
+  margin-top: 24px;
+  margin-bottom: 28px;
+}
+
+.chartWrap {
+  position: relative;
+  width: 100%;
+  min-height: 360px;
+}

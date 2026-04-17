@@ -5,6 +5,17 @@ import axios from "axios";
 import { useConfig } from "../../context/ConfigContext";
 import WebFooter from "../../components/WebFooter";
 import styles from "../../styles/pages/StandardBalanceSheet.module.css";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
 
 function parseScheduleDate(input?: string): Date | null {
   if (!input) return null;
@@ -27,6 +38,8 @@ function parseScheduleDate(input?: string): Date | null {
   return null;
 }
 
+
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 export interface Schedule {
   _id: string;
@@ -79,15 +92,20 @@ type ItemMapping = {
 type AccountBalanceMap = Record<string, number>;
 type MappingMap = Record<string, ItemMapping>;
 
+const LOAN_TRANCHES = [
+  { date: "2025-12-19", amount: 1500000 },
+  { date: "2026-01-24", amount: 1000000 },
+  { date: "2026-04-01", amount: 1500000 },
+] as const;
+
 const DEFAULT_MANUAL_BALANCES: AccountBalanceMap = {
-  "003": 9000000,
-  "236": 4000000,
+  "003": 5000000,
   "334": 5000000,
 };
 
 const LOCAL_STORAGE_CATEGORY_KEY = "balanceSheet_tagCategories_v1";
 const LOCAL_STORAGE_MAPPING_KEY = "balanceSheet_itemMappings_v1";
-const LOCAL_STORAGE_MANUAL_KEY = "balanceSheet_manualBalances_v1";
+const LOCAL_STORAGE_MANUAL_KEY = "balanceSheet_manualBalances_v2";
 
 function addRow(
   rows: AccountRow[],
@@ -578,6 +596,89 @@ function getDefaultMapping(normalizedTag: string, category: Category): ItemMappi
   return { category, debitCode: "069", creditCode: "003" };
 }
 
+
+function buildTransactionBalanceMap(
+  scheduleList: Schedule[],
+  tagCategories: Record<string, Category>,
+  mappings: MappingMap
+): Record<string, number> {
+  const grouped: Record<string, number> = {};
+
+  scheduleList
+    .filter((schedule) => schedule.tag && schedule.amount)
+    .forEach((schedule) => {
+      const normalizedTag = normalizeTag(schedule.tag as string);
+      const amount = parseAmount(schedule.amount);
+      grouped[normalizedTag] = (grouped[normalizedTag] || 0) + amount;
+    });
+
+  const map: Record<string, number> = {};
+  Object.entries(grouped).forEach(([normalizedTag, amount]) => {
+    const selectedCategory = tagCategories[normalizedTag] || getDefaultCategory(normalizedTag);
+    const mapping = mappings[normalizedTag] || getDefaultMapping(normalizedTag, selectedCategory);
+    map[mapping.debitCode] = (map[mapping.debitCode] || 0) + amount;
+    map[mapping.creditCode] = (map[mapping.creditCode] || 0) - amount;
+  });
+
+  return map;
+}
+
+function buildDirectBalanceMap(
+  manualBalances: AccountBalanceMap,
+  transactionBalances: Record<string, number>,
+  loanAmount: number
+): Record<string, number> {
+  const map: Record<string, number> = {};
+  for (const row of ACCOUNT_ROWS) {
+    const manual = Number(manualBalances[row.code] || 0);
+    const auto = Number(transactionBalances[row.code] || 0);
+    const loanAdjusted =
+      row.code === "003" || row.code === "236"
+        ? loanAmount
+        : 0;
+    map[row.code] = manual + auto + loanAdjusted;
+  }
+  return map;
+}
+
+function buildRolledBalanceMap(directBalances: Record<string, number>): Record<string, number> {
+  const result: Record<string, number> = {};
+  const calculate = (code: string): number => {
+    const own = directBalances[code] || 0;
+    const children = ACCOUNT_ROWS.filter((row) => row.parentCode === code);
+    const childSum = children.reduce((sum, child) => sum + calculate(child.code), 0);
+    const total = own + childSum;
+    result[code] = total;
+    return total;
+  };
+
+  calculate("228");
+  calculate("383");
+  result["333"] = (result["229"] || 0) + (result["284"] || 0);
+  result["382"] =
+    (result["334"] || directBalances["334"] || 0) +
+    (result["337"] || directBalances["337"] || 0) +
+    (result["348"] || directBalances["348"] || 0) +
+    (result["361"] || directBalances["361"] || 0) +
+    (result["372"] || directBalances["372"] || 0);
+  result["383"] = (result["333"] || 0) + (result["382"] || 0);
+  return result;
+}
+
+function getLoanAmountUntil(cutoffDate?: string): number {
+  const cutoff = cutoffDate ? parseScheduleDate(cutoffDate) : null;
+  if (cutoff) cutoff.setHours(23, 59, 59, 999);
+
+  return LOAN_TRANCHES.reduce((sum, tranche) => {
+    const parsed = parseScheduleDate(tranche.date);
+    if (!parsed) return sum;
+    if (!cutoff || parsed.getTime() <= cutoff.getTime()) {
+      return sum + tranche.amount;
+    }
+    return sum;
+  }, 0);
+}
+
 export default function StandardBalanceSheetPage() {
   const { SERVER_URL } = useConfig();
 
@@ -693,48 +794,122 @@ export default function StandardBalanceSheetPage() {
     });
   }, [normalizedItems, query]);
 
-  const transactionBalances = useMemo(() => {
-    const map: Record<string, number> = {};
-    normalizedItems.forEach((item) => {
-      const mapping = mappings[item.normalizedTag] || getDefaultMapping(item.normalizedTag, item.category);
-      map[mapping.debitCode] = (map[mapping.debitCode] || 0) + item.amount;
-      map[mapping.creditCode] = (map[mapping.creditCode] || 0) - item.amount;
-    });
-    return map;
-  }, [normalizedItems, mappings]);
+  const transactionBalances = useMemo(
+    () => buildTransactionBalanceMap(effectiveSchedules, tagCategories, mappings),
+    [effectiveSchedules, tagCategories, mappings]
+  );
 
-  const directBalances = useMemo(() => {
-    const map: Record<string, number> = {};
-    for (const row of ACCOUNT_ROWS) {
-      const manual = Number(manualBalances[row.code] || 0);
-      const auto = Number(transactionBalances[row.code] || 0);
-      map[row.code] = manual + auto;
+  const loanAmountUntilCutoff = useMemo(() => getLoanAmountUntil(cutoffDate), [cutoffDate]);
+
+  const directBalances = useMemo(
+    () => buildDirectBalanceMap(manualBalances, transactionBalances, loanAmountUntilCutoff),
+    [manualBalances, transactionBalances, loanAmountUntilCutoff]
+  );
+
+  const rolledBalances = useMemo(
+    () => buildRolledBalanceMap(directBalances),
+    [directBalances]
+  );
+
+
+  const monthlyTrend = useMemo(() => {
+    const datedSchedules = schedules
+      .map((schedule) => ({
+        ...schedule,
+        parsedDate: parseScheduleDate(schedule.eventDate),
+      }))
+      .filter((schedule) => schedule.parsedDate);
+
+    const loanDates = LOAN_TRANCHES.map((item) => parseScheduleDate(item.date)).filter(
+      (date): date is Date => Boolean(date)
+    );
+
+    const allDates = [
+      ...datedSchedules.map((item) => item.parsedDate as Date),
+      ...loanDates,
+    ].sort((a, b) => a.getTime() - b.getTime());
+
+    if (!allDates.length) {
+      return { labels: [], asset: [], liability: [], equity: [] };
     }
-    return map;
-  }, [manualBalances, transactionBalances]);
 
-  const rolledBalances = useMemo(() => {
-    const result: Record<string, number> = {};
-    const calculate = (code: string): number => {
-      const own = directBalances[code] || 0;
-      const children = ACCOUNT_ROWS.filter((row) => row.parentCode === code);
-      const childSum = children.reduce((sum, child) => sum + calculate(child.code), 0);
-      const total = own + childSum;
-      result[code] = total;
-      return total;
-    };
-    calculate("228");
-    calculate("383");
-    result["333"] = (result["229"] || 0) + (result["284"] || 0);
-    result["382"] =
-      (result["334"] || directBalances["334"] || 0) +
-      (result["337"] || directBalances["337"] || 0) +
-      (result["348"] || directBalances["348"] || 0) +
-      (result["361"] || directBalances["361"] || 0) +
-      (result["372"] || directBalances["372"] || 0);
-    result["383"] = (result["333"] || 0) + (result["382"] || 0);
-    return result;
-  }, [directBalances]);
+    const start = new Date(allDates[0].getFullYear(), allDates[0].getMonth(), 1);
+    const cutoff = cutoffDate ? parseScheduleDate(cutoffDate) : null;
+    const end = cutoff || allDates[allDates.length - 1];
+
+    const labels: string[] = [];
+    const asset: number[] = [];
+    const liability: number[] = [];
+    const equity: number[] = [];
+
+    const cursor = new Date(start.getFullYear(), start.getMonth(), 1);
+
+    while (cursor.getTime() <= end.getTime()) {
+      const monthEnd = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 0, 23, 59, 59, 999);
+      const effectiveMonthEnd =
+        monthEnd.getTime() > end.getTime()
+          ? new Date(end.getFullYear(), end.getMonth(), end.getDate(), 23, 59, 59, 999)
+          : monthEnd;
+
+      const monthSchedules = datedSchedules
+        .filter((item) => (item.parsedDate as Date).getTime() <= effectiveMonthEnd.getTime())
+        .map(({ parsedDate, ...rest }) => rest);
+
+      const monthLoanAmount = LOAN_TRANCHES.reduce((sum, tranche) => {
+        const parsed = parseScheduleDate(tranche.date);
+        if (!parsed) return sum;
+        return parsed.getTime() <= effectiveMonthEnd.getTime() ? sum + tranche.amount : sum;
+      }, 0);
+
+      const monthTransactionBalances = buildTransactionBalanceMap(
+        monthSchedules,
+        tagCategories,
+        mappings
+      );
+      const monthDirectBalances = buildDirectBalanceMap(
+        manualBalances,
+        monthTransactionBalances,
+        monthLoanAmount
+      );
+      const monthRolledBalances = buildRolledBalanceMap(monthDirectBalances);
+
+      labels.push(
+        effectiveMonthEnd.getDate() === monthEnd.getDate()
+          ? `${effectiveMonthEnd.getFullYear()}-${String(effectiveMonthEnd.getMonth() + 1).padStart(2, "0")}`
+          : `${effectiveMonthEnd.getFullYear()}-${String(effectiveMonthEnd.getMonth() + 1).padStart(2, "0")}-${String(
+              effectiveMonthEnd.getDate()
+            ).padStart(2, "0")}`
+      );
+      asset.push(monthRolledBalances["228"] || 0);
+      liability.push(monthRolledBalances["333"] || 0);
+      equity.push(monthRolledBalances["382"] || 0);
+
+      cursor.setMonth(cursor.getMonth() + 1);
+    }
+
+    return { labels, asset, liability, equity };
+  }, [schedules, cutoffDate, tagCategories, mappings, manualBalances]);
+
+  const monthlyTrendData = useMemo(
+    () => ({
+      labels: monthlyTrend.labels,
+      datasets: [
+        {
+          label: "자산",
+          data: monthlyTrend.asset,
+        },
+        {
+          label: "부채",
+          data: monthlyTrend.liability,
+        },
+        {
+          label: "자본",
+          data: monthlyTrend.equity,
+        },
+      ],
+    }),
+    [monthlyTrend]
+  );
 
   const assetTotal = rolledBalances["228"] || 0;
   const liabilityEquityTotal = rolledBalances["383"] || 0;
@@ -828,16 +1003,18 @@ export default function StandardBalanceSheetPage() {
             그래서 실제 신고용 재무상태표로 쓰려면 <strong>기초잔액/수동조정</strong>을 함께 넣어야 합니다.
           </p>
           <p>
-            기본 예시값으로는 <strong>자본금 5,000,000원(코드 334)</strong>,
-            <strong>대표자 무이자 대여금 4,000,000원(코드 236)</strong>,
-            그리고 이에 대응되는 <strong>현금 및 현금성자산 9,000,000원(코드 003)</strong>을 반영해 두었습니다.
+            기본 예시값으로는 <strong>자본금 5,000,000원(코드 334)</strong>을 반영해 두었고,
+            대표자 무이자 대여금은 <strong>2025-12-19 1,500,000원</strong>,
+            <strong>2026-01-24 1,000,000원</strong>,
+            <strong>2026-04-01 1,500,000원</strong>으로 날짜별 누적 반영되도록 설정했습니다.
           </p>
           <p>
             기본 흐름: 결제 항목별로 <strong>차변 계정 + 대변 계정</strong>을 지정하고,
             필요 시 각 코드별 수동조정 금액을 입력하면 됩니다.
           </p>
           <p>
-            아래의 <strong>기준일</strong>을 선택하면, 그 날짜까지 발생한 일정/비용 기여분만 반영해서 재무상태를 볼 수 있습니다.
+            아래의 <strong>기준일</strong>을 선택하면, 그 날짜까지 발생한 일정/비용 기여분만 반영하고,
+            대표자 대여금도 같은 기준일까지 실제 입금된 분만 누적 반영합니다.
           </p>
         </section>
 
@@ -865,10 +1042,10 @@ export default function StandardBalanceSheetPage() {
           </div>
           <div className={styles.filterMeta}>
             {cutoffDate
-              ? `${cutoffDate}까지의 일정/비용만 반영 중`
-              : "전체 기간의 일정/비용을 반영 중"}
+              ? `${cutoffDate}까지의 일정/비용 및 대표자 대여금 누적분 반영 중`
+              : "전체 기간의 일정/비용 및 대표자 대여금 누적분 반영 중"}
             <span className={styles.filterCount}>
-              {effectiveSchedules.length}건 반영 / 전체 {schedules.length}건
+              {effectiveSchedules.length}건 반영 / 전체 {schedules.length}건 · 대여금 누적 {formatCurrency(loanAmountUntilCutoff)}
             </span>
           </div>
         </section>
@@ -1082,6 +1259,42 @@ export default function StandardBalanceSheetPage() {
             <li>기초잔액이 있다면 해당 코드의 수동조정 칸에 넣습니다.</li>
             <li>자산총계(228)와 부채와 자본총계(383)의 차액이 0에 가깝게 맞는지 확인합니다.</li>
           </ol>
+        </section>
+
+        <section className={styles.chartPanel}>
+          <div className={styles.panelHeader}>
+            <div>
+              <h2>월별 자산·부채·자본 변화</h2>
+              <p>
+                기준일이 선택되면 해당 기준일까지의 월별 누적 상태만 그래프로 표시합니다.
+              </p>
+            </div>
+          </div>
+          <div className={styles.chartWrap}>
+            <Line
+              data={monthlyTrendData}
+              options={{
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: {
+                  mode: "index",
+                  intersect: false,
+                },
+                plugins: {
+                  legend: {
+                    position: "top",
+                  },
+                },
+                scales: {
+                  y: {
+                    ticks: {
+                      callback: (value) => formatCurrency(Number(value)),
+                    },
+                  },
+                },
+              }}
+            />
+          </div>
         </section>
       </main>
 
