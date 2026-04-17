@@ -96,7 +96,7 @@ const LOAN_TRANCHES = [
   { date: "2025-04-06", amount: 1081205 }, // 설립 전 누계
   { date: "2025-04-30", amount: 245938 },  // 4/7~4/30
   { date: "2025-05-31", amount: 638374 },  // 5/1~5/31
-  { date: "2025-06-02", amount: 354203 },  // 6/1~6/2
+  { date: "2025-06-02", amount: 311580 },  // 6/1~6/2, (NL) FACEBK, (SG) Google Digital Inc.
   { date: "2025-06-09", amount: 327152 },  // (SG) MICROSOFT
   { date: "2025-06-17", amount: 30685 },  // (US)OPENAI *CHATGPT
   { date: "2025-06-29", amount: 9112 },  // (NL) FACEBK
