@@ -638,6 +638,26 @@ function getDefaultMapping(normalizedTag: string, category: Category): ItemMappi
 }
 
 
+function applySignedEntry(
+  map: Record<string, number>,
+  debitCode: string,
+  creditCode: string,
+  amount: number
+) {
+  const debitSide = ACCOUNT_MAP[debitCode]?.side;
+  const creditSide = ACCOUNT_MAP[creditCode]?.side;
+
+  if (debitSide) {
+    map[debitCode] =
+      (map[debitCode] || 0) + (debitSide === "asset" ? amount : -amount);
+  }
+
+  if (creditSide) {
+    map[creditCode] =
+      (map[creditCode] || 0) + (creditSide === "asset" ? -amount : amount);
+  }
+}
+
 function buildTransactionBalanceMap(
   scheduleList: Schedule[],
   tagCategories: Record<string, Category>,
@@ -657,27 +677,29 @@ function buildTransactionBalanceMap(
   Object.entries(grouped).forEach(([normalizedTag, amount]) => {
     const selectedCategory = tagCategories[normalizedTag] || getDefaultCategory(normalizedTag);
     const mapping = mappings[normalizedTag] || getDefaultMapping(normalizedTag, selectedCategory);
-    map[mapping.debitCode] = (map[mapping.debitCode] || 0) + amount;
-    map[mapping.creditCode] = (map[mapping.creditCode] || 0) - amount;
+    applySignedEntry(map, mapping.debitCode, mapping.creditCode, amount);
   });
 
   return map;
 }
 
+function buildLoanBalanceMap(loanAmount: number): Record<string, number> {
+  const map: Record<string, number> = {};
+  if (loanAmount > 0) {
+    applySignedEntry(map, "003", "236", loanAmount);
+  }
+  return map;
+}
+
 function buildDirectBalanceMap(
   manualBalances: AccountBalanceMap,
-  transactionBalances: Record<string, number>,
-  loanAmount: number
+  autoBalances: Record<string, number>
 ): Record<string, number> {
   const map: Record<string, number> = {};
   for (const row of ACCOUNT_ROWS) {
     const manual = Number(manualBalances[row.code] || 0);
-    const auto = Number(transactionBalances[row.code] || 0);
-    const loanAdjusted =
-      row.code === "003" || row.code === "236"
-        ? loanAmount
-        : 0;
-    map[row.code] = manual + auto + loanAdjusted;
+    const auto = Number(autoBalances[row.code] || 0);
+    map[row.code] = manual + auto;
   }
   return map;
 }
@@ -734,8 +756,7 @@ function getHardcodedAdjustmentsUntil(cutoffDate?: string): HardcodedAdjustment[
 function buildAdjustmentBalanceMap(entries: HardcodedAdjustment[]): Record<string, number> {
   const map: Record<string, number> = {};
   entries.forEach((entry) => {
-    map[entry.debitCode] = (map[entry.debitCode] || 0) + entry.amount;
-    map[entry.creditCode] = (map[entry.creditCode] || 0) - entry.amount;
+    applySignedEntry(map, entry.debitCode, entry.creditCode, entry.amount);
   });
   return map;
 }
@@ -880,21 +901,22 @@ export default function StandardBalanceSheetPage() {
     });
   }, [normalizedItems, query]);
 
-  const transactionBalances = useMemo(() => {
-    const scheduleMap = buildTransactionBalanceMap(effectiveSchedules, tagCategories, mappings);
-    const adjustmentMap = buildAdjustmentBalanceMap(effectiveAdjustments);
-    return mergeBalanceMaps(scheduleMap, adjustmentMap);
-  }, [effectiveSchedules, effectiveAdjustments, tagCategories, mappings]);
-
   const loanAmountUntilCutoff = useMemo(() => getLoanAmountUntil(cutoffDate), [cutoffDate]);
   const adjustmentTotal = useMemo(
     () => effectiveAdjustments.reduce((sum, entry) => sum + entry.amount, 0),
     [effectiveAdjustments]
   );
 
+  const autoBalances = useMemo(() => {
+    const scheduleMap = buildTransactionBalanceMap(effectiveSchedules, tagCategories, mappings);
+    const adjustmentMap = buildAdjustmentBalanceMap(effectiveAdjustments);
+    const loanMap = buildLoanBalanceMap(loanAmountUntilCutoff);
+    return mergeBalanceMaps(scheduleMap, adjustmentMap, loanMap);
+  }, [effectiveSchedules, effectiveAdjustments, tagCategories, mappings, loanAmountUntilCutoff]);
+
   const directBalances = useMemo(
-    () => buildDirectBalanceMap(manualBalances, transactionBalances, loanAmountUntilCutoff),
-    [manualBalances, transactionBalances, loanAmountUntilCutoff]
+    () => buildDirectBalanceMap(manualBalances, autoBalances),
+    [manualBalances, autoBalances]
   );
 
   const rolledBalances = useMemo(
@@ -952,15 +974,26 @@ export default function StandardBalanceSheetPage() {
         return parsed.getTime() <= effectiveMonthEnd.getTime() ? sum + tranche.amount : sum;
       }, 0);
 
+      const monthAdjustments = getHardcodedAdjustmentsUntil(
+        `${effectiveMonthEnd.getFullYear()}-${String(effectiveMonthEnd.getMonth() + 1).padStart(2, "0")}-${String(
+          effectiveMonthEnd.getDate()
+        ).padStart(2, "0")}`
+      );
       const monthTransactionBalances = buildTransactionBalanceMap(
         monthSchedules,
         tagCategories,
         mappings
       );
+      const monthAdjustmentBalances = buildAdjustmentBalanceMap(monthAdjustments);
+      const monthLoanBalances = buildLoanBalanceMap(monthLoanAmount);
+      const monthAutoBalances = mergeBalanceMaps(
+        monthTransactionBalances,
+        monthAdjustmentBalances,
+        monthLoanBalances
+      );
       const monthDirectBalances = buildDirectBalanceMap(
         manualBalances,
-        monthTransactionBalances,
-        monthLoanAmount
+        monthAutoBalances
       );
       const monthRolledBalances = buildRolledBalanceMap(monthDirectBalances);
 
@@ -1095,9 +1128,8 @@ export default function StandardBalanceSheetPage() {
           </p>
           <p>
             기본 예시값으로는 <strong>자본금 5,000,000원(코드 334)</strong>을 반영해 두었고,
-            대표자 무이자 대여금은 <strong>2025-12-19 1,500,000원</strong>,
-            <strong>2026-01-24 1,000,000원</strong>,
-            <strong>2026-04-01 1,500,000원</strong>으로 날짜별 누적 반영되도록 설정했습니다.
+            대표자 무이자 대여금은 <strong>설립 전 누계 1,081,205원</strong>과
+            <strong>2025-04-30 ~ 2026-04-01</strong>까지의 각 차입 트랜치가 날짜별 누적으로 반영되도록 설정했습니다.
           </p>
           <p>
             기본 흐름: 결제 항목별로 <strong>차변 계정 + 대변 계정</strong>을 지정하고,
