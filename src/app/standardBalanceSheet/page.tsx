@@ -1286,7 +1286,7 @@ export default function StandardBalanceSheetPage() {
                 </thead>
                 <tbody>
                   {sideRows.asset.map((row) => {
-                    const auto = transactionBalances[row.code] || 0;
+                    const auto = autoBalances[row.code] || 0;
                     const manual = manualBalances[row.code] || 0;
                     const total = rolledBalances[row.code] || 0;
                     return (
@@ -1337,7 +1337,7 @@ export default function StandardBalanceSheetPage() {
                 </thead>
                 <tbody>
                   {sideRows.liability_equity.map((row) => {
-                    const auto = transactionBalances[row.code] || 0;
+                    const auto = autoBalances[row.code] || 0;
                     const manual = manualBalances[row.code] || 0;
                     const total = rolledBalances[row.code] || 0;
                     return (
