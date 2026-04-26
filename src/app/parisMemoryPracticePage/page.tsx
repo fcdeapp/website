@@ -23,7 +23,7 @@ const MEMORY_LINES: MemoryLine[] = [
   {
     id: "2",
     section: "문제 제기",
-    text: "그는 계급 소속감의 부재가 부르주아의 유년기를 특징짓는다고 쓴다(p.112).",
+    text: "그는 계급 소속감의 부재가 부르주아의 유년기를 특징짓는다고 쓴다(112).",
   },
   {
     id: "3",
@@ -48,17 +48,17 @@ const MEMORY_LINES: MemoryLine[] = [
   {
     id: "7",
     section: "나의 해석",
-    text: "에리봉은 아버지를 고유한 인물이 아니라 노동자 세계의 한 유형으로 서술한다(p.109).",
+    text: "에리봉은 아버지를 고유한 인물이 아니라 노동자 세계의 한 유형으로 서술한다(109).",
   },
   {
     id: "8-1",
     section: "나의 해석",
-    text: "그는 자신의 시선이 이미 외부자의 것임을 인정하고(p.109),",
+    text: "그는 자신의 시선이 이미 외부자의 것임을 인정하고(109),",
   },
   {
     id: "8-2",
     section: "나의 해석",
-    text: "그렇기에 계급 구조를 파악하려면 내려다보는 시각(p.55)이 필요하다고 말한다.",
+    text: "그렇기에 계급 구조를 파악하려면 내려다보는 시각(55)이 필요하다고 말한다.",
   },
   {
     id: "9",
@@ -83,7 +83,7 @@ const MEMORY_LINES: MemoryLine[] = [
   {
     id: "13",
     section: "다른 독법",
-    text: "에리봉은 사회적 결정논리가 아버지를 태어날 때부터 지배했으며, 재생산의 법칙이 그에게 할당한 계급적 위치에서 끝내 벗어나지 못했다고 쓴다(p.54).",
+    text: "에리봉은 사회적 결정논리가 아버지를 태어날 때부터 지배했으며, 재생산의 법칙이 그에게 할당한 계급적 위치에서 끝내 벗어나지 못했다고 쓴다(54).",
   },
   {
     id: "14",
@@ -103,7 +103,7 @@ const MEMORY_LINES: MemoryLine[] = [
   {
     id: "17",
     section: "반박과 결론",
-    text: "집 안팎에서 반복된 동성애 혐오의 말들, 그중에서도 아버지의 언어(p.225)에서 랭스가 그에게 여전히 모욕의 기억임이 드러난다.",
+    text: "집 안팎에서 반복된 동성애 혐오의 말들, 그중에서도 아버지의 언어(225)에서 랭스가 그에게 여전히 모욕의 기억임이 드러난다.",
   },
   {
     id: "18-1",
@@ -133,8 +133,17 @@ function buildFullText() {
   return [TITLE, AUTHOR, ...MEMORY_LINES.map((line) => `${line.id} ${line.text}`)].join("\n");
 }
 
-function normalizeForLooseCheck(value: string) {
-  return value.replace(/\r\n/g, "\n").trim();
+function normalizeForCheck(value: string, strictSpacing: boolean) {
+  const normalized = value
+    .replace(/\r\n/g, "\n")
+    .replace(/[‘’]/g, "'")
+    .replace(/\(p\.\s*(\d+)\)/gi, "($1)")
+    .replace(/[『「]랭스로 되돌아가다[』」]/g, "랭스로 되돌아가다")
+    .replace(/'랭스로 되돌아가다'/g, "랭스로 되돌아가다")
+    .trim();
+
+  if (strictSpacing) return normalized;
+  return normalized.replace(/[ \t]+/g, " ");
 }
 
 function getParagraphText(section: MemoryLine["section"]) {
@@ -188,8 +197,8 @@ export default function ParisMemoryPracticePage() {
     return selectedLine.text;
   }, [mode, selectedLine.text, selectedSection]);
 
-  const comparableTarget = strictSpacing ? targetText : normalizeForLooseCheck(targetText);
-  const comparableAnswer = strictSpacing ? answer : normalizeForLooseCheck(answer);
+  const comparableTarget = normalizeForCheck(targetText, strictSpacing);
+  const comparableAnswer = normalizeForCheck(answer, strictSpacing);
   const firstDiff = findFirstDifference(comparableTarget, comparableAnswer);
   const isPerfect = comparableTarget.length > 0 && comparableAnswer === comparableTarget;
   const typedLength = comparableAnswer.length;
@@ -235,8 +244,8 @@ export default function ParisMemoryPracticePage() {
           <h1>{TITLE}</h1>
           <p className={styles.author}>{AUTHOR}</p>
           <p className={styles.subtitle}>
-            조사, 문장부호, 인용부호, 괄호 안 쪽수까지 그대로 맞추는 암기 연습 페이지입니다.
-            줄별 암기 → 문단 암기 → 전체 백지쓰기 순서로 사용하세요.
+            조사와 문장부호까지 정확히 맞추는 암기 연습 페이지입니다.
+            ‘/’ 인용부호 차이, (p.숫자)/(숫자), 『랭스로 되돌아가다』/'랭스로 되돌아가다' 입력 차이는 허용됩니다.
           </p>
         </div>
         <div className={styles.scoreCard}>
