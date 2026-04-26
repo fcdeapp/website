@@ -61,14 +61,19 @@ const MEMORY_LINES: MemoryLine[] = [
     text: "그렇기에 계급 구조를 파악하려면 내려다보는 시각(55)이 필요하다고 말한다.",
   },
   {
-    id: "9",
+    id: "9-1",
     section: "나의 해석",
-    text: "에리봉이 사회학의 언어로 랭스를 설명할수록 랭스는 멀어진다.",
+    text: "에리봉이 사회학의 언어로 랭스를 설명할수록,",
+  },
+  {
+    id: "9-2",
+    section: "나의 해석",
+    text: "그는 랭스에서 멀어진다.",
   },
   {
     id: "10",
     section: "나의 해석",
-    text: "과거는 화해를 통해 현재화되기보다, 분석의 대상으로 객관화된다.",
+    text: "에리봉은 과거를 화해를 통해 현재화하기보다, 분석의 대상으로 객관화한다.",
   },
   {
     id: "11",
@@ -78,17 +83,17 @@ const MEMORY_LINES: MemoryLine[] = [
   {
     id: "12",
     section: "다른 독법",
-    text: "가족의 혐오를 계급적 조건의 산물로 재배치하는 이 분석은 뒤늦은 용서의 형식으로도 읽힌다.",
+    text: "에리봉이 가족의 혐오를 계급적 조건의 산물로 재배치한다는 점에서, 이를 뒤늦은 용서의 형식으로도 읽을 수 있다.",
   },
   {
     id: "13",
     section: "다른 독법",
-    text: "에리봉은 아버지가 태어날 때부터 사회적 결정논리의 지배를 받았으며, 재생산의 법칙 속에서 주어진 계급적 위치에서 끝내 벗어나지 못했다고 쓴다(54).",
+    text: "에리봉은 아버지가 태어날 때부터 사회적 결정논리의 지배를 받았고, 재생산의 법칙 속에서 주어진 계급적 위치에서 끝내 벗어나지 못했다고 쓴다(54).",
   },
   {
     id: "14",
     section: "다른 독법",
-    text: "이처럼 원인을 개인에게서 구조로 옮겨 설명하는 서술은, 이 독법에서 우회된 용서의 형식으로 읽힌다.",
+    text: "이처럼 원인을 개인에게서 구조로 옮긴다는 점에서, 이 독법에서는 그의 서술을 우회된 용서의 형식으로 읽어낼 수 있다.",
   },
   {
     id: "15",
@@ -98,12 +103,12 @@ const MEMORY_LINES: MemoryLine[] = [
   {
     id: "16",
     section: "반박과 결론",
-    text: "아버지의 적대는 사회적 조건으로 설명되지만 관계는 재구성되지 않는다.",
+    text: "에리봉은 아버지의 적대를 사회적 조건으로 설명하지만, 관계를 재구성하지는 않는다.",
   },
   {
     id: "17",
     section: "반박과 결론",
-    text: "집 안팎에서 반복된 동성애 혐오의 말들, 그중에서도 아버지의 언어(225)에서 랭스가 그에게 여전히 모욕의 기억임이 드러난다.",
+    text: "에리봉은 집 안팎에서 반복된 동성애 혐오의 말들, 그중에서도 아버지의 언어(225)를 통해 자신이 랭스를 여전히 모욕의 장소로 기억하고 있음을 드러낸다.",
   },
   {
     id: "18-1",
@@ -113,21 +118,26 @@ const MEMORY_LINES: MemoryLine[] = [
   {
     id: "18-2",
     section: "반박과 결론",
-    text: "그가 전제하는 ‘내려다보는 시각’ 속에서 기억은 끝내 화해의 매개가 아니라 분석의 재료로 남는다.",
+    text: "그가 전제하는 ‘내려다보는 시각’ 속에서 그는 끝내 기억을 화해의 매개가 아니라 분석의 재료로 다룬다.",
   },
   {
     id: "19-1",
     section: "반박과 결론",
-    text: "귀환은 제목에서만 완수되었고,",
+    text: "에리봉은 제목에서만 귀환을 완수하고,",
   },
   {
     id: "19-2",
     section: "반박과 결론",
-    text: "시선은 파리에 남는다.",
+    text: "끝내 파리에 시선을 둔다.",
   },
 ];
 
-const SECTION_ORDER: MemoryLine["section"][] = ["문제 제기", "나의 해석", "다른 독법", "반박과 결론"];
+const SECTION_ORDER: MemoryLine["section"][] = [
+  "문제 제기",
+  "나의 해석",
+  "다른 독법",
+  "반박과 결론",
+];
 
 function buildFullText() {
   return [TITLE, AUTHOR, ...MEMORY_LINES.map((line) => `${line.id} ${line.text}`)].join("\n");
@@ -154,24 +164,37 @@ function getParagraphText(section: MemoryLine["section"]) {
 
 function findFirstDifference(target: string, input: string) {
   const max = Math.max(target.length, input.length);
+
   for (let i = 0; i < max; i += 1) {
     if (target[i] !== input[i]) {
       return i;
     }
   }
+
   return -1;
 }
 
 function makeMaskedText(text: string, level: number) {
   if (level <= 0) return text;
+
   const chunks = text.split(/(\s+)/);
   let visibleWordIndex = 0;
+
   return chunks
     .map((chunk) => {
       if (/^\s+$/.test(chunk)) return chunk;
+
       visibleWordIndex += 1;
-      const shouldHide = level === 1 ? visibleWordIndex % 4 === 0 : level === 2 ? visibleWordIndex % 2 === 0 : true;
+
+      const shouldHide =
+        level === 1
+          ? visibleWordIndex % 4 === 0
+          : level === 2
+            ? visibleWordIndex % 2 === 0
+            : true;
+
       if (!shouldHide) return chunk;
+
       return "□".repeat(Math.max(2, Math.min(chunk.length, 8)));
     })
     .join("");
@@ -200,10 +223,17 @@ export default function ParisMemoryPracticePage() {
   const comparableTarget = normalizeForCheck(targetText, strictSpacing);
   const comparableAnswer = normalizeForCheck(answer, strictSpacing);
   const firstDiff = findFirstDifference(comparableTarget, comparableAnswer);
+
   const isPerfect = comparableTarget.length > 0 && comparableAnswer === comparableTarget;
   const typedLength = comparableAnswer.length;
-  const progress = Math.min(100, Math.round((typedLength / Math.max(comparableTarget.length, 1)) * 100));
-  const wrongCount = firstDiff === -1 ? 0 : Math.max(comparableTarget.length - firstDiff, comparableAnswer.length - firstDiff);
+  const progress = Math.min(
+    100,
+    Math.round((typedLength / Math.max(comparableTarget.length, 1)) * 100)
+  );
+  const wrongCount =
+    firstDiff === -1
+      ? 0
+      : Math.max(comparableTarget.length - firstDiff, comparableAnswer.length - firstDiff);
 
   const groupedLines = useMemo(() => {
     return SECTION_ORDER.map((section) => ({
@@ -221,6 +251,7 @@ export default function ParisMemoryPracticePage() {
   const goNextLine = () => {
     const currentIndex = MEMORY_LINES.findIndex((line) => line.id === selectedLineId);
     const next = MEMORY_LINES[Math.min(currentIndex + 1, MEMORY_LINES.length - 1)];
+
     setSelectedLineId(next.id);
     setSelectedSection(next.section);
     setAnswer("");
@@ -230,6 +261,7 @@ export default function ParisMemoryPracticePage() {
   const goPrevLine = () => {
     const currentIndex = MEMORY_LINES.findIndex((line) => line.id === selectedLineId);
     const prev = MEMORY_LINES[Math.max(currentIndex - 1, 0)];
+
     setSelectedLineId(prev.id);
     setSelectedSection(prev.section);
     setAnswer("");
@@ -245,26 +277,41 @@ export default function ParisMemoryPracticePage() {
           <p className={styles.author}>{AUTHOR}</p>
           <p className={styles.subtitle}>
             조사와 문장부호까지 정확히 맞추는 암기 연습 페이지입니다.
-            ‘/’ 인용부호 차이, (p.숫자)/(숫자), 『랭스로 되돌아가다』/'랭스로 되돌아가다' 입력 차이는 허용됩니다.
+            ‘/’ 인용부호 차이, (p.숫자)/(숫자), 『랭스로 되돌아가다』/'랭스로 되돌아가다'
+            입력 차이는 허용됩니다.
           </p>
         </div>
+
         <div className={styles.scoreCard}>
           <span className={styles.scoreLabel}>현재 정확도</span>
-          <strong className={isPerfect ? styles.perfectScore : ""}>{isPerfect ? "100%" : `${progress}%`}</strong>
-          <span className={styles.scoreHint}>{isPerfect ? "완전 일치" : firstDiff === -1 ? "입력 중" : `첫 오류 위치 ${firstDiff + 1}자`}</span>
+          <strong className={isPerfect ? styles.perfectScore : ""}>
+            {isPerfect ? "100%" : `${progress}%`}
+          </strong>
+          <span className={styles.scoreHint}>
+            {isPerfect ? "완전 일치" : firstDiff === -1 ? "입력 중" : `첫 오류 위치 ${firstDiff + 1}자`}
+          </span>
         </div>
       </header>
 
       <main className={styles.main}>
         <section className={styles.toolbar}>
           <div className={styles.modeGroup} aria-label="practice mode">
-            <button className={mode === "line" ? styles.activeButton : ""} onClick={() => handleModeChange("line")}>
+            <button
+              className={mode === "line" ? styles.activeButton : ""}
+              onClick={() => handleModeChange("line")}
+            >
               줄별 암기
             </button>
-            <button className={mode === "paragraph" ? styles.activeButton : ""} onClick={() => handleModeChange("paragraph")}>
+            <button
+              className={mode === "paragraph" ? styles.activeButton : ""}
+              onClick={() => handleModeChange("paragraph")}
+            >
               문단 암기
             </button>
-            <button className={mode === "full" ? styles.activeButton : ""} onClick={() => handleModeChange("full")}>
+            <button
+              className={mode === "full" ? styles.activeButton : ""}
+              onClick={() => handleModeChange("full")}
+            >
               전체 백지쓰기
             </button>
           </div>
@@ -290,7 +337,9 @@ export default function ParisMemoryPracticePage() {
               {groupedLines.map((group) => (
                 <div key={group.section} className={styles.lineGroup}>
                   <button
-                    className={`${styles.sectionButton} ${selectedSection === group.section ? styles.selectedSection : ""}`}
+                    className={`${styles.sectionButton} ${
+                      selectedSection === group.section ? styles.selectedSection : ""
+                    }`}
                     onClick={() => {
                       setSelectedSection(group.section);
                       setMode("paragraph");
@@ -300,11 +349,14 @@ export default function ParisMemoryPracticePage() {
                   >
                     {group.section}
                   </button>
+
                   <div className={styles.lineButtons}>
                     {group.lines.map((line) => (
                       <button
                         key={line.id}
-                        className={`${styles.lineButton} ${selectedLineId === line.id ? styles.selectedLine : ""}`}
+                        className={`${styles.lineButton} ${
+                          selectedLineId === line.id ? styles.selectedLine : ""
+                        }`}
                         onClick={() => {
                           setSelectedLineId(line.id);
                           setSelectedSection(line.section);
@@ -326,10 +378,15 @@ export default function ParisMemoryPracticePage() {
             <div className={styles.panelHeader}>
               <div>
                 <p className={styles.panelKicker}>
-                  {mode === "line" ? `${selectedLine.id}번 줄` : mode === "paragraph" ? selectedSection : "전체 원문"}
+                  {mode === "line"
+                    ? `${selectedLine.id}번 줄`
+                    : mode === "paragraph"
+                      ? selectedSection
+                      : "전체 원문"}
                 </p>
                 <h2>{mode === "full" ? "처음부터 끝까지 그대로 쓰기" : "안 보고 입력하기"}</h2>
               </div>
+
               {mode === "line" && (
                 <div className={styles.navButtons}>
                   <button onClick={goPrevLine}>이전</button>
@@ -341,7 +398,10 @@ export default function ParisMemoryPracticePage() {
             <div className={styles.maskBox}>
               <div className={styles.maskHeader}>
                 <strong>가림 힌트</strong>
-                <select value={maskLevel} onChange={(event) => setMaskLevel(Number(event.target.value))}>
+                <select
+                  value={maskLevel}
+                  onChange={(event) => setMaskLevel(Number(event.target.value))}
+                >
                   <option value={0}>원문 보기</option>
                   <option value={1}>25% 가림</option>
                   <option value={2}>50% 가림</option>
@@ -352,16 +412,24 @@ export default function ParisMemoryPracticePage() {
             </div>
 
             <textarea
-              className={`${styles.answerInput} ${isPerfect ? styles.answerPerfect : firstDiff >= 0 ? styles.answerWrong : ""}`}
+              className={`${styles.answerInput} ${
+                isPerfect ? styles.answerPerfect : firstDiff >= 0 ? styles.answerWrong : ""
+              }`}
               value={answer}
               onChange={(event) => setAnswer(event.target.value)}
-              placeholder={mode === "full" ? "제목, 이름, 번호, 본문까지 전부 입력하세요." : "정확히 입력하세요."}
+              placeholder={
+                mode === "full"
+                  ? "제목, 이름, 번호, 본문까지 전부 입력하세요."
+                  : "정확히 입력하세요."
+              }
               spellCheck={false}
             />
 
             <div className={styles.resultBar}>
               <div>
-                <strong>{isPerfect ? "완전 일치" : firstDiff === -1 ? "아직 오류 없음" : "불일치 발견"}</strong>
+                <strong>
+                  {isPerfect ? "완전 일치" : firstDiff === -1 ? "아직 오류 없음" : "불일치 발견"}
+                </strong>
                 <span>
                   {isPerfect
                     ? "다음 줄 또는 다음 문단으로 넘어가도 됩니다."
@@ -370,8 +438,11 @@ export default function ParisMemoryPracticePage() {
                       : `첫 차이: ${firstDiff + 1}번째 글자 · 남은 오류 가능 구간 ${wrongCount}자`}
                 </span>
               </div>
+
               <div className={styles.actionButtons}>
-                <button onClick={() => setShowAnswer((prev) => !prev)}>{showAnswer ? "정답 숨기기" : "정답 보기"}</button>
+                <button onClick={() => setShowAnswer((prev) => !prev)}>
+                  {showAnswer ? "정답 숨기기" : "정답 보기"}
+                </button>
                 <button onClick={() => setAnswer("")}>다시 쓰기</button>
               </div>
             </div>
@@ -380,18 +451,24 @@ export default function ParisMemoryPracticePage() {
               <div className={styles.diffBox}>
                 <div>
                   <span>정답</span>
-                  <code>{comparableTarget.slice(Math.max(0, firstDiff - 16), firstDiff)}<mark>{comparableTarget[firstDiff] || "∅"}</mark>{comparableTarget.slice(firstDiff + 1, firstDiff + 34)}</code>
+                  <code>
+                    {comparableTarget.slice(Math.max(0, firstDiff - 16), firstDiff)}
+                    <mark>{comparableTarget[firstDiff] || "∅"}</mark>
+                    {comparableTarget.slice(firstDiff + 1, firstDiff + 34)}
+                  </code>
                 </div>
                 <div>
                   <span>입력</span>
-                  <code>{comparableAnswer.slice(Math.max(0, firstDiff - 16), firstDiff)}<mark>{comparableAnswer[firstDiff] || "∅"}</mark>{comparableAnswer.slice(firstDiff + 1, firstDiff + 34)}</code>
+                  <code>
+                    {comparableAnswer.slice(Math.max(0, firstDiff - 16), firstDiff)}
+                    <mark>{comparableAnswer[firstDiff] || "∅"}</mark>
+                    {comparableAnswer.slice(firstDiff + 1, firstDiff + 34)}
+                  </code>
                 </div>
               </div>
             )}
 
-            {showAnswer && (
-              <pre className={styles.answerSheet}>{targetText}</pre>
-            )}
+            {showAnswer && <pre className={styles.answerSheet}>{targetText}</pre>}
           </section>
         </section>
 
