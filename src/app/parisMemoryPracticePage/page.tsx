@@ -71,9 +71,14 @@ const MEMORY_LINES: MemoryLine[] = [
     text: "그는 랭스에서 멀어진다.",
   },
   {
-    id: "10",
+    id: "10-1",
     section: "나의 해석",
-    text: "에리봉은 과거를 화해를 통해 현재화하기보다, 분석의 대상으로 객관화한다.",
+    text: "에리봉은 과거를 화해를 통해 현재화하기보다,",
+  },
+  {
+    id: "10-2",
+    section: "나의 해석",
+    text: "분석의 대상으로 객관화한다.",
   },
   {
     id: "11",
@@ -81,19 +86,34 @@ const MEMORY_LINES: MemoryLine[] = [
     text: "다른 독법도 가능하다.",
   },
   {
-    id: "12",
+    id: "12-1",
     section: "다른 독법",
-    text: "에리봉이 가족의 혐오를 계급적 조건의 산물로 재배치한다는 점에서, 이를 뒤늦은 용서의 형식으로도 읽을 수 있다.",
+    text: "에리봉이 가족의 혐오를 계급적 조건의 산물로 재배치한다는 점에서,",
   },
   {
-    id: "13",
+    id: "12-2",
     section: "다른 독법",
-    text: "에리봉은 아버지가 태어날 때부터 사회적 결정논리의 지배를 받았고, 재생산의 법칙 속에서 주어진 계급적 위치에서 끝내 벗어나지 못했다고 쓴다(54).",
+    text: "이를 뒤늦은 용서의 형식으로도 읽을 수 있다.",
   },
   {
-    id: "14",
+    id: "13-1",
     section: "다른 독법",
-    text: "이처럼 원인을 개인에게서 구조로 옮긴다는 점에서, 이 독법에서는 그의 서술을 우회된 용서의 형식으로 읽어낼 수 있다.",
+    text: "에리봉은 아버지가 태어날 때부터 사회적 결정논리의 지배를 받았고,",
+  },
+  {
+    id: "13-2",
+    section: "다른 독법",
+    text: "재생산의 법칙 속에서 주어진 계급적 위치에서 끝내 벗어나지 못했다고 쓴다(54).",
+  },
+  {
+    id: "14-1",
+    section: "다른 독법",
+    text: "이처럼 원인을 개인에게서 구조로 옮긴다는 점에서,",
+  },
+  {
+    id: "14-2",
+    section: "다른 독법",
+    text: "이 독법에서는 그의 서술을 우회된 용서의 형식으로 읽어낼 수 있다.",
   },
   {
     id: "15",
@@ -101,14 +121,24 @@ const MEMORY_LINES: MemoryLine[] = [
     text: "그러나 외부성을 인정하는 것과 화해는 다르다.",
   },
   {
-    id: "16",
+    id: "16-1",
     section: "반박과 결론",
-    text: "에리봉은 아버지의 적대를 사회적 조건으로 설명하지만, 관계를 재구성하지는 않는다.",
+    text: "에리봉은 아버지의 적대를 사회적 조건으로 설명하지만,",
   },
   {
-    id: "17",
+    id: "16-2",
     section: "반박과 결론",
-    text: "에리봉은 집 안팎에서 반복된 동성애 혐오의 말들, 그중에서도 아버지의 언어(225)를 통해 자신이 랭스를 여전히 모욕의 장소로 기억하고 있음을 드러낸다.",
+    text: "관계를 재구성하지는 않는다.",
+  },
+  {
+    id: "17-1",
+    section: "반박과 결론",
+    text: "에리봉은 집 안팎에서 반복된 동성애 혐오의 말들,",
+  },
+  {
+    id: "17-2",
+    section: "반박과 결론",
+    text: "그중에서도 아버지의 언어(225)를 통해 자신이 랭스를 여전히 모욕의 장소로 기억하고 있음을 드러낸다.",
   },
   {
     id: "18-1",
@@ -230,6 +260,7 @@ export default function ParisMemoryPracticePage() {
     100,
     Math.round((typedLength / Math.max(comparableTarget.length, 1)) * 100)
   );
+
   const wrongCount =
     firstDiff === -1
       ? 0
@@ -288,7 +319,11 @@ export default function ParisMemoryPracticePage() {
             {isPerfect ? "100%" : `${progress}%`}
           </strong>
           <span className={styles.scoreHint}>
-            {isPerfect ? "완전 일치" : firstDiff === -1 ? "입력 중" : `첫 오류 위치 ${firstDiff + 1}자`}
+            {isPerfect
+              ? "완전 일치"
+              : firstDiff === -1
+                ? "입력 중"
+                : `첫 오류 위치 ${firstDiff + 1}자`}
           </span>
         </div>
       </header>
@@ -299,18 +334,21 @@ export default function ParisMemoryPracticePage() {
             <button
               className={mode === "line" ? styles.activeButton : ""}
               onClick={() => handleModeChange("line")}
+              type="button"
             >
               줄별 암기
             </button>
             <button
               className={mode === "paragraph" ? styles.activeButton : ""}
               onClick={() => handleModeChange("paragraph")}
+              type="button"
             >
               문단 암기
             </button>
             <button
               className={mode === "full" ? styles.activeButton : ""}
               onClick={() => handleModeChange("full")}
+              type="button"
             >
               전체 백지쓰기
             </button>
@@ -346,6 +384,7 @@ export default function ParisMemoryPracticePage() {
                       setAnswer("");
                       setShowAnswer(false);
                     }}
+                    type="button"
                   >
                     {group.section}
                   </button>
@@ -364,6 +403,7 @@ export default function ParisMemoryPracticePage() {
                           setAnswer("");
                           setShowAnswer(false);
                         }}
+                        type="button"
                       >
                         {line.id}
                       </button>
@@ -389,8 +429,12 @@ export default function ParisMemoryPracticePage() {
 
               {mode === "line" && (
                 <div className={styles.navButtons}>
-                  <button onClick={goPrevLine}>이전</button>
-                  <button onClick={goNextLine}>다음</button>
+                  <button onClick={goPrevLine} type="button">
+                    이전
+                  </button>
+                  <button onClick={goNextLine} type="button">
+                    다음
+                  </button>
                 </div>
               )}
             </div>
@@ -408,6 +452,7 @@ export default function ParisMemoryPracticePage() {
                   <option value={3}>전부 가림</option>
                 </select>
               </div>
+
               <p>{makeMaskedText(targetText, maskLevel)}</p>
             </div>
 
@@ -440,10 +485,12 @@ export default function ParisMemoryPracticePage() {
               </div>
 
               <div className={styles.actionButtons}>
-                <button onClick={() => setShowAnswer((prev) => !prev)}>
+                <button onClick={() => setShowAnswer((prev) => !prev)} type="button">
                   {showAnswer ? "정답 숨기기" : "정답 보기"}
                 </button>
-                <button onClick={() => setAnswer("")}>다시 쓰기</button>
+                <button onClick={() => setAnswer("")} type="button">
+                  다시 쓰기
+                </button>
               </div>
             </div>
 
@@ -457,6 +504,7 @@ export default function ParisMemoryPracticePage() {
                     {comparableTarget.slice(firstDiff + 1, firstDiff + 34)}
                   </code>
                 </div>
+
                 <div>
                   <span>입력</span>
                   <code>
