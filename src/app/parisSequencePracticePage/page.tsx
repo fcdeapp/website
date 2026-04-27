@@ -196,23 +196,24 @@ function getLineById(id: string) {
   return MEMORY_LINES.find((line) => line.id === id) || MEMORY_LINES[0];
 }
 
-function makeSentenceChips(section: SectionName): Chip[] {
-  return getSectionLines(section).map((line, index) => ({
+function makeSentenceChips(): Chip[] {
+  return MEMORY_LINES.map((line, index) => ({
     key: makeKey("sentence", index),
-    label: `${line.id}. ${line.text}`,
+    label: line.text,
   }));
 }
 
 function makeWordChips(lineId: string, difficulty: Difficulty): Chip[] {
   const line = getLineById(lineId);
+
   return splitLineToChunks(line.text, difficulty).map((chunk, index) => ({
     key: makeKey("word", index),
     label: chunk,
   }));
 }
 
-function getCorrectSentenceLabels(section: SectionName) {
-  return getSectionLines(section).map((line) => `${line.id}. ${line.text}`);
+function getCorrectSentenceLabels() {
+  return MEMORY_LINES.map((line) => line.text);
 }
 
 function getCorrectWordLabels(lineId: string, difficulty: Difficulty) {
@@ -220,7 +221,7 @@ function getCorrectWordLabels(lineId: string, difficulty: Difficulty) {
 }
 
 function getModeTitle(mode: GameMode) {
-  if (mode === "sentence") return "문장 순서 맞추기";
+  if (mode === "sentence") return "전체 문장 순서 맞추기";
   return "단어·구절 순서 맞추기";
 }
 
@@ -237,20 +238,25 @@ export default function ParisSequencePracticePage() {
   const selectedLine = useMemo(() => getLineById(selectedLineId), [selectedLineId]);
 
   const correctLabels = useMemo(() => {
-    if (mode === "sentence") return getCorrectSentenceLabels(selectedSection);
+    if (mode === "sentence") return getCorrectSentenceLabels();
     return getCorrectWordLabels(selectedLineId, difficulty);
-  }, [difficulty, mode, selectedLineId, selectedSection]);
+  }, [difficulty, mode, selectedLineId]);
 
   const answerLabels = useMemo(() => answer.map((chip) => chip.label), [answer]);
 
   const correctCount = useMemo(() => {
-    return answerLabels.filter((label, index) => normalizeText(label) === normalizeText(correctLabels[index] || "")).length;
+    return answerLabels.filter(
+      (label, index) => normalizeText(label) === normalizeText(correctLabels[index] || "")
+    ).length;
   }, [answerLabels, correctLabels]);
 
   const isComplete = answer.length === correctLabels.length;
+
   const isPerfect =
     isComplete &&
-    correctLabels.every((label, index) => normalizeText(label) === normalizeText(answerLabels[index] || ""));
+    correctLabels.every(
+      (label, index) => normalizeText(label) === normalizeText(answerLabels[index] || "")
+    );
 
   const progress = Math.round((answer.length / Math.max(correctLabels.length, 1)) * 100);
 
@@ -263,9 +269,7 @@ export default function ParisSequencePracticePage() {
 
   const resetGame = () => {
     const chips =
-      mode === "sentence"
-        ? makeSentenceChips(selectedSection)
-        : makeWordChips(selectedLineId, difficulty);
+      mode === "sentence" ? makeSentenceChips() : makeWordChips(selectedLineId, difficulty);
 
     setPool(shuffleArray(chips));
     setAnswer([]);
@@ -290,10 +294,10 @@ export default function ParisSequencePracticePage() {
     setChecked(false);
   };
 
-  const moveAnswerChip = (index: number, direction: "left" | "right") => {
+  const moveAnswerChip = (index: number, direction: "up" | "down") => {
     setAnswer((prev) => {
       const next = [...prev];
-      const targetIndex = direction === "left" ? index - 1 : index + 1;
+      const targetIndex = direction === "up" ? index - 1 : index + 1;
 
       if (targetIndex < 0 || targetIndex >= next.length) return prev;
 
@@ -306,9 +310,7 @@ export default function ParisSequencePracticePage() {
 
   const fillCorrectAnswer = () => {
     const correctChips =
-      mode === "sentence"
-        ? makeSentenceChips(selectedSection)
-        : makeWordChips(selectedLineId, difficulty);
+      mode === "sentence" ? makeSentenceChips() : makeWordChips(selectedLineId, difficulty);
 
     setAnswer(correctChips);
     setPool([]);
@@ -318,6 +320,7 @@ export default function ParisSequencePracticePage() {
 
   const clearAnswer = () => {
     const all = [...pool, ...answer];
+
     setPool(shuffleArray(all));
     setAnswer([]);
     setChecked(false);
@@ -334,6 +337,10 @@ export default function ParisSequencePracticePage() {
 
     setSelectedSection(section);
     if (firstLine) setSelectedLineId(firstLine.id);
+
+    if (mode === "sentence") {
+      setMode("word");
+    }
   };
 
   const handleLineSelect = (line: MemoryLine) => {
@@ -369,7 +376,7 @@ export default function ParisSequencePracticePage() {
           <p className={styles.author}>{AUTHOR}</p>
           <p className={styles.subtitle}>
             문장과 단어를 섞어 놓고, 올바른 순서로 다시 배열하는 암기 페이지입니다.
-            문단 구조를 먼저 익힌 뒤 문장 내부의 단어 순서까지 점검할 수 있습니다.
+            전체 문장 흐름을 먼저 익힌 뒤 문장 내부의 단어 순서까지 점검할 수 있습니다.
           </p>
         </div>
 
@@ -396,7 +403,7 @@ export default function ParisSequencePracticePage() {
               onClick={() => handleModeChange("sentence")}
               type="button"
             >
-              문장 재배열
+              전체 문장 재배열
             </button>
             <button
               className={mode === "word" ? styles.activeButton : ""}
@@ -430,7 +437,7 @@ export default function ParisSequencePracticePage() {
         <section className={styles.layoutGrid}>
           <aside className={styles.sidebar}>
             <div className={styles.panelHeaderCompact}>
-              <h2>선택</h2>
+              <h2>단어 연습 줄 선택</h2>
               <span>{MEMORY_LINES.length} lines</span>
             </div>
 
@@ -441,10 +448,7 @@ export default function ParisSequencePracticePage() {
                     className={`${styles.sectionButton} ${
                       selectedSection === group.section ? styles.selectedSection : ""
                     }`}
-                    onClick={() => {
-                      handleSectionSelect(group.section);
-                      setMode("sentence");
-                    }}
+                    onClick={() => handleSectionSelect(group.section)}
                     type="button"
                   >
                     {group.section}
@@ -473,7 +477,7 @@ export default function ParisSequencePracticePage() {
             <div className={styles.panelHeader}>
               <div>
                 <p className={styles.panelKicker}>
-                  {mode === "sentence" ? selectedSection : `${selectedLine.id}번 줄`}
+                  {mode === "sentence" ? "전체 본문" : `${selectedLine.id}번 줄`}
                 </p>
                 <h2>{getModeTitle(mode)}</h2>
               </div>
@@ -493,8 +497,9 @@ export default function ParisSequencePracticePage() {
             <div className={styles.guideBox}>
               {mode === "sentence" ? (
                 <p>
-                  아래에 섞인 문장 카드를 눌러 이 문단의 올바른 순서대로 배치하세요.
-                  문장 번호까지 함께 보면서 흐름을 암기하는 단계입니다.
+                  아래에 섞인 전체 문장 카드를 눌러 1번부터 19-2번까지의 올바른 순서로
+                  배치하세요. 카드에는 번호가 표시되지 않으므로 문장 흐름만으로 순서를
+                  복원해야 합니다.
                 </p>
               ) : (
                 <p>
@@ -537,12 +542,15 @@ export default function ParisSequencePracticePage() {
 
                 <div className={styles.answerList}>
                   {answer.length === 0 ? (
-                    <div className={styles.emptyState}>왼쪽 카드를 눌러 순서대로 배치하세요.</div>
+                    <div className={styles.emptyState}>
+                      왼쪽 카드를 눌러 순서대로 배치하세요.
+                    </div>
                   ) : (
                     answer.map((chip, index) => {
                       const isRight =
                         checked &&
                         normalizeText(chip.label) === normalizeText(correctLabels[index] || "");
+
                       const isWrong =
                         checked &&
                         normalizeText(chip.label) !== normalizeText(correctLabels[index] || "");
@@ -568,14 +576,14 @@ export default function ParisSequencePracticePage() {
 
                           <div className={styles.moveButtons}>
                             <button
-                              onClick={() => moveAnswerChip(index, "left")}
+                              onClick={() => moveAnswerChip(index, "up")}
                               disabled={index === 0}
                               type="button"
                             >
                               ↑
                             </button>
                             <button
-                              onClick={() => moveAnswerChip(index, "right")}
+                              onClick={() => moveAnswerChip(index, "down")}
                               disabled={index === answer.length - 1}
                               type="button"
                             >
@@ -658,7 +666,7 @@ export default function ParisSequencePracticePage() {
             {showAnswer && (
               <pre className={styles.answerSheet}>
                 {mode === "sentence"
-                  ? getCorrectSentenceLabels(selectedSection).join("\n")
+                  ? getCorrectSentenceLabels().join("\n")
                   : getCorrectWordLabels(selectedLineId, difficulty).join(" ")}
               </pre>
             )}
