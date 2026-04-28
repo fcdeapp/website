@@ -1,0 +1,653 @@
+.page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #111827;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pageTitle {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.pageSubtitle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.topbarActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.secondaryButton,
+.dangerButton,
+.toolButton,
+.deleteMiniButton,
+.listRowButton {
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font: inherit;
+}
+
+.secondaryButton {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+}
+
+.secondaryButton:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.dangerButton {
+  background: #ef4444;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+}
+
+.dangerButton:hover {
+  background: #dc2626;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mainArea {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+.panel,
+.canvasPanel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+  padding: 16px;
+}
+
+.panelTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.subTitle {
+  margin: 16px 0 10px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #334155;
+}
+
+.panelHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.toolGroup {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.toolButton {
+  background: #f8fafc;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.toolButton:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+}
+
+.toolButtonActive {
+  background: #dbeafe;
+  border-color: #60a5fa;
+  color: #1d4ed8;
+}
+
+.helperTextBox {
+  margin-top: 12px;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.helperTextBox p {
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+
+.helperList {
+  margin: 0;
+  padding-left: 18px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.pendingText {
+  color: #1d4ed8;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.metaItem {
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.metaItem span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.metaItem strong {
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.statusBox {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+
+.statusOk {
+  background: #ecfdf5;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.statusError {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+.statusTitle {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.smallMuted {
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 6px 0 0;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.formGridSingle {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field span {
+  font-size: 12px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  color: #0f172a;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+}
+
+.infoCard {
+  margin-top: 8px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+}
+
+.infoTitle {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.infoCard p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.deleteMiniButton {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.deleteMiniButton:hover {
+  background: #fecaca;
+}
+
+.listBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 240px;
+  overflow: auto;
+}
+
+.listRowButton {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  text-align: left;
+  font-size: 13px;
+  color: #0f172a;
+}
+
+.listRowButton:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.listRowButtonActive {
+  background: #dbeafe;
+  border-color: #60a5fa;
+}
+
+.emptyText {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.tableWrap {
+  overflow: auto;
+}
+
+.resultTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.resultTable th,
+.resultTable td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px 8px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.resultTable thead th {
+  background: #f8fafc;
+  font-weight: 800;
+  color: #334155;
+}
+
+.tableEmpty {
+  text-align: center;
+  color: #64748b;
+}
+
+.tension {
+  color: #b45309;
+  font-weight: 800;
+}
+
+.compression {
+  color: #1d4ed8;
+  font-weight: 800;
+}
+
+.zeroForce {
+  color: #64748b;
+  font-weight: 800;
+}
+
+.canvasMeta {
+  font-size: 12px;
+  color: #475569;
+}
+
+.canvasOuter {
+  width: 100%;
+  overflow: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.formSvg {
+  width: 100%;
+  min-height: 560px;
+  display: block;
+  user-select: none;
+  touch-action: none;
+}
+
+.memberLine {
+  stroke-width: 3;
+  vector-effect: non-scaling-stroke;
+}
+
+.memberHitArea {
+  stroke: transparent;
+  stroke-width: 16;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+}
+
+.memberTension {
+  stroke: #f59e0b;
+}
+
+.memberCompression {
+  stroke: #2563eb;
+}
+
+.memberZero {
+  stroke: #94a3b8;
+}
+
+.memberSelected {
+  stroke-width: 5;
+}
+
+.memberLabel {
+  font-size: 12px;
+  fill: #0f172a;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: #ffffff;
+  stroke-width: 3px;
+}
+
+.nodeCircle {
+  fill: #ffffff;
+  stroke: #111827;
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+}
+
+.nodeSelected {
+  fill: #dbeafe;
+  stroke: #2563eb;
+}
+
+.nodePending {
+  fill: #fef3c7;
+  stroke: #d97706;
+}
+
+.nodeLabel {
+  font-size: 12px;
+  fill: #0f172a;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: #ffffff;
+  stroke-width: 3px;
+}
+
+.loadArrow {
+  stroke: #ef4444;
+  stroke-width: 2.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.loadLabel {
+  fill: #b91c1c;
+  font-size: 12px;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: #ffffff;
+  stroke-width: 3px;
+}
+
+.reactionArrow {
+  stroke: #2563eb;
+  stroke-width: 2.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.reactionLabel {
+  fill: #1d4ed8;
+  font-size: 12px;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: #ffffff;
+  stroke-width: 3px;
+}
+
+.supportShape {
+  fill: #cbd5e1;
+  stroke: #334155;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.supportGround {
+  stroke: #475569;
+  stroke-width: 1.8;
+  vector-effect: non-scaling-stroke;
+}
+
+.supportWheel {
+  fill: #ffffff;
+  stroke: #475569;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.supportHatch {
+  stroke: #64748b;
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.forceDiagramWrap {
+  width: 100%;
+  min-height: 440px;
+  overflow: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fbfcff;
+}
+
+.forceSvg {
+  width: 100%;
+  min-height: 440px;
+  display: block;
+}
+
+.forceEmpty {
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #64748b;
+  gap: 8px;
+  text-align: center;
+  padding: 24px;
+}
+
+.forceCell {
+  fill: #ffffff;
+  stroke: #e2e8f0;
+  stroke-width: 1.2;
+  rx: 14;
+  ry: 14;
+}
+
+.forceCellTitle {
+  font-size: 13px;
+  font-weight: 800;
+  fill: #0f172a;
+}
+
+.forcePath {
+  fill: none;
+  stroke: #111827;
+  stroke-width: 2.2;
+}
+
+.forcePoint {
+  fill: #111827;
+}
+
+.forceVectorLabel {
+  font-size: 11px;
+  fill: #0f172a;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: #ffffff;
+  stroke-width: 3px;
+}
+
+.forceVectorLoad {
+  stroke: #ef4444;
+  stroke-width: 2.2;
+}
+
+.forceVectorReaction {
+  stroke: #2563eb;
+  stroke-width: 2.2;
+}
+
+.forceVectorTension {
+  stroke: #f59e0b;
+  stroke-width: 2.2;
+}
+
+.forceVectorCompression {
+  stroke: #2563eb;
+  stroke-width: 2.2;
+}
+
+.forceVectorZero {
+  stroke: #94a3b8;
+  stroke-width: 2.2;
+}
+
+.forceResidual {
+  font-size: 11px;
+  fill: #b91c1c;
+  font-weight: 700;
+}
+
+@media (max-width: 1280px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    order: 2;
+  }
+
+  .mainArea {
+    order: 1;
+  }
+}
