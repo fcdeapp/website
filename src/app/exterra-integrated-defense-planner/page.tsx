@@ -43,6 +43,53 @@ type Contact = {
   utilization: number;
 };
 
+type GraphicStaticsNode = {
+  id: string;
+  label?: string;
+  x: number;
+  y: number;
+};
+
+type GraphicStaticsMember = {
+  id: string;
+  label?: string;
+  startNodeId: string;
+  endNodeId: string;
+  force?: number;
+  forceType?: "tension" | "compression" | "zero";
+};
+
+type GraphicStaticsSupport = {
+  nodeId: string;
+  type?: string;
+  reactionAngleDeg?: number;
+};
+
+type GraphicStaticsLoad = {
+  nodeId: string;
+  fx?: number;
+  fy?: number;
+};
+
+type GraphicStaticsModel = {
+  canvasWidth?: number;
+  canvasHeight?: number;
+  nodes: GraphicStaticsNode[];
+  members: GraphicStaticsMember[];
+  supports?: GraphicStaticsSupport[];
+  loads?: GraphicStaticsLoad[];
+};
+
+type VaultSegment = {
+  id: string;
+  x: number;
+  y: number;
+  z: number;
+  length: number;
+  angleDeg: number;
+  type: "tension" | "compression" | "zero" | "unknown";
+};
+
 type Inputs = {
   targetArea: number;
   cavernLength: number;
@@ -321,6 +368,142 @@ function typeFor(i: number, x: number, y: number, z: number): ModuleType {
 
 function moduleDims(m: Module) {
   return m.rot === 90 ? { w: m.d, d: m.w, h: m.h } : { w: m.w, d: m.d, h: m.h };
+}
+
+function normalizeGraphicStaticsModel(raw: unknown): GraphicStaticsModel | null {
+  if (!raw || typeof raw !== "object") return null;
+  const obj = raw as Partial<GraphicStaticsModel> & {
+    truss?: Partial<GraphicStaticsModel>;
+    model?: Partial<GraphicStaticsModel>;
+  };
+  const source = obj.nodes && obj.members ? obj : obj.truss ?? obj.model;
+  if (!source?.nodes || !source?.members) return null;
+
+  const nodes = source.nodes
+    .filter((n): n is GraphicStaticsNode =>
+      Boolean(n && typeof n.id === "string" && Number.isFinite(n.x) && Number.isFinite(n.y))
+    )
+    .map((n) => ({ id: n.id, label: n.label, x: n.x, y: n.y }));
+
+  const nodeIds = new Set(nodes.map((n) => n.id));
+  const members = source.members
+    .filter((m): m is GraphicStaticsMember =>
+      Boolean(
+        m &&
+          typeof m.id === "string" &&
+          typeof m.startNodeId === "string" &&
+          typeof m.endNodeId === "string" &&
+          nodeIds.has(m.startNodeId) &&
+          nodeIds.has(m.endNodeId)
+      )
+    )
+    .map((m) => ({
+      id: m.id,
+      label: m.label,
+      startNodeId: m.startNodeId,
+      endNodeId: m.endNodeId,
+      force: typeof m.force === "number" ? m.force : undefined,
+      forceType: m.forceType,
+    }));
+
+  if (!nodes.length || !members.length) return null;
+
+  return {
+    canvasWidth: source.canvasWidth,
+    canvasHeight: source.canvasHeight,
+    nodes,
+    members,
+    supports: source.supports ?? [],
+    loads: source.loads ?? [],
+  };
+}
+
+function makeVaultSegments(
+  input: Inputs,
+  graphicModel: GraphicStaticsModel | null,
+  ribY: number
+): VaultSegment[] {
+  const sideClearance = Math.max(2.4, input.aisle * 0.8);
+  const availableWidth = Math.max(6, input.cavernWidth - sideClearance * 2);
+  const springLineZ = Math.max(input.moduleH + 1.4, input.cavernHeight * 0.34);
+  const crownZ = Math.max(springLineZ + 2, input.cavernHeight - 1.2);
+
+  if (graphicModel?.nodes.length && graphicModel.members.length) {
+    const xs = graphicModel.nodes.map((n) => n.x);
+    const ys = graphicModel.nodes.map((n) => n.y);
+    const minX = Math.min(...xs);
+    const maxX = Math.max(...xs);
+    const minY = Math.min(...ys);
+    const maxY = Math.max(...ys);
+    const widthDenom = Math.max(maxX - minX, 1);
+    const heightDenom = Math.max(maxY - minY, 1);
+    const nodeMap = new Map(graphicModel.nodes.map((n) => [n.id, n]));
+
+    return graphicModel.members.slice(0, 180).flatMap((m) => {
+      const a = nodeMap.get(m.startNodeId);
+      const b = nodeMap.get(m.endNodeId);
+      if (!a || !b) return [];
+
+      const ax = sideClearance + ((a.x - minX) / widthDenom) * availableWidth;
+      const bx = sideClearance + ((b.x - minX) / widthDenom) * availableWidth;
+      const az = crownZ - ((a.y - minY) / heightDenom) * (crownZ - springLineZ);
+      const bz = crownZ - ((b.y - minY) / heightDenom) * (crownZ - springLineZ);
+      const dx = bx - ax;
+      const dz = bz - az;
+      const length = Math.sqrt(dx * dx + dz * dz);
+      if (length < 0.6) return [];
+
+      const inferredType =
+        m.forceType ??
+        (typeof m.force === "number"
+          ? m.force > 0
+            ? "tension"
+            : m.force < 0
+              ? "compression"
+              : "zero"
+          : "unknown");
+
+      return [
+        {
+          id: m.id,
+          x: ax,
+          y: ribY,
+          z: az,
+          length,
+          angleDeg: (-Math.atan2(dz, dx) * 180) / Math.PI,
+          type: inferredType,
+        },
+      ];
+    });
+  }
+
+  const ribs = 15;
+  const segments: VaultSegment[] = [];
+  const cx = input.cavernWidth / 2;
+  const radiusX = availableWidth / 2;
+  const radiusZ = crownZ - springLineZ;
+
+  for (let i = 0; i < ribs - 1; i++) {
+    const t1 = Math.PI - (Math.PI * i) / (ribs - 1);
+    const t2 = Math.PI - (Math.PI * (i + 1)) / (ribs - 1);
+    const ax = cx + Math.cos(t1) * radiusX;
+    const bx = cx + Math.cos(t2) * radiusX;
+    const az = springLineZ + Math.sin(t1) * radiusZ;
+    const bz = springLineZ + Math.sin(t2) * radiusZ;
+    const dx = bx - ax;
+    const dz = bz - az;
+    segments.push({
+      id: `default-vault-${i}`,
+      x: ax,
+      y: ribY,
+      z: az,
+      length: Math.sqrt(dx * dx + dz * dz),
+      angleDeg: (-Math.atan2(dz, dx) * 180) / Math.PI,
+      type: "unknown",
+    });
+  }
+
+  return segments;
 }
 
 function aabb(m: Module) {
@@ -1328,6 +1511,7 @@ function StackingScene({
   setSelectedModule,
   view,
   setView,
+  graphicModel,
 }: {
   input: Inputs;
   modules: Module[];
@@ -1336,6 +1520,7 @@ function StackingScene({
   setSelectedModule: (id: number | null) => void;
   view: { rx: number; ry: number; zoom: number };
   setView: (v: { rx: number; ry: number; zoom: number }) => void;
+  graphicModel: GraphicStaticsModel | null;
 }) {
   const [drag, setDrag] = useState<{ x: number; y: number; rx: number; ry: number } | null>(
     null
@@ -1345,6 +1530,12 @@ function StackingScene({
   const selectedContacts = contacts
     .filter((c) => c.a === selectedModule || c.b === selectedModule)
     .slice(0, 18);
+  const vaultRibYs = [0.12, 0.32, 0.52, 0.72, 0.92].map((t) => input.cavernLength * t);
+  const circulationSegments = [
+    { id: "main", x: input.cavernWidth / 2 - input.aisle * 0.45, y: input.aisle, w: input.aisle * 0.9, h: input.cavernLength - input.aisle * 2 },
+    { id: "cross-a", x: input.aisle, y: input.cavernLength * 0.34, w: input.cavernWidth - input.aisle * 2, h: input.aisle * 0.7 },
+    { id: "cross-b", x: input.aisle, y: input.cavernLength * 0.66, w: input.cavernWidth - input.aisle * 2, h: input.aisle * 0.7 },
+  ];
 
   const pointerMove = (e: PointerEvent<HTMLDivElement>) => {
     if (!drag) return;
@@ -1385,6 +1576,53 @@ function StackingScene({
           <div className={styles.floorGrid} />
           <div className={styles.cavernBox}>
             <span />
+          </div>
+          <div className={styles.circulationLayer} aria-hidden="true">
+            {circulationSegments.map((seg) => (
+              <span
+                key={seg.id}
+                className={styles.circulationPath}
+                style={{
+                  left: seg.x,
+                  top: seg.y,
+                  width: seg.w,
+                  height: seg.h,
+                }}
+              />
+            ))}
+          </div>
+          <div className={styles.vaultLayer} aria-hidden="true">
+            {vaultRibYs.map((ribY, ribIndex) =>
+              makeVaultSegments(input, graphicModel, ribY).map((seg) => (
+                <span
+                  key={`${ribIndex}-${seg.id}`}
+                  className={`${styles.vaultMember} ${
+                    seg.type === "tension"
+                      ? styles.vaultTension
+                      : seg.type === "compression"
+                        ? styles.vaultCompression
+                        : seg.type === "zero"
+                          ? styles.vaultZero
+                          : ""
+                  }`}
+                  style={{
+                    width: seg.length,
+                    transform: `translate3d(${seg.x}px, ${seg.y}px, ${seg.z}px) rotateY(${seg.angleDeg}deg)`,
+                  }}
+                />
+              ))
+            )}
+            {vaultRibYs.map((ribY) => (
+              <span
+                key={`arch-shadow-${ribY}`}
+                className={styles.vaultRibShadow}
+                style={{
+                  left: input.aisle,
+                  top: ribY,
+                  width: input.cavernWidth - input.aisle * 2,
+                }}
+              />
+            ))}
           </div>
           {modules.map((m) => (
             <Cuboid
@@ -1528,7 +1766,9 @@ export default function ExterraIntegratedDefensePlannerPage() {
   const [jointOverrides, setJointOverrides] = useState<Record<string, JointType>>({});
   const [view, setView] = useState({ rx: 58, ry: -36, zoom: 1 });
   const [opt, setOpt] = useState<ReturnType<typeof runReluOptimization> | null>(null);
+  const [graphicModel, setGraphicModel] = useState<GraphicStaticsModel | null>(null);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const graphicFileInputRef = useRef<HTMLInputElement | null>(null);
 
   const modules = useMemo(() => generateModules(input), [input]);
   const contacts = useMemo(
@@ -1595,6 +1835,25 @@ export default function ExterraIntegratedDefensePlannerPage() {
     e.target.value = "";
   };
 
+  const importGraphicStaticsJson = async (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    try {
+      const parsed = JSON.parse(await file.text());
+      const normalized = normalizeGraphicStaticsModel(parsed);
+      if (!normalized) {
+        window.alert("Graphic statics JSON에서 nodes/members 구조를 찾지 못했습니다.");
+        return;
+      }
+      setGraphicModel(normalized);
+    } catch {
+      window.alert("Graphic statics JSON을 읽는 중 오류가 발생했습니다.");
+    } finally {
+      e.target.value = "";
+    }
+  };
+
   const exportReportPdf = () => {
     const html = makeReportHtml(input, modules, contacts, evals, scenario);
     const w = window.open("", "_blank");
@@ -1649,6 +1908,12 @@ export default function ExterraIntegratedDefensePlannerPage() {
             <button className={styles.ghost} onClick={() => fileInputRef.current?.click()}>
               Import JSON
             </button>
+            <button className={styles.ghost} onClick={() => graphicFileInputRef.current?.click()}>
+              Import Graphic Statics
+            </button>
+            <button className={styles.ghost} onClick={() => setGraphicModel(null)}>
+              Clear Vault Model
+            </button>
             <button className={styles.ghost} onClick={exportRhino}>
               Rhino Script
             </button>
@@ -1661,6 +1926,13 @@ export default function ExterraIntegratedDefensePlannerPage() {
               type="file"
               accept="application/json,.json"
               onChange={importJson}
+            />
+            <input
+              ref={graphicFileInputRef}
+              className={styles.hiddenInput}
+              type="file"
+              accept="application/json,.json"
+              onChange={importGraphicStaticsJson}
             />
           </div>
         </div>
@@ -1692,6 +1964,10 @@ export default function ExterraIntegratedDefensePlannerPage() {
             <p>
               <span>Estimated cost</span>
               <b>{nfmt(evals.cost.total, 0)} 억원</b>
+            </p>
+            <p>
+              <span>Vault rib source</span>
+              <b>{graphicModel ? `${graphicModel.members.length} members` : "default barrel"}</b>
             </p>
           </div>
         </div>
@@ -1793,7 +2069,7 @@ export default function ExterraIntegratedDefensePlannerPage() {
             <b className={scoreClass}>{scoreLabel(evals.overall)}</b>
           </div>
 
-          <StackingScene
+            <StackingScene
             input={input}
             modules={modules}
             contacts={contacts}
@@ -1801,7 +2077,8 @@ export default function ExterraIntegratedDefensePlannerPage() {
             setSelectedModule={setSelectedModule}
             view={view}
             setView={setView}
-          />
+            graphicModel={graphicModel}
+            />
 
           <div className={styles.cards4}>
             <article className={styles.metricCard}>
