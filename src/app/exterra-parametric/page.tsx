@@ -65,6 +65,10 @@ type Inputs = {
   cavernCost: number;
   panelCost: number;
   jointCost: number;
+  c4iSystemCost: number;
+  lifeSupportCost: number;
+  commsElectronicsCost: number;
+  specialProtectionCost: number;
 };
 
 const INITIAL: Inputs = {
@@ -101,6 +105,10 @@ const INITIAL: Inputs = {
   cavernCost: 1.45,
   panelCost: 3.8,
   jointCost: 0.42,
+  c4iSystemCost: 900,
+  lifeSupportCost: 520,
+  commsElectronicsCost: 680,
+  specialProtectionCost: 740,
 };
 
 const jointNames: Record<JointType, string> = {
@@ -316,9 +324,15 @@ function estimateCost(input: Inputs, modules: Module[], contacts: Contact[]) {
   const excavationCost = cavernM3 * input.cavernCost / 100;
   const panelCost = shellArea * input.panelCost / 100;
   const jointCostTotal = contacts.reduce((s, c) => s + input.jointCost * jointFactor[c.type].cost * Math.max(1, c.area / 10), 0);
-  const riskPremium = (input.rockQuality < 55 ? 0.18 : 0.08) * (moduleCost + excavationCost + panelCost + jointCostTotal);
-  const total = moduleCost + excavationCost + panelCost + jointCostTotal + riskPremium;
-  return { moduleCost, excavationCost, panelCost, jointCostTotal, riskPremium, total };
+  const missionScale = Math.pow(Math.max(moduleM2, 1) / 10000, 0.85);
+  const c4iSystemCost = input.c4iSystemCost * missionScale;
+  const lifeSupportCost = input.lifeSupportCost * missionScale;
+  const commsElectronicsCost = input.commsElectronicsCost * missionScale;
+  const specialProtectionCost = input.specialProtectionCost * missionScale;
+  const directCost = moduleCost + excavationCost + panelCost + jointCostTotal + c4iSystemCost + lifeSupportCost + commsElectronicsCost + specialProtectionCost;
+  const riskPremium = (input.rockQuality < 55 ? 0.20 : 0.10) * directCost;
+  const total = directCost + riskPremium;
+  return { moduleCost, excavationCost, panelCost, jointCostTotal, c4iSystemCost, lifeSupportCost, commsElectronicsCost, specialProtectionCost, riskPremium, total };
 }
 
 function runReluOptimization(input: Inputs, scenario: Scenario) {
@@ -517,8 +531,8 @@ export default function ExterraParametricDefensePage() {
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
           <span className={styles.kicker}>EXTERRA Parametric Defense Lab</span>
-          <h1>산악 내부 모듈 시설의 3D 적층·패널·접합부 성능 검토</h1>
-          <p>10,000㎡급 산악 내부 시설을 컨테이너형 철제 모듈로 배치하고, 접촉부별 접합 형식과 오세틱 방폭 패널, 암반 피복, 내부 폭압, 지진 응답을 함께 비교합니다.</p>
+          <h1>3D 모듈 방호 랩</h1>
+          <p>10,000㎡급 산악 내부 시설을 컨테이너형 철제 모듈로 배치하고, 접촉부별 접합 형식, 오세틱 방호 패널, 암반 피복, 생존설비, 지휘통제·통신전자 시스템까지 함께 비교합니다.</p>
           <div className={styles.heroActions}>
             <button onClick={() => { setInput(INITIAL); setJointOverrides({}); setOpt(null); }}>Reset baseline</button>
             <button className={styles.ghost} onClick={applyOptimization}>ReLU optimizer</button>
@@ -572,6 +586,12 @@ export default function ExterraParametricDefensePage() {
           <NumberInput label="스프링 고유진동수" value={input.springFreq} min={0.8} max={6} step={0.1} unit="Hz" onChange={(v) => set("springFreq", v)} />
           <NumberInput label="감쇠비" value={input.damping} min={0.01} max={0.25} step={0.01} unit="ζ" onChange={(v) => set("damping", v)} />
           <NumberInput label="모듈 단가" value={input.unitModuleCost} min={2} max={12} step={0.2} unit="억원/100㎡" onChange={(v) => set("unitModuleCost", v)} />
+
+          <h3>05. Mission systems</h3>
+          <NumberInput label="지휘통제 시스템" value={input.c4iSystemCost} min={200} max={2400} step={50} unit="억원/10,000㎡" onChange={(v) => set("c4iSystemCost", v)} />
+          <NumberInput label="생존설비" value={input.lifeSupportCost} min={150} max={1600} step={50} unit="억원/10,000㎡" onChange={(v) => set("lifeSupportCost", v)} />
+          <NumberInput label="통신·전자장비" value={input.commsElectronicsCost} min={150} max={2000} step={50} unit="억원/10,000㎡" onChange={(v) => set("commsElectronicsCost", v)} />
+          <NumberInput label="특수 방호설비" value={input.specialProtectionCost} min={200} max={2400} step={50} unit="억원/10,000㎡" onChange={(v) => set("specialProtectionCost", v)} />
         </aside>
 
         <section className={styles.workspace}>
@@ -582,7 +602,7 @@ export default function ExterraParametricDefensePage() {
             <article className={styles.metricCard}><span>연면적 충족률</span><b>{nfmt(evals.density * 100, 1)}%</b><small>생성 {nfmt(evals.areaBuilt, 0)}㎡ / 목표 {nfmt(input.targetArea, 0)}㎡</small></article>
             <article className={styles.metricCard}><span>최대 접합 utilization</span><b>{nfmt(evals.maxUtil * 100, 1)}%</b><small>선택 접합부별 형식 변경 가능</small></article>
             <article className={styles.metricCard}><span>전달 응답</span><b>{scenario === "seismic" ? `${nfmt(evals.seis.moduleAccG, 2)} g` : `${nfmt(evals.transmitted, 1)} kPa`}</b><small>{scenario === "seismic" ? `Stroke ratio ${nfmt(evals.seis.dispRatio * 100, 1)}%` : "module-side equivalent pressure"}</small></article>
-            <article className={styles.metricCard}><span>예상 건설비</span><b>{nfmt(evals.cost.total, 0)} 억원</b><small>굴착·모듈·패널·접합부 포함</small></article>
+            <article className={styles.metricCard}><span>예상 건설비</span><b>{nfmt(evals.cost.total, 0)} 억원</b><small>구조체·접합부·생존·C4I·통신전자 포함</small></article>
           </div>
 
           <div className={styles.twoColWide}>
@@ -623,7 +643,7 @@ export default function ExterraParametricDefensePage() {
               {[
                 ["Blast / seismic response", evals.blastScore, "폭압 또는 지진 입력이 모듈 쪽으로 얼마나 낮아졌는지 보는 항목입니다."],
                 ["Layout efficiency", evals.layoutScore, "목표 연면적, 공동 내 여유공간, 접촉부 연결성을 함께 봅니다."],
-                ["Constructability", evals.constructScore, "모듈 수, 층수, 패널 두께, 접합부 개수 증가에 따른 시공 부담을 반영합니다."],
+                ["Constructability", evals.constructScore, "모듈 수, 층수, 패널 두께, 접합부와 임무설비 증가에 따른 시공 부담을 반영합니다."],
                 ["Joint reserve", evals.jointReserve, "가장 불리한 접합부의 demand/capacity 여유율입니다."],
               ].map(([label, value, desc]) => <div className={styles.barRow} key={label as string}><span>{label as string}<small>{desc as string}</small></span><div><i style={{ width: `${value}%` }} /></div><b>{Math.round(value as number)}</b></div>)}
             </div>
@@ -632,13 +652,17 @@ export default function ExterraParametricDefensePage() {
               <p><span>암반 굴착·공동 형성</span><b>{nfmt(evals.cost.excavationCost, 0)} 억원</b></p>
               <p><span>오세틱+내피 패널</span><b>{nfmt(evals.cost.panelCost, 0)} 억원</b></p>
               <p><span>접합부·절연장치</span><b>{nfmt(evals.cost.jointCostTotal, 0)} 억원</b></p>
+              <p><span>지휘통제 시스템</span><b>{nfmt(evals.cost.c4iSystemCost, 0)} 억원</b></p>
+              <p><span>생존설비</span><b>{nfmt(evals.cost.lifeSupportCost, 0)} 억원</b></p>
+              <p><span>통신·전자장비</span><b>{nfmt(evals.cost.commsElectronicsCost, 0)} 억원</b></p>
+              <p><span>특수 방호설비</span><b>{nfmt(evals.cost.specialProtectionCost, 0)} 억원</b></p>
               <p><span>리스크 예비비</span><b>{nfmt(evals.cost.riskPremium, 0)} 억원</b></p>
             </div>
           </article>
 
           <article className={styles.disclaimer}>
             <h2>해석 범위</h2>
-            <p>이 페이지는 발표와 개념설계 단계에서 배치, 접합부, 방폭 패널, 지진 절연의 설계 방향을 비교하기 위한 surrogate 모델입니다. 실제 방호성능 확정에는 현장 지반조사, 절리망 모델, 3D 암반 동역학, 비선형 접합부 해석, 관통·파편·내부 장비 fragility 검토가 별도로 필요합니다.</p>
+            <p>이 페이지는 발표와 개념설계 단계에서 배치, 접합부, 방폭 패널, 지진 절연의 설계 방향을 비교하기 위한 surrogate 모델입니다. 실제 방호성능과 총사업비 확정에는 현장 지반조사, 절리망 모델, 3D 암반 동역학, 비선형 접합부 해석, 장비 배치계획, 전력·공조·통신 이중화, 운영인력·보급계획 검토가 별도로 필요합니다.</p>
           </article>
         </section>
       </section>
