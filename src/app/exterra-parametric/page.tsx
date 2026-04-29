@@ -312,7 +312,7 @@ function estimateCost(input: Inputs, modules: Module[], contacts: Contact[]) {
   const moduleM2 = modules.reduce((s, m) => s + m.w * m.d, 0);
   const cavernM3 = input.cavernLength * input.cavernWidth * input.cavernHeight;
   const shellArea = 2 * (input.cavernLength * input.cavernWidth + input.cavernLength * input.cavernHeight + input.cavernWidth * input.cavernHeight);
-  const moduleCost = moduleM2 * input.unitModuleCost;
+  const moduleCost = (moduleM2 / 100) * input.unitModuleCost;
   const excavationCost = cavernM3 * input.cavernCost / 100;
   const panelCost = shellArea * input.panelCost / 100;
   const jointCostTotal = contacts.reduce((s, c) => s + input.jointCost * jointFactor[c.type].cost * Math.max(1, c.area / 10), 0);
@@ -571,7 +571,7 @@ export default function ExterraParametricDefensePage() {
           <NumberInput label="설계 PGA" value={input.seismicPga} min={0.05} max={0.8} step={0.01} unit="g" onChange={(v) => set("seismicPga", v)} />
           <NumberInput label="스프링 고유진동수" value={input.springFreq} min={0.8} max={6} step={0.1} unit="Hz" onChange={(v) => set("springFreq", v)} />
           <NumberInput label="감쇠비" value={input.damping} min={0.01} max={0.25} step={0.01} unit="ζ" onChange={(v) => set("damping", v)} />
-          <NumberInput label="모듈 단가" value={input.unitModuleCost} min={2} max={12} step={0.2} unit="억원/㎡x100" onChange={(v) => set("unitModuleCost", v)} />
+          <NumberInput label="모듈 단가" value={input.unitModuleCost} min={2} max={12} step={0.2} unit="억원/100㎡" onChange={(v) => set("unitModuleCost", v)} />
         </aside>
 
         <section className={styles.workspace}>
