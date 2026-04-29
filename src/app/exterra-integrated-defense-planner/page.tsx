@@ -1782,7 +1782,8 @@ export default function ExterraIntegratedDefensePlannerPage() {
     contacts,
   ]);
 
-  const selectedContactObj = contacts.find((c) => c.id === selectedContact) ?? contacts[0];
+  const selectedContactObj: Contact | null = contacts.find((c) => c.id === selectedContact) ?? contacts[0] ?? null;
+  const selectedJointType: JointType | null = selectedContactObj?.type ?? null;
   const selectedModuleObj = modules.find((m) => m.id === selectedModule);
   const selectedModuleContacts = selectedModule
     ? contacts.filter((c) => c.a === selectedModule || c.b === selectedModule)
@@ -2133,7 +2134,7 @@ export default function ExterraIntegratedDefensePlannerPage() {
                     {(Object.keys(jointNames) as JointType[]).map((jt) => (
                       <button
                         key={jt}
-                        className={selectedContactObj.type === jt ? styles.activeJoint : ""}
+                        className={selectedJointType === jt ? styles.activeJoint : ""}
                         onClick={() =>
                           setJointOverrides((p) => ({ ...p, [selectedContactObj.id]: jt }))
                         }
@@ -2142,7 +2143,7 @@ export default function ExterraIntegratedDefensePlannerPage() {
                       </button>
                     ))}
                   </div>
-                  <p>{jointFactor[selectedContactObj.type].note}</p>
+                  {selectedJointType ? <p>{jointFactor[selectedJointType].note}</p> : null}
                 </div>
               )}
             </article>
