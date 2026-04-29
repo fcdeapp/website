@@ -89,7 +89,7 @@ const PersonalChatsPage = () => {
         userDetails: [{
           userId:       s.otherUserId || "anon-ai",
           nickname:     s.assistantName || "AI",
-          profileImage: "/assets/AbrodyFoxGB.png",
+          profileImage: "/assets/AbrodyLogo3D.png",
         }],
         lastMessage:     s.lastMessage,
         lastMessageTime: s.lastMessageTime,
@@ -151,7 +151,7 @@ const PersonalChatsPage = () => {
           {chats.map(chat => {
             const user = chat.userDetails[0];
             const avatar =
-              user.profileThumbnail || user.profileImage || "/assets/AbrodyFoxGB.png";
+              user.profileThumbnail || user.profileImage || "/assets/AbrodyLogo3D.png";
             return (
               <li key={chat._id} className={styles.chatItem} onClick={() => enterChat(chat)}>
                 <Image

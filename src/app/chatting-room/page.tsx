@@ -624,7 +624,7 @@ function ChattingRoomPageInner() {
     senderId: m.role === "assistant" ? "brody-ai" : userId,
     message: m.content,
     timestamp: m.timestamp,
-    profileImage: m.role === "assistant" ? "/assets/AbrodyFoxGB.png" : null,
+    profileImage: m.role === "assistant" ? "/assets/AbrodyLogo3D.png" : null,
     imageUrl: null,
   });
 
@@ -773,7 +773,7 @@ function ChattingRoomPageInner() {
           senderId: "brody-ai",
           message: data.assistantReply || "",
           timestamp: new Date().toISOString(),
-          profileImage: "/assets/AbrodyFoxGB.png",
+          profileImage: "/assets/AbrodyLogo3D.png",
         };
         setMessages((prev) => [aiMsg, ...prev]);
         if (Array.isArray(data.choices) && data.choices.length) {
@@ -1027,7 +1027,7 @@ function ChattingRoomPageInner() {
             senderId: "brody-ai",
             message: assistantReply,
             timestamp: new Date().toISOString(),
-            profileImage: "/assets/AbrodyFoxGB.png",
+            profileImage: "/assets/AbrodyLogo3D.png",
           };
           setMessages((prev) => [aiMessageObj, ...prev]);
 
