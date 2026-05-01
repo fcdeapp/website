@@ -22,6 +22,9 @@ type CarouselItem = {
 
 type IVItem = {
   label: string;
+  meaning: string;
+  description: string;
+  examples: string[];
   src: string;
   modelSrc: string;
 };
@@ -37,13 +40,64 @@ const JOURNEY_ITEMS: CarouselItem[] = [
 const INITIAL_IV_ITEMS: IVItem[] = [
   {
     label: "air balloon",
+    meaning: "열기구",
+    description:
+      "A large balloon filled with hot air that carries people in a basket through the sky.",
+    examples: [
+      "The air balloon rose slowly over the field.",
+      "We saw a colorful air balloon at sunrise.",
+    ],
     src: "/air_balloon_model.png",
     modelSrc: "/air_balloon_model.glb",
   },
-  { label: "bowl", src: "/bowl_model.png", modelSrc: "/bowl_model.glb" },
-  { label: "fish", src: "/fish_model.png", modelSrc: "/fish_model.glb" },
-  { label: "shoes", src: "/shoes_model.png", modelSrc: "/shoes_model.glb" },
-  { label: "sushi", src: "/sushi_model.png", modelSrc: "/sushi_model.glb" },
+  {
+    label: "bowl",
+    meaning: "그릇",
+    description:
+      "A round, open container used for holding food such as soup, rice, cereal, or salad.",
+    examples: [
+      "She poured soup into a white bowl.",
+      "I ate cereal from a small bowl.",
+    ],
+    src: "/bowl_model.png",
+    modelSrc: "/bowl_model.glb",
+  },
+  {
+    label: "fish",
+    meaning: "물고기",
+    description:
+      "An animal that lives in water, breathes through gills, and usually swims with fins.",
+    examples: [
+      "The yellow fish swam near the glass.",
+      "A fish moved quickly under the water.",
+    ],
+    src: "/fish_model.png",
+    modelSrc: "/fish_model.glb",
+  },
+  {
+    label: "shoes",
+    meaning: "신발",
+    description:
+      "Things you wear on your feet to protect them when walking, running, or going outside.",
+    examples: [
+      "He put on his shoes before leaving home.",
+      "These shoes are comfortable for walking.",
+    ],
+    src: "/shoes_model.png",
+    modelSrc: "/shoes_model.glb",
+  },
+  {
+    label: "sushi",
+    meaning: "초밥",
+    description:
+      "A Japanese food often made with vinegared rice and toppings such as fish, seafood, or vegetables.",
+    examples: [
+      "We ordered sushi for dinner.",
+      "This sushi has a soft piece of fish on top.",
+    ],
+    src: "/sushi_model.png",
+    modelSrc: "/sushi_model.glb",
+  },
 ];
 
 const heroParent: Variants = {
@@ -461,6 +515,10 @@ export default function Home() {
                         decoding="async"
                       />
 
+                      <div className={styles.ivMeaningPill} aria-label={`${item.label} meaning`}>
+                        {item.meaning}
+                      </div>
+
                       <button
                         type="button"
                         className={`${styles.modelLaunchButton} ${
@@ -481,6 +539,8 @@ export default function Home() {
                         />
                       </button>
                     </div>
+
+                    <div className={styles.ivWordLabel}>{item.label}</div>
                   </motion.article>
                 );
               })}
@@ -626,6 +686,21 @@ export default function Home() {
               className={styles.modelModalContent}
               onClick={(event) => event.stopPropagation()}
             >
+              <button
+                type="button"
+                className={styles.modelCloseButton}
+                onClick={closeModel}
+                aria-label="Close 3D model preview"
+              >
+                <img
+                  src="/images/AbrodyClose.png"
+                  alt=""
+                  className={styles.modelCloseIcon}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+
               <div className={styles.modelViewerShell}>
                 {React.createElement("model-viewer", {
                   src: activeModel.modelSrc,
@@ -639,14 +714,27 @@ export default function Home() {
                 })}
               </div>
 
-              <button
-                type="button"
-                className={styles.modalClose}
-                onClick={closeModel}
-                aria-label="Close 3D model preview"
-              >
-                ×
-              </button>
+              <aside className={styles.modelInfoPanel}>
+                <span className={styles.modelInfoKicker}>Image vocabulary</span>
+
+                <h3 className={styles.modelInfoTitle}>{activeModel.label}</h3>
+
+                <div className={styles.modelInfoMeaning}>{activeModel.meaning}</div>
+
+                <p className={styles.modelInfoDescription}>
+                  {activeModel.description}
+                </p>
+
+                <div className={styles.modelExampleBlock}>
+                  <span className={styles.modelExampleTitle}>Examples</span>
+
+                  {activeModel.examples.map((example) => (
+                    <p key={example} className={styles.modelExampleText}>
+                      “{example}”
+                    </p>
+                  ))}
+                </div>
+              </aside>
             </div>
           </div>
         )}
