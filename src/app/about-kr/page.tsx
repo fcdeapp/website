@@ -2,7 +2,6 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import {
   AnimatePresence,
   motion,
@@ -383,13 +382,14 @@ export default function About() {
               >
                 <span className={styles.sectionKicker}>{step.kicker}</span>
 
-                <Image
+                <img
                   src={step.img}
                   alt={step.alt}
                   width={720}
                   height={1440}
                   className={styles.sectionImage}
-                  priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  decoding="async"
                 />
 
                 <h3>{step.title}</h3>

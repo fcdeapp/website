@@ -2,7 +2,6 @@
 
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
 import {
   motion,
   Variants,
@@ -250,13 +249,14 @@ export default function About() {
                 custom={index}
               >
                 <div className={styles.screenImageWrap}>
-                  <Image
+                  <img
                     src={item.image}
                     alt={item.title}
                     width={720}
                     height={1440}
                     className={styles.screenImage}
-                    priority={index === 0}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    decoding="async"
                   />
                 </div>
 
