@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import {
   AnimatePresence,
   motion,
+  Variants,
   useMotionValue,
   useSpring,
   useTransform,
@@ -39,6 +40,48 @@ const INITIAL_IV_ITEMS: IVItem[] = [
   { label: "cat", src: "/imageVocab/imageVocab_4.png" },
   { label: "pigeon", src: "/imageVocab/imageVocab_5.png" },
 ];
+
+const heroParent: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.08,
+    },
+  },
+};
+
+const titleReveal: Variants = {
+  hidden: { opacity: 0, y: 18 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.58, ease: "easeOut" },
+  },
+};
+
+const wordReveal: Variants = {
+  hidden: { opacity: 0, y: 16, filter: "blur(6px)" },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+const floatOrb: Variants = {
+  initial: { y: 0, rotate: 0 },
+  animate: {
+    y: [-4, 7, -2, 0],
+    rotate: [0, 1.1, -0.6, 0],
+    transition: {
+      duration: 7,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
 
 export default function Home() {
   const [ivItems, setIvItems] = useState<IVItem[]>(INITIAL_IV_ITEMS);
@@ -214,17 +257,27 @@ export default function Home() {
 
           <motion.div
             className={styles.heroInner}
+            initial="hidden"
+            animate="visible"
+            variants={heroParent}
             style={{
               rotateX: tiltX,
               rotateY: tiltY,
             }}
           >
-            <p className={styles.heroKicker}>Abrody</p>
+            <motion.p className={styles.heroKicker} variants={titleReveal}>
+              Abrody
+            </motion.p>
 
             <h1 className={styles.heroTitle}>
-              <span>Learn&nbsp;</span>
+              <motion.span className={styles.word} variants={titleReveal}>
+                Learn&nbsp;
+              </motion.span>
 
-              <span className={styles.dynamicLangBg}>
+              <motion.span
+                className={`${styles.word} ${styles.dynamicLangBg}`}
+                variants={titleReveal}
+              >
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={currentLanguage}
@@ -237,31 +290,38 @@ export default function Home() {
                     {currentLanguage}
                   </motion.span>
                 </AnimatePresence>
-              </span>
+              </motion.span>
 
-              <span>&nbsp;where&nbsp;</span>
-              <span className={styles.wordAlt}>life</span>
-              <span>&nbsp;</span>
-              <span className={styles.wordAlt}>happens</span>
+              <motion.span className={styles.word} variants={titleReveal}>
+                &nbsp;with&nbsp;
+              </motion.span>
+
+              <motion.span
+                className={`${styles.word} ${styles.wordAlt}`}
+                variants={titleReveal}
+              >
+                what
+              </motion.span>
+
+              <motion.span className={styles.word} variants={titleReveal}>
+                &nbsp;you&nbsp;
+              </motion.span>
+
+              <motion.span
+                className={`${styles.word} ${styles.wordAlt}`}
+                variants={titleReveal}
+              >
+                see
+              </motion.span>
             </h1>
 
-            <motion.p
-              className={styles.heroLead}
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.62, ease: "easeOut", delay: 0.12 }}
-            >
+            <motion.p className={styles.heroLead} variants={wordReveal}>
               Start with a photo. Discover words from real objects. Practice
               through short quizzes and remember language through moments you
               actually lived.
             </motion.p>
 
-            <motion.div
-              className={styles.heroCtas}
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.62, ease: "easeOut", delay: 0.2 }}
-            >
+            <motion.div className={styles.heroCtas} variants={wordReveal}>
               <a href="#how" className={styles.primaryCta}>
                 See how it works
               </a>
@@ -278,6 +338,9 @@ export default function Home() {
 
           <motion.div
             className={styles.orb}
+            variants={floatOrb}
+            initial="initial"
+            animate="animate"
             style={{
               x: fastX,
               y: fastY,
