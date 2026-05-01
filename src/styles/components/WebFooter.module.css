@@ -1,120 +1,472 @@
-/* Footer 기본 스타일 */
 .footer {
-    background-color: #fefefe; /* 조금 더 밝은 흰색 */
-    color: rgba(216, 49, 91, 0.75);
-    padding: 2rem;
-    font-size: 0.9rem;
-    border-top: 1px solid #ddd;
-    transition: background-color 0.3s ease;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 4.5rem 1.25rem 1.4rem;
+  color: #666;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(255, 213, 229, 0.82), transparent 26rem),
+    radial-gradient(circle at 88% 12%, rgba(255, 235, 212, 0.74), transparent 28rem),
+    linear-gradient(180deg, #ffffff 0%, #fff8fb 46%, #fff3f8 100%);
+  border-top: 1px solid rgba(216, 49, 91, 0.08);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background:
+    linear-gradient(rgba(216, 49, 91, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(216, 49, 91, 0.055) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at 50% 8%, black 0%, transparent 68%);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.footerGlowOne,
+.footerGlowTwo {
+  position: absolute;
+  z-index: -2;
+  border-radius: 999px;
+  pointer-events: none;
+  filter: blur(4px);
+}
+
+.footerGlowOne {
+  width: 18rem;
+  height: 18rem;
+  left: -7rem;
+  bottom: 4rem;
+  background:
+    radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 0.96), rgba(255, 154, 191, 0.34) 42%, rgba(216, 49, 91, 0.1) 74%);
+  animation: footerFloat 7s ease-in-out infinite;
+}
+
+.footerGlowTwo {
+  width: 22rem;
+  height: 22rem;
+  right: -8rem;
+  top: 1rem;
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.96), rgba(255, 220, 232, 0.48) 48%, rgba(242, 84, 45, 0.12) 76%);
+  animation: footerFloat 8.5s ease-in-out infinite reverse;
+}
+
+.footerGrid {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: -1;
+  height: 45%;
+  background:
+    radial-gradient(circle at 50% 100%, rgba(216, 49, 91, 0.08), transparent 34rem);
+  pointer-events: none;
+}
+
+.footerShell {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.9fr) minmax(0, 1.25fr);
+  gap: clamp(1.25rem, 4vw, 3rem);
+  align-items: stretch;
+}
+
+.brandPanel {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  padding: clamp(1.35rem, 3vw, 2rem);
+  border-radius: 2.2rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(255, 242, 247, 0.72));
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  box-shadow:
+    0 1.65rem 3.5rem rgba(216, 49, 91, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(18px);
+}
+
+.brandPanel::after {
+  content: "";
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  right: -5rem;
+  bottom: -5rem;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, rgba(255, 143, 184, 0.22), transparent 68%);
+  pointer-events: none;
+}
+
+.brandMark {
+  width: 4.15rem;
+  height: 4.15rem;
+  display: grid;
+  place-items: center;
+  border-radius: 1.35rem;
+  margin-bottom: 1.25rem;
+  background:
+    radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.92), transparent 28%),
+    linear-gradient(145deg, #ff9fbd, #d8315b);
+  box-shadow:
+    0 1rem 2rem rgba(216, 49, 91, 0.18),
+    inset 0.25rem 0.35rem 0.8rem rgba(255, 255, 255, 0.36),
+    inset -0.35rem -0.45rem 0.9rem rgba(128, 22, 50, 0.14);
+}
+
+.brandMark span {
+  color: #ffffff;
+  font-size: 1.55rem;
+  font-weight: 950;
+  letter-spacing: -0.08em;
+}
+
+.kicker {
+  margin: 0 0 0.65rem;
+  color: #d8315b;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.brandTitle {
+  margin: 0;
+  max-width: 22rem;
+  color: #666;
+  font-size: clamp(1.65rem, 3vw, 2.45rem);
+  line-height: 1.02;
+  letter-spacing: -0.065em;
+  font-weight: 950;
+  text-shadow:
+    -1.5px -1.5px 0 rgba(255, 255, 255, 0.88),
+    1.5px -1.5px 0 rgba(255, 255, 255, 0.88),
+    -1.5px 1.5px 0 rgba(255, 255, 255, 0.88),
+    1.5px 1.5px 0 rgba(255, 255, 255, 0.88),
+    0 1rem 2rem rgba(216, 49, 91, 0.12);
+}
+
+.brandText {
+  position: relative;
+  z-index: 2;
+  margin: 1rem 0 0;
+  max-width: 31rem;
+  color: #777;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+}
+
+.brandPills {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.25rem;
+}
+
+.brandPills span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.15rem;
+  padding: 0 0.78rem;
+  border-radius: 999px;
+  color: #d8315b;
+  font-size: 0.78rem;
+  font-weight: 850;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(216, 49, 91, 0.08);
+  box-shadow: 0 0.65rem 1.35rem rgba(216, 49, 91, 0.055);
+}
+
+.footerColumns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.footerSection {
+  min-width: 0;
+  padding: 1.25rem;
+  border-radius: 1.7rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.74), rgba(255, 247, 250, 0.58));
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  box-shadow:
+    0 1rem 2.4rem rgba(216, 49, 91, 0.065),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.footerSection:hover {
+  transform: translateY(-4px);
+  border-color: rgba(216, 49, 91, 0.14);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 240, 246, 0.74));
+  box-shadow:
+    0 1.35rem 2.8rem rgba(216, 49, 91, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.58rem;
+  margin-bottom: 1rem;
+}
+
+.sectionDot {
+  width: 0.62rem;
+  height: 0.62rem;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: #ff8fb8;
+  box-shadow: 0 0 0 0.28rem rgba(255, 143, 184, 0.16);
+}
+
+.footerTitle {
+  margin: 0;
+  color: #666;
+  font-size: 1.05rem;
+  font-weight: 950;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.footerLinks {
+  display: grid;
+  gap: 0.58rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLink {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  min-height: 2.65rem;
+  padding: 0 0.85rem;
+  border-radius: 999px;
+  color: #777;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(216, 49, 91, 0.065);
+  box-shadow: 0 0.55rem 1.15rem rgba(216, 49, 91, 0.04);
+  transition:
+    transform 180ms ease,
+    color 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.footerLink::after {
+  content: "›";
+  color: rgba(216, 49, 91, 0.58);
+  font-size: 1.15rem;
+  line-height: 1;
+  transform: translateX(-2px);
+  transition: transform 180ms ease;
+}
+
+.footerLink:hover {
+  transform: translateY(-2px);
+  color: #d8315b;
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(216, 49, 91, 0.14);
+  box-shadow: 0 0.85rem 1.65rem rgba(216, 49, 91, 0.075);
+}
+
+.footerLink:hover::after {
+  transform: translateX(2px);
+}
+
+.socialText {
+  margin: -0.2rem 0 1rem;
+  color: #888;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  letter-spacing: -0.02em;
+}
+
+.socialIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.62rem;
+}
+
+.socialIcon {
+  width: 2.65rem;
+  height: 2.65rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.95rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 238, 245, 0.88));
+  border: 1px solid rgba(216, 49, 91, 0.1);
+  box-shadow:
+    0 0.8rem 1.5rem rgba(216, 49, 91, 0.075),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    filter 180ms ease;
+}
+
+.socialIcon:hover {
+  transform: translateY(-4px) rotate(-2deg);
+  border-color: rgba(216, 49, 91, 0.18);
+  box-shadow:
+    0 1.1rem 2rem rgba(216, 49, 91, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.96);
+}
+
+.socialIcon img {
+  width: 1.16rem;
+  height: 1.16rem;
+  object-fit: contain;
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(45%)
+    sepia(7%)
+    saturate(17%)
+    hue-rotate(356deg)
+    brightness(92%)
+    contrast(88%);
+  transition:
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+.socialIcon:hover img {
+  transform: scale(1.08);
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(31%)
+    sepia(74%)
+    saturate(2258%)
+    hue-rotate(322deg)
+    brightness(90%)
+    contrast(88%);
+}
+
+.footerBottom {
+  width: min(1180px, 100%);
+  margin: 1.35rem auto 0;
+  padding-top: 1.05rem;
+  border-top: 1px solid rgba(216, 49, 91, 0.095);
+  text-align: center;
+}
+
+.footerBottom p {
+  margin: 0;
+  color: #888;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+}
+
+@keyframes footerFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
   }
-  
-  .footerContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
+
+  50% {
+    transform: translate3d(0.8rem, -0.8rem, 0) scale(1.035);
   }
-  
-  /* 각 Footer 섹션 기본 스타일 및 반응 */
+}
+
+@media (max-width: 1040px) {
+  .footerShell {
+    grid-template-columns: 1fr;
+  }
+
+  .brandPanel {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .footer {
+    padding: 3.5rem 1rem 1.25rem;
+  }
+
+  .footerColumns {
+    grid-template-columns: 1fr;
+  }
+
+  .brandPanel,
   .footerSection {
-    flex: 1;
-    min-width: 250px;
-    margin: 1rem 0;
-    padding-right: 1rem;
-    transition: padding-right 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 1.55rem;
   }
-  
-  .footerSection:hover {
-    padding-right: 2rem;
-    background-color: rgba(216, 49, 91, 0.15);
-    border-radius: 12px; /* 모서리를 둥글게 */
+
+  .brandTitle {
+    max-width: 26rem;
   }
-  
-  /* 미디어 쿼리: 화면 너비에 따른 기본 padding 조정 */
-  @media (min-width: 768px) {
-    .footerSection {
-      margin: 1rem; 
-      padding-right: 2rem;
-    }
-    .footerSection:hover {
-      margin: 1rem; 
-      padding-right: 3rem;
-    }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    padding: 3rem 0.85rem 1.1rem;
   }
-  
-  @media (min-width: 1024px) {
-    .footerSection {
-      margin: 1.5rem; 
-      padding-right: 4rem;
-    }
-    .footerSection:hover {
-      margin: 1.5rem; 
-      padding-right: 5rem;
-    }
+
+  .brandPanel {
+    padding: 1.2rem;
   }
-  
-  .footerTitle {
-    font-size: 1.5rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    letter-spacing: -0.04em;
-    color: rgba(216, 49, 91, 0.95);
+
+  .brandMark {
+    width: 3.55rem;
+    height: 3.55rem;
+    border-radius: 1.15rem;
   }
-  
-  .footerText {
+
+  .brandMark span {
+    font-size: 1.3rem;
+  }
+
+  .brandTitle {
+    font-size: 1.75rem;
+  }
+
+  .brandText {
     font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 1.6;
-    letter-spacing: -0.04em;
-    color: #888;
   }
-  
-  .footerLinks {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+  .footerSection {
+    padding: 1rem;
   }
-  
-  .footerLinks li {
-    margin-bottom: 0.5rem;
+
+  .footerLink {
+    min-height: 2.55rem;
+    font-size: 0.88rem;
   }
-  
-  .footerLinks a {
-    color: #888;
-    text-decoration: none;
-    transition: color 0.3s ease;
+
+  .socialIcon {
+    width: 2.55rem;
+    height: 2.55rem;
   }
-  
-  .footerLinks a:hover {
-    color: #D8315B;
+
+  .footerBottom p {
+    font-size: 0.78rem;
   }
-  
-  /* 소셜 아이콘 */
-  .socialIcons a {
-    display: inline-block;
-    margin-right: 1rem;
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-  
-  .socialIcons a:hover {
-    transform: translateY(-3px);
-    filter: invert(50%); 
-  }
-  
-  .socialIcons img {
-    width: 20px;
-    height: 20px;
-    filter: brightness(0) saturate(100%) invert(50%);
-    transition: filter 0.3s ease;
-  }
-  
-  /* Footer 하단 */
-  .footerBottom {
-    text-align: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding-top: 1rem;
-    font-size: 0.85rem;
-    color: #888;
-    font-weight: 400;
-  }
-  
+}
