@@ -31,12 +31,9 @@ export default function Home() {
   ]);
 
   const journeyItems: CarouselItem[] = [
-    { label: "1", image: "/journey/AppStoreImageiPhoneEN2509141.jpg" },
-    { label: "2", image: "/journey/AppStoreImageiPhoneEN2509142.jpg" },
-    { label: "3", image: "/journey/AppStoreImageiPhoneEN2509143.jpg" },
-    { label: "4", image: "/journey/AppStoreImageiPhoneEN2509144.jpg" },
-    { label: "5", image: "/journey/AppStoreImageiPhoneEN2509145.jpg" },
-    { label: "6", image: "/journey/AppStoreImageiPhoneEN2509146.jpg" },
+    { label: "1", image: "/journey/AppStoreImageiPhoneEN2605011.jpg" },
+    { label: "2", image: "/journey/AppStoreImageiPhoneEN2605012.jpg" },
+    { label: "3", image: "/journey/AppStoreImageiPhoneEN2605013.jpg" },
   ];
 
   //--- 상태 관리 ---

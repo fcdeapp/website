@@ -171,7 +171,7 @@ const MessageInputFormAI: React.FC<Props> = ({
               onClick={pickImage}
             >
               <img
-                src="/assets/chatInputImage.png"
+                src="/assets/AbrodyImage.png"
                 alt="img"
                 width={24}
                 height={24}
@@ -207,8 +207,8 @@ const MessageInputFormAI: React.FC<Props> = ({
             <img
               src={
                 isVoiceChatMode
-                  ? "/assets/chatInputPlayOn.png"
-                  : "/assets/chatInputPlay.png"
+                  ? "/assets/AbrodyVoiceIdleOn.png"
+                  : "/assets/AbrodyVoiceIdle.png"
               }
               alt="voice"
               width={24}
@@ -224,7 +224,7 @@ const MessageInputFormAI: React.FC<Props> = ({
             disabled={sending}
           >
             <img
-              src="/assets/chatInputSend.png"
+              src="/assets/AbrodySend.png"
               alt="send"
               width={24}
               height={24}
