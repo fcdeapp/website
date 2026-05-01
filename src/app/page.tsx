@@ -23,6 +23,7 @@ type CarouselItem = {
 type IVItem = {
   label: string;
   src: string;
+  modelSrc: string;
 };
 
 const LANGUAGES = ["English", "Français", "Español", "中文", "日本語", "한국어"];
@@ -34,11 +35,15 @@ const JOURNEY_ITEMS: CarouselItem[] = [
 ];
 
 const INITIAL_IV_ITEMS: IVItem[] = [
-  { label: "coffee", src: "/imageVocab/imageVocab_1.png" },
-  { label: "bread", src: "/imageVocab/imageVocab_2.png" },
-  { label: "tempura bowl", src: "/imageVocab/imageVocab_3.png" },
-  { label: "cat", src: "/imageVocab/imageVocab_4.png" },
-  { label: "pigeon", src: "/imageVocab/imageVocab_5.png" },
+  {
+    label: "air balloon",
+    src: "/air_balloon_model.png",
+    modelSrc: "/air_balloon_model.glb",
+  },
+  { label: "bowl", src: "/bowl_model.png", modelSrc: "/bowl_model.glb" },
+  { label: "fish", src: "/fish_model.png", modelSrc: "/fish_model.glb" },
+  { label: "shoes", src: "/shoes_model.png", modelSrc: "/shoes_model.glb" },
+  { label: "sushi", src: "/sushi_model.png", modelSrc: "/sushi_model.glb" },
 ];
 
 const heroParent: Variants = {
@@ -89,6 +94,8 @@ export default function Home() {
     useState<CarouselItem[]>(JOURNEY_ITEMS);
   const [langIndex, setLangIndex] = useState(0);
   const [modalImage, setModalImage] = useState<string | null>(null);
+  const [loadingModelSrc, setLoadingModelSrc] = useState<string | null>(null);
+  const [activeModel, setActiveModel] = useState<IVItem | null>(null);
 
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
@@ -123,6 +130,17 @@ export default function Home() {
       once: true,
       offset: 80,
     });
+  }, []);
+
+
+  useEffect(() => {
+    if (document.querySelector('script[data-model-viewer="true"]')) return;
+
+    const script = document.createElement("script");
+    script.type = "module";
+    script.src = "https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js";
+    script.dataset.modelViewer = "true";
+    document.head.appendChild(script);
   }, []);
 
   useEffect(() => {
@@ -175,6 +193,21 @@ export default function Home() {
 
   function closeModal() {
     setModalImage(null);
+  }
+
+  function openModel(item: IVItem) {
+    if (loadingModelSrc) return;
+
+    setLoadingModelSrc(item.modelSrc);
+
+    window.setTimeout(() => {
+      setActiveModel(item);
+      setLoadingModelSrc(null);
+    }, 1100);
+  }
+
+  function closeModel() {
+    setActiveModel(null);
   }
 
   const currentLanguage = LANGUAGES[langIndex] ?? LANGUAGES[0] ?? "English";
@@ -410,29 +443,47 @@ export default function Home() {
               className={`${styles.demoVideosContainer} ${styles.demoRail}`}
               layout
             >
-              {ivItems.map((item) => (
-                <motion.article
-                  key={item.src}
-                  className={`${styles.videoCard} ${styles.ivCard}`}
-                  layout
-                >
-                  <div className={styles.ivImgWrap}>
-                    <img
-                      className={styles.ivImg}
-                      src={item.src}
-                      alt={`Image vocabulary card for ${item.label}`}
-                      loading="lazy"
-                      decoding="async"
-                    />
+              {ivItems.map((item) => {
+                const isLoading = loadingModelSrc === item.modelSrc;
 
-                    <div className={styles.ivLabel} aria-hidden="true">
-                      <span className={styles.ivWordStroke}>{item.label}</span>
+                return (
+                  <motion.article
+                    key={item.src}
+                    className={`${styles.videoCard} ${styles.ivCard}`}
+                    layout
+                  >
+                    <div className={styles.ivImgWrap}>
+                      <img
+                        className={styles.ivImg}
+                        src={item.src}
+                        alt={`Image vocabulary card for ${item.label}`}
+                        loading="lazy"
+                        decoding="async"
+                      />
 
-                      <span className={styles.ivWordFill}>{item.label}</span>
+                      <button
+                        type="button"
+                        className={`${styles.modelLaunchButton} ${
+                          isLoading ? styles.modelLaunchButtonLoading : ""
+                        }`}
+                        onClick={() => openModel(item)}
+                        aria-label={`Open ${item.label} 3D model`}
+                        disabled={isLoading}
+                      >
+                        <span className={styles.modelProgressRing} aria-hidden />
+
+                        <img
+                          src="/images/AbrodyLogo3D.png"
+                          alt=""
+                          className={styles.modelLaunchLogo}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </button>
                     </div>
-                  </div>
-                </motion.article>
-              ))}
+                  </motion.article>
+                );
+              })}
             </motion.div>
           </section>
 
@@ -558,6 +609,41 @@ export default function Home() {
                 className={styles.modalClose}
                 onClick={closeModal}
                 aria-label="Close image preview"
+              >
+                ×
+              </button>
+            </div>
+          </div>
+        )}
+
+        {activeModel && (
+          <div
+            className={styles.modelModal}
+            onClick={closeModel}
+            role="presentation"
+          >
+            <div
+              className={styles.modelModalContent}
+              onClick={(event) => event.stopPropagation()}
+            >
+              <div className={styles.modelViewerShell}>
+                {React.createElement("model-viewer", {
+                  src: activeModel.modelSrc,
+                  alt: `${activeModel.label} 3D model`,
+                  cameraControls: true,
+                  autoRotate: true,
+                  ar: true,
+                  exposure: "1",
+                  shadowIntensity: "0.45",
+                  class: styles.modelViewer,
+                })}
+              </div>
+
+              <button
+                type="button"
+                className={styles.modalClose}
+                onClick={closeModel}
+                aria-label="Close 3D model preview"
               >
                 ×
               </button>
