@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
@@ -65,29 +65,14 @@ export default function Home() {
   const tiltX = useTransform(sy, (v) => v / -8);
   const tiltY = useTransform(sx, (v) => v / 8);
 
-  const layerSlow = useMemo(
-    () => ({
-      x: useTransform(sx, (v) => v * -0.25),
-      y: useTransform(sy, (v) => v * -0.25),
-    }),
-    [sx, sy]
-  );
+  const slowX = useTransform(sx, (v) => v * -0.25);
+  const slowY = useTransform(sy, (v) => v * -0.25);
 
-  const layerMed = useMemo(
-    () => ({
-      x: useTransform(sx, (v) => v * -0.5),
-      y: useTransform(sy, (v) => v * -0.5),
-    }),
-    [sx, sy]
-  );
+  const medX = useTransform(sx, (v) => v * -0.5);
+  const medY = useTransform(sy, (v) => v * -0.5);
 
-  const layerFast = useMemo(
-    () => ({
-      x: useTransform(sx, (v) => v * 0.8),
-      y: useTransform(sy, (v) => v * 0.8),
-    }),
-    [sx, sy]
-  );
+  const fastX = useTransform(sx, (v) => v * 0.8);
+  const fastY = useTransform(sy, (v) => v * 0.8);
 
   useEffect(() => {
     AOS.init({
@@ -99,7 +84,10 @@ export default function Home() {
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
-      setLangIndex((current) => (current + 1) % LANGUAGES.length);
+      setLangIndex((current) => {
+        if (LANGUAGES.length === 0) return 0;
+        return (current + 1) % LANGUAGES.length;
+      });
     }, 3000);
 
     return () => window.clearInterval(intervalId);
@@ -107,7 +95,10 @@ export default function Home() {
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
-      setIvItems((prev) => [...prev.slice(1), prev[0]]);
+      setIvItems((prev) => {
+        if (!Array.isArray(prev) || prev.length <= 1) return prev;
+        return [...prev.slice(1), prev[0]];
+      });
     }, 5000);
 
     return () => window.clearInterval(intervalId);
@@ -115,7 +106,10 @@ export default function Home() {
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
-      setJourneyOrder((prev) => [...prev.slice(1), prev[0]]);
+      setJourneyOrder((prev) => {
+        if (!Array.isArray(prev) || prev.length <= 1) return prev;
+        return [...prev.slice(1), prev[0]];
+      });
     }, 5000);
 
     return () => window.clearInterval(intervalId);
@@ -139,6 +133,8 @@ export default function Home() {
   function closeModal() {
     setModalImage(null);
   }
+
+  const currentLanguage = LANGUAGES[langIndex] ?? LANGUAGES[0] ?? "English";
 
   return (
     <>
@@ -171,14 +167,23 @@ export default function Home() {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://website.fcde.app/AbrodyFoxB.png" />
+        <meta
+          property="og:image"
+          content="https://website.fcde.app/AbrodyLogo3DSimple.png"
+        />
         <meta property="og:url" content="https://website.fcde.app/" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://website.fcde.app/AbrodyFoxB.png" />
-        <meta name="twitter:image:alt" content="Abrody visual language learning app" />
+        <meta
+          name="twitter:image"
+          content="https://website.fcde.app/AbrodyLogo3DSimple.png"
+        />
+        <meta
+          name="twitter:image:alt"
+          content="Abrody visual language learning app"
+        />
       </Head>
 
       <div className={styles.container}>
@@ -190,13 +195,19 @@ export default function Home() {
           <motion.div
             aria-hidden
             className={styles.fxMesh}
-            style={layerSlow}
+            style={{
+              x: slowX,
+              y: slowY,
+            }}
           />
 
           <motion.div
             aria-hidden
             className={styles.fxBeams}
-            style={layerMed}
+            style={{
+              x: medX,
+              y: medY,
+            }}
           />
 
           <motion.div aria-hidden className={styles.fxGrid} />
@@ -216,14 +227,14 @@ export default function Home() {
               <span className={styles.dynamicLangBg}>
                 <AnimatePresence mode="wait">
                   <motion.span
-                    key={LANGUAGES[langIndex]}
+                    key={currentLanguage}
                     className={styles.dynamicLang}
                     initial={{ opacity: 0, y: 18 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -18 }}
                     transition={{ duration: 0.45, ease: "easeOut" }}
                   >
-                    {LANGUAGES[langIndex]}
+                    {currentLanguage}
                   </motion.span>
                 </AnimatePresence>
               </span>
@@ -267,7 +278,10 @@ export default function Home() {
 
           <motion.div
             className={styles.orb}
-            style={layerFast}
+            style={{
+              x: fastX,
+              y: fastY,
+            }}
             aria-hidden
           />
 
@@ -349,13 +363,9 @@ export default function Home() {
                     />
 
                     <div className={styles.ivLabel} aria-hidden="true">
-                      <span className={styles.ivWordStroke}>
-                        {item.label}
-                      </span>
+                      <span className={styles.ivWordStroke}>{item.label}</span>
 
-                      <span className={styles.ivWordFill}>
-                        {item.label}
-                      </span>
+                      <span className={styles.ivWordFill}>{item.label}</span>
                     </div>
                   </div>
                 </motion.article>
@@ -378,7 +388,7 @@ export default function Home() {
             </div>
 
             <img
-              src="/images/Ads250812EN.jpg"
+              src="/images/AbrodyLogo3D.png"
               alt="Abrody language learning practice preview"
               className={styles.recordButtonImage}
               loading="lazy"
