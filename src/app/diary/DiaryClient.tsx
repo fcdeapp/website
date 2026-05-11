@@ -268,10 +268,10 @@ export default function DiaryClient({ entries }: { entries: DiaryEntry[] }) {
               </h1>
 
               <p className={styles.heroLead}>
-                {`가지 않은 길을 되돌아보는 나쁜 습관이 있습니다.
-저는 다만 빛나는 삶들이 부러웠습니다.
-돌리지 못할 그 선택들이
-모든 것을 바꾸었다고 생각했습니다.`}
+                {`가지 않은 길을 돌아보는 버릇이 있습니다.
+저는 다만 빛나는 삶이 부러웠습니다.
+돌이킬 수 없는 선택이
+모든 것을 바꾸었다고`}
               </p>
 
               <div className={styles.heroMeta}>
