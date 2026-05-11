@@ -1,44 +1,48 @@
+@font-face {
+  font-family: "Jeju Myeongjo";
+  src: url("/ttf/JejuMyeongjo.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/ttf/Pretendard-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/ttf/Pretendard-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/ttf/Pretendard-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
 .wrapper {
   min-height: 100vh;
-  background: #ffffff;
-  color: #2f2f2f;
+  background: #f7f7f5;
+  color: #242424;
   display: flex;
   flex-direction: column;
   gap: 0;
+  font-family: "Pretendard";
 }
 
 /* Hero */
 .heroSection {
   position: relative;
   overflow: hidden;
-  padding: clamp(2rem, 5vw, 3rem) 1.25rem clamp(1.5rem, 4vw, 2.5rem);
+  padding: clamp(1.6rem, 4vw, 2.6rem) 1.25rem clamp(1.2rem, 3vw, 2rem);
   background:
-    radial-gradient(circle at top left, rgba(216, 49, 91, 0.08), transparent 30%),
-    radial-gradient(circle at top right, rgba(242, 84, 45, 0.08), transparent 32%),
-    linear-gradient(180deg, #ffffff 0%, #fbfbfc 100%);
-  border-bottom: 1px solid rgba(17, 12, 43, 0.06);
-}
-
-.heroBgMesh {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(17, 12, 43, 0.04), transparent 22%),
-    radial-gradient(circle at 80% 30%, rgba(17, 12, 43, 0.03), transparent 20%),
-    radial-gradient(circle at 50% 100%, rgba(17, 12, 43, 0.03), transparent 30%);
-  pointer-events: none;
-}
-
-.heroBgGlow {
-  position: absolute;
-  width: 340px;
-  height: 340px;
-  right: -80px;
-  top: -80px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(216, 49, 91, 0.12), transparent 65%);
-  filter: blur(20px);
-  pointer-events: none;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(247, 247, 245, 1) 100%);
+  border-bottom: 1px solid #deded9;
 }
 
 .heroInner {
@@ -50,36 +54,44 @@
 
 .heroReveal {
   text-align: center;
+  padding: clamp(1rem, 3vw, 2rem) 0;
 }
 
 .hiddenToggleButtonSecondary {
   appearance: none;
-  border: 1px solid rgba(17, 12, 43, 0.08);
+  border: 1px solid #cfcfca;
   background: #ffffff;
-  color: #6b7280;
+  color: #4d4d4a;
+  font-family: "Pretendard";
   font-size: 0.86rem;
   font-weight: 600;
   cursor: pointer;
-  padding: 0.4rem 0.7rem;
+  padding: 0.42rem 0.72rem;
   border-radius: 999px;
-  transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 .hiddenToggleButtonSecondary:hover {
-  background: #fafafa;
+  background: #f3f3f0;
+  border-color: #bcbcb6;
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(17, 12, 43, 0.05);
+  box-shadow: 0 8px 18px rgba(35, 35, 32, 0.06);
 }
 
 .sectionKicker {
   display: inline-block;
   margin-bottom: 0.9rem;
-  padding: 0.3rem 0.7rem;
+  padding: 0.28rem 0.66rem;
   border-radius: 999px;
-  background: rgba(216, 49, 91, 0.08);
-  border: 1px solid rgba(216, 49, 91, 0.12);
-  color: #d8315b;
-  font-size: 0.84rem;
+  background: #eeeeea;
+  border: 1px solid #d7d7d1;
+  color: #4b4b47;
+  font-family: "Pretendard";
+  font-size: 0.78rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 700;
@@ -87,29 +99,33 @@
 
 .heroTitle {
   margin: 0;
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  line-height: 1.08;
-  letter-spacing: -0.035em;
-  font-weight: 700;
-  color: #1f2937;
+  font-family: "Jeju Myeongjo";
+  font-size: clamp(2.15rem, 5vw, 3.8rem);
+  line-height: 1.16;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  color: #20201e;
 }
 
 .heroLead {
-  max-width: 48rem;
-  margin: 1.25rem auto 0;
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #5b6472;
+  max-width: 46rem;
+  margin: 1.2rem auto 0;
+  font-family: "Jeju Myeongjo";
+  font-size: clamp(1rem, 1.5vw, 1.12rem);
+  line-height: 2.05;
+  letter-spacing: -0.015em;
+  color: #3f3f3b;
   white-space: pre-line;
 }
 
 .heroLead code,
 .sectionLead code,
 .emptyText code {
-  background: #f6f7f9;
-  border: 1px solid rgba(17, 12, 43, 0.08);
+  background: #f1f1ee;
+  border: 1px solid #d8d8d2;
   border-radius: 8px;
   padding: 0.15rem 0.45rem;
+  font-family: "Pretendard";
   font-size: 0.92em;
 }
 
@@ -124,13 +140,14 @@
 .metaChip {
   display: inline-flex;
   align-items: center;
-  padding: 0.5rem 0.85rem;
+  padding: 0.48rem 0.82rem;
   border-radius: 999px;
   background: #ffffff;
-  border: 1px solid rgba(17, 12, 43, 0.08);
-  box-shadow: 0 8px 22px rgba(17, 12, 43, 0.05);
-  color: #4b5563;
-  font-size: 0.92rem;
+  border: 1px solid #d8d8d2;
+  box-shadow: 0 8px 22px rgba(35, 35, 32, 0.05);
+  color: #4d4d49;
+  font-family: "Pretendard";
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -139,7 +156,7 @@
   max-width: 78rem;
   width: 100%;
   margin: 0 auto;
-  padding: 4rem 1.25rem 6rem;
+  padding: 3.6rem 1.25rem 6rem;
 }
 
 .headerBlock {
@@ -169,16 +186,20 @@
 }
 
 .sectionTitle {
-  margin: 0.6rem 0 0;
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  font-weight: 500;
-  color: #333;
+  margin: 0.85rem 0 0;
+  font-family: "Jeju Myeongjo";
+  font-size: clamp(1.9rem, 4vw, 2.65rem);
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+  font-weight: 400;
+  color: #242421;
 }
 
 .sectionLead {
   margin: 0.9rem auto 0;
-  color: #667085;
-  font-size: 1rem;
+  color: #62625d;
+  font-family: "Pretendard";
+  font-size: 0.98rem;
   line-height: 1.8;
 }
 
@@ -187,22 +208,26 @@
   max-width: 42rem;
   margin: 0 auto;
   padding: 2rem;
-  border-radius: 22px;
+  border-radius: 18px;
   background: #ffffff;
-  border: 1px solid rgba(17, 12, 43, 0.08);
-  box-shadow: 0 10px 28px rgba(17, 12, 43, 0.05);
+  border: 1px solid #d9d9d3;
+  box-shadow: 0 10px 28px rgba(35, 35, 32, 0.05);
   text-align: center;
 }
 
 .emptyTitle {
   margin: 0 0 0.6rem;
-  color: #1f2937;
+  color: #242421;
+  font-family: "Jeju Myeongjo";
   font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 .emptyText {
   margin: 0;
-  color: #667085;
+  color: #62625d;
+  font-family: "Pretendard";
   line-height: 1.7;
 }
 
@@ -223,9 +248,9 @@
 .calendarPanel,
 .selectedPanel {
   background: #ffffff;
-  border: 1px solid rgba(17, 12, 43, 0.08);
-  border-radius: 24px;
-  box-shadow: 0 12px 30px rgba(17, 12, 43, 0.05);
+  border: 1px solid #d9d9d3;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(35, 35, 32, 0.05);
 }
 
 .calendarPanel {
@@ -233,7 +258,7 @@
 }
 
 .selectedPanel {
-  padding: 1.35rem 1.25rem 1.3rem;
+  padding: 1.55rem 1.45rem 1.45rem;
   min-height: 520px;
 }
 
@@ -243,15 +268,18 @@
 
 .panelTitle {
   margin: 0;
+  font-family: "Jeju Myeongjo";
   font-size: 1.08rem;
-  color: #1f2937;
-  font-weight: 700;
+  color: #242421;
+  font-weight: 400;
+  letter-spacing: -0.025em;
 }
 
 .panelText {
   margin: 0.45rem 0 0;
-  color: #667085;
-  font-size: 0.95rem;
+  color: #686862;
+  font-family: "Pretendard";
+  font-size: 0.94rem;
   line-height: 1.6;
 }
 
@@ -263,16 +291,18 @@
 
 .monthBlock {
   padding: 0.95rem;
-  border-radius: 18px;
-  background: linear-gradient(180deg, #ffffff 0%, #fbfbfc 100%);
-  border: 1px solid rgba(17, 12, 43, 0.06);
+  border-radius: 16px;
+  background: #fafaf8;
+  border: 1px solid #e1e1dc;
 }
 
 .monthHeader {
   margin-bottom: 0.75rem;
-  color: #1f2937;
+  color: #242421;
+  font-family: "Jeju Myeongjo";
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 .weekHeader,
@@ -288,19 +318,21 @@
 
 .weekCell {
   text-align: center;
-  font-size: 0.8rem;
-  color: #8b95a1;
-  font-weight: 700;
+  font-family: "Pretendard";
+  font-size: 0.78rem;
+  color: #81817a;
+  font-weight: 600;
   padding: 0.2rem 0;
 }
 
 .calendarCell {
   min-height: 38px;
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.92rem;
+  font-family: "Pretendard";
+  font-size: 0.9rem;
 }
 
 .calendarCellEmpty {
@@ -308,56 +340,65 @@
 }
 
 .calendarCellMuted {
-  background: rgba(17, 12, 43, 0.035);
-  color: #b5bcc7;
+  background: #eeeeea;
+  color: #aaa9a2;
 }
 
 .calendarDateButton {
   appearance: none;
-  border: 1px solid rgba(216, 49, 91, 0.1);
-  background: rgba(216, 49, 91, 0.08);
-  color: #b4234a;
+  border: 1px solid #bab9b1;
+  background: #ffffff;
+  color: #282824;
   font-weight: 700;
   cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
 }
 
 .calendarDateButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(17, 12, 43, 0.07);
-  background: rgba(216, 49, 91, 0.14);
+  box-shadow: 0 10px 22px rgba(35, 35, 32, 0.08);
+  background: #f1f1ed;
+  border-color: #9f9e95;
 }
 
 .calendarDateButtonActive {
-  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
+  background: #252520;
   color: #ffffff;
-  border-color: transparent;
-  box-shadow: 0 12px 26px rgba(216, 49, 91, 0.18);
+  border-color: #252520;
+  box-shadow: 0 12px 24px rgba(35, 35, 32, 0.16);
 }
 
 .selectedTop {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.95rem;
 }
 
 .selectedDatePill {
   display: inline-flex;
   align-items: center;
-  padding: 0.38rem 0.78rem;
+  padding: 0.36rem 0.76rem;
   border-radius: 999px;
-  background: rgba(17, 12, 43, 0.05);
-  color: #4b5563;
-  font-size: 0.88rem;
-  font-weight: 700;
+  background: #eeeeea;
+  color: #4d4d49;
+  font-family: "Pretendard";
+  font-size: 0.86rem;
+  font-weight: 600;
 }
 
 .selectedTitle {
   margin: 0;
-  color: #1f2937;
-  font-size: clamp(1.35rem, 2vw, 1.8rem);
-  line-height: 1.35;
-  font-weight: 700;
+  color: #242421;
+  font-family: "Jeju Myeongjo";
+  font-size: clamp(1.38rem, 2vw, 1.85rem);
+  line-height: 1.45;
+  letter-spacing: -0.035em;
+  font-weight: 400;
 }
 
 .selectedImageWrapSmall {
@@ -406,10 +447,10 @@
   position: absolute;
   inset: 0;
   overflow: hidden;
-  border-radius: 16px;
-  background: #f8fafc;
-  border: 1px solid rgba(17, 12, 43, 0.08);
-  box-shadow: 0 10px 24px rgba(17, 12, 43, 0.08);
+  border-radius: 14px;
+  background: #f3f3ef;
+  border: 1px solid #d6d6d0;
+  box-shadow: 0 10px 24px rgba(35, 35, 32, 0.08);
   transform: translateY(var(--stack-y)) rotate(var(--stack-rotate));
   transition:
     transform 0.35s ease,
@@ -426,8 +467,11 @@
 
 .imageStackButton:hover .imageStackLayer,
 .imageStackDisplay:hover .imageStackLayer {
-  transform: translateX(var(--fan-x)) translateY(var(--stack-y)) rotate(var(--fan-rotate));
-  box-shadow: 0 16px 34px rgba(17, 12, 43, 0.12);
+  transform:
+    translateX(var(--fan-x))
+    translateY(var(--stack-y))
+    rotate(var(--fan-rotate));
+  box-shadow: 0 16px 34px rgba(35, 35, 32, 0.12);
 }
 
 .imageCountChip {
@@ -442,26 +486,28 @@
   height: 28px;
   padding: 0 0.6rem;
   border-radius: 999px;
-  background: rgba(17, 12, 43, 0.78);
+  background: rgba(36, 36, 33, 0.78);
   color: #ffffff;
+  font-family: "Pretendard";
   font-size: 0.78rem;
   font-weight: 700;
   backdrop-filter: blur(8px);
-  box-shadow: 0 8px 18px rgba(17, 12, 43, 0.16);
+  box-shadow: 0 8px 18px rgba(35, 35, 32, 0.16);
 }
 
 .imageHint {
-  margin: 0.55rem 0 0;
-  font-size: 0.88rem;
-  color: #8b95a1;
+  margin: 0.6rem 0 0;
+  font-family: "Pretendard";
+  font-size: 0.86rem;
+  color: #777771;
   line-height: 1.5;
 }
 
 .selectedDivider {
   width: 100%;
   height: 1px;
-  background: rgba(17, 12, 43, 0.07);
-  margin: 1rem 0 1rem;
+  background: #deded9;
+  margin: 1.15rem 0 1.15rem;
 }
 
 .selectedContent {
@@ -469,10 +515,11 @@
   white-space: pre-wrap;
   word-break: keep-all;
   overflow-wrap: break-word;
-  font-family: inherit;
-  font-size: 1rem;
-  line-height: 1.95;
-  color: #3f4752;
+  font-family: "Jeju Myeongjo";
+  font-size: clamp(1.02rem, 1.35vw, 1.12rem);
+  line-height: 2.12;
+  letter-spacing: -0.018em;
+  color: #30302c;
 }
 
 /* Archive */
@@ -488,15 +535,19 @@
 
 .archiveTitle {
   margin: 0;
-  color: #1f2937;
-  font-size: 1.2rem;
-  font-weight: 700;
+  color: #242421;
+  font-family: "Jeju Myeongjo";
+  font-size: 1.22rem;
+  line-height: 1.45;
+  font-weight: 400;
+  letter-spacing: -0.025em;
 }
 
 .archiveText {
   margin: 0.45rem 0 0;
-  color: #667085;
-  font-size: 0.98rem;
+  color: #62625d;
+  font-family: "Pretendard";
+  font-size: 0.96rem;
   line-height: 1.7;
 }
 
@@ -512,11 +563,15 @@
   flex-direction: column;
   min-height: 260px;
   padding: 1.35rem 1.2rem 1.25rem;
-  border-radius: 22px;
+  border-radius: 18px;
   background: #ffffff;
-  border: 1px solid rgba(17, 12, 43, 0.08);
-  box-shadow: 0 8px 24px rgba(17, 12, 43, 0.05);
-  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  border: 1px solid #d9d9d3;
+  box-shadow: 0 8px 24px rgba(35, 35, 32, 0.05);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease;
 }
 
 .diaryCardButton {
@@ -524,16 +579,19 @@
   text-align: left;
   cursor: pointer;
   width: 100%;
+  font-family: "Pretendard";
 }
 
 .diaryCard:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(17, 12, 43, 0.09);
+  background: #fdfdfb;
+  border-color: #c5c5bd;
+  box-shadow: 0 18px 40px rgba(35, 35, 32, 0.09);
 }
 
 .diaryCardActive {
-  border-color: rgba(216, 49, 91, 0.22);
-  box-shadow: 0 18px 42px rgba(216, 49, 91, 0.1);
+  border-color: #2c2c27;
+  box-shadow: 0 18px 42px rgba(35, 35, 32, 0.1);
 }
 
 .cardTop {
@@ -547,18 +605,21 @@
   align-items: center;
   padding: 0.34rem 0.7rem;
   border-radius: 999px;
-  background: rgba(17, 12, 43, 0.05);
-  color: #4b5563;
-  font-size: 0.85rem;
-  font-weight: 700;
+  background: #eeeeea;
+  color: #4d4d49;
+  font-family: "Pretendard";
+  font-size: 0.84rem;
+  font-weight: 600;
 }
 
 .cardTitle {
   margin: 0;
-  font-size: 1.2rem;
-  line-height: 1.3;
-  color: #1f2937;
-  font-weight: 700;
+  font-family: "Jeju Myeongjo";
+  font-size: 1.22rem;
+  line-height: 1.45;
+  letter-spacing: -0.03em;
+  color: #242421;
+  font-weight: 400;
 }
 
 .cardThumbWrap {
@@ -566,23 +627,26 @@
 }
 
 .cardExcerpt {
-  margin: 0.85rem 0 0;
-  color: #667085;
-  line-height: 1.7;
-  font-size: 0.97rem;
+  margin: 0.9rem 0 0;
+  color: #4d4d48;
+  font-family: "Jeju Myeongjo";
+  line-height: 1.9;
+  letter-spacing: -0.015em;
+  font-size: 1rem;
 }
 
 .divider {
   width: 100%;
   height: 1px;
-  background: rgba(17, 12, 43, 0.07);
+  background: #deded9;
   margin: 1rem 0 0.9rem;
 }
 
 .cardHint {
   margin-top: auto;
-  color: #b4234a;
-  font-size: 0.9rem;
+  color: #3a3a35;
+  font-family: "Pretendard";
+  font-size: 0.88rem;
   font-weight: 700;
 }
 
@@ -590,7 +654,7 @@
 .imageModalBackdrop {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.72);
+  background: rgba(27, 27, 24, 0.74);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -610,12 +674,13 @@
   top: -42px;
   right: 0;
   appearance: none;
-  border: none;
-  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.16);
   color: #ffffff;
   padding: 0.45rem 0.8rem;
   border-radius: 999px;
   cursor: pointer;
+  font-family: "Pretendard";
   font-weight: 700;
   backdrop-filter: blur(8px);
 }
@@ -625,12 +690,13 @@
   top: 50%;
   transform: translateY(-50%);
   appearance: none;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.22);
   width: 44px;
   height: 44px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.16);
   color: #ffffff;
+  font-family: "Pretendard";
   font-size: 1.8rem;
   line-height: 1;
   cursor: pointer;
@@ -651,9 +717,9 @@
   width: 100%;
   max-height: 76vh;
   object-fit: contain;
-  border-radius: 18px;
+  border-radius: 16px;
   box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
-  background: #111827;
+  background: #191916;
 }
 
 .imageModalThumbRow {
@@ -669,7 +735,7 @@
   border: 2px solid transparent;
   background: transparent;
   padding: 0;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   flex: 0 0 auto;
@@ -724,7 +790,7 @@
   .calendarPanel,
   .selectedPanel,
   .diaryCard {
-    border-radius: 18px;
+    border-radius: 16px;
   }
 
   .calendarPanel,
@@ -738,11 +804,12 @@
 
   .cardTitle,
   .selectedTitle {
-    font-size: 1.08rem;
+    font-size: 1.12rem;
   }
 
   .selectedContent {
-    font-size: 0.96rem;
+    font-size: 1rem;
+    line-height: 2.05;
   }
 
   .calendarCell {

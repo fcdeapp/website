@@ -19,7 +19,15 @@ export type DiaryEntry = {
 };
 
 const DIARY_DIR = path.join(process.cwd(), "src", "app", "diary", "content");
-const IMAGE_EXTENSIONS = ["png", "jpg", "jpeg", "webp", "gif", "avif"] as const;
+
+const IMAGE_EXTENSIONS = [
+  "png",
+  "jpg",
+  "jpeg",
+  "webp",
+  "gif",
+  "avif",
+] as const;
 
 function parseDate(value: string) {
   const normalized = value.trim();
@@ -69,6 +77,7 @@ async function getImagesForBaseName(
   allFileNames: string[]
 ): Promise<DiaryImage[]> {
   const escapedBaseName = escapeRegExp(baseName);
+
   const pattern = new RegExp(
     `^${escapedBaseName}(?:\\((\\d+)\\))?\\.(${IMAGE_EXTENSIONS.join("|")})$`,
     "i"
@@ -120,12 +129,15 @@ async function getImagesForBaseName(
 async function getDiaryEntries(): Promise<DiaryEntry[]> {
   try {
     const dirStat = await fs.stat(DIARY_DIR);
+
     if (!dirStat.isDirectory()) {
       return [];
     }
 
     const fileNames = await fs.readdir(DIARY_DIR);
-    const txtFiles = fileNames.filter((file) => file.toLowerCase().endsWith(".txt"));
+    const txtFiles = fileNames.filter((file) =>
+      file.toLowerCase().endsWith(".txt")
+    );
 
     const entries = await Promise.all(
       txtFiles.map(async (fileName) => {
@@ -153,6 +165,7 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
         }
 
         const slug = fileName.replace(/\.txt$/i, "");
+
         const fallbackDate =
           /^\d{4}$/.test(slug) ||
           /^\d{4}-\d{2}$/.test(slug) ||
@@ -176,16 +189,16 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
       })
     );
 
-        return entries.sort((a, b) => {
-        const aDate = parseDate(a.date);
-        const bDate = parseDate(b.date);
+    return entries.sort((a, b) => {
+      const aDate = parseDate(a.date);
+      const bDate = parseDate(b.date);
 
-        if (!aDate && !bDate) return 0;
-        if (!aDate) return 1;
-        if (!bDate) return -1;
+      if (!aDate && !bDate) return 0;
+      if (!aDate) return 1;
+      if (!bDate) return -1;
 
-        return aDate.getTime() - bDate.getTime();
-        });
+      return aDate.getTime() - bDate.getTime();
+    });
   } catch (error) {
     console.error("Failed to load diary entries:", error);
     return [];
@@ -194,5 +207,6 @@ async function getDiaryEntries(): Promise<DiaryEntry[]> {
 
 export default async function DiaryPage() {
   const entries = await getDiaryEntries();
+
   return <DiaryClient entries={entries} />;
 }
