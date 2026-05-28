@@ -323,7 +323,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   onClose={() => setShowPasswordExpiredModal(false)}
                 />
               )}
-              {pathname !== "/posts" && <Header />}
+              {pathname !== "/posts" && !pathname.includes("canopy") && <Header />}
               {/* 실제 콘텐츠 영역 */}
               <main>{children}</main>
             </I18nextProvider>
