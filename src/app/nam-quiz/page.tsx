@@ -1,7 +1,7 @@
 "use client";
 
-import { FormEvent, KeyboardEvent, useMemo, useState } from "react";
-import styles from "../../styles/pages/NamQuiz.module.css";
+import { FormEvent, KeyboardEvent, ReactNode, useMemo, useState } from "react";
+import styles from "./NamQuiz.module.css";
 
 type QuizItem = {
   id: number;
@@ -25,7 +25,7 @@ const QUIZ_ITEMS: QuizItem[] = [
   {
     id: 3,
     text: "나는 남궁두를 무너뜨린 것이 재능의 부족도 식색(食色) 같은 낮은 욕망도 아니라 완성을 향한 조급함이고, 허균이 끝에 내세우는 '인(忍)'은 그 조급함을 늦추는 규율이라고 본다.",
-    keyTerms: ["재능의 부족", "식색", "완성을 향한 조급함", "인(忍)", "규율"],
+    keyTerms: ["재능의 부족", "식색(食色)", "완성을 향한 조급함", "인(忍)", "규율"],
   },
   {
     id: 4,
@@ -80,7 +80,7 @@ const QUIZ_ITEMS: QuizItem[] = [
   {
     id: 14,
     text: "더하여 통상 이 작품은 전계(傳系) 한문소설로 다루어지는데, 나는 전(傳)이 본디 말미의 논찬(論贊)에 필자의 평을 직접 싣는 양식이라는 점에 주목한다.",
-    keyTerms: ["전계 한문소설", "전(傳)", "논찬(論贊)", "필자의 평"],
+    keyTerms: ["전계(傳系) 한문소설", "전(傳)", "논찬(論贊)", "필자의 평"],
   },
   {
     id: 15,
@@ -142,14 +142,51 @@ const ORDER_OPTIONS = [
   "자기 해석",
 ];
 
-function normalize(value: string) {
+function stripOptionalHanjaParentheses(value: string) {
   return value
+    .replace(/\([^)]*\p{Script=Han}[^)]*\)/gu, "")
+    .replace(/（[^）]*\p{Script=Han}[^）]*）/gu, "");
+}
+
+function normalize(value: string) {
+  return stripOptionalHanjaParentheses(value)
+    .normalize("NFKC")
+    .replace(/[「『]/g, '"')
+    .replace(/[」』]/g, '"')
+    .replace(/[“”„‟]/g, '"')
+    .replace(/[‘’‚‛]/g, "'")
+    .replace(/["']/g, "")
+    .replace(/[，、]/g, ",")
+    .replace(/[．。]/g, ".")
+    .replace(/[：]/g, ":")
+    .replace(/[；]/g, ";")
     .replace(/\s+/g, "")
-    .replace(/[“”]/g, '"')
-    .replace(/[‘’]/g, "'")
-    .replace(/[，]/g, ",")
-    .replace(/[．]/g, ".")
     .trim();
+}
+
+function getEditDistance(a: string, b: string) {
+  const prev = Array.from({ length: b.length + 1 }, (_, index) => index);
+  const curr = Array.from({ length: b.length + 1 }, () => 0);
+
+  for (let i = 1; i <= a.length; i += 1) {
+    curr[0] = i;
+
+    for (let j = 1; j <= b.length; j += 1) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+
+      curr[j] = Math.min(
+        prev[j] + 1,
+        curr[j - 1] + 1,
+        prev[j - 1] + cost
+      );
+    }
+
+    for (let j = 0; j <= b.length; j += 1) {
+      prev[j] = curr[j];
+    }
+  }
+
+  return prev[b.length];
 }
 
 function getSimilarity(answer: string, target: string) {
@@ -157,22 +194,23 @@ function getSimilarity(answer: string, target: string) {
   const b = normalize(target);
 
   if (!b) return 0;
+  if (!a) return 0;
+  if (a === b) return 100;
 
-  let same = 0;
-  const minLength = Math.min(a.length, b.length);
+  const distance = getEditDistance(a, b);
+  const maxLength = Math.max(a.length, b.length);
 
-  for (let i = 0; i < minLength; i += 1) {
-    if (a[i] === b[i]) same += 1;
-  }
-
-  return Math.round((same / b.length) * 100);
+  return Math.max(0, Math.round((1 - distance / maxLength) * 100));
 }
 
 function makeBlankText(item: QuizItem) {
   let result = item.text;
 
   item.keyTerms.slice(0, 3).forEach((term, index) => {
-    const blank = `(${index + 1}) ${"＿".repeat(Math.min(Math.max(term.length, 4), 12))}`;
+    const displayTerm = stripOptionalHanjaParentheses(term);
+    const blankLength = Math.min(Math.max(displayTerm.length, 4), 12);
+    const blank = `(${index + 1}) ${"＿".repeat(blankLength)}`;
+
     result = result.replace(term, blank);
   });
 
@@ -181,6 +219,24 @@ function makeBlankText(item: QuizItem) {
 
 function getBlankAnswers(item: QuizItem) {
   return item.keyTerms.slice(0, 3);
+}
+
+function renderTextWithHanja(text: string): ReactNode[] {
+  const parts = text.split(/(\p{Script=Han}+)/gu);
+
+  return parts.map((part, index) => {
+    if (!part) return null;
+
+    if (/^\p{Script=Han}+$/u.test(part)) {
+      return (
+        <span key={`${part}-${index}`} className={styles.hanjaText}>
+          {part}
+        </span>
+      );
+    }
+
+    return <span key={`${part}-${index}`}>{part}</span>;
+  });
 }
 
 export default function NamQuizPage() {
@@ -444,7 +500,7 @@ export default function NamQuizPage() {
             <form className={styles.practiceArea} onSubmit={handleCheck}>
               <div className={styles.sourceBox}>
                 <p className={styles.boxLabel}>원문</p>
-                <p className={styles.sourceText}>{currentItem.text}</p>
+                <p className={styles.sourceText}>{renderTextWithHanja(currentItem.text)}</p>
               </div>
 
               <label className={styles.inputLabel} htmlFor="typing-answer">
@@ -488,7 +544,7 @@ export default function NamQuizPage() {
             <form className={styles.practiceArea} onSubmit={handleCheck}>
               <div className={styles.sourceBox}>
                 <p className={styles.boxLabel}>빈칸 문장</p>
-                <p className={styles.sourceText}>{makeBlankText(currentItem)}</p>
+                <p className={styles.sourceText}>{renderTextWithHanja(makeBlankText(currentItem))}</p>
               </div>
 
               <div className={styles.blankGrid}>
@@ -609,7 +665,7 @@ export default function NamQuizPage() {
                 <div className={styles.termWrap}>
                   {currentItem.keyTerms.map((term) => (
                     <span key={term} className={styles.termChip}>
-                      {term}
+                      {renderTextWithHanja(term)}
                     </span>
                   ))}
                 </div>
@@ -650,14 +706,14 @@ export default function NamQuizPage() {
                   ))}
                 </ol>
               ) : (
-                <p className={styles.answerText}>{currentItem.text}</p>
+                <p className={styles.answerText}>{renderTextWithHanja(currentItem.text)}</p>
               )}
 
               {mode === "blank" && (
                 <div className={styles.answerTerms}>
                   {getBlankAnswers(currentItem).map((answer, index) => (
                     <span key={answer}>
-                      {index + 1}. {answer}
+                      {index + 1}. {renderTextWithHanja(answer)}
                     </span>
                   ))}
                 </div>

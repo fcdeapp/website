@@ -26,13 +26,22 @@
 }
 
 .wrapper {
+  --font-sans-ko: "Pretendard", "Apple SD Gothic Neo", "Noto Sans CJK KR",
+    "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --font-serif-ko: "Jeju Myeongjo", "Apple SD Gothic Neo", "Songti SC",
+    "Hiragino Mincho ProN", "Noto Serif CJK KR", "Noto Serif KR",
+    "Nanum Myeongjo", "Malgun Gothic", serif;
+  --font-hanja: "Apple SD Gothic Neo", "Songti SC", "Hiragino Mincho ProN",
+    "Noto Serif CJK KR", "Noto Serif KR", "Noto Sans CJK KR", "Malgun Gothic",
+    serif;
+
   min-height: 100vh;
   background:
     radial-gradient(circle at 15% 8%, rgba(216, 49, 91, 0.08), transparent 28rem),
     radial-gradient(circle at 85% 0%, rgba(242, 84, 45, 0.08), transparent 24rem),
     #f7f7f5;
   color: #242424;
-  font-family: "Pretendard", sans-serif;
+  font-family: var(--font-sans-ko);
 }
 
 .heroSection {
@@ -82,7 +91,7 @@
 
 .heroTitle {
   margin: 0;
-  font-family: "Jeju Myeongjo", serif;
+  font-family: var(--font-serif-ko);
   font-size: clamp(2.3rem, 5.5vw, 4.4rem);
   line-height: 1.12;
   letter-spacing: -0.045em;
@@ -93,7 +102,7 @@
 .heroLead {
   max-width: 48rem;
   margin: 1.1rem auto 0;
-  font-family: "Jeju Myeongjo", serif;
+  font-family: var(--font-serif-ko);
   font-size: clamp(1rem, 1.6vw, 1.18rem);
   line-height: 2;
   letter-spacing: -0.018em;
@@ -205,7 +214,7 @@
   border-radius: 14px;
   padding: 0.78rem 0.85rem;
   margin-top: 0.48rem;
-  font-family: "Pretendard", sans-serif;
+  font-family: var(--font-sans-ko);
   font-size: 0.94rem;
   font-weight: 700;
   text-align: left;
@@ -245,7 +254,7 @@
   color: #44443f;
   border-radius: 12px;
   min-height: 40px;
-  font-family: "Pretendard", sans-serif;
+  font-family: var(--font-sans-ko);
   font-size: 0.9rem;
   font-weight: 800;
   cursor: pointer;
@@ -298,7 +307,7 @@
 
 .quizTitle {
   margin: 0;
-  font-family: "Jeju Myeongjo", serif;
+  font-family: var(--font-serif-ko);
   color: #242421;
   font-size: clamp(1.35rem, 2.4vw, 2rem);
   line-height: 1.42;
@@ -369,12 +378,23 @@
 .answerText {
   margin: 0;
   color: #2d2d29;
-  font-family: "Jeju Myeongjo", serif;
+  font-family: var(--font-serif-ko);
   font-size: clamp(1.02rem, 1.45vw, 1.16rem);
   line-height: 2.08;
   letter-spacing: -0.018em;
   word-break: keep-all;
   overflow-wrap: break-word;
+  font-synthesis: weight style;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.hanjaText {
+  font-family: var(--font-hanja);
+  font-weight: inherit;
+  color: inherit;
+  opacity: 1;
+  visibility: visible;
 }
 
 .inputLabel {
@@ -395,7 +415,8 @@
   padding: 1rem 1.05rem;
   background: #ffffff;
   color: #242421;
-  font-family: "Jeju Myeongjo", serif;
+  font-family: "Apple SD Gothic Neo", "Noto Sans CJK KR", "Noto Sans KR",
+    "Malgun Gothic", "Pretendard", sans-serif;
   font-size: 1.05rem;
   line-height: 2;
   letter-spacing: -0.018em;
@@ -404,6 +425,9 @@
     border-color 0.18s ease,
     box-shadow 0.18s ease,
     background 0.18s ease;
+  font-synthesis: weight style;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .textarea:focus,
@@ -427,7 +451,7 @@
 .revealButton {
   appearance: none;
   border-radius: 999px;
-  font-family: "Pretendard", sans-serif;
+  font-family: var(--font-sans-ko);
   font-size: 0.92rem;
   font-weight: 800;
   cursor: pointer;
@@ -493,7 +517,8 @@
   padding: 0.82rem 0.85rem;
   background: #ffffff;
   color: #242421;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Apple SD Gothic Neo", "Noto Sans CJK KR", "Noto Sans KR",
+    "Malgun Gothic", "Pretendard", sans-serif;
   font-size: 0.96rem;
   font-weight: 600;
   outline: none;
@@ -501,6 +526,9 @@
     border-color 0.18s ease,
     box-shadow 0.18s ease,
     background 0.18s ease;
+  font-synthesis: weight style;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .optionWrap {
@@ -517,7 +545,7 @@
   color: #3f3f3b;
   border-radius: 999px;
   padding: 0.7rem 0.9rem;
-  font-family: "Pretendard", sans-serif;
+  font-family: var(--font-sans-ko);
   font-size: 0.92rem;
   font-weight: 800;
   cursor: pointer;
@@ -567,7 +595,7 @@
   color: #2f2f2b;
   border-radius: 14px;
   padding: 0.8rem 0.9rem;
-  font-family: "Pretendard", sans-serif;
+  font-family: var(--font-sans-ko);
   font-size: 0.95rem;
   font-weight: 800;
   text-align: left;
@@ -608,8 +636,12 @@
   background: #ffffff;
   border: 1px solid #d7d7d1;
   color: #242421;
+  font-family: var(--font-sans-ko);
   font-weight: 800;
   box-shadow: 0 8px 18px rgba(35, 35, 32, 0.045);
+  font-synthesis: weight style;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .revealButton {
