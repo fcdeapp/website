@@ -1,0 +1,776 @@
+@font-face {
+  font-family: "Jeju Myeongjo";
+  src: url("/ttf/JejuMyeongjo.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/ttf/Pretendard-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/ttf/Pretendard-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/ttf/Pretendard-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 8%, rgba(216, 49, 91, 0.08), transparent 28rem),
+    radial-gradient(circle at 85% 0%, rgba(242, 84, 45, 0.08), transparent 24rem),
+    #f7f7f5;
+  color: #242424;
+  font-family: "Pretendard", sans-serif;
+}
+
+.heroSection {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 5vw, 4rem) 1.25rem 2rem;
+  border-bottom: 1px solid #deded9;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(247, 247, 245, 0.96) 100%);
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    linear-gradient(rgba(32, 32, 30, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(32, 32, 30, 0.035) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at center, black, transparent 68%);
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 78rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 1rem;
+  padding: 0.32rem 0.72rem;
+  border-radius: 999px;
+  background: #eeeeea;
+  border: 1px solid #d7d7d1;
+  color: #4b4b47;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.heroTitle {
+  margin: 0;
+  font-family: "Jeju Myeongjo", serif;
+  font-size: clamp(2.3rem, 5.5vw, 4.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  font-weight: 400;
+  color: #20201e;
+}
+
+.heroLead {
+  max-width: 48rem;
+  margin: 1.1rem auto 0;
+  font-family: "Jeju Myeongjo", serif;
+  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  line-height: 2;
+  letter-spacing: -0.018em;
+  color: #4a4a46;
+}
+
+.heroStats {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1.7rem;
+}
+
+.statCard {
+  min-width: 7.5rem;
+  padding: 0.9rem 1.05rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid #d8d8d2;
+  box-shadow: 0 14px 34px rgba(35, 35, 32, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+.statNumber {
+  display: block;
+  color: #242421;
+  font-size: 1.35rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.statLabel {
+  display: block;
+  margin-top: 0.35rem;
+  color: #62625d;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.progressTrack {
+  width: min(34rem, 100%);
+  height: 10px;
+  margin: 1.35rem auto 0;
+  border-radius: 999px;
+  background: #e6e6e0;
+  border: 1px solid #d7d7d1;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #d8315b, #f2542d);
+  transition: width 0.28s ease;
+}
+
+.section {
+  max-width: 78rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 5rem;
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.sidePanel {
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modePanel,
+.indexPanel,
+.quizPanel {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid #d9d9d3;
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(35, 35, 32, 0.055);
+  backdrop-filter: blur(12px);
+}
+
+.modePanel,
+.indexPanel {
+  padding: 1rem;
+}
+
+.panelLabel {
+  margin: 0 0 0.75rem;
+  color: #777771;
+  font-size: 0.78rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.modeButton {
+  appearance: none;
+  width: 100%;
+  border: 1px solid #d5d5cf;
+  background: #fafaf8;
+  color: #41413d;
+  border-radius: 14px;
+  padding: 0.78rem 0.85rem;
+  margin-top: 0.48rem;
+  font-family: "Pretendard", sans-serif;
+  font-size: 0.94rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.modeButton:hover {
+  transform: translateY(-1px);
+  background: #f1f1ed;
+  border-color: #c4c4bd;
+  box-shadow: 0 10px 20px rgba(35, 35, 32, 0.06);
+}
+
+.modeButtonActive {
+  background: #252520;
+  color: #ffffff;
+  border-color: #252520;
+  box-shadow: 0 14px 28px rgba(35, 35, 32, 0.16);
+}
+
+.numberGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.numberButton {
+  appearance: none;
+  border: 1px solid #d2d2cc;
+  background: #fafaf8;
+  color: #44443f;
+  border-radius: 12px;
+  min-height: 40px;
+  font-family: "Pretendard", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.numberButton:hover {
+  transform: translateY(-1px);
+  background: #efefeb;
+  border-color: #bdbdb6;
+}
+
+.numberButtonActive {
+  background: #242421;
+  border-color: #242421;
+  color: #ffffff;
+}
+
+.numberButtonSolved {
+  border-color: rgba(216, 49, 91, 0.45);
+  box-shadow: inset 0 -3px 0 rgba(216, 49, 91, 0.28);
+}
+
+.quizPanel {
+  padding: clamp(1.15rem, 2.5vw, 1.7rem);
+  min-height: 650px;
+}
+
+.quizTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid #deded9;
+}
+
+.quizEyebrow {
+  margin: 0 0 0.45rem;
+  color: #d8315b;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.quizTitle {
+  margin: 0;
+  font-family: "Jeju Myeongjo", serif;
+  color: #242421;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  line-height: 1.42;
+  letter-spacing: -0.035em;
+  font-weight: 400;
+}
+
+.scoreBadge {
+  flex: 0 0 auto;
+  width: 82px;
+  height: 82px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, rgba(216, 49, 91, 0.7), rgba(242, 84, 45, 0.65)) border-box;
+  border: 1px solid transparent;
+  box-shadow: 0 12px 28px rgba(35, 35, 32, 0.07);
+}
+
+.scoreBadge span {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 900;
+  color: #242421;
+  letter-spacing: -0.05em;
+}
+
+.scoreBadge small {
+  margin-top: 0.3rem;
+  color: #777771;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.practiceArea {
+  margin-top: 1.25rem;
+}
+
+.sourceBox,
+.answerBox,
+.resultBox,
+.flashcard,
+.orderAnswerBox {
+  border-radius: 18px;
+  border: 1px solid #d9d9d3;
+  background: #fbfbf9;
+}
+
+.sourceBox {
+  padding: 1.15rem 1.1rem;
+}
+
+.boxLabel {
+  margin: 0 0 0.65rem;
+  color: #777771;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sourceText,
+.answerText {
+  margin: 0;
+  color: #2d2d29;
+  font-family: "Jeju Myeongjo", serif;
+  font-size: clamp(1.02rem, 1.45vw, 1.16rem);
+  line-height: 2.08;
+  letter-spacing: -0.018em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.inputLabel {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  color: #4d4d49;
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  min-height: 210px;
+  resize: vertical;
+  border: 1px solid #d1d1cb;
+  border-radius: 18px;
+  padding: 1rem 1.05rem;
+  background: #ffffff;
+  color: #242421;
+  font-family: "Jeju Myeongjo", serif;
+  font-size: 1.05rem;
+  line-height: 2;
+  letter-spacing: -0.018em;
+  outline: none;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+.textarea:focus,
+.blankInput:focus {
+  border-color: rgba(216, 49, 91, 0.55);
+  box-shadow: 0 0 0 4px rgba(216, 49, 91, 0.1);
+  background: #fffefe;
+}
+
+.actionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.primaryButton,
+.secondaryButton,
+.navButton,
+.navButtonStrong,
+.revealButton {
+  appearance: none;
+  border-radius: 999px;
+  font-family: "Pretendard", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.primaryButton,
+.navButtonStrong {
+  border: 1px solid #242421;
+  background: #242421;
+  color: #ffffff;
+  padding: 0.78rem 1.1rem;
+  box-shadow: 0 12px 24px rgba(35, 35, 32, 0.14);
+}
+
+.primaryButton:hover,
+.navButtonStrong:hover {
+  transform: translateY(-1px);
+  background: #10100f;
+}
+
+.secondaryButton,
+.navButton {
+  border: 1px solid #d0d0ca;
+  background: #ffffff;
+  color: #41413d;
+  padding: 0.78rem 1rem;
+}
+
+.secondaryButton:hover,
+.navButton:hover {
+  transform: translateY(-1px);
+  background: #f2f2ee;
+  border-color: #bcbcb6;
+  box-shadow: 0 10px 20px rgba(35, 35, 32, 0.06);
+}
+
+.blankGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.blankLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  color: #4d4d49;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.blankInput {
+  width: 100%;
+  border: 1px solid #d1d1cb;
+  border-radius: 14px;
+  padding: 0.82rem 0.85rem;
+  background: #ffffff;
+  color: #242421;
+  font-family: "Pretendard", sans-serif;
+  font-size: 0.96rem;
+  font-weight: 600;
+  outline: none;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+.optionWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.orderOption {
+  appearance: none;
+  border: 1px solid #d0d0ca;
+  background: #ffffff;
+  color: #3f3f3b;
+  border-radius: 999px;
+  padding: 0.7rem 0.9rem;
+  font-family: "Pretendard", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    background 0.18s ease,
+    border-color 0.18s ease,
+    opacity 0.18s ease;
+}
+
+.orderOption:hover {
+  transform: translateY(-1px);
+  background: #f1f1ed;
+  border-color: #bcbcb6;
+}
+
+.orderOptionDisabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.orderAnswerBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  min-height: 160px;
+}
+
+.emptyOrder {
+  margin: auto;
+  color: #777771;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.orderAnswer {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  border: 1px solid #d7d7d1;
+  background: #ffffff;
+  color: #2f2f2b;
+  border-radius: 14px;
+  padding: 0.8rem 0.9rem;
+  font-family: "Pretendard", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+.orderAnswer span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: #242421;
+  color: #ffffff;
+  font-size: 0.78rem;
+}
+
+.flashcard {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.termWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.termChip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.56rem 0.82rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #d7d7d1;
+  color: #242421;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(35, 35, 32, 0.045);
+}
+
+.revealButton {
+  margin-top: 1.4rem;
+  border: 1px solid #242421;
+  background: #242421;
+  color: #ffffff;
+  padding: 0.8rem 1.15rem;
+}
+
+.revealButton:hover {
+  transform: translateY(-1px);
+  background: #10100f;
+}
+
+.flashHint {
+  margin-top: 0.9rem;
+  color: #666661;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.resultBox {
+  margin-top: 1rem;
+  padding: 0.95rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  font-weight: 700;
+}
+
+.resultBoxGood {
+  background: #f3f8f1;
+  border-color: #c8ddbf;
+  color: #2e5b27;
+}
+
+.resultBoxBad {
+  background: #fff7f5;
+  border-color: #f1c9c0;
+  color: #8c2d1d;
+}
+
+.answerBox {
+  margin-top: 1rem;
+  padding: 1.1rem;
+  background: #ffffff;
+}
+
+.answerList {
+  margin: 0;
+  padding-left: 1.35rem;
+  color: #2d2d29;
+  font-size: 1rem;
+  line-height: 1.9;
+  font-weight: 700;
+}
+
+.answerTerms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+}
+
+.answerTerms span {
+  display: inline-flex;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: #f1f1ed;
+  color: #3f3f3b;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.navRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #deded9;
+}
+
+@media (max-width: 980px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  .sidePanel {
+    position: static;
+  }
+
+  .numberGrid {
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+  }
+
+  .quizPanel {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .heroStats {
+    gap: 0.55rem;
+  }
+
+  .statCard {
+    min-width: 6.7rem;
+    padding: 0.8rem 0.85rem;
+  }
+
+  .section {
+    padding: 1.25rem 1rem 4rem;
+  }
+
+  .quizTop {
+    flex-direction: column;
+  }
+
+  .scoreBadge {
+    width: 100%;
+    height: auto;
+    min-height: 64px;
+    border-radius: 18px;
+    flex-direction: row;
+    gap: 0.45rem;
+  }
+
+  .blankGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .numberGrid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .textarea {
+    min-height: 180px;
+  }
+
+  .navRow {
+    flex-direction: column;
+  }
+
+  .navButton,
+  .navButtonStrong,
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .numberGrid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .sourceText,
+  .answerText {
+    font-size: 1rem;
+    line-height: 1.95;
+  }
+}
