@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, KeyboardEvent, ReactNode, useMemo, useState } from "react";
-import styles from "./NamQuiz.module.css";
+import styles from "../../styles/pages/NamQuiz.module.css";
 
 type QuizItem = {
   id: number;
