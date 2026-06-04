@@ -3,6 +3,13 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import styles from "../../styles/pages/Canopy.module.css";
 
+/**
+ * 구글맵 API 키
+ * - 클라이언트에서 로드되므로 .env 의 키를 NEXT_PUBLIC_ 로 노출해야 합니다.
+ *   예) NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=<GOOGLE_MAPS_API_KEY 값>
+ * - 또는 상위 서버 컴포넌트에서 apiKey prop 으로 전달할 수 있습니다.
+ */
+
 type CanopySize = 10 | 20 | 40 | 100;
 
 type CanopyOption = {
@@ -21,6 +28,8 @@ type CanopyOption = {
   noiseReduction: string;
 };
 
+type LatLng = { lat: number; lng: number };
+
 type PlacedCanopy = {
   id: string;
   diameter: CanopySize;
@@ -29,11 +38,26 @@ type PlacedCanopy = {
   rotation: number;
 };
 
-type LeafletWindow = Window & {
-  L?: any;
+type MapMode = "place" | "boundary";
+
+type Recommendation = {
+  id: string;
+  label: string;
+  note: string;
+  sizeMix: string;
+  count: number;
+  placements: PlacedCanopy[];
+  siteArea: number;
+  coveragePct: number;
+  cost: number;
+  totalBenefit: number;
+  netValue: number;
+  roi: number;
+  reluLoss: number;
 };
 
 const SIZE_KEYS: CanopySize[] = [10, 20, 40, 100];
+const SIZES_DESC: CanopySize[] = [100, 40, 20, 10];
 
 const ORIGIN_NAME = "서울대학교 39동";
 const ORIGIN_LAT = 37.4591;
@@ -42,28 +66,18 @@ const ORIGIN_LNG = 126.9515;
 const DEFAULT_SITE_LAT = 37.5665;
 const DEFAULT_SITE_LNG = 126.978;
 
+const METERS_PER_DEG_LAT = 111_320;
+
 /**
  * ─────────────────────────────────────────────────────────────────────────
  * 단가 산정 근거 (사업성 검토용 추정치 — 실제 견적은 막재 등급·차음 사양에 따라 변동)
  *
  * 0) 정사각형 배치: 한 변 = 규격(m), 바닥면적 = 한 변²  (지도 위에서 각도 회전 가능)
- *
  * 1) 막재 표면적(membraneArea) ≈ 바닥면적 × 2  (반구 근사. 차음용 높이 확보 가정)
- *
  * 2) 자재·제작 원가(unitAssetCost) = 막 외피(가공 포함) + 송풍/앵커/에어록/제어
- *    - 막 외피: ₩40,000~100,000/㎡ (단일막→이중막 / 차음 중량막 범위)
- *    - 국제 시세 참고: PVC 코팅 폴리에스터 $200~500/㎡, PTFE $400~1,000/㎡ (철골 포함가)
- *    - 국내 영구형 에어돔 턴키 ₩80~120만/㎡(바닥)보다 낮게 잡은 임대 자산 기준
- *
- * 3) 설치/철거비(installCost·removalCost) = 현장 인건비 + 장비(크레인 등) — 운송 별도
- *    - 숙련 노무 ₩25만/인·일 × 투입 인·일 + 장비비
- *
- * 4) 일 임대료(dailyRental) ≈ 자산원가 ÷ 약 125회(유상 가동일) + 정비/마진
- *    → 감가상각 + 막재 마모 + 운영 마진 반영
- *
- * 5) 건설사 가치(아래 VALUE 섹션):
- *    - 지체상금률 0.1%/일 (국가를 당사자로 하는 계약에 관한 법률 기준)
- *    - 현장 고정 간접비(추정) ≈ 도급액의 0.02%/일
+ * 3) 설치/철거비 = 현장 인건비 + 장비 — 운송 별도
+ * 4) 일 임대료 ≈ 자산원가 ÷ 약 125회(유상 가동일) + 정비/마진
+ * 5) 건설사 가치: 지체상금률 0.1%/일 + 현장 고정 간접비(추정) 0.02%/일
  * ─────────────────────────────────────────────────────────────────────────
  */
 const CANOPY_OPTIONS: Record<CanopySize, CanopyOption> = {
@@ -133,6 +147,11 @@ const CANOPY_OPTIONS: Record<CanopySize, CanopyOption> = {
 const DELAY_PENALTY_RATE = 0.001; // 지체상금률 0.1%/일 (국가계약 기준)
 const OVERHEAD_RATE_PER_DAY = 0.0002; // 현장 고정 간접비 추정 0.02%/일
 
+// ReLU 조합 최적화 손실 가중치 (KRW 단위로 정규화)
+const PENALTY_PER_M2 = 120_000; // 미커버 면적 1㎡당 페널티 (커버 강제)
+const OVERFLOW_PER_M2 = 8_000; // 현장 밖으로 넘친 막재 1㎡당 페널티 (낭비)
+const NOISE_RISK_MARGIN = 40; // 민원 위험 버퍼(m)
+
 const CONTRACT_PRESETS: { label: string; value: number }[] = [
   { label: "10억", value: 1_000_000_000 },
   { label: "50억", value: 5_000_000_000 },
@@ -142,19 +161,15 @@ const CONTRACT_PRESETS: { label: string; value: number }[] = [
 
 const formatKRW = (value: number) => {
   if (value <= 0) return "0원";
-
   if (value >= 100_000_000) {
     return `${(value / 100_000_000).toFixed(1).replace(".0", "")}억 원`;
   }
-
   if (value >= 10_000) {
     return `${Math.round(value / 10_000).toLocaleString("ko-KR")}만 원`;
   }
-
   return `${value.toLocaleString("ko-KR")}원`;
 };
 
-// 음수까지 부호와 함께 표기 (순가치용)
 const formatSignedKRW = (value: number) => {
   if (value === 0) return "0원";
   const sign = value > 0 ? "+" : "−";
@@ -169,13 +184,12 @@ const addDays = (base: Date, days: number) => {
   return date;
 };
 
-const formatDate = (date: Date) => {
-  return new Intl.DateTimeFormat("ko-KR", {
+const formatDate = (date: Date) =>
+  new Intl.DateTimeFormat("ko-KR", {
     month: "long",
     day: "numeric",
     weekday: "short",
   }).format(date);
-};
 
 const getDistanceKm = (
   fromLat: number,
@@ -186,20 +200,16 @@ const getDistanceKm = (
   const R = 6371;
   const dLat = ((toLat - fromLat) * Math.PI) / 180;
   const dLng = ((toLng - fromLng) * Math.PI) / 180;
-
   const a =
     Math.sin(dLat / 2) * Math.sin(dLat / 2) +
     Math.cos((fromLat * Math.PI) / 180) *
       Math.cos((toLat * Math.PI) / 180) *
       Math.sin(dLng / 2) *
       Math.sin(dLng / 2);
-
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 };
 
-// 중심점·한 변 길이(m)·회전각(도)로 정사각형 네 꼭짓점의 위경도를 계산
-const METERS_PER_DEG_LAT = 111_320;
-
+// 중심점·한 변(m)·회전각(도)으로 정사각형 네 꼭짓점 위경도 계산
 const getSquareCorners = (
   lat: number,
   lng: number,
@@ -211,171 +221,601 @@ const getSquareCorners = (
   const cos = Math.cos(theta);
   const sin = Math.sin(theta);
   const metersPerDegLng = METERS_PER_DEG_LAT * Math.cos((lat * Math.PI) / 180);
-
-  // 회전 전 로컬 오프셋 (동쪽 x, 북쪽 y)
   const base: [number, number][] = [
     [-half, -half],
     [half, -half],
     [half, half],
     [-half, half],
   ];
-
   return base.map(([x, y]) => {
     const rx = x * cos - y * sin;
     const ry = x * sin + y * cos;
-    const dLat = ry / METERS_PER_DEG_LAT;
-    const dLng = rx / metersPerDegLng;
-    return [lat + dLat, lng + dLng] as [number, number];
+    return [lat + ry / METERS_PER_DEG_LAT, lng + rx / metersPerDegLng] as [
+      number,
+      number,
+    ];
   });
 };
 
-export default function CanopyPage() {
+// 로컬 평면 투영 (centroid 기준 동/북 미터)
+const makeProjector = (cLat: number, cLng: number) => {
+  const mpdLng = METERS_PER_DEG_LAT * Math.cos((cLat * Math.PI) / 180);
+  return {
+    toLocal: (lat: number, lng: number) => ({
+      x: (lng - cLng) * mpdLng,
+      y: (lat - cLat) * METERS_PER_DEG_LAT,
+    }),
+    toLatLng: (x: number, y: number) => ({
+      lat: cLat + y / METERS_PER_DEG_LAT,
+      lng: cLng + x / mpdLng,
+    }),
+  };
+};
+
+type Pt = { x: number; y: number };
+
+const pointInPolyLocal = (pt: Pt, poly: Pt[]) => {
+  let inside = false;
+  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    const xi = poly[i].x;
+    const yi = poly[i].y;
+    const xj = poly[j].x;
+    const yj = poly[j].y;
+    const intersect =
+      yi > pt.y !== yj > pt.y &&
+      pt.x < ((xj - xi) * (pt.y - yi)) / (yj - yi) + xi;
+    if (intersect) inside = !inside;
+  }
+  return inside;
+};
+
+const shoelaceArea = (poly: Pt[]) => {
+  let s = 0;
+  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    s += (poly[j].x + poly[i].x) * (poly[j].y - poly[i].y);
+  }
+  return Math.abs(s / 2);
+};
+
+const squareContainsLocal = (
+  pt: Pt,
+  center: Pt,
+  side: number,
+  theta: number
+) => {
+  const dx = pt.x - center.x;
+  const dy = pt.y - center.y;
+  const u = dx * Math.cos(theta) + dy * Math.sin(theta);
+  const v = -dx * Math.sin(theta) + dy * Math.cos(theta);
+  const h = side / 2;
+  return Math.abs(u) <= h && Math.abs(v) <= h;
+};
+
+const centroidOf = (points: LatLng[]) => {
+  const lat = points.reduce((s, p) => s + p.lat, 0) / points.length;
+  const lng = points.reduce((s, p) => s + p.lng, 0) / points.length;
+  return { lat, lng };
+};
+
+// ── 견적/가치 순수 계산 (메인 패널과 추천 카드가 공유) ──
+const buildQuote = (
+  placed: PlacedCanopy[],
+  rentalDays: number,
+  center: LatLng
+) => {
+  const distanceKm = getDistanceKm(ORIGIN_LAT, ORIGIN_LNG, center.lat, center.lng);
+
+  const equipmentCost = placed.reduce((sum, item) => {
+    const o = CANOPY_OPTIONS[item.diameter];
+    return sum + o.installCost + o.removalCost + o.dailyRental * rentalDays;
+  }, 0);
+
+  const totalArea = placed.reduce(
+    (sum, item) => sum + CANOPY_OPTIONS[item.diameter].area,
+    0
+  );
+
+  const largestDiameter = placed.reduce<CanopySize>(
+    (max, item) => (item.diameter > max ? item.diameter : max),
+    10
+  );
+  const largestOption = CANOPY_OPTIONS[largestDiameter];
+
+  const transportCost =
+    placed.length === 0 ? 0 : Math.round(520_000 + distanceKm * 38_000);
+
+  const largeEquipmentSurcharge =
+    placed.filter((i) => i.diameter === 100).length * 4_800_000 +
+    placed.filter((i) => i.diameter === 40).length * 1_600_000;
+
+  const soundMonitoringCost = placed.length > 0 ? 1_300_000 : 0;
+  const safetyPlanCost =
+    placed.length > 0 ? 900_000 + largestDiameter * 42_000 : 0;
+
+  const subtotal =
+    equipmentCost +
+    transportCost +
+    largeEquipmentSurcharge +
+    soundMonitoringCost +
+    safetyPlanCost;
+
+  const vat = Math.round(subtotal * 0.1);
+  const total = subtotal + vat;
+
+  const quantityDays = Math.max(0, placed.length - 1) * 0.4;
+  const installDays =
+    placed.length === 0
+      ? 0
+      : Math.ceil(largestOption.installDays + quantityDays);
+  const removalDays =
+    placed.length === 0 ? 0 : Math.ceil(largestOption.removalDays);
+
+  const transportHours =
+    placed.length === 0
+      ? 0
+      : Math.max(
+          3,
+          Math.ceil(distanceKm / 28 + (largestDiameter >= 100 ? 10 : 4))
+        );
+
+  const today = new Date();
+  const arrivalDate = addDays(today, transportHours > 10 ? 1 : 0);
+  const installFinishDate = addDays(arrivalDate, installDays);
+  const removalFinishDate = addDays(installFinishDate, rentalDays + removalDays);
+
+  return {
+    distanceKm,
+    equipmentCost,
+    transportCost,
+    largeEquipmentSurcharge,
+    soundMonitoringCost,
+    safetyPlanCost,
+    subtotal,
+    vat,
+    total,
+    totalArea,
+    largestDiameter,
+    installDays,
+    removalDays,
+    transportHours,
+    arrivalDate,
+    installFinishDate,
+    removalFinishDate,
+  };
+};
+
+const buildValue = (cost: number, contractValue: number, daysSaved: number) => {
+  const dailyDelayPenalty = contractValue * DELAY_PENALTY_RATE;
+  const dailyOverhead = contractValue * OVERHEAD_RATE_PER_DAY;
+  const delayAvoidance = dailyDelayPenalty * daysSaved;
+  const overheadSaving = dailyOverhead * daysSaved;
+  const totalBenefit = delayAvoidance + overheadSaving;
+  const netValue = totalBenefit - cost;
+  const roiMultiple = cost > 0 ? totalBenefit / cost : 0;
+  const paybackDays = dailyDelayPenalty > 0 ? cost / dailyDelayPenalty : 0;
+  return {
+    dailyDelayPenalty,
+    dailyOverhead,
+    delayAvoidance,
+    overheadSaving,
+    totalBenefit,
+    netValue,
+    roiMultiple,
+    paybackDays,
+  };
+};
+
+// ── ReLU 기반 캐노피 조합 추천 ──
+const recommendCombinations = (
+  boundary: LatLng[],
+  rotationDeg: number,
+  rentalDays: number,
+  contractValue: number,
+  daysSaved: number
+): Recommendation[] => {
+  if (boundary.length < 3) return [];
+
+  const c = centroidOf(boundary);
+  const proj = makeProjector(c.lat, c.lng);
+  const polyLocal = boundary.map((p) => proj.toLocal(p.lat, p.lng));
+  const siteArea = shoelaceArea(polyLocal);
+  if (siteArea < 1) return [];
+
+  const xs = polyLocal.map((p) => p.x);
+  const ys = polyLocal.map((p) => p.y);
+  const minX = Math.min(...xs);
+  const maxX = Math.max(...xs);
+  const minY = Math.min(...ys);
+  const maxY = Math.max(...ys);
+  const maxDim = Math.max(maxX - minX, maxY - minY);
+
+  // 커버 측정용 내부 기준 격자
+  const refStep = Math.min(12, Math.max(2, maxDim / 30));
+  const refPoints: Pt[] = [];
+  for (let x = minX + refStep / 2; x <= maxX; x += refStep) {
+    for (let y = minY + refStep / 2; y <= maxY; y += refStep) {
+      const pt = { x, y };
+      if (pointInPolyLocal(pt, polyLocal)) refPoints.push(pt);
+    }
+  }
+  if (refPoints.length === 0) return [];
+
+  const theta = (rotationDeg * Math.PI) / 180;
+  const cos = Math.cos(theta);
+  const sin = Math.sin(theta);
+
+  // 회전 프레임 기준 S 간격 격자 중심 생성 (현장과 겹치는 셀만)
+  const genCenters = (S: number): Pt[] => {
+    const corners = [
+      { x: minX, y: minY },
+      { x: maxX, y: minY },
+      { x: maxX, y: maxY },
+      { x: minX, y: maxY },
+    ];
+    const us = corners.map((p) => p.x * cos + p.y * sin);
+    const vs = corners.map((p) => -p.x * sin + p.y * cos);
+    const uMin = Math.min(...us);
+    const uMax = Math.max(...us);
+    const vMin = Math.min(...vs);
+    const vMax = Math.max(...vs);
+    const centers: Pt[] = [];
+    for (let u = uMin + S / 2; u <= uMax + S / 2; u += S) {
+      for (let v = vMin + S / 2; v <= vMax + S / 2; v += S) {
+        const x = u * cos - v * sin;
+        const y = u * sin + v * cos;
+        const center = { x, y };
+        if (refPoints.some((p) => squareContainsLocal(p, center, S, theta))) {
+          centers.push(center);
+        }
+      }
+    }
+    return centers;
+  };
+
+  const coverageOf = (cells: { center: Pt; S: number }[]) => {
+    let covered = 0;
+    for (const p of refPoints) {
+      if (cells.some((cl) => squareContainsLocal(p, cl.center, cl.S, theta)))
+        covered++;
+    }
+    return covered / refPoints.length;
+  };
+
+  const sizes = SIZES_DESC.filter((S) => S <= maxDim * 1.5 && S >= refStep * 0.5);
+  if (sizes.length === 0) sizes.push(10);
+
+  type Strategy = { kind: string; cells: { center: Pt; S: number }[] };
+  const strategies: Strategy[] = [];
+
+  // 균일 단일 규격 전략
+  for (const S of sizes) {
+    const centers = genCenters(S).filter(
+      (c2) =>
+        pointInPolyLocal(c2, polyLocal) ||
+        refPoints.filter((p) => squareContainsLocal(p, c2, S, theta)).length >= 2
+    );
+    if (centers.length === 0 || centers.length > 250) continue;
+    strategies.push({
+      kind: `uniform-${S}`,
+      cells: centers.map((center) => ({ center, S })),
+    });
+  }
+
+  // 혼합 그리디 (ReLU 최적 후보) — 큰 규격부터 미커버 구역을 메움
+  {
+    const coveredFlags = new Array(refPoints.length).fill(false);
+    const cells: { center: Pt; S: number }[] = [];
+    for (const S of sizes) {
+      const centers = genCenters(S);
+      const cellCap = Math.max(1, Math.round((S * S) / (refStep * refStep)));
+      for (const center of centers) {
+        const newIdx: number[] = [];
+        for (let i = 0; i < refPoints.length; i++) {
+          if (
+            !coveredFlags[i] &&
+            squareContainsLocal(refPoints[i], center, S, theta)
+          ) {
+            newIdx.push(i);
+          }
+        }
+        if (newIdx.length >= Math.max(1, cellCap * 0.4)) {
+          newIdx.forEach((i) => (coveredFlags[i] = true));
+          cells.push({ center, S });
+        }
+      }
+      if (cells.length > 300) break;
+    }
+    if (cells.length > 0) strategies.push({ kind: "mixed", cells });
+  }
+
+  const recs: Recommendation[] = strategies.map((st, idx) => {
+    const placements: PlacedCanopy[] = st.cells.map((cl, i) => {
+      const ll = proj.toLatLng(cl.center.x, cl.center.y);
+      return {
+        id: `rec-${idx}-${i}`,
+        diameter: cl.S as CanopySize,
+        lat: ll.lat,
+        lng: ll.lng,
+        rotation: rotationDeg,
+      };
+    });
+    const rawCover = st.cells.reduce((s, cl) => s + cl.S * cl.S, 0);
+    const coveragePct = coverageOf(st.cells);
+    const quote = buildQuote(placements, rentalDays, c);
+    const gap = Math.max(0, siteArea - rawCover);
+    const over = Math.max(0, rawCover - siteArea);
+    const reluLoss =
+      quote.total + gap * PENALTY_PER_M2 + over * OVERFLOW_PER_M2; // ReLU = max(0,·)
+    const value = buildValue(quote.total, contractValue, daysSaved);
+
+    const counts: Record<number, number> = {};
+    placements.forEach((p) => (counts[p.diameter] = (counts[p.diameter] || 0) + 1));
+    const sizeMix = Object.keys(counts)
+      .map(Number)
+      .sort((a, b) => b - a)
+      .map((k) => `${k}m ×${counts[k]}`)
+      .join(" + ");
+
+    return {
+      id: `rec-${idx}`,
+      label: "",
+      note: "",
+      sizeMix,
+      count: placements.length,
+      placements,
+      siteArea,
+      coveragePct,
+      cost: quote.total,
+      totalBenefit: value.totalBenefit,
+      netValue: value.netValue,
+      roi: value.roiMultiple,
+      reluLoss,
+    };
+  });
+
+  if (recs.length === 0) return [];
+
+  const chosen: Recommendation[] = [];
+  const sig = (r: Recommendation) => `${r.sizeMix}|${r.count}`;
+  const push = (r: Recommendation | undefined, label: string, note: string) => {
+    if (!r) return;
+    if (chosen.some((x) => sig(x) === sig(r))) return;
+    chosen.push({ ...r, label, note });
+  };
+
+  const byLoss = [...recs].sort((a, b) => a.reluLoss - b.reluLoss);
+  push(byLoss[0], "ReLU 최적", "커버·비용·낭비를 ReLU 손실로 동시 최소화");
+
+  const minCost = [...recs]
+    .filter((r) => r.coveragePct >= 0.7)
+    .sort((a, b) => a.cost - b.cost)[0];
+  push(minCost, "최소 비용", "70% 이상 커버 중 최저 견적");
+
+  const maxCov = [...recs].sort((a, b) => b.coveragePct - a.coveragePct)[0];
+  push(maxCov, "최대 커버", "현장을 최대한 밀폐");
+
+  return chosen.slice(0, 3);
+};
+
+export default function CanopyPage({ apiKey }: { apiKey?: string }) {
+  const mapsKey =
+    apiKey ?? process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
+
   const mapElRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<any>(null);
-  const layerRef = useRef<any>(null);
+
+  const squareShapesRef = useRef<any[]>([]);
+  const markersRef = useRef<any[]>([]);
+  const boundaryShapeRef = useRef<any>(null);
+  const riskShapeRef = useRef<any>(null);
+
   const selectedDiameterRef = useRef<CanopySize>(20);
   const rotationRef = useRef<number>(0);
+  const modeRef = useRef<MapMode>("place");
+  const boundaryClosedRef = useRef<boolean>(false);
 
   const [selectedDiameter, setSelectedDiameter] = useState<CanopySize>(20);
-  const [rotation, setRotation] = useState(0); // 정사각형 배치 회전 각도(도)
+  const [rotation, setRotation] = useState(0);
   const [rentalDays, setRentalDays] = useState(7);
   const [placedCanopies, setPlacedCanopies] = useState<PlacedCanopy[]>([]);
-  const [siteCenter, setSiteCenter] = useState({
+  const [selectedCanopyId, setSelectedCanopyId] = useState<string | null>(null);
+  const [siteCenter, setSiteCenter] = useState<LatLng>({
     lat: DEFAULT_SITE_LAT,
     lng: DEFAULT_SITE_LNG,
   });
-  const [mapReady, setMapReady] = useState(false);
-  const [checkoutOpen, setCheckoutOpen] = useState(false);
 
-  // 건설사 가치 계산 입력값
-  const [contractValue, setContractValue] = useState(10_000_000_000); // 도급액 (기본 100억)
-  const [daysSaved, setDaysSaved] = useState(14); // 야간작업으로 단축 가능한 공기(일)
+  const [mode, setMode] = useState<MapMode>("place");
+  const [boundaryPoints, setBoundaryPoints] = useState<LatLng[]>([]);
+  const [boundaryClosed, setBoundaryClosed] = useState(false);
+
+  const [contractValue, setContractValue] = useState(10_000_000_000);
+  const [daysSaved, setDaysSaved] = useState(14);
+
+  const [mapReady, setMapReady] = useState(false);
+  const [mapError, setMapError] = useState<string | null>(null);
+  const [checkoutOpen, setCheckoutOpen] = useState(false);
 
   selectedDiameterRef.current = selectedDiameter;
   rotationRef.current = rotation;
+  modeRef.current = mode;
+  boundaryClosedRef.current = boundaryClosed;
 
+  // 구글맵 로드 & 초기화
   useEffect(() => {
-    const leafletWindow = window as LeafletWindow;
+    if (!mapsKey) {
+      setMapError("구글맵 API 키가 없습니다. .env 의 NEXT_PUBLIC_GOOGLE_MAPS_API_KEY 를 확인하세요.");
+      return;
+    }
 
-    const ensureLeafletCss = () => {
-      if (document.querySelector('link[data-leaflet="true"]')) return;
-
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
-      link.dataset.leaflet = "true";
-      document.head.appendChild(link);
-    };
-
-    const loadLeafletScript = () => {
-      return new Promise<void>((resolve, reject) => {
-        if (leafletWindow.L) {
+    const loadGoogleMaps = () =>
+      new Promise<void>((resolve, reject) => {
+        const w = window as any;
+        if (w.google?.maps) {
           resolve();
           return;
         }
-
         const existing = document.querySelector<HTMLScriptElement>(
-          'script[data-leaflet="true"]'
+          'script[data-gmaps="true"]'
         );
-
         if (existing) {
           existing.addEventListener("load", () => resolve());
           existing.addEventListener("error", () => reject());
           return;
         }
-
-        const script = document.createElement("script");
-        script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
-        script.async = true;
-        script.dataset.leaflet = "true";
-        script.onload = () => resolve();
-        script.onerror = () => reject(new Error("Leaflet load failed"));
-        document.body.appendChild(script);
-      });
-    };
-
-    const initMap = async () => {
-      ensureLeafletCss();
-      await loadLeafletScript();
-
-      if (!mapElRef.current || mapRef.current || !leafletWindow.L) return;
-
-      const L = leafletWindow.L;
-
-      const map = L.map(mapElRef.current, {
-        center: [DEFAULT_SITE_LAT, DEFAULT_SITE_LNG],
-        zoom: 18,
-        zoomControl: false,
-        attributionControl: true,
+        const s = document.createElement("script");
+        s.src = `https://maps.googleapis.com/maps/api/js?key=${mapsKey}&v=weekly`;
+        s.async = true;
+        s.defer = true;
+        s.dataset.gmaps = "true";
+        s.onload = () => resolve();
+        s.onerror = () => reject(new Error("Google Maps load failed"));
+        document.head.appendChild(s);
       });
 
-      L.control.zoom({ position: "bottomright" }).addTo(map);
+    const init = async () => {
+      try {
+        await loadGoogleMaps();
+        const g = (window as any).google;
+        if (!mapElRef.current || mapRef.current || !g?.maps) return;
 
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 20,
-        attribution: "© OpenStreetMap",
-      }).addTo(map);
-
-      const layer = L.layerGroup().addTo(map);
-
-      const originIcon = L.divIcon({
-        className: styles.originMarker,
-        html: `<span>출발지</span>`,
-        iconSize: [64, 34],
-        iconAnchor: [32, 17],
-      });
-
-      L.marker([ORIGIN_LAT, ORIGIN_LNG], { icon: originIcon })
-        .addTo(map)
-        .bindPopup(`${ORIGIN_NAME}<br/>운송 출발 기준점`);
-
-      map.on("click", (event: any) => {
-        const diameter = selectedDiameterRef.current;
-        const angle = rotationRef.current;
-
-        setSiteCenter({
-          lat: event.latlng.lat,
-          lng: event.latlng.lng,
+        const map = new g.maps.Map(mapElRef.current, {
+          center: { lat: DEFAULT_SITE_LAT, lng: DEFAULT_SITE_LNG },
+          zoom: 18,
+          mapTypeId: "hybrid",
+          tilt: 0,
+          gestureHandling: "greedy",
+          streetViewControl: false,
+          fullscreenControl: false,
+          mapTypeControl: true,
         });
 
-        setPlacedCanopies((prev) => [
-          ...prev,
-          {
-            id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
-            diameter,
-            lat: event.latlng.lat,
-            lng: event.latlng.lng,
-            rotation: angle,
+        // 출발지 마커
+        new g.maps.Marker({
+          position: { lat: ORIGIN_LAT, lng: ORIGIN_LNG },
+          map,
+          title: `${ORIGIN_NAME} · 운송 출발 기준점`,
+          icon: {
+            path: g.maps.SymbolPath.CIRCLE,
+            scale: 7,
+            fillColor: "#2563eb",
+            fillOpacity: 1,
+            strokeColor: "#fff",
+            strokeWeight: 2,
           },
-        ]);
-      });
+        });
 
-      mapRef.current = map;
-      layerRef.current = layer;
-      setMapReady(true);
-    };
+        map.addListener("click", (e: any) => {
+          const ll = { lat: e.latLng.lat(), lng: e.latLng.lng() };
 
-    initMap();
+          if (modeRef.current === "boundary") {
+            if (boundaryClosedRef.current) return;
+            setBoundaryPoints((prev) => [...prev, ll]);
+            return;
+          }
 
-    return () => {
-      if (mapRef.current) {
-        mapRef.current.remove();
-        mapRef.current = null;
-        layerRef.current = null;
+          // place 모드
+          setSiteCenter(ll);
+          setSelectedCanopyId(null);
+          setPlacedCanopies((prev) => [
+            ...prev,
+            {
+              id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+              diameter: selectedDiameterRef.current,
+              lat: ll.lat,
+              lng: ll.lng,
+              rotation: rotationRef.current,
+            },
+          ]);
+        });
+
+        mapRef.current = map;
+        setMapReady(true);
+      } catch (err) {
+        setMapError("구글맵을 불러오지 못했습니다. API 키와 결제/도메인 설정을 확인하세요.");
       }
     };
-  }, []);
 
+    init();
+  }, [mapsKey]);
+
+  // 위험 버퍼 (centroid 기준 확장)
+  const riskZone = useMemo<LatLng[] | null>(() => {
+    if (!boundaryClosed || boundaryPoints.length < 3) return null;
+    const c = centroidOf(boundaryPoints);
+    const proj = makeProjector(c.lat, c.lng);
+    return boundaryPoints.map((p) => {
+      const l = proj.toLocal(p.lat, p.lng);
+      const len = Math.hypot(l.x, l.y) || 1;
+      const ex = l.x + (l.x / len) * NOISE_RISK_MARGIN;
+      const ey = l.y + (l.y / len) * NOISE_RISK_MARGIN;
+      return proj.toLatLng(ex, ey);
+    });
+  }, [boundaryPoints, boundaryClosed]);
+
+  // 추천 조합 (ReLU)
+  const recommendations = useMemo<Recommendation[]>(() => {
+    if (!boundaryClosed) return [];
+    return recommendCombinations(
+      boundaryPoints,
+      rotation,
+      rentalDays,
+      contractValue,
+      daysSaved
+    );
+  }, [boundaryClosed, boundaryPoints, rotation, rentalDays, contractValue, daysSaved]);
+
+  // 오버레이 그리기
   useEffect(() => {
-    const leafletWindow = window as LeafletWindow;
-    if (!mapReady || !leafletWindow.L || !layerRef.current) return;
+    const g = (window as any).google;
+    if (!mapReady || !g?.maps || !mapRef.current) return;
+    const map = mapRef.current;
 
-    const L = leafletWindow.L;
-    layerRef.current.clearLayers();
+    squareShapesRef.current.forEach((s) => s.setMap(null));
+    squareShapesRef.current = [];
+    markersRef.current.forEach((m) => m.setMap(null));
+    markersRef.current = [];
+    if (boundaryShapeRef.current) {
+      boundaryShapeRef.current.setMap(null);
+      boundaryShapeRef.current = null;
+    }
+    if (riskShapeRef.current) {
+      riskShapeRef.current.setMap(null);
+      riskShapeRef.current = null;
+    }
 
+    // 위험 버퍼 (가장 아래)
+    if (riskZone) {
+      riskShapeRef.current = new g.maps.Polygon({
+        paths: riskZone,
+        strokeColor: "#f59e0b",
+        strokeOpacity: 0.9,
+        strokeWeight: 2,
+        fillColor: "#f59e0b",
+        fillOpacity: 0.12,
+        clickable: false,
+        zIndex: 0,
+        map,
+      });
+    }
+
+    // 현장 경계
+    if (boundaryPoints.length > 0) {
+      boundaryShapeRef.current = new g.maps.Polygon({
+        paths: boundaryPoints,
+        strokeColor: "#dc2626",
+        strokeOpacity: 0.95,
+        strokeWeight: 2,
+        fillColor: "#dc2626",
+        fillOpacity: boundaryClosed ? 0.08 : 0.04,
+        clickable: false,
+        zIndex: 1,
+        map,
+      });
+    }
+
+    // 캐노피 정사각형
     placedCanopies.forEach((canopy, index) => {
-      const option = CANOPY_OPTIONS[canopy.diameter];
-
+      const selected = canopy.id === selectedCanopyId;
       const color =
         canopy.diameter === 100
           ? "#1f2937"
@@ -385,172 +825,124 @@ export default function CanopyPage() {
               ? "#6b7280"
               : "#9ca3af";
 
-      const corners = getSquareCorners(
+      const path = getSquareCorners(
         canopy.lat,
         canopy.lng,
         canopy.diameter,
         canopy.rotation
-      );
+      ).map(([lat, lng]) => ({ lat, lng }));
 
-      const square = L.polygon(corners, {
-        color,
-        weight: 2,
-        fillColor: color,
-        fillOpacity: 0.22,
-      }).addTo(layerRef.current);
-
-      square.bindPopup(`
-        <b>${option.name} 방음 캐노피</b><br/>
-        한 변 ${canopy.diameter}m · 커버 ${formatNumber(option.area)}㎡<br/>
-        회전 ${canopy.rotation}°<br/>
-        예상 저감 ${option.noiseReduction}<br/>
-        설치 ${option.installDays}일 · 철거 ${option.removalDays}일
-      `);
-
-      const labelIcon = L.divIcon({
-        className: styles.canopyMarker,
-        html: `<span>${index + 1}</span><strong>${canopy.diameter}m</strong>`,
-        iconSize: [70, 36],
-        iconAnchor: [35, 18],
+      const poly = new g.maps.Polygon({
+        paths: path,
+        strokeColor: selected ? "#2563eb" : color,
+        strokeOpacity: 1,
+        strokeWeight: selected ? 3 : 2,
+        fillColor: selected ? "#3b82f6" : color,
+        fillOpacity: 0.28,
+        clickable: mode === "place",
+        zIndex: selected ? 5 : 2,
+        map,
       });
+      poly.addListener("click", (e: any) => {
+        if (e && typeof e.stop === "function") e.stop();
+        setSelectedCanopyId(canopy.id);
+      });
+      squareShapesRef.current.push(poly);
 
-      L.marker([canopy.lat, canopy.lng], { icon: labelIcon }).addTo(
-        layerRef.current
-      );
+      const marker = new g.maps.Marker({
+        position: { lat: canopy.lat, lng: canopy.lng },
+        map,
+        label: { text: `${index + 1}`, color: "#fff", fontSize: "11px", fontWeight: "700" },
+        icon: {
+          path: g.maps.SymbolPath.CIRCLE,
+          scale: 10,
+          fillColor: selected ? "#2563eb" : "#191f28",
+          fillOpacity: 1,
+          strokeColor: "#fff",
+          strokeWeight: 2,
+        },
+        clickable: mode === "place",
+      });
+      marker.addListener("click", () => setSelectedCanopyId(canopy.id));
+      markersRef.current.push(marker);
     });
-  }, [placedCanopies, mapReady]);
+  }, [
+    mapReady,
+    placedCanopies,
+    selectedCanopyId,
+    boundaryPoints,
+    boundaryClosed,
+    riskZone,
+    mode,
+  ]);
 
-  const quote = useMemo(() => {
-    const distanceKm = getDistanceKm(
-      ORIGIN_LAT,
-      ORIGIN_LNG,
-      siteCenter.lat,
-      siteCenter.lng
-    );
+  const quote = useMemo(
+    () => buildQuote(placedCanopies, rentalDays, siteCenter),
+    [placedCanopies, rentalDays, siteCenter]
+  );
 
-    const equipmentCost = placedCanopies.reduce((sum, item) => {
-      const option = CANOPY_OPTIONS[item.diameter];
-
-      return (
-        sum +
-        option.installCost +
-        option.removalCost +
-        option.dailyRental * rentalDays
-      );
-    }, 0);
-
-    const totalArea = placedCanopies.reduce((sum, item) => {
-      return sum + CANOPY_OPTIONS[item.diameter].area;
-    }, 0);
-
-    const largestDiameter = placedCanopies.reduce<CanopySize>((max, item) => {
-      return item.diameter > max ? item.diameter : max;
-    }, 10);
-
-    const largestOption = CANOPY_OPTIONS[largestDiameter];
-
-    const transportCost =
-      placedCanopies.length === 0
-        ? 0
-        : Math.round(520_000 + distanceKm * 38_000);
-
-    const largeEquipmentSurcharge =
-      placedCanopies.filter((item) => item.diameter === 100).length * 4_800_000 +
-      placedCanopies.filter((item) => item.diameter === 40).length * 1_600_000;
-
-    const soundMonitoringCost = placedCanopies.length > 0 ? 1_300_000 : 0;
-    const safetyPlanCost =
-      placedCanopies.length > 0 ? 900_000 + largestDiameter * 42_000 : 0;
-
-    const subtotal =
-      equipmentCost +
-      transportCost +
-      largeEquipmentSurcharge +
-      soundMonitoringCost +
-      safetyPlanCost;
-
-    const vat = Math.round(subtotal * 0.1);
-    const total = subtotal + vat;
-
-    const quantityDays = Math.max(0, placedCanopies.length - 1) * 0.4;
-    const installDays =
-      placedCanopies.length === 0
-        ? 0
-        : Math.ceil(largestOption.installDays + quantityDays);
-
-    const removalDays =
-      placedCanopies.length === 0 ? 0 : Math.ceil(largestOption.removalDays);
-
-    const transportHours =
-      placedCanopies.length === 0
-        ? 0
-        : Math.max(3, Math.ceil(distanceKm / 28 + (largestDiameter >= 100 ? 10 : 4)));
-
-    const today = new Date();
-    const arrivalDate = addDays(today, transportHours > 10 ? 1 : 0);
-    const installFinishDate = addDays(arrivalDate, installDays);
-    const removalFinishDate = addDays(installFinishDate, rentalDays + removalDays);
-
-    return {
-      distanceKm,
-      equipmentCost,
-      transportCost,
-      largeEquipmentSurcharge,
-      soundMonitoringCost,
-      safetyPlanCost,
-      subtotal,
-      vat,
-      total,
-      totalArea,
-      largestDiameter,
-      largestOption,
-      installDays,
-      removalDays,
-      transportHours,
-      arrivalDate,
-      installFinishDate,
-      removalFinishDate,
-    };
-  }, [placedCanopies, rentalDays, siteCenter]);
-
-  // 건설사 입장의 가치(ROI) 계산
-  const value = useMemo(() => {
-    const dailyDelayPenalty = contractValue * DELAY_PENALTY_RATE; // 일 지체상금
-    const dailyOverhead = contractValue * OVERHEAD_RATE_PER_DAY; // 일 현장 고정 간접비(추정)
-
-    const delayAvoidance = dailyDelayPenalty * daysSaved; // 지체상금 회피 가능액
-    const overheadSaving = dailyOverhead * daysSaved; // 간접비 절감액
-    const totalBenefit = delayAvoidance + overheadSaving; // 총 가치
-
-    const cost = quote.total; // CanopyShield 견적(VAT 포함)
-    const netValue = totalBenefit - cost; // 순가치
-    const roiMultiple = cost > 0 ? totalBenefit / cost : 0; // 견적 대비 가치 배수
-
-    // 견적이 하루 지체상금으로 회수되는 데 걸리는 일수
-    const paybackDays =
-      dailyDelayPenalty > 0 ? cost / dailyDelayPenalty : 0;
-
-    return {
-      dailyDelayPenalty,
-      dailyOverhead,
-      delayAvoidance,
-      overheadSaving,
-      totalBenefit,
-      cost,
-      netValue,
-      roiMultiple,
-      paybackDays,
-    };
-  }, [contractValue, daysSaved, quote.total]);
+  const value = useMemo(
+    () => buildValue(quote.total, contractValue, daysSaved),
+    [quote.total, contractValue, daysSaved]
+  );
 
   const selectedOption = CANOPY_OPTIONS[selectedDiameter];
+  const selectedCanopy =
+    placedCanopies.find((c) => c.id === selectedCanopyId) ?? null;
+
+  // 각도 슬라이더: 선택된 캐노피가 있으면 그 캐노피를, 없으면 기본 배치 각도를 편집
+  const angleValue = selectedCanopy ? selectedCanopy.rotation : rotation;
+  const onAngleChange = (val: number) => {
+    if (selectedCanopy) {
+      setPlacedCanopies((prev) =>
+        prev.map((c) =>
+          c.id === selectedCanopy.id ? { ...c, rotation: val } : c
+        )
+      );
+    } else {
+      setRotation(val);
+    }
+  };
 
   const removeCanopy = (id: string) => {
     setPlacedCanopies((prev) => prev.filter((item) => item.id !== id));
+    setSelectedCanopyId((cur) => (cur === id ? null : cur));
   };
 
   const resetPlan = () => {
     setPlacedCanopies([]);
+    setSelectedCanopyId(null);
+  };
+
+  const startBoundary = () => {
+    setMode("boundary");
+    setBoundaryClosed(false);
+    setBoundaryPoints([]);
+    setSelectedCanopyId(null);
+  };
+
+  const finishBoundary = () => {
+    if (boundaryPoints.length >= 3) setBoundaryClosed(true);
+  };
+
+  const clearBoundary = () => {
+    setBoundaryPoints([]);
+    setBoundaryClosed(false);
+    setMode("place");
+  };
+
+  const applyRecommendation = (rec: Recommendation) => {
+    setPlacedCanopies(
+      rec.placements.map((p, i) => ({
+        ...p,
+        id: `applied-${Date.now()}-${i}`,
+      }))
+    );
+    setSelectedCanopyId(null);
+    setMode("place");
+    if (rec.placements.length > 0) {
+      setSiteCenter({ lat: rec.placements[0].lat, lng: rec.placements[0].lng });
+    }
   };
 
   return (
@@ -558,22 +950,19 @@ export default function CanopyPage() {
       <section className={styles.hero}>
         <div className={styles.heroCopy}>
           <p className={styles.eyebrow}>Construction noise control platform</p>
-
           <h1>
             야간 공사를 멈추게 하는 소음,
             <br />
             에어돔으로 덮어 줄입니다.
           </h1>
-
           <p className={styles.heroText}>
             터파기 구역 위에 임시 방음 캐노피를 씌워 상부로 새는 굴착 소음을
-            낮춥니다. 지도에서 현장을 지정하고, 필요한 캐노피 조합과 견적을
-            바로 확인하세요.
+            낮춥니다. 지도에서 현장 경계를 찍으면 민원 위험 범위와 캐노피
+            조합 추천, 건설사 이득까지 한 번에 확인하세요.
           </p>
-
           <div className={styles.heroActions}>
             <a href="#estimate" className={styles.darkButton}>
-              견적 계산하기
+              지도에서 시작하기
             </a>
             <a href="#how" className={styles.lightButton}>
               작동 방식 보기
@@ -599,16 +988,12 @@ export default function CanopyPage() {
           <p className={styles.eyebrow}>Problem</p>
           <h2>방음벽을 세워도, 소리는 위로 빠져나갑니다.</h2>
         </div>
-
         <div className={styles.problemGrid}>
           <article>
             <span>01</span>
             <strong>야간 작업 제한</strong>
-            <p>
-              굴착, 상차, 장비 후진음, 암반 접촉음은 야간 민원으로 바로 이어집니다.
-            </p>
+            <p>굴착, 상차, 장비 후진음, 암반 접촉음은 야간 민원으로 바로 이어집니다.</p>
           </article>
-
           <article>
             <span>02</span>
             <strong>상부 개방 문제</strong>
@@ -617,7 +1002,6 @@ export default function CanopyPage() {
               위로 퍼지는 소음에는 한계가 있습니다.
             </p>
           </article>
-
           <article>
             <span>03</span>
             <strong>현장별 다른 조건</strong>
@@ -635,7 +1019,6 @@ export default function CanopyPage() {
           <div className={styles.matteDomeMini} />
           <div className={styles.matteRing} />
         </div>
-
         <div className={styles.solutionCopy}>
           <p className={styles.eyebrow}>Solution</p>
           <h2>공사 구역을 덮는 임시 방음 캐노피 대여</h2>
@@ -644,267 +1027,347 @@ export default function CanopyPage() {
             덮을 수 있습니다. 현장 위에 임시 돔을 만들고, 하부 스커트와 출입부,
             송풍기, 소음 모니터링을 함께 구성해 야간 작업 가능성을 검토합니다.
           </p>
-
           <div className={styles.solutionList}>
             <div>
-              <strong>지도 기반 배치</strong>
-              <span>직경별 캐노피를 현장 지도 위에 겹쳐 커버 범위 확인</span>
+              <strong>현장 경계 드로잉</strong>
+              <span>지도에 경계를 찍으면 민원 위험 범위를 즉시 표시</span>
             </div>
             <div>
-              <strong>즉시 견적</strong>
-              <span>운송거리, 설치기간, 임대일수, 규격 조합으로 비용 계산</span>
+              <strong>ReLU 조합 추천</strong>
+              <span>커버·비용·낭비를 ReLU 손실로 최소화한 캐노피 조합 제안</span>
             </div>
             <div>
-              <strong>소음 테스트</strong>
-              <span>설치 후 내외부 소음계 측정으로 야간 작업 가능성 판단</span>
+              <strong>건설사 이득 확인</strong>
+              <span>조합별 지체상금 회피·간접비 절감을 바로 비교</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="estimate" className={styles.estimateSection}>
-        <div className={styles.sectionTitle}>
-          <p className={styles.eyebrow}>Estimate</p>
-          <h2>실제 지도 위에서 캐노피를 배치하세요.</h2>
-          <p>
-            지도를 확대해 현장 위치를 찾고 클릭하면 선택한 규격의 정사각형
-            캐노피가 추가됩니다. 정사각형은 실제 미터 단위 한 변 길이로
-            표시되며, 설정한 각도로 회전됩니다.
-          </p>
-        </div>
+      {/* ───── 풀스크린 지도 + 떠 있는 섬 패널 ───── */}
+      <section id="estimate" className={styles.mapStage}>
+        <div ref={mapElRef} className={styles.mapFull} />
 
-        <div className={styles.estimateLayout}>
-          <aside className={styles.controlPanel}>
-            <div className={styles.panelBlock}>
-              <p className={styles.panelLabel}>캐노피 규격</p>
-
-              <div className={styles.sizeGrid}>
-                {SIZE_KEYS.map((diameter) => {
-                  const option = CANOPY_OPTIONS[diameter];
-                  const active = selectedDiameter === diameter;
-
-                  return (
-                    <button
-                      key={diameter}
-                      type="button"
-                      className={`${styles.sizeButton} ${
-                        active ? styles.activeSizeButton : ""
-                      }`}
-                      onClick={() => setSelectedDiameter(diameter)}
-                    >
-                      <strong>{option.name}</strong>
-                      <span>{option.label}</span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            <div className={styles.panelBlock}>
-              <div className={styles.rangeHeader}>
-                <p className={styles.panelLabel}>배치 회전 각도</p>
-                <strong>{rotation}°</strong>
-              </div>
-
-              <input
-                className={styles.range}
-                type="range"
-                min={0}
-                max={90}
-                value={rotation}
-                onChange={(event) => setRotation(Number(event.target.value))}
-              />
-
-              <p className={styles.helpText}>
-                지도를 클릭하면 이 각도로 정사각형 캐노피가 배치됩니다. 도로·현장
-                경계선에 맞춰 회전하세요. (배치된 각 캐노피는 클릭 당시 각도를 유지)
-              </p>
-            </div>
-
-            <div className={styles.panelBlock}>
-              <p className={styles.panelLabel}>선택 규격 정보</p>
-
-              <div className={styles.infoGrid}>
-                <div>
-                  <span>커버 면적</span>
-                  <strong>{formatNumber(selectedOption.area)}㎡</strong>
-                </div>
-                <div>
-                  <span>막재 표면적</span>
-                  <strong>{formatNumber(selectedOption.membraneArea)}㎡</strong>
-                </div>
-                <div>
-                  <span>설치 기간</span>
-                  <strong>{selectedOption.installDays}일</strong>
-                </div>
-                <div>
-                  <span>소음 저감</span>
-                  <strong>{selectedOption.noiseReduction}</strong>
-                </div>
-                <div>
-                  <span>작업 인원</span>
-                  <strong>{selectedOption.crew}</strong>
-                </div>
-                <div>
-                  <span>일 임대료</span>
-                  <strong>{formatKRW(selectedOption.dailyRental)}</strong>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.panelBlock}>
-              <div className={styles.rangeHeader}>
-                <p className={styles.panelLabel}>임대 기간</p>
-                <strong>{rentalDays}일</strong>
-              </div>
-
-              <input
-                className={styles.range}
-                type="range"
-                min={1}
-                max={60}
-                value={rentalDays}
-                onChange={(event) => setRentalDays(Number(event.target.value))}
-              />
-
-              <p className={styles.helpText}>
-                설치 완료 후 실제 사용 기간 기준으로 계산됩니다.
-              </p>
-            </div>
-
-            <div className={styles.panelBlock}>
-              <p className={styles.panelLabel}>배치된 캐노피</p>
-
-              {placedCanopies.length === 0 ? (
-                <p className={styles.emptyText}>
-                  아직 배치된 캐노피가 없습니다. 지도에서 공사 영역 중심을 클릭하세요.
-                </p>
-              ) : (
-                <div className={styles.placedList}>
-                  {placedCanopies.map((item, index) => {
-                    const option = CANOPY_OPTIONS[item.diameter];
-
-                    return (
-                      <button
-                        key={item.id}
-                        type="button"
-                        className={styles.placedItem}
-                        onClick={() => removeCanopy(item.id)}
-                      >
-                        <em>{index + 1}</em>
-                        <span>
-                          <strong>{item.diameter}m 캐노피</strong>
-                          <small>
-                            {formatNumber(option.area)}㎡ · {option.noiseReduction} ·{" "}
-                            {item.rotation}°
-                          </small>
-                        </span>
-                        <b>삭제</b>
-                      </button>
-                    );
-                  })}
-                </div>
-              )}
-
-              <button type="button" className={styles.resetButton} onClick={resetPlan}>
-                전체 초기화
-              </button>
-            </div>
-          </aside>
-
-          <section className={styles.mapCard}>
-            <div className={styles.mapHeader}>
-              <div>
-                <strong>현장 지도</strong>
-                <span>
-                  선택 규격 {selectedDiameter}m · {rotation}° · 클릭해서 배치
-                </span>
-              </div>
-
-              <div className={styles.originBadge}>{ORIGIN_NAME} 출발</div>
-            </div>
-
-            <div ref={mapElRef} className={styles.map} />
-
-            {!mapReady && (
-              <div className={styles.mapLoading}>
+        {(!mapReady || mapError) && (
+          <div className={styles.mapLoadingFull}>
+            {mapError ? <p>{mapError}</p> : (
+              <>
                 <i />
-                실제 지도를 불러오는 중입니다.
-              </div>
+                구글맵을 불러오는 중입니다.
+              </>
             )}
-          </section>
+          </div>
+        )}
 
-          <aside className={styles.quotePanel}>
-            <div className={styles.quoteTop}>
-              <span>예상 견적</span>
-              <strong>{formatKRW(quote.total)}</strong>
-              <p>VAT 포함 · 현장 실측 전 자동 산정값</p>
-            </div>
-
-            <div className={styles.quoteStats}>
-              <div>
-                <span>수량</span>
-                <strong>{placedCanopies.length}개</strong>
-              </div>
-              <div>
-                <span>커버</span>
-                <strong>{formatNumber(quote.totalArea)}㎡</strong>
-              </div>
-              <div>
-                <span>운송</span>
-                <strong>{quote.distanceKm.toFixed(1)}km</strong>
-              </div>
-              <div>
-                <span>설치</span>
-                <strong>{quote.installDays}일</strong>
-              </div>
-            </div>
-
-            <div className={styles.breakdown}>
-              <div>
-                <span>장비·설치·철거</span>
-                <strong>{formatKRW(quote.equipmentCost)}</strong>
-              </div>
-              <div>
-                <span>운송비</span>
-                <strong>{formatKRW(quote.transportCost)}</strong>
-              </div>
-              <div>
-                <span>대형 장비 할증</span>
-                <strong>{formatKRW(quote.largeEquipmentSurcharge)}</strong>
-              </div>
-              <div>
-                <span>소음계·안전계획</span>
-                <strong>
-                  {formatKRW(quote.soundMonitoringCost + quote.safetyPlanCost)}
-                </strong>
-              </div>
-              <div>
-                <span>VAT</span>
-                <strong>{formatKRW(quote.vat)}</strong>
-              </div>
-            </div>
-
+        {/* 왼쪽 섬: 도구 / 규격 / 각도 / 경계 / 추천 */}
+        <aside className={`${styles.island} ${styles.islandLeft}`}>
+          <p className={styles.islandTitle}>도구</p>
+          <div className={styles.modeRow}>
             <button
               type="button"
-              className={styles.checkoutButton}
-              disabled={placedCanopies.length === 0}
-              onClick={() => setCheckoutOpen(true)}
+              className={`${styles.toolButton} ${mode === "place" ? styles.toolButtonActive : ""}`}
+              onClick={() => setMode("place")}
             >
-              동의하고 결제페이지로 이동
+              캐노피 배치
             </button>
-          </aside>
+            <button
+              type="button"
+              className={`${styles.toolButton} ${mode === "boundary" ? styles.toolButtonActive : ""}`}
+              onClick={startBoundary}
+            >
+              현장 경계 그리기
+            </button>
+          </div>
+
+          {mode === "boundary" && (
+            <div className={styles.selectedBox}>
+              <p className={styles.valueHelp}>
+                지도를 클릭해 현장 경계 꼭짓점을 찍으세요. 3점 이상에서 완성할 수
+                있습니다. (현재 {boundaryPoints.length}점)
+              </p>
+              <div className={styles.modeRow} style={{ marginTop: 10, marginBottom: 0 }}>
+                <button
+                  type="button"
+                  className={styles.miniButton}
+                  disabled={boundaryPoints.length < 3}
+                  onClick={finishBoundary}
+                >
+                  경계 완성
+                </button>
+                <button
+                  type="button"
+                  className={`${styles.miniButton} ${styles.dangerButton}`}
+                  onClick={clearBoundary}
+                >
+                  경계 지우기
+                </button>
+              </div>
+            </div>
+          )}
+
+          <p className={styles.islandTitle} style={{ marginTop: 18 }}>
+            캐노피 규격
+          </p>
+          <div className={styles.sizeGrid}>
+            {SIZE_KEYS.map((diameter) => {
+              const option = CANOPY_OPTIONS[diameter];
+              const active = selectedDiameter === diameter;
+              return (
+                <button
+                  key={diameter}
+                  type="button"
+                  className={`${styles.sizeButton} ${active ? styles.activeSizeButton : ""}`}
+                  onClick={() => setSelectedDiameter(diameter)}
+                >
+                  <strong>{option.name}</strong>
+                  <span>{option.label}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          <div style={{ marginTop: 18 }}>
+            <div className={styles.rangeHeader}>
+              <p className={styles.panelLabel}>
+                {selectedCanopy ? "선택 캐노피 각도" : "기본 배치 각도"}
+              </p>
+              <strong>{angleValue}°</strong>
+            </div>
+            <input
+              className={styles.range}
+              type="range"
+              min={0}
+              max={90}
+              value={angleValue}
+              onChange={(e) => onAngleChange(Number(e.target.value))}
+            />
+            <p className={styles.helpText}>
+              {selectedCanopy
+                ? `#${placedCanopies.findIndex((c) => c.id === selectedCanopy.id) + 1} 캐노피의 각도를 조절합니다.`
+                : "새로 배치할 캐노피에 적용됩니다. 배치된 캐노피를 클릭하면 개별 각도를 수정할 수 있어요."}
+            </p>
+
+            {selectedCanopy && (
+              <div className={styles.modeRow} style={{ marginTop: 10, marginBottom: 0 }}>
+                <button
+                  type="button"
+                  className={styles.miniButton}
+                  onClick={() => setSelectedCanopyId(null)}
+                >
+                  선택 해제
+                </button>
+                <button
+                  type="button"
+                  className={`${styles.miniButton} ${styles.dangerButton}`}
+                  onClick={() => removeCanopy(selectedCanopy.id)}
+                >
+                  이 캐노피 삭제
+                </button>
+              </div>
+            )}
+          </div>
+
+          {boundaryClosed && (
+            <>
+              <p className={styles.islandTitle} style={{ marginTop: 22 }}>
+                ReLU 조합 추천 · 현장 {formatNumber(Math.round(recommendations[0]?.siteArea ?? 0))}㎡
+              </p>
+              {recommendations.length === 0 ? (
+                <p className={styles.helpText}>
+                  추천을 계산할 수 없습니다. 경계를 더 넓게 그려보세요.
+                </p>
+              ) : (
+                recommendations.map((rec, i) => (
+                  <div key={rec.id} className={styles.recCard}>
+                    <div className={styles.recHead}>
+                      <span className={`${styles.recBadge} ${i > 0 ? styles.recBadgeAlt : ""}`}>
+                        {rec.label}
+                      </span>
+                      <span className={styles.recRoi}>ROI {rec.roi.toFixed(1)}배</span>
+                    </div>
+                    <p className={styles.recMix}>{rec.sizeMix || "—"}</p>
+                    <p className={styles.helpText} style={{ marginTop: 4 }}>{rec.note}</p>
+                    <div className={styles.recStats}>
+                      <div>
+                        <span>커버율</span>
+                        <strong>{Math.round(rec.coveragePct * 100)}%</strong>
+                      </div>
+                      <div>
+                        <span>견적</span>
+                        <strong>{formatKRW(rec.cost)}</strong>
+                      </div>
+                      <div>
+                        <span>건설사 순가치</span>
+                        <strong className={rec.netValue >= 0 ? styles.recRoi : styles.netNegative}>
+                          {formatSignedKRW(rec.netValue)}
+                        </strong>
+                      </div>
+                      <div>
+                        <span>총 가치</span>
+                        <strong>{formatKRW(rec.totalBenefit)}</strong>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      className={styles.recApply}
+                      onClick={() => applyRecommendation(rec)}
+                    >
+                      이 조합 지도에 적용
+                    </button>
+                  </div>
+                ))
+              )}
+            </>
+          )}
+
+          <p className={styles.islandTitle} style={{ marginTop: 22 }}>
+            배치된 캐노피 ({placedCanopies.length})
+          </p>
+          {placedCanopies.length === 0 ? (
+            <p className={styles.emptyText}>
+              지도를 클릭해 캐노피를 배치하거나 위 추천 조합을 적용하세요.
+            </p>
+          ) : (
+            <div className={styles.placedList}>
+              {placedCanopies.map((item, index) => {
+                const option = CANOPY_OPTIONS[item.diameter];
+                const selected = item.id === selectedCanopyId;
+                return (
+                  <button
+                    key={item.id}
+                    type="button"
+                    className={`${styles.placedItem} ${selected ? styles.placedItemActive : ""}`}
+                    onClick={() => setSelectedCanopyId(item.id)}
+                  >
+                    <em>{index + 1}</em>
+                    <span>
+                      <strong>{item.diameter}m 캐노피</strong>
+                      <small>
+                        {formatNumber(option.area)}㎡ · {option.noiseReduction} · {item.rotation}°
+                      </small>
+                    </span>
+                    <b
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        removeCanopy(item.id);
+                      }}
+                    >
+                      삭제
+                    </b>
+                  </button>
+                );
+              })}
+            </div>
+          )}
+          <button type="button" className={styles.resetButton} onClick={resetPlan}>
+            전체 초기화
+          </button>
+        </aside>
+
+        {/* 오른쪽 섬: 견적 + 건설사 가치 */}
+        <aside className={`${styles.island} ${styles.islandRight}`}>
+          <p className={styles.islandTitle}>예상 견적 (VAT 포함)</p>
+          <div className={styles.islandQuoteTotal}>{formatKRW(quote.total)}</div>
+
+          <div className={styles.quoteStats} style={{ marginTop: 14 }}>
+            <div>
+              <span>수량</span>
+              <strong>{placedCanopies.length}개</strong>
+            </div>
+            <div>
+              <span>커버</span>
+              <strong>{formatNumber(quote.totalArea)}㎡</strong>
+            </div>
+            <div>
+              <span>운송</span>
+              <strong>{quote.distanceKm.toFixed(1)}km</strong>
+            </div>
+            <div>
+              <span>설치</span>
+              <strong>{quote.installDays}일</strong>
+            </div>
+          </div>
+
+          <div className={styles.rangeHeader} style={{ marginTop: 18 }}>
+            <p className={styles.panelLabel}>임대 기간</p>
+            <strong>{rentalDays}일</strong>
+          </div>
+          <input
+            className={styles.range}
+            type="range"
+            min={1}
+            max={60}
+            value={rentalDays}
+            onChange={(e) => setRentalDays(Number(e.target.value))}
+          />
+
+          <p className={styles.islandTitle} style={{ marginTop: 20 }}>
+            건설사 가치
+          </p>
+          <div className={styles.compactPreset}>
+            {CONTRACT_PRESETS.map((preset) => (
+              <button
+                key={preset.value}
+                type="button"
+                className={`${contractValue === preset.value ? styles.compactPresetActive : ""}`}
+                onClick={() => setContractValue(preset.value)}
+              >
+                {preset.label}
+              </button>
+            ))}
+          </div>
+          <div className={styles.rangeHeader} style={{ marginTop: 14 }}>
+            <p className={styles.panelLabel}>공기 단축</p>
+            <strong>{daysSaved}일</strong>
+          </div>
+          <input
+            className={styles.range}
+            type="range"
+            min={0}
+            max={30}
+            value={daysSaved}
+            onChange={(e) => setDaysSaved(Number(e.target.value))}
+          />
+
+          <div className={styles.valueGrid} style={{ marginTop: 14 }}>
+            <div>
+              <span>순가치</span>
+              <strong className={value.netValue >= 0 ? styles.netPositive : styles.netNegative}>
+                {placedCanopies.length === 0 ? "견적 필요" : formatSignedKRW(value.netValue)}
+              </strong>
+            </div>
+            <div>
+              <span>견적 대비</span>
+              <strong>{placedCanopies.length === 0 ? "—" : `${value.roiMultiple.toFixed(1)}배`}</strong>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            className={styles.checkoutButton}
+            disabled={placedCanopies.length === 0}
+            onClick={() => setCheckoutOpen(true)}
+          >
+            동의하고 결제페이지로 이동
+          </button>
+        </aside>
+
+        {/* 범례 */}
+        <div className={styles.legend}>
+          <span><i style={{ background: "#6b7280" }} />캐노피</span>
+          <span><i style={{ background: "#dc2626" }} />현장 경계</span>
+          <span><i style={{ background: "#f59e0b" }} />민원 위험 범위</span>
         </div>
       </section>
 
+      {/* 건설사 가치 상세 */}
       <section id="value" className={styles.valueSection}>
         <div className={styles.sectionTitle}>
           <p className={styles.eyebrow}>Value</p>
           <h2>이 견적이 현장에 만들어내는 가치.</h2>
           <p>
             야간 작업이 열리면 공기가 단축됩니다. 단축된 일수만큼 지체상금을
-            피하고 현장 고정비를 아낍니다. 도급액과 단축 가능 일수를 넣어
-            견적 대비 가치를 확인하세요.
+            피하고 현장 고정비를 아낍니다.
           </p>
         </div>
 
@@ -912,29 +1375,20 @@ export default function CanopyPage() {
           <aside className={styles.valueControls}>
             <div className={styles.valueBlock}>
               <p className={styles.valueLabel}>공사 도급액</p>
-
               <div className={styles.presetGrid}>
-                {CONTRACT_PRESETS.map((preset) => {
-                  const active = contractValue === preset.value;
-
-                  return (
-                    <button
-                      key={preset.value}
-                      type="button"
-                      className={`${styles.presetButton} ${
-                        active ? styles.activePreset : ""
-                      }`}
-                      onClick={() => setContractValue(preset.value)}
-                    >
-                      {preset.label}
-                    </button>
-                  );
-                })}
+                {CONTRACT_PRESETS.map((preset) => (
+                  <button
+                    key={preset.value}
+                    type="button"
+                    className={`${styles.presetButton} ${contractValue === preset.value ? styles.activePreset : ""}`}
+                    onClick={() => setContractValue(preset.value)}
+                  >
+                    {preset.label}
+                  </button>
+                ))}
               </div>
-
               <p className={styles.valueHelp}>
-                선택 도급액 기준 일 지체상금(0.1%):{" "}
-                <b>{formatKRW(value.dailyDelayPenalty)}</b>
+                일 지체상금(0.1%): <b>{formatKRW(value.dailyDelayPenalty)}</b>
               </p>
             </div>
 
@@ -943,16 +1397,14 @@ export default function CanopyPage() {
                 <p className={styles.valueLabel}>야간작업 공기 단축</p>
                 <strong>{daysSaved}일</strong>
               </div>
-
               <input
                 className={styles.range}
                 type="range"
                 min={0}
                 max={30}
                 value={daysSaved}
-                onChange={(event) => setDaysSaved(Number(event.target.value))}
+                onChange={(e) => setDaysSaved(Number(e.target.value))}
               />
-
               <p className={styles.valueHelp}>
                 야간 굴착·상차가 가능해져 당길 수 있는 공정 일수입니다.
               </p>
@@ -963,7 +1415,7 @@ export default function CanopyPage() {
               <ul className={styles.valueNotes}>
                 <li>지체상금률 0.1%/일 (국가계약 기준)</li>
                 <li>현장 고정 간접비 0.02%/일 (추정)</li>
-                <li>견적은 위 Estimate 패널 결과 연동</li>
+                <li>견적은 위 지도 결과와 실시간 연동</li>
               </ul>
             </div>
           </aside>
@@ -971,18 +1423,12 @@ export default function CanopyPage() {
           <div className={styles.valueResult}>
             <div className={styles.valueHeadline}>
               <span>순가치 (가치 − 견적)</span>
-              <strong
-                className={
-                  value.netValue >= 0 ? styles.netPositive : styles.netNegative
-                }
-              >
-                {placedCanopies.length === 0
-                  ? "견적 필요"
-                  : formatSignedKRW(value.netValue)}
+              <strong className={value.netValue >= 0 ? styles.netPositive : styles.netNegative}>
+                {placedCanopies.length === 0 ? "견적 필요" : formatSignedKRW(value.netValue)}
               </strong>
               <p>
                 {placedCanopies.length === 0
-                  ? "Estimate에서 캐노피를 먼저 배치하세요."
+                  ? "지도에서 캐노피를 먼저 배치하세요."
                   : `견적 대비 약 ${value.roiMultiple.toFixed(1)}배의 가치`}
               </p>
             </div>
@@ -1002,15 +1448,15 @@ export default function CanopyPage() {
               </div>
               <div>
                 <span>CanopyShield 견적</span>
-                <strong>{formatKRW(value.cost)}</strong>
+                <strong>{formatKRW(quote.total)}</strong>
               </div>
             </div>
 
             <div className={styles.valueFootnote}>
               {value.dailyDelayPenalty > 0 && placedCanopies.length > 0 ? (
                 <p>
-                  이 견적은 <b>하루 지체상금의 약 {value.paybackDays.toFixed(1)}일치</b>
-                  로, 야간작업으로 그만큼만 공기를 당겨도 회수됩니다.
+                  이 견적은 <b>하루 지체상금의 약 {value.paybackDays.toFixed(1)}일치</b>로,
+                  야간작업으로 그만큼만 공기를 당겨도 회수됩니다.
                 </p>
               ) : (
                 <p>도급액과 단축 일수를 조정하면 회수 시점이 갱신됩니다.</p>
@@ -1025,14 +1471,12 @@ export default function CanopyPage() {
           <p className={styles.eyebrow}>Timeline</p>
           <h2>운송부터 철거까지 한 번에 확인합니다.</h2>
         </div>
-
         <div className={styles.timeline}>
           <div>
             <span>01</span>
             <strong>현장 배치 확정</strong>
             <p>지도 기반으로 캐노피 조합, 임대기간, 작업 반경을 확정합니다.</p>
           </div>
-
           <div>
             <span>02</span>
             <strong>{quote.transportHours}시간 내외 운송</strong>
@@ -1041,19 +1485,16 @@ export default function CanopyPage() {
               것으로 계산했습니다.
             </p>
           </div>
-
           <div>
             <span>03</span>
             <strong>{formatDate(quote.installFinishDate)} 설치 완료 예상</strong>
             <p>막재 전개, 하부 고정, 송풍기 연결, 출입부 설치를 진행합니다.</p>
           </div>
-
           <div>
             <span>04</span>
             <strong>소음 측정 후 야간 운영 판단</strong>
             <p>내부·외부 소음계를 배치해 실제 저감량과 민원 리스크를 확인합니다.</p>
           </div>
-
           <div>
             <span>05</span>
             <strong>{formatDate(quote.removalFinishDate)} 철거 완료 예상</strong>
@@ -1067,17 +1508,14 @@ export default function CanopyPage() {
           <p className={styles.eyebrow}>Line-up</p>
           <h2>현장 규모에 맞춰 조합합니다.</h2>
         </div>
-
         <div className={styles.specGrid}>
           {SIZE_KEYS.map((diameter) => {
             const option = CANOPY_OPTIONS[diameter];
-
             return (
               <article key={diameter} className={styles.specCard}>
                 <div className={styles.specShape} />
                 <strong>{option.name}</strong>
                 <p>{option.label}</p>
-
                 <dl>
                   <div>
                     <dt>커버 면적</dt>
@@ -1085,9 +1523,7 @@ export default function CanopyPage() {
                   </div>
                   <div>
                     <dt>설치 / 철거</dt>
-                    <dd>
-                      {option.installDays}일 / {option.removalDays}일
-                    </dd>
+                    <dd>{option.installDays}일 / {option.removalDays}일</dd>
                   </div>
                   <div>
                     <dt>일 임대료</dt>
@@ -1106,7 +1542,7 @@ export default function CanopyPage() {
 
       {checkoutOpen && (
         <div className={styles.modalBackdrop} onClick={() => setCheckoutOpen(false)}>
-          <div className={styles.checkoutModal} onClick={(event) => event.stopPropagation()}>
+          <div className={styles.checkoutModal} onClick={(e) => e.stopPropagation()}>
             <button
               type="button"
               className={styles.closeButton}
@@ -1114,14 +1550,12 @@ export default function CanopyPage() {
             >
               ×
             </button>
-
             <p className={styles.eyebrow}>Checkout preview</p>
             <h2>결제페이지 미리보기</h2>
             <p>
               실제 결제 API는 아직 연결하지 않은 상태입니다. 이후 Toss Payments,
               PortOne, Stripe 등으로 연결할 수 있습니다.
             </p>
-
             <div className={styles.paymentCard}>
               <div>
                 <span>총 예상 금액</span>
@@ -1140,7 +1574,6 @@ export default function CanopyPage() {
                 <strong>현장 실측 후 확정</strong>
               </div>
             </div>
-
             <button type="button" className={styles.payButton}>
               예약금 결제하기
             </button>
