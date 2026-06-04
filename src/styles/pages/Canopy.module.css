@@ -238,6 +238,7 @@
 .problemSection,
 .solutionSection,
 .estimateSection,
+.valueSection,
 .timelineSection,
 .specSection {
   padding: 120px clamp(20px, 6vw, 100px);
@@ -795,6 +796,211 @@
   margin-top: 22px;
 }
 
+/* ───────────── VALUE 섹션 (건설사 가치 계산) ───────────── */
+.valueSection {
+  background: #191f28;
+  color: #ffffff;
+}
+
+.valueSection .eyebrow {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.valueSection .sectionTitle h2 {
+  color: #ffffff;
+}
+
+.valueSection .sectionTitle p:last-child {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.valueLayout {
+  display: grid;
+  grid-template-columns: 380px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.valueControls {
+  padding: 28px;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.valueBlock {
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.valueBlock:first-child {
+  padding-top: 0;
+}
+
+.valueBlock:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.valueLabel {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.valueControls .rangeHeader strong {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.valueControls .range {
+  accent-color: #ffffff;
+}
+
+.presetGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.presetButton {
+  min-height: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.presetButton:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.activePreset {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #191f28;
+}
+
+.valueHelp {
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.valueHelp b {
+  color: #ffffff;
+}
+
+.valueNotes {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.valueResult {
+  padding: 32px;
+  border-radius: 36px;
+  background: #ffffff;
+  color: #191f28;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+}
+
+.valueHeadline {
+  padding: 30px;
+  border-radius: 30px;
+  background: #f8fafc;
+}
+
+.valueHeadline span {
+  display: block;
+  color: #8b95a1;
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.valueHeadline strong {
+  display: block;
+  margin-top: 12px;
+  font-size: clamp(40px, 6vw, 56px);
+  line-height: 1;
+  letter-spacing: -0.075em;
+}
+
+.valueHeadline p {
+  margin: 16px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.netPositive {
+  color: #0f9d58;
+}
+
+.netNegative {
+  color: #d93025;
+}
+
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.valueGrid div {
+  padding: 18px;
+  border-radius: 20px;
+  background: #f8fafc;
+}
+
+.valueGrid span {
+  display: block;
+  color: #8b95a1;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.valueGrid strong {
+  display: block;
+  margin-top: 8px;
+  color: #111827;
+  font-size: 20px;
+  letter-spacing: -0.045em;
+}
+
+.valueFootnote {
+  margin-top: 18px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: #191f28;
+}
+
+.valueFootnote p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.valueFootnote b {
+  color: #ffffff;
+}
+/* ─────────────────────────────────────────────────────── */
+
 .timelineSection {
   background: #f8fafc;
 }
@@ -1055,7 +1261,8 @@
 @media (max-width: 1040px) {
   .hero,
   .solutionSection,
-  .estimateLayout {
+  .estimateLayout,
+  .valueLayout {
     grid-template-columns: 1fr;
   }
 
@@ -1086,6 +1293,7 @@
   .problemSection,
   .solutionSection,
   .estimateSection,
+  .valueSection,
   .timelineSection,
   .specSection {
     padding: 80px 18px;
@@ -1105,7 +1313,9 @@
   }
 
   .controlPanel,
-  .quotePanel {
+  .quotePanel,
+  .valueControls,
+  .valueResult {
     padding: 18px;
     border-radius: 28px;
   }
@@ -1117,7 +1327,9 @@
   .sizeGrid,
   .infoGrid,
   .quoteStats,
-  .specGrid {
+  .specGrid,
+  .presetGrid,
+  .valueGrid {
     grid-template-columns: 1fr;
   }
 

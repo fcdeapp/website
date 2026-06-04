@@ -10,6 +10,8 @@ type CanopyOption = {
   name: string;
   label: string;
   area: number;
+  membraneArea: number;
+  unitAssetCost: number;
   installDays: number;
   removalDays: number;
   installCost: number;
@@ -24,6 +26,7 @@ type PlacedCanopy = {
   diameter: CanopySize;
   lat: number;
   lng: number;
+  rotation: number;
 };
 
 type LeafletWindow = Window & {
@@ -39,17 +42,43 @@ const ORIGIN_LNG = 126.9515;
 const DEFAULT_SITE_LAT = 37.5665;
 const DEFAULT_SITE_LNG = 126.978;
 
+/**
+ * ─────────────────────────────────────────────────────────────────────────
+ * 단가 산정 근거 (사업성 검토용 추정치 — 실제 견적은 막재 등급·차음 사양에 따라 변동)
+ *
+ * 0) 정사각형 배치: 한 변 = 규격(m), 바닥면적 = 한 변²  (지도 위에서 각도 회전 가능)
+ *
+ * 1) 막재 표면적(membraneArea) ≈ 바닥면적 × 2  (반구 근사. 차음용 높이 확보 가정)
+ *
+ * 2) 자재·제작 원가(unitAssetCost) = 막 외피(가공 포함) + 송풍/앵커/에어록/제어
+ *    - 막 외피: ₩40,000~100,000/㎡ (단일막→이중막 / 차음 중량막 범위)
+ *    - 국제 시세 참고: PVC 코팅 폴리에스터 $200~500/㎡, PTFE $400~1,000/㎡ (철골 포함가)
+ *    - 국내 영구형 에어돔 턴키 ₩80~120만/㎡(바닥)보다 낮게 잡은 임대 자산 기준
+ *
+ * 3) 설치/철거비(installCost·removalCost) = 현장 인건비 + 장비(크레인 등) — 운송 별도
+ *    - 숙련 노무 ₩25만/인·일 × 투입 인·일 + 장비비
+ *
+ * 4) 일 임대료(dailyRental) ≈ 자산원가 ÷ 약 125회(유상 가동일) + 정비/마진
+ *    → 감가상각 + 막재 마모 + 운영 마진 반영
+ *
+ * 5) 건설사 가치(아래 VALUE 섹션):
+ *    - 지체상금률 0.1%/일 (국가를 당사자로 하는 계약에 관한 법률 기준)
+ *    - 현장 고정 간접비(추정) ≈ 도급액의 0.02%/일
+ * ─────────────────────────────────────────────────────────────────────────
+ */
 const CANOPY_OPTIONS: Record<CanopySize, CanopyOption> = {
   10: {
     diameter: 10,
     name: "10m",
     label: "소형 굴착 구역",
-    area: Math.round(Math.PI * 5 * 5),
+    area: 10 * 10,
+    membraneArea: 10 * 10 * 2,
+    unitAssetCost: 25_000_000,
     installDays: 1,
     removalDays: 1,
-    installCost: 900_000,
-    removalCost: 500_000,
-    dailyRental: 390_000,
+    installCost: 1_800_000,
+    removalCost: 1_200_000,
+    dailyRental: 200_000,
     crew: "3~5명",
     noiseReduction: "8~12dB",
   },
@@ -57,12 +86,14 @@ const CANOPY_OPTIONS: Record<CanopySize, CanopyOption> = {
     diameter: 20,
     name: "20m",
     label: "굴삭기 1대 작업 구역",
-    area: Math.round(Math.PI * 10 * 10),
+    area: 20 * 20,
+    membraneArea: 20 * 20 * 2,
+    unitAssetCost: 80_000_000,
     installDays: 3,
     removalDays: 1,
-    installCost: 2_400_000,
-    removalCost: 1_300_000,
-    dailyRental: 950_000,
+    installCost: 9_000_000,
+    removalCost: 3_500_000,
+    dailyRental: 650_000,
     crew: "5~8명",
     noiseReduction: "12~18dB",
   },
@@ -70,12 +101,14 @@ const CANOPY_OPTIONS: Record<CanopySize, CanopyOption> = {
     diameter: 40,
     name: "40m",
     label: "중형 터파기 구역",
-    area: Math.round(Math.PI * 20 * 20),
+    area: 40 * 40,
+    membraneArea: 40 * 40 * 2,
+    unitAssetCost: 280_000_000,
     installDays: 7,
     removalDays: 3,
-    installCost: 8_200_000,
-    removalCost: 4_600_000,
-    dailyRental: 2_800_000,
+    installCost: 26_000_000,
+    removalCost: 12_000_000,
+    dailyRental: 2_200_000,
     crew: "8~15명",
     noiseReduction: "15~23dB",
   },
@@ -83,16 +116,29 @@ const CANOPY_OPTIONS: Record<CanopySize, CanopyOption> = {
     diameter: 100,
     name: "100m",
     label: "대형 장기 현장",
-    area: Math.round(Math.PI * 50 * 50),
+    area: 100 * 100,
+    membraneArea: 100 * 100 * 2,
+    unitAssetCost: 1_500_000_000,
     installDays: 24,
     removalDays: 8,
-    installCost: 45_000_000,
-    removalCost: 28_000_000,
-    dailyRental: 14_000_000,
+    installCost: 85_000_000,
+    removalCost: 35_000_000,
+    dailyRental: 12_000_000,
     crew: "20명 이상",
     noiseReduction: "20~30dB",
   },
 };
+
+// 건설사 가치 계산 상수
+const DELAY_PENALTY_RATE = 0.001; // 지체상금률 0.1%/일 (국가계약 기준)
+const OVERHEAD_RATE_PER_DAY = 0.0002; // 현장 고정 간접비 추정 0.02%/일
+
+const CONTRACT_PRESETS: { label: string; value: number }[] = [
+  { label: "10억", value: 1_000_000_000 },
+  { label: "50억", value: 5_000_000_000 },
+  { label: "100억", value: 10_000_000_000 },
+  { label: "500억", value: 50_000_000_000 },
+];
 
 const formatKRW = (value: number) => {
   if (value <= 0) return "0원";
@@ -106,6 +152,13 @@ const formatKRW = (value: number) => {
   }
 
   return `${value.toLocaleString("ko-KR")}원`;
+};
+
+// 음수까지 부호와 함께 표기 (순가치용)
+const formatSignedKRW = (value: number) => {
+  if (value === 0) return "0원";
+  const sign = value > 0 ? "+" : "−";
+  return `${sign}${formatKRW(Math.abs(value))}`;
 };
 
 const formatNumber = (value: number) => value.toLocaleString("ko-KR");
@@ -144,13 +197,47 @@ const getDistanceKm = (
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 };
 
+// 중심점·한 변 길이(m)·회전각(도)로 정사각형 네 꼭짓점의 위경도를 계산
+const METERS_PER_DEG_LAT = 111_320;
+
+const getSquareCorners = (
+  lat: number,
+  lng: number,
+  side: number,
+  rotationDeg: number
+): [number, number][] => {
+  const half = side / 2;
+  const theta = (rotationDeg * Math.PI) / 180;
+  const cos = Math.cos(theta);
+  const sin = Math.sin(theta);
+  const metersPerDegLng = METERS_PER_DEG_LAT * Math.cos((lat * Math.PI) / 180);
+
+  // 회전 전 로컬 오프셋 (동쪽 x, 북쪽 y)
+  const base: [number, number][] = [
+    [-half, -half],
+    [half, -half],
+    [half, half],
+    [-half, half],
+  ];
+
+  return base.map(([x, y]) => {
+    const rx = x * cos - y * sin;
+    const ry = x * sin + y * cos;
+    const dLat = ry / METERS_PER_DEG_LAT;
+    const dLng = rx / metersPerDegLng;
+    return [lat + dLat, lng + dLng] as [number, number];
+  });
+};
+
 export default function CanopyPage() {
   const mapElRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<any>(null);
   const layerRef = useRef<any>(null);
   const selectedDiameterRef = useRef<CanopySize>(20);
+  const rotationRef = useRef<number>(0);
 
   const [selectedDiameter, setSelectedDiameter] = useState<CanopySize>(20);
+  const [rotation, setRotation] = useState(0); // 정사각형 배치 회전 각도(도)
   const [rentalDays, setRentalDays] = useState(7);
   const [placedCanopies, setPlacedCanopies] = useState<PlacedCanopy[]>([]);
   const [siteCenter, setSiteCenter] = useState({
@@ -160,7 +247,12 @@ export default function CanopyPage() {
   const [mapReady, setMapReady] = useState(false);
   const [checkoutOpen, setCheckoutOpen] = useState(false);
 
+  // 건설사 가치 계산 입력값
+  const [contractValue, setContractValue] = useState(10_000_000_000); // 도급액 (기본 100억)
+  const [daysSaved, setDaysSaved] = useState(14); // 야간작업으로 단축 가능한 공기(일)
+
   selectedDiameterRef.current = selectedDiameter;
+  rotationRef.current = rotation;
 
   useEffect(() => {
     const leafletWindow = window as LeafletWindow;
@@ -239,6 +331,7 @@ export default function CanopyPage() {
 
       map.on("click", (event: any) => {
         const diameter = selectedDiameterRef.current;
+        const angle = rotationRef.current;
 
         setSiteCenter({
           lat: event.latlng.lat,
@@ -252,6 +345,7 @@ export default function CanopyPage() {
             diameter,
             lat: event.latlng.lat,
             lng: event.latlng.lng,
+            rotation: angle,
           },
         ]);
       });
@@ -291,17 +385,24 @@ export default function CanopyPage() {
               ? "#6b7280"
               : "#9ca3af";
 
-      const circle = L.circle([canopy.lat, canopy.lng], {
-        radius: canopy.diameter / 2,
+      const corners = getSquareCorners(
+        canopy.lat,
+        canopy.lng,
+        canopy.diameter,
+        canopy.rotation
+      );
+
+      const square = L.polygon(corners, {
         color,
         weight: 2,
         fillColor: color,
         fillOpacity: 0.22,
       }).addTo(layerRef.current);
 
-      circle.bindPopup(`
+      square.bindPopup(`
         <b>${option.name} 방음 캐노피</b><br/>
-        커버 ${formatNumber(option.area)}㎡<br/>
+        한 변 ${canopy.diameter}m · 커버 ${formatNumber(option.area)}㎡<br/>
+        회전 ${canopy.rotation}°<br/>
         예상 저감 ${option.noiseReduction}<br/>
         설치 ${option.installDays}일 · 철거 ${option.removalDays}일
       `);
@@ -411,6 +512,36 @@ export default function CanopyPage() {
       removalFinishDate,
     };
   }, [placedCanopies, rentalDays, siteCenter]);
+
+  // 건설사 입장의 가치(ROI) 계산
+  const value = useMemo(() => {
+    const dailyDelayPenalty = contractValue * DELAY_PENALTY_RATE; // 일 지체상금
+    const dailyOverhead = contractValue * OVERHEAD_RATE_PER_DAY; // 일 현장 고정 간접비(추정)
+
+    const delayAvoidance = dailyDelayPenalty * daysSaved; // 지체상금 회피 가능액
+    const overheadSaving = dailyOverhead * daysSaved; // 간접비 절감액
+    const totalBenefit = delayAvoidance + overheadSaving; // 총 가치
+
+    const cost = quote.total; // CanopyShield 견적(VAT 포함)
+    const netValue = totalBenefit - cost; // 순가치
+    const roiMultiple = cost > 0 ? totalBenefit / cost : 0; // 견적 대비 가치 배수
+
+    // 견적이 하루 지체상금으로 회수되는 데 걸리는 일수
+    const paybackDays =
+      dailyDelayPenalty > 0 ? cost / dailyDelayPenalty : 0;
+
+    return {
+      dailyDelayPenalty,
+      dailyOverhead,
+      delayAvoidance,
+      overheadSaving,
+      totalBenefit,
+      cost,
+      netValue,
+      roiMultiple,
+      paybackDays,
+    };
+  }, [contractValue, daysSaved, quote.total]);
 
   const selectedOption = CANOPY_OPTIONS[selectedDiameter];
 
@@ -536,8 +667,9 @@ export default function CanopyPage() {
           <p className={styles.eyebrow}>Estimate</p>
           <h2>실제 지도 위에서 캐노피를 배치하세요.</h2>
           <p>
-            지도를 확대해 현장 위치를 찾고 클릭하면 선택한 직경의 캐노피가
-            추가됩니다. 원은 실제 미터 단위 반경으로 표시됩니다.
+            지도를 확대해 현장 위치를 찾고 클릭하면 선택한 규격의 정사각형
+            캐노피가 추가됩니다. 정사각형은 실제 미터 단위 한 변 길이로
+            표시되며, 설정한 각도로 회전됩니다.
           </p>
         </div>
 
@@ -569,12 +701,37 @@ export default function CanopyPage() {
             </div>
 
             <div className={styles.panelBlock}>
+              <div className={styles.rangeHeader}>
+                <p className={styles.panelLabel}>배치 회전 각도</p>
+                <strong>{rotation}°</strong>
+              </div>
+
+              <input
+                className={styles.range}
+                type="range"
+                min={0}
+                max={90}
+                value={rotation}
+                onChange={(event) => setRotation(Number(event.target.value))}
+              />
+
+              <p className={styles.helpText}>
+                지도를 클릭하면 이 각도로 정사각형 캐노피가 배치됩니다. 도로·현장
+                경계선에 맞춰 회전하세요. (배치된 각 캐노피는 클릭 당시 각도를 유지)
+              </p>
+            </div>
+
+            <div className={styles.panelBlock}>
               <p className={styles.panelLabel}>선택 규격 정보</p>
 
               <div className={styles.infoGrid}>
                 <div>
                   <span>커버 면적</span>
                   <strong>{formatNumber(selectedOption.area)}㎡</strong>
+                </div>
+                <div>
+                  <span>막재 표면적</span>
+                  <strong>{formatNumber(selectedOption.membraneArea)}㎡</strong>
                 </div>
                 <div>
                   <span>설치 기간</span>
@@ -587,6 +744,10 @@ export default function CanopyPage() {
                 <div>
                   <span>작업 인원</span>
                   <strong>{selectedOption.crew}</strong>
+                </div>
+                <div>
+                  <span>일 임대료</span>
+                  <strong>{formatKRW(selectedOption.dailyRental)}</strong>
                 </div>
               </div>
             </div>
@@ -634,7 +795,8 @@ export default function CanopyPage() {
                         <span>
                           <strong>{item.diameter}m 캐노피</strong>
                           <small>
-                            {formatNumber(option.area)}㎡ · {option.noiseReduction}
+                            {formatNumber(option.area)}㎡ · {option.noiseReduction} ·{" "}
+                            {item.rotation}°
                           </small>
                         </span>
                         <b>삭제</b>
@@ -654,7 +816,9 @@ export default function CanopyPage() {
             <div className={styles.mapHeader}>
               <div>
                 <strong>현장 지도</strong>
-                <span>선택 규격 {selectedDiameter}m · 클릭해서 배치</span>
+                <span>
+                  선택 규격 {selectedDiameter}m · {rotation}° · 클릭해서 배치
+                </span>
               </div>
 
               <div className={styles.originBadge}>{ORIGIN_NAME} 출발</div>
@@ -733,6 +897,129 @@ export default function CanopyPage() {
         </div>
       </section>
 
+      <section id="value" className={styles.valueSection}>
+        <div className={styles.sectionTitle}>
+          <p className={styles.eyebrow}>Value</p>
+          <h2>이 견적이 현장에 만들어내는 가치.</h2>
+          <p>
+            야간 작업이 열리면 공기가 단축됩니다. 단축된 일수만큼 지체상금을
+            피하고 현장 고정비를 아낍니다. 도급액과 단축 가능 일수를 넣어
+            견적 대비 가치를 확인하세요.
+          </p>
+        </div>
+
+        <div className={styles.valueLayout}>
+          <aside className={styles.valueControls}>
+            <div className={styles.valueBlock}>
+              <p className={styles.valueLabel}>공사 도급액</p>
+
+              <div className={styles.presetGrid}>
+                {CONTRACT_PRESETS.map((preset) => {
+                  const active = contractValue === preset.value;
+
+                  return (
+                    <button
+                      key={preset.value}
+                      type="button"
+                      className={`${styles.presetButton} ${
+                        active ? styles.activePreset : ""
+                      }`}
+                      onClick={() => setContractValue(preset.value)}
+                    >
+                      {preset.label}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <p className={styles.valueHelp}>
+                선택 도급액 기준 일 지체상금(0.1%):{" "}
+                <b>{formatKRW(value.dailyDelayPenalty)}</b>
+              </p>
+            </div>
+
+            <div className={styles.valueBlock}>
+              <div className={styles.rangeHeader}>
+                <p className={styles.valueLabel}>야간작업 공기 단축</p>
+                <strong>{daysSaved}일</strong>
+              </div>
+
+              <input
+                className={styles.range}
+                type="range"
+                min={0}
+                max={30}
+                value={daysSaved}
+                onChange={(event) => setDaysSaved(Number(event.target.value))}
+              />
+
+              <p className={styles.valueHelp}>
+                야간 굴착·상차가 가능해져 당길 수 있는 공정 일수입니다.
+              </p>
+            </div>
+
+            <div className={styles.valueBlock}>
+              <p className={styles.valueLabel}>가치 산정 근거</p>
+              <ul className={styles.valueNotes}>
+                <li>지체상금률 0.1%/일 (국가계약 기준)</li>
+                <li>현장 고정 간접비 0.02%/일 (추정)</li>
+                <li>견적은 위 Estimate 패널 결과 연동</li>
+              </ul>
+            </div>
+          </aside>
+
+          <div className={styles.valueResult}>
+            <div className={styles.valueHeadline}>
+              <span>순가치 (가치 − 견적)</span>
+              <strong
+                className={
+                  value.netValue >= 0 ? styles.netPositive : styles.netNegative
+                }
+              >
+                {placedCanopies.length === 0
+                  ? "견적 필요"
+                  : formatSignedKRW(value.netValue)}
+              </strong>
+              <p>
+                {placedCanopies.length === 0
+                  ? "Estimate에서 캐노피를 먼저 배치하세요."
+                  : `견적 대비 약 ${value.roiMultiple.toFixed(1)}배의 가치`}
+              </p>
+            </div>
+
+            <div className={styles.valueGrid}>
+              <div>
+                <span>지체상금 회피</span>
+                <strong>{formatKRW(value.delayAvoidance)}</strong>
+              </div>
+              <div>
+                <span>간접비 절감</span>
+                <strong>{formatKRW(value.overheadSaving)}</strong>
+              </div>
+              <div>
+                <span>총 가치</span>
+                <strong>{formatKRW(value.totalBenefit)}</strong>
+              </div>
+              <div>
+                <span>CanopyShield 견적</span>
+                <strong>{formatKRW(value.cost)}</strong>
+              </div>
+            </div>
+
+            <div className={styles.valueFootnote}>
+              {value.dailyDelayPenalty > 0 && placedCanopies.length > 0 ? (
+                <p>
+                  이 견적은 <b>하루 지체상금의 약 {value.paybackDays.toFixed(1)}일치</b>
+                  로, 야간작업으로 그만큼만 공기를 당겨도 회수됩니다.
+                </p>
+              ) : (
+                <p>도급액과 단축 일수를 조정하면 회수 시점이 갱신됩니다.</p>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className={styles.timelineSection}>
         <div className={styles.sectionTitle}>
           <p className={styles.eyebrow}>Timeline</p>
@@ -797,12 +1084,14 @@ export default function CanopyPage() {
                     <dd>{formatNumber(option.area)}㎡</dd>
                   </div>
                   <div>
-                    <dt>설치</dt>
-                    <dd>{option.installDays}일</dd>
+                    <dt>설치 / 철거</dt>
+                    <dd>
+                      {option.installDays}일 / {option.removalDays}일
+                    </dd>
                   </div>
                   <div>
-                    <dt>철거</dt>
-                    <dd>{option.removalDays}일</dd>
+                    <dt>일 임대료</dt>
+                    <dd>{formatKRW(option.dailyRental)}</dd>
                   </div>
                   <div>
                     <dt>예상 저감</dt>
@@ -841,6 +1130,10 @@ export default function CanopyPage() {
               <div>
                 <span>예약금 10%</span>
                 <strong>{formatKRW(Math.round(quote.total * 0.1))}</strong>
+              </div>
+              <div>
+                <span>야간작업 가치(추정)</span>
+                <strong>{formatKRW(value.totalBenefit)}</strong>
               </div>
               <div>
                 <span>계약 확정</span>
