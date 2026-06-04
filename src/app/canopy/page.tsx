@@ -597,9 +597,8 @@ const recommendCombinations = (
   return chosen.slice(0, 3);
 };
 
-export default function CanopyPage({ apiKey }: { apiKey?: string }) {
-  const mapsKey =
-    apiKey ?? process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
+export default function CanopyPage() {
+  const mapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
 
   const mapElRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<any>(null);
