@@ -2087,28 +2087,24 @@
   }
 }
 
-/* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-   2026-06-04 FINAL FIX: footprint ê·¸ëŒ€ë¡œ Extrudeë˜ëŠ” SVG prism overlay
-   - DOM cube/icon ë°©ì‹ì´ ì•„ë‹ˆë¼ Google Polygonê³¼ ë™ì¼í•œ ë„¤ ê¼­ì§“ì  ì¢Œí‘œë¥¼ projectioní•œ ë’¤
-     bottom/top/side facesë¥¼ SVG polygonìœ¼ë¡œ ì§ì ‘ ê·¸ë¦°ë‹¤.
-   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .hero {
-  grid-template-columns: minmax(0, 0.88fr) minmax(620px, 880px);
+  grid-template-columns: minmax(0, 0.95fr) minmax(520px, 760px);
 }
 
 .heroVisual {
-  width: min(920px, 124%);
-  transform: translateX(-7%) translateY(2%);
+  width: min(780px, 112%);
+  transform: translateX(-2%);
 }
 
 .airDomeImage {
-  left: -32%;
-  bottom: -8%;
-  width: 168%;
+  left: -22%;
+  right: auto;
+  bottom: -2%;
+  width: 144%;
   max-width: none;
   z-index: 2;
-  filter: drop-shadow(0 70px 96px rgba(17, 24, 39, 0.32));
-  transform: rotateX(4deg) rotateY(-8deg) rotateZ(-1deg) scale(1.14);
+  filter: drop-shadow(0 54px 78px rgba(17, 24, 39, 0.28));
+  transform: rotateX(4deg) rotateY(-8deg) rotateZ(-1deg) scale(1.08);
 }
 
 .canopyExtrudeLayer {
@@ -2221,12 +2217,12 @@
   }
 
   .heroVisual {
-    width: min(760px, 112%);
-    transform: translateX(-5%);
+    width: min(620px, 100%);
+    transform: none;
   }
 
   .airDomeImage {
-    left: -22%;
-    width: 146%;
+    left: -12%;
+    width: 124%;
   }
 }
