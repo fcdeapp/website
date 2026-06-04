@@ -811,31 +811,35 @@ const recommendCombinations = (
   return chosen.slice(0, 3);
 };
 
-const createCanopyDomVolumeOverlay = (
+const createCanopyExtrudedPrismOverlay = (
   g: any,
   map: any,
   canopies: PlacedCanopy[],
   selectedCanopyId: string | null,
   classNames: {
-    canopyVolumeLayer: string;
-    canopyCuboid: string;
-    canopyCuboidSelected: string;
-    canopyCuboidBase: string;
-    canopyCuboidTop: string;
-    canopyCuboidNorth: string;
-    canopyCuboidSouth: string;
-    canopyCuboidEast: string;
-    canopyCuboidWest: string;
+    canopyExtrudeLayer: string;
+    canopyExtrudeSvg: string;
+    canopyPrismGroup: string;
+    canopyPrismSelected: string;
+    canopyPrismTop: string;
+    canopyPrismSideFront: string;
+    canopyPrismSideRight: string;
+    canopyPrismSideBack: string;
+    canopyPrismSideLeft: string;
+    canopyPrismFootprint: string;
+    canopyPrismEdge: string;
   },
   onSelect: (id: string) => void
 ) => {
   if (!g?.maps?.OverlayView || !map || canopies.length === 0) return null;
 
+  const SVG_NS = "http://www.w3.org/2000/svg";
   const overlay = new g.maps.OverlayView();
   let root: HTMLDivElement | null = null;
+  let svg: SVGSVGElement | null = null;
   let rafId: number | null = null;
   let startAt = performance.now();
-  const duration = 620;
+  const duration = 680;
 
   const clearFrame = () => {
     if (rafId !== null) {
@@ -852,23 +856,76 @@ const createCanopyDomVolumeOverlay = (
     });
   };
 
-  const getSidePx = (projection: any, canopy: PlacedCanopy) => {
-    const center = new g.maps.LatLng(canopy.lat, canopy.lng);
-    const metersPerDegLng =
-      METERS_PER_DEG_LAT * Math.cos((canopy.lat * Math.PI) / 180);
-    const east = new g.maps.LatLng(
+  const pointsAttr = (pts: { x: number; y: number }[]) =>
+    pts.map((p) => `${p.x.toFixed(2)},${p.y.toFixed(2)}`).join(" ");
+
+  const makePolygon = (
+    pts: { x: number; y: number }[],
+    className: string,
+    parent: SVGGElement
+  ) => {
+    const poly = document.createElementNS(SVG_NS, "polygon");
+    poly.setAttribute("points", pointsAttr(pts));
+    poly.setAttribute("class", className);
+    parent.appendChild(poly);
+    return poly;
+  };
+
+  const makePolyline = (
+    pts: { x: number; y: number }[],
+    className: string,
+    parent: SVGGElement,
+    closed = false
+  ) => {
+    const line = document.createElementNS(SVG_NS, "polyline");
+    const finalPts = closed ? [...pts, pts[0]] : pts;
+    line.setAttribute("points", pointsAttr(finalPts));
+    line.setAttribute("class", className);
+    line.setAttribute("fill", "none");
+    parent.appendChild(line);
+    return line;
+  };
+
+  const getCanopyPixelFootprint = (projection: any, canopy: PlacedCanopy) => {
+    const corners = getSquareCorners(
       canopy.lat,
-      canopy.lng + canopy.diameter / metersPerDegLng
+      canopy.lng,
+      canopy.diameter,
+      canopy.rotation
     );
-    const p1 = projection.fromLatLngToDivPixel(center);
-    const p2 = projection.fromLatLngToDivPixel(east);
-    if (!p1 || !p2) return Math.max(28, canopy.diameter * 2);
-    return Math.max(28, Math.hypot(p2.x - p1.x, p2.y - p1.y));
+
+    const bottom = corners
+      .map(([lat, lng]) => projection.fromLatLngToDivPixel(new g.maps.LatLng(lat, lng)))
+      .filter(Boolean)
+      .map((pt: any) => ({ x: pt.x, y: pt.y }));
+
+    if (bottom.length !== 4) return null;
+
+    const edgeLens = bottom.map((pt, i) => {
+      const next = bottom[(i + 1) % bottom.length];
+      return Math.hypot(next.x - pt.x, next.y - pt.y);
+    });
+    const avgSidePx = edgeLens.reduce((sum, v) => sum + v, 0) / edgeLens.length;
+    const pxPerMeter = avgSidePx / Math.max(1, canopy.diameter);
+    const heightMeters = getCanopyExtrudeHeight(canopy.diameter);
+
+    // 실제 지도 footprint와 같은 네 점에서 시작해 화면 위쪽으로 height만큼 올린다.
+    // 지도 tilt 상태에서는 이 방식이 "현재 보이는 사각형이 그대로 위로 Extrude"되는 결과를 가장 안정적으로 만든다.
+    const rawHeightPx = pxPerMeter * heightMeters;
+    const heightPx = Math.max(18, rawHeightPx * 1.18);
+
+    return { bottom, heightPx, heightMeters };
   };
 
   overlay.onAdd = () => {
     root = document.createElement("div");
-    root.className = classNames.canopyVolumeLayer;
+    root.className = classNames.canopyExtrudeLayer;
+
+    svg = document.createElementNS(SVG_NS, "svg");
+    svg.setAttribute("class", classNames.canopyExtrudeSvg);
+    svg.setAttribute("aria-hidden", "true");
+    root.appendChild(svg);
+
     const panes = overlay.getPanes();
     const pane = panes?.overlayMouseTarget || panes?.overlayLayer;
     pane?.appendChild(root);
@@ -877,60 +934,81 @@ const createCanopyDomVolumeOverlay = (
   };
 
   overlay.draw = () => {
-    if (!root) return;
+    if (!root || !svg) return;
     const projection = overlay.getProjection();
     if (!projection) return;
 
     const raw = Math.min(1, Math.max(0, (performance.now() - startAt) / duration));
     const progress = 1 - Math.pow(1 - raw, 3);
 
-    root.replaceChildren();
+    svg.replaceChildren();
 
-    canopies.forEach((canopy, index) => {
-      const px = projection.fromLatLngToDivPixel(
-        new g.maps.LatLng(canopy.lat, canopy.lng)
-      );
-      if (!px) return;
+    const items = canopies
+      .map((canopy, index) => {
+        const fp = getCanopyPixelFootprint(projection, canopy);
+        if (!fp) return null;
+        const avgY = fp.bottom.reduce((sum, p) => sum + p.y, 0) / fp.bottom.length;
+        return { canopy, index, avgY, ...fp };
+      })
+      .filter(Boolean)
+      // 화면상 뒤쪽에 있는 프리즘부터 그려야 겹쳤을 때 자연스럽다.
+      .sort((a: any, b: any) => a.avgY - b.avgY) as Array<{
+        canopy: PlacedCanopy;
+        index: number;
+        avgY: number;
+        bottom: { x: number; y: number }[];
+        heightPx: number;
+        heightMeters: number;
+      }>;
 
-      const sidePx = getSidePx(projection, canopy);
-      const heightMeters = getCanopyExtrudeHeight(canopy.diameter);
-      const heightPx = Math.max(22, (sidePx / canopy.diameter) * heightMeters * 1.45);
-      const animatedHeightPx = heightPx * progress;
+    items.forEach(({ canopy, index, bottom, heightPx, heightMeters }) => {
+      const h = heightPx * progress;
+      const top = bottom.map((pt) => ({ x: pt.x, y: pt.y - h }));
       const selected = canopy.id === selectedCanopyId;
 
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = selected
-        ? `${classNames.canopyCuboid} ${classNames.canopyCuboidSelected}`
-        : classNames.canopyCuboid;
-      button.setAttribute("aria-label", `${index + 1}번 ${canopy.diameter}m 캐노피 입체 보기`);
-      button.style.left = `${px.x}px`;
-      button.style.top = `${px.y}px`;
-      button.style.setProperty("--side", `${sidePx}px`);
-      button.style.setProperty("--height", `${animatedHeightPx}px`);
-      button.style.setProperty("--rot", `${canopy.rotation}deg`);
-      button.style.setProperty("--delay", `${Math.min(index * 38, 220)}ms`);
-      button.onclick = (e) => {
+      const group = document.createElementNS(SVG_NS, "g");
+      group.setAttribute(
+        "class",
+        selected
+          ? `${classNames.canopyPrismGroup} ${classNames.canopyPrismSelected}`
+          : classNames.canopyPrismGroup
+      );
+      group.setAttribute("role", "button");
+      group.setAttribute("tabindex", "0");
+      group.setAttribute(
+        "aria-label",
+        `${index + 1}번 ${canopy.diameter}m 캐노피: footprint 그대로 ${heightMeters}m 높이로 Extrude`
+      );
+      group.style.setProperty("--prism-delay", `${Math.min(index * 42, 260)}ms`);
+      group.addEventListener("click", (e) => {
         e.preventDefault();
         e.stopPropagation();
         onSelect(canopy.id);
-      };
+      });
+      group.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onSelect(canopy.id);
+        }
+      });
 
-      const base = document.createElement("span");
-      base.className = classNames.canopyCuboidBase;
-      const top = document.createElement("span");
-      top.className = classNames.canopyCuboidTop;
-      const north = document.createElement("span");
-      north.className = classNames.canopyCuboidNorth;
-      const south = document.createElement("span");
-      south.className = classNames.canopyCuboidSouth;
-      const east = document.createElement("span");
-      east.className = classNames.canopyCuboidEast;
-      const west = document.createElement("span");
-      west.className = classNames.canopyCuboidWest;
+      // 밑면은 기존 Google Polygon과 동일한 네 꼭짓점 footprint를 확인용으로 아주 얇게 남긴다.
+      makePolygon(bottom, classNames.canopyPrismFootprint, group);
 
-      button.append(base, north, south, east, west, top);
-      root?.appendChild(button);
+      // side faces: bottom i→i+1에서 top i+1→i로 이어지는 실제 extruded 면.
+      makePolygon([bottom[0], bottom[1], top[1], top[0]], classNames.canopyPrismSideFront, group);
+      makePolygon([bottom[1], bottom[2], top[2], top[1]], classNames.canopyPrismSideRight, group);
+      makePolygon([bottom[2], bottom[3], top[3], top[2]], classNames.canopyPrismSideBack, group);
+      makePolygon([bottom[3], bottom[0], top[0], top[3]], classNames.canopyPrismSideLeft, group);
+
+      // 상단 면도 밑면과 같은 사각형을 위로 올린 것이므로 footprint와 형태가 완전히 같다.
+      makePolygon(top, classNames.canopyPrismTop, group);
+
+      makePolyline(bottom, classNames.canopyPrismEdge, group, true);
+      makePolyline(top, classNames.canopyPrismEdge, group, true);
+      for (let i = 0; i < 4; i++) makePolyline([bottom[i], top[i]], classNames.canopyPrismEdge, group);
+
+      svg?.appendChild(group);
     });
 
     if (raw < 1) requestDraw();
@@ -940,10 +1018,12 @@ const createCanopyDomVolumeOverlay = (
     clearFrame();
     root?.remove();
     root = null;
+    svg = null;
   };
 
   return overlay;
 };
+
 export default function CanopyPage() {
   const mapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
   const mapsMapId = process.env.NEXT_PUBLIC_GOOGLE_MAP_ID ?? "";
@@ -1245,7 +1325,7 @@ export default function CanopyPage() {
 
       const marker = new g.maps.Marker({
         position: { lat: canopy.lat, lng: canopy.lng },
-        map,
+        map: mapView === "threeD" && showCanopyVolume ? null : map,
         label: { text: `${index + 1}`, color: "#fff", fontSize: "11px", fontWeight: "700" },
         icon: {
           path: g.maps.SymbolPath.CIRCLE,
@@ -1263,21 +1343,23 @@ export default function CanopyPage() {
     });
 
     if (mapView === "threeD" && showCanopyVolume && placedCanopies.length > 0) {
-      const volumeOverlay = createCanopyDomVolumeOverlay(
+      const volumeOverlay = createCanopyExtrudedPrismOverlay(
         g,
         map,
         placedCanopies,
         selectedCanopyId,
         {
-          canopyVolumeLayer: styles.canopyVolumeLayer,
-          canopyCuboid: styles.canopyCuboid,
-          canopyCuboidSelected: styles.canopyCuboidSelected,
-          canopyCuboidBase: styles.canopyCuboidBase,
-          canopyCuboidTop: styles.canopyCuboidTop,
-          canopyCuboidNorth: styles.canopyCuboidNorth,
-          canopyCuboidSouth: styles.canopyCuboidSouth,
-          canopyCuboidEast: styles.canopyCuboidEast,
-          canopyCuboidWest: styles.canopyCuboidWest,
+          canopyExtrudeLayer: styles.canopyExtrudeLayer,
+          canopyExtrudeSvg: styles.canopyExtrudeSvg,
+          canopyPrismGroup: styles.canopyPrismGroup,
+          canopyPrismSelected: styles.canopyPrismSelected,
+          canopyPrismTop: styles.canopyPrismTop,
+          canopyPrismSideFront: styles.canopyPrismSideFront,
+          canopyPrismSideRight: styles.canopyPrismSideRight,
+          canopyPrismSideBack: styles.canopyPrismSideBack,
+          canopyPrismSideLeft: styles.canopyPrismSideLeft,
+          canopyPrismFootprint: styles.canopyPrismFootprint,
+          canopyPrismEdge: styles.canopyPrismEdge,
         },
         (id) => setSelectedCanopyId(id)
       );
@@ -1523,7 +1605,7 @@ export default function CanopyPage() {
               title={
                 placedCanopies.length === 0
                   ? "지도에 캐노피를 먼저 배치하세요."
-                  : "현재 지도 위 캐노피를 규격별 높이의 직육면체로 전환"
+                  : "평면 사각형 footprint를 그대로 위로 Extrude해서 입체로 보기"
               }
             >
               입체로 보기
