@@ -7,7 +7,6 @@ import styles from "../../styles/pages/Canopy.module.css";
  * 구글맵 API 키
  * - 클라이언트에서 로드되므로 .env 의 키를 NEXT_PUBLIC_ 로 노출해야 합니다.
  *   예) NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=<GOOGLE_MAPS_API_KEY 값>
- * - 또는 상위 서버 컴포넌트에서 apiKey prop 으로 전달할 수 있습니다.
  */
 
 type CanopySize = 10 | 20 | 40 | 100;
@@ -39,6 +38,7 @@ type PlacedCanopy = {
 };
 
 type MapMode = "place" | "boundary";
+type MapViewMode = "roadmap" | "satellite" | "threeD";
 
 type Recommendation = {
   id: string;
@@ -157,6 +157,10 @@ const CONTRACT_PRESETS: { label: string; value: number }[] = [
   { label: "50억", value: 5_000_000_000 },
   { label: "100억", value: 10_000_000_000 },
   { label: "500억", value: 50_000_000_000 },
+  { label: "1,000억", value: 100_000_000_000 },
+  { label: "3,000억", value: 300_000_000_000 },
+  { label: "5,000억", value: 500_000_000_000 },
+  { label: "1조", value: 1_000_000_000_000 },
 ];
 
 const formatKRW = (value: number) => {
@@ -177,6 +181,51 @@ const formatSignedKRW = (value: number) => {
 };
 
 const formatNumber = (value: number) => value.toLocaleString("ko-KR");
+
+
+const formatContractEokInput = (value: number) => {
+  if (!Number.isFinite(value) || value <= 0) return "";
+  const eok = value / 100_000_000;
+  return Number.isInteger(eok) ? String(eok) : eok.toFixed(1).replace(".0", "");
+};
+
+const parseContractEokInput = (raw: string) => {
+  const cleaned = raw.replace(/[^\d.]/g, "");
+  if (!cleaned) return 0;
+  const eok = Number(cleaned);
+  if (!Number.isFinite(eok)) return 0;
+  return Math.round(eok * 100_000_000);
+};
+
+const getBoundaryArea = (boundary: LatLng[]) => {
+  if (boundary.length < 3) return 0;
+  const c = centroidOf(boundary);
+  const proj = makeProjector(c.lat, c.lng);
+  return shoelaceArea(boundary.map((p) => proj.toLocal(p.lat, p.lng)));
+};
+
+const estimateInputsFromSiteArea = (siteArea: number) => {
+  if (!Number.isFinite(siteArea) || siteArea <= 0) {
+    return { contractValue: 10_000_000_000, daysSaved: 14 };
+  }
+
+  // 사업성 페이지용 자동 추정치입니다.
+  // 도심 굴착·가설·소음관리 조건을 보수적으로 보고 ㎡당 약 320만원을 기준으로 둡니다.
+  const rawContract = siteArea * 3_200_000;
+  const roundedContract = Math.round(rawContract / 100_000_000) * 100_000_000;
+  const contractValue = Math.min(
+    1_000_000_000_000,
+    Math.max(1_000_000_000, roundedContract)
+  );
+
+  // 현장이 커질수록 야간작업 허용 효과가 커진다고 보고 완만하게 증가시킵니다.
+  const daysSaved = Math.min(
+    90,
+    Math.max(3, Math.round(4 + Math.sqrt(siteArea) / 4 + siteArea / 4500))
+  );
+
+  return { contractValue, daysSaved };
+};
 
 const addDays = (base: Date, days: number) => {
   const date = new Date(base);
@@ -607,6 +656,7 @@ export default function CanopyPage() {
   const markersRef = useRef<any[]>([]);
   const boundaryShapeRef = useRef<any>(null);
   const riskShapeRef = useRef<any>(null);
+  const canopy3dOverlaysRef = useRef<any[]>([]);
 
   const selectedDiameterRef = useRef<CanopySize>(20);
   const rotationRef = useRef<number>(0);
@@ -624,11 +674,14 @@ export default function CanopyPage() {
   });
 
   const [mode, setMode] = useState<MapMode>("place");
+  const [mapView, setMapView] = useState<MapViewMode>("roadmap");
   const [boundaryPoints, setBoundaryPoints] = useState<LatLng[]>([]);
   const [boundaryClosed, setBoundaryClosed] = useState(false);
 
   const [contractValue, setContractValue] = useState(10_000_000_000);
+  const [contractInput, setContractInput] = useState(formatContractEokInput(10_000_000_000));
   const [daysSaved, setDaysSaved] = useState(14);
+  const [autoEstimateNote, setAutoEstimateNote] = useState<string | null>(null);
 
   const [mapReady, setMapReady] = useState(false);
   const [mapError, setMapError] = useState<string | null>(null);
@@ -680,12 +733,13 @@ export default function CanopyPage() {
         const map = new g.maps.Map(mapElRef.current, {
           center: { lat: DEFAULT_SITE_LAT, lng: DEFAULT_SITE_LNG },
           zoom: 18,
-          mapTypeId: "hybrid",
+          mapTypeId: "roadmap",
           tilt: 0,
+          heading: 0,
           gestureHandling: "greedy",
           streetViewControl: false,
           fullscreenControl: false,
-          mapTypeControl: true,
+          mapTypeControl: false,
         });
 
         // 출발지 마커
@@ -737,6 +791,30 @@ export default function CanopyPage() {
     init();
   }, [mapsKey]);
 
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!mapReady || !map) return;
+
+    if (mapView === "roadmap") {
+      map.setMapTypeId("roadmap");
+      map.setTilt(0);
+      map.setHeading(0);
+      return;
+    }
+
+    if (mapView === "satellite") {
+      map.setMapTypeId("satellite");
+      map.setTilt(0);
+      map.setHeading(0);
+      return;
+    }
+
+    map.setMapTypeId("satellite");
+    map.setZoom(Math.max(map.getZoom() ?? 18, 18));
+    map.setTilt(45);
+    map.setHeading(35);
+  }, [mapReady, mapView]);
+
   // 위험 버퍼 (centroid 기준 확장)
   const riskZone = useMemo<LatLng[] | null>(() => {
     if (!boundaryClosed || boundaryPoints.length < 3) return null;
@@ -750,6 +828,11 @@ export default function CanopyPage() {
       return proj.toLatLng(ex, ey);
     });
   }, [boundaryPoints, boundaryClosed]);
+
+  const siteArea = useMemo(() => {
+    if (!boundaryClosed || boundaryPoints.length < 3) return 0;
+    return getBoundaryArea(boundaryPoints);
+  }, [boundaryClosed, boundaryPoints]);
 
   // 추천 조합 (ReLU)
   const recommendations = useMemo<Recommendation[]>(() => {
@@ -773,6 +856,8 @@ export default function CanopyPage() {
     squareShapesRef.current = [];
     markersRef.current.forEach((m) => m.setMap(null));
     markersRef.current = [];
+    canopy3dOverlaysRef.current.forEach((overlay) => overlay.setMap(null));
+    canopy3dOverlaysRef.current = [];
     if (boundaryShapeRef.current) {
       boundaryShapeRef.current.setMap(null);
       boundaryShapeRef.current = null;
@@ -864,6 +949,52 @@ export default function CanopyPage() {
       });
       marker.addListener("click", () => setSelectedCanopyId(canopy.id));
       markersRef.current.push(marker);
+
+      if (mapView === "threeD") {
+        const overlay = new g.maps.OverlayView();
+        let el: HTMLButtonElement | null = null;
+
+        overlay.onAdd = () => {
+          el = document.createElement("button");
+          el.type = "button";
+          el.className = `${styles.canopy3dMarker} ${selected ? styles.canopy3dMarkerSelected : ""}`;
+          el.innerHTML = `<span>${index + 1}</span><i></i>`;
+          el.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            setSelectedCanopyId(canopy.id);
+          });
+          overlay.getPanes()?.overlayMouseTarget.appendChild(el);
+        };
+
+        overlay.draw = () => {
+          if (!el) return;
+          const projection = overlay.getProjection();
+          if (!projection) return;
+          const point = projection.fromLatLngToDivPixel(
+            new g.maps.LatLng(canopy.lat, canopy.lng)
+          );
+          if (!point) return;
+          const zoom = map.getZoom() ?? 18;
+          const metersPerPixel =
+            (156543.03392 * Math.cos((canopy.lat * Math.PI) / 180)) /
+            Math.pow(2, zoom);
+          const px = Math.max(42, Math.min(220, canopy.diameter / metersPerPixel));
+          el.style.left = `${point.x}px`;
+          el.style.top = `${point.y}px`;
+          el.style.width = `${px}px`;
+          el.style.height = `${px * 0.58}px`;
+          el.style.transform = `translate(-50%, -78%) rotate(${canopy.rotation}deg)`;
+        };
+
+        overlay.onRemove = () => {
+          if (el?.parentNode) el.parentNode.removeChild(el);
+          el = null;
+        };
+
+        overlay.setMap(map);
+        canopy3dOverlaysRef.current.push(overlay);
+      }
     });
   }, [
     mapReady,
@@ -873,6 +1004,7 @@ export default function CanopyPage() {
     boundaryClosed,
     riskZone,
     mode,
+    mapView,
   ]);
 
   const quote = useMemo(
@@ -891,6 +1023,24 @@ export default function CanopyPage() {
 
   // 각도 슬라이더: 선택된 캐노피가 있으면 그 캐노피를, 없으면 기본 배치 각도를 편집
   const angleValue = selectedCanopy ? selectedCanopy.rotation : rotation;
+
+  const setContractFromValue = (value: number, options?: { syncInput?: boolean }) => {
+    const safeValue = Math.max(0, Math.round(value || 0));
+    setContractValue(safeValue);
+    if (options?.syncInput !== false) {
+      setContractInput(formatContractEokInput(safeValue));
+    }
+  };
+
+  const handleContractInputChange = (raw: string) => {
+    setContractInput(raw);
+    setContractValue(parseContractEokInput(raw));
+  };
+
+  const handleContractInputBlur = () => {
+    setContractInput(formatContractEokInput(contractValue));
+  };
+
   const onAngleChange = (val: number) => {
     if (selectedCanopy) {
       setPlacedCanopies((prev) =>
@@ -921,12 +1071,24 @@ export default function CanopyPage() {
   };
 
   const finishBoundary = () => {
-    if (boundaryPoints.length >= 3) setBoundaryClosed(true);
+    if (boundaryPoints.length < 3) return;
+    const area = getBoundaryArea(boundaryPoints);
+    const estimated = estimateInputsFromSiteArea(area);
+    setBoundaryClosed(true);
+    setSiteCenter(centroidOf(boundaryPoints));
+    setContractFromValue(estimated.contractValue);
+    setDaysSaved(estimated.daysSaved);
+    setAutoEstimateNote(
+      `현장 경계 ${formatNumber(Math.round(area))}㎡ 기준으로 도급액 ${formatKRW(
+        estimated.contractValue
+      )}, 공기 단축 ${estimated.daysSaved}일을 자동 반영했습니다.`
+    );
   };
 
   const clearBoundary = () => {
     setBoundaryPoints([]);
     setBoundaryClosed(false);
+    setAutoEstimateNote(null);
     setMode("place");
   };
 
@@ -1047,6 +1209,30 @@ export default function CanopyPage() {
       <section id="estimate" className={styles.mapStage}>
         <div ref={mapElRef} className={styles.mapFull} />
 
+        <div className={styles.mapViewSwitch} aria-label="지도 보기 전환">
+          <button
+            type="button"
+            className={mapView === "roadmap" ? styles.mapViewActive : ""}
+            onClick={() => setMapView("roadmap")}
+          >
+            기본 지도
+          </button>
+          <button
+            type="button"
+            className={mapView === "satellite" ? styles.mapViewActive : ""}
+            onClick={() => setMapView("satellite")}
+          >
+            위성뷰
+          </button>
+          <button
+            type="button"
+            className={mapView === "threeD" ? styles.mapViewActive : ""}
+            onClick={() => setMapView("threeD")}
+          >
+            3D 뷰
+          </button>
+        </div>
+
         {(!mapReady || mapError) && (
           <div className={styles.mapLoadingFull}>
             {mapError ? <p>{mapError}</p> : (
@@ -1082,7 +1268,8 @@ export default function CanopyPage() {
             <div className={styles.selectedBox}>
               <p className={styles.valueHelp}>
                 지도를 클릭해 현장 경계 꼭짓점을 찍으세요. 3점 이상에서 완성할 수
-                있습니다. (현재 {boundaryPoints.length}점)
+                있습니다. 완성하면 면적 기준으로 예상 도급액과 공기 단축일이 자동 입력됩니다.
+                (현재 {boundaryPoints.length}점)
               </p>
               <div className={styles.modeRow} style={{ marginTop: 10, marginBottom: 0 }}>
                 <button
@@ -1169,7 +1356,7 @@ export default function CanopyPage() {
           {boundaryClosed && (
             <>
               <p className={styles.islandTitle} style={{ marginTop: 22 }}>
-                ReLU 조합 추천 · 현장 {formatNumber(Math.round(recommendations[0]?.siteArea ?? 0))}㎡
+                ReLU 조합 추천 · 현장 {formatNumber(Math.round(siteArea))}㎡
               </p>
               {recommendations.length === 0 ? (
                 <p className={styles.helpText}>
@@ -1309,12 +1496,25 @@ export default function CanopyPage() {
                 key={preset.value}
                 type="button"
                 className={`${contractValue === preset.value ? styles.compactPresetActive : ""}`}
-                onClick={() => setContractValue(preset.value)}
+                onClick={() => setContractFromValue(preset.value)}
               >
                 {preset.label}
               </button>
             ))}
           </div>
+          <label className={styles.contractInputLabel}>
+            <span>직접 입력</span>
+            <input
+              type="text"
+              inputMode="decimal"
+              value={contractInput}
+              onChange={(e) => handleContractInputChange(e.target.value)}
+              onBlur={handleContractInputBlur}
+              placeholder="예: 750"
+            />
+            <b>억원</b>
+          </label>
+          {autoEstimateNote && <p className={styles.autoEstimateNote}>{autoEstimateNote}</p>}
           <div className={styles.rangeHeader} style={{ marginTop: 14 }}>
             <p className={styles.panelLabel}>공기 단축</p>
             <strong>{daysSaved}일</strong>
@@ -1323,7 +1523,7 @@ export default function CanopyPage() {
             className={styles.range}
             type="range"
             min={0}
-            max={30}
+            max={90}
             value={daysSaved}
             onChange={(e) => setDaysSaved(Number(e.target.value))}
           />
@@ -1354,6 +1554,7 @@ export default function CanopyPage() {
         {/* 범례 */}
         <div className={styles.legend}>
           <span><i style={{ background: "#6b7280" }} />캐노피</span>
+          {mapView === "threeD" && <span><i style={{ background: "#2563eb" }} />3D 캐노피 형상</span>}
           <span><i style={{ background: "#dc2626" }} />현장 경계</span>
           <span><i style={{ background: "#f59e0b" }} />민원 위험 범위</span>
         </div>
@@ -1380,12 +1581,25 @@ export default function CanopyPage() {
                     key={preset.value}
                     type="button"
                     className={`${styles.presetButton} ${contractValue === preset.value ? styles.activePreset : ""}`}
-                    onClick={() => setContractValue(preset.value)}
+                    onClick={() => setContractFromValue(preset.value)}
                   >
                     {preset.label}
                   </button>
                 ))}
               </div>
+              <label className={`${styles.contractInputLabel} ${styles.contractInputLabelDark}`}>
+                <span>직접 입력</span>
+                <input
+                  type="text"
+                  inputMode="decimal"
+                  value={contractInput}
+                  onChange={(e) => handleContractInputChange(e.target.value)}
+                  onBlur={handleContractInputBlur}
+                  placeholder="예: 750"
+                />
+                <b>억원</b>
+              </label>
+              {autoEstimateNote && <p className={styles.valueHelp}>{autoEstimateNote}</p>}
               <p className={styles.valueHelp}>
                 일 지체상금(0.1%): <b>{formatKRW(value.dailyDelayPenalty)}</b>
               </p>
@@ -1414,7 +1628,7 @@ export default function CanopyPage() {
               <ul className={styles.valueNotes}>
                 <li>지체상금률 0.1%/일 (국가계약 기준)</li>
                 <li>현장 고정 간접비 0.02%/일 (추정)</li>
-                <li>견적은 위 지도 결과와 실시간 연동</li>
+                <li>견적·도급액·공기 단축일은 위 지도 결과와 실시간 연동</li>
               </ul>
             </div>
           </aside>
