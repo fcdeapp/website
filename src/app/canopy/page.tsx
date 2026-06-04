@@ -1266,7 +1266,7 @@ export default function CanopyPage() {
 
           {mode === "boundary" && (
             <div className={styles.selectedBox}>
-              <p className={styles.valueHelp}>
+              <p className={styles.boundaryHelp}>
                 지도를 클릭해 현장 경계 꼭짓점을 찍으세요. 3점 이상에서 완성할 수
                 있습니다. 완성하면 면적 기준으로 예상 도급액과 공기 단축일이 자동 입력됩니다.
                 (현재 {boundaryPoints.length}점)
