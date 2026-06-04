@@ -811,158 +811,135 @@ const recommendCombinations = (
   return chosen.slice(0, 3);
 };
 
-const createCanopyWebGLOverlay = (
+const createCanopyDomVolumeOverlay = (
   g: any,
+  map: any,
   canopies: PlacedCanopy[],
-  extruded: boolean
+  selectedCanopyId: string | null,
+  classNames: {
+    canopyVolumeLayer: string;
+    canopyCuboid: string;
+    canopyCuboidSelected: string;
+    canopyCuboidBase: string;
+    canopyCuboidTop: string;
+    canopyCuboidNorth: string;
+    canopyCuboidSouth: string;
+    canopyCuboidEast: string;
+    canopyCuboidWest: string;
+  },
+  onSelect: (id: string) => void
 ) => {
-  if (!g?.maps?.WebGLOverlayView || canopies.length === 0) return null;
+  if (!g?.maps?.OverlayView || !map || canopies.length === 0) return null;
 
-  const overlay = new g.maps.WebGLOverlayView();
-  let glRef: WebGLRenderingContext | null = null;
-  let program: WebGLProgram | null = null;
-  let vertexBuffer: WebGLBuffer | null = null;
-  let indexBuffer: WebGLBuffer | null = null;
-  let aPosition = -1;
-  let uMatrix: WebGLUniformLocation | null = null;
-  let uColor: WebGLUniformLocation | null = null;
-  const animationStart = performance.now();
-  const animationDuration = 640;
+  const overlay = new g.maps.OverlayView();
+  let root: HTMLDivElement | null = null;
+  let rafId: number | null = null;
+  let startAt = performance.now();
+  const duration = 620;
 
-  const vertices = new Float32Array([
-    -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5,
-    -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5,
-  ]);
-  const indices = new Uint16Array([
-    0, 1, 2, 0, 2, 3,
-    4, 6, 5, 4, 7, 6,
-    0, 4, 5, 0, 5, 1,
-    1, 5, 6, 1, 6, 2,
-    2, 6, 7, 2, 7, 3,
-    3, 7, 4, 3, 4, 0,
-  ]);
-
-  const compile = (gl: WebGLRenderingContext, type: number, source: string) => {
-    const shader = gl.createShader(type);
-    if (!shader) return null;
-    gl.shaderSource(shader, source);
-    gl.compileShader(shader);
-    if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-      gl.deleteShader(shader);
-      return null;
+  const clearFrame = () => {
+    if (rafId !== null) {
+      cancelAnimationFrame(rafId);
+      rafId = null;
     }
-    return shader;
   };
 
-  overlay.onContextRestored = ({ gl }: { gl: WebGLRenderingContext }) => {
-    glRef = gl;
-    const vs = compile(
-      gl,
-      gl.VERTEX_SHADER,
-      `
-      attribute vec3 a_position;
-      uniform mat4 u_matrix;
-      void main() {
-        gl_Position = u_matrix * vec4(a_position, 1.0);
-      }
-    `
-    );
-    const fs = compile(
-      gl,
-      gl.FRAGMENT_SHADER,
-      `
-      precision mediump float;
-      uniform vec4 u_color;
-      void main() {
-        gl_FragColor = u_color;
-      }
-    `
-    );
-    if (!vs || !fs) return;
-    program = gl.createProgram();
-    if (!program) return;
-    gl.attachShader(program, vs);
-    gl.attachShader(program, fs);
-    gl.linkProgram(program);
-    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-      gl.deleteProgram(program);
-      program = null;
-      return;
-    }
-
-    vertexBuffer = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
-    gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
-
-    indexBuffer = gl.createBuffer();
-    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
-    gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, indices, gl.STATIC_DRAW);
-
-    aPosition = gl.getAttribLocation(program, "a_position");
-    uMatrix = gl.getUniformLocation(program, "u_matrix");
-    uColor = gl.getUniformLocation(program, "u_color");
+  const requestDraw = () => {
+    clearFrame();
+    rafId = requestAnimationFrame(() => {
+      rafId = null;
+      overlay.draw();
+    });
   };
 
-  overlay.onDraw = ({ gl, transformer }: { gl: WebGLRenderingContext; transformer: any }) => {
-    if (!program || !vertexBuffer || !indexBuffer || !uMatrix || !uColor) return;
-
-    gl.useProgram(program);
-    gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
-    gl.enableVertexAttribArray(aPosition);
-    gl.vertexAttribPointer(aPosition, 3, gl.FLOAT, false, 0, 0);
-    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
-
-    gl.enable(gl.DEPTH_TEST);
-    gl.depthFunc(gl.LEQUAL);
-    gl.enable(gl.BLEND);
-    gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
-    gl.disable(gl.CULL_FACE);
-
-    const rawProgress = Math.min(
-      1,
-      Math.max(0, (performance.now() - animationStart) / animationDuration)
+  const getSidePx = (projection: any, canopy: PlacedCanopy) => {
+    const center = new g.maps.LatLng(canopy.lat, canopy.lng);
+    const metersPerDegLng =
+      METERS_PER_DEG_LAT * Math.cos((canopy.lat * Math.PI) / 180);
+    const east = new g.maps.LatLng(
+      canopy.lat,
+      canopy.lng + canopy.diameter / metersPerDegLng
     );
-    const ease = 1 - Math.pow(1 - rawProgress, 3);
-    const extrudeProgress = extruded ? ease : 1 - ease;
+    const p1 = projection.fromLatLngToDivPixel(center);
+    const p2 = projection.fromLatLngToDivPixel(east);
+    if (!p1 || !p2) return Math.max(28, canopy.diameter * 2);
+    return Math.max(28, Math.hypot(p2.x - p1.x, p2.y - p1.y));
+  };
 
-    for (const canopy of canopies) {
-      const targetHeight = getCanopyExtrudeHeight(canopy.diameter);
-      const height = Math.max(0.08, targetHeight * extrudeProgress);
-      const alpha = canopy.diameter >= 100 ? 0.5 : canopy.diameter >= 40 ? 0.56 : 0.62;
+  overlay.onAdd = () => {
+    root = document.createElement("div");
+    root.className = classNames.canopyVolumeLayer;
+    const panes = overlay.getPanes();
+    const pane = panes?.overlayMouseTarget || panes?.overlayLayer;
+    pane?.appendChild(root);
+    startAt = performance.now();
+    requestDraw();
+  };
 
-      const matrix = transformer.fromLatLngAltitude(
-        { lat: canopy.lat, lng: canopy.lng, altitude: height / 2 },
-        new Float32Array([0, 0, canopy.rotation]),
-        new Float32Array([canopy.diameter, canopy.diameter, height])
+  overlay.draw = () => {
+    if (!root) return;
+    const projection = overlay.getProjection();
+    if (!projection) return;
+
+    const raw = Math.min(1, Math.max(0, (performance.now() - startAt) / duration));
+    const progress = 1 - Math.pow(1 - raw, 3);
+
+    root.replaceChildren();
+
+    canopies.forEach((canopy, index) => {
+      const px = projection.fromLatLngToDivPixel(
+        new g.maps.LatLng(canopy.lat, canopy.lng)
       );
+      if (!px) return;
 
-      gl.uniformMatrix4fv(uMatrix, false, matrix);
-      gl.uniform4f(uColor, 0.08, 0.18, 0.34, alpha * Math.max(0.2, extrudeProgress));
-      gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);
+      const sidePx = getSidePx(projection, canopy);
+      const heightMeters = getCanopyExtrudeHeight(canopy.diameter);
+      const heightPx = Math.max(22, (sidePx / canopy.diameter) * heightMeters * 1.45);
+      const animatedHeightPx = heightPx * progress;
+      const selected = canopy.id === selectedCanopyId;
 
-      // 상단 엣지를 밝게 덧그려 지도 위에서 직육면체 높이가 더 잘 읽히게 한다.
-      gl.uniform4f(uColor, 0.85, 0.92, 1.0, 0.48 * Math.max(0.25, extrudeProgress));
-      gl.drawElements(gl.LINE_LOOP, 4, gl.UNSIGNED_SHORT, 12);
-    }
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = selected
+        ? `${classNames.canopyCuboid} ${classNames.canopyCuboidSelected}`
+        : classNames.canopyCuboid;
+      button.setAttribute("aria-label", `${index + 1}번 ${canopy.diameter}m 캐노피 입체 보기`);
+      button.style.left = `${px.x}px`;
+      button.style.top = `${px.y}px`;
+      button.style.setProperty("--side", `${sidePx}px`);
+      button.style.setProperty("--height", `${animatedHeightPx}px`);
+      button.style.setProperty("--rot", `${canopy.rotation}deg`);
+      button.style.setProperty("--delay", `${Math.min(index * 38, 220)}ms`);
+      button.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        onSelect(canopy.id);
+      };
 
-    gl.disableVertexAttribArray(aPosition);
-    gl.bindBuffer(gl.ARRAY_BUFFER, null);
-    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
-    gl.useProgram(null);
-    overlay.requestRedraw();
+      const base = document.createElement("span");
+      base.className = classNames.canopyCuboidBase;
+      const top = document.createElement("span");
+      top.className = classNames.canopyCuboidTop;
+      const north = document.createElement("span");
+      north.className = classNames.canopyCuboidNorth;
+      const south = document.createElement("span");
+      south.className = classNames.canopyCuboidSouth;
+      const east = document.createElement("span");
+      east.className = classNames.canopyCuboidEast;
+      const west = document.createElement("span");
+      west.className = classNames.canopyCuboidWest;
+
+      button.append(base, north, south, east, west, top);
+      root?.appendChild(button);
+    });
+
+    if (raw < 1) requestDraw();
   };
 
   overlay.onRemove = () => {
-    const gl = glRef;
-    if (gl) {
-      if (vertexBuffer) gl.deleteBuffer(vertexBuffer);
-      if (indexBuffer) gl.deleteBuffer(indexBuffer);
-      if (program) gl.deleteProgram(program);
-    }
-    glRef = null;
-    program = null;
-    vertexBuffer = null;
-    indexBuffer = null;
+    clearFrame();
+    root?.remove();
+    root = null;
   };
 
   return overlay;
@@ -978,7 +955,7 @@ export default function CanopyPage() {
   const markersRef = useRef<any[]>([]);
   const boundaryShapeRef = useRef<any>(null);
   const riskShapeRef = useRef<any>(null);
-  const webglCanopyOverlayRef = useRef<any>(null);
+  const volumeCanopyOverlayRef = useRef<any>(null);
 
   const selectedDiameterRef = useRef<CanopySize>(20);
   const rotationRef = useRef<number>(0);
@@ -1135,7 +1112,7 @@ export default function CanopyPage() {
     }
 
     // 3D 뷰는 단순 위성 이미지가 아니라 vector basemap tilt/heading을 켠 상태로 둔다.
-    // Google Cloud에서 vector Map ID를 연결하면 건물 입체 형상과 WebGL 캐노피 매쉬가 같은 렌더링 컨텍스트에 올라간다.
+    // 벡터 Map ID가 있으면 Google 3D 건물도 함께 보이고, 캐노피 입체 형상은 DOM OverlayView로 별도 렌더링한다.
     map.setMapTypeId("roadmap");
     map.setZoom(Math.max(map.getZoom() ?? 18, 18));
     map.setTilt(67.5);
@@ -1187,9 +1164,9 @@ export default function CanopyPage() {
     squareShapesRef.current = [];
     markersRef.current.forEach((m) => m.setMap(null));
     markersRef.current = [];
-    if (webglCanopyOverlayRef.current) {
-      webglCanopyOverlayRef.current.setMap(null);
-      webglCanopyOverlayRef.current = null;
+    if (volumeCanopyOverlayRef.current) {
+      volumeCanopyOverlayRef.current.setMap(null);
+      volumeCanopyOverlayRef.current = null;
     }
     if (boundaryShapeRef.current) {
       boundaryShapeRef.current.setMap(null);
@@ -1286,10 +1263,27 @@ export default function CanopyPage() {
     });
 
     if (mapView === "threeD" && showCanopyVolume && placedCanopies.length > 0) {
-      const webglOverlay = createCanopyWebGLOverlay(g, placedCanopies, showCanopyVolume);
-      if (webglOverlay) {
-        webglOverlay.setMap(map);
-        webglCanopyOverlayRef.current = webglOverlay;
+      const volumeOverlay = createCanopyDomVolumeOverlay(
+        g,
+        map,
+        placedCanopies,
+        selectedCanopyId,
+        {
+          canopyVolumeLayer: styles.canopyVolumeLayer,
+          canopyCuboid: styles.canopyCuboid,
+          canopyCuboidSelected: styles.canopyCuboidSelected,
+          canopyCuboidBase: styles.canopyCuboidBase,
+          canopyCuboidTop: styles.canopyCuboidTop,
+          canopyCuboidNorth: styles.canopyCuboidNorth,
+          canopyCuboidSouth: styles.canopyCuboidSouth,
+          canopyCuboidEast: styles.canopyCuboidEast,
+          canopyCuboidWest: styles.canopyCuboidWest,
+        },
+        (id) => setSelectedCanopyId(id)
+      );
+      if (volumeOverlay) {
+        volumeOverlay.setMap(map);
+        volumeCanopyOverlayRef.current = volumeOverlay;
       }
     }
   }, [
