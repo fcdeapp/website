@@ -143,6 +143,16 @@ const CANOPY_OPTIONS: Record<CanopySize, CanopyOption> = {
   },
 };
 
+const CANOPY_HEIGHT_BY_SIZE: Record<CanopySize, number> = {
+  10: 4,
+  20: 8,
+  40: 14,
+  100: 28,
+};
+
+const getCanopyExtrudeHeight = (diameter: CanopySize) =>
+  CANOPY_HEIGHT_BY_SIZE[diameter] ?? Math.max(4, diameter * 0.28);
+
 // 건설사 가치 계산 상수
 const DELAY_PENALTY_RATE = 0.001; // 지체상금률 0.1%/일 (국가계약 기준)
 const OVERHEAD_RATE_PER_DAY = 0.0002; // 현장 고정 간접비 추정 0.02%/일
@@ -801,7 +811,11 @@ const recommendCombinations = (
   return chosen.slice(0, 3);
 };
 
-const createCanopyWebGLOverlay = (g: any, canopies: PlacedCanopy[]) => {
+const createCanopyWebGLOverlay = (
+  g: any,
+  canopies: PlacedCanopy[],
+  extruded: boolean
+) => {
   if (!g?.maps?.WebGLOverlayView || canopies.length === 0) return null;
 
   const overlay = new g.maps.WebGLOverlayView();
@@ -812,6 +826,8 @@ const createCanopyWebGLOverlay = (g: any, canopies: PlacedCanopy[]) => {
   let aPosition = -1;
   let uMatrix: WebGLUniformLocation | null = null;
   let uColor: WebGLUniformLocation | null = null;
+  const animationStart = performance.now();
+  const animationDuration = 640;
 
   const vertices = new Float32Array([
     -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5,
@@ -902,20 +918,30 @@ const createCanopyWebGLOverlay = (g: any, canopies: PlacedCanopy[]) => {
     gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
     gl.disable(gl.CULL_FACE);
 
+    const rawProgress = Math.min(
+      1,
+      Math.max(0, (performance.now() - animationStart) / animationDuration)
+    );
+    const ease = 1 - Math.pow(1 - rawProgress, 3);
+    const extrudeProgress = extruded ? ease : 1 - ease;
+
     for (const canopy of canopies) {
-      const height = Math.max(8, canopy.diameter * 0.35);
+      const targetHeight = getCanopyExtrudeHeight(canopy.diameter);
+      const height = Math.max(0.08, targetHeight * extrudeProgress);
+      const alpha = canopy.diameter >= 100 ? 0.5 : canopy.diameter >= 40 ? 0.56 : 0.62;
+
       const matrix = transformer.fromLatLngAltitude(
         { lat: canopy.lat, lng: canopy.lng, altitude: height / 2 },
         new Float32Array([0, 0, canopy.rotation]),
         new Float32Array([canopy.diameter, canopy.diameter, height])
       );
+
       gl.uniformMatrix4fv(uMatrix, false, matrix);
-      const alpha = canopy.diameter >= 100 ? 0.52 : canopy.diameter >= 40 ? 0.58 : 0.64;
-      gl.uniform4f(uColor, 0.08, 0.18, 0.34, alpha);
+      gl.uniform4f(uColor, 0.08, 0.18, 0.34, alpha * Math.max(0.2, extrudeProgress));
       gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);
 
-      // 상단을 한 번 더 밝게 그려 입체감을 준다.
-      gl.uniform4f(uColor, 0.36, 0.56, 0.86, 0.22);
+      // 상단 엣지를 밝게 덧그려 지도 위에서 직육면체 높이가 더 잘 읽히게 한다.
+      gl.uniform4f(uColor, 0.85, 0.92, 1.0, 0.48 * Math.max(0.25, extrudeProgress));
       gl.drawElements(gl.LINE_LOOP, 4, gl.UNSIGNED_SHORT, 12);
     }
 
@@ -971,6 +997,7 @@ export default function CanopyPage() {
 
   const [mode, setMode] = useState<MapMode>("place");
   const [mapView, setMapView] = useState<MapViewMode>("roadmap");
+  const [showCanopyVolume, setShowCanopyVolume] = useState(false);
   const [boundaryPoints, setBoundaryPoints] = useState<LatLng[]>([]);
   const [boundaryClosed, setBoundaryClosed] = useState(false);
 
@@ -1115,6 +1142,10 @@ export default function CanopyPage() {
     map.setHeading(35);
   }, [mapReady, mapView]);
 
+  useEffect(() => {
+    if (mapView !== "threeD") setShowCanopyVolume(false);
+  }, [mapView]);
+
   // 위험 버퍼 (centroid 기준 확장)
   const riskZone = useMemo<LatLng[] | null>(() => {
     if (!boundaryClosed || boundaryPoints.length < 3) return null;
@@ -1224,7 +1255,7 @@ export default function CanopyPage() {
         strokeOpacity: 1,
         strokeWeight: selected ? 3 : 2,
         fillColor: selected ? "#3b82f6" : color,
-        fillOpacity: 0.28,
+        fillOpacity: mapView === "threeD" && showCanopyVolume ? 0.12 : 0.28,
         clickable: mode === "place",
         zIndex: selected ? 5 : 2,
         map,
@@ -1254,8 +1285,8 @@ export default function CanopyPage() {
 
     });
 
-    if (mapView === "threeD" && placedCanopies.length > 0) {
-      const webglOverlay = createCanopyWebGLOverlay(g, placedCanopies);
+    if (mapView === "threeD" && showCanopyVolume && placedCanopies.length > 0) {
+      const webglOverlay = createCanopyWebGLOverlay(g, placedCanopies, showCanopyVolume);
       if (webglOverlay) {
         webglOverlay.setMap(map);
         webglCanopyOverlayRef.current = webglOverlay;
@@ -1270,6 +1301,7 @@ export default function CanopyPage() {
     riskZone,
     mode,
     mapView,
+    showCanopyVolume,
   ]);
 
   const quote = useMemo(
@@ -1398,13 +1430,12 @@ export default function CanopyPage() {
 
         <div className={styles.heroVisual} aria-hidden="true">
           <div className={styles.visualFloor} />
-          <div className={styles.domeShape}>
-            <div className={styles.domeHighlight} />
-            <div className={styles.domeDoor} />
-          </div>
-          <div className={styles.smallCylinder} />
-          <div className={styles.soundWaveOne} />
-          <div className={styles.soundWaveTwo} />
+          <img
+            className={styles.airDomeImage}
+            src="/Air_Dome.png"
+            alt=""
+            draggable={false}
+          />
           <div className={styles.noiseChip}>-18dB 예상</div>
         </div>
       </section>
@@ -1489,6 +1520,21 @@ export default function CanopyPage() {
           >
             위성뷰
           </button>
+          {mapView === "threeD" && (
+            <button
+              type="button"
+              className={showCanopyVolume ? styles.mapViewActive : styles.volumeViewButton}
+              onClick={() => setShowCanopyVolume((prev) => !prev)}
+              disabled={placedCanopies.length === 0}
+              title={
+                placedCanopies.length === 0
+                  ? "지도에 캐노피를 먼저 배치하세요."
+                  : "현재 지도 위 캐노피를 규격별 높이의 직육면체로 전환"
+              }
+            >
+              입체로 보기
+            </button>
+          )}
           <button
             type="button"
             className={mapView === "threeD" ? styles.mapViewActive : ""}
@@ -1819,7 +1865,9 @@ export default function CanopyPage() {
         {/* 범례 */}
         <div className={styles.legend}>
           <span><i style={{ background: "#6b7280" }} />캐노피</span>
-          {mapView === "threeD" && <span><i style={{ background: "#2563eb" }} />3D 캐노피 형상</span>}
+          {mapView === "threeD" && showCanopyVolume && (
+            <span><i style={{ background: "#2563eb" }} />입체 캐노피 형상</span>
+          )}
           <span><i style={{ background: "#dc2626" }} />현장 경계</span>
           <span><i style={{ background: "#f59e0b" }} />민원 위험 범위</span>
         </div>
