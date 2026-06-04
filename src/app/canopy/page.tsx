@@ -454,10 +454,273 @@ const buildValue = (cost: number, contractValue: number, daysSaved: number) => {
   };
 };
 
-// ── ReLU 기반 캐노피 조합 추천 ──
+// ── 현장 경계 내부에만 들어가는 비중첩 캐노피 조합 추천 ──
+type LocalCanopyCell = {
+  center: Pt;
+  S: CanopySize;
+  theta: number;
+  angleDeg: number;
+  coverIdx: number[];
+  corners: Pt[];
+};
+
+const getLocalSquareCorners = (center: Pt, side: number, theta: number): Pt[] => {
+  const h = side / 2;
+  const cos = Math.cos(theta);
+  const sin = Math.sin(theta);
+  const local: Pt[] = [
+    { x: -h, y: -h },
+    { x: h, y: -h },
+    { x: h, y: h },
+    { x: -h, y: h },
+  ];
+  return local.map((p) => ({
+    x: center.x + p.x * cos - p.y * sin,
+    y: center.y + p.x * sin + p.y * cos,
+  }));
+};
+
+const ccw = (a: Pt, b: Pt, c: Pt) => (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+
+const segmentsIntersectLocal = (a: Pt, b: Pt, c: Pt, d: Pt) => {
+  const ab1 = ccw(a, b, c);
+  const ab2 = ccw(a, b, d);
+  const cd1 = ccw(c, d, a);
+  const cd2 = ccw(c, d, b);
+  return ab1 * ab2 < 0 && cd1 * cd2 < 0;
+};
+
+const squareInsidePolyLocal = (
+  center: Pt,
+  side: number,
+  theta: number,
+  poly: Pt[]
+) => {
+  const corners = getLocalSquareCorners(center, side, theta);
+  if (!corners.every((pt) => pointInPolyLocal(pt, poly))) return false;
+
+  // 오목한 현장 경계에서는 네 꼭짓점이 내부여도 사각형 변이 경계 밖으로 튈 수 있어
+  // 사각형 변과 현장 경계 변의 교차까지 막는다.
+  for (let i = 0; i < 4; i++) {
+    const a = corners[i];
+    const b = corners[(i + 1) % 4];
+    for (let j = 0; j < poly.length; j++) {
+      const c = poly[j];
+      const d = poly[(j + 1) % poly.length];
+      if (segmentsIntersectLocal(a, b, c, d)) return false;
+    }
+  }
+
+  return true;
+};
+
+const projectAxis = (pts: Pt[], axis: Pt) => {
+  let min = Infinity;
+  let max = -Infinity;
+  for (const p of pts) {
+    const v = p.x * axis.x + p.y * axis.y;
+    min = Math.min(min, v);
+    max = Math.max(max, v);
+  }
+  return { min, max };
+};
+
+const rotatedRectsOverlap = (a: Pt[], b: Pt[], gap = 1.2) => {
+  const axes: Pt[] = [];
+  const pushAxes = (r: Pt[]) => {
+    for (let i = 0; i < 4; i++) {
+      const p1 = r[i];
+      const p2 = r[(i + 1) % 4];
+      const ex = p2.x - p1.x;
+      const ey = p2.y - p1.y;
+      const len = Math.hypot(ex, ey) || 1;
+      axes.push({ x: -ey / len, y: ex / len });
+    }
+  };
+  pushAxes(a);
+  pushAxes(b);
+
+  for (const axis of axes) {
+    const pa = projectAxis(a, axis);
+    const pb = projectAxis(b, axis);
+    if (pa.max + gap < pb.min || pb.max + gap < pa.min) return false;
+  }
+  return true;
+};
+
+const createRefPoints = (polyLocal: Pt[], minX: number, maxX: number, minY: number, maxY: number, maxDim: number) => {
+  const refStep = Math.min(10, Math.max(2.5, maxDim / 34));
+  const refPoints: Pt[] = [];
+  for (let x = minX + refStep / 2; x <= maxX; x += refStep) {
+    for (let y = minY + refStep / 2; y <= maxY; y += refStep) {
+      const pt = { x, y };
+      if (pointInPolyLocal(pt, polyLocal)) refPoints.push(pt);
+    }
+  }
+  return { refStep, refPoints };
+};
+
+const buildCellsForAngle = (
+  polyLocal: Pt[],
+  refPoints: Pt[],
+  bounds: { minX: number; maxX: number; minY: number; maxY: number },
+  angleDeg: number
+): LocalCanopyCell[] => {
+  const theta = (angleDeg * Math.PI) / 180;
+  const cos = Math.cos(theta);
+  const sin = Math.sin(theta);
+  const bboxCorners = [
+    { x: bounds.minX, y: bounds.minY },
+    { x: bounds.maxX, y: bounds.minY },
+    { x: bounds.maxX, y: bounds.maxY },
+    { x: bounds.minX, y: bounds.maxY },
+  ];
+  const us = bboxCorners.map((p) => p.x * cos + p.y * sin);
+  const vs = bboxCorners.map((p) => -p.x * sin + p.y * cos);
+  const uMin = Math.min(...us);
+  const uMax = Math.max(...us);
+  const vMin = Math.min(...vs);
+  const vMax = Math.max(...vs);
+
+  const cells: LocalCanopyCell[] = [];
+  for (const S of SIZES_DESC) {
+    // 시공상 겹침을 줄이기 위해 격자는 규격보다 살짝 넓게 둔다.
+    const stride = S * 1.04;
+    for (let u = uMin + S / 2; u <= uMax - S / 2; u += stride) {
+      for (let v = vMin + S / 2; v <= vMax - S / 2; v += stride) {
+        const center = { x: u * cos - v * sin, y: u * sin + v * cos };
+        if (!squareInsidePolyLocal(center, S, theta, polyLocal)) continue;
+        const coverIdx: number[] = [];
+        for (let i = 0; i < refPoints.length; i++) {
+          if (squareContainsLocal(refPoints[i], center, S, theta)) coverIdx.push(i);
+        }
+        if (coverIdx.length === 0) continue;
+        cells.push({
+          center,
+          S,
+          theta,
+          angleDeg,
+          coverIdx,
+          corners: getLocalSquareCorners(center, S, theta),
+        });
+      }
+    }
+  }
+  return cells;
+};
+
+const greedyPackCells = (
+  candidates: LocalCanopyCell[],
+  refPoints: Pt[],
+  targetCoverage: number,
+  maxCoverage: number
+) => {
+  const covered = new Set<number>();
+  const selected: LocalCanopyCell[] = [];
+  const sorted = [...candidates].sort((a, b) => {
+    // 큰 캐노피를 무조건 우선하지 않고, 새 커버 면적 대비 비용과 규격 균형을 본다.
+    const ca = CANOPY_OPTIONS[a.S].installCost + CANOPY_OPTIONS[a.S].dailyRental * 7;
+    const cb = CANOPY_OPTIONS[b.S].installCost + CANOPY_OPTIONS[b.S].dailyRental * 7;
+    return b.coverIdx.length / cb - a.coverIdx.length / ca;
+  });
+
+  while (covered.size / refPoints.length < targetCoverage) {
+    let best: LocalCanopyCell | null = null;
+    let bestScore = -Infinity;
+
+    for (const cell of sorted) {
+      if (selected.some((s) => rotatedRectsOverlap(s.corners, cell.corners))) continue;
+      let newCover = 0;
+      for (const idx of cell.coverIdx) if (!covered.has(idx)) newCover++;
+      if (newCover <= 0) continue;
+
+      const projectedCoverage = (covered.size + newCover) / refPoints.length;
+      if (projectedCoverage > maxCoverage + 0.08 && selected.length > 0) continue;
+
+      const option = CANOPY_OPTIONS[cell.S];
+      const roughCost = option.installCost + option.removalCost + option.dailyRental * 7;
+      const oversizePenalty = Math.max(0, projectedCoverage - maxCoverage) * 2.2;
+      const countPenalty = selected.length * 0.008;
+      const score = newCover / Math.max(1, roughCost / 1_000_000) - oversizePenalty - countPenalty;
+      if (score > bestScore) {
+        bestScore = score;
+        best = cell;
+      }
+    }
+
+    if (!best) break;
+    selected.push(best);
+    best.coverIdx.forEach((idx) => covered.add(idx));
+    if (selected.length > 80) break;
+  }
+
+  return { cells: selected, coveragePct: covered.size / refPoints.length };
+};
+
+const cellsToRecommendation = (
+  cells: LocalCanopyCell[],
+  coveragePct: number,
+  label: string,
+  note: string,
+  id: string,
+  proj: ReturnType<typeof makeProjector>,
+  siteArea: number,
+  rentalDays: number,
+  contractValue: number,
+  daysSaved: number,
+  angleDeg: number
+): Recommendation => {
+  const placements: PlacedCanopy[] = cells.map((cl, i) => {
+    const ll = proj.toLatLng(cl.center.x, cl.center.y);
+    return {
+      id: `${id}-${i}`,
+      diameter: cl.S,
+      lat: ll.lat,
+      lng: ll.lng,
+      rotation: angleDeg,
+    };
+  });
+  const c = placements.length > 0
+    ? {
+        lat: placements.reduce((s, p) => s + p.lat, 0) / placements.length,
+        lng: placements.reduce((s, p) => s + p.lng, 0) / placements.length,
+      }
+    : { lat: DEFAULT_SITE_LAT, lng: DEFAULT_SITE_LNG };
+  const quote = buildQuote(placements, rentalDays, c);
+  const value = buildValue(quote.total, contractValue, daysSaved);
+  const coverArea = coveragePct * siteArea;
+  const under = Math.max(0, siteArea * 0.68 - coverArea);
+  const excessiveCover = Math.max(0, coverArea - siteArea * 0.9);
+  const reluLoss = quote.total + under * PENALTY_PER_M2 + excessiveCover * OVERFLOW_PER_M2;
+
+  const counts: Record<number, number> = {};
+  placements.forEach((p) => (counts[p.diameter] = (counts[p.diameter] || 0) + 1));
+  const sizeMix = Object.keys(counts)
+    .map(Number)
+    .sort((a, b) => b - a)
+    .map((k) => `${k}m ×${counts[k]}`)
+    .join(" + ");
+
+  return {
+    id,
+    label,
+    note,
+    sizeMix,
+    count: placements.length,
+    placements,
+    siteArea,
+    coveragePct,
+    cost: quote.total,
+    totalBenefit: value.totalBenefit,
+    netValue: value.netValue,
+    roi: value.roiMultiple,
+    reluLoss,
+  };
+};
+
 const recommendCombinations = (
   boundary: LatLng[],
-  rotationDeg: number,
+  _rotationDeg: number,
   rentalDays: number,
   contractValue: number,
   daysSaved: number
@@ -472,182 +735,215 @@ const recommendCombinations = (
 
   const xs = polyLocal.map((p) => p.x);
   const ys = polyLocal.map((p) => p.y);
-  const minX = Math.min(...xs);
-  const maxX = Math.max(...xs);
-  const minY = Math.min(...ys);
-  const maxY = Math.max(...ys);
-  const maxDim = Math.max(maxX - minX, maxY - minY);
-
-  // 커버 측정용 내부 기준 격자
-  const refStep = Math.min(12, Math.max(2, maxDim / 30));
-  const refPoints: Pt[] = [];
-  for (let x = minX + refStep / 2; x <= maxX; x += refStep) {
-    for (let y = minY + refStep / 2; y <= maxY; y += refStep) {
-      const pt = { x, y };
-      if (pointInPolyLocal(pt, polyLocal)) refPoints.push(pt);
-    }
-  }
+  const bounds = {
+    minX: Math.min(...xs),
+    maxX: Math.max(...xs),
+    minY: Math.min(...ys),
+    maxY: Math.max(...ys),
+  };
+  const maxDim = Math.max(bounds.maxX - bounds.minX, bounds.maxY - bounds.minY);
+  const { refPoints } = createRefPoints(polyLocal, bounds.minX, bounds.maxX, bounds.minY, bounds.maxY, maxDim);
   if (refPoints.length === 0) return [];
 
-  const theta = (rotationDeg * Math.PI) / 180;
-  const cos = Math.cos(theta);
-  const sin = Math.sin(theta);
+  const angleCandidates = Array.from({ length: 12 }, (_, i) => i * 15);
+  const packed = angleCandidates
+    .map((angle) => {
+      const candidates = buildCellsForAngle(polyLocal, refPoints, bounds, angle);
+      const result = greedyPackCells(candidates, refPoints, 0.72, 0.84);
+      return { angle, ...result };
+    })
+    .filter((r) => r.cells.length > 0);
 
-  // 회전 프레임 기준 S 간격 격자 중심 생성 (현장과 겹치는 셀만)
-  const genCenters = (S: number): Pt[] => {
-    const corners = [
-      { x: minX, y: minY },
-      { x: maxX, y: minY },
-      { x: maxX, y: maxY },
-      { x: minX, y: maxY },
-    ];
-    const us = corners.map((p) => p.x * cos + p.y * sin);
-    const vs = corners.map((p) => -p.x * sin + p.y * cos);
-    const uMin = Math.min(...us);
-    const uMax = Math.max(...us);
-    const vMin = Math.min(...vs);
-    const vMax = Math.max(...vs);
-    const centers: Pt[] = [];
-    for (let u = uMin + S / 2; u <= uMax + S / 2; u += S) {
-      for (let v = vMin + S / 2; v <= vMax + S / 2; v += S) {
-        const x = u * cos - v * sin;
-        const y = u * sin + v * cos;
-        const center = { x, y };
-        if (refPoints.some((p) => squareContainsLocal(p, center, S, theta))) {
-          centers.push(center);
-        }
-      }
-    }
-    return centers;
-  };
+  if (packed.length === 0) return [];
 
-  const coverageOf = (cells: { center: Pt; S: number }[]) => {
-    let covered = 0;
-    for (const p of refPoints) {
-      if (cells.some((cl) => squareContainsLocal(p, cl.center, cl.S, theta)))
-        covered++;
-    }
-    return covered / refPoints.length;
-  };
-
-  const sizes = SIZES_DESC.filter((S) => S <= maxDim * 1.5 && S >= refStep * 0.5);
-  if (sizes.length === 0) sizes.push(10);
-
-  type Strategy = { kind: string; cells: { center: Pt; S: number }[] };
-  const strategies: Strategy[] = [];
-
-  // 균일 단일 규격 전략
-  for (const S of sizes) {
-    const centers = genCenters(S).filter(
-      (c2) =>
-        pointInPolyLocal(c2, polyLocal) ||
-        refPoints.filter((p) => squareContainsLocal(p, c2, S, theta)).length >= 2
-    );
-    if (centers.length === 0 || centers.length > 250) continue;
-    strategies.push({
-      kind: `uniform-${S}`,
-      cells: centers.map((center) => ({ center, S })),
-    });
-  }
-
-  // 혼합 그리디 (ReLU 최적 후보) — 큰 규격부터 미커버 구역을 메움
-  {
-    const coveredFlags = new Array(refPoints.length).fill(false);
-    const cells: { center: Pt; S: number }[] = [];
-    for (const S of sizes) {
-      const centers = genCenters(S);
-      const cellCap = Math.max(1, Math.round((S * S) / (refStep * refStep)));
-      for (const center of centers) {
-        const newIdx: number[] = [];
-        for (let i = 0; i < refPoints.length; i++) {
-          if (
-            !coveredFlags[i] &&
-            squareContainsLocal(refPoints[i], center, S, theta)
-          ) {
-            newIdx.push(i);
-          }
-        }
-        if (newIdx.length >= Math.max(1, cellCap * 0.4)) {
-          newIdx.forEach((i) => (coveredFlags[i] = true));
-          cells.push({ center, S });
-        }
-      }
-      if (cells.length > 300) break;
-    }
-    if (cells.length > 0) strategies.push({ kind: "mixed", cells });
-  }
-
-  const recs: Recommendation[] = strategies.map((st, idx) => {
-    const placements: PlacedCanopy[] = st.cells.map((cl, i) => {
-      const ll = proj.toLatLng(cl.center.x, cl.center.y);
-      return {
-        id: `rec-${idx}-${i}`,
-        diameter: cl.S as CanopySize,
-        lat: ll.lat,
-        lng: ll.lng,
-        rotation: rotationDeg,
-      };
-    });
-    const rawCover = st.cells.reduce((s, cl) => s + cl.S * cl.S, 0);
-    const coveragePct = coverageOf(st.cells);
-    const quote = buildQuote(placements, rentalDays, c);
-    const gap = Math.max(0, siteArea - rawCover);
-    const over = Math.max(0, rawCover - siteArea);
-    const reluLoss =
-      quote.total + gap * PENALTY_PER_M2 + over * OVERFLOW_PER_M2; // ReLU = max(0,·)
-    const value = buildValue(quote.total, contractValue, daysSaved);
-
-    const counts: Record<number, number> = {};
-    placements.forEach((p) => (counts[p.diameter] = (counts[p.diameter] || 0) + 1));
-    const sizeMix = Object.keys(counts)
-      .map(Number)
-      .sort((a, b) => b - a)
-      .map((k) => `${k}m ×${counts[k]}`)
-      .join(" + ");
-
-    return {
-      id: `rec-${idx}`,
-      label: "",
-      note: "",
-      sizeMix,
-      count: placements.length,
-      placements,
+  const recs = packed.map((r, i) =>
+    cellsToRecommendation(
+      r.cells,
+      r.coveragePct,
+      "",
+      "",
+      `rec-${i}`,
+      proj,
       siteArea,
-      coveragePct,
-      cost: quote.total,
-      totalBenefit: value.totalBenefit,
-      netValue: value.netValue,
-      roi: value.roiMultiple,
-      reluLoss,
-    };
-  });
-
-  if (recs.length === 0) return [];
+      rentalDays,
+      contractValue,
+      daysSaved,
+      r.angle
+    )
+  );
 
   const chosen: Recommendation[] = [];
-  const sig = (r: Recommendation) => `${r.sizeMix}|${r.count}`;
+  const sig = (r: Recommendation) => `${r.sizeMix}|${Math.round(r.coveragePct * 100)}|${r.placements[0]?.rotation ?? 0}`;
   const push = (r: Recommendation | undefined, label: string, note: string) => {
     if (!r) return;
     if (chosen.some((x) => sig(x) === sig(r))) return;
     chosen.push({ ...r, label, note });
   };
 
-  const byLoss = [...recs].sort((a, b) => a.reluLoss - b.reluLoss);
-  push(byLoss[0], "ReLU 최적", "커버·비용·낭비를 ReLU 손실로 동시 최소화");
+  const balanced = [...recs].sort((a, b) => {
+    const target = 0.76;
+    const aScore = Math.abs(a.coveragePct - target) * 15 + a.cost / 1_000_000_000 + a.count * 0.08;
+    const bScore = Math.abs(b.coveragePct - target) * 15 + b.cost / 1_000_000_000 + b.count * 0.08;
+    return aScore - bScore;
+  })[0];
+  push(balanced, "현실 배치", "경계 밖 돌출과 캐노피 중첩을 막고 70%대 커버를 목표로 배치");
 
   const minCost = [...recs]
-    .filter((r) => r.coveragePct >= 0.7)
+    .filter((r) => r.coveragePct >= 0.62)
     .sort((a, b) => a.cost - b.cost)[0];
-  push(minCost, "최소 비용", "70% 이상 커버 중 최저 견적");
+  push(minCost, "최소 비용", "경계 내부·비중첩 조건을 지키는 후보 중 최저 견적");
 
-  const maxCov = [...recs].sort((a, b) => b.coveragePct - a.coveragePct)[0];
-  push(maxCov, "최대 커버", "현장을 최대한 밀폐");
+  const maxCover = [...recs]
+    .filter((r) => r.coveragePct <= 0.9)
+    .sort((a, b) => b.coveragePct - a.coveragePct || a.cost - b.cost)[0];
+  push(maxCover, "커버 강화", "현장 내부에서 돌출 없이 커버율을 더 높인 조합");
 
   return chosen.slice(0, 3);
 };
 
+const createCanopyWebGLOverlay = (g: any, canopies: PlacedCanopy[]) => {
+  if (!g?.maps?.WebGLOverlayView || canopies.length === 0) return null;
+
+  const overlay = new g.maps.WebGLOverlayView();
+  let glRef: WebGLRenderingContext | null = null;
+  let program: WebGLProgram | null = null;
+  let vertexBuffer: WebGLBuffer | null = null;
+  let indexBuffer: WebGLBuffer | null = null;
+  let aPosition = -1;
+  let uMatrix: WebGLUniformLocation | null = null;
+  let uColor: WebGLUniformLocation | null = null;
+
+  const vertices = new Float32Array([
+    -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5,
+    -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5,
+  ]);
+  const indices = new Uint16Array([
+    0, 1, 2, 0, 2, 3,
+    4, 6, 5, 4, 7, 6,
+    0, 4, 5, 0, 5, 1,
+    1, 5, 6, 1, 6, 2,
+    2, 6, 7, 2, 7, 3,
+    3, 7, 4, 3, 4, 0,
+  ]);
+
+  const compile = (gl: WebGLRenderingContext, type: number, source: string) => {
+    const shader = gl.createShader(type);
+    if (!shader) return null;
+    gl.shaderSource(shader, source);
+    gl.compileShader(shader);
+    if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+      gl.deleteShader(shader);
+      return null;
+    }
+    return shader;
+  };
+
+  overlay.onContextRestored = ({ gl }: { gl: WebGLRenderingContext }) => {
+    glRef = gl;
+    const vs = compile(
+      gl,
+      gl.VERTEX_SHADER,
+      `
+      attribute vec3 a_position;
+      uniform mat4 u_matrix;
+      void main() {
+        gl_Position = u_matrix * vec4(a_position, 1.0);
+      }
+    `
+    );
+    const fs = compile(
+      gl,
+      gl.FRAGMENT_SHADER,
+      `
+      precision mediump float;
+      uniform vec4 u_color;
+      void main() {
+        gl_FragColor = u_color;
+      }
+    `
+    );
+    if (!vs || !fs) return;
+    program = gl.createProgram();
+    if (!program) return;
+    gl.attachShader(program, vs);
+    gl.attachShader(program, fs);
+    gl.linkProgram(program);
+    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+      gl.deleteProgram(program);
+      program = null;
+      return;
+    }
+
+    vertexBuffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
+
+    indexBuffer = gl.createBuffer();
+    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
+    gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, indices, gl.STATIC_DRAW);
+
+    aPosition = gl.getAttribLocation(program, "a_position");
+    uMatrix = gl.getUniformLocation(program, "u_matrix");
+    uColor = gl.getUniformLocation(program, "u_color");
+  };
+
+  overlay.onDraw = ({ gl, transformer }: { gl: WebGLRenderingContext; transformer: any }) => {
+    if (!program || !vertexBuffer || !indexBuffer || !uMatrix || !uColor) return;
+
+    gl.useProgram(program);
+    gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+    gl.enableVertexAttribArray(aPosition);
+    gl.vertexAttribPointer(aPosition, 3, gl.FLOAT, false, 0, 0);
+    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, indexBuffer);
+
+    gl.enable(gl.DEPTH_TEST);
+    gl.depthFunc(gl.LEQUAL);
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+    gl.disable(gl.CULL_FACE);
+
+    for (const canopy of canopies) {
+      const height = Math.max(8, canopy.diameter * 0.35);
+      const matrix = transformer.fromLatLngAltitude(
+        { lat: canopy.lat, lng: canopy.lng, altitude: height / 2 },
+        new Float32Array([0, 0, canopy.rotation]),
+        new Float32Array([canopy.diameter, canopy.diameter, height])
+      );
+      gl.uniformMatrix4fv(uMatrix, false, matrix);
+      const alpha = canopy.diameter >= 100 ? 0.52 : canopy.diameter >= 40 ? 0.58 : 0.64;
+      gl.uniform4f(uColor, 0.08, 0.18, 0.34, alpha);
+      gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);
+
+      // 상단을 한 번 더 밝게 그려 입체감을 준다.
+      gl.uniform4f(uColor, 0.36, 0.56, 0.86, 0.22);
+      gl.drawElements(gl.LINE_LOOP, 4, gl.UNSIGNED_SHORT, 12);
+    }
+
+    gl.disableVertexAttribArray(aPosition);
+    gl.bindBuffer(gl.ARRAY_BUFFER, null);
+    gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
+    gl.useProgram(null);
+    overlay.requestRedraw();
+  };
+
+  overlay.onRemove = () => {
+    const gl = glRef;
+    if (gl) {
+      if (vertexBuffer) gl.deleteBuffer(vertexBuffer);
+      if (indexBuffer) gl.deleteBuffer(indexBuffer);
+      if (program) gl.deleteProgram(program);
+    }
+    glRef = null;
+    program = null;
+    vertexBuffer = null;
+    indexBuffer = null;
+  };
+
+  return overlay;
+};
 export default function CanopyPage() {
   const mapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
+  const mapsMapId = process.env.NEXT_PUBLIC_GOOGLE_MAP_ID ?? "";
 
   const mapElRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<any>(null);
@@ -656,7 +952,7 @@ export default function CanopyPage() {
   const markersRef = useRef<any[]>([]);
   const boundaryShapeRef = useRef<any>(null);
   const riskShapeRef = useRef<any>(null);
-  const canopy3dOverlaysRef = useRef<any[]>([]);
+  const webglCanopyOverlayRef = useRef<any>(null);
 
   const selectedDiameterRef = useRef<CanopySize>(20);
   const rotationRef = useRef<number>(0);
@@ -734,6 +1030,8 @@ export default function CanopyPage() {
           center: { lat: DEFAULT_SITE_LAT, lng: DEFAULT_SITE_LNG },
           zoom: 18,
           mapTypeId: "roadmap",
+          mapId: mapsMapId || undefined,
+          renderingType: g.maps.RenderingType?.VECTOR,
           tilt: 0,
           heading: 0,
           gestureHandling: "greedy",
@@ -789,7 +1087,7 @@ export default function CanopyPage() {
     };
 
     init();
-  }, [mapsKey]);
+  }, [mapsKey, mapsMapId]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -809,9 +1107,11 @@ export default function CanopyPage() {
       return;
     }
 
-    map.setMapTypeId("satellite");
+    // 3D 뷰는 단순 위성 이미지가 아니라 vector basemap tilt/heading을 켠 상태로 둔다.
+    // Google Cloud에서 vector Map ID를 연결하면 건물 입체 형상과 WebGL 캐노피 매쉬가 같은 렌더링 컨텍스트에 올라간다.
+    map.setMapTypeId("roadmap");
     map.setZoom(Math.max(map.getZoom() ?? 18, 18));
-    map.setTilt(45);
+    map.setTilt(67.5);
     map.setHeading(35);
   }, [mapReady, mapView]);
 
@@ -856,8 +1156,10 @@ export default function CanopyPage() {
     squareShapesRef.current = [];
     markersRef.current.forEach((m) => m.setMap(null));
     markersRef.current = [];
-    canopy3dOverlaysRef.current.forEach((overlay) => overlay.setMap(null));
-    canopy3dOverlaysRef.current = [];
+    if (webglCanopyOverlayRef.current) {
+      webglCanopyOverlayRef.current.setMap(null);
+      webglCanopyOverlayRef.current = null;
+    }
     if (boundaryShapeRef.current) {
       boundaryShapeRef.current.setMap(null);
       boundaryShapeRef.current = null;
@@ -950,52 +1252,15 @@ export default function CanopyPage() {
       marker.addListener("click", () => setSelectedCanopyId(canopy.id));
       markersRef.current.push(marker);
 
-      if (mapView === "threeD") {
-        const overlay = new g.maps.OverlayView();
-        let el: HTMLButtonElement | null = null;
-
-        overlay.onAdd = () => {
-          el = document.createElement("button");
-          el.type = "button";
-          el.className = `${styles.canopy3dMarker} ${selected ? styles.canopy3dMarkerSelected : ""}`;
-          el.innerHTML = `<span>${index + 1}</span><i></i>`;
-          el.addEventListener("click", (event) => {
-            event.preventDefault();
-            event.stopPropagation();
-            setSelectedCanopyId(canopy.id);
-          });
-          overlay.getPanes()?.overlayMouseTarget.appendChild(el);
-        };
-
-        overlay.draw = () => {
-          if (!el) return;
-          const projection = overlay.getProjection();
-          if (!projection) return;
-          const point = projection.fromLatLngToDivPixel(
-            new g.maps.LatLng(canopy.lat, canopy.lng)
-          );
-          if (!point) return;
-          const zoom = map.getZoom() ?? 18;
-          const metersPerPixel =
-            (156543.03392 * Math.cos((canopy.lat * Math.PI) / 180)) /
-            Math.pow(2, zoom);
-          const px = Math.max(42, Math.min(220, canopy.diameter / metersPerPixel));
-          el.style.left = `${point.x}px`;
-          el.style.top = `${point.y}px`;
-          el.style.width = `${px}px`;
-          el.style.height = `${px * 0.58}px`;
-          el.style.transform = `translate(-50%, -78%) rotate(${canopy.rotation}deg)`;
-        };
-
-        overlay.onRemove = () => {
-          if (el?.parentNode) el.parentNode.removeChild(el);
-          el = null;
-        };
-
-        overlay.setMap(map);
-        canopy3dOverlaysRef.current.push(overlay);
-      }
     });
+
+    if (mapView === "threeD" && placedCanopies.length > 0) {
+      const webglOverlay = createCanopyWebGLOverlay(g, placedCanopies);
+      if (webglOverlay) {
+        webglOverlay.setMap(map);
+        webglCanopyOverlayRef.current = webglOverlay;
+      }
+    }
   }, [
     mapReady,
     placedCanopies,
