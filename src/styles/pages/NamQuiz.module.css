@@ -241,6 +241,19 @@
   box-shadow: 0 14px 28px rgba(35, 35, 32, 0.16);
 }
 
+.routineList {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: #4a4a46;
+  font-size: 0.86rem;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+.routineList li {
+  margin-top: 0.35rem;
+}
+
 .numberGrid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -355,7 +368,8 @@
 .answerBox,
 .resultBox,
 .flashcard,
-.orderAnswerBox {
+.orderAnswerBox,
+.diffBox {
   border-radius: 18px;
   border: 1px solid #d9d9d3;
   background: #fbfbf9;
@@ -431,7 +445,8 @@
 }
 
 .textarea:focus,
-.blankInput:focus {
+.blankInput:focus,
+.anchorInput:focus {
   border-color: rgba(216, 49, 91, 0.55);
   box-shadow: 0 0 0 4px rgba(216, 49, 91, 0.1);
   background: #fffefe;
@@ -494,6 +509,17 @@
   box-shadow: 0 10px 20px rgba(35, 35, 32, 0.06);
 }
 
+.secondaryButtonActive {
+  background: #242421;
+  color: #ffffff;
+  border-color: #242421;
+}
+
+.secondaryButtonActive:hover {
+  background: #10100f;
+  color: #ffffff;
+}
+
 .blankGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -510,7 +536,8 @@
   font-weight: 800;
 }
 
-.blankInput {
+.blankInput,
+.anchorInput {
   width: 100%;
   border: 1px solid #d1d1cb;
   border-radius: 14px;
@@ -529,6 +556,11 @@
   font-synthesis: weight style;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+.anchorInput {
+  display: block;
+  font-size: 1.05rem;
 }
 
 .optionWrap {
@@ -683,6 +715,69 @@
   background: #fff7f5;
   border-color: #f1c9c0;
   color: #8c2d1d;
+}
+
+.diffBox {
+  margin-top: 1rem;
+  padding: 1.1rem;
+  background: #ffffff;
+}
+
+.diffLabel {
+  margin: 0.75rem 0 0.3rem;
+  color: #777771;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.diffLabel:first-of-type {
+  margin-top: 0;
+}
+
+.diffLine {
+  margin: 0;
+  color: #2d2d29;
+  font-family: var(--font-serif-ko);
+  font-size: 1.02rem;
+  line-height: 2;
+  letter-spacing: -0.01em;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.diffMiss {
+  background: rgba(216, 49, 91, 0.16);
+  color: #a01f43;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.diffExtra {
+  background: rgba(242, 84, 45, 0.16);
+  color: #9a3414;
+  border-radius: 4px;
+  text-decoration: line-through;
+}
+
+.diffHint {
+  margin: 0.8rem 0 0;
+  color: #777771;
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.emptyState {
+  margin-top: 1.25rem;
+  padding: 2.2rem 1.2rem;
+  border-radius: 18px;
+  border: 1px dashed #cfcfc8;
+  background: #fbfbf9;
+  color: #777771;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: center;
 }
 
 .answerBox {
