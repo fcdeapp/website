@@ -1,0 +1,444 @@
+
+.page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #111827;
+  word-break: keep-all;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 520px);
+  gap: clamp(40px, 8vw, 120px);
+  align-items: center;
+  min-height: 100vh;
+  padding: 120px clamp(24px, 7vw, 120px);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 76% 32%, rgba(15, 23, 42, 0.08), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.heroCopy {
+  max-width: 900px;
+  z-index: 2;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.sectionTitle h2,
+.timelineHeader h2 {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(44px, 7vw, 90px);
+  line-height: 1.02;
+  letter-spacing: -0.075em;
+  font-weight: 950;
+}
+
+.heroText {
+  max-width: 720px;
+  margin: 30px 0 0;
+  color: #4b5563;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.75;
+  letter-spacing: -0.03em;
+}
+
+.heroStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 640px;
+  margin-top: 42px;
+}
+
+.heroStats article {
+  padding: 24px;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 20px 60px rgba(17, 24, 39, 0.08);
+}
+
+.heroStats strong {
+  display: block;
+  color: #111827;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.heroStats span {
+  display: block;
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.heroVisual {
+  position: relative;
+  width: min(520px, 100%);
+  aspect-ratio: 1;
+  justify-self: center;
+}
+
+.orbitOne,
+.orbitTwo {
+  position: absolute;
+  inset: 10%;
+  border: 1px solid rgba(17, 24, 39, 0.14);
+  border-radius: 50%;
+  animation: spin 16s linear infinite;
+}
+
+.orbitTwo {
+  inset: 22%;
+  animation-duration: 11s;
+  animation-direction: reverse;
+}
+
+.stackCard,
+.stackCardAlt,
+.stackCardThird {
+  position: absolute;
+  width: 68%;
+  padding: 28px;
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 30px 80px rgba(17, 24, 39, 0.16);
+  backdrop-filter: blur(18px);
+}
+
+.stackCard { right: 4%; top: 12%; }
+.stackCardAlt { left: 0; top: 42%; }
+.stackCardThird { right: 12%; bottom: 8%; }
+
+.stackCard span,
+.stackCardAlt span,
+.stackCardThird span {
+  display: block;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.stackCard strong,
+.stackCardAlt strong,
+.stackCardThird strong {
+  display: block;
+  margin-top: 10px;
+  color: #111827;
+  font-size: 24px;
+  line-height: 1.18;
+  letter-spacing: -0.055em;
+}
+
+.section,
+.phaseSection,
+.timelineSection {
+  padding: 110px clamp(20px, 6vw, 100px);
+}
+
+.sectionTitle,
+.timelineHeader {
+  max-width: 920px;
+  margin-bottom: 54px;
+}
+
+.sectionTitle h2,
+.timelineHeader h2 {
+  font-size: clamp(36px, 5vw, 64px);
+}
+
+.sectionTitle p:last-child,
+.timelineHeader p:last-child {
+  margin: 20px 0 0;
+  max-width: 760px;
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.educationGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.educationCard,
+.travelYear,
+.monthCard {
+  border-radius: 34px;
+  background: #ffffff;
+  box-shadow:
+    0 0 0 1px rgba(17, 24, 39, 0.06),
+    0 22px 60px rgba(17, 24, 39, 0.06);
+}
+
+.educationCard {
+  padding: 28px;
+}
+
+.educationCard > span {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.educationCard h3 {
+  margin: 16px 0 12px;
+  color: #111827;
+  font-size: 26px;
+  letter-spacing: -0.06em;
+}
+
+.educationCard p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.educationCard div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.educationCard em {
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #4b5563;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.phaseSection,
+.timelineSection {
+  background: #f8fafc;
+}
+
+.phaseList {
+  display: grid;
+  gap: 14px;
+  max-width: 1040px;
+}
+
+.phaseList article {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 22px;
+  padding: 28px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0 14px 44px rgba(17, 24, 39, 0.05);
+}
+
+.phaseList span {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.phaseList strong {
+  display: block;
+  color: #111827;
+  font-size: 21px;
+  letter-spacing: -0.045em;
+}
+
+.phaseList p {
+  margin: 8px 0 0;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.travelYears {
+  display: grid;
+  gap: 18px;
+}
+
+.travelYear {
+  padding: 28px;
+}
+
+.travelYear h3 {
+  margin: 0 0 18px;
+  color: #111827;
+  font-size: 36px;
+  letter-spacing: -0.075em;
+}
+
+.travelTable {
+  display: grid;
+  gap: 8px;
+}
+
+.travelRow {
+  display: grid;
+  grid-template-columns: 110px minmax(120px, 1.2fr) minmax(100px, 1fr) 100px minmax(160px, 1.2fr);
+  gap: 12px;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: #f8fafc;
+}
+
+.travelRow span,
+.travelRow small,
+.travelRow em {
+  color: #6b7280;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.travelRow strong {
+  color: #111827;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+}
+
+.travelRow b {
+  color: #0f766e;
+  font-size: 15px;
+}
+
+.timelineHeader {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 30px;
+  align-items: end;
+  max-width: none;
+}
+
+.filters {
+  display: grid;
+  gap: 10px;
+}
+
+.filters select,
+.filters input {
+  width: 100%;
+  min-height: 54px;
+  padding: 0 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #ffffff;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.monthGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.monthCard {
+  padding: 24px;
+}
+
+.monthTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.monthTop span {
+  color: #111827;
+  font-size: 22px;
+  font-weight: 950;
+  letter-spacing: -0.055em;
+}
+
+.monthTop em {
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.monthCard h3 {
+  margin: 18px 0 0;
+  color: #111827;
+  font-size: 19px;
+  line-height: 1.45;
+  letter-spacing: -0.04em;
+}
+
+.monthCard p {
+  margin: 12px 0 0;
+  color: #6b7280;
+  line-height: 1.65;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1100px) {
+  .hero,
+  .timelineHeader {
+    grid-template-columns: 1fr;
+  }
+
+  .educationGrid,
+  .monthGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .travelRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero,
+  .section,
+  .phaseSection,
+  .timelineSection {
+    padding: 72px 18px;
+  }
+
+  .heroStats,
+  .educationGrid,
+  .monthGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroVisual {
+    min-height: 420px;
+  }
+
+  .phaseList article {
+    grid-template-columns: 1fr;
+  }
+
+  .travelRow {
+    grid-template-columns: 1fr;
+  }
+}

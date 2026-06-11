@@ -1,0 +1,999 @@
+"use client";
+
+import React, { useMemo, useState } from "react";
+import styles from "../../styles/pages/PersonalTimeline.module.css";
+
+type EducationItem = {
+  period: string;
+  stage: string;
+  detail: string;
+  keywords: string[];
+};
+
+type TravelRecord = {
+  date: string;
+  carrier: string;
+  route: string;
+  miles: string;
+  note: string;
+};
+
+type MonthlyRecord = {
+  month: string;
+  tracks: string;
+  basis: string;
+  reading: string;
+};
+
+type Phase = {
+  period: string;
+  title: string;
+  detail: string;
+};
+
+const education: EducationItem[] = [
+  {
+    "period": "2008.03 ~ 2014.02",
+    "stage": "초등학교",
+    "detail": "학교명은 자료에 제공되지 않았으므로 학제 기준으로만 정리. 2011~2013 항공 기록상 괌, 미국 서부, 싱가포르, 유럽, 태국, 제주, 미국 동부/플로리다/디트로이트 여행 기록이 확인됨.",
+    "keywords": [
+      "초등학교",
+      "해외여행 다수",
+      "가족 여행",
+      "대한항공/델타 마일리지 기록"
+    ]
+  },
+  {
+    "period": "2014.03 ~ 2017.02",
+    "stage": "중학교",
+    "detail": "사용자가 제시한 2020년 재수, 2021년 대학입학 기준의 일반 학제 역산. 2014~2016 항공 기록상 홍콩, 유럽, 미국, 스위스, 이탈리아, 일본 등 장거리 여행 기록이 이어짐.",
+    "keywords": [
+      "중학교",
+      "홍콩",
+      "유럽",
+      "미국",
+      "스위스",
+      "이탈리아",
+      "일본"
+    ]
+  },
+  {
+    "period": "2017.03 ~ 2020.02",
+    "stage": "고등학교",
+    "detail": "학교명은 제공되지 않았음. 2017년에는 일본, 제주, 유럽 노선 기록이 있으며 2018년 일본, 2019년 말 미국 뉴욕행 기록이 확인됨. 2020년 재수 진입 직전까지 이어지는 시기.",
+    "keywords": [
+      "고등학교",
+      "학업 집중",
+      "해외/국내 이동",
+      "대입 준비"
+    ]
+  },
+  {
+    "period": "2020.01 ~ 2020.12",
+    "stage": "시대인재 재수종합",
+    "detail": "사용자가 직접 제시한 재수종합 기간. 항공 마일리지 기록상 2020.02.01 JFK-ICN 귀국이 확인되어, 이후 국내에서 재수 생활로 들어간 흐름으로 정리함.",
+    "keywords": [
+      "재수",
+      "시대인재",
+      "대입 재도전",
+      "JFK-ICN 귀국"
+    ]
+  },
+  {
+    "period": "2021.03 ~ 현재",
+    "stage": "서울대학교 건축학과/건축공학 전공 흐름",
+    "detail": "사용자가 대학입학(21~)으로 제시. 2022년부터 캘린더에 건축사, 건축환경계획, 스튜디오, Grasshopper, 건축시공, 건축재료역학 등이 본격 등장하며, 2026년에는 캡스톤/구조해석/졸업논문 중심으로 수렴.",
+    "keywords": [
+      "대학입학",
+      "건축학과",
+      "건축공학",
+      "Grasshopper",
+      "Revit",
+      "MIDAS",
+      "캡스톤"
+    ]
+  }
+];
+
+const phases: Phase[] = [
+  {
+    "period": "2011 ~ 2021",
+    "title": "여행/성장기",
+    "detail": "마일리지 기록 기준으로 괌, 미국 서부/동부, 싱가포르, 유럽, 태국, 홍콩, 일본, 제주 등 장거리·단거리 이동이 반복적으로 확인된다. 2021년 대학입학 직전까지 이어지는 가족/개인 이동 기록의 배경이다."
+  },
+  {
+    "period": "2022.01 ~ 2022.08",
+    "title": "대학 초반 적응·어학·설계스튜디오",
+    "detail": "건축사, 건축환경계획, 스튜디오, 영어회화, 일본어, SNU Buddy, 운전면허, 계절학기를 병행했다."
+  },
+  {
+    "period": "2022.09 ~ 2022.12",
+    "title": "Grasshopper·건축시공·재료역학 집중",
+    "detail": "T1~T6 Grasshopper, 건축시공, 건축재료역학, AE/Design Review가 이어졌다."
+  },
+  {
+    "period": "2023.03 ~ 2023.06",
+    "title": "건축공학 전공 폭주·군입대 직전",
+    "detail": "건축전산, 건재역, 건환시, 콘크리트, 건물에너지, 기술창업론을 거쳐 휴학/입대 준비로 넘어갔다."
+  },
+  {
+    "period": "2023.07 ~ 2024.11",
+    "title": "군 복무 중 학업·회계·어학·자격",
+    "detail": "군 복무 중 경영학, 회계원리, 법인세법, 재무관리, HSK, JLPT, TOEFL, OPIC, GRE, ITQ, 건축기사, HTML/CSS 등을 관리했다."
+  },
+  {
+    "period": "2024.12 ~ 2025.08",
+    "title": "앱 개발·창업 실행",
+    "detail": "React Native 앱 개발, IR, 예창패/SNAAC, 법인 설립, 앱스토어 심사, iOS 출시, EAS, YC/Techstars 탐색이 이어졌다."
+  },
+  {
+    "period": "2025.09 ~ 2025.12",
+    "title": "복학 후 건축공학 수업·법인 병행",
+    "detail": "철골구조, 조명, 설비시스템, 기말과제와 법인 세무/등기 업무를 병행했다."
+  },
+  {
+    "period": "2026.01 ~ 2026.06",
+    "title": "캡스톤·졸업논문·구조해석 집중",
+    "detail": "캡스톤, Revit, Grasshopper, MIDAS, 구조설계, 건축환경설계, 스마트건설, 논문/발표/암기노트가 동시에 몰렸다."
+  }
+];
+
+const travelRecords: TravelRecord[] = [
+  {
+    "date": "2011-02-03",
+    "carrier": "대한항공",
+    "route": "ICN-GUM",
+    "miles": "+1,502",
+    "note": "괌행"
+  },
+  {
+    "date": "2011-02-08",
+    "carrier": "대한항공",
+    "route": "GUM-ICN",
+    "miles": "+1,502",
+    "note": "괌 귀국"
+  },
+  {
+    "date": "2011-09-10",
+    "carrier": "대한항공",
+    "route": "ICN-LAX",
+    "miles": "+5,968",
+    "note": "미국 서부행"
+  },
+  {
+    "date": "2011-09-17",
+    "carrier": "대한항공",
+    "route": "LAX-ICN",
+    "miles": "+5,968",
+    "note": "미국 서부 귀국"
+  },
+  {
+    "date": "2011-10-01",
+    "carrier": "대한항공",
+    "route": "ICN-SIN",
+    "miles": "+2,880",
+    "note": "싱가포르행"
+  },
+  {
+    "date": "2011-10-05",
+    "carrier": "대한항공",
+    "route": "SIN-ICN",
+    "miles": "+2,880",
+    "note": "싱가포르 귀국"
+  },
+  {
+    "date": "2012-07-20",
+    "carrier": "대한항공",
+    "route": "ICN-LHR",
+    "miles": "화면 일부 가림",
+    "note": "런던행"
+  },
+  {
+    "date": "2012-07-29",
+    "carrier": "대한항공",
+    "route": "LHR-ICN",
+    "miles": "+5,652",
+    "note": "런던 귀국"
+  },
+  {
+    "date": "2012-09-25",
+    "carrier": "대한항공",
+    "route": "ICN-VIE",
+    "miles": "+5,130",
+    "note": "비엔나행"
+  },
+  {
+    "date": "2012-09-28",
+    "carrier": "에어프랑스",
+    "route": "VIE-CDG",
+    "miles": "0",
+    "note": "비엔나-파리 이동"
+  },
+  {
+    "date": "2012-10-02",
+    "carrier": "대한항공",
+    "route": "CDG-ICN",
+    "miles": "+5,638",
+    "note": "파리 귀국"
+  },
+  {
+    "date": "2012-12-05",
+    "carrier": "대한항공",
+    "route": "ICN-BKK",
+    "miles": "+2,286",
+    "note": "방콕행"
+  },
+  {
+    "date": "2012-12-09",
+    "carrier": "대한항공",
+    "route": "BKK-ICN",
+    "miles": "+2,286",
+    "note": "방콕 귀국"
+  },
+  {
+    "date": "2013-05-03",
+    "carrier": "대한항공",
+    "route": "GMP-CJU",
+    "miles": "+276",
+    "note": "제주행"
+  },
+  {
+    "date": "2013-05-05",
+    "carrier": "대한항공",
+    "route": "CJU-GMP",
+    "miles": "+276",
+    "note": "제주 귀경"
+  },
+  {
+    "date": "2013-05-11",
+    "carrier": "델타항공",
+    "route": "ICN-JFK",
+    "miles": "+6,882",
+    "note": "뉴욕행"
+  },
+  {
+    "date": "2013-05-14",
+    "carrier": "델타항공",
+    "route": "JFK-MCO",
+    "miles": "+944",
+    "note": "올랜도 이동"
+  },
+  {
+    "date": "2013-05-18",
+    "carrier": "델타항공",
+    "route": "MCO-DTW",
+    "miles": "+957",
+    "note": "디트로이트 이동"
+  },
+  {
+    "date": "2013-05-18",
+    "carrier": "델타항공",
+    "route": "DTW-ICN",
+    "miles": "+6,778",
+    "note": "미국 귀국"
+  },
+  {
+    "date": "2014-01-30",
+    "carrier": "대한항공",
+    "route": "ICN-HKG",
+    "miles": "+1,295",
+    "note": "홍콩행"
+  },
+  {
+    "date": "2014-02-03",
+    "carrier": "대한항공",
+    "route": "HKG-ICN",
+    "miles": "+1,295",
+    "note": "홍콩 귀국"
+  },
+  {
+    "date": "2014-08-01",
+    "carrier": "대한항공",
+    "route": "ICN-MXP",
+    "miles": "+5,509",
+    "note": "밀라노행"
+  },
+  {
+    "date": "2014-08-10",
+    "carrier": "대한항공",
+    "route": "FCO-ICN",
+    "miles": "+5,579",
+    "note": "로마 귀국"
+  },
+  {
+    "date": "2014-09-19",
+    "carrier": "대한항공",
+    "route": "ICN-MAD",
+    "miles": "+6,227",
+    "note": "마드리드행"
+  },
+  {
+    "date": "2014-09-27",
+    "carrier": "대한항공",
+    "route": "LHR-ICN",
+    "miles": "+5,652",
+    "note": "런던 귀국"
+  },
+  {
+    "date": "2015-05-16",
+    "carrier": "대한항공",
+    "route": "ICN-IAD",
+    "miles": "화면 일부 가림",
+    "note": "워싱턴 D.C.행"
+  },
+  {
+    "date": "2015-05-24",
+    "carrier": "대한항공",
+    "route": "SEA-ICN",
+    "miles": "+5,196",
+    "note": "시애틀 귀국"
+  },
+  {
+    "date": "2015-08-08",
+    "carrier": "대한항공",
+    "route": "ICN-ZRH",
+    "miles": "+5,456",
+    "note": "취리히행"
+  },
+  {
+    "date": "2015-08-15",
+    "carrier": "대한항공",
+    "route": "ZRH-ICN",
+    "miles": "+5,456",
+    "note": "취리히 귀국"
+  },
+  {
+    "date": "2015-08-18",
+    "carrier": "대한항공 국제선 보너스",
+    "route": "ICN-LAX-ICN",
+    "miles": "-70,000",
+    "note": "보너스 항공권 차감 기록"
+  },
+  {
+    "date": "2015-09-26",
+    "carrier": "대한항공",
+    "route": "ICN-HKG",
+    "miles": "+1,295",
+    "note": "홍콩행"
+  },
+  {
+    "date": "2015-09-29",
+    "carrier": "대한항공",
+    "route": "HKG-ICN",
+    "miles": "+1,295",
+    "note": "홍콩 귀국"
+  },
+  {
+    "date": "2016-04-30",
+    "carrier": "대한항공",
+    "route": "ICN-LAX",
+    "miles": "0",
+    "note": "로스앤젤레스행"
+  },
+  {
+    "date": "2016-05-07",
+    "carrier": "대한항공",
+    "route": "LAX-ICN",
+    "miles": "0",
+    "note": "로스앤젤레스 귀국"
+  },
+  {
+    "date": "2016-10-01",
+    "carrier": "대한항공",
+    "route": "ICN-FCO",
+    "miles": "+5,579",
+    "note": "로마행"
+  },
+  {
+    "date": "2016-10-08",
+    "carrier": "대한항공",
+    "route": "FCO-ICN",
+    "miles": "+5,579",
+    "note": "로마 귀국"
+  },
+  {
+    "date": "2016-11-05",
+    "carrier": "대한항공",
+    "route": "ICN-KIX",
+    "miles": "+525",
+    "note": "오사카행"
+  },
+  {
+    "date": "2016-11-09",
+    "carrier": "대한항공",
+    "route": "KIX-GMP",
+    "miles": "+525",
+    "note": "오사카 귀국"
+  },
+  {
+    "date": "2017-01-26",
+    "carrier": "대한항공",
+    "route": "ICN-HND",
+    "miles": "+758",
+    "note": "도쿄행"
+  },
+  {
+    "date": "2017-01-29",
+    "carrier": "대한항공",
+    "route": "HND-GMP",
+    "miles": "+758",
+    "note": "도쿄 귀국"
+  },
+  {
+    "date": "2017-05-02",
+    "carrier": "대한항공",
+    "route": "GMP-CJU",
+    "miles": "+276",
+    "note": "제주행"
+  },
+  {
+    "date": "2017-05-05",
+    "carrier": "대한항공",
+    "route": "CJU-GMP",
+    "miles": "+276",
+    "note": "제주 귀경"
+  },
+  {
+    "date": "2017-07-20",
+    "carrier": "대한항공",
+    "route": "ICN-LHR",
+    "miles": "+5,652",
+    "note": "런던행"
+  },
+  {
+    "date": "2017-07-29",
+    "carrier": "대한항공",
+    "route": "CDG-ICN",
+    "miles": "+5,626",
+    "note": "파리 귀국"
+  },
+  {
+    "date": "2017-10-03",
+    "carrier": "대한항공",
+    "route": "GMP-HND",
+    "miles": "+758",
+    "note": "도쿄행"
+  },
+  {
+    "date": "2017-10-07",
+    "carrier": "대한항공",
+    "route": "HND-GMP",
+    "miles": "+758",
+    "note": "도쿄 귀국"
+  },
+  {
+    "date": "2017-11-14",
+    "carrier": "가족 합산",
+    "route": "LEE EUNJUNG",
+    "miles": "-20,114",
+    "note": "가족 합산 차감"
+  },
+  {
+    "date": "2017-11-17",
+    "carrier": "가족 합산",
+    "route": "DOH JUNGHYUN",
+    "miles": "-24,744",
+    "note": "가족 합산 차감"
+  },
+  {
+    "date": "2018-10-05",
+    "carrier": "대한항공",
+    "route": "ICN-KIX",
+    "miles": "+368",
+    "note": "오사카행"
+  },
+  {
+    "date": "2018-10-07",
+    "carrier": "대한항공",
+    "route": "KIX-GMP",
+    "miles": "+368",
+    "note": "오사카 귀국"
+  },
+  {
+    "date": "2019-12-21",
+    "carrier": "대한항공",
+    "route": "ICN-JFK",
+    "miles": "+6,879",
+    "note": "뉴욕행"
+  },
+  {
+    "date": "2020-02-01",
+    "carrier": "대한항공",
+    "route": "JFK-ICN",
+    "miles": "+6,879",
+    "note": "뉴욕 귀국"
+  },
+  {
+    "date": "2021-02-28",
+    "carrier": "대한항공",
+    "route": "GMP-CJU",
+    "miles": "0",
+    "note": "제주행 기록"
+  }
+];
+
+const monthlyRecords: MonthlyRecord[] = [
+  {
+    "month": "2022.01",
+    "tracks": "대학 1학년 겨울방학, 일본어/JPT/HSK, 영어논문작성, SNU Buddy, 조별활동, 생활관리",
+    "basis": "캘린더 기반",
+    "reading": "초기 대학생활 정리와 언어학습·영어 글쓰기 루틴이 중심."
+  },
+  {
+    "month": "2022.02",
+    "tracks": "설 연휴, 일본어 스터디, 장바구니 신청/전송, 등록금 납부, CAD 특강, SNU Buddy, 영어회화, HSK 5급",
+    "basis": "캘린더 기반",
+    "reading": "2학기 전공 준비 전 단계에서 수강·등록·언어·CAD를 정비."
+  },
+  {
+    "month": "2022.03",
+    "tracks": "개강, climate study, 스튜디오/공모, Group Lunch/Dinner, 집중일본어, 건축사 정리/강의, 영어대중소설, 사이트 답사",
+    "basis": "캘린더 기반",
+    "reading": "건축학과 학기 루틴과 설계/스튜디오, 영어·일본어 학습 병행."
+  },
+  {
+    "month": "2022.04",
+    "tracks": "설계/스튜디오 후반, 대영 스크립트, 주필 경제강의, 건축사 중간, 공학수학 퀴즈, 건축환경계획, College English, SNU Buddy 발표",
+    "basis": "캘린더 기반",
+    "reading": "건축사·환경계획·영어회화·스튜디오가 겹친 학기 중반."
+  },
+  {
+    "month": "2022.05",
+    "tracks": "학과 증명사진, SNU Buddy, PHASE2, 주필 건축사, Final Review, 설계실/계절학기 수정, 공수/대영, Food Fest",
+    "basis": "캘린더 기반",
+    "reading": "스튜디오 리뷰와 학기 말 정리, 대외/교류활동 병행."
+  },
+  {
+    "month": "2022.06",
+    "tracks": "건축사·건환계 수업/기말, 공학수학, Team Argument, Final Review, 스튜디오 정리, Design Review, 운전면허, 계절학기",
+    "basis": "캘린더 기반",
+    "reading": "1학기 마무리와 계절학기·운전면허 준비가 동시에 진행."
+  },
+  {
+    "month": "2022.07",
+    "tracks": "계절학기 대면, 언어의 세계, 집중일본어, 운전면허시험/예약, 기말과제, 2학기 랩인턴 신청",
+    "basis": "캘린더 기반",
+    "reading": "계절학기·어학·운전면허 중심. 2학기 연구/랩인턴도 준비."
+  },
+  {
+    "month": "2022.08",
+    "tracks": "계절 강의평가, 실내운전연습, 스타트업 동아리, 한아시아 일정, 등록금 수납, 운전면허 발급, 창업자 초청",
+    "basis": "캘린더 기반",
+    "reading": "창업/스타트업 관심의 초기 흔적과 2학기 준비가 확인됨."
+  },
+  {
+    "month": "2022.09",
+    "tracks": "2학기 개강, Grasshopper T1/T2, 주니어펠로우, 건축시공, 건축재료역학, 스튜디오, 카투사 지원, 과제",
+    "basis": "캘린더 기반",
+    "reading": "현재 GH/Revit/MIDAS 흐름의 가장 이른 토대인 Grasshopper가 본격 등장."
+  },
+  {
+    "month": "2022.10",
+    "tracks": "Grasshopper T3/T4/T5, AE Presentation/Midterm, Project 02, 건축시공 중간, 건축재료역학, 모델/레이저프린팅",
+    "basis": "캘린더 기반",
+    "reading": "파라메트릭 모델링과 전공 시험·프로젝트가 결합."
+  },
+  {
+    "month": "2022.11",
+    "tracks": "Grasshopper T5/T6, 건축재료역학, 건축시공 캠, AE Critical, Individual, M.Butter, 통역학원, 건축사 답사/레포트",
+    "basis": "캘린더 기반",
+    "reading": "건축 전공 과제와 영어/통역 학습 병행."
+  },
+  {
+    "month": "2022.12",
+    "tracks": "건축재료역학, 건축시공, AE Final/Critical, Design Review, PN, 계절학기, 건축학/공학 정해서 제출",
+    "basis": "캘린더 기반",
+    "reading": "학기말 전공 마감과 건축학/공학 방향 설정."
+  },
+  {
+    "month": "2023.01",
+    "tracks": "건축학/공학 정해서 제출, 영어논문작성, TOEFL Writing, 계절학기, 조별활동, HSK/JPT, 생활관리",
+    "basis": "캘린더 기반",
+    "reading": "전공 방향 정리와 영어 글쓰기·어학 루틴."
+  },
+  {
+    "month": "2023.02",
+    "tracks": "뉴욕여행, 연구실 방문, 연구목표, UNSC 합격/모집, 장바구니/등록금, 수강신청, 컨택메일, 일본어 모임",
+    "basis": "캘린더 기반",
+    "reading": "여행과 연구실/수강 탐색이 병행된 전환기."
+  },
+  {
+    "month": "2023.03",
+    "tracks": "개강, 건축학과 경주 워크숍, 랩인턴, 건재역2/건환시/건시공/콘크리트 과제, 사업계획서, 공학 인증",
+    "basis": "캘린더 기반",
+    "reading": "건축공학 전공 수업이 강하게 올라온 달."
+  },
+  {
+    "month": "2023.04",
+    "tracks": "건축전산, 건환시, 건재역2, 콘크리트 공학, 건축환경시스템, 건물에너지, 시공 필기, 휴학/군입대 준비",
+    "basis": "캘린더 기반",
+    "reading": "전공 과제 밀도와 군입대 준비가 겹침."
+  },
+  {
+    "month": "2023.05",
+    "tracks": "건축전산 중간, 건재역 보강/과제, 건축재료 중간, 건물열에너지, 콘크리트 퀴즈, 기술창업론/창업론, 군휴학",
+    "basis": "캘린더 기반",
+    "reading": "전공 폭주 속에서 기술창업론이 등장. 후일 창업 흐름의 초기 배경."
+  },
+  {
+    "month": "2023.06",
+    "tracks": "건축시공 발표, 건축재료/콘크리트 기말, 건축환경시스템, 건축전산, 휴학신청, 입영판정검사, 노트북 챙기기",
+    "basis": "캘린더 기반",
+    "reading": "학기말 전공 마감과 입대 직전 정리."
+  },
+  {
+    "month": "2023.07",
+    "tracks": "입대, 군대 짐싸기, 휴학신청, 학교/학과사무실 잔무, 렌즈 찾기, 우표/냉패치 등 군 생활 준비",
+    "basis": "캘린더 기반",
+    "reading": "생활 중심축이 학교에서 군 복무로 이동."
+  },
+  {
+    "month": "2023.08",
+    "tracks": "군 복무 적응, 생명존중/안전환경교육 이수, 하나은행 계좌 등 개인 행정",
+    "basis": "캘린더 기반",
+    "reading": "군 생활 초반 안정화와 졸업요건·행정 처리."
+  },
+  {
+    "month": "2023.09",
+    "tracks": "군 복무 중 중급회계, 법인세법, 재무관리 정리, 회식, 군대 내 포상",
+    "basis": "캘린더 기반",
+    "reading": "군 복무 중 회계·세무·재무관리 학습 시작."
+  },
+  {
+    "month": "2023.10",
+    "tracks": "재무관리, 법인세법, 원가관리회계, 부가가치세법, 소득세법, 재무회계, 경제학, 상법, CPA 기출, 휴넷",
+    "basis": "캘린더 기반",
+    "reading": "회계·세무·경영 학습 집중기."
+  },
+  {
+    "month": "2023.11",
+    "tracks": "휴넷 1~2주차 강의, 경영학 수업, 신병위로휴가, 강의교안/핵심정리 인쇄, 퀴즈 1차",
+    "basis": "캘린더 기반",
+    "reading": "군 복무 중 온라인 학습 루틴 정착."
+  },
+  {
+    "month": "2023.12",
+    "tracks": "경영학 중간/기말, 기말강의, 과제&학습정리, 중급회계 강의, 면회",
+    "basis": "캘린더 기반",
+    "reading": "2023년 하반기 경영/회계 학습 마감."
+  },
+  {
+    "month": "2024.01",
+    "tracks": "경영학 기말, 과제&학습정리, HSK, 휴가, 퀴즈 2차, 치과/피부과 등 개인정비",
+    "basis": "캘린더 기반",
+    "reading": "군 복무 중 학업 마감과 어학·휴가 관리."
+  },
+  {
+    "month": "2024.02",
+    "tracks": "회계원리 학습 및 정리, GRE V.R. Practice, HSK, 옥타기훈련, 출타교육",
+    "basis": "캘린더 기반",
+    "reading": "회계원리와 GRE/HSK, 군 훈련이 결합."
+  },
+  {
+    "month": "2024.03",
+    "tracks": "혹한기/중대전술훈련, 상병 신체검사, 군원격강좌, HSK, GS건설, 건축기사 필기 접수, 과제",
+    "basis": "캘린더 기반",
+    "reading": "건축·건설 관심이 군원격 학습과 함께 다시 등장."
+  },
+  {
+    "month": "2024.04",
+    "tracks": "JLPT 접수, HSK, 토플 결제, 오픽 등록, 소부대전술훈련, 과제 마감",
+    "basis": "캘린더 기반",
+    "reading": "어학시험과 군 훈련·과제가 동시에 진행."
+  },
+  {
+    "month": "2024.05",
+    "tracks": "TOEFL iBT/결과, 행정학개론, 과제 마감, 휴가 확정, 가족 일본여행, 지상합동훈련",
+    "basis": "캘린더 기반",
+    "reading": "어학·원격수업·휴가가 함께 움직인 달."
+  },
+  {
+    "month": "2024.06",
+    "tracks": "HTML/CSS 강좌 정리, 행정학개론, 건축기사 필기 접수, 1학기 종강, 사격훈련, 체력측정, 휴가",
+    "basis": "캘린더 기반",
+    "reading": "웹 개발 기초 학습이 등장. 후일 앱 개발로 이어질 기술 기반."
+  },
+  {
+    "month": "2024.07",
+    "tracks": "GRE, JLPT, OPIC 군인 증명, ITQ, ACTFL, 상담, 태권도, 주식 일부 매도",
+    "basis": "캘린더 기반",
+    "reading": "어학·자격·상담·자기관리 중심."
+  },
+  {
+    "month": "2024.08",
+    "tracks": "2학기 수강신청, 군원격수업, OPIC/HSK/ITQ, 집중인성교육, 휴가복귀, 상담신청",
+    "basis": "캘린더 기반",
+    "reading": "군원격 2학기와 어학/자격 관리."
+  },
+  {
+    "month": "2024.09",
+    "tracks": "2학기 개강, 군원격 교재/수강, OPIC, HSK 성적, 상담, 추석, 휴가/외박",
+    "basis": "캘린더 기반",
+    "reading": "군 복무 말기와 원격수업 병행."
+  },
+  {
+    "month": "2024.10",
+    "tracks": "휴가계획서, 상담신청, 로카우스, 치과, 생일, 자대배치, 휴가, 전투휴무",
+    "basis": "캘린더 기반",
+    "reading": "군 생활 전환/정리와 개인정비."
+  },
+  {
+    "month": "2024.11",
+    "tracks": "유격훈련, D-50, 전투휴무, 외박, 식기조, 배달음식, 당직",
+    "basis": "캘린더 기반",
+    "reading": "군 복무 말기 루틴."
+  },
+  {
+    "month": "2024.12",
+    "tracks": "대침투훈련, 휴가, 창업기숙사 입주 모집, 교육훈련, 전투휴무. React Native 앱 개발 단서 등장",
+    "basis": "캘린더+대화",
+    "reading": "군 복무 말기와 앱/창업 준비가 겹치기 시작."
+  },
+  {
+    "month": "2025.01",
+    "tracks": "IR 피칭자료 제작, 링커스 모집, 창업기숙사, 면접, 장학재단 기숙, 앱 서비스 기획",
+    "basis": "캘린더+대화",
+    "reading": "앱을 창업 아이템으로 설명하고 검증받는 단계."
+  },
+  {
+    "month": "2025.02",
+    "tracks": "예비창업패키지, UI 점검, 틱톡/인스타 국가별 계정, 정부지원 일정, 창업지원사업 자격 검토",
+    "basis": "캘린더+대화",
+    "reading": "예창패/정부지원사업과 UI·SNS 운영 준비."
+  },
+  {
+    "month": "2025.03",
+    "tracks": "SNAAC, 예창패, 베타테스트, AWS SES 재심사, 아산 보이저, 가상오피스/인감, 창업예정일, 창업중심대학",
+    "basis": "캘린더+대화",
+    "reading": "창업 실행 준비와 지원사업 자격 기준 검토가 매우 강한 달."
+  },
+  {
+    "month": "2025.04",
+    "tracks": "법인 설립, 법인계좌, 홈택스, 창업중심대학, 베타테스트, 영문 사업자등록, 용인 수지 사무실",
+    "basis": "캘린더+대화",
+    "reading": "개인 프로젝트가 실제 법인 운영으로 전환."
+  },
+  {
+    "month": "2025.05",
+    "tracks": "앱스토어 심사 신청, iOS 출시, EAS 플랜, 운영서버 통신, 등기변경신청",
+    "basis": "캘린더+대화",
+    "reading": "iOS 배포/심사와 Expo/EAS 운영이 중심."
+  },
+  {
+    "month": "2025.06",
+    "tracks": "EAS 플랜, 스페이스어스, 수지구 사무실, 우편물, 연사특강, 학교 복귀 준비",
+    "basis": "캘린더+대화",
+    "reading": "앱 운영 안정화와 사무공간/학교 복귀 준비."
+  },
+  {
+    "month": "2025.07",
+    "tracks": "법원 등기소 OTP, 관악 S밸리, 미니특강, 휴학서류, Google Play/API 정책, 1:1 Meet",
+    "basis": "캘린더+대화",
+    "reading": "Google Play 정책 대응과 정부지원사업 후속 탐색."
+  },
+  {
+    "month": "2025.08",
+    "tracks": "SNU IR CL, 인터뷰 결과, Techstars, YC 서류평가, 디캠프 오피스아워, 동문창업네트워크, 수강신청",
+    "basis": "캘린더+대화",
+    "reading": "IR/액셀러레이터/YC·Techstars와 복학 준비."
+  },
+  {
+    "month": "2025.09",
+    "tracks": "등록금, SNAAC 결과, 법인통장, 철골구조 과제, 조명 휴강, 세금 문제, 수지구 사무실",
+    "basis": "캘린더+대화",
+    "reading": "복학 후 건축공학 수업과 법인 운영 병행."
+  },
+  {
+    "month": "2025.10",
+    "tracks": "시험 범위, 철골구조 과제/중간고사, 설비시스템, 조명 시험, 사업요약 보고, 법인 세금",
+    "basis": "캘린더+대화",
+    "reading": "철골/조명/설비 중간고사와 사업자료 병행."
+  },
+  {
+    "month": "2025.11",
+    "tracks": "철골 과제, 코딩/심사, 프린터/16KB 메모리, 수영, 조명/설비 휴강, 철골 영상강의, 시험공부",
+    "basis": "캘린더+대화",
+    "reading": "건축 과제와 개발/코딩 이슈가 함께 남아 있음."
+  },
+  {
+    "month": "2025.12",
+    "tracks": "철골 기말, 조명 정리/기말, 설비시스템, 사임 서류, LinkedIn, TOEFL/GRE, 법인 정관/임원변경등기",
+    "basis": "캘린더+대화",
+    "reading": "기말고사와 법인 법무/등기 정리가 동시에 진행."
+  },
+  {
+    "month": "2026.01",
+    "tracks": "부가세 확정신고, 수강신청, 장바구니, 국어 과외, 파고다/러셀, 캡스톤/구조/환경 과목 인정 확인",
+    "basis": "캘린더+대화",
+    "reading": "세무와 1학기 과목 설계."
+  },
+  {
+    "month": "2026.02",
+    "tracks": "졸업신청서, 수강신청변경, 등록금, 수능특강, 국어 과외, 아마존 서버",
+    "basis": "캘린더+대화",
+    "reading": "졸업/수강 행정과 학습·서버 잔여 이슈."
+  },
+  {
+    "month": "2026.03",
+    "tracks": "건축환경설계, 캡스톤설계, 구조설계 과제, 스마트건설, 한국문학, 아시아미술, 발표문",
+    "basis": "캘린더+대화",
+    "reading": "건축공학 캡스톤 학기 본격 시작."
+  },
+  {
+    "month": "2026.04",
+    "tracks": "논문 방향, 지도교수 상담, 구조설계 중간, BIM, 건축환경설계, 아시아미술, TEPS",
+    "basis": "캘린더+대화",
+    "reading": "졸업논문 방향과 BIM/Revit 기반 프로젝트가 연결."
+  },
+  {
+    "month": "2026.05",
+    "tracks": "건축환경설계, 구조설계 과제, 캡스톤, 스마트건설, 아시아미술, TEPS, 예비군, Revit/GH/MIDAS 집중",
+    "basis": "캘린더+대화",
+    "reading": "캡스톤 구조 담당으로 Revit–Grasshopper–MIDAS 흐름이 폭발."
+  },
+  {
+    "month": "2026.06",
+    "tracks": "캡스톤 2차, 최종자료제출, 구조설계 기말, 졸업논문 발표, 건축환경설계, 스마트건설, 암기노트/지도 웹앱/MIDAS 문제",
+    "basis": "캘린더+대화",
+    "reading": "졸업논문·캡스톤·구조/환경 마감과 문제 해결이 집중."
+  }
+];
+
+const yearOptions = Array.from(new Set(monthlyRecords.map((item) => item.month.slice(0, 4))));
+
+export default function PersonalTimelinePage() {
+  const [selectedYear, setSelectedYear] = useState<string>("all");
+  const [query, setQuery] = useState("");
+
+  const filteredMonthly = useMemo(() => {
+    const normalized = query.trim().toLowerCase();
+    return monthlyRecords.filter((item) => {
+      const yearMatch = selectedYear === "all" || item.month.startsWith(selectedYear);
+      const textMatch =
+        !normalized ||
+        [item.month, item.tracks, item.basis, item.reading].join(" ").toLowerCase().includes(normalized);
+      return yearMatch && textMatch;
+    });
+  }, [query, selectedYear]);
+
+  const travelByYear = useMemo(() => {
+    return travelRecords.reduce<Record<string, TravelRecord[]>>((acc, record) => {
+      const year = record.date.slice(0, 4);
+      acc[year] = acc[year] || [];
+      acc[year].push(record);
+      return acc;
+    }, {});
+  }, []);
+
+  return (
+    <main className={styles.page}>
+      <section className={styles.hero}>
+        <div className={styles.heroCopy}>
+          <p className={styles.eyebrow}>Personal Archive · 2011–2026</p>
+          <h1>행적, 학업, 여행, 프로젝트를 하나의 타임라인으로.</h1>
+          <p className={styles.heroText}>
+            캘린더 스크린샷, 항공 마일리지 기록, 그리고 2024년 12월 이후 대화 기반 관심사를 합쳐
+            2022년 1월부터 2026년 6월까지의 월별 흐름을 정리했습니다.
+          </p>
+          <div className={styles.heroStats}>
+            <article><strong>54</strong><span>월별 기록</span></article>
+            <article><strong>53</strong><span>대한항공 탑승 횟수</span></article>
+            <article><strong>8</strong><span>핵심 시기 구분</span></article>
+          </div>
+        </div>
+        <div className={styles.heroVisual} aria-hidden="true">
+          <div className={styles.orbitOne} />
+          <div className={styles.orbitTwo} />
+          <div className={styles.stackCard}>
+            <span>2026.06</span>
+            <strong>Capstone · MIDAS · Thesis</strong>
+          </div>
+          <div className={styles.stackCardAlt}>
+            <span>2025.03</span>
+            <strong>Startup · Beta · Incorporation</strong>
+          </div>
+          <div className={styles.stackCardThird}>
+            <span>2022.09</span>
+            <strong>Grasshopper · Architecture</strong>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.sectionTitle}>
+          <p className={styles.eyebrow}>Education</p>
+          <h2>학력·기관 타임라인</h2>
+          <p>학교명이 제공되지 않은 초·중·고는 단계명과 학제 기준으로만 표시했습니다.</p>
+        </div>
+        <div className={styles.educationGrid}>
+          {education.map((item) => (
+            <article key={item.stage} className={styles.educationCard}>
+              <span>{item.period}</span>
+              <h3>{item.stage}</h3>
+              <p>{item.detail}</p>
+              <div>{item.keywords.map((tag) => <em key={tag}>#{tag}</em>)}</div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.phaseSection}>
+        <div className={styles.sectionTitle}>
+          <p className={styles.eyebrow}>Macro Flow</p>
+          <h2>큰 흐름</h2>
+          <p>건축 전공, 군 복무 중 학업, 앱 창업, 복학 후 구조해석까지 이어지는 축입니다.</p>
+        </div>
+        <div className={styles.phaseList}>
+          {phases.map((phase, index) => (
+            <article key={phase.period}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div>
+                <strong>{phase.period} · {phase.title}</strong>
+                <p>{phase.detail}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.sectionTitle}>
+          <p className={styles.eyebrow}>Travel</p>
+          <h2>항공·여행 기록</h2>
+          <p>대한항공 앱 마일리지 화면에서 확인되는 기록을 연도별로 정리했습니다.</p>
+        </div>
+        <div className={styles.travelYears}>
+          {Object.entries(travelByYear).map(([year, records]) => (
+            <article key={year} className={styles.travelYear}>
+              <h3>{year}</h3>
+              <div className={styles.travelTable}>
+                {records.map((record) => (
+                  <div key={`${record.date}-${record.route}-${record.carrier}`} className={styles.travelRow}>
+                    <span>{record.date}</span>
+                    <strong>{record.route}</strong>
+                    <small>{record.carrier}</small>
+                    <b>{record.miles}마일</b>
+                    <em>{record.note}</em>
+                  </div>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.timelineSection}>
+        <div className={styles.timelineHeader}>
+          <div>
+            <p className={styles.eyebrow}>Monthly Timeline</p>
+            <h2>2022.01–2026.06 월별 행적</h2>
+            <p>검색어와 연도로 필터링할 수 있도록 데이터 배열 기반으로 구성했습니다.</p>
+          </div>
+          <div className={styles.filters}>
+            <select value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
+              <option value="all">전체 연도</option>
+              {yearOptions.map((year) => <option key={year} value={year}>{year}</option>)}
+            </select>
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="예: MIDAS, 창업, 철골, HSK"
+            />
+          </div>
+        </div>
+        <div className={styles.monthGrid}>
+          {filteredMonthly.map((item) => (
+            <article key={item.month} className={styles.monthCard}>
+              <div className={styles.monthTop}>
+                <span>{item.month}</span>
+                <em>{item.basis}</em>
+              </div>
+              <h3>{item.tracks}</h3>
+              <p>{item.reading}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}
