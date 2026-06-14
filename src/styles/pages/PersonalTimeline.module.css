@@ -1,45 +1,43 @@
 .page {
   min-height: 100vh;
-  background: #f5f7fb;
+  background: #f6f8fc;
   color: #111827;
   word-break: keep-all;
 }
 
 .hero,
 .integratedSection,
-.timelineSection,
-.routeSection,
 .monthSection {
-  padding: clamp(72px, 9vw, 128px) clamp(20px, 6vw, 96px);
+  padding: clamp(68px, 9vw, 126px) clamp(20px, 6vw, 96px);
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 92vh;
   display: grid;
   align-items: center;
-  background:
-    radial-gradient(circle at 14% 18%, rgba(37, 99, 235, 0.12), transparent 28%),
-    radial-gradient(circle at 78% 24%, rgba(15, 23, 42, 0.10), transparent 30%),
-    linear-gradient(180deg, #ffffff 0%, #eef3f9 100%);
   overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 18%, rgba(37, 99, 235, 0.12), transparent 30%),
+    radial-gradient(circle at 82% 20%, rgba(15, 23, 42, 0.10), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, #edf3fb 100%);
 }
 
 .heroGrid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 480px);
-  gap: clamp(32px, 7vw, 96px);
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 450px);
+  gap: clamp(30px, 6vw, 86px);
   align-items: center;
 }
 
 .heroCopy {
-  max-width: 880px;
+  max-width: 860px;
 }
 
 .eyebrow {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   color: #2563eb;
-  font-size: 13px;
-  font-weight: 900;
+  font-size: 12px;
+  font-weight: 950;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -49,8 +47,8 @@
 .sectionHeaderCompact h2 {
   margin: 0;
   color: #0f172a;
-  font-size: clamp(42px, 7vw, 84px);
-  line-height: 1.04;
+  font-size: clamp(42px, 7vw, 82px);
+  line-height: 1.02;
   letter-spacing: -0.075em;
   font-weight: 950;
 }
@@ -58,11 +56,11 @@
 .heroText,
 .sectionHeader p,
 .sectionHeaderCompact p {
-  max-width: 820px;
-  margin: 26px 0 0;
+  max-width: 760px;
+  margin: 22px 0 0;
   color: #475569;
-  font-size: clamp(17px, 1.7vw, 21px);
-  line-height: 1.75;
+  font-size: clamp(17px, 1.6vw, 21px);
+  line-height: 1.72;
   letter-spacing: -0.02em;
 }
 
@@ -70,31 +68,30 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  margin-top: 42px;
+  margin-top: 38px;
 }
 
 .heroStats article,
 .heroCard,
-.routeCard,
 .groupInspector,
-.schoolCard,
-.routeList article,
-.monthCard {
+.routeCard,
+.monthCard,
+.routeChip {
   border: 1px solid rgba(15, 23, 42, 0.08);
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 24px 78px rgba(15, 23, 42, 0.08);
   backdrop-filter: blur(18px);
 }
 
 .heroStats article {
-  padding: 22px;
-  border-radius: 26px;
+  padding: 21px;
+  border-radius: 24px;
 }
 
 .heroStats strong {
   display: block;
   color: #0f172a;
-  font-size: 26px;
+  font-size: clamp(22px, 2.2vw, 28px);
   letter-spacing: -0.06em;
 }
 
@@ -102,56 +99,56 @@
   display: block;
   margin-top: 8px;
   color: #64748b;
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 850;
 }
 
 .heroCard {
   position: relative;
-  padding: 34px;
-  border-radius: 42px;
-  transform: rotate(-1.5deg);
+  padding: 30px;
+  border-radius: 38px;
+  transform: rotate(-1.2deg);
 }
 
 .heroCard::before {
   content: "";
   position: absolute;
-  inset: 22px;
-  border: 1px solid rgba(37, 99, 235, 0.18);
-  border-radius: 30px;
+  inset: 20px;
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  border-radius: 28px;
   pointer-events: none;
 }
 
 .heroCardTop {
   position: relative;
-  padding: 34px 28px;
-  border-radius: 30px;
+  padding: 30px 26px;
+  border-radius: 28px;
   color: #ffffff;
   background: linear-gradient(135deg, #0f172a, #1d4ed8);
 }
 
 .heroCardTop span {
   display: block;
-  color: rgba(255, 255, 255, 0.64);
-  font-size: 13px;
-  font-weight: 900;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 12px;
+  font-weight: 950;
   text-transform: uppercase;
 }
 
 .heroCardTop strong {
   display: block;
   margin-top: 12px;
-  font-size: 34px;
-  line-height: 1.05;
+  font-size: clamp(28px, 3vw, 34px);
+  line-height: 1.07;
   letter-spacing: -0.07em;
 }
 
 .heroCard p {
   position: relative;
-  margin: 26px 0 0;
+  margin: 24px 0 0;
   color: #475569;
-  font-size: 17px;
-  line-height: 1.75;
+  font-size: 16px;
+  line-height: 1.72;
 }
 
 .integratedSection {
@@ -169,162 +166,96 @@
 }
 
 .integratedSection .sectionHeader p {
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(255, 255, 255, 0.68);
 }
 
 .sectionHeader {
   max-width: 980px;
-  margin-bottom: 54px;
+  margin-bottom: 46px;
 }
 
 .sectionHeader h2,
 .sectionHeaderCompact h2 {
-  font-size: clamp(36px, 5vw, 64px);
+  font-size: clamp(34px, 5vw, 62px);
+}
+
+.lifeMapShell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 480px);
+  gap: 22px;
+  align-items: stretch;
 }
 
 .mapPanel {
   position: relative;
-  min-height: 760px;
-  border-radius: 48px;
+  min-height: 720px;
+  border-radius: 44px;
   overflow: hidden;
-  background: #eaf1f8;
-  box-shadow: 0 34px 120px rgba(0, 0, 0, 0.38);
+  background: #dbeafe;
+  box-shadow: 0 34px 120px rgba(0, 0, 0, 0.36);
 }
 
-.worldMap {
+.googleMap {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
 }
 
-.land {
-  fill: rgba(255, 255, 255, 0.82);
-  stroke: rgba(15, 23, 42, 0.06);
-  stroke-width: 1;
-  filter: url(#softShadow);
-}
-
-.gridLine {
-  stroke: rgba(37, 99, 235, 0.08);
-  stroke-width: 1;
-}
-
-.routePath {
-  fill: none;
-  stroke-width: 2.6;
-  stroke-linecap: round;
-  opacity: 0.32;
-  stroke-dasharray: 8 10;
-  animation: routeFlow 8s linear infinite;
-}
-
-.activeRoute {
-  opacity: 1;
-  stroke-width: 4;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  pathLength: 1;
-  animation: drawRoute 2.2s ease-in-out infinite;
-}
-
-.route-domestic { stroke: #0ea5e9; }
-.route-asia { stroke: #2563eb; }
-.route-america { stroke: #ef4444; }
-.route-europe { stroke: #7c3aed; }
-
-.cityDot circle {
-  fill: #0f172a;
-  opacity: 0.84;
-}
-
-.cityDot text {
-  fill: #0f172a;
-  font-size: 11px;
-  font-weight: 900;
-  opacity: 0.72;
-}
-
-.plane path {
-  fill: #0f172a;
-  filter: drop-shadow(0 8px 12px rgba(15, 23, 42, 0.25));
-}
-
-.routeCard {
+.mapFallback {
   position: absolute;
-  left: 28px;
-  bottom: 28px;
-  z-index: 4;
-  width: min(420px, calc(100% - 56px));
-  padding: 24px;
-  border-radius: 30px;
-}
-
-.routeCard span,
-.groupInspector > span,
-.schoolCard > span,
-.routeList article > span,
-.monthTop > span {
-  display: block;
-  color: #2563eb;
-  font-size: 12px;
-  font-weight: 950;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.routeCard strong {
-  display: block;
-  margin-top: 10px;
+  left: 24px;
+  top: 24px;
+  right: 24px;
+  z-index: 6;
+  padding: 16px 18px;
+  border-radius: 22px;
   color: #0f172a;
-  font-size: 23px;
-  letter-spacing: -0.055em;
-}
-
-.routeCard p {
-  margin: 10px 0 0;
-  color: #64748b;
-  line-height: 1.55;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.16);
+  font-weight: 850;
 }
 
 .integratedNodes {
   position: absolute;
   inset: 0;
-  z-index: 3;
+  z-index: 4;
+  pointer-events: none;
 }
 
 .mapNode {
   position: absolute;
-  min-width: 172px;
-  padding: 14px 16px;
+  min-width: 164px;
+  padding: 13px 15px;
   border: 1px solid rgba(15, 23, 42, 0.12);
   border-radius: 999px;
   color: #0f172a;
-  background: rgba(255, 255, 255, 0.76);
-  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 58px rgba(15, 23, 42, 0.14);
   backdrop-filter: blur(16px);
   cursor: pointer;
   text-align: left;
   transform: translate(-50%, -50%);
   transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  pointer-events: auto;
 }
 
 .mapNode:hover {
-  transform: translate(-50%, -54%);
-  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.18);
+  transform: translate(-50%, -55%);
+  box-shadow: 0 28px 78px rgba(15, 23, 42, 0.20);
 }
 
 .mapNode span {
   display: block;
   color: #64748b;
-  font-size: 11px;
-  font-weight: 900;
+  font-size: 10px;
+  font-weight: 950;
 }
 
 .mapNode strong {
   display: block;
   margin-top: 4px;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: -0.035em;
 }
 
@@ -335,19 +266,69 @@
 }
 
 .activeMapNode span {
-  color: rgba(255, 255, 255, 0.62);
+  color: rgba(255, 255, 255, 0.64);
+}
+
+.routeCard {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  z-index: 5;
+  width: min(410px, calc(100% - 48px));
+  padding: 22px;
+  border-radius: 28px;
+}
+
+.routeCard span,
+.groupInspector > span,
+.monthTop > span,
+.routeChip span {
+  display: block;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.routeCard strong {
+  display: block;
+  margin-top: 9px;
+  color: #0f172a;
+  font-size: 21px;
+  letter-spacing: -0.055em;
+}
+
+.routeCard p {
+  margin: 9px 0 0;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.routeButtons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.routeButtons button {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #0f172a;
+  font-size: 13px;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 .groupInspector {
-  position: absolute;
-  top: 28px;
-  right: 28px;
-  z-index: 5;
-  width: min(460px, calc(100% - 56px));
-  max-height: calc(100% - 56px);
+  align-self: stretch;
+  max-height: 720px;
   overflow: auto;
   padding: 28px;
-  border-radius: 36px;
+  border-radius: 38px;
 }
 
 .groupInspector h3 {
@@ -360,7 +341,7 @@
 .groupInspector p {
   margin: 12px 0 0;
   color: #475569;
-  line-height: 1.7;
+  line-height: 1.68;
 }
 
 .subgroupStack {
@@ -416,56 +397,85 @@
 }
 
 .quiet {
-  opacity: 0.7;
+  opacity: 0.72;
 }
 
-.timelineSection,
-.routeSection {
-  background: #ffffff;
-}
-
-.schoolRail {
+.routeStatsInline {
   display: grid;
-  grid-template-columns: repeat(5, minmax(240px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.routeStatsInline article {
+  padding: 14px;
+  border-radius: 18px;
+  background: #eff6ff;
+}
+
+.routeStatsInline strong {
+  display: block;
+  color: #0f172a;
+  font-size: 18px;
+  letter-spacing: -0.045em;
+}
+
+.routeStatsInline span {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.routeStrip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(180px, 230px);
+  gap: 10px;
+  margin-top: 22px;
   overflow-x: auto;
   padding-bottom: 8px;
 }
 
-.schoolCard {
-  min-width: 260px;
-  padding: 26px;
-  border-radius: 34px;
+.routeChip {
+  padding: 16px;
+  border-radius: 22px;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
-.schoolCard h3 {
-  margin: 12px 0 0;
+.routeChip:hover {
+  transform: translateY(-2px);
+}
+
+.routeChip strong {
+  display: block;
+  margin-top: 8px;
   color: #0f172a;
-  font-size: 25px;
-  letter-spacing: -0.06em;
+  font-size: 18px;
+  letter-spacing: -0.05em;
 }
 
-.schoolCard p {
-  margin: 16px 0 0;
-  color: #475569;
-  line-height: 1.7;
-}
-
-.schoolCard div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 20px;
-}
-
-.schoolCard em {
-  padding: 8px 10px;
-  border-radius: 999px;
-  color: #1d4ed8;
-  background: #eff6ff;
-  font-size: 12px;
+.routeChip em {
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
   font-style: normal;
-  font-weight: 900;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.activeRouteChip {
+  border-color: #93c5fd;
+  background: #eff6ff;
+}
+
+.monthSection {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.08), transparent 26%),
+    #f8fafc;
 }
 
 .sectionHeaderCompact {
@@ -478,65 +488,6 @@
 
 .sectionHeaderCompact > div:first-child {
   max-width: 760px;
-}
-
-.routeStats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(110px, 1fr));
-  gap: 10px;
-  min-width: 420px;
-}
-
-.routeStats article {
-  padding: 18px;
-  border-radius: 24px;
-  background: #f8fafc;
-}
-
-.routeStats strong {
-  display: block;
-  color: #0f172a;
-  font-size: 25px;
-  letter-spacing: -0.06em;
-}
-
-.routeStats span {
-  display: block;
-  margin-top: 6px;
-  color: #64748b;
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.routeList {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(220px, 1fr));
-  gap: 12px;
-}
-
-.routeList article {
-  padding: 22px;
-  border-radius: 28px;
-}
-
-.routeList strong {
-  display: block;
-  margin-top: 10px;
-  color: #0f172a;
-  font-size: 23px;
-  letter-spacing: -0.055em;
-}
-
-.routeList p {
-  margin: 10px 0 0;
-  color: #64748b;
-  line-height: 1.6;
-}
-
-.monthSection {
-  background:
-    radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.08), transparent 26%),
-    #f8fafc;
 }
 
 .yearTabs {
@@ -619,66 +570,40 @@
   margin-top: 6px;
 }
 
-@keyframes routeFlow {
-  from { stroke-dashoffset: 0; }
-  to { stroke-dashoffset: -90; }
-}
-
-@keyframes drawRoute {
-  0% { stroke-dashoffset: 1; }
-  48% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: -1; }
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1180px) {
   .heroGrid,
+  .lifeMapShell,
   .sectionHeaderCompact {
     grid-template-columns: 1fr;
     display: grid;
   }
 
   .heroStats,
-  .routeStats,
   .monthGrid {
     grid-template-columns: 1fr 1fr;
   }
 
-  .routeList {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .mapPanel,
+  .groupInspector {
+    min-height: auto;
+    max-height: none;
   }
 
   .mapPanel {
-    min-height: 960px;
-  }
-
-  .groupInspector {
-    top: auto;
-    right: 20px;
-    left: 20px;
-    bottom: 132px;
-    width: auto;
-    max-height: 360px;
-  }
-
-  .routeCard {
-    bottom: 20px;
-    left: 20px;
+    height: 720px;
   }
 }
 
 @media (max-width: 720px) {
   .hero,
   .integratedSection,
-  .timelineSection,
-  .routeSection,
   .monthSection {
-    padding: 64px 16px;
+    padding: 62px 16px;
   }
 
   .heroStats,
-  .routeStats,
-  .monthGrid,
-  .routeList {
+  .routeStatsInline,
+  .monthGrid {
     grid-template-columns: 1fr;
   }
 
@@ -687,29 +612,28 @@
   }
 
   .mapPanel {
-    min-height: 1100px;
-    border-radius: 32px;
+    height: 780px;
+    border-radius: 30px;
   }
 
   .mapNode {
-    min-width: 150px;
-    padding: 12px 14px;
+    min-width: 142px;
+    padding: 11px 13px;
+  }
+
+  .routeCard {
+    left: 16px;
+    bottom: 16px;
+    width: calc(100% - 32px);
+    padding: 18px;
   }
 
   .groupInspector {
-    max-height: 430px;
-    padding: 20px;
+    padding: 22px;
+    border-radius: 30px;
   }
 
   .groupInspector h3 {
-    font-size: 28px;
-  }
-
-  .worldMap {
-    height: 56%;
-  }
-
-  .integratedNodes {
-    bottom: 42%;
+    font-size: 29px;
   }
 }
