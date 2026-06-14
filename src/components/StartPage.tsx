@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import Script from "next/script";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
@@ -22,7 +23,7 @@ type Lang =
   | "pt"
   | "ru";
 
-type SlideKey = "coffee" | "bread" | "tempura" | "cat" | "pigeon";
+type WordKey = "airBalloon" | "bowl" | "fish" | "shoes" | "sushi";
 
 type CountryItem = {
   name: string;
@@ -31,102 +32,159 @@ type CountryItem = {
   iso2?: string;
 };
 
+type WordAsset = {
+  key: WordKey;
+  label: string;
+  meaning: string;
+  description: string;
+  pngSrc: string;
+  modelSrc: string;
+};
+
 interface StartPageProps {
   onFinish?: () => void;
 }
 
 const FINISH_PATH = "/login";
 
+const MODEL_VIEWER_SRC =
+  "https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js";
+
 const BG_IMG = "/assets/AbrodyFoxBB.png";
 const START_STUDY_IMG = "/images/AbrodyStudy.png";
 
-const EXAMPLE_WORDS: Record<
-  Lang,
-  Record<SlideKey, string>
-> = {
+const WORD_ASSETS: WordAsset[] = [
+  {
+    key: "airBalloon",
+    label: "air balloon",
+    meaning: "열기구",
+    description:
+      "A large balloon filled with hot air that carries people in a basket through the sky.",
+    pngSrc: "/air_balloon_model.png",
+    modelSrc: "/air_balloon_model.glb",
+  },
+  {
+    key: "bowl",
+    label: "bowl",
+    meaning: "그릇",
+    description:
+      "A round, open container used for holding food such as soup, rice, cereal, or salad.",
+    pngSrc: "/bowl_model.png",
+    modelSrc: "/bowl_model.glb",
+  },
+  {
+    key: "fish",
+    label: "fish",
+    meaning: "물고기",
+    description:
+      "An animal that lives in water, breathes through gills, and usually swims with fins.",
+    pngSrc: "/fish_model.png",
+    modelSrc: "/fish_model.glb",
+  },
+  {
+    key: "shoes",
+    label: "shoes",
+    meaning: "신발",
+    description:
+      "Things you wear on your feet to protect them when walking, running, or going outside.",
+    pngSrc: "/shoes_model.png",
+    modelSrc: "/shoes_model.glb",
+  },
+  {
+    key: "sushi",
+    label: "sushi",
+    meaning: "초밥",
+    description:
+      "A Japanese food often made with vinegared rice and toppings such as fish, seafood, or vegetables.",
+    pngSrc: "/sushi_model.png",
+    modelSrc: "/sushi_model.glb",
+  },
+];
+
+const WORD_LABELS: Record<Lang, Record<WordKey, string>> = {
   en: {
-    coffee: "coffee",
-    bread: "bread",
-    tempura: "tempura",
-    cat: "cat",
-    pigeon: "pigeon",
+    airBalloon: "air balloon",
+    bowl: "bowl",
+    fish: "fish",
+    shoes: "shoes",
+    sushi: "sushi",
   },
   ko: {
-    coffee: "커피",
-    bread: "빵",
-    tempura: "덴푸라",
-    cat: "고양이",
-    pigeon: "비둘기",
+    airBalloon: "열기구",
+    bowl: "그릇",
+    fish: "물고기",
+    shoes: "신발",
+    sushi: "초밥",
   },
   ja: {
-    coffee: "コーヒー",
-    bread: "パン",
-    tempura: "天ぷら",
-    cat: "猫",
-    pigeon: "ハト",
+    airBalloon: "気球",
+    bowl: "ボウル",
+    fish: "魚",
+    shoes: "靴",
+    sushi: "寿司",
   },
   zh: {
-    coffee: "咖啡",
-    bread: "面包",
-    tempura: "天妇罗",
-    cat: "猫",
-    pigeon: "鸽子",
+    airBalloon: "热气球",
+    bowl: "碗",
+    fish: "鱼",
+    shoes: "鞋",
+    sushi: "寿司",
   },
   es: {
-    coffee: "café",
-    bread: "pan",
-    tempura: "tempura",
-    cat: "gato",
-    pigeon: "paloma",
+    airBalloon: "globo",
+    bowl: "cuenco",
+    fish: "pez",
+    shoes: "zapatos",
+    sushi: "sushi",
   },
   fr: {
-    coffee: "café",
-    bread: "pain",
-    tempura: "tempura",
-    cat: "chat",
-    pigeon: "pigeon",
+    airBalloon: "montgolfière",
+    bowl: "bol",
+    fish: "poisson",
+    shoes: "chaussures",
+    sushi: "sushi",
   },
   de: {
-    coffee: "Kaffee",
-    bread: "Brot",
-    tempura: "Tempura",
-    cat: "Katze",
-    pigeon: "Taube",
+    airBalloon: "Heißluftballon",
+    bowl: "Schüssel",
+    fish: "Fisch",
+    shoes: "Schuhe",
+    sushi: "Sushi",
   },
   ar: {
-    coffee: "قهوة",
-    bread: "خبز",
-    tempura: "تمبورا",
-    cat: "قطة",
-    pigeon: "حمامة",
+    airBalloon: "منطاد",
+    bowl: "وعاء",
+    fish: "سمكة",
+    shoes: "أحذية",
+    sushi: "سوشي",
   },
   it: {
-    coffee: "caffè",
-    bread: "pane",
-    tempura: "tempura",
-    cat: "gatto",
-    pigeon: "piccione",
+    airBalloon: "mongolfiera",
+    bowl: "ciotola",
+    fish: "pesce",
+    shoes: "scarpe",
+    sushi: "sushi",
   },
   pt: {
-    coffee: "café",
-    bread: "pão",
-    tempura: "tempurá",
-    cat: "gato",
-    pigeon: "pombo",
+    airBalloon: "balão",
+    bowl: "tigela",
+    fish: "peixe",
+    shoes: "sapatos",
+    sushi: "sushi",
   },
   ru: {
-    coffee: "кофе",
-    bread: "хлеб",
-    tempura: "темпура",
-    cat: "кот",
-    pigeon: "голубь",
+    airBalloon: "шар",
+    bowl: "миска",
+    fish: "рыба",
+    shoes: "обувь",
+    sushi: "суши",
   },
   hi: {
-    coffee: "कॉफी",
-    bread: "रोटी",
-    tempura: "टेम्पुरा",
-    cat: "बिल्ली",
-    pigeon: "कबूतर",
+    airBalloon: "गुब्बारा",
+    bowl: "कटोरा",
+    fish: "मछली",
+    shoes: "जूते",
+    sushi: "सुशी",
   },
 };
 
@@ -164,17 +222,6 @@ const languages: Array<{
   { name: "Italian", code: "it", flag: "/assets/flags/italy-flag.png" },
 ];
 
-const slides: Array<{
-  src: string;
-  key: SlideKey;
-}> = [
-  { src: "/assets/imageVocab_1.png", key: "coffee" },
-  { src: "/assets/imageVocab_2.png", key: "bread" },
-  { src: "/assets/imageVocab_3.png", key: "tempura" },
-  { src: "/assets/imageVocab_4.png", key: "cat" },
-  { src: "/assets/imageVocab_5.png", key: "pigeon" },
-];
-
 function pickN<T>(arr: T[], n: number): T[] {
   const copy = [...arr];
 
@@ -200,16 +247,40 @@ function randomTilePosition() {
   };
 }
 
-function MovingTile({
+function ModelViewer({
   src,
-  wordKey,
-  index,
+  poster,
+  label,
 }: {
   src: string;
-  wordKey: SlideKey;
+  poster: string;
+  label: string;
+}) {
+  return React.createElement("model-viewer", {
+    src,
+    poster,
+    alt: label,
+    class: styles.tileModel,
+    "aria-label": label,
+    "auto-rotate": true,
+    "camera-controls": false,
+    "disable-zoom": true,
+    "interaction-prompt": "none",
+    "shadow-intensity": "0.45",
+    "environment-image": "neutral",
+    loading: "lazy",
+    reveal: "auto",
+  });
+}
+
+function MovingTile({
+  item,
+  index,
+}: {
+  item: WordAsset;
   index: number;
 }) {
-  const [label, setLabel] = useState(EXAMPLE_WORDS.en[wordKey]);
+  const [label, setLabel] = useState(WORD_LABELS.en[item.key]);
   const [pos, setPos] = useState(() => randomTilePosition());
 
   useEffect(() => {
@@ -219,7 +290,7 @@ function MovingTile({
       const next = LANG_CODES[Math.floor(Math.random() * LANG_CODES.length)];
 
       if (alive) {
-        setLabel(EXAMPLE_WORDS[next][wordKey]);
+        setLabel(WORD_LABELS[next][item.key]);
         setPos(randomTilePosition());
       }
     };
@@ -230,7 +301,7 @@ function MovingTile({
       alive = false;
       window.clearInterval(interval);
     };
-  }, [index, wordKey]);
+  }, [index, item.key]);
 
   return (
     <motion.div
@@ -250,7 +321,17 @@ function MovingTile({
         top: { duration: 5.2, ease: "easeInOut" },
       }}
     >
-      <img src={src} alt="" className={styles.tileImage} draggable={false} />
+      <img
+        src={item.pngSrc}
+        alt=""
+        className={styles.tilePoster}
+        draggable={false}
+      />
+
+      <div className={styles.tileModelLayer} aria-hidden>
+        <ModelViewer src={item.modelSrc} poster={item.pngSrc} label={item.label} />
+      </div>
+
       <span className={styles.tileLabel}>{label}</span>
     </motion.div>
   );
@@ -275,7 +356,7 @@ export default function StartPage({ onFinish }: StartPageProps) {
 
   const [visibleIdxs, setVisibleIdxs] = useState<number[]>(() => {
     const count = Math.random() < 0.5 ? 2 : 3;
-    return pickN(slides.map((_, i) => i), count);
+    return pickN(WORD_ASSETS.map((_, i) => i), count);
   });
 
   const dragStartY = useRef<number | null>(null);
@@ -311,7 +392,7 @@ export default function StartPage({ onFinish }: StartPageProps) {
       if (!active) return;
 
       const count = Math.random() < 0.5 ? 2 : 3;
-      setVisibleIdxs(pickN(slides.map((_, i) => i), count));
+      setVisibleIdxs(pickN(WORD_ASSETS.map((_, i) => i), count));
     };
 
     const interval = window.setInterval(cycle, 3400);
@@ -438,38 +519,29 @@ export default function StartPage({ onFinish }: StartPageProps) {
     dragStartY.current = null;
   };
 
-  const handleCountrySelection = (name: string) => {
-    setSelectedOriginCountry(name);
-  };
-
-  const handleLanguageSelection = (code: Lang) => {
-    setSelectedLanguage(code);
-  };
-
   const visibleCountries = showAllCountries
     ? countryList
     : countryList.slice(0, 15);
 
   return (
     <>
+      <Script
+        id="model-viewer"
+        type="module"
+        src={MODEL_VIEWER_SRC}
+        strategy="afterInteractive"
+      />
+
       {showInitialContent && !animationDone && (
         <motion.main
           className={styles.container}
           initial={false}
-          animate={
-            isStarted
-              ? { opacity: 0 }
-              : { opacity: 1 }
-          }
+          animate={isStarted ? { opacity: 0 } : { opacity: 1 }}
           transition={{ duration: 0.46, delay: isStarted ? 0.22 : 0 }}
         >
           <motion.section
             className={styles.heroWrap}
-            animate={
-              isStarted
-                ? { scale: 2.65, y: 110 }
-                : { scale: 1, y: 0 }
-            }
+            animate={isStarted ? { scale: 2.65, y: 110 } : { scale: 1, y: 0 }}
             transition={{ duration: 0.58, ease: "easeInOut" }}
           >
             <img
@@ -484,13 +556,12 @@ export default function StartPage({ onFinish }: StartPageProps) {
             <div className={styles.tilesLayer} aria-hidden>
               <AnimatePresence mode="popLayout">
                 {visibleIdxs.map((i) => {
-                  const slide = slides[i];
+                  const item = WORD_ASSETS[i];
 
                   return (
                     <MovingTile
-                      key={`${slide.key}-${i}`}
-                      src={slide.src}
-                      wordKey={slide.key}
+                      key={`${item.key}-${i}`}
+                      item={item}
                       index={i}
                     />
                   );
@@ -527,7 +598,7 @@ export default function StartPage({ onFinish }: StartPageProps) {
             <p className={styles.description}>
               {tt(
                 "startpage.descriptionLine1",
-                "Turn photos, places, and everyday objects"
+                "Turn photos, objects, and 3D models"
               )}
               <br />
               {tt(
@@ -578,10 +649,7 @@ export default function StartPage({ onFinish }: StartPageProps) {
 
                   <p className={styles.modalLead}>
                     {step === 1
-                      ? tt(
-                          "select_country_prompt",
-                          "Choose your country first."
-                        )
+                      ? tt("select_country_prompt", "Choose your country first.")
                       : tt(
                           "select_language_prompt",
                           "Choose the language you want to learn with."
@@ -623,7 +691,7 @@ export default function StartPage({ onFinish }: StartPageProps) {
                                       selected ? styles.flagButtonActive : ""
                                     }`}
                                     onClick={() =>
-                                      handleCountrySelection(country.name)
+                                      setSelectedOriginCountry(country.name)
                                     }
                                   >
                                     <img
@@ -687,7 +755,7 @@ export default function StartPage({ onFinish }: StartPageProps) {
                                       selected ? styles.flagButtonActive : ""
                                     }`}
                                     onClick={() =>
-                                      handleLanguageSelection(language.code)
+                                      setSelectedLanguage(language.code)
                                     }
                                   >
                                     <img
