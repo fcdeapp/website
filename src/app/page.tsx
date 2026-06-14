@@ -1,17 +1,10 @@
 "use client";
 
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {
-  AnimatePresence,
-  motion,
-  Variants,
-  useMotionValue,
-  useSpring,
-  useTransform,
-} from "framer-motion";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 import styles from "../styles/Home.module.css";
 import WebFooter from "../components/WebFooter";
 
@@ -27,6 +20,17 @@ type IVItem = {
   examples: string[];
   src: string;
   modelSrc: string;
+};
+
+type FeatureItem = {
+  index: string;
+  title: string;
+  body: string;
+};
+
+type DownloadLink = {
+  label: string;
+  href: string;
 };
 
 const LANGUAGES = ["English", "Français", "Español", "中文", "日本語", "한국어"];
@@ -100,18 +104,54 @@ const INITIAL_IV_ITEMS: IVItem[] = [
   },
 ];
 
-const heroParent: Variants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.08,
-    },
+const HOW_ITEMS: FeatureItem[] = [
+  {
+    index: "01",
+    title: "Take a photo",
+    body: "Start from real scenes around you instead of a fixed textbook list.",
   },
-};
+  {
+    index: "02",
+    title: "Find visual words",
+    body: "Objects in the photo become vocabulary cards with meaning and examples.",
+  },
+  {
+    index: "03",
+    title: "Review quickly",
+    body: "Short sessions help you remember words through moments you actually saw.",
+  },
+];
 
-const titleReveal: Variants = {
-  hidden: { opacity: 0, y: 18 },
+const PRACTICE_ITEMS: FeatureItem[] = [
+  {
+    index: "A",
+    title: "Personal context",
+    body: "Words are connected to your own photos, so they feel easier to recall.",
+  },
+  {
+    index: "B",
+    title: "3D-style exploration",
+    body: "Selected cards can open a model preview to make the word more concrete.",
+  },
+  {
+    index: "C",
+    title: "Light daily rhythm",
+    body: "Abrody is designed to be opened often, even when you only have a minute.",
+  },
+];
+
+const IOS_LINKS: DownloadLink[] = [
+  { label: "Canada", href: "https://apps.apple.com/ca/app/id6743047157" },
+  { label: "Australia", href: "https://apps.apple.com/au/app/id6743047157" },
+  { label: "UK", href: "https://apps.apple.com/gb/app/id6743047157" },
+  { label: "Korea", href: "https://apps.apple.com/kr/app/id6743047157" },
+];
+
+const ANDROID_LINK =
+  "https://play.google.com/store/apps/details?id=com.fcdeapp.facade";
+
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 22 },
   visible: {
     opacity: 1,
     y: 0,
@@ -119,25 +159,12 @@ const titleReveal: Variants = {
   },
 };
 
-const wordReveal: Variants = {
-  hidden: { opacity: 0, y: 16, filter: "blur(6px)" },
+const stagger: Variants = {
+  hidden: {},
   visible: {
-    opacity: 1,
-    y: 0,
-    filter: "blur(0px)",
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
-
-const floatOrb: Variants = {
-  initial: { y: 0, rotate: 0 },
-  animate: {
-    y: [-4, 7, -2, 0],
-    rotate: [0, 1.1, -0.6, 0],
     transition: {
-      duration: 7,
-      repeat: Infinity,
-      ease: "easeInOut",
+      staggerChildren: 0.08,
+      delayChildren: 0.08,
     },
   },
 };
@@ -151,58 +178,32 @@ export default function Home() {
   const [loadingModelSrc, setLoadingModelSrc] = useState<string | null>(null);
   const [activeModel, setActiveModel] = useState<IVItem | null>(null);
 
-  const mx = useMotionValue(0);
-  const my = useMotionValue(0);
-
-  const sx = useSpring(mx, {
-    stiffness: 120,
-    damping: 18,
-    mass: 0.25,
-  });
-
-  const sy = useSpring(my, {
-    stiffness: 120,
-    damping: 18,
-    mass: 0.25,
-  });
-
-  const tiltX = useTransform(sy, (v) => v / -8);
-  const tiltY = useTransform(sx, (v) => v / 8);
-
-  const slowX = useTransform(sx, (v) => v * -0.25);
-  const slowY = useTransform(sy, (v) => v * -0.25);
-
-  const medX = useTransform(sx, (v) => v * -0.5);
-  const medY = useTransform(sy, (v) => v * -0.5);
-
-  const fastX = useTransform(sx, (v) => v * 0.8);
-  const fastY = useTransform(sy, (v) => v * 0.8);
+  const currentLanguage = useMemo(() => {
+    return LANGUAGES[langIndex] ?? LANGUAGES[0] ?? "English";
+  }, [langIndex]);
 
   useEffect(() => {
     AOS.init({
-      duration: 900,
+      duration: 850,
       once: true,
       offset: 80,
     });
   }, []);
-
 
   useEffect(() => {
     if (document.querySelector('script[data-model-viewer="true"]')) return;
 
     const script = document.createElement("script");
     script.type = "module";
-    script.src = "https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js";
+    script.src =
+      "https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js";
     script.dataset.modelViewer = "true";
     document.head.appendChild(script);
   }, []);
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
-      setLangIndex((current) => {
-        if (LANGUAGES.length === 0) return 0;
-        return (current + 1) % LANGUAGES.length;
-      });
+      setLangIndex((current) => (current + 1) % LANGUAGES.length);
     }, 3000);
 
     return () => window.clearInterval(intervalId);
@@ -230,21 +231,6 @@ export default function Home() {
     return () => window.clearInterval(intervalId);
   }, []);
 
-  function handleHeroMouseMove(event: React.MouseEvent<HTMLElement>) {
-    const rect = event.currentTarget.getBoundingClientRect();
-
-    const relX = ((event.clientX - rect.left) / rect.width - 0.5) * 80;
-    const relY = ((event.clientY - rect.top) / rect.height - 0.5) * 80;
-
-    mx.set(relX);
-    my.set(relY);
-  }
-
-  function handleHeroMouseLeave() {
-    mx.set(0);
-    my.set(0);
-  }
-
   function closeModal() {
     setModalImage(null);
   }
@@ -257,14 +243,12 @@ export default function Home() {
     window.setTimeout(() => {
       setActiveModel(item);
       setLoadingModelSrc(null);
-    }, 1100);
+    }, 850);
   }
 
   function closeModel() {
     setActiveModel(null);
   }
-
-  const currentLanguage = LANGUAGES[langIndex] ?? LANGUAGES[0] ?? "English";
 
   return (
     <>
@@ -316,330 +300,318 @@ export default function Home() {
         />
       </Head>
 
-      <div className={styles.container}>
-        <section
-          className={styles.heroSection}
-          onMouseMove={handleHeroMouseMove}
-          onMouseLeave={handleHeroMouseLeave}
-        >
+      <div className={styles.page}>
+        <section className={styles.hero}>
           <motion.div
-            aria-hidden
-            className={styles.fxMesh}
-            style={{
-              x: slowX,
-              y: slowY,
-            }}
-          />
-
-          <motion.div
-            aria-hidden
-            className={styles.fxBeams}
-            style={{
-              x: medX,
-              y: medY,
-            }}
-          />
-
-          <motion.div aria-hidden className={styles.fxGrid} />
-
-          <motion.div
-            className={styles.heroInner}
+            className={styles.heroCopy}
+            variants={stagger}
             initial="hidden"
             animate="visible"
-            variants={heroParent}
-            style={{
-              rotateX: tiltX,
-              rotateY: tiltY,
-            }}
           >
-            <motion.p className={styles.heroKicker} variants={titleReveal}>
-              Abrody
+            <motion.p className={styles.eyebrow} variants={fadeUp}>
+              Abrody visual language app
             </motion.p>
 
-            <h1 className={styles.heroTitle}>
-              <motion.span className={styles.word} variants={titleReveal}>
-                Learn&nbsp;
-              </motion.span>
-
-              <motion.span
-                className={`${styles.word} ${styles.dynamicLangBg}`}
-                variants={titleReveal}
-              >
+            <motion.h1 variants={fadeUp}>
+              Learn{" "}
+              <span className={styles.languageSlot}>
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={currentLanguage}
-                    className={styles.dynamicLang}
-                    initial={{ opacity: 0, y: 18 }}
+                    initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -18 }}
-                    transition={{ duration: 0.45, ease: "easeOut" }}
+                    exit={{ opacity: 0, y: -16 }}
+                    transition={{ duration: 0.38, ease: "easeOut" }}
                   >
                     {currentLanguage}
                   </motion.span>
                 </AnimatePresence>
-              </motion.span>
+              </span>
+              <br />
+              from what you see.
+            </motion.h1>
 
-              <motion.span className={styles.word} variants={titleReveal}>
-                &nbsp;with&nbsp;
-              </motion.span>
-
-              <motion.span
-                className={`${styles.word} ${styles.wordAlt}`}
-                variants={titleReveal}
-              >
-                what
-              </motion.span>
-
-              <motion.span className={styles.word} variants={titleReveal}>
-                &nbsp;you&nbsp;
-              </motion.span>
-
-              <motion.span
-                className={`${styles.word} ${styles.wordAlt}`}
-                variants={titleReveal}
-              >
-                see
-              </motion.span>
-            </h1>
-
-            <motion.p className={styles.heroLead} variants={wordReveal}>
-              Start with a photo. Discover words from real objects. Practice
-              through short quizzes and remember language through moments you
-              actually lived.
+            <motion.p className={styles.heroText} variants={fadeUp}>
+              Take a photo, turn real objects into vocabulary, and review words
+              through short visual sessions. Abrody makes language learning feel
+              closer to your daily life.
             </motion.p>
 
-            <motion.div className={styles.heroCtas} variants={wordReveal}>
-              <a href="#how" className={styles.primaryCta}>
+            <motion.div className={styles.heroActions} variants={fadeUp}>
+              <a href="#how" className={styles.darkButton}>
                 See how it works
               </a>
-
-              <a href="#product" className={styles.secondaryCta}>
+              <a href="#product" className={styles.lightButton}>
                 Explore product
               </a>
+            </motion.div>
 
-              <span className={styles.scrollHintBig} aria-hidden>
-                ⌄
-              </span>
+            <motion.div className={styles.heroStats} variants={fadeUp}>
+              <div>
+                <span>Input</span>
+                <strong>Photo</strong>
+              </div>
+              <div>
+                <span>Output</span>
+                <strong>Vocabulary</strong>
+              </div>
+              <div>
+                <span>Review</span>
+                <strong>Short quiz</strong>
+              </div>
             </motion.div>
           </motion.div>
 
           <motion.div
-            className={styles.orb}
-            variants={floatOrb}
-            initial="initial"
-            animate="animate"
-            style={{
-              x: fastX,
-              y: fastY,
-            }}
-            aria-hidden
-          />
+            className={styles.heroVisual}
+            initial={{ opacity: 0, y: 30, rotate: -2 }}
+            animate={{ opacity: 1, y: 0, rotate: 0 }}
+            transition={{ duration: 0.75, ease: "easeOut", delay: 0.12 }}
+            aria-hidden="true"
+          >
+            <div className={styles.visualGlow} />
+            <div className={styles.phoneStack}>
+              {JOURNEY_ITEMS.map((item, index) => (
+                <img
+                  key={item.image}
+                  src={item.image}
+                  alt=""
+                  className={`${styles.heroPhone} ${
+                    index === 0
+                      ? styles.heroPhoneOne
+                      : index === 1
+                        ? styles.heroPhoneTwo
+                        : styles.heroPhoneThree
+                  }`}
+                  draggable={false}
+                />
+              ))}
+            </div>
 
-          <div className={styles.orbGlow} aria-hidden />
+            <div className={styles.wordBubble}>
+              <span>Detected word</span>
+              <strong>{ivItems[0]?.label ?? "object"}</strong>
+              <em>{ivItems[0]?.meaning ?? "단어"}</em>
+            </div>
+
+            <div className={styles.quizBubble}>
+              <span>Quick review</span>
+              <strong>3 min</strong>
+            </div>
+          </motion.div>
         </section>
 
         <main className={styles.main}>
-          <section id="how" className={styles.journeySection}>
-            <div className={styles.journeyHeader} data-aos="fade-up">
-              <span className={styles.sectionKicker}>How it helps</span>
-
-              <h2 className={styles.sectionTitle}>
-                Your moments become your vocabulary
-              </h2>
-
-              <p className={styles.sectionLead}>
-                Abrody turns everyday scenes into language practice. Take a
-                photo, connect words to what you saw, and review them in a way
-                that feels visual, quick, and personal.
+          <section id="how" className={styles.problemSection}>
+            <div className={styles.sectionTitle} data-aos="fade-up">
+              <p className={styles.eyebrow}>How it works</p>
+              <h2>Your everyday moments become study material.</h2>
+              <p>
+                Abrody removes the distance between what you see and what you
+                learn. The flow is simple: capture, understand, and review.
               </p>
             </div>
 
-            <motion.div className={styles.journeyContainer} layout>
-              {journeyOrder.map((item, index) => (
-                <motion.button
-                  key={item.label}
-                  type="button"
-                  className={`${styles.journeyItemContainer} ${styles.card}`}
-                  layout
-                  transition={{ duration: 0.6, ease: "easeInOut" }}
-                  whileHover={{ y: -6 }}
-                  onClick={() => setModalImage(item.image)}
-                  aria-label={`Open Abrody app screenshot ${item.label}`}
-                >
-                  <img
-                    src={item.image}
-                    alt={`Abrody app store screenshot ${item.label}`}
-                    className={styles.carouselImage}
-                    loading={index === 0 ? "eager" : "lazy"}
-                    decoding="async"
-                  />
-                </motion.button>
+            <div className={styles.problemGrid}>
+              {HOW_ITEMS.map((item) => (
+                <article key={item.index} data-aos="fade-up">
+                  <span>{item.index}</span>
+                  <strong>{item.title}</strong>
+                  <p>{item.body}</p>
+                </article>
               ))}
-            </motion.div>
+            </div>
           </section>
 
-          <section
-            id="product"
-            className={`${styles.section} ${styles.ivSection}`}
-            data-aos="fade-up"
-          >
-            <div className={styles.sectionHead}>
-              <span className={styles.sectionKicker}>Product</span>
+          <section className={styles.solutionSection}>
+            <div className={styles.solutionVisual} aria-hidden="true">
+              <motion.div className={styles.appGallery} layout>
+                {journeyOrder.map((item, index) => (
+                  <motion.button
+                    key={item.label}
+                    type="button"
+                    className={styles.appShotButton}
+                    layout
+                    transition={{ duration: 0.55, ease: "easeInOut" }}
+                    whileHover={{ y: -8 }}
+                    onClick={() => setModalImage(item.image)}
+                    aria-label={`Open Abrody app screenshot ${item.label}`}
+                  >
+                    <img
+                      src={item.image}
+                      alt={`Abrody app screenshot ${item.label}`}
+                      loading={index === 0 ? "eager" : "lazy"}
+                      decoding="async"
+                    />
+                  </motion.button>
+                ))}
+              </motion.div>
+            </div>
 
-              <h2 className={styles.sectionTitle}>See it in action</h2>
+            <div className={styles.solutionCopy} data-aos="fade-up">
+              <p className={styles.eyebrow}>Product flow</p>
+              <h2>Photo first. Words second. Memory after that.</h2>
+              <p>
+                Instead of beginning with an abstract word list, Abrody begins
+                with an image. You connect the word to something you actually
+                saw, which makes the review experience more visual and personal.
+              </p>
 
-              <p className={styles.sectionLeadSmall}>
-                Real photos become visual word cards you can revisit anytime.
+              <div className={styles.solutionList}>
+                <div>
+                  <strong>Image-based vocabulary</strong>
+                  <span>Words are attached to visible objects and scenes.</span>
+                </div>
+                <div>
+                  <strong>Clear meaning and examples</strong>
+                  <span>Each card shows meaning, description, and usage.</span>
+                </div>
+                <div>
+                  <strong>Review without friction</strong>
+                  <span>Open the app for short sessions that fit your day.</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="product" className={styles.productSection}>
+            <div className={styles.sectionTitle} data-aos="fade-up">
+              <p className={styles.eyebrow}>Image vocabulary</p>
+              <h2>See real objects turn into word cards.</h2>
+              <p>
+                Tap the Abrody icon on a card to open a 3D-style preview and
+                learn the word with examples.
               </p>
             </div>
 
-            <motion.div
-              className={`${styles.demoVideosContainer} ${styles.demoRail}`}
-              layout
-            >
+            <motion.div className={styles.vocabRail} layout>
               {ivItems.map((item) => {
                 const isLoading = loadingModelSrc === item.modelSrc;
 
                 return (
                   <motion.article
                     key={item.src}
-                    className={`${styles.videoCard} ${styles.ivCard}`}
+                    className={styles.vocabCard}
                     layout
+                    transition={{ duration: 0.45, ease: "easeInOut" }}
                   >
-                    <div className={styles.ivImgWrap}>
+                    <div className={styles.vocabImageWrap}>
                       <img
-                        className={styles.ivImg}
+                        className={styles.vocabImage}
                         src={item.src}
                         alt={`Image vocabulary card for ${item.label}`}
                         loading="lazy"
                         decoding="async"
                       />
 
-                      <div className={styles.ivMeaningPill} aria-label={`${item.label} meaning`}>
+                      <div
+                        className={styles.meaningPill}
+                        aria-label={`${item.label} meaning`}
+                      >
                         {item.meaning}
                       </div>
 
                       <button
                         type="button"
-                        className={`${styles.modelLaunchButton} ${
-                          isLoading ? styles.modelLaunchButtonLoading : ""
+                        className={`${styles.modelButton} ${
+                          isLoading ? styles.modelButtonLoading : ""
                         }`}
                         onClick={() => openModel(item)}
                         aria-label={`Open ${item.label} 3D model`}
                         disabled={isLoading}
                       >
                         <span className={styles.modelProgressRing} aria-hidden />
-
                         <img
                           src="/images/AbrodyLogo3D.png"
                           alt=""
-                          className={styles.modelLaunchLogo}
+                          className={styles.modelButtonLogo}
                           loading="lazy"
                           decoding="async"
                         />
                       </button>
                     </div>
 
-                    <div className={styles.ivWordLabel}>{item.label}</div>
+                    <div className={styles.vocabMeta}>
+                      <strong>{item.label}</strong>
+                      <span>{item.description}</span>
+                    </div>
                   </motion.article>
                 );
               })}
             </motion.div>
           </section>
 
-          <section className={styles.section} data-aos="fade-up">
-            <div className={styles.sectionHead}>
-              <span className={styles.sectionKicker}>Practice</span>
-
-              <h2 className={styles.sectionTitle}>
-                Learn in short, visual sessions
-              </h2>
-
-              <p className={styles.sectionLeadSmall}>
-                Abrody is designed for everyday learning: light enough to open
-                often, visual enough to remember.
+          <section className={styles.practiceSection}>
+            <div className={styles.practiceCopy} data-aos="fade-up">
+              <p className={styles.eyebrow}>Practice</p>
+              <h2>Designed for short, visual learning sessions.</h2>
+              <p>
+                Abrody keeps the learning loop light. You do not need to sit
+                down for a long study block; you can review small pieces often.
               </p>
             </div>
 
-            <img
-              src="/images/AbrodyLogo3D.png"
-              alt="Abrody language learning practice preview"
-              className={styles.recordButtonImage}
-              loading="lazy"
-              decoding="async"
-            />
-          </section>
-
-          <section className={styles.betaSection} data-aos="fade-up">
-            <div className={`${styles.betaCard} ${styles.glassCard}`}>
-              <div className={styles.sectionHead}>
-                <span className={styles.sectionKicker}>Download</span>
-
-                <h2 className={styles.betaTitle}>Install on iOS</h2>
-
-                <p className={styles.betaSubtitle}>
-                  Available for Canada, Australia, UK, and Korea.
-                </p>
+            <div className={styles.practiceLayout}>
+              <div className={styles.practiceVisual} aria-hidden="true">
+                <img
+                  src="/images/AbrodyLogo3D.png"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div className={styles.practiceHalo} />
               </div>
 
-              <div className={styles.ctaButtons}>
-                <a
-                  href="https://apps.apple.com/ca/app/id6743047157"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
-                >
-                  Canada
-                </a>
-
-                <a
-                  href="https://apps.apple.com/au/app/id6743047157"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
-                >
-                  Australia
-                </a>
-
-                <a
-                  href="https://apps.apple.com/gb/app/id6743047157"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
-                >
-                  UK
-                </a>
-
-                <a
-                  href="https://apps.apple.com/kr/app/id6743047157"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
-                >
-                  Korea
-                </a>
+              <div className={styles.practiceCards}>
+                {PRACTICE_ITEMS.map((item) => (
+                  <article key={item.index} data-aos="fade-up">
+                    <span>{item.index}</span>
+                    <div>
+                      <strong>{item.title}</strong>
+                      <p>{item.body}</p>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
           </section>
 
-          <section className={styles.betaSection} data-aos="fade-up">
-            <div className={`${styles.betaCard} ${styles.glassCard}`}>
-              <div className={styles.sectionHead}>
-                <span className={styles.sectionKicker}>Download</span>
-
-                <h2 className={styles.betaTitle}>Get Abrody on Android</h2>
-
-                <p className={styles.betaSubtitle}>
-                  Download Abrody on Google Play.
-                </p>
+          <section className={styles.downloadSection}>
+            <div className={styles.downloadCard} data-aos="fade-up">
+              <div>
+                <p className={styles.eyebrow}>Download</p>
+                <h2>Install Abrody on iOS.</h2>
+                <p>Available for Canada, Australia, UK, and Korea.</p>
               </div>
 
-              <div className={styles.ctaButtons}>
+              <div className={styles.downloadButtons}>
+                {IOS_LINKS.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.darkButton}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div className={styles.downloadCard} data-aos="fade-up">
+              <div>
+                <p className={styles.eyebrow}>Android</p>
+                <h2>Get Abrody on Google Play.</h2>
+                <p>Download the Android version directly from Google Play.</p>
+              </div>
+
+              <div className={styles.downloadButtons}>
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.fcdeapp.facade"
+                  href={ANDROID_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${styles.ctaButton} ${styles.btnPrimary}`}
+                  className={styles.darkButton}
                 >
                   Download on Google Play
                 </a>
@@ -710,16 +682,20 @@ export default function Home() {
                   ar: true,
                   exposure: "1",
                   shadowIntensity: "0.45",
-                  class: styles.modelViewer,
+                  className: styles.modelViewer,
                 })}
               </div>
 
               <aside className={styles.modelInfoPanel}>
-                <span className={styles.modelInfoKicker}>Image vocabulary</span>
+                <span className={styles.modelInfoKicker}>
+                  Image vocabulary
+                </span>
 
                 <h3 className={styles.modelInfoTitle}>{activeModel.label}</h3>
 
-                <div className={styles.modelInfoMeaning}>{activeModel.meaning}</div>
+                <div className={styles.modelInfoMeaning}>
+                  {activeModel.meaning}
+                </div>
 
                 <p className={styles.modelInfoDescription}>
                   {activeModel.description}
