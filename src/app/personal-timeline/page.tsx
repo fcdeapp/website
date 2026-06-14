@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useState } from "react";
-import styles from "./PersonalTimeline.module.css";
+import styles from "../../styles/pages/PersonalTimeline.module.css";
 
 type SchoolStage = {
   period: string;
