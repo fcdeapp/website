@@ -2,13 +2,13 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding: 4.5rem 1.25rem 1.4rem;
-  color: #666;
+  padding: 5rem 1.25rem 1.4rem;
+  color: #191f28;
   background:
-    radial-gradient(circle at 10% 0%, rgba(255, 213, 229, 0.82), transparent 26rem),
-    radial-gradient(circle at 88% 12%, rgba(255, 235, 212, 0.74), transparent 28rem),
-    linear-gradient(180deg, #ffffff 0%, #fff8fb 46%, #fff3f8 100%);
-  border-top: 1px solid rgba(216, 49, 91, 0.08);
+    radial-gradient(circle at 12% 0%, rgba(216, 49, 91, 0.055), transparent 26rem),
+    radial-gradient(circle at 88% 6%, rgba(242, 84, 45, 0.045), transparent 28rem),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-top: 1px solid rgba(17, 24, 39, 0.06);
 }
 
 .footer::before {
@@ -17,10 +17,10 @@
   inset: 0;
   z-index: -3;
   background:
-    linear-gradient(rgba(216, 49, 91, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(216, 49, 91, 0.055) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(circle at 50% 8%, black 0%, transparent 68%);
+    linear-gradient(rgba(17, 24, 39, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 24, 39, 0.035) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: radial-gradient(circle at 50% 0%, black 0%, transparent 68%);
   opacity: 0.55;
   pointer-events: none;
 }
@@ -31,36 +31,33 @@
   z-index: -2;
   border-radius: 999px;
   pointer-events: none;
-  filter: blur(4px);
+  filter: blur(28px);
 }
 
 .footerGlowOne {
-  width: 18rem;
-  height: 18rem;
-  left: -7rem;
-  bottom: 4rem;
-  background:
-    radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 0.96), rgba(255, 154, 191, 0.34) 42%, rgba(216, 49, 91, 0.1) 74%);
-  animation: footerFloat 7s ease-in-out infinite;
+  width: 22rem;
+  height: 22rem;
+  left: -9rem;
+  bottom: 2rem;
+  background: rgba(216, 49, 91, 0.07);
+  animation: footerFloat 8s ease-in-out infinite;
 }
 
 .footerGlowTwo {
-  width: 22rem;
-  height: 22rem;
-  right: -8rem;
-  top: 1rem;
-  background:
-    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.96), rgba(255, 220, 232, 0.48) 48%, rgba(242, 84, 45, 0.12) 76%);
-  animation: footerFloat 8.5s ease-in-out infinite reverse;
+  width: 24rem;
+  height: 24rem;
+  right: -10rem;
+  top: 0;
+  background: rgba(242, 84, 45, 0.06);
+  animation: footerFloat 9s ease-in-out infinite reverse;
 }
 
 .footerGrid {
   position: absolute;
   inset: auto 0 0 0;
   z-index: -1;
-  height: 45%;
-  background:
-    radial-gradient(circle at 50% 100%, rgba(216, 49, 91, 0.08), transparent 34rem);
+  height: 42%;
+  background: radial-gradient(circle at 50% 100%, rgba(17, 24, 39, 0.045), transparent 34rem);
   pointer-events: none;
 }
 
@@ -68,7 +65,7 @@
   width: min(1180px, 100%);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(18rem, 0.9fr) minmax(0, 1.25fr);
+  grid-template-columns: minmax(20rem, 0.92fr) minmax(0, 1.25fr);
   gap: clamp(1.25rem, 4vw, 3rem);
   align-items: stretch;
 }
@@ -77,48 +74,46 @@
   position: relative;
   overflow: hidden;
   min-height: 100%;
-  padding: clamp(1.35rem, 3vw, 2rem);
-  border-radius: 2.2rem;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(255, 242, 247, 0.72));
-  border: 1px solid rgba(255, 255, 255, 0.88);
+  padding: clamp(1.5rem, 3vw, 2.1rem);
+  border-radius: 2.25rem;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(17, 24, 39, 0.065);
   box-shadow:
-    0 1.65rem 3.5rem rgba(216, 49, 91, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.96);
+    0 24px 70px rgba(17, 24, 39, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
   backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 .brandPanel::after {
   content: "";
   position: absolute;
-  width: 12rem;
-  height: 12rem;
+  width: 13rem;
+  height: 13rem;
   right: -5rem;
   bottom: -5rem;
   border-radius: 999px;
-  background:
-    radial-gradient(circle, rgba(255, 143, 184, 0.22), transparent 68%);
+  background: radial-gradient(circle, rgba(216, 49, 91, 0.07), transparent 68%);
   pointer-events: none;
 }
 
 .brandMark {
-  width: 4.15rem;
-  height: 4.15rem;
+  width: 4.1rem;
+  height: 4.1rem;
   display: grid;
   place-items: center;
-  border-radius: 1.35rem;
   margin-bottom: 1.25rem;
+  border-radius: 1.35rem;
   background:
-    radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.92), transparent 28%),
-    linear-gradient(145deg, #ff9fbd, #d8315b);
+    linear-gradient(180deg, #ffffff 0%, #f2f4f6 100%);
+  border: 1px solid rgba(17, 24, 39, 0.075);
   box-shadow:
-    0 1rem 2rem rgba(216, 49, 91, 0.18),
-    inset 0.25rem 0.35rem 0.8rem rgba(255, 255, 255, 0.36),
-    inset -0.35rem -0.45rem 0.9rem rgba(128, 22, 50, 0.14);
+    0 18px 42px rgba(17, 24, 39, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
 .brandMark span {
-  color: #ffffff;
+  color: #191f28;
   font-size: 1.55rem;
   font-weight: 950;
   letter-spacing: -0.08em;
@@ -126,7 +121,7 @@
 
 .kicker {
   margin: 0 0 0.65rem;
-  color: #d8315b;
+  color: #8b95a1;
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.16em;
@@ -135,18 +130,12 @@
 
 .brandTitle {
   margin: 0;
-  max-width: 22rem;
-  color: #666;
-  font-size: clamp(1.65rem, 3vw, 2.45rem);
-  line-height: 1.02;
-  letter-spacing: -0.065em;
+  max-width: 23rem;
+  color: #111827;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.07em;
   font-weight: 950;
-  text-shadow:
-    -1.5px -1.5px 0 rgba(255, 255, 255, 0.88),
-    1.5px -1.5px 0 rgba(255, 255, 255, 0.88),
-    -1.5px 1.5px 0 rgba(255, 255, 255, 0.88),
-    1.5px 1.5px 0 rgba(255, 255, 255, 0.88),
-    0 1rem 2rem rgba(216, 49, 91, 0.12);
 }
 
 .brandText {
@@ -154,8 +143,8 @@
   z-index: 2;
   margin: 1rem 0 0;
   max-width: 31rem;
-  color: #777;
-  font-size: 0.95rem;
+  color: #6b7280;
+  font-size: 0.96rem;
   line-height: 1.75;
   letter-spacing: -0.02em;
   word-break: keep-all;
@@ -167,21 +156,23 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;
-  margin-top: 1.25rem;
+  margin-top: 1.3rem;
 }
 
 .brandPills span {
   display: inline-flex;
   align-items: center;
-  min-height: 2.15rem;
-  padding: 0 0.78rem;
+  min-height: 2.2rem;
+  padding: 0 0.82rem;
   border-radius: 999px;
-  color: #d8315b;
+  color: #4b5563;
   font-size: 0.78rem;
   font-weight: 850;
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(216, 49, 91, 0.08);
-  box-shadow: 0 0.65rem 1.35rem rgba(216, 49, 91, 0.055);
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow:
+    0 10px 24px rgba(17, 24, 39, 0.045),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
 .footerColumns {
@@ -194,13 +185,13 @@
   min-width: 0;
   padding: 1.25rem;
   border-radius: 1.7rem;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.74), rgba(255, 247, 250, 0.58));
-  border: 1px solid rgba(255, 255, 255, 0.84);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(17, 24, 39, 0.06);
   box-shadow:
-    0 1rem 2.4rem rgba(216, 49, 91, 0.065),
-    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+    0 18px 48px rgba(17, 24, 39, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
   backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
@@ -210,12 +201,11 @@
 
 .footerSection:hover {
   transform: translateY(-4px);
-  border-color: rgba(216, 49, 91, 0.14);
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 240, 246, 0.74));
+  background: #ffffff;
+  border-color: rgba(17, 24, 39, 0.09);
   box-shadow:
-    0 1.35rem 2.8rem rgba(216, 49, 91, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+    0 24px 62px rgba(17, 24, 39, 0.075),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
 .sectionHeader {
@@ -226,17 +216,17 @@
 }
 
 .sectionDot {
-  width: 0.62rem;
-  height: 0.62rem;
+  width: 0.58rem;
+  height: 0.58rem;
   flex: 0 0 auto;
   border-radius: 999px;
-  background: #ff8fb8;
-  box-shadow: 0 0 0 0.28rem rgba(255, 143, 184, 0.16);
+  background: #d8315b;
+  box-shadow: 0 0 0 0.28rem rgba(216, 49, 91, 0.08);
 }
 
 .footerTitle {
   margin: 0;
-  color: #666;
+  color: #111827;
   font-size: 1.05rem;
   font-weight: 950;
   line-height: 1.2;
@@ -259,15 +249,17 @@
   justify-content: space-between;
   gap: 0.8rem;
   min-height: 2.65rem;
-  padding: 0 0.85rem;
+  padding: 0 0.88rem;
   border-radius: 999px;
-  color: #777;
+  color: #4b5563;
   font-size: 0.9rem;
-  font-weight: 800;
+  font-weight: 850;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(216, 49, 91, 0.065);
-  box-shadow: 0 0.55rem 1.15rem rgba(216, 49, 91, 0.04);
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow:
+    0 10px 22px rgba(17, 24, 39, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
   transition:
     transform 180ms ease,
     color 180ms ease,
@@ -278,28 +270,33 @@
 
 .footerLink::after {
   content: "›";
-  color: rgba(216, 49, 91, 0.58);
+  color: #9ca3af;
   font-size: 1.15rem;
   line-height: 1;
   transform: translateX(-2px);
-  transition: transform 180ms ease;
+  transition:
+    transform 180ms ease,
+    color 180ms ease;
 }
 
 .footerLink:hover {
   transform: translateY(-2px);
-  color: #d8315b;
-  background: rgba(255, 255, 255, 0.88);
-  border-color: rgba(216, 49, 91, 0.14);
-  box-shadow: 0 0.85rem 1.65rem rgba(216, 49, 91, 0.075);
+  color: #111827;
+  background: #ffffff;
+  border-color: rgba(17, 24, 39, 0.1);
+  box-shadow:
+    0 15px 30px rgba(17, 24, 39, 0.065),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
 .footerLink:hover::after {
   transform: translateX(2px);
+  color: #d8315b;
 }
 
 .socialText {
   margin: -0.2rem 0 1rem;
-  color: #888;
+  color: #6b7280;
   font-size: 0.88rem;
   line-height: 1.65;
   letter-spacing: -0.02em;
@@ -318,11 +315,11 @@
   place-items: center;
   border-radius: 0.95rem;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 238, 245, 0.88));
-  border: 1px solid rgba(216, 49, 91, 0.1);
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(17, 24, 39, 0.065);
   box-shadow:
-    0 0.8rem 1.5rem rgba(216, 49, 91, 0.075),
-    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+    0 12px 26px rgba(17, 24, 39, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease,
@@ -331,11 +328,11 @@
 }
 
 .socialIcon:hover {
-  transform: translateY(-4px) rotate(-2deg);
-  border-color: rgba(216, 49, 91, 0.18);
+  transform: translateY(-4px);
+  border-color: rgba(17, 24, 39, 0.11);
   box-shadow:
-    0 1.1rem 2rem rgba(216, 49, 91, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.96);
+    0 18px 36px rgba(17, 24, 39, 0.075),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
 .socialIcon img {
@@ -345,12 +342,12 @@
   filter:
     brightness(0)
     saturate(100%)
-    invert(45%)
-    sepia(7%)
-    saturate(17%)
-    hue-rotate(356deg)
-    brightness(92%)
-    contrast(88%);
+    invert(43%)
+    sepia(8%)
+    saturate(377%)
+    hue-rotate(176deg)
+    brightness(91%)
+    contrast(86%);
   transition:
     transform 180ms ease,
     filter 180ms ease;
@@ -361,25 +358,25 @@
   filter:
     brightness(0)
     saturate(100%)
-    invert(31%)
-    sepia(74%)
-    saturate(2258%)
-    hue-rotate(322deg)
-    brightness(90%)
-    contrast(88%);
+    invert(13%)
+    sepia(12%)
+    saturate(972%)
+    hue-rotate(177deg)
+    brightness(94%)
+    contrast(91%);
 }
 
 .footerBottom {
   width: min(1180px, 100%);
   margin: 1.35rem auto 0;
   padding-top: 1.05rem;
-  border-top: 1px solid rgba(216, 49, 91, 0.095);
+  border-top: 1px solid rgba(17, 24, 39, 0.075);
   text-align: center;
 }
 
 .footerBottom p {
   margin: 0;
-  color: #888;
+  color: #8b95a1;
   font-size: 0.85rem;
   line-height: 1.6;
   letter-spacing: -0.02em;

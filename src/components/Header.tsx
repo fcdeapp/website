@@ -152,44 +152,37 @@ export default function Header() {
           width: 100%;
           z-index: 1000;
           overflow: hidden;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.72);
-          background:
-            linear-gradient(
-              135deg,
-              rgba(255, 252, 254, 0.88) 0%,
-              rgba(255, 244, 249, 0.78) 44%,
-              rgba(255, 255, 255, 0.84) 100%
-            );
-          backdrop-filter: blur(24px) saturate(170%);
-          -webkit-backdrop-filter: blur(24px) saturate(170%);
+          border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+          background: rgba(255, 255, 255, 0.82);
+          backdrop-filter: blur(22px) saturate(160%);
+          -webkit-backdrop-filter: blur(22px) saturate(160%);
           box-shadow:
-            0 18px 60px rgba(216, 49, 91, 0.08),
-            0 6px 22px rgba(15, 23, 42, 0.045),
-            inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            0 18px 54px rgba(17, 24, 39, 0.06),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
         }
 
         .headerGlow {
           position: absolute;
           pointer-events: none;
           border-radius: 999px;
-          filter: blur(24px);
-          opacity: 0.65;
+          filter: blur(26px);
+          opacity: 0.72;
         }
 
         .headerGlowOne {
-          width: 240px;
+          width: 260px;
           height: 80px;
-          left: -70px;
-          top: -42px;
-          background: rgba(255, 137, 178, 0.32);
+          left: -90px;
+          top: -46px;
+          background: rgba(216, 49, 91, 0.07);
         }
 
         .headerGlowTwo {
-          width: 260px;
+          width: 280px;
           height: 90px;
-          right: -86px;
-          bottom: -58px;
-          background: rgba(242, 84, 45, 0.14);
+          right: -96px;
+          bottom: -62px;
+          background: rgba(242, 84, 45, 0.055);
         }
 
         .navWrap {
@@ -228,10 +221,10 @@ export default function Header() {
           display: inline-flex;
           align-items: center;
           gap: 0.62rem;
-          text-decoration: none;
-          color: inherit;
+          padding: 0.28rem 0.62rem 0.28rem 0.32rem;
           border-radius: 999px;
-          padding: 0.28rem 0.55rem 0.28rem 0.32rem;
+          color: inherit;
+          text-decoration: none;
           transition:
             transform 180ms ease,
             background 180ms ease,
@@ -240,10 +233,10 @@ export default function Header() {
 
         .logoLink:hover {
           transform: translateY(-1px);
-          background: rgba(255, 255, 255, 0.48);
+          background: rgba(255, 255, 255, 0.86);
           box-shadow:
-            0 10px 28px rgba(216, 49, 91, 0.08),
-            inset 0 1px 0 rgba(255, 255, 255, 0.92);
+            0 12px 28px rgba(17, 24, 39, 0.06),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
         }
 
         .logoIconWrap {
@@ -251,17 +244,14 @@ export default function Header() {
           height: 46px;
           display: grid;
           place-items: center;
+          overflow: hidden;
           border-radius: 18px;
           background:
-            linear-gradient(
-              145deg,
-              rgba(255, 255, 255, 0.95),
-              rgba(255, 235, 244, 0.72)
-            );
+            linear-gradient(180deg, #ffffff 0%, #f2f4f6 100%);
+          border: 1px solid rgba(17, 24, 39, 0.065);
           box-shadow:
-            0 10px 24px rgba(216, 49, 91, 0.11),
-            inset 0 1px 0 rgba(255, 255, 255, 0.96);
-          overflow: hidden;
+            0 12px 28px rgba(17, 24, 39, 0.065),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
         }
 
         .logoIconWrap img {
@@ -273,32 +263,26 @@ export default function Header() {
         }
 
         .logoLink:hover .logoIconWrap img {
-          transform: scale(1.07) rotate(-2deg);
+          transform: scale(1.06) rotate(-2deg);
         }
 
         .logoText {
+          color: #111827;
           font-size: 1.18rem;
-          font-weight: 800;
-          letter-spacing: -0.055em;
-          color: #666;
+          font-weight: 900;
+          letter-spacing: -0.06em;
           line-height: 1;
-          text-shadow:
-            -1px -1px 0 rgba(255, 255, 255, 0.95),
-            1px -1px 0 rgba(255, 255, 255, 0.95),
-            -1px 1px 0 rgba(255, 255, 255, 0.95),
-            1px 1px 0 rgba(255, 255, 255, 0.95),
-            0 8px 22px rgba(216, 49, 91, 0.12);
         }
 
         .navLinks {
-          gap: 0.35rem;
+          gap: 0.28rem;
           padding: 0.32rem;
           border-radius: 999px;
-          background: rgba(255, 255, 255, 0.44);
-          border: 1px solid rgba(255, 255, 255, 0.76);
+          background: rgba(248, 250, 252, 0.82);
+          border: 1px solid rgba(17, 24, 39, 0.06);
           box-shadow:
-            0 10px 28px rgba(15, 23, 42, 0.04),
-            inset 0 1px 0 rgba(255, 255, 255, 0.85);
+            0 12px 28px rgba(17, 24, 39, 0.045),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
         }
 
         .navLinks a {
@@ -307,12 +291,12 @@ export default function Header() {
           align-items: center;
           justify-content: center;
           min-width: 74px;
-          padding: 0.62rem 0.9rem;
+          padding: 0.62rem 0.92rem;
           border-radius: 999px;
-          color: #777;
+          color: #6b7280;
           text-decoration: none;
           font-size: 0.92rem;
-          font-weight: 700;
+          font-weight: 800;
           letter-spacing: -0.035em;
           transition:
             color 180ms ease,
@@ -321,44 +305,13 @@ export default function Header() {
             transform 180ms ease;
         }
 
-        .navLinks a::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          border-radius: inherit;
-          opacity: 0;
-          background:
-            linear-gradient(
-              135deg,
-              rgba(255, 255, 255, 0.98),
-              rgba(255, 232, 241, 0.92)
-            );
-          box-shadow:
-            0 8px 22px rgba(216, 49, 91, 0.08),
-            inset 0 1px 0 rgba(255, 255, 255, 0.92);
-          transition: opacity 180ms ease;
-        }
-
         .navLinks a:hover {
-          color: #d8315b;
+          color: #111827;
           transform: translateY(-1px);
-        }
-
-        .navLinks a:hover::before {
-          opacity: 1;
-        }
-
-        .navLinks a {
-          overflow: hidden;
-        }
-
-        .navLinks a :global(*) {
-          position: relative;
-          z-index: 1;
-        }
-
-        .navLinks a {
-          z-index: 0;
+          background: #ffffff;
+          box-shadow:
+            0 10px 24px rgba(17, 24, 39, 0.055),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
         }
 
         .navLinks a::after {
@@ -371,12 +324,11 @@ export default function Header() {
           border-radius: 999px;
           transform: translateX(-50%) scaleX(0);
           transform-origin: center;
-          background: linear-gradient(90deg, #ff8ab5, #f2542d);
+          background: #d8315b;
           opacity: 0;
           transition:
             transform 180ms ease,
             opacity 180ms ease;
-          z-index: 1;
         }
 
         .navLinks a:hover::after {
@@ -391,116 +343,85 @@ export default function Header() {
         .ghostButton,
         .primaryButton {
           appearance: none;
-          border: 0;
           outline: none;
           cursor: pointer;
           display: inline-flex;
           align-items: center;
           justify-content: center;
           min-height: 42px;
-          padding: 0.68rem 1.06rem;
+          padding: 0.68rem 1.08rem;
+          border: 1px solid rgba(17, 24, 39, 0.07);
           border-radius: 999px;
+          color: #191f28;
+          background:
+            linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+          box-shadow:
+            0 12px 28px rgba(17, 24, 39, 0.055),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
           text-decoration: none;
           font-size: 0.9rem;
-          font-weight: 800;
+          font-weight: 850;
           letter-spacing: -0.035em;
+          white-space: nowrap;
           transition:
             transform 180ms ease,
             box-shadow 180ms ease,
             background 180ms ease,
             color 180ms ease,
             border-color 180ms ease;
-          white-space: nowrap;
-        }
-
-        .ghostButton {
-          color: #666;
-          border: 1px solid rgba(255, 255, 255, 0.82);
-          background:
-            linear-gradient(
-              145deg,
-              rgba(255, 255, 255, 0.78),
-              rgba(255, 246, 250, 0.58)
-            );
-          box-shadow:
-            0 10px 24px rgba(15, 23, 42, 0.05),
-            inset 0 1px 0 rgba(255, 255, 255, 0.92);
-        }
-
-        .ghostButton:hover {
-          color: #d8315b;
-          transform: translateY(-1px);
-          background:
-            linear-gradient(
-              145deg,
-              rgba(255, 255, 255, 0.96),
-              rgba(255, 235, 244, 0.76)
-            );
-          box-shadow:
-            0 14px 30px rgba(216, 49, 91, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.96);
         }
 
         .primaryButton {
-          color: #ffffff;
-          border: 1px solid rgba(255, 255, 255, 0.8);
+          color: #111827;
           background:
-            radial-gradient(
-              circle at 25% 20%,
-              rgba(255, 255, 255, 0.78) 0%,
-              rgba(255, 255, 255, 0) 28%
-            ),
-            linear-gradient(135deg, #ff8ab5 0%, #d8315b 54%, #f2542d 100%);
-          box-shadow:
-            0 16px 34px rgba(216, 49, 91, 0.22),
-            0 8px 18px rgba(242, 84, 45, 0.1),
-            inset 0 1px 0 rgba(255, 255, 255, 0.55);
+            linear-gradient(180deg, #ffffff 0%, #f2f4f6 100%);
         }
 
+        .ghostButton:hover,
         .primaryButton:hover {
           transform: translateY(-1px);
+          color: #111827;
+          border-color: rgba(17, 24, 39, 0.12);
+          background: #ffffff;
           box-shadow:
-            0 20px 42px rgba(216, 49, 91, 0.28),
-            0 10px 24px rgba(242, 84, 45, 0.14),
-            inset 0 1px 0 rgba(255, 255, 255, 0.62);
+            0 16px 34px rgba(17, 24, 39, 0.075),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
         }
 
         .ghostButton:active,
         .primaryButton:active {
           transform: translateY(0);
           box-shadow:
-            0 8px 18px rgba(15, 23, 42, 0.06),
-            inset 0 1px 0 rgba(255, 255, 255, 0.9);
+            0 8px 18px rgba(17, 24, 39, 0.055),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
         }
 
         .profileButton {
           width: 48px;
           height: 48px;
           padding: 0;
-          border: 1px solid rgba(255, 255, 255, 0.8);
-          border-radius: 999px;
-          background:
-            linear-gradient(
-              145deg,
-              rgba(255, 255, 255, 0.9),
-              rgba(255, 235, 244, 0.68)
-            );
-          box-shadow:
-            0 12px 28px rgba(216, 49, 91, 0.12),
-            inset 0 1px 0 rgba(255, 255, 255, 0.94);
           display: grid;
           place-items: center;
           cursor: pointer;
+          border: 1px solid rgba(17, 24, 39, 0.07);
+          border-radius: 999px;
+          background:
+            linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+          box-shadow:
+            0 12px 28px rgba(17, 24, 39, 0.06),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
           transition:
             transform 180ms ease,
-            box-shadow 180ms ease;
+            box-shadow 180ms ease,
+            border-color 180ms ease;
         }
 
         .profileButton:hover {
           transform: translateY(-1px) scale(1.02);
+          border-color: rgba(17, 24, 39, 0.12);
           box-shadow:
-            0 16px 34px rgba(216, 49, 91, 0.16),
-            inset 0 1px 0 rgba(255, 255, 255, 0.96);
+            0 16px 34px rgba(17, 24, 39, 0.08),
+            inset 0 1px 0 rgba(255, 255, 255, 1);
         }
 
         @media (max-width: 820px) {
