@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import Script from "next/script";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import styles from "../../styles/pages/SignInLogIn.module.css";
 
@@ -19,36 +19,6 @@ type GoogleCredentialResponse = {
   credential?: string;
   select_by?: string;
 };
-
-declare global {
-  interface Window {
-    google?: {
-      accounts?: {
-        id?: {
-          initialize: (options: {
-            client_id: string;
-            callback: (response: GoogleCredentialResponse) => void;
-            auto_select?: boolean;
-            cancel_on_tap_outside?: boolean;
-          }) => void;
-          prompt: () => void;
-          renderButton?: (
-            parent: HTMLElement,
-            options: {
-              theme?: "outline" | "filled_blue" | "filled_black";
-              size?: "large" | "medium" | "small";
-              type?: "standard" | "icon";
-              shape?: "rectangular" | "pill" | "circle" | "square";
-              text?: "signin_with" | "signup_with" | "continue_with" | "signin";
-              logo_alignment?: "left" | "center";
-              width?: string | number;
-            }
-          ) => void;
-        };
-      };
-    };
-  }
-}
 
 const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || "";
 const GOOGLE_CLIENT_ID = process.env.NEXT_PUBLIC_GOOGLE_WEB_CLIENT_ID || "";
@@ -69,10 +39,15 @@ const regionNameFromCode: Record<string, string> = {
   development: "Development",
 };
 
+function getGoogleIdApi() {
+  if (typeof window === "undefined") return null;
+  return (window as any).google?.accounts?.id || null;
+}
+
 function getDeviceRegion() {
   if (typeof window === "undefined") return null;
 
-  const locale = navigator.language || "";
+  const locale = window.navigator.language || "";
   const parts = locale.split("-");
 
   return parts[1] || null;
@@ -85,15 +60,21 @@ function getPasswordValidation(
   const violations: string[] = [];
 
   if (password.length < 8) {
-    violations.push(t("password_rule_min_length") || "Minimum 8 characters");
+    violations.push(
+      t("password_rule_min_length") || "Minimum 8 characters"
+    );
   }
 
   if (!/[A-Z]/.test(password)) {
-    violations.push(t("password_rule_uppercase") || "Must include an uppercase letter");
+    violations.push(
+      t("password_rule_uppercase") || "Must include an uppercase letter"
+    );
   }
 
   if (!/[a-z]/.test(password)) {
-    violations.push(t("password_rule_lowercase") || "Must include a lowercase letter");
+    violations.push(
+      t("password_rule_lowercase") || "Must include a lowercase letter"
+    );
   }
 
   if (!/[0-9]/.test(password)) {
@@ -101,7 +82,9 @@ function getPasswordValidation(
   }
 
   if (!/[^A-Za-z0-9]/.test(password)) {
-    violations.push(t("password_rule_special") || "Must include a special character");
+    violations.push(
+      t("password_rule_special") || "Must include a special character"
+    );
   }
 
   const satisfiedCount = 5 - violations.length;
@@ -122,7 +105,6 @@ function getPasswordValidation(
 
 export default function SignInLogInPage() {
   const router = useRouter();
-  const searchParams = useSearchParams();
   const { t } = useTranslation();
 
   const googleButtonRef = useRef<HTMLDivElement | null>(null);
@@ -150,10 +132,22 @@ export default function SignInLogInPage() {
 
   const passwordMatchMessage = useMemo(() => {
     if (!confirmNewPassword) return "";
+
     return newPassword === confirmNewPassword
       ? t("password_match") || "Passwords match"
       : t("password_mismatch") || "Passwords do not match";
   }, [confirmNewPassword, newPassword, t]);
+
+  const plusItems = useMemo(() => {
+    return Array.from({ length: 90 }).map((_, index) => ({
+      id: index,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      delay: `${-(Math.random() * 7).toFixed(2)}s`,
+      duration: `${6 + Math.random() * 4}s`,
+      opacity: 0.22 + Math.random() * 0.44,
+    }));
+  }, []);
 
   const tt = (key: string, fallback: string) => {
     const value = t(key);
@@ -163,11 +157,12 @@ export default function SignInLogInPage() {
   useEffect(() => {
     setDeviceRegion(getDeviceRegion());
 
-    if (searchParams.get("showChangePasswordModal") === "true") {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("showChangePasswordModal") === "true") {
       setModalMode("changePassword");
       setAccountModalVisible(true);
     }
-  }, [searchParams]);
+  }, []);
 
   const saveLoginPayload = async (data: any) => {
     const token = data?.token;
@@ -191,7 +186,9 @@ export default function SignInLogInPage() {
     }
   };
 
-  const handleGoogleCredential = async (response: GoogleCredentialResponse) => {
+  const handleGoogleCredential = async (
+    response: GoogleCredentialResponse
+  ) => {
     const idToken = response.credential;
 
     if (!idToken) {
@@ -214,7 +211,7 @@ export default function SignInLogInPage() {
         }),
       });
 
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
 
       if (!res.ok || !data?.token) {
         throw new Error(data?.message || "Google authentication failed");
@@ -232,18 +229,21 @@ export default function SignInLogInPage() {
   };
 
   const initializeGoogle = () => {
-    if (!GOOGLE_CLIENT_ID || !window.google?.accounts?.id) return;
+    const googleId = getGoogleIdApi();
 
-    window.google.accounts.id.initialize({
+    if (!GOOGLE_CLIENT_ID || !googleId) return;
+
+    googleId.initialize({
       client_id: GOOGLE_CLIENT_ID,
       callback: handleGoogleCredential,
       auto_select: false,
       cancel_on_tap_outside: true,
     });
 
-    if (googleButtonRef.current && window.google.accounts.id.renderButton) {
+    if (googleButtonRef.current && googleId.renderButton) {
       googleButtonRef.current.innerHTML = "";
-      window.google.accounts.id.renderButton(googleButtonRef.current, {
+
+      googleId.renderButton(googleButtonRef.current, {
         theme: "outline",
         size: "large",
         type: "standard",
@@ -266,13 +266,15 @@ export default function SignInLogInPage() {
       return;
     }
 
-    if (!window.google?.accounts?.id) {
+    const googleId = getGoogleIdApi();
+
+    if (!googleId) {
       setResultMessage("Google login is still loading. Please try again.");
       setResultModalVisible(true);
       return;
     }
 
-    window.google.accounts.id.prompt();
+    googleId.prompt();
   };
 
   const handleAppleLogin = () => {
@@ -284,7 +286,10 @@ export default function SignInLogInPage() {
       return;
     }
 
-    const redirect = encodeURIComponent(`${window.location.origin}/auth/apple/callback`);
+    const redirect = encodeURIComponent(
+      `${window.location.origin}/auth/apple/callback`
+    );
+
     window.location.href = `${SERVER_URL}/appleAuth/web?deviceRegion=${
       deviceRegion || ""
     }&redirect=${redirect}`;
@@ -375,16 +380,19 @@ export default function SignInLogInPage() {
         }),
       });
 
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
 
       if (!res.ok) {
-        throw new Error(data?.message || tt("error_occurred", "An error occurred"));
+        throw new Error(
+          data?.message || tt("error_occurred", "An error occurred")
+        );
       }
 
       const foundId = data?.setUserId || data?.userId || data?.id || "";
+
       setResultMessage(
         foundId
-          ? tt("result_found_id", `Your ID is ${foundId}`).replace("{{id}}", foundId)
+          ? `Your ID is ${foundId}`
           : tt("result_found_id", "We found your account ID.")
       );
       setAccountModalVisible(false);
@@ -449,10 +457,14 @@ export default function SignInLogInPage() {
       const data = await res.json().catch(() => ({}));
 
       if (!res.ok) {
-        throw new Error(data?.message || tt("error_occurred", "An error occurred"));
+        throw new Error(
+          data?.message || tt("error_occurred", "An error occurred")
+        );
       }
 
-      setResultMessage(tt("result_change_pw", "Your password has been changed."));
+      setResultMessage(
+        tt("result_change_pw", "Your password has been changed.")
+      );
       setAccountModalVisible(false);
       setResultModalVisible(true);
     } catch (error: any) {
@@ -469,12 +481,23 @@ export default function SignInLogInPage() {
         src="https://accounts.google.com/gsi/client"
         strategy="afterInteractive"
         onLoad={initializeGoogle}
+        onReady={initializeGoogle}
       />
 
       <main className={styles.container}>
         <div className={styles.rippleLayer} aria-hidden>
-          {Array.from({ length: 80 }).map((_, index) => (
-            <span key={index} className={styles.plusMark}>
+          {plusItems.map((item) => (
+            <span
+              key={item.id}
+              className={styles.plusMark}
+              style={{
+                left: item.left,
+                top: item.top,
+                animationDelay: item.delay,
+                animationDuration: item.duration,
+                opacity: item.opacity,
+              }}
+            >
               +
             </span>
           ))}
@@ -557,7 +580,9 @@ export default function SignInLogInPage() {
             <div className={styles.googleNativeButton} ref={googleButtonRef} />
 
             {!googleReady && GOOGLE_CLIENT_ID && (
-              <span className={styles.socialHint}>Preparing Google login...</span>
+              <span className={styles.socialHint}>
+                Preparing Google login...
+              </span>
             )}
           </div>
 
@@ -587,7 +612,7 @@ export default function SignInLogInPage() {
           <div className={styles.overlayContent}>
             <button
               type="button"
-              className={styles.deleteIconWrapper}
+              className={styles.closeButton}
               onClick={closeAccountModal}
               aria-label="Close"
             >
@@ -661,7 +686,10 @@ export default function SignInLogInPage() {
 
               <div className={styles.codeRow}>
                 <div className={styles.codeInputWrap}>
-                  <label className={styles.inputLabel} htmlFor="verificationCode">
+                  <label
+                    className={styles.inputLabel}
+                    htmlFor="verificationCode"
+                  >
                     Verification code
                   </label>
                   <input
@@ -724,7 +752,10 @@ export default function SignInLogInPage() {
                     </ul>
                   )}
 
-                  <label className={styles.inputLabel} htmlFor="confirmNewPassword">
+                  <label
+                    className={styles.inputLabel}
+                    htmlFor="confirmNewPassword"
+                  >
                     Confirm new password
                   </label>
                   <input
@@ -804,7 +835,7 @@ export default function SignInLogInPage() {
           <div className={styles.resultContent}>
             <button
               type="button"
-              className={styles.deleteIconWrapper}
+              className={styles.closeButton}
               onClick={closeResultModal}
               aria-label="Close"
             >

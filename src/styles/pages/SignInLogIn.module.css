@@ -45,64 +45,28 @@
   z-index: 2;
   overflow: hidden;
   pointer-events: none;
-  opacity: 0.46;
+  opacity: 0.48;
 }
 
 .plusMark {
   position: absolute;
-  color: rgba(184, 180, 238, 0.42);
+  color: rgba(184, 180, 238, 0.48);
   font-size: 1rem;
   font-weight: 800;
   line-height: 1;
-  transform: rotate(var(--r, 0deg));
-  animation: floatPlus 7s ease-in-out infinite;
-}
-
-.plusMark:nth-child(5n + 1) {
-  left: 8%;
-  top: 12%;
-  --r: 8deg;
-  animation-delay: -0.2s;
-}
-
-.plusMark:nth-child(5n + 2) {
-  left: 24%;
-  top: 72%;
-  --r: -18deg;
-  animation-delay: -1.4s;
-}
-
-.plusMark:nth-child(5n + 3) {
-  left: 52%;
-  top: 18%;
-  --r: 22deg;
-  animation-delay: -2.2s;
-}
-
-.plusMark:nth-child(5n + 4) {
-  left: 76%;
-  top: 62%;
-  --r: -36deg;
-  animation-delay: -3.1s;
-}
-
-.plusMark:nth-child(5n + 5) {
-  left: 91%;
-  top: 30%;
-  --r: 46deg;
-  animation-delay: -4.3s;
+  animation-name: floatPlus;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes floatPlus {
   0%,
   100% {
-    transform: translate3d(0, 0, 0) rotate(var(--r));
-    opacity: 0.32;
+    transform: translate3d(0, 0, 0) rotate(0deg);
   }
 
   50% {
-    transform: translate3d(0.35rem, -0.55rem, 0) rotate(calc(var(--r) + 18deg));
-    opacity: 0.76;
+    transform: translate3d(0.45rem, -0.7rem, 0) rotate(18deg);
   }
 }
 
@@ -359,9 +323,7 @@
   font-weight: 800;
 }
 
-/* =========================
-   Modal
-========================= */
+/* Modal */
 
 .overlayBackground {
   position: fixed;
@@ -395,7 +357,7 @@
   text-align: center;
 }
 
-.deleteIconWrapper {
+.closeButton {
   position: sticky;
   top: 0;
   margin-left: auto;
@@ -647,9 +609,7 @@
   font-weight: 750;
 }
 
-/* =========================
-   Responsive
-========================= */
+/* Responsive */
 
 @media (max-width: 720px) {
   .content {
