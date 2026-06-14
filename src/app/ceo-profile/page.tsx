@@ -11,93 +11,242 @@ import {
 } from "framer-motion";
 import styles from "../../styles/pages/CEO.module.css";
 
-/* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 64 },
+  hidden: { opacity: 0, y: 42 },
   visible: (i: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.12, duration: 0.8, ease: "easeOut" },
+    transition: { delay: i * 0.1, duration: 0.68, ease: "easeOut" },
   }),
 };
-const fadeLeft: Variants = {
-  hidden: { opacity: 0, x: 48 },
-  visible: (i: number = 0) => ({
-    opacity: 1,
-    x: 0,
-    transition: { delay: i * 0.12 + 0.15, duration: 0.8, ease: "easeOut" },
-  }),
-};
+
 const zoomIn: Variants = {
-  hidden: { opacity: 0, scale: 0.9 },
+  hidden: { opacity: 0, scale: 0.94, y: 18 },
   visible: (i: number = 0) => ({
     opacity: 1,
     scale: 1,
-    transition: { delay: i * 0.1 + 0.2, duration: 0.6, ease: "easeOut" },
+    y: 0,
+    transition: { delay: i * 0.08, duration: 0.62, ease: "easeOut" },
   }),
 };
+
+type TLItem = {
+  date: string;
+  title: string;
+  note?: string;
+  kind?: "milestone" | "release";
+};
+
+const timelineItems: TLItem[] = [
+  { date: "2025-03-21", title: "iOS & Android beta test begins" },
+  { date: "2025-04-01", title: "Office lease signed" },
+  { date: "2025-04-07", title: "FacadeConnect Co., Ltd. incorporated" },
+  { date: "2025-04-21", title: "Business registration" },
+  {
+    date: "2025-04-21",
+    title: "English Business Registration Certificate issued",
+  },
+  { date: "2025-05-28", title: "iOS launch" },
+  { date: "2025-07-02", title: "Court Registry OTP issued" },
+  { date: "2025-09-08", title: "Articles of Incorporation amended" },
+  { date: "2025-09-12", title: "Court Registry OTP renewal issued" },
+];
+
+const releaseNotes: TLItem[] = [
+  {
+    date: "2025-10-13",
+    title: "v1.2.7 — UI refresh; bug fixes",
+    note: "Partial UI revamp and stability fixes.",
+    kind: "release",
+  },
+  {
+    date: "2025-10-03",
+    title: "v1.2.6 — Contextual examples from images",
+    note: "Generates situation-based example expressions after uploading an image.",
+    kind: "release",
+  },
+  {
+    date: "2025-09-25",
+    title: "v1.2.5 — UI improvements; bug fixes",
+    note: "Polish and reliability updates.",
+    kind: "release",
+  },
+  {
+    date: "2025-09-15",
+    title: "v1.2.4 — Image Vocabulary",
+    note: "Upload an image to surface related word tags; select one to auto-cut a neat irregular-boundary sticker.",
+    kind: "release",
+  },
+  {
+    date: "2025-09-03",
+    title: "v1.2.3 — Calendar upgrades",
+    note: "Feature and performance improvements to the Calendar page.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-30",
+    title: "v1.2.2 — Learn via text input",
+    note: "Personalized learning from typed text.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-25",
+    title: "v1.2.1 — AI voice; auto-play highlights",
+    note: "Introduces AI voice; auto-play for summaries and key vocabulary.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-23",
+    title: "v1.2.0 — Learn from PDFs + UI refresh",
+    note: "Study from papers/proposals/slides via OCR+AI; logo & UI renewal.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-16",
+    title: "v1.1.10 — Chain Quizzes",
+    note: "Learn in an LLM-like chain style.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-13",
+    title: "v1.1.9 — Similar-word groupings",
+    note: "Group semantically/visually similar words from a dataset.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-12",
+    title: "v1.1.8 — Finer difficulty; chat translation",
+    note: "Check words/meanings by difficulty; chat bubble translation; UI tweaks.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-10",
+    title: "v1.1.7 — Smarter AI for better learning",
+    note: "Quizzes and chat context finely adapt to selected difficulty; friendlier quiz UI.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-07",
+    title: "v1.1.6 — Improved word-meaning datasets (ES, DE, AR, IT, PT)",
+    note: "Merged CEFR data with open-source glossaries to enrich vocabulary sets.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-05",
+    title: "v1.1.5 — Improved word-meaning datasets (EN, FR, ZH, JA)",
+    note: "Merged CEFR data with open-source glossaries to enrich vocabulary sets.",
+    kind: "release",
+  },
+  {
+    date: "2025-08-04",
+    title: "v1.1.4 — UI tweaks; bug fixes",
+    note: "Visual polish and reliability improvements.",
+    kind: "release",
+  },
+  {
+    date: "2025-07-23",
+    title: "v1.1.3 — Language-learning AI persona; UI updates",
+    note: "Introduced an AI persona tailored for language learning; refreshed UI.",
+    kind: "release",
+  },
+  {
+    date: "2025-07-20",
+    title: "v1.1.2 — Added language support",
+    note: "Arabic, German, Hindi, Italian, Portuguese, and Russian are now supported.",
+    kind: "release",
+  },
+  {
+    date: "2025-07-16",
+    title: "v1.1.1 — Selectable smarter AI model",
+    note: "Choose enhanced AI models; UI tweaks and bug fixes.",
+    kind: "release",
+  },
+  {
+    date: "2025-07-15",
+    title: "v1.1.0 — Photo-based role-play",
+    note: "Role-play with real photos; updated icons & character designs; fixes and performance.",
+    kind: "release",
+  },
+  {
+    date: "2025-07-10",
+    title: "v1.0.10 — More stable AI chat",
+    note: "Stability improvements for AI chat; fixed 1:1 chat issues.",
+    kind: "release",
+  },
+  {
+    date: "2025-07-02",
+    title: "v1.0.8 — Multiple-choice quizzes; chatroom revamp",
+    note: "Added 4-option quizzes and redesigned chatroom UI.",
+    kind: "release",
+  },
+  {
+    date: "2025-06-29",
+    title: "v1.0.7 — Word list redesign; leaderboard",
+    note: "Refreshed word list layout and added a global leaderboard.",
+    kind: "release",
+  },
+  {
+    date: "2025-06-23",
+    title: "v1.0.6 — Bug fixes; stronger multilingual support",
+    note: "Smoother learning experience with broader language coverage.",
+    kind: "release",
+  },
+  {
+    date: "2025-06-17",
+    title: "v1.0.5 — AI upgrades; role-play; chat UI",
+    note: "AI performance improvements, new role-play feature, and chat UI updates.",
+    kind: "release",
+  },
+  {
+    date: "2025-06-16",
+    title: "v1.0.4 — Quiz fixes; stability; UI tweaks",
+    note: "Resolved quiz issues, improved app stability, and refined UI.",
+    kind: "release",
+  },
+];
+
+const appScreens = [
+  {
+    label: "Study",
+    image: "/images/AbrodyStudy.png",
+    title: "Start with today’s lesson",
+    desc: "Keep learning light with daily lessons, level selection, and simple routines.",
+  },
+  {
+    label: "Quiz",
+    image: "/images/AbrodyQuiz.png",
+    title: "Practice in quick quizzes",
+    desc: "Review words and expressions through fast, focused exercises.",
+  },
+  {
+    label: "Explore",
+    image: "/images/AbrodyGyro.png",
+    title: "Explore words visually",
+    desc: "Turn real objects into visual vocabulary and interact with them in a 3D-style view.",
+  },
+];
+
+function fmtMonth(d: Date) {
+  return d.toLocaleString("en-US", { month: "short", year: "numeric" });
+}
+
+function fmtDay(d: Date) {
+  return d.toLocaleString("en-US", {
+    month: "short",
+    day: "2-digit",
+    year: "numeric",
+  });
+}
 
 export default function Profile() {
   const [granularity, setGranularity] = useState<"month" | "day">("month");
 
-  type TLItem = {
-    date: string;                  // ISO (YYYY-MM-DD)
-    title: string;                 // 메인 텍스트
-    note?: string;                 // 서브(세부 설명) - 선택
-    kind?: "milestone" | "release" // 스타일 구분을 위한 타입
-  };
-
-  const timelineItems: TLItem[] = [
-    { date: "2025-03-21", title: "iOS & Android beta test begins" },
-    { date: "2025-04-01", title: "Office lease signed" },
-    { date: "2025-04-07", title: "FacadeConnect Co., Ltd. incorporated" },
-    { date: "2025-04-21", title: "Business registration" },
-    { date: "2025-04-21", title: "English Business Registration Certificate issued" },
-    { date: "2025-05-28", title: "iOS launch" },
-    { date: "2025-07-02", title: "Court Registry OTP issued" },
-    { date: "2025-09-08", title: "Articles of Incorporation amended" },
-    { date: "2025-09-12", title: "Court Registry OTP renewal issued" },
-  ];
-
-  // ── Release notes (in English, subtle style) ─────────────────
-  const releaseNotes: TLItem[] = [
-    { date: "2025-10-13", title: "v1.2.7 — UI refresh; bug fixes", note: "Partial UI revamp and stability fixes.", kind: "release" },
-    { date: "2025-10-03", title: "v1.2.6 — Contextual examples from images", note: "Generates situation-based example expressions after uploading an image.", kind: "release" },
-    { date: "2025-09-25", title: "v1.2.5 — UI improvements; bug fixes", note: "Polish and reliability updates.", kind: "release" },
-    { date: "2025-09-15", title: "v1.2.4 — Image Vocabulary", note: "Upload an image to surface related word tags; select one to auto-cut a neat irregular-boundary sticker.", kind: "release" },
-    { date: "2025-09-03", title: "v1.2.3 — Calendar upgrades", note: "Feature and performance improvements to the Calendar page.", kind: "release" },
-    { date: "2025-08-30", title: "v1.2.2 — Learn via text input", note: "Personalized learning from typed text.", kind: "release" },
-    { date: "2025-08-25", title: "v1.2.1 — AI voice; auto-play highlights", note: "Introduces AI voice; auto-play for summaries and key vocabulary.", kind: "release" },
-    { date: "2025-08-23", title: "v1.2.0 — Learn from PDFs + UI refresh", note: "Study from papers/proposals/slides via OCR+AI; logo & UI renewal.", kind: "release" },
-    { date: "2025-08-16", title: "v1.1.10 — Chain Quizzes", note: "Learn in an LLM-like chain style.", kind: "release" },
-    { date: "2025-08-13", title: "v1.1.9 — Similar-word groupings", note: "Group semantically/visually similar words from a dataset.", kind: "release" },
-    { date: "2025-08-12", title: "v1.1.8 — Finer difficulty; chat translation", note: "Check words/meanings by difficulty; chat bubble translation; UI tweaks.", kind: "release" },
-    { date: "2025-08-10", title: "v1.1.7 — Smarter AI for better learning", note: "Quizzes and chat context finely adapt to selected difficulty; friendlier quiz UI.", kind: "release" },
-    { date: "2025-08-07", title: "v1.1.6 — Improved word-meaning datasets (ES, DE, AR, IT, PT)", note: "Merged CEFR data with open-source glossaries to enrich vocabulary sets.", kind: "release" },
-    { date: "2025-08-05", title: "v1.1.5 — Improved word-meaning datasets (EN, FR, ZH, JA)", note: "Merged CEFR data with open-source glossaries to enrich vocabulary sets.", kind: "release" },
-    { date: "2025-08-04", title: "v1.1.4 — UI tweaks; bug fixes", note: "Visual polish and reliability improvements.", kind: "release" },
-    { date: "2025-07-23", title: "v1.1.3 — Language-learning AI persona; UI updates", note: "Introduced an AI persona tailored for language learning; refreshed UI.", kind: "release" },
-    { date: "2025-07-20", title: "v1.1.2 — Added language support", note: "Arabic, German, Hindi, Italian, Portuguese, and Russian are now supported.", kind: "release" },
-    { date: "2025-07-16", title: "v1.1.1 — Selectable smarter AI model", note: "Choose enhanced AI models; UI tweaks and bug fixes.", kind: "release" },
-    { date: "2025-07-15", title: "v1.1.0 — Photo-based role-play", note: "Role-play with real photos; updated icons & character designs; fixes and performance.", kind: "release" },
-    { date: "2025-07-10", title: "v1.0.10 — More stable AI chat", note: "Stability improvements for AI chat; fixed 1:1 chat issues.", kind: "release" },
-    { date: "2025-07-02", title: "v1.0.8 — Multiple-choice quizzes; chatroom revamp", note: "Added 4-option quizzes and redesigned chatroom UI.", kind: "release" },
-    { date: "2025-06-29", title: "v1.0.7 — Word list redesign; leaderboard", note: "Refreshed word list layout and added a global leaderboard.", kind: "release" },
-    { date: "2025-06-23", title: "v1.0.6 — Bug fixes; stronger multilingual support", note: "Smoother learning experience with broader language coverage.", kind: "release" },
-    { date: "2025-06-17", title: "v1.0.5 — AI upgrades; role-play; chat UI", note: "AI performance improvements, new role-play feature, and chat UI updates.", kind: "release" },
-    { date: "2025-06-16", title: "v1.0.4 — Quiz fixes; stability; UI tweaks", note: "Resolved quiz issues, improved app stability, and refined UI.", kind: "release" },
-  ];
-
-  function fmtMonth(d: Date) {
-    return d.toLocaleString("en-US", { month: "short", year: "numeric" }); // e.g., "Mar 2025"
-  }
-  function fmtDay(d: Date) {
-    return d.toLocaleString("en-US", { month: "short", day: "2-digit", year: "numeric" }); // "Mar 21, 2025"
-  }
-
-  // Merge milestone items with release notes, then sort by date ASC
   const itemsSorted = useMemo(() => {
-    const milestones = timelineItems.map(it => ({ ...it, kind: "milestone" as const }));
+    const milestones = timelineItems.map((it) => ({
+      ...it,
+      kind: "milestone" as const,
+    }));
+
     return [...milestones, ...releaseNotes].sort(
       (a, b) => +new Date(a.date) - +new Date(b.date)
     );
@@ -105,44 +254,52 @@ export default function Profile() {
 
   const groupedByMonth = useMemo(() => {
     const m = new Map<string, TLItem[]>();
+
     for (const it of itemsSorted) {
       const key = fmtMonth(new Date(it.date));
       if (!m.has(key)) m.set(key, []);
       m.get(key)!.push(it);
     }
-    return Array.from(m.entries()); // [ [ "Mar 2025", [..] ], ... ]
+
+    return Array.from(m.entries());
   }, [itemsSorted]);
 
-  /* ── mouse parallax for hero (orb + layers + subtle 3D tilt) ── */
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
+
   const sx = useSpring(mx, { stiffness: 120, damping: 18, mass: 0.25 });
   const sy = useSpring(my, { stiffness: 120, damping: 18, mass: 0.25 });
 
-  // 3D tilt (deg)
   const tiltX = useTransform(sy, (v) => v / -8);
   const tiltY = useTransform(sx, (v) => v / 8);
 
-  // depth layers
   const layerSlow = {
     x: useTransform(sx, (v) => v * -0.25),
     y: useTransform(sy, (v) => v * -0.25),
   };
+
   const layerMed = {
     x: useTransform(sx, (v) => v * -0.5),
     y: useTransform(sy, (v) => v * -0.5),
   };
+
   const layerFast = {
     x: useTransform(sx, (v) => v * 0.8),
     y: useTransform(sy, (v) => v * 0.8),
   };
 
   function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
-    const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
-    const relX = ((e.clientX - r.left) / r.width - 0.5) * 80; // -40~40
+    const r = e.currentTarget.getBoundingClientRect();
+    const relX = ((e.clientX - r.left) / r.width - 0.5) * 80;
     const relY = ((e.clientY - r.top) / r.height - 0.5) * 80;
+
     mx.set(relX);
     my.set(relY);
+  }
+
+  function handleMouseLeave() {
+    mx.set(0);
+    my.set(0);
   }
 
   return (
@@ -151,7 +308,6 @@ export default function Profile() {
         <title>Founder | JungMin Doh</title>
         <meta name="description" content="Founder & CEO JungMin Doh’s profile" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* 폰트는 CSS @font-face 로드 (링크/임포트 사용 안 함) */}
       </Head>
 
       <motion.main
@@ -160,75 +316,72 @@ export default function Profile() {
         animate="visible"
         variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
       >
-        {/* ── Hero : orb + mesh/beams/grid + 제주명조(핵심 단어만) ─────────────────────── */}
         <section
           className={`${styles.hero} ${styles.heroMono}`}
           onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
         >
-          {/* background FX layers */}
           <motion.div aria-hidden className={styles.fxMesh} style={layerSlow} />
           <motion.div aria-hidden className={styles.fxBeams} style={layerMed} />
           <motion.div aria-hidden className={styles.fxGrid} />
 
-          {/* foreground (subtle 3D tilt) */}
           <motion.div
             className={styles.heroInner}
             style={{ rotateX: tiltX, rotateY: tiltY }}
           >
+            <motion.span
+              className={styles.heroKicker}
+              variants={zoomIn}
+              custom={0}
+            >
+              Founder & CEO
+            </motion.span>
+
             <motion.h1
               className={styles.heroTitle}
               variants={zoomIn}
-              viewport={{ once: true, amount: 0.6 }}
+              custom={1}
             >
-              JungMin{" "}
-              <span className={`${styles.jm} ${styles.jmAccent}`}>Doh</span>
+              JungMin <span className={styles.heroTitleAccent}>Doh</span>
             </motion.h1>
 
             <motion.p
               className={styles.heroSubtitle}
               variants={fadeUp}
-              custom={1}
-              viewport={{ once: true, amount: 0.6 }}
+              custom={2}
             >
-              <span className={styles.sectionKicker} style={{ marginRight: 8 }}>
-                Founder &amp; CEO
-              </span>
-              {/* 중요 단어: Abrody */}
-              <span className={`${styles.jm} ${styles.jmUnderline}`}>Abrody</span>
+              Building{" "}
+              <span className={`${styles.jm} ${styles.jmUnderline}`}>
+                Abrody
+              </span>{" "}
+              at the intersection of AI, language learning, and product design.
             </motion.p>
 
             <motion.div
               className={styles.profileHeroMeta}
               variants={fadeUp}
-              custom={2}
-              viewport={{ once: true, amount: 0.6 }}
+              custom={3}
             >
               <a className={styles.metaChip} href="mailto:tommydoh@snu.ac.kr">
                 tommydoh@snu.ac.kr
               </a>
               <span className={styles.metaChip}>+82 10-6854-9906</span>
-              <span className={styles.metaChip}>
-                Seocho-gu, Seoul
-              </span>
+              <span className={styles.metaChip}>Seocho-gu, Seoul</span>
             </motion.div>
           </motion.div>
 
-          {/* glassy orb + halo */}
           <motion.div className={styles.orb} style={layerFast} aria-hidden />
           <div className={styles.orbGlow} aria-hidden />
 
-          {/* portrait (kept) */}
           <motion.img
             src="/about/jungmin.jpeg"
             alt="JungMin Doh"
             className={styles.heroAvatar}
             variants={zoomIn}
             custom={2}
-            viewport={{ once: true, amount: 0.6 }}
           />
         </section>
 
-        {/* ── Progress Timeline (place this section right ABOVE the Contact / Get in touch section) ── */}
         <section className={`${styles.sectionAlt} ${styles.timelineSection}`}>
           <motion.div
             className={styles.whyHeader}
@@ -237,18 +390,24 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Progress</span>
             <h2 className={styles.sectionTitle}>
-              Project <span className={`${styles.jm} ${styles.jmAccent}`}>Timeline</span>
+              Project <span className={styles.jmAccent}>Timeline</span>
             </h2>
             <p className={styles.sectionLead}>
-              A quick look at how things are moving — switch between monthly and daily views.
+              A quick look at how things are moving — switch between monthly and
+              daily views.
             </p>
 
-            {/* Toggle */}
-            <div className={styles.timelineToggle} role="tablist" aria-label="Timeline granularity">
+            <div
+              className={styles.timelineToggle}
+              role="tablist"
+              aria-label="Timeline granularity"
+            >
               <button
                 role="tab"
                 aria-selected={granularity === "month"}
-                className={`${styles.tlTab} ${granularity === "month" ? styles.tlTabActive : ""}`}
+                className={`${styles.tlTab} ${
+                  granularity === "month" ? styles.tlTabActive : ""
+                }`}
                 onClick={() => setGranularity("month")}
               >
                 Monthly
@@ -256,7 +415,9 @@ export default function Profile() {
               <button
                 role="tab"
                 aria-selected={granularity === "day"}
-                className={`${styles.tlTab} ${granularity === "day" ? styles.tlTabActive : ""}`}
+                className={`${styles.tlTab} ${
+                  granularity === "day" ? styles.tlTabActive : ""
+                }`}
                 onClick={() => setGranularity("day")}
               >
                 Daily
@@ -264,7 +425,6 @@ export default function Profile() {
             </div>
           </motion.div>
 
-          {/* Monthly view */}
           {granularity === "month" && (
             <motion.div
               className={styles.tlGrid}
@@ -274,77 +434,128 @@ export default function Profile() {
               variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
             >
               {groupedByMonth.map(([month, items], i) => (
-                <motion.article key={month} className={styles.tlCard} variants={fadeUp} custom={i}>
+                <motion.article
+                  key={month}
+                  className={styles.tlCard}
+                  variants={fadeUp}
+                  custom={i}
+                >
                   <div className={styles.tlCardHead}>
                     <h3 className={styles.tlMonth}>{month}</h3>
-                    <span className={styles.tlCount}>{items.length} update{items.length > 1 ? "s" : ""}</span>
+                    <span className={styles.tlCount}>
+                      {items.length} update{items.length > 1 ? "s" : ""}
+                    </span>
                   </div>
+
                   <ul className={styles.tlList}>
-                  {items.map((it) => {
-                    const d = new Date(it.date);
-                    const isRelease = it.kind === "release";
-                    return (
-                      <li
-                        key={it.date + it.title}
-                        className={`${styles.tlListItem} ${isRelease ? styles.tlListItemRelease : ""}`}
-                      >
-                        <span className={`${styles.tlDot} ${isRelease ? styles.tlDotRelease : ""}`} aria-hidden />
-                        <div className={styles.tlListMain}>
-                          <span className={`${styles.tlListDate} ${isRelease ? styles.tlListDateRelease : ""}`}>
-                            {fmtDay(d)}
-                          </span>
-                          <span className={`${styles.tlListTitle} ${isRelease ? styles.tlListTitleRelease : ""}`}>
-                            {it.title}
-                          </span>
-                          {it.note && (
-                            <span className={styles.tlListNote}>{it.note}</span>
-                          )}
-                        </div>
-                      </li>
-                    );
-                  })}
+                    {items.map((it) => {
+                      const d = new Date(it.date);
+                      const isRelease = it.kind === "release";
+
+                      return (
+                        <li
+                          key={it.date + it.title}
+                          className={`${styles.tlListItem} ${
+                            isRelease ? styles.tlListItemRelease : ""
+                          }`}
+                        >
+                          <span
+                            className={`${styles.tlDot} ${
+                              isRelease ? styles.tlDotRelease : ""
+                            }`}
+                            aria-hidden
+                          />
+
+                          <div className={styles.tlListMain}>
+                            <span
+                              className={`${styles.tlListDate} ${
+                                isRelease ? styles.tlListDateRelease : ""
+                              }`}
+                            >
+                              {fmtDay(d)}
+                            </span>
+                            <span
+                              className={`${styles.tlListTitle} ${
+                                isRelease ? styles.tlListTitleRelease : ""
+                              }`}
+                            >
+                              {it.title}
+                            </span>
+                            {it.note && (
+                              <span className={styles.tlListNote}>
+                                {it.note}
+                              </span>
+                            )}
+                          </div>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </motion.article>
               ))}
             </motion.div>
           )}
 
-          {/* Daily view */}
           {granularity === "day" && (
             <motion.ol
               className={styles.tlDaily}
               variants={fadeUp}
               viewport={{ once: true, amount: 0.4 }}
             >
-            {itemsSorted.map((it, i) => {
-              const d = new Date(it.date);
-              const isRelease = it.kind === "release";
-              return (
-                <li
-                  key={it.date + i}
-                  className={`${styles.tlRow} ${isRelease ? styles.tlRowRelease : ""}`}
-                >
-                  <div className={styles.tlWhen}>
-                    <span className={styles.tlWhenDay}>{d.toLocaleString("en-US", { day: "2-digit" })}</span>
-                    <span className={styles.tlWhenMon}>{d.toLocaleString("en-US", { month: "short" })}</span>
-                    <span className={styles.tlWhenYear}>{d.getFullYear()}</span>
-                  </div>
-                  <div className={`${styles.tlLine} ${isRelease ? styles.tlLineRelease : ""}`} aria-hidden />
-                  <div className={`${styles.tlBody} ${isRelease ? styles.tlBodyRelease : ""}`}>
-                    <h4 className={`${styles.tlTitle} ${isRelease ? styles.tlTitleRelease : ""}`}>{it.title}</h4>
-                    {it.note && <p className={styles.tlNote}>{it.note}</p>}
-                    <time className={styles.tlTime} dateTime={it.date}>
-                      {fmtDay(d)}
-                    </time>
-                  </div>
-                </li>
-              );
-            })}
+              {itemsSorted.map((it, i) => {
+                const d = new Date(it.date);
+                const isRelease = it.kind === "release";
+
+                return (
+                  <li
+                    key={it.date + i}
+                    className={`${styles.tlRow} ${
+                      isRelease ? styles.tlRowRelease : ""
+                    }`}
+                  >
+                    <div className={styles.tlWhen}>
+                      <span className={styles.tlWhenDay}>
+                        {d.toLocaleString("en-US", { day: "2-digit" })}
+                      </span>
+                      <span className={styles.tlWhenMon}>
+                        {d.toLocaleString("en-US", { month: "short" })}
+                      </span>
+                      <span className={styles.tlWhenYear}>
+                        {d.getFullYear()}
+                      </span>
+                    </div>
+
+                    <div
+                      className={`${styles.tlLine} ${
+                        isRelease ? styles.tlLineRelease : ""
+                      }`}
+                      aria-hidden
+                    />
+
+                    <div
+                      className={`${styles.tlBody} ${
+                        isRelease ? styles.tlBodyRelease : ""
+                      }`}
+                    >
+                      <h4
+                        className={`${styles.tlTitle} ${
+                          isRelease ? styles.tlTitleRelease : ""
+                        }`}
+                      >
+                        {it.title}
+                      </h4>
+                      {it.note && <p className={styles.tlNote}>{it.note}</p>}
+                      <time className={styles.tlTime} dateTime={it.date}>
+                        {fmtDay(d)}
+                      </time>
+                    </div>
+                  </li>
+                );
+              })}
             </motion.ol>
           )}
         </section>
 
-        {/* ── Contact ─────────────────────────────────────────────────── */}
         <section className={styles.section}>
           <motion.div
             className={styles.whyHeader}
@@ -353,15 +564,12 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Contact</span>
             <h2 className={styles.sectionTitle}>
-              Get in <span className={`${styles.jm} ${styles.jmAccent}`}>touch</span>
+              Get in <span className={styles.jmAccent}>touch</span>
             </h2>
             <p className={styles.sectionLead}>
               Reach out anytime — I’m building{" "}
-              <span className={`${styles.jm} ${styles.jmAccent}`}>Abrody</span> and
-              always happy to connect with{" "}
-              <span className={styles.jm}>founders</span>,{" "}
-              <span className={styles.jm}>educators</span>, and{" "}
-              <span className={styles.jm}>product</span> people.
+              <span className={styles.jmAccent}>Abrody</span> and always happy
+              to connect with founders, educators, and product people.
             </p>
           </motion.div>
 
@@ -376,7 +584,10 @@ export default function Profile() {
               {
                 title: "Email",
                 body: (
-                  <a className={styles.plainLink} href="mailto:tommydoh@snu.ac.kr">
+                  <a
+                    className={styles.plainLink}
+                    href="mailto:tommydoh@snu.ac.kr"
+                  >
                     tommydoh@snu.ac.kr
                   </a>
                 ),
@@ -385,28 +596,19 @@ export default function Profile() {
               { title: "Location", body: <>Seocho-gu, Seoul</> },
             ].map((c, i) => (
               <motion.article
-                key={i}
+                key={c.title}
                 className={styles.diffCard}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.12)" }}
+                whileHover={{ y: -6 }}
               >
-                <h3>
-                  {c.title === "Email" ? (
-                    <>
-                      <span className={`${styles.jm} ${styles.jmAccent}`}>Email</span>
-                    </>
-                  ) : (
-                    c.title
-                  )}
-                </h3>
+                <h3>{c.title}</h3>
                 <p>{c.body}</p>
               </motion.article>
             ))}
           </motion.div>
         </section>
 
-        {/* ── Education ──────────────────────────────────────────────── */}
         <section className={styles.sectionAlt}>
           <motion.div
             className={styles.whyHeader}
@@ -415,9 +617,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Education</span>
             <h2 className={styles.sectionTitle}>
-              <span className={`${styles.jm} ${styles.jmAccent}`}>
-                Seoul National University
-              </span>
+              Seoul National <span className={styles.jmAccent}>University</span>
             </h2>
             <p className={styles.sectionLead}>
               B.Sc. in Architectural Engineering · Expected Feb 2027
@@ -425,7 +625,6 @@ export default function Profile() {
           </motion.div>
         </section>
 
-        {/* ── Technical Skills ───────────────────────────────────────── */}
         <section className={styles.section}>
           <motion.div
             className={styles.whyHeader}
@@ -434,7 +633,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Skills</span>
             <h2 className={styles.sectionTitle}>
-              Technical <span className={`${styles.jm} ${styles.jmAccent}`}>Skills</span>
+              Technical <span className={styles.jmAccent}>Skills</span>
             </h2>
           </motion.div>
 
@@ -452,8 +651,7 @@ export default function Profile() {
               },
               {
                 title: "Backend · DevOps",
-                body:
-                  "Node.js, AWS (Lambda, EC2, S3, CodeDeploy), Terraform, VPC, GitHub Actions",
+                body: "Node.js, AWS (Lambda, EC2, S3, CodeDeploy), Terraform, VPC, GitHub Actions",
               },
               { title: "Databases · Caching", body: "MongoDB, Redis" },
               { title: "Other", body: "Python, Blender, Adobe CC" },
@@ -463,24 +661,15 @@ export default function Profile() {
                 className={styles.diffCard}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.12)" }}
+                whileHover={{ y: -6 }}
               >
-                <h3>
-                  {i === 0 ? (
-                    <>
-                      Frontend · <span className={`${styles.jm} ${styles.jmAccent}`}>Mobile</span>
-                    </>
-                  ) : (
-                    b.title
-                  )}
-                </h3>
+                <h3>{b.title}</h3>
                 <p>{b.body}</p>
               </motion.article>
             ))}
           </motion.div>
         </section>
 
-        {/* ── Languages ──────────────────────────────────────────────── */}
         <section className={styles.sectionAlt}>
           <motion.div
             className={styles.whyHeader}
@@ -489,8 +678,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Languages</span>
             <h2 className={styles.sectionTitle}>
-              Language{" "}
-              <span className={`${styles.jm} ${styles.jmAccent}`}>Proficiency</span>
+              Language <span className={styles.jmAccent}>Proficiency</span>
             </h2>
           </motion.div>
 
@@ -513,7 +701,6 @@ export default function Profile() {
           </motion.div>
         </section>
 
-        {/* ── Activities ─────────────────────────────────────────────── */}
         <section className={styles.section}>
           <motion.div
             className={styles.whyHeader}
@@ -522,7 +709,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Activities</span>
             <h2 className={styles.sectionTitle}>
-              External <span className={`${styles.jm} ${styles.jmAccent}`}>Activities</span>
+              External <span className={styles.jmAccent}>Activities</span>
             </h2>
           </motion.div>
 
@@ -544,16 +731,15 @@ export default function Profile() {
                 className={styles.diffCard}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(0,0,0,0.12)" }}
+                whileHover={{ y: -6 }}
               >
-                <h3>{i === 1 ? <span className={`${styles.jm} ${styles.jmAccent}`}>{a.title}</span> : a.title}</h3>
+                <h3>{a.title}</h3>
                 <p>{a.body}</p>
               </motion.article>
             ))}
           </motion.div>
         </section>
 
-        {/* ── Courses & Certifications ──────────────────────────────── */}
         <section className={styles.sectionAlt}>
           <motion.div
             className={styles.whyHeader}
@@ -562,7 +748,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Courses</span>
             <h2 className={styles.sectionTitle}>
-              Courses & <span className={`${styles.jm} ${styles.jmAccent}`}>Certifications</span>
+              Courses & <span className={styles.jmAccent}>Certifications</span>
             </h2>
           </motion.div>
 
@@ -578,7 +764,6 @@ export default function Profile() {
           </motion.ul>
         </section>
 
-        {/* ── Work Samples ───────────────────────────────────────────── */}
         <section className={styles.section}>
           <motion.div
             className={styles.whyHeader}
@@ -587,7 +772,8 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Work</span>
             <h2 className={styles.sectionTitle}>
-              Design Report · <span className={`${styles.jm} ${styles.jmAccent}`}>Computational</span> Thinking
+              Design Report ·{" "}
+              <span className={styles.jmAccent}>Computational</span> Thinking
             </h2>
             <p className={styles.sectionLead}>
               Basic Studio 4 — “Develop the Koshino House” team project
@@ -619,13 +805,7 @@ export default function Profile() {
                 viewport={{ once: true, amount: 0.3 }}
               >
                 <div className={styles.dHead}>
-                  <h4 className={styles.dTitle}>
-                    {i === 0 ? (
-                      <span className={`${styles.jm} ${styles.jmAccent}`}>{d.title}</span>
-                    ) : (
-                      d.title
-                    )}
-                  </h4>
+                  <h4 className={styles.dTitle}>{d.title}</h4>
                   <span className={styles.dMeta}>{d.meta}</span>
                 </div>
                 <p className={styles.dDesc}>{d.desc}</p>
@@ -638,7 +818,11 @@ export default function Profile() {
                   >
                     Open
                   </a>
-                  <a href={d.href} download className={`${styles.btn} ${styles.btnPrimary}`}>
+                  <a
+                    href={d.href}
+                    download
+                    className={`${styles.btn} ${styles.btnPrimary}`}
+                  >
                     Download
                   </a>
                 </div>
@@ -647,7 +831,6 @@ export default function Profile() {
           </div>
         </section>
 
-        {/* ── Military Service ──────────────────────────────────────── */}
         <section className={styles.sectionAlt}>
           <motion.div
             className={styles.whyHeader}
@@ -656,7 +839,7 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Service</span>
             <h2 className={styles.sectionTitle}>
-              Military <span className={`${styles.jm} ${styles.jmAccent}`}>Service</span>
+              Military <span className={styles.jmAccent}>Service</span>
             </h2>
           </motion.div>
 
@@ -668,14 +851,13 @@ export default function Profile() {
             <h3>Republic of Korea Army · Bridge Company (Bailey bridge)</h3>
             <p>Jul 2023 – Jan 2025</p>
             <p style={{ marginTop: ".4rem" }}>
-              Participated in Bailey-bridge assembly & routine training. Received a{" "}
-              <strong>Division Commander’s Commendation</strong> for a startup idea during
-              service.
+              Participated in Bailey-bridge assembly & routine training.
+              Received a <strong>Division Commander’s Commendation</strong> for
+              a startup idea during service.
             </p>
           </motion.article>
         </section>
 
-        {/* ── Simulation & Modeling ──────────────────────────────────── */}
         <section className={styles.section}>
           <motion.div
             className={styles.whyHeader}
@@ -684,11 +866,11 @@ export default function Profile() {
           >
             <span className={styles.sectionKicker}>Simulation</span>
             <h2 className={styles.sectionTitle}>
-              Simulation & <span className={`${styles.jm} ${styles.jmAccent}`}>Modeling</span>
+              Simulation & <span className={styles.jmAccent}>Modeling</span>
             </h2>
             <p className={styles.sectionLead}>
-              Excel VBA / 2D Modeling I — U-value & thermal-bridge analysis / Building-energy
-              simulation
+              Excel VBA / 2D Modeling I — U-value & thermal-bridge analysis /
+              Building-energy simulation
             </p>
           </motion.div>
 
@@ -704,36 +886,59 @@ export default function Profile() {
           </motion.div>
         </section>
 
-        {/* ── About Abrody ───────────────────────────────────────────── */}
-        <section className={styles.sectionAlt}>
+        <section className={`${styles.sectionAlt} ${styles.productSection}`}>
           <motion.div
             className={styles.whyHeader}
             variants={fadeUp}
             viewport={{ once: true, amount: 0.5 }}
           >
-            <span className={styles.sectionKicker}>Product</span>
+            <span className={styles.sectionKicker}>About Abrody</span>
             <h2 className={styles.sectionTitle}>
-              About <span className={`${styles.jm} ${styles.jmAccent}`}>Abrody</span>
+              Visual learning, built around your day.
             </h2>
             <p className={styles.sectionLead}>
-              Abrody turns everyday conversations into interactive, AI-powered language
-              quizzes—so you learn vocabulary and expressions that truly matter to you.
+              Abrody connects image vocabulary, daily lessons, quizzes, and
+              3D-style visual exploration into one calm learning flow.
             </p>
           </motion.div>
 
           <motion.div
-            className={styles.imageCard}
-            variants={fadeLeft}
-            viewport={{ once: true, amount: 0.4 }}
+            className={styles.screenGrid}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
           >
-            <img
-              src="/images/1-pager_EN_251016.jpg"
-              alt="Abrody Advertisement"
-            />
+            {appScreens.map((item, index) => (
+              <motion.article
+                key={item.label}
+                className={styles.screenCard}
+                variants={fadeUp}
+                custom={index}
+                whileHover={{ y: -6 }}
+              >
+                <div className={styles.screenImageWrap}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    width={720}
+                    height={1440}
+                    className={styles.screenImage}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    decoding="async"
+                  />
+                </div>
+
+                <div className={styles.screenText}>
+                  <span>{item.label}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              </motion.article>
+            ))}
           </motion.div>
         </section>
 
-        {/* ── CTA ───────────────────────────────────────────────────── */}
         <section className={styles.ctaSection}>
           <motion.h2
             className={styles.ctaTitle}
@@ -755,6 +960,7 @@ export default function Profile() {
               Contact JungMin
             </a>
           </div>
+
           <p className={styles.ctaNote}>
             I’m building at the intersection of AI, learning, and product.
           </p>

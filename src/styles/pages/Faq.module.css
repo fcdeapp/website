@@ -1,4 +1,5 @@
-/* ==== Pretendard only ==== */
+/* ===== Faq.module.css ===== */
+
 .section,
 .hero,
 .heroInner,
@@ -27,316 +28,631 @@
 .modalHeader,
 .modalInput,
 .modalActions {
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
+}
+
+/* ===== Hero ===== */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(5.2rem, 9vw, 7.6rem) 1.25rem clamp(3.4rem, 7vw, 5.4rem);
+  text-align: center;
+  color: #191f28;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(216, 49, 91, 0.052), transparent 30rem),
+    radial-gradient(circle at 88% 8%, rgba(242, 84, 45, 0.04), transparent 32rem),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  pointer-events: none;
+  filter: blur(28px);
+  z-index: 0;
+}
+
+.hero::before {
+  width: 22rem;
+  height: 22rem;
+  left: -9rem;
+  top: 3rem;
+  background: rgba(216, 49, 91, 0.07);
+}
+
+.hero::after {
+  width: 25rem;
+  height: 25rem;
+  right: -10rem;
+  top: 1rem;
+  background: rgba(242, 84, 45, 0.055);
+}
+
+.starfield {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.48;
+  background-image:
+    linear-gradient(rgba(17, 24, 39, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 24, 39, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at 50% 16%, black 0%, transparent 66%);
+  pointer-events: none;
+}
+
+.starfield::before,
+.starfield::after {
+  display: none;
+}
+
+.hero::after {
+  filter: blur(28px);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: clamp(2.1rem, 5vw, 4rem);
+  border-radius: clamp(2rem, 5vw, 4rem);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(17, 24, 39, 0.065);
+  box-shadow:
+    0 30px 90px rgba(17, 24, 39, 0.075),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.heroInner::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  z-index: -1;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(216, 49, 91, 0.05), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(248, 250, 252, 0.18));
+  pointer-events: none;
+}
+
+.sectionKicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.48rem;
+  min-height: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 0.78rem;
+  border-radius: 999px;
+  color: #8b95a1;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow:
+    0 10px 24px rgba(17, 24, 39, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.sectionKicker::before {
+  content: "";
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: #d8315b;
+  box-shadow: 0 0 0 0.28rem rgba(216, 49, 91, 0.08);
+}
+
+.heroTitle {
+  margin: 0;
+  color: #111827;
+  font-size: clamp(3rem, 7vw, 5.9rem);
+  line-height: 0.98;
+  letter-spacing: -0.082em;
+  font-weight: 950;
+  text-rendering: optimizeLegibility;
+}
+
+.heroSubtitle {
+  max-width: 700px;
+  margin: 1.15rem auto 0;
+  color: #4b5563;
+  font-size: clamp(1rem, 1.7vw, 1.18rem);
+  line-height: 1.78;
+  letter-spacing: -0.025em;
+}
+
+.scrollHint {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  margin-top: 2rem;
+  padding: 0 1.22rem;
+  border-radius: 18px;
+  color: #191f28;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(17, 24, 39, 0.075);
+  box-shadow:
+    0 16px 38px rgba(17, 24, 39, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  font-size: 0.95rem;
+  font-weight: 850;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease;
+}
+
+.scrollHint:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  border-color: rgba(17, 24, 39, 0.12);
+  box-shadow:
+    0 22px 52px rgba(17, 24, 39, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
 /* ===== Root / Section ===== */
+
 .section {
   max-width: 78rem;
   margin: 0 auto;
   padding: 4.5rem 1.25rem 6rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.4rem;
   background: #ffffff;
-  color: #120C3A;
+  color: #191f28;
 }
-
-/* ===== Hero (브랜드 룩) ===== */
-@keyframes gradientShift { 0% { background-position: 0% 50% } 100% { background-position: 150% 50% } }
-.hero {
-  position: relative;
-  padding: 8rem 1.25rem 10rem;
-  text-align: center;
-  color: #fff;
-  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 12s ease-in-out infinite;
-  overflow: hidden;
-}
-.starfield::before,
-.starfield::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(#ffffff33 0.5px, transparent 0.5px);
-  background-size: 3px 3px;
-  animation: starScroll 50s linear infinite;
-}
-.starfield::after { animation-direction: reverse; opacity: 0.4; }
-@keyframes starScroll { from { transform: translateY(0); } to { transform: translateY(-1000px); } }
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: -1px; left: 0; width: 100%; height: 90px;
-  background: #ffffff;
-  clip-path: polygon(0 0, 100% 100%, 0 100%);
-}
-.heroInner { position: relative; z-index: 1; max-width: 56rem; margin: 0 auto; }
-.sectionKicker {
-  display: inline-block;
-  margin-bottom: 0.6rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #fff;
-  background: rgba(255,255,255,0.16);
-  padding: .25rem .6rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.26);
-}
-.heroTitle {
-  font-size: clamp(2.1rem, 6vw, 3.5rem);
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  margin: 0.2rem 0 0.5rem;
-}
-.heroSubtitle {
-  margin: 0 auto;
-  opacity: .92;
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
-  max-width: 44rem;
-}
-.scrollHint {
-  display: inline-block;
-  margin-top: 2.6rem;
-  color: #fff;
-  opacity: .9;
-  text-decoration: none;
-  transition: transform .25s ease;
-}
-.scrollHint:hover { transform: translateY(3px); }
 
 /* ===== FAQ List ===== */
+
 .faqList {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-/* 카드: 그라디언트 보더 + 일관된 보더 박스 */
 .faqCard {
   position: relative;
-  background: #fff;
-  border-radius: 18px;
-  padding: 1.25rem 1.1rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, opacity .2s ease;
-  border: 1px solid transparent;
-  background-clip: padding-box;
-  opacity: 1; /* AOS와의 충돌 방지 기본값 */
+  padding: 1.25rem 1.15rem;
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 24, 39, 0.065);
+  box-shadow:
+    0 22px 62px rgba(17, 24, 39, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  cursor: pointer;
+  outline: none;
+  opacity: 1;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
 }
+
 .faqCard::before {
   content: "";
-  position: absolute; inset: -1px; border-radius: inherit; padding: 1px;
-  background: linear-gradient(90deg, #ffd36e, #ff8a5c, #d8315b);
-  background-size: 200% 100%;
-  background-position: 0% 50%;
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor; mask-composite: exclude;
+  position: absolute;
+  left: 1.15rem;
+  top: 1.45rem;
+  width: 0.56rem;
+  height: 0.56rem;
+  border-radius: 999px;
+  background: #d8315b;
+  box-shadow: 0 0 0 6px rgba(216, 49, 91, 0.07);
   pointer-events: none;
-  transition: background-position .45s ease;
 }
-.faqCard:hover { transform: translateY(-3px); box-shadow: 0 14px 28px rgba(0,0,0,0.08); }
-.faqCard:hover::before { background-position: 100% 50%; }
-/* 카드가 열린 상태일 때 살짝 강조 */
-.cardOpen { box-shadow: 0 14px 28px rgba(17,12,43,0.08); }
 
-/* 질문 행 */
+.faqCard:hover,
+.faqCard:focus-visible,
+.cardOpen {
+  transform: translateY(-3px);
+  background: #ffffff;
+  border-color: rgba(17, 24, 39, 0.1);
+  box-shadow:
+    0 30px 78px rgba(17, 24, 39, 0.085),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
 .cardHead {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-left: 1.35rem;
 }
+
 .question {
-  font-size: clamp(1rem, 2.4vw, 1.15rem);
-  font-weight: 700;
-  color: #110c2b;
   margin: 0;
+  color: #111827;
+  font-size: clamp(1rem, 2.4vw, 1.14rem);
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: -0.04em;
 }
+
 .chev {
   flex: none;
-  color: #d8315b;
-  opacity: .9;
-  transition: transform .25s ease, opacity .25s ease;
+  color: #6b7280;
+  opacity: 0.9;
+  transition:
+    transform 220ms ease,
+    color 180ms ease,
+    opacity 180ms ease;
 }
-.chevOpen { transform: rotate(180deg); }
 
-/* 답변(접힘/펼침 애니메이션) */
+.faqCard:hover .chev,
+.cardOpen .chev {
+  color: #111827;
+}
+
+.chevOpen {
+  transform: rotate(180deg);
+}
+
 .answerWrap {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 320ms cubic-bezier(.2,.9,.2,1), opacity 260ms ease, margin-top 260ms ease;
   opacity: 0;
   margin-top: 0;
+  transition:
+    max-height 320ms cubic-bezier(0.2, 0.9, 0.2, 1),
+    opacity 260ms ease,
+    margin-top 260ms ease;
   will-change: max-height, opacity;
-  overflow-anchor: none; /* 스크롤 앵커로 인한 점프 방지 */
+  overflow-anchor: none;
 }
-.open { opacity: 1 !important; margin-top: .6rem; }
+
+.open {
+  opacity: 1 !important;
+  margin-top: 0.75rem;
+}
+
 .answer {
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: #444;
   margin: 0;
+  padding: 0.85rem 0.95rem 0.9rem;
+  border-radius: 1rem;
+  color: #4b5563;
+  background: #f8fafc;
+  border: 1px solid rgba(17, 24, 39, 0.055);
+  font-size: 0.98rem;
+  line-height: 1.72;
+  letter-spacing: -0.02em;
 }
 
-/* ===== 스켈레톤 ===== */
-.skeletonWrap { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+/* ===== Skeleton ===== */
+
+.skeletonWrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
 .skeletonCard {
-  height: 86px;
-  border-radius: 16px;
-  background: linear-gradient(90deg, #f6f7fb 0%, #eef0f7 50%, #f6f7fb 100%);
-  background-size: 200% 100%;
-  animation: shimmer 1.2s linear infinite;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  height: 88px;
+  border-radius: 1.6rem;
+  background:
+    linear-gradient(90deg, #f2f4f6, #ffffff, #f2f4f6);
+  background-size: 220% 100%;
+  animation: shimmer 1.15s linear infinite;
+  border: 1px solid rgba(17, 24, 39, 0.045);
+  box-shadow:
+    0 18px 44px rgba(17, 24, 39, 0.045),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
-@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
 
-/* 빈 상태 */
+@keyframes shimmer {
+  from {
+    background-position: 220% 0;
+  }
+
+  to {
+    background-position: -220% 0;
+  }
+}
+
+/* ===== Empty state ===== */
+
 .emptyCard {
   text-align: center;
-  border: 1px solid rgba(17,12,43,.06);
-  border-radius: 18px;
-  padding: 2rem 1.25rem;
-  background: #fff;
-  box-shadow: 0 10px 24px rgba(17,12,43,.06);
+  border-radius: 2rem;
+  padding: 2.2rem 1.25rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 24, 39, 0.065);
+  box-shadow:
+    0 24px 70px rgba(17, 24, 39, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
-.emptyCard h3 { margin: 0 0 .4rem; font-weight: 700; color: #110c2b; }
-.emptyCard p { margin: 0 0 .9rem; color: #555; }
 
-/* ===== CTA 스트립 ===== */
-.inquiryStrip {
-  margin-top: 1rem;
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 1rem; flex-wrap: wrap;
-  border-radius: 16px;
-  padding: 1rem 1rem;
-  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
-  box-shadow: 0 10px 24px rgba(17,12,43,.06);
-  color: #fff;
+.emptyCard h3 {
+  margin: 0 0 0.5rem;
+  color: #111827;
+  font-size: 1.3rem;
+  font-weight: 950;
+  letter-spacing: -0.045em;
 }
+
+.emptyCard p {
+  margin: 0 0 1rem;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* ===== Inquiry strip ===== */
+
+.inquiryStrip {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  border-radius: 2rem;
+  padding: 1.15rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 24, 39, 0.065);
+  box-shadow:
+    0 24px 70px rgba(17, 24, 39, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
 .inquiryText {
+  color: #4b5563;
   font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: -.01em;
-  opacity: .95;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.inquiryText strong {
+  color: #111827;
+  font-weight: 950;
 }
 
 /* ===== Buttons ===== */
+
 .btn {
   appearance: none;
-  border: none;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 1.22rem;
+  border-radius: 18px;
+  color: #191f28;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(17, 24, 39, 0.075);
+  box-shadow:
+    0 16px 38px rgba(17, 24, 39, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  font-size: 0.95rem;
+  font-weight: 850;
+  letter-spacing: -0.03em;
   text-decoration: none;
-  font-weight: 700;
-  border-radius: 14px;
-  padding: .75rem 1.1rem;
   line-height: 1;
-  transition: transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, opacity .2s ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    opacity 180ms ease;
 }
-.btnPrimary {
-  color: #fff;
-  background: linear-gradient(135deg, #f2542d 0%, #d8315b 100%);
-  box-shadow: 0 10px 20px rgba(216,49,91,.18);
-}
-.btnPrimary:hover { transform: translateY(-2px); }
-.btnGhost {
-  color: #110c2b;
-  background: #fff;
-  border: 1px solid rgba(17,12,43,.12);
-}
-.btnGhost:hover { transform: translateY(-2px); }
-.btnLight {
-  color: #d8315b;
-  background: rgba(255,255,255,0.95);
-  border: 1px solid rgba(255,255,255,0.6);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
-}
-.btnLight:hover { transform: translateY(-2px); }
 
-/* ===== Modal (폼 잘림 방지) ===== */
-.modalOverlay {
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,.45);
-  display: flex; align-items: center; justify-content: center;
-  z-index: 9999; padding: 1rem;
+.btnPrimary,
+.btnGhost,
+.btnLight {
+  color: #191f28;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
 }
+
+.btn:hover {
+  transform: translateY(-2px);
+  color: #111827;
+  background: #ffffff;
+  border-color: rgba(17, 24, 39, 0.12);
+  box-shadow:
+    0 22px 52px rgba(17, 24, 39, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* ===== Modal ===== */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(17, 24, 39, 0.58);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
 .modalBody {
   position: relative;
   width: min(100%, 680px);
-  max-height: min(92vh, 820px);   /* 뷰포트 기준 안전 높이 */
-  background: #fff;
-  border-radius: 18px;
-  display: flex; flex-direction: column;
-  overflow: auto;                 /* 내부 스크롤로 잘림 방지 */
-  box-shadow: 0 30px 80px rgba(0,0,0,.25);
-  border: 1px solid rgba(17,12,43,.06);
-  padding: 1rem;                  /* 상하좌우 패딩 */
+  max-height: min(92vh, 820px);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
   box-sizing: border-box;
+  padding: 1.15rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(17, 24, 39, 0.075);
+  box-shadow:
+    0 34px 110px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
+
 .modalClose {
-  position: sticky; top: 0; align-self: flex-end;
-  margin-left: auto;
-  width: 36px; height: 36px; border-radius: 50%;
-  border: none; cursor: pointer;
-  background: #111; color: #fff;
-  font-size: 16px; line-height: 36px; opacity: .9;
-  transition: opacity .2s ease, transform .2s ease;
+  position: sticky;
+  top: 0;
   z-index: 1;
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  border-radius: 999px;
+  border: 1px solid rgba(17, 24, 39, 0.075);
+  cursor: pointer;
+  color: #111827;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow:
+    0 12px 28px rgba(17, 24, 39, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  font-size: 16px;
+  line-height: 1;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
-.modalClose:hover { opacity: 1; transform: translateY(-1px); }
+
+.modalClose:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 18px 38px rgba(17, 24, 39, 0.095),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
 .modalHeader {
+  margin: 0.75rem 0 1rem;
   text-align: center;
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: #110c2b;
-  margin: .75rem 0 1rem;
+  color: #111827;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 950;
+  letter-spacing: -0.055em;
 }
+
 .modalInput {
   width: 100%;
-  padding: 1rem 1.1rem;
-  font-size: 1rem;
-  border-radius: 12px;
-  border: 1px solid #e8e8ef;
-  background: #fafafe;
-  color: #222;
-  margin: 0 0 1rem 0;
-  resize: vertical;
+  min-height: 160px;
   box-sizing: border-box;
+  margin: 0 0 1rem;
+  padding: 1rem 1.05rem;
+  resize: vertical;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(17, 24, 39, 0.075);
+  color: #111827;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow:
+    0 12px 28px rgba(17, 24, 39, 0.045),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Pretendard";
+  line-height: 1.65;
+  outline: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
 }
+
 .modalInput::placeholder {
-  color: rgba(17, 12, 43, 0.38);
-  font-style: italic;
-  font-weight: 400;
+  color: #9ca3af;
+  font-style: normal;
+  font-weight: 500;
   opacity: 1;
 }
+
 .modalInput:focus {
-  outline: none;
-  border-color: rgba(216,49,91,0.22);
-  box-shadow: 0 10px 24px rgba(216,49,91,0.06);
+  border-color: rgba(216, 49, 91, 0.32);
+  box-shadow:
+    0 0 0 4px rgba(216, 49, 91, 0.07),
+    0 16px 34px rgba(17, 24, 39, 0.065),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
 }
+
 .modalActions {
-  display: flex; gap: .6rem; justify-content: flex-end; padding-top: .6rem;
-  border-top: 1px solid rgba(17,12,43,.06);
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-end;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(17, 24, 39, 0.065);
 }
 
 /* ===== Responsive ===== */
-@media (min-width: 900px) {
-  .heroSubtitle { font-size: 1.2rem; }
-}
+
 @media (max-width: 900px) {
-  .inquiryStrip { flex-direction: column; align-items: flex-start; }
-}
-@media (max-width: 680px) {
-  .hero { padding: 7rem 1rem 9rem; }
-  .answer { font-size: .95rem; }
-}
-@media (max-width: 480px) {
-  .question { font-size: 1rem; }
-  .inquiryText { font-size: .95rem; }
-  .btn { width: 100%; text-align: center; }
+  .inquiryStrip {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inquiryText {
+    text-align: center;
+  }
 }
 
-/* AOS 충돌 방지: 카드 자체는 항상 표시 */
+@media (max-width: 680px) {
+  .hero {
+    padding: 4.8rem 1rem 3.2rem;
+  }
+
+  .heroInner {
+    padding: 2rem 1.1rem;
+    border-radius: 2rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(2.55rem, 13vw, 3.8rem);
+  }
+
+  .answer {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 3.8rem 1rem 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .question {
+    font-size: 1rem;
+  }
+
+  .inquiryText {
+    font-size: 0.95rem;
+  }
+
+  .btn,
+  .scrollHint {
+    width: 100%;
+    text-align: center;
+  }
+
+  .modalActions {
+    flex-direction: column;
+  }
+}
+
 .faqCard[data-aos] {
   opacity: 1 !important;
   transform: none !important;
