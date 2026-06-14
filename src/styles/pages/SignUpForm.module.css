@@ -1,238 +1,513 @@
-/* Global Container & Typography */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 2rem;
-    background-color: #FAFAFA;
-    color: #120C3A;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: clamp(5rem, 8vw, 7rem) 1.25rem;
+  color: #191f28;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(216, 49, 91, 0.052), transparent 30rem),
+    radial-gradient(circle at 88% 8%, rgba(242, 84, 45, 0.04), transparent 32rem),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 48%, #ffffff 100%);
+  font-family: "Pretendard";
+  word-break: keep-all;
+}
+
+.bgOrbOne,
+.bgOrbTwo {
+  position: absolute;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(28px);
+}
+
+.bgOrbOne {
+  width: 22rem;
+  height: 22rem;
+  left: -9rem;
+  top: 4rem;
+  background: rgba(216, 49, 91, 0.07);
+}
+
+.bgOrbTwo {
+  width: 25rem;
+  height: 25rem;
+  right: -10rem;
+  top: 2rem;
+  background: rgba(242, 84, 45, 0.055);
+}
+
+.bgGrid {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.48;
+  background-image:
+    linear-gradient(rgba(17, 24, 39, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 24, 39, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(circle at 50% 16%, black 0%, transparent 66%);
+  pointer-events: none;
+}
+
+.authShell {
+  position: relative;
+  z-index: 2;
+  width: min(1060px, 100%);
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.74fr);
+  gap: clamp(1.4rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.authIntro {
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.kicker,
+.formKicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.48rem;
+  min-height: 2rem;
+  padding: 0 0.78rem;
+  border-radius: 999px;
+  color: #8b95a1;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow:
+    0 10px 24px rgba(17, 24, 39, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kicker::before,
+.formKicker::before {
+  content: "";
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: #d8315b;
+  box-shadow: 0 0 0 0.28rem rgba(216, 49, 91, 0.08);
+}
+
+.heroTitle {
+  margin: 1.1rem 0 0;
+  color: #111827;
+  font-size: clamp(3rem, 7vw, 5.9rem);
+  line-height: 0.98;
+  letter-spacing: -0.082em;
+  font-weight: 950;
+  text-rendering: optimizeLegibility;
+}
+
+.heroLead {
+  max-width: 35rem;
+  margin: 1.15rem 0 0;
+  color: #4b5563;
+  font-size: clamp(1rem, 1.7vw, 1.18rem);
+  line-height: 1.78;
+  letter-spacing: -0.025em;
+}
+
+.form {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.4rem, 4vw, 2rem);
+  border-radius: 2.35rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 24, 39, 0.065);
+  box-shadow:
+    0 30px 90px rgba(17, 24, 39, 0.075),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form::after {
+  content: "";
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  right: -8rem;
+  top: -8rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(216, 49, 91, 0.055), transparent 70%);
+  pointer-events: none;
+}
+
+.formHeader,
+.stepContainer,
+.navigationButtons,
+.warningText,
+.footer {
+  position: relative;
+  z-index: 2;
+}
+
+.formHeader {
+  text-align: left;
+}
+
+.title {
+  margin: 0.85rem 0 0;
+  color: #111827;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.065em;
+  font-weight: 950;
+}
+
+.stepIndicator {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  color: #6b7280;
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
+.stepTrack {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #eef0f3;
+}
+
+.stepFill {
+  height: 100%;
+  border-radius: inherit;
+  background: #d8315b;
+  transition: width 260ms ease;
+}
+
+.stepContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.label {
+  color: #4b5563;
+  font-size: 0.92rem;
+  font-weight: 850;
+  letter-spacing: -0.02em;
+}
+
+.input {
+  width: 100%;
+  min-height: 3.25rem;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(17, 24, 39, 0.075);
+  padding: 0 1rem;
+  color: #111827;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow:
+    0 12px 28px rgba(17, 24, 39, 0.045),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  font-size: 1rem;
+  font-family: "Pretendard";
+  font-weight: 700;
+  outline: none;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.input:hover {
+  background: #ffffff;
+  border-color: rgba(17, 24, 39, 0.12);
+}
+
+.input:focus {
+  transform: translateY(-1px);
+  border-color: rgba(216, 49, 91, 0.32);
+  box-shadow:
+    0 0 0 4px rgba(216, 49, 91, 0.07),
+    0 16px 34px rgba(17, 24, 39, 0.065),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.checkButton,
+.sendCodeButton,
+.verifyCodeButton,
+.navButton {
+  appearance: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 1.05rem;
+  border-radius: 16px;
+  color: #191f28;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid rgba(17, 24, 39, 0.075);
+  box-shadow:
+    0 14px 32px rgba(17, 24, 39, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  font-size: 0.9rem;
+  font-weight: 850;
+  font-family: "Pretendard";
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    opacity 180ms ease;
+}
+
+.checkButton {
+  align-self: flex-start;
+}
+
+.checkButton:hover,
+.sendCodeButton:hover,
+.verifyCodeButton:hover,
+.navButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #ffffff;
+  border-color: rgba(17, 24, 39, 0.12);
+  box-shadow:
+    0 20px 46px rgba(17, 24, 39, 0.085),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.checkButton:disabled,
+.sendCodeButton:disabled,
+.verifyCodeButton:disabled,
+.navButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.52;
+  transform: none;
+}
+
+.verificationContainer {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.strengthBarContainer {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.strengthMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #6b7280;
+  font-size: 0.84rem;
+  font-weight: 850;
+}
+
+.strengthMeta strong {
+  color: #111827;
+}
+
+.strengthBarBackground {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #eef0f3;
+}
+
+.strengthBarFill {
+  height: 100%;
+  border-radius: inherit;
+  background: #22c55e;
+  transition:
+    width 260ms ease,
+    background 260ms ease;
+}
+
+.violationsList {
+  list-style: none;
+  margin: 0;
+  padding: 0.85rem;
+  display: grid;
+  gap: 0.42rem;
+  border-radius: 1.1rem;
+  background: #f8fafc;
+  border: 1px solid rgba(17, 24, 39, 0.055);
+}
+
+.violationItem {
+  color: #9ca3af;
+  font-size: 0.84rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.agreementRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.72rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 1.1rem;
+  background: #f8fafc;
+  border: 1px solid rgba(17, 24, 39, 0.055);
+}
+
+.agreementRow input {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin-top: 0.15rem;
+  accent-color: #d8315b;
+}
+
+.agreementLabel {
+  color: #4b5563;
+  font-size: 0.92rem;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.agreementAll {
+  background: #ffffff;
+  border-color: rgba(216, 49, 91, 0.16);
+  box-shadow: 0 0 0 4px rgba(216, 49, 91, 0.045);
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.3rem;
+}
+
+.navButton {
+  flex: 1;
+  min-height: 52px;
+}
+
+.warningText {
+  margin: 0;
+  padding: 0.85rem 0.95rem;
+  border-radius: 1rem;
+  color: #b42318;
+  background: rgba(216, 49, 91, 0.055);
+  border: 1px solid rgba(216, 49, 91, 0.14);
+  font-size: 0.9rem;
+  font-weight: 750;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 0.2rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer p {
+  margin: 0 0 0.25rem;
+}
+
+.footerLink {
+  color: #111827;
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.inputWithToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.strengthText {
+  color: #111827;
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+
+@media (max-width: 980px) {
+  .authShell {
+    grid-template-columns: 1fr;
   }
-  
-  /* Form Container */
-  .form {
-    width: 100%;
-    max-width: 400px;
-    background: #fff;
-    padding: 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  /* Title & Step Indicator */
-  .title {
-    font-size: 2rem;
-    font-weight: 700;
+
+  .authIntro {
     text-align: center;
-    margin-bottom: 1.5rem;
+    padding: 0;
   }
-  
-  .stepIndicator {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 1rem;
+
+  .heroLead {
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  /* Step Container */
-  .stepContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+}
+
+@media (max-width: 720px) {
+  .verificationContainer {
+    grid-template-columns: 1fr;
   }
-  
-  /* Labels & Inputs */
-  .label {
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-  }
-  
-  .input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-  }
-  
+
   .checkButton,
   .sendCodeButton,
   .verifyCodeButton {
-    padding: 0.55rem 1.1rem; /* 약간 작게 조정 */
-    background: linear-gradient(135deg, #ff7e5f, #fd3a69);
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 0.9rem; /* 폰트 크기 약간 축소 */
-    font-weight: 600;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .checkButton:hover,
-  .sendCodeButton:hover,
-  .verifyCodeButton:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .checkButton {
-    margin-top: 0.5rem;
-    align-self: flex-start;
-  }
-  
-  /* Verification Container */
-  .verificationContainer {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-  
-  /* Input with Toggle (for password fields) */
-  .inputWithToggle {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  /* Password Strength Bar */
-  .strengthBarContainer {
     width: 100%;
-    height: 8px;
-    background-color: #eee;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
   }
-  
-  .strengthBarBackground {
-    width: 100%;
-    height: 100%;
-    background-color: #ddd;
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding: 4.8rem 0.9rem;
   }
-  
-  .strengthBarFill {
-    height: 100%;
-    background-color: green;
-    transition: width 0.3s ease;
+
+  .heroTitle {
+    font-size: clamp(2.55rem, 13vw, 3.8rem);
   }
-  
-  .strengthText {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #120C3A;
-    margin-top: 0.25rem;
+
+  .form {
+    padding: 1.15rem;
+    border-radius: 1.65rem;
   }
-  
-  /* Violations List */
-  .violationsList {
-    list-style: none;
-    padding-left: 1rem;
-    margin: 0;
+
+  .title {
+    font-size: 1.75rem;
   }
-  
-  .violationItem {
-    font-size: 0.8rem;
-    color: #E53E3E;
+
+  .input {
+    font-size: 0.96rem;
   }
-  
-  /* Agreements */
-  .agreementRow {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .agreementLabel {
-    font-size: 0.9rem;
-    color: #120C3A;
-  }
-  
-  /* Navigation Buttons */
+
   .navigationButtons {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    flex-direction: column;
   }
-  
-  .navButton,
-  .logout-button {
-    flex: 1;
-    padding: 0.65rem 1.1rem; /* 약간 작게 조정 */
-    background: linear-gradient(135deg, #ff7e5f, #fd3a69);
-    color: #fff;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 0.9rem; /* 폰트 크기 축소 */
-    font-weight: 600;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .navButton {
+    width: 100%;
   }
-  .navButton:disabled {
-    background: #ccc;
-    cursor: not-allowed;
-  }
-  .navButton:hover,
-  .logout-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Warning & Footer */
-  .warningText {
-    color: #E53E3E;
-    font-size: 0.9rem;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  .footer {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  
-  .footerLink {
-    color: #120C3A;
-    font-weight: 600;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  /* Responsive Adjustments (mobile) */
-  @media (max-width: 768px) {
-    .form {
-      padding: 2rem 1.5rem;
-    }
-    .title {
-      font-size: 1.75rem;
-    }
-    .stepIndicator {
-      font-size: 1rem;
-    }
-    .label,
-    .agreementLabel {
-      font-size: 0.9rem;
-    }
-    .input {
-      font-size: 0.95rem;
-      padding: 0.65rem;
-    }
-    .checkButton,
-    .sendCodeButton,
-    .verifyCodeButton,
-    .navButton {
-      font-size: 0.85rem;
-      padding: 0.6rem;
-    }
-    .strengthText {
-      font-size: 0.8rem;
-    }
-    .violationsList,
-    .violationItem {
-      font-size: 0.75rem;
-    }
-  }
-  
+}
