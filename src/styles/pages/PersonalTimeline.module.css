@@ -1,444 +1,715 @@
-
 .page {
   min-height: 100vh;
-  background: #ffffff;
+  background: #f5f7fb;
   color: #111827;
   word-break: keep-all;
 }
 
+.hero,
+.integratedSection,
+.timelineSection,
+.routeSection,
+.monthSection {
+  padding: clamp(72px, 9vw, 128px) clamp(20px, 6vw, 96px);
+}
+
 .hero {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 520px);
-  gap: clamp(40px, 8vw, 120px);
-  align-items: center;
   min-height: 100vh;
-  padding: 120px clamp(24px, 7vw, 120px);
-  overflow: hidden;
+  display: grid;
+  align-items: center;
   background:
-    radial-gradient(circle at 76% 32%, rgba(15, 23, 42, 0.08), transparent 34%),
-    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    radial-gradient(circle at 14% 18%, rgba(37, 99, 235, 0.12), transparent 28%),
+    radial-gradient(circle at 78% 24%, rgba(15, 23, 42, 0.10), transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, #eef3f9 100%);
+  overflow: hidden;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 480px);
+  gap: clamp(32px, 7vw, 96px);
+  align-items: center;
 }
 
 .heroCopy {
-  max-width: 900px;
-  z-index: 2;
+  max-width: 880px;
 }
 
 .eyebrow {
-  margin: 0 0 18px;
-  color: #6b7280;
+  margin: 0 0 16px;
+  color: #2563eb;
   font-size: 13px;
   font-weight: 900;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .hero h1,
-.sectionTitle h2,
-.timelineHeader h2 {
+.sectionHeader h2,
+.sectionHeaderCompact h2 {
   margin: 0;
-  color: #111827;
-  font-size: clamp(44px, 7vw, 90px);
-  line-height: 1.02;
+  color: #0f172a;
+  font-size: clamp(42px, 7vw, 84px);
+  line-height: 1.04;
   letter-spacing: -0.075em;
   font-weight: 950;
 }
 
-.heroText {
-  max-width: 720px;
-  margin: 30px 0 0;
-  color: #4b5563;
-  font-size: clamp(18px, 2vw, 22px);
+.heroText,
+.sectionHeader p,
+.sectionHeaderCompact p {
+  max-width: 820px;
+  margin: 26px 0 0;
+  color: #475569;
+  font-size: clamp(17px, 1.7vw, 21px);
   line-height: 1.75;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .heroStats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  max-width: 640px;
   margin-top: 42px;
 }
 
+.heroStats article,
+.heroCard,
+.routeCard,
+.groupInspector,
+.schoolCard,
+.routeList article,
+.monthCard {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(18px);
+}
+
 .heroStats article {
-  padding: 24px;
-  border-radius: 28px;
-  background: #ffffff;
-  box-shadow: 0 20px 60px rgba(17, 24, 39, 0.08);
+  padding: 22px;
+  border-radius: 26px;
 }
 
 .heroStats strong {
   display: block;
-  color: #111827;
-  font-size: 40px;
-  line-height: 1;
+  color: #0f172a;
+  font-size: 26px;
   letter-spacing: -0.06em;
 }
 
 .heroStats span {
   display: block;
   margin-top: 8px;
-  color: #6b7280;
+  color: #64748b;
   font-size: 14px;
   font-weight: 800;
 }
 
-.heroVisual {
+.heroCard {
   position: relative;
-  width: min(520px, 100%);
-  aspect-ratio: 1;
-  justify-self: center;
+  padding: 34px;
+  border-radius: 42px;
+  transform: rotate(-1.5deg);
 }
 
-.orbitOne,
-.orbitTwo {
+.heroCard::before {
+  content: "";
   position: absolute;
-  inset: 10%;
-  border: 1px solid rgba(17, 24, 39, 0.14);
-  border-radius: 50%;
-  animation: spin 16s linear infinite;
+  inset: 22px;
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 30px;
+  pointer-events: none;
 }
 
-.orbitTwo {
-  inset: 22%;
-  animation-duration: 11s;
-  animation-direction: reverse;
+.heroCardTop {
+  position: relative;
+  padding: 34px 28px;
+  border-radius: 30px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
 }
 
-.stackCard,
-.stackCardAlt,
-.stackCardThird {
-  position: absolute;
-  width: 68%;
-  padding: 28px;
-  border-radius: 34px;
-  background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 30px 80px rgba(17, 24, 39, 0.16);
-  backdrop-filter: blur(18px);
-}
-
-.stackCard { right: 4%; top: 12%; }
-.stackCardAlt { left: 0; top: 42%; }
-.stackCardThird { right: 12%; bottom: 8%; }
-
-.stackCard span,
-.stackCardAlt span,
-.stackCardThird span {
+.heroCardTop span {
   display: block;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.64);
   font-size: 13px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
-.stackCard strong,
-.stackCardAlt strong,
-.stackCardThird strong {
+.heroCardTop strong {
   display: block;
-  margin-top: 10px;
-  color: #111827;
-  font-size: 24px;
-  line-height: 1.18;
-  letter-spacing: -0.055em;
+  margin-top: 12px;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: -0.07em;
 }
 
-.section,
-.phaseSection,
-.timelineSection {
-  padding: 110px clamp(20px, 6vw, 100px);
+.heroCard p {
+  position: relative;
+  margin: 26px 0 0;
+  color: #475569;
+  font-size: 17px;
+  line-height: 1.75;
 }
 
-.sectionTitle,
-.timelineHeader {
-  max-width: 920px;
+.integratedSection {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.integratedSection .eyebrow {
+  color: #93c5fd;
+}
+
+.integratedSection .sectionHeader h2,
+.integratedSection .sectionHeader p {
+  color: #ffffff;
+}
+
+.integratedSection .sectionHeader p {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.sectionHeader {
+  max-width: 980px;
   margin-bottom: 54px;
 }
 
-.sectionTitle h2,
-.timelineHeader h2 {
+.sectionHeader h2,
+.sectionHeaderCompact h2 {
   font-size: clamp(36px, 5vw, 64px);
 }
 
-.sectionTitle p:last-child,
-.timelineHeader p:last-child {
-  margin: 20px 0 0;
-  max-width: 760px;
-  color: #6b7280;
-  font-size: 18px;
-  line-height: 1.7;
+.mapPanel {
+  position: relative;
+  min-height: 760px;
+  border-radius: 48px;
+  overflow: hidden;
+  background: #eaf1f8;
+  box-shadow: 0 34px 120px rgba(0, 0, 0, 0.38);
 }
 
-.educationGrid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+.worldMap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.educationCard,
-.travelYear,
-.monthCard {
-  border-radius: 34px;
-  background: #ffffff;
-  box-shadow:
-    0 0 0 1px rgba(17, 24, 39, 0.06),
-    0 22px 60px rgba(17, 24, 39, 0.06);
+.land {
+  fill: rgba(255, 255, 255, 0.82);
+  stroke: rgba(15, 23, 42, 0.06);
+  stroke-width: 1;
+  filter: url(#softShadow);
 }
 
-.educationCard {
-  padding: 28px;
+.gridLine {
+  stroke: rgba(37, 99, 235, 0.08);
+  stroke-width: 1;
 }
 
-.educationCard > span {
-  color: #6b7280;
-  font-size: 13px;
+.routePath {
+  fill: none;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  opacity: 0.32;
+  stroke-dasharray: 8 10;
+  animation: routeFlow 8s linear infinite;
+}
+
+.activeRoute {
+  opacity: 1;
+  stroke-width: 4;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  pathLength: 1;
+  animation: drawRoute 2.2s ease-in-out infinite;
+}
+
+.route-domestic { stroke: #0ea5e9; }
+.route-asia { stroke: #2563eb; }
+.route-america { stroke: #ef4444; }
+.route-europe { stroke: #7c3aed; }
+
+.cityDot circle {
+  fill: #0f172a;
+  opacity: 0.84;
+}
+
+.cityDot text {
+  fill: #0f172a;
+  font-size: 11px;
+  font-weight: 900;
+  opacity: 0.72;
+}
+
+.plane path {
+  fill: #0f172a;
+  filter: drop-shadow(0 8px 12px rgba(15, 23, 42, 0.25));
+}
+
+.routeCard {
+  position: absolute;
+  left: 28px;
+  bottom: 28px;
+  z-index: 4;
+  width: min(420px, calc(100% - 56px));
+  padding: 24px;
+  border-radius: 30px;
+}
+
+.routeCard span,
+.groupInspector > span,
+.schoolCard > span,
+.routeList article > span,
+.monthTop > span {
+  display: block;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.routeCard strong {
+  display: block;
+  margin-top: 10px;
+  color: #0f172a;
+  font-size: 23px;
+  letter-spacing: -0.055em;
+}
+
+.routeCard p {
+  margin: 10px 0 0;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.integratedNodes {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.mapNode {
+  position: absolute;
+  min-width: 172px;
+  padding: 14px 16px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  border-radius: 999px;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(16px);
+  cursor: pointer;
+  text-align: left;
+  transform: translate(-50%, -50%);
+  transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.mapNode:hover {
+  transform: translate(-50%, -54%);
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.18);
+}
+
+.mapNode span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
   font-weight: 900;
 }
 
-.educationCard h3 {
-  margin: 16px 0 12px;
-  color: #111827;
-  font-size: 26px;
-  letter-spacing: -0.06em;
+.mapNode strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+  letter-spacing: -0.035em;
 }
 
-.educationCard p {
-  margin: 0;
-  color: #4b5563;
+.activeMapNode {
+  color: #ffffff;
+  background: #0f172a;
+  border-color: #0f172a;
+}
+
+.activeMapNode span {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.groupInspector {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  z-index: 5;
+  width: min(460px, calc(100% - 56px));
+  max-height: calc(100% - 56px);
+  overflow: auto;
+  padding: 28px;
+  border-radius: 36px;
+}
+
+.groupInspector h3 {
+  margin: 10px 0 0;
+  color: #0f172a;
+  font-size: 34px;
+  letter-spacing: -0.07em;
+}
+
+.groupInspector p {
+  margin: 12px 0 0;
+  color: #475569;
   line-height: 1.7;
 }
 
-.educationCard div {
+.subgroupStack {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.subgroupStack article {
+  padding: 18px;
+  border-radius: 24px;
+  background: #f8fafc;
+}
+
+.subgroupStack article > strong {
+  display: block;
+  color: #0f172a;
+  font-size: 16px;
+}
+
+.subgroupStack ul {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.subgroupStack li {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.subgroupStack b {
+  color: #2563eb;
+  font-size: 12px;
+}
+
+.subgroupStack span {
+  color: #334155;
+  line-height: 1.55;
+}
+
+.strong {
+  box-shadow: inset 4px 0 0 #2563eb;
+}
+
+.soft {
+  box-shadow: inset 4px 0 0 #93c5fd;
+}
+
+.quiet {
+  opacity: 0.7;
+}
+
+.timelineSection,
+.routeSection {
+  background: #ffffff;
+}
+
+.schoolRail {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(240px, 1fr));
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.schoolCard {
+  min-width: 260px;
+  padding: 26px;
+  border-radius: 34px;
+}
+
+.schoolCard h3 {
+  margin: 12px 0 0;
+  color: #0f172a;
+  font-size: 25px;
+  letter-spacing: -0.06em;
+}
+
+.schoolCard p {
+  margin: 16px 0 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.schoolCard div {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 20px;
 }
 
-.educationCard em {
+.schoolCard em {
   padding: 8px 10px;
   border-radius: 999px;
-  background: #f3f4f6;
-  color: #4b5563;
-  font-style: normal;
+  color: #1d4ed8;
+  background: #eff6ff;
   font-size: 12px;
-  font-weight: 850;
-}
-
-.phaseSection,
-.timelineSection {
-  background: #f8fafc;
-}
-
-.phaseList {
-  display: grid;
-  gap: 14px;
-  max-width: 1040px;
-}
-
-.phaseList article {
-  display: grid;
-  grid-template-columns: 64px 1fr;
-  gap: 22px;
-  padding: 28px;
-  border-radius: 30px;
-  background: #ffffff;
-  box-shadow: 0 14px 44px rgba(17, 24, 39, 0.05);
-}
-
-.phaseList span {
-  display: grid;
-  place-items: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 999px;
-  background: #111827;
-  color: #ffffff;
-  font-size: 13px;
+  font-style: normal;
   font-weight: 900;
 }
 
-.phaseList strong {
-  display: block;
-  color: #111827;
-  font-size: 21px;
-  letter-spacing: -0.045em;
+.sectionHeaderCompact {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: end;
+  margin-bottom: 42px;
 }
 
-.phaseList p {
-  margin: 8px 0 0;
-  color: #6b7280;
-  line-height: 1.7;
+.sectionHeaderCompact > div:first-child {
+  max-width: 760px;
 }
 
-.travelYears {
+.routeStats {
   display: grid;
-  gap: 18px;
+  grid-template-columns: repeat(3, minmax(110px, 1fr));
+  gap: 10px;
+  min-width: 420px;
 }
 
-.travelYear {
-  padding: 28px;
-}
-
-.travelYear h3 {
-  margin: 0 0 18px;
-  color: #111827;
-  font-size: 36px;
-  letter-spacing: -0.075em;
-}
-
-.travelTable {
-  display: grid;
-  gap: 8px;
-}
-
-.travelRow {
-  display: grid;
-  grid-template-columns: 110px minmax(120px, 1.2fr) minmax(100px, 1fr) 100px minmax(160px, 1.2fr);
-  gap: 12px;
-  align-items: center;
-  padding: 14px 16px;
-  border-radius: 18px;
+.routeStats article {
+  padding: 18px;
+  border-radius: 24px;
   background: #f8fafc;
 }
 
-.travelRow span,
-.travelRow small,
-.travelRow em {
-  color: #6b7280;
-  font-style: normal;
+.routeStats strong {
+  display: block;
+  color: #0f172a;
+  font-size: 25px;
+  letter-spacing: -0.06em;
+}
+
+.routeStats span {
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
   font-size: 13px;
-  font-weight: 750;
-}
-
-.travelRow strong {
-  color: #111827;
-  font-size: 16px;
-  letter-spacing: -0.03em;
-}
-
-.travelRow b {
-  color: #0f766e;
-  font-size: 15px;
-}
-
-.timelineHeader {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
-  gap: 30px;
-  align-items: end;
-  max-width: none;
-}
-
-.filters {
-  display: grid;
-  gap: 10px;
-}
-
-.filters select,
-.filters input {
-  width: 100%;
-  min-height: 54px;
-  padding: 0 18px;
-  border: 1px solid #e5e7eb;
-  border-radius: 18px;
-  background: #ffffff;
-  color: #111827;
-  font-size: 15px;
   font-weight: 800;
+}
+
+.routeList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.routeList article {
+  padding: 22px;
+  border-radius: 28px;
+}
+
+.routeList strong {
+  display: block;
+  margin-top: 10px;
+  color: #0f172a;
+  font-size: 23px;
+  letter-spacing: -0.055em;
+}
+
+.routeList p {
+  margin: 10px 0 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.monthSection {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.08), transparent 26%),
+    #f8fafc;
+}
+
+.yearTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  max-width: 520px;
+}
+
+.yearTabs button {
+  min-width: 76px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  color: #475569;
+  background: #ffffff;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.yearTabs .activeYear {
+  color: #ffffff;
+  background: #0f172a;
 }
 
 .monthGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  gap: 16px;
 }
 
 .monthCard {
-  padding: 24px;
+  display: grid;
+  gap: 18px;
+  padding: 26px;
+  border-radius: 34px;
 }
 
-.monthTop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+.monthTop h3 {
+  margin: 10px 0 0;
+  color: #0f172a;
+  font-size: 25px;
+  line-height: 1.18;
+  letter-spacing: -0.06em;
 }
 
-.monthTop span {
-  color: #111827;
-  font-size: 22px;
-  font-weight: 950;
-  letter-spacing: -0.055em;
-}
-
-.monthTop em {
-  padding: 8px 10px;
-  border-radius: 999px;
-  background: #eef2ff;
-  color: #3730a3;
-  font-style: normal;
-  font-size: 12px;
-  font-weight: 900;
-}
-
-.monthCard h3 {
-  margin: 18px 0 0;
-  color: #111827;
-  font-size: 19px;
-  line-height: 1.45;
-  letter-spacing: -0.04em;
-}
-
-.monthCard p {
+.monthTop p {
   margin: 12px 0 0;
-  color: #6b7280;
+  color: #475569;
   line-height: 1.65;
 }
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
+.monthBlocks {
+  display: grid;
+  gap: 10px;
 }
 
-@media (max-width: 1100px) {
-  .hero,
-  .timelineHeader {
+.monthBlocks div {
+  padding: 16px;
+  border-radius: 22px;
+  background: #f8fafc;
+}
+
+.monthBlocks strong {
+  display: block;
+  color: #0f172a;
+  font-size: 15px;
+}
+
+.monthBlocks ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: #475569;
+  line-height: 1.65;
+}
+
+.monthBlocks li + li {
+  margin-top: 6px;
+}
+
+@keyframes routeFlow {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -90; }
+}
+
+@keyframes drawRoute {
+  0% { stroke-dashoffset: 1; }
+  48% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -1; }
+}
+
+@media (max-width: 1200px) {
+  .heroGrid,
+  .sectionHeaderCompact {
     grid-template-columns: 1fr;
+    display: grid;
   }
 
-  .educationGrid,
+  .heroStats,
+  .routeStats,
   .monthGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .routeList {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .travelRow {
-    grid-template-columns: 1fr 1fr;
+  .mapPanel {
+    min-height: 960px;
+  }
+
+  .groupInspector {
+    top: auto;
+    right: 20px;
+    left: 20px;
+    bottom: 132px;
+    width: auto;
+    max-height: 360px;
+  }
+
+  .routeCard {
+    bottom: 20px;
+    left: 20px;
   }
 }
 
 @media (max-width: 720px) {
   .hero,
-  .section,
-  .phaseSection,
-  .timelineSection {
-    padding: 72px 18px;
+  .integratedSection,
+  .timelineSection,
+  .routeSection,
+  .monthSection {
+    padding: 64px 16px;
   }
 
   .heroStats,
-  .educationGrid,
-  .monthGrid {
+  .routeStats,
+  .monthGrid,
+  .routeList {
     grid-template-columns: 1fr;
   }
 
-  .heroVisual {
-    min-height: 420px;
+  .heroCard {
+    transform: none;
   }
 
-  .phaseList article {
-    grid-template-columns: 1fr;
+  .mapPanel {
+    min-height: 1100px;
+    border-radius: 32px;
   }
 
-  .travelRow {
-    grid-template-columns: 1fr;
+  .mapNode {
+    min-width: 150px;
+    padding: 12px 14px;
+  }
+
+  .groupInspector {
+    max-height: 430px;
+    padding: 20px;
+  }
+
+  .groupInspector h3 {
+    font-size: 28px;
+  }
+
+  .worldMap {
+    height: 56%;
+  }
+
+  .integratedNodes {
+    bottom: 42%;
   }
 }
