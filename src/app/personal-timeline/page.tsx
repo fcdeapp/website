@@ -14,7 +14,7 @@ type RouteRecord = {
   date: string;
   from: string;
   to: string;
-  carrier: string;
+  carrier: string; 
   label: string;
   theme: "domestic" | "asia" | "america" | "europe";
 };
