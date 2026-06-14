@@ -1,246 +1,537 @@
-/* ../../styles/pages/StartPage.module.css */
-
-/* 전체 컨테이너 */
 .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #d9d9d9;
-    overflow: hidden;
-  }
-  
-  /* 영웅 이미지 */
-  .heroImage {
-    width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(216, 49, 91, 0.052), transparent 30rem),
+    radial-gradient(circle at 88% 8%, rgba(242, 84, 45, 0.04), transparent 32rem),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 48%, #ffffff 100%);
+  color: #191f28;
+  font-family: "Pretendard";
+  word-break: keep-all;
+}
+
+/* =========================
+   Hero
+========================= */
+
+.heroWrap {
+  position: relative;
+  width: 100%;
+  height: 42vh;
+  min-height: 280px;
+  overflow: hidden;
+  background: #f2f4f6;
+  transform-origin: center center;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.92) contrast(0.98);
+}
+
+.heroBlur {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.heroBrightOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background:
+    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.52), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(248, 250, 252, 0.66));
+}
+
+.tilesLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.movingTile {
+  position: absolute;
+  width: clamp(96px, 16vw, 140px);
+  aspect-ratio: 1;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 60px rgba(17, 24, 39, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.tileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tileLabel {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  max-width: calc(100% - 18px);
+  color: #111827;
+  font-size: clamp(0.95rem, 2vw, 1.35rem);
+  font-weight: 900;
+  line-height: 1.05;
+  text-align: center;
+  white-space: nowrap;
+  text-shadow:
+    -2px -2px 0 rgba(255, 255, 255, 0.98),
+    2px -2px 0 rgba(255, 255, 255, 0.98),
+    -2px 2px 0 rgba(255, 255, 255, 0.98),
+    2px 2px 0 rgba(255, 255, 255, 0.98),
+    0 8px 18px rgba(17, 24, 39, 0.12);
+}
+
+/* =========================
+   Main content
+========================= */
+
+.content {
+  position: relative;
+  z-index: 10;
+  min-height: calc(58vh + 40px);
+  margin-top: -40px;
+  padding: 1.1rem 1.25rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 24, 39, 0.065);
+  border-bottom: 0;
+  box-shadow:
+    0 -24px 70px rgba(17, 24, 39, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  touch-action: none;
+  cursor: grab;
+}
+
+.content:active {
+  cursor: grabbing;
+}
+
+.dragHandle {
+  position: absolute;
+  top: 12px;
+  width: 46px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.12);
+}
+
+.startStudyImage {
+  width: clamp(104px, 18vw, 138px);
+  height: clamp(104px, 18vw, 138px);
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+  filter: drop-shadow(0 18px 34px rgba(17, 24, 39, 0.08));
+}
+
+.title {
+  margin: 0;
+  max-width: 720px;
+  color: #111827;
+  font-size: clamp(2.5rem, 7vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.082em;
+  font-weight: 950;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: min(190px, 42vw);
+  height: 0.18em;
+  margin: -0.04em auto 0;
+  border-radius: 999px;
+  background: rgba(216, 49, 91, 0.12);
+}
+
+.tagline {
+  margin: 1rem 0 0;
+  color: #d8315b;
+  font-size: clamp(1.15rem, 3vw, 1.8rem);
+  font-weight: 850;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  max-width: 520px;
+  margin: 1.25rem auto 2rem;
+  color: #6b7280;
+  font-size: clamp(0.98rem, 2vw, 1.12rem);
+  line-height: 1.75;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.getStartedButton,
+.confirmButton,
+.subtleBtn,
+.moreButton {
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid rgba(17, 24, 39, 0.075);
+  color: #191f28;
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow:
+    0 16px 38px rgba(17, 24, 39, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  font-family: "Pretendard";
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease,
+    border-color 180ms ease,
+    opacity 180ms ease;
+}
+
+.getStartedButton {
+  min-width: 220px;
+  min-height: 56px;
+  padding: 0 1.4rem;
+  border-radius: 999px;
+}
+
+.getStartedButton:hover,
+.confirmButton:hover,
+.subtleBtn:hover:not(:disabled),
+.moreButton:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  border-color: rgba(17, 24, 39, 0.12);
+  box-shadow:
+    0 22px 52px rgba(17, 24, 39, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.getStartedButtonText,
+.confirmButtonText,
+.subtleText,
+.moreButtonText {
+  font-size: 0.98rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+/* =========================
+   Modal
+========================= */
+
+.modalBackground {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(17, 24, 39, 0.58);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.modalContainer {
+  width: min(720px, 100%);
+  max-height: min(92vh, 840px);
+  overflow: auto;
+  border-radius: 2.4rem;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(17, 24, 39, 0.075);
+  box-shadow:
+    0 34px 110px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.containerCountry {
+  width: 100%;
+}
+
+.overlay {
+  padding: clamp(1.25rem, 4vw, 2.2rem);
+  text-align: center;
+}
+
+.modalKicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.48rem;
+  min-height: 2rem;
+  padding: 0 0.78rem;
+  border-radius: 999px;
+  color: #8b95a1;
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.06);
+  box-shadow:
+    0 10px 24px rgba(17, 24, 39, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.modalKicker::before {
+  content: "";
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: #d8315b;
+  box-shadow: 0 0 0 0.28rem rgba(216, 49, 91, 0.08);
+}
+
+.headerText {
+  margin: 1rem auto 0;
+  max-width: 520px;
+  color: #111827;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  line-height: 1.06;
+  letter-spacing: -0.075em;
+  font-weight: 950;
+}
+
+.modalLead {
+  max-width: 500px;
+  margin: 0.85rem auto 0;
+  color: #6b7280;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+}
+
+.selectionWrapper {
+  width: 100%;
+  margin: 1.4rem auto 0;
+}
+
+.card {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 24, 39, 0.065);
+  box-shadow:
+    0 22px 62px rgba(17, 24, 39, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.label {
+  margin: 0;
+  color: #111827;
+  font-size: 1.14rem;
+  font-weight: 950;
+  letter-spacing: -0.045em;
+}
+
+.selectedText {
+  margin: 0.5rem 0 0.9rem;
+  color: #d8315b;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.scrollContainer {
+  max-height: 238px;
+  overflow-y: auto;
+  border-radius: 1.35rem;
+  background: #f8fafc;
+  border: 1px solid rgba(17, 24, 39, 0.055);
+  padding: 0.75rem;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.16);
+}
+
+.flagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.flagButton {
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(17, 24, 39, 0.07);
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow:
+    0 10px 22px rgba(17, 24, 39, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.flagButton:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 32px rgba(17, 24, 39, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.flagButtonActive {
+  border-color: rgba(216, 49, 91, 0.34);
+  box-shadow:
+    0 0 0 4px rgba(216, 49, 91, 0.07),
+    0 16px 32px rgba(17, 24, 39, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.flag {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.moreButton {
+  min-height: 40px;
+  margin-top: 0.9rem;
+  padding: 0 1rem;
+  border-radius: 999px;
+}
+
+.modalActions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.subtleBtn,
+.confirmButton {
+  min-width: 180px;
+  min-height: 52px;
+  padding: 0 1.2rem;
+  border-radius: 999px;
+}
+
+.confirmButton {
+  border-color: rgba(216, 49, 91, 0.16);
+  box-shadow:
+    0 16px 38px rgba(17, 24, 39, 0.07),
+    0 0 0 4px rgba(216, 49, 91, 0.045),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.subtleBtn:disabled,
+.subtleBtnDisabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+  transform: none;
+}
+
+.textDisabled {
+  color: #9ca3af;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 720px) {
+  .heroWrap {
     height: 40vh;
-    object-fit: cover;
+    min-height: 250px;
   }
-  
-  /* 컨텐츠 영역 (아래쪽 흰색 영역) */
+
   .content {
-    background-color: #ffffff;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    margin-top: -40px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    min-height: calc(60vh + 40px);
+    padding-inline: 1rem;
+    border-top-left-radius: 34px;
+    border-top-right-radius: 34px;
   }
-  
-  /* 제목 */
+
+  .movingTile {
+    width: 104px;
+    border-radius: 20px;
+  }
+
   .title {
-    font-size: 34px;
-    color: #120C3A;
-    font-weight: 700;
-    margin-bottom: 12px;
+    font-size: clamp(2.35rem, 12vw, 3.7rem);
   }
-  
-  /* 태그라인 */
-  .tagline {
-    font-size: 26px;
-    color: #f2542d;
-    font-weight: 600;
-    margin: 15px 0;
-  }
-  
-  /* 설명 */
+
   .description {
-    font-size: 16px;
-    color: #555;
-    line-height: 28px;
-    margin-bottom: 40px;
-    padding: 0 20px;
+    margin-bottom: 1.7rem;
+    font-size: 0.96rem;
   }
-  
-  /* Get Started 버튼 */
-  .getStartedButton {
-    background: none;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .buttonStartedInner {
-    width: 220px;
-    height: 56px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .gradient {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg, #ff7e5f, #fd3a69);
-  }
-  
-  .getStartedButtonText {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  /* 모달 배경 */
-  .modalBackground {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* 모달 컨테이너 */
+
   .modalContainer {
-    width: 100%;
-    max-height: 90vh;
-    background-color: transparent;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    overflow: hidden;
+    border-radius: 2rem;
   }
-  
-  /* 국가/언어 선택 컨테이너 */
-  .containerCountry {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-  }
-  
-  .overlay {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .headerText {
-    font-size: 26px;
-    color: #ffffff;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .selectionWrapper {
-    width: 90%;
-    margin: 0 auto;
-    padding: 15px;
-  }
-  
-  .card {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 20px 15px;
-    margin-bottom: 25px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  .label {
-    font-size: 18px;
-    font-weight: bold;
-    color: #120C3A;
-    margin-bottom: 8px;
-  }
-  
-  .selectedText {
-    font-size: 16px;
-    color: #f2542d;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  /* 스크롤 컨테이너 (국가/언어 플래그) */
+
   .scrollContainer {
-    max-height: 170px;
-    overflow-y: auto;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 5px;
+    max-height: 218px;
   }
-  
-  .flagsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    padding: 10px 0;
+}
+
+@media (max-width: 520px) {
+  .heroWrap {
+    min-height: 225px;
   }
-  
-  .flag {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    object-fit: cover;
+
+  .startStudyImage {
+    width: 104px;
+    height: 104px;
   }
-  
-  .flagButton {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-  
-  .moreButton {
-    margin-top: 10px;
-    background-color: #f2542d;
-    padding: 6px 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .moreButtonText {
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
+
+  .getStartedButton,
+  .subtleBtn,
   .confirmButton {
-    width: 90%;
-    height: 56px;
-    border-radius: 30px;
-    overflow: hidden;
-    margin: 20px auto 30px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-    background: none;
-    border: none;
-    cursor: pointer;
+    width: 100%;
   }
-  
-  .buttonInner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+
+  .modalActions {
+    flex-direction: column;
   }
-  
-  .confirmButtonText {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
+
+  .flagButton {
+    width: 48px;
+    height: 48px;
   }
-  
-  /* 반응형 */
-  @media (min-width: 768px) {
-    .content {
-      padding: 40px;
-    }
-    .title {
-      font-size: 40px;
-    }
-    .tagline {
-      font-size: 30px;
-    }
-    .description {
-      font-size: 18px;
-    }
+
+  .flag {
+    width: 38px;
+    height: 38px;
   }
-  
+}
