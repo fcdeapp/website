@@ -318,10 +318,11 @@ export default function Home() {
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={currentLanguage}
-                    initial={{ opacity: 0, y: 16 }}
+                    className={styles.languageText}
+                    initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -16 }}
-                    transition={{ duration: 0.38, ease: "easeOut" }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.32, ease: "easeOut" }}
                   >
                     {currentLanguage}
                   </motion.span>
@@ -370,6 +371,7 @@ export default function Home() {
             aria-hidden="true"
           >
             <div className={styles.visualGlow} />
+
             <div className={styles.phoneStack}>
               {JOURNEY_ITEMS.map((item, index) => (
                 <img
