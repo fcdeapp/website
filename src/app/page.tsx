@@ -1,17 +1,11 @@
 "use client";
 
 import Head from "next/head";
-import React, { useEffect, useMemo, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import Image from "next/image";
+import React, { useEffect, useRef, useState } from "react";
+import { Box, Volume2, X } from "lucide-react";
 import styles from "../styles/Home.module.css";
 import WebFooter from "../components/WebFooter";
-
-type CarouselItem = {
-  label: string;
-  image: string;
-};
 
 type IVItem = {
   label: string;
@@ -21,35 +15,18 @@ type IVItem = {
   src: string;
   modelSrc: string;
 };
+type DownloadLink = { label: string; href: string };
+type Preview = { kind: "model"; word: IVItem } | { kind: "screen"; src: string; title: string };
 
-type FeatureItem = {
-  index: string;
-  title: string;
-  body: string;
-};
-
-type DownloadLink = {
-  label: string;
-  href: string;
-};
-
-const LANGUAGES = ["English", "Français", "Español", "中文", "日本語", "한국어"];
-
-const JOURNEY_ITEMS: CarouselItem[] = [
-  { label: "1", image: "/journey/AppStoreImageiPhoneEN2605011.jpg" },
-  { label: "2", image: "/journey/AppStoreImageiPhoneEN2605012.jpg" },
-  { label: "3", image: "/journey/AppStoreImageiPhoneEN2605013.jpg" },
-];
-
-const INITIAL_IV_ITEMS: IVItem[] = [
+const WORDS: IVItem[] = [
   {
-    label: "air balloon",
+    label: "hot-air balloon",
     meaning: "열기구",
     description:
       "A large balloon filled with hot air that carries people in a basket through the sky.",
     examples: [
-      "The air balloon rose slowly over the field.",
-      "We saw a colorful air balloon at sunrise.",
+      "The hot-air balloon rose slowly over the field.",
+      "We saw a colorful hot-air balloon at sunrise.",
     ],
     src: "/air_balloon_model.png",
     modelSrc: "/air_balloon_model.glb",
@@ -104,42 +81,6 @@ const INITIAL_IV_ITEMS: IVItem[] = [
   },
 ];
 
-const HOW_ITEMS: FeatureItem[] = [
-  {
-    index: "01",
-    title: "Take a photo",
-    body: "Start from real scenes around you instead of a fixed textbook list.",
-  },
-  {
-    index: "02",
-    title: "Find visual words",
-    body: "Objects in the photo become vocabulary cards with meaning and examples.",
-  },
-  {
-    index: "03",
-    title: "Review quickly",
-    body: "Short sessions help you remember words through moments you actually saw.",
-  },
-];
-
-const PRACTICE_ITEMS: FeatureItem[] = [
-  {
-    index: "A",
-    title: "Personal context",
-    body: "Words are connected to your own photos, so they feel easier to recall.",
-  },
-  {
-    index: "B",
-    title: "3D-style exploration",
-    body: "Selected cards can open a model preview to make the word more concrete.",
-  },
-  {
-    index: "C",
-    title: "Light daily rhythm",
-    body: "Abrody is designed to be opened often, even when you only have a minute.",
-  },
-];
-
 const IOS_LINKS: DownloadLink[] = [
   { label: "Canada", href: "https://apps.apple.com/ca/app/id6743047157" },
   { label: "Australia", href: "https://apps.apple.com/au/app/id6743047157" },
@@ -150,104 +91,124 @@ const IOS_LINKS: DownloadLink[] = [
 const ANDROID_LINK =
   "https://play.google.com/store/apps/details?id=com.fcdeapp.facade";
 
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 22 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.58, ease: "easeOut" },
-  },
-};
 
-const stagger: Variants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.08,
-    },
-  },
-};
+const SCREENS = [
+  { title: "A little learning, every day.", caption: "Lessons and short quizzes, together in one place.", src: "/journey/AppStoreImageiPhoneEN2605011.jpg" },
+  { title: "Keep the words you find.", caption: "Build a vocabulary collection from your own photos.", src: "/journey/AppStoreImageiPhoneEN2605012.jpg" },
+  { title: "Look a little closer.", caption: "Explore selected objects in 3D, from every angle.", src: "/journey/AppStoreImageiPhoneEN2605013.jpg" },
+];
+
+function ModelPreview({ word }: { word: IVItem }) {
+  const viewerRef = useRef<HTMLElement | null>(null);
+  const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
+
+  useEffect(() => {
+    const viewer = viewerRef.current;
+    if (!viewer) return;
+    const ready = () => { window.clearTimeout(timeout); setStatus("ready"); };
+    const failed = () => { window.clearTimeout(timeout); setStatus("error"); };
+    // Report a stalled network request instead of leaving an endless spinner.
+    const timeout = window.setTimeout(failed, 30000);
+    viewer.addEventListener("load", ready);
+    viewer.addEventListener("error", failed);
+    let script = document.querySelector<HTMLScriptElement>('script[data-model-viewer="true"]');
+    if (!window.customElements.get("model-viewer")) {
+      if (script?.dataset.failed === "true") { script.remove(); script = null; }
+      if (!script) {
+        script = document.createElement("script");
+        script.type = "module";
+        script.src = "https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js";
+        script.dataset.modelViewer = "true";
+        document.head.appendChild(script);
+      }
+    }
+    const scriptFailed = () => {
+      if (script) script.dataset.failed = "true";
+      failed();
+    };
+    script?.addEventListener("error", scriptFailed);
+    if ((viewer as HTMLElement & { loaded?: boolean }).loaded) ready();
+    return () => {
+      window.clearTimeout(timeout);
+      viewer.removeEventListener("load", ready);
+      viewer.removeEventListener("error", failed);
+      script?.removeEventListener("error", scriptFailed);
+    };
+  }, []);
+
+  return (
+    <div className={styles.modelStage}>
+      {status !== "error" && React.createElement("model-viewer", {
+        ref: viewerRef,
+        src: word.modelSrc,
+        alt: `Interactive 3D model of ${word.label}`,
+        "camera-controls": true,
+        "touch-action": "pan-y",
+        "interaction-prompt": "none",
+        exposure: "1",
+        className: styles.modelViewer,
+      })}
+      {status === "loading" && <p className={styles.modelStatus} role="status">Loading 3D model…</p>}
+      {status === "error" && (
+        <div className={styles.modelFallback}>
+          <Image src={word.src} alt={word.label} width={400} height={400} unoptimized />
+          <p role="status">The 3D preview couldn’t load. Close and reopen it to try again.</p>
+        </div>
+      )}
+      {status === "ready" && <p className={styles.modelHint}>Drag to rotate · Scroll or pinch to zoom</p>}
+    </div>
+  );
+}
 
 export default function Home() {
-  const [ivItems, setIvItems] = useState<IVItem[]>(INITIAL_IV_ITEMS);
-  const [journeyOrder, setJourneyOrder] =
-    useState<CarouselItem[]>(JOURNEY_ITEMS);
-  const [langIndex, setLangIndex] = useState(0);
-  const [modalImage, setModalImage] = useState<string | null>(null);
-  const [loadingModelSrc, setLoadingModelSrc] = useState<string | null>(null);
-  const [activeModel, setActiveModel] = useState<IVItem | null>(null);
-
-  const currentLanguage = useMemo(() => {
-    return LANGUAGES[langIndex] ?? LANGUAGES[0] ?? "English";
-  }, [langIndex]);
+  const [selectedIndex, setSelectedIndex] = useState(1);
+  const [quiz, setQuiz] = useState(false);
+  const [answer, setAnswer] = useState<string | null>(null);
+  const [canSpeak, setCanSpeak] = useState(false);
+  const [speechError, setSpeechError] = useState("");
+  const [preview, setPreview] = useState<Preview | null>(null);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const word = WORDS[selectedIndex];
 
   useEffect(() => {
-    AOS.init({
-      duration: 850,
-      once: true,
-      offset: 80,
-    });
+    setCanSpeak("speechSynthesis" in window && "SpeechSynthesisUtterance" in window);
+    return () => {
+      if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    };
   }, []);
 
   useEffect(() => {
-    if (document.querySelector('script[data-model-viewer="true"]')) return;
+    if (!preview) return;
+    const dialog = dialogRef.current;
+    dialog?.showModal();
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      dialog?.close();
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [preview]);
 
-    const script = document.createElement("script");
-    script.type = "module";
-    script.src =
-      "https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js";
-    script.dataset.modelViewer = "true";
-    document.head.appendChild(script);
-  }, []);
-
-  useEffect(() => {
-    const intervalId = window.setInterval(() => {
-      setLangIndex((current) => (current + 1) % LANGUAGES.length);
-    }, 3000);
-
-    return () => window.clearInterval(intervalId);
-  }, []);
-
-  useEffect(() => {
-    const intervalId = window.setInterval(() => {
-      setIvItems((prev) => {
-        if (!Array.isArray(prev) || prev.length <= 1) return prev;
-        return [...prev.slice(1), prev[0]];
-      });
-    }, 5000);
-
-    return () => window.clearInterval(intervalId);
-  }, []);
-
-  useEffect(() => {
-    const intervalId = window.setInterval(() => {
-      setJourneyOrder((prev) => {
-        if (!Array.isArray(prev) || prev.length <= 1) return prev;
-        return [...prev.slice(1), prev[0]];
-      });
-    }, 5000);
-
-    return () => window.clearInterval(intervalId);
-  }, []);
-
-  function closeModal() {
-    setModalImage(null);
+  function selectWord(index: number) {
+    setSelectedIndex(index);
+    setAnswer(null);
+    setSpeechError("");
+    if (canSpeak) window.speechSynthesis.cancel();
   }
 
-  function openModel(item: IVItem) {
-    if (loadingModelSrc) return;
-
-    setLoadingModelSrc(item.modelSrc);
-
-    window.setTimeout(() => {
-      setActiveModel(item);
-      setLoadingModelSrc(null);
-    }, 850);
-  }
-
-  function closeModel() {
-    setActiveModel(null);
+  function pronounce() {
+    if (!canSpeak) return;
+    setSpeechError("");
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(word.label);
+    utterance.lang = "en-US";
+    utterance.rate = 0.85;
+    utterance.onerror = (event) => {
+      if (event.error !== "interrupted" && event.error !== "canceled") {
+        setSpeechError("Audio is unavailable in this browser.");
+      }
+    };
+    window.speechSynthesis.speak(utterance);
   }
 
   return (
@@ -299,426 +260,97 @@ export default function Home() {
           content="Abrody visual language learning app"
         />
       </Head>
-
       <div className={styles.page}>
-        <section className={styles.hero}>
-          <motion.div
-            className={styles.heroCopy}
-            variants={stagger}
-            initial="hidden"
-            animate="visible"
-          >
-            <motion.p className={styles.eyebrow} variants={fadeUp}>
-              Abrody visual language app
-            </motion.p>
+        <section className={styles.hero} aria-labelledby="home-title">
+          <div className={styles.heroCopy}>
+            <p className={styles.eyebrow}>A language lesson, wherever you look.</p>
+            <h1 id="home-title">Your world.<br />Your next<br /><em>words.</em></h1>
+            <p className={styles.heroText}>A bowl on the table. A pair of shoes by the door. Turn the things around you into words you’ll remember.</p>
+            <div className={styles.heroActions}>
+              <a className={styles.primaryButton} href="#download">Get Abrody</a>
+              <a className={styles.textLink} href="#how">How it works</a>
+            </div>
+            <p className={styles.platformNote}>For iOS and Android</p>
+          </div>
 
-            <motion.h1 variants={fadeUp}>
-              Learn{" "}
-              <span className={styles.languageSlot}>
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={currentLanguage}
-                    className={styles.languageText}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.32, ease: "easeOut" }}
-                  >
-                    {currentLanguage}
-                  </motion.span>
-                </AnimatePresence>
-              </span>
-              <br />
-              from what you see.
-            </motion.h1>
-
-            <motion.p className={styles.heroText} variants={fadeUp}>
-              Take a photo, turn real objects into vocabulary, and review words
-              through short visual sessions. Abrody makes language learning feel
-              closer to your daily life.
-            </motion.p>
-
-            <motion.div className={styles.heroActions} variants={fadeUp}>
-              <a href="#how" className={styles.darkButton}>
-                See how it works
-              </a>
-              <a href="#product" className={styles.lightButton}>
-                Explore product
-              </a>
-            </motion.div>
-
-            <motion.div className={styles.heroStats} variants={fadeUp}>
-              <div>
-                <span>Input</span>
-                <strong>Photo</strong>
-              </div>
-              <div>
-                <span>Output</span>
-                <strong>Vocabulary</strong>
-              </div>
-              <div>
-                <span>Review</span>
-                <strong>Short quiz</strong>
-              </div>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            className={styles.heroVisual}
-            initial={{ opacity: 0, y: 30, rotate: -2 }}
-            animate={{ opacity: 1, y: 0, rotate: 0 }}
-            transition={{ duration: 0.75, ease: "easeOut", delay: 0.12 }}
-            aria-hidden="true"
-          >
-            <div className={styles.visualGlow} />
-
-            <div className={styles.phoneStack}>
-              {JOURNEY_ITEMS.map((item, index) => (
-                <img
-                  key={item.image}
-                  src={item.image}
-                  alt=""
-                  className={`${styles.heroPhone} ${
-                    index === 0
-                      ? styles.heroPhoneOne
-                      : index === 1
-                        ? styles.heroPhoneTwo
-                        : styles.heroPhoneThree
-                  }`}
-                  draggable={false}
-                />
+          <div className={styles.demo} id="product" aria-label="Interactive vocabulary sample">
+            <div className={styles.objectStage}>
+              <Image key={word.src} src={word.src} alt={quiz ? word.description : word.label} fill sizes="(max-width: 760px) 90vw, 520px" unoptimized priority={selectedIndex === 1} className={styles.objectImage} />
+              {!quiz && <button type="button" className={styles.modelButton} onClick={() => setPreview({ kind: "model", word })}><Box size={17} aria-hidden="true" /> Explore in 3D</button>}
+            </div>
+            <div className={styles.wordPicker} role="group" aria-label="Choose an object">
+              {WORDS.map((item, index) => (
+                <button key={item.src} type="button" aria-label={quiz ? `Sample object ${index + 1}` : item.label} aria-pressed={index === selectedIndex} onClick={() => selectWord(index)}>
+                  <Image src={item.src} alt="" width={56} height={56} unoptimized />
+                </button>
               ))}
             </div>
-
-            <div className={styles.wordBubble}>
-              <span>Detected word</span>
-              <strong>{ivItems[0]?.label ?? "object"}</strong>
-              <em>{ivItems[0]?.meaning ?? "단어"}</em>
+            <div className={styles.wordDetails}>
+              {quiz ? (
+                <div className={styles.quiz}>
+                  <p className={styles.detailLabel}>A QUICK RECALL</p>
+                  <h2>What do you see?</h2>
+                  <div className={styles.answers}>
+                    {WORDS.map((item) => (
+                      <button key={item.label} type="button" aria-pressed={answer === item.label} data-correct={answer === item.label && answer === word.label} onClick={() => setAnswer(item.label)}>{item.label}</button>
+                    ))}
+                  </div>
+                  <p className={styles.feedback} role="status">{answer ? answer === word.label ? `That’s it. ${word.label} — ${word.meaning}.` : "Not quite. Take another look." : "Choose the word that matches the image."}</p>
+                </div>
+              ) : (
+                <div key={word.label} className={styles.wordEntry} aria-live="polite" aria-atomic="true">
+                  <div className={styles.wordHeading}><h2>{word.label}</h2>{canSpeak && <button type="button" className={styles.audioButton} onClick={pronounce} aria-label={`Hear ${word.label} in English`}><Volume2 size={22} aria-hidden="true" /></button>}</div>
+                  <p className={styles.translation}><span lang="ko">{word.meaning}</span><span>noun · English</span></p>
+                  <p className={styles.example}>{word.examples[0]}</p>
+                  {speechError && <p role="status" className={styles.speechError}>{speechError}</p>}
+                </div>
+              )}
+              <div className={styles.demoBottom}><span>Sample vocabulary</span><button type="button" className={styles.textLink} onClick={() => { setQuiz(!quiz); setAnswer(null); if (canSpeak) window.speechSynthesis.cancel(); }}>{quiz ? "Back to the word" : "Test your memory"}</button></div>
             </div>
-
-            <div className={styles.quizBubble}>
-              <span>Quick review</span>
-              <strong>3 min</strong>
-            </div>
-          </motion.div>
+          </div>
         </section>
 
-        <main className={styles.main}>
-          <section id="how" className={styles.problemSection}>
-            <div className={styles.sectionTitle} data-aos="fade-up">
-              <p className={styles.eyebrow}>How it works</p>
-              <h2>Your everyday moments become study material.</h2>
-              <p>
-                Abrody removes the distance between what you see and what you
-                learn. The flow is simple: capture, understand, and review.
-              </p>
-            </div>
-
-            <div className={styles.problemGrid}>
-              {HOW_ITEMS.map((item) => (
-                <article key={item.index} data-aos="fade-up">
-                  <span>{item.index}</span>
-                  <strong>{item.title}</strong>
-                  <p>{item.body}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          <section className={styles.solutionSection}>
-            <div className={styles.solutionVisual} aria-hidden="true">
-              <motion.div className={styles.appGallery} layout>
-                {journeyOrder.map((item, index) => (
-                  <motion.button
-                    key={item.label}
-                    type="button"
-                    className={styles.appShotButton}
-                    layout
-                    transition={{ duration: 0.55, ease: "easeInOut" }}
-                    whileHover={{ y: -8 }}
-                    onClick={() => setModalImage(item.image)}
-                    aria-label={`Open Abrody app screenshot ${item.label}`}
-                  >
-                    <img
-                      src={item.image}
-                      alt={`Abrody app screenshot ${item.label}`}
-                      loading={index === 0 ? "eager" : "lazy"}
-                      decoding="async"
-                    />
-                  </motion.button>
-                ))}
-              </motion.div>
-            </div>
-
-            <div className={styles.solutionCopy} data-aos="fade-up">
-              <p className={styles.eyebrow}>Product flow</p>
-              <h2>Photo first. Words second. Memory after that.</h2>
-              <p>
-                Instead of beginning with an abstract word list, Abrody begins
-                with an image. You connect the word to something you actually
-                saw, which makes the review experience more visual and personal.
-              </p>
-
-              <div className={styles.solutionList}>
-                <div>
-                  <strong>Image-based vocabulary</strong>
-                  <span>Words are attached to visible objects and scenes.</span>
-                </div>
-                <div>
-                  <strong>Clear meaning and examples</strong>
-                  <span>Each card shows meaning, description, and usage.</span>
-                </div>
-                <div>
-                  <strong>Review without friction</strong>
-                  <span>Open the app for short sessions that fit your day.</span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="product" className={styles.productSection}>
-            <div className={styles.sectionTitle} data-aos="fade-up">
-              <p className={styles.eyebrow}>Image vocabulary</p>
-              <h2>See real objects turn into word cards.</h2>
-              <p>
-                Tap the Abrody icon on a card to open a 3D-style preview and
-                learn the word with examples.
-              </p>
-            </div>
-
-            <motion.div className={styles.vocabRail} layout>
-              {ivItems.map((item) => {
-                const isLoading = loadingModelSrc === item.modelSrc;
-
-                return (
-                  <motion.article
-                    key={item.src}
-                    className={styles.vocabCard}
-                    layout
-                    transition={{ duration: 0.45, ease: "easeInOut" }}
-                  >
-                    <div className={styles.vocabImageWrap}>
-                      <img
-                        className={styles.vocabImage}
-                        src={item.src}
-                        alt={`Image vocabulary card for ${item.label}`}
-                        loading="lazy"
-                        decoding="async"
-                      />
-
-                      <div
-                        className={styles.meaningPill}
-                        aria-label={`${item.label} meaning`}
-                      >
-                        {item.meaning}
-                      </div>
-
-                      <button
-                        type="button"
-                        className={`${styles.modelButton} ${
-                          isLoading ? styles.modelButtonLoading : ""
-                        }`}
-                        onClick={() => openModel(item)}
-                        aria-label={`Open ${item.label} 3D model`}
-                        disabled={isLoading}
-                      >
-                        <span className={styles.modelProgressRing} aria-hidden />
-                        <img
-                          src="/images/AbrodyLogo3D.png"
-                          alt=""
-                          className={styles.modelButtonLogo}
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </button>
-                    </div>
-
-                    <div className={styles.vocabMeta}>
-                      <strong>{item.label}</strong>
-                      <span>{item.description}</span>
-                    </div>
-                  </motion.article>
-                );
-              })}
-            </motion.div>
-          </section>
-
-          <section className={styles.practiceSection}>
-            <div className={styles.practiceCopy} data-aos="fade-up">
-              <p className={styles.eyebrow}>Practice</p>
-              <h2>Designed for short, visual learning sessions.</h2>
-              <p>
-                Abrody keeps the learning loop light. You do not need to sit
-                down for a long study block; you can review small pieces often.
-              </p>
-            </div>
-
-            <div className={styles.practiceLayout}>
-              <div className={styles.practiceVisual} aria-hidden="true">
-                <img
-                  src="/images/AbrodyLogo3D.png"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-                <div className={styles.practiceHalo} />
-              </div>
-
-              <div className={styles.practiceCards}>
-                {PRACTICE_ITEMS.map((item) => (
-                  <article key={item.index} data-aos="fade-up">
-                    <span>{item.index}</span>
-                    <div>
-                      <strong>{item.title}</strong>
-                      <p>{item.body}</p>
-                    </div>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          <section className={styles.downloadSection}>
-            <div className={styles.downloadCard} data-aos="fade-up">
-              <div>
-                <p className={styles.eyebrow}>Download</p>
-                <h2>Install Abrody on iOS.</h2>
-                <p>Available for Canada, Australia, UK, and Korea.</p>
-              </div>
-
-              <div className={styles.downloadButtons}>
-                {IOS_LINKS.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.darkButton}
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div className={styles.downloadCard} data-aos="fade-up">
-              <div>
-                <p className={styles.eyebrow}>Android</p>
-                <h2>Get Abrody on Google Play.</h2>
-                <p>Download the Android version directly from Google Play.</p>
-              </div>
-
-              <div className={styles.downloadButtons}>
-                <a
-                  href={ANDROID_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.darkButton}
-                >
-                  Download on Google Play
-                </a>
-              </div>
-            </div>
-          </section>
-        </main>
-
-        {modalImage && (
-          <div
-            className={styles.modal}
-            onClick={closeModal}
-            role="presentation"
-          >
-            <div
-              className={styles.modalContent}
-              onClick={(event) => event.stopPropagation()}
-            >
-              <img
-                src={modalImage}
-                alt="Enlarged Abrody app screenshot"
-                className={styles.modalImage}
-              />
-
-              <button
-                type="button"
-                className={styles.modalClose}
-                onClick={closeModal}
-                aria-label="Close image preview"
-              >
-                ×
-              </button>
-            </div>
+        <section className={styles.how} id="how" aria-labelledby="how-title">
+          <div className={styles.sectionIntro}><p className={styles.eyebrow}>From seeing to remembering</p><h2 id="how-title">Start with something<br />you already know.</h2></div>
+          <div className={styles.steps}>
+            <article><h3>Take a photo.</h3><p>Your morning coffee, your desk, the view outside. Start with a moment from your day.</p></article>
+            <article><h3>Find the words.</h3><p>Explore objects in your photo, learn their meanings, and see how to use them in a sentence.</p></article>
+            <article><h3>Come back to them.</h3><p>Save your vocabulary and revisit it in short quizzes. A few words at a time.</p></article>
           </div>
-        )}
+        </section>
 
-        {activeModel && (
-          <div
-            className={styles.modelModal}
-            onClick={closeModel}
-            role="presentation"
-          >
-            <div
-              className={styles.modelModalContent}
-              onClick={(event) => event.stopPropagation()}
-            >
-              <button
-                type="button"
-                className={styles.modelCloseButton}
-                onClick={closeModel}
-                aria-label="Close 3D model preview"
-              >
-                <img
-                  src="/images/AbrodyClose.png"
-                  alt=""
-                  className={styles.modelCloseIcon}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </button>
-
-              <div className={styles.modelViewerShell}>
-                {React.createElement("model-viewer", {
-                  src: activeModel.modelSrc,
-                  alt: `${activeModel.label} 3D model`,
-                  cameraControls: true,
-                  autoRotate: true,
-                  ar: true,
-                  exposure: "1",
-                  shadowIntensity: "0.45",
-                  className: styles.modelViewer,
-                })}
-              </div>
-
-              <aside className={styles.modelInfoPanel}>
-                <span className={styles.modelInfoKicker}>
-                  Image vocabulary
-                </span>
-
-                <h3 className={styles.modelInfoTitle}>{activeModel.label}</h3>
-
-                <div className={styles.modelInfoMeaning}>
-                  {activeModel.meaning}
-                </div>
-
-                <p className={styles.modelInfoDescription}>
-                  {activeModel.description}
-                </p>
-
-                <div className={styles.modelExampleBlock}>
-                  <span className={styles.modelExampleTitle}>Examples</span>
-
-                  {activeModel.examples.map((example) => (
-                    <p key={example} className={styles.modelExampleText}>
-                      “{example}”
-                    </p>
-                  ))}
-                </div>
-              </aside>
-            </div>
+        <section className={styles.appSection} aria-labelledby="app-title">
+          <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>Inside Abrody</p><h2 id="app-title">See it. Keep it. Use it.</h2></div><p>Your photos become a collection<br />of things you can say.</p></div>
+          <div className={styles.screens}>
+            {SCREENS.map((screen) => (
+              <figure key={screen.src}>
+                <button type="button" className={styles.screenButton} onClick={() => setPreview({ kind: "screen", src: screen.src, title: screen.title })} aria-label={`Enlarge app screenshot: ${screen.title}`}>
+                  <Image src={screen.src} alt={screen.title} width={1290} height={2796} unoptimized loading="lazy" />
+                  <span>View screen</span>
+                </button>
+                <figcaption><h3>{screen.title}</h3><p>{screen.caption}</p></figcaption>
+              </figure>
+            ))}
           </div>
-        )}
+        </section>
 
-        <WebFooter />
+        <section className={styles.download} id="download" aria-labelledby="download-title">
+          <div><p className={styles.eyebrow}>Take it with you</p><h2 id="download-title">There’s a word<br />for that.</h2><p>Find it with Abrody.</p></div>
+          <div className={styles.stores}>
+            <div className={styles.storeRow}><h3>iPhone & iPad</h3><p>Choose your App Store</p><div className={styles.countryLinks}>{IOS_LINKS.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>)}</div></div>
+            <div className={styles.storeRow}><h3>Android</h3><a className={styles.primaryButton} href={ANDROID_LINK} target="_blank" rel="noopener noreferrer">Get it on Google Play</a></div>
+          </div>
+        </section>
       </div>
+      <WebFooter />
+      {preview && (
+        <dialog ref={dialogRef} className={`${styles.dialog} ${preview.kind === "screen" ? styles.screenDialog : ""}`} aria-labelledby="preview-title" onClose={(event) => { if (!event.currentTarget.open) setPreview(null); }} onClick={(event) => { if (event.target === event.currentTarget) setPreview(null); }}>
+          <div className={styles.dialogBody}>
+            <div className={styles.dialogHeading}><h2 id="preview-title">{preview.kind === "model" ? preview.word.label : preview.title}</h2><button type="button" autoFocus className={styles.closeButton} onClick={() => setPreview(null)} aria-label="Close preview"><X size={23} aria-hidden="true" /></button></div>
+            {preview.kind === "model" ? <ModelPreview key={preview.word.modelSrc} word={preview.word} /> : <Image className={styles.fullScreen} src={preview.src} alt={preview.title} width={1290} height={2796} unoptimized />}
+          </div>
+        </dialog>
+      )}
     </>
   );
 }
