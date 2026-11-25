@@ -1,149 +1,214 @@
 /* ─── Base Layout ─── */
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    font-family: "Pretendard", sans-serif;
-    color: #444;
-    font-weight: 300;
-    line-height: 1.7;
-  }
-  
-  /* ─── Sections ─── */
-  .section,
-  .sectionAlt { margin-bottom: 4rem; }
-  
-  .sectionAlt {
-    background: #fafafa;
-    border-radius: 16px;
-    padding: 3rem 2rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-  }
-  
-  /* ─── Headings ─── */
-  .heading2 {
-    font-size: 1.85rem;
-    font-weight: 400;
-    margin-bottom: 1.3rem;
-    letter-spacing: -0.02em;
-    background: linear-gradient(90deg, #3a4b97, #6a84d7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .gridHeading { margin: 0 0 0.4rem; font-size: 1.05rem; font-weight: 500; color: #333; }
-  
-  /* ─── Hero ─── */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: var(--site-font);
+  color: #444;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* ─── Sections ─── */
+.section,
+.sectionAlt {
+  margin-bottom: 4rem;
+}
+
+.sectionAlt {
+  background: var(--site-soft);
+  border-radius: 3px;
+  padding: 3rem 2rem;
+  box-shadow: none;
+}
+
+/* ─── Headings ─── */
+.heading2 {
+  font-size: 1.85rem;
+  font-weight: 400;
+  margin-bottom: 1.3rem;
+  letter-spacing: -0.02em;
+  background: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: currentColor;
+}
+
+.gridHeading {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ─── Hero ─── */
+.hero {
+  display: flex;
+  justify-content: space-between; /* 이미지 우측 정렬 */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.heroText {
+  flex: 1 1 auto;
+  text-align: left; /* 텍스트 좌측 정렬 */
+  max-width: 600px; /* 너비 제한 선택 사항 */
+}
+.photoWrapper {
+  flex: 0 0 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: none;
+}
+.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.heroTitle {
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin: 0;
+  background: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: currentColor;
+}
+.title {
+  margin: 0.35rem 0 0.8rem;
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 500;
+}
+.tagline {
+  font-size: 1.02rem;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* ─── Cards & Grid ─── */
+.card {
+  background: #fff;
+  border-radius: 3px;
+  padding: 2rem;
+  box-shadow: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.6rem;
+}
+
+/* ─── Lists ─── */
+.contactList,
+.languages,
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contactList li,
+.languages li,
+.list li {
+  margin-bottom: 0.35rem;
+}
+.contactList a {
+  color: #3a4b97;
+  text-decoration: none;
+}
+.contactList a:hover {
+  text-decoration: underline;
+}
+
+/* ─── PDFs ─── */
+.pdfGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.pdfFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pdf {
+  width: 100%;
+  height: 420px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+}
+.downloadLink {
+  color: #3c5afe;
+  font-weight: 500;
+  text-decoration: none;
+}
+.downloadLink:hover {
+  text-decoration: underline;
+}
+
+/* ─── Images ─── */
+.imageWrapper {
+  margin: 2rem 0;
+  text-align: center;
+}
+.responsiveImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+/* ─── Abrody Section ─── */
+.adSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+.adTextBlock {
+  flex: 1 1 300px;
+  text-align: left;
+}
+.adText {
+  font-size: 1rem;
+  color: #555;
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.adImage {
+  flex: 0 1 50%;
+  max-width: 50%;
+  min-width: 220px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+/* ─── Small Note ─── */
+.smallNote {
+  margin: -0.55rem 0 1.2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
   .hero {
-    display: flex;
-    justify-content: space-between;  /* 이미지 우측 정렬 */
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 2rem;
   }
-  .heroText {
-    flex: 1 1 auto;
-    text-align: left;                /* 텍스트 좌측 정렬 */
-    max-width: 600px;                /* 너비 제한 선택 사항 */
-  }
-  .photoWrapper {
-    flex: 0 0 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 4px 18px rgba(10,16,69,0.08);
-  }
-  .photo { width: 100%; height: auto; display: block; }
-  .heroTitle {
-    font-size: 2.6rem;
-    font-weight: 400;
-    margin: 0;
-    background: linear-gradient(90deg, #3a4b97, #6a84d7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .title    { margin: 0.35rem 0 0.8rem; font-size: 1.1rem; color: #666; font-weight: 500; }
-  .tagline  { font-size: 1.02rem; max-width: 420px; margin: 0 auto; }
-  
-  /* ─── Cards & Grid ─── */
-  .card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 2rem;
-    box-shadow: 0 6px 24px rgba(10,16,69,0.05);
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.6rem;
-  }
-  
-  /* ─── Lists ─── */
-  .contactList,
-  .languages,
-  .list { list-style: none; padding: 0; margin: 0; }
-  .contactList li,
-  .languages li,
-  .list li { margin-bottom: 0.35rem; }
-  .contactList a { color: #3a4b97; text-decoration: none; }
-  .contactList a:hover { text-decoration: underline; }
-  
-  /* ─── PDFs ─── */
-  .pdfGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-  .pdfFrame { display: flex; flex-direction: column; gap: 0.5rem; }
-  .pdf {
-    width: 100%;
-    height: 420px;
-    border: 1px solid #e3e3e3;
-    border-radius: 8px;
-  }
-  .downloadLink { color: #3c5afe; font-weight: 500; text-decoration: none; }
-  .downloadLink:hover { text-decoration: underline; }
-  
-  /* ─── Images ─── */
-  .imageWrapper   { margin: 2rem 0; text-align: center; }
-  .responsiveImage{
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(10,16,69,0.04);
-  }
-  
-  /* ─── Abrody Section ─── */
   .adSection {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: center;
-  }
-  .adTextBlock { flex: 1 1 300px; text-align: left; }
-  .adText {
-    font-size: 1rem;
-    color: #555;
-    max-width: 500px;
-    line-height: 1.6;
-    margin-bottom: 0;
+    flex-direction: column;
+    text-align: center;
   }
   .adImage {
-    flex: 0 1 50%;
-    max-width: 50%;
-    min-width: 220px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(10,16,69,0.04);
+    max-width: 100%;
   }
-  
-  /* ─── Small Note ─── */
-  .smallNote { margin: -0.55rem 0 1.2rem; font-size: 0.9rem; color: #777; }
-  
-  /* ─── Responsive ─── */
-  @media (max-width: 768px) {
-    .hero { flex-direction: column; gap: 2rem; }
-    .adSection { flex-direction: column; text-align: center; }
-    .adImage   { max-width: 100%; }
-    .pdf       { height: 360px; }
+  .pdf {
+    height: 360px;
   }
-  
-  /* ==== Profile page helpers (reusing Business design tokens) ==== */
+}
+
+/* ==== Profile page helpers (reusing Business design tokens) ==== */
 
 /* ========================= */
 /* Profile page: Light Hero  */
@@ -151,30 +216,34 @@
 
 /* 라이트 히어로: 밝은 배경 + 어두운 텍스트 */
 .heroLight {
-    background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
-    animation: none; /* 어두운 그라데이션 애니메이션 제거 */
-    color: #110c2b;
-  }
-  
-  /* 라이트 히어로용 별 패턴을 연한 회색 점으로 */
-  .heroLight .starfield::before,
-  .heroLight .starfield::after {
-    background-image: radial-gradient(#00000022 0.5px, transparent 0.5px);
-    opacity: 0.35;
-  }
-  
-  /* 히어로 타이틀/서브타이틀/스크롤 힌트 색상 다크 텍스트로 */
-  .heroLight .heroTitle {
-    color: #110c2b !important;
-    -webkit-text-fill-color: initial; /* 비즈니스 히어로의 흰색 강제 채움 해제 */
-  }
-  .heroLight .heroSubtitle { color: #333 !important; }
-  .heroLight .scrollHint { color: #444 !important; }
-  
-  /* =============================== */
-  /* Profile scope: 이미지 축소/보호  */
-  /* =============================== */
-  /* ----- Hero: Founder & CEO 텍스트 흰색으로 (히어로 내부) ----- */
+  background: var(--site-paper);
+  animation: none; /* 어두운 그라데이션 애니메이션 제거 */
+  color: #110c2b;
+}
+
+/* 라이트 히어로용 별 패턴을 연한 회색 점으로 */
+.heroLight .starfield::before,
+.heroLight .starfield::after {
+  background: #00000022;
+  opacity: 0.35;
+}
+
+/* 히어로 타이틀/서브타이틀/스크롤 힌트 색상 다크 텍스트로 */
+.heroLight .heroTitle {
+  color: #110c2b !important;
+  -webkit-text-fill-color: initial; /* 비즈니스 히어로의 흰색 강제 채움 해제 */
+}
+.heroLight .heroSubtitle {
+  color: #333 !important;
+}
+.heroLight .scrollHint {
+  color: #444 !important;
+}
+
+/* =============================== */
+/* Profile scope: 이미지 축소/보호  */
+/* =============================== */
+/* ----- Hero: Founder & CEO 텍스트 흰색으로 (히어로 내부) ----- */
 .heroLight .heroSubtitle .sectionKicker,
 .heroLight .heroSubtitle .sectionKicker a {
   color: #ffffff !important; /* Founder & CEO 텍스트 흰색 */
@@ -184,8 +253,8 @@
 /* ----- 메타 칩 스타일 통일(이메일 파랑 제거 포함) ----- */
 .profileHeroMeta {
   display: flex;
-  gap: 0.75rem;            /* 칩 사이 충분한 간격 */
-  flex-wrap: wrap;         /* 좁은 화면에서 줄바꿈 허용 */
+  gap: 0.75rem; /* 칩 사이 충분한 간격 */
+  flex-wrap: wrap; /* 좁은 화면에서 줄바꿈 허용 */
   justify-content: center; /* 가운데 정렬 */
   margin-top: 1rem;
   row-gap: 0.6rem;
@@ -195,15 +264,15 @@
 .metaChip {
   display: inline-flex;
   align-items: center;
-  gap: .35rem;
-  padding: .45rem .9rem;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.95);
-  border: 1px solid rgba(17,12,43,0.08);
-  color: #4a3f59;          /* 다른 요소들과 통일된 다크 톤 */
+  gap: 0.35rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(17, 12, 43, 0.08);
+  color: #4a3f59; /* 다른 요소들과 통일된 다크 톤 */
   font-weight: 600;
-  text-decoration: none;   /* 링크 파란색 제거 */
-  box-shadow: 0 6px 18px rgba(17,12,43,0.06);
+  text-decoration: none; /* 링크 파란색 제거 */
+  box-shadow: none;
 }
 
 /* 메타 칩 내부 앵커(예: 이메일)도 같은 색 유지 */
@@ -214,18 +283,20 @@
 /* ----- 프로필 아바타: 원형 + 기본 숨김, 이름 hover 시 표시 ----- */
 /* 기본(숨김) */
 .profileRoot .heroAvatar {
-  position: absolute;           /* 기존 레이아웃 유지(필요 시 위치값 조정) */
+  position: absolute; /* 기존 레이아웃 유지(필요 시 위치값 조정) */
   right: clamp(1rem, 4vw, 2rem);
   bottom: clamp(1.5rem, 4vw, 2rem);
   width: 72px;
   height: 72px;
   object-fit: cover;
-  border-radius: 50%;           /* 원형 */
-  border: 2px solid rgba(255,255,255,0.85);
-  box-shadow: 0 12px 30px rgba(10,16,69,0.12);
+  border-radius: 50%; /* 원형 */
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow: none;
   opacity: 0;
-  transform: translateY(6px) scale(.98);
-  transition: opacity .28s ease, transform .28s ease;
+  transform: translateY(6px) scale(0.98);
+  transition:
+    opacity 0.28s ease,
+    transform 0.28s ease;
   pointer-events: none;
   z-index: 8;
 }
@@ -234,7 +305,7 @@
 .heroTitle:hover ~ .heroAvatar,
 .heroTitle:focus ~ .heroAvatar {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: none;
   pointer-events: auto;
 }
 
@@ -258,7 +329,7 @@
 .profileRoot .dCard img,
 .profileRoot .responsiveImage {
   display: block;
-  margin: 0 auto;      /* 중앙 정렬 */
+  margin: 0 auto; /* 중앙 정렬 */
   max-width: 100%;
   height: auto;
   object-fit: contain; /* 잘리지 않게 비율 유지 */
@@ -274,14 +345,40 @@
 
 /* ----- 추가: 모바일/반응형 보정 ----- */
 @media (max-width: 880px) {
-  .profileHeroMeta { justify-content: center; gap: 0.6rem; }
-  .profileRoot .heroAvatar { right: 1rem; bottom: 1rem; width: 64px; height: 64px; }
-  .profileRoot .imageCard { max-width: 520px; margin-left: auto; margin-right: auto; }
-  .profileRoot .adBlockImage { width: min(100%, 520px); }
+  .profileHeroMeta {
+    justify-content: center;
+    gap: 0.6rem;
+  }
+  .profileRoot .heroAvatar {
+    right: 1rem;
+    bottom: 1rem;
+    width: 64px;
+    height: 64px;
+  }
+  .profileRoot .imageCard {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profileRoot .adBlockImage {
+    width: min(100%, 520px);
+  }
 }
 
 @media (max-width: 480px) {
-  .profileHeroMeta { gap: 0.5rem; row-gap: 0.45rem; }
-  .profileRoot .heroAvatar { width: 56px; height: 56px; }
-  .profileRoot img { max-width: 100%; }
+  .profileHeroMeta {
+    gap: 0.5rem;
+    row-gap: 0.45rem;
+  }
+  .profileRoot .heroAvatar {
+    width: 56px;
+    height: 56px;
+  }
+  .profileRoot img {
+    max-width: 100%;
+  }
+}
+
+.starfield {
+  display: none !important;
 }

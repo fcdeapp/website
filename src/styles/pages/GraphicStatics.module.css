@@ -1,7 +1,7 @@
 .page {
   min-height: 100vh;
-  background: #f5f7fb;
-  color: #111827;
+  background: var(--site-soft);
+  color: var(--site-ink);
   padding: 24px;
   box-sizing: border-box;
 }
@@ -23,16 +23,16 @@
 .pageTitle {
   margin: 0;
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.2;
-  color: #0f172a;
+  color: var(--site-ink);
 }
 
 .pageSubtitle {
   margin: 0;
   font-size: 14px;
   line-height: 1.6;
-  color: #475569;
+  color: var(--site-muted);
 }
 
 .topbarActions {
@@ -61,22 +61,22 @@
 
 .secondaryButton {
   background: #ffffff;
-  color: #0f172a;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
+  color: var(--site-ink);
+  border: 1px solid var(--site-rule);
+  border-radius: 3px;
   padding: 10px 14px;
   font-weight: 700;
 }
 
 .secondaryButton:hover {
-  background: #f8fafc;
+  background: var(--site-soft);
   border-color: #94a3b8;
 }
 
 .dangerButton {
   background: #ef4444;
   color: #ffffff;
-  border-radius: 12px;
+  border-radius: 3px;
   padding: 10px 14px;
   font-weight: 700;
 }
@@ -108,22 +108,22 @@
 .canvasPanel {
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 18px;
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+  border-radius: 3px;
+  box-shadow: none;
   padding: 16px;
 }
 
 .panelTitle {
   margin: 0;
   font-size: 16px;
-  font-weight: 800;
-  color: #0f172a;
+  font-weight: 700;
+  color: var(--site-ink);
 }
 
 .subTitle {
   margin: 16px 0 10px;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 700;
   color: #334155;
 }
 
@@ -142,10 +142,10 @@
 }
 
 .toolButton {
-  background: #f8fafc;
-  color: #0f172a;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
+  background: var(--site-soft);
+  color: var(--site-ink);
+  border: 1px solid var(--site-rule);
+  border-radius: 3px;
   padding: 12px 14px;
   text-align: left;
   font-weight: 700;
@@ -164,10 +164,10 @@
 
 .helperTextBox {
   margin-top: 12px;
-  background: #f8fafc;
-  border-radius: 12px;
+  background: var(--site-soft);
+  border-radius: 3px;
   padding: 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--site-rule);
 }
 
 .helperTextBox p {
@@ -178,7 +178,7 @@
 .helperList {
   margin: 0;
   padding-left: 18px;
-  color: #475569;
+  color: var(--site-muted);
   font-size: 13px;
   line-height: 1.6;
 }
@@ -196,9 +196,9 @@
 }
 
 .metaItem {
-  border: 1px solid #e2e8f0;
-  background: #f8fafc;
-  border-radius: 12px;
+  border: 1px solid var(--site-rule);
+  background: var(--site-soft);
+  border-radius: 3px;
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -207,18 +207,18 @@
 
 .metaItem span {
   font-size: 12px;
-  color: #64748b;
+  color: var(--site-muted);
 }
 
 .metaItem strong {
   font-size: 18px;
-  color: #0f172a;
+  color: var(--site-ink);
 }
 
 .statusBox {
   margin-top: 12px;
   padding: 12px;
-  border-radius: 12px;
+  border-radius: 3px;
   border: 1px solid transparent;
 }
 
@@ -237,11 +237,11 @@
 .statusTitle {
   margin: 0 0 6px;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .smallMuted {
-  color: #64748b;
+  color: var(--site-muted);
   font-size: 12px;
   line-height: 1.5;
   margin: 6px 0 0;
@@ -276,34 +276,34 @@
   width: 100%;
   min-width: 0;
   box-sizing: border-box;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--site-rule);
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 10px 12px;
   font: inherit;
-  color: #0f172a;
+  color: var(--site-ink);
 }
 
 .field input:focus,
 .field select:focus {
   outline: none;
   border-color: #60a5fa;
-  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+  box-shadow: none;
 }
 
 .infoCard {
   margin-top: 8px;
-  background: #f8fafc;
-  border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  background: var(--site-soft);
+  border-radius: 3px;
+  border: 1px solid var(--site-rule);
   padding: 12px;
 }
 
 .infoTitle {
   margin: 0 0 8px;
   font-size: 13px;
-  font-weight: 800;
-  color: #0f172a;
+  font-weight: 700;
+  color: var(--site-ink);
 }
 
 .infoCard p {
@@ -314,10 +314,10 @@
 .deleteMiniButton {
   background: #fee2e2;
   color: #b91c1c;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 8px 10px;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .deleteMiniButton:hover {
@@ -333,9 +333,9 @@
 }
 
 .listRowButton {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
+  background: var(--site-soft);
+  border: 1px solid var(--site-rule);
+  border-radius: 3px;
   padding: 10px 12px;
   display: flex;
   justify-content: space-between;
@@ -343,7 +343,7 @@
   align-items: center;
   text-align: left;
   font-size: 13px;
-  color: #0f172a;
+  color: var(--site-ink);
 }
 
 .listRowButton:hover {
@@ -358,7 +358,7 @@
 
 .emptyText {
   margin: 0;
-  color: #64748b;
+  color: var(--site-muted);
   font-size: 13px;
 }
 
@@ -374,36 +374,36 @@
 
 .resultTable th,
 .resultTable td {
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--site-rule);
   padding: 10px 8px;
   text-align: left;
   white-space: nowrap;
 }
 
 .resultTable thead th {
-  background: #f8fafc;
-  font-weight: 800;
+  background: var(--site-soft);
+  font-weight: 700;
   color: #334155;
 }
 
 .tableEmpty {
   text-align: center;
-  color: #64748b;
+  color: var(--site-muted);
 }
 
 .tension {
   color: #b45309;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .compression {
   color: #1d4ed8;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .zeroForce {
-  color: #64748b;
-  font-weight: 800;
+  color: var(--site-muted);
+  font-weight: 700;
 }
 
 .canvasMeta {
@@ -415,7 +415,7 @@
   width: 100%;
   overflow: auto;
   border: 1px solid #e2e8f0;
-  border-radius: 16px;
+  border-radius: 3px;
   background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
 }
 
@@ -522,27 +522,27 @@
 }
 
 .supportShape {
-  fill: #cbd5e1;
+  fill: var(--site-rule);
   stroke: #334155;
   stroke-width: 1.5;
   vector-effect: non-scaling-stroke;
 }
 
 .supportGround {
-  stroke: #475569;
+  stroke: var(--site-muted);
   stroke-width: 1.8;
   vector-effect: non-scaling-stroke;
 }
 
 .supportWheel {
   fill: #ffffff;
-  stroke: #475569;
+  stroke: var(--site-muted);
   stroke-width: 1.5;
   vector-effect: non-scaling-stroke;
 }
 
 .supportHatch {
-  stroke: #64748b;
+  stroke: var(--site-muted);
   stroke-width: 1.5;
   vector-effect: non-scaling-stroke;
 }
@@ -649,5 +649,113 @@
 
   .mainArea {
     order: 1;
+  }
+}
+/* Page composition — typography, alignment and content hierarchy. */
+.page {
+  background: var(--site-paper);
+  padding: 28px 32px 48px;
+  font-family: var(--site-font);
+}
+.hero,
+.topbar {
+  border-bottom: 1px solid var(--site-rule);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.hero h1,
+.pageTitle {
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+.heroCopy,
+.heroPanel,
+.hero > div {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+.hero p {
+  font-size: 14px;
+  max-width: 80ch;
+  line-height: 1.75;
+}
+.heroActions {
+  margin-top: 20px;
+}
+.controls,
+.controlsPanel,
+.sidebar {
+  background: var(--site-soft);
+  border: 1px solid var(--site-rule);
+  border-radius: 0;
+  padding: 20px;
+}
+.workspace,
+.panel,
+.panelCard,
+.canvasPanel {
+  border: 1px solid var(--site-rule);
+  border-radius: 0;
+  background: white;
+  box-shadow: none;
+}
+.metricCard,
+.metaItem {
+  border: 0;
+  border-left: 1px solid var(--site-rule);
+  border-radius: 0;
+  background: white;
+  padding: 12px 16px;
+}
+.kicker {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 12px;
+  color: var(--site-muted);
+}
+.secondaryButton,
+.toolButton,
+.heroActions button,
+.sceneToolbar button {
+  border-radius: 3px;
+  min-height: 38px;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+  .page {
+    padding: 20px 16px 40px;
+  }
+  .hero h1,
+  .pageTitle {
+    font-size: 26px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .controls,
+  .controlsPanel,
+  .sidebar {
+    padding: 16px;
+  }
+}
+
+/* Page composition — typography, alignment and content hierarchy. */
+.contentGrid {
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 24px;
+}
+@media (max-width: 1100px) {
+  .contentGrid {
+    grid-template-columns: 260px minmax(0, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
   }
 }

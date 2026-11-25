@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px;
-  background: #fafafa;
+  background: var(--site-soft);
 }
 .header {
   font-size: 2rem;
@@ -20,7 +20,7 @@
   padding: 0.5rem 1.5rem;
   background: none;
   border: 2px solid transparent;
-  border-radius: 8px;
+  border-radius: 3px;
   cursor: pointer;
   font-size: 1rem;
   transition: 0.2s;
@@ -29,8 +29,8 @@
   background: #eee;
 }
 .activeTab {
-  border-color: #fd3a69;
-  color: #fd3a69;
+  border-color: var(--site-accent);
+  color: var(--site-accent);
 }
 .content {
   display: flex;
@@ -39,17 +39,18 @@
 }
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 }
 .card {
   background: #fff;
   padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 3px;
+  box-shadow: none;
   flex: 1;
 }
-.card h2, .card h3 {
+.card h2,
+.card h3 {
   margin-top: 0;
   color: #333;
 }
@@ -60,8 +61,8 @@
 .chartCard {
   background: #fff;
   padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-radius: 3px;
+  box-shadow: none;
   height: 300px;
 }
 .section {
@@ -74,4 +75,127 @@
   color: #777;
   font-size: 1.2rem;
   padding: 2rem;
+}
+
+/* Page composition — typography, alignment and content hierarchy. */
+.container {
+  background: var(--site-paper);
+  color: var(--site-ink);
+  font-family: var(--site-font);
+}
+.container h1 {
+  font-size: 32px;
+  line-height: 1.3;
+  letter-spacing: -0.035em;
+  text-align: left;
+  font-weight: 700;
+}
+.container h2 {
+  font-size: 21px;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+}
+.container
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not(
+    [type="file"]
+  ),
+.container select,
+.container textarea {
+  border: 1px solid var(--site-rule-strong);
+  border-radius: 3px;
+  background: white;
+  min-height: 38px;
+  font-size: 14px;
+  color: var(--site-ink);
+}
+.container table {
+  border-collapse: collapse;
+  font-size: 13px;
+  line-height: 1.6;
+  border-top: 2px solid var(--site-ink);
+}
+.container th {
+  background: var(--site-soft);
+  font-weight: 700;
+  color: var(--site-muted);
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--site-rule);
+}
+.container td {
+  padding: 12px;
+  border-bottom: 1px solid var(--site-rule);
+}
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 26px;
+  }
+  .container th,
+  .container td {
+    padding: 10px;
+  }
+}
+
+/* Page composition — typography, alignment and content hierarchy. */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 40px 56px;
+}
+.header {
+  text-align: left;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--site-rule);
+  color: var(--site-ink);
+}
+.tabContainer {
+  justify-content: flex-start;
+  gap: 24px;
+  border-bottom: 1px solid var(--site-rule);
+}
+.tabContainer button {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: none;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.tabContainer .activeTab {
+  border-bottom-color: var(--site-ink);
+  color: var(--site-ink);
+}
+.cards {
+  gap: 0;
+  border-top: 1px solid var(--site-rule);
+  border-bottom: 1px solid var(--site-rule);
+}
+.card {
+  border-radius: 0;
+  border: 0;
+  border-right: 1px solid var(--site-rule);
+  padding: 20px 24px;
+  background: white;
+  box-shadow: none;
+}
+.chartCard {
+  border: 0;
+  border-top: 1px solid var(--site-rule);
+  border-radius: 0;
+  background: white;
+  padding: 24px 0;
+}
+.toolbar {
+  border-bottom: 1px solid var(--site-rule);
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 20px 40px;
+  }
+  .card {
+    padding: 16px;
+  }
 }

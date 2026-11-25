@@ -16,7 +16,9 @@ type IVItem = {
   modelSrc: string;
 };
 type DownloadLink = { label: string; href: string };
-type Preview = { kind: "model"; word: IVItem } | { kind: "screen"; src: string; title: string };
+type Preview =
+  | { kind: "model"; word: IVItem }
+  | { kind: "screen"; src: string; title: string };
 
 const WORDS: IVItem[] = [
   {
@@ -91,33 +93,58 @@ const IOS_LINKS: DownloadLink[] = [
 const ANDROID_LINK =
   "https://play.google.com/store/apps/details?id=com.fcdeapp.facade";
 
-
 const SCREENS = [
-  { title: "A little learning, every day.", caption: "Lessons and short quizzes, together in one place.", src: "/journey/AppStoreImageiPhoneEN2605011.jpg" },
-  { title: "Keep the words you find.", caption: "Build a vocabulary collection from your own photos.", src: "/journey/AppStoreImageiPhoneEN2605012.jpg" },
-  { title: "Look a little closer.", caption: "Explore selected objects in 3D, from every angle.", src: "/journey/AppStoreImageiPhoneEN2605013.jpg" },
+  {
+    title: "A little learning, every day.",
+    caption: "Lessons and short quizzes, together in one place.",
+    src: "/journey/AppStoreImageiPhoneEN2605011.jpg",
+  },
+  {
+    title: "Keep the words you find.",
+    caption: "Build a vocabulary collection from your own photos.",
+    src: "/journey/AppStoreImageiPhoneEN2605012.jpg",
+  },
+  {
+    title: "Look a little closer.",
+    caption: "Explore selected objects in 3D, from every angle.",
+    src: "/journey/AppStoreImageiPhoneEN2605013.jpg",
+  },
 ];
 
 function ModelPreview({ word }: { word: IVItem }) {
   const viewerRef = useRef<HTMLElement | null>(null);
-  const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
+  const [status, setStatus] = useState<"loading" | "ready" | "error">(
+    "loading",
+  );
 
   useEffect(() => {
     const viewer = viewerRef.current;
     if (!viewer) return;
-    const ready = () => { window.clearTimeout(timeout); setStatus("ready"); };
-    const failed = () => { window.clearTimeout(timeout); setStatus("error"); };
+    const ready = () => {
+      window.clearTimeout(timeout);
+      setStatus("ready");
+    };
+    const failed = () => {
+      window.clearTimeout(timeout);
+      setStatus("error");
+    };
     // Report a stalled network request instead of leaving an endless spinner.
     const timeout = window.setTimeout(failed, 30000);
     viewer.addEventListener("load", ready);
     viewer.addEventListener("error", failed);
-    let script = document.querySelector<HTMLScriptElement>('script[data-model-viewer="true"]');
+    let script = document.querySelector<HTMLScriptElement>(
+      'script[data-model-viewer="true"]',
+    );
     if (!window.customElements.get("model-viewer")) {
-      if (script?.dataset.failed === "true") { script.remove(); script = null; }
+      if (script?.dataset.failed === "true") {
+        script.remove();
+        script = null;
+      }
       if (!script) {
         script = document.createElement("script");
         script.type = "module";
-        script.src = "https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js";
+        script.src =
+          "https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js";
         script.dataset.modelViewer = "true";
         document.head.appendChild(script);
       }
@@ -138,24 +165,41 @@ function ModelPreview({ word }: { word: IVItem }) {
 
   return (
     <div className={styles.modelStage}>
-      {status !== "error" && React.createElement("model-viewer", {
-        ref: viewerRef,
-        src: word.modelSrc,
-        alt: `Interactive 3D model of ${word.label}`,
-        "camera-controls": true,
-        "touch-action": "pan-y",
-        "interaction-prompt": "none",
-        exposure: "1",
-        className: styles.modelViewer,
-      })}
-      {status === "loading" && <p className={styles.modelStatus} role="status">Loading 3D model…</p>}
+      {status !== "error" &&
+        React.createElement("model-viewer", {
+          ref: viewerRef,
+          src: word.modelSrc,
+          alt: `Interactive 3D model of ${word.label}`,
+          "camera-controls": true,
+          "touch-action": "pan-y",
+          "interaction-prompt": "none",
+          exposure: "1",
+          className: styles.modelViewer,
+        })}
+      {status === "loading" && (
+        <p className={styles.modelStatus} role="status">
+          Loading 3D model…
+        </p>
+      )}
       {status === "error" && (
         <div className={styles.modelFallback}>
-          <Image src={word.src} alt={word.label} width={400} height={400} unoptimized />
-          <p role="status">The 3D preview couldn’t load. Close and reopen it to try again.</p>
+          <Image
+            src={word.src}
+            alt={word.label}
+            width={400}
+            height={400}
+            unoptimized
+          />
+          <p role="status">
+            The 3D preview couldn’t load. Close and reopen it to try again.
+          </p>
         </div>
       )}
-      {status === "ready" && <p className={styles.modelHint}>Drag to rotate · Scroll or pinch to zoom</p>}
+      {status === "ready" && (
+        <p className={styles.modelHint}>
+          Drag to rotate · Scroll or pinch to zoom
+        </p>
+      )}
     </div>
   );
 }
@@ -171,7 +215,9 @@ export default function Home() {
   const word = WORDS[selectedIndex];
 
   useEffect(() => {
-    setCanSpeak("speechSynthesis" in window && "SpeechSynthesisUtterance" in window);
+    setCanSpeak(
+      "speechSynthesis" in window && "SpeechSynthesisUtterance" in window,
+    );
     return () => {
       if ("speechSynthesis" in window) window.speechSynthesis.cancel();
     };
@@ -263,25 +309,73 @@ export default function Home() {
       <div className={styles.page}>
         <section className={styles.hero} aria-labelledby="home-title">
           <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}>A language lesson, wherever you look.</p>
-            <h1 id="home-title">Your world.<br />Your next<br /><em>words.</em></h1>
-            <p className={styles.heroText}>A bowl on the table. A pair of shoes by the door. Turn the things around you into words you’ll remember.</p>
+            <p className={styles.eyebrow}>Visual language learning</p>
+            <h1 id="home-title">
+              Learn the words
+              <br />
+              around you.
+            </h1>
+            <p className={styles.heroText}>
+              A bowl on the table. A pair of shoes by the door. Turn the things
+              around you into words you’ll remember.
+            </p>
             <div className={styles.heroActions}>
-              <a className={styles.primaryButton} href="#download">Get Abrody</a>
-              <a className={styles.textLink} href="#how">How it works</a>
+              <a className={styles.primaryButton} href="#download">
+                Get Abrody
+              </a>
+              <a className={styles.textLink} href="#how">
+                How it works
+              </a>
             </div>
             <p className={styles.platformNote}>For iOS and Android</p>
           </div>
 
-          <div className={styles.demo} id="product" aria-label="Interactive vocabulary sample">
+          <div
+            className={styles.demo}
+            id="product"
+            aria-label="Interactive vocabulary sample"
+          >
             <div className={styles.objectStage}>
-              <Image key={word.src} src={word.src} alt={quiz ? word.description : word.label} fill sizes="(max-width: 760px) 90vw, 520px" unoptimized priority={selectedIndex === 1} className={styles.objectImage} />
-              {!quiz && <button type="button" className={styles.modelButton} onClick={() => setPreview({ kind: "model", word })}><Box size={17} aria-hidden="true" /> Explore in 3D</button>}
+              <Image
+                key={word.src}
+                src={word.src}
+                alt={quiz ? word.description : word.label}
+                fill
+                sizes="(max-width: 760px) 90vw, 520px"
+                unoptimized
+                priority={selectedIndex === 1}
+                className={styles.objectImage}
+              />
+              {!quiz && (
+                <button
+                  type="button"
+                  className={styles.modelButton}
+                  onClick={() => setPreview({ kind: "model", word })}
+                >
+                  <Box size={17} aria-hidden="true" /> Explore in 3D
+                </button>
+              )}
             </div>
-            <div className={styles.wordPicker} role="group" aria-label="Choose an object">
+            <div
+              className={styles.wordPicker}
+              role="group"
+              aria-label="Choose an object"
+            >
               {WORDS.map((item, index) => (
-                <button key={item.src} type="button" aria-label={quiz ? `Sample object ${index + 1}` : item.label} aria-pressed={index === selectedIndex} onClick={() => selectWord(index)}>
-                  <Image src={item.src} alt="" width={56} height={56} unoptimized />
+                <button
+                  key={item.src}
+                  type="button"
+                  aria-label={quiz ? `Sample object ${index + 1}` : item.label}
+                  aria-pressed={index === selectedIndex}
+                  onClick={() => selectWord(index)}
+                >
+                  <Image
+                    src={item.src}
+                    alt=""
+                    width={56}
+                    height={56}
+                    unoptimized
+                  />
                 </button>
               ))}
             </div>
@@ -292,62 +386,242 @@ export default function Home() {
                   <h2>What do you see?</h2>
                   <div className={styles.answers}>
                     {WORDS.map((item) => (
-                      <button key={item.label} type="button" aria-pressed={answer === item.label} data-correct={answer === item.label && answer === word.label} onClick={() => setAnswer(item.label)}>{item.label}</button>
+                      <button
+                        key={item.label}
+                        type="button"
+                        aria-pressed={answer === item.label}
+                        data-correct={
+                          answer === item.label && answer === word.label
+                        }
+                        onClick={() => setAnswer(item.label)}
+                      >
+                        {item.label}
+                      </button>
                     ))}
                   </div>
-                  <p className={styles.feedback} role="status">{answer ? answer === word.label ? `That’s it. ${word.label} — ${word.meaning}.` : "Not quite. Take another look." : "Choose the word that matches the image."}</p>
+                  <p className={styles.feedback} role="status">
+                    {answer
+                      ? answer === word.label
+                        ? `That’s it. ${word.label} — ${word.meaning}.`
+                        : "Not quite. Take another look."
+                      : "Choose the word that matches the image."}
+                  </p>
                 </div>
               ) : (
-                <div key={word.label} className={styles.wordEntry} aria-live="polite" aria-atomic="true">
-                  <div className={styles.wordHeading}><h2>{word.label}</h2>{canSpeak && <button type="button" className={styles.audioButton} onClick={pronounce} aria-label={`Hear ${word.label} in English`}><Volume2 size={22} aria-hidden="true" /></button>}</div>
-                  <p className={styles.translation}><span lang="ko">{word.meaning}</span><span>noun · English</span></p>
+                <div
+                  key={word.label}
+                  className={styles.wordEntry}
+                  aria-live="polite"
+                  aria-atomic="true"
+                >
+                  <div className={styles.wordHeading}>
+                    <h2>{word.label}</h2>
+                    {canSpeak && (
+                      <button
+                        type="button"
+                        className={styles.audioButton}
+                        onClick={pronounce}
+                        aria-label={`Hear ${word.label} in English`}
+                      >
+                        <Volume2 size={22} aria-hidden="true" />
+                      </button>
+                    )}
+                  </div>
+                  <p className={styles.translation}>
+                    <span lang="ko">{word.meaning}</span>
+                    <span>noun · English</span>
+                  </p>
                   <p className={styles.example}>{word.examples[0]}</p>
-                  {speechError && <p role="status" className={styles.speechError}>{speechError}</p>}
+                  {speechError && (
+                    <p role="status" className={styles.speechError}>
+                      {speechError}
+                    </p>
+                  )}
                 </div>
               )}
-              <div className={styles.demoBottom}><span>Sample vocabulary</span><button type="button" className={styles.textLink} onClick={() => { setQuiz(!quiz); setAnswer(null); if (canSpeak) window.speechSynthesis.cancel(); }}>{quiz ? "Back to the word" : "Test your memory"}</button></div>
+              <div className={styles.demoBottom}>
+                <span>Sample vocabulary</span>
+                <button
+                  type="button"
+                  className={styles.textLink}
+                  onClick={() => {
+                    setQuiz(!quiz);
+                    setAnswer(null);
+                    if (canSpeak) window.speechSynthesis.cancel();
+                  }}
+                >
+                  {quiz ? "Back to the word" : "Test your memory"}
+                </button>
+              </div>
             </div>
           </div>
         </section>
 
         <section className={styles.how} id="how" aria-labelledby="how-title">
-          <div className={styles.sectionIntro}><p className={styles.eyebrow}>From seeing to remembering</p><h2 id="how-title">Start with something<br />you already know.</h2></div>
+          <div className={styles.sectionIntro}>
+            <p className={styles.eyebrow}>From seeing to remembering</p>
+            <h2 id="how-title">
+              Start with something
+              <br />
+              you already know.
+            </h2>
+          </div>
           <div className={styles.steps}>
-            <article><h3>Take a photo.</h3><p>Your morning coffee, your desk, the view outside. Start with a moment from your day.</p></article>
-            <article><h3>Find the words.</h3><p>Explore objects in your photo, learn their meanings, and see how to use them in a sentence.</p></article>
-            <article><h3>Come back to them.</h3><p>Save your vocabulary and revisit it in short quizzes. A few words at a time.</p></article>
+            <article>
+              <h3>Take a photo.</h3>
+              <p>
+                Your morning coffee, your desk, the view outside. Start with a
+                moment from your day.
+              </p>
+            </article>
+            <article>
+              <h3>Find the words.</h3>
+              <p>
+                Explore objects in your photo, learn their meanings, and see how
+                to use them in a sentence.
+              </p>
+            </article>
+            <article>
+              <h3>Come back to them.</h3>
+              <p>
+                Save your vocabulary and revisit it in short quizzes. A few
+                words at a time.
+              </p>
+            </article>
           </div>
         </section>
 
         <section className={styles.appSection} aria-labelledby="app-title">
-          <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>Inside Abrody</p><h2 id="app-title">See it. Keep it. Use it.</h2></div><p>Your photos become a collection<br />of things you can say.</p></div>
+          <div className={styles.sectionHeading}>
+            <div>
+              <p className={styles.eyebrow}>Inside Abrody</p>
+              <h2 id="app-title">See it. Keep it. Use it.</h2>
+            </div>
+            <p>
+              Your photos become a collection
+              <br />
+              of things you can say.
+            </p>
+          </div>
           <div className={styles.screens}>
             {SCREENS.map((screen) => (
               <figure key={screen.src}>
-                <button type="button" className={styles.screenButton} onClick={() => setPreview({ kind: "screen", src: screen.src, title: screen.title })} aria-label={`Enlarge app screenshot: ${screen.title}`}>
-                  <Image src={screen.src} alt={screen.title} width={1290} height={2796} unoptimized loading="lazy" />
+                <button
+                  type="button"
+                  className={styles.screenButton}
+                  onClick={() =>
+                    setPreview({
+                      kind: "screen",
+                      src: screen.src,
+                      title: screen.title,
+                    })
+                  }
+                  aria-label={`Enlarge app screenshot: ${screen.title}`}
+                >
+                  <Image
+                    src={screen.src}
+                    alt={screen.title}
+                    width={1290}
+                    height={2796}
+                    unoptimized
+                    loading="lazy"
+                  />
                   <span>View screen</span>
                 </button>
-                <figcaption><h3>{screen.title}</h3><p>{screen.caption}</p></figcaption>
+                <figcaption>
+                  <h3>{screen.title}</h3>
+                  <p>{screen.caption}</p>
+                </figcaption>
               </figure>
             ))}
           </div>
         </section>
 
-        <section className={styles.download} id="download" aria-labelledby="download-title">
-          <div><p className={styles.eyebrow}>Take it with you</p><h2 id="download-title">There’s a word<br />for that.</h2><p>Find it with Abrody.</p></div>
+        <section
+          className={styles.download}
+          id="download"
+          aria-labelledby="download-title"
+        >
+          <div>
+            <p className={styles.eyebrow}>Take it with you</p>
+            <h2 id="download-title">
+              Learn wherever
+              <br />
+              you are.
+            </h2>
+            <p>Available on iPhone, iPad, and Android.</p>
+          </div>
           <div className={styles.stores}>
-            <div className={styles.storeRow}><h3>iPhone & iPad</h3><p>Choose your App Store</p><div className={styles.countryLinks}>{IOS_LINKS.map((link) => <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer">{link.label}</a>)}</div></div>
-            <div className={styles.storeRow}><h3>Android</h3><a className={styles.primaryButton} href={ANDROID_LINK} target="_blank" rel="noopener noreferrer">Get it on Google Play</a></div>
+            <div className={styles.storeRow}>
+              <h3>iPhone & iPad</h3>
+              <p>Choose your App Store</p>
+              <div className={styles.countryLinks}>
+                {IOS_LINKS.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div className={styles.storeRow}>
+              <h3>Android</h3>
+              <a
+                className={styles.primaryButton}
+                href={ANDROID_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get it on Google Play
+              </a>
+            </div>
           </div>
         </section>
       </div>
       <WebFooter />
       {preview && (
-        <dialog ref={dialogRef} className={`${styles.dialog} ${preview.kind === "screen" ? styles.screenDialog : ""}`} aria-labelledby="preview-title" onClose={(event) => { if (!event.currentTarget.open) setPreview(null); }} onClick={(event) => { if (event.target === event.currentTarget) setPreview(null); }}>
+        <dialog
+          ref={dialogRef}
+          className={`${styles.dialog} ${preview.kind === "screen" ? styles.screenDialog : ""}`}
+          aria-labelledby="preview-title"
+          onClose={(event) => {
+            if (!event.currentTarget.open) setPreview(null);
+          }}
+          onClick={(event) => {
+            if (event.target === event.currentTarget) setPreview(null);
+          }}
+        >
           <div className={styles.dialogBody}>
-            <div className={styles.dialogHeading}><h2 id="preview-title">{preview.kind === "model" ? preview.word.label : preview.title}</h2><button type="button" autoFocus className={styles.closeButton} onClick={() => setPreview(null)} aria-label="Close preview"><X size={23} aria-hidden="true" /></button></div>
-            {preview.kind === "model" ? <ModelPreview key={preview.word.modelSrc} word={preview.word} /> : <Image className={styles.fullScreen} src={preview.src} alt={preview.title} width={1290} height={2796} unoptimized />}
+            <div className={styles.dialogHeading}>
+              <h2 id="preview-title">
+                {preview.kind === "model" ? preview.word.label : preview.title}
+              </h2>
+              <button
+                type="button"
+                autoFocus
+                className={styles.closeButton}
+                onClick={() => setPreview(null)}
+                aria-label="Close preview"
+              >
+                <X size={23} aria-hidden="true" />
+              </button>
+            </div>
+            {preview.kind === "model" ? (
+              <ModelPreview key={preview.word.modelSrc} word={preview.word} />
+            ) : (
+              <Image
+                className={styles.fullScreen}
+                src={preview.src}
+                alt={preview.title}
+                width={1290}
+                height={2796}
+                unoptimized
+              />
+            )}
           </div>
         </dialog>
       )}

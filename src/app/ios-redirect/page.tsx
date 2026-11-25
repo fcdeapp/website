@@ -2,6 +2,7 @@
 "use client";
 
 import { useEffect } from "react";
+import styles from "../../styles/pages/Redirect.module.css";
 
 export default function IosRedirect() {
   useEffect(() => {
@@ -12,8 +13,9 @@ export default function IosRedirect() {
   }, []);
 
   return (
-    <div style={{ padding: "4rem", textAlign: "center" }}>
-      잠시만 기다려 주세요…<br />
+    <div className={styles.transit} role="status">
+      잠시만 기다려 주세요…
+      <br />
       앱스토어로 이동 중입니다.
     </div>
   );

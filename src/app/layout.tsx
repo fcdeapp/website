@@ -14,15 +14,23 @@ import { getDistrictNameFromCoordinates } from "../utils/locationUtils";
 import { useRouter, usePathname } from "next/navigation";
 import Header from "../components/Header";
 import "./globals.css";
-import '../styles/react-calendar-overrides.css';
-import Head from 'next/head';
+import "../styles/react-calendar-overrides.css";
+import Head from "next/head";
 
 // Next.js 폰트 설정 (예시)
 import localFont from "next/font/local";
 const pretendard = localFont({
   src: [
-    { path: "../../public/assets/fonts/Pretendard-Regular.woff2", weight: "400", style: "normal" },
-    { path: "../../public/assets/fonts/Pretendard-Bold.woff2", weight: "700", style: "normal" },
+    {
+      path: "../../public/assets/fonts/Pretendard-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/assets/fonts/Pretendard-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
   ],
   variable: "--font-pretendard",
 });
@@ -30,16 +38,19 @@ const pretendard = localFont({
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const router = useRouter();
   const pathname = usePathname();
+  const isMdeet = pathname === "/mdeet" || pathname.startsWith("/mdeet/");
   const [isLoading, setIsLoading] = useState(true);
   const [maintenanceVisible, setMaintenanceVisible] = useState(false);
   const [passwordExpired, setPasswordExpired] = useState(false);
-  const [showPasswordExpiredModal, setShowPasswordExpiredModal] = useState(false);
+  const [showPasswordExpiredModal, setShowPasswordExpiredModal] =
+    useState(false);
 
   const healthDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // localStorage는 클라이언트 전용이므로, useEffect 내에서 사용
-  const SERVER_URL = process.env.NEXT_PUBLIC_SERVER_URL || "https://beta.fcde.app";
+  const SERVER_URL =
+    process.env.NEXT_PUBLIC_SERVER_URL || "https://beta.fcde.app";
 
   // 서버 상태 체크 (건강 체크)
   const checkServerHealth = async () => {
@@ -68,7 +79,10 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         buildNumber,
         userId,
       });
-      if (res.data.deactivationInfo && res.data.deactivationInfo.isDeactivated) {
+      if (
+        res.data.deactivationInfo &&
+        res.data.deactivationInfo.isDeactivated
+      ) {
         window.location.href = "/deactivatedUser";
         return;
       }
@@ -135,7 +149,9 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const globalErrorHandler = (event: ErrorEvent) => {
       sendErrorLog({
         message: event.message,
-        stack: event.error ? event.error.stack?.slice(0, 200) : "No stack trace",
+        stack: event.error
+          ? event.error.stack?.slice(0, 200)
+          : "No stack trace",
         source: "Global",
         timestamp: new Date().toISOString(),
         isFatal: false,
@@ -158,24 +174,24 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 const districtData = await getDistrictNameFromCoordinates(
                   latitude,
                   longitude,
-                  SERVER_URL
+                  SERVER_URL,
                 );
                 const country = districtData ? districtData.country : "Unknown";
                 cachedRegion =
                   country === "Canada"
                     ? "ca-central-1"
                     : country === "Australia"
-                    ? "ap-southeast-2"
-                    : country === "United Kingdom"
-                    ? "eu-west-2"
-                    : "ap-northeast-2";
+                      ? "ap-southeast-2"
+                      : country === "United Kingdom"
+                        ? "eu-west-2"
+                        : "ap-northeast-2";
                 localStorage.setItem("region", cachedRegion);
               },
               (error) => {
                 console.error("Geolocation error:", error);
                 cachedRegion = "ap-northeast-2";
                 localStorage.setItem("region", cachedRegion);
-              }
+              },
             );
           } else {
             cachedRegion = "ap-northeast-2";
@@ -228,28 +244,55 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   }, []);
 
   return (
-    <html lang="en" className={pretendard.className}>
+    <html
+      lang="en"
+      className={`${pretendard.className} ${pretendard.variable}`}
+    >
       <Head>
         {/* Basic */}
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Personalized quizzes generated from your own conversations." />
+        <meta
+          name="description"
+          content="Personalized quizzes generated from your own conversations."
+        />
 
         {/* Open Graph */}
-        <meta property="og:type"        content="website" />
-        <meta property="og:title"       content="Abrody – AI Conversational Language Learning" />
-        <meta property="og:description" content="Personalized quizzes generated from your own conversations." />
-        <meta property="og:image"       content="https://website.fcde.app/og-image.jpg" />
-        <meta property="og:image:width"  content="1200" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Abrody – AI Conversational Language Learning"
+        />
+        <meta
+          property="og:description"
+          content="Personalized quizzes generated from your own conversations."
+        />
+        <meta
+          property="og:image"
+          content="https://website.fcde.app/og-image.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url"         content="https://website.fcde.app/" />
+        <meta property="og:url" content="https://website.fcde.app/" />
 
         {/* Twitter Card */}
-        <meta name="twitter:card"        content="summary_large_image" />
-        <meta name="twitter:title"       content="Abrody – AI Conversational Language Learning" />
-        <meta name="twitter:description" content="Personalized quizzes generated from your own conversations." />
-        <meta name="twitter:image"       content="https://website.fcde.app/og-image.jpg" />
-        <meta name="twitter:image:alt"   content="Abrody – AI Conversational Language Learning" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Abrody – AI Conversational Language Learning"
+        />
+        <meta
+          name="twitter:description"
+          content="Personalized quizzes generated from your own conversations."
+        />
+        <meta
+          name="twitter:image"
+          content="https://website.fcde.app/og-image.jpg"
+        />
+        <meta
+          name="twitter:image:alt"
+          content="Abrody – AI Conversational Language Learning"
+        />
       </Head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=AW-17197212587"
@@ -303,7 +346,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         `}
       </Script>
 
-      <body>
+      <body data-site-section={isMdeet ? "mdeet" : "abrody"}>
         <ConfigProvider>
           <ErrorBoundary>
             <I18nextProvider i18n={i18n}>
@@ -318,14 +361,19 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   visible={showPasswordExpiredModal}
                   onPressChange={() => {
                     setShowPasswordExpiredModal(false);
-                    window.location.href = "/signInLogIn?showChangePasswordModal=true";
+                    window.location.href =
+                      "/signInLogIn?showChangePasswordModal=true";
                   }}
                   onClose={() => setShowPasswordExpiredModal(false)}
                 />
               )}
-              {pathname !== "/posts" && !pathname.includes("canopy") && <Header />}
+              {!isMdeet &&
+                pathname !== "/posts" &&
+                !pathname.includes("canopy") && <Header />}
               {/* 실제 콘텐츠 영역 */}
-              <main>{children}</main>
+              <div id="site-content" tabIndex={-1}>
+                {children}
+              </div>
             </I18nextProvider>
           </ErrorBoundary>
         </ConfigProvider>

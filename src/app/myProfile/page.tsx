@@ -70,24 +70,12 @@ const MyProfile: React.FC = () => {
   const [accountPublic, setAccountPublic] = useState(true);
   const [messageEnabled, setMessageEnabled] = useState(true);
   const [updatingLocation, setUpdatingLocation] = useState(false);
-  const [headerOpaque, setHeaderOpaque] = useState(false);
-  const [headerOffset, setHeaderOffset] = useState(90);
   const fileInputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    const onScroll = () => {
-      // window.scrollY가 0부터 90px까지는 offset이 (90 - scrollY)로 감소하고,
-      // 90px 이상일 경우 0으로 고정합니다.
-      setHeaderOffset(Math.max(90 - window.scrollY, 0));
-      setHeaderOpaque(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   // 로그인 체크 (로컬스토리지에 isLoggedIn 값 확인)
   const isLoggedIn =
-    typeof window !== "undefined" && localStorage.getItem("isLoggedIn") === "true";
+    typeof window !== "undefined" &&
+    localStorage.getItem("isLoggedIn") === "true";
   useEffect(() => {
     if (!isLoggedIn) {
       router.push("/login");
@@ -96,7 +84,9 @@ const MyProfile: React.FC = () => {
     // 유저 정보 fetch (서버에서 데이터를 받아옴)
     const fetchUserData = async () => {
       try {
-        const res = await axios.get(`${SERVER_URL}/users/me`, { withCredentials: true });
+        const res = await axios.get(`${SERVER_URL}/users/me`, {
+          withCredentials: true,
+        });
         const data = res.data as UserResponse;
         setUserData(data);
         setAccountPublic(data.isAccountPublic);
@@ -111,19 +101,14 @@ const MyProfile: React.FC = () => {
     fetchUserData();
   }, [SERVER_URL, router, isLoggedIn]);
 
-  // 스크롤 이벤트 – 헤더 배경 애니메이션 (스크롤 50px 이상 시 불투명 처리)
-  useEffect(() => {
-    const onScroll = () => {
-      setHeaderOpaque(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   // 로그아웃 처리
   const handleLogout = async () => {
     try {
-      await axios.post(`${SERVER_URL}/authStatus/logout`, {}, { withCredentials: true });
+      await axios.post(
+        `${SERVER_URL}/authStatus/logout`,
+        {},
+        { withCredentials: true },
+      );
       localStorage.removeItem("isLoggedIn");
       router.push("/login");
     } catch (error) {
@@ -132,8 +117,11 @@ const MyProfile: React.FC = () => {
   };
 
   // 프로필 이미지 변경 – 파일 선택 후 업로드
-  const handleFileChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (!event.target.files || event.target.files.length === 0 || !userData) return;
+  const handleFileChange = async (
+    event: React.ChangeEvent<HTMLInputElement>,
+  ) => {
+    if (!event.target.files || event.target.files.length === 0 || !userData)
+      return;
     const file = event.target.files[0];
     const formData = new FormData();
     formData.append("profileImage", file);
@@ -141,7 +129,10 @@ const MyProfile: React.FC = () => {
       const res = await axios.put(
         `${SERVER_URL}/api/my-profile/select-character/${userData.userId}`,
         formData,
-        { withCredentials: true, headers: { "Content-Type": "multipart/form-data" } }
+        {
+          withCredentials: true,
+          headers: { "Content-Type": "multipart/form-data" },
+        },
       );
       if (res.status === 200) {
         const updatedUser = res.data.user;
@@ -152,7 +143,7 @@ const MyProfile: React.FC = () => {
                 profileImage: updatedUser.profileImage,
                 profileThumbnail: updatedUser.profileThumbnail,
               }
-            : prev
+            : prev,
         );
       }
     } catch (error) {
@@ -174,10 +165,12 @@ const MyProfile: React.FC = () => {
       const res = await axios.put(
         `${SERVER_URL}/api/my-profile/select-character/${userData.userId}`,
         { nickname: newNickname },
-        { withCredentials: true }
+        { withCredentials: true },
       );
       if (res.status === 200) {
-        setUserData((prev) => (prev ? { ...prev, nickname: newNickname } : prev));
+        setUserData((prev) =>
+          prev ? { ...prev, nickname: newNickname } : prev,
+        );
         setShowEditNickname(false);
       }
     } catch (error) {
@@ -192,10 +185,12 @@ const MyProfile: React.FC = () => {
       const res = await axios.put(
         `${SERVER_URL}/users/settings`,
         { description: newDescription },
-        { withCredentials: true }
+        { withCredentials: true },
       );
       if (res.status === 200) {
-        setUserData((prev) => (prev ? { ...prev, description: newDescription } : prev));
+        setUserData((prev) =>
+          prev ? { ...prev, description: newDescription } : prev,
+        );
         setShowEditDescription(false);
       }
     } catch (error) {
@@ -213,9 +208,11 @@ const MyProfile: React.FC = () => {
         .put(
           `${SERVER_URL}/users/settings`,
           { learningLanguage: updatedLanguages },
-          { withCredentials: true }
+          { withCredentials: true },
         )
-        .catch((error) => console.error("Error updating learning languages:", error));
+        .catch((error) =>
+          console.error("Error updating learning languages:", error),
+        );
       return updatedLanguages;
     });
   };
@@ -228,7 +225,7 @@ const MyProfile: React.FC = () => {
       await axios.put(
         `${SERVER_URL}/users/settings`,
         { isAccountPublic: newStatus },
-        { withCredentials: true }
+        { withCredentials: true },
       );
     } catch (error) {
       console.error("Error updating account public status:", error);
@@ -243,7 +240,7 @@ const MyProfile: React.FC = () => {
       await axios.put(
         `${SERVER_URL}/users/settings`,
         { newMessageEnabled: newStatus },
-        { withCredentials: true }
+        { withCredentials: true },
       );
     } catch (error) {
       console.error("Error updating message enabled status:", error);
@@ -264,11 +261,11 @@ const MyProfile: React.FC = () => {
           const res = await axios.put(
             `${SERVER_URL}/users/update-location`,
             { latitude, longitude },
-            { withCredentials: true }
+            { withCredentials: true },
           );
           const { currentCountry, currentCity } = res.data;
           setUserData((prev) =>
-            prev ? { ...prev, currentCountry, currentCity } : prev
+            prev ? { ...prev, currentCountry, currentCity } : prev,
           );
         } catch (error) {
           console.error("Error updating location:", error);
@@ -280,7 +277,7 @@ const MyProfile: React.FC = () => {
         console.error("Geolocation error:", error);
         alert(t("location_permission_denied"));
         setUpdatingLocation(false);
-      }
+      },
     );
   };
 
@@ -288,7 +285,10 @@ const MyProfile: React.FC = () => {
 
   // 닉네임 편집 모달
   const renderEditNicknameModal = () => (
-    <div className={styles.modalOverlay} onClick={() => setShowEditNickname(false)}>
+    <div
+      className={styles.modalOverlay}
+      onClick={() => setShowEditNickname(false)}
+    >
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <h3>{t("edit_nickname")}</h3>
         <input
@@ -307,7 +307,10 @@ const MyProfile: React.FC = () => {
 
   // 설명 편집 모달
   const renderEditDescriptionModal = () => (
-    <div className={styles.modalOverlay} onClick={() => setShowEditDescription(false)}>
+    <div
+      className={styles.modalOverlay}
+      onClick={() => setShowEditDescription(false)}
+    >
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <h3>{t("edit_description")}</h3>
         <textarea
@@ -325,7 +328,10 @@ const MyProfile: React.FC = () => {
 
   // 학습 언어 선택 모달
   const renderLanguageModal = () => (
-    <div className={styles.modalOverlay} onClick={() => setShowLanguageModal(false)}>
+    <div
+      className={styles.modalOverlay}
+      onClick={() => setShowLanguageModal(false)}
+    >
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <h3>{t("select_languages")}</h3>
         <div className={styles.languageOptions}>
@@ -347,16 +353,22 @@ const MyProfile: React.FC = () => {
             </button>
           ))}
         </div>
-        <button className={styles.saveButton} onClick={() => setShowLanguageModal(false)}>
+        <button
+          className={styles.saveButton}
+          onClick={() => setShowLanguageModal(false)}
+        >
           {t("confirm")}
         </button>
       </div>
     </div>
   );
-  
+
   // 원산지 국가 선택 모달 – 앱과 동일한 로직: countryFlags 객체를 순회
   const renderOriginCountryModal = () => (
-    <div className={styles.modalOverlay} onClick={() => setShowOriginCountryModal(false)}>
+    <div
+      className={styles.modalOverlay}
+      onClick={() => setShowOriginCountryModal(false)}
+    >
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <h3>{t("select_origin_country")}</h3>
         <div className={styles.countryOptions}>
@@ -369,10 +381,10 @@ const MyProfile: React.FC = () => {
                   await axios.put(
                     `${SERVER_URL}/users/settings`,
                     { originCountry: country },
-                    { withCredentials: true }
+                    { withCredentials: true },
                   );
                   setUserData((prev) =>
-                    prev ? { ...prev, originCountry: country } : prev
+                    prev ? { ...prev, originCountry: country } : prev,
                   );
                   setShowOriginCountryModal(false);
                 } catch (error) {
@@ -380,12 +392,20 @@ const MyProfile: React.FC = () => {
                 }
               }}
             >
-              <img src={countryFlags[country as keyof typeof countryFlags]} alt={t(country)} width={24} height={24} />
+              <img
+                src={countryFlags[country as keyof typeof countryFlags]}
+                alt={t(country)}
+                width={24}
+                height={24}
+              />
               <span className={styles.countryText}>{t(country)}</span>
             </button>
           ))}
         </div>
-        <button className={styles.saveButton} onClick={() => setShowOriginCountryModal(false)}>
+        <button
+          className={styles.saveButton}
+          onClick={() => setShowOriginCountryModal(false)}
+        >
           {t("confirm")}
         </button>
       </div>
@@ -410,10 +430,7 @@ const MyProfile: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <header
-        className={`${styles.header} ${headerOpaque ? styles.opaque : ""}`}
-        style={{ top: `${headerOffset}px` }}
-      >
+      <header className={styles.header}>
         <button className={styles.backButton} onClick={() => router.back()}>
           <img src="/assets/back-light.png" alt="Back" width={24} height={24} />
         </button>
@@ -432,7 +449,10 @@ const MyProfile: React.FC = () => {
               profileThumbnail={userData.profileThumbnail ?? undefined}
               size={120}
             />
-            <button className={styles.changeImageButton} onClick={triggerFileInput}>
+            <button
+              className={styles.changeImageButton}
+              onClick={triggerFileInput}
+            >
               {t("change_image")}
             </button>
             <input
@@ -455,7 +475,12 @@ const MyProfile: React.FC = () => {
             </h2>
             {userData.trustBadge && (
               <div className={styles.trustBadge}>
-                <img src="/assets/TrustBadge.png" alt="Trust Badge" width={24} height={24} />
+                <img
+                  src="/assets/TrustBadge.png"
+                  alt="Trust Badge"
+                  width={24}
+                  height={24}
+                />
               </div>
             )}
           </div>
@@ -463,13 +488,19 @@ const MyProfile: React.FC = () => {
 
         {/* 정보 카드 */}
         <div className={styles.infoSections}>
-          <div className={styles.infoSection} onClick={() => setShowOriginCountryModal(true)}>
+          <div
+            className={styles.infoSection}
+            onClick={() => setShowOriginCountryModal(true)}
+          >
             <h3 className={styles.infoTitle}>{t("origin_country")}</h3>
             <p className={styles.infoText}>
               {userData.originCountry || t("unknown")}
             </p>
           </div>
-          <div className={styles.infoSection} onClick={() => setShowLanguageModal(true)}>
+          <div
+            className={styles.infoSection}
+            onClick={() => setShowLanguageModal(true)}
+          >
             <h3 className={styles.infoTitle}>{t("main_language")}</h3>
             <p className={styles.infoText}>
               {userData.mainLanguage || t("unknown")}
@@ -487,10 +518,15 @@ const MyProfile: React.FC = () => {
               {userData.currentCity || t("unknown")}
             </p>
           </div>
-          <div className={styles.infoSection} onClick={() => setShowLanguageModal(true)}>
+          <div
+            className={styles.infoSection}
+            onClick={() => setShowLanguageModal(true)}
+          >
             <h3 className={styles.infoTitle}>{t("learning_languages")}</h3>
             <p className={styles.infoText}>
-              {selectedLanguages.length > 0 ? selectedLanguages.join(", ") : t("none")}
+              {selectedLanguages.length > 0
+                ? selectedLanguages.join(", ")
+                : t("none")}
             </p>
           </div>
           <div className={styles.infoSection}>
@@ -505,10 +541,13 @@ const MyProfile: React.FC = () => {
               {(userData.skills && userData.skills.join(", ")) || t("none")}
             </p>
           </div>
-          <div className={styles.infoSection} onClick={() => {
+          <div
+            className={styles.infoSection}
+            onClick={() => {
               setNewDescription(userData.description || "");
               setShowEditDescription(true);
-            }}>
+            }}
+          >
             <h3 className={styles.infoTitle}>{t("description")}</h3>
             <p className={styles.infoText}>
               {userData.description || t("no_description")}
@@ -521,14 +560,22 @@ const MyProfile: React.FC = () => {
           <div className={styles.toggleRow}>
             <span>{t("account_visible")}</span>
             <label className={styles.switch}>
-              <input type="checkbox" checked={accountPublic} onChange={handleAccountToggle} />
+              <input
+                type="checkbox"
+                checked={accountPublic}
+                onChange={handleAccountToggle}
+              />
               <span className={styles.slider}></span>
             </label>
           </div>
           <div className={styles.toggleRow}>
             <span>{t("new_message_enabled")}</span>
             <label className={styles.switch}>
-              <input type="checkbox" checked={messageEnabled} onChange={handleMessageToggle} />
+              <input
+                type="checkbox"
+                checked={messageEnabled}
+                onChange={handleMessageToggle}
+              />
               <span className={styles.slider}></span>
             </label>
           </div>
@@ -570,8 +617,18 @@ const MyProfile: React.FC = () => {
       {showLanguageModal && renderLanguageModal()}
       {showOriginCountryModal && renderOriginCountryModal()}
       {/* 앱에서 제공하는 Hobbies/Skills 오버레이 – 웹에서는 별도 인터페이스가 이미 있으므로 동일하게 처리 */}
-      <HobbiesSelectionOverlay visible={false} onClose={() => {}} selectedHobbies={[]} setSelectedHobbies={() => {}} />
-      <SkillsSelectionOverlay visible={false} onClose={() => {}} selectedSkills={[]} setSelectedSkills={() => {}} />
+      <HobbiesSelectionOverlay
+        visible={false}
+        onClose={() => {}}
+        selectedHobbies={[]}
+        setSelectedHobbies={() => {}}
+      />
+      <SkillsSelectionOverlay
+        visible={false}
+        onClose={() => {}}
+        selectedSkills={[]}
+        setSelectedSkills={() => {}}
+      />
       {showLicenses && <Licenses onClose={() => setShowLicenses(false)} />}
     </div>
   );

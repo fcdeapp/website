@@ -2,6 +2,7 @@
 "use client";
 
 import { useEffect } from "react";
+import styles from "../../styles/pages/Redirect.module.css";
 import { useRouter } from "next/navigation";
 
 export default function AndroidBetaRedirect() {
@@ -27,8 +28,9 @@ export default function AndroidBetaRedirect() {
   }, [router]);
 
   return (
-    <p style={{ padding: "4rem", textAlign: "center" }}>
-      잠시만 기다려 주세요…<br />
+    <p className={styles.transit} role="status">
+      잠시만 기다려 주세요…
+      <br />
       베타테스터 지원 페이지로 이동 중입니다.
     </p>
   );

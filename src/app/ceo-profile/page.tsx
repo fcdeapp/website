@@ -16,7 +16,7 @@ const fadeUp: Variants = {
   visible: (i: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.1, duration: 0.68, ease: "easeOut" },
+    transition: { delay: i * 0.1, duration: 0.18, ease: "easeOut" },
   }),
 };
 
@@ -26,7 +26,7 @@ const zoomIn: Variants = {
     opacity: 1,
     scale: 1,
     y: 0,
-    transition: { delay: i * 0.08, duration: 0.62, ease: "easeOut" },
+    transition: { delay: i * 0.08, duration: 0.18, ease: "easeOut" },
   }),
 };
 
@@ -248,7 +248,7 @@ export default function Profile() {
     }));
 
     return [...milestones, ...releaseNotes].sort(
-      (a, b) => +new Date(a.date) - +new Date(b.date)
+      (a, b) => +new Date(a.date) - +new Date(b.date),
     );
   }, []);
 
@@ -306,7 +306,10 @@ export default function Profile() {
     <>
       <Head>
         <title>Founder | JungMin Doh</title>
-        <meta name="description" content="Founder & CEO JungMin Doh’s profile" />
+        <meta
+          name="description"
+          content="Founder & CEO JungMin Doh’s profile"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
@@ -600,7 +603,6 @@ export default function Profile() {
                 className={styles.diffCard}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{ y: -6 }}
               >
                 <h3>{c.title}</h3>
                 <p>{c.body}</p>
@@ -661,7 +663,6 @@ export default function Profile() {
                 className={styles.diffCard}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{ y: -6 }}
               >
                 <h3>{b.title}</h3>
                 <p>{b.body}</p>
@@ -731,7 +732,6 @@ export default function Profile() {
                 className={styles.diffCard}
                 variants={fadeUp}
                 custom={i}
-                whileHover={{ y: -6 }}
               >
                 <h3>{a.title}</h3>
                 <p>{a.body}</p>
@@ -915,7 +915,6 @@ export default function Profile() {
                 className={styles.screenCard}
                 variants={fadeUp}
                 custom={index}
-                whileHover={{ y: -6 }}
               >
                 <div className={styles.screenImageWrap}>
                   <img

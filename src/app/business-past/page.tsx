@@ -1,7 +1,14 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { motion, Variants, useMotionValue, useSpring, useTransform, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  Variants,
+  useMotionValue,
+  useSpring,
+  useTransform,
+  AnimatePresence,
+} from "framer-motion";
 import styles from "../../styles/pages/Business.module.css";
 import stylesB from "../../styles/pages/About.module.css";
 import ChainQuizzesSection from "../../components/ChainQuizzesSection";
@@ -39,7 +46,6 @@ function FeatureCard({
       variants={fadeUp}
       custom={idx}
       layout
-      whileHover={{ y: -6, boxShadow: "0 18px 40px rgba(17,12,43,0.12)" }}
       onClick={toggleMode}
       role="button"
       aria-pressed={mode === "feature"}
@@ -49,9 +55,7 @@ function FeatureCard({
       }}
     >
       <div className={styles.featHead}>
-        <h3 className={styles.featTitle}>
-          {item.title}
-        </h3>
+        <h3 className={styles.featTitle}>{item.title}</h3>
       </div>
 
       <div className={styles.featBody}>
@@ -111,7 +115,7 @@ function buildPathFromPoints(
   padLeft = 20,
   padRight = 20,
   globalMin?: number,
-  globalMax?: number
+  globalMax?: number,
 ) {
   if (!points || points.length === 0) return "";
 
@@ -135,10 +139,12 @@ function buildPathFromPoints(
   };
 
   return points
-    .map((p, i) => `${i === 0 ? "M" : "L"} ${xFor(p.t).toFixed(2)} ${yFor(p.v).toFixed(2)}`)
+    .map(
+      (p, i) =>
+        `${i === 0 ? "M" : "L"} ${xFor(p.t).toFixed(2)} ${yFor(p.v).toFixed(2)}`,
+    )
     .join(" ");
 }
-
 
 /* ───────── Motion variants ───────── */
 const fadeUp: Variants = {
@@ -146,7 +152,7 @@ const fadeUp: Variants = {
   visible: (i: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.12, duration: 0.8, ease: "easeOut" },
+    transition: { delay: i * 0.12, duration: 0.18, ease: "easeOut" },
   }),
 };
 
@@ -155,7 +161,7 @@ const fadeLeft: Variants = {
   visible: (i: number = 0) => ({
     opacity: 1,
     x: 0,
-    transition: { delay: i * 0.12 + 0.15, duration: 0.8, ease: "easeOut" },
+    transition: { delay: i * 0.12 + 0.15, duration: 0.18, ease: "easeOut" },
   }),
 };
 
@@ -164,51 +170,48 @@ const zoomIn: Variants = {
   visible: (i: number = 0) => ({
     opacity: 1,
     scale: 1,
-    transition: { delay: i * 0.1 + 0.2, duration: 0.6, ease: "easeOut" },
+    transition: { delay: i * 0.1 + 0.2, duration: 0.18, ease: "easeOut" },
   }),
 };
 
 const numberVariant: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: (i: number = 0) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: 0.4 + i * 0.3, duration: 0.6, ease: "easeOut" },
-    }),
-  };
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: 0.4 + i * 0.3, duration: 0.18, ease: "easeOut" },
+  }),
+};
 
 // Stagger 부모
 const heroParent: Variants = {
   hidden: {},
   visible: {
-    transition: { staggerChildren: 0.08, delayChildren: 0.1 }
-  }
+    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
+  },
 };
 
 // 단어 단위 텍스트 리빌
 const wordReveal: Variants = {
-  hidden: { opacity: 0, y: 16, filter: "blur(6px)" },
+  hidden: { opacity: 0, y: 16, filter: "none" },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
-    transition: { duration: 0.6, ease: "easeOut" }
-  }
+    filter: "none",
+    transition: { duration: 0.18, ease: "easeOut" },
+  },
 };
 
 // 떠다니는 오브(구체)
-const floatOrb: Variants = {
-  initial: { y: 0, rotate: 0 },
-  animate: {
-    y: [-4, 6, -2, 0],
-    rotate: [0, 1.2, -0.6, 0],
-    transition: { duration: 7, repeat: Infinity, ease: "easeInOut" }
-  }
-};
+const floatOrb: Variants = { initial: {}, animate: {} };
 
 const titleReveal: Variants = {
-  hidden: { opacity: 0, y: 18 },         // blur 제거!
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  hidden: { opacity: 0, y: 18 }, // blur 제거!
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.18, ease: "easeOut" },
+  },
 };
 
 const quoteVariants: Variants = {
@@ -228,11 +231,14 @@ const citeVariants: Variants = {
 };
 
 export default function BusinessPage() {
-  const [preview, setPreview] = React.useState<null | { type: "pdf" | "video"; src: string }>(null);
+  const [preview, setPreview] = React.useState<null | {
+    type: "pdf" | "video";
+    src: string;
+  }>(null);
   const [showStatus, setShowStatus] = React.useState(false);
   const [hoverIdx, setHoverIdx] = React.useState<number | null>(null);
   const [quoteOpen, setQuoteOpen] = useState(false);
-  const [openFeatureId, setOpenFeatureId] = useState<string | null>(null);  
+  const [openFeatureId, setOpenFeatureId] = useState<string | null>(null);
 
   const OUTDATED_NOTE =
     "This is an older version, and the content has changed. An updated version will be uploaded soon.";
@@ -246,11 +252,14 @@ export default function BusinessPage() {
   ];
 
   // prepare points + global scale (AFTER downloadData and toTs/buildPathFromPoints are defined)
-  const pointsSum = downloadData.map(d => ({ t: toTs(d.date), v: d.sum }));
-  const pointsIos = downloadData.map(d => ({ t: toTs(d.date), v: d.ios }));
-  const pointsAndroid = downloadData.map(d => ({ t: toTs(d.date), v: d.android }));
+  const pointsSum = downloadData.map((d) => ({ t: toTs(d.date), v: d.sum }));
+  const pointsIos = downloadData.map((d) => ({ t: toTs(d.date), v: d.ios }));
+  const pointsAndroid = downloadData.map((d) => ({
+    t: toTs(d.date),
+    v: d.android,
+  }));
 
-  const allVals = downloadData.flatMap(d => [d.ios, d.android, d.sum]);
+  const allVals = downloadData.flatMap((d) => [d.ios, d.android, d.sum]);
   const globalMin = Math.min(...allVals);
   const globalMax = Math.max(...allVals);
 
@@ -259,10 +268,11 @@ export default function BusinessPage() {
   const svgW = 600;
   const svgH = 160;
   const usableW = svgW - padLeft - padRight;
-  const minT = Math.min(...downloadData.map(d => toTs(d.date)));
-  const maxT = Math.max(...downloadData.map(d => toTs(d.date)));
-  const xForTick = (t: number) => padLeft + ((t - minT) / Math.max(1, maxT - minT)) * usableW;
-  
+  const minT = Math.min(...downloadData.map((d) => toTs(d.date)));
+  const maxT = Math.max(...downloadData.map((d) => toTs(d.date)));
+  const xForTick = (t: number) =>
+    padLeft + ((t - minT) / Math.max(1, maxT - minT)) * usableW;
+
   const cpcData = [
     { date: "2025-07-01", cpc: 3201 },
     { date: "2025-08-01", cpc: 3125 },
@@ -271,13 +281,13 @@ export default function BusinessPage() {
   ];
 
   // points for CPC chart (independent scale)
-  const pointsCPC = cpcData.map(d => ({ t: toTs(d.date), v: d.cpc }));
-  const cpcMin = Math.min(...cpcData.map(d => d.cpc));
-  const cpcMax = Math.max(...cpcData.map(d => d.cpc));
+  const pointsCPC = cpcData.map((d) => ({ t: toTs(d.date), v: d.cpc }));
+  const cpcMin = Math.min(...cpcData.map((d) => d.cpc));
+  const cpcMax = Math.max(...cpcData.map((d) => d.cpc));
 
   // x helper for CPC chart (same width/padding as downloads)
-  const minTCPC = Math.min(...cpcData.map(d => toTs(d.date)));
-  const maxTCPC = Math.max(...cpcData.map(d => toTs(d.date)));
+  const minTCPC = Math.min(...cpcData.map((d) => toTs(d.date)));
+  const maxTCPC = Math.max(...cpcData.map((d) => toTs(d.date)));
   const xForTickCPC = (t: number) =>
     padLeft + ((t - minTCPC) / Math.max(1, maxTCPC - minTCPC)) * usableW;
 
@@ -311,28 +321,37 @@ export default function BusinessPage() {
     return { x, y, d };
   }, [hoverIdx, downloadData, xForTick, globalMin, globalMax]);
 
-// 마우스 파랄랙스
-const mx = useMotionValue(0);   // -40 ~ 40(px)
-const my = useMotionValue(0);
-const sx = useSpring(mx, { stiffness: 120, damping: 18, mass: 0.25 });
-const sy = useSpring(my, { stiffness: 120, damping: 18, mass: 0.25 });
+  // 마우스 파랄랙스
+  const mx = useMotionValue(0); // -40 ~ 40(px)
+  const my = useMotionValue(0);
+  const sx = useSpring(mx, { stiffness: 120, damping: 18, mass: 0.25 });
+  const sy = useSpring(my, { stiffness: 120, damping: 18, mass: 0.25 });
 
-// 3D 틸트 각도
-const tiltX = useTransform(sy, v => v / -8); // deg
-const tiltY = useTransform(sx, v => v / 8);  // deg
+  // 3D 틸트 각도
+  const tiltX = useTransform(sy, (v) => v / -8); // deg
+  const tiltY = useTransform(sx, (v) => v / 8); // deg
 
-// 레이어별 파랄랙스 깊이
-const layerSlow  = { x: useTransform(sx, v => v * -0.25), y: useTransform(sy, v => v * -0.25) };
-const layerMed   = { x: useTransform(sx, v => v * -0.5 ), y: useTransform(sy, v => v * -0.5 ) };
-const layerFast  = { x: useTransform(sx, v => v *  0.8 ), y: useTransform(sy, v => v *  0.8 ) };
+  // 레이어별 파랄랙스 깊이
+  const layerSlow = {
+    x: useTransform(sx, (v) => v * -0.25),
+    y: useTransform(sy, (v) => v * -0.25),
+  };
+  const layerMed = {
+    x: useTransform(sx, (v) => v * -0.5),
+    y: useTransform(sy, (v) => v * -0.5),
+  };
+  const layerFast = {
+    x: useTransform(sx, (v) => v * 0.8),
+    y: useTransform(sy, (v) => v * 0.8),
+  };
 
-function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
-  const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
-  const relX = ((e.clientX - r.left) / r.width  - 0.5) * 80; // -40~40
-  const relY = ((e.clientY - r.top)  / r.height - 0.5) * 80;
-  mx.set(relX);
-  my.set(relY);
-}
+  function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
+    const r = (e.currentTarget as HTMLElement).getBoundingClientRect();
+    const relX = ((e.clientX - r.left) / r.width - 0.5) * 80; // -40~40
+    const relY = ((e.clientY - r.top) / r.height - 0.5) * 80;
+    mx.set(relX);
+    my.set(relY);
+  }
 
   return (
     <motion.main
@@ -341,25 +360,11 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
       animate="visible"
       variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
     >
-      <section
-        className={stylesB.heroSection}
-        onMouseMove={handleMouseMove}
-      >
+      <section className={stylesB.heroSection} onMouseMove={handleMouseMove}>
         {/* --- background FX layers (absolute) --- */}
-        <motion.div
-          aria-hidden
-          className={stylesB.fxMesh}
-          style={layerSlow}
-        />
-        <motion.div
-          aria-hidden
-          className={stylesB.fxBeams}
-          style={layerMed}
-        />
-        <motion.div
-          aria-hidden
-          className={stylesB.fxGrid}
-        />
+        <motion.div aria-hidden className={stylesB.fxMesh} style={layerSlow} />
+        <motion.div aria-hidden className={stylesB.fxBeams} style={layerMed} />
+        <motion.div aria-hidden className={stylesB.fxGrid} />
 
         {/* --- foreground content (3D tilt) --- */}
         <motion.div
@@ -390,8 +395,14 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             })()}
           </h1>
 
-          <motion.p className={stylesB.heroLead} variants={wordReveal} custom={1}>
-            Your moments become language you’ll remember and use. Start with a <span className={stylesB.jm}>photo</span>. Finish with <span className={stylesB.jm}>words</span> that fit your day.
+          <motion.p
+            className={stylesB.heroLead}
+            variants={wordReveal}
+            custom={1}
+          >
+            Your moments become language you’ll remember and use. Start with a{" "}
+            <span className={stylesB.jm}>photo</span>. Finish with{" "}
+            <span className={stylesB.jm}>words</span> that fit your day.
           </motion.p>
 
           {/* CTA / scroll hint */}
@@ -400,7 +411,6 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               href="#why"
               className={stylesB.primaryCta}
               variants={wordReveal}
-              whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
               Start with a photo
@@ -440,8 +450,9 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             Learn from the moments you actually live.
           </h2>
           <p className={styles.sectionLead}>
-            Most lessons feel unrelated, too long, and don’t transfer to real conversations.
-            Abrody flips it: start from your photo, then practice lines you can use today.
+            Most lessons feel unrelated, too long, and don’t transfer to real
+            conversations. Abrody flips it: start from your photo, then practice
+            lines you can use today.
           </p>
         </motion.div>
 
@@ -456,18 +467,15 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           {[
             {
               title: "Make it light",
-              body:
-                "1–3 minute practices you can finish anywhere. No friction.",
+              body: "1–3 minute practices you can finish anywhere. No friction.",
             },
             {
               title: "Make it stick",
-              body:
-                "Your image becomes a clean sticker-style word card you’ll remember.",
+              body: "Your image becomes a clean sticker-style word card you’ll remember.",
             },
             {
               title: "Make it transfer",
-              body:
-                "Place-based lines that show up in the next café, meeting, or train ride.",
+              body: "Place-based lines that show up in the next café, meeting, or train ride.",
             },
           ].map((card, i) => (
             <motion.article
@@ -475,10 +483,12 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               className={`${styles.card} ${styles.statCard}`}
               variants={fadeUp}
               custom={i}
-              whileHover={{ y: -6, boxShadow: "0 20px 40px rgba(0,0,0,0.10)" }}
             >
               {/* neutral badge dot */}
-              <span className={`${styles.statBadge} ${styles.neutralBadge}`} aria-hidden>
+              <span
+                className={`${styles.statBadge} ${styles.neutralBadge}`}
+                aria-hidden
+              >
                 ●
               </span>
               <h3 className={styles.neutralTitle}>{card.title}</h3>
@@ -503,8 +513,10 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             custom={1}
             viewport={{ once: true, amount: 0.5 }}
           >
-            You bring the <span className={styles.jm}>context</span>. We bring focused
-            <span className={styles.jm}> practice</span>. Start with your world — not a generic unit.
+            You bring the <span className={styles.jm}>context</span>. We bring
+            focused
+            <span className={styles.jm}> practice</span>. Start with your world
+            — not a generic unit.
           </motion.p>
 
           <motion.div
@@ -582,8 +594,8 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             custom={3}
             viewport={{ once: true, amount: 0.4 }}
           >
-            Abrody is designed to be contextual, light, and transferable — built from your photos
-            and places, not from abstract units.
+            Abrody is designed to be contextual, light, and transferable — built
+            from your photos and places, not from abstract units.
           </motion.p>
         </section>
 
@@ -602,7 +614,9 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           viewport={{ once: true, amount: 0.45 }}
         >
           <span className={styles.sectionKicker}>Flow</span>
-          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>How It Works</h2>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>
+            How It Works
+          </h2>
         </motion.div>
 
         <div className={styles.flowGrid}>
@@ -611,22 +625,19 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               kicker: "Snap",
               img: "/images/flow-9.png",
               title: "Upload Image → Sticker Wordbook",
-              desc:
-                "Abrody auto-cuts irregular edges to make a clean, memorable word sticker.",
+              desc: "Abrody auto-cuts irregular edges to make a clean, memorable word sticker.",
             },
             {
               kicker: "Practice",
               img: "/images/flow-10.png",
               title: "Place-based Lines & Quick Drills",
-              desc:
-                "Upload a place photo (café, station, office) and practice lines built for that scene.",
+              desc: "Upload a place photo (café, station, office) and practice lines built for that scene.",
             },
             {
               kicker: "Review",
               img: "/images/flow-11.png",
               title: "Notes Save Automatically",
-              desc:
-                "Every line you speak is saved as a note, so review is always ready.",
+              desc: "Every line you speak is saved as a note, so review is always ready.",
             },
           ].map((step, i) => (
             <motion.div
@@ -635,7 +646,10 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               variants={zoomIn}
               custom={i}
             >
-              <span className={`${styles.stepKicker} ${styles.neutralChip}`} aria-hidden>
+              <span
+                className={`${styles.stepKicker} ${styles.neutralChip}`}
+                aria-hidden
+              >
                 {step.kicker}
               </span>
 
@@ -657,7 +671,9 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           viewport={{ once: true, amount: 0.45 }}
         >
           <span className={styles.sectionKicker}>Metrics</span>
-          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>Key Performance</h2>
+          <h2 className={`${styles.sectionTitle} ${styles.jm}`}>
+            Key Performance
+          </h2>
           <div style={{ marginTop: "0.75rem" }}>
             <button
               className={styles.statusToggle}
@@ -677,7 +693,6 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           aria-hidden={!showStatus}
         >
           <div className={styles.statusInner}>
-
             {/* ===== 1) Monthly Cost per Conversion (CPC) ===== */}
             <div className={styles.chartWrapper}>
               <div className={styles.chartBox}>
@@ -689,9 +704,19 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                   aria-label="Monthly Cost per Conversion"
                 >
                   <defs>
-                    <linearGradient id="areaCPCGrad" x1="0" x2="0" y1="0" y2="1">
+                    <linearGradient
+                      id="areaCPCGrad"
+                      x1="0"
+                      x2="0"
+                      y1="0"
+                      y2="1"
+                    >
                       <stop offset="0%" stopColor="#fdebee" stopOpacity="0.6" />
-                      <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
+                      <stop
+                        offset="100%"
+                        stopColor="#ffffff"
+                        stopOpacity="0.0"
+                      />
                     </linearGradient>
                   </defs>
 
@@ -702,7 +727,15 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                     className={styles.areaSum}
                   />
                   <path
-                    d={buildPathFromPoints(pointsCPC, 600, 160, 20, 20, cpcMin, cpcMax)}
+                    d={buildPathFromPoints(
+                      pointsCPC,
+                      600,
+                      160,
+                      20,
+                      20,
+                      cpcMin,
+                      cpcMax,
+                    )}
                     fill="none"
                     strokeWidth={2.5}
                     className={styles.lineCAC}
@@ -713,8 +746,22 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                     const x = xForTickCPC(toTs(d.date));
                     return (
                       <g key={`cpc-${d.date}`}>
-                        <line x1={x} x2={x} y1={svgH - 6} y2={svgH - 2} stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
-                        <text x={x} y={svgH + 16} textAnchor="middle" fontSize="11" fill="#666" className={styles.xLabel}>
+                        <line
+                          x1={x}
+                          x2={x}
+                          y1={svgH - 6}
+                          y2={svgH - 2}
+                          stroke="rgba(0,0,0,0.06)"
+                          strokeWidth="1"
+                        />
+                        <text
+                          x={x}
+                          y={svgH + 16}
+                          textAnchor="middle"
+                          fontSize="11"
+                          fill="#666"
+                          className={styles.xLabel}
+                        >
                           {shortLabel(d.date)}
                         </text>
                       </g>
@@ -724,24 +771,35 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               </div>
 
               <div className={styles.statusSummary}>
-                <div className={styles.latestLabel}>Monthly Cost per Conversion</div>
+                <div className={styles.latestLabel}>
+                  Monthly Cost per Conversion
+                </div>
                 <div className={styles.latestNumbers}>
                   {cpcData.map((d) => (
                     <div key={`cpc-sum-${d.date}`}>
-                      {new Date(d.date).toLocaleString("en-US", { month: "short" })}: <strong>{krw(d.cpc)}</strong>
+                      {new Date(d.date).toLocaleString("en-US", {
+                        month: "short",
+                      })}
+                      : <strong>{krw(d.cpc)}</strong>
                     </div>
                   ))}
                 </div>
               </div>
 
               <div className={styles.statusLegend}>
-                <div className={styles.legendItem}><span className={styles.legendSwatchCAC} /> Cost per Conversion (₩)</div>
+                <div className={styles.legendItem}>
+                  <span className={styles.legendSwatchCAC} /> Cost per
+                  Conversion (₩)
+                </div>
               </div>
             </div>
 
             {/* ===== 2) Downloads (moved from Roadmap’s status panel) ===== */}
             <div className={styles.chartWrapper}>
-              <div className={styles.chartBox} onMouseLeave={() => setHoverIdx(null)}>
+              <div
+                className={styles.chartBox}
+                onMouseLeave={() => setHoverIdx(null)}
+              >
                 <svg
                   className={styles.sparklineSvg}
                   viewBox="0 0 600 180"
@@ -750,25 +808,92 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                   aria-label="Download counts over time"
                 >
                   <defs>
-                    <linearGradient id="areaSumGrad" x1="0" x2="0" y1="0" y2="1">
+                    <linearGradient
+                      id="areaSumGrad"
+                      x1="0"
+                      x2="0"
+                      y1="0"
+                      y2="1"
+                    >
                       <stop offset="0%" stopColor="#fbe9ec" stopOpacity="0.6" />
-                      <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
+                      <stop
+                        offset="100%"
+                        stopColor="#ffffff"
+                        stopOpacity="0.0"
+                      />
                     </linearGradient>
                   </defs>
 
                   {/* area / lines (existing) */}
-                  <path d={`${buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`} fill="url(#areaSumGrad)" className={styles.areaSum} />
-                  <path d={buildPathFromPoints(pointsIos, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineIos} />
-                  <path d={buildPathFromPoints(pointsAndroid, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2} className={styles.lineAndroid} />
-                  <path d={buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} fill="none" strokeWidth={2.5} className={styles.lineSum} />
+                  <path
+                    d={`${buildPathFromPoints(pointsSum, 600, 160, 20, 20, globalMin, globalMax)} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`}
+                    fill="url(#areaSumGrad)"
+                    className={styles.areaSum}
+                  />
+                  <path
+                    d={buildPathFromPoints(
+                      pointsIos,
+                      600,
+                      160,
+                      20,
+                      20,
+                      globalMin,
+                      globalMax,
+                    )}
+                    fill="none"
+                    strokeWidth={2}
+                    className={styles.lineIos}
+                  />
+                  <path
+                    d={buildPathFromPoints(
+                      pointsAndroid,
+                      600,
+                      160,
+                      20,
+                      20,
+                      globalMin,
+                      globalMax,
+                    )}
+                    fill="none"
+                    strokeWidth={2}
+                    className={styles.lineAndroid}
+                  />
+                  <path
+                    d={buildPathFromPoints(
+                      pointsSum,
+                      600,
+                      160,
+                      20,
+                      20,
+                      globalMin,
+                      globalMax,
+                    )}
+                    fill="none"
+                    strokeWidth={2.5}
+                    className={styles.lineSum}
+                  />
 
                   {/* x-axis ticks */}
                   {downloadData.map((d) => {
                     const x = xForTick(toTs(d.date));
                     return (
                       <g key={d.date}>
-                        <line x1={x} x2={x} y1={svgH - 6} y2={svgH - 2} stroke="rgba(0,0,0,0.06)" strokeWidth="1" />
-                        <text x={x} y={svgH + 16} textAnchor="middle" fontSize="11" fill="#666" className={styles.xLabel}>
+                        <line
+                          x1={x}
+                          x2={x}
+                          y1={svgH - 6}
+                          y2={svgH - 2}
+                          stroke="rgba(0,0,0,0.06)"
+                          strokeWidth="1"
+                        />
+                        <text
+                          x={x}
+                          y={svgH + 16}
+                          textAnchor="middle"
+                          fontSize="11"
+                          fill="#666"
+                          className={styles.xLabel}
+                        >
                           {shortLabel(d.date)}
                         </text>
                       </g>
@@ -780,28 +905,64 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                     const x = xForTick(toTs(d.date));
                     const y = yFor(d.sum);
                     return (
-                      <g key={`hit-${d.date}`} onMouseEnter={() => setHoverIdx(i)}>
-                        <rect x={x - 12} y={0} width={24} height={svgH} fill="transparent" />
-                        <circle cx={x} cy={y} r={hoverIdx === i ? 3 : 2} className={styles.pointSum} />
+                      <g
+                        key={`hit-${d.date}`}
+                        onMouseEnter={() => setHoverIdx(i)}
+                      >
+                        <rect
+                          x={x - 12}
+                          y={0}
+                          width={24}
+                          height={svgH}
+                          fill="transparent"
+                        />
+                        <circle
+                          cx={x}
+                          cy={y}
+                          r={hoverIdx === i ? 3 : 2}
+                          className={styles.pointSum}
+                        />
                       </g>
                     );
                   })}
 
-                  {hoverIdx != null && (() => {
-                    const d = downloadData[hoverIdx];
-                    const x = xForTick(toTs(d.date));
-                    const yS = yFor(d.sum);
-                    const yI = yFor(d.ios);
-                    const yA = yFor(d.android);
-                    return (
-                      <g key="focus">
-                        <line x1={x} x2={x} y1={8} y2={svgH - 8} className={styles.focusLine} />
-                        <circle cx={x} cy={yI} r={4} className={styles.dotIos} />
-                        <circle cx={x} cy={yA} r={4} className={styles.dotAndroid} />
-                        <circle cx={x} cy={yS} r={5} className={styles.dotSum} />
-                      </g>
-                    );
-                  })()}
+                  {hoverIdx != null &&
+                    (() => {
+                      const d = downloadData[hoverIdx];
+                      const x = xForTick(toTs(d.date));
+                      const yS = yFor(d.sum);
+                      const yI = yFor(d.ios);
+                      const yA = yFor(d.android);
+                      return (
+                        <g key="focus">
+                          <line
+                            x1={x}
+                            x2={x}
+                            y1={8}
+                            y2={svgH - 8}
+                            className={styles.focusLine}
+                          />
+                          <circle
+                            cx={x}
+                            cy={yI}
+                            r={4}
+                            className={styles.dotIos}
+                          />
+                          <circle
+                            cx={x}
+                            cy={yA}
+                            r={4}
+                            className={styles.dotAndroid}
+                          />
+                          <circle
+                            cx={x}
+                            cy={yS}
+                            r={5}
+                            className={styles.dotSum}
+                          />
+                        </g>
+                      );
+                    })()}
                 </svg>
 
                 {/* tooltip */}
@@ -813,32 +974,60 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
                       top: `${Math.max(0, tip.y - 42)}px`,
                     }}
                   >
-                    <div className={styles.tipDate}>{shortLabel(tip.d.date)}</div>
-                    <div className={styles.tipRow}><span className={styles.swIos} /> iOS&nbsp;<b>{tip.d.ios}</b></div>
-                    <div className={styles.tipRow}><span className={styles.swAndroid} /> Android&nbsp;<b>{tip.d.android}</b></div>
-                    <div className={styles.tipRow}><span className={styles.swSum} /> Total&nbsp;<b>{tip.d.sum}</b></div>
+                    <div className={styles.tipDate}>
+                      {shortLabel(tip.d.date)}
+                    </div>
+                    <div className={styles.tipRow}>
+                      <span className={styles.swIos} /> iOS&nbsp;
+                      <b>{tip.d.ios}</b>
+                    </div>
+                    <div className={styles.tipRow}>
+                      <span className={styles.swAndroid} /> Android&nbsp;
+                      <b>{tip.d.android}</b>
+                    </div>
+                    <div className={styles.tipRow}>
+                      <span className={styles.swSum} /> Total&nbsp;
+                      <b>{tip.d.sum}</b>
+                    </div>
                   </div>
                 )}
               </div>
 
               <div className={styles.statusLegend}>
-                <div className={styles.legendItem}><span className={styles.legendSwatchIos} /> iOS</div>
-                <div className={styles.legendItem}><span className={styles.legendSwatchAndroid} /> Android</div>
-                <div className={styles.legendItem}><span className={styles.legendSwatchSum} /> Total</div>
+                <div className={styles.legendItem}>
+                  <span className={styles.legendSwatchIos} /> iOS
+                </div>
+                <div className={styles.legendItem}>
+                  <span className={styles.legendSwatchAndroid} /> Android
+                </div>
+                <div className={styles.legendItem}>
+                  <span className={styles.legendSwatchSum} /> Total
+                </div>
               </div>
 
               <div className={styles.statusSummary}>
                 <div className={styles.latestLabel}>
-                  Latest ( {shortLabel(downloadData[downloadData.length - 1].date)} )
+                  Latest ({" "}
+                  {shortLabel(downloadData[downloadData.length - 1].date)} )
                 </div>
                 <div className={styles.latestNumbers}>
-                  <div>iOS: <strong>{downloadData[downloadData.length - 1].ios}</strong></div>
-                  <div>Android: <strong>{downloadData[downloadData.length - 1].android}</strong></div>
-                  <div>Total: <strong>{downloadData[downloadData.length - 1].sum}</strong></div>
+                  <div>
+                    iOS:{" "}
+                    <strong>{downloadData[downloadData.length - 1].ios}</strong>
+                  </div>
+                  <div>
+                    Android:{" "}
+                    <strong>
+                      {downloadData[downloadData.length - 1].android}
+                    </strong>
+                  </div>
+                  <div>
+                    Total:{" "}
+                    <strong>{downloadData[downloadData.length - 1].sum}</strong>
+                  </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -857,10 +1046,26 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
         <div className={styles.roadmapWrap}>
           <div className={styles.roadmapTrack} aria-hidden />
           {[
-              { time: "2025 Q4", text: "Launch paid subscriptions · Upgrade scenario-based learning", status: "next" },
-              { time: "2026 Q1", text: "Speed up image boundary segmentation", status: "planned" },
-              { time: "2026 Q2-Q3", text: "Lower CAC by 10% · Advance AI (context memory, natural voices, smarter drills)", status: "planned" },
-              { time: "2026 Q4", text: "Increase marketing budget · Polish UX", status: "planned" },
+            {
+              time: "2025 Q4",
+              text: "Launch paid subscriptions · Upgrade scenario-based learning",
+              status: "next",
+            },
+            {
+              time: "2026 Q1",
+              text: "Speed up image boundary segmentation",
+              status: "planned",
+            },
+            {
+              time: "2026 Q2-Q3",
+              text: "Lower CAC by 10% · Advance AI (context memory, natural voices, smarter drills)",
+              status: "planned",
+            },
+            {
+              time: "2026 Q4",
+              text: "Increase marketing budget · Polish UX",
+              status: "planned",
+            },
           ].map((mile, i) => (
             <motion.article
               key={mile.time}
@@ -924,10 +1129,12 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               className={styles.member}
               variants={zoomIn}
               custom={i}
-              whileHover={{ y: -10, boxShadow: "0 18px 28px rgba(0,0,0,0.12)" }}
             >
               <h3 className={styles.memberName}>{m.name}</h3>
-              <p className={`${styles.memberRole} ${styles.jm}`} style={{ whiteSpace: "pre-line" }}>
+              <p
+                className={`${styles.memberRole} ${styles.jm}`}
+                style={{ whiteSpace: "pre-line" }}
+              >
                 {m.role}
               </p>
               <p className={styles.memberBio}>{m.bio}</p>
@@ -955,18 +1162,35 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
 
         <div className={styles.downloadGrid}>
           {/* Pitch Deck Card */}
-          <motion.article className={`${styles.dCard} ${styles.dCardDisabled}`} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
-          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
+          <motion.article
+            className={`${styles.dCard} ${styles.dCardDisabled}`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <span className={styles.dUpdatedChip} aria-hidden>
+              Updated 2025-08-25
+            </span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Pitch Deck</h4>
               <span className={styles.dMeta}>PDF · English</span>
             </div>
-            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>{OUTDATED_NOTE}</p>
-            <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
+            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>
+              {OUTDATED_NOTE}
+            </p>
+            <p className={styles.dDesc}>
+              Our fundraising deck with product, market, and traction
+              highlights.
+            </p>
             <div className={styles.actions}>
               <button
                 className={`${styles.btn} ${styles.btnPrimary}`}
-                onClick={() => setPreview({ type: "pdf", src: "/Abrody_Pitch_Deck_EN_250825.pdf" })}
+                onClick={() =>
+                  setPreview({
+                    type: "pdf",
+                    src: "/Abrody_Pitch_Deck_EN_250825.pdf",
+                  })
+                }
               >
                 Preview
               </button>
@@ -988,18 +1212,35 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
             </div>
           </motion.article>
 
-          <motion.article className={`${styles.dCard} ${styles.dCardDisabled}`} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}}>
-          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-25</span>
+          <motion.article
+            className={`${styles.dCard} ${styles.dCardDisabled}`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <span className={styles.dUpdatedChip} aria-hidden>
+              Updated 2025-08-25
+            </span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Pitch Deck</h4>
               <span className={styles.dMeta}>PDF · Korean</span>
             </div>
-            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>{OUTDATED_NOTE}</p>
-            <p className={styles.dDesc}>Our fundraising deck with product, market, and traction highlights.</p>
+            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>
+              {OUTDATED_NOTE}
+            </p>
+            <p className={styles.dDesc}>
+              Our fundraising deck with product, market, and traction
+              highlights.
+            </p>
             <div className={styles.actions}>
               <button
                 className={`${styles.btn} ${styles.btnPrimary}`}
-                onClick={() => setPreview({ type: "pdf", src: "/Abrody_Pitch_Deck_KR_250825.pdf" })}
+                onClick={() =>
+                  setPreview({
+                    type: "pdf",
+                    src: "/Abrody_Pitch_Deck_KR_250825.pdf",
+                  })
+                }
               >
                 Preview
               </button>
@@ -1022,18 +1263,32 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </motion.article>
 
           {/* Demo Video Card */}
-          <motion.article className={`${styles.dCard} ${styles.dCardDisabled}`} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.06}}>
-          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-08-04</span>
+          <motion.article
+            className={`${styles.dCard} ${styles.dCardDisabled}`}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ delay: 0.06 }}
+          >
+            <span className={styles.dUpdatedChip} aria-hidden>
+              Updated 2025-08-04
+            </span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>Demo Video</h4>
               <span className={styles.dMeta}>MP4 · English</span>
             </div>
-            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>{OUTDATED_NOTE}</p>
-            <p className={styles.dDesc}>A quick walkthrough of Abrody’s core user flow and features.</p>
+            <p className={`${styles.dDesc} ${styles.dNoteOutdated}`}>
+              {OUTDATED_NOTE}
+            </p>
+            <p className={styles.dDesc}>
+              A quick walkthrough of Abrody’s core user flow and features.
+            </p>
             <div className={styles.actions}>
               <button
                 className={`${styles.btn} ${styles.btnPrimary}`}
-                onClick={() => setPreview({ type: "video", src: "/demoAbrody.mp4" })}
+                onClick={() =>
+                  setPreview({ type: "video", src: "/demoAbrody.mp4" })
+                }
               >
                 Preview
               </button>
@@ -1056,13 +1311,23 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </motion.article>
 
           {/* 1-Pager (EN) Card */}
-          <motion.article className={styles.dCard} initial={{opacity:0,y:20}} whileInView={{opacity:1,y:0}} viewport={{once:true, amount:0.3}} transition={{delay:0.12}}>
-          <span className={styles.dUpdatedChip} aria-hidden>Updated 2025-10-16</span>
+          <motion.article
+            className={styles.dCard}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ delay: 0.12 }}
+          >
+            <span className={styles.dUpdatedChip} aria-hidden>
+              Updated 2025-10-16
+            </span>
             <div className={styles.dHead}>
               <h4 className={styles.dTitle}>1-Pager</h4>
               <span className={styles.dMeta}>PDF · English</span>
             </div>
-            <p className={styles.dDesc}>A one-page overview of Abrody’s mission, product, and traction.</p>
+            <p className={styles.dDesc}>
+              A one-page overview of Abrody’s mission, product, and traction.
+            </p>
             <div className={styles.actions}>
               <a
                 href="/1-pager_EN_251016.pdf"
@@ -1073,48 +1338,64 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
               </a>
             </div>
           </motion.article>
-
         </div>
       </section>
 
-    {/* ── Preview Modal ───────────────────────────── */}
-    {preview && (
-      <motion.div
-        className={styles.modalBackdrop}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        onClick={() => setPreview(null)}
-      >
+      {/* ── Preview Modal ───────────────────────────── */}
+      {preview && (
         <motion.div
-          className={styles.modalBody}
-          initial={{ scale: 0.96, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          onClick={(e) => e.stopPropagation()}
+          className={styles.modalBackdrop}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          onClick={() => setPreview(null)}
         >
-          <button className={styles.modalClose} onClick={() => setPreview(null)}>✕</button>
-          {preview.type === "pdf" ? (
-            <iframe
-              className={styles.previewFrame} 
-              src={preview.src}
-              title="Pitch Deck Preview"
-            />
-          ) : (
-            <video className={styles.previewVideo} src={preview.src} controls playsInline />
-          )}
-          <div className={styles.modalActions}>
-            <a className={`${styles.btn} ${styles.btnPrimary}`} href={preview.src} download>
-              Download
-            </a>
-            <button className={`${styles.btn} ${styles.btnGhost}`} onClick={() => setPreview(null)}>
-              Close
+          <motion.div
+            className={styles.modalBody}
+            initial={{ scale: 0.96, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className={styles.modalClose}
+              onClick={() => setPreview(null)}
+            >
+              ✕
             </button>
-          </div>
+            {preview.type === "pdf" ? (
+              <iframe
+                className={styles.previewFrame}
+                src={preview.src}
+                title="Pitch Deck Preview"
+              />
+            ) : (
+              <video
+                className={styles.previewVideo}
+                src={preview.src}
+                controls
+                playsInline
+              />
+            )}
+            <div className={styles.modalActions}>
+              <a
+                className={`${styles.btn} ${styles.btnPrimary}`}
+                href={preview.src}
+                download
+              >
+                Download
+              </a>
+              <button
+                className={`${styles.btn} ${styles.btnGhost}`}
+                onClick={() => setPreview(null)}
+              >
+                Close
+              </button>
+            </div>
+          </motion.div>
         </motion.div>
-      </motion.div>
-    )}
+      )}
 
-     {/* ── CTA ───────────────────────────────────────── */}
-     <section className={styles.ctaSection}>
+      {/* ── CTA ───────────────────────────────────────── */}
+      <section className={styles.ctaSection}>
         <motion.h2
           className={styles.ctaTitle}
           variants={zoomIn}
@@ -1127,7 +1408,7 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           <a
             href="mailto:tommydoh@abrody.app"
             className={styles.ctaButton}
-            onClick={e => {
+            onClick={(e) => {
               e.preventDefault();
               window.location.href = "mailto:tommydoh@abrody.app";
             }}
@@ -1136,10 +1417,10 @@ function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
           </a>
         </div>
         <p className={styles.ctaNote}>
-          We are currently raising pre‑seed to seed funding. Please reach out if you’d like to chat!
+          We are currently raising pre‑seed to seed funding. Please reach out if
+          you’d like to chat!
         </p>
       </section>
-
     </motion.main>
   );
 }

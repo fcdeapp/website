@@ -1,11 +1,11 @@
 .container {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  }
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: none;
+}
 .jsonBtn {
   margin-right: 0.5rem;
   padding: 0.25rem 0.5rem;
@@ -18,113 +18,253 @@
 .jsonBtn:hover {
   background: #333;
 }
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.addButton {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.addButton:hover {
+  background-color: #005bb5;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  text-align: left;
+}
+.editBtn,
+.delBtn {
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.editBtn {
+  color: #fff;
+  background: var(--site-action);
+}
+.delBtn {
+  background: #e00;
+  color: #fff;
+}
+.editBtn:hover {
+  background: #d49b00;
+}
+.delBtn:hover {
+  background: #c00;
+}
+
+/* Modal */
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: white;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 3px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: grid;
+  gap: 0.75rem;
+}
+.modal h2 {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+.modal label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+.modal input[type="text"],
+.modal input[type="url"],
+.modal input[type="date"],
+.modal textarea,
+.modal select {
+  padding: 0.4rem;
+  margin-top: 0.25rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.checkboxLabel {
+  flex-direction: row;
+  align-items: center;
+}
+.checkboxLabel input {
+  margin-right: 0.5rem;
+}
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.saveBtn {
+  background: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.cancelBtn {
+  background: #aaa;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--site-ink);
+}
+.saveBtn:hover {
+  background: #005bb5;
+}
+.cancelBtn:hover {
+  background: #888;
+}
+
+/* Page composition — typography, alignment and content hierarchy. */
+.container {
+  background: var(--site-paper);
+  color: var(--site-ink);
+  font-family: var(--site-font);
+}
+.container h1 {
+  font-size: 32px;
+  line-height: 1.3;
+  letter-spacing: -0.035em;
+  text-align: left;
+  font-weight: 700;
+}
+.container h2 {
+  font-size: 21px;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+}
+.container
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not(
+    [type="file"]
+  ),
+.container select,
+.container textarea {
+  border: 1px solid var(--site-rule-strong);
+  border-radius: 3px;
+  background: white;
+  min-height: 38px;
+  font-size: 14px;
+  color: var(--site-ink);
+}
+.container table {
+  border-collapse: collapse;
+  font-size: 13px;
+  line-height: 1.6;
+  border-top: 2px solid var(--site-ink);
+}
+.container th {
+  background: var(--site-soft);
+  font-weight: 700;
+  color: var(--site-muted);
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid var(--site-rule);
+}
+.container td {
+  padding: 12px;
+  border-bottom: 1px solid var(--site-rule);
+}
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 26px;
   }
-  .addButton {
-    background-color: #0070f3;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
+  .container th,
+  .container td {
+    padding: 10px;
   }
-  .addButton:hover { background-color: #005bb5; }
-  .table {
-    width: 100%;
-    border-collapse: collapse;
+}
+
+/* Page composition — typography, alignment and content hierarchy. */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 40px 56px;
+}
+.header {
+  text-align: left;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--site-rule);
+  color: var(--site-ink);
+}
+.tabContainer {
+  justify-content: flex-start;
+  gap: 24px;
+  border-bottom: 1px solid var(--site-rule);
+}
+.tabContainer button {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: none;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.tabContainer .activeTab {
+  border-bottom-color: var(--site-ink);
+  color: var(--site-ink);
+}
+.cards {
+  gap: 0;
+  border-top: 1px solid var(--site-rule);
+  border-bottom: 1px solid var(--site-rule);
+}
+.card {
+  border-radius: 0;
+  border: 0;
+  border-right: 1px solid var(--site-rule);
+  padding: 20px 24px;
+  background: white;
+  box-shadow: none;
+}
+.chartCard {
+  border: 0;
+  border-top: 1px solid var(--site-rule);
+  border-radius: 0;
+  background: white;
+  padding: 24px 0;
+}
+.toolbar {
+  border-bottom: 1px solid var(--site-rule);
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 20px 40px;
   }
-  .table th, .table td {
-    border: 1px solid #eee;
-    padding: 0.5rem;
-    text-align: left;
+  .card {
+    padding: 16px;
   }
-  .editBtn, .delBtn {
-    margin-right: 0.5rem;
-    padding: 0.25rem 0.5rem;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  .editBtn { background: #f7b500; color: #fff; }
-  .delBtn { background: #e00; color: #fff; }
-  .editBtn:hover { background: #d49b00; }
-  .delBtn:hover { background: #c00; }
-  
-  /* Modal */
-  .modalBackdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .modal {
-    background: white;
-    padding: 1.5rem;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 6px;
-    max-height: 90vh;
-    overflow-y: auto;
-    display: grid;
-    gap: 0.75rem;
-  }
-  .modal h2 {
-    margin: 0 0 1rem;
-    text-align: center;
-  }
-  .modal label {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.9rem;
-  }
-  .modal input[type="text"],
-  .modal input[type="url"],
-  .modal input[type="date"],
-  .modal textarea,
-  .modal select {
-    padding: 0.4rem;
-    margin-top: 0.25rem;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  .checkboxLabel {
-    flex-direction: row;
-    align-items: center;
-  }
-  .checkboxLabel input {
-    margin-right: 0.5rem;
-  }
-  .modalButtons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  .saveBtn {
-    background: #0070f3;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .cancelBtn {
-    background: #aaa;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .saveBtn:hover { background: #005bb5; }
-  .cancelBtn:hover { background: #888; }
-  
+}

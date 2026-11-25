@@ -1,239 +1,276 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    background-color: #FAFAFA;
-    height: 100vh;
-    overflow-y: auto;
-    position: relative;
-    box-sizing: border-box;
-    margin: 0; 
-    padding: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  background-color: var(--site-soft);
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .fixedHeader {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    padding: 100px 15px 0; 
-    box-sizing: border-box;
-    background-color: transparent;
-    pointer-events: none;
-  }
+.fixedHeader {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 100px 15px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  pointer-events: none;
+}
 
-  .fixedHeaderOut {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-    padding: 0; 
-    box-sizing: border-box;
-    background-color: transparent;
-    pointer-events: none;
-  }
-  
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .logoButton {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    position: relative;
-    pointer-events: auto;
-  }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-    margin: 4px 0 4px 8px;
-    object-fit: contain;
-  }
-  
-  /* Search bar with gradient border */
-  .gradientBorderSearch {
-    border-radius: 25px;
-    padding: 1px;
-    margin: 4px 15px;
-    flex: 1;
-    border: 1px solid transparent;
-  }
-  
-  .searchBar {
-    width: 100%;
-    height: 40px;
-    background-color: #FFF;
-    border-radius: 25px;
-    padding: 0 15px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    pointer-events: auto;
-  }
-  
-  .profileButton {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    margin-right: 15px;
-    pointer-events: auto;
-  }
-  
-  /* Topic row: 필터 버튼, 주제 슬라이더, 주제 리스트 버튼를 한 줄에 배치 */
-  .topicRow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px 15px 0 15px;
-    width: auto;
-    box-sizing: border-box;
-    pointer-events: auto;
-  }  
-  
-  .filterButton {
-    background-color: #fff;
-    border: none;
-    border-radius: 25px;
-    padding: 15px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    color: #120C3A;
-    flex: none;   
-    text-align: center;
-    margin-bottom: 12px;
-    white-space: nowrap;       /* 텍스트 줄바꿈 안 함 */
-    overflow: hidden;          /* 넘치는 텍스트 숨김 */
-    text-overflow: ellipsis; 
-    pointer-events: auto;
-  }
+.fixedHeaderOut {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  pointer-events: none;
+}
 
-  .subjectListButton {
-    background-color: #fff;
-    border: none;
-    border-radius: 25px;
-    padding: 15px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    color: #120C3A;
-    flex: none;   
-    text-align: center;
-    margin-bottom: 12px;
-    margin-right: 15px;
-    white-space: nowrap;       /* 텍스트 줄바꿈 안 함 */
-    overflow: hidden;          /* 넘치는 텍스트 숨김 */
-    text-overflow: ellipsis; 
-    pointer-events: auto;
-  }
-  
-  .topicSliderWrapper {
-    flex: 1;
-    margin: 0 10px;
-    box-sizing: border-box;
-    overflow-x: auto;
-    pointer-events: auto;
-  }  
-  
-  /* Flat list of posts: 2열 반응형 레이아웃 */
-  .flatList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 100px 15px 80px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    box-sizing: border-box;
-  }
-  
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logoButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  pointer-events: auto;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin: 4px 0 4px 8px;
+  object-fit: contain;
+}
+
+/* Search bar with gradient border */
+.gradientBorderSearch {
+  border-radius: 3px;
+  padding: 1px;
+  margin: 4px 15px;
+  flex: 1;
+  border: 1px solid transparent;
+}
+
+.searchBar {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  pointer-events: auto;
+}
+
+.profileButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 15px;
+  pointer-events: auto;
+}
+
+/* Topic row: 필터 버튼, 주제 슬라이더, 주제 리스트 버튼를 한 줄에 배치 */
+.topicRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 15px 0 15px;
+  width: auto;
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+.filterButton {
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--site-ink);
+  flex: none;
+  text-align: center;
+  margin-bottom: 12px;
+  white-space: nowrap; /* 텍스트 줄바꿈 안 함 */
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis;
+  pointer-events: auto;
+}
+
+.subjectListButton {
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--site-ink);
+  flex: none;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-right: 15px;
+  white-space: nowrap; /* 텍스트 줄바꿈 안 함 */
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis;
+  pointer-events: auto;
+}
+
+.topicSliderWrapper {
+  flex: 1;
+  margin: 0 10px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  pointer-events: auto;
+}
+
+/* Flat list of posts: 2열 반응형 레이아웃 */
+.flatList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 100px 15px 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.postContainer {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
   .postContainer {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 48%;
   }
-  
-  @media (min-width: 768px) {
-    .postContainer {
-      width: 48%;
-    }
+}
+
+/* Loading state */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--site-soft);
+  height: 100vh;
+}
+
+.loadingIndicator {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.loadingText {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.lottieAnimation {
+  width: 150px;
+  height: 150px;
+}
+
+/* Ad container */
+.adContainer {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  min-height: 150px;
+}
+
+/* Additional styles for overlays, blur etc. if needed */
+.androidBlur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+}
+
+.blurFull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.gradientMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* 모바일 환경 (화면 너비 768px 이하) */
+@media (max-width: 768px) {
+  .fixedHeader {
+    padding: 100px 15px 0; /* 상단 패딩 100px로 변경 */
   }
-  
-  /* Loading state */
-  .loadingContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FAFAFA;
-    height: 100vh;
+  .topicRow {
+    margin: 30px 15px 0 15px; /* 상단 마진 30px로 변경 */
   }
-  
-  .loadingIndicator {
-    text-align: center;
-    margin-top: 10px;
+}
+
+.container {
+  background: var(--site-paper);
+}
+.fixedHeader {
+  padding: 20px 20px 0;
+}
+.header {
+  justify-content: flex-start;
+}
+.gradientBorderSearch {
+  background: var(--site-paper);
+  border: 1px solid var(--site-rule-strong);
+  padding: 0;
+}
+.searchBar {
+  height: 44px;
+}
+.topicRow {
+  margin-top: 16px;
+  gap: 8px;
+}
+.filterButton,
+.subjectListButton {
+  border: 1px solid var(--site-rule);
+  padding: 10px 14px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .fixedHeader {
+    padding: 12px 8px 0;
   }
-  
-  .loadingText {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-    font-weight: bold;
+  .topicRow {
+    margin-left: 8px;
+    margin-right: 8px;
   }
-  
-  .lottieAnimation {
-    width: 150px;
-    height: 150px;
-  }
-  
-  /* Ad container */
-  .adContainer {
-    width: 100%;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    min-height: 150px;
-  }
-  
-  /* Additional styles for overlays, blur etc. if needed */
-  .androidBlur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-  }
-  
-  .blurFull {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .gradientMask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  /* 모바일 환경 (화면 너비 768px 이하) */
-  @media (max-width: 768px) {
-    .fixedHeader {
-      padding: 100px 15px 0;  /* 상단 패딩 100px로 변경 */
-    }
-    .topicRow {
-      margin: 30px 15px 0 15px; /* 상단 마진 30px로 변경 */
-    }
-  }
+}

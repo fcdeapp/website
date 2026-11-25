@@ -1,0 +1,136 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background: var(--site-paper);
+  border-bottom: 1px solid var(--site-rule);
+}
+.inner {
+  max-width: 1440px;
+  min-height: 64px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.brand {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-decoration: none;
+  color: var(--site-ink);
+}
+.brand span {
+  color: var(--site-accent);
+}
+.links {
+  display: flex;
+  align-items: stretch;
+  gap: 28px;
+  align-self: stretch;
+}
+.links a {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  border-bottom: 2px solid transparent;
+  font-size: 13px;
+  color: var(--site-muted);
+  text-decoration: none;
+}
+.links a:hover,
+.links a[aria-current] {
+  color: var(--site-ink);
+  border-bottom-color: var(--site-ink);
+}
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.actions a {
+  text-decoration: none;
+  color: var(--site-ink);
+}
+.login {
+  padding: 8px 0;
+}
+.login:hover {
+  text-decoration: underline;
+}
+.actions .signup {
+  background: var(--site-action);
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid var(--site-action);
+  border-radius: 3px;
+}
+.actions .signup:hover {
+  background: var(--site-action-hover);
+}
+.textButton,
+.profile,
+.menuButton {
+  font: inherit;
+  background: none;
+  color: var(--site-ink);
+  border: 0;
+  padding: 8px 0;
+}
+.profile {
+  padding: 0;
+  min-width: 32px;
+  min-height: 32px;
+}
+.menuButton {
+  display: none;
+}
+.skip {
+  position: fixed;
+  left: 16px;
+  top: 8px;
+  transform: translateY(-150%);
+  background: white;
+  color: var(--site-ink);
+  padding: 10px;
+  z-index: 1000;
+}
+.skip:focus {
+  transform: none;
+}
+@media (max-width: 768px) {
+  .inner {
+    padding: 0 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    font-size: 23px;
+  }
+  .menuButton {
+    display: block;
+    margin-left: auto;
+  }
+  .actions {
+    margin-left: 0;
+    gap: 14px;
+  }
+  .links {
+    display: none;
+    order: 4;
+    width: 100%;
+    padding: 0 0 12px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .links.open {
+    display: flex;
+  }
+  .links a {
+    padding: 8px 0;
+  }
+}

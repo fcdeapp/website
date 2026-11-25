@@ -3,7 +3,7 @@
   background: #f4f4f2;
   color: #151515;
   padding: 28px;
-  font-family: Arial, "Pretendard", sans-serif;
+  font-family: var(--site-font);
 }
 
 .hiddenFile {
@@ -21,9 +21,9 @@
 .hero > div {
   background: #fff;
   border: 1px solid #deded8;
-  border-radius: 28px;
+  border-radius: 3px;
   padding: 28px;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.06);
+  box-shadow: none;
 }
 
 .kicker {
@@ -39,7 +39,7 @@
   font-size: clamp(34px, 5vw, 72px);
   line-height: 0.95;
   margin: 0 0 16px;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.035em;
 }
 
 .hero p {
@@ -65,9 +65,9 @@
   border: 0;
   background: #191919;
   color: #fff;
-  border-radius: 999px;
+  border-radius: 3px;
   padding: 11px 15px;
-  font-weight: 800;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -98,11 +98,11 @@
   align-self: start;
   background: #fff;
   border: 1px solid #deded8;
-  border-radius: 28px;
+  border-radius: 3px;
   padding: 18px;
   max-height: calc(100vh - 36px);
   overflow: auto;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.05);
+  box-shadow: none;
 }
 
 .controls h2 {
@@ -136,7 +136,7 @@
 
 .numInput span {
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
   color: #444;
 }
 
@@ -156,9 +156,9 @@
 .numInput input[type="number"] {
   width: 100%;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 7px;
-  background: #fafafa;
+  background: var(--site-soft);
 }
 
 .numInput em {
@@ -188,7 +188,7 @@
 .scoreBadge {
   display: inline-flex;
   align-items: center;
-  border-radius: 999px;
+  border-radius: 3px;
   padding: 8px 12px;
   font-size: 12px;
 }
@@ -214,9 +214,9 @@
 .disclaimer {
   background: #fff;
   border: 1px solid #deded8;
-  border-radius: 28px;
+  border-radius: 3px;
   padding: 18px;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.05);
+  box-shadow: none;
 }
 
 .sceneToolbar {
@@ -234,7 +234,7 @@
 
 .sceneViewport {
   height: 560px;
-  border-radius: 22px;
+  border-radius: 3px;
   background: radial-gradient(circle at 50% 35%, #fff, #ededeb);
   border: 1px solid #e3e3de;
   overflow: hidden;
@@ -255,10 +255,11 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(#d8d8d2 1px, transparent 1px),
-    linear-gradient(90deg, #d8d8d2 1px, transparent 1px);
-  background-size: 6px 6px;
-  opacity: 0.55;
+    linear-gradient(rgba(17, 24, 39, 0.11) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 24, 39, 0.11) 1px, transparent 1px);
+  background-size: 10px 10px;
+  border: 1px solid rgba(17, 24, 39, 0.16);
+  transform: translateZ(-1px);
 }
 
 .cavernBox {
@@ -282,13 +283,13 @@
 .moduleBox {
   position: absolute;
   border: 1px solid rgba(0, 0, 0, 0.26);
-  border-radius: 1px;
+  border-radius: 3px;
   background: #d7d7d4;
   transform-style: preserve-3d;
   cursor: pointer;
   color: #111;
   font-size: 2px;
-  font-weight: 900;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -346,7 +347,7 @@
 
 .route {
   position: absolute;
-  border-radius: 999px;
+  border-radius: 3px;
   background: rgba(25, 25, 25, 0.34);
   border: 1px solid rgba(0, 0, 0, 0.4);
   transform-style: preserve-3d;
@@ -394,7 +395,7 @@
 .metricCard b {
   display: block;
   font-size: 28px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.035em;
   margin: 8px 0;
 }
 
@@ -424,7 +425,7 @@
   margin: 0;
   background: #f6f6f4;
   border: 1px solid #e4e4de;
-  border-radius: 18px;
+  border-radius: 3px;
   padding: 14px;
 }
 
@@ -442,7 +443,7 @@
 
 .emptyOpt {
   border: 1px dashed #cfcfc9;
-  border-radius: 18px;
+  border-radius: 3px;
   padding: 18px;
   color: #777;
   margin-top: 14px;
@@ -463,8 +464,8 @@
   align-items: center;
   text-align: left;
   border: 1px solid #e3e3de;
-  background: #fafafa;
-  border-radius: 16px;
+  background: var(--site-soft);
+  border-radius: 3px;
   padding: 12px;
   cursor: pointer;
 }
@@ -510,20 +511,20 @@
   align-items: center;
   border: 1px solid #e4e4de;
   background: #f7f7f4;
-  border-radius: 18px;
+  border-radius: 3px;
   padding: 12px;
 }
 
 .sectionStack b {
   background: #111;
   color: #fff;
-  border-radius: 999px;
+  border-radius: 3px;
   text-align: center;
   padding: 6px 0;
 }
 
 .sectionStack span {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .sectionStack em {
@@ -533,9 +534,8 @@
 
 .auxeticSvg {
   width: 100%;
-  height: 260px;
-  background: #f6f6f4;
-  border-radius: 22px;
+  height: auto;
+  display: block;
 }
 
 .auxeticSvg rect {
@@ -564,7 +564,7 @@
 .timeline div {
   background: #f6f6f4;
   border: 1px solid #e4e4de;
-  border-radius: 18px;
+  border-radius: 3px;
   padding: 14px;
 }
 
@@ -572,14 +572,14 @@
   display: inline-flex;
   background: #111;
   color: #fff;
-  border-radius: 999px;
+  border-radius: 3px;
   padding: 5px 8px;
   margin-bottom: 8px;
 }
 
 .timeline span {
   display: block;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .timeline p {
@@ -602,7 +602,7 @@
 }
 
 .barRow span {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .barRow small {
@@ -615,7 +615,7 @@
 .barRow div {
   height: 12px;
   background: #eee;
-  border-radius: 999px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
@@ -623,7 +623,7 @@
   display: block;
   height: 100%;
   background: #191919;
-  border-radius: 999px;
+  border-radius: 3px;
 }
 
 .exportBar {
@@ -661,10 +661,10 @@
   min-width: min(420px, 100%);
   padding: 24px;
   border: 1px solid rgba(17, 24, 39, 0.12);
-  border-radius: 28px;
+  border-radius: 3px;
   background: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 24px 80px rgba(17, 24, 39, 0.1);
+  backdrop-filter: none;
+  box-shadow: none;
 }
 
 .scoreRing {
@@ -683,20 +683,20 @@
   display: grid;
   place-items: center;
   text-align: center;
-  box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.08);
+  box-shadow: none;
 }
 
 .scoreRing b {
   font-size: 34px;
   line-height: 1;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.035em;
 }
 
 .scoreRing span {
   display: block;
   margin-top: 4px;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.12em;
 }
 
@@ -709,15 +709,15 @@
   margin: 0;
   padding: 13px 14px;
   border: 1px solid rgba(17, 24, 39, 0.1);
-  border-radius: 16px;
+  border-radius: 3px;
   background: rgba(248, 250, 252, 0.78);
 }
 
 .miniStats span {
   display: block;
   font-size: 11px;
-  color: #6b7280;
-  font-weight: 800;
+  color: var(--site-muted);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -742,9 +742,9 @@
   border: 1px solid rgba(17, 24, 39, 0.12);
   background: #fff;
   color: #111827;
-  border-radius: 999px;
+  border-radius: 3px;
   padding: 10px 15px;
-  font-weight: 800;
+  font-weight: 700;
   cursor: pointer;
   transition: 0.18s ease;
 }
@@ -753,13 +753,13 @@
 .heroActions button:hover,
 .sceneToolbar button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.1);
+  box-shadow: none;
 }
 
 .activeTab {
-  background: #111827 !important;
+  background: var(--site-ink) !important;
   color: #fff !important;
-  border-color: #111827 !important;
+  border-color: var(--site-ink) !important;
 }
 
 .grid {
@@ -776,9 +776,9 @@
   overflow: auto;
   padding: 20px;
   border: 1px solid rgba(17, 24, 39, 0.12);
-  border-radius: 24px;
+  border-radius: 3px;
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 24px 70px rgba(17, 24, 39, 0.08);
+  box-shadow: none;
 }
 
 .controlsPanel h2 {
@@ -791,7 +791,7 @@
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #6b7280;
+  color: var(--site-muted);
   border-top: 1px solid rgba(17, 24, 39, 0.08);
   padding-top: 16px;
 }
@@ -808,18 +808,18 @@
   gap: 12px;
   align-items: center;
   font-size: 12px;
-  font-weight: 750;
+  font-weight: 700;
   color: #374151;
 }
 
 .control b {
   font-size: 12px;
-  color: #111827;
+  color: var(--site-ink);
 }
 
 .control input[type="range"] {
   width: 100%;
-  accent-color: #111827;
+  accent-color: var(--site-ink);
 }
 
 .hiddenInput {
@@ -841,9 +841,9 @@
 .sceneWrap {
   padding: 18px;
   border: 1px solid rgba(17, 24, 39, 0.12);
-  border-radius: 26px;
+  border-radius: 3px;
   background: linear-gradient(180deg, #fff, #f8fafc);
-  box-shadow: 0 24px 70px rgba(17, 24, 39, 0.08);
+  box-shadow: none;
 }
 
 .sceneToolbar {
@@ -858,12 +858,12 @@
 .sceneToolbar span {
   font-size: 12px;
   color: #6b7280;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .sceneViewport {
   height: 520px;
-  border-radius: 22px;
+  border-radius: 3px;
   background:
     radial-gradient(circle at 50% 45%, rgba(17, 24, 39, 0.06), transparent 45%),
     linear-gradient(180deg, #f8fafc, #eef2f7);
@@ -1031,13 +1031,13 @@
   align-items: center;
   margin-top: 12px;
   padding: 12px 14px;
-  border-radius: 16px;
-  background: #111827;
+  border-radius: 3px;
+  background: var(--site-ink);
   color: #fff;
 }
 
 .contactStrip span {
-  color: #d1d5db;
+  color: var(--site-rule);
   font-size: 12px;
 }
 
@@ -1045,7 +1045,7 @@
   display: grid;
   gap: 11px;
   padding: 16px;
-  border-radius: 20px;
+  border-radius: 3px;
   border: 1px solid rgba(17, 24, 39, 0.1);
   background: #fff;
 }
@@ -1067,8 +1067,8 @@
 
 .stackRow span {
   font-size: 12px;
-  color: #4b5563;
-  font-weight: 800;
+  color: var(--site-muted);
+  font-weight: 700;
 }
 
 .stackRow b {
@@ -1080,15 +1080,15 @@
   left: 0;
   bottom: 0;
   height: 4px;
-  border-radius: 999px;
-  background: #111827;
+  border-radius: 3px;
+  background: var(--site-ink);
   opacity: 0.85;
 }
 
 .dataTable {
   display: grid;
   border: 1px solid rgba(17, 24, 39, 0.1);
-  border-radius: 18px;
+  border-radius: 3px;
   overflow: hidden;
   background: #fff;
 }
@@ -1108,8 +1108,8 @@
 
 .dataTable span {
   font-size: 12px;
-  color: #6b7280;
-  font-weight: 800;
+  color: var(--site-muted);
+  font-weight: 700;
 }
 
 .dataTable b {
@@ -1119,7 +1119,7 @@
 .dataTable em {
   font-style: normal;
   font-size: 12px;
-  color: #6b7280;
+  color: var(--site-muted);
 }
 
 .auxeticSvg {
@@ -1156,7 +1156,7 @@
   align-items: start;
   padding: 12px 14px;
   border: 1px solid rgba(17, 24, 39, 0.1);
-  border-radius: 16px;
+  border-radius: 3px;
   background: #fff;
 }
 
@@ -1166,17 +1166,17 @@
 }
 
 .materialHead {
-  background: #111827;
+  background: var(--site-ink);
   color: #fff;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .scheduleRow span,
 .materialRow span {
   font-size: 12px;
-  color: #6b7280;
-  font-weight: 800;
+  color: var(--site-muted);
+  font-weight: 700;
 }
 
 .scheduleRow b,
@@ -1188,7 +1188,7 @@
 .materialRow p {
   margin: 0;
   font-size: 12px;
-  color: #4b5563;
+  color: var(--site-muted);
   line-height: 1.55;
 }
 
@@ -1387,5 +1387,97 @@
 
   .timeline {
     grid-template-columns: 1fr;
+  }
+}
+/* Page composition — typography, alignment and content hierarchy. */
+.page {
+  background: var(--site-paper);
+  padding: 28px 32px 48px;
+  font-family: var(--site-font);
+}
+.hero,
+.topbar {
+  border-bottom: 1px solid var(--site-rule);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.hero h1,
+.pageTitle {
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+.heroCopy,
+.heroPanel,
+.hero > div {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+.hero p {
+  font-size: 14px;
+  max-width: 80ch;
+  line-height: 1.75;
+}
+.heroActions {
+  margin-top: 20px;
+}
+.controls,
+.controlsPanel,
+.sidebar {
+  background: var(--site-soft);
+  border: 1px solid var(--site-rule);
+  border-radius: 0;
+  padding: 20px;
+}
+.workspace,
+.panel,
+.panelCard,
+.canvasPanel {
+  border: 1px solid var(--site-rule);
+  border-radius: 0;
+  background: white;
+  box-shadow: none;
+}
+.metricCard,
+.metaItem {
+  border: 0;
+  border-left: 1px solid var(--site-rule);
+  border-radius: 0;
+  background: white;
+  padding: 12px 16px;
+}
+.kicker {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 12px;
+  color: var(--site-muted);
+}
+.secondaryButton,
+.toolButton,
+.heroActions button,
+.sceneToolbar button {
+  border-radius: 3px;
+  min-height: 38px;
+  font-size: 13px;
+}
+@media (max-width: 768px) {
+  .page {
+    padding: 20px 16px 40px;
+  }
+  .hero h1,
+  .pageTitle {
+    font-size: 26px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .controls,
+  .controlsPanel,
+  .sidebar {
+    padding: 16px;
   }
 }

@@ -62,7 +62,7 @@ function buildPathFromPoints(
   padLeft = 20,
   padRight = 20,
   globalMin?: number,
-  globalMax?: number
+  globalMax?: number,
 ) {
   if (!points.length) return "";
 
@@ -90,8 +90,8 @@ function buildPathFromPoints(
     .map(
       (p, i) =>
         `${i === 0 ? "M" : "L"} ${xFor(p.t).toFixed(2)} ${yFor(p.v).toFixed(
-          2
-        )}`
+          2,
+        )}`,
     )
     .join(" ");
 }
@@ -103,7 +103,7 @@ const fadeUp: Variants = {
     y: 0,
     transition: {
       delay: i * 0.08,
-      duration: 0.72,
+      duration: 0.18,
       ease: "easeOut",
     },
   }),
@@ -117,7 +117,7 @@ const zoomIn: Variants = {
     scale: 1,
     transition: {
       delay: i * 0.08,
-      duration: 0.62,
+      duration: 0.18,
       ease: "easeOut",
     },
   }),
@@ -128,17 +128,17 @@ const titleReveal: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.58, ease: "easeOut" },
+    transition: { duration: 0.18, ease: "easeOut" },
   },
 };
 
 const wordReveal: Variants = {
-  hidden: { opacity: 0, y: 14, filter: "blur(5px)" },
+  hidden: { opacity: 0, y: 14, filter: "none" },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
-    transition: { duration: 0.58, ease: "easeOut" },
+    filter: "none",
+    transition: { duration: 0.18, ease: "easeOut" },
   },
 };
 
@@ -152,18 +152,7 @@ const heroParent: Variants = {
   },
 };
 
-const floatOrb: Variants = {
-  initial: { y: 0, rotate: 0 },
-  animate: {
-    y: [-5, 7, -3, 0],
-    rotate: [0, 1.2, -0.7, 0],
-    transition: {
-      duration: 7,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
+const floatOrb: Variants = { initial: {}, animate: {} };
 
 function FeatureCard({
   item,
@@ -191,7 +180,6 @@ function FeatureCard({
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") onToggle(item.id);
       }}
-      whileHover={{ y: -6 }}
     >
       <div className={styles.featureTop}>
         <span className={styles.featureBadge} aria-hidden>
@@ -593,7 +581,6 @@ export default function BusinessPage() {
               className={styles.valueCard}
               variants={fadeUp}
               custom={i}
-              whileHover={{ y: -6 }}
             >
               <span className={styles.valueDot} aria-hidden />
               <h3>{card.title}</h3>
@@ -678,7 +665,6 @@ export default function BusinessPage() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.25 }}
-              whileHover={{ y: -7 }}
             >
               <span className={styles.flowKicker}>{step.kicker}</span>
 
@@ -758,11 +744,7 @@ export default function BusinessPage() {
                         stopColor="#fdebee"
                         stopOpacity="0.65"
                       />
-                      <stop
-                        offset="100%"
-                        stopColor="#ffffff"
-                        stopOpacity="0"
-                      />
+                      <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
                     </linearGradient>
                   </defs>
 
@@ -774,7 +756,7 @@ export default function BusinessPage() {
                       20,
                       20,
                       cpcChartData.cpcMin,
-                      cpcChartData.cpcMax
+                      cpcChartData.cpcMax,
                     )} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`}
                     fill="url(#areaCPCGrad)"
                     className={styles.areaSum}
@@ -788,7 +770,7 @@ export default function BusinessPage() {
                       20,
                       20,
                       cpcChartData.cpcMin,
-                      cpcChartData.cpcMax
+                      cpcChartData.cpcMax,
                     )}
                     fill="none"
                     strokeWidth={2.5}
@@ -860,16 +842,8 @@ export default function BusinessPage() {
                       y1="0"
                       y2="1"
                     >
-                      <stop
-                        offset="0%"
-                        stopColor="#fbe9ec"
-                        stopOpacity="0.7"
-                      />
-                      <stop
-                        offset="100%"
-                        stopColor="#ffffff"
-                        stopOpacity="0"
-                      />
+                      <stop offset="0%" stopColor="#fbe9ec" stopOpacity="0.7" />
+                      <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
                     </linearGradient>
                   </defs>
 
@@ -881,7 +855,7 @@ export default function BusinessPage() {
                       20,
                       20,
                       chartData.globalMin,
-                      chartData.globalMax
+                      chartData.globalMax,
                     )} L ${600 - 20} ${160 - 8} L ${20} ${160 - 8} Z`}
                     fill="url(#areaSumGrad)"
                     className={styles.areaSum}
@@ -895,7 +869,7 @@ export default function BusinessPage() {
                       20,
                       20,
                       chartData.globalMin,
-                      chartData.globalMax
+                      chartData.globalMax,
                     )}
                     fill="none"
                     strokeWidth={2}
@@ -910,7 +884,7 @@ export default function BusinessPage() {
                       20,
                       20,
                       chartData.globalMin,
-                      chartData.globalMax
+                      chartData.globalMax,
                     )}
                     fill="none"
                     strokeWidth={2}
@@ -925,7 +899,7 @@ export default function BusinessPage() {
                       20,
                       20,
                       chartData.globalMin,
-                      chartData.globalMax
+                      chartData.globalMax,
                     )}
                     fill="none"
                     strokeWidth={2.5}
@@ -1032,7 +1006,9 @@ export default function BusinessPage() {
                       top: `${Math.max(0, tip.y - 42)}px`,
                     }}
                   >
-                    <div className={styles.tipDate}>{shortLabel(tip.d.date)}</div>
+                    <div className={styles.tipDate}>
+                      {shortLabel(tip.d.date)}
+                    </div>
                     <div className={styles.tipRow}>
                       <span className={styles.swIos} /> iOS <b>{tip.d.ios}</b>
                     </div>
@@ -1041,8 +1017,7 @@ export default function BusinessPage() {
                       <b>{tip.d.android}</b>
                     </div>
                     <div className={styles.tipRow}>
-                      <span className={styles.swSum} /> Total{" "}
-                      <b>{tip.d.sum}</b>
+                      <span className={styles.swSum} /> Total <b>{tip.d.sum}</b>
                     </div>
                   </div>
                 )}

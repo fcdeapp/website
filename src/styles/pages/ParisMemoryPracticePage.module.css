@@ -1,7 +1,7 @@
 .container {
   min-height: 100vh;
-  background: #f6f8fb;
-  color: #111827;
+  background: var(--site-soft);
+  color: var(--site-ink);
 }
 
 .hero {
@@ -20,9 +20,9 @@
 
 .kicker {
   margin: 0 0 10px;
-  color: #64748b;
+  color: var(--site-muted);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -32,21 +32,21 @@
   font-size: clamp(34px, 5vw, 58px);
   line-height: 1.05;
   letter-spacing: -0.04em;
-  font-weight: 900;
-  color: #0f172a;
+  font-weight: 700;
+  color: var(--site-ink);
 }
 
 .author {
   margin: 12px 0 0;
   color: #334155;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .subtitle {
   max-width: 860px;
   margin: 16px 0 0;
-  color: #475569;
+  color: var(--site-muted);
   line-height: 1.75;
   font-size: 15px;
 }
@@ -55,10 +55,10 @@
   width: 260px;
   flex: 0 0 260px;
   background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 24px;
+  border: 1px solid var(--site-rule);
+  border-radius: 3px;
   padding: 22px;
-  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.06);
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,13 +67,13 @@
 
 .scoreLabel,
 .scoreHint {
-  color: #64748b;
+  color: var(--site-muted);
   font-size: 13px;
   font-weight: 700;
 }
 
 .scoreCard strong {
-  color: #0f172a;
+  color: var(--site-ink);
   font-size: 44px;
   line-height: 1;
   letter-spacing: -0.04em;
@@ -97,10 +97,10 @@
   gap: 14px;
   flex-wrap: wrap;
   background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 22px;
+  border: 1px solid var(--site-rule);
+  border-radius: 3px;
   padding: 14px;
-  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.04);
+  box-shadow: none;
 }
 
 .modeGroup {
@@ -117,18 +117,22 @@
   border: 0;
   cursor: pointer;
   font-family: inherit;
-  transition: transform 0.14s ease, background 0.14s ease, color 0.14s ease, border-color 0.14s ease;
+  transition:
+    transform 0.14s ease,
+    background 0.14s ease,
+    color 0.14s ease,
+    border-color 0.14s ease;
 }
 
 .modeGroup button,
 .navButtons button,
 .actionButtons button {
-  border-radius: 14px;
+  border-radius: 3px;
   background: #f1f5f9;
   color: #334155;
   padding: 11px 15px;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .modeGroup button:hover,
@@ -136,11 +140,11 @@
 .actionButtons button:hover,
 .lineButton:hover,
 .sectionButton:hover {
-  transform: translateY(-1px);
+  transform: none;
 }
 
 .modeGroup .activeButton {
-  background: #0f172a;
+  background: var(--site-ink);
   color: #ffffff;
 }
 
@@ -150,7 +154,7 @@
   gap: 8px;
   color: #334155;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .checkLabel input {
@@ -169,9 +173,9 @@
 .practicePanel,
 .sourcePanel {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 24px;
-  box-shadow: 0 18px 48px rgba(15, 23, 42, 0.05);
+  border: 1px solid var(--site-rule);
+  border-radius: 3px;
+  box-shadow: none;
 }
 
 .sidebar {
@@ -195,7 +199,7 @@
 .panelHeader h2,
 .panelHeaderCompact h2 {
   margin: 0;
-  color: #0f172a;
+  color: var(--site-ink);
   font-size: 22px;
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -208,9 +212,9 @@
 .panelHeaderCompact span,
 .panelKicker {
   margin: 0;
-  color: #64748b;
+  color: var(--site-muted);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .panelKicker {
@@ -226,7 +230,7 @@
 }
 
 .lineGroup {
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--site-rule);
   padding-top: 14px;
 }
 
@@ -238,17 +242,17 @@
 .sectionButton {
   width: 100%;
   text-align: left;
-  background: #f8fafc;
+  background: var(--site-soft);
   color: #334155;
-  border-radius: 14px;
+  border-radius: 3px;
   padding: 11px 12px;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .selectedSection {
-  background: #e2e8f0;
-  color: #0f172a;
+  background: var(--site-rule);
+  color: var(--site-ink);
 }
 
 .lineButtons {
@@ -262,17 +266,17 @@
   min-width: 48px;
   height: 36px;
   padding: 0 10px;
-  border-radius: 12px;
+  border-radius: 3px;
   background: #ffffff;
-  border: 1px solid #cbd5e1;
-  color: #475569;
+  border: 1px solid var(--site-rule);
+  color: var(--site-muted);
   font-size: 13px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .selectedLine {
-  background: #0f172a;
-  border-color: #0f172a;
+  background: var(--site-ink);
+  border-color: var(--site-ink);
   color: #ffffff;
 }
 
@@ -290,9 +294,9 @@
 
 .maskBox {
   margin-bottom: 16px;
-  border-radius: 20px;
-  border: 1px solid #e2e8f0;
-  background: #f8fafc;
+  border-radius: 3px;
+  border: 1px solid var(--site-rule);
+  background: var(--site-soft);
   padding: 16px;
 }
 
@@ -310,17 +314,17 @@
 }
 
 .maskHeader select {
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
+  border: 1px solid var(--site-rule);
+  border-radius: 3px;
   background: #ffffff;
   padding: 9px 12px;
-  color: #0f172a;
-  font-weight: 800;
+  color: var(--site-ink);
+  font-weight: 700;
 }
 
 .maskBox p {
   margin: 0;
-  color: #1f2937;
+  color: var(--site-ink);
   font-size: 17px;
   line-height: 1.9;
   word-break: keep-all;
@@ -332,31 +336,31 @@
   min-height: 260px;
   resize: vertical;
   box-sizing: border-box;
-  border: 1px solid #cbd5e1;
-  border-radius: 20px;
+  border: 1px solid var(--site-rule);
+  border-radius: 3px;
   outline: none;
   padding: 18px;
   background: #ffffff;
-  color: #0f172a;
+  color: var(--site-ink);
   font-family: inherit;
   font-size: 17px;
   line-height: 1.9;
-  box-shadow: inset 0 0 0 1px transparent;
+  box-shadow: none;
 }
 
 .answerInput:focus {
   border-color: #94a3b8;
-  box-shadow: 0 0 0 4px rgba(148, 163, 184, 0.18);
+  box-shadow: none;
 }
 
 .answerPerfect {
   border-color: #0f766e;
-  box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.12);
+  box-shadow: none;
 }
 
 .answerWrong {
   border-color: #b45309;
-  box-shadow: 0 0 0 4px rgba(180, 83, 9, 0.1);
+  box-shadow: none;
 }
 
 .resultBar {
@@ -367,19 +371,19 @@
   gap: 14px;
   flex-wrap: wrap;
   padding: 16px;
-  border-radius: 18px;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  border-radius: 3px;
+  background: var(--site-soft);
+  border: 1px solid var(--site-rule);
 }
 
 .resultBar strong {
   display: block;
   margin-bottom: 4px;
-  color: #0f172a;
+  color: var(--site-ink);
 }
 
 .resultBar span {
-  color: #64748b;
+  color: var(--site-muted);
   font-size: 14px;
 }
 
@@ -392,8 +396,8 @@
 
 .diffBox div {
   min-width: 0;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px;
+  border: 1px solid var(--site-rule);
+  border-radius: 3px;
   background: #ffffff;
   padding: 14px;
 }
@@ -401,15 +405,17 @@
 .diffBox span {
   display: block;
   margin-bottom: 8px;
-  color: #64748b;
+  color: var(--site-muted);
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .diffBox code {
   display: block;
   color: #334155;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    monospace;
   font-size: 13px;
   line-height: 1.7;
   white-space: pre-wrap;
@@ -417,7 +423,7 @@
 }
 
 .diffBox mark {
-  border-radius: 6px;
+  border-radius: 3px;
   background: #fde68a;
   color: #78350f;
   padding: 1px 4px;
@@ -426,10 +432,10 @@
 .answerSheet,
 .sourcePanel pre {
   margin: 16px 0 0;
-  border-radius: 18px;
-  border: 1px solid #e2e8f0;
-  background: #0f172a;
-  color: #e5e7eb;
+  border-radius: 3px;
+  border: 1px solid var(--site-rule);
+  background: var(--site-ink);
+  color: var(--site-rule);
   padding: 18px;
   white-space: pre-wrap;
   word-break: keep-all;
@@ -489,5 +495,49 @@
 
   .answerInput {
     min-height: 220px;
+  }
+}
+/* Page composition — typography, alignment and content hierarchy. */
+.container {
+  background: white;
+  color: var(--site-ink);
+}
+.hero {
+  padding: 32px;
+  border-bottom: 1px solid var(--site-rule);
+  background: white;
+}
+.hero h1 {
+  font-size: 32px;
+  line-height: 1.3;
+}
+.scoreCard {
+  background: white;
+  border: 0;
+  border-left: 1px solid var(--site-rule);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 16px 24px;
+}
+.toolbar {
+  border-bottom: 1px solid var(--site-rule);
+  background: white;
+  border-radius: 0;
+}
+.main {
+  padding: 24px 32px;
+}
+.lineButton,
+.sectionButton {
+  border-radius: 0;
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .hero,
+  .main {
+    padding: 24px 20px;
+  }
+  .hero h1 {
+    font-size: 26px;
   }
 }

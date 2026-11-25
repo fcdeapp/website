@@ -1,164 +1,166 @@
 .friendItem {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    margin-bottom: 8px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    padding: 10px;
-  }
-  
-  .rowContainer {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .nickname {
-    font-size: 16px;
-    color: #120C3A;
-    font-weight: 500;
-    margin-left: 10px;
-  }
-  
-  .expandedContent {
-    padding: 10px;
-    background-color: #fff;
-    margin-top: 10px;
-    border-top: 1px solid #eee;
-  }
-  
-  .infoGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 10px;
-  }
-  
-  .infoBlock {
-    width: 48%;
-    margin-bottom: 16px;
-  }
-  
-  .sectionTitle {
-    font-size: 16px;
-    font-weight: bold;
-    color: #120C3A;
-    margin-bottom: 4px;
-    display: block;
-  }
-  
-  .infoRow {
-    display: flex;
-    align-items: center;
-  }
-  
-  .flagIcon {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    margin-right: 8px;
-    object-fit: cover;
-  }
-  
-  .infoText {
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .languageList {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .languageItem {
-    display: flex;
-    align-items: center;
-    margin-right: 12px;
-    margin-bottom: 8px;
-  }
-  
-  .buttonRow {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 10px;
-  }
-  
-  .button {
-    background-color: #f7f7f7;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    color: #555;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .pendingRequestText {
-    display: block;
-    text-align: center;
-    color: #999;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .mapImageContainer {
-    margin-top: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .mapImage {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  /* Form for deactivation */
-  .formContainer {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .input {
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  .picker {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    background-color: #fff;
-  }
-  
-  .confirmButton {
-    background-color: #120C3A;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  /* Admin buttons */
-  .deactivateButton,
-  .reactivateButton {
-    background-color: #f7f7f7;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    color: #555;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+  padding: 10px;
+}
+
+.rowContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nickname {
+  font-size: 16px;
+  color: var(--site-ink);
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.expandedContent {
+  padding: 10px;
+  background-color: #fff;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.infoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.infoBlock {
+  width: 48%;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--site-ink);
+  margin-bottom: 4px;
+  display: block;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+}
+
+.flagIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+  object-fit: cover;
+}
+
+.infoText {
+  font-size: 14px;
+  color: #555;
+}
+
+.languageList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.languageItem {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  margin-bottom: 8px;
+}
+
+.buttonRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.button {
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  color: #555;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pendingRequestText {
+  display: block;
+  text-align: center;
+  color: #999;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.mapImageContainer {
+  margin-top: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.mapImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Form for deactivation */
+.formContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.picker {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.confirmButton {
+  background-color: var(--site-ink);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Admin buttons */
+.deactivateButton,
+.reactivateButton {
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  color: #555;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}

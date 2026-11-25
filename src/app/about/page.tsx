@@ -19,7 +19,7 @@ const fadeUp: Variants = {
     y: 0,
     transition: {
       delay: i * 0.1,
-      duration: 0.65,
+      duration: 0.18,
       ease: "easeOut",
     },
   }),
@@ -36,12 +36,12 @@ const heroParent: Variants = {
 };
 
 const wordReveal: Variants = {
-  hidden: { opacity: 0, y: 16, filter: "blur(6px)" },
+  hidden: { opacity: 0, y: 16, filter: "none" },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
-    transition: { duration: 0.6, ease: "easeOut" },
+    filter: "none",
+    transition: { duration: 0.18, ease: "easeOut" },
   },
 };
 
@@ -50,22 +50,11 @@ const titleReveal: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.58, ease: "easeOut" },
+    transition: { duration: 0.18, ease: "easeOut" },
   },
 };
 
-const floatOrb: Variants = {
-  initial: { y: 0, rotate: 0 },
-  animate: {
-    y: [-4, 7, -2, 0],
-    rotate: [0, 1.1, -0.6, 0],
-    transition: {
-      duration: 7,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
+const floatOrb: Variants = { initial: {}, animate: {} };
 
 const appScreens = [
   {
@@ -191,8 +180,8 @@ export default function About() {
 
             <motion.p className={styles.heroLead} variants={wordReveal}>
               Abrody helps you build vocabulary from real images, short lessons,
-              and quick practice. Take a photo, save the word, and review it in a
-              way that feels visual and natural.
+              and quick practice. Take a photo, save the word, and review it in
+              a way that feels visual and natural.
             </motion.p>
 
             <motion.div className={styles.heroCtas} variants={wordReveal}>

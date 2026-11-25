@@ -2,6 +2,7 @@
 "use client";
 
 import Head from "next/head";
+import styles from "../../styles/pages/Redirect.module.css";
 import React, { useEffect, useMemo, useState } from "react";
 
 const IOS_APP_URL = "https://apps.apple.com/kr/app/id6743047157";
@@ -18,7 +19,8 @@ function detectOS(): "ios" | "android" | "other" {
   const isiPadOnMac =
     (navigator.platform === "MacIntel" &&
       // @ts-ignore
-      (navigator.maxTouchPoints || 0) > 1) || /ipad/.test(ua);
+      (navigator.maxTouchPoints || 0) > 1) ||
+    /ipad/.test(ua);
 
   if (/iphone|ipod/.test(ua) || isiPadOnMac || /ipad/.test(ua)) return "ios";
   if (/android/.test(ua)) return "android";
@@ -70,41 +72,50 @@ export default function RedirectLanding() {
         </noscript>
       </Head>
 
-      <main style={styles.container}>
-        <section style={styles.card}>
-          <h1 style={styles.title}>앱/웹으로 이동</h1>
-          <p style={styles.lead}>
-            이 페이지는 안전한 랜딩을 위해 자동 이동을 기본으로 사용하지 않습니다.
-            아래에서 원하는 목적지를 선택해 주세요.
+      <main className={styles.container}>
+        <section className={styles.card}>
+          <h1 className={styles.title}>앱/웹으로 이동</h1>
+          <p className={styles.lead}>
+            사용 중인 기기의 앱스토어를 선택하거나 웹에서 Abrody를 살펴보세요.
           </p>
 
-          <div style={styles.buttons}>
-            <a style={styles.primaryBtn} href={IOS_APP_URL} rel="noopener">
+          <div className={styles.buttons}>
+            <a className={styles.primaryBtn} href={IOS_APP_URL} rel="noopener">
               iOS 앱스토어로 이동
             </a>
-            <a style={styles.primaryBtn} href={ANDROID_APP_URL} rel="noopener">
+            <a
+              className={styles.primaryBtn}
+              href={ANDROID_APP_URL}
+              rel="noopener"
+            >
               안드로이드 플레이스토어로 이동
             </a>
-            <a style={styles.secondaryBtn} href={FALLBACK_URL} rel="noopener">
+            <a
+              className={styles.secondaryBtn}
+              href={FALLBACK_URL}
+              rel="noopener"
+            >
               웹페이지로 이동
             </a>
           </div>
 
-          <div style={styles.recoWrap}>
-            <span style={styles.badge}>권장</span>
-            <span style={styles.recoText}>
+          <div className={styles.recoWrap}>
+            <span className={styles.badge}>권장</span>
+            <span className={styles.recoText}>
               현재 기기 기준 추천 대상:{" "}
-              <strong style={{ color: "#0b1220" }}>{labelFor(os)}</strong>{" "}
-              → <code style={styles.code}>{recommendedUrl}</code>
+              <strong style={{ color: "#0b1220" }}>{labelFor(os)}</strong> →{" "}
+              <code className={styles.code}>{recommendedUrl}</code>
             </span>
           </div>
 
-          <details style={styles.details}>
-            <summary style={styles.summary}>자동 이동이 필요하나요?</summary>
-            <p style={styles.note}>
-              URL에 <code style={styles.code}>?auto=1</code> 을 붙이면 자동 이동이
-              실행됩니다. 예){" "}
-              <code style={styles.code}>
+          <details className={styles.details}>
+            <summary className={styles.summary}>
+              자동 이동이 필요하나요?
+            </summary>
+            <p className={styles.note}>
+              URL에 <code className={styles.code}>?auto=1</code> 을 붙이면 자동
+              이동이 실행됩니다. 예){" "}
+              <code className={styles.code}>
                 https://website.fcde.app/redirect?auto=1
               </code>
             </p>
@@ -120,101 +131,3 @@ function labelFor(os: "ios" | "android" | "other") {
   if (os === "android") return "안드로이드 플레이스토어";
   return "웹페이지";
 }
-
-/* ---------- 스타일 ---------- */
-const styles: Record<string, React.CSSProperties> = {
-  container: {
-    minHeight: "100vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    background: "#f7f8fb",
-    padding: "32px 16px",
-    fontFamily:
-      "'Pretendard', 'Noto Sans KR'",
-    color: "#0f172a",
-  },
-  card: {
-    maxWidth: 760,
-    width: "100%",
-    background: "#fff",
-    borderRadius: 14,
-    boxShadow: "0 10px 28px rgba(15,23,42,0.1)",
-    padding: "28px",
-  },
-  title: { margin: 0, fontSize: 24, fontWeight: 800, color: "#0b1220" },
-  lead: {
-    marginTop: 10,
-    marginBottom: 18,
-    color: "#475569",
-    lineHeight: 1.6,
-  },
-  buttons: {
-    display: "flex",
-    gap: 12,
-    justifyContent: "center",
-    flexWrap: "wrap",
-    marginTop: 8,
-    marginBottom: 18,
-  },
-  primaryBtn: {
-    display: "inline-block",
-    padding: "12px 18px",
-    background: "#0b1220",
-    color: "#fff",
-    borderRadius: 10,
-    textDecoration: "none",
-    fontWeight: 700,
-    minWidth: 180,
-    textAlign: "center",
-  },
-  secondaryBtn: {
-    display: "inline-block",
-    padding: "12px 18px",
-    background: "#ffffff",
-    color: "#0b1220",
-    borderRadius: 10,
-    textDecoration: "none",
-    fontWeight: 700,
-    border: "1px solid #e6eef8",
-    minWidth: 160,
-    textAlign: "center",
-  },
-  recoWrap: {
-    marginTop: 6,
-    display: "flex",
-    alignItems: "center",
-    gap: 8,
-    justifyContent: "center",
-    flexWrap: "wrap",
-  },
-  badge: {
-    background: "#e8eefc",
-    color: "#1a3cff",
-    borderRadius: 999,
-    padding: "4px 10px",
-    fontSize: 12,
-    fontWeight: 700,
-  },
-  recoText: { fontSize: 14, color: "#334155" },
-  code: {
-    background: "#f1f5f9",
-    borderRadius: 6,
-    padding: "2px 6px",
-    fontFamily: "'Pretendard', 'Noto Sans KR'",
-    fontSize: 12,
-  },
-  details: { 
-    marginTop: 14 
-  },
-  summary: { 
-    cursor: "pointer", 
-    color: "#0b1220", 
-    fontWeight: 700 
-  },
-  note: { 
-    color: "#64748b", 
-    marginTop: 8, 
-    lineHeight: 1.6 
-  },
-};

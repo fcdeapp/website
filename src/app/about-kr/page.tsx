@@ -34,7 +34,7 @@ const fadeUp: Variants = {
     y: 0,
     transition: {
       delay: i * 0.1,
-      duration: 0.68,
+      duration: 0.18,
       ease: "easeOut",
     },
   }),
@@ -51,30 +51,19 @@ const heroParent: Variants = {
 };
 
 const titleReveal: Variants = {
-  hidden: { opacity: 0, y: 18, filter: "blur(6px)" },
+  hidden: { opacity: 0, y: 18, filter: "none" },
   visible: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
+    filter: "none",
     transition: {
-      duration: 0.62,
+      duration: 0.18,
       ease: "easeOut",
     },
   },
 };
 
-const floatOrb: Variants = {
-  initial: { y: 0, rotate: 0 },
-  animate: {
-    y: [-4, 6, -2, 0],
-    rotate: [0, 1.2, -0.6, 0],
-    transition: {
-      duration: 7,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
+const floatOrb: Variants = { initial: {}, animate: {} };
 
 const quoteVariants: Variants = {
   hidden: { opacity: 0, y: 10, scale: 0.995 },
@@ -97,22 +86,12 @@ const quoteVariants: Variants = {
   },
 };
 
-function FeatureCard({
-  item,
-  index,
-}: {
-  item: FeatureItem;
-  index: number;
-}) {
+function FeatureCard({ item, index }: { item: FeatureItem; index: number }) {
   return (
     <motion.article
       className={styles.diffCard}
       variants={fadeUp}
       custom={index}
-      whileHover={{
-        y: -6,
-        boxShadow: "0 18px 40px rgba(17, 12, 43, 0.12)",
-      }}
     >
       <h3>{item.title}</h3>
       <p>{item.body}</p>
@@ -180,7 +159,7 @@ export default function About() {
         body: "교재 속 예문보다 지금 내 주변에서 본 것들로 학습을 시작해요.",
       },
     ],
-    []
+    [],
   );
 
   const flow = useMemo<FlowItem[]>(
@@ -207,7 +186,7 @@ export default function About() {
         alt: "Abrody 3D-style gyro exploration screen",
       },
     ],
-    []
+    [],
   );
 
   function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
@@ -279,8 +258,8 @@ export default function About() {
             </motion.h1>
 
             <motion.p className={styles.heroLead} variants={titleReveal}>
-              Abrody는 일상에서 본 장면을 단어와 표현으로 바꿔 줍니다.
-              사진을 찍고, 사물을 탐색하고, 짧은 퀴즈로 다시 기억하세요.
+              Abrody는 일상에서 본 장면을 단어와 표현으로 바꿔 줍니다. 사진을
+              찍고, 사물을 탐색하고, 짧은 퀴즈로 다시 기억하세요.
             </motion.p>
 
             <motion.div className={styles.heroCtas} variants={titleReveal}>
@@ -315,9 +294,9 @@ export default function About() {
               보이는 장면이 기억나는 표현이 됩니다
             </h2>
             <p className={styles.sectionLead}>
-              단어는 따로 외울 때보다 실제로 본 장면과 연결될 때 더 오래 남습니다.
-              Abrody는 사진, 시각 탐색, 짧은 복습을 하나의 흐름으로 묶어
-              학습이 더 자연스럽게 이어지도록 돕습니다.
+              단어는 따로 외울 때보다 실제로 본 장면과 연결될 때 더 오래
+              남습니다. Abrody는 사진, 시각 탐색, 짧은 복습을 하나의 흐름으로
+              묶어 학습이 더 자연스럽게 이어지도록 돕습니다.
             </p>
           </motion.div>
 
@@ -352,7 +331,8 @@ export default function About() {
             </h2>
             <p className={styles.sectionLead}>
               Abrody의 학습 흐름은 복잡하지 않습니다. 오늘 본 장면을 사진으로
-              남기고, 단어를 시각적으로 살펴본 뒤, 짧은 퀴즈로 기억을 정리합니다.
+              남기고, 단어를 시각적으로 살펴본 뒤, 짧은 퀴즈로 기억을
+              정리합니다.
             </p>
           </motion.div>
 
@@ -375,10 +355,6 @@ export default function About() {
                 className={styles.flowStep}
                 variants={fadeUp}
                 custom={index}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 16px 36px rgba(10, 16, 69, 0.12)",
-                }}
               >
                 <span className={styles.sectionKicker}>{step.kicker}</span>
 
@@ -410,8 +386,8 @@ export default function About() {
               내 주변의 사물로 배우는 언어
             </h2>
             <p className={styles.sectionLead}>
-              Abrody는 매일 마주치는 사물을 학습의 출발점으로 삼습니다.
-              커피, 노트, 가방, 하늘처럼 익숙한 장면이 단어와 표현으로 이어지고,
+              Abrody는 매일 마주치는 사물을 학습의 출발점으로 삼습니다. 커피,
+              노트, 가방, 하늘처럼 익숙한 장면이 단어와 표현으로 이어지고,
               그렇게 배운 말은 실제 상황에서 더 쉽게 떠오릅니다.
             </p>
 
@@ -438,9 +414,9 @@ export default function About() {
               >
                 <h3>사진 기반 학습</h3>
                 <p>
-                  단어를 먼저 외우고 장면을 상상하는 방식이 아니라, 이미 본 장면에서
-                  단어를 발견합니다. 그래서 학습이 더 가볍고, 기억은 더 구체적으로
-                  남습니다.
+                  단어를 먼저 외우고 장면을 상상하는 방식이 아니라, 이미 본
+                  장면에서 단어를 발견합니다. 그래서 학습이 더 가볍고, 기억은 더
+                  구체적으로 남습니다.
                 </p>
               </motion.div>
             )}
