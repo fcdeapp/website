@@ -111,16 +111,28 @@ export default function QuestionTable({
                     </Link>
                     <small>{q.topic}</small>
                   </td>
-                  <td>{q.points}점</td>
+                  <td>{q.points == null ? "미확인" : `${q.points}점`}</td>
                   <td>
                     {attempts.length ? `${attempts.length}회 풀이` : "미풀이"}
                   </td>
                   <td
                     className={
-                      last?.correct ? s.goodText : last ? s.badText : undefined
+                      last?.ungraded
+                        ? undefined
+                        : last?.correct
+                          ? s.goodText
+                          : last
+                            ? s.badText
+                            : undefined
                     }
                   >
-                    {last ? (last.correct ? "정답" : "오답") : "—"}
+                    {last
+                      ? last.ungraded
+                        ? "채점 보류"
+                        : last.correct
+                          ? "정답"
+                          : "오답"
+                      : "—"}
                   </td>
                   <td>
                     <button

@@ -53,7 +53,7 @@ export default function QuestionBank({ unitId }: { unitId?: string }) {
         (!val("result") ||
           (val("result") === "correct"
             ? last?.correct
-            : last && !last.correct)) &&
+            : last && !last.ungraded && !last.correct)) &&
         (!val("bookmark") || l?.bookmarked) &&
         (!val("due") || due(l)) &&
         (!val("review") || q.reviewFlags.length > 0) &&
@@ -71,11 +71,14 @@ export default function QuestionBank({ unitId }: { unitId?: string }) {
         return (bh.at(-1)?.attemptedAt || "").localeCompare(
           ah.at(-1)?.attemptedAt || "",
         );
-      if (val("sort") === "accuracy")
+      if (val("sort") === "accuracy") {
+        const ag = ah.filter((a) => !a.ungraded),
+          bg = bh.filter((a) => !a.ungraded);
         return (
-          (ah.length ? ah.filter((x) => x.correct).length / ah.length : -1) -
-          (bh.length ? bh.filter((x) => x.correct).length / bh.length : -1)
+          (ag.length ? ag.filter((x) => x.correct).length / ag.length : -1) -
+          (bg.length ? bg.filter((x) => x.correct).length / bg.length : -1)
         );
+      }
       if (val("sort") === "number")
         return a.number - b.number || a.year - b.year;
       return (

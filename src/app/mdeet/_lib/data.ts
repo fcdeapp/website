@@ -1,6 +1,6 @@
 import type { Question, QuestionIndexItem, Unit } from "./types";
 const cache = new Map<string, Promise<Question>>();
-async function json<T>(url: string): Promise<T> {
+export async function json<T>(url: string): Promise<T> {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 20000);
   try {
@@ -27,7 +27,7 @@ export async function loadCatalog() {
   return { questions: index.questions, units: units.units };
 }
 export function loadQuestion(id: string): Promise<Question> {
-  if (!/^mdeet-\d{4}-(biology|chemistry)-\d{2}$/.test(id))
+  if (!/^[a-z][a-z0-9-]{1,100}$/.test(id))
     return Promise.reject(new Error("올바르지 않은 문항 ID입니다."));
   if (cache.has(id)) return cache.get(id)!;
   const promise = json<Question>(`/mdeet/questions/${id}.json`)
@@ -37,8 +37,7 @@ export function loadQuestion(id: string): Promise<Question> {
         q.schemaVersion !== 2 ||
         !q.layout?.length ||
         !q.options?.length ||
-        q.answer < 1 ||
-        q.answer > 5
+        (q.answer !== null && (q.answer < 1 || q.answer > 5))
       )
         throw new Error("문항 형식을 확인할 수 없습니다.");
       return q;

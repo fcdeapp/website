@@ -38,13 +38,15 @@ export default function Practice() {
       (!subject || q.subject === subject) &&
       (!unit || q.unitId === unit) &&
       (!year || String(q.year) === year) &&
-      q.points >= min &&
-      q.points <= max &&
+      (q.points == null
+        ? min === 3 && max === 5
+        : q.points >= min && q.points <= max) &&
       (!state ||
         (state === "unsolved" && !latest.has(q.id)) ||
         (state === "wrong" &&
           latest.has(q.id) &&
-          !latest.get(q.id)!.correct)) &&
+          !latest.get(q.id)!.correct &&
+          !latest.get(q.id)!.ungraded)) &&
       (!bookmarked || store.learning[q.id]?.bookmarked) &&
       (!reviewDue || due(store.learning[q.id])),
   );
@@ -177,8 +179,9 @@ export default function Practice() {
           />
           <Check label="무작위 순서" checked={random} onChange={setRandom} />
           <p className={s.muted}>
-            조건에 맞는 {candidates.length}문항 중{" "}
-            {Math.min(count, candidates.length)}문항을 풉니다.
+            배점 전체 범위에서는 배점 미확인 문항도 포함합니다. 조건에 맞는{" "}
+            {candidates.length}문항 중 {Math.min(count, candidates.length)}
+            문항을 풉니다.
           </p>
           <button
             type="submit"

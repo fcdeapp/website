@@ -17,11 +17,11 @@ export default function Review() {
     const last = attempts.at(-1);
     const learning = store.learning[q.id];
     return tab === "wrong"
-      ? last && !last.correct
+      ? last && !last.ungraded && !last.correct
       : tab === "uncertain"
         ? last?.correct && last.confidence !== "high"
         : tab === "repeat"
-          ? attempts.filter((a) => !a.correct).length >= 2
+          ? attempts.filter((a) => !a.ungraded && !a.correct).length >= 2
           : tab === "due"
             ? due(learning) || learning?.markedForReview
             : !!learning?.bookmarked;

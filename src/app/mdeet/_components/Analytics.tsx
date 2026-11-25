@@ -16,10 +16,14 @@ import {
   questionHref,
 } from "../_lib/constants";
 import s from "../mdeet.module.css";
+import { books, sections, totalKnowledge } from "../_lib/textbook";
 export default function Analytics() {
   const { store, questions, units } = useLearning();
   const [period, setPeriod] = useState<"day" | "week">("day");
-  const attempts = store.attempts;
+  const attempts = useMemo(
+    () => store.attempts.filter((a) => !a.ungraded),
+    [store.attempts],
+  );
   const stats = useMemo(() => summary(attempts), [attempts]);
   const recent = attempts.slice(-20);
   const byId = new Map(questions.map((q) => [q.id, q]));
@@ -63,11 +67,78 @@ export default function Analytics() {
     <>
       <Heading
         title="학습 분석"
-        description="이 브라우저에 저장된 실제 풀이 기록을 집계합니다."
+        description="이 브라우저에 저장된 실제 채점 가능한 풀이 기록을 집계합니다. 정답 미전사 문항은 정답률에서 제외합니다."
       />
+      <section className={s.section}>
+        <h2>교과서와 지식 학습</h2>
+        <p className={s.muted}>
+          이해{" "}
+          {
+            Object.values(store.textbook?.knowledge || {}).filter(
+              (k) => k.understood,
+            ).length
+          }{" "}
+          / {totalKnowledge}개 · 암기{" "}
+          {
+            Object.values(store.textbook?.knowledge || {}).filter(
+              (k) => k.memorized,
+            ).length
+          }{" "}
+          / {totalKnowledge}개 · 지식·카드 복습{" "}
+          {Object.values(store.textbook?.reviews || {}).reduce(
+            (n, r) => n + r.history.length,
+            0,
+          )}
+          회
+        </p>
+        <div className={s.tableScroll}>
+          <table className={s.table}>
+            <thead>
+              <tr>
+                <th>교과서</th>
+                <th>학습 완료</th>
+                <th>읽은 절</th>
+                <th>지식 수</th>
+              </tr>
+            </thead>
+            <tbody>
+              {books.map((b) => (
+                <tr key={b.id}>
+                  <td>
+                    <Link href={`/mdeet/textbook/${b.id}`}>{b.title}</Link>
+                  </td>
+                  <td>
+                    {
+                      sections.filter(
+                        (sec) =>
+                          sec.book === b.id &&
+                          store.textbook?.sections[sec.id]?.completed,
+                      ).length
+                    }{" "}
+                    / {b.sectionCount}
+                  </td>
+                  <td>
+                    {
+                      sections.filter(
+                        (sec) =>
+                          sec.book === b.id &&
+                          store.textbook?.sections[sec.id]?.lastReadAt,
+                      ).length
+                    }
+                  </td>
+                  <td>{b.knowledgeCount}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section className={s.section}>
+        <h2>기출문제 성취도</h2>
+      </section>
       <div className={s.metrics}>
         <Metric
-          label="전체 문항 커버리지"
+          label="채점된 문항 비율"
           value={percent(stats.first.length, questions.length)}
           note={`${stats.first.length}/${questions.length}문항`}
         />

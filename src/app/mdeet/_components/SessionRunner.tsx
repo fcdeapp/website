@@ -248,7 +248,8 @@ function Runner({
     const attempts = store.attempts.filter((a) => a.sessionId === session.id);
     const total = questions
       .filter((q) => session.questionIds.includes(q.id))
-      .reduce((n, q) => n + q.points, 0);
+      .reduce((n, q) => n + (q.points ?? 0), 0);
+    const incomplete = attempts.some((a) => a.ungraded || a.pointsUnknown);
     const earned = attempts.reduce((n, a) => n + a.pointsEarned, 0);
     const totalMs = Object.values(session.durations).reduce((n, x) => n + x, 0);
     const units = [
@@ -272,12 +273,15 @@ function Runner({
           </Link>
         </Heading>
         <div className={s.metrics}>
-          <Metric label="원점수" value={`${earned} / ${total}`} />
+          <Metric
+            label="원점수"
+            value={incomplete ? "채점 자료 미완료" : `${earned} / ${total}`}
+          />
           <Metric
             label="정답률"
             value={percent(
               attempts.filter((a) => a.correct).length,
-              session.questionIds.length,
+              attempts.filter((a) => !a.ungraded).length,
             )}
           />
           <Metric label="학습 시간" value={duration(totalMs)} />
@@ -287,7 +291,8 @@ function Runner({
           />
         </div>
         <p className={s.muted}>
-          실제 배점을 합산한 원점수입니다. 표준점수·백분위는 제공하지 않습니다.
+          배점과 정답이 모두 확인된 세션에만 원점수를 표시합니다. 정답 미전사
+          문항은 정답률에서 제외합니다. 표준점수·백분위는 제공하지 않습니다.
           학습 시간은 화면을 보고 풀이한 시간입니다.
         </p>
         <section className={s.section}>
@@ -297,7 +302,9 @@ function Runner({
               const ids = questions
                 .filter((q) => q.unitId === unit)
                 .map((q) => q.id);
-              const a = attempts.filter((a) => ids.includes(a.questionId));
+              const a = attempts.filter(
+                (a) => !a.ungraded && ids.includes(a.questionId),
+              );
               return (
                 <li key={unit}>
                   <Link href={`/mdeet/library/${unit}`}>
@@ -338,11 +345,23 @@ function Runner({
                       <td>
                         {a.selectedOption || "미응답"} / <Answer id={q.id} />
                       </td>
-                      <td className={a.correct ? s.goodText : s.badText}>
-                        {a.correct ? "정답" : "오답"}
+                      <td
+                        className={
+                          a.ungraded
+                            ? undefined
+                            : a.correct
+                              ? s.goodText
+                              : s.badText
+                        }
+                      >
+                        {a.ungraded ? "채점 보류" : a.correct ? "정답" : "오답"}
                       </td>
                       <td>
-                        {a.pointsEarned}/{q.points}
+                        {a.ungraded
+                          ? "—"
+                          : q.points == null
+                            ? "배점 미확인"
+                            : `${a.pointsEarned}/${q.points}`}
                       </td>
                       <td>
                         {CONFIDENCE[a.confidence]}
@@ -482,13 +501,35 @@ function Runner({
               <p
                 role="status"
                 className={
-                  session.answers[id] === question.answer
-                    ? s.correct
-                    : s.incorrect
+                  !(
+                    question.acceptedAnswers ??
+                    (question.answer == null ? [] : [question.answer])
+                  ).length
+                    ? s.notice
+                    : (
+                          question.acceptedAnswers ??
+                          (question.answer == null ? [] : [question.answer])
+                        ).some((n) => n === session.answers[id])
+                      ? s.correct
+                      : s.incorrect
                 }
               >
-                {session.answers[id] === question.answer ? "정답" : "오답"} ·
-                정답 {question.answer}번
+                {!(
+                  question.acceptedAnswers ??
+                  (question.answer == null ? [] : [question.answer])
+                ).length
+                  ? "채점 보류"
+                  : (
+                        question.acceptedAnswers ??
+                        (question.answer == null ? [] : [question.answer])
+                      ).some((n) => n === session.answers[id])
+                    ? "정답"
+                    : "오답"}{" "}
+                · 정답{" "}
+                {(
+                  question.acceptedAnswers ??
+                  (question.answer == null ? [] : [question.answer])
+                ).join(", ") || "미전사 · 채점 보류"}
               </p>
             )}
           </section>
@@ -547,5 +588,14 @@ function Runner({
 }
 function Answer({ id }: { id: string }) {
   const { question } = useQuestion(id);
-  return <>{question?.answer ?? "…"}</>;
+  return (
+    <>
+      {question
+        ? (
+            question.acceptedAnswers ??
+            (question.answer == null ? [] : [question.answer])
+          ).join(", ") || "미전사"
+        : "…"}
+    </>
+  );
 }

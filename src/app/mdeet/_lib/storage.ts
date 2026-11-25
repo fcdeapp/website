@@ -19,8 +19,7 @@ const int = (v: unknown, min = 0, max = 1e12) =>
 const bool = (v: unknown) => typeof v === "boolean";
 const date = (v: unknown) => str(v, 40) && Number.isFinite(Date.parse(v));
 const optionalDate = (v: unknown) => v === undefined || date(v);
-const qid = (v: unknown) =>
-  str(v, 80) && /^mdeet-\d{4}-(biology|chemistry)-\d{2}$/.test(v);
+const qid = (v: unknown) => str(v, 80) && /^[a-z][a-z0-9-]{1,100}$/.test(v);
 const uid = (v: unknown) => str(v, 100) && v.length > 0;
 const choice = (v: unknown) => int(v, 1, 5);
 const confidence = (v: unknown) =>
@@ -78,8 +77,10 @@ export function parseStore(
         (a.sessionId === undefined || uid(a.sessionId)) &&
         int(a.selectedOption, 0, 5) &&
         bool(a.correct) &&
+        (a.ungraded === undefined || bool(a.ungraded)) &&
+        (a.pointsUnknown === undefined || bool(a.pointsUnknown)) &&
         (a.correct
-          ? choice(a.selectedOption) && int(a.pointsEarned, 3, 5)
+          ? choice(a.selectedOption) && int(a.pointsEarned, 0, 100)
           : a.pointsEarned === 0) &&
         num(a.durationMs, 0, 604800000) &&
         confidence(a.confidence) &&
@@ -125,8 +126,7 @@ export function parseStore(
         Array.isArray(x.questionIds) && x.questionIds.includes(k);
       return (
         (x.examId === undefined ||
-          (str(x.examId, 80) &&
-            /^\d{4}-(biology|chemistry)$/.test(x.examId))) &&
+          (str(x.examId, 80) && /^[a-z0-9][a-z0-9-]{1,100}$/.test(x.examId))) &&
         record(x.answers, member, choice) &&
         record(x.confidence, member, confidence) &&
         record(x.durations, member, (v) => num(v, 0, 604800000)) &&
@@ -149,7 +149,9 @@ export function parseStore(
         str(c.front) &&
         str(c.back) &&
         str(c.notes) &&
-        ["biology", "chemistry"].includes(String(c.subject)) &&
+        ["biology", "chemistry", "physics", "statistics"].includes(
+          String(c.subject),
+        ) &&
         validUnit(c.unitId) &&
         (c.questionId === undefined || validQ(c.questionId)) &&
         date(c.nextReviewAt) &&
@@ -188,6 +190,44 @@ export function parseStore(
     return fail();
   if (s.lastQuestionId !== undefined && !validQ(s.lastQuestionId))
     return fail();
+  if (s.textbook !== undefined) {
+    const t = s.textbook;
+    if (
+      !obj(t) ||
+      (t.lastSectionId !== undefined && !str(t.lastSectionId, 200)) ||
+      !record(
+        t.sections,
+        (k) => str(k, 200),
+        (v) =>
+          obj(v) &&
+          str(v.notes) &&
+          bool(v.completed) &&
+          optionalDate(v.lastReadAt),
+      ) ||
+      !record(
+        t.knowledge,
+        (k) => str(k, 200),
+        (v) => obj(v) && bool(v.understood) && bool(v.memorized),
+      ) ||
+      !record(
+        t.reviews,
+        (k) => str(k, 200),
+        (v) =>
+          obj(v) &&
+          int(v.step, 0, 4) &&
+          date(v.nextReviewAt) &&
+          array(
+            v.history,
+            10000,
+            (h) =>
+              obj(h) &&
+              date(h.at) &&
+              ["again", "hard", "good", "easy"].includes(String(h.rating)),
+          ),
+      )
+    )
+      return fail();
+  }
   const store = s as unknown as Store;
   if (
     !unique(store.attempts) ||

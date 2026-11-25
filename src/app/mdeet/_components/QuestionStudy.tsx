@@ -20,6 +20,7 @@ import { makeAttempt, recordAttempt } from "../_lib/scoring";
 import { prefetchQuestion } from "../_lib/data";
 import type { Attempt, Confidence, Learning } from "../_lib/types";
 import s from "../mdeet.module.css";
+import { sections, sectionHref } from "../_lib/textbook";
 export default function QuestionStudy({ id }: { id: string }) {
   const { questions, store, update } = useLearning();
   const router = useRouter();
@@ -154,7 +155,7 @@ export default function QuestionStudy({ id }: { id: string }) {
     <>
       <Heading
         title={titleOf(question)}
-        description={`${question.unitLabel} · ${question.topic} · ${question.points}점`}
+        description={`${question.unitLabel} · ${question.topic} · ${question.points == null ? "배점 미확인" : `${question.points}점`}`}
       >
         <button
           aria-pressed={learning.bookmarked}
@@ -212,15 +213,32 @@ export default function QuestionStudy({ id }: { id: string }) {
               </button>
             ) : (
               <div
-                className={result.correct ? s.correct : s.incorrect}
+                className={
+                  result.ungraded
+                    ? s.notice
+                    : result.correct
+                      ? s.correct
+                      : s.incorrect
+                }
                 role="status"
               >
                 <strong>
-                  {result.correct ? "정답" : "오답"} · {result.pointsEarned}/
-                  {question.points}점
+                  {result.ungraded
+                    ? "답안 저장 · 정답 미전사로 채점 보류"
+                    : result.correct
+                      ? "정답"
+                      : "오답"}{" "}
+                  ·{" "}
+                  {question.points == null
+                    ? "배점 미확인"
+                    : `${result.pointsEarned}/${question.points}점`}
                 </strong>
                 <p>
-                  선택 {result.selectedOption}번 · 정답 {question.answer}번
+                  선택 {result.selectedOption}번 · 정답{" "}
+                  {(
+                    question.acceptedAnswers ??
+                    (question.answer == null ? [] : [question.answer])
+                  ).join(", ") || "미전사"}
                 </p>
                 <p>
                   {duration(result.durationMs)} ·{" "}
@@ -280,6 +298,19 @@ export default function QuestionStudy({ id }: { id: string }) {
               이 문항으로 암기 카드 만들기
             </Link>
           </section>
+          <section>
+            <h2>관련 개념</h2>
+            {sections
+              .filter((sec) => sec.unitId === question.unitId)
+              .map((sec) => (
+                <p key={sec.id}>
+                  <Link href={sectionHref(sec.id)}>{sec.title}</Link>
+                </p>
+              ))}
+            <p className={s.muted}>
+              같은 단원의 학습 절입니다. 출제 연관성은 검수 전입니다.
+            </p>
+          </section>
           <details>
             <summary>문항 정보 및 검수 상태</summary>
             <p>{question.id}</p>
@@ -325,8 +356,8 @@ export default function QuestionStudy({ id }: { id: string }) {
                 <li key={a.id}>
                   <span>{new Date(a.attemptedAt).toLocaleString("ko-KR")}</span>
                   <span>
-                    {a.correct ? "정답" : "오답"} · {duration(a.durationMs)} ·{" "}
-                    {CONFIDENCE[a.confidence]}
+                    {a.ungraded ? "채점 보류" : a.correct ? "정답" : "오답"} ·{" "}
+                    {duration(a.durationMs)} · {CONFIDENCE[a.confidence]}
                   </span>
                 </li>
               ))}

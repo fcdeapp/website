@@ -11,7 +11,8 @@ export function makeAttempt(
   sessionId?: string,
   wasDue = false,
 ): Attempt {
-  const correct = selectedOption === q.answer;
+  const answers = q.acceptedAnswers ?? (q.answer == null ? [] : [q.answer]);
+  const correct = answers.some((n) => n === selectedOption);
   return {
     id,
     questionId: q.id,
@@ -21,7 +22,9 @@ export function makeAttempt(
     mode,
     sessionId,
     correct,
-    pointsEarned: correct ? q.points : 0,
+    pointsEarned: correct ? (q.points ?? 0) : 0,
+    ungraded: answers.length === 0,
+    pointsUnknown: q.points === null,
     attemptedAt: new Date(now).toISOString(),
     wasDue,
   };
@@ -36,12 +39,9 @@ export function recordAttempt(store: Store, attempt: Attempt): Store {
     attempts: [...store.attempts, saved],
     learning: {
       ...store.learning,
-      [attempt.questionId]: nextReview(
-        previous,
-        attempt.correct,
-        attempt.confidence,
-        at,
-      ),
+      [attempt.questionId]: attempt.ungraded
+        ? { ...previous, lastAttemptAt: attempt.attemptedAt }
+        : nextReview(previous, attempt.correct, attempt.confidence, at),
     },
     lastQuestionId: attempt.questionId,
   };
@@ -53,9 +53,9 @@ export function summary(attempts: Attempt[]) {
   const first = new Map<string, Attempt>();
   const latest = new Map<string, Attempt>();
   const repeats: Attempt[] = [];
-  for (const a of [...attempts].sort((a, b) =>
-    a.attemptedAt.localeCompare(b.attemptedAt),
-  )) {
+  for (const a of attempts
+    .filter((a) => !a.ungraded)
+    .sort((a, b) => a.attemptedAt.localeCompare(b.attemptedAt))) {
     if (!first.has(a.questionId)) first.set(a.questionId, a);
     else repeats.push(a);
     latest.set(a.questionId, a);

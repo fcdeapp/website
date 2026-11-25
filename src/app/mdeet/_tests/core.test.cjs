@@ -49,14 +49,20 @@ const questions = index.questions.map((meta) =>
 const ids = new Set(questions.map((q) => q.id));
 const unitIds = new Set(units.map((u) => u.id));
 const at = Date.parse("2026-11-25T10:00:00Z");
-const q = questions[0];
+const q = questions.find(
+  (q) =>
+    q.answer != null &&
+    q.points != null &&
+    (q.acceptedAnswers?.length ?? 1) === 1,
+);
 const attempt = (id, answer = q.answer, confidence = "high", now = at) =>
   makeAttempt(q, answer, confidence, 12000, "study", id, now);
-test("300 records, 36 units, 10 exams; each exam has 30 questions and 120 points", () => {
-  assert.equal(questions.length, 300);
-  assert.equal(ids.size, 300);
-  assert.equal(units.length, 36);
-  const groups = new Map();
+test("expanded catalog, source exam membership, counts and known totals agree", () => {
+  assert.equal(questions.length, index.count);
+  assert.equal(ids.size, index.count);
+  const exams = JSON.parse(
+    fs.readFileSync(path.join(dataset, "exams.json")),
+  ).exams;
   questions.forEach((q, i) => {
     for (const key of [
       "id",
@@ -73,25 +79,26 @@ test("300 records, 36 units, 10 exams; each exam has 30 questions and 120 points
       q.options.map((o) => o.number),
       [1, 2, 3, 4, 5],
     );
-    assert.ok(q.answer >= 1 && q.answer <= 5);
-    const key = `${q.year}-${q.subject}`;
-    groups.set(key, [...(groups.get(key) || []), q]);
+    assert.ok(q.answer === null || (q.answer >= 1 && q.answer <= 5));
     assert.ok(units.find((u) => u.id === q.unitId)?.questionIds.includes(q.id));
   });
-  assert.equal(groups.size, 10);
-  for (const group of groups.values()) {
-    assert.equal(group.length, 30);
-    assert.equal(
-      group.reduce((n, q) => n + q.points, 0),
-      120,
+  const covered = new Set();
+  for (const exam of exams) {
+    assert.equal(exam.questionIds.length, exam.questionCount);
+    const members = exam.questionIds.map((id) =>
+      questions.find((q) => q.id === id),
     );
-    assert.deepEqual(
-      group.map((q) => q.number).sort((a, b) => a - b),
-      Array.from({ length: 30 }, (_, i) => i + 1),
-    );
+    assert.ok(members.every(Boolean));
+    members.forEach((q) => covered.add(q.id));
+    if (exam.pointsTotal != null)
+      assert.equal(
+        members.reduce((n, q) => n + q.points, 0),
+        exam.pointsTotal,
+      );
   }
+  assert.equal(covered.size, ids.size);
 });
-test("all 792 images and text references resolve; multi-region and image-only choices exist", () => {
+test("all source images and text references resolve; multi-region and image-only choices exist", () => {
   let assets = 0;
   for (const q of questions) {
     const assetIds = new Set(q.assets.map((a) => a.id));
@@ -113,7 +120,8 @@ test("all 792 images and text references resolve; multi-region and image-only ch
           for (const span of item.spans) {
             assert.ok(span.origin.every(Number.isFinite));
             assert.ok(Number.isFinite(span.size));
-            assert.equal(/[\uE000-\uF8FF]/u.test(span.text), false);
+            if (/[\uE000-\uF8FF]/u.test(span.text))
+              assert.ok(q.reviewFlags.length > 0, q.id);
           }
       }
     }
@@ -122,7 +130,7 @@ test("all 792 images and text references resolve; multi-region and image-only ch
       o.textItemIds.forEach((id) => assert.ok(textIds.has(id)));
     }
   }
-  assert.equal(assets, 792);
+  assert.ok(assets > 0);
   assert.equal(
     questions.find((q) => q.id === "mdeet-2023-biology-30").layout.length,
     2,
@@ -135,18 +143,17 @@ test("all 792 images and text references resolve; multi-region and image-only ch
 });
 test("one-based correct, incorrect and unanswered scores use source points", () => {
   for (const q of questions) {
-    assert.equal(
-      makeAttempt(q, q.answer, "high", 1000, "exam", "a", at).pointsEarned,
-      q.points,
-    );
-    assert.equal(
-      makeAttempt(q, 0, "low", 1000, "exam", "b", at).pointsEarned,
-      0,
-    );
-    assert.equal(
-      makeAttempt(q, (q.answer % 5) + 1, "low", 1000, "exam", "c", at).correct,
-      false,
-    );
+    const accepted = q.acceptedAnswers ?? (q.answer == null ? [] : [q.answer]);
+    for (let choice = 0; choice <= 5; choice++) {
+      const a = makeAttempt(q, choice, "high", 1000, "exam", "a", at);
+      assert.equal(a.correct, accepted.includes(choice));
+      assert.equal(a.ungraded, accepted.length === 0);
+      assert.equal(
+        a.pointsEarned,
+        accepted.includes(choice) ? (q.points ?? 0) : 0,
+      );
+      assert.equal(a.pointsUnknown, q.points === null);
+    }
   }
 });
 test("duplicate submission is idempotent and source records stay untouched", () => {
@@ -267,4 +274,126 @@ test("mastery remains unknown for sparse data and is bounded", () => {
   const a = [attempt("1"), attempt("2"), attempt("3")];
   assert.ok(mastery(a, 30, at) >= 0 && mastery(a, 30, at) <= 100);
   assert.ok(mastery(a, 30, at + 30 * 86400000) <= mastery(a, 30, at));
+});
+
+test("untranscribed keys preserve answers without wrong-answer stats or scheduled mistakes", () => {
+  const missing = questions.find(
+    (q) => q.answer === null && !q.acceptedAnswers?.length,
+  );
+  assert.ok(missing);
+  const st = recordAttempt(
+    emptyStore(),
+    makeAttempt(missing, 2, "high", 1000, "study", "pending", at),
+  );
+  assert.equal(st.attempts[0].selectedOption, 2);
+  assert.equal(st.attempts[0].ungraded, true);
+  assert.equal(summary(st.attempts).first.length, 0);
+  assert.equal(st.learning[missing.id].nextReviewAt, undefined);
+  assert.deepEqual(
+    parseStore(JSON.stringify(st), ids, unitIds),
+    JSON.parse(JSON.stringify(st)),
+  );
+});
+test("textbook indices preserve all sections, blocks, knowledge and source cards", () => {
+  const textbook = JSON.parse(
+    fs.readFileSync(path.join(dataset, "textbook/index.json")),
+  );
+  const knowledge = JSON.parse(
+    fs.readFileSync(path.join(dataset, "knowledge/index.json")),
+  );
+  const cards = JSON.parse(
+    fs.readFileSync(path.join(dataset, "flashcards/index.json")),
+  );
+  let knowledgeCount = 0,
+    cardCount = 0,
+    blocks = 0;
+  const blockTypes = new Set();
+  for (const section of textbook.sections) {
+    const body = JSON.parse(
+      fs.readFileSync(path.join(website, "public", section.url)),
+    );
+    assert.equal(body.id, section.id);
+    assert.ok(body.blocks.length);
+    blocks += body.blocks.length;
+    body.blocks.forEach((b) => {
+      assert.ok(["paragraph", "keyFacts", "table"].includes(b.type));
+      blockTypes.add(b.type);
+      if (b.type === "table")
+        b.rows.forEach((row) => assert.equal(row.length, b.headers.length));
+    });
+    const k = knowledge.sections.find((k) => k.id === section.id);
+    assert.ok(k);
+    const items = JSON.parse(
+      fs.readFileSync(path.join(website, "public", k.url)),
+    ).items;
+    assert.equal(items.length, section.knowledgeCount);
+    assert.deepEqual(
+      new Set(items.map((k) => k.id)),
+      new Set(body.knowledgeIds),
+    );
+    knowledgeCount += items.length;
+    const source = cards.sections.find((c) => c.id === section.id);
+    assert.ok(source);
+    const deck = JSON.parse(
+      fs.readFileSync(path.join(website, "public", source.url)),
+    ).cards;
+    cardCount += deck.length;
+    deck.forEach((c) => assert.ok(items.some((k) => k.id === c.knowledgeId)));
+    body.relatedQuestionIds.forEach((id) => assert.ok(ids.has(id)));
+  }
+  assert.equal(knowledgeCount, knowledge.count);
+  assert.equal(cardCount, cards.count);
+  assert.ok(blocks >= textbook.sections.length);
+  assert.equal(blockTypes.size, 3);
+  textbook.books.forEach((b) => {
+    const ch = textbook.chapters.filter((c) => c.book === b.id);
+    assert.deepEqual(
+      ch.map((c) => c.id),
+      b.chapterIds,
+    );
+    assert.equal(
+      ch.reduce((n, c) => n + c.sections.length, 0),
+      b.sectionCount,
+    );
+  });
+});
+test("optional textbook records round-trip alongside existing legacy records", () => {
+  const original = recordAttempt(emptyStore(), attempt("legacy"));
+  const expanded = {
+    ...original,
+    textbook: {
+      lastSectionId: "enzyme/kinetics",
+      sections: {
+        "enzyme/kinetics": {
+          notes: "메모",
+          completed: true,
+          lastReadAt: new Date(at).toISOString(),
+        },
+      },
+      knowledge: {
+        "enzyme--kinetics-k001": { understood: true, memorized: false },
+      },
+      reviews: {
+        "knowledge:enzyme--kinetics-k001": {
+          step: 1,
+          nextReviewAt: new Date(at).toISOString(),
+          history: [{ at: new Date(at).toISOString(), rating: "good" }],
+        },
+      },
+    },
+  };
+  const restored = parseStore(JSON.stringify(expanded), ids, unitIds);
+  assert.deepEqual(
+    restored.attempts,
+    JSON.parse(JSON.stringify(original.attempts)),
+  );
+  assert.deepEqual(restored.textbook, expanded.textbook);
+  assert.throws(() =>
+    parseStore(
+      JSON.stringify({
+        ...expanded,
+        textbook: { ...expanded.textbook, reviews: { bad: { step: -1 } } },
+      }),
+    ),
+  );
 });

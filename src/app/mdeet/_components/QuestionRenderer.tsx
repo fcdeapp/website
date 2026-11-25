@@ -190,8 +190,10 @@ export default function QuestionRenderer({
                 {question.layout.length > 1 ? "부터 · 이어지는 지면 포함" : ""}
               </span>
               <span>
-                {question.points}점 · 문항{" "}
-                {String(question.number).padStart(2, "0")}
+                {question.points == null
+                  ? "배점 미확인"
+                  : `${question.points}점`}{" "}
+                · 문항 {String(question.number).padStart(2, "0")}
               </span>
             </div>
           </div>

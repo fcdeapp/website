@@ -114,7 +114,9 @@ export default function Settings() {
         </p>
         <p className={s.muted}>
           풀이 {store.attempts.length}회 · 세션 {store.sessions.length}개 · 암기
-          카드 {store.cards.length}개 · 일정 {store.plans.length}개
+          카드 {store.cards.length}개 · 일정 {store.plans.length}개 · 교과서
+          기록 {Object.keys(store.textbook?.sections || {}).length}절 · 지식
+          상태 {Object.keys(store.textbook?.knowledge || {}).length}개
         </p>
         <div className={s.actions}>
           <button

@@ -1,5 +1,6 @@
 import type { Attempt } from "./types";
 export function mastery(attempts: Attempt[], total: number, now = Date.now()) {
+  attempts = attempts.filter((a) => !a.ungraded);
   if (attempts.length < 3) return null;
   const latest = new Map<string, Attempt>();
   [...attempts]

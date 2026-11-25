@@ -1,4 +1,9 @@
-export const SUBJECTS = { biology: "생물학", chemistry: "화학" } as const;
+export const SUBJECTS = {
+  biology: "생물학",
+  chemistry: "화학",
+  physics: "과거 물리학",
+  statistics: "과거 통계학",
+} as const;
 export const CONFIDENCE = {
   high: "확실함",
   medium: "애매함",

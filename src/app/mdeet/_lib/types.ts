@@ -26,6 +26,8 @@ export type Attempt = {
   sessionId?: string;
   selectedOption: number;
   correct: boolean;
+  ungraded?: boolean;
+  pointsUnknown?: boolean;
   pointsEarned: number;
   durationMs: number;
   confidence: Confidence;
@@ -96,4 +98,22 @@ export type Store = {
   plans: Plan[];
   settings: Settings;
   lastQuestionId?: string;
+  textbook?: TextbookLearning;
+};
+
+export type TextbookLearning = {
+  lastSectionId?: string;
+  sections: Record<
+    string,
+    { notes: string; completed: boolean; lastReadAt?: string }
+  >;
+  knowledge: Record<string, { understood: boolean; memorized: boolean }>;
+  reviews: Record<
+    string,
+    {
+      step: number;
+      nextReviewAt: string;
+      history: { at: string; rating: CardRating }[];
+    }
+  >;
 };

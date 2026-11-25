@@ -4,7 +4,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { useLearning } from "./Workspace";
 import { Heading, Field } from "./UI";
-import { SUBJECTS } from "../_lib/constants";
+import { exams, findExam, examTitle } from "../_lib/exams";
 import { createSession } from "../_lib/sessions";
 import SessionRunner from "./SessionRunner";
 import s from "../mdeet.module.css";
@@ -12,12 +12,11 @@ export default function Exams({ examId }: { examId?: string }) {
   const { questions, store, update } = useLearning();
   const router = useRouter();
   const params = useSearchParams();
-  const [minutes, setMinutes] = useState(0);
-  const exams = [...new Set(questions.map((q) => `${q.year}-${q.subject}`))]
-    .sort()
-    .reverse();
+  const [minutes, setMinutes] = useState(
+    examId ? (findExam(examId)?.durationMinutes ?? 0) : 0,
+  );
   if (examId) {
-    if (!exams.includes(examId))
+    if (!findExam(examId))
       return (
         <Heading title="시험을 찾을 수 없습니다.">
           <Link href="/mdeet/exams">시험 목록</Link>
@@ -26,7 +25,7 @@ export default function Exams({ examId }: { examId?: string }) {
     const session = params.get("session");
     if (session) {
       const found = store.sessions.find((s) => s.id === session);
-      if (found?.examId !== examId)
+      if (!found?.examId || findExam(found.examId)?.id !== findExam(examId)?.id)
         return (
           <Heading title="이 시험의 세션이 아닙니다.">
             <Link href={`/mdeet/exams/${examId}`}>시험으로 돌아가기</Link>
@@ -34,10 +33,10 @@ export default function Exams({ examId }: { examId?: string }) {
         );
       return <SessionRunner sessionId={session} />;
     }
-    const items = questions
-      .filter((q) => `${q.year}-${q.subject}` === examId)
-      .sort((a, b) => a.number - b.number);
-    const first = items[0];
+    const exam = findExam(examId)!;
+    const items = exam.questionIds
+      .map((id) => questions.find((q) => q.id === id)!)
+      .filter(Boolean);
     const start = () => {
       const x = createSession(
         items.map((q) => q.id),
@@ -50,8 +49,8 @@ export default function Exams({ examId }: { examId?: string }) {
     return (
       <>
         <Heading
-          title={`${first.year}학년도 ${SUBJECTS[first.subject]}`}
-          description={`${items.length}문항 · ${items.reduce((n, q) => n + q.points, 0)}점 만점`}
+          title={examTitle(exam)}
+          description={`${items.length}문항 · ${exam.pointsTotal == null ? "배점 미확인" : `${exam.pointsTotal}점 만점`} · ${exam.answerKeyStatus === "complete" ? "정답 수록" : "정답 미전사 문항 포함"}`}
         />
         <section className={s.section}>
           <h2>응시 설정</h2>
@@ -76,8 +75,9 @@ export default function Exams({ examId }: { examId?: string }) {
               />
             </Field>
             <p className={s.muted}>
-              자료에 공식 시험 시간이 포함되지 않아 직접 설정합니다. 제한 시간은
-              새로고침하거나 다른 화면으로 이동해도 계속됩니다.
+              인덱스의 시험 시간을 기본값으로 사용합니다. 필요하면 변경할 수
+              있습니다. 제한 시간은 새로고침하거나 다른 화면으로 이동해도
+              계속됩니다.
             </p>
             <button type="submit" className={s.primary}>
               시험 시작
@@ -88,7 +88,10 @@ export default function Exams({ examId }: { examId?: string }) {
           <h2>응시 이력</h2>
           <ul className={s.rows}>
             {store.sessions
-              .filter((x) => x.examId === examId)
+              .filter(
+                (x) =>
+                  x.examId && findExam(x.examId)?.id === findExam(examId)?.id,
+              )
               .slice()
               .reverse()
               .map((x) => (
@@ -100,9 +103,9 @@ export default function Exams({ examId }: { examId?: string }) {
                 </li>
               ))}
           </ul>
-          {!store.sessions.some((x) => x.examId === examId) && (
-            <p className={s.muted}>응시 기록이 없습니다.</p>
-          )}
+          {!store.sessions.some(
+            (x) => x.examId && findExam(x.examId)?.id === findExam(examId)?.id,
+          ) && <p className={s.muted}>응시 기록이 없습니다.</p>}
         </section>
       </>
     );
@@ -126,11 +129,11 @@ export default function Exams({ examId }: { examId?: string }) {
             </tr>
           </thead>
           <tbody>
-            {exams.map((id) => {
-              const items = questions.filter(
-                (q) => `${q.year}-${q.subject}` === id,
+            {[...exams].reverse().map((exam) => {
+              const id = exam.id;
+              const sessions = store.sessions.filter(
+                (x) => x.examId && findExam(x.examId)?.id === id,
               );
-              const sessions = store.sessions.filter((x) => x.examId === id);
               const completed = sessions.filter((x) => x.finishedAt);
               const scores = completed.map((x) =>
                 store.attempts
@@ -142,18 +145,23 @@ export default function Exams({ examId }: { examId?: string }) {
                 <tr key={id}>
                   <td>
                     <Link href={`/mdeet/exams/${id}`}>
-                      <strong>
-                        {items[0].year}학년도 {SUBJECTS[items[0].subject]}
-                      </strong>
+                      <strong>{examTitle(exam)}</strong>
                     </Link>
                   </td>
-                  <td>{items.length}</td>
-                  <td>{items.reduce((n, q) => n + q.points, 0)}점</td>
+                  <td>{exam.questionCount}</td>
+                  <td>
+                    {exam.pointsTotal == null
+                      ? "미확인"
+                      : `${exam.pointsTotal}점`}
+                  </td>
                   <td>{completed.length}회</td>
                   <td>
-                    {scores.length
-                      ? `${scores.at(-1)} / ${Math.max(...scores)}점`
-                      : "미응시"}
+                    {exam.pointsTotal == null ||
+                    exam.answerKeyStatus !== "complete"
+                      ? "채점 자료 미완료"
+                      : scores.length
+                        ? `${scores.at(-1)} / ${Math.max(...scores)}점`
+                        : "미응시"}
                   </td>
                   <td>
                     <Link

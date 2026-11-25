@@ -8,6 +8,7 @@ import type { Card, CardRating, Subject } from "../_lib/types";
 import { scheduleCard } from "../_lib/scheduler";
 import { SUBJECTS, questionHref, uid } from "../_lib/constants";
 import s from "../mdeet.module.css";
+import e from "../editorial.module.css";
 export default function Flashcards() {
   const { store, questions, units, update } = useLearning();
   const params = useSearchParams();
@@ -101,6 +102,7 @@ export default function Flashcards() {
         title="암기 카드"
         description="직접 만든 질문과 답을 간격을 두고 복습합니다."
       >
+        <Link href="/mdeet/knowledge?review=1">교과서 지식·카드 복습</Link>
         <button
           className={s.primary}
           onClick={() => {
@@ -215,15 +217,20 @@ export default function Flashcards() {
         </button>
       </div>
       {active && (
-        <section className={s.flashcard}>
+        <section className={e.memorySheet}>
           <p className={s.muted}>
             {SUBJECTS[active.subject]} ·{" "}
             {units.find((u) => u.id === active.unitId)?.label || "단원 미지정"}
           </p>
+          <div className={e.memoryNumber}>
+            {String(
+              store.cards.findIndex((c) => c.id === active.id) + 1,
+            ).padStart(3, "0")}
+          </div>
           <h2>{active.front}</h2>
           {revealed ? (
             <>
-              <div className={s.cardAnswer}>{active.back}</div>
+              <div className={e.memoryAnswer}>{active.back}</div>
               <p>{active.notes}</p>
               <div className={s.actions}>
                 {(

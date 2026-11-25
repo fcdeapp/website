@@ -90,10 +90,12 @@ export default function Library() {
                     <td>
                       {percent(
                         answered.filter((a) => a.correct).length,
-                        answered.length,
+                        answered.filter((a) => !a.ungraded).length,
                       )}
                     </td>
-                    <td>{answered.filter((a) => !a.correct).length}</td>
+                    <td>
+                      {answered.filter((a) => !a.ungraded && !a.correct).length}
+                    </td>
                     <td>
                       {
                         u.questionIds.filter((id) => due(store.learning[id]))

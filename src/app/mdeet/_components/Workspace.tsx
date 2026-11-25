@@ -9,26 +9,12 @@ import React, {
 } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import {
-  Menu,
-  Search,
-  ChevronLeft,
-  BookOpen,
-  LayoutDashboard,
-  Library,
-  ClipboardList,
-  Timer,
-  RotateCcw,
-  Layers,
-  ChartNoAxesCombined,
-  CalendarDays,
-  Settings,
-} from "lucide-react";
 import type { Store, QuestionIndexItem, Unit } from "../_lib/types";
 import { loadCatalog } from "../_lib/data";
 import { emptyStore, parseStore } from "../_lib/storage";
 import { STORAGE_KEY } from "../_lib/constants";
 import s from "../mdeet.module.css";
+import e from "../editorial.module.css";
 type Context = {
   store: Store;
   update: (fn: (store: Store) => Store) => void;
@@ -44,33 +30,32 @@ export function useLearning() {
   if (!c) throw new Error("학습 화면 밖에서 호출되었습니다.");
   return c;
 }
-const nav: { group: string; items: [string, string, typeof Menu][] }[] = [
-  {
-    group: "학습",
-    items: [
-      ["", "학습 홈", LayoutDashboard],
-      ["library", "단원별 학습", Library],
-      ["questions", "문제 은행", BookOpen],
-      ["practice", "맞춤 문제 풀이", ClipboardList],
-      ["exams", "실전 모의고사", Timer],
-    ],
-  },
-  {
-    group: "복습",
-    items: [
-      ["review", "오답 노트", RotateCcw],
-      ["flashcards", "암기 카드", Layers],
-    ],
-  },
-  {
-    group: "관리",
-    items: [
-      ["analytics", "학습 분석", ChartNoAxesCombined],
-      ["calendar", "학습 캘린더", CalendarDays],
-      ["settings", "설정", Settings],
-    ],
-  },
+const nav = [
+  ["textbook", "교과서"],
+  ["knowledge", "지식"],
+  ["questions", "기출문제"],
+  ["review", "복습"],
+  ["analytics", "학습 관리"],
 ];
+const subnav: Record<string, [string, string][]> = {
+  questions: [
+    ["questions", "문제 은행"],
+    ["library", "단원별 문제"],
+    ["practice", "맞춤 풀이"],
+    ["exams", "모의고사"],
+  ],
+  review: [
+    ["review", "오답 노트"],
+    ["flashcards", "암기 카드"],
+    ["knowledge?review=1", "지식 복습"],
+  ],
+  analytics: [
+    ["", "학습 기록부"],
+    ["analytics", "학습 분석"],
+    ["calendar", "학습 계획"],
+    ["settings", "설정"],
+  ],
+};
 export default function Workspace({ children }: { children: React.ReactNode }) {
   const [catalog, setCatalog] = useState<{
     questions: QuestionIndexItem[];
@@ -83,7 +68,6 @@ export default function Workspace({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
   const [storageError, setStorageError] = useState("");
   const blocked = useRef(false);
-  const [collapsed, setCollapsed] = useState(false);
   const [mobile, setMobile] = useState(false);
   const [search, setSearch] = useState("");
   const path = usePathname();
@@ -178,15 +162,19 @@ export default function Workspace({ children }: { children: React.ReactNode }) {
       }
     }
   }, []);
-  const active = nav
-    .flatMap((n) => n.items)
-    .find(([slug]) =>
-      slug ? path.startsWith(`/mdeet/${slug}`) : path === "/mdeet",
-    );
-  const label = active?.[1] || "학습 공간";
+  const group = path.includes("textbook")
+    ? "textbook"
+    : path.includes("knowledge")
+      ? "knowledge"
+      : /\/(questions|library|practice|exams)/.test(path)
+        ? "questions"
+        : /\/(review|flashcards)/.test(path)
+          ? "review"
+          : "analytics";
+  const links = subnav[group];
   return (
     <div
-      className={`${s.workspace} ${collapsed ? s.collapsed : ""}`}
+      className={s.workspace}
       style={
         { "--ui-size": `${store.settings.fontSize}px` } as React.CSSProperties
       }
@@ -195,99 +183,66 @@ export default function Workspace({ children }: { children: React.ReactNode }) {
       <a className={s.skip} href="#mdeet-content">
         학습 본문으로 이동
       </a>
-      {mobile && (
+      <header className={e.globalHeader}>
+        <Link href="/mdeet" className={e.wordmark}>
+          MDEET<span>.</span>
+        </Link>
         <button
-          className={s.scrim}
-          aria-label="탐색 메뉴 닫기"
-          onClick={() => setMobile(false)}
-        />
-      )}
-      <aside
-        className={`${s.sidebar} ${mobile ? s.mobileOpen : ""}`}
-        aria-label="MDEET 탐색"
-      >
-        <div className={s.brand}>
-          <Link href="/mdeet" onClick={() => setMobile(false)}>
-            MDEET<span>기출 학습실</span>
-          </Link>
-          <button
-            className={s.iconButton}
-            title="사이드바 접기"
-            aria-label="사이드바 접기"
-            onClick={() => {
-              setCollapsed(!collapsed);
-              setMobile(false);
-            }}
-          >
-            <ChevronLeft size={17} />
-          </button>
-        </div>
-        <nav>
-          {nav.map((group) => (
-            <div className={s.navGroup} key={group.group}>
-              <p>{group.group}</p>
-              {group.items.map(([slug, title, Icon]) => (
-                <Link
-                  key={slug}
-                  href={`/mdeet${slug ? `/${slug}` : ""}`}
-                  aria-current={active?.[0] === slug ? "page" : undefined}
-                  title={title}
-                  onClick={() => setMobile(false)}
-                >
-                  <Icon size={17} aria-hidden="true" />
-                  <span>{title}</span>
-                </Link>
-              ))}
-            </div>
+          className={e.menuToggle}
+          aria-expanded={mobile}
+          onClick={() => setMobile(!mobile)}
+        >
+          메뉴
+        </button>
+        <nav
+          aria-label="주 메뉴"
+          className={`${e.globalNav} ${mobile ? e.menuOpen : ""}`}
+        >
+          {nav.map(([slug, label]) => (
+            <Link
+              key={slug}
+              href={`/mdeet/${slug}`}
+              aria-current={group === slug ? "page" : undefined}
+              onClick={() => setMobile(false)}
+            >
+              {label}
+            </Link>
           ))}
         </nav>
-        <div className={s.sidebarFoot}>
-          <span>2023–2027학년도</span>
-          <span>
-            {catalog?.questions.length ?? "…"}문항 · 이 브라우저에 저장
-          </span>
-        </div>
-      </aside>
+        <form
+          className={e.search}
+          role="search"
+          onSubmit={(ev) => {
+            ev.preventDefault();
+            router.push(`/mdeet/knowledge?q=${encodeURIComponent(search)}`);
+          }}
+        >
+          <input
+            aria-label="지식 검색"
+            placeholder="지식 검색"
+            value={search}
+            onChange={(ev) => setSearch(ev.target.value)}
+          />
+          <button type="submit">검색</button>
+        </form>
+      </header>
+      {links && (
+        <nav className={e.subnav} aria-label="학습 메뉴">
+          {links.map(([slug, label]) => (
+            <Link
+              key={slug}
+              href={`/mdeet${slug ? `/${slug}` : ""}`}
+              aria-current={
+                path === `/mdeet${slug ? `/${slug}` : ""}` ? "page" : undefined
+              }
+            >
+              {label}
+            </Link>
+          ))}
+        </nav>
+      )}
       <div className={s.mainColumn}>
-        <header className={s.topbar}>
-          <button
-            className={s.iconButton}
-            aria-label="탐색 메뉴 펼치기"
-            onClick={() => {
-              setCollapsed(false);
-              setMobile(!mobile);
-            }}
-          >
-            <Menu size={18} />
-          </button>
-          <nav aria-label="현재 위치">
-            <Link href="/mdeet">학습실</Link>
-            <span>/</span>
-            <span>{label}</span>
-            {path.split("/").filter(Boolean).length > 2 && <span>/ 상세</span>}
-          </nav>
-          <form
-            className={s.globalSearch}
-            role="search"
-            onSubmit={(e) => {
-              e.preventDefault();
-              router.push(`/mdeet/questions?q=${encodeURIComponent(search)}`);
-            }}
-          >
-            <Search size={15} aria-hidden="true" />
-            <input
-              aria-label="문항 통합 검색"
-              placeholder="문항·단원 검색"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
-            <button type="submit">검색</button>
-          </form>
-          <Link className={s.historyLink} href="/mdeet/analytics">
-            학습 기록
-          </Link>
-        </header>
-        <div className={s.content} id="mdeet-content" tabIndex={-1}>
+        <main className={s.content} id="mdeet-content" tabIndex={-1}>
           {error ? (
             <div className={s.empty} role="alert">
               <h1>학습 자료를 불러오지 못했습니다.</h1>
@@ -317,8 +272,13 @@ export default function Workspace({ children }: { children: React.ReactNode }) {
               {children}
             </LearningContext.Provider>
           )}
-        </div>
+        </main>
       </div>
+      <footer className={e.siteFooter}>
+        <Link href="/mdeet">MDEET.</Link>
+        <span>교과서 · 지식 · 기출문제</span>
+        <Link href="/mdeet/settings">학습 기록 및 설정</Link>
+      </footer>
     </div>
   );
 }
