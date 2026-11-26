@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.lower-limb.knee-popliteal.knee-bones",
+  "sceneId": "scene.anatomy.lower-limb.knee-popliteal.knee-bones",
+  "lessonId": "anatomy.lower-limb.knee-popliteal",
+  "triggerBlockId": "anatomy.lower-limb.knee-popliteal.b.2cb59229640d",
+  "primaryStructures": [
+    "FMA24474",
+    "FMA24477",
+    "FMA24486"
+  ],
+  "contextStructures": [
+    "FMA24480"
+  ],
+  "highlightStructures": [
+    "FMA24474",
+    "FMA24477",
+    "FMA24486"
+  ],
+  "modelIds": [
+    "partof:FJ3365",
+    "partof:FJ3387",
+    "partof:FJ3381",
+    "partof:FJ3366"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3365.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3387.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3381.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3366.obj"
+  ],
+  "cameraPosition": [
+    -91.01415,
+    -1678.321051631499,
+    404.48605
+  ],
+  "cameraTarget": [
+    -91.01415,
+    -85.6072,
+    404.48605
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -150.134,
+      -122.727,
+      -25.2799
+    ],
+    "max": [
+      -31.8943,
+      -48.4874,
+      834.252
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "오른쪽 무릎 뼈의 관절면과 무릎뼈 위치",
+  "mappingConfidence": "exact_attachment_ids_bounds_and_hashes_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "십자인대·반달연골의 분리 메시 및 병적 파열을 이 뼈 장면으로 표시하지 않음",
+    "무릎 운동은 별도 애니메이션이 필요"
+  ],
+  "dynamicAnatomyIncluded": false
+}

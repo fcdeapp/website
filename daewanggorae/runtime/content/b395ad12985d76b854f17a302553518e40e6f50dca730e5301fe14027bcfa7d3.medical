@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology",
+  "title": {
+    "ko": "신경과학 및 임상신경학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "neurology.chapter.localization",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/localization/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "neurology.plan.001",
+    "neurology.plan.002",
+    "neurology.plan.003",
+    "neurology.plan.004",
+    "neurology.plan.005",
+    "neurology.plan.006",
+    "neurology.plan.007",
+    "neurology.localization.stroke"
+  ]
+}

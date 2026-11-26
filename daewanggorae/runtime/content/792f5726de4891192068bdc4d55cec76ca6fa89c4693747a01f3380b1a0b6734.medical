@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "nuclear-medicine",
+  "title": {
+    "ko": "핵의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "nuclear-medicine.chapter.imaging",
+      "path": "domains/09-clinical-diagnostics/subjects/nuclear-medicine/chapters/imaging/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "nuclear-medicine.plan.001",
+    "nuclear-medicine.plan.002",
+    "nuclear-medicine.plan.003",
+    "nuclear-medicine.plan.004",
+    "nuclear-medicine.plan.005",
+    "nuclear-medicine.plan.006",
+    "nuclear-medicine.imaging.tracer-kinetics"
+  ]
+}

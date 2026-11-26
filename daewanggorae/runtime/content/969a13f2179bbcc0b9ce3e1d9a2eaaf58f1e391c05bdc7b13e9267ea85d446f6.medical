@@ -1,0 +1,329 @@
+{
+  "id": "diagram.liver-blood-bile-flow",
+  "lessonId": "anatomy.abdomen.liver-segments",
+  "title": "간의 혈액 흐름과 담즙 흐름",
+  "visualizationKind": "original_functional_pathway_diagram",
+  "sourceImageUsed": false,
+  "bloodFlow": [
+    "Portal vein +\nhepatic artery",
+    "Sinusoids",
+    "Central venules",
+    "Hepatic veins",
+    "Inferior vena cava"
+  ],
+  "bileFlow": [
+    "Hepatocytes",
+    "Bile canaliculi",
+    "Intrahepatic\nducts",
+    "Common hepatic\nduct",
+    "Common bile duct",
+    "Duodenum"
+  ],
+  "gallbladderConnection": {
+    "at": "between common hepatic duct and common bile duct",
+    "via": "cystic duct",
+    "direction": "bidirectional"
+  },
+  "limitations": [
+    "정상 기능 경로의 도식이며 실제 길이·거리·분지수·혈류량을 재현하지 않음",
+    "문맥·동맥과 간정맥의 유입·유출 및 담도 경로를 구별하기 위한 자료"
+  ],
+  "nodes": [
+    {
+      "id": "blood-0",
+      "label": "Portal vein +\nhepatic artery",
+      "x": 120,
+      "y": 90,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "blood-1",
+      "label": "Sinusoids",
+      "x": 335,
+      "y": 90,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "blood-2",
+      "label": "Central venules",
+      "x": 550,
+      "y": 90,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "blood-3",
+      "label": "Hepatic veins",
+      "x": 765,
+      "y": 90,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "blood-4",
+      "label": "Inferior vena cava",
+      "x": 980,
+      "y": 90,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "bile-0",
+      "label": "Hepatocytes",
+      "x": 120,
+      "y": 275,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "bile-1",
+      "label": "Bile canaliculi",
+      "x": 335,
+      "y": 275,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "bile-2",
+      "label": "Intrahepatic\nducts",
+      "x": 550,
+      "y": 275,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "bile-3",
+      "label": "Common hepatic\nduct",
+      "x": 765,
+      "y": 275,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "bile-4",
+      "label": "Common bile duct",
+      "x": 980,
+      "y": 275,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "bile-5",
+      "label": "Duodenum",
+      "x": 1195,
+      "y": 275,
+      "width": 185,
+      "height": 80
+    },
+    {
+      "id": "gallbladder",
+      "label": "Gallbladder",
+      "x": 820,
+      "y": 440,
+      "width": 185,
+      "height": 72
+    },
+    {
+      "id": "bile-junction",
+      "label": "",
+      "x": 872.5,
+      "y": 275,
+      "width": 4,
+      "height": 4
+    }
+  ],
+  "edges": [
+    {
+      "id": "blood-0--blood-1",
+      "source": "blood-0",
+      "target": "blood-1",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "blood-1--blood-2",
+      "source": "blood-1",
+      "target": "blood-2",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "blood-2--blood-3",
+      "source": "blood-2",
+      "target": "blood-3",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "blood-3--blood-4",
+      "source": "blood-3",
+      "target": "blood-4",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "bile-0--bile-1",
+      "source": "bile-0",
+      "target": "bile-1",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "bile-1--bile-2",
+      "source": "bile-1",
+      "target": "bile-2",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "bile-2--bile-3",
+      "source": "bile-2",
+      "target": "bile-3",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "bile-4--bile-5",
+      "source": "bile-4",
+      "target": "bile-5",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "bile-3--bile-junction",
+      "source": "bile-3",
+      "target": "bile-junction",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "bile-junction--bile-4",
+      "source": "bile-junction",
+      "target": "bile-4",
+      "label": "",
+      "relation": "directed"
+    },
+    {
+      "id": "bile-junction--gallbladder",
+      "source": "bile-junction",
+      "target": "gallbladder",
+      "label": "Cystic duct",
+      "relation": "bidirectional"
+    }
+  ],
+  "schemaVersion": "2.0.0",
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 1320,
+      "height": 510
+    },
+    "compact": {
+      "canvas": {
+        "width": 600,
+        "height": 1640
+      },
+      "fontSize": 26,
+      "nodes": {
+        "blood-0": {
+          "x": 150,
+          "y": 100,
+          "width": 250,
+          "height": 136
+        },
+        "blood-1": {
+          "x": 150,
+          "y": 340,
+          "width": 250,
+          "height": 136
+        },
+        "blood-2": {
+          "x": 150,
+          "y": 580,
+          "width": 250,
+          "height": 136
+        },
+        "blood-3": {
+          "x": 150,
+          "y": 820,
+          "width": 250,
+          "height": 136
+        },
+        "blood-4": {
+          "x": 150,
+          "y": 1060,
+          "width": 250,
+          "height": 136
+        },
+        "bile-0": {
+          "x": 450,
+          "y": 100,
+          "width": 250,
+          "height": 136
+        },
+        "bile-1": {
+          "x": 450,
+          "y": 340,
+          "width": 250,
+          "height": 136
+        },
+        "bile-2": {
+          "x": 450,
+          "y": 580,
+          "width": 250,
+          "height": 136
+        },
+        "bile-3": {
+          "x": 450,
+          "y": 820,
+          "width": 250,
+          "height": 136
+        },
+        "bile-4": {
+          "x": 450,
+          "y": 1060,
+          "width": 250,
+          "height": 136
+        },
+        "bile-5": {
+          "x": 450,
+          "y": 1300,
+          "width": 250,
+          "height": 136
+        },
+        "gallbladder": {
+          "x": 150,
+          "y": 1540,
+          "width": 250,
+          "height": 136
+        },
+        "bile-junction": {
+          "x": 450,
+          "y": 940,
+          "width": 4,
+          "height": 4
+        }
+      },
+      "edges": {
+        "bile-junction--gallbladder": {
+          "via": [
+            {
+              "x": 300,
+              "y": 940
+            },
+            {
+              "x": 300,
+              "y": 1540
+            }
+          ],
+          "labelPosition": {
+            "x": 200,
+            "y": 1210
+          }
+        }
+      }
+    }
+  }
+}

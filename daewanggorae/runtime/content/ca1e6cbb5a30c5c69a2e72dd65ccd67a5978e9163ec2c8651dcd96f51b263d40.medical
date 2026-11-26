@@ -1,0 +1,23 @@
+{
+  "id": "question.pediatrics.growth.assessment.001",
+  "kind": "original_concept_question",
+  "lessonId": "pediatrics.growth.assessment",
+  "prompt": "성장 백분위는 건강 점수인가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "아니다."
+    },
+    {
+      "id": "B",
+      "text": "그렇다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "기준집단에서의 상대적 위치를 나타낸다.",
+  "optionRationales": {
+    "A": "기준집단에서의 상대적 위치를 나타낸다.",
+    "B": "한 점을 건강 우열로 해석하면 추세와 맥락을 놓친다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.bioenergetics.oxidative-phosphorylation",
+  "subjectId": "biochemistry",
+  "chapterId": "bioenergetics",
+  "title": {
+    "ko": "전자전달계와 산화적 인산화의 결합",
+    "en": "Electron Transport and Oxidative Phosphorylation"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.lo.01",
+      "text": "전자 이동과 양성자 이동을 구분한다."
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.lo.02",
+      "text": "양성자구동력에서 ATP 합성으로의 에너지 전환을 설명한다."
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.lo.03",
+      "text": "억제와 탈결합의 실험적 결과를 비교한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.f782f7b81912",
+      "type": "heading",
+      "level": 2,
+      "text": "산화환원 에너지를 막에 저장한다"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.d8ce3a185d0e",
+      "type": "paragraph",
+      "markdown": "산화적 인산화(oxidative phosphorylation)는 환원된 전자운반체의 전자를 산소에 전달하면서 방출되는 에너지를 막의 전기화학 기울기로 바꾸고, 그 기울기를 이용하여 ATP를 합성하는 과정이다. 전자전달계와 ATP synthase는 미토콘드리아 안쪽막에 배치되어 있다. 안쪽막이 작은 이온에 대해 무차별적으로 투과성이면 저장된 에너지가 빠르게 흩어지므로 막의 장벽 성질과 선택적 수송체가 필수적이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.6c53258e11a5",
+      "type": "paragraph",
+      "markdown": "NADH가 산화되어 NAD+로 돌아가면 TCA와 여러 산화 경로에서 보조인자를 재사용할 수 있다. 이 과정에서 ATP 합성은 ADP와 무기인산 공급, 산소와 기질, 막전위 및 수송체에 의해 연결된다. 세포가 산소를 소비한다는 사실과 그 산소 소비가 모두 ATP 생성에 효율적으로 결합되었다는 사실은 다르다. 전자 흐름, 양성자 누출과 다른 산소 소비 경로를 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.0c3f3725cf76",
+      "type": "heading",
+      "level": 2,
+      "text": "전자 운반체의 순서"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.c410b22fdda9",
+      "type": "paragraph",
+      "markdown": "복합체 I은 NADH에서 전자를 받아 FMN과 철-황 중심 등을 통해 ubiquinone으로 전달한다. 이 과정은 기질 쪽에서 막사이공간 쪽으로의 양성자 이동과 결합된다. Ubiquinone은 지용성 운반체로 안쪽막에서 움직이며 여러 전자 공급 경로를 모은다. 반면 cytochrome c는 막사이공간 쪽에서 복합체 III와 IV 사이의 전자를 전달하는 단백질이다. 두 이동성 운반체의 위치와 화학적 성질은 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.de189f7904af",
+      "type": "paragraph",
+      "markdown": "복합체 II는 succinate dehydrogenase 반응에서 얻은 전자를 효소 결합 FAD와 철-황 중심 등을 거쳐 ubiquinone에 공급한다. 복합체 II 자체는 복합체 I과 같은 양성자 펌프를 수행하지 않는다. 따라서 전자가 복합체 I을 거쳐 들어오는지, 이를 건너뛰어 Q에 도달하는지에 따라 저장할 수 있는 양성자 기울기의 양이 달라진다. ATP 환산값이 NADH와 succinate 계통에서 다른 근거다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.60f3d3f9735f",
+      "type": "paragraph",
+      "markdown": "복합체 III는 Q cycle을 포함한 전자 전달을 통해 cytochrome c를 환원하고 막을 사이에 둔 양성자 분포에 기여한다. 복합체 IV는 전달받은 전자를 최종적으로 산소에 제공하여 물을 만들고 양성자 이동과도 결합한다. 산소는 경로 전체에서 모든 효소가 직접 나누어 사용하는 반응물이라기보다 최종 전자 수용체다. 마지막 전자 수용이 막히면 앞쪽 운반체의 산화환원 상태와 다른 대사 반응까지 영향을 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.f050c856cbbc",
+      "type": "heading",
+      "level": 2,
+      "text": "양성자구동력의 두 성분"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.5e9ced8fd5de",
+      "type": "paragraph",
+      "markdown": "양성자구동력(proton-motive force)은 막을 사이에 둔 전위차와 pH 차이에 의한 에너지 성분을 포함한다. 안쪽막 바깥쪽에 양성자가 축적되면 기질은 상대적으로 음성이고 덜 산성인 상태를 유지한다. 양성자가 기질로 돌아오려는 경향에는 전기적 힘과 농도차가 함께 기여한다. 막전위만 측정하거나 pH만 측정하면 전체 에너지 저장의 한 성분만 본 것이 될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.60b6901d4727",
+      "type": "paragraph",
+      "markdown": "양성자 한 몰의 이동 자유에너지는 이동 방향에 맞춘 화학퍼텐셜 항과 전기적 항의 합으로 표현한다. 화학적 성분에는 RT ln(H+의 농도비), 전기적 성분에는 F와 전위차가 들어간다. 부호를 정할 때 어느 쪽을 출발점과 도착점으로 두었는지 먼저 명시해야 한다. 같은 물리적 현상을 막전위와 ΔpH의 정의를 바꾸어 표현하면 식의 부호는 달라질 수 있지만 예측되는 이동 방향과 에너지 보존은 같아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.51d4efd43db6",
+      "type": "heading",
+      "level": 2,
+      "text": "ATP synthase와 회전 촉매"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.acf29fd68bec",
+      "type": "paragraph",
+      "markdown": "ATP synthase의 막 부분 F0는 양성자 흐름과 회전을 연결하고, F1 부분은 ADP와 무기인산에서 ATP를 형성하는 촉매 부위를 가진다. 회전은 촉매 부위의 형태를 바꾸어 기질 결합, ATP 형성과 방출을 순환시킨다. 에너지를 단순히 ADP와 인산을 서로 밀어 붙이는 힘으로만 이해하기보다 단백질의 결합 상태와 생성물 방출을 포함한 촉매 주기에 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.42b722a7d1b1",
+      "type": "paragraph",
+      "markdown": "ATP를 세포질에 공급하려면 기질에서 만든 ATP와 바깥의 ADP를 교환하고 무기인산도 들여와야 한다. Adenine nucleotide translocase와 인산 수송은 막의 전기화학 조건과 연결되어 전체 비용에 영향을 준다. 이 때문에 회전 고리의 양성자 수만으로 세포질에서 얻는 ATP 수율을 완전히 계산하지 않는다. P/O 비는 사용한 정의와 가정, 전자 진입 경로 및 누출과 수송 비용을 포함한 근사량이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.60e3467ec945",
+      "type": "heading",
+      "level": 2,
+      "text": "수요가 호흡을 조절한다"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.f82d25639f8d",
+      "type": "paragraph",
+      "markdown": "ADP가 충분히 공급되면 ATP synthase를 통한 양성자 회수가 증가하고, 전자전달계가 추가 기울기를 만드는 데 필요한 역학적 저항이 줄어 산소 소비가 증가할 수 있다. 반대로 ATP 수요가 낮고 ADP가 제한되면 기울기가 높아져 전자 흐름이 감소하는 방향으로 조절된다. 이를 기질과 산소가 충분한 실험 조건에서 호흡 조절로 관찰할 수 있다. 실제 세포에서는 Ca2+ 신호와 기질 공급, 수송 및 전사 변화도 수요에 반응한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.94fad2a5f15a",
+      "type": "paragraph",
+      "markdown": "미토콘드리아 기능은 산소 소비량 하나로 판단하지 않는다. 높은 소비가 효율적인 ATP 생산을 뜻할 수도 있지만 탈결합과 누출 때문일 수도 있다. 낮은 소비는 복합체 손상 외에 기질 부족이나 적은 ATP 수요, 수송 제한으로도 생긴다. 실험에서는 기초 호흡과 ATP 합성에 연결된 호흡, 누출과 최대 반응 등을 구분하고 세포 수와 생존, 정규화 방법을 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.a5d7a71e25d9",
+      "type": "heading",
+      "level": 2,
+      "text": "억제와 탈결합의 차이"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.d453cf383f19",
+      "type": "paragraph",
+      "markdown": "전자전달을 직접 차단하면 차단점보다 앞쪽 운반체가 상대적으로 환원되고 뒤쪽은 산화되는 양상이 가능하다. 산소 소비와 ATP 형성이 감소하며 NADH 산화의 제약이 TCA와 다른 대사 흐름으로 이어진다. ATP synthase를 억제하면 양성자 회수의 주요 경로가 막혀 기울기가 올라가고, 결합된 전자 흐름도 제한될 수 있다. 두 억제는 모두 ATP를 줄이지만 일차 표적과 산화환원 변화가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.2c74352568e4",
+      "type": "paragraph",
+      "markdown": "탈결합(uncoupling)은 전자전달이 만든 기울기가 ATP 합성 외의 경로로 소실되는 경우다. 적절한 기질과 산소가 있으면 전자 흐름과 산소 소비가 증가할 수 있지만 ATP 생산 효율은 낮아지고 열 발생이 커진다. 기질과 호흡계의 최대 능력, 세포 손상에 따라 실제 결과는 제한된다. 갈색지방의 UCP1은 조절된 열발생의 대표 사례이며 무제한적인 누출과 동일한 생리 상태가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.e93238ef3a35",
+      "type": "heading",
+      "level": 2,
+      "text": "활성산소와 세포 운명"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.4869c52f19ae",
+      "type": "paragraph",
+      "markdown": "전자전달 중 일부 전자가 산소에 불완전하게 전달되면 superoxide 등 활성산소가 형성될 수 있다. 항산화 효소와 환원계는 이를 처리하며, 낮은 수준의 산화환원 신호와 과도한 손상은 구분해야 한다. 막전위와 전자 운반체의 환원 정도, 기질과 복합체 상태가 생성에 영향을 준다. 산소 소비가 많으면 항상 활성산소도 같은 비율로 증가한다고 단정할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.bioenergetics.oxidative-phosphorylation.b.d706324f8618",
+      "type": "paragraph",
+      "markdown": "심한 미토콘드리아 손상은 ATP 부족, 칼슘 처리 장애와 막 투과성 변화 및 세포사멸 경로에 연결된다. 미토콘드리아는 에너지 생산 외에 대사 중간체와 신호, 세포사멸의 조절에도 관여한다. 산화적 인산화 결함의 임상 표현형이 근육과 신경계 등 에너지 요구가 큰 조직에서 두드러질 수 있지만 조직별 의존성과 유전적 배경, 잔여 기능에 따라 다양한 양상을 보인다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/bioenergetics/sections/biochemistry.bioenergetics.oxidative-phosphorylation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.biochemistry.bioenergetics.oxidative-phosphorylation.001"
+  ],
+  "keyFacts": [
+    "기울기가 ATP 합성 외의 경로로 소실되면 결합 효율이 낮아진다."
+  ]
+}

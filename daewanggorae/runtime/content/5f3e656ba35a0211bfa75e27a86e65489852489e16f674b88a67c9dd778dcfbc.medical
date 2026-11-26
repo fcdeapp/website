@@ -1,0 +1,28 @@
+{
+  "id": "question.embryology.cardiovascular.septation.001",
+  "kind": "original_concept_question",
+  "lessonId": "embryology.cardiovascular.septation",
+  "prompt": "출생 후 난원공의 기능적 폐쇄를 설명하는 변화는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "출생 순간 모든 심방 조직이 즉시 완전히 융합한다."
+    },
+    {
+      "id": "B",
+      "text": "난원공은 정상 태아에게 존재해서는 안 된다."
+    },
+    {
+      "id": "C",
+      "text": "폐정맥 환류 증가 등에 따라 좌심방 압력이 높아져 판막이 눌린다."
+    }
+  ],
+  "answer": "C",
+  "explanation": "기능적 폐쇄는 압력 변화에 따른 현상이며 이후 해부학적 융합과 구별한다.",
+  "optionRationales": {
+    "A": "기능적 판막 폐쇄와 이후 조직 융합은 서로 다른 시간과 과정이다.",
+    "B": "정상 태아에서는 난원공이 폐 우회 혈류에 기여한다.",
+    "C": "정답이다. 기능적 폐쇄는 압력 변화에 따른 현상이며 이후 해부학적 융합과 구별한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "toxicology",
+  "title": {
+    "ko": "독성학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "toxicology.chapter.principles",
+      "path": "domains/03-pathology-pharmacology/subjects/toxicology/chapters/principles/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "toxicology.plan.001",
+    "toxicology.plan.002",
+    "toxicology.plan.003",
+    "toxicology.plan.004",
+    "toxicology.plan.005",
+    "toxicology.plan.006",
+    "toxicology.principles.exposure-and-toxidromes"
+  ]
+}

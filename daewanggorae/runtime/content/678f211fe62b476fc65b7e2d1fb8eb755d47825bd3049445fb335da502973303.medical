@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "dermatology",
+  "title": {
+    "ko": "피부과학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "dermatology.chapter.morphology",
+      "path": "domains/09-clinical-diagnostics/subjects/dermatology/chapters/morphology/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "dermatology.plan.001",
+    "dermatology.plan.002",
+    "dermatology.plan.003",
+    "dermatology.plan.004",
+    "dermatology.plan.005",
+    "dermatology.plan.006",
+    "dermatology.morphology.lesion-description"
+  ]
+}

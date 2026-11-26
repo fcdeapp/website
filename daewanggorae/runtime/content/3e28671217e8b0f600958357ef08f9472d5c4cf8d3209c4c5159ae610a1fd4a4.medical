@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "transplant-surgery.immunology.rejection",
+  "subjectId": "transplant-surgery",
+  "chapterId": "immunology",
+  "title": {
+    "ko": "이식면역과 이식편 기능장애",
+    "en": "Transplant Immunology and Graft Dysfunction"
+  },
+  "learningObjectives": [
+    {
+      "id": "transplant-surgery.immunology.rejection.lo.01",
+      "text": "동종항원 인식과 세포·항체 매개 반응을 연결한다"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.lo.02",
+      "text": "이식편 기능저하와 거부반응을 구별한다"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.lo.03",
+      "text": "면역억제의 이득과 위해를 함께 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "transplant-surgery.immunology.rejection.b.829c276f49bb",
+      "type": "heading",
+      "level": 2,
+      "text": "이식편은 혈류와 면역계에 연결된다"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.1e3eec9ea677",
+      "type": "paragraph",
+      "markdown": "장기이식은 해부학적 연결을 회복하는 수술이면서 수혜자의 면역계가 다른 사람의 조직과 장기간 공존하도록 만드는 치료이다. 공여 장기의 혈관을 연결하여 관류를 시작해도 그 장기가 즉시 정상 기능을 완전히 회복한다는 보장은 없다. 허혈과 재관류, 보존 과정과 수술의 영향, 수혜자의 순환 및 면역반응이 함께 초기 기능을 결정한다. 이식 뒤 기능저하를 모두 거부반응으로 설명하면 다른 치료 가능한 원인을 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.d80c525de40f",
+      "type": "paragraph",
+      "markdown": "동종이식(allotransplantation)에서는 같은 종의 다른 개체에서 온 조직을 받는다. 공여자와 수혜자의 HLA를 비롯한 항원 차이는 면역반응의 중요한 기반이다. 그러나 적합성을 단순히 혈액형이 같다는 한 조건으로 축소해서는 안 된다. 기존 항체와 감작력, 장기별 조건 및 교차시험 등 여러 정보가 위험 평가에 이용된다. 임신과 수혈, 이전 이식은 항원 노출과 항체 형성의 병력이 될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.c0d1ea4253be",
+      "type": "heading",
+      "level": 2,
+      "text": "항원의 인식과 효과기"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.70ebb41e556c",
+      "type": "paragraph",
+      "markdown": "수혜자의 T세포는 공여자 유래 항원제시세포의 MHC를 인식하는 직접 경로와, 수혜자 세포가 공여 항원을 처리하여 제시하는 간접 경로 등을 통해 반응할 수 있다. 이 경로들은 서로 완전히 배타적인 시기에만 작동하는 것은 아니다. 항원 인식과 함께 공동자극 및 사이토카인 환경이 세포의 활성과 분화를 결정한다. 정상 항원제시를 배울 때의 원리가 이식면역에서도 적용되지만 반응할 수 있는 동종반응성 세포의 규모와 항원 지속성이 특징적이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.58f7d8030b24",
+      "type": "paragraph",
+      "markdown": "활성화된 T세포는 염증세포의 동원과 표적세포 손상을 통해 이식편에 영향을 준다. 항체는 혈관내피 등의 공여 항원과 결합하여 보체와 세포성 효과기, 혈관 손상을 유발할 수 있다. 세포 매개와 항체 매개 반응은 한 이식편에서 함께 존재할 수도 있다. 혈중 공여자특이항체가 검출되었다는 사실과 조직에서 활동성 손상이 확인되었다는 사실을 동일시하지 않고 조직·기능 및 임상 맥락을 통합한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.7bdf981ffa07",
+      "type": "heading",
+      "level": 2,
+      "text": "시간과 원인의 구별"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.0775a0099b42",
+      "type": "paragraph",
+      "markdown": "이미 존재하던 항체와 관련된 매우 빠른 혈관 손상, 이후 발생하는 세포성 또는 항체성 반응, 장기간 누적되는 손상은 시간 양상이 다를 수 있다. 그러나 수술 후 며칠이 지났는지만으로 병리 기전을 확정할 수는 없다. 만성적인 기능저하에는 면역 손상뿐 아니라 혈관 문제, 약물 독성, 감염과 원질환 재발 및 다른 대사·혈역학적 요인이 함께 기여할 수 있다. 만성이라는 말은 치료할 원인이 없다는 뜻이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.18ede8968499",
+      "type": "paragraph",
+      "markdown": "신장이식 뒤 크레아티닌이 상승하면 탈수와 관류, 요로 폐쇄, 혈관 문제, 감염, 약물 노출과 거부반응 등을 감별한다. 초음파와 혈액·소변검사, 약물 농도 및 필요에 따른 조직검사가 서로 다른 질문에 답한다. 예를 들어 혈중 면역억제제 농도는 표본 시점과 복용 간격에 영향을 받으며, 한 번의 적절한 농도가 모든 기간의 적절한 노출을 보장하지 않는다. 검사 목적과 시간 관계를 명확히 해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.6a089e2329f8",
+      "type": "heading",
+      "level": 2,
+      "text": "면역억제의 표적과 균형"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.29150ca90e73",
+      "type": "paragraph",
+      "markdown": "면역억제는 T세포 신호와 증식, 염증 및 다른 면역 기능의 여러 지점을 표적으로 한다. 칼시뉴린 억제제는 T세포 활성화에 연결되는 전사 신호에, 항대사제는 세포 증식에 필요한 경로에, 글루코코르티코이드는 다양한 염증·면역 반응에 영향을 준다. 약물군의 조합은 서로 다른 표적을 이용하지만 이상반응이 합쳐질 수도 있다. 이름이 다른 약을 쓰는 이유와 각 약의 감시 항목을 함께 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.b11a0f2173f8",
+      "type": "paragraph",
+      "markdown": "면역억제가 부족하면 거부반응 위험이 커질 수 있고 지나치면 감염과 악성종양 등 위해가 증가할 수 있다. 신독성, 혈압과 혈당, 골대사, 혈구 수 및 간 기능에 미치는 영향도 약제별로 다르다. 새로운 기능저하를 거부반응으로 가정해 무조건 면역억제를 높이면 감염이나 약물 독성을 악화시킬 수 있다. 진단과 치료 강도 조정은 장기 기능과 조직 및 감염 위험을 통합하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.073d867293e4",
+      "type": "heading",
+      "level": 2,
+      "text": "장기 추적과 생활"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.86dde8220e42",
+      "type": "paragraph",
+      "markdown": "이식 수술의 성공과 장기적인 이식편 생존은 다른 시간축의 결과이다. 복약을 방해하는 부작용과 비용, 이해의 문제, 복용 시간과 상호작용을 확인해야 한다. 복약 누락을 비난만 하면 실제 장애물이 드러나지 않을 수 있다. 새로운 처방약과 일반의약품, 건강보조제도 약물 대사와 노출을 바꿀 수 있어 이식 진료와 연결하여 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection.b.c496f36ab3c5",
+      "type": "paragraph",
+      "markdown": "면역억제 상태에서는 감염의 전형적인 발열과 염증 반응이 약해질 수 있다. 예방과 백신 계획은 면역 상태와 이식 시점, 백신의 종류에 따라 달라지므로 일반 성인의 일정을 기계적으로 복사하지 않는다. 이식편 기능과 함께 심혈관 위험, 암 예방과 건강행동을 장기적으로 관리한다. 이식은 원래 장기의 기능 부전을 치료하는 강력한 방법이지만 새로운 위험과 추적이 필요한 지속적인 진료 상태이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/transplant-surgery/chapters/immunology/sections/transplant-surgery.immunology.rejection.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.transplant-surgery.immunology.rejection.001"
+  ],
+  "keyFacts": [
+    "아니다. 관류·폐쇄·감염·약물 독성 등도 감별한다."
+  ]
+}

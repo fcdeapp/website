@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "family-medicine.prevention.health-screening",
+  "subjectId": "family-medicine",
+  "chapterId": "prevention",
+  "title": {
+    "ko": "건강검진의 이득·위해와 추적",
+    "en": "Benefits, Harms and Follow-up of Screening"
+  },
+  "learningObjectives": [
+    {
+      "id": "family-medicine.prevention.health-screening.lo.01",
+      "text": "선별과 진단 평가를 구별한다"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.lo.02",
+      "text": "조기진단시간·기간 편향과 과잉진단을 설명한다"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.lo.03",
+      "text": "검진의 절대이득과 후속 과정의 위해를 함께 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "family-medicine.prevention.health-screening.b.4a005d8843aa",
+      "type": "heading",
+      "level": 2,
+      "text": "증상이 없는 사람을 검사한다는 의미"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.4085ad17dab0",
+      "type": "paragraph",
+      "markdown": "선별검사(screening)는 증상이 없는 대상자 중 질환 또는 위험의 가능성이 높아 추가 평가가 필요한 사람을 찾는 과정이다. 증상이 있는 환자에서 원인을 찾는 진단 평가와 목적과 출발 확률이 다르다. 검진에서 음성이었더라도 이후 새 증상이 생기면 별도의 진단 평가가 필요하다. 반대로 검진 양성은 곧 질환의 확진을 뜻하지 않으며 확인 검사와 상담이 이어져야 한다. 검사 자체와 결과 이후의 과정까지 포함해야 하나의 검진 프로그램이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.f772b0eb1308",
+      "type": "paragraph",
+      "markdown": "질환이 중요하고 조기에 발견 가능하다는 사실만으로 선별검사가 유익해지는 것은 아니다. 발견 뒤의 개입이 환자에게 중요한 결과를 개선해야 하며, 위양성과 과잉진단 및 치료의 위해가 이득을 상쇄하지 않아야 한다. 검사의 민감도와 특이도뿐 아니라 대상 집단과 간격, 확인 경로와 치료 접근성이 결과를 결정한다. 정확한 기계가 있다는 사실과 효과적인 건강검진 체계가 있다는 사실은 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.00c9f4eac0d8",
+      "type": "heading",
+      "level": 2,
+      "text": "생존기간이 길어져도 사망이 늦춰지지 않을 수 있다"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.8c5550bd896b",
+      "type": "paragraph",
+      "markdown": "조기진단시간 편향(lead-time bias)은 진단 시점이 앞당겨져 진단부터 사망까지의 기간이 길어 보이는 현상이다. 증상으로 70세에 진단하고 75세에 사망한 질환을 검진으로 67세에 발견했는데 사망은 75세로 같다고 하자. 진단 후 생존기간은 5년에서 8년으로 늘지만 생명이 연장된 것은 아니다. 따라서 검진 발견 환자의 진단 후 생존율만으로 검진의 생명 연장 효과를 확정할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.2caabb41e2a6",
+      "type": "paragraph",
+      "markdown": "기간 편향(length bias)은 느리게 진행하여 검출 가능한 무증상 기간이 긴 질환이 선별에서 더 잘 발견되는 현상이다. 빠른 질환은 검사 사이에 증상으로 나타날 수 있다. 검진으로 발견한 종양의 평균 예후가 좋아 보이는 것이 검진 자체의 효과 외에 원래의 생물학적 차이를 반영할 수 있는 이유이다. 검진 참여자와 비참여자의 건강행태와 의료 이용 차이 역시 관찰연구의 비교를 왜곡할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.8bf10fb75312",
+      "type": "heading",
+      "level": 2,
+      "text": "과잉진단과 위양성"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.fde7a11d94fa",
+      "type": "paragraph",
+      "markdown": "과잉진단(overdiagnosis)은 검사 오류로 존재하지 않는 병을 만들어내는 것과 다르다. 병리학적 정의에는 맞지만 그 사람의 생애 동안 증상이나 사망을 일으키지 않았을 병변을 발견하는 경우이다. 이런 병변의 진단과 치료는 불안과 비용, 시술 합병증을 만들 수 있다. 개별 환자에서 치료하지 않은 미래를 직접 관찰할 수 없으므로 과잉진단 여부를 즉시 확정하기 어렵다는 점도 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.f41e11b64c96",
+      "type": "paragraph",
+      "markdown": "위양성(false positive)은 질환이 없는데 선별 결과가 양성인 경우이다. 반복 검사와 영상, 생검이 이어지면서 신체적 위해와 불안이 발생할 수 있다. 유병률이 낮은 집단에서는 좋은 성능의 검사도 양성 가운데 질환자의 비율이 낮을 수 있다. 많은 검사를 동시에 시행하면 적어도 하나의 비정상 결과를 받을 가능성이 높아진다. 정상 참고범위 밖의 수치가 모두 임상적으로 중요한 질환은 아니므로 개별 결과를 사전확률과 검사 목적에 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.b3c993a384d3",
+      "type": "heading",
+      "level": 2,
+      "text": "결과변수와 절대이득"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.6c12b6b0245f",
+      "type": "paragraph",
+      "markdown": "검진의 평가는 발견한 병변 수나 초기 병기 비율만으로 끝내지 않는다. 질환별 사망, 전체 사망, 중대한 이환과 삶의 질, 검사와 치료의 위해를 함께 본다. 관찰 기간이 짧으면 이득이 나타나기 전에 위해만 측정되거나, 반대로 추적 누락으로 위해가 과소평가될 수 있다. 검진의 효과가 드러나는 데 필요한 시간과 대상자의 기대수명 및 동반 질환이 적용 가능성에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.781aae4c2e1d",
+      "type": "paragraph",
+      "markdown": "상대위험 감소가 같아도 기저 위험이 낮으면 절대이득은 작다. 가상의 검진이 일정 기간 질환 사망 위험을 1%에서 0.8%로 줄인다면 상대 감소는 20%이지만 절대 감소는 0.2%포인트이다. 이 수치를 설명할 때에는 같은 기간의 위양성, 추가 시술과 치료 위해를 함께 제시해야 한다. 서로 다른 기간과 집단의 숫자를 나란히 놓고 어느 검진이 더 좋다고 단순 비교하면 해석이 어긋난다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.06bd549a9cf0",
+      "type": "heading",
+      "level": 2,
+      "text": "대상과 간격"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.183af303041f",
+      "type": "paragraph",
+      "markdown": "검진 대상은 연령과 성별, 장기 보유 상태, 가족력과 유전적 위험, 과거 검사 및 질환력에 따라 달라질 수 있다. 평균 위험군에 대한 프로그램을 고위험 유전 증후군의 추적에 그대로 적용해서는 안 된다. 과거의 이상 소견 뒤 시행하는 추적검사도 일반 인구의 선별과 다른 목적을 가진다. 검진 시작과 종료, 간격은 국가와 지침에 따라 다를 수 있어 실제 적용에서는 해당 시점의 국내 기준과 환자 위험을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.be90964c2d99",
+      "type": "paragraph",
+      "markdown": "검사 간격을 짧게 하면 모든 문제가 해결되는 것은 아니다. 빠르게 진행하는 질환의 일부를 더 일찍 발견할 가능성이 있는 반면 위양성과 누적 노출, 과잉진단이 증가할 수 있다. 병변의 자연경과와 검출 성능, 위해와 자원 사이의 균형이 필요하다. 연속 음성 결과가 위험을 낮출 수는 있어도 이후 질환이 영원히 발생하지 않는다는 보장은 아니다. 검진의 한계를 이해시키면서 새 증상에 대한 평가 경로를 알려야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.86a1c3b1ba7d",
+      "type": "heading",
+      "level": 2,
+      "text": "상담과 결과의 연결"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.eeb1c027996d",
+      "type": "paragraph",
+      "markdown": "공유의사결정(shared decision making)에서는 검진의 목표와 가능한 이득, 위해, 불확실성을 이해 가능한 숫자와 표현으로 설명한다. 같은 확률이라도 암 진단에 대한 불안, 시술에 대한 부담, 생명 연장과 삶의 질에 대한 가치가 다를 수 있다. 환자의 선호는 설명을 생략한 채 동의 여부만 묻는 절차로 확인되지 않는다. 검사하지 않는 선택을 포함한 합리적인 선택지를 설명하고 질문할 기회를 제공한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "family-medicine.prevention.health-screening.b.118040cc25d4",
+      "type": "paragraph",
+      "markdown": "검진 양성 뒤 결과 전달이 지연되거나 확인 검사가 누락되면 검사의 잠재적 이득이 실현되지 않는다. 의뢰와 회신, 확인 검사, 치료 연결의 책임과 시점을 정하고 완료 여부를 추적해야 한다. 음성 결과에서도 중요한 다른 이상이나 증상과의 불일치를 검토한다. 가정의학의 건강검진은 검사 항목의 수를 늘리는 일이 아니라 개인의 위험과 선호에 맞는 예방을 선택하고 결과 이후의 진료를 끝까지 연결하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/family-medicine/chapters/prevention/sections/family-medicine.prevention.health-screening.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.family-medicine.prevention.health-screening.001"
+  ]
+}

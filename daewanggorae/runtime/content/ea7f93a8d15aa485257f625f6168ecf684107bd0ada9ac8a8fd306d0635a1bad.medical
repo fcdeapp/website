@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.perioperative.surgical-infection",
+  "subjectId": "general-surgery",
+  "chapterId": "perioperative",
+  "title": {
+    "ko": "수술부위감염과 감염원 조절",
+    "en": "Surgical Site Infection and Source Control"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.perioperative.surgical-infection.lo.01",
+      "text": "수술부위감염의 깊이와 범위를 구별한다"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.lo.02",
+      "text": "항균제와 감염원 조절의 서로 다른 역할을 설명한다"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.lo.03",
+      "text": "정상 염증과 감염을 시간경과로 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.bcfb719fc996",
+      "type": "heading",
+      "level": 2,
+      "text": "수술 뒤 염증과 감염"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.a0b74ff47d95",
+      "type": "paragraph",
+      "markdown": "수술은 의도된 조직 손상을 만들고 정상 치유 과정에서도 통증, 국소 열감과 부종, 염증성 검사 변화가 나타날 수 있다. 수술부위감염(surgical site infection, SSI)은 수술과 관련된 부위에 미생물 침입과 증식이 조직 반응 및 임상 문제를 일으키는 상태이다. 정상 반응과 감염은 소견이 겹치므로 발적 하나나 백혈구 수 하나로 구분하지 않는다. 통증의 진행, 분비물의 성격, 상처 벌어짐과 전신 상태, 수술 종류와 경과 시간을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.8ab31aa0f61f",
+      "type": "paragraph",
+      "markdown": "표재 절개부의 감염과 깊은 근막·근육층의 감염, 수술한 장기나 공간의 감염은 범위와 필요한 처치가 다를 수 있다. 피부가 깨끗해 보이는 경우에도 깊은 공간에 감염이 존재할 수 있고, 반대로 피부의 작은 발적이 곧 복강 내 감염을 뜻하지는 않는다. 수술 기록에서 절개와 박리 범위, 문합 및 인공물, 오염과 배액관을 확인하면 가능한 감염 부위를 구체화할 수 있다. 감염을 상처 표면만의 문제로 제한하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.5e994f64fc8b",
+      "type": "heading",
+      "level": 2,
+      "text": "병원체와 숙주 조건"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.1eb03553a517",
+      "type": "paragraph",
+      "markdown": "미생물의 종류는 수술 부위와 환자 집락, 주변 환경 및 이전 항균제 노출에 영향을 받는다. 피부를 통한 수술과 장관 내용물이 관련된 수술에서 예상 병원체 구성이 같지는 않다. 같은 수술에서도 입원과 재수술, 기존 감염, 내성균 보유 상태가 달라질 수 있다. 병원체의 이름을 외우는 것보다 어떤 장벽이 열렸고 어떤 미생물 생태계가 노출되었는지 생각하는 것이 경험적 치료의 근거가 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.6061be80dc2a",
+      "type": "paragraph",
+      "markdown": "관류 저하와 괴사, 혈종과 이물은 숙주 방어와 약물 도달을 제한할 수 있다. 당뇨병과 흡연, 영양 상태와 면역억제는 여러 단계의 치유와 방어에 영향을 준다. 외부에서 유입된 균의 양만으로 감염 위험을 설명할 수 없는 이유이다. 인공물 표면에 형성되는 생물막(biofilm)은 부유하는 세균과 다른 생존 환경을 제공하여 면역 제거와 항균제 반응을 복잡하게 만든다. 감수성 결과만으로 인공물 관련 감염의 해결을 보장하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.336668a23544",
+      "type": "heading",
+      "level": 2,
+      "text": "감염원 조절의 뜻"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.7943d380d077",
+      "type": "paragraph",
+      "markdown": "감염원 조절(source control)은 농양의 배액, 괴사조직 제거, 오염의 지속 원인 차단, 필요한 경우 감염된 인공물의 처리 등을 포함한다. 항균제는 미생물의 증식과 생존을 억제하지만 막힌 공간의 고름을 물리적으로 모두 제거하거나 누출되는 장관을 닫는 작용을 하지 않는다. 농양과 지속 누출이 있는 환자에게 항균제만 계속 넓히는 접근은 문제의 핵심을 놓칠 수 있다. 원인의 해부학과 조직의 생존성을 함께 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.4868bbd2620b",
+      "type": "paragraph",
+      "markdown": "배액관이 있다는 사실과 감염 공간이 충분히 배액된다는 사실도 다르다. 관이 막히거나 위치가 맞지 않으면 일부 공간이 남을 수 있고, 배액량이 줄어든 것이 반드시 호전을 의미하지 않는다. 새 통증과 발열, 장기 기능 변화가 생기면 관의 기능과 남은 병변을 재평가한다. 배액액의 배양은 채취 위치와 관의 유지기간에 따라 의미가 달라지므로 표면 집락 결과를 깊은 조직의 병원체로 무조건 동일시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.da526828c055",
+      "type": "heading",
+      "level": 2,
+      "text": "검체와 영상"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.c9e6baa940f6",
+      "type": "paragraph",
+      "markdown": "가능하면 감염이 의심되는 실제 조직이나 체액에서 적절한 검체를 얻는다. 표면에서 채취한 면봉 검체는 깊은 감염의 원인을 충분히 대표하지 못할 수 있다. 선행 항균제는 배양 결과에 영향을 주며, 음성 배양이 모든 감염을 배제하는 것은 아니다. 중증 환자에서 검체 채취를 이유로 필요한 치료와 안정화가 부당하게 지연되지 않도록 평가와 처치를 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.e0d735793f26",
+      "type": "paragraph",
+      "markdown": "초음파와 CT 등은 깊은 액체 저류와 기체, 주변 염증 및 문합부 문제를 평가하는 데 도움을 준다. 수술 직후의 정상적인 기체와 액체, 조직 변화가 감염과 겹칠 수 있어 촬영 시점과 수술 내용을 알아야 한다. 영상의 액체 공간이 모두 농양인 것도 아니고 농양이 항상 전형적인 벽을 가진 것도 아니다. 판독 소견을 환자의 경과와 비교하고, 필요한 경우 배액과 검체 평가를 통해 가설을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.be4084441d75",
+      "type": "heading",
+      "level": 2,
+      "text": "예방과 치료의 구별"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.3b6bbd8b24b3",
+      "type": "paragraph",
+      "markdown": "예방적 항균제는 수술 중 오염에 대비하여 적절한 시간에 조직에 유효 농도를 확보하려는 목적을 가진다. 이미 생긴 감염의 치료와는 적응과 기간의 논리가 다르다. 배액관이 남아 있다는 이유만으로 모든 환자에서 예방 항균제를 무기한 유지하는 것은 감염의 병인과 내성·이상반응을 충분히 고려하지 않은 판단이다. 구체적인 선택과 투여 시점은 수술 종류와 환자 위험, 기관의 검증된 기준에 맞춘다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection.b.9787757d2989",
+      "type": "paragraph",
+      "markdown": "손 위생과 무균술, 피부 준비와 적절한 체온 및 대사 상태의 관리, 불필요한 조직 손상과 이물의 최소화는 서로 다른 경로로 감염 위험을 줄인다. 예방을 약제 하나의 문제로 한정하면 수술 전후 과정의 약점을 놓칠 수 있다. 퇴원 뒤 감염이 드러날 수도 있으므로 상처 관리와 악화 소견, 연락과 재평가 경로를 환자가 이해하도록 설명한다. 치료 반응은 열의 감소뿐 아니라 감염원 해결과 상처 상태, 전신 기능 및 부작용을 함께 추적한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/perioperative/sections/general-surgery.perioperative.surgical-infection.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.perioperative.surgical-infection.001"
+  ],
+  "keyFacts": [
+    "아니다. 배액과 누출 차단 등 감염원 조절을 함께 평가한다."
+  ]
+}

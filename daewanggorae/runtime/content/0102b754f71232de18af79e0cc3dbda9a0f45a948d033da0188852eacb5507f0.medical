@@ -1,0 +1,23 @@
+{
+  "id": "question.histology.epithelium.polarity.001",
+  "kind": "original_concept_question",
+  "lessonId": "histology.epithelium.polarity",
+  "prompt": "반데스모솜의 주된 연결 대상은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "세포와 바닥층판"
+    },
+    {
+      "id": "B",
+      "text": "두 인접 세포의 꼭대기막"
+    }
+  ],
+  "answer": "A",
+  "explanation": "Integrin 등을 통해 세포를 기저 기질에 고정한다.",
+  "optionRationales": {
+    "A": "Integrin 등을 통해 세포를 기저 기질에 고정한다.",
+    "B": "세포간 접합과 세포-기질 접합을 구분해야 한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

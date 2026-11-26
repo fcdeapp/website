@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.localization.stroke",
+  "subjectId": "neurology",
+  "chapterId": "localization",
+  "title": {
+    "ko": "뇌졸중에서의 병변 국소화",
+    "en": "Lesion Localization in Stroke"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.localization.stroke.lo.01",
+      "text": "피질·뇌간·소뇌 징후를 구분한다."
+    },
+    {
+      "id": "neurology.localization.stroke.lo.02",
+      "text": "혈관영역과 신경기능을 연결한다."
+    },
+    {
+      "id": "neurology.localization.stroke.lo.03",
+      "text": "국소화와 재관류 적합성 판단의 차이를 설명한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.localization.stroke.b.92842475fd9f",
+      "type": "heading",
+      "level": 2,
+      "text": "먼저 증후군을 정의하기"
+    },
+    {
+      "id": "neurology.localization.stroke.b.afaa3b9203d1",
+      "type": "paragraph",
+      "markdown": "뇌졸중(stroke)은 급성 뇌혈관 장애로 발생하는 신경학적 손상을 포함한다. 허혈과 출혈은 원인과 치료가 다르므로 증상만으로 구분하지 않는다. 진찰의 첫 목표는 의식, 언어, 시야, 안구운동, 얼굴과 팔다리 운동·감각, 협응과 보행을 통해 손상 위치를 가설화하는 것이다. 갑작스러운 발병과 최대 증상 시점, 변동과 진행 여부는 중요하지만 대사장애, 발작 후 상태, 편두통 등 유사 증상도 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.localization.stroke.b.e38fc093507b",
+      "type": "paragraph",
+      "markdown": "피질척수로의 많은 섬유는 아래쪽 연수에서 교차하므로 대뇌반구의 운동경로 손상은 흔히 반대쪽 팔다리 약화를 만든다. 그러나 얼굴과 몸의 징후 조합, 감각, 피질 기능과 뇌신경 소견을 함께 보아야 병변 높이를 추정할 수 있다. 약화의 좌우만으로 혈관 이름을 확정하지 않는다. 깊은 관통동맥 영역의 작은 병변도 밀집된 신경로를 손상시켜 큰 기능장애를 일으킬 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.localization.stroke.b.76b980d2eabb",
+      "type": "heading",
+      "level": 2,
+      "text": "전방순환과 피질 기능"
+    },
+    {
+      "id": "neurology.localization.stroke.b.309ce372e201",
+      "type": "paragraph",
+      "markdown": "중대뇌동맥(middle cerebral artery, MCA) 영역 손상에서는 얼굴·팔의 운동 및 감각 이상이 다리보다 두드러질 수 있고, 우성반구에서는 실어증이 나타날 수 있다. 비우성반구 손상에서는 편측무시나 공간 처리 장애가 중요한 단서가 된다. 실어증은 언어 체계의 장애이고 구음장애는 발음 운동의 장애이므로 질문 이해, 이름대기, 반복, 유창성을 따로 평가한다. 의식 저하나 청력·언어 장벽도 검사 결과에 영향을 줄 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neurology.localization.stroke.14ce8cbb"
+      ],
+      "conceptRefs": [
+        "FMA50082",
+        "FMA50801"
+      ]
+    },
+    {
+      "id": "neurology.localization.stroke.b.431afcf13af0",
+      "type": "paragraph",
+      "markdown": "앞대뇌동맥(anterior cerebral artery, ACA) 영역은 안쪽 전두·두정면의 기능과 연결되어 다리 우세 약화나 행동 변화가 나타날 수 있다. 뒤대뇌동맥(posterior cerebral artery, PCA) 영역에서는 시각피질과 시상 등 침범 부위에 따라 시야 장애와 여러 신경학적 소견이 가능하다. 혈관 공급은 변이와 측부순환을 가지므로 표준 영역 지도는 확률적 안내다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neurology.localization.stroke.9739dfe8"
+      ],
+      "conceptRefs": [
+        "FMA50029",
+        "FMA50030",
+        "FMA50801"
+      ]
+    },
+    {
+      "id": "neurology.localization.stroke.b.54ccdc1afdf0",
+      "type": "heading",
+      "level": 2,
+      "text": "후방순환과 교차 징후"
+    },
+    {
+      "id": "neurology.localization.stroke.b.aa071436ee1e",
+      "type": "paragraph",
+      "markdown": "뇌간에는 뇌신경핵과 장경로가 가까이 모여 있어 같은 쪽 뇌신경 소견과 반대쪽 몸의 운동·감각 이상이 함께 나타날 수 있다. 이러한 교차 징후는 뇌간 국소화에 도움이 되지만 모든 병변이 교과서적 조합을 완전히 보이는 것은 아니다. 복시, 구음장애, 삼킴장애, 심한 실조와 안진을 동반한 어지럼은 후방순환 평가에서 중요하다. 어지럼을 한 가지 증상만으로 말초성이라고 단정하면 위험한 병변을 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.localization.stroke.b.aa830ede048c",
+      "type": "paragraph",
+      "markdown": "소뇌 손상은 근력 저하보다 측정장애, 운동분해, 자세와 보행 불안정 등이 두드러질 수 있다. 감각성 실조와 전정성 장애도 비슷한 불안정을 만들 수 있어 눈을 뜨고 감은 상태, 고유감각, 안구운동을 함께 평가한다. 소뇌 부종은 좁은 뒤머리오목에서 뇌간과 뇌척수액 흐름에 영향을 줄 수 있으므로 초기 기능장애 정도만으로 경과를 가볍게 보지 않는다. 국소화는 해부를 임상 경과의 위험과 연결하는 도구다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.localization.stroke.b.fd3fa0169a11",
+      "type": "heading",
+      "level": 2,
+      "text": "영상과 치료 판단의 별도 축"
+    },
+    {
+      "id": "neurology.localization.stroke.b.de6221c5d1ab",
+      "type": "paragraph",
+      "markdown": "급성 평가에서는 출혈과 큰혈관 폐색, 조기 허혈 변화 및 상황에 따른 구제 가능한 조직 평가가 중요하다. 마지막 정상 확인 시점, 영상, 신경학적 중증도, 출혈 위험과 동반질환은 재관류 치료 적합성 판단에 관여한다. 증상이 특정 혈관과 맞는다는 사실만으로 혈전용해나 혈전제거술 적응을 확정할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/localization/sections/neurology.localization.stroke.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.localization.stroke.001"
+  ],
+  "keyFacts": [
+    "언어 체계와 발음 운동의 장애를 구분한다."
+  ]
+}

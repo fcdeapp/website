@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "endocrine-surgery",
+  "title": {
+    "ko": "내분비외과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "endocrine-surgery.chapter.thyroid",
+      "path": "domains/06-surgery/subjects/endocrine-surgery/chapters/thyroid/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "endocrine-surgery.plan.001",
+    "endocrine-surgery.plan.002",
+    "endocrine-surgery.plan.003",
+    "endocrine-surgery.plan.004",
+    "endocrine-surgery.plan.005",
+    "endocrine-surgery.plan.006",
+    "endocrine-surgery.thyroid.recurrent-laryngeal-nerve"
+  ]
+}

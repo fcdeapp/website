@@ -1,0 +1,23 @@
+{
+  "id": "question.family-medicine.prevention.health-screening.001",
+  "kind": "original_concept_question",
+  "lessonId": "family-medicine.prevention.health-screening",
+  "prompt": "진단이 3년 빨라지고 사망 시점이 같다면 생존 연장을 입증하는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "아니다. 진단 후 생존기간만 늘어나는 조기진단시간 편향일 수 있다."
+    },
+    {
+      "id": "B",
+      "text": "그렇다. 진단 후 생존기간이 늘면 언제나 사망이 늦춰진다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "진단 시점과 사망 시점을 구별해야 검진 효과를 평가할 수 있다.",
+  "optionRationales": {
+    "A": "진단 시점과 사망 시점을 구별해야 검진 효과를 평가할 수 있다.",
+    "B": "진단 시점이 앞당겨진 것만으로 실제 생명 연장을 입증하지 못한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

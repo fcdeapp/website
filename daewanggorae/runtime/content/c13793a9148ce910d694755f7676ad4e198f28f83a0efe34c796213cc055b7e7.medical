@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "psychiatry",
+  "title": {
+    "ko": "정신건강의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "psychiatry.chapter.assessment",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/assessment/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "psychiatry.plan.001",
+    "psychiatry.plan.002",
+    "psychiatry.plan.003",
+    "psychiatry.plan.004",
+    "psychiatry.plan.005",
+    "psychiatry.plan.006",
+    "psychiatry.plan.007",
+    "psychiatry.assessment.mental-status"
+  ]
+}

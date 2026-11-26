@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.carbohydrate.glycogen",
+  "subjectId": "biochemistry",
+  "chapterId": "carbohydrate",
+  "title": {
+    "ko": "글리코젠 합성·분해와 조직별 조절",
+    "en": "Glycogen Synthesis, Breakdown and Tissue-Specific Regulation"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.carbohydrate.glycogen.lo.01",
+      "text": "분지 구조와 합성·분해 효소의 역할을 설명한다."
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.lo.02",
+      "text": "간과 근육의 조절 차이를 비교한다."
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.lo.03",
+      "text": "효소 결함의 대사 결과를 경로에서 추론한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.e1b448cd852a",
+      "type": "heading",
+      "level": 2,
+      "text": "저장 구조의 기능"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.483f6a7eb700",
+      "type": "paragraph",
+      "markdown": "글리코젠(glycogen)은 glucose가 주로 α-1,4 결합으로 연결되고 α-1,6 결합에서 분지하는 저장 고분자다. 많은 비환원 말단을 가지므로 여러 효소가 동시에 사슬을 늘리거나 줄일 수 있다. 분지 구조는 빠른 동원과 용해성에 기여한다. 같은 glucose 양을 자유 단당류로 저장할 때보다 삼투 입자 수를 줄일 수 있다는 이점도 있다. 그러나 글리코젠은 물과 함께 저장되므로 무게당 에너지 저장 효율은 중성지방과 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.9ab055de80af",
+      "type": "paragraph",
+      "markdown": "간은 혈당 유지를 위한 저장소로, 골격근은 수축에 필요한 자체 에너지 공급원으로 글리코젠을 이용한다. 단위 조직 질량당 농도와 몸 전체의 총량은 다른 양이다. 골격근의 총질량이 크기 때문에 근육 전체의 저장량은 간과 비교할 때 단순한 농도 순위와 다를 수 있다. 뇌의 성상세포 등 다른 세포에도 글리코젠이 존재하여 간과 근육에만 있는 물질은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.35b506504764",
+      "type": "heading",
+      "level": 2,
+      "text": "합성에 필요한 활성화"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.338c1294e663",
+      "type": "paragraph",
+      "markdown": "세포로 들어온 glucose는 glucose-6-phosphate로 인산화되고 phosphoglucomutase를 통해 glucose-1-phosphate로 전환된다. Glucose-1-phosphate와 UTP의 반응으로 UDP-glucose가 만들어지고, 생성된 pyrophosphate의 분해가 전체 반응의 진행에 기여한다. UDP-glucose는 glucose 단위를 전달하기에 적합한 활성화된 공여체다. 합성은 분해효소를 단순히 역방향으로 돌리는 반응이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.45f081c19467",
+      "type": "paragraph",
+      "markdown": "Glycogen synthase는 기존 사슬의 비환원 말단에 glucose를 α-1,4 결합으로 추가한다. 전형적인 합성 개시에는 glycogenin이 시작점 형성에 관여한다. Branching enzyme은 일정 길이의 사슬 일부를 옮겨 α-1,6 분지를 만든다. 따라서 synthase의 신장 기능과 branching enzyme의 가지 형성 기능을 구분해야 한다. 같은 양이 축적되어도 분지 구조가 비정상이면 용해성과 효소 접근, 세포 기능이 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.5b8e2453ae52",
+      "type": "paragraph",
+      "markdown": "UDP-glucose 합성에 사용된 nucleotide를 재생하는 데 에너지가 필요하므로 저장에는 비용이 든다. 자유 glucose에서 시작하면 첫 인산화의 ATP 비용도 구분해야 한다. 수지를 계산할 때 출발 물질이 glucose인지 glucose-6-phosphate인지 명시하면 같은 과정에 서로 다른 ATP 수를 쓰는 혼동을 줄일 수 있다. 에너지 비용은 저장과 동원의 속도, 조절 가능성을 얻는 대가다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.eb5c988f2513",
+      "type": "heading",
+      "level": 2,
+      "text": "분해와 분지 처리"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.3f3485bec2a0",
+      "type": "paragraph",
+      "markdown": "Glycogen phosphorylase는 무기인산을 이용하여 α-1,4 결합을 절단하고 glucose-1-phosphate를 방출한다. 이 phosphorolysis는 물을 사용하는 단순 가수분해와 다르다. 생성물에 인산이 남아 있어 근육의 해당으로 들어갈 때 자유 glucose의 첫 ATP 소비를 피할 수 있다. 분해 산물 전체가 glucose-1-phosphate인 것은 아니며 분지점 처리에서 자유 glucose가 일부 생긴다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.faf20e104e48",
+      "type": "paragraph",
+      "markdown": "Phosphorylase는 분지점 가까이에서 더 진행하지 못한다. Debranching enzyme의 transferase 기능이 사슬 일부를 옮기고 α-1,6-glucosidase 기능이 분지 결합을 처리하면 phosphorylase가 다시 접근할 수 있다. 하나의 이중기능 단백질 안의 서로 다른 촉매 작업을 구분하는 것이 중요하다. 분지 제거 결함에서는 정상 합성·분해의 중간 구조가 비정상적으로 남을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.d68446472ff4",
+      "type": "paragraph",
+      "markdown": "Glucose-1-phosphate는 glucose-6-phosphate로 전환되어 해당이나 다른 경로에 들어간다. 간은 glucose-6-phosphatase 계통을 통해 자유 glucose를 혈액에 공급할 수 있지만 근육은 저장 탄소를 주로 자체 대사에 이용한다. 혈액으로 공급되는 lactate나 alanine을 통해 근육 탄소가 간의 포도당신생과 연결될 수는 있으나 이는 근육이 저장 glucose를 그대로 혈중에 방출하는 것과 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.a78ddc4e1889",
+      "type": "heading",
+      "level": 2,
+      "text": "공유결합 조절과 상반 반응"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.02607bb6f39c",
+      "type": "paragraph",
+      "markdown": "Glycogen synthase와 phosphorylase는 인산화 상태와 대사물질 신호에 의해 조절된다. 전형적으로 synthase는 탈인산화 상태에서, phosphorylase는 인산화된 a 형태에서 활성이 높아지는 방향의 조절을 받는다. 하지만 인산화 여부만으로 실제 속도를 완전히 정할 수는 없다. 기질과 생성물, AMP·ATP 등 조절물질, 단백질의 조직별 성질이 함께 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.263d31261b90",
+      "type": "paragraph",
+      "markdown": "Phosphorylase kinase는 phosphorylase를 활성화하는 인산화에 관여하고 Ca2+와 cAMP-PKA 계통의 신호를 연결한다. 근육 수축에서 Ca2+는 수축 단백질뿐 아니라 저장 에너지 동원을 촉진하는 신호가 된다. Phosphatase는 여러 표적의 인산을 제거하여 반대 방향 조절에 기여한다. 한 호르몬이 개별 효소 하나만 바꾸는 것이 아니라 합성과 분해의 여러 지점을 함께 조정할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.02b53c78d4de",
+      "type": "heading",
+      "level": 2,
+      "text": "간과 근육의 서로 다른 임무"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.15833c401ea9",
+      "type": "paragraph",
+      "markdown": "Glucagon은 간의 저장 탄소를 혈중 공급으로 동원하는 데 관여한다. 근육에 간의 glucagon 반응을 그대로 적용해서는 안 된다. Epinephrine은 간과 근육의 adrenergic 신호를 통해 저장 동원에 기여하며, 근육에서는 수축에 따른 Ca2+와 에너지 상태가 추가 조절을 제공한다. 간에서는 혈당과 호르몬 상태가 전신의 요구를 반영하고, 근육에서는 자신의 ATP 수요가 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.b2123aaa77ea",
+      "type": "paragraph",
+      "markdown": "Insulin은 식후 glucose 이용과 저장을 촉진하는 여러 경로를 활성화한다. 근육의 glucose 유입 증가, 효소의 탈인산화 방향 조절과 glycogen synthase 조절 등이 연결된다. Glucose-6-phosphate는 기질인 동시에 효소 상태와 합성 흐름을 연결하는 신호가 될 수 있다. 식후 저장과 공복 동원은 분 단위의 효소 조절 외에 더 긴 시간 범위의 효소 발현과 영양 상태에도 영향을 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.bf0e3ec68331",
+      "type": "heading",
+      "level": 2,
+      "text": "저장병의 기전적 해석"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.5b896c9eb4bc",
+      "type": "paragraph",
+      "markdown": "간의 자유 glucose 공급 단계가 손상되면 공복 저혈당과 저장물질 축적이 함께 나타날 수 있다. 다른 경로로의 우회는 lactate와 지질, urate 등의 변화를 동반할 수 있어 glucose만 따로 보지 않는다. 근육의 glycogen 동원 장애는 운동 시 ATP 공급 문제와 근육통, 경련이나 횡문근융해 등으로 드러날 수 있다. 평소 혈당이 유지된다는 사실과 운동근의 에너지 공급이 정상이라는 사실은 별개다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.glycogen.b.7d8320abcc35",
+      "type": "paragraph",
+      "markdown": "Lysosome의 acid α-glucosidase 결함은 세포질 phosphorylase의 장애와 다른 분해 구획의 문제다. 심장과 골격근 등 조직 침범의 양상은 잔여 활성과 질환 경과에 따라 달라진다. 효소 이름이 비슷하거나 모두 glycogen이 축적된다는 이유로 같은 병태로 분류하면 임상 차이를 놓친다. 합성 구조, 세포내 위치, 분해 경로와 최종 산물의 이용을 함께 추적해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/carbohydrate/sections/biochemistry.carbohydrate.glycogen.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.biochemistry.carbohydrate.glycogen.001"
+  ],
+  "keyFacts": [
+    "간은 유리 포도당을 혈중으로 공급할 수 있지만 근육의 글리코젠은 주로 해당 근육의 연료이다."
+  ],
+  "relatedLessons": [
+    "biochemistry.carbohydrate.gluconeogenesis"
+  ]
+}

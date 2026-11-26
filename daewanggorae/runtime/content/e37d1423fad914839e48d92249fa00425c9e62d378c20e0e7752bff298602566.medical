@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.renal.raas",
+  "subjectId": "physiology",
+  "chapterId": "renal",
+  "title": {
+    "ko": "레닌-안지오텐신-알도스테론계의 통합 생리",
+    "en": "Integrated Physiology of RAAS"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.renal.raas.lo.01",
+      "text": "레닌 분비 자극과 호르몬 전달 경로를 설명한다."
+    },
+    {
+      "id": "physiology.renal.raas.lo.02",
+      "text": "알도스테론과 ADH의 작용을 구분한다."
+    },
+    {
+      "id": "physiology.renal.raas.lo.03",
+      "text": "RAAS 억제 후 신기능 변화의 기전을 해석한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.renal.raas.b.2654c99285f9",
+      "type": "heading",
+      "level": 2,
+      "text": "유효 순환량을 감지하는 계통"
+    },
+    {
+      "id": "physiology.renal.raas.b.46ba07757cdf",
+      "type": "paragraph",
+      "markdown": "레닌-안지오텐신-알도스테론계(renin-angiotensin-aldosterone system, RAAS)는 신장 관류, 나트륨 취급, 혈관 긴장도를 연결한다. 유효동맥혈량(effective arterial blood volume)은 동맥 순환이 조직 관류에 얼마나 적절히 기여하는가를 표현하는 기능적 개념이다. 총체액량과 동의어가 아니다. 심부전이나 간경변에서는 부종이나 복수가 있어도 신장이 받아들이는 관류 신호가 부족하여 나트륨 보존 반응이 활성화될 수 있다. 따라서 부종이 있으니 모든 체액 보존 호르몬이 억제되어야 한다는 추론은 성립하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.raas.b.4babe58b1243",
+      "type": "paragraph",
+      "markdown": "레닌(renin)은 들세동맥 벽의 과립세포에서 분비되는 단백분해효소다. 관류압 저하, 치밀반에 도달하는 NaCl 신호 감소, 교감신경 β1 수용체 자극은 레닌 분비를 촉진하는 주요 경로다. 이 신호들은 단순한 한 줄의 농도계가 아니라 혈관벽과 세뇨관, 자율신경을 통합한다. 치밀반 신호는 NKCC2를 통한 NaCl 감지와 인접 세포 사이의 국소 매개물질 전달에 의존한다. 고리이뇨제가 이 수송체를 차단하면 실제 체액 변화와 더불어 감지 과정에도 영향을 줄 수 있다.",
+      "verificationStatus": "selected_claims_cross_checked_remaining_claims_pending"
+    },
+    {
+      "id": "physiology.renal.raas.b.6ac315759db9",
+      "type": "heading",
+      "level": 2,
+      "text": "효소 연쇄와 수용체"
+    },
+    {
+      "id": "physiology.renal.raas.b.719af30a03ad",
+      "type": "paragraph",
+      "markdown": "간에서 주로 합성된 안지오텐시노젠(angiotensinogen)은 레닌에 의해 절단되어 안지오텐신 I이 된다. 안지오텐신전환효소(angiotensin-converting enzyme, ACE)는 이를 안지오텐신 II로 전환한다. 폐혈관 내피가 중요한 반응 장소이지만 ACE가 폐에만 존재하는 것은 아니다. ACE는 브래디키닌 분해에도 관여하므로 ACE 억제제의 효과와 부작용을 안지오텐신 II 감소만으로 모두 설명할 수 없다. 국소 조직 RAAS와 ACE 외의 생성 경로도 있어 혈중 농도만으로 모든 조직 작용을 대변하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.renal.raas.99d84a1c"
+      ],
+      "conceptRefs": [
+        "FMA7197",
+        "FMA7204",
+        "FMA7205"
+      ]
+    },
+    {
+      "id": "physiology.renal.raas.b.93c57c3c5ed4",
+      "type": "paragraph",
+      "markdown": "안지오텐신 II는 AT1 수용체를 통해 혈관수축, 알도스테론 분비, 신장 나트륨 재흡수, 갈증과 바소프레신 분비에 영향을 준다. AT1은 G 단백질 연결수용체이며 여러 세포내 신호를 활성화한다. 급성 혈압 조절에 도움이 되는 반응이 만성 과활성 상태에서는 심혈관 재형성과 장기 손상에 기여할 수 있다. 한 생리계가 정상상태의 보상과 질환 상태의 악화에 모두 관여할 수 있다는 점이 중요하다. ACE2-안지오텐신-(1-7) 축 등은 고전적 RAAS와 다른 방향의 조절을 제공하지만, 이를 완전히 반대인 두 스위치로 단순화하면 조직별 복잡성을 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.raas.b.935354327ba8",
+      "type": "heading",
+      "level": 2,
+      "text": "부신과 원위 네프론"
+    },
+    {
+      "id": "physiology.renal.raas.b.0afd212df7b6",
+      "type": "paragraph",
+      "markdown": "알도스테론(aldosterone)은 부신겉질의 토리층(zona glomerulosa)에서 합성되는 스테로이드호르몬이다. 안지오텐신 II와 혈중 칼륨 상승이 중요한 분비 자극이다. ACTH도 영향을 줄 수 있지만 장기 조절의 중심을 코르티솔과 똑같이 설명하지 않는다. 스테로이드 합성에는 콜레스테롤 공급과 여러 효소가 필요하며, 코르티솔과 알도스테론 합성의 차이는 부신겉질 층별 효소 발현과 연결된다. 부신 전체 모델은 이런 층별 효소 분포를 직접 보여주지 못한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.renal.raas.a4a46e35"
+      ],
+      "conceptRefs": [
+        "FMA15629",
+        "FMA15630",
+        "FMA7204",
+        "FMA7205"
+      ]
+    },
+    {
+      "id": "physiology.renal.raas.b.8a5fd8a0750b",
+      "type": "paragraph",
+      "markdown": "알도스테론은 원위 네프론 주세포(principal cell)에서 미네랄코르티코이드수용체(mineralocorticoid receptor, MR)를 활성화하여 ENaC, Na+/K+-ATPase 및 관련 조절단백질의 기능에 영향을 준다. 관강에서 나트륨 재흡수가 증가하면 칼륨 분비를 촉진하는 전기화학적 조건이 형성될 수 있다. 그러나 칼륨 분비량은 알도스테론 농도만으로 정해지지 않는다. 원위 나트륨 전달량, 세뇨관 유량, 혈중 칼륨, ROMK와 BK 통로의 상태가 함께 관여한다. 사이세포(intercalated cell)의 산 분비도 알도스테론 작용과 연결된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.raas.b.d6fc83a78a42",
+      "type": "paragraph",
+      "markdown": "미네랄코르티코이드수용체는 코르티솔에도 결합할 수 있다. 표적 조직의 11β-hydroxysteroid dehydrogenase type 2는 코르티솔을 코르티손으로 전환하여 수용체 선택성을 유지하는 데 기여한다. 이 효소가 억제되거나 기능이 떨어지면 알도스테론 자체가 높지 않아도 미네랄코르티코이드 과다와 유사한 양상이 나타날 수 있다. 따라서 고혈압과 저칼륨혈증에서 레닌과 알도스테론을 함께 보는 이유는 단순한 호르몬 수치 측정을 넘어 조절 경로의 위치를 추론하기 위해서다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.raas.b.ff2d52286154",
+      "type": "heading",
+      "level": 2,
+      "text": "물 조절 및 약리와의 연결"
+    },
+    {
+      "id": "physiology.renal.raas.b.14aeafe78057",
+      "type": "paragraph",
+      "markdown": "알도스테론은 나트륨 보존을 조절하고, 항이뇨호르몬(antidiuretic hormone, ADH; vasopressin)은 집합관의 물 투과성을 조절하는 핵심 호르몬이다. ADH의 V2 수용체 자극은 aquaporin-2의 관강막 삽입을 촉진한다. 물은 삼투 기울기와 투과성이 허용하는 범위에서 이동하므로 나트륨 재흡수 증가가 항상 같은 정도의 자유수 보존을 뜻하지 않는다. 혈청 나트륨 농도는 체내 나트륨 총량만의 지표가 아니라 교환 가능한 양이온과 총체수분의 관계를 반영한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.raas.b.18300c36eeac",
+      "type": "paragraph",
+      "markdown": "ACE 억제제와 안지오텐신수용체차단제(angiotensin receptor blocker, ARB)는 RAAS의 서로 다른 지점을 차단한다. 사구체의 날세동맥 긴장이 줄면 사구체내압이 낮아져 치료 초기에 여과 지표가 변할 수 있다. 이는 신실질의 직접 독성과 구분해야 하지만, 심한 저관류나 특정 혈관 질환 상황에서는 임상적으로 중요한 신기능 저하가 생길 수 있다. 알도스테론 효과 감소는 칼륨 배설도 줄일 수 있으므로 칼륨과 신기능 감시가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "diagram.raas.block",
+      "type": "diagram",
+      "diagramRef": "diagram.raas",
+      "path": "diagrams/diagram.raas.svg",
+      "alt": "diagram.raas; original schematic; see limitations in companion JSON",
+      "verificationStatus": "editorial_schematic_not_specialist_reviewed"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/renal/sections/physiology.renal.raas.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.physiology.renal.raas.001"
+  ],
+  "prerequisites": [
+    "physiology.renal.filtration"
+  ],
+  "relatedLessons": [
+    "nephrology.ckd.evaluation"
+  ],
+  "glossary": [
+    {
+      "conceptId": "concept.raas",
+      "ko": "레닌-안지오텐신-알도스테론계",
+      "en": "RAAS",
+      "definition": "관류·염분 취급·혈관 긴장도를 연결하는 조절계"
+    },
+    {
+      "conceptId": "concept.effective-volume",
+      "ko": "유효동맥혈량",
+      "en": "Effective arterial blood volume",
+      "definition": "동맥 순환의 조직 관류 충족을 나타내는 기능적 개념"
+    }
+  ],
+  "keyFacts": [
+    "유효동맥혈량은 총체액량과 다를 수 있다."
+  ]
+}

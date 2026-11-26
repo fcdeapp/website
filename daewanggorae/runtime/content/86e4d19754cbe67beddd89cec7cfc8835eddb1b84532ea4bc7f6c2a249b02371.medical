@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "radiology",
+  "title": {
+    "ko": "영상의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "radiology.chapter.mri",
+      "path": "domains/09-clinical-diagnostics/subjects/radiology/chapters/mri/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "radiology.plan.001",
+    "radiology.plan.002",
+    "radiology.plan.003",
+    "radiology.plan.004",
+    "radiology.plan.005",
+    "radiology.plan.006",
+    "radiology.mri.signal-and-diffusion"
+  ]
+}

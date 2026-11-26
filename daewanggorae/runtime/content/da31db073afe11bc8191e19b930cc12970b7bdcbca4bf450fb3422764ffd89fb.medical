@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.retroperitoneum.kidney-ureter.organ-context",
+  "sceneId": "scene.anatomy.retroperitoneum.kidney-ureter.organ-context",
+  "lessonId": "anatomy.retroperitoneum.kidney-ureter",
+  "triggerBlockId": "anatomy.retroperitoneum.kidney-ureter.b.350bdfceac3e",
+  "primaryStructures": [
+    "FMA7204",
+    "FMA7205"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA7204",
+    "FMA7205"
+  ],
+  "modelIds": [
+    "partof:FJ3147",
+    "partof:FJ3145"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3147.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3145.obj"
+  ],
+  "cameraPosition": [
+    1.4037999999999968,
+    -493.414648877809,
+    1028.626
+  ],
+  "cameraTarget": [
+    1.4037999999999968,
+    -85.7232,
+    1028.626
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -87.5754,
+      -111.855,
+      966.812
+    ],
+    "max": [
+      90.383,
+      -59.5914,
+      1090.44
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "양측 콩팥의 좌우 위치",
+  "mappingConfidence": "exact_attachment_ids_and_bounds_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "미세네프론·소변흐름·요관폐쇄 및 개인별 혈관 변이는 표현하지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

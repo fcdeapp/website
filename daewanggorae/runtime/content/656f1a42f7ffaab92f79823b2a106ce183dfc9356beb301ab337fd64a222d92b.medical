@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.lower-limb.hip-gluteal.bone-context",
+  "sceneId": "scene.anatomy.lower-limb.hip-gluteal.bone-context",
+  "lessonId": "anatomy.lower-limb.hip-gluteal",
+  "triggerBlockId": "anatomy.lower-limb.hip-gluteal.b.c31939d49fc4",
+  "primaryStructures": [
+    "FMA16586",
+    "FMA24474"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA16586",
+    "FMA24474"
+  ],
+  "modelIds": [
+    "partof:FJ3152",
+    "partof:FJ3365"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3152.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3365.obj"
+  ],
+  "cameraPosition": [
+    -76.46215,
+    -1210.0920597945815,
+    663.0095
+  ],
+  "cameraTarget": [
+    -76.46215,
+    -70.06889,
+    663.0095
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -150.134,
+      -139.019,
+      368.15
+    ],
+    "max": [
+      -2.7903,
+      -1.11878,
+      957.869
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "엉덩관절·볼기근·궁둥신경의 관계의 정상 성인 뼈 관계",
+  "mappingConfidence": "exact_attachment_ids_and_bounds_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "정상 성인 뼈의 정적 장면. 인대·근육·신경·혈류 및 손상·보행 동역학을 이 장면으로 대체하지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

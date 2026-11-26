@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology",
+  "title": {
+    "ko": "일반약리학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "pharmacology.chapter.general",
+      "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/chapter.json"
+    },
+    {
+      "id": "pharmacology.chapter.autonomic",
+      "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/autonomic/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "pharmacology.plan.001",
+    "pharmacology.plan.002",
+    "pharmacology.plan.003",
+    "pharmacology.plan.004",
+    "pharmacology.plan.005",
+    "pharmacology.plan.006",
+    "pharmacology.general.pharmacokinetics",
+    "pharmacology.autonomic.receptors",
+    "pharmacology.general.pharmacodynamics"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.endocrine.calcium-phosphate",
+  "subjectId": "physiology",
+  "chapterId": "endocrine",
+  "title": {
+    "ko": "칼슘·인산과 PTH·비타민 D의 통합",
+    "en": "Calcium-Phosphate Homeostasis and Hormonal Regulation"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.endocrine.calcium-phosphate.lo.01",
+      "text": "총칼슘과 이온화칼슘을 구분한다."
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.lo.02",
+      "text": "PTH·비타민 D·FGF23의 작용을 연결한다."
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.lo.03",
+      "text": "혈중 칼슘과 뼈의 물질수지를 나누어 해석한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.23816630be85",
+      "type": "heading",
+      "level": 2,
+      "text": "세 구획과 두 가지 임무"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.1c97db8affc6",
+      "type": "paragraph",
+      "markdown": "칼슘은 뼈의 무기질 성분이면서 세포 신호와 신경근 흥분성, 분비와 응고 등 다양한 기능에 필요하다. 체내의 큰 저장량은 뼈에 있고 세포외액의 작은 분획이 빠르게 조절된다. 세포질의 자유 Ca2+도 세포외액과 소기관 저장소에 비해 낮게 유지되어 신호의 기울기를 만든다. 혈중 농도 조절과 뼈의 장기적인 강도·무기질 함량은 연결되어 있지만 같은 질문은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.90fd961af0b3",
+      "type": "paragraph",
+      "markdown": "혈중 총칼슘에는 단백질 결합형과 작은 음이온에 결합한 분획, 이온화된 자유형이 포함된다. 생리적 효과와 직접 연결되는 이온화 분획은 albumin과 pH 등 조건에 따라 총농도와 다른 방향을 보일 수 있다. Albumin이 낮으면 총칼슘이 낮아도 자유형 상태가 같은 정도로 낮지 않을 수 있다. pH 변화는 단백질 결합에 영향을 주므로 빠른 산염기 변화에서 총칼슘만으로 증상을 해석하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.59bcc29b015a",
+      "type": "heading",
+      "level": 2,
+      "text": "감지와 PTH 분비"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.a49bdd77432d",
+      "type": "paragraph",
+      "markdown": "부갑상샘 세포의 calcium-sensing receptor(CaSR)는 세포외 Ca2+ 상태를 분비 조절에 연결한다. 이온화칼슘이 낮아지면 PTH 분비가 증가하는 방향의 반응이 나타난다. PTH는 신장과 뼈를 통해 혈중 Ca2+를 유지하고 비타민 D 활성화 경로를 조절하여 장의 흡수에도 간접 영향을 준다. 같은 호르몬의 단기 분비와 장기 합성·샘 증식은 시간 규모가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.d52ee34fbf34",
+      "type": "paragraph",
+      "markdown": "Mg2+ 상태도 PTH 분비와 작용에 영향을 줄 수 있다. 심한 Mg2+ 결핍에서는 칼슘 저하에 대한 적절한 반응이 손상될 수 있어 단순히 PTH를 측정했다는 사실만으로 조절계를 모두 이해할 수는 없다. 유전적 수용체 기능 변화와 약물도 감지·분비의 관계를 바꾼다. 칼슘이 높은데 PTH가 참고범위 안에 있다는 결과는 정상 상황에서 기대되는 억제가 적절한지와 함께 판단해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.d173f70f3211",
+      "type": "heading",
+      "level": 2,
+      "text": "신장에서의 칼슘과 인산 처리"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.c2e953bc9bcd",
+      "type": "paragraph",
+      "markdown": "칼슘은 여러 네프론 분절에서 회수되며 근위와 Henle 고리의 세포사이 이동, 원위 분절의 능동적 조절이 각각 기여한다. PTH는 특히 조절 가능한 분절의 칼슘 재흡수에 영향을 주고, 인산의 근위 재흡수는 줄여 소변 배설을 늘리는 방향으로 작용한다. 칼슘과 인산이 뼈에서 함께 방출되어도 신장의 차등 처리가 혈중 최종 조합을 바꾼다. 한 장기의 반응만으로 전체 농도를 예측할 수 없는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.a01346580091",
+      "type": "paragraph",
+      "markdown": "PTH는 신장의 1α-hydroxylase 계통을 조절하여 활성 비타민 D 생성에 기여한다. 신기능이 떨어지면 인산 배설과 비타민 D 대사, 조절호르몬의 균형이 함께 변한다. 단백질 결합과 GFR, 약물과 원위 수송 상태도 소변 칼슘을 바꿀 수 있다. 소변 칼슘이 적거나 많다는 결과는 식이·체액과 신기능, 호르몬 및 채뇨 상태를 함께 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.3957605c8226",
+      "type": "heading",
+      "level": 2,
+      "text": "뼈의 재형성과 호르몬"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.dc99128d0c13",
+      "type": "paragraph",
+      "markdown": "Osteoclast는 뼈 흡수에, osteoblast 계통은 기질 형성과 무기질화 및 세포간 조절에 관여한다. PTH의 osteoclast 효과는 골모세포 계통의 RANKL·OPG 등 신호를 통한 간접 연결이 중요하다. 흡수와 형성은 재형성 단위에서 연결되지만 시간과 균형이 달라질 수 있다. 지속적으로 높은 노출과 간헐적 약리 자극은 뼈에 다른 결과를 만들 수 있으므로 PTH는 언제나 같은 방향의 뼈 파괴 호르몬이라는 설명은 충분하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.c95ec61b30e9",
+      "type": "paragraph",
+      "markdown": "뼈의 무기질화에는 칼슘과 인산 공급뿐 아니라 유기기질과 국소 효소·억제인자, 세포 기능이 필요하다. 뼈가 적어진 상태와 기질의 무기질화가 불충분한 상태는 원리상 구분된다. 영상에서 낮은 골밀도가 보인다는 사실만으로 모든 원인을 확정하지 않는다. 연령과 호르몬, 영양과 신장, 약물 및 유전적 원인을 임상 소견과 함께 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.ff62f593ddb1",
+      "type": "heading",
+      "level": 2,
+      "text": "비타민 D의 활성화와 작용"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.d80599ac04b2",
+      "type": "paragraph",
+      "markdown": "비타민 D는 피부 합성과 식이 공급을 거쳐 간의 25-hydroxylation, 신장의 1α-hydroxylation 등으로 활성 형태와 연결된다. 혈중 25-hydroxyvitamin D는 저장·공급 상태를 평가하는 지표로 흔히 쓰이고, 활성 1,25-dihydroxyvitamin D는 조절호르몬과 신기능의 영향을 받는다. 두 수치를 같은 검사의 다른 이름처럼 사용해서는 안 된다. 공급 부족에서도 보상성 호르몬 반응에 따라 활성형이 같은 정도로 낮아지지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.3ff648051cbb",
+      "type": "paragraph",
+      "markdown": "활성 비타민 D는 장의 칼슘·인산 흡수와 여러 표적의 유전자 발현에 영향을 준다. 동시에 PTH와 다른 조절계에 되먹임을 제공한다. 대사 효소와 불활성화 경로, 결합단백질과 수용체의 차이는 개별 상태를 바꾼다. 장 흡수와 신장 회수, 뼈의 유출입이 함께 혈중 농도를 결정하므로 비타민 D의 한 작용만으로 모든 임상 결과를 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.c5c776a3da55",
+      "type": "heading",
+      "level": 2,
+      "text": "FGF23과 인산의 조절"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.1bc19ec59b4b",
+      "type": "paragraph",
+      "markdown": "뼈세포 계통에서 유래하는 FGF23은 신장의 인산 처리와 비타민 D 대사에 중요한 조절 신호다. 수용체와 Klotho 계통의 상태가 작용에 관여하며, 인산 배설을 늘리고 활성 비타민 D 공급을 낮추는 방향의 효과가 있다. PTH와 FGF23은 일부 신장 효과의 방향을 공유하면서도 유도 신호와 다른 표적 작용이 달라 서로의 단순한 복제 호르몬은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.03714cd6fc0b",
+      "type": "paragraph",
+      "markdown": "만성콩팥병에서는 인산 부하와 배설 능력, FGF23과 PTH 및 활성 비타민 D가 상호작용한다. 시간에 따라 보상 단계와 뚜렷한 농도 이상이 달라질 수 있고, 혈중 인산이 한 번 정상이라고 조절계의 부담이 모두 정상인 것은 아니다. 뼈의 turnover와 혈관·조직의 무기질 침착 등 전신 결과를 함께 평가해야 한다. 단일 혈중 농도로 뼈 조직 상태를 정확히 분류하는 데는 한계가 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.457e1986de3a",
+      "type": "heading",
+      "level": 2,
+      "text": "Calcitonin과 검사 해석"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.e23360096165",
+      "type": "paragraph",
+      "markdown": "갑상샘 C세포에서 분비되는 calcitonin은 뼈 흡수 등 일부 과정에 영향을 주지만 성인의 일상적 칼슘 항상성에서 PTH·비타민 D와 같은 중심 비중으로 설명하지 않는다. 혈중 calcitonin은 특정 임상 평가에서 다른 의미를 가지므로 항상성을 조절하는 작용과 종양표지자 등의 사용을 구분한다. 같은 장기에 존재하는 여포세포의 갑상샘호르몬과도 분비세포와 조절계가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.calcium-phosphate.b.5ecc99bfbbbb",
+      "type": "paragraph",
+      "markdown": "칼슘 이상에서는 이온화 또는 적절히 해석한 총칼슘과 PTH의 관계, 인산과 Mg2+, 신기능과 비타민 D, 약물 및 임상 상태를 통합한다. 보정 공식을 사용해 계산한 값은 직접 측정한 이온화칼슘과 완전히 같은 검사가 아니며 특정 환자군에서 오차가 클 수 있다. 현재의 혈중 농도와 장기 물질수지, 뼈와 신장의 기능을 별개의 축으로 나누어 해석하면 원인을 더 정확히 추론할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/endocrine/sections/physiology.endocrine.calcium-phosphate.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.physiology.endocrine.calcium-phosphate.001"
+  ],
+  "keyFacts": [
+    "인산 재흡수를 줄이고 활성 비타민 D를 낮추는 방향으로 작용한다."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "question.breast-surgery.assessment.breast-mass.001",
+  "kind": "original_concept_question",
+  "lessonId": "breast-surgery.assessment.breast-mass",
+  "prompt": "의심 영상과 양성 생검이 불일치하면 어떻게 하는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "양성 결과이므로 모든 추적을 무조건 끝낸다."
+    },
+    {
+      "id": "B",
+      "text": "표적과 검체 및 영상-병리 일치성을 재평가한다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "표본이 실제 병변을 대표하는지와 병리 결과가 영상을 설명하는지를 확인해야 한다.",
+  "optionRationales": {
+    "A": "표본이 실제 병변을 대표하는지와 병리 결과가 영상을 설명하는지를 확인해야 한다.",
+    "B": "표본이 실제 병변을 대표하는지와 병리 결과가 영상을 설명하는지를 확인해야 한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

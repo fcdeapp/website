@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.inflammation.acute-chronic",
+  "subjectId": "pathology",
+  "chapterId": "inflammation",
+  "title": {
+    "ko": "급성·만성 염증과 조직 손상",
+    "en": "Acute and Chronic Inflammation"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.inflammation.acute-chronic.lo.01",
+      "text": "혈관반응과 백혈구 유출의 단계를 설명한다."
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.lo.02",
+      "text": "주요 염증매개물질의 작용을 연결한다."
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.lo.03",
+      "text": "육아종성 염증과 일반 만성염증을 구분한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.inflammation.acute-chronic.b.0cff3ebf7997",
+      "type": "heading",
+      "level": 2,
+      "text": "염증의 생물학적 과제"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.c45d731ef392",
+      "type": "paragraph",
+      "markdown": "염증(inflammation)은 감염이나 조직손상에 대응하여 원인과 손상조직을 제거하고 회복을 준비하는 반응이다. 병원체뿐 아니라 허혈, 외상, 결정과 면역반응도 이를 유발한다. 세포는 미생물 유래 분자양상과 손상 관련 분자양상을 여러 인식수용체로 감지한다. TLR과 일부 세포질 수용체, 보체와 항체는 서로 다른 위치에서 원인 인식에 관여하며, 같은 자극이 여러 경로를 동시에 활성화할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.24e687043c20",
+      "type": "paragraph",
+      "markdown": "염증의 보호 효과와 손상 효과는 함께 존재한다. 백혈구의 살균효소와 활성산소는 미생물을 제거하지만 주변 조직도 손상시킬 수 있다. 혈관 투과성과 응고의 국소 변화는 원인을 제한하는 데 도움이 되나, 광범위하게 활성화되면 부종과 미세순환 장애를 악화시킬 수 있다. 염증의 결과는 자극의 지속성과 크기, 숙주 방어, 침범 조직의 재생능력 및 반응을 종료하는 기전에 따라 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.5780af7415c1",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관확장과 투과성"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.995342911fde",
+      "type": "paragraph",
+      "markdown": "급성염증 초기에 소동맥과 미세혈관이 확장되면 국소 혈류가 증가하여 발적과 열감이 생긴다. 혈관 투과성 증가로 단백질과 액체가 조직으로 이동하면 부종이 형성된다. 염증성 삼출액(exudate)은 단순한 압력 변화로 생기는 저단백성 여출액(transudate)과 기전이 다르지만, 실제 체액검사의 판정은 부위와 사용 기준을 함께 고려한다. 단백질 이동과 혈류 정체는 백혈구가 혈관벽 가까이에 모이는 조건에도 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.96747f858767",
+      "type": "paragraph",
+      "markdown": "Histamine은 내피 반응과 투과성 변화에, prostaglandin은 혈관반응과 통증·발열에, leukotriene은 백혈구 유주와 기관지 및 혈관 반응에 관여한다. Bradykinin과 보체 조각, cytokine도 중요한 매개체다. 하나의 매개체가 하나의 증상만 담당하는 구조가 아니므로 특정 증상을 모두 한 물질의 과다로 환원하지 않는다. 동일한 지질 전구체에서 염증을 촉진하거나 종료에 기여하는 여러 매개체가 만들어질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.bf705034c295",
+      "type": "heading",
+      "level": 2,
+      "text": "백혈구의 유출과 이동"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.e68fe3f03a64",
+      "type": "paragraph",
+      "markdown": "혈관 내 백혈구는 내피 표면에서 구르기(rolling), 활성화, 단단한 부착, 혈관벽 통과를 거쳐 조직으로 나간다. Selectin 계열은 구르기에, integrin의 친화도 변화와 내피 부착분자는 단단한 부착에 중요하다. Chemokine은 이동 방향을 안내하고 integrin 활성화에도 관여한다. 내피 사이를 통과한 백혈구는 기저막을 지나 화학주성 기울기를 따라 이동한다. 유출된 세포 수는 혈중 수뿐 아니라 부착과 이동 기능에도 좌우된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.bd72388a51ab",
+      "type": "paragraph",
+      "markdown": "호중구는 많은 급성 세균성 염증에서 초기에 두드러지고, 단핵구·대식세포는 후속 처리와 조절에 기여한다. 그러나 자극 종류에 따라 우세 세포가 달라지고 호중구가 오래 지속되는 상황도 있다. 호산구는 기생충과 알레르기 반응의 일부에서, 림프구는 바이러스 감염과 면역반응 등에서 중요하다. 급성과 만성은 세포 종류 하나만으로 결정되는 이름이 아니라 경과와 조직반응을 함께 기술하는 분류다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.9c8f6c23360d",
+      "type": "heading",
+      "level": 2,
+      "text": "포식과 살균, 손상"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.14613f518f94",
+      "type": "paragraph",
+      "markdown": "Opsonin은 미생물 표면을 표시하여 식세포 수용체의 인식을 돕는다. 포식소체는 리소좀과 결합하고, NADPH oxidase가 만드는 활성산소와 다양한 효소가 미생물 제거에 관여한다. 호중구의 myeloperoxidase 경로와 대식세포의 질소산화물 경로 등은 서로 다른 살균 체계를 제공한다. 미생물이 세포내에서 생존하거나 포식소체의 성숙을 방해하면 지속 감염과 만성 반응이 생길 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.265268024b5d",
+      "type": "paragraph",
+      "markdown": "백혈구 내용물이 세포 밖으로 유출되거나 조절이 실패하면 숙주 기질과 세포가 손상된다. NET 형성도 미생물 포획에 기여하는 동시에 혈전과 조직손상에 관련될 수 있다. 이 반응을 무조건 유익하거나 유해하다고 분류하지 않고 위치와 지속시간, 제거 능력을 함께 살펴야 한다. 유전적 포식세포 기능장애는 반복 감염과 특유의 염증 양상으로 드러날 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.b3972113be5a",
+      "type": "heading",
+      "level": 2,
+      "text": "만성염증과 육아종"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.90e35ada851c",
+      "type": "paragraph",
+      "markdown": "만성염증에서는 지속되는 염증세포 침윤, 조직 파괴와 수복이 함께 나타난다. 대식세포, 림프구와 형질세포의 상호작용이 원인을 제거하려는 반응과 섬유화를 연결한다. 대식세포 활성 상태는 조직 환경에 따라 연속적으로 변하며 두 종류의 고정된 세포로만 나누어 설명하기 어렵다. 반복되는 손상과 회복은 장기의 구조를 바꾸고 기능을 저하시킬 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.5a1841bf5347",
+      "type": "paragraph",
+      "markdown": "육아종(granuloma)은 활성화된 대식세포가 모인 조직화된 염증 패턴으로 상피양세포와 다핵거대세포, 주변 림프구 등이 관찰될 수 있다. 감염성 원인과 비감염성 원인이 모두 가능하다. 건락괴사가 결핵을 시사할 수 있지만 형태만으로 원인균을 확정하지 않고 특수염색, 배양과 분자검사 및 임상 맥락을 대조한다. 육아조직은 상처치유 과정의 혈관·기질 풍부 조직으로 육아종과 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-chronic.b.95198133f565",
+      "type": "paragraph",
+      "markdown": "염증의 종료에는 자극 제거, 호중구 사멸과 제거, 매개체 분해, 항염증성 신호와 배액이 관여한다. 완전 회복, 농양 형성, 섬유화 또는 만성화는 서로 다른 결과다. 염증 수치가 낮아졌다는 사실이 조직 기능과 구조가 모두 회복되었음을 의미하지 않으므로 증상과 장기 기능, 영상 및 필요한 조직평가를 함께 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/sections/pathology.inflammation.acute-chronic.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.inflammation.acute-chronic.001"
+  ],
+  "keyFacts": [
+    "육아종은 조직화된 대식세포성 염증 패턴이고 육아조직은 치유 중의 혈관·기질 풍부 조직이다."
+  ]
+}

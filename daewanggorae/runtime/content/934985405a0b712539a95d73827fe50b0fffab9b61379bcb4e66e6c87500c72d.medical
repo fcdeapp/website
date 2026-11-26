@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "industrial-health.physical.noise",
+  "subjectId": "industrial-health",
+  "chapterId": "physical",
+  "title": {
+    "ko": "소음 노출과 청력 보존",
+    "en": "Noise Exposure and Hearing Conservation"
+  },
+  "learningObjectives": [
+    {
+      "id": "industrial-health.physical.noise.lo.01",
+      "text": "소리의 물리량과 누적 노출을 구별한다"
+    },
+    {
+      "id": "industrial-health.physical.noise.lo.02",
+      "text": "감각신경성 손상과 청력검사의 정보를 설명한다"
+    },
+    {
+      "id": "industrial-health.physical.noise.lo.03",
+      "text": "환경 관리와 개인 보호 및 감시의 역할을 구분한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "industrial-health.physical.noise.b.6b426529e866",
+      "type": "heading",
+      "level": 2,
+      "text": "소리의 강도와 시간"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.7c7ad6b340bf",
+      "type": "paragraph",
+      "markdown": "소리는 매질의 압력 변동으로 전달되며 주파수와 크기, 시간 양상을 가진다. 데시벨(decibel, dB)은 기준에 대한 비를 로그로 표현하므로 숫자의 차이를 일반적인 선형 배수처럼 해석해서는 안 된다. A가중 음압 수준은 사람의 청각 민감도를 반영하려는 가중을 적용하지만 모든 주파수와 충격성 노출의 위험을 하나의 값이 완전히 대표하지는 않는다. 측정 방법과 시간 평균, 주파수 특성을 함께 알아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.95daa19bc101",
+      "type": "paragraph",
+      "markdown": "같은 평균 수준이라도 노출 지속시간과 고농도 사건, 회복 간격 및 충격성 소음의 특성이 실제 부담을 바꿀 수 있다. 작업장 한 지점의 측정값과 움직이며 일하는 개인의 노출은 다를 수 있다. 측정한 날의 작업이 평소와 같은지, 정비와 비정상 작업을 포함했는지도 확인한다. 청력 보호구를 착용했다는 사실은 바깥에서 측정한 농도가 그대로 귀에 도달했다는 뜻도, 귀의 노출이 항상 충분히 낮아졌다는 뜻도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.8f82e536d63f",
+      "type": "heading",
+      "level": 2,
+      "text": "달팽이관과 손상"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.d206d04d4f3e",
+      "type": "paragraph",
+      "markdown": "소리의 진동은 중이의 전달을 거쳐 달팽이관의 기계적 움직임으로 이어지고 유모세포와 신경의 전기적 신호로 변환된다. 달팽이관의 위치에 따라 민감한 주파수가 다르다. 큰 소음은 기계적 스트레스와 대사적 부담, 산화 손상 등으로 청각 구조에 영향을 줄 수 있다. 소음성 난청은 외이도에 소리가 막혀 들어가지 않는 전음성 문제와 구별되는 감각신경성 손상을 중심으로 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.5f0fd4bc46d7",
+      "type": "paragraph",
+      "markdown": "일시적으로 역치가 올라갔다가 회복되는 변화와 영구적인 변화는 구별해야 한다. 일시적인 호전이 반복 노출을 계속 받아도 안전하다는 증거는 아니다. 이명과 말소리 이해의 어려움, 특히 소음 속에서의 불편이 동반될 수 있다. 환자가 조용한 진료실에서 대화할 수 있다는 사실만으로 일터에서의 청각 기능과 안전이 정상이라고 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.b6aa33e91565",
+      "type": "heading",
+      "level": 2,
+      "text": "다른 노출과 감별"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.ced2522c1a82",
+      "type": "paragraph",
+      "markdown": "나이와 과거 귀질환, 약물과 비직업적 소음, 화학물질 노출은 청력 변화에 함께 관여할 수 있다. 특정 주파수의 역치 저하 패턴은 단서이지만 직업성 원인을 단독으로 확정하는 도장은 아니다. 좌우 차이와 갑작스러운 변화, 귀 통증과 어지럼 등은 별도의 원인 평가를 필요로 할 수 있다. 모든 난청을 작업장의 소음이나 연령 하나로 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.34cd536323df",
+      "type": "paragraph",
+      "markdown": "작업력에서는 공정과 기계, 작업시간 및 과거 직장과 보호구 사용을 확인하고 공연과 총기, 개인 음향기기 등 다른 노출도 묻는다. 소음 외의 이독성 물질과 약물은 다른 경로로 손상에 기여할 수 있다. 혼합 노출이 있을 때 각각의 노출과 시간 관계를 기록한다. 냄새와 소음 중 하나를 줄였다고 다른 위해가 함께 사라지는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.aa2f77d88241",
+      "type": "heading",
+      "level": 2,
+      "text": "청력검사와 감시"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.226142125f3c",
+      "type": "paragraph",
+      "markdown": "순음청력검사는 주파수별 역치를 측정하여 변화의 분포를 보여준다. 검사실과 기기, 주변 소음 및 환자의 이해와 협조가 신뢰성에 영향을 준다. 최근의 강한 소음 노출은 일시적 변화를 만들 수 있어 검사 조건과 시점을 확인해야 한다. 이전 검사와의 비교에서는 같은 방식과 기준, 귀의 상태 및 측정 오차를 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.fe64c20e35f0",
+      "type": "paragraph",
+      "markdown": "청력 감시는 위험을 조기에 찾고 예방을 수정하는 목적을 가진다. 변화가 확인되면 재검과 의학적 평가뿐 아니라 작업환경과 보호 체계의 적절성을 검토해야 한다. 검사에서 손상을 찾은 뒤 보호구만 다시 지급하고 원인 노출을 유지하면 예방의 목적이 제한된다. 청력검사를 정기적으로 했다는 사실과 청력 손상을 실제로 예방했다는 결과는 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.9ebbb3c6493f",
+      "type": "heading",
+      "level": 2,
+      "text": "예방과 기능"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.d8a0be506dce",
+      "type": "paragraph",
+      "markdown": "소음원 제거와 더 조용한 장비로의 대체, 차폐와 방진·흡음 및 공정의 분리는 노출 자체를 줄이는 접근이다. 작업시간과 동선 조정은 노출의 기회를 바꾼다. 개인 보호구는 종류와 적합성, 착용과 유지가 중요하며 사람마다 실제 감쇠가 다를 수 있다. 표시된 성능을 모든 착용자의 실제 보호 효과와 동일시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "industrial-health.physical.noise.b.6a03d050b6eb",
+      "type": "paragraph",
+      "markdown": "위험 관리에는 경고음과 의사소통, 다른 안전 업무의 요구도 포함한다. 소음을 줄이면서 필요한 신호를 인지할 수 있는 조건을 마련해야 한다. 청력 저하가 있는 노동자의 업무 조정과 보조는 배제보다 안전하고 지속 가능한 참여를 목표로 한다. 산업보건에서 청력 보존은 귀의 검사 수치만 지키는 일이 아니라 노출 환경과 실제 기능 및 안전을 함께 관리하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/10-prevention-clerkships/subjects/industrial-health/chapters/physical/sections/industrial-health.physical.noise.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.industrial-health.physical.noise.001"
+  ],
+  "keyFacts": [
+    "아니다. 측정과 감시는 예방 개입의 적절성을 재평가하는 자료이다."
+  ]
+}

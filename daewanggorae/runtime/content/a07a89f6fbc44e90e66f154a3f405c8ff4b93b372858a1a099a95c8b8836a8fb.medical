@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "critical-care.shock.hemodynamics",
+  "subjectId": "critical-care",
+  "chapterId": "shock",
+  "title": {
+    "ko": "쇼크와 산소전달의 생리학적 접근",
+    "en": "Physiological Approach to Shock and Oxygen Delivery"
+  },
+  "learningObjectives": [
+    {
+      "id": "critical-care.shock.hemodynamics.lo.01",
+      "text": "혈압과 조직관류를 구분한다."
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.lo.02",
+      "text": "쇼크의 네 기전을 비교한다."
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.lo.03",
+      "text": "동적 재평가와 수액 반응성의 의미를 설명한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "critical-care.shock.hemodynamics.b.d4559c159b23",
+      "type": "heading",
+      "level": 2,
+      "text": "압력이 있어도 관류가 충분하지 않을 수 있다"
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.b.e707f77afc46",
+      "type": "paragraph",
+      "markdown": "쇼크(shock)는 조직의 산소 공급과 이용이 생리적 요구를 충족하지 못하는 순환부전 상태로 이해할 수 있다. 저혈압은 중요한 단서지만 쇼크와 완전히 같은 말은 아니다. 보상성 혈관수축이 혈압을 유지하는 동안 이미 장기 관류가 불충분할 수 있고, 평소 혈압이 높은 환자는 같은 숫자에서도 다른 상태일 수 있다. 의식, 피부관류, 소변량, 호흡, 젖산의 경과와 혈역학 정보를 함께 평가한다. 한 번 측정한 혈압이나 젖산만으로 모든 조직의 상태를 대표하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.b.7b25eeb24ca7",
+      "type": "paragraph",
+      "markdown": "산소전달량(DO2)은 심박출량과 동맥 산소함량의 곱이다. 심박출량은 심박수와 일회박출량, 산소함량은 혈색소와 포화도 및 용해 산소에 좌우된다. 이 식은 혈압이 회복되어도 심박출량이나 산소운반이 부족할 수 있음을 보여준다. 조직은 산소추출률을 바꾸어 일부 보상하지만 한계가 있고, 미세순환과 세포 이용 장애도 영향을 준다. 젖산 상승은 저관류 외에 생성 증가와 제거 감소 등 여러 기전을 가질 수 있으므로 산소 부족의 완전한 동의어로 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.critical-care.shock.hemodynamics.4d1e52da"
+      ],
+      "conceptRefs": [
+        "FMA7088"
+      ]
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.b.e00f6833cc1c",
+      "type": "heading",
+      "level": 2,
+      "text": "기전별 분류"
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.b.2b9480fb57ad",
+      "type": "paragraph",
+      "markdown": "저혈량성 쇼크는 순환량 감소로 전부하와 심박출이 제한되는 기전을 중심으로 한다. 심인성 쇼크는 펌프 기능 장애가 핵심이고, 폐쇄성 쇼크는 심장 충만이나 유출을 방해하는 기계적 문제와 관련된다. 분포성 쇼크는 혈관 긴장과 혈류 분배의 변화가 중요하다. 실제 환자에서는 출혈과 심근 손상, 감염과 심기능 저하처럼 여러 기전이 섞일 수 있다. 분류를 했다는 이유로 다른 원인을 더 평가하지 않는 것은 위험하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.b.dd830cd17373",
+      "type": "paragraph",
+      "markdown": "진찰과 초음파는 심실 기능, 심낭, 우심실 부하, 큰정맥과 폐 소견 등을 통합하는 데 도움이 된다. 그러나 작은 정맥이나 낮은 충만압 하나만으로 수액이 필요하다고 단정하지 않는다. 정적 충만 지표와 수액에 대한 박출 반응은 다른 질문이다. 양압환기, 자발호흡, 부정맥과 우심실 기능은 여러 지표의 해석 조건을 바꾼다. 어떤 지표가 어떤 상황에서 검증되었는지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.b.86a8f697441e",
+      "type": "heading",
+      "level": 2,
+      "text": "반응성과 필요성의 차이"
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.b.2e87f51092c7",
+      "type": "paragraph",
+      "markdown": "수액 반응성(fluid responsiveness)은 적절한 전부하 증가에 박출량이 증가하는지를 뜻한다. 반응성이 있다는 사실만으로 반드시 수액을 투여해야 하는 것은 아니다. 실제 저관류의 존재, 기대 이익, 폐울혈과 조직부종 등 위해를 함께 평가해야 한다. 수동 다리올리기와 같은 가역적 조작은 적용 조건과 적절한 실시간 박출 측정이 충족되어야 의미가 있다. 단순 혈압 변화만으로 같은 검사를 대체할 수 없는 경우가 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.shock.hemodynamics.b.c2634d4e803b",
+      "type": "paragraph",
+      "markdown": "치료 후에는 목표 지표의 변화와 부작용을 다시 확인하고 가설을 갱신한다. 수액, 혈관작용제, 심근수축제, 기계적 처치와 감염원 조절은 원인과 생리에 따라 역할이 다르다. 원인 치료를 놓친 채 숫자만 맞추는 접근은 불충분하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/critical-care/chapters/shock/sections/critical-care.shock.hemodynamics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.critical-care.shock.hemodynamics.001"
+  ],
+  "prerequisites": [
+    "physiology.cardiovascular.cardiac-cycle",
+    "physiology.respiratory.ventilation-perfusion"
+  ],
+  "glossary": [
+    {
+      "conceptId": "concept.effective-volume",
+      "ko": "유효동맥혈량",
+      "en": "Effective arterial blood volume",
+      "definition": "동맥 순환의 조직 관류 충족을 나타내는 기능적 개념"
+    }
+  ],
+  "keyFacts": [
+    "실제 저관류와 기대 이익·울혈 위험을 함께 판단한다."
+  ]
+}

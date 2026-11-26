@@ -1,0 +1,28 @@
+{
+  "id": "question.physiology.digestive.secretion-control.001",
+  "kind": "original_concept_question",
+  "lessonId": "physiology.digestive.secretion-control",
+  "prompt": "췌장 관세포와 선방세포의 역할로 적절한 것은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "관세포는 오직 인슐린만 분비한다."
+    },
+    {
+      "id": "B",
+      "text": "담즙산은 단백질분해효소로 지방을 절단한다."
+    },
+    {
+      "id": "C",
+      "text": "관세포의 중탄산염 분비와 선방세포의 효소 분비가 소화 환경을 함께 만든다."
+    }
+  ],
+  "answer": "C",
+  "explanation": "산 중화와 효소 공급 및 담즙의 미셀 형성은 서로 다른 단계이다.",
+  "optionRationales": {
+    "A": "인슐린은 내분비 세포의 기능이며 관의 외분비 기능과 구분한다.",
+    "B": "담즙산은 지방 가수분해효소가 아니라 혼합미셀 형성 등에 기여한다.",
+    "C": "산 중화와 효소 공급 및 담즙의 미셀 형성은 서로 다른 단계이다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

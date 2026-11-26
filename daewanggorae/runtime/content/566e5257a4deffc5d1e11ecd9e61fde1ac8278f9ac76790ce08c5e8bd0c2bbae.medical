@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "08-neuroscience-psychiatry",
+  "title": {
+    "ko": "기초 신경과학·임상신경학·정신과학"
+  },
+  "subjectIds": [
+    "neuroscience",
+    "neurology",
+    "psychiatry"
+  ],
+  "subjects": [
+    {
+      "id": "neuroscience",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/manifest.json"
+    },
+    {
+      "id": "neurology",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/manifest.json"
+    },
+    {
+      "id": "psychiatry",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/manifest.json"
+    }
+  ],
+  "targetPages": 600,
+  "charactersPerPage": 1500,
+  "targetBodyCharacters": 900000,
+  "minimumProseFractionBeforeNextDomain": 0.1,
+  "minimumBodyCharactersBeforeNextDomain": 90000,
+  "progressPath": "domains/08-neuroscience-psychiatry/progress.json",
+  "readerPath": "domains/08-neuroscience-psychiatry/TEXTBOOK.md",
+  "evidencePath": "domains/08-neuroscience-psychiatry/references/lesson-evidence.json",
+  "bodyLoading": "section_json",
+  "sharedPackage": "medical-shared.zip",
+  "curriculumPath": "domains/08-neuroscience-psychiatry/curriculum.json",
+  "coveragePath": "domains/08-neuroscience-psychiatry/coverage.json",
+  "questionIndex": "domains/08-neuroscience-psychiatry/questions/index.json",
+  "sceneIndex": "domains/08-neuroscience-psychiatry/scenes/index.json",
+  "diagramIndex": "domains/08-neuroscience-psychiatry/diagrams/index.json",
+  "referenceCatalog": "domains/08-neuroscience-psychiatry/references/references.json",
+  "crossDomainLessonRefs": [],
+  "packageFile": "08-neuroscience-psychiatry.zip",
+  "requiresOriginalBodyParts3D": true,
+  "installRoot": "public/medicine",
+  "relatedLessonResolution": "resolve by stable ID; request another domain when not installed"
+}

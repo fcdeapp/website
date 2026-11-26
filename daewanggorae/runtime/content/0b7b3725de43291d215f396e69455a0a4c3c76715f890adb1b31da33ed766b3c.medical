@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neonatology.transition.circulation",
+  "subjectId": "neonatology",
+  "chapterId": "transition",
+  "title": {
+    "ko": "출생 전후 순환과 호흡의 전환",
+    "en": "Cardiorespiratory Transition at Birth"
+  },
+  "learningObjectives": [
+    {
+      "id": "neonatology.transition.circulation.lo.01",
+      "text": "태아순환의 세 우회로를 설명한다."
+    },
+    {
+      "id": "neonatology.transition.circulation.lo.02",
+      "text": "첫 호흡과 제대 결찰의 혈역학적 효과를 연결한다."
+    },
+    {
+      "id": "neonatology.transition.circulation.lo.03",
+      "text": "정상 전환과 병적 지속의 차이를 설명한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neonatology.transition.circulation.b.81b2294a6beb",
+      "type": "heading",
+      "level": 2,
+      "text": "태아의 산소 공급 경로"
+    },
+    {
+      "id": "neonatology.transition.circulation.b.cb9f85076214",
+      "type": "paragraph",
+      "markdown": "태아는 폐보다 태반에서 가스교환을 수행한다. 산소화된 혈액은 제대정맥을 통해 태아로 들어오고, 정맥관(ductus venosus), 타원구멍(foramen ovale), 동맥관(ductus arteriosus)은 혈류의 우회와 분배에 중요한 역할을 한다. 제대동맥은 태아에서 태반으로 혈액을 보낸다. 동맥과 정맥이라는 이름은 산소 함량이 아니라 심장에서 나가는지 돌아오는지의 방향을 기준으로 이해해야 한다. 태아의 여러 구획에서 혈액은 서로 다른 정도로 혼합되므로 전 태아혈액이 같은 산소 함량을 가지는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.transition.circulation.b.15690b115796",
+      "type": "paragraph",
+      "markdown": "태아 폐혈관 저항이 높아 폐로 흐르는 혈류 비율은 출생 후와 다르다. 타원구멍은 우심방에서 좌심방으로의 흐름을 허용하고, 동맥관은 폐동맥과 대동맥 사이를 연결한다. 이러한 통로는 정상 태아 생리에서 필요한 구조다. 출생 후에는 같은 연결이 조건에 따라 병적 단락이나 특정 선천심장질환의 생존에 중요한 통로가 될 수 있다. 구조의 의미는 시기와 압력관계에 따라 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.transition.circulation.b.0631efba467a",
+      "type": "heading",
+      "level": 2,
+      "text": "첫 호흡이 바꾸는 저항"
+    },
+    {
+      "id": "neonatology.transition.circulation.b.8f9117da5c49",
+      "type": "paragraph",
+      "markdown": "출생 후 폐가 팽창하고 산소화가 시작되면 폐혈관 저항이 감소하여 폐혈류가 증가한다. 폐정맥환류 증가는 좌심방 충만과 압력을 바꾸며 타원구멍의 기능적 닫힘에 기여한다. 제대순환이 끊기면 낮은 저항의 태반 순환이 제거되어 전신순환의 부하가 변한다. 호흡 시작과 제대 결찰은 서로 다른 조작이지만 정맥환류와 심장 부하를 통해 상호작용한다. 실제 전환은 한순간에 완결되는 단일 스위치가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.transition.circulation.b.3f7dd5cdb95c",
+      "type": "paragraph",
+      "markdown": "동맥관의 수축에는 산소와 prostaglandin 신호 변화가 관여한다. 기능적으로 혈류가 줄어드는 시점과 조직학적으로 폐쇄되는 시점은 다르다. 미숙아에서는 전환과 관의 반응이 다를 수 있고, 감염과 호흡 질환 등도 영향을 준다. 폐혈관 저항이 충분히 떨어지지 않으면 태아형 우좌단락이 지속되어 산소화에 문제가 생길 수 있다. 동맥관 또는 타원구멍이 보인다는 사실만으로 모든 저산소혈증의 원인을 결정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.transition.circulation.b.68c2b2264515",
+      "type": "heading",
+      "level": 2,
+      "text": "폐액과 표면활성물질"
+    },
+    {
+      "id": "neonatology.transition.circulation.b.2636c87036de",
+      "type": "paragraph",
+      "markdown": "태아 폐는 액체로 채워져 있으며 출생 전후 흡수와 제거가 일어나 공기 호흡으로 전환한다. 표면활성물질은 폐포 표면장력을 줄여 팽창과 안정성을 돕는다. 미숙한 폐에서는 부족과 구조적 미성숙이 호흡장애에 기여할 수 있다. 호흡곤란의 원인은 표면활성물질 부족 외에도 폐액 처리 지연, 감염, 공기누출, 선천기형과 심장질환 등 다양하다. 호흡수와 흉곽 움직임, 산소화, 청진과 영상·검사 정보를 통합해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.transition.circulation.b.c8d683b67c11",
+      "type": "paragraph",
+      "markdown": "신생아의 체온 조절과 포도당 공급도 전환에 중요하다. 작은 체격과 표면적, 저장 에너지와 미숙성은 열손실과 대사 요구에 영향을 준다. 저체온은 산소와 에너지 소비를 늘려 호흡순환의 부담을 키울 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "diagram.fetal-circulation.block",
+      "type": "diagram",
+      "diagramRef": "diagram.fetal-circulation",
+      "path": "diagrams/diagram.fetal-circulation.svg",
+      "alt": "diagram.fetal-circulation; original schematic; see limitations in companion JSON",
+      "verificationStatus": "editorial_schematic_not_specialist_reviewed"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/neonatology/chapters/transition/sections/neonatology.transition.circulation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neonatology.transition.circulation.001"
+  ],
+  "prerequisites": [
+    "physiology.cardiovascular.cardiac-cycle",
+    "physiology.respiratory.ventilation-perfusion"
+  ],
+  "keyFacts": [
+    "동맥과 정맥은 흐름 방향에 따른 이름이다."
+  ]
+}

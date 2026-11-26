@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.obstruction.copd",
+  "subjectId": "pulmonology",
+  "chapterId": "obstruction",
+  "title": {
+    "ko": "COPD의 기도·폐실질 변화와 기능 평가",
+    "en": "Airway and Parenchymal Changes in COPD"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.obstruction.copd.lo.01",
+      "text": "작은기도 병변과 폐기종을 호기 유량에 연결한다"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.lo.02",
+      "text": "폐활량검사와 증상·악화 위험을 구별한다"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.lo.03",
+      "text": "기관지확장과 재활 및 예방의 목적을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.obstruction.copd.b.8011f85b8235",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 유량 제한의 다른 구조"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.4f234835bdeb",
+      "type": "paragraph",
+      "markdown": "만성폐쇄성폐질환(chronic obstructive pulmonary disease, COPD)은 만성 호흡기 증상과 지속적인 기류 제한을 중심으로 평가하는 이질적인 질환이다. 작은기도의 염증과 재형성, 점액 및 폐포 구조의 손상은 서로 다른 비중으로 함께 존재할 수 있다. 기침과 가래가 많다는 임상 표현과 폐기종이라는 조직·영상의 변화는 같은 개념이 아니다. 환자마다 어떤 구조와 기능이 중심적으로 손상되었는지를 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.05cf136b1995",
+      "type": "paragraph",
+      "markdown": "폐기종(emphysema)에서는 폐포벽과 지지 구조의 소실로 탄성 반동과 가스교환 표면이 영향을 받는다. 호기 때 기도를 열어 두는 주변의 견인도 줄어 기도가 쉽게 좁아질 수 있다. 작은기도 저항 증가와 반동 감소가 결합하면 특히 강한 호기에서 유량이 제한된다. 힘을 더 주어 내쉬어도 같은 비율로 유량이 늘지 않는 생리적 배경이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.28a3ee0b9a44",
+      "type": "heading",
+      "level": 2,
+      "text": "공기 가둠과 호흡 부담"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.d6dbe016cc4e",
+      "type": "paragraph",
+      "markdown": "호기 시간이 충분하지 않거나 기도가 일찍 닫히면 공기가 남아 폐용적이 증가할 수 있다. 운동 중 호흡수가 늘면 다음 흡기 전 배출 시간이 짧아져 동적 과팽창(dynamic hyperinflation)이 심해질 수 있다. 횡격막의 길이와 작동 조건이 불리해지고 흡기 전에 극복해야 할 부담이 커질 수 있다. 운동 중 숨참은 산소포화도 하나만으로 설명되지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.70d86b88d682",
+      "type": "paragraph",
+      "markdown": "환기와 관류의 불일치, 가스교환 표면과 폐혈관 변화는 저산소혈증에 기여할 수 있다. 환기 능력과 부하, 중추 조절 및 대사 요구의 관계가 이산화탄소 상태에 영향을 준다. 모든 COPD 환자가 같은 정도의 이산화탄소 저류를 갖는 것은 아니다. 심한 호흡곤란이 있어도 산소화가 유지될 수 있고, 증상 표현이 적어도 중요한 가스 이상이 있을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.76957b973816",
+      "type": "heading",
+      "level": 2,
+      "text": "노출과 개인의 경과"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.3877313bbb6f",
+      "type": "paragraph",
+      "markdown": "흡연은 중요한 위험이지만 모든 환자가 흡연자이거나 모든 흡연자가 같은 질환 경과를 보이는 것은 아니다. 직업성 분진과 연기, 실내외 오염과 폐 발달 및 유전적 요인이 관여할 수 있다. 성장기의 폐기능 수준과 이후 감소 속도가 함께 성인의 기능을 결정한다. 노출력과 증상, 가족력 및 다른 질환을 포함하여 원인과 감별을 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.c85a6690dc9d",
+      "type": "paragraph",
+      "markdown": "천식과 기관지확장증, 심부전과 다른 폐질환은 증상과 검사 소견이 겹칠 수 있다. 기관지확장제에 대한 반응이 있다는 이유만으로 COPD를 배제하거나 반응이 없다는 이유로 천식을 모두 배제하는 단순화는 적절하지 않다. 한 번의 가역성 검사와 장기적인 질환 분류를 동일시하지 않는다. 병력과 기능의 변화, 영상과 임상적 특징을 통합한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.b1c203c92d89",
+      "type": "heading",
+      "level": 2,
+      "text": "진단과 다차원 평가"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.3e956ae10747",
+      "type": "paragraph",
+      "markdown": "폐활량검사(spirometry)는 지속적인 기류 제한을 확인하는 중심 검사이다. 기관지확장제 후의 FEV1/FVC를 적절한 증상과 위험 맥락에서 해석한다. 사용한 진단 기준의 판본과 고정비율의 연령 관련 한계, 경계값과 반복 측정의 문제를 알아야 한다. 검사의 노력과 기술이 부적절하면 진단 자체가 왜곡될 수 있어 수치만 복사하지 않고 품질을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.0c87c4b9781c",
+      "type": "paragraph",
+      "markdown": "FEV1의 저하 정도는 중요한 기능 정보지만 증상과 악화 및 전신 부담 전체를 대표하지 않는다. 운동 능력과 호흡곤란, 악화 병력과 입원, 산소화와 동반 질환을 별도로 평가한다. 영상의 폐기종과 유량 저하, 환자가 느끼는 제한이 일치하지 않을 때에는 폐용적과 확산능 및 다른 원인을 추가로 고려할 수 있다. 검사 사이의 불일치를 잘못된 환자 표현으로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.cab495d26a2c",
+      "type": "heading",
+      "level": 2,
+      "text": "안정기 관리"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.f88ff6c386fd",
+      "type": "paragraph",
+      "markdown": "흡연 중단과 유해노출 감소는 원인 환경을 다루며, 기관지확장제는 기도 긴장과 호흡 부담에 작용한다. 흡입치료의 효과는 약물 선택뿐 아니라 실제 흡입기 조작과 흡기 능력, 접근성과 복용에 영향을 받는다. 처방을 늘리기 전에 사용법과 실행을 확인해야 한다. 약의 이름이 같아도 장치와 투여 조건이 다르면 실제 노출이 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.fb60a3fb2d1f",
+      "type": "paragraph",
+      "markdown": "흡입 스테로이드는 모든 환자에게 같은 이득을 주는 기본 약제로 단순화할 수 없다. 악화 위험과 관련 지표, 천식의 동반 및 폐렴 등 위해를 고려하여 선택한다. 구체적인 조합과 변경은 적용 지침과 환자의 반응 및 부작용에 따라 조정한다. 기관지확장과 항염증, 악화 예방의 목표를 구별하면 약물 역할을 더 정확히 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.fcdfea00cc01",
+      "type": "paragraph",
+      "markdown": "폐재활과 영양, 신체활동 및 예방접종과 동반 질환의 관리는 약물 외의 중요한 치료이다. 호흡곤란 때문에 활동을 줄이면 근력과 지구력이 저하되어 같은 활동이 더 힘들어지는 악순환이 생길 수 있다. 재활은 이런 기능 제한과 대처를 다루며 단순히 폐기능 수치만 바꾸려는 과정이 아니다. 장기 산소치료는 특정한 저산소 상태에서 평가하는 치료로 모든 숨참에 동일하게 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.a0e2bd16a717",
+      "type": "heading",
+      "level": 2,
+      "text": "급성 악화와 추적"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.d36ea300c95a",
+      "type": "paragraph",
+      "markdown": "평소보다 호흡곤란과 기침·가래가 악화한 경우에는 감염과 환경, 복약 문제뿐 아니라 폐렴과 심부전, 폐색전증 등 다른 원인을 고려한다. 기존 COPD라는 진단이 새 급성 원인을 배제하지 않는다. 호흡 노력과 의식, 산소화와 환기 및 순환을 평가하여 호흡 지지와 치료의 강도를 정한다. 산소를 투여한 뒤에도 이산화탄소와 환기의 평가가 필요할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.obstruction.copd.b.0cd93d7c7eb0",
+      "type": "paragraph",
+      "markdown": "악화 이후에는 치료 반응과 기능 회복, 재발 위험과 실제 흡입치료를 다시 평가한다. 입원 중 좋아진 상태가 집의 활동과 돌봄 조건에서도 유지되는지 확인한다. COPD의 관리는 기류 제한의 진단에서 끝나지 않고 노출과 구조, 기능과 악화 및 삶의 질을 장기적으로 연결하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/obstruction/sections/pulmonology.obstruction.copd.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.obstruction.copd.001"
+  ],
+  "keyFacts": [
+    "아니다. 증상·악화·기능·동반 질환을 별도로 평가한다."
+  ]
+}

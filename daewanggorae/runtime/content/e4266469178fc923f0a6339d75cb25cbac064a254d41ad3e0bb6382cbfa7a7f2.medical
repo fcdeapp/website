@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "internal-medicine",
+  "title": {
+    "ko": "내과 총론 및 임상진단학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "internal-medicine.chapter.diagnosis",
+      "path": "domains/05-internal-medicine/subjects/internal-medicine/chapters/diagnosis/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "internal-medicine.plan.001",
+    "internal-medicine.plan.002",
+    "internal-medicine.plan.003",
+    "internal-medicine.plan.004",
+    "internal-medicine.plan.005",
+    "internal-medicine.plan.006",
+    "internal-medicine.diagnosis.probability"
+  ]
+}

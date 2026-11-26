@@ -1,0 +1,28 @@
+{
+  "id": "question.biochemistry.carbohydrate.gluconeogenesis.001",
+  "kind": "original_concept_question",
+  "lessonId": "biochemistry.carbohydrate.gluconeogenesis",
+  "prompt": "Pyruvate 두 분자에서 glucose 한 분자를 합성하는 표준 에너지·환원력 요구는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "4 ATP, 2 GTP, 2 NADH"
+    },
+    {
+      "id": "B",
+      "text": "2 ATP 생성, NADH 순소비 없음"
+    },
+    {
+      "id": "C",
+      "text": "ATP 소비 없이 6 NADH만 소비"
+    }
+  ],
+  "answer": "A",
+  "explanation": "우회 반응과 역방향의 환원·인산화 요구를 합친 수지다.",
+  "optionRationales": {
+    "A": "우회 반응과 역방향의 환원·인산화 요구를 합친 수지다.",
+    "B": "해당의 순 ATP 생성과 포도당신생 비용을 혼동했다.",
+    "C": "기질수준의 인산 요구와 GTP 사용을 누락했다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

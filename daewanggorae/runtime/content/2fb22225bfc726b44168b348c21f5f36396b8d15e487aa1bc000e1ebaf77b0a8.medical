@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "research-methods",
+  "title": {
+    "ko": "의학연구방법론"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "research-methods.chapter.design",
+      "path": "domains/10-prevention-clerkships/subjects/research-methods/chapters/design/chapter.json"
+    },
+    {
+      "id": "research-methods.chapter.trials",
+      "path": "domains/10-prevention-clerkships/subjects/research-methods/chapters/trials/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "research-methods.plan.001",
+    "research-methods.plan.002",
+    "research-methods.plan.003",
+    "research-methods.plan.004",
+    "research-methods.plan.005",
+    "research-methods.plan.006",
+    "research-methods.design.question-and-estimand",
+    "research-methods.trials.randomization-estimands"
+  ]
+}

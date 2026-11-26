@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "electrolytes.acid-base.systematic-analysis",
+  "subjectId": "electrolytes",
+  "chapterId": "acid-base",
+  "title": {
+    "ko": "산염기 평형의 기전과 혈액가스 해석",
+    "en": "Mechanisms and Interpretation of Acid–Base Disorders"
+  },
+  "learningObjectives": [
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.lo.01",
+      "text": "완충·환기·콩팥 조절의 시간척도를 비교한다"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.lo.02",
+      "text": "일차 장애와 보상 및 혼합 장애를 구분한다"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.lo.03",
+      "text": "음이온차와 소변검사의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.137561600a9d",
+      "type": "heading",
+      "level": 2,
+      "text": "수소이온 농도를 일정하게 유지하는 세 단계"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.4bea37426909",
+      "type": "paragraph",
+      "markdown": "산염기 평형(acid–base balance)은 대사로 발생한 산을 처리하면서 단백질과 세포 기능에 적합한 수소이온 농도를 유지하는 과정이다. pH는 수소이온 활성도의 음의 상용로그이므로 수치의 변화가 작아 보여도 수소이온의 비율 변화는 작지 않을 수 있다. 효소의 촉매부위, 혈색소, 막통로는 이온화 상태에 따라 기능이 달라진다. 혈액 pH 이상은 특정 장기의 수치 변화에 그치지 않고 심근 수축, 혈관 긴장, 신경 흥분성 및 약물의 조직 분포에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.3387b0559c4d",
+      "type": "paragraph",
+      "markdown": "화학적 완충은 산을 없애는 과정이 아니다. 완충계(buffer system)는 유리 수소이온을 결합하거나 방출하여 즉각적인 pH 변화를 줄인다. 중탄산염, 혈색소, 단백질 및 인산염이 여기에 참여한다. 이후 폐가 이산화탄소를 배출하고 콩팥이 비휘발성 산을 배설하며 소모된 중탄산염을 보충해야 산 부담이 해소된다. 따라서 완충액이 충분해 초기 pH가 비교적 보존되었다고 해서 산 생성이나 배설 장애가 없다는 결론을 내릴 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.8a02dd0618a6",
+      "type": "heading",
+      "level": 2,
+      "text": "중탄산염과 이산화탄소의 비"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.6df6c64766ca",
+      "type": "paragraph",
+      "markdown": "혈액에서 이산화탄소는 물과 반응해 탄산을 형성하고 수소이온과 중탄산염으로 해리한다. 탄산무수화효소(carbonic anhydrase)는 이 반응의 평형에 도달하는 속도를 높인다. Henderson–Hasselbalch 관계는 pH가 중탄산염 농도와 용해된 이산화탄소 농도의 비에 의해 결정됨을 보여 준다. 중탄산염이 감소하면 같은 이산화탄소분압에서 pH가 낮아지고, 환기가 증가해 이산화탄소분압이 내려가면 그 하강이 완화된다. 동맥혈 이산화탄소분압은 이산화탄소 생성과 폐포환기의 균형으로 결정되므로 단순한 호흡수만으로 예측할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.68c2e1108f4b",
+      "type": "paragraph",
+      "markdown": "혈액가스 장비는 pH와 이산화탄소분압을 측정하고 이 관계로 중탄산염을 계산하는 경우가 많다. 생화학 검사에서 측정한 총 이산화탄소는 대부분 중탄산염을 반영하지만 동일한 측정값은 아니다. 두 결과가 크게 다르면 채혈 시간, 검체 처리, 동맥혈과 정맥혈의 차이 및 계산·측정 방식을 살펴본다. 세 값이 서로 독립적인 세 근거라고 생각하면 같은 관계를 중복하여 해석하게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.7653630a83d8",
+      "type": "heading",
+      "level": 2,
+      "text": "중탄산염 회수와 새로운 염기의 생성"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.dad09911672a",
+      "type": "paragraph",
+      "markdown": "콩팥은 여과된 중탄산염 대부분을 세뇨관에서 회수한다. 근위세뇨관 내강으로 분비된 수소이온은 여과된 중탄산염과 반응하고, 생성된 이산화탄소가 세포 안으로 들어가 다시 중탄산염을 형성한다. 이때 혈액으로 돌아가는 중탄산염은 이미 여과된 것을 되찾는 것이므로 새로운 중탄산염의 순생성과 구분한다. 여과 중탄산염을 소변으로 잃으면 그만큼 체내 염기 저장량이 줄어든다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.ea463524e2ff",
+      "type": "paragraph",
+      "markdown": "새로운 중탄산염을 체내에 보충하려면 수소이온이 적정산(titratable acid)이나 암모늄(ammonium) 형태로 소변에 실제 배설되어야 한다. 근위세뇨관의 글루타민 대사는 암모늄 생성과 연결되고, 수질의 암모니아 재순환 및 집합관의 수소이온 분비가 최종 배설을 돕는다. 소변의 유리 수소이온 양은 제한적이므로 산성 소변을 만들었다는 사실만으로 충분한 총 산 배설을 입증할 수 없다. 소변 pH가 낮더라도 암모늄 배설이 부족하면 대사산증이 지속될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.7524e6f0b333",
+      "type": "heading",
+      "level": 2,
+      "text": "일차 장애와 보상을 읽는 순서"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.96b58e2fc581",
+      "type": "paragraph",
+      "markdown": "혈액의 산성화인 산혈증(acidemia)은 측정 상태이고, 산증(acidosis)은 pH를 낮추는 병태생리 과정이다. 서로 반대되는 장애가 동반되면 pH가 정상에 가까울 수도 있다. 먼저 pH 방향을 확인한 뒤 중탄산염과 이산화탄소분압 중 어느 변화가 그 방향을 설명하는지 판단한다. 중탄산염 감소가 일차이면 대사산증, 이산화탄소분압 상승이 일차이면 호흡산증을 생각한다. 이어 나머지 변수의 변화가 예상되는 보상 방향과 크기에 맞는지 살펴본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.272bc1070492",
+      "type": "paragraph",
+      "markdown": "보상은 원인 질환을 없애지 않는다. 대사산증의 과호흡은 혈액을 덜 산성으로 만들지만 조직 저관류나 케톤 생성을 해결하지 못한다. 단순 장애에서 보상은 일반적으로 반대 방향의 일차 장애가 생긴 것처럼 pH를 과도하게 넘어 교정하지 않는다. 보상 범위를 벗어나는 값은 혼합 장애, 발생 시점의 차이 또는 예측식 적용 조건의 불일치를 시사한다. 급성 호흡산증의 화학적 완충과 만성 호흡산증의 콩팥 적응은 시간척도가 달라 같은 이산화탄소분압에서도 중탄산염이 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.c80a60398ce4",
+      "type": "heading",
+      "level": 2,
+      "text": "음이온차와 혼합 대사 장애"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.41d551c21e9a",
+      "type": "paragraph",
+      "markdown": "혈장에는 측정되지 않는 이온이 있어도 전체 양전하와 음전하가 균형을 이룬다. 음이온차(anion gap)는 통상 나트륨 농도에서 염소와 중탄산염 농도의 합을 뺀 값이다. 젖산이나 케톤 음이온이 축적되면 중탄산염 감소를 염소 증가가 모두 대신하지 못하여 차이가 커진다. 반대로 장관으로 중탄산염을 잃거나 콩팥의 산 배설에 문제가 생기면 염소가 상대적으로 증가하는 정상 음이온차 대사산증이 나타날 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.d2b58e3640c0",
+      "type": "paragraph",
+      "markdown": "알부민은 중요한 미측정 음이온이다. 저알부민혈증에서는 기저 음이온차가 낮아져 병적 산 음이온의 증가가 가려질 수 있다. 검사실의 기준 범위와 알부민을 함께 고려하며, 음이온차 상승을 곧바로 특정 원인으로 확정하지 않는다. 음이온차 증가와 중탄산염 감소의 상대적 크기는 다른 대사 장애의 동반 여부를 추정하는 데 도움이 되지만 기준값, 수액 투여 및 배설의 변화에 영향을 받는다. 임상 경과와 무관하게 하나의 비율만으로 혼합 장애를 진단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.27acbc66c9bf",
+      "type": "heading",
+      "level": 2,
+      "text": "정상 음이온차 산증의 감별"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.c8b615434e25",
+      "type": "paragraph",
+      "markdown": "설사에 의한 중탄산염 소실에서는 정상 콩팥이 암모늄 배설을 증가시켜 산 부담에 대응한다. 콩팥세뇨관산증(renal tubular acidosis, RTA)은 여과 기능 저하만으로 설명되지 않는 중탄산염 회수 또는 산 배설의 장애이다. 근위형에서는 중탄산염 회수 역치가 낮아지고, 원위형에서는 원위 산성화가 손상된다. 제4형에서는 알도스테론의 부족이나 작용 저하 및 고칼륨혈증과 연관된 암모늄 배설 저하가 중요하다. 칼륨 방향과 임상 배경을 함께 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.01fece340050",
+      "type": "paragraph",
+      "markdown": "소변 음이온차는 소변 나트륨과 칼륨의 합에서 염소를 뺀 간접 지표로 사용할 수 있다. 암모늄이 염소와 함께 많이 배설되는 조건에서는 음의 값이 신장성 보상을 시사한다. 그러나 암모늄이 케톤 음이온 등 다른 음이온과 함께 배설되거나 원위 나트륨 전달이 매우 낮으면 이 추론이 흔들린다. 소변검사 한 항목이 직접 측정한 암모늄 배설량을 언제나 대신하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.cf72517180f5",
+      "type": "heading",
+      "level": 2,
+      "text": "임상 통합"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.b.10735999e0a6",
+      "type": "paragraph",
+      "markdown": "구토와 설사가 함께 있는 환자에서는 위산 소실에 의한 알칼리증과 장관 중탄산염 소실에 의한 산증이 동시에 작용할 수 있다. 감염성 쇼크에서는 젖산 생성, 콩팥 배설 장애, 환기 변화 및 수액의 염소 부담이 시간에 따라 바뀐다. 최초 혈액가스만 해석하고 끝내면 치료 중 새로 발생하는 장애를 놓친다. 산염기 평가는 검체의 정확성, 임상 상황, 일차 과정, 보상, 음이온차 및 시간 경과를 하나의 설명으로 연결하는 작업이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis.equation.anion-gap",
+      "type": "equation",
+      "latex": "AG=[Na^+]-([Cl^-]+[HCO_3^-])",
+      "variables": {
+        "AG": "칼륨을 포함하지 않는 관례의 음이온차",
+        "[Na^+], [Cl^-], [HCO_3^-]": "같은 농도 단위로 표현한 혈장 이온 농도"
+      },
+      "assumptions": [
+        "칼륨을 생략하는 관례이며 검사실 기준과 알부민의 영향을 별도로 고려"
+      ]
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/electrolytes/chapters/acid-base/sections/electrolytes.acid-base.systematic-analysis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.electrolytes.acid-base.systematic-analysis.001"
+  ],
+  "keyFacts": [
+    "산성화는 확인되지만 총 암모늄 배설이 충분한지는 별도로 평가한다."
+  ],
+  "relatedLessons": [
+    "electrolytes.acid-base.interpretation",
+    "physiology.renal.filtration"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "question.pharmacology.general.pharmacokinetics.001",
+  "kind": "original_concept_question",
+  "lessonId": "pharmacology.general.pharmacokinetics",
+  "prompt": "단순 모형에서 유지 투여속도를 주로 결정하는 PK 변수는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "분포용적만"
+    },
+    {
+      "id": "B",
+      "text": "청소율"
+    }
+  ],
+  "answer": "B",
+  "explanation": "같은 목표농도와 F에서 유지속도는 CL에 비례한다.",
+  "optionRationales": {
+    "A": "Vd는 부하용량과 시간 경과에 관여하지만 유지속도를 단독 결정하지 않는다.",
+    "B": "같은 목표농도와 F에서 유지속도는 CL에 비례한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

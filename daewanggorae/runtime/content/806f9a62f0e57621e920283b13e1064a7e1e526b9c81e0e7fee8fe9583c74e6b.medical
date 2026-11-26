@@ -1,0 +1,23 @@
+{
+  "id": "question.critical-care.shock.hemodynamics.001",
+  "kind": "original_concept_question",
+  "lessonId": "critical-care.shock.hemodynamics",
+  "prompt": "수액 반응성이 있으면 반드시 수액을 주어야 하는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "아니다."
+    },
+    {
+      "id": "B",
+      "text": "그렇다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "실제 저관류와 기대 이익·울혈 위험을 함께 판단한다.",
+  "optionRationales": {
+    "A": "실제 저관류와 기대 이익·울혈 위험을 함께 판단한다.",
+    "B": "박출 반응과 치료 필요성은 다른 질문이다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

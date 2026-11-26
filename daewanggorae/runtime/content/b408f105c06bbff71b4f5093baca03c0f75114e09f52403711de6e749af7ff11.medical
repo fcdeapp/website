@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.abdomen.spleen.organ-context",
+  "sceneId": "scene.anatomy.abdomen.spleen.organ-context",
+  "lessonId": "anatomy.abdomen.spleen",
+  "triggerBlockId": "anatomy.abdomen.spleen.b.84a55e60c60c",
+  "primaryStructures": [
+    "FMA7196"
+  ],
+  "contextStructures": [
+    "FMA7198",
+    "FMA7148"
+  ],
+  "highlightStructures": [
+    "FMA7196"
+  ],
+  "modelIds": [
+    "isa:FJ2561",
+    "partof:FJ1895",
+    "partof:FJ1896",
+    "partof:FJ2629",
+    "partof:FJ2630",
+    "partof:FJ2564"
+  ],
+  "modelPaths": [
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ2561.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1895.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1896.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ2629.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ2630.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ2564.obj"
+  ],
+  "cameraPosition": [
+    28.58055,
+    -618.8966267685042,
+    1080.625
+  ],
+  "cameraTarget": [
+    28.58055,
+    -120.28305,
+    1080.625
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -56.7069,
+      -194.37,
+      1004.36
+    ],
+    "max": [
+      113.868,
+      -46.1961,
+      1156.89
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "지라와 위 및 이자꼬리 방향의 관계",
+  "mappingConfidence": "exact_attachment_ids_and_bounds_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "정상 성인 구조이며 지라 손상·피막 파열·혈액세포 여과를 표현하지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.renal.filtration",
+  "subjectId": "physiology",
+  "chapterId": "renal",
+  "title": {
+    "ko": "사구체 여과와 청소율의 해석",
+    "en": "Glomerular Filtration and Clearance"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.renal.filtration.lo.01",
+      "text": "청소율의 단위를 유도한다."
+    },
+    {
+      "id": "physiology.renal.filtration.lo.02",
+      "text": "여과분획과 신혈장류를 구분한다."
+    },
+    {
+      "id": "physiology.renal.filtration.lo.03",
+      "text": "혈관 저항 변화와 여과장벽 손상의 영향을 설명한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.renal.filtration.b.b3868f25ae28",
+      "type": "heading",
+      "level": 2,
+      "text": "신장이 하는 분리 작업"
+    },
+    {
+      "id": "physiology.renal.filtration.b.73a8850056e4",
+      "type": "paragraph",
+      "markdown": "사구체(glomerulus)는 들세동맥으로 들어온 혈액이 모세혈관망을 지난 뒤 날세동맥으로 나가는 독특한 혈관 구조다. 여과된 액체는 보먼주머니 공간으로 들어가 세뇨관을 따라 이동한다. 신장이 배설하는 최종 소변은 단순히 혈액을 체로 거른 결과가 아니다. 여과, 재흡수, 분비를 거치며 물과 용질의 양이 크게 달라진다. 물질 x의 배설률은 여과량에서 재흡수량을 빼고 분비량을 더한 값으로 표현할 수 있다. 이 질량보존 관계를 먼저 세우면 각 표지물질의 청소율을 해석하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.renal.filtration.3e301a00"
+      ],
+      "conceptRefs": [
+        "FMA7204",
+        "FMA7205"
+      ]
+    },
+    {
+      "id": "physiology.renal.filtration.b.63f2a0d080b0",
+      "type": "paragraph",
+      "markdown": "여과장벽은 유창내피, 사구체기저막, 발세포 사이의 세극막을 포함한다. 혈구는 정상적으로 통과하지 않으며 단백질의 통과도 크기, 형태, 전하 및 장벽의 통합된 성질에 의해 제한된다. 장벽을 분자량 하나의 날카로운 기준으로 설명하면 부정확하다. 혈장단백질에 결합한 약물은 자유형 분획과 결합형 분획을 나누어 생각해야 한다. 사구체 여과액의 포도당과 전해질 농도가 혈장 수분의 농도와 유사할 수 있어도 모든 혈장 성분이 자유롭게 여과된다고 말할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.filtration.b.0aae9f7f8a4a",
+      "type": "heading",
+      "level": 2,
+      "text": "Starling 힘과 조절"
+    },
+    {
+      "id": "physiology.renal.filtration.b.5d79a8ea332b",
+      "type": "paragraph",
+      "markdown": "단순화한 여과 모형은 GFR=Kf[(Pgc-Pbs)-(πgc-πbs)]로 쓴다. Pgc는 사구체 모세혈관 정수압, Pbs는 보먼주머니 정수압, πgc와 πbs는 각 구획의 교질삼투압이다. Kf는 수력전도도와 여과면적을 포함하는 계수다. 정상적으로 여과액의 단백질 농도는 낮아 πbs를 작게 볼 수 있다. 모세혈관을 따라 물이 여과되면 남은 혈장의 단백질이 농축되어 πgc가 상승하므로, 실제 여과압은 모세혈관 길이에 따라 일정하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.filtration.b.1d93fb4d6bfd",
+      "type": "paragraph",
+      "markdown": "들세동맥 수축은 보통 혈류와 사구체압을 줄여 GFR을 감소시키는 방향으로 작용한다. 날세동맥의 중등도 수축은 사구체압을 유지하거나 높이면서 신혈장류를 줄일 수 있다. 그러나 날세동맥 수축이 아주 심해지면 혈장류 감소와 단백질 농축에 따른 교질삼투압 증가 때문에 GFR도 줄 수 있다. 그러므로 날세동맥 수축은 언제나 여과를 증가시킨다는 명제는 옳지 않다. 요로폐색으로 보먼주머니 쪽 압력이 상승하는 경우에는 혈류가 유지되어도 여과를 방해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.filtration.b.a7d2e7e7de97",
+      "type": "paragraph",
+      "markdown": "근원성 반응(myogenic response)은 혈관벽 신장에 대한 국소 평활근 반응으로 혈류의 변동을 완화한다. 세뇨관사구체되먹임(tubuloglomerular feedback)은 치밀반(macula densa)이 관강의 NaCl 전달을 감지하고 인접 혈관과 레닌 분비에 영향을 주는 조절 과정이다. 이 과정에서 관강의 전달량, 재흡수 정도, 수송체 기능은 서로 연결된다. 치밀반에 NaCl이 적게 도달했다는 사실만으로 몸 전체의 나트륨이 반드시 부족하다고 단정할 수 없다. 순환 상태와 약물, 상류 세뇨관의 기능을 함께 해석해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.filtration.b.fdd2fbb78eae",
+      "type": "heading",
+      "level": 2,
+      "text": "청소율을 유도하기"
+    },
+    {
+      "id": "physiology.renal.filtration.b.af28c6a0fd99",
+      "type": "paragraph",
+      "markdown": "청소율(clearance)은 단위 시간에 특정 물질이 완전히 제거된 것으로 환산되는 가상의 혈장 부피다. 실제 혈장이 통째로 사라진다는 뜻이 아니다. 소변 농도를 Ux, 분당 소변량을 V, 혈장 농도를 Px라 하면 소변으로 나가는 물질량은 UxV이고, 이를 Px로 나누면 Cx=UxV/Px를 얻는다. Ux와 Px의 농도 단위가 같으면 소거되어 청소율은 mL/min 같은 부피/시간 단위를 가진다. 분모 혈장 농도는 채뇨 기간의 상태를 적절히 대표해야 한다.",
+      "verificationStatus": "selected_claims_cross_checked_remaining_claims_pending"
+    },
+    {
+      "id": "physiology.renal.filtration.b.2a38e095cd0a",
+      "type": "paragraph",
+      "markdown": "자유롭게 여과되고 재흡수·분비·대사가 없는 표지물질은 청소율이 GFR과 같다. 이눌린(inulin)은 이 원리를 설명하는 대표 물질이다. 크레아티닌(creatinine)은 체내 생성이라는 편의가 있으나 소량의 세뇨관 분비가 있고, 생성량도 근육량 등에 영향을 받는다. 따라서 크레아티닌 청소율은 GFR을 약간 높게 추정할 수 있다. 혈청 크레아티닌을 이용한 추정 GFR은 별도의 방정식이며 직접 측정값과 구분해야 한다. 급격히 신기능이 변할 때는 혈중 농도가 정상상태에 도달하지 않아 해석에 제한이 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.filtration.b.434b91e5ff87",
+      "type": "paragraph",
+      "markdown": "신혈장류(renal plasma flow, RPF)는 신혈류(RBF)에 혈장 분율을 곱한 RPF=RBF(1-적혈구용적률)로 계산한다. 여과분획(filtration fraction, FF)은 GFR/RPF이다. RBF를 분모에 넣으면 다른 양을 계산하는 것이므로 구분해야 한다. 파라아미노마뇨산(PAH)은 적절한 낮은 농도에서 여과와 분비를 통해 상당 부분 제거되어 유효 신혈장류 추정에 쓰이는 원리를 보여준다. 추출이 완전하지 않으며 수송체 포화가 생길 수 있으므로 PAH 청소율을 모든 농도에서 실제 RPF와 같다고 하면 틀린다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.filtration.b.2b6245a596a8",
+      "type": "heading",
+      "level": 2,
+      "text": "임상적 연결"
+    },
+    {
+      "id": "physiology.renal.filtration.b.45880a0d7ed5",
+      "type": "paragraph",
+      "markdown": "단백뇨는 장벽 이상뿐 아니라 여과된 단백질의 세뇨관 처리 장애나 과다생산으로도 생길 수 있다. 혈뇨 역시 사구체와 요로의 여러 부위에서 기원한다. 검사 결과는 신기능 저하의 원인과 병변 위치를 서로 다른 차원에서 제공한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.renal.filtration.equation.001",
+      "type": "equation",
+      "latex": "C_x=\\frac{U_x\\dot V}{P_x}",
+      "variables": {
+        "C_x": "청소율",
+        "U_x": "소변 농도",
+        "P_x": "혈장 농도",
+        "dot V": "소변 유량"
+      },
+      "assumptions": [
+        "채뇨 기간을 대표하는 농도와 정확한 소변 유량 필요"
+      ]
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/renal/sections/physiology.renal.filtration.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.physiology.renal.filtration.001"
+  ],
+  "relatedLessons": [
+    "physiology.renal.raas",
+    "electrolytes.acid-base.interpretation",
+    "nephrology.ckd.evaluation"
+  ],
+  "glossary": [
+    {
+      "conceptId": "concept.clearance",
+      "ko": "청소율",
+      "en": "Clearance",
+      "definition": "제거 속도를 농도로 나눈 가상 부피/시간 지표"
+    }
+  ],
+  "keyFacts": [
+    "농도끼리 소거되어 부피/시간이 남는다."
+  ]
+}

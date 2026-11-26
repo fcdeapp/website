@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.upper-limb.shoulder-rotator-cuff.right-bone-context",
+  "sceneId": "scene.anatomy.upper-limb.shoulder-rotator-cuff.right-bone-context",
+  "lessonId": "anatomy.upper-limb.shoulder-rotator-cuff",
+  "triggerBlockId": "anatomy.upper-limb.shoulder-rotator-cuff.b.3bd05ecf9113",
+  "primaryStructures": [
+    "FMA13395",
+    "FMA23130"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA13395",
+    "FMA23130"
+  ],
+  "modelIds": [
+    "partof:FJ3384",
+    "partof:FJ3368"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3384.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3368.obj"
+  ],
+  "cameraPosition": [
+    -148.94740000000002,
+    -753.1258409515368,
+    1189.53
+  ],
+  "cameraTarget": [
+    -148.94740000000002,
+    -48.886624999999995,
+    1189.53
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -240.841,
+      -102.856,
+      1029.2
+    ],
+    "max": [
+      -57.0538,
+      5.08275,
+      1349.86
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.15
+  },
+  "color": {
+    "primary": "#75639a",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "오른쪽 어깨뼈와 위팔뼈의 관절 위치",
+  "mappingConfidence": "exact_attachment_concepts_and_bounds_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "정상 성인 뼈의 정적 위치. 인대·관절연골·신경·혈류·회전이나 손상 상태를 이 장면이 재현하지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "question.pharmacology.autonomic.receptors.001",
+  "kind": "original_concept_question",
+  "lessonId": "pharmacology.autonomic.receptors",
+  "prompt": "β2 수용체 자극이 기도 평활근을 이완시킬 수 있는 기전은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "모든 조직에서 cAMP는 반드시 수축을 유발한다."
+    },
+    {
+      "id": "B",
+      "text": "β2는 골격근 종판의 니코틴 수용체이다."
+    },
+    {
+      "id": "C",
+      "text": "Gs-cAMP 계통이 평활근 수축 조절에 영향을 준다."
+    }
+  ],
+  "answer": "C",
+  "explanation": "동일한 두 번째 전달자도 세포의 표적 단백질과 신호 환경에 따라 다른 효과를 낸다.",
+  "optionRationales": {
+    "A": "cAMP의 효과는 조직의 표적 단백질과 신호계에 따라 다르다.",
+    "B": "β2는 아드레날린성 수용체이며 신경근접합부의 니코틴 수용체와 다르다.",
+    "C": "정답이다. 동일한 두 번째 전달자도 세포의 표적 단백질과 신호 환경에 따라 다른 효과를 낸다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "anatomy.general.orientation-fascia",
+  "subjectId": "anatomy",
+  "chapterId": "general",
+  "title": {
+    "ko": "해부학적 방향·단면·근막과 구획",
+    "en": "Anatomical Orientation, Planes, Fascia and Compartments"
+  },
+  "learningObjectives": [
+    {
+      "id": "anatomy.general.orientation-fascia.lo.01",
+      "text": "자세가 바뀌어도 해부학적 방향 용어를 일관되게 적용한다"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.lo.02",
+      "text": "근막과 근육 구획을 혈관·신경 주행과 연결한다"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.lo.03",
+      "text": "영상의 좌우 및 단면 정보를 실제 구조에 대응시킨다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "anatomy.general.orientation-fascia.b.3e78848cf022",
+      "type": "heading",
+      "level": 2,
+      "text": "표준 자세는 공간 설명의 좌표계이다"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.f9bbae96f654",
+      "type": "paragraph",
+      "markdown": "해부학적 자세(anatomical position)는 몸을 세우고 얼굴과 발을 앞쪽으로 향하며 팔을 몸 옆에 두고 손바닥이 앞을 향한 기준 자세이다. 실제 환자가 누워 있거나 팔을 회전해도 안쪽과 가쪽, 앞과 뒤의 해부학적 명칭은 이 기준을 바탕으로 사용한다. 손바닥이 뒤로 향하도록 팔을 돌렸다는 이유로 노뼈와 자뼈의 명칭이나 기본 안가쪽 관계를 새로 정하지 않는다. 관찰한 자세와 기준 방향을 구분해야 수술 기록과 영상 설명이 서로 통한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.62fdea14342b",
+      "type": "paragraph",
+      "markdown": "정중면(median plane)은 몸을 좌우로 나누는 중심의 시상면이다. 시상면(sagittal plane)은 이에 평행한 면, 관상면(coronal plane)은 앞뒤를 나누는 면, 가로면(transverse plane)은 위아래를 나누는 면이다. 실제 영상은 비스듬한 단면을 포함할 수 있으며 하나의 구조가 여러 연속 단면에 걸쳐 나타난다. 한 장에서 둥글게 보이는 구조가 구형 장기인지 길게 뻗은 관의 단면인지 구분하려면 앞뒤 영상을 이어서 추적한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.9e1d78939c43",
+      "type": "heading",
+      "level": 2,
+      "text": "방향 용어와 운동 용어"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.4797ad618ab3",
+      "type": "paragraph",
+      "markdown": "위·아래와 앞·뒤는 몸통에서 직관적이지만 굽은 중추신경계와 돌출된 팔다리에서는 부위별 관례를 확인해야 한다. 몸통에 가까운 쪽은 몸쪽(proximal), 먼 쪽은 먼쪽(distal)이라고 하며 손가락의 첫마디를 설명할 때도 기준이 된다. 얕은층(superficial)과 깊은층(deep)은 피부로부터의 상대적 거리이다. 두 구조가 깊이가 다르더라도 같은 단면에서 겹쳐 보여 앞뒤 관계를 잘못 추론할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.469c3fd69244",
+      "type": "paragraph",
+      "markdown": "굽힘과 폄, 벌림과 모음, 안쪽돌림과 가쪽돌림은 관절의 운동을 기술한다. 엄지는 다른 손가락과 다른 방향으로 놓여 움직임을 손바닥 평면과 관련하여 해석한다. 엎침(pronation)과 뒤침(supination)은 주로 아래팔에서 노뼈가 자뼈와 갖는 관계의 변화이며 어깨의 안쪽돌림과 같지 않다. 겉으로 손바닥의 방향이 비슷해져도 어느 관절에서 움직임이 생겼는지 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.8f6a30c44a28",
+      "type": "heading",
+      "level": 2,
+      "text": "피부·피하조직·깊은근막"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.f3c22eacb51a",
+      "type": "paragraph",
+      "markdown": "피부 아래 피하조직에는 지방, 얕은정맥, 피부신경과 림프관이 분포한다. 깊은근막(deep fascia)은 근육과 다른 깊은 구조를 둘러싸고 사이막을 통해 뼈와 연결되어 구획을 만든다. 이 층은 단순한 포장지가 아니라 조직 사이 힘의 전달과 구조의 위치 유지 및 감염 확산 경로에 영향을 준다. 다만 근막면의 이름과 연속성은 부위에 따라 다르므로 전신에 동일한 한 장의 막이 있다는 식으로 단순화하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.b15db8e4c11d",
+      "type": "paragraph",
+      "markdown": "신경과 혈관은 근육 사이의 틈이나 근막의 통로를 따라 이동한다. 얕은 피부신경과 깊은 운동신경은 같은 이름의 넓은 구역을 지나더라도 깊이와 손상 위험이 다르다. 주사나 절개에서 표면의 한 지점을 아는 것만으로 안전한 깊이와 방향이 정해지는 것은 아니다. 인접 장기, 해부학적 변이 및 환자의 체격도 실제 경로를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.01d0fa2771ed",
+      "type": "heading",
+      "level": 2,
+      "text": "근육 구획이 갖는 기능적 의미"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.613693a5f14f",
+      "type": "paragraph",
+      "markdown": "팔다리의 근육은 구획(compartment)별로 묶이며 같은 구획에서 작용이나 주요 신경지배가 비슷한 경우가 많다. 위팔 앞구획은 굽힘 관련 근육과 근육피부신경, 뒤구획은 폄 관련 근육과 노신경을 연결해 이해할 수 있다. 그러나 구획 규칙에는 예외와 경계가 있다. 신경은 한 구획을 지나 다른 구획으로 이동하기도 하므로 지나간다는 사실과 그곳의 모든 근육을 지배한다는 사실을 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.abe6d48f5969",
+      "type": "paragraph",
+      "markdown": "구획 안에 출혈이나 부종이 생기면 단단한 경계 때문에 압력이 상승하여 미세순환과 신경 기능을 해칠 수 있다. 이것이 구획증후군의 해부학적 배경이다. 큰 동맥의 맥박이 남아 있어도 작은 혈관의 관류가 충분하다는 뜻은 아니다. 손상 부위의 통증, 감각과 운동 및 시간 경과를 연결해야 한다. 해부학은 한 구조의 존재를 확인하는 데서 끝나지 않고 닫힌 공간에서의 압력과 조직 생존을 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.9f847f9a9d46",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관·신경·림프의 서로 다른 지도"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.ac2e3a1ca249",
+      "type": "paragraph",
+      "markdown": "동맥은 유입, 정맥은 회수, 림프관은 조직액과 면역 관련 물질의 배출을 담당한다. 동맥과 깊은정맥이 함께 주행하는 경우가 많지만 얕은정맥은 다른 표면 경로를 이용할 수 있다. 림프 배액도 동맥의 분지 영역과 완전히 같은 지도로 대응하지 않는다. 감염이나 종양의 확산을 설명할 때 동맥 공급만 보고 림프절 위치를 추정해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.0d04bfd0de68",
+      "type": "paragraph",
+      "markdown": "피부분절(dermatome)은 척수신경 뿌리와 연관된 피부 감각 분포이고 말초신경의 피부 영역은 신경얼기를 거친 뒤의 분포이다. 한 신경뿌리의 섬유가 여러 말초신경에 나뉘므로 두 지도가 다르다. 감각 저하를 기록할 때 손가락 끝 하나의 소견과 팔 전체의 근력·반사 소견을 함께 보면 병변의 위치를 더 정확히 추론할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.27ebe75f40e7",
+      "type": "heading",
+      "level": 2,
+      "text": "영상과 3D 모델을 연결하는 순서"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.90ab9f6373b6",
+      "type": "paragraph",
+      "markdown": "영상의 왼쪽과 환자의 왼쪽은 표시 관례에 따라 다를 수 있다. 먼저 방향 표지와 촬영면을 확인하고 뼈, 큰 혈관 및 장기를 기준점으로 삼는다. 비슷하게 생긴 구조를 한 장의 모양으로만 맞추지 않고 인접 구조와 연속성을 확인한다. 정적 3D 모델은 공간 관계를 이해하는 데 유용하지만 자세 변화에 따른 근육 긴장이나 장기의 변형까지 자동으로 보여 주지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.general.orientation-fascia.b.cc8bd24e421c",
+      "type": "paragraph",
+      "markdown": "구조를 선택할 때에는 명칭, 좌우, 주변 구조 및 실제 메시를 함께 확인한다. 모델에서 보이지 않는 근막이나 작은 신경을 비슷한 모양의 다른 구조로 대신하면 학습자가 잘못된 관계를 기억할 수 있다. 보이지 않는 구조는 해당 층의 단면도나 별도의 도식으로 설명하고, 거시 구조를 통한 위치 학습과 미세구조 및 기능 학습을 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/anatomy/chapters/general/sections/anatomy.general.orientation-fascia.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.anatomy.general.orientation-fascia.001"
+  ],
+  "keyFacts": [
+    "신경얼기에서 여러 분절의 섬유가 재배열되기 때문이다."
+  ],
+  "relatedLessons": [
+    "anatomy.upper-limb.pectoral-girdle",
+    "anatomy.upper-limb.shoulder-rotator-cuff"
+  ]
+}

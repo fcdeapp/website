@@ -1,0 +1,23 @@
+{
+  "id": "question.patient-safety.systems.handover.001",
+  "kind": "original_concept_question",
+  "lessonId": "patient-safety.systems.handover",
+  "prompt": "검사 결과가 미완료인 인계에서 반드시 정할 내용은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "검사 이름만"
+    },
+    {
+      "id": "B",
+      "text": "확인 책임과 후속 행동"
+    }
+  ],
+  "answer": "B",
+  "explanation": "책임 이전과 결과 추적이 완료되어야 안전한 인계다.",
+  "optionRationales": {
+    "A": "목록 전달만으로 추적 책임이 생기지 않는다.",
+    "B": "책임 이전과 결과 추적이 완료되어야 안전한 인계다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}
