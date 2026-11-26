@@ -511,7 +511,7 @@ const PostMain: React.FC<PostMainProps> = ({
                       nickname={author}
                       profileImage={
                         getFullImageUrl(profileImage) ||
-                        getFullImageUrl("AbrodyLogo3D.png")
+                        getFullImageUrl("AppIcon.png")
                       }
                       profileThumbnail={getFullImageUrl(profileThumbnail)}
                       size={48}

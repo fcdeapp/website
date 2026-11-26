@@ -290,7 +290,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://website.fcde.app/AbrodyLogo3DSimple.png"
+          content="https://website.fcde.app/AppIcon_A_Dot.png"
         />
         <meta property="og:url" content="https://website.fcde.app/" />
         <meta property="og:image:width" content="1200" />
@@ -299,7 +299,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:image"
-          content="https://website.fcde.app/AbrodyLogo3DSimple.png"
+          content="https://website.fcde.app/AppIcon_A_Dot.png"
         />
         <meta
           name="twitter:image:alt"
