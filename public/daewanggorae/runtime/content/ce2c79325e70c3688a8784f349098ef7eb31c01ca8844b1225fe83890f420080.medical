@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "medical-informatics",
+  "title": {
+    "ko": "의료정보학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "medical-informatics.chapter.clinical-data",
+      "path": "domains/10-prevention-clerkships/subjects/medical-informatics/chapters/clinical-data/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "medical-informatics.plan.001",
+    "medical-informatics.plan.002",
+    "medical-informatics.plan.003",
+    "medical-informatics.plan.004",
+    "medical-informatics.plan.005",
+    "medical-informatics.plan.006",
+    "medical-informatics.clinical-data.decision-support"
+  ]
+}

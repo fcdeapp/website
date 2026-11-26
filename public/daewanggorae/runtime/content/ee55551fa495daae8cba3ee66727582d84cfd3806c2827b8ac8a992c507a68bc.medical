@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "critical-care",
+  "title": {
+    "ko": "중환자의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "critical-care.chapter.shock",
+      "path": "domains/09-clinical-diagnostics/subjects/critical-care/chapters/shock/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "critical-care.plan.001",
+    "critical-care.plan.002",
+    "critical-care.plan.003",
+    "critical-care.plan.004",
+    "critical-care.plan.005",
+    "critical-care.plan.006",
+    "critical-care.shock.hemodynamics"
+  ]
+}

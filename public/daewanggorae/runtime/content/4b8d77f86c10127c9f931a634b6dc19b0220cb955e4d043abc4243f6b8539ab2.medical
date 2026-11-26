@@ -1,0 +1,23 @@
+{
+  "id": "question.rheumatology.joints.inflammatory-patterns.001",
+  "kind": "original_concept_question",
+  "lessonId": "rheumatology.joints.inflammatory-patterns",
+  "prompt": "관절액에서 결정이 보이면 감염이 배제되는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "그렇다."
+    },
+    {
+      "id": "B",
+      "text": "아니다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "결정관절염과 감염이 함께 존재할 수 있다.",
+  "optionRationales": {
+    "A": "결정 소견을 배양과 임상평가의 대체로 사용할 수 없다.",
+    "B": "결정관절염과 감염이 함께 존재할 수 있다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "question.nephrology.ckd.evaluation.001",
+  "kind": "original_concept_question",
+  "lessonId": "nephrology.ckd.evaluation",
+  "prompt": "한 번 낮은 eGFR만으로 만성성을 확정할 수 있는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "있다."
+    },
+    {
+      "id": "B",
+      "text": "없다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "최소 3개월의 경과 또는 만성성을 뒷받침하는 근거가 중요하다.",
+  "optionRationales": {
+    "A": "급성신손상과 급성 신장질환을 구분해야 한다.",
+    "B": "최소 3개월의 경과 또는 만성성을 뒷받침하는 근거가 중요하다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

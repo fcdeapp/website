@@ -1,0 +1,28 @@
+{
+  "id": "question.immunology.hypersensitivity.mechanisms.001",
+  "kind": "original_concept_question",
+  "lessonId": "immunology.hypersensitivity.mechanisms",
+  "prompt": "수용체를 자극하는 항체에 의한 질환을 II형 기전으로 설명할 수 있는 이유는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "II형은 항체 없이 T세포만 작용하는 반응이기 때문이다."
+    },
+    {
+      "id": "B",
+      "text": "세포 표면의 고정 표적과 결합하여 기능을 바꿀 수 있기 때문이다."
+    },
+    {
+      "id": "C",
+      "text": "II형 반응은 반드시 모든 표적세포를 직접 용해해야 하기 때문이다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "항체 매개 기능 변화는 직접 세포 파괴가 없어도 발생할 수 있다.",
+  "optionRationales": {
+    "A": "T세포가 주된 효과기인 IV형과 항체 매개 II형을 혼동한 설명이다.",
+    "B": "정답이다. 항체 매개 기능 변화는 직접 세포 파괴가 없어도 발생할 수 있다.",
+    "C": "II형에는 직접 용해뿐 아니라 수용체 자극과 차단 같은 기능 변화도 포함된다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

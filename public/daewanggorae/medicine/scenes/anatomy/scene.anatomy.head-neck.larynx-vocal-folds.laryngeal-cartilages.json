@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.head-neck.larynx-vocal-folds.laryngeal-cartilages",
+  "sceneId": "scene.anatomy.head-neck.larynx-vocal-folds.laryngeal-cartilages",
+  "lessonId": "anatomy.head-neck.larynx-vocal-folds",
+  "triggerBlockId": "anatomy.head-neck.larynx-vocal-folds.b.353807b10de1",
+  "primaryStructures": [
+    "FMA55099",
+    "FMA9615",
+    "FMA55130"
+  ],
+  "contextStructures": [
+    "FMA52749"
+  ],
+  "highlightStructures": [
+    "FMA55099",
+    "FMA9615",
+    "FMA55130"
+  ],
+  "modelIds": [
+    "isa:FJ2808",
+    "isa:FJ2440",
+    "isa:FJ2769",
+    "isa:FJ2770",
+    "partof:FJ2772",
+    "partof:FJ3201"
+  ],
+  "modelPaths": [
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ2808.obj",
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ2440.obj",
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ2769.obj",
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ2770.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ2772.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3201.obj"
+  ],
+  "cameraPosition": [
+    -0.6488999999999994,
+    -249.3074750230543,
+    1414.03
+  ],
+  "cameraTarget": [
+    -0.6488999999999994,
+    -110.25305,
+    1414.03
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -19.9803,
+      -129.0,
+      1387.2
+    ],
+    "max": [
+      18.6825,
+      -91.5061,
+      1440.86
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "후두 연골과 목뿔뼈의 입체 관계",
+  "mappingConfidence": "exact_attachment_ids_bounds_and_hashes_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "갑상연골은 갑상샘이 아님",
+    "성대 진동·벌림·모음은 별도 애니메이션 명세가 필요"
+  ],
+  "dynamicAnatomyIncluded": false
+}

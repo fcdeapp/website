@@ -1,0 +1,309 @@
+{
+  "schemaVersion": "1.0.0",
+  "lessons": [
+    {
+      "lessonId": "physiology.cell.membrane-potential",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "physiology.cardiovascular.cardiac-cycle",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.cardiovascular.cardiac-cycle.b.c535363cb829",
+          "sourceRefs": [
+            "cardiac-cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "physiology.respiratory.ventilation-perfusion",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "physiology.renal.filtration",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.renal.filtration.b.af28c6a0fd99",
+          "sourceRefs": [
+            "filtration"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "physiology.renal.raas",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.renal.raas.b.4babe58b1243",
+          "sourceRefs": [
+            "raas"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.enzymes.kinetics",
+      "references": [
+        {
+          "sourceRef": "enzyme-assays",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "biochemistry.metabolism.tca",
+      "references": [
+        {
+          "sourceRef": "enzyme-assays",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "biochemistry.carbohydrate.glycolysis",
+      "references": [
+        {
+          "sourceRef": "glycolysis-facts",
+          "use": "selected_core_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "biochemistry.carbohydrate.glycolysis.b.2478feca29aa",
+          "sourceRefs": [
+            "glycolysis-facts"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.carbohydrate.gluconeogenesis",
+      "references": [
+        {
+          "sourceRef": "gluconeogenesis-facts",
+          "use": "selected_core_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.a842ea137232",
+          "sourceRefs": [
+            "gluconeogenesis-facts"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.bioenergetics.oxidative-phosphorylation",
+      "references": [
+        {
+          "sourceRef": "oxphos-facts",
+          "use": "selected_core_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "biochemistry.bioenergetics.oxidative-phosphorylation.b.d8ce3a185d0e",
+          "sourceRefs": [
+            "oxphos-facts"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.carbohydrate.glycogen",
+      "references": [
+        {
+          "sourceRef": "glycogen-facts",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "biochemistry.carbohydrate.glycogen.b.483f6a7eb700",
+          "sourceRefs": [
+            "glycogen-facts"
+          ],
+          "scope": "간과 근육의 저장 기능을 다룬 자료의 범위와 비교; 세부 효소·질환 설명 대조 아님"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "physiology.renal.potassium",
+      "references": [
+        {
+          "sourceRef": "potassium-homeostasis",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.renal.potassium.b.26b1623177d8",
+          "sourceRefs": [
+            "potassium-homeostasis"
+          ],
+          "scope": "인슐린의 분포 조절과 신장의 체외 제거를 구별하는 핵심 원리"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "physiology.endocrine.calcium-phosphate",
+      "references": [
+        {
+          "sourceRef": "calcium-phosphate-endotext",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.endocrine.calcium-phosphate.b.1bc19ec59b4b",
+          "sourceRefs": [
+            "calcium-phosphate-endotext"
+          ],
+          "scope": "FGF23의 인산뇨 증가와 활성 비타민 D 감소 방향"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "physiology.muscle.excitation-contraction",
+      "references": [
+        {
+          "sourceRef": "skeletal-ec-review",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "biochemistry.amino-acids.urea-cycle",
+      "references": [
+        {
+          "sourceRef": "urea-cycle-genereviews",
+          "use": "scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_claim_review_pending"
+    },
+    {
+      "lessonId": "physiology.respiratory.control-of-breathing",
+      "references": [
+        {
+          "sourceRef": "respiratory-drive-education",
+          "use": "scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_claim_review_pending"
+    },
+    {
+      "lessonId": "biochemistry.nucleotides.purine-pyrimidine",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "핵산대사 전체 문장별 출처 대조 미완료"
+      ],
+      "references": [
+        {
+          "sourceRef": "nucleotide-metabolism-review",
+          "use": "selected_salvage_pathway_comparison_not_full_lesson_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "genetics.inheritance.mendelian-mechanisms",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "nhgri-dominant",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "nhgri-recessive",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "medline-penetrance",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.lipids.fatty-acid-oxidation",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시",
+        "지방산 산화 전체 기전의 원저·공식 교재 근거 선정과 문장별 대조 필요"
+      ]
+    },
+    {
+      "lessonId": "biochemistry.heme.synthesis-breakdown",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "niddk-porphyria",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "physiology.digestive.secretion-control",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "niddk-digestion",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    }
+  ]
+}

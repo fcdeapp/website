@@ -1,0 +1,1673 @@
+{
+  "schemaVersion": "1.0.0",
+  "subjects": [
+    {
+      "id": "general-surgery",
+      "title": {
+        "ko": "외과 총론"
+      },
+      "requirementNumber": 35,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "수술 전 평가",
+        "상처치유",
+        "외과적 감염",
+        "수술 후 합병증",
+        "영양과 대사",
+        "최소침습 수술 원리"
+      ],
+      "path": "domains/06-surgery/subjects/general-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "gi-surgery",
+      "title": {
+        "ko": "위장관외과"
+      },
+      "requirementNumber": 36,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "식도 수술",
+        "위암과 절제",
+        "위출구폐색",
+        "소장폐색",
+        "비만대사수술",
+        "문합과 누출"
+      ],
+      "path": "domains/06-surgery/subjects/gi-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "colorectal-surgery",
+      "title": {
+        "ko": "대장항문외과"
+      },
+      "requirementNumber": 37,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "충수염",
+        "결장과 직장암",
+        "염증성 장질환 수술",
+        "게실질환",
+        "항문질환",
+        "장루와 골반기능"
+      ],
+      "path": "domains/06-surgery/subjects/colorectal-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "hpb-surgery",
+      "title": {
+        "ko": "간담췌외과"
+      },
+      "requirementNumber": 38,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "간절제와 기능평가",
+        "담석과 담낭염",
+        "담도손상",
+        "이자 절제",
+        "이자암",
+        "간담도 종양"
+      ],
+      "path": "domains/06-surgery/subjects/hpb-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "breast-surgery",
+      "title": {
+        "ko": "유방외과"
+      },
+      "requirementNumber": 39,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "유방진찰과 영상",
+        "양성 유방질환",
+        "유방암 병기",
+        "수술과 액와부",
+        "전신치료 연계",
+        "유전성 유방암"
+      ],
+      "path": "domains/06-surgery/subjects/breast-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "endocrine-surgery",
+      "title": {
+        "ko": "내분비외과"
+      },
+      "requirementNumber": 40,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "갑상샘 결절",
+        "갑상샘암 수술",
+        "부갑상샘 질환",
+        "부신 수술",
+        "다발내분비종양",
+        "수술 후 칼슘과 신경 합병증"
+      ],
+      "path": "domains/06-surgery/subjects/endocrine-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "vascular-surgery",
+      "title": {
+        "ko": "혈관외과"
+      },
+      "requirementNumber": 41,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "말초동맥질환",
+        "급성사지허혈",
+        "대동맥류",
+        "경동맥질환",
+        "정맥질환",
+        "혈관접근과 혈관내치료"
+      ],
+      "path": "domains/06-surgery/subjects/vascular-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "transplant-surgery",
+      "title": {
+        "ko": "이식외과"
+      },
+      "requirementNumber": 42,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "장기기증과 배분",
+        "조직적합성",
+        "면역억제",
+        "거부반응",
+        "신장이식",
+        "간이식과 합병증"
+      ],
+      "path": "domains/06-surgery/subjects/transplant-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "trauma-surgery",
+      "title": {
+        "ko": "외상외과"
+      },
+      "requirementNumber": 43,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "초기 외상평가",
+        "출혈과 쇼크",
+        "흉복부 외상",
+        "골반과 혈관손상",
+        "손상통제수술",
+        "외상 후 중환자관리"
+      ],
+      "path": "domains/06-surgery/subjects/trauma-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "pediatric-surgery",
+      "title": {
+        "ko": "소아외과"
+      },
+      "requirementNumber": 44,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "신생아 장폐색",
+        "선천 소화기기형",
+        "장중첩과 충수염",
+        "소아 탈장",
+        "소아종양",
+        "소아 수액과 수술평가"
+      ],
+      "path": "domains/06-surgery/subjects/pediatric-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "orthopedics",
+      "title": {
+        "ko": "정형외과"
+      },
+      "requirementNumber": 45,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "골절과 치유",
+        "관절과 인대",
+        "척추질환",
+        "소아 정형외과",
+        "골관절 감염",
+        "근골격종양",
+        "퇴행성 관절질환"
+      ],
+      "path": "domains/06-surgery/subjects/orthopedics/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "neurosurgery",
+      "title": {
+        "ko": "신경외과"
+      },
+      "requirementNumber": 46,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "두부외상",
+        "뇌출혈과 혈관수술",
+        "뇌종양",
+        "수두증",
+        "척추와 척수수술",
+        "말초신경 수술"
+      ],
+      "path": "domains/06-surgery/subjects/neurosurgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "thoracic-surgery",
+      "title": {
+        "ko": "심장혈관흉부외과"
+      },
+      "requirementNumber": 47,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "관상동맥우회",
+        "판막수술",
+        "대동맥수술",
+        "선천심장질환",
+        "폐와 종격동수술",
+        "체외순환"
+      ],
+      "path": "domains/06-surgery/subjects/thoracic-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "plastic-surgery",
+      "title": {
+        "ko": "성형외과"
+      },
+      "requirementNumber": 48,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "창상과 흉터",
+        "피판과 이식",
+        "화상",
+        "수부손상",
+        "두개안면기형",
+        "재건수술 원리"
+      ],
+      "path": "domains/06-surgery/subjects/plastic-surgery/manifest.json",
+      "domainId": "06-surgery"
+    },
+    {
+      "id": "urology",
+      "title": {
+        "ko": "비뇨의학"
+      },
+      "requirementNumber": 49,
+      "area": "C",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "배뇨장애",
+        "요로결석",
+        "요로감염",
+        "전립샘질환",
+        "비뇨기종양",
+        "남성생식과 소아비뇨"
+      ],
+      "path": "domains/06-surgery/subjects/urology/manifest.json",
+      "domainId": "06-surgery"
+    }
+  ],
+  "units": [
+    {
+      "id": "general-surgery.plan.001",
+      "subjectId": "general-surgery",
+      "title": "수술 전 평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "general-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "general-surgery.wound.healing"
+      ]
+    },
+    {
+      "id": "general-surgery.plan.002",
+      "subjectId": "general-surgery",
+      "title": "상처치유",
+      "status": "unwritten",
+      "objectiveIds": [
+        "general-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "general-surgery.wound.healing"
+      ]
+    },
+    {
+      "id": "general-surgery.plan.003",
+      "subjectId": "general-surgery",
+      "title": "외과적 감염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "general-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "general-surgery.wound.healing"
+      ]
+    },
+    {
+      "id": "general-surgery.plan.004",
+      "subjectId": "general-surgery",
+      "title": "수술 후 합병증",
+      "status": "unwritten",
+      "objectiveIds": [
+        "general-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "general-surgery.wound.healing"
+      ]
+    },
+    {
+      "id": "general-surgery.plan.005",
+      "subjectId": "general-surgery",
+      "title": "영양과 대사",
+      "status": "unwritten",
+      "objectiveIds": [
+        "general-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "general-surgery.wound.healing"
+      ]
+    },
+    {
+      "id": "general-surgery.plan.006",
+      "subjectId": "general-surgery",
+      "title": "최소침습 수술 원리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "general-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "general-surgery.wound.healing"
+      ]
+    },
+    {
+      "id": "gi-surgery.plan.001",
+      "subjectId": "gi-surgery",
+      "title": "식도 수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gi-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gi-surgery.plan.002",
+      "subjectId": "gi-surgery",
+      "title": "위암과 절제",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gi-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gi-surgery.plan.003",
+      "subjectId": "gi-surgery",
+      "title": "위출구폐색",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gi-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gi-surgery.plan.004",
+      "subjectId": "gi-surgery",
+      "title": "소장폐색",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gi-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gi-surgery.plan.005",
+      "subjectId": "gi-surgery",
+      "title": "비만대사수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gi-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gi-surgery.plan.006",
+      "subjectId": "gi-surgery",
+      "title": "문합과 누출",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gi-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "colorectal-surgery.plan.001",
+      "subjectId": "colorectal-surgery",
+      "title": "충수염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "colorectal-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "colorectal-surgery.appendix.appendicitis"
+      ]
+    },
+    {
+      "id": "colorectal-surgery.plan.002",
+      "subjectId": "colorectal-surgery",
+      "title": "결장과 직장암",
+      "status": "unwritten",
+      "objectiveIds": [
+        "colorectal-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "colorectal-surgery.appendix.appendicitis"
+      ]
+    },
+    {
+      "id": "colorectal-surgery.plan.003",
+      "subjectId": "colorectal-surgery",
+      "title": "염증성 장질환 수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "colorectal-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "colorectal-surgery.appendix.appendicitis"
+      ]
+    },
+    {
+      "id": "colorectal-surgery.plan.004",
+      "subjectId": "colorectal-surgery",
+      "title": "게실질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "colorectal-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "colorectal-surgery.appendix.appendicitis"
+      ]
+    },
+    {
+      "id": "colorectal-surgery.plan.005",
+      "subjectId": "colorectal-surgery",
+      "title": "항문질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "colorectal-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "colorectal-surgery.appendix.appendicitis"
+      ]
+    },
+    {
+      "id": "colorectal-surgery.plan.006",
+      "subjectId": "colorectal-surgery",
+      "title": "장루와 골반기능",
+      "status": "unwritten",
+      "objectiveIds": [
+        "colorectal-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "colorectal-surgery.appendix.appendicitis"
+      ]
+    },
+    {
+      "id": "hpb-surgery.plan.001",
+      "subjectId": "hpb-surgery",
+      "title": "간절제와 기능평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hpb-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "hpb-surgery.plan.002",
+      "subjectId": "hpb-surgery",
+      "title": "담석과 담낭염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hpb-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "hpb-surgery.plan.003",
+      "subjectId": "hpb-surgery",
+      "title": "담도손상",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hpb-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "hpb-surgery.plan.004",
+      "subjectId": "hpb-surgery",
+      "title": "이자 절제",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hpb-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "hpb-surgery.plan.005",
+      "subjectId": "hpb-surgery",
+      "title": "이자암",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hpb-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "hpb-surgery.plan.006",
+      "subjectId": "hpb-surgery",
+      "title": "간담도 종양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hpb-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "breast-surgery.plan.001",
+      "subjectId": "breast-surgery",
+      "title": "유방진찰과 영상",
+      "status": "unwritten",
+      "objectiveIds": [
+        "breast-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "breast-surgery.plan.002",
+      "subjectId": "breast-surgery",
+      "title": "양성 유방질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "breast-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "breast-surgery.plan.003",
+      "subjectId": "breast-surgery",
+      "title": "유방암 병기",
+      "status": "unwritten",
+      "objectiveIds": [
+        "breast-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "breast-surgery.plan.004",
+      "subjectId": "breast-surgery",
+      "title": "수술과 액와부",
+      "status": "unwritten",
+      "objectiveIds": [
+        "breast-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "breast-surgery.plan.005",
+      "subjectId": "breast-surgery",
+      "title": "전신치료 연계",
+      "status": "unwritten",
+      "objectiveIds": [
+        "breast-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "breast-surgery.plan.006",
+      "subjectId": "breast-surgery",
+      "title": "유전성 유방암",
+      "status": "unwritten",
+      "objectiveIds": [
+        "breast-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "endocrine-surgery.plan.001",
+      "subjectId": "endocrine-surgery",
+      "title": "갑상샘 결절",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrine-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "endocrine-surgery.plan.002",
+      "subjectId": "endocrine-surgery",
+      "title": "갑상샘암 수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrine-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "endocrine-surgery.plan.003",
+      "subjectId": "endocrine-surgery",
+      "title": "부갑상샘 질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrine-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "endocrine-surgery.plan.004",
+      "subjectId": "endocrine-surgery",
+      "title": "부신 수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrine-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "endocrine-surgery.plan.005",
+      "subjectId": "endocrine-surgery",
+      "title": "다발내분비종양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrine-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "endocrine-surgery.plan.006",
+      "subjectId": "endocrine-surgery",
+      "title": "수술 후 칼슘과 신경 합병증",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrine-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "vascular-surgery.plan.001",
+      "subjectId": "vascular-surgery",
+      "title": "말초동맥질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "vascular-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "vascular-surgery.plan.002",
+      "subjectId": "vascular-surgery",
+      "title": "급성사지허혈",
+      "status": "unwritten",
+      "objectiveIds": [
+        "vascular-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "vascular-surgery.plan.003",
+      "subjectId": "vascular-surgery",
+      "title": "대동맥류",
+      "status": "unwritten",
+      "objectiveIds": [
+        "vascular-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "vascular-surgery.plan.004",
+      "subjectId": "vascular-surgery",
+      "title": "경동맥질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "vascular-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "vascular-surgery.plan.005",
+      "subjectId": "vascular-surgery",
+      "title": "정맥질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "vascular-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "vascular-surgery.plan.006",
+      "subjectId": "vascular-surgery",
+      "title": "혈관접근과 혈관내치료",
+      "status": "unwritten",
+      "objectiveIds": [
+        "vascular-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "transplant-surgery.plan.001",
+      "subjectId": "transplant-surgery",
+      "title": "장기기증과 배분",
+      "status": "unwritten",
+      "objectiveIds": [
+        "transplant-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "transplant-surgery.plan.002",
+      "subjectId": "transplant-surgery",
+      "title": "조직적합성",
+      "status": "unwritten",
+      "objectiveIds": [
+        "transplant-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "transplant-surgery.plan.003",
+      "subjectId": "transplant-surgery",
+      "title": "면역억제",
+      "status": "unwritten",
+      "objectiveIds": [
+        "transplant-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "transplant-surgery.plan.004",
+      "subjectId": "transplant-surgery",
+      "title": "거부반응",
+      "status": "unwritten",
+      "objectiveIds": [
+        "transplant-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "transplant-surgery.plan.005",
+      "subjectId": "transplant-surgery",
+      "title": "신장이식",
+      "status": "unwritten",
+      "objectiveIds": [
+        "transplant-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "transplant-surgery.plan.006",
+      "subjectId": "transplant-surgery",
+      "title": "간이식과 합병증",
+      "status": "unwritten",
+      "objectiveIds": [
+        "transplant-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "trauma-surgery.plan.001",
+      "subjectId": "trauma-surgery",
+      "title": "초기 외상평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "trauma-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "trauma-surgery.plan.002",
+      "subjectId": "trauma-surgery",
+      "title": "출혈과 쇼크",
+      "status": "unwritten",
+      "objectiveIds": [
+        "trauma-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "trauma-surgery.plan.003",
+      "subjectId": "trauma-surgery",
+      "title": "흉복부 외상",
+      "status": "unwritten",
+      "objectiveIds": [
+        "trauma-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "trauma-surgery.plan.004",
+      "subjectId": "trauma-surgery",
+      "title": "골반과 혈관손상",
+      "status": "unwritten",
+      "objectiveIds": [
+        "trauma-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "trauma-surgery.plan.005",
+      "subjectId": "trauma-surgery",
+      "title": "손상통제수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "trauma-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "trauma-surgery.plan.006",
+      "subjectId": "trauma-surgery",
+      "title": "외상 후 중환자관리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "trauma-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "pediatric-surgery.plan.001",
+      "subjectId": "pediatric-surgery",
+      "title": "신생아 장폐색",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatric-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "pediatric-surgery.plan.002",
+      "subjectId": "pediatric-surgery",
+      "title": "선천 소화기기형",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatric-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "pediatric-surgery.plan.003",
+      "subjectId": "pediatric-surgery",
+      "title": "장중첩과 충수염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatric-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "pediatric-surgery.plan.004",
+      "subjectId": "pediatric-surgery",
+      "title": "소아 탈장",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatric-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "pediatric-surgery.plan.005",
+      "subjectId": "pediatric-surgery",
+      "title": "소아종양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatric-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "pediatric-surgery.plan.006",
+      "subjectId": "pediatric-surgery",
+      "title": "소아 수액과 수술평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatric-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "orthopedics.plan.001",
+      "subjectId": "orthopedics",
+      "title": "골절과 치유",
+      "status": "unwritten",
+      "objectiveIds": [
+        "orthopedics.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "orthopedics.fracture.healing-stability"
+      ]
+    },
+    {
+      "id": "orthopedics.plan.002",
+      "subjectId": "orthopedics",
+      "title": "관절과 인대",
+      "status": "unwritten",
+      "objectiveIds": [
+        "orthopedics.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "orthopedics.fracture.healing-stability"
+      ]
+    },
+    {
+      "id": "orthopedics.plan.003",
+      "subjectId": "orthopedics",
+      "title": "척추질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "orthopedics.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "orthopedics.fracture.healing-stability"
+      ]
+    },
+    {
+      "id": "orthopedics.plan.004",
+      "subjectId": "orthopedics",
+      "title": "소아 정형외과",
+      "status": "unwritten",
+      "objectiveIds": [
+        "orthopedics.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "orthopedics.fracture.healing-stability"
+      ]
+    },
+    {
+      "id": "orthopedics.plan.005",
+      "subjectId": "orthopedics",
+      "title": "골관절 감염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "orthopedics.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "orthopedics.fracture.healing-stability"
+      ]
+    },
+    {
+      "id": "orthopedics.plan.006",
+      "subjectId": "orthopedics",
+      "title": "근골격종양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "orthopedics.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "orthopedics.fracture.healing-stability"
+      ]
+    },
+    {
+      "id": "orthopedics.plan.007",
+      "subjectId": "orthopedics",
+      "title": "퇴행성 관절질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "orthopedics.scope.007"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "orthopedics.fracture.healing-stability"
+      ]
+    },
+    {
+      "id": "neurosurgery.plan.001",
+      "subjectId": "neurosurgery",
+      "title": "두부외상",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neurosurgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "neurosurgery.plan.002",
+      "subjectId": "neurosurgery",
+      "title": "뇌출혈과 혈관수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neurosurgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "neurosurgery.plan.003",
+      "subjectId": "neurosurgery",
+      "title": "뇌종양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neurosurgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "neurosurgery.plan.004",
+      "subjectId": "neurosurgery",
+      "title": "수두증",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neurosurgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "neurosurgery.plan.005",
+      "subjectId": "neurosurgery",
+      "title": "척추와 척수수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neurosurgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "neurosurgery.plan.006",
+      "subjectId": "neurosurgery",
+      "title": "말초신경 수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neurosurgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "thoracic-surgery.plan.001",
+      "subjectId": "thoracic-surgery",
+      "title": "관상동맥우회",
+      "status": "unwritten",
+      "objectiveIds": [
+        "thoracic-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "thoracic-surgery.plan.002",
+      "subjectId": "thoracic-surgery",
+      "title": "판막수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "thoracic-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "thoracic-surgery.plan.003",
+      "subjectId": "thoracic-surgery",
+      "title": "대동맥수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "thoracic-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "thoracic-surgery.plan.004",
+      "subjectId": "thoracic-surgery",
+      "title": "선천심장질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "thoracic-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "thoracic-surgery.plan.005",
+      "subjectId": "thoracic-surgery",
+      "title": "폐와 종격동수술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "thoracic-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "thoracic-surgery.plan.006",
+      "subjectId": "thoracic-surgery",
+      "title": "체외순환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "thoracic-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "plastic-surgery.plan.001",
+      "subjectId": "plastic-surgery",
+      "title": "창상과 흉터",
+      "status": "unwritten",
+      "objectiveIds": [
+        "plastic-surgery.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "plastic-surgery.plan.002",
+      "subjectId": "plastic-surgery",
+      "title": "피판과 이식",
+      "status": "unwritten",
+      "objectiveIds": [
+        "plastic-surgery.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "plastic-surgery.plan.003",
+      "subjectId": "plastic-surgery",
+      "title": "화상",
+      "status": "unwritten",
+      "objectiveIds": [
+        "plastic-surgery.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "plastic-surgery.plan.004",
+      "subjectId": "plastic-surgery",
+      "title": "수부손상",
+      "status": "unwritten",
+      "objectiveIds": [
+        "plastic-surgery.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "plastic-surgery.plan.005",
+      "subjectId": "plastic-surgery",
+      "title": "두개안면기형",
+      "status": "unwritten",
+      "objectiveIds": [
+        "plastic-surgery.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "plastic-surgery.plan.006",
+      "subjectId": "plastic-surgery",
+      "title": "재건수술 원리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "plastic-surgery.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "urology.plan.001",
+      "subjectId": "urology",
+      "title": "배뇨장애",
+      "status": "unwritten",
+      "objectiveIds": [
+        "urology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "urology.bladder.storage-voiding"
+      ]
+    },
+    {
+      "id": "urology.plan.002",
+      "subjectId": "urology",
+      "title": "요로결석",
+      "status": "unwritten",
+      "objectiveIds": [
+        "urology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "urology.bladder.storage-voiding"
+      ]
+    },
+    {
+      "id": "urology.plan.003",
+      "subjectId": "urology",
+      "title": "요로감염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "urology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "urology.bladder.storage-voiding"
+      ]
+    },
+    {
+      "id": "urology.plan.004",
+      "subjectId": "urology",
+      "title": "전립샘질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "urology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "urology.bladder.storage-voiding"
+      ]
+    },
+    {
+      "id": "urology.plan.005",
+      "subjectId": "urology",
+      "title": "비뇨기종양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "urology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "urology.bladder.storage-voiding"
+      ]
+    },
+    {
+      "id": "urology.plan.006",
+      "subjectId": "urology",
+      "title": "남성생식과 소아비뇨",
+      "status": "unwritten",
+      "objectiveIds": [
+        "urology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "urology.bladder.storage-voiding"
+      ]
+    },
+    {
+      "id": "colorectal-surgery.appendix.appendicitis",
+      "subjectId": "colorectal-surgery",
+      "title": "급성 충수염의 해부학과 임상추론",
+      "status": "partial",
+      "objectiveIds": [
+        "colorectal-surgery.appendix.appendicitis.lo.01",
+        "colorectal-surgery.appendix.appendicitis.lo.02",
+        "colorectal-surgery.appendix.appendicitis.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/appendix/sections/colorectal-surgery.appendix.appendicitis.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "general-surgery.wound.healing",
+      "subjectId": "general-surgery",
+      "title": "상처치유의 단계와 실패 기전",
+      "status": "partial",
+      "objectiveIds": [
+        "general-surgery.wound.healing.lo.01",
+        "general-surgery.wound.healing.lo.02",
+        "general-surgery.wound.healing.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/wound/sections/general-surgery.wound.healing.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "orthopedics.fracture.healing-stability",
+      "subjectId": "orthopedics",
+      "title": "골절의 안정성과 골유합",
+      "status": "partial",
+      "objectiveIds": [
+        "orthopedics.fracture.healing-stability.lo.01",
+        "orthopedics.fracture.healing-stability.lo.02",
+        "orthopedics.fracture.healing-stability.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/orthopedics/chapters/fracture/sections/orthopedics.fracture.healing-stability.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "urology.bladder.storage-voiding",
+      "subjectId": "urology",
+      "title": "방광 저장·배뇨의 신경조절",
+      "status": "partial",
+      "objectiveIds": [
+        "urology.bladder.storage-voiding.lo.01",
+        "urology.bladder.storage-voiding.lo.02",
+        "urology.bladder.storage-voiding.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/urology/chapters/bladder/sections/urology.bladder.storage-voiding.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "trauma-surgery.resuscitation.hemorrhagic-shock",
+      "subjectId": "trauma-surgery",
+      "title": "출혈성 쇼크와 조직관류",
+      "status": "partial",
+      "objectiveIds": [
+        "trauma-surgery.resuscitation.hemorrhagic-shock.lo.01",
+        "trauma-surgery.resuscitation.hemorrhagic-shock.lo.02",
+        "trauma-surgery.resuscitation.hemorrhagic-shock.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/trauma-surgery/chapters/resuscitation/sections/trauma-surgery.resuscitation.hemorrhagic-shock.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "general-surgery.perioperative.wound-healing",
+      "subjectId": "general-surgery",
+      "title": "창상치유의 세포와 역학",
+      "status": "partial",
+      "objectiveIds": [
+        "general-surgery.perioperative.wound-healing.lo.01",
+        "general-surgery.perioperative.wound-healing.lo.02",
+        "general-surgery.perioperative.wound-healing.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/perioperative/sections/general-surgery.perioperative.wound-healing.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "general-surgery.perioperative.surgical-infection",
+      "subjectId": "general-surgery",
+      "title": "수술부위감염과 감염원 조절",
+      "status": "partial",
+      "objectiveIds": [
+        "general-surgery.perioperative.surgical-infection.lo.01",
+        "general-surgery.perioperative.surgical-infection.lo.02",
+        "general-surgery.perioperative.surgical-infection.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/perioperative/sections/general-surgery.perioperative.surgical-infection.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "transplant-surgery.immunology.rejection",
+      "subjectId": "transplant-surgery",
+      "title": "이식면역과 이식편 기능장애",
+      "status": "partial",
+      "objectiveIds": [
+        "transplant-surgery.immunology.rejection.lo.01",
+        "transplant-surgery.immunology.rejection.lo.02",
+        "transplant-surgery.immunology.rejection.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/transplant-surgery/chapters/immunology/sections/transplant-surgery.immunology.rejection.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia",
+      "subjectId": "vascular-surgery",
+      "title": "하지 동맥허혈의 혈역학과 평가",
+      "status": "partial",
+      "objectiveIds": [
+        "vascular-surgery.arterial.lower-limb-ischemia.lo.01",
+        "vascular-surgery.arterial.lower-limb-ischemia.lo.02",
+        "vascular-surgery.arterial.lower-limb-ischemia.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/vascular-surgery/chapters/arterial/sections/vascular-surgery.arterial.lower-limb-ischemia.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "breast-surgery.assessment.breast-mass",
+      "subjectId": "breast-surgery",
+      "title": "유방 종괴의 임상·영상·조직 평가",
+      "status": "partial",
+      "objectiveIds": [
+        "breast-surgery.assessment.breast-mass.lo.01",
+        "breast-surgery.assessment.breast-mass.lo.02",
+        "breast-surgery.assessment.breast-mass.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/breast-surgery/chapters/assessment/sections/breast-surgery.assessment.breast-mass.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "endocrine-surgery.thyroid.recurrent-laryngeal-nerve",
+      "subjectId": "endocrine-surgery",
+      "title": "갑상선 수술과 후두신경의 해부",
+      "status": "partial",
+      "objectiveIds": [
+        "endocrine-surgery.thyroid.recurrent-laryngeal-nerve.lo.01",
+        "endocrine-surgery.thyroid.recurrent-laryngeal-nerve.lo.02",
+        "endocrine-surgery.thyroid.recurrent-laryngeal-nerve.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/endocrine-surgery/chapters/thyroid/sections/endocrine-surgery.thyroid.recurrent-laryngeal-nerve.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "hpb-surgery.biliary.obstructive-jaundice",
+      "subjectId": "hpb-surgery",
+      "title": "폐쇄성 황달의 위치와 감압",
+      "status": "partial",
+      "objectiveIds": [
+        "hpb-surgery.biliary.obstructive-jaundice.lo.01",
+        "hpb-surgery.biliary.obstructive-jaundice.lo.02",
+        "hpb-surgery.biliary.obstructive-jaundice.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/hpb-surgery/chapters/biliary/sections/hpb-surgery.biliary.obstructive-jaundice.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "gi-surgery.obstruction.mechanical-ileus",
+      "subjectId": "gi-surgery",
+      "title": "기계적 장폐색과 장관 관류",
+      "status": "partial",
+      "objectiveIds": [
+        "gi-surgery.obstruction.mechanical-ileus.lo.01",
+        "gi-surgery.obstruction.mechanical-ileus.lo.02",
+        "gi-surgery.obstruction.mechanical-ileus.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/gi-surgery/chapters/obstruction/sections/gi-surgery.obstruction.mechanical-ileus.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "neurosurgery.physiology.intracranial-pressure",
+      "subjectId": "neurosurgery",
+      "title": "두개내압과 뇌관류의 관계",
+      "status": "partial",
+      "objectiveIds": [
+        "neurosurgery.physiology.intracranial-pressure.lo.01",
+        "neurosurgery.physiology.intracranial-pressure.lo.02",
+        "neurosurgery.physiology.intracranial-pressure.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/neurosurgery/chapters/physiology/sections/neurosurgery.physiology.intracranial-pressure.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "pediatric-surgery.intestine.intussusception",
+      "subjectId": "pediatric-surgery",
+      "title": "소아 장중첩증의 구조와 시간경과",
+      "status": "partial",
+      "objectiveIds": [
+        "pediatric-surgery.intestine.intussusception.lo.01",
+        "pediatric-surgery.intestine.intussusception.lo.02",
+        "pediatric-surgery.intestine.intussusception.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/pediatric-surgery/chapters/intestine/sections/pediatric-surgery.intestine.intussusception.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "plastic-surgery.reconstruction.graft-and-flap",
+      "subjectId": "plastic-surgery",
+      "title": "피부이식과 피판의 혈류 원리",
+      "status": "partial",
+      "objectiveIds": [
+        "plastic-surgery.reconstruction.graft-and-flap.lo.01",
+        "plastic-surgery.reconstruction.graft-and-flap.lo.02",
+        "plastic-surgery.reconstruction.graft-and-flap.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/plastic-surgery/chapters/reconstruction/sections/plastic-surgery.reconstruction.graft-and-flap.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "thoracic-surgery.pleura.pneumothorax",
+      "subjectId": "thoracic-surgery",
+      "title": "기흉과 흉막압의 변화",
+      "status": "partial",
+      "objectiveIds": [
+        "thoracic-surgery.pleura.pneumothorax.lo.01",
+        "thoracic-surgery.pleura.pneumothorax.lo.02",
+        "thoracic-surgery.pleura.pneumothorax.lo.03"
+      ],
+      "path": "domains/06-surgery/subjects/thoracic-surgery/chapters/pleura/sections/thoracic-surgery.pleura.pneumothorax.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    }
+  ]
+}

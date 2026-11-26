@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.enzymes.kinetics",
+  "subjectId": "biochemistry",
+  "chapterId": "enzymes",
+  "title": {
+    "ko": "효소 반응속도론과 저해의 정량적 해석",
+    "en": "Enzyme Kinetics and Inhibition"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.enzymes.kinetics.lo.01",
+      "text": "정상상태 근사에서 Michaelis-Menten 식을 유도한다."
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.lo.02",
+      "text": "Km과 해리상수를 구분한다."
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.lo.03",
+      "text": "혼합 저해 모형으로 세 저해 형식을 설명한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.enzymes.kinetics.b.cc4c1b355d3d",
+      "type": "heading",
+      "level": 2,
+      "text": "속도와 평형은 다른 질문이다"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.f02a503e66ad",
+      "type": "paragraph",
+      "markdown": "효소(enzyme)는 활성화 장벽을 낮춰 반응 속도를 증가시키지만 반응물과 생성물 사이의 표준 자유에너지 차이나 평형상수를 바꾸지 않는다. 반응이 빨라진다는 말은 열역학적으로 불리한 반응이 저절로 유리해진다는 뜻이 아니다. 세포에서는 반응 결합, 물질 농도, 구획화와 생성물 제거가 순방향 흐름을 결정한다. 활성부위(active site)의 상보성은 단순한 딱딱한 열쇠-자물쇠만으로 설명되지 않으며, 기질 결합 전후의 구조 변화와 전이상태 안정화가 촉매에 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.8613fb452f51",
+      "type": "paragraph",
+      "markdown": "반응속도 v는 단위 시간에 생성되는 생성물 농도 또는 감소하는 기질 농도다. 초기속도(initial velocity)는 생성물 축적과 역반응의 영향을 줄이기 위해 반응 초기의 기울기를 측정한 값이다. 실험에서 시간에 따른 흡광도 변화를 직접 얻었다면, 광경로 길이와 몰흡광계수를 이용해 농도 변화로 환산해야 한다. 효소활성이 온도와 pH에 따라 변하는 이유는 반응 빈도뿐 아니라 단백질 구조와 촉매 잔기의 이온화 상태가 달라지기 때문이다. 최적 조건은 측정 환경에 의존하므로 효소 이름에 고정된 절대 숫자처럼 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.391cdc8b49d4",
+      "type": "heading",
+      "level": 2,
+      "text": "단일 기질 모형의 유도"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.f8ad3cd1f292",
+      "type": "paragraph",
+      "markdown": "가장 단순한 반응은 E+S ⇌ ES → E+P이다. 결합 속도상수를 k1, 해리 속도상수를 k−1, 생성물 형성 속도상수를 kcat이라 두고 역방향 생성물 반응은 초기속도 조건에서 작다고 가정한다. 효소-기질 복합체의 변화율은 d[ES]/dt=k1[E][S]−(k−1+kcat)[ES]이다. 초기의 짧은 과도기가 지난 뒤 [ES]가 거의 일정하다는 정상상태 근사(steady-state approximation)를 적용하면 생성과 소멸 속도가 같아진다. 이는 전체 반응이 평형에 있다는 뜻이 아니다. 생성물은 계속 만들어지고 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.0117032516ec",
+      "type": "paragraph",
+      "markdown": "총효소농도는 [E]T=[E]+[ES]이므로 자유효소를 [E]T−[ES]로 치환한다. 이를 정리하면 [ES]=[E]T[S]/(Km+[S])이고 Km=(k−1+kcat)/k1이다. 생성 속도 v=kcat[ES]이므로 v=Vmax[S]/(Km+[S])를 얻으며 Vmax=kcat[E]T이다. 이 유도는 효소 총량이 기질에 비해 작고, 측정 동안 기질 감소가 크지 않으며, 단순한 반응 모형이 적절하다는 조건에 의존한다. 실제 효소의 다단계 촉매 과정에서는 측정된 상수의 해석이 더 복잡해질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.c157e14affcb",
+      "type": "paragraph",
+      "markdown": "[S]=Km이면 속도가 Vmax의 절반이 된다. 따라서 Km의 실험적 의미는 해당 모형의 반포화 기질농도다. 기질 해리상수 Kd=k−1/k1와 비교하면 Km에는 kcat이 추가되어 있다. 생성물 형성 단계가 해리에 비해 매우 느린 특수 조건에서만 Km≈Kd라고 근사할 수 있다. Km이 낮으니 언제나 기질 친화도가 높다고 말하면 촉매속도의 기여를 무시한다. 서로 다른 효소를 비교할 때는 반응기전과 실험 조건도 함께 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.78819027201b",
+      "type": "heading",
+      "level": 2,
+      "text": "저농도와 포화 영역"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.d1c29610bf50",
+      "type": "paragraph",
+      "markdown": "[S]가 Km보다 훨씬 작으면 분모를 Km으로 근사하여 v≈(Vmax/Km)[S]를 얻는다. 이 영역에서는 기질농도에 거의 비례하는 일차 반응처럼 보인다. 반대로 [S]가 Km보다 충분히 크면 v≈Vmax가 되어 기질에 대한 영차 반응처럼 보인다. 이때 기질을 더 넣어도 효소의 회전 속도가 병목이 된다. 효소량을 늘리면 Vmax는 증가하지만, 동일한 효소와 조건이라면 Km은 효소량만 늘렸다는 이유로 변하지 않는다. 단위가 농도/시간인 Vmax와 시간의 역수인 kcat도 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.f2120075afb1",
+      "type": "paragraph",
+      "markdown": "촉매효율 kcat/Km은 낮은 기질농도에서 효소가 기질을 처리하는 능력을 비교하는 데 유용하다. 그러나 세포내 대사 흐름을 이 숫자 하나로 정할 수는 없다. 기질 공급, 생성물 억제, 다른 효소의 활성, 구획 사이 이동과 조절이 연결되어 있기 때문이다. 대사조절에서 속도결정 단계를 영구히 한 효소에 고정하는 표현도 조심해야 한다. 경로의 제어는 조건에 따라 여러 반응에 분산될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.ded09d94b7e7",
+      "type": "heading",
+      "level": 2,
+      "text": "가역 저해의 통합 모형"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.f6f9aa93a9e1",
+      "type": "paragraph",
+      "markdown": "저해제가 자유효소와 ES 복합체에 각각 결합할 수 있는 혼합 저해(mixed inhibition)에서 α=1+[I]/Ki, α′=1+[I]/Ki′라 두면 v=Vmax[S]/(αKm+α′[S])로 표현할 수 있다. 여기서 Ki와 Ki′는 각각 자유효소와 ES에 대한 저해제의 결합을 나타내는 모형 상수다. 식을 정리하면 겉보기 Vmax는 Vmax/α′이고 겉보기 Km은 αKm/α′이다. 따라서 같은 Vmax 감소라도 Km이 증가하는지 감소하는지는 두 결합 효과의 상대적 크기에 달려 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.313873892120",
+      "type": "paragraph",
+      "markdown": "경쟁적 저해(competitive inhibition)는 단순 모형에서 저해제가 자유효소에만 결합하여 α는 증가하고 α′는 1인 경우다. 겉보기 Km은 증가하고 Vmax는 유지된다. 충분한 기질을 넣으면 저해 효과를 극복할 수 있다는 설명은 이 가역 모형과 기질농도 범위에 한정된다. 불경쟁적 저해(uncompetitive inhibition)는 ES에만 결합하여 α=1, α′>1인 경우로, 겉보기 Km과 Vmax가 같은 비율로 감소한다. Km이 감소했다고 해서 저해제가 효소를 더 좋은 촉매로 만들었다고 해석하면 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.8e95b92e1140",
+      "type": "paragraph",
+      "markdown": "순수 비경쟁적 저해(pure noncompetitive inhibition)는 α=α′인 특수한 혼합 저해다. Vmax는 감소하고 Km은 유지된다. 활성부위 바깥에 결합한다는 사실만으로 이 형식을 확정할 수 없다. 알로스테릭 결합은 구조적 개념이고 경쟁·혼합·불경쟁 구분은 속도론적 패턴이기 때문이다. 비가역 저해는 활성효소의 양을 시간에 따라 줄일 수 있어 가역 저해 식을 그대로 적용하기 어렵다. 약물 연구에서는 결합 가역성, 시간 의존성, 공유결합 여부를 각각 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.321d225339e7",
+      "type": "heading",
+      "level": 2,
+      "text": "실험 해석의 함정"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.b.26524682e91d",
+      "type": "paragraph",
+      "markdown": "Lineweaver-Burk 도표는 1/v 대 1/[S]를 그려 절편과 기울기를 비교한다. 직선화는 개념 설명에 편리하지만 작은 기질농도에서의 측정 오차를 크게 확대한다. 정량 추정에는 적절한 오차 모형을 둔 비선형 회귀가 더 알맞은 경우가 많다. 여러 기질농도에서 초기속도를 측정하고 저해제 농도를 바꾸어 비교해야 하며, 한 농도에서 속도가 절반이 되었다는 사실만으로 Ki를 구할 수 없다. IC50 역시 기질농도와 실험 설계에 의존하므로 Ki와 무조건 같지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.equation.001",
+      "type": "equation",
+      "latex": "v=\\frac{V_{max}[S]}{\\alpha K_m+\\alpha^{\\prime}[S]}",
+      "variables": {
+        "v": "초기속도",
+        "S": "기질",
+        "Vmax": "최대속도",
+        "Km": "모형의 Michaelis 상수",
+        "alpha": "1+[I]/Ki",
+        "alpha-prime": "1+[I]/Ki-prime"
+      },
+      "assumptions": [
+        "가역 혼합 저해 단일기질 정상상태 모형"
+      ]
+    },
+    {
+      "id": "biochemistry.enzymes.kinetics.table.001",
+      "type": "comparison",
+      "data": {
+        "title": "가역 저해의 단순 모형",
+        "columns": [
+          "유형",
+          "겉보기 Km",
+          "겉보기 Vmax"
+        ],
+        "rows": [
+          [
+            "경쟁",
+            "증가",
+            "유지"
+          ],
+          [
+            "불경쟁",
+            "감소",
+            "감소"
+          ],
+          [
+            "순수 비경쟁",
+            "유지",
+            "감소"
+          ],
+          [
+            "혼합",
+            "증가 또는 감소",
+            "감소"
+          ]
+        ],
+        "notes": "단일기질 가역 저해 및 해당 모형의 가정 아래 성립"
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/enzymes/sections/biochemistry.enzymes.kinetics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.biochemistry.enzymes.kinetics.001"
+  ],
+  "keyFacts": [
+    "Km=(k−1+kcat)/k1로 촉매속도의 영향도 받는다."
+  ]
+}

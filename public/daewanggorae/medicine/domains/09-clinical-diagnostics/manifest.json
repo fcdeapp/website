@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "09-clinical-diagnostics",
+  "title": {
+    "ko": "기타 임상의학·진단 분야"
+  },
+  "subjectIds": [
+    "dermatology",
+    "ophthalmology",
+    "otolaryngology",
+    "emergency-medicine",
+    "anesthesiology",
+    "critical-care",
+    "rehabilitation",
+    "family-medicine",
+    "geriatrics",
+    "palliative-care",
+    "occupational-medicine",
+    "radiology",
+    "nuclear-medicine",
+    "radiation-oncology",
+    "laboratory-medicine",
+    "transfusion-medicine",
+    "diagnostic-pathology",
+    "clinical-nutrition"
+  ],
+  "subjects": [
+    {
+      "id": "dermatology",
+      "path": "domains/09-clinical-diagnostics/subjects/dermatology/manifest.json"
+    },
+    {
+      "id": "ophthalmology",
+      "path": "domains/09-clinical-diagnostics/subjects/ophthalmology/manifest.json"
+    },
+    {
+      "id": "otolaryngology",
+      "path": "domains/09-clinical-diagnostics/subjects/otolaryngology/manifest.json"
+    },
+    {
+      "id": "emergency-medicine",
+      "path": "domains/09-clinical-diagnostics/subjects/emergency-medicine/manifest.json"
+    },
+    {
+      "id": "anesthesiology",
+      "path": "domains/09-clinical-diagnostics/subjects/anesthesiology/manifest.json"
+    },
+    {
+      "id": "critical-care",
+      "path": "domains/09-clinical-diagnostics/subjects/critical-care/manifest.json"
+    },
+    {
+      "id": "rehabilitation",
+      "path": "domains/09-clinical-diagnostics/subjects/rehabilitation/manifest.json"
+    },
+    {
+      "id": "family-medicine",
+      "path": "domains/09-clinical-diagnostics/subjects/family-medicine/manifest.json"
+    },
+    {
+      "id": "geriatrics",
+      "path": "domains/09-clinical-diagnostics/subjects/geriatrics/manifest.json"
+    },
+    {
+      "id": "palliative-care",
+      "path": "domains/09-clinical-diagnostics/subjects/palliative-care/manifest.json"
+    },
+    {
+      "id": "occupational-medicine",
+      "path": "domains/09-clinical-diagnostics/subjects/occupational-medicine/manifest.json"
+    },
+    {
+      "id": "radiology",
+      "path": "domains/09-clinical-diagnostics/subjects/radiology/manifest.json"
+    },
+    {
+      "id": "nuclear-medicine",
+      "path": "domains/09-clinical-diagnostics/subjects/nuclear-medicine/manifest.json"
+    },
+    {
+      "id": "radiation-oncology",
+      "path": "domains/09-clinical-diagnostics/subjects/radiation-oncology/manifest.json"
+    },
+    {
+      "id": "laboratory-medicine",
+      "path": "domains/09-clinical-diagnostics/subjects/laboratory-medicine/manifest.json"
+    },
+    {
+      "id": "transfusion-medicine",
+      "path": "domains/09-clinical-diagnostics/subjects/transfusion-medicine/manifest.json"
+    },
+    {
+      "id": "diagnostic-pathology",
+      "path": "domains/09-clinical-diagnostics/subjects/diagnostic-pathology/manifest.json"
+    },
+    {
+      "id": "clinical-nutrition",
+      "path": "domains/09-clinical-diagnostics/subjects/clinical-nutrition/manifest.json"
+    }
+  ],
+  "targetPages": 700,
+  "charactersPerPage": 1500,
+  "targetBodyCharacters": 1050000,
+  "minimumProseFractionBeforeNextDomain": 0.1,
+  "minimumBodyCharactersBeforeNextDomain": 105000,
+  "progressPath": "domains/09-clinical-diagnostics/progress.json",
+  "readerPath": "domains/09-clinical-diagnostics/TEXTBOOK.md",
+  "evidencePath": "domains/09-clinical-diagnostics/references/lesson-evidence.json",
+  "bodyLoading": "section_json",
+  "sharedPackage": "medical-shared.zip",
+  "curriculumPath": "domains/09-clinical-diagnostics/curriculum.json",
+  "coveragePath": "domains/09-clinical-diagnostics/coverage.json",
+  "questionIndex": "domains/09-clinical-diagnostics/questions/index.json",
+  "sceneIndex": "domains/09-clinical-diagnostics/scenes/index.json",
+  "diagramIndex": "domains/09-clinical-diagnostics/diagrams/index.json",
+  "referenceCatalog": "domains/09-clinical-diagnostics/references/references.json",
+  "crossDomainLessonRefs": [
+    "biochemistry.carbohydrate.glycogen",
+    "hematology.hemostasis.platelet-coagulation",
+    "immunology.hypersensitivity.mechanisms",
+    "neuroanatomy.spinal-cord.tracts",
+    "physiology.cardiovascular.cardiac-cycle",
+    "physiology.muscle.excitation-contraction",
+    "physiology.renal.potassium",
+    "physiology.respiratory.ventilation-perfusion",
+    "psychiatry.assessment.mental-status",
+    "trauma-surgery.resuscitation.hemorrhagic-shock"
+  ],
+  "packageFile": "09-clinical-diagnostics.zip",
+  "requiresOriginalBodyParts3D": true,
+  "installRoot": "public/medicine",
+  "relatedLessonResolution": "resolve by stable ID; request another domain when not installed"
+}

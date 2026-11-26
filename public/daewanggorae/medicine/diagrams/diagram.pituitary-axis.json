@@ -1,0 +1,174 @@
+{
+  "id": "diagram.pituitary-axis",
+  "lessonId": "endocrinology.pituitary.feedback",
+  "title": "Endocrine axis: regulation and feedback",
+  "nodes": [
+    {
+      "id": "hypo",
+      "label": "Hypothalamus",
+      "x": 520,
+      "y": 130,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "pit",
+      "label": "Anterior pituitary",
+      "x": 520,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "target",
+      "label": "Peripheral endocrine gland",
+      "x": 520,
+      "y": 530,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "horm",
+      "label": "Peripheral hormone",
+      "x": 520,
+      "y": 710,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "fb",
+      "label": "Negative feedback",
+      "x": 210,
+      "y": 530,
+      "width": 220,
+      "height": 72
+    }
+  ],
+  "edges": [
+    {
+      "source": "hypo",
+      "target": "pit",
+      "label": "releasing signals",
+      "id": "hypo--pit",
+      "relation": "directed"
+    },
+    {
+      "source": "pit",
+      "target": "target",
+      "label": "trophic hormone",
+      "id": "pit--target",
+      "relation": "directed"
+    },
+    {
+      "source": "target",
+      "target": "horm",
+      "label": "secretion",
+      "id": "target--horm",
+      "relation": "directed"
+    },
+    {
+      "source": "horm",
+      "target": "fb",
+      "label": "feedback",
+      "id": "horm--fb",
+      "relation": "directed"
+    },
+    {
+      "source": "fb",
+      "target": "pit",
+      "label": "inhibitory",
+      "id": "fb--pit",
+      "relation": "inhibitory"
+    },
+    {
+      "source": "fb",
+      "target": "hypo",
+      "label": "inhibitory",
+      "id": "fb--hypo",
+      "relation": "inhibitory"
+    }
+  ],
+  "visualizationKind": "original_schematic",
+  "sourceImageUsed": false,
+  "limitations": [
+    "Generic axis; prolactin and posterior pituitary need separate models",
+    "Inhibitory edges are explicitly labelled; arrows indicate influence, not activation"
+  ],
+  "schemaVersion": "2.0.0",
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 1040,
+      "height": 840
+    },
+    "compact": {
+      "canvas": {
+        "width": 600,
+        "height": 1020
+      },
+      "fontSize": 26,
+      "nodes": {
+        "hypo": {
+          "x": 150,
+          "y": 100,
+          "width": 250,
+          "height": 136
+        },
+        "pit": {
+          "x": 150,
+          "y": 360,
+          "width": 250,
+          "height": 136
+        },
+        "target": {
+          "x": 150,
+          "y": 620,
+          "width": 250,
+          "height": 136
+        },
+        "horm": {
+          "x": 150,
+          "y": 880,
+          "width": 250,
+          "height": 136
+        },
+        "fb": {
+          "x": 450,
+          "y": 620,
+          "width": 250,
+          "height": 136
+        }
+      },
+      "edges": {
+        "fb--hypo": {
+          "via": [
+            {
+              "x": 570,
+              "y": 620
+            },
+            {
+              "x": 570,
+              "y": 100
+            }
+          ],
+          "labelPosition": {
+            "x": 460,
+            "y": 270
+          }
+        },
+        "fb--pit": {
+          "via": [
+            {
+              "x": 450,
+              "y": 360
+            }
+          ],
+          "labelPosition": {
+            "x": 350,
+            "y": 320
+          }
+        }
+      }
+    }
+  }
+}

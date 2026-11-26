@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.vascular-surgery.arterial.lower-limb-ischemia.femoral-context",
+  "sceneId": "scene.vascular-surgery.arterial.lower-limb-ischemia.femoral-context",
+  "lessonId": "vascular-surgery.arterial.lower-limb-ischemia",
+  "triggerBlockId": "vascular-surgery.arterial.lower-limb-ischemia.b.83e4029d36e5",
+  "primaryStructures": [
+    "FMA70248"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA70248"
+  ],
+  "modelIds": [
+    "isa:FJ2074",
+    "isa:FJ2143"
+  ],
+  "modelPaths": [
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ2074.obj",
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ2143.obj"
+  ],
+  "cameraPosition": [
+    -0.12929999999999353,
+    -855.6675708033515,
+    650.415
+  ],
+  "cameraTarget": [
+    -0.12929999999999353,
+    -114.21449999999999,
+    650.415
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -66.1689,
+      -143.021,
+      470.422
+    ],
+    "max": [
+      65.9103,
+      -85.408,
+      830.408
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.16
+  },
+  "color": {
+    "primary": "#8b5cf6",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "하지 동맥 공급 경로 가운데 대퇴동맥의 정상 위치를 확인",
+  "mappingConfidence": "high_for_verified_gross_anatomy_only",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "정상 대퇴동맥 모델로 협착·폐색·측부순환 및 혈류를 표현하지 않음",
+    "하지 동맥의 모든 분지와 병변을 포함하는 장면이 아님"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.upper-limb.arm-elbow.right-bone-context",
+  "sceneId": "scene.anatomy.upper-limb.arm-elbow.right-bone-context",
+  "lessonId": "anatomy.upper-limb.arm-elbow",
+  "triggerBlockId": "anatomy.upper-limb.arm-elbow.b.a4db3fa597b6",
+  "primaryStructures": [
+    "FMA23130",
+    "FMA23464",
+    "FMA23467"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA23130",
+    "FMA23464",
+    "FMA23467"
+  ],
+  "modelIds": [
+    "partof:FJ3368",
+    "partof:FJ3349",
+    "partof:FJ3391"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3368.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3349.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3391.obj"
+  ],
+  "cameraPosition": [
+    -209.8125,
+    -1101.8097655742547,
+    1070.8564999999999
+  ],
+  "cameraTarget": [
+    -209.8125,
+    -85.8536,
+    1070.8564999999999
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -279.535,
+      -126.908,
+      805.173
+    ],
+    "max": [
+      -140.09,
+      -44.7992,
+      1336.54
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.15
+  },
+  "color": {
+    "primary": "#75639a",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "오른쪽 팔꿈치의 세 뼈 관계",
+  "mappingConfidence": "exact_attachment_concepts_and_bounds_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "정상 성인 뼈의 정적 위치. 인대·관절연골·신경·혈류·회전이나 손상 상태를 이 장면이 재현하지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

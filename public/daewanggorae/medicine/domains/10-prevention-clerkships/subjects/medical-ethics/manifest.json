@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "medical-ethics",
+  "title": {
+    "ko": "의료윤리"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "medical-ethics.chapter.consent",
+      "path": "domains/10-prevention-clerkships/subjects/medical-ethics/chapters/consent/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "medical-ethics.plan.001",
+    "medical-ethics.plan.002",
+    "medical-ethics.plan.003",
+    "medical-ethics.plan.004",
+    "medical-ethics.plan.005",
+    "medical-ethics.plan.006",
+    "medical-ethics.consent.shared-decisions"
+  ]
+}

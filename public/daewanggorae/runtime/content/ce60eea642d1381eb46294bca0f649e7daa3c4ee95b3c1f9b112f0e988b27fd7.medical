@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "colorectal-surgery",
+  "title": {
+    "ko": "대장항문외과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "colorectal-surgery.chapter.appendix",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/appendix/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "colorectal-surgery.plan.001",
+    "colorectal-surgery.plan.002",
+    "colorectal-surgery.plan.003",
+    "colorectal-surgery.plan.004",
+    "colorectal-surgery.plan.005",
+    "colorectal-surgery.plan.006",
+    "colorectal-surgery.appendix.appendicitis"
+  ]
+}

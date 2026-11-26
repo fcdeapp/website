@@ -1,0 +1,28 @@
+{
+  "id": "question.anatomy.head-neck.skull-base-foramina.001",
+  "kind": "original_concept_question",
+  "lessonId": "anatomy.head-neck.skull-base-foramina",
+  "prompt": "뇌신경과 두개바닥 통로의 연결로 옳은 것은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "시각신경은 시각신경관을 지난다."
+    },
+    {
+      "id": "B",
+      "text": "위턱신경 V2는 가시구멍을 지난다."
+    },
+    {
+      "id": "C",
+      "text": "얼굴신경은 머리뼈 안에서 곧바로 목정맥구멍으로 나온다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "시각신경관은 II와 눈동맥의 통로이다.",
+  "optionRationales": {
+    "A": "시각신경관은 II와 눈동맥의 통로이다.",
+    "B": "V2는 원형구멍을 지나며 가시구멍은 중간뇌막동맥 등과 관련된다.",
+    "C": "VII는 속귀길·얼굴신경관을 거쳐 붓꼭지구멍으로 나오는 경로를 가진다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

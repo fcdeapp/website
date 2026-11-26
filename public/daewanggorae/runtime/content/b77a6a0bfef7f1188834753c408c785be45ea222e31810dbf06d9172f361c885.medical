@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "medical-humanities",
+  "title": {
+    "ko": "의료인문학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "medical-humanities.chapter.illness",
+      "path": "domains/10-prevention-clerkships/subjects/medical-humanities/chapters/illness/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "medical-humanities.plan.001",
+    "medical-humanities.plan.002",
+    "medical-humanities.plan.003",
+    "medical-humanities.plan.004",
+    "medical-humanities.plan.005",
+    "medical-humanities.plan.006",
+    "medical-humanities.illness.experience-and-narrative"
+  ]
+}

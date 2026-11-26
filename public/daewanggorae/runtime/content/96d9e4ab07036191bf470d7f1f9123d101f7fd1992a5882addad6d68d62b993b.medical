@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hematology.anemia.reticulocytes",
+  "subjectId": "hematology",
+  "chapterId": "anemia",
+  "title": {
+    "ko": "빈혈의 기전별 접근과 망상적혈구",
+    "en": "Mechanistic Approach to Anemia and Reticulocytes"
+  },
+  "learningObjectives": [
+    {
+      "id": "hematology.anemia.reticulocytes.lo.01",
+      "text": "농도와 적혈구 총량을 구분한다."
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.lo.02",
+      "text": "생산 감소와 손실·파괴 증가를 구분한다."
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.lo.03",
+      "text": "MCV와 망상적혈구를 함께 해석한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "hematology.anemia.reticulocytes.b.38139d92a80c",
+      "type": "heading",
+      "level": 2,
+      "text": "빈혈은 원인명이 아니다"
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.b.e2311a3a791f",
+      "type": "paragraph",
+      "markdown": "빈혈(anemia)은 혈액의 산소운반과 관련된 적혈구 또는 혈색소의 감소 상태를 표현하며 원인 질환을 뜻하지 않는다. 혈색소 농도는 적혈구량뿐 아니라 혈장량의 영향을 받는다. 급성 출혈 직후에는 혈액과 혈장이 함께 소실되어 농도 변화가 처음부터 손실량을 그대로 반영하지 않을 수 있고, 수액과 시간 경과에 따라 달라진다. 반대로 탈수는 농축 때문에 감소를 가릴 수 있다. 나이, 성별, 임신과 검사실 기준을 확인하고 숫자와 순환 상태를 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.b.1d0d821bbe2b",
+      "type": "paragraph",
+      "markdown": "증상은 빈혈의 정도 외에도 발생 속도, 심폐 예비능과 동반질환에 좌우된다. 만성적으로 적응한 환자와 갑자기 출혈한 환자는 같은 혈색소에서 다른 모습을 보일 수 있다. 창백, 빈맥, 운동 시 호흡곤란 등은 비특이적이며, 황달·비장비대·출혈 징후·신경학적 소견은 원인 추론에 도움을 준다. 혈색소 수치만 보고 출혈 원인이나 골수 질환을 대신 진단해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.b.21746ed3ca7f",
+      "type": "heading",
+      "level": 2,
+      "text": "골수 반응을 먼저 보기"
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.b.ace7b11b3396",
+      "type": "paragraph",
+      "markdown": "망상적혈구(reticulocyte)는 최근 골수에서 나온 미성숙 적혈구로, 적혈구 생산 반응을 추정하는 데 유용하다. 빈혈에서 적혈구 총수가 줄면 단순 백분율이 상대적으로 높아 보일 수 있으므로 절대수와 상황에 맞는 보정을 고려한다. 심한 빈혈에서는 조기 방출과 말초 성숙 시간 변화도 해석에 영향을 준다. 급성 출혈이나 용혈 직후에는 골수 반응이 나타날 시간이 필요하므로 처음 낮은 값이라고 생산 장애로 즉시 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.b.9353b85214b5",
+      "type": "paragraph",
+      "markdown": "적절히 증가한 골수 반응은 손실이나 파괴 증가를, 부족한 반응은 생산 감소를 시사할 수 있다. 그러나 용혈과 철 결핍, 신장질환 등이 함께 있으면 전형적 반응이 약해질 수 있다. 신장의 erythropoietin, 철과 비타민 공급, 염증과 골수 환경이 생산을 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.b.15e93aecdf94",
+      "type": "heading",
+      "level": 2,
+      "text": "크기 지표와 원인"
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.b.6a80575684bd",
+      "type": "paragraph",
+      "markdown": "평균적혈구용적(mean corpuscular volume, MCV)은 평균 크기를 보여준다. 소구성에서는 철 결핍과 thalassemia 등, 대구성에서는 DNA 합성 장애와 간질환·약물 등 여러 원인을 고려한다. 하지만 평균값은 서로 다른 세포 집단의 혼합을 가릴 수 있다. 철 결핍과 비타민 B12 결핍이 함께 있으면 MCV가 참고범위에 놓일 수도 있다. 적혈구 분포폭과 말초도말, 다른 혈구계열의 이상을 함께 확인하면 평균값의 한계를 보완할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.b.d46f44665ed5",
+      "type": "paragraph",
+      "markdown": "철 검사는 저장량뿐 아니라 염증과 이용 가능성에 영향을 받는다. Ferritin은 저장 철을 반영하는 단서이지만 급성기 반응물질이므로 염증에서 상승할 수 있다. 낮은 transferrin saturation의 의미도 다른 지표와 맥락을 함께 봐야 한다. 용혈에서는 LDH, bilirubin, haptoglobin과 도말 소견 등을 종합하지만 각각 다른 이유로 변할 수 있다. 원인을 확인하지 않고 철분이나 수혈로 수치만 교정하면 출혈 병변과 기저 질환을 놓칠 수 있다. 구체 치료 문턱과 용량은 별도 지침 대조가 필요한 범위다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hematology.anemia.reticulocytes.case.001",
+      "type": "clinicalCase",
+      "data": {
+        "title": "정상 MCV의 혼합 결핍",
+        "caseType": "fictional_educational_not_real_patient",
+        "presentation": {
+          "history": "영양섭취 부족과 만성 출혈 가능성",
+          "result": "빈혈이 있지만 MCV는 참고범위",
+          "question": "정상 MCV가 철 및 B12 결핍을 배제하는가?"
+        },
+        "discussion": "평균값에서 작은 적혈구와 큰 적혈구가 상쇄될 수 있다. 골수반응, 도말과 적절한 추가 검사로 원인을 평가한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/hematology/chapters/anemia/sections/hematology.anemia.reticulocytes.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.hematology.anemia.reticulocytes.001"
+  ],
+  "keyFacts": [
+    "작고 큰 세포 집단이 평균값에서 상쇄될 수 있다."
+  ]
+}

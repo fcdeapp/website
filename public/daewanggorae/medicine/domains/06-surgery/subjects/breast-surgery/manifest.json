@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "breast-surgery",
+  "title": {
+    "ko": "유방외과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "breast-surgery.chapter.assessment",
+      "path": "domains/06-surgery/subjects/breast-surgery/chapters/assessment/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "breast-surgery.plan.001",
+    "breast-surgery.plan.002",
+    "breast-surgery.plan.003",
+    "breast-surgery.plan.004",
+    "breast-surgery.plan.005",
+    "breast-surgery.plan.006",
+    "breast-surgery.assessment.breast-mass"
+  ]
+}

@@ -496,7 +496,7 @@ const PostMain: React.FC<PostMainProps> = ({
                 <div className={styles.profileImage}>
                   {nicknameOption === "AI" ? (
                     <img
-                      src={getFullImageUrl("AI.png")}
+                      src={getFullImageUrl("AbrodyHuman.png")}
                       alt="AI"
                       style={{
                         width: 48,

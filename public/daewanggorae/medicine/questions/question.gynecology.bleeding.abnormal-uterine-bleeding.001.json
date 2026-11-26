@@ -1,0 +1,23 @@
+{
+  "id": "question.gynecology.bleeding.abnormal-uterine-bleeding.001",
+  "kind": "original_concept_question",
+  "lessonId": "gynecology.bleeding.abnormal-uterine-bleeding",
+  "prompt": "출혈량이 줄었다면 원인 평가를 항상 끝내도 되는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "아니다. 위험요인과 지속·재발 양상에 따라 원인 평가가 필요하다."
+    },
+    {
+      "id": "B",
+      "text": "그렇다. 증상 감소는 내막 병변이 없다는 증거이다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "내막 위험과 출혈의 증상 변화는 별도로 판단한다.",
+  "optionRationales": {
+    "A": "내막 위험과 출혈의 증상 변화는 별도로 판단한다.",
+    "B": "치료 반응만으로 악성 또는 구조적 원인을 배제할 수 없다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

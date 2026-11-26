@@ -1,0 +1,23 @@
+{
+  "id": "question.ophthalmology.vision.optics-pathway.001",
+  "kind": "original_concept_question",
+  "lessonId": "ophthalmology.vision.optics-pathway",
+  "prompt": "빛을 받은 광수용체의 전형적 전위 변화는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "과분극"
+    },
+    {
+      "id": "B",
+      "text": "항상 활동전위 폭발"
+    }
+  ],
+  "answer": "A",
+  "explanation": "cGMP 감소와 양이온 통로 개방 감소가 과분극을 만든다.",
+  "optionRationales": {
+    "A": "cGMP 감소와 양이온 통로 개방 감소가 과분극을 만든다.",
+    "B": "광수용체 신호를 일반적인 활동전위 그림과 동일시하면 안 된다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

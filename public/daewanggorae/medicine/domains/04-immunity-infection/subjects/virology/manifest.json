@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "virology",
+  "title": {
+    "ko": "바이러스학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "virology.chapter.replication",
+      "path": "domains/04-immunity-infection/subjects/virology/chapters/replication/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "virology.plan.001",
+    "virology.plan.002",
+    "virology.plan.003",
+    "virology.plan.004",
+    "virology.plan.005",
+    "virology.plan.006",
+    "virology.replication.host-cell"
+  ]
+}

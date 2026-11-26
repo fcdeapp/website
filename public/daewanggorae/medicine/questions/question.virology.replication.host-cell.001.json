@@ -1,0 +1,23 @@
+{
+  "id": "question.virology.replication.host-cell.001",
+  "kind": "original_concept_question",
+  "lessonId": "virology.replication.host-cell",
+  "prompt": "음성가닥 RNA 바이러스는 초기 mRNA 전사를 위한 효소가 필요한가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "항상 숙주 리보솜이 RNA를 바로 복사한다."
+    },
+    {
+      "id": "B",
+      "text": "필요하다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "숙주 리보솜은 음성가닥 유전체를 mRNA로 직접 바꾸지 못한다.",
+  "optionRationales": {
+    "A": "번역과 RNA 전사·복제는 서로 다른 과정이다.",
+    "B": "숙주 리보솜은 음성가닥 유전체를 mRNA로 직접 바꾸지 못한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

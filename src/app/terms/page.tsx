@@ -27,7 +27,6 @@ const termsMeta: Record<
   {
     labelEn: string;
     labelKo: string;
-    eyebrow: string;
     descriptionEn: string;
     descriptionKo: string;
   }
@@ -35,7 +34,6 @@ const termsMeta: Record<
   service: {
     labelEn: "Terms of Service",
     labelKo: "서비스 이용약관",
-    eyebrow: "Service Rules",
     descriptionEn:
       "Understand the rules for using Abrody safely, fairly, and responsibly.",
     descriptionKo:
@@ -44,7 +42,6 @@ const termsMeta: Record<
   privacy: {
     labelEn: "Privacy Policy",
     labelKo: "개인정보처리방침",
-    eyebrow: "Privacy & Data",
     descriptionEn:
       "Review how Abrody handles personal information and protects your data.",
     descriptionKo:
@@ -53,7 +50,6 @@ const termsMeta: Record<
   community: {
     labelEn: "Community Guidelines",
     labelKo: "커뮤니티 이용약관",
-    eyebrow: "Community Safety",
     descriptionEn:
       "Keep the community respectful, welcoming, and useful for language learning.",
     descriptionKo:
@@ -205,8 +201,6 @@ export default function TermsPage() {
             </div>
 
             <div className={styles.heroTextBlock}>
-              <span className={styles.kicker}>{activeMeta.eyebrow}</span>
-
               <h1 className={styles.title}>
                 {isKo ? activeMeta.labelKo : activeMeta.labelEn}
               </h1>
@@ -309,7 +303,6 @@ export default function TermsPage() {
           <div className={styles.documentCard}>
             <div className={styles.documentTopBar}>
               <div>
-                <span className={styles.documentKicker}>Abrody Legal</span>
                 <h2 className={styles.documentTitle}>
                   {isKo ? activeMeta.labelKo : activeMeta.labelEn}
                 </h2>

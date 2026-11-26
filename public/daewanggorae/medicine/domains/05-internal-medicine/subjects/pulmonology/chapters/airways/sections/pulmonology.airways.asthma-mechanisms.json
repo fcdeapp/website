@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.airways.asthma-mechanisms",
+  "subjectId": "pulmonology",
+  "chapterId": "airways",
+  "title": {
+    "ko": "천식의 염증·기도역학과 진단",
+    "en": "Asthma: Inflammation, Airway Mechanics and Diagnosis"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.lo.01",
+      "text": "가변적 기류제한과 기도과민성을 설명한다."
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.lo.02",
+      "text": "임상 증상과 객관적 기능평가를 연결한다."
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.lo.03",
+      "text": "증상조절과 악화위험, 중증도를 구분한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.064759d82ffe",
+      "type": "heading",
+      "level": 2,
+      "text": "가변적인 기도질환"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.3ef1ad013c41",
+      "type": "paragraph",
+      "markdown": "천식(asthma)은 만성 기도염증을 배경으로 다양한 시간과 강도의 호흡기 증상 및 가변적 호기 기류제한을 보이는 이질적인 질환이다. 천명, 호흡곤란과 가슴답답함, 기침이 밤이나 운동·감염·알레르겐 노출에 따라 달라질 수 있다. 모든 환자가 같은 염증 유형을 가지거나 항상 천명음을 보이는 것은 아니다. 증상이 없는 시점의 진찰과 폐기능이 뚜렷한 이상을 보이지 않을 수 있어 시간적 양상이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.8267ed96c702",
+      "type": "paragraph",
+      "markdown": "기도 평활근 수축, 점막 부종과 점액은 기도 내경과 저항을 변화시킨다. 만성 경과에서 기도벽 구조가 변하는 재형성(remodeling)은 지속적 기류제한에 기여할 수 있다. 기도과민성은 자극에 대한 수축 반응이 증가한 성질로, 증상과 염증 및 구조 변화와 관련되지만 이들 개념과 완전히 같은 뜻은 아니다. 한 기능검사 결과만으로 전체 병태를 대표하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.pulmonology.airways.asthma-mechanisms.662e9064"
+      ],
+      "conceptRefs": [
+        "FMA7309",
+        "FMA7310"
+      ]
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.4c8aa84a7132",
+      "type": "heading",
+      "level": 2,
+      "text": "염증 표현형과 유발인자"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.1b748cd78391",
+      "type": "paragraph",
+      "markdown": "일부 환자에서는 type 2 염증과 IL-4, IL-5, IL-13 및 IgE·호산구 관련 경로가 중요하다. 기도 상피의 alarmin 신호와 선천림프구, 적응면역이 서로 연결된다. 다른 환자에서는 호중구성 또는 적은 과립구의 양상이 관찰될 수 있고, 흡연과 비만, 감염과 직업 노출 등 여러 맥락이 영향을 준다. 혈액 호산구와 호기산화질소는 특정 염증의 단서를 주지만 검사 조건과 치료에 따라 변할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.a619486bfc52",
+      "type": "paragraph",
+      "markdown": "알레르겐 감작은 관련 노출에서 증상이 유발될 가능성을 해석하는 자료이며 감작검사 양성만으로 모든 증상의 원인을 확정하지 않는다. 운동과 찬 공기, 바이러스 감염과 자극성 연기, 일부 약물은 서로 다른 기전으로 증상을 악화시킬 수 있다. 직업 관련성은 작업일과 휴일, 특정 공정과 보호조치, 증상 시작의 시간 관계를 살핀다. 유발인자를 발견하면 노출 관리와 치료 반응 평가를 연결할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.c294d59dc5e5",
+      "type": "heading",
+      "level": 2,
+      "text": "폐기능과 진단의 확인"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.430655af8866",
+      "type": "paragraph",
+      "markdown": "Spirometry에서는 호기 유량과 용적, FEV1과 FVC의 관계 및 곡선의 질을 평가한다. 기관지확장제 전후 변화는 가변적 기류제한을 입증하는 방법의 하나다. 반응이 한 번 없었다고 천식을 배제하지는 않으며, 증상 시점이나 반복 검사, 최고호기유량 변동과 상황에 맞는 유발검사 등을 고려한다. 검사마다 적용 조건과 판정 기준이 달라 동일한 변화율을 모든 연령과 검사에 그대로 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.6e6e67ca9f7a",
+      "type": "paragraph",
+      "markdown": "기침만 두드러지는 환자에서는 상기도 질환, 역류, 약물과 다른 호산구성 기도질환을 포함하여 감별한다. 성대·후두의 유도성 폐쇄, 심장질환과 기관지확장증 등도 비슷한 증상을 만들 수 있다. 진단명이 오래전에 붙었다는 이유만으로 확인 과정을 생략하지 않고 기존의 객관적 근거와 현재 양상을 대조한다. 이미 치료 중인 경우에는 치료가 가변성을 줄였을 가능성을 감안한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.89a49403fbd7",
+      "type": "heading",
+      "level": 2,
+      "text": "조절 상태와 중증도"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.44d79a04991c",
+      "type": "paragraph",
+      "markdown": "현재의 증상 빈도와 야간 각성, 활동 제한 및 증상완화제 사용은 조절 상태의 여러 측면이다. 향후 악화 위험은 현재 증상이 적어도 존재할 수 있다. 이전 중증 악화와 폐기능, 염증 및 약물 사용 방식, 흡연과 동반질환 등이 추가 정보를 준다. 조절이 나쁘다는 말이 곧 처음부터 중증 천식이라는 뜻은 아니다. 흡입기 사용과 순응도, 진단과 노출 및 동반질환 문제를 먼저 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.e625e1fb406c",
+      "type": "paragraph",
+      "markdown": "중증도는 적절한 치료와 관리 아래 조절을 유지하는 데 필요한 부담과 반응을 바탕으로 평가한다. 상기도 질환과 비만, 수면 문제와 심리사회적 요인은 증상과 관리에 영향을 줄 수 있다. 환자가 약물을 처방받았다는 사실과 실제로 적절하게 사용한다는 사실은 다르므로 기구를 직접 사용하는 모습을 관찰하는 것이 유용하다. 의사소통과 비용, 접근성도 치료 실패의 원인을 이해하는 데 포함된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.dd4343faf4e9",
+      "type": "heading",
+      "level": 2,
+      "text": "치료의 기전적 구분"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.fd65cb6aaf16",
+      "type": "paragraph",
+      "markdown": "흡입 corticosteroid는 기도염증을 조절하는 중심 약물군이고, β2 작용제는 평활근 이완을 통해 기류제한과 증상을 완화한다. 지속시간이 긴 약물과 빠른 완화용 약물은 역할과 조합이 다르며, 각 성분의 작용만으로 특정 흡입기 조합의 사용법을 임의로 결정할 수 없다. 항무스카린제, leukotriene 경로 약물과 일부 생물학적 제제는 환자 특성과 치료 단계에 따라 다른 표적을 제공한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms.b.3bf5fd8668e1",
+      "type": "paragraph",
+      "markdown": "악화에서는 말하기와 호흡 노력, 의식과 산소화, 호기 유량 및 초기 반응으로 상태를 평가한다. 심한 폐색에서 공기 이동이 매우 감소하면 천명음이 오히려 약해질 수 있어 조용한 청진을 호전으로 오해하지 않는다. 장기 관리에서는 환자 교육, 흡입기 기술과 노출 관리, 개별 행동계획 및 추적평가를 연결한다. 약물 단계의 변경은 진단과 실제 사용, 악화 위험 및 반응을 재검토한 뒤 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/airways/sections/pulmonology.airways.asthma-mechanisms.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.airways.asthma-mechanisms.001"
+  ],
+  "keyFacts": [
+    "공기 이동이 매우 적어져 천명이 약해질 수도 있다."
+  ]
+}

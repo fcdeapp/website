@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "endocrinology.thyroid.hormone-synthesis",
+  "subjectId": "endocrinology",
+  "chapterId": "thyroid",
+  "title": {
+    "ko": "갑상샘호르몬의 합성·작용과 조절",
+    "en": "Thyroid Hormone Synthesis, Action and Regulation"
+  },
+  "learningObjectives": [
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.lo.01",
+      "text": "여포세포의 극성과 호르몬 합성 단계를 설명한다."
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.lo.02",
+      "text": "혈중 결합단백질과 탈요오드효소의 역할을 구분한다."
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.lo.03",
+      "text": "갑상샘기능항진과 갑상샘중독증을 구분한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.c982d4ee611e",
+      "type": "heading",
+      "level": 2,
+      "text": "여포는 세포 바깥에 호르몬을 저장한다"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.86bbe31863ac",
+      "type": "paragraph",
+      "markdown": "갑상샘(thyroid gland)은 여포세포가 둘러싼 구형 여포로 조직된다. 여포의 안쪽에는 thyroglobulin이 풍부한 콜로이드가 있으며, 세포의 바닥가쪽 면은 모세혈관과, 꼭대기 면은 여포강과 접한다. 이 극성은 혈액에서 요오드를 받아 여포강에서 단백질을 요오드화한 뒤 호르몬을 혈액으로 내보내는 방향성을 만든다. 여포사이의 C세포가 분비하는 calcitonin은 여포세포의 T3·T4와 다른 세포 및 조절 체계에 속한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.dddd9ecf5cae",
+      "type": "paragraph",
+      "markdown": "갑상샘호르몬의 주요 분자는 thyroxine(T4)과 triiodothyronine(T3)이다. T4는 요오드 네 개, T3는 세 개를 가진다. 혈중 공급과 조직 활성의 관계에는 말초 전환이 중요하여 갑상샘에서 분비되는 양만으로 각 조직의 활성호르몬 노출이 정해지지 않는다. 갑상샘호르몬은 발생과 성장, 신경계 성숙 및 성인의 에너지 대사와 심혈관 기능 등 광범위한 과정에 영향을 준다.",
+      "verificationStatus": "selected_claims_cross_checked_remaining_claims_pending"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.a62dd06ef603",
+      "type": "heading",
+      "level": 2,
+      "text": "요오드 포획과 유기화"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.4ddd352a97a8",
+      "type": "paragraph",
+      "markdown": "혈액의 iodide는 여포세포 바닥가쪽 막의 sodium-iodide symporter(NIS)를 통해 유입된다. 이 이차능동수송은 Na+/K+-ATPase가 유지하는 나트륨 기울기에 의존한다. 꼭대기 면을 통한 여포강 이동에는 pendrin 등 운반체가 관여한다. 여포강 쪽에서 thyroid peroxidase(TPO)와 과산화수소 생성계가 iodide 산화와 thyroglobulin의 tyrosine 잔기 요오드화를 연결한다. 단백질에 결합하는 이 과정을 유기화(organification)라 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.85268342007a",
+      "type": "paragraph",
+      "markdown": "Tyrosine에 요오드가 하나 붙으면 monoiodotyrosine(MIT), 두 개 붙으면 diiodotyrosine(DIT)이 된다. 요오드화 잔기의 결합으로 T3 또는 T4에 해당하는 부분이 형성되지만 이때도 thyroglobulin에 연결되어 저장된다. 필요에 따라 콜로이드가 세포 안으로 흡수되고 단백질분해를 거쳐 자유로운 호르몬이 방출된다. 남은 MIT와 DIT에서 요오드를 회수하는 반응은 T4를 T3로 바꾸는 말초 탈요오드 반응과 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.e9597627b8e1",
+      "type": "heading",
+      "level": 2,
+      "text": "혈중 수송과 조직 활성"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.cce901828f72",
+      "type": "paragraph",
+      "markdown": "T3와 T4의 대부분은 thyroxine-binding globulin, transthyretin과 albumin 등 단백질에 결합한다. 결합형은 저장·완충 역할을 하며 자유형과 평형을 이룬다. 결합단백질의 양이 변하면 총호르몬 농도가 변해도 자유형과 생리 상태가 같은 정도로 변하지 않을 수 있다. 임신이나 특정 약물, 간 상태에서 총농도를 해석할 때 이 점이 중요하다. 자유호르몬 검사도 분석법과 간섭의 영향을 받을 수 있어 임상상과 불일치하는 값은 재검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.fc4c3f34ef67",
+      "type": "paragraph",
+      "markdown": "탈요오드효소(deiodinase)는 T4의 활성화와 불활성화에 관여한다. Type 1과 type 2는 T3 생성에 기여하고 type 3은 불활성화 방향의 반응에 중요하다. 조직별 효소 발현과 수송체, 수용체가 다르므로 혈중 호르몬 하나가 모든 조직의 신호를 완전히 대표하지는 않는다. T3는 핵수용체를 통해 전사 조절에 영향을 주며, 효과의 시간 경과에는 유전자 발현과 단백질 교체가 관련된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.16fbd421d59f",
+      "type": "heading",
+      "level": 2,
+      "text": "되먹임과 요오드의 조절"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.967c7f82fe40",
+      "type": "paragraph",
+      "markdown": "시상하부 TRH는 뇌하수체 TSH 분비를 자극하고, TSH는 여포세포 수용체를 통해 호르몬 합성과 분비 및 샘의 성장에 영향을 준다. 말초 호르몬은 음성되먹임을 제공한다. 원발성 기능저하에서는 자유호르몬 감소에 대한 TSH 상승이 예상되지만 중추성 장애에서는 그러한 반응이 부족할 수 있다. 정상범위 안의 TSH가 모든 상황에서 기능 정상의 증거가 되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.52dd243557d9",
+      "type": "paragraph",
+      "markdown": "요오드 공급 부족과 과다는 서로 다른 방식으로 기능에 영향을 준다. 급격한 과다 요오드는 유기화를 일시적으로 억제할 수 있고, 정상 조직은 적응을 통해 기능을 유지할 수 있다. 자율적으로 기능하는 조직이나 특정 기저질환에서는 요오드 노출 후 호르몬 과다가 나타날 수도 있다. 따라서 요오드는 많을수록 항상 기능항진을, 적을수록 항상 같은 정도의 기능저하를 만드는 선형 자극이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.9190ded5f80c",
+      "type": "heading",
+      "level": 2,
+      "text": "호르몬 과다의 발생 위치"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.0cc01ab51458",
+      "type": "paragraph",
+      "markdown": "갑상샘중독증(thyrotoxicosis)은 조직에 과도한 갑상샘호르몬 효과가 있는 상태를 뜻한다. 갑상샘기능항진증(hyperthyroidism)은 샘 자체의 합성과 분비가 증가한 경우로 그 원인의 일부다. Graves병과 자율기능 결절은 합성 증가를, 파괴성 갑상샘염은 저장호르몬의 유출을 통해 중독증을 만들 수 있다. 외부 호르몬 섭취도 다른 원인이 된다. 기전 차이는 방사성요오드 섭취와 혈류, 항체 및 치료 반응의 해석에 연결된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis.b.0dff930bb65e",
+      "type": "paragraph",
+      "markdown": "Thionamide 계열은 합성 경로를 억제하므로 이미 만들어져 유출되는 호르몬만이 주된 문제인 상황에서는 효과가 다르다. 교감신경 증상 완화와 호르몬 생성 억제, 원인 치료는 각각 다른 목표다. 갑상샘 비대의 유무와 기능 상태도 별개여서 큰 샘이 반드시 기능항진이라는 뜻은 아니다. 진찰, TSH와 자유호르몬, 원인에 맞는 항체·영상 검사를 통합하여 기능과 구조를 나누어 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/endocrinology/chapters/thyroid/sections/endocrinology.thyroid.hormone-synthesis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.endocrinology.thyroid.hormone-synthesis.001"
+  ],
+  "keyFacts": [
+    "저장된 호르몬의 유출도 갑상샘중독증을 만들 수 있다."
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "environmental-health.risk.exposure-dose-response",
+  "subjectId": "environmental-health",
+  "chapterId": "risk",
+  "title": {
+    "ko": "환경노출과 건강위험의 평가",
+    "en": "Environmental Exposure and Health Risk Assessment"
+  },
+  "learningObjectives": [
+    {
+      "id": "environmental-health.risk.exposure-dose-response.lo.01",
+      "text": "위해요인과 위험의 차이를 설명한다"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.lo.02",
+      "text": "외부 농도와 체내 용량을 구별한다"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.lo.03",
+      "text": "집단 위험과 개인 질환의 인과 판단을 구분한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.e0ee97a6870f",
+      "type": "heading",
+      "level": 2,
+      "text": "물질의 성질과 실제 위험"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.11b93a58210d",
+      "type": "paragraph",
+      "markdown": "위해성 또는 유해성(hazard)은 어떤 요인이 손상을 일으킬 수 있는 성질을 가리키고, 위험(risk)은 특정 조건에서 그 손상이 발생할 가능성과 결과를 다룬다. 유해물질이라는 이름만으로 모든 접촉이 같은 위험을 갖는 것은 아니다. 노출의 강도와 시간, 경로와 흡수 및 개인의 감수성이 결과를 바꾼다. 반대로 자연에서 유래하거나 평소 사용하는 물질이라는 사실도 무조건적인 안전을 보장하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.dc1df759088f",
+      "type": "paragraph",
+      "markdown": "환경보건의 평가는 대기와 물, 토양과 식품 및 주거 환경에서 유해요인이 사람에게 이르는 경로를 추적한다. 오염원이 존재하는지, 실제로 이동하여 노출이 이루어지는지, 체내에 얼마나 흡수되고 어떤 반응을 만드는지는 별개의 질문이다. 오염원과 질환이 같은 지역에 있다는 사실만으로 개인의 인과를 확정할 수 없지만, 불확실성이 있다는 이유로 예방 가능한 노출을 무시할 수도 없다. 근거와 조치의 목적을 구별하여 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.4a9373ccb0c5",
+      "type": "heading",
+      "level": 2,
+      "text": "노출 경로와 시간 창"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.6684450fb11f",
+      "type": "paragraph",
+      "markdown": "외부 환경 농도와 개인의 노출은 다를 수 있다. 실내외 활동과 환기, 식수와 식품 선택, 작업과 이동이 실제 접촉을 바꾼다. 같은 공기 농도에서도 호흡량과 활동, 체격이 흡입량에 영향을 준다. 피부와 소화관의 흡수, 대사 및 배설은 체내 용량을 바꾼다. 따라서 관측소의 수치를 개인의 장기 농도처럼 그대로 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.f4fa94234ce1",
+      "type": "paragraph",
+      "markdown": "발달기의 민감한 시간 창(window of susceptibility)은 평균적인 평생 노출만으로 충분히 표현되지 않을 수 있다. 태아와 영유아의 장기 발달, 성장과 행동은 노출과 감수성을 다르게 만든다. 노인과 만성질환자도 생리적 예비능과 배설 능력이 다를 수 있다. 같은 기준과 평균값이 모든 집단의 위험을 동일하게 대표한다고 가정하지 않고 어떤 집단을 보호하려는 평가인지 명확히 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.26eab2325cf9",
+      "type": "heading",
+      "level": 2,
+      "text": "용량과 반응"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.32a39a0c7007",
+      "type": "paragraph",
+      "markdown": "용량-반응 관계(dose-response relationship)는 노출 또는 용량의 변화와 결과 사이의 관계를 설명한다. 어떤 효과는 일정 범위의 보상과 역치를 고려할 수 있고, 다른 평가에서는 낮은 용량의 위험을 특정 모형으로 추정한다. 사용한 모형은 관찰 자료와 생물학적 지식 및 정책적 가정에 의존한다. 관찰하지 않은 낮은 농도로 외삽한 값을 직접 측정한 사실처럼 표현해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.096e2ebefdee",
+      "type": "paragraph",
+      "markdown": "평균 노출뿐 아니라 최고 농도와 빈도, 지속기간 및 회복 간격이 중요할 수 있다. 여러 물질의 혼합 노출은 표적 장기와 기전, 대사 및 공동 원인의 영향을 받는다. 각 물질이 개별 기준 이하라는 사실만으로 모든 혼합 조건의 위험이 0이라고 확정할 수는 없다. 그러나 혼합이라는 이유만으로 무조건 큰 상승작용을 주장하는 것도 근거가 필요하다. 무엇을 측정했고 무엇을 가정했는지를 나누어 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.42a4c8c048d4",
+      "type": "heading",
+      "level": 2,
+      "text": "근거의 결합"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.c243966ae63a",
+      "type": "paragraph",
+      "markdown": "역학 연구는 실제 사람의 건강 결과와 노출의 관계를 보여주지만 교란과 오분류, 선택과 시간 관계를 평가해야 한다. 독성학과 실험 연구는 기전과 표적을 이해하는 데 도움을 주지만 종과 용량, 노출 방식이 사람과 다를 수 있다. 생체지표는 노출 또는 초기 반응의 정보를 제공하나 임상질환과 일대일로 대응하지 않을 수 있다. 서로 다른 근거를 결합하되 각 자료가 답하는 질문을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.8fd5d5d61c33",
+      "type": "paragraph",
+      "markdown": "지역의 질환 발생이 많아 보이는 경우에는 인구 구조와 진단 기회, 모집단과 관찰기간 및 비교 기준을 확인한다. 작은 집단의 수치는 우연 변동이 크고, 여러 지역과 질환을 반복 비교하면 우연한 군집이 눈에 띌 수 있다. 반대로 실제 위험이 있어도 자료가 적고 잠복기가 길면 통계적으로 뚜렷하지 않을 수 있다. 유의성 여부 하나로 주민의 문제 제기를 인정하거나 기각하지 않고 체계적으로 조사해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.fa4694e5b29e",
+      "type": "heading",
+      "level": 2,
+      "text": "관리와 소통"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.06ea7ccc59af",
+      "type": "paragraph",
+      "markdown": "노출 감소에는 오염원 제거와 배출 관리, 환경과 공정 개선 및 생활 지원 등 여러 수준의 조치가 있다. 개인에게 회피 행동만 요구하면 사회적 조건과 취약집단의 자원 차이를 놓칠 수 있다. 조치의 이득과 부담, 다른 위험으로의 이동과 접근 가능성을 함께 평가한다. 위험을 줄이려는 개입도 실제 실행과 결과를 관찰해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response.b.9df96dae214b",
+      "type": "paragraph",
+      "markdown": "위험 소통에서는 현재 확인한 사실과 추정, 남은 불확실성과 조사 계획을 구분한다. 절대위험과 비교의 기간 및 집단을 설명하고, 위험이 작다는 표현만으로 개인의 고통과 불공정을 무시하지 않는다. 검사를 많이 하면 모든 과거 노출과 질환의 원인이 밝혀진다는 보장도 피해야 한다. 환경보건은 개인의 진료와 집단의 예방, 과학적 불확실성과 공공의 의사결정을 함께 연결하는 분야이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/10-prevention-clerkships/subjects/environmental-health/chapters/risk/sections/environmental-health.risk.exposure-dose-response.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.environmental-health.risk.exposure-dose-response.001"
+  ],
+  "keyFacts": [
+    "아니다. 활동·경로·흡수·대사 등 매개 과정을 고려한다."
+  ]
+}

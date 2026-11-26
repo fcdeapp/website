@@ -1,0 +1,23 @@
+{
+  "id": "question.physiology.renal.raas.001",
+  "kind": "original_concept_question",
+  "lessonId": "physiology.renal.raas",
+  "prompt": "부종이 있으면 RAAS는 반드시 억제되는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "아니다."
+    },
+    {
+      "id": "B",
+      "text": "그렇다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "유효동맥혈량은 총체액량과 다를 수 있다.",
+  "optionRationales": {
+    "A": "유효동맥혈량은 총체액량과 다를 수 있다.",
+    "B": "총체액 증가만으로 신장 관류 신호를 정할 수 없다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

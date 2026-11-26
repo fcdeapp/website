@@ -1,0 +1,28 @@
+{
+  "id": "question.physiology.renal.potassium.001",
+  "kind": "original_concept_question",
+  "lessonId": "physiology.renal.potassium",
+  "prompt": "인슐린 투여 직후 혈중 칼륨이 감소한 현상의 해석으로 적절한 것은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "혈중 칼륨은 세포 내 이동의 영향을 받지 않는다."
+    },
+    {
+      "id": "B",
+      "text": "세포 내 이동으로 농도가 감소했을 수 있으며 총체내 칼륨이 같은 양만큼 즉시 감소한 것은 아니다."
+    },
+    {
+      "id": "C",
+      "text": "혈중 농도가 줄어든 양만큼 반드시 소변으로 배출되었다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "농도는 세포 안팎 분포와 총량에 모두 의존한다. 이동과 체외 제거를 구별해야 한다.",
+  "optionRationales": {
+    "A": "칼륨은 세포내외 분포 변화에 따라 혈중 농도가 변한다.",
+    "B": "정답이다. 농도는 세포 안팎 분포와 총량에 모두 의존한다. 이동과 체외 제거를 구별해야 한다.",
+    "C": "혈중 농도 감소는 세포 내 이동으로도 일어나며 즉시 소변 제거를 의미하지 않는다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

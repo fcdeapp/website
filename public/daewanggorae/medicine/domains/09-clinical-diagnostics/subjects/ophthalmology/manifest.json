@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ophthalmology",
+  "title": {
+    "ko": "안과학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "ophthalmology.chapter.vision",
+      "path": "domains/09-clinical-diagnostics/subjects/ophthalmology/chapters/vision/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "ophthalmology.plan.001",
+    "ophthalmology.plan.002",
+    "ophthalmology.plan.003",
+    "ophthalmology.plan.004",
+    "ophthalmology.plan.005",
+    "ophthalmology.plan.006",
+    "ophthalmology.vision.optics-pathway"
+  ]
+}

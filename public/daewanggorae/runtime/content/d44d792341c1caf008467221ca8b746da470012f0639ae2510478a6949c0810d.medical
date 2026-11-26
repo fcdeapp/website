@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "endocrinology",
+  "title": {
+    "ko": "내분비내과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "endocrinology.chapter.diabetes",
+      "path": "domains/05-internal-medicine/subjects/endocrinology/chapters/diabetes/chapter.json"
+    },
+    {
+      "id": "endocrinology.chapter.pituitary",
+      "path": "domains/05-internal-medicine/subjects/endocrinology/chapters/pituitary/chapter.json"
+    },
+    {
+      "id": "endocrinology.chapter.thyroid",
+      "path": "domains/05-internal-medicine/subjects/endocrinology/chapters/thyroid/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "endocrinology.plan.001",
+    "endocrinology.plan.002",
+    "endocrinology.plan.003",
+    "endocrinology.plan.004",
+    "endocrinology.plan.005",
+    "endocrinology.plan.006",
+    "endocrinology.diabetes.foundations",
+    "endocrinology.pituitary.feedback",
+    "endocrinology.thyroid.hormone-synthesis",
+    "endocrinology.diabetes.hyperglycemic-emergencies"
+  ]
+}

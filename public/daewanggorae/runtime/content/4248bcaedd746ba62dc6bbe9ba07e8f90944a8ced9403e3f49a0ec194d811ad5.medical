@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "evidence-based-medicine.effects.absolute-relative",
+  "subjectId": "evidence-based-medicine",
+  "chapterId": "effects",
+  "title": {
+    "ko": "상대효과·절대효과와 임상적 적용",
+    "en": "Relative and Absolute Effects in Clinical Decisions"
+  },
+  "learningObjectives": [
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.lo.01",
+      "text": "위험비와 오즈비 및 위험차를 구별한다"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.lo.02",
+      "text": "기저 위험과 추적기간을 포함하여 NNT를 해석한다"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.lo.03",
+      "text": "근거의 확실성과 권고의 결정을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.d8ee1da1ce44",
+      "type": "heading",
+      "level": 2,
+      "text": "치료 효과를 어떤 척도로 말할 것인가"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.3ec7f83d72b0",
+      "type": "paragraph",
+      "markdown": "치료 효과는 치료군과 비교군에서 발생한 환자에게 중요한 결과를 비교하여 표현한다. 이분형 결과에서 위험(risk)은 정해진 기간 동안 사건이 발생한 사람의 비율이다. 치료군 위험을 비교군 위험으로 나눈 위험비(risk ratio, RR)는 상대척도이고, 두 위험을 뺀 위험차(risk difference, RD)는 절대척도이다. 사망처럼 줄이려는 사건에서는 비교군 위험에서 치료군 위험을 뺀 값을 절대위험 감소(absolute risk reduction, ARR)라고 부른다. 어떤 방향으로 뺐는지와 어느 결과를 다루는지 명시해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.915a285dfbd4",
+      "type": "paragraph",
+      "markdown": "비교군의 사건 위험이 20%, 치료군이 15%라면 RR은 0.75이고 상대위험 감소는 25%이다. ARR은 5%포인트이다. 상대위험 감소 25%를 사건이 25%포인트 줄었다는 뜻으로 읽으면 효과를 다섯 배로 과장한다. 같은 RR 0.75라도 비교군 위험이 2%라면 치료군 위험은 1.5%, ARR은 0.5%포인트이다. 치료의 상대적인 생물학적 효과가 비슷해도 환자군의 기저 위험이 다르면 실제 피할 수 있는 사건의 수가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.a6e83ca825fc",
+      "type": "heading",
+      "level": 2,
+      "text": "NNT와 시간축"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.d166ae2fe952",
+      "type": "paragraph",
+      "markdown": "추가로 한 명의 사건을 예방하기 위해 치료해야 하는 수(number needed to treat, NNT)는 특정 조건에서 ARR의 역수로 계산한다. 위험이 20%에서 15%로 감소하는 예에서는 NNT가 20이고, 2%에서 1.5%로 감소하는 예에서는 200이다. 이 값은 개인 20명을 치료하면 반드시 정확히 한 명이 이득을 본다는 보장이 아니라 집단 평균 효과의 표현이다. 어느 사람이 이득을 얻을지는 결과만으로 직접 확인할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.90ba3beaec5b",
+      "type": "paragraph",
+      "markdown": "NNT에는 결과의 정의와 추적기간, 비교 치료, 환자군이 함께 있어야 한다. 1년간 사망 예방과 10년간 가벼운 증상 예방의 NNT를 같은 의미로 비교할 수 없다. 시간이 길어지면 사건 위험과 치료 순응도, 경쟁 사건이 바뀔 수 있어 짧은 기간의 위험을 단순히 곱하여 장기간 NNT를 만들면 안 된다. 위해 역시 같은 방식으로 절대 증가와 추가 위해 발생에 필요한 수를 표현할 수 있지만 이득과 위해의 임상적 중요성은 숫자 하나로 같아지지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.438e5c1c0a55",
+      "type": "heading",
+      "level": 2,
+      "text": "오즈비와 위험비"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.6af13b6e9ecb",
+      "type": "paragraph",
+      "markdown": "오즈(odds)는 사건 위험을 사건이 발생하지 않을 위험으로 나눈 값이다. 오즈비(odds ratio, OR)는 두 집단의 오즈를 비교한다. 사건이 드물 때에는 OR과 RR이 가까울 수 있지만 사건이 흔해지면 차이가 커진다. 예를 들어 비교군 위험이 50%, 치료군이 25%이면 RR은 0.5이지만 OR은 약 0.33이다. OR을 그대로 위험이 67% 감소했다는 식으로 설명하면 실제 위험비와 다른 주장을 하게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.7ea5f8400d99",
+      "type": "paragraph",
+      "markdown": "환자-대조군 연구에서는 연구자가 정한 환자와 대조군의 수가 원천 집단의 위험을 직접 나타내지 않으므로 표의 사건 비율로 위험을 단순 계산해서는 안 된다. 적절히 설계된 연구의 OR이 추정하는 의미도 대상자 표집 방식에 따라 해석해야 한다. 통계 프로그램이 출력하는 척도와 환자에게 설명하는 위험 척도를 구별하고, 변환에 필요한 기저 위험과 가정이 있는지 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.22d410e97e2c",
+      "type": "heading",
+      "level": 2,
+      "text": "생존분석과 경쟁위험"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.956103ea697f",
+      "type": "paragraph",
+      "markdown": "시간-사건 자료는 사건 여부뿐 아니라 언제 발생했는지를 이용한다. 위험도비(hazard ratio, HR)는 아직 사건이 발생하지 않은 사람들에서 순간적인 사건률을 비교하는 모형의 척도이다. 일반적으로 RR이나 특정 시점의 생존 확률 차이와 동일하지 않다. 비례위험 가정이 맞지 않으면 하나의 HR이 추적기간 전체의 효과를 충분히 요약하지 못할 수 있다. 생존곡선과 특정 시점의 절대위험, 제한평균생존시간 등 질문에 맞는 정보를 함께 검토할 필요가 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.cb4273c56ff5",
+      "type": "paragraph",
+      "markdown": "다른 원인의 사망은 이후 특정 질환의 발생을 관찰할 가능성을 바꾸는 경쟁 사건이다. 경쟁위험이 큰 집단에서 특정 사건의 감소를 해석할 때에는 전체 사망과 다른 결과를 함께 봐야 한다. 치료가 어떤 질환 사건을 줄여도 다른 위해를 늘릴 수 있다. 복합결과변수(composite outcome)는 사건 수를 늘릴 수 있지만 구성 사건의 중요성과 빈도가 다르므로 전체 효과가 무엇에 의해 주도되는지 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.ad7cc2663b35",
+      "type": "heading",
+      "level": 2,
+      "text": "근거를 환자에게 옮기기"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.710ec2ccffda",
+      "type": "paragraph",
+      "markdown": "근거의 확실성은 관찰한 효과가 얼마나 믿을 만한지를 평가하는 개념이다. 연구의 편향 위험, 결과의 일관성, 직접성, 정밀도와 선택적 보고 가능성 등이 관련된다. 권고는 여기에 이득과 위해의 균형, 환자의 가치와 선호, 자원과 실행 가능성을 함께 반영한다. 확실성이 높은 작은 이득이 언제나 강한 권고로 이어지는 것은 아니고, 불확실한 상황에서도 큰 위해를 피하기 위한 결정이 필요할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative.b.9a595279b34a",
+      "type": "paragraph",
+      "markdown": "개별 환자에게 적용할 때에는 연구 대상과 현재 환자의 차이, 기저 위험, 동반 질환, 치료 부담과 기대수명을 검토한다. 평균 효과는 모든 환자에서 동일한 효과를 보장하지 않는다. 관찰한 하위집단 차이의 신뢰성이 낮다면 그 점을 불확실성으로 남겨야 한다. 상대효과와 절대효과, 기간과 위해를 함께 제시하면 환자가 선택의 실제 크기를 이해하는 데 도움이 된다. 근거중심의학은 논문의 결론을 그대로 처방으로 옮기는 과정이 아니라 근거의 질과 적용 조건을 명시하여 의사결정하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/10-prevention-clerkships/subjects/evidence-based-medicine/chapters/effects/sections/evidence-based-medicine.effects.absolute-relative.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.evidence-based-medicine.effects.absolute-relative.001"
+  ],
+  "keyFacts": [
+    "ARR 5%포인트, NNT 20이다."
+  ]
+}

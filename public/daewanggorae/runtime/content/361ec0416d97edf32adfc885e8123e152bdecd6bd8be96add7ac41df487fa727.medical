@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "community-medicine.population.health-needs",
+  "subjectId": "community-medicine",
+  "chapterId": "population",
+  "title": {
+    "ko": "지역사회 건강요구와 자원 평가",
+    "en": "Community Health Needs and Resources"
+  },
+  "learningObjectives": [
+    {
+      "id": "community-medicine.population.health-needs.lo.01",
+      "text": "의료 이용과 건강요구를 구별한다"
+    },
+    {
+      "id": "community-medicine.population.health-needs.lo.02",
+      "text": "분모와 인구구조를 고려하여 지역 지표를 해석한다"
+    },
+    {
+      "id": "community-medicine.population.health-needs.lo.03",
+      "text": "주민 참여와 개입 평가를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "community-medicine.population.health-needs.b.67e7f2f6eedc",
+      "type": "heading",
+      "level": 2,
+      "text": "개인 진료에서 집단의 요구로"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.90a304db23a4",
+      "type": "paragraph",
+      "markdown": "지역사회의학은 개인의 질환을 진료하면서 그 질환과 의료 접근을 만드는 생활환경과 집단의 조건을 함께 다룬다. 같은 진단을 가진 환자라도 주거와 소득, 이동과 돌봄 자원이 다르면 치료를 실행할 가능성이 달라진다. 지역사회라는 말은 행정구역만을 의미하지 않으며 일과 학교, 생활과 관계를 공유하는 집단으로 정의할 수도 있다. 평가를 시작할 때에는 누구를 포함하며 어떤 문제에 답하려는지 명확히 해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.5239119ddf92",
+      "type": "paragraph",
+      "markdown": "건강요구(health need)는 실제로 이용한 서비스의 양과 같지 않다. 병원을 자주 방문하는 집단은 질병 부담이 클 수도 있지만 접근성이 좋거나 진단 기회가 많을 수도 있다. 반대로 방문이 적은 지역에서 필요한 진료를 받지 못하는 문제가 숨어 있을 수 있다. 청구와 이용 자료만으로 요구를 정의하면 의료체계에 들어오지 못한 사람들의 문제가 보이지 않게 된다. 증상과 기능, 미충족 필요와 접근 장벽을 함께 조사해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.1c10f1419c26",
+      "type": "heading",
+      "level": 2,
+      "text": "지표의 분모와 시간"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.85890e2e8810",
+      "type": "paragraph",
+      "markdown": "질환자 수와 발생률, 유병률은 서로 다른 정보를 준다. 주민 수가 많은 지역에서 환자가 많다는 사실만으로 개인 위험이 높다고 단정할 수 없다. 연령과 성별, 관찰기간과 인구 이동, 진단 기준을 확인해야 한다. 고령 인구가 많은 지역의 사망률을 다른 지역과 단순 비교하면 인구구조의 차이가 결과에 섞일 수 있다. 표준화한 지표와 실제 서비스 수요를 나타내는 절대수는 목적에 맞게 함께 이용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.c039acf334bb",
+      "type": "paragraph",
+      "markdown": "작은 지역의 비율은 사건 몇 건에 따라 크게 변할 수 있다. 여러 해를 합치면 변동을 줄일 수 있지만 최근의 변화를 가릴 수 있어 기간 선택의 의미를 설명해야 한다. 자료가 보고된 위치와 실제 거주지, 노출 장소가 다른 경우도 있다. 지도에 표시된 경계와 색은 계산과 분류의 결과이지 질환의 원인이 그 선에서 갑자기 바뀐다는 뜻이 아니다. 측정과 표시의 조건을 보존해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.415dae6e71cb",
+      "type": "heading",
+      "level": 2,
+      "text": "평균과 격차"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.16f050d4d7e5",
+      "type": "paragraph",
+      "markdown": "지역 평균이 좋아져도 일부 집단은 개선을 경험하지 못할 수 있다. 소득과 장애, 언어와 이주 상태, 연령과 지리적 접근에 따라 지표를 나누어 보면 평균에 가려진 격차를 찾을 수 있다. 다만 작은 집단에서는 수치의 불안정성과 개인정보 보호를 함께 고려해야 한다. 격차를 발견하는 것과 그 원인을 입증하는 것은 다른 단계이며, 집단 수준의 연관을 모든 개인의 원인으로 적용해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.f18775e0ae7c",
+      "type": "paragraph",
+      "markdown": "건강 문제의 원인은 개인 행동뿐 아니라 주거와 노동, 교통과 식품 환경 및 제도의 영향을 받는다. 운동을 권고해도 안전한 공간과 시간이 부족하면 실행이 어려울 수 있다. 건강교육만으로 변화가 적었다고 주민의 의지를 탓하기보다 실제 환경의 장벽을 확인한다. 개인 지원과 환경 개선, 서비스 연결은 경쟁하는 대안만이 아니라 함께 작동할 수 있는 개입이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.406ee7002cd9",
+      "type": "heading",
+      "level": 2,
+      "text": "주민의 경험과 지역 자원"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.06b98f9e10f1",
+      "type": "paragraph",
+      "markdown": "통계와 면담, 현장 관찰 및 주민의 경험은 서로 다른 정보를 제공한다. 조사에 쉽게 참여하는 사람들의 의견만 모으면 취약한 주민과 이동이 어려운 사람들의 요구가 빠질 수 있다. 참여 경로와 시간, 언어 및 신뢰를 고려하여 누가 의견을 내지 못했는지 확인한다. 주민 참여는 이미 정한 계획에 동의를 받는 행사보다 문제 정의와 우선순위 및 평가에 영향을 주는 과정이어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.e9b7d8656d15",
+      "type": "paragraph",
+      "markdown": "지역 자원은 의료기관의 숫자뿐 아니라 학교와 복지, 돌봄과 주민 조직, 교통과 정보망을 포함한다. 기관이 존재해도 이용 조건과 비용, 대기 및 연결 방식 때문에 실제 도움을 받지 못할 수 있다. 의뢰서를 보냈다는 사실과 환자가 서비스를 이용했다는 사실을 구별한다. 필요한 사람이 연결에서 빠지는 지점을 찾아 책임과 회신 경로를 정해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.de6d80537678",
+      "type": "heading",
+      "level": 2,
+      "text": "우선순위와 평가"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.24df47817152",
+      "type": "paragraph",
+      "markdown": "우선순위에는 문제의 크기와 심각성, 예방 가능성과 근거, 실행 자원과 형평성 및 주민의 가치가 관여한다. 큰 숫자 하나로 모든 결정을 대신하지 않고 선택의 기준을 공개한다. 쉽게 측정되는 문제만 선택하면 중요하지만 자료가 부족한 요구가 계속 밀릴 수 있다. 반대로 관심이 높다는 이유만으로 효과가 확인되지 않은 개입에 자원을 무제한 배분해서도 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "community-medicine.population.health-needs.b.1b5e70836d47",
+      "type": "paragraph",
+      "markdown": "개입의 투입과 수행, 이용과 결과를 나누어 평가하면 어느 단계에서 변화가 막혔는지 알 수 있다. 교육을 많이 실시한 것과 행동이 바뀐 것, 질환과 기능이 개선된 것은 다른 결과이다. 시행 전후의 변화에는 다른 정책과 유행, 인구 변화가 섞일 수 있으므로 적절한 비교와 기간을 고려한다. 지역사회의학의 평가는 보고서를 완성하는 데서 끝나지 않고 결과를 주민과 공유하고 계획을 수정하는 순환으로 이어진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/10-prevention-clerkships/subjects/community-medicine/chapters/population/sections/community-medicine.population.health-needs.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.community-medicine.population.health-needs.001"
+  ]
+}

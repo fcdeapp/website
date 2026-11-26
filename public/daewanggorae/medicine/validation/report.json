@@ -1,0 +1,47 @@
+{
+  "structuralStatus": "PASS",
+  "projectStatus": "PARTIAL_NOT_COMPLETE",
+  "medicalAccuracyGuaranteed": false,
+  "specialistReview": false,
+  "errorCount": 0,
+  "errors": [],
+  "warnings": [
+    {
+      "code": "unwritten_units",
+      "detail": "611"
+    },
+    {
+      "code": "target_not_met",
+      "detail": "{'actual': 490260, 'minimum': 12000000, 'remaining': 11509740}"
+    }
+  ],
+  "metrics": {
+    "jsonFiles": 992,
+    "subjects": 100,
+    "subjectsWithProse": 100,
+    "draftSections": 203,
+    "completedSections": 0,
+    "paragraphs": 2252,
+    "actualBodyCharacters": 490260,
+    "estimatedPagesAt1500": 326.84,
+    "estimatedPageRange": [
+      272.3666666666667,
+      408.55
+    ],
+    "unwrittenPlannedUnits": 611,
+    "originalQuestions": 203,
+    "scenes": 54,
+    "concepts": 3432,
+    "meshFileRecords": 3492,
+    "physicalModelFilesChecked": 3492,
+    "duplicateParagraphs": 0,
+    "similarParagraphPairs": 0
+  },
+  "limitations": [
+    "Schema and reference integrity checks are not medical verification",
+    "Provisional curriculum is not an exhaustive official outcome crosswalk",
+    "No medical specialist review",
+    "No Next.js/RN runtime or WebGL rendering test",
+    "No full textbook coverage; all existing sections remain drafts"
+  ]
+}

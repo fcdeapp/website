@@ -1,0 +1,28 @@
+{
+  "id": "question.neuroscience.synapse.transmission.001",
+  "kind": "original_concept_question",
+  "lessonId": "neuroscience.synapse.transmission",
+  "prompt": "억제성 시냅스 작용에 대한 설명으로 적절한 것은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "뚜렷한 과분극 없이 전도도 증가로 흥분성 입력을 약화시킬 수 있다."
+    },
+    {
+      "id": "B",
+      "text": "막전위가 조금이라도 탈분극하면 항상 흥분성이다."
+    },
+    {
+      "id": "C",
+      "text": "Cl− 전도도와 세포내 Cl− 농도는 무관하다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "역치와 역전전위 및 전도도 변화가 함께 기능적 결과를 결정한다.",
+  "optionRationales": {
+    "A": "역치와 역전전위 및 전도도 변화가 함께 기능적 결과를 결정한다.",
+    "B": "전압 변화의 부호와 활동전위 확률에 대한 효과는 같지 않다.",
+    "C": "이온 기울기와 수송체는 Cl− 관련 역전전위에 영향을 준다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

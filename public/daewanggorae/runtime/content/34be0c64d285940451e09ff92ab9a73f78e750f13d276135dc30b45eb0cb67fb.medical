@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.neuroanatomy.spinal-cord.tracts.4577b057",
+  "sceneId": "scene.neuroanatomy.spinal-cord.tracts.4577b057",
+  "lessonId": "neuroanatomy.spinal-cord.tracts",
+  "triggerBlockId": "neuroanatomy.spinal-cord.tracts.b.b2f97c401d1d",
+  "primaryStructures": [
+    "FMA7647"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA7647"
+  ],
+  "modelIds": [
+    "partof:FJ1737"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1737.obj"
+  ],
+  "cameraPosition": [
+    -0.6531045,
+    -131.09296321690022,
+    1476.395
+  ],
+  "cameraTarget": [
+    -0.6531045,
+    -58.430800000000005,
+    1476.395
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -1.76275,
+      -64.9962,
+      1458.6
+    ],
+    "max": [
+      0.456541,
+      -51.8654,
+      1494.19
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.16
+  },
+  "color": {
+    "primary": "#8b5cf6",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "척수의 전체 위치와 세로 방향",
+  "verificationStatus": "all_paths_hashes_and_fma_checked",
+  "visualizationLimitations": [
+    "백색질 신경로와 신경뿌리의 미세 배치는 표현하지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

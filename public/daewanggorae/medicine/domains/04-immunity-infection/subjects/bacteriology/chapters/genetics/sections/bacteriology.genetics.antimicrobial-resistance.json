@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.genetics.antimicrobial-resistance",
+  "subjectId": "bacteriology",
+  "chapterId": "genetics",
+  "title": {
+    "ko": "세균 유전체 변화와 항균제 내성",
+    "en": "Bacterial Genetics and Antimicrobial Resistance"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.lo.01",
+      "text": "돌연변이와 수평 유전자 전달을 구분한다"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.lo.02",
+      "text": "약물 유입·배출·불활성화·표적 변화 기전을 비교한다"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.lo.03",
+      "text": "감수성 결과와 임상 실패의 관계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.75ce6e7990aa",
+      "type": "heading",
+      "level": 2,
+      "text": "내성의 주체와 선택"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.857bdef59f0e",
+      "type": "paragraph",
+      "markdown": "항균제 내성(antimicrobial resistance)은 병원체가 특정 약물의 억제 또는 사멸 작용을 견디는 성질이다. 환자의 몸이 약에 익숙해졌다는 의미와 구별한다. 항균제 노출 전부터 존재하던 내성 세포가 선택될 수 있고, 집단 증식 중 새로 발생한 변이나 다른 세포에서 얻은 유전자가 기여할 수도 있다. 약물이 필요에 맞추어 세균에게 특정 변이를 만들도록 지시하는 것이 아니라, 생존과 증식의 조건을 바꾸어 집단 구성을 변화시킨다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.6d218ca0d0d5",
+      "type": "paragraph",
+      "markdown": "내재 내성(intrinsic resistance)은 특정 세균군이 본래 지닌 구조나 표적의 특성과 관련된다. 후천 내성(acquired resistance)은 원래 감수성이 있던 집단에서 변이나 유전자 획득으로 생긴다. 외막의 존재, 표적의 부재 및 약물이 세포 안으로 들어가는 방식은 약물군의 기본 항균 범위를 결정한다. 개별 균주의 후천 내성을 해석하려면 먼저 그 균종의 기본 생물학을 알아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.059a1fd6164f",
+      "type": "heading",
+      "level": 2,
+      "text": "수직 전달과 수평 전달"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.a42f29202e7a",
+      "type": "paragraph",
+      "markdown": "돌연변이로 생긴 내성은 자손에게 수직으로 전달될 수 있다. 접합(conjugation)은 세균 사이의 접촉을 통해 플라스미드 등 유전물질이 이동하는 과정이다. 형질전환(transformation)은 주변의 유리 DNA를 받아들이는 방식이고, 형질도입(transduction)은 박테리오파지가 유전자 전달에 관여하는 방식이다. 이들 과정의 범위와 효율은 세균과 유전요소의 특성에 따라 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.126920edd08b",
+      "type": "paragraph",
+      "markdown": "플라스미드에는 여러 내성 유전자가 함께 존재할 수 있다. 한 약물을 사용하는 선택압이 같은 유전요소에 실린 다른 내성의 유지에도 유리하게 작용할 수 있는 이유이다. 트랜스포존은 유전체 안이나 유전요소 사이에서 이동할 수 있으며, 인테그론은 유전자 카세트를 포획하고 발현하는 체계이다. 이 용어들은 모두 같은 종류의 독립 복제체를 뜻하지 않는다. 내성 유전자가 어디에 있고 어떻게 이동하는지 구분하면 병원 내 확산을 이해하는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.4093e429de85",
+      "type": "heading",
+      "level": 2,
+      "text": "표적까지 도달하는 농도의 감소"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.7d75d5229f9f",
+      "type": "paragraph",
+      "markdown": "그람음성균의 외막은 약물이 표적에 도달하기 전에 통과해야 할 장벽이다. 포린(porin)의 감소나 구조 변화는 특정 약물의 유입을 줄일 수 있다. 유출펌프(efflux pump)는 들어온 약물을 밖으로 배출하여 세포 내 유효 농도를 낮춘다. 한 펌프가 여러 약물에 영향을 줄 수 있어 서로 다른 항균제군의 감수성이 함께 변하기도 한다. 다만 모든 교차내성을 하나의 펌프로 설명하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.b200259890a0",
+      "type": "paragraph",
+      "markdown": "약물 분해효소와 유입 감소가 함께 있으면 각각만 있을 때보다 내성이 커질 수 있다. 예를 들어 외막 투과성이 낮아져 적은 약물만 들어오면 주변세포질의 효소가 그 약물을 더 효과적으로 불활성화할 수 있다. 따라서 동일한 내성 유전자를 검출한 두 균주가 항상 같은 최소억제농도를 보이는 것은 아니다. 발현량, 복제수, 외막 및 다른 기전의 조합이 실제 표현형을 만든다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.b20fd17ba258",
+      "type": "heading",
+      "level": 2,
+      "text": "약물 불활성화와 표적 변화"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.cce4bc37d1e3",
+      "type": "paragraph",
+      "markdown": "β-락타마아제(beta-lactamase)는 β-락탐 고리를 가수분해하여 약물의 활성을 낮춘다. 효소별로 분해 가능한 기질과 억제제에 대한 반응이 다르므로 β-락타마아제라는 이름만으로 모든 β-락탐약이 같은 결과를 보인다고 할 수 없다. 카바페넴 내성에도 카바페넴분해효소뿐 아니라 다른 효소와 포린 변화의 조합이 관여할 수 있다. 유전자 검사와 표현형 감수성 검사는 서로 보완한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.de3b54862608",
+      "type": "paragraph",
+      "markdown": "표적 단백질이 변하면 약물이 결합하기 어려워진다. 페니실린결합단백질, 리보솜, DNA 회전효소 등은 해당 약물군의 작용과 내성을 연결하는 표적이다. 세균이 표적 경로를 우회하거나 대체 효소를 쓰는 방식도 있다. 이런 기전은 약물 자체를 파괴하는 것과 다르므로 분해효소 억제제를 더해도 해결되지 않을 수 있다. 병합요법의 논리는 기전의 상보성을 확인해야 성립한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.cf761acf7004",
+      "type": "heading",
+      "level": 2,
+      "text": "감수성 검사의 질문"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.5af26a8b1d46",
+      "type": "paragraph",
+      "markdown": "최소억제농도(minimum inhibitory concentration, MIC)는 정해진 실험 조건에서 육안적 증식을 억제하는 최소 농도이다. 임상적 감수성 판정은 MIC뿐 아니라 약물 노출, 투여 방식, 균종 및 감염 부위 등을 고려한 기준점에 의존한다. MIC가 낮은 약물이 모든 환자와 모든 부위에서 더 우수하다는 뜻은 아니다. 서로 다른 약물의 숫자를 단순히 크기순으로 비교하는 것도 적절하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.b2b9cc5e73b1",
+      "type": "paragraph",
+      "markdown": "검사실에서 감수성으로 보고되어도 농양의 배액이 되지 않거나 감염된 기구가 남아 있으면 임상 실패가 발생할 수 있다. 약물이 해당 부위에 도달하지 못하거나 숙주 방어가 크게 손상되어도 결과가 달라진다. 반대로 검체에서 자란 균이 실제 병원체인지 집락화 또는 오염인지가 먼저 불분명할 수도 있다. 항균제 선택 전에는 배양 결과가 설명하는 감염 증후군이 실제로 존재하는지 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.e12a301f58aa",
+      "type": "heading",
+      "level": 2,
+      "text": "내성과 관용을 구별하기"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.434ef98c7aa2",
+      "type": "paragraph",
+      "markdown": "내성은 통상 증식 억제에 필요한 농도의 변화와 관련되지만 관용(tolerance)은 일정 농도에 노출되었을 때 사멸이 늦어지는 성질을 가리킨다. 지속생존세포(persister)는 집단의 일부가 일시적인 상태로 살아남는 현상과 연결된다. 생물막(biofilm)은 기질과 국소 환경 및 세포 상태의 이질성을 통해 약물과 숙주 방어의 효과를 떨어뜨릴 수 있다. 이러한 현상을 모두 동일한 유전적 내성으로 부르면 재발의 원인을 잘못 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.genetics.antimicrobial-resistance.b.18ed0f7e3be8",
+      "type": "paragraph",
+      "markdown": "내성 관리에는 적절한 항균제 사용과 함께 감염 예방, 손 위생, 기구 관리, 검체 확보 및 전파 경로 차단이 필요하다. 경험적 치료는 환자의 중증도와 예상 병원체 및 지역 역학을 반영하고, 결과가 나오면 실제 병원체와 감수성에 맞추어 재평가한다. 넓은 범위의 약물을 계속 유지하는 것과 적절한 치료는 같은 말이 아니다. 치료의 충분성과 불필요한 선택압의 감소를 함께 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/genetics/sections/bacteriology.genetics.antimicrobial-resistance.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.genetics.antimicrobial-resistance.001"
+  ],
+  "keyFacts": [
+    "숫자만으로 우열을 정하지 않고 약물 노출과 감염 부위를 고려한다."
+  ],
+  "relatedLessons": [
+    "systemic-pharmacology.antimicrobials.beta-lactams"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "question.biochemistry.enzymes.kinetics.001",
+  "kind": "original_concept_question",
+  "lessonId": "biochemistry.enzymes.kinetics",
+  "prompt": "Km은 항상 기질 해리상수와 같은가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "아니다."
+    },
+    {
+      "id": "B",
+      "text": "같다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "Km=(k−1+kcat)/k1로 촉매속도의 영향도 받는다.",
+  "optionRationales": {
+    "A": "Km=(k−1+kcat)/k1로 촉매속도의 영향도 받는다.",
+    "B": "Kd=k−1/k1와 일반적으로 같지 않다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

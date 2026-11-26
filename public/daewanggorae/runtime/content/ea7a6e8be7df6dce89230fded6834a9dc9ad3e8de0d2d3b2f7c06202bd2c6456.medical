@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "obstetrics",
+  "title": {
+    "ko": "산과학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "obstetrics.chapter.pregnancy",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/pregnancy/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "obstetrics.plan.001",
+    "obstetrics.plan.002",
+    "obstetrics.plan.003",
+    "obstetrics.plan.004",
+    "obstetrics.plan.005",
+    "obstetrics.plan.006",
+    "obstetrics.plan.007",
+    "obstetrics.pregnancy.physiology"
+  ]
+}

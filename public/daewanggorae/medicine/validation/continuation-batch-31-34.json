@@ -1,0 +1,42 @@
+{
+  "previousBodyCharacters": 262942,
+  "currentBodyCharacters": 288026,
+  "addedCharacters": 25084,
+  "addedSections": [
+    "endocrine-surgery.thyroid.recurrent-laryngeal-nerve",
+    "hpb-surgery.biliary.obstructive-jaundice",
+    "occupational-medicine.exposure.work-history",
+    "gi-surgery.obstruction.mechanical-ileus",
+    "neurosurgery.physiology.intracranial-pressure",
+    "pediatric-surgery.intestine.intussusception",
+    "environmental-health.risk.exposure-dose-response",
+    "health-management.financing.pooling-and-purchasing",
+    "health-economics.evaluation.cost-effectiveness",
+    "plastic-surgery.reconstruction.graft-and-flap",
+    "thoracic-surgery.pleura.pneumothorax",
+    "forensic-medicine.postmortem.changes"
+  ],
+  "specialistReview": false,
+  "visualizationNeeds": [
+    {
+      "lessonId": "endocrine-surgery.thyroid.recurrent-laryngeal-nerve",
+      "required": "후두신경의 좌우 경로와 갑상선·혈관 관계의 독립 도식",
+      "reason": "첨부에 정확한 갑상선 메시가 없어 다른 기관으로 대체하지 않음"
+    },
+    {
+      "lessonId": "hpb-surgery.biliary.obstructive-jaundice",
+      "required": "간내·간외 담도 분지와 폐쇄 위치의 독립 도식",
+      "reason": "담도 경로 전체의 검증된 메시가 없음"
+    },
+    {
+      "lessonId": "gi-surgery.obstruction.mechanical-ileus",
+      "required": "폐쇄고리와 장간막 혈류의 단면 모식도",
+      "reason": "정상 장 표면만으로 교액을 표현할 수 없음"
+    },
+    {
+      "lessonId": "thoracic-surgery.pleura.pneumothorax",
+      "required": "흉막 공기와 압력의 독립 도식",
+      "reason": "정상 폐를 기흉 병변으로 표시하지 않음"
+    }
+  ]
+}

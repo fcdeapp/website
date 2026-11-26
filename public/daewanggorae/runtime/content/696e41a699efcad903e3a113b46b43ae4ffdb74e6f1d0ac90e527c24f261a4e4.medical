@@ -1,0 +1,28 @@
+{
+  "id": "question.biochemistry.carbohydrate.glycolysis.001",
+  "kind": "original_concept_question",
+  "lessonId": "biochemistry.carbohydrate.glycolysis",
+  "prompt": "포도당 한 분자에서 pyruvate 두 분자까지 해당과정의 순 ATP 수지는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "0 ATP"
+    },
+    {
+      "id": "B",
+      "text": "2 ATP"
+    },
+    {
+      "id": "C",
+      "text": "4 ATP"
+    }
+  ],
+  "answer": "B",
+  "explanation": "총 네 ATP 생성에서 초기 두 ATP 소비를 뺀다.",
+  "optionRationales": {
+    "A": "초기 투자와 후기 기질수준 인산화를 모두 반영하지 않았다.",
+    "B": "총 네 ATP 생성에서 초기 두 ATP 소비를 뺀다.",
+    "C": "생성량만 세고 투자량을 빼지 않은 결과다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "obstetrics.pregnancy.physiology",
+  "subjectId": "obstetrics",
+  "chapterId": "pregnancy",
+  "title": {
+    "ko": "정상 임신의 모체 적응과 태반 기능",
+    "en": "Maternal Adaptation and Placental Function"
+  },
+  "learningObjectives": [
+    {
+      "id": "obstetrics.pregnancy.physiology.lo.01",
+      "text": "임신의 혈역학적 변화를 설명한다."
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.lo.02",
+      "text": "태반의 교환과 호르몬 기능을 구분한다."
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.lo.03",
+      "text": "생리적 변화와 병적 소견의 해석 원리를 설명한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "obstetrics.pregnancy.physiology.b.dc7e8683e716",
+      "type": "heading",
+      "level": 2,
+      "text": "임신은 여러 장기의 적응이다"
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.b.9d94c783c5f7",
+      "type": "paragraph",
+      "markdown": "임신 중 모체는 태아와 태반의 요구에 맞추어 심혈관, 호흡, 신장, 내분비와 대사를 조절한다. 혈장량과 적혈구량이 모두 증가할 수 있으나 증가 비율이 달라 혈액 희석에 따른 혈색소 농도 변화가 나타날 수 있다. 심박출량과 혈관 저항의 변화는 임신 시기와 자세, 개인 상태에 따라 달라진다. 이러한 생리적 적응을 안다고 모든 빈혈이나 호흡곤란을 정상 임신으로 처리해서는 안 된다. 출혈, 심폐질환과 혈전색전증 등은 별도 평가가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.b.e809d2b81931",
+      "type": "paragraph",
+      "markdown": "커진 자궁은 누운 자세에서 큰정맥을 압박하여 정맥환류에 영향을 줄 수 있다. 신혈류와 여과의 변화는 검사 수치의 기준 해석에 영향을 준다. 임신에서 평소 정상으로 보이는 크레아티닌 값도 비임신 기준과 같은 의미가 아닐 수 있다. 단백뇨와 혈압 변화는 임신 시점 및 다른 장기 소견과 함께 해석한다. 특정 수치의 진단 기준은 현재 산과 지침에 따라 명시해야 하며 이 생리 절에서 임의로 생성하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.b.a457cd09b519",
+      "type": "heading",
+      "level": 2,
+      "text": "태반은 단순한 필터가 아니다"
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.b.70159095c1c8",
+      "type": "paragraph",
+      "markdown": "태반(placenta)은 모체와 태아 사이의 교환면과 내분비 기능을 갖는 기관이다. 모체 혈액은 융모 사이 공간으로, 태아 혈액은 융모 내부 혈관으로 흐르며 정상적으로 두 혈류가 하나의 혈관 안에서 직접 섞이는 구조는 아니다. 산소와 영양분의 이동은 농도·분압차와 수송체, 교환면 및 혈류에 영향을 받는다. 약물이 태반을 통과하는 정도도 분자 특성과 단백질 결합, 수송과 대사 등에 따라 달라진다. 태반이 존재한다는 사실은 모든 독성물질과 감염으로부터 완전히 보호한다는 뜻이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.b.06fca2c20987",
+      "type": "paragraph",
+      "markdown": "hCG는 초기 임신에서 황체 기능 유지와 연결되고, 이후 태반의 스테로이드 합성과 다른 호르몬 기능이 중요해진다. Progesterone과 estrogen, human placental lactogen 등은 자궁과 유방, 대사 적응에 서로 다른 역할을 한다. 태아-태반 단위는 일부 호르몬 전구물질의 공급과 대사에서 협력한다. 호르몬을 분비하는 위치와 최종 작용기관을 구분하면 임신 검사, 태반 기능, 내분비 변화의 관계를 이해하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.b.11bf9cd15a02",
+      "type": "heading",
+      "level": 2,
+      "text": "가스교환과 대사"
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.b.28248b7b3cc0",
+      "type": "paragraph",
+      "markdown": "임신에서 환기 변화는 CO2와 산염기 상태에 영향을 주며 신장 보상이 함께 일어난다. 산소 소비도 변하므로 모체의 호흡 문제는 태아 산소 공급과 연결될 수 있다. 임신 후반의 인슐린 저항성 증가는 태아에 에너지 기질을 공급하는 적응의 일부지만, β세포 보상이 충분하지 않으면 고혈당이 나타날 수 있다. 임신성 당뇨병은 비임신 성인의 진단 기준을 그대로 적용하지 않으며 별도 검증된 검사 전략이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology.b.4ec2251370d3",
+      "type": "paragraph",
+      "markdown": "응고계 변화는 분만 시 출혈에 대비하는 측면이 있지만 혈전성 사건의 위험과도 관련된다. 생리적 부종이 흔하다는 사실만으로 한쪽 다리의 통증·종창이나 갑작스러운 호흡곤란을 안심시키면 안 된다. 산전진료에서는 정상 적응, 위험요인, 새로운 증상을 함께 평가한다. 성인 자궁 3D 모델은 비임신 상태의 위치 설명에만 사용하며 태아·태반이나 임신 자궁을 포함한 모델로 표시하지 않는다. 임신 주수별 변화는 별도의 발생·산과 도식이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/pregnancy/sections/obstetrics.pregnancy.physiology.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.obstetrics.pregnancy.physiology.001"
+  ],
+  "keyFacts": [
+    "모체 융모간 공간과 태아 융모혈관을 통한 교환 구조를 구분한다."
+  ]
+}

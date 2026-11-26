@@ -1,0 +1,28 @@
+{
+  "id": "question.radiology.mri.signal-and-diffusion.001",
+  "kind": "original_concept_question",
+  "lessonId": "radiology.mri.signal-and-diffusion",
+  "prompt": "DWI 고신호를 해석할 때 ADC를 함께 보는 이유는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "T2 성분에 의한 고신호와 확산제한을 구별하는 데 도움이 되기 때문이다."
+    },
+    {
+      "id": "B",
+      "text": "DWI 고신호는 언제나 급성 허혈이기 때문이다."
+    },
+    {
+      "id": "C",
+      "text": "ADC는 뼈의 방사선 밀도만 측정하기 때문이다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "DWI 고신호와 ADC 저하가 확산제한을 지지하지만 원인은 여러 가지이므로 다른 영상과 임상을 통합한다.",
+  "optionRationales": {
+    "A": "정답이다. DWI 고신호와 ADC 저하가 확산제한을 지지하지만 원인은 여러 가지이므로 다른 영상과 임상을 통합한다.",
+    "B": "감염과 일부 종양 등에서도 확산제한이 가능하고 T2 투과효과도 고려한다.",
+    "C": "ADC는 MRI 신호 감쇠로 추정하는 물 이동 관련 값이다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

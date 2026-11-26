@@ -1,0 +1,41 @@
+{
+  "id": "question.anatomy.lower-limb.pelvic-girdle.001",
+  "kind": "original_concept_question",
+  "lessonId": "anatomy.lower-limb.pelvic-girdle",
+  "prompt": "한쪽 다리로 설 때 골반의 하중과 근육 역할을 어떻게 이해하는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "지지 쪽 엉덩관절과 벌림근이 반대쪽 골반의 하강을 제어한다."
+    },
+    {
+      "id": "B",
+      "text": "반대쪽 골반 하강은 언제나 같은 쪽 근육의 단독 수축으로 만들어진다."
+    },
+    {
+      "id": "C",
+      "text": "뼈골반은 척주와 연결되지 않아 하중을 전달하지 않는다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "엉치엉덩관절과 볼기뼈·엉덩관절은 하중을 연결하고 지지 쪽 근육은 균형을 유지한다.",
+  "optionRationales": {
+    "A": "엉치엉덩관절과 볼기뼈·엉덩관절은 하중을 연결하고 지지 쪽 근육은 균형을 유지한다.",
+    "B": "구조의 경계 또는 기능을 혼동한 설명이다. 엉치엉덩관절과 볼기뼈·엉덩관절은 하중을 연결하고 지지 쪽 근육은 균형을 유지한다.",
+    "C": "구조의 경계 또는 기능을 혼동한 설명이다. 엉치엉덩관절과 볼기뼈·엉덩관절은 하중을 연결하고 지지 쪽 근육은 균형을 유지한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated",
+  "media": {
+    "schemaVersion": "1.0.0",
+    "items": [
+      {
+        "id": "question.anatomy.lower-limb.pelvic-girdle.001.media.spatial-context",
+        "type": "anatomy3d",
+        "stage": "explanation",
+        "sceneRef": "scene.anatomy.lower-limb.pelvic-girdle.bone-context",
+        "title": "골반뼈와 엉치뼈의 연결",
+        "caption": "하중 전달을 이해하기 위한 정상 뼈의 공간 관계입니다. 근육 수축과 한발서기 운동은 재현하지 않습니다."
+      }
+    ]
+  }
+}

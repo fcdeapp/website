@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "otolaryngology",
+  "title": {
+    "ko": "이비인후과학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "otolaryngology.chapter.hearing",
+      "path": "domains/09-clinical-diagnostics/subjects/otolaryngology/chapters/hearing/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "otolaryngology.plan.001",
+    "otolaryngology.plan.002",
+    "otolaryngology.plan.003",
+    "otolaryngology.plan.004",
+    "otolaryngology.plan.005",
+    "otolaryngology.plan.006",
+    "otolaryngology.hearing.conduction"
+  ]
+}

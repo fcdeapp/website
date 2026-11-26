@@ -1,0 +1,23 @@
+{
+  "id": "question.laboratory-medicine.quality.preanalytics.001",
+  "kind": "original_concept_question",
+  "lessonId": "laboratory-medicine.quality.preanalytics",
+  "prompt": "정밀도가 좋으면 체계오차가 없다는 뜻인가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "그렇다."
+    },
+    {
+      "id": "B",
+      "text": "아니다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "반복값이 가까워도 일정한 편향을 가질 수 있다.",
+  "optionRationales": {
+    "A": "정확도와 정밀도는 구분해야 한다.",
+    "B": "반복값이 가까워도 일정한 편향을 가질 수 있다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

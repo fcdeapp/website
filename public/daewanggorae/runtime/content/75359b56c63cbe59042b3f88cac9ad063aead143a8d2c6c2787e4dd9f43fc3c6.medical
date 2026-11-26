@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.neuroanatomy.meninges.ventricles-csf.ventricular-spaces",
+  "sceneId": "scene.neuroanatomy.meninges.ventricles-csf.ventricular-spaces",
+  "lessonId": "neuroanatomy.meninges.ventricles-csf",
+  "triggerBlockId": "neuroanatomy.meninges.ventricles-csf.b.a97341065c99",
+  "primaryStructures": [
+    "FMA78449",
+    "FMA78450",
+    "FMA78454",
+    "FMA78469"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA78449",
+    "FMA78450",
+    "FMA78454",
+    "FMA78469"
+  ],
+  "modelIds": [
+    "partof:FJ1814",
+    "partof:FJ1767",
+    "partof:FJ1730",
+    "partof:FJ1731"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1814.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1767.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1730.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1731.obj"
+  ],
+  "cameraPosition": [
+    -294.1263438831322,
+    -72.2736,
+    1535.225
+  ],
+  "cameraTarget": [
+    -0.6541500000000013,
+    -72.2736,
+    1535.225
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "right_lateral",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -39.4058,
+      -126.94,
+      1491.11
+    ],
+    "max": [
+      38.0975,
+      -17.6072,
+      1579.34
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "양쪽 가쪽뇌실·셋째뇌실·넷째뇌실의 공간 배치",
+  "mappingConfidence": "exact_attachment_ids_bounds_and_hashes_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "중간뇌수도관이나 출구가 이 선택 목록에 별도 메시로 포함된다고 주장하지 않음",
+    "메시는 뇌척수액 공간의 표면 표현이며 실제 액체 흐름·생성 기능이 아님"
+  ],
+  "dynamicAnatomyIncluded": false
+}

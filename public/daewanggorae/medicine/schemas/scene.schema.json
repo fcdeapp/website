@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:medical-textbook:scene:1.0.0",
+  "type": "object",
+  "required": [
+    "id",
+    "sceneId",
+    "triggerBlockId",
+    "primaryStructures",
+    "modelIds",
+    "modelPaths",
+    "cameraPosition",
+    "cameraTarget",
+    "cameraUp",
+    "verificationStatus",
+    "visualizationLimitations"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sceneId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "triggerBlockId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "primaryStructures": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "contextStructures": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "modelIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "modelPaths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "cameraPosition": {
+      "$ref": "#/$defs/vector"
+    },
+    "cameraTarget": {
+      "$ref": "#/$defs/vector"
+    },
+    "cameraUp": {
+      "$ref": "#/$defs/vector"
+    },
+    "visualizationLimitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "vector": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    }
+  }
+}

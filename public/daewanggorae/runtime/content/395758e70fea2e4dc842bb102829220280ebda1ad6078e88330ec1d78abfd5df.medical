@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.ophthalmology.vision.optics-pathway.67738b4b",
+  "sceneId": "scene.ophthalmology.vision.optics-pathway.67738b4b",
+  "lessonId": "ophthalmology.vision.optics-pathway",
+  "triggerBlockId": "ophthalmology.vision.optics-pathway.b.c37563a97468",
+  "primaryStructures": [
+    "FMA12515",
+    "FMA12514"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA12515",
+    "FMA12514"
+  ],
+  "modelIds": [
+    "partof:FJ1282",
+    "partof:FJ1285",
+    "partof:FJ1286",
+    "partof:FJ1289",
+    "partof:FJ1297",
+    "partof:FJ1305",
+    "partof:FJ1317",
+    "partof:FJ1320",
+    "partof:FJ1331",
+    "partof:FJ1336",
+    "partof:FJ1337",
+    "partof:FJ1340",
+    "partof:FJ1348",
+    "partof:FJ1356",
+    "partof:FJ1368",
+    "partof:FJ1371",
+    "partof:FJ1382"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1282.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1285.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1286.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1289.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1297.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1305.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1317.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1320.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1331.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1336.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1337.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1340.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1348.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1356.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1368.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1371.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1382.obj"
+  ],
+  "cameraPosition": [
+    -0.6538499999999985,
+    -331.947230064162,
+    1518.075
+  ],
+  "cameraTarget": [
+    -0.6538499999999985,
+    -152.44,
+    1518.075
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -43.6181,
+      -166.051,
+      1504.96
+    ],
+    "max": [
+      42.3104,
+      -138.829,
+      1531.19
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.16
+  },
+  "color": {
+    "primary": "#8b5cf6",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "안구의 좌우 배치",
+  "verificationStatus": "all_paths_hashes_and_fma_checked",
+  "visualizationLimitations": [
+    "정적 표면으로 광학과 광수용체 반응을 재현하지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

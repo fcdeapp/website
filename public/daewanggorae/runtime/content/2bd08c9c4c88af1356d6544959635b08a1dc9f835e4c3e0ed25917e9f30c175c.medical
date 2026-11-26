@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "research-methods.design.question-and-estimand",
+  "subjectId": "research-methods",
+  "chapterId": "design",
+  "title": {
+    "ko": "연구질문과 설계·추정대상",
+    "en": "Research Questions, Design and Estimands"
+  },
+  "learningObjectives": [
+    {
+      "id": "research-methods.design.question-and-estimand.lo.01",
+      "text": "연구질문을 대상·개입·비교·결과·시간으로 구체화한다"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.lo.02",
+      "text": "무작위배정과 분석 집단의 의미를 구별한다"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.lo.03",
+      "text": "인과효과와 예측 성능의 질문을 분리한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "research-methods.design.question-and-estimand.b.3581325a64d5",
+      "type": "heading",
+      "level": 2,
+      "text": "질문을 먼저 정한다"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.094d60948640",
+      "type": "paragraph",
+      "markdown": "의학연구는 자료가 많다는 이유만으로 시작하기보다 어떤 불확실성을 줄이려는지 분명히 해야 한다. 특정 환자군에서 어떤 개입을 어떤 대안과 비교하여 어떤 결과를 어느 기간에 평가할 것인가를 정하면 연구의 설계와 측정이 구체화된다. 같은 약물을 연구해도 사망 감소, 증상 완화, 부작용과 비용은 다른 질문이다. 편리하게 측정할 수 있는 검사 수치가 환자에게 중요한 결과를 충분히 대신하는지도 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.cd443800a6c6",
+      "type": "paragraph",
+      "markdown": "추정대상(estimand)은 연구가 궁극적으로 어떤 효과를 수치화하려는지 명확히 하는 개념이다. 개입을 시작하도록 배정하는 전략의 효과와 모든 사람이 계획대로 지속 복용했을 경우의 효과는 다르다. 치료 중단과 교차, 추가 치료 및 사망 같은 사건을 어떻게 다룰지가 질문의 일부이다. 분석 방법을 나중에 선택하면서 이 차이를 숨기면 같은 연구에서 서로 다른 의미의 효과가 혼동될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.2d4054acda38",
+      "type": "heading",
+      "level": 2,
+      "text": "무작위배정이 만드는 비교"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.5f9a72efcc76",
+      "type": "paragraph",
+      "markdown": "무작위배정은 치료 선택이 환자의 예후 요인과 체계적으로 연결되는 문제를 줄이려는 설계이다. 배정순서 은폐(allocation concealment)는 등록 전에 다음 배정을 예측하여 대상자 선택에 영향을 주는 것을 막는 과정이다. 눈가림(blinding)은 배정 후의 기대와 평가 및 치료 차이를 줄이는 과정으로 서로 다른 시점의 편향을 다룬다. 하나를 수행했다고 다른 하나의 역할이 자동으로 충족되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.4c8056cb9438",
+      "type": "paragraph",
+      "markdown": "무작위배정 뒤에도 복약 누락과 교차, 추적 탈락 및 결과 측정의 차이가 생길 수 있다. 배정군에 따른 분석은 배정의 비교 가능성을 유지하는 장점이 있지만 실제 복용 효과와 동일한 질문은 아니다. 계획을 지킨 사람만 단순 선택하면 그 선택이 건강 상태와 예후에 관련되어 새로운 편향이 생길 수 있다. 연구 질문과 분석의 가정을 함께 명시해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.3fb8a96518ac",
+      "type": "heading",
+      "level": 2,
+      "text": "관찰 설계와 시간"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.e026d91a3a64",
+      "type": "paragraph",
+      "markdown": "코호트 연구는 정의된 집단에서 노출과 결과의 시간 관계를 추적하는 데 이용된다. 환자-대조군 연구는 결과가 있는 사람과 적절한 비교군에서 과거 노출을 평가하며, 대조군의 표집 방식이 추정의 의미를 결정한다. 단면 연구는 한 시점 또는 기간의 상태와 연관을 파악하는 데 유용하지만 노출과 결과의 선후가 불분명할 수 있다. 설계의 이름만으로 인과 추론의 모든 가정이 해결되지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.1931370025b9",
+      "type": "paragraph",
+      "markdown": "치료 시작까지 살아남아야 노출군에 속하도록 정의하면 그 이전의 생존 시간이 잘못 귀속되는 불멸시간 편향(immortal time bias)이 생길 수 있다. 연구의 기준 시점과 노출 시작, 적격성 및 추적 시작을 정렬해야 한다. 같은 데이터에서 날짜를 어떻게 정의하는지만으로 효과가 크게 달라질 수 있다. 시간축을 명확히 그리는 일은 분석 이전의 설계 단계에서 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.12c832a9bd2c",
+      "type": "heading",
+      "level": 2,
+      "text": "측정과 결과변수"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.38fff53c8e5c",
+      "type": "paragraph",
+      "markdown": "주요 결과변수는 임상적 의미와 측정 신뢰성, 사건 빈도와 관찰 가능성을 함께 고려하여 정한다. 대리결과변수(surrogate outcome)는 빠르게 변화를 볼 수 있지만 그 변화가 환자에게 중요한 장기 결과 개선을 반드시 보장하지 않는다. 복합결과는 사건을 묶어 정보량을 늘릴 수 있으나 구성 요소의 중요성과 빈도, 치료 효과가 다를 수 있다. 전체 수치가 어떤 구성 사건에 의해 결정되었는지 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.5bfa281a99a6",
+      "type": "paragraph",
+      "markdown": "측정 일정과 방법은 두 비교군에서 일관되게 적용되어야 한다. 검사 빈도가 다르면 질환 발견 기회가 달라지고, 평가자가 치료를 알면 주관적인 결과에 영향을 줄 수 있다. 결측 자료가 생기는 이유도 예후와 관련될 수 있어 단순히 관찰된 사례만 분석하면 편향이 생길 수 있다. 결측 처리의 방법과 그 가정, 민감도 분석을 사전에 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.b2901d84a3c8",
+      "type": "heading",
+      "level": 2,
+      "text": "표본 수와 실행 가능성"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.30327a8d9fc3",
+      "type": "paragraph",
+      "markdown": "표본 수 계획에는 임상적으로 중요한 차이와 예상 변동 또는 사건 위험, 오류 기준과 검정력 및 탈락 가능성이 관여한다. 예산에 맞춘 표본 수를 계산한 뒤 그 연구가 구별할 수 있는 효과의 범위를 평가하는 접근도 가능하다. 그러나 작은 표본에서 유의하지 않았다는 결과를 동등성의 증거로 표현해서는 안 된다. 정밀도와 신뢰구간이 질문에 답할 만큼 충분한지 판단해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.4072b604f343",
+      "type": "paragraph",
+      "markdown": "실행 가능성에는 등록할 환자의 수뿐 아니라 개입의 재현성, 추적과 자료 품질, 윤리적 수용성과 자원이 포함된다. 계획이 복잡해 실제 진료에서 유지되지 않으면 이상적인 효능과 실제 효과의 차이가 커질 수 있다. 예비연구는 절차와 모집, 측정의 문제를 확인하는 데 도움을 주지만 작은 예비자료의 효과 크기를 확정값처럼 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.729f2059aaa1",
+      "type": "heading",
+      "level": 2,
+      "text": "분석과 보고의 일관성"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.e370ebe9f2f8",
+      "type": "paragraph",
+      "markdown": "주요 가설과 결과, 분석 집단 및 하위집단을 사전에 명시하면 자료를 본 뒤 유리한 결과만 선택하는 위험을 줄일 수 있다. 탐색적 분석은 새로운 가설을 만들 수 있는 가치가 있지만 확증적 결과와 구분하여 보고한다. 연구 등록과 계획 및 결과 보고의 일치, 미보고 결과와 계획 변경의 이유를 확인해야 한다. 재현 가능한 코드만으로 설계와 보고의 모든 편향이 사라지는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "research-methods.design.question-and-estimand.b.769e8092aa48",
+      "type": "paragraph",
+      "markdown": "예측 연구는 미래 위험을 얼마나 잘 맞히는지를, 인과 연구는 개입을 달리했을 때 결과가 어떻게 바뀌는지를 묻는다. 잘 예측하는 변수가 치료 표적이라는 보장은 없고, 효과적인 개입의 원인을 설명하는 변수가 예측에 큰 추가 정보를 주지 않을 수도 있다. 질문의 종류에 따라 필요한 설계와 검증을 선택해야 한다. 연구방법론은 통계 검정을 고르는 절차를 넘어 질문과 실제 자료, 결론의 의미를 일치시키는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/10-prevention-clerkships/subjects/research-methods/chapters/design/sections/research-methods.design.question-and-estimand.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.research-methods.design.question-and-estimand.001"
+  ],
+  "keyFacts": [
+    "아니다. 등록 전 선택과 배정 후 평가 등 다른 편향을 다룬다."
+  ]
+}

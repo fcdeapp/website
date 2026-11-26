@@ -1,0 +1,23 @@
+{
+  "id": "question.endocrinology.diabetes.foundations.001",
+  "kind": "original_concept_question",
+  "lessonId": "endocrinology.diabetes.foundations",
+  "prompt": "최근 수혈이 HbA1c 해석에 영향을 줄 수 있는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "전혀 없다."
+    },
+    {
+      "id": "B",
+      "text": "있다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "적혈구의 구성과 수명 변화는 당화 지표에 영향을 준다.",
+  "optionRationales": {
+    "A": "HbA1c가 모든 상황에서 혈당을 완벽히 반영하는 것은 아니다.",
+    "B": "적혈구의 구성과 수명 변화는 당화 지표에 영향을 준다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "laboratory-medicine.quality.preanalytics",
+  "subjectId": "laboratory-medicine",
+  "chapterId": "quality",
+  "title": {
+    "ko": "검사 전 과정과 결과 해석의 품질",
+    "en": "Preanalytical Quality and Laboratory Interpretation"
+  },
+  "learningObjectives": [
+    {
+      "id": "laboratory-medicine.quality.preanalytics.lo.01",
+      "text": "검사 전·분석·검사 후 오류를 구분한다."
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.lo.02",
+      "text": "용혈과 검체 조건의 영향을 설명한다."
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.lo.03",
+      "text": "참고구간과 의사결정 기준을 구별한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.8ea43425d0f6",
+      "type": "heading",
+      "level": 2,
+      "text": "검사실에 도착하기 전에 생기는 변화"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.1a0ecd1590fd",
+      "type": "paragraph",
+      "markdown": "검사 결과는 환자의 생물학적 상태뿐 아니라 환자 준비, 채취와 운송, 분석 및 보고 과정의 영향을 받는다. 공복 여부, 채혈 시간, 자세, 운동과 약물은 검사별로 다른 영향을 줄 수 있다. 채혈관 종류와 첨가제, 혼합, 보관 온도와 지연도 중요하다. 검체에 적힌 환자 정보가 틀리면 분석 장비가 아무리 정확해도 잘못된 환자에 대한 정밀한 숫자를 만들 뿐이다. 품질관리는 기계의 오차만 관리하는 작업이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.9c266e332b32",
+      "type": "paragraph",
+      "markdown": "용혈(hemolysis)은 세포 성분의 유출과 분석 간섭을 통해 칼륨, LDH 등 여러 결과에 영향을 줄 수 있다. 체내 용혈과 채혈 과정의 시험관내 용혈은 임상적 의미가 다르다. 검체가 용혈되었다고 모든 항목이 같은 방향과 크기로 변하는 것은 아니며, 장비와 검사법에 따른 간섭 한계를 확인해야 한다. 의심스러운 결과가 나오면 환자 상태와 검체 주석을 함께 검토하고 필요한 재채취를 고려한다. 비정상 수치를 무조건 검체 오류로 처리하는 것도 실제 위험을 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.e8fba4ae6e0a",
+      "type": "heading",
+      "level": 2,
+      "text": "분석 성능의 언어"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.8f863d8041fb",
+      "type": "paragraph",
+      "markdown": "정확도(accuracy)와 정밀도(precision)는 구분한다. 반복 측정값이 가깝다고 참값에 가까운 것은 아니며, 일정한 체계오차가 있으면 정밀하지만 편향된 결과를 얻을 수 있다. 검출한계와 정량한계는 같은 개념이 아니고, 보고 가능한 측정범위 바깥의 값에는 희석과 추가 처리 등이 필요할 수 있다. 서로 다른 검사실의 숫자를 비교할 때 단위, 측정법과 보정체계가 같은지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.b4807042df5b",
+      "type": "paragraph",
+      "markdown": "면역검사에는 이종항체나 특정 보충제, 교차반응 등 다양한 간섭이 있을 수 있다. 결과가 임상상과 크게 어긋나면 흔하지 않은 생리 상태를 확정하기 전에 분석 간섭을 검토할 가치가 있다. 같은 검체를 다른 방법으로 측정하거나 검사실과 논의하는 접근이 도움이 될 수 있다. 모든 결과 불일치를 한 가지 간섭 원인으로 설명해서는 안 되며, 복용량과 시점, 검사법별 특성을 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.5d04e5edbfea",
+      "type": "heading",
+      "level": 2,
+      "text": "참고구간과 변화량"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.6da0c20265a7",
+      "type": "paragraph",
+      "markdown": "참고구간(reference interval)은 정의된 기준집단의 측정값 분포를 바탕으로 만든다. 흔히 중앙의 일정 비율을 포함하지만 질환 진단의 절대 경계와 동일하지 않다. 질환이 없어도 일부 건강인은 구간 밖에 있고, 질환이 있어도 구간 안에 있을 수 있다. 나이, 성별, 임신과 검사방법에 따라 적절한 구간이 달라질 수 있다. 많은 검사를 동시에 하면 우연히 구간을 벗어나는 값이 나올 가능성이 커지므로 사전 임상 질문이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.3735079c0c57",
+      "type": "paragraph",
+      "markdown": "개인의 연속 검사에서는 집단 참고구간뿐 아니라 이전 값과의 변화도 살핀다. 생물학적 변동과 분석 변동이 있기 때문에 작은 차이가 언제나 질환 진행을 의미하지 않는다. 반대로 구간 안에서의 큰 변화가 임상적으로 중요할 수 있다. 급성 변화의 시간 경과와 검체 조건을 확인해야 하며, 변화량 비교를 위해 같은 방법과 단위를 유지하는 것이 유리하다. 참고변화값을 사용할 때에는 해당 분석과 집단의 가정이 적절한지 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.0907bfb04c94",
+      "type": "heading",
+      "level": 2,
+      "text": "보고 이후의 책임"
+    },
+    {
+      "id": "laboratory-medicine.quality.preanalytics.b.f4c299e86a21",
+      "type": "paragraph",
+      "markdown": "위급 결과의 통보는 숫자를 전산에 올리는 것으로 끝나지 않는다. 누가 결과를 받았고 어떤 조치를 할지 확인하는 체계가 필요하다. 퇴원 뒤 나온 배양이나 병리 결과도 확인 책임을 명시해야 한다. 진단검사의학은 검사실 내부의 품질과 임상적 사용의 품질을 연결하는 분야다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/laboratory-medicine/chapters/quality/sections/laboratory-medicine.quality.preanalytics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.laboratory-medicine.quality.preanalytics.001"
+  ],
+  "keyFacts": [
+    "반복값이 가까워도 일정한 편향을 가질 수 있다."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "preventive-medicine",
+  "title": {
+    "ko": "예방의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "preventive-medicine.chapter.prevention",
+      "path": "domains/10-prevention-clerkships/subjects/preventive-medicine/chapters/prevention/chapter.json"
+    },
+    {
+      "id": "preventive-medicine.chapter.screening",
+      "path": "domains/10-prevention-clerkships/subjects/preventive-medicine/chapters/screening/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "preventive-medicine.plan.001",
+    "preventive-medicine.plan.002",
+    "preventive-medicine.plan.003",
+    "preventive-medicine.plan.004",
+    "preventive-medicine.plan.005",
+    "preventive-medicine.plan.006",
+    "preventive-medicine.prevention.levels-and-strategies",
+    "preventive-medicine.screening.benefit-harm"
+  ]
+}

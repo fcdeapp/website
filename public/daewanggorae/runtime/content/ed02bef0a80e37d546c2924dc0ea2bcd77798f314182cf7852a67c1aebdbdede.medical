@@ -1,0 +1,186 @@
+{
+  "id": "diagram.raas",
+  "lessonId": "physiology.renal.raas",
+  "title": "Classical RAAS",
+  "nodes": [
+    {
+      "id": "liver",
+      "label": "Liver: angiotensinogen",
+      "x": 210,
+      "y": 120,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "renin",
+      "label": "Kidney: renin",
+      "x": 210,
+      "y": 280,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ang1",
+      "label": "Angiotensin I",
+      "x": 510,
+      "y": 280,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "ang2",
+      "label": "Angiotensin II",
+      "x": 510,
+      "y": 440,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "adrenal",
+      "label": "Adrenal: aldosterone",
+      "x": 510,
+      "y": 600,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "kidney",
+      "label": "Distal nephron: Na+ uptake",
+      "x": 510,
+      "y": 740,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "vessel",
+      "label": "Vascular AT1 effects",
+      "x": 810,
+      "y": 440,
+      "width": 220,
+      "height": 72
+    }
+  ],
+  "edges": [
+    {
+      "source": "liver",
+      "target": "ang1",
+      "label": "substrate",
+      "id": "liver--ang1",
+      "relation": "directed"
+    },
+    {
+      "source": "renin",
+      "target": "ang1",
+      "label": "cleavage",
+      "id": "renin--ang1",
+      "relation": "directed"
+    },
+    {
+      "source": "ang1",
+      "target": "ang2",
+      "label": "ACE",
+      "id": "ang1--ang2",
+      "relation": "directed"
+    },
+    {
+      "source": "ang2",
+      "target": "adrenal",
+      "label": "AT1",
+      "id": "ang2--adrenal",
+      "relation": "directed"
+    },
+    {
+      "source": "ang2",
+      "target": "vessel",
+      "label": "tone",
+      "id": "ang2--vessel",
+      "relation": "directed"
+    },
+    {
+      "source": "adrenal",
+      "target": "kidney",
+      "label": "MR",
+      "id": "adrenal--kidney",
+      "relation": "directed"
+    }
+  ],
+  "visualizationKind": "original_schematic",
+  "sourceImageUsed": false,
+  "limitations": [
+    "Not a full RAAS map; nonclassical pathways omitted",
+    "Hormone movement is schematic, not literal vessel anatomy"
+  ],
+  "schemaVersion": "2.0.0",
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 1040,
+      "height": 840
+    },
+    "compact": {
+      "canvas": {
+        "width": 600,
+        "height": 1120
+      },
+      "fontSize": 26,
+      "nodes": {
+        "liver": {
+          "x": 150,
+          "y": 100,
+          "width": 250,
+          "height": 136
+        },
+        "renin": {
+          "x": 150,
+          "y": 340,
+          "width": 250,
+          "height": 136
+        },
+        "ang1": {
+          "x": 450,
+          "y": 340,
+          "width": 250,
+          "height": 136
+        },
+        "ang2": {
+          "x": 450,
+          "y": 580,
+          "width": 250,
+          "height": 136
+        },
+        "vessel": {
+          "x": 150,
+          "y": 580,
+          "width": 250,
+          "height": 136
+        },
+        "adrenal": {
+          "x": 450,
+          "y": 820,
+          "width": 250,
+          "height": 136
+        },
+        "kidney": {
+          "x": 450,
+          "y": 1040,
+          "width": 250,
+          "height": 136
+        }
+      },
+      "edges": {
+        "liver--ang1": {
+          "via": [
+            {
+              "x": 450,
+              "y": 100
+            }
+          ],
+          "labelPosition": {
+            "x": 340,
+            "y": 70
+          }
+        }
+      }
+    }
+  }
+}

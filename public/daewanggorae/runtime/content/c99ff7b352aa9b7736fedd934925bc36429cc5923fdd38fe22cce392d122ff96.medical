@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "radiation-oncology",
+  "title": {
+    "ko": "방사선종양학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "radiation-oncology.chapter.principles",
+      "path": "domains/09-clinical-diagnostics/subjects/radiation-oncology/chapters/principles/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "radiation-oncology.plan.001",
+    "radiation-oncology.plan.002",
+    "radiation-oncology.plan.003",
+    "radiation-oncology.plan.004",
+    "radiation-oncology.plan.005",
+    "radiation-oncology.plan.006",
+    "radiation-oncology.principles.radiobiology"
+  ]
+}

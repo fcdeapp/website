@@ -1,0 +1,73 @@
+{
+  "status": "selected_public_scope_checked_not_full_syllabus_audit",
+  "institutions": [
+    {
+      "sourceRef": "snu-curriculum",
+      "observedScope": [
+        "기초·계통 통합학습",
+        "학생인턴",
+        "임상수행능력 훈련"
+      ],
+      "officialOutcomeExtraction": "incomplete",
+      "recommendedTextbookList": "not_extracted"
+    },
+    {
+      "sourceRef": "yonsei-curriculum",
+      "observedScope": [
+        "기초의학과 계통 통합",
+        "임상실습과 임상추론",
+        "연구멘토링과 인문사회"
+      ],
+      "officialOutcomeExtraction": "incomplete",
+      "recommendedTextbookList": "not_extracted"
+    },
+    {
+      "sourceRef": "korea-curriculum",
+      "observedScope": [
+        "과학지식·진료능력",
+        "의사소통·윤리·법규",
+        "연구 및 성찰"
+      ],
+      "officialOutcomeExtraction": "incomplete",
+      "recommendedTextbookList": "not_extracted"
+    },
+    {
+      "sourceRef": "skku-curriculum",
+      "observedScope": [
+        "통합 핵심과정",
+        "임상실습과 연구",
+        "환경의학·의료관리·의료정보"
+      ],
+      "officialOutcomeExtraction": "incomplete",
+      "recommendedTextbookList": "not_extracted"
+    },
+    {
+      "sourceRef": "ulsan-curriculum",
+      "observedScope": [
+        "세포와 대사·구조와 기능",
+        "질병과 치료",
+        "임상실습·인문사회"
+      ],
+      "officialOutcomeExtraction": "incomplete",
+      "recommendedTextbookList": "not_extracted"
+    },
+    {
+      "sourceRef": "catholic-curriculum",
+      "observedScope": [
+        "기초·임상 통합과정",
+        "실습",
+        "OMNIBUS 인문사회"
+      ],
+      "officialOutcomeExtraction": "incomplete",
+      "recommendedTextbookList": "not_extracted"
+    }
+  ],
+  "additionalInstitutions": "pending",
+  "KAMC": {
+    "status": "catalog_only_no_full_outcome_text"
+  },
+  "KIMEE": {
+    "sourceRef": "kimee-ask2026",
+    "status": "selected_criteria_read_not_full_crosswalk"
+  }
+}

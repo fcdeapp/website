@@ -1,0 +1,164 @@
+{
+  "id": "diagram.bayes-positive",
+  "lessonId": "internal-medicine.diagnosis.probability",
+  "title": "낮은 사전확률에서 양성 결과의 구성",
+  "visualizationKind": "original_calculated_frequency_chart",
+  "sourceImageUsed": false,
+  "assumptions": {
+    "population": 10000,
+    "prevalence": 0.01,
+    "sensitivity": 0.9,
+    "specificity": 0.95
+  },
+  "counts": {
+    "disease": 100,
+    "noDisease": 9900,
+    "truePositive": 90,
+    "falseNegative": 10,
+    "falsePositive": 495,
+    "trueNegative": 9405
+  },
+  "positivePredictiveValue": 0.15384615384615385,
+  "limitations": [
+    "독립적으로 계산한 가상 집단이며 실제 검사의 임상 성능 자료가 아니다.",
+    "동일한 민감도와 특이도도 환자군과 측정 조건에 따라 달라질 수 있다."
+  ],
+  "schemaVersion": "2.0.0",
+  "render": {
+    "type": "bars",
+    "canvas": {
+      "width": 1050,
+      "height": 310
+    },
+    "plot": {
+      "x": 240,
+      "y": 25,
+      "width": 740,
+      "height": 150
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 600,
+      "ticks": [
+        0,
+        100,
+        200,
+        300,
+        400,
+        500,
+        600
+      ],
+      "label": "검사 양성 인원 (명)",
+      "scale": "linear"
+    },
+    "rows": [
+      {
+        "id": "positive",
+        "label": "검사 양성",
+        "y": 70,
+        "height": 64,
+        "segments": [
+          {
+            "label": "참양성",
+            "valuePath": "counts/truePositive",
+            "tone": "primary"
+          },
+          {
+            "label": "위양성",
+            "valuePath": "counts/falsePositive",
+            "tone": "secondary"
+          }
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "parts": [
+          "가상 집단 ",
+          {
+            "path": "assumptions/population",
+            "decimals": 0,
+            "multiplier": 1
+          },
+          "명 · 유병률 ",
+          {
+            "path": "assumptions/prevalence",
+            "decimals": 0,
+            "multiplier": 100
+          },
+          "% · 민감도 ",
+          {
+            "path": "assumptions/sensitivity",
+            "decimals": 0,
+            "multiplier": 100
+          },
+          "% · 특이도 ",
+          {
+            "path": "assumptions/specificity",
+            "decimals": 0,
+            "multiplier": 100
+          },
+          "%"
+        ]
+      },
+      {
+        "parts": [
+          "질환 있음 ",
+          {
+            "path": "counts/disease",
+            "decimals": 0,
+            "multiplier": 1
+          },
+          "명: 양성 ",
+          {
+            "path": "counts/truePositive",
+            "decimals": 0,
+            "multiplier": 1
+          },
+          "명 / 음성 ",
+          {
+            "path": "counts/falseNegative",
+            "decimals": 0,
+            "multiplier": 1
+          },
+          "명"
+        ]
+      },
+      {
+        "parts": [
+          "질환 없음 ",
+          {
+            "path": "counts/noDisease",
+            "decimals": 0,
+            "multiplier": 1
+          },
+          "명: 양성 ",
+          {
+            "path": "counts/falsePositive",
+            "decimals": 0,
+            "multiplier": 1
+          },
+          "명 / 음성 ",
+          {
+            "path": "counts/trueNegative",
+            "decimals": 0,
+            "multiplier": 1
+          },
+          "명"
+        ]
+      },
+      {
+        "parts": [
+          "양성예측도 ",
+          {
+            "path": "positivePredictiveValue",
+            "decimals": 1,
+            "multiplier": 100
+          },
+          "%"
+        ]
+      },
+      "양성 결과의 의미는 검사 성능과 사전확률을 함께 반영한다."
+    ]
+  }
+}

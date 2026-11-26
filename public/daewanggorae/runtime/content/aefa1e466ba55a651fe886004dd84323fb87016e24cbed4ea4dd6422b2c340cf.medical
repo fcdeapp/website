@@ -1,0 +1,28 @@
+{
+  "id": "question.physiology.respiratory.control-of-breathing.001",
+  "kind": "original_concept_question",
+  "lessonId": "physiology.respiratory.control-of-breathing",
+  "prompt": "정상 PaO2를 유지하는 심한 빈혈에서 말초 화학수용 반응을 해석하면?",
+  "options": [
+    {
+      "id": "A",
+      "text": "산소함량 감소는 같은 크기의 저산소분압 자극과 동일하다."
+    },
+    {
+      "id": "B",
+      "text": "산소함량 감소와 PaO2 감소는 구별해야 한다."
+    },
+    {
+      "id": "C",
+      "text": "경동맥소체는 혈압만 감지한다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "헤모글로빈 감소로 함량이 낮아져도 PaO2가 유지될 수 있다.",
+  "optionRationales": {
+    "A": "말초 저산소 반응은 주로 동맥혈 산소분압과 관련된다.",
+    "B": "헤모글로빈 감소로 함량이 낮아져도 PaO2가 유지될 수 있다.",
+    "C": "경동맥소체의 화학수용과 경동맥굴의 압수용을 혼동했다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

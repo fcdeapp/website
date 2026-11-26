@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.pelvis.floor-organs.organ-context",
+  "sceneId": "scene.anatomy.pelvis.floor-organs.organ-context",
+  "lessonId": "anatomy.pelvis.floor-organs",
+  "triggerBlockId": "anatomy.pelvis.floor-organs.b.ad26ce5de146",
+  "primaryStructures": [
+    "FMA15900",
+    "FMA14544"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA15900",
+    "FMA14544"
+  ],
+  "modelIds": [
+    "partof:FJ3149",
+    "partof:FJ2571"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3149.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ2571.obj"
+  ],
+  "cameraPosition": [
+    0.64255,
+    -397.52865271694185,
+    815.6220000000001
+  ],
+  "cameraTarget": [
+    0.64255,
+    -69.7604,
+    815.6220000000001
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -34.1466,
+      -128.24,
+      757.327
+    ],
+    "max": [
+      35.4317,
+      -11.2808,
+      873.917
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "남성 원본에서의 방광과 직장 위치 문맥",
+  "mappingConfidence": "exact_attachment_ids_and_bounds_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "골반바닥 근육과 여성 장기를 대신 나타내지 않음; 근막·신경·출산 손상은 별도 도식 필요"
+  ],
+  "dynamicAnatomyIncluded": false
+}

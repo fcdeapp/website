@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "lessons": [
+    {
+      "lessonId": "emergency-medicine.resuscitation.oxygen-delivery",
+      "references": [
+        {
+          "sourceRef": "oxygen-transport",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "emergency-medicine.resuscitation.oxygen-delivery.b.1954a3a33934",
+          "sourceRefs": [
+            "oxygen-transport"
+          ],
+          "scope": "분압과 헤모글로빈 결합 산소함량의 구별"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "anesthesiology.regional.local-anesthetic",
+      "references": [
+        {
+          "sourceRef": "local-anesthesia-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "anesthesiology.regional.local-anesthetic.b.fa823dc130e9",
+          "sourceRefs": [
+            "local-anesthesia-education"
+          ],
+          "scope": "전압개폐성 나트륨통로 차단의 핵심 원리"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "radiology.mri.signal-and-diffusion",
+      "references": [
+        {
+          "sourceRef": "aapm-mri-curriculum",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "geriatrics.cognition.delirium",
+      "references": [
+        {
+          "sourceRef": "nice-delirium-2023",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "transfusion-medicine.compatibility.components-reactions",
+      "references": [
+        {
+          "sourceRef": "transfusion-reactions-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "clinical-nutrition.metabolism.starvation-refeeding",
+      "references": [
+        {
+          "sourceRef": "nice-nutrition-cg32",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "rehabilitation.motor-control.weakness-and-tone",
+      "references": [
+        {
+          "sourceRef": "umn-signs-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "family-medicine.prevention.health-screening",
+      "references": [
+        {
+          "sourceRef": "nci-screening-overview",
+          "use": "selected_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "family-medicine.prevention.counseling",
+      "references": [
+        {
+          "sourceRef": "uspstf-tobacco-2021",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "radiation-oncology.principles.radiobiology",
+      "references": [
+        {
+          "sourceRef": "nci-radiation-intro",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "nuclear-medicine.imaging.tracer-kinetics",
+      "references": [
+        {
+          "sourceRef": "radiologyinfo-pet",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "diagnostic-pathology.specimen.interpretation",
+      "references": [
+        {
+          "sourceRef": "nci-pathology-reports",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "palliative-care.principles.symptom-and-goals",
+      "references": [
+        {
+          "sourceRef": "who-palliative-facts",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "occupational-medicine.exposure.work-history",
+      "references": [
+        {
+          "sourceRef": "niosh-control-hierarchy",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    }
+  ]
+}

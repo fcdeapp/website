@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0.0",
+  "lessons": [
+    {
+      "lessonId": "pharmacology.general.pharmacokinetics",
+      "references": [
+        {
+          "sourceRef": "pk",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "pharmacology.general.pharmacokinetics.b.cd014f1ae98c",
+          "sourceRefs": [
+            "pk"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "pathology.cell.injury-death",
+      "references": [
+        {
+          "sourceRef": "robbins-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "cell-death",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "pharmacology.autonomic.receptors",
+      "references": [
+        {
+          "sourceRef": "autonomic-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "systemic-pathology.kidney.glomerular-patterns",
+      "references": [
+        {
+          "sourceRef": "glomerular-consensus",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "systemic-pathology.kidney.glomerular-patterns.b.b258172783a3",
+          "sourceRefs": [
+            "glomerular-consensus"
+          ],
+          "scope": "광학·면역형광·전자현미경을 통합하는 원칙"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "pathology.neoplasia.growth-control",
+      "references": [
+        {
+          "sourceRef": "robbins-toc",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "systemic-pharmacology.antimicrobials.beta-lactams",
+      "references": [
+        {
+          "sourceRef": "beta-lactam-targets",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        },
+        {
+          "sourceRef": "beta-lactam-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "toxicology.principles.exposure-and-toxidromes",
+      "references": [
+        {
+          "sourceRef": "antimuscarinic-toxicology",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "pharmacology.general.pharmacodynamics",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "iuphar-pharmacodynamics",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "systemic-pharmacology.autonomic.cholinergic-adrenergic",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "iuphar-autonomic",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    }
+  ]
+}

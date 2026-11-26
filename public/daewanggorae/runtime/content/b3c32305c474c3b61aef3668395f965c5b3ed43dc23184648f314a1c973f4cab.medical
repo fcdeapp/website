@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "clerkships",
+  "title": {
+    "ko": "진료과별 임상실습"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "clerkships.chapter.practice",
+      "path": "domains/10-prevention-clerkships/subjects/clerkships/chapters/practice/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "clerkships.plan.001",
+    "clerkships.plan.002",
+    "clerkships.plan.003",
+    "clerkships.plan.004",
+    "clerkships.plan.005",
+    "clerkships.plan.006",
+    "clerkships.practice.problem-list-and-handover"
+  ]
+}

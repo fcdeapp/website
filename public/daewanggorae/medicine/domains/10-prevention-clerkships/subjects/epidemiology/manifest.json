@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "epidemiology",
+  "title": {
+    "ko": "역학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "epidemiology.chapter.causal-inference",
+      "path": "domains/10-prevention-clerkships/subjects/epidemiology/chapters/causal-inference/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "epidemiology.plan.001",
+    "epidemiology.plan.002",
+    "epidemiology.plan.003",
+    "epidemiology.plan.004",
+    "epidemiology.plan.005",
+    "epidemiology.plan.006",
+    "epidemiology.causal-inference.bias-confounding"
+  ]
+}

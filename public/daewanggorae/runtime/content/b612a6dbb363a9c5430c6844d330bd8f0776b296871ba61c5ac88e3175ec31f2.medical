@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "oncology",
+  "title": {
+    "ko": "종양내과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "oncology.chapter.principles",
+      "path": "domains/05-internal-medicine/subjects/oncology/chapters/principles/chapter.json"
+    },
+    {
+      "id": "oncology.chapter.molecular",
+      "path": "domains/05-internal-medicine/subjects/oncology/chapters/molecular/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "oncology.plan.001",
+    "oncology.plan.002",
+    "oncology.plan.003",
+    "oncology.plan.004",
+    "oncology.plan.005",
+    "oncology.plan.006",
+    "oncology.principles.staging-and-response",
+    "oncology.molecular.dna-repair"
+  ]
+}

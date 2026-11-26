@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.nucleotides.purine-pyrimidine",
+  "subjectId": "biochemistry",
+  "chapterId": "nucleotides",
+  "title": {
+    "ko": "퓨린·피리미딘의 합성·회수·분해",
+    "en": "Purine and Pyrimidine Synthesis, Salvage and Degradation"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.lo.01",
+      "text": "두 염기 고리의 합성 방식을 구별한다"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.lo.02",
+      "text": "회수 경로와 신생합성의 조절을 연결한다"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.lo.03",
+      "text": "약물 표적과 질소·일탄소 대사를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.4c4fbc5d2d63",
+      "type": "heading",
+      "level": 2,
+      "text": "뉴클레오타이드의 여러 역할"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.dd61a3105bc1",
+      "type": "paragraph",
+      "markdown": "뉴클레오타이드(nucleotide)는 핵산의 구성 단위이면서 에너지 전달과 신호, 활성화된 대사 중간체의 구성에 쓰인다. 염기와 당으로 이루어진 뉴클레오사이드에 인산이 연결된 구조를 구별해야 한다. ATP와 GTP, UTP와 CTP는 염기만 다른 이름이 아니라 여러 효소와 대사 반응에서 선택적으로 사용된다. DNA와 RNA의 합성에는 양뿐 아니라 각 전구체 사이의 균형이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.338b630a7f18",
+      "type": "paragraph",
+      "markdown": "세포는 신생합성(de novo synthesis)으로 염기를 만들거나 기존 염기와 뉴클레오사이드를 회수하여 이용한다. 회수(salvage)는 단순한 폐기물 처리가 아니라 에너지를 절약하고 조직별 공급을 유지하는 경로이다. 어느 경로에 의존하는지는 조직과 증식 상태, 공급과 효소 발현에 따라 다르다. 신생합성이 가능하다는 사실만으로 회수 효소의 결함이 임상적으로 중요하지 않다는 결론을 내릴 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.c5882bd3fd3f",
+      "type": "heading",
+      "level": 2,
+      "text": "PRPP와 퓨린 고리"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.c1b2d2d8445c",
+      "type": "paragraph",
+      "markdown": "리보스-5-인산은 오탄당인산경로와 연결되며 PRPP는 활성화된 리보스 인산으로 여러 합성·회수 반응의 기질이 된다. 퓨린 신생합성에서는 이 골격 위에 원자가 단계적으로 더해져 고리가 만들어진다. 글리신과 글루타민, 아스파르트산 및 일탄소 단위 등이 원자 공급에 관여한다. 퓨린 고리를 먼저 완성한 뒤 모든 당을 나중에 붙인다는 모형과 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.f9d02240cf8a",
+      "type": "paragraph",
+      "markdown": "공통 중간체인 IMP에서 AMP와 GMP로 갈라지는 경로는 에너지와 질소 공급, 최종산물의 되먹임에 의해 조절된다. 각 가지가 같은 ATP 분자만을 같은 방식으로 사용하지는 않으며 가지 사이의 균형 유지가 중요하다. 공급이 늘면 전구체가 무조건 계속 쌓이는 것이 아니라 회수와 분해, 되먹임이 전체 흐름을 바꾼다. 한 효소의 활성만으로 세포 전체의 뉴클레오타이드 양을 예측하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.d0a9f44f8643",
+      "type": "heading",
+      "level": 2,
+      "text": "회수와 요산"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.c96418e577de",
+      "type": "paragraph",
+      "markdown": "HGPRT는 하이포잔틴과 구아닌의 회수에, 아데닌의 회수에는 다른 효소가 관여한다. 회수 반응은 PRPP를 이용하고 최종 뉴클레오타이드 공급과 신생합성의 되먹임에 영향을 준다. 회수 장애에서 단순히 사용 가능한 염기가 줄어드는 것 외에 PRPP와 신생합성의 흐름이 변할 수 있다. 효소 결함의 결과를 한 방향의 기질 축적만으로 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.93f35ea916b1",
+      "type": "paragraph",
+      "markdown": "퓨린 분해는 하이포잔틴과 잔틴 계통을 거쳐 사람에서 요산 생성으로 연결된다. 잔틴산화환원효소 계통은 이 과정의 중요한 표적이다. 혈중 요산은 생성과 신장·장관 배설의 균형이므로 높은 수치가 언제나 과도한 합성만을 뜻하지 않는다. 신장 기능과 약물, 식이와 세포 회전 및 대사가 함께 영향을 준다. 요산의 농도와 실제 결정 침착 질환도 동일한 정보는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.959654d99444",
+      "type": "heading",
+      "level": 2,
+      "text": "피리미딘의 다른 출발"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.2f69e6f10022",
+      "type": "paragraph",
+      "markdown": "피리미딘에서는 고리의 골격을 만든 뒤 PRPP와 연결하는 흐름이 중요하다. 세포질의 카바모일인산합성효소 II 계통은 글루타민을 질소 공급과 연결하며, 요소회로의 미토콘드리아 CPS1과 위치와 조절이 다르다. 비슷한 효소 이름을 같은 반응의 다른 표기처럼 외우면 질소 대사와 임상 결함을 혼동하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.d82a049cb230",
+      "type": "paragraph",
+      "markdown": "오로트산 계통은 UMP로 연결되고 이후 다른 피리미딘 뉴클레오타이드가 만들어진다. 피리미딘 합성의 일부 반응은 미토콘드리아와 관련되므로 전체 경로를 세포질에만 존재한다고 단순화하지 않는다. 퓨린과 피리미딘의 합성과 분해는 서로 다른 중간체와 최종산물을 가지며, 모든 염기 분해가 요산을 만드는 것은 아니다. 고리 구조의 차이는 임상 대사산물 해석에도 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.ac4f101d6a7f",
+      "type": "heading",
+      "level": 2,
+      "text": "DNA 전구체와 일탄소 대사"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.55082118bf10",
+      "type": "paragraph",
+      "markdown": "리보뉴클레오타이드환원효소(ribonucleotide reductase)는 리보뉴클레오타이드를 디옥시 형태의 공급과 연결한다. 기질의 인산 상태와 조절은 효소의 특성에 따라 이해해야 하며, 단순히 DNA를 직접 RNA에서 변환하는 반응은 아니다. DNA 합성에 필요한 네 전구체의 균형이 깨지면 복제와 수선의 정확성에 영향을 줄 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.0342e846f7c6",
+      "type": "paragraph",
+      "markdown": "티미딜산합성효소(thymidylate synthase)는 dUMP를 dTMP 생성으로 연결하며 엽산 계통의 일탄소 단위와 관련된다. 산화된 엽산을 다시 환원하는 경로가 계속 작동해야 일탄소 공급이 유지된다. 엽산과 비타민 B12 상태가 DNA 합성과 혈구 형성에 영향을 주는 배경이다. 빈혈의 세포 크기라는 결과만 외우기보다 일탄소 대사와 전구체 공급의 연결을 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.be454a69d6e2",
+      "type": "heading",
+      "level": 2,
+      "text": "약물과 대사 경로"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.aa12d7ef1109",
+      "type": "paragraph",
+      "markdown": "항대사제는 엽산 대사와 티미딜산 합성, 퓨린 합성 및 DNA 전구체 공급의 여러 지점을 표적으로 한다. 빠르게 증식하는 종양뿐 아니라 골수와 점막 같은 정상 조직도 영향을 받을 수 있어 선택독성과 이상반응을 함께 이해해야 한다. 약물이 체내에서 활성형으로 바뀌는 과정과 불활성화 및 배설은 표적 억제만큼 실제 노출을 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.nucleotides.purine-pyrimidine.b.25d1a90dc3ab",
+      "type": "paragraph",
+      "markdown": "퓨린 유사체와 요산 생성 억제 약물의 병용처럼 대사 경로를 공유하는 조합은 중요한 상호작용을 만들 수 있다. 표적이 서로 다르다는 이유만으로 병용이 언제나 안전한 것은 아니다. 약물의 활성과 제거 경로 및 환자별 효소 기능을 함께 평가해야 한다. 핵산 대사는 효소 이름과 구조의 암기를 넘어 영양, 유전질환과 암 및 약리학을 연결하는 공통 기반이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/nucleotides/sections/biochemistry.nucleotides.purine-pyrimidine.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.biochemistry.nucleotides.purine-pyrimidine.001"
+  ],
+  "keyFacts": [
+    "아니다. 두 고리의 분해 경로와 최종산물을 구별한다."
+  ]
+}

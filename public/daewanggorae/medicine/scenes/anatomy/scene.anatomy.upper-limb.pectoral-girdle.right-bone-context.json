@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.upper-limb.pectoral-girdle.right-bone-context",
+  "sceneId": "scene.anatomy.upper-limb.pectoral-girdle.right-bone-context",
+  "lessonId": "anatomy.upper-limb.pectoral-girdle",
+  "triggerBlockId": "anatomy.upper-limb.pectoral-girdle.b.055d457d2c42",
+  "primaryStructures": [
+    "FMA13322",
+    "FMA13395"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA13322",
+    "FMA13395"
+  ],
+  "modelIds": [
+    "partof:FJ3362",
+    "partof:FJ3384"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3362.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3384.obj"
+  ],
+  "cameraPosition": [
+    -88.062825,
+    -578.8162064293183,
+    1269.7
+  ],
+  "cameraTarget": [
+    -88.062825,
+    -70.932625,
+    1269.7
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -166.464,
+      -146.948,
+      1183.96
+    ],
+    "max": [
+      -9.66165,
+      5.08275,
+      1355.44
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.15
+  },
+  "color": {
+    "primary": "#75639a",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "오른쪽 어깨이음부의 빗장뼈와 어깨뼈",
+  "mappingConfidence": "exact_attachment_concepts_and_bounds_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "정상 성인 뼈의 정적 위치. 인대·관절연골·신경·혈류·회전이나 손상 상태를 이 장면이 재현하지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

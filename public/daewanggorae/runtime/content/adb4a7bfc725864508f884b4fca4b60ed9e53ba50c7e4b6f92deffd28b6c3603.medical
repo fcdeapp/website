@@ -1,0 +1,23 @@
+{
+  "id": "question.electrolytes.acid-base.interpretation.001",
+  "kind": "original_concept_question",
+  "lessonId": "electrolytes.acid-base.interpretation",
+  "prompt": "pH가 참고범위이면 혼합 산염기 장애가 없는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "없다."
+    },
+    {
+      "id": "B",
+      "text": "아니다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "반대 방향의 과정이 동시에 있으면 pH 변화가 상쇄될 수 있다.",
+  "optionRationales": {
+    "A": "상태값 하나로 여러 생리적 과정을 배제할 수 없다.",
+    "B": "반대 방향의 과정이 동시에 있으면 pH 변화가 상쇄될 수 있다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

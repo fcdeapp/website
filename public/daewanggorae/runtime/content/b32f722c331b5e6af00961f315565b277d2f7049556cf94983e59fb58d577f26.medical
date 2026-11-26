@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology",
+  "title": {
+    "ko": "일반병리학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "pathology.chapter.cell",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/cell/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.inflammation",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.neoplasia",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/neoplasia/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "pathology.plan.001",
+    "pathology.plan.002",
+    "pathology.plan.003",
+    "pathology.plan.004",
+    "pathology.plan.005",
+    "pathology.plan.006",
+    "pathology.cell.injury-death",
+    "pathology.inflammation.acute-chronic",
+    "pathology.neoplasia.growth-control"
+  ]
+}

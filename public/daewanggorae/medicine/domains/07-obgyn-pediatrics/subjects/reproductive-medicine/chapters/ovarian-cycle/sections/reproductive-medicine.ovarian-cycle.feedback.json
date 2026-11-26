@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "reproductive-medicine.ovarian-cycle.feedback",
+  "subjectId": "reproductive-medicine",
+  "chapterId": "ovarian-cycle",
+  "title": {
+    "ko": "난소주기와 시상하부–뇌하수체 조절",
+    "en": "Ovarian Cycle and Hypothalamic-Pituitary Regulation"
+  },
+  "learningObjectives": [
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.lo.01",
+      "text": "두 세포·두 성선자극호르몬 모형을 설명한다"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.lo.02",
+      "text": "난포 선택과 배란 및 황체의 변화를 연결한다"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.lo.03",
+      "text": "난소 호르몬과 자궁내막 반응을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.39b47e93b397",
+      "type": "heading",
+      "level": 2,
+      "text": "서로 연결된 두 주기"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.0343444adcba",
+      "type": "paragraph",
+      "markdown": "난소주기(ovarian cycle)는 난포의 성장과 배란, 황체 형성과 퇴화의 연속이다. 자궁내막 주기는 난소 호르몬의 변화에 반응하여 내막이 증식하고 분비성으로 바뀌며 탈락하는 과정이다. 두 주기는 연결되어 있지만 같은 장기의 변화가 아니다. 월경 출혈이 있다는 사실만으로 그 주기에 정상 배란이 있었다고 확인할 수 없고, 난소 호르몬 분비만으로 자궁내막의 모든 구조적 상태를 알 수는 없다. 출혈 양상은 생식내분비 기능을 평가하는 중요한 정보이지만 독립적인 배란검사를 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.495b198440fd",
+      "type": "paragraph",
+      "markdown": "시상하부의 성선자극호르몬방출호르몬(gonadotropin-releasing hormone, GnRH)은 박동성으로 분비되어 뇌하수체의 황체형성호르몬(luteinizing hormone, LH)과 난포자극호르몬(follicle-stimulating hormone, FSH) 분비를 조절한다. 박동의 빈도와 진폭, 뇌하수체의 민감도, 난소에서 오는 되먹임이 분비 양상을 바꾼다. 지속 자극은 생리적 박동과 다른 효과를 낼 수 있어 GnRH를 단순히 많을수록 성선 기능이 커지는 신호로 이해하면 약리 작용을 설명하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.8d2c6a94bb54",
+      "type": "heading",
+      "level": 2,
+      "text": "두 세포와 두 호르몬"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.e7c3a26f52a7",
+      "type": "paragraph",
+      "markdown": "난포의 난포막세포(theca cell)는 LH에 반응하여 안드로겐 합성에 기여하고, 과립막세포(granulosa cell)는 FSH에 반응하여 아로마타아제(aromatase) 등을 통해 안드로겐을 에스트로겐으로 전환한다. 이 협력이 두 세포·두 성선자극호르몬 모형이다. 세포 사이의 물질 이동과 효소 발현 차이가 중요하며, 한 세포가 모든 스테로이드 합성 단계를 같은 정도로 수행한다고 설명하지 않는다. 성숙 단계에 따라 수용체와 효소 발현이 바뀌므로 배란 전후의 기능도 고정되어 있지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.135f4119880b",
+      "type": "paragraph",
+      "markdown": "원시난포에서 시작되는 초기 성장은 배란 주기보다 훨씬 긴 시간에 걸치며, 모든 단계가 당장 그 주기의 FSH 상승으로 새로 시작되는 것은 아니다. 주기 중 선택되는 난포군과 우성난포의 발달을 설명할 때 초기 난포 동원과 후기 성선자극호르몬 의존성 성장을 구별한다. 성장하는 난포에서 분비되는 에스트라디올과 인히빈(inhibin)은 FSH 분비를 낮추는 데 기여한다. 상대적으로 FSH에 민감하고 성장 조건이 유리한 우성난포가 계속 발달하는 동안 다른 난포는 퇴화할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.b29b805e3df0",
+      "type": "heading",
+      "level": 2,
+      "text": "양성 되먹임과 배란"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.d13413243858",
+      "type": "paragraph",
+      "markdown": "대부분의 주기에서 에스트라디올은 성선자극호르몬 분비를 억제하는 음성 되먹임에 관여한다. 그러나 배란 전 우성난포에서 충분히 높고 지속적인 에스트라디올 자극이 형성되면 조절 회로가 양성 되먹임 양상으로 바뀌어 LH 급증(surge)에 기여한다. 이는 단지 어느 순간의 수치가 높다는 것뿐 아니라 신호의 지속과 회로의 준비 상태에 관련된 현상이다. 에스트로겐이 언제나 LH를 억제한다는 설명도, 언제나 촉진한다는 설명도 주기의 시간축을 놓친 것이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.430947fd650a",
+      "type": "paragraph",
+      "markdown": "LH 급증은 난자의 감수분열 재개와 난포의 성숙 변화, 난포벽의 재형성 및 황체화에 관여한다. 배란은 내부 압력만으로 난포가 기계적으로 터지는 사건이 아니라 단백분해, 국소 염증성 신호, 혈류와 세포 기능 변화가 통합된 과정이다. 배란 뒤 남은 난포 조직은 황체(corpus luteum)로 바뀌고 프로게스테론 분비가 증가한다. 배란 시점은 주기 길이와 개인 내 변동에 영향을 받으므로 모든 사람에게 월경 시작 후 특정 날짜로 고정할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.f03ee103596a",
+      "type": "heading",
+      "level": 2,
+      "text": "황체와 임신 신호"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.b05168118c7d",
+      "type": "paragraph",
+      "markdown": "프로게스테론은 에스트로겐으로 증식한 자궁내막을 분비성 상태로 전환하고, 자궁경부 점액과 체온 등에도 영향을 준다. 황체기에는 에스트라디올과 프로게스테론, 인히빈 A 등이 되먹임에 관여한다. 인히빈 A와 인히빈 B는 같은 이름의 물질이 단순히 늘었다 줄었다 하는 것만이 아니라 분비 우세 시기와 임상적 용도가 다른 관련 단백질이다. 난소 기능은 스테로이드만이 아니라 이런 펩티드 신호를 함께 포함한 체계이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.ba2429030eed",
+      "type": "paragraph",
+      "markdown": "임신이 성립하여 초기 영양막에서 사람융모성성선자극호르몬(human chorionic gonadotropin, hCG) 신호가 형성되면 황체의 스테로이드 생산이 유지된다. hCG는 LH 수용체와 관련된 작용을 통해 이 기능을 지지한다. 수정 자체가 난소에 신경 신호를 보내 황체를 유지시키는 것은 아니다. 임신 신호가 유지되지 않으면 황체 기능이 감소하고 난소 호르몬이 떨어지며 내막의 탈락과 다음 난포군 발달에 필요한 FSH 변화가 이어진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.e51703f41dda",
+      "type": "heading",
+      "level": 2,
+      "text": "임상에서 주기를 해석하기"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.eeb266eccbcb",
+      "type": "paragraph",
+      "markdown": "주기 평가에서 호르몬 수치는 채혈한 시점에 따라 의미가 다르다. 배란 전과 황체기의 프로게스테론을 같은 기준으로 비교하면 생리적 차이를 질환으로 오인할 수 있다. 하나의 LH나 FSH 값으로 GnRH 박동을 직접 측정한 것처럼 해석해서도 안 된다. 호르몬 약제, 임신, 수유, 에너지 부족과 과도한 운동, 시상하부·뇌하수체 질환, 난소의 상태가 서로 다른 지점에서 같은 무월경 증상을 만들 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback.b.d83ee81a537d",
+      "type": "paragraph",
+      "markdown": "무배란에서는 정상적인 황체기 프로게스테론 노출이 형성되지 않을 수 있어 출혈이 불규칙해지고 내막이 지속적인 에스트로겐 자극을 받는 상황이 생길 수 있다. 반면 저에스트로겐 상태에서는 내막 증식 자체가 적을 수 있다. 월경이 없다는 결과가 같더라도 두 상태의 생리와 장기 위험은 다르다. 생식의학의 내분비 해석은 증상을 난소 기능만으로 환원하지 않고 시상하부, 뇌하수체, 난소와 자궁의 연결을 순서대로 평가하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/reproductive-medicine/chapters/ovarian-cycle/sections/reproductive-medicine.ovarian-cycle.feedback.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.reproductive-medicine.ovarian-cycle.feedback.001"
+  ],
+  "keyFacts": [
+    "충분히 높고 지속적인 에스트라디올 신호에 따른 양성 되먹임이다."
+  ]
+}

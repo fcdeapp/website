@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pediatrics",
+  "title": {
+    "ko": "소아청소년과학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "pediatrics.chapter.growth",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/growth/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "pediatrics.plan.001",
+    "pediatrics.plan.002",
+    "pediatrics.plan.003",
+    "pediatrics.plan.004",
+    "pediatrics.plan.005",
+    "pediatrics.plan.006",
+    "pediatrics.plan.007",
+    "pediatrics.growth.assessment"
+  ]
+}

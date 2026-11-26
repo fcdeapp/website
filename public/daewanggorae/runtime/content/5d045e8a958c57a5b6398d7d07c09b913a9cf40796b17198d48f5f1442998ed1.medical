@@ -1,0 +1,23 @@
+{
+  "id": "question.vascular-surgery.arterial.lower-limb-ischemia.001",
+  "kind": "original_concept_question",
+  "lessonId": "vascular-surgery.arterial.lower-limb-ischemia",
+  "prompt": "동맥이 잘 눌리지 않는 경우 ABI를 어떻게 해석하는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "압력이 높게 보여 허혈을 가릴 수 있어 다른 검사와 통합한다."
+    },
+    {
+      "id": "B",
+      "text": "수치가 높으면 어떤 상황에서도 혈류가 충분하다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "비압축성 동맥은 압력 측정을 왜곡할 수 있으므로 발가락 압력과 파형 등의 정보가 필요할 수 있다.",
+  "optionRationales": {
+    "A": "비압축성 동맥은 압력 측정을 왜곡할 수 있으므로 발가락 압력과 파형 등의 정보가 필요할 수 있다.",
+    "B": "비압축성 동맥은 압력 측정을 왜곡할 수 있으므로 발가락 압력과 파형 등의 정보가 필요할 수 있다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

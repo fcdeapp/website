@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "history-taking.interview.structure",
+  "subjectId": "history-taking",
+  "chapterId": "interview",
+  "title": {
+    "ko": "병력청취의 구조와 정보의 신뢰성",
+    "en": "Clinical Interview Structure and Reliability"
+  },
+  "learningObjectives": [
+    {
+      "id": "history-taking.interview.structure.lo.01",
+      "text": "개방형 질문에서 초점 문진으로 전환한다."
+    },
+    {
+      "id": "history-taking.interview.structure.lo.02",
+      "text": "약물력과 사회력을 임상문제에 연결한다."
+    },
+    {
+      "id": "history-taking.interview.structure.lo.03",
+      "text": "환자 서술과 해석을 구분해 기록한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "history-taking.interview.structure.b.3a3091bcf9ca",
+      "type": "heading",
+      "level": 2,
+      "text": "만남의 시작과 의제 설정"
+    },
+    {
+      "id": "history-taking.interview.structure.b.5ef31e019c1f",
+      "type": "paragraph",
+      "markdown": "병력청취는 증상을 체크리스트에 채우는 작업인 동시에 치료 관계를 만드는 과정이다. 면담자의 역할을 소개하고 환자 확인과 필요한 동의를 얻은 뒤, 환자가 가장 중요하게 생각하는 문제를 열린 질문으로 듣는다. 처음부터 닫힌 질문만 반복하면 예상하지 못한 문제와 환자의 걱정을 놓칠 수 있다. 환자의 주된 의제를 확인한 뒤 시간과 긴급도에 맞춰 순서를 협의한다. 심한 호흡곤란이나 의식 변화처럼 불안정한 상황에서는 면담보다 즉각적 평가와 팀 지원을 우선해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "history-taking.interview.structure.b.de53947c3651",
+      "type": "paragraph",
+      "markdown": "현병력은 발병 시점, 위치, 성격, 강도, 경과, 유발·완화 요인, 동반 증상과 기능 영향을 따라 구체화한다. 통증을 숫자로만 묻기보다 잠, 식사, 보행과 일상 활동에 미치는 영향을 함께 듣는다. 환자의 단어는 의미를 확인해야 한다. 어지럽다는 표현은 회전감, 실신 전 느낌, 불균형, 막연한 불편을 모두 뜻할 수 있기 때문이다. 특정 선택지를 먼저 제시하여 환자의 답을 유도하지 않도록 주의한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "history-taking.interview.structure.b.190fa75c6ead",
+      "type": "heading",
+      "level": 2,
+      "text": "질병 이야기와 환자 경험"
+    },
+    {
+      "id": "history-taking.interview.structure.b.4d962d579ff8",
+      "type": "paragraph",
+      "markdown": "환자가 증상을 어떻게 해석하는지, 무엇을 가장 걱정하는지, 어떤 도움을 기대하는지는 임상적으로 중요한 정보다. 이는 생물학적 사실과 경쟁하는 장식적 질문이 아니다. 치료의 수용과 행동, 추적관찰 가능성을 이해하게 해 준다. 공감은 검증되지 않은 진단에 동의하는 말이 아니라 환자의 경험과 감정을 인정하고 이해를 확인하는 반응이다. 설명 후에는 환자가 자신의 말로 내용을 되짚게 하여 전달이 되었는지 확인할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "history-taking.interview.structure.b.25e5abea235f",
+      "type": "paragraph",
+      "markdown": "과거력은 진단명뿐 아니라 당시 진단 근거와 치료, 합병증을 확인한다. 약물력에는 처방약, 일반의약품, 건강보조식품, 실제 복용 방식, 최근 변경과 중단을 포함한다. 약물 목록이 존재한다고 실제 복용이 확인된 것은 아니다. 알레르기라는 표현도 발진, 위장 불편, 호흡곤란 등 구체 반응과 시점을 확인해야 한다. 환자가 기억하지 못하는 부분은 모른다고 기록하고 가능하면 처방기록 등 다른 자료로 보완한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "history-taking.interview.structure.b.746e926aeb82",
+      "type": "heading",
+      "level": 2,
+      "text": "맥락과 민감한 정보"
+    },
+    {
+      "id": "history-taking.interview.structure.b.973144c47556",
+      "type": "paragraph",
+      "markdown": "가족력은 질환명과 발병 나이, 관계를 구체적으로 묻고 유전성과 공유 환경을 함께 고려한다. 사회력은 직업과 노출, 주거, 돌봄, 흡연·음주와 물질 사용, 신체활동, 경제적 접근성 등을 포함한다. 민감한 질문은 필요한 이유를 설명하고 사생활을 확보하며 비판하지 않는 방식으로 한다. 보호자나 통역자가 함께 있어도 환자에게 직접 말하고, 동의와 의사결정 능력을 상황에 맞게 확인해야 한다. 전문 통역과 가족 통역의 역할 및 한계도 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "history-taking.interview.structure.b.5b134aa5367b",
+      "type": "paragraph",
+      "markdown": "면담 마지막에는 핵심 내용을 요약해 환자가 정정할 기회를 주고, 진찰과 검사 계획을 설명한다. 기록에는 환자의 진술, 관찰 사실, 임상의의 추론을 구분한다. 환자가 부인했다고 쓰려면 실제로 질문했는지 확인해야 하며, 묻지 않은 사항을 자동으로 음성 처리하면 안 된다. 인지장애, 청력, 언어 장벽, 통증과 불안은 정보 신뢰성에 영향을 줄 수 있으나 환자를 일괄적으로 믿을 수 없다고 낙인찍는 표현은 피한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/10-prevention-clerkships/subjects/history-taking/chapters/interview/sections/history-taking.interview.structure.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.history-taking.interview.structure.001"
+  ],
+  "glossary": [
+    {
+      "conceptId": "concept.capacity",
+      "ko": "의사결정능력",
+      "en": "Decision-making capacity",
+      "definition": "구체 결정에 관해 이해·적용·비교·선택을 수행하는 능력"
+    }
+  ],
+  "keyFacts": [
+    "미질문과 실제 부인은 서로 다른 정보다."
+  ]
+}

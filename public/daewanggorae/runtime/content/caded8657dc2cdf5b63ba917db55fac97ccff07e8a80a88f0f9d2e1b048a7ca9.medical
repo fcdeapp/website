@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neonatology.bilirubin.production-and-clearance",
+  "subjectId": "neonatology",
+  "chapterId": "bilirubin",
+  "title": {
+    "ko": "신생아 빌리루빈 대사와 황달",
+    "en": "Neonatal Bilirubin Metabolism and Jaundice"
+  },
+  "learningObjectives": [
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.lo.01",
+      "text": "빌리루빈 생성·포합·배설을 설명한다"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.lo.02",
+      "text": "신생아의 비포합 빌리루빈 증가 요인을 구별한다"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.lo.03",
+      "text": "총수치와 신경독성 위험 및 담즙정체를 구분한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.171556936de8",
+      "type": "heading",
+      "level": 2,
+      "text": "헤모글로빈에서 담즙색소로"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.55f9cea32b5c",
+      "type": "paragraph",
+      "markdown": "빌리루빈(bilirubin)은 헴의 분해 과정에서 만들어지는 색소이다. 노화하거나 손상된 적혈구의 처리 등으로 생긴 헴은 빌리베르딘을 거쳐 빌리루빈으로 전환된다. 비포합 빌리루빈(unconjugated bilirubin)은 물에 잘 녹지 않아 혈중에서 주로 알부민과 결합하여 운반된다. 간세포는 이를 받아들여 글루쿠론산 포합을 통해 수용성을 높인 뒤 담즙으로 배출한다. 생성이 늘거나 간의 처리와 배설이 감소하면 혈중 수치가 높아질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.dac939872440",
+      "type": "paragraph",
+      "markdown": "신생아는 적혈구 양과 수명, 출생 후 대사 전환, 간의 포합 기능이 성인과 다르다. 이 때문에 생리적인 출생 후 변화만으로도 빌리루빈이 상승할 수 있다. 그러나 신생아에게 흔하다는 사실은 모든 황달이 생리적이라는 뜻이 아니다. 용혈, 출혈의 흡수, 감염, 간담도 질환, 대사질환과 섭취 부족 등은 서로 다른 기전으로 수치를 높인다. 언제 시작했고 얼마나 빠르게 증가하며 어떤 분획이 증가하는지를 알아야 원인을 구별할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.c0423e16bdc8",
+      "type": "heading",
+      "level": 2,
+      "text": "생성 증가와 장간순환"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.e274afb05f35",
+      "type": "paragraph",
+      "markdown": "면역성 용혈이나 적혈구 효소·막의 이상은 적혈구 파괴와 빌리루빈 생성을 증가시킬 수 있다. 큰 멍이나 두혈종에서 혈액이 흡수되는 과정도 헴 분해 부담을 높인다. 빈혈이 뚜렷하지 않다고 모든 용혈을 배제할 수는 없으며, 혈액형과 면역검사, 망상적혈구, 말초혈액 소견 등을 상황에 따라 함께 해석한다. 한 검사에서 이상이 없다는 이유로 빠른 수치 상승의 원인을 생리적 변화로 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.f8478e513af7",
+      "type": "paragraph",
+      "markdown": "장으로 배출된 포합 빌리루빈은 탈포합된 뒤 다시 흡수될 수 있어 장간순환이 형성된다. 초기 수유가 충분하지 않아 장 통과와 배변이 감소하면 이 재흡수와 탈수 등이 황달에 기여할 수 있다. 충분한 섭취 여부는 수유 횟수 하나보다 실제 젖 전달, 체중 변화, 소변과 대변 양상 등으로 평가한다. 섭취 부족과 관련된 초기 황달과 충분히 성장하는 모유수유아에서 지속될 수 있는 양상을 구별하되, 모유수유라는 사실만으로 다른 원인을 배제하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.5afd39704e58",
+      "type": "heading",
+      "level": 2,
+      "text": "포합 기능과 담즙정체"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.fe038c7b1a5d",
+      "type": "paragraph",
+      "markdown": "포합효소의 성숙, 간세포의 유입과 배출 기능은 빌리루빈 처리에 관여한다. 비포합 빌리루빈 상승과 포합 빌리루빈 상승은 원인과 위험의 방향이 다를 수 있다. 담즙정체에서는 담즙 배출이 방해되어 직접반응 또는 포합 분획이 증가할 수 있고, 이는 단순한 생리적 황달로 다루어서는 안 되는 단서이다. 무담즙성 옅은 변과 진한 소변, 간비대와 성장 문제는 간담도 평가의 중요성을 높인다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.9b9c080e4dbb",
+      "type": "paragraph",
+      "markdown": "검사에서 말하는 직접반응 빌리루빈(direct-reacting bilirubin)은 측정법상의 범주이므로 순수한 포합 빌리루빈과 완전히 같은 물질 집합을 의미하지 않을 수 있다. 총 빌리루빈만으로 분획과 원인을 알 수 없고, 피부 색만으로도 정확한 혈중 농도를 알 수 없다. 경피 측정은 상황에 따라 선별과 추적에 유용하지만 높은 값이나 치료 판단이 필요한 상황에서는 혈청 측정과 임상 평가가 중요하다. 검사법과 시점이 다른 값을 단순한 연속 숫자로만 비교하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.08b086754e55",
+      "type": "heading",
+      "level": 2,
+      "text": "빌리루빈과 신경계"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.4b7b72d564b3",
+      "type": "paragraph",
+      "markdown": "비포합 빌리루빈의 신경독성은 총수치 하나로만 결정되지 않는다. 알부민에 결합하지 않은 분획, 결합 능력과 약물의 영향, 미숙성과 전신 상태, 감염과 임상적 불안정 등이 위험에 관여한다. 총수치가 같아도 환자별 위험이 다른 배경이다. 높은 비포합 빌리루빈이 중추신경계에 독성을 미치면 급성 빌리루빈뇌병증이 발생할 수 있고, 심한 손상 뒤에는 운동과 청각 기능 등에 지속적인 장애가 남을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.17f3170dcaa8",
+      "type": "paragraph",
+      "markdown": "초기 신경학적 변화는 수유 저하나 처짐처럼 비특이적으로 보일 수 있고, 진행하면 근긴장과 자세, 울음 등에서 이상이 나타날 수 있다. 이런 소견을 기다렸다 치료를 결정하는 것이 예방의 목적은 아니다. 재태연령과 생후 시간, 수치의 경과, 동반 위험을 이용하여 신경 손상이 발생하기 전에 개입할 필요성을 판단한다. 치료 기준이 생후 일수 하나나 모든 신생아에게 동일한 고정 수치로 정해지지 않는 이유이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.4236bbd61804",
+      "type": "heading",
+      "level": 2,
+      "text": "광선치료의 원리와 경과"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.3963c4763c97",
+      "type": "paragraph",
+      "markdown": "광선치료(phototherapy)는 피부에 도달한 빛으로 빌리루빈의 구조와 광화학적 성질을 바꾸어 간의 포합에 덜 의존하는 제거 경로를 만든다. 몸을 따뜻하게 하거나 황색을 눈에 덜 보이게 하는 치료가 아니다. 효과는 빛의 파장과 조사 강도, 노출된 피부 면적, 실제 치료 시간 등에 영향을 받는다. 생성 속도가 매우 빠르면 적절한 광선치료 중에도 수치가 올라갈 수 있어 반응만 보지 않고 용혈과 다른 원인을 함께 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance.b.55eb9c2c384b",
+      "type": "paragraph",
+      "markdown": "치료 뒤 수치가 떨어졌다는 사실과 다시 상승할 위험이 사라졌다는 사실은 다르다. 치료를 시작한 시점과 용혈 여부, 재태연령, 치료 중단 시 수치와 경과는 추적 계획에 영향을 준다. 퇴원 후에도 수유와 체중, 황달 진행, 추적 측정 가능성을 함께 고려한다. 신생아 황달은 간의 대사 성숙이라는 정상 생리, 적혈구와 면역학, 수유와 장 기능, 신경독성이라는 여러 영역을 연결하여 이해해야 하는 임상 문제이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/neonatology/chapters/bilirubin/sections/neonatology.bilirubin.production-and-clearance.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neonatology.bilirubin.production-and-clearance.001"
+  ],
+  "keyFacts": [
+    "생후 시간, 재태연령, 결합 능력과 전신 상태 등이 위험에 관여하기 때문이다."
+  ],
+  "relatedLessons": [
+    "histology.liver.microcirculation"
+  ]
+}

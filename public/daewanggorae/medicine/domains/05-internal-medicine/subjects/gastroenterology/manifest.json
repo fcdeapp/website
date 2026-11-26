@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "gastroenterology",
+  "title": {
+    "ko": "소화기내과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "gastroenterology.chapter.digestion",
+      "path": "domains/05-internal-medicine/subjects/gastroenterology/chapters/digestion/chapter.json"
+    },
+    {
+      "id": "gastroenterology.chapter.inflammation",
+      "path": "domains/05-internal-medicine/subjects/gastroenterology/chapters/inflammation/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "gastroenterology.plan.001",
+    "gastroenterology.plan.002",
+    "gastroenterology.plan.003",
+    "gastroenterology.plan.004",
+    "gastroenterology.plan.005",
+    "gastroenterology.plan.006",
+    "gastroenterology.digestion.malabsorption",
+    "gastroenterology.inflammation.ibd"
+  ]
+}

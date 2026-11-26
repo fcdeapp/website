@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.neuroanatomy.cerebellum.cortex-connections.cerebellum-context",
+  "sceneId": "scene.neuroanatomy.cerebellum.cortex-connections.cerebellum-context",
+  "lessonId": "neuroanatomy.cerebellum.cortex-connections",
+  "triggerBlockId": "neuroanatomy.cerebellum.cortex-connections.b.d0a05f2bfada",
+  "primaryStructures": [
+    "FMA67944"
+  ],
+  "contextStructures": [
+    "FMA62004",
+    "FMA67943"
+  ],
+  "highlightStructures": [
+    "FMA67944"
+  ],
+  "modelIds": [
+    "partof:FJ1781",
+    "partof:FJ1830",
+    "partof:FJ1769",
+    "partof:FJ1831",
+    "partof:FJ1775",
+    "partof:FJ1822"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1781.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1830.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1769.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1831.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1775.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1822.obj"
+  ],
+  "cameraPosition": [
+    -0.6600000000000001,
+    230.66252028155316,
+    1502.505
+  ],
+  "cameraTarget": [
+    -0.6600000000000001,
+    -54.58045,
+    1502.505
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "posterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -53.9299,
+      -96.9866,
+      1464.5
+    ],
+    "max": [
+      52.6099,
+      -12.1743,
+      1540.51
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "소뇌와 다리뇌·숨뇌의 위치 관계",
+  "mappingConfidence": "exact_attachment_ids_bounds_and_hashes_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "겉질 세 층과 깊은핵의 신경회로는 이 외형 메시에서 표현되지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

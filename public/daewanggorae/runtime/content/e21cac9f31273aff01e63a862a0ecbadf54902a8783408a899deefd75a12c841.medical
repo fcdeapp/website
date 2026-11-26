@@ -1,0 +1,28 @@
+{
+  "id": "question.physiology.muscle.excitation-contraction.001",
+  "kind": "original_concept_question",
+  "lessonId": "physiology.muscle.excitation-contraction",
+  "prompt": "근육 가교 순환에서 ATP 결합의 역할은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "myosin이 actin에서 분리되는 단계에 필요하다."
+    },
+    {
+      "id": "B",
+      "text": "ATP가 없을수록 가교 분리가 더 빨라진다."
+    },
+    {
+      "id": "C",
+      "text": "ATP는 가교와 무관하며 신경에서만 사용된다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "ATP는 가교 분리와 주기의 준비에 필요하며 칼슘 회수에도 에너지가 요구된다.",
+  "optionRationales": {
+    "A": "정답이다. ATP는 가교 분리와 주기의 준비에 필요하며 칼슘 회수에도 에너지가 요구된다.",
+    "B": "ATP 결합이 부족하면 myosin의 actin 분리가 제한될 수 있다.",
+    "C": "근육 가교 ATPase와 칼슘 회수도 ATP를 이용한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

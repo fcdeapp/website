@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "vascular-surgery.arterial.lower-limb-ischemia",
+  "subjectId": "vascular-surgery",
+  "chapterId": "arterial",
+  "title": {
+    "ko": "하지 동맥허혈의 혈역학과 평가",
+    "en": "Hemodynamics and Evaluation of Lower-Limb Ischemia"
+  },
+  "learningObjectives": [
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.lo.01",
+      "text": "고정 협착과 운동 중 증상을 연결한다"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.lo.02",
+      "text": "급성 허혈과 만성 허혈을 구별한다"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.lo.03",
+      "text": "압력·혈류·조직 손상의 정보를 통합한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.5c09791c9b98",
+      "type": "heading",
+      "level": 2,
+      "text": "혈류 공급과 수요"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.83e4029d36e5",
+      "type": "paragraph",
+      "markdown": "하지 동맥질환은 큰 동맥의 협착과 폐색이 조직의 혈류 공급을 제한하는 문제를 포함한다. 안정 시에는 공급이 충분해도 운동 중 근육의 요구가 증가하면 한계가 드러날 수 있다. 간헐적 파행(intermittent claudication)은 운동과 관련해 발생하고 휴식으로 호전되는 허혈성 근육 증상의 전형적인 양상이다. 그러나 모든 환자가 종아리 통증이라는 같은 표현을 쓰지는 않으며 활동 제한과 신경병증이 증상을 가릴 수도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.vascular-surgery.arterial.lower-limb-ischemia.femoral-context"
+      ],
+      "conceptRefs": [
+        "FMA70248"
+      ]
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.07e8b7954006",
+      "type": "paragraph",
+      "markdown": "협착의 혈역학적 영향은 직경 감소뿐 아니라 길이와 형태, 여러 병변의 연속성, 혈류 요구와 측부순환에 영향을 받는다. 정상 혈관의 단순 관 모형에서 반지름이 저항에 큰 영향을 준다는 원리는 유용하지만 실제 박동성 혈류와 심한 협착을 그 식 하나로 정확히 계산할 수는 없다. 영상에서 좁아 보이는 정도와 조직 관류가 언제나 같은 비율로 대응하지 않는 이유이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.dbc990c95e55",
+      "type": "heading",
+      "level": 2,
+      "text": "급성과 만성"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.ef671b257d34",
+      "type": "paragraph",
+      "markdown": "급성 사지허혈(acute limb ischemia)은 혈류가 갑자기 감소하여 사지 생존이 위협받는 상태이다. 기존의 측부순환이 충분히 발달하지 않은 상황에서는 같은 폐색 위치라도 손상이 빠르게 진행할 수 있다. 통증과 창백, 맥박 저하 및 차가움, 감각과 운동의 변화는 중요한 단서이다. 모든 징후가 완성될 때까지 기다리는 방식으로 평가해서는 안 된다. 특히 감각·운동 기능은 조직 위협의 정도를 판단하는 데 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.ff7f1b3fd417",
+      "type": "paragraph",
+      "markdown": "만성 허혈에서는 휴식 통증과 낫지 않는 상처, 괴저 등이 문제될 수 있지만 상처의 원인은 동맥 문제만이 아니다. 정맥질환과 압력, 신경병증, 감염이 함께 존재할 수 있다. 당뇨병 환자의 발에서 통증이 적다는 이유로 손상이 가볍다고 판단하지 않는다. 신경병증은 보호 감각을 낮추고 반복 손상을 만들며, 허혈은 치유와 감염 방어를 제한한다. 피부 소견과 감각, 기계적 압력 및 혈류를 각각 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.1983ff0019ef",
+      "type": "heading",
+      "level": 2,
+      "text": "병력과 진찰"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.572435928cd0",
+      "type": "paragraph",
+      "markdown": "통증의 위치와 발생 조건, 걸을 수 있는 거리 및 휴식 후 호전 양상을 확인한다. 관절 질환과 신경성 파행은 혈관성 증상과 겹칠 수 있어 자세와 움직임, 허리 증상 및 감각 변화 등을 비교한다. 피부 온도와 색, 털과 손발톱의 변화, 상처 위치와 깊이, 맥박을 양쪽에서 관찰한다. 맥박이 만져지지 않는다는 소견은 검사의 숙련도와 부종·체형의 영향도 받으므로 다른 검사와 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.d5f281a57e35",
+      "type": "paragraph",
+      "markdown": "안정 시 발목-상완지수(ankle-brachial index, ABI)는 발목과 팔의 수축기압 관계를 이용하여 동맥 공급을 평가한다. 단순히 어느 팔과 어느 발목의 숫자를 임의로 나누지 않고 표준화된 위치와 방법을 사용해야 한다. 동맥벽이 잘 눌리지 않는 석회화에서는 압력이 높게 측정되어 실제 허혈을 가릴 수 있다. 이런 경우 발가락 압력과 파형 등 다른 정보가 도움이 될 수 있다. 정상처럼 보이는 ABI 하나로 모든 임상적 의심을 종결하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.e1dda950a1d8",
+      "type": "heading",
+      "level": 2,
+      "text": "기능 검사와 해부학적 검사"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.35652179c698",
+      "type": "paragraph",
+      "markdown": "도플러 파형과 분절 압력은 혈류와 압력 전달의 정보를 제공하고, 초음파·CT 혈관조영·MR 혈관조영 및 도관조영은 병변의 위치와 경로를 평가하는 데 쓰인다. 검사 선택에는 신장 기능, 조영제와 방사선, 석회화 및 계획하는 중재를 고려한다. 영상에서 혈관의 길이와 분지를 보는 것과 상처 부위에 충분한 산소가 도달하는지를 판단하는 것은 같은 검사가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.e8677b33867d",
+      "type": "paragraph",
+      "markdown": "혈관 재개통을 고려할 때에는 유입 혈류와 병변 자체, 원위부 유출 경로를 함께 평가한다. 한 병변을 성공적으로 열었다고 모든 상처가 반드시 낫는 것은 아니다. 감염과 괴사, 압력과 영양, 미세순환 및 상처 관리가 결과에 관여한다. 반대로 상처 관리만 계속하면서 심한 허혈을 교정하지 않으면 치유의 중요한 제한이 남는다. 여러 기전을 동시에 다루어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.06abb0c2541e",
+      "type": "heading",
+      "level": 2,
+      "text": "치료의 여러 목적"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.6211d895f2b8",
+      "type": "paragraph",
+      "markdown": "말초동맥질환은 해당 다리의 문제이면서 전신 죽상경화 위험의 표지일 수 있다. 금연과 위험인자 관리, 적절한 약물치료와 운동 접근은 사지 증상 외의 심혈관 위험까지 고려한다. 운동 치료는 모든 형태의 허혈에서 무조건 같은 방식으로 시행하는 처방이 아니며 급성 허혈과 심한 조직 위협은 별도의 긴급 평가가 필요하다. 환자 상태에 맞는 안전성과 목표를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "vascular-surgery.arterial.lower-limb-ischemia.b.617d836b99dc",
+      "type": "paragraph",
+      "markdown": "재혈관화는 혈관내치료와 우회수술 등 여러 접근이 있으며 해부학과 환자의 전신 위험, 이용 가능한 혈관 및 기대되는 기능적 이득을 고려한다. 치료 뒤에는 개통 상태만 아니라 통증과 보행, 조직 회복과 재발, 약물 및 상처 관리가 이어져야 한다. 사지 보존이라는 목표는 혈관 영상의 성공과 환자의 실제 기능을 함께 평가하는 장기적인 결과이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/vascular-surgery/chapters/arterial/sections/vascular-surgery.arterial.lower-limb-ischemia.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.vascular-surgery.arterial.lower-limb-ischemia.001"
+  ],
+  "keyFacts": [
+    "압력이 높게 보여 허혈을 가릴 수 있어 다른 검사와 통합한다."
+  ]
+}

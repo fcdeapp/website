@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "gi-surgery",
+  "title": {
+    "ko": "위장관외과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "gi-surgery.chapter.obstruction",
+      "path": "domains/06-surgery/subjects/gi-surgery/chapters/obstruction/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "gi-surgery.plan.001",
+    "gi-surgery.plan.002",
+    "gi-surgery.plan.003",
+    "gi-surgery.plan.004",
+    "gi-surgery.plan.005",
+    "gi-surgery.plan.006",
+    "gi-surgery.obstruction.mechanical-ileus"
+  ]
+}

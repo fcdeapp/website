@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "anatomy.head-neck.larynx-vocal-folds",
+  "subjectId": "anatomy",
+  "chapterId": "head-neck",
+  "title": {
+    "ko": "후두연골·성대·후두근과 신경지배",
+    "en": "Laryngeal Cartilages, Vocal Folds, Muscles and Innervation"
+  },
+  "learningObjectives": [
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.lo.01",
+      "text": "후두연골과 성문 구조를 구분한다"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.lo.02",
+      "text": "성대 벌림·모음·긴장 조절의 근육을 비교한다"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.lo.03",
+      "text": "위·되돌이후두신경 손상의 기능 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.9d85f699b02e",
+      "type": "heading",
+      "level": 2,
+      "text": "호흡·발성·삼킴의 교차점"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.841f62af8b46",
+      "type": "paragraph",
+      "markdown": "후두(larynx)는 인두와 기관 사이에서 공기 통로를 유지하고 발성 및 삼킴 중 기도 보호에 참여한다. 목뿔뼈와 여러 막·인대 및 바깥근육에 의해 목의 다른 구조와 연결된다. 삼킬 때 후두 전체가 움직이는 현상과 성대 자체의 벌림·모음은 다른 수준의 운동이다. 어느 구조가 어느 방향으로 움직이지 않는지 구분해야 신경·근육과 관절의 문제를 나눌 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.dc60c308ee23",
+      "type": "paragraph",
+      "markdown": "후두덮개가 내려오는 한 동작만으로 기도 보호가 완성되는 것은 아니다. 후두의 상승과 앞쪽 이동, 후두입구와 안뜰주름 및 성대의 닫힘과 인두의 조정이 함께 작용한다. 흡인은 감각 저하, 운동 약화와 협동 장애 등 여러 기전에서 생길 수 있다. 쉰목소리의 유무만으로 삼킴 안전을 모두 평가할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.bbc055ea287a",
+      "type": "heading",
+      "level": 2,
+      "text": "연골의 배열과 관절"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.353807b10de1",
+      "type": "paragraph",
+      "markdown": "방패연골(thyroid cartilage)은 앞쪽 큰 틀을, 반지연골(cricoid cartilage)은 그 아래에서 완전한 고리 모양의 지지를 이룬다. 반지연골은 앞쪽이 낮고 뒤쪽 판이 넓으며 그 위에 양쪽 모뿔연골(arytenoid cartilage)이 놓인다. 후두덮개연골(epiglottic cartilage)과 작은 짝연골들은 입구 및 주름의 구조에 기여한다. 방패연골과 갑상샘은 이름이 비슷해도 다른 조직과 기관이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.head-neck.larynx-vocal-folds.laryngeal-cartilages"
+      ],
+      "conceptRefs": [
+        "FMA55099",
+        "FMA9615",
+        "FMA55130",
+        "FMA52749"
+      ]
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.851e70b32d6c",
+      "type": "paragraph",
+      "markdown": "반지방패관절(cricothyroid joint)과 반지모뿔관절(cricoarytenoid joint)은 성대 길이·장력 및 성문 너비 변화에 관여한다. 모뿔연골의 성대돌기는 성대인대의 뒤쪽 부착, 근육돌기는 여러 근육의 힘 전달과 관계된다. 단순히 모뿔연골이 제자리에서 회전만 하는 것이 아니라 미끄러짐과 상대 위치 변화가 함께 일어난다. 관절 고정도 신경 마비와 비슷한 움직임 제한을 만들 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.d3a7500025f8",
+      "type": "heading",
+      "level": 2,
+      "text": "안뜰주름과 성대"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.23ebd958e8c5",
+      "type": "paragraph",
+      "markdown": "안뜰주름(vestibular fold)은 위쪽, 진성 성대(vocal fold)는 아래쪽에 놓이며 사이에는 후두실이 있다. 성대는 상피와 고유판 및 성대인대·근육 등 복합 구조를 가진다. 성문(glottis)은 성대와 그 사이 틈새의 관계로 정의하며, 성문위·성문아래의 구역은 병변 위치와 전파를 설명하는 데 중요하다. 육안적 주름의 이름과 조직학적 진동층을 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.367f74753837",
+      "type": "paragraph",
+      "markdown": "공기의 흐름에 따라 성대가 진동하는 현상은 매 주기마다 운동신경이 성대를 하나씩 여닫아 만드는 것이 아니다. 공기역학과 조직의 탄성 및 근육이 설정한 자세·긴장이 결합한다. 점막의 유연성과 층간 미끄러짐이 손상되면 육안적으로 큰 결절이 없어도 음성이 달라질 수 있다. 음높이와 음량도 같은 한 변수로 설명되지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.08797e96a9de",
+      "type": "heading",
+      "level": 2,
+      "text": "유일한 주된 벌림근과 모음근"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.ea2b0189da8d",
+      "type": "paragraph",
+      "markdown": "뒤반지모뿔근(posterior cricoarytenoid muscle)은 모뿔연골의 근육돌기에 작용하여 성대를 벌리는 주된 속근육이다. 호흡 때 성문을 여는 데 중요하며 양측의 벌림 기능이 제한되면 목소리 변화가 심하지 않아도 기도 문제를 만들 수 있다. 성대 벌림이 안 되는 이유는 신경 손상 외에도 관절의 고정이나 기계적 병변일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.eca3dd9baaac",
+      "type": "paragraph",
+      "markdown": "가쪽반지모뿔근(lateral cricoarytenoid)과 모뿔사이근(interarytenoid)은 성대 모음과 뒤쪽 닫힘 등에 기여한다. 방패모뿔근(thyroarytenoid)과 그 일부인 성대근(vocalis)은 성대의 길이·두께 및 미세 장력 조절에 참여한다. 여러 근육이 동시에 작용하므로 한 근육의 수축 방향을 전체 음성의 단일 효과와 그대로 일치시키지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.a3c276e5e080",
+      "type": "heading",
+      "level": 2,
+      "text": "반지방패근의 예외"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.0cea001b4448",
+      "type": "paragraph",
+      "markdown": "반지방패근(cricothyroid muscle)은 방패·반지연골의 관계를 바꾸어 성대를 길게 하고 장력을 높이는 데 기여한다. 다른 많은 후두 속근육과 달리 위후두신경(superior laryngeal nerve)의 바깥가지가 운동 지배한다. 바깥가지 손상은 고음이나 음성 투사의 어려움과 연결될 수 있어 일상 대화의 목소리가 비교적 유지된다고 모든 후두 운동 기능이 정상은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.b834e6cb7a70",
+      "type": "paragraph",
+      "markdown": "위후두신경의 속가지는 주로 성문 위쪽의 감각과 관련되고 방패목뿔막 부근에서 위후두혈관과 함께 관계한다. 바깥가지와 속가지는 감각·운동의 역할과 통로가 다르다. 위후두신경이라는 이름 하나로 모든 가지가 성대를 직접 움직인다고 설명하지 않는다. 감각이 저하되면 기도 보호 반응에도 영향을 줄 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.aeb35500aab5",
+      "type": "heading",
+      "level": 2,
+      "text": "되돌이후두신경의 좌우 주행"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.b93f7cef6096",
+      "type": "paragraph",
+      "markdown": "되돌이후두신경(recurrent laryngeal nerve, RLN)은 미주신경 가지로 오른쪽은 빗장밑동맥 부근을, 왼쪽은 대동맥활 부근을 돌아 올라오는 전형적 차이를 가진다. 이후 기관과 식도 사이 고랑 부근 및 갑상샘 뒤쪽과 관계하며 후두로 들어간다. 왼쪽의 가슴안 주행이 더 길어 목 밖의 종격동 병변도 성대 기능에 영향을 줄 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.747d04e88d8b",
+      "type": "paragraph",
+      "markdown": "RLN은 반지방패근을 제외한 많은 후두 속근육의 운동과 성문 아래 감각에 중요하다. 후두 밖에서의 분지와 동맥과의 관계에는 변이가 있으며 비되돌이 신경 형태도 가능하다. 신경 한 줄이 모든 사람에서 같은 위치로 들어온다는 가정은 수술 해부에 충분하지 않다. 큰 혈관의 발생·배열 변이가 신경의 경로와 연결될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.582b0ff0094b",
+      "type": "heading",
+      "level": 2,
+      "text": "혈액 공급·림프와 임상 해석"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.37f755abbba4",
+      "type": "paragraph",
+      "markdown": "위·아래후두동맥은 각각 위갑상샘·아래갑상샘 계통 등과 연결되어 공급하고 정맥은 주변 갑상샘·목정맥 계통으로 회수된다. 성문위와 성문아래 구역의 림프 배액은 진성 성대 자유모서리 부위와 차이가 있다. 후두 종양의 위치를 말할 때 성문위·성문·성문아래를 구분하는 것은 음성뿐 아니라 림프절 평가와도 관계된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.head-neck.larynx-vocal-folds.b.11244238308d",
+      "type": "paragraph",
+      "markdown": "한쪽 성대 움직임 저하에서는 소리의 기식성, 닫힘의 틈과 삼킴 기능 등이 달라질 수 있고, 양측 병변에서는 성대가 남은 위치에 따라 기도 위험이 달라진다. 쉰목소리만으로 RLN 손상을 확정하거나 양측 병변은 언제나 무성이라고 정리하지 않는다. 실제 후두 관찰과 신경·관절·점막 및 기계적 원인의 평가를 함께 수행한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/anatomy/chapters/head-neck/sections/anatomy.head-neck.larynx-vocal-folds.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.anatomy.head-neck.larynx-vocal-folds.001"
+  ],
+  "keyFacts": [
+    "뒤반지모뿔근이 주된 성대 벌림근이다."
+  ],
+  "relatedLessons": [
+    "anatomy.head-neck.skull-base-foramina",
+    "anatomy.head-neck.neck-fascia-triangles",
+    "anatomy.head-neck.thyroid-parathyroid-relations",
+    "anatomy.head-neck.oral-tongue-salivary",
+    "anatomy.head-neck.pharynx-soft-palate",
+    "anatomy.head-neck.orbit-extraocular"
+  ]
+}

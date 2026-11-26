@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "04-immunity-infection",
+  "title": {
+    "ko": "면역학·미생물학·기생충학"
+  },
+  "subjectIds": [
+    "immunology",
+    "bacteriology",
+    "virology",
+    "mycology",
+    "parasitology"
+  ],
+  "subjects": [
+    {
+      "id": "immunology",
+      "path": "domains/04-immunity-infection/subjects/immunology/manifest.json"
+    },
+    {
+      "id": "bacteriology",
+      "path": "domains/04-immunity-infection/subjects/bacteriology/manifest.json"
+    },
+    {
+      "id": "virology",
+      "path": "domains/04-immunity-infection/subjects/virology/manifest.json"
+    },
+    {
+      "id": "mycology",
+      "path": "domains/04-immunity-infection/subjects/mycology/manifest.json"
+    },
+    {
+      "id": "parasitology",
+      "path": "domains/04-immunity-infection/subjects/parasitology/manifest.json"
+    }
+  ],
+  "targetPages": 700,
+  "charactersPerPage": 1500,
+  "targetBodyCharacters": 1050000,
+  "minimumProseFractionBeforeNextDomain": 0.1,
+  "minimumBodyCharactersBeforeNextDomain": 105000,
+  "progressPath": "domains/04-immunity-infection/progress.json",
+  "readerPath": "domains/04-immunity-infection/TEXTBOOK.md",
+  "evidencePath": "domains/04-immunity-infection/references/lesson-evidence.json",
+  "bodyLoading": "section_json",
+  "sharedPackage": "medical-shared.zip",
+  "curriculumPath": "domains/04-immunity-infection/curriculum.json",
+  "coveragePath": "domains/04-immunity-infection/coverage.json",
+  "questionIndex": "domains/04-immunity-infection/questions/index.json",
+  "sceneIndex": "domains/04-immunity-infection/scenes/index.json",
+  "diagramIndex": "domains/04-immunity-infection/diagrams/index.json",
+  "referenceCatalog": "domains/04-immunity-infection/references/references.json",
+  "crossDomainLessonRefs": [
+    "systemic-pharmacology.antimicrobials.beta-lactams"
+  ],
+  "packageFile": "04-immunity-infection.zip",
+  "requiresOriginalBodyParts3D": true,
+  "installRoot": "public/medicine",
+  "relatedLessonResolution": "resolve by stable ID; request another domain when not installed"
+}

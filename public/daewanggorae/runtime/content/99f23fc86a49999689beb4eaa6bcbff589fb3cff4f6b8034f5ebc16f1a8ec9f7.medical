@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "anatomy.lower-limb.knee-popliteal",
+  "subjectId": "anatomy",
+  "chapterId": "lower-limb",
+  "title": {
+    "ko": "무릎관절·반달연골·십자인대와 오금",
+    "en": "Knee Joint, Menisci, Cruciate Ligaments and Popliteal Fossa"
+  },
+  "learningObjectives": [
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.lo.01",
+      "text": "관절면·반달연골·인대의 안정화 역할을 비교한다"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.lo.02",
+      "text": "움직이는 뼈를 기준으로 십자인대 기능을 설명한다"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.lo.03",
+      "text": "오금의 층과 신경혈관 관계를 손상 양상에 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.7829781be7c8",
+      "type": "heading",
+      "level": 2,
+      "text": "하중 지지와 이동을 함께 하는 관절"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.2cb59229640d",
+      "type": "paragraph",
+      "markdown": "무릎관절(knee joint)은 넙다리뼈와 정강뼈 사이의 관절 및 넙다리뼈와 무릎뼈 사이의 관절을 포함한다. 주된 운동은 굽힘과 폄이지만 관절면의 모양 때문에 구름·미끄러짐과 축회전이 함께 일어난다. 정강뼈 관절면은 넙다리뼈 관절융기의 곡면에 비해 평평하므로 뼈의 맞물림만으로 충분한 안정성을 얻지 못한다. 반달연골, 관절주머니와 인대 및 근육이 서로 다른 부하를 나누어 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.lower-limb.knee-popliteal.knee-bones"
+      ],
+      "conceptRefs": [
+        "FMA24474",
+        "FMA24477",
+        "FMA24486",
+        "FMA24480"
+      ]
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.da82caea1f80",
+      "type": "paragraph",
+      "markdown": "무릎뼈(patella)는 넙다리네갈래근 힘줄 안에 있는 종자뼈이며 뒤쪽 관절면이 넙다리뼈와 만난다. 폄 기전은 근육에서 힘줄, 무릎뼈와 무릎인대를 거쳐 정강뼈거친면으로 이어진다. 무릎뼈는 관절 앞을 보호하는 데 더해 힘줄의 작용선과 지렛팔에 영향을 준다. 폄을 하지 못하는 환자에서 근육 약화와 신경 손상뿐 아니라 힘줄·무릎뼈·인대의 연속성도 살피는 이유이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.c1cbaea119bf",
+      "type": "heading",
+      "level": 2,
+      "text": "관절주머니와 윤활막의 경계"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.982b0258f3d8",
+      "type": "paragraph",
+      "markdown": "관절주머니는 뼈와 연부조직을 연결하고 윤활막은 관절 안쪽에서 비관절면을 덮는다. 관절연골 표면 자체가 일반적인 윤활막으로 덮이는 것은 아니다. 십자인대는 섬유성 관절주머니 안에 있지만 윤활막의 배치상 관절액 공간과 구별되는 관계를 가진다. 따라서 관절주머니 안이라는 표현과 윤활막안이라는 표현은 같은 뜻이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.058fea0d5d0e",
+      "type": "paragraph",
+      "markdown": "무릎 위쪽의 윤활막 오목과 주변 윤활주머니는 액체가 고이는 위치를 설명한다. 무릎뼈앞주머니나 거위발주머니의 염증은 관절강 삼출과 다른 층의 문제일 수 있다. 부은 부위가 앞쪽인지, 관절선인지, 무릎 뒤쪽인지 구분하면 가능한 구조를 좁힐 수 있다. 부종의 위치만으로 감염·출혈·염증의 원인을 확정할 수는 없지만 검사할 층을 정하는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.3a2a7eea8eec",
+      "type": "heading",
+      "level": 2,
+      "text": "반달연골이 힘을 나누는 방식"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.482da06b21c6",
+      "type": "paragraph",
+      "markdown": "안쪽·가쪽반달연골(medial and lateral menisci)은 정강뼈 위의 섬유연골 구조로 접촉면의 적합성과 하중 분산 및 안정화에 기여한다. 단면은 쐐기 모양이며 바깥쪽이 두껍다. 둘레 방향 콜라겐의 연결은 압박을 원주 방향 장력으로 바꾸는 데 중요하다. 반달연골의 뿌리나 방사 방향 섬유 연결이 손상되면 일부 조직이 남아 있어도 하중 분산 기능이 크게 저하될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.09a7a0557800",
+      "type": "paragraph",
+      "markdown": "안쪽반달연골은 주머니와 안쪽곁인대의 깊은 부분에 관계되어 상대적으로 덜 움직이는 반면 가쪽반달연골은 오금근 힘줄의 관계 등으로 다른 가동성을 가진다. 가쪽곁인대가 가쪽반달연골과 안쪽에서처럼 직접 붙는다고 외우면 안 된다. 반달연골의 이동은 무릎 굽힘·폄과 회전에 맞추어 관절면 사이 끼임을 줄이는 데 기여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.7fa43159aec3",
+      "type": "paragraph",
+      "markdown": "주변부는 혈관 공급을 더 받지만 중심부는 상대적으로 무혈관성이고 윤활액을 통한 물질 교환의 비중이 크다. 파열의 위치·형태와 조직 상태가 치유 가능성에 영향을 주는 배경이다. 나이가 들며 생긴 퇴행성 파열과 급성 외상성 파열은 같은 영상상 선이 보여도 임상적 의미가 다를 수 있다. 반달연골 변화가 보인다는 사실만으로 현재 통증의 유일한 원인이라고 결론내리지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.1f628d5321c3",
+      "type": "heading",
+      "level": 2,
+      "text": "앞십자인대와 뒤십자인대"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.d9b29891c9d6",
+      "type": "paragraph",
+      "markdown": "앞십자인대(anterior cruciate ligament, ACL)는 정강뼈의 앞쪽 관절융기사이 영역에서 넙다리뼈 가쪽관절융기의 안쪽면으로 이어진다. 넙다리뼈에 대한 정강뼈의 과도한 앞쪽 이동을 제한하고 회전 안정성에 참여한다. 뒤십자인대(posterior cruciate ligament, PCL)는 정강뼈 뒤쪽 관절융기사이 영역에서 넙다리뼈 안쪽관절융기의 가쪽면으로 이어져 정강뼈의 뒤쪽 이동을 제한하는 역할이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.58b94cd14c24",
+      "type": "paragraph",
+      "markdown": "기능을 설명할 때 어느 뼈가 움직이는지 명시해야 한다. 발을 바닥에 고정한 닫힌사슬 운동에서는 정강뼈가 고정되고 넙다리뼈가 움직이므로 상대 이동의 표현이 바뀐다. ACL이 정강뼈 앞 이동을 막는다는 설명과 넙다리뼈 뒤 이동에 저항한다는 설명은 같은 상대 관계를 서로 다른 기준으로 기술한 것일 수 있다. 관절 각도에 따라 각 인대 섬유다발의 긴장과 기여도 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.2eb02ad07d30",
+      "type": "paragraph",
+      "markdown": "무릎을 끝까지 펼 때에는 관절면의 비대칭과 인대 긴장에 따른 작은 축회전이 안정화에 기여한다. 이를 나사잠김(screw-home) 기전으로 설명하며, 굽힘을 시작할 때 오금근(popliteus)이 잠김을 푸는 데 참여한다. 열린사슬에서의 정강뼈 움직임과 체중을 받는 상태의 넙다리뼈 움직임을 구분한다. 무릎은 단순한 문 경첩과 달리 운동 구간에 따라 안정화 방식이 변한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.da81a3a2bd7e",
+      "type": "heading",
+      "level": 2,
+      "text": "곁인대와 뒤가쪽 안정화"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.642cf02064d8",
+      "type": "paragraph",
+      "markdown": "정강곁인대 또는 안쪽곁인대(tibial collateral ligament, MCL)는 무릎 안쪽의 벌어짐에 저항한다. 종아리곁인대 또는 가쪽곁인대(fibular collateral ligament, LCL)는 넙다리뼈에서 종아리뼈머리로 이어져 가쪽의 비정상적인 벌어짐에 저항한다. 가쪽에는 오금근 힘줄과 여러 인대·주머니 구조가 함께 뒤가쪽 안정화에 참여한다. LCL 한 줄만 정상이라고 뒤가쪽 전체의 기능이 보장되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.4a564742d985",
+      "type": "paragraph",
+      "markdown": "안쪽과 가쪽의 벌어짐 검사는 특정 인대에 부하를 주지만 관절 각도와 십자인대 및 주머니 손상이 결과에 영향을 준다. 통증에 의한 근육 방어는 불안정성을 가리거나 검사를 어렵게 만들 수 있다. 한 번의 검사에서 양성 또는 음성이라는 말만 전달하기보다 검사 자세, 통증과 느슨함 및 끝느낌을 구분하여 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.cdfc55c6248e",
+      "type": "heading",
+      "level": 2,
+      "text": "오금의 경계와 깊이"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.7f0b3105b3af",
+      "type": "paragraph",
+      "markdown": "오금(popliteal fossa)은 무릎 뒤의 마름모꼴 영역으로 위가쪽에는 넙다리두갈래근, 위안쪽에는 반막근과 반힘줄근, 아래쪽에는 장딴지근 두 갈래 등이 경계를 이룬다. 바닥은 넙다리뼈 뒤면과 관절주머니 및 오금근 부위에 관계되고 덮개는 피부·피하조직과 오금근막이다. 뒤쪽으로 접근할 때 얕은층과 깊은층의 내용물을 나누어 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.44455cbde43f",
+      "type": "paragraph",
+      "markdown": "중앙 부근에서 정강신경, 오금정맥, 오금동맥은 대체로 얕은쪽에서 깊은쪽의 중요한 관계를 이룬다. 동맥은 가장 깊어 관절주머니와 가까우며 신경과 혈관의 안가쪽 관계는 높이에 따라 달라진다. 한 단면의 순서를 오금 전체에 고정하지 않는다. 온종아리신경은 가쪽 경계를 따라 내려가 종아리뼈목을 감는 경로가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.6cf8d2045579",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관·신경과 손상의 연결"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.661f58100ea0",
+      "type": "paragraph",
+      "markdown": "넙다리동맥은 모음근구멍을 지난 뒤 오금동맥으로 이어지고 무릎 주위 가지를 낸 다음 종아리의 동맥 계통으로 나뉜다. 무릎 주위 연결망이 있어도 탈구나 심한 전위에서 동맥이 손상될 위험이 없어지는 것은 아니다. 혈관의 늘어남과 내막 손상은 뼈의 정렬이 돌아온 뒤에도 문제가 될 수 있어 먼쪽 관류와 신경 상태를 전후로 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.lower-limb.knee-popliteal.b.ee60b19ade10",
+      "type": "paragraph",
+      "markdown": "종아리뼈목의 온종아리신경 손상은 발등굽힘·가쪽번짐의 약화와 발등 감각 변화 등에 연결될 수 있다. 정강신경은 뒤구획과 발바닥 기능에 관계한다. 오금 부종은 관절과 연결된 낭성 팽창, 혈관 병변, 정맥질환 또는 다른 종괴 등 여러 원인에서 생긴다. 뒤무릎 통증을 모두 반달연골이나 단순한 근육 문제로 좁히지 않고 층과 내용물을 따라 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/anatomy/chapters/lower-limb/sections/anatomy.lower-limb.knee-popliteal.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.anatomy.lower-limb.knee-popliteal.001"
+  ],
+  "keyFacts": [
+    "십자인대는 관절주머니 안에 있으나 윤활막 밖에 놓인다."
+  ],
+  "relatedLessons": [
+    "anatomy.lower-limb.leg-ankle",
+    "anatomy.lower-limb.foot-arches"
+  ]
+}

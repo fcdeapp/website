@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology",
+  "title": {
+    "ko": "호흡기내과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "pulmonology.chapter.airways",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/airways/chapter.json"
+    },
+    {
+      "id": "pulmonology.chapter.obstruction",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/obstruction/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "pulmonology.plan.001",
+    "pulmonology.plan.002",
+    "pulmonology.plan.003",
+    "pulmonology.plan.004",
+    "pulmonology.plan.005",
+    "pulmonology.plan.006",
+    "pulmonology.airways.asthma-mechanisms",
+    "pulmonology.obstruction.copd"
+  ]
+}

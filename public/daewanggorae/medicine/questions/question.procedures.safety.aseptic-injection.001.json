@@ -1,0 +1,23 @@
+{
+  "id": "question.procedures.safety.aseptic-injection.001",
+  "kind": "original_concept_question",
+  "lessonId": "procedures.safety.aseptic-injection",
+  "prompt": "사용한 주사기는 바늘만 교체하면 다른 환자에게 쓸 수 있는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "그렇다. 보이는 혈액이 없으면 안전하다."
+    },
+    {
+      "id": "B",
+      "text": "아니다. 바늘과 주사기 모두 일회 사용 원칙을 따른다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "눈에 보이지 않는 오염 가능성이 있어 바늘 교체만으로 안전해지지 않는다.",
+  "optionRationales": {
+    "A": "눈에 보이지 않는 오염 가능성이 있어 바늘 교체만으로 안전해지지 않는다.",
+    "B": "눈에 보이지 않는 오염 가능성이 있어 바늘 교체만으로 안전해지지 않는다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

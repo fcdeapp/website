@@ -1,0 +1,1694 @@
+{
+  "schemaVersion": "1.0.0",
+  "subjects": [
+    {
+      "id": "internal-medicine",
+      "title": {
+        "ko": "내과 총론 및 임상진단학"
+      },
+      "requirementNumber": 22,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "환자평가와 문제목록",
+        "전신증상",
+        "진단검사의 선택",
+        "다질환과 약물검토",
+        "진단불확실성",
+        "입원환자 관리"
+      ],
+      "path": "domains/05-internal-medicine/subjects/internal-medicine/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "cardiology",
+      "title": {
+        "ko": "순환기내과"
+      },
+      "requirementNumber": 23,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "흉통과 관상동맥질환",
+        "심부전",
+        "부정맥",
+        "판막질환",
+        "심근과 심낭질환",
+        "고혈압과 대동맥질환"
+      ],
+      "path": "domains/05-internal-medicine/subjects/cardiology/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "pulmonology",
+      "title": {
+        "ko": "호흡기내과"
+      },
+      "requirementNumber": 24,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "호흡곤란과 저산소혈증",
+        "기도질환",
+        "폐렴과 결핵",
+        "간질성 폐질환",
+        "폐혈관과 흉막질환",
+        "폐종양과 호흡부전"
+      ],
+      "path": "domains/05-internal-medicine/subjects/pulmonology/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "gastroenterology",
+      "title": {
+        "ko": "소화기내과"
+      },
+      "requirementNumber": 25,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "삼킴곤란과 식도질환",
+        "위십이지장질환",
+        "장염과 염증성 장질환",
+        "위장관출혈",
+        "흡수장애와 설사",
+        "기능성 위장관질환"
+      ],
+      "path": "domains/05-internal-medicine/subjects/gastroenterology/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "hepatology",
+      "title": {
+        "ko": "간담췌 질환"
+      },
+      "requirementNumber": 26,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "간검사 해석",
+        "급성 및 만성 간염",
+        "간경변과 문맥고혈압",
+        "간종양",
+        "담도질환",
+        "이자질환"
+      ],
+      "path": "domains/05-internal-medicine/subjects/hepatology/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "nephrology",
+      "title": {
+        "ko": "신장내과"
+      },
+      "requirementNumber": 27,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "급성신손상",
+        "만성콩팥병",
+        "사구체질환",
+        "세뇨관간질질환",
+        "신혈관질환",
+        "투석과 이식"
+      ],
+      "path": "domains/05-internal-medicine/subjects/nephrology/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "electrolytes",
+      "title": {
+        "ko": "체액·전해질 및 산염기 평형"
+      },
+      "requirementNumber": 28,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "체액구획과 삼투",
+        "저나트륨과 고나트륨",
+        "칼륨장애",
+        "칼슘 마그네슘 인",
+        "산염기 분석",
+        "수액의 원리"
+      ],
+      "path": "domains/05-internal-medicine/subjects/electrolytes/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "endocrinology",
+      "title": {
+        "ko": "내분비내과"
+      },
+      "requirementNumber": 29,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "뇌하수체",
+        "갑상샘",
+        "부신",
+        "당뇨병",
+        "지질과 비만",
+        "뼈와 무기질 대사"
+      ],
+      "path": "domains/05-internal-medicine/subjects/endocrinology/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "hematology",
+      "title": {
+        "ko": "혈액내과"
+      },
+      "requirementNumber": 30,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "빈혈과 망상적혈구",
+        "용혈",
+        "백혈병과 골수질환",
+        "림프종과 형질세포",
+        "출혈과 응고",
+        "혈전"
+      ],
+      "path": "domains/05-internal-medicine/subjects/hematology/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "oncology",
+      "title": {
+        "ko": "종양내과"
+      },
+      "requirementNumber": 31,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "암의 생물학",
+        "병기와 치료반응",
+        "세포독성 항암제",
+        "표적과 면역치료",
+        "종양응급",
+        "지지치료와 생존자 관리"
+      ],
+      "path": "domains/05-internal-medicine/subjects/oncology/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "infectious-diseases",
+      "title": {
+        "ko": "감염내과"
+      },
+      "requirementNumber": 32,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "발열과 배양",
+        "항균제 선택 원리",
+        "패혈증",
+        "장기별 감염",
+        "면역저하 숙주",
+        "해외유입과 신종감염"
+      ],
+      "path": "domains/05-internal-medicine/subjects/infectious-diseases/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "rheumatology",
+      "title": {
+        "ko": "류마티스내과"
+      },
+      "requirementNumber": 33,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "관절염 접근",
+        "류마티스관절염",
+        "척추관절염",
+        "전신홍반루푸스",
+        "혈관염",
+        "결정관절염과 자가염증"
+      ],
+      "path": "domains/05-internal-medicine/subjects/rheumatology/manifest.json",
+      "domainId": "05-internal-medicine"
+    },
+    {
+      "id": "allergy",
+      "title": {
+        "ko": "알레르기내과"
+      },
+      "requirementNumber": 34,
+      "area": "B",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "알레르기 검사",
+        "아나필락시스",
+        "알레르기비염",
+        "천식의 면역기전",
+        "약물과 음식 알레르기",
+        "면역치료"
+      ],
+      "path": "domains/05-internal-medicine/subjects/allergy/manifest.json",
+      "domainId": "05-internal-medicine"
+    }
+  ],
+  "units": [
+    {
+      "id": "internal-medicine.plan.001",
+      "subjectId": "internal-medicine",
+      "title": "환자평가와 문제목록",
+      "status": "unwritten",
+      "objectiveIds": [
+        "internal-medicine.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "internal-medicine.plan.002",
+      "subjectId": "internal-medicine",
+      "title": "전신증상",
+      "status": "unwritten",
+      "objectiveIds": [
+        "internal-medicine.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "internal-medicine.plan.003",
+      "subjectId": "internal-medicine",
+      "title": "진단검사의 선택",
+      "status": "unwritten",
+      "objectiveIds": [
+        "internal-medicine.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "internal-medicine.plan.004",
+      "subjectId": "internal-medicine",
+      "title": "다질환과 약물검토",
+      "status": "unwritten",
+      "objectiveIds": [
+        "internal-medicine.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "internal-medicine.plan.005",
+      "subjectId": "internal-medicine",
+      "title": "진단불확실성",
+      "status": "unwritten",
+      "objectiveIds": [
+        "internal-medicine.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "internal-medicine.plan.006",
+      "subjectId": "internal-medicine",
+      "title": "입원환자 관리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "internal-medicine.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "cardiology.plan.001",
+      "subjectId": "cardiology",
+      "title": "흉통과 관상동맥질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cardiology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "cardiology.heart-failure.syndrome"
+      ]
+    },
+    {
+      "id": "cardiology.plan.002",
+      "subjectId": "cardiology",
+      "title": "심부전",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cardiology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "cardiology.heart-failure.syndrome"
+      ]
+    },
+    {
+      "id": "cardiology.plan.003",
+      "subjectId": "cardiology",
+      "title": "부정맥",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cardiology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "cardiology.heart-failure.syndrome"
+      ]
+    },
+    {
+      "id": "cardiology.plan.004",
+      "subjectId": "cardiology",
+      "title": "판막질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cardiology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "cardiology.heart-failure.syndrome"
+      ]
+    },
+    {
+      "id": "cardiology.plan.005",
+      "subjectId": "cardiology",
+      "title": "심근과 심낭질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cardiology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "cardiology.heart-failure.syndrome"
+      ]
+    },
+    {
+      "id": "cardiology.plan.006",
+      "subjectId": "cardiology",
+      "title": "고혈압과 대동맥질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cardiology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "cardiology.heart-failure.syndrome"
+      ]
+    },
+    {
+      "id": "pulmonology.plan.001",
+      "subjectId": "pulmonology",
+      "title": "호흡곤란과 저산소혈증",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pulmonology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pulmonology.airways.asthma-mechanisms"
+      ]
+    },
+    {
+      "id": "pulmonology.plan.002",
+      "subjectId": "pulmonology",
+      "title": "기도질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pulmonology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pulmonology.airways.asthma-mechanisms"
+      ]
+    },
+    {
+      "id": "pulmonology.plan.003",
+      "subjectId": "pulmonology",
+      "title": "폐렴과 결핵",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pulmonology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pulmonology.airways.asthma-mechanisms"
+      ]
+    },
+    {
+      "id": "pulmonology.plan.004",
+      "subjectId": "pulmonology",
+      "title": "간질성 폐질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pulmonology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pulmonology.airways.asthma-mechanisms"
+      ]
+    },
+    {
+      "id": "pulmonology.plan.005",
+      "subjectId": "pulmonology",
+      "title": "폐혈관과 흉막질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pulmonology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pulmonology.airways.asthma-mechanisms"
+      ]
+    },
+    {
+      "id": "pulmonology.plan.006",
+      "subjectId": "pulmonology",
+      "title": "폐종양과 호흡부전",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pulmonology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pulmonology.airways.asthma-mechanisms"
+      ]
+    },
+    {
+      "id": "gastroenterology.plan.001",
+      "subjectId": "gastroenterology",
+      "title": "삼킴곤란과 식도질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gastroenterology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gastroenterology.plan.002",
+      "subjectId": "gastroenterology",
+      "title": "위십이지장질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gastroenterology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gastroenterology.plan.003",
+      "subjectId": "gastroenterology",
+      "title": "장염과 염증성 장질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gastroenterology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gastroenterology.plan.004",
+      "subjectId": "gastroenterology",
+      "title": "위장관출혈",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gastroenterology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gastroenterology.plan.005",
+      "subjectId": "gastroenterology",
+      "title": "흡수장애와 설사",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gastroenterology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gastroenterology.plan.006",
+      "subjectId": "gastroenterology",
+      "title": "기능성 위장관질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gastroenterology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "hepatology.plan.001",
+      "subjectId": "hepatology",
+      "title": "간검사 해석",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hepatology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hepatology.cirrhosis.portal-hypertension"
+      ]
+    },
+    {
+      "id": "hepatology.plan.002",
+      "subjectId": "hepatology",
+      "title": "급성 및 만성 간염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hepatology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hepatology.cirrhosis.portal-hypertension"
+      ]
+    },
+    {
+      "id": "hepatology.plan.003",
+      "subjectId": "hepatology",
+      "title": "간경변과 문맥고혈압",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hepatology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hepatology.cirrhosis.portal-hypertension"
+      ]
+    },
+    {
+      "id": "hepatology.plan.004",
+      "subjectId": "hepatology",
+      "title": "간종양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hepatology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hepatology.cirrhosis.portal-hypertension"
+      ]
+    },
+    {
+      "id": "hepatology.plan.005",
+      "subjectId": "hepatology",
+      "title": "담도질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hepatology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hepatology.cirrhosis.portal-hypertension"
+      ]
+    },
+    {
+      "id": "hepatology.plan.006",
+      "subjectId": "hepatology",
+      "title": "이자질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hepatology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hepatology.cirrhosis.portal-hypertension"
+      ]
+    },
+    {
+      "id": "nephrology.plan.001",
+      "subjectId": "nephrology",
+      "title": "급성신손상",
+      "status": "unwritten",
+      "objectiveIds": [
+        "nephrology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "nephrology.ckd.evaluation"
+      ]
+    },
+    {
+      "id": "nephrology.plan.002",
+      "subjectId": "nephrology",
+      "title": "만성콩팥병",
+      "status": "unwritten",
+      "objectiveIds": [
+        "nephrology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "nephrology.ckd.evaluation"
+      ]
+    },
+    {
+      "id": "nephrology.plan.003",
+      "subjectId": "nephrology",
+      "title": "사구체질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "nephrology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "nephrology.ckd.evaluation"
+      ]
+    },
+    {
+      "id": "nephrology.plan.004",
+      "subjectId": "nephrology",
+      "title": "세뇨관간질질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "nephrology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "nephrology.ckd.evaluation"
+      ]
+    },
+    {
+      "id": "nephrology.plan.005",
+      "subjectId": "nephrology",
+      "title": "신혈관질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "nephrology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "nephrology.ckd.evaluation"
+      ]
+    },
+    {
+      "id": "nephrology.plan.006",
+      "subjectId": "nephrology",
+      "title": "투석과 이식",
+      "status": "unwritten",
+      "objectiveIds": [
+        "nephrology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "nephrology.ckd.evaluation"
+      ]
+    },
+    {
+      "id": "electrolytes.plan.001",
+      "subjectId": "electrolytes",
+      "title": "체액구획과 삼투",
+      "status": "unwritten",
+      "objectiveIds": [
+        "electrolytes.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "electrolytes.acid-base.interpretation"
+      ]
+    },
+    {
+      "id": "electrolytes.plan.002",
+      "subjectId": "electrolytes",
+      "title": "저나트륨과 고나트륨",
+      "status": "unwritten",
+      "objectiveIds": [
+        "electrolytes.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "electrolytes.acid-base.interpretation"
+      ]
+    },
+    {
+      "id": "electrolytes.plan.003",
+      "subjectId": "electrolytes",
+      "title": "칼륨장애",
+      "status": "unwritten",
+      "objectiveIds": [
+        "electrolytes.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "electrolytes.acid-base.interpretation"
+      ]
+    },
+    {
+      "id": "electrolytes.plan.004",
+      "subjectId": "electrolytes",
+      "title": "칼슘 마그네슘 인",
+      "status": "unwritten",
+      "objectiveIds": [
+        "electrolytes.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "electrolytes.acid-base.interpretation"
+      ]
+    },
+    {
+      "id": "electrolytes.plan.005",
+      "subjectId": "electrolytes",
+      "title": "산염기 분석",
+      "status": "unwritten",
+      "objectiveIds": [
+        "electrolytes.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "electrolytes.acid-base.interpretation"
+      ]
+    },
+    {
+      "id": "electrolytes.plan.006",
+      "subjectId": "electrolytes",
+      "title": "수액의 원리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "electrolytes.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "electrolytes.acid-base.interpretation"
+      ]
+    },
+    {
+      "id": "endocrinology.plan.001",
+      "subjectId": "endocrinology",
+      "title": "뇌하수체",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrinology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "endocrinology.diabetes.foundations",
+        "endocrinology.pituitary.feedback",
+        "endocrinology.thyroid.hormone-synthesis"
+      ]
+    },
+    {
+      "id": "endocrinology.plan.002",
+      "subjectId": "endocrinology",
+      "title": "갑상샘",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrinology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "endocrinology.diabetes.foundations",
+        "endocrinology.pituitary.feedback",
+        "endocrinology.thyroid.hormone-synthesis"
+      ]
+    },
+    {
+      "id": "endocrinology.plan.003",
+      "subjectId": "endocrinology",
+      "title": "부신",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrinology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "endocrinology.diabetes.foundations",
+        "endocrinology.pituitary.feedback",
+        "endocrinology.thyroid.hormone-synthesis"
+      ]
+    },
+    {
+      "id": "endocrinology.plan.004",
+      "subjectId": "endocrinology",
+      "title": "당뇨병",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrinology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "endocrinology.diabetes.foundations",
+        "endocrinology.pituitary.feedback",
+        "endocrinology.thyroid.hormone-synthesis"
+      ]
+    },
+    {
+      "id": "endocrinology.plan.005",
+      "subjectId": "endocrinology",
+      "title": "지질과 비만",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrinology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "endocrinology.diabetes.foundations",
+        "endocrinology.pituitary.feedback",
+        "endocrinology.thyroid.hormone-synthesis"
+      ]
+    },
+    {
+      "id": "endocrinology.plan.006",
+      "subjectId": "endocrinology",
+      "title": "뼈와 무기질 대사",
+      "status": "unwritten",
+      "objectiveIds": [
+        "endocrinology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "endocrinology.diabetes.foundations",
+        "endocrinology.pituitary.feedback",
+        "endocrinology.thyroid.hormone-synthesis"
+      ]
+    },
+    {
+      "id": "hematology.plan.001",
+      "subjectId": "hematology",
+      "title": "빈혈과 망상적혈구",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hematology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hematology.anemia.reticulocytes",
+        "hematology.hemostasis.platelet-coagulation"
+      ]
+    },
+    {
+      "id": "hematology.plan.002",
+      "subjectId": "hematology",
+      "title": "용혈",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hematology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hematology.anemia.reticulocytes",
+        "hematology.hemostasis.platelet-coagulation"
+      ]
+    },
+    {
+      "id": "hematology.plan.003",
+      "subjectId": "hematology",
+      "title": "백혈병과 골수질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hematology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hematology.anemia.reticulocytes",
+        "hematology.hemostasis.platelet-coagulation"
+      ]
+    },
+    {
+      "id": "hematology.plan.004",
+      "subjectId": "hematology",
+      "title": "림프종과 형질세포",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hematology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hematology.anemia.reticulocytes",
+        "hematology.hemostasis.platelet-coagulation"
+      ]
+    },
+    {
+      "id": "hematology.plan.005",
+      "subjectId": "hematology",
+      "title": "출혈과 응고",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hematology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hematology.anemia.reticulocytes",
+        "hematology.hemostasis.platelet-coagulation"
+      ]
+    },
+    {
+      "id": "hematology.plan.006",
+      "subjectId": "hematology",
+      "title": "혈전",
+      "status": "unwritten",
+      "objectiveIds": [
+        "hematology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "hematology.anemia.reticulocytes",
+        "hematology.hemostasis.platelet-coagulation"
+      ]
+    },
+    {
+      "id": "oncology.plan.001",
+      "subjectId": "oncology",
+      "title": "암의 생물학",
+      "status": "unwritten",
+      "objectiveIds": [
+        "oncology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "oncology.plan.002",
+      "subjectId": "oncology",
+      "title": "병기와 치료반응",
+      "status": "unwritten",
+      "objectiveIds": [
+        "oncology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "oncology.plan.003",
+      "subjectId": "oncology",
+      "title": "세포독성 항암제",
+      "status": "unwritten",
+      "objectiveIds": [
+        "oncology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "oncology.plan.004",
+      "subjectId": "oncology",
+      "title": "표적과 면역치료",
+      "status": "unwritten",
+      "objectiveIds": [
+        "oncology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "oncology.plan.005",
+      "subjectId": "oncology",
+      "title": "종양응급",
+      "status": "unwritten",
+      "objectiveIds": [
+        "oncology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "oncology.plan.006",
+      "subjectId": "oncology",
+      "title": "지지치료와 생존자 관리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "oncology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "infectious-diseases.plan.001",
+      "subjectId": "infectious-diseases",
+      "title": "발열과 배양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "infectious-diseases.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "infectious-diseases.antibiotics.stewardship"
+      ]
+    },
+    {
+      "id": "infectious-diseases.plan.002",
+      "subjectId": "infectious-diseases",
+      "title": "항균제 선택 원리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "infectious-diseases.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "infectious-diseases.antibiotics.stewardship"
+      ]
+    },
+    {
+      "id": "infectious-diseases.plan.003",
+      "subjectId": "infectious-diseases",
+      "title": "패혈증",
+      "status": "unwritten",
+      "objectiveIds": [
+        "infectious-diseases.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "infectious-diseases.antibiotics.stewardship"
+      ]
+    },
+    {
+      "id": "infectious-diseases.plan.004",
+      "subjectId": "infectious-diseases",
+      "title": "장기별 감염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "infectious-diseases.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "infectious-diseases.antibiotics.stewardship"
+      ]
+    },
+    {
+      "id": "infectious-diseases.plan.005",
+      "subjectId": "infectious-diseases",
+      "title": "면역저하 숙주",
+      "status": "unwritten",
+      "objectiveIds": [
+        "infectious-diseases.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "infectious-diseases.antibiotics.stewardship"
+      ]
+    },
+    {
+      "id": "infectious-diseases.plan.006",
+      "subjectId": "infectious-diseases",
+      "title": "해외유입과 신종감염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "infectious-diseases.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "infectious-diseases.antibiotics.stewardship"
+      ]
+    },
+    {
+      "id": "rheumatology.plan.001",
+      "subjectId": "rheumatology",
+      "title": "관절염 접근",
+      "status": "unwritten",
+      "objectiveIds": [
+        "rheumatology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "rheumatology.joints.inflammatory-patterns"
+      ]
+    },
+    {
+      "id": "rheumatology.plan.002",
+      "subjectId": "rheumatology",
+      "title": "류마티스관절염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "rheumatology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "rheumatology.joints.inflammatory-patterns"
+      ]
+    },
+    {
+      "id": "rheumatology.plan.003",
+      "subjectId": "rheumatology",
+      "title": "척추관절염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "rheumatology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "rheumatology.joints.inflammatory-patterns"
+      ]
+    },
+    {
+      "id": "rheumatology.plan.004",
+      "subjectId": "rheumatology",
+      "title": "전신홍반루푸스",
+      "status": "unwritten",
+      "objectiveIds": [
+        "rheumatology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "rheumatology.joints.inflammatory-patterns"
+      ]
+    },
+    {
+      "id": "rheumatology.plan.005",
+      "subjectId": "rheumatology",
+      "title": "혈관염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "rheumatology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "rheumatology.joints.inflammatory-patterns"
+      ]
+    },
+    {
+      "id": "rheumatology.plan.006",
+      "subjectId": "rheumatology",
+      "title": "결정관절염과 자가염증",
+      "status": "unwritten",
+      "objectiveIds": [
+        "rheumatology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "rheumatology.joints.inflammatory-patterns"
+      ]
+    },
+    {
+      "id": "allergy.plan.001",
+      "subjectId": "allergy",
+      "title": "알레르기 검사",
+      "status": "unwritten",
+      "objectiveIds": [
+        "allergy.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "allergy.plan.002",
+      "subjectId": "allergy",
+      "title": "아나필락시스",
+      "status": "unwritten",
+      "objectiveIds": [
+        "allergy.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "allergy.plan.003",
+      "subjectId": "allergy",
+      "title": "알레르기비염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "allergy.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "allergy.plan.004",
+      "subjectId": "allergy",
+      "title": "천식의 면역기전",
+      "status": "unwritten",
+      "objectiveIds": [
+        "allergy.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "allergy.plan.005",
+      "subjectId": "allergy",
+      "title": "약물과 음식 알레르기",
+      "status": "unwritten",
+      "objectiveIds": [
+        "allergy.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "allergy.plan.006",
+      "subjectId": "allergy",
+      "title": "면역치료",
+      "status": "unwritten",
+      "objectiveIds": [
+        "allergy.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "electrolytes.acid-base.interpretation",
+      "subjectId": "electrolytes",
+      "title": "산염기 장애의 기전과 단계적 해석",
+      "status": "partial",
+      "objectiveIds": [
+        "electrolytes.acid-base.interpretation.lo.01",
+        "electrolytes.acid-base.interpretation.lo.02",
+        "electrolytes.acid-base.interpretation.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/electrolytes/chapters/acid-base/sections/electrolytes.acid-base.interpretation.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "endocrinology.diabetes.foundations",
+      "subjectId": "endocrinology",
+      "title": "당뇨병의 병태생리와 진단 원리",
+      "status": "partial",
+      "objectiveIds": [
+        "endocrinology.diabetes.foundations.lo.01",
+        "endocrinology.diabetes.foundations.lo.02",
+        "endocrinology.diabetes.foundations.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/endocrinology/chapters/diabetes/sections/endocrinology.diabetes.foundations.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "nephrology.ckd.evaluation",
+      "subjectId": "nephrology",
+      "title": "만성콩팥병의 평가와 위험 층화",
+      "status": "partial",
+      "objectiveIds": [
+        "nephrology.ckd.evaluation.lo.01",
+        "nephrology.ckd.evaluation.lo.02",
+        "nephrology.ckd.evaluation.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/nephrology/chapters/ckd/sections/nephrology.ckd.evaluation.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "endocrinology.pituitary.feedback",
+      "subjectId": "endocrinology",
+      "title": "시상하부-뇌하수체 축과 되먹임",
+      "status": "partial",
+      "objectiveIds": [
+        "endocrinology.pituitary.feedback.lo.01",
+        "endocrinology.pituitary.feedback.lo.02",
+        "endocrinology.pituitary.feedback.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/endocrinology/chapters/pituitary/sections/endocrinology.pituitary.feedback.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "hematology.anemia.reticulocytes",
+      "subjectId": "hematology",
+      "title": "빈혈의 기전별 접근과 망상적혈구",
+      "status": "partial",
+      "objectiveIds": [
+        "hematology.anemia.reticulocytes.lo.01",
+        "hematology.anemia.reticulocytes.lo.02",
+        "hematology.anemia.reticulocytes.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/hematology/chapters/anemia/sections/hematology.anemia.reticulocytes.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "infectious-diseases.antibiotics.stewardship",
+      "subjectId": "infectious-diseases",
+      "title": "항균제 선택과 미생물검사의 통합",
+      "status": "partial",
+      "objectiveIds": [
+        "infectious-diseases.antibiotics.stewardship.lo.01",
+        "infectious-diseases.antibiotics.stewardship.lo.02",
+        "infectious-diseases.antibiotics.stewardship.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/infectious-diseases/chapters/antibiotics/sections/infectious-diseases.antibiotics.stewardship.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "endocrinology.thyroid.hormone-synthesis",
+      "subjectId": "endocrinology",
+      "title": "갑상샘호르몬의 합성·작용과 조절",
+      "status": "partial",
+      "objectiveIds": [
+        "endocrinology.thyroid.hormone-synthesis.lo.01",
+        "endocrinology.thyroid.hormone-synthesis.lo.02",
+        "endocrinology.thyroid.hormone-synthesis.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/endocrinology/chapters/thyroid/sections/endocrinology.thyroid.hormone-synthesis.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "hematology.hemostasis.platelet-coagulation",
+      "subjectId": "hematology",
+      "title": "혈소판·응고·섬유소용해의 통합",
+      "status": "partial",
+      "objectiveIds": [
+        "hematology.hemostasis.platelet-coagulation.lo.01",
+        "hematology.hemostasis.platelet-coagulation.lo.02",
+        "hematology.hemostasis.platelet-coagulation.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/hematology/chapters/hemostasis/sections/hematology.hemostasis.platelet-coagulation.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "cardiology.heart-failure.syndrome",
+      "subjectId": "cardiology",
+      "title": "심부전의 병태생리와 임상평가",
+      "status": "partial",
+      "objectiveIds": [
+        "cardiology.heart-failure.syndrome.lo.01",
+        "cardiology.heart-failure.syndrome.lo.02",
+        "cardiology.heart-failure.syndrome.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/heart-failure/sections/cardiology.heart-failure.syndrome.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "pulmonology.airways.asthma-mechanisms",
+      "subjectId": "pulmonology",
+      "title": "천식의 염증·기도역학과 진단",
+      "status": "partial",
+      "objectiveIds": [
+        "pulmonology.airways.asthma-mechanisms.lo.01",
+        "pulmonology.airways.asthma-mechanisms.lo.02",
+        "pulmonology.airways.asthma-mechanisms.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/airways/sections/pulmonology.airways.asthma-mechanisms.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "hepatology.cirrhosis.portal-hypertension",
+      "subjectId": "hepatology",
+      "title": "간경변과 문맥고혈압의 병태생리",
+      "status": "partial",
+      "objectiveIds": [
+        "hepatology.cirrhosis.portal-hypertension.lo.01",
+        "hepatology.cirrhosis.portal-hypertension.lo.02",
+        "hepatology.cirrhosis.portal-hypertension.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/hepatology/chapters/cirrhosis/sections/hepatology.cirrhosis.portal-hypertension.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "rheumatology.joints.inflammatory-patterns",
+      "subjectId": "rheumatology",
+      "title": "관절염의 패턴과 염증성 질환 접근",
+      "status": "partial",
+      "objectiveIds": [
+        "rheumatology.joints.inflammatory-patterns.lo.01",
+        "rheumatology.joints.inflammatory-patterns.lo.02",
+        "rheumatology.joints.inflammatory-patterns.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/rheumatology/chapters/joints/sections/rheumatology.joints.inflammatory-patterns.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "internal-medicine.diagnosis.probability",
+      "subjectId": "internal-medicine",
+      "title": "진단검사와 확률의 갱신",
+      "status": "partial",
+      "objectiveIds": [
+        "internal-medicine.diagnosis.probability.lo.01",
+        "internal-medicine.diagnosis.probability.lo.02",
+        "internal-medicine.diagnosis.probability.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/internal-medicine/chapters/diagnosis/sections/internal-medicine.diagnosis.probability.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "gastroenterology.digestion.malabsorption",
+      "subjectId": "gastroenterology",
+      "title": "소화와 흡수장애의 기전",
+      "status": "partial",
+      "objectiveIds": [
+        "gastroenterology.digestion.malabsorption.lo.01",
+        "gastroenterology.digestion.malabsorption.lo.02",
+        "gastroenterology.digestion.malabsorption.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/gastroenterology/chapters/digestion/sections/gastroenterology.digestion.malabsorption.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "oncology.principles.staging-and-response",
+      "subjectId": "oncology",
+      "title": "암의 병기·분화도·치료반응",
+      "status": "partial",
+      "objectiveIds": [
+        "oncology.principles.staging-and-response.lo.01",
+        "oncology.principles.staging-and-response.lo.02",
+        "oncology.principles.staging-and-response.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/oncology/chapters/principles/sections/oncology.principles.staging-and-response.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "allergy.emergencies.anaphylaxis",
+      "subjectId": "allergy",
+      "title": "아나필락시스의 전신 반응과 인지",
+      "status": "partial",
+      "objectiveIds": [
+        "allergy.emergencies.anaphylaxis.lo.01",
+        "allergy.emergencies.anaphylaxis.lo.02",
+        "allergy.emergencies.anaphylaxis.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/allergy/chapters/emergencies/sections/allergy.emergencies.anaphylaxis.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "cardiology.ischemia.acute-coronary-syndrome",
+      "subjectId": "cardiology",
+      "title": "급성관상동맥증후군의 기전과 초기 판단",
+      "status": "partial",
+      "objectiveIds": [
+        "cardiology.ischemia.acute-coronary-syndrome.lo.01",
+        "cardiology.ischemia.acute-coronary-syndrome.lo.02",
+        "cardiology.ischemia.acute-coronary-syndrome.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/ischemia/sections/cardiology.ischemia.acute-coronary-syndrome.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "pulmonology.obstruction.copd",
+      "subjectId": "pulmonology",
+      "title": "COPD의 기도·폐실질 변화와 기능 평가",
+      "status": "partial",
+      "objectiveIds": [
+        "pulmonology.obstruction.copd.lo.01",
+        "pulmonology.obstruction.copd.lo.02",
+        "pulmonology.obstruction.copd.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/obstruction/sections/pulmonology.obstruction.copd.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "nephrology.acute.aki",
+      "subjectId": "nephrology",
+      "title": "급성콩팥손상의 기능·구조와 원인 평가",
+      "status": "partial",
+      "objectiveIds": [
+        "nephrology.acute.aki.lo.01",
+        "nephrology.acute.aki.lo.02",
+        "nephrology.acute.aki.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/nephrology/chapters/acute/sections/nephrology.acute.aki.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "endocrinology.diabetes.hyperglycemic-emergencies",
+      "subjectId": "endocrinology",
+      "title": "당뇨병 케톤산증과 고삼투압 위기",
+      "status": "partial",
+      "objectiveIds": [
+        "endocrinology.diabetes.hyperglycemic-emergencies.lo.01",
+        "endocrinology.diabetes.hyperglycemic-emergencies.lo.02",
+        "endocrinology.diabetes.hyperglycemic-emergencies.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/endocrinology/chapters/diabetes/sections/endocrinology.diabetes.hyperglycemic-emergencies.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "electrolytes.acid-base.systematic-analysis",
+      "subjectId": "electrolytes",
+      "title": "산염기 평형의 기전과 혈액가스 해석",
+      "status": "partial",
+      "objectiveIds": [
+        "electrolytes.acid-base.systematic-analysis.lo.01",
+        "electrolytes.acid-base.systematic-analysis.lo.02",
+        "electrolytes.acid-base.systematic-analysis.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/electrolytes/chapters/acid-base/sections/electrolytes.acid-base.systematic-analysis.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "electrolytes.water.sodium-disorders",
+      "subjectId": "electrolytes",
+      "title": "나트륨 농도와 물 균형 장애",
+      "status": "partial",
+      "objectiveIds": [
+        "electrolytes.water.sodium-disorders.lo.01",
+        "electrolytes.water.sodium-disorders.lo.02",
+        "electrolytes.water.sodium-disorders.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/electrolytes/chapters/water/sections/electrolytes.water.sodium-disorders.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "electrolytes.potassium.distribution-excretion",
+      "subjectId": "electrolytes",
+      "title": "칼륨의 분포·배설과 농도 이상",
+      "status": "partial",
+      "objectiveIds": [
+        "electrolytes.potassium.distribution-excretion.lo.01",
+        "electrolytes.potassium.distribution-excretion.lo.02",
+        "electrolytes.potassium.distribution-excretion.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/electrolytes/chapters/potassium/sections/electrolytes.potassium.distribution-excretion.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "infectious-diseases.mycobacteria.tuberculosis",
+      "subjectId": "infectious-diseases",
+      "title": "결핵의 감염·면역·활동성 질환",
+      "status": "partial",
+      "objectiveIds": [
+        "infectious-diseases.mycobacteria.tuberculosis.lo.01",
+        "infectious-diseases.mycobacteria.tuberculosis.lo.02",
+        "infectious-diseases.mycobacteria.tuberculosis.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/infectious-diseases/chapters/mycobacteria/sections/infectious-diseases.mycobacteria.tuberculosis.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "oncology.molecular.dna-repair",
+      "subjectId": "oncology",
+      "title": "DNA 손상복구와 종양의 유전체 불안정성",
+      "status": "partial",
+      "objectiveIds": [
+        "oncology.molecular.dna-repair.lo.01",
+        "oncology.molecular.dna-repair.lo.02",
+        "oncology.molecular.dna-repair.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/oncology/chapters/molecular/sections/oncology.molecular.dna-repair.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "cardiology.heart-failure.mechanisms-evaluation",
+      "subjectId": "cardiology",
+      "title": "심부전의 혈역학·진단과 치료 표적",
+      "status": "partial",
+      "objectiveIds": [
+        "cardiology.heart-failure.mechanisms-evaluation.lo.01",
+        "cardiology.heart-failure.mechanisms-evaluation.lo.02",
+        "cardiology.heart-failure.mechanisms-evaluation.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/heart-failure/sections/cardiology.heart-failure.mechanisms-evaluation.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "gastroenterology.inflammation.ibd",
+      "subjectId": "gastroenterology",
+      "title": "크론병과 궤양성 대장염의 기전·평가",
+      "status": "partial",
+      "objectiveIds": [
+        "gastroenterology.inflammation.ibd.lo.01",
+        "gastroenterology.inflammation.ibd.lo.02",
+        "gastroenterology.inflammation.ibd.lo.03"
+      ],
+      "path": "domains/05-internal-medicine/subjects/gastroenterology/chapters/inflammation/sections/gastroenterology.inflammation.ibd.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    }
+  ]
+}

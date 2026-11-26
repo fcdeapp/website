@@ -1,0 +1,23 @@
+{
+  "id": "question.medical-informatics.clinical-data.decision-support.001",
+  "kind": "original_concept_question",
+  "lessonId": "medical-informatics.clinical-data.decision-support",
+  "prompt": "검사 기록이 없으면 정상으로 처리해도 되는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "그렇다. 기록되지 않은 값은 모두 정상이다."
+    },
+    {
+      "id": "B",
+      "text": "아니다. 결측의 발생 과정과 측정 선택을 검토한다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "검사 미시행은 임상 판단과 접근성 및 기록 문제 등 여러 원인을 갖는다.",
+  "optionRationales": {
+    "A": "검사 미시행은 임상 판단과 접근성 및 기록 문제 등 여러 원인을 갖는다.",
+    "B": "검사 미시행은 임상 판단과 접근성 및 기록 문제 등 여러 원인을 갖는다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

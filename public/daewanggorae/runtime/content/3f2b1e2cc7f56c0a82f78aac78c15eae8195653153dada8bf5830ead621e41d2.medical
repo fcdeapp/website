@@ -1,0 +1,28 @@
+{
+  "id": "question.physiology.renal.urine-concentration.001",
+  "kind": "original_concept_question",
+  "lessonId": "physiology.renal.urine-concentration",
+  "prompt": "Uosm=600, Posm=300 mOsm/kg, 소변 유량이 1 mL/min이면 자유수청소율은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "+1 mL/min"
+    },
+    {
+      "id": "B",
+      "text": "2 mL/min"
+    },
+    {
+      "id": "C",
+      "text": "−1 mL/min"
+    }
+  ],
+  "answer": "C",
+  "explanation": "Cosm=600×1/300=2이므로 CH2O=1−2=−1이다.",
+  "optionRationales": {
+    "A": "양수와 음수의 의미를 뒤바꾼 계산이다.",
+    "B": "2는 삼투청소율이며 자유수청소율과 다르다.",
+    "C": "Cosm=600×1/300=2이므로 CH2O=1−2=−1이다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

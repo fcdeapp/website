@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "diagnostic-pathology",
+  "title": {
+    "ko": "진단병리학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "diagnostic-pathology.chapter.specimen",
+      "path": "domains/09-clinical-diagnostics/subjects/diagnostic-pathology/chapters/specimen/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "diagnostic-pathology.plan.001",
+    "diagnostic-pathology.plan.002",
+    "diagnostic-pathology.plan.003",
+    "diagnostic-pathology.plan.004",
+    "diagnostic-pathology.plan.005",
+    "diagnostic-pathology.plan.006",
+    "diagnostic-pathology.specimen.interpretation"
+  ]
+}

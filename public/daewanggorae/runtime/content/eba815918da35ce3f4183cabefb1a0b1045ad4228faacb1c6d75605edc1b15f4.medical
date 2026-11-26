@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "symptom-differential",
+  "title": {
+    "ko": "증상별 감별진단"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "symptom-differential.chapter.respiratory",
+      "path": "domains/10-prevention-clerkships/subjects/symptom-differential/chapters/respiratory/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "symptom-differential.plan.001",
+    "symptom-differential.plan.002",
+    "symptom-differential.plan.003",
+    "symptom-differential.plan.004",
+    "symptom-differential.plan.005",
+    "symptom-differential.plan.006",
+    "symptom-differential.plan.007",
+    "symptom-differential.respiratory.dyspnea"
+  ]
+}

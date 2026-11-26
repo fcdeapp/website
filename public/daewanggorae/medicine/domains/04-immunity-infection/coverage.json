@@ -1,0 +1,592 @@
+{
+  "status": "incomplete",
+  "objectives": [
+    {
+      "objectiveId": "immunology.scope.001",
+      "subjectId": "immunology",
+      "text": "선천면역과 보체의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "immunology.scope.002",
+      "subjectId": "immunology",
+      "text": "항원제시와 T세포의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "immunology.scope.003",
+      "subjectId": "immunology",
+      "text": "B세포와 항체의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "immunology.scope.004",
+      "subjectId": "immunology",
+      "text": "면역관용의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "immunology.scope.005",
+      "subjectId": "immunology",
+      "text": "과민반응의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "immunology.scope.006",
+      "subjectId": "immunology",
+      "text": "면역결핍의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "immunology.scope.007",
+      "subjectId": "immunology",
+      "text": "이식과 종양면역의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.scope.001",
+      "subjectId": "bacteriology",
+      "text": "세균 구조와 유전의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "bacteriology.structure.cell-envelope"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.scope.002",
+      "subjectId": "bacteriology",
+      "text": "병독성과 숙주반응의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "bacteriology.structure.cell-envelope"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.scope.003",
+      "subjectId": "bacteriology",
+      "text": "그람양성균의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "bacteriology.structure.cell-envelope"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.scope.004",
+      "subjectId": "bacteriology",
+      "text": "그람음성균의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "bacteriology.structure.cell-envelope"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.scope.005",
+      "subjectId": "bacteriology",
+      "text": "항산균과 특수세균의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "bacteriology.structure.cell-envelope"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.scope.006",
+      "subjectId": "bacteriology",
+      "text": "배양과 감수성의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "bacteriology.structure.cell-envelope"
+      ]
+    },
+    {
+      "objectiveId": "virology.scope.001",
+      "subjectId": "virology",
+      "text": "바이러스 구조와 복제의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "virology.replication.host-cell"
+      ]
+    },
+    {
+      "objectiveId": "virology.scope.002",
+      "subjectId": "virology",
+      "text": "DNA 바이러스의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "virology.replication.host-cell"
+      ]
+    },
+    {
+      "objectiveId": "virology.scope.003",
+      "subjectId": "virology",
+      "text": "RNA 바이러스의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "virology.replication.host-cell"
+      ]
+    },
+    {
+      "objectiveId": "virology.scope.004",
+      "subjectId": "virology",
+      "text": "지속감염과 종양의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "virology.replication.host-cell"
+      ]
+    },
+    {
+      "objectiveId": "virology.scope.005",
+      "subjectId": "virology",
+      "text": "항바이러스 면역의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "virology.replication.host-cell"
+      ]
+    },
+    {
+      "objectiveId": "virology.scope.006",
+      "subjectId": "virology",
+      "text": "바이러스 진단의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "virology.replication.host-cell"
+      ]
+    },
+    {
+      "objectiveId": "mycology.scope.001",
+      "subjectId": "mycology",
+      "text": "진균 구조와 병원성의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "mycology.scope.002",
+      "subjectId": "mycology",
+      "text": "표재성 진균증의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "mycology.scope.003",
+      "subjectId": "mycology",
+      "text": "피부진균증의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "mycology.scope.004",
+      "subjectId": "mycology",
+      "text": "침습성 진균증의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "mycology.scope.005",
+      "subjectId": "mycology",
+      "text": "기회감염과 진단의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "mycology.scope.006",
+      "subjectId": "mycology",
+      "text": "항진균제 감수성의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "parasitology.scope.001",
+      "subjectId": "parasitology",
+      "text": "원충의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "parasitology.scope.002",
+      "subjectId": "parasitology",
+      "text": "선충의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "parasitology.scope.003",
+      "subjectId": "parasitology",
+      "text": "흡충의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "parasitology.scope.004",
+      "subjectId": "parasitology",
+      "text": "조충의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "parasitology.scope.005",
+      "subjectId": "parasitology",
+      "text": "절지동물과 매개체의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "parasitology.scope.006",
+      "subjectId": "parasitology",
+      "text": "기생충 생활사와 진단의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "immunology.antigen.presentation.lo.01",
+      "subjectId": "immunology",
+      "text": "MHC I과 MHC II 항원제시 경로를 비교한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "immunology.antigen.presentation.lo.02",
+      "subjectId": "immunology",
+      "text": "교차제시의 필요성을 설명한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "immunology.antigen.presentation.lo.03",
+      "subjectId": "immunology",
+      "text": "항원 인식과 공동자극 및 관용을 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.antigen.presentation"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.structure.cell-envelope.lo.01",
+      "subjectId": "bacteriology",
+      "text": "그람양성균과 음성균의 외피를 비교한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "bacteriology.structure.cell-envelope"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.structure.cell-envelope.lo.02",
+      "subjectId": "bacteriology",
+      "text": "세포벽·외막·협막의 기능을 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "bacteriology.structure.cell-envelope"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.structure.cell-envelope.lo.03",
+      "subjectId": "bacteriology",
+      "text": "항균제 표적과 내성 기전을 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "bacteriology.structure.cell-envelope"
+      ]
+    },
+    {
+      "objectiveId": "virology.replication.host-cell.lo.01",
+      "subjectId": "virology",
+      "text": "유전체 유형에서 mRNA 생성 전략을 추론한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "virology.replication.host-cell"
+      ]
+    },
+    {
+      "objectiveId": "virology.replication.host-cell.lo.02",
+      "subjectId": "virology",
+      "text": "외피와 수용체가 감염성에 미치는 영향을 설명한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "virology.replication.host-cell"
+      ]
+    },
+    {
+      "objectiveId": "virology.replication.host-cell.lo.03",
+      "subjectId": "virology",
+      "text": "잠복·지속감염과 급성 감염을 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "virology.replication.host-cell"
+      ]
+    },
+    {
+      "objectiveId": "immunology.innate.complement.lo.01",
+      "subjectId": "immunology",
+      "text": "고전·렉틴·대체경로의 진입점을 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.innate.complement"
+      ]
+    },
+    {
+      "objectiveId": "immunology.innate.complement.lo.02",
+      "subjectId": "immunology",
+      "text": "C3와 C5 분해산물의 기능을 설명한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.innate.complement"
+      ]
+    },
+    {
+      "objectiveId": "immunology.innate.complement.lo.03",
+      "subjectId": "immunology",
+      "text": "조절인자 결함과 임상 양상을 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.innate.complement"
+      ]
+    },
+    {
+      "objectiveId": "immunology.humoral.germinal-center.lo.01",
+      "subjectId": "immunology",
+      "text": "BCR 신호와 T세포 도움을 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.humoral.germinal-center"
+      ]
+    },
+    {
+      "objectiveId": "immunology.humoral.germinal-center.lo.02",
+      "subjectId": "immunology",
+      "text": "체성과변이와 동형전환을 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.humoral.germinal-center"
+      ]
+    },
+    {
+      "objectiveId": "immunology.humoral.germinal-center.lo.03",
+      "subjectId": "immunology",
+      "text": "기억 B세포와 장수 형질세포의 기능을 설명한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.humoral.germinal-center"
+      ]
+    },
+    {
+      "objectiveId": "immunology.hypersensitivity.mechanisms.lo.01",
+      "subjectId": "immunology",
+      "text": "I~IV형 과민반응의 효과기를 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.hypersensitivity.mechanisms"
+      ]
+    },
+    {
+      "objectiveId": "immunology.hypersensitivity.mechanisms.lo.02",
+      "subjectId": "immunology",
+      "text": "감작과 실제 임상 반응을 분리한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.hypersensitivity.mechanisms"
+      ]
+    },
+    {
+      "objectiveId": "immunology.hypersensitivity.mechanisms.lo.03",
+      "subjectId": "immunology",
+      "text": "한 질환에서 여러 면역기전이 겹치는 이유를 설명한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "immunology.hypersensitivity.mechanisms"
+      ]
+    },
+    {
+      "objectiveId": "mycology.foundations.host-and-fungus.lo.01",
+      "subjectId": "mycology",
+      "text": "진균의 세포 구조를 항진균제 표적과 연결한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "mycology.foundations.host-and-fungus"
+      ]
+    },
+    {
+      "objectiveId": "mycology.foundations.host-and-fungus.lo.02",
+      "subjectId": "mycology",
+      "text": "집락화와 침습성 감염을 구별한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "mycology.foundations.host-and-fungus"
+      ]
+    },
+    {
+      "objectiveId": "mycology.foundations.host-and-fungus.lo.03",
+      "subjectId": "mycology",
+      "text": "면역결함의 종류에 따른 진균 감염 양상을 설명한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "mycology.foundations.host-and-fungus"
+      ]
+    },
+    {
+      "objectiveId": "parasitology.malaria.life-cycle.lo.01",
+      "subjectId": "parasitology",
+      "text": "사람과 모기에서의 원충 발달 단계를 구별한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "parasitology.malaria.life-cycle"
+      ]
+    },
+    {
+      "objectiveId": "parasitology.malaria.life-cycle.lo.02",
+      "subjectId": "parasitology",
+      "text": "재발과 혈중 원충의 지속을 구별한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "parasitology.malaria.life-cycle"
+      ]
+    },
+    {
+      "objectiveId": "parasitology.malaria.life-cycle.lo.03",
+      "subjectId": "parasitology",
+      "text": "적혈구 침범을 빈혈 및 미세순환 장애와 연결한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "parasitology.malaria.life-cycle"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.genetics.antimicrobial-resistance.lo.01",
+      "subjectId": "bacteriology",
+      "text": "돌연변이와 수평 유전자 전달을 구분한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "bacteriology.genetics.antimicrobial-resistance"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.genetics.antimicrobial-resistance.lo.02",
+      "subjectId": "bacteriology",
+      "text": "약물 유입·배출·불활성화·표적 변화 기전을 비교한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "bacteriology.genetics.antimicrobial-resistance"
+      ]
+    },
+    {
+      "objectiveId": "bacteriology.genetics.antimicrobial-resistance.lo.03",
+      "subjectId": "bacteriology",
+      "text": "감수성 결과와 임상 실패의 관계를 설명한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "bacteriology.genetics.antimicrobial-resistance"
+      ]
+    }
+  ]
+}

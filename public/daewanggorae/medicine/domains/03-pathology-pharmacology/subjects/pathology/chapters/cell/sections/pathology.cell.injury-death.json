@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.cell.injury-death",
+  "subjectId": "pathology",
+  "chapterId": "cell",
+  "title": {
+    "ko": "세포손상과 세포사멸의 기전",
+    "en": "Cell Injury and Cell Death"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.cell.injury-death.lo.01",
+      "text": "가역적 손상과 비가역적 손상의 차이를 설명한다."
+    },
+    {
+      "id": "pathology.cell.injury-death.lo.02",
+      "text": "허혈과 재관류 손상을 연결한다."
+    },
+    {
+      "id": "pathology.cell.injury-death.lo.03",
+      "text": "세포자멸사의 내인성·외인성 경로를 구분한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.cell.injury-death.b.bbe3cf3f4dd0",
+      "type": "heading",
+      "level": 2,
+      "text": "스트레스에 대한 세포의 선택"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.b35b9e89f0ab",
+      "type": "paragraph",
+      "markdown": "세포손상(cell injury)은 유해 자극의 크기와 지속시간이 세포의 적응 능력을 넘어설 때 발생한다. 동일한 산소 부족이라도 심근세포, 신경세포, 섬유모세포가 견디는 정도는 다르다. 대사 요구량, 에너지 저장, 혈액 공급, 항산화 능력과 재생 잠재력이 다르기 때문이다. 손상의 원인을 산소 부족, 화학물질, 감염, 면역반응, 유전 이상 등으로 나누는 것은 유용하지만 실제 질환에서는 여러 원인이 겹친다. 예를 들어 감염은 미생물의 직접 손상과 숙주 염증반응, 미세순환 장애를 동시에 일으킬 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.8a734cf29f5d",
+      "type": "paragraph",
+      "markdown": "세포가 크기나 수를 바꾸는 적응과 손상을 구분해야 한다. 비대(hypertrophy)는 개별 세포의 크기 증가, 과다형성(hyperplasia)은 세포 수 증가다. 위축(atrophy)은 크기 감소를 중심으로 하며, 화생(metaplasia)은 분화된 세포 유형이 다른 유형으로 바뀌는 현상이다. 화생은 지속 자극에 대한 보호적 이점을 줄 수 있지만 본래 기능을 잃거나 종양 발생과 관련된 환경을 만들 수 있다. 이형성(dysplasia)은 세포와 조직 배열의 비정상성을 뜻하며 화생과 동의어가 아니다. 적응이라는 이름이 붙었다고 장기적으로 무해한 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.aed52a2daf6b",
+      "type": "heading",
+      "level": 2,
+      "text": "ATP 감소와 칼슘 항상성 붕괴"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.2d716c118680",
+      "type": "paragraph",
+      "markdown": "산화적 인산화가 억제되면 ATP가 감소한다. Na+/K+-ATPase 기능이 저하되어 세포내 나트륨이 증가하고 물이 유입되면서 세포와 소기관이 붓는다. 동시에 해당작용 의존도가 커지면 젖산 축적과 pH 감소가 일어날 수 있다. 리보솜이 거친면소포체에서 떨어지고 단백질 합성이 감소할 수 있으며, 세포막의 물집과 미세융모 소실도 보일 수 있다. 초기의 이런 변화는 원인이 제거되고 에너지 대사가 회복되면 되돌아갈 수 있어 가역적 손상으로 분류한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.06bebfc81779",
+      "type": "paragraph",
+      "markdown": "칼슘은 신호전달에 필수적이지만 세포질의 자유 칼슘 농도는 낮게 유지되어야 한다. 손상으로 세포 밖에서 칼슘이 들어오거나 소포체 저장 칼슘이 방출되면 인지질분해효소, 단백질분해효소, 핵산분해효소 등이 과도하게 활성화될 수 있다. 이들은 막과 세포골격, DNA를 손상시킨다. 미토콘드리아 기능장애는 ATP 생산 감소뿐 아니라 투과성 변화와 세포사멸 신호 방출로 이어질 수 있다. 따라서 에너지 고갈, 막손상, 칼슘 증가, 활성산소 생성은 독립된 체크리스트가 아니라 서로 강화하는 회로다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.b6f1c3c4b115",
+      "type": "heading",
+      "level": 2,
+      "text": "비가역성과 괴사 형태"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.ead1fb6ee472",
+      "type": "paragraph",
+      "markdown": "비가역적 손상의 핵심에는 회복되지 않는 미토콘드리아 기능장애와 심각한 막손상이 포함된다. 원형질막의 붕괴는 세포 성분 유출과 이온 조절 실패를 일으키고, 리소좀막 손상은 가수분해효소의 유출에 기여한다. 세포 안의 효소나 단백질이 혈액에서 측정되는 현상은 장기 손상을 추정하는 검사 원리와 연결된다. 그러나 혈중 지표 상승만으로 정확한 손상 원인, 발생 시간, 기능 상실 정도를 모두 알 수는 없다. 지표의 장기 특이성, 방출과 제거 속도, 임상 맥락을 함께 봐야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.1c459ecd0826",
+      "type": "paragraph",
+      "markdown": "응고괴사(coagulative necrosis)는 단백질 변성으로 조직 윤곽이 한동안 보존되는 형태이며 여러 고형장기의 허혈성 손상에서 볼 수 있다. 액화괴사(liquefactive necrosis)는 효소적 소화가 우세하여 조직이 액상으로 변하는 형태로, 뇌의 허혈성 손상이나 화농성 감염과 연결된다. 건락괴사(caseous necrosis)는 결핵 등에서 관찰되는 부스러지는 형태를 가리키며, 지방괴사는 지방조직의 효소적 분해와 칼슘 비누 형성 등과 연결될 수 있다. 형태학적 이름은 병인을 추론하는 단서이지 한 질환에만 독점적으로 대응하는 바코드가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.fbdc485097cf",
+      "type": "heading",
+      "level": 2,
+      "text": "세포자멸사의 두 경로"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.60fe1e759c0a",
+      "type": "paragraph",
+      "markdown": "세포자멸사(apoptosis)는 세포를 비교적 질서 있게 제거하는 조절된 과정이다. 세포가 수축하고 염색질이 응축되며 막으로 둘러싸인 조각이 형성되고, 식세포가 이를 제거한다. 세포막의 인지질 비대칭성이 변하여 phosphatidylserine이 외측에 드러나는 것은 제거 신호의 하나다. 세포 내용물이 광범위하게 유출되지 않으면 주변 염증은 상대적으로 적다. 하지만 제거가 지연되면 이차적 막붕괴가 생길 수 있어 세포자멸사는 어떤 조건에서도 염증이 없다는 절대 명제는 피해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.7fe018ddb64e",
+      "type": "paragraph",
+      "markdown": "내인성 경로(intrinsic pathway)는 성장인자 부족, DNA 손상, 소포체 스트레스 같은 세포내 신호를 미토콘드리아 경로에 연결한다. BCL-2 계열 단백질은 생존과 사멸의 균형을 조절하며, BAX와 BAK의 활성은 미토콘드리아 바깥막 투과화에 관여한다. 방출된 cytochrome c는 APAF1과 함께 apoptosome 형성을 촉진하고, 개시 caspase-9를 거쳐 실행 caspase가 활성화된다. 외인성 경로(extrinsic pathway)는 Fas 같은 사멸수용체에서 시작하여 어댑터 단백질과 caspase-8 등의 활성으로 이어진다. 두 경로는 BID 같은 연결 인자를 통해 상호작용할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.b6a78ffffef0",
+      "type": "paragraph",
+      "markdown": "괴사는 모두 비조절적이고 세포자멸사는 모두 생리적이라는 구분도 지나치게 단순하다. Necroptosis, pyroptosis, ferroptosis처럼 조절된 세포사멸 양식이 알려져 있으며 염증과 막손상, 철 의존성 지질과산화 등 서로 다른 특징을 가진다. 이 분류는 실제 조직에서 혼합되어 나타날 수 있고, 검사법에 따라 포착하는 과정도 다르다. TUNEL 양성이나 특정 단백질 하나의 발현만으로 모든 사멸 경로를 단정하는 것은 부적절하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.e9e0135a51f8",
+      "type": "heading",
+      "level": 2,
+      "text": "재관류가 손상을 더할 수 있는 이유"
+    },
+    {
+      "id": "pathology.cell.injury-death.b.dbb36bed7c23",
+      "type": "paragraph",
+      "markdown": "허혈 조직에 혈류를 회복시키는 것은 생존 조직을 구하는 데 필수적이지만, 재관류 과정에서 활성산소, 칼슘 과부하, 염증세포 유입, 미토콘드리아 기능 변화가 추가 손상에 기여할 수 있다. 이는 혈류 회복이 필요 없다는 뜻이 아니다. 치료의 이익과 손상 기전을 서로 다른 수준에서 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "diagram.apoptosis.block",
+      "type": "diagram",
+      "diagramRef": "diagram.apoptosis",
+      "path": "diagrams/diagram.apoptosis.svg",
+      "alt": "diagram.apoptosis; original schematic; see limitations in companion JSON",
+      "verificationStatus": "editorial_schematic_not_specialist_reviewed"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/cell/sections/pathology.cell.injury-death.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.cell.injury-death.001"
+  ],
+  "glossary": [
+    {
+      "conceptId": "concept.apoptosis",
+      "ko": "세포자멸사",
+      "en": "Apoptosis",
+      "definition": "caspase 등의 조절 아래 세포를 제거하는 과정"
+    }
+  ],
+  "keyFacts": [
+    "미토콘드리아 cytochrome c-APAF1 경로가 caspase-9 활성과 연결된다."
+  ]
+}

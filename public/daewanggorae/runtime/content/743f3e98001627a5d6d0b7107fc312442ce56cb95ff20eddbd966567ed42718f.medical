@@ -1,0 +1,23 @@
+{
+  "id": "question.neurosurgery.physiology.intracranial-pressure.001",
+  "kind": "original_concept_question",
+  "lessonId": "neurosurgery.physiology.intracranial-pressure",
+  "prompt": "CPP 수치가 같으면 모든 뇌영역의 혈류도 같은가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "아니다. 저항과 자가조절 및 국소 병변을 함께 고려한다."
+    },
+    {
+      "id": "B",
+      "text": "그렇다. CPP는 국소 혈류량을 직접 측정한 값이다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "압력차와 실제 혈류는 구별하며 국소성과 조절 기능이 영향을 준다.",
+  "optionRationales": {
+    "A": "압력차와 실제 혈류는 구별하며 국소성과 조절 기능이 영향을 준다.",
+    "B": "압력차와 실제 혈류는 구별하며 국소성과 조절 기능이 영향을 준다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

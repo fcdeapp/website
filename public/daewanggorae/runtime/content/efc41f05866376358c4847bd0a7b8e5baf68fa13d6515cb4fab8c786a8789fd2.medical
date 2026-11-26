@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "rheumatology",
+  "title": {
+    "ko": "류마티스내과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "rheumatology.chapter.joints",
+      "path": "domains/05-internal-medicine/subjects/rheumatology/chapters/joints/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "rheumatology.plan.001",
+    "rheumatology.plan.002",
+    "rheumatology.plan.003",
+    "rheumatology.plan.004",
+    "rheumatology.plan.005",
+    "rheumatology.plan.006",
+    "rheumatology.joints.inflammatory-patterns"
+  ]
+}

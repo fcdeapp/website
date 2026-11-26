@@ -1,0 +1,34 @@
+{
+  "status": "official_links_only_item_mapping_not_started",
+  "publicExams": [
+    {
+      "year": 2026,
+      "round": 91,
+      "officialSourceRef": "kmle-public-2026",
+      "originalQuestionsIncluded": false,
+      "finalAnswerIncluded": false,
+      "itemLevelMappingStatus": "not_started"
+    }
+  ],
+  "practicalObjectives": {
+    "sourceRef": "kmle-practical",
+    "fullExtractionStatus": "pending"
+  },
+  "changes": [
+    {
+      "sourceRef": "kmle-change",
+      "noticeDate": "2026-11-11",
+      "effectiveYear": 2029,
+      "round": 94,
+      "totalQuestions": 300,
+      "medicalGeneral": 60,
+      "medicalSpecific": 220,
+      "healthLaw": 20,
+      "previousTotal": 320,
+      "previousMedicalSpecific": 240,
+      "timetable": "to_be_announced",
+      "evidence": "downloaded official attachment; pdftotext inspected"
+    }
+  ],
+  "writtenBlueprintExtraction": "pending"
+}

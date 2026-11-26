@@ -1,0 +1,23 @@
+{
+  "id": "question.cell-biology.signaling.receptors.001",
+  "kind": "original_concept_question",
+  "lessonId": "cell-biology.signaling.receptors",
+  "prompt": "cAMP 농도는 생성만으로 결정되는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "그렇다."
+    },
+    {
+      "id": "B",
+      "text": "아니다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "Adenylyl cyclase에 의한 생성과 phosphodiesterase 등에 의한 분해가 함께 작용한다.",
+  "optionRationales": {
+    "A": "분해와 구획화를 무시하면 시간·공간 신호를 설명할 수 없다.",
+    "B": "Adenylyl cyclase에 의한 생성과 phosphodiesterase 등에 의한 분해가 함께 작용한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

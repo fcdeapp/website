@@ -1,0 +1,201 @@
+{
+  "id": "diagram.tca",
+  "lessonId": "biochemistry.metabolism.tca",
+  "title": "TCA cycle: carbon skeletons",
+  "nodes": [
+    {
+      "id": "oaa",
+      "label": "Oxaloacetate (4C)",
+      "x": 230,
+      "y": 130,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "citrate",
+      "label": "Citrate (6C)",
+      "x": 540,
+      "y": 130,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "iso",
+      "label": "Isocitrate (6C)",
+      "x": 840,
+      "y": 270,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "akg",
+      "label": "alpha-Ketoglutarate (5C)",
+      "x": 840,
+      "y": 440,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "succo",
+      "label": "Succinyl-CoA (4C)",
+      "x": 840,
+      "y": 620,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "succ",
+      "label": "Succinate (4C)",
+      "x": 540,
+      "y": 740,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "fum",
+      "label": "Fumarate (4C)",
+      "x": 230,
+      "y": 620,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "mal",
+      "label": "Malate (4C)",
+      "x": 230,
+      "y": 390,
+      "width": 220,
+      "height": 72
+    }
+  ],
+  "edges": [
+    {
+      "source": "oaa",
+      "target": "citrate",
+      "label": "+ acetyl-CoA",
+      "id": "oaa--citrate",
+      "relation": "directed"
+    },
+    {
+      "source": "citrate",
+      "target": "iso",
+      "label": "aconitase",
+      "id": "citrate--iso",
+      "relation": "directed"
+    },
+    {
+      "source": "iso",
+      "target": "akg",
+      "label": "CO2, NADH",
+      "id": "iso--akg",
+      "relation": "directed"
+    },
+    {
+      "source": "akg",
+      "target": "succo",
+      "label": "CO2, NADH",
+      "id": "akg--succo",
+      "relation": "directed"
+    },
+    {
+      "source": "succo",
+      "target": "succ",
+      "label": "NTP",
+      "id": "succo--succ",
+      "relation": "directed"
+    },
+    {
+      "source": "succ",
+      "target": "fum",
+      "label": "Q reduced",
+      "id": "succ--fum",
+      "relation": "directed"
+    },
+    {
+      "source": "fum",
+      "target": "mal",
+      "label": "+ H2O",
+      "id": "fum--mal",
+      "relation": "directed"
+    },
+    {
+      "source": "mal",
+      "target": "oaa",
+      "label": "NADH",
+      "id": "mal--oaa",
+      "relation": "directed"
+    }
+  ],
+  "visualizationKind": "original_schematic",
+  "sourceImageUsed": false,
+  "limitations": [
+    "Carbon skeleton overview, not balanced overall reaction",
+    "NTP identity depends on isoenzyme; Q denotes ubiquinone"
+  ],
+  "schemaVersion": "2.0.0",
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 1040,
+      "height": 840
+    },
+    "compact": {
+      "canvas": {
+        "width": 600,
+        "height": 1000
+      },
+      "fontSize": 26,
+      "nodes": {
+        "oaa": {
+          "x": 150,
+          "y": 100,
+          "width": 250,
+          "height": 136
+        },
+        "citrate": {
+          "x": 450,
+          "y": 100,
+          "width": 250,
+          "height": 136
+        },
+        "iso": {
+          "x": 450,
+          "y": 360,
+          "width": 250,
+          "height": 136
+        },
+        "akg": {
+          "x": 450,
+          "y": 620,
+          "width": 250,
+          "height": 136
+        },
+        "succo": {
+          "x": 450,
+          "y": 880,
+          "width": 250,
+          "height": 136
+        },
+        "succ": {
+          "x": 150,
+          "y": 880,
+          "width": 250,
+          "height": 136
+        },
+        "fum": {
+          "x": 150,
+          "y": 620,
+          "width": 250,
+          "height": 136
+        },
+        "mal": {
+          "x": 150,
+          "y": 360,
+          "width": 250,
+          "height": 136
+        }
+      },
+      "edges": {}
+    }
+  }
+}

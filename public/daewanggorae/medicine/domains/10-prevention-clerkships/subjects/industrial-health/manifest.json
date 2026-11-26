@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "industrial-health",
+  "title": {
+    "ko": "산업보건"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "industrial-health.chapter.physical",
+      "path": "domains/10-prevention-clerkships/subjects/industrial-health/chapters/physical/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "industrial-health.plan.001",
+    "industrial-health.plan.002",
+    "industrial-health.plan.003",
+    "industrial-health.plan.004",
+    "industrial-health.plan.005",
+    "industrial-health.plan.006",
+    "industrial-health.physical.noise"
+  ]
+}

@@ -303,7 +303,7 @@ const Fullpost: React.FC = () => {
 
   const renderAuthorProfile = () => {
     if (postNicknameOption === 'AI') {
-      return <img className={styles.friendProfileImage} src="/assets/AI.png" alt="AI" />;
+      return <img className={styles.friendProfileImage} src="/assets/AbrodyHuman.png" alt="AI" />;
     } else {
       return (
         <ProfileWithFlag

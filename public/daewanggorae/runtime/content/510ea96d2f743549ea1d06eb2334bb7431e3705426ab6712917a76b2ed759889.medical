@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "orthopedics",
+  "title": {
+    "ko": "정형외과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "orthopedics.chapter.fracture",
+      "path": "domains/06-surgery/subjects/orthopedics/chapters/fracture/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "orthopedics.plan.001",
+    "orthopedics.plan.002",
+    "orthopedics.plan.003",
+    "orthopedics.plan.004",
+    "orthopedics.plan.005",
+    "orthopedics.plan.006",
+    "orthopedics.plan.007",
+    "orthopedics.fracture.healing-stability"
+  ]
+}

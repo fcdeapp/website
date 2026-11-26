@@ -1,0 +1,23 @@
+{
+  "id": "question.diagnostic-pathology.specimen.interpretation.001",
+  "kind": "original_concept_question",
+  "lessonId": "diagnostic-pathology.specimen.interpretation",
+  "prompt": "음성 절제연이 뜻하는 범위는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "평가한 조직 경계에서 종양이 확인되지 않았다는 의미이다."
+    },
+    {
+      "id": "B",
+      "text": "몸 전체에 어떤 종양세포도 없음을 보장한다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "절제연 검사는 제출된 조직의 경계 정보이며 원격 미세전이 전체를 평가하지 않는다.",
+  "optionRationales": {
+    "A": "절제연 검사는 제출된 조직의 경계 정보이며 원격 미세전이 전체를 평가하지 않는다.",
+    "B": "절제연 검사는 제출된 조직의 경계 정보이며 원격 미세전이 전체를 평가하지 않는다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

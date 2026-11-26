@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology",
+  "title": {
+    "ko": "면역학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "immunology.chapter.antigen",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/antigen/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.innate",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/innate/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.humoral",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/humoral/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.hypersensitivity",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/hypersensitivity/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "immunology.plan.001",
+    "immunology.plan.002",
+    "immunology.plan.003",
+    "immunology.plan.004",
+    "immunology.plan.005",
+    "immunology.plan.006",
+    "immunology.plan.007",
+    "immunology.antigen.presentation",
+    "immunology.innate.complement",
+    "immunology.humoral.germinal-center",
+    "immunology.hypersensitivity.mechanisms"
+  ]
+}

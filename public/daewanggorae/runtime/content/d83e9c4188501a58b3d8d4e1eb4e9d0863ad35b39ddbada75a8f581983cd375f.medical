@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "gynecology.bleeding.abnormal-uterine-bleeding",
+  "subjectId": "gynecology",
+  "chapterId": "bleeding",
+  "title": {
+    "ko": "비정상 자궁출혈의 병태생리와 평가",
+    "en": "Abnormal Uterine Bleeding"
+  },
+  "learningObjectives": [
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.lo.01",
+      "text": "출혈의 위치와 임신 관련 원인을 먼저 구별한다"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.lo.02",
+      "text": "구조적 원인과 배란·지혈 장애를 연결한다"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.lo.03",
+      "text": "검사 목적과 치료 목표를 구분한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.332dd1e56c5d",
+      "type": "heading",
+      "level": 2,
+      "text": "출혈이라는 증상에서 출발하기"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.306af5cf2e86",
+      "type": "paragraph",
+      "markdown": "비정상 자궁출혈(abnormal uterine bleeding, AUB)은 월경의 빈도와 규칙성, 지속기간 또는 출혈량이 정상적인 양상에서 벗어난 경우를 다루는 증상 범주이다. 하나의 조직학적 진단명이 아니므로 출혈을 멈추는 처치와 원인을 밝히는 평가를 구별해야 한다. 환자가 질출혈이라고 표현해도 출혈원이 외음부와 질, 자궁경부, 자궁내막 중 어디인지 확인해야 하며 요로와 직장의 출혈이 혼동될 수도 있다. 먼저 출혈의 실제 위치와 긴급도를 파악한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.8bd7b0f7ea4b",
+      "type": "paragraph",
+      "markdown": "생식 가능성이 있는 환자에서는 임신 관련 출혈을 별도로 고려한다. 임신 초기의 출혈과 자궁외임신, 임신 소실 등은 비임신 자궁출혈의 분류와 다른 평가가 필요하다. 환자의 주기 기억이나 피임 사용만으로 임신 가능성을 완전히 배제할 수는 없다. 심한 출혈에서는 원인 분류를 완성하기 전에 순환 상태와 증상성 빈혈, 지속 출혈을 평가해야 한다. 정상 혈압이 출혈의 위험을 모두 배제하지 않는다는 원칙은 이 상황에서도 적용된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.e4a2318408c9",
+      "type": "heading",
+      "level": 2,
+      "text": "정상 내막과 배란의 역할"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.47cbe087b5e2",
+      "type": "paragraph",
+      "markdown": "정상 배란주기에서 에스트로겐은 내막 증식에, 배란 뒤 황체의 프로게스테론은 분비성 변화와 내막 조절에 관여한다. 황체 기능이 소실되어 호르몬이 감소하면 혈관과 기질, 염증 및 단백분해의 국소 변화가 조직 탈락으로 연결된다. 지혈과 재생이 조절되면서 출혈이 끝난다. 월경은 단순히 혈관이 터지는 현상이 아니라 내분비 변화와 국소 지혈·염증·조직 재생이 시간에 맞추어 진행되는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.9c7c0836514c",
+      "type": "paragraph",
+      "markdown": "무배란에서는 정상적인 황체기 프로게스테론 노출이 형성되지 않을 수 있다. 에스트로겐 자극이 지속되는 정도와 내막 상태에 따라 불규칙하고 때로 많은 출혈이 발생한다. 그러나 모든 무배란 환자가 같은 호르몬 농도와 내막 두께를 보이는 것은 아니다. 에너지 부족과 시상하부 억제에 의한 저에스트로겐 상태, 다낭난소증후군과 관련된 만성 무배란은 같은 무월경이나 불규칙 출혈로 표현되어도 생리가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.032c4ee5bf39",
+      "type": "heading",
+      "level": 2,
+      "text": "원인 분류를 기전에 연결하기"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.fa6fe9750c7c",
+      "type": "paragraph",
+      "markdown": "PALM-COEIN 분류는 비임신 생식연령 자궁출혈의 원인을 정리하는 틀이다. PALM은 용종(polyp), 자궁선근증(adenomyosis), 평활근종(leiomyoma), 악성종양과 내막증식증(malignancy and hyperplasia)을 포함한다. COEIN은 응고장애(coagulopathy), 배란장애(ovulatory dysfunction), 내막 원인(endometrial), 의인성(iatrogenic), 기타 미분류 원인을 다룬다. 분류는 평가의 누락을 줄이는 도구이며 한 환자에게 원인이 하나만 존재한다고 가정하는 규칙은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.1d8cf687a354",
+      "type": "paragraph",
+      "markdown": "평활근종은 위치에 따라 자궁강과 내막에 미치는 영향이 다르다. 근종이 관찰되었다는 사실만으로 모든 출혈을 그 병변 탓으로 확정하면 안 된다. 자궁선근증은 자궁근층 내의 내막성 조직과 관련된 질환으로 통증과 자궁 변화가 동반될 수 있고, 용종은 자궁강의 국소 병변으로 나타날 수 있다. 구조적 이상은 크기뿐 아니라 위치와 증상, 내막과의 관계를 평가해야 한다. 우연한 영상 소견과 증상의 실제 원인을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.30a7c874d11b",
+      "type": "paragraph",
+      "markdown": "초경 무렵부터 심한 출혈이 있었거나 코피와 멍, 시술 뒤 과도한 출혈 및 가족력이 있다면 전신 지혈 장애를 고려한다. 항응고제와 호르몬 약물, 자궁 내 장치 등도 출혈 양상에 영향을 줄 수 있다. 처방약뿐 아니라 복용 시점과 누락, 다른 약제의 병용을 확인한다. 내막의 국소 지혈 이상은 다른 원인을 충분히 평가한 뒤 고려하는 범주이며, 영상에서 뚜렷한 종괴가 없다는 사실만으로 모든 평가가 끝나는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.0aaa57d388f7",
+      "type": "heading",
+      "level": 2,
+      "text": "병력과 검사 선택"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.fb9fafdcd63f",
+      "type": "paragraph",
+      "markdown": "문진에서는 마지막 월경과 주기 변화, 출혈 지속기간, 생리용품 사용과 넘침, 혈괴, 야간 교체, 일상과 수면에 미치는 영향을 구체적으로 확인한다. 눈으로 추정한 혈액량은 정확하지 않을 수 있고 만성 출혈에 적응한 환자는 부담을 과소평가할 수 있다. 피로와 운동 시 호흡곤란 등 빈혈 증상, 골반통과 성교 후 출혈, 약물 및 가족력도 중요하다. 출혈량의 숫자만이 아니라 삶의 질과 환자의 우선순위를 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.ec196b299ad6",
+      "type": "paragraph",
+      "markdown": "혈액검사는 빈혈과 필요에 따른 철 상태, 임신 여부 및 의심되는 전신 원인을 평가한다. 모든 환자에게 같은 호르몬 검사를 일괄 시행하기보다 병력과 진찰에서 제기된 질문에 맞추어 선택한다. 초음파는 자궁과 부속기의 형태를 평가하고 자궁경검사는 자궁강 내부 병변의 직접 관찰과 표적 평가에 도움이 된다. 영상은 세포의 이형성 여부를 모두 판정하는 검사가 아니며 조직검사는 전체 자궁의 모든 위치를 균등하게 대표하지 못할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.d38af204e1eb",
+      "type": "paragraph",
+      "markdown": "내막 평가의 필요성과 방식은 연령과 폐경 여부, 출혈 양상과 지속, 위험요인 및 기존 치료 반응을 고려하여 정한다. 폐경 후 새 출혈은 생식연령의 불규칙 주기와 같은 맥락으로 취급하지 않는다. 음성 검사 뒤에도 출혈이 지속되거나 임상적 의심이 남으면 표본의 적절성과 놓친 국소 병변을 다시 생각해야 한다. 검사 한 번의 정상 결과와 이후 평가가 불필요하다는 판단은 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.478244589cda",
+      "type": "heading",
+      "level": 2,
+      "text": "치료 목표와 추적"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.b424ff086335",
+      "type": "paragraph",
+      "markdown": "치료는 급성 출혈의 안정화, 장기적인 출혈 감소, 빈혈과 철 결핍의 교정, 원인 질환의 관리라는 여러 목적을 가진다. 약물은 내막과 호르몬 환경 또는 지혈 과정에 영향을 줄 수 있고, 시술과 수술은 병변 및 자궁 구조를 대상으로 한다. 선택에는 원인뿐 아니라 금기와 부작용, 피임과 향후 임신 계획, 환자의 선호를 포함해야 한다. 같은 출혈 감소 효과라도 생식 기능과 회복 부담에 미치는 영향은 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding.b.eef64e5190ba",
+      "type": "paragraph",
+      "markdown": "치료 뒤에는 출혈 양상과 기능, 빈혈 회복, 이상반응을 추적한다. 증상이 줄었더라도 원인 평가가 필요한 위험이 사라진 것은 아니며, 반대로 출혈량 수치의 작은 변화만으로 환자의 실질적인 이득을 무시해서도 안 된다. 치료 실패에서는 복용과 약물 노출, 원인 분류와 동반 질환, 자궁강 병변과 내막 평가의 적절성을 재검토한다. 증상 조절과 원인에 대한 안전한 관찰을 함께 유지하는 것이 장기 관리의 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/gynecology/chapters/bleeding/sections/gynecology.bleeding.abnormal-uterine-bleeding.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.gynecology.bleeding.abnormal-uterine-bleeding.001"
+  ]
+}

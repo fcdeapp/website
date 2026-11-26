@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "parasitology.malaria.life-cycle",
+  "subjectId": "parasitology",
+  "chapterId": "malaria",
+  "title": {
+    "ko": "말라리아 생활사와 질병 발생",
+    "en": "Malaria Life Cycle and Pathogenesis"
+  },
+  "learningObjectives": [
+    {
+      "id": "parasitology.malaria.life-cycle.lo.01",
+      "text": "사람과 모기에서의 원충 발달 단계를 구별한다"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.lo.02",
+      "text": "재발과 혈중 원충의 지속을 구별한다"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.lo.03",
+      "text": "적혈구 침범을 빈혈 및 미세순환 장애와 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "parasitology.malaria.life-cycle.b.919e9062aed2",
+      "type": "heading",
+      "level": 2,
+      "text": "숙주가 바뀌면 발달 단계도 바뀐다"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.6517a6b22d22",
+      "type": "paragraph",
+      "markdown": "말라리아(malaria)는 열원충(Plasmodium)에 의한 감염병이다. 생활사에는 사람과 얼룩날개모기(Anopheles)가 관여한다. 기생충학에서 종숙주(definitive host)는 성적 생식이 일어나는 숙주를 의미하므로 열원충의 종숙주는 모기이고 사람은 중간숙주이다. 이는 어느 숙주가 더 큰 고통을 받는지나 어느 숙주에서 원충이 더 많이 증식하는지를 뜻하는 분류가 아니다. 생활사의 각 단계는 침입하는 세포, 증식 방식, 치료 표적이 다르므로 단계의 구별이 병태생리 이해에 직접 연결된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.b478f8e8669e",
+      "type": "paragraph",
+      "markdown": "감염된 모기가 흡혈할 때 포자소체(sporozoite)가 사람에게 들어와 간세포를 침범한다. 간세포 내에서 증식한 뒤 분열소체(merozoite)가 혈류로 나와 적혈구를 감염시킨다. 이 초기 간 단계와 적혈구 단계는 같은 복제 과정의 장소만 바뀐 것이 아니라 세포 침입 방식과 발달 상태가 다른 단계이다. 혈액도말에서 관찰하는 원충은 주로 적혈구 내 발달 단계이며, 간에 원충이 있다는 사실을 말초혈액도말로 직접 관찰하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.e24f70382c5a",
+      "type": "paragraph",
+      "markdown": "적혈구 내에서는 어린 영양형인 반지형(ring form), 성숙한 영양형(trophozoite), 분열체(schizont)로 발달한다. 적혈구가 파괴되며 방출된 분열소체는 다른 적혈구를 침범한다. 일부 원충은 생식모세포(gametocyte)로 분화하여 다음 모기의 흡혈 때 옮겨갈 준비를 한다. 모기에서는 수정과 이후 발달 과정을 거쳐 다시 포자소체가 만들어져 침샘으로 이동한다. 사람에서 증상을 만드는 무성 적혈구 단계와 모기로 전파되는 생식모세포 단계를 구별하면 감염자의 증상과 전파 가능성이 항상 나란히 움직이지 않는 이유를 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.867efb42c4f8",
+      "type": "heading",
+      "level": 2,
+      "text": "발열과 빈혈의 발생"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.5e0517cce1a4",
+      "type": "paragraph",
+      "markdown": "적혈구 단계의 증식과 파괴는 염증매개물질의 방출을 유발하고 오한, 발열, 발한 등의 증상을 만든다. 원충의 적혈구 주기가 동기화되면 발열에 주기성이 나타날 수 있지만 초기 감염, 혼합 감염, 부분 치료, 개별 환자의 면역반응에 따라 일정하지 않다. 전형적인 주기열이 없다는 이유로 말라리아를 배제할 수 없는 이유이다. 비유행 지역에서 발열 환자를 평가할 때에는 해외 체류뿐 아니라 국내 노출 지역, 마지막 노출 시점, 예방약 복용과 수혈력 등의 맥락을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.0bbbcc9552c8",
+      "type": "paragraph",
+      "markdown": "빈혈은 감염된 적혈구의 파괴만으로 설명되지 않는다. 비장에서 감염 적혈구와 비감염 적혈구의 제거가 증가할 수 있고, 염증에 따른 조혈 억제도 기여한다. 비장은 비정상 적혈구를 제거하는 방어기관이면서 감염 과정에서 커질 수 있는 장기이다. 혈소판 감소 역시 관찰될 수 있으나 그 소견만으로 특정 원충 종을 확정할 수는 없다. 헤모글로빈, 혈소판 수, 용혈 지표, 간·신장 기능은 원충 확인 검사와 다른 정보를 제공하며 중증도와 장기 손상을 평가하는 데 이용된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.parasitology.malaria.life-cycle.organ-context"
+      ],
+      "conceptRefs": [
+        "FMA7196"
+      ]
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.734e6464a0d2",
+      "type": "heading",
+      "level": 2,
+      "text": "종 차이와 지속 감염"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.a09a5972d35f",
+      "type": "paragraph",
+      "markdown": "삼일열원충(P. vivax)과 난형열원충(P. ovale)은 간에 휴면소체(hypnozoite)를 남길 수 있다. 휴면소체가 다시 활성화되어 혈중 감염을 일으키는 현상을 재발(relapse)이라고 한다. 혈액 속 원충이 완전히 제거되지 않아 다시 증가하는 재연(recrudescence)과는 원인이 다르다. 새 모기 노출에 의한 재감염(reinfection)도 구별해야 한다. 치료 후 발열이 다시 나타났을 때 시간 간격 하나만으로 이들을 확정하지 않고 원충 종, 치료 내용, 약물 흡수와 순응도, 새로운 노출 가능성을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.761d3db4c6c0",
+      "type": "paragraph",
+      "markdown": "열대열원충(P. falciparum) 감염에서는 감염 적혈구 표면 변화에 따른 혈관내피 부착과 미세혈관 내 격리(sequestration)가 중요한 병태생리이다. 순환 혈액에서 측정한 원충혈증이 조직 미세혈관에 존재하는 전체 원충 부담을 완전히 대표하지 못할 수 있다. 미세순환 장애와 염증, 대사 이상이 함께 작용하여 뇌, 신장, 폐 등의 기능 장애를 만들 수 있다. 다만 다른 원충 종도 중증 질환을 일으킬 수 있으므로 종의 이름만으로 환자의 안전성을 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.b493a6a615a7",
+      "type": "heading",
+      "level": 2,
+      "text": "검사와 치료를 생활사에 연결하기"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.374b3e777cf6",
+      "type": "paragraph",
+      "markdown": "후층도말(thick smear)은 혈액을 두껍게 모아 원충을 검출하는 데 유리하고, 박층도말(thin smear)은 적혈구 형태와 원충 형태를 관찰하여 종 동정과 원충혈증 평가에 도움을 준다. 검체 제작과 판독 숙련도는 결과에 큰 영향을 미친다. 신속항원검사는 상황에 따라 빠른 단서를 제공하지만 검사 표적의 특성 때문에 종 구별과 민감도에 한계가 있고, 치료 뒤 항원 지속은 현재의 살아 있는 원충 부담과 결과가 일치하지 않게 만들 수 있다. 임상적 의심이 높은 경우 단 한 번의 음성 검사만으로 진단을 종결하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "parasitology.malaria.life-cycle.b.e05738f41eed",
+      "type": "paragraph",
+      "markdown": "치료는 혈중 무성 원충의 제거, 특정 종의 간 휴면 단계 제거, 중증 장기 기능 장애의 관리라는 서로 다른 목적을 가질 수 있다. 혈중 원충을 줄이는 약제가 간 휴면소체도 반드시 제거하는 것은 아니다. 일부 간 단계 치료 약물은 G6PD 결핍에서 용혈 위험이 있어 투여 전 효소 기능 평가와 환자별 고려가 필요하다. 임신, 연령, 중증도, 감염 지역의 내성 양상은 약제 선택을 바꾼다. 생활사를 외우는 목적은 약물 이름을 단계 옆에 붙이는 데 있지 않고, 임상적 회복과 기생충학적 제거가 왜 다른 과제인지를 이해하는 데 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/parasitology/chapters/malaria/sections/parasitology.malaria.life-cycle.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.parasitology.malaria.life-cycle.001"
+  ],
+  "keyFacts": [
+    "휴면소체이다."
+  ]
+}

@@ -1,0 +1,2790 @@
+{
+  "schemaVersion": "1.0.0",
+  "lessons": [
+    {
+      "lessonId": "pharmacology.general.pharmacokinetics",
+      "references": [
+        {
+          "sourceRef": "pk",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "pharmacology.general.pharmacokinetics.b.cd014f1ae98c",
+          "sourceRefs": [
+            "pk"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "cardiology.heart-failure.syndrome",
+      "references": [
+        {
+          "sourceRef": "hf-classification-2022",
+          "use": "selected_fact_comparison"
+        },
+        {
+          "sourceRef": "hf-consensus-2024",
+          "use": "selected_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "cardiology.heart-failure.syndrome.b.38c049e758d5",
+          "sourceRefs": [
+            "hf-classification-2022"
+          ]
+        },
+        {
+          "blockId": "cardiology.heart-failure.syndrome.b.a57c1958c449",
+          "sourceRefs": [
+            "hf-consensus-2024"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "pathology.cell.injury-death",
+      "references": [
+        {
+          "sourceRef": "robbins-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "cell-death",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "hematology.hemostasis.platelet-coagulation",
+      "references": [
+        {
+          "sourceRef": "hemostasis-review",
+          "use": "selected_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "hematology.hemostasis.platelet-coagulation.b.4b17043e98b2",
+          "sourceRefs": [
+            "hemostasis-review"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "physiology.cell.membrane-potential",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "physiology.cardiovascular.cardiac-cycle",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.cardiovascular.cardiac-cycle.b.c535363cb829",
+          "sourceRefs": [
+            "cardiac-cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "physiology.respiratory.ventilation-perfusion",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "physiology.renal.filtration",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.renal.filtration.b.af28c6a0fd99",
+          "sourceRefs": [
+            "filtration"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "physiology.renal.raas",
+      "references": [
+        {
+          "sourceRef": "guyton-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.renal.raas.b.4babe58b1243",
+          "sourceRefs": [
+            "raas"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.thorax.heart",
+      "references": [
+        {
+          "sourceRef": "gray-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "heart-anatomy",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.thorax.heart.b.160da28e6b17",
+          "sourceRefs": [
+            "heart-anatomy"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "psychiatry.assessment.mental-status",
+      "references": [
+        {
+          "sourceRef": "mental-status",
+          "use": "selected_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "psychiatry.assessment.mental-status.b.5b8723ad15f8",
+          "sourceRefs": [
+            "mental-status"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "patient-safety.systems.handover",
+      "references": [
+        {
+          "sourceRef": "who-safety",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "endocrinology.thyroid.hormone-synthesis",
+      "references": [
+        {
+          "sourceRef": "thyroid-physiology",
+          "use": "selected_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "endocrinology.thyroid.hormone-synthesis.b.dddd9ecf5cae",
+          "sourceRefs": [
+            "thyroid-physiology"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "endocrinology.pituitary.feedback",
+      "references": [
+        {
+          "sourceRef": "kda-2025",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "endocrinology.diabetes.foundations",
+      "references": [
+        {
+          "sourceRef": "kda-2025",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "endocrinology.diabetes.foundations.b.515546d201ad",
+          "sourceRefs": [
+            "kda-2025"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "nephrology.ckd.evaluation",
+      "references": [
+        {
+          "sourceRef": "kdigo-2024",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "nephrology.ckd.evaluation.b.549406690296",
+          "sourceRefs": [
+            "kdigo-2024"
+          ]
+        },
+        {
+          "blockId": "nephrology.ckd.evaluation.b.0c4dd9c9b2b5",
+          "sourceRefs": [
+            "kdigo-2024"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.enzymes.kinetics",
+      "references": [
+        {
+          "sourceRef": "enzyme-assays",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "biochemistry.metabolism.tca",
+      "references": [
+        {
+          "sourceRef": "enzyme-assays",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "immunology.antigen.presentation",
+      "references": [
+        {
+          "sourceRef": "antigen-presentation",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": []
+    },
+    {
+      "lessonId": "biochemistry.carbohydrate.glycolysis",
+      "references": [
+        {
+          "sourceRef": "glycolysis-facts",
+          "use": "selected_core_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "biochemistry.carbohydrate.glycolysis.b.2478feca29aa",
+          "sourceRefs": [
+            "glycolysis-facts"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.carbohydrate.gluconeogenesis",
+      "references": [
+        {
+          "sourceRef": "gluconeogenesis-facts",
+          "use": "selected_core_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.a842ea137232",
+          "sourceRefs": [
+            "gluconeogenesis-facts"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.bioenergetics.oxidative-phosphorylation",
+      "references": [
+        {
+          "sourceRef": "oxphos-facts",
+          "use": "selected_core_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "biochemistry.bioenergetics.oxidative-phosphorylation.b.d8ce3a185d0e",
+          "sourceRefs": [
+            "oxphos-facts"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "immunology.innate.complement",
+      "references": [
+        {
+          "sourceRef": "complement-janeway",
+          "use": "selected_core_fact_comparison"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "immunology.innate.complement.b.16b190d9a9c0",
+          "sourceRefs": [
+            "complement-janeway"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.carbohydrate.glycogen",
+      "references": [
+        {
+          "sourceRef": "glycogen-facts",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "biochemistry.carbohydrate.glycogen.b.483f6a7eb700",
+          "sourceRefs": [
+            "glycogen-facts"
+          ],
+          "scope": "간과 근육의 저장 기능을 다룬 자료의 범위와 비교; 세부 효소·질환 설명 대조 아님"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "physiology.renal.potassium",
+      "references": [
+        {
+          "sourceRef": "potassium-homeostasis",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.renal.potassium.b.26b1623177d8",
+          "sourceRefs": [
+            "potassium-homeostasis"
+          ],
+          "scope": "인슐린의 분포 조절과 신장의 체외 제거를 구별하는 핵심 원리"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "pharmacology.autonomic.receptors",
+      "references": [
+        {
+          "sourceRef": "autonomic-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "systemic-pathology.kidney.glomerular-patterns",
+      "references": [
+        {
+          "sourceRef": "glomerular-consensus",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "systemic-pathology.kidney.glomerular-patterns.b.b258172783a3",
+          "sourceRefs": [
+            "glomerular-consensus"
+          ],
+          "scope": "광학·면역형광·전자현미경을 통합하는 원칙"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "immunology.humoral.germinal-center",
+      "references": [
+        {
+          "sourceRef": "gc-switch-study",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        },
+        {
+          "sourceRef": "gc-response-review",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "immunology.humoral.germinal-center.b.29f331502443",
+          "sourceRefs": [
+            "gc-switch-study"
+          ],
+          "scope": "동형전환의 시작을 성숙 배중심에만 제한하지 않는다는 핵심 주장"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "pathology.neoplasia.growth-control",
+      "references": [
+        {
+          "sourceRef": "robbins-toc",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "systemic-pharmacology.antimicrobials.beta-lactams",
+      "references": [
+        {
+          "sourceRef": "beta-lactam-targets",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        },
+        {
+          "sourceRef": "beta-lactam-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "immunology.hypersensitivity.mechanisms",
+      "references": [
+        {
+          "sourceRef": "hypersensitivity-classification",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "physiology.endocrine.calcium-phosphate",
+      "references": [
+        {
+          "sourceRef": "calcium-phosphate-endotext",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "physiology.endocrine.calcium-phosphate.b.1bc19ec59b4b",
+          "sourceRefs": [
+            "calcium-phosphate-endotext"
+          ],
+          "scope": "FGF23의 인산뇨 증가와 활성 비타민 D 감소 방향"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "physiology.muscle.excitation-contraction",
+      "references": [
+        {
+          "sourceRef": "skeletal-ec-review",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "toxicology.principles.exposure-and-toxidromes",
+      "references": [
+        {
+          "sourceRef": "antimuscarinic-toxicology",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "mycology.foundations.host-and-fungus",
+      "references": [
+        {
+          "sourceRef": "cdc-candidiasis",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        },
+        {
+          "sourceRef": "cdc-aspergillosis",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "mycology.foundations.host-and-fungus.b.c78df4837fd9",
+          "sourceRefs": [
+            "cdc-candidiasis"
+          ],
+          "scope": "집락과 침습을 구별하며 장벽·카테터 위험을 고려하는 원칙"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "parasitology.malaria.life-cycle",
+      "references": [
+        {
+          "sourceRef": "cdc-malaria-lifecycle",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "parasitology.malaria.life-cycle.b.a09a5972d35f",
+          "sourceRefs": [
+            "cdc-malaria-lifecycle"
+          ],
+          "scope": "vivax/ovale 간 휴면소체와 재발의 기본 관계"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "internal-medicine.diagnosis.probability",
+      "references": [
+        {
+          "sourceRef": "diagnostic-probability",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "internal-medicine.diagnosis.probability.b.66b859d51d0d",
+          "sourceRefs": [
+            "diagnostic-probability"
+          ],
+          "scope": "우도비와 사전·검사후 오즈의 관계; 숫자 예제는 별도 계산 확인"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "gastroenterology.digestion.malabsorption",
+      "references": [
+        {
+          "sourceRef": "niddk-epi-diagnosis",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "oncology.principles.staging-and-response",
+      "references": [
+        {
+          "sourceRef": "nci-staging",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        },
+        {
+          "sourceRef": "nci-markers",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "oncology.principles.staging-and-response.b.b2328ff2f209",
+          "sourceRefs": [
+            "nci-staging"
+          ],
+          "scope": "병기의 범위 및 T/N/M 기본 의미"
+        },
+        {
+          "blockId": "oncology.principles.staging-and-response.b.e2506f424a90",
+          "sourceRefs": [
+            "nci-markers"
+          ],
+          "scope": "표지자 상승만으로 암을 확진할 수 없다는 원칙"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "emergency-medicine.resuscitation.oxygen-delivery",
+      "references": [
+        {
+          "sourceRef": "oxygen-transport",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "emergency-medicine.resuscitation.oxygen-delivery.b.1954a3a33934",
+          "sourceRefs": [
+            "oxygen-transport"
+          ],
+          "scope": "분압과 헤모글로빈 결합 산소함량의 구별"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "anesthesiology.regional.local-anesthetic",
+      "references": [
+        {
+          "sourceRef": "local-anesthesia-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "anesthesiology.regional.local-anesthetic.b.fa823dc130e9",
+          "sourceRefs": [
+            "local-anesthesia-education"
+          ],
+          "scope": "전압개폐성 나트륨통로 차단의 핵심 원리"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "trauma-surgery.resuscitation.hemorrhagic-shock",
+      "references": [
+        {
+          "sourceRef": "hemorrhagic-shock-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "histology.liver.microcirculation",
+      "references": [
+        {
+          "sourceRef": "aasld-liver-histology",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "histology.liver.microcirculation.b.be36b93f8948",
+          "sourceRefs": [
+            "aasld-liver-histology"
+          ],
+          "scope": "소엽 내 혈류와 담즙 흐름의 반대 방향"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "embryology.cardiovascular.septation",
+      "references": [
+        {
+          "sourceRef": "unsw-heart-development",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "radiology.mri.signal-and-diffusion",
+      "references": [
+        {
+          "sourceRef": "aapm-mri-curriculum",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "reproductive-medicine.ovarian-cycle.feedback",
+      "references": [
+        {
+          "sourceRef": "ovarian-cycle-endotext",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "neonatology.bilirubin.production-and-clearance",
+      "references": [
+        {
+          "sourceRef": "aap-bilirubin-2022",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "geriatrics.cognition.delirium",
+      "references": [
+        {
+          "sourceRef": "nice-delirium-2023",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "biostatistics.inference.uncertainty",
+      "references": [
+        {
+          "sourceRef": "inference-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        },
+        {
+          "sourceRef": "cochrane-interpretation",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "epidemiology.causal-inference.bias-confounding",
+      "references": [
+        {
+          "sourceRef": "cdc-epi-analysis",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "epidemiology.causal-inference.bias-confounding.b.d95f2dda5784",
+          "sourceRefs": [
+            "cdc-epi-analysis"
+          ],
+          "scope": "효과수정과 교란의 개념적 구별"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "evidence-based-medicine.effects.absolute-relative",
+      "references": [
+        {
+          "sourceRef": "cochrane-interpretation",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        },
+        {
+          "sourceRef": "cochrane-effect-measures",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "transfusion-medicine.compatibility.components-reactions",
+      "references": [
+        {
+          "sourceRef": "transfusion-reactions-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "clinical-nutrition.metabolism.starvation-refeeding",
+      "references": [
+        {
+          "sourceRef": "nice-nutrition-cg32",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "rehabilitation.motor-control.weakness-and-tone",
+      "references": [
+        {
+          "sourceRef": "umn-signs-education",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "biochemistry.amino-acids.urea-cycle",
+      "references": [
+        {
+          "sourceRef": "urea-cycle-genereviews",
+          "use": "scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_claim_review_pending"
+    },
+    {
+      "lessonId": "physiology.respiratory.control-of-breathing",
+      "references": [
+        {
+          "sourceRef": "respiratory-drive-education",
+          "use": "scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_claim_review_pending"
+    },
+    {
+      "lessonId": "imaging-anatomy.cross-sectional.orientation",
+      "references": [
+        {
+          "sourceRef": "radiologyinfo-report",
+          "use": "scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_claim_review_pending"
+    },
+    {
+      "lessonId": "gynecology.bleeding.abnormal-uterine-bleeding",
+      "references": [
+        {
+          "sourceRef": "nice-hmb-ng88",
+          "use": "selected_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "figo-aub-2018",
+          "use": "classification_scope_comparison"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "general-surgery.perioperative.wound-healing",
+      "references": [
+        {
+          "sourceRef": "wound-healing-phases",
+          "use": "selected_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "family-medicine.prevention.health-screening",
+      "references": [
+        {
+          "sourceRef": "nci-screening-overview",
+          "use": "selected_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "general-surgery.perioperative.surgical-infection",
+      "references": [
+        {
+          "sourceRef": "cdc-ssi",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "gynecology.endometrium.hyperplasia",
+      "references": [
+        {
+          "sourceRef": "nci-endometrial-risk",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "family-medicine.prevention.counseling",
+      "references": [
+        {
+          "sourceRef": "uspstf-tobacco-2021",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "transplant-surgery.immunology.rejection",
+      "references": [
+        {
+          "sourceRef": "niddk-transplant",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "vascular-surgery.arterial.lower-limb-ischemia",
+      "references": [
+        {
+          "sourceRef": "nhlbi-pad-diagnosis",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "breast-surgery.assessment.breast-mass",
+      "references": [
+        {
+          "sourceRef": "nci-breast-diagnosis",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "radiation-oncology.principles.radiobiology",
+      "references": [
+        {
+          "sourceRef": "nci-radiation-intro",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "nuclear-medicine.imaging.tracer-kinetics",
+      "references": [
+        {
+          "sourceRef": "radiologyinfo-pet",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "diagnostic-pathology.specimen.interpretation",
+      "references": [
+        {
+          "sourceRef": "nci-pathology-reports",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "palliative-care.principles.symptom-and-goals",
+      "references": [
+        {
+          "sourceRef": "who-palliative-facts",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "research-ethics.human-subjects.consent",
+      "references": [
+        {
+          "sourceRef": "ohrp-consent-faq",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "medical-informatics.clinical-data.decision-support",
+      "references": [
+        {
+          "sourceRef": "onc-cds-principles",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "research-methods.design.question-and-estimand",
+      "references": [
+        {
+          "sourceRef": "cdc-epi-analysis",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "physical-examination.cardiovascular.venous-pulse",
+      "references": [
+        {
+          "sourceRef": "jvp-clinical-methods",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "clinical-communication.consultation.shared-decisions",
+      "references": [
+        {
+          "sourceRef": "nice-shared-decisions",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "procedures.safety.aseptic-injection",
+      "references": [
+        {
+          "sourceRef": "cdc-injection-safety",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "symptom-differential.respiratory.dyspnea",
+      "references": [
+        {
+          "sourceRef": "oxygen-transport",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "allergy.emergencies.anaphylaxis",
+      "references": [
+        {
+          "sourceRef": "wao-anaphylaxis-2020",
+          "use": "scope_or_selected_core_fact_consultation_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "endocrine-surgery.thyroid.recurrent-laryngeal-nerve",
+      "references": [
+        {
+          "sourceRef": "thyroid-surgery-nerves",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "hpb-surgery.biliary.obstructive-jaundice",
+      "references": [
+        {
+          "sourceRef": "merck-jaundice-mechanisms",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "occupational-medicine.exposure.work-history",
+      "references": [
+        {
+          "sourceRef": "niosh-control-hierarchy",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "gi-surgery.obstruction.mechanical-ileus",
+      "references": [
+        {
+          "sourceRef": "sbo-education",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "neurosurgery.physiology.intracranial-pressure",
+      "references": [
+        {
+          "sourceRef": "icp-monitoring-education",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "pediatric-surgery.intestine.intussusception",
+      "references": [
+        {
+          "sourceRef": "niddk-intussusception",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "environmental-health.risk.exposure-dose-response",
+      "references": [
+        {
+          "sourceRef": "who-environment-risk",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "health-management.financing.pooling-and-purchasing",
+      "references": [
+        {
+          "sourceRef": "who-health-financing",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "health-economics.evaluation.cost-effectiveness",
+      "references": [
+        {
+          "sourceRef": "nice-economic-evaluation",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "plastic-surgery.reconstruction.graft-and-flap",
+      "references": [
+        {
+          "sourceRef": "skin-graft-education",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "thoracic-surgery.pleura.pneumothorax",
+      "references": [
+        {
+          "sourceRef": "pneumothorax-education",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "forensic-medicine.postmortem.changes",
+      "references": [
+        {
+          "sourceRef": "postmortem-changes-education",
+          "use": "scope_or_selected_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "community-medicine.population.health-needs",
+      "verificationStatus": "source_comparison_pending",
+      "unresolvedIssues": [
+        "지역사회 건강요구 평가의 전체 문장별 출처 대조 미완료"
+      ]
+    },
+    {
+      "lessonId": "industrial-health.physical.noise",
+      "references": [
+        {
+          "sourceRef": "niosh-noise",
+          "use": "소음 노출과 예방 위계의 기본 범위"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "preventive-medicine.prevention.levels-and-strategies",
+      "references": [
+        {
+          "sourceRef": "who-environment-risk",
+          "use": "집단 예방의 선행 참고; 예방 단계 전체 문장 대조는 미완료"
+        },
+        {
+          "sourceRef": "cdc-prevention-levels",
+          "use": "selected_definition_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "cpx.consultation.integrated-assessment",
+      "references": [
+        {
+          "sourceRef": "gmc-performance-domains",
+          "use": "영국 임상수행의 평가 영역 참고; 국내 CPX 공식 평가표로 사용하지 않음"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "medical-humanities.illness.experience-and-narrative",
+      "references": [
+        {
+          "sourceRef": "who-person-centred",
+          "use": "사람의 요구와 선호, 참여를 진료와 연결하는 기본 개념"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "medical-law.consent.disclosure",
+      "references": [
+        {
+          "sourceRef": "korea-medical-law-consent-2026",
+          "use": "2026-11-12 시행본 제1항 열람. 제2~4항은 국가법령정보센터의 별도 전체조문 검색 발췌와 대조; 하위법령·판례 전수 검증 미완료"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "osce.performance.safe-structured-examination",
+      "references": [
+        {
+          "sourceRef": "gmc-performance-domains",
+          "use": "모형에서도 환자에게 위험한 행동을 피해야 한다는 원칙; 국내 시험 규칙 대조 아님"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "clerkships.practice.problem-list-and-handover",
+      "references": [
+        {
+          "sourceRef": "who-person-centred",
+          "use": "진료 연속성과 조정의 선행 자료; 인계 절차 전체의 검증은 미완료"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_review_pending"
+    },
+    {
+      "lessonId": "cardiology.ischemia.acute-coronary-syndrome",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "2025 국제 지침의 항혈소판·재혈관화·이차예방 범위; 전체 권고·용량 대조 미완료"
+      ],
+      "references": [
+        {
+          "sourceRef": "acs-2025",
+          "use": "selected_scope_consultation_not_full_lesson_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "pulmonology.obstruction.copd",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "2026 보고서의 진단·평가 범위. 2027 보고서 공개 검색 결과도 발견했으나 전체 변경사항 대조 미완료. 원문·도표 미수록"
+      ],
+      "references": [
+        {
+          "sourceRef": "gold-2026",
+          "use": "selected_scope_consultation_not_full_lesson_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.nucleotides.purine-pyrimidine",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "핵산대사 전체 문장별 출처 대조 미완료"
+      ],
+      "references": [
+        {
+          "sourceRef": "nucleotide-metabolism-review",
+          "use": "selected_salvage_pathway_comparison_not_full_lesson_review"
+        }
+      ]
+    },
+    {
+      "lessonId": "nephrology.acute.aki",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "aki-2012-landing",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "endocrinology.diabetes.hyperglycemic-emergencies",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "hyperglycemic-crises-2024",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "pharmacology.general.pharmacodynamics",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "iuphar-pharmacodynamics",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "electrolytes.acid-base.systematic-analysis",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "niddk-rta",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "electrolytes.water.sodium-disorders",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "ksn-hyponatremia-2022",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "electrolytes.potassium.distribution-excretion",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "niddk-rta",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "infectious-diseases.mycobacteria.tuberculosis",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "cdc-tb-overview-2025",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "genetics.inheritance.mendelian-mechanisms",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "nhgri-dominant",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "nhgri-recessive",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "medline-penetrance",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "systemic-pharmacology.autonomic.cholinergic-adrenergic",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "iuphar-autonomic",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "bacteriology.genetics.antimicrobial-resistance",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "cdc-ar-mechanisms",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "embryology.neural.neurulation-crest",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "unsw-neural-system",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "unsw-neural-crest",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "oncology.molecular.dna-repair",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "nci-brca",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "cardiology.heart-failure.mechanisms-evaluation",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "hf-aha-2022-selected",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "hf-esc-2023-selected",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "gastroenterology.inflammation.ibd",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "niddk-uc-diagnosis",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "biochemistry.lipids.fatty-acid-oxidation",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시",
+        "지방산 산화 전체 기전의 원저·공식 교재 근거 선정과 문장별 대조 필요"
+      ]
+    },
+    {
+      "lessonId": "biochemistry.heme.synthesis-breakdown",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "niddk-porphyria",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "physiology.digestive.secretion-control",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "niddk-digestion",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "preventive-medicine.screening.benefit-harm",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "nci-screening-pdq",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "nci-screening-statistics",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "research-methods.trials.randomization-estimands",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "fda-e9r1-2021",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "patient-safety.medication.reconciliation-systems",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "who-patient-safety",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "who-reporting-2020",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.general.orientation-fascia",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-joints",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-pns",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.pectoral-girdle",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-pectoral",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.shoulder-rotator-cuff",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.brachial-plexus",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-pns",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.axilla-vessels",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-circulatory",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.arm-elbow",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-upper-bones",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.forearm-wrist",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-upper-bones",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.hand-intrinsics",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "histology.connective.matrix-cells",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-connective",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "histology.supporting.cartilage-bone",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-connective",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-bone-structure",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "embryology.skeleton.ossification-growth-plate",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-ossification",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.axial.vertebral-column",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-vertebral-column",
+          "use": "limited_scope_consultation_not_full_lesson_review"
+        }
+      ],
+      "unresolvedIssues": [
+        "척주의 구역·구조와 원반의 기본 범위. 임상 신경학적 손상·시술의 전체 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.thorax.wall-diaphragm",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-thoracic-cage",
+          "use": "limited_scope_consultation_not_full_lesson_review"
+        }
+      ],
+      "unresolvedIssues": [
+        "갈비뼈·복장뼈 표지 범위 확인. 근층·가로막 신경·시술 안전의 전체 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.thorax.lungs-pleura",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-lungs-pleura",
+          "use": "limited_scope_consultation_not_full_lesson_review"
+        }
+      ],
+      "unresolvedIssues": [
+        "좌우 엽·폐구역과 가슴막의 기본 범위. 허파문 세부·림프·기흉 임상 판단 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.wall-peritoneum",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bluelink-abdomen-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false
+    },
+    {
+      "lessonId": "anatomy.abdomen.inguinal-canal",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bluelink-abdomen-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.inguinal-canal.b.e7c2bd253ac1",
+          "sourceRefs": [
+            "bluelink-abdomen-scope"
+          ],
+          "checkedScope": "깊은고리는 아래배벽혈관 가쪽이며 배가로근막의 입구",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.peritoneal-compartments",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bluelink-abdomen-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.peritoneal-compartments.b.d0f9a57e3280",
+          "sourceRefs": [
+            "bluelink-abdomen-scope"
+          ],
+          "checkedScope": "복막안은 잠재 공간이며 복막내장기는 그 공간 자체에 떠 있는 것이 아님",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.foregut",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-stomach",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bluelink-pancreas-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.foregut.b.de48d7375aaa",
+          "sourceRefs": [
+            "openstax-stomach"
+          ],
+          "checkedScope": "분문·위바닥·몸통·날문 구역의 구분",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.liver-segments",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bookshelf-liver-segments",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-digestive-accessory",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.liver-segments.b.fc8b8ba859a9",
+          "sourceRefs": [
+            "bookshelf-liver-segments"
+          ],
+          "checkedScope": "구역 중심의 문맥·동맥·담관과 구역 사이 주요 간정맥 관계",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.biliary-pancreas",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-digestive-accessory",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bluelink-liver-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.biliary-pancreas.b.b3007ef33291",
+          "sourceRefs": [
+            "openstax-digestive-accessory"
+          ],
+          "checkedScope": "간에서 담즙 생성, 담낭에서 저장·농축",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.spleen",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-lymphatic",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.spleen.b.84a55e60c60c",
+          "sourceRefs": [
+            "openstax-lymphatic"
+          ],
+          "checkedScope": "지라는 혈액 속 세포와 항원 처리에 중요하며 림프절의 림프 여과와 구분",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.intestine-mesenteric-vessels",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-intestine",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false
+    },
+    {
+      "lessonId": "anatomy.retroperitoneum.kidney-ureter",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-kidney-gross",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-ureter",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.retroperitoneum.kidney-ureter.b.47b2e8feee3a",
+          "sourceRefs": [
+            "bookshelf-ureter"
+          ],
+          "checkedScope": "요관은 콩팥깔때기에서 시작해 큰허리근 앞쪽 뒤복막으로 내려감",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        },
+        {
+          "blockId": "anatomy.retroperitoneum.kidney-ureter.b.6aa2627f02c4",
+          "sourceRefs": [
+            "bookshelf-ureter"
+          ],
+          "checkedScope": "구간별 혈관 공급과 요관 주변의 연결망",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.pelvis.floor-organs",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bookshelf-levator",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-urine-transport",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.pelvis.floor-organs.b.9e8e57b7a206",
+          "sourceRefs": [
+            "bookshelf-levator"
+          ],
+          "checkedScope": "항문올림근의 직접 엉치신경 가지와 체성·자율신경 구분",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.pelvis.rectum-anal-canal",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bookshelf-anal-canal",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.pelvis.rectum-anal-canal.b.bc046b96d701",
+          "sourceRefs": [
+            "bookshelf-anal-canal"
+          ],
+          "checkedScope": "빗살선 아래의 얕은샅림프절 방향과 위쪽 깊은 배액 경로",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "histology.digestive.wall-regional-patterns",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-stomach",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-intestine",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false
+    },
+    {
+      "lessonId": "histology.renal.nephron-vessels",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-kidney-micro",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "histology.renal.nephron-vessels.b.da202f5c1ad7",
+          "sourceRefs": [
+            "openstax-kidney-micro"
+          ],
+          "checkedScope": "Bowman 주머니의 벽측층과 발세포 장측층의 차이",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "embryology.digestive.rotation-fixation",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bookshelf-midgut",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "embryology.digestive.rotation-fixation.b.c69192653142",
+          "sourceRefs": [
+            "bookshelf-midgut"
+          ],
+          "checkedScope": "앞쪽 관찰 기준 위창자간막동맥 축의 270도 반시계 방향 재배열",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.pelvic-girdle",
+      "references": [
+        {
+          "sourceRef": "openstax-pelvic-girdle",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 부착·신경·혈관·임상 문장의 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.pelvic-girdle.b.8e7265fe7d44",
+          "sourceRefs": [
+            "openstax-pelvic-girdle"
+          ],
+          "checkedScope": "양쪽 볼기뼈·엉치뼈·꼬리뼈의 고리 구성"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.hip-gluteal",
+      "references": [
+        {
+          "sourceRef": "openstax-lower-bones",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-lower-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 부착·신경·혈관·임상 문장의 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.femoral-triangle",
+      "references": [
+        {
+          "sourceRef": "bookshelf-femoral-triangle",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-lower-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 부착·신경·혈관·임상 문장의 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.femoral-triangle.b.9a785adf274c",
+          "sourceRefs": [
+            "bookshelf-femoral-triangle"
+          ],
+          "checkedScope": "넙다리신경은 넙다리집 밖이며 삼각의 내용물과 구별"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.knee-popliteal",
+      "references": [
+        {
+          "sourceRef": "openstax-selected-joints",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "aaos-acl-anatomy",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "aaos-meniscus-anatomy",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-popliteal-region",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.knee-popliteal.b.d9b29891c9d6",
+          "sourceRefs": [
+            "aaos-acl-anatomy"
+          ],
+          "checkedScope": "ACL의 앞쪽 정강뼈 이동 제한과 회전 안정성"
+        },
+        {
+          "blockId": "anatomy.lower-limb.knee-popliteal.b.44455cbde43f",
+          "sourceRefs": [
+            "bookshelf-popliteal-region"
+          ],
+          "checkedScope": "오금 신경·정맥·동맥의 기본 깊이 관계"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.leg-ankle",
+      "references": [
+        {
+          "sourceRef": "openstax-lower-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-selected-joints",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-foot-ankle-anatomy",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.leg-ankle.b.37c2e86efd5b",
+          "sourceRefs": [
+            "bookshelf-foot-ankle-anatomy"
+          ],
+          "checkedScope": "굽힘근지지띠 아래 발목굴 내용물"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.foot-arches",
+      "references": [
+        {
+          "sourceRef": "bookshelf-foot-arches",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-lower-bones",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.foot-arches.b.8977bb30d3c1",
+          "sourceRefs": [
+            "bookshelf-foot-arches"
+          ],
+          "checkedScope": "발가락 폄과 발바닥널힘줄 긴장 연결"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.skull-base-foramina",
+      "references": [
+        {
+          "sourceRef": "openstax-skull",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.skull-base-foramina.b.d02537de76c9",
+          "sourceRefs": [
+            "openstax-skull"
+          ],
+          "checkedScope": "시각신경관의 뼈 표지"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.neck-fascia-triangles",
+      "references": [
+        {
+          "sourceRef": "bookshelf-deep-cervical-fascia",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.neck-fascia-triangles.b.8b2fc596c017",
+          "sourceRefs": [
+            "bookshelf-deep-cervical-fascia"
+          ],
+          "checkedScope": "목교감신경줄기는 목동맥집 중심 내용물과 구별되는 바깥 구조"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.larynx-vocal-folds",
+      "references": [
+        {
+          "sourceRef": "bookshelf-laryngeal-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-recurrent-laryngeal",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.larynx-vocal-folds.b.ea2b0189da8d",
+          "sourceRefs": [
+            "bookshelf-laryngeal-muscles"
+          ],
+          "checkedScope": "뒤반지모뿔근은 주된 성대 벌림근"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.thyroid-parathyroid-relations",
+      "references": [
+        {
+          "sourceRef": "kjorl-thyroid-anatomy-1998",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-recurrent-laryngeal",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.thyroid-parathyroid-relations.b.bb4480d7356e",
+          "sourceRefs": [
+            "kjorl-thyroid-anatomy-1998"
+          ],
+          "checkedScope": "아래갑상샘동맥 분지와 되돌이후두신경 위치 관계의 변이"
+        }
+      ]
+    },
+    {
+      "lessonId": "histology.endocrine.thyroid-parathyroid",
+      "references": [
+        {
+          "sourceRef": "openstax-thyroid",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-parathyroid",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "leeds-thyroid-histology",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "endotext-hypercalcemia-physiology",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "histology.endocrine.thyroid-parathyroid.b.f4721861cf6b",
+          "sourceRefs": [
+            "openstax-thyroid"
+          ],
+          "checkedScope": "갑상샘글로불린 결합 저장체와 유리호르몬의 구분"
+        },
+        {
+          "blockId": "histology.endocrine.thyroid-parathyroid.b.3abd947dd5a5",
+          "sourceRefs": [
+            "endotext-hypercalcemia-physiology"
+          ],
+          "checkedScope": "높은 세포외 칼슘에 의한 CaSR 활성과 PTH 억제"
+        }
+      ]
+    },
+    {
+      "lessonId": "histology.respiratory.airways-alveoli",
+      "references": [
+        {
+          "sourceRef": "leeds-respiratory-conducting",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "leeds-respiratory-portion",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-respiratory-organs",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-lungs-pleura",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "histology.respiratory.airways-alveoli.b.9c9a33e43e1a",
+          "sourceRefs": [
+            "leeds-respiratory-conducting"
+          ],
+          "checkedScope": "정상 세기관지의 연골과 점막밑샘 부재"
+        },
+        {
+          "blockId": "histology.respiratory.airways-alveoli.b.c995aac02cfa",
+          "sourceRefs": [
+            "leeds-respiratory-portion"
+          ],
+          "checkedScope": "I형의 얇은 표면과 II형의 표면활성제 분비 구분"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.oral-tongue-salivary",
+      "references": [
+        {
+          "sourceRef": "bookshelf-oral-cavity",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-chorda-tympani",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.oral-tongue-salivary.b.b4eb2847153b",
+          "sourceRefs": [
+            "bookshelf-oral-cavity"
+          ],
+          "checkedScope": "앞혀 일반감각 V3와 미각 VII 경로 분리"
+        },
+        {
+          "blockId": "anatomy.head-neck.oral-tongue-salivary.b.0fca6b4bb191",
+          "sourceRefs": [
+            "bookshelf-chorda-tympani"
+          ],
+          "checkedScope": "미각과 절전 부교감섬유 동행"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.pharynx-soft-palate",
+      "references": [
+        {
+          "sourceRef": "bookshelf-stylopharyngeus",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-swallowing-anatomy",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-oral-cavity",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.pharynx-soft-palate.b.d42e2797b81f",
+          "sourceRefs": [
+            "bookshelf-stylopharyngeus"
+          ],
+          "checkedScope": "붓인두근의 IX 지배"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.orbit-extraocular",
+      "references": [
+        {
+          "sourceRef": "bookshelf-orbit-bones",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-eye-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-visual-pathway-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.orbit-extraocular.b.910acd26bd95",
+          "sourceRefs": [
+            "bookshelf-eye-muscles"
+          ],
+          "checkedScope": "가쪽곧은근 VI·위빗근 IV의 운동지배"
+        }
+      ]
+    },
+    {
+      "lessonId": "neuroanatomy.brainstem.levels-localization",
+      "references": [
+        {
+          "sourceRef": "bookshelf-brainstem",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "uth-trigeminal-nuclei",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "neuroanatomy.brainstem.levels-localization.b.3791176d9186",
+          "sourceRefs": [
+            "uth-trigeminal-nuclei"
+          ],
+          "checkedScope": "다리뇌의 삼차신경 감각·운동핵 및 중간뇌핵의 일차 고유감각 세포체"
+        }
+      ]
+    },
+    {
+      "lessonId": "neuroanatomy.cerebellum.cortex-connections",
+      "references": [
+        {
+          "sourceRef": "bookshelf-cerebellar-dysfunction",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "purves-cerebellar-circuits",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "neuroanatomy.cerebellum.cortex-connections.b.b2cff3b33c33",
+          "sourceRefs": [
+            "bookshelf-cerebellar-dysfunction"
+          ],
+          "checkedScope": "푸르키녜세포의 억제성 출력"
+        }
+      ]
+    },
+    {
+      "lessonId": "neuroanatomy.meninges.ventricles-csf",
+      "references": [
+        {
+          "sourceRef": "purves-ventricular-system",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-csf",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-cranial-meninges",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "neuroanatomy.meninges.ventricles-csf.b.a97341065c99",
+          "sourceRefs": [
+            "purves-ventricular-system"
+          ],
+          "checkedScope": "뇌실의 연결 순서"
+        },
+        {
+          "blockId": "neuroanatomy.meninges.ventricles-csf.b.a76476503374",
+          "sourceRefs": [
+            "bookshelf-csf"
+          ],
+          "checkedScope": "넷째뇌실에서 거미막밑공간으로 나가는 정중·가쪽 출구"
+        }
+      ]
+    }
+  ],
+  "scope": "출처와 본문을 연결하는 별도 자료; 절 JSON 및 읽기용 본문에는 출처를 수록하지 않음",
+  "sourceDisplayPolicy": "never_embed_in_lesson_or_reader"
+}

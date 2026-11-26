@@ -1,0 +1,28 @@
+{
+  "id": "question.cardiology.heart-failure.mechanisms-evaluation.001",
+  "kind": "original_concept_question",
+  "lessonId": "cardiology.heart-failure.mechanisms-evaluation",
+  "prompt": "박출률이 보존된 호흡곤란 환자에서 적절한 판단은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "충만압과 구조·기능 이상 및 다른 호흡곤란 원인을 함께 평가한다."
+    },
+    {
+      "id": "B",
+      "text": "박출률만으로 심부전을 배제한다."
+    },
+    {
+      "id": "C",
+      "text": "박출률만으로 HFpEF를 확정한다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "박출률은 용적의 비율이며 증후군의 존재와 원인을 단독으로 결정하지 않는다.",
+  "optionRationales": {
+    "A": "박출률은 용적의 비율이며 증후군의 존재와 원인을 단독으로 결정하지 않는다.",
+    "B": "충만압 상승과 운동 시 기능 제한은 박출률 보존 상태에서도 가능하다.",
+    "C": "증상과 충만압을 뒷받침하는 근거 및 감별이 필요하다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

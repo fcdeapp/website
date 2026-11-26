@@ -1,0 +1,626 @@
+{
+  "schemaVersion": "1.0.0",
+  "subjects": [
+    {
+      "id": "obstetrics",
+      "title": {
+        "ko": "산과학"
+      },
+      "requirementNumber": 50,
+      "area": "D",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "정상 임신 생리",
+        "산전평가",
+        "태아성장과 건강",
+        "분만과 산욕",
+        "임신고혈압",
+        "산과출혈",
+        "고위험 임신"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/manifest.json",
+      "domainId": "07-obgyn-pediatrics"
+    },
+    {
+      "id": "gynecology",
+      "title": {
+        "ko": "부인과학"
+      },
+      "requirementNumber": 51,
+      "area": "D",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "월경과 이상출혈",
+        "골반통과 자궁내막증",
+        "양성 종양",
+        "부인암",
+        "골반장기탈출",
+        "폐경"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/gynecology/manifest.json",
+      "domainId": "07-obgyn-pediatrics"
+    },
+    {
+      "id": "reproductive-medicine",
+      "title": {
+        "ko": "생식의학"
+      },
+      "requirementNumber": 52,
+      "area": "D",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "생식내분비",
+        "배란장애",
+        "남성 난임",
+        "여성 난임평가",
+        "보조생식술",
+        "생식유전과 윤리"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/reproductive-medicine/manifest.json",
+      "domainId": "07-obgyn-pediatrics"
+    },
+    {
+      "id": "pediatrics",
+      "title": {
+        "ko": "소아청소년과학"
+      },
+      "requirementNumber": 53,
+      "area": "D",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "성장과 발달",
+        "소아영양",
+        "소아 감염",
+        "소아 심폐질환",
+        "소아 신장내분비",
+        "소아 혈액종양",
+        "청소년의학"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/manifest.json",
+      "domainId": "07-obgyn-pediatrics"
+    },
+    {
+      "id": "neonatology",
+      "title": {
+        "ko": "신생아학"
+      },
+      "requirementNumber": 54,
+      "area": "D",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "태아에서 신생아로의 전환",
+        "미숙아",
+        "신생아호흡장애",
+        "황달",
+        "신생아감염",
+        "선천질환과 영양"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/neonatology/manifest.json",
+      "domainId": "07-obgyn-pediatrics"
+    }
+  ],
+  "units": [
+    {
+      "id": "obstetrics.plan.001",
+      "subjectId": "obstetrics",
+      "title": "정상 임신 생리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "obstetrics.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "obstetrics.pregnancy.physiology"
+      ]
+    },
+    {
+      "id": "obstetrics.plan.002",
+      "subjectId": "obstetrics",
+      "title": "산전평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "obstetrics.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "obstetrics.pregnancy.physiology"
+      ]
+    },
+    {
+      "id": "obstetrics.plan.003",
+      "subjectId": "obstetrics",
+      "title": "태아성장과 건강",
+      "status": "unwritten",
+      "objectiveIds": [
+        "obstetrics.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "obstetrics.pregnancy.physiology"
+      ]
+    },
+    {
+      "id": "obstetrics.plan.004",
+      "subjectId": "obstetrics",
+      "title": "분만과 산욕",
+      "status": "unwritten",
+      "objectiveIds": [
+        "obstetrics.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "obstetrics.pregnancy.physiology"
+      ]
+    },
+    {
+      "id": "obstetrics.plan.005",
+      "subjectId": "obstetrics",
+      "title": "임신고혈압",
+      "status": "unwritten",
+      "objectiveIds": [
+        "obstetrics.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "obstetrics.pregnancy.physiology"
+      ]
+    },
+    {
+      "id": "obstetrics.plan.006",
+      "subjectId": "obstetrics",
+      "title": "산과출혈",
+      "status": "unwritten",
+      "objectiveIds": [
+        "obstetrics.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "obstetrics.pregnancy.physiology"
+      ]
+    },
+    {
+      "id": "obstetrics.plan.007",
+      "subjectId": "obstetrics",
+      "title": "고위험 임신",
+      "status": "unwritten",
+      "objectiveIds": [
+        "obstetrics.scope.007"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "obstetrics.pregnancy.physiology"
+      ]
+    },
+    {
+      "id": "gynecology.plan.001",
+      "subjectId": "gynecology",
+      "title": "월경과 이상출혈",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gynecology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gynecology.plan.002",
+      "subjectId": "gynecology",
+      "title": "골반통과 자궁내막증",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gynecology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gynecology.plan.003",
+      "subjectId": "gynecology",
+      "title": "양성 종양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gynecology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gynecology.plan.004",
+      "subjectId": "gynecology",
+      "title": "부인암",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gynecology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gynecology.plan.005",
+      "subjectId": "gynecology",
+      "title": "골반장기탈출",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gynecology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "gynecology.plan.006",
+      "subjectId": "gynecology",
+      "title": "폐경",
+      "status": "unwritten",
+      "objectiveIds": [
+        "gynecology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "reproductive-medicine.plan.001",
+      "subjectId": "reproductive-medicine",
+      "title": "생식내분비",
+      "status": "unwritten",
+      "objectiveIds": [
+        "reproductive-medicine.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "reproductive-medicine.plan.002",
+      "subjectId": "reproductive-medicine",
+      "title": "배란장애",
+      "status": "unwritten",
+      "objectiveIds": [
+        "reproductive-medicine.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "reproductive-medicine.plan.003",
+      "subjectId": "reproductive-medicine",
+      "title": "남성 난임",
+      "status": "unwritten",
+      "objectiveIds": [
+        "reproductive-medicine.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "reproductive-medicine.plan.004",
+      "subjectId": "reproductive-medicine",
+      "title": "여성 난임평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "reproductive-medicine.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "reproductive-medicine.plan.005",
+      "subjectId": "reproductive-medicine",
+      "title": "보조생식술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "reproductive-medicine.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "reproductive-medicine.plan.006",
+      "subjectId": "reproductive-medicine",
+      "title": "생식유전과 윤리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "reproductive-medicine.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "pediatrics.plan.001",
+      "subjectId": "pediatrics",
+      "title": "성장과 발달",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatrics.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pediatrics.growth.assessment"
+      ]
+    },
+    {
+      "id": "pediatrics.plan.002",
+      "subjectId": "pediatrics",
+      "title": "소아영양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatrics.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pediatrics.growth.assessment"
+      ]
+    },
+    {
+      "id": "pediatrics.plan.003",
+      "subjectId": "pediatrics",
+      "title": "소아 감염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatrics.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pediatrics.growth.assessment"
+      ]
+    },
+    {
+      "id": "pediatrics.plan.004",
+      "subjectId": "pediatrics",
+      "title": "소아 심폐질환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatrics.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pediatrics.growth.assessment"
+      ]
+    },
+    {
+      "id": "pediatrics.plan.005",
+      "subjectId": "pediatrics",
+      "title": "소아 신장내분비",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatrics.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pediatrics.growth.assessment"
+      ]
+    },
+    {
+      "id": "pediatrics.plan.006",
+      "subjectId": "pediatrics",
+      "title": "소아 혈액종양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatrics.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pediatrics.growth.assessment"
+      ]
+    },
+    {
+      "id": "pediatrics.plan.007",
+      "subjectId": "pediatrics",
+      "title": "청소년의학",
+      "status": "unwritten",
+      "objectiveIds": [
+        "pediatrics.scope.007"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "pediatrics.growth.assessment"
+      ]
+    },
+    {
+      "id": "neonatology.plan.001",
+      "subjectId": "neonatology",
+      "title": "태아에서 신생아로의 전환",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neonatology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "neonatology.transition.circulation"
+      ]
+    },
+    {
+      "id": "neonatology.plan.002",
+      "subjectId": "neonatology",
+      "title": "미숙아",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neonatology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "neonatology.transition.circulation"
+      ]
+    },
+    {
+      "id": "neonatology.plan.003",
+      "subjectId": "neonatology",
+      "title": "신생아호흡장애",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neonatology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "neonatology.transition.circulation"
+      ]
+    },
+    {
+      "id": "neonatology.plan.004",
+      "subjectId": "neonatology",
+      "title": "황달",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neonatology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "neonatology.transition.circulation"
+      ]
+    },
+    {
+      "id": "neonatology.plan.005",
+      "subjectId": "neonatology",
+      "title": "신생아감염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neonatology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "neonatology.transition.circulation"
+      ]
+    },
+    {
+      "id": "neonatology.plan.006",
+      "subjectId": "neonatology",
+      "title": "선천질환과 영양",
+      "status": "unwritten",
+      "objectiveIds": [
+        "neonatology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "neonatology.transition.circulation"
+      ]
+    },
+    {
+      "id": "obstetrics.pregnancy.physiology",
+      "subjectId": "obstetrics",
+      "title": "정상 임신의 모체 적응과 태반 기능",
+      "status": "partial",
+      "objectiveIds": [
+        "obstetrics.pregnancy.physiology.lo.01",
+        "obstetrics.pregnancy.physiology.lo.02",
+        "obstetrics.pregnancy.physiology.lo.03"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/pregnancy/sections/obstetrics.pregnancy.physiology.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "neonatology.transition.circulation",
+      "subjectId": "neonatology",
+      "title": "출생 전후 순환과 호흡의 전환",
+      "status": "partial",
+      "objectiveIds": [
+        "neonatology.transition.circulation.lo.01",
+        "neonatology.transition.circulation.lo.02",
+        "neonatology.transition.circulation.lo.03"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/neonatology/chapters/transition/sections/neonatology.transition.circulation.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "pediatrics.growth.assessment",
+      "subjectId": "pediatrics",
+      "title": "성장·발달 평가의 원리",
+      "status": "partial",
+      "objectiveIds": [
+        "pediatrics.growth.assessment.lo.01",
+        "pediatrics.growth.assessment.lo.02",
+        "pediatrics.growth.assessment.lo.03"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/growth/sections/pediatrics.growth.assessment.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "reproductive-medicine.ovarian-cycle.feedback",
+      "subjectId": "reproductive-medicine",
+      "title": "난소주기와 시상하부–뇌하수체 조절",
+      "status": "partial",
+      "objectiveIds": [
+        "reproductive-medicine.ovarian-cycle.feedback.lo.01",
+        "reproductive-medicine.ovarian-cycle.feedback.lo.02",
+        "reproductive-medicine.ovarian-cycle.feedback.lo.03"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/reproductive-medicine/chapters/ovarian-cycle/sections/reproductive-medicine.ovarian-cycle.feedback.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "neonatology.bilirubin.production-and-clearance",
+      "subjectId": "neonatology",
+      "title": "신생아 빌리루빈 대사와 황달",
+      "status": "partial",
+      "objectiveIds": [
+        "neonatology.bilirubin.production-and-clearance.lo.01",
+        "neonatology.bilirubin.production-and-clearance.lo.02",
+        "neonatology.bilirubin.production-and-clearance.lo.03"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/neonatology/chapters/bilirubin/sections/neonatology.bilirubin.production-and-clearance.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "gynecology.bleeding.abnormal-uterine-bleeding",
+      "subjectId": "gynecology",
+      "title": "비정상 자궁출혈의 병태생리와 평가",
+      "status": "partial",
+      "objectiveIds": [
+        "gynecology.bleeding.abnormal-uterine-bleeding.lo.01",
+        "gynecology.bleeding.abnormal-uterine-bleeding.lo.02",
+        "gynecology.bleeding.abnormal-uterine-bleeding.lo.03"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/gynecology/chapters/bleeding/sections/gynecology.bleeding.abnormal-uterine-bleeding.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "gynecology.endometrium.hyperplasia",
+      "subjectId": "gynecology",
+      "title": "자궁내막증식증과 종양 위험",
+      "status": "partial",
+      "objectiveIds": [
+        "gynecology.endometrium.hyperplasia.lo.01",
+        "gynecology.endometrium.hyperplasia.lo.02",
+        "gynecology.endometrium.hyperplasia.lo.03"
+      ],
+      "path": "domains/07-obgyn-pediatrics/subjects/gynecology/chapters/endometrium/sections/gynecology.endometrium.hyperplasia.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    }
+  ]
+}

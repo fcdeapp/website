@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "vascular-surgery",
+  "title": {
+    "ko": "혈관외과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "vascular-surgery.chapter.arterial",
+      "path": "domains/06-surgery/subjects/vascular-surgery/chapters/arterial/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "vascular-surgery.plan.001",
+    "vascular-surgery.plan.002",
+    "vascular-surgery.plan.003",
+    "vascular-surgery.plan.004",
+    "vascular-surgery.plan.005",
+    "vascular-surgery.plan.006",
+    "vascular-surgery.arterial.lower-limb-ischemia"
+  ]
+}

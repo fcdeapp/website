@@ -1,0 +1,2866 @@
+{
+  "schemaVersion": "1.0.0",
+  "subjects": [
+    {
+      "id": "preventive-medicine",
+      "title": {
+        "ko": "예방의학"
+      },
+      "requirementNumber": 75,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "건강결정요인",
+        "예방수준",
+        "감염과 만성질환 예방",
+        "건강증진",
+        "검진의 원리",
+        "예방정책 평가"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/preventive-medicine/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "epidemiology",
+      "title": {
+        "ko": "역학"
+      },
+      "requirementNumber": 76,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "질병 빈도",
+        "연구설계",
+        "연관성 지표",
+        "교란과 편향",
+        "인과추론",
+        "감염병 역학"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/epidemiology/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "biostatistics",
+      "title": {
+        "ko": "의학통계학"
+      },
+      "requirementNumber": 77,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "분포와 기술통계",
+        "추정과 신뢰구간",
+        "가설검정",
+        "회귀분석",
+        "생존분석",
+        "진단검사 통계"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/biostatistics/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "environmental-health",
+      "title": {
+        "ko": "환경보건"
+      },
+      "requirementNumber": 78,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "환경노출과 위해성",
+        "대기오염",
+        "수질과 식품",
+        "기후변화",
+        "방사선",
+        "환경정의"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/environmental-health/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "industrial-health",
+      "title": {
+        "ko": "산업보건"
+      },
+      "requirementNumber": 79,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "작업환경 측정",
+        "노출기준",
+        "위험성평가",
+        "공학적 관리",
+        "보호구와 보건교육",
+        "산업재해 예방"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/industrial-health/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "community-medicine",
+      "title": {
+        "ko": "지역사회의학"
+      },
+      "requirementNumber": 80,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "지역 건강진단",
+        "지역자원",
+        "보건사업 설계",
+        "일차보건의료",
+        "건강형평",
+        "사업평가"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/community-medicine/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "health-management",
+      "title": {
+        "ko": "보건의료관리"
+      },
+      "requirementNumber": 81,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "보건의료체계",
+        "의료보장",
+        "인력과 조직",
+        "질관리",
+        "전달체계",
+        "정책평가"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/health-management/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "health-economics",
+      "title": {
+        "ko": "의료경제학"
+      },
+      "requirementNumber": 82,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "기회비용",
+        "의료수요와 공급",
+        "보험과 도덕적 해이",
+        "비용효과분석",
+        "건강효용",
+        "재정과 지불제도"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/health-economics/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "evidence-based-medicine",
+      "title": {
+        "ko": "근거중심의학"
+      },
+      "requirementNumber": 83,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "임상질문과 검색",
+        "논문 비평",
+        "진단근거",
+        "치료효과",
+        "체계적 고찰",
+        "근거와 환자가치"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/evidence-based-medicine/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "research-methods",
+      "title": {
+        "ko": "의학연구방법론"
+      },
+      "requirementNumber": 84,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "연구질문",
+        "프로토콜과 표본수",
+        "관찰연구",
+        "임상시험",
+        "데이터관리",
+        "재현성과 보고지침"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/research-methods/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "research-ethics",
+      "title": {
+        "ko": "연구윤리"
+      },
+      "requirementNumber": 85,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "연구대상자 보호",
+        "동의와 IRB",
+        "이익충돌",
+        "저자와 출판윤리",
+        "자료조작과 부정행위",
+        "동물연구"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/research-ethics/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "medical-ethics",
+      "title": {
+        "ko": "의료윤리"
+      },
+      "requirementNumber": 86,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "자율성과 동의",
+        "선행과 무해",
+        "정의와 자원배분",
+        "비밀유지",
+        "대리결정",
+        "전문직업성"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/medical-ethics/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "medical-humanities",
+      "title": {
+        "ko": "의료인문학"
+      },
+      "requirementNumber": 87,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "의학사",
+        "질병 경험",
+        "서사의학",
+        "문화와 의료",
+        "장애와 낙인",
+        "의료와 사회"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/medical-humanities/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "medical-law",
+      "title": {
+        "ko": "의료법규"
+      },
+      "requirementNumber": 88,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "의료법",
+        "감염병예방법",
+        "환자권리와 개인정보",
+        "응급의료법",
+        "연명의료결정법",
+        "보건의약관계법규"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/medical-law/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "forensic-medicine",
+      "title": {
+        "ko": "법의학"
+      },
+      "requirementNumber": 89,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "사망의 판단",
+        "사망진단서",
+        "사후변화",
+        "손상과 중독",
+        "법의유전",
+        "의료 관련 법의실무"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/forensic-medicine/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "patient-safety",
+      "title": {
+        "ko": "환자안전"
+      },
+      "requirementNumber": 90,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "안전문화",
+        "사건보고",
+        "시스템과 인간요인",
+        "투약안전",
+        "감염과 수술안전",
+        "환자참여와 개선"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/patient-safety/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "medical-informatics",
+      "title": {
+        "ko": "의료정보학"
+      },
+      "requirementNumber": 91,
+      "area": "F",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "임상정보와 표준",
+        "전자기록",
+        "상호운용성",
+        "임상의사결정지원",
+        "의료 AI 평가",
+        "정보보안"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/medical-informatics/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "history-taking",
+      "title": {
+        "ko": "병력청취"
+      },
+      "requirementNumber": 92,
+      "area": "G",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "면담 구조",
+        "현병력",
+        "과거력과 약물",
+        "가족과 사회력",
+        "체계별 문진",
+        "정보 신뢰성과 기록"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/history-taking/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "physical-examination",
+      "title": {
+        "ko": "신체진찰"
+      },
+      "requirementNumber": 93,
+      "area": "G",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "활력징후",
+        "전신과 피부",
+        "심폐진찰",
+        "복부진찰",
+        "신경진찰",
+        "근골격과 특수진찰"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/physical-examination/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "clinical-reasoning",
+      "title": {
+        "ko": "임상추론"
+      },
+      "requirementNumber": 94,
+      "area": "G",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "문제표현",
+        "사전확률",
+        "가설과 감별",
+        "검사의 문턱",
+        "인지편향",
+        "진단 재평가"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/clinical-reasoning/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "symptom-differential",
+      "title": {
+        "ko": "증상별 감별진단"
+      },
+      "requirementNumber": 95,
+      "area": "G",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "흉통",
+        "호흡곤란",
+        "복통",
+        "발열",
+        "어지럼과 실신",
+        "두통과 의식변화",
+        "부종과 체중감소"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/symptom-differential/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "procedures",
+      "title": {
+        "ko": "기본 의료술기"
+      },
+      "requirementNumber": 96,
+      "area": "G",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "무균술",
+        "혈액채취와 주사",
+        "도뇨",
+        "봉합과 상처",
+        "기도와 심폐소생",
+        "동의와 술기후 관리"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/procedures/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "cpx",
+      "title": {
+        "ko": "CPX"
+      },
+      "requirementNumber": 97,
+      "area": "G",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "면담과 공감",
+        "신체진찰 설명",
+        "환자교육",
+        "나쁜 소식",
+        "안전망과 추적",
+        "통합 증례"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/cpx/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "osce",
+      "title": {
+        "ko": "OSCE"
+      },
+      "requirementNumber": 98,
+      "area": "G",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "술기 준비",
+        "환자확인",
+        "핵심 수행",
+        "무균과 안전",
+        "수행평가",
+        "피드백과 재훈련"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/osce/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "clinical-communication",
+      "title": {
+        "ko": "임상 의사소통"
+      },
+      "requirementNumber": 99,
+      "area": "G",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "공유의사결정",
+        "건강문해력",
+        "팀 인계",
+        "갈등과 오류 설명",
+        "통역과 문화",
+        "보호자 면담"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/clinical-communication/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    },
+    {
+      "id": "clerkships",
+      "title": {
+        "ko": "진료과별 임상실습"
+      },
+      "requirementNumber": 100,
+      "area": "G",
+      "scopeStatus": "provisional_not_exhaustive",
+      "topics": [
+        "내과와 외과 실습",
+        "소아와 산부인과 실습",
+        "정신과와 신경과 실습",
+        "응급과 일차의료 실습",
+        "선택실습",
+        "포트폴리오와 성찰"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/clerkships/manifest.json",
+      "domainId": "10-prevention-clerkships"
+    }
+  ],
+  "units": [
+    {
+      "id": "preventive-medicine.plan.001",
+      "subjectId": "preventive-medicine",
+      "title": "건강결정요인",
+      "status": "unwritten",
+      "objectiveIds": [
+        "preventive-medicine.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "preventive-medicine.plan.002",
+      "subjectId": "preventive-medicine",
+      "title": "예방수준",
+      "status": "unwritten",
+      "objectiveIds": [
+        "preventive-medicine.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "preventive-medicine.plan.003",
+      "subjectId": "preventive-medicine",
+      "title": "감염과 만성질환 예방",
+      "status": "unwritten",
+      "objectiveIds": [
+        "preventive-medicine.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "preventive-medicine.plan.004",
+      "subjectId": "preventive-medicine",
+      "title": "건강증진",
+      "status": "unwritten",
+      "objectiveIds": [
+        "preventive-medicine.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "preventive-medicine.plan.005",
+      "subjectId": "preventive-medicine",
+      "title": "검진의 원리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "preventive-medicine.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "preventive-medicine.plan.006",
+      "subjectId": "preventive-medicine",
+      "title": "예방정책 평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "preventive-medicine.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "epidemiology.plan.001",
+      "subjectId": "epidemiology",
+      "title": "질병 빈도",
+      "status": "unwritten",
+      "objectiveIds": [
+        "epidemiology.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "epidemiology.plan.002",
+      "subjectId": "epidemiology",
+      "title": "연구설계",
+      "status": "unwritten",
+      "objectiveIds": [
+        "epidemiology.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "epidemiology.plan.003",
+      "subjectId": "epidemiology",
+      "title": "연관성 지표",
+      "status": "unwritten",
+      "objectiveIds": [
+        "epidemiology.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "epidemiology.plan.004",
+      "subjectId": "epidemiology",
+      "title": "교란과 편향",
+      "status": "unwritten",
+      "objectiveIds": [
+        "epidemiology.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "epidemiology.plan.005",
+      "subjectId": "epidemiology",
+      "title": "인과추론",
+      "status": "unwritten",
+      "objectiveIds": [
+        "epidemiology.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "epidemiology.plan.006",
+      "subjectId": "epidemiology",
+      "title": "감염병 역학",
+      "status": "unwritten",
+      "objectiveIds": [
+        "epidemiology.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "biostatistics.plan.001",
+      "subjectId": "biostatistics",
+      "title": "분포와 기술통계",
+      "status": "unwritten",
+      "objectiveIds": [
+        "biostatistics.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "biostatistics.diagnosis.bayes"
+      ]
+    },
+    {
+      "id": "biostatistics.plan.002",
+      "subjectId": "biostatistics",
+      "title": "추정과 신뢰구간",
+      "status": "unwritten",
+      "objectiveIds": [
+        "biostatistics.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "biostatistics.diagnosis.bayes"
+      ]
+    },
+    {
+      "id": "biostatistics.plan.003",
+      "subjectId": "biostatistics",
+      "title": "가설검정",
+      "status": "unwritten",
+      "objectiveIds": [
+        "biostatistics.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "biostatistics.diagnosis.bayes"
+      ]
+    },
+    {
+      "id": "biostatistics.plan.004",
+      "subjectId": "biostatistics",
+      "title": "회귀분석",
+      "status": "unwritten",
+      "objectiveIds": [
+        "biostatistics.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "biostatistics.diagnosis.bayes"
+      ]
+    },
+    {
+      "id": "biostatistics.plan.005",
+      "subjectId": "biostatistics",
+      "title": "생존분석",
+      "status": "unwritten",
+      "objectiveIds": [
+        "biostatistics.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "biostatistics.diagnosis.bayes"
+      ]
+    },
+    {
+      "id": "biostatistics.plan.006",
+      "subjectId": "biostatistics",
+      "title": "진단검사 통계",
+      "status": "unwritten",
+      "objectiveIds": [
+        "biostatistics.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "biostatistics.diagnosis.bayes"
+      ]
+    },
+    {
+      "id": "environmental-health.plan.001",
+      "subjectId": "environmental-health",
+      "title": "환경노출과 위해성",
+      "status": "unwritten",
+      "objectiveIds": [
+        "environmental-health.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "environmental-health.plan.002",
+      "subjectId": "environmental-health",
+      "title": "대기오염",
+      "status": "unwritten",
+      "objectiveIds": [
+        "environmental-health.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "environmental-health.plan.003",
+      "subjectId": "environmental-health",
+      "title": "수질과 식품",
+      "status": "unwritten",
+      "objectiveIds": [
+        "environmental-health.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "environmental-health.plan.004",
+      "subjectId": "environmental-health",
+      "title": "기후변화",
+      "status": "unwritten",
+      "objectiveIds": [
+        "environmental-health.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "environmental-health.plan.005",
+      "subjectId": "environmental-health",
+      "title": "방사선",
+      "status": "unwritten",
+      "objectiveIds": [
+        "environmental-health.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "environmental-health.plan.006",
+      "subjectId": "environmental-health",
+      "title": "환경정의",
+      "status": "unwritten",
+      "objectiveIds": [
+        "environmental-health.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "industrial-health.plan.001",
+      "subjectId": "industrial-health",
+      "title": "작업환경 측정",
+      "status": "unwritten",
+      "objectiveIds": [
+        "industrial-health.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "industrial-health.plan.002",
+      "subjectId": "industrial-health",
+      "title": "노출기준",
+      "status": "unwritten",
+      "objectiveIds": [
+        "industrial-health.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "industrial-health.plan.003",
+      "subjectId": "industrial-health",
+      "title": "위험성평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "industrial-health.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "industrial-health.plan.004",
+      "subjectId": "industrial-health",
+      "title": "공학적 관리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "industrial-health.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "industrial-health.plan.005",
+      "subjectId": "industrial-health",
+      "title": "보호구와 보건교육",
+      "status": "unwritten",
+      "objectiveIds": [
+        "industrial-health.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "industrial-health.plan.006",
+      "subjectId": "industrial-health",
+      "title": "산업재해 예방",
+      "status": "unwritten",
+      "objectiveIds": [
+        "industrial-health.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "community-medicine.plan.001",
+      "subjectId": "community-medicine",
+      "title": "지역 건강진단",
+      "status": "unwritten",
+      "objectiveIds": [
+        "community-medicine.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "community-medicine.plan.002",
+      "subjectId": "community-medicine",
+      "title": "지역자원",
+      "status": "unwritten",
+      "objectiveIds": [
+        "community-medicine.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "community-medicine.plan.003",
+      "subjectId": "community-medicine",
+      "title": "보건사업 설계",
+      "status": "unwritten",
+      "objectiveIds": [
+        "community-medicine.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "community-medicine.plan.004",
+      "subjectId": "community-medicine",
+      "title": "일차보건의료",
+      "status": "unwritten",
+      "objectiveIds": [
+        "community-medicine.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "community-medicine.plan.005",
+      "subjectId": "community-medicine",
+      "title": "건강형평",
+      "status": "unwritten",
+      "objectiveIds": [
+        "community-medicine.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "community-medicine.plan.006",
+      "subjectId": "community-medicine",
+      "title": "사업평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "community-medicine.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-management.plan.001",
+      "subjectId": "health-management",
+      "title": "보건의료체계",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-management.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-management.plan.002",
+      "subjectId": "health-management",
+      "title": "의료보장",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-management.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-management.plan.003",
+      "subjectId": "health-management",
+      "title": "인력과 조직",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-management.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-management.plan.004",
+      "subjectId": "health-management",
+      "title": "질관리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-management.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-management.plan.005",
+      "subjectId": "health-management",
+      "title": "전달체계",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-management.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-management.plan.006",
+      "subjectId": "health-management",
+      "title": "정책평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-management.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-economics.plan.001",
+      "subjectId": "health-economics",
+      "title": "기회비용",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-economics.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-economics.plan.002",
+      "subjectId": "health-economics",
+      "title": "의료수요와 공급",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-economics.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-economics.plan.003",
+      "subjectId": "health-economics",
+      "title": "보험과 도덕적 해이",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-economics.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-economics.plan.004",
+      "subjectId": "health-economics",
+      "title": "비용효과분석",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-economics.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-economics.plan.005",
+      "subjectId": "health-economics",
+      "title": "건강효용",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-economics.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "health-economics.plan.006",
+      "subjectId": "health-economics",
+      "title": "재정과 지불제도",
+      "status": "unwritten",
+      "objectiveIds": [
+        "health-economics.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "evidence-based-medicine.plan.001",
+      "subjectId": "evidence-based-medicine",
+      "title": "임상질문과 검색",
+      "status": "unwritten",
+      "objectiveIds": [
+        "evidence-based-medicine.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "evidence-based-medicine.plan.002",
+      "subjectId": "evidence-based-medicine",
+      "title": "논문 비평",
+      "status": "unwritten",
+      "objectiveIds": [
+        "evidence-based-medicine.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "evidence-based-medicine.plan.003",
+      "subjectId": "evidence-based-medicine",
+      "title": "진단근거",
+      "status": "unwritten",
+      "objectiveIds": [
+        "evidence-based-medicine.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "evidence-based-medicine.plan.004",
+      "subjectId": "evidence-based-medicine",
+      "title": "치료효과",
+      "status": "unwritten",
+      "objectiveIds": [
+        "evidence-based-medicine.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "evidence-based-medicine.plan.005",
+      "subjectId": "evidence-based-medicine",
+      "title": "체계적 고찰",
+      "status": "unwritten",
+      "objectiveIds": [
+        "evidence-based-medicine.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "evidence-based-medicine.plan.006",
+      "subjectId": "evidence-based-medicine",
+      "title": "근거와 환자가치",
+      "status": "unwritten",
+      "objectiveIds": [
+        "evidence-based-medicine.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-methods.plan.001",
+      "subjectId": "research-methods",
+      "title": "연구질문",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-methods.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-methods.plan.002",
+      "subjectId": "research-methods",
+      "title": "프로토콜과 표본수",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-methods.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-methods.plan.003",
+      "subjectId": "research-methods",
+      "title": "관찰연구",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-methods.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-methods.plan.004",
+      "subjectId": "research-methods",
+      "title": "임상시험",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-methods.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-methods.plan.005",
+      "subjectId": "research-methods",
+      "title": "데이터관리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-methods.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-methods.plan.006",
+      "subjectId": "research-methods",
+      "title": "재현성과 보고지침",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-methods.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-ethics.plan.001",
+      "subjectId": "research-ethics",
+      "title": "연구대상자 보호",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-ethics.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-ethics.plan.002",
+      "subjectId": "research-ethics",
+      "title": "동의와 IRB",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-ethics.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-ethics.plan.003",
+      "subjectId": "research-ethics",
+      "title": "이익충돌",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-ethics.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-ethics.plan.004",
+      "subjectId": "research-ethics",
+      "title": "저자와 출판윤리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-ethics.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-ethics.plan.005",
+      "subjectId": "research-ethics",
+      "title": "자료조작과 부정행위",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-ethics.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "research-ethics.plan.006",
+      "subjectId": "research-ethics",
+      "title": "동물연구",
+      "status": "unwritten",
+      "objectiveIds": [
+        "research-ethics.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-ethics.plan.001",
+      "subjectId": "medical-ethics",
+      "title": "자율성과 동의",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-ethics.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "medical-ethics.consent.shared-decisions"
+      ]
+    },
+    {
+      "id": "medical-ethics.plan.002",
+      "subjectId": "medical-ethics",
+      "title": "선행과 무해",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-ethics.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "medical-ethics.consent.shared-decisions"
+      ]
+    },
+    {
+      "id": "medical-ethics.plan.003",
+      "subjectId": "medical-ethics",
+      "title": "정의와 자원배분",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-ethics.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "medical-ethics.consent.shared-decisions"
+      ]
+    },
+    {
+      "id": "medical-ethics.plan.004",
+      "subjectId": "medical-ethics",
+      "title": "비밀유지",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-ethics.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "medical-ethics.consent.shared-decisions"
+      ]
+    },
+    {
+      "id": "medical-ethics.plan.005",
+      "subjectId": "medical-ethics",
+      "title": "대리결정",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-ethics.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "medical-ethics.consent.shared-decisions"
+      ]
+    },
+    {
+      "id": "medical-ethics.plan.006",
+      "subjectId": "medical-ethics",
+      "title": "전문직업성",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-ethics.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "medical-ethics.consent.shared-decisions"
+      ]
+    },
+    {
+      "id": "medical-humanities.plan.001",
+      "subjectId": "medical-humanities",
+      "title": "의학사",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-humanities.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-humanities.plan.002",
+      "subjectId": "medical-humanities",
+      "title": "질병 경험",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-humanities.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-humanities.plan.003",
+      "subjectId": "medical-humanities",
+      "title": "서사의학",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-humanities.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-humanities.plan.004",
+      "subjectId": "medical-humanities",
+      "title": "문화와 의료",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-humanities.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-humanities.plan.005",
+      "subjectId": "medical-humanities",
+      "title": "장애와 낙인",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-humanities.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-humanities.plan.006",
+      "subjectId": "medical-humanities",
+      "title": "의료와 사회",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-humanities.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-law.plan.001",
+      "subjectId": "medical-law",
+      "title": "의료법",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-law.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-law.plan.002",
+      "subjectId": "medical-law",
+      "title": "감염병예방법",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-law.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-law.plan.003",
+      "subjectId": "medical-law",
+      "title": "환자권리와 개인정보",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-law.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-law.plan.004",
+      "subjectId": "medical-law",
+      "title": "응급의료법",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-law.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-law.plan.005",
+      "subjectId": "medical-law",
+      "title": "연명의료결정법",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-law.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-law.plan.006",
+      "subjectId": "medical-law",
+      "title": "보건의약관계법규",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-law.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "forensic-medicine.plan.001",
+      "subjectId": "forensic-medicine",
+      "title": "사망의 판단",
+      "status": "unwritten",
+      "objectiveIds": [
+        "forensic-medicine.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "forensic-medicine.plan.002",
+      "subjectId": "forensic-medicine",
+      "title": "사망진단서",
+      "status": "unwritten",
+      "objectiveIds": [
+        "forensic-medicine.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "forensic-medicine.plan.003",
+      "subjectId": "forensic-medicine",
+      "title": "사후변화",
+      "status": "unwritten",
+      "objectiveIds": [
+        "forensic-medicine.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "forensic-medicine.plan.004",
+      "subjectId": "forensic-medicine",
+      "title": "손상과 중독",
+      "status": "unwritten",
+      "objectiveIds": [
+        "forensic-medicine.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "forensic-medicine.plan.005",
+      "subjectId": "forensic-medicine",
+      "title": "법의유전",
+      "status": "unwritten",
+      "objectiveIds": [
+        "forensic-medicine.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "forensic-medicine.plan.006",
+      "subjectId": "forensic-medicine",
+      "title": "의료 관련 법의실무",
+      "status": "unwritten",
+      "objectiveIds": [
+        "forensic-medicine.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "patient-safety.plan.001",
+      "subjectId": "patient-safety",
+      "title": "안전문화",
+      "status": "unwritten",
+      "objectiveIds": [
+        "patient-safety.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "patient-safety.systems.handover"
+      ]
+    },
+    {
+      "id": "patient-safety.plan.002",
+      "subjectId": "patient-safety",
+      "title": "사건보고",
+      "status": "unwritten",
+      "objectiveIds": [
+        "patient-safety.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "patient-safety.systems.handover"
+      ]
+    },
+    {
+      "id": "patient-safety.plan.003",
+      "subjectId": "patient-safety",
+      "title": "시스템과 인간요인",
+      "status": "unwritten",
+      "objectiveIds": [
+        "patient-safety.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "patient-safety.systems.handover"
+      ]
+    },
+    {
+      "id": "patient-safety.plan.004",
+      "subjectId": "patient-safety",
+      "title": "투약안전",
+      "status": "unwritten",
+      "objectiveIds": [
+        "patient-safety.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "patient-safety.systems.handover"
+      ]
+    },
+    {
+      "id": "patient-safety.plan.005",
+      "subjectId": "patient-safety",
+      "title": "감염과 수술안전",
+      "status": "unwritten",
+      "objectiveIds": [
+        "patient-safety.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "patient-safety.systems.handover"
+      ]
+    },
+    {
+      "id": "patient-safety.plan.006",
+      "subjectId": "patient-safety",
+      "title": "환자참여와 개선",
+      "status": "unwritten",
+      "objectiveIds": [
+        "patient-safety.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "patient-safety.systems.handover"
+      ]
+    },
+    {
+      "id": "medical-informatics.plan.001",
+      "subjectId": "medical-informatics",
+      "title": "임상정보와 표준",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-informatics.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-informatics.plan.002",
+      "subjectId": "medical-informatics",
+      "title": "전자기록",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-informatics.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-informatics.plan.003",
+      "subjectId": "medical-informatics",
+      "title": "상호운용성",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-informatics.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-informatics.plan.004",
+      "subjectId": "medical-informatics",
+      "title": "임상의사결정지원",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-informatics.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-informatics.plan.005",
+      "subjectId": "medical-informatics",
+      "title": "의료 AI 평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-informatics.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "medical-informatics.plan.006",
+      "subjectId": "medical-informatics",
+      "title": "정보보안",
+      "status": "unwritten",
+      "objectiveIds": [
+        "medical-informatics.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "history-taking.plan.001",
+      "subjectId": "history-taking",
+      "title": "면담 구조",
+      "status": "unwritten",
+      "objectiveIds": [
+        "history-taking.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "history-taking.interview.structure"
+      ]
+    },
+    {
+      "id": "history-taking.plan.002",
+      "subjectId": "history-taking",
+      "title": "현병력",
+      "status": "unwritten",
+      "objectiveIds": [
+        "history-taking.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "history-taking.interview.structure"
+      ]
+    },
+    {
+      "id": "history-taking.plan.003",
+      "subjectId": "history-taking",
+      "title": "과거력과 약물",
+      "status": "unwritten",
+      "objectiveIds": [
+        "history-taking.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "history-taking.interview.structure"
+      ]
+    },
+    {
+      "id": "history-taking.plan.004",
+      "subjectId": "history-taking",
+      "title": "가족과 사회력",
+      "status": "unwritten",
+      "objectiveIds": [
+        "history-taking.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "history-taking.interview.structure"
+      ]
+    },
+    {
+      "id": "history-taking.plan.005",
+      "subjectId": "history-taking",
+      "title": "체계별 문진",
+      "status": "unwritten",
+      "objectiveIds": [
+        "history-taking.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "history-taking.interview.structure"
+      ]
+    },
+    {
+      "id": "history-taking.plan.006",
+      "subjectId": "history-taking",
+      "title": "정보 신뢰성과 기록",
+      "status": "unwritten",
+      "objectiveIds": [
+        "history-taking.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "history-taking.interview.structure"
+      ]
+    },
+    {
+      "id": "physical-examination.plan.001",
+      "subjectId": "physical-examination",
+      "title": "활력징후",
+      "status": "unwritten",
+      "objectiveIds": [
+        "physical-examination.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "physical-examination.plan.002",
+      "subjectId": "physical-examination",
+      "title": "전신과 피부",
+      "status": "unwritten",
+      "objectiveIds": [
+        "physical-examination.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "physical-examination.plan.003",
+      "subjectId": "physical-examination",
+      "title": "심폐진찰",
+      "status": "unwritten",
+      "objectiveIds": [
+        "physical-examination.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "physical-examination.plan.004",
+      "subjectId": "physical-examination",
+      "title": "복부진찰",
+      "status": "unwritten",
+      "objectiveIds": [
+        "physical-examination.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "physical-examination.plan.005",
+      "subjectId": "physical-examination",
+      "title": "신경진찰",
+      "status": "unwritten",
+      "objectiveIds": [
+        "physical-examination.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "physical-examination.plan.006",
+      "subjectId": "physical-examination",
+      "title": "근골격과 특수진찰",
+      "status": "unwritten",
+      "objectiveIds": [
+        "physical-examination.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clinical-reasoning.plan.001",
+      "subjectId": "clinical-reasoning",
+      "title": "문제표현",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-reasoning.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "clinical-reasoning.diagnosis.problem-representation"
+      ]
+    },
+    {
+      "id": "clinical-reasoning.plan.002",
+      "subjectId": "clinical-reasoning",
+      "title": "사전확률",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-reasoning.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "clinical-reasoning.diagnosis.problem-representation"
+      ]
+    },
+    {
+      "id": "clinical-reasoning.plan.003",
+      "subjectId": "clinical-reasoning",
+      "title": "가설과 감별",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-reasoning.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "clinical-reasoning.diagnosis.problem-representation"
+      ]
+    },
+    {
+      "id": "clinical-reasoning.plan.004",
+      "subjectId": "clinical-reasoning",
+      "title": "검사의 문턱",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-reasoning.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "clinical-reasoning.diagnosis.problem-representation"
+      ]
+    },
+    {
+      "id": "clinical-reasoning.plan.005",
+      "subjectId": "clinical-reasoning",
+      "title": "인지편향",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-reasoning.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "clinical-reasoning.diagnosis.problem-representation"
+      ]
+    },
+    {
+      "id": "clinical-reasoning.plan.006",
+      "subjectId": "clinical-reasoning",
+      "title": "진단 재평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-reasoning.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": [
+        "clinical-reasoning.diagnosis.problem-representation"
+      ]
+    },
+    {
+      "id": "symptom-differential.plan.001",
+      "subjectId": "symptom-differential",
+      "title": "흉통",
+      "status": "unwritten",
+      "objectiveIds": [
+        "symptom-differential.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "symptom-differential.plan.002",
+      "subjectId": "symptom-differential",
+      "title": "호흡곤란",
+      "status": "unwritten",
+      "objectiveIds": [
+        "symptom-differential.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "symptom-differential.plan.003",
+      "subjectId": "symptom-differential",
+      "title": "복통",
+      "status": "unwritten",
+      "objectiveIds": [
+        "symptom-differential.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "symptom-differential.plan.004",
+      "subjectId": "symptom-differential",
+      "title": "발열",
+      "status": "unwritten",
+      "objectiveIds": [
+        "symptom-differential.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "symptom-differential.plan.005",
+      "subjectId": "symptom-differential",
+      "title": "어지럼과 실신",
+      "status": "unwritten",
+      "objectiveIds": [
+        "symptom-differential.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "symptom-differential.plan.006",
+      "subjectId": "symptom-differential",
+      "title": "두통과 의식변화",
+      "status": "unwritten",
+      "objectiveIds": [
+        "symptom-differential.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "symptom-differential.plan.007",
+      "subjectId": "symptom-differential",
+      "title": "부종과 체중감소",
+      "status": "unwritten",
+      "objectiveIds": [
+        "symptom-differential.scope.007"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "procedures.plan.001",
+      "subjectId": "procedures",
+      "title": "무균술",
+      "status": "unwritten",
+      "objectiveIds": [
+        "procedures.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "procedures.plan.002",
+      "subjectId": "procedures",
+      "title": "혈액채취와 주사",
+      "status": "unwritten",
+      "objectiveIds": [
+        "procedures.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "procedures.plan.003",
+      "subjectId": "procedures",
+      "title": "도뇨",
+      "status": "unwritten",
+      "objectiveIds": [
+        "procedures.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "procedures.plan.004",
+      "subjectId": "procedures",
+      "title": "봉합과 상처",
+      "status": "unwritten",
+      "objectiveIds": [
+        "procedures.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "procedures.plan.005",
+      "subjectId": "procedures",
+      "title": "기도와 심폐소생",
+      "status": "unwritten",
+      "objectiveIds": [
+        "procedures.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "procedures.plan.006",
+      "subjectId": "procedures",
+      "title": "동의와 술기후 관리",
+      "status": "unwritten",
+      "objectiveIds": [
+        "procedures.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "cpx.plan.001",
+      "subjectId": "cpx",
+      "title": "면담과 공감",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cpx.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "cpx.plan.002",
+      "subjectId": "cpx",
+      "title": "신체진찰 설명",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cpx.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "cpx.plan.003",
+      "subjectId": "cpx",
+      "title": "환자교육",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cpx.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "cpx.plan.004",
+      "subjectId": "cpx",
+      "title": "나쁜 소식",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cpx.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "cpx.plan.005",
+      "subjectId": "cpx",
+      "title": "안전망과 추적",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cpx.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "cpx.plan.006",
+      "subjectId": "cpx",
+      "title": "통합 증례",
+      "status": "unwritten",
+      "objectiveIds": [
+        "cpx.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "osce.plan.001",
+      "subjectId": "osce",
+      "title": "술기 준비",
+      "status": "unwritten",
+      "objectiveIds": [
+        "osce.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "osce.plan.002",
+      "subjectId": "osce",
+      "title": "환자확인",
+      "status": "unwritten",
+      "objectiveIds": [
+        "osce.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "osce.plan.003",
+      "subjectId": "osce",
+      "title": "핵심 수행",
+      "status": "unwritten",
+      "objectiveIds": [
+        "osce.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "osce.plan.004",
+      "subjectId": "osce",
+      "title": "무균과 안전",
+      "status": "unwritten",
+      "objectiveIds": [
+        "osce.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "osce.plan.005",
+      "subjectId": "osce",
+      "title": "수행평가",
+      "status": "unwritten",
+      "objectiveIds": [
+        "osce.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "osce.plan.006",
+      "subjectId": "osce",
+      "title": "피드백과 재훈련",
+      "status": "unwritten",
+      "objectiveIds": [
+        "osce.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clinical-communication.plan.001",
+      "subjectId": "clinical-communication",
+      "title": "공유의사결정",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-communication.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clinical-communication.plan.002",
+      "subjectId": "clinical-communication",
+      "title": "건강문해력",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-communication.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clinical-communication.plan.003",
+      "subjectId": "clinical-communication",
+      "title": "팀 인계",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-communication.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clinical-communication.plan.004",
+      "subjectId": "clinical-communication",
+      "title": "갈등과 오류 설명",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-communication.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clinical-communication.plan.005",
+      "subjectId": "clinical-communication",
+      "title": "통역과 문화",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-communication.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clinical-communication.plan.006",
+      "subjectId": "clinical-communication",
+      "title": "보호자 면담",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clinical-communication.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clerkships.plan.001",
+      "subjectId": "clerkships",
+      "title": "내과와 외과 실습",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clerkships.scope.001"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clerkships.plan.002",
+      "subjectId": "clerkships",
+      "title": "소아와 산부인과 실습",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clerkships.scope.002"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clerkships.plan.003",
+      "subjectId": "clerkships",
+      "title": "정신과와 신경과 실습",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clerkships.scope.003"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clerkships.plan.004",
+      "subjectId": "clerkships",
+      "title": "응급과 일차의료 실습",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clerkships.scope.004"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clerkships.plan.005",
+      "subjectId": "clerkships",
+      "title": "선택실습",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clerkships.scope.005"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "clerkships.plan.006",
+      "subjectId": "clerkships",
+      "title": "포트폴리오와 성찰",
+      "status": "unwritten",
+      "objectiveIds": [
+        "clerkships.scope.006"
+      ],
+      "planningBasis": "editorial_scope_seed_not_official_outcome",
+      "scopeExpansionRequired": true,
+      "availableDraftLessons": []
+    },
+    {
+      "id": "biostatistics.diagnosis.bayes",
+      "subjectId": "biostatistics",
+      "title": "진단검사와 베이즈 추론",
+      "status": "partial",
+      "objectiveIds": [
+        "biostatistics.diagnosis.bayes.lo.01",
+        "biostatistics.diagnosis.bayes.lo.02",
+        "biostatistics.diagnosis.bayes.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/biostatistics/chapters/diagnosis/sections/biostatistics.diagnosis.bayes.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation",
+      "subjectId": "clinical-reasoning",
+      "title": "문제표현과 감별진단의 갱신",
+      "status": "partial",
+      "objectiveIds": [
+        "clinical-reasoning.diagnosis.problem-representation.lo.01",
+        "clinical-reasoning.diagnosis.problem-representation.lo.02",
+        "clinical-reasoning.diagnosis.problem-representation.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/clinical-reasoning/chapters/diagnosis/sections/clinical-reasoning.diagnosis.problem-representation.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "history-taking.interview.structure",
+      "subjectId": "history-taking",
+      "title": "병력청취의 구조와 정보의 신뢰성",
+      "status": "partial",
+      "objectiveIds": [
+        "history-taking.interview.structure.lo.01",
+        "history-taking.interview.structure.lo.02",
+        "history-taking.interview.structure.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/history-taking/chapters/interview/sections/history-taking.interview.structure.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "patient-safety.systems.handover",
+      "subjectId": "patient-safety",
+      "title": "환자확인·투약조정·인계의 안전 원리",
+      "status": "partial",
+      "objectiveIds": [
+        "patient-safety.systems.handover.lo.01",
+        "patient-safety.systems.handover.lo.02",
+        "patient-safety.systems.handover.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/patient-safety/chapters/systems/sections/patient-safety.systems.handover.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "medical-ethics.consent.shared-decisions",
+      "subjectId": "medical-ethics",
+      "title": "설명·동의와 공동 의사결정",
+      "status": "partial",
+      "objectiveIds": [
+        "medical-ethics.consent.shared-decisions.lo.01",
+        "medical-ethics.consent.shared-decisions.lo.02",
+        "medical-ethics.consent.shared-decisions.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/medical-ethics/chapters/consent/sections/medical-ethics.consent.shared-decisions.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "biostatistics.inference.uncertainty",
+      "subjectId": "biostatistics",
+      "title": "추정·신뢰구간·가설검정",
+      "status": "partial",
+      "objectiveIds": [
+        "biostatistics.inference.uncertainty.lo.01",
+        "biostatistics.inference.uncertainty.lo.02",
+        "biostatistics.inference.uncertainty.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/biostatistics/chapters/inference/sections/biostatistics.inference.uncertainty.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "epidemiology.causal-inference.bias-confounding",
+      "subjectId": "epidemiology",
+      "title": "편향·교란·효과수정",
+      "status": "partial",
+      "objectiveIds": [
+        "epidemiology.causal-inference.bias-confounding.lo.01",
+        "epidemiology.causal-inference.bias-confounding.lo.02",
+        "epidemiology.causal-inference.bias-confounding.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/epidemiology/chapters/causal-inference/sections/epidemiology.causal-inference.bias-confounding.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "evidence-based-medicine.effects.absolute-relative",
+      "subjectId": "evidence-based-medicine",
+      "title": "상대효과·절대효과와 임상적 적용",
+      "status": "partial",
+      "objectiveIds": [
+        "evidence-based-medicine.effects.absolute-relative.lo.01",
+        "evidence-based-medicine.effects.absolute-relative.lo.02",
+        "evidence-based-medicine.effects.absolute-relative.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/evidence-based-medicine/chapters/effects/sections/evidence-based-medicine.effects.absolute-relative.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "research-ethics.human-subjects.consent",
+      "subjectId": "research-ethics",
+      "title": "인간대상연구의 동의와 위험·이익 평가",
+      "status": "partial",
+      "objectiveIds": [
+        "research-ethics.human-subjects.consent.lo.01",
+        "research-ethics.human-subjects.consent.lo.02",
+        "research-ethics.human-subjects.consent.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/research-ethics/chapters/human-subjects/sections/research-ethics.human-subjects.consent.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "medical-informatics.clinical-data.decision-support",
+      "subjectId": "medical-informatics",
+      "title": "임상자료의 의미와 의사결정지원",
+      "status": "partial",
+      "objectiveIds": [
+        "medical-informatics.clinical-data.decision-support.lo.01",
+        "medical-informatics.clinical-data.decision-support.lo.02",
+        "medical-informatics.clinical-data.decision-support.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/medical-informatics/chapters/clinical-data/sections/medical-informatics.clinical-data.decision-support.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "research-methods.design.question-and-estimand",
+      "subjectId": "research-methods",
+      "title": "연구질문과 설계·추정대상",
+      "status": "partial",
+      "objectiveIds": [
+        "research-methods.design.question-and-estimand.lo.01",
+        "research-methods.design.question-and-estimand.lo.02",
+        "research-methods.design.question-and-estimand.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/research-methods/chapters/design/sections/research-methods.design.question-and-estimand.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "physical-examination.cardiovascular.venous-pulse",
+      "subjectId": "physical-examination",
+      "title": "경정맥압과 정맥파의 진찰",
+      "status": "partial",
+      "objectiveIds": [
+        "physical-examination.cardiovascular.venous-pulse.lo.01",
+        "physical-examination.cardiovascular.venous-pulse.lo.02",
+        "physical-examination.cardiovascular.venous-pulse.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/physical-examination/chapters/cardiovascular/sections/physical-examination.cardiovascular.venous-pulse.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "clinical-communication.consultation.shared-decisions",
+      "subjectId": "clinical-communication",
+      "title": "설명·이해 확인과 공유의사결정",
+      "status": "partial",
+      "objectiveIds": [
+        "clinical-communication.consultation.shared-decisions.lo.01",
+        "clinical-communication.consultation.shared-decisions.lo.02",
+        "clinical-communication.consultation.shared-decisions.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/clinical-communication/chapters/consultation/sections/clinical-communication.consultation.shared-decisions.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "procedures.safety.aseptic-injection",
+      "subjectId": "procedures",
+      "title": "주사와 혈관 접근의 무균 원칙",
+      "status": "partial",
+      "objectiveIds": [
+        "procedures.safety.aseptic-injection.lo.01",
+        "procedures.safety.aseptic-injection.lo.02",
+        "procedures.safety.aseptic-injection.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/procedures/chapters/safety/sections/procedures.safety.aseptic-injection.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "symptom-differential.respiratory.dyspnea",
+      "subjectId": "symptom-differential",
+      "title": "호흡곤란의 기전별 감별",
+      "status": "partial",
+      "objectiveIds": [
+        "symptom-differential.respiratory.dyspnea.lo.01",
+        "symptom-differential.respiratory.dyspnea.lo.02",
+        "symptom-differential.respiratory.dyspnea.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/symptom-differential/chapters/respiratory/sections/symptom-differential.respiratory.dyspnea.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "environmental-health.risk.exposure-dose-response",
+      "subjectId": "environmental-health",
+      "title": "환경노출과 건강위험의 평가",
+      "status": "partial",
+      "objectiveIds": [
+        "environmental-health.risk.exposure-dose-response.lo.01",
+        "environmental-health.risk.exposure-dose-response.lo.02",
+        "environmental-health.risk.exposure-dose-response.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/environmental-health/chapters/risk/sections/environmental-health.risk.exposure-dose-response.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "health-management.financing.pooling-and-purchasing",
+      "subjectId": "health-management",
+      "title": "보건의료 재원·위험분산·구매",
+      "status": "partial",
+      "objectiveIds": [
+        "health-management.financing.pooling-and-purchasing.lo.01",
+        "health-management.financing.pooling-and-purchasing.lo.02",
+        "health-management.financing.pooling-and-purchasing.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/health-management/chapters/financing/sections/health-management.financing.pooling-and-purchasing.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "health-economics.evaluation.cost-effectiveness",
+      "subjectId": "health-economics",
+      "title": "비용효과분석과 불확실성",
+      "status": "partial",
+      "objectiveIds": [
+        "health-economics.evaluation.cost-effectiveness.lo.01",
+        "health-economics.evaluation.cost-effectiveness.lo.02",
+        "health-economics.evaluation.cost-effectiveness.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/health-economics/chapters/evaluation/sections/health-economics.evaluation.cost-effectiveness.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "forensic-medicine.postmortem.changes",
+      "subjectId": "forensic-medicine",
+      "title": "사후변화와 사망 경과의 해석",
+      "status": "partial",
+      "objectiveIds": [
+        "forensic-medicine.postmortem.changes.lo.01",
+        "forensic-medicine.postmortem.changes.lo.02",
+        "forensic-medicine.postmortem.changes.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/forensic-medicine/chapters/postmortem/sections/forensic-medicine.postmortem.changes.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "community-medicine.population.health-needs",
+      "subjectId": "community-medicine",
+      "title": "지역사회 건강요구와 자원 평가",
+      "status": "partial",
+      "objectiveIds": [
+        "community-medicine.population.health-needs.lo.01",
+        "community-medicine.population.health-needs.lo.02",
+        "community-medicine.population.health-needs.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/community-medicine/chapters/population/sections/community-medicine.population.health-needs.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "industrial-health.physical.noise",
+      "subjectId": "industrial-health",
+      "title": "소음 노출과 청력 보존",
+      "status": "partial",
+      "objectiveIds": [
+        "industrial-health.physical.noise.lo.01",
+        "industrial-health.physical.noise.lo.02",
+        "industrial-health.physical.noise.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/industrial-health/chapters/physical/sections/industrial-health.physical.noise.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "preventive-medicine.prevention.levels-and-strategies",
+      "subjectId": "preventive-medicine",
+      "title": "예방의 단계와 집단 전략",
+      "status": "partial",
+      "objectiveIds": [
+        "preventive-medicine.prevention.levels-and-strategies.lo.01",
+        "preventive-medicine.prevention.levels-and-strategies.lo.02",
+        "preventive-medicine.prevention.levels-and-strategies.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/preventive-medicine/chapters/prevention/sections/preventive-medicine.prevention.levels-and-strategies.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "cpx.consultation.integrated-assessment",
+      "subjectId": "cpx",
+      "title": "임상수행의 병력·추론·설명 통합",
+      "status": "partial",
+      "objectiveIds": [
+        "cpx.consultation.integrated-assessment.lo.01",
+        "cpx.consultation.integrated-assessment.lo.02",
+        "cpx.consultation.integrated-assessment.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/cpx/chapters/consultation/sections/cpx.consultation.integrated-assessment.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "medical-humanities.illness.experience-and-narrative",
+      "subjectId": "medical-humanities",
+      "title": "질병 경험과 환자의 서사",
+      "status": "partial",
+      "objectiveIds": [
+        "medical-humanities.illness.experience-and-narrative.lo.01",
+        "medical-humanities.illness.experience-and-narrative.lo.02",
+        "medical-humanities.illness.experience-and-narrative.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/medical-humanities/chapters/illness/sections/medical-humanities.illness.experience-and-narrative.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "medical-law.consent.disclosure",
+      "subjectId": "medical-law",
+      "title": "의료행위 설명과 동의의 법적 구조",
+      "status": "partial",
+      "objectiveIds": [
+        "medical-law.consent.disclosure.lo.01",
+        "medical-law.consent.disclosure.lo.02",
+        "medical-law.consent.disclosure.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/medical-law/chapters/consent/sections/medical-law.consent.disclosure.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "osce.performance.safe-structured-examination",
+      "subjectId": "osce",
+      "title": "구조화된 진찰과 술기의 안전",
+      "status": "partial",
+      "objectiveIds": [
+        "osce.performance.safe-structured-examination.lo.01",
+        "osce.performance.safe-structured-examination.lo.02",
+        "osce.performance.safe-structured-examination.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/osce/chapters/performance/sections/osce.performance.safe-structured-examination.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "clerkships.practice.problem-list-and-handover",
+      "subjectId": "clerkships",
+      "title": "임상실습의 문제목록과 인계",
+      "status": "partial",
+      "objectiveIds": [
+        "clerkships.practice.problem-list-and-handover.lo.01",
+        "clerkships.practice.problem-list-and-handover.lo.02",
+        "clerkships.practice.problem-list-and-handover.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/clerkships/chapters/practice/sections/clerkships.practice.problem-list-and-handover.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "preventive-medicine.screening.benefit-harm",
+      "subjectId": "preventive-medicine",
+      "title": "선별검사의 편익·위해와 평가 설계",
+      "status": "partial",
+      "objectiveIds": [
+        "preventive-medicine.screening.benefit-harm.lo.01",
+        "preventive-medicine.screening.benefit-harm.lo.02",
+        "preventive-medicine.screening.benefit-harm.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/preventive-medicine/chapters/screening/sections/preventive-medicine.screening.benefit-harm.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "research-methods.trials.randomization-estimands",
+      "subjectId": "research-methods",
+      "title": "무작위 임상시험의 배정·추정대상·결측",
+      "status": "partial",
+      "objectiveIds": [
+        "research-methods.trials.randomization-estimands.lo.01",
+        "research-methods.trials.randomization-estimands.lo.02",
+        "research-methods.trials.randomization-estimands.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/research-methods/chapters/trials/sections/research-methods.trials.randomization-estimands.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    },
+    {
+      "id": "patient-safety.medication.reconciliation-systems",
+      "subjectId": "patient-safety",
+      "title": "투약 안전과 약물조정의 체계",
+      "status": "partial",
+      "objectiveIds": [
+        "patient-safety.medication.reconciliation-systems.lo.01",
+        "patient-safety.medication.reconciliation-systems.lo.02",
+        "patient-safety.medication.reconciliation-systems.lo.03"
+      ],
+      "path": "domains/10-prevention-clerkships/subjects/patient-safety/chapters/medication/sections/patient-safety.medication.reconciliation-systems.json",
+      "planningBasis": "authored_draft",
+      "scopeExpansionRequired": true
+    }
+  ]
+}

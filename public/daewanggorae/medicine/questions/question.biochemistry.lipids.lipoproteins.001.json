@@ -1,0 +1,23 @@
+{
+  "id": "question.biochemistry.lipids.lipoproteins.001",
+  "kind": "original_concept_question",
+  "lessonId": "biochemistry.lipids.lipoproteins",
+  "prompt": "LDL-C는 LDL 입자 수 자체인가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "그렇다."
+    },
+    {
+      "id": "B",
+      "text": "아니다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "그 분획 입자에 포함된 콜레스테롤 양이다.",
+  "optionRationales": {
+    "A": "입자당 콜레스테롤 양은 일정하지 않다.",
+    "B": "그 분획 입자에 포함된 콜레스테롤 양이다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

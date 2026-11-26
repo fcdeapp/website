@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "histology.liver.microcirculation",
+  "subjectId": "histology",
+  "chapterId": "liver",
+  "title": {
+    "ko": "간의 미세구조와 기능적 구역",
+    "en": "Liver Microstructure and Functional Zonation"
+  },
+  "learningObjectives": [
+    {
+      "id": "histology.liver.microcirculation.lo.01",
+      "text": "혈액과 담즙의 이동 방향을 구별한다"
+    },
+    {
+      "id": "histology.liver.microcirculation.lo.02",
+      "text": "간소엽과 간세엽 모형이 강조하는 기능을 설명한다"
+    },
+    {
+      "id": "histology.liver.microcirculation.lo.03",
+      "text": "간의 주요 비실질세포를 손상과 섬유화에 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "histology.liver.microcirculation.b.8852ad5c9dd7",
+      "type": "heading",
+      "level": 2,
+      "text": "이중 혈액 공급과 간세포판"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.89cab421975d",
+      "type": "paragraph",
+      "markdown": "간은 간동맥과 문맥이라는 두 경로로 혈액을 받는다. 문맥은 위장관과 비장 등에서 온 혈액을 운반하고, 간동맥은 전신 동맥혈을 공급한다. 두 혈류는 간 실질의 굴모세혈관(sinusoid)에서 섞여 간세포와 물질을 교환한 뒤 간정맥 계통으로 나간다. 문맥혈은 산소가 전혀 없는 혈액이 아니며, 문맥의 영양분과 장 유래 물질은 간이 대사와 해독, 면역 감시를 수행하는 데 중요한 입력이다. 혈액 공급을 단순히 영양용 혈관과 산소용 혈관의 완전히 분리된 두 회로로 이해하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.18f662a4e461",
+      "type": "paragraph",
+      "markdown": "간세포(hepatocyte)는 판 모양으로 배열되고 그 사이에 굴모세혈관이 위치한다. 두꺼운 조직 절편의 평면 영상에서는 세포판이 줄이나 끈처럼 보일 수 있지만 실제로는 입체적인 배열이다. 간세포의 혈액 쪽 면은 굴모세혈관과의 교환에 관여하고, 인접한 간세포 사이에는 담세관(bile canaliculus)이 만들어진다. 한 세포가 혈액에서 물질을 받아 대사하고 담즙으로 배출하는 방향성을 갖는다는 점에서 간세포의 극성(polarity)은 기능적으로 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.00768e96912e",
+      "type": "heading",
+      "level": 2,
+      "text": "혈류와 담즙 흐름은 반대 방향이다"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.a6e3ff8ec5e4",
+      "type": "paragraph",
+      "markdown": "고전적 간소엽(classic hepatic lobule)은 중심정맥을 중심에 두고 주변의 문맥역(portal tract)을 연결한 모형이다. 문맥역에는 문맥 가지, 간동맥 가지, 담관을 포함한 구조들이 관찰된다. 혈액은 주변의 유입 혈관에서 굴모세혈관을 따라 중심정맥 쪽으로 흐른다. 중심정맥은 간동맥의 중심 가지가 아니라 간의 정맥 유출에 연결되는 혈관이다. 이름에 있는 중심이라는 표현은 이 조직 모형에서의 위치를 가리킨다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.be36b93f8948",
+      "type": "paragraph",
+      "markdown": "담즙은 간세포 사이의 담세관에서 시작하여 문맥역 쪽의 담도 계통으로 배출된다. 따라서 고전적 소엽 안에서 혈액의 큰 흐름과 담즙의 큰 흐름은 반대 방향이다. 담세관 자체에는 별도의 담관 상피벽이 없고 인접 간세포의 막과 세포 사이 접합이 경계를 만든다. 더 큰 담관에서는 담관상피세포(cholangiocyte)가 관을 둘러싸고 담즙 성분 조절에도 관여한다. 담즙 정체가 발생하면 배출 경로의 어느 수준이 손상되었는지 구별하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.5fbcd3e139ce",
+      "type": "heading",
+      "level": 2,
+      "text": "간세엽과 대사 구역"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.ad1fe26b425a",
+      "type": "paragraph",
+      "markdown": "간세엽(hepatic acinus)은 혈액 공급과 기능 차이에 초점을 맞춘 모형이다. 유입 혈관에 가까운 구역 1과 유출 쪽의 구역 3 사이에는 산소와 기질의 농도 기울기가 형성된다. 구역 1은 대체로 더 높은 산소 공급을 받고 구역 3은 상대적으로 낮은 산소 환경에 놓인다. 구역 2는 그 사이에 위치한다. 실제 간의 구역 경계는 종이 위의 동심원처럼 날카롭게 끊어진 구조가 아니라 혈류와 유전자 발현에 따른 연속적 기능 차이이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.9976710a3266",
+      "type": "paragraph",
+      "markdown": "간세포의 대사 효소 발현은 구역별로 다르다. 산소 요구와 기질 이용, 약물 대사 능력의 분포가 같지 않아 같은 독성물질이나 저산소증이 간 전체를 균일하게 손상시키지 않을 수 있다. 유출 쪽에 가까운 구역은 관류 저하에 상대적으로 취약할 수 있으며, 특정 대사효소가 독성 대사산물을 만드는 위치에서는 약물 손상도 더 두드러질 수 있다. 구역 3 손상이라는 소견은 원인 하나의 이름이 아니라 혈류와 대사 분포를 바탕으로 감별해야 하는 손상 패턴이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.aceeb81f4b62",
+      "type": "heading",
+      "level": 2,
+      "text": "굴모세혈관과 비실질세포"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.61f266098000",
+      "type": "paragraph",
+      "markdown": "간 굴모세혈관 내피에는 창(fenestration)이 있고 일반적인 연속모세혈관과 다른 교환 특성이 있다. 내피와 간세포 사이의 디세공간(space of Disse)은 혈장 성분과 간세포 사이 교환이 이루어지는 중요한 미세환경이다. 만성 손상에서 내피의 특성이 변하고 세포외기질이 축적되면 이 교환이 제한될 수 있다. 큰 혈관의 직경이 유지되더라도 미세환경의 구조 변화만으로 간 기능과 혈류 저항이 바뀔 수 있는 이유이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.e4fba2f3637a",
+      "type": "paragraph",
+      "markdown": "쿠퍼세포(Kupffer cell)는 간의 상주 대식세포로서 혈액을 통해 들어온 입자와 미생물 성분의 처리, 염증 조절에 관여한다. 장에서 유래한 물질이 문맥을 통해 간으로 먼저 유입되는 구조와 면역 감시 기능이 연결된다. 간성상세포(hepatic stellate cell)는 정상 상태에서 비타민 A 저장 등에 관여하며, 손상과 염증 신호에 반응하여 활성화되면 기질을 생성하는 근섬유모세포 유사 상태로 바뀔 수 있다. 섬유화는 콜라겐이 단순히 가라앉는 현상이 아니라 세포 활성과 기질 생성 및 분해의 균형 변화이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.40fed3be01aa",
+      "type": "heading",
+      "level": 2,
+      "text": "조직 소견을 임상에 연결하기"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.b6671c84fef9",
+      "type": "paragraph",
+      "markdown": "간 조직은 문맥역의 염증, 소엽 내 손상, 담관 손상, 지방 축적, 섬유화의 위치와 정도를 나누어 관찰한다. 서로 다른 원인이 비슷한 패턴을 만들 수 있고 하나의 질환이 시기별로 다른 소견을 보일 수 있다. 간 생검은 작은 부위의 표본이므로 병변의 분포가 불균일하면 전체 상태를 완전히 대표하지 못한다. 채취 위치와 표본 크기, 문맥역의 수, 임상 및 혈액검사 소견을 함께 고려하여 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.liver.microcirculation.b.6e62383d2a4b",
+      "type": "paragraph",
+      "markdown": "간 효소 상승은 세포 손상이나 담즙 정체의 단서이지만 남아 있는 간의 합성 기능과 정확히 같은 지표는 아니다. 조직의 섬유화와 혈관 구조 변화는 문맥압과 연결되고, 광범위한 기능 상실은 응고인자 합성이나 대사 기능에 영향을 줄 수 있다. 정상 미세구조를 이해하면 손상 지표, 기능 지표, 혈역학적 합병증이 왜 서로 다르게 움직이는지 설명할 수 있다. 소엽과 세엽은 경쟁하는 정답 모형이 아니라 서로 다른 질문에 답하는 관찰 틀이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/histology/chapters/liver/sections/histology.liver.microcirculation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.histology.liver.microcirculation.001"
+  ],
+  "keyFacts": [
+    "혈액은 중심정맥 쪽으로, 담즙은 문맥역의 담도 쪽으로 흐른다."
+  ],
+  "relatedLessons": [
+    "hepatology.cirrhosis.portal-hypertension"
+  ]
+}

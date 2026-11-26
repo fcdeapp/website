@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "osce",
+  "title": {
+    "ko": "OSCE"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "osce.chapter.performance",
+      "path": "domains/10-prevention-clerkships/subjects/osce/chapters/performance/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "osce.plan.001",
+    "osce.plan.002",
+    "osce.plan.003",
+    "osce.plan.004",
+    "osce.plan.005",
+    "osce.plan.006",
+    "osce.performance.safe-structured-examination"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.lower-limb.leg-ankle.ankle-mortise",
+  "sceneId": "scene.anatomy.lower-limb.leg-ankle.ankle-mortise",
+  "lessonId": "anatomy.lower-limb.leg-ankle",
+  "triggerBlockId": "anatomy.lower-limb.leg-ankle.b.eff10d6f441e",
+  "primaryStructures": [
+    "FMA24477",
+    "FMA24480",
+    "FMA24482"
+  ],
+  "contextStructures": [
+    "FMA24497"
+  ],
+  "highlightStructures": [
+    "FMA24477",
+    "FMA24480",
+    "FMA24482"
+  ],
+  "modelIds": [
+    "partof:FJ3387",
+    "partof:FJ3366",
+    "partof:FJ3385",
+    "partof:FJ3360"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3387.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3366.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3385.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3360.obj"
+  ],
+  "cameraPosition": [
+    -77.6905,
+    -909.9656781965466,
+    152.71465
+  ],
+  "cameraTarget": [
+    -77.6905,
+    -69.42005,
+    152.71465
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -120.165,
+      -114.835,
+      -68.4907
+    ],
+    "max": [
+      -35.216,
+      -24.0051,
+      373.92
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "정강뼈·종아리뼈의 발목집과 목말뼈 관계",
+  "mappingConfidence": "exact_attachment_ids_bounds_and_hashes_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "발목굴 신경과 지지띠 및 인대 손상을 표시하는 장면이 아님"
+  ],
+  "dynamicAnatomyIncluded": false
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "systemic-pharmacology",
+  "title": {
+    "ko": "계통별 약리학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "systemic-pharmacology.chapter.antimicrobials",
+      "path": "domains/03-pathology-pharmacology/subjects/systemic-pharmacology/chapters/antimicrobials/chapter.json"
+    },
+    {
+      "id": "systemic-pharmacology.chapter.autonomic",
+      "path": "domains/03-pathology-pharmacology/subjects/systemic-pharmacology/chapters/autonomic/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "systemic-pharmacology.plan.001",
+    "systemic-pharmacology.plan.002",
+    "systemic-pharmacology.plan.003",
+    "systemic-pharmacology.plan.004",
+    "systemic-pharmacology.plan.005",
+    "systemic-pharmacology.plan.006",
+    "systemic-pharmacology.antimicrobials.beta-lactams",
+    "systemic-pharmacology.autonomic.cholinergic-adrenergic"
+  ]
+}

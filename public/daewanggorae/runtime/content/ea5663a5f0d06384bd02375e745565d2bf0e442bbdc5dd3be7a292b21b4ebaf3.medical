@@ -1,0 +1,89 @@
+{
+  "id": "question.pharmacology.general.pharmacodynamics.001",
+  "kind": "original_concept_question",
+  "lessonId": "pharmacology.general.pharmacodynamics",
+  "prompt": "EC50가 더 낮은 약물을 같은 실험계에서 비교할 때 타당한 해석은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "임상적 안전성이 반드시 더 높다."
+    },
+    {
+      "id": "B",
+      "text": "그 반응에 대한 역가가 더 높을 수 있다."
+    },
+    {
+      "id": "C",
+      "text": "최대효과가 반드시 더 크다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "EC50는 주어진 실험계에서 반최대 반응에 필요한 농도이며 최대효과나 안전성을 따로 평가해야 한다.",
+  "optionRationales": {
+    "A": "독성 표적과 노출 및 환자 조건을 보지 않고 안전성을 결정할 수 없다.",
+    "B": "EC50는 주어진 실험계에서 반최대 반응에 필요한 농도이며 최대효과나 안전성을 따로 평가해야 한다.",
+    "C": "역가와 효능의 최대 크기는 구별한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated",
+  "media": {
+    "schemaVersion": "1.0.0",
+    "items": [
+      {
+        "id": "question.pharmacology.general.pharmacodynamics.001.media.parameters",
+        "stage": "question",
+        "type": "table",
+        "title": "동일 실험계의 비교 조건",
+        "columns": [
+          {
+            "id": "c0",
+            "label": "곡선"
+          },
+          {
+            "id": "c1",
+            "label": "최대 반응",
+            "unit": "임의 단위"
+          },
+          {
+            "id": "c2",
+            "label": "EC50",
+            "unit": "임의 농도 단위"
+          }
+        ],
+        "rows": [
+          {
+            "id": "r0",
+            "cells": [
+              "A",
+              100,
+              1
+            ]
+          },
+          {
+            "id": "r1",
+            "cells": [
+              "B",
+              100,
+              10
+            ]
+          },
+          {
+            "id": "r2",
+            "cells": [
+              "C",
+              55,
+              1
+            ]
+          }
+        ],
+        "caption": "교과서 계산 도표의 가정값이며 실제 약물·환자 자료가 아닙니다."
+      },
+      {
+        "id": "question.pharmacology.general.pharmacodynamics.001.media.pharmacodynamics-curves",
+        "type": "diagram",
+        "stage": "explanation",
+        "diagramRef": "diagram.pharmacodynamics-curves",
+        "caption": "같은 실험계에서 농도에 따른 반응을 비교합니다."
+      }
+    ]
+  }
+}

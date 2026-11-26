@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology",
+  "title": {
+    "ko": "순환기내과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "cardiology.chapter.heart-failure",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/heart-failure/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.ischemia",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/ischemia/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "cardiology.plan.001",
+    "cardiology.plan.002",
+    "cardiology.plan.003",
+    "cardiology.plan.004",
+    "cardiology.plan.005",
+    "cardiology.plan.006",
+    "cardiology.heart-failure.syndrome",
+    "cardiology.ischemia.acute-coronary-syndrome",
+    "cardiology.heart-failure.mechanisms-evaluation"
+  ]
+}

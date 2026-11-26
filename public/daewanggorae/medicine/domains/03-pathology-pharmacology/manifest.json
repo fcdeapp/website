@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "03-pathology-pharmacology",
+  "title": {
+    "ko": "병리학·약리학·독성학"
+  },
+  "subjectIds": [
+    "pathology",
+    "systemic-pathology",
+    "pharmacology",
+    "systemic-pharmacology",
+    "toxicology"
+  ],
+  "subjects": [
+    {
+      "id": "pathology",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/manifest.json"
+    },
+    {
+      "id": "systemic-pathology",
+      "path": "domains/03-pathology-pharmacology/subjects/systemic-pathology/manifest.json"
+    },
+    {
+      "id": "pharmacology",
+      "path": "domains/03-pathology-pharmacology/subjects/pharmacology/manifest.json"
+    },
+    {
+      "id": "systemic-pharmacology",
+      "path": "domains/03-pathology-pharmacology/subjects/systemic-pharmacology/manifest.json"
+    },
+    {
+      "id": "toxicology",
+      "path": "domains/03-pathology-pharmacology/subjects/toxicology/manifest.json"
+    }
+  ],
+  "targetPages": 1200,
+  "charactersPerPage": 1500,
+  "targetBodyCharacters": 1800000,
+  "minimumProseFractionBeforeNextDomain": 0.1,
+  "minimumBodyCharactersBeforeNextDomain": 180000,
+  "progressPath": "domains/03-pathology-pharmacology/progress.json",
+  "readerPath": "domains/03-pathology-pharmacology/TEXTBOOK.md",
+  "evidencePath": "domains/03-pathology-pharmacology/references/lesson-evidence.json",
+  "bodyLoading": "section_json",
+  "sharedPackage": "medical-shared.zip",
+  "curriculumPath": "domains/03-pathology-pharmacology/curriculum.json",
+  "coveragePath": "domains/03-pathology-pharmacology/coverage.json",
+  "questionIndex": "domains/03-pathology-pharmacology/questions/index.json",
+  "sceneIndex": "domains/03-pathology-pharmacology/scenes/index.json",
+  "diagramIndex": "domains/03-pathology-pharmacology/diagrams/index.json",
+  "referenceCatalog": "domains/03-pathology-pharmacology/references/references.json",
+  "crossDomainLessonRefs": [
+    "infectious-diseases.antibiotics.stewardship",
+    "nephrology.ckd.evaluation",
+    "physiology.renal.filtration"
+  ],
+  "packageFile": "03-pathology-pharmacology.zip",
+  "requiresOriginalBodyParts3D": true,
+  "installRoot": "public/medicine",
+  "relatedLessonResolution": "resolve by stable ID; request another domain when not installed"
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "clinical-reasoning.diagnosis.problem-representation",
+  "subjectId": "clinical-reasoning",
+  "chapterId": "diagnosis",
+  "title": {
+    "ko": "문제표현과 감별진단의 갱신",
+    "en": "Problem Representation and Diagnostic Updating"
+  },
+  "learningObjectives": [
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.lo.01",
+      "text": "긴 병력을 진단적으로 유용한 문제표현으로 압축한다."
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.lo.02",
+      "text": "진단확률과 위험도를 구분한다."
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.lo.03",
+      "text": "인지편향을 재평가 과정에 반영한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.b.c351fc3c246c",
+      "type": "heading",
+      "level": 2,
+      "text": "정보 압축의 원리"
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.b.9378ed239f1a",
+      "type": "paragraph",
+      "markdown": "문제표현(problem representation)은 환자의 긴 이야기를 핵심 임상 특성으로 압축한 문장이다. 나이와 배경, 시간 경과, 주요 증후군과 결정적 양성·음성 소견을 포함한다. 그러나 자료를 짧게 만드는 것만이 목적은 아니다. 급성과 만성, 단일계통과 다계통, 통증성과 무통성 같은 의미적 대조가 가능한 정보를 남겨 질병 모형과 비교하기 쉽게 한다. 교육용 사례에서 단순히 배가 아프다고 쓰는 것보다 갑자기 시작된 지속적 상복부통과 순환 불안정처럼 시간과 생리 상태를 표현하는 편이 추론을 돕는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.b.dfad26080575",
+      "type": "paragraph",
+      "markdown": "초기 가설은 어떤 문진과 진찰을 더 할지 안내하지만, 가설에 맞는 정보만 수집하면 확증편향이 생긴다. 환자가 처음 선택한 단어나 이전 진단명에 고정되는 앵커링, 그럴듯한 진단 하나를 얻은 뒤 탐색을 멈추는 조기종결도 흔한 위험이다. 이를 피하기 위해 모든 환자에게 무한한 검사 목록을 적용하는 것은 해결책이 아니다. 현재 가설을 지지하는 근거와 설명하지 못하는 소견, 놓치면 큰 위해가 있는 대안을 함께 적고 목적이 분명한 추가 평가를 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.b.186405191a04",
+      "type": "heading",
+      "level": 2,
+      "text": "가능성과 위험을 나누기"
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.b.fc87e0a68c15",
+      "type": "paragraph",
+      "markdown": "가장 흔한 진단과 가장 빨리 배제해야 할 진단은 다를 수 있다. 낮은 확률이어도 지연 시 위해가 큰 질환은 초기 행동 문턱을 낮출 수 있다. 반대로 약간 가능성이 있다는 이유만으로 위험하고 비싼 검사를 모두 시행하면 위양성과 후속 검사로 인한 위해가 늘 수 있다. 검사 문턱과 치료 문턱은 질환 확률뿐 아니라 검사 정확도, 치료 이익과 위해, 시간 민감성, 환자의 가치에 의해 달라진다. 통계적 확률과 윤리적·실무적 의사결정을 연결하는 지점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.b.e88a6b090aca",
+      "type": "paragraph",
+      "markdown": "감별진단은 무작위 병명 나열이 아니라 기전과 위치, 시간 경과에 따라 조직화한다. 호흡곤란이라면 기도, 폐실질, 폐혈관, 심장, 혈액 산소운반, 신경근과 대사 원인 등을 고려할 수 있다. 동시에 심한 저산소혈증이나 쇼크 같은 생리적 위협은 병명이 확정되기 전에도 평가하고 대응한다. 안정화와 진단은 순서대로 완전히 분리된 두 작업이 아니라 병행될 수 있다. 환자 상태가 바뀌면 우선순위도 다시 정해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.b.afc10d1317a6",
+      "type": "heading",
+      "level": 2,
+      "text": "불확실성을 기록하고 전달하기"
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.b.45ab74708e29",
+      "type": "paragraph",
+      "markdown": "검사 음성의 의미는 검사 전 확률과 검사 성능에 따라 달라진다. 초기 단계라 이상이 나타나지 않았을 수 있고, 검사한 부위와 실제 병변이 다를 수도 있다. 진단이 확정되지 않았으면 현재까지의 판단, 아직 남은 가능성, 어떤 변화가 재평가를 요구하는지 설명한다. 안전망(safety-netting)은 단순히 악화하면 오라는 말보다 악화의 구체 증상, 연락 방법, 재평가 시점과 책임을 명료하게 전달하는 과정이다. 문서에는 불확실성과 후속 계획을 함께 남긴다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-reasoning.diagnosis.problem-representation.b.183a63249611",
+      "type": "paragraph",
+      "markdown": "진단추론을 평가할 때 최종 진단이 맞았는지만 보면 우연과 위험한 과정이 가려진다. 당시 이용 가능했던 정보, 가설을 바꾼 근거, 중요한 대안의 처리, 후속 결과 확인까지 검토해야 한다. 오류를 개인의 지식 부족으로만 설명하면 인계 실패나 결과 추적 시스템의 문제를 놓친다. 반대로 시스템만 강조하여 개인의 지식·관찰 훈련을 생략해서도 안 된다. 두 수준의 개선이 함께 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/10-prevention-clerkships/subjects/clinical-reasoning/chapters/diagnosis/sections/clinical-reasoning.diagnosis.problem-representation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.clinical-reasoning.diagnosis.problem-representation.001"
+  ],
+  "prerequisites": [
+    "biostatistics.diagnosis.bayes"
+  ],
+  "keyFacts": [
+    "빈도 외에 지연 시 위해와 시간 민감성이 중요하다."
+  ]
+}

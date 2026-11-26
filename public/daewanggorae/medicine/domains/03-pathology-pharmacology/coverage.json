@@ -1,0 +1,605 @@
+{
+  "status": "incomplete",
+  "objectives": [
+    {
+      "objectiveId": "pathology.scope.001",
+      "subjectId": "pathology",
+      "text": "세포손상과 세포사멸의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pathology.cell.injury-death",
+        "pathology.inflammation.acute-chronic"
+      ]
+    },
+    {
+      "objectiveId": "pathology.scope.002",
+      "subjectId": "pathology",
+      "text": "염증과 조직수복의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pathology.cell.injury-death",
+        "pathology.inflammation.acute-chronic"
+      ]
+    },
+    {
+      "objectiveId": "pathology.scope.003",
+      "subjectId": "pathology",
+      "text": "혈역학적 장애의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pathology.cell.injury-death",
+        "pathology.inflammation.acute-chronic"
+      ]
+    },
+    {
+      "objectiveId": "pathology.scope.004",
+      "subjectId": "pathology",
+      "text": "면역병리의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pathology.cell.injury-death",
+        "pathology.inflammation.acute-chronic"
+      ]
+    },
+    {
+      "objectiveId": "pathology.scope.005",
+      "subjectId": "pathology",
+      "text": "종양 발생과 진행의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pathology.cell.injury-death",
+        "pathology.inflammation.acute-chronic"
+      ]
+    },
+    {
+      "objectiveId": "pathology.scope.006",
+      "subjectId": "pathology",
+      "text": "환경과 영양병리의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pathology.cell.injury-death",
+        "pathology.inflammation.acute-chronic"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pathology.scope.001",
+      "subjectId": "systemic-pathology",
+      "text": "심혈관과 호흡기 병리의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pathology.scope.002",
+      "subjectId": "systemic-pathology",
+      "text": "신장과 요로 병리의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pathology.scope.003",
+      "subjectId": "systemic-pathology",
+      "text": "소화기와 간담췌 병리의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pathology.scope.004",
+      "subjectId": "systemic-pathology",
+      "text": "내분비와 생식기 병리의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pathology.scope.005",
+      "subjectId": "systemic-pathology",
+      "text": "신경과 근골격 병리의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pathology.scope.006",
+      "subjectId": "systemic-pathology",
+      "text": "혈액림프 병리의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "pharmacology.scope.001",
+      "subjectId": "pharmacology",
+      "text": "수용체와 약력학의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pharmacology.general.pharmacokinetics"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.scope.002",
+      "subjectId": "pharmacology",
+      "text": "약동학과 용량설계의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pharmacology.general.pharmacokinetics"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.scope.003",
+      "subjectId": "pharmacology",
+      "text": "약물대사와 수송의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pharmacology.general.pharmacokinetics"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.scope.004",
+      "subjectId": "pharmacology",
+      "text": "상호작용과 이상반응의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pharmacology.general.pharmacokinetics"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.scope.005",
+      "subjectId": "pharmacology",
+      "text": "임상시험과 약물감시의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pharmacology.general.pharmacokinetics"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.scope.006",
+      "subjectId": "pharmacology",
+      "text": "특수 환자군의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": [
+        "pharmacology.general.pharmacokinetics"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pharmacology.scope.001",
+      "subjectId": "systemic-pharmacology",
+      "text": "자율신경 약물의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pharmacology.scope.002",
+      "subjectId": "systemic-pharmacology",
+      "text": "심혈관과 신장 약물의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pharmacology.scope.003",
+      "subjectId": "systemic-pharmacology",
+      "text": "중추신경 약물의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pharmacology.scope.004",
+      "subjectId": "systemic-pharmacology",
+      "text": "항균제의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pharmacology.scope.005",
+      "subjectId": "systemic-pharmacology",
+      "text": "호르몬과 대사 약물의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "systemic-pharmacology.scope.006",
+      "subjectId": "systemic-pharmacology",
+      "text": "항암과 면역 약물의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "toxicology.scope.001",
+      "subjectId": "toxicology",
+      "text": "독성 동태와 용량반응의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "toxicology.scope.002",
+      "subjectId": "toxicology",
+      "text": "중독의 초기평가의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "toxicology.scope.003",
+      "subjectId": "toxicology",
+      "text": "해독제의 원리의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "toxicology.scope.004",
+      "subjectId": "toxicology",
+      "text": "중금속과 가스의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "toxicology.scope.005",
+      "subjectId": "toxicology",
+      "text": "살충제와 산업독성의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "toxicology.scope.006",
+      "subjectId": "toxicology",
+      "text": "약물 과량복용의 세부 학습성과를 공식 자료와 표준교재 범위에 대조하여 확장한다.",
+      "status": "unwritten",
+      "basis": "provisional_scope_task",
+      "lessonRefs": [],
+      "subjectDraftAvailability": []
+    },
+    {
+      "objectiveId": "pathology.cell.injury-death.lo.01",
+      "subjectId": "pathology",
+      "text": "가역적 손상과 비가역적 손상의 차이를 설명한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pathology.cell.injury-death"
+      ]
+    },
+    {
+      "objectiveId": "pathology.cell.injury-death.lo.02",
+      "subjectId": "pathology",
+      "text": "허혈과 재관류 손상을 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pathology.cell.injury-death"
+      ]
+    },
+    {
+      "objectiveId": "pathology.cell.injury-death.lo.03",
+      "subjectId": "pathology",
+      "text": "세포자멸사의 내인성·외인성 경로를 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pathology.cell.injury-death"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.general.pharmacokinetics.lo.01",
+      "subjectId": "pharmacology",
+      "text": "분포용적과 청소율의 물리적 의미를 설명한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pharmacology.general.pharmacokinetics"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.general.pharmacokinetics.lo.02",
+      "subjectId": "pharmacology",
+      "text": "반감기와 정상상태의 관계를 유도한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pharmacology.general.pharmacokinetics"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.general.pharmacokinetics.lo.03",
+      "subjectId": "pharmacology",
+      "text": "부하용량과 유지용량에 영향을 주는 변수를 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pharmacology.general.pharmacokinetics"
+      ]
+    },
+    {
+      "objectiveId": "pathology.inflammation.acute-chronic.lo.01",
+      "subjectId": "pathology",
+      "text": "혈관반응과 백혈구 유출의 단계를 설명한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pathology.inflammation.acute-chronic"
+      ]
+    },
+    {
+      "objectiveId": "pathology.inflammation.acute-chronic.lo.02",
+      "subjectId": "pathology",
+      "text": "주요 염증매개물질의 작용을 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pathology.inflammation.acute-chronic"
+      ]
+    },
+    {
+      "objectiveId": "pathology.inflammation.acute-chronic.lo.03",
+      "subjectId": "pathology",
+      "text": "육아종성 염증과 일반 만성염증을 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pathology.inflammation.acute-chronic"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.autonomic.receptors.lo.01",
+      "subjectId": "pharmacology",
+      "text": "절전·절후 전달물질과 수용체를 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pharmacology.autonomic.receptors"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.autonomic.receptors.lo.02",
+      "subjectId": "pharmacology",
+      "text": "수용체 선택성과 장기 효과·반사를 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pharmacology.autonomic.receptors"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.autonomic.receptors.lo.03",
+      "subjectId": "pharmacology",
+      "text": "직접 작용과 전달물질 처리 조절을 비교한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pharmacology.autonomic.receptors"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pathology.kidney.glomerular-patterns.lo.01",
+      "subjectId": "systemic-pathology",
+      "text": "사구체의 세 구성요소와 손상 양상을 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "systemic-pathology.kidney.glomerular-patterns"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pathology.kidney.glomerular-patterns.lo.02",
+      "subjectId": "systemic-pathology",
+      "text": "면역형광·광학·전자현미경의 정보를 통합한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "systemic-pathology.kidney.glomerular-patterns"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pathology.kidney.glomerular-patterns.lo.03",
+      "subjectId": "systemic-pathology",
+      "text": "임상 증후군과 병리 진단을 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "systemic-pathology.kidney.glomerular-patterns"
+      ]
+    },
+    {
+      "objectiveId": "pathology.neoplasia.growth-control.lo.01",
+      "subjectId": "pathology",
+      "text": "종양유전자와 종양억제유전자의 작용을 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pathology.neoplasia.growth-control"
+      ]
+    },
+    {
+      "objectiveId": "pathology.neoplasia.growth-control.lo.02",
+      "subjectId": "pathology",
+      "text": "증식·사멸·불안정성의 상호작용을 설명한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pathology.neoplasia.growth-control"
+      ]
+    },
+    {
+      "objectiveId": "pathology.neoplasia.growth-control.lo.03",
+      "subjectId": "pathology",
+      "text": "조직 이질성과 치료 선택압을 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pathology.neoplasia.growth-control"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pharmacology.antimicrobials.beta-lactams.lo.01",
+      "subjectId": "systemic-pharmacology",
+      "text": "세포벽 합성과 약물 표적을 연결한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "systemic-pharmacology.antimicrobials.beta-lactams"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pharmacology.antimicrobials.beta-lactams.lo.02",
+      "subjectId": "systemic-pharmacology",
+      "text": "내성 기전과 억제제의 범위를 구분한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "systemic-pharmacology.antimicrobials.beta-lactams"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pharmacology.antimicrobials.beta-lactams.lo.03",
+      "subjectId": "systemic-pharmacology",
+      "text": "노출·감염부위·이상반응을 통합해 해석한다.",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "systemic-pharmacology.antimicrobials.beta-lactams"
+      ]
+    },
+    {
+      "objectiveId": "toxicology.principles.exposure-and-toxidromes.lo.01",
+      "subjectId": "toxicology",
+      "text": "노출량과 표적 장기 독성을 연결하여 설명한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "toxicology.principles.exposure-and-toxidromes"
+      ]
+    },
+    {
+      "objectiveId": "toxicology.principles.exposure-and-toxidromes.lo.02",
+      "subjectId": "toxicology",
+      "text": "주요 독성증후군을 생리기전으로 구별한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "toxicology.principles.exposure-and-toxidromes"
+      ]
+    },
+    {
+      "objectiveId": "toxicology.principles.exposure-and-toxidromes.lo.03",
+      "subjectId": "toxicology",
+      "text": "음이온차와 삼투질농도차의 한계를 설명한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "toxicology.principles.exposure-and-toxidromes"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.general.pharmacodynamics.lo.01",
+      "subjectId": "pharmacology",
+      "text": "결합 친화도와 기능 반응을 구별한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pharmacology.general.pharmacodynamics"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.general.pharmacodynamics.lo.02",
+      "subjectId": "pharmacology",
+      "text": "효능과 역가 및 길항의 차이를 설명한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pharmacology.general.pharmacodynamics"
+      ]
+    },
+    {
+      "objectiveId": "pharmacology.general.pharmacodynamics.lo.03",
+      "subjectId": "pharmacology",
+      "text": "개인 반응과 집단의 반응 분포를 구분한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "pharmacology.general.pharmacodynamics"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pharmacology.autonomic.cholinergic-adrenergic.lo.01",
+      "subjectId": "systemic-pharmacology",
+      "text": "신경절·효과기의 전달물질과 수용체를 연결한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "systemic-pharmacology.autonomic.cholinergic-adrenergic"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pharmacology.autonomic.cholinergic-adrenergic.lo.02",
+      "subjectId": "systemic-pharmacology",
+      "text": "직접 작용제·간접 작용제·길항제를 구분한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "systemic-pharmacology.autonomic.cholinergic-adrenergic"
+      ]
+    },
+    {
+      "objectiveId": "systemic-pharmacology.autonomic.cholinergic-adrenergic.lo.03",
+      "subjectId": "systemic-pharmacology",
+      "text": "장기 반응과 반사 반응을 함께 설명한다",
+      "status": "draft_covered_not_verified",
+      "basis": "editorial_learning_objective",
+      "lessonRefs": [
+        "systemic-pharmacology.autonomic.cholinergic-adrenergic"
+      ]
+    }
+  ]
+}

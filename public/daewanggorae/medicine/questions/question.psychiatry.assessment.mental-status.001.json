@@ -1,0 +1,23 @@
+{
+  "id": "question.psychiatry.assessment.mental-status.001",
+  "kind": "original_concept_question",
+  "lessonId": "psychiatry.assessment.mental-status",
+  "prompt": "기분과 정동의 기본 구분은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "환자 보고와 관찰된 감정 표현"
+    },
+    {
+      "id": "B",
+      "text": "동일한 뜻의 표현"
+    }
+  ],
+  "answer": "A",
+  "explanation": "기분은 보고되는 상태를, 정동은 관찰되는 표현을 기술한다.",
+  "optionRationales": {
+    "A": "기분은 보고되는 상태를, 정동은 관찰되는 표현을 기술한다.",
+    "B": "두 정보는 관련되지만 불일치도 가능하다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

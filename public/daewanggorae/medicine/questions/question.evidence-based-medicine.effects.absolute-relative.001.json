@@ -1,0 +1,28 @@
+{
+  "id": "question.evidence-based-medicine.effects.absolute-relative.001",
+  "kind": "original_concept_question",
+  "lessonId": "evidence-based-medicine.effects.absolute-relative",
+  "prompt": "1년 위험이 20%에서 15%로 줄어든 연구의 ARR과 NNT는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "ARR 5%포인트, NNT 20이다."
+    },
+    {
+      "id": "B",
+      "text": "ARR 25%포인트, NNT 4이다."
+    },
+    {
+      "id": "C",
+      "text": "추적기간과 무관하게 모든 환자의 NNT는 영구히 20이다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "ARR=0.20−0.15=0.05, NNT=1/0.05=20이며 기간과 집단을 함께 제시한다.",
+  "optionRationales": {
+    "A": "정답이다. ARR=0.20−0.15=0.05, NNT=1/0.05=20이며 기간과 집단을 함께 제시한다.",
+    "B": "상대위험 감소 25%와 절대위험 감소 5%포인트를 혼동했다.",
+    "C": "NNT는 사건 정의와 기간, 기저 위험 및 비교 치료를 포함하여 해석한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

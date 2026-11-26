@@ -1,0 +1,28 @@
+{
+  "id": "question.systemic-pharmacology.autonomic.cholinergic-adrenergic.001",
+  "kind": "original_concept_question",
+  "lessonId": "systemic-pharmacology.autonomic.cholinergic-adrenergic",
+  "prompt": "혈관 수축 약물 투여 후 심박수가 감소할 수 있는 이유는?",
+  "options": [
+    {
+      "id": "A",
+      "text": "자율신경 약물의 효과에는 반사가 전혀 참여하지 않는다."
+    },
+    {
+      "id": "B",
+      "text": "혈압 상승에 대한 압수용체 반사가 직접 심장 효과에 더해질 수 있다."
+    },
+    {
+      "id": "C",
+      "text": "혈관 약물은 언제나 심장 수용체를 파괴한다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "온전한 순환계에서 관찰된 반응은 직접 작용과 반사 및 기저 상태의 합이다.",
+  "optionRationales": {
+    "A": "반사는 적출 조직과 생체 반응이 달라지는 핵심 요인이다.",
+    "B": "온전한 순환계에서 관찰된 반응은 직접 작용과 반사 및 기저 상태의 합이다.",
+    "C": "수용체 파괴가 필요한 설명이 아니며 반사성 조절로 생길 수 있다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

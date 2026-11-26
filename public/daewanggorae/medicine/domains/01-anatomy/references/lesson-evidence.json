@@ -1,0 +1,1207 @@
+{
+  "schemaVersion": "1.0.0",
+  "lessons": [
+    {
+      "lessonId": "anatomy.thorax.heart",
+      "references": [
+        {
+          "sourceRef": "gray-toc",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "heart-anatomy",
+          "use": "selected_fact_check_or_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.thorax.heart.b.160da28e6b17",
+          "sourceRefs": [
+            "heart-anatomy"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "histology.liver.microcirculation",
+      "references": [
+        {
+          "sourceRef": "aasld-liver-histology",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [
+        {
+          "blockId": "histology.liver.microcirculation.b.be36b93f8948",
+          "sourceRefs": [
+            "aasld-liver-histology"
+          ],
+          "scope": "소엽 내 혈류와 담즙 흐름의 반대 방향"
+        }
+      ],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "embryology.cardiovascular.septation",
+      "references": [
+        {
+          "sourceRef": "unsw-heart-development",
+          "use": "scope_consultation_or_selected_fact_comparison_not_full_lesson_review"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "partial_source_comparison_full_manuscript_pending"
+    },
+    {
+      "lessonId": "imaging-anatomy.cross-sectional.orientation",
+      "references": [
+        {
+          "sourceRef": "radiologyinfo-report",
+          "use": "scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "blocks": [],
+      "verificationStatus": "full_manuscript_claim_review_pending"
+    },
+    {
+      "lessonId": "embryology.neural.neurulation-crest",
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "선정한 자료의 범위 확인에 한정; 전체 문장·수치·치료 권고 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "references": [
+        {
+          "sourceRef": "unsw-neural-system",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "unsw-neural-crest",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.general.orientation-fascia",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-joints",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-pns",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.pectoral-girdle",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-pectoral",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.shoulder-rotator-cuff",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.brachial-plexus",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-pns",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.axilla-vessels",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-circulatory",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.arm-elbow",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-upper-bones",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.forearm-wrist",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-upper-bones",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.upper-limb.hand-intrinsics",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-upper-muscles",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "histology.connective.matrix-cells",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-connective",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "histology.supporting.cartilage-bone",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-connective",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-bone-structure",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "embryology.skeleton.ossification-growth-plate",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-ossification",
+          "use": "limited_scope_consultation_not_whole_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "서지에 기록된 제한 범위 외의 전체 문장·기전·진찰 세부 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.axial.vertebral-column",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-vertebral-column",
+          "use": "limited_scope_consultation_not_full_lesson_review"
+        }
+      ],
+      "unresolvedIssues": [
+        "척주의 구역·구조와 원반의 기본 범위. 임상 신경학적 손상·시술의 전체 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.thorax.wall-diaphragm",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-thoracic-cage",
+          "use": "limited_scope_consultation_not_full_lesson_review"
+        }
+      ],
+      "unresolvedIssues": [
+        "갈비뼈·복장뼈 표지 범위 확인. 근층·가로막 신경·시술 안전의 전체 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.thorax.lungs-pleura",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-lungs-pleura",
+          "use": "limited_scope_consultation_not_full_lesson_review"
+        }
+      ],
+      "unresolvedIssues": [
+        "좌우 엽·폐구역과 가슴막의 기본 범위. 허파문 세부·림프·기흉 임상 판단 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.wall-peritoneum",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bluelink-abdomen-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false
+    },
+    {
+      "lessonId": "anatomy.abdomen.inguinal-canal",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bluelink-abdomen-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.inguinal-canal.b.e7c2bd253ac1",
+          "sourceRefs": [
+            "bluelink-abdomen-scope"
+          ],
+          "checkedScope": "깊은고리는 아래배벽혈관 가쪽이며 배가로근막의 입구",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.peritoneal-compartments",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bluelink-abdomen-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.peritoneal-compartments.b.d0f9a57e3280",
+          "sourceRefs": [
+            "bluelink-abdomen-scope"
+          ],
+          "checkedScope": "복막안은 잠재 공간이며 복막내장기는 그 공간 자체에 떠 있는 것이 아님",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.foregut",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-stomach",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bluelink-pancreas-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.foregut.b.de48d7375aaa",
+          "sourceRefs": [
+            "openstax-stomach"
+          ],
+          "checkedScope": "분문·위바닥·몸통·날문 구역의 구분",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.liver-segments",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bookshelf-liver-segments",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-digestive-accessory",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.liver-segments.b.fc8b8ba859a9",
+          "sourceRefs": [
+            "bookshelf-liver-segments"
+          ],
+          "checkedScope": "구역 중심의 문맥·동맥·담관과 구역 사이 주요 간정맥 관계",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.biliary-pancreas",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-digestive-accessory",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bluelink-liver-scope",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.biliary-pancreas.b.b3007ef33291",
+          "sourceRefs": [
+            "openstax-digestive-accessory"
+          ],
+          "checkedScope": "간에서 담즙 생성, 담낭에서 저장·농축",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.spleen",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-lymphatic",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.abdomen.spleen.b.84a55e60c60c",
+          "sourceRefs": [
+            "openstax-lymphatic"
+          ],
+          "checkedScope": "지라는 혈액 속 세포와 항원 처리에 중요하며 림프절의 림프 여과와 구분",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.abdomen.intestine-mesenteric-vessels",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-intestine",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false
+    },
+    {
+      "lessonId": "anatomy.retroperitoneum.kidney-ureter",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-kidney-gross",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-ureter",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.retroperitoneum.kidney-ureter.b.47b2e8feee3a",
+          "sourceRefs": [
+            "bookshelf-ureter"
+          ],
+          "checkedScope": "요관은 콩팥깔때기에서 시작해 큰허리근 앞쪽 뒤복막으로 내려감",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        },
+        {
+          "blockId": "anatomy.retroperitoneum.kidney-ureter.b.6aa2627f02c4",
+          "sourceRefs": [
+            "bookshelf-ureter"
+          ],
+          "checkedScope": "구간별 혈관 공급과 요관 주변의 연결망",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.pelvis.floor-organs",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bookshelf-levator",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-urine-transport",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.pelvis.floor-organs.b.9e8e57b7a206",
+          "sourceRefs": [
+            "bookshelf-levator"
+          ],
+          "checkedScope": "항문올림근의 직접 엉치신경 가지와 체성·자율신경 구분",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.pelvis.rectum-anal-canal",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bookshelf-anal-canal",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "anatomy.pelvis.rectum-anal-canal.b.bc046b96d701",
+          "sourceRefs": [
+            "bookshelf-anal-canal"
+          ],
+          "checkedScope": "빗살선 아래의 얕은샅림프절 방향과 위쪽 깊은 배액 경로",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "histology.digestive.wall-regional-patterns",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-stomach",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-intestine",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false
+    },
+    {
+      "lessonId": "histology.renal.nephron-vessels",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "openstax-kidney-micro",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "histology.renal.nephron-vessels.b.da202f5c1ad7",
+          "sourceRefs": [
+            "openstax-kidney-micro"
+          ],
+          "checkedScope": "Bowman 주머니의 벽측층과 발세포 장측층의 차이",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "embryology.digestive.rotation-fixation",
+      "verificationStatus": "full_manuscript_review_pending",
+      "references": [
+        {
+          "sourceRef": "bookshelf-midgut",
+          "use": "limited_fact_or_scope_consultation_not_full_lesson_verification"
+        }
+      ],
+      "unresolvedIssues": [
+        "전체 문장·혈관 변이·진찰 및 수술 판단의 전수 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "independentComposition": true,
+      "thirdPartySourceTextOrImagesIncluded": false,
+      "blocks": [
+        {
+          "blockId": "embryology.digestive.rotation-fixation.b.c69192653142",
+          "sourceRefs": [
+            "bookshelf-midgut"
+          ],
+          "checkedScope": "앞쪽 관찰 기준 위창자간막동맥 축의 270도 반시계 방향 재배열",
+          "verificationStatus": "selected_claim_only_remaining_paragraph_pending"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.pelvic-girdle",
+      "references": [
+        {
+          "sourceRef": "openstax-pelvic-girdle",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 부착·신경·혈관·임상 문장의 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.pelvic-girdle.b.8e7265fe7d44",
+          "sourceRefs": [
+            "openstax-pelvic-girdle"
+          ],
+          "checkedScope": "양쪽 볼기뼈·엉치뼈·꼬리뼈의 고리 구성"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.hip-gluteal",
+      "references": [
+        {
+          "sourceRef": "openstax-lower-bones",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-lower-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 부착·신경·혈관·임상 문장의 대조 미완료",
+        "전문의 검수 미실시"
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.femoral-triangle",
+      "references": [
+        {
+          "sourceRef": "bookshelf-femoral-triangle",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-lower-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 부착·신경·혈관·임상 문장의 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.femoral-triangle.b.9a785adf274c",
+          "sourceRefs": [
+            "bookshelf-femoral-triangle"
+          ],
+          "checkedScope": "넙다리신경은 넙다리집 밖이며 삼각의 내용물과 구별"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.knee-popliteal",
+      "references": [
+        {
+          "sourceRef": "openstax-selected-joints",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "aaos-acl-anatomy",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "aaos-meniscus-anatomy",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-popliteal-region",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.knee-popliteal.b.d9b29891c9d6",
+          "sourceRefs": [
+            "aaos-acl-anatomy"
+          ],
+          "checkedScope": "ACL의 앞쪽 정강뼈 이동 제한과 회전 안정성"
+        },
+        {
+          "blockId": "anatomy.lower-limb.knee-popliteal.b.44455cbde43f",
+          "sourceRefs": [
+            "bookshelf-popliteal-region"
+          ],
+          "checkedScope": "오금 신경·정맥·동맥의 기본 깊이 관계"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.leg-ankle",
+      "references": [
+        {
+          "sourceRef": "openstax-lower-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-selected-joints",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-foot-ankle-anatomy",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.leg-ankle.b.37c2e86efd5b",
+          "sourceRefs": [
+            "bookshelf-foot-ankle-anatomy"
+          ],
+          "checkedScope": "굽힘근지지띠 아래 발목굴 내용물"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.lower-limb.foot-arches",
+      "references": [
+        {
+          "sourceRef": "bookshelf-foot-arches",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-lower-bones",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.lower-limb.foot-arches.b.8977bb30d3c1",
+          "sourceRefs": [
+            "bookshelf-foot-arches"
+          ],
+          "checkedScope": "발가락 폄과 발바닥널힘줄 긴장 연결"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.skull-base-foramina",
+      "references": [
+        {
+          "sourceRef": "openstax-skull",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.skull-base-foramina.b.d02537de76c9",
+          "sourceRefs": [
+            "openstax-skull"
+          ],
+          "checkedScope": "시각신경관의 뼈 표지"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.neck-fascia-triangles",
+      "references": [
+        {
+          "sourceRef": "bookshelf-deep-cervical-fascia",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.neck-fascia-triangles.b.8b2fc596c017",
+          "sourceRefs": [
+            "bookshelf-deep-cervical-fascia"
+          ],
+          "checkedScope": "목교감신경줄기는 목동맥집 중심 내용물과 구별되는 바깥 구조"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.larynx-vocal-folds",
+      "references": [
+        {
+          "sourceRef": "bookshelf-laryngeal-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-recurrent-laryngeal",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.larynx-vocal-folds.b.ea2b0189da8d",
+          "sourceRefs": [
+            "bookshelf-laryngeal-muscles"
+          ],
+          "checkedScope": "뒤반지모뿔근은 주된 성대 벌림근"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.thyroid-parathyroid-relations",
+      "references": [
+        {
+          "sourceRef": "kjorl-thyroid-anatomy-1998",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-recurrent-laryngeal",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.thyroid-parathyroid-relations.b.bb4480d7356e",
+          "sourceRefs": [
+            "kjorl-thyroid-anatomy-1998"
+          ],
+          "checkedScope": "아래갑상샘동맥 분지와 되돌이후두신경 위치 관계의 변이"
+        }
+      ]
+    },
+    {
+      "lessonId": "histology.endocrine.thyroid-parathyroid",
+      "references": [
+        {
+          "sourceRef": "openstax-thyroid",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-parathyroid",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "leeds-thyroid-histology",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "endotext-hypercalcemia-physiology",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "histology.endocrine.thyroid-parathyroid.b.f4721861cf6b",
+          "sourceRefs": [
+            "openstax-thyroid"
+          ],
+          "checkedScope": "갑상샘글로불린 결합 저장체와 유리호르몬의 구분"
+        },
+        {
+          "blockId": "histology.endocrine.thyroid-parathyroid.b.3abd947dd5a5",
+          "sourceRefs": [
+            "endotext-hypercalcemia-physiology"
+          ],
+          "checkedScope": "높은 세포외 칼슘에 의한 CaSR 활성과 PTH 억제"
+        }
+      ]
+    },
+    {
+      "lessonId": "histology.respiratory.airways-alveoli",
+      "references": [
+        {
+          "sourceRef": "leeds-respiratory-conducting",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "leeds-respiratory-portion",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-respiratory-organs",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "openstax-lungs-pleura",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "histology.respiratory.airways-alveoli.b.9c9a33e43e1a",
+          "sourceRefs": [
+            "leeds-respiratory-conducting"
+          ],
+          "checkedScope": "정상 세기관지의 연골과 점막밑샘 부재"
+        },
+        {
+          "blockId": "histology.respiratory.airways-alveoli.b.c995aac02cfa",
+          "sourceRefs": [
+            "leeds-respiratory-portion"
+          ],
+          "checkedScope": "I형의 얇은 표면과 II형의 표면활성제 분비 구분"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.oral-tongue-salivary",
+      "references": [
+        {
+          "sourceRef": "bookshelf-oral-cavity",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-chorda-tympani",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.oral-tongue-salivary.b.b4eb2847153b",
+          "sourceRefs": [
+            "bookshelf-oral-cavity"
+          ],
+          "checkedScope": "앞혀 일반감각 V3와 미각 VII 경로 분리"
+        },
+        {
+          "blockId": "anatomy.head-neck.oral-tongue-salivary.b.0fca6b4bb191",
+          "sourceRefs": [
+            "bookshelf-chorda-tympani"
+          ],
+          "checkedScope": "미각과 절전 부교감섬유 동행"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.pharynx-soft-palate",
+      "references": [
+        {
+          "sourceRef": "bookshelf-stylopharyngeus",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-swallowing-anatomy",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-oral-cavity",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.pharynx-soft-palate.b.d42e2797b81f",
+          "sourceRefs": [
+            "bookshelf-stylopharyngeus"
+          ],
+          "checkedScope": "붓인두근의 IX 지배"
+        }
+      ]
+    },
+    {
+      "lessonId": "anatomy.head-neck.orbit-extraocular",
+      "references": [
+        {
+          "sourceRef": "bookshelf-orbit-bones",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-eye-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-visual-pathway-muscles",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "anatomy.head-neck.orbit-extraocular.b.910acd26bd95",
+          "sourceRefs": [
+            "bookshelf-eye-muscles"
+          ],
+          "checkedScope": "가쪽곧은근 VI·위빗근 IV의 운동지배"
+        }
+      ]
+    },
+    {
+      "lessonId": "neuroanatomy.brainstem.levels-localization",
+      "references": [
+        {
+          "sourceRef": "bookshelf-brainstem",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "uth-trigeminal-nuclei",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "neuroanatomy.brainstem.levels-localization.b.3791176d9186",
+          "sourceRefs": [
+            "uth-trigeminal-nuclei"
+          ],
+          "checkedScope": "다리뇌의 삼차신경 감각·운동핵 및 중간뇌핵의 일차 고유감각 세포체"
+        }
+      ]
+    },
+    {
+      "lessonId": "neuroanatomy.cerebellum.cortex-connections",
+      "references": [
+        {
+          "sourceRef": "bookshelf-cerebellar-dysfunction",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "purves-cerebellar-circuits",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "neuroanatomy.cerebellum.cortex-connections.b.b2cff3b33c33",
+          "sourceRefs": [
+            "bookshelf-cerebellar-dysfunction"
+          ],
+          "checkedScope": "푸르키녜세포의 억제성 출력"
+        }
+      ]
+    },
+    {
+      "lessonId": "neuroanatomy.meninges.ventricles-csf",
+      "references": [
+        {
+          "sourceRef": "purves-ventricular-system",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-csf",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        },
+        {
+          "sourceRef": "bookshelf-cranial-meninges",
+          "use": "limited_fact_consultation_not_full_lesson_verification"
+        }
+      ],
+      "verificationStatus": "full_manuscript_review_pending",
+      "unresolvedIssues": [
+        "전체 문장별 기전·위치·기능·임상 적용의 출처 대조 미완료",
+        "전문의 검수 미실시"
+      ],
+      "blocks": [
+        {
+          "blockId": "neuroanatomy.meninges.ventricles-csf.b.a97341065c99",
+          "sourceRefs": [
+            "purves-ventricular-system"
+          ],
+          "checkedScope": "뇌실의 연결 순서"
+        },
+        {
+          "blockId": "neuroanatomy.meninges.ventricles-csf.b.a76476503374",
+          "sourceRefs": [
+            "bookshelf-csf"
+          ],
+          "checkedScope": "넷째뇌실에서 거미막밑공간으로 나가는 정중·가쪽 출구"
+        }
+      ]
+    }
+  ]
+}

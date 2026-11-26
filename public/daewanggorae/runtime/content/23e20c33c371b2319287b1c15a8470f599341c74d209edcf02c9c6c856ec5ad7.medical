@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neonatology",
+  "title": {
+    "ko": "신생아학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "neonatology.chapter.transition",
+      "path": "domains/07-obgyn-pediatrics/subjects/neonatology/chapters/transition/chapter.json"
+    },
+    {
+      "id": "neonatology.chapter.bilirubin",
+      "path": "domains/07-obgyn-pediatrics/subjects/neonatology/chapters/bilirubin/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "neonatology.plan.001",
+    "neonatology.plan.002",
+    "neonatology.plan.003",
+    "neonatology.plan.004",
+    "neonatology.plan.005",
+    "neonatology.plan.006",
+    "neonatology.transition.circulation",
+    "neonatology.bilirubin.production-and-clearance"
+  ]
+}

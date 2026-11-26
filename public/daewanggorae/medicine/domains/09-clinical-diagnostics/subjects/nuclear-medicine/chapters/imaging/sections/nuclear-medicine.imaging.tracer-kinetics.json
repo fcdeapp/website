@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "nuclear-medicine.imaging.tracer-kinetics",
+  "subjectId": "nuclear-medicine",
+  "chapterId": "imaging",
+  "title": {
+    "ko": "방사성추적자의 분포와 기능영상",
+    "en": "Radiotracer Distribution and Functional Imaging"
+  },
+  "learningObjectives": [
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.lo.01",
+      "text": "물리적 붕괴와 생물학적 제거를 구별한다"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.lo.02",
+      "text": "섭취와 대사 및 배설의 정보를 해석한다"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.lo.03",
+      "text": "생리적 섭취와 질환의 비특이적 섭취를 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.dab85dd72d83",
+      "type": "heading",
+      "level": 2,
+      "text": "표지가 붙은 물질의 움직임을 본다"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.0ea8dd7f9db1",
+      "type": "paragraph",
+      "markdown": "핵의학 영상은 방사성핵종으로 표지한 물질이 몸 안에서 어디로 이동하고 얼마나 남는지를 검출하여 기능과 분포의 정보를 얻는다. CT가 주로 X선 감쇠를, MRI가 자화와 이완 등의 특성을 이용하는 것과 측정 대상이 다르다. 영상의 높은 신호는 해당 부위에 추적자가 많다는 의미에서 출발하며, 그것이 어떤 생리 또는 질환을 뜻하는지는 추적자의 성질과 검사 조건에 따라 해석해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.d280d89907dc",
+      "type": "paragraph",
+      "markdown": "추적자는 혈류와 세포막 수송, 수용체 결합, 대사적 포획 및 배설 등 서로 다른 과정을 반영할 수 있다. 같은 장기에서도 어떤 추적자를 사용했는지에 따라 신호의 의미가 다르다. 섭취가 높다는 사실만으로 대사가 언제나 증가했다고 말하거나 모든 추적자 영상에서 같은 정상 분포를 기대하면 안 된다. 투여량과 주입의 적절성, 촬영 시점, 전처치와 약물도 결과에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.3293dbc87188",
+      "type": "heading",
+      "level": 2,
+      "text": "두 가지 시간 과정"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.f7a42fd2979f",
+      "type": "paragraph",
+      "markdown": "물리적 반감기(physical half-life)는 방사성 붕괴에 의해 방사능이 절반이 되는 시간이다. 생물학적 반감기(biological half-life)는 물질이 생체의 특정 구획에서 제거되는 시간 특성을 설명한다. 둘이 함께 작용하여 실제 관찰되는 방사능 감소가 달라진다. 단순한 일차 제거와 단일 구획을 가정할 때에는 유효 반감기를 계산할 수 있지만, 복잡한 장기 분포와 여러 구획의 교환을 언제나 그 모형 하나로 표현할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.517bf58b2400",
+      "type": "paragraph",
+      "markdown": "활성의 시간 변화는 방사성 붕괴 외에 흡수와 재분포, 배설을 포함한다. 주입 직후의 혈류 정보와 나중의 조직 잔류 정보는 같은 의미가 아니다. 동적 영상은 시간에 따른 곡선으로 유입과 배출을 평가할 수 있고, 정적 영상은 특정 시간창의 분포를 보여준다. 촬영을 늦게 했을 때 신호가 낮다는 사실만으로 처음의 유입도 낮았다고 확정할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.85c8fdf457bb",
+      "type": "heading",
+      "level": 2,
+      "text": "SPECT와 PET"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.7d12024a0f41",
+      "type": "paragraph",
+      "markdown": "감마카메라는 방출된 광자를 검출하며 SPECT는 여러 방향의 정보를 이용하여 단층 분포를 재구성한다. PET에서는 양전자와 전자의 소멸에 따른 광자 쌍의 동시 검출을 이용한다. 두 방식은 사용하는 핵종과 검출 원리, 재구성과 해상도에서 차이가 있다. 장비 이름 자체가 특정 질환에 대한 민감도와 특이도를 고정해 주는 것은 아니며 추적자와 임상 질문을 함께 알아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.c697b574b9c3",
+      "type": "paragraph",
+      "markdown": "PET/CT나 SPECT/CT는 기능적 분포를 해부학적 위치와 연결하는 데 도움을 준다. 두 자료가 완전히 같은 순간에 같은 호흡 상태로 얻어진 것은 아닐 수 있어 위치 불일치와 움직임의 영향을 검토한다. 감쇠 보정과 재구성 과정도 인공물을 만들 수 있다. 숫자와 색지도가 정밀해 보여도 환자의 움직임과 기술 조건을 확인하는 과정은 생략할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.92c6e9b84ea8",
+      "type": "heading",
+      "level": 2,
+      "text": "높은 섭취가 뜻하는 것"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.cf9f1d0ceaf7",
+      "type": "paragraph",
+      "markdown": "포도당 유사 추적자를 사용하는 영상에서 염증세포도 높은 이용과 섭취를 보일 수 있다. 높은 신호를 모든 상황에서 암으로 확정하지 않으며, 일부 종양은 성질과 크기 및 치료 상태에 따라 신호가 높지 않을 수도 있다. 수술과 방사선치료 뒤의 염증, 감염과 정상 생리적 활동은 감별에 영향을 준다. 신호의 강도와 형태, 해부학적 위치 및 촬영 시점을 함께 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.37dabd601dd4",
+      "type": "paragraph",
+      "markdown": "정량화 지표는 투여량과 체격 보정, 혈당과 대기시간, 장비 및 재구성 조건 등에 영향을 받을 수 있다. 서로 다른 조건의 검사에서 수치만 비교하면 실제 질환 변화와 측정 차이를 혼동할 수 있다. 작은 병변에서는 부분용적 효과로 실제 농도가 낮게 보일 수 있다. 하나의 절단값을 모든 장기와 병변, 모든 장비에 보편적 확진 기준으로 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.ba7775d6d67e",
+      "type": "heading",
+      "level": 2,
+      "text": "환자 준비와 안전"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.9d1238387b72",
+      "type": "paragraph",
+      "markdown": "검사 전 준비는 추적자의 경로와 질문에 맞추어 정한다. 금식과 혈당, 약물 중단 여부 및 수분 섭취와 배뇨는 검사 종류에 따라 의미가 다르다. 임신과 수유, 신장 기능과 이동 능력 등도 안전과 결과의 질에 영향을 준다. 모든 핵의학 검사에 같은 준비와 중단 시간을 적용할 수 없으므로 검사별 기준을 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nuclear-medicine.imaging.tracer-kinetics.b.c0a0a345d3a8",
+      "type": "paragraph",
+      "markdown": "기능영상은 병변의 위치만이 아니라 장기가 실제로 작동하는 방식을 평가하는 강점이 있다. 하지만 신호의 생리학적 비특이성과 기술적 한계가 있어 임상과 다른 영상, 필요에 따른 조직 결과를 통합한다. 정상 표면 3D 모델은 장기 위치를 설명할 수 있지만 추적자의 실제 농도 분포와 시간 변화를 포함하지 않는다. 해부학적 맥락과 기능적 측정 자료를 연결하면서 두 정보의 범위를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/nuclear-medicine/chapters/imaging/sections/nuclear-medicine.imaging.tracer-kinetics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.nuclear-medicine.imaging.tracer-kinetics.001"
+  ],
+  "keyFacts": [
+    "아니다. 추적자와 생리적·염증성 원인을 함께 해석한다."
+  ]
+}

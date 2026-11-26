@@ -1,0 +1,28 @@
+{
+  "id": "question.histology.liver.microcirculation.001",
+  "kind": "original_concept_question",
+  "lessonId": "histology.liver.microcirculation",
+  "prompt": "고전적 간소엽에서 혈액과 담즙의 큰 흐름을 비교하면?",
+  "options": [
+    {
+      "id": "A",
+      "text": "담세관은 간동맥의 작은 분지이다."
+    },
+    {
+      "id": "B",
+      "text": "혈액은 중심정맥 쪽으로, 담즙은 문맥역의 담도 쪽으로 흐른다."
+    },
+    {
+      "id": "C",
+      "text": "혈액과 담즙은 같은 굴모세혈관 안에서 함께 흐른다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "혈액의 유입·유출과 담즙의 배출은 서로 다른 구조와 방향을 가진다.",
+  "optionRationales": {
+    "A": "담세관은 간세포 사이의 담즙 경로이며 동맥 분지가 아니다.",
+    "B": "정답이다. 혈액의 유입·유출과 담즙의 배출은 서로 다른 구조와 방향을 가진다.",
+    "C": "혈액은 굴모세혈관을, 담즙은 별도의 담세관과 담도 경로를 따른다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

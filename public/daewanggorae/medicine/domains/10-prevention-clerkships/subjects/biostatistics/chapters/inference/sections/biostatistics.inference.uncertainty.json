@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biostatistics.inference.uncertainty",
+  "subjectId": "biostatistics",
+  "chapterId": "inference",
+  "title": {
+    "ko": "추정·신뢰구간·가설검정",
+    "en": "Estimation, Confidence Intervals and Hypothesis Tests"
+  },
+  "learningObjectives": [
+    {
+      "id": "biostatistics.inference.uncertainty.lo.01",
+      "text": "표준편차와 표준오차를 구별한다"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.lo.02",
+      "text": "신뢰구간과 P값의 해석 오류를 설명한다"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.lo.03",
+      "text": "통계적 유의성과 임상적 중요성을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biostatistics.inference.uncertainty.b.e1fb635857bb",
+      "type": "heading",
+      "level": 2,
+      "text": "표본에서 모집단으로"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.152f418c4aad",
+      "type": "paragraph",
+      "markdown": "의학 연구는 관찰한 사람들의 자료를 이용하여 더 넓은 환자 집단에 관한 질문에 답하려 한다. 모집단의 평균이나 위험 차이 같은 값은 모수(parameter)이고, 표본에서 계산한 평균이나 위험 차이는 추정량(estimator)의 관측값이다. 다른 사람을 같은 방식으로 다시 표집하면 관측값이 달라질 수 있다. 통계적 추론은 이 표본 변동성을 모델링하는 과정이다. 자료가 많다는 사실만으로 대상자 선정과 측정의 오류까지 자동으로 해결되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.4b809013b64d",
+      "type": "paragraph",
+      "markdown": "표준편차(standard deviation, SD)는 개별 관측값이 평균 주변에서 얼마나 퍼져 있는지를 나타낸다. 표준오차(standard error, SE)는 추정량이 반복 표집에서 얼마나 변동하는지를 나타낸다. 독립이고 같은 분포를 따르는 관측값의 표본평균에서 표준오차는 흔히 표준편차를 표본 수의 제곱근으로 나누어 추정한다. 이 관계에서 표본 수가 늘면 평균 추정은 더 정밀해지지만 개인들의 생물학적 차이인 표준편차 자체가 그 비율로 줄어드는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.c4fc985a230c",
+      "type": "paragraph",
+      "markdown": "반복 측정이나 병원별 군집 자료에서는 관측값 사이에 상관이 있다. 같은 환자의 혈압을 열 번 재었다고 독립적인 환자 열 명과 같은 정보량을 얻은 것은 아니다. 독립성을 잘못 가정하면 표준오차가 과소평가되고 신뢰구간이 지나치게 좁아질 수 있다. 통계 모형은 데이터가 모인 구조를 반영해야 한다. 평균값을 계산하는 산술은 같아 보여도 그 평균의 불확실성을 계산하는 방법은 연구 설계에 따라 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.bc697cbe4d0e",
+      "type": "heading",
+      "level": 2,
+      "text": "신뢰구간의 의미"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.d10458a71a30",
+      "type": "paragraph",
+      "markdown": "신뢰구간(confidence interval, CI)은 추정값의 불확실성을 구간으로 표현한다. 빈도주의적 95% 신뢰구간은 같은 표집과 계산 절차를 반복할 때 만들어지는 구간의 약 95%가 고정된 참값을 포함하도록 설계된 절차를 뜻한다. 이미 계산한 한 구간 안에 참값이 있을 확률이 95%라고 엄밀하게 해석하는 것과는 다르다. 또 관측한 환자의 95%가 그 구간 안에 있다는 의미도 아니다. 후자는 개인값의 분포에 관한 질문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.77ce2a97c58d",
+      "type": "paragraph",
+      "markdown": "정규근사가 적절한 단순한 상황에서는 추정값에 표준오차의 약 1.96배를 더하고 빼는 방식으로 95% 구간을 만들 수 있다. 작은 표본의 평균 추정에서는 t분포를 이용하거나, 비율과 희귀 사건에서는 다른 방법이 필요할 수 있다. 위험비나 오즈비는 로그 척도에서 구간을 계산한 뒤 원래 척도로 변환하는 경우가 많아 구간이 추정값을 중심으로 산술적으로 대칭일 필요가 없다. 어떤 자료에서든 1.96을 곱하면 된다는 공식 적용은 적절하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.0a3e16e1046d",
+      "type": "paragraph",
+      "markdown": "신뢰구간의 폭은 정밀도를 표현하지만 연구의 모든 타당성을 보증하지 않는다. 체계적으로 잘못 측정한 자료는 매우 좁고 틀린 구간을 만들 수 있다. 구간은 사용한 모형과 가정 아래에서의 표본 불확실성을 다루며, 선택편향과 잔여 교란, 부적절한 결과변수 정의까지 모두 포함하는 자동 안전장치가 아니다. 좁은 구간을 얻었다면 무엇을 정밀하게 추정했는지부터 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.d5736de9745a",
+      "type": "heading",
+      "level": 2,
+      "text": "가설검정과 P값"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.88d659b50b47",
+      "type": "paragraph",
+      "markdown": "귀무가설(null hypothesis)은 예를 들어 두 집단의 평균 차이가 0이라는 명제이다. P값은 귀무가설과 통계 모형의 가정이 성립할 때 현재 관측한 것 이상으로 극단적인 검정통계량이 나타날 확률이다. 귀무가설이 참일 확률, 연구 결과가 우연일 확률, 치료가 효과 없을 확률과 동일하지 않다. 작은 P값은 해당 가정 조합과 관측 자료의 부합이 낮다는 정보이며 효과의 크기나 임상적 이득을 직접 측정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.29398eff0ce6",
+      "type": "paragraph",
+      "markdown": "제1종 오류는 참인 귀무가설을 기각하는 오류이고, 제2종 오류는 특정 대립가설이 참인데도 기각하지 못하는 오류이다. 검정력(power)은 그 특정 효과가 있을 때 기각할 확률로 1에서 제2종 오류 확률을 뺀 값이다. 검정력은 효과 크기, 변동성, 표본 수와 유의수준에 의존한다. 유의하지 않은 결과가 동등성을 증명하지 못하는 이유는 연구가 임상적으로 중요한 차이를 구별할 만큼 정밀하지 않을 수 있기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.0945701d1433",
+      "type": "paragraph",
+      "markdown": "여러 결과변수와 하위집단을 반복해서 검정하면 적어도 하나에서 작은 P값을 얻을 가능성이 커진다. 연구 후 눈에 띄는 비교만 선택하면 실제보다 강한 증거로 보일 수 있다. 주요 가설과 분석 계획의 사전 명시, 다중성에 대한 적절한 고려, 탐색적 분석의 구분이 필요하다. 자료를 보면서 표본 수나 분석법을 임의로 바꾸는 행동도 검정의 오류 특성을 변화시킬 수 있다. 통계 분석의 투명성은 계산식의 정확성만큼 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.95f2e101ca23",
+      "type": "heading",
+      "level": 2,
+      "text": "크기와 임상적 판단"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.55a1c1b2180b",
+      "type": "paragraph",
+      "markdown": "매우 큰 연구에서는 임상적으로 사소한 차이도 통계적으로 유의할 수 있다. 작은 연구에서는 상당한 이득과 상당한 위해가 모두 가능한 넓은 구간이 나오면서 유의하지 않을 수 있다. 효과 추정값과 구간을 환자에게 중요한 최소 차이, 부작용, 비용과 치료 부담에 연결해야 한다. 단순히 P값이 0.05보다 작거나 크다는 두 범주로 나누면 자료가 제공하는 연속적인 정보를 잃는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biostatistics.inference.uncertainty.b.c97ee6f738ca",
+      "type": "paragraph",
+      "markdown": "효과가 없다는 질문과 허용 가능한 차이 이내라는 질문도 다르다. 비열등성 연구는 사전에 정한 한계와 비교하여 효과 손실이 허용 범위 안인지 평가하므로 그 한계의 임상적 근거와 분석 집단을 검토해야 한다. 통계적 기준을 만족해도 비교 치료가 부적절하거나 환자군이 달라 실제 진료에 적용하기 어려울 수 있다. 통계학은 임상 판단을 숫자로 없애는 수단이 아니라 불확실성을 명시하여 판단의 근거를 분명하게 만드는 도구이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/10-prevention-clerkships/subjects/biostatistics/chapters/inference/sections/biostatistics.inference.uncertainty.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.biostatistics.inference.uncertainty.001"
+  ],
+  "keyFacts": [
+    "같은 표집·계산 절차를 반복할 때 구간의 약 95%가 참값을 포함하도록 설계된다."
+  ]
+}

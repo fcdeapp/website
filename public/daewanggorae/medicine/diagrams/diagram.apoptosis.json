@@ -1,0 +1,194 @@
+{
+  "id": "diagram.apoptosis",
+  "lessonId": "pathology.cell.injury-death",
+  "title": "Apoptosis pathways",
+  "nodes": [
+    {
+      "id": "stress",
+      "label": "Intracellular stress",
+      "x": 260,
+      "y": 150,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "mito",
+      "label": "BAX/BAK - mitochondria",
+      "x": 260,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "apop",
+      "label": "Cytochrome c / APAF1",
+      "x": 260,
+      "y": 510,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "c9",
+      "label": "Caspase-9",
+      "x": 260,
+      "y": 670,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "death",
+      "label": "Death receptor",
+      "x": 760,
+      "y": 150,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "disc",
+      "label": "Adaptor complex",
+      "x": 760,
+      "y": 330,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "c8",
+      "label": "Caspase-8",
+      "x": 760,
+      "y": 510,
+      "width": 220,
+      "height": 72
+    },
+    {
+      "id": "exec",
+      "label": "Executioner caspases",
+      "x": 760,
+      "y": 670,
+      "width": 220,
+      "height": 72
+    }
+  ],
+  "edges": [
+    {
+      "source": "stress",
+      "target": "mito",
+      "label": "intrinsic",
+      "id": "stress--mito",
+      "relation": "directed"
+    },
+    {
+      "source": "mito",
+      "target": "apop",
+      "label": "release",
+      "id": "mito--apop",
+      "relation": "directed"
+    },
+    {
+      "source": "apop",
+      "target": "c9",
+      "label": "apoptosome",
+      "id": "apop--c9",
+      "relation": "directed"
+    },
+    {
+      "source": "c9",
+      "target": "exec",
+      "label": "activation",
+      "id": "c9--exec",
+      "relation": "directed"
+    },
+    {
+      "source": "death",
+      "target": "disc",
+      "label": "extrinsic",
+      "id": "death--disc",
+      "relation": "directed"
+    },
+    {
+      "source": "disc",
+      "target": "c8",
+      "label": "activation",
+      "id": "disc--c8",
+      "relation": "directed"
+    },
+    {
+      "source": "c8",
+      "target": "exec",
+      "label": "activation",
+      "id": "c8--exec",
+      "relation": "directed"
+    }
+  ],
+  "visualizationKind": "original_schematic",
+  "sourceImageUsed": false,
+  "limitations": [
+    "Simplified pathways; feedback and BID cross-talk omitted",
+    "Not a diagnostic assay"
+  ],
+  "schemaVersion": "2.0.0",
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 1040,
+      "height": 840
+    },
+    "compact": {
+      "canvas": {
+        "width": 600,
+        "height": 1000
+      },
+      "fontSize": 26,
+      "nodes": {
+        "stress": {
+          "x": 150,
+          "y": 100,
+          "width": 250,
+          "height": 136
+        },
+        "death": {
+          "x": 450,
+          "y": 100,
+          "width": 250,
+          "height": 136
+        },
+        "mito": {
+          "x": 150,
+          "y": 360,
+          "width": 250,
+          "height": 136
+        },
+        "disc": {
+          "x": 450,
+          "y": 360,
+          "width": 250,
+          "height": 136
+        },
+        "apop": {
+          "x": 150,
+          "y": 620,
+          "width": 250,
+          "height": 136
+        },
+        "c8": {
+          "x": 450,
+          "y": 620,
+          "width": 250,
+          "height": 136
+        },
+        "c9": {
+          "x": 150,
+          "y": 880,
+          "width": 250,
+          "height": 136
+        },
+        "exec": {
+          "x": 450,
+          "y": 880,
+          "width": 250,
+          "height": 136
+        }
+      },
+      "edges": {}
+    }
+  }
+}

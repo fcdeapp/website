@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.respiratory.ventilation-perfusion",
+  "subjectId": "physiology",
+  "chapterId": "respiratory",
+  "title": {
+    "ko": "폐환기와 가스교환 및 환기관류 관계",
+    "en": "Ventilation, Gas Exchange and V/Q Relationships"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.lo.01",
+      "text": "분당환기량과 폐포환기량을 구분한다."
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.lo.02",
+      "text": "산소분압과 산소함량을 구분한다."
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.lo.03",
+      "text": "환기관류 불균형과 단락의 기전을 설명한다."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.2b0e77ada63f",
+      "type": "heading",
+      "level": 2,
+      "text": "공기가 들어가는 조건"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.bcd3a4cb1b40",
+      "type": "paragraph",
+      "markdown": "흡기 때 가로막이 수축하여 흉강의 용적이 증가하면 흉막강압이 더 낮아지고 폐가 팽창한다. 폐포압이 대기압보다 낮아지는 동안 공기가 기도로 들어온다. 안정 호기는 대개 탄성 반동에 의한 수동 과정이지만 운동이나 기도폐색에서는 호기근 활동이 중요해질 수 있다. 폐를 확장하는 압력인 경폐압(transpulmonary pressure)은 폐포압과 흉막강압의 차이다. 폐포압 하나만으로 팽창 상태를 판단하면 흉벽과 흉막 압력의 영향을 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+      ],
+      "conceptRefs": [
+        "FMA13295",
+        "FMA7309",
+        "FMA7310"
+      ]
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.87ae0e27e251",
+      "type": "paragraph",
+      "markdown": "순응도(compliance)는 용적 변화량을 압력 변화량으로 나눈 값으로, 어느 구간에서 측정하는지에 따라 달라진다. 폐기종에서는 탄성 반동이 줄어 순응도가 커질 수 있고 섬유화에서는 감소할 수 있다. 순응도가 높다는 말이 언제나 좋은 폐 기능을 뜻하지 않는다. 표면활성물질(surfactant)은 표면장력을 낮추고 작은 폐포의 안정화와 호흡 일 감소에 기여한다. 기도 저항은 반지름에 민감하지만, 실제 기도는 분지와 난류, 동적 압박이 있는 구조이므로 한 개의 단단한 관에 대한 식을 그대로 전폐에 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.0de18d945fcd",
+      "type": "heading",
+      "level": 2,
+      "text": "사강을 빼야 하는 이유"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.b099e8b2ca93",
+      "type": "paragraph",
+      "markdown": "분당환기량은 일회호흡량(VT)과 호흡수(f)의 곱이지만, 모든 공기가 가스교환에 참여하는 것은 아니다. 해부학적 사강은 전도기도의 공간이고 폐포 사강은 환기는 되지만 관류가 충분하지 않은 폐포의 기여다. 폐포환기량은 단순화하여 VA=(VT−VD)f로 표현한다. 같은 분당환기량이라도 얕고 빠르게 호흡하면 사강에 쓰이는 비율이 커져 유효 폐포환기가 줄 수 있다. 따라서 호흡수가 많다는 사실만으로 충분한 CO2 제거를 보장할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.9364fbc225ba",
+      "type": "paragraph",
+      "markdown": "정상상태에서 CO2 생성량이 일정하다면 PaCO2는 폐포환기량에 대략 반비례한다. 운동, 발열, 대사 변화로 CO2 생성량이 달라지면 환기가 같아도 PaCO2가 변할 수 있다. 기도폐색, 호흡근 약화, 중추 억제는 서로 다른 기전으로 환기 부족을 일으킨다. 산소를 투여하여 산소포화도가 개선되어도 CO2 배출 장애가 해결되었다고 판단할 수 없다. 환기와 산소화는 연결되어 있지만 별도로 평가해야 하는 기능이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.11c4933d91bb",
+      "type": "heading",
+      "level": 2,
+      "text": "분압과 함량"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.5f9d13f88ee4",
+      "type": "paragraph",
+      "markdown": "산소분압은 용해된 산소의 분자적 상태를 반영하고, 혈액의 산소함량은 헤모글로빈에 결합한 산소와 용해 산소의 합이다. 대부분의 산소는 헤모글로빈 결합 형태로 운반되므로 심한 빈혈에서는 PaO2가 유지되어도 총산소운반량이 감소할 수 있다. 반대로 산소포화도와 산소분압은 산소해리곡선을 통해 비선형 관계를 가진다. pH, CO2, 온도, 2,3-BPG 등은 헤모글로빈의 산소 친화도와 조직 방출에 영향을 준다. 산소 전달량은 심박출량과 동맥 산소함량의 곱으로 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.7b65cc7aeed1",
+      "type": "paragraph",
+      "markdown": "확산은 분압차, 막의 면적과 두께, 기체 특성에 영향을 받는다. 정상적인 조건에서는 폐포와 모세혈관의 산소 교환이 비교적 빠르지만, 막이 두꺼워지거나 통과 시간이 짧아지면 제한이 드러날 수 있다. 확산능 검사와 안정 시 산소분압은 같은 정보를 주는 검사가 아니다. 폐기종은 가스교환 면적 손실, 간질성 질환은 장벽 변화 등을 통해 서로 다른 구조적 문제를 만들 수 있다. 거시적 폐 모델만으로 이 차이를 직접 시각화할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.da52721852df",
+      "type": "heading",
+      "level": 2,
+      "text": "V/Q 스펙트럼"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.235da5f9d790",
+      "type": "paragraph",
+      "markdown": "환기관류비(ventilation-perfusion ratio, V/Q)는 한 폐 단위에 도달하는 공기와 혈류의 상대적 양이다. V/Q가 낮으면 관류에 비해 공기 공급이 부족하고, 매우 낮아져 환기가 없으면 단락(shunt)에 가까워진다. V/Q가 높으면 공기에 비해 혈류가 부족하고, 관류가 없으면 사강에 해당한다. 실제 폐는 여러 비율의 단위가 섞여 있으며 중력과 질환에 따라 분포가 달라진다. 정상 전체 평균 하나를 모든 폐포의 실제 비율로 해석해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.ventilation-perfusion.b.779002217769",
+      "type": "paragraph",
+      "markdown": "저산소성 폐혈관수축은 국소 폐포 산소가 낮을 때 혈류를 다른 부위로 돌리는 데 기여한다. 그러나 광범위한 저산소 상태에서는 폐혈관 저항 상승에 기여할 수도 있다. 단락 혈액은 환기되는 폐포를 통과하지 않으므로 흡입산소를 높여도 저산소혈증 교정에 제한이 있을 수 있다. 반면 많은 저 V/Q 단위에서는 산소 공급 증가가 도움이 된다. 산소 반응을 하나의 진단검사처럼 절대화하지 말고 폐포 환기, 확산, 순환, 기저 질환과 함께 해석해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "계획 학습범위 전체에 대한 완결 단원으로 승인되지 않음",
+      "일부 핵심 사실의 출처 확인을 전체 본문 검증으로 해석하지 말 것"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/respiratory/sections/physiology.respiratory.ventilation-perfusion.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.physiology.respiratory.ventilation-perfusion.001"
+  ],
+  "relatedLessons": [
+    "electrolytes.acid-base.interpretation",
+    "neonatology.transition.circulation",
+    "critical-care.shock.hemodynamics"
+  ],
+  "keyFacts": [
+    "VA=(VT−VD)f에서 사강 기여를 제외해야 한다."
+  ]
+}

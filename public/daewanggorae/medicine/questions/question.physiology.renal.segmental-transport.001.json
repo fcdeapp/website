@@ -1,0 +1,28 @@
+{
+  "id": "question.physiology.renal.segmental-transport.001",
+  "kind": "original_concept_question",
+  "lessonId": "physiology.renal.segmental-transport",
+  "prompt": "NKCC2 억제 후 소변 농축능이 감소할 수 있는 주된 기전은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "수질 삼투 기울기 형성의 감소"
+    },
+    {
+      "id": "B",
+      "text": "ADH 합성의 필수적 완전 중단"
+    },
+    {
+      "id": "C",
+      "text": "집합관의 모든 물 통로 영구 파괴"
+    }
+  ],
+  "answer": "A",
+  "explanation": "굵은오름부분의 NaCl 재흡수 감소가 수질 기울기에 영향을 준다.",
+  "optionRationales": {
+    "A": "굵은오름부분의 NaCl 재흡수 감소가 수질 기울기에 영향을 준다.",
+    "B": "이뇨제의 분절 작용에서 ADH 합성 중단을 필연적으로 추론할 수 없다.",
+    "C": "관강 수송 억제를 모든 물 통로의 구조적 파괴와 동일시할 수 없다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

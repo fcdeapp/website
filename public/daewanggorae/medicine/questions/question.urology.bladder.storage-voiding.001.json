@@ -1,0 +1,23 @@
+{
+  "id": "question.urology.bladder.storage-voiding.001",
+  "kind": "original_concept_question",
+  "lessonId": "urology.bladder.storage-voiding",
+  "prompt": "빈뇨는 반드시 하루 총소변량 증가를 뜻하는가?",
+  "options": [
+    {
+      "id": "A",
+      "text": "그렇다."
+    },
+    {
+      "id": "B",
+      "text": "아니다."
+    }
+  ],
+  "answer": "B",
+  "explanation": "횟수 증가와 총량 증가는 구분해야 한다.",
+  "optionRationales": {
+    "A": "작은 양을 자주 보는 저장장애도 가능하다.",
+    "B": "횟수 증가와 총량 증가는 구분해야 한다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}

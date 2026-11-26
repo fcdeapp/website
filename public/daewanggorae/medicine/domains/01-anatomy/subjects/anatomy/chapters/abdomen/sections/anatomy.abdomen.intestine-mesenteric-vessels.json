@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "anatomy.abdomen.intestine-mesenteric-vessels",
+  "subjectId": "anatomy",
+  "chapterId": "abdomen",
+  "title": {
+    "ko": "빈창자·돌창자·잘록창자와 장간막혈관",
+    "en": "Jejunum, Ileum, Colon and Mesenteric Vessels"
+  },
+  "learningObjectives": [
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.lo.01",
+      "text": "작은창자와 큰창자의 육안 특징을 비교한다"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.lo.02",
+      "text": "위·아래창자간막혈관의 영역과 연결을 설명한다"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.lo.03",
+      "text": "장관의 위치·벽·장간막과 폐쇄·허혈을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.64ca71bbec19",
+      "type": "heading",
+      "level": 2,
+      "text": "작은창자의 연속성과 구역 차이"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.fc072fcb6aa9",
+      "type": "paragraph",
+      "markdown": "빈창자(jejunum)와 돌창자(ileum)는 샘빈창자굽이에서 돌막창자연결부로 이어지는 작은창자의 긴 구간이다. 두 구간 사이에 육안으로 하나의 명확한 경계선이 있는 것은 아니다. 전형적으로 빈창자에서는 벽과 돌림주름이 더 발달하고 장간막 지방과 혈관궁의 배열이 돌창자와 다르다. 위치와 혈관 모양을 한 가지 특징만으로 확정하지 않고 여러 단서를 종합한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.abdomen.intestine-mesenteric-vessels.organ-context"
+      ],
+      "conceptRefs": [
+        "FMA7207",
+        "FMA7208"
+      ]
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.aebd0a219b5e",
+      "type": "paragraph",
+      "markdown": "장간막혈관에서 나오는 곧은혈관(vasa recta)은 장벽으로 들어가며 혈관궁(arterial arcade)은 장간막 안에서 연결된다. 빈창자는 비교적 적은 겹의 궁과 긴 곧은혈관, 돌창자는 더 많은 궁과 짧은 곧은혈관이라는 대표적 차이를 보인다. 이는 평균적인 경향이며 모든 고리에서 일정하지는 않다. 장벽으로 가는 최종 작은 혈관이 손상되면 몸쪽 궁이 남아 있어도 국소 관류가 제한될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.08f2dbf91ede",
+      "type": "heading",
+      "level": 2,
+      "text": "장간막과 이동성"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.f59fbf5ee63f",
+      "type": "paragraph",
+      "markdown": "작은창자 장간막은 뒤배벽의 부착선에서 장의 긴 가장자리로 펼쳐져 동맥·정맥·신경과 림프관을 전달한다. 장 고리는 자유롭게 움직이지만 뿌리의 혈관과 연결되어 있다. 폐쇄에서 장이 늘어나면 벽과 장간막의 정맥 회수가 먼저 영향을 받을 수 있고, 심하면 동맥 유입과 장벽 생존도 손상된다. 단순한 속공간 막힘과 혈관이 함께 눌린 상황을 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.dff8fe2b30a6",
+      "type": "paragraph",
+      "markdown": "돌창자에는 집합 림프소절과 면역 기능의 특징이 있고 말단부의 담즙산·비타민 B12 흡수는 기능적 위치와 연결된다. 장의 길이와 점막 표면적뿐 아니라 어떤 구간을 잃었는지도 흡수 장애를 결정한다. 같은 길이의 절제라도 기능적 영향이 같지 않은 이유이다. 장간막의 손상 범위와 남은 혈류도 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.5f6c972086e9",
+      "type": "heading",
+      "level": 2,
+      "text": "막창자·충수와 큰창자의 표지"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.1486fc32080f",
+      "type": "paragraph",
+      "markdown": "막창자(cecum)는 돌창자 연결부 아래의 주머니 부위이고 충수(vermiform appendix)는 여기서 뻗는다. 잘록창자띠(taeniae coli), 주머니 모양의 팽대와 지방수(omental appendices)는 큰창자를 식별하는 대표 표지이다. 충수바닥은 잘록창자띠가 모이는 관계가 유용하지만 충수끝의 방향은 다양하다. 뒤쪽·골반 쪽 등 위치 차이가 염증의 통증과 진찰 소견에 영향을 줄 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.81c79f05e2b4",
+      "type": "paragraph",
+      "markdown": "충수는 장간막의 작은 주름을 통해 혈관을 받고 충수동맥은 대체로 돌잘록창자동맥 계통과 연결된다. 장기 위치가 달라져도 초기 내장감각과 후기 벽측복막 자극의 경로는 구분한다. 오른아랫배에 통증이 없다는 이유만으로 모든 위치의 충수염을 배제할 수는 없으며 다른 원인도 함께 감별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.d96580031f00",
+      "type": "heading",
+      "level": 2,
+      "text": "잘록창자의 고정과 굽이"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.1dd163591fd2",
+      "type": "paragraph",
+      "markdown": "오름·내림잘록창자는 전형적으로 뒤벽에 붙은 이차성 뒤복막 관계가 중요하고, 가로잘록창자와 구불잘록창자는 장간막을 가져 더 가동성이 있다. 오른·왼잘록창자굽이는 간 및 지라와의 위치 관계를 반영한다. 좌우 굽이의 높이와 고정 및 인대 관계는 같지 않다. 장의 팽창이나 수술 뒤에는 위치가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.913d5cad2538",
+      "type": "paragraph",
+      "markdown": "구불잘록창자는 가동성 있는 고리와 장간막 부착의 관계 때문에 꼬임이 생길 수 있는 부위이다. 직장으로 이어지면서 잘록창자띠와 지방수 등 대표 표지가 바뀐다. 직장을 잘록창자의 특징을 그대로 가진 곧은 마지막 구간으로만 이해하면 복막 덮임과 혈관·신경 및 골반 관계를 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.b98d311a3f47",
+      "type": "heading",
+      "level": 2,
+      "text": "위창자간막동맥 영역"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.46b931eec0a3",
+      "type": "paragraph",
+      "markdown": "위창자간막동맥(superior mesenteric artery, SMA)은 중간창자 영역의 대표 동맥으로 샘창자의 먼쪽 및 이자머리 일부와 작은창자, 막창자·충수 및 오른쪽 큰창자 영역 등에 공급한다. 아래이자샘창자, 빈창자·돌창자 가지와 돌잘록창자·오른잘록창자·중간잘록창자 계통을 구분한다. 오른잘록창자동맥 등의 기원과 존재 형태는 변이가 있어 전형적인 분지 수가 모든 사람에게 그대로 적용되지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.8dfdba0e715f",
+      "type": "paragraph",
+      "markdown": "SMA는 이자목 뒤쪽 부근에서 앞으로 나와 샘창자 셋째 부분 및 장간막 뿌리와 관계된다. 위창자간막정맥은 동맥과 나란한 영역을 지나 문맥 형성에 참여한다. 동맥과 정맥의 앞뒤·좌우 관계를 영상에서 확인하는 것은 장회전 및 종괴 평가에 도움을 준다. 정상적인 가까운 위치와 병적인 침범·압박을 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.366d4de0e5ba",
+      "type": "heading",
+      "level": 2,
+      "text": "아래창자간막동맥과 곁순환"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.b4ca92e6c1f0",
+      "type": "paragraph",
+      "markdown": "아래창자간막동맥(inferior mesenteric artery, IMA)은 왼잘록창자, 구불잘록창자 및 위직장동맥 계통으로 이어져 뒤창자 영역의 많은 부분을 공급한다. 변연동맥(marginal artery)은 잘록창자 가장자리를 따라 여러 가지를 연결한다. SMA와 IMA 영역의 연결 정도와 작은 혈관 분포는 개인에 따라 달라 한 몸쪽 혈관이 막혀도 항상 충분히 대체되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.46676585b3e1",
+      "type": "paragraph",
+      "markdown": "왼잘록창자굽이와 직장구불 부근은 혈액 공급 경계와 관련하여 허혈 취약성을 논의하는 대표 부위이다. 그러나 실제 허혈의 범위는 저관류, 색전·혈전, 정맥 폐쇄와 곁순환 및 기저 혈관 상태에 좌우된다. 혈관 지도의 경계선 하나만으로 모든 허혈성 장질환의 위치를 예측하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.3b908e97606d",
+      "type": "heading",
+      "level": 2,
+      "text": "정맥·림프·자율신경"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.dadc6743d16b",
+      "type": "paragraph",
+      "markdown": "작은창자와 잘록창자의 많은 정맥은 위·아래창자간막 계통을 거쳐 문맥계로 이어진다. 직장 아래쪽에서는 체정맥계와의 연결이 추가되어 위쪽과 동일한 회수만을 갖지 않는다. 림프는 장벽 주변과 장간막 림프절을 지나 큰혈관 기시 주변으로 이어지는 단계가 중요하다. 종양 수술에서 혈관과 림프의 해부를 함께 확인하는 이유이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "anatomy.abdomen.intestine-mesenteric-vessels.b.7490ef162e99",
+      "type": "paragraph",
+      "markdown": "미주신경과 골반내장신경의 부교감 기여 및 교감신경얼기는 발생학적 영역과 관련하여 분포가 달라진다. 내장감각과 체성 복막감각은 통증의 위치와 성격을 다르게 만들 수 있다. 장의 기능을 혈관 공급 영역만으로 설명하지 않고 신경·림프 및 장벽의 층을 함께 연결한다. 해부학적 위치와 실제 관류·운동 상태는 서로 보완하는 정보이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/anatomy/chapters/abdomen/sections/anatomy.abdomen.intestine-mesenteric-vessels.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.anatomy.abdomen.intestine-mesenteric-vessels.001"
+  ],
+  "keyFacts": [
+    "잘록창자 혈관의 연결이 있지만 모든 급성 폐색을 보상하지는 못한다."
+  ],
+  "relatedLessons": [
+    "anatomy.abdomen.spleen",
+    "anatomy.retroperitoneum.kidney-ureter"
+  ]
+}

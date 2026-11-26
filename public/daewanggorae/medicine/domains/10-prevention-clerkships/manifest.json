@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "10-prevention-clerkships",
+  "title": {
+    "ko": "예방의학·의료인문·법규·임상실습"
+  },
+  "subjectIds": [
+    "preventive-medicine",
+    "epidemiology",
+    "biostatistics",
+    "environmental-health",
+    "industrial-health",
+    "community-medicine",
+    "health-management",
+    "health-economics",
+    "evidence-based-medicine",
+    "research-methods",
+    "research-ethics",
+    "medical-ethics",
+    "medical-humanities",
+    "medical-law",
+    "forensic-medicine",
+    "patient-safety",
+    "medical-informatics",
+    "history-taking",
+    "physical-examination",
+    "clinical-reasoning",
+    "symptom-differential",
+    "procedures",
+    "cpx",
+    "osce",
+    "clinical-communication",
+    "clerkships"
+  ],
+  "subjects": [
+    {
+      "id": "preventive-medicine",
+      "path": "domains/10-prevention-clerkships/subjects/preventive-medicine/manifest.json"
+    },
+    {
+      "id": "epidemiology",
+      "path": "domains/10-prevention-clerkships/subjects/epidemiology/manifest.json"
+    },
+    {
+      "id": "biostatistics",
+      "path": "domains/10-prevention-clerkships/subjects/biostatistics/manifest.json"
+    },
+    {
+      "id": "environmental-health",
+      "path": "domains/10-prevention-clerkships/subjects/environmental-health/manifest.json"
+    },
+    {
+      "id": "industrial-health",
+      "path": "domains/10-prevention-clerkships/subjects/industrial-health/manifest.json"
+    },
+    {
+      "id": "community-medicine",
+      "path": "domains/10-prevention-clerkships/subjects/community-medicine/manifest.json"
+    },
+    {
+      "id": "health-management",
+      "path": "domains/10-prevention-clerkships/subjects/health-management/manifest.json"
+    },
+    {
+      "id": "health-economics",
+      "path": "domains/10-prevention-clerkships/subjects/health-economics/manifest.json"
+    },
+    {
+      "id": "evidence-based-medicine",
+      "path": "domains/10-prevention-clerkships/subjects/evidence-based-medicine/manifest.json"
+    },
+    {
+      "id": "research-methods",
+      "path": "domains/10-prevention-clerkships/subjects/research-methods/manifest.json"
+    },
+    {
+      "id": "research-ethics",
+      "path": "domains/10-prevention-clerkships/subjects/research-ethics/manifest.json"
+    },
+    {
+      "id": "medical-ethics",
+      "path": "domains/10-prevention-clerkships/subjects/medical-ethics/manifest.json"
+    },
+    {
+      "id": "medical-humanities",
+      "path": "domains/10-prevention-clerkships/subjects/medical-humanities/manifest.json"
+    },
+    {
+      "id": "medical-law",
+      "path": "domains/10-prevention-clerkships/subjects/medical-law/manifest.json"
+    },
+    {
+      "id": "forensic-medicine",
+      "path": "domains/10-prevention-clerkships/subjects/forensic-medicine/manifest.json"
+    },
+    {
+      "id": "patient-safety",
+      "path": "domains/10-prevention-clerkships/subjects/patient-safety/manifest.json"
+    },
+    {
+      "id": "medical-informatics",
+      "path": "domains/10-prevention-clerkships/subjects/medical-informatics/manifest.json"
+    },
+    {
+      "id": "history-taking",
+      "path": "domains/10-prevention-clerkships/subjects/history-taking/manifest.json"
+    },
+    {
+      "id": "physical-examination",
+      "path": "domains/10-prevention-clerkships/subjects/physical-examination/manifest.json"
+    },
+    {
+      "id": "clinical-reasoning",
+      "path": "domains/10-prevention-clerkships/subjects/clinical-reasoning/manifest.json"
+    },
+    {
+      "id": "symptom-differential",
+      "path": "domains/10-prevention-clerkships/subjects/symptom-differential/manifest.json"
+    },
+    {
+      "id": "procedures",
+      "path": "domains/10-prevention-clerkships/subjects/procedures/manifest.json"
+    },
+    {
+      "id": "cpx",
+      "path": "domains/10-prevention-clerkships/subjects/cpx/manifest.json"
+    },
+    {
+      "id": "osce",
+      "path": "domains/10-prevention-clerkships/subjects/osce/manifest.json"
+    },
+    {
+      "id": "clinical-communication",
+      "path": "domains/10-prevention-clerkships/subjects/clinical-communication/manifest.json"
+    },
+    {
+      "id": "clerkships",
+      "path": "domains/10-prevention-clerkships/subjects/clerkships/manifest.json"
+    }
+  ],
+  "targetPages": 400,
+  "charactersPerPage": 1500,
+  "targetBodyCharacters": 600000,
+  "minimumProseFractionBeforeNextDomain": 0.1,
+  "minimumBodyCharactersBeforeNextDomain": 60000,
+  "progressPath": "domains/10-prevention-clerkships/progress.json",
+  "readerPath": "domains/10-prevention-clerkships/TEXTBOOK.md",
+  "evidencePath": "domains/10-prevention-clerkships/references/lesson-evidence.json",
+  "bodyLoading": "section_json",
+  "sharedPackage": "medical-shared.zip",
+  "curriculumPath": "domains/10-prevention-clerkships/curriculum.json",
+  "coveragePath": "domains/10-prevention-clerkships/coverage.json",
+  "questionIndex": "domains/10-prevention-clerkships/questions/index.json",
+  "sceneIndex": "domains/10-prevention-clerkships/scenes/index.json",
+  "diagramIndex": "domains/10-prevention-clerkships/diagrams/index.json",
+  "referenceCatalog": "domains/10-prevention-clerkships/references/references.json",
+  "crossDomainLessonRefs": [],
+  "packageFile": "10-prevention-clerkships.zip",
+  "requiresOriginalBodyParts3D": true,
+  "installRoot": "public/medicine",
+  "relatedLessonResolution": "resolve by stable ID; request another domain when not installed"
+}

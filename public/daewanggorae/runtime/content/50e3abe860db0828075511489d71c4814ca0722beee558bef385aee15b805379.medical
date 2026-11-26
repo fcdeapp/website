@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "palliative-care",
+  "title": {
+    "ko": "완화의료"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "palliative-care.chapter.principles",
+      "path": "domains/09-clinical-diagnostics/subjects/palliative-care/chapters/principles/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "palliative-care.plan.001",
+    "palliative-care.plan.002",
+    "palliative-care.plan.003",
+    "palliative-care.plan.004",
+    "palliative-care.plan.005",
+    "palliative-care.plan.006",
+    "palliative-care.principles.symptom-and-goals"
+  ]
+}

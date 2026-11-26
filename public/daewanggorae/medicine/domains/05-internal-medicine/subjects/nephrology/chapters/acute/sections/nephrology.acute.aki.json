@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "nephrology.acute.aki",
+  "subjectId": "nephrology",
+  "chapterId": "acute",
+  "title": {
+    "ko": "급성콩팥손상의 기능·구조와 원인 평가",
+    "en": "Functional and Structural Assessment of Acute Kidney Injury"
+  },
+  "learningObjectives": [
+    {
+      "id": "nephrology.acute.aki.lo.01",
+      "text": "크레아티닌과 소변량의 시간적 한계를 설명한다"
+    },
+    {
+      "id": "nephrology.acute.aki.lo.02",
+      "text": "관류·실질·폐쇄 원인을 통합한다"
+    },
+    {
+      "id": "nephrology.acute.aki.lo.03",
+      "text": "합병증과 원인 치료의 우선순위를 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "nephrology.acute.aki.b.133776c673e2",
+      "type": "heading",
+      "level": 2,
+      "text": "급성 변화의 기준점"
+    },
+    {
+      "id": "nephrology.acute.aki.b.fc5a1080ed63",
+      "type": "paragraph",
+      "markdown": "급성콩팥손상(acute kidney injury, AKI)은 짧은 시간에 신장 기능이 나빠지는 임상 상태를 평가하는 개념이다. 혈청 크레아티닌의 변화와 소변량은 중요한 지표지만 신장의 모든 구조 손상을 직접 보여주는 검사는 아니다. 과거의 신기능과 변화한 시간, 급성 질환의 맥락을 확인해야 한다. 한 번의 높은 크레아티닌만으로 급성과 만성을 확정할 수 없고 만성콩팥병에 급성 손상이 겹칠 수도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.nephrology.acute.aki.gross-context"
+      ],
+      "conceptRefs": [
+        "FMA7205",
+        "FMA7204"
+      ]
+    },
+    {
+      "id": "nephrology.acute.aki.b.376c8e93e994",
+      "type": "paragraph",
+      "markdown": "크레아티닌은 생성과 분포, 여과와 일부 세뇨관 처리의 영향을 받는다. 여과율이 갑자기 감소해도 혈중 농도가 새 평형에 도달하기까지 시간이 걸릴 수 있다. 급격히 변하는 상태에서 평형을 가정한 추정 사구체여과율을 실제 현재 여과율처럼 정밀하게 해석하지 않는다. 근육량과 체액 변화, 특정 약물은 수치에 영향을 주어 손상과 농도 사이의 관계를 바꿀 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.e6f804515b1b",
+      "type": "heading",
+      "level": 2,
+      "text": "소변량과 체액"
+    },
+    {
+      "id": "nephrology.acute.aki.b.2adc1f224824",
+      "type": "paragraph",
+      "markdown": "소변량 감소는 신장 관류와 여과, 세뇨관의 수분 처리 및 배출 경로에 영향을 받는다. 소변이 적다고 모두 세뇨관 괴사인 것은 아니고, 소변이 유지된다고 중요한 손상이 없는 것도 아니다. 도뇨관의 막힘과 측정 누락 등 기술적 문제도 확인해야 한다. 시간당 소변과 누적 체액, 섭취와 다른 손실을 함께 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.4847f7ca64ab",
+      "type": "paragraph",
+      "markdown": "체액 과다는 폐와 심장, 조직의 상태에 영향을 줄 수 있고, 저혈량은 관류를 제한할 수 있다. 부종이 보이는 환자도 혈역학적으로 유효한 순환이 부족할 수 있어 몸 전체의 수분과 관류를 동일시하지 않는다. 혈압과 정맥 울혈, 심장 기능과 호흡, 실제 손실을 통합한다. AKI라는 이름만으로 모든 환자에게 같은 양의 수액을 투여하는 접근은 적절하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.36b2eb933e65",
+      "type": "heading",
+      "level": 2,
+      "text": "관류와 실질 손상의 연속성"
+    },
+    {
+      "id": "nephrology.acute.aki.b.e433141c22aa",
+      "type": "paragraph",
+      "markdown": "신전성 요인은 신장에 도달하는 유효 관류의 감소를 중심으로 설명한다. 그러나 관류 문제가 오래 지속되면 실질 손상이 겹칠 수 있어 완전히 분리된 칸만으로 모든 환자를 분류하기 어렵다. 패혈증의 신장 손상은 거시적 혈압 저하 하나 외에도 미세순환과 염증, 세포 대사 및 다른 요인의 영향을 받는다. 혈압이 정상이라는 이유로 모든 관류와 신장 상태가 정상이라고 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.bf1cb72d9656",
+      "type": "paragraph",
+      "markdown": "실질 원인에는 세뇨관과 간질, 사구체와 혈관의 손상이 포함된다. 허혈과 독성 노출, 면역과 감염 및 약물은 서로 다른 위치에서 손상을 만들 수 있다. 최근 약제와 조영제, 수술과 저혈압, 전신 증상 및 소변 소견은 원인 평가의 단서이다. 특정 노출 뒤 수치가 올랐다는 시간적 연관과 그 노출이 실제 원인이라는 확정은 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.7c37ed56dd1d",
+      "type": "heading",
+      "level": 2,
+      "text": "폐쇄와 영상"
+    },
+    {
+      "id": "nephrology.acute.aki.b.a85c38b41b59",
+      "type": "paragraph",
+      "markdown": "요로 폐쇄는 신장 이후의 배출을 방해하며 위치와 양측성, 남은 신장 기능에 따라 결과가 달라진다. 방광과 전립선, 요관과 골반의 원인 및 이전 수술 등을 고려한다. 초기 폐쇄와 특정 조건에서는 확장이 뚜렷하지 않을 수 있으므로 영상 하나의 정상 소견을 임상적 의심과 비교해야 한다. 반대로 수신증이 보인다고 현재 모든 기능저하가 폐쇄 때문이라고 자동 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.cc63029786cf",
+      "type": "paragraph",
+      "markdown": "폐쇄가 의심되면 방광의 팽만과 배출, 도뇨관 상태 및 필요한 초음파 등을 평가한다. 감염이 동반된 폐쇄는 배출 경로 확보와 감염 치료를 함께 고려해야 하는 상황이다. 원인과 위치, 환자 상태에 맞는 전문 평가를 연결한다. 배액 뒤에는 소변량과 체액·전해질의 변화를 관찰해야 하며 관을 넣었다는 사실만으로 후속 관리가 끝나는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.72f3affb0569",
+      "type": "heading",
+      "level": 2,
+      "text": "소변과 검사 해석"
+    },
+    {
+      "id": "nephrology.acute.aki.b.0a00a7608c0c",
+      "type": "paragraph",
+      "markdown": "혈뇨와 단백뇨, 원주 및 침사 소견은 손상 위치와 원인의 가설을 좁히는 데 도움을 준다. 검체의 신선도와 채취 방식, 오염과 판독의 한계를 고려한다. 적혈구원주와 전신 소견이 있으면 단순 탈수 외의 사구체 원인을 검토해야 한다. 소변 소견이 적다는 이유만으로 모든 실질 손상을 배제할 수도 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.f8d8f8b33614",
+      "type": "paragraph",
+      "markdown": "소변 나트륨과 분획배설률 등의 지표는 세뇨관 처리에 관한 단서를 제공하지만 이뇨제와 만성 신기능, 패혈증과 원인 질환 등에 영향을 받는다. 하나의 경계값을 신전성과 실질 손상의 완벽한 확진 기준으로 쓰면 오류가 생긴다. 선택한 검사가 어떤 가정 아래 의미가 있는지 확인하고 병력과 진찰, 소변 및 영상의 조합으로 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.a20c09c920be",
+      "type": "heading",
+      "level": 2,
+      "text": "관리와 회복"
+    },
+    {
+      "id": "nephrology.acute.aki.b.1eca597b4610",
+      "type": "paragraph",
+      "markdown": "관리는 원인과 혈역학의 교정, 신독성 노출과 약물 용량의 재검토, 체액과 전해질 및 산염기 이상을 함께 다룬다. 빠르게 변하는 신기능에서는 평소 용량과 일반적인 계산값이 실제 약물 제거를 충분히 반영하지 못할 수 있다. 필요한 약물은 효과와 독성 및 농도 감시를 고려하여 조정한다. 이뇨로 소변량이 늘었다는 사실이 신장 조직의 회복과 같지는 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "nephrology.acute.aki.b.f431e9e699f8",
+      "type": "paragraph",
+      "markdown": "위험한 고칼륨혈증과 심한 산염기 이상, 조절되지 않는 체액 과다 및 요독성 합병증 등은 긴급한 대응과 신대체요법의 평가에 영향을 준다. 크레아티닌 한 수치만으로 모든 시작 시점을 결정하지 않는다. 회복 뒤에도 기준 신기능으로 돌아왔는지와 잔여 단백뇨, 혈압 및 이후 만성 위험을 추적한다. 급성 사건의 종료와 장기적인 신장 건강의 회복은 구별하여 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/nephrology/chapters/acute/sections/nephrology.acute.aki.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.nephrology.acute.aki.001"
+  ],
+  "keyFacts": [
+    "초기 손상에서도 변화가 지연될 수 있어 시간 경과와 소변량·임상 상태를 함께 본다."
+  ],
+  "relatedLessons": [
+    "physiology.renal.filtration",
+    "nephrology.ckd.evaluation"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "medical-law",
+  "title": {
+    "ko": "의료법규"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "medical-law.chapter.consent",
+      "path": "domains/10-prevention-clerkships/subjects/medical-law/chapters/consent/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "medical-law.plan.001",
+    "medical-law.plan.002",
+    "medical-law.plan.003",
+    "medical-law.plan.004",
+    "medical-law.plan.005",
+    "medical-law.plan.006",
+    "medical-law.consent.disclosure"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "nephrology",
+  "title": {
+    "ko": "신장내과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "nephrology.chapter.ckd",
+      "path": "domains/05-internal-medicine/subjects/nephrology/chapters/ckd/chapter.json"
+    },
+    {
+      "id": "nephrology.chapter.acute",
+      "path": "domains/05-internal-medicine/subjects/nephrology/chapters/acute/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "nephrology.plan.001",
+    "nephrology.plan.002",
+    "nephrology.plan.003",
+    "nephrology.plan.004",
+    "nephrology.plan.005",
+    "nephrology.plan.006",
+    "nephrology.ckd.evaluation",
+    "nephrology.acute.aki"
+  ]
+}

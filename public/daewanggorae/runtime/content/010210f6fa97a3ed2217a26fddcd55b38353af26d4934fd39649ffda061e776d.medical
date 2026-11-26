@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.anatomy.head-neck.orbit-extraocular.right-extraocular",
+  "sceneId": "scene.anatomy.head-neck.orbit-extraocular.right-extraocular",
+  "lessonId": "anatomy.head-neck.orbit-extraocular",
+  "triggerBlockId": "anatomy.head-neck.orbit-extraocular.b.fbd79cae5176",
+  "primaryStructures": [
+    "FMA49044",
+    "FMA49046",
+    "FMA49054",
+    "FMA49056",
+    "FMA49052",
+    "FMA49050"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA49044",
+    "FMA49046",
+    "FMA49054",
+    "FMA49056",
+    "FMA49052",
+    "FMA49050"
+  ],
+  "modelIds": [
+    "partof:FJ1374",
+    "partof:FJ1346",
+    "partof:FJ1355",
+    "partof:FJ1359",
+    "partof:FJ1373",
+    "partof:FJ1345"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1374.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1346.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1355.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1359.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1373.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1345.obj"
+  ],
+  "cameraPosition": [
+    -147.23256041939143,
+    -142.6735,
+    1518.915
+  ],
+  "cameraTarget": [
+    -28.3234,
+    -142.6735,
+    1518.915
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "right_lateral",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -44.1111,
+      -166.307,
+      1503.14
+    ],
+    "max": [
+      -12.5357,
+      -119.04,
+      1534.69
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "오른눈의 네 곧은근과 두 빗근의 위치·주행 비교",
+  "mappingConfidence": "exact_attachment_ids_bounds_and_hashes_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "안구는 이 장면에서 숨겨져 근육의 관계를 강조함",
+    "근육 수축과 눈 회선·운동은 별도 동적 명세 필요",
+    "신경 III·IV·VI 메시를 임의로 대체하지 않음"
+  ],
+  "dynamicAnatomyIncluded": false
+}

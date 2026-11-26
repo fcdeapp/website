@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "rehabilitation.motor-control.weakness-and-tone",
+  "subjectId": "rehabilitation",
+  "chapterId": "motor-control",
+  "title": {
+    "ko": "근력·근긴장과 운동기능 평가",
+    "en": "Strength, Tone and Motor Function Assessment"
+  },
+  "learningObjectives": [
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.lo.01",
+      "text": "근력과 기능 수행의 차이를 설명한다"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.lo.02",
+      "text": "상위·하위운동신경원 손상의 소견을 구별한다"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.lo.03",
+      "text": "경직과 구축 및 운동학습의 관계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.40324bfbe7bb",
+      "type": "heading",
+      "level": 2,
+      "text": "운동 수행의 여러 구성 요소"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.1c6a9e84a992",
+      "type": "paragraph",
+      "markdown": "환자가 팔을 들어 올리지 못할 때 원인은 근육이 힘을 내지 못하는 것만이 아니다. 통증과 관절 운동 제한, 감각 저하, 운동계획의 장애, 균형과 주의의 문제, 심폐 지구력 저하가 수행을 제한할 수 있다. 근력(strength)은 힘을 발생시키는 능력이고, 기능(function)은 실제 환경에서 과제를 수행하는 능력이다. 근력이 개선되어도 과제 수행이 바로 회복되지 않을 수 있으며, 보상 전략과 보조기구로 근력 변화 없이 기능이 좋아질 수도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.fafffc31533b",
+      "type": "paragraph",
+      "markdown": "평가에서는 자발적 움직임과 수동 관절운동을 구별한다. 능동운동 범위가 작지만 수동운동 범위가 충분하면 근력, 통증, 운동조절의 문제를 생각할 수 있다. 수동 범위까지 제한되면 관절과 연부조직의 구조적 제한이나 긴장 증가가 기여할 수 있다. 자세와 측정 방법, 통증과 이해 정도는 결과에 영향을 준다. 단순히 정상 또는 비정상으로 나누는 것보다 어떤 조건에서 무엇이 제한되는지 기록해야 치료 목표가 구체화된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.dc878aebb03d",
+      "type": "heading",
+      "level": 2,
+      "text": "상위운동신경원과 하위운동신경원"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.ac0d3879c8a1",
+      "type": "paragraph",
+      "markdown": "상위운동신경원(upper motor neuron)은 피질과 뇌간 등에서 척수와 말초 운동 출력을 조절하는 하행 회로에 관련된다. 손상 뒤 약화와 선택적 운동조절 저하, 반사 변화와 병적 반사가 나타날 수 있다. 하위운동신경원(lower motor neuron)은 앞뿔세포와 그 축삭을 포함하여 근육으로 직접 출력을 전달한다. 손상에서는 근육의 탈신경과 관련된 약화, 반사 저하, 위축 및 근섬유다발수축 등이 나타날 수 있다. 이런 구분은 병변 위치를 추정하는 틀이지만 모든 소견이 초기부터 완성된 모습으로 나타나지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.ab07a4bcf347",
+      "type": "paragraph",
+      "markdown": "급성 중추신경계 손상에서는 처음에 저긴장과 반사 저하를 보인 뒤 시간이 지나 긴장과 반사가 증가할 수 있다. 반대로 말초신경 질환도 분포와 손상 정도에 따라 감각과 운동 소견이 다르게 나타난다. 진찰 한 번의 긴장도만으로 중추와 말초를 확정하지 않고 시간경과, 반사, 감각, 뇌신경 소견과 분포를 통합한다. 근육 질환과 신경근접합부 질환도 서로 다른 피로성과 분포를 만들 수 있어 감별이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.499009ac577f",
+      "type": "heading",
+      "level": 2,
+      "text": "근긴장과 경직"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.0d7ec3fa4e14",
+      "type": "paragraph",
+      "markdown": "근긴장(tone)은 수동 움직임에서 느끼는 저항과 관련된 임상 개념이다. 신경 반사뿐 아니라 근육과 힘줄, 관절의 수동 기계적 특성이 함께 기여한다. 경직(spasticity)은 전형적으로 신장 속도에 의존하여 저항이 증가하는 상위운동신경원 증후군의 한 요소이다. 빠르게 움직일 때와 천천히 움직일 때 반응이 다른지 관찰하면 신경성 요소와 비신경성 요소를 구별하는 데 도움이 된다. 모든 뻣뻣함을 경직이라고 부르면 치료 표적이 흐려진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.4d0d3690026e",
+      "type": "paragraph",
+      "markdown": "구축(contracture)은 근육·힘줄·관절 등의 구조적 변화로 수동 운동범위가 지속적으로 제한되는 상태이다. 신경성 긴장을 낮추어도 이미 생긴 구조적 제한은 그대로 남을 수 있다. 경직과 구축은 함께 존재할 수 있으며, 장기간의 부동과 특정 자세의 유지가 조직 변화를 촉진할 수 있다. 운동범위, 피부 상태, 통증과 기능 과제를 반복 평가하여 어느 요소가 현재 활동을 제한하는지 판단해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.4d957e1193f8",
+      "type": "paragraph",
+      "markdown": "경직을 줄이는 것 자체가 언제나 기능 향상을 뜻하지는 않는다. 일부 환자는 증가한 신전 긴장을 서기나 이동의 보조로 이용할 수 있고, 긴장 감소 뒤 숨겨져 있던 약화가 더 드러날 수 있다. 반면 과도한 긴장이 통증과 위생 관리, 수면과 관절 움직임을 방해할 수 있다. 치료 목표는 점수의 감소만이 아니라 환자에게 중요한 과제와 돌봄 부담의 개선이어야 한다. 남아 있는 자발적 힘과 감각을 함께 평가하는 이유이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.6f23be25af4f",
+      "type": "heading",
+      "level": 2,
+      "text": "운동학습과 회복"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.dab27ec84956",
+      "type": "paragraph",
+      "markdown": "신경계 회복에는 손상 자체의 생물학적 변화와 경험에 따른 회로 재조직, 보상 전략 학습이 함께 관여한다. 반복은 중요하지만 과제와 무관한 움직임을 기계적으로 많이 수행하는 것만으로 모든 기능이 회복되는 것은 아니다. 목표 과제의 특성, 적절한 난이도, 피드백과 연습 분포, 피로와 통증이 학습에 영향을 준다. 실제로 물건을 잡고 옮기는 능력은 손가락 근력뿐 아니라 감각과 시각, 팔과 몸통의 조절을 요구한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.89f70a9e21bc",
+      "type": "paragraph",
+      "markdown": "보상은 회복의 반대말로만 취급할 수 없다. 남아 있는 능력과 보조기구를 이용하여 안전한 활동을 확보하는 것은 중요한 재활 목표이다. 다만 특정 보상이 통증과 과사용을 만들거나 다른 회복 기회를 제한하는지도 평가한다. 기능적 이득과 장기적인 신체 부담을 함께 보고 전략을 조정한다. 과제 수준의 변화가 실제 가정과 지역사회 환경으로 이어지는지는 환경 장벽과 보호자 지원에도 영향을 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.85ab4d19738a",
+      "type": "heading",
+      "level": 2,
+      "text": "활동과 참여로 연결하기"
+    },
+    {
+      "id": "rehabilitation.motor-control.weakness-and-tone.b.d45e5551b5af",
+      "type": "paragraph",
+      "markdown": "재활 평가는 신체 기능의 손상에서 끝나지 않고 옷 입기와 식사, 이동 같은 활동, 학업과 직업 및 사회적 참여로 이어진다. 같은 근력과 관절범위를 가진 사람도 주거 환경과 직업 요구, 보조기구 접근성에 따라 필요한 치료가 다르다. 치료사는 기능 수행을 분석하고 환자와 함께 우선순위를 정해야 한다. 신경학적 진찰이 어디가 손상되었는지를 묻는다면 재활적 평가는 그 손상 속에서 무엇을 할 수 있고 무엇이 가능해져야 하는지를 함께 묻는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/rehabilitation/chapters/motor-control/sections/rehabilitation.motor-control.weakness-and-tone.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.rehabilitation.motor-control.weakness-and-tone.001"
+  ],
+  "keyFacts": [
+    "구축과 약화 등 다른 제한이 남거나 기존 긴장을 보조적으로 사용했을 수 있다."
+  ],
+  "relatedLessons": [
+    "physiology.muscle.excitation-contraction",
+    "neuroanatomy.spinal-cord.tracts"
+  ]
+}

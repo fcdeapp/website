@@ -1,0 +1,28 @@
+{
+  "id": "question.biochemistry.heme.synthesis-breakdown.001",
+  "kind": "original_concept_question",
+  "lessonId": "biochemistry.heme.synthesis-breakdown",
+  "prompt": "비포합 빌리루빈 증가와 소변 검사의 관계로 적절한 것은?",
+  "options": [
+    {
+      "id": "A",
+      "text": "알부민 결합과 낮은 수용성 때문에 증가가 곧 소변 빌리루빈 양성을 뜻하지 않는다."
+    },
+    {
+      "id": "B",
+      "text": "혈청 비포합 분획이 증가하면 반드시 그대로 많이 여과된다."
+    },
+    {
+      "id": "C",
+      "text": "포합 과정은 빌리루빈을 더 지용성으로만 만든다."
+    }
+  ],
+  "answer": "A",
+  "explanation": "간의 포합은 수용성을 높이며 비포합 분획의 혈중 운반과 여과 성질은 다르다.",
+  "optionRationales": {
+    "A": "간의 포합은 수용성을 높이며 비포합 분획의 혈중 운반과 여과 성질은 다르다.",
+    "B": "알부민 결합과 수용성이 여과와 배설을 제한한다.",
+    "C": "글루쿠론산 포합은 물에 대한 용해성을 높이는 방향이다."
+  },
+  "verificationStatus": "editorial_draft_not_exam_validated"
+}
