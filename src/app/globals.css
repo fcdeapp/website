@@ -32,7 +32,23 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body[data-site-section="abrody"] {
+  /* Abrody palette only; MDEET retains its independent editorial theme. */
+  --site-soft: #f7f5f6;
+  --site-ink: #272529;
+  --site-muted: #686168;
+  --site-rule: #e7e0e4;
+  --site-rule-strong: #a87989;
+  --site-accent: #a44765;
+  --site-action: #a44765;
+  --site-action-hover: #80344f;
+  --site-tint: #faf0f3;
+  --site-danger: #b24242;
+  --site-brand-dot: #9e4039;
   font-variant-numeric: tabular-nums;
+}
+body[data-site-section="abrody"] ::selection {
+  background: var(--site-tint);
+  color: var(--site-ink);
 }
 button,
 input,

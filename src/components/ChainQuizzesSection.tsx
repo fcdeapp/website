@@ -269,8 +269,8 @@ function Connector({
             x2={grad?.x2 ?? 0} y2={grad?.y2 ?? 0}
           >
             {/* stop 순서는 그대로 (색상 흐름이 ax -> bx 쪽으로 보이게 됨) */}
-            <stop offset="0%" stopColor="#f2542d" />
-            <stop offset="100%" stopColor="#d8315b" />
+            <stop offset="0%" stopColor="#A87989" />
+            <stop offset="100%" stopColor="#A44765" />
           </linearGradient>
         </defs>
   

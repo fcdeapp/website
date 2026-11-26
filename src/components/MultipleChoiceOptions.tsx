@@ -103,7 +103,7 @@ const MultipleChoiceOptions: React.FC<Props> = ({
                   {correct ? (
                     <FiCheck size={18} color="#31A24C" />
                   ) : (
-                    <FiX size={18} color="#D8315B" />
+                    <FiX size={18} color="#B24242" />
                   )}
                 </span>
               )}

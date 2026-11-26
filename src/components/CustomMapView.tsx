@@ -154,7 +154,7 @@ const CustomMapView: React.FC<CustomMapViewProps> = ({
         />
         <Polyline
           positions={polylineCoordinates.map((coord) => [coord.latitude, coord.longitude])}
-          pathOptions={{ color: "#D8315B", weight: 3, dashArray: "6 4" }}
+          pathOptions={{ color: "#A44765", weight: 3, dashArray: "6 4" }}
         />
       </MapContainer>
       {onToggleMapVisibility && mapToggleButtonTextHide && (

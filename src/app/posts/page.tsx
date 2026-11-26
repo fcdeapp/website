@@ -37,12 +37,12 @@ const Post: React.FC = () => {
 
   // 토픽 및 필터
   const defaultTopics = [
-    { key: "language_study", color: "#D8315B" },
-    { key: "cooking_enthusiasts", color: "#F2542D" },
-    { key: "volunteer_activities", color: "#D8315B" },
-    { key: "fitness_group", color: "#F2542D" },
-    { key: "international_food_exchange", color: "#D8315B" },
-    { key: "team_sports", color: "#F2542D" },
+    { key: "language_study", color: "#A44765" },
+    { key: "cooking_enthusiasts", color: "#A87989" },
+    { key: "volunteer_activities", color: "#A44765" },
+    { key: "fitness_group", color: "#A87989" },
+    { key: "international_food_exchange", color: "#A44765" },
+    { key: "team_sports", color: "#A87989" },
   ];
   const [myTopics, setMyTopics] = useState(defaultTopics);
   const [selectedTopics, setSelectedTopics] = useState<string[]>(defaultTopics.map(t => t.key));

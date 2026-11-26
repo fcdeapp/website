@@ -9,7 +9,7 @@ export function LinearGradient({
   return (
     <Comp className={className} style={{
       background:
-        'linear-gradient(135deg, #F2542D 0%, #D8315B 100%)',
+        'linear-gradient(135deg, #A87989 0%, #A44765 100%)',
       color: '#fff',
     }}>
       {children}

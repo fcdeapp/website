@@ -521,7 +521,7 @@ function MessageBubble(props: MessageBubbleProps) {
                   return (
                     <div key={`${e.form}-${e.CEFR}-${i}`} style={{ marginBottom: 12 }}>
                       <div style={{ fontWeight: 500, marginBottom: 4 }}>
-                        {e.form} <span style={{ color: '#D8315B' }}>· {e.CEFR}</span>
+                        {e.form} <span style={{ color: '#A44765' }}>· {e.CEFR}</span>
                       </div>
                       {defLines.length > 0 && (
                         <>

@@ -22,7 +22,7 @@
   color: var(--site-ink);
 }
 .brand span {
-  color: var(--site-accent);
+  color: var(--site-brand-dot, #9e4039);
 }
 .links {
   display: flex;

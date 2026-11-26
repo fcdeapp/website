@@ -539,7 +539,7 @@ const PostMain: React.FC<PostMainProps> = ({
                       <div
                         className={styles.circle}
                         style={{
-                          background: `conic-gradient(#D8315B ${
+                          background: `conic-gradient(#A44765 ${
                             recruitmentRate * 100
                           }%, #fff ${recruitmentRate * 100}%)`,
                         }}

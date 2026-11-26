@@ -66,7 +66,7 @@ const HobbiesSelectionOverlay: React.FC<HobbiesSelectionOverlayProps> = ({
       // If the hobby already exists, simply toggle selection.
       handleHobbySelect(duplicateHobby);
     } else {
-      const newHobby: Hobby = { key: customHobby.trim(), color: "#120C3A" };
+      const newHobby: Hobby = { key: customHobby.trim(), color: "#272529" };
       const updatedAllHobbies = [...allHobbiesList, newHobby];
       setAllHobbiesList(updatedAllHobbies);
       handleHobbySelect(newHobby);

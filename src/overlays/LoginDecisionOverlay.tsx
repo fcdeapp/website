@@ -53,7 +53,7 @@ const LoginDecisionOverlay: React.FC<LoginDecisionOverlayProps> = ({ visible, on
   const titleStyle: React.CSSProperties = {
     fontSize: '28px',
     fontWeight: 800,
-    color: '#120C3A',
+    color: '#272529',
     marginBottom: '15px',
   };
 
@@ -73,7 +73,7 @@ const LoginDecisionOverlay: React.FC<LoginDecisionOverlayProps> = ({ visible, on
   const actionButtonStyle: React.CSSProperties = {
     backgroundColor: 'transparent',
     padding: '12px 20px',
-    border: '2px solid #120C3A',
+    border: '2px solid #272529',
     borderRadius: '30px',
     cursor: 'pointer',
   };
@@ -84,7 +84,7 @@ const LoginDecisionOverlay: React.FC<LoginDecisionOverlayProps> = ({ visible, on
   };
 
   const actionButtonTextStyle: React.CSSProperties = {
-    color: '#120C3A',
+    color: '#272529',
     fontSize: '16px',
     fontWeight: 700,
     margin: 0,

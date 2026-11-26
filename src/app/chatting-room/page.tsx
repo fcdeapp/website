@@ -1547,8 +1547,8 @@ function ChattingRoomPageInner() {
           {!isAiMenuExpanded && !pendingChoices && (
             <div className={styles.badges} ref={badgeRef}>
               <div className={styles.badgeScroll}>
-                <GramIsleBadge count={grammarCnt} icon="edit-3" accent="#F2542D" />
-                <GramIsleBadge count={expressionCnt} icon="type" accent="#D8315B" />
+                <GramIsleBadge count={grammarCnt} icon="edit-3" accent="#A87989" />
+                <GramIsleBadge count={expressionCnt} icon="type" accent="#A44765" />
 
                 <button
                   className={classNames(styles.langBtn, { [styles.langBtnActive]: isLanguageExpanded })}
@@ -1688,8 +1688,8 @@ function ChattingRoomPageInner() {
               {isAIChat && (
                 <>
                   <div className={styles.menuBadges}>
-                    <GramIsleBadge count={grammarCnt} icon="edit-3" accent="#F2542D" />
-                    <GramIsleBadge count={expressionCnt} icon="type" accent="#D8315B" />
+                    <GramIsleBadge count={grammarCnt} icon="edit-3" accent="#A87989" />
+                    <GramIsleBadge count={expressionCnt} icon="type" accent="#A44765" />
                   </div>
 
                   <button className={styles.menuBtn} onClick={() => setIsVoiceChatMode((v) => !v)}>

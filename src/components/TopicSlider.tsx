@@ -33,7 +33,7 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
   const [buttonSize, setButtonSize] = useState<number>(0);
   const [sliderLeft, setSliderLeft] = useState(0);
   const [sliderWidth, setSliderWidth] = useState(0);
-  const [currentTopicColor, setCurrentTopicColor] = useState("#120C3A");
+  const [currentTopicColor, setCurrentTopicColor] = useState("#272529");
 
   // 각 버튼 ref 배열
   const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
@@ -78,7 +78,7 @@ const TopicSlider: React.FC<TopicSliderProps> = ({
     let index = 0;
     if (selectedTopics.includes("no_topic")) {
       index = 0;
-      setCurrentTopicColor("#120C3A");
+      setCurrentTopicColor("#272529");
     } else {
       const foundIndex = myTopics.findIndex((topic) =>
         selectedTopics.includes(topic.key)

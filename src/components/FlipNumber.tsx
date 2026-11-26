@@ -42,7 +42,7 @@ export default function FlipNumber({
           display: inline-flex;
           font-size: 3rem;
           font-weight: 300;
-          color: #d8315b;
+          color: #A44765;
           line-height: 1;
         }
         .unit {
