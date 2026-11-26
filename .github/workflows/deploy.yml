@@ -40,8 +40,14 @@ jobs:
       - name: Create CNAME file
         run: echo "website.fcde.app" > out/CNAME
 
+      - name: Check publishing rules and runtime content
+        run: npm run test:pages
+
+      - name: Prepare and validate publishing assets
+        run: npm run prepare:pages
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.MY_GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./out-pages

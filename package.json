@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prepare:pages": "node scripts/prepare-pages.cjs",
+    "test:pages": "node --test scripts/prepare-pages.test.cjs src/app/daewanggorae/_tests/content.test.cjs",
     "start": "next start",
     "lint": "next lint"
   },

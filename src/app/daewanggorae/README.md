@@ -39,6 +39,17 @@ node --test src/app/daewanggorae/_tests/content.test.cjs
 npm run build
 ```
 
+## GitHub Pages 배포
+
+CI는 `npm run build`로 만든 `out/`에서 `npm run prepare:pages`를 실행해 `out-pages/`를 만들고 이 폴더만 배포합니다. `public/`과 `out/` 원본은 변경하지 않습니다.
+
+- `daewanggorae/bodyparts3d/`와 `daewanggorae/medicine/`은 제작용 원본이므로 배포에서 제외합니다. Git LFS 추적과 소스 파일은 유지합니다.
+- 웹에서 사용하는 `daewanggorae/runtime/`의 GLB, 교과서·문항·도표, 라이선스 및 `sw.js`는 그대로 포함합니다.
+- 일반 Git 파일 100 MiB 제한, 사이트 총 1 GB 제한, 미다운로드된 LFS 포인터를 배포 전에 검사합니다. 초과 파일을 임의로 누락시키지 않고 실패시킵니다.
+- `npm run test:pages`로 배포 규칙과 전체 런타임 콘텐츠·모델의 해시 및 참조를 검사합니다.
+
+실패한 과거 Actions 실행을 재실행하면 과거 배포 설정을 사용합니다. 수정된 워크플로가 포함된 커밋을 `main`에 push해 새 배포를 시작합니다. 원격 브랜치 이력 재작성은 필요하지 않습니다.
+
 ## 콘텐츠 갱신
 
 읽기 전용 원본은 `public/daewanggorae/medicine/`입니다. 앱 원본이 갱신되면 해당 자료를 이 위치에 동기화한 뒤 실행합니다.
