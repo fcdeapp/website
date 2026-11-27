@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { study, useRecords } from "../_lib/store";
 import OfflineVisit from "./OfflineVisit";
+import { BRAND_LINE } from "../_lib/brand";
 import s from "../daewanggorae.module.css";
 const tabs = [
   ["", "홈", House],
@@ -101,10 +102,11 @@ export default function Shell({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <footer className={s.footer}>
-        <span>대왕고래 · 의학을 배우는 시간</span>
+        <span>{BRAND_LINE}</span>
         <div>
           <Link href="/daewanggorae/sources">출처와 이용 안내</Link>
           <Link href="/daewanggorae/terms">이용약관</Link>
+          <Link href="/daewanggorae/terms?kind=privacy">개인정보 처리방침</Link>
           <Link href="/daewanggorae/account">계정</Link>
         </div>
       </footer>

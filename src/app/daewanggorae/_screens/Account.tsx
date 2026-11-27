@@ -1,4 +1,5 @@
 "use client";
+import bundledCollection from "../_lib/collection.ko.json";
 import Link from "next/link";
 import { useState } from "react";
 import {
@@ -32,13 +33,18 @@ export default function Account() {
     [username, setUsername] = useState(""),
     [password, setPassword] = useState(""),
     [token, setToken] = useState(""),
-    [consent, setConsent] = useState(false),
+    [termsConsent, setTermsConsent] = useState(false),
+    [privacyConsent, setPrivacyConsent] = useState(false),
+    [ageConfirmed, setAgeConfirmed] = useState(false),
     [busy, setBusy] = useState(false),
     [status, setStatus] = useState(""),
     [confirm, setConfirm] = useState(""),
     [linkId, setLinkId] = useState(""),
     [linkPassword, setLinkPassword] = useState(""),
     [linkConsent, setLinkConsent] = useState(false);
+  const consent = termsConsent && privacyConsent && ageConfirmed;
+  const collection = p.data?.data.collectionNotice || bundledCollection;
+  const resetConsent = () => { setTermsConsent(false); setPrivacyConsent(false); setAgeConfirmed(false); };
   async function run(action: () => Promise<unknown>, message: string) {
     if (busy) return;
     setBusy(true);
@@ -49,7 +55,7 @@ export default function Account() {
     } catch (e) {
       setStatus(e instanceof Error ? e.message : String(e));
       if ((e as { status?: number }).status === 409) {
-        setConsent(false);
+        resetConsent();
         p.retry();
       }
     } finally {
@@ -60,7 +66,7 @@ export default function Account() {
     setMode(m);
     setPassword("");
     setToken("");
-    setConsent(false);
+    resetConsent();
     setStatus("");
   };
   const needsConsent = ["login", "register", "abrody"].includes(mode);
@@ -333,22 +339,26 @@ export default function Account() {
             {needsConsent && (
               <>
                 <label className={s.check}>
-                  <input
-                    type="checkbox"
-                    checked={consent}
-                    onChange={(e) => setConsent(e.target.checked)}
-                  />
-                  <span>
-                    만 14세 이상이며{" "}
-                    <Link href={url("terms")} target="_blank">
-                      이용약관
-                    </Link>
-                    과{" "}
-                    <Link href={url("terms") + "?kind=privacy"} target="_blank">
-                      개인정보 처리방침
-                    </Link>
-                    에 동의합니다.
-                  </span>
+                  <input type="checkbox" disabled={busy} checked={termsConsent} onChange={(e) => setTermsConsent(e.target.checked)} />
+                  <span>[필수] <Link href={url("terms")} target="_blank" rel="noreferrer">이용약관</Link>에 동의합니다.</span>
+                </label>
+                <div className={s.collectionNotice}>
+                  <h2>회원 기능을 위한 개인정보 수집·이용</h2>
+                  <dl>
+                    <dt>목적</dt><dd>{collection.purpose}</dd>
+                    <dt>항목</dt><dd>{collection.items}</dd>
+                    <dt>보유 기간</dt><dd>{collection.retention}</dd>
+                  </dl>
+                  <p>{collection.choice}</p>
+                  <Link href={url("terms") + "?kind=privacy"} target="_blank" rel="noreferrer">개인정보 처리방침 전체 보기</Link>
+                </div>
+                <label className={s.check}>
+                  <input type="checkbox" disabled={busy} checked={privacyConsent} onChange={(e) => setPrivacyConsent(e.target.checked)} />
+                  <span>[필수] 위 개인정보 수집·이용에 동의합니다.</span>
+                </label>
+                <label className={s.check}>
+                  <input type="checkbox" disabled={busy} checked={ageConfirmed} onChange={(e) => setAgeConfirmed(e.target.checked)} />
+                  <span>[필수] 만 14세 이상입니다.</span>
                 </label>
                 {p.data?.offline && (
                   <p className={s.notice}>

@@ -7,6 +7,7 @@ import { useLoad } from "../_lib/hooks";
 import { recordsOf, useRecords } from "../_lib/store";
 import { Heading, Row, Select, State, url } from "../_components/UI";
 import s from "../daewanggorae.module.css";
+import { BRAND_TAGLINE } from "../_lib/brand";
 export function Home() {
   const r = useLoad(getCatalog, "catalog");
   const records = useRecords();
@@ -20,10 +21,10 @@ export function Home() {
   );
   return (
     <>
-      <Heading title="오늘, 이어서 배우기" />
+      <Heading title={BRAND_TAGLINE} />
       <div className={s.columns}>
         <div>
-          <section className={s.intro}>
+          <section className={`${s.intro} ${s.homeIntro}`}>
             {lesson ? (
               <>
                 <p>마지막으로 읽은 단원</p>

@@ -232,7 +232,8 @@
 }
 .footer > div {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 12px 24px;
 }
 .mobileNav {
   display: none;
@@ -667,6 +668,51 @@ a.row:hover .rowText > strong {
 }
 .legal {
   max-width: 800px;
+}
+.legal section {
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.legal section:first-of-type {
+  margin-top: 24px;
+}
+.legal section h2 {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.6;
+}
+.homeIntro h2 {
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.5;
+}
+.collectionNotice {
+  margin: 8px 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--border);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.collectionNotice h2 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.collectionNotice dl {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  gap: 8px 12px;
+}
+.collectionNotice dt {
+  font-weight: 600;
+}
+.collectionNotice dd {
+  margin: 0;
+}
+.collectionNotice p {
+  margin: 12px 0;
+}
+.collectionNotice a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .legal p {
   white-space: pre-line;

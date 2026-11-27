@@ -1,22 +1,29 @@
 "use client";
 import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 import Link from "next/link";
 import { useLoad } from "../_lib/hooks";
 import { content, getManifest, readText } from "../_lib/content";
 import { policies } from "../_lib/auth";
+import copyright from "../_lib/copyright.ko.json";
+import bundledPolicies from "../_lib/policies.ko.json";
 import { Text } from "../_components/Text";
 import { Heading, State, url } from "../_components/UI";
 import s from "../daewanggorae.module.css";
 export function Terms() {
   const params = useSearchParams(),
-    kind = params.get("kind") === "privacy" ? "privacy" : "terms";
+    kind = params.get("kind") === "copyright" ? "copyright" : params.get("kind") === "privacy" ? "privacy" : "terms";
   const r = useLoad(policies, "policies"),
-    p = r.data?.data[kind];
+    current = kind === "copyright" ? copyright : r.data?.data[kind];
+  const [previousVersion, setPreviousVersion] = useState<string>();
+  const history = kind === "copyright" ? [] : (r.data?.data.previous || bundledPolicies.previous)
+    .map((revision) => revision[kind]).filter((revision) => revision.version !== current?.version);
+  const p = history.find((revision) => revision.version === previousVersion) || current;
   return (
     <div className={s.legal}>
       <Heading
-        title={kind === "privacy" ? "개인정보 처리방침" : "이용약관"}
-        detail={p ? "시행일 " + p.effectiveDate + " · " + p.version : undefined}
+        title={p?.title || (kind === "privacy" ? "개인정보 처리방침" : "이용약관")}
+        detail={p ? (p !== current ? "이전 버전 · " : "") + "시행일 " + p.effectiveDate + " · " + p.version : undefined}
       />
       <div className={s.actions}>
         <Link className={s.button} href={url("terms")}>
@@ -25,13 +32,21 @@ export function Terms() {
         <Link className={s.button} href={url("terms") + "?kind=privacy"}>
           개인정보 처리방침
         </Link>
+        <Link className={s.button} href={url("terms") + "?kind=copyright"}>저작권 및 이용 안내</Link>
       </div>
-      {r.data?.offline && (
+      {history.length > 0 && <div className={s.actions}>
+        <button onClick={() => setPreviousVersion(undefined)}>현재 약관</button>
+        {history.map((revision) => <button key={revision.version} onClick={() => setPreviousVersion(revision.version)}>이전 버전 {revision.version}</button>)}
+      </div>}
+      {kind !== "copyright" && r.data?.offline && (
         <div className={s.notice}>
           저장된 약관입니다. 연결 후 최신 내용을 확인해 주세요.{" "}
           <button onClick={r.retry}>최신 약관 확인</button>
         </div>
       )}
+      <a href={kind === "privacy" ? "mailto:dpo@fcde.app" : "mailto:support@fcde.app"}>
+        {kind === "privacy" ? "개인정보 문의" : "서비스·저작권 문의"}
+      </a>
       {p ? (
         p.sections.map((x) => (
           <section key={x.title}>
@@ -96,6 +111,7 @@ export function Sources() {
   return (
     <div className={s.legal}>
       <Heading title="출처와 이용 안내" />
+      <Link className={s.button} href={url("terms") + "?kind=copyright"}>저작권 및 이용 안내</Link>
       <p>
         본 서비스는 의학 교육 및 학습을 목적으로 제공됩니다. 질병의 진단, 처치,
         치료 또는 예방을 위한 의료기기가 아니며, 실제 의료적 판단을 대체하지
