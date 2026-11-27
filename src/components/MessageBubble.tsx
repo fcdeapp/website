@@ -10,7 +10,10 @@ import React, {
 } from 'react';
 import Image from 'next/image';
 import classNames from 'classnames';
-import Lottie from 'lottie-react';
+import dynamic from 'next/dynamic';
+
+// Lottie accesses document during module initialization; load it in the browser.
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 import axios from 'axios';
 
 import styles from '../styles/components/MessageBubble.module.css';

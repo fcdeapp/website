@@ -17,8 +17,14 @@ import 'intl-pluralrules';
 let i18nInitialized = false;
 
 export const initializeLanguage = async () => {
-  // localStorage는 동기 방식이므로 바로 값을 읽습니다.
-  const storedLanguage = localStorage.getItem('language');
+  // Static export has no browser storage. Keep its default language.
+  if (typeof window === 'undefined') return;
+  let storedLanguage: string | null = null;
+  try {
+    storedLanguage = window.localStorage.getItem('language');
+  } catch {
+    // Browsers may disable storage; language selection must still initialize.
+  }
   const language = storedLanguage || 'en';
   await i18n.changeLanguage(language); // Promise 반환, 기다림
   i18nInitialized = true;

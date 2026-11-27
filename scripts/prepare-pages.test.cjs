@@ -73,3 +73,16 @@ test('rejects symlink assets', t => {
   fs.symlinkSync(path.join(f.source, 'index.html'), path.join(f.source, 'link.html'));
   assert.throws(() => preparePages(f), /Unexpected publishing symlink/);
 });
+
+test('publishes support HTML and a directory index for direct trailing-slash visits', t => {
+  const f = fixture(t);
+  const html = '<html><h1>고객지원</h1></html>';
+  f.write('daewanggorae/support.html', html);
+  const result = preparePages(f);
+  for (const route of ['daewanggorae/support.html', 'daewanggorae/support/index.html']) {
+    assert.equal(fs.readFileSync(path.join(f.destination, route), 'utf8'), html);
+  }
+  assert.equal(result.files, 3);
+  assert.equal(result.totalBytes, Buffer.byteLength('<html>website</html>') + Buffer.byteLength(html) * 2);
+  assert.throws(() => preparePages({ ...f, maxSiteBytes: result.totalBytes - 1 }), /site limit exceeded/);
+});

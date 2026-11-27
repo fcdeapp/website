@@ -57,6 +57,14 @@ function preparePages({ source, destination, maxFileBytes = MAX_FILE_BYTES, maxS
     }
   }
   scan();
+  // Next exports support.html; a directory index also serves /support/ on Pages.
+  const aliases = [];
+  const supportPage = 'daewanggorae/support.html';
+  const supportIndex = 'daewanggorae/support/index.html';
+  if (files.includes(supportPage) && !files.includes(supportIndex)) {
+    aliases.push([supportPage, supportIndex]);
+    totalBytes += fs.statSync(path.join(source, supportPage)).size;
+  }
   if (totalBytes > maxSiteBytes) {
     throw new Error(`GitHub Pages site limit exceeded: ${(totalBytes / 1_000_000).toFixed(1)} MB (maximum 1 GB).`);
   }
@@ -69,7 +77,12 @@ function preparePages({ source, destination, maxFileBytes = MAX_FILE_BYTES, maxS
     fs.mkdirSync(path.dirname(target), { recursive: true });
     fs.copyFileSync(path.join(source, name), target, fs.constants.COPYFILE_FICLONE);
   }
-  return { files: files.length, totalBytes, skipped };
+  for (const [original, alias] of aliases) {
+    const target = path.join(destination, alias);
+    fs.mkdirSync(path.dirname(target), { recursive: true });
+    fs.copyFileSync(path.join(source, original), target);
+  }
+  return { files: files.length + aliases.length, totalBytes, skipped };
 }
 
 module.exports = { preparePages, excluded, MAX_FILE_BYTES, MAX_SITE_BYTES };
@@ -77,6 +90,10 @@ module.exports = { preparePages, excluded, MAX_FILE_BYTES, MAX_SITE_BYTES };
 if (require.main === module) {
   const root = path.resolve(__dirname, '..');
   try {
+    if (!fs.existsSync(path.join(root, 'out/daewanggorae/support.html')) &&
+        !fs.existsSync(path.join(root, 'out/daewanggorae/support/index.html'))) {
+      throw new Error('Missing Daewanggorae support page. Complete the Next.js build before publishing.');
+    }
     const result = preparePages({ source: path.join(root, 'out'), destination: path.join(root, 'out-pages') });
     console.log(`Publishing ${result.files} files, ${(result.totalBytes / 1024 / 1024).toFixed(2)} MiB.`);
     console.log(`Excluded source-only / metadata paths: ${result.skipped.join(', ') || '(none)'}`);
