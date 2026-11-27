@@ -1,0 +1,30 @@
+.page { max-width: 1080px; margin: 0 auto; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.65fr); gap: 64px; padding-top: 16px; }
+.page .contact h2, .page .faq h2 { margin: 0 0 20px; font-size: 20px; color: var(--navy); }
+.contact { border-top: 3px solid var(--accent); padding-top: 24px; }
+.contact > p { color: var(--muted); }
+.page .email { display: flex; align-items: center; gap: 8px; width: fit-content; color: var(--accent); font-size: 22px; font-weight: 600; padding: 12px 0; letter-spacing: -.4px; }
+.page .caption { font-size: 12px; }
+.checklist { margin: 32px 0 20px; padding-top: 24px; border-top: 1px solid var(--border); }
+.page .checklist h3 { font-size: 14px; margin: 0 0 12px; }
+.checklist ul { padding-left: 18px; margin: 0 0 16px; font-size: 14px; line-height: 1.9; list-style: disc; }
+.checklist p { font-size: 13px; color: var(--muted); }
+.page .textLink { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--accent); }
+.faq { padding-top: 27px; }
+.faq details { border-bottom: 1px solid var(--border); }
+.faq details:first-of-type { border-top: 1px solid var(--border); }
+.page .faq summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 21px 0; color: var(--ink); list-style: none; font-weight: 500; line-height: 1.65; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary svg { flex-shrink: 0; color: var(--muted); }
+.faq details[open] summary svg { transform: rotate(180deg); }
+.page .faq details p { padding: 0 24px 24px 0; color: var(--muted); font-size: 14px; line-height: 1.9; word-break: keep-all; overflow-wrap: anywhere; }
+.links { display: flex; flex-wrap: wrap; column-gap: 24px; row-gap: 4px; margin-top: 28px; color: var(--muted); font-size: 13px; }
+.links a { padding: 8px 0; }
+.page a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.page a:focus-visible, .page summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+@media (max-width: 760px) {
+  .layout { grid-template-columns: minmax(0, 1fr); gap: 40px; padding-top: 0; }
+  .faq { padding-top: 0; }
+  .page .email { font-size: 23px; }
+  .page .faq details p { padding-right: 0; }
+}

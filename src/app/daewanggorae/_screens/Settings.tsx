@@ -72,6 +72,7 @@ export default function Settings() {
             대체하지 않습니다.
           </p>
           <div className={s.actions}>
+            <Link className={s.button} href={url("support/")}>고객지원</Link>
             <Link className={s.button} href={url("sources")}>
               출처와 라이선스
             </Link>

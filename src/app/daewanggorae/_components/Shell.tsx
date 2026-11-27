@@ -108,6 +108,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           <Link href="/daewanggorae/terms">이용약관</Link>
           <Link href="/daewanggorae/terms?kind=privacy">개인정보 처리방침</Link>
           <Link href="/daewanggorae/account">계정</Link>
+          <Link href="/daewanggorae/support/">고객지원</Link>
         </div>
       </footer>
       <nav className={s.mobileNav} aria-label="주 메뉴">
