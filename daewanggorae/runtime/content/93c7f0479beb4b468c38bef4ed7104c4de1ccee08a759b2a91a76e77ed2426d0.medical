@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.shock.hepatic-hypoxia",
+  "subjectId": "pathology",
+  "chapterId": "shock",
+  "title": {
+    "ko": "간의 저산소·울혈 손상과 검사 해석",
+    "en": "Hepatic Hypoxia, Congestion and Laboratory Interpretation"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.shock.hepatic-hypoxia.lo.01",
+      "text": "간의 유입·배출과 구역별 산소 환경을 설명한다"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.lo.02",
+      "text": "세포손상 표지와 합성·제거 기능을 구별한다"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.lo.03",
+      "text": "혈역학·검사 추세와 대체 원인을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.a3b0e2d02ab8",
+      "type": "heading",
+      "level": 2,
+      "text": "간에 들어오고 나가는 혈액"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.a285ad92bf3b",
+      "type": "paragraph",
+      "markdown": "간은 문맥과 간동맥을 통한 유입, 굴모세혈관과 간정맥을 통한 배출을 가진다. 두 유입은 유량과 산소함량의 기여가 다르며 하나의 혈관 수치만으로 전체 공급을 설명하기 어렵다. 심박출량 감소뿐 아니라 정맥 쪽 울혈과 저산소혈증도 간의 산소 환경을 바꿀 수 있다. 저산소성 간 손상이 언제나 기록된 심한 저혈압을 반드시 동반하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.e8fa311ead60",
+      "type": "paragraph",
+      "markdown": "구역별로 혈류와 산소·대사 효소의 환경이 다르다. 말단 쪽 구역이 공급 저하에 취약할 수 있지만, 실제 손상은 기저 간질환과 울혈·노출의 영향을 받는다. 간소엽의 정상 방향을 이해하면 중심정맥 주변의 병리 소견을 단순히 간 전체의 균일한 반응으로 오해하지 않게 된다. 위치와 기능을 연결하는 학습이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.d6ce45f60092",
+      "type": "heading",
+      "level": 2,
+      "text": "울혈과 저유량의 결합"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.054ee5e11737",
+      "type": "paragraph",
+      "markdown": "우심계 압력과 간정맥 배출의 장애는 굴모세혈관과 조직의 환경에 영향을 준다. 이 상태에서 유량이나 산소함량이 감소하면 손상에 대한 여유가 줄 수 있다. 동맥압이 회복되어도 정맥 울혈이 남아 있으면 간의 상태가 즉시 정상화되었다고 할 수 없다. 공급 쪽과 배출 쪽을 함께 보는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.29121487cfb6",
+      "type": "paragraph",
+      "markdown": "호흡부전으로 산소함량이 낮아지거나 전신 염증·미세순환이 달라져도 같은 유량에서 조직 산소 이용이 변할 수 있다. 임상에서 저유량·울혈·저산소가 겹치는 경우가 있어 하나의 원인만으로 강제로 분류하지 않는다. 시간별 심장·호흡·순환 상태와 간 검사 추세를 대조한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.5429413d2708",
+      "type": "heading",
+      "level": 2,
+      "text": "효소 유출과 간 기능은 다르다"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.83b06c9a54da",
+      "type": "paragraph",
+      "markdown": "AST·ALT 증가는 세포손상의 단서를 주지만 간의 모든 기능을 직접 측정하는 값은 아니다. 간세포 손상 뒤의 유출, 혈중 제거와 시간 경과가 농도를 바꾼다. 효소가 떨어졌다는 사실은 원인 해소와 회복을 지지할 수 있지만, 심한 세포 소실 등 다른 상황과 임상 결과도 함께 확인해야 한다. 수치 방향 하나로 전체 기능의 회복을 선언하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.5e739842072a",
+      "type": "paragraph",
+      "markdown": "합성 기능과 응고, 빌리루빈의 생성·처리·배설은 다른 축이다. PT 변화에는 간의 합성 외에 약물·비타민K·소모 등의 원인이 있고, 빌리루빈도 담즙정체·용혈과 여러 단계의 영향을 받는다. 한 검사로 모든 이상을 같은 기전으로 묶지 않는다. 검사 간 시간차와 기저값을 살핀다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.48d305aa1c01",
+      "type": "heading",
+      "level": 2,
+      "text": "원인 질환의 감별"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.f5924e5ebab1",
+      "type": "paragraph",
+      "markdown": "저산소성 손상이 의심되어도 약물·독성, 바이러스와 담도·혈관의 다른 원인을 평가해야 한다. 중증 질병에서는 여러 원인이 함께 작용할 수 있다. 순환 사건과 효소 상승이 시간상 가깝다는 사실은 중요한 근거지만 원인의 전부를 자동으로 확정하지 않는다. 실제 노출과 이전 간 기능, 영상과 다른 검사를 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.93c4b2c28416",
+      "type": "paragraph",
+      "markdown": "근육 손상 등 간 이외의 기여도 일부 효소 해석에 영향을 줄 수 있다. 임상 맥락과 다른 표지 없이 AST라는 이름 하나만으로 간세포 소실량을 환산하지 않는다. 자료표에는 각 검사와 추정하는 과정을 따로 적고, 대체 설명이 무엇인지 묻는 것이 유용하다. 진단 기준을 사용할 때는 해당 근거의 조건과 시점을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.6993ee6e6102",
+      "type": "heading",
+      "level": 2,
+      "text": "젖산과 전신 대사"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.189a06817f86",
+      "type": "paragraph",
+      "markdown": "간은 젖산과 여러 물질의 처리에 관여한다. 순환부전에서 젖산이 높은 이유에는 생성 증가와 제거 변화가 모두 포함될 수 있다. 간의 기능과 혈류가 달라지면 같은 말초 생성량에서도 혈중 농도가 다르게 나타날 수 있다. 높은 젖산을 모든 경우에 새로운 말초 저산소량으로만 읽으면 이 기여를 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.b.a133b760b7c0",
+      "type": "paragraph",
+      "markdown": "회복에서는 혈역학적 안정, 효소의 추세와 합성·배설 및 전신 기능을 구분하여 평가한다. 정상 간의 OBJ는 좌우·혈관 위치를 설명하지만 소엽 산소 기울기와 세포 괴사·물질 제거를 재현하지 않는다. 소엽 도식과 혈액 흐름, 시간별 검사를 서로 다른 시각자료로 제공해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hepatic-hypoxia.table.0821",
+      "type": "table",
+      "data": {
+        "title": "관찰과 판단의 구별",
+        "columns": [
+          "관찰",
+          "정보"
+        ],
+        "rows": [
+          [
+            "AST·ALT",
+            "감소"
+          ],
+          [
+            "합성·임상",
+            "악화 또는 미회복"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/shock/sections/pathology.shock.hepatic-hypoxia.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.shock.hepatic-hypoxia.001"
+  ],
+  "relatedLessons": [
+    "pathology.shock.cerebral-hypoperfusion",
+    "pathology.shock.intestinal-barrier"
+  ]
+}

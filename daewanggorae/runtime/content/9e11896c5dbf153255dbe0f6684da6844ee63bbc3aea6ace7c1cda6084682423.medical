@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.hemodynamics.thrombosis-embolism",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.6d59bcc0f645",
+      "sourceSha256": "6d59bcc0f64553f89720e71e1fe8902cbdad17c5f9fe3a0d52f979cde47aa843",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.70ac343f4450ae9e9660",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 158,
+            "end": 163,
+            "exact": "섬유소용해",
+            "prefix": "판 부착·활성,응고효소 생성과 섬유소 형성,",
+            "suffix": "가 균형을 이룬다. 혈액 응고검사 하나가 이"
+          },
+          "conceptId": "reader.term.d74688e1467be81c",
+          "targetDocumentId": "hematology.hemostasis.platelet-coagulation"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.7329fd9c199a",
+      "sourceSha256": "7329fd9c199a8a67ea64b2a3268bf95938e2f9d76c45fe1c9654fd91ce3f1731",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.bb8dfe824c51",
+      "sourceSha256": "bb8dfe824c51d7020ddad2363dbd7149ac02ab13630deb5bf368830a09e3d0bc",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.bfb187fa691fc0ab62e2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 143,
+            "end": 201,
+            "exact": "병리에서 층판 구조가 보일 수 있지만 단일 외형만으로 모든 형성 시점과 원인을 정밀하게 확정하지 않는다.",
+            "prefix": " 흐름·병변·시간에 따라 구성은 달라진다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.72de9dc494d2",
+      "sourceSha256": "72de9dc494d26dde2521c5a01fa53313a76699692aebe76962d944b011b250f0",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.9ba037a64053",
+      "sourceSha256": "9ba037a6405393e147eef2225b2a3f15dff28d11e94aad8872a321908e063d32",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.1ede0602f3f3",
+      "sourceSha256": "1ede0602f3f31603746faf4750ef1308eb95753cfb2799bdfa09f78a1488fe29",
+      "sourceLengthUtf16": 221,
+      "annotations": [
+        {
+          "id": "ann.091c62f488a7603f399d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 191,
+            "end": 221,
+            "exact": "현지 혈전 형성과 다른 색전 물질의 가능성을 구별한다.",
+            "prefix": "져 온 동일한 원인으로 단정하지도 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.151ca24b3206",
+      "sourceSha256": "151ca24b32069174c51917650ca00795e2490afa49a32e65fa2359319a71ef10",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.34d3afb3e3f4",
+      "sourceSha256": "34d3afb3e3f44c1a9dec7935433dae41522c1cc5ff072ece4ef81a3594aff5f3",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.1789ee79ffea",
+      "sourceSha256": "1789ee79ffea440bcaf3f26c7137f8978ee9d76034945c9cc845cb992b041c82",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.thrombosis-embolism.b.bb7ff642b48b",
+      "sourceSha256": "bb7ff642b48be62765e2dc97e0e092083590479ed2e37b7357358c9e9ac1e21f",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    }
+  ]
+}

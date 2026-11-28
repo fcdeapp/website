@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.diagnosis.orthostatic-hypotension",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.diagnosis.orthostatic-hypotension.b.cf31d1c8eeba",
+      "sourceSha256": "cf31d1c8eebae7b972bdcaaec2b9fa565e9e80e831b00005257064f75bb17938",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.orthostatic-hypotension.b.c0aced874680",
+      "sourceSha256": "c0aced87468026240e39388710f634edcf5f8f2c82cabd4dcaa612bb1e3f7017",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.22448b492fb51f1e81d8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 210,
+            "end": 235,
+            "exact": "급성 질환과 새 약물의 시간 관계도 중요하다.",
+            "prefix": " 생기는 정상 현상이라고 처리하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.orthostatic-hypotension.b.ce9e90d48d03",
+      "sourceSha256": "ce9e90d48d0325fb48e38c043cdf0ea6f8aec0ae4554e4892508340a5c193af4",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.orthostatic-hypotension.b.409a4a45367d",
+      "sourceSha256": "409a4a45367d935d33e9c085c7ec235e33ffa71b8120991ce537d29e5b1b7e7d",
+      "sourceLengthUtf16": 237,
+      "annotations": [
+        {
+          "id": "ann.d47cb5a3a0bafab7059b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 42,
+            "exact": "심박수의 반응은 보상 상태의 단서지만 하나의 숫자로 원인을 확정하지 않는다.",
+            "prefix": "",
+            "suffix": " 베타차단 등 약물과 조율, 부정맥과 동결절"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.orthostatic-hypotension.b.15a5932de815",
+      "sourceSha256": "15a5932de8155e83ebb9c64bef658029e20536ca9f8ee8ffee2b75c87e9e5dc1",
+      "sourceLengthUtf16": 228,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.orthostatic-hypotension.b.0fe06cc8e73c",
+      "sourceSha256": "0fe06cc8e73c89cc11cf07e7c79123050b55f0b9eac6fc9c7fe85a987a4fa0cb",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.ea3c5bd932992c363057",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 205,
+            "end": 208,
+            "exact": "심부전",
+            "prefix": "신경성 저혈압을 다루는 것은 다른 문제다. ",
+            "suffix": "과 신장질환 등에서 체액 조절의 한계도 확인"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.orthostatic-hypotension.b.e85f0dc4f3e7",
+      "sourceSha256": "e85f0dc4f3e75778e3adedb9943cdc11fbfd6cef11f34a802b24aa6a0034588d",
+      "sourceLengthUtf16": 227,
+      "annotations": [
+        {
+          "id": "ann.4036851e053fd802e0ac",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 160,
+            "end": 227,
+            "exact": "여기서 중요한 학습점은 수치의 정상화만이 아니라 일상 활동과 낙상 위험, 다른 자세에서의 위해를 함께 평가한다는 것이다.",
+            "prefix": "태 및 지역 허가사항을 확인하여 결정한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.orthostatic-hypotension.b.e2439d8fcc67",
+      "sourceSha256": "5c7020293c949902143c2e86254d7da82b14543b1af039ea2906fb021b98a3c7",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.orthostatic-hypotension.paragraph.numeric0841",
+      "sourceSha256": "b6ba9191f88a53a8823cff5d4f8433f2d3ec1566a2a2b7873013d4c91e5383bc",
+      "sourceLengthUtf16": 316,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.wound.hemostasis-inflammation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.78cf6068a99c",
+      "sourceSha256": "78cf6068a99c5324f265fd6ebb692e9651e43a30e33db21adb93fc60d14d4906",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.c5acdaf67237",
+      "sourceSha256": "c5acdaf672371d831b7b4a6daea4e7878a2c785554f8f735122603c2eb66babe",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.0dbc328c60ea",
+      "sourceSha256": "0dbc328c60eae6fd14718497334141674c3e56e94c7fae5e97e943b2b4b97f42",
+      "sourceLengthUtf16": 190,
+      "annotations": [
+        {
+          "id": "ann.eaccad2f36c72a44b681",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 18,
+            "end": 20,
+            "exact": "보체",
+            "prefix": "손상 연관 신호와 미생물 성분, ",
+            "suffix": "와 케모카인은 호중구와 단핵구 등을 유인한다"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.c93d44156224",
+      "sourceSha256": "c93d44156224e488143f84a6a1611cc7d7176acc2c3168c9cb2efa711579f18c",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.c43a1d893699d6aee653",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 157,
+            "end": 160,
+            "exact": "당뇨병",
+            "prefix": "가 어떻게 변하는지를 확인한다. 면역억제와 ",
+            "suffix": "에서는 전형적 염증 소견이 약해도 깊은 문제"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.202ede3f089e",
+      "sourceSha256": "202ede3f089e300cdc2f5560d52dad97f1d59b67a00389a02674eec946c14fd1",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.5fc6613d26b3",
+      "sourceSha256": "5fc6613d26b30e706de9721ddaeafb0624501393e1cf3761d3741a9e04f6bd66",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.66f57dbdb8ef6c67bdd4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 133,
+            "end": 169,
+            "exact": "면역은 방어와 복구에 필요하며 강도·시점·공간의 조절이 중요하다.",
+            "prefix": "거하면 치유가 좋아진다고 해석하지 않는다. ",
+            "suffix": " 염증 감소와 감염 통제도 언제나 같은 결과"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.c5ebb0bdc572",
+      "sourceSha256": "c5ebb0bdc572f608643ef3c2b073e25b919c6e1002749b2fb95a683ae98c16cf",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.e12fc7762860",
+      "sourceSha256": "e12fc77628600a7dd0303c33679a1f682f50ddf32fdf980d87bc59ed7d7a37b5",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.14c48ab7d61954328f61",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 152,
+            "exact": "상처의 깊이·혈류·오염·주변 피부와 드레싱 목적을 구별한다.",
+            "prefix": "은 살아 있는 세포에 위해를 줄 수 있다. ",
+            "suffix": " 초기 염증이 존재하는 이유를 이해해야 정상"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.52aafc68c4ff",
+      "sourceSha256": "52aafc68c4ff17cbf6055454a13d8f83e2e18d80a27537562a2404239fec58a3",
+      "sourceLengthUtf16": 146,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.hemostasis-inflammation.b.628ca1358035",
+      "sourceSha256": "628ca13580357cee1538bdc04e0e542d2f86758052f6fdd264d8dc59a9437dc7",
+      "sourceLengthUtf16": 146,
+      "annotations": []
+    }
+  ]
+}

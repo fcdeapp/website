@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis",
+  "subjectId": "obstetrics",
+  "chapterId": "antenatal",
+  "title": {
+    "ko": "태아 염색체 선별과 확진·검사 후 확률",
+    "en": "Fetal Aneuploidy Screening Diagnosis and Post-test Probability"
+  },
+  "learningObjectives": [
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.lo.01",
+      "text": "선별·진단 검사의 질문을 구별한다"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.lo.02",
+      "text": "cfDNA의 기원과 불일치를 설명한다"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.lo.03",
+      "text": "민감도·특이도·양성예측도를 계산한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.e6b7adeaef9f",
+      "type": "heading",
+      "level": 2,
+      "text": "선별은 위험을 다시 분류한다"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.af3a9e4c2a69",
+      "type": "paragraph",
+      "markdown": "태아 염색체 이상의 산전평가에는 혈청 표지자·초음파와 세포유리DNA(cell-free DNA, cfDNA) 선별, 융모막검사와 양수검사 같은 진단적 접근이 있다. 검사마다 알아보는 질환과 변이의 범위·시기·위해가 다르다. 한 검사가 음성이라고 모든 유전질환과 구조 이상이 배제되는 것은 아니다. 검사를 고르기 전에 어떤 정보를 원하는지와 결과가 이후 선택에 미치는 영향을 상담한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.f279c9df5634",
+      "type": "paragraph",
+      "markdown": "민감도(sensitivity)는 질환이 있는 집단에서 양성일 비율, 특이도(specificity)는 없는 집단에서 음성일 비율이다. 양성예측도(positive predictive value, PPV)는 양성 결과를 받은 집단에서 실제 질환이 있는 비율로, 검사 성능뿐 아니라 검사 전 유병 가능성에 영향을 받는다. 민감도가 높다는 사실을 양성 결과가 거의 확진이라는 말로 바꾸면 안 된다. 분모가 서로 다른 조건부 확률이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.e54c285b9924",
+      "type": "heading",
+      "level": 2,
+      "text": "cfDNA는 어디에서 오는가"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.88a57d71d9a1",
+      "type": "paragraph",
+      "markdown": "모체 혈액의 cfDNA에는 모체 유래 조각과 주로 태반 영양막에서 유래한 임신 관련 조각이 함께 존재한다. 통상적인 선별 결과가 태아의 모든 세포를 직접 조사한 결과는 아니다. 태반에 국한된 모자이크와 소실 쌍태아, 모체의 일부 염색체·질환 요인과 기술적 문제 등은 불일치를 설명할 수 있다. 결과와 초음파·임신 맥락을 함께 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.90918e1b444d",
+      "type": "paragraph",
+      "markdown": "분석에 필요한 임신 관련 분획이 충분하지 않거나 기술적 조건이 맞지 않으면 결과 불가가 나올 수 있다. 결과 불가를 정상 음성으로 바꾸어 설명하지 않는다. 재검·초음파·유전상담과 진단검사의 선택은 원인·주수·위험과 환자의 선호에 맞춘다. 선별 범위를 넓히면 드문 질환에서의 성능·예측도와 우연 소견의 문제가 함께 커질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.7e27a5959ffc",
+      "type": "heading",
+      "level": 2,
+      "text": "숫자로 읽는 양성 결과"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.ee1dcbfee25e",
+      "type": "paragraph",
+      "markdown": "가상 검사에서 민감도 99%, 특이도 99.5%, 질환 빈도 0.1%를 가정하자. 10만 명 중 질환이 있는 100명에서는 약 99명이 양성이고, 없는 99,900명에서는 약 499.5명이 위양성일 것으로 기대된다. 기대 인원에 소수가 나오는 것은 확률 모형의 평균이기 때문이다. 양성예측도는 99/(99+499.5)로 약 16.5%다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.c434562b4cda",
+      "type": "paragraph",
+      "markdown": "같은 성능에서 질환 빈도가 1%이면 양성예측도는 약 66.7%로 달라진다. 성능이 같아도 검사 전 위험과 분모가 달라 결과의 의미가 바뀌는 것이다. 이 가상 수치는 특정 상품·염색체·환자의 실제 예측도가 아니다. 실제 상담에서는 대상 질환·검사 방식·검증 집단과 개인의 검사 전 정보를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.1a555eb2ee49",
+      "type": "heading",
+      "level": 2,
+      "text": "확진과 선택의 과정"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.4873972ff01a",
+      "type": "paragraph",
+      "markdown": "선별 양성 뒤에는 결과의 범위와 가능한 불일치, 초음파 소견과 진단검사의 이득·위험을 설명한다. 융모막검사와 양수검사는 검체의 기원·시기와 모자이크 해석, 분석 방법에 따라 정보가 다르다. 염색체 수·큰 구조 변화와 미세 결실·중복·단일유전자 변이를 같은 검사 한 번으로 모두 평가한다고 가정하지 않는다. 임상 질문과 검사법을 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.b.ad8dd5af3ea3",
+      "type": "paragraph",
+      "markdown": "2025년 SMFM의 갱신과 이를 지지한 ACOG의 2026년 안내에서도 cfDNA는 선별검사라는 구별이 중요하다. 흔한 이수성의 선별과 일반 집단에서 드문 미세결실을 넓게 찾는 접근은 근거와 권고가 같지 않다. 검사 결과에 기초한 중대한 선택에는 적절한 상담과 진단적 확인의 의미를 충분히 설명해야 한다. 임신부의 선택을 존중하면서 불확실성을 정확히 전달한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.suppheading0851",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 판단의 연결"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.supp.828ce67259be",
+      "type": "paragraph",
+      "markdown": "베이즈 해석에서는 양성 결과 뒤 위험이 검사 전 위험과 검사 성능의 결합으로 바뀐다. 희귀 질환에서는 질환이 없는 집단의 크기가 매우 커 작은 위양성률도 상당한 양성 결과를 만들 수 있다. 이 때문에 높은 특이도와 높은 양성예측도는 같은 말이 아니다. 검사 전 빈도가 다른 집단의 예측도를 광고 문구나 민감도 수치만으로 그대로 옮기지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.supp.13f2e91ee1bc",
+      "type": "paragraph",
+      "markdown": "확진검사의 결과도 검체와 분석의 범위 안에서 해석한다. 태반 검체의 모자이크가 확인되면 태아 상태와의 관계를 추가로 평가해야 할 수 있다. 불확실한 의미의 변이가 발견되었다고 반드시 질환이 발생하거나 완전히 정상이라고 단정하지 않는다. 유전상담에서는 알려진 사실·남은 불확실성과 선택 가능한 다음 단계를 구별하고 결과를 받은 환자의 이해와 선호를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.table0851",
+      "type": "table",
+      "data": {
+        "title": "조건·측정·기전과 해석",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "민감도",
+            "질환 있는 집단의 양성"
+          ],
+          [
+            "특이도",
+            "질환 없는 집단의 음성"
+          ],
+          [
+            "PPV",
+            "양성 집단의 실제 질환 비율"
+          ],
+          [
+            "cfDNA",
+            "선별·태반 기원·범위와 한계"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "obstetrics.antenatal.aneuploidy-screening-diagnosis.diagram.hypothetical-screening-ppv-0851",
+      "type": "diagram",
+      "diagramRef": "diagram.hypothetical-screening-ppv-0851",
+      "path": "diagrams/diagram.hypothetical-screening-ppv-0851.svg",
+      "alt": "검사 전 빈도와 가상 PPV의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/antenatal/sections/obstetrics.antenatal.aneuploidy-screening-diagnosis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.obstetrics.antenatal.aneuploidy-screening-diagnosis.001",
+    "question.obstetrics.antenatal.aneuploidy-screening-diagnosis.002"
+  ],
+  "relatedLessons": [
+    "obstetrics.antenatal.initial-assessment-dating"
+  ]
+}

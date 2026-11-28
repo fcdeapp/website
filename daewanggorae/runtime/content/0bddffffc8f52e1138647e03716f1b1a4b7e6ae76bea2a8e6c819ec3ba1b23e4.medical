@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cell-biology.cell-death.apoptosis",
+  "subjectId": "cell-biology",
+  "chapterId": "cell-death",
+  "title": {
+    "ko": "세포자멸사의 경로와 실험적 판정",
+    "en": "Apoptosis Pathways and Experimental Interpretation"
+  },
+  "learningObjectives": [
+    {
+      "id": "cell-biology.cell-death.apoptosis.lo.01",
+      "text": "미토콘드리아 경로와 사멸수용체 경로를 비교한다"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.lo.02",
+      "text": "BCL-2 계열과 개시·실행 카스페이스를 구별한다"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.lo.03",
+      "text": "사멸 표지의 조합과 판정 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.cfa30250b61d",
+      "type": "heading",
+      "level": 2,
+      "text": "조절된 세포 소실의 의미"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.a044a8e0665f",
+      "type": "paragraph",
+      "markdown": "세포자멸사(apoptosis)는 발생·조직 항상성·손상 세포 제거에 관여하는 조절된 세포사멸 양식이다. 세포 수축, 염색질 응축, 막의 돌출과 분절된 세포체 형성 등이 관찰될 수 있다. 빠른 제거가 이루어지면 세포 내부 물질의 광범위한 누출과 염증을 줄일 수 있지만, 언제나 염증이 전혀 없다는 뜻은 아니다. 제거가 지연되거나 조직 환경이 다르면 이차적 막 손상과 면역 반응이 나타날 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.3323cf3abc12",
+      "type": "paragraph",
+      "markdown": "세포사멸을 자멸사와 비조절성 괴사 두 종류로만 나누면 조절성 괴사와 다른 경로를 놓친다. 세포 형태, 분자 기전, 사용한 표지의 의미는 서로 관련되지만 같은 분류 기준은 아니다. 막이 손상되었다는 한 사실만으로 손상의 원인이 어떤 경로였는지 확정할 수 없다. 유전자 조절과 약물 반응, 시간 경과를 포함하여 여러 근거를 결합해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.f1a84595a683",
+      "type": "heading",
+      "level": 2,
+      "text": "BCL-2 계열과 미토콘드리아 바깥막"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.484f9b87e894",
+      "type": "paragraph",
+      "markdown": "내인성 경로(intrinsic pathway)의 중요한 사건은 미토콘드리아 바깥막 투과성 증가(mitochondrial outer membrane permeabilization, MOMP)다. BAX·BAK 같은 효과기와 BH3-only 단백질, BCL-2·BCL-XL 같은 생존 촉진 단백질의 상호작용이 이에 관여한다. BCL-2 계열이라는 같은 이름 아래 사멸을 촉진하는 단백질과 억제하는 단백질이 모두 존재한다. 따라서 ‘BCL-2 계열 증가’라는 정보만으로 사멸 방향을 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.abdd765a9955",
+      "type": "paragraph",
+      "markdown": "DNA 손상·성장인자 결핍·여러 세포 스트레스는 이 균형을 바꿀 수 있다. 신호는 전사 변화와 단백질의 결합·절단·위치 이동 등으로 전달된다. p53은 일부 조건에서 BH3-only 단백질 발현과 사멸 반응에 연결되지만, 모든 내인성 자멸사가 p53 하나에 의존하는 것은 아니다. 미토콘드리아 바깥막 투과성과 안쪽막 전위의 변화도 서로 관련되지만 같은 측정 대상은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.995014fd2832",
+      "type": "heading",
+      "level": 2,
+      "text": "개시 카스페이스에서 실행 단계로"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.1b59c65bbd9f",
+      "type": "paragraph",
+      "markdown": "Cytochrome c가 막사이공간에서 세포질로 이동하면 APAF1과 함께 apoptosome 형성에 기여하여 개시 카스페이스9(caspase-9)의 활성화로 연결된다. 이후 실행 카스페이스3·7 등의 작용으로 단백질과 세포 구조가 순차적으로 변한다. 카스페이스는 인산화효소가 아니라 단백질분해효소이며, 효소 전구체의 존재와 활성화된 효소의 작용을 구별해야 한다. 단백질 총량만 측정하면 절단과 활성의 변화를 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.05095b08c646",
+      "type": "paragraph",
+      "markdown": "내인성 경로의 조절에는 카스페이스 억제단백질과 그 억제를 완화하는 미토콘드리아 유래 인자도 관여한다. 따라서 cytochrome c 방출 이후의 모든 세포가 시간과 조건에 무관하게 같은 속도로 같은 형태를 보이는 것은 아니다. 카스페이스 억제로 어떤 표지가 줄었다고 세포의 장기 생존이 완전히 회복되었다고 판단해서도 안 된다. 죽음의 실행 표지와 회복 가능한 생존 능력은 다른 관찰이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.ae6512ccbaa7",
+      "type": "heading",
+      "level": 2,
+      "text": "사멸수용체와 두 경로의 연결"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.83d43bb95478",
+      "type": "paragraph",
+      "markdown": "외인성 경로(extrinsic pathway)는 FAS 같은 사멸수용체와 어댑터 단백질을 통해 개시 카스페이스8 등의 활성화에 연결된다. 수용체에 리간드가 결합하는 것과 효율적인 사멸 복합체가 형성되는 것은 구별해야 하며, 수용체 유형과 세포 내 조절단백질에 따라 결과가 달라진다. 모든 TNF 계열 수용체 자극을 즉시 같은 자멸사 반응으로 표시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.3c1304c66526",
+      "type": "paragraph",
+      "markdown": "활성 카스페이스8은 BID 절단 등을 통해 미토콘드리아 경로와 연결될 수 있다. 일부 세포에서는 이런 증폭이 중요하므로 외인성·내인성이라는 두 이름을 완전히 독립된 직선 경로로만 외우면 부족하다. 경로도에서는 대표적 진입점을 나누되 연결과 억제 위치를 함께 읽는다. 실제 실험에서 어느 분자가 필요한지 판단하려면 기능 억제·유전적 조작과 적절한 대조군이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.c8d8ae4e4786",
+      "type": "heading",
+      "level": 2,
+      "text": "Annexin V와 막 투과성 염료의 조합"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.a271d4441850",
+      "type": "paragraph",
+      "markdown": "Annexin V는 세포 표면에 노출된 포스파티딜세린(phosphatidylserine, PS)에 결합하는 성질을 이용한다. 초기 자멸사에서 PS 외부 노출이 관찰될 수 있지만 Annexin V 양성 자체가 모든 상황에서 자멸사만의 증거는 아니다. PI나7-AAD 같은 막 투과성 지표와 조합하면 막의 장벽 상태에 관한 정보를 더 얻을 수 있다. 검체 처리와 칼슘 조건, 보상 설정 등도 적절히 통제해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.f733eeb96204",
+      "type": "paragraph",
+      "markdown": "Annexin V 음성·막 투과성 염료 음성은 해당 두 표지에서 이상이 검출되지 않은 집단이다. Annexin V 양성·염료 음성은 막 장벽이 상대적으로 유지된 PS 노출 집단으로 초기 자멸사와 양립한다. 두 표지 모두 양성인 집단은 후기 자멸사 또는 다른 막 손상 상태를 포함할 수 있어 단독으로 일차 괴사와 구별할 수 없다. 표의 이름을 생물학적 확진으로 바꾸지 않고, 절단 카스페이스·형태·시간 경과와 함께 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.0bd9b3b28cd3",
+      "type": "heading",
+      "level": 2,
+      "text": "손상 비율과 사멸 속도의 차이"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.b.41ae7a033e02",
+      "type": "paragraph",
+      "markdown": "한 시점에서 양성 세포가 많다는 사실은 사멸이 빨라졌거나 제거가 느려졌거나 다른 집단이 줄어든 결과일 수 있다. 세포수의 분모와 선별 조건, 이미 떨어져 나간 세포의 포함 여부가 중요하다. 예를 들어 분석 대상1000개에서 Annexin V 단독 양성150개와 이중 양성100개이면 Annexin V 양성은25%다. 이것을 ‘정확히25%가 초기 자멸사’라고 표현하면 이중 양성과 경로 판정의 한계를 모두 무시한다. 신호를 계산하는 단계와 생물학적 의미를 부여하는 단계를 나누어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.diagram.apoptosis-entry-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.apoptosis-entry-pairs",
+      "path": "diagrams/diagram.apoptosis-entry-pairs.svg",
+      "alt": "자멸사 경로의 대표 진입점의 단계별 비교"
+    },
+    {
+      "id": "cell-biology.cell-death.apoptosis.table.compare",
+      "type": "table",
+      "data": {
+        "title": "사멸 표지의 조합",
+        "columns": [
+          "Annexin V",
+          "투과성 염료",
+          "주로 묻는 상태"
+        ],
+        "rows": [
+          [
+            "음성",
+            "음성",
+            "두 표지 이상 미검출"
+          ],
+          [
+            "양성",
+            "음성",
+            "PS노출·막장벽 상대적 유지"
+          ],
+          [
+            "양성",
+            "양성",
+            "PS노출·막손상"
+          ],
+          [
+            "음성",
+            "양성",
+            "막손상 등 추가 평가"
+          ]
+        ],
+        "notes": "표지의 조합은 경로 확진이 아니며 시간 경과·형태·카스페이스 등과 대조한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/cell-biology/chapters/cell-death/sections/cell-biology.cell-death.apoptosis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "BCL-2 계열에는 촉진·억제 구성원이 모두 있다.",
+    "Annexin V 양성만으로 사멸 경로를 확진하지 않는다."
+  ],
+  "reviewQuestions": [
+    "question.cell-biology.cell-death.apoptosis.001",
+    "question.cell-biology.cell-death.apoptosis.002"
+  ],
+  "relatedLessons": [
+    "cell-biology.cell-cycle.checkpoints",
+    "cell-biology.cell-cycle.dna-content"
+  ]
+}

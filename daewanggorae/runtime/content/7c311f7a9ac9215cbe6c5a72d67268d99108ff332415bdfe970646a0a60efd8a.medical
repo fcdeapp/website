@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.shock.lung-barrier-injury",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.d207e2bf6db4",
+      "sourceSha256": "d207e2bf6db4f1df40d89deacb12ff491816644ae75005ca4a575c85b36d5f36",
+      "sourceLengthUtf16": 159,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.508dcbb94a10",
+      "sourceSha256": "508dcbb94a10eb4a6c0458004ac41cea61c930331436c7d3dff0a181d0c0face",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.9a99d0ef429b",
+      "sourceSha256": "9a99d0ef429b8d1b68977e220b216da86df226d406fd63a4c83b43c1fe5e1211",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.2a44e72ad03f",
+      "sourceSha256": "2a44e72ad03f2f549fbfa1bf4592bbe351e5335ab4604923e1e3256349e0c6e8",
+      "sourceLengthUtf16": 173,
+      "annotations": [
+        {
+          "id": "ann.a5083b56afdaa971ad52",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 31,
+            "exact": "부종의 양뿐 아니라 분포와 폐포의 환기 상태가 중요하다.",
+            "prefix": "",
+            "suffix": " 일부 폐포가 허탈하거나 액체로 차고 다른 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.9d12f1aaf357",
+      "sourceSha256": "9d12f1aaf3576dd83b9037bb2c73f95d0454f289b35a6e50f7e8a16a1dd09b71",
+      "sourceLengthUtf16": 162,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.7c014f9fa8d0",
+      "sourceSha256": "7c014f9fa8d0da6b5284b5df66f7db77a28124956857eedae37d2ad1ced82b8e",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.9df4c962bacf",
+      "sourceSha256": "9df4c962bacf100394bd1b7f59c1c8c6d875cefdf9da6e2d453ff02fdcf58a16",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.3b64f5bbd750",
+      "sourceSha256": "3b64f5bbd750634114efd9cb434dc7d5c4c9c1223818ff29608dfbfbf6805d27",
+      "sourceLengthUtf16": 178,
+      "annotations": [
+        {
+          "id": "ann.281f678876825f87536c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 150,
+            "end": 178,
+            "exact": "병리 이름만으로 특정 치료 반응을 확정하지 않는다.",
+            "prefix": "전략은 적용 시점의 별도 근거를 요구한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.108758cd3916",
+      "sourceSha256": "108758cd3916bce30abc23ce3351697ccc73ae8424b5449ab8c3c7cf73df867b",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lung-barrier-injury.b.6698fb25c741",
+      "sourceSha256": "6698fb25c741c497973c44011a1696d6e6a9d503ff6cd5bf59ac5fa7950ebe7f",
+      "sourceLengthUtf16": 161,
+      "annotations": [
+        {
+          "id": "ann.9213cd320c12dc0bebe9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 84,
+            "end": 112,
+            "exact": "회복 이후의 운동 능력과 삶의 질도 중요한 결과다.",
+            "prefix": "기능이 모두 회복되었다고 판단하지 않는다. ",
+            "suffix": " 증례 문제에서는 임상 증후군·조직 패턴·원"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.respiratory.postoperative-pe-differential",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.4c4c9e45fc5a",
+      "sourceSha256": "4c4c9e45fc5a1791a90e1df92eac320c7151ebc50a8d928668584e9ccf341aab",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.b1004b602973",
+      "sourceSha256": "b1004b602973f2927b96e29055bfb275706d7bc7123827a36d3bd3371b7b96ae",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.4289fd13d95b096c7d5a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 42,
+            "end": 44,
+            "exact": "기흉",
+            "prefix": "은 단서지만 수술 후 출혈·빈혈·감염·흡인·",
+            "suffix": "·심장 문제와 겹친다. 다리 증상이 없다고 "
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.cbfa289f9fd9",
+      "sourceSha256": "cbfa289f9fd97f0baa2fc2be36fd9b6a30875420f90fc9e07f24cafc9ff80b46",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.a16e17db606ead61d0a8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 151,
+            "end": 183,
+            "exact": "검사 전 조건과 목표 질환·기간을 확인하는 것이 중요하다.",
+            "prefix": "모든 입원 환자에게 그대로 옮기지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.77373a5ffe23",
+      "sourceSha256": "77373a5ffe2311550e10cef56c8b59f49608e13e05e24bc64008b3736015e5e4",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.29240e4e85e2",
+      "sourceSha256": "29240e4e85e2ab755c93c8f1d68269314c596ff5b5b6f0e79a5a58189b8726e0",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.e896c13c33273e864245",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 56,
+            "end": 97,
+            "exact": "출혈의 위치와 실제 지혈, 신경축 시술·장기 기능과 수술 내용이 중요하다.",
+            "prefix": " 용해와 침습 접근의 출혈 위해를 바꾼다. ",
+            "suffix": " 폐색전이라는 진단명만으로 모든 환자의 약물"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.0d2d6c77c6f3",
+      "sourceSha256": "0d2d6c77c6f3192b73691d9f19501f9502ca2c4dcd30562f8340ada63b319b76",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.44a25a9ffe52",
+      "sourceSha256": "44a25a9ffe52807a0c8427f0ffc2e80e4ebae3f39e7f710b68d6f637771e1034",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.3960c5bbc47a",
+      "sourceSha256": "3960c5bbc47a068bebf7a13dfea135312a4effaa3dec9f192d9ffaa78f0415fa",
+      "sourceLengthUtf16": 175,
+      "annotations": [
+        {
+          "id": "ann.08a0bdbf4199fa038791",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 53,
+            "end": 102,
+            "exact": "숨참이 오래 남으면 탈조건화와 빈혈·심폐질환, 잔여 혈관 문제 등 여러 원인을 구별한다.",
+            "prefix": "혈, 활동과 지속 숨참의 평가를 연결한다. ",
+            "suffix": " 치료 기간과 장기 계획은 유발 요인·재발·"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.365379263d0f",
+      "sourceSha256": "365379263d0f91b327d17c7d4cdf46a80d5a2620e67cab5ed5bee07ecf5aff30",
+      "sourceLengthUtf16": 149,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-pe-differential.b.a40eeac39a39",
+      "sourceSha256": "a40eeac39a3921b6c9147833b56cb9b9d1fadd5423243de546a4b5a6f4f74d87",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    }
+  ]
+}

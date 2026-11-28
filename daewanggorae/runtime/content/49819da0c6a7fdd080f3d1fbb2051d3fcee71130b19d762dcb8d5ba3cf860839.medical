@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.narrow-complex-differential",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.narrow-complex-differential.b.5e56f92bce98",
+      "sourceSha256": "5e56f92bce98f0efafa50488ab3cfb679b6ebf1bef0f3171ad082db74b4061a3",
+      "sourceLengthUtf16": 184,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.narrow-complex-differential.b.97a739f02fc9",
+      "sourceSha256": "97a739f02fc98fd41bffff0d5f29e2464438a8291a30ee78595ad779c6d5545d",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.narrow-complex-differential.b.43bc96b35814",
+      "sourceSha256": "43bc96b358147fb2fae725c131ac216f2a7f8304b89fad69af8fd0fe9a945663",
+      "sourceLengthUtf16": 169,
+      "annotations": [
+        {
+          "id": "ann.4ad6f23dd3670c147070",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 54,
+            "exact": "규칙적 빈맥에서는 동성빈맥·심방빈맥·방실결절회귀·방실회귀와 일정 비율로 전도되는 조동을 구별한다.",
+            "prefix": "",
+            "suffix": " 불규칙하면 세동 외에 가변 방실전도의 조동"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.narrow-complex-differential.b.b3ed52db64fb",
+      "sourceSha256": "b3ed52db64fb562e0d07820213ef009f58d971bc1684fbe39c4d980ec246ab09",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.narrow-complex-differential.b.a373529e6e96",
+      "sourceSha256": "a373529e6e96109b2b925ba5cff83167890a7e3764d9bf34f397bbfaa3ad4087",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.1dcaf3d7086b7555dedd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 154,
+            "end": 181,
+            "exact": "증상 발생과 기기 기록이 시작된 시점도 구별한다.",
+            "prefix": "갑작스러운 시작이라고 단정해서도 안 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.narrow-complex-differential.b.4a45960d1067",
+      "sourceSha256": "4a45960d10679e3c3dc7545beba11671244e8636adeea37e97532f0f558432fd",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.narrow-complex-differential.b.d714b7903f73",
+      "sourceSha256": "d714b7903f734a03f8e03fe547d10944b9a305f2fc9f186e168251aca6661c4c",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.narrow-complex-differential.b.a23128acb131",
+      "sourceSha256": "a23128acb131ca40073c854434d355847441f01dd8997b1840b302bbf8f3c744",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.35f19ab5008b4c7d989c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 109,
+            "end": 174,
+            "exact": "정상 육안 메시만으로 회로 방향과 불응기가 실제 표현된다고 설명하지 않으며 구조의 위치와 동적 전기 현상을 구별한다.",
+            "prefix": "분리한 사다리 도식은 기전에 도움이 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

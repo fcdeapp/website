@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.respiratory.control-of-breathing",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.446bdc0193e4",
+      "sourceSha256": "446bdc0193e4307f11bc81127ef16b87174c30976ba5f02a71d9f7c31d220dea",
+      "sourceLengthUtf16": 269,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.05dd79c0669d",
+      "sourceSha256": "05dd79c0669d9530552ee9435db812a861e342db49f1cfbd773ba12f30e7f09c",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.15db0049be53",
+      "sourceSha256": "15db0049be5379dd33e2e14762894176f268d61b3b3e7dff44f941493bfa2677",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.932dfcfce110dbe5e74d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 7,
+            "end": 12,
+            "exact": "혈액뇌장벽",
+            "prefix": "이산화탄소는 ",
+            "suffix": "을 비교적 쉽게 통과하고 중추 주변의 산염기"
+          },
+          "conceptId": "reader.term.855bd3e7762c4d05",
+          "targetDocumentId": "neuroscience.glia.barrier-neurovascular"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.ed62afe8025a",
+      "sourceSha256": "ed62afe8025a81ceae1337c8a591b214fc8039b2722f6d743c896c6b037206e9",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.d62d98079a6b",
+      "sourceSha256": "d62d98079a6b0c09c5f6473be977c083f52b535aae487395c17cf93ceafa989c",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.459fc9e97f753056aeb6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 147,
+            "end": 216,
+            "exact": "경동맥소체와 목동맥굴(carotid sinus)의 압수용 기능은 위치가 가깝지만 감지 변수와 역할이 다르므로 구별해야 한다.",
+            "prefix": "라 이산화탄소와 산염기 변화에도 반응한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.3caeed0aa863",
+      "sourceSha256": "3caeed0aa863b5fdbd09a30dc9f4cfbd2dba0209aa9e44e061864581db0db09e",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.1304b49a5bbbb690e1d4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 95,
+            "end": 133,
+            "exact": "산소운반 능력의 감소와 저산소혈증을 구별해야 하는 또 다른 이유이다.",
+            "prefix": "정도의 저산소분압 반응을 예상할 수 없다. ",
+            "suffix": " 산소분압이 낮아지는 구간에서 환기 반응은 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.4ade4d18f4ff",
+      "sourceSha256": "4ade4d18f4ff651210aa82bfc1a7572044e1d3307805316c65648a99cf313425",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.8f8bef39294a",
+      "sourceSha256": "8f8bef39294a5341bd76a46f87f4bf5ccbc81816ee1542f294a3c80b1725299e",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.bd3972faccd6",
+      "sourceSha256": "bd3972faccd625fd3a6a24b644f9b9290bb96bd669b2d984962c014a9553e06d",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.6113033760aeb511579e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 132,
+            "end": 166,
+            "exact": "호흡 노력이 있는지와 실제 공기가 이동하는지를 구별해야 한다.",
+            "prefix": "도 폐쇄와 저환기는 함께 존재할 수 있다. ",
+            "suffix": " 구동이 줄어든 중추성 문제와 출력은 있지만"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.0520c76aa827",
+      "sourceSha256": "0520c76aa82786a92afc772a5099f157b6214aba5407fb85b1e54c8318891160",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.cc82b920df9d",
+      "sourceSha256": "cc82b920df9d61832b0f65d6f581b2a531d107dd626ebd5af3889ca669bac201",
+      "sourceLengthUtf16": 255,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.control-of-breathing.b.a9647b28a7b4",
+      "sourceSha256": "a9647b28a7b48b06d43606d422e162b79cb35befdeb3cc34bc58dee5864f9638",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    }
+  ]
+}

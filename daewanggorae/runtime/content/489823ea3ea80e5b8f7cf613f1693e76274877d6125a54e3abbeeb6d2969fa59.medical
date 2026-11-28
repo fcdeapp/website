@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.coronary.pressure-flow-indices",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.coronary.pressure-flow-indices.b.64ea214619ba",
+      "sourceSha256": "64ea214619ba2f43893178c3b0cda5af3b7865cf738b92058dd3a2e6e8a0b546",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.pressure-flow-indices.b.69c1a6f5d7a2",
+      "sourceSha256": "69c1a6f5d7a29efc08e7d3880e1e43a08f7e6212bec400e5b041f9d2c8eeba45",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.pressure-flow-indices.b.9537e291e0b6",
+      "sourceSha256": "9537e291e0b67fba3e685bf4d336e06c835a7c43516436f5113ff22bd16eaa27",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.pressure-flow-indices.b.b915a4367fea",
+      "sourceSha256": "b915a4367fea62e0f5bcf50eece32144a32457ea40ed0436269851920ce328a3",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.f14170f6a7c47909e569",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 147,
+            "end": 187,
+            "exact": "압력비가 덜 낮다는 결과와 심근 혈류가 충분하다는 결과를 구별해야 한다.",
+            "prefix": "을 과소평가할 수 있는 이유를 보여 준다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.coronary.pressure-flow-indices.b.4c7de6046e8d",
+      "sourceSha256": "4c7de6046e8d21a65f8cc2b0dc3d3fd2f0d34d5b7a822c1f82ee5ee329e1c4fb",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.pressure-flow-indices.b.e68ff184371a",
+      "sourceSha256": "e68ff184371aa9521a842a6ecf4c41e2f2ef313a86da729b831e18fe38d76154",
+      "sourceLengthUtf16": 162,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.pressure-flow-indices.b.b5588e3bad34",
+      "sourceSha256": "b5588e3bad34a4d5fa7b44f71ff18e4cd5297de9db4dfbb021ef57e1f4f8c2aa",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.pressure-flow-indices.b.2015611b97f7",
+      "sourceSha256": "2015611b97f7e8b9909769fb98a4b7760370d2f735764b5c99603aedeed24433",
+      "sourceLengthUtf16": 158,
+      "annotations": [
+        {
+          "id": "ann.bfd172fb7887c3a07ff3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 93,
+            "end": 158,
+            "exact": "기능 지표는 시술 여부를 위한 중요한 근거지만 그 숫자 자체가 환자의 모든 이득·위험과 선호를 대신하는 것은 아니다.",
+            "prefix": " 단일 기준을 기계적으로 적용하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

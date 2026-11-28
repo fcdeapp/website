@@ -1,0 +1,239 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "histology.muscle.sarcomere-connective",
+  "subjectId": "histology",
+  "chapterId": "muscle",
+  "title": {
+    "ko": "근육섬유·근절·결합조직과 세 근육의 비교",
+    "en": "Muscle Fibers, Sarcomeres, and Connective Tissue"
+  },
+  "learningObjectives": [
+    {
+      "id": "histology.muscle.sarcomere-connective.lo.01",
+      "text": "골격근의 세포·근육원섬유·근절과 결합조직 층을 구별한다"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.lo.02",
+      "text": "미끄럼 과정에서 A띠·I띠·H구역의 변화를 설명한다"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.lo.03",
+      "text": "골격근·심장근·평활근의 형태와 세포 연결을 기능에 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "histology.muscle.sarcomere-connective.b.525161dcf57e",
+      "type": "heading",
+      "level": 2,
+      "text": "근육섬유와 근육원섬유"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.4ccb46dd4787",
+      "type": "paragraph",
+      "markdown": "골격근의 근육섬유(muscle fiber)는 여러 핵을 가진 긴 세포이며 그 안에는 많은 근육원섬유(myofibril)가 길이 방향으로 배열된다. 한 근육섬유를 여러 세포가 실처럼 끝없이 이어진 다발과 혼동해서는 안 된다. 세포막인 근육세포막(sarcolemma) 바로 안쪽에 핵이 주로 보이고, 세포질의 수축 단백질이 반복 배열되어 가로무늬가 나타난다. 횡단면에서는 세포의 길이가 드러나지 않아 다각형 단면과 주변 핵·결합조직을 기준으로 읽어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.5d886491b9a6",
+      "type": "paragraph",
+      "markdown": "근육원섬유는 근절(sarcomere)이 직렬로 반복된 구조이다. 이웃한 두 Z원반 사이가 한 근절이며 가는 필라멘트와 굵은 필라멘트가 규칙적으로 배열된다. 여러 근육원섬유의 띠가 옆으로 맞추어져 세포 전체의 가로무늬를 만든다. 근절이 세포 자체이거나 근육 전체의 한 다발이라는 설명은 규모가 잘못된 것이다. 기관·근육다발·근육섬유·근육원섬유·필라멘트의 계층을 분리해야 조직과 기능을 연결할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.268cd6ad2b39",
+      "type": "heading",
+      "level": 2,
+      "text": "A띠·I띠·H구역"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.bf1f81f6e357",
+      "type": "paragraph",
+      "markdown": "A띠는 굵은 필라멘트의 길이에 대응하는 영역으로 가는 필라멘트와 겹치는 부분도 포함한다. I띠는 가는 필라멘트만 있는 영역이며 Z원반을 사이에 두고 이웃한 두 근절에 걸친다. H구역은 A띠 가운데에서 굵은 필라멘트만 있는 부분이고 중앙에는 M선이 관련된다. A띠 전체가 언제나 가는 필라멘트와 굵은 필라멘트가 모두 겹치는 영역이라는 정의는 H구역의 존재와 맞지 않는다. A띠는 겹침 정도가 아니라 굵은 필라멘트의 범위를 기준으로 정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.b744e2fc712f",
+      "type": "paragraph",
+      "markdown": "근절이 짧아질 때 필라멘트가 서로 미끄러져 겹침이 증가한다. 정상적인 미끄럼 모형에서는 굵고 가는 필라멘트의 길이가 수축 때마다 줄어드는 것이 아니므로 A띠 길이는 거의 일정하고 I띠와 H구역이 짧아진다. 이 관계는 가로무늬의 변화를 수축 기전과 연결하는 중요한 근거이다. 근육이 짧아진다는 관찰을 단백질 필라멘트가 탄성줄처럼 모두 짧아진다는 뜻으로 해석해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.2cccf1a03990",
+      "type": "heading",
+      "level": 2,
+      "text": "기하 모형으로 띠 길이 계산하기"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.4ec4a60fadc7",
+      "type": "paragraph",
+      "markdown": "굵은 필라멘트 길이를 A, 양끝 Z원반에서 뻗은 가는 필라멘트 각각의 길이를 T, 근절 길이를 L이라고 하자. 대칭적인 일차원 배열에서 한 근절 안에 포함된 양쪽 I영역의 합은 L−A이다. 가는 필라멘트가 서로 겹치지 않는 범위의 H구역 길이는 L−2T이며, 중심에서 만나는 경우에는 H구역이 0이 된다. 따라서 이 범위의 모형에서는 H를 max(0, L−2T)로 쓸 수 있다. L이 매우 짧아 생기는 필라멘트 간 간섭과 실제 삼차원 구조는 이 간단한 모형에 들어 있지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.7ebe543cc130",
+      "type": "paragraph",
+      "markdown": "예를 들어 굵은 필라멘트를 1.6 μm, 각 가는 필라멘트를 1.0 μm로 가정하고 L이 2.6 μm이면 I영역의 합은 1.0 μm, H구역은 0.6 μm이다. L이 2.2 μm로 줄면 각각 0.6 μm와 0.2 μm가 되지만 A는 1.6 μm로 유지된다. 이 값은 띠 길이 계산을 위한 학습용 가정이며 정상 사람 근육의 모든 상태에 적용하는 측정 표준이 아니다. 또한 겹침 길이만 계산했다고 실제 장력을 정확히 계산한 것은 아니다. 미오신 머리의 분포·칼슘 활성화·수축 속도 등 다른 조건이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.d9860fd9d59b",
+      "type": "heading",
+      "level": 2,
+      "text": "결합조직의 층과 힘의 전달"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.3d5173989020",
+      "type": "paragraph",
+      "markdown": "근육속막(endomysium)은 개별 근육섬유 주변의 섬세한 결합조직이고 근육다발막(perimysium)은 근육다발을 구분하며 근육바깥막(epimysium)은 근육 전체를 감싼다. 이 층들은 혈관·신경이 드나드는 경로이자 힘을 전달하는 연속적인 기질이다. 세포막을 뜻하는 sarcolemma와 결합조직을 뜻하는 endomysium은 다른 구조이므로 한국어 ‘막’이라는 표현만으로 동일시하지 않는다. 근육의 장력은 필라멘트에서 세포골격·세포막의 연결복합체와 바깥기질을 거쳐 힘줄 등으로 전달된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.1303547e47f2",
+      "type": "paragraph",
+      "markdown": "근육섬유 옆에는 바닥판과 세포막 사이에서 관찰되는 위성세포(satellite cell)가 있어 손상 뒤 재생에 기여한다. 모든 성숙 근육섬유가 유사분열로 그대로 둘로 나뉘어 수를 늘리는 것은 아니다. 손상 범위와 기질·신경·혈액 공급의 상태에 따라 재생과 섬유화의 비중이 달라진다. 근육의 부피 증가도 수축 단백질 증가, 섬유의 크기 변화, 지방·결합조직의 증가를 구별해야 한다. 외형이 커졌다는 사실만으로 수축 기능이 향상되었다고 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.62c04d8d97a7",
+      "type": "heading",
+      "level": 2,
+      "text": "흥분과 세포 안 칼슘"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.b12646e85fa4",
+      "type": "paragraph",
+      "markdown": "골격근의 가로세관(T tubule)은 세포막의 함입으로 전기적 변화를 세포 깊이 전달한다. 근육세포질그물(sarcoplasmic reticulum)은 칼슘 저장과 방출·회수에 관여한다. 골격근의 세동이(triad)는 한 가로세관과 양옆의 끝수조로 이루어지고 흥분과 칼슘 방출을 연결하는 배치이다. 세포 밖 공간과 이어진 가로세관의 속공간을 세포질 또는 저장 칼슘이 있는 그물의 속공간과 혼동하지 않는다. 구조상 가까워도 막으로 나뉜 구획이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.e808a28efa5b",
+      "type": "paragraph",
+      "markdown": "칼슘은 트로포닌 계통에 결합하여 액틴·미오신 상호작용의 조절 상태를 바꾼다. ATP는 가교의 분리와 재가동, 칼슘 재흡수 등 여러 과정에 필요하다. ATP가 단순히 수축 때 한 번 태워 없어지는 연료라는 설명만으로는 이완 실패와 사후강직을 이해하기 어렵다. 전기적 흥분, 칼슘 신호, 가교 순환과 기계적 단축은 서로 연결되지만 시간적·기능적으로 구별되는 단계이다. 조직 표본에 보이는 배열은 이 연속 과정의 구조적 조건을 보여 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.9cc3c13a9685",
+      "type": "heading",
+      "level": 2,
+      "text": "심장근과 사이원반"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.a187540f4d75",
+      "type": "paragraph",
+      "markdown": "심장근세포는 가로무늬를 가지지만 대체로 중심에 핵이 있고 가지를 내어 이웃 세포와 연결된다. 사이원반(intercalated disc)에는 기계적 부착을 위한 접합과 전기적 연결을 위한 간극이음(gap junction)이 포함된다. 심장근 전체가 한 거대 다핵세포가 아니라 세포막으로 나뉜 세포들이 연결된 조직이라는 점이 골격근과 다르다. 전기적 연결성과 개별 세포의 경계를 동시에 이해해야 전도와 수축의 협동을 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.93f440d5b0dc",
+      "type": "paragraph",
+      "markdown": "심장근의 가로세관과 근육세포질그물의 배열은 골격근의 전형적 세동이와 다르며 이중체(dyad) 관계가 중요하다. 세포 밖 칼슘 유입과 그에 따른 그물의 칼슘 방출은 심장근 흥분수축연결의 핵심이다. 가로무늬가 있다는 이유로 두 조직의 칼슘 공급·전기적 특성·재생 능력이 같다고 가정하지 않는다. 미토콘드리아의 풍부함과 혈관 분포 역시 지속적인 기계적 일을 수행하는 대사 환경과 연결된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.3eabf3bcb7cb",
+      "type": "heading",
+      "level": 2,
+      "text": "평활근의 고정점과 기능"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.7842626085eb",
+      "type": "paragraph",
+      "markdown": "평활근세포는 방추형이며 중심 핵을 가지고 전형적인 근절의 규칙적인 가로무늬가 없다. 액틴·미오신이 없어서가 아니라 그 배열과 고정점 체계가 골격근의 근절과 다르기 때문이다. 치밀체(dense body)와 세포막의 치밀판(dense plaque)은 힘의 전달에 중요하며 세포의 형태 변화가 조직 전체의 긴장과 통로 지름을 바꾼다. 수축한 세포의 핵은 굽거나 나선형으로 보일 수 있어 세포 단면과 수축 상태를 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.b.cdad5aa5a122",
+      "type": "paragraph",
+      "markdown": "평활근의 조절에는 칼슘·칼모듈린과 미오신가벼운사슬 인산화가 중요하고 골격근의 트로포닌 중심 조절과 다르다. 자율신경·호르몬·국소 인자·기계적 늘어남이 다양한 방식으로 작용하며 장기별 전기적 연결 정도와 반응도 다르다. 모든 평활근이 하나의 신경근접합에서 한 번의 활동전위를 받아 즉시 같은 정도로 짧아지는 것은 아니다. 조직의 형태, 조절 단백질, 세포 연결과 장기의 기능을 함께 비교해야 세 근육의 차이를 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.diagram.band-geometry",
+      "type": "diagram",
+      "diagramRef": "diagram.sarcomere-band-geometry",
+      "path": "diagrams/diagram.sarcomere-band-geometry.svg",
+      "alt": "굵고 가는 필라멘트 길이가 일정한 대칭 모형에서 근절 길이와 A띠·양쪽 I영역 합·H구역 길이의 관계"
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.equation.band-geometry",
+      "type": "equation",
+      "latex": "I_{\\mathrm{sum}}=L-A,\\qquad H=\\max(0,L-2T)",
+      "variables": {
+        "L": "근절 길이 (μm)",
+        "A": "굵은 필라멘트 길이 (μm)",
+        "T": "한쪽 가는 필라멘트 길이 (μm)",
+        "I_sum": "한 근절 안의 양쪽 I영역 길이 합 (μm)",
+        "H": "H구역 길이 (μm)"
+      },
+      "assumptions": [
+        "대칭 일차원 배열",
+        "예시 그래프는 A=1.6 μm, T=1.0 μm, L=2.0–3.4 μm",
+        "필라멘트 길이는 일정하며 실제 장력은 계산하지 않음"
+      ]
+    },
+    {
+      "id": "histology.muscle.sarcomere-connective.table.three-muscle-types",
+      "type": "comparison",
+      "data": {
+        "title": "세 근육조직의 대표적인 비교",
+        "columns": [
+          "구분",
+          "골격근",
+          "심장근",
+          "평활근"
+        ],
+        "rows": [
+          [
+            "세포·핵",
+            "긴 다핵세포·주변핵",
+            "가지치는 세포·주로 중심핵",
+            "방추형 세포·중심핵"
+          ],
+          [
+            "가로무늬",
+            "근절 배열",
+            "근절 배열",
+            "전형적인 근절 무늬 없음"
+          ],
+          [
+            "세포 간 관계",
+            "각 근육섬유를 구분",
+            "사이원반의 기계·전기 접합",
+            "장기별 간극이음·연결의 차이"
+          ],
+          [
+            "대표 조절",
+            "트로포닌·트로포미오신",
+            "트로포닌·트로포미오신",
+            "칼모듈린·미오신가벼운사슬 인산화"
+          ]
+        ],
+        "notes": "전형적인 특징의 비교이며 장기·상태별 변이를 모두 표현하지 않는다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/histology/chapters/muscle/sections/histology.muscle.sarcomere-connective.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.histology.muscle.sarcomere-connective.001",
+    "question.histology.muscle.sarcomere-connective.002"
+  ],
+  "keyFacts": [
+    "0.6 μm, 0.2 μm"
+  ],
+  "relatedLessons": [
+    "histology.integument.skin-appendages",
+    "histology.lymphoid.organ-architecture",
+    "histology.vascular.wall-microcirculation"
+  ]
+}

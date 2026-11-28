@@ -1,0 +1,26 @@
+{
+  "id": "radiology.chapter.mri",
+  "subjectId": "radiology",
+  "sections": [
+    {
+      "id": "radiology.mri.signal-and-diffusion",
+      "title": {
+        "ko": "MRI 신호와 확산영상의 원리",
+        "en": "MRI Signal and Diffusion Imaging"
+      },
+      "path": "domains/09-clinical-diagnostics/subjects/radiology/chapters/mri/sections/radiology.mri.signal-and-diffusion.json"
+    },
+    {
+      "id": "radiology.mri.safety-screening",
+      "title": {
+        "ko": "MRI 안전과 이식기기 확인",
+        "en": "MRI Safety and Implant Screening"
+      },
+      "path": "domains/09-clinical-diagnostics/subjects/radiology/chapters/mri/sections/radiology.mri.safety-screening.json"
+    }
+  ],
+  "status": "partial",
+  "title": {
+    "ko": "MRI 원리와 안전"
+  }
+}

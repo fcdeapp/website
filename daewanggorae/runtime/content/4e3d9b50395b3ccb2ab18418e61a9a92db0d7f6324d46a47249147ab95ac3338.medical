@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.carbohydrate.pentose-phosphate",
+  "subjectId": "biochemistry",
+  "chapterId": "carbohydrate",
+  "title": {
+    "ko": "오탄당인산경로·NADPH와 산화 스트레스",
+    "en": "Pentose Phosphate Pathway and NADPH"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.lo.01",
+      "text": "산화적 단계와 비산화적 단계의 탄소·환원력 수지를 구별한다"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.lo.02",
+      "text": "세포 요구에 따른 리보스와 NADPH 생산의 조합을 설명한다"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.lo.03",
+      "text": "적혈구의 환원 방어와 G6PD 결핍을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.c54005e60f7c",
+      "type": "heading",
+      "level": 2,
+      "text": "해당과정과 다른 포도당의 사용"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.1330870f2f8b",
+      "type": "paragraph",
+      "markdown": "포도당6인산(glucose-6-phosphate, G6P)은 해당과정으로만 들어가는 물질이 아니다. 세포질의 오탄당인산경로(pentose phosphate pathway, PPP)는 NADPH와 오탄당을 공급하고 해당 중간체와 탄소를 교환한다. 이 경로가 포도당을 사용한다는 이유로 ATP를 직접 만들어 내는 해당과정의 짧은 우회로로 이해하면 핵심 기능을 놓친다. 주된 산물과 세포의 요구가 다르며 산화적 단계의 환원 당량은 NADH가 아니라 NADPH 형태로 얻어진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.bcb885fc85f0",
+      "type": "paragraph",
+      "markdown": "NADH와 NADPH는 모두 전자를 전달할 수 있지만 세포의 효소 인식과 사용되는 대사 맥락이 다르다. NADH는 산화적 에너지 대사와, NADPH는 환원적 생합성·산화환원 방어 등과 중요하게 연결된다. 이것은 절대적인 모든 반응의 이분법은 아니지만 두 풀을 같은 전자 통장으로 단순히 합칠 수 없다는 뜻이다. NADP⁺의 추가 인산기는 전달하는 전자 수를 늘리기보다 효소가 보조인자를 구분하는 데 기여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.fb3d76d34b36",
+      "type": "heading",
+      "level": 2,
+      "text": "산화적 단계의 반응 수지"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.2c41f07d2115",
+      "type": "paragraph",
+      "markdown": "G6PD는 G6P의 산화를 시작하며 NADP⁺를 NADPH로 환원한다. 이어지는 가수분해와6-포스포글루콘산의 산화적 탈탄산을 거쳐 리불로스5인산(ribulose-5-phosphate)이 만들어진다. 산화적 단계 한 회전의 순수지에서는 G6P 한 분자로부터 오탄당 한 분자, CO₂ 한 분자, NADPH 두 분자가 얻어진다. 탄소6개가 오탄당5개와 CO₂1개로 보존된다는 점을 확인하면 산물의 의미를 이해하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.303d56a57ba5",
+      "type": "paragraph",
+      "markdown": "이 산화적 부분은 세포 안에서 주로 한 방향으로 진행하는 경로로 이해한다. NADPH가 충분하고 NADP⁺가 적으면 초기 효소 반응을 제한하는 방향으로 작용할 수 있다. 반대로 환원력을 소비하여 NADP⁺가 늘면 공급 요구가 커진다. 그러나 경로의 실제 유량을 NADPH 농도 하나만으로 계산할 수는 없다. 효소량·기질·다른 경로와의 연결 및 조직의 상태도 함께 중요하다. 호르몬과 영양 상태에 따른 효소 발현 조절과 즉각적인 보조인자 상태의 조절을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.7543bcfa81ea",
+      "type": "heading",
+      "level": 2,
+      "text": "비산화적 단계의 탄소 재배열"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.30562e78db4d",
+      "type": "paragraph",
+      "markdown": "리불로스5인산은 리보스5인산과 자일룰로스5인산 등으로 전환될 수 있다. 트랜스케톨레이스(transketolase)는 두 탄소 단위, 트랜스알돌레이스(transaldolase)는 세 탄소 단위의 전달에 관여한다. 비산화적 반응의 순수지를 묶으면 오탄당 세 분자에서 과당6인산 두 분자와 글리세르알데하이드3인산 한 분자를 만들 수 있다. 3×5=2×6+3으로 탄소 수가 맞는다. 이 재배열 자체에서 NADPH가 새로 생기는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.5baf6768f431",
+      "type": "paragraph",
+      "markdown": "트랜스케톨레이스에는 티아민피로인산(thiamine pyrophosphate, TPP)이 필요하다. 티아민은 피루브산탈수소효소와 일부 다른 산화적 탈탄산 효소계에서도 중요하지만, PPP의 비산화적 탄소 전달을 그 반응들과 동일한 산화적 탈탄산으로 부르면 안 된다. 같은 보조인자를 쓰더라도 기질과 전자의 수지, 반응의 목적이 다르다. 반응 이름뿐 아니라 이동하는 탄소 수와 환원 당량 생성 여부를 함께 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.ce1d27b21850",
+      "type": "heading",
+      "level": 2,
+      "text": "세포의 요구에 따른 흐름"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.fc53b2b204da",
+      "type": "paragraph",
+      "markdown": "핵산 합성이 빠른 세포가 리보스를 많이 필요로 하고 NADPH 요구가 상대적으로 적으면 해당 중간체에서 비산화적 반응을 거꾸로 이용해 오탄당을 얻을 수 있다. NADPH와 리보스가 함께 필요하면 산화적 단계와 리보스 전환이 연결된다. NADPH 요구가 특히 큰 경우에는 남는 오탄당 탄소를 해당 중간체로 돌려보내거나 조직의 다른 반응과 연결한다. 따라서 PPP가 한 번 켜지면 언제나 리보스와 NADPH를 같은 고정 비율로 최종 축적한다는 설명은 맞지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.f80bbef80aad",
+      "type": "paragraph",
+      "markdown": "탄소가 다시 G6P 계통으로 돌아와 산화적 단계를 반복하는 이상적인 수지 모형에서는 포도당 탄소가 점차 CO₂로 나가면서 더 많은 NADPH를 만들 수 있다. 하지만 실제 조직에서 모든 탄소가 무조건 완전히 같은 방식으로 순환하는 것은 아니다. 필요한 효소와 다른 물질 사용, 세포의 생합성 수요를 확인해야 한다. 유량(flux), 중간체 농도, 최종 생산량은 서로 다른 개념이며 특정 중간체가 많다고 경로 전체가 더 빠르다고 단정할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.b150f770e04b",
+      "type": "heading",
+      "level": 2,
+      "text": "글루타티온과 적혈구"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.c27fd69e3474",
+      "type": "paragraph",
+      "markdown": "환원형 글루타티온(GSH)은 과산화물 처리 과정에서 산화형(GSSG)으로 바뀔 수 있고, 글루타티온환원효소는 NADPH를 이용해 환원 상태를 회복한다. 따라서 NADPH는 과산화물을 직접 모두 붙잡는 단일 소거제가 아니라 환원 방어 체계를 유지하는 전자 공급원이다. 과산화물 처리 효소와 GSH 재생 효소의 역할을 구분하면 보조인자 결핍이 여러 단계를 통해 세포 손상으로 이어지는 이유를 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.cf9642925a33",
+      "type": "paragraph",
+      "markdown": "성숙 적혈구에는 미토콘드리아가 없고 NADPH 방어에서 PPP의 중요성이 크다. 산화 스트레스가 커지면 헤모글로빈과 막 단백질이 영향을 받고 적혈구의 변형성·생존이 달라질 수 있다. G6PD 기능 저하에서 특정 감염·물질 노출 등에 따라 용혈이 유발될 수 있다는 사실은 평상시와 스트레스 상태의 환원력 수요가 다름을 반영한다. 효소 활성과 임상 양상은 변이·적혈구 연령·노출 등에 따라 달라지므로 한 유전자 변화가 모든 상황에서 같은 정도의 용혈을 만든다고 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.fd00fee2c8d8",
+      "type": "heading",
+      "level": 2,
+      "text": "해석의 주의점"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.b.0a2f1fa003f8",
+      "type": "paragraph",
+      "markdown": "G6PD 활성 검사는 최근의 용혈과 수혈 등으로 적혈구 집단이 바뀌었을 때 해석이 달라질 수 있다. 검사 시점의 활성이 정상 범위라는 한 정보만으로 모든 임상 의심을 끝내지 않고 적혈구 연령 분포와 병력을 고려한다. 또한 NADPH는 다른 조직에서 다른 효소 경로를 통해서도 공급될 수 있다. 적혈구의 특수성을 모든 세포의 유일한 NADPH 공급 법칙으로 확대하지 않는다. PPP는 탄소의 재배치와 환원력의 공급을 연결하는 경로로 이해해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.diagram.ppp-carbon-redox",
+      "type": "diagram",
+      "diagramRef": "diagram.ppp-carbon-redox",
+      "path": "diagrams/diagram.ppp-carbon-redox.svg",
+      "alt": "PPP의 두 기능 구분의 단계별 관계"
+    },
+    {
+      "id": "biochemistry.carbohydrate.pentose-phosphate.table.comparison",
+      "type": "table",
+      "data": {
+        "title": "PPP 두 단계 비교",
+        "columns": [
+          "항목",
+          "산화적",
+          "비산화적"
+        ],
+        "rows": [
+          [
+            "주요 변화",
+            "G6P→오탄당·CO₂",
+            "탄소 단위 재배열"
+          ],
+          [
+            "환원력",
+            "NADPH 생성",
+            "해당 재배열 자체에서 NADPH 생성 없음"
+          ],
+          [
+            "전형적 효소",
+            "G6PD·6PGDH",
+            "트랜스케톨레이스·트랜스알돌레이스"
+          ]
+        ],
+        "notes": "비산화적 재배열은 되돌릴 수 있으며 세포의 리보스·NADPH 수요에 따라 연결된다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/carbohydrate/sections/biochemistry.carbohydrate.pentose-phosphate.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.biochemistry.carbohydrate.pentose-phosphate.001",
+    "question.biochemistry.carbohydrate.pentose-phosphate.002"
+  ],
+  "keyFacts": [
+    "NADPH2분자·CO₂1분자·오탄당1분자"
+  ],
+  "relatedLessons": [
+    "biochemistry.carbohydrate.fructose-galactose"
+  ]
+}

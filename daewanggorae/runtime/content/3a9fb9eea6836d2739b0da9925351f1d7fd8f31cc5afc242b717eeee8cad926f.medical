@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.congenital.patent-ductus-aorta",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.congenital.patent-ductus-aorta.b.84fa398fa317",
+      "sourceSha256": "84fa398fa3175b39d4432dc52a074e43886c58be35d9f4e3478078774aba2aba",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.congenital.patent-ductus-aorta.b.dc2c3962ced0",
+      "sourceSha256": "dc2c3962ced0328364350191f9723c8cf0956d06d2bf2d19b5d554d930091a68",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.congenital.patent-ductus-aorta.b.22f94e1909e3",
+      "sourceSha256": "22f94e1909e36be9410bd91d9470a5fa50b60b68343fc33b80fe50daf129a37c",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.congenital.patent-ductus-aorta.b.cf90fdd2f5f3",
+      "sourceSha256": "cf90fdd2f5f310e7bc2852caac77dafd0dc76c7e6b15b948b0dc010857fd71aa",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.ea87c8ae2b4642440ab1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 60,
+            "exact": "심부전",
+            "prefix": "적 부담을 늘린다. 큰 단락에서는 폐울혈과 ",
+            "suffix": "이 생길 수 있고, 작은 통로는 우연히 발견"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.congenital.patent-ductus-aorta.b.36c358130ddf",
+      "sourceSha256": "36c358130ddf505286f4ad925673941869b4470730f1579894002a7a65c142db",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.congenital.patent-ductus-aorta.b.c3f1a758848b",
+      "sourceSha256": "c3f1a758848b5ff3503ddce6cbcabfc33803784718b40eb3ac705d886b352c22",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.0f0ca02023ef6da2a244",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 127,
+            "end": 205,
+            "exact": "태아 통로의 흔적을 영상에서 확인하는 것과 현재의 유효 단락을 확인하는 것은 다른 질문이며, 석회화와 폐혈관 변화도 성인 평가에서 중요하다.",
+            "prefix": "단정하지 않고 다른 복합 연결도 감별한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.congenital.patent-ductus-aorta.b.ed1b8c94e9fb",
+      "sourceSha256": "ed1b8c94e9fbc61a4f6f66ac4932d5ad9fab4ded3923f5cc66ba33066c8ed5ee",
+      "sourceLengthUtf16": 173,
+      "annotations": [
+        {
+          "id": "ann.4fc5f68ed7b69a1b337f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 55,
+            "exact": "독립된 동맥관개존의 좌우단락과 다른 중증 선천성 병변에서 필요한 동맥관 의존 순환은 구분해야 한다.",
+            "prefix": "",
+            "suffix": " 어떤 환자에서는 열린 동맥관이 폐혈류나 체"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.congenital.patent-ductus-aorta.b.020c24990a7d",
+      "sourceSha256": "020c24990a7dbdfc6e2f1ee6e4baff4d565c38b1215155e0485fa18de396f88f",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    }
+  ]
+}

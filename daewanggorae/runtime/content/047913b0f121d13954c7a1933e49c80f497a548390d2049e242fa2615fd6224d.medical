@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "trauma-surgery.hemostasis.trauma-coagulopathy",
+  "subjectId": "trauma-surgery",
+  "chapterId": "hemostasis",
+  "title": {
+    "ko": "외상성 응고장애의 기전과 검사",
+    "en": "Mechanisms and Testing in Trauma Induced Coagulopathy"
+  },
+  "learningObjectives": [
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.lo.01",
+      "text": "초기 내인성 변화와 희석을 구별한다"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.lo.02",
+      "text": "체온·산염기·칼슘을 지혈에 연결한다"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.lo.03",
+      "text": "혈액검사와 점탄성검사의 질문을 비교한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.626a9e704f02",
+      "type": "heading",
+      "level": 2,
+      "text": "응고장애는 수액 뒤에만 생기지 않는다"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.937b07367a97",
+      "type": "paragraph",
+      "markdown": "외상성 응고장애(trauma-induced coagulopathy)는 조직 손상·저관류와 내피·염증·응고·섬유소용해의 변화가 겹친 결과다. 심한 손상에서는 많은 수액을 받기 전부터 지혈 기능이 변할 수 있다. 이후 희석과 소모·출혈, 저체온·산증과 약물이 문제를 더한다. 모든 검사 이상을 수액 희석 하나로 설명하면 초기 병태와 표적을 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.0982c7e061ec",
+      "type": "paragraph",
+      "markdown": "응고계가 활성화되는데도 출혈이 나타나는 것은 모순이 아니다. 특정 부위의 혈전·미세순환 변화와 전신의 효과적인 지혈 능력은 같지 않다. 혈소판의 수와 기능, 섬유소 기질의 양·구조 및 분해, 내피와 항응고 경로가 서로 다른 방향으로 바뀔 수 있다. 환자별 표현형과 시간 변화가 있어 하나의 기전을 모든 중증 외상에 고정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.24d627a1fab1",
+      "type": "heading",
+      "level": 2,
+      "text": "섬유소와 분해의 균형"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.666a8df72647",
+      "type": "paragraph",
+      "markdown": "피브리노겐은 섬유소 망의 재료이므로 심한 소실·소모·희석은 혈전의 안정성에 영향을 준다. 혈소판도 망과 상호작용하여 강도를 만들고 수축에 관여한다. 섬유소용해는 형성된 혈전을 제거하는 정상 과정이지만 과도하거나 억제된 상태는 각각 다른 위험을 가질 수 있다. 출혈이 있다는 이유만으로 모든 환자의 섬유소용해가 같은 정도로 증가했다고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.daa64746f90a",
+      "type": "paragraph",
+      "markdown": "혈전 강도는 하나의 성분 농도로만 결정되지 않는다. 혈소판 기능과 피브리노겐·중합, 인자와 체온·pH가 함께 관여한다. 검체를 채취한 시점과 이미 투여한 혈액·약물을 기록하면 뒤늦게 도착한 결과를 현재 상태로 잘못 읽는 오류를 줄일 수 있다. 검사 개선이 있어도 수술적 출혈점이 남아 있을 수 있어 기능 교정과 원천 통제를 분리해서 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.4ff748575c23",
+      "type": "heading",
+      "level": 2,
+      "text": "생리 조건은 지혈 반응의 일부다"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.a8c9ca3b5828",
+      "type": "paragraph",
+      "markdown": "저체온은 효소 반응과 혈소판 기능에, 심한 산증은 응고 과정과 심혈관 반응에 영향을 준다. 이온화 칼슘은 응고계와 심근·혈관 기능에 필요하며 대량 수혈 때 항응고제로 사용된 구연산과 대사 조건의 영향을 받을 수 있다. 총 칼슘과 이온화 칼슘은 같은 측정이 아니다. 실제 교정은 반복 검사·심전도·혈역학과 임상 경로를 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.86359b5cc180",
+      "type": "paragraph",
+      "markdown": "체온을 검사실의 표준 온도 조건과 구별해야 한다. 검체에서의 응고시간이 환자의 저체온 환경과 지혈을 완전히 재현하지 못할 수 있다. 따라서 보고된 숫자만 보고 온도·관류·산염기 문제를 해결했다고 판단하지 않는다. 환자 보온과 유입 성분의 온도, 노출 시간·조직 관류를 함께 관리하는 것은 검사값 밖의 생리 조건을 다루는 일이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.0847fe023e46",
+      "type": "heading",
+      "level": 2,
+      "text": "각 검사가 무엇을 보는가"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.ad3168d3a793",
+      "type": "paragraph",
+      "markdown": "혈소판 수·일반 응고시간·피브리노겐은 서로 다른 구성과 경로의 정보를 준다. 일반 응고시간은 모든 혈소판 기능·혈전 강도·섬유소용해를 측정하지 않는다. 점탄성검사(viscoelastic testing)는 전혈에서 혈전 시작·형성·강도·분해의 시간 양상을 평가하지만 장비·시약과 조건에 따라 값과 해석이 다르다. 검사 항목을 서로 임의 환산하거나 모든 약물 효과를 배제하는 도구로 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.635aac940d33",
+      "type": "paragraph",
+      "markdown": "결과는 현재의 출혈 양상과 원천, 온도·pH·이온화 칼슘, 기존 간·신장질환과 항혈전제에 연결한다. 검사실 개선만 쫓아 불필요한 성분을 과도하게 주거나, 반대로 한 정상 값으로 심한 지속 출혈의 평가를 끝내지 않는다. 실제 지혈과 장기 기능의 변화를 함께 관찰해야 표적 교정의 이득과 위해를 확인할 수 있다. 응고장애의 치료는 표 한 줄을 정상으로 만드는 과정이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.7518b6c3ff8d",
+      "type": "heading",
+      "level": 2,
+      "text": "표본의 시간과 생리의 시간"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.27e860635424",
+      "type": "paragraph",
+      "markdown": "일반 검사 결과가 도착했을 때에는 채혈 후 이미 여러 성분이 투여되고 체온·출혈이 달라졌을 수 있다. 결과의 숫자와 함께 채혈 시각·도착 시각·중간 처치를 연결해야 현재의 부족을 추정할 수 있다. 지연된 검사에 반응하여 같은 결핍을 반복 교정하면 과잉 투여가 생길 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.b.e3b510c6cd34",
+      "type": "paragraph",
+      "markdown": "점탄성 곡선의 특정 부분이 작거나 늦다는 사실도 장비와 시약·표본 조건 및 현재 출혈을 포함하여 읽는다. 교육용 모양과 실제 장비의 절단값을 혼동하지 않는다. 검사의 장점은 과정을 나누어 보게 하는 데 있으며,현장의 혈관 출혈점과 장기 관류까지 직접 보는 것은 아니다. 검체의 이상과 환자의 지혈 실패가 같은 원인인지 계속 대조한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.hemostasis.trauma-coagulopathy.table0848",
+      "type": "table",
+      "data": {
+        "title": "기전·근거·목표의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "초기 변화",
+            "손상·내피·저관류"
+          ],
+          [
+            "추가 요인",
+            "희석·소모·온도·pH·칼슘"
+          ],
+          [
+            "일반 검사",
+            "인자·혈소판·농도의 선택 정보"
+          ],
+          [
+            "점탄성",
+            "전혈 혈전의 시간·강도·분해"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/trauma-surgery/chapters/hemostasis/sections/trauma-surgery.hemostasis.trauma-coagulopathy.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.trauma-surgery.hemostasis.trauma-coagulopathy.001"
+  ],
+  "relatedLessons": [
+    "trauma-surgery.shock.resuscitation-source-control",
+    "trauma-surgery.transfusion.massive-monitoring"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-checking-distress-0852",
+  "lessonId": "psychiatry.anxiety.panic-ocd",
+  "title": "가상 확인 행동 뒤 불편 평정",
+  "series": [
+    {
+      "label": "독립 가상 자료",
+      "samples": [
+        {
+          "x": 0,
+          "y": 80
+        },
+        {
+          "x": 5,
+          "y": 40
+        },
+        {
+          "x": 10,
+          "y": 55
+        },
+        {
+          "x": 20,
+          "y": 75
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "minutes": [
+      0,
+      5,
+      10,
+      20
+    ],
+    "ratings": [
+      80,
+      40,
+      55,
+      75
+    ],
+    "notValidatedScaleOrTypicalOCD": true,
+    "noCausalTreatmentInference": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 20,
+      "scale": "linear",
+      "ticks": [
+        0,
+        5,
+        10,
+        10,
+        20
+      ],
+      "label": "확인 행동 전후 시간(min)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        25.0,
+        50.0,
+        75.0,
+        100.0
+      ],
+      "label": "임의 불편 평정"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "독립 가상 자료",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·정상치·검사성능·진단·투약·치료효과와 안전 기준을 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

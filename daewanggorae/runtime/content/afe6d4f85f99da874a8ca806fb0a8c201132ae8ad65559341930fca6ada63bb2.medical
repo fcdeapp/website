@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.cap-treatment-response",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.b.a223dd05520e",
+      "sourceSha256": "a223dd05520ecf487569ee66f49054b78e2ae93e12c949918dbb0078c3a9f61e",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.b.ad7b2d009e24",
+      "sourceSha256": "ad7b2d009e24f6da438a9dcaf29e9babe60bcd28ab2901cc88f08b14f2ae52fc",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.b.903845b953ae",
+      "sourceSha256": "903845b953ae883c7cea3b4a63c40366b4752d3b18a00ed064bd7156971dde21",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.b.f6c3ecd6dac1",
+      "sourceSha256": "f6c3ecd6dac135935a6b8b14b273ed2eb12c99f5cdc095b1848e7d55f3a2fb99",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.d0b8bf1118166de5f99b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 36,
+            "end": 87,
+            "exact": "적합한 대상의 이득과 고혈당·감염 등 위해를 평가하며 중증도·원인과 근거의 조건을 구별한다.",
+            "prefix": "응을 겨냥하므로 감염 제거와 다른 축이다. ",
+            "suffix": " 폐렴이라는 한 단어만으로 모든 환자에게 같"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.b.1059536008a9",
+      "sourceSha256": "1059536008a97e11e990647501508be7bf103b384d49257d2c8ec99322a0ab0f",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.b.9681be61bd1f",
+      "sourceSha256": "9681be61bd1fe878cbc2a95a7bc9c5186268eedcc93543dccfa1faf5c5ebfd1b",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.b.65bf498020f1",
+      "sourceSha256": "65bf498020f151f3e4da256b83e9ab3bff851843a27e415ba9ca03fbf212d521",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.3afdd2e5c53c9bf9413d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 67,
+            "end": 69,
+            "exact": "흉막",
+            "prefix": "흡수, 숙주 방어와 지속 흡인을 검토한다. ",
+            "suffix": " 감염과 농양·괴사, 폐색과 다른 병소는 감"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        },
+        {
+          "id": "ann.f89f1d3ad53be7bb3ffd",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 92,
+            "end": 98,
+            "exact": "감염원 조절",
+            "prefix": "막 감염과 농양·괴사, 폐색과 다른 병소는 ",
+            "suffix": "의 질문을 만든다. 심부전·색전·약물성 또는"
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        },
+        {
+          "id": "ann.2df83628e103c54d2977",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 109,
+            "end": 112,
+            "exact": "심부전",
+            "prefix": "다른 병소는 감염원 조절의 질문을 만든다. ",
+            "suffix": "·색전·약물성 또는 다른 비감염성 질환도 감"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.b.dc8aa89a45c1",
+      "sourceSha256": "dc8aa89a45c17ab239478975eabf1fabc661875a7a3761b0da39cd2d496eae49",
+      "sourceLengthUtf16": 191,
+      "annotations": [
+        {
+          "id": "ann.94bb84e29dfef674241f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 85,
+            "exact": "새 독성과 신장·간 변화도 감염의 진행과 구별한다.",
+            "prefix": " 연결이 설명되지 않았는지 찾을 수 있다. ",
+            "suffix": " 환자에게는 회복의 예상과 재평가가 필요한 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.p.extra0846.0",
+      "sourceSha256": "be6494f2d8bfd3e2322ff524ee00a47d0dc535d18397ef2def333464077964a8",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.cc6bfc5c77422a61d538",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 51,
+            "end": 121,
+            "exact": "일부 약물군에서는 유효 농도에 노출되는 시간이,다른 군에서는 전체 노출과 표적 농도의 관계가 중요한 평가 요소가 될 수 있다.",
+            "prefix": " 노출,조직 도달과 숙주 상태에 의존한다. ",
+            "suffix": " 혈중 수치가 적절해 보여도 실제 투여 누락"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.cap-treatment-response.p.extra0846.1",
+      "sourceSha256": "2f182b5883573da2fabc021351ea1688fc011c58a4bd03fb18020f1d1b946bcd",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    }
+  ]
+}

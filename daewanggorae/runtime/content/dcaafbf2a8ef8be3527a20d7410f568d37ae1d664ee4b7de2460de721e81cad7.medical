@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "clinical-reasoning.diagnosis.problem-representation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "clinical-reasoning.diagnosis.problem-representation.b.9378ed239f1a",
+      "sourceSha256": "9378ed239f1aa55a15ecbf64468feed7c7cace69c98803c50b9115bb22db4172",
+      "sourceLengthUtf16": 284,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-reasoning.diagnosis.problem-representation.b.dfad26080575",
+      "sourceSha256": "dfad26080575a929e4596e8efd61334ded32f8364c2631904d8d0a36aac474d8",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-reasoning.diagnosis.problem-representation.b.fc87e0a68c15",
+      "sourceSha256": "fc87e0a68c15d2ca8ae68ac92fb75f8441b338f1b0450efe6a5d791a38f2eb00",
+      "sourceLengthUtf16": 249,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-reasoning.diagnosis.problem-representation.b.e88a6b090aca",
+      "sourceSha256": "e88a6b090aca93d9b524355aff137354677dc221191553bdc623ad1e4c197c64",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-reasoning.diagnosis.problem-representation.b.45ab74708e29",
+      "sourceSha256": "45ab74708e292315caedecf6f6012708f1bc5c55257bd0e9dde0fa0ed91bacce",
+      "sourceLengthUtf16": 255,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-reasoning.diagnosis.problem-representation.b.183a63249611",
+      "sourceSha256": "183a63249611047288cf03949fb45ee5a774326465acfc46aa12208792118cf6",
+      "sourceLengthUtf16": 211,
+      "annotations": [
+        {
+          "id": "ann.56830fffe550f0e97b14",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 46,
+            "end": 103,
+            "exact": "당시 이용 가능했던 정보, 가설을 바꾼 근거, 중요한 대안의 처리, 후속 결과 확인까지 검토해야 한다.",
+            "prefix": "지만 보면 우연과 위험한 과정이 가려진다. ",
+            "suffix": " 오류를 개인의 지식 부족으로만 설명하면 인"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

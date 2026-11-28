@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.mucosal.iga-oral-tolerance",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.mucosal.iga-oral-tolerance.b.f32d88eef242",
+      "sourceSha256": "f32d88eef24246ecd798efe5d974e936c2e10109b5df5f04a5687ef49e3b1d6e",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.mucosal.iga-oral-tolerance.b.49c166285318",
+      "sourceSha256": "49c166285318839525221b41343c7f87f58489ed2c3d6669d20d98c197283fc5",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.mucosal.iga-oral-tolerance.b.f1fba5d827f9",
+      "sourceSha256": "f1fba5d827f91e889a24b52528f31cb109e1be41b1ee37d3d793838905823ac7",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.mucosal.iga-oral-tolerance.b.bda312ed62ff",
+      "sourceSha256": "bda312ed62fff6db12f2fec7a71326ad1ef2f069d69f71818cf769f75134675b",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.mucosal.iga-oral-tolerance.b.613babfc3bc2",
+      "sourceSha256": "613babfc3bc2b731f0f01380aa22a953cb6fad3611e0fb25a18789752ec171c7",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.mucosal.iga-oral-tolerance.b.d79ddd2a5a8e",
+      "sourceSha256": "d79ddd2a5a8e1c4d6cc636f3ad86d70c952be9a71d2d033f8c80814d4e832a03",
+      "sourceLengthUtf16": 167,
+      "annotations": [
+        {
+          "id": "ann.a21f11f449277af203a8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 134,
+            "end": 167,
+            "exact": "항체 생성량과 측정 농도, 단위시간 운반량은 구별해야 한다.",
+            "prefix": "과 시료 희석·채취 방법의 영향도 받는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.mucosal.iga-oral-tolerance.b.52b6ea92fd8d",
+      "sourceSha256": "52b6ea92fd8de69f85f245ec5754571b3cc835548617d0bc71e4a3369a500d1a",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.a91e6a01601332a262b6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 35,
+            "end": 39,
+            "exact": "항원제시",
+            "prefix": "생물에 대한 반응 조절에는 Treg와 국소 ",
+            "suffix": " 환경, 상피·기질 신호가 참여한다. 무해한"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.mucosal.iga-oral-tolerance.b.333ca5b09b65",
+      "sourceSha256": "333ca5b09b6599c44b44ddbdeefc3599dfe4d9de58418db04ea780fa27cded8a",
+      "sourceLengthUtf16": 211,
+      "annotations": [
+        {
+          "id": "ann.9495f4f10b1a81a61385",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 131,
+            "end": 211,
+            "exact": "정상 장관의 3D 표면은 큰 위치 문맥을 제공하지만 Peyer patch·상피·IgA 운반을 실제로 포함하지 않으므로 미세구조 도식과 구별한다.",
+            "prefix": "상피의 극성과 장벽 손상도 대조해야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

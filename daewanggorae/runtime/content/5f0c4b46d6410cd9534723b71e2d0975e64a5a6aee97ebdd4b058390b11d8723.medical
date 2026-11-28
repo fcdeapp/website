@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.shock.lactate-kinetics",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.757b02f07fc9",
+      "sourceSha256": "757b02f07fc9afacbf38ae00f55e34797b847a504c92932fd7f007d8bd1ca9b9",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.999c8516f575fa1452bc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 158,
+            "end": 181,
+            "exact": "정적인 농도와 단위시간의 흐름을 구별한다.",
+            "prefix": "상이라고 젖산 대사가 없다는 뜻은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.2f121b6eef58",
+      "sourceSha256": "2f121b6eef589fdc828245a37ce0a4dbe92aac601a36eedb5ea2203f0707db63",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.036b5dfdcb5a",
+      "sourceSha256": "036b5dfdcb5a57fba3f93a0a1d69adef92074508ff34fefe6e9bf359109b5200",
+      "sourceLengthUtf16": 151,
+      "annotations": [
+        {
+          "id": "ann.8d6ee2109d22fb350f44",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 28,
+            "exact": "산소 전달·이용이 제한되는 경우는 중요한 원인이다.",
+            "prefix": "",
+            "suffix": " 하지만 발작·근육 활동과 교감 자극, 일부"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.b1768e323816",
+      "sourceSha256": "b1768e323816004b17ad80674944723a65d3aae1268d2718d5b61a52fd695f13",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.9cb280354e2e",
+      "sourceSha256": "9cb280354e2eb1ae4c4fa32d94c46d4142f28300ccb7edf8b24f66b9e473ce24",
+      "sourceLengthUtf16": 173,
+      "annotations": [
+        {
+          "id": "ann.42fdc15d02387eb91f39",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 39,
+            "exact": "간은 젖산 처리의 중요한 장기이며 신장과 다른 조직도 이용에 참여한다.",
+            "prefix": "",
+            "suffix": " 혈류·세포 대사와 장기의 기능이 달라지면 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.f6f24f283ef7",
+      "sourceSha256": "f6f24f283ef70e9c0108477c06ab82e86e24611e166208ba40184d95de4249f2",
+      "sourceLengthUtf16": 165,
+      "annotations": [
+        {
+          "id": "ann.f05b623df67da0211277",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 24,
+            "end": 27,
+            "exact": "약동학",
+            "prefix": "농도를 연속 측정해 감소율을 계산하는 것과 ",
+            "suffix": "적 의미의 진정한 청소율을 측정하는 것은 다"
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        },
+        {
+          "id": "ann.c994cc60a2503a0040b7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 37,
+            "end": 40,
+            "exact": "청소율",
+            "prefix": "율을 계산하는 것과 약동학적 의미의 진정한 ",
+            "suffix": "을 측정하는 것은 다르다. 생성이 달라져도 "
+          },
+          "conceptId": "reader.term.52a8b75072525e18",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.b2cb2bfd9ff6",
+      "sourceSha256": "b2cb2bfd9ff6425024e219dc9aadf766f6b927b05b796b13a319fed84b8121fc",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.58abb457c101",
+      "sourceSha256": "58abb457c101e9cdc7fe6f54d8d1e10259e7d702ce94a0f79ca5458c8c9e802a",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.f18f3160071c",
+      "sourceSha256": "f18f3160071c57c80f11bb12b2ac41a1a1a82df6d44a751300a8233d0ae3eb41",
+      "sourceLengthUtf16": 164,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.lactate-kinetics.b.c581761045a1",
+      "sourceSha256": "c581761045a11d4fe768db6b70af12f5a77a0cd0b22222f0b28ad885754c6703",
+      "sourceLengthUtf16": 164,
+      "annotations": []
+    }
+  ]
+}

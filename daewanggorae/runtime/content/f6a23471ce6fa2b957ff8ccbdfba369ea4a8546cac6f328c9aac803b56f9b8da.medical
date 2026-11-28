@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.movement.tremor-dystonia",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.movement.tremor-dystonia.b.5fdab44a58af",
+      "sourceSha256": "5fdab44a58af1dae0019fa3f64530d570b4fecb20238962a1c5b30b977ee975a",
+      "sourceLengthUtf16": 505,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.movement.tremor-dystonia.b.4f6919d842fc",
+      "sourceSha256": "4f6919d842fc7099b2f6d1d65221457f3096977e0b865e21059f271083036a51",
+      "sourceLengthUtf16": 497,
+      "annotations": [
+        {
+          "id": "ann.d0e5f56edb21cc451374",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 47,
+            "exact": "안정떨림이 파킨슨병에서 중요한 단서라고 해서 안정떨림만으로 질환을 확정할 수는 없다.",
+            "prefix": "",
+            "suffix": " 자세·운동 떨림은 본태떨림, 생리적 떨림의"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.movement.tremor-dystonia.b.33e3a7264c90",
+      "sourceSha256": "33e3a7264c908b93173623399d2788be3b7962f586b7da87b61d90a99af5ec80",
+      "sourceLengthUtf16": 499,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.movement.tremor-dystonia.b.6efca0fff04c",
+      "sourceSha256": "6efca0fff04cc11ae8fbcfd03f933868adebfc054f6941052c652a150ba05c9d",
+      "sourceLengthUtf16": 506,
+      "annotations": [
+        {
+          "id": "ann.c0ae303bd9e91d7b3de7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 39,
+            "end": 43,
+            "exact": "파킨슨증",
+            "prefix": "있는 약물 뒤에는 급성 근긴장이상, 약물성 ",
+            "suffix": ", 정좌불능(akathisia), 지연성 이"
+          },
+          "conceptId": "reader.term.c5bf7eb2e1d54285",
+          "targetDocumentId": "neurology.movement.parkinson-syndrome"
+        },
+        {
+          "id": "ann.19b4218724f535a58064",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 427,
+            "end": 466,
+            "exact": "이때 시간적 선후는 중요한 단서지만 단독으로 인과를 증명하지는 않는다.",
+            "prefix": "정리하면 인과 가설을 명확히 할 수 있다. ",
+            "suffix": " 악화와 호전의 반복, 다른 설명과 알려진 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.movement.tremor-dystonia.b.b03cc6d6b0d1",
+      "sourceSha256": "b03cc6d6b0d195cd12fff0470dcedc9557ad08010cc50b53f53694ef54ddca35",
+      "sourceLengthUtf16": 504,
+      "annotations": [
+        {
+          "id": "ann.38a3ff9c3ab088d52ae3",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 298,
+            "end": 303,
+            "exact": "약물 조정",
+            "prefix": "가 중요하게 여기는 기능에 따라 달라진다. ",
+            "suffix": ", 선택적 근육 치료, 재활과 감각·운동 재"
+          },
+          "conceptId": "reader.term.4d94a87f27739d1c",
+          "targetDocumentId": "patient-safety.medication.reconciliation-systems"
+        }
+      ]
+    }
+  ]
+}

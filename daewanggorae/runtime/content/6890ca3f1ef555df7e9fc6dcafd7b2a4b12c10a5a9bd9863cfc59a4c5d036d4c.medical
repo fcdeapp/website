@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.imaging.coronary-ct",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.imaging.coronary-ct.b.9f5ab0e856b4",
+      "sourceSha256": "9f5ab0e856b44df98bf9bb762071d6b0164e52d8e7e562aa41ce1be478adebaf",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.imaging.coronary-ct.b.f97182e0622f",
+      "sourceSha256": "f97182e0622fa0ce16a12e0f869a8216e789461404081bd4e4caaa1793279d06",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.imaging.coronary-ct.b.1b2ea6543ec4",
+      "sourceSha256": "1b2ea6543ec438c2398b8e8452fda8731bcac274a3b682800a59e3b28ae27112",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.imaging.coronary-ct.b.19423a46ec99",
+      "sourceSha256": "19423a46ec99cd150a236ceec31568c9146419167930da2f656a552302941304",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.46f7384d8d29bbb76f23",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 47,
+            "exact": "판의 CT 감쇠와 형태는 정보를 주지만 개별 병변의 조직학을 완전히 확정하지 않는다.",
+            "prefix": "",
+            "suffix": " 낮은 감쇠를 보였다는 사실만으로 그 부분을"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.imaging.coronary-ct.b.a88cdc5a33ce",
+      "sourceSha256": "a88cdc5a33cec6543924b81b0b40e326685045232c74606e7d37f581c5c5e84e",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.imaging.coronary-ct.b.22eea8bf21d8",
+      "sourceSha256": "22eea8bf21d8e1114dc107d3002b9eee211e60f8cf7318875efdc3636c8d9aa5",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.a390545ae264d0d01221",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 96,
+            "end": 139,
+            "exact": "검사 결과에는 판독 가능한 구간과 제한, 추가 정보가 필요한 부분을 구분한다.",
+            "prefix": " 수 있지만 모든 한계를 없애지는 않는다. ",
+            "suffix": " 사진처럼 선명해 보인다는 인상과 진단 정확"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.imaging.coronary-ct.b.55befbc75e68",
+      "sourceSha256": "55befbc75e68f530e587e89acf5b378ada3705f4d7c64f9d857f07815156360c",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.imaging.coronary-ct.b.244f8aae3dc2",
+      "sourceSha256": "244f8aae3dc2ce327bee477fffdfeda8137e5c8caa48b625742147793375557e",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    }
+  ]
+}

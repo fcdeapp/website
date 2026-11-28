@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.valvular.primary-mitral-regurgitation",
+  "subjectId": "cardiology",
+  "chapterId": "valvular",
+  "title": {
+    "ko": "일차성 승모판 역류와 급성·만성 부담",
+    "en": "Primary Mitral Regurgitation and Acute Chronic Load"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.lo.01",
+      "text": "첨판·건삭 병변과 역류를 연결한다"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.lo.02",
+      "text": "급성 좌심방 압력 상승을 설명한다"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.lo.03",
+      "text": "총 박출률과 심근 기능을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.5ce1729aa201",
+      "type": "heading",
+      "level": 2,
+      "text": "닫힘 구조의 병변"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.870b13857162",
+      "type": "paragraph",
+      "markdown": "일차성 승모판 역류(primary mitral regurgitation)는 첨판과 건삭 등 판막 장치의 일차 병변이 역류의 중심 원인이 되는 상태다. 탈출과 파열, 감염성 손상과 다른 구조적 변화가 가능한 배경이다. 좌심실·심방의 재형성이 주된 원인인 이차성 역류와 구별하지만 두 성분이 공존할 수 있다. 병변이 어느 부위의 움직임을 어떻게 바꾸는지 기술하면 단순한 역류 유무보다 수선 가능성과 혈역학을 더 잘 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.thorax.heart.d585d4db"
+      ]
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.4db27501d72c",
+      "type": "paragraph",
+      "markdown": "수축기 혈액은 대동맥과 왼심방 두 방향으로 나갈 수 있다. 왼심실에서 계산한 총 박출량이 모두 전신 순환에 전달되는 것은 아니다. 역류의 양은 통로의 성격과 압력차, 수축기 중 지속 시간 및 부하에 따라 바뀐다. 예를 들어 같은 총량이라도 역류분율이 커지면 순전방량은 줄 수 있다. 총 박출률의 보존과 충분한 전방 유량, 정상 수축력은 서로 같은 평가 항목이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.6e3d97714955",
+      "type": "heading",
+      "level": 2,
+      "text": "급성과 만성의 차이"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.89c9afce9552",
+      "type": "paragraph",
+      "markdown": "급성 건삭이나 유두근 지지의 손상으로 큰 역류가 생기면 적응하지 못한 왼심방에 압력이 빠르게 오를 수 있다. 폐정맥과 폐순환의 압력 상승으로 급성 호흡곤란과 폐부종이 생기고 전방 유량이 낮아질 수 있다. 심잡음의 강도는 두 구획의 압력과 흐름, 시간에 따라 달라져 작은 소리로 심한 병변을 배제하지 못한다. 현재의 불안정과 원인, 기계적 손상을 신속하게 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.f3b66f68b9c9",
+      "type": "paragraph",
+      "markdown": "만성 역류에서는 왼심방과 심실이 커지며 증가한 용적을 처리할 수 있다. 이 적응은 증상을 늦출 수 있지만 심방세동과 심근 기능 변화, 폐순환 부담의 기질이 될 수 있다. 활동을 줄여 증상을 덜 느끼는 것과 순환이 정상인 것을 구별한다. 장기 추적에서는 용적과 수축기말 크기, 기능과 리듬의 변화를 함께 본다. 한 번의 높은 박출률을 영구적 안전의 근거로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.4aaf3e6f1408",
+      "type": "heading",
+      "level": 2,
+      "text": "역류의 정량과 구조"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.f3284f7df67c",
+      "type": "paragraph",
+      "markdown": "영상은 첨판의 분절과 움직임, 건삭과 고리 및 제트의 시작·방향을 평가한다. 편심성 제트는 벽을 따라 흐르면서 색상 면적이 실제 부담을 충분히 반영하지 않을 수 있다. 여러 제트와 시간에 따라 달라지는 통로도 단일 정량 가정을 어렵게 만든다. 색상 설정과 영상 창, 리듬과 혈압을 확인하며 형태·유량·심장방의 반응을 통합한다. 큰 색면이 곧 특정 원인의 확진이라는 해석은 피한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.08bd50048eab",
+      "type": "paragraph",
+      "markdown": "유효 역류구 면적과 역류량 등의 계산은 사용한 모형과 측정 입력의 품질에 의존한다. 유동 수렴이 완전한 반구가 아닐 수 있고, 수축기 전체에서 같은 통로와 속도가 유지되지 않을 수 있다. 순간 값을 시간 전체에 적용할 때 생기는 오차를 생각한다. CMR의 용적·유량 정보 등은 불일치에서 보완 자료가 될 수 있다. 서로 다른 방식의 수치가 왜 다를 수 있는지 설명한 뒤 임상적 중증도를 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.5a520a63ce8e",
+      "type": "heading",
+      "level": 2,
+      "text": "교정과 추적의 목표"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.35ea570b79df",
+      "type": "paragraph",
+      "markdown": "중재 선택에는 증상과 심실의 기능·크기, 해부학과 수선의 내구성 및 환자의 위험·선호를 통합한다. 수선과 교체, 경피적 접근은 모두 같은 구조와 같은 장기 결과를 갖는 선택지가 아니다. 경험 있는 팀에서 성공 가능성과 합병증, 향후 재중재와 항혈전 관리의 부담을 논의한다. 특정 판막의 중증도 숫자 하나만으로 모든 환자에게 동일한 기법을 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.b.d75df88ab214",
+      "type": "paragraph",
+      "markdown": "역류를 교정하면 왼심실이 낮은 압력의 출구로 일부를 내보내던 조건이 바뀐다. 이후 박출률이 낮아졌다는 관찰은 부하 변화와 기존 기능, 시술 관련 문제 및 시간 경과를 함께 평가해야 한다. 한 숫자만으로 새 심근손상이나 치료 실패를 확정하지 않는다. 잔여·재발 역류와 새 협착, 심실·심방의 회복과 리듬 및 실제 활동 능력을 추적한다. 구조적 성공과 환자에게 중요한 임상 결과를 각각 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.h.extra0842",
+      "type": "heading",
+      "level": 2,
+      "text": "총 박출률과 전신으로 전달된 양"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.p.extra0842.0",
+      "type": "paragraph",
+      "markdown": "승모판 역류에서는 심실 용적이 감소한 양이 모두 대동맥으로 전달된 것은 아니다. 이완기말 용적150mL, 수축기말 용적50mL이면 총 박출량은100mL, 총 박출률은 약66.7%다. 그중40mL가 좌심방으로 역류했다고 가정하면 대동맥 전방량은60mL다. 두 양은 같은 수축에서 동시에 성립하므로 박출률이 비교적 높다는 말과 전신에 전달되는 양이 충분하다는 말을 동일시하지 않는다."
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.p.extra0842.1",
+      "type": "paragraph",
+      "markdown": "역류구가 낮은 압력의 심방 쪽으로 열리는 것은 심실의 유출 조건도 바꾼다. 그래서 역류가 없는 심실에서 얻은 박출률의 의미를 그대로 적용하기 어렵다. 수술이나 중재로 역류가 줄어든 뒤에는 심실이 상대해야 하는 유출 조건이 달라진다. 치료 전후의 숫자를 비교할 때에는 새로운 수축 기능과 부하 변화가 함께 반영되어 있음을 고려한다."
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.table0842",
+      "type": "table",
+      "data": {
+        "title": "구조·혈류·심장 반응의 비교",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "일차 병변",
+            "첨판·건삭 등 구조의 문제"
+          ],
+          [
+            "급성 역류",
+            "심방 적응 부족·압력 상승"
+          ],
+          [
+            "총 박출률",
+            "대동맥량과 심방 역류량을 함께 포함"
+          ],
+          [
+            "전방량",
+            "전신으로 전달되는 양"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.diagram.mitral-forward-volume-0842",
+      "type": "diagram",
+      "diagramRef": "diagram.mitral-forward-volume-0842",
+      "path": "diagrams/diagram.mitral-forward-volume-0842.svg",
+      "alt": "심방 역류와 전방량의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.anatomy3d0842",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.thorax.heart.d585d4db"
+    },
+    {
+      "id": "cardiology.valvular.primary-mitral-regurgitation.limits0842",
+      "type": "clinicalPearl",
+      "markdown": "정상 판막과 심장방의 위치 관계를 확인한다. 협착·석회화·건삭 파열·역류 제트·판막 운동·환자별 수술 구조는 이 정적 정상 모델에 포함되지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/valvular/sections/cardiology.valvular.primary-mitral-regurgitation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.valvular.primary-mitral-regurgitation.001",
+    "question.cardiology.valvular.primary-mitral-regurgitation.002"
+  ],
+  "relatedLessons": [
+    "cardiology.valvular.mitral-stenosis-rhythm-thrombosis",
+    "cardiology.valvular.secondary-mitral-regurgitation"
+  ]
+}

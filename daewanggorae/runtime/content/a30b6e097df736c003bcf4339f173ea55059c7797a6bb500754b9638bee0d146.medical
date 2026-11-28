@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.hemodynamics.fibrinolysis-markers",
+  "subjectId": "pathology",
+  "chapterId": "hemodynamics",
+  "title": {
+    "ko": "섬유소용해와 분해 표지자의 해석",
+    "en": "Fibrinolysis and Interpretation of Degradation Markers"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.lo.01",
+      "text": "Plasmin 생성과 억제의 단계를 구별한다"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.lo.02",
+      "text": "D-dimer와 혈전 위치·원인을 분리한다"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.lo.03",
+      "text": "생성·제거의 수지와 검사 농도를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.866743c5e797",
+      "type": "heading",
+      "level": 2,
+      "text": "생성된 Fibrin을 제거하는 과정"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.cc28b41d359f",
+      "type": "paragraph",
+      "markdown": "섬유소용해(fibrinolysis)는 만들어진 fibrin을 분해하는 체계다. Plasminogen은 활성화되어 plasmin이 되고, plasmin은 fibrin의 분해에 관여한다. Tissue plasminogen activator(tPA) 등은 활성화의 단계에 작용한다. 활성화 물질, 전구체와 실제 분해 효소를 같은 물질로 혼동하지 않는다. 응고의 형성과 분해는 서로 연결되어 동시에 진행할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.7386ace0214c",
+      "type": "paragraph",
+      "markdown": "Fibrin 위에서의 반응과 혈중에서의 반응은 공간적 조건이 다르다. 분해가 지나치면 필요한 지혈 구조가 약해질 수 있고, 충분하지 않으면 형성된 구조가 지속될 수 있다. 실제 혈전의 경과에는 분해 외에 세포 유입·기질화·혈류의 변화도 참여한다. 분해 표지자 하나가 모든 제거와 장기 회복을 대표하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.d176d6ac23f4",
+      "type": "heading",
+      "level": 2,
+      "text": "억제는 서로 다른 단계에 작용한다"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.a3b1b9376a16",
+      "type": "paragraph",
+      "markdown": "Plasminogen activator inhibitor-1(PAI-1)은 활성화 단계의 조절에, α2-antiplasmin은 plasmin의 억제에 중요하다. 시작 효소를 제한하는 것과 이미 만들어진 분해 효소를 제한하는 것은 다른 개입이다. Thrombin-activatable fibrinolysis inhibitor(TAFI) 등도 fibrin 분해의 환경을 조절한다. 각각의 기능과 표적을 나누어야 응고와 용해 사이의 연결을 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.9189143bfbda",
+      "type": "paragraph",
+      "markdown": "응고를 억제하는 약물과 섬유소용해를 직접 촉진하는 치료도 구별한다. 항응고가 기존 모든 혈전을 즉시 녹였다는 뜻은 아니다. 반대로 분해를 제한하는 약물은 혈전의 모든 원인을 교정하는 치료가 아니다. 실제 치료는 적응증과 출혈·혈전 위험, 환자의 상태에 따른 별도의 근거를 필요로 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.131abea42313",
+      "type": "heading",
+      "level": 2,
+      "text": "D-dimer는 무엇의 결과인가"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.d603ee6122af",
+      "type": "paragraph",
+      "markdown": "D-dimer는 교차결합된 fibrin이 분해되는 과정과 관련된 산물이다. Fibrinogen과 fibrin의 다양한 분해산물 전체를 D-dimer 하나와 동일시하지 않는다. 교차결합 구조의 형성과 그 분해라는 순서가 있어야 표지자의 의미를 설명할 수 있다. 하지만 혈중 농도는 생성된 양뿐 아니라 분포·제거와 측정법의 영향을 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.9966a20debb3",
+      "type": "paragraph",
+      "markdown": "높은 결과는 특정 위치의 혈전을 직접 촬영한 결과가 아니다. 감염·염증, 수술과 다른 임상 상태에서도 증가할 수 있으므로 양성만으로 정맥혈전이나 폐색전을 확진하지 않는다. 음성의 해석 역시 사전확률과 검사 민감도·측정 시점, 적용한 진단 경로에 의존한다. 특정 절단값을 모든 검사법·환자군에 보편적으로 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.87fed7cacceb",
+      "type": "heading",
+      "level": 2,
+      "text": "농도와 생성률을 분리하는 모형"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.13e58590c555",
+      "type": "paragraph",
+      "markdown": "독립 한 구획 모형에서 일정 생성률을 P, 일차 제거상수를 k라 하면 dC/dt=P−kC다. 초기 C=0에서 C(t)=P/k×(1−exp(−kt))이며 정상상태는 P/k다. P=2일 때 k=1이면 최종2, k=0.5이면 최종4다. 생성률이 같아도 제거가 다르면 농도가 달라질 수 있음을 보여 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.b.4335ed629f76",
+      "type": "paragraph",
+      "markdown": "이 식의 C는 임의 단위의 지표로 실제 D-dimer 검사값과 질환 확률을 보정한 자료가 아니다. 혈전의 위치·크기와 치료량을 계산하지 않는다. 단일 구획·고정 생성·일차 제거라는 가정을 확인하고 시간별 접근과 최종 농도를 구별한다. 검사 표지자와 그 원인이 되는 생물학적 과정 사이에는 검증해야 할 단계가 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.table.0819",
+      "type": "table",
+      "data": {
+        "title": "표지자와 과정",
+        "columns": [
+          "관찰",
+          "구별"
+        ],
+        "rows": [
+          [
+            "D-dimer",
+            "교차결합 fibrin 분해 관련"
+          ],
+          [
+            "높은 농도",
+            "위치·원인 확진과 다름"
+          ],
+          [
+            "시간 변화",
+            "생성·분포·제거와 검사 맥락"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pathology.hemodynamics.fibrinolysis-markers.diagram.fibrin-marker-turnover-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.fibrin-marker-turnover-toy",
+      "path": "diagrams/diagram.fibrin-marker-turnover-toy.svg",
+      "alt": "생성과 제거의 가상 수지의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/hemodynamics/sections/pathology.hemodynamics.fibrinolysis-markers.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.hemodynamics.fibrinolysis-markers.001",
+    "question.pathology.hemodynamics.fibrinolysis-markers.002"
+  ]
+}

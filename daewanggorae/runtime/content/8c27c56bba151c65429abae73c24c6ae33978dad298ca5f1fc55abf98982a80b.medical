@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology",
+  "title": {
+    "ko": "면역학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "immunology.chapter.antigen",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/antigen/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.innate",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/innate/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.humoral",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/humoral/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.hypersensitivity",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/hypersensitivity/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.organization",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/organization/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.presentation",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/presentation/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.t-cells",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/t-cells/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.cytotoxicity",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/cytotoxicity/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.tolerance",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/tolerance/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.b-cells",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/b-cells/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.antibodies",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/antibodies/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.memory",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/memory/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.deficiency",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/deficiency/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.transplant",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/transplant/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.tumor",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/tumor/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.mucosal",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/mucosal/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.methods",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/methods/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.complexes",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/complexes/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.autoimmunity",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/autoimmunity/chapter.json"
+    },
+    {
+      "id": "immunology.chapter.therapy",
+      "path": "domains/04-immunity-infection/subjects/immunology/chapters/therapy/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "immunology.plan.001",
+    "immunology.plan.002",
+    "immunology.plan.003",
+    "immunology.plan.004",
+    "immunology.plan.005",
+    "immunology.plan.006",
+    "immunology.plan.007",
+    "immunology.antigen.presentation",
+    "immunology.innate.complement",
+    "immunology.humoral.germinal-center",
+    "immunology.hypersensitivity.mechanisms",
+    "immunology.organization.lymphoid-trafficking",
+    "immunology.innate.sensor-adaptor-networks",
+    "immunology.presentation.class-i-processing",
+    "immunology.presentation.class-ii-loading",
+    "immunology.presentation.cross-priming",
+    "immunology.t-cells.tcr-costimulation",
+    "immunology.t-cells.helper-differentiation",
+    "immunology.cytotoxicity.cd8-nk-effector",
+    "immunology.tolerance.thymic-selection",
+    "immunology.tolerance.peripheral-regulation",
+    "immunology.b-cells.development-receptor-editing",
+    "immunology.b-cells.aid-affinity-switch",
+    "immunology.antibodies.effector-fcrn",
+    "immunology.memory.vaccine-response-layers",
+    "immunology.deficiency.pattern-based-evaluation",
+    "immunology.transplant.allorecognition-pathways",
+    "immunology.tumor.immunoediting-escape",
+    "immunology.mucosal.iga-oral-tolerance",
+    "immunology.methods.flow-cytometry-counts",
+    "immunology.innate.complement-functional-tests",
+    "immunology.innate.complement-surface-regulation",
+    "immunology.complexes.clearance-deposition",
+    "immunology.hypersensitivity.ige-sensitization",
+    "immunology.hypersensitivity.eosinophil-late-phase",
+    "immunology.hypersensitivity.allergy-test-context",
+    "immunology.hypersensitivity.antibody-hemolysis-dat",
+    "immunology.hypersensitivity.receptor-autoantibodies",
+    "immunology.hypersensitivity.type-iii-local-systemic",
+    "immunology.hypersensitivity.contact-t-cell-response",
+    "immunology.hypersensitivity.drug-recognition-mechanisms",
+    "immunology.autoimmunity.triggers-epitope-spreading",
+    "immunology.autoimmunity.ana-pretest-probability",
+    "immunology.autoimmunity.anca-specificity",
+    "immunology.autoimmunity.renal-immunofluorescence",
+    "immunology.transplant.hla-antibody-assays",
+    "immunology.methods.immunoassay-interference",
+    "immunology.therapy.immunomodulation-targets",
+    "immunology.methods.biomarker-context-longitudinal"
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "colorectal-surgery.diverticular.wall-inflammation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.b.4a24ce4a53ea",
+      "sourceSha256": "4a24ce4a53ea19bc94f4021d35b5e0dbae01ef52cb0d7b8b29ece4595be9d1db",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.306296166253a7dce251",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 181,
+            "end": 225,
+            "exact": "게실이 있다는 해부학적 관찰과 통증·염증·출혈이 생겼다는 질환 상태를 구별한다.",
+            "prefix": "장운동·생활·숙주의 조건이 함께 작용한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.b.cfd3d1379517",
+      "sourceSha256": "cfd3d1379517904c82e9160dbf8af39a9a8200a25fee360e2ca4932a98cc5f98",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.b.4a829f5e967f",
+      "sourceSha256": "4a829f5e967fd1a9199ce327ad67621789a26eef52b58ff41d2ea22d9bb43f32",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.ce7b36c7f17b9e304b42",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 148,
+            "end": 205,
+            "exact": "출혈의 현재 속도와 관류·혈색소의 시간 변화를 평가하고 종양·허혈·염증·항문 등 다른 원인도 구별한다.",
+            "prefix": " 없다고 중요한 출혈이 아닌 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.b.1df8977c85e0",
+      "sourceSha256": "1df8977c85e065d60a573f1205ee49ba3639adc3026033297c0a1e56582480ef",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.e50ee4c3a8f8ac141dbd",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 54,
+            "end": 60,
+            "exact": "염증성장질환",
+            "prefix": " 모든 원인을 확정하지는 않는다. 결장암과 ",
+            "suffix": "·허혈성 장염, 충수·요로·부인과 질환 등이"
+          },
+          "conceptId": "reader.term.8e27ab0036683926",
+          "targetDocumentId": "gastroenterology.inflammation.ibd"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.b.af062f95c2d0",
+      "sourceSha256": "af062f95c2d032db5a1505bfcf3339648e05b5c776198b1f71632aa29f783642",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.b.71074d1746fc",
+      "sourceSha256": "71074d1746fc3807c8ea625e3d567f08ce7e0425bfa0497e6010f104ae67c085",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.b.4b1921d5a1df",
+      "sourceSha256": "4b1921d5a1df12cf275a46948d0d4b8b07409aed6de097bc72b813fe146561cb",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.17fa295cff633c7d4c92",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 118,
+            "end": 124,
+            "exact": "감염원 조절",
+            "prefix": "·면역저하의 경로를 구별한다. 약물·수액과 ",
+            "suffix": ", 추가 평가의 필요는 환자와 병변에 맞춰 "
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        },
+        {
+          "id": "ann.956eb94cd91d0c4916bb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 60,
+            "end": 110,
+            "exact": "안정적인 면역정상 비복잡 환자의 선택적 경로와 농양·전신 악화·면역저하의 경로를 구별한다.",
+            "prefix": "성을 평가하여 관리 장소와 치료를 정한다. ",
+            "suffix": " 약물·수액과 감염원 조절, 추가 평가의 필"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.b.1ae2449a4449",
+      "sourceSha256": "1ae2449a444936a8668498bddb45f356db469f77f96c1dfa869e3c9c9561bf26",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.7cd4ea06eac156c9fcc5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 54,
+            "end": 59,
+            "exact": "급성 염증",
+            "prefix": "심 소견을 바탕으로 결장 평가를 연결한다. ",
+            "suffix": "이 있을 때의 침습 검사와 회복기의 검사는 "
+          },
+          "conceptId": "reader.term.f2acf854a49eb98c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.supp.ef4ec0aae128",
+      "sourceSha256": "ef4ec0aae1280ba71dd1bae15d79ea84c9bce1b6bc01681bf8c80b99387784a1",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.diverticular.wall-inflammation.supp.3188b76c138e",
+      "sourceSha256": "3188b76c138e30c3e8571af57d7d7a63a12b337e44fdb7ecea8cbf4766bb64f5",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    }
+  ]
+}

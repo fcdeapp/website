@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.structure.peptidoglycan-assembly",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.structure.peptidoglycan-assembly.b.d1d39c53f344",
+      "sourceSha256": "d1d39c53f34436fc0199435ddd57692bac6920fa9d1a65340b5c2c067f5598eb",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.peptidoglycan-assembly.b.345df5cbfde3",
+      "sourceSha256": "345df5cbfde3850c2fe309dfc4967dce51cd2f778c92c8002880c146d798d48e",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.peptidoglycan-assembly.b.805817af2e58",
+      "sourceSha256": "805817af2e581f34ec730ef673d034d32d979779a2ce042958abaad7445ff3ec",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.peptidoglycan-assembly.b.153fa63d5b8e",
+      "sourceSha256": "153fa63d5b8e19459597207c7dd8e51ff4308cd7e1f66bf51af9b0796010b55d",
+      "sourceLengthUtf16": 234,
+      "annotations": [
+        {
+          "id": "ann.f093f324cb33278b4b2b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 132,
+            "end": 140,
+            "exact": "β-lactam",
+            "prefix": "포 신장과 분열에 다른 비중으로 참여한다. ",
+            "suffix": "은 관련 PBP의 활성을 방해하여 정상 가교"
+          },
+          "conceptId": "reader.term.fafbfe2ccab0afab",
+          "targetDocumentId": "systemic-pharmacology.antimicrobials.beta-lactams"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.peptidoglycan-assembly.b.30a1c7f7b75c",
+      "sourceSha256": "30a1c7f7b75cbe4889bcedce3b2e87c06489af2ed3a77a956a1445b0b7e87207",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.peptidoglycan-assembly.b.0950bf559727",
+      "sourceSha256": "0950bf5597273dc82b879d6dc874f80de8d25fa70f30738258972fb699b6adc6",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.peptidoglycan-assembly.b.0774dcc83d24",
+      "sourceSha256": "0774dcc83d24c7df09a3bd8429fd71b7a3058ed049be0dcba5459ae3d576570c",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.neuropathy.axonal-demyelinating",
+  "subjectId": "neurology",
+  "chapterId": "neuropathy",
+  "title": {
+    "ko": "말초신경병증의 분포와 전기생리",
+    "en": "Patterns and Electrophysiology of Peripheral Neuropathy"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.lo.01",
+      "text": "임상 분포와 섬유 종류로 국소화한다"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.lo.02",
+      "text": "축삭 손상과 탈수초의 전기생리 차이를 설명한다"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.lo.03",
+      "text": "복합근육활동전위의 한계를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.01581e463f56",
+      "type": "heading",
+      "level": 2,
+      "text": "분포가 알려 주는 국소화"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.dd16706c3dfe",
+      "type": "paragraph",
+      "markdown": "말초신경병증(peripheral neuropathy)은 감각·운동·자율신경 기능의 다양한 조합으로 나타난다. 발끝에서 시작하여 양측 대칭으로 올라오는 길이 의존 양상은 긴 축삭의 취약성을 생각하게 하지만 모든 다발신경병증이 같은 분포를 보이지는 않는다. 특정 말초신경 영역, 신경뿌리 분포, 여러 개의 떨어진 신경 영역을 구별하면 감별진단의 출발점이 달라진다. 좌우 대칭 여부, 근위부와 원위부의 차이, 통증과 감각 소실, 반사의 변화, 진행 속도를 함께 기술한다.\n굵은 유수섬유가 손상되면 진동·위치감각과 반사가 영향을 받을 수 있고, 가는 섬유의 장애에서는 통각·온도와 자율신경 증상이 두드러질 수 있다. 실제 질환에서는 이 구분이 겹친다. 신경전도검사가 비교적 정상이어도 작은 섬유 기능 이상이 배제되지 않는 이유는 검사에서 주로 측정하는 섬유와 실제 증상의 발생 부위가 다를 수 있기 때문이다. 검사 결과가 정상이라는 말에는 어떤 신경과 어떤 조건을 측정했는지가 반드시 따라야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.c3bafb407f01",
+      "type": "heading",
+      "level": 2,
+      "text": "축삭과 수초의 역할"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.81a068f82f9b",
+      "type": "paragraph",
+      "markdown": "축삭(axon)은 활동전위를 전달하는 세포 구조이고 수초(myelin)는 전류의 누설과 막의 충전 특성을 바꾸어 빠른 전도를 돕는다. 축삭 소실에서는 자극에 동원되는 운동단위나 감각 축삭 수가 줄어 기록 진폭이 낮아질 수 있다. 탈수초에서는 전도 지연, 속도 감소, 시간적 분산과 전도 차단 같은 양상을 검토한다. 그러나 진폭과 속도를 각각 한 병리의 전용 표지처럼 해석해서는 안 된다. 심한 축삭 손상, 재생, 온도와 기술적 조건이 여러 측정값에 함께 영향을 줄 수 있다.\n운동신경전도에서는 신경을 자극한 뒤 근육에서 복합근육활동전위(compound muscle action potential, CMAP)를 기록한다. 이는 단일 축삭의 활동전위가 아니라 여러 근섬유 전기 반응이 겹친 결과다. 근육과 신경근접합부의 상태, 기록 전극의 위치, 충분한 자극 여부가 진폭을 바꾼다. 감각신경활동전위(sensory nerve action potential, SNAP)는 다른 기록 대상을 가지므로 운동검사와 같은 원리로 모든 상황을 해석할 수는 없다. 임상 국소화와 각 검사의 해부학적 범위를 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.6e0f10ee4e8d",
+      "type": "heading",
+      "level": 2,
+      "text": "근위부와 원위부 자극의 비교"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.b7031a2473ab",
+      "type": "paragraph",
+      "markdown": "같은 신경을 두 지점에서 자극하면 공통 말단 구간의 지연을 일부 상쇄하여 그 사이 구간의 전도 특성을 추정할 수 있다. 거리를 잠복기 차이로 나누는 계산은 단위 변환이 중요하고, 거리 측정과 시작점 판독 오류가 결과에 영향을 준다. 관절 자세에 따른 신경 길이 변화와 충분한 피부 온도도 확인한다. 한 구간의 속도가 느리다는 결과만으로 모든 말초신경의 탈수초성 질환을 확정할 수 없으며, 여러 신경과 분절의 분포가 중요하다.\n가상 기록에서 원위부 CMAP 진폭이 12mV, 근위부가 7.2mV라면 원위부를 기준으로 진폭 감소는 40%다. 이것은 수학적인 차이를 표현할 뿐 곧바로 전도 차단의 확정 기준이 되지 않는다. 반응의 지속시간과 면적, 시간적 분산, 위상 상쇄, 자극의 충분성과 해부학적 변이를 함께 확인해야 한다. 서로 다른 도착 시점의 근섬유 반응이 겹치면 실제 동원 수 변화 없이도 꼭대기 진폭이 달라질 수 있다. 따라서 진폭의 비율과 생리적 차단을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.beab3c246b99",
+      "type": "heading",
+      "level": 2,
+      "text": "원인과 검사 선택"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.14e06f74b60d",
+      "type": "paragraph",
+      "markdown": "당뇨병, 영양 결핍, 독성·약물, 면역매개 질환과 유전성 질환 등 다양한 원인이 말초신경에 영향을 준다. 원인 검사는 모든 환자에게 같은 목록을 적용하기보다 분포·속도·전신 증상과 치료 가능한 원인을 고려하여 선택한다. 급격한 진행, 뚜렷한 비대칭, 심한 자율신경 이상, 근위부 약화나 전신 염증 소견은 단순한 만성 길이 의존 병증이라는 가설을 재검토하게 한다. 한 가지 위험요인이 존재해도 새로운 증상을 모두 그 원인에 귀속하지 않는다.\n침근전도(needle electromyography)는 운동단위와 근섬유의 전기 활동을 평가하여 신경원성 변화와 근병증의 감별에 도움을 준다. 탈신경과 재지배 소견은 발생 시기와 표본 근육에 따라 다르므로 증상 직후 정상이라는 이유로 모든 축삭 손상을 배제할 수 없다. 작은 섬유나 자율신경 평가, 유전 검사, 영상과 조직 검사는 각기 다른 질문에 답한다. 검사의 이상 여부보다 그 결과가 현재 국소화와 원인 가설을 지지하는지, 치료 결정을 바꾸는지를 먼저 묻는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.938357d4a5e2",
+      "type": "heading",
+      "level": 2,
+      "text": "기능과 추적 평가"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.b.5b7b8b1e36cb",
+      "type": "paragraph",
+      "markdown": "감각 소실이 있는 환자에서는 통증 강도만으로 손상 정도를 평가하면 위험을 놓칠 수 있다. 통증이 적어도 발의 손상과 화상, 균형 장애가 생길 수 있다. 발의 피부와 신발, 관절 위치감각, 보행과 낙상을 함께 평가한다. 통증 치료는 신경 손상의 원인 치료와 구별하며, 진통 효과가 생겨도 감각 보호 기능이 곧바로 회복되는 것은 아니다. 근력과 보행 보조, 일상 활동의 조정은 회복과 안전에 별도의 역할을 가진다.\n추적에서는 같은 조건의 진찰과 기능 목표를 비교하고, 전기생리의 수치 변화가 임상 변화와 일치하는지 살핀다. 진폭이 약간 달라졌다는 사실만으로 축삭 재생이나 치료 실패를 단정하지 않는다. 온도와 전극, 측정 시점의 차이도 검토한다. 정상 척수 모형은 중추와 말초의 위치 관계를 이해하는 배경으로 사용할 수 있지만, 실제 말초신경 파일이 없는 구조를 대신 표시해서는 안 된다. 축삭·수초 단면과 전기 파형은 별도의 개념도와 가상 자료로 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.table0853",
+      "type": "table",
+      "data": {
+        "title": "관찰 자료와 확인할 조건",
+        "columns": [
+          "항목",
+          "자료·평가 범위"
+        ],
+        "rows": [
+          [
+            "원위부 CMAP",
+            "12mV"
+          ],
+          [
+            "근위부 CMAP",
+            "7.2mV"
+          ],
+          [
+            "기록",
+            "같은 신경·같은 근육의 가상 자료"
+          ],
+          [
+            "미제공",
+            "면적·지속시간·자극 충분성·온도·해부 변이"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.diagram.synthetic-distal-proximal-cmap-0853",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-distal-proximal-cmap-0853",
+      "path": "diagrams/diagram.synthetic-distal-proximal-cmap-0853.svg",
+      "alt": "가상 원위·근위 CMAP 진폭의 독립 계산 곡선"
+    },
+    {
+      "id": "neurology.neuropathy.axonal-demyelinating.comparison0853",
+      "type": "table",
+      "data": {
+        "title": "축삭·수초 장애를 해석하는 여러 변수",
+        "columns": [
+          "변수",
+          "축삭 손상에서 검토",
+          "탈수초에서 검토",
+          "해석의 제한"
+        ],
+        "rows": [
+          [
+            "진폭",
+            "동원되는 축삭·근섬유 반응 감소 가능",
+            "차단·분산으로 감소할 수 있음",
+            "꼭대기 진폭은 면적·지속시간과 동일한 정보가 아님"
+          ],
+          [
+            "전도속도·잠복기",
+            "심한 손상·선택적 섬유 소실과 다른 조건 고려",
+            "지연과 속도 저하의 분포·정도 검토",
+            "온도·거리·시작점과 여러 신경의 기준 필요"
+          ],
+          [
+            "분산·근위/원위 비교",
+            "동반 변화와 기술 조건 확인",
+            "시간적 분산·전도 차단의 구분",
+            "위상 상쇄·불충분 자극·해부 변이가 진폭을 바꿈"
+          ],
+          [
+            "침근전도",
+            "탈신경·재지배와 운동단위 동원 양상",
+            "축삭 손상의 동반 여부도 검토",
+            "검사 시점과 표본 근육의 범위가 중요"
+          ],
+          [
+            "임상 연결",
+            "길이 의존·비대칭 등 분포와 원인",
+            "급성·만성·재발 경과와 근위부 기능",
+            "한 지표로 모든 원인과 치료를 결정하지 않음"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/neuropathy/sections/neurology.neuropathy.axonal-demyelinating.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.neuropathy.axonal-demyelinating.001",
+    "question.neurology.neuropathy.axonal-demyelinating.002"
+  ],
+  "relatedLessons": [
+    "neurology.neuropathy.acute-inflammatory",
+    "neurology.motor-neuron.muscle-differential"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience.nmj.release-safety-factor",
+  "subjectId": "neuroscience",
+  "chapterId": "nmj",
+  "title": {
+    "ko": "신경근접합부의 양자 방출과 안전여유",
+    "en": "Quantal Release and Safety Factor at the Neuromuscular Junction"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroscience.nmj.release-safety-factor.lo.01",
+      "text": "신경·종판·근육 활동전위의 단계를 구별한다"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.lo.02",
+      "text": "양자 방출과 안전여유를 연결한다"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.lo.03",
+      "text": "시냅스전·후 이상과 반복 반응을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.6322e745a71b",
+      "type": "heading",
+      "level": 2,
+      "text": "신경 신호가 근육에 도달하는 단계"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.dad3ba9466a1",
+      "type": "paragraph",
+      "markdown": "신경근접합부(neuromuscular junction, NMJ)는 운동신경 말단·시냅스 틈과 근육의 운동종판이 이루는 특수 접합부다. 신경 활동전위가 말단에 도달하면 전압개폐성 Ca²⁺ 통로를 통한 유입이 소포 융합과 아세틸콜린(acetylcholine, ACh) 방출에 연결된다. 말단의 전기 신호와 소포 방출, 근육막의 반응은 같은 사건이 아니라 이어지는 단계다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.ccf97824a9a7",
+      "type": "paragraph",
+      "markdown": "방출된 ACh는 근육형 니코틴성 수용체를 열어 종판 전류와 종판전위(endplate potential, EPP)를 만든다. 충분한 탈분극이 주변 근육막의 전압개폐성 Na⁺ 통로를 활성화하면 근육 활동전위가 발생한다. 이후 흥분-수축 연결과 세포내 Ca²⁺ 조절이 힘을 만든다. 종판전위의 크기와 최종 근육 활동전위·수축력을 하나의 수치로 합치지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.2deb5c05a407",
+      "type": "heading",
+      "level": 2,
+      "text": "소포 한 개와 여러 방출 자리"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.a1f6b17e5471",
+      "type": "paragraph",
+      "markdown": "작은 소포의 방출은 양자(quantal) 단위의 전달을 이해하는 출발점이다. 자발적으로 나타나는 작은 종판 반응과 신경 자극 뒤 많은 소포가 참여하는 반응을 구별한다. 소포 안의 전달물질량·수용체와 기록 조건은 한 양자의 관찰 크기에 영향을 준다. 평균 종판 반응이 같아도 방출 개수와 양자당 반응의 조합은 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.e4a994d8c9e8",
+      "type": "paragraph",
+      "markdown": "가상 모형에서 독립적인 방출 자리 n개가 각각 확률 p로 방출하면 평균 개수는 np이고 모두 실패할 확률은 (1−p)ⁿ이다. 실제 접합부는 자리의 동일성·독립성과 방출 후 보충, Ca²⁺의 시간 변화가 이 가정과 다를 수 있다. 수학 모형은 방출 가능성과 변동을 이해하는 도구이며 실제 환자의 근력과 질환 확률을 직접 계산하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.59546fe8cea9",
+      "type": "heading",
+      "level": 2,
+      "text": "종판의 구조가 주는 여유"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.b55eb6562d6e",
+      "type": "paragraph",
+      "markdown": "정상 전달에서는 종판의 탈분극이 근육 활동전위에 필요한 수준을 넘는 여유를 가질 수 있다. 이 안전여유(safety factor)는 신경 자극이 근육의 반응으로 이어지는 신뢰성과 관련된다. 소포 방출량뿐 아니라 수용체의 밀도·배치, 종판 주름과 근육막 통로의 공간 관계도 중요하다. 모든 근육에서 같은 고정 배수의 여유가 있다고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.d269eff397ea",
+      "type": "paragraph",
+      "markdown": "Agrin-LRP4-MuSK 신호와 rapsyn 등은 수용체의 군집과 접합부 조직화에 관여한다. AChR와 이 조직화 경로의 이상은 전달의 효율을 바꿀 수 있다. 정상 수용체 수와 조직 배치, 개방 확률과 전달물질의 분포는 서로 다른 변수다. 수용체 하나의 친화도만으로 접합부의 전체 성능을 설명하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.dcb90ca7f2b1",
+      "type": "heading",
+      "level": 2,
+      "text": "반복 자극과 회복"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.5df194f4f441",
+      "type": "paragraph",
+      "markdown": "반복 자극에서는 말단의 잔류 Ca²⁺, 소포의 사용과 보충, 근육막의 반응 조건이 함께 변한다. 자극 빈도와 휴식·운동 전후 조건에 따라 감소 또는 촉진이 관찰될 수 있다. 한 번의 자극에 반응했다는 사실이 모든 반복 활동에서도 충분한 여유가 있다는 뜻은 아니다. 반응의 크기·시간과 검사 조건을 같이 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.2a48bb761db0",
+      "type": "paragraph",
+      "markdown": "시냅스후 기능이 줄어든 상황과 시냅스전 방출이 제한된 상황은 비슷한 약화를 보여도 전기생리·항체·임상 양상이 다를 수 있다. 특정 자극 패턴만으로 모든 원인을 확정하지 않는다. 근육과 신경의 질환·온도·약물과 기술적 요인을 함께 고려한다. 호흡·삼킴의 위해는 기전의 최종 분류를 기다리지 않고 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.09b0de31a4b8",
+      "type": "heading",
+      "level": 2,
+      "text": "전달 종료와 임상 연결"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.8056a9c63891",
+      "type": "paragraph",
+      "markdown": "ACh의 분해와 확산은 신호의 시간 경과를 제한한다. 콜린에스터레이스 억제는 틈의 ACh 작용을 늘릴 수 있지만 소실된 모든 구조와 자가면역 원인을 직접 복원하는 것은 아니다. 독성·면역·유전과 약물에 의한 이상은 표적 단계가 다르다. 기전이 비슷한 약화로 표현된다는 이유로 같은 치료를 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.b.e103e95d6fa3",
+      "type": "paragraph",
+      "markdown": "정상 골격근의 거시 모델은 근육의 위치와 기능을 학습하게 하지만 종판·소포·수용체와 반복 전달을 직접 보여주지 않는다. 미세 구조와 동적 기능은 별도의 연결 도식·그래프로 표현한다. 임상에서는 증상 분포와 변동·진찰, 항체와 전기생리를 통합하여 어느 단계에 문제가 있는지 가설화한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.table0853",
+      "type": "table",
+      "data": {
+        "title": "관찰 자료와 확인할 조건",
+        "columns": [
+          "항목",
+          "자료·평가 범위"
+        ],
+        "rows": [
+          [
+            "운동신경 입력",
+            "같은 자극을 반복"
+          ],
+          [
+            "말단 Ca²⁺ 유입",
+            "조건 A에서 감소"
+          ],
+          [
+            "단일 소포의 내용",
+            "두 조건에서 같다고 가정"
+          ],
+          [
+            "관찰",
+            "일부 근섬유 반응의 탈락"
+          ],
+          [
+            "대조",
+            "축삭의 자극 도달은 유지"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.diagram.independent-release-zero-0853",
+      "type": "diagram",
+      "diagramRef": "diagram.independent-release-zero-0853",
+      "path": "diagrams/diagram.independent-release-zero-0853.svg",
+      "alt": "독립 방출 모형의 무방출 확률의 독립 계산 곡선"
+    },
+    {
+      "id": "neuroscience.nmj.release-safety-factor.diagram.nmj-safety-factors-0853",
+      "type": "diagram",
+      "diagramRef": "diagram.nmj-safety-factors-0853",
+      "path": "diagrams/diagram.nmj-safety-factors-0853.svg",
+      "alt": "접합부 전달의 여러 결정 요인"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/nmj/sections/neuroscience.nmj.release-safety-factor.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroscience.nmj.release-safety-factor.001",
+    "question.neuroscience.nmj.release-safety-factor.002"
+  ],
+  "relatedLessons": [
+    "neuroscience.motor-unit.recruitment-fatigue",
+    "neurology.nmj.myasthenia-lambert-eaton"
+  ]
+}

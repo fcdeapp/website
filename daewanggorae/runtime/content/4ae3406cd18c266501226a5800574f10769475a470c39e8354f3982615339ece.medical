@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "rheumatology.joints.inflammatory-patterns",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "rheumatology.joints.inflammatory-patterns.b.aa90532c6248",
+      "sourceSha256": "aa90532c6248add1fe06e12ac61f206d49cf58cfd97b966a49517cea9a3beaf7",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "rheumatology.joints.inflammatory-patterns.b.3d48cfc37d7a",
+      "sourceSha256": "3d48cfc37d7af81c12608d391bd0135f240e268ceb5c862e8a6db4f249d660ba",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "rheumatology.joints.inflammatory-patterns.b.a8f71398e06a",
+      "sourceSha256": "a8f71398e06a71f17ea31d6b350388c6f0d592605ee514b8fa8959297f0e42c7",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "rheumatology.joints.inflammatory-patterns.b.fce8f8f5ad0f",
+      "sourceSha256": "fce8f8f5ad0fa9b5fba1af673f007187aede1ab5220f13a58fc39ef1ee6dcc93",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.034727adeb22a6bf67fa",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 76,
+            "end": 119,
+            "exact": "감염 전후의 시간 관계와 성접촉, 여행과 직업·약물력도 상황에 따라 중요하다.",
+            "prefix": "은 관절 외 질환 범위를 평가하는 단서다. ",
+            "suffix": " 한 소견이 특정 질환에 흔하더라도 전체 증"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "rheumatology.joints.inflammatory-patterns.b.d997abafafe7",
+      "sourceSha256": "d997abafafe73ac6f4522b0d68845831466f599ed1f190305db8e45b4b8e9d84",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "rheumatology.joints.inflammatory-patterns.b.cb48aca49c48",
+      "sourceSha256": "cb48aca49c4849f22e1f26ddd847825043ee5067d101b4dd615f15a05f5993c0",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "rheumatology.joints.inflammatory-patterns.b.cec2baa6701b",
+      "sourceSha256": "cec2baa6701bcab5c6f9f160d47594c159b5710207c72e469936a8c688a371e5",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "rheumatology.joints.inflammatory-patterns.b.888da1a9c2d0",
+      "sourceSha256": "888da1a9c2d051e375127d075de6a8b2058a231f3fdabf5b0b57dc680cd68d8a",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "rheumatology.joints.inflammatory-patterns.b.534899f15b8f",
+      "sourceSha256": "534899f15b8ff74a3565cd83ebf083ea4c47573af2586eca19fa85ca5aa56647",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.994e9b1d8df0efe187a2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 100,
+            "end": 105,
+            "exact": "만성 염증",
+            "prefix": "로 적용하면 원인 치료가 지연될 수 있다. ",
+            "suffix": "성 질환에서는 질환조절약물과 동반질환 관리,"
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    }
+  ]
+}

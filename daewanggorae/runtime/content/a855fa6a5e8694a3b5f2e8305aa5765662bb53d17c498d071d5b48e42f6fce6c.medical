@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.rna-silencing-surveillance-pairs",
+  "lessonId": "molecular-biology.rna.stability-silencing",
+  "title": "RNA 수준 조절의 세 연결",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "miRNA·Argonaute 표적 인식",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "번역 억제·RNA 불안정화",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "꼬리 단축·캡 제거",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "RNA 분해 경로 연결",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "조기 종결의 번역 맥락",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "NMD 가능성 평가",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.rna-silencing-surveillance-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "표적·상태 의존",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.rna-silencing-surveillance-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "대표적 소실 과정",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.rna-silencing-surveillance-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "단백질분해와구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "일치서열이나넌센스변이하나만으로모든표적의효과·제거분율을확정하지않는다."
+  ],
+  "sourceImageUsed": false
+}

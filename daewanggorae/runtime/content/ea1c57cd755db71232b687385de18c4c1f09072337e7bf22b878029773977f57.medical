@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "colorectal-surgery.anorectal.perianal-crohn",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.b.d22916de95f7",
+      "sourceSha256": "d22916de95f7edaa5448d9121bc83b5878b4717682ca896699fa2e83383d65cc",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.fd476d5e31c12ca2c2b6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 18,
+            "end": 31,
+            "exact": "Crohn disease",
+            "prefix": "항문주위 크론병(perianal ",
+            "suffix": ")은 누공과 농양뿐 아니라 열상·궤양·협착과"
+          },
+          "conceptId": "reader.term.e3bba5256033da1f",
+          "targetDocumentId": "gastroenterology.inflammation.ibd"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.b.4609a27f69bd",
+      "sourceSha256": "4609a27f69bdcde41bb5bc6b1ae51336e1fd257feb5e202345348874b0aabd04",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.b.5ed39523f3c4",
+      "sourceSha256": "5ed39523f3c41d75d95232cb721518846cba4528abc380804a6b3d47c36a79e5",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.f797c63aa951b9703a78",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 20,
+            "end": 26,
+            "exact": "감염원 조절",
+            "prefix": "통제되지 않은 농양이 있으면 배액과 ",
+            "suffix": "이 우선적인 과제가 된다. 염증 억제 약물이"
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.b.4dbb465ad7ec",
+      "sourceSha256": "4dbb465ad7ec45bc3d525bf278d501c044673a443e4f9c2010e3b45c930f7c5a",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.b.168420983cb3",
+      "sourceSha256": "168420983cb3f0b7d09554ff4a43a6f59aa3765b6b49f60896494a5c891ab6de",
+      "sourceLengthUtf16": 158,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.b.c6540d82bde6",
+      "sourceSha256": "c6540d82bde67e7e30152471128c4c0cfd989ef806a37ee80f42517813fab51e",
+      "sourceLengthUtf16": 197,
+      "annotations": [
+        {
+          "id": "ann.221273edb52d376d6634",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 137,
+            "end": 142,
+            "exact": "약물 조정",
+            "prefix": "기계적 문제·농양·협착과 지속 점막 염증은 ",
+            "suffix": "만으로 해결되지 않을 수 있다. 치료의 목표"
+          },
+          "conceptId": "reader.term.4d94a87f27739d1c",
+          "targetDocumentId": "patient-safety.medication.reconciliation-systems"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.b.7312827713e0",
+      "sourceSha256": "7312827713e04265e32a0f14ea615abe7041f2cffcf35c847c2fcdd197b0f494",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.b.cb3a7e317a6d",
+      "sourceSha256": "cb3a7e317a6d0de45bf84508451684620b07217d99b3d8d876354e84a956e016",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.supp.78362691ad46",
+      "sourceSha256": "78362691ad46223114226e618bf716d0f3d258b11853f37630660664f02eabef",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.67e014197f3e8a12351f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 98,
+            "exact": "염증성 부종과 반흔의 고정 협착, 드물게 다른 병변을 구별해야 치료 목적을 정할 수 있다.",
+            "prefix": " 배변을 피하거나 식사를 제한할 수 있다. ",
+            "suffix": " 누공의 배출만 줄었더라도 상류 통과 장애와"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.perianal-crohn.supp.472265ac0fd4",
+      "sourceSha256": "472265ac0fd402d926b8136b7d8929df91c53f574cede58696ece6dbaea52b1f",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    }
+  ]
+}

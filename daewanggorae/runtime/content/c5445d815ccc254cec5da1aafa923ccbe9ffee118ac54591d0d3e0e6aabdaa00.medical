@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.cardiovascular.hemodynamics-resistance",
+  "subjectId": "physiology",
+  "chapterId": "cardiovascular",
+  "title": {
+    "ko": "혈류·저항·직렬과 병렬 순환의 해석",
+    "en": "Flow, Resistance, and Vascular Networks"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.lo.01",
+      "text": "압력·압력차·유량·속도를 구별한다"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.lo.02",
+      "text": "직렬·병렬 저항의 수지를 계산한다"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.lo.03",
+      "text": "전신 혈류와 장기별 조절 및 단순 모형의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.3113e55c0d31",
+      "type": "heading",
+      "level": 2,
+      "text": "압력 자체와 흐름을 만드는 압력차"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.794a2ae13a87",
+      "type": "paragraph",
+      "markdown": "혈액의 유량(flow)은 단위 시간에 특정 단면을 통과하는 부피이고, 혈류 속도(velocity)는 입자나 혈액이 이동하는 거리의 시간 변화이다. 유량이 같아도 단면적이 넓으면 평균 속도는 낮아질 수 있다. 단순한 비압축성 연속 흐름에서 Q=vA로 표현하는 이유이다. 한 모세혈관의 단면적은 작지만 수많은 모세혈관의 총 단면적은 크므로, 개별 혈관 지름만으로 그 구간 전체의 평균 이동 속도를 판단할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.91a20545f4e3",
+      "type": "paragraph",
+      "markdown": "흐름의 구동력은 두 지점의 압력차이다. 입구압이100 mmHg이고 출구압이10 mmHg인 경우와 입구압이120이고 출구압이30인 경우의 압력차는 모두90 mmHg이다. 저항을 같게 둔 선형 모형에서는 유량이 같다. 그러나 두 상황에서 혈관의 실제 변형·여과·심장 부담까지 같다는 뜻은 아니다. 유량 방정식의 입력인 압력차와 조직이 경험하는 절대 압력 및 벽 안팎의 압력차를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.5a35677bd6b7",
+      "type": "heading",
+      "level": 2,
+      "text": "저항과 단위"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.e8fb6586a1bb",
+      "type": "paragraph",
+      "markdown": "선형적인 평균 흐름에서는 Q=ΔP/R로 유량과 저항을 연결할 수 있다. 압력차가 mmHg, 유량이 L/min이면 저항은 mmHg·min/L이다. 같은 관계를 다른 단위로 표현할 수 있지만 환산을 하지 않고 수치만 비교해서는 안 된다. 저항이20 mmHg·min/L이고 ΔP가100 mmHg이면 유량은5 L/min이다. 이것은 제시한 모형의 계산이며 정상 사람 전체의 고정 저항이나 심박출량을 정의한 값은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.03b4351201b2",
+      "type": "paragraph",
+      "markdown": "Poiseuille 관계는 강체 원통·층류·일정 점도 등 제한된 조건에서 반지름의 네제곱 효과를 보여 준다. 실제 혈액은 세포 성분을 포함하고 작은 혈관에서 유효 점도와 세포 분포가 달라질 수 있으며 혈관은 압력·긴장에 따라 변형된다. 따라서 한 반지름을 측정하여 생체 전체 저항을 오차 없이 계산하는 공식으로 사용하지 않는다. 모형은 어느 변수가 어느 방향으로 영향을 주는지 이해하는 도구이며 적용 조건을 함께 제시해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.8983496ef121",
+      "type": "heading",
+      "level": 2,
+      "text": "직렬 연결의 압력 수지"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.7b84d49cbb7f",
+      "type": "paragraph",
+      "markdown": "직렬로 연결된 구간에서는 중간에 분지가 없고 정상상태라면 같은 유량이 각 구간을 통과한다. 전체 압력차는 각 구간의 압력차 합이고 전체 저항은 R1+R2+…이다. R1=10, R2=20 mmHg·min/L이고 전체 ΔP=90 mmHg이면 유량은3 L/min이다. 각 압력강하는30과60 mmHg이다. 같은 유량에서도 저항이 큰 구간에서 더 큰 압력강하가 생긴다는 사실을 수지로 확인할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.1a1a2e0673fe",
+      "type": "paragraph",
+      "markdown": "전신 순환의 동맥·세동맥·모세혈관·정맥을 따라 평균 압력이 내려가는 현상은 이러한 구간별 압력강하와 연결된다. 다만 모든 구간을 하나의 고정된 원통 저항으로 묶으면 순응도·맥동·혈관 모집·반사 조절을 생략하게 된다. 어느 구간의 압력이 낮다는 사실만으로 그곳의 저항이 반드시 가장 크다고 결론 내리지 않는다. 저항을 판단하려면 구간 양끝의 압력차와 유량을 함께 알아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.36aa0068bbbb",
+      "type": "heading",
+      "level": 2,
+      "text": "병렬 연결의 유량 수지"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.419920fde5d0",
+      "type": "paragraph",
+      "markdown": "같은 입구와 출구에 연결된 병렬 가지는 같은 압력차를 경험하고 전체 유량은 가지별 유량의 합이다. 전체 전도도(conductance)1/R는 각 가지의1/R 합이다. 저항20인 가지 두 개가 병렬이면 전체 저항은10이고, 압력차100에서 각5 L/min, 합10 L/min이라는 모형 결과를 얻는다. 두 가지를 직렬로 놓았을 때의 저항40과 혼동해서는 안 된다. 연결 방식은 같은 구성 요소로도 전체 반응을 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.1d55a9a375a4",
+      "type": "paragraph",
+      "markdown": "한 병렬 가지가 좁아지면 그 가지 유량이 감소할 수 있지만 나머지 가지의 변화는 공급 압력을 어떻게 유지하는지에 따라 달라진다. 압력원을 일정하게 고정한 모형과 총 유량을 일정하게 고정한 모형은 결과가 다르다. 생체에서는 심장과 혈관 조절이 동시에 반응하므로 ‘한 장기 혈관이 수축하면 다른 장기 유량이 반드시 같은 양만큼 증가한다’는 규칙으로 일반화하지 않는다. 무엇을 고정한 비교인지 밝히는 것이 우선이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.b121f886d696",
+      "type": "heading",
+      "level": 2,
+      "text": "장기별 혈류와 자기조절"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.c33f66b6b249",
+      "type": "paragraph",
+      "markdown": "많은 전신 장기 순환은 병렬적으로 배치되어 서로 다른 대사 요구와 혈관 긴장에 따라 혈류를 조절한다. 폐와 전신은 정상 폐쇄 순환에서 연속된 흐름을 이루지만 저항·압력의 범위가 다르다. 신장 사구체와 세뇨관 주위 혈관, 간 문맥계처럼 특수한 연결도 있어 모든 장기의 미세순환을 같은 한 줄의 회로로 그릴 수는 없다. 해부학적 배열과 기능적 조절을 함께 살펴야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.ccae0b6bc610",
+      "type": "paragraph",
+      "markdown": "자기조절(autoregulation)은 관류압 변화에도 일정 범위에서 혈류를 유지하는 국소 반응을 뜻한다. 근원성 반응과 대사 신호 등이 관련되며 범위를 벗어나거나 질환·약물·신경 자극의 영향을 받으면 관계가 달라질 수 있다. 혈류가 일정하다고 관류압의 의미가 사라진 것은 아니고 저항이 변화하여 이를 보완한 결과일 수 있다. 단순 선형 압력–유량 곡선과 실제 장기의 평탄한 자기조절 구간을 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.8faec57fac95",
+      "type": "heading",
+      "level": 2,
+      "text": "맥동과 임상 연결"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.80fe6535b987",
+      "type": "paragraph",
+      "markdown": "동맥의 맥동성 흐름에서는 압력과 유량의 시간적 관계에 순응도·관성·반사파가 참여한다. 평균값에서 정의한 저항만으로 맥압이나 파형 전체를 예측하지 못하는 이유이다. 또한 평균동맥압을 모든 심박수에서 수축기·이완기 압력의 단순 산술평균으로 계산할 수 없다. 파형과 시간 비율이 중요하며 흔한 근사식도 적용 조건이 있다. 혈관 저항은 중요한 요약 변수이지만 순환계의 모든 성질을 뜻하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.b.172c32ed0305",
+      "type": "paragraph",
+      "markdown": "혈압이 높다는 소견과 조직 관류가 충분하다는 판단은 동일하지 않다. 압력·유량·산소함량·조직의 분포를 함께 평가해야 하며, 국소 관류 장애가 있어도 다른 구간의 압력이 유지될 수 있다. 반대로 평균 압력이 낮아도 장기별 보상과 대사 요구에 따라 기능 영향이 달라진다. 혈류역학의 수식은 측정값이 무엇을 설명하고 무엇을 아직 알려 주지 않는지 구분하는 공통 틀이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.diagram.pressure-flow-resistors",
+      "type": "diagram",
+      "diagramRef": "diagram.pressure-flow-resistors",
+      "path": "diagrams/diagram.pressure-flow-resistors.svg",
+      "alt": "일정 저항 모형의 압력차와 유량의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.cardiovascular.hemodynamics-resistance.table.compare",
+      "type": "table",
+      "data": {
+        "title": "저항 회로 비교",
+        "columns": [
+          "연결",
+          "같은 양",
+          "합산"
+        ],
+        "rows": [
+          [
+            "직렬",
+            "유량",
+            "저항 R1+R2"
+          ],
+          [
+            "병렬",
+            "입출구 압력차",
+            "전도도1/R1+1/R2"
+          ]
+        ],
+        "notes": "직렬 비교는 중간 분지와 축적이 없는 정상상태, 병렬 비교는 공통 입출구 압력차를 가정한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/cardiovascular/sections/physiology.cardiovascular.hemodynamics-resistance.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "3 L/min"
+  ],
+  "reviewQuestions": [
+    "question.physiology.cardiovascular.hemodynamics-resistance.001",
+    "question.physiology.cardiovascular.hemodynamics-resistance.002"
+  ],
+  "relatedLessons": [
+    "physiology.cardiovascular.microcirculation-glycocalyx",
+    "physiology.cardiovascular.cardiac-output-venous-return"
+  ]
+}

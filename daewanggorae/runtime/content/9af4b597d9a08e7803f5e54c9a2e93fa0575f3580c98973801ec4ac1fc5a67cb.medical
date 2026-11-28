@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.shock.cerebral-hypoperfusion",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.17e044bc7ce0",
+      "sourceSha256": "17e044bc7ce0c889f3238c631b498be1e7f0952f8c0b4a0450543789d1afa023",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.58f6ca1c12b3",
+      "sourceSha256": "58f6ca1c12b355ca1e2e351e0e6d3f0464c915a1bc4f34cc8e65c13b58765e77",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.4fca0ec82fbd",
+      "sourceSha256": "4fca0ec82fbdba9a70c483334dd1e7198f7aa7e164d54e697e01db452a99b7d1",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.3c910e177f1964c5aa17",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 20,
+            "end": 23,
+            "exact": "막전위",
+            "prefix": "ATP 공급이 부족하면 이온 구배와 ",
+            "suffix": "가 유지되기 어렵고 신경세포의 전기적 기능이"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.14f97980b046",
+      "sourceSha256": "14f97980b04667258cb4b9448c849124ec55f895fa33822d09784b337db49bf3",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.680644f5d139",
+      "sourceSha256": "680644f5d139666c2c5cbeb935f43d707be23a495b4fc925492cf3a56c64ae18",
+      "sourceLengthUtf16": 169,
+      "annotations": [
+        {
+          "id": "ann.f2ce770e30cd406c0cf1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 108,
+            "end": 142,
+            "exact": "부종이 있다는 말 하나로 원인과 분포를 모두 확정하지 않는다.",
+            "prefix": "·배출 문제가 시간에 따라 겹칠 수 있다. ",
+            "suffix": " 세포와 혈관 구획을 나누는 도식이 도움이 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.9fe9f6181e19",
+      "sourceSha256": "9fe9f6181e197c73779fda769d310715926319dbeaeed18773e01ac2c6d9e07d",
+      "sourceLengthUtf16": 144,
+      "annotations": [
+        {
+          "id": "ann.2f4e1b114d5b9266281d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 64,
+            "end": 68,
+            "exact": "두개내압",
+            "prefix": "상에서 보이는 신호 변화가 그 자체로 실제 ",
+            "suffix": "이나 모든 영역의 혈류량을 측정한 것은 아니"
+          },
+          "conceptId": "reader.term.f470c35f2a4dec51",
+          "targetDocumentId": "neurosurgery.physiology.intracranial-pressure"
+        },
+        {
+          "id": "ann.a40dc135233e2a092ff7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 117,
+            "end": 144,
+            "exact": "필요한 평가의 목적과 측정 방법을 구별해야 한다.",
+            "prefix": ". 형태와 생리 변수를 동일시하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.b165208d0552",
+      "sourceSha256": "b165208d055288fe4e01a65d9443cd2a3a6057ca1d9d286f1229ab1c0ac6f870",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.6687f68854e4",
+      "sourceSha256": "6687f68854e4320b01e6bef8de947e8634edf4d1eabd1ac3b9d2d27848484ed6",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.4ffc915bacc1",
+      "sourceSha256": "4ffc915bacc100ea3d38024a57d9abb655842c94d5222b55cc6a179b5a6eca20",
+      "sourceLengthUtf16": 153,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.cerebral-hypoperfusion.b.93496d9f7b51",
+      "sourceSha256": "93496d9f7b51030a82983dcf23f3ccbad1517e6e120145a48989f68cb712d1f5",
+      "sourceLengthUtf16": 169,
+      "annotations": [
+        {
+          "id": "ann.b1bc00e7129df07bc1a6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 142,
+            "end": 169,
+            "exact": "실제 환자 영상과 교육용 도식을 명확히 구분한다.",
+            "prefix": "전기적 반응을 내장한 기능 모델이 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

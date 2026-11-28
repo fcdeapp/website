@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.shock.lactate-kinetics",
+  "subjectId": "pathology",
+  "chapterId": "shock",
+  "title": {
+    "ko": "젖산의 생성·이용·시간별 농도",
+    "en": "Lactate Production, Utilization and Concentration Kinetics"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.shock.lactate-kinetics.lo.01",
+      "text": "젖산 농도와 대사 흐름을 구별한다"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.lo.02",
+      "text": "산화환원·제거와 임상 원인을 설명한다"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.lo.03",
+      "text": "연속 농도 감소와 실제 청소율을 분리한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.shock.lactate-kinetics.b.9d6302653017",
+      "type": "heading",
+      "level": 2,
+      "text": "정상 대사에도 존재하는 물질"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.757b02f07fc9",
+      "type": "paragraph",
+      "markdown": "젖산(lactate)은 산소가 전혀 없을 때만 생기는 노폐물이 아니다. Pyruvate와의 전환은 세포질의 산화환원 상태와 해당 흐름에 연결되고, 젖산은 다른 조직에서 기질로 이용될 수 있다. 생성과 이용이 동시에 진행되므로 혈중 농도가 정상이라고 젖산 대사가 없다는 뜻은 아니다. 정적인 농도와 단위시간의 흐름을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.2f121b6eef58",
+      "type": "paragraph",
+      "markdown": "LDH 반응은 pyruvate·lactate와 NADH·NAD+를 연결한다. 산소 공급이 충분한 상태에서도 해당 흐름과 교감 자극, 세포별 대사 조건에 따라 젖산 생성이 증가할 수 있다. 반대로 저관류가 존재해도 시점·범위와 제거에 따라 혈중 값이 아직 높지 않을 수 있다. 한 농도를 저산소의 유일한 유무 검사로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.14a14a598986",
+      "type": "heading",
+      "level": 2,
+      "text": "생성이 증가하는 경로"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.036b5dfdcb5a",
+      "type": "paragraph",
+      "markdown": "산소 전달·이용이 제한되는 경우는 중요한 원인이다. 하지만 발작·근육 활동과 교감 자극, 일부 약물·독성, 조효소와 효소의 문제 등도 대사 흐름을 바꾼다. 저산소성 원인과 비저산소성 원인이 실제 환자에서 겹칠 수 있다. 두 분류를 반드시 배타적인 것으로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.b1768e323816",
+      "type": "paragraph",
+      "markdown": "호흡의 일과 떨림·발열 등 에너지 요구를 바꾸는 사건도 시간별 농도에 기여할 수 있다. 산소전달을 높인 뒤 농도가 달라졌다면 생성 원인뿐 아니라 요구·약물·장기 기능의 변화도 확인한다. 시간상 뒤에 일어난 관찰이 앞선 중재의 단독 결과라고 확정하려면 다른 설명을 검토해야 한다. 이 원칙은 증례의 그래프 해석에도 적용된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.a08e57fe6582",
+      "type": "heading",
+      "level": 2,
+      "text": "간과 다른 조직의 이용"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.9cb280354e2e",
+      "type": "paragraph",
+      "markdown": "간은 젖산 처리의 중요한 장기이며 신장과 다른 조직도 이용에 참여한다. 혈류·세포 대사와 장기의 기능이 달라지면 같은 생성량에서도 농도가 달라진다. 저산소성 간 손상이나 전신 질병의 맥락에서 농도 상승을 말초의 새 저산소 생성량으로만 계산할 수 없는 이유다. 제거 경로가 하나라는 단순 모형의 한계를 기억한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.f6f24f283ef7",
+      "type": "paragraph",
+      "markdown": "농도를 연속 측정해 감소율을 계산하는 것과 약동학적 의미의 진정한 청소율을 측정하는 것은 다르다. 생성이 달라져도 농도는 떨어질 수 있고 분포 용적도 영향을 준다. 임상에서 관습적으로 사용하는 용어가 실제로 어떤 양을 측정했는지 확인해야 한다. 이름보다 측정 방식과 수식의 변수 정의가 우선이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.a2c09d2b4829",
+      "type": "heading",
+      "level": 2,
+      "text": "한 구획 수지로 해석하기"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.b2cb2bfd9ff6",
+      "type": "paragraph",
+      "markdown": "분포 용적 V가 일정하고 생성률 P와 제거 청소율 Cl이 일정하면 dC/dt=(P−ClC)/V다. 정상상태는 P/Cl이지만 급성 변화 중에는 이전 농도와 시간의 영향이 남는다. 같은 최종 수준도 접근 속도가 다를 수 있고 같은 감소 곡선도 다른 생성·제거 조합에서 만들어질 수 있다. 단일 관찰로 두 미지수를 모두 추정할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.58abb457c101",
+      "type": "paragraph",
+      "markdown": "예를 들어 V=1,초기 C=4,P=1,Cl=1이면 C(t)=1+3exp(−t)다. 시간1의 약2.104를 실제 검사값으로 읽지 않는다. 이는 생성이 계속되는 동안에도 농도가 감소하는 독립 예시다. 감소한 양 전부가 새 혈전이나 조직 저산소의 해소량이라는 식의 임상적 환산은 허용되지 않는다. 그래프에는 단위·가정과 실제 자료 여부를 표시한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.695befb9d9c4",
+      "type": "heading",
+      "level": 2,
+      "text": "채혈과 추세의 해석"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.f18f3160071c",
+      "type": "paragraph",
+      "markdown": "채혈 부위·방법과 처리 시간, 직전의 운동·중재·약물은 비교의 조건이다. 다른 조건의 두 검사를 같은 연속선으로 그리면 생리 변화와 측정 차이를 혼동할 수 있다. 실제 자료에서는 시간과 조건을 먼저 정리하고 변화의 크기·방향을 평가한다. 검사 변동과 임상적으로 의미 있는 변화를 나누어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.b.c581761045a1",
+      "type": "paragraph",
+      "markdown": "젖산은 위험과 반응을 평가하는 여러 창 중 하나다. 진찰과 혈압·유량·산소함량, 산염기와 장기 기능을 함께 보아야 한다. 값이 좋아졌는데 임상 상태가 나빠지면 관찰을 억지로 하나의 결론에 맞추지 않고 다른 원인과 시점·구획의 차이를 검토한다. 서로 어긋나는 자료는 새로운 질문을 만드는 정보다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.table.0821",
+      "type": "table",
+      "data": {
+        "title": "관찰과 판단의 구별",
+        "columns": [
+          "관찰",
+          "정보"
+        ],
+        "rows": [
+          [
+            "농도",
+            "시간에 따라 감소"
+          ],
+          [
+            "생성·제거",
+            "각각 직접 측정 안 함"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pathology.shock.lactate-kinetics.diagram.lactate-production-clearance-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.lactate-production-clearance-toy",
+      "path": "diagrams/diagram.lactate-production-clearance-toy.svg",
+      "alt": "고정 생성과 농도의 가상 감소의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/shock/sections/pathology.shock.lactate-kinetics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.shock.lactate-kinetics.001",
+    "question.pathology.shock.lactate-kinetics.002"
+  ],
+  "relatedLessons": [
+    "pathology.shock.intestinal-barrier",
+    "pathology.shock.monitoring-inference"
+  ]
+}

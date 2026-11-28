@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.airways.asthma-exacerbation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.b.f3329af9eead",
+      "sourceSha256": "f3329af9eead53e19f74fb1b4b2c531b92ab7f9b613303e23d4097c7a77b1dbf",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.1befcf9be05bedadf229",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 2,
+            "exact": "천식",
+            "prefix": "",
+            "suffix": " 악화는 평소보다 증상과 기류가 나빠져 추가"
+          },
+          "conceptId": "reader.term.0724de0dbf1ee4f5",
+          "targetDocumentId": "pulmonology.airways.asthma-mechanisms"
+        },
+        {
+          "id": "ann.c99037ee05356d900c49",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 163,
+            "end": 202,
+            "exact": "이전의 심한 사건은 현재 진찰이 비교적 가벼워 보여도 중요한 배경이다.",
+            "prefix": " 중증 악화와 현재 약물·노출을 확인한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.b.bd29ac4e93d9",
+      "sourceSha256": "bd29ac4e93d9eeafdbb77b8bf0b5bc70af369e7466100a4337dfbb3cad6699f5",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.b.c965b3c03af5",
+      "sourceSha256": "c965b3c03af503aeb96b5ce6b429a38f7dc8412d8d31c7e256bcc31fd8dc8e0d",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.b.ade31a6d36e2",
+      "sourceSha256": "ade31a6d36e2b91c717d7f8ae01d788ab8722cd95e4179e152554bf3ba423486",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.b.6bfc77149211",
+      "sourceSha256": "6bfc7714921108071e9f71d51040ef174a3c1268ff549c45243b17e134107152",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.3e379db97e353e99a21b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 160,
+            "end": 162,
+            "exact": "기흉",
+            "prefix": ", 비대칭 소견이나 예상 밖 반응이 있으면 ",
+            "suffix": "·폐렴·심장 및 다른 원인을 함께 평가한다."
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        },
+        {
+          "id": "ann.85e0b96d360bc5f2cd88",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 90,
+            "end": 129,
+            "exact": "산소포화도 개선이 모든 폐쇄와 호흡근 부담의 해소를 의미하지는 않는다.",
+            "prefix": "한 호흡 지원은 서로 다른 목표를 갖는다. ",
+            "suffix": " 흉통과 발열, 비대칭 소견이나 예상 밖 반"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.b.adef5daa699b",
+      "sourceSha256": "adef5daa699b808a210be79b26390f0b67d7ea1e430279494dba113d785b4268",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.b.dd610288a100",
+      "sourceSha256": "dd610288a1009f78dc3db7f44ad419b3cf309cc1717cd1034c1e738b0ae4df18",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.b.b8c895652b5f",
+      "sourceSha256": "b8c895652b5ff79481169e47b5567cf1c0046c00c30706405356573f0b901be9",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.p.extra0845.0",
+      "sourceSha256": "77d6937d3367cedd0707c65a14c601f31c1aa51ba9ddd2b7b8e3b8f94b5b3d7d",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-exacerbation.p.extra0845.1",
+      "sourceSha256": "a8799fd66ae8ae9ffae81b7bfd4670f2b9cc9905fd7bf5b74e986e16f4d26184",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    }
+  ]
+}

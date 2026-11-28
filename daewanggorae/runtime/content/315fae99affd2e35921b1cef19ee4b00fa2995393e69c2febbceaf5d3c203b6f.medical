@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology",
+  "title": {
+    "ko": "일반약리학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "pharmacology.chapter.general",
+      "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/chapter.json"
+    },
+    {
+      "id": "pharmacology.chapter.autonomic",
+      "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/autonomic/chapter.json"
+    },
+    {
+      "id": "pharmacology.chapter.cardiovascular",
+      "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/cardiovascular/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "pharmacology.plan.001",
+    "pharmacology.plan.002",
+    "pharmacology.plan.003",
+    "pharmacology.plan.004",
+    "pharmacology.plan.005",
+    "pharmacology.plan.006",
+    "pharmacology.general.pharmacokinetics",
+    "pharmacology.autonomic.receptors",
+    "pharmacology.general.pharmacodynamics",
+    "pharmacology.general.distribution-binding-models",
+    "pharmacology.general.clearance-extraction-models",
+    "pharmacology.general.repeated-dosing-accumulation",
+    "pharmacology.general.agonism-antagonism-curves",
+    "pharmacology.general.metabolism-biotransformation",
+    "pharmacology.general.metabolism-interactions",
+    "pharmacology.general.bioavailability-first-pass",
+    "pharmacology.general.transporters-vectorial-flux",
+    "pharmacology.general.renal-excretion-ionization",
+    "pharmacology.general.quantal-response-safety",
+    "pharmacology.autonomic.direct-cholinergic-agonists",
+    "pharmacology.autonomic.cholinesterase-inhibition",
+    "pharmacology.autonomic.antimuscarinic-effects",
+    "pharmacology.autonomic.adrenergic-agonists",
+    "pharmacology.autonomic.catecholamine-turnover",
+    "pharmacology.autonomic.adrenergic-antagonists",
+    "pharmacology.cardiovascular.renin-angiotensin-drugs",
+    "pharmacology.cardiovascular.mineralocorticoid-antagonists",
+    "pharmacology.cardiovascular.renal-drug-interactions",
+    "pharmacology.cardiovascular.loop-diuretics",
+    "pharmacology.cardiovascular.distal-proximal-diuretics",
+    "pharmacology.cardiovascular.antiarrhythmic-mechanisms",
+    "pharmacology.cardiovascular.repolarization-proarrhythmia"
+  ]
+}

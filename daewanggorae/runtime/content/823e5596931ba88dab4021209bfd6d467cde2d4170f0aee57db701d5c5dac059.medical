@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-headache-medication-days-0852",
+  "lessonId": "neurology.headache.primary-secondary",
+  "title": "가상 두통·급성약 사용일",
+  "series": [
+    {
+      "label": "두통일",
+      "samples": [
+        {
+          "x": 1,
+          "y": 8
+        },
+        {
+          "x": 2,
+          "y": 12
+        },
+        {
+          "x": 3,
+          "y": 15
+        },
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 16
+        },
+        {
+          "x": 6,
+          "y": 12
+        }
+      ]
+    },
+    {
+      "label": "약물 사용일",
+      "samples": [
+        {
+          "x": 1,
+          "y": 3
+        },
+        {
+          "x": 2,
+          "y": 6
+        },
+        {
+          "x": 3,
+          "y": 10
+        },
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 12
+        },
+        {
+          "x": 6,
+          "y": 8
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticData": true,
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "headacheDays": [
+      8,
+      12,
+      15,
+      18,
+      16,
+      12
+    ],
+    "medicationDays": [
+      3,
+      6,
+      10,
+      14,
+      12,
+      8
+    ],
+    "noCausalityOrOveruseCriteria": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 6,
+      "scale": "linear",
+      "ticks": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "label": "기록 월"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 31,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        7.75,
+        15.5,
+        23.25,
+        31.0
+      ],
+      "label": "해당 월의 일수"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "두통일",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "약물 사용일",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·정상치·검사성능·진단·투약·치료효과와 안전 기준을 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

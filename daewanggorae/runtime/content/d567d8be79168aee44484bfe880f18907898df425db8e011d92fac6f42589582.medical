@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.control.log-reduction-validation",
+  "subjectId": "bacteriology",
+  "chapterId": "control",
+  "title": {
+    "ko": "소독·멸균의 로그 감소와 검증",
+    "en": "Log Reduction and Sterilization Validation"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.control.log-reduction-validation.lo.01",
+      "text": "소독·멸균·세척의 목표를 구별한다"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.lo.02",
+      "text": "D값과 로그 감소를 계산한다"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.lo.03",
+      "text": "공정 검증과 단일 음성 검사의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.d3b48d29fd65",
+      "type": "heading",
+      "level": 2,
+      "text": "제거와 불활화의 단계"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.d175199ddb21",
+      "type": "paragraph",
+      "markdown": "세척(cleaning)은 오염물과 유기물 등을 물리적으로 줄여 이후 처리가 효과적으로 작동할 조건을 만드는 과정이다. 소독(disinfection)은 무생물 표면의 미생물을 정해진 수준으로 줄이는 처리이며 모든 포자까지 제거한다는 뜻은 아니다. 멸균(sterilization)은 생존 미생물의 제거를 목표로 하는 검증된 공정과 관련된다. 살아 있는 조직에 쓰는 antisepsis와도 적용 대상을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.bfe3a7429fc5",
+      "type": "paragraph",
+      "markdown": "세척 없이 더 강한 물질만 쓰면 같은 효과가 보장되는 것은 아니다. 유기물은 약제를 소모하거나 미생물을 가리고, 기구의 틈과 내강은 접촉을 제한할 수 있다. 같은 물질이라도 표면·온도·시간·농도와 습도 조건이 결과를 바꾼다. 실제 공정은 기구와 제품의 검증된 지시를 따라야 하며 일반 개념식이 그 지시를 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.a8c3bede5adb",
+      "type": "heading",
+      "level": 2,
+      "text": "비율로 줄어드는 양"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.f4613dd9f46e",
+      "type": "paragraph",
+      "markdown": "일정 조건에서 생존수가 시간에 대해 N=N0·10^(−t/D)로 감소한다고 가정하면 D는 한 로그, 즉 90% 감소에 필요한 시간이다. log10(N/N0)=−t/D이므로 로그 생존 곡선의 기울기는 −1/D다. 같은 조건에서 3D가 지나면 시작량의 10^−3이 남는다. D는 조건에 따른 값이지 모든 종과 모든 기구에 고정된 상수가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.0f0887ede482",
+      "type": "paragraph",
+      "markdown": "가상 시작량이 10^6이고 D가 2 임의시간이면 6시간 뒤 기대량은 10^3이다. 99.9% 감소라는 비율은 커 보이지만 시작 오염량이 크면 여전히 많은 단위가 남을 수 있다. 감소율과 최종 잔존량을 함께 표현해야 한다. 이 수치는 독립적인 산술 예시이며 실제 멸균 온도·시간·허용 생존량의 지침이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.cc05226a2b8b",
+      "type": "heading",
+      "level": 2,
+      "text": "곡선이 직선이 아닐 때"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.246d238db838",
+      "type": "paragraph",
+      "markdown": "초기에 반응이 느린 shoulder나 마지막에 꼬리가 남는 양상은 단일 D 모형에서 벗어난다. 응집과 여러 상태의 혼재, 보호된 틈, 공정 조건의 변화가 원인일 수 있다. 측정 오차와 회수 과정도 대조한다. 초기 구간의 기울기를 끝까지 연장하여 절대적인 제거 시간을 계산하면 느린 집단을 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.4a9c5034d0fb",
+      "type": "paragraph",
+      "markdown": "처리 뒤 검사에서 집락이 없었다고 검사하지 않은 모든 부위의 완전 제거를 직접 증명한 것은 아니다. 시료의 회수율과 검사량, 잔류 약제의 중화, 배양 조건을 확인한다. 기대 생존량이 1보다 작다는 계산 역시 개별 기구에서 미생물이 분수 개 남는다는 뜻이 아니다. 집단의 기대값과 개별 사건의 확률을 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.afffaea8e3fd",
+      "type": "heading",
+      "level": 2,
+      "text": "공정 전체를 확인하기"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.6fc8781b6d3e",
+      "type": "paragraph",
+      "markdown": "물리적 지표는 시간·온도·압력 등 공정 조건을, 화학적 지표는 특정 노출에 대한 반응을 보여 준다. 생물학적 지표는 관련 저항성을 가진 미생물의 반응으로 공정 성능을 평가하는 도구다. 세 종류가 답하는 질문이 다르므로 한 지표의 변화만으로 모든 단계의 안전성을 확정하지 않는다. 적재·포장·기구의 상태와 공정 기록이 함께 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.b.53dc2f5a9dfe",
+      "type": "paragraph",
+      "markdown": "멸균이 적절해도 이후 보관과 개봉·사용 과정에서 재오염이 생길 수 있다. 따라서 최초 처리 성공과 환자에게 전달되는 순간의 무균 상태를 구별한다. 일회용 주사기와 바늘의 재사용 같은 위험을 단순한 외관 청결로 판단하지 않는다. 미생물 감소의 정량은 감염관리의 일부이며 공정·취급·사용 대상이 함께 연결될 때 실제 안전으로 이어진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.diagram.bacteria-log-reduction-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.bacteria-log-reduction-toy",
+      "path": "diagrams/diagram.bacteria-log-reduction-toy.svg",
+      "alt": "D값과 로그 생존량의 독립 계산 곡선"
+    },
+    {
+      "id": "bacteriology.control.log-reduction-validation.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "세척",
+            "오염물의 물리적 감소"
+          ],
+          [
+            "소독",
+            "무생물 표면의 정해진 수준 감소"
+          ],
+          [
+            "멸균",
+            "검증된 공정과 생존 미생물 제거 목표"
+          ],
+          [
+            "D값",
+            "고정 조건의 1-log 감소 시간"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/control/sections/bacteriology.control.log-reduction-validation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.control.log-reduction-validation.001",
+    "question.bacteriology.control.log-reduction-validation.002"
+  ],
+  "relatedLessons": [
+    "bacteriology.methods.specimen-culture-context",
+    "bacteriology.virulence.iron-acquisition"
+  ]
+}

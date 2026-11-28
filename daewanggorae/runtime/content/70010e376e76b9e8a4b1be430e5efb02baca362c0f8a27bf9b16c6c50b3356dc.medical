@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.digestive.motility-control",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.digestive.motility-control.b.806434254031",
+      "sourceSha256": "8064342540312d2ad166ec052654c00dfe051856583f3eacf37675f2dc684d9b",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.6cd464259838",
+      "sourceSha256": "6cd464259838aeb9c5e107fe2d471ed6773594866515debcf81506938b24598d",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.c5b055f9cf78",
+      "sourceSha256": "c5b055f9cf7836449d430af93d2d34d7b85feddc86a520214cd52ecd6033d97b",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.16c3d0a253853d47dbc2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 90,
+            "end": 93,
+            "exact": "막전위",
+            "prefix": "다. 느린파(slow waves)는 주기적 ",
+            "suffix": " 변동으로,평활근의 흥분·칼슘 유입과 수축이"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        },
+        {
+          "id": "ann.3a339b9567d74f9c5137",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 68,
+            "exact": "카할 간질세포(interstitial cells of Cajal, ICC)는 위장관의 전기적 리듬 형성과 전달에 중요하다.",
+            "prefix": "",
+            "suffix": " 느린파(slow waves)는 주기적 막전"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.a3a9f1b2672c",
+      "sourceSha256": "a3a9f1b2672ca4788c7548ec0b1ed98917036fcd9309a7bb551ed3112541dbde",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.e84856eeb17c27db25dd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 185,
+            "exact": "위장관의 부위별 전기 특성과 구강·식도의 골격근 성분 등도 구별해야 한다.",
+            "prefix": " 같은 느린파 도식에 억지로 넣지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.bcc2e21d5edd",
+      "sourceSha256": "bcc2e21d5eddd5edc8d83f6c08f442d5d4ab83c3e2e20d201a6f422ad1b6a2a3",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.ec7c0ba6577f",
+      "sourceSha256": "ec7c0ba6577f811133989f90d0a8b65d46eef23ffd47273c3e611b4699134112",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.80edca1de236",
+      "sourceSha256": "80edca1de236074d1bdd9615a1bfd9bd7ea931fc2d31170d800ceeeeb9f004e5",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.f574a49f178d",
+      "sourceSha256": "f574a49f178df1bfff69f046e7280e6102d938f9f9a3bf88898073c2adb8f9a0",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.3500ec4edbe9",
+      "sourceSha256": "3500ec4edbe929793c72e42be04c03f7e523108ef99c88c73efbb98d4dc320c9",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.7a46db647108",
+      "sourceSha256": "7a46db647108cf953c512a31fc6a079ef8ac0e6cdf9b0470c453e67d6f2006e9",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.8cf8e9579e58",
+      "sourceSha256": "8cf8e9579e58b8279c513c450e4dd7aaa673fda4d8260dff09a066535cb9f2bd",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.motility-control.b.f4389aa9984c",
+      "sourceSha256": "f4389aa9984ccfed202cefcf0f9c1635f60f169919a3823493205db4e79669ee",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    }
+  ]
+}

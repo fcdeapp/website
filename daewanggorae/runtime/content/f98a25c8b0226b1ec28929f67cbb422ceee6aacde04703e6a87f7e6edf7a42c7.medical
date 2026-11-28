@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.neuropathy.axonal-demyelinating",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.neuropathy.axonal-demyelinating.b.dd16706c3dfe",
+      "sourceSha256": "dd16706c3dfea9a485e18b51a2e6aff50ddf5474aec108475b45833f7d9b44a3",
+      "sourceLengthUtf16": 498,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neuropathy.axonal-demyelinating.b.81a068f82f9b",
+      "sourceSha256": "81a068f82f9bd544bd093d09369c546a9223d87e0e5285af9af28e648a65d8a2",
+      "sourceLengthUtf16": 561,
+      "annotations": [
+        {
+          "id": "ann.2b90256fab26edeb33ce",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 393,
+            "end": 399,
+            "exact": "신경근접합부",
+            "prefix": " 근섬유 전기 반응이 겹친 결과다. 근육과 ",
+            "suffix": "의 상태, 기록 전극의 위치, 충분한 자극 "
+          },
+          "conceptId": "reader.term.8ac0bcc79435bc5e",
+          "targetDocumentId": "neuroscience.nmj.release-safety-factor"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neuropathy.axonal-demyelinating.b.b7031a2473ab",
+      "sourceSha256": "b7031a2473ab4738a1485c6291a827b134bdc8c3bab5d5caa6b6a59c010ed3af",
+      "sourceLengthUtf16": 488,
+      "annotations": [
+        {
+          "id": "ann.7a6a7f8450d469e8e297",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 463,
+            "end": 488,
+            "exact": "따라서 진폭의 비율과 생리적 차단을 구별한다.",
+            "prefix": "화 없이도 꼭대기 진폭이 달라질 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neuropathy.axonal-demyelinating.b.14e06f74b60d",
+      "sourceSha256": "14e06f74b60d9b2199c386b082835d182bb2fd36e0addb47621cafa9b4efb474",
+      "sourceLengthUtf16": 506,
+      "annotations": [
+        {
+          "id": "ann.7626d647719ab6a3b3f8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 3,
+            "exact": "당뇨병",
+            "prefix": "",
+            "suffix": ", 영양 결핍, 독성·약물, 면역매개 질환과"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neuropathy.axonal-demyelinating.b.5b7b8b1e36cb",
+      "sourceSha256": "5b7b8b1e36cb58d72d014869b4a28fc8cf775383d2fd3d2e7eccb31abebeb8dc",
+      "sourceLengthUtf16": 478,
+      "annotations": []
+    }
+  ]
+}

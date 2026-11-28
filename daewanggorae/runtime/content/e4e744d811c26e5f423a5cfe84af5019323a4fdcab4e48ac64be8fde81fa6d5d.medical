@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.flutter-ratio-toy",
+  "lessonId": "cardiology.arrhythmias.atrial-flutter",
+  "title": "고정 심방 속도와 전도비",
+  "series": [
+    {
+      "label": "심방300회/분",
+      "samples": [
+        {
+          "x": 1,
+          "y": 300.0
+        },
+        {
+          "x": 2,
+          "y": 150.0
+        },
+        {
+          "x": 3,
+          "y": 100.0
+        },
+        {
+          "x": 4,
+          "y": 75.0
+        },
+        {
+          "x": 5,
+          "y": 60.0
+        },
+        {
+          "x": 6,
+          "y": 50.0
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "equation": "V=300/n",
+    "atrialRate": 300,
+    "domain": "n integers 1..6; connecting lines guide only"
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 6,
+      "scale": "linear",
+      "ticks": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "label": "전도비 n:1(정수만)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 300,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        75.0,
+        150.0,
+        225.0,
+        300.0
+      ],
+      "label": "심실속도(회/분)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "심방300회/분",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "명시된 가정의 독립 수학 모형이다. 실제 환자 파형·관측값·진단 기준·처방 용량·치료 효과 또는 장치 성능이 아니다.",
+    "정수 표본 사이의 선은 시각적 연결이며 연속적인 분수 전도비를 뜻하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

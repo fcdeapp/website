@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "internal-medicine.diagnosis.probability",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.32ac50a5e35a",
+      "sourceSha256": "32ac50a5e35aab459cd9a51c365e96cbe681ae1b313bdf09ffe9239fd9f2c463",
+      "sourceLengthUtf16": 265,
+      "annotations": [
+        {
+          "id": "ann.5b999b7e3e5ea115b6ae",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 49,
+            "end": 51,
+            "exact": "흉막",
+            "prefix": " 대응하지 않는다. 흉통은 심근허혈, 폐와 ",
+            "suffix": " 질환, 식도 질환, 근골격계 문제 등에서 "
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.c3733db33251",
+      "sourceSha256": "c3733db3325180edd561e5a6de8506d621b89618f33331a0d6808c40e23becf5",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.7cd348fc7960",
+      "sourceSha256": "7cd348fc7960f718bd711d35dc6ebd18947535c32442deaf7c87e57ba7edfba8",
+      "sourceLengthUtf16": 256,
+      "annotations": [
+        {
+          "id": "ann.f11df98cbc9eecf3a230",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 89,
+            "end": 153,
+            "exact": "검사 결과를 받아든 환자에게 중요한 질문은 양성인 경우 실제 질환이 있을 확률, 음성인 경우 질환이 없을 확률이다.",
+            "prefix": "환이 없는 사람 중 검사 음성인 비율이다. ",
+            "suffix": " 이들은 각각 양성예측도와 음성예측도이며 사"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.538bc1f165fe",
+      "sourceSha256": "538bc1f165fe5090b5aecb85a7e638a5c537f5a5abacd1d5cc4cdc2d443fda50",
+      "sourceLengthUtf16": 258,
+      "annotations": []
+    },
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.89610a1e84a7",
+      "sourceSha256": "89610a1e84a72a1ad7953208f7d5874f6cfe30057bb65809d3e4ff43de812d45",
+      "sourceLengthUtf16": 241,
+      "annotations": []
+    },
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.66b859d51d0d",
+      "sourceSha256": "66b859d51d0dfcd7bf1bff8ae701aa69db9dd745fa8c2d4581fe8a27d5346d91",
+      "sourceLengthUtf16": 284,
+      "annotations": []
+    },
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.a8f4211da7b5",
+      "sourceSha256": "a8f4211da7b534e50cb344af1d5cdd57533d1c634939f70c22e643a6161c310d",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.a0ba0097c41a14421dd7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 68,
+            "end": 76,
+            "exact": "55.6%이다.",
+            "prefix": " 검사후오즈는 1.25이고 검사후확률은 약 ",
+            "suffix": " 같은 결과를 사전확률 1%인 환자에게 적용"
+          },
+          "level": "key",
+          "reason": "existing_keyFact_exact",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.24f75e0a0d59",
+      "sourceSha256": "24f75e0a0d59e88b7c607eda5fca539ccc737d73fa9a56256635f57bf3e9fa6b",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.a6198a7a0221",
+      "sourceSha256": "a6198a7a0221bd1bb24f0aac8cb2852e1924d2c9bec318e791813eedd8b59780",
+      "sourceLengthUtf16": 270,
+      "annotations": []
+    },
+    {
+      "blockId": "internal-medicine.diagnosis.probability.b.9c3b04a0d836",
+      "sourceSha256": "9c3b04a0d836160e1563b8a08c9e3e7dce3ada5e0aca20c77874a1f139d65b57",
+      "sourceLengthUtf16": 275,
+      "annotations": []
+    }
+  ]
+}

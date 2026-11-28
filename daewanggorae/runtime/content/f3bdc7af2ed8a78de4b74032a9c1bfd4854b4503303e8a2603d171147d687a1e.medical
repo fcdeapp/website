@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.diagnosis.cardiac-syncope-monitoring",
+  "subjectId": "cardiology",
+  "chapterId": "diagnosis",
+  "title": {
+    "ko": "심장성 실신과 사건–리듬 연관",
+    "en": "Cardiac Syncope and Symptom Rhythm Correlation"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.lo.01",
+      "text": "심장성 기전의 주요 위험 단서를 설명한다"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.lo.02",
+      "text": "기록 방식과 사건 빈도를 연결한다"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.lo.03",
+      "text": "우연한 부정맥과 원인 리듬을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.bd712ae3f89e",
+      "type": "heading",
+      "level": 2,
+      "text": "갑작스러운 박출 감소"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.45f9c10f25be",
+      "type": "paragraph",
+      "markdown": "심장성 실신은 부정맥이나 구조적·혈역학적 문제 때문에 심박출과 뇌관류가 일시적으로 충분하지 못해 발생할 수 있다. 느린 리듬과 전도 차단은 유효 심박수를 줄이고, 빠른 리듬은 충만과 수축의 협동을 방해할 수 있다. 같은 속도라도 심실 기능과 전부하, 지속 시간에 따라 영향이 다르다. 박동수가 빠르거나 느리다는 사실 하나가 의식소실의 충분한 설명은 아니다. 사건 당시의 실제 순환 효과와 시간 관계가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.05bf7171b238",
+      "type": "paragraph",
+      "markdown": "구조적 문제에서는 유출 제한과 판막질환, 심근질환 또는 폐순환의 급격한 부담 등이 고려된다. 운동 중 실신은 수요 증가에 맞는 박출을 유지하지 못하는 상황과 부정맥을 모두 생각하게 한다. 운동을 마친 뒤의 정맥환류와 자율신경 변화는 다른 기전을 가질 수 있다. 병력에서 운동과 의식소실의 정확한 순서를 묻는 이유다. 이미 알려진 심장질환이 있어도 새 사건이 그 질환으로 확정된 것은 아니므로 다른 원인을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.660d86249c16",
+      "type": "heading",
+      "level": 2,
+      "text": "짧은 검사와 긴 사건 간격"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.ac4c4e690db0",
+      "type": "paragraph",
+      "markdown": "안정 시 심전도는 전도 지연과 일부 유전성 전기 질환, 이전 손상의 단서를 줄 수 있다. 정상 심전도도 간헐적 심실빈맥이나 발작성 방실차단을 완전히 배제하지는 않는다. 하루마다 증상이 있는 환자와 수개월마다 실신하는 환자에게 같은 짧은 기록만 적용하면 사건을 포착할 가능성이 다르다. 기록 기간, 자동 감지와 환자 활성화 기능, 유효 신호와 판독의 한계를 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.658ad01b2156",
+      "type": "paragraph",
+      "markdown": "외부 기록기와 삽입형 루프 기록기는 관찰 기간과 신호 특성, 침습성 및 비용이 다르다. 환자가 실신 중 장치를 직접 누를 수 없다는 점도 중요하다. 자동 감지는 도움을 줄 수 있지만 과감지·과소감지와 알고리즘의 오분류가 남는다. 저장된 사건 이름과 원 전기도를 대조하고 실제 증상 시간과 연결한다. 검사가 끝났는데 실신이 없었다면 음성 결과가 원인 리듬의 부재를 직접 증명한 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.8e02aebbd26e",
+      "type": "heading",
+      "level": 2,
+      "text": "연관과 인과 가능성"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.55db82a9bb99",
+      "type": "paragraph",
+      "markdown": "증상과 동시에 심한 서맥이나 위험 빈맥이 관찰되면 원인 가능성이 높아질 수 있다. 그러나 기록의 시계가 맞는지와 리듬이 먼저 시작했는지, 의식소실 뒤 이차적 변화인지도 검토한다. 증상 없이 기록된 짧은 부정맥을 모든 실신의 원인으로 정하지 않는다. 반대로 전형적 증상이 재현되었는데 의미 있는 리듬 변화가 없다면 그 증상에서 다른 기전을 평가하는 근거가 된다. 이것이 모든 미래 사건에서 부정맥을 배제하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.95e69def38d8",
+      "type": "paragraph",
+      "markdown": "실신 환자에게 전도 질환이 보이면 진행성 차단 위험과 대체 박동의 안정성을 고려한다. 심근질환과 심실성 부정맥이 의심되면 구조와 반흔, 가족력 및 유전적 배경을 연결한다. 전기생리검사는 특정 질문에서 전도와 유도 가능한 리듬을 평가하지만 모든 실신에 동일하게 시행하는 검사는 아니다. 한 검사에서 유도되지 않았다는 사실의 배제력은 의심 기전과 검사 성능에 따라 다르다. 검사와 치료의 선택은 위험과 근거의 적용 범위를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.99340c1b315a",
+      "type": "heading",
+      "level": 2,
+      "text": "안전과 추적의 연결"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.5020fcd57e63",
+      "type": "paragraph",
+      "markdown": "심장성 위험이 높은 상황에서는 진단 확정을 기다리는 동안의 안전과 적절한 관찰이 중요하다. 사건이 사라졌다는 단기 경험만으로 모든 위험이 해소되었다고 보지 않는다. 출혈과 약물, 체액 및 전해질 같은 가역 요인을 확인하면서 기저 질환을 평가한다. 재발 기록과 응급 위험 신호, 추가 검사의 목적과 확인 책임을 설명한다. 환자의 직업과 낙상·운전 등 활동 위험은 해당 지역 규정과 임상 평가에 따라 개별적으로 다룬다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.b.1938c308e5b9",
+      "type": "paragraph",
+      "markdown": "장기 치료의 성공은 기록에서 특정 리듬이 줄어드는 것, 실신이 줄어드는 것과 사망 위험 감소를 각각 구별하여 평가한다. 심박동기나 제세동기를 삽입했다는 사실만으로 혈관성·기립성 원인이 없어지는 것은 아니다. 여러 기전이 공존할 수 있다는 점을 유지하면 치료 뒤 남는 증상을 더 정확히 해석할 수 있다. 학습 도식은 사건 시간표, 기록 창과 신호의 관계를 보여 주는 것이 적합하며",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "짧은 정상 ECG",
+            "간헐 사건 전체 배제 아님"
+          ],
+          [
+            "기록 창",
+            "사건 빈도와 장치 성능"
+          ],
+          [
+            "동시성",
+            "시계·선후와 원 신호 확인"
+          ],
+          [
+            "치료 뒤 실신",
+            "다른 기전 공존 검토"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 정상 심장 메시를 원인 리듬의 직접 증거로 사용하지 않는다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.cardiac-syncope-monitoring.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.diagnosis.cardiac-syncope-monitoring.001"
+  ],
+  "relatedLessons": [
+    "cardiology.diagnosis.orthostatic-hypotension",
+    "cardiology.cardiomyopathy.phenotype-etiology"
+  ]
+}

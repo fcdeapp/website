@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.hypersensitivity.allergy-test-context",
+  "subjectId": "immunology",
+  "chapterId": "hypersensitivity",
+  "title": {
+    "ko": "감작 검사와 임상 알레르기의 연결",
+    "en": "Sensitization Tests and Clinical Allergy"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.lo.01",
+      "text": "피부검사·특이 IgE의 질문을 구별한다"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.lo.02",
+      "text": "검사 전 확률과 교차반응을 해석한다"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.lo.03",
+      "text": "성분 검사·세포 검사·유발검사의 범위를 비교한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.a9cadcb877a2",
+      "type": "heading",
+      "level": 2,
+      "text": "양성이 무엇을 입증하는가"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.c949854056af",
+      "type": "paragraph",
+      "markdown": "피부단자검사와 혈중 항원 특이 IgE는 감작의 근거를 제공한다. 임상 알레르기라는 판단에는 해당 노출 뒤 재현되는 증상과 시간·부위, 다른 설명이 함께 필요하다. 감작만 있고 평소 노출에서 증상이 없는 사람도 있을 수 있다. 반대로 검사 결과가 낮더라도 검사에 포함되지 않은 성분과 비IgE 경로, 검사 시점 등의 문제가 남을 수 있다. 검사의 양성·음성 정의와 질환의 정의를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.77e42c942eae",
+      "type": "paragraph",
+      "markdown": "병력에서는 의심 물질의 형태와 노출량·경로, 운동·감염 등 동반 조건, 다른 원인과 치료 반응을 확인한다. 모든 의심 물질을 큰 패널로 검사하면 우연한 양성과 임상적으로 무관한 감작이 늘 수 있다. 검사 선택은 이미 세운 가설을 평가하는 과정이어야 한다. 실제 연관성이 없는 음식을 광범위하게 회피시키는 결론은 검사 숫자만으로 내려서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.270a78c2a0dd",
+      "type": "heading",
+      "level": 2,
+      "text": "피부 반응과 혈중 항체"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.16926df77dd9",
+      "type": "paragraph",
+      "markdown": "피부단자검사는 피부의 반응성 세포와 매개체가 관여하므로 혈중 특이 IgE와 동일한 측정이 아니다. 양성 대조와 음성 대조는 피부의 전체 반응성·비특이 반응을 구분하는 데 중요하다. 피부 상태와 약물, 검사 기술이 결과에 영향을 준다. 대조가 부적절한 상태의 작은 반응을 확정적인 음성으로 읽지 않는다. 구체적인 중단 기간과 시행 조건은 기관·약물별 지침을 따른다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.5ff1a18ed1de",
+      "type": "paragraph",
+      "markdown": "혈청 특이 IgE 검사는 선택한 추출물 또는 성분에 결합하는 항체를 검출한다. 총 IgE와는 질문이 다르며, 총량이 높다는 사실만으로 원인 항원이 정해지지 않는다. 결합 수치의 크기는 임상 반응 가능성과 관련될 수 있지만 모든 항원에서 중증도를 동일한 비율로 예측하지는 못한다. 한 검사 플랫폼의 수치를 다른 플랫폼의 같은 단위처럼 단순 비교하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.7b3a11efe5a7",
+      "type": "heading",
+      "level": 2,
+      "text": "추출물과 분자 성분"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.ab5a32919eaa",
+      "type": "paragraph",
+      "markdown": "추출물에는 여러 성분이 포함되고 그 조성은 검사에 따라 달라질 수 있다. 성분별 진단은 일차 감작과 교차반응 가능성을 좁히는 데 도움을 줄 수 있다. 구조가 비슷한 단백질이나 교차반응성 당결정기에 대한 결합은 여러 추출물의 양성을 만들 수 있다. 그러나 교차 결합이 실제 노출에서 같은 임상 반응을 보장하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.81f1a4faab3b",
+      "type": "paragraph",
+      "markdown": "성분 검사는 더 세밀한 항원 정보를 제공하지만 모든 관련 epitope와 기능을 완전히 담지 못한다. 열·소화에 대한 안정성과 노출 경로, 환자의 병력이 해석을 바꾼다. 검사 성분이 적게 포함되었다는 이유로 음성 결과를 전체 항원군의 완전한 부정으로 사용하지 않는다. 복잡한 검사를 추가한다고 임상적 판단이 자동으로 더 정확해지는 것은 아니며 답하려는 질문이 명확해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.3e9988c26e98",
+      "type": "heading",
+      "level": 2,
+      "text": "세포 반응과 유발검사"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.930fb3ac66fd",
+      "type": "paragraph",
+      "markdown": "호염기구 활성 검사는 해당 세포가 시험 자극에 어떻게 반응하는지 볼 수 있다. 항체 결합과 세포의 기능을 연결하는 정보지만 자극 농도와 대조, 세포 반응성·시료 조건이 필요하다. 비반응자의 낮은 결과와 특정 항원에 대한 선택적 음성을 구분한다. 생체의 여러 장기와 노출 조건을 시험관 세포 하나로 모두 재현할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.b.c76330bf7f95",
+      "type": "paragraph",
+      "markdown": "통제된 유발검사는 실제 임상 반응을 평가하는 데 중요할 수 있지만 위험과 적응증, 전문 감독을 요구한다. 학습용 문제의 농도·노출량을 실제 자가 유발 방법으로 사용하지 않는다. 검사의 최종 목적은 불필요한 회피와 위험한 재노출을 줄이며 원인과 불확실성을 구별하는 것이다. 결과는 병력과 함께 해석하고 적용 범위를 분명히 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.allergy-test-context.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "특이 IgE",
+            "항원에 대한 결합의 검사"
+          ],
+          [
+            "총 IgE",
+            "다양한 원인에 의해 달라지는 전체 농도"
+          ],
+          [
+            "피부시험",
+            "피부 반응성과 약물·조건의 영향"
+          ],
+          [
+            "임상 일치",
+            "노출·시간·증상·대체 원인을 통합"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/hypersensitivity/sections/immunology.hypersensitivity.allergy-test-context.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.hypersensitivity.allergy-test-context.001"
+  ],
+  "relatedLessons": [
+    "immunology.hypersensitivity.eosinophil-late-phase",
+    "immunology.hypersensitivity.antibody-hemolysis-dat"
+  ]
+}

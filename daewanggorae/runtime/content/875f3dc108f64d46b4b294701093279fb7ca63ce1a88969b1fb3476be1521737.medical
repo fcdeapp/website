@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "laboratory-medicine.preanalytics.potassium-errors",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.61db34338160",
+      "sourceSha256": "61db34338160696abdae51082de6dd971f7d8e9a7b6322f1e0d4088bd4e1b5d9",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.30ac9cb47ee7",
+      "sourceSha256": "30ac9cb47ee769fbbf833a1dcc812e4d2af92ac41351f279b4e67bfc10a3eedf",
+      "sourceLengthUtf16": 236,
+      "annotations": [
+        {
+          "id": "ann.585aa93cbbd58e1ed9fa",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 21,
+            "end": 24,
+            "exact": "막전위",
+            "prefix": "고칼륨혈증(hyperkalemia)은 ",
+            "suffix": "와 심장 전도에 영향을 줄 수 있는 중요한 "
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        },
+        {
+          "id": "ann.6873e5ba5cf87521ecf0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 53,
+            "exact": "고칼륨혈증(hyperkalemia)은 막전위와 심장 전도에 영향을 줄 수 있는 중요한 이상이다.",
+            "prefix": "",
+            "suffix": " 반면 검체 오류를 확인하지 않고 숫자만 낮"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.8d7bde14b468",
+      "sourceSha256": "8d7bde14b468a5b053ef988baecc2364fd3fe826f00e0323fdaaab1b1e4d1920",
+      "sourceLengthUtf16": 237,
+      "annotations": [
+        {
+          "id": "ann.c030f285a97e80337ae2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 162,
+            "end": 206,
+            "exact": "검체 안에서 일어난 용혈과 환자 몸에서 진행 중인 용혈성 질환도 구별해야 한다.",
+            "prefix": "서 정확히 환산하는 공통 보정식은 아니다. ",
+            "suffix": " 빈혈·황달·다른 검사와 경과가 그 구별에 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.a3073b54f164",
+      "sourceSha256": "a3073b54f164e571088e0237de159bd3573d45f3413f562fbcdd29203b3b199c",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.03d72a078ec8",
+      "sourceSha256": "03d72a078ec851c0f5061de9792a92c339c92a1c7cacc41664ce3a73d43828f2",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.8a26e35597ff",
+      "sourceSha256": "8a26e35597ff5ba7177dcafd21c6afb8569ea5ad6247cc99508e3df2b8baf939",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.649dd0deda46",
+      "sourceSha256": "649dd0deda46c31baa26153442fddf64c41304ce372203e4eb39e29b31dc6fae",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.6cc303127693",
+      "sourceSha256": "6cc303127693e4553d23a5cc1ca70c324dd16feee6cc720dd90cf58380990598",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.6c0ef4839517",
+      "sourceSha256": "6c0ef483951780c471568978987cc2b917d21cac09774b4f28aec8979c751b63",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.preanalytics.potassium-errors.b.ac77a95590e9",
+      "sourceSha256": "ac77a95590e9fb4bfc8d066ebfe08f0958494c8b61fe601a261dcdc6b118aeb8",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.8b9f9a46fd3b693756cb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 97,
+            "end": 139,
+            "exact": "결과를 진료에 사용할 때에는 숫자의 정밀함과 임상적 신뢰성을 구별해야 한다.",
+            "prefix": "값이 비슷하면서도 정확하지 않을 수 있다. ",
+            "suffix": " 유효 숫자가 많다는 사실 자체가 채취와 해"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

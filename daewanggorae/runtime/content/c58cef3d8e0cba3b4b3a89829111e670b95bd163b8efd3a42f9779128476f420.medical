@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.lipids.fatty-acid-oxidation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.73222c250ae1",
+      "sourceSha256": "73222c250ae11fde178497230c45f9e1c16079135af661f1233c9812e52b861f",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.c23379b71dec",
+      "sourceSha256": "c23379b71dec6f36a8608df25a8c69b4a955264fd7455713b9ac85343d7ca1fb",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.39c82e50492d",
+      "sourceSha256": "39c82e50492d28a97dcb33bbf8041e2dbb52421c91c79ba99d78feee01b1fcd3",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.257dd4aca48f",
+      "sourceSha256": "257dd4aca48f9d227d2a9f5d526f797eb20cb6f347c278ecd360af505e6afb5f",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.cc8b80fbd5d7",
+      "sourceSha256": "cc8b80fbd5d76e0f188570193ae2f335f9317363387e8872d23aecdfd9c5be3a",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.60f4a7bf3923",
+      "sourceSha256": "60f4a7bf392356c4a3eaa3aa42ccb11b1ea9aeb4a037ebb53a5e12adf007e7c8",
+      "sourceLengthUtf16": 248,
+      "annotations": [
+        {
+          "id": "ann.27603ab17443424da8cd",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 161,
+            "end": 168,
+            "exact": "산화적 인산화",
+            "prefix": "잘못 계산한다. ATP 수지를 추정할 때는 ",
+            "suffix": "의 전자 운반체당 수율에 대한 가정, TCA"
+          },
+          "conceptId": "reader.term.5fc2ffe077b5ada0",
+          "targetDocumentId": "biochemistry.bioenergetics.oxidative-phosphorylation"
+        },
+        {
+          "id": "ann.bc68df485da67b122684",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 189,
+            "end": 195,
+            "exact": "TCA 회로",
+            "prefix": "인산화의 전자 운반체당 수율에 대한 가정, ",
+            "suffix": "의 수율 및 최초 활성화 비용을 명시해야 한"
+          },
+          "conceptId": "reader.term.289e64faed605b46",
+          "targetDocumentId": "biochemistry.metabolism.tca"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.c47be38e67a4",
+      "sourceSha256": "c47be38e67a4d4a0511dfcc304fec9b8e7a88a14cf791315254892b66b6042c8",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.84390f703ecf",
+      "sourceSha256": "84390f703ecf0d129028a836fe90d75cac7c74f5481cfeacac9ca390d017402c",
+      "sourceLengthUtf16": 209,
+      "annotations": [
+        {
+          "id": "ann.d45bbb6da8e56018b025",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 33,
+            "exact": "매우 긴 사슬 지방산의 초기 단축에는 과산화소체가 중요하다.",
+            "prefix": "",
+            "suffix": " 과산화소체의 첫 산화 단계에서 생기는 전자"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.53e2d55b5aee",
+      "sourceSha256": "53e2d55b5aee22f4623d057bd2b444d301179ba5b319330a7908aab84e6fe659",
+      "sourceLengthUtf16": 266,
+      "annotations": [
+        {
+          "id": "ann.0d311f9b909912aa8d0f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 46,
+            "end": 51,
+            "exact": "포도당신생",
+            "prefix": "면 아세틸-CoA 공급이 늘어난다. 공복의 ",
+            "suffix": "과 산화환원 상태 변화는 TCA 회로의 처리"
+          },
+          "conceptId": "reader.term.f6becb3579af9222",
+          "targetDocumentId": "biochemistry.carbohydrate.gluconeogenesis"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.4bb218a69b94",
+      "sourceSha256": "4bb218a69b949f746596ef6135c3a868b10512bcf70cddcbc2821a04bbc6ae8b",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.d33fe0de7176",
+      "sourceSha256": "d33fe0de7176a4508940056998f7f35bc8ad44e68743362a1e5be91ba9a01355",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-oxidation.b.d5d86c050f32",
+      "sourceSha256": "d5d86c050f32e713b37e41bf29d34498c57096dd467628c51048e8360facd713",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    }
+  ]
+}

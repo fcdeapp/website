@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.biomarkers.troponin-release",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.biomarkers.troponin-release.b.e95070c0ee1f",
+      "sourceSha256": "e95070c0ee1f3433d5fbf4075dee8df4897dc8a15e00f5948a63e3e77b945f38",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.biomarkers.troponin-release.b.92c4f59185a3",
+      "sourceSha256": "92c4f59185a3d921dee07e55fb578ad46454e19ab30c7bea925c63c5926826c8",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.7dcc293eb66a9de6a20f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 148,
+            "end": 181,
+            "exact": "유출과 소실을 구분해야 시간 곡선을 올바르게 읽을 수 있다.",
+            "prefix": "손상이 즉시 멈췄다는 직접 증거가 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.biomarkers.troponin-release.b.8fbff9b2a5ea",
+      "sourceSha256": "8fbff9b2a5eadae568fbcf88d9928283217fa153fd1a70a2f6d98b5d19d7d2e7",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.biomarkers.troponin-release.b.3ba42836fe75",
+      "sourceSha256": "3ba42836fe7514e5d681b1d892c5fc14edb63092a5bfd7ef08b273d52daed9e6",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.biomarkers.troponin-release.b.287bc51217e0",
+      "sourceSha256": "287bc51217e04617abf9d1d6b71f8c509c439c2c53ab697698618edf6460972b",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.biomarkers.troponin-release.b.a3a97614daf4",
+      "sourceSha256": "a3a97614daf4cd720bf04267df1daed6ae38f764dcacec88c4a628d9623e28a2",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.3c5b994c84dfb573d959",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 70,
+            "end": 73,
+            "exact": "심부전",
+            "prefix": " 않는다. 급성 관상동맥 병변 외에 심근염·",
+            "suffix": "·전신 질환 등도 평가 대상이다. 만성 신장"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.dae9978dfdb235cfe674",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 51,
+            "exact": "상한을 넘었다는 결과는 심근 기원의 손상 정보를 주지만 그 원인을 자동으로 확정하지 않는다.",
+            "prefix": "",
+            "suffix": " 급성 관상동맥 병변 외에 심근염·심부전·전"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.biomarkers.troponin-release.b.1ff7ab4d4308",
+      "sourceSha256": "1ff7ab4d430814705dd1dee55afc24e08b8745679b4facfbed72bec4fbe91dfe",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.biomarkers.troponin-release.b.ebebf9eb8fd9",
+      "sourceSha256": "ebebf9eb8fd9fa190384c2d916a369f8a5d8338dafdcbbe50d2679142f949759",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    }
+  ]
+}

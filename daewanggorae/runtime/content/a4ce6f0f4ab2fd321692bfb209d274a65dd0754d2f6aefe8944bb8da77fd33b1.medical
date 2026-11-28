@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.feeding-ratio-0857",
+  "lessonId": "pediatrics.respiratory.bronchiolitis-work-breathing",
+  "title": "기준 섭취량 대비 비율",
+  "series": [
+    {
+      "label": "기준 600mL",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0.0
+        },
+        {
+          "x": 120,
+          "y": 20.0
+        },
+        {
+          "x": 240,
+          "y": 40.0
+        },
+        {
+          "x": 360,
+          "y": 60.0
+        },
+        {
+          "x": 480,
+          "y": 80.0
+        },
+        {
+          "x": 600,
+          "y": 100.0
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "referenceIntakeMl": 600,
+    "formula": "intake/600*100"
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 600,
+      "scale": "linear",
+      "ticks": [
+        0,
+        120,
+        240,
+        480,
+        600
+      ],
+      "label": "관찰 섭취량(mL/일)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        25.0,
+        50.0,
+        75.0,
+        100.0
+      ],
+      "label": "기준 대비(%)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "기준 600mL",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 자료다. 실제 환자 관찰값, 진단 절단값 또는 처방 기준이 아니다."
+  ],
+  "sourceImageUsed": false
+}

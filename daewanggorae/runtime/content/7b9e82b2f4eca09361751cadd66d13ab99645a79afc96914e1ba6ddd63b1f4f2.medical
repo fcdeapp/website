@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.radiation-injury-time-pairs",
+  "lessonId": "pathology.environmental.radiation-injury",
+  "title": "방사선 반응의 시간과 층",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "에너지 침착·분자 손상",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "DNA 감지·수복·운명",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "증식 풀의 손상",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "보충 실패·기능 변화",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "혈관·기질·염증",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "지연 반응·재형성",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.radiation-injury-time-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "Gy·Sv·Bq 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.radiation-injury-time-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "즉시 외형과 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.radiation-injury-time-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "치료 효과와 독성 별도",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "실제 조직 사진·선량 지도·정해진 정상 장기 시간표가 아니다."
+  ],
+  "sourceImageUsed": false
+}

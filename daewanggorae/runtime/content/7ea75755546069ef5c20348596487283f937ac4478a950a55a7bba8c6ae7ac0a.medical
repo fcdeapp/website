@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.cough.chronic-cough-evaluation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.b.3f0f6fd45ceb",
+      "sourceSha256": "3f0f6fd45cebb696e9c4d6478f18ad9b19861909473b5e6773eebf48d069c253",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.b.0fa55c9d434a",
+      "sourceSha256": "0fa55c9d434af5fc0d14b295889a2ecb4a3428ec6a2969f7347501e2683b0ba7",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.4b1b5fd4ccc9fb3c172e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 52,
+            "end": 79,
+            "exact": "ACE 억제제 등 약물과의 시간 관계도 중요하다.",
+            "prefix": " 수면과 코·목 증상을 구체적으로 묻는다. ",
+            "suffix": " 약을 오래 사용했다는 이유만으로 관련성을 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.b.b71840a6bc4b",
+      "sourceSha256": "b71840a6bc4b90baa4bfc2ded11e365bb175ce14763115a52c17465e03b946c5",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.b.469f6a2f5c3a",
+      "sourceSha256": "469f6a2f5c3aacacd31817f97cc5efcdfdb0af475e2118baa432279d34503fda",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.6c78cd0dc787184a65d1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 44,
+            "end": 46,
+            "exact": "천식",
+            "prefix": "은 관련되지만 같은 관찰은 아니다. 기침변이",
+            "suffix": "과 호산구성 기관지염 등을 구별할 때에는 기"
+          },
+          "conceptId": "reader.term.0724de0dbf1ee4f5",
+          "targetDocumentId": "pulmonology.airways.asthma-mechanisms"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.b.ce0c8251bd19",
+      "sourceSha256": "ce0c8251bd19eb69eb0439f0c928782f6970a33c11487c3a831f6ce3f33997fe",
+      "sourceLengthUtf16": 159,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.b.ee527df386a9",
+      "sourceSha256": "ee527df386a9fa9a14921a9b33760b2c26165d4cff418e2f62c65a99746dffa4",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.1e1b75da8a23e3582e74",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 85,
+            "end": 116,
+            "exact": "속쓰림의 유무와 관련 검사·치료의 근거 대상을 구별한다.",
+            "prefix": " 공존할 수 있어 선후를 단정하기 어렵다. ",
+            "suffix": " 모든 만성기침에 산 억제를 같은 방식으로 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.b.8aa88b29c6f7",
+      "sourceSha256": "8aa88b29c6f7d97193337a624257d7ea9752c1653bfe65d7d77e47eee20b3e41",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.b.a8a91bf7a0d7",
+      "sourceSha256": "a8a91bf7a0d75785a49c6bbe4905f5054dfa4b6ca96085b42fecacd7f77b98e9",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.p.extra0845.0",
+      "sourceSha256": "4d00b207a6a375bdc125e536d2f401811ca7070ab9b1af445f2a6d8c6b23964f",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.chronic-cough-evaluation.p.extra0845.1",
+      "sourceSha256": "58cbf6201a7b197b4cda8a4d38b35985e77c528ffe230c1d0089d40bcb0632db",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    }
+  ]
+}

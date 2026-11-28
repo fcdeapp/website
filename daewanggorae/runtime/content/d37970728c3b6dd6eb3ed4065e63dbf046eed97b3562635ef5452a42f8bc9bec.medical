@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biostatistics.diagnosis.bayes",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biostatistics.diagnosis.bayes.b.3dd89f7996cf",
+      "sourceSha256": "3dd89f7996cf515589d9653678a32e430d49c859f26b321f1a5e5ab6882e6770",
+      "sourceLengthUtf16": 276,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.diagnosis.bayes.b.2065f53bcdf7",
+      "sourceSha256": "2065f53bcdf7fd1f547594183d33931529d2d3ba63cb77bd9fe8d5ff62889611",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.diagnosis.bayes.b.cb13caeee0b5",
+      "sourceSha256": "cb13caeee0b5e5352d2b0d3cf1047bcd3682431659582b8582b2aeafad6a0a6d",
+      "sourceLengthUtf16": 266,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.diagnosis.bayes.b.b3dc8079dc69",
+      "sourceSha256": "b3dc8079dc69982a34bb5d4db5a5ddc7b94bc342958222bae60af8ca425a169e",
+      "sourceLengthUtf16": 252,
+      "annotations": [
+        {
+          "id": "ann.ad157e4a2114da4a977e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 51,
+            "exact": "같은 환자에게 여러 검사를 시행해 우도비를 순서대로 곱할 때는 조건부 독립 가정이 중요하다.",
+            "prefix": "",
+            "suffix": " 같은 생리적 현상을 측정하는 유사 검사는 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biostatistics.diagnosis.bayes.b.d154595f9956",
+      "sourceSha256": "d154595f9956ebfd031c040e5edd0cdd5a7a49f524c5564bbb4d9fdb19d76a98",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.diagnosis.bayes.b.f52f4cad3e2c",
+      "sourceSha256": "f52f4cad3e2c8271a4cc46b5d0977a218c84122b51a1ed1880a18ee88c6968af",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    }
+  ]
+}

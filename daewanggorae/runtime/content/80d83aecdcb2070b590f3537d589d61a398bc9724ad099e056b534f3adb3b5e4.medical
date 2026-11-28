@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.devices.icd-detection-therapy",
+  "subjectId": "cardiology",
+  "chapterId": "devices",
+  "title": {
+    "ko": "삽입형 제세동기의 감지와 치료",
+    "en": "Detection and Therapy in Implantable Defibrillators"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.devices.icd-detection-therapy.lo.01",
+      "text": "빈맥 감지와 리듬 확진을 구별한다"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.lo.02",
+      "text": "ATP와 충격의 목적을 설명한다"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.lo.03",
+      "text": "부적절 치료의 원인을 체계화한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.ba0c990d3217",
+      "type": "heading",
+      "level": 2,
+      "text": "장치가 판단하는 빈맥"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.51db62e4db9f",
+      "type": "paragraph",
+      "markdown": "삽입형 제세동기(implantable cardioverter-defibrillator, ICD)는 심장 내 신호에서 위험한 빈맥을 감지하고 필요한 전기 치료를 전달한다. 감지는 심박수 구간과 지속, 신호의 모양·규칙성 및 심방과 심실의 관계 등을 이용할 수 있다. 설정한 속도보다 빠른 사건이 있었다는 것과 임상적으로 위험한 심실빈맥이었다는 것은 다른 판단이다. 짧게 저절로 끝날 사건, 상심실성 빈맥과 잡음도 감지 기준에 걸릴 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.8d3d3844544e",
+      "type": "paragraph",
+      "markdown": "감지 구간은 장치가 위험을 분류하기 위한 규칙이지 모든 환자에게 공통인 부정맥의 생물학적 경계가 아니다. 감지에 필요한 지속 시간을 짧게 하면 더 빠르게 대응할 수 있지만 저절로 종료될 사건에 치료할 가능성도 고려해야 한다. 길게 하면 불필요한 치료를 줄일 수 있으나 실제 위험 리듬을 놓치거나 늦추지 않는지가 중요하다. 개별 설정은 기저 리듬과 발작의 특성, 이전 치료와 장치의 기능에 따라 전문적으로 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.68b8287d17e1",
+      "type": "heading",
+      "level": 2,
+      "text": "항빈맥 조율과 충격"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.617c66d4ac6b",
+      "type": "paragraph",
+      "markdown": "항빈맥 조율(antitachycardia pacing, ATP)은 빈맥보다 빠른 조율 자극을 주어 회귀를 중단시키려는 치료다. 회귀의 흥분 가능한 구간에 자극이 들어가 회로를 바꾸거나 차단하면 빈맥이 종료될 수 있다. 모든 빈맥이 ATP에 같은 반응을 보이는 것은 아니다. 일부에서는 효과가 없거나 빈맥이 더 빨라질 수 있으므로 치료 순서와 감지·재평가가 함께 설계된다. ATP는 심근 반흔 자체를 제거하는 처치가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.23aa7df9799c",
+      "type": "paragraph",
+      "markdown": "충격은 광범위한 심근의 전기적 상태를 바꾸어 위험한 리듬을 끊으려는 방법이다. 충격이 전달되었다고 반드시 그 직전에 심실세동이 있었다는 뜻도, 그 뒤에 유효 순환이 곧바로 회복되었다는 뜻도 아니다. 저장 전기도에서 감지 전후와 치료 반응을 확인한다. 장치 내부의 치료 성공 표지는 실제 환자의 증상과 의식·맥박에 대한 평가를 대신하지 못한다. 반복 충격이 있으면 현재 리듬과 혈역학을 신속하게 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.33c10fc66e53",
+      "type": "heading",
+      "level": 2,
+      "text": "적절 치료와 부적절 치료"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.2057a91d9f90",
+      "type": "paragraph",
+      "markdown": "적절한 치료라는 표현은 장치가 치료하도록 설정된 심실성 리듬에 반응했다는 뜻으로 사용될 수 있다. 그렇다고 모든 치료가 없었다면 반드시 사망했을 것이라는 반사실을 증명하지는 않는다. 부적절 치료(inappropriate therapy)는 심방세동의 빠른 심실 반응, 다른 상심실성 빈맥과 전극 잡음, 이중 감지 등에 의해 발생할 수 있다. 정확한 분류에는 사건 당시의 원 신호가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.654647d1abed",
+      "type": "paragraph",
+      "markdown": "전극 단선이나 접촉 문제는 빠르고 불규칙한 잡음으로 감지될 수 있다. T파를 추가 박동으로 세거나 다른 신호를 과감지하면 실제보다 빠른 속도로 계산될 수도 있다. 반대로 작은 심실 신호를 놓치면 위험한 리듬의 감지가 늦어질 수 있다. 감지 진폭과 전극 지표의 추세, 동작·자세와의 관계 및 저장 파형을 통합한다. 충격 횟수 하나만으로 전극 이상과 실제 부정맥의 비중을 구별할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.b71644c3b7b1",
+      "type": "heading",
+      "level": 2,
+      "text": "기질 치료와 장치 치료"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.caf60a523148",
+      "type": "paragraph",
+      "markdown": "ICD는 위험한 리듬의 결과를 완화하는 도구지만 심근질환이나 허혈·전해질 이상을 교정하는 치료와 동일하지 않다. 원인 질환의 치료, 적절한 약물과 도자 절제는 발작과 충격의 부담을 줄이는 데 역할이 있다. 이전 심정지 뒤의 위험과 아직 사건이 없는 사람의 예방 위험은 근거가 다르다. 심실 박출률뿐 아니라 원인, 반흔과 유전적 배경 및 실제 부정맥을 종합하여 장기 전략을 세운다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.b.0868213060df",
+      "type": "paragraph",
+      "markdown": "충격 경험은 불안과 활동 회피, 삶의 질에 영향을 줄 수 있다. 장치 치료가 필요했던 이유와 재발 시 대응, 추적 방법을 설명하고 환자의 목표를 듣는다. 기기 치료 선택과 추적은 공유 의사결정을 포함한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "감지 구간",
+            "장치 분류 규칙"
+          ],
+          [
+            "ATP",
+            "회귀 중단을 겨냥한 조율"
+          ],
+          [
+            "충격",
+            "리듬 중단의 전기적 개입"
+          ],
+          [
+            "원 전기도",
+            "실제 리듬·잡음·치료 반응 대조"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 해부학 모델은 심장방의 위치를 보조하지만 실제 전극의 경로·충격 벡터와 감지 알고리즘을 담은 환자별 모형은 아니다. 전기적 치료의 시간 과정은 별도의 도식으로 나타낸다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.icd-detection-therapy.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.devices.icd-detection-therapy.001"
+  ],
+  "relatedLessons": [
+    "cardiology.devices.pacemaker-timing",
+    "cardiology.devices.resynchronization-principles"
+  ]
+}

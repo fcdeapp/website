@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "gi-surgery.esophagus.structure-function",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.e3f57abd866e",
+      "sourceSha256": "e3f57abd866ee7af26506e3b4d89e929560e3d58eba1c89a9deb5a6bb41736e5",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.022699a493ee1f16fd5a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 79,
+            "end": 81,
+            "exact": "흉막",
+            "prefix": "누어 이해한다. 기관·심장·대동맥과 척추, ",
+            "suffix": "과 횡격막 등 주변 관계는 구간과 방향에 따"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.85f19b623629",
+      "sourceSha256": "85f19b62362957ed5786bde6caabad6e15fe94357a1c1fa24fa76f6d8038c1f5",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.3a8e2933a4d7",
+      "sourceSha256": "3a8e2933a4d751e1748e527487e7d707cf678f652bdc9fd8d171e111b2b31a2f",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.ada213c1a823",
+      "sourceSha256": "ada213c1a8232fc1c6820262c288d38baa43213f06e314b664aed9e764549113",
+      "sourceLengthUtf16": 171,
+      "annotations": [
+        {
+          "id": "ann.cb4957f1ce22b470cd54",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 37,
+            "end": 94,
+            "exact": "경부와 흉부·복부에서 혈액이 들어오는 경로가 다르므로 박리·절제와 재건 때 실제 보존 혈류가 중요하다.",
+            "prefix": "망은 여러 구간의 분절성 공급을 연결한다. ",
+            "suffix": " 겉으로 연결이 되었다는 사실과 문합부가 충"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.b840d8c86766",
+      "sourceSha256": "b840d8c86766962058cd94f291df947f5114e68e83ff348ea5b9efb8a8022597",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.e80840cc4cc4",
+      "sourceSha256": "e80840cc4cc4c2a6aeb4771b30882cc71ca7bb846e46978e2b8b0f5666e22ca8",
+      "sourceLengthUtf16": 176,
+      "annotations": [
+        {
+          "id": "ann.a28fa3a34e0b1dc71a97",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 55,
+            "exact": "림프 배액은 벽의 종축 연결과 주변 림프절로 이어져 암의 위치·깊이와 전이를 평가하는 데 중요하다.",
+            "prefix": "",
+            "suffix": " 국소 점막 병변의 크기만으로 림프절 위험을"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.cdc13d52ee7d",
+      "sourceSha256": "cdc13d52ee7d747ff979c1c98608ca9e0721ff2046ff9249ccba4f94178c3723",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.b2db31fd2796",
+      "sourceSha256": "b2db31fd2796dd3e4286502076bbac65083a14c0affd195f3123f787a3f09ba2",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.7b1f67afa5c0",
+      "sourceSha256": "7b1f67afa5c0a5cb68c3806ea8ae30f8cab6fb53d74135a501760a3420546902",
+      "sourceLengthUtf16": 160,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.structure-function.b.9412aabc4943",
+      "sourceSha256": "9412aabc4943fb44a6a345a8eb4df751fe1ca46380a3c3baeef12af7015bc205",
+      "sourceLengthUtf16": 166,
+      "annotations": [
+        {
+          "id": "ann.951f74b087a5a4ab7ccf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 58,
+            "end": 104,
+            "exact": "발성 변화가 있으면 목소리만의 불편인지 기침·기도 보호와 관련된 문제인지 구별한다.",
+            "prefix": " 흡인·호흡,통증과 영양의 영향을 받는다. ",
+            "suffix": " 정상 해부학의 이름을 아는 것과 현재 기능"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

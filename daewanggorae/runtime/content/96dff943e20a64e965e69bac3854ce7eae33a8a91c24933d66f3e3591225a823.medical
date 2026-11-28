@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.innate.complement-functional-tests",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.innate.complement-functional-tests.b.3caf4c4e8c62",
+      "sourceSha256": "3caf4c4e8c626969251ec33355155be923bb3ed80c0b846a4d6d5e760c2abd1d",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.6bb4852fb6c21cfc05e6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 2,
+            "exact": "보체",
+            "prefix": "",
+            "suffix": "는 여러 단백질이 순서대로 활성화되어 옵소닌"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.innate.complement-functional-tests.b.7d2dafb7cfa1",
+      "sourceSha256": "7d2dafb7cfa13b1f05806c71b62f3cedbf233ba655bc79dc5e46d8a00634bc41",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.innate.complement-functional-tests.b.3a892f0eac6d",
+      "sourceSha256": "3a892f0eac6df36dbf0452032266473423994cd4d32e3c742e3d53fa69bc1563",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.innate.complement-functional-tests.b.5ad3e656c672",
+      "sourceSha256": "5ad3e656c672c67d165db8684837c167141a78b46ba1f5c194465cb2b451d768",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.2ffab7de4bd59a584046",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 83,
+            "end": 109,
+            "exact": "어떤 자극과 종말점을 쓰는 검사인지가 중요하다.",
+            "prefix": "하지 못하는 조절 이상을 고려할 수 있다. ",
+            "suffix": " 혈중에서 정상으로 측정된 기능이 특정 조직"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.innate.complement-functional-tests.b.bbe8658682f1",
+      "sourceSha256": "bbe8658682f1c2fcc69d3fe2a830a9b8467f84188a61d38cb290f0d631744fb5",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.innate.complement-functional-tests.b.36da77b15c26",
+      "sourceSha256": "36da77b15c263c7dd90e2b4aefdb53883c7efcf103dcfe4bb55c21bf10eedb53",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.innate.complement-functional-tests.b.7449907f6a22",
+      "sourceSha256": "7449907f6a226e18c6592c37aaee99ad4537a475e096780cba62d4f4ee0866b7",
+      "sourceLengthUtf16": 197,
+      "annotations": [
+        {
+          "id": "ann.ce7a8ff9db60d83143fa",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 100,
+            "exact": "체내 활성과 시험관에서 생긴 활성화를 구별해야 하므로 검사 종류에 맞는 취급 조건이 필요하다.",
+            "prefix": "시간, 분리와 냉동·해동의 영향을 받는다. ",
+            "suffix": " 서로 다른 검사실의 구체적인 운송 지시가 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.innate.complement-functional-tests.b.9ac69092abd2",
+      "sourceSha256": "9ac69092abd2250fcc4be7fc7ee9c44403e9a1cbe77bf6cdcea435ab2df90eb4",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.pneumonia-host-gas-exchange",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.b.e0f6fba7e79d",
+      "sourceSha256": "e0f6fba7e79da7bb47f93c867ed6188f2688110dff60993c5b92689ac7cd8007",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.4f34b09806721f6d0307",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 184,
+            "end": 214,
+            "exact": "균이 검출되었다는 사실과 폐포의 임상 감염은 구별한다.",
+            "prefix": " 균형이 무너지면 감염이 성립할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.b.35174480ee5a",
+      "sourceSha256": "35174480ee5ac877d5fb550b33c5ac6719d03de124d69c0fdfbf18df34250d6a",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.b.dff285544ffa",
+      "sourceSha256": "dff285544ffa0c8347c382a4136154d40490c484e0546c1c03edd91d19c830ca",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.b.89c312dcea76",
+      "sourceSha256": "89c312dcea761fee8e081b8b01c302de3471589f90c329c9841fef12a23f50df",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.b.269d34df487a",
+      "sourceSha256": "269d34df487a8e06642d4270726b4287d9cd080a4d6e29860376519f267f8093",
+      "sourceLengthUtf16": 170,
+      "annotations": [
+        {
+          "id": "ann.c5e128e7427535f4f57e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 22,
+            "end": 24,
+            "exact": "보체",
+            "prefix": "대식세포의 인지와 신호, 호중구 유입과 ",
+            "suffix": "·항체 등은 병원체 제거에 기여한다. 동시에"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.b.b1a2deb8249f",
+      "sourceSha256": "b1a2deb8249f8e32a160a448adcf11c21f1e948a6c3089a996dea7ce7ac98b88",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.b.5b60c726b94b",
+      "sourceSha256": "5b60c726b94ba5643585898b8f739f495053402d210659f978142ac79aa58551",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.1e6aee71775381e3e68c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 144,
+            "exact": "심부전",
+            "prefix": " 경과가 같은 설명을 지지하는지 확인한다. ",
+            "suffix": "과 출혈·경색·종양 등 감염 외 실질 이상도"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.b.257a31887e22",
+      "sourceSha256": "257a31887e22fbbd7f956ab78860cb37d1a0d986aaa7d43a6122f8a242d4461d",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.p.extra0846.0",
+      "sourceSha256": "c561173060d85c3fc3da8d5d763e811ff3e1731d39ad656903f4648bfc22960e",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.p.extra0846.1",
+      "sourceSha256": "7a76e3eab0e170bf6d3a1d2327b92800cd68fef545e11847c24f2fbb11196ba7",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.p.more0846.0",
+      "sourceSha256": "60c5d36fe41ff4e43eb56ea9beaecc72f20c2fad4dd38a4f4105bfb4e6594e64",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.cd81acc6af570c93fe6e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 72,
+            "end": 74,
+            "exact": "흉막",
+            "prefix": ". 병변의 깊이·크기와 기관지의 열림,주변 ",
+            "suffix": "액과 체형은 실제 진찰 소견에 영향을 준다."
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        },
+        {
+          "id": "ann.63eaced7b4cf2594dd36",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 181,
+            "end": 183,
+            "exact": "기흉",
+            "prefix": "흉막 자극의 단서가 될 수 있지만 폐색전과 ",
+            "suffix": "·다른 흉막 질환도 감별한다."
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.pneumonia-host-gas-exchange.p.more0846.1",
+      "sourceSha256": "786a02f5394cdd674ca514f1f7f763547675d5a20784d88ae27f395b20fb2169",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    }
+  ]
+}

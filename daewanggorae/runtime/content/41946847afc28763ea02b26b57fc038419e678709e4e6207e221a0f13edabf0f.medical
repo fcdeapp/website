@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.tumor.immunoediting-escape",
+  "subjectId": "immunology",
+  "chapterId": "tumor",
+  "title": {
+    "ko": "종양의 면역편집과 회피 경로",
+    "en": "Tumor Immunoediting and Immune Escape"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.tumor.immunoediting-escape.lo.01",
+      "text": "항원 소실·제시 결함·억제를 구별한다"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.lo.02",
+      "text": "B2M·IFN 신호의 변화를 해석한다"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.lo.03",
+      "text": "단일 생체표지로 반응을 확정할 수 없는 이유를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.fb4d864e9ba9",
+      "type": "heading",
+      "level": 2,
+      "text": "종양과 면역계가 서로를 바꾼다"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.1bfdade02941",
+      "type": "paragraph",
+      "markdown": "종양 세포는 정상 자기 단백질의 변형·발현 변화와 새로운 돌연변이 유래 항원을 가질 수 있다. 면역계가 일부 세포를 제거하면 남은 세포의 성질이 달라질 수 있다. 제거·평형·회피의 개념은 면역편집(immunoediting)을 이해하는 틀이다. 모든 종양이 같은 순서를 뚜렷하게 거치는 시계표는 아니며, 한 종양 안에서도 여러 세포군과 면역 상태가 공존할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.a172101d481e",
+      "type": "paragraph",
+      "markdown": "항원이 많아 보인다고 효과적인 T세포 반응이 자동으로 생기는 것은 아니다. 단백질 발현, 가공과 HLA 결합, 수지상세포의 초기 활성화와 조직 진입, 최종 효과기 기능이 이어져야 한다. 돌연변이 수와 실제 제시되는 면역원성 펩타이드 수는 다르다. 종양의 전체 유전체 자료와 특정 T세포가 볼 수 있는 표면 정보 사이에는 여러 선택 단계가 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.a6c36c7ac7e7",
+      "type": "heading",
+      "level": 2,
+      "text": "보이는 표적을 없애는 방법"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.6e07f8400d6a",
+      "type": "paragraph",
+      "markdown": "종양은 표적 항원을 잃거나 항원 가공·제시를 바꾸어 인식을 줄일 수 있다. β2-microglobulin을 암호화하는 B2M의 양쪽 대립유전자 기능 소실은 고전적 MHC I 표면 제시에 큰 영향을 줄 수 있다. 특정 HLA 대립유전자의 소실도 일부 T세포 인식을 바꾼다. 모든 MHC I 저하가 같은 유전자 결함으로 생기는 것은 아니며 가역적인 발현 억제와 구조적 소실을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.6c569cfd71ae",
+      "type": "paragraph",
+      "markdown": "IFN-γ 수용체와 JAK1·JAK2 관련 신호는 항원제시 환경과 성장 억제 등 여러 반응을 조절한다. 이 경로의 결함은 interferon에 대한 반응을 바꿀 수 있지만 모든 조건에서 기저 MHC I을 완전히 없애는 것과 같지는 않다. 기저량과 유도량, 세포 생존을 따로 측정해야 한다. 한 신호 결함을 표면 제시의 완전 소실과 자동으로 연결하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.508f4d261149",
+      "type": "heading",
+      "level": 2,
+      "text": "표적이 보여도 작동을 막는다"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.9355bac01360",
+      "type": "paragraph",
+      "markdown": "PD-L1 같은 리간드와 억제성 세포·대사 환경은 효과기 T세포의 반응을 제한할 수 있다. 혈관과 기질의 구조는 세포가 종양 안으로 들어오는 경로에도 영향을 준다. 표적 특이 T세포가 혈액에서 검출되어도 종양 내부에 충분히 도착했다는 증거는 아니다. 종양 가장자리의 침윤과 실제 암세포 가까이의 접촉은 공간적으로 다른 결과다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.c56892377884",
+      "type": "paragraph",
+      "markdown": "억제 신호를 차단해도 항원이나 제시 장치가 소실된 경우에는 원래의 CD8 표적 인식이 저절로 복원되지 않을 수 있다. 반대로 가역적 억제가 중심인 환경과 영구적인 가공 결함은 같은 전략의 효과가 다를 수 있다. Missing-self가 NK 반응에 유리한 조건이 될 수 있어도 활성 신호·교육과 다른 억제 경로가 필요하다. 한 효과기에서 보이지 않는다는 사실을 모든 면역 공격으로부터 완전히 숨었다는 뜻으로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.4d911aa28d12",
+      "type": "heading",
+      "level": 2,
+      "text": "생체표지와 표본의 대표성"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.17d0267aedd7",
+      "type": "paragraph",
+      "markdown": "PD-L1 염색은 세포 종류와 검사법·판독 방식, 채취 시점의 영향을 받는다. 한 구역의 양성·음성이 종양 전체의 모든 시점과 동일하지 않을 수 있다. 치료 전후와 전이 부위에 따라 항원·HLA와 침윤 상태가 달라질 수도 있다. 한 표지를 특정 치료의 절대적 성공·실패 보증으로 해석하지 않는다. 실제 적용은 암종별 검증된 기준을 요구한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.b.84f7da4899c3",
+      "type": "paragraph",
+      "markdown": "실험에서는 동일한 T세포와 종양 세포를 사용하여 펩타이드 공급, HLA 복원과 억제 차단을 나누어 비교할 수 있다. 반응이 어느 조건에서 회복되는지 보면 제한 단계의 가설을 좁힐 수 있다. 다만 인위적인 높은 펩타이드 농도나 과발현은 생체와 다를 수 있다. 기전의 복원과 환자의 치료 반응은 다른 수준의 근거다. 실제 항암제 선택과 병용·용량은 별도 임상 지침에 따른다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tumor.immunoediting-escape.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "항원 소실",
+            "인식할 재료의 감소"
+          ],
+          [
+            "제시 결함",
+            "가공·HLA·β2-microglobulin 등"
+          ],
+          [
+            "접근·억제",
+            "세포 위치와 국소 반응 제한"
+          ],
+          [
+            "바이오마커",
+            "검사·암종·시점별 검증 범위 필요"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/tumor/sections/immunology.tumor.immunoediting-escape.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.tumor.immunoediting-escape.001"
+  ],
+  "relatedLessons": [
+    "immunology.transplant.allorecognition-pathways",
+    "immunology.mucosal.iga-oral-tolerance"
+  ]
+}

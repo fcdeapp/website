@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.chromosome-question-pairs",
+  "lessonId": "pathology.genetic.chromosomal-dosage",
+  "title": "염색체 해석의 서로 다른 질문",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "염색체 총수",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "구간별 사본수·용량",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "물질의 양·배치",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "균형·절단점·발현",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "검사 검출 범위",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "음성의 의미",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.chromosome-question-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "총수와 용량 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.chromosome-question-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "균형과 기능 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.chromosome-question-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "CMA와 핵형 구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "원문염색체사진·계보가아닌독립개념비교다.특정가족재발률을계산하지않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.neoplasia.microenvironment-angiogenesis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.fc99037e2d07",
+      "sourceSha256": "fc99037e2d078614dcf505266432236ac89c22fc5484f1aa88c72f5909f506b6",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.489fb99402151a523550",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 8,
+            "end": 30,
+            "exact": "tumor microenvironment",
+            "prefix": "종양 미세환경(",
+            "suffix": ", TME)은 종양세포와 주변의 섬유모세포,"
+          },
+          "conceptId": "reader.term.9296c337c80862d9",
+          "targetDocumentId": "pathology.neoplasia.growth-control"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.a3b9f7746da1",
+      "sourceSha256": "a3b9f7746da13f7aa62e944fd15d1f24c85ff2b5cd64f20e3d64a7eea514580c",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.5057c18132f5",
+      "sourceSha256": "5057c18132f56af72b95bd150e85082cdfe0d898300ac84b27796edcb76f645b",
+      "sourceLengthUtf16": 230,
+      "annotations": [
+        {
+          "id": "ann.37467e45c173e4e0527c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 182,
+            "end": 230,
+            "exact": "유전적 조절과 다른 신호도 관여할 수 있어 산소의 직접 측정과 표지자 검출을 구별한다.",
+            "prefix": "인이나 같은 산소 분압을 뜻하지는 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.3597c1029014",
+      "sourceSha256": "3597c1029014a48b36d48f90c63973ef2a0b689ed9bb24fad2878f151c1d5891",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.20317c994585",
+      "sourceSha256": "20317c994585014641330b7133703f5371a2b7ed4de1d4e0c22caea49ccd667a",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.8a23bbdebcf57a8845df",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 45,
+            "end": 97,
+            "exact": "VEGF–VEGF수용체 계통은 중요한 연결 중 하나이며 여러 성장인자와 억제 신호가 협동한다.",
+            "prefix": "존 혈관에서 새 혈관이 형성되는 과정이다. ",
+            "suffix": " 내피의 증식·이동과 지지세포의 참여,기저막"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.055806f474a1",
+      "sourceSha256": "055806f474a142da2a5f32f9b52a627bb70fd986cebf8bc7bec29e9e75c1bd9a",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.3a016a3c7486",
+      "sourceSha256": "3a016a3c7486858af57b6ffa562d41a87933e948a59dbe17f07db10ff005ef64",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.ade444f85893",
+      "sourceSha256": "ade444f858930eac0c0cd1ef580f8951ce9d0aa00a304e10ac9da3422597d7a3",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.68094e5d7009",
+      "sourceSha256": "68094e5d7009cf5da2b3e947fb458bf5d4d6c8ed204746c00f00bd38e5c22857",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.microenvironment-angiogenesis.b.793ce59b0fcb",
+      "sourceSha256": "793ce59b0fcb4267a1abd077d36183b927a62f9d824e18f031c1ae795cdc4ea9",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    }
+  ]
+}

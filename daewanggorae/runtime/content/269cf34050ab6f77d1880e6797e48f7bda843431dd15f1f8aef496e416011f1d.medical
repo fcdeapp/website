@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "obstetrics.adaptation.respiration-acid-base",
+  "subjectId": "obstetrics",
+  "chapterId": "adaptation",
+  "title": {
+    "ko": "임신의 환기·산소 예비량과 산염기",
+    "en": "Ventilation Oxygen Reserve and Acid–Base Physiology in Pregnancy"
+  },
+  "learningObjectives": [
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.lo.01",
+      "text": "분당환기와 폐포환기를 구별한다"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.lo.02",
+      "text": "임신의 CO₂·중탄산염 변화를 연결한다"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.lo.03",
+      "text": "호흡곤란과 혈액가스의 맥락을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.3e75ab12f029",
+      "type": "heading",
+      "level": 2,
+      "text": "호흡 자극과 폐포환기"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.335c572254a3",
+      "type": "paragraph",
+      "markdown": "임신의 호르몬 환경은 호흡 중추와 환기 조절에 영향을 준다. 분당환기(minute ventilation)는 일회호흡량과 호흡수의 곱이며, 실제 가스교환에 기여하는 폐포환기(alveolar ventilation)는 사강으로 가는 부분을 제외한다. 숨을 빠르게 쉰다는 관찰만으로 충분한 폐포환기가 이루어진다고 판단할 수 없다. 호흡의 깊이·사강과 폐의 상태가 함께 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+      ]
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.249e460ce9ba",
+      "type": "paragraph",
+      "markdown": "폐포환기가 이산화탄소 생성에 비해 증가하면 동맥 이산화탄소분압(PaCO₂)이 낮아진다. 임신에서는 이에 대응한 신장의 중탄산염 배설 조절이 함께 일어나 산염기 상태를 만든다. 비임신 성인의 기준만으로 임신 혈액가스를 읽으면 정상 적응과 병적 환기 저하를 혼동할 수 있다. 수치의 해석에는 임신 시기·원래 질환과 현재 호흡·대사 문제가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.f7484ec62bee",
+      "type": "heading",
+      "level": 2,
+      "text": "산소 소비와 예비량"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.cfdcf9c34ef4",
+      "type": "paragraph",
+      "markdown": "임신에서는 모체·태아태반 단위의 대사 요구로 산소 소비가 증가한다. 커진 자궁과 횡격막 위치 변화는 폐용적에 영향을 줄 수 있으며 기능적 잔기량(functional residual capacity, FRC)과 산소 저장의 여유를 이해하는 데 중요하다. 산소 요구가 높고 저장량이 줄면 환기가 중단될 때 산소화가 더 빠르게 악화할 수 있다. 산소포화도 한 시점과 안전한 호흡 예비량을 같은 뜻으로 읽지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.29354416fa70",
+      "type": "paragraph",
+      "markdown": "임신의 호흡곤란은 생리적 감각 변화에서 빈혈·심장질환·폐혈전색전과 감염 등 다양한 원인으로 생길 수 있다. 갑작스러운 발생·흉통·실신·객혈이나 저산소증, 심한 빈맥과 운동 능력 저하는 평가를 구체화한다. 임신이라는 이유로 모든 증상을 정상 적응으로 돌리지 않는다. 증상의 시간과 산소화·순환·폐 소견을 함께 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.733b384c7bcf",
+      "type": "heading",
+      "level": 2,
+      "text": "완충식의 분자와 분모"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.f65937ddf99f",
+      "type": "paragraph",
+      "markdown": "탄산수소 완충계를 단순화하면 pH는 중탄산염과 용해된 CO₂의 비에 따라 달라진다. 흔히 사용하는 식은 pH=6.1+log₁₀([HCO₃⁻]/(0.03×PaCO₂))이며 중탄산염은 mmol/L, 분압은 mmHg로 놓는다. 0.03은 이 단위계에서의 CO₂ 용해도 근사값이다. 수소이온 농도의 로그 척도이므로 pH가 중탄산염이나 분압에 선형 비례하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.d305e463a33b",
+      "type": "paragraph",
+      "markdown": "중탄산염을 20mmol/L로 고정한 가상 계산에서 PaCO₂가 30mmHg라면 pH는 약 7.45다. 이 값은 한 조합의 수학적 결과이며 모든 임신부의 목표나 실제 보상식을 뜻하지 않는다. 중탄산염이 낮은 이유가 신장 보상인지 대사성 산증인지, 두 장애가 함께 있는지 별도로 확인해야 한다. pH가 거의 정상이어도 복합 장애가 있을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.29d0818680ca",
+      "type": "heading",
+      "level": 2,
+      "text": "측정값을 임상에 연결한다"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.354d89d65824",
+      "type": "paragraph",
+      "markdown": "호흡수와 산소포화도는 CO₂ 제거를 직접 보여주지 않는다. 산소를 공급받아 포화도가 유지되어도 환기가 부족할 수 있고, 혈색소가 낮으면 정상 포화도에서도 산소 함량이 적을 수 있다. 혈액가스·혈색소·대사와 순환을 필요한 질문에 맞추어 연결한다. 채혈 종류와 산소 투여 상태, 측정 시점도 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.b.0f125b4b7492",
+      "type": "paragraph",
+      "markdown": "폐의 정상 3D 구조는 흉곽·횡격막·주변 장기의 위치를 학습하는 데 도움이 된다. 그러나 정적 모델은 임신 중 용적 변화·환기·산소화·혈류나 태아 가스교환을 직접 보여주지 않는다. 용적과 시간·분압의 관계는 별도의 그래프와 생리 모형으로 읽는다. 공간 구조와 기능 자료를 함께 사용하되 각각이 답하는 질문을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.suppheading0851",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 판단의 연결"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.supp.b6e9211c5111",
+      "type": "paragraph",
+      "markdown": "폐포환기는 일회호흡량에서 사강용적을 뺀 값에 호흡수를 곱한 것으로 단순화할 수 있다. 같은 분당환기라도 얕고 빠른 호흡과 깊은 호흡에서는 유효한 가스교환량이 다를 수 있다. 사강과 호흡의 조합이 바뀌면 CO₂ 제거도 바뀐다. 따라서 호흡수의 상승과 충분한 환기, 또는 숨찬 느낌과 저산소증을 서로 같은 의미의 지표로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.supp.6d064a270050",
+      "type": "paragraph",
+      "markdown": "산소포화도는 헤모글로빈에 결합한 산소의 비율에 관한 정보다. 산소 함량에는 헤모글로빈 농도가, 전달에는 심박출량과 실제 조직 분포가 더해진다. 태반으로 충분한 산소가 도달하려면 모체의 폐·혈액·순환이 함께 기능해야 한다. 정상 포화도만으로 빈혈과 저관류를 배제하거나 PaCO₂의 정상 범위를 비임신 상태와 같게 적용하면 서로 다른 생리 문제를 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.table0851",
+      "type": "table",
+      "data": {
+        "title": "조건·측정·기전과 해석",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "분당환기",
+            "일회호흡량×호흡수"
+          ],
+          [
+            "폐포환기",
+            "사강을 제외한 환기"
+          ],
+          [
+            "산소 전달",
+            "혈색소·산소화·심박출량"
+          ],
+          [
+            "혈액가스",
+            "분압·완충·복합 장애"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.diagram.fixed-bicarbonate-co2-0851",
+      "type": "diagram",
+      "diagramRef": "diagram.fixed-bicarbonate-co2-0851",
+      "path": "diagrams/diagram.fixed-bicarbonate-co2-0851.svg",
+      "alt": "고정 중탄산염과 CO₂ 완충 관계의 독립 계산 곡선"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.3d0851",
+      "type": "anatomy3d",
+      "sceneRef": "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+    },
+    {
+      "id": "obstetrics.adaptation.respiration-acid-base.limits0851",
+      "type": "clinicalPearl",
+      "markdown": "기존 정상 성인 장기의 위치와 주변 구조 문맥이다. 임신 자궁·태아·태반·제대혈관·임신에 따른변형·여과·환기·혈류와환자별기능을표현하지않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/adaptation/sections/obstetrics.adaptation.respiration-acid-base.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.obstetrics.adaptation.respiration-acid-base.001",
+    "question.obstetrics.adaptation.respiration-acid-base.002"
+  ],
+  "relatedLessons": [
+    "obstetrics.adaptation.cardiovascular-volume",
+    "obstetrics.adaptation.renal-fluid-laboratory"
+  ]
+}

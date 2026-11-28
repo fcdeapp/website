@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.methods.mic-mbc-timekill",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.methods.mic-mbc-timekill.b.984d5f0232cf",
+      "sourceSha256": "984d5f0232cf163fbdb45e910b3d5e75d8c344918f0ea0397f5c8d58a1364a19",
+      "sourceLengthUtf16": 246,
+      "annotations": [
+        {
+          "id": "ann.42a5238d2d1eed3f548e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 223,
+            "end": 246,
+            "exact": "어떤 종말점을 썼는지 먼저 구별해야 한다.",
+            "prefix": "포의 감소를 별도 회수 과정으로 평가한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.methods.mic-mbc-timekill.b.12e54f7a3239",
+      "sourceSha256": "12e54f7a32397afd114897cd59d60cc42a6b05fa7478f726d54106478a86d6c4",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.mic-mbc-timekill.b.04db52308a5b",
+      "sourceSha256": "04db52308a5b57eb671305f08904c80799d83600f8365cd1caf317a8abb1d480",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.mic-mbc-timekill.b.00cc81cd7f8e",
+      "sourceSha256": "00cc81cd7f8ef022ebf9d70b7e6badb891b67c6c7fbb4ecc61d57bef2d5de1b5",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.mic-mbc-timekill.b.f8a01ddac290",
+      "sourceSha256": "f8a01ddac29057f86a402699f7b586f9fa34503363313b4f7273604f79ac9970",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.mic-mbc-timekill.b.e3055543954b",
+      "sourceSha256": "e3055543954be604dae5169a8c3d89ef976effa1b48c1e2b89de3e91acb9ce43",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.mic-mbc-timekill.b.ec9391f5e891",
+      "sourceSha256": "ec9391f5e89186df6040844ff82b8a5134796dc48883010f7c22ae87219e89ae",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.mic-mbc-timekill.b.58f716147556",
+      "sourceSha256": "58f716147556127258edf1dc9f8d4c34995e05f54d3422387e4a06f47e471ce1",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.041d3c021dd4979988b3",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 132,
+            "end": 135,
+            "exact": "약동학",
+            "prefix": "질과 환자의 실제 조건을 연결하려면 감수성·",
+            "suffix": "·약력학·감염원 조절을 함께 보아야 한다. "
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        },
+        {
+          "id": "ann.af4e415ceeb7ad6c2dde",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 136,
+            "end": 139,
+            "exact": "약력학",
+            "prefix": "자의 실제 조건을 연결하려면 감수성·약동학·",
+            "suffix": "·감염원 조절을 함께 보아야 한다. 검사 수"
+          },
+          "conceptId": "reader.term.3f6c24ce1179f5f7",
+          "targetDocumentId": "pharmacology.general.pharmacodynamics"
+        },
+        {
+          "id": "ann.d67d27fe46d690ce05ac",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 140,
+            "end": 146,
+            "exact": "감염원 조절",
+            "prefix": "제 조건을 연결하려면 감수성·약동학·약력학·",
+            "suffix": "을 함께 보아야 한다. 검사 수치의 정의를 "
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    }
+  ]
+}

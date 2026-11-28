@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.vitamins.folate-cobalamin-one-carbon",
+  "subjectId": "biochemistry",
+  "chapterId": "vitamins",
+  "title": {
+    "ko": "엽산·코발라민과 일탄소 대사",
+    "en": "Folate, Cobalamin and One-Carbon Metabolism"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.lo.01",
+      "text": "THF의 일탄소 형태와 주요 반응을 구별한다"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.lo.02",
+      "text": "B12의 두 보조효소 반응을 연결한다"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.lo.03",
+      "text": "대사 표지와 결핍 판정의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.cc5057533cab",
+      "type": "heading",
+      "level": 2,
+      "text": "일탄소는 같은 크기라도 같은 산화상태가 아니다"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.5c6a553349be",
+      "type": "paragraph",
+      "markdown": "엽산(folate, B9) 계열의 테트라하이드로엽산(tetrahydrofolate, THF)은 여러 산화상태의 일탄소 단위를 운반한다. 메틸·메틸렌·포르밀 형태는 모두 탄소 하나를 포함하지만 쓰이는 반응과 전환 관계가 다르다. Serine과 glycine 대사,세포질과 미토콘드리아 경로가 일탄소 공급에 연결된다. 한 종류의 엽산 농도만으로 모든 형태와 구획의 유효 공급을 완전히 알 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.bb8d18f7a2d0",
+      "type": "paragraph",
+      "markdown": "단백질·핵산 합성과 메틸화는 서로 다른 탄소·전자 흐름을 필요로 한다. ‘엽산이 DNA를 만든다’는 말만으로 외우기보다,어떤 염기 합성에 어떤 형태의 탄소가 들어가고 어느 보조효소가 재생되어야 하는지 따라가야 한다. 엽산은 DNA 가닥의 당–인산 골격을 통째로 직접 조립하는 효소가 아니다. 대사 지원과 실제 중합 반응을 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.17e5ddcd22da",
+      "type": "heading",
+      "level": 2,
+      "text": "퓨린과 티미딜산 합성의 연결"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.1a00cbc78202",
+      "type": "paragraph",
+      "markdown": "퓨린 고리 합성에는 10-formyl-THF가 일탄소 공여체로 참여한다. dUMP에서 dTMP를 만드는 thymidylate synthase 반응에는5,10-methylene-THF가 필요하며 이 과정에서 엽산 형태가 변한다. DHFR(dihydrofolate reductase)는 환원력을 사용하여 엽산 풀을 재생하는 데 중요하다. dTMP 생성 반응과 DNA중합효소가 그 뉴클레오타이드를 이용하는 단계는 서로 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.a557e437532e",
+      "type": "paragraph",
+      "markdown": "이 경로가 제한되면 빠르게 분열하는 세포의 DNA 합성에 부담이 생길 수 있다. 골수의 핵 성숙과 세포질 성장 사이의 불균형은 거대적혈모구성 변화와 연결된다. 그러나 큰 적혈구가 보인다는 이유만으로 엽산 또는B12 결핍을 확정하지 않는다. 다른 약물·질환·조혈 상태와 검사 소견을 함께 보아야 한다. 대사 기전은 감별을 돕지만 단일 형태 소견의 특이도를 만들어 주지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.78df3ef932b7",
+      "type": "heading",
+      "level": 2,
+      "text": "메티오닌·SAM과 엽산의 재생"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.3b3f34f7e9d8",
+      "type": "paragraph",
+      "markdown": "Methionine synthase는 homocysteine을 methionine으로 전환하는 데 관여하며,5-methyl-THF와 메틸코발라민(methylcobalamin)이 연결된다. 메틸기가 전달되면 THF 풀로 돌아갈 수 있다. 이 연결은 엽산의 다른 형태 이용과 메티오닌 공급을 함께 조절한다. 같은 탄소 이동에 엽산과B12가 모두 필요하다는 사실은 한 영양소만 충분해도 경로가 항상 정상이라는 뜻이 아님을 보여 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.64bad6cd37de",
+      "type": "paragraph",
+      "markdown": "Methionine은 S-adenosylmethionine(SAM) 생성에 사용되고,SAM은 여러 메틸전달 반응의 공여체로 작용한다. 이후 S-adenosylhomocysteine과 homocysteine의 처리·재활용은 경로의 균형에 영향을 준다. 혈중 homocysteine은 여러 과정의 결과이므로 하나의 효소 활성을 직접 읽는 계기판이 아니다. 메틸 공급·기질·분해·신장 기능을 분리하여 생각해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.35066fbf62a6",
+      "type": "heading",
+      "level": 2,
+      "text": "메틸엽산 포획의 개념"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.442e421c656c",
+      "type": "paragraph",
+      "markdown": "B12 관련 methionine synthase 기능이 부족하면5-methyl-THF에서 다른 엽산 풀로의 회복이 제한되는 이른바 메틸엽산 포획(methyl-folate trap)의 개념으로 일부 대사 영향을 설명할 수 있다. 엽산 총량이 있다는 사실과 DNA 합성에 쓸 수 있는 형태가 충분하다는 사실은 다르다. 다만 실제B12 결핍의 모든 신경·혈액 소견을 이 한 기전만으로 완전히 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.bf601e3cb121",
+      "type": "paragraph",
+      "markdown": "혈액 소견과 신경 기능은 서로 다른 관찰이며 시간 경과도 다를 수 있다. 빈혈이 없다는 사실만으로B12 관련 신경 문제를 항상 배제하거나,혈액 소견 개선이 신경학적 원인 해결을 증명한다고 보아서는 안 된다. 보충과 실제 치료의 선택·순서는 환자의 검사와 임상 상태,검증된 기준에 따라 다루며 여기서 임의의 용량을 제시하지 않는다. 경로의 연결과 임상 의사결정의 근거를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.783eae91cccf",
+      "type": "heading",
+      "level": 2,
+      "text": "B12의 다른 반응은 미토콘드리아에 있다"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.9c4d3ad775e1",
+      "type": "paragraph",
+      "markdown": "5′-deoxyadenosylcobalamin은 methylmalonyl-CoA mutase 반응에 중요하다. 이 반응은 methylmalonyl-CoA를 succinyl-CoA로 전환하여 홀수 탄소 지방산과 일부 아미노산 탄소의 처리에 연결된다. Methionine synthase의 메틸전달과 달리 탄소 골격 재배열을 돕는 다른 보조효소 화학이다. B12가 들어간다는 이유만으로 두 반응의 기질과 구획을 같다고 외우지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.ce773155cdfd",
+      "type": "paragraph",
+      "markdown": "메틸말론산(methylmalonic acid, MMA) 증가는 이 경로의 기능 변화와 연결되어B12 평가에 도움을 줄 수 있다. 그러나 신기능과 연령·다른 원인도 수치에 영향을 주어 단독으로 항상 특이적인 확진 지표는 아니다. Homocysteine은 엽산·B12 외의 영양소와 신장 상태에도 영향을 받는다. 실제 검사법·참고범위와 임상 맥락을 생략한 고정 숫자 하나로 판정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.e475e913bf82",
+      "type": "heading",
+      "level": 2,
+      "text": "공급량과 대사산물의 양은 다르다"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.fb6564f7e358",
+      "type": "paragraph",
+      "markdown": "효소 유량이 줄면 상류 대사산물이 쌓일 수 있지만,혈중 농도는 생성·분포·배설의 합성 결과다. 가상 한 구획에서 물질 생산률이5단위/min,청소율이1L/min이면 정상상태 농도는5단위/L다. 청소율이0.5로 줄면 생산률이 그대로여도10이 된다. 이 예는 실제MMA 수치나 신부전의 임상 절단값이 아니라,농도 증가의 해석에 필요한 수지를 보여 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.b.b2ae4a23e0ca",
+      "type": "paragraph",
+      "markdown": "엽산·B12를 비교할 때에는 섭취와 흡수,활성 형태 전환,세포 내 반응,혈구와 신경 기능,대사산물 제거의 축을 따로 적는다. 기능 표지·형태·혈중 영양소가 서로 맞지 않으면 어느 한쪽을 무조건 버리지 말고 시간과 구획·측정의 차이를 검토한다. 이런 접근은 복잡한 결핍과 대사 이상을 단순한 두 열의 암기표 이상으로 이해하게 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.diagram.metabolite-clearance-example",
+      "type": "diagram",
+      "diagramRef": "diagram.metabolite-clearance-example",
+      "path": "diagrams/diagram.metabolite-clearance-example.svg",
+      "alt": "생산 고정의 대사산물 농도의 독립 계산 곡선"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.diagram.folate-cobalamin-reaction-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.folate-cobalamin-reaction-pairs",
+      "path": "diagrams/diagram.folate-cobalamin-reaction-pairs.svg",
+      "alt": "엽산·B12의 다른 연결의 단계별 비교"
+    },
+    {
+      "id": "biochemistry.vitamins.folate-cobalamin-one-carbon.table.compare",
+      "type": "table",
+      "data": {
+        "title": "일탄소와 B12의 두 경로",
+        "columns": [
+          "과정",
+          "대표 연결",
+          "해석"
+        ],
+        "rows": [
+          [
+            "퓨린",
+            "formyl-THF",
+            "고리탄소"
+          ],
+          [
+            "dTMP",
+            "methylene-THF",
+            "DNA합성지원"
+          ],
+          [
+            "Methionine synthase",
+            "methylB12·methylTHF",
+            "재생·메티오닌"
+          ],
+          [
+            "Mutase",
+            "adenosylB12",
+            "methylmalonyl→succinyl"
+          ],
+          [
+            "혈중표지",
+            "생산·제거",
+            "신장등영향"
+          ]
+        ],
+        "notes": "형태·구획·검사소견을함께보며단일표지로원인을확정하지않는다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/vitamins/sections/biochemistry.vitamins.folate-cobalamin-one-carbon.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "B12의 메틸전달과 골격재배열은 다른 활성 형태와 반응이다."
+  ],
+  "reviewQuestions": [
+    "question.biochemistry.vitamins.folate-cobalamin-one-carbon.001",
+    "question.biochemistry.vitamins.folate-cobalamin-one-carbon.002"
+  ],
+  "relatedLessons": [
+    "biochemistry.vitamins.cofactors",
+    "biochemistry.redox.antioxidant-systems",
+    "biochemistry.vitamins.fat-soluble-functions"
+  ]
+}

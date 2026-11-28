@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.tolerance.peripheral-regulation",
+  "subjectId": "immunology",
+  "chapterId": "tolerance",
+  "title": {
+    "ko": "말초 관용·조절 T세포와 반응의 종료",
+    "en": "Peripheral Tolerance Regulatory T Cells and Response Termination"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.tolerance.peripheral-regulation.lo.01",
+      "text": "Anergy·삭제·조절을 비교한다"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.lo.02",
+      "text": "FOXP3·CTLA-4·IL-2의 관계를 설명한다"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.lo.03",
+      "text": "억제와 exhaustion을 동일시하지 않는 이유를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.9771b17b6aff",
+      "type": "heading",
+      "level": 2,
+      "text": "항원을 만났다고 항상 싸우지 않는다"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.fabf1f4465bd",
+      "type": "paragraph",
+      "markdown": "말초 관용은 중추 선택을 통과한 세포가 자기 항원과 무해한 자극에 불필요하게 반응하지 않도록 조절하는 과정이다. 항원 인식과 공동자극·사이토카인의 불일치, 지속 자극과 생존 신호의 부족은 세포의 기능과 운명을 바꾼다. 항원 특이성이 존재한다는 사실과 효과기 반응이 실제 발생했다는 결과는 다르다. 면역계의 침묵도 능동적인 조절의 결과일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.ec49ae901d68",
+      "type": "paragraph",
+      "markdown": "Anergy는 적절한 재자극에도 반응이 제한되는 기능 상태를 기술하며, 삭제(deletion)는 세포가 소실되는 과정이다. 둘은 모두 반응 감소를 만들지만 살아 있는 세포의 수와 복원 가능성이 다를 수 있다. 단순히 배양액의 IL-2가 낮다는 결과만으로 두 기전을 구별할 수 없다. 항원 특이 세포 수, 생존과 다른 자극에 대한 반응을 함께 측정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.0f3df2af983e",
+      "type": "heading",
+      "level": 2,
+      "text": "조절 T세포가 사용하는 여러 수단"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.063e71687e33",
+      "type": "paragraph",
+      "markdown": "FOXP3 관련 조절 T세포는 자기관용과 과도한 염증의 제한에 중요하다. CTLA-4를 통한 항원제시세포의 공동자극 환경 조절, IL-10·TGF-β 등의 국소 작용과 대사·접촉 관련 기전이 상황에 따라 참여한다. 하나의 억제 사이토카인만으로 Treg의 모든 기능을 설명할 수 없다. 어디에 있고 어떤 표적 세포를 조절하는지가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.a9a905b0a1ce",
+      "type": "paragraph",
+      "markdown": "Treg는 IL-2 수용체 α사슬 CD25를 높게 발현하는 경우가 많고 외부 IL-2 신호에 의존한다. 일반 T세포 활성화에서도 CD25가 증가할 수 있으므로 CD25만으로 Treg를 정의하지 않는다. FOXP3의 검출 역시 종·활성 상태와 판독 맥락을 고려한다. 표현형 검사와 실제 억제 기능, 안정적인 계통 프로그램은 서로 관련되지만 동일한 정보가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.c686b64dbe3b",
+      "type": "heading",
+      "level": 2,
+      "text": "억제 기능의 실험"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.968546c0d59e",
+      "type": "paragraph",
+      "markdown": "효과기 세포에 Treg를 섞어 증식이 감소하는지 보는 공동배양은 억제 기능의 한 접근이다. 초기 세포 수, 자극 강도와 항원제시세포, 생존율을 맞춰야 한다. Treg 비율이 늘 때 효과기 증식이 줄더라도 세포 독성이나 영양 경쟁, 단순한 자극 희석을 검토한다. 접촉 분리와 조건배양액 실험 등으로 기여 경로를 좁힐 수 있지만 생체의 모든 조절을 한 배양으로 재현하지는 못한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.8464f6a46ab1",
+      "type": "paragraph",
+      "markdown": "특정 표지자의 결손이 억제 감소와 관련되면 유전자 복원과 세포 상태 검사가 중요하다. 그 단백질이 Treg의 수·생존을 바꿨는지, 한 세포당 기능을 바꿨는지 나누어 본다. 총세포 수 감소로 인한 억제 저하와 세포 수를 맞춘 뒤에도 남는 기능 저하는 다른 결과다. 이 구별은 면역결핍과 자기면역이 함께 나타나는 현상을 해석하는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.42aca48639d8",
+      "type": "heading",
+      "level": 2,
+      "text": "반응 종료와 만성 자극"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.68d113bfd7d5",
+      "type": "paragraph",
+      "markdown": "감염이 제거되면 확장된 효과기 세포의 상당수가 수축하고 일부가 기억으로 남는다. 항원의 감소, 생존 신호와 세포사 조절이 여기에 관여한다. 세포가 줄었다는 사실만으로 병적인 면역결핍이라 판단하지 않는다. 반대로 지속 감염이나 종양에서는 자극이 남은 상태에서 효과기 기능이 바뀌는 exhaustion 관련 프로그램이 나타날 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.b.07f390be8dd3",
+      "type": "paragraph",
+      "markdown": "PD-1 등의 억제 수용체는 활성화 중에도 발현될 수 있으므로 한 표지만으로 exhaustion을 확진하지 않는다. 지속 자극의 문맥, 여러 기능과 전사 상태, 시간 경과가 필요하다. 정상 관용과 반응 종료, 만성 자극에 대한 기능 재편성은 일부 기계를 공유하지만 같은 상태의 다른 이름은 아니다. 이들을 구별해야 억제 신호 차단의 이득과 자기조직 손상 위험을 함께 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.tolerance.peripheral-regulation.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "Anergy",
+            "살아 있는 세포의 반응성 제한"
+          ],
+          [
+            "Deletion",
+            "세포 소실"
+          ],
+          [
+            "Treg 억제",
+            "다른 세포·환경의 조절"
+          ],
+          [
+            "Exhaustion",
+            "지속 자극 문맥의 기능 재편성"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/tolerance/sections/immunology.tolerance.peripheral-regulation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.tolerance.peripheral-regulation.001"
+  ],
+  "relatedLessons": [
+    "immunology.tolerance.thymic-selection",
+    "immunology.b-cells.development-receptor-editing"
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience.metabolism.energy-excitotoxicity",
+  "subjectId": "neuroscience",
+  "chapterId": "metabolism",
+  "title": {
+    "ko": "뇌 에너지·이온 항상성과 흥분독성",
+    "en": "Brain Energy Ion Homeostasis and Excitotoxicity"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.lo.01",
+      "text": "산소·포도당 공급과 ATP 소비를 연결한다"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.lo.02",
+      "text": "에너지 실패의 전기·삼투 변화를 설명한다"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.lo.03",
+      "text": "흥분독성과 재관류의 복합성을 이해한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.0863c1c2516e",
+      "type": "heading",
+      "level": 2,
+      "text": "활동하는 뇌의 에너지 수요"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.5f75ddaab91a",
+      "type": "paragraph",
+      "markdown": "뇌의 에너지는 활동전위가 생기는 순간에만 쓰이지 않는다. 세포막의 이온 기울기 유지와 시냅스 전달, 단백질과 소기관의 기능, 세포 내 수송에도 ATP가 필요하다. 신경세포와 아교세포는 산소·포도당과 다른 기질, 혈류와 세포 내 대사를 통해 수요에 대응한다. 혈류가 많다는 사실과 실제 산소 이용이 충분하다는 것은 같은 판단이 아니다. 혈액의 산소함량과 미세순환, 확산과 미토콘드리아 기능도 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.2559a3418bdb",
+      "type": "paragraph",
+      "markdown": "Na⁺/K⁺-ATPase는 막전위와 삼투 환경을 지지하는 이온 기울기를 유지한다. 에너지 공급이 부족하면 이온 기울기의 회복이 어려워지고 막의 흥분성과 세포 부피가 변할 수 있다. 펌프의 전류 기여와 펌프가 장기적으로 유지하는 농도 기울기의 역할을 구별한다. 막전위가 변했다고 모두 동일한 발화 증가가 나타나는 것은 아니며, 지속 탈분극은 통로의 비활성화와 전달 실패로 이어질 수 있다. 흥분의 초기 증가와 최종 기능 소실은 시간상 공존할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.d8fecc545597",
+      "type": "heading",
+      "level": 2,
+      "text": "공급 감소와 손상의 공간적 차이"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.651bac0dbe83",
+      "type": "paragraph",
+      "markdown": "혈류와 공급이 심하게 감소한 조직에서는 기능과 구조의 손상이 빠르게 진행할 수 있다. 주변 조직은 공급과 수요, 곁순환과 시간에 따라 다른 상태를 가질 수 있다. 허혈의 중심과 주변을 같은 고정 경계의 두 원으로만 이해하면 실제 이질성을 놓친다. 혈관이 막힌 위치와 조직의 최종 손상 범위는 같지 않다. 체온·혈당과 발작, 전신 순환과 산소화도 조직의 대사 부담과 결과에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.5f408e9c61e9",
+      "type": "paragraph",
+      "markdown": "세포의 이온과 수분 이동은 확산 영상의 변화와 연결되지만 영상은 생리 전체를 직접 측정하지 않는다. 관류와 확산, 혈관 영상은 서로 다른 물리량과 질문을 다룬다. 한 영상의 밝기만으로 모든 조직의 회복 가능성과 치료 안전을 확정하지 않는다. 측정 시점과 분석 방법, 임상 소견과 다른 영상의 관계를 확인한다. 조직의 기능 저하와 세포의 비가역적 소실도 같은 사건으로 합치지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.cccea3a39d19",
+      "type": "heading",
+      "level": 2,
+      "text": "글루탐산과 칼슘의 증폭"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.4fbbe0b6ac1f",
+      "type": "paragraph",
+      "markdown": "에너지 실패와 이온 기울기 변화는 전달물질의 방출·제거를 바꾸어 세포외 글루탐산의 축적에 기여할 수 있다. 수용체를 통한 양이온과 칼슘의 유입은 효소 활성과 미토콘드리아 부담, 산화적 손상과 세포 구조 변화로 이어질 수 있다. 이를 흥분독성(excitotoxicity)의 관점에서 이해한다. 정상 학습에서 필요한 글루탐산·칼슘 신호가 손상 상황에서는 다른 규모와 시간의 부담이 되는 것이다. 수용체 활성 자체를 항상 병적이라고 보면 정상 기능을 설명할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.b70b39ae1380",
+      "type": "paragraph",
+      "markdown": "칼슘의 양뿐 아니라 유입 경로와 세포 내 위치, 완충과 배출·저장 상태가 중요하다. 미토콘드리아는 에너지 생성과 칼슘 조절에 관여하며 손상 시 두 기능이 함께 흔들릴 수 있다. 활성산소와 단백질·막의 변화, 염증과 혈관 반응은 서로 영향을 준다. 여러 경로가 연결된 손상을 하나의 수용체만 차단하면 모두 막을 수 있다고 단정할 수 없다. 실험 모델의 효과가 실제 환자의 기능 개선으로 이어지는지는 별도의 검증이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.3f3c6f4de815",
+      "type": "heading",
+      "level": 2,
+      "text": "재관류와 회복의 조건"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.a0c71d7e453c",
+      "type": "paragraph",
+      "markdown": "혈류 회복은 공급을 개선할 수 있지만 손상된 장벽과 미세순환, 세포 대사의 상태에 따라 회복의 양상이 달라진다. 혈관 재개통과 조직 재관류, 신경 기능 회복은 관련되지만 서로 다른 결과다. 재관류 뒤 부종과 출혈·대사 변화의 위험도 평가해야 한다. 시간만으로 모든 조직의 상태를 정하거나, 혈관이 열렸다는 사실만으로 모든 기능이 정상화되었다고 설명하지 않는다. 전신 상태와 치료 뒤 경과의 감시가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.60349952c132",
+      "type": "paragraph",
+      "markdown": "회복 과정에는 손상 주변의 회로 변화와 가소성, 재활과 보상 전략이 기여할 수 있다. 남은 조직의 기능 조절과 소실된 세포의 재생은 같은 말이 아니다. 근력 검사에서 좋아진 부분과 언어·인지·보행, 피로와 일상 수행의 회복을 나누어 평가한다. 급성 손상의 범위와 만성 기능의 결과 사이에는 시간과 치료·환경이 개입한다. 초기 예후를 설명할 때는 이러한 불확실성과 반복 평가의 필요를 구체적으로 전달한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.9ac78c58b1d8",
+      "type": "heading",
+      "level": 2,
+      "text": "산술 모형의 사용 범위"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.3d4c3cda0288",
+      "type": "paragraph",
+      "markdown": "가상 모형에서 일정한 공급량을 100단위, 수요를 80단위로 두면 차이는 20단위다. 수요가 120단위가 되면 공급량이 같아도 차이는 −20단위다. 이는 공급과 소비의 관계를 보여 주는 단순한 수지 계산이며 실제 뇌의 ATP 저장량과 손상 시간을 예측하지 않는다. 실제 조직에서는 공급과 수요가 모두 변하고 기질·산소의 이용과 세포 구성이 다르다. 평균값으로 작은 영역의 위험을 완전히 대표할 수도 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.c6ee4604bdf2",
+      "type": "paragraph",
+      "markdown": "뇌 에너지의 기초는 허혈과 저혈당·저산소증, 발작과 대사 질환을 연결한다. 의식 저하의 원인을 평가할 때는 이러한 상태가 서로 공존할 수 있음을 고려한다. 혈당이 낮거나 호흡이 불안정한 환자의 현재 위해를 구조 영상이 끝날 때까지 미루지 않는다. 정상 뇌와 혈관의 3D 자료는 위치와 공급 영역의 배경을 제공하지만 ATP와 수용체 활성·칼슘·산소 이용을 표현하지 않는다. 분자와 시간의 변화는 별도의 그래프와 경로 자료로 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.c592559838f5",
+      "type": "heading",
+      "level": 2,
+      "text": "혈류와 산소 이용의 질량수지"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.b36f62bd8ecc",
+      "type": "paragraph",
+      "markdown": "안정된 조건에서 한 영역의 산소 소비는 혈류와 동맥·정맥 산소함량 차이의 곱으로 생각할 수 있다. 혈류를 mL혈액/분, 산소함량을 mL산소/mL혈액으로 쓰면 결과는 mL산소/분이 된다. 함량이 mL산소/dL혈액으로 보고되었다면 혈액 부피 단위를 맞추어야 한다. 이 관계는 들어온 산소와 나간 산소의 차이를 이용한 질량수지이며, 측정한 정맥혈이 실제로 어떤 영역을 대표하는지와 정상상태 가정이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.10f6e2846825",
+      "type": "paragraph",
+      "markdown": "산소 추출률은 동맥에 들어온 산소 가운데 조직에서 이용한 비율로 설명할 수 있다. 혈류가 줄었을 때 추출이 보상적으로 변할 수 있지만 그 여유는 무한하지 않다. 혈류와 추출률의 평균값이 정상처럼 보여도 작은 부위의 공급 실패가 숨겨질 수 있다. 혈액 산소함량이 낮은 빈혈과 낮은 동맥 산소화, 혈류 저하와 세포의 이용 장애는 서로 다른 출발점이다. 의식과 기능의 변화가 비슷해도 교정해야 할 원인과 모니터링이 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.b.71cd7f8e5e1f",
+      "type": "paragraph",
+      "markdown": "실험에서 산소 소비가 감소했다면 공급 부족으로 기능이 실패한 경우와 활동 요구가 낮아진 경우, 마취와 체온·세포 소실의 영향을 구별해야 한다. 한 수치의 방향만으로 보호 효과를 주장할 수 없다. 혈류·함량과 전기활동, 행동과 조직의 생존을 함께 평가하면 대안 설명을 좁힐 수 있다. 이는 약물과 재관류, 신경 보호 중재를 평가할 때 대사 지표와 환자에게 중요한 결과를 분리하여 해석해야 하는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.table0855",
+      "type": "table",
+      "data": {
+        "title": "관찰과 확인할 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "공급",
+            "100단위 일정"
+          ],
+          [
+            "수요",
+            "80·100·120단위"
+          ],
+          [
+            "미측정",
+            "실제 ATP·혈류·세포 생존"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neuroscience.metabolism.energy-excitotoxicity.diagram.hypothetical-energy-balance-0855",
+      "type": "diagram",
+      "diagramRef": "diagram.hypothetical-energy-balance-0855",
+      "path": "diagrams/diagram.hypothetical-energy-balance-0855.svg",
+      "alt": "고정 공급에서 수요와 차이의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/metabolism/sections/neuroscience.metabolism.energy-excitotoxicity.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroscience.metabolism.energy-excitotoxicity.001",
+    "question.neuroscience.metabolism.energy-excitotoxicity.002"
+  ],
+  "relatedLessons": [
+    "neuroscience.glia.barrier-neurovascular",
+    "neurology.neurooncology.mass-pressure"
+  ]
+}

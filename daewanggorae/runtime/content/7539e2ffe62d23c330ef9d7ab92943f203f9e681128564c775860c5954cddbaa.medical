@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroanatomy.autonomic.central-peripheral",
+  "subjectId": "neuroanatomy",
+  "chapterId": "autonomic",
+  "title": {
+    "ko": "자율신경의 중추·신경절·내장신경 경로",
+    "en": "Central and Peripheral Autonomic Pathways"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.lo.01",
+      "text": "교감·부교감신경의 절전 세포체와 신경절 위치를 구별한다"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.lo.02",
+      "text": "백색·회색교통가지와 내장신경의 섬유 성분을 설명한다"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.lo.03",
+      "text": "전달물질·표적 수용체·내장감각과 체성신경의 차이를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.ac67e11a32f2",
+      "type": "heading",
+      "level": 2,
+      "text": "두 뉴런 경로를 구별하는 이유"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.246943b929fe",
+      "type": "paragraph",
+      "markdown": "자율신경계(autonomic nervous system)는 심장근·평활근·샘과 여러 내장 기능을 조절하는 중추·말초 회로를 포함한다. 전형적인 원심성 경로에서는 중추의 절전뉴런(preganglionic neuron)이 말초 자율신경절에서 절후뉴런(postganglionic neuron)과 연결되고 절후섬유가 표적에 도달한다. 절전·절후는 신경절을 기준으로 한 용어이지 신경의 전체 길이나 자극 순서의 빠르기만으로 붙인 이름이 아니다. 체성 운동뉴런이 중추에서 골격근으로 직접 가는 경로와 구별된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.87f499fba715",
+      "type": "paragraph",
+      "markdown": "자율신경과 함께 달리는 내장감각섬유는 내장 상태를 중추로 전달하는 구심성 경로이다. 같은 신경줄기 안에 들어 있어도 절전·절후 운동뉴런의 한 단계라고 부르지 않는다. 의식적으로 느끼는 내장 통증과 항상성 반사를 위한 감각이 일부 다른 경로를 사용할 수 있다. 따라서 ‘교감신경을 따라 간다’는 말이 언제나 그 섬유 자체가 교감성 원심섬유라는 뜻은 아니다. 기능 방향·세포체 위치·연접 장소를 함께 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.aed911f1e005",
+      "type": "heading",
+      "level": 2,
+      "text": "교감 절전뉴런과 교감신경줄기"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.f4c4c97312e0",
+      "type": "paragraph",
+      "markdown": "교감 절전뉴런의 세포체는 주로 척수 가슴·위허리 분절의 가쪽 회색질에 놓인다. 그 축삭은 앞뿌리와 척수신경을 거쳐 백색교통가지(white ramus communicans)를 통해 교감신경줄기(sympathetic trunk)로 들어간다. 교감신경줄기에 들어온 섬유는 같은 높이에서 연접하거나 위아래로 이동해 연접하거나 연접하지 않고 내장신경으로 나갈 수 있다. 따라서 신경줄기가 목부터 엉치까지 길게 있다고 절전뉴런의 세포체가 척수의 모든 높이에 있다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.617e17de82c0",
+      "type": "paragraph",
+      "markdown": "절후섬유 일부는 회색교통가지(gray ramus communicans)를 통해 척수신경으로 돌아가 몸통·사지의 혈관·땀샘·털세움근에 분포한다. 백색교통가지는 절전섬유가 나오는 제한된 분절에 관련되지만 회색교통가지는 넓은 척수신경 분포에 존재한다. 목으로 올라간 교감 절전섬유는 목교감신경절 계통에서 연접하고 절후섬유가 혈관을 따라 머리로 향할 수 있다. 동공확대·눈꺼풀 평활근·얼굴 땀 분비의 변화가 척수·목·혈관 주변 병변과 연결될 수 있는 이유이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.c24f63528b68",
+      "type": "heading",
+      "level": 2,
+      "text": "척주앞신경절과 내장신경"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.94f79b61bed5",
+      "type": "paragraph",
+      "markdown": "가슴의 큰·작은·맨아래내장신경 등에는 배의 척주앞신경절로 가는 교감 절전섬유가 포함된다. 복강·위창자간막·콩팥대동맥신경절 계통 등에서 연접한 절후섬유는 혈관 주위 신경얼기를 따라 장기로 퍼질 수 있다. 신경줄기에서 연접하지 않고 통과했다는 사실과 신경절이 없다는 말은 다르다. 대동맥 주위의 신경얼기에는 여러 방향·기능의 섬유가 함께 모일 수 있어 혈관 이름과 신경의 기능 성분을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.76ab06a2cb7f",
+      "type": "paragraph",
+      "markdown": "‘내장신경(splanchnic nerve)’이라는 이름만으로 모두 같은 절전 교감섬유라고 외우면 예외를 놓친다. 심장허파내장신경은 주로 교감 절후섬유와 관련되고, 골반내장신경은 엉치 분절의 부교감 절전섬유를 포함한다. 엉치내장신경은 교감신경줄기에서 오는 교감 계통이라는 점에서 골반내장신경과 다르다. 비슷한 한국어 이름은 위치가 가깝다는 사실을 반영하지만 중추 기원과 연접 장소는 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.d7dabb3f19a0",
+      "type": "heading",
+      "level": 2,
+      "text": "부교감의 머리·엉치 유출"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.19b3b3097d68",
+      "type": "paragraph",
+      "markdown": "머리 쪽 부교감 절전섬유는 III·VII·IX·X 계통을 따라 나간다. 눈돌림신경의 섬유는 섬모체신경절, 얼굴신경 계통은 날개입천장·턱밑신경절, 혀인두신경 계통은 귀신경절과 연결된다. 미주신경은 가슴·배 장기의 가까운 신경절과 연결된다. 머리의 절후섬유가 삼차신경의 가지에 동행하는 경우에도 절전섬유의 기원이 삼차신경으로 바뀌는 것은 아니다. 이 구분은 눈물샘·침샘·동공의 신경 경로에서 반복된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.b2b8c729f4f2",
+      "type": "paragraph",
+      "markdown": "골반내장신경의 절전뉴런은 S2–S4 계통에서 나와 골반 장기와 먼쪽 장관 등의 가까운 신경절로 향한다. 교감신경과 달리 표적 가까이에 신경절이 놓이는 경우가 많아 절전섬유가 상대적으로 길고 절후섬유가 짧다는 전형적인 비교가 가능하다. 다만 모든 자율신경 경로가 일정한 길이를 갖는다는 뜻은 아니다. 신경절의 해부학적 위치를 먼저 파악한 뒤 길이 차이를 결과로 이해해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.37017a1d11ad",
+      "type": "heading",
+      "level": 2,
+      "text": "전달물질과 주요 예외"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.6e4cd8c8ec9b",
+      "type": "paragraph",
+      "markdown": "두 계통의 전형적인 절전뉴런은 아세틸콜린을 분비하여 신경절의 니코틴성 수용체에 작용한다. 대부분의 교감 절후섬유는 노르에피네프린을, 부교감 절후섬유는 아세틸콜린을 주요 전달물질로 사용한다. 표적의 반응은 수용체 종류와 세포 안 신호에 따라 달라지므로 교감은 언제나 수축, 부교감은 언제나 이완이라는 구분은 틀리다. 심장·기관지·혈관·장관에서 수용체 분포와 기능을 각각 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.0718764dac0a",
+      "type": "paragraph",
+      "markdown": "에크린땀샘을 지배하는 교감 절후섬유는 콜린성이라는 중요한 예외이다. 부신속질의 크롬친화세포는 교감 절전섬유의 자극을 받아 카테콜아민을 혈액으로 분비하는 특수한 계통이며 일반적인 긴 절후축삭을 통해 특정 세포 하나에만 전달하는 방식과 다르다. 또한 많은 자율신경말단은 여러 부위의 팽대에서 전달물질을 방출하며 골격근의 한정된 종판과 구조가 같지 않다. 전달물질 이름과 신경의 계통 분류는 서로 다른 기준이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.01c499453a65",
+      "type": "heading",
+      "level": 2,
+      "text": "중추 조절과 장신경계"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.9efc450210e5",
+      "type": "paragraph",
+      "markdown": "시상하부는 체온·체액·섭식·내분비 및 행동 상태를 자율신경 조절과 연결한다. 뇌줄기의 고립로핵과 여러 그물체 회로는 내장감각 입력·호흡·심혈관 반사에 중요하고 척수 회로도 일부 반응에 참여한다. 조절은 뇌의 한 점에서 모든 장기로 똑같이 내려가는 한 가닥의 명령이 아니다. 서로 다른 항상성 목표가 상황에 따라 조정되며 대뇌의 정서·인지 상태도 영향을 줄 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.5378460b2f93",
+      "type": "paragraph",
+      "markdown": "장신경계(enteric nervous system)는 소화관 벽의 근육층사이신경얼기와 점막밑신경얼기 등으로 구성되어 국소 운동·분비·혈류 조절에 관여한다. 교감·부교감신경이 이 회로를 조절하지만 장벽의 모든 반사가 반드시 중추를 한 번 왕복해야만 일어나는 것은 아니다. 반대로 장신경계가 있다는 이유로 중추·내분비·면역 환경과 완전히 독립적이라는 뜻도 아니다. 국소 회로와 바깥 조절을 나누어 이해하면 장운동과 분비 장애의 다양한 수준을 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.c31ab66affb6",
+      "type": "heading",
+      "level": 2,
+      "text": "내장감각과 연관통"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.458936c139be",
+      "type": "paragraph",
+      "markdown": "내장 통증의 일차감각뉴런 세포체는 많은 경우 척수신경절에 있으며 중추에서 체성감각 입력과 수렴할 수 있다. 이 때문에 자극이 실제 장기와 떨어진 피부·체벽의 영역에서 느껴지는 연관통(referred pain)이 나타날 수 있다. 그러나 발생학적 분절 대응은 모든 환자의 통증 위치를 정확히 예측하는 지도는 아니다. 장기 위치, 염증 범위, 내장막·벽측막의 침범과 개인차를 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.b.c1a64315bf5e",
+      "type": "paragraph",
+      "markdown": "자율신경 증상을 평가할 때에는 동공·땀·기립 반응·배뇨·장운동 등 여러 기능을 어떤 경로가 연결하는지 살핀다. 한 장기의 반응이 변했다고 교감 또는 부교감 전체가 동시에 손상되었다고 단정하지 않는다. 절전·신경절·절후·표적 수용체의 어느 단계인지와 감각 경로의 동반 손상 여부가 중요하다. 약물 역시 전달물질의 합성·방출·수용체·분해의 다른 단계에 작용하므로 구조적 위치를 구분하는 것이 약리학적 해석의 기반이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.autonomic.central-peripheral.block.autonomic-transmitters",
+      "type": "diagram",
+      "diagramRef": "diagram.autonomic-transmitters",
+      "path": "diagrams/diagram.autonomic-transmitters.svg",
+      "alt": "전형적 자율신경의 전달 단계의 구성 요소와 연결 방향을 보여주는 도해"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/autonomic/sections/neuroanatomy.autonomic.central-peripheral.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroanatomy.autonomic.central-peripheral.001"
+  ],
+  "keyFacts": [
+    "교감·부교감의 전형적 절전뉴런은 ACh로 신경절 니코틴성 수용체에 작용한다."
+  ],
+  "relatedLessons": [
+    "neuroanatomy.forebrain.basal-ganglia",
+    "neuroanatomy.forebrain.thalamic-networks",
+    "neuroanatomy.visual.field-pathways"
+  ]
+}

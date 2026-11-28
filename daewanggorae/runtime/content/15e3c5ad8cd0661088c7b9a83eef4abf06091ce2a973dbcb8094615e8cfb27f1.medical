@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.thick-skin-layers",
+  "lessonId": "histology.integument.skin-appendages",
+  "title": "두꺼운피부의 표피 분화",
+  "nodes": [
+    {
+      "id": "basal",
+      "label": "바닥층",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "spinous",
+      "label": "가시층",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "granular",
+      "label": "과립층",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "lucid",
+      "label": "투명층",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "corneum",
+      "label": "각질층",
+      "x": 360,
+      "y": 680,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.thick-skin-layers.edge.1",
+      "source": "basal",
+      "target": "spinous",
+      "relation": "directed",
+      "label": "분화"
+    },
+    {
+      "id": "diagram.thick-skin-layers.edge.2",
+      "source": "spinous",
+      "target": "granular",
+      "relation": "directed",
+      "label": "분화"
+    },
+    {
+      "id": "diagram.thick-skin-layers.edge.3",
+      "source": "granular",
+      "target": "lucid",
+      "relation": "directed",
+      "label": "분화"
+    },
+    {
+      "id": "diagram.thick-skin-layers.edge.4",
+      "source": "lucid",
+      "target": "corneum",
+      "relation": "directed",
+      "label": "분화"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 820
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 820
+      },
+      "fontSize": 22,
+      "nodes": {
+        "basal": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "spinous": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "granular": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "lucid": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        },
+        "corneum": {
+          "x": 240,
+          "y": 680,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "손바닥·발바닥의 전형적 두꺼운피부 순서이다. 모든 피부에 뚜렷한 투명층이 있는 것은 아니다.",
+    "층의 실제 두께·세포 이동 속도를 재현하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.avnrt",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.avnrt.b.c37352218637",
+      "sourceSha256": "c37352218637ddf30fca586a75a11590e859f82959408fbc2d45b67cf094e994",
+      "sourceLengthUtf16": 345,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.avnrt.b.18bf8935947f",
+      "sourceSha256": "18bf8935947f0b8d027ba77c13b57e5b0a4c698b18399f7b4994569288009bc4",
+      "sourceLengthUtf16": 278,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.avnrt.b.53f8b72fc833",
+      "sourceSha256": "53f8b72fc8331b51d4ab4bd0e545964e8ae12b1ae1e98db3580705b8f8538b15",
+      "sourceLengthUtf16": 266,
+      "annotations": [
+        {
+          "id": "ann.a1bd99b55543d33e9bf7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 215,
+            "end": 266,
+            "exact": "한 유도의 작은 돌기만으로 기전을 확정하지 않고 빈맥 전후의 QRS와 여러 유도를 비교한다.",
+            "prefix": "전도, 잡음과 전극 위치의 영향을 받는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.avnrt.b.d7cf9c371d92",
+      "sourceSha256": "d7cf9c371d92a4385e9ed3d88549de824dd9c50cb07d2d0bc0b82f3c1c8c604d",
+      "sourceLengthUtf16": 252,
+      "annotations": [
+        {
+          "id": "ann.3aed23bcd2ea31cf9c1d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 200,
+            "end": 252,
+            "exact": "이 점이 심방과 심실을 잇는 부전도로가 필수적으로 포함되는 방실회귀성 빈맥과의 중요한 차이다.",
+            "prefix": " 심실 전체를 통과해야 하는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.avnrt.b.0689e408509c",
+      "sourceSha256": "0689e408509cc7fe7be58a1ae5fd544ddfe11ae56a3f24c0c5c2fc8b15da6bb6",
+      "sourceLengthUtf16": 237,
+      "annotations": [
+        {
+          "id": "ann.9b2ea43cb99e0daa29d2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 139,
+            "end": 237,
+            "exact": "발작성 빈맥의 갑작스러운 시작과 끝, P파와 QRS의 시간 관계, 기저 조기흥분 여부를 통합하며, 필요한 경우 전기생리검사에서 심장 내부 신호와 자극 반응으로 회로를 구별한다.",
+            "prefix": "하나가 AVNRT의 독점적 증거는 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.avnrt.b.5c76a9d55d34",
+      "sourceSha256": "5c76a9d55d34b1cf05d8805b970380005f4442908fc926cb1987ee4549f48dd9",
+      "sourceLengthUtf16": 255,
+      "annotations": []
+    }
+  ]
+}

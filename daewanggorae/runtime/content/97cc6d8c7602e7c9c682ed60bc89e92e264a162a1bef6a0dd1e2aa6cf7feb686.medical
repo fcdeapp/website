@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.infection.cap-treatment-response",
+  "subjectId": "pulmonology",
+  "chapterId": "infection",
+  "title": {
+    "ko": "폐렴 치료의 표적과 반응 평가",
+    "en": "Treatment Targets and Response Assessment in Pneumonia"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.infection.cap-treatment-response.lo.01",
+      "text": "경험적·표적 치료의 목적을 구별한다"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.lo.02",
+      "text": "임상 안정과 영상 회복을 설명한다"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.lo.03",
+      "text": "실패·합병증·다른 원인을 감별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.51c26b4915b9",
+      "type": "heading",
+      "level": 2,
+      "text": "처음의 불확실성에 대응한다"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.a223dd05520e",
+      "type": "paragraph",
+      "markdown": "초기에는 병원체와 감수성이 완성되지 않은 상태에서 임상·영상과 숙주·발생 환경을 바탕으로 가능한 미생물을 평가한다. 경험적 치료는 이 불확실성에서 필요한 범위를 확보하려는 접근이다. 검체와 경과가 추가되면 표적과 범위·경로를 재평가한다. 처음의 넓은 범위를 어떤 결과와 무관하게 끝까지 유지하는 것이 치료의 정확성을 뜻하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.ad7b2d009e24",
+      "type": "paragraph",
+      "markdown": "세포벽과 단백합성 등 항균제 표적은 다르고, 세포 내·밖의 병원체와 기도·실질 도달, 내성과 숙주 조건이 실제 선택에 영향을 준다. 최근의 항균제·입원과 이전 균종, 신장·간과 알레르기·상호작용 및 지역 역학을 확인한다. 특정 내성균에 대한 범위도 환자의 실제 위험에 맞추어 평가한다. 균종 이름만으로 용량·조합·기간을 모든 환자에게 동일하게 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.f5c5c110d1fd",
+      "type": "heading",
+      "level": 2,
+      "text": "바이러스와 세균의 구별"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.903845b953ae",
+      "type": "paragraph",
+      "markdown": "바이러스가 검출되면 실제 증후군과 시점, 동반 세균 가능성을 함께 읽는다. 외래의 안정 환자와 중증·동반질환 환자는 검출의 임상 의미와 치료 근거가 다를 수 있다. 양성 핵산이 모든 실질 손상의 유일 원인을 증명하는 것은 아니다. 반대로 바이러스 감염이라는 이유로 모든 환자에게 항균제를 자동으로 추가하는 것도 표적과 위해를 확인하지 않은 접근이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.f6c3ecd6dac1",
+      "type": "paragraph",
+      "markdown": "항염증 치료는 숙주 반응을 겨냥하므로 감염 제거와 다른 축이다. 적합한 대상의 이득과 고혈당·감염 등 위해를 평가하며 중증도·원인과 근거의 조건을 구별한다. 폐렴이라는 한 단어만으로 모든 환자에게 같은 스테로이드 접근을 적용하지 않는다. 현재 호흡·순환의 지지, 체액과 다른 장기 관리도 미생물 치료와 함께 진행한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.1ce00b4c3854",
+      "type": "heading",
+      "level": 2,
+      "text": "안정은 여러 변화의 조합이다"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.1059536008a9",
+      "type": "paragraph",
+      "markdown": "열과 심박·호흡, 산소·혈압과 의식, 섭취와 활동의 변화는 서로 다른 회복 정보를 준다. 경구 전환과 장소 변경은 약물의 이용 가능성뿐 아니라 임상 안정·흡수·복약과 추적 조건을 고려한다. 치료 기간은 원인과 중증도, 안정에 이른 경과 및 괴사·농양과 다른 합병증에 따라 평가한다. 한 고정 기간을 모든 폐렴의 완치 조건으로 외우지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.9681be61bd1f",
+      "type": "paragraph",
+      "markdown": "영상의 침범은 임상 호전보다 오래 남을 수 있다. 고령과 기존 폐질환, 넓은 병변과 다른 요인은 회복의 시간을 바꾼다. 잔여 음영만으로 모든 환자의 약물을 계속 늘리거나, 증상 호전만으로 모든 구조적 원인을 배제하지 않는다. 추적 영상의 목적은 남은 감염과 막힘·종양 등 다른 원인의 질문에 맞추어 정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.ed52ac2d0cb9",
+      "type": "heading",
+      "level": 2,
+      "text": "예상과 다른 경과"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.65bf498020f1",
+      "type": "paragraph",
+      "markdown": "악화하거나 호전이 지연되면 처음 진단과 병원체·내성, 실제 약물 전달과 용량·흡수, 숙주 방어와 지속 흡인을 검토한다. 흉막 감염과 농양·괴사, 폐색과 다른 병소는 감염원 조절의 질문을 만든다. 심부전·색전·약물성 또는 다른 비감염성 질환도 감별한다. 단순히 더 넓은 항균제를 선택하는 것만으로 모든 비반응을 해결할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.b.dc8aa89a45c1",
+      "type": "paragraph",
+      "markdown": "배양과 영상·기능, 전신 표지자의 시간표를 다시 맞추면 어느 연결이 설명되지 않았는지 찾을 수 있다. 새 독성과 신장·간 변화도 감염의 진행과 구별한다. 환자에게는 회복의 예상과 재평가가 필요한 변화, 복약과 생활 지원을 설명한다. 미생물학적 호전과 장기 기능·활동의 회복, 이후의 재발 예방을 각각 확인하는 것이 치료 반응 평가의 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.h.extra0846",
+      "type": "heading",
+      "level": 2,
+      "text": "농도와 표적의 다른 시간"
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.p.extra0846.0",
+      "type": "paragraph",
+      "markdown": "항균제의 효과는 병원체 감수성과 약물의 시간·농도 노출,조직 도달과 숙주 상태에 의존한다. 일부 약물군에서는 유효 농도에 노출되는 시간이,다른 군에서는 전체 노출과 표적 농도의 관계가 중요한 평가 요소가 될 수 있다. 혈중 수치가 적절해 보여도 실제 투여 누락과 흡수,병변의 배액·괴사와 약물 도달은 별도로 확인한다."
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.p.extra0846.1",
+      "type": "paragraph",
+      "markdown": "임상 호전이 지연될 때에는 용량이 작은지 큰지만 묻기보다 약물과 병원체의 조합이 맞는지,환자 조건에서 실제 노출이 달라졌는지 살핀다. 신장 기능과 분포 용적·장기 지원은 시간에 따라 바뀔 수 있다. 독성을 피하면서 필요한 노출을 유지하는 목표는 처음 처방 때뿐 아니라 치료 중에도 재평가해야 한다. 정확한 약물별 계산과 모니터링은 검증된 임상 자료와 환자 조건을 이용한다."
+    },
+    {
+      "id": "pulmonology.infection.cap-treatment-response.table0846",
+      "type": "table",
+      "data": {
+        "title": "근거·기전·관리 목표의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "경험적",
+            "초기 가능 병원체와 위해"
+          ],
+          [
+            "표적",
+            "검체·감수성과 범위 재평가"
+          ],
+          [
+            "안정",
+            "호흡·순환·의식·섭취"
+          ],
+          [
+            "비반응",
+            "노출·내성·배출·다른 원인"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/infection/sections/pulmonology.infection.cap-treatment-response.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.infection.cap-treatment-response.001"
+  ],
+  "relatedLessons": [
+    "pulmonology.infection.cap-diagnosis-severity",
+    "pulmonology.infection.aspiration-injury"
+  ]
+}

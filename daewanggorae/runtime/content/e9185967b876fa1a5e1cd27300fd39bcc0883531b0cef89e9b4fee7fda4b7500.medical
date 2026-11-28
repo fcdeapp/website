@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.inflammation.vascular-exudation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.inflammation.vascular-exudation.b.6e1c51ca6c0e",
+      "sourceSha256": "6e1c51ca6c0e93797329b88ab037b0d2c628431b6ddcee0421d192e98a7f1acc",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.7c722a580fafa9b21849",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 5,
+            "exact": "급성 염증",
+            "prefix": "",
+            "suffix": "에서 소동맥 확장으로 국소 혈류가 증가하면 "
+          },
+          "conceptId": "reader.term.f2acf854a49eb98c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.vascular-exudation.b.50ebc351bdd0",
+      "sourceSha256": "50ebc351bdd08838b1dcc3cc93b27f6814e06022e5fd11fae273470d12882c1e",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.vascular-exudation.b.b6e6b44f6240",
+      "sourceSha256": "b6e6b44f6240f795474b737d14c1acf9916acacad96d17027a9a70e1e1cea0f9",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.vascular-exudation.b.ee1caa07d2ab",
+      "sourceSha256": "ee1caa07d2ab87966d6b7b98fa4d1cf82591976bc5148bfb5cefc96549bd1f63",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.76ecab993a65d019dd60",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 15,
+            "end": 17,
+            "exact": "보체",
+            "prefix": "혈장단백질의 이동은 항체와 ",
+            "suffix": "를 조직에 전달하고 fibrin 형성의 재료"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.vascular-exudation.b.e482d8f37783",
+      "sourceSha256": "e482d8f377834f21505078eb9f03ac0ee82e22bfe027a005f2c08f061abd58b7",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.vascular-exudation.b.ac62875d426c",
+      "sourceSha256": "ac62875d426cac935379f33f6165e3c6410cdacb0d2bd9365b78e236be7935a6",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.b1b23de885836b3c0770",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 69,
+            "end": 132,
+            "exact": "고전적인 혈관 양끝의 여과·재흡수 그림만으로 모든 조직의 정상상태를 설명하기 어렵고 림프 배액의 역할이 중요하다.",
+            "prefix": "yx와 주변 압력은 액체 이동을 좌우한다. ",
+            "suffix": " 부종이 있는 부위를 단지 혈관 끝에서 물이"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.vascular-exudation.b.2f19eff0433e",
+      "sourceSha256": "2f19eff0433ef0d48cdbfe5130114614ce09d255bc5868df4bc57ea7f8a8c31f",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.vascular-exudation.b.22c80f3d22e5",
+      "sourceSha256": "22c80f3d22e564b953b40e6437d210322ecb78521df3c8838cfdc63a18f45f1d",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    }
+  ]
+}

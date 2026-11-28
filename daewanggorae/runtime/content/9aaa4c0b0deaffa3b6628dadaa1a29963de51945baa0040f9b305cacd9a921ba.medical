@@ -1,0 +1,247 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.cardiovascular.loop-diuretics",
+  "subjectId": "pharmacology",
+  "chapterId": "cardiovascular",
+  "title": {
+    "ko": "고리이뇨제와 세뇨관 내 약물 노출",
+    "en": "Loop Diuretics and Tubular Drug Exposure"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.lo.01",
+      "text": "NKCC2 억제와 수질 농도기울기를 연결한다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.lo.02",
+      "text": "작용 부위의 약물 전달과 전신 농도를 구별한다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.lo.03",
+      "text": "전해질·체액 변화와 이뇨 반응의 시간 의존성을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.9c06c0f11aa4",
+      "type": "heading",
+      "level": 2,
+      "text": "굵은오름부분의 수송 구조"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.d6fdedf5d3b1",
+      "type": "paragraph",
+      "markdown": "헨레고리의 굵은오름부분(thick ascending limb, TAL)은 관강의 Na+, K+와 Cl−를 NKCC2를 통해 세포 안으로 함께 이동시킨다. 대표 화학양론은1Na+:1K+:2Cl−이며 전체 수송은 전기적으로 중성이다. 바닥가쪽 Na+/K+-ATPase와 염소 이동 경로는 세포에서 간질로 이어지는 수송을 지지한다. 관강으로 되돌아가는 칼륨과 관강의 양전위는 세포사이 경로의 칼슘·마그네슘 이동에도 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.renal.filtration.3e301a00"
+      ]
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.anatomy3d.0814-organ-context",
+      "type": "anatomy3d",
+      "sceneRef": "scene.physiology.renal.filtration.3e301a00"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.8f3859407223",
+      "type": "paragraph",
+      "markdown": "이 부위는 물의 투과성이 낮아 용질을 재흡수하면서 관액을 희석하고 수질의 농도기울기를 형성하는 데 기여한다. 따라서 염분 재흡수와 자유수 처리, 최종 소변 농축 능력은 연결되지만 동일한 기능이 아니다. 원위부·집합관과 ADH의 작용도 최종 소변을 바꾼다. 고리이뇨제의 효과를 단순히 물을 밀어내는 펌프라고 설명하면 농도기울기와 전해질의 변화를 놓치게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.fc1dced5082f",
+      "type": "heading",
+      "level": 2,
+      "text": "표적은 관강 쪽 수송체다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.0eafccc4404c",
+      "type": "paragraph",
+      "markdown": "Furosemide, bumetanide, torsemide 등은 관강 쪽에서 NKCC2를 억제한다. 수송체 단백질의 억제와 신경·근육의 이온통로 차단은 다른 분자 사건이다. 억제로 나트륨 재흡수가 줄면 원위부에 전달되는 염분이 증가할 수 있다. 칼륨 재순환·관강 전위와 수질 기울기의 변화는 칼슘·마그네슘 배설 및 물 처리에도 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.6bfb281f7b66",
+      "type": "paragraph",
+      "markdown": "이들 약물은 혈장 단백결합과 신장 세뇨관 분비를 고려해야 한다. 전신에 약물이 존재한다는 사실만으로 관강 표적에 충분한 활성 약물이 도달했다고 할 수 없다. 신기능 저하, 경쟁하는 유기 음이온과 약물, 신장 혈류와 관류 상태가 전달에 영향을 준다. 약물의 혈중 총농도, 자유 농도와 관강 노출은 구별하는 양이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.b3b63ee1baae",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 밀리그램과 같은 노출은 다르다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.a1427e15831b",
+      "type": "paragraph",
+      "markdown": "고리이뇨제마다 경구 흡수의 정도·변동, 제거 경로와 작용 시간이 다르다. 장관 상태와 울혈, 투여 경로도 약물이 실제 작용 부위에 도달하는 양상에 영향을 줄 수 있다. 같은 투여량을 사용했다고 모든 환자에서 같은 최고 농도와 지속시간을 얻지는 못한다. 서로 다른 약물의 질량을 기계적으로 같은 수치로 바꾸어 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.0124b70f62a9",
+      "type": "paragraph",
+      "markdown": "신기능이 낮아지면 일부 약물의 혈중 제거가 느려질 수 있는 동시에 관강 전달과 반응은 감소할 수 있다. 혈중 농도가 높다는 사실과 이뇨 효과가 강하다는 판단이 어긋날 수 있는 이유다. 약동학과 약력학을 분리해 생각한 뒤 다시 결합해야 한다. 실제 용량·경로·반복 간격은 질환 상태와 약물별 정보를 확인하여 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.fd6cbaa025a9",
+      "type": "heading",
+      "level": 2,
+      "text": "농도–반응의 문턱과 포화"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.e4ac4d5ad89e",
+      "type": "paragraph",
+      "markdown": "이뇨 반응은 일정 범위에서 작용 부위 노출에 따라 비선형적으로 증가하고 이후 증가 폭이 줄 수 있다. 독립 가상 모형 R=80C²/(4+C²)에서 C=2이면40, C=6이면72다. 농도가 세 배가 되었다고 반응이 세 배가 되지는 않는다. 이 모형의 C는 임의의 표적 부위 농도이며 실제 furosemide의 혈중 농도·소변량·투여량 단위가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.dcc035483299",
+      "type": "paragraph",
+      "markdown": "같은 최고 반응에 도달한 두 노출이라도 효과가 유지되는 시간은 다를 수 있다. 포화된 순간 반응과 하루 동안의 총 나트륨 배설을 동일시하면 반복 간격과 약효가 사라진 뒤의 재흡수를 설명하기 어렵다. 누적 이득은 시간별 배설과 섭취, 다른 네프론 분절의 보상에 좌우된다. 최대 반응에 가까워졌다는 이유로 실제 환자에서 어떤 추가 노출도 항상 무의미하거나 안전하다고 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.81b098990e94",
+      "type": "heading",
+      "level": 2,
+      "text": "이뇨 후 나트륨 저류와 적응"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.16c0ea2a65d9",
+      "type": "paragraph",
+      "markdown": "약효가 줄어든 기간의 염분 재흡수, RAAS·교감 조절과 원위 수송의 적응은 하루의 순 나트륨 수지를 바꾼다. 이뇨저항성(diuretic resistance)은 약물을 투여했는데 소변량이 적다는 한 관찰보다 넓은 개념이다. 섭취와 측정 오류, 흡수·표적 전달, 저관류, 신기능·단백결합과 분절별 재흡수의 변화 등을 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.5986e907ddcf",
+      "type": "paragraph",
+      "markdown": "다른 분절을 표적으로 하는 약물의 병용은 보상적 재흡수를 제한할 수 있으나 전해질·체액 손실의 위해도 커질 수 있다. 기전상 가능한 조합이라는 사실이 모든 환자의 같은 치료 순서와 용량을 뜻하지 않는다. 저항성의 원인과 울혈·관류를 구분하고, 현재 약물 목록과 투여·섭취·소변의 시간 기록을 대조해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.18e377de3594",
+      "type": "heading",
+      "level": 2,
+      "text": "체액·전해질과 산염기"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.18cfc0e09648",
+      "type": "paragraph",
+      "markdown": "원위 염분 전달과 체액 감소·알도스테론 반응이 결합하면 칼륨 소실과 대사알칼리증이 나타날 수 있다. 마그네슘·칼슘의 배설 변화도 고려한다. 그러나 실제 결과는 기저 신기능, 식이·병용 약물과 수분 섭취에 따라 달라 모든 환자에서 같은 방향·크기로 나타나는 것은 아니다. 소변량이 늘었다는 관찰만으로 전해질과 혈관 내 체액이 적절하다는 결론을 내리지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.aba9634f4f56",
+      "type": "paragraph",
+      "markdown": "울혈을 줄이는 이득과 과도한 체액 손실로 관류가 악화되는 위험은 함께 평가해야 한다. 체중, 부종과 호흡 증상, 혈압, 신기능·전해질 및 섭취·배설의 추세는 서로 다른 정보를 준다. 혈청 크레아티닌의 변화가 모든 상황에서 동일한 원인이나 예후를 뜻하지도 않는다. 이득과 위해를 한 숫자의 증가·감소로 판정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.a8afb3deb997",
+      "type": "heading",
+      "level": 2,
+      "text": "다른 약물·장기와의 연결"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.aa5b2c6d5b9e",
+      "type": "paragraph",
+      "markdown": "이독성(ototoxicity)은 약물 노출 양상, 신기능과 다른 이독성 약물의 병용에 영향을 받을 수 있는 중요한 위해다. 특정 고리이뇨제의 위험을 모든 약물과 모든 경로에서 같은 빈도로 표현하지 않는다. NSAID는 신장의 보상과 이뇨 반응에 영향을 줄 수 있고, 칼륨 변화는 다른 약물의 부정맥 위험과도 연결될 수 있다. 복용 성분과 시점을 확인하는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.b.081d32049609",
+      "type": "paragraph",
+      "markdown": "정상 신장 모델은 좌우 신장의 위치와 주변 장기를 설명하는 데 유용하다. 하지만 TAL·NKCC2, 미세한 이온 이동과 약물의 분비는 그 모델의 메시 기능이 아니다. 이 부분은 별도의 수송 도식·농도 곡선·시간별 수지표로 학습해야 한다. 약물의 표적, 그곳에 도달하는 과정과 환자에게 나타난 결과를 이어 읽는 것이 고리이뇨제 약리의 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.diagram.tubular-exposure-response-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.tubular-exposure-response-toy",
+      "path": "diagrams/diagram.tubular-exposure-response-toy.svg",
+      "alt": "표적 노출과 가상 포화 반응의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.table.0814.0",
+      "type": "table",
+      "data": {
+        "title": "고리이뇨제의 연결",
+        "columns": [
+          "층",
+          "대표 정보"
+        ],
+        "rows": [
+          [
+            "표적",
+            "관강쪽 NKCC2"
+          ],
+          [
+            "전달",
+            "단백결합·분비·관류"
+          ],
+          [
+            "순간 반응",
+            "농도–반응의 비선형"
+          ],
+          [
+            "하루 수지",
+            "노출 시간·섭취·보상"
+          ],
+          [
+            "위해",
+            "체액·전해질·이독성·병용"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pharmacology.cardiovascular.loop-diuretics.table.0814.1",
+      "type": "table",
+      "data": {
+        "title": "수송과 이온",
+        "columns": [
+          "관계",
+          "방향성"
+        ],
+        "rows": [
+          [
+            "TAL 수송",
+            "Na-K-2Cl 재흡수"
+          ],
+          [
+            "K 재순환·전위",
+            "세포사이 양이온 수송과 연결"
+          ],
+          [
+            "수질 기울기",
+            "물 처리에 영향"
+          ],
+          [
+            "원위 전달",
+            "K/H 배설·체액 조절과 연결"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/cardiovascular/sections/pharmacology.cardiovascular.loop-diuretics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "relatedLessons": [
+    "pharmacology.cardiovascular.distal-proximal-diuretics"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.cardiovascular.loop-diuretics.001",
+    "question.pharmacology.cardiovascular.loop-diuretics.002"
+  ]
+}

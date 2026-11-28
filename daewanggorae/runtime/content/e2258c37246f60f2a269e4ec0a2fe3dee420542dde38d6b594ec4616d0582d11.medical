@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.cognition.gait-hydrocephalus",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.cognition.gait-hydrocephalus.b.05bd00c7fca2",
+      "sourceSha256": "05bd00c7fca2d68a0fad2c21ee7834e17bd7d2ebb849ae34ef7687d8a5f1d9df",
+      "sourceLengthUtf16": 247,
+      "annotations": [
+        {
+          "id": "ann.b7f1066b2cd0a9f82fad",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 5,
+            "end": 24,
+            "exact": "cerebrospinal fluid",
+            "prefix": "뇌척수액(",
+            "suffix": ", CSF)은 뇌실과 거미막밑 공간을 지나며"
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        },
+        {
+          "id": "ann.24de72bfa137339d4ee4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 164,
+            "end": 218,
+            "exact": "뇌 위축에 따라 뇌실 공간이 상대적으로 커지는 경우와, 순환 장애와 관련된 뇌실 확장을 구별한다.",
+            "prefix": "수두증의 기전과 치료가 확정되지는 않는다. ",
+            "suffix": " 영상의 분포와 주변 조직, 임상 경과를 함"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cognition.gait-hydrocephalus.b.27835a752e08",
+      "sourceSha256": "27835a752e08c8a3a5e2d33c973f4a7f8fdcc7ef22c1efeb1a2f0368ea23a2d6",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cognition.gait-hydrocephalus.b.31f3d1a17306",
+      "sourceSha256": "31f3d1a17306a336982334e37e13798a9f64599612bc4d7ce8fd8c90b223ac23",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.1b8e441c01e69e53e7c9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 58,
+            "exact": "보행·인지·배뇨의 변화는 NPH 평가의 중요한 조합이지만 이 세 증상이 모두 한 원인이라는 보장은 없다.",
+            "prefix": "",
+            "suffix": " 고령에서는 퇴행성 질환과 혈관 손상, 관절"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cognition.gait-hydrocephalus.b.c7941d0388a8",
+      "sourceSha256": "c7941d0388a80be7804cd1dd5fd48655ed9ada19d4a7badfcc45dc96e60150de",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cognition.gait-hydrocephalus.b.b03b2193b838",
+      "sourceSha256": "b03b2193b838cfe889f078ae4578ec5007af8a01a4365c61ebab0293bf9aefeb",
+      "sourceLengthUtf16": 208,
+      "annotations": [
+        {
+          "id": "ann.f25b1069dc17b39ea3c2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 46,
+            "end": 88,
+            "exact": "특정 비율이나 모양은 단서지만 영상 하나만으로 치료 반응을 확정하지 않는다.",
+            "prefix": "다른 구조적 원인을 평가하는 데 사용한다. ",
+            "suffix": " 척수·뇌혈관과 퇴행성 병리가 함께 있을 수"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cognition.gait-hydrocephalus.b.bc0788e50f50",
+      "sourceSha256": "bc0788e50f50591f7e9511573633236331b1a442715b1746dd936bcb168b3def",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cognition.gait-hydrocephalus.b.9f428e805f05",
+      "sourceSha256": "9f428e805f05635a4142f8c283ce473d0912e2daab2cb339b5cf7dc5edffb316",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cognition.gait-hydrocephalus.b.773f48403f63",
+      "sourceSha256": "773f48403f63982022cb7fb168482d6ca5f1385a6aa2ad5f0a2e7fb8b1551305",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    }
+  ]
+}

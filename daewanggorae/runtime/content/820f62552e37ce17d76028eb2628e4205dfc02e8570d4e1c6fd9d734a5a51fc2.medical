@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "laboratory-medicine.coagulation.pt-aptt-patterns",
+  "subjectId": "laboratory-medicine",
+  "chapterId": "coagulation",
+  "title": {
+    "ko": "PT·aPTT와 응고 이상 패턴",
+    "en": "PT aPTT and Coagulation Patterns"
+  },
+  "learningObjectives": [
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.lo.01",
+      "text": "응고 검사가 측정하는 범위를 설명한다"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.lo.02",
+      "text": "연장 패턴과 혼합검사를 연결한다"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.lo.03",
+      "text": "검체·약물·임상 출혈의 영향을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.bfc07d929e83",
+      "type": "heading",
+      "level": 2,
+      "text": "응고 시간과 생체 내 지혈"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.8f9c11ec4072",
+      "type": "paragraph",
+      "markdown": "프로트롬빈시간(prothrombin time, PT)과 활성화부분트롬보플라스틴시간(activated partial thromboplastin time, aPTT)은 혈장에 정해진 시약을 넣어 응괴 형성까지 걸리는 시간을 측정한다. 응고인자 작용을 탐색하는 데 유용하지만 혈관벽, 혈소판의 모든 기능, 혈류와 국소 조직 반응을 그대로 재현하지는 않는다. 검사 시간이 정상이라고 모든 출혈질환이 배제되는 것도 아니고 시간이 길다고 실제 출혈량이 그에 비례하는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.8d04b28d1ed2",
+      "type": "paragraph",
+      "markdown": "PT는 조직인자 경로와 공통 경로를, aPTT는 접촉 활성화와 관련된 경로 및 공통 경로를 탐색하는 틀로 이해할 수 있다. 이 구분은 체외 검사에서의 반응을 정리하는 도구다. 생체 내 응고를 서로 독립된 두 관으로 생각해서는 안 된다. 조직인자에 의한 시작과 세포 표면의 증폭·조절은 상호 연결되어 작용한다. 임상 소견과 검사의 관계를 설명하려면 검사 원리의 단순화와 생체 반응을 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.f78e735c7cac",
+      "type": "heading",
+      "level": 2,
+      "text": "연장 패턴의 출발점"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.220b0b87cb1a",
+      "type": "paragraph",
+      "markdown": "PT만 연장되거나 aPTT만 연장되는 패턴은 우선 탐색할 인자와 약물 영향을 좁히는 데 도움을 준다. 둘 다 연장되면 공통 경로의 이상, 여러 인자의 부족이나 소모, 간 합성 저하와 약물 등의 가능성을 함께 검토한다. 그러나 하나의 패턴이 한 질환의 고유 지문은 아니다. 정도와 시간 변화, 혈소판과 피브리노겐, 간 기능 및 약물 노출이 해석을 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.c58e725ad2e1",
+      "type": "paragraph",
+      "markdown": "출혈의 위치와 시점도 중요하다. 점막과 피부의 출혈, 깊은 근육과 관절의 출혈, 수술 뒤의 지연성 출혈은 서로 다른 단서를 줄 수 있지만 예외와 중첩이 있다. 과거 수술과 발치·월경·출산 경험, 가족력과 새로 시작한 약물을 묻는다. 무증상 선별검사에서 발견된 연장과 급성 전신 출혈에서의 연장은 같은 우선순위로 접근하지 않는다. 현재의 출혈과 순환 위험은 별도로 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.32e846238fca",
+      "type": "heading",
+      "level": 2,
+      "text": "검체 조건을 먼저 확인하는 이유"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.89bf5fe401f0",
+      "type": "paragraph",
+      "markdown": "응고 검사는 항응고제가 들어 있는 검사관에서 수행된다. 검체량이 부족하면 혈액과 첨가제의 비율이 달라져 결과에 영향을 줄 수 있다. 혈구용적률이 매우 높은 경우에도 혈장량과 항응고제 비율의 관계를 고려해야 한다. 채혈관의 종류와 충전 상태, 응괴의 존재, 처리 지연 및 검사실 기준을 확인한다. 잘못된 비율을 환자의 인자 부족으로 해석하면 이후 감별 전체가 흔들릴 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.0cba67558296",
+      "type": "paragraph",
+      "markdown": "헤파린이 주입되던 관에서 검체를 얻으면 잔류 약물이 혼입될 수 있다. 실제 복용한 항응고제도 검사법마다 다른 영향을 주므로 이름과 마지막 투여 시점, 신장 기능 등을 확인해야 한다. 정상 PT나 aPTT 하나로 모든 직접경구항응고제의 효과가 없다고 결론내릴 수 없다. 시약과 약물에 따른 민감도가 다르기 때문이다. 검사실과 상의하여 필요한 경우 약물에 적절한 추가 검사를 선택한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.ae220f01bd51",
+      "type": "heading",
+      "level": 2,
+      "text": "혼합검사의 논리"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.3c2795fc9505",
+      "type": "paragraph",
+      "markdown": "혼합검사(mixing study)는 환자 혈장과 정상 혈장을 섞은 뒤 응고 시간을 관찰하는 방법이다. 정상 혈장이 부족한 인자를 보충하면 시간이 짧아질 수 있고, 억제인자가 있으면 정상 혈장을 넣어도 충분히 교정되지 않을 수 있다. 이 논리는 인자 부족과 억제 효과를 구별하는 출발점이지만 두 집단이 언제나 완벽하게 분리되는 것은 아니다. 억제인자의 강도와 반응 시간, 여러 이상 및 약물의 공존이 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.95be1ae06cf4",
+      "type": "paragraph",
+      "markdown": "즉시 측정한 결과와 일정 시간 반응시킨 결과가 다를 수 있다. 시간 의존성 억제 효과가 나타나는 경우가 있기 때문이다. 교정 여부의 판정 기준은 검사실 방법에 따라 정의되므로 단순히 숫자가 내려갔다는 이유만으로 교정이라고 부르지 않는다. 정상 범위와 비교 방식, 사용한 지표를 확인해야 한다. 혼합검사만으로 특정 억제항체의 종류와 양을 모두 확정하지도 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.c78021315a57",
+      "type": "heading",
+      "level": 2,
+      "text": "항응고 효과와 출혈 위험의 구별"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.bd0213b20a32",
+      "type": "paragraph",
+      "markdown": "루푸스항응고인자(lupus anticoagulant)는 인지질 의존 검사 반응을 방해해 aPTT 등을 연장시킬 수 있다. 이름 때문에 환자가 항상 출혈한다고 생각하기 쉽지만 임상적으로는 혈전 위험과 관련될 수 있다. 반면 특정 응고인자에 대한 억제항체는 심한 출혈의 원인이 될 수 있다. 억제 양상이 있다는 사실 뒤에도 어떤 표적과 임상 문맥인지 추가로 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.b.3b2055033646",
+      "type": "paragraph",
+      "markdown": "후속 검사는 초기 패턴과 병력, 혼합검사 및 약물 영향을 토대로 선택한다. 필요한 인자 활성도와 억제인자, 피브리노겐과 혈소판, 간 합성과 소모 등의 평가를 통합한다. 치료 목표는 검사 시간을 정상 숫자로 만드는 데만 있지 않다. 현재 출혈·혈전 위험을 줄이고 원인을 교정하며, 수술이나 시술의 이득과 위해를 판단하는 것이 목적이다. 추적 시에도 임상 변화와 검체 조건을 함께 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.table0858",
+      "type": "table",
+      "data": {
+        "title": "소견과 평가 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "PT",
+            "기준 범위"
+          ],
+          [
+            "aPTT",
+            "연장"
+          ],
+          [
+            "정상 혈장 혼합 직후",
+            "단축"
+          ],
+          [
+            "일정 시간 반응 후",
+            "다시 연장"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "laboratory-medicine.coagulation.pt-aptt-patterns.comparison0858",
+      "type": "table",
+      "data": {
+        "title": "검사 결과를 읽는 네 수준",
+        "columns": [
+          "수준",
+          "확인할 내용",
+          "해석의 한계"
+        ],
+        "rows": [
+          [
+            "검체",
+            "충전·처리·약물 혼입",
+            "분석 전 오류 가능"
+          ],
+          [
+            "검사 시간",
+            "PT·aPTT 패턴",
+            "생체 지혈 전체는 아님"
+          ],
+          [
+            "혼합 반응",
+            "즉시·반응 시간 뒤 변화",
+            "특정 항체 확정은 아님"
+          ],
+          [
+            "환자",
+            "출혈·혈전·과거력",
+            "숫자와 함께 통합"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/laboratory-medicine/chapters/coagulation/sections/laboratory-medicine.coagulation.pt-aptt-patterns.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.laboratory-medicine.coagulation.pt-aptt-patterns.001"
+  ],
+  "relatedLessons": [
+    "transfusion-medicine.reactions.initial-differential",
+    "laboratory-medicine.preanalytics.potassium-errors"
+  ]
+}

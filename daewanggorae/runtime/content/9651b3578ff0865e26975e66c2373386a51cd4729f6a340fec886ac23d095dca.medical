@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "hpb-surgery.liver.hcc-metastasis-selection",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.b.e40956ae0d7e",
+      "sourceSha256": "e40956ae0d7e0bf6a5f3bcb4ff53663cca720b87f6e3b41b9ea80cca727ccd5c",
+      "sourceLengthUtf16": 223,
+      "annotations": [
+        {
+          "id": "ann.619744d2855042483b70",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 60,
+            "end": 63,
+            "exact": "간경변",
+            "prefix": " 간세포 계열의 원발 종양이며 만성 간질환·",
+            "suffix": "이 동반되는 경우가 많다. 반면 대장암 간전"
+          },
+          "conceptId": "reader.term.6d744dfb433ff485",
+          "targetDocumentId": "hepatology.cirrhosis.portal-hypertension"
+        }
+      ]
+    },
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.b.076f9c2f4cb5",
+      "sourceSha256": "076f9c2f4cb5304f96baa1ba92f343c85d7da35c40ec1a450de549ddb6481a54",
+      "sourceLengthUtf16": 209,
+      "annotations": [
+        {
+          "id": "ann.c059c4584d6738183bd2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 45,
+            "end": 50,
+            "exact": "문맥고혈압",
+            "prefix": "혈관 침범·간 밖 전파뿐 아니라 간 기능과 ",
+            "suffix": "·전신 수행 상태가 치료에 중요하다. 같은 "
+          },
+          "conceptId": "reader.term.aaf642edc10bcaa9",
+          "targetDocumentId": "hepatology.cirrhosis.portal-hypertension"
+        },
+        {
+          "id": "ann.22ce132e333a88b68b5f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 70,
+            "exact": "간세포암에서는 종양의 수·크기·위치와 혈관 침범·간 밖 전파뿐 아니라 간 기능과 문맥고혈압·전신 수행 상태가 치료에 중요하다.",
+            "prefix": "",
+            "suffix": " 같은 절제 범위라도 간경변이 있으면 기능 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.b.e0f7914a3f9f",
+      "sourceSha256": "e0f7914a3f9f543f14552fe57121fa7acc2db5e83d3d5c2fce4f95810f3bf77d",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.b.f5b781bffc8f",
+      "sourceSha256": "f5b781bffc8f91eec2ed6d27d063a963d6ef318bcc320d4edb040cd96e92c2e6",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.b.bfb76d6723b9",
+      "sourceSha256": "bfb76d6723b9cf85bf25539012fc67d28ba371cc0717b47a7d7c0141bf06d518",
+      "sourceLengthUtf16": 176,
+      "annotations": [
+        {
+          "id": "ann.32bcd97d32ca0dcea15d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 83,
+            "end": 114,
+            "exact": "따라서 길이의 상대 변화와 부피의 상대 변화를 구별한다.",
+            "prefix": "같은 비율로 두 배가 된다면 같은 결과다. ",
+            "suffix": " 실제 종양은 불규칙하고 괴사·섬유화·조영 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.b.027ca843ab7c",
+      "sourceSha256": "027ca843ab7c4b5ccf977d27a612f8e69ec6e32e9c4a705ecfc9646b79304d10",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.0912db8a73e82e789a38",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 82,
+            "end": 163,
+            "exact": "작은 크기라도 중요한 혈관·담관 가까이에 있으면 치료가 어려울 수 있고 큰 크기만으로 모든 국소 치료의 가능성을 같은 방식으로 판단할 수는 없다.",
+            "prefix": " 치료 효과에 따른 변화도 비교의 전제다. ",
+            "suffix": " 크기를 해부와 생물학의 맥락 속에서 읽는다"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.b.1b2f3a3ec773",
+      "sourceSha256": "1b2f3a3ec7736051749b16ea90c671a256b6cbf3b185faac14c88dc9480147f2",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.b.cb77e676aabe",
+      "sourceSha256": "cb77e676aabe07e7c6748021a4bb6f59dc159623ac9e57de481c71d3294da72d",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.supp.48b8da535b1f",
+      "sourceSha256": "48b8da535b1f4bf52fc438108e513277ecacf96ef8155ea36a2c12484ad85004",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.liver.hcc-metastasis-selection.supp.6a23cbef7d38",
+      "sourceSha256": "6a23cbef7d38439577d3ca334e8b5548e69392aba705a02d052abbfbde8c86cc",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    }
+  ]
+}

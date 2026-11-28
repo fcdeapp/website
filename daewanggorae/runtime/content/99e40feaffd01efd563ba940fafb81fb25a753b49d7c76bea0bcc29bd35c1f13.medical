@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.endocrine.hypothalamic-pituitary-axes",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.8431d86b7720",
+      "sourceSha256": "8431d86b77201c431fd0047785806622de3e306047d00aa65bcc5da2c919de3e",
+      "sourceLengthUtf16": 319,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.2abd19b156c7",
+      "sourceSha256": "2abd19b156c79841f50866ca5250ce30c951011008a819930161e8f45e09cd35",
+      "sourceLengthUtf16": 256,
+      "annotations": [
+        {
+          "id": "ann.5e2eae31543bc96439af",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 63,
+            "end": 74,
+            "exact": "vasopressin",
+            "prefix": "세포 집단으로 설명하지 않는다. 바소프레신(",
+            "suffix": ", ADH)과 옥시토신(oxytocin)은 "
+          },
+          "conceptId": "reader.term.df6b37a2afc65475",
+          "targetDocumentId": "physiology.renal.urine-concentration"
+        },
+        {
+          "id": "ann.403c52d04a05dc4c2710",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 154,
+            "end": 183,
+            "exact": "따라서 합성 장소와 저장·방출 장소를 구별해야 한다.",
+            "prefix": "뒤 뒤엽의 신경말단에서 혈액으로 방출된다. ",
+            "suffix": " 뒤엽의 기능을 이해할 때에는 신경세포체·축"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.65ea80aebfc9",
+      "sourceSha256": "65ea80aebfc963facfdfc3e94f1ae3423ac43217adeeca1f4b0d194b7f4c059a",
+      "sourceLengthUtf16": 276,
+      "annotations": [
+        {
+          "id": "ann.5e6462bb6066d28f6c15",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 43,
+            "end": 49,
+            "exact": "갑상샘호르몬",
+            "prefix": "르몬(TRH), 갑상샘자극호르몬(TSH), ",
+            "suffix": "이 연결된다. 부신겉질축에서는 부신겉질자극호"
+          },
+          "conceptId": "reader.term.e2e4f3aa621148f4",
+          "targetDocumentId": "endocrinology.thyroid.hormone-synthesis"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.89b271fa745a",
+      "sourceSha256": "89b271fa745ab2c1adbe59bdc7e16964b6943cce95dd104f1360c2e6a5b77fb4",
+      "sourceLengthUtf16": 290,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.b91b7e265b76",
+      "sourceSha256": "b91b7e265b76fb49b84f40780c30ad5e7818263eb78629e7916d32798f6e8ab8",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.15c0ed71b197",
+      "sourceSha256": "15c0ed71b197709ff8c74a364d1970ce4bc4f6e7ef80d7819c8ef66d1d59ac6f",
+      "sourceLengthUtf16": 247,
+      "annotations": [
+        {
+          "id": "ann.f2e8f0edec6a3afc1d55",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 206,
+            "end": 247,
+            "exact": "치료 전후와 채혈 시점이 다른 검사를 한 쌍처럼 묶지 않는 것도 중요하다.",
+            "prefix": "백질 변화와 저항성 상태도 고려해야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.5476abb26747",
+      "sourceSha256": "5476abb2674727c19e67d1b1e142085649abadfcbac5fdb2fb9b5262a2775fc4",
+      "sourceLengthUtf16": 270,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.c91257dbb30a",
+      "sourceSha256": "c91257dbb30a04a819f3ef8dd9a3dd72d515e7c47bc983c964d311f61c7d03e6",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.6ffc0cdc53cefa0d8479",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 35,
+            "exact": "GnRH의 경우에는 신호의 존재뿐 아니라 전달 양상이 중요하다.",
+            "prefix": "",
+            "suffix": " 생리적 맥동 자극과 지속 자극은 수용체 및"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.0f9e76ff6732",
+      "sourceSha256": "0f9e76ff67325d99aa369c7a6597c6ba9d755974cbb220dab21c9fefdc7c0a21",
+      "sourceLengthUtf16": 254,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hypothalamic-pituitary-axes.b.f970ba45ccbe",
+      "sourceSha256": "f970ba45ccbe044054f337097f67616f1bf27b4c8c6aeb7594a7136a8b06bc1e",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    }
+  ]
+}

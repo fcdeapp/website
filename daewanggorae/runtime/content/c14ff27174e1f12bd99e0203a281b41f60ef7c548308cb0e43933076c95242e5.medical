@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "psychiatry.psychotherapy.cbt-formulation",
+  "subjectId": "psychiatry",
+  "chapterId": "psychotherapy",
+  "title": {
+    "ko": "인지행동적 사례개념화와 행동실험",
+    "en": "Cognitive Behavioral Formulation and Behavioral Experiments"
+  },
+  "learningObjectives": [
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.lo.01",
+      "text": "상황·해석·감정·행동의 연결을 구성한다"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.lo.02",
+      "text": "회피의 단기 이득과 장기 비용을 분석한다"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.lo.03",
+      "text": "행동실험과 추적 자료를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.5eecdd1c0dfa",
+      "type": "heading",
+      "level": 2,
+      "text": "진단에서 개별 사례개념화로"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.4ca807c31c6a",
+      "type": "paragraph",
+      "markdown": "인지행동치료(cognitive behavioral therapy, CBT)는 생각을 무조건 긍정적으로 바꾸는 훈련이 아니다. 구체적인 상황에서 어떤 해석과 감정·신체 반응, 행동이 연결되고 문제가 어떻게 유지되는지 환자와 함께 검토하는 치료다. 같은 진단명이라도 핵심 상황과 믿음, 안전 행동과 생활 조건이 달라 사례개념화(formulation)는 개인별로 달라진다. 개념화는 확정된 성격 판정이 아니라 새로운 관찰에 따라 수정하는 작업 가설이다. 신체 질환과 실제 환경의 위험을 심리적 해석으로 지워서는 안 된다.\n가령 회의에서 질문을 받았을 때 실수하면 모두 나를 무능하게 볼 것이라고 예상하고 심박 증가를 느낀 뒤 말을 피하는 사례를 생각할 수 있다. 말을 피하면 당장의 불안은 줄어들 수 있지만, 실제로 말했을 때 어떤 일이 일어나는지 확인할 기회와 연습이 사라진다. 이러한 연결을 상황·자동적 사고·정서와 신체 반응·행동·결과로 나누어 기록하면 치료에서 바꿀 수 있는 지점을 찾기 쉽다. 기록에는 관찰된 사실과 예상·해석을 구별하고, 환자 자신의 표현을 사용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.186c1e188364",
+      "type": "heading",
+      "level": 2,
+      "text": "사고를 검토하는 협력적 과정"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.8c234715d688",
+      "type": "paragraph",
+      "markdown": "자동적 사고(automatic thought)는 특정 상황에서 빠르게 떠오르는 해석이며, 더 지속적인 신념과 연결될 수 있다. 치료자는 생각이 틀렸다고 논쟁으로 이기는 것이 아니라 그 생각을 지지하거나 제한하는 근거, 다른 가능한 해석과 실제 기능을 함께 검토한다. 지나친 일반화나 파국적 예상 같은 경향은 이해를 돕는 이름이지만 환자의 말을 분류하는 데만 머무르면 안 된다. 실제 차별과 경제적 위험, 관계의 폭력처럼 현실적인 문제는 대안적 사고만으로 해결되지 않는다.\n정서가 강할 때는 인지적 검토를 수행할 여유가 부족할 수 있으므로 현재의 안전과 각성 수준, 치료 관계를 먼저 살핀다. 환자가 합리적인 대안을 말할 수 있어도 정서 반응이 즉시 사라지는 것은 아니다. 지적 동의와 경험을 통한 학습은 다른 과정이다. 치료의 목표는 모든 불편한 생각을 제거하는 것이 아니라 상황을 더 유연하게 평가하고 가치 있는 행동을 선택할 수 있게 하는 데 있다. 새로운 해석이 실제 경험과 맞는지는 다음 관찰에서 다시 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.57a3d7c68039",
+      "type": "heading",
+      "level": 2,
+      "text": "행동실험과 노출의 설계"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.1d6ec9e085d9",
+      "type": "paragraph",
+      "markdown": "행동실험(behavioral experiment)은 구체적인 예측을 세우고 안전한 과제로 확인하는 과정이다. 회의에서 한 문장 의견을 말하면 참석자 전원이 비웃을 것이라는 예상이라면, 무엇을 관찰할지와 결과를 어떻게 기록할지를 먼저 정한다. 과제는 환자와 합의하며 실제 위험을 무시하거나 실패를 강요하는 방식으로 구성하지 않는다. 결과가 예상과 달라도 어떤 대안 설명이 가능한지 살핀다. 한 번 성공했다고 믿음이 완전히 바뀌는 것도, 한 번 어려웠다고 치료가 실패한 것도 아니다.\n노출(exposure)은 불안과 관련된 상황을 다루는 치료 방법이지만, 모든 회피를 없애거나 불안을 무조건 오래 참게 하는 것과 같지 않다. 표적과 기전, 안전 행동의 역할, 학습할 내용과 실제 환경의 안전을 검토해야 한다. 강박의 의례와 외상 후 회피, 공포 상황의 치료는 겹치는 요소가 있어도 평가와 과제 구성이 다를 수 있다. 환자의 동의와 준비, 동반 질환과 현재 위험에 따라 조정한다. 실제 위험을 피하는 행동은 적응적일 수 있으므로 병적 회피와 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.d9a18afb7c62",
+      "type": "heading",
+      "level": 2,
+      "text": "행동활성화와 측정"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.c36e669d5526",
+      "type": "paragraph",
+      "markdown": "행동활성화(behavioral activation)는 기분이 좋아질 때까지 기다리기보다 활동과 기분·보상의 관계를 관찰하고 의미 있는 행동을 계획하는 접근이다. 단순히 바쁘게 살거나 운동량을 늘리라는 조언과 다르다. 회피가 일시적으로 부담을 줄이는 한편 장기적으로 보상과 관계를 감소시키는 맥락을 살피고, 작은 실행 가능한 과제를 정한다. 피로와 통증, 장애와 경제적 제약을 고려하여 과제의 난이도를 조정한다. 실행하지 못했을 때는 비난보다 장애 요인과 계획의 적절성을 분석한다.\n가상 활동 기록에서 1주차에 계획 4개 중 1개, 4주차에 6개 중 5개를 완료했다면 완료율은 각각 25%와 약 83.3%다. 완료 개수와 완료율은 서로 다른 지표이며 계획의 난이도도 확인해야 한다. 이 변화만으로 우울장애의 관해나 특정 치료의 인과효과를 증명하지 않는다. 증상과 안전, 수면·관계와 일상 기능을 함께 추적한다. 가상 곡선에는 검증된 척도의 이름을 붙이지 않으며, 실제 환자의 자료인 것처럼 표현하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.cefcd470ab10",
+      "type": "heading",
+      "level": 2,
+      "text": "치료 관계와 재발 대비"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.b.df16fb99316d",
+      "type": "paragraph",
+      "markdown": "치료 목표는 구체적이고 환자에게 중요한 행동과 기능으로 정한다. 다른 사람의 평가를 전혀 걱정하지 않기보다 필요한 회의에 참석하여 의견을 말하기처럼 관찰 가능한 목표가 유용하다. 회기 사이 과제는 일방적인 숙제가 아니라 치료에서 세운 가설을 일상에서 확인하는 방법이다. 과제를 수행할 수 있는 시간과 환경, 이해와 동기를 함께 검토한다. 치료자가 제시한 설명과 환자의 경험이 다르면 치료 관계 안에서 그 차이를 다루어야 한다.\n치료의 마지막 단계에서는 도움이 된 전략과 악화의 초기 신호, 다시 지원을 구할 시점을 정리한다. 증상의 재발 가능성을 치료 실패의 증거로만 해석하지 않고 대응 능력을 강화한다. 약물과 심리치료는 경쟁하는 설명 체계가 아니며 필요에 따라 함께 사용될 수 있다. 정상 뇌의 거시 모형은 개별 신념이나 치료 반응의 위치를 직접 보여 주지 않는다. 사례개념화의 연결은 해부학적 회로도와 구별되는 개념 그래프로 제시하여 설명 수준의 혼동을 줄인다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.table0853",
+      "type": "table",
+      "data": {
+        "title": "관찰 자료와 확인할 조건",
+        "columns": [
+          "항목",
+          "자료·평가 범위"
+        ],
+        "rows": [
+          [
+            "상황",
+            "회의에서 한 문장 의견 말하기"
+          ],
+          [
+            "예측",
+            "말하면 참석자 전원이 비웃을 것"
+          ],
+          [
+            "회피",
+            "침묵하면 당장 불안 감소"
+          ],
+          [
+            "장기 영향",
+            "의견 발표 연습과 예상 검증의 기회 감소"
+          ],
+          [
+            "별도 일지",
+            "계획/완료 과제 수를 주별 기록"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.diagram.synthetic-activation-tasks-0853",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-activation-tasks-0853",
+      "path": "diagrams/diagram.synthetic-activation-tasks-0853.svg",
+      "alt": "가상 활동 계획·완료 기록의 독립 계산 곡선"
+    },
+    {
+      "id": "psychiatry.psychotherapy.cbt-formulation.diagram.cbt-avoidance-formulation-0853",
+      "type": "diagram",
+      "diagramRef": "diagram.cbt-avoidance-formulation-0853",
+      "path": "diagrams/diagram.cbt-avoidance-formulation-0853.svg",
+      "alt": "회피의 단기 결과와 장기 학습"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/psychotherapy/sections/psychiatry.psychotherapy.cbt-formulation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.psychiatry.psychotherapy.cbt-formulation.001",
+    "question.psychiatry.psychotherapy.cbt-formulation.002"
+  ],
+  "relatedLessons": [
+    "psychiatry.psychotherapy.interpersonal-family",
+    "psychiatry.somatic.symptom-functional"
+  ]
+}

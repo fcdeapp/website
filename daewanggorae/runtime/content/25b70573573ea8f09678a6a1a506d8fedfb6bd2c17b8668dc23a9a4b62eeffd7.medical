@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.cranial.ocular-motor-diplopia",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.c0843716e017",
+      "sourceSha256": "c0843716e017a82574b5b6c3700b4039a3e0e90cafa328abaa80bc961bd43c65",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.8fac6240d764",
+      "sourceSha256": "8fac6240d764a5d88ab918c77f6410310840b7a9bf340b632525ba8bce7869f5",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.fe0c5fca86db9853c555",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 134,
+            "end": 175,
+            "exact": "그러나 환자가 말하는 상의 방향만으로 특정 근육과 신경을 확정하지 않는다.",
+            "prefix": "하거나 한 눈을 감는 행동도 단서가 된다. ",
+            "suffix": " 눈의 실제 움직임과 정렬, 눈꺼풀·동공과 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.889f6621a4a1",
+      "sourceSha256": "889f6621a4a1fd929ea6bf7ca060776c2d51f63b0826b63416a82d1b5950f760",
+      "sourceLengthUtf16": 227,
+      "annotations": [
+        {
+          "id": "ann.0b567cdd761d1af29326",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 192,
+            "end": 227,
+            "exact": "양쪽 눈을 함께 움직이는 것과 한쪽 눈의 개별 운동도 구별한다.",
+            "prefix": "용을 상대적으로 분리하여 보는지 이해한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.c94a11aeee47",
+      "sourceSha256": "c94a11aeee47fca26ea3ace559faf497defc74590651836d2098b5fc4c8485a5",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.6dadd3585e73",
+      "sourceSha256": "6dadd3585e73250c73e3453a17b7e0e9305da926761ec4d2fccbb91a6d426d04",
+      "sourceLengthUtf16": 242,
+      "annotations": [
+        {
+          "id": "ann.8e75da2eec5589584a6f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 36,
+            "end": 42,
+            "exact": "신경근접합부",
+            "prefix": "로 잘 움직이지 않는 소견은 근육과 신경, ",
+            "suffix": " 또는 뇌간 연결의 문제에서 나올 수 있다."
+          },
+          "conceptId": "reader.term.8ac0bcc79435bc5e",
+          "targetDocumentId": "neuroscience.nmj.release-safety-factor"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.3eb4af6b1f12",
+      "sourceSha256": "3eb4af6b1f127beb39563c0baa88ccdef6d625d74d7052632edd5757d0e8a7c7",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.728cdd7caf437f64921a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 101,
+            "end": 107,
+            "exact": "중증근무력증",
+            "prefix": "확인한다. 변동성이 있다는 사실만으로 모두 ",
+            "suffix": "은 아니며 검사 조건과 다른 원인을 구별한다"
+          },
+          "conceptId": "reader.term.7ed5dc9adffaba2d",
+          "targetDocumentId": "neurology.nmj.myasthenia-lambert-eaton"
+        },
+        {
+          "id": "ann.0a06b8711f525c4b23ee",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 83,
+            "end": 132,
+            "exact": "변동성이 있다는 사실만으로 모두 중증근무력증은 아니며 검사 조건과 다른 원인을 구별한다.",
+            "prefix": "육의 피로성 약화와 삼킴·호흡을 확인한다. ",
+            "suffix": " 안와의 제한성 문제에서는 통증과 돌출·눈꺼"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.70bb43129589",
+      "sourceSha256": "70bb4312958987b9727ed219db55add8ed643705fb182bca517d9bea76469d20",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.33cb8fb7115d",
+      "sourceSha256": "33cb8fb7115d8b66fcfba43bb9333aa41d2ad05188894a343c3ffeef42dd1820",
+      "sourceLengthUtf16": 245,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.d3049b5d0de1",
+      "sourceSha256": "d3049b5d0de193fdde14aecddf07a85d21f524137487254e2c220f8cb4fb64b8",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cranial.ocular-motor-diplopia.b.90aa56d1263f",
+      "sourceSha256": "90aa56d1263fa19d5b16ce886ac1b26c34417d596f5b865203357a5978516a49",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    }
+  ]
+}

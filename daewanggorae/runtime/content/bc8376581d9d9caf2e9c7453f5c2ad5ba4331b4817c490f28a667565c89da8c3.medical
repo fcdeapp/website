@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.presentation.class-ii-loading",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.presentation.class-ii-loading.b.447e926c32d5",
+      "sourceSha256": "447e926c32d5307e3308fc8d3a1d60a88b6e657ac32074ecb8a088b40f46e391",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.3226f3d1b30bbf1fb71a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 179,
+            "end": 213,
+            "exact": "제시되는 펩타이드와 원래 단백질의 표면 구조도 구별해야 한다.",
+            "prefix": "하면 자기관용과 자가포식의 기여를 놓친다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.presentation.class-ii-loading.b.3d06f032f746",
+      "sourceSha256": "3d06f032f746d2ce3822e754742d375c0000b9c96977be204fc5010f8e98f586",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.presentation.class-ii-loading.b.5138bd42cc87",
+      "sourceSha256": "5138bd42cc87995fb22dd7f81479e1e2c51b2693e0d4928eb695be675daf51ea",
+      "sourceLengthUtf16": 259,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.presentation.class-ii-loading.b.bdd8039e70fe",
+      "sourceSha256": "bdd8039e70fe73ee261d7ea4e924f9fce06bf9bde4a403d810a842bbf2aa260c",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.b9f127a6a4dca8ce62e6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 67,
+            "end": 71,
+            "exact": "항원제시",
+            "prefix": "re를 조절한다. HLA-DM은 주된 표면 ",
+            "suffix": " 분자로 작용하는 HLA-DR 등과 기능이 "
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.presentation.class-ii-loading.b.f3f21a72dd08",
+      "sourceSha256": "f3f21a72dd0889e7234bbc10b8773d4005c6fbffcb1a9a55730f36488b37fd19",
+      "sourceLengthUtf16": 250,
+      "annotations": [
+        {
+          "id": "ann.b2335c193782b0cff9eb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 165,
+            "end": 250,
+            "exact": "그러나 도움을 주는 T세포와 B세포가 관련된 항원 정보를 공유하는 연결 인식(linked recognition)은 반응의 특이성을 유지하는 데 중요하다.",
+            "prefix": "는 펩타이드가 동일한 구조일 필요는 없다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.presentation.class-ii-loading.b.d953d47971e8",
+      "sourceSha256": "d953d47971e8ef7ac36158147910360f735abec6122317f9dcd1fa3ad24147ff",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.presentation.class-ii-loading.b.dd106cd94cc4",
+      "sourceSha256": "dd106cd94cc421c0292916e18102b41840ae971d8c83b389428e3232be984eb6",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.presentation.class-ii-loading.b.8ac63de124b0",
+      "sourceSha256": "8ac63de124b0e1ddbf88074308fe90f3104776c47949d09dad2087d084eb7b79",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.27e47268c5b6635cba10",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 102,
+            "exact": "짧은 펩타이드의 복원이 정상 단백질 처리 능력의 회복을 의미하지는 않는다.",
+            "prefix": "도와 세포의 생존·HLA 일치를 확인한다. ",
+            "suffix": " 일부 단계를 우회했을 가능성이 있기 때문이"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

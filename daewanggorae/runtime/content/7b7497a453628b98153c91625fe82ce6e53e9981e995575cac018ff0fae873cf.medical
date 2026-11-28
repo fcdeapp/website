@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.nutrition.thiamine-deficiency",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.748383be43f3",
+      "sourceSha256": "748383be43f33ba9dd7e395b61a7cb571d47b1642900a5e0652b41e6a69fb61e",
+      "sourceLengthUtf16": 258,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.070b7c7a3616",
+      "sourceSha256": "070b7c7a361683e7f6375d3c055ca99b5067a53070a39c3ed83d4dac77fca205",
+      "sourceLengthUtf16": 262,
+      "annotations": [
+        {
+          "id": "ann.841644837eac2c5639ab",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 214,
+            "end": 218,
+            "exact": "해당과정",
+            "prefix": "하나를 외우는 데 그치지 않고 해당 반응이 ",
+            "suffix": ", 시트르산회로, 아미노산과 오탄당인산경로 "
+          },
+          "conceptId": "reader.term.ae7821eb164e43a8",
+          "targetDocumentId": "biochemistry.carbohydrate.glycolysis"
+        },
+        {
+          "id": "ann.74971837da2bfeed6974",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 220,
+            "end": 226,
+            "exact": "시트르산회로",
+            "prefix": "는 데 그치지 않고 해당 반응이 해당과정, ",
+            "suffix": ", 아미노산과 오탄당인산경로 중 어디를 연결"
+          },
+          "conceptId": "reader.term.289e64faed605b46",
+          "targetDocumentId": "biochemistry.metabolism.tca"
+        },
+        {
+          "id": "ann.d006f5c917bf57fd26e5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 234,
+            "end": 241,
+            "exact": "오탄당인산경로",
+            "prefix": "반응이 해당과정, 시트르산회로, 아미노산과 ",
+            "suffix": " 중 어디를 연결하는지 표시해야 한다."
+          },
+          "conceptId": "reader.term.3fe931bd4395db73",
+          "targetDocumentId": "biochemistry.carbohydrate.pentose-phosphate"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.dae6511fe915",
+      "sourceSha256": "dae6511fe915c021193319aad8e4a206597fb787e657586fe939e8e4c3b1979c",
+      "sourceLengthUtf16": 248,
+      "annotations": [
+        {
+          "id": "ann.33377add47a02a904c77",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 178,
+            "end": 248,
+            "exact": "그러나 젖산 상승은 저관류·저산소·약물·간의 제거 변화 등 여러 원인에서 생기므로 단일 검사로 티아민 결핍을 확정하지 않는다.",
+            "prefix": "핍은 젖산 증가의 가능한 기전 중 하나다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.02ac827d2578",
+      "sourceSha256": "02ac827d2578ef5648b7037e3d8c643cf2ff5739b2f02059741f6df550350df3",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.a0bdd133c323",
+      "sourceSha256": "a0bdd133c3231b9e4f6883932fed6bd6c4b86db66920f179b23cbaf5a933ed6e",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.9dbe5ac248ed",
+      "sourceSha256": "9dbe5ac248ed061c0235e681dc7dd235a5ce4215f7d53007235f0973127ff539",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.b41b96130601",
+      "sourceSha256": "b41b961306013a64e1c88a83b47143fc0ebe94cb0a4e4c352001f1757ec4d7f3",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.81035fb2958e",
+      "sourceSha256": "81035fb2958e3a9f304bd7d6ea407edc495348de30553c6398043fdb398ea266",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.0d078332938c",
+      "sourceSha256": "0d078332938c9d6324b9a2d47258e87009a2e84c566f60c74eba84df9b454229",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.08e8dd13100817bbabaf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 131,
+            "end": 173,
+            "exact": "기억 장애 등 지속적 신경학적 결과가 남을 수 있어 임상적 의심이 중요하다.",
+            "prefix": "두 있어야만 의심할 수 있는 것은 아니다. ",
+            "suffix": " 정상 성인 뇌의 정적 모형은 위치를 설명할"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.72a99e78952e",
+      "sourceSha256": "72a99e78952e27ffa2efe907e291da1f97db1f091c49a4da9a4e196b39c4d38e",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.e5e5f1618b97",
+      "sourceSha256": "e5e5f1618b97b91a5b632612257b1d1af24123a772f850b944360fdd607580f2",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.a22beaaf1204",
+      "sourceSha256": "a22beaaf1204846e89bfdce15b038f4c8b2bafad968133aa6db03e2dc833f1de",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.b405b7bbaf9b",
+      "sourceSha256": "b405b7bbaf9bfcf926cb915714f38431c0d2dc4f9cfaeb2430e4c89a019306c4",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.thiamine-deficiency.b.9791dd080cd7",
+      "sourceSha256": "9791dd080cd757d7325bd447842965b33a3e53239ef2733a9c260d53ef3ac64e",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.inflammation-direction-displacement-toy",
+  "lessonId": "pathology.inflammation.chemotactic-migration",
+  "title": "같은 경로 길이의 방향 순변위",
+  "series": [
+    {
+      "label": "A: 8t",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 8
+        },
+        {
+          "x": 2,
+          "y": 16
+        },
+        {
+          "x": 3,
+          "y": 24
+        },
+        {
+          "x": 4,
+          "y": 32
+        },
+        {
+          "x": 5,
+          "y": 40
+        },
+        {
+          "x": 6,
+          "y": 48
+        },
+        {
+          "x": 7,
+          "y": 56
+        },
+        {
+          "x": 8,
+          "y": 64
+        },
+        {
+          "x": 9,
+          "y": 72
+        },
+        {
+          "x": 10,
+          "y": 80
+        }
+      ]
+    },
+    {
+      "label": "B: t",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 6
+        },
+        {
+          "x": 7,
+          "y": 7
+        },
+        {
+          "x": 8,
+          "y": 8
+        },
+        {
+          "x": 9,
+          "y": 9
+        },
+        {
+          "x": 10,
+          "y": 10
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "pathLengthRate": 10,
+    "gradientDisplacementRates": [
+      8,
+      1
+    ]
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 10,
+      "scale": "linear",
+      "ticks": [
+        0,
+        2,
+        5,
+        8,
+        10
+      ],
+      "label": "시간 (임의시간)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        25.0,
+        50.0,
+        75.0,
+        100.0
+      ],
+      "label": "유인 방향 순변위 (μm)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "A: 8t",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "B: t",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "가정과 식에서 독립 생성한 학습용 자료다. 실제 환자·실험 관측값이나 진단·치료 기준이 아니다.",
+    "두 조건의 총 경로는 각각10t다. 경로 자체의 공간 궤적을 그린 것이 아니다."
+  ],
+  "sourceImageUsed": false
+}

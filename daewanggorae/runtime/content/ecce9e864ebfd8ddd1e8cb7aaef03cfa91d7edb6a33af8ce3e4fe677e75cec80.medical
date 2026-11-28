@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.metabolism.tca",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.metabolism.tca.b.7d721749d331",
+      "sourceSha256": "7d721749d3317e66ba5e78227d3e7a0a71a44dbe0a6a208ab7861bc26d269e29",
+      "sourceLengthUtf16": 295,
+      "annotations": [
+        {
+          "id": "ann.d640ab3ccf7d90258e98",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 221,
+            "end": 226,
+            "exact": "포도당신생",
+            "prefix": "로는 에너지 생산뿐 아니라 아미노산, 헴과 ",
+            "suffix": " 등으로 이어지는 중간체를 공급한다. 이처럼"
+          },
+          "conceptId": "reader.term.f6becb3579af9222",
+          "targetDocumentId": "biochemistry.carbohydrate.gluconeogenesis"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.metabolism.tca.b.39df240b9635",
+      "sourceSha256": "39df240b9635e4d522573538c944fe4b0561a568c22753d9c661f8514e68aaf2",
+      "sourceLengthUtf16": 304,
+      "annotations": [
+        {
+          "id": "ann.5c8aca54fd81d834fa7c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 35,
+            "end": 38,
+            "exact": "β산화",
+            "prefix": " pyruvate의 산화적 탈탄산, 지방산 ",
+            "suffix": ", 일부 아미노산 대사 등 여러 경로에서 공"
+          },
+          "conceptId": "reader.term.0ba7fa5b933b185a",
+          "targetDocumentId": "biochemistry.lipids.fatty-acid-oxidation"
+        },
+        {
+          "id": "ann.fe45198046cde2f27389",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 267,
+            "end": 304,
+            "exact": "경로의 입구와 회로를 구분해야 전체 수지를 정확히 계산할 수 있다.",
+            "prefix": "은 사람의 정상 대사에서 성립하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.metabolism.tca.b.514e7390a44c",
+      "sourceSha256": "514e7390a44c1fa00914f77e75f6628b313486cd3e6e99369504119576f77b2a",
+      "sourceLengthUtf16": 340,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.tca.b.e8b50c5bf829",
+      "sourceSha256": "e8b50c5bf8290ee6a89578b5293097237901687af1d3fbfa52ca79836dae4b51",
+      "sourceLengthUtf16": 366,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.tca.b.c9c297954244",
+      "sourceSha256": "c9c2979542442a5c639110507c843c78f3b03ae9284a0551742e245a241104af",
+      "sourceLengthUtf16": 312,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.tca.b.6f26cc9eb8e3",
+      "sourceSha256": "6f26cc9eb8e327c9af2a56bd9212dd3a6de3e22263e477e2b6069cd27867fa6c",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.e67bd904bef987fd01e0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 195,
+            "end": 235,
+            "exact": "이 구분은 생화학의 수지 계산과 실제 원자 추적을 연결하는 데 중요하다.",
+            "prefix": "느 탄소가 빠지는지는 서로 다른 질문이다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.metabolism.tca.b.f9da112b7761",
+      "sourceSha256": "f9da112b7761eac1f27544737fee330456deecc02952304aeafcdb3d0fffb704",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.tca.b.c5e3dedd57ea",
+      "sourceSha256": "c5e3dedd57ea77f3fa072cd53d95d94e1304049828bbcf4176d6a9aef1580f11",
+      "sourceLengthUtf16": 267,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.tca.b.97a2a5042b3e",
+      "sourceSha256": "97a2a5042b3ed652019c07178182d918eee626ba7c4b7633f7e7d94cb906babf",
+      "sourceLengthUtf16": 296,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.tca.b.29fe67f2d792",
+      "sourceSha256": "06e3e543cbc0dc42c0823c3619a4663a0a61a99ae7f370ea5f34b06a321c3fe7",
+      "sourceLengthUtf16": 250,
+      "annotations": [
+        {
+          "id": "ann.17e2ab91c3d987955bf2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 212,
+            "exact": "홀수 지방산의 propionyl-CoA가 succinyl-CoA로 들어오는 경우와 지방의 glycerol 성분은 구분해야 한다.",
+            "prefix": "oacetate가 증가하지 않기 때문이다. ",
+            "suffix": " 이 원리는 단식, 케톤 생성과 포도당신생의"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

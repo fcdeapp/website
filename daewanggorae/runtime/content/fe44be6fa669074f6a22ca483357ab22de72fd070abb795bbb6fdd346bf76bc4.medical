@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.heart-failure.mechanisms-evaluation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.b11ee2f5ae5a",
+      "sourceSha256": "b11ee2f5ae5a3ba35ccd5cf40a5039b925d84b53d7c3e0d9e31ea20ce7c2fd6d",
+      "sourceLengthUtf16": 251,
+      "annotations": [
+        {
+          "id": "ann.ac6e4733bcb19979a13e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 17,
+            "exact": "heart failure",
+            "prefix": "심부전(",
+            "suffix": ", HF)은 심장의 구조적 또는 기능적 이상"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.2a82f868afe0d693287a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 190,
+            "end": 251,
+            "exact": "같은 호흡곤란이라도 좌심실의 수축 기능, 이완 기능, 판막, 심낭 및 우심실 중 어떤 요소가 중요한지 다르다.",
+            "prefix": "폐정맥압이 상승하여 증상이 생길 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.7dfdd71e0768",
+      "sourceSha256": "7dfdd71e07683305b8ca75a0bff5cfde1871fb728d33b7df1ca8f805f5069dac",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.eb7b7133f823",
+      "sourceSha256": "eb7b7133f82345e29359c7e62f17c4b11b8710c10c7f371edf5be48183f6c0ca",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.4a017c314bce",
+      "sourceSha256": "4a017c314bcec44d0ba8b2310c8ef550db7d352b004d05b5724e64ecbf818a68",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.75522a1598f5",
+      "sourceSha256": "75522a1598f56619b6138dd51504995129cc8bbcd5ed36faae187dc4657c8c44",
+      "sourceLengthUtf16": 209,
+      "annotations": [
+        {
+          "id": "ann.361cd0530004d7c3685d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 17,
+            "end": 21,
+            "exact": "RAAS",
+            "prefix": "심박출량이 감소하면 교감신경과 ",
+            "suffix": "가 활성화되어 심박수, 혈관 긴장 및 나트륨"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.1a213b4fd276be57a068",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 124,
+            "end": 129,
+            "exact": "알도스테론",
+            "prefix": "산소 요구량을 늘릴 수 있다. 안지오텐신과 ",
+            "suffix": "의 신호는 섬유화와 구조 재형성에도 관여한다"
+          },
+          "conceptId": "reader.term.2dbad37f3f8aa1cf",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.d8d04c28b36f",
+      "sourceSha256": "d8d04c28b36f5af21b70fe10574dff38a9d82a037ee12a81cd5f3f351d3e1950",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.fe4bec9df0c5",
+      "sourceSha256": "fe4bec9df0c52f5e8e85dde52ecd5623749acf89bf3f328b8110b668d258bb78",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.8316ea043762",
+      "sourceSha256": "8316ea0437626227c46540c1491e0e5494c483f769aacd2e1997e1cdb2a19f78",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.3293c3d53678",
+      "sourceSha256": "3293c3d53678e634b25e0a2b7c729974e2978f8d5530b5ef4bc8a1d580d65858",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.20a71917cb79",
+      "sourceSha256": "20a71917cb79d01700f38b3d1d4b608dee2488584ca23da005695bcd7958f65c",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.39f347a1d5f28e3cb6d2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 164,
+            "end": 218,
+            "exact": "네프릴리신 억제가 BNP의 대사에 영향을 줄 수 있으므로 치료 중 표지자 변화의 의미도 구분한다.",
+            "prefix": "값의 배제력도 환자 조건에 따라 달라진다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.8238f5d945a2",
+      "sourceSha256": "8238f5d945a2a8a6c986100805db8d29215b204efeb10eb3e0bfbe051a57f21d",
+      "sourceLengthUtf16": 189,
+      "annotations": [
+        {
+          "id": "ann.937f8c7428cdbb727860",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 41,
+            "end": 80,
+            "exact": "이뇨제는 나트륨과 물을 배출하여 호흡곤란과 부종을 줄이는 데 중요하다.",
+            "prefix": " 완화와 장기 예후 개선을 함께 추구한다. ",
+            "suffix": " 그러나 부종 감소만으로 심근 재형성과 질병"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.8c74203cd583",
+      "sourceSha256": "8c74203cd5834a0f1c98936cc86d30e2b6314b259e36ef9d07bc573ea22ef91c",
+      "sourceLengthUtf16": 262,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.30326b1ee00a",
+      "sourceSha256": "30326b1ee00ad582fefe95b91d6978409078957efa7e5caa6a3f96f7bf2b7569",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.0a3d55a9e09ceabce3a8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 17,
+            "end": 22,
+            "exact": "약물 조정",
+            "prefix": "급성 쇼크나 심한 저관류에서의 ",
+            "suffix": "은 안정된 만성 외래 환자의 치료와 다르다."
+          },
+          "conceptId": "reader.term.4d94a87f27739d1c",
+          "targetDocumentId": "patient-safety.medication.reconciliation-systems"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.27da666a4f6d",
+      "sourceSha256": "27da666a4f6df0e104dcc183b1389e1a68647940049ca57d79a9ea6a1d568512",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.c55ee0531e28",
+      "sourceSha256": "c55ee0531e28e487c45f577cb8b6bdf15bedbe70072e1282e423d596390afdd3",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.48ef79f19c15",
+      "sourceSha256": "48ef79f19c15c9f4d73a8e7829a187c91aa2e77e76c2b78ea6e51fd1e747c759",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.mechanisms-evaluation.b.d856dbba9059",
+      "sourceSha256": "d856dbba905918c5fa87bf8024166bcb80de5a8b7079c4089e5e0cc1373b77db",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    }
+  ]
+}

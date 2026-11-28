@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.autonomic.antimuscarinic-effects",
+  "subjectId": "pharmacology",
+  "chapterId": "autonomic",
+  "title": {
+    "ko": "무스카린 길항과 항콜린성 부담",
+    "en": "Muscarinic Antagonism and Anticholinergic Burden"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.lo.01",
+      "text": "항무스카린과 광의의 항콜린성 용어를 구별한다"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.lo.02",
+      "text": "장기 효과·중추 접근·기저 긴장도의 관계를 설명한다"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.lo.03",
+      "text": "약물 부담의 누적과 안전성 판단의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.5c5e3fac7d16",
+      "type": "heading",
+      "level": 2,
+      "text": "차단하는 수용체를 명시한다"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.3f28b388b887",
+      "type": "paragraph",
+      "markdown": "항무스카린제(antimuscarinic agent)는 무스카린 수용체에서 ACh 작용을 줄이는 약물이다. 임상에서 항콜린성이라는 말이 흔히 이 의미로 쓰이지만,광의로는 니코틴성 수용체와 콜린성 전달의 다른 표적도 존재한다. Atropine과 신경근 차단제를 모두 같은 수용체 차단제로 묶으면 효과·금기·위험의 차이를 놓친다. 약물 이름과 함께 실제 표적을 명시하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.ad9a73e53fb7",
+      "type": "paragraph",
+      "markdown": "경쟁 길항의 이상적 평형 모형에서는 작용제 농도를 높여 억제를 극복할 수 있지만 실제 생체에서는 농도·시간·표적 분포와 안전성의 제약이 있다. 이 개념을 실제 환자에게 작용제를 임의로 더 투여하라는 뜻으로 읽지 않는다. 약물의 결합·해리 속도와 표적 접근,조직의 반응 여유가 관찰 지속시간에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.20507b33a479",
+      "type": "heading",
+      "level": 2,
+      "text": "장기별 반응과 기저 신경 긴장도"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.d5cfc290ebce",
+      "type": "paragraph",
+      "markdown": "침·눈물·기관지 등 분비의 감소,위장관과 방광 운동의 변화,심장 박동 조절과 눈의 조절 변화는 대표적인 항무스카린 효과다. 실제 반응 크기는 기저 부교감 긴장도와 수용체 분포에 따라 달라질 수 있다. 내인성 콜린성 긴장도가 작은 부위에서 수용체가 있다고 항상 큰 반응이 나타나는 것은 아니다. 직접 작용제에 반응하는 부위와 길항제 단독 효과가 큰 부위도 같지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.02aaa46b7a1e",
+      "type": "paragraph",
+      "markdown": "땀샘은 콜린성 교감 지배의 중요한 예외라서 항무스카린 작용으로 땀 분비가 줄 수 있다. 따라서 이 약물의 효과를 단순히 부교감 차단 목록으로만 이해하면 체온 조절과 관련된 위험을 놓친다. 심박수는 용량·시간·반사와 여러 표적의 합으로 나타나므로 한 방향의 변화만으로 모든 노출을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.18e44314c7af",
+      "type": "heading",
+      "level": 2,
+      "text": "분포와 제형의 차이"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.4cb80f82d1a7",
+      "type": "paragraph",
+      "markdown": "삼차·사차 아민 등의 화학적 차이는 이온화와 막 통과에 영향을 줄 수 있다. 사차 화합물은 대체로 수동 중추 접근이 제한되는 경향이 있지만 약물·장벽 상태·노출을 무시한 절대 규칙으로 쓰지 않는다. 전신 투여와 흡입·국소 제형은 표적 부위 노출과 전신 효과의 균형이 다르다. 국소 사용이라고 모든 전신 부작용이 배제되는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.a0c3ed7da85e",
+      "type": "paragraph",
+      "markdown": "Atropine·scopolamine,glycopyrrolate,흡입 항무스카린제와 방광 증상에 사용하는 약물들은 같은 장기 선택성과 시간 경과를 갖지 않는다. 수용체 아형의 결합 특성뿐 아니라 약동학·해리·투여 위치가 실용적 선택성에 기여할 수 있다. 약물군 비교는 공통 표적과 실제 노출·적응증의 차이를 함께 다뤄야 하며 허가된 제형과 용법은 별도로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.d69d6d82edc5",
+      "type": "heading",
+      "level": 2,
+      "text": "위해가 되는 같은 약리 작용"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.0a753b490238",
+      "type": "paragraph",
+      "markdown": "구강 건조·시야 및 조절 변화·변비·배뇨 곤란은 원하는 작용과 같은 표적에서 생길 수 있다. 기존의 유출 장애와 장운동 문제,눈의 해부학적 상태,심장 상태가 위험 판단에 영향을 준다. 중추에 도달하는 약물은 인지·주의·행동과 각성에 영향을 줄 수 있으며 고령·취약 상태와 병용 약물에서 해석이 더 중요하다. 특정 증상만으로 원인 약물을 단독 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.71a2a6ac06ee",
+      "type": "paragraph",
+      "markdown": "항콜린성 부담(anticholinergic burden)은 여러 약물의 관련 효과가 누적될 수 있다는 평가 개념이다. 서로 다른 척도의 점수가 같은 약동학·수용체 점유율을 직접 측정한 값은 아니다. 처방약 외 일반약과 복합제,다른 약리 효과도 함께 검토해야 한다. 점수의 변화와 실제 인지·낙상·배뇨 위험의 인과는 환자 상태와 연구 설계의 영향을 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.db3b45f734b8",
+      "type": "heading",
+      "level": 2,
+      "text": "비교 자료와 모형의 한계"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.cad594cd09ac",
+      "type": "paragraph",
+      "markdown": "가상 경쟁 모형에서 반응을 R=100C/[K(1+B/KB)+C]로 두면 B/KB가 증가할수록 같은 C에서 반응이 작아진다. K=2,C=2,B/KB=3이면 R=20이다. 이는 지정한 단일 평형 반응계의 산술이며 실제 atropine 용량·혈중 농도·기관지 반응을 계산하는 식이 아니다. 수용체 점유와 최종 장기 효과도 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.b.c8bd751bafa8",
+      "type": "paragraph",
+      "markdown": "기전을 비교할 때에는 수용체 차단,효소 억제,직접 작용과 기저 긴장도를 서로 다른 조건으로 둔다. 반응 소실이 수용체 차단 때문인지 조직 손상·신호 억제·관찰 시점 때문인지 대조할 필요가 있다. 본문의 곡선·표는 작용 위치와 노출·기능을 구별하는 학습 자료이며 실제 금기·처방·중독 대응은 약물과 상황별 임상 근거로 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.diagram.muscarinic-antagonist-ratio-example",
+      "type": "diagram",
+      "diagramRef": "diagram.muscarinic-antagonist-ratio-example",
+      "path": "diagrams/diagram.muscarinic-antagonist-ratio-example.svg",
+      "alt": "가상 경쟁 조건의 고정 입력의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.autonomic.antimuscarinic-effects.table.compare",
+      "type": "table",
+      "data": {
+        "title": "항무스카린의 해석",
+        "columns": [
+          "축",
+          "구별"
+        ],
+        "rows": [
+          [
+            "표적",
+            "니코틴 차단과 다름"
+          ],
+          [
+            "기저 긴장도",
+            "장기별 단독 효과 차이"
+          ],
+          [
+            "화학·제형",
+            "중추·국소·전신 노출"
+          ],
+          [
+            "부담 척도",
+            "표적 점유의 직접 측정 아님"
+          ]
+        ],
+        "notes": "기전·정의의 비교이며 실제 진단·치료 판정은 별도 근거가 필요하다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/autonomic/sections/pharmacology.autonomic.antimuscarinic-effects.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "항무스카린 효과는 기저 긴장도·분포·표적에 따라 다르다."
+  ],
+  "relatedLessons": [
+    "pharmacology.autonomic.direct-cholinergic-agonists",
+    "pharmacology.autonomic.cholinesterase-inhibition"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.autonomic.antimuscarinic-effects.001",
+    "question.pharmacology.autonomic.antimuscarinic-effects.002"
+  ]
+}

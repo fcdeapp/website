@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.calcification-question-pairs",
+  "lessonId": "pathology.cell.accumulations-calcification",
+  "title": "침착과 원인의 다른 층",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "국소 조직 손상",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "정상 혈중 Ca/P에서도 침착 가능",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "전신 Ca/P 대사 변화",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "여러 조직의 침착 환경",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "광물 침착 관찰",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "골세포·골기질 형성은 별도 질문",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.calcification-question-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "이영양성 맥락",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.calcification-question-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "전이성 맥락",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.calcification-question-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "석회화와 골형성 구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "단일 검사값·Ca×P 절단값으로 모든 원인을 분류하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

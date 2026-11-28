@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.epilepsy.first-seizure-eeg",
+  "subjectId": "neurology",
+  "chapterId": "epilepsy",
+  "title": {
+    "ko": "첫 발작의 감별·뇌파와 발작 분류",
+    "en": "First Seizure Differential Diagnosis EEG and Classification"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.lo.01",
+      "text": "발작·급성 증상성 발작·뇌전증을 구별한다"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.lo.02",
+      "text": "목격 정보·뇌파·영상을 통합한다"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.lo.03",
+      "text": "새 분류와 관찰된 증상의 순서를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.996285e3f74f",
+      "type": "heading",
+      "level": 2,
+      "text": "사건을 시간 순서로 재구성한다"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.3a58954f812a",
+      "type": "paragraph",
+      "markdown": "발작(seizure)이 의심되는 사건에서는 시작 전 상황과 느낌, 최초 관찰·움직임·반응성, 지속과 회복을 순서대로 확인한다. 실신·대사 이상·수면 사건과 비뇌전증성 사건도 비슷하게 보일 수 있다. 팔다리를 떨었다는 말 하나로 뇌전증을 확진하지 않는다. 가능하면 목격자의 구체적 기술과 안전하게 얻어진 기록을 이용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.2e46d4d93972",
+      "type": "paragraph",
+      "markdown": "발열·전해질·저혈당과 중독·금단, 급성 뇌손상 등과 시간적으로 연결된 급성 증상성 발작은 지속적 발작 성향을 뜻하는 뇌전증(epilepsy)의 진단과 구별한다. 한 번의 사건에서도 이후 위험과 검사에 따라 판단이 달라질 수 있다. 질환명·재발 가능성·치료 필요는 같은 질문이 아니다. 현재 지속되는 경련과 호흡·순환의 위해는 먼저 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.fe7dade7ebec",
+      "type": "heading",
+      "level": 2,
+      "text": "국소와 전반, 알려진 것과 미상"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.733c021ba3d2",
+      "type": "paragraph",
+      "markdown": "국소 발작과 전반 발작은 회로의 시작과 확산, 관찰된 증상의 조합을 바탕으로 분류한다. 몸 전체의 경련이 보였더라도 처음 국소에서 시작해 퍼졌을 수 있다. 시작을 보지 못한 사건은 미상의 정보를 그대로 기록해야 한다. 보이지 않은 첫 순간을 추정하여 확정 분류로 바꾸지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.b8578a3eb80d",
+      "type": "paragraph",
+      "markdown": "ILAE의 2025년 개정은 기존 틀을 바탕으로 분류와 기술을 다듬고 의식·반응 및 증상의 시간 순서를 강조한다. 2017년 용어와 새 용어를 혼용할 때에는 어떤 체계를 쓰는지 명시한다. 신생아 발작은 이 개정의 같은 적용 범위로 포함하지 않는다. 한 분류표를 외우는 일보다 실제 관찰과 불확실성을 정확히 기술하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.bb9e63890ba9",
+      "type": "heading",
+      "level": 2,
+      "text": "뇌파와 영상이 답하는 질문"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.4abde45733fc",
+      "type": "paragraph",
+      "markdown": "뇌파(electroencephalography, EEG)는 기록 시간 동안의 두피 전기활동을 통해 진단과 유형·증후군 평가를 돕는다. 사건 사이의 짧은 기록이 정상이어도 뇌전증이 배제되는 것은 아니다. 반대로 파형 하나의 이상을 임상 사건과 연결하지 않고 확진으로 삼아서는 안 된다. 인공물·정상 변이와 판독, 수면·약물과 기록 조건을 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.186ce8bb40cc",
+      "type": "paragraph",
+      "markdown": "영상은 구조적 원인과 급성 병변을 평가하는 정보를 준다. 어떤 영상이 필요한지와 시점은 병력·진찰·연령과 임상 상황에 따라 달라진다. 심전도와 대사·약물 평가도 감별에 중요할 수 있다. 검사 목록을 모두 시행하는 것보다 어떤 원인을 확인하거나 배제하려는지 명시해야 결과를 올바르게 해석할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.7a84fa70860b",
+      "type": "heading",
+      "level": 2,
+      "text": "치료와 생활 기능"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.f999643606e6",
+      "type": "paragraph",
+      "markdown": "항발작약의 선택에는 발작 유형·증후군과 원인, 연령·임신 가능성·동반 질환과 상호작용을 함께 고려한다. 발작이 없는 기간과 약물의 인지·기분·졸림 등 부작용, 실제 복용을 모두 추적한다. 같은 약물이 모든 유형에 같은 효과를 가지는 것은 아니다. 첫 사건 뒤의 약물 시작과 장기 유지·중단은 개인 위험과 선호를 반영한 판단이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.b.d956d760aea3",
+      "type": "paragraph",
+      "markdown": "안전 상담에서는 일상 활동·목욕과 물가·높은 곳·기계 및 운전 등의 위험을 상황별로 논의한다. 실제 운전 제한과 자격은 국내의 현행 법규와 평가 기준을 확인해야 하며 해외 기준을 그대로 적용하지 않는다. 기록된 사건·회복과 치료 반응, 새로운 증상과 재평가 계획을 이어서 관리한다. 발작 억제와 환자의 삶·기능은 함께 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.suppheading0852",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 임상 해석의 연결"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.supp.3b6ba976f1fd",
+      "type": "paragraph",
+      "markdown": "뇌파의 전극에서 기록되는 전압은 많은 세포의 동기화된 활동과 전달·기록 조건의 결과다. 개별 뉴런의 활동전위를 두피에서 그대로 한 개씩 읽는 검사는 아니다. 눈·근육·전극과 움직임의 인공물이 파형을 만들 수 있다. 정상 또는 이상이라는 요약만 보지 않고 임상 질문과 기록 길이·상태·기술적 질을 확인하면 검사의 한계를 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.supp.e5b9700faa94",
+      "type": "paragraph",
+      "markdown": "운동이 멈춘 뒤에도 의식 회복이 예상과 다르거나 반복되는 이상이 있으면 지속되는 발작·대사·약물·뇌손상 등 여러 가능성을 평가한다. 외부의 큰 경련이 없다는 사실이 모든 전기적 발작의 종료를 뜻하지는 않는다. 반대로 혼동이 남았다는 관찰만으로 하나의 원인을 확정할 수도 없다. 시간 경과와 진찰·필요한 기록을 연결하여 재평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.epilepsy.first-seizure-eeg.table0852",
+      "type": "table",
+      "data": {
+        "title": "관찰·가설과 임상 해석",
+        "columns": [
+          "항목",
+          "자료·의미"
+        ],
+        "rows": [
+          [
+            "사건",
+            "반응 저하와 한쪽 움직임 뒤 전신 경련"
+          ],
+          [
+            "회복",
+            "일정 시간 혼동"
+          ],
+          [
+            "EEG",
+            "짧은 사건간 기록은 정상"
+          ],
+          [
+            "맥락",
+            "대사·약물·심장·영상과 목격 정보 평가 중"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/epilepsy/sections/neurology.epilepsy.first-seizure-eeg.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.epilepsy.first-seizure-eeg.001"
+  ],
+  "relatedLessons": [
+    "neurology.examination.localizing-weakness",
+    "neurology.cognition.delirium-dementia"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neonatology.feeding.weight-hydration",
+  "subjectId": "neonatology",
+  "chapterId": "feeding",
+  "title": {
+    "ko": "신생아 수유·체중 궤적과 수분 상태",
+    "en": "Neonatal Feeding Weight Trajectory and Hydration"
+  },
+  "learningObjectives": [
+    {
+      "id": "neonatology.feeding.weight-hydration.lo.01",
+      "text": "체중 감소율의 기준과 시간축을 계산한다"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.lo.02",
+      "text": "수유 횟수와 실제 전달량을 구별한다"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.lo.03",
+      "text": "수분·배변·황달과 전신 상태를 통합한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neonatology.feeding.weight-hydration.b.e7ce9e969fdb",
+      "type": "heading",
+      "level": 2,
+      "text": "출생 체중에서 이후 궤적으로"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.82235ade2ddc",
+      "type": "paragraph",
+      "markdown": "출생 후 체중의 변화에는 세포외액의 조절과 수분 손실, 실제 섭취·배설이 함께 작용한다. 어느 정도의 초기 감소가 관찰될 수 있지만 모든 감소를 같은 정상 과정으로 설명하지 않는다. 출생 방식·재태주수와 수액 노출, 측정 조건과 이후 섭취·질환이 경과에 영향을 준다. 체중은 같은 저울과 조건·시간 정보를 바탕으로 비교한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.8feec89dd7b0",
+      "type": "paragraph",
+      "markdown": "출생 체중을 기준으로 한 감소율은 (출생체중−현재체중)/출생체중×100이다. 가상 사례에서 3.40kg에서 3.08kg이 되었다면 감소는 0.32kg, 약 9.41%다. 현재체중을 분모로 쓰면 다른 값이 나오므로 비교 기준을 명시한다. 이 숫자는 한 가상 사례의 계산이며 특정 비율 아래이면 안전하다는 규칙이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.0461d8779398",
+      "type": "heading",
+      "level": 2,
+      "text": "횟수와 실제 전달량"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.7dffeacb9039",
+      "type": "paragraph",
+      "markdown": "수유 횟수와 젖을 문 시간은 실제 전달된 모유량과 동일하지 않다. 젖 물림과 빨기·삼킴·호흡의 협조, 수유 전후 행동과 유방의 변화 및 모체·아기의 상태를 함께 본다. 분유 수유에서도 제공량과 실제 섭취·흘림·구토를 구별한다. 기록이 많다는 사실만으로 충분한 영양과 수분을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.52cb55e10585",
+      "type": "paragraph",
+      "markdown": "미숙성과 졸림·황달, 구강 구조와 신경근·호흡 문제는 효과적인 섭취를 어렵게 할 수 있다. 수유를 잘 못하는 아기에서 질병의 결과인지 섭취 부족의 원인인지, 둘이 서로 악화시키는지 평가한다. 체온 불안정·활동 저하·호흡 곤란과 감염·저혈당 등의 가능성도 고려한다. 모든 문제를 모유량 한 가지 탓으로 돌리지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.41da3f10659d",
+      "type": "heading",
+      "level": 2,
+      "text": "수분과 배변의 정보"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.f5ec3fc067dc",
+      "type": "paragraph",
+      "markdown": "소변·배변의 횟수와 양·색, 점막과 관류·활동성은 수분과 섭취 평가의 정보를 더한다. 기저귀가 젖었다는 한 가지 관찰만으로 충분한 수분과 정상 나트륨을 확정하지 않는다. 혈청 농도와 전신 수분 총량도 같은 개념이 아니다. 실제 손실·수유 전달과 필요에 따른 검사·신장 상태를 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.495980e2d131",
+      "type": "paragraph",
+      "markdown": "섭취가 부족하면 배변과 장간순환의 변화가 빌리루빈 경과에 영향을 줄 수 있다. 황달로 더 졸려 섭취가 떨어지면 악순환이 생길 수 있다. 그러나 섭취를 개선하면 모든 용혈·간담도 질환과 신경독성 위험이 해결되는 것은 아니다. 황달과 체중·수유의 평가를 연결하면서 원인별 질문을 따로 유지한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.72af227d30fa",
+      "type": "heading",
+      "level": 2,
+      "text": "지원과 재평가의 계획"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.dfb73c7ccde0",
+      "type": "paragraph",
+      "markdown": "평가에서는 실제 수유 장면을 관찰하고 교정 가능한 문제와 보충의 필요를 검토한다. 보충의 종류·양과 경로, 수유 목표는 아기의 현재 상태와 모체의 계획을 함께 고려하여 정한다. 모유 수유의 지속을 돕는 일과 아기의 충분한 섭취를 보장하는 일을 같은 계획 안에서 다룬다. 수유 방식에 대한 비난은 정확한 기록과 도움 요청을 어렵게 할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.b.57ab8fdeb13e",
+      "type": "paragraph",
+      "markdown": "체중이 다시 증가해도 수분 변화와 실제 영양 회복, 측정 오차를 구별한다. 퇴원과 추적에서는 체중 추세·수유 전달·황달·배설과 현재 질환, 보호자의 관찰과 진료 접근을 함께 확인한다. 다음 측정 날짜만 정하기보다 활동 저하·섭취 악화·소변 감소·호흡과 체온 변화 등 재평가할 상황을 설명한다. 체중 곡선은 아기의 전체 상태를 이해하는 한 자료다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.suppheading0851",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 판단의 연결"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.supp.7a92e9fce373",
+      "type": "paragraph",
+      "markdown": "가상 체중이 생후3일3.08kg에서7일3.32kg으로 증가했다면4일 동안0.24kg,하루 평균60g이 늘었다. 그러나 출생체중3.40kg에는 아직0.08kg,약2.35% 못 미친다. 최근 증가와 출생체중 회복은 다른 결과다. 초기 수분 이동과 측정 조건이 큰 시기이므로 이 가상 증가 속도를 모든 아기의 정상 영양 성장 목표로 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.supp.630ba33f515d",
+      "type": "paragraph",
+      "markdown": "관찰할 수 있는 지표가 서로 맞지 않으면 설명을 다시 검토한다. 체중이 증가해도 수유가 매우 힘들고 활동·호흡 상태가 나쁘면 아기의 전체 건강을 따로 평가해야 한다. 반대로 잘 먹는다는 주관적 인상과 소변·체중의 악화가 어긋나면 실제 전달과 손실·질환을 확인한다. 하나의 정상 지표를 전체 안전의 증거로 바꾸지 않고 궤적과 현재 기능을 함께 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.table0851",
+      "type": "table",
+      "data": {
+        "title": "조건·측정·기전과 해석",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "감소율",
+            "출생체중이 분모"
+          ],
+          [
+            "전달",
+            "횟수·시간과 실제 섭취 구별"
+          ],
+          [
+            "현재",
+            "활동·호흡·수분·황달"
+          ],
+          [
+            "추적",
+            "궤적·실제 수유·접근과 재평가"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neonatology.feeding.weight-hydration.diagram.synthetic-newborn-weight-0851",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-newborn-weight-0851",
+      "path": "diagrams/diagram.synthetic-newborn-weight-0851.svg",
+      "alt": "가상 신생아 체중 궤적의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/neonatology/chapters/feeding/sections/neonatology.feeding.weight-hydration.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neonatology.feeding.weight-hydration.001",
+    "question.neonatology.feeding.weight-hydration.002"
+  ],
+  "relatedLessons": [
+    "neonatology.bilirubin.hours-risk-assessment",
+    "obstetrics.diabetes.monitoring-postpartum"
+  ]
+}

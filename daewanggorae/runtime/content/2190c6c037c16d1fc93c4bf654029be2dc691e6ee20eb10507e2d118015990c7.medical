@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biostatistics.inference.uncertainty",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.152f418c4aad",
+      "sourceSha256": "152f418c4aad724cd8b5e710f3c4a6351af64f590efb028e53c9ac5205532680",
+      "sourceLengthUtf16": 251,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.4b809013b64d",
+      "sourceSha256": "4b809013b64d09b3589b66f7b2b5ec693594da766235dc5abdb1906bc0c3fe5a",
+      "sourceLengthUtf16": 258,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.c4fc985a230c",
+      "sourceSha256": "c4fc985a230cb9c06e62d1dbd0a1114b89a72751663bba27fd2659e991cebd93",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.d10458a71a30",
+      "sourceSha256": "d10458a71a305c6978efc0b156e402bda9d40e4dc075e5dc0862c92fc21f278b",
+      "sourceLengthUtf16": 241,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.77ce2a97c58d",
+      "sourceSha256": "77ce2a97c58d8533cfec8ea272003b56df45c85860de8c178602495c9350936e",
+      "sourceLengthUtf16": 244,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.0a3e16e1046d",
+      "sourceSha256": "0a3e16e1046dca5600b9a2951c15872632d26adc4b5a28f039e4d53c414439ee",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.88d659b50b47",
+      "sourceSha256": "88d659b50b473e494392b3be9ce27d5139821a3ca160994e6b7aee3d81c14b40",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.29398eff0ce6",
+      "sourceSha256": "29398eff0ce6c8b687108b36bd7cce3d713a756aa98986d22f0c2218987caf4e",
+      "sourceLengthUtf16": 229,
+      "annotations": [
+        {
+          "id": "ann.a80a335707caf0d706eb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 156,
+            "end": 229,
+            "exact": "유의하지 않은 결과가 동등성을 증명하지 못하는 이유는 연구가 임상적으로 중요한 차이를 구별할 만큼 정밀하지 않을 수 있기 때문이다.",
+            "prefix": " 변동성, 표본 수와 유의수준에 의존한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.0945701d1433",
+      "sourceSha256": "0945701d14331aa4d3cf1c7cdad752fc0a3ea086638a645ba7cabac9a5fa8b26",
+      "sourceLengthUtf16": 231,
+      "annotations": [
+        {
+          "id": "ann.5dd8196d8534d69630b7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 203,
+            "end": 231,
+            "exact": "통계 분석의 투명성은 계산식의 정확성만큼 중요하다.",
+            "prefix": "도 검정의 오류 특성을 변화시킬 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.55a1c1b2180b",
+      "sourceSha256": "55a1c1b2180b1c93ee6e16b4ce1c3ade853ac7919a94e09b2b754a0c87f8125c",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.af8dcc9e9514cbb57ffa",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 99,
+            "end": 151,
+            "exact": "효과 추정값과 구간을 환자에게 중요한 최소 차이, 부작용, 비용과 치료 부담에 연결해야 한다.",
+            "prefix": " 구간이 나오면서 유의하지 않을 수 있다. ",
+            "suffix": " 단순히 P값이 0.05보다 작거나 크다는 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biostatistics.inference.uncertainty.b.c97ee6f738ca",
+      "sourceSha256": "c97ee6f738ca1910b051ace92cda42d73e0fa5933e2b4bec101ff9ac7b8df868",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    }
+  ]
+}

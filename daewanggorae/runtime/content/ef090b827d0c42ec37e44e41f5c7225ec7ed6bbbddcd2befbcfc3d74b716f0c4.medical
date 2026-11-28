@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.nutrition.undernutrition-refeeding",
+  "subjectId": "pathology",
+  "chapterId": "nutrition",
+  "title": {
+    "ko": "영양결핍·기능 변화·재급식 대사",
+    "en": "Undernutrition, Functional Changes and Refeeding Metabolism"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.lo.01",
+      "text": "영양 상태를 체중·근육·섭취·염증의 여러 축으로 설명한다"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.lo.02",
+      "text": "혈중 단백질과 영양 평가를 구별한다"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.lo.03",
+      "text": "재급식의 세포내 이동과 총체내 고갈을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.786e54c368b1",
+      "type": "heading",
+      "level": 2,
+      "text": "영양 상태는 체중 하나로 정해지지 않는다"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.99869a081b66",
+      "type": "paragraph",
+      "markdown": "영양결핍(undernutrition)은 필요한 에너지·단백질·영양소의 섭취·흡수와 실제 요구·이용 사이의 불균형을 포함한다. 체중 감소,근육량과 기능 변화,섭취·흡수 장애와 염증 등의 맥락을 함께 평가한다. 체질량지수 한 값이 정상이거나 높다고 근육 소실과 영양 위험을 모두 배제할 수 없다. 반대로 체중 변화가 적어도 체액이 늘어 실제 조직 감소를 가릴 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.fc9839abd210",
+      "type": "paragraph",
+      "markdown": "섭취가 줄었는지,흡수가 제한되었는지,질환과 염증으로 대사·이용이 달라졌는지는 다른 질문이다. 실제 진단 기준은 정의한 표현형과 원인 축을 조합하며 대상 집단에 맞는 방법과 임계값이 필요하다. 일반 기전 설명을 모든 연령과 질환의 고정 진단 절단값으로 사용하지 않는다. 영양 상태와 장기 질환은 서로 영향을 주고 동시 평가가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.9ec38b48d159",
+      "type": "heading",
+      "level": 2,
+      "text": "저장과 단백질 회전의 변화"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.36abafe1772c",
+      "type": "paragraph",
+      "markdown": "에너지 섭취가 줄면 글리코젠·지방·단백질 대사의 기여가 시간과 질환에 따라 달라진다. 인슐린과 여러 대응 호르몬,염증 신호와 근육 활동은 연료 동원을 조절한다. 근육 단백질의 합성·분해 수지가 음수가 되면 근육량과 기능이 감소할 수 있다. 단백질 분해량과 체중 감소량을 같은 단위 없이 직접 비교하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.8e21d92b5028",
+      "type": "paragraph",
+      "markdown": "감염·외상·종양 등의 염증 환경에서는 단순한 금식 적응과 다른 대사 변화가 동반될 수 있다. 충분히 공급했다고 곧 모든 동화작용과 근력이 회복되는 것은 아니다. 기능 회복에는 질환 조절·운동·장기 기능과 시간도 관여한다. 소모된 조직의 양과 생리적 예비력은 같은 시점의 혈중 영양소 농도만으로 모두 나타나지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.564f2b982a25",
+      "type": "heading",
+      "level": 2,
+      "text": "혈중 표지자의 해석"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.e3dcb4d078db",
+      "type": "paragraph",
+      "markdown": "알부민과 다른 혈장 단백질은 합성·분해·분포·소실·염증과 수분 상태에 영향을 받는다. 낮은 값은 중요한 임상 정보일 수 있지만 단일 영양 섭취량의 직접 측정값은 아니다. 정상 알부민도 영양결핍 부재를 보장하지 않는다. 체중 경과·섭취·위장관·근육·기능 및 질환 상태를 같이 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.6185389a8a5c",
+      "type": "paragraph",
+      "markdown": "혈중 인·칼륨·마그네슘은 세포 내외 분포와 배설·총량에 영향을 받는다. 장기간 부족한 상태에서 혈중 농도가 유지되어도 총체내 저장이 감소했을 수 있다. 농도와 저장량이 다른 정보라는 점은 공급을 다시 시작할 때 중요해진다. 혈중 수치가 내려간 양을 곧바로 새로 소변으로 빠져나간 양이라고 계산하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.096b5cb81b1f",
+      "type": "heading",
+      "level": 2,
+      "text": "재급식 때의 대사 전환"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.a1ff29fbf2da",
+      "type": "paragraph",
+      "markdown": "부족이 지속된 뒤 특히 탄수화물 공급이 증가하면 인슐린과 동화 대사가 활성화되고 인·칼륨·마그네슘의 세포내 이동 및 대사 요구가 변할 수 있다. 티아민은 탄수화물 대사의 여러 반응과 연결되며,부족 상태에서는 요구 증가를 감당하는 데 문제가 생길 수 있다. 물·나트륨 수지의 변화도 순환과 장기 기능에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.88594f84a3a0",
+      "type": "paragraph",
+      "markdown": "재급식증후군(refeeding syndrome)은 이러한 전환에서 생기는 대사·전해질 및 임상 이상을 다루는 개념이다. 낮은 인 수치 하나와 전체 증후군을 같은 것으로 취급하지 않는다. 시점·기저 상태·공급 내용과 다른 원인에 의한 전해질 변화를 함께 평가해야 한다. 실제 정의·위험 분류·예방과 처치 권고는 지침에 따라 차이가 있어 본문 외 근거 기록에서 적용 범위를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.0db250b03f80",
+      "type": "heading",
+      "level": 2,
+      "text": "공급과 감시의 원리를 구별한다"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.5b93457e0630",
+      "type": "paragraph",
+      "markdown": "영양 공급은 경로·양·속도·구성뿐 아니라 전해질·비타민·체액과 장기 상태를 함께 고려하는 과정이다. 고위험 상태에서 초기 혈액검사가 정상이었다는 사실만으로 감시가 불필요해지는 것은 아니다. 반대로 특정 검사 변화가 관찰되었다고 모든 사람에게 같은 공급 중단·보충 용법을 적용하지 않는다. 실제 처방은 현재 지침과 환자별 평가에 따른다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.b.6755ac4f6b00",
+      "type": "paragraph",
+      "markdown": "독립 구획 모형에서 세포외 인의 양이30단위이고 새 유입·배출 없이6단위가 세포 안으로 이동하면 세포외는24,세포내는6단위 늘며 전체 양은 같다. 세포외 용적이 고정되어야 농도도 같은 비율로 변한다. 실제 혈중 인 감소의 정도·시간이나 총체내 고갈을 이 산술로 예측하지 않는다. 표와 그래프는 세포간 이동·체외 소실·섭취 및 이용을 분리해 읽는 연습 자료다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.diagram.refeeding-compartment-shift-example",
+      "type": "diagram",
+      "diagramRef": "diagram.refeeding-compartment-shift-example",
+      "path": "diagrams/diagram.refeeding-compartment-shift-example.svg",
+      "alt": "체외 소실 없는 가상 구획 이동의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.diagram.nutrition-assessment-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.nutrition-assessment-pairs",
+      "path": "diagrams/diagram.nutrition-assessment-pairs.svg",
+      "alt": "영양 평가와 재급식의 구별의 단계별 비교"
+    },
+    {
+      "id": "pathology.nutrition.undernutrition-refeeding.table.compare",
+      "type": "table",
+      "data": {
+        "title": "영양 평가의 축",
+        "columns": [
+          "축",
+          "구별"
+        ],
+        "rows": [
+          [
+            "표현형",
+            "체중·근육량·체액 등"
+          ],
+          [
+            "원인",
+            "섭취·흡수·염증/질환"
+          ],
+          [
+            "혈중 단백",
+            "분포·염증·소실 영향"
+          ],
+          [
+            "재급식",
+            "총량·이동·요구·체액의 변화"
+          ]
+        ],
+        "notes": "기전·측정의 비교이며 실제 진단·치료는 별도 근거에 따른다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/nutrition/sections/pathology.nutrition.undernutrition-refeeding.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "혈중 농도와 총체내 저장·분포는 다른 정보다."
+  ],
+  "relatedLessons": [
+    "pathology.environmental.toxic-injury",
+    "pathology.environmental.radiation-injury"
+  ],
+  "reviewQuestions": [
+    "question.pathology.nutrition.undernutrition-refeeding.001",
+    "question.pathology.nutrition.undernutrition-refeeding.002"
+  ]
+}

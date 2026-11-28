@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.infection.source-control",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.infection.source-control.b.7c003624efd5",
+      "sourceSha256": "7c003624efd56dc73e22e0fd7d1b85daae762e50bb7fa08fb17103fc16820d0f",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.source-control.b.329ae56a5c43",
+      "sourceSha256": "329ae56a5c435cf766c31bfd5249aa1a84069f269b9202481d80a97a3e4ee40c",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.source-control.b.3e5ff2caaf5e",
+      "sourceSha256": "3e5ff2caaf5ec0b8f8de56fee5e763288ccc8a5dbe3ca5e51599b374a8576a03",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.source-control.b.68ce3be5f471",
+      "sourceSha256": "68ce3be5f471f463bbe722674c86b0af3e16ae7d09a25a1c9eae7c2e1933c325",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.source-control.b.7ec4b56cf391",
+      "sourceSha256": "7ec4b56cf391da091b50e2f94cda985c74e3950c2e572ae67505b8d0a9481205",
+      "sourceLengthUtf16": 176,
+      "annotations": [
+        {
+          "id": "ann.60f6f9545fda8d004db4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 51,
+            "end": 100,
+            "exact": "단순한 액체 배출이 충분한 상황과 지속 누출·괴사·막힘을 해결해야 하는 상황을 구별한다.",
+            "prefix": "우회와 기기 제거는 목적과 위해가 다르다. ",
+            "suffix": " 불안정한 환자에서는 소생·항균과 원천 통제"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.infection.source-control.b.d3183e027c32",
+      "sourceSha256": "d3183e027c32f6e513685daed163807eb88356cf599e989a8aa83170b1311f19",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.73f8af32418ed6227c32",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 22,
+            "end": 24,
+            "exact": "흉막",
+            "prefix": "접근 가능한 경로에는 장관·혈관·장기와 ",
+            "suffix": " 같은 주변 구조가 놓일 수 있다. 정상 해"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.infection.source-control.b.4bc683362526",
+      "sourceSha256": "4bc683362526b7df31b418fbb1c76d4f50b8f43565c9cb6af9c4a6bf6fc533d6",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.ad80c53b4cda3a0c834b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 52,
+            "end": 118,
+            "exact": "일부 표지자가 남았다는 이유만으로 모든 조절 실패를 확정하지 않고, 반대로 해열만으로 누출이 해결되었다고 보지 않는다.",
+            "prefix": "검사·영상의 변화는 다른 속도로 나타난다. ",
+            "suffix": " 반응이 불충분하면 진단과 미생물·약물 노출"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.infection.source-control.b.e573850d21ac",
+      "sourceSha256": "e573850d21acae7e81830af3dc792782a68f01bc7ba0c91d3dbeb3b68bb387c4",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.source-control.b.88f8bb38278f",
+      "sourceSha256": "88f8bb38278f97c7087acc079850eb61b2a12fe10034f701183ed0965532eeeb",
+      "sourceLengthUtf16": 149,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.source-control.b.83c47f25e1b4",
+      "sourceSha256": "83c47f25e1b45b02d126ed1ea6910acfb6e2dd8e92a1986086b23edb1a9facc8",
+      "sourceLengthUtf16": 149,
+      "annotations": []
+    }
+  ]
+}

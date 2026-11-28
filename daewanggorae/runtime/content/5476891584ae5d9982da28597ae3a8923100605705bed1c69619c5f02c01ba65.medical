@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.electrocardiography.rate-interval-measurement",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.electrocardiography.rate-interval-measurement.b.ad4ac10a5c28",
+      "sourceSha256": "ad4ac10a5c28698a5bb7077a1255cdc2442bbca4be7d02d138fd3e6507b6d0a4",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.rate-interval-measurement.b.1ee2db53e4ec",
+      "sourceSha256": "1ee2db53e4ec7e4b317de0c53c5c6d5594515625e3c33a2c47d7af916e38a8b3",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.rate-interval-measurement.b.7c767059470a",
+      "sourceSha256": "7c767059470ad178004bdf4dc0370069f69ededdd6b1eac8e9aab3de50cfde0b",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.rate-interval-measurement.b.817c7c0c0ae9",
+      "sourceSha256": "817c7c0c0ae9aeffdc3a9ae854637f452add8b3c0ce6487f4120efb1bec81eab",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.rate-interval-measurement.b.0bd871f1272b",
+      "sourceSha256": "0bd871f1272b69e6d9a8cc64fa55638341391bc5a4264eaf2f4c368c5585f0b9",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.7e272da218870144f830",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 108,
+            "end": 151,
+            "exact": "넓은 QRS 때문에 QT가 길어진 경우와 재분극 자체의 지연은 구별해야 한다.",
+            "prefix": "T는 탈분극에서 재분극 끝까지를 포함한다. ",
+            "suffix": " 한 간격이 길다는 사실만으로 이상 위치를 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.electrocardiography.rate-interval-measurement.b.1b58c380e4ec",
+      "sourceSha256": "1b58c380e4ecd5b1723d472ce6b4371322f0326da98557ba59eedd043044a3e4",
+      "sourceLengthUtf16": 175,
+      "annotations": [
+        {
+          "id": "ann.39db7582300238216d6c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 96,
+            "end": 134,
+            "exact": "노이즈 때문에 보이지 않는 활동과 실제 활동의 부재를 구별해야 한다.",
+            "prefix": " T파의 구분도 QT 측정에 영향을 준다. ",
+            "suffix": " 같은 박동을 다른 판독자가 쟀을 때의 차이"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.electrocardiography.rate-interval-measurement.b.68f96575e3e1",
+      "sourceSha256": "68f96575e3e1ea53ff3064bd9c3951f671152bb5530b226f2ce0d9cf6c90e12b",
+      "sourceLengthUtf16": 157,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.rate-interval-measurement.b.79b4e5977c80",
+      "sourceSha256": "79b4e5977c80b3d742d591e9fdf4600f5c514034bffb01f7283f35849b6643a0",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.rate-interval-measurement.paragraph.extension0828",
+      "sourceSha256": "b85327a22d622fe22476332868d974af31bb96e72879d1e53f2034d6d84c524e",
+      "sourceLengthUtf16": 384,
+      "annotations": []
+    }
+  ]
+}

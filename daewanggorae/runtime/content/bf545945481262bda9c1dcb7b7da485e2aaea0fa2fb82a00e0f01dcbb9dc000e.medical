@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.survival.biofilm-heterogeneity",
+  "subjectId": "bacteriology",
+  "chapterId": "survival",
+  "title": {
+    "ko": "생물막의 공간 이질성과 항균 반응",
+    "en": "Biofilm Heterogeneity and Antimicrobial Response"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.lo.01",
+      "text": "생물막의 형성 단계를 설명한다"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.lo.02",
+      "text": "기질·대사·내성의 기여를 구별한다"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.lo.03",
+      "text": "MIC와 생물막 제거의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.ac320efb4649",
+      "type": "heading",
+      "level": 2,
+      "text": "표면 집단이 만드는 환경"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.9386f9d193c6",
+      "type": "paragraph",
+      "markdown": "생물막(biofilm)은 표면이나 경계에 정착한 미생물이 세포외 기질과 함께 조직을 이루는 상태다. 기질에는 다당류뿐 아니라 단백질과 세포외 DNA 등이 포함될 수 있다. 초기의 가역적 부착, 안정적 정착과 성숙, 일부 세포의 분산은 서로 다른 과정이다. 생물막은 죽은 점액 덩어리가 아니며 모든 세포가 항상 같은 대사 상태에 있는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.df0d528c1d6c",
+      "type": "paragraph",
+      "markdown": "기질은 세포를 유지하고 물질의 이동에 영향을 준다. 하지만 모든 항균제가 기질을 전혀 통과하지 못해서 생물막이 남는다는 설명은 부정확하다. 약물이 도달해도 산소·영양 제한과 낮은 성장률 때문에 반응이 달라질 수 있다. 약물 결합·분해·배출·세포 상태의 차이가 함께 작용하며 무엇이 중요한지는 균종과 약물, 생물막 조건에 따라 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.ef65f5a6ba9a",
+      "type": "heading",
+      "level": 2,
+      "text": "깊이에 따른 차이"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.1cd6e83cbc69",
+      "type": "paragraph",
+      "markdown": "표면에서 공급되는 산소와 영양은 확산하고 내부 세포가 소비한다. 그 결과 얇은 거리에서도 대사와 pH가 다를 수 있다. 같은 유전형의 세포가 어떤 위치에 있느냐에 따라 성장과 살상 반응이 달라진다. 총 생체량을 한 번 재는 것으로 이 분포를 충분히 알 수 없으므로 공간 영상과 생존성·배양 자료를 구별하여 읽어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.b2e27386bb90",
+      "type": "paragraph",
+      "markdown": "가상 두 구획 모형에서 빠르게 감소하는 집단과 느리게 감소하는 집단의 합은 처음에는 급히 떨어지다가 꼬리가 남는 곡선을 만든다. 이런 곡선은 이질성을 생각하게 하지만 특정 분자 기전의 직접 증명은 아니다. 약물의 자연 분해나 부적절한 중화도 비슷한 모양을 만들 수 있다. 시간에 따른 유효 약물과 회수 조건을 대조해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.585cb03d808f",
+      "type": "heading",
+      "level": 2,
+      "text": "내성·관용·지속의 구별"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.2f09e8b7ee2c",
+      "type": "paragraph",
+      "markdown": "항균 내성(resistance)은 더 높은 약물 농도에서도 증식할 수 있는 성질과 관련된다. 관용(tolerance)은 증식 억제 농도가 크게 바뀌지 않아도 죽는 속도가 느려지는 현상으로 설명할 수 있다. Persistence는 집단의 일부가 상대적으로 오래 살아남는 이질적 반응과 연결된다. 이 구분은 현상에 대한 것이며 모든 지속 세포가 단일한 휴면 기전을 가진다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.4edd8632adbd",
+      "type": "paragraph",
+      "markdown": "생물막 안에는 내성 유전자를 가진 세포와 일시적으로 덜 자라는 세포가 함께 있을 수 있다. 따라서 생물막 관련 실패를 전부 새로운 내성 획득이라고 부를 수 없다. 반대로 유전적 내성이 전혀 중요하지 않다고 해석해서도 안 된다. 살아남은 세포를 다시 자라게 한 뒤 MIC와 살상 곡선을 확인하면 안정적인 감수성 변화와 집단 상태의 차이를 나누는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.e6407b7db819",
+      "type": "heading",
+      "level": 2,
+      "text": "기구와 숙주 반응"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.54d72e1301c2",
+      "type": "paragraph",
+      "markdown": "인공 표면은 세균 부착과 생물막의 임상적 문맥에서 중요하다. 표면 재질과 단백질 부착, 흐름과 숙주 방어가 집단 유지에 영향을 준다. 미생물이 검출되었다고 곧바로 모든 증상이 생물막 때문이라고 확정하지 않는다. 오염·집락화와 실제 감염을 부위와 경과에 맞추어 구별해야 한다. 구조물 제거 여부를 포함한 감염원 조절의 판단도 환자별 위험과 함께 평가된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.b.41d2ae6280fd",
+      "type": "paragraph",
+      "markdown": "표준 부유 상태 MIC는 지정 조건에서의 증식 억제를 나타낸다. 이 값이 생물막의 모든 구획에서 제거되는 약물 노출과 같지는 않다. 생물막의 양을 염색한 결과, 살아 있는 세포의 대사 신호, 실제 회수 CFU는 다른 종말점이다. 실험 자료를 문제에 사용할 때 무엇을 측정한 값인지 명시해야 겉보기 감소를 완전한 살균으로 오인하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.diagram.bacteria-survival-tail-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.bacteria-survival-tail-toy",
+      "path": "diagrams/diagram.bacteria-survival-tail-toy.svg",
+      "alt": "두 상태의 합과 생존 곡선의 독립 계산 곡선"
+    },
+    {
+      "id": "bacteriology.survival.biofilm-heterogeneity.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "기질량",
+            "세포외 물질·생체량"
+          ],
+          [
+            "대사 신호",
+            "시점의 세포 활동"
+          ],
+          [
+            "회수 CFU",
+            "지정 조건의 생존 단위"
+          ],
+          [
+            "공간 구획",
+            "산소·영양·노출·성장의 차이"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/survival/sections/bacteriology.survival.biofilm-heterogeneity.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.survival.biofilm-heterogeneity.001",
+    "question.bacteriology.survival.biofilm-heterogeneity.002"
+  ],
+  "relatedLessons": [
+    "bacteriology.growth.oxygen-energy",
+    "bacteriology.toxins.ab-toxin-trafficking"
+  ]
+}

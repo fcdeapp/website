@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.hypothetical-hematoma-volume-0856",
+  "lessonId": "neurology.neurovascular.intracerebral-hemorrhage",
+  "title": "고정 A·B의 ABC/2 근사",
+  "series": [
+    {
+      "label": "A4·B3cm",
+      "samples": [
+        {
+          "x": 1,
+          "y": 6
+        },
+        {
+          "x": 2,
+          "y": 12
+        },
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": 4,
+          "y": 24
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "equation": "4*3*C/2",
+    "notClinicalSurgeryOrPrognosisThreshold": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 4,
+      "scale": "linear",
+      "ticks": [
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "label": "가상 높이 C(cm)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 30,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        7.5,
+        15.0,
+        22.5,
+        30.0
+      ],
+      "label": "근사 부피(mL)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "A4·B3cm",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 기하학적 근사이며 실제 환자·혈종 윤곽·치료 기준 자료가 아니다."
+  ],
+  "sourceImageUsed": false
+}

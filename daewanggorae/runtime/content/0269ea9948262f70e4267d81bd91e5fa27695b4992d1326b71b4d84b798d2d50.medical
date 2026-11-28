@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "virology.replication.host-cell",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "virology.replication.host-cell.b.329d1e1e1baa",
+      "sourceSha256": "329d1e1e1baa598a8ddd3d8cca544ce2f042feb9f3a855f041bf6c1184a6ac10",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "virology.replication.host-cell.b.f3de89d67260",
+      "sourceSha256": "f3de89d67260688c910743a36ac844fc9e74c397800ff8e1e72d8a2075cfbd11",
+      "sourceLengthUtf16": 232,
+      "annotations": [
+        {
+          "id": "ann.2700fd785945d7a2bf19",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 187,
+            "end": 232,
+            "exact": "감염에 의한 직접 세포손상과 숙주 면역반응에 의한 손상을 구분하는 것도 중요하다.",
+            "prefix": " 감염되거나 손상된다고 가정하면 안 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "virology.replication.host-cell.b.d47f68c41ac7",
+      "sourceSha256": "d47f68c41ac790b02a5c64acf5b6fc01b138091a17e572a468c827a6f73eb8fe",
+      "sourceLengthUtf16": 293,
+      "annotations": [
+        {
+          "id": "ann.5413b8becc2c804dcd01",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 199,
+            "end": 230,
+            "exact": "이중가닥 RNA 바이러스도 전사를 위한 효소가 중요하다.",
+            "prefix": "merase를 감염 입자에 포함해야 한다. ",
+            "suffix": " 다만 구체적인 유전자 발현과 복제 과정은 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "virology.replication.host-cell.b.9b64e7fd96e5",
+      "sourceSha256": "9b64e7fd96e5b550ca845eb910c33a21cb478288d2a981b7735b05ab53531796",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "virology.replication.host-cell.b.580b608a682b",
+      "sourceSha256": "580b608a682b6bcda9df460776c4d965ab17babfee5c31275c2d9faf50d5c256",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "virology.replication.host-cell.b.26a0a66405d2",
+      "sourceSha256": "26a0a66405d206a416eddd8f88156ac0e7f678b6e9e3b041ee315cb2dbd21092",
+      "sourceLengthUtf16": 253,
+      "annotations": [
+        {
+          "id": "ann.fd273ec6f0e8370f1a3e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 70,
+            "exact": "잠복(latency)은 바이러스 유전정보가 유지되지만 생산성 감염이 제한되는 상태 등을 말하며, 만성 생산성 감염과 구분한다.",
+            "prefix": "",
+            "suffix": " 재활성화는 면역 상태와 세포 환경 변화 등"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "virology.replication.host-cell.b.4acce2ae658f",
+      "sourceSha256": "786b039bedd3670d1287c3826a0c1186354bb6ed316729a02a0b94fe4fb38a4a",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    }
+  ]
+}

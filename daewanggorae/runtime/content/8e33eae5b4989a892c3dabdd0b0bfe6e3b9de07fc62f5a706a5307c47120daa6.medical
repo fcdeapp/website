@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.renal.raas",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.renal.raas.b.46ba07757cdf",
+      "sourceSha256": "46ba07757cdfdceddfccc2256f6c33623d5bc86bde34b5c86a84effcf3a4e8b2",
+      "sourceLengthUtf16": 310,
+      "annotations": [
+        {
+          "id": "ann.5a5ab78f1a42b268324e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 191,
+            "end": 194,
+            "exact": "심부전",
+            "prefix": "적 개념이다. 총체액량과 동의어가 아니다. ",
+            "suffix": "이나 간경변에서는 부종이나 복수가 있어도 신"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.30f1ea75bd13a1edd6d8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 197,
+            "end": 200,
+            "exact": "간경변",
+            "prefix": ". 총체액량과 동의어가 아니다. 심부전이나 ",
+            "suffix": "에서는 부종이나 복수가 있어도 신장이 받아들"
+          },
+          "conceptId": "reader.term.6d744dfb433ff485",
+          "targetDocumentId": "hepatology.cirrhosis.portal-hypertension"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.raas.b.4babe58b1243",
+      "sourceSha256": "4babe58b1243f029c583883e76e0c75c4d871126b243713be35b1bf02e3eb9f0",
+      "sourceLengthUtf16": 260,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.raas.b.719af30a03ad",
+      "sourceSha256": "719af30a03ade5c8c05d51512662c81c96f0348f4b2dfd326fa6c8b97f6ebb94",
+      "sourceLengthUtf16": 296,
+      "annotations": [
+        {
+          "id": "ann.075e8430ae1876440f33",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 128,
+            "end": 170,
+            "exact": "폐혈관 내피가 중요한 반응 장소이지만 ACE가 폐에만 존재하는 것은 아니다.",
+            "prefix": "CE)는 이를 안지오텐신 II로 전환한다. ",
+            "suffix": " ACE는 브래디키닌 분해에도 관여하므로 A"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.raas.b.93c57c3c5ed4",
+      "sourceSha256": "93c57c3c5ed4468db857178d1478c59778e4f6e9137bdddd47e452f772747c71",
+      "sourceLengthUtf16": 306,
+      "annotations": [
+        {
+          "id": "ann.8a86284e0aaf0022652c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 54,
+            "end": 59,
+            "exact": "바소프레신",
+            "prefix": "스테론 분비, 신장 나트륨 재흡수, 갈증과 ",
+            "suffix": " 분비에 영향을 준다. AT1은 G 단백질 "
+          },
+          "conceptId": "reader.term.df6b37a2afc65475",
+          "targetDocumentId": "physiology.renal.urine-concentration"
+        },
+        {
+          "id": "ann.e152ed328e45639c3ca6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 169,
+            "end": 218,
+            "exact": "한 생리계가 정상상태의 보상과 질환 상태의 악화에 모두 관여할 수 있다는 점이 중요하다.",
+            "prefix": "관 재형성과 장기 손상에 기여할 수 있다. ",
+            "suffix": " ACE2-안지오텐신-(1-7) 축 등은 고"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.raas.b.0afd212df7b6",
+      "sourceSha256": "0afd212df7b6a2c071564a309f2666e4804311a9551e3bd6fa40fb3848c9fac6",
+      "sourceLengthUtf16": 259,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.raas.b.8a5fd8a0750b",
+      "sourceSha256": "8a5fd8a0750b8e4f3f645c35e38e8ee8bf2ce2a49e6703659915f73374d242f1",
+      "sourceLengthUtf16": 316,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.raas.b.d6fc83a78a42",
+      "sourceSha256": "d6fc83a78a42a0356ac5abc07477fb037cd8eb7ab3ba44643127b0d6307fc4fc",
+      "sourceLengthUtf16": 266,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.raas.b.14aeafe78057",
+      "sourceSha256": "14aeafe780576be67cc9cde27e60bca11a7fba0beaa4e3e2cac08a56aa7a13e1",
+      "sourceLengthUtf16": 268,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.raas.b.18300c36eeac",
+      "sourceSha256": "6f462fba8bbf19ef75fe7c88badd751437555f8c37a8c8d3ab96bff9fb651bd9",
+      "sourceLengthUtf16": 252,
+      "annotations": [
+        {
+          "id": "ann.ec95f436a3c0cd6eb05d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 130,
+            "end": 204,
+            "exact": "이는 신실질의 직접 독성과 구분해야 하지만, 심한 저관류나 특정 혈관 질환 상황에서는 임상적으로 중요한 신기능 저하가 생길 수 있다.",
+            "prefix": " 치료 초기에 여과 지표가 변할 수 있다. ",
+            "suffix": " 알도스테론 효과 감소는 칼륨 배설도 줄일 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

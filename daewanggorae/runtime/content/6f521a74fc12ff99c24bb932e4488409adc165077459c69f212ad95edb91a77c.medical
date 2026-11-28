@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.fatty-synthesis-stoichiometry",
+  "lessonId": "biochemistry.lipids.fatty-acid-synthesis",
+  "title": "FASN 연장 회차의 계수",
+  "series": [
+    {
+      "label": "사슬 탄소 2+2n",
+      "samples": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 6
+        },
+        {
+          "x": 3,
+          "y": 8
+        },
+        {
+          "x": 4,
+          "y": 10
+        },
+        {
+          "x": 5,
+          "y": 12
+        },
+        {
+          "x": 6,
+          "y": 14
+        },
+        {
+          "x": 7,
+          "y": 16
+        }
+      ]
+    },
+    {
+      "label": "ACC ATP n",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 4
+        },
+        {
+          "x": 5,
+          "y": 5
+        },
+        {
+          "x": 6,
+          "y": 6
+        },
+        {
+          "x": 7,
+          "y": 7
+        }
+      ]
+    },
+    {
+      "label": "NADPH 2n",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 6
+        },
+        {
+          "x": 4,
+          "y": 8
+        },
+        {
+          "x": 5,
+          "y": 10
+        },
+        {
+          "x": 6,
+          "y": 12
+        },
+        {
+          "x": 7,
+          "y": 14
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "primerCarbons": 2,
+    "carbonsPerCycle": 2,
+    "NADPHPerCycle": 2,
+    "ATPinACCPerCycle": 1
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 7,
+      "scale": "linear",
+      "ticks": [
+        0,
+        2,
+        4,
+        5,
+        7
+      ],
+      "label": "연장 회차 n"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 16,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        4.0,
+        8.0,
+        12.0,
+        16.0
+      ],
+      "label": "계수 (개수)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "사슬 탄소 2+2n",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "ACC ATP n",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      },
+      {
+        "id": "s2",
+        "label": "NADPH 2n",
+        "samplesPath": "series/2/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "tertiary"
+      }
+    ]
+  },
+  "limitations": [
+    "지정한ACC·FASN 단계의 탄소수·분자계수 비교다. 동일한 물리량을 측정한 곡선이나 전신 총에너지 비용이 아니다.",
+    "정수 회차의 이산 자료를 연결했으며 회차 사이의 연속 생화학 반응속도를 뜻하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

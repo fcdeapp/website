@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.respiratory.postoperative-hypoxemia",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.021bf1e0ffdc",
+      "sourceSha256": "021bf1e0ffdce47ca86d0d967164753d4baabc6e1b6d75024551b8dc139f88d9",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.02e7200db4ec",
+      "sourceSha256": "02e7200db4ece565ba6062b5b44924489d698c428e3998f5664d11ce21b8eea9",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.b55d331736d5",
+      "sourceSha256": "b55d331736d572b9bb2f9c0fdfebbc5647c2213c0d70737cf32408233b2c0145",
+      "sourceLengthUtf16": 176,
+      "annotations": [
+        {
+          "id": "ann.cfe9c6ffd394cb90b887",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 96,
+            "end": 98,
+            "exact": "기흉",
+            "prefix": "과 흡인·폐렴, 폐부종·급성 폐손상·폐색전·",
+            "suffix": " 등이 감별에 포함된다. 일부는 동시에 존재"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        },
+        {
+          "id": "ann.6fec1c630fe8ad86488f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 126,
+            "end": 176,
+            "exact": "산소 반응 하나로 원인 전체를 확정하지 않고 시간·수술 위치·약물·체액과 진찰을 연결한다.",
+            "prefix": "감별에 포함된다. 일부는 동시에 존재한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.8df7a81f111e",
+      "sourceSha256": "8df7a81f111e583a9a9cd9f263481518cc4dd698148919f7b2c07976f65c5341",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.2a885580d02cf1f358b7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 21,
+            "end": 23,
+            "exact": "흉막",
+            "prefix": "한쪽 호흡음 변화와 흉통·순환 악화는 ",
+            "suffix": "과 기도·혈관 문제를 평가하게 한다. 흉부사"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.19ff0c2bd81d",
+      "sourceSha256": "19ff0c2bd81dbf2ab00b5624cebe82013bdef3689946984ab5f0d989178e93fc",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.5ac4a45cf5c3",
+      "sourceSha256": "5ac4a45cf5c35c5d6e8c04a3d532d3c89cd0d97c42ce9d1fd27c416920a3b308",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.a08c13e65c6cc4f0d211",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 159,
+            "end": 188,
+            "exact": "평가 간격과 실패 조건을 미리 정하는 것이 중요하다.",
+            "prefix": "한 기도 확보·집중치료를 지연하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.ddc4e6a60712",
+      "sourceSha256": "ddc4e6a6071245324c8543fe0dd8a17bcd2a47cadd9ded73be0c19c5fc316450",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.9265ada62986",
+      "sourceSha256": "9265ada62986cf7bea52cf0d6a0aebee74698495371c678292fe33ebb97a9845",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.e18d0611c084",
+      "sourceSha256": "e18d0611c084ed516cba4a90c02e1eac59c25d4e38fff852aa6c7e089e0e426a",
+      "sourceLengthUtf16": 157,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.postoperative-hypoxemia.b.dbd43a6ad50d",
+      "sourceSha256": "dbd43a6ad50d4007bb5d0929ef8ae9701d7578d1fcdfd593644ffc1851759c37",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.716c1e37ba6592fab6e0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 152,
+            "end": 185,
+            "exact": "호흡수가 줄었다는 결과도 피로와 억제인지 회복인지 구별한다.",
+            "prefix": "정을 환자의 실제 값으로 사용하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.automaticity-triggered-activity",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.automaticity-triggered-activity.b.66a2eb5c77ed",
+      "sourceSha256": "66a2eb5c77ed69fa3626c6ae9a2ba886a25940592b13d304a36a7a262f5982ac",
+      "sourceLengthUtf16": 244,
+      "annotations": [
+        {
+          "id": "ann.0bcd55fba7c734117b9a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 74,
+            "end": 77,
+            "exact": "막전위",
+            "prefix": "를 만드는 성질이다. 동방결절에서는 이완기 ",
+            "suffix": "가 다음 역치로 이동한다. Hyperpola"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.automaticity-triggered-activity.b.75d110894bcc",
+      "sourceSha256": "75d110894bcc50caaad3fa052be9b0101895aa229ea02c907370fe28f01a6b88",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.automaticity-triggered-activity.b.5e2800ddea16",
+      "sourceSha256": "5e2800ddea161723787ac1ff8edcccd76ed5499f7a2e90a49d264edb322250e4",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.automaticity-triggered-activity.b.319344710d3c",
+      "sourceSha256": "319344710d3ca49db1e87e972f391c1092dec7a1c76e859bec1b4e2299c0f5a7",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.automaticity-triggered-activity.b.5225c3510936",
+      "sourceSha256": "5225c35109362aa25b665b7708135a3c7218df29f1a09d0ffbb9eecc5e278ddf",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.automaticity-triggered-activity.b.8d602d719602",
+      "sourceSha256": "8d602d719602247983184d33c69a3a529fbbf31afcf7a8fd6245aee7d3bd127a",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.d869be295dddd7910549",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 55,
+            "end": 106,
+            "exact": "칼슘 과부하와 자발적인 근소포체 칼슘 방출, Na–Ca 교환의 내향 전류가 중요한 기전이다.",
+            "prefix": "ion, DAD)은 재분극 뒤에 나타난다. ",
+            "suffix": " DAD가 있어도 역치에 못 미치면 새 활동"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.automaticity-triggered-activity.b.0447744ee09c",
+      "sourceSha256": "0447744ee09c828fd5e4ed12eb7b6d78990f8e74fa8e6fa5ab8f822fdeb274f8",
+      "sourceLengthUtf16": 173,
+      "annotations": [
+        {
+          "id": "ann.7517b6396760b823ce79",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 40,
+            "end": 84,
+            "exact": "시작과 종료, 자극에 대한 반응은 단서지만 속도 하나로 기전을 확정하지 않는다.",
+            "prefix": "모두 조기박동과 빈맥으로 나타날 수 있다. ",
+            "suffix": " 유발 자극과 빈맥의 유지 회로가 다를 수도"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.automaticity-triggered-activity.b.c220d542d994",
+      "sourceSha256": "c220d542d9943fa31f630e558562d2659cab937bdd3f211d62eeeb6af2017605",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    }
+  ]
+}

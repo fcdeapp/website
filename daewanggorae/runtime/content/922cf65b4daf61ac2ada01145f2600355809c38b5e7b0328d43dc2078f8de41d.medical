@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.complexes.clearance-deposition",
+  "subjectId": "immunology",
+  "chapterId": "complexes",
+  "title": {
+    "ko": "면역복합체의 형성·운반·침착",
+    "en": "Immune Complex Formation Clearance and Deposition"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.complexes.clearance-deposition.lo.01",
+      "text": "항원·항체 비율과 복합체 성질을 연결한다"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.lo.02",
+      "text": "적혈구 CR1의 운반 역할을 설명한다"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.lo.03",
+      "text": "생성 증가와 제거 감소를 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.complexes.clearance-deposition.b.c6be9ae24b9c",
+      "type": "heading",
+      "level": 2,
+      "text": "항체 결합이 곧 질환은 아니다"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.71a90b87b9f5",
+      "type": "paragraph",
+      "markdown": "항체가 항원에 붙어 형성된 면역복합체(immune complex)는 감염과 정상 방어에서도 만들어진다. 복합체의 존재 자체가 병적 침착을 뜻하지는 않는다. 항원의 다가성, 항체의 특이성·친화도와 전체 결합력, 항원과 항체의 상대적 양이 크기와 안정성에 영향을 준다. 동일한 항체 농도에서도 항원의 형태와 양이 다르면 다른 복합체 집단이 형성될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.abdomen.spleen.organ-context"
+      ]
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.38d69eb25f2d",
+      "type": "paragraph",
+      "markdown": "여러 결합 부위가 이어지면 격자 모양의 큰 집합체가 생길 수 있다. 항원 또는 항체가 크게 과잉인 조건에서는 연결 방식과 용해성이 달라진다. 시험관 침전 반응의 등가 영역은 항원·항체의 양적 관계를 배우는 데 유용하지만, 실제 생체에서 어느 비율이 특정 장기에 얼마나 침착할지를 단독 예측하지는 못한다. 혈류·장벽과 제거 시스템이 추가로 작동하기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.d7f9586e9f8c",
+      "type": "heading",
+      "level": 2,
+      "text": "보체는 제거의 표지를 붙인다"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.c5f78a604c09",
+      "type": "paragraph",
+      "markdown": "C1q 등으로 시작한 보체 활성은 복합체에 C4b·C3b 등의 표지를 더할 수 있다. 적혈구의 CR1은 이러한 표지가 붙은 복합체를 결합하여 간·비장 등의 제거 부위로 운반하는 데 기여한다. 적혈구가 복합체를 삼켜 분해한다는 뜻은 아니다. 운반한 복합체는 대식세포 등에서 처리되며 운반과 분해를 다른 세포의 기능으로 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.71197730f414",
+      "type": "paragraph",
+      "markdown": "복합체에 붙은 Fc와 보체 조각은 여러 수용체의 인식을 바꾼다. 보체가 활성화되면 염증을 증폭할 수 있지만 동시에 복합체의 처리와 제거를 도울 수 있다. 초기 보체 결핍이 감염뿐 아니라 자기면역성 현상과 연결되는 이유에 제거 기능도 포함된다. 보체를 오직 조직을 공격하는 체계로만 이해하면 이러한 양면성을 설명하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.123813008501",
+      "type": "heading",
+      "level": 2,
+      "text": "생성과 제거의 수지"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.1cab5e532170",
+      "type": "paragraph",
+      "markdown": "복합체량 I를 교육용으로 dI/dt=F−kI라고 두면 F는 형성 속도, k는 유효 제거상수다. F가 일정하면 정상상태 I=F/k이며, 같은 형성 속도에서도 제거가 느리면 더 많이 축적될 수 있다. 반대로 형성이 증가해도 제거가 충분히 늘면 혈중 농도의 변화가 작을 수 있다. 혈중 복합체 한 번의 측정으로 두 항을 각각 추정할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.c1652f8805eb",
+      "type": "paragraph",
+      "markdown": "실제 복합체는 균일한 분자가 아니며 크기·결합 성분과 조직 분포가 다양하다. 따라서 위 식은 기전을 나누는 모형이지 임상 환자의 복합체 부담을 하나의 제거상수로 보정한 모델이 아니다. 생성 항원의 지속, 항체 반응과 제거 장기의 기능을 함께 평가한다. 치료 뒤 혈중 지표와 조직 침착이 같은 속도로 변하지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.c6c33b7dcfcb",
+      "type": "heading",
+      "level": 2,
+      "text": "침착의 위치가 손상 방식을 바꾼다"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.5964166e52d0",
+      "type": "paragraph",
+      "markdown": "사구체와 작은 혈관 등에서 침착된 복합체는 보체·Fc 수용체를 통해 염증세포를 활성화할 수 있다. 호중구와 단백질분해효소·산화물은 표적 주변 조직을 손상시킨다. 혈중 복합체의 양뿐 아니라 항원의 물성, 국소 장벽과 흐름, 원래 조직에 결합하는 성질이 위치를 바꾼다. 신장·피부·관절의 소견이 같지 않을 수 있는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.b.836ddb5227a0",
+      "type": "paragraph",
+      "markdown": "혈중 복합체 검사, C3·C4와 조직 면역형광은 서로 다른 구획과 시간의 정보다. 혈중 검사가 음성이라고 이미 침착된 물질이 없다고 단정하지 않는다. 반대로 혈중에서 검출되었다고 특정 장기 손상이 확정되지는 않는다. 기전 설명에는 생성·운반·침착·염증과 장기 기능을 순서대로 연결하는 접근이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "혈중 운반",
+            "보체가 부착한 복합체와 CR1의 관계"
+          ],
+          [
+            "간·비장 제거",
+            "대식세포 계통과 운반체의 협력"
+          ],
+          [
+            "조직 침착",
+            "입자·혈류·장벽과 제거 능력의 상호작용"
+          ],
+          [
+            "조직 손상",
+            "보체·Fc 수용체·유입 세포의 효과기 반응"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.anatomy3d.0824",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.abdomen.spleen.organ-context"
+    },
+    {
+      "id": "immunology.complexes.clearance-deposition.visualization-limits.0824",
+      "type": "clinicalPearl",
+      "markdown": "정상 비장의 위치와 인접 장기를 확인한다. CR1·면역복합체·대식세포 및 제거 과정은 정적 육안 OBJ에 표현되지 않으며 이 장면으로 기능을 직접 관찰할 수 없다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/complexes/sections/immunology.complexes.clearance-deposition.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.complexes.clearance-deposition.001"
+  ],
+  "relatedLessons": [
+    "immunology.innate.complement-surface-regulation",
+    "immunology.hypersensitivity.ige-sensitization"
+  ]
+}

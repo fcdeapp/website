@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.pleural.effusion-fluid-mechanisms",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.b.068ea7ef1ad5",
+      "sourceSha256": "068ea7ef1ad59d6cd8526abd57fdb621baeb0015eddc0b4effea24a5a47749bd",
+      "sourceLengthUtf16": 170,
+      "annotations": [
+        {
+          "id": "ann.ab645ab4532985bcc7bb",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 2,
+            "exact": "흉막",
+            "prefix": "",
+            "suffix": "강의 액체는 생성과 배액의 균형 속에서 유지"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.b.b6915ac13632",
+      "sourceSha256": "b6915ac13632ece8b21bddbca9e804d96ec32b5411041c248cf2d33baf66e7c4",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.b.f4f49e105e72",
+      "sourceSha256": "f4f49e105e72f79b9e2b6f11a0e40c0417715217290e952bb6350fcb2f0ba966",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.f08fe4e2673d989a4baa",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 40,
+            "end": 91,
+            "exact": "양과 증상이 항상 선형으로 비례하지는 않으며 폐·심장의 예비력과 축적 속도·분포가 중요하다.",
+            "prefix": "의 기하·운동과 폐의 팽창에 영향을 준다. ",
+            "suffix": " 격벽과 국소 모음, 흉막·폐의 제한은 한 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.b.661ce70f481f",
+      "sourceSha256": "661ce70f481fb6dca01f28bc2e52d3dac2e6b8efe8b1680c5eed5a0a946af909",
+      "sourceLengthUtf16": 152,
+      "annotations": [
+        {
+          "id": "ann.d6938c50b74444ea0db4",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 78,
+            "end": 81,
+            "exact": "심부전",
+            "prefix": "의 단서지만 특정 원인을 독점하지 않는다. ",
+            "suffix": "이 있어도 새 발열·비대칭과 다른 소견이 있"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.b.c13b523ef34e",
+      "sourceSha256": "c13b523ef34e00ba0ad436dcc43a00e539425234f393a587aaf1293609b86707",
+      "sourceLengthUtf16": 164,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.b.c92f4f6e5920",
+      "sourceSha256": "c92f4f6e59200fd7d827ac758c64d86d4d0e1f689bb1a206cd61adade550243b",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.bbecfe9dbe82d51a0246",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 76,
+            "end": 78,
+            "exact": "결핵",
+            "prefix": "표본량·이전 치료 및 검사 성능이 다르다. ",
+            "suffix": "과 다른 특수 감염·염증은 임상과 별도 검체"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.b.bf832d81dea7",
+      "sourceSha256": "bf832d81dea78d13580757bc7377e881fb497ec2aa7ba7d29265d54d4bdf132d",
+      "sourceLengthUtf16": 178,
+      "annotations": [
+        {
+          "id": "ann.2da49874954c4ab86b36",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 154,
+            "end": 156,
+            "exact": "기흉",
+            "prefix": "안전을 결정하지 않는다. 출혈과 장기 손상·",
+            "suffix": ", 배액 뒤의 변화 등 위해도 평가한다."
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        },
+        {
+          "id": "ann.cbed4bf12a195bd6f65a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 44,
+            "exact": "치료는 원인 조절과 증상·호흡 부담, 감염원과 재축적을 다루는 목표를 구분한다.",
+            "prefix": "",
+            "suffix": " 배액 방법과 정도·감시는 액체의 위치·성상"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.b.b9270909cf3b",
+      "sourceSha256": "b9270909cf3bccab41c690ae2d33748d2b26b828cb9332655271d22ccf2d3eee",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.p.extra0846.0",
+      "sourceSha256": "736364583f486dec99fd7e8769ccb5582c83d1b0dfb6198f28c419fcdea0bbe2",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.pleural.effusion-fluid-mechanisms.p.extra0846.1",
+      "sourceSha256": "1f9693606d8f712ae18098401a50574ae59620268e97fb803f128822537a3a98",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    }
+  ]
+}

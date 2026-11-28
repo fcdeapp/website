@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.sensory-crossing-comparison-0852",
+  "lessonId": "neuroscience.sensory.coding-pathways",
+  "title": "몸 감각 경로의 교차 개념",
+  "nodes": [
+    {
+      "id": "input",
+      "label": "몸의 감각 입력",
+      "x": 350,
+      "y": 70,
+      "width": 320,
+      "height": 92
+    },
+    {
+      "id": "dc",
+      "label": "뒤기둥 상행",
+      "x": 165,
+      "y": 300,
+      "width": 260,
+      "height": 92
+    },
+    {
+      "id": "al",
+      "label": "척수의 교차",
+      "x": 535,
+      "y": 300,
+      "width": 260,
+      "height": 92
+    },
+    {
+      "id": "med",
+      "label": "연수의 교차",
+      "x": 165,
+      "y": 560,
+      "width": 260,
+      "height": 92
+    },
+    {
+      "id": "sc",
+      "label": "전외측계 상행",
+      "x": 535,
+      "y": 560,
+      "width": 260,
+      "height": 92
+    },
+    {
+      "id": "up",
+      "label": "상위 감각 처리",
+      "x": 350,
+      "y": 820,
+      "width": 320,
+      "height": 92
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.sensory-crossing-comparison-0852.e0",
+      "source": "input",
+      "target": "dc",
+      "label": "위치·진동",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.sensory-crossing-comparison-0852.e1",
+      "source": "input",
+      "target": "al",
+      "label": "통각·온도",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.sensory-crossing-comparison-0852.e2",
+      "source": "dc",
+      "target": "med",
+      "label": "상행",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.sensory-crossing-comparison-0852.e3",
+      "source": "al",
+      "target": "sc",
+      "label": "상행",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.sensory-crossing-comparison-0852.e4",
+      "source": "med",
+      "target": "up",
+      "label": "상행",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.sensory-crossing-comparison-0852.e5",
+      "source": "sc",
+      "target": "up",
+      "label": "상행",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 700,
+      "height": 970
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 650,
+        "height": 970
+      },
+      "fontSize": 22,
+      "nodes": {
+        "input": {
+          "x": 325.0,
+          "y": 70,
+          "width": 294.40000000000003,
+          "height": 92
+        },
+        "dc": {
+          "x": 153.21428571428572,
+          "y": 300,
+          "width": 239.20000000000002,
+          "height": 92
+        },
+        "al": {
+          "x": 496.7857142857143,
+          "y": 300,
+          "width": 239.20000000000002,
+          "height": 92
+        },
+        "med": {
+          "x": 153.21428571428572,
+          "y": 560,
+          "width": 239.20000000000002,
+          "height": 92
+        },
+        "sc": {
+          "x": 496.7857142857143,
+          "y": 560,
+          "width": 239.20000000000002,
+          "height": 92
+        },
+        "up": {
+          "x": 325.0,
+          "y": 820,
+          "width": 294.40000000000003,
+          "height": 92
+        }
+      }
+    }
+  },
+  "limitations": [
+    "몸 감각의 주요 경로를 단순화한 독립 개념도이며 모든 촉각·교차·분절 연결을 포함하지 않는다.",
+    "얼굴 감각·환자별 손상·실제 축삭 경로·정확한 피부절 시작을 나타내지 않는다."
+  ],
+  "sourceImageUsed": false
+}

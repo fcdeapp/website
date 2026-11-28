@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.spinal.myelopathy-cauda-equina",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.4fe8764dcf86",
+      "sourceSha256": "4fe8764dcf860de9f12bf9320035e9690a98c7cacff8a95ab9dfb713e77d79ac",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.5fe383577c60",
+      "sourceSha256": "5fe383577c6053c879960770f24747f54df8e4df2ef0eddb3e4e49e2be51ae06",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.ad5cea8f70e9",
+      "sourceSha256": "ad5cea8f70e919308f0cba523d7e7a54f64eee818c0257b01aa9ecfcecf4e999",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.0f80f0b7130a",
+      "sourceSha256": "0f80f0b7130a983ce340893ca7267afde6c7910a06b00f368979a5b811f670bb",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.cebbf5f51439",
+      "sourceSha256": "cebbf5f514391ec51ac2cbb4d8fcaac853462f92b26e5ac08ddab2e282d66a16",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.8fe845df2853bf492453",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 55,
+            "exact": "척수원뿔과 말총(cauda equina)은 다리·회음부와 배뇨·배변 및 성기능의 평가에서 중요하다.",
+            "prefix": "",
+            "suffix": " 말총은 척수 자체가 아니라 여러 신경뿌리의"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.2458cb5f395c",
+      "sourceSha256": "2458cb5f395cfb6f0fa646e288c5cb8bd7b972976436d56b1485dfc0114e0d2c",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.111ad222bfdf",
+      "sourceSha256": "111ad222bfdf16999ba3018eaf3f7c078eaad853501190f779e441c9e472a195",
+      "sourceLengthUtf16": 229,
+      "annotations": [
+        {
+          "id": "ann.0e2c91a99e0e01136782",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 44,
+            "end": 85,
+            "exact": "암과 면역 저하, 발열과 최근 시술·항응고 노출, 외상은 중요한 맥락이다.",
+            "prefix": "발생 속도와 배경, 필요한 치료가 다르다. ",
+            "suffix": " 위험이 의심되는 환자에서 진통 효과만 기다"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.956b3404b12d",
+      "sourceSha256": "956b3404b12d628d8104a64f14bd0b0845c2f3827d38946aeed103ec2eca02f5",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.532bfcd51f31d56c798b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 72,
+            "end": 76,
+            "exact": "뇌척수액",
+            "prefix": "상과 처치를 모두 대신하지 않는다. 혈액과 ",
+            "suffix": " 검사는 원인 가설에 따라 선택하고, 천자의"
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        },
+        {
+          "id": "ann.299130ab8fea354d9c24",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 124,
+            "end": 170,
+            "exact": "같은 약화라도 염증과 감염·압박의 치료가 다르므로 원인을 확인하는 과정이 중요하다.",
+            "prefix": " 안전과 검사 전 치료의 필요를 검토한다. ",
+            "suffix": " 다만 확진이 늦어지는 동안 현재의 신경 기"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.b336ce99c6f5",
+      "sourceSha256": "b336ce99c6f502a77179a9f8e85be401c6abdce9c345694b2bdd3d994bf8b733",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.spinal.myelopathy-cauda-equina.b.6e0ced800e6d",
+      "sourceSha256": "6e0ced800e6df6eaecb4ee5d5371a87b121f41081047bef49ccca8d60671796e",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    }
+  ]
+}

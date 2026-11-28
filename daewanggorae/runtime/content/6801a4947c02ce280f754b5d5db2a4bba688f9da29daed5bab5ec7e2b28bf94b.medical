@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.carbohydrate.glycolysis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.2478feca29aa",
+      "sourceSha256": "2478feca29aa545e89872d56ae0f23764a0ed4397d47966cafa8a6f2d84123a9",
+      "sourceLengthUtf16": 254,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.068aa00311f0",
+      "sourceSha256": "068aa00311f0410a51bf8dc6df0a3a07c5f88644e3618cab659a58b46dea22a9",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.836b7c4ce7cb",
+      "sourceSha256": "836b7c4ce7cb95ea2076ee91a22d61c6dea39c063a10bfea4f50a2ed0a9a59f0",
+      "sourceLengthUtf16": 262,
+      "annotations": [
+        {
+          "id": "ann.2c01335e40de7f1aa2b2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 102,
+            "end": 110,
+            "exact": "glycogen",
+            "prefix": "제한되어 세포 안에 머물고, 해당과정 외에 ",
+            "suffix": " 합성과 pentose phosphate p"
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        },
+        {
+          "id": "ann.d891e2fca2bf04b7ad78",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 115,
+            "end": 140,
+            "exact": "pentose phosphate pathway",
+            "prefix": "고, 해당과정 외에 glycogen 합성과 ",
+            "suffix": " 등으로도 갈 수 있다. 간의 glucoki"
+          },
+          "conceptId": "reader.term.3fe931bd4395db73",
+          "targetDocumentId": "biochemistry.carbohydrate.pentose-phosphate"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.02f312c6d715",
+      "sourceSha256": "02f312c6d7158c5902426bc4f90505dc3a9b629850aa21e8a3d81ea01d038a67",
+      "sourceLengthUtf16": 286,
+      "annotations": [
+        {
+          "id": "ann.a8410aafc299c7b510ba",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 154,
+            "end": 174,
+            "exact": "이 단계는 해당의 조절에서 중요하다.",
+            "prefix": "-1,6-bisphosphate를 만든다. ",
+            "suffix": " 처음의 포도당 인산화 산물은 여러 경로로 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.3fe2c62f2daa",
+      "sourceSha256": "3fe2c62f2daa9bb94b5a3dd44ecb33f6dc388f17858336ae42b0109bfb80ae56",
+      "sourceLengthUtf16": 287,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.a65ee1b8a4a9",
+      "sourceSha256": "a65ee1b8a4a926e2fa24b821c4d7793cffdd5b7e435024c0591a80acf51b9b37",
+      "sourceLengthUtf16": 267,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.d5aa1189a539",
+      "sourceSha256": "d5aa1189a5398df60bfcd9e483f49d2ced160b8edaccc7a1227fd3e20208dbeb",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.0ba7e64f35b1",
+      "sourceSha256": "0ba7e64f35b12f5cb78eb2de307db129f46342ca800ed250cbc764f055ddb00d",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.dbeeaf31a616",
+      "sourceSha256": "dbeeaf31a616717199d130743139408d883ae2051767ad8a1513090f2061cdd9",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.1944dd2978c7e18ff083",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 216,
+            "end": 221,
+            "exact": "포도당신생",
+            "prefix": "ctate는 다른 조직의 산화 기질과 간의 ",
+            "suffix": " 재료로 이용될 수 있다."
+          },
+          "conceptId": "reader.term.f6becb3579af9222",
+          "targetDocumentId": "biochemistry.carbohydrate.gluconeogenesis"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.5f5a9385d8d1",
+      "sourceSha256": "5f5a9385d8d1fa968e449a838fc5a4aae6677817a069c2abd878fc9986afcb46",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.3e4cf238263a",
+      "sourceSha256": "3e4cf238263ac64ef9eef6a6d177f598b6aadcf41d08aa846e199e341bc8acf0",
+      "sourceLengthUtf16": 255,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.27cdaca34875",
+      "sourceSha256": "27cdaca34875880b855dab8a521c9d4ef91906e796fa39a1c2343300e874ec13",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.50a932fab5b4",
+      "sourceSha256": "50a932fab5b47fdae1419f88b6203c155eb7869550a58b61b8f471009718eb51",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.glycolysis.b.9cf5638b00e6",
+      "sourceSha256": "9cf5638b00e69a8198d850b70506831a7bdcdea5af66f2b474d09532af480d1d",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    }
+  ]
+}

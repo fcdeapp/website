@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.reentry-conduction",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "회귀의 전도·불응기와 회로 조건",
+    "en": "Conduction Refractoriness and Reentry"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.lo.01",
+      "text": "단방향 차단과 회귀의 성립을 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.lo.02",
+      "text": "파장과 회로 길이를 비교한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.lo.03",
+      "text": "전도 지연과 부정맥 위험의 관계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.167cb210869d",
+      "type": "heading",
+      "level": 2,
+      "text": "돌아온 파가 다시 흥분시키는 조직"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.809c9a3ed371",
+      "type": "paragraph",
+      "markdown": "회귀(reentry)는 흥분파가 경로를 돌아 처음 활성화했던 조직을 다시 자극하는 기전이다. 정상적인 활성 뒤에는 불응기가 있어 곧바로 재흥분하지 못한다. 돌아오는 시간이 조직의 회복보다 짧으면 파는 소멸할 수 있다. 따라서 회로의 존재뿐 아니라 전도 시간과 회복의 공간적 분포가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.e1af819e3884",
+      "type": "paragraph",
+      "markdown": "단방향 차단은 한 방향으로는 전도가 막히고 다른 방향으로는 통과할 수 있는 조건이다. 조기 자극이 한 경로에서는 불응기에 막히고 다른 경로를 천천히 진행하면, 먼저 막혔던 조직이 회복한 뒤 역방향으로 들어갈 수 있다. 차단은 고정된 흉터뿐 아니라 자극 시점과 조직의 전기적 상태에 따라 기능적으로 생길 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.9d754e21b054",
+      "type": "heading",
+      "level": 2,
+      "text": "길이와 시간의 비교"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.1a30ce9f7adf",
+      "type": "paragraph",
+      "markdown": "균일한 일차원 고리에서 전도속도를v, 유효불응기를ERP라고 하면 파장은λ=v×ERP로 표현한다. 길이의 단위는 속도와 시간의 곱이다. 회로 길이L을 도는 시간은L/v다. L/v가ERP보다 길면 처음 조직이 회복한 뒤 파가 돌아올 여지가 있다. 이 관계는 실제 심장의 모든 회귀를 진단하는 충분조건은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.bded1df805c9",
+      "type": "paragraph",
+      "markdown": "가상 L=12cm,v=40cm/s,ERP=0.20s에서는 순환시간이0.30s이고 파장은8cm다. 회로 길이에서 파장을 뺀4cm는 이 단순 모형의 흥분 가능 간격에 대응한다. 실제 조직에서는 전도와 회복이 균일하지 않고 파면의 곡률·분지와 세포 연결이 영향을 준다. 이 수치를 환자의 회귀 경로나 시술 범위로 옮기지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.b66b2058b8c9",
+      "type": "heading",
+      "level": 2,
+      "text": "느려진 전도의 양면성"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.37943e0d4cd8",
+      "type": "paragraph",
+      "markdown": "전도가 느려지면 돌아오기 전에 조직이 회복할 시간이 늘 수 있다. 그러나 지나치게 느리거나 안전한 전파가 유지되지 않으면 파 자체가 끊어진다. 따라서 느린 전도가 언제나 회귀를 증가시키거나 언제나 억제한다고 일반화할 수 없다. 자극의 전달과 차단, 회복이 함께 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.2804b5fe4f5a",
+      "type": "paragraph",
+      "markdown": "불응기를 늘리면 같은 속도에서 파장이 길어져 회로가 흥분파를 수용하기 어려워질 수 있다. 반면 회복의 불균일성은 다른 위치의 차단을 만들 수 있다. 약물이 한 변수에 미치는 효과만으로 임상 항부정맥 효과를 확정하지 않는다. 구조적 심장질환과 이온 상태, 약물 노출과 다른 표적을 함께 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.27ac3f53702b",
+      "type": "heading",
+      "level": 2,
+      "text": "기전을 확인하는 근거"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.d1b093a05c6c",
+      "type": "paragraph",
+      "markdown": "규칙적인 빈맥이라는 표면 소견만으로 회귀를 확진할 수 없다. 자동능 증가와 유발활동도 감별해야 한다. 전기생리 검사에서는 활성화 순서와 자극 반응, 회로의 필요한 부분을 방해했을 때의 변화를 통합한다. 특정 부위의 빠른 전위만으로 전체 회로의 필수 경로라고 선언하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.b.04be1b3187e0",
+      "type": "paragraph",
+      "markdown": "정상 심장방의 육안 모델은 위치 관계의 학습에 도움이 되지만 흉터의 느린 통로나 불응기를 직접 보여 주지 않는다. 회귀는 전도·회복이 명시된 회로 도식으로 표현해야 한다. 구조적 모양과 동적 전기 현상의 차이를 구별하는 것이 해부학과 부정맥 기전을 연결하는 출발점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.reentry-conduction.table",
+      "type": "table",
+      "data": {
+        "title": "가상 회로의 수지",
+        "columns": [
+          "변수",
+          "값"
+        ],
+        "rows": [
+          [
+            "L",
+            "12cm"
+          ],
+          [
+            "v",
+            "40cm/s"
+          ],
+          [
+            "ERP",
+            "0.20s"
+          ],
+          [
+            "L/v",
+            "0.30s"
+          ],
+          [
+            "λ",
+            "8cm"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.reentry-conduction.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.reentry-conduction.001"
+  ]
+}

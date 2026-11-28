@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.repair-matrix-pairs",
+  "lessonId": "pathology.repair.matrix-remodeling-fibrosis",
+  "title": "회복의 서로 다른 평가 축",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "상피 덮임·상처 수축",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "결손 폐쇄 상태",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "콜라겐 합성·가공·배열",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "기질 구조와 강성",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "MMP·TIMP의 균형",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "이동·재형성·축적 조절",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.repair-matrix-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "기계적 강도와 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.repair-matrix-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "양만으로 결정 안 됨",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.repair-matrix-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "분해도 회복에 필요",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "고정 날짜·정상 강도 백분율이나 치료 권고를 표시하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

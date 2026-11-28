@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "ophthalmology.vision.optics-pathway",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "ophthalmology.vision.optics-pathway.b.c37563a97468",
+      "sourceSha256": "c37563a97468499dde1ca86903e6036cbd962fd15fa14aa5463467d93970eb67",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "ophthalmology.vision.optics-pathway.b.1419c65d833a",
+      "sourceSha256": "1419c65d833a4421fe6dd1d8e723c4af36f2ec1f738522bc6fc234ad45019dfe",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "ophthalmology.vision.optics-pathway.b.5b95b5af2c64",
+      "sourceSha256": "5b95b5af2c64ffcff2a7df5fad54f42f3a28878432feb32984508d6e00381a9f",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "ophthalmology.vision.optics-pathway.b.0bd3ea4234c6",
+      "sourceSha256": "0bd3ea4234c6a960c3520382770a5790339bf1dd3ae30b5fa8abb41a59ae94d2",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "ophthalmology.vision.optics-pathway.b.d514b7a07ded",
+      "sourceSha256": "d514b7a07ded7a67e9cc1ead14b4118ffa51778437e655a32bec5e86aaec9a50",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "ophthalmology.vision.optics-pathway.b.74c98d011f93",
+      "sourceSha256": "74c98d011f93a70ec5fdbda4dffda112f9899cad93709a16932d55f2606ac451",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "ophthalmology.vision.optics-pathway.b.5a50f408ce46",
+      "sourceSha256": "5a50f408ce4640bef3818ea9543bba8698195fd5cccac9cee1421216addb4f98",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.9babbcf369478e75d0c8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 169,
+            "exact": "상대구심동공운동장애는 양쪽 구심 입력의 비대칭을 나타내며 동공 크기 차이 자체와 구분한다.",
+            "prefix": "의식적으로 보는 과정과 완전히 같지 않다. ",
+            "suffix": " 산동과 축동을 해석할 때는 약물과 자율신경"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "ophthalmology.vision.optics-pathway.b.48ed6fd4ead2",
+      "sourceSha256": "48ed6fd4ead2a51c235e2a8471f9e6606f4c6fc369a90b5916bf7e1873591a5c",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.7e93644db2e39247dc01",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 40,
+            "end": 93,
+            "exact": "급성 시력 소실에서 통증 유무와 시간 경과, 단안 또는 양안, 신경학적 증상이 감별에 중요하다.",
+            "prefix": ", 앞부분과 안저 검사는 서로 보완적이다. ",
+            "suffix": " 빨간 눈이라는 표면 소견만으로 결막의 경한"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

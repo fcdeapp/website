@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.genetic.chromosomal-dosage",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.c9e534f932d0",
+      "sourceSha256": "c9e534f932d047b9e20594b5b7c032dfb82eaff0bbec74a3dee8e38c401ca81f",
+      "sourceLengthUtf16": 279,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.ee5f86efe7f4",
+      "sourceSha256": "ee5f86efe7f48217111205a2320a5ec4b9dc7fce3566a0634110cf36eb065591",
+      "sourceLengthUtf16": 250,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.2d0eb9d18549",
+      "sourceSha256": "2d0eb9d185498fabcb3a60ce0101f25d9eac66da7a20d8a08e309e85c81ddcad",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.29155d27f6ca",
+      "sourceSha256": "29155d27f6ca99da2c41094e75a5760f6fd26656d6d59073df7399f549ea35dc",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.744634ca0100",
+      "sourceSha256": "744634ca010006466d8dbea980049a357fe24915d46a4f4da395a4fe9325bdba",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.7f618c41bb7a",
+      "sourceSha256": "7f618c41bb7afd3e716b1f66f048b9e53ec72e3bdfca28765abe1063a71c254c",
+      "sourceLengthUtf16": 246,
+      "annotations": [
+        {
+          "id": "ann.81483e93a754c8462c5a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 174,
+            "exact": "검사 해상도보다 작은 증감이 동반될 가능성도 구별해야 한다.",
+            "prefix": " 위치 변화가 발현 환경을 바꿀 수 있다. ",
+            "suffix": " 표현형이 정상인 보인자에서도 생식세포 형성"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.dce79f455e75",
+      "sourceSha256": "dce79f455e75e08820221f4af72db1761ce513135996e3ca5b1d6cf124e82a9c",
+      "sourceLengthUtf16": 209,
+      "annotations": [
+        {
+          "id": "ann.1c3438f185cc7cc338f4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 92,
+            "exact": "다운증후군(Down syndrome)의 핵심은21번 염색체 장완의 관련 유전물질이 추가되는 것이며, 자유 삼염색체가 대표적이지만 재배열이나 모자이크 구성도 가능하다.",
+            "prefix": "",
+            "suffix": " 따라서 염색체 총수가 항상47이어야 한다고"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.03d224a341f2",
+      "sourceSha256": "03d224a341f2a71fe3164d867749bd4a15afe1841df6439acf99972a2158853b",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.f5da33c77dab",
+      "sourceSha256": "f5da33c77dabac789fa96cf2c7d84d41881b71cbdbc47e688d4f670038a1f211",
+      "sourceLengthUtf16": 282,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.dd3e7cdcfe94",
+      "sourceSha256": "dd3e7cdcfe94bec06c49e3f0a4d7566bee453c4f93457f3802d439a3bc7f855c",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.75d5fec10f2f",
+      "sourceSha256": "75d5fec10f2fc271528a973e99b29008ba1bcaa8c54356c920ea3283b0b5a85a",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.chromosomal-dosage.b.7496a47ee0c7",
+      "sourceSha256": "7496a47ee0c708d96c220e8f46e321389cc2d31ebf2dddb58983b21954fde50a",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    }
+  ]
+}

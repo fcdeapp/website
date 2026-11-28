@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.ventricular-fibrillation-arrest",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.bf3a0e345158",
+      "sourceSha256": "bf3a0e345158fa2581bdbeb7b0995299884752d37f0e86159d5b39fa261707ba",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.ae9fc1a25db9",
+      "sourceSha256": "ae9fc1a25db9fa1d029f978ee3e991a235cb87062d8d0ca4f54e4dfbc7271de0",
+      "sourceLengthUtf16": 232,
+      "annotations": [
+        {
+          "id": "ann.02dbab8509492f2a02ef",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 201,
+            "end": 232,
+            "exact": "전기적 판독과 실제 환자 평가의 시간적 균형이 중요하다.",
+            "prefix": "되면 뇌와 심근의 관류가 악화될 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.5109ae537f08",
+      "sourceSha256": "5109ae537f08fda4eb48d50459bec2911d16e5d500613e68f376e18a68c7ea4c",
+      "sourceLengthUtf16": 237,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.ca823e02e33a",
+      "sourceSha256": "ca823e02e33a8346511eb93cb9a159363fc07945942bd754eb4f7cb2e8e11468",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.e909183992d4",
+      "sourceSha256": "e909183992d43eea155b9bf3d6b8199fcb29a07f92896c565704b8800fd6de8b",
+      "sourceLengthUtf16": 259,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.f765bad84017",
+      "sourceSha256": "f765bad840179f697e8765d16fe6a69de000f05d96eaebec9edea78e37bf38b2",
+      "sourceLengthUtf16": 248,
+      "annotations": [
+        {
+          "id": "ann.3dcfd8ac05d6f595c368",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 100,
+            "end": 102,
+            "exact": "기흉",
+            "prefix": "소증과 혈량 부족, 전해질·대사 이상, 긴장",
+            "suffix": "과 압전, 혈전 등은 임상 맥락에 따라 평가"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neonatology.transition.circulation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neonatology.transition.circulation.b.cb9f85076214",
+      "sourceSha256": "cb9f850762141dd78a7682f79b84ba2ea2ea7181bf5c4edc8ae1f53f37d091d1",
+      "sourceLengthUtf16": 289,
+      "annotations": [
+        {
+          "id": "ann.f81ec7401b87022838e3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 25,
+            "end": 142,
+            "exact": "산소화된 혈액은 제대정맥을 통해 태아로 들어오고, 정맥관(ductus venosus), 타원구멍(foramen ovale), 동맥관(ductus arteriosus)은 혈류의 우회와 분배에 중요한 역할을 한다.",
+            "prefix": "아는 폐보다 태반에서 가스교환을 수행한다. ",
+            "suffix": " 제대동맥은 태아에서 태반으로 혈액을 보낸다"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neonatology.transition.circulation.b.15690b115796",
+      "sourceSha256": "15690b115796a6939c4b3214184f5d0647640aa02cfa19450f6ee076f6f649e6",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.0571fa645ed40dcbcb8b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 120,
+            "end": 179,
+            "exact": "출생 후에는 같은 연결이 조건에 따라 병적 단락이나 특정 선천심장질환의 생존에 중요한 통로가 될 수 있다.",
+            "prefix": "통로는 정상 태아 생리에서 필요한 구조다. ",
+            "suffix": " 구조의 의미는 시기와 압력관계에 따라 달라"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neonatology.transition.circulation.b.8f9117da5c49",
+      "sourceSha256": "8f9117da5c49d968187355af1c75b4ab3456f7b9a18b4710b378eb0e28fa7b94",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.transition.circulation.b.3f7dd5cdb95c",
+      "sourceSha256": "3f7dd5cdb95c3ad4ae79190a0e0f9ab3da13ac6d4a6089d57d43bc68dcd8c267",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.transition.circulation.b.2636c87036de",
+      "sourceSha256": "2636c87036de2d044536256f4e6257a4d67fcc2e2814504b17a2582a85c292e7",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.transition.circulation.b.c8d683b67c11",
+      "sourceSha256": "f7916c6d0a89a7ea7e0f5b7acf87c9a48e7ea76f6f2050a2b7468155830e0b29",
+      "sourceLengthUtf16": 113,
+      "annotations": [
+        {
+          "id": "ann.b4e8ae400115fa1eaedb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 29,
+            "exact": "신생아의 체온 조절과 포도당 공급도 전환에 중요하다.",
+            "prefix": "",
+            "suffix": " 작은 체격과 표면적, 저장 에너지와 미숙성"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

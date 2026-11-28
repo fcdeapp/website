@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "obstetrics.diabetes.screening-pathways",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.b.4e4ee863450f",
+      "sourceSha256": "4e4ee863450f026da0c2f0544b5b89eb46253fb9f1b77a131ae8ce02d4d39e21",
+      "sourceLengthUtf16": 228,
+      "annotations": [
+        {
+          "id": "ann.6814c72ced0c8d8b98fd",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 135,
+            "end": 152,
+            "exact": "diabetes mellitus",
+            "prefix": "있다. 임신성 당뇨병(gestational ",
+            "suffix": ", GDM)은 이런 적응과 기존의 대사 감수"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.b.97ab6a10390e",
+      "sourceSha256": "97ab6a10390e749aef41eed4f60b298adf554c06f292ace8458bda59ac89ffa9",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.6f4b0f90fb4b0632e434",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 146,
+            "end": 185,
+            "exact": "임신 전부터 있던 당뇨와 기관 형성기의 노출, 후기 GDM을 구별한다.",
+            "prefix": " 시기에 같은 위험을 만드는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.b.90aa18d6ae4e",
+      "sourceSha256": "90aa18d6ae4eb6f65076b615663c55720364d77a4bdf930210aa1cbf0a74a280",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.b.8fa47b149a8d",
+      "sourceSha256": "8fa47b149a8db3cfca37325f9ca2877da6a0af880a8a707fe7c18f297e00b367",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.b.ffe65cb14a6c",
+      "sourceSha256": "ffe65cb14a6c310843721e47a252c85a40863ec051ea5775869beee05056d2a0",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.b.7685e8e5feda",
+      "sourceSha256": "7685e8e5feda1aaed5011068a7c3b6a6627ae2f1d55082da511a0689ab8b4685",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.b.28c81e09de68",
+      "sourceSha256": "28c81e09de6873f8e63e0bcafc9641cfee415aac699629fe5551028cfa542e4c",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.ae600dcf42155a009322",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 84,
+            "end": 128,
+            "exact": "ADA 2026년 기준도 초기 평가와 24~28주 선별의 목적·근거를 구별한다.",
+            "prefix": "다른 초기 임신에 무조건 적용하지 않는다. ",
+            "suffix": " 이전 GDM과 비만·가족력 및 다른 위험,"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.b.cb5c512d612b",
+      "sourceSha256": "cb5c512d612b7bec153a902202e798680a2185bb67a71fb023131b3c597e2782",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.supp.c372180fea2c",
+      "sourceSha256": "c372180fea2c4a143aef523265ab7073f6893873b13b9f32a46a1c5e7b112d3e",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.diabetes.screening-pathways.supp.142f55011ec7",
+      "sourceSha256": "142f55011ec7bd079ed2043a462105cd2f2a28ec1ee829c60197208ea44168f9",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    }
+  ]
+}

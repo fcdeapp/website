@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.er-topology-quality-pairs",
+  "lessonId": "molecular-biology.proteins.targeting-quality-control",
+  "title": "표적화·위상·품질관리",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "SRP 관련 신호 인식",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "소포체 막 연결·이동",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "소포체 내강 도메인",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "분비 경로 뒤 세포외 쪽",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "미접힘 부담·UPR",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "부하·접힘·분해 조절",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.er-topology-quality-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "대표 표적화",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.er-topology-quality-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "위상 보존",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.er-topology-quality-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "적응·상태 의존",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "모든소포체단백질이동일한신호절단·SRP경로를쓰는것은아니다. UPR만으로사멸을확정하지않는다."
+  ],
+  "sourceImageUsed": false
+}

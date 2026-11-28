@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.shock.monitoring-inference",
+  "subjectId": "pathology",
+  "chapterId": "shock",
+  "title": {
+    "ko": "순환 감시의 측정·오차·인과 해석",
+    "en": "Measurement, Error and Inference in Circulatory Monitoring"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.shock.monitoring-inference.lo.01",
+      "text": "측정값·추정값·임상 판단을 구별한다"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.lo.02",
+      "text": "동적 검사의 가정과 반응 크기를 해석한다"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.lo.03",
+      "text": "중재 전후 비교에서 교란을 확인한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.shock.monitoring-inference.b.1c038ae9331a",
+      "type": "heading",
+      "level": 2,
+      "text": "측정하려는 양을 먼저 정한다"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.274521465e62",
+      "type": "paragraph",
+      "markdown": "혈압, 유량, 충만과 관류는 관련되지만 다른 양이다. 모니터에 숫자가 연속 표시된다고 그 수치가 모든 장기의 실제 생리를 직접 측정하는 것은 아니다. 장치는 신호에서 특정 모형을 이용해 값을 추정하기도 한다. 측정 원리와 보정·위치, 적용되는 가정을 알아야 오차의 방향과 한계를 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.92677c1a51fd",
+      "type": "paragraph",
+      "markdown": "동맥파형은 혈관 긴장·탄성과 반사파, 리듬과 장치 조건에 영향을 받는다. 파형의 변화와 실제 일회박출량 변화가 항상 같은 관계를 갖지는 않는다. 심초음파의 유량 추정도 단면적·속도·정렬과 호흡·리듬에 영향을 받는다. 서로 다른 방법의 수치를 비교할 때 방법의 체계적 차이를 환자의 악화로 바로 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.86e15d618505",
+      "type": "heading",
+      "level": 2,
+      "text": "반복성과 정확도"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.1f7871ea70aa",
+      "type": "paragraph",
+      "markdown": "반복값이 서로 가까운 정밀도와 참값에 가까운 정확도는 다른 개념이다. 같은 방향의 편향이 있으면 반복성이 좋아도 실제 양을 잘못 추정할 수 있다. 반대로 잡음이 크면 작은 변화는 생리적 신호와 구별하기 어렵다. 개입 전후 차이를 평가하려면 그 방법의 변동과 재현성을 함께 살펴야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.a481eb314166",
+      "type": "paragraph",
+      "markdown": "자료표에는 단위와 채취·측정 조건을 표시한다. 평균값만 있으면 짧은 저관류 사건과 변동성을 놓칠 수 있고, 순간 최고값만 있으면 지속시간을 알기 어렵다. 관찰 간격과 결측도 판단에 영향을 준다. 기록이 없다는 사실을 자동으로 정상으로 대체하면 존재하지 않는 임상 정보를 만들게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.bc354e47c499",
+      "type": "heading",
+      "level": 2,
+      "text": "동적 검사가 묻는 질문"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.98e1c2f109cd",
+      "type": "paragraph",
+      "markdown": "전부하를 일시적으로 바꾸고 유량이 변하는지 확인하는 검사는 정적인 압력 관찰과 질문이 다르다. 그러나 동적이라고 모든 조건에서 정확한 것은 아니다. 호흡 방식·부정맥·우심실 기능과 복강 내 조건 등은 검사 방법마다 영향을 줄 수 있다. 어떤 검사가 어떤 조건에서 검증되었는지 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.504f979a9828",
+      "type": "paragraph",
+      "markdown": "반응은 정해진 시간 안에 같은 양을 적절한 방법으로 비교해야 한다. 혈압이 변하지 않았다고 유량도 변하지 않았다고 단정하거나, 다른 시각의 값을 같은 반응으로 계산해서는 안 된다. 검사의 생리적 효과와 측정의 시간 해상도가 맞아야 한다. 반응성 판정 이후에도 실제 필요성과 내성을 별도로 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.5f68a71fe68f",
+      "type": "heading",
+      "level": 2,
+      "text": "전후 차이가 원인을 증명하는가"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.ab19745acc51",
+      "type": "paragraph",
+      "markdown": "중재 뒤에 유량이 증가했더라도 동시에 리듬·통증·환기·혈관 긴장과 다른 치료가 바뀌었을 수 있다. 전후 비교에서 무엇을 고정했고 무엇이 달라졌는지를 적어야 인과 해석이 가능해진다. 중재와 같은 시점에 발생한 다른 변화를 무시하면 약물·체액의 효과를 과대평가할 수 있다. 시간 순서만으로 모든 대체 원인이 배제되지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.917009667084",
+      "type": "paragraph",
+      "markdown": "관찰된 반응이 없다는 결과에도 원래의 기전이 틀렸다는 설명 외에 노출 부족, 측정 한계와 반대 방향의 과정이 가능하다. 다만 가능한 설명을 무한히 나열하는 대신 실제 자료로 구별할 수 있는 다음 질문을 선택해야 한다. 신뢰할 수 있는 측정과 임상적 우선순위를 연결하는 것이 추론의 목적이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.170ead5099c7",
+      "type": "heading",
+      "level": 2,
+      "text": "복수 지표가 어긋날 때"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.35e2ffc386b8",
+      "type": "paragraph",
+      "markdown": "혈압은 회복되었지만 소변량이 적고 젖산이 높을 수 있다. 각각이 반영하는 과정과 회복 시간, 생성·제거를 분해하면 단순한 모순이 아닐 수 있다. 기존 세뇨관 손상과 약물, 간의 처리 변화와 지속적 미세관류 이상 등은 다른 후보다. 하나의 수치를 맞추기 위해 나머지 관찰을 무시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.b.01294e6c19fb",
+      "type": "paragraph",
+      "markdown": "반대로 여러 지표가 함께 좋아져도 원인 질환의 재발과 치료의 지연 위해가 남을 수 있다. 단기 생리와 장기 기능·생활 결과를 구별하여 추적한다. 문제 풀이에서는 가장 그럴듯한 한 설명을 선택한 뒤, 그 설명만으로 확정할 수 없는 범위도 적게 한다. 이것이 단순 암기형 문항과 자료 해석형 문항을 가르는 기준이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.monitoring-inference.table.0821",
+      "type": "table",
+      "data": {
+        "title": "관찰과 판단의 구별",
+        "columns": [
+          "관찰",
+          "정보"
+        ],
+        "rows": [
+          [
+            "환기 조건",
+            "변경"
+          ],
+          [
+            "중심정맥압",
+            "상승"
+          ],
+          [
+            "CO",
+            "유사"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/shock/sections/pathology.shock.monitoring-inference.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.shock.monitoring-inference.001"
+  ],
+  "relatedLessons": [
+    "pathology.shock.lactate-kinetics",
+    "pathology.shock.multiorgan-recovery"
+  ]
+}

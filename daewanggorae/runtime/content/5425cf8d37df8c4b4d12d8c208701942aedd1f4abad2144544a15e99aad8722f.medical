@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neuroscience.synapse.transmission",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neuroscience.synapse.transmission.b.a42a305b63fe",
+      "sourceSha256": "a42a305b63fe049d74f6cc8e982f9b8ad2bb45ee0eb95b847612bd44a2085961",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.39997be29bff",
+      "sourceSha256": "39997be29bffc78dd2c0ac9492d331ab1c6d0cee8f08a37c85398e5c3434f49e",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.35d26d705f5e",
+      "sourceSha256": "35d26d705f5eda3799687e611c4154ee2c1c7fcf1d1e93d9e65fd7238b4e7b80",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.997414f4cf31",
+      "sourceSha256": "997414f4cf311ed4fb8702c205601a7c730fedb39013d3bc60a5a0f56a3eb5ce",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.d2039f789d6c",
+      "sourceSha256": "d2039f789d6c67a9c8c4deed1d55559e91dd26e1766441de22318a306cfec3d7",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.390f6eae3a34",
+      "sourceSha256": "390f6eae3a3453a242cd8aac27c0e6014014db992de6675af45df660a857b894",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.38e42b173587bacfe6b7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 34,
+            "end": 37,
+            "exact": "막전위",
+            "prefix": "전류의 방향은 통과 이온과 역전전위, 당시 ",
+            "suffix": "에 달려 있다. Na+와 K+ 등 여러 양이"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.96ed7fefb422",
+      "sourceSha256": "96ed7fefb422ccc6c0a1a37601560a346f62f884b26083be308f1ef51cc0f45b",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.7fd648287c50",
+      "sourceSha256": "7fd648287c503ce6838ba30a90e7011fd0ff3adb0c2f19edfec1be5c226f35b5",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.0b00d8ead67b52b2461a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 140,
+            "end": 193,
+            "exact": "전압 변화의 방향과 활동전위 확률에 대한 영향을 서로 같은 정의로 사용하지 않는 것이 중요하다.",
+            "prefix": "은 수용체 활성의 기능적 결과도 달라진다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.88e34cc50030",
+      "sourceSha256": "88e34cc5003046cf97bab760d8e64250f4e52e55f01019db036c3e309cecb0f1",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.2687d2ebbd5f5f5b4348",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 42,
+            "end": 99,
+            "exact": "같은 시냅스의 연속 입력이 겹치는 시간 합산과 서로 다른 위치의 입력이 결합하는 공간 합산을 구분한다.",
+            "prefix": "포체를 거치며 감쇠되고 시간적으로 겹친다. ",
+            "suffix": " 막의 시간상수와 공간적 전기 특성, 입력 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.30c12616b473",
+      "sourceSha256": "30c12616b4732d91b6845e0cb7df8dabe40db89f22faacd1a17e5503c474d2b6",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.5fe0bbca85b7",
+      "sourceSha256": "5fe0bbca85b7909d08da032d95104e6f40829a7926440a3ec2a14daee47e79ef",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.9576b7dd0b01b25ac2dd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 125,
+            "end": 177,
+            "exact": "따라서 시냅스전 활동과 시냅스후 탈분극의 조합에 반응하는 성질이 학습 관련 모형에서 중요하다.",
+            "prefix": "입을 통한 가소성 신호와 연결될 수 있다. ",
+            "suffix": " 모든 시냅스의 장기 변화가 하나의 NMDA"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.121fb0578365",
+      "sourceSha256": "121fb05783656f511b52241a5bef3be40559db7617eee22f784f877fbd63d915",
+      "sourceLengthUtf16": 249,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.3f1fc9aa841f",
+      "sourceSha256": "3f1fc9aa841f47bec08632b52a0ef4c6816b8fb16b74fec64af339d38ecb9be4",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.synapse.transmission.b.d5cc112f62a6",
+      "sourceSha256": "d5cc112f62a6128f0835736ecde23a9b5018f64db33da12682055797161238c7",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    }
+  ]
+}

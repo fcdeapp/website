@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "radiology.ct.attenuation-contrast",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.bc149414ca0e",
+      "sourceSha256": "bc149414ca0eda059a96b1e7d60a3016d51adc3e9fd37c4b76b767813bdcacbd",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.d3a542b62931",
+      "sourceSha256": "d3a542b629314141734b5aae82eda50f74801221ff21b75ddaf9e445f997ff1b",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.77faa72cc409",
+      "sourceSha256": "77faa72cc40957f5ce9f696fb0ce910329ae56158d5b265613831a761edbe66b",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    },
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.d024fd4be4f8",
+      "sourceSha256": "d024fd4be4f81912bba73effac5f113a0232282fc703e53f4d78f23b00cbdf41",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.56f254eb3218",
+      "sourceSha256": "56f254eb3218bab8b7bd7b84abeb0e1a5b2e4c72731d8dcf62ef1b8624ee1405",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.e755523a8a7a",
+      "sourceSha256": "e755523a8a7af9fba5cc9a012c7cf8472d296034195f57699c227d960bc5b199",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.90b427ac8377dbb7ed93",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 31,
+            "end": 96,
+            "exact": "원래 감쇠가 높은 물질과 석회, 조영된 정상 혈관 및 조영제 누출은 위치·형태와 조영 전후 및 시간 변화로 구별한다.",
+            "prefix": "견과 활동성 출혈을 동일시해서는 안 된다. ",
+            "suffix": " 한 시기의 고감쇠점만으로 모든 기전을 확정"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.cab29cb8e0b4",
+      "sourceSha256": "cab29cb8e0b4abcebe96e9e581c574cc2a3658654abea965f999e22488e56843",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.9808a084b054",
+      "sourceSha256": "9808a084b0542eb8aecbcac9ea6c62a9a87771edc4718ebff9c6a2f251f11692",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.3a879c080400",
+      "sourceSha256": "3a879c0804009ea37399598549e905689538777bbe2922f404c71617624294e4",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "radiology.ct.attenuation-contrast.b.1abb2f95a5cd",
+      "sourceSha256": "1abb2f95a5cdbbc6089dc09ce800c51227ad466b0a1106aa5f76d233cff31744",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.44936da3d9eee6ba42e8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 28,
+            "exact": "CT의 구조 정보와 진단의 확실성도 구별해야 한다.",
+            "prefix": "",
+            "suffix": " 정상으로 보인다는 결과는 그 촬영 범위와 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

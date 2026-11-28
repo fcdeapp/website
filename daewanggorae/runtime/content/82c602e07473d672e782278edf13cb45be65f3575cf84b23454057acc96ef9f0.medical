@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.respiratory.postoperative-hypoxemia",
+  "subjectId": "general-surgery",
+  "chapterId": "respiratory",
+  "title": {
+    "ko": "수술 후 저산소의 기전별 접근",
+    "en": "Mechanism Based Assessment of Postoperative Hypoxemia"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.lo.01",
+      "text": "산소화와 환기를 구별한다"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.lo.02",
+      "text": "기도·폐실질·흉막·혈관의 원인을 연결한다"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.lo.03",
+      "text": "호흡 지원의 반응과 실패를 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.347b5d07aad4",
+      "type": "heading",
+      "level": 2,
+      "text": "먼저 현재의 호흡을 확인한다"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.021bf1e0ffdc",
+      "type": "paragraph",
+      "markdown": "수술 뒤 산소포화도가 낮아지면 측정 신호와 실제 환자의 상태를 동시에 확인한다. 말초 관류 저하·움직임과 센서 문제가 오차를 만들 수 있지만 장비 탓으로 돌리며 실제 악화를 늦게 인지해서는 안 된다. 의식·기도 개통과 호흡수·깊이, 보조근과 말하기·흉곽 움직임 및 순환을 함께 본다. 이전 산소 공급과 현재 장치·연결이 실제로 작동하는지도 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+      ]
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.02e7200db4ec",
+      "type": "paragraph",
+      "markdown": "호흡수가 유지되어도 호흡이 얕으면 폐포환기가 부족할 수 있다. 진정·오피오이드·신경근 차단 잔여 효과, 통증과 신경근 약화는 다른 경로로 환기와 기도 보호를 제한한다. 산소를 공급하면 포화도가 좋아져도 이산화탄소 배출과 각성·보호 기능이 충분해졌다는 뜻은 아니다. 산소화·환기·호흡 작업·기도 보호의 네 요소를 나누어 관찰한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.17d026d69117",
+      "type": "heading",
+      "level": 2,
+      "text": "폐 안과 밖의 원인을 구별한다"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.b55d331736d5",
+      "type": "paragraph",
+      "markdown": "폐포 저환기, 낮은 환기·관류비와 단락, 확산 문제 및 낮은 혼합정맥 산소는 저산소에 기여할 수 있다. 수술 후에는 무기폐·분비물과 흡인·폐렴, 폐부종·급성 폐손상·폐색전·기흉 등이 감별에 포함된다. 일부는 동시에 존재한다. 산소 반응 하나로 원인 전체를 확정하지 않고 시간·수술 위치·약물·체액과 진찰을 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.8df7a81f111e",
+      "type": "paragraph",
+      "markdown": "한쪽 호흡음 변화와 흉통·순환 악화는 흉막과 기도·혈관 문제를 평가하게 한다. 흉부사진·초음파·혈액가스와 필요한 영상은 각각 다른 질문에 답한다. 모든 검사를 같은 순서로 기다리기보다 현재 위협과 가장 빨리 바꿀 수 있는 원인을 중심으로 선택한다. 수술 직후의 위험한 기계적 문제와 며칠 뒤 진행하는 감염을 같은 설명에 묶지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.66ffe50105d9",
+      "type": "heading",
+      "level": 2,
+      "text": "지원 방식과 적용 조건"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.19ff0c2bd81d",
+      "type": "paragraph",
+      "markdown": "일반 산소·고유량 비강산소·지속 양압과 비침습 환기는 제공하는 산소와 압력·환기 보조가 다르다. 장치를 바꾸었다는 사실만으로 필요한 생리 지원이 확보된 것은 아니다. 의식·기도 보호·분비물·구토, 혈역학과 수술 부위 및 관찰 가능성을 함께 평가한다. 특정 환자에서 유용한 비침습 지원이 모든 수술 뒤 모든 저산소에 같은 이득을 갖지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.5ac4a45cf5c3",
+      "type": "paragraph",
+      "markdown": "지원 중 호흡 작업과 의식·가스교환·순환이 악화하거나 필요한 수준이 계속 증가하면 실패를 조기에 인식해야 한다. 포화도 숫자만 유지된다고 더 높은 지원의 필요가 사라지지 않는다. 장치의 누출·착용과 실제 호흡, 원인 치료를 함께 확인하고 필요한 기도 확보·집중치료를 지연하지 않는다. 평가 간격과 실패 조건을 미리 정하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.fae2d758935a",
+      "type": "heading",
+      "level": 2,
+      "text": "생리의 회복을 본다"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.ddc4e6a60712",
+      "type": "paragraph",
+      "markdown": "통증 조절과 체위·깊은 호흡·분비물 처리·가능한 움직임은 회복을 돕지만 원인에 따라 추가 중재가 필요하다. 과부하가 원인인데 산소만 늘리거나, 약물성 저환기인데 폐렴 치료만 하면 병목을 해결하지 못한다. 현재의 위험을 안정화하는 일과 원인을 제거하는 일을 병행한다. 흡인·감염과 혈전은 예방 과정이 있어도 생길 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.9265ada62986",
+      "type": "paragraph",
+      "markdown": "호전 평가는 산소 요구와 호흡 작업·환기·각성·활동이 함께 좋아지는지로 한다. 퇴원 전에는 안정 시뿐 아니라 실제 이동과 수면·기존 장치의 조건도 고려한다. 원래의 호흡 기능과 새 저하, 필요한 지원·추적을 인계해야 회복 장소가 달라져도 안전을 유지할 수 있다. 정상 정적 폐 모형은 위치를 돕지만 환기 분포·단락과 환자별 합병증을 직접 재현하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.f6a2ae14db69",
+      "type": "heading",
+      "level": 2,
+      "text": "얕고 빠른 호흡의 수지"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.e18d0611c084",
+      "type": "paragraph",
+      "markdown": "분당환기량은 일회호흡량과 호흡수의 곱이지만 폐포환기량은 사강을 뺀 일회호흡량에 호흡수를 곱한 값이다. 일회호흡량0.5L와 호흡수12회/min,사강0.15L라면 폐포환기는4.2L/min이다.0.3L와20회/min에서는 같은 분당환기6L/min이어도 폐포환기가3L/min으로 줄어든다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.b.dbd43a6ad50d",
+      "type": "paragraph",
+      "markdown": "실제 사강은 고정되지 않으며 수술·폐혈관과 환기 분포,기구와 질환에 따라 달라진다. 이 계산은 빠른 호흡이 언제나 충분한 환기를 보장하지 않는 이유를 보여준다. 혈액가스와 각성·호흡 작업을 함께 보아야 하며,그래프의 일정 사강 가정을 환자의 실제 값으로 사용하지 않는다. 호흡수가 줄었다는 결과도 피로와 억제인지 회복인지 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.table0848",
+      "type": "table",
+      "data": {
+        "title": "기전·근거·목표의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "산소화",
+            "함량과 분포"
+          ],
+          [
+            "환기",
+            "폐포환기·CO₂"
+          ],
+          [
+            "작업",
+            "통증·근력·기계적 부담"
+          ],
+          [
+            "보호",
+            "각성·기침·연하·구토"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.diagram.minute-alveolar-ventilation-0848",
+      "type": "diagram",
+      "diagramRef": "diagram.minute-alveolar-ventilation-0848",
+      "path": "diagrams/diagram.minute-alveolar-ventilation-0848.svg",
+      "alt": "같은 분당환기와 다른 폐포환기의 독립 계산 곡선"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.3d0848",
+      "type": "anatomy3d",
+      "sceneRef": "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+    },
+    {
+      "id": "general-surgery.respiratory.postoperative-hypoxemia.limits0848",
+      "type": "clinicalPearl",
+      "markdown": "정상 거시 위치의 학습 문맥이다. 환자의 저산소·환기·혈류·열공탈장·식도 운동·누출·종양·수술 후 변형과 안전한 시술 경로를 이 정적 모형이 재현하거나 결정하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/respiratory/sections/general-surgery.respiratory.postoperative-hypoxemia.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.respiratory.postoperative-hypoxemia.001",
+    "question.general-surgery.respiratory.postoperative-hypoxemia.002"
+  ],
+  "relatedLessons": [
+    "trauma-surgery.transfusion.massive-monitoring",
+    "general-surgery.respiratory.atelectasis-secretion"
+  ]
+}

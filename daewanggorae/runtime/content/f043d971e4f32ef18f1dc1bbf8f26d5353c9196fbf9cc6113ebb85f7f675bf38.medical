@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.neuro.autonomic-control",
+  "subjectId": "physiology",
+  "chapterId": "neuro",
+  "title": {
+    "ko": "자율신경의 회로·수용체·반사 조절",
+    "en": "Autonomic Circuits, Receptors and Reflex Control"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.neuro.autonomic-control.lo.01",
+      "text": "절전·절후 연결과 예외를 구별한다"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.lo.02",
+      "text": "장기 반응을 수용체와 세포 신호에 연결한다"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.lo.03",
+      "text": "구심 정보와 반사성 원심 출력을 함께 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.neuro.autonomic-control.b.bee17ab359b4",
+      "type": "heading",
+      "level": 2,
+      "text": "불수의 기능을 통합하는 회로"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.f363f7b1323b",
+      "type": "paragraph",
+      "markdown": "자율신경계(autonomic nervous system, ANS)는 심장·평활근·샘 등의 기능을 조절하며 내부 환경의 감각 정보와 중추의 상태를 통합한다. 교감신경(sympathetic)과 부교감신경(parasympathetic)은 중요한 원심 조절 계통이지만,실제 반사를 이해하려면 구심 감각과 중추 회로도 포함해야 한다. 자율이라는 이름이 의식·행동·수면·정서·호르몬과 분리된 자동 장치라는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.c8ef18430a96",
+      "type": "paragraph",
+      "markdown": "시상하부와 뇌줄기(brainstem),척수의 여러 회로는 체온·순환·소화·방광 등의 조절을 연결한다. 뇌줄기의 외형은 이러한 조절이 놓인 큰 위치를 이해하는 데 도움이 되지만,그 정상 외형 모델에 개별 자율신경핵과 미세 연결이 모두 들어 있는 것은 아니다. 회로의 기능적 화살표와 거시 해부학의 위치를 구별하여 읽어야 한다. 하나의 조절 중추가 모든 장기 출력을 단독으로 결정한다고 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.neuro.autonomic-control.brainstem-context"
+      ]
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.e27e3750d21e",
+      "type": "heading",
+      "level": 2,
+      "text": "절전·절후의 연결과 해부학적 배치"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.29cf0e319a22",
+      "type": "paragraph",
+      "markdown": "많은 자율 원심 경로는 중추의 절전뉴런(preganglionic neuron)과 말초 신경절의 절후뉴런(postganglionic neuron)을 거친다. 교감 절전뉴런은 주로 가슴허리 척수의 분절에서 나오고,부교감 경로는 뇌신경 관련 중추와 엉치 척수의 경로를 포함한다. 대표적으로 교감신경절은 척주 가까이에,부교감신경절은 표적 장기 가까이에 놓여 절전·절후 축삭 길이에 차이가 난다. 그러나 모든 경로의 길이와 분포가 같은 도식에 정확히 들어맞는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.d1b77994d3db",
+      "type": "paragraph",
+      "markdown": "교감 경로는 교감줄기에서 높이를 바꾸거나 척추앞신경절을 거치는 등 여러 연결을 가진다. 부신속질(adrenal medulla)의 크롬친화세포는 교감 절전 입력을 받아 카테콜아민을 혈액으로 분비하는 특수한 연결이다. 이를 일반적인 긴 절후 축삭이 장기에 도달하는 과정과 같다고 보지 않는다. 직접 신경말단 분비와 혈중 호르몬 전달은 공간·시간 범위가 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.059d0b734944",
+      "type": "heading",
+      "level": 2,
+      "text": "전달물질 이름보다 연결 단계를 먼저 보기"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.fe3de5136552",
+      "type": "paragraph",
+      "markdown": "교감·부교감 절전뉴런의 대표 전달물질은 아세틸콜린(acetylcholine, ACh)이며 신경절의 빠른 전달에는 신경성 니코틴수용체가 중요하다. 부교감 절후뉴런도 대표적으로 ACh를 사용하지만 표적에서는 무스카린수용체가 중요하다. 같은 ACh라도 수용체 종류와 장소가 다르므로 신경절과 표적 장기의 반응을 같은 통로 작용으로 외우지 않는다. 신경절의 느린 조절 반응도 있어 빠른 전달 하나만이 전부는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.1857464fc9c0",
+      "type": "paragraph",
+      "markdown": "많은 교감 절후뉴런은 노르에피네프린(norepinephrine, NE)을 사용하지만 에크린 땀샘의 콜린성 교감 지배는 중요한 예외다. 땀샘에서 ACh가 작용한다고 그 신경이 부교감으로 바뀌는 것은 아니다. 계통은 전달물질 하나가 아니라 중추 기원과 연결·분포로 구별한다. 장신경계에서는 여러 펩타이드와 비아드레날린·비콜린성 신호가 관여하므로 두 전달물질만으로 모든 내장 반응을 설명할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.312df23996c0",
+      "type": "heading",
+      "level": 2,
+      "text": "수용체 아형이 같은 신호의 다른 결과를 만든다"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.91be01059d91",
+      "type": "paragraph",
+      "markdown": "대표적으로 α1은 Gq 관련 신호,α2는 Gi 관련 신호,β수용체는 Gs 관련 신호와 연결한다. 무스카린수용체에서도 M2와 M3 등의 연결이 다르다. 이 분자 수준의 분류는 유용하지만 Gs이면 모든 장기가 수축한다는 규칙은 아니다. 심장과 여러 평활근에서 같은 cAMP 증가가 서로 다른 조절 단백질과 효과에 연결될 수 있다. 수용체·세포·기질의 순서를 따라가야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.c9b7425a554b",
+      "type": "paragraph",
+      "markdown": "심장에서는 교감 신호가 박동수·전도·수축 기능의 조절에,부교감 신호는 특히 동방결절·방실결절 등의 조절에 중요하다. 혈관은 장기별 수용체와 국소 대사·내피 신호의 영향을 받으며 모든 혈관이 강한 이중 지배를 받는 것은 아니다. 교감 활성 증가와 부교감 감소가 항상 같은 양으로 교환되는 하나의 저울이라고 생각하지 않는다. 각 계통의 기저 긴장과 장기별 분포를 함께 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.1a9021169788",
+      "type": "heading",
+      "level": 2,
+      "text": "반사는 감지·통합·출력의 고리다"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.834e0c23d466",
+      "type": "paragraph",
+      "markdown": "혈압 변화에 대한 동맥압수용기반사(baroreflex)는 늘어남의 감지,구심 발화,뇌줄기 통합,심장·혈관 원심 출력의 조절로 이어진다. 혈압이 상승하면 일반적으로 반사성 교감 출력 감소와 심장 부교감 영향 증가가 일어날 수 있다. 그러나 혈압 그 자체를 측정하는 화학 수용체나 심장만의 단일 반응으로 설명하지 않는다. 수용기의 기계적 자극과 발화,결과적인 심박수·혈관저항을 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.d867384294f3",
+      "type": "paragraph",
+      "markdown": "심박수 변화는 직접 약물 효과와 반사 반응이 합쳐진 결과일 수 있다. 어떤 물질이 혈관저항을 높여 혈압을 올리면 직접 심장 자극과 별개로 반사성 서맥이 나타날 수 있다. 반대로 수용체 차단이나 자율 기능 이상에서는 반응이 달라진다. 최종 심박수 한 값만으로 물질이 작용한 수용체를 확정하지 않고 혈압·시간 경과·차단 조건을 함께 읽는다. 압수용기반사는 장기 혈압의 모든 조절을 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.52130b80cd82",
+      "type": "heading",
+      "level": 2,
+      "text": "동적 조절과 검사 자료의 범위"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.18bc42df70dd",
+      "type": "paragraph",
+      "markdown": "기립은 중력에 따른 혈액 분포와 정맥환류 변화를 만들어 반사적 심장·혈관 조절을 요구한다. 반응에는 혈액량·심장 기능·약물·정맥과 근육펌프도 관여한다. 기립 뒤 빈맥이나 혈압 감소 하나만으로 특정 신경 병변이 확정되는 것은 아니다. 검사 자세·측정 시간·반복 조건과 동반 증상을 함께 고려해야 한다. 정상 자율 반사 모형을 임상 절단값으로 대체하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.b.6775b0b9418b",
+      "type": "paragraph",
+      "markdown": "반사 출력을 가상적으로 ΔH=−kΔP라고 단순화하면 혈압 변화와 심박수 변화의 부호 관계를 연습할 수 있다. k는 지정한 교육 모형의 이득이며 실제 개인의 반사 민감도나 선형 반응 범위를 보증하지 않는다. 큰 변화·시간 지연·수용기 적응·포화·다른 반사는 생략되어 있다. 표와 곡선에서는 입력 자극,구심 신호,중추 처리,직접 효과와 반사 효과를 따로 표시하는 것이 혼동을 줄인다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.diagram.baroreflex-sign-example",
+      "type": "diagram",
+      "diagramRef": "diagram.baroreflex-sign-example",
+      "path": "diagrams/diagram.baroreflex-sign-example.svg",
+      "alt": "가상 반사 이득의 부호의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.diagram.autonomic-transmitter-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.autonomic-transmitter-pairs",
+      "path": "diagrams/diagram.autonomic-transmitter-pairs.svg",
+      "alt": "연결 단계와 대표 전달의 단계별 비교"
+    },
+    {
+      "id": "physiology.neuro.autonomic-control.table.compare",
+      "type": "table",
+      "data": {
+        "title": "자율신경의 연결별 비교",
+        "columns": [
+          "단계",
+          "대표 전달/수용체",
+          "구별"
+        ],
+        "rows": [
+          [
+            "절전",
+            "ACh·신경성니코틴",
+            "교감·부교감공통"
+          ],
+          [
+            "많은교감절후",
+            "NE·α/β",
+            "표적세포의존"
+          ],
+          [
+            "부교감표적",
+            "ACh·무스카린",
+            "신경절과수용체구별"
+          ],
+          [
+            "에크린땀샘",
+            "교감ACh·무스카린",
+            "전달물질만으로계통판정불가"
+          ],
+          [
+            "부신속질",
+            "절전입력·혈중분비",
+            "일반절후축삭과구별"
+          ]
+        ],
+        "notes": "직접효과와반사효과,장기별기저긴장·분포를함께본다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/neuro/sections/physiology.neuro.autonomic-control.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "교감·부교감 절전의 대표 ACh와 콜린성 교감 땀샘을 함께 구별한다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.neuro.autonomic-control.001",
+    "question.physiology.neuro.autonomic-control.002"
+  ],
+  "relatedLessons": [
+    "physiology.cell.action-potential-conduction",
+    "physiology.neuro.motor-units-reflexes",
+    "physiology.neuro.pain-modulation"
+  ]
+}

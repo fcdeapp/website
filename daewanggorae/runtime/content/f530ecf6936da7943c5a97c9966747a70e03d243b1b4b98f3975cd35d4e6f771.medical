@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pediatrics.growth.velocity-measurement",
+  "subjectId": "pediatrics",
+  "chapterId": "growth",
+  "title": {
+    "ko": "성장속도와 계측 오차·표준의 선택",
+    "en": "Growth Velocity Measurement Error and Reference Selection"
+  },
+  "learningObjectives": [
+    {
+      "id": "pediatrics.growth.velocity-measurement.lo.01",
+      "text": "성장속도와 크기의 차이를 계산한다"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.lo.02",
+      "text": "계측 방법·기준집단과 백분위를 연결한다"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.lo.03",
+      "text": "성장 궤적에서 영양·내분비·전신 원인을 감별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.deea9fdba627",
+      "type": "heading",
+      "level": 2,
+      "text": "측정부터 정확해야 한다"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.774eeae5239d",
+      "type": "paragraph",
+      "markdown": "체중·누운키 또는 선키·머리둘레는 연령과 목적에 맞는 장비와 방법으로 측정한다. 신발·옷과 장비 영점, 머리·몸의 자세 및 판독의 차이가 결과를 바꿀 수 있다. 누운키와 선키는 같은 방법의 측정이 아니므로 전환 시점을 기록한다. 잘못된 한 점은 성장 곡선에서 갑작스러운 가속이나 둔화처럼 보일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.0b98ff0244ea",
+      "type": "paragraph",
+      "markdown": "반복 측정은 가능하면 비교 가능한 방법으로 하고 의심되는 결과는 실제 값을 확인한다. 체중은 수분·배변과 식사, 키는 자세·측정 조건의 영향을 받을 수 있다. 전자 기록에 입력된 단위·날짜와 생년월일 오류도 확인한다. 수치를 정교한 백분위수로 바꾸기 전에 원자료의 신뢰성을 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.6a5115e7524b",
+      "type": "heading",
+      "level": 2,
+      "text": "성장속도의 분자와 시간"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.adce98c8ece6",
+      "type": "paragraph",
+      "markdown": "성장속도(growth velocity)는 일정 기간의 키 또는 체중 변화량을 시간으로 나눈 값이다. 가상 사례에서 12개월 동안 100에서 104cm로 자랐다면 연간 평균은 4cm/년이다. 그러나 첫 3개월에 2cm, 다음에 1cm, 이후 각 0.5cm가 늘었다면 구간별 속도는 다르다. 전체 평균이 최근 둔화를 가릴 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.feac85bc3dc6",
+      "type": "paragraph",
+      "markdown": "짧은 간격에서는 작은 계측 오차가 연간 환산 속도를 크게 흔들 수 있다. 예를 들어 1개월의 작은 오차를 열두 배 하면 실제 변화보다 큰 가속이나 둔화로 읽힐 수 있다. 연간 환산은 실제로 그 속도가 1년간 유지되었다는 관찰이 아니다. 연령·사춘기 단계와 적절한 추적 간격, 반복 측정의 질을 함께 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.b73db668520e",
+      "type": "heading",
+      "level": 2,
+      "text": "표준과 백분위수"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.a37da52dffe2",
+      "type": "paragraph",
+      "markdown": "성장도표의 백분위수는 같은 기준의 연령·성별 집단에서 상대적인 위치를 나타낸다. 10백분위수는 체중의 10%만 정상이라는 뜻이 아니다. 도표의 기준집단과 개발 방법·적용 연령이 다르면 같은 계측의 상대 위치도 달라질 수 있다. 국내 도표와 WHO·CDC 자료의 목적을 확인하고 임의로 서로 바꾸어 추적하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.8f4b52a884c7",
+      "type": "paragraph",
+      "markdown": "국내에서는 현재 사용하는 도표의 판과 적용 범위를 기록해야 한다. 2026년에 공지된 2027년 도표의 개정 계획은 이미 모든 새 기준값이 확정·적용되었다는 뜻이 아니다. 향후 개정 시에는 과거 곡선과의 차이가 아이의 실제 성장 변화인지 기준 변경 때문인지 구별한다. 공식 자료를 확인하지 않은 새 백분위값을 생성하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.43a550ef9d3d",
+      "type": "heading",
+      "level": 2,
+      "text": "궤적과 원인을 연결한다"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.6115486f4215",
+      "type": "paragraph",
+      "markdown": "체중과 키·머리둘레는 서로 다른 조직과 기간의 정보를 주며 함께 평가해야 한다. 섭취·흡수의 문제와 만성 염증·장기 질환, 내분비·유전 및 심리사회적 요인이 다양한 궤적을 만들 수 있다. 한 지표의 감소만으로 원인 질환을 확정하지 않는다. 부모의 키와 사춘기 시기·출생력·약물과 증상도 해석에 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.b.8b411e5a1a2c",
+      "type": "paragraph",
+      "markdown": "사춘기에는 성장 가속의 시점 차이 때문에 또래 대비 위치가 달라질 수 있다. 체질적 시기 차이와 병적 성장 저하를 구별하려면 성장속도·성 성숙과 골연령 등 질문에 맞는 평가가 필요하다. 모든 작은 키에 같은 검사 목록을 일괄 적용하지 않는다. 정상 변이로 보더라도 계획된 추적과 새로운 위험 신호의 평가를 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.suppheading0851",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 판단의 연결"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.supp.f88fb6c03f73",
+      "type": "paragraph",
+      "markdown": "LMS방법은 분포의 비대칭을 보정하여 측정값을 표준화하는 접근이다. L이0이 아니면 z=((X/M)^L−1)/(L×S),L이0이면 z=ln(X/M)/S로 나타낼 수 있다. X는 측정값,M은 중앙값,S는 변동의 척도,L은 변환의 모수다. 실제 연령·성별별 계수는 검증된 공식 자료에서 사용해야 하며 임의 계수를 실제 도표의 기준값으로 표시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.supp.9fd95086978e",
+      "type": "paragraph",
+      "markdown": "가상 계수L1·M100·S0.1에서 X90이면 z는−1이다. 이는 수식을 익히기 위한 단순 예이며 실제 특정 연령의 키 백분위를 뜻하지 않는다. 성장도표의 z점수는 적용 집단과 지표의 분포에 연결된다. 높은 BMI나 분포의 극단에서 기존 방식의 한계가 있을 수 있으므로 공식 도구의 적용 범위와 갱신을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.table0851",
+      "type": "table",
+      "data": {
+        "title": "조건·측정·기전과 해석",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "계측",
+            "자세·장비·단위·날짜"
+          ],
+          [
+            "속도",
+            "변화량/실제 시간"
+          ],
+          [
+            "표준",
+            "연령·성별·판본·목적"
+          ],
+          [
+            "원인",
+            "영양·전신·내분비·유전과 사춘기"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pediatrics.growth.velocity-measurement.diagram.synthetic-height-followup-0851",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-height-followup-0851",
+      "path": "diagrams/diagram.synthetic-height-followup-0851.svg",
+      "alt": "가상 반복 신장 계측의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/growth/sections/pediatrics.growth.velocity-measurement.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pediatrics.growth.velocity-measurement.001",
+    "question.pediatrics.growth.velocity-measurement.002"
+  ],
+  "relatedLessons": [
+    "pediatrics.growth.assessment",
+    "pediatrics.development.surveillance-screening"
+  ]
+}

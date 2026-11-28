@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "hematology.hemostasis.platelet-coagulation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.4b17043e98b2",
+      "sourceSha256": "4b17043e98b2ce0026d82203faf519bf29f2bc91c6d231b48c21dd9bcedf2c2d",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.be9261752fdd",
+      "sourceSha256": "be9261752fdde8c13fd3ebb39ebb70403c00cc640b7e2782a2d776e10ed44c38",
+      "sourceLengthUtf16": 235,
+      "annotations": []
+    },
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.6224c53cc4f0",
+      "sourceSha256": "6224c53cc4f0db72c1f78e1f78c660c21e2b74003a61fdf84ea57eb83ea4d84f",
+      "sourceLengthUtf16": 289,
+      "annotations": [
+        {
+          "id": "ann.64db3238feb297a2a8b3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 257,
+            "end": 289,
+            "exact": "따라서 부착 수용체와 응집 수용체의 장애는 구분해야 한다.",
+            "prefix": "간드를 통해 혈소판 사이의 연결을 돕는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.254ca403e587",
+      "sourceSha256": "254ca403e5876015cf8daba35df7aee292b97e0c5eb2ac739a72d42188bf4cbf",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    },
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.faf154022716",
+      "sourceSha256": "faf1540227163d34422289fdb1f0d6e169babe19c8f827ad977ccad07f8cd48c",
+      "sourceLengthUtf16": 281,
+      "annotations": []
+    },
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.df0870778d61",
+      "sourceSha256": "df0870778d61b82f909aca71fda97d41018cbbd9e2bd8f69007d173f738341e8",
+      "sourceLengthUtf16": 241,
+      "annotations": [
+        {
+          "id": "ann.2aabdbedc58253312fd6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 29,
+            "end": 33,
+            "exact": "aPTT",
+            "prefix": "내인성·외인성 경로 그림은 검사실의 PT와 ",
+            "suffix": "를 해석하는 데 유용하지만 생체 지혈을 두 "
+          },
+          "conceptId": "reader.term.2c463235cb32480d",
+          "targetDocumentId": "laboratory-medicine.coagulation.pt-aptt-patterns"
+        }
+      ]
+    },
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.6ef18bab594a",
+      "sourceSha256": "6ef18bab594a15f201f727abe579171f8cd39aa718efac6cfa7973885168ae70",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.33bae3bbc3ad",
+      "sourceSha256": "33bae3bbc3ada0bedd4d2a40c7b2c5fa4b64e5a3fbe099a1ccca0e7af03f6ec7",
+      "sourceLengthUtf16": 239,
+      "annotations": [
+        {
+          "id": "ann.8126d6c7c960f529a1ab",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 157,
+            "end": 216,
+            "exact": "그러나 감염, 수술, 임신과 여러 염증 상태에서도 상승할 수 있어 양성만으로 특정 혈전을 확정하지 않는다.",
+            "prefix": "이 만들어지고 처리된다는 단서를 제공한다. ",
+            "suffix": " 임상확률과 검사의 적용 조건이 필요하다."
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.790a6addfdce",
+      "sourceSha256": "790a6addfdce2d09439889f9c772cfda1d334cad2bfd56fadc3f435edca51cfb",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "hematology.hemostasis.platelet-coagulation.b.d38de583d66e",
+      "sourceSha256": "d38de583d66ec1140ae57bf4704aac362c304c676cbd3411859e0cded66d3cce",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    }
+  ]
+}

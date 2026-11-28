@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pediatrics.respiratory.bronchiolitis-work-breathing",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.6ca08b34a036",
+      "sourceSha256": "6ca08b34a03642df48f5528cb228253425e710a1c9024b9e04646489b328f5e8",
+      "sourceLengthUtf16": 241,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.431dcd7f4c18",
+      "sourceSha256": "431dcd7f4c18aebd01b1eb2b066650de69d09a230a15cf4aa7f00202174ba421",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.5c0cbfd9fdee",
+      "sourceSha256": "5c0cbfd9fdeed4fbd0e552d7cefe9ba878a1600a3bb1a86f76eec6b5d1891372",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.48670282cc3c",
+      "sourceSha256": "48670282cc3c9de5afdf5789ea90158dbe1a95fc88fdeb9f03993a6978f2d95c",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.ce5aae6c6d17",
+      "sourceSha256": "ce5aae6c6d174a1024cded89a2fdd0da15d315f9f57ea2dfb3205ddf46c808eb",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.e15d40027656",
+      "sourceSha256": "e15d40027656c14807a250100d567a0aadb5a0a5670abcad228fca713a7293bc",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.87869782fc34",
+      "sourceSha256": "87869782fc34f74ee25fea4c656d05fe4910363c31dc4eaac2dcb706e21d3ba4",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.2a5ba79e895825b70740",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 114,
+            "end": 116,
+            "exact": "천식",
+            "prefix": "능성은 다른 감별의 질문을 만든다. 폐렴과 ",
+            "suffix": "·바이러스 유발 천명, 기도 이물과 심장·기"
+          },
+          "conceptId": "reader.term.0724de0dbf1ee4f5",
+          "targetDocumentId": "pulmonology.airways.asthma-mechanisms"
+        },
+        {
+          "id": "ann.02dca726e3a7f5de63d5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 110,
+            "end": 153,
+            "exact": "폐렴과 천식·바이러스 유발 천명, 기도 이물과 심장·기저 기도질환을 구별한다.",
+            "prefix": "흡인 가능성은 다른 감별의 질문을 만든다. ",
+            "suffix": " 이전에 세기관지염이 있었다고 새 호흡곤란을"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.8717db06fe47",
+      "sourceSha256": "8717db06fe47be5c8f67a04e09ad588984325ef5d554e274653dcd72a57429fe",
+      "sourceLengthUtf16": 215,
+      "annotations": [
+        {
+          "id": "ann.cae7208d790d8ceae581",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 192,
+            "end": 215,
+            "exact": "검사의 필요와 감염 관리 목적도 구별한다.",
+            "prefix": " 감염과 원인을 완전히 배제하지는 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.d8ab782cf7d9",
+      "sourceSha256": "d8ab782cf7d9ebe6f64140c711d106c2f1787116365b36eed5a7cc88295c85f0",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.91e37be582be2331b1a2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 85,
+            "end": 156,
+            "exact": "기관지확장제와 스테로이드·항생제 등의 역할은 진단과 적용 근거에 따라 달라지며 모든 환자에게 관행적으로 투여하는 것과 구별한다.",
+            "prefix": "식의 약물 체계를 그대로 적용하지 않는다. ",
+            "suffix": " 실제 산소 지원의 기준과 기기·유량은 연령"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.respiratory.bronchiolitis-work-breathing.b.3abd08b29ee9",
+      "sourceSha256": "3abd08b29ee9afcd8b79a58abbabaa1f8fffbdf79298382fc4a7c5e5e3b82dab",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    }
+  ]
+}

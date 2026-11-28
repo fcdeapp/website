@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.infection.meningitis-encephalitis",
+  "subjectId": "neurology",
+  "chapterId": "infection",
+  "title": {
+    "ko": "수막염·뇌염의 증후군과 검사 해석",
+    "en": "Meningitis and Encephalitis"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.infection.meningitis-encephalitis.lo.01",
+      "text": "수막 자극과 뇌실질 기능 장애를 구별한다"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.lo.02",
+      "text": "뇌척수액과 영상의 역할을 설명한다"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.lo.03",
+      "text": "검사와 긴급 치료의 시간 관계를 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.d62991b3ca3c",
+      "type": "heading",
+      "level": 2,
+      "text": "감염의 위치와 기능 장애"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.71af89a3d12c",
+      "type": "paragraph",
+      "markdown": "수막염(meningitis)은 뇌와 척수를 둘러싼 막과 뇌척수액 공간의 염증을, 뇌염(encephalitis)은 뇌실질의 염증과 기능 장애를 중심으로 이해한다. 실제 환자에서는 두 양상이 겹칠 수 있다. 발열과 두통·목 경직은 수막 자극의 단서이고, 의식과 행동·기억의 변화, 발작과 국소 신경 소견은 실질 침범을 생각하게 한다. 고전적인 증상 조합이 모두 나타나야만 평가를 시작하는 것은 아니다. 고령과 면역 저하, 선행 치료에 따라 표현이 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.af8754a3328d",
+      "type": "paragraph",
+      "markdown": "급성 두통과 의식 변화에서는 감염 외에도 출혈·혈관·대사·독성 원인을 동시에 검토한다. 발열이 있다고 모든 원인이 감염으로 확정되는 것도 아니고, 발열이 없다고 감염을 배제할 수도 없다. 병력의 시작 시각과 진행 속도, 여행과 동물·곤충 노출, 면역 상태와 약물, 주변의 유사 증상을 확인한다. 환자가 설명하기 어려우면 주변의 목격과 이전 기능을 활용하되, 현재의 기도·호흡·순환과 혈당·발작 위험은 별도로 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.718705f6dc6e",
+      "type": "heading",
+      "level": 2,
+      "text": "뇌척수액 검사가 답하는 질문"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.32f87ef942f6",
+      "type": "paragraph",
+      "markdown": "요추천자(lumbar puncture)는 뇌척수액의 세포와 단백·포도당, 배양과 분자검사를 통해 원인 가설을 좁히는 데 중요하다. 그러나 검사 전에는 천자와 관련된 위험과 미룰 이유를 평가해야 한다. 영상이 필요한 조건과 항응고·출혈 위험, 천자 부위의 감염과 전신 상태 등을 고려한다. 모든 환자에게 무조건 같은 순서로 영상을 시행하거나, 영상을 기다리며 필요한 긴급 치료를 지연하는 방식은 적절하지 않다. 진단 표본의 가치와 치료 지연의 위해를 함께 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.86126f323a9b",
+      "type": "paragraph",
+      "markdown": "뇌척수액 포도당은 같은 시점의 혈당과 비교하면 의미가 더 분명해진다. 가상 기록에서 뇌척수액 36mg/dL, 혈당 120mg/dL라면 비율은 0.30이다. 이것은 두 검체의 관계를 나타내며 특정 병원체를 확진하는 단일 기준이 아니다. 채취 시점과 혈당의 변화, 선행 항미생물 치료와 면역 상태를 확인한다. 단백과 세포, 개방압과 배양·분자 결과, 임상 경과가 함께 필요하다. 단위가 다른 결과를 비율로 계산할 때는 먼저 같은 단위로 맞춘다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.536101cea4de",
+      "type": "heading",
+      "level": 2,
+      "text": "전형적인 패턴과 예외"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.6f22cb713e67",
+      "type": "paragraph",
+      "markdown": "세균성 감염에서는 호중구 중심의 세포 증가와 단백 상승, 포도당 감소가 단서가 될 수 있고, 바이러스성 감염에서는 다른 조합이 흔하다. 그러나 초기 시점과 병원체, 면역 상태에 따라 겹치는 결과가 나타난다. 결핵과 진균, 악성 침범과 비감염성 염증도 감별에 포함한다. 세포 분획 하나를 보고 항미생물 치료의 필요를 모두 결정하지 않는다. 혈액 배양과 뇌척수액 배양은 원인과 감수성을 평가하는 서로 보완적인 자료다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.1aee134196be",
+      "type": "paragraph",
+      "markdown": "분자검사는 특정 표적을 빠르게 찾는 데 도움이 되지만 검사 패널에 없는 병원체와 시점·검체의 한계가 있다. 음성 결과 하나가 모든 감염을 배제하지 않으며, 양성 결과도 임상 맥락과 오염·잔여 물질 등의 가능성을 고려해야 한다. 선행 치료가 배양 수율에 영향을 줄 수 있으므로 실제 투여와 채취 시각을 기록한다. 검사를 반복할지와 추가 표적을 선택할지는 임상적 가능성과 결과가 바꿀 치료에 맞추어 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.36ebaddbd5da",
+      "type": "heading",
+      "level": 2,
+      "text": "뇌염과 행동 변화의 감별"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.bf77185dd3d2",
+      "type": "paragraph",
+      "markdown": "새로 생긴 이상행동과 정신병적 증상, 기억 장애가 발작·이상운동·자율신경 변화와 동반되면 신경계 원인을 적극 검토한다. 감염성 뇌염뿐 아니라 자가면역 뇌염, 독성·대사와 다른 질환이 가능하다. 정신과적 증상이 먼저 보였다는 이유로 신체 원인을 배제하지 않는다. 반대로 항체 검사 결과만으로 임상과 맞지 않는 자가면역 뇌염을 확정해서도 안 된다. 항체의 종류와 혈청·뇌척수액 검체, 검사법과 검사 전 가능성이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.63aae46e8f34",
+      "type": "paragraph",
+      "markdown": "뇌파는 발작과 비경련성 뇌전증지속상태의 평가에 도움을 줄 수 있고, MRI는 병변의 위치와 양상을 보여 준다. 두 검사는 원인 병원체를 직접 대신하는 검사가 아니다. 정상 짧은 뇌파가 모든 발작을 배제하지 않으며 초기 영상이 비특이적일 수도 있다. 의식의 변동과 약물의 진정 효과, 대사 이상과 수면을 함께 해석해야 한다. 검사 결과가 서로 다르면 한 자료를 무시하기보다 무엇을 언제 측정했는지 비교한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.214ae8a48cb3",
+      "type": "heading",
+      "level": 2,
+      "text": "치료·격리와 회복"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.446769454fe4",
+      "type": "paragraph",
+      "markdown": "급성 치료는 원인 가능성과 중증도, 연령·면역 상태, 지역의 내성과 약물 안전을 고려하여 선택하고 원인·감수성 자료가 확보되면 조정한다. 용량과 기간, 보조 치료와 예방 조치는 상황에 따라 달라진다. 특정 병원체가 의심되면 접촉자 관리와 감염 예방의 필요도 검토한다. 모든 중추 감염을 같은 항생제와 같은 기간으로 다루는 것은 적절하지 않다. 치료와 함께 발작·두개내압·호흡·수분과 전해질 문제를 감시한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.b.7e8205becc29",
+      "type": "paragraph",
+      "markdown": "회복 뒤에도 청각과 인지·학습, 운동과 정신건강의 변화가 남을 수 있다. 퇴원 시 열이 내렸다는 사실만으로 장기 기능 회복이 완료된 것은 아니다. 이전 기능과 비교하여 청력·일상 활동과 학업·직업 복귀를 추적하고 재활과 가족 지원을 연결한다. 정상 뇌와 수막의 모형은 해부학적 공간을 이해하는 배경일 뿐 실제 감염 병소나 두개내압을 표시하지 않는다. 임상 경과와 검사, 기능은 서로 다른 자료로 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.table0854",
+      "type": "table",
+      "data": {
+        "title": "관찰과 추가로 확인할 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "CSF 포도당",
+            "36mg/dL"
+          ],
+          [
+            "혈당",
+            "120mg/dL"
+          ],
+          [
+            "미확인",
+            "세포·배양·PCR·천자 위험·투여 시점"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neurology.infection.meningitis-encephalitis.diagram.synthetic-learning-data-0854-3",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-learning-data-0854-3",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-3.svg",
+      "alt": "독립 가상 자료: 수막염·뇌염의 증후군과 검사 해석의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/infection/sections/neurology.infection.meningitis-encephalitis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.infection.meningitis-encephalitis.001",
+    "question.neurology.infection.meningitis-encephalitis.002"
+  ],
+  "relatedLessons": [
+    "neurology.cognition.dementia-patterns",
+    "neurology.inflammation.multiple-sclerosis-assessment"
+  ]
+}

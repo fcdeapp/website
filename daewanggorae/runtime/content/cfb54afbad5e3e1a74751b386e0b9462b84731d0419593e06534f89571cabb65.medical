@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "hpb-surgery.biliary.obstructive-jaundice",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.bbf7483db1ec",
+      "sourceSha256": "bbf7483db1ec04c6db68d987b494e34a60158000056ffb0bc06f6aa0af3d6010",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.b6cd1f2c0760ea84edab",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 122,
+            "end": 155,
+            "exact": "포합 분획이 높다는 사실만으로 간외 폐쇄를 확정하지 않는다.",
+            "prefix": "에서 포합 빌리루빈 증가를 만들 수 있다. ",
+            "suffix": " 혈액검사의 양상과 병력, 영상으로 담즙 흐"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.6319f56c7b02",
+      "sourceSha256": "6319f56c7b02ed216b51e87ebfd90c474cb72444bd86ab1300ca55b80b5e618c",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.edfbc88f880a",
+      "sourceSha256": "edfbc88f880a5c87b11763814062db2609a588b99d4f7fbc3eecac23501b30a0",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.8adec6875ca0",
+      "sourceSha256": "8adec6875ca058226522292e849e95ab65d367a997051522409f90f9026d50a8",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.581dc8e51bcd",
+      "sourceSha256": "581dc8e51bcd4d4d4ef0f0891e5b4851050a57d5877e661d04dc962529f4eeed",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.61ee7dd0bc4e2c3d4aa5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 199,
+            "end": 205,
+            "exact": "감염원 조절",
+            "prefix": "한 단서이므로 원인 검사와 함께 안정화 및 ",
+            "suffix": "의 필요성을 평가한다."
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        },
+        {
+          "id": "ann.1cb65ebb6f878aa3ca73",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 217,
+            "exact": "저혈압과 의식 변화, 장기 기능 악화는 중증 상태의 중요한 단서이므로 원인 검사와 함께 안정화 및 감염원 조절의 필요성을 평가한다.",
+            "prefix": "역저하에서는 증상이 덜 전형적일 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.87c7da4e9af8",
+      "sourceSha256": "87c7da4e9af875a9dc27b134d6761edad0b4eeab3d5fdd9e57fbe23c290b6a71",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.0257b1295485",
+      "sourceSha256": "0257b1295485dbed5c4e1c86a4ad13ec50fd060a029c1111645eb90b206ee1a2",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.c8afcebde574",
+      "sourceSha256": "c8afcebde574560624c684c7908b843b30a5831044084b181f74ee4baf510847",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.a10e55f54c38",
+      "sourceSha256": "a10e55f54c38f959da3b5c8afe50d09157cee58e4cd24ac2875e1102d2dfbffb",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.ca850b58303acab1a42d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 58,
+            "end": 104,
+            "exact": "진단만 필요한 상황에서 비침습적 검사로 충분한지와 실제 배액이 필요한지를 구별한다.",
+            "prefix": "를 연결할 수 있지만 침습적 위해가 있다. ",
+            "suffix": " 경피적 또는 다른 접근도 폐쇄의 위치와 해"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.43f06ebc8e44",
+      "sourceSha256": "43f06ebc8e4472172478aae13a5d76271cf4d05d5fa26178cf1cba467fd58146",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "hpb-surgery.biliary.obstructive-jaundice.b.b1484cc20465",
+      "sourceSha256": "b1484cc20465f9dd42850785f7e0ac07bab6e4d5b1e55aab8287c6558970a9a3",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    }
+  ]
+}

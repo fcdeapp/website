@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "psychiatry.somatic.symptom-functional",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "psychiatry.somatic.symptom-functional.b.e9dc28f9688a",
+      "sourceSha256": "e9dc28f9688a925e32a68786981f93fcc0d47d961bf9345d4579a2b1fc783d76",
+      "sourceLengthUtf16": 530,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.somatic.symptom-functional.b.135c6ebd821c",
+      "sourceSha256": "135c6ebd821cbdf16f58934f563c650332d10820948e255a1923d2e98b1071c6",
+      "sourceLengthUtf16": 508,
+      "annotations": [
+        {
+          "id": "ann.a725bdd6c9ce01656166",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 189,
+            "end": 230,
+            "exact": "실제 악화를 가리키는 새로운 증상과 기존의 반복적인 확인을 구별해야 한다.",
+            "prefix": "든 환자에게 적용되는 단일 원인이 아니다. ",
+            "suffix": " 불안을 줄인다는 이유로 필요한 평가를 생략"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.somatic.symptom-functional.b.d2618a93382a",
+      "sourceSha256": "d2618a93382a17c623217110b5025a10eaebc92b2ae3eb1fe6a7da58bf9446c7",
+      "sourceLengthUtf16": 521,
+      "annotations": [
+        {
+          "id": "ann.45c7c8f8431df9ea601c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 190,
+            "end": 237,
+            "exact": "소견의 질과 재현성, 전체 임상 맥락을 확인하며 한 가지 변동만으로 확정하지 않는다.",
+            "prefix": " 없어서 남은 진단을 붙이는 것과 다르다. ",
+            "suffix": " 다른 신경질환과 FND가 공존할 수 있다는"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.somatic.symptom-functional.b.827587f33ecd",
+      "sourceSha256": "827587f33ecddb5910c45590858692276acdfdf60be7967220b3f2a1a53470f4",
+      "sourceLengthUtf16": 499,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.somatic.symptom-functional.b.a3d9273ce89d",
+      "sourceSha256": "1b87fa9f515789603edd5dc551c280e276d577c67c87487f40aca348aad167f7",
+      "sourceLengthUtf16": 533,
+      "annotations": [
+        {
+          "id": "ann.f4dbf30847c61de0a83c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 59,
+            "end": 97,
+            "exact": "300%가 되었다는 표현과 300% 증가했다는 표현을 구별해야 한다.",
+            "prefix": "작값의 세 배이며 상대 증가는 200%다. ",
+            "suffix": " 같은 기간의 통증 평정이 변하지 않아도 활"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

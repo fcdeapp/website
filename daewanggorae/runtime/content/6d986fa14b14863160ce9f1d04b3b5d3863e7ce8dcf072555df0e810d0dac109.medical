@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.pericardium.pericarditis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.pericardium.pericarditis.b.344523011b91",
+      "sourceSha256": "344523011b912103146a9b408768436c9c72e6d597f698a5f79bc612671c4228",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.pericarditis.b.5fe9b340e51e",
+      "sourceSha256": "5fe9b340e51e2b7556d8f4ca818ce85c7eb2bbce554f36fd364b8b11ea4eaf9d",
+      "sourceLengthUtf16": 209,
+      "annotations": [
+        {
+          "id": "ann.da7d27e8b6a8ff2bc3f2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 40,
+            "end": 42,
+            "exact": "흉막",
+            "prefix": "라질 수 있다. 그러나 이러한 특징은 다른 ",
+            "suffix": "·흉벽 질환과 겹칠 수 있다. 심낭마찰음은 "
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        },
+        {
+          "id": "ann.34d891e12226f3332f5f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 146,
+            "end": 209,
+            "exact": "단순히 전형적인 증상 하나를 찾는 것보다 현재 위험을 확인하고 가능한 원인과 유사 질환을 좁히는 접근이 중요하다.",
+            "prefix": " 전신 과정과 약물·시점의 영향을 받는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.pericardium.pericarditis.b.d2abc3cb800d",
+      "sourceSha256": "d2abc3cb800d8928fb833898f61ad908a11e30a79e5f25ad61554670b4b574b6",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.pericarditis.b.54d81ce3bab3",
+      "sourceSha256": "54d81ce3bab355eeb73eafe8b99b9bc288b57f2a7684b34bec46d17876dff709",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.pericarditis.b.419e29d6c21b",
+      "sourceSha256": "419e29d6c21b4976e59fea4528c44607f917c09be9834e33424f2a15d627ea65",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.6d44f19f9d626639d688",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 181,
+            "end": 204,
+            "exact": "형태·염증·혈역학의 질문을 각각 구별한다.",
+            "prefix": " 실제 수축성 생리는 같은 결과가 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.pericardium.pericarditis.b.dbefe639c0d6",
+      "sourceSha256": "1177e4b64361a7e38774cd8f0b269ca77a596a31f0fec962aab36451ee9c3fae",
+      "sourceLengthUtf16": 267,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.pericarditis.b.1de3e3d2bf14",
+      "sourceSha256": "1de3e3d2bf1465129853d72d063aa566ba88c0b3c2aa812f1ae78b350cc5b376",
+      "sourceLengthUtf16": 230,
+      "annotations": [
+        {
+          "id": "ann.20cf3f3b6c839ac1d587",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 77,
+            "end": 79,
+            "exact": "결핵",
+            "prefix": "배경을 고려한다. 지역 역학과 면역 상태, ",
+            "suffix": "의 가능성 및 최근 노출과 치료 이력이 원인"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.pericardium.pericarditis.b.bef2e028d471",
+      "sourceSha256": "bef2e028d4717a740ab274b11095d0ef04a4246146f74b93f51e1a36f428ec31",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    }
+  ]
+}

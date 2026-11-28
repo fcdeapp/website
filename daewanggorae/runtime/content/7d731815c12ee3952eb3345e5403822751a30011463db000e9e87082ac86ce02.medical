@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "anesthesiology.regional.local-anesthetic",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.fa823dc130e9",
+      "sourceSha256": "fa823dc130e98acf70e3d230c1555e1ec2400de82f9ff4eb0a47668ec76a1b0f",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.5fe4f669fe70",
+      "sourceSha256": "5fe4f669fe70a6a77c4ac4936cef9220dc2216d62de3657891b320f683d30cda",
+      "sourceLengthUtf16": 235,
+      "annotations": []
+    },
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.f7d859f453b2",
+      "sourceSha256": "f7d859f453b28ac5994274c1d09aa93cfcffd28fb3a1303b4b23c8d682bc1d66",
+      "sourceLengthUtf16": 254,
+      "annotations": []
+    },
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.8bf13dbdc010",
+      "sourceSha256": "8bf13dbdc0107f84a189810fe26578dc2534bd3d1f772ddb7119c6e49aa9ad63",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.a55f093b0ec2",
+      "sourceSha256": "a55f093b0ec26859ce9681390b1ed42c391b5f6ba07f75d3a940f300f2e2ebfa",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.b7991e1434d7",
+      "sourceSha256": "b7991e1434d7d129faaab8c072754dddf44de6d1eeb7dcbf2f34dfe7878d1816",
+      "sourceLengthUtf16": 244,
+      "annotations": []
+    },
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.40cef5288e78",
+      "sourceSha256": "40cef5288e780397a8190d38a13f466730484973eca46a4effec8e5cc9dc75d9",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.c0db163eff74",
+      "sourceSha256": "c0db163eff74c9ec3887e5af597d517cae6616918e5ef0bd2ffaaddd533bf1a9",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.1c68a3da64ca",
+      "sourceSha256": "1c68a3da64cae37062891c9280a5534cbe7cde1354ec7fd4e311fe1cf59aac26",
+      "sourceLengthUtf16": 266,
+      "annotations": []
+    },
+    {
+      "blockId": "anesthesiology.regional.local-anesthetic.b.1c6407e450ee",
+      "sourceSha256": "1c6407e450ee5f434fee179e4b93622e97cea46e3635e8e83c5661ba5ba85905",
+      "sourceLengthUtf16": 246,
+      "annotations": [
+        {
+          "id": "ann.d9606dfef1fb14ee355d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 226,
+            "end": 229,
+            "exact": "약동학",
+            "prefix": "이지만 안전한 적용은 신경해부, 전기생리, ",
+            "suffix": "과 전신 생리를 함께 요구한다."
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        },
+        {
+          "id": "ann.0a162cd4057a5856fcb4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 71,
+            "end": 132,
+            "exact": "시술 뒤 새로 발생한 신경학적 이상이 약물 효과인지, 신경 손상이나 혈종 등 다른 합병증인지도 구별해야 한다.",
+            "prefix": ", 간 기능과 심장 상태를 기록해야 한다. ",
+            "suffix": " 약물의 정상적인 소실에 맞추어 기능이 돌아"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.renal.potassium",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.renal.potassium.b.32beb4395a97",
+      "sourceSha256": "32beb4395a9704e74ad8503b86e7b7f8e3bfd3c8218ff30dbe134dae54040448",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.01aad7f43c8aefd0913b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 21,
+            "end": 24,
+            "exact": "막전위",
+            "prefix": "칼륨(K+)은 주된 세포내 양이온으로 ",
+            "suffix": "와 근육·신경 기능, 효소 반응에 관여한다."
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        },
+        {
+          "id": "ann.3b0ae49894255d017629",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 110,
+            "end": 181,
+            "exact": "혈청 K+가 높다는 사실은 총체내 K+가 반드시 증가했다는 뜻이 아니며, 낮은 농도도 총량 부족과 세포내 이동을 구분해야 한다.",
+            "prefix": "이동해도 혈중 농도가 크게 변할 수 있다. ",
+            "suffix": " 두 과정이 동시에 존재할 수 있다."
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.26b1623177d8",
+      "sourceSha256": "26b1623177d8c92c1e31f3e80af231bde6cfb156137497527acba7adcb4c9fde",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.622c08cd95ee6fb1f45a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 191,
+            "end": 224,
+            "exact": "일시적 농도 교정과 총량 처리의 시간 범위를 구분해야 한다.",
+            "prefix": "만 체내에서 칼륨을 제거한 것과는 다르다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.2fa94cf1d695",
+      "sourceSha256": "2fa94cf1d695528d0914f99307a936efcd1bc7734c8d0af361f21b0604795883",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.dcd0eb86bdaf",
+      "sourceSha256": "dcd0eb86bdafc063c974d67ac3a494f5036e588957055e452833d6c2d1db2c8d",
+      "sourceLengthUtf16": 211,
+      "annotations": [
+        {
+          "id": "ann.67bca4210cec574ebaaf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 104,
+            "end": 157,
+            "exact": "채혈 과정의 용혈은 시험관 안에서 비슷한 수치 변화를 만들 수 있어 실제 체내 이상과 구분한다.",
+            "prefix": "능력에 따라 혈중 농도가 상승할 수 있다. ",
+            "suffix": " 검체 상태를 확인하되, 임상적으로 위험한 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.10b1e5b8af2f",
+      "sourceSha256": "10b1e5b8af2fae2d103f4741d46060cc8abbeb4c21c4557233b89dc9f6d54b7c",
+      "sourceLengthUtf16": 197,
+      "annotations": [
+        {
+          "id": "ann.aa2e301e0ea0fad924aa",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 121,
+            "end": 127,
+            "exact": "사구체여과율",
+            "prefix": " 등 원위 분절의 분비·재흡수가 중요하다. ",
+            "suffix": "이 낮아져도 남은 네프론이 단위당 분비를 늘"
+          },
+          "conceptId": "reader.term.301f3dc8f905a00f",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.406a65e8e93e",
+      "sourceSha256": "406a65e8e93e616e8eb1fd4a19e6e31e05eae85950906b57a6c092c936403927",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.1418d16503c5",
+      "sourceSha256": "1418d16503c5ceea14bd28f0bee0c70e9af805afed6e2639c253e6279b48d06e",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.9f651fb9309025e1e075",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 81,
+            "end": 85,
+            "exact": "RAAS",
+            "prefix": ". 일부 이뇨제의 저칼륨 경향은 이 원리와 ",
+            "suffix": " 반응을 함께 고려하면 설명된다. 그러나 전"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.60700f357421",
+      "sourceSha256": "60700f357421167116f49fe2975a6027d50ed4a48917d2d8b4d93668ee7ca770",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.13b34d65ce80",
+      "sourceSha256": "13b34d65ce80f2daa22aacb5cf374930d5edd78b964b4c3626c6b67ea23461b4",
+      "sourceLengthUtf16": 258,
+      "annotations": [
+        {
+          "id": "ann.47ca453bbd8943085b06",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 14,
+            "end": 25,
+            "exact": "aldosterone",
+            "prefix": "혈중 K+ 상승은 부신의 ",
+            "suffix": " 분비를 직접 자극할 수 있고, aldost"
+          },
+          "conceptId": "reader.term.2dbad37f3f8aa1cf",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.5b8d624c26b88abddf30",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 84,
+            "end": 98,
+            "exact": "Angiotensin II",
+            "prefix": "a+·K+ 처리와 관련 단백질을 조절한다. ",
+            "suffix": "와 유효 순환량 신호도 원위 기능에 영향을 "
+          },
+          "conceptId": "reader.term.3daef66a52cb90df",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.d25b02531036",
+      "sourceSha256": "d25b02531036f74c8fa18d271ecee1b435f83bdbf56da7afb053ecccb3227fc3",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.88997d3de0d9",
+      "sourceSha256": "88997d3de0d98aa09f35a9d974b62dc6a09da6a4cdd71e36302ef93884a782fc",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.4858984c4c45",
+      "sourceSha256": "4858984c4c45760b518a53b4c91c2e05e5959acb31e930f281e62c1b11d5554d",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.18d4b98fa0bc",
+      "sourceSha256": "18d4b98fa0bc92751078e17df97178770a0602fd5415bd21891b945cb58cbbd7",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.potassium.b.e5422753cb4f",
+      "sourceSha256": "e5422753cb4f6663518073837dd2c923d8842ecf49e6d2ffa290d39bab4698df",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    }
+  ]
+}

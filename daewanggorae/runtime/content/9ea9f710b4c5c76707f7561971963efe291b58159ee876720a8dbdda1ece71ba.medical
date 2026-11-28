@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.physiology.stress-metabolism",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.bb709a7e200f",
+      "sourceSha256": "bb709a7e200f1158caec31a1a996f3a8444d42556b4ac7e2aa70cdd9cd7bd3de",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.4fc732e96112",
+      "sourceSha256": "4fc732e96112b222d872bef36ef2645409a361e9a879847f510f00fa405af164",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.3eb96bcb2ce74b891982",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 167,
+            "end": 203,
+            "exact": "예상되는 반응과 현재의 위험을 시간·정도·동반 소견으로 구별한다.",
+            "prefix": "정하면 출혈·감염·저산소를 놓칠 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.9a172f226f28",
+      "sourceSha256": "9a172f226f2801a4aca194f632164465b0f973e3f70ea487617c4132f05521b7",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.b43dfc2351da97b92a5a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 11,
+            "end": 15,
+            "exact": "글리코겐",
+            "prefix": "간의 포도당 생성과 ",
+            "suffix": " 분해, 말초 인슐린 저항성은 혈중 포도당을"
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        },
+        {
+          "id": "ann.e71fc9497efb263689b9",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 52,
+            "end": 55,
+            "exact": "당뇨병",
+            "prefix": "항성은 혈중 포도당을 높일 수 있다. 평소 ",
+            "suffix": "이 없던 환자에게도 고혈당이 생기며, 기존 "
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.142cfd54c253",
+      "sourceSha256": "142cfd54c253523c6cf9c80431e2bdfab36dbd3f5354930142cf0585e8c2c2bd",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.11345c172adf",
+      "sourceSha256": "11345c172adf98d4f8e93ebeb7da92d3ea3282eb4e8f5786fce99980013d2a2b",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.7cd2b4970ae2",
+      "sourceSha256": "7cd2b4970ae20a8edd16e6c086ffedf02919fcb1776b2f95e44257a165072dd7",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.aed184883a4a",
+      "sourceSha256": "aed184883a4aeb66393a6bd722a58d15710aa07abcd77190342c2a4950e6be52",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.525ca6e66c99",
+      "sourceSha256": "525ca6e66c99998c58d70b0b0b1e73ea6c3d19b593eff9ab4fa813e606d334f5",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.af955221bb671f37c9c0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 86,
+            "exact": "수술 후 회복 촉진(enhanced recovery)의 핵심은 모든 환자를 같은 날짜에 퇴원시키는 것이 아니라 생리·증상·기능을 함께 회복시키는 데 있다.",
+            "prefix": "",
+            "suffix": " 수술 종류와 합병증, 환자의 예비력에 맞게"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.67176e11df15",
+      "sourceSha256": "67176e11df15df6a0eb31362d9c4687987543238d64549c55fc2783176cf4320",
+      "sourceLengthUtf16": 158,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.physiology.stress-metabolism.b.95105312fd57",
+      "sourceSha256": "95105312fd575235dcd7492daee3de6c06e6e147ab85939ef458d306efc95fd2",
+      "sourceLengthUtf16": 145,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.endocrine.gh-prolactin",
+  "subjectId": "physiology",
+  "chapterId": "endocrine",
+  "title": {
+    "ko": "성장호르몬·IGF와 프로락틴의 조절",
+    "en": "Growth Hormone, IGF and Prolactin Regulation"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.endocrine.gh-prolactin.lo.01",
+      "text": "GH 수용체와 IGF 수용체의 신호방식을 비교한다"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.lo.02",
+      "text": "맥동성 GH와 통합 지표의 차이를 설명한다"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.lo.03",
+      "text": "도파민 억제와 프로락틴 증가를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.9a2ab2cfd932",
+      "type": "heading",
+      "level": 2,
+      "text": "성장호르몬을 성장만으로 설명할 수 없는 이유"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.1b5bfc59a5b0",
+      "type": "paragraph",
+      "markdown": "성장호르몬(growth hormone, GH)은 뇌하수체 앞엽의 성장호르몬세포에서 분비되는 단백질 호르몬이다. 소아의 선형 성장뿐 아니라 성인의 단백질·지방·포도당 대사에도 작용한다. GH는 자체 수용체를 통한 직접 작용과 인슐린유사성장인자1(insulin-like growth factor 1, IGF-1)의 생성에 따른 간접 작용을 함께 가진다. 따라서 GH의 모든 효과를 간에서 만들어진 IGF-1 하나로 환원하거나, 반대로 두 호르몬을 서로 무관한 신호로 외우면 조직별 반응을 이해하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.fb82b91e0da3",
+      "type": "paragraph",
+      "markdown": "GH 수용체는 사이토카인 수용체 계열이며 수용체에 결합한 JAK2 등의 신호 기전을 통해 STAT 단백질의 활성과 전사 반응으로 이어진다. 수용체 자체가 인슐린 수용체처럼 고유 티로신인산화효소 활성을 갖는 것으로 설명하지 않는다. IGF-1 수용체는 티로신인산화효소 수용체(receptor tyrosine kinase)이며, 성장·생존·대사에 관련된 세포 내 경로를 활성화한다. 두 수용체의 최종 효과가 일부 겹쳐도 신호 시작 구조는 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.548ac4344f29",
+      "type": "heading",
+      "level": 2,
+      "text": "간의 순환 신호와 조직의 국소 신호"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.73eb59752f39",
+      "type": "paragraph",
+      "markdown": "간은 순환 IGF-1의 중요한 공급원이지만 여러 조직도 IGF를 생성하여 국소적으로 작용할 수 있다. 혈중 IGF-1은 결합단백질(IGF-binding proteins, IGFBPs)과 복합체를 이루며, 결합은 운반·반감기·조직 이용성을 조절한다. 혈중 총 IGF-1만으로 모든 조직의 국소 IGF 작용을 직접 측정한 것으로 볼 수 없다. 영양 상태와 간 기능, 나이와 성별, 생리적 발달 단계도 농도 해석에 관여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.63f2f75ab2be",
+      "type": "paragraph",
+      "markdown": "GH는 지방 동원과 대사 연료 선택에 영향을 주며, 지속적 과다는 인슐린 작용의 저하와 연결될 수 있다. 반면 IGF-1은 일부 조직에서 인슐린과 유사한 작용을 가진다. 같은 축의 두 신호가 모든 대사 효과에서 같은 방향을 가진다고 가정하지 않아야 한다. 단백질 축적과 성장도 충분한 영양 공급, 다른 호르몬, 조직의 수용체 기능이 갖추어진 맥락에서 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.13adf2c8e4bd",
+      "type": "heading",
+      "level": 2,
+      "text": "분비 조절과 시간에 따른 해석"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.1f49fc1690f7",
+      "type": "paragraph",
+      "markdown": "시상하부의 성장호르몬방출호르몬(GHRH)은 분비를 촉진하고 소마토스타틴(somatostatin)은 억제한다. 그렐린(ghrelin)도 관련된 자극 신호다. 수면·운동·영양 상태와 대사 신호가 이 조절에 더해지고, IGF-1은 상위 수준에 음성 되먹임을 제공한다. GH의 분비는 맥동적이므로 건강한 사람에게도 어떤 채혈 시점의 값은 매우 낮을 수 있다. 낮은 무작위 GH 한 번만으로 분비능 결핍을 판단하는 것은 이러한 시간 구조를 무시한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.a9d6be02607b",
+      "type": "paragraph",
+      "markdown": "IGF-1은 GH보다 짧은 시간 변동이 상대적으로 덜하여 축의 통합 평가에 도움을 주지만, 모든 상황에서 완벽한 평균 GH 측정치는 아니다. 예를 들어 영양 공급이 부족하거나 간 기능이 변하면 GH와 IGF-1이 평행하게 움직이지 않을 수 있다. GH가 높고 IGF-1이 낮은 조합은 단순히 두 검사 중 하나의 오류라고 처리하기보다 수용체 이후 반응과 영양·간 상태를 포함하여 해석한다. 실제 자극·억제검사의 선택과 기준은 별도의 임상 검증을 요구한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.adfb17f94214",
+      "type": "heading",
+      "level": 2,
+      "text": "프로락틴은 억제 신호의 중요성을 보여 준다"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.083e3ddb82c2",
+      "type": "paragraph",
+      "markdown": "프로락틴(prolactin, PRL)은 앞엽의 젖분비호르몬세포에서 만들어지며 유즙 생성에 중요한 역할을 한다. 평상시 시상하부 도파민(dopamine)이 문맥을 통해 전달되어 D2 수용체를 통해 분비를 지속적으로 억제한다. 이 때문에 뇌하수체 줄기의 손상이나 압박으로 도파민 전달이 줄면 프로락틴이 증가할 수 있다. 다른 앞엽 호르몬의 방출 자극이 줄어드는 방향과 대비되는 현상이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.1bb38484a119",
+      "type": "paragraph",
+      "markdown": "프로락틴 수용체 역시 사이토카인 수용체 계열의 신호를 이용한다. 프로락틴은 도파민 신경의 조절에도 영향을 주어 억제성 되먹임을 형성한다. TRH와 에스트로겐 등은 분비에 영향을 줄 수 있으며, 수유 시의 감각 자극도 신경내분비 조절로 연결된다. 다만 프로락틴이 유즙의 생성에 관여하는 것과 옥시토신이 근상피세포 수축을 통해 유즙 배출에 관여하는 것은 구별해야 한다. 같은 수유 과정의 서로 다른 단계다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.0adabc1d4c87",
+      "type": "heading",
+      "level": 2,
+      "text": "프로락틴 증가의 기전별 구분"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.f587eefd30b0",
+      "type": "paragraph",
+      "markdown": "도파민 수용체를 차단하거나 도파민 전달을 줄이는 약물은 억제를 약화시킬 수 있다. 일차성 갑상샘 기능저하에서 증가한 TRH 자극이 관여할 수 있고, 제거 능력의 변화나 생리적 임신·수유도 고려한다. 프로락틴이 높다는 자료만으로 분비종양을 확정하지 않는다. 높은 농도와 생식샘축 억제, 월경 이상·성기능 변화 같은 증상을 연결할 수 있지만 증상의 유무와 정도가 검사값 하나로 완전히 결정되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.b.8a522d1eaf13",
+      "type": "paragraph",
+      "markdown": "검사 해석의 함정으로는 거대프로락틴(macroprolactin)과 고농도 후크효과(high-dose hook effect)가 있다. 전자는 면역반응성과 생물학적 효과의 차이를, 후자는 일부 두 자리 면역측정에서 극고농도 항원이 예상과 달리 낮은 신호를 만들 수 있다는 점을 보여 준다. 검사실과 임상상의 불일치가 크면 적절한 확인이 필요하다. 이 원리를 모든 검사에 동일한 절단값이나 희석배수로 적용해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.diagram.gh-prl-signaling-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.gh-prl-signaling-pairs",
+      "path": "diagrams/diagram.gh-prl-signaling-pairs.svg",
+      "alt": "호르몬과 수용체 계통의 단계별 비교"
+    },
+    {
+      "id": "physiology.endocrine.gh-prolactin.table.compare",
+      "type": "table",
+      "data": {
+        "title": "성장·수유 신호의 구별",
+        "columns": [
+          "신호",
+          "대표 기능",
+          "조절/수용체"
+        ],
+        "rows": [
+          [
+            "GH",
+            "직접 대사·IGF 생성",
+            "연관JAK·STAT"
+          ],
+          [
+            "IGF-1",
+            "성장·생존·대사",
+            "수용체티로신인산화효소"
+          ],
+          [
+            "PRL",
+            "유즙 생성",
+            "도파민D2 억제"
+          ],
+          [
+            "옥시토신",
+            "유즙 배출",
+            "근상피세포 수축"
+          ]
+        ],
+        "notes": "같은 과정에 관여해도 합성·배출·수용체 계통을 같다고 보지 않는다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/endocrine/sections/physiology.endocrine.gh-prolactin.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "GH 수용체의 연관 JAK와 IGF 수용체의 고유 효소를 구별한다.",
+    "도파민은PRL 분비를 지속 억제한다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.endocrine.gh-prolactin.001",
+    "question.physiology.endocrine.gh-prolactin.002"
+  ],
+  "relatedLessons": [
+    "physiology.endocrine.hypothalamic-pituitary-axes",
+    "physiology.endocrine.hormone-kinetics"
+  ]
+}

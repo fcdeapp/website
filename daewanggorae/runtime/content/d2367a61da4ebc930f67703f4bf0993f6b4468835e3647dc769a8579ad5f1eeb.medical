@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.neurological-localization-reasoning-0852",
+  "lessonId": "neurology.examination.localizing-weakness",
+  "title": "국소화에서 원인·행동으로",
+  "nodes": [
+    {
+      "id": "obs",
+      "label": "시간·분포·여러 기능",
+      "x": 350,
+      "y": 80,
+      "width": 400,
+      "height": 92
+    },
+    {
+      "id": "loc",
+      "label": "위치 가설",
+      "x": 165,
+      "y": 320,
+      "width": 260,
+      "height": 92
+    },
+    {
+      "id": "test",
+      "label": "질문에 맞는 검사",
+      "x": 165,
+      "y": 560,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "safe",
+      "label": "현재 안전·위해",
+      "x": 535,
+      "y": 320,
+      "width": 260,
+      "height": 92
+    },
+    {
+      "id": "rev",
+      "label": "가설·치료의 재평가",
+      "x": 350,
+      "y": 820,
+      "width": 400,
+      "height": 92
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.neurological-localization-reasoning-0852.e0",
+      "source": "obs",
+      "target": "loc",
+      "label": "통합",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.neurological-localization-reasoning-0852.e1",
+      "source": "loc",
+      "target": "test",
+      "label": "확인할 질문",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.neurological-localization-reasoning-0852.e2",
+      "source": "obs",
+      "target": "safe",
+      "label": "병행 평가",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.neurological-localization-reasoning-0852.e3",
+      "source": "test",
+      "target": "rev",
+      "label": "일치·불일치",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.neurological-localization-reasoning-0852.e4",
+      "source": "safe",
+      "target": "rev",
+      "label": "우선순위",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 700,
+      "height": 960
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 650,
+        "height": 960
+      },
+      "fontSize": 22,
+      "nodes": {
+        "obs": {
+          "x": 325.0,
+          "y": 80,
+          "width": 368.0,
+          "height": 92
+        },
+        "loc": {
+          "x": 153.21428571428572,
+          "y": 320,
+          "width": 239.20000000000002,
+          "height": 92
+        },
+        "test": {
+          "x": 153.21428571428572,
+          "y": 560,
+          "width": 257.6,
+          "height": 92
+        },
+        "safe": {
+          "x": 496.7857142857143,
+          "y": 320,
+          "width": 239.20000000000002,
+          "height": 92
+        },
+        "rev": {
+          "x": 325.0,
+          "y": 820,
+          "width": 368.0,
+          "height": 92
+        }
+      }
+    }
+  },
+  "limitations": [
+    "진단적 사고의 독립 개념도이며 응급 처치를 지연하는 순차 알고리즘이 아니다.",
+    "특정 검사·치료·병명 또는 환자별 국소화를 확정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.cognition.dementia-patterns",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.1a508fa20e5e",
+      "sourceSha256": "1a508fa20e5e395ef951f8cdee99f468000f95647245274679f32993363f9af1",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.1303e73d9050",
+      "sourceSha256": "1303e73d9050d8d86f8bf63019195bc51a29eee08d135dc9ecc6998980716684",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.14902f065b6fed68e954",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 128,
+            "end": 159,
+            "exact": "반복 검사에서 과제를 익힌 효과와 실제 호전도 구별한다.",
+            "prefix": " 환경을 마련하고 이전의 능력과 비교한다. ",
+            "suffix": " 공식 검사 도구는 검증된 시행·채점과 권리"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.f32ae919327a",
+      "sourceSha256": "f32ae919327ad640218747f641d74d19bf47f916de60d3312238ea47cc02ec8d",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.981197358bf2703013ef",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 43,
+            "exact": "인지저하가 일상의 독립성을 얼마나 제한하는지는 진단과 돌봄 계획에서 중요하다.",
+            "prefix": "",
+            "suffix": " 약 관리와 금융·교통수단 이용, 요리와 예"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.5ad3a7e752c5",
+      "sourceSha256": "5ad3a7e752c534a9be09c101976fa175dcfa5a5b9360b6bbd3cff85a443c05d5",
+      "sourceLengthUtf16": 245,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.ad5a1a6d1078",
+      "sourceSha256": "ad5a1a6d1078842ce198dbe1bb8e9b73744223838ad7ba13265a1cd934a9b715",
+      "sourceLengthUtf16": 245,
+      "annotations": [
+        {
+          "id": "ann.6a1bf9eedeb7a1ab0ec5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 166,
+            "end": 170,
+            "exact": "파킨슨증",
+            "prefix": "관련 질환에서는 인지 변동과 시각적 환각, ",
+            "suffix": "과 수면 중 이상행동 등 조합을 검토한다. "
+          },
+          "conceptId": "reader.term.c5bf7eb2e1d54285",
+          "targetDocumentId": "neurology.movement.parkinson-syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.8648288a1670",
+      "sourceSha256": "8648288a1670ffe0af03b8899cd999820cd131dde3ff4cb9dd3893b4eb12b92f",
+      "sourceLengthUtf16": 233,
+      "annotations": [
+        {
+          "id": "ann.bf798dfd0957b4ebcce5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 101,
+            "end": 142,
+            "exact": "영상의 백질 변화가 있다는 이유로 모든 증상을 혈관성으로 확정하지 않는다.",
+            "prefix": "것은 아니며 퇴행성 병리와 섞일 수 있다. ",
+            "suffix": " 혈관 위험과 실제 임상 사건, 영상과 인지"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.c8ad3e56dc92",
+      "sourceSha256": "c8ad3e56dc92efd218fcff2a5e2248ef73f498073312b7e06e555f131169cc3f",
+      "sourceLengthUtf16": 247,
+      "annotations": [
+        {
+          "id": "ann.790d17f2382f6ce01ebb",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 132,
+            "end": 136,
+            "exact": "뇌척수액",
+            "prefix": "모든 병리를 확정할 수 없다. 기능 영상과 ",
+            "suffix": "·혈액 생체표지자는 다른 질문에 답한다. 검"
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.57339c6b8742",
+      "sourceSha256": "57339c6b8742d4ba8e43c991fd1f314421c19f9d9ad327d25162369fe44b8e43",
+      "sourceLengthUtf16": 248,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.9b78c4d106f7",
+      "sourceSha256": "9b78c4d106f7ddc128e7a1e7fab7a8707ad18afb4ed79768fc8b0d026e0fff14",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.cognition.dementia-patterns.b.88bbe7e9449f",
+      "sourceSha256": "88bbe7e9449f457e970d813f6cfaadbb6f431bd618aecf5a0c3d882ccb76c5dd",
+      "sourceLengthUtf16": 250,
+      "annotations": []
+    }
+  ]
+}

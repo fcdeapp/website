@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.cardiomyopathy.phenotype-etiology",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.cardiomyopathy.phenotype-etiology.b.f50a5742ff0b",
+      "sourceSha256": "f50a5742ff0bfbf3e24bc37682f39d199145ded3654d30f9a0aabc8c9d5c3b42",
+      "sourceLengthUtf16": 237,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.phenotype-etiology.b.04981621fa97",
+      "sourceSha256": "04981621fa97480b0c774acfc219f059c59817a1f4e000e892148f583b558def",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.phenotype-etiology.b.150896017e58",
+      "sourceSha256": "150896017e58946c5bc6f6abfd2309d74d29d39aacdf9570880c292689b14a80",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.phenotype-etiology.b.32f455e2281d",
+      "sourceSha256": "32f455e2281daab28879d910f67925809eea9e4e790568eb849776c1feadd40b",
+      "sourceLengthUtf16": 229,
+      "annotations": [
+        {
+          "id": "ann.6c4f2e5ef94ed0233cd7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 6,
+            "end": 9,
+            "exact": "심부전",
+            "prefix": "가족력에는 ",
+            "suffix": "과 심근병증, 심장이식과 조율·제세동기, 설"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.phenotype-etiology.b.815e9732a32a",
+      "sourceSha256": "815e9732a32afff399f4192d1bd8a08059f548d3467ae1562e007bd0c30e1158",
+      "sourceLengthUtf16": 261,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.phenotype-etiology.b.1bd55133752e",
+      "sourceSha256": "1bd55133752efb744e80c43f70ca43517540b44aa7643e5946a11c3b00f8dc52",
+      "sourceLengthUtf16": 239,
+      "annotations": [
+        {
+          "id": "ann.ea85b7597d571b088d3c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 38,
+            "end": 94,
+            "exact": "혈중 심근손상 지표는 원인을 단독 확정하지 않고, 유전 변이는 분류와 표현형의 일치를 검토해야 한다.",
+            "prefix": "적인 조직검사는 서로 다른 질문에 답한다. ",
+            "suffix": " 조직검사도 표본 위치와 양, 질환의 국소성"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.phenotype-etiology.b.ca8eb43fbb6c",
+      "sourceSha256": "ca8eb43fbb6c4d2b27337dc6079a8084ceb013bac117e9f5cd4c374ce59bb601",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.phenotype-etiology.b.8fd9cc83e76f",
+      "sourceSha256": "03c5ffb93960cd5598a288e8440d3597748fbed2f5a1aa2b95d29af77651d20a",
+      "sourceLengthUtf16": 95,
+      "annotations": []
+    }
+  ]
+}

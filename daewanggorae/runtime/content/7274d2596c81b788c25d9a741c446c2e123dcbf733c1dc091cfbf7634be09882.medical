@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.structure.outer-membrane-transport",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.structure.outer-membrane-transport.b.db17cb402a45",
+      "sourceSha256": "db17cb402a45c9976dc6e21e097353bfab7baff43ca3b52cbe355a1a24c14be7",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.outer-membrane-transport.b.c7da8f195677",
+      "sourceSha256": "c7da8f195677a4ba283cb600ec1cc1793e448f95d52b695bcc85efbfe2be0faa",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.outer-membrane-transport.b.d5f8b4e49f57",
+      "sourceSha256": "d5f8b4e49f5782871dd7b7f82ca52deca0b1d2a93e1cb34d3aa4c83f49e8e352",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.outer-membrane-transport.b.1a71c4ca35c6",
+      "sourceSha256": "1a71c4ca35c69a1405e286e6f0f35a1b226119da1a85f020103f224ee38549f6",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.outer-membrane-transport.b.3bc42ac14894",
+      "sourceSha256": "3bc42ac14894d305dc56a7dfa9ede32f531f54356cf60dccbd4dcbce9a4e103e",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.445b06ff2e53c32ec67e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 8,
+            "exact": "β-lactam",
+            "prefix": "",
+            "suffix": "ase가 존재해도 모든 β-lactam을 같"
+          },
+          "conceptId": "reader.term.fafbfe2ccab0afab",
+          "targetDocumentId": "systemic-pharmacology.antimicrobials.beta-lactams"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.outer-membrane-transport.b.ead7e67eae31",
+      "sourceSha256": "ead7e67eae31a579f8a2fcf244024aecf7ecbea7579b7d0985855028dde71587",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.710e287c6141f6d38136",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 89,
+            "end": 142,
+            "exact": "형광 물질의 축적이 실제 항균제의 축적을 완전히 대표하지 않을 수 있어 기질의 차이도 중요하다.",
+            "prefix": " 성장에 영향을 주었는지도 확인해야 한다. ",
+            "suffix": " 유전자 복원과 독립적인 투과성·성장 대조는"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.outer-membrane-transport.b.e9d1f827664a",
+      "sourceSha256": "e9d1f827664a2076c22023b57e9ce33e66814048ad13dedaae36af5cb82b174d",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    }
+  ]
+}

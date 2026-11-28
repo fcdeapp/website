@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.obstruction.copd",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.obstruction.copd.b.4f234835bdeb",
+      "sourceSha256": "4f234835bdeb759175ae84eb15dccb7a3e656d81215d18906604b6d3316b437d",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.05cf136b1995",
+      "sourceSha256": "05cf136b19952b30ffcf0315597381256ee5650ed8d788162e1421af70d5c336",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.d6dbe016cc4e",
+      "sourceSha256": "d6dbe016cc4e008749bb3b407b3cec41bc2cf961f0225409bbe416081f0eb91e",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.70d86b88d682",
+      "sourceSha256": "70d86b88d682f5c535e6ebf1076842d642a85de003df709dad1223a9a9c9b5e6",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.d8036c5257a6338fa63e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 135,
+            "end": 193,
+            "exact": "심한 호흡곤란이 있어도 산소화가 유지될 수 있고, 증상 표현이 적어도 중요한 가스 이상이 있을 수 있다.",
+            "prefix": "도의 이산화탄소 저류를 갖는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.3877313bbb6f",
+      "sourceSha256": "3877313bbb6f37d14ccadeb38e1095ebb1b24a4ba6e172d69495d11c1cb441fe",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.a919aac6c163cc876870",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 57,
+            "exact": "흡연은 중요한 위험이지만 모든 환자가 흡연자이거나 모든 흡연자가 같은 질환 경과를 보이는 것은 아니다.",
+            "prefix": "",
+            "suffix": " 직업성 분진과 연기, 실내외 오염과 폐 발"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.c85a6690dc9d",
+      "sourceSha256": "c85a6690dc9d5d75b9df1e095e04a5515c61fc5f77306b4d0652b636e075564b",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.124b1cc7171b11445d18",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 2,
+            "exact": "천식",
+            "prefix": "",
+            "suffix": "과 기관지확장증, 심부전과 다른 폐질환은 증"
+          },
+          "conceptId": "reader.term.0724de0dbf1ee4f5",
+          "targetDocumentId": "pulmonology.airways.asthma-mechanisms"
+        },
+        {
+          "id": "ann.04ab1ad18784b0168b78",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 12,
+            "end": 15,
+            "exact": "심부전",
+            "prefix": "천식과 기관지확장증, ",
+            "suffix": "과 다른 폐질환은 증상과 검사 소견이 겹칠 "
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.3e956ae10747",
+      "sourceSha256": "3e956ae1074701578bd19a00e48c8696f261b75ea9d03de1304c7c34cf1962d3",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.0c87c4b9781c",
+      "sourceSha256": "0c87c4b9781c44882b0cea535f9fb52a677ad19f89829bd889f3cc99cda3bd71",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.d791ba5f13d76157c01a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 53,
+            "exact": "FEV1의 저하 정도는 중요한 기능 정보지만 증상과 악화 및 전신 부담 전체를 대표하지 않는다.",
+            "prefix": "",
+            "suffix": " 운동 능력과 호흡곤란, 악화 병력과 입원,"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.f88ff6c386fd",
+      "sourceSha256": "f88ff6c386fdd072d3a0fb077bc40b79d4090a5c74f1f12c1a83d4a86fade0ff",
+      "sourceLengthUtf16": 184,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.fb60a3fb2d1f",
+      "sourceSha256": "fb60a3fb2d1f39703575ab4facc9d3a4d9043c3f120c607f1b034754d58200c6",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.fcdfea00cc01",
+      "sourceSha256": "fcdfea00cc010fcb3aa8c63d84d96ed7d4795fd279567db2f84b2940323063e9",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.d36ea300c95a",
+      "sourceSha256": "d36ea300c95a13750d2573e42d330d9a6b971d5378b8aa19b59a60e6566ee0b5",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd.b.0cd93d7c7eb0",
+      "sourceSha256": "0cd93d7c7eb02509bdf0458fc605aa2a161211fe3193bfb13a015e1426a59f5a",
+      "sourceLengthUtf16": 156,
+      "annotations": []
+    }
+  ]
+}

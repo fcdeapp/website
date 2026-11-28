@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.general.bioavailability-first-pass",
+  "subjectId": "pharmacology",
+  "chapterId": "general",
+  "title": {
+    "ko": "생체이용률·초회통과·노출 비교",
+    "en": "Bioavailability, First-Pass Elimination and Exposure Comparison"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.lo.01",
+      "text": "흡수율과 전신 생체이용률을 구별한다"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.lo.02",
+      "text": "용량 보정 AUC로 절대 이용률을 계산한다"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.lo.03",
+      "text": "속도·노출량·국소효과와 생물학적 동등성의 질문을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.30c641b0c029",
+      "type": "heading",
+      "level": 2,
+      "text": "전신순환에 도달하는 분율"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.21a791139205",
+      "type": "paragraph",
+      "markdown": "생체이용률(bioavailability, F)은 투여된 약물 중 전신순환에서 이용 가능한 정도를 표현하는 개념이다. 원약물의 절대 이용률을 다루는 기본 질량 수지에서는 투여량 중 전신순환에 도달한 분율을 뜻한다. 정맥 투여는 기준으로 F=1을 두지만 혈관 밖 투여에서는 제형의 방출,흡수,장벽 통과와 전신 도달 전 제거가 영향을 준다. 장관에서 흡수된 비율과 전신순환의 원약물 이용률은 같지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.e7e55cc83702",
+      "type": "paragraph",
+      "markdown": "경구 투여의 단순 분해에서는 F=Fa×Fg×Fh로 둘 수 있다. Fa는 장관에서 흡수되는 분율,Fg는 장벽 제거를 피하는 분율,Fh는 간의 초회통과 제거를 피하는 분율이다. 실제 추정에서 각 분율의 정의와 모형을 확인해야 하며,수송체의 반복적인 유출·재흡수와 대사 연결은 단순한 세 개의 독립 밸브보다 복잡하다. F가 낮다는 사실만으로 장관 흡수 자체가 낮다고 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.def1b12cf886",
+      "type": "heading",
+      "level": 2,
+      "text": "초회통과와 투여 경로"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.62c989bcad2f",
+      "type": "paragraph",
+      "markdown": "초회통과(first-pass elimination)는 전신순환에 들어오기 전의 제거를 가리킨다. 경구 약물이 문맥을 통해 간에 도달할 때의 제거와 장벽 대사가 대표적이다. 경로가 바뀌면 같은 투여량에서 전신 노출이 달라질 수 있으나 모든 비경구 경로의 F가 자동으로1인 것은 아니다. 흡수 부위·혈류·제형·국소 분해를 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.a4fc70bbce46",
+      "type": "paragraph",
+      "markdown": "간 추출률이 높은 약물의 경구 노출에는 간 혈류와 내인 처리 능력,결합 및 장벽 과정이 함께 관여할 수 있다. 정맥 자료에서 본 청소율 변화와 경구 자료에서 본 AUC 변화는 이용률 변화 때문에 단순한 같은 배수가 아닐 수 있다. 따라서 경구 AUC 증가만 보고 전신 청소율이 그 역수로 감소했다고 확정하지 않는다. 경로 비교와 모형 가정을 먼저 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.f645af38aba6",
+      "type": "heading",
+      "level": 2,
+      "text": "용량 보정 노출의 계산"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.9628ede69c74",
+      "type": "paragraph",
+      "markdown": "선형이고 비교 기간의 전신 청소율이 같다면 AUC=D×F/CL이다. 경구와 정맥 투여의 절대 이용률은 F=(AUCpo/Dpo)/(AUCiv/Div)로 계산할 수 있다. 용량이 같을 때에만 단순 AUC 비로 줄어든다. AUC의 농도·시간 단위가 서로 같고 채혈 범위와 외삽이 적절한지도 확인해야 한다. 서로 다른 제형·투여량에서 단지 곡선 높이만 비교해서 F를 산출하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.ebdd0b3eacf1",
+      "type": "paragraph",
+      "markdown": "가상 실험에서 정맥50mg의 AUC가25mg·h/L,경구100mg의 AUC가30mg·h/L이면 용량 보정값은 각각0.5와0.3h/L다. 따라서 F=0.6이다. 경구 AUC의 절대값30이 정맥25보다 크더라도 투여량이 두 배이므로 이용률이 더 높은 것은 아니다. 이 수치는 특정 실제 약물의 연구나 허가 기준이 아닌 독립 계산 자료다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.c5f15bc7e859",
+      "type": "heading",
+      "level": 2,
+      "text": "노출의 속도와 총량"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.047b69d18c23",
+      "type": "paragraph",
+      "markdown": "AUC는 총노출을 요약하고 Cmax와 Tmax는 관찰된 최고 농도와 그 시점을 나타낸다. 흡수 속도나 방출이 달라지면 총노출이 비슷해도 최고 농도와 시간 경과가 달라질 수 있다. 채혈 간격이 성기면 실제 최고값을 놓칠 수 있으므로 관찰 Tmax를 정확한 생리적 지연시간으로 취급하지 않는다. 표적 부위 반응의 지연과 활성 대사체도 혈장 파형과 효과의 관계를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.c3ae42fd19f1",
+      "type": "paragraph",
+      "markdown": "일부 약물은 장관이나 피부 등 국소에서 주로 작용할 수 있어 전신 원약물 AUC만으로 국소 유효성을 충분히 설명하기 어렵다. 전신 이용률이 낮다는 사실이 곧 효과가 없다는 뜻은 아니며,높다는 사실도 언제나 더 안전하거나 우수함을 뜻하지 않는다. 연구 목적이 전신노출 비교인지 국소효과 평가인지 구별해야 적절한 결과변수를 선택할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.a7595fdd48c9",
+      "type": "heading",
+      "level": 2,
+      "text": "제형과 동등성의 질문"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.0f9e048e067d",
+      "type": "paragraph",
+      "markdown": "붕해·용출·막 투과와 안정성은 흡수에 영향을 주는 서로 다른 과정이다. 시험관 용출 결과가 생체 내 노출을 그대로 확정하는지는 검증된 상관이 필요하다. 제형이나 음식이 영향을 줄 수 있지만 모든 약물에 같은 방향의 변화가 발생하지 않는다. 특정 제품의 복용 지침은 해당 제품의 검증된 허가정보에 따라 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.b.a7a310526090",
+      "type": "paragraph",
+      "markdown": "상대 생체이용률과 생물학적 동등성(bioequivalence)은 연결되지만 같은 계산 하나로 끝나는 용어가 아니다. 동등성 평가는 연구 설계와 변동성,노출 지표의 통계적 비교 및 적용 규정을 포함한다. 임의 두 AUC가 비슷하다고 모든 효과·위험과 제형이 동일하다고 주장하지 않는다. 본문의 곡선과 표는 용량 보정·경로별 수지·분율 곱을 익히기 위한 자료이며 실제 제품의 교체 가능성이나 규제 판정으로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.diagram.oral-availability-fractions",
+      "type": "diagram",
+      "diagramRef": "diagram.oral-availability-fractions",
+      "path": "diagrams/diagram.oral-availability-fractions.svg",
+      "alt": "장벽·간 통과를 고정한 이용률의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.diagram.bioavailability-question-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.bioavailability-question-pairs",
+      "path": "diagrams/diagram.bioavailability-question-pairs.svg",
+      "alt": "경로별 이용률의 질문의 단계별 비교"
+    },
+    {
+      "id": "pharmacology.general.bioavailability-first-pass.table.compare",
+      "type": "table",
+      "data": {
+        "title": "이용률과 노출",
+        "columns": [
+          "값",
+          "질문"
+        ],
+        "rows": [
+          [
+            "Fa",
+            "흡수된 분율"
+          ],
+          [
+            "Fg·Fh",
+            "전신 도달 전 제거를 피한 분율"
+          ],
+          [
+            "AUC/D",
+            "선형 조건의 용량 보정 노출"
+          ],
+          [
+            "Cmax·Tmax",
+            "최고값과 관찰 시점"
+          ]
+        ],
+        "notes": "정의와 대표 관계의 비교이며 임상 단일 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/sections/pharmacology.general.bioavailability-first-pass.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "절대 이용률 비교에는 용량 보정과 비교 조건이 필요하다."
+  ],
+  "relatedLessons": [
+    "pharmacology.general.metabolism-biotransformation",
+    "pharmacology.general.metabolism-interactions"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.general.bioavailability-first-pass.001",
+    "question.pharmacology.general.bioavailability-first-pass.002"
+  ]
+}

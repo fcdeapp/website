@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.spindle-tendon-reflex-pairs",
+  "lessonId": "physiology.neuro.motor-units-reflexes",
+  "title": "감각 구조와 운동 조절",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "근방추·Ia/II",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "길이·변화와 감도 조절",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "골지힘줄기관·Ib",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "장력 관련 피드백",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "감각·하행·중간뉴런",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "운동뉴런의 과제별 출력",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.spindle-tendon-reflex-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "추외근과병렬",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.spindle-tendon-reflex-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "추외근과직렬",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.spindle-tendon-reflex-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "고립반사와구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "자가억제를고정비상정지스위치로보지않으며실제반사회로는상태의존적이다."
+  ],
+  "sourceImageUsed": false
+}

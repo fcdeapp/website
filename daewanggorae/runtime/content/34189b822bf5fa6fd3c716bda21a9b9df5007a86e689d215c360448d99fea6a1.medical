@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "colorectal-surgery.ibd.penetrating-crohn",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.b.7f332e47b484",
+      "sourceSha256": "7f332e47b4847aae2d099e68700bac8f0d8719b751f11cf066f8e46722b6feab",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.589a319e5b3e2487f301",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 17,
+            "exact": "Crohn disease",
+            "prefix": "크론병(",
+            "suffix": ")은 점막에만 국한되지 않고 장벽 전체에 염"
+          },
+          "conceptId": "reader.term.e3bba5256033da1f",
+          "targetDocumentId": "gastroenterology.inflammation.ibd"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.b.4df1de2524fc",
+      "sourceSha256": "4df1de2524fcf7c1c7e8beced913a429b44fa4f8a27fe96a69d0deb04695e005",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.b.cd32778936a3",
+      "sourceSha256": "cd32778936a3ecfe36b6c427707e2b8984c73d8048ba71b7d1a6b17d85ace54b",
+      "sourceLengthUtf16": 211,
+      "annotations": [
+        {
+          "id": "ann.b99efb96c62a573b1942",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 41,
+            "end": 47,
+            "exact": "감염원 조절",
+            "prefix": "재 순환·호흡·장기 기능을 안정시키는 일과 ",
+            "suffix": "이 포함된다. 적절한 환자에서 영상유도 배액"
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.b.58c5c75cf53f",
+      "sourceSha256": "58c5c75cf53fedef6b762a139795ac64e6adc630db7bfabfba0a8be0d0c60874",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.b.d92bc4ceab99",
+      "sourceSha256": "d92bc4ceab99ce604b35e653624d1463342bdb4e7a17bf59bf491f3bc284f8ea",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.f3b3adcb37860652f445",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 135,
+            "end": 199,
+            "exact": "급한 감염원 조절을 영양 회복이 끝날 때까지 미루는 문제와, 안정된 환자에서 준비 기간을 활용하는 문제는 구별한다.",
+            "prefix": "수분 상태를 연결하여 영양 경로를 정한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.b.1162fb8577b1",
+      "sourceSha256": "1162fb8577b17896fe4c5f99d2e16b4b3c27181f2479f9f080b3294d45b6a803",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.b.c64e1fde8f23",
+      "sourceSha256": "c64e1fde8f23935293eae250b636c8484c01ad57a9409d0f0c18b2da78eae4f6",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.b.0ef0843891fa",
+      "sourceSha256": "0ef0843891faf64647da8cf3bcb1f0cbca616a24ef99eec91eeb7f74f84f5147",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.supp.f1f78495625f",
+      "sourceSha256": "f1f78495625fec2badaaf88e457403fd74a891852cf8654421dcc5f1d4eeb417",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.penetrating-crohn.supp.497f5f01a65e",
+      "sourceSha256": "497f5f01a65eb9fb311415717a835a4249d2ff6decaec8413f2ab647944b2d99",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.f6db5687d0fda7241fd9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 206,
+            "exact": "안정되어 준비할 수 있는 기간과 지속 오염으로 지연의 위해가 커지는 기간을 구별해야 단계적 치료의 목적이 분명해진다.",
+            "prefix": "은 기간의 영양 공급만을 반영하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

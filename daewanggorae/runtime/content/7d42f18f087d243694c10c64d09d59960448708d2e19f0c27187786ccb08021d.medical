@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "infectious-diseases.antibiotics.stewardship",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "infectious-diseases.antibiotics.stewardship.b.db79da354180",
+      "sourceSha256": "db79da35418088f2282a6ee4ca4c5e09a218d1bd748b430e834a6dd4d7810129",
+      "sourceLengthUtf16": 296,
+      "annotations": [
+        {
+          "id": "ann.cea3d65c18b200250bbc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 162,
+            "end": 188,
+            "exact": "배양 양성만으로 항균제 적응을 확정하지 않는다.",
+            "prefix": "처리 과정에서 검체에 섞인 경우를 말한다. ",
+            "suffix": " 검체가 어느 부위에서 어떤 방식으로 얻어졌"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "infectious-diseases.antibiotics.stewardship.b.b2909e382333",
+      "sourceSha256": "b2909e38233344762065160a65f009fb86bb92b019fc66f898c60d29a5a676ba",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.antibiotics.stewardship.b.877b62611fea",
+      "sourceSha256": "877b62611fea493a122b6c53b03c46b68bc47f11224d8e21606a621e2da044a0",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.7dc0e48e586c525cbae9",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 181,
+            "end": 195,
+            "exact": "source control",
+            "prefix": " 감염된 기구와 폐쇄가 있으면 감염원 조절(",
+            "suffix": ")이 중요하며 약제 교체만으로 해결되지 않을"
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "infectious-diseases.antibiotics.stewardship.b.259257ca4ec3",
+      "sourceSha256": "259257ca4ec30bb1721e912c21f37879b2f669589d587c1d17d7ca17b058e908",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.antibiotics.stewardship.b.df2bf56e9bc9",
+      "sourceSha256": "df2bf56e9bc9874973fb97b1dad4b12518e4249f2c89507038c0821d261c55c1",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.antibiotics.stewardship.b.107f83a21088",
+      "sourceSha256": "107f83a210888fc462fd0c009e208580d15e695b26ded1f27e451b5e9734582c",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.aa143b11ffb73a5cefd2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 155,
+            "end": 220,
+            "exact": "항균제 관리의 핵심은 덜 쓰는 것 자체가 아니라 필요한 환자에게 적절한 약을 적절한 노출과 기간으로 사용하는 것이다.",
+            "prefix": "간과 국내 내성률을 미검증 상태로 남긴다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

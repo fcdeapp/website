@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.tuberculosis-therapy-resistance",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.b.9d2c075dca38",
+      "sourceSha256": "9d2c075dca385d65989a8ee73e4444c8d59d84ac5c01721e3553d3b8cc9db3dd",
+      "sourceLengthUtf16": 196,
+      "annotations": [
+        {
+          "id": "ann.c7cdaf96540b691751d2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 2,
+            "exact": "결핵",
+            "prefix": "",
+            "suffix": " 치료는 균의 약물 감수성과 질병 부위·부담"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        },
+        {
+          "id": "ann.f645860d8cefbc82a180",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 97,
+            "end": 154,
+            "exact": "서로 다른 표적의 유효 약물을 함께 사용하는 접근은 균 제거와 내성 선택의 위험을 다루는 데 중요하다.",
+            "prefix": " 다양하고 약물이 도달하는 환경도 다르다. ",
+            "suffix": " 증상이 줄었다고 모든 병변의 균이 같은 속"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.b.f0e17db3cedc",
+      "sourceSha256": "f0e17db3cedc1f983d5fa2ea41c1ca979a42df1431ce4298dc483517f5191757",
+      "sourceLengthUtf16": 196,
+      "annotations": [
+        {
+          "id": "ann.9a5459f1619ed20e6b9b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 163,
+            "end": 196,
+            "exact": "처음의 진단명보다 유효 약물과 병변·숙주의 조건이 중요하다.",
+            "prefix": "신경·특수 숙주에 그대로 적용하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.b.8e845fbb6955",
+      "sourceSha256": "8e845fbb6955c038a9a3a0e64d3b8a8c3786ea8ca1f39293a89ab1fed963ba0e",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.b.1e7f99361a96",
+      "sourceSha256": "1e7f99361a968bf4e4e7daa21cd32396d7ef953d19fa3783ec684c3fb7bf6ee3",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.b.6b72db17bc9d",
+      "sourceSha256": "6b72db17bc9d2e87fc7a37145cc05a11e18f84bca61bb692b99c017befd9a73a",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.b.cae867e4faa5",
+      "sourceSha256": "cae867e4faa5a73df361d6e3c76c364be0c4e84cf9d346875f584d9b8b992025",
+      "sourceLengthUtf16": 163,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.b.b685d6996fa4",
+      "sourceSha256": "b685d6996fa4d5cabf9b87ba67377b91344fa40dcc56b45aceebbfa5687fc04f",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.b.8770ae7e0580",
+      "sourceSha256": "8770ae7e058008819de45bbc9ab85cd554357196bc2129987e0e1ecbb4a81bb1",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.134f72d55679945f360d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 39,
+            "end": 83,
+            "exact": "치료 뒤의 섬유화와 기도 손상, 만성 호흡기 부담은 새 활동성 질환과 구별한다.",
+            "prefix": "상, 병변·기능 및 약물 위해를 통합한다. ",
+            "suffix": " 새 기침·발열과 체중·객혈은 이전 기록과 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.p.extra0846.0",
+      "sourceSha256": "59101e0babddcd54230c7ee8c40de85cf3795aa379a4ff3f2478597c7ea0e29c",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-therapy-resistance.p.extra0846.1",
+      "sourceSha256": "b4b8e58962c219f7c0a7bc63c8583fc74f4768e9a226065d7e078a8053e79b4f",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    }
+  ]
+}

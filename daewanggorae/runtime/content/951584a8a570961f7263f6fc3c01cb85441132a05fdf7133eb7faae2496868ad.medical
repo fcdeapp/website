@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.enzymes.allostery-thermodynamics",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.c469ddca9654",
+      "sourceSha256": "c469ddca965436781a628a007b7599dd111562e7da339f1a7ef60eb981bcda81",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.626542f19444128ae6c8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 174,
+            "end": 225,
+            "exact": "정방향과 역방향이 모두 촉진될 수 있어 평형에 도달하는 시간과 평형의 위치를 구별해야 한다.",
+            "prefix": "거나 평형상수 자체를 바꾸는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.48705aec3eae",
+      "sourceSha256": "48705aec3eaefe0528e98464c831d14a07bfb41e4c119e8fa66c4ba2ddad06c7",
+      "sourceLengthUtf16": 235,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.d110023dce31",
+      "sourceSha256": "d110023dce31e470a7b7282a2f2370e6981aa22f6eba3662e20a4e3340fdb7c3",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.9b4803185151",
+      "sourceSha256": "9b480318515141582f8f9ad6ed0ce575164050dd61cd29e7392a53df400b18f4",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.8d7ea28e0b16",
+      "sourceSha256": "8d7ea28e0b1678a297a24c774168eb5d6e5c01d4c3125afcea8ac1335b2ea9a9",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.5126548f6ebfc78c0510",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 55,
+            "end": 67,
+            "exact": "−5.93 kJ/mol",
+            "prefix": "0인 가상 반응을 두면 Q=1에서 ΔG는 약",
+            "suffix": "이다. Q=10이면0이고 Q=100이면 약+"
+          },
+          "level": "key",
+          "reason": "existing_keyFact_exact",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.e1961cc2b461",
+      "sourceSha256": "e1961cc2b4614518f5c6f9e2a7e9dc0c04ff8d051b0902be3fffa5f1c2ccf534",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.771c4be6ddbc",
+      "sourceSha256": "771c4be6ddbc2d5132ebfbc5ad618ebc6096f3a2da2634c0b305a512065ea70e",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.5964311eb1c1",
+      "sourceSha256": "5964311eb1c15613b29c21f68755422a7281c0b6c5106d9ae58d5be0e96a51af",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.6f4bc209a0b0",
+      "sourceSha256": "6f4bc209a0b0e7abe2ced6e4a4e18213c52604bb23dabf48906c1e15cd8faddf",
+      "sourceLengthUtf16": 228,
+      "annotations": [
+        {
+          "id": "ann.779dddcb9bcabb1eee86",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 165,
+            "end": 228,
+            "exact": "억제제는 기질과 같은 부위에서 경쟁할 수도 있고 다른 부위에서 기능을 바꿀 수도 있어 실제 기전을 구별해야 한다.",
+            "prefix": "든 조절을 알로스테리라고 부르지는 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.23904988cc3c",
+      "sourceSha256": "23904988cc3c9078688daf02fd78b77ed0ed58bed2c334f206daa57c573a9709",
+      "sourceLengthUtf16": 244,
+      "annotations": [
+        {
+          "id": "ann.18df9d4cedae3ba9e3fa",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 197,
+            "end": 213,
+            "exact": "Michaelis–Menten",
+            "prefix": " 반응 단계가 곡선에 영향을 줄 수 있다. ",
+            "suffix": " 모형과 다른 곡선에는 그에 맞는 가정을 사"
+          },
+          "conceptId": "reader.term.6166e9c844622f7a",
+          "targetDocumentId": "biochemistry.enzymes.kinetics"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.7f6616a7e61c",
+      "sourceSha256": "7f6616a7e61c5463d75985f04ffbd3d0fad9205e3e2b1773f47d02c333451c4e",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.enzymes.allostery-thermodynamics.b.4fb7dc07aaac",
+      "sourceSha256": "4fb7dc07aaac52f7290eca58e5730b4e8a65e0df62c9bf5398c56794af684c26",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    }
+  ]
+}

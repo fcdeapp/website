@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology",
+  "title": {
+    "ko": "순환기내과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "cardiology.chapter.heart-failure",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/heart-failure/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.ischemia",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/ischemia/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.coronary",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/coronary/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.diagnosis",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.electrocardiography",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/electrocardiography/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.biomarkers",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/biomarkers/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.testing",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/testing/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.imaging",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/imaging/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.therapy",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/therapy/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.complications",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/complications/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.hemodynamics",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/hemodynamics/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.prevention",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/prevention/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.arrhythmias",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.devices",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.cardiomyopathy",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/cardiomyopathy/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.pericardium",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/pericardium/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.valvular",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/valvular/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.congenital",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/congenital/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.infection",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/infection/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.aorta",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/aorta/chapter.json"
+    },
+    {
+      "id": "cardiology.chapter.vascular",
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/vascular/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "cardiology.plan.001",
+    "cardiology.plan.002",
+    "cardiology.plan.003",
+    "cardiology.plan.004",
+    "cardiology.plan.005",
+    "cardiology.plan.006",
+    "cardiology.heart-failure.syndrome",
+    "cardiology.ischemia.acute-coronary-syndrome",
+    "cardiology.heart-failure.mechanisms-evaluation",
+    "cardiology.coronary.atherothrombosis",
+    "cardiology.ischemia.oxygen-balance",
+    "cardiology.coronary.flow-reserve",
+    "cardiology.coronary.microvascular-vasospastic",
+    "cardiology.diagnosis.chest-discomfort",
+    "cardiology.electrocardiography.lead-vectors",
+    "cardiology.electrocardiography.ischemic-evolution",
+    "cardiology.biomarkers.troponin-release",
+    "cardiology.ischemia.mi-classification-2026",
+    "cardiology.diagnosis.serial-tests",
+    "cardiology.testing.stress-ischemia",
+    "cardiology.imaging.coronary-ct",
+    "cardiology.coronary.pressure-flow-indices",
+    "cardiology.imaging.regional-wall-motion",
+    "cardiology.ischemia.reperfusion-microcirculation",
+    "cardiology.therapy.antithrombotic-targets",
+    "cardiology.complications.structural-failure",
+    "cardiology.complications.remodeling-wall-stress",
+    "cardiology.hemodynamics.right-ventricular-infarction",
+    "cardiology.prevention.secondary-prevention",
+    "cardiology.arrhythmias.reentry-conduction",
+    "cardiology.arrhythmias.automaticity-triggered-activity",
+    "cardiology.arrhythmias.refractoriness-conduction",
+    "cardiology.electrocardiography.rate-interval-measurement",
+    "cardiology.arrhythmias.narrow-complex-differential",
+    "cardiology.arrhythmias.avnrt",
+    "cardiology.arrhythmias.avrt-preexcitation",
+    "cardiology.arrhythmias.focal-atrial-tachycardia",
+    "cardiology.arrhythmias.atrial-flutter",
+    "cardiology.arrhythmias.atrial-fibrillation-mechanisms",
+    "cardiology.arrhythmias.atrial-fibrillation-burden",
+    "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention",
+    "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm",
+    "cardiology.arrhythmias.sinus-node-dysfunction",
+    "cardiology.arrhythmias.atrioventricular-block",
+    "cardiology.arrhythmias.bundle-branch-wide-qrs",
+    "cardiology.arrhythmias.monomorphic-ventricular-tachycardia",
+    "cardiology.arrhythmias.torsades-long-qt",
+    "cardiology.arrhythmias.ventricular-fibrillation-arrest",
+    "cardiology.arrhythmias.antiarrhythmic-risk",
+    "cardiology.arrhythmias.ambulatory-monitoring-ep-study",
+    "cardiology.devices.pacemaker-icd-basics",
+    "cardiology.devices.pacemaker-troubleshooting",
+    "cardiology.devices.pacemaker-timing",
+    "cardiology.devices.icd-detection-therapy",
+    "cardiology.devices.resynchronization-principles",
+    "cardiology.diagnosis.syncope-assessment",
+    "cardiology.diagnosis.reflex-syncope",
+    "cardiology.diagnosis.orthostatic-hypotension",
+    "cardiology.diagnosis.cardiac-syncope-monitoring",
+    "cardiology.cardiomyopathy.phenotype-etiology",
+    "cardiology.cardiomyopathy.dilated-cardiomyopathy",
+    "cardiology.cardiomyopathy.hypertrophic-obstruction",
+    "cardiology.cardiomyopathy.restrictive-physiology",
+    "cardiology.cardiomyopathy.cardiac-amyloidosis",
+    "cardiology.cardiomyopathy.myocarditis-assessment",
+    "cardiology.cardiomyopathy.arrhythmogenic-substrate",
+    "cardiology.cardiomyopathy.genetics-family-screening",
+    "cardiology.pericardium.pericarditis",
+    "cardiology.pericardium.effusion",
+    "cardiology.pericardium.tamponade",
+    "cardiology.pericardium.constrictive-pericarditis",
+    "cardiology.valvular.integrated-assessment",
+    "cardiology.valvular.aortic-stenosis",
+    "cardiology.valvular.aortic-stenosis-discordance",
+    "cardiology.valvular.aortic-regurgitation",
+    "cardiology.valvular.mitral-stenosis",
+    "cardiology.valvular.mitral-stenosis-rhythm-thrombosis",
+    "cardiology.valvular.primary-mitral-regurgitation",
+    "cardiology.valvular.secondary-mitral-regurgitation",
+    "cardiology.valvular.tricuspid-regurgitation",
+    "cardiology.valvular.pulmonary-valve-right-outflow",
+    "cardiology.valvular.prosthetic-valve-assessment",
+    "cardiology.valvular.mixed-multivalve",
+    "cardiology.congenital.shunt-physiology",
+    "cardiology.congenital.atrial-septal-defect",
+    "cardiology.congenital.ventricular-septal-defect",
+    "cardiology.congenital.patent-ductus-aorta",
+    "cardiology.congenital.cyanosis-eisenmenger",
+    "cardiology.congenital.tetralogy-fallot-repaired",
+    "cardiology.congenital.transposition-mixing",
+    "cardiology.congenital.fontan-circulation",
+    "cardiology.infection.endocarditis-mechanisms",
+    "cardiology.infection.endocarditis-cultures",
+    "cardiology.infection.endocarditis-imaging",
+    "cardiology.infection.endocarditis-complications",
+    "cardiology.infection.rheumatic-fever",
+    "cardiology.infection.rheumatic-heart-prevention",
+    "cardiology.aorta.aneurysm-wall-mechanics",
+    "cardiology.aorta.acute-aortic-syndrome",
+    "cardiology.vascular.peripheral-arterial-mechanisms",
+    "cardiology.vascular.ankle-brachial-assessment",
+    "cardiology.vascular.chronic-limb-threatening",
+    "cardiology.vascular.acute-limb-ischemia",
+    "cardiology.vascular.deep-vein-thrombosis",
+    "cardiology.vascular.vte-treatment-principles"
+  ]
+}

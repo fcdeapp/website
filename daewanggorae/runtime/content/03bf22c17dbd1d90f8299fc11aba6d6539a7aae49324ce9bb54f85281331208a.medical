@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.renal.urine-concentration",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.renal.urine-concentration.b.8faf9c21e145",
+      "sourceSha256": "8faf9c21e145417f0b849c0a1a286485758fa2729520ed9e14ce949086175ced",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.d65765d2a289",
+      "sourceSha256": "d65765d2a289a8b8c799448eb1bd538550eaa11fdc9113d04973116bb07e636a",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.c57d38e0e4e2",
+      "sourceSha256": "c57d38e0e4e23ece43405a9648501767b39fcfa0bdadc33aa38bc552c88bc55b",
+      "sourceLengthUtf16": 264,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.65de8e70c8b4",
+      "sourceSha256": "65de8e70c8b42f4780b0a74dfb1eed75d72802bb6d105bf3cf8f133f3595ecc7",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.c3e7b2cda9ea",
+      "sourceSha256": "c3e7b2cda9eab7180d05e30d98a498435ac231403dd09e4a465ee7c7d6de0706",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.db706113b63245c33546",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 100,
+            "end": 147,
+            "exact": "Urea는 단순히 버려지는 질소 부산물인 동시에 수질 삼투 기울기의 중요한 성분이다.",
+            "prefix": " 수질에 머무르며 재순환하는 데 기여한다. ",
+            "suffix": " 단백질 섭취와 urea 생성·배설, 호르몬"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.7a248d42e3b5",
+      "sourceSha256": "7a248d42e3b54de4ff8ac66e255ad56311df1643487bfa9417975542ac5e4251",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.84e457a681dd",
+      "sourceSha256": "84e457a681ddbd45ff51f2b12c6342fb464a5c301d4829c229bda3229bfbd83f",
+      "sourceLengthUtf16": 248,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.f2084248f6cb",
+      "sourceSha256": "f2084248f6cbf72a2021b8b1e5718a0b9d666871873f9d6cb7e667bf783d0e5f",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.7cc4f0ffa209",
+      "sourceSha256": "7cc4f0ffa2093a0a8d3a08d035b69cb8256be04f7fbe2e59aa65a4655f9e980e",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.81c66a9b728f",
+      "sourceSha256": "81c66a9b728f40309429bbf9ec1bc694690b3650e008e0c15b473396fee5a275",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.bf5421eb2a65",
+      "sourceSha256": "bf5421eb2a6535e20d38c1b53ab45c24b029134b803223ec48fe22c99bf09705",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.f991bc655ce3c59c3f9b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 2,
+            "end": 5,
+            "exact": "청소율",
+            "prefix": "삼투",
+            "suffix": "(Cosm)은 Uosm×V/Posm이다. U"
+          },
+          "conceptId": "reader.term.52a8b75072525e18",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.urine-concentration.b.fd539156512e",
+      "sourceSha256": "fd539156512e8554db7ad9142b961b167ec447b7ee1c4a02b91725a23380e42a",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    }
+  ]
+}

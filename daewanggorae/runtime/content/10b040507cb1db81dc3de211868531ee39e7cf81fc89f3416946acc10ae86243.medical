@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "obstetrics.adaptation.renal-fluid-laboratory",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.b.e71499cc1407",
+      "sourceSha256": "e71499cc14074d03405c457cc3ba2a2b39fba00d89e72bd9ab2c88f61277ae69",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.1d51969e0392c4b0d3b7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 11,
+            "end": 17,
+            "exact": "사구체여과율",
+            "prefix": "임신에서는 신혈류와 ",
+            "suffix": "(glomerular filtration r"
+          },
+          "conceptId": "reader.term.301f3dc8f905a00f",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.b.06b28113eed1",
+      "sourceSha256": "06b28113eed194a7230236d63feaeb1a9105e21113c212d602070adff96e4636",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.69fd5de8880cb4aa9b12",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 162,
+            "end": 193,
+            "exact": "계산값 하나와 임신 중 실제 신장 기능은 구별해야 한다.",
+            "prefix": "저 신질환과 여과 평가의 방법을 검토한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.b.914689f71605",
+      "sourceSha256": "914689f71605c5af2e614a14eee555697e6b73c282ae74c5ff3472c320ce7b53",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.f5fa2e8173d04ce48a18",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 20,
+            "end": 35,
+            "exact": "레닌-안지오텐신-알도스테론계",
+            "prefix": "임신의 혈관 확장과 혈액량 조절에는 ",
+            "suffix": "(renin–angiotensin–aldos"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.ee9771a64a379f0f52bf",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 54,
+            "end": 65,
+            "exact": "aldosterone",
+            "prefix": "도스테론계(renin–angiotensin–",
+            "suffix": " system, RAAS)와 수분 조절 신호"
+          },
+          "conceptId": "reader.term.2dbad37f3f8aa1cf",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.b.cf0e3f2c0fc0",
+      "sourceSha256": "cf0e3f2c0fc084055e006bc8fe5602bf1ce48ac21cbe9d81a199dc8d9519ba9d",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.b.f422aec1a5fc",
+      "sourceSha256": "f422aec1a5fcdba85d3753989457dd2adb65fc9339c68c22457afb8784e9c1af",
+      "sourceLengthUtf16": 165,
+      "annotations": [
+        {
+          "id": "ann.95a31298b425e5ab42d5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 95,
+            "end": 124,
+            "exact": "감염과 결석·폐쇄 등은 위치와 경과·검사로 구별한다.",
+            "prefix": "통증·발열과 혈뇨를 안심시켜서는 안 된다. ",
+            "suffix": " 요검체의 채취 방식과 오염, 배양과 선행 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.b.51ad97cb0551",
+      "sourceSha256": "51ad97cb0551804b451bdc679d6475b2c13565c1ac0bd0c8b8a193b261714155",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.f737d1462227435d7718",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 88,
+            "end": 92,
+            "exact": "자간전증",
+            "prefix": "환·감염 및 다른 장기 소견을 함께 본다. ",
+            "suffix": "에서는 단백뇨가 중요한 단서지만 그것이 없다"
+          },
+          "conceptId": "reader.term.d2c736b19e48618f",
+          "targetDocumentId": "obstetrics.hypertension.severe-disease-delivery"
+        },
+        {
+          "id": "ann.d139c6180ca8307ea7de",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 88,
+            "end": 146,
+            "exact": "자간전증에서는 단백뇨가 중요한 단서지만 그것이 없다는 사실만으로 모든 관련 장기 손상을 배제하지 못한다.",
+            "prefix": "환·감염 및 다른 장기 소견을 함께 본다. ",
+            "suffix": " 단백뇨의 존재만으로 원인 질환을 하나로 확"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.b.c6ac378aac43",
+      "sourceSha256": "c6ac378aac4389b5433fbd70e105abd581a77f7414778767ae88a4178c1211e6",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.b.9e7bfda03f6c",
+      "sourceSha256": "9e7bfda03f6cf6d6dcb41be91a38a6c9c9ea8d8dfff10ea665531e9e00dc6e1a",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.supp.c060e6f44a2b",
+      "sourceSha256": "c060e6f44a2b58030c43004ad784c1d26a30e27f418f6d946f593e724727aaa3",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.adaptation.renal-fluid-laboratory.supp.9b954c61d9ba",
+      "sourceSha256": "9b954c61d9baaf14bf36486321b42fca3741a49f8b3b2ffd2945235a0f64e703",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    }
+  ]
+}

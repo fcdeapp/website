@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.growth.oxygen-energy",
+  "subjectId": "bacteriology",
+  "chapterId": "growth",
+  "title": {
+    "ko": "산소 요구성과 에너지 대사",
+    "en": "Oxygen Requirements and Energy Metabolism"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.growth.oxygen-energy.lo.01",
+      "text": "호흡·발효와 산소 요구성을 구별한다"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.lo.02",
+      "text": "활성산소 방어와 성장 분포를 연결한다"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.lo.03",
+      "text": "배양 조건에 따른 음성 결과를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.7cb79044af1a",
+      "type": "heading",
+      "level": 2,
+      "text": "산소 이용과 산소 내성"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.62636d952599",
+      "type": "paragraph",
+      "markdown": "산소는 일부 세균의 에너지 생성에 유리한 최종 전자수용체이지만 모든 세균의 성장에 필수적인 것은 아니다. 산소를 이용하는 능력과 산소가 있어도 견디는 능력은 별도의 속성이다. 절대호기성·조건무산소성·산소내성 무산소성·절대무산소성·미세호기성이라는 분류는 이러한 이용과 독성의 관계를 정리한다. 이 구분을 그람반응이나 세포 모양만으로 결정할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.a5f0cbc6d121",
+      "type": "paragraph",
+      "markdown": "조건무산소성균은 산소가 있는 조건과 없는 조건에서 서로 다른 에너지 경로를 활용할 수 있다. 산소내성 무산소성균은 산소를 에너지 생성에 이용하지 않으면서도 그 존재를 견딜 수 있다. 두 집단이 모두 산소 없는 곳에서 자랄 수 있다고 같은 대사형은 아니다. 배지의 상층에서 더 많이 자라는지, 전체에 비교적 고르게 자라는지의 차이는 이 관계를 추론하는 단서가 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.b2e549fa664b",
+      "type": "heading",
+      "level": 2,
+      "text": "호흡과 발효의 전자 수지"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.643859a7e842",
+      "type": "paragraph",
+      "markdown": "호흡(respiration)은 전자전달계와 전기화학적 기울기를 이용한 에너지 보존에 연결된다. 최종 전자수용체가 산소가 아닌 무산소 호흡도 있으므로 호흡을 언제나 산소 소비의 동의어로 쓰지 않는다. 발효(fermentation)는 유기 분자에 전자를 돌려 산화환원 보조인자를 재생하고 기질수준 인산화와 연결된다. 최종 산물의 산성화는 동정에 이용되지만 특정 산물 하나가 종 전체를 유일하게 규정하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.d95cbe3ffc8a",
+      "type": "paragraph",
+      "markdown": "같은 균이라도 공급되는 탄소원과 전자수용체에 따라 성장률과 최종 산물이 달라진다. 산소만 바꾼 실험처럼 보이더라도 배지의 산화환원 상태와 pH가 함께 바뀔 수 있다. 따라서 성장 차이를 산소 독성 하나로만 해석하기 전에 영양·전자수용체·완충 조건을 확인해야 한다. 유전자 존재는 해당 조건에서의 발현과 실제 대사 흐름을 직접 보증하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.09311e606553",
+      "type": "heading",
+      "level": 2,
+      "text": "활성산소와 방어"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.e4ac241d47c1",
+      "type": "paragraph",
+      "markdown": "산소의 부분 환원으로 생기는 superoxide와 peroxide 계통은 단백질·지질·핵산에 손상을 줄 수 있다. Superoxide dismutase는 superoxide를 과산화수소 계통으로 전환하고 catalase와 peroxidase는 그 뒤의 제거에 기여한다. 이들은 서로 완전히 같은 반응을 하는 효소가 아니다. 한 효소의 유무만으로 모든 산소 내성과 임상 병독성을 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.0edd016d8a86",
+      "type": "paragraph",
+      "markdown": "Catalase 검사의 기포는 과산화수소 분해와 관련된 효소 작용을 보여 준다. 혈액 성분의 혼입이나 시약 조건이 해석에 영향을 줄 수 있다. 이 검사는 임상적인 호중구 살상 능력이나 균의 모든 산화 스트레스 방어를 직접 측정하는 검사가 아니다. 검사 반응을 분류 도구로 사용하되 그것이 나타내는 생화학적 범위를 넘어서 확대하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.902651bf03cc",
+      "type": "heading",
+      "level": 2,
+      "text": "국소 환경과 검체"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.9ea3eceb9d83",
+      "type": "paragraph",
+      "markdown": "농양·괴사 조직처럼 산소 공급과 소비의 균형이 달라지는 곳에서는 표면과 깊은 구획의 조건이 다를 수 있다. 겉의 공기에 노출된다는 사실만으로 깊은 조직 전체의 산소 상태를 판단하지 않는다. 혈류·확산 거리·다른 세포의 산소 소비가 국소 환경을 바꾼다. 한 병변 안에서 여러 대사형의 미생물이 공존하는 이유도 공간적 이질성과 관련된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.b.8999167c7b76",
+      "type": "paragraph",
+      "markdown": "무산소성균이 의심되는 검체는 채취 후 운송·배양까지의 노출 조건이 중요하다. 표면 검체의 음성 결과가 깊은 부위 감염을 완전히 배제하지는 않는다. 그렇다고 모든 배양 음성을 운송 문제로 돌려서도 안 된다. 검체의 대표성, 실제 균량과 이전 치료, 필요한 배양 조건을 함께 확인해야 대사 특성을 적절한 진단 해석으로 연결할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.oxygen-energy.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "호흡",
+            "전자전달·수용체와 에너지 보존"
+          ],
+          [
+            "발효",
+            "유기 산물·보조인자 재생"
+          ],
+          [
+            "조건무산소성",
+            "산소 유무에 따른 대사 전환 가능"
+          ],
+          [
+            "산소내성 무산소성",
+            "산소 이용과 견딤을 구별"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/growth/sections/bacteriology.growth.oxygen-energy.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.growth.oxygen-energy.001"
+  ],
+  "relatedLessons": [
+    "bacteriology.growth.counts-and-kinetics",
+    "bacteriology.survival.biofilm-heterogeneity"
+  ]
+}

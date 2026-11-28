@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.pouch-migration",
+  "lessonId": "embryology.pharyngeal.arches-pouches",
+  "title": "부갑상샘과 가슴샘의 주머니 유래",
+  "nodes": [
+    {
+      "id": "third",
+      "label": "셋째 인두주머니",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "lower",
+      "label": "아래부갑상샘·가슴샘 상피 계통",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "fourth",
+      "label": "넷째 인두주머니",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "upper",
+      "label": "위부갑상샘 계통",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.pouch-migration.edge.1",
+      "source": "third",
+      "target": "lower",
+      "relation": "directed",
+      "label": "발생·이동"
+    },
+    {
+      "id": "diagram.pouch-migration.edge.2",
+      "source": "fourth",
+      "target": "upper",
+      "relation": "directed",
+      "label": "발생"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 670
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 670
+      },
+      "fontSize": 22,
+      "nodes": {
+        "third": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "lower": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "fourth": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "upper": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "성인의 실제 위치를 그린 그림이 아니며 가슴샘의 조혈계 세포와 상피 기원을 구별해야 한다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.methods.immunoassay-interference",
+  "subjectId": "immunology",
+  "chapterId": "methods",
+  "title": {
+    "ko": "면역검사의 신호·보정과 분석 간섭",
+    "en": "Immunoassay Signals Calibration and Interference"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.methods.immunoassay-interference.lo.01",
+      "text": "Sandwich·경쟁 검사의 신호 방향을 비교한다"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.lo.02",
+      "text": "hook·이종항체·biotin 간섭을 설명한다"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.lo.03",
+      "text": "희석·대체법·대조의 역할을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.methods.immunoassay-interference.b.b1ce59e51456",
+      "type": "heading",
+      "level": 2,
+      "text": "신호와 농도 사이에는 측정 모형이 있다"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.fd64350391f6",
+      "type": "paragraph",
+      "markdown": "면역검사는 항원–항체 결합을 신호로 바꾸고 표준물질의 반응을 이용하여 농도나 상대 단위로 환산한다. 신호를 만드는 표지와 결합 형식, 표준곡선의 범위가 결과를 결정한다. 광량이나 형광이 두 배라고 분석물의 실제 농도가 항상 두 배인 것은 아니다. 포화와 비선형 보정, 측정 범위를 벗어난 시료가 있기 때문이다. 보고된 숫자는 정해진 측정 절차와 가정의 결과다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.9bf7358f9aa2",
+      "type": "paragraph",
+      "markdown": "Sandwich 검사에서는 포획·검출 항체가 분석물을 매개로 연결되는 형식이 흔하다. 경쟁 검사에서는 시료 분석물과 표지 또는 결합 성분이 자리를 경쟁하므로 신호와 농도의 방향이 반대일 수 있다. 같은 간섭 물질도 검사 설계에 따라 결과를 높이거나 낮출 수 있다. ‘면역검사에서 간섭은 항상 위양성’이라는 일반화는 적절하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.84738eda70ea",
+      "type": "heading",
+      "level": 2,
+      "text": "항원 과잉의 역설"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.78f890de1bec",
+      "type": "paragraph",
+      "markdown": "일부 sandwich 형식에서 극도로 많은 분석물이 포획·검출 성분을 각각 점유하면 필요한 연결이 줄어 신호가 낮아질 수 있다. 고용량 hook effect는 실제 양이 많은데 낮게 보이는 한 기전이다. 실제 발생 여부와 범위는 플랫폼의 단계·세척과 항체 구성에 달려 있다. 모든 높은 농도의 시료에서 같은 현상이 생기는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.a3ebe1aea047",
+      "type": "paragraph",
+      "markdown": "희석 뒤 신호가 예상과 다르게 회복되면 항원 과잉이나 다른 억제 간섭을 검토할 수 있다. 다만 희석 자체가 기질과 결합 균형을 바꾸므로 비선형 회복이 특정 간섭의 단독 증거는 아니다. 검사에 맞는 희석액과 검증된 범위를 사용한다. 특히 자유 호르몬 같은 일부 검사는 단순 희석이 원래 생물학적 평형을 바꿀 수 있어 모든 분석에 동일한 절차를 강제할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.2ee466ba33f3",
+      "type": "heading",
+      "level": 2,
+      "text": "시료의 항체가 검사 항체를 연결한다"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.36c634c65e23",
+      "type": "paragraph",
+      "markdown": "이종항체(heterophile antibody)와 항동물항체 등은 시약 항체와 비특이적으로 상호작용할 수 있다. 분석물이 없어도 연결 신호를 만들거나 정상 결합을 방해하여 결과를 바꾼다. 차단 시약·전처리와 다른 플랫폼의 비교가 도움이 될 수 있지만 한 시험으로 모든 내인성 항체 간섭을 완전히 배제하지는 못한다. 간섭은 시료와 시약의 조합에 의존한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.a22ebab9cc39",
+      "type": "paragraph",
+      "markdown": "일부 분석은 biotin–streptavidin 결합을 이용하며 과량의 외부 biotin이 결합 단계를 바꿀 수 있다. 결과의 방향은 경쟁·sandwich 등 설계에 따라 달라질 수 있다. 보충제와 약물 이력을 확인하고 검사실과 협의한다. 모든 biotin 노출이 모든 검사에 같은 오류를 만든다고 설명하지 않으며 임의의 보편적 중단 시간과 용량 기준을 이 모형에서 도출하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.7474df401981",
+      "type": "heading",
+      "level": 2,
+      "text": "회복률과 직선성이 답하는 질문"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.3fce601bd458",
+      "type": "paragraph",
+      "markdown": "가상 시료에 알려진 양을 추가하여 예상 증가가 측정되는지 보는 회복 시험은 기질 영향의 단서를 제공한다. 희석 계열의 직선성은 측정 모형이 해당 범위에서 유지되는지 평가한다. 그러나 직선적인 결과도 어떤 간섭을 배제하지 못하고, 비직선성이 항상 병적 항체 때문인 것도 아니다. 원래 시료의 농도와 결합 평형, 측정 범위·표준물질이 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.ab5397d6e056",
+      "type": "paragraph",
+      "markdown": "일상 품질관리가 정상이어도 특정 환자 시료의 간섭은 남을 수 있다. 품질관리물질은 그 환자의 항체·약물·단백질 환경을 모두 포함하지 않기 때문이다. 반복 측정의 일치도는 무작위 오차에 대한 정보이며 같은 방향으로 반복되는 편향까지 제거하지 않는다. 정확도·정밀도와 환자별 간섭을 다른 층으로 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.24cab03fadc3",
+      "type": "heading",
+      "level": 2,
+      "text": "임상과 맞지 않는 결과를 다룬다"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.54bda39014f4",
+      "type": "paragraph",
+      "markdown": "증상과 여러 검사 사이에 큰 불일치가 있으면 생물학적 원인과 함께 방법·단위·시료 오류를 확인한다. 다른 방법으로 같은 질문을 측정하고 검증된 전처리·새 검체를 이용하면 원인 가설을 좁힐 수 있다. 결과가 임상과 맞지 않는다는 이유만으로 모두 간섭이라고 단정하지도 않는다. 새 질환과 비전형적 표현형이 실제로 존재할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.b.2d83c804386b",
+      "type": "paragraph",
+      "markdown": "기록에는 어떤 결과가 어떤 방법에서 달랐는지, 검체·처리 조건과 아직 확정하지 못한 부분을 남긴다. 측정값을 실제 질환의 증거로 쓰기 전에 분석적 타당성을 검토하는 것이 핵심이다. 학습용 hook 곡선과 보정식은 이러한 논리를 보여 주는 독립 자료이며 실제 플랫폼의 표준곡선과 환자 농도를 대체하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.diagram.immune-hook-signal-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-hook-signal-toy",
+      "path": "diagrams/diagram.immune-hook-signal-toy.svg",
+      "alt": "농도와 신호의 가상 역전의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.methods.immunoassay-interference.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "이종항체",
+            "검출·포획 항체 사이의 간섭 가능"
+          ],
+          [
+            "Biotin",
+            "검사 설계에 따라 신호 방향이 달라짐"
+          ],
+          [
+            "고농도 hook",
+            "과량 항원으로 낮은 신호가 생길 수 있음"
+          ],
+          [
+            "검증 접근",
+            "대체 방법·차단·희석을 검사실과 조율"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/methods/sections/immunology.methods.immunoassay-interference.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.methods.immunoassay-interference.001",
+    "question.immunology.methods.immunoassay-interference.002"
+  ],
+  "relatedLessons": [
+    "immunology.transplant.hla-antibody-assays",
+    "immunology.therapy.immunomodulation-targets"
+  ]
+}

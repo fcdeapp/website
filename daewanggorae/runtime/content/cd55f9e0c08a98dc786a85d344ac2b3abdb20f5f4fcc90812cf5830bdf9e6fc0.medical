@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.recruitment-conditional-denominator",
+  "lessonId": "pathology.inflammation.mediators-leukocyte-recruitment",
+  "title": "가상 단계별 접착 자료",
+  "series": [
+    {
+      "label": "구르기 세포 대비 (%)",
+      "samples": [
+        {
+          "x": 0,
+          "y": 20.0
+        },
+        {
+          "x": 1,
+          "y": 30.0
+        },
+        {
+          "x": 2,
+          "y": 40.0
+        }
+      ]
+    },
+    {
+      "label": "전체 주입 대비 (%)",
+      "samples": [
+        {
+          "x": 0,
+          "y": 4.0
+        },
+        {
+          "x": 1,
+          "y": 3.0
+        },
+        {
+          "x": 2,
+          "y": 2.0
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "injected": 1000,
+    "rolling": [
+      200,
+      100,
+      50
+    ],
+    "adherent": [
+      40,
+      30,
+      20
+    ],
+    "discreteConditions": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 2,
+      "scale": "linear",
+      "ticks": [
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "label": "실험 조건 번호"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 50,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        12.5,
+        25.0,
+        37.5,
+        50.0
+      ],
+      "label": "접착 비율 (%)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "구르기 세포 대비 (%)",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "전체 주입 대비 (%)",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "세 조건은 독립 가상 집단이다. 연결선은 연속 시간·용량 효과나 단계 인과를 뜻하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.growth.counts-and-kinetics",
+  "subjectId": "bacteriology",
+  "chapterId": "growth",
+  "title": {
+    "ko": "세균 성장곡선과 생균수의 정량",
+    "en": "Bacterial Growth Curves and Viable Counts"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.lo.01",
+      "text": "지수성장식과 배가시간을 유도한다"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.lo.02",
+      "text": "탁도·세포수·CFU를 구별한다"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.lo.03",
+      "text": "희석배양 결과와 검출 한계를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.8667c35231e6",
+      "type": "heading",
+      "level": 2,
+      "text": "증가율과 배가시간"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.0f935332a299",
+      "type": "paragraph",
+      "markdown": "이분법(binary fission)으로 자라는 집단에서 각 세포가 같은 비율로 분열한다고 가정하면 dN/dt=μN이다. μ는 단위 시간당 비성장률이며 적분하면 N=N0e^(μt)가 된다. 배가시간 g에서는 N/N0=2이므로 g=ln2/μ다. 같은 내용을 N=N0·2^(t/g)로 쓸 수 있다. 이 식은 환경과 성장률이 일정한 구간의 모형이지 모든 감염 경과를 예측하는 법칙은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.1d6ae73a325b",
+      "type": "paragraph",
+      "markdown": "가상 배양에서 N0가 100이고 g가 1 임의시간이면 세 시간이 지난 뒤 800이 된다. 선형 축에서는 곡선이 가팔라지지만 log2(N/N0)를 시간에 그리면 기울기가 1/g인 직선이다. 로그 변환은 증가량을 숨기는 편법이 아니라 일정한 비율 증가를 읽는 방법이다. 로그의 밑과 시간 단위를 쓰지 않으면 기울기를 배가시간으로 해석할 때 오류가 생긴다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.2c8c73058d85",
+      "type": "heading",
+      "level": 2,
+      "text": "배치배양의 여러 구간"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.fbe5dc3721c9",
+      "type": "paragraph",
+      "markdown": "새 환경에 적응하는 지연기(lag phase)에는 세포가 효소와 구성 성분을 바꾸어도 세포수가 눈에 띄게 늘지 않을 수 있다. 지수기 이후 영양 제한·노폐물·산소 변화가 성장률을 줄인다. 정지기(stationary phase)는 모든 세포의 대사가 완전히 멈췄다는 뜻이 아니다. 분열과 죽음이 비슷해 총수가 일정하거나 집단 내부에서 다른 상태가 공존할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.a50940ee9cce",
+      "type": "paragraph",
+      "markdown": "사멸기에도 모든 세포가 같은 속도로 사라진다고 가정할 수는 없다. 일부 세포는 손상되거나 배양 조건에서 자라지 못하고 일부는 더 오래 살아남는다. 숙주에서는 면역 제거와 새 영양 공급, 여러 조직 구획이 동시에 작동한다. 따라서 닫힌 시험관의 네 구간을 실제 감염의 잠복기·증상기·회복기에 기계적으로 일대일 대응시키지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.dd70554c57bc",
+      "type": "heading",
+      "level": 2,
+      "text": "무엇을 세는 검사인가"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.2bc149a4631e",
+      "type": "paragraph",
+      "markdown": "탁도(optical density, OD)는 입자가 빛의 진행에 미치는 영향을 재는 간접 지표다. 일정 범위에서 생체량과 관련되지만 세포 크기·응집·죽은 세포와 측정 장비에 영향을 받는다. OD가 두 배라고 언제나 살아 있는 세포수가 정확히 두 배인 것은 아니다. 너무 진한 시료의 비선형성도 확인해야 한다. 배양 조건별 보정 없이는 서로 다른 균을 같은 수치로 비교하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.b488d182a2ea",
+      "type": "paragraph",
+      "markdown": "집락형성단위(colony-forming unit, CFU)는 특정 조건에서 하나의 집락을 만든 단위를 센다. 한 단위가 단일 세포일 수도 있지만 사슬이나 덩어리일 수도 있다. 응집을 풀어 CFU가 증가해도 실제 세포가 새로 분열한 것은 아닐 수 있다. 직접 현미경 계수는 죽은 세포를 포함할 수 있어 CFU와 정확히 일치하지 않는다. 각 수치의 정의를 먼저 확인해야 불일치를 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.c717546862f8",
+      "type": "heading",
+      "level": 2,
+      "text": "희석과 부피의 역산"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.754d311d1a3f",
+      "type": "paragraph",
+      "markdown": "가상 시료를 원액의 10^−4로 희석하고 0.1mL를 배양해 80집락을 얻었다면 원액의 추정 농도는 80/(10^−4×0.1)=8×10^6CFU/mL다. 희석배수와 실제 접종 부피를 모두 반영해야 한다. 이 값은 회수 조건에서 자랄 수 있는 단위의 추정이며 모든 세포의 절대수와 다르다. 반복 배양과 적절한 계수 범위는 표본 변동과 집락 겹침을 줄이는 데 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.b.d1610b248db5",
+      "type": "paragraph",
+      "markdown": "배양 음성의 의미는 접종량과 검출 한계에 의존한다. 적은 부피를 검사하면 낮은 농도의 생균이 우연히 포함되지 않을 수 있다. 따라서 결과를 해석할 때는 총 검사량과 배지·배양 조건, 이전 항균 노출을 확인한다. 수치의 정밀한 계산은 중요하지만 수치가 대표하는 생물학적 대상과 시료 채취의 한계를 함께 설명해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.diagram.bacteria-log2-growth-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.bacteria-log2-growth-toy",
+      "path": "diagrams/diagram.bacteria-log2-growth-toy.svg",
+      "alt": "배가시간과 로그 성장의 독립 계산 곡선"
+    },
+    {
+      "id": "bacteriology.growth.counts-and-kinetics.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "OD",
+            "입자·생체량의 간접 지표"
+          ],
+          [
+            "직접 세포 계수",
+            "조건에 따라 죽은 세포 포함"
+          ],
+          [
+            "CFU",
+            "집락을 만드는 단위; 응집의 영향"
+          ],
+          [
+            "배가시간",
+            "일정 성장 구간에서 ln2/μ"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/growth/sections/bacteriology.growth.counts-and-kinetics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.growth.counts-and-kinetics.001",
+    "question.bacteriology.growth.counts-and-kinetics.002"
+  ],
+  "relatedLessons": [
+    "bacteriology.survival.endospore-dormancy",
+    "bacteriology.growth.oxygen-energy"
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "psychiatry.sleep.narcolepsy-hypersomnolence",
+  "subjectId": "psychiatry",
+  "chapterId": "sleep",
+  "title": {
+    "ko": "기면병·탈력발작과 과다졸림 평가",
+    "en": "Narcolepsy Cataplexy and Hypersomnolence"
+  },
+  "learningObjectives": [
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.lo.01",
+      "text": "졸림·피로·탈력발작을 구별한다"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.lo.02",
+      "text": "각성 안정화와 REM 혼입을 설명한다"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.lo.03",
+      "text": "검사 전 조건과 기능 위험을 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.a49c70d293bb",
+      "type": "heading",
+      "level": 2,
+      "text": "각성을 유지하는 기능의 장애"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.7667b56b2f42",
+      "type": "paragraph",
+      "markdown": "낮에 잠들기 쉬운 졸림과 활동이 버거운 피로, 우울로 인한 의욕 저하는 서로 겹칠 수 있지만 같은 현상은 아니다. 졸림에서는 실제로 잠든 장면과 빈도, 수면 기회와 교대 근무, 밤의 수면·호흡과 약물을 확인한다. 기면병(narcolepsy)은 수면과 각성 상태의 경계와 안정화가 달라지는 질환으로 이해한다. 낮의 과도한 졸림이 중요하지만, 낮에 졸린 모든 환자가 기면병인 것은 아니다. 흔한 수면 부족과 호흡 장애·약물과 다른 원인을 먼저 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.cd7719390f09",
+      "type": "paragraph",
+      "markdown": "시상하부의 오렉신(orexin, hypocretin) 신호는 각성을 유지하는 여러 회로의 안정화와 관련된다. 일부 기면병 유형에서 이 신호의 결핍이 중요한 역할을 한다. 그러나 모든 과다졸림과 모든 기면병 환자가 같은 생물학적 상태를 가진 것은 아니다. 임상 표현과 검사·아형의 맥락을 구별한다. 정상 시상하부의 외형으로 오렉신 세포 수와 전달물질 농도를 판정할 수 없으며, 개인의 진단은 해부 모형이 아닌 임상·생리 자료에 근거한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.dd1ae5c1303e",
+      "type": "heading",
+      "level": 2,
+      "text": "탈력발작의 현상학"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.acd3f50ee28b",
+      "type": "paragraph",
+      "markdown": "탈력발작(cataplexy)은 흔히 감정과 연관되어 갑자기 근긴장과 힘이 떨어지는 사건으로 나타난다. 웃을 때 턱과 눈꺼풀이 처지거나 무릎의 힘이 풀리는 등 범위가 다를 수 있고 의식은 보존될 수 있다. 이는 잠이 드는 사건이나 실신, 경련과 동의어가 아니다. 실제 유발 조건과 지속·회복, 의식과 기억, 움직임을 목격 자료와 함께 확인한다. 감정에 반응했다는 사실만으로 심리적으로 만든 행동이라고 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.becc52bcb699",
+      "type": "paragraph",
+      "markdown": "수면마비와 잠들거나 깰 무렵의 생생한 지각 경험은 REM 관련 기능과 각성의 경계에서 이해할 수 있다. 이러한 경험은 다른 상황에서도 나타날 수 있어 단독으로 기면병을 확진하지 않는다. 완전히 깬 상태의 지속적인 환각과 사고·주의·기분 변화는 별도의 감별이 필요하다. 환자가 경험의 의미를 두려워할 수 있으므로 발생 시점과 현실 판단, 안전과 고통을 구체적으로 묻는다. 수면 현상과 정신병적 증상을 용어만으로 혼동하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.567641572bc6",
+      "type": "heading",
+      "level": 2,
+      "text": "검사와 검사 전 수면"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.959e3d9ea219",
+      "type": "paragraph",
+      "markdown": "야간 수면검사와 다중수면잠복기검사(multiple sleep latency test, MSLT)는 수면 상태와 낮의 잠들기·REM 출현을 평가하는 데 사용된다. 검사 전의 충분한 수면과 일정, 수면호흡장애의 관리, 약물과 물질·중단의 영향이 결과를 바꿀 수 있다. 수면 부족이나 일주기 불일치가 있는 결과를 임상과 무관하게 확진으로 사용하지 않는다. 약물을 임의로 갑자기 끊는 것은 금단과 반동·원질환 악화의 위험이 있어 사전 계획이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.4879f1731589",
+      "type": "paragraph",
+      "markdown": "가상 낮잠 검사에서 네 번의 잠복기가 4·6·8·10분이라면 산술 평균은 7분이다. 그러나 실제 검사에서는 시행 횟수와 조건·기록·판정 규칙을 확인해야 하며, 이 네 숫자는 공식 진단 자료가 아니다. 평균 잠복기 하나는 원인과 모든 아형, 운전 적합성과 치료 반응을 정하지 않는다. REM 출현과 야간 자료, 병력과 동반 질환을 함께 해석한다. 검사 전 조건이 부적절하면 필요한 재평가의 질문을 명확히 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.57314a4ac898",
+      "type": "heading",
+      "level": 2,
+      "text": "치료 표적과 안전"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.552091594af6",
+      "type": "paragraph",
+      "markdown": "치료는 낮 졸림과 탈력발작, 밤의 수면과 기능·안전을 구분하여 계획한다. 약물의 표적과 작용점, 이상반응과 상호작용은 서로 다르며 새로운 치료의 허가와 적용은 시점·국가에 따라 확인해야 한다. 한 약물이 모든 증상과 원인 기전을 같은 정도로 교정한다고 가정하지 않는다. 계획된 휴식과 수면 일정, 학교·직장의 조정과 지원도 중요하다. 환자의 생활에 실제로 적용 가능한 전략을 함께 마련한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.9148afe4c3c6",
+      "type": "paragraph",
+      "markdown": "졸림이 있는 환자에서는 운전과 기계 조작, 높은 곳과 물 주변 등 실제 상황의 위험을 구체적으로 평가한다. 본인이 잠들 가능성을 과소평가하거나 의지로 막을 수 있다고 생각할 수 있다. 국내의 실제 업무·면허와 관련된 판단은 현행 기준과 전문 평가를 확인해야 하며, 가상 검사 평균으로 대신하지 않는다. 치료 뒤에도 졸림과 사건의 빈도, 약물의 영향과 실제 기능을 반복하여 확인한다. 증상이 줄었다는 보고와 모든 환경에서의 안전은 같은 결론이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.5fdc3ec34e94",
+      "type": "heading",
+      "level": 2,
+      "text": "장기 이해와 감별"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.69af4ef8d3af",
+      "type": "paragraph",
+      "markdown": "과다졸림은 수면 부족과 호흡 장애, 일주기 문제·약물, 정신·신경과 다른 신체 상태에서 나타날 수 있다. 긴 수면과 심한 수면관성, 낮잠의 회복감 등은 감별의 정보를 더하지만 한 특징이 단일 진단을 자동 확정하지 않는다. 시간이 지나며 증상이 달라지거나 새 원인이 공존할 수 있어 진단 가설을 주기적으로 검토한다. 학업과 직업의 어려움을 게으름과 무관심으로 설명하면 필요한 치료와 지원을 놓치게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.b.f7d3c7e55b47",
+      "type": "paragraph",
+      "markdown": "정상 뇌간·시상하부 모형은 각성 회로의 큰 위치를 이해하는 데 제한적으로 도움이 된다. 오렉신 신경세포와 세부 투사, REM의 근긴장 억제와 실제 사건은 정적 OBJ 자체에 포함되지 않는다. 회로의 설명과 검사 결과·환자의 생활 기능을 별도의 자료로 연결한다. 기초 생리와 임상 표현을 함께 이해하면 졸림과 근력 저하·지각 경험을 더 정확히 구분할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.table0855",
+      "type": "table",
+      "data": {
+        "title": "관찰과 확인할 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "사건",
+            "웃을 때 일시적 무릎 약화"
+          ],
+          [
+            "가상 잠복기",
+            "4·6·8·10min"
+          ],
+          [
+            "미확인",
+            "의식·밤 수면·호흡·약물·검사 조건"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "psychiatry.sleep.narcolepsy-hypersomnolence.diagram.synthetic-nap-latencies-0855",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-nap-latencies-0855",
+      "path": "diagrams/diagram.synthetic-nap-latencies-0855.svg",
+      "alt": "네 가상 기록의 잠복기의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/sleep/sections/psychiatry.sleep.narcolepsy-hypersomnolence.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.psychiatry.sleep.narcolepsy-hypersomnolence.001",
+    "question.psychiatry.sleep.narcolepsy-hypersomnolence.002"
+  ],
+  "relatedLessons": [
+    "psychiatry.sleep.apnea-neurocognition",
+    "psychiatry.sleep.parasomnia-state-dissociation"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pediatrics.growth.assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pediatrics.growth.assessment.b.03d57530073e",
+      "sourceSha256": "03d57530073eeb99798adbbb0297c6d3e516930062d1716947a7d3bdff11737c",
+      "sourceLengthUtf16": 258,
+      "annotations": [
+        {
+          "id": "ann.b0d12977eebf7e53dc2e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 164,
+            "end": 222,
+            "exact": "한 번 작은 값이 나왔다는 사실보다 이전 측정과의 추세, 측정오차, 가족적 체격과 전신 상태가 중요하다.",
+            "prefix": "치이며 건강 점수나 능력의 순위가 아니다. ",
+            "suffix": " 키 측정 자세와 장비 차이만으로도 성장 속"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.growth.assessment.b.9808d2e9d539",
+      "sourceSha256": "9808d2e9d539095ace29822bd1cba59da9055f068641162d244760a6153125a6",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.38a9b83360d216f037be",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 114,
+            "end": 119,
+            "exact": "만성 염증",
+            "prefix": "같은 순서로 설명하지 않는다. 내분비질환, ",
+            "suffix": ", 흡수장애, 유전 및 골격 질환은 서로 다"
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.growth.assessment.b.a2c1b767ddd7",
+      "sourceSha256": "a2c1b767ddd7183780b7858917d66474343542382a1c8962bf39481c71c9e65f",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.growth.assessment.b.ed12f1ddf6f5",
+      "sourceSha256": "ed12f1ddf6f5c1d5e075d55b08fa23eecc80736d124ad257d34e469f95d0e1ad",
+      "sourceLengthUtf16": 223,
+      "annotations": [
+        {
+          "id": "ann.b0cbb3a241ffefff1e04",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 52,
+            "exact": "아직 획득하지 못한 능력과 이미 하던 능력을 잃는 퇴행(regression)은 구분해야 한다.",
+            "prefix": "",
+            "suffix": " 퇴행은 신경계나 대사성 질환 등을 포함한 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.growth.assessment.b.c87d7279f40c",
+      "sourceSha256": "c87d7279f40c9a5c74e3f2882c62e32257a7b5f09989188f081dbe83c060e62f",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.bda21e2edb9bd8da43c3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 172,
+            "end": 216,
+            "exact": "신체 성장과 심리사회적 환경을 별개로 나누지 않고 함께 평가하는 것이 중요하다.",
+            "prefix": " 문제는 식사 행동과 상호작용할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.growth.assessment.b.f8eeb87a94f4",
+      "sourceSha256": "b185591f6a367478649ff6f8daead5288ae61ac4f2a3885a97f0d8303ade0dce",
+      "sourceLengthUtf16": 100,
+      "annotations": []
+    }
+  ]
+}

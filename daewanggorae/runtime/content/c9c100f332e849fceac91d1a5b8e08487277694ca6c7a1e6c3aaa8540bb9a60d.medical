@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.inflammation.acute-morphology",
+  "subjectId": "pathology",
+  "chapterId": "inflammation",
+  "title": {
+    "ko": "급성 염증의 형태와 병변의 조직화",
+    "en": "Morphologic Patterns of Acute Inflammation"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.inflammation.acute-morphology.lo.01",
+      "text": "장액성·섬유소성·화농성 염증을 비교한다"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.lo.02",
+      "text": "농양과 궤양의 공간적 차이를 설명한다"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.lo.03",
+      "text": "형태에서 원인으로 추론하는 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.inflammation.acute-morphology.b.54341be72997",
+      "type": "heading",
+      "level": 2,
+      "text": "형태는 조직 반응의 결과다"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.df61722c6151",
+      "type": "paragraph",
+      "markdown": "급성 염증의 육안과 조직 소견은 혈관 반응, 유출된 성분, 세포의 종류와 손상 깊이를 반영한다. 장액성(serous), 섬유소성(fibrinous), 화농성(suppurative)이라는 말은 우선 어떤 성분이 두드러지는지를 기술한다. 특정 병원체를 이름만 바꾸어 표현하는 분류가 아니다. 한 병변 안에도 시간과 부위에 따라 서로 다른 형태가 공존할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.a44dc0ba566e",
+      "type": "paragraph",
+      "markdown": "장액성 염증에서는 비교적 묽은 액체의 축적이 두드러질 수 있다. 표면 상피의 손상과 혈관성 체액 이동으로 생긴 물집이 한 예다. 육안으로 맑다는 이유만으로 비염증성 여출액이라 단정하지 않는다. 체강액의 기전 분류에는 해당 장기와 검사에 맞는 단백질·세포 등 자료가 필요하며, 모든 체액에 동일한 임의 기준을 적용할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.1d486c556da8",
+      "type": "heading",
+      "level": 2,
+      "text": "Fibrin이 남는 표면"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.2189e2f3e568",
+      "type": "paragraph",
+      "markdown": "섬유소성 염증에서는 혈관 밖으로 나온 fibrinogen이 fibrin으로 전환되어 표면이나 간질에 망을 만든다. 장막 표면에서 거칠고 실 같은 물질이 보일 수 있다. Fibrin의 유출·형성은 응고와 염증이 연결된 결과지만, 혈관 안 혈전과는 위치와 기능이 다르다. Fibrin 침착을 보았다는 사실과 그 병변이 전신 DIC라는 진단은 같지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.1ae0ebcd258f",
+      "type": "paragraph",
+      "markdown": "Fibrin과 삼출물이 제거되고 구조가 보존되면 정상으로 회복할 수 있다. 제거되지 않은 물질 안으로 모세혈관과 섬유모세포가 자라 들어가면 조직화(organization)되어 섬유성 유착이나 반흔이 남는다. 장막 사이의 유착은 원래 자유롭게 움직이던 면의 운동을 제한할 수 있다. 형태의 변화는 단순한 염색 소견을 넘어 장기의 역학적 기능으로 이어진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.d2aff304cf66",
+      "type": "heading",
+      "level": 2,
+      "text": "고름과 국소 공동"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.ee0328b70228",
+      "type": "paragraph",
+      "markdown": "고름(pus)은 호중구, 괴사 잔해와 액체 등이 모인 물질이다. 농양(abscess)은 화농성 반응이 국소 공동을 형성한 병변으로, 중심의 액화성 잔해와 주변의 염증·조직 반응을 구별할 수 있다. 주변부는 시간에 따라 육아조직과 섬유성 벽을 형성할 수 있다. 중심의 표본만 채취하면 살아 있는 주변 조직의 반응을 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.827836667c7f",
+      "type": "paragraph",
+      "markdown": "고름이 관찰된다는 사실이 특정 균종을 확정하지 않으며, 고름이 적다는 사실도 감염을 배제하지 않는다. 세포 동원 결함이나 면역억제는 병변의 세포 구성을 바꿀 수 있다. 괴사조직과 폐쇄된 공간은 약물과 방어세포가 작동하는 환경에도 영향을 준다. 농양을 단순히 염증표지 수치가 높은 상태와 같게 취급하지 않고 해부학적 위치와 범위를 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.0fa2f0b9fa86",
+      "type": "heading",
+      "level": 2,
+      "text": "궤양은 표면 결손이다"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.3ed8d6bba6dc",
+      "type": "paragraph",
+      "markdown": "궤양(ulcer)은 표면 상피와 그 아래 조직이 소실된 결손이다. 피부·위장관 등에서 생길 수 있으며 원인은 염증, 허혈, 외상과 종양을 포함한다. 바닥과 가장자리, 깊은 층의 소견은 서로 다를 수 있다. 표면의 급성 삼출과 깊은 부위의 만성 염증·섬유화가 함께 존재하는 것은 흔히 다른 시간층이 겹친 결과다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.b.12a04e59d425",
+      "type": "paragraph",
+      "markdown": "조직 보고서에서는 병변의 패턴, 분포와 손상 깊이를 먼저 읽고 병력·내시경·영상 및 미생물학적 자료와 결합한다. 괴사 중심만 있는 작은 표본에서 원인 미생물이나 종양이 보이지 않았다고 전체 병변에서 없다고 결론내리지 않는다. 반대로 형태가 특징적이어도 검사법의 민감도와 감별 범위를 검토한다. 형태 기술은 원인 추론의 출발점이지 모든 검사를 대체하는 종착점이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.acute-morphology.table.0822",
+      "type": "table",
+      "data": {
+        "title": "핵심 과정의 비교",
+        "columns": [
+          "과정·지표",
+          "의미"
+        ],
+        "rows": [
+          [
+            "장액성",
+            "묽은 체액 축적이 두드러지는 형태"
+          ],
+          [
+            "섬유소성",
+            "혈관 밖 fibrin 침착"
+          ],
+          [
+            "농양",
+            "국소 화농성 공동"
+          ],
+          [
+            "궤양",
+            "표면 상피와 아래 조직의 결손"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/sections/pathology.inflammation.acute-morphology.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.inflammation.acute-morphology.001"
+  ],
+  "relatedLessons": [
+    "pathology.inflammation.complement-kinin-crossroads",
+    "pathology.inflammation.systemic-acute-phase"
+  ]
+}

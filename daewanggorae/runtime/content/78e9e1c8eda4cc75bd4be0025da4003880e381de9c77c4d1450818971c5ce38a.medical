@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.methods.flow-cytometry-counts",
+  "subjectId": "immunology",
+  "chapterId": "methods",
+  "title": {
+    "ko": "유세포분석의 비율·절대수와 기능 판독",
+    "en": "Flow Cytometry Proportions Absolute Counts and Function"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.methods.flow-cytometry-counts.lo.01",
+      "text": "Gate의 분모와 절대수를 계산한다"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.lo.02",
+      "text": "발현·활성·기능 검사를 분리한다"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.lo.03",
+      "text": "대조와 시료 품질이 결론에 미치는 영향을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.a1d2870f0fb5",
+      "type": "heading",
+      "level": 2,
+      "text": "한 점이 곧 한 종류의 세포는 아니다"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.c6f8aea096f1",
+      "type": "paragraph",
+      "markdown": "유세포분석(flow cytometry)은 유동 중 개별 사건의 산란과 형광 등을 측정한다. 세포 크기·과립도와 관련된 산란, 표지 항체의 형광을 조합하여 집단을 나누지만 잔해·이중체와 죽은 세포를 먼저 고려해야 한다. Gate는 자연계가 미리 정해 둔 경계가 아니라 분석자가 자료와 대조에 근거해 설정한 선택이다. 그 안의 비율은 어떤 부모 집단을 분모로 삼았는지에 따라 의미가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.adaf0ab7ab47",
+      "type": "paragraph",
+      "markdown": "림프구 gate 안의 CD3 양성 비율과 전체 백혈구 중 CD3 양성 비율은 같지 않다. 두 검사에서 같은 60%라는 숫자가 나와도 분모가 다르면 비교할 수 없다. 단일세포·생존세포 선택과 표지 조합의 순서를 기록해야 재분석이 가능하다. 일부 표지가 겹치거나 활성 상태에서 변하므로 한 형광만으로 모든 계통을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.8e8e603ac58e",
+      "type": "heading",
+      "level": 2,
+      "text": "백분율이 유지되어도 절대수는 감소한다"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.baaa21d3b15e",
+      "type": "paragraph",
+      "markdown": "절대 림프구 수가 2,000/μL이고 그중 T세포가 60%이면 계산 T세포 수는 1,200/μL다. 림프구 수가 500/μL로 줄어도 T세포 비율이 60%이면 T세포 절대수는 300/μL가 된다. 같은 비율을 정상적인 세포 공급의 증거로 사용할 수 없다. 이 숫자는 계산 학습을 위한 가상 자료이며 연령별 정상범위를 제시하는 것이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.e8b530615937",
+      "type": "paragraph",
+      "markdown": "백혈구 수×림프구 분율×특정 집단 분율의 곱을 사용하는 경우 각 분율의 분모가 정확히 이어져야 한다. Counting bead를 이용한 단일 플랫폼 측정과 전혈구계산을 결합하는 방법은 각각의 오차와 가정을 가진다. 백분율 자료에 다른 날의 총세포 수를 무심코 곱하면 생물학적 변화와 측정 오차가 섞일 수 있다. 채혈 시점과 방법을 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.d3ef5d3eeecb",
+      "type": "heading",
+      "level": 2,
+      "text": "형광의 양성은 기능의 완성이 아니다"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.2fd16cf56e5a",
+      "type": "paragraph",
+      "markdown": "표면 수용체 발현은 그 단백질이 검출되었다는 정보다. 리간드 결합과 하위 신호, 세포 반응이 정상이라는 결론은 별도다. 예를 들어 활성화 뒤 CD40L이 보이더라도 항체가 인식하는 부위가 남고 기능은 손상된 경우가 가능하다. 반대로 자극 전의 낮은 발현을 활성화 실패로 판단하지 않도록 자극 후 대조와 시점을 맞춘다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.4bfd914bca5d",
+      "type": "paragraph",
+      "markdown": "세포내 사이토카인 염색은 자극·수송 차단과 고정·투과화의 영향을 받는다. 혈중에서 실제 분비된 농도와 같은 값이 아니다. 인산화 유세포분석은 짧은 시간창의 신호를, 분열 염료는 분열 이력을, 생존 염색은 막 상태 등의 정보를 준다. 서로 다른 판독을 하나의 면역 활성 점수로 단순 합산하면 각 검사의 질문을 잃게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.8b0582b2ecdc",
+      "type": "heading",
+      "level": 2,
+      "text": "기술적 대조와 생물학적 대조"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.5ed3ded6b5d4",
+      "type": "paragraph",
+      "markdown": "형광의 스펙트럼 겹침은 보상 또는 해당 장비의 분리 과정이 필요하다. 단일 염색 대조와 비자극·자극 대조, 생존 대조는 서로 다른 오류를 다룬다. Fluorescence-minus-one(FMO) 대조는 다른 표지가 있는 상태에서 경계 설정을 돕지만 모든 비특이 결합과 생물학적 활성의 원인을 설명하지는 않는다. 대조의 목적을 명시하고 결과를 과도하게 확장하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.b.800dda282d74",
+      "type": "paragraph",
+      "markdown": "지연 운송과 온도, 동결·해동은 세포 구성과 기능을 바꿀 수 있다. 정상 대조를 같은 조건으로 처리하고 연령에 맞는 기준을 이용해야 한다. 결과가 임상과 맞지 않으면 gate와 생존·분모, 시료 정보를 재검토한다. 유세포분석은 정교한 패턴 자료를 제공하지만 유전자 원인과 임상 질환은 기능·유전 및 다른 검사와 결합하여 판단해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.diagram.immune-absolute-count-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-absolute-count-toy",
+      "path": "diagrams/diagram.immune-absolute-count-toy.svg",
+      "alt": "같은60%와 다른 절대수의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.methods.flow-cytometry-counts.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "백분율",
+            "부모 집단을 분모로 한 구성"
+          ],
+          [
+            "절대수",
+            "혈액 부피당 세포 수"
+          ],
+          [
+            "발현",
+            "검출된 단백질의 정보"
+          ],
+          [
+            "기능",
+            "신호·분열·분비·살상 등 별도 판독"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/methods/sections/immunology.methods.flow-cytometry-counts.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.methods.flow-cytometry-counts.001",
+    "question.immunology.methods.flow-cytometry-counts.002"
+  ],
+  "relatedLessons": [
+    "immunology.mucosal.iga-oral-tolerance"
+  ]
+}

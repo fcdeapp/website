@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.devices.pacemaker-timing",
+  "subjectId": "cardiology",
+  "chapterId": "devices",
+  "title": {
+    "ko": "심박동기 시간 설정과 방실 동기",
+    "en": "Pacemaker Timing and Atrioventricular Synchrony"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.devices.pacemaker-timing.lo.01",
+      "text": "감지 사건과 시간 창의 관계를 설명한다"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.lo.02",
+      "text": "방실 간격의 혈역학을 해석한다"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.lo.03",
+      "text": "기기 매개 빈맥과 정상 추적을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.68f5232df093",
+      "type": "heading",
+      "level": 2,
+      "text": "시간 창으로 보는 조율"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.a6193ef44847",
+      "type": "paragraph",
+      "markdown": "심박동기의 동작을 이해하려면 전극 위치뿐 아니라 시간 축을 함께 보아야 한다. 심방과 심실의 감지·조율 사건은 다음 사건을 허용하거나 억제하는 기준점이 된다. 자극 직후의 차단 시간(blanking period)은 불필요한 신호를 인식하지 않도록 하는 구간이고, 불응기(refractory period)는 감지된 신호의 추적·반응을 제한하는 데 사용된다. 명칭과 세부 동작은 기기 설정에 따라 확인해야 하며 두 시간을 모든 장치에서 완전히 같은 기능으로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.5071d892c25b",
+      "type": "paragraph",
+      "markdown": "심방을 감지하고 일정 방실 지연 뒤 심실을 조율하는 방식은 심방과 심실의 순서를 유지할 수 있다. 그 사이에 정상 심실 활동이 감지되면 출력을 억제할 수 있다. 따라서 심방 사건 뒤 항상 같은 형태의 조율 QRS가 보이지 않아도 정상 동작일 수 있다. 표면 PR 간격은 기기의 내부 방실 타이머와 정확히 같은 측정값이 아니다. 감지 위치와 신호 인식, 자발 전도와 융합의 영향을 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.71b0751e6271",
+      "type": "heading",
+      "level": 2,
+      "text": "방실 간격과 충만"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.d43d1ad09c06",
+      "type": "paragraph",
+      "markdown": "심방 수축은 심실 충만에 기여하고 특히 이완 기능이 제한된 상태에서 중요할 수 있다. 심실 조율이 너무 일찍 일어나면 심방 수축이 완성되기 전에 방실판이 닫혀 유입이 제한될 수 있다. 지나치게 긴 간격도 유리한 것은 아니다. 심방 수축과 심실 수축 사이의 관계가 어긋나고 방실판 역류나 충만 손실이 나타날 수 있다. 불필요한 심실 조율을 줄이는 목적과 적절한 방실 혈역학을 유지하는 목적을 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.7f74bc84f5b8",
+      "type": "paragraph",
+      "markdown": "방실 간격의 최적값은 심박수와 자발 전도, 심방·심실 기능 및 판막 상태에 따라 달라진다. 안정 시 유리한 설정이 운동 중에도 같다고 가정하지 않는다. 심초음파 유입과 증상, 혈압 및 기기 기록은 서로 다른 정보를 제공한다. 한 유입 파형의 개선만으로 모든 장기 결과가 좋아졌다고 확정하지 않는다. 조정 전후에는 무엇을 개선하려는지와 어떤 부작용을 감시하는지를 명확히 해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.d11e76c96eee",
+      "type": "heading",
+      "level": 2,
+      "text": "추적 속도의 상한"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.fa0936d7ba65",
+      "type": "paragraph",
+      "markdown": "심방을 추적하는 기기는 빠른 심방 리듬을 심실로 그대로 전달하지 않도록 상한과 보호 기능을 둔다. 상한 부근에서 심방 사건과 심실 조율의 비율이 달라져 겉으로 방실차단처럼 보일 수 있다. 이때 실제 심장 전도계의 새로운 손상과 기기의 정상 시간 규칙에 따른 동작을 구별한다. 운동 증상이 있으면 활동 중 심방 속도, 기기 상한과 불응기 및 자발 전도 자료를 함께 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.1165a9fc1a78",
+      "type": "paragraph",
+      "markdown": "심방세동처럼 빠르고 비조직적인 심방 활동을 계속 추적하면 심실 반응이 부적절해질 수 있다. 모드 전환(mode switching)은 이러한 상황에서 추적 방식을 바꾸는 기능의 하나다. 모드 전환 기록은 심방 부정맥을 의심하는 단서지만 저장 신호를 확인하여 과감지와 다른 리듬을 구별해야 한다. 기기가 붙인 사건 이름을 원 신호 없이 임상 확진으로 처리하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.4180aa1cc2c8",
+      "type": "heading",
+      "level": 2,
+      "text": "회귀에 참여하는 기기"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.53c45ed39172",
+      "type": "paragraph",
+      "markdown": "일부 이중방 기기에서는 심실 조율 뒤 역행성 심방 활성화가 생기고 이를 다시 심방 사건으로 추적하여 심실을 조율하는 회귀가 가능하다. 이를 심박동기 매개 빈맥(pacemaker-mediated tachycardia)의 한 형태로 이해할 수 있다. 회로에는 심장 내 역행성 전도와 기기의 추적 규칙이 함께 참여한다. 모든 빠른 조율 리듬을 같은 회귀로 부르지 않고 심방빈맥 추적, 속도 반응과 감지 오류 등을 감별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.b.012b33ef4f04",
+      "type": "paragraph",
+      "markdown": "환자의 두근거림과 저장 전기도, 시작 사건과 종료 반응을 연결하면 회로를 좁힐 수 있다. 예방 기능과 시간 설정의 조정은 장치별 동작을 확인하여 시행한다. 치료의 목적은 단순히 숫자를 낮추는 데 있지 않고 적절한 순환과 활동 능력, 증상과 안전을 유지하는 데 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "차단 시간",
+            "불필요한 신호 인식 제한"
+          ],
+          [
+            "방실 지연",
+            "심방–심실의 시간 관계"
+          ],
+          [
+            "상한 동작",
+            "기기 규칙과 새 전도질환 구별"
+          ],
+          [
+            "기기 매개 회귀",
+            "역행성 전도+추적 규칙"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 기기의 시간 규칙은 별도 상태·시간 도식으로 나타내는 것이 적합하며 정상 심장 OBJ의 표면 회전으로 이를 표현했다고 설명해서는 안 된다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.pacemaker-timing.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.devices.pacemaker-timing.001"
+  ],
+  "relatedLessons": [
+    "cardiology.devices.pacemaker-troubleshooting",
+    "cardiology.devices.icd-detection-therapy"
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.genetic.variant-phenotype",
+  "subjectId": "pathology",
+  "chapterId": "genetic",
+  "title": {
+    "ko": "유전변이에서 표현형으로 이어지는 기전",
+    "en": "Mechanisms Linking Genetic Variation to Phenotype"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.genetic.variant-phenotype.lo.01",
+      "text": "기능소실·기능획득·우성음성의 차이를 설명한다"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.lo.02",
+      "text": "침투도와 표현도를 구별한다"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.lo.03",
+      "text": "유전형 전달 확률과 실제 발현 확률을 분리하여 계산한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.genetic.variant-phenotype.b.717b7d163f42",
+      "type": "heading",
+      "level": 2,
+      "text": "변이의 위치에서 분자 기능으로"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.9d418a93d473",
+      "type": "paragraph",
+      "markdown": "유전변이(genetic variant)는 DNA 서열이나 구조의 차이를 말하며 그 자체가 질병의 동의어는 아니다. 단백질 암호화 영역뿐 아니라 스플라이싱·전사 조절·유전자 용량에 영향을 주는 변화도 중요하다. 염기 치환, 작은 삽입·결실과 큰 구조변이는 검사 기술마다 검출 가능한 범위가 다르다. 한 종류의 검사에서 음성이었다는 결과를 모든 유전적 원인의 부재로 확대해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.51742d53a637",
+      "type": "paragraph",
+      "markdown": "기능소실(loss of function)은 생성량·안정성·위치·효소 또는 결합 기능이 감소하는 여러 경로를 포함한다. 조기 종결이나 틀이동이 있다고 실제 모든 전사체·조직에서 동일한 단백질 감소가 나타난다고 단정하지 않는다. 어떤 전사체가 발현되는지, 분해 감시가 작동하는지와 기능 영역의 위치가 중요하다. 변이의 형태와 최종 분자 효과 사이에는 검증해야 하는 단계가 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.055066d93e59",
+      "type": "heading",
+      "level": 2,
+      "text": "열성과 반수체불충분의 용량 문제"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.148c2df83e2c",
+      "type": "paragraph",
+      "markdown": "한 정상 대립유전자가 만드는 산물이 생리적 요구를 충족하면 다른 한쪽의 기능소실이 있어도 뚜렷한 질환이 나타나지 않을 수 있다. 많은 열성 질환에서 효소 활성의 여유가 이러한 현상을 설명하는 데 도움이 된다. 그러나 모든 단백질에 충분한 여유가 있는 것은 아니다. 반수체불충분(haploinsufficiency)은 정상 한 사본의 산물만으로 필요한 기능을 유지하기 어려운 상황이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.219099385767",
+      "type": "paragraph",
+      "markdown": "가상의 기능 산물량을 두 정상 사본에서100, 한 정상 사본에서50으로 두어 보자. 필요한 최소량이40인 기능은50에서도 유지될 수 있지만, 필요한 양이70이면50에서 부족해진다. 이는 같은 절반 감소가 서로 다른 표현형을 만들 수 있음을 보여 주는 문턱 예시다. 실제 유전자는 되먹임, 비선형 반응과 조직별 발현을 가지므로 모든 이형접합자의 산물량이 정확히 정상의 절반이라는 법칙으로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.df4b52421257",
+      "type": "heading",
+      "level": 2,
+      "text": "우성음성과 기능획득"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.362096b8b66f",
+      "type": "paragraph",
+      "markdown": "우성음성(dominant-negative) 효과는 변이 산물이 정상 산물의 기능을 방해하는 경우다. 여러 소단위가 결합하는 복합체에서 비정상 소단위의 혼입이 전체 기능에 영향을 주는 상황이 한 예다. 정상 산물이 단지 줄어드는 반수체불충분과는 기전이 다르다. 반대로 기능획득(gain of function)은 활성 증가, 활성화 조건의 변화 또는 새로운 기능을 포함할 수 있다. 우성 유전이라는 계보 양상만으로 어느 분자 기전인지 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.056036e7ce9c",
+      "type": "paragraph",
+      "markdown": "정상·비정상 소단위가 각각 절반이고 무작위로 이량체를 형성하며 정상 소단위 두 개로 된 복합체만 기능한다고 가정하면 기능 복합체의 비율은0.5²=0.25다. 정상 소단위 비율 p와 n개 소단위의 같은 조건에서는 pⁿ이다. 이 모형은 우성음성의 가능성을 이해하는 계산일 뿐 실제 복합체의 조립·분해·결합 선호나 잔여 기능을 증명하지 않는다. 모든 우성음성 질환을 이 식으로 수치화할 수도 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.9428beeb34e7",
+      "type": "heading",
+      "level": 2,
+      "text": "침투도와 표현도는 다른 질문이다"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.b70a9bfeb70d",
+      "type": "paragraph",
+      "markdown": "침투도(penetrance)는 특정 유전형을 가진 사람 중 정해진 표현형을 보이는 비율이다. 나이·성별·평가 기준·관찰 기간에 따라 그 값의 의미가 달라진다. 표현도(expressivity)는 발현한 특징의 종류와 정도에 관한 개념이다. 같은 변이를 가진 가족 구성원 중 일부가 증상이 없다는 관찰은 침투도와, 증상이 있는 사람 사이의 중증도 차이는 표현도와 관련하여 분석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.2d5e46cae69c",
+      "type": "paragraph",
+      "markdown": "상염색체 우성 변이를 가진 이형접합 부모와 그 변이가 없는 부모를 가정하면 자녀의 변이 전달 확률은 각 임신에서1/2이다. 해당 연령까지의 침투도를 가상으로0.8, 비보유자의 같은 표현형 확률을0으로 정하면 변이를 전달받아 표현형을 보일 확률은0.5×0.8=0.4다. 이 계산에서0.4와 변이 전달 확률0.5는 다른 사건이다. 가족 내 공유 환경, 성별 차이와 생식세포 모자이크 등이 있으면 실제 상담은 이 단순 조건과 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.c4398c2d5508",
+      "type": "heading",
+      "level": 2,
+      "text": "서로 다른 유전적 경로가 만드는 같은 증상"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.3a9afab49114",
+      "type": "paragraph",
+      "markdown": "서로 다른 유전자의 변화가 비슷한 질환을 일으키는 좌위 이질성(locus heterogeneity)과, 같은 유전자 안의 다른 변이가 질환을 일으키는 대립유전자 이질성(allelic heterogeneity)을 구별한다. 한 유전자도 변이의 효과에 따라 서로 다른 임상상을 만들 수 있다. 따라서 유전자 이름을 찾았다는 사실만으로 모든 변이의 위험·기전을 같게 취급할 수 없다. 표현형과 유전형의 관계는 유전자 수준과 변이 수준에서 함께 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.d5b6e2093ff0",
+      "type": "paragraph",
+      "markdown": "효소 결핍에서는 기질의 축적, 생성물 부족과 우회 대사체 증가가 각각 손상에 기여할 수 있다. 구조 단백질의 변화에서는 조직의 기계적 부담과 교체 속도가 임상 양상을 바꾼다. 수용체·이온통로에서는 발현 장기와 활성의 시간·전압·리간드 의존성이 중요하다. 같은 유전 양상 아래에도 전혀 다른 병태생리가 존재하므로 분자 기능을 장기 생리와 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.4e79193ed374",
+      "type": "heading",
+      "level": 2,
+      "text": "검사의 발견과 원인 판정"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.f86639e77af6",
+      "type": "paragraph",
+      "markdown": "의미불명변이(variant of uncertain significance, VUS)는 병적 또는 양성이라는 결론을 뒷받침할 근거가 충분하지 않은 변이다. 발견되었다는 사실을 원인 확진으로 바꾸지 않으며, 반대로 불확실하다는 이유만으로 이미 양성이라고 단정하지 않는다. 인구집단 빈도, 가족 내 분리, 기능 실험과 임상 적합성 등 여러 근거를 평가하고 시간에 따라 분류가 바뀔 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.b.4a6ffdae19ee",
+      "type": "paragraph",
+      "markdown": "기능 실험에서 변화가 관찰되어도 그 실험이 질환 관련 조직과 생리적 조건을 얼마나 반영하는지 확인해야 한다. 검체·검출 범위·변이 분류와 환자의 표현형을 연결한 뒤 임상적 의미를 판단한다. 계보에서의 우성·열성, 세포에서의 기능소실·획득, 검사실에서의 병원성 분류는 서로 관련되지만 동일한 분류 체계가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.diagram.functional-complex-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.functional-complex-toy",
+      "path": "diagrams/diagram.functional-complex-toy.svg",
+      "alt": "무작위 조립과 기능 복합체의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.diagram.penetrance-transmission-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.penetrance-transmission-toy",
+      "path": "diagrams/diagram.penetrance-transmission-toy.svg",
+      "alt": "전달과 발현의 조건부 확률의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.table.0813.0",
+      "type": "table",
+      "data": {
+        "title": "분자 기전",
+        "columns": [
+          "기전",
+          "주요 차이"
+        ],
+        "rows": [
+          [
+            "기능소실",
+            "산물의 양·기능 감소"
+          ],
+          [
+            "반수체불충분",
+            "정상1사본으로 부족"
+          ],
+          [
+            "우성음성",
+            "변이 산물이 정상기능 방해"
+          ],
+          [
+            "기능획득",
+            "활성·조건·기능의 증가/변화"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype.table.0813.1",
+      "type": "table",
+      "data": {
+        "title": "변이 해석",
+        "columns": [
+          "질문",
+          "구별"
+        ],
+        "rows": [
+          [
+            "전달",
+            "자녀가 변이를 보유할 사건"
+          ],
+          [
+            "침투도",
+            "보유자 중 정한 발현의 비율"
+          ],
+          [
+            "표현도",
+            "특징·중증도의 범위"
+          ],
+          [
+            "VUS",
+            "병원성 결론이 불충분"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/genetic/sections/pathology.genetic.variant-phenotype.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "relatedLessons": [
+    "pathology.nutrition.obesity-metabolic-injury",
+    "pathology.genetic.congenital-disease"
+  ],
+  "reviewQuestions": [
+    "question.pathology.genetic.variant-phenotype.001",
+    "question.pathology.genetic.variant-phenotype.002"
+  ]
+}

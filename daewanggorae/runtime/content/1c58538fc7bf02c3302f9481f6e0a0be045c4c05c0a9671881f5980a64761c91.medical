@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.hemodynamics.thrombosis-embolism",
+  "subjectId": "pathology",
+  "chapterId": "hemodynamics",
+  "title": {
+    "ko": "혈전 형성·색전 이동·경색",
+    "en": "Thrombosis, Embolization and Infarction"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.lo.01",
+      "text": "혈전의 세 가지 기전 축과 형성 이후 경과를 설명한다"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.lo.02",
+      "text": "정맥·동맥 색전의 이동 경로를 구별한다"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.lo.03",
+      "text": "폐색과 경색이 일대일 관계가 아님을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.fd2411be8fc2",
+      "type": "heading",
+      "level": 2,
+      "text": "혈전은 살아 있는 순환 안에서 형성된다"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.6d59bcc0f645",
+      "type": "paragraph",
+      "markdown": "혈전(thrombus)은 살아 있는 순환계에서 혈액 성분이 응집·응고하여 형성된 덩어리다. 손상 부위를 막는 정상 지혈과 혈관 안을 병적으로 막는 혈전은 분자 기전을 공유하지만 위치·범위·조절이 다르다. 내피의 항혈전 성질과 활성 변화,혈소판 부착·활성,응고효소 생성과 섬유소 형성,섬유소용해가 균형을 이룬다. 혈액 응고검사 하나가 이 모든 축을 같은 민감도로 측정하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.7329fd9c199a",
+      "type": "paragraph",
+      "markdown": "Virchow의 세 기전 축은 내피 손상·기능 변화,비정상 혈류,과응고 상태다. 정체는 활성화된 응고 인자의 제거와 억제인자의 공급을 바꾸고 내피·혈구 상호작용에 영향을 준다. 난류는 비정상 접촉과 국소 흐름을 만들 수 있다. 모든 혈전에서 세 축이 같은 비율로 작동하거나 세 요소가 모두 독립적으로 입증되어야만 혈전이 생기는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.88ade8f0a520",
+      "type": "heading",
+      "level": 2,
+      "text": "동맥과 정맥의 비교"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.bb8dfe824c51",
+      "type": "paragraph",
+      "markdown": "고전단 환경의 동맥 혈전에서는 혈소판 부착·활성의 기여가 중요하고,정맥 혈전에서는 정체와 응고계·섬유소의 기여가 두드러질 수 있다. 이는 경향이며 동맥에는 혈소판만,정맥에는 적혈구·섬유소만 존재한다는 뜻은 아니다. 흐름·병변·시간에 따라 구성은 달라진다. 병리에서 층판 구조가 보일 수 있지만 단일 외형만으로 모든 형성 시점과 원인을 정밀하게 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.72de9dc494d2",
+      "type": "paragraph",
+      "markdown": "혈전이 형성된 뒤에는 자라거나 일부가 떨어져 이동하고,용해되거나 기질화될 수 있다. 기질화(organization)에는 세포 유입과 섬유성 조직의 형성이 관여하고,재개통(recanalization)은 혈전 안에 통로가 형성되는 과정이다. 통로가 보인다는 사실이 원래 혈관 내강과 흐름이 완전히 정상화되었다는 뜻은 아니다. 잔여 정맥 폐쇄와 판막 손상은 장기적인 순환 장애에 기여할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.4b8f38599a51",
+      "type": "heading",
+      "level": 2,
+      "text": "색전은 출발점과 이동 방향을 읽는다"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.9ba037a64053",
+      "type": "paragraph",
+      "markdown": "색전(embolus)은 혈류를 타고 이동하다 다른 부위에 걸릴 수 있는 물질이다. 혈전의 일부뿐 아니라 지방·기체·조직 성분 등도 해당할 수 있다. 일반적인 체정맥 혈전의 일부는 오른심장을 거쳐 폐동맥 계통으로 이동할 수 있다. 왼심장이나 근위 동맥계에서 유래한 물질은 체동맥을 통해 여러 장기로 갈 수 있다. 혈관 이름만 외우기보다 실제 유입·유출 방향을 따라가야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.1ede0602f3f3",
+      "type": "paragraph",
+      "markdown": "역설적 색전(paradoxical embolism)은 정맥 쪽 물질이 우좌단락 등의 조건을 통해 체동맥으로 들어가는 상황이다. 단락의 존재,압력 조건과 실제 이동 가능성이 필요하므로 모든 정맥 혈전이 자유롭게 동맥으로 넘어간다고 설명하지 않는다. 폐혈관의 물질이 관찰되었다고 모두 말초 정맥에서 떨어져 온 동일한 원인으로 단정하지도 않는다. 현지 혈전 형성과 다른 색전 물질의 가능성을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.feb9e972a20b",
+      "type": "heading",
+      "level": 2,
+      "text": "폐색과 조직 손상 사이의 조건"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.151ca24b3206",
+      "type": "paragraph",
+      "markdown": "경색(infarction)은 혈류 공급 또는 배액 장애로 생긴 허혈성 조직 괴사다. 폐색 위치·범위·속도,곁순환,조직의 산소 수요와 혈액 산소함량이 영향을 준다. 이중 혈액 공급이나 곁순환이 있으면 일정 보호가 가능하지만 모든 급성 폐색을 안전하게 보장하지는 않는다. 동맥 폐색뿐 아니라 심한 정맥 배액 장애도 조직 손상을 만들 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.34d3afb3e3f4",
+      "type": "paragraph",
+      "markdown": "출혈성·빈혈성 경색이라는 외형적 구별에는 혈액 공급 구조,조직 밀도,정맥 폐색 및 재관류 등이 관여한다. 같은 장기에서도 상황에 따라 형태가 달라질 수 있다. 폐색이 확인된 시점과 조직 손상이 시작된 시점도 다를 수 있다. 정상 혈관 3D 모델은 경로를 학습하는 자료이며 실제 혈전·미세혈류·괴사 범위를 직접 보여 주는 질환 모델로 표시해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.0e353eac0f06",
+      "type": "heading",
+      "level": 2,
+      "text": "검사와 모형의 제한"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.1789ee79ffea",
+      "type": "paragraph",
+      "markdown": "과응고의 원인에는 유전적 소인과 후천적 염증·종양·호르몬·수술 및 부동 등 여러 요소가 관여할 수 있다. 원인 검사의 선택과 시점은 실제 임상 상황에 따라 달라진다. 혈전 분해 관련 물질이 증가했다는 사실만으로 혈전의 위치·크기·발생 시각을 확정할 수 없고,검사 전 가능성과 다른 원인을 함께 해석해야 한다. 임상 진단·치료 알고리즘은 질환별 근거가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.b.bb7ff642b48b",
+      "type": "paragraph",
+      "markdown": "가상 실험에서 덩어리 크기 M의 변화가 생성률 P와 제거률 R의 차이라면 동일한 순증가가 여러 P,R 조합에서 가능하다. 순증가가0이어도 생성과 제거가 모두 활발할 수 있다. 다만 실제 혈전은 유동·형상·성분·표면 반응이 결합되어 단순한 양의 수지로 이동 위험이나 폐색 위험을 계산할 수 없다. 표와 경로도에서는 기전의 축,이동의 해부학,조직 결과라는 세 층을 분리하여 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.diagram.embolus-circulation-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.embolus-circulation-pairs",
+      "path": "diagrams/diagram.embolus-circulation-pairs.svg",
+      "alt": "출발점과 일반적 색전 경로의 단계별 비교"
+    },
+    {
+      "id": "pathology.hemodynamics.thrombosis-embolism.table.compare",
+      "type": "table",
+      "data": {
+        "title": "혈전·색전·경색",
+        "columns": [
+          "말",
+          "질문"
+        ],
+        "rows": [
+          [
+            "혈전",
+            "순환 안에서 형성된 덩어리"
+          ],
+          [
+            "색전",
+            "이동하는 물질과 경로"
+          ],
+          [
+            "폐색",
+            "흐름의 차단 위치·정도"
+          ],
+          [
+            "경색",
+            "허혈성 조직 괴사 결과"
+          ]
+        ],
+        "notes": "정의와 대표 관계의 비교이며 임상 단일 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/hemodynamics/sections/pathology.hemodynamics.thrombosis-embolism.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "혈전 형성·색전 이동·조직 경색은 서로 다른 층이다."
+  ],
+  "relatedLessons": [
+    "pathology.cell.accumulations-calcification",
+    "pathology.hemodynamics.edema-fluid-balance"
+  ],
+  "reviewQuestions": [
+    "question.pathology.hemodynamics.thrombosis-embolism.001",
+    "question.pathology.hemodynamics.thrombosis-embolism.002"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.perioperative.surgical-infection",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.a0b74ff47d95",
+      "sourceSha256": "a0b74ff47d951df7aaa65c72282bcc71efe240ce065ad415a5b53fa9604c4373",
+      "sourceLengthUtf16": 256,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.8ab31aa0f61f",
+      "sourceSha256": "8ab31aa0f61f0c2e29be7dcf228be607e451f603a35c3a5b42fcc5544add7713",
+      "sourceLengthUtf16": 228,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.1eb03553a517",
+      "sourceSha256": "1eb03553a517bf2f4f205cc4e3c182a810a983b1a5d37b9944dc4813a5c5145c",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.6061be80dc2a",
+      "sourceSha256": "6061be80dc2a08167176878c11334ce6ba6aeff0d8874be855bb7c314496c2b6",
+      "sourceLengthUtf16": 237,
+      "annotations": [
+        {
+          "id": "ann.05259eb5702a1c53cdb5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 43,
+            "end": 46,
+            "exact": "당뇨병",
+            "prefix": "숙주 방어와 약물 도달을 제한할 수 있다. ",
+            "suffix": "과 흡연, 영양 상태와 면역억제는 여러 단계"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.7943d380d077",
+      "sourceSha256": "7943d380d077483041ed214c4fdfc18b885c3d1d54a258989dd0d21b08232591",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.5131a480e8e4a32a0454",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 7,
+            "end": 21,
+            "exact": "source control",
+            "prefix": "감염원 조절(",
+            "suffix": ")은 농양의 배액, 괴사조직 제거, 오염의 "
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.4868bbd2620b",
+      "sourceSha256": "4868bbd2620b1f3050c825b7da1c93acab434aba2eadf1c4d4d95a483556ec1a",
+      "sourceLengthUtf16": 223,
+      "annotations": [
+        {
+          "id": "ann.f845009ad4fc3e464d32",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 39,
+            "end": 103,
+            "exact": "관이 막히거나 위치가 맞지 않으면 일부 공간이 남을 수 있고, 배액량이 줄어든 것이 반드시 호전을 의미하지 않는다.",
+            "prefix": " 공간이 충분히 배액된다는 사실도 다르다. ",
+            "suffix": " 새 통증과 발열, 장기 기능 변화가 생기면"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.c9e6baa940f6",
+      "sourceSha256": "c9e6baa940f6b6bd4e447bed4f9ac8afa30421356de4adf8f6c4d34720c80323",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.e0d735793f26",
+      "sourceSha256": "e0d735793f26e50e328780e4354fc51c52b3c395d87d43cfc4513281b8e09693",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.3b6bbd8b24b3",
+      "sourceSha256": "3b6bbd8b24b31f754b680c3ec05acdbe4306a2b0dfad044fae754ed773cff9cd",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.surgical-infection.b.9787757d2989",
+      "sourceSha256": "9787757d298951060f42d2845fae437bf4d677712c0f44b1c08ffb10d78eb105",
+      "sourceLengthUtf16": 241,
+      "annotations": []
+    }
+  ]
+}

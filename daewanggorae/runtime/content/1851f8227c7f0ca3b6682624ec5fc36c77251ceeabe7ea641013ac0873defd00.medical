@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.inflammation.opsonin-phagolysosome",
+  "subjectId": "pathology",
+  "chapterId": "inflammation",
+  "title": {
+    "ko": "옵소닌 인식과 포식소체의 성숙",
+    "en": "Opsonization and Phagosome Maturation"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.lo.01",
+      "text": "부착·내재화·살균의 실험 결과를 분리한다"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.lo.02",
+      "text": "Fc와 보체 수용체의 역할을 설명한다"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.lo.03",
+      "text": "포식소체의 구획 성숙을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.4696eecab9e3",
+      "type": "heading",
+      "level": 2,
+      "text": "표적을 알아보는 여러 방법"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.6d2abb3ddb45",
+      "type": "paragraph",
+      "markdown": "포식(phagocytosis)은 입자성 표적을 세포막으로 둘러싸 내부 구획으로 가져오는 과정이다. 대식세포와 호중구는 미생물의 구조를 직접 인식하거나, 표적에 결합한 항체와 보체를 인식하여 효율적으로 포식한다. 표적을 감싸 인식과 섭취를 돕는 성분을 옵소닌(opsonin)이라 한다. 옵소닌이 표적에 붙는 단계와 포식세포의 수용체가 그 표지를 알아보는 단계는 구별된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.3192076a1b5f",
+      "type": "paragraph",
+      "markdown": "IgG로 덮인 표적에서는 Fcγ 수용체가 항체의 Fc 부위를 인식한다. C3b와 그 가공 산물은 보체 수용체를 통한 부착·섭취에 관여한다. 수용체에 따라 신호와 세포골격의 배열은 다를 수 있고, 표적에 항체와 보체가 함께 있으면 경로가 협력한다. 항체가 존재한다는 사실만으로 모든 미생물이 동일한 효율로 제거되는 것은 아니며 항체의 특성, 표적 접근성과 세포 기능이 함께 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.4949623f0208",
+      "type": "heading",
+      "level": 2,
+      "text": "부착된 입자와 삼켜진 입자를 나눈다"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.7e56d15d05d3",
+      "type": "paragraph",
+      "markdown": "수용체가 표적에 결합하면 actin이 재편되고 막이 표적을 둘러 포식소체(phagosome)를 만든다. 세포 표면에 붙어 있는 입자는 아직 세포 안에 들어간 입자와 다르다. 실험에서 형광 입자가 세포 근처에 많다는 관찰만으로 포식 증가를 결론내릴 수 없는 이유다. 세포 밖 형광을 소광하거나 외부 항체의 접근성을 이용하면 표면 부착과 내재화를 구별하는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.e66c4991ad18",
+      "type": "paragraph",
+      "markdown": "표적의 크기·모양과 강성은 섭취에 영향을 준다. 세포가 완전히 감싸기 어려운 큰 물질에서는 효소와 활성산소가 바깥으로 방출되어 주변 조직 손상을 일으킬 수 있다. 이는 입자가 잘게 나뉘어 내부에서 처리되는 상황과 다르다. 이물 표면에 대식세포와 거대세포가 오래 남는 현상도 표적의 제거 가능성과 크기를 연결하여 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.0ecd04df3a36",
+      "type": "heading",
+      "level": 2,
+      "text": "성숙하는 구획"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.3e86d3cbcc09",
+      "type": "paragraph",
+      "markdown": "갓 형성된 포식소체는 세포막의 단순한 함입 상태로 머물지 않는다. 엔도솜 및 리소좀과 막을 주고받으며 지질과 단백질 구성을 바꾼다. 대식세포의 대표적인 성숙 과정에서 초기 Rab5 관련 상태가 후기 Rab7 관련 상태로 전환되고, v-ATPase와 가수분해효소를 갖춘 구획으로 발전한다. 이러한 전환은 수송·융합과 효소 활성의 조절 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.8d5ae9afad8c",
+      "type": "paragraph",
+      "markdown": "포식리소좀(phagolysosome)은 분해에 적합한 환경을 형성하지만, 구획의 산도와 효소 조합은 세포 유형과 활성 상태에 따라 다르다. 호중구는 미리 저장한 과립의 성분을 빠르게 공급하고 산화 반응과 이온 이동도 구획의 조건을 바꾼다. 모든 포식세포에서 동일한 pH가 같은 시간에 형성된다는 단일 모형은 적절하지 않다. 단순 산성화 표지와 실제 미생물 살균은 별도로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.4ebde5a21d96",
+      "type": "heading",
+      "level": 2,
+      "text": "미생물 생존과 항원 제시"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.df5ca6649d7c",
+      "type": "paragraph",
+      "markdown": "일부 병원체는 포식소체 성숙을 방해하거나 구획 밖으로 이동하여 숙주 방어를 회피한다. 세포 안에서 미생물이 보인다는 사실은 제거에 성공했다는 뜻이 아니다. 섭취한 미생물 수와 시간에 따른 살아 있는 미생물 수를 구별해야 한다. 표적의 형광 신호는 죽은 미생물에서도 남을 수 있으므로 생존 판독의 성질을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.b.983cc89d8e89",
+      "type": "paragraph",
+      "markdown": "수지상세포와 대식세포에서는 단백질 분해가 항원 제시와도 연결된다. 완전한 분해를 극대화하는 목적과 제시에 필요한 펩타이드를 남기는 목적은 항상 일치하지 않는다. 따라서 같은 입자를 섭취해도 세포 종류에 따라 면역반응의 결과가 달라질 수 있다. 포식량, 세포의 활성, 항원 제시와 살균을 한 지표로 대체하지 않는 것이 실험과 임상 추론의 기본이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.opsonin-phagolysosome.table.0822",
+      "type": "table",
+      "data": {
+        "title": "핵심 과정의 비교",
+        "columns": [
+          "과정·지표",
+          "의미"
+        ],
+        "rows": [
+          [
+            "옵소닌",
+            "표적에 붙어 인식·섭취를 돕는 표지"
+          ],
+          [
+            "포식소체",
+            "섭취한 표적을 둘러싼 세포 내 구획"
+          ],
+          [
+            "성숙",
+            "엔도솜·리소좀과의 상호작용 및 구획 변화"
+          ],
+          [
+            "살균",
+            "살아 있는 미생물 감소로 별도 평가"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/sections/pathology.inflammation.opsonin-phagolysosome.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.inflammation.opsonin-phagolysosome.001"
+  ],
+  "relatedLessons": [
+    "pathology.inflammation.chemotactic-migration",
+    "pathology.inflammation.oxidative-killing"
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "clinical-communication.consultation.shared-decisions",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.a924add4c611",
+      "sourceSha256": "a924add4c6112d470c6c8f33c4e05b4d12c7088949f0dd1378365d6e36329d69",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.2194cb1dcac2",
+      "sourceSha256": "2194cb1dcac234aa5552c3708925b1089d0c6e38563d693fb7a6fbaddbf987fd",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.45b69553dd6d3fd58551",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 72,
+            "exact": "의학적 설명은 한 번에 모든 사실을 전달하는 것보다 중요한 정보를 묶어 제시하고 이해를 확인하며 이어가는 방식이 유용할 수 있다.",
+            "prefix": "",
+            "suffix": " 일상 언어와 전문용어를 연결하고 필요한 그"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.87a62278f24b",
+      "sourceSha256": "87a62278f24bdcf31646e1b20f1840f1ce502a789b6a8abe76b09cd99df3ede5",
+      "sourceLengthUtf16": 229,
+      "annotations": [
+        {
+          "id": "ann.9295083b68665d480b52",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 187,
+            "end": 193,
+            "exact": "의사결정능력",
+            "prefix": " 중요한 결과와 부담을 확인한다. 긴급도와 ",
+            "suffix": ", 실제 대안의 존재에 따라 대화 방식과 시"
+          },
+          "conceptId": "reader.term.558f849ea5dc0e35",
+          "targetDocumentId": "medical-ethics.consent.shared-decisions"
+        },
+        {
+          "id": "ann.6e6145091e67e19e47a5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 124,
+            "end": 181,
+            "exact": "가능한 선택과 권고 이유, 이득과 위해 및 불확실성을 설명하고 환자에게 중요한 결과와 부담을 확인한다.",
+            "prefix": "원하는 것을 무조건 따르는 방식이 아니다. ",
+            "suffix": " 긴급도와 의사결정능력, 실제 대안의 존재에"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.816a63a2b6d3",
+      "sourceSha256": "816a63a2b6d3deb8c7bca96474713148052d03658d518420d96a04199d80cbc4",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.343e7f695dca",
+      "sourceSha256": "343e7f695dcae3581cf7e722963d8f1f40dcf1b484f11ef5454aea04f4c4c95f",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.5f25628256e40801afde",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 102,
+            "end": 150,
+            "exact": "이득과 위해의 분모와 기간을 맞추고, 가벼운 이상반응과 중대한 위해의 성격도 구별한다.",
+            "prefix": "는지 절대빈도로 설명하면 비교가 쉬워진다. ",
+            "suffix": " 숫자가 정확해 보여도 개인의 결과를 보장하"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.2945df036b92",
+      "sourceSha256": "2945df036b92daad01f1d0b42d5d9361504ab71f783cb7469341b43c2e4e133a",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.16a4585bf2cc",
+      "sourceSha256": "16a4585bf2ccfc8820fb0b23a967b16856e01b05e262c45b1bafe7e9e9adb112",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.b2ec29955a4e",
+      "sourceSha256": "b2ec29955a4ea86c3a22b63b03a369d762141887ddc64f3bd07dcdf592031303",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.c8a1d8a60a79",
+      "sourceSha256": "c8a1d8a60a796775e3cb0c618aacd4ec678808673f00d9730042a6d8c4dc69f2",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.da154e74bcd6",
+      "sourceSha256": "da154e74bcd62b7a14bf28276f7cc83b220a969ac2f73a9e207b6253f37b9d49",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-communication.consultation.shared-decisions.b.eced05f5d6dc",
+      "sourceSha256": "eced05f5d6dc62de36282a18896474cf81eac8433a797b15b2fab883037d7186",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    }
+  ]
+}

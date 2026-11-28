@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.hypersensitivity.contact-t-cell-response",
+  "subjectId": "immunology",
+  "chapterId": "hypersensitivity",
+  "title": {
+    "ko": "접촉 감작과 T세포매개 지연 반응",
+    "en": "Contact Sensitization and Delayed T Cell Responses"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.lo.01",
+      "text": "감작기와 유발기를 구별한다"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.lo.02",
+      "text": "hapten과 피부 장벽·항원제시를 연결한다"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.lo.03",
+      "text": "알레르기성·자극성 피부염과 patch 검사의 범위를 비교한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.e14502ef109b",
+      "type": "heading",
+      "level": 2,
+      "text": "작은 물질이 단백질의 정보를 바꾼다"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.3bedbd38cbc4",
+      "type": "paragraph",
+      "markdown": "접촉 알레르겐은 피부 장벽을 통과한 뒤 단백질에 결합하거나 면역계가 보는 정보를 바꾸어 반응을 유도할 수 있다. Hapten은 홀로는 충분한 면역원성을 갖기 어려운 작은 물질이 운반 단백질과의 관계를 통해 항원 반응에 참여하는 개념이다. 모든 접촉 물질이 같은 화학 반응으로 작동하지는 않으며 금속 등에서도 인식 방식의 차이가 있다. 피부에 닿았다는 사실과 면역 감작이 성립했다는 결과를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.277dd74e3fbc",
+      "type": "paragraph",
+      "markdown": "장벽 손상과 국소 선천면역 신호는 수지상세포의 활성과 이동에 영향을 준다. 표피 Langerhans 세포와 진피 수지상세포 등은 조건에 따라 항원 정보를 배액 림프절로 전달한다. 특정 T세포의 초기 확장과 기억 형성이 감작기의 중요한 결과다. 최초 노출에서 뚜렷한 피부 증상이 없었다고 감작의 가능성이 완전히 사라지는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.4fdb625f3c90",
+      "type": "heading",
+      "level": 2,
+      "text": "재노출에서의 효과기 단계"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.bd988c2a303c",
+      "type": "paragraph",
+      "markdown": "유발기(elicitation phase)에는 관련 기억 T세포와 조직의 항원제시 환경이 반응한다. CD4의 사이토카인·대식세포 동원과 CD8의 세포독성 등은 조직 손상에 서로 다른 방식으로 기여할 수 있다. Type IV라는 분류를 CD4 한 종류의 느린 반응으로만 제한하면 세포독성과 다양한 세포 환경을 놓친다. 일부 세포는 조직에 남고 다른 세포는 혈액에서 새로 들어온다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.712a0fa3747c",
+      "type": "paragraph",
+      "markdown": "세포 이동과 유전자 발현, 조직의 부종·손상에는 시간이 필요하므로 초기 IgE 매개 반응과 다른 시간 양상이 나타날 수 있다. 그러나 늦게 생긴 모든 발진을 T세포 알레르기로 확정할 수는 없다. 감염·약물의 비면역성 영향과 다른 피부질환도 감별에 포함된다. 반응 시점은 기전 추론의 단서이지만 단독 진단 기준은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.214350f2646d",
+      "type": "heading",
+      "level": 2,
+      "text": "자극과 알레르기의 구별"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.8ab692a35dd6",
+      "type": "paragraph",
+      "markdown": "자극성 접촉피부염은 장벽 손상과 직접 독성·염증으로 발생할 수 있으며 특정 항원에 대한 기억 감작이 필수는 아니다. 세정제와 반복 마찰·습윤 등은 장벽을 약하게 만들고 알레르겐 접근에도 영향을 줄 수 있다. 두 기전은 서로 배타적인 환자 집단만 만드는 것이 아니라 한 사람에서 공존할 수 있다. 직업·생활 노출의 양과 반복, 분포를 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.5c8acfb3e7c2",
+      "type": "paragraph",
+      "markdown": "노출 부위의 경계와 손을 통한 전달, 공기 중 노출과 의복·장비의 접촉은 병변 위치를 설명하는 데 중요하다. 제품 이름이 같아도 성분과 사용법이 다를 수 있다. 같은 성분을 사용한 다른 사람의 반응 부재가 환자의 감작을 부정하지 않으며, 한 제품 회피 뒤 호전도 함께 바뀐 다른 조건의 영향을 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.12fda749eaa6",
+      "type": "heading",
+      "level": 2,
+      "text": "Patch 검사는 특정 질문에 답한다"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.c27e6f1745c7",
+      "type": "paragraph",
+      "markdown": "Patch 검사는 지연형 접촉 반응의 평가에 사용되며 피부단자검사와 목적·시행·판독이 다르다. 적절한 물질·농도·운반체와 판독 시점, 피부 상태와 약물의 영향을 고려한다. 실제 시행 농도와 판독 일정은 표준 절차와 전문가 감독을 요구한다. 학습용 표의 기전 분류를 자가 노출 방법으로 바꾸지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.b.2ae55ee19ad6",
+      "type": "paragraph",
+      "markdown": "양성 반응이 있어도 현재 피부염의 원인에 실제로 관련되는지 평가해야 한다. 과거 감작이나 다른 제품의 성분일 수 있기 때문이다. 음성 결과도 검사 항원 목록과 노출 물질·검사 민감도의 범위 안에서 해석한다. 세포 감작의 검출, 현재 노출과 병변의 인과성을 나누면 불필요한 회피와 놓친 원인을 줄이는 방향으로 결과를 사용할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.contact-t-cell-response.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "감작기",
+            "항원 제시와 특이 T세포 형성"
+          ],
+          [
+            "유발기",
+            "재노출 조직의 T세포 반응"
+          ],
+          [
+            "자극접촉피부염",
+            "특이 적응면역 감작 없이도 발생"
+          ],
+          [
+            "첩포시험",
+            "검사 조건·판독 시점과 임상 관련성 확인"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/hypersensitivity/sections/immunology.hypersensitivity.contact-t-cell-response.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.hypersensitivity.contact-t-cell-response.001"
+  ],
+  "relatedLessons": [
+    "immunology.hypersensitivity.type-iii-local-systemic",
+    "immunology.hypersensitivity.drug-recognition-mechanisms"
+  ]
+}

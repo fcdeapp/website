@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.inflammation.granulomatous-patterns",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.inflammation.granulomatous-patterns.b.7f45edea05a9",
+      "sourceSha256": "7f45edea05a941fc40ff226a2dfe9f4fddda485296cbafdc9f8d721f58c72b56",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.granulomatous-patterns.b.def6b45912c7",
+      "sourceSha256": "def6b45912c7055f61de7c753f7618540baf23e5bd5459bedebd0e210e787de9",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.23876181f2e74bb8c0be",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 18,
+            "end": 36,
+            "exact": "granulation tissue",
+            "prefix": "육아종은 상처를 채우는 육아조직(",
+            "suffix": ")과 다르다. 육아조직은 신생혈관과 섬유모세"
+          },
+          "conceptId": "reader.term.8a331b02bb0d602d",
+          "targetDocumentId": "general-surgery.wound.proliferation-matrix"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.granulomatous-patterns.b.01bb09d0b58e",
+      "sourceSha256": "01bb09d0b58e74120294b3f60999ceb07988f421bc4fc4fa298c9887a0913090",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.granulomatous-patterns.b.291f37e00ac3",
+      "sourceSha256": "291f37e00ac3b43212a316f5fdd27798e75ef938e8f0cacca6a0da05b81c562a",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.granulomatous-patterns.b.287f647dc56d",
+      "sourceSha256": "287f647dc56d6d1524de58f5117547242b6d775ef22af00d57fba6d9183eb67f",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.f0e81ad660da05d8d94b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 73,
+            "end": 75,
+            "exact": "결핵",
+            "prefix": "는 말은 특정 육안·조직 양상을 기술한다. ",
+            "suffix": "균과 일부 진균 감염이 중요한 감별이지만 이"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        },
+        {
+          "id": "ann.3800a619ec976d08addf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 73,
+            "end": 130,
+            "exact": "결핵균과 일부 진균 감염이 중요한 감별이지만 이 형태 하나가 균의 존재와 종을 직접 입증하지는 않는다.",
+            "prefix": "는 말은 특정 육안·조직 양상을 기술한다. ",
+            "suffix": " 비괴사성 육아종도 sarcoidosis에만"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.granulomatous-patterns.b.f478906ffdad",
+      "sourceSha256": "f478906ffdad117557edcc70a2d79b5b7120135f0cb3dc6efec788794505791d",
+      "sourceLengthUtf16": 180,
+      "annotations": [
+        {
+          "id": "ann.22f2bddcf3e96aa62136",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 120,
+            "end": 180,
+            "exact": "고정 조직으로 수행 가능한 검사와 살아 있는 검체를 요구하는 검사를 미리 구별해야 검사 기회를 잃지 않는다.",
+            "prefix": " 전 검체의 취급과 별도 분배가 중요하다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.granulomatous-patterns.b.aea785811a88",
+      "sourceSha256": "aea785811a883903e2087fb844392e68aac6451b7595c0229847ac09a12badf7",
+      "sourceLengthUtf16": 170,
+      "annotations": [
+        {
+          "id": "ann.6f6b976df6e5d3b7a02c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 40,
+            "end": 79,
+            "exact": "여행·직업·면역억제와 약물, 이물 노출, 다른 장기의 소견도 중요하다.",
+            "prefix": "위치에 따라 우선 감별의 범위가 달라진다. ",
+            "suffix": " 같은 비괴사성 패턴이라도 어떤 환자에게는 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.granulomatous-patterns.b.0240d0eb8729",
+      "sourceSha256": "0240d0eb87290f3506bba2177efea2357b09286fa3a3731e20d4273c0be971f8",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    }
+  ]
+}

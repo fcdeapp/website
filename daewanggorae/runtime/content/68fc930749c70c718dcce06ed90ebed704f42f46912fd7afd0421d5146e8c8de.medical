@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology",
+  "title": {
+    "ko": "세균학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "bacteriology.chapter.structure",
+      "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/structure/chapter.json"
+    },
+    {
+      "id": "bacteriology.chapter.genetics",
+      "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/genetics/chapter.json"
+    },
+    {
+      "id": "bacteriology.chapter.methods",
+      "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/methods/chapter.json"
+    },
+    {
+      "id": "bacteriology.chapter.virulence",
+      "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/virulence/chapter.json"
+    },
+    {
+      "id": "bacteriology.chapter.survival",
+      "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/survival/chapter.json"
+    },
+    {
+      "id": "bacteriology.chapter.growth",
+      "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/growth/chapter.json"
+    },
+    {
+      "id": "bacteriology.chapter.toxins",
+      "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/toxins/chapter.json"
+    },
+    {
+      "id": "bacteriology.chapter.control",
+      "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/control/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "bacteriology.plan.001",
+    "bacteriology.plan.002",
+    "bacteriology.plan.003",
+    "bacteriology.plan.004",
+    "bacteriology.plan.005",
+    "bacteriology.plan.006",
+    "bacteriology.structure.cell-envelope",
+    "bacteriology.genetics.antimicrobial-resistance",
+    "bacteriology.structure.peptidoglycan-assembly",
+    "bacteriology.methods.gram-stain-interpretation",
+    "bacteriology.structure.outer-membrane-transport",
+    "bacteriology.structure.mycolates-wallless",
+    "bacteriology.virulence.capsule-opsonization",
+    "bacteriology.virulence.adhesion-motility",
+    "bacteriology.survival.endospore-dormancy",
+    "bacteriology.growth.counts-and-kinetics",
+    "bacteriology.growth.oxygen-energy",
+    "bacteriology.survival.biofilm-heterogeneity",
+    "bacteriology.toxins.ab-toxin-trafficking",
+    "bacteriology.toxins.superantigen-activation",
+    "bacteriology.toxins.lps-compartment-sensing",
+    "bacteriology.genetics.horizontal-transfer-pathways",
+    "bacteriology.genetics.mobile-elements-integrons",
+    "bacteriology.methods.mic-mbc-timekill",
+    "bacteriology.methods.susceptibility-interpretation",
+    "bacteriology.methods.specimen-culture-context",
+    "bacteriology.control.log-reduction-validation",
+    "bacteriology.virulence.iron-acquisition"
+  ]
+}

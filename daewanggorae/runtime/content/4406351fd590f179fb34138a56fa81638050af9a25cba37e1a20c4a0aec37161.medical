@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.neoplasia.growth-control",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.d035a58285a5",
+      "sourceSha256": "d035a58285a5f7138f72a43a1051ef0a5f6f8a916b04a498916e9c0c80b54fb8",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.888eab9ff7c9",
+      "sourceSha256": "888eab9ff7c9bd37a5a24255ffc3dda5276cda1433c042b7415b10c61c4d58f2",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.c7645a3826a29deb9d4d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 50,
+            "exact": "양성과 악성의 구분에는 침윤과 전이 가능성, 조직과 세포의 분화 및 임상 경과가 중요하다.",
+            "prefix": "",
+            "suffix": " 경계가 뚜렷하고 느리게 자라는 경향은 단서"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.e50310972258",
+      "sourceSha256": "e5031097225831afc208b86f780d430d779220f31d2d49f0c4ce3b066f69d014",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.0bda87aed59ef1021f02",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 176,
+            "end": 214,
+            "exact": "유전자가 발현되었다는 사실과 병적 활성화가 있었다는 사실은 구분한다.",
+            "prefix": "능획득 변이는 서로 다른 활성화 방식이다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.3aad894739a9",
+      "sourceSha256": "3aad894739a9d32ae4ef3eb73929333f99418744d2638b3469287ab8bb315fd1",
+      "sourceLengthUtf16": 200,
+      "annotations": [
+        {
+          "id": "ann.87903d0eb848afd3d7cf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 165,
+            "end": 200,
+            "exact": "발암에서 중요한 변화와 진행 중 뒤따라온 변화도 구분해야 한다.",
+            "prefix": "통적인 하나의 스위치로 설명할 수는 없다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.bdd4cc294a16",
+      "sourceSha256": "bdd4cc294a16ce10862ceea031226b0e5be5acc2d6920cd3a150f36b77f2aa2a",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.4024b19c2655",
+      "sourceSha256": "4024b19c265571483d900c5d4bf15fde4637990620cf7e3ab7e4bb2fa470c774",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.3a5cc0545754",
+      "sourceSha256": "3a5cc0545754cea2fb1b6a29e3a4ff2c0f3b17a870542d90b5a652bd6427f696",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.b10e9be6ec43",
+      "sourceSha256": "b10e9be6ec43eb81926075622e72436d8e32b8f49c529694efafd535084121a3",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.4835b97d5f2c",
+      "sourceSha256": "4835b97d5f2c37429e7ad691ce0c2bb67e2c3c5eb493e0a56609974ded186746",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.332ae9db16cf",
+      "sourceSha256": "332ae9db16cfaa4daf128dacd6e5d3bc23557ce079379f836d010bd632da4020",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.b2ffb29a9b41c53002e0",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 68,
+            "end": 72,
+            "exact": "항원제시",
+            "prefix": "종양을 제거하거나 선택압을 만들고, 종양은 ",
+            "suffix": "와 억제 신호 등을 바꾸어 회피할 수 있다."
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.7532eda08838",
+      "sourceSha256": "7532eda088388f7fe8b2b88d6cb163f8dfe000aa735c5f6709121bdc27dd4325",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.3c1923d1aefa",
+      "sourceSha256": "3c1923d1aefa0eacbdb2aa5741f34de6596430283c7fffd2c8ea48159a944dd0",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.8f6fc7cd1922",
+      "sourceSha256": "8f6fc7cd1922ec8296072ef20ce03b59cdbb3c4615c83cda17a399c290ba737f",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.neoplasia.growth-control.b.edf174a1f89c",
+      "sourceSha256": "edf174a1f89c978418f0b08c95a263f5e500ee4f63515ac2c1dd79d1dee9f5fe",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    }
+  ]
+}

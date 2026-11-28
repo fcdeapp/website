@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.suture-ideal-load-sharing-0848",
+  "lessonId": "general-surgery.technique.suture-tissue-mechanics",
+  "title": "균등 분담의 하중 모형",
+  "series": [
+    {
+      "label": "총 힘120N",
+      "samples": [
+        {
+          "x": 2,
+          "y": 60.0
+        },
+        {
+          "x": 3,
+          "y": 40.0
+        },
+        {
+          "x": 4,
+          "y": 30.0
+        },
+        {
+          "x": 5,
+          "y": 24.0
+        },
+        {
+          "x": 6,
+          "y": 20.0
+        },
+        {
+          "x": 7,
+          "y": 17.142857142857
+        },
+        {
+          "x": 8,
+          "y": 15.0
+        },
+        {
+          "x": 9,
+          "y": 13.333333333333
+        },
+        {
+          "x": 10,
+          "y": 12.0
+        },
+        {
+          "x": 11,
+          "y": 10.909090909091
+        },
+        {
+          "x": 12,
+          "y": 10.0
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "equation": "120/n",
+    "totalForce_N": 120,
+    "equalSharing": true,
+    "integerPointsOnly": true,
+    "noSutureCountRecommendation": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 2,
+      "max": 12,
+      "scale": "linear",
+      "ticks": [
+        2,
+        4,
+        7,
+        10,
+        12
+      ],
+      "label": "지지 지점 수(정수)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 65,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        16.25,
+        32.5,
+        48.75,
+        65.0
+      ],
+      "label": "한 지점 평균 힘(N)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "총 힘120N",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "가정을 명시한 독립 교육용 모형이다. 실제 환자 파형·성공률·수혈·환기·봉합·보충·시술 기준이 아니며 진료 지시로 사용하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

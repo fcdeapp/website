@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.apoptosis-entry-pairs",
+  "lessonId": "cell-biology.cell-death.apoptosis",
+  "title": "자멸사 경로의 대표 진입점",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "BAX·BAK 관련 MOMP",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "cytochrome c–APAF1–caspase9",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "FAS 관련 사멸 복합체",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "caspase8 활성",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "Annexin V·투과성 염색",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "PS 노출·막 상태 평가",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.apoptosis-entry-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "내인성 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.apoptosis-entry-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "외인성 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.apoptosis-entry-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "경로 확진과 구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "caspase8–BID–미토콘드리아 연결 등 경로 사이 증폭이 존재한다. 표지만으로 사멸 기전을 확진하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.obstruction.copd-integrated-assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.b.3c1ba910eac0",
+      "sourceSha256": "3c1ba910eac0de1d25c8eec01815b068c6cc1c194aca5c45e83f6b7d635b3db3",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.baf2254a5240012e52e9",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 132,
+            "end": 136,
+            "exact": "COPD",
+            "prefix": "한다. 하나의 비율이 낮다는 기능적 결과와 ",
+            "suffix": "라는 병인 진단은 구별한다. 천식과 기관지확"
+          },
+          "conceptId": "reader.term.b7474cec060b74ec",
+          "targetDocumentId": "pulmonology.obstruction.copd"
+        },
+        {
+          "id": "ann.99c635b11be0e028b934",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 152,
+            "end": 154,
+            "exact": "천식",
+            "prefix": "결과와 COPD라는 병인 진단은 구별한다. ",
+            "suffix": "과 기관지확장증, 폐쇄성 다른 질환 및 기술"
+          },
+          "conceptId": "reader.term.0724de0dbf1ee4f5",
+          "targetDocumentId": "pulmonology.airways.asthma-mechanisms"
+        },
+        {
+          "id": "ann.84dcfa6f76871cde8c85",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 112,
+            "end": 151,
+            "exact": "하나의 비율이 낮다는 기능적 결과와 COPD라는 병인 진단은 구별한다.",
+            "prefix": "생물학적 변동과 반복의 필요성을 검토한다. ",
+            "suffix": " 천식과 기관지확장증, 폐쇄성 다른 질환 및"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.b.30c4054df27c",
+      "sourceSha256": "30c4054df27ceb76ebe9bf22b6e203942844df0de1849a3fd9a07fbea25f399b",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.b.74319b310d7f",
+      "sourceSha256": "74319b310d7fbb8cc4f60efdc634dada96d37610d1a18eb00c8ee7a89c327049",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.b.0e299a5074ca",
+      "sourceSha256": "0e299a5074cad8683a31c6d67e54f256f026690f8ecd670ab834fd9a2dc36155",
+      "sourceLengthUtf16": 179,
+      "annotations": [
+        {
+          "id": "ann.f5784ce1f0d8195d617b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 54,
+            "end": 57,
+            "exact": "심부전",
+            "prefix": "부담, 원인과 동반질환을 기록한다. 폐렴과 ",
+            "suffix": "·폐색전 등 다른 사건이 악화로 불렸는지 검"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.b.3e2541c8f9fe",
+      "sourceSha256": "3e2541c8f9febfe45d990c1831f522865e1c183db4ac063270f22158b4983094",
+      "sourceLengthUtf16": 159,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.b.dee39d549c3e",
+      "sourceSha256": "dee39d549c3e17fc7a4f7e8e9712ccc784b5a5b8ff9860db4f535bee171f4529",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.b.90ce410082d7",
+      "sourceSha256": "90ce410082d775ef6130f54628da7458c65317381c443f017a8df1d99ed488ce",
+      "sourceLengthUtf16": 163,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.b.c18aeeba6f9d",
+      "sourceSha256": "2e28eec468facc12a7021ef68688975b6a49fe37968e5eb1ef20b3e1d89a7322",
+      "sourceLengthUtf16": 150,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.p.extra0845.0",
+      "sourceSha256": "850736debb0373fd1d485d9a59c086ef2ab7d8481d73daa715e85e93e2d16dd2",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-integrated-assessment.p.extra0845.1",
+      "sourceSha256": "416fc051af36fe44019904ed007fb07976b1990aceee921b54c3780f9eedb570",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    }
+  ]
+}

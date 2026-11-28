@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neuroscience.membrane.ion-gradients",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.b.ff5a92568291",
+      "sourceSha256": "ff5a92568291f55c98af54db6db2665afb7ee6f3a795869a2e0fdb9944d5e2f9",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.f78d953937646824288d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 136,
+            "end": 139,
+            "exact": "막전위",
+            "prefix": "으로 이동 방향이 결정되지는 않는다. 현재 ",
+            "suffix": "와 그 이온의 평형전위를 비교해야 열린 통로"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        },
+        {
+          "id": "ann.9d467ba656f47b4af28d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 44,
+            "exact": "신경세포막은 지질층과 선택적 이온통로를 통해 세포 안팎의 이온 분포를 구별한다.",
+            "prefix": "",
+            "suffix": " 농도 차이는 확산을, 전위 차이는 전하의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.b.8375ee0fca77",
+      "sourceSha256": "8375ee0fca773577349c0c02157dca8d0592f04d2509eff1dedb452aca91f8dc",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.b.1d06b7e65b83",
+      "sourceSha256": "1d06b7e65b830590ca54c1be3a666c979f09c995526de4176fe32f1d05fa52e6",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.b.e9d364dca019",
+      "sourceSha256": "e9d364dca019763959b254c4dd70b85c311b01f16d59b46c6a878206db402280",
+      "sourceLengthUtf16": 170,
+      "annotations": [
+        {
+          "id": "ann.e51c7b0cf9e53f3159e3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 135,
+            "end": 170,
+            "exact": "빠른 전위 변화와 긴 시간에 걸친 농도 유지의 규모를 구별한다.",
+            "prefix": "이해하면 전압개폐성 통로의 역할을 놓친다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.b.94da1b5b3485",
+      "sourceSha256": "94da1b5b3485a5912fe505b340312c84cb0104af08c2b020e44c4f0d35ef6bbd",
+      "sourceLengthUtf16": 154,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.b.5ea62df91d6e",
+      "sourceSha256": "5ea62df91d6ebd8b4096bba2e88d6e0ee5307f7c2f8f36ed9a4c49d9d3e96a87",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.b.46d59c2d0016",
+      "sourceSha256": "46d59c2d00161e4f73809ae6be4817283c76d755f90554e2cf82a086487ced5d",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.b.333a1bb4233e",
+      "sourceSha256": "333a1bb4233ec5f10f376b665b9d835e0070b1b6531a4ea41067d9f8c235641a",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.supp.932bd6c067f3",
+      "sourceSha256": "932bd6c067f3f371f7d6dff42739a3f5ecdc286d2fa2c333ee590cda8c3b38e9",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.supp.d6fb0d21d6ac",
+      "sourceSha256": "d6fb0d21d6acc713152de608968f193700532a58479092acab8eca6c16b6bbbc",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.membrane.ion-gradients.supp.e7c7008f2de2",
+      "sourceSha256": "e7c7008f2de26d2ba80d95c6a7791d3ec0cb7a5c5c77e0106e7d204769f3e5dd",
+      "sourceLengthUtf16": 264,
+      "annotations": [
+        {
+          "id": "ann.8303f6bac10b6d254900",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 211,
+            "end": 264,
+            "exact": "실제 세포는 여러 이온을 함께 다루므로 이 단일 이온의 평형과 세포 전체의 정상상태를 구별한다.",
+            "prefix": "기적 힘이 상쇄되어 순이동이 없는 상태다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

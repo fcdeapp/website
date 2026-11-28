@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.cardiomyopathy.genetics-family-screening",
+  "subjectId": "cardiology",
+  "chapterId": "cardiomyopathy",
+  "title": {
+    "ko": "심근병증 유전상담과 가족 평가",
+    "en": "Genetic Counseling and Family Assessment in Cardiomyopathy"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.lo.01",
+      "text": "가족력과 침투도·표현의 차이를 설명한다"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.lo.02",
+      "text": "연쇄 유전검사의 조건을 구별한다"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.lo.03",
+      "text": "음성·불확실 결과의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.b20b63a6376d",
+      "type": "heading",
+      "level": 2,
+      "text": "가계의 정보 구조"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.a717b4cce3ef",
+      "type": "paragraph",
+      "markdown": "가족 평가는 단순히 같은 병명이 있는지 묻는 데 그치지 않는다. 심부전·이식과 심근병증, 조율기와 제세동기, 부정맥·실신 및 설명되지 않은 조기 사망을 함께 기록한다. 각 가족원의 나이와 발병·진단 시점을 구분하고 가능하면 실제 기록을 대조한다. 사망 원인이 불명확한 사람을 자동으로 심장질환으로 확정하거나, 기록이 없는 친족을 정상으로 표시하지 않는다. 알려진 사실과 추정, 미확인을 서로 다른 상태로 관리한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.b6f0afb360ab",
+      "type": "paragraph",
+      "markdown": "침투도(penetrance)는 특정 유전적 상태에서 표현형이 나타나는 비율의 개념이고, 표현의 다양성은 나타난 특징과 중증도의 차이다. 나이에 따라 표현형이 생기는 질환에서는 현재의 정상 검사가 미래까지 같은 상태를 보장하지 않는다. 작은 가족이나 젊은 친족이 많은 가계에서는 유전적 전달이 눈에 잘 드러나지 않을 수 있다. 가족력 음성이 모든 유전적 원인의 음성이라는 뜻은 아니다. 반대로 같은 가족의 모든 심장 증상이 반드시 같은 변이 때문인 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.f0c39af2aed7",
+      "type": "heading",
+      "level": 2,
+      "text": "검사의 대상과 목적"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.9d2cbf85da7b",
+      "type": "paragraph",
+      "markdown": "지표 환자(proband)의 검사 목적은 가능한 원인을 찾고 진단·위험과 치료, 친족 평가에 도움을 얻는 것이다. 검사를 하기 전 어떤 결과가 나올 수 있는지와 결과가 바꿀 수 있는 범위를 설명한다. 검출 가능한 유전자와 변이 유형의 범위가 제한되어 있으면 음성 결과의 배제력도 제한된다. 검사실의 분석과 분류 기준, 업데이트 시점 및 임상 표현형의 일치를 검토해야 한다. 넓은 패널이 항상 더 명확한 결론만을 주는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.1017640d7e6c",
+      "type": "paragraph",
+      "markdown": "병원성 또는 가능성 높은 병원성 변이가 확인된 경우 친족의 연쇄 검사(cascade testing)가 가능한 맥락이 생긴다. 친족이 그 변이를 갖는지와 현재 심장 표현형이 있는지는 서로 다른 질문이다. 유전자 양성·표현형 음성 상태에서는 나이와 질환별 근거에 맞는 임상 추적을 검토한다. 임상적 의미가 불확실한 변이를 확정적 가족 예측 도구처럼 사용하지 않는다. 특정 변이의 가족 내 분리 자료는 재분류를 돕지만 증거의 질을 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.7fe9220bba2d",
+      "type": "heading",
+      "level": 2,
+      "text": "음성 결과의 여러 뜻"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.747fcfc2ca0d",
+      "type": "paragraph",
+      "markdown": "지표 환자의 유전검사가 음성이면 현재 검사로 원인을 찾지 못했다는 뜻일 수 있다. 아직 규명되지 않은 유전자와 검출이 어려운 변이, 비유전 원인과 복합 기여가 남는다. 반면 친족이 이미 확인된 가족 병원성 변이를 갖지 않는다는 결과는 다른 종류의 음성이다. 두 상황을 같은 위험 감소로 설명하면 안 된다. 검사 전 어떤 질문을 했는지와 어느 결과가 나왔는지를 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.b51a355cd098",
+      "type": "paragraph",
+      "markdown": "유전적 결과는 시간이 지나면서 재해석될 수 있다. 새로운 기능·집단·가족 자료가 쌓이면 VUS의 분류가 바뀌거나 기존 해석이 수정될 수 있다. 재연락과 결과 확인의 계획, 가족에게 전달할 정보의 범위를 논의한다. 환자의 불안과 죄책감, 가족 관계와 미래 계획에 미칠 영향도 상담의 일부다. 유전자 검사는 개인의 운명과 정확한 발병일을 알려 주는 검사가 아니라 확률과 근거를 추가하는 도구라는 점을 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.2bef03bfac99",
+      "type": "heading",
+      "level": 2,
+      "text": "임상 추적과 개인정보"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.86e1b27237bc",
+      "type": "paragraph",
+      "markdown": "친족의 평가는 병력과 진찰, 심전도와 영상 및 필요한 리듬 검사 등을 포함할 수 있다. 검사 종류와 간격은 질환과 나이, 유전 결과와 가족의 경과에 따라 달라진다. 한 번의 정상 박출률만으로 모든 전도·리듬과 잠재적 표현형을 배제하지 않는다. 소아와 성인의 검사·상담에는 연령에 맞는 이해와 동의·보호의 고려가 필요하다. 실제 절차는 지역 법규와 기관 기준을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.b.01e3ca79a6d9",
+      "type": "paragraph",
+      "markdown": "가계도는 가족 관계와 관찰 사실을 구조화하는 자료이며 공개 데이터셋에서는 식별 가능성을 주의해야 한다. 교육용 가계는 독립 가상 사례로 만들고 실제 환자 자료처럼 표시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "침투도",
+            "연령과 표현형 출현"
+          ],
+          [
+            "지표 환자 음성",
+            "현재 검사에서 원인 미검출 가능"
+          ],
+          [
+            "가족 변이 음성",
+            "확인된 특정 변이의 부재"
+          ],
+          [
+            "재해석",
+            "근거·분류·재연락 계획"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.cardiomyopathy.genetics-family-screening.diagram.cardiogenetic-penetrance-0841",
+      "type": "diagram",
+      "diagramRef": "diagram.cardiogenetic-penetrance-0841",
+      "path": "diagrams/diagram.cardiogenetic-penetrance-0841.svg",
+      "alt": "무증상 관찰과 보유 가능성의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 정상 심장 3D와 유전자 이름의 연결도 변이가 실제 원본 메시 안에 표현된다는 뜻은 아니다. 학습자는 분자 원인과 조직·장기 표현형, 가족의 시간 경과를 연결하되 각 자료가 직접 보여 주는 정보의 범위를 구별해야 한다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/cardiomyopathy/sections/cardiology.cardiomyopathy.genetics-family-screening.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.cardiomyopathy.genetics-family-screening.001",
+    "question.cardiology.cardiomyopathy.genetics-family-screening.002"
+  ],
+  "relatedLessons": [
+    "cardiology.cardiomyopathy.arrhythmogenic-substrate"
+  ]
+}

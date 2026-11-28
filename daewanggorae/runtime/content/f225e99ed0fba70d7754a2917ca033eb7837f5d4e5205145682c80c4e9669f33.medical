@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neuroscience.plasticity.activity-dependent",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.0cd1ca4d9a4b",
+      "sourceSha256": "0cd1ca4d9a4b519c1e5888bc9c09c00b44bbc4b2024511c869ad6e82f949e93c",
+      "sourceLengthUtf16": 261,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.43af1c6b61fa",
+      "sourceSha256": "43af1c6b61facba10ceee9ed85ceb5be7b0e353c584deb66bc0db358cd88eaa5",
+      "sourceLengthUtf16": 261,
+      "annotations": [
+        {
+          "id": "ann.e85b3df9d2e621745176",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 37,
+            "end": 40,
+            "exact": "막전위",
+            "prefix": " 실험에서는 자극 강도와 입력 섬유의 수, ",
+            "suffix": "와 전압 고정의 질을 확인한다. 흥분성 시냅"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.ca0e69a1d8f3",
+      "sourceSha256": "ca0e69a1d8f32763aeb8c57bcafa0df2c0e86f321f088ad531b1460882618935",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.456ce0b6b2d7",
+      "sourceSha256": "456ce0b6b2d7d664337aa8fa28a61a2317a7b8ea91c8e02897df6a13a13c3785",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.be5ac7ac125d80924ea3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 63,
+            "end": 119,
+            "exact": "유입 위치와 지속시간, 완충과 제거 속도, 활성화되는 인산화효소와 인산가수분해효소의 조합이 중요하다.",
+            "prefix": " 시공간적 신호를 충분히 표현하지 못한다. ",
+            "suffix": " 같은 평균 칼슘 농도라도 국소 미세영역의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.821c36cfc483",
+      "sourceSha256": "821c36cfc48303bd8768b386abe5773b0e2f6e1b4bb85b3d02092f9f63dc95f3",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.933035e4db34",
+      "sourceSha256": "933035e4db34ec901f114a53121739f6498800b3f59add5d21c0247f96bf7265",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.57f3b25b05d0876207b0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 180,
+            "end": 235,
+            "exact": "행동 과제의 수행 저하가 기억의 저장 실패인지, 감각·운동·동기 저하인지를 구별하는 것이 중요하다.",
+            "prefix": "수행에 미치는 영향을 함께 평가해야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.25b8f39b15c8",
+      "sourceSha256": "25b8f39b15c8203f57a0018b8ec50eea81b69bd8f5eba4f994bd101f50498804",
+      "sourceLengthUtf16": 274,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.42ff51b3806a",
+      "sourceSha256": "42ff51b3806a5e364acd495ac786884ba6a4afc1766079f2db1f7c6a4633ed2c",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.4d4f4598194e",
+      "sourceSha256": "4d4f4598194e935ba173ed76d6c3972a6ad2a2ed1c3e07e8aead019e152238bb",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.plasticity.activity-dependent.b.fcfb2137b53d",
+      "sourceSha256": "fcfb2137b53d8ed8da2e73cae1b4c84392b2ce694e75e613b67c7ede68a09ffd",
+      "sourceLengthUtf16": 239,
+      "annotations": [
+        {
+          "id": "ann.a8d65a76f69dd3de21dd",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 16,
+            "end": 19,
+            "exact": "뇌전증",
+            "prefix": "가소성 연구는 학습과 재활, ",
+            "suffix": "과 만성 통증, 퇴행성 질환을 이해하는 기초"
+          },
+          "conceptId": "reader.term.8a39cd8bd33af7ea",
+          "targetDocumentId": "neurology.epilepsy.first-seizure-eeg"
+        }
+      ]
+    }
+  ]
+}

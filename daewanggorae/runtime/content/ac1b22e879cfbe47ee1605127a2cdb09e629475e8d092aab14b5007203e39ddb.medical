@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.nmj.myasthenia-lambert-eaton",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.nmj.myasthenia-lambert-eaton.b.5b8caa86c75b",
+      "sourceSha256": "5b8caa86c75b79d8618f88f1185be67c5d398f16777f110e4d98885e21cebff3",
+      "sourceLengthUtf16": 558,
+      "annotations": [
+        {
+          "id": "ann.908db14feaa2a619bc0a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 7,
+            "end": 29,
+            "exact": "neuromuscular junction",
+            "prefix": "신경근접합부(",
+            "suffix": ")의 전달은 운동신경 활동전위를 근섬유 활동"
+          },
+          "conceptId": "reader.term.8ac0bcc79435bc5e",
+          "targetDocumentId": "neuroscience.nmj.release-safety-factor"
+        },
+        {
+          "id": "ann.3e6d43f396b83face286",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 242,
+            "end": 283,
+            "exact": "졸림, 호흡곤란, 통증, 전신 피로와 객관적인 근력 감소를 구별해야 한다.",
+            "prefix": "으로 신경근접합부 질환을 진단하지 않는다. ",
+            "suffix": "\n중증근무력증(myasthenia gravi"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.nmj.myasthenia-lambert-eaton.b.4e98e6ece152",
+      "sourceSha256": "4e98e6ece1525d178c0a567bdb5bc4c218e9d7899bf5fa6eb0baef1eb4de798c",
+      "sourceLengthUtf16": 513,
+      "annotations": [
+        {
+          "id": "ann.f4b2f7e00aaeda9d9614",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 401,
+            "end": 457,
+            "exact": "MG와 LEMS는 서로 다른 전달 단계를 침범하므로 분포·반사·자율신경과 전기생리의 조합이 중요하다.",
+            "prefix": "동 뒤 반응이 일시적으로 증가할 수 있다. ",
+            "suffix": " LEMS에서는 종양, 특히 소세포폐암과의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.nmj.myasthenia-lambert-eaton.b.0407162c5236",
+      "sourceSha256": "0407162c523640bb70ae142824077ea8cc0be3b4517e7cadb991d28ab29fcf37",
+      "sourceLengthUtf16": 546,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.nmj.myasthenia-lambert-eaton.b.08d8a963bff3",
+      "sourceSha256": "08d8a963bff3a821fd2e929dd0e313377c0634da30dba61c2faa2847487f6ce2",
+      "sourceLengthUtf16": 494,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.nmj.myasthenia-lambert-eaton.b.ef1abec6ed51",
+      "sourceSha256": "ef1abec6ed51163da10d6a24c6d65383340f521d69c9886b101643df1cd73dff",
+      "sourceLengthUtf16": 519,
+      "annotations": [
+        {
+          "id": "ann.fad7bdc62c39cf20210c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 214,
+            "end": 265,
+            "exact": "LEMS에서는 기저 종양 평가와 치료, 방출을 보조하는 치료와 면역 치료의 역할을 구분한다.",
+            "prefix": "성 환자나 LEMS에 확대해서는 안 된다. ",
+            "suffix": "\n추적에서는 눈 증상, 팔다리 근력과 지구력"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

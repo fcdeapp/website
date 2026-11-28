@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.structure.outer-membrane-transport",
+  "subjectId": "bacteriology",
+  "chapterId": "structure",
+  "title": {
+    "ko": "그람음성 외막과 유입·배출의 균형",
+    "en": "Outer Membrane Permeability and Efflux"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.lo.01",
+      "text": "외막과 세포질막을 구별한다"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.lo.02",
+      "text": "Porin·배출펌프·분해효소의 상호작용을 설명한다"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.lo.03",
+      "text": "약물 축적과 외부 농도의 차이를 계산한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.28a682ac21b4",
+      "type": "heading",
+      "level": 2,
+      "text": "두 막 사이의 공간"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.db17cb402a45",
+      "type": "paragraph",
+      "markdown": "전형적인 그람음성균은 세포질막 바깥에 얇은 펩티도글리칸과 periplasm, 그 바깥에 외막을 가진다. 외막은 단순히 세포질막이 한 겹 더 복제된 구조가 아니다. 지질 조성과 단백질, 바깥면의 lipopolysaccharide(LPS)가 독특한 투과 장벽을 만든다. 에너지 생성의 주요 막과 외부 물질의 첫 장벽을 구별하면 항균제가 넘어야 하는 경로가 분명해진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.c7da8f195677",
+      "type": "paragraph",
+      "markdown": "작은 친수성 물질의 일부는 porin 통로를 지나 들어간다. 통과 여부는 분자 크기뿐 아니라 전하와 통로의 선택성에 영향을 받는다. 지용성이 높다고 모든 약물이 외막을 자유롭게 지나는 것도 아니다. 소수성 물질에 대한 외막의 장벽은 약물의 성질과 종별 외피에 따라 다르다. 표적 단백질에 잘 결합하는 물질이라도 표적 구획에 충분히 도달하지 못하면 항균 활성이 제한된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.c5f3f73382bb",
+      "type": "heading",
+      "level": 2,
+      "text": "유입만큼 중요한 소실"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.d5f8b4e49f57",
+      "type": "paragraph",
+      "markdown": "세포 내부 또는 periplasm으로 들어온 약물은 배출펌프로 다시 나가거나 효소에 의해 변형될 수 있다. 일부 RND 계통 펌프는 내막의 수송체·연결 단백질·외막 통로를 통해 외부까지 연결한다. 모든 펌프가 같은 기질이나 에너지원으로 작동하는 것은 아니다. 유입 감소와 배출 증가를 모두 단순한 표적 변이로 분류하면 실험과 치료 반응을 잘못 설명하게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.1a71c4ca35c6",
+      "type": "paragraph",
+      "markdown": "가상 선형 모형에서 내부 농도를 C, 일정 유입을 J, 배출·분해의 합친 상수를 k라 두면 dC/dt=J−kC다. 시작 농도가 0이면 C=(J/k)(1−e^(−kt))이고 정상상태는 J/k다. 이는 농도 축적의 수지를 설명하는 식이며 실제 약물의 복잡한 수송을 그대로 적합한 공식은 아니다. 같은 외부 농도라도 유입 통로와 소실이 달라지면 내부 노출이 다를 수 있다는 점이 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.04bd28407f84",
+      "type": "heading",
+      "level": 2,
+      "text": "장벽과 효소가 함께 만드는 효과"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.3bc42ac14894",
+      "type": "paragraph",
+      "markdown": "β-lactamase가 존재해도 모든 β-lactam을 같은 정도로 분해하지는 않는다. 효소의 기질 범위와 발현, 약물의 유입 속도가 함께 결과를 정한다. Porin 감소가 분해 효소와 결합하면 개별 변화보다 감수성 저하가 커질 수 있다. 한 유전자의 검출 여부만으로 실제 MIC를 정확히 계산하기 어려운 이유는 여러 단계의 속도와 위치가 함께 작동하기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.ead7e67eae31",
+      "type": "paragraph",
+      "markdown": "실험에서 펌프 기능을 낮췄더니 약물 축적이 증가했다면 배출의 기여를 지지한다. 그러나 억제제가 막 자체를 손상시키거나 성장에 영향을 주었는지도 확인해야 한다. 형광 물질의 축적이 실제 항균제의 축적을 완전히 대표하지 않을 수 있어 기질의 차이도 중요하다. 유전자 복원과 독립적인 투과성·성장 대조는 다른 설명을 줄이는 방법이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.fdfbeb71a483",
+      "type": "heading",
+      "level": 2,
+      "text": "표적까지의 경로를 그리기"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.b.e9d1f827664a",
+      "type": "paragraph",
+      "markdown": "약물의 작용을 설명할 때는 외부 도달, 외막 통과, periplasm의 소실, 내막 통과 여부와 최종 표적을 순서대로 연결한다. PBP처럼 막 바깥쪽에 관련된 표적과 리보솜 같은 세포질 표적은 필요한 경로가 다르다. 외막을 없애는 처리가 항균 효과를 높였다는 결과는 장벽의 역할을 보여 주지만 그 처리를 곧바로 환자 치료법으로 옮길 수 있다는 의미는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.diagram.bacteria-influx-loss-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.bacteria-influx-loss-toy",
+      "path": "diagrams/diagram.bacteria-influx-loss-toy.svg",
+      "alt": "유입과 소실의 가상 농도 수지의 독립 계산 곡선"
+    },
+    {
+      "id": "bacteriology.structure.outer-membrane-transport.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "Porin",
+            "외막을 통한 물질 유입"
+          ],
+          [
+            "Efflux",
+            "구획에서 외부로의 소실"
+          ],
+          [
+            "분해효소",
+            "기질별 약물 변형·소실"
+          ],
+          [
+            "표적 변이",
+            "접근성 변화와 다른 기전"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/structure/sections/bacteriology.structure.outer-membrane-transport.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.structure.outer-membrane-transport.001",
+    "question.bacteriology.structure.outer-membrane-transport.002"
+  ],
+  "relatedLessons": [
+    "bacteriology.methods.gram-stain-interpretation",
+    "bacteriology.structure.mycolates-wallless"
+  ]
+}

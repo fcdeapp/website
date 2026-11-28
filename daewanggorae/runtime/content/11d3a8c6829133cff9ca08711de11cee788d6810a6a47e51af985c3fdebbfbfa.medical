@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-learning-data-0854-10",
+  "lessonId": "neurology.cognition.gait-hydrocephalus",
+  "title": "독립 가상 자료: 보행·인지·배뇨 변화와 수두증 감별",
+  "series": [
+    {
+      "label": "보행 시간",
+      "samples": [
+        {
+          "x": 1,
+          "y": 20
+        },
+        {
+          "x": 2,
+          "y": 16
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "notClinicalCutoffOrEfficacy": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 2,
+      "scale": "linear",
+      "ticks": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "label": "배액 전후 기록"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 25,
+      "scale": "linear",
+      "ticks": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "label": "같은 거리 보행 시간(s)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "보행 시간",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "실제 환자·공식 척도·진단 경계·치료효과·처방 자료가 아니다.",
+    "기록 시점의 연결은 연속 측정이나 인과관계의 증거가 아니다."
+  ],
+  "sourceImageUsed": false
+}

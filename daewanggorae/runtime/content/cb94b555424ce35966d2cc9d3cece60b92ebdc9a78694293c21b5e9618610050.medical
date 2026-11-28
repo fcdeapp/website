@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.hypersensitivity.contact-t-cell-response",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.hypersensitivity.contact-t-cell-response.b.3bedbd38cbc4",
+      "sourceSha256": "3bedbd38cbc45dc4f8794c21471f02a505753eba864814709ff5d52396350f6c",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.b9be11897477467c7c6a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 187,
+            "end": 222,
+            "exact": "피부에 닿았다는 사실과 면역 감작이 성립했다는 결과를 구별한다.",
+            "prefix": " 금속 등에서도 인식 방식의 차이가 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.contact-t-cell-response.b.277dd74e3fbc",
+      "sourceSha256": "277dd74e3fbc9fa95a85d118051c528bcc0aa041ef4a259e777cad141dbe4507",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.93f551a6f01a6e0e3d7c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 100,
+            "end": 135,
+            "exact": "특정 T세포의 초기 확장과 기억 형성이 감작기의 중요한 결과다.",
+            "prefix": "따라 항원 정보를 배액 림프절로 전달한다. ",
+            "suffix": " 최초 노출에서 뚜렷한 피부 증상이 없었다고"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.contact-t-cell-response.b.bd988c2a303c",
+      "sourceSha256": "bd988c2a303c5000f3dc55e90cca627510d085e5fb2e4248e3c7d8abfc3ab5d9",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.8b5725a7057a0a183541",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 40,
+            "end": 44,
+            "exact": "항원제시",
+            "prefix": "phase)에는 관련 기억 T세포와 조직의 ",
+            "suffix": " 환경이 반응한다. CD4의 사이토카인·대식"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.contact-t-cell-response.b.712a0fa3747c",
+      "sourceSha256": "712a0fa3747c3148bd02c8af496cbb7020c81ba1c6b96651f20edd26c25e6b52",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.contact-t-cell-response.b.8ab692a35dd6",
+      "sourceSha256": "8ab692a35dd6d1abb03fa69e5b294376026904eb26f9976809e98ba921deb0a5",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.contact-t-cell-response.b.5c8acfb3e7c2",
+      "sourceSha256": "5c8acfb3e7c2270a9e1cde27acfcb4a2eeafcb33a0387779041f0da0b7fcbb23",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.2c2d7fd3d84aff6ad574",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 60,
+            "exact": "노출 부위의 경계와 손을 통한 전달, 공기 중 노출과 의복·장비의 접촉은 병변 위치를 설명하는 데 중요하다.",
+            "prefix": "",
+            "suffix": " 제품 이름이 같아도 성분과 사용법이 다를 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.contact-t-cell-response.b.c27e6f1745c7",
+      "sourceSha256": "c27e6f1745c7b3b70c3d9a50d2988e1cbccfbd2c72e025f5c0895cd249213b4b",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.contact-t-cell-response.b.2ae55ee19ad6",
+      "sourceSha256": "2ae55ee19ad6ca8e5b846107fc6f471dd0d291c193b5a32f2425cc18ad8820c5",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    }
+  ]
+}

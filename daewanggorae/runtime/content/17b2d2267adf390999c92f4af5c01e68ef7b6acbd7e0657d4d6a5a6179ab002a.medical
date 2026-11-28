@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.tolerance.thymic-selection",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.tolerance.thymic-selection.b.74cd5ebd01a4",
+      "sourceSha256": "74cd5ebd01a46100c6aa04dbf9c4e8fdf6902817a3f51d1b39d6e8b65eb7116a",
+      "sourceLengthUtf16": 256,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.thymic-selection.b.9737489a7147",
+      "sourceSha256": "9737489a7147fdd98c0880202d7f567c8c2507cd89b53b53a073da8300d843ea",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.thymic-selection.b.aad14751a97b",
+      "sourceSha256": "aad14751a97b0bf343f6218f2a697d9b35bacc8f9f7ce4c0c97fbd932ed3f84b",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.519eca3e626a7d6efa6f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 40,
+            "end": 81,
+            "exact": "AIRE는 여러 말초조직 관련 항원의 발현과 중추 관용에 중요한 조절자다.",
+            "prefix": " 등은 다양한 자기 항원 정보를 제시한다. ",
+            "suffix": " FEZF2 같은 다른 프로그램도 자기 항원"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.tolerance.thymic-selection.b.759b1f1ec89d",
+      "sourceSha256": "759b1f1ec89d9fb95f0c5c102fffae6a265907f9d871fddbe61e2e5d0e1d7c5a",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.thymic-selection.b.7dd0a1d43d3c",
+      "sourceSha256": "7dd0a1d43d3c6d9032ad170207170b572477e20a90b145bb6225924ae0809a62",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.thymic-selection.b.ec2442632539",
+      "sourceSha256": "ec2442632539559ca4cd906425dc64ab4284e5b28e056c93dbfb227392a95ef4",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.thymic-selection.b.f849657e3e60",
+      "sourceSha256": "f849657e3e60379fa6637c367901068cf112b538629225d5c89811a935309326",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.ac9ba526f3664131adae",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 98,
+            "end": 129,
+            "exact": "이들의 존재 자체가 임상적 자가면역을 의미하지는 않는다.",
+            "prefix": "이 드러나는 세포는 말초에 남을 수 있다. ",
+            "suffix": " 말초의 공동자극 제한, 조절 T세포와 조직"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.tolerance.thymic-selection.b.4fab760e00b2",
+      "sourceSha256": "4fab760e00b25a329556796a0313ed4d72d18f360e0362444eb5705a30f28f1d",
+      "sourceLengthUtf16": 191,
+      "annotations": [
+        {
+          "id": "ann.f11dfa6c276b2cb3ddea",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 78,
+            "exact": "AIRE 관련 이상은 여러 장기의 자가면역과 연결될 수 있지만, 하나의 자가항체 양성이나 한 장기의 염증으로 유전자 결함을 확정하지 않는다.",
+            "prefix": "",
+            "suffix": " 질환의 조합, 발현 연령·가족력과 기능·유"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

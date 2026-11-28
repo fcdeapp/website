@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "dermatology.morphology.lesion-description",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "dermatology.morphology.lesion-description.b.ca87cfdad603",
+      "sourceSha256": "ca87cfdad6039c984f70407160b212cfc2458dd22dc24987ecb72df3f6c42702",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "dermatology.morphology.lesion-description.b.d22c86b906b0",
+      "sourceSha256": "d22c86b906b04faf8f051cdd7f574c119dc791745059c192e2ae6cd6bf5323c4",
+      "sourceLengthUtf16": 157,
+      "annotations": []
+    },
+    {
+      "blockId": "dermatology.morphology.lesion-description.b.7491cca0b348",
+      "sourceSha256": "7491cca0b34889d26a918c336ab4ecfe67b0ac4d35697b7fe69624a031b58775",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "dermatology.morphology.lesion-description.b.6901fcf2316c",
+      "sourceSha256": "6901fcf2316caf16c483c583cb7cc765afb504abe0550dacad72e68c3ea4ee62",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "dermatology.morphology.lesion-description.b.11f7b35de804",
+      "sourceSha256": "11f7b35de8049e3724bea9b98f2f89ddfeeb0e10c7f1f035cb62a13e50faf39a",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "dermatology.morphology.lesion-description.b.17386a63ab90",
+      "sourceSha256": "17386a63ab90e356429647d7cd7abe9f9e4d1bf251adc21ca7766f99f178f8f2",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "dermatology.morphology.lesion-description.b.6ac20fa8848e",
+      "sourceSha256": "6ac20fa8848edc4b2f63ec3f0c2df08c0a60c1457230be792e8be412ceee4bf5",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "dermatology.morphology.lesion-description.b.afc1b415110c",
+      "sourceSha256": "afc1b415110c56476f46e070f31161676d2247d8dc148527032c3431c7fdb9a7",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.b68f51b215a30acbcaa5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 213,
+            "exact": "전신 질환의 피부 소견에서는 발열과 점막 침범, 피부 통증과 수포·박리, 순환 상태 등 동반 소견이 중증도 판단에 중요하다.",
+            "prefix": "변화 및 다른 원인을 시간축으로 정리한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "dermatology.morphology.lesion-description.b.dfea76a8a29f",
+      "sourceSha256": "dfea76a8a29f7e3b725038a4c9a8f8f3931af403e1f5315dc3aef443f6dbdef0",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    }
+  ]
+}

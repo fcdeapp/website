@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "obstetrics",
+  "title": {
+    "ko": "산과학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "obstetrics.chapter.pregnancy",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/pregnancy/chapter.json"
+    },
+    {
+      "id": "obstetrics.chapter.adaptation",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/adaptation/chapter.json"
+    },
+    {
+      "id": "obstetrics.chapter.placenta",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/placenta/chapter.json"
+    },
+    {
+      "id": "obstetrics.chapter.antenatal",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/antenatal/chapter.json"
+    },
+    {
+      "id": "obstetrics.chapter.early-pregnancy",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/early-pregnancy/chapter.json"
+    },
+    {
+      "id": "obstetrics.chapter.fetal-assessment",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/fetal-assessment/chapter.json"
+    },
+    {
+      "id": "obstetrics.chapter.hypertension",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/hypertension/chapter.json"
+    },
+    {
+      "id": "obstetrics.chapter.diabetes",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/diabetes/chapter.json"
+    },
+    {
+      "id": "obstetrics.chapter.preterm",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/preterm/chapter.json"
+    },
+    {
+      "id": "obstetrics.chapter.bleeding",
+      "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/bleeding/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "obstetrics.plan.001",
+    "obstetrics.plan.002",
+    "obstetrics.plan.003",
+    "obstetrics.plan.004",
+    "obstetrics.plan.005",
+    "obstetrics.plan.006",
+    "obstetrics.plan.007",
+    "obstetrics.pregnancy.physiology",
+    "obstetrics.adaptation.cardiovascular-volume",
+    "obstetrics.adaptation.respiration-acid-base",
+    "obstetrics.adaptation.renal-fluid-laboratory",
+    "obstetrics.placenta.exchange-endocrine",
+    "obstetrics.antenatal.initial-assessment-dating",
+    "obstetrics.antenatal.aneuploidy-screening-diagnosis",
+    "obstetrics.early-pregnancy.location-viability",
+    "obstetrics.fetal-assessment.growth-doppler",
+    "obstetrics.hypertension.classification-endothelium",
+    "obstetrics.hypertension.severe-disease-delivery",
+    "obstetrics.diabetes.screening-pathways",
+    "obstetrics.diabetes.monitoring-postpartum",
+    "obstetrics.preterm.labor-membranes",
+    "obstetrics.bleeding.postpartum-mechanisms"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.cardiovascular.cardiac-output-venous-return",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.58834c2608e7",
+      "sourceSha256": "58834c2608e705343ba5e0cf34495a3c0a79caa2cb05bb8c1793845fdee42b48",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.8aa5688ae065",
+      "sourceSha256": "8aa5688ae065a58c66cd57b12ca5f70589804ddf1c9298aa9866a9cb8a0ac8ec",
+      "sourceLengthUtf16": 223,
+      "annotations": [
+        {
+          "id": "ann.e6263f182cfaef0b108d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 196,
+            "end": 223,
+            "exact": "순간적인 변화와 새로운 정상상태를 구별해야 한다.",
+            "prefix": "이며 두 곡선이 만나는 조건에서 작동한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.e63d485bcbc4",
+      "sourceSha256": "e63d485bcbc4242e2db24077c986bcae4046885e2da88a490948d42a7ac332f6",
+      "sourceLengthUtf16": 250,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.5bb724669e32",
+      "sourceSha256": "5bb724669e3229b47a0f02828830e48a77db0468b483de198351fc6f275eae6b",
+      "sourceLengthUtf16": 252,
+      "annotations": [
+        {
+          "id": "ann.13c1a40b35659c89b15f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 196,
+            "exact": "측정·추정 방식에는 제한이 있으며 폐 순환까지 함께 포함하는 평균순환충만압과 용어도 구별한다.",
+            "prefix": "측정한 압력과 자동으로 같은 값은 아니다. ",
+            "suffix": " 이 개념은 혈액량과 혈관의 용량성 특성이 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.95d0dbd1e2b3",
+      "sourceSha256": "95d0dbd1e2b342e940b9e39d4d318744cb35371003852549a063af91617698eb",
+      "sourceLengthUtf16": 249,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.66cdfbfcfc69",
+      "sourceSha256": "66cdfbfcfc69abf790cfa639199212f80dd9ff828f738c415ad914d3c7f0b030",
+      "sourceLengthUtf16": 200,
+      "annotations": [
+        {
+          "id": "ann.960653b80797d46e5660",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 102,
+            "end": 105,
+            "exact": "가슴막",
+            "prefix": "을 끝없이 뻗는 직선으로 외삽하지 않는다. ",
+            "suffix": "압이 달라지는 상황에서는 혈관의 안팎 압력과"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.2166effec40c",
+      "sourceSha256": "2166effec40c5c6d2de722fa8cbe772b6c14a011cecce0d5c0b30085dc681059",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.5bef5054147b",
+      "sourceSha256": "5bef5054147bf71bb9f8c915a409682dab53c3132b421d3283f9c2ed2ebff048",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.02117642d0dd",
+      "sourceSha256": "02117642d0dd921047117ab89f24f99d1b4faad0538d7006a159a4a30a47b1a5",
+      "sourceLengthUtf16": 232,
+      "annotations": [
+        {
+          "id": "ann.3d881ab154b4106bd156",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 69,
+            "end": 94,
+            "exact": "Pra=2.5 mmHg, 유량4.5 L/min",
+            "prefix": " 임의 선형 모형으로 놓으면 두 값이 같은 ",
+            "suffix": "에서 교점이 생긴다. 여기서 환류식의 기울기"
+          },
+          "level": "key",
+          "reason": "existing_keyFact_exact",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.287a5f795376",
+      "sourceSha256": "287a5f79537686fa6257ddcf78e8f1a0472e1b149f86fc9d5309bc513a341919",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.b3d5228a54bd",
+      "sourceSha256": "b3d5228a54bdc0038377dd25e2a5849f287c7fee2b850ef63d9cefe697c8bcca",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.cardiovascular.cardiac-output-venous-return.b.126795056297",
+      "sourceSha256": "1267950562978798672fcf98046bed02ec3f772285575c14d7a9ebf61e766c3a",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.testing.diffusing-capacity",
+  "subjectId": "pulmonology",
+  "chapterId": "testing",
+  "title": {
+    "ko": "일산화탄소확산능과 폐포·혈관",
+    "en": "Carbon Monoxide Transfer and the Alveolar Vascular Unit"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.testing.diffusing-capacity.lo.01",
+      "text": "확산과 혈색소 결합의 기여를 설명한다"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.lo.02",
+      "text": "DLCO·VA·KCO의 관계를 구별한다"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.lo.03",
+      "text": "빈혈·기류 불균등과 병인의 감별을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.b098d2c80566",
+      "type": "heading",
+      "level": 2,
+      "text": "폐포에서 혈액으로 전달되는 양"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.55fb91efa052",
+      "type": "paragraph",
+      "markdown": "일산화탄소확산능(diffusing capacity of the lung for carbon monoxide, DLCO)은 시험 가스의 흡수와 폐포·혈액 사이의 전달을 이용하여 가스교환 단위의 기능을 평가하는 지표다. 일산화탄소가 혈색소와 잘 결합하는 특성을 활용하지만 결과가 막의 두께 하나만 측정하는 것은 아니다. 막을 통한 전달과 폐모세혈관 혈액·혈색소의 반응이 함께 관여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.bb513707a49b",
+      "type": "paragraph",
+      "markdown": "폐포 표면적의 감소와 막의 변화, 폐혈관 혈액량 및 혈색소가 결과에 영향을 줄 수 있다. 폐기종과 간질성 병변, 폐혈관질환은 서로 다른 경로로 낮은 DLCO를 만들 수 있다. 빈혈에서도 결합할 혈색소가 적어 값이 낮아질 수 있다. 낮은 결과를 보았을 때 폐 실질과 혈관뿐 아니라 혈색소와 검사 조건을 확인하는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.3d9bf88e8312",
+      "type": "heading",
+      "level": 2,
+      "text": "측정 조작과 가스 분포"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.fa55b2b4354c",
+      "type": "paragraph",
+      "markdown": "단일호흡 검사에서는 지정된 가스를 들이쉰 뒤 숨을 멈추고 내쉰 가스를 분석한다. 흡기량과 속도, 숨참기 시간과 압력 조작 및 표본의 폐포 대표성이 결과에 영향을 준다. 충분히 들이쉬지 못했거나 폐 안의 환기가 불균등하면 가스가 도달한 공간과 실제 전체 폐 공간이 달라질 수 있다. 장치의 보정과 누출, 반복과 기술 품질을 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.2014c64e83e5",
+      "type": "paragraph",
+      "markdown": "산소 노출과 흡연에 따른 혈액의 상태, 혈색소 보정의 조건도 중요하다. 시험 전후의 조건과 적용한 보정 방법을 기록해야 서로 다른 시점의 값을 비교할 수 있다. 같은 숫자가 나왔다는 사실이 모든 생리 조건이 같다는 뜻은 아니다. 검사 보고서에서 보정 전후 값과 기준을 구별하면 환자의 변화와 방법 차이를 더 정확히 해석할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.7acfc095a346",
+      "type": "heading",
+      "level": 2,
+      "text": "VA와 KCO를 어떻게 읽는가"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.a63ffca4364e",
+      "type": "paragraph",
+      "markdown": "단일호흡의 폐포용적 VA는 검사 가스가 섞인 공간에 대한 정보다. 전체 TLC와 항상 같지 않으며 심한 환기 불균등에서는 차이가 커질 수 있다. KCO는 DLCO와 VA의 관계로 표현하지만 DLCO를 단순히 크기로 보정한 정상화 지표라고만 생각하면 위험하다. 폐용적이 바뀌는 과정에서 혈액량과 전달 조건도 비선형적으로 변할 수 있기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.a470d6abdd41",
+      "type": "paragraph",
+      "markdown": "DLCO가 낮고 VA가 작을 때 KCO가 유지된다는 결과만으로 모든 폐포·혈관이 정상이라고 결론 내리지 않는다. 작은 흡기와 실제 폐 절제·제한, 불균등 환기 등은 서로 다른 설명이다. VA와 TLC의 관계와 품질, 혈색소·영상과 임상 배경을 함께 검토한다. 하나의 분율이 여러 기전의 정보를 지워 버리지 않도록 원래 구성값을 보존한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.fa3fa1f8e100",
+      "type": "heading",
+      "level": 2,
+      "text": "다른 기능검사와 연결한다"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.bdfa6d69c382",
+      "type": "paragraph",
+      "markdown": "기류 제한과 낮은 DLCO가 함께 있으면 폐기종과 다른 동반 병변을 고려할 수 있지만 하나의 조합이 병인을 확정하지 않는다. 폐용적이 작고 낮은 전달이 있으면 실질·혈관과 외부 제한의 기여를 구별한다. 정상에 가까운 폐활량과 낮은 DLCO도 폐혈관과 초기 실질병변, 빈혈 등 평가할 질문을 만든다. 검사 결과는 감별을 좁히는 자료이며 임상 진단 자체는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.b.0ef358c8061a",
+      "type": "paragraph",
+      "markdown": "추적에서는 검사 품질과 혈색소·노출·기준식의 차이를 먼저 확인한 뒤 실제 변화의 가능성을 평가한다. 증상과 산소화·운동, 영상과 다른 기능 자료가 같은 경과를 지지하는지 본다. DLCO가 안정적이라는 한 결과로 모든 운동 시 저산소나 심혈관 제한을 배제하지 않는다. 폐포 공간과 혈관·혈액이 함께 만드는 전달을 이해하는 것이 이 검사의 중심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.h.extra0844",
+      "type": "heading",
+      "level": 2,
+      "text": "막과 혈액의 직렬 전달 저항"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.p.extra0844.0",
+      "type": "paragraph",
+      "markdown": "가스 전달을 개념적으로 나누면 막을 지나는 과정과 혈액 안의 결합 과정이 연속으로 작용한다. 단순화한 관계1/DL=1/DM+1/(θVc)에서 DM은 막 전달의 성분,θ는 단위 혈액량의 반응 성분,Vc는 모세혈관 혈액량이다. 이는 서로 다른 제한이 전체 전달에 기여함을 설명한다. 실제 검사 한 번으로 각 성분을 정확히 분리 측정했다는 뜻은 아니다."
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.p.extra0844.1",
+      "type": "paragraph",
+      "markdown": "가상의 두 전달 성분이 각각40이라는 같은 일관 단위를 가지면 전체는 역수합 때문에20이 된다. 한 성분만20으로 낮아지고 다른 성분이40이면 전체는약13.33이다. 두 성분의 단순 평균을 쓰면 연속 과정의 제한을 놓친다. 실제 DLCO는 폐용적과 혈색소·산소 및 가스 분포·검사 조건의 영향을 받으므로 이 예를 개인의 막 두께나 혈액량으로 바로 역산하지 않는다."
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity.table0844",
+      "type": "table",
+      "data": {
+        "title": "측정 대상과 생리적 의미",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "DLCO",
+            "막+혈액·혈색소와 전달"
+          ],
+          [
+            "VA",
+            "검사 가스가 섞인 폐포 공간"
+          ],
+          [
+            "KCO",
+            "단순 정상화 지표로 과해석 금지"
+          ],
+          [
+            "보정",
+            "혈색소·노출·품질과 기준 확인"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/testing/sections/pulmonology.testing.diffusing-capacity.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.testing.diffusing-capacity.001"
+  ],
+  "relatedLessons": [
+    "pulmonology.testing.lung-volumes"
+  ]
+}

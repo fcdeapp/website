@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.infection.source-control",
+  "subjectId": "general-surgery",
+  "chapterId": "infection",
+  "title": {
+    "ko": "감염원 조절과 수술 후 누출·농양",
+    "en": "Source Control Postoperative Leak and Abscess"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.infection.source-control.lo.01",
+      "text": "항균제와 감염원 조절의 역할을 구별한다"
+    },
+    {
+      "id": "general-surgery.infection.source-control.lo.02",
+      "text": "장기공간·문합·배액의 관계를 설명한다"
+    },
+    {
+      "id": "general-surgery.infection.source-control.lo.03",
+      "text": "반응 불충분의 원인을 체계적으로 재평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.infection.source-control.b.9e29d8f65fab",
+      "type": "heading",
+      "level": 2,
+      "text": "감염을 지속시키는 구조"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.7c003624efd5",
+      "type": "paragraph",
+      "markdown": "감염원 조절(source control)은 감염을 지속시키는 고름·괴사조직·누출과 이물 등의 원천을 처리하는 과정이다. 항균제는 미생물을 표적으로 하지만 닫힌 고름 공간과 혈류가 나쁜 죽은 조직, 계속 유입되는 장 내용물까지 물리적으로 없애지는 못한다. 미생물과 구조·숙주를 동시에 다루어야 한다. 어떤 접근이 필요한지는 감염 부위·크기·연결·생리 상태와 접근의 위해에 달려 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.abdomen.peritoneal-compartments.organ-context"
+      ]
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.329ae56a5c43",
+      "type": "paragraph",
+      "markdown": "수술 후 복강 내 액체는 혈액·장액·림프·담즙·소변·소화액·고름 등 여러 성분일 수 있다. 영상에서 액체가 보인다는 사실만으로 모두 감염이 확정되는 것은 아니다. 반대로 초기 영상이 작거나 모호해도 누출과 장기 위협이 진행할 수 있다. 수술 기록의 절제·문합·박리와 손상 가능 구조, 배액의 위치와 성상·변화, 현재 복부와 전신 상태를 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.0a95c9b426e2",
+      "type": "heading",
+      "level": 2,
+      "text": "누출은 유입과 배출의 수지다"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.3e5ff2caaf5e",
+      "type": "paragraph",
+      "markdown": "가상 공간의 부피를 V, 지속 유입을 L, 배출을 D라 하면 dV/dt=L−D로 쓸 수 있다. 배액이 많이 나와도 유입이 더 크면 내부 공간은 커질 수 있고, 배액이 줄어도 누출 중단이 아니라 관 막힘·위치 변화 때문일 수 있다. 관의 유출량 하나로 전체 감염원 조절을 판단하지 않는 이유다. 실제 공간은 격벽·다중 통로와 점도, 압력·중력의 영향을 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.68ce3be5f471",
+      "type": "paragraph",
+      "markdown": "배액관은 접근 경로와 끝의 위치, 연결된 공간만을 반영한다. 서로 연결되지 않은 공간은 하나의 관으로 모두 해결되지 않을 수 있다. 배출된 검체는 현재 관이 접하는 부위와 관의 집락 영향을 받을 수 있어, 장기공간의 모든 미생물을 대표한다고 보지 않는다. 배액이 멈춘 시점에 임상·영상·관의 상태를 함께 비교해야 남은 공간과 치유를 구별할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.f7b682db15d2",
+      "type": "heading",
+      "level": 2,
+      "text": "개입은 위험과 실행 가능성을 함께 본다"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.7ec4b56cf391",
+      "type": "paragraph",
+      "markdown": "영상 유도 접근과 수술적 접근, 조직 제거·복구·우회와 기기 제거는 목적과 위해가 다르다. 단순한 액체 배출이 충분한 상황과 지속 누출·괴사·막힘을 해결해야 하는 상황을 구별한다. 불안정한 환자에서는 소생·항균과 원천 통제가 시간적으로 맞물린다. 모든 검사와 완전한 진단명 확정을 기다리는 것이 안전한 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.d3183e027c32",
+      "type": "paragraph",
+      "markdown": "접근 가능한 경로에는 장관·혈관·장기와 흉막 같은 주변 구조가 놓일 수 있다. 정상 해부학에서의 거리와 수술 뒤 유착·변형된 구조가 다르므로 정적 인체 모형만으로 실제 시술 경로를 정하지 않는다. 현재 환자의 영상과 수술 기록, 전문적인 절차 평가가 필요하다. 개입 후에는 단순히 관을 넣었다는 사실보다 실제 원천과 남은 공간·장기 기능의 변화를 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.a29e22a5c8ac",
+      "type": "heading",
+      "level": 2,
+      "text": "호전과 실패의 시간표"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.4bc683362526",
+      "type": "paragraph",
+      "markdown": "열·통증·장 기능·혈역학·호흡·의식·소변, 배액과 검사·영상의 변화는 다른 속도로 나타난다. 일부 표지자가 남았다는 이유만으로 모든 조절 실패를 확정하지 않고, 반대로 해열만으로 누출이 해결되었다고 보지 않는다. 반응이 불충분하면 진단과 미생물·약물 노출, 배액의 개통·위치·격벽, 살아 있지 않은 조직과 지속 유입을 다시 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.e573850d21ac",
+      "type": "paragraph",
+      "markdown": "면역저하와 장기 기능 저하에서는 증상의 크기와 위험이 일치하지 않을 수 있다. 새로운 혼돈과 저관류·저산소, 국소 통증 악화는 이전의 작은 영상보다 우선하여 재평가해야 할 단서다. 의료진 간에는 원래 수술과 의심 누출, 개입의 목표·결과·남은 문제를 이어서 기록한다. 감염원 조절은 한 번의 절차 이름이 아니라 해부학적 원천과 생리적 결과를 반복 확인하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.6b7cf2bb2fe3",
+      "type": "heading",
+      "level": 2,
+      "text": "관의 결과와 환자의 결과"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.88f8bb38278f",
+      "type": "paragraph",
+      "markdown": "배액량 감소는 공간이 줄었다는 뜻일 수도 있지만 관 막힘과 위치 변화, 농도가 짙어진 결과일 수도 있다. 관을 세척했을 때 잘 흐른다는 사실도 모든 병변과 연결되었다는 보장은 아니다. 남은 공간과 통로·생리 상태를 함께 평가해야 감염원 조절의 성공을 판단할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.source-control.b.83c47f25e1b4",
+      "type": "paragraph",
+      "markdown": "중재 뒤에는 새 출혈과 장기 손상·누공, 통증과 감염의 변화도 관찰한다. 기구를 추가하는 것이 언제나 원천을 더 잘 통제하는 것은 아니므로 목표와 실제 효과를 비교한다. 수술·영상·미생물 자료를 한 시간표로 정리하면 서로 다른 팀이 같은 문제를 이어서 평가하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.source-control.table0847",
+      "type": "table",
+      "data": {
+        "title": "구조·생리·근거와 관리의 연결",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "원천",
+            "고름·괴사·이물·누출"
+          ],
+          [
+            "배액",
+            "위치·개통·연결 구획"
+          ],
+          [
+            "항균",
+            "표적·실제 노출·위해"
+          ],
+          [
+            "반응",
+            "전신·국소·영상의 시간표"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "general-surgery.infection.source-control.diagram.source-inflow-outflow-0847",
+      "type": "diagram",
+      "diagramRef": "diagram.source-inflow-outflow-0847",
+      "path": "diagrams/diagram.source-inflow-outflow-0847.svg",
+      "alt": "지속 유입과 공간의 수지의 독립 계산 곡선"
+    },
+    {
+      "id": "general-surgery.infection.source-control.3d0847",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.abdomen.peritoneal-compartments.organ-context"
+    },
+    {
+      "id": "general-surgery.infection.source-control.limits0847",
+      "type": "clinicalPearl",
+      "markdown": "정상 장기와 주변 구조의 위치 문맥이다. 복막 공간의 병적 연결·수술 후 변형·누출·농양·유착·전환점·허혈·장운동 및 안전한 시술 경로를 이 정적 모형이 재현하거나 결정하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/infection/sections/general-surgery.infection.source-control.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.infection.source-control.001",
+    "question.general-surgery.infection.source-control.002"
+  ],
+  "relatedLessons": [
+    "general-surgery.infection.prevention-antimicrobial",
+    "general-surgery.prevention.vte-bleeding-balance"
+  ]
+}

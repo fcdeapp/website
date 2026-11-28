@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.congenital.ventricular-septal-defect",
+  "subjectId": "cardiology",
+  "chapterId": "congenital",
+  "title": {
+    "ko": "심실중격결손의 압력과 재순환",
+    "en": "Pressure and Recirculation in Ventricular Septal Defect"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.lo.01",
+      "text": "제한성 결손과 압력차를 설명한다"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.lo.02",
+      "text": "폐정맥 환류와 좌심실 부하를 연결한다"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.lo.03",
+      "text": "잡음 세기와 중증도의 차이를 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.d54353f570b4",
+      "type": "heading",
+      "level": 2,
+      "text": "크기보다 중요한 유효 제한"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.69855b02cd85",
+      "type": "paragraph",
+      "markdown": "심실중격결손(ventricular septal defect, VSD)은 양심실 사이의 연결이다. 막주위·근성·유출부 등 위치에 따라 방실 전도계와 대동맥판, 다른 구조와의 관계가 달라진다. 작은 통로는 양심실 압력차를 상당 부분 유지하면서 높은 속도의 제트를 만들 수 있다. 큰 비제한성 통로는 압력이 더 직접적으로 전달되므로 실제 단락량은 폐·체혈관 저항과 다른 유출로 조건에 크게 좌우된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.thorax.heart.8aa996b1"
+      ]
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.5cbf2c1dbf67",
+      "type": "paragraph",
+      "markdown": "출생 직후 폐혈관 저항이 높을 때와 이후 저항이 낮아지는 시기의 소견은 다를 수 있다. 저항이 감소하면 좌우단락이 증가하여 수유 곤란과 성장 부진, 빠른 호흡 등 폐과혈류와 심부전의 증상이 드러날 수 있다. 신생아기에 증상이 작았다는 이유로 이후에도 같은 유량이라고 가정하지 않는다. 성인에서는 잔여 결손과 이전 수술의 영향, 폐혈관병과 판막·전도 문제를 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.65803361e10e",
+      "type": "heading",
+      "level": 2,
+      "text": "어느 심장방이 커지는가"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.2f8643a1cbc3",
+      "type": "paragraph",
+      "markdown": "좌심실에서 오른심실로 간 혈액은 폐를 지나 다시 왼심방과 왼심실로 돌아온다. 따라서 단순 좌우단락에서는 폐정맥 환류가 늘어 왼심방·왼심실의 용적 부담이 두드러질 수 있다. 심실중격에 구멍이 있다는 위치만 보고 오른심실만 커져야 한다고 외우면 재순환을 놓친다. 오른심실의 압력과 크기는 결손의 제한 정도와 폐혈관 상태, 동반 유출로 폐쇄 등에 따라 다르게 반응한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.19a689e8da97",
+      "type": "paragraph",
+      "markdown": "결손 양쪽 압력차를 추정하는 제트 속도는 도플러의 정렬과 측정 신호에 의존한다. 근사 압력차가 높다는 것은 해당 조건에서 압력 제한이 남아 있다는 단서다. 이 값을 전신 혈압 및 폐쇄성 병변과 연결하여 해석한다. 높은 속도가 큰 단락량을 직접 뜻하지는 않는다. 반대로 폐혈관 저항 상승으로 양쪽 압력이 가까워지면 큰 병변에서도 제트 속도와 잡음이 감소할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.0e6cb773b3cf",
+      "type": "heading",
+      "level": 2,
+      "text": "잡음과 판막의 관계"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.ad91c40e9017",
+      "type": "paragraph",
+      "markdown": "작은 제한성 결손에서 거친 잡음이 잘 들릴 수 있고, 큰 결손과 높은 폐동맥압에서는 소리가 덜 두드러질 수 있다. 잡음이 작아진 현상을 곧 자연 폐쇄의 증거로 해석하지 않는다. 산소포화도와 폐동맥압, 심장방 반응 및 영상에서 통로의 변화를 대조한다. 진찰은 흐름이 만드는 소리를 듣는 것이므로 소리의 변화에는 통로와 압력차, 유량이 함께 관여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.eb440dba6c0e",
+      "type": "paragraph",
+      "markdown": "일부 위치의 결손은 대동맥판 첨판의 지지와 운동에 영향을 주어 첨판 탈출과 역류에 연결될 수 있다. 작은 결손이라도 인접 판막에 생긴 결과가 임상적으로 중요할 수 있다. 막주위 결손의 중재에서는 전도계와의 관계도 고려한다. 모든 위치에 같은 기구·수술 위험을 적용하지 않고, 결손 주변의 구조와 현재 판막 기능을 따로 기술해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.65f3d2e91572",
+      "type": "heading",
+      "level": 2,
+      "text": "경과와 관리의 질문"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.0151ecd08e8e",
+      "type": "paragraph",
+      "markdown": "일부 작은 결손은 성장 중 작아지거나 닫힐 수 있지만 모든 형태가 같은 자연경과를 보이지는 않는다. 추적에서는 결손의 유량과 심장방 반응, 폐혈관 상태 및 판막·유출로의 변화를 확인한다. 폐쇄를 고려할 때에는 만성 부담과 진행 위험, 해부학 및 개입의 위해를 함께 평가한다. 심한 폐혈관병에서의 단락은 폐쇄 전 혈역학적 평가가 특히 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.b.67f0c2b87a65",
+      "type": "paragraph",
+      "markdown": "수술 또는 기구 뒤에도 잔여 단락과 전도 변화, 판막 기능과 감염 관련 문제를 추적한다. 교육에서는 결손을 찾는 질문, 흐름의 크기를 정하는 질문, 폐혈관의 가역성을 평가하는 질문을 구분한다. 이 세 질문은 서로 관련되지만 같은 영상 한 장이나 단일 압력차로 모두 해결되지 않는다. 현재의 기록에 위치·제한·방향·심장방 반응을 함께 남기는 것이 이후 비교의 토대다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.table0843",
+      "type": "table",
+      "data": {
+        "title": "연결·기전·검사 대상의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "제한성 통로",
+            "높은 속도와 압력차 가능"
+          ],
+          [
+            "큰 비제한성 통로",
+            "혈관 저항의 영향 큼"
+          ],
+          [
+            "재순환",
+            "폐정맥 환류·왼심장 용적"
+          ],
+          [
+            "인접 구조",
+            "대동맥판·전도계"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.anatomy3d0843",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.thorax.heart.8aa996b1"
+    },
+    {
+      "id": "cardiology.congenital.ventricular-septal-defect.limits0843",
+      "type": "clinicalPearl",
+      "markdown": "정상 심방·심실의 위치와 재순환 경로를 생각하기 위한 해부학 문맥이다. 중격결손·단락 통로·혈류·심장방 확장·환자별 선천성 또는 수술 구조를 이 정상 정적 모델로 표현하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/congenital/sections/cardiology.congenital.ventricular-septal-defect.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.congenital.ventricular-septal-defect.001"
+  ],
+  "relatedLessons": [
+    "cardiology.congenital.atrial-septal-defect",
+    "cardiology.congenital.patent-ductus-aorta"
+  ]
+}

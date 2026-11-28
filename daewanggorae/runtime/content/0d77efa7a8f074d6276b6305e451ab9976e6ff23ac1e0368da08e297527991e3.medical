@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.abscess-necrotizing-pneumonia",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.b.101bc58bc48d",
+      "sourceSha256": "101bc58bc48db41a955bf03a81e52f1279a947a45c99541c85e4cc7dc564846b",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.16d71b16725ee4cdf964",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 138,
+            "end": 140,
+            "exact": "결핵",
+            "prefix": "련되지만 모든 공동이 같은 감염은 아니다. ",
+            "suffix": "과 진균, 종양과 경색·염증성 질환 등 감별"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.b.db939d6871be",
+      "sourceSha256": "db939d6871be29ae52237b05adc405512c7da4fc0c22ebf7013ba67a25071685",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.e3eefaf2b9637132bb26",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 92,
+            "end": 145,
+            "exact": "구강 미생물과 혐기성 기전이 중요한 상황도 있지만 모든 공동을 하나의 미생물로 설명하지 않는다.",
+            "prefix": " 숙주, 선행 약물·노출에 따라 달라진다. ",
+            "suffix": " 특정 부위에 반복되면 막힘과 구조·종양의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.b.4cc7f522e944",
+      "sourceSha256": "4cc7f522e94499d4e545ff5518175e2a407513d9f775ff72f9bc7be8f493ba6a",
+      "sourceLengthUtf16": 178,
+      "annotations": [
+        {
+          "id": "ann.ae7432094b2f6fd22340",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 108,
+            "end": 110,
+            "exact": "흉막",
+            "prefix": "하지 않는다. 공동벽의 두께와 주변 실질, ",
+            "suffix": "·기관지의 관계와 다른 결절을 평가한다. 치"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        },
+        {
+          "id": "ann.b979a781627f9a1a3316",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 46,
+            "end": 91,
+            "exact": "공기액체층은 유용한 단서지만 원인 균종과 침범의 깊이를 단독으로 확정하지 않는다.",
+            "prefix": "들어가 액체 위에 공기층이 보일 수 있다. ",
+            "suffix": " 공동벽의 두께와 주변 실질, 흉막·기관지의"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.b.bb3606ae0b66",
+      "sourceSha256": "bb3606ae0b66ba474930df543b3dd4039d29268e7c51f94f785f895bd2a6d55c",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.b.bc06561f81b0",
+      "sourceSha256": "bc06561f81b060f6a1af7bb4b02495d9054693cd271c4781de42a67209c85569",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.97841ec2f6cb84548332",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 94,
+            "end": 96,
+            "exact": "기흉",
+            "prefix": "저산소·패혈증과 흉막 확장, 기관지흉막루와 ",
+            "suffix": " 등은 우선순위를 바꾸는 합병증이다. 실질의"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.b.76eedfff5bbb",
+      "sourceSha256": "76eedfff5bbba191f4e6821c6ccbee6546400a913fbf714124b0035702557105",
+      "sourceLengthUtf16": 163,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.b.f5811b5deae1",
+      "sourceSha256": "f5811b5deae1f2027e0a2595508978a15c848bbf9a957f9a5acb628d3bf354c3",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.16fc29e1a3ff2786d95b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 100,
+            "end": 106,
+            "exact": "감염원 조절",
+            "prefix": " 다른 진단을 재검토한다. 배액과 수술 등 ",
+            "suffix": "의 적합성은 위치와 크기·연결, 전신 위험·"
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.b.eedf55d8ca1a",
+      "sourceSha256": "eedf55d8ca1ae35de2841e1c16135ce3f781072861cee4a285089a5cf0ffecec",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.p.extra0846.0",
+      "sourceSha256": "213f5a71b08f59567808493b8fe88f9ff0b426218389e0fc8aa1f2d34a7e5275",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.p.extra0846.1",
+      "sourceSha256": "433b4683d45275f2ce49cb1c0f0359394f365ff3565b7a00bbb88d8d75c209d5",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.abscess-necrotizing-pneumonia.p.more0846.0",
+      "sourceSha256": "b8af53fb67e367808b45c84662fb3783a7156673916ecff47f526683a9f887c7",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    }
+  ]
+}

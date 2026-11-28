@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.virulence.capsule-opsonization",
+  "subjectId": "bacteriology",
+  "chapterId": "virulence",
+  "title": {
+    "ko": "피막과 옵소닌·식세포 방어",
+    "en": "Capsules and Opsonophagocytic Defense"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.lo.01",
+      "text": "피막의 물리적·면역학적 역할을 설명한다"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.lo.02",
+      "text": "결합 항체와 기능 항체를 구별한다"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.lo.03",
+      "text": "피막 항원의 다양성과 보호 범위를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.d5da57ce6eb5",
+      "type": "heading",
+      "level": 2,
+      "text": "표면을 덮는 물질의 역할"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.ad16ff107b45",
+      "type": "paragraph",
+      "markdown": "피막(capsule)은 세균 표면을 둘러싼 비교적 조직화된 층이다. 많은 피막은 다당류지만 모든 피막이 당으로만 이루어지지는 않는다. 세포 표면에 느슨하게 형성된 점액성 물질과 조직화된 피막은 구별되면서도 표면 부착·수분 유지·방어 회피라는 기능에서 연결될 수 있다. 피막을 세포벽 자체로 취급하면 막과 펩티도글리칸의 역할을 혼동하게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.abdomen.spleen.organ-context"
+      ]
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.25e89cd36868",
+      "type": "paragraph",
+      "markdown": "피막은 식세포가 세균 표면에 접근하고 결합하는 과정을 방해할 수 있다. 그러나 피막이 있으면 어떤 조건에서도 포식이 불가능하다는 뜻은 아니다. 특정 피막에 결합한 항체와 보체 조각은 숙주 세포의 수용체가 잡을 표지를 제공한다. 같은 세균이라도 항체의 특이성·보체 기능·식세포 상태에 따라 제거 능력이 달라지는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.66b55c09bd2c",
+      "type": "heading",
+      "level": 2,
+      "text": "표면 결합과 제거 기능"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.deb98e1a26ab",
+      "type": "paragraph",
+      "markdown": "옵소닌화(opsonization)는 미생물 표면에 붙은 분자가 식세포의 인식을 돕는 과정이다. IgG의 Fc 부분과 C3b 계통 조각은 각기 관련 수용체를 통해 식세포 반응에 기여한다. 항체가 표면에 결합하는 양이 많다는 결과와 실제 포식·살상이 증가했다는 결과는 같지 않다. 표적의 위치와 항체의 아형, 보체와 효과기 세포가 기능의 차이를 만들 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.79e193a4c4b1",
+      "type": "paragraph",
+      "markdown": "기능 실험에서는 항체 유무만 바꾸는 조건 외에 보체와 식세포가 보존되었는지도 확인한다. 항체를 넣어도 살상이 늘지 않았다면 항체의 질뿐 아니라 보체 비활성화·식세포 기능 저하·표적의 변화를 검토한다. 부착된 세균과 내부로 들어간 세균, 이후 살아남은 세균을 구별하면 어느 단계에서 차이가 생겼는지 더 명확해진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.251887a05085",
+      "type": "heading",
+      "level": 2,
+      "text": "항원 다양성과 방어의 범위"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.424b234df668",
+      "type": "paragraph",
+      "markdown": "피막 다당류의 구조가 다르면 서로 다른 혈청형(serotype)으로 구분될 수 있다. 한 형태에 대한 항체가 다른 형태에도 동일한 보호를 보장하지는 않는다. 일부 교차반응이 있어도 검사 결합과 실제 보호의 폭은 별도로 평가한다. 피막 유형의 변화가 항체 회피에 기여할 수 있으므로 균종 이름만으로 면역학적 동질성을 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.ac5d02c00bd7",
+      "type": "paragraph",
+      "markdown": "단백질에 결합한 다당류 항원은 다당류 단독과 다른 방식으로 T세포 도움을 활용할 수 있다. B세포는 피막 항원을 붙잡고 연결된 단백질의 펩타이드를 제시하여 도움을 얻는다. T세포가 다당류 자체를 통상적인 펩타이드처럼 인식한다는 뜻은 아니다. 이 연결은 항체의 성숙과 기억을 설명하지만 실제 접종 일정이나 제품의 보호 범위는 별도의 시점별 자료가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.9e15a7a3c01d",
+      "type": "heading",
+      "level": 2,
+      "text": "비장과 혈액 방어"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.dcf338f59dcb",
+      "type": "paragraph",
+      "markdown": "비장은 혈액에서 들어오는 입자와 미생물에 대한 방어에 기여한다. 해부학적 비장 결손과 기능 저하는 피막세균 방어의 임상 문맥에서 중요하다. 다만 비장의 존재 여부만으로 모든 환자의 제거 기능을 수치화할 수는 없다. 항체·보체·다른 장기의 식세포와 기존 질환이 함께 작동한다. 정상 비장의 육안 위치를 보는 것과 백색수질·변연부의 미세 면역 기능을 관찰하는 것은 다른 수준이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.b.493d33dfbba6",
+      "type": "paragraph",
+      "markdown": "피막 유전자 제거 실험에서 병원성이 줄었다면 피막의 기여를 지지하지만 성장 속도나 다른 표면 성분도 변했을 수 있다. 유전자 복원과 비슷한 성장 조건, 감염량 대조가 필요하다. 피막의 존재·양·조성·발현 시점이 서로 다른 변수임을 구별해야 실험 결과를 한 가지 인과 주장으로 과도하게 확대하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "피막",
+            "조직화된 표면층; 대개 다당류"
+          ],
+          [
+            "항체 결합",
+            "특이 표적 인식"
+          ],
+          [
+            "옵소닌 살상",
+            "보체·식세포 효과기 단계 포함"
+          ],
+          [
+            "혈청형",
+            "구조적 항원 차이; 보호 범위 별도"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.anatomy3d.0825",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.abdomen.spleen.organ-context"
+    },
+    {
+      "id": "bacteriology.virulence.capsule-opsonization.visualization-limits.0825",
+      "type": "clinicalPearl",
+      "markdown": "정상 비장의 위치와 인접 구조를 확인한다. 피막·보체·항체·식세포와 옵소닌 살상은 이 정적 육안 OBJ에 포함되지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/virulence/sections/bacteriology.virulence.capsule-opsonization.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.virulence.capsule-opsonization.001"
+  ],
+  "relatedLessons": [
+    "bacteriology.structure.mycolates-wallless",
+    "bacteriology.virulence.adhesion-motility"
+  ]
+}

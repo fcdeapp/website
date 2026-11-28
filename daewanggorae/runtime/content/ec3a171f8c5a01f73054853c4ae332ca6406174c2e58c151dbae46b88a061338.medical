@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.shock.hypovolemia-response",
+  "subjectId": "pathology",
+  "chapterId": "shock",
+  "title": {
+    "ko": "저혈량과 출혈의 시간 경과",
+    "en": "Hypovolemia and the Time Course of Hemorrhage"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.shock.hypovolemia-response.lo.01",
+      "text": "총체액·유효순환·전부하를 구별한다"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.lo.02",
+      "text": "혈색소 농도와 적혈구 총량의 시간차를 설명한다"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.lo.03",
+      "text": "수액 반응성과 필요성·내성을 분리한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.shock.hypovolemia-response.b.a775b657bf41",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관 안에 있는 양과 실제 충만"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.db4efd9c38e8",
+      "type": "paragraph",
+      "markdown": "저혈량은 출혈뿐 아니라 위장관·신장·피부의 손실과 체액 이동 등 다양한 원인에서 생긴다. 몸 전체의 수분량, 혈관 안의 양과 심장으로 돌아오는 유효한 정맥 환류는 같은 개념이 아니다. 정맥의 용적과 긴장, 흉강 압력과 심장의 수용 능력도 충만을 바꾼다. 같은 손실량이 모든 환자에서 같은 압력·유량 변화를 만드는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.bbd542a60afb",
+      "type": "paragraph",
+      "markdown": "전부하(preload)는 심실 근육이 수축 전에 받은 부하와 관련되며 중심정맥압 같은 단일 압력으로 완전히 표현되지 않는다. 심실 순응도와 주변 압력, 판막과 심실 사이의 상호작용을 고려해야 한다. 낮은 압력만으로 반드시 유량이 수액에 반응한다고 판단하거나 높은 압력만으로 모든 혈관 내 부족을 배제하지 않는다. 압력과 실제 용적·근육의 늘어남은 구별된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.b09d7364aabb",
+      "type": "heading",
+      "level": 2,
+      "text": "초기 보상의 의미"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.3b492d57df21",
+      "type": "paragraph",
+      "markdown": "출혈이 발생하면 교감신경과 호르몬 반응이 혈관 긴장·심박수와 신장 처리를 바꾼다. 말초혈관 수축은 혈압을 지지할 수 있지만 조직 분배의 비용을 가진다. 혈압이 유지되는 동안에도 피부·장·신장 등에서 기능 변화가 시작될 수 있다. 기저 약물과 자율신경 기능, 나이·운동 상태가 전형적 빈맥의 표현을 바꿀 수도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.e914c69419bc",
+      "type": "paragraph",
+      "markdown": "진찰에서는 시간에 따른 의식·호흡·피부와 맥박의 변화를 관찰한다. 환경 온도나 통증·불안도 일부 소견을 바꾸므로 단일 징후가 손실량을 정확히 환산해 주는 것은 아니다. 환자의 이전 상태와 실제 출혈 가능 부위를 확인하고, 눈에 보이는 손실 외의 숨은 공간과 지속적 누출을 고려한다. 원인의 탐색과 생리적 중증도 평가는 함께 진행된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.9abd8c4b407f",
+      "type": "heading",
+      "level": 2,
+      "text": "농도가 늦게 변하는 이유"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.585d460a24a3",
+      "type": "paragraph",
+      "markdown": "혈색소는 농도이므로 적혈구와 혈장이 비슷한 비율로 함께 소실되면 초기 농도가 크게 변하지 않을 수 있다. 이후 조직에서 혈관으로 이동한 물, 투여된 체액과 지속적 손실이 농도를 바꾼다. 초기 Hb가 정상이라는 이유로 중대한 출혈을 배제하면 총량과 농도를 혼동하게 된다. 반대로 농도 감소가 관찰되면 출혈 외의 희석과 검사 조건도 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.ead016e83aa9",
+      "type": "paragraph",
+      "markdown": "가상으로 Hb15g을 포함한 혈액100mL가 균일하게40mL 줄면 남은 Hb는9g, 혈액은60mL이고 농도는여전히15g/dL다. 여기서 적혈구 총량이 보존된 것은 아니다. 이 비례 예시는 혈관 안의 재분포와 실제 생리적 보상을 생략한다. 환자의 손실량이나 수혈 기준을 계산하는 자료로 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.e251caf3a579",
+      "type": "heading",
+      "level": 2,
+      "text": "유량의 반응과 임상적 필요"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.9d893a8dc437",
+      "type": "paragraph",
+      "markdown": "전부하를 바꾸었을 때 CO 또는 일회박출량이 늘어날 수 있는 성질과, 그 환자에게 추가 체액이 필요한지는 다른 질문이다. 필요한 유량이 부족한지, 원인을 체액으로 교정할 수 있는지와 장기 위해를 함께 평가한다. 반응성이 존재해도 이미 충분한 관류 상태라면 같은 행동의 이득이 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.1c02a5dc8761",
+      "type": "paragraph",
+      "markdown": "내성은 추가 체액이 폐울혈·정맥압·조직 부종 등에 어떤 비용을 주는지와 관련된다. 반응성·필요성·내성은 서로 겹치지만 동의어가 아니다. 검사에서 유량이 증가했다는 사실을 다음 체액 투여의 자동 명령으로 바꾸지 않는다. 실제 변화가 측정 오차보다 큰지, 자발호흡·부정맥과 다른 조건이 측정에 영향을 주었는지도 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.074797af8ddc",
+      "type": "heading",
+      "level": 2,
+      "text": "손실의 원인과 대체의 목표"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.e402d1bf0b19",
+      "type": "paragraph",
+      "markdown": "출혈을 멈추는 것과 순환량을 지지하는 것은 서로 다른 치료 목적이다. 혈압이 잠시 회복되어도 출혈 원인이 지속되면 문제는 다시 나타날 수 있다. 체액·혈액 성분의 선택은 산소 운반·응고·용적과 위해의 균형을 포함한다. 특정 숫자 하나를 맞추는 것으로 모든 목표가 충족되었다고 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.b.c0589f7ab29d",
+      "type": "paragraph",
+      "markdown": "추적에서는 원인 조절의 증거와 혈역학적 반응, 산소 운반과 장기 기능을 따로 기록한다. 연속 표는 개입 전후의 시간을 명확히 하고, 혈색소·혈압·CO와 증상의 변화가 같은 시각의 정보인지 확인해야 한다. 이것은 자료 기반 문제에서 단일 최종 검사값보다 과정과 인과를 평가하는 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.table.0821",
+      "type": "table",
+      "data": {
+        "title": "관찰과 판단의 구별",
+        "columns": [
+          "관찰",
+          "정보"
+        ],
+        "rows": [
+          [
+            "초기 Hb",
+            "유지"
+          ],
+          [
+            "관류 소견",
+            "악화"
+          ],
+          [
+            "손실",
+            "진행 가능"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pathology.shock.hypovolemia-response.diagram.hemorrhage-concentration-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.hemorrhage-concentration-toy",
+      "path": "diagrams/diagram.hemorrhage-concentration-toy.svg",
+      "alt": "균일 손실의 가상 총량과 농도의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/shock/sections/pathology.shock.hypovolemia-response.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.shock.hypovolemia-response.001",
+    "question.pathology.shock.hypovolemia-response.002"
+  ],
+  "relatedLessons": [
+    "pathology.shock.oxygen-budget",
+    "pathology.shock.pump-obstruction"
+  ]
+}

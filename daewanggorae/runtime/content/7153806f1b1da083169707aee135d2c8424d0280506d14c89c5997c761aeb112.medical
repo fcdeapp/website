@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.respiratory.ventilation-perfusion",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.respiratory.ventilation-perfusion.b.bcd3a4cb1b40",
+      "sourceSha256": "bcd3a4cb1b402949d312a68d9dc7d4dc872eb4044b2e0466e45a9f4c86eb36ae",
+      "sourceLengthUtf16": 243,
+      "annotations": [
+        {
+          "id": "ann.96cc04ed533ecfdadcca",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 28,
+            "end": 30,
+            "exact": "흉막",
+            "prefix": " 가로막이 수축하여 흉강의 용적이 증가하면 ",
+            "suffix": "강압이 더 낮아지고 폐가 팽창한다. 폐포압이"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.ventilation-perfusion.b.87ae0e27e251",
+      "sourceSha256": "87ae0e27e251e8696fbf246d6e74e027722e519b7d96a4de3510a56a81b3d39b",
+      "sourceLengthUtf16": 289,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.ventilation-perfusion.b.b099e8b2ca93",
+      "sourceSha256": "b099e8b2ca936435400773132f88d1c5e29fffbb8f648a4062f3615f16b2fa32",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.ventilation-perfusion.b.9364fbc225ba",
+      "sourceSha256": "9364fbc225bab584ff50949bc5fc65ffd621326a098d8b8a7202629e95cb29f8",
+      "sourceLengthUtf16": 229,
+      "annotations": [
+        {
+          "id": "ann.355e1efc52a2d8b514bd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 193,
+            "exact": "산소를 투여하여 산소포화도가 개선되어도 CO2 배출 장애가 해결되었다고 판단할 수 없다.",
+            "prefix": "서로 다른 기전으로 환기 부족을 일으킨다. ",
+            "suffix": " 환기와 산소화는 연결되어 있지만 별도로 평"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.ventilation-perfusion.b.5f9d13f88ee4",
+      "sourceSha256": "5f9d13f88ee4ff43fde82aefb9687ef53ca29cd9d3caac6a046a95e3413280a8",
+      "sourceLengthUtf16": 262,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.ventilation-perfusion.b.7b65cc7aeed1",
+      "sourceSha256": "7b65cc7aeed1d50c58a492f1f07d420ba86331dc79f7532b40bf298f3165e091",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.ventilation-perfusion.b.235da5f9d790",
+      "sourceSha256": "235da5f9d7904e8f6826890c3912db2ea62e5eb008bea9e31aa42174972ccb9d",
+      "sourceLengthUtf16": 260,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.ventilation-perfusion.b.779002217769",
+      "sourceSha256": "779002217769be1b4a1ace6a9db34c0f2bb19d9100af19f1e65ee98676a43e57",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    }
+  ]
+}

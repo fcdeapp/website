@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "symptom-differential.respiratory.dyspnea",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.19e78547a01c",
+      "sourceSha256": "19e78547a01c83313c9d0f89c740e75a09637a49379668dca3229aae887e303d",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.cc265c630206",
+      "sourceSha256": "cc265c630206153bc85ee199ae3cb14e2dd35dec87cd928e9e060f535f77d9da",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.c84cd86c0ec0",
+      "sourceSha256": "c84cd86c0ec0a4924a2a11de44a85a0b5eef74aef1a04cb03a9df342cea58a18",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.65cda1b613ea606583e3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 176,
+            "end": 203,
+            "exact": "과거의 호흡곤란과 이번 양상이 같은지도 중요하다.",
+            "prefix": " 있지만 질환 하나의 확진 소견은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.b4c009cea727",
+      "sourceSha256": "b4c009cea727642316ba720bfdb481c7dd3ed4b17d8dd68fcef0283ad2cd01b0",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.78ceab8cdd4aff57cd54",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 6,
+            "exact": "천식",
+            "prefix": "흡연과 ",
+            "suffix": ", 심장질환과 혈전 위험, 최근 수술과 부동"
+          },
+          "conceptId": "reader.term.0724de0dbf1ee4f5",
+          "targetDocumentId": "pulmonology.airways.asthma-mechanisms"
+        },
+        {
+          "id": "ann.4ba9a8305aea201baa8c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 62,
+            "end": 99,
+            "exact": "환자가 불안을 보인다는 사실만으로 심인성 원인으로 확정하지 않는다.",
+            "prefix": " 및 빈혈 등의 병력은 질문을 구체화한다. ",
+            "suffix": " 호흡곤란 자체가 불안을 만들 수 있고 급성"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.92e339d33818",
+      "sourceSha256": "92e339d33818df54cce65b0c923b64bf14c74720e117f85bc57d6ece987fd9e6",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.abb5d54fd6ab",
+      "sourceSha256": "abb5d54fd6ab385d3dd6c03d4af71c82002fb93cd5571270e1f6e701fb4aa746",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.407b2a7c3ef039b8fdc8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 10,
+            "end": 12,
+            "exact": "흉막",
+            "prefix": "폐실질과 폐혈관, ",
+            "suffix": "의 문제는 환기-관류 관계와 확산, 기계적 "
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        },
+        {
+          "id": "ann.5c59ec2490d057c4be55",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 54,
+            "end": 56,
+            "exact": "기흉",
+            "prefix": ", 기계적 부담을 바꾼다. 폐렴과 폐부종, ",
+            "suffix": "과 폐색전증은 각각 다른 경로로 증상을 만들"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        },
+        {
+          "id": "ann.8260a0d1ca90db8d987b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 125,
+            "end": 182,
+            "exact": "한 장의 흉부 영상이 정상이라는 사실만으로 모든 중요한 폐혈관 질환이나 초기 질환을 배제할 수는 없다.",
+            "prefix": " 및 혈전 위험 평가 등의 역할이 다르다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.e2e40d58ea67",
+      "sourceSha256": "e2e40d58ea6769059be5e9c677be4ee826577650b252e5b504a3deb124b3f8b9",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.b4312a703508",
+      "sourceSha256": "b4312a703508e1150dfc9b3a7d98756099eb9ce722ad2377b895ef67875bb057",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.116071554c91",
+      "sourceSha256": "116071554c918ae84fcf1ca6f3f307e41a5b6336eb314fa7cbbd9d744096ae13",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.d50dbaec11ee",
+      "sourceSha256": "d50dbaec11ee48efcb4435778b4745467fb7040e155baccbcf066efb7ee440fd",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.1b81d48d70b6",
+      "sourceSha256": "1b81d48d70b6be77bbebce171c9e9753afddd77731cbde14d542c4de963b3435",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "symptom-differential.respiratory.dyspnea.b.af720c43cef2",
+      "sourceSha256": "af720c43cef2cb4662b0efcdad0f0d7e9f6a73bc78231160ddebfedd33bbc2f8",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    }
+  ]
+}

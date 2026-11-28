@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.tumor.immunoediting-escape",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.tumor.immunoediting-escape.b.1bfdade02941",
+      "sourceSha256": "1bfdade02941653bec1c07faf51bcd6e3700449b34d2239933911bf9336bb94f",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tumor.immunoediting-escape.b.a172101d481e",
+      "sourceSha256": "a172101d481e612da02415aec31fb2ebb8ff888f2ec55b9af053be6d1e3b8ea0",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tumor.immunoediting-escape.b.6e07f8400d6a",
+      "sourceSha256": "6e07f8400d6acc9429347b0b15bc81c216e8df30eef58bc4aee581c7dd10b47e",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.eb7eae612b6de8acefb4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 152,
+            "end": 213,
+            "exact": "모든 MHC I 저하가 같은 유전자 결함으로 생기는 것은 아니며 가역적인 발현 억제와 구조적 소실을 구별한다.",
+            "prefix": "전자의 소실도 일부 T세포 인식을 바꾼다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.tumor.immunoediting-escape.b.6c569cfd71ae",
+      "sourceSha256": "6c569cfd71ae30ccde08e33ed039be7ae71bb8c7f6e5aa1dfa0f07505b82dd03",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.7ac4476ef1c7a2f34950",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 28,
+            "end": 32,
+            "exact": "항원제시",
+            "prefix": "γ 수용체와 JAK1·JAK2 관련 신호는 ",
+            "suffix": " 환경과 성장 억제 등 여러 반응을 조절한다"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.tumor.immunoediting-escape.b.9355bac01360",
+      "sourceSha256": "9355bac01360d3c4b08d42c7ad6138710776e8ca81f065d33131122d52212c70",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tumor.immunoediting-escape.b.c56892377884",
+      "sourceSha256": "c56892377884d3ef4a17e7ecaf62ccac4d00554ecad605e4d077c751d7713836",
+      "sourceLengthUtf16": 237,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tumor.immunoediting-escape.b.17d0267aedd7",
+      "sourceSha256": "17d0267aedd799cf051cd18248cf8626ce8b5129c1b57dff2eee9f1da3b982ae",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tumor.immunoediting-escape.b.84f7da4899c3",
+      "sourceSha256": "84f7da4899c3036fdc94fcef003eb3e1786e72a55927bcf9b43a51ce43e50be1",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.assessment.frailty-nutrition",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.a3f7845ae313",
+      "sourceSha256": "a3f7845ae3137517c727c037f7f763ba9812b4638fe985123a4d9a09556fb3e9",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.101b70b67d80",
+      "sourceSha256": "101b70b67d80f5df8f1783c7b28ad957c63d44014e44f4d6eb41f6aad3a18348",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.aa9e87731f9a",
+      "sourceSha256": "aa9e87731f9ad3999aaaa6a7ea7743f4360169cef7820dd3f7e9249c8632fad7",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.6d67a6333792c79047a8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 102,
+            "end": 107,
+            "exact": "만성 염증",
+            "prefix": "되어도 조직 손실이 진행할 수 있다. 암과 ",
+            "suffix": "에서는 식사를 늘리는 것만으로 모든 이화작용"
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.9c432192b400",
+      "sourceSha256": "9c432192b40094a4b7ecbf6ac47cb47afcdd1ffed2608114c95ee1c9b6fd73a7",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.036add580896",
+      "sourceSha256": "036add5808967e4ec4075e59856fbb0104cb449a9ef8959c2ff9e8be3b5a975d",
+      "sourceLengthUtf16": 191,
+      "annotations": [
+        {
+          "id": "ann.c102ba066444cdada367",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 39,
+            "exact": "위장관을 사용할 수 있는지와 실제 섭취로 목표에 도달하는지를 구별한다.",
+            "prefix": "",
+            "suffix": " 경구 식사, 경관영양과 정맥영양은 접근과 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.89fa45f8338c",
+      "sourceSha256": "89fa45f8338ca0c062a7fd94588212c1820a5b622a11fc91a212d50a76d61ea3",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.b41a12cb818c",
+      "sourceSha256": "b41a12cb818c5d62b70a44d36067bdea789f165bc6cdc2c3f1a5fd40f1cc948d",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.a0eea0a2724f",
+      "sourceSha256": "a0eea0a2724fa5a4ee2423ad09eed76052d00012b9ea3037b17936fb76ac7214",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.89d088024a48",
+      "sourceSha256": "89d088024a48399b4591a3385cd4b8897f403bb9dcd4321ad9c8f3965a3e4030",
+      "sourceLengthUtf16": 161,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.frailty-nutrition.b.74b817169a87",
+      "sourceSha256": "74b817169a87f422286898497d6ec1faf06b28d2cb7ad5430e7077aaf7449e2c",
+      "sourceLengthUtf16": 158,
+      "annotations": []
+    }
+  ]
+}

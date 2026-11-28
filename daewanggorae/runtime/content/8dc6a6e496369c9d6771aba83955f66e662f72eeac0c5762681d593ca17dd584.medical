@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.cardiomyopathy.arrhythmogenic-substrate",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.cardiomyopathy.arrhythmogenic-substrate.b.5ba9d7bb84ef",
+      "sourceSha256": "5ba9d7bb84efd8804ad78356e2081dc9ea759d4ce0cbb37ce87d712962ace6ab",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.6a47448784c56bb6f7b6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 15,
+            "end": 18,
+            "exact": "심부전",
+            "prefix": "일부 심근질환에서는 뚜렷한 ",
+            "suffix": "보다 심실성 부정맥과 전도 이상, 실신이 먼"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.5ca9aaf0fef735e857dd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 109,
+            "end": 164,
+            "exact": "작은 반흔과 전도의 불균일성은 전체 박출률이 비교적 유지되어도 중요한 전기적 위험을 만들 수 있다.",
+            "prefix": "기질의 변화가 전파와 회귀에 영향을 준다. ",
+            "suffix": " 따라서 박출률이 높다는 사실을 모든 심실성"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.arrhythmogenic-substrate.b.8d0c2ee34ba8",
+      "sourceSha256": "8d0c2ee34ba8d795aee7cf103d1fc31e6a79ad88c42a538d55341af4cf166c77",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.46b89b8fc5abd7ddc0bd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 76,
+            "exact": "부정맥성 우심실 심근병증이라는 고전적 이름은 중요한 표현형을 가리키지만 부정맥성 심근질환의 범위가 항상 우심실에만 한정되는 것은 아니다.",
+            "prefix": "",
+            "suffix": " 좌심실 우세 또는 양심실 침범과 유전적·병"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.arrhythmogenic-substrate.b.88eac59031e2",
+      "sourceSha256": "88eac59031e2b8329a64c91b5242ba98eed840a900ad9841117c1e2122504dc0",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.arrhythmogenic-substrate.b.7a170ad96c3f",
+      "sourceSha256": "7a170ad96c3f87a8cacc4094185c6a0c74f53b7ee653724e73899a1a450ef0a9",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.arrhythmogenic-substrate.b.f5c08a799638",
+      "sourceSha256": "f5c08a7996389db8b78875beb57a47546438897d9dd094bad4108c442714cd88",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.arrhythmogenic-substrate.b.d34ffda0f26b",
+      "sourceSha256": "d34ffda0f26bf4c873675d86c7da539d02a2fcb776b89f877b898fba6a92b23b",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.3a307f4ce6a998deb278",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 78,
+            "end": 115,
+            "exact": "이미 심정지나 위험 빈맥이 있었는지와 일차 예방의 상황을 구별한다.",
+            "prefix": "모든 예방적 기기 치료를 확정하지 않는다. ",
+            "suffix": " 환자의 나이와 상태, 위해와 장기 기대 효"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.arrhythmogenic-substrate.b.457395bfa472",
+      "sourceSha256": "457395bfa472a193c7cf79a4bc7545f53fa47be646473e952c9f7b342d4e9690",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.arrhythmogenic-substrate.b.12700fb66590",
+      "sourceSha256": "12700fb6659069e6e870f6c29d4fcdb779873d9541b74cfed501f9a228ab29ce",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.lymph-node-flow",
+  "lessonId": "histology.lymphoid.organ-architecture",
+  "title": "림프절의 림프 통과 경로",
+  "nodes": [
+    {
+      "id": "afferent",
+      "label": "들림프관",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "subcapsular",
+      "label": "피막밑굴",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "sinuses",
+      "label": "피질·속질의 림프굴",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "efferent",
+      "label": "문의 날림프관",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.lymph-node-flow.edge.1",
+      "source": "afferent",
+      "target": "subcapsular",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.lymph-node-flow.edge.2",
+      "source": "subcapsular",
+      "target": "sinuses",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.lymph-node-flow.edge.3",
+      "source": "sinuses",
+      "target": "efferent",
+      "relation": "directed",
+      "label": ""
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 670
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 670
+      },
+      "fontSize": 22,
+      "nodes": {
+        "afferent": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "subcapsular": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "sinuses": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "efferent": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "주요 림프 경로의 요약이며 혈액·림프구의 HEV 유입이나 모든 미세 통로를 표시하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

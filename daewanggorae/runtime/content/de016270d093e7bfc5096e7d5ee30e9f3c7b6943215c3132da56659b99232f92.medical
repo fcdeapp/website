@@ -1,0 +1,197 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.infection.pneumonia-host-gas-exchange",
+  "subjectId": "pulmonology",
+  "chapterId": "infection",
+  "title": {
+    "ko": "폐렴의 숙주 방어와 가스교환",
+    "en": "Host Defense and Gas Exchange in Pneumonia"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.lo.01",
+      "text": "병원체 유입과 숙주 방어를 연결한다"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.lo.02",
+      "text": "폐포 충만과 환기·관류를 설명한다"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.lo.03",
+      "text": "국소 감염과 전신 반응을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.74150d22aa04",
+      "type": "heading",
+      "level": 2,
+      "text": "폐포에 이르는 여러 경로"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.e0f6fba7e79d",
+      "type": "paragraph",
+      "markdown": "폐렴(pneumonia)은 폐 실질의 감염과 염증을 평가하는 임상 질환이다. 구강·상기도 물질의 미세흡인과 흡입, 드물게 혈행성 전파 등으로 미생물이 도달할 수 있다. 정상 기도에서는 점액섬모와 기침, 상피 장벽과 폐포 대식세포·면역 반응이 이를 처리한다. 유입량과 독성, 제거와 면역의 균형이 무너지면 감염이 성립할 수 있다. 균이 검출되었다는 사실과 폐포의 임상 감염은 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+      ]
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.35174480ee5a",
+      "type": "paragraph",
+      "markdown": "바이러스는 상피와 섬모 기능, 면역 반응을 바꾸어 단독 또는 다른 미생물과 함께 병을 만들 수 있다. 흡연과 노화, 의식·연하 장애와 구조적 폐질환, 면역 억제는 서로 다른 방어 단계에 영향을 준다. 같은 병원체라도 숙주 조건에 따라 병변 분포와 중증도가 다를 수 있다. 미생물 이름만으로 환자의 위험과 모든 치료를 정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.2689f7c620dd",
+      "type": "heading",
+      "level": 2,
+      "text": "공기 대신 염증성 물질이 찰 때"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.dff285544ffa",
+      "type": "paragraph",
+      "markdown": "폐포의 염증은 세포와 액체·단백질을 모이게 하여 통기와 확산 환경을 바꾼다. 혈류가 남아 있는데 환기가 크게 줄면 낮은 환기·관류비와 단락 성분이 증가한다. 산소를 더 공급해도 환기가 없는 구역의 혈액이 직접 충분히 산소화되는 것은 아니다. 전체 산소화는 남은 폐의 기능과 혼합정맥 산소, 심박출량과 분포에 의해 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.89c312dcea76",
+      "type": "paragraph",
+      "markdown": "염증과 부종·무기폐는 순응도를 낮추고 호흡 작업을 늘릴 수 있다. 발열과 대사 요구, 빠른 호흡은 이 부담에 더해진다. 가래가 적거나 청진 소견이 약하다는 이유로 실질 침범을 배제하지 않는다. 호흡수와 산소화, 말하기·의식과 호흡근 작업을 함께 평가한다. 증상과 영상·기능의 정도가 항상 비례하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.4ee8051503bc",
+      "type": "heading",
+      "level": 2,
+      "text": "염증의 이득과 위해"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.269d34df487a",
+      "type": "paragraph",
+      "markdown": "대식세포의 인지와 신호, 호중구 유입과 보체·항체 등은 병원체 제거에 기여한다. 동시에 과도한 염증과 내피·상피 장벽 손상은 부종과 저산소, 전신 장기 기능 저하에 관여할 수 있다. 병원체의 양과 숙주 반응은 서로 연결되지만 같은 변수는 아니다. 균이 줄어도 염증과 손상이 즉시 정상화되지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.b1a2deb8249f",
+      "type": "paragraph",
+      "markdown": "전신 저관류와 낮은 산소 전달은 신장·심장과 뇌에 영향을 준다. 고령과 면역저하에서는 발열이 뚜렷하지 않거나 기능 저하·혼돈이 앞설 수 있다. 심한 염증 표지자와 작은 영상 병변, 넓은 영상과 상대적으로 적은 증상이 각각 가능하다. 단일 검사보다 현재 생리와 예비력, 변화의 속도를 함께 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.d77463889794",
+      "type": "heading",
+      "level": 2,
+      "text": "형태와 병인의 구별"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.5b60c726b94b",
+      "type": "paragraph",
+      "markdown": "엽성 경화와 기관지 주위·다발성 침범, 간질성 또는 공동·괴사 같은 영상 양상은 감별을 좁히는 단서다. 하지만 특정 모양 하나가 세균·바이러스와 균종을 확정하지는 않는다. 영상의 위치와 숙주·노출, 검체와 시간 경과가 같은 설명을 지지하는지 확인한다. 심부전과 출혈·경색·종양 등 감염 외 실질 이상도 감별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.b.257a31887e22",
+      "type": "paragraph",
+      "markdown": "관리에는 미생물 표적과 숙주·호흡·순환의 지원, 흡인과 방어 문제 및 합병증을 다루는 과정이 포함된다. 열이 내렸다는 결과와 산소화·활동·영상이 회복된 결과는 다른 시간 과정을 가질 수 있다. 실제 기능의 기준과 병변·검체의 시작 자료를 남기면 호전과 지연 반응, 새 악화를 구별하기 쉽다. 폐렴은 한 사진의 이름보다 숙주와 병원체·생리의 상호작용으로 이해해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.h.extra0846",
+      "type": "heading",
+      "level": 2,
+      "text": "혼합의 함량 수지"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.p.extra0846.0",
+      "type": "paragraph",
+      "markdown": "가상의 산소화된 혈액 함량 Cc20mL/dL와 정맥 함량 Cv15mL/dL를 완전 혼합한다고 두자. 산소화 경로를 우회하는 비율을s라 하면 유출 함량은(1−s)Cc+sCv다. s0.2에서는19mL/dL다. 이는 우회 비율과 정맥 혈액의 상태가 최종 함량을 함께 바꾼다는 수지다. 단순 포화도의 산술 평균과 혈액 산소함량의 보존을 혼동하지 않는다."
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.p.extra0846.1",
+      "type": "paragraph",
+      "markdown": "실제 폐렴에서는 모든 구역이 정상 또는 완전 무환기의 두 구획으로 나뉘지 않는다. 낮은 환기·관류 구역과 분포 변화,산소 반응과 심박출량·혈색소가 더해진다. 같은 폐 병변에서도 혼합정맥 함량이 낮아지면 동맥 쪽에 미치는 영향이 달라질 수 있다. 호흡과 전신 순환을 따로 보되 하나의 산소 전달 경로로 연결해야 한다. 이 모형의 숫자는 환자의 단락분율과 치료 기준을 직접 정하지 않는다."
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.h.more0846",
+      "type": "heading",
+      "level": 2,
+      "text": "실질과 흉막의 진찰 연결"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.p.more0846.0",
+      "type": "paragraph",
+      "markdown": "염증으로 공기와 액체·세포의 분포가 달라지면 호흡음과 촉진·타진의 전달도 바뀔 수 있다. 병변의 깊이·크기와 기관지의 열림,주변 흉막액과 체형은 실제 진찰 소견에 영향을 준다. 폐렴의 모든 영상이 같은 기관지호흡음과 수포음·탁음을 만드는 것은 아니다. 호흡에 따른 날카로운 통증은 흉막 자극의 단서가 될 수 있지만 폐색전과 기흉·다른 흉막 질환도 감별한다."
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.p.more0846.1",
+      "type": "paragraph",
+      "markdown": "청진과 영상이 서로 다르면 시간·범위와 검사 한계를 비교한다. 작은 주변부 병변과 넓은 깊은 병변의 검출이 다르고,이전 치료와 기침·분비물 이동도 소리를 바꿀 수 있다. 진찰의 한 정상 소견을 모든 실질 감염의 배제로 쓰지 않고,영상 음영 하나에 전체 저산소의 원인을 고정하지 않는다. 여러 관찰이 구조와 가스교환의 어느 층위를 설명하는지 연결하는 것이 임상적 해석이다."
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.table0846",
+      "type": "table",
+      "data": {
+        "title": "근거·기전·관리 목표의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "유입·방어",
+            "흡인·흡입과 상피·면역"
+          ],
+          [
+            "폐포 충만",
+            "낮은환기/관류·단락 성분"
+          ],
+          [
+            "전신",
+            "대사·산소 전달·장기"
+          ],
+          [
+            "회복",
+            "균·염증·영상·기능의 다른 시간"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.diagram.oxygen-mixing-shunt-0846",
+      "type": "diagram",
+      "diagramRef": "diagram.oxygen-mixing-shunt-0846",
+      "path": "diagrams/diagram.oxygen-mixing-shunt-0846.svg",
+      "alt": "가상 두 경로의 함량 혼합의 독립 계산 곡선"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.anatomy3d0846",
+      "type": "anatomy3d",
+      "sceneRef": "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+    },
+    {
+      "id": "pulmonology.infection.pneumonia-host-gas-exchange.limits0846",
+      "type": "clinicalPearl",
+      "markdown": "정상 폐와 주변 구조의 위치 문맥이다. 폐렴·단락분포·미세폐포·간질병변·섬유화·흉수·호흡운동과 환자별 변화는 이 정상 정적 모델이 재현하거나 측정하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/infection/sections/pulmonology.infection.pneumonia-host-gas-exchange.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.infection.pneumonia-host-gas-exchange.001",
+    "question.pulmonology.infection.pneumonia-host-gas-exchange.002"
+  ],
+  "relatedLessons": [
+    "pulmonology.infection.cap-diagnosis-severity"
+  ]
+}

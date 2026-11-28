@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "laboratory-medicine",
+  "title": {
+    "ko": "진단검사의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "laboratory-medicine.chapter.quality",
+      "path": "domains/09-clinical-diagnostics/subjects/laboratory-medicine/chapters/quality/chapter.json"
+    },
+    {
+      "id": "laboratory-medicine.chapter.preanalytics",
+      "path": "domains/09-clinical-diagnostics/subjects/laboratory-medicine/chapters/preanalytics/chapter.json"
+    },
+    {
+      "id": "laboratory-medicine.chapter.coagulation",
+      "path": "domains/09-clinical-diagnostics/subjects/laboratory-medicine/chapters/coagulation/chapter.json"
+    },
+    {
+      "id": "laboratory-medicine.chapter.acid-base",
+      "path": "domains/09-clinical-diagnostics/subjects/laboratory-medicine/chapters/acid-base/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "laboratory-medicine.plan.001",
+    "laboratory-medicine.plan.002",
+    "laboratory-medicine.plan.003",
+    "laboratory-medicine.plan.004",
+    "laboratory-medicine.plan.005",
+    "laboratory-medicine.plan.006",
+    "laboratory-medicine.quality.preanalytics",
+    "laboratory-medicine.preanalytics.potassium-errors",
+    "laboratory-medicine.coagulation.pt-aptt-patterns",
+    "laboratory-medicine.acid-base.blood-gas-interpretation"
+  ]
+}

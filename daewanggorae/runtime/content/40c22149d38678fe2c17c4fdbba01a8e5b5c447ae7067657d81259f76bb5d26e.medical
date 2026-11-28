@@ -1,0 +1,123 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pediatrics.fluid.compartment-assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.a91114d84ed7",
+      "sourceSha256": "a91114d84ed7afa68ca34cd5ddda8a779000ce2d868e97a110b8c9e307fd0738",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.896f1b9764ec",
+      "sourceSha256": "896f1b9764ec024fd57bc1994822b7bf4a6c6e67f5a1a5ff22ad2e0faaaadaa6",
+      "sourceLengthUtf16": 264,
+      "annotations": [
+        {
+          "id": "ann.b9ac5a493fb750897415",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 224,
+            "end": 230,
+            "exact": "항이뇨호르몬",
+            "prefix": "륨혈증이 발생할 수 있으며, 반대 상황이나 ",
+            "suffix": "의 작용과 수분 섭취가 겹치면 저나트륨혈증이"
+          },
+          "conceptId": "reader.term.df6b37a2afc65475",
+          "targetDocumentId": "physiology.renal.urine-concentration"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.05ff017a3f2f",
+      "sourceSha256": "05ff017a3f2f3232169324f12ca740966ae8561ca59c14bddcb64adcf3c56e44",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.c061c3b3267f",
+      "sourceSha256": "c061c3b3267fb0e271d4c0e5e50b8300da1e5471e48694bae9181a598750fad6",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.394f7010cfe6",
+      "sourceSha256": "394f7010cfe643ed0578316ef46941dabadbfbeaa0404b64c3c09d31a30af915",
+      "sourceLengthUtf16": 241,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.cc0d5bff39af",
+      "sourceSha256": "cc0d5bff39af1eb379b48d25247ccf22057aea024fbb2fd38404374bdecf18b4",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.14eac1b80e40",
+      "sourceSha256": "14eac1b80e400ed9ea70fbe77be456bf1dccf768b4cc45756fd2ef090a8fa38f",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.480b55c91bf4",
+      "sourceSha256": "480b55c91bf4f5a0d9419ee7e742ef7d657513298ab0d0ef8eae480829d89f66",
+      "sourceLengthUtf16": 200,
+      "annotations": [
+        {
+          "id": "ann.777b9783c5c80665b046",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 69,
+            "end": 136,
+            "exact": "소아는 빈맥과 말초혈관 수축으로 혈압을 유지할 수 있으며, 저혈압은 이미 보상이 충분하지 않다는 중요한 소견일 수 있다.",
+            "prefix": "이유만으로 순환 장애가 배제되지는 않는다. ",
+            "suffix": " 반응성이 떨어지거나 사지가 차고 맥박이 약"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.15a5a184165e",
+      "sourceSha256": "15a5a184165e52360d7657685feb3b4cc8d49b35dc9090b03cc472a417c651d7",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.5c681aa5cc1a",
+      "sourceSha256": "5c681aa5cc1a92efd5bac196a5bac0082878495a9c484c31088d299c0920f0aa",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.fluid.compartment-assessment.b.30b4c0a4add9",
+      "sourceSha256": "30b4c0a4add90fd45fe346f7b9b4540f05c701d8957ab20baa48acecd2b835ad",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.8817f35c5bf3830f01a4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 55,
+            "exact": "소변량 감소는 신장 관류 저하의 결과일 수 있지만 신장 자체의 손상이나 배출 장애와 구별해야 한다.",
+            "prefix": "",
+            "suffix": " 재수화 이후에도 감소가 지속되면 처음의 탈"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

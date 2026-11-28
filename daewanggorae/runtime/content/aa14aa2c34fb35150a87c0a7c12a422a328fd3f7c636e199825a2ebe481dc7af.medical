@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.kidney-two-origins",
+  "lessonId": "embryology.urinary.kidney-collecting-system",
+  "title": "네프론과 집합계의 두 발생 계통",
+  "nodes": [
+    {
+      "id": "bud",
+      "label": "요관싹",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "collecting",
+      "label": "요관·깔때기·콩팥잔·집합관",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "mesenchyme",
+      "label": "뒤콩팥간엽의 유도 상피",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "nephron",
+      "label": "네프론 상피 계통",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.kidney-two-origins.edge.1",
+      "source": "bud",
+      "target": "collecting",
+      "relation": "directed",
+      "label": "분지·분화"
+    },
+    {
+      "id": "diagram.kidney-two-origins.edge.2",
+      "source": "mesenchyme",
+      "target": "nephron",
+      "relation": "directed",
+      "label": "상피화·분화"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 670
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 670
+      },
+      "fontSize": 22,
+      "nodes": {
+        "bud": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "collecting": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "mesenchyme": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "nephron": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "상호 유도와 혈관·기질의 기여를 모두 그린 그림이 아니며 성인 장기의 실제 위치·시간을 재현하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

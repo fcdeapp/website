@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "laboratory-medicine.preanalytics.potassium-errors",
+  "subjectId": "laboratory-medicine",
+  "chapterId": "preanalytics",
+  "title": {
+    "ko": "칼륨 검사와 검체 오류의 감별",
+    "en": "Potassium Testing and Preanalytical Error"
+  },
+  "learningObjectives": [
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.lo.01",
+      "text": "칼륨의 생체 내 변화와 검체 내 변화를 구별한다"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.lo.02",
+      "text": "용혈과 채취·운반 조건을 해석한다"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.lo.03",
+      "text": "위험 평가와 재검의 역할을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.1adfb8338ac5",
+      "type": "heading",
+      "level": 2,
+      "text": "숫자에 이르기까지의 과정"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.61db34338160",
+      "type": "paragraph",
+      "markdown": "혈청 또는 혈장 칼륨(potassium)은 세포외액의 전기적 환경을 반영하지만 보고된 숫자가 곧 채혈 순간의 생체 내 농도와 완전히 같다는 뜻은 아니다. 검체의 종류와 채취 위치, 채혈 시간과 압박, 세포 손상과 운반·원심분리 조건, 분석법이 결과에 영향을 준다. 칼륨은 세포 안에 풍부하므로 검체에서 세포가 손상되면 실제 환자의 세포외 농도가 높지 않아도 측정값이 증가할 수 있다. 결과 해석은 이러한 생성 과정을 복원하는 일에서 시작한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.30ac9cb47ee7",
+      "type": "paragraph",
+      "markdown": "고칼륨혈증(hyperkalemia)은 막전위와 심장 전도에 영향을 줄 수 있는 중요한 이상이다. 반면 검체 오류를 확인하지 않고 숫자만 낮추려고 하면 실제 칼륨이 낮아져 새로운 위해가 생길 수 있다. 따라서 오류 가능성을 검토하는 일과 현재 환자의 위험을 평가하는 일은 함께 진행해야 한다. 심한 이상을 단지 채혈 문제라고 미루거나, 검체 상태를 무시한 채 모든 결과를 그대로 치료 대상으로 삼는 두 접근 모두 불충분하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.cba5417cfb6e",
+      "type": "heading",
+      "level": 2,
+      "text": "용혈과 세포의 기여"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.8d7bde14b468",
+      "type": "paragraph",
+      "markdown": "용혈(hemolysis)은 적혈구 막이 손상되어 세포 내용물이 검체에 섞이는 현상이다. 채혈의 기계적 손상과 과도한 흔들림, 부적절한 운반 등이 원인이 될 수 있다. 분석 장비의 용혈 지표는 검체 상태를 판단하는 자료지만 칼륨 변화량을 모든 검체에서 정확히 환산하는 공통 보정식은 아니다. 검체 안에서 일어난 용혈과 환자 몸에서 진행 중인 용혈성 질환도 구별해야 한다. 빈혈·황달·다른 검사와 경과가 그 구별에 도움을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.a3073b54f164",
+      "type": "paragraph",
+      "markdown": "혈청은 응고 과정을 거친 검체이고 혈장은 적절한 항응고제가 포함된 검체다. 응고와 세포 성분의 방출 때문에 두 검체의 칼륨 값이 다를 수 있다. 혈소판이나 백혈구가 매우 많은 상황에서는 검체별 차이와 운반·처리 과정의 영향이 커질 수 있다. 이러한 경우에도 검체 이름만으로 참값을 단정하지 않는다. 검체 조건과 검사실의 처리 방법을 확인하고 임상 질문에 맞는 재검을 계획해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.842bf20139f9",
+      "type": "heading",
+      "level": 2,
+      "text": "채취 위치와 오염"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.03d72a078ec8",
+      "type": "paragraph",
+      "markdown": "수액을 주입하는 부근에서 채취한 혈액은 주입액 성분에 영향을 받을 수 있다. 칼륨 함유액의 혼입뿐 아니라 희석 때문에 여러 항목이 함께 변할 수 있다. 다른 검사관의 첨가제가 섞이는 경우에도 특정 전해질과 다른 항목의 조합이 비정상적으로 나타날 수 있다. 검사관의 순서·종류, 라벨과 환자 확인, 채혈 부위 및 주입 상태를 확인해야 한다. 수치 간의 모순은 새로운 희귀질환뿐 아니라 검체 문제의 단서이기도 하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.8a26e35597ff",
+      "type": "paragraph",
+      "markdown": "지혈대를 오래 조이거나 주먹을 반복해서 강하게 쥐는 행동은 국소 조건을 바꿀 수 있다. 채혈을 어렵게 했던 상황과 운반 지연도 기록할 가치가 있다. 재검은 단순히 같은 행위를 한 번 더 반복하는 것이 아니라 의심한 오류를 줄이는 조건으로 다시 측정하는 과정이어야 한다. 처음과 같은 위치·방법에서 같은 문제가 반복되면 반복 측정만으로 신뢰도가 충분히 높아졌다고 할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.b61d4e8317a8",
+      "type": "heading",
+      "level": 2,
+      "text": "임상 자료와의 대조"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.649dd0deda46",
+      "type": "paragraph",
+      "markdown": "신장 기능, 소변량과 체액 상태, 산염기 이상, 조직 손상과 약물은 실제 칼륨 조절에 영향을 준다. 이전 결과와 변화 속도, 증상 및 심전도를 함께 확인하면 생체 내 이상을 판단하는 데 도움이 된다. 다만 심전도가 뚜렷하게 변하지 않았다는 이유만으로 위험한 고칼륨혈증을 배제할 수는 없다. 검사 결과와 심전도는 서로 다른 측정이며 개인별 반응과 시간 차이가 있기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.6cc303127693",
+      "type": "paragraph",
+      "markdown": "응급성이 의심되면 임상적 안정화와 신속한 확인을 병행한다. 재채혈 결과를 기다리는 동안의 대응은 현재 위험과 오류 가능성에 따라 달라진다. 반대로 안정된 환자에서 임상 맥락과 맞지 않는 결과라면 용혈·오염·검체 처리 정보를 확인하는 것이 불필요한 치료를 줄일 수 있다. 검사실과의 의사소통은 오류의 책임을 묻는 절차가 아니라 어떤 조건에서 값이 생성되었는지를 확인하는 진료 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.71ab603ad573",
+      "type": "heading",
+      "level": 2,
+      "text": "변화량의 해석"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.6c0ef4839517",
+      "type": "paragraph",
+      "markdown": "첫 결과가 6.4, 재검이 4.8mmol/L인 예에서 차이는 1.6mmol/L다. 이 차이만으로 앞선 값이 전부 오류였다고 확정할 수 없다. 두 검사 사이의 시간, 수액과 치료, 산염기 변화, 검체 종류 및 용혈 여부가 달라졌을 수 있기 때문이다. 차이를 설명하려면 생체 변화와 분석 전 변화를 함께 기록해야 한다. 평균값을 계산해 둘 사이가 참값이라고 정하는 방법도 적절하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.b.ac77a95590e9",
+      "type": "paragraph",
+      "markdown": "검사의 재현성은 같은 조건에서 비슷한 값이 나오는 성질이며 정확성은 측정 대상의 참값에 가까운 성질이다. 일관된 오염이 있으면 반복값이 비슷하면서도 정확하지 않을 수 있다. 결과를 진료에 사용할 때에는 숫자의 정밀함과 임상적 신뢰성을 구별해야 한다. 유효 숫자가 많다는 사실 자체가 채취와 해석의 불확실성을 없애지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.preanalytics.potassium-errors.table0858",
+      "type": "table",
+      "data": {
+        "title": "소견과 평가 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "첫 칼륨",
+            "6.4mmol/L"
+          ],
+          [
+            "검체",
+            "용혈 지표 상승"
+          ],
+          [
+            "재검 칼륨",
+            "4.8mmol/L"
+          ],
+          [
+            "확인할 조건",
+            "채혈·시간·치료·검체 종류"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/laboratory-medicine/chapters/preanalytics/sections/laboratory-medicine.preanalytics.potassium-errors.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.laboratory-medicine.preanalytics.potassium-errors.001",
+    "question.laboratory-medicine.preanalytics.potassium-errors.002"
+  ],
+  "relatedLessons": [
+    "laboratory-medicine.coagulation.pt-aptt-patterns",
+    "laboratory-medicine.acid-base.blood-gas-interpretation"
+  ]
+}

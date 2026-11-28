@@ -1,0 +1,50 @@
+{
+  "id": "cardiology.chapter.devices",
+  "subjectId": "cardiology",
+  "sections": [
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics",
+      "title": {
+        "ko": "심박동기의 감지·출력·포획",
+        "en": "Sensing Output and Capture in Cardiac Pacing"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.pacemaker-icd-basics.json"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting",
+      "title": {
+        "ko": "심박동기 이상 소견의 체계적 판독",
+        "en": "Systematic Assessment of Pacemaker Dysfunction"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.pacemaker-troubleshooting.json"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-timing",
+      "title": {
+        "ko": "심박동기 시간 설정과 방실 동기",
+        "en": "Pacemaker Timing and Atrioventricular Synchrony"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.pacemaker-timing.json"
+    },
+    {
+      "id": "cardiology.devices.icd-detection-therapy",
+      "title": {
+        "ko": "삽입형 제세동기의 감지와 치료",
+        "en": "Detection and Therapy in Implantable Defibrillators"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.icd-detection-therapy.json"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles",
+      "title": {
+        "ko": "심장 재동기화와 전도계 조율의 원리",
+        "en": "Principles of Resynchronization and Conduction System Pacing"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.resynchronization-principles.json"
+    }
+  ],
+  "status": "partial",
+  "title": {
+    "ko": "심장 기기와 전기 치료"
+  }
+}

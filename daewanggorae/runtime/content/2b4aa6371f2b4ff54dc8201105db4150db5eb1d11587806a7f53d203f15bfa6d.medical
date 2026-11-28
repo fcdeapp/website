@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.lipids.bile-acid-cycling",
+  "subjectId": "biochemistry",
+  "chapterId": "lipids",
+  "title": {
+    "ko": "담즙산 합성과 장간순환의 물질수지",
+    "en": "Bile Acid Synthesis and Enterohepatic Mass Balance"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.lo.01",
+      "text": "담즙산 합성·포합·세균 변환을 구별한다"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.lo.02",
+      "text": "장간순환의 운반체와 조절 신호를 연결한다"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.lo.03",
+      "text": "순환 횟수와 실제 손실량을 계산한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.008a4df0351d",
+      "type": "heading",
+      "level": 2,
+      "text": "합성과 포합이 소화 기능으로 이어지는 과정"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.7e34d0e1e13d",
+      "type": "paragraph",
+      "markdown": "담즙산(bile acids)은 간에서 콜레스테롤로부터 만들어지는 양친매성 물질이다. 물과 지질 사이의 경계에 작용하여 지질 소화산물의 가용화와 흡수에 도움을 준다. 담즙은 담즙산만으로 구성되지 않으며 인지질·콜레스테롤·빌리루빈과 전해질 등을 함께 포함한다. 담즙산은 소화효소처럼 중성지방의 에스터결합을 직접 가수분해하는 물질이 아니다. 지질이 분산되는 조건과 소화산물이 이동할 수 있는 환경을 제공한다는 역할을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.17fc77b79615",
+      "type": "paragraph",
+      "markdown": "고전적 합성 경로의 핵심 조절 단계에는 콜레스테롤7α수산화효소(CYP7A1)가 관여한다. 대체 경로도 존재하므로 모든 담즙산이 단 하나의 직선 반응에서 생성된다고 설명하지 않는다. 사람의 주요 일차 담즙산에는 콜산(cholic acid)과 케노데옥시콜산(chenodeoxycholic acid)이 있다. 합성된 담즙산은 글리신 또는 타우린과 포합(conjugation)될 수 있다. 포합은 생리적 pH에서 이온화와 수용액 내 성질에 영향을 주며, 단순한 이름 변경 이상의 기능적 의미를 갖는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.4a34b006de13",
+      "type": "heading",
+      "level": 2,
+      "text": "간세포에서 장까지의 이동"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.4fa3da6ec842",
+      "type": "paragraph",
+      "markdown": "간세포는 담즙산을 모세담관 쪽으로 내보내며 담즙산염배출펌프(bile salt export pump, BSEP)가 이 과정에 중요하다. 담즙산이 세포 안에서 너무 많이 축적되면 세포막과 소기관에 손상을 줄 수 있어 합성·유입·배출은 서로 조절된다. 담낭이 있는 정상 생리에서는 저장·농축과 식후 방출이 장 내 공급의 시간 양상을 바꾼다. 간의 일일 합성량과 장으로 분비되는 총량이 같은 숫자일 필요가 없는 것은 같은 분자가 반복 순환하기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.a83a4ed441aa",
+      "type": "paragraph",
+      "markdown": "장 내에서는 담즙산과 인지질 등이 혼합 미셀(mixed micelles)을 형성하여 지방산·모노아실글리세롤·콜레스테롤 같은 지질 성분의 이동을 돕는다. 미셀은 장세포가 통째로 삼켜서 킬로미크론이 되는 입자가 아니다. 지질 성분이 장세포로 이동한 뒤 세포 내 재합성과 지단백질 조립이 이루어진다. 담즙산 자체는 주로 별도의 재흡수 경로를 따라 간으로 돌아가므로 지질 흡수 경로와 완전히 동일한 이동 경로로 그리지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.162c66f227c0",
+      "type": "heading",
+      "level": 2,
+      "text": "말단회장과 문맥을 통한 귀환"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.0568f5672d88",
+      "type": "paragraph",
+      "markdown": "말단회장의 꼭대기막 나트륨의존성 담즙산 운반체(apical sodium-dependent bile acid transporter, ASBT)는 능동적 재흡수에 중요하다. 장세포 기저외측의 OSTα/OSTβ 등을 거쳐 문맥으로 이동한 담즙산은 간에서 다시 흡수되어 담즙으로 분비될 수 있다. 간의 NTCP 등은 귀환 혈액에서 담즙산을 회수하는 데 관여한다. 일부 비포합 담즙산은 다른 장 구간에서 수동적으로 흡수될 수 있어 모든 흡수를 하나의 운반체만으로 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.40d300e07bae",
+      "type": "paragraph",
+      "markdown": "장내 미생물은 탈포합과 구조 변환에 관여하여 이차 담즙산을 만든다. 데옥시콜산(deoxycholic acid), 리토콜산(lithocholic acid) 등을 일차 담즙산과 구별한다. 미생물 변환의 정도와 재흡수·분변 손실은 장내 환경에 따라 달라지며, 이차라는 이름이 모두 동일한 용해성·독성·신호 기능을 가진다는 뜻은 아니다. 분자의 종류와 포합 상태를 생략하면 운반체 친화도와 수동 확산을 혼동할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.373ac178e526",
+      "type": "heading",
+      "level": 2,
+      "text": "재순환과 신생 합성의 계산"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.d341b51b9b4d",
+      "type": "paragraph",
+      "markdown": "일정 크기의 담즙산 저장고(pool)가 유지되는 정상상태에서는 신생 합성량이 체외 손실량을 보충한다. 순환 한 번마다 일정 분율 f가 소실되고 순환 사이 보충이 없다고 가정하면 n회 뒤 남은 양은 P_n=P0(1−f)^n이다. P0=100 단위, f=0.1인 모형에서는 한 번 뒤90, 두 번 뒤81, 세 번 뒤72.9가 남는다. 매번 처음 양의10을 빼는 계산과 다르다. 이 식은 고정 손실분율을 적용하는 독립 모형이며 실제 하루의 합성·분비·재흡수량을 측정한 자료가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.4f32e9efdfe5",
+      "type": "paragraph",
+      "markdown": "반대로 각 회차에서 손실된 양을 바로 보충하여 저장고가100으로 유지된다면 회차마다 손실은10이고 보충도10이다. 세 번의 총 보충량은30이 된다. 같은 손실분율이라도 보충을 허용하는지에 따라 계산이 달라진다. 정상상태에서 간의 총 담즙산 분비량이 신생 합성량보다 클 수 있다는 사실은 물질이 새로 생기는 모순이 아니라 반복 사용의 결과다. 문제를 풀 때에는 저장고 크기, 통과량, 순손실과 합성량을 각각 표시해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.f392d356d35b",
+      "type": "heading",
+      "level": 2,
+      "text": "담즙산은 조절 신호이기도 하다"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.111046dc3f56",
+      "type": "paragraph",
+      "markdown": "담즙산에 의해 활성화되는 핵수용체 FXR(farnesoid X receptor)은 합성과 운반의 조절에 관여한다. 회장에서 생성되는 FGF19는 문맥을 통해 간에 신호를 전달하여 CYP7A1 관련 합성을 억제하는 방향으로 작용한다. 간의 FXR·SHP 경로도 관련된다. 사람의 FGF19와 생쥐에서 흔히 기술되는 Fgf15는 종을 구별하여 읽어야 한다. 실험동물의 조절 관계와 분자 이름을 그대로 사람에게 옮기지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.b.841c3660545e",
+      "type": "paragraph",
+      "markdown": "말단회장의 질환이나 절제로 재흡수가 줄면 대장으로 도달하는 담즙산이 증가하여 수분·전해질 이동과 설사에 관여할 수 있다. 저장고 감소가 충분히 크면 지질 흡수 장애도 문제가 된다. 어느 결과가 우세한지는 남은 장 기능과 합성 보상, 손실 범위에 달려 있다. 따라서 회장 손상은 언제나 지방변만 만든다거나, 모든 설사에 담즙산 결합제를 같은 방식으로 적용한다는 결론은 피한다. 기전은 임상 상황을 분류하는 출발점이며 치료는 원인과 상태에 맞추어 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.diagram.bile-pool-repeated-loss",
+      "type": "diagram",
+      "diagramRef": "diagram.bile-pool-repeated-loss",
+      "path": "diagrams/diagram.bile-pool-repeated-loss.svg",
+      "alt": "보충 없는 저장고의 반복 손실의 독립 계산 곡선"
+    },
+    {
+      "id": "biochemistry.lipids.bile-acid-cycling.table.compare",
+      "type": "table",
+      "data": {
+        "title": "담즙산 경로의 위치",
+        "columns": [
+          "위치",
+          "대표 분자/과정",
+          "역할"
+        ],
+        "rows": [
+          [
+            "간 합성",
+            "CYP7A1",
+            "고전 경로 조절"
+          ],
+          [
+            "간세포 모세담관측",
+            "BSEP",
+            "담즙 배출"
+          ],
+          [
+            "회장 꼭대기막",
+            "ASBT",
+            "재흡수"
+          ],
+          [
+            "장세포 기저외측",
+            "OSTα/β",
+            "문맥 귀환"
+          ],
+          [
+            "회장–간 신호",
+            "FXR·FGF19",
+            "합성 억제 신호"
+          ]
+        ],
+        "notes": "사람FGF19와생쥐Fgf15를 구별하며 실제 저장고와 손실률은 개별 조건에 따라 다르다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/lipids/sections/biochemistry.lipids.bile-acid-cycling.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "반복 순환의 총 통과량과 신생 합성량은 다르다.",
+    "보충 여부를 먼저 고정하여 손실을 계산한다."
+  ],
+  "reviewQuestions": [
+    "question.biochemistry.lipids.bile-acid-cycling.001",
+    "question.biochemistry.lipids.bile-acid-cycling.002"
+  ],
+  "relatedLessons": [
+    "biochemistry.lipids.cholesterol-synthesis"
+  ]
+}

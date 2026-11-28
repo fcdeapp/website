@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.digestive.lipid-protein-absorption",
+  "subjectId": "physiology",
+  "chapterId": "digestive",
+  "title": {
+    "ko": "단백질·지질·비타민의 흡수 경로",
+    "en": "Absorption Routes of Proteins, Lipids and Vitamins"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.lo.01",
+      "text": "펩타이드·아미노산 수송을 구별한다"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.lo.02",
+      "text": "미셀·장세포 재합성·킬로미크론을 연결한다"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.lo.03",
+      "text": "비타민B12 흡수의 여러 장소를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.218b65643bdc",
+      "type": "heading",
+      "level": 2,
+      "text": "관강 분해와 세포 내 처리는 이어져 있다"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.4f6dc15c2980",
+      "type": "paragraph",
+      "markdown": "단백질의 소화는 위의 산성 환경과 펩신 작용으로 시작되고,소장에서 췌장 단백질분해효소와 솔가장자리·세포 내 펩티데이스의 작용으로 이어진다. 췌장 효소의 전구체와 활성화,중탄산에 의한 관강 환경 조절은 서로 다른 단계다. 최종 흡수가 반드시 모든 단백질을 관강에서 자유 아미노산 하나하나로 완전히 분해한 뒤에만 시작되는 것은 아니다. 작은 펩타이드의 수송도 중요한 경로다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.4e48b19f95bc",
+      "type": "paragraph",
+      "markdown": "자유 아미노산은 여러 운반체를 통해 흡수되며 기질 특이성과 나트륨 등의 결합 방식이 다르다. 이펩타이드·삼펩타이드의 꼭대기막 유입에는 수소이온 결합 펩타이드수송체 PEPT1이 중요하다. 이를 모든 경우의 나트륨 직접 공동수송으로 부르면 안 된다. 나트륨–수소 교환과 세포 내 pH 조절은 수소 기울기 유지에 연결될 수 있지만,PEPT1이 직접 결합하는 이온과는 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.701d6e9935e7",
+      "type": "heading",
+      "level": 2,
+      "text": "관강의 펩타이드가 혈액에서는 아미노산이 되는 이유"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.a6cc37e8f4ef",
+      "type": "paragraph",
+      "markdown": "장세포 안으로 들어온 작은 펩타이드 상당 부분은 세포질 펩티데이스에 의해 아미노산으로 분해되고,기저외측 운반을 통해 문맥 쪽으로 이동한다. 관강에서의 흡수 형태와 혈액에 출현하는 형태가 다를 수 있다는 뜻이다. 장세포 자체가 일부 아미노산을 사용하므로 관강 투여량과 문맥 출현량도 반드시 같지는 않다. 면역 반응과 연결되는 미량 단백질 통과를 정상 영양 흡수의 주된 경로와 혼동하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.d4af00052ac4",
+      "type": "paragraph",
+      "markdown": "운반체의 기질이 겹치면 경쟁이 생길 수 있고,여러 경로가 같은 아미노산 공급을 보완할 수도 있다. 특정 운반체 이상을 배울 때에는 어떤 기질군과 어느 막·조직이 관련되는지 표시한다. 소장의 영양 흡수와 신장의 재흡수는 비슷한 분자가 등장해도 관찰 장소와 최종 결과가 다르다. 단백질 소화 장애와 운반 결함,점막 질환을 한 원인으로 묶지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.d2547057a42c",
+      "type": "heading",
+      "level": 2,
+      "text": "미셀은 지방을 운반하는 관강의 집합체다"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.8ed22df54175",
+      "type": "paragraph",
+      "markdown": "중성지방 소화에는 위·췌장 리페이스 등의 작용이 관여하고,소장의 주된 긴사슬 지방 흡수에는 담즙산과 인지질이 만드는 환경이 중요하다. 혼합 미셀(mixed micelle)은 지방산·모노아실글리세롤·콜레스테롤 등 지질 성분을 수용액 환경에서 장세포 표면으로 전달하는 데 도움을 준다. 미셀 전체가 세포 안으로 들어가 그대로 혈중 입자가 되는 것은 아니다. 가수분해·가용화·막 통과를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.b43a5a4c316c",
+      "type": "paragraph",
+      "markdown": "긴사슬 지방산과 모노아실글리세롤은 장세포에서 재에스터화되어 TAG 등으로 처리되고,아포지단백B48(apolipoprotein B48)과 조립 기구를 통해 킬로미크론(chylomicron)에 포장될 수 있다. 미셀과 킬로미크론은 장소·구성·기능이 다르다. 전자는 관강의 소화·흡수 환경과,후자는 세포에서 만들어지는 운반 입자와 연결된다. 조립 능력이 손상되면 소화가 이루어져도 최종 분비가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.b02b3339733c",
+      "type": "heading",
+      "level": 2,
+      "text": "문맥과 림프는 서로 다른 출구다"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.fe675bc505ae",
+      "type": "paragraph",
+      "markdown": "킬로미크론은 장 융모의 유미관(lacteal) 등 림프 경로로 들어가 흉관을 거쳐 전신 정맥 순환에 합류한다. 흉관의 일반적인 종말은 왼쪽 목의 정맥각 부근이며 이를 오른쪽 쇄골하정맥으로 고정하여 설명하지 않는다. 반면 짧거나 중간 길이 지방산은 긴사슬 지방산과 비교하여 문맥 경로의 기여가 크다. 모든 지방산이 같은 입자·같은 경로로만 이동한다고 외우지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.8617c5cfa1d0",
+      "type": "paragraph",
+      "markdown": "분자 사슬 길이,양과 장세포 대사,재합성·포장 여부에 따라 상대적 경로가 달라질 수 있어 단순한 경계 숫자로 모든 분자의 운명을 확정하지 않는다. 문맥으로 가는 수용성 영양소와 림프로 가는 지단백질의 차이는 흡수 후 간에 먼저 도달하는 방식에도 영향을 준다. 정적 해부학 모델은 출구의 위치를 돕지만 미셀 형성과 세포 내 조립을 그 모델 자체의 기능으로 표시할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.222375f87474",
+      "type": "heading",
+      "level": 2,
+      "text": "비타민B12는 여러 단계의 협력이 필요하다"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.e7f2713e66a3",
+      "type": "paragraph",
+      "markdown": "음식 단백질에 결합한 비타민B12(cobalamin)는 소화 과정에서 유리되고 위에서 haptocorrin/R단백질과 결합할 수 있다. 소장에서 췌장 효소 작용으로 결합 상태가 바뀌고,위 벽세포가 분비한 내인자(intrinsic factor, IF)와 결합한 복합체가 말단회장의 수용체 경로로 흡수된다. 합성·결합·효소 처리·수용체 흡수가 다른 장소에서 이어진다. B12 흡수 장소가 회장이라는 이유만으로 위와 췌장의 기능이 무관한 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.ceafd0c6c426",
+      "type": "paragraph",
+      "markdown": "흡수 후에는 혈중 운반단백질을 통한 조직 전달이 필요하다. 높은 양에서의 비수용체성 흡수 기여와 정상 식사의 내인자 의존 경로도 구별한다. 식이 부족,벽세포·내인자 이상,췌장 기능,회장 질환 등은 서로 다른 병변 위치다. 각 기전이 가능하다는 설명과 실제 환자에서 원인을 확정하는 검사는 별개이며,여기서 임의의 투여량·치료 기준을 도출하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.f898a33ea3e7",
+      "type": "heading",
+      "level": 2,
+      "text": "다른 비타민과 흡수 장애의 양상"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.94435ade911e",
+      "type": "paragraph",
+      "markdown": "지용성 비타민A·D·E·K의 흡수는 담즙산·지질 처리와 관련되지만 체내 저장과 운반·기능이 서로 다르다. 수용성 비타민도 전부 수동확산만 하는 것은 아니며,특정 운반체와 위치가 중요하다. ‘수용성이면 과잉이나 결핍 문제가 없다’는 결론은 부적절하다. 철·칼슘 같은 무기질도 별도의 조절을 받으므로 한 가지 비타민의 경로를 모든 미량영양소에 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.b.47749101c608",
+      "type": "paragraph",
+      "markdown": "지방변이 있을 때에는 췌장 효소,담즙산 공급과 재순환,점막 흡수,림프 운반 등 여러 수준의 원인을 생각한다. 특정 영양소만의 장애와 넓은 점막 장애를 비교하고,식사 조성과 시간 경과를 함께 본다. 대변의 지방이나 혈중 비타민 농도 한 가지로 모든 경로의 기능을 동시에 판정하지 않는다. 소화–세포 내 처리–출구라는 세 단계 표를 그리면 복합적인 흡수 장애를 정리하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.diagram.nutrient-exit-route-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.nutrient-exit-route-pairs",
+      "path": "diagrams/diagram.nutrient-exit-route-pairs.svg",
+      "alt": "흡수 후 다른 출구의 단계별 비교"
+    },
+    {
+      "id": "physiology.digestive.lipid-protein-absorption.table.compare",
+      "type": "table",
+      "data": {
+        "title": "영양소의 서로 다른 처리",
+        "columns": [
+          "대상",
+          "유입/처리",
+          "대표 출구/흡수"
+        ],
+        "rows": [
+          [
+            "작은펩타이드",
+            "PEPT1·세포내분해",
+            "아미노산·문맥"
+          ],
+          [
+            "긴사슬지질",
+            "미셀성분전달·재합성",
+            "킬로미크론·림프"
+          ],
+          [
+            "B12",
+            "결합단백질·췌장·내인자",
+            "말단회장수용체"
+          ],
+          [
+            "짧은/중간사슬",
+            "긴사슬과상이한기여",
+            "문맥기여큼"
+          ]
+        ],
+        "notes": "모든분자에동일한경로를강요하지않으며흉관의일반종말은왼쪽정맥각부근이다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/digestive/sections/physiology.digestive.lipid-protein-absorption.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "관강의 미셀과 세포에서 조립하는 킬로미크론은 다른 집합체다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.digestive.lipid-protein-absorption.001",
+    "question.physiology.digestive.lipid-protein-absorption.002"
+  ],
+  "relatedLessons": [
+    "physiology.neuro.synaptic-transmission",
+    "physiology.neuro.synaptic-integration",
+    "physiology.neuro.sensory-coding"
+  ]
+}

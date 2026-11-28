@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.anion-gap-bicarbonate-toy",
+  "lessonId": "pathology.shock.acid-base-integration",
+  "title": "고정 Na·Cl의 음이온차 산술",
+  "series": [
+    {
+      "label": "Na140,Cl104",
+      "samples": [
+        {
+          "x": 8,
+          "y": 28
+        },
+        {
+          "x": 9,
+          "y": 27
+        },
+        {
+          "x": 10,
+          "y": 26
+        },
+        {
+          "x": 11,
+          "y": 25
+        },
+        {
+          "x": 12,
+          "y": 24
+        },
+        {
+          "x": 13,
+          "y": 23
+        },
+        {
+          "x": 14,
+          "y": 22
+        },
+        {
+          "x": 15,
+          "y": 21
+        },
+        {
+          "x": 16,
+          "y": 20
+        },
+        {
+          "x": 17,
+          "y": 19
+        },
+        {
+          "x": 18,
+          "y": 18
+        },
+        {
+          "x": 19,
+          "y": 17
+        },
+        {
+          "x": 20,
+          "y": 16
+        },
+        {
+          "x": 21,
+          "y": 15
+        },
+        {
+          "x": 22,
+          "y": 14
+        },
+        {
+          "x": 23,
+          "y": 13
+        },
+        {
+          "x": 24,
+          "y": 12
+        },
+        {
+          "x": 25,
+          "y": 11
+        },
+        {
+          "x": 26,
+          "y": 10
+        },
+        {
+          "x": 27,
+          "y": 9
+        },
+        {
+          "x": 28,
+          "y": 8
+        },
+        {
+          "x": 29,
+          "y": 7
+        },
+        {
+          "x": 30,
+          "y": 6
+        },
+        {
+          "x": 31,
+          "y": 5
+        },
+        {
+          "x": 32,
+          "y": 4
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "Na": 140,
+    "Cl": 104,
+    "potassiumExcluded": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 8,
+      "max": 32,
+      "scale": "linear",
+      "ticks": [
+        8,
+        14,
+        20,
+        26,
+        32
+      ],
+      "label": "HCO3 (동일 농도단위)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 32,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        8.0,
+        16.0,
+        24.0,
+        32.0
+      ],
+      "label": "Na−(Cl+HCO3)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "Na140,Cl104",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "알부민·검사법·실제진단절단값을생략한독립산술이다."
+  ],
+  "sourceImageUsed": false
+}

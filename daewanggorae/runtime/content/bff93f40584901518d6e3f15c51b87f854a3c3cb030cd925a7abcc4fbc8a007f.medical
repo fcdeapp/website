@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.repair.angiogenesis-granulation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.repair.angiogenesis-granulation.b.b45058aa5c32",
+      "sourceSha256": "b45058aa5c3243a4040336f0f7fc9c0c88ceb91d10fb21cdd86b219f2173462e",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.b89311299d69076a7780",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 46,
+            "end": 50,
+            "exact": "육아조직",
+            "prefix": "모세포와 염증세포, 느슨한 기질로 이루어진 ",
+            "suffix": "이 형성된다. 새 혈관과 연한 기질 때문에 "
+          },
+          "conceptId": "reader.term.8a331b02bb0d602d",
+          "targetDocumentId": "general-surgery.wound.proliferation-matrix"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.repair.angiogenesis-granulation.b.cb3084ceb694",
+      "sourceSha256": "cb3084ceb6949f18d3cb980648b75cd25455fbfbb0c1c5c9b532f66e335415d6",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.angiogenesis-granulation.b.5b5189a31bdc",
+      "sourceSha256": "5b5189a31bdc91bfbc53e962cb3fa0a246c374d20fbab419a1a0aeea5ff12108",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.angiogenesis-granulation.b.c468213f6d87",
+      "sourceSha256": "c468213f6d878e2024d484e0478d8dd96e51b2f6e3e656e1be2e74c872b2e8dc",
+      "sourceLengthUtf16": 170,
+      "annotations": [
+        {
+          "id": "ann.e2545718aa211d10e1e5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 125,
+            "end": 170,
+            "exact": "내피 표지로 보이는 관 모양과 실제 적혈구가 통과하는 관류 혈관을 구별해야 한다.",
+            "prefix": "고, 장기별 교환 기능이 갖추어져야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.repair.angiogenesis-granulation.b.0a03b84a4e8d",
+      "sourceSha256": "0a03b84a4e8ddb9e079d121c57242e94f0923da08d7bdee8c03b3dbd1de453d3",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.angiogenesis-granulation.b.c43c3f6ee4b9",
+      "sourceSha256": "c43c3f6ee4b9af5ea5a19ddc88ae9d79ecf7e1899404c3378b62e1874769d412",
+      "sourceLengthUtf16": 158,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.angiogenesis-granulation.b.8cb5653a7d17",
+      "sourceSha256": "8cb5653a7d17d7ae1a1c02db66881e143ec1492298b7d3f9189fb08d3c3e8f62",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.angiogenesis-granulation.b.6ba9cd2a61e3",
+      "sourceSha256": "6ba9cd2a61e39b66529e1efc147a63956325b14e1e5fac35a67e5ac477227d18",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    }
+  ]
+}

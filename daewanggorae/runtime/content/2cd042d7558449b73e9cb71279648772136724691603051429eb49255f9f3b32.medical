@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.structure.peptidoglycan-assembly",
+  "subjectId": "bacteriology",
+  "chapterId": "structure",
+  "title": {
+    "ko": "펩티도글리칸의 합성과 세포벽 재구성",
+    "en": "Peptidoglycan Assembly and Remodeling"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.lo.01",
+      "text": "당사슬과 펩타이드 가교의 역할을 구별한다"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.lo.02",
+      "text": "합성 구획과 항균 표적을 연결한다"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.lo.03",
+      "text": "세포벽 분해와 성장의 관계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.37fcd56ac8c3",
+      "type": "heading",
+      "level": 2,
+      "text": "당사슬을 가로지르는 기계적 연결"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.d1d39c53f344",
+      "type": "paragraph",
+      "markdown": "펩티도글리칸(peptidoglycan)은 세균 세포막 바깥에서 팽압을 견디는 그물 구조다. N-acetylglucosamine과 N-acetylmuramic acid가 번갈아 이어지는 당사슬에 짧은 펩타이드가 붙고, 이웃 사슬의 펩타이드 사이에 가교가 만들어진다. 당사슬의 연장과 가교는 서로 다른 화학 반응이다. 두 반응을 모두 정상적으로 조정해야 새 표면을 넓히면서도 세포의 기계적 연속성을 유지할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.345df5cbfde3",
+      "type": "paragraph",
+      "markdown": "MurNAc에 붙는 줄기 펩타이드에는 D형 아미노산이 포함된다. 이는 사람 단백질의 일반적인 L형 아미노산 구성과 구별되는 특징이다. 다만 모든 균이 같은 가교를 만드는 것은 아니다. 일부 균은 직접 연결하고 일부는 중간 다리를 이용한다. 포도알균에서 알려진 다리를 모든 그람양성균의 보편 구조로 외우면 다른 종의 세포벽 화학을 잘못 설명하게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.c5f6d6fbe640",
+      "type": "heading",
+      "level": 2,
+      "text": "세포질에서 막 바깥까지"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.805817af2e58",
+      "type": "paragraph",
+      "markdown": "전구체 합성은 세포질에서 시작하고, 막의 지질 운반체에 연결된 중간체를 거쳐 막 바깥쪽으로 전달된다. Bactoprenol 계통 운반체는 재료를 수용성 세포질과 막 바깥 반응 사이에서 이어 주는 역할을 한다. 운반체의 재활용이 막혀도 세포벽 재료 공급이 제한될 수 있다. 따라서 최종 가교 반응만이 세포벽 합성의 유일한 약물 표적은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.153fa63d5b8e",
+      "type": "paragraph",
+      "markdown": "막 바깥에서 glycosyltransferase가 당사슬 형성에 기여하고 transpeptidase가 펩타이드 가교를 만든다. 여러 penicillin-binding protein(PBP)은 세포 신장과 분열에 다른 비중으로 참여한다. β-lactam은 관련 PBP의 활성을 방해하여 정상 가교 형성을 제한한다. 표적에 도달하는 약물량과 PBP의 친화도가 달라지면 같은 계열에서도 균종과 약물별 효과가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.da6b1a51b623",
+      "type": "heading",
+      "level": 2,
+      "text": "합성과 절단은 함께 일어난다"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.30a1c7f7b75c",
+      "type": "paragraph",
+      "markdown": "단단한 벽을 늘리려면 기존 결합의 일부를 열어야 한다. Autolysin 등 가수분해효소는 새 재료 삽입과 딸세포 분리에 기여한다. 합성을 줄이면서 절단을 계속하면 외피의 균형이 무너질 수 있다. 반대로 분해 효소를 모두 해로운 것으로만 이해하면 정상적인 세포 분열을 설명할 수 없다. 증식기의 형태 변화는 합성·절단·분열 위치 조절이 합쳐진 결과다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.0950bf559727",
+      "type": "paragraph",
+      "markdown": "Lysozyme은 당사슬의 특정 결합을 자르는 숙주 효소다. 세포벽에 표적이 존재해도 외막 등의 장벽이 접근을 막으면 효과가 제한된다. 전구체 합성을 방해하는 약물과 이미 만들어진 당사슬을 절단하는 효소는 서로 다른 단계에 작용한다. 실험에서는 막 투과성의 변화와 세포벽 자체의 감수성을 분리해야 어떤 장벽이 원인이었는지 판단할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.c0e2b3c6a49a",
+      "type": "heading",
+      "level": 2,
+      "text": "형태 변화의 판독"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.b.0774dcc83d24",
+      "type": "paragraph",
+      "markdown": "세포벽이 약해지면 구형화·팽창·용해가 나타날 수 있지만 형태 하나로 약물 표적을 확정할 수는 없다. 삼투 환경과 성장 속도에 따라 같은 손상도 다른 모습을 보인다. 삼투 보호 조건에서 살아남았다는 결과는 벽의 기계적 역할을 지지하지만 정상 숙주 조직에서의 생존이나 병원성을 그대로 보증하지 않는다. 형태·생존율·표적 작용을 함께 측정하는 것이 인과 해석에 유리하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.structure.peptidoglycan-assembly.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "당사슬 연장",
+            "Glycosyltransferase 관련 반응"
+          ],
+          [
+            "펩타이드 가교",
+            "Transpeptidase·PBP 관련 반응"
+          ],
+          [
+            "전구체 운반",
+            "막의 지질 운반체와 재활용"
+          ],
+          [
+            "Autolysin",
+            "정상 성장·분리에도 필요한 절단"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/structure/sections/bacteriology.structure.peptidoglycan-assembly.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.structure.peptidoglycan-assembly.001"
+  ],
+  "relatedLessons": [
+    "bacteriology.methods.gram-stain-interpretation"
+  ]
+}

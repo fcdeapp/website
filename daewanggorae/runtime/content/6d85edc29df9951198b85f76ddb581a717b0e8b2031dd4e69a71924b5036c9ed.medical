@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "psychiatry.assessment.mental-status",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.5b8723ad15f8",
+      "sourceSha256": "5b8723ad15f83bc9f8fb1d673ee283b4a7f845bc95e3b5282dbd7cf3d2fc4cc1",
+      "sourceLengthUtf16": 241,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.9f08c1ae4e47",
+      "sourceSha256": "9f08c1ae4e47bf6574d26808d7088b13d33c49c52b711b75add01b17a33c13e5",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.e0bbe4540bc7",
+      "sourceSha256": "e0bbe4540bc7649374b1d2913f378bc7fb7a03f789a53451bb06929b0a37d5b9",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.98bcd6dd7c59",
+      "sourceSha256": "98bcd6dd7c599ded3daaa0e636ee21f81804a563bc3a2b547eb25f6e8df70256",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.d67d50c3b949",
+      "sourceSha256": "d67d50c3b9490b03a7cdb70e581f23adf1f13f1c3adc32e58cf906a5a43a6cdf",
+      "sourceLengthUtf16": 196,
+      "annotations": [
+        {
+          "id": "ann.a9c363ac1b242c97d4ab",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 82,
+            "end": 132,
+            "exact": "말이 장황하지만 결국 질문에 답하는 경우와 질문의 중심으로 돌아오지 않는 경우는 구분한다.",
+            "prefix": " 우회성과 이탈, 사고차단 등을 관찰한다. ",
+            "suffix": " 빠른 말이나 산만함은 여러 상태에서 나타날"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.202f67fdf1f0",
+      "sourceSha256": "202f67fdf1f03d0ccc0c56d66353b744ea6d96deda208dde31533a64eaf96a4d",
+      "sourceLengthUtf16": 259,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.4a20a4006dd5",
+      "sourceSha256": "4a20a4006dd59bbe60c65d2d23bacfd74a626b8f7cbff0769d22527d8ee1714f",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.a0bddfd1508b",
+      "sourceSha256": "a0bddfd1508b5a1d1ab024ab69dffb073857187c3d7c500d51878da1abfa3339",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.5c742143beea664d0f27",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 125,
+            "end": 178,
+            "exact": "교육 수준과 언어, 감각장애는 검사 수행에 영향을 주므로 점수만으로 인지장애를 확정하지 않는다.",
+            "prefix": "의학적 원인을 우선 검토하게 하는 단서다. ",
+            "suffix": " 이전 기능과 현재의 일상생활 변화를 함께 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.eeb05889c2c6",
+      "sourceSha256": "eeb05889c2c6a6a0b37d5efcbe3b429a44a87fceac793ad09c9530911834a9ab",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.50e08eaeaa20695e3f38",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 167,
+            "end": 173,
+            "exact": "의사결정능력",
+            "prefix": "문에 대한 답과 실제 행동을 함께 살핀다. ",
+            "suffix": "은 특정 결정에 대해 별도로 평가해야 하며 "
+          },
+          "conceptId": "reader.term.558f849ea5dc0e35",
+          "targetDocumentId": "medical-ethics.consent.shared-decisions"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.assessment.mental-status.b.64cd05667acb",
+      "sourceSha256": "64cd05667acbbf7774ca7cc400969479d1750445a656fa0db43615790016fd15",
+      "sourceLengthUtf16": 158,
+      "annotations": []
+    }
+  ]
+}

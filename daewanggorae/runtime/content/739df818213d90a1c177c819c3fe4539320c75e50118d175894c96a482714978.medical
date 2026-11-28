@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-distal-proximal-cmap-0853",
+  "lessonId": "neurology.neuropathy.axonal-demyelinating",
+  "title": "가상 원위·근위 CMAP 진폭",
+  "series": [
+    {
+      "label": "꼭대기 진폭",
+      "samples": [
+        {
+          "x": 1,
+          "y": 12
+        },
+        {
+          "x": 2,
+          "y": 7.2
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "locations": [
+      "distal",
+      "proximal"
+    ],
+    "amplitudes_mV": [
+      12,
+      7.2
+    ],
+    "categoricalEndpointsNotTimeCourse": true,
+    "notConductionBlockCriterion": true
+  },
+  "render": {
+    "type": "bars",
+    "canvas": {
+      "width": 900,
+      "height": 700
+    },
+    "plot": {
+      "x": 180,
+      "y": 30,
+      "width": 640,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 16,
+      "scale": "linear",
+      "ticks": [
+        0,
+        4,
+        8,
+        12,
+        16
+      ],
+      "label": "CMAP 꼭대기 진폭(mV)"
+    },
+    "rows": [
+      {
+        "id": "distal",
+        "label": "원위부 자극",
+        "y": 100,
+        "height": 60,
+        "segments": [
+          {
+            "label": "CMAP 진폭",
+            "valuePath": "series/0/samples/0/y",
+            "tone": "primary"
+          }
+        ]
+      },
+      {
+        "id": "proximal",
+        "label": "근위부 자극",
+        "y": 300,
+        "height": 60,
+        "segments": [
+          {
+            "label": "CMAP 진폭",
+            "valuePath": "series/0/samples/1/y",
+            "tone": "primary"
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정 또는 가상 증례 자료다. 실제 환자·정상 범위·검사 기준·진단·투약·치료효과와 안전 경계를 정하지 않는다.",
+    "두 자극 위치의 범주 비교 막대그래프이며 시간 경과나 중간 위치의 연속 파형을 표시하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

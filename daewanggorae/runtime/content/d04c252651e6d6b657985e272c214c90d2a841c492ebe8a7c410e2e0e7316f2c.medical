@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.ppp-carbon-redox",
+  "lessonId": "biochemistry.carbohydrate.pentose-phosphate",
+  "title": "PPP의 두 기능 구분",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "G6P 1분자·산화적 단계",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "오탄당1·CO₂1·NADPH2",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "오탄당3분자·비산화적 재배열",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "F6P2분자·G3P1분자",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "NADPH·글루타티온환원효소",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "GSSG의 환원 상태 회복",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.ppp-carbon-redox.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "순수지",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.ppp-carbon-redox.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "탄소15개 보존",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.ppp-carbon-redox.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "전자 공급",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "대표 순수지와 기능을 나란히 비교한 도식이며 생체 내 유량·농도·모든 반응을 표시하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

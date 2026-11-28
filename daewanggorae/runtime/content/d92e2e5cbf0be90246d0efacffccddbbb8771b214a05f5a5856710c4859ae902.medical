@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.cell.ischemia-reperfusion-mechanisms",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.909675d22d09",
+      "sourceSha256": "909675d22d096eb53532bc6da6ab6b426547bf71658812c257a1233a20167814",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.1604ae1b399618332b86",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 150,
+            "end": 222,
+            "exact": "두 현상은 겹칠 수 있으나 같은 용어가 아니며,산소 분압만으로 영양 공급·미세순환·세포의 산소 이용 능력을 모두 판단할 수 없다.",
+            "prefix": " 능력이 감소해도 혈류가 유지될 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.4d7607cb34e2",
+      "sourceSha256": "4d7607cb34e2170ea06aa43f6ffdcf7d14d4abe4cebab27de9fba3dcf23ed14b",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.19c6e84b39b4",
+      "sourceSha256": "19c6e84b39b4cc1c7329e42908bf88c7bc1fa930cd68b50bc7de23a6d3f4c241",
+      "sourceLengthUtf16": 232,
+      "annotations": [
+        {
+          "id": "ann.d50b913acad9ffbe9b0d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 7,
+            "exact": "산화적 인산화",
+            "prefix": "",
+            "suffix": "가 제한되면 ATP 의존 펌프의 기능이 떨어"
+          },
+          "conceptId": "reader.term.5fc2ffe077b5ada0",
+          "targetDocumentId": "biochemistry.bioenergetics.oxidative-phosphorylation"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.48574e1809bb",
+      "sourceSha256": "48574e1809bb924f316d5975e8665f5639c0e3e9fb6d8f9e561327fef2db5e30",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.cdea0c836bd5",
+      "sourceSha256": "cdea0c836bd5ef4b9d4c9b7db18a3bb5b5690cd0a233b2b8f9401cfaf8a1edc5",
+      "sourceLengthUtf16": 256,
+      "annotations": [
+        {
+          "id": "ann.98c1bc3a0d89952d995e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 201,
+            "end": 256,
+            "exact": "다만 모든 칼슘 상승이 곧 파괴적 과부하는 아니며 정상 신호의 구획·크기·지속시간과 구별해야 한다.",
+            "prefix": "transition, MPT)에 관여한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.5581717d4637",
+      "sourceSha256": "5581717d4637447d43358a5b2e50730ef8821f52b094c8c26a2357fa5092e8eb",
+      "sourceLengthUtf16": 209,
+      "annotations": [
+        {
+          "id": "ann.f17506280e315d5962ee",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 21,
+            "end": 24,
+            "exact": "막전위",
+            "prefix": "미토콘드리아 내막의 큰 투과성 변화는 ",
+            "suffix": " 유지와 ATP 생산을 위협한다. 외막을 통"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.8cc0fdd28fea",
+      "sourceSha256": "8cc0fdd28feac1e08dcf51b889e179d7ea1783168abe4bf567d6bce45eb82e18",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.ece1fe1efcd7",
+      "sourceSha256": "ece1fe1efcd70993a680b019ae79f652a3b64c8e53e40837b6df325bbe427094",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.cf232a19ced4",
+      "sourceSha256": "cf232a19ced403747e4795c2f1c938f26fd65d60339eba1502cd506410f38356",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.ischemia-reperfusion-mechanisms.b.be87d8f855d4",
+      "sourceSha256": "be87d8f855d40012201227e1c5830b3203b616b4573d14550c2dc6582d1f7173",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.5f85eeafe2e0dc78b911",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 173,
+            "end": 213,
+            "exact": "여러 지표와 시간별 자료의 일치가 단일 종말점의 해석보다 중요한 이유다.",
+            "prefix": "정 간섭을 배제해야 인과 주장이 강화된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

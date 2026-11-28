@@ -1,0 +1,50 @@
+{
+  "id": "pathology.chapter.genetic",
+  "subjectId": "pathology",
+  "sections": [
+    {
+      "id": "pathology.genetic.molecular-diagnostics",
+      "title": {
+        "ko": "종양 분자진단의 검체와 해석",
+        "en": "Specimens and Interpretation in Tumor Molecular Diagnostics"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/genetic/sections/pathology.genetic.molecular-diagnostics.json"
+    },
+    {
+      "id": "pathology.genetic.congenital-disease",
+      "title": {
+        "ko": "선천질환의 발생과 병리적 분류",
+        "en": "Development and Pathologic Classification of Congenital Disorders"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/genetic/sections/pathology.genetic.congenital-disease.json"
+    },
+    {
+      "id": "pathology.genetic.variant-phenotype",
+      "title": {
+        "ko": "유전변이에서 표현형으로 이어지는 기전",
+        "en": "Mechanisms Linking Genetic Variation to Phenotype"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/genetic/sections/pathology.genetic.variant-phenotype.json"
+    },
+    {
+      "id": "pathology.genetic.chromosomal-dosage",
+      "title": {
+        "ko": "염색체 용량과 구조 변화의 병리",
+        "en": "Pathology of Chromosomal Dosage and Structural Changes"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/genetic/sections/pathology.genetic.chromosomal-dosage.json"
+    },
+    {
+      "id": "pathology.genetic.repeat-expansion",
+      "title": {
+        "ko": "반복서열 확장과 동적 유전변이",
+        "en": "Repeat Expansion and Dynamic Genetic Variation"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/genetic/sections/pathology.genetic.repeat-expansion.json"
+    }
+  ],
+  "status": "partial",
+  "title": {
+    "ko": "분자진단"
+  }
+}

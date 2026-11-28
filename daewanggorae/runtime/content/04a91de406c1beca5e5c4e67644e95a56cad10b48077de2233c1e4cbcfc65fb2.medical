@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.cbt-avoidance-formulation-0853",
+  "lessonId": "psychiatry.psychotherapy.cbt-formulation",
+  "title": "회피의 단기 결과와 장기 학습",
+  "nodes": [
+    {
+      "id": "situation",
+      "label": "상황·위험 해석",
+      "x": 350,
+      "y": 80,
+      "width": 360,
+      "height": 92
+    },
+    {
+      "id": "response",
+      "label": "불안·신체 반응",
+      "x": 350,
+      "y": 300,
+      "width": 320,
+      "height": 92
+    },
+    {
+      "id": "avoid",
+      "label": "회피 행동",
+      "x": 350,
+      "y": 520,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "short",
+      "label": "당장의 불안 감소",
+      "x": 165,
+      "y": 760,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "long",
+      "label": "예상 검증의 기회 감소",
+      "x": 535,
+      "y": 760,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "loop",
+      "label": "다음 상황의 예측 유지",
+      "x": 350,
+      "y": 1010,
+      "width": 360,
+      "height": 92
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.cbt-avoidance-formulation-0853.e0",
+      "source": "situation",
+      "target": "response",
+      "label": "해석",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cbt-avoidance-formulation-0853.e1",
+      "source": "response",
+      "target": "avoid",
+      "label": "반응",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cbt-avoidance-formulation-0853.e2",
+      "source": "avoid",
+      "target": "short",
+      "label": "단기",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cbt-avoidance-formulation-0853.e3",
+      "source": "avoid",
+      "target": "long",
+      "label": "장기",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cbt-avoidance-formulation-0853.e4",
+      "source": "short",
+      "target": "loop",
+      "label": "반복 강화",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cbt-avoidance-formulation-0853.e5",
+      "source": "long",
+      "target": "loop",
+      "label": "학습 제한",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 700,
+      "height": 1170
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 650,
+        "height": 1170
+      },
+      "fontSize": 22,
+      "nodes": {
+        "situation": {
+          "x": 325.0,
+          "y": 80,
+          "width": 331.2,
+          "height": 92
+        },
+        "response": {
+          "x": 325.0,
+          "y": 300,
+          "width": 294.40000000000003,
+          "height": 92
+        },
+        "avoid": {
+          "x": 325.0,
+          "y": 520,
+          "width": 257.6,
+          "height": 92
+        },
+        "short": {
+          "x": 153.21428571428572,
+          "y": 760,
+          "width": 257.6,
+          "height": 92
+        },
+        "long": {
+          "x": 496.7857142857143,
+          "y": 760,
+          "width": 257.6,
+          "height": 92
+        },
+        "loop": {
+          "x": 325.0,
+          "y": 1010,
+          "width": 331.2,
+          "height": 92
+        }
+      }
+    }
+  },
+  "limitations": [
+    "가상 사례의 가능한 유지 기전을 나타낸 독립 사례개념화다. 모든 불안·회피의 단일 원인이나 해부학적 신경회로가 아니다.",
+    "관계는 시간 맥락의 작업 가설이며 실제 위험 회피와 동의·안전의 필요를 지우지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.neoplasia.microenvironment-angiogenesis",
+  "subjectId": "pathology",
+  "chapterId": "neoplasia",
+  "title": {
+    "ko": "종양 미세환경과 혈관 신생",
+    "en": "Tumor Microenvironment and Angiogenesis"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.lo.01",
+      "text": "종양세포와 기질·면역·혈관의 상호작용을 설명한다"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.lo.02",
+      "text": "혈관 수와 유효 관류를 구별한다"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.lo.03",
+      "text": "혈관 신호와 저산소·기질 장벽의 연결을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.6553f09cc95f",
+      "type": "heading",
+      "level": 2,
+      "text": "종괴는 종양세포만의 집합이 아니다"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.fc99037e2d07",
+      "type": "paragraph",
+      "markdown": "종양 미세환경(tumor microenvironment, TME)은 종양세포와 주변의 섬유모세포,면역세포,혈관·림프관,세포외기질과 신호 분자를 포함한다. 세포들이 주고받는 신호와 물리적 환경은 증식·생존·이동과 약물 반응에 영향을 줄 수 있다. 같은 종양 안에서도 구역별 세포 구성·산소·영양·기질 강성이 다르며 시간에 따라 바뀐다. 한 조직 절편의 평균값을 전체 종양의 균일한 상태로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.a3b9f7746da1",
+      "type": "paragraph",
+      "markdown": "암연관 섬유모세포(cancer-associated fibroblast, CAF)라는 이름도 단일한 고정 세포형을 뜻하지 않는다. 기원과 활성 상태,분비 신호와 기질 형성 기능이 이질적일 수 있고,상황에 따라 서로 다른 효과가 나타날 수 있다. 면역세포 역시 단순히 전부 종양을 제거하거나 전부 종양을 돕는 한 종류로 나눌 수 없다. 위치·분화·주변 신호와 기능 검사를 함께 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.246e3d524928",
+      "type": "heading",
+      "level": 2,
+      "text": "산소 공급과 저산소 반응"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.5057c18132f5",
+      "type": "paragraph",
+      "markdown": "종양이 자라면서 산소 요구와 공급 사이의 불균형이 커지면 일부 구역에 저산소가 형성될 수 있다. 저산소 유도인자(hypoxia-inducible factor, HIF) 계통은 산소 감지와 유전자 발현을 연결하며,대사·혈관 관련 신호에 영향을 준다. HIF 표지의 증가가 항상 같은 원인이나 같은 산소 분압을 뜻하지는 않는다. 유전적 조절과 다른 신호도 관여할 수 있어 산소의 직접 측정과 표지자 검출을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.3597c1029014",
+      "type": "paragraph",
+      "markdown": "유효 공급은 혈관의 수뿐 아니라 관류량,혈액 산소함량,흐름의 분포와 확산 거리에 달려 있다. 혈관이 많아 보여도 구조가 불규칙하고 혈류가 불균일하면 일부 세포는 부족할 수 있다. 괴사 구역과 살아 있는 구역이 함께 존재할 수 있는 이유다. 산소와 약물의 이동도 분자 성질과 결합·제거가 달라 완전히 같은 분포를 보장하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.15b60d0147ea",
+      "type": "heading",
+      "level": 2,
+      "text": "신생혈관과 그 구조적 한계"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.20317c994585",
+      "type": "paragraph",
+      "markdown": "혈관신생(angiogenesis)은 기존 혈관에서 새 혈관이 형성되는 과정이다. VEGF–VEGF수용체 계통은 중요한 연결 중 하나이며 여러 성장인자와 억제 신호가 협동한다. 내피의 증식·이동과 지지세포의 참여,기저막과 기질 변화가 필요하다. 혈관을 세는 것과 그 혈관이 충분히 성숙하고 기능적인지 판정하는 것은 다른 측정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.055806f474a1",
+      "type": "paragraph",
+      "markdown": "종양 혈관의 비정상적인 누출,주위세포와의 관계,간질압과 고형응력은 수송 환경을 바꿀 수 있다. 약물이 혈관에서 빠져나왔다고 종양 전체에 고르게 도달하는 것은 아니다. 특히 분자 크기·결합과 조직 내 이동은 침투 깊이와 시간에 영향을 준다. 단순히 투과성을 높이면 항상 치료 효과가 좋아진다는 일률적 규칙은 성립하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.9d03764692ef",
+      "type": "heading",
+      "level": 2,
+      "text": "면역·기질과 약물 반응"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.3a016a3c7486",
+      "type": "paragraph",
+      "markdown": "종양 관련 면역 반응에는 항원 인식과 세포 유입,국소 억제·활성 신호와 효과기 기능이 관여한다. 면역세포가 많다는 소견과 실제 항종양 활성이 충분하다는 판정은 같지 않다. 배치와 표적 인식,기능 상태가 중요하고 종양의 항원·신호 변화가 반응을 바꿀 수 있다. 특정 표지자 양성만으로 모든 사람의 면역치료 반응이 보장되지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.ade444f85893",
+      "type": "paragraph",
+      "markdown": "기질 침착과 강성의 변화는 기계적 신호·세포 이동·혈관 압박에 연결될 수 있다. 이를 치료 표적으로 삼을 수 있다는 기전적 근거와 실제 임상 이득은 별도의 단계다. 혈관 정상화라는 개념도 시간과 조건에 따른 구조·관류 개선을 가리키며 모든 신생혈관 억제가 같은 방식으로 작용한다는 뜻은 아니다. 실제 항암 병용·치료 순서·선택은 암종과 분자·임상 근거에 따라 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.53c09a1ab785",
+      "type": "heading",
+      "level": 2,
+      "text": "측정 지표를 나누어 읽는다"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.68094e5d7009",
+      "type": "paragraph",
+      "markdown": "실험에서는 혈관 밀도,흐르는 혈관의 비율,추적자 이동,산소·약물 농도와 종양 크기를 서로 다른 지표로 측정할 수 있다. 한 지표의 개선이 다른 모든 지표의 개선을 뜻하지 않는다. 영상의 조영 증강은 혈류·투과성·혈관외 공간과 시간에 영향을 받으므로 실제 혈관 수나 세포 수의 단순한 지도라고 보지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.b.793ce59b0fcb",
+      "type": "paragraph",
+      "markdown": "가상 공급 모형에서 혈관 경로 수N,관류되는 분율f,경로당 유량q의 곱 Q=Nfq를 둘 수 있다. N=100,f=0.4,q=1이면40이고,N=150,f=0.2,q=1이면30이다. 혈관 수는 늘었지만 유효 유량은 줄 수 있다는 독립 산술 예다. 실제 혈관 네트워크의 압력·저항·연결을 생략했으므로 임상 관류나 치료 효과 예측값은 아니다. 벡터 도식과 표에서는 구조의 수,기능적 분율,종말 결과를 나누어 표시한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.diagram.vessel-perfusion-fraction-example",
+      "type": "diagram",
+      "diagramRef": "diagram.vessel-perfusion-fraction-example",
+      "path": "diagrams/diagram.vessel-perfusion-fraction-example.svg",
+      "alt": "혈관 수와 관류 분율의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis.table.compare",
+      "type": "table",
+      "data": {
+        "title": "미세환경의 측정",
+        "columns": [
+          "값",
+          "구별"
+        ],
+        "rows": [
+          [
+            "혈관 수",
+            "관류 기능과 다름"
+          ],
+          [
+            "면역세포 수",
+            "표적 인식·기능과 다름"
+          ],
+          [
+            "기질",
+            "신호·강성·수송 환경"
+          ],
+          [
+            "조영 증강",
+            "혈류·투과성·시간 등 영향"
+          ]
+        ],
+        "notes": "기전·정의의 비교이며 실제 진단·치료 판정은 별도 근거가 필요하다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/neoplasia/sections/pathology.neoplasia.microenvironment-angiogenesis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "혈관·면역세포 수와 기능적 기여는 같은 값이 아니다."
+  ],
+  "relatedLessons": [
+    "pathology.neoplasia.invasion-metastasis",
+    "pathology.genetic.molecular-diagnostics"
+  ],
+  "reviewQuestions": [
+    "question.pathology.neoplasia.microenvironment-angiogenesis.001",
+    "question.pathology.neoplasia.microenvironment-angiogenesis.002"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.hypersensitivity.ige-sensitization",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.hypersensitivity.ige-sensitization.b.0861f63a24de",
+      "sourceSha256": "0861f63a24de3e0fa46186a2b388d0faed73a616e6ae916e575a11467b262802",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.ige-sensitization.b.32f7bdd7e6c9",
+      "sourceSha256": "32f7bdd7e6c96a28bc55c22c143becf5ef06ad035ef132fd30032bc801eab26b",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.ige-sensitization.b.6108a2d11411",
+      "sourceSha256": "6108a2d1141177bf647c5b85fe794ac27bcd023a074c525e68e7a363917d9822",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.ige-sensitization.b.b93cd34793e3",
+      "sourceSha256": "b93cd34793e3cebc6e86b98961ac5f3e2ef008bca770a1ea39e504de86abe9c6",
+      "sourceLengthUtf16": 176,
+      "annotations": [
+        {
+          "id": "ann.c10d0025afc0b47c5908",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 133,
+            "end": 176,
+            "exact": "원인 약물이나 노출의 평가에서 임상 경과와 특정 경로의 근거를 구별해야 한다.",
+            "prefix": "ine 방출도 시작 경로는 다를 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.ige-sensitization.b.6f705740b582",
+      "sourceSha256": "6f705740b58255f34c976de0de0f78966d445d4b85ff8080b8413cba3e8e953b",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.ige-sensitization.b.97797ef1e0d3",
+      "sourceSha256": "97797ef1e0d399a11332727757114d3115eb194b2daf5afa237e57b05997c4c4",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.ige-sensitization.b.08bd5a7cec29",
+      "sourceSha256": "08bd5a7cec29395ec4fdbcfe365a8c1eba1ab6e87df99daeabfde37844252fac",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.fd311e66c0ddd6c0882c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 102,
+            "end": 161,
+            "exact": "비자극 대조와 양성 대조를 통해 낮은 결과가 특정 항원 반응의 부재인지 전체 세포 반응 저하인지 구별한다.",
+            "prefix": "시약과 대상 질환별 해석 범위가 필요하다. ",
+            "suffix": " 검사 양성만으로 실제 노출에서 증상이 발생"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.ige-sensitization.b.ed04cc4cde05",
+      "sourceSha256": "ed04cc4cde057277f1ab9e626521507f55cd79818a5df4a556e09de882cb3d48",
+      "sourceLengthUtf16": 197,
+      "annotations": [
+        {
+          "id": "ann.a3bd3912be9565d37851",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 45,
+            "end": 91,
+            "exact": "높은 자극의 plateau나 낮은 반응이 반드시 낮은 감작량만을 의미하지는 않는다.",
+            "prefix": "용체와 세포 생존·탈과립을 함께 기록한다. ",
+            "suffix": " 실제 환자에서 기도·순환을 위협하는 급성 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

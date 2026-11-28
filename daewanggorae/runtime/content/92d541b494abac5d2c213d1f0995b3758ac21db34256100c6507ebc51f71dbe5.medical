@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.methods.biomarker-context-longitudinal",
+  "subjectId": "immunology",
+  "chapterId": "methods",
+  "title": {
+    "ko": "면역 생체표지의 용도와 시간별 평가",
+    "en": "Contexts of Immune Biomarkers and Longitudinal Assessment"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.lo.01",
+      "text": "진단·예후·예측·약력학 지표를 구별한다"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.lo.02",
+      "text": "활동성과 누적 손상·환자 결과를 분리한다"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.lo.03",
+      "text": "연속 측정과 대조군의 역할을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.880a1e668154",
+      "type": "heading",
+      "level": 2,
+      "text": "어떤 결정을 위한 지표인가"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.a1dc3bd527cc",
+      "type": "paragraph",
+      "markdown": "생체표지(biomarker)는 생물학적·병적 과정이나 중재 반응에 관한 측정값이다. 질환의 존재를 구별하는 진단 지표, 앞으로의 위험을 나타내는 예후 지표, 특정 치료에서 상대적 이득이 달라지는지를 나타내는 예측 지표는 목적이 다르다. 한 질환과 강한 상관관계가 있다는 이유만으로 그 표지가 모든 용도에 검증된 것은 아니다. 어떤 환자 집단과 시점, 어떤 결정을 위해 쓰는지가 정의되어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.13b3b9536a93",
+      "type": "paragraph",
+      "markdown": "약력학(pharmacodynamic) 지표는 약물이 표적 또는 관련 경로에 작용했는지를 보여 줄 수 있다. 수용체 점유·효소 억제나 특정 세포 감소는 기전의 근거지만 환자가 오래 살고 기능을 유지하는지와는 다른 결과다. 표적 작용이 충분해도 질환의 다른 경로와 이미 생긴 손상, 독성이 임상 효과를 제한할 수 있다. 하나의 중간 결과를 최종 이득으로 자동 변환하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.5f4cb60d1cb3",
+      "type": "heading",
+      "level": 2,
+      "text": "예후와 치료 예측의 구별"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.879fc92582eb",
+      "type": "paragraph",
+      "markdown": "표지가 높은 사람이 나쁜 경과를 보인다면 예후적 연관을 지지할 수 있다. 그러나 그 집단이 특정 약물에 더 잘 반응한다는 결론은 별도 비교가 필요하다. 치료군에서만 표지와 반응의 상관을 보았다면 기저 위험과 자연 경과의 영향이 남는다. 치료별 차이를 검토하려면 적절한 비교군과 사전에 정한 분석, 치료와 표지의 상호작용을 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.6f53a541fe8d",
+      "type": "paragraph",
+      "markdown": "독립 검증 집단과 미리 정한 판독 기준은 우연한 발견과 과적합을 줄인다. 같은 자료에서 많은 후보를 찾고 가장 좋은 절단값을 고른 뒤 성능을 보고하면 실제 적용 성능이 낙관적으로 보일 수 있다. 면역계의 많은 표지와 세포 집단을 한 번에 분석할수록 다중 비교·배치와 세포 구성의 영향을 관리해야 한다. 정교한 모형이라는 사실 자체가 임상 유용성을 보증하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.89ee9332dc26",
+      "type": "heading",
+      "level": 2,
+      "text": "현재 활동과 남은 손상"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.17f675982dcc",
+      "type": "paragraph",
+      "markdown": "자가면역 질환에서 현재 염증 활성과 이전의 섬유화·세포 소실은 다른 시간층이다. 항체·보체와 사이토카인 지표가 개선되어도 기존 신경·관절·신장 기능의 손상이 남을 수 있다. 반대로 기능이 안정적이어도 조용한 장기 활동이 존재할 수 있다. 증상과 검사, 장기별 결과를 함께 보아야 활동성 치료와 재활·합병증 관리의 질문을 나눌 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.e1fdb9dc818c",
+      "type": "paragraph",
+      "markdown": "환자가 느끼는 통증·피로와 일상 기능도 중요한 결과다. 검사실 수치가 좋아졌다는 이유로 이러한 결과를 무시하지 않으며, 증상이 남는 모든 이유를 면역 염증의 지속으로 환원하지도 않는다. 수면·약물·감염과 비염증성 손상 등 다른 원인을 평가한다. 임상시험의 생체표지와 환자보고 결과는 서로 보완하는 정보다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.5d6fc6d14f5a",
+      "type": "heading",
+      "level": 2,
+      "text": "연속 측정에서의 함정"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.171243788679",
+      "type": "paragraph",
+      "markdown": "한 번 극단적으로 높게 나온 값을 계기로 측정과 치료를 시작하면 이후 자연 변동만으로도 평균 쪽으로 돌아오는 regression to the mean이 나타날 수 있다. 반복 측정과 적절한 대조가 없으면 이를 약효로 과대평가할 수 있다. 검사법·시약 배치·검체 처리와 채혈 시각의 변화도 추세를 바꾼다. 같은 축에 그린 두 수치가 실제로 비교 가능한 측정인지 먼저 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.36809e040dbb",
+      "type": "paragraph",
+      "markdown": "검출한계 아래라는 보고는 분석물이 절대로0이라는 뜻이 아니다. 반정량 검사와 몰농도, 역가·형광강도는 서로 다른 척도다. 상대 변화율은 기준값이 작을 때 크게 흔들릴 수 있고, 절대 변화와 비율 변화가 다른 순서를 보일 수도 있다. 표·그래프에는 단위와 분모, 기준 시점·미측정 결과를 명시해야 추세를 올바르게 읽을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.01615a4922af",
+      "type": "heading",
+      "level": 2,
+      "text": "대리지표의 검증과 남은 질문"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.1f8f8425d5c3",
+      "type": "paragraph",
+      "markdown": "임상 결과를 대신하는 대리지표(surrogate endpoint)는 단순한 경로 표지보다 강한 검증을 요구한다. 중재가 지표를 바꾼다는 사실과 그 변화가 실제 이득을 신뢰할 만하게 대신한다는 사실은 다르다. 질환·약물·적용 집단에 따라 유효성이 달라질 수 있다. 다른 분야에서 검증된 지표의 지위를 면역질환의 새 검사로 그대로 옮기지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.b.5597ded81576",
+      "type": "paragraph",
+      "markdown": "교과서의 가상 자료에서는 표적 점유와 별도 결과를 다른 함수로 나타내어 둘의 차이를 학습할 수 있다. 그 곡선은 실제 약물의 임상 반응률을 측정한 자료가 아니며 특정 점유율에서 치료를 조정하는 절단값을 제시하지 않는다. 유용한 평가는 측정의 신뢰성, 생물학적 타당성과 실제 의사결정의 이득을 단계별로 입증해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.diagram.immune-target-outcome-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-target-outcome-toy",
+      "path": "diagrams/diagram.immune-target-outcome-toy.svg",
+      "alt": "표적 지표와 별도 결과의 차이의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.methods.biomarker-context-longitudinal.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "표적 관여",
+            "의도한 분자와 약물의 상호작용"
+          ],
+          [
+            "약력학 지표",
+            "생물학적 반응의 변화"
+          ],
+          [
+            "대리평가변수",
+            "임상 결과 예측의 검증 범위 필요"
+          ],
+          [
+            "추적 변화",
+            "측정 오차·시점·교란을 함께 해석"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/methods/sections/immunology.methods.biomarker-context-longitudinal.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.methods.biomarker-context-longitudinal.001",
+    "question.immunology.methods.biomarker-context-longitudinal.002"
+  ],
+  "relatedLessons": [
+    "immunology.therapy.immunomodulation-targets"
+  ]
+}

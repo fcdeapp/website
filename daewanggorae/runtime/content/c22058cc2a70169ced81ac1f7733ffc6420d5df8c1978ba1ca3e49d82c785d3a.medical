@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "nephrology.acute.aki",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "nephrology.acute.aki.b.fc5a1080ed63",
+      "sourceSha256": "fc5a1080ed6339bc8b9d13ace9889bc23cf73b0ffc0af1c3a9ffd366543d7eee",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.bc9ae7bd1c4446ce8c28",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 201,
+            "end": 206,
+            "exact": "만성콩팥병",
+            "prefix": "아티닌만으로 급성과 만성을 확정할 수 없고 ",
+            "suffix": "에 급성 손상이 겹칠 수도 있다."
+          },
+          "conceptId": "reader.term.159be36f6802076a",
+          "targetDocumentId": "nephrology.ckd.evaluation"
+        },
+        {
+          "id": "ann.2645a1af6806e212a849",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 71,
+            "end": 129,
+            "exact": "혈청 크레아티닌의 변화와 소변량은 중요한 지표지만 신장의 모든 구조 손상을 직접 보여주는 검사는 아니다.",
+            "prefix": " 나빠지는 임상 상태를 평가하는 개념이다. ",
+            "suffix": " 과거의 신기능과 변화한 시간, 급성 질환의"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.376c8e93e994",
+      "sourceSha256": "376c8e93e9941c6873b277bba56481b37e5453c150fd0d57e37e41c808d2b458",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.a52604c521c28b36fa49",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 110,
+            "end": 116,
+            "exact": "사구체여과율",
+            "prefix": "급격히 변하는 상태에서 평형을 가정한 추정 ",
+            "suffix": "을 실제 현재 여과율처럼 정밀하게 해석하지 "
+          },
+          "conceptId": "reader.term.301f3dc8f905a00f",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.2adc1f224824",
+      "sourceSha256": "2adc1f224824ceecab4a28c6acdc12fdbb8784e71d7be98bc3978e931c161b73",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.745cbab43a0faf85aa6d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 103,
+            "exact": "소변이 적다고 모두 세뇨관 괴사인 것은 아니고, 소변이 유지된다고 중요한 손상이 없는 것도 아니다.",
+            "prefix": "수분 처리 및 배출 경로에 영향을 받는다. ",
+            "suffix": " 도뇨관의 막힘과 측정 누락 등 기술적 문제"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.4847f7ca64ab",
+      "sourceSha256": "4847f7ca64aba4bae6f8842414dc8d80aeae4fcad3cc7225635969caab2e9dec",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.e433141c22aa",
+      "sourceSha256": "e433141c22aaa51c184cb47a3d437c302a753d11d190ba6f6132a5ced98772f0",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.bf1cb72d9656",
+      "sourceSha256": "bf1cb72d965622dfedf781455e4ce6600772371ef8d733a42b5947fbdd547417",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.8bcc54cfa1b03021ecbc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 133,
+            "end": 185,
+            "exact": "특정 노출 뒤 수치가 올랐다는 시간적 연관과 그 노출이 실제 원인이라는 확정은 구별해야 한다.",
+            "prefix": "상 및 소변 소견은 원인 평가의 단서이다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.a85c38b41b59",
+      "sourceSha256": "a85c38b41b59ae0150018827d4fe71b47e8f6046d480bfe3417ff24db80f3ef7",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.cc63029786cf",
+      "sourceSha256": "cc63029786cff4873375b60e1352a688b848845481cb7e2b126cae7fa5a9463d",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.0a00a7608c0c",
+      "sourceSha256": "0a00a7608c0ce57f05d39c3dddc8e784b227d31973339b1392b9a0932251281c",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.f8d8f8b33614",
+      "sourceSha256": "f8d8f8b33614be57ba45499489974e40fc169cf0b80a29ae650fd2bfd38505b0",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.1eca597b4610",
+      "sourceSha256": "1eca597b46100428643ac408ba647d56c6edb39559a0cf75500e06de2f179a34",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "nephrology.acute.aki.b.f431e9e699f8",
+      "sourceSha256": "f431e9e699f85577595cc10ffec2b1b13981b12530aed62d00930d237e554eca",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    }
+  ]
+}

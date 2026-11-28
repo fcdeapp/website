@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.autonomic.cholinesterase-inhibition",
+  "subjectId": "pharmacology",
+  "chapterId": "autonomic",
+  "title": {
+    "ko": "콜린에스터레이스 억제와 신호 지속",
+    "en": "Cholinesterase Inhibition and Signal Persistence"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.lo.01",
+      "text": "수용체 작용제와 효소 억제제를 구별한다"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.lo.02",
+      "text": "AChE·BChE와 억제 회복의 시간축을 설명한다"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.lo.03",
+      "text": "중추·자율·신경근 효과와 한계를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.92d5a2b07e1c",
+      "type": "heading",
+      "level": 2,
+      "text": "전달물질의 제거를 바꾸는 약리 작용"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.e12567887a2d",
+      "type": "paragraph",
+      "markdown": "Acetylcholinesterase(AChE)는 콜린성 신호의 종료에 중요한 ACh 가수분해효소다. 효소를 억제하면 분해가 감소하여 적절한 부위의 ACh 노출과 신호 지속이 증가할 수 있다. 억제제의 주표적은 효소이며 직접 ACh 수용체 작용제와 같은 방식으로 결합하는 것은 아니다. 그 결과는 신경의 방출·효소 위치·수용체와 조직에 달려 있어 모든 부위의 ACh가 같은 비율로 증가하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.0a5510292673",
+      "type": "paragraph",
+      "markdown": "Butyrylcholinesterase(BChE)는 AChE와 기질·분포가 다른 효소다. 일부 약물의 대사와 검사 해석에 중요하지만 AChE와 모든 기능을 서로 바꾸어 부를 수 없다. 약물마다 두 효소에 대한 작용과 표적 외 효과가 다를 수 있다. 효소 이름과 선택성,측정한 검체의 활성값을 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.a52c58567c40",
+      "type": "heading",
+      "level": 2,
+      "text": "가역성·공유결합·회복의 시간"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.1f8ebfeeb79a",
+      "type": "paragraph",
+      "markdown": "비공유 결합 억제,효소의 carbamylation과 그 회복,일부 organophosphate의 phosphorylation은 서로 다른 상호작용과 시간 경과를 가진다. 가역과 비가역이라는 이름만으로 모든 약물의 지속시간이 정확히 두 범주로 나뉘지는 않는다. 약물이 표적 부위에 남는 시간과 효소 자체가 회복·재합성되는 시간은 다른 축이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.1fec6e7adcc9",
+      "type": "paragraph",
+      "markdown": "일부 인산화 효소 복합체에서는 aging이라 부르는 화학적 변화가 재활성화 가능성에 영향을 줄 수 있다. 그 속도와 임상 의미는 물질·노출과 처치 시점에 따라 달라진다. 이 기전을 이해하는 것과 실제 중독 치료의 약물·용량·우선순위를 정하는 것은 다른 일이다. 본문의 효소 반응 모형은 실제 중독 처치 절차를 제공하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.dbf1e67fa699",
+      "type": "heading",
+      "level": 2,
+      "text": "분포 차이가 효과 부위를 바꾼다"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.f1f6e082e9aa",
+      "type": "paragraph",
+      "markdown": "약물이 중추에 충분히 도달하는지,말초에 주로 분포하는지는 이온화·수송·투여 경로와 노출에 영향을 받는다. Neostigmine·pyridostigmine과 physostigmine 또는 중추 사용 약물들을 단지 같은 효소 억제제라는 이유로 서로 교환할 수 없다. Donepezil·rivastigmine·galantamine도 선택성·약동학·표적 외 특성이 모두 같지는 않다. 특정 인지질환의 적응증과 효과 크기는 약물과 질환별 임상 근거로 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.ee5908db6c8f",
+      "type": "paragraph",
+      "markdown": "신경근접합부에서는 ACh 이용 가능성이 변하면 전달에 영향을 줄 수 있다. 그러나 ACh를 많이 늘리면 항상 근력이 계속 증가하는 것은 아니다. 과도한 자극과 지속 탈분극,수용체 상태와 근육 조건이 전달을 방해할 수 있다. 흥분의 증강과 독성에 의한 약화를 구별해야 하며 실제 임상 반응은 원질환과 병용 약물에 따라 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.ef95911c2751",
+      "type": "heading",
+      "level": 2,
+      "text": "무스카린·니코틴·중추 효과"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.6e3211b1d9da",
+      "type": "paragraph",
+      "markdown": "효소 억제는 여러 콜린성 부위에 영향을 줄 수 있어 분비·위장관·심장 반응과 신경근·중추 증상이 함께 나타날 수 있다. 무스카린 수용체를 차단하는 약물은 해당 효과를 줄일 수 있지만 효소 자체를 되살리거나 모든 니코틴성·신경근 이상을 직접 없애는 것과 같지 않다. 약물군의 표적 차이를 치료 원리의 설명에서 분리한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.126617b51b29",
+      "type": "paragraph",
+      "markdown": "안전성에는 호흡·기도 분비·순환·신경근 기능과 의식 상태,신장·간 기능과 다른 콜린성 또는 차단 약물의 영향이 중요하다. 같은 혈중 노출에서도 표적과 조직 상태가 달라 반응이 다를 수 있다. 특정 질환·중독에서의 병용과 감시 방법은 검증된 임상 자료가 필요하다. 기전표는 실제 응급 처치의 대체물이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.ff94cf252cae",
+      "type": "heading",
+      "level": 2,
+      "text": "효소 감소와 회복의 독립 모형"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.b08934346ff8",
+      "type": "paragraph",
+      "markdown": "분해가 일차적이라고 근사하면 ACh 잔여량 A(t)=A0exp(−kt)로 신호 제거의 방향을 비교할 수 있다. k가 줄면 같은 시간의 잔여가 늘지만 실제 시냅스에는 방출·확산·재흡수와 비선형 효소반응이 존재한다. 이 식의 k를 특정 억제제의 실제 용량이나 사람의 증상 지속시간으로 바꾸지 않는다. 억제제 농도와 ACh 양도 서로 다른 물질이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.b.f20e43050798",
+      "type": "paragraph",
+      "markdown": "활성 효소 분율을 시간에 따라 측정하는 실험에서는 효소의 회복,새 합성,약물의 해리·제거와 분석 간섭을 나누어 검토한다. 하나의 종말점에서 효소활성이 낮다는 결과만으로 공유결합이나 임상 독성을 확정할 수 없다. 대표 약물 비교표는 표적·분포·회복과 장기 반응을 연결하고 유사한 이름의 약물을 같은 처방으로 취급하는 오류를 줄이기 위한 자료다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.diagram.ach-signal-residual-example",
+      "type": "diagram",
+      "diagramRef": "diagram.ach-signal-residual-example",
+      "path": "diagrams/diagram.ach-signal-residual-example.svg",
+      "alt": "가상 전달물질 제거 속도 비교의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.diagram.cholinesterase-effect-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.cholinesterase-effect-pairs",
+      "path": "diagrams/diagram.cholinesterase-effect-pairs.svg",
+      "alt": "효소·분포·효과의 다른 축의 단계별 비교"
+    },
+    {
+      "id": "pharmacology.autonomic.cholinesterase-inhibition.table.compare",
+      "type": "table",
+      "data": {
+        "title": "효소 억제의 축",
+        "columns": [
+          "축",
+          "확인 사항"
+        ],
+        "rows": [
+          [
+            "AChE/BChE",
+            "분포·기질·약물 선택성"
+          ],
+          [
+            "결합·회복",
+            "가역 결합·공유결합·재합성"
+          ],
+          [
+            "분포",
+            "중추·말초 접근"
+          ],
+          [
+            "효과",
+            "무스카린·니코틴·중추 구별"
+          ]
+        ],
+        "notes": "기전·정의의 비교이며 실제 진단·치료 판정은 별도 근거가 필요하다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/autonomic/sections/pharmacology.autonomic.cholinesterase-inhibition.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "효소 회복과 약물 제거·표적 차단은 다른 시간축이다."
+  ],
+  "relatedLessons": [
+    "pharmacology.autonomic.direct-cholinergic-agonists",
+    "pharmacology.autonomic.antimuscarinic-effects"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.autonomic.cholinesterase-inhibition.001",
+    "question.pharmacology.autonomic.cholinesterase-inhibition.002"
+  ]
+}

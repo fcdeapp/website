@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.inflammation.mediators-leukocyte-recruitment",
+  "subjectId": "pathology",
+  "chapterId": "inflammation",
+  "title": {
+    "ko": "염증매개물질과 백혈구 모집",
+    "en": "Inflammatory Mediators and Leukocyte Recruitment"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.lo.01",
+      "text": "저장 매개물질과 새로 합성되는 매개물질을 구별한다"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.lo.02",
+      "text": "구르기·접착·이동의 대표 분자 연결을 설명한다"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.lo.03",
+      "text": "단계별 모집 자료에서 절대수와 조건부 비율을 계산한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.f198068f442e",
+      "type": "heading",
+      "level": 2,
+      "text": "염증은 감지·혈관 반응·세포 반응의 결합이다"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.deae05d59ba3",
+      "type": "paragraph",
+      "markdown": "염증(inflammation)은 감염이나 손상에 대한 방어와 제거·회복 반응이다. 조직 상주 대식세포,비만세포,내피와 상피는 병원체 성분 및 손상 관련 신호를 감지하여 매개물질을 방출한다. 혈관 확장,투과성 변화,혈장 단백질의 유입과 백혈구 모집은 연결되지만 각각의 조절 기전이 다르다. 발적·열감·부종·통증은 이러한 과정의 결과이며 특정 한 매개물질의 존재를 확진하는 소견은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.4ad687e8c21d",
+      "type": "paragraph",
+      "markdown": "히스타민(histamine)은 저장된 과립에서 빠르게 방출될 수 있고 일부 혈관층의 내피·혈관 반응에 기여한다. 반면 많은 지질 매개물질은 자극 뒤 합성된다. TNF·IL-1과 같은 사이토카인은 내피 활성화와 전신 반응에,케모카인(chemokine)은 세포의 위치 지향과 활성 조절에 중요하다. 저장·합성의 구별은 대표적 시간 차를 설명하지만 각 계열의 효과를 하나의 고정 분 단위 시간표로 제한하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.69e12ae03e73",
+      "type": "heading",
+      "level": 2,
+      "text": "아라키돈산과 보체는 서로 다른 출발점을 가진다"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.6dbb3141100e",
+      "type": "paragraph",
+      "markdown": "막 인지질에서 유래하는 아라키돈산(arachidonic acid)은 cyclooxygenase(COX)와 lipoxygenase 계통을 통해 다양한 매개물질로 전환된다. 프로스타노이드(prostanoid)는 수용체와 조직에 따라 혈관 반응·통증·발열·혈소판 기능 등에 다르게 작용한다. LTB4는 백혈구 유인·활성과 연결되며 cysteinyl leukotriene은 기도 평활근과 투과성 반응에 중요하다. 같은 전구체에서 만들어졌다는 이유로 모두 동일한 생리 효과를 가진다고 볼 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.363b8f2c0ff1",
+      "type": "paragraph",
+      "markdown": "보체(complement)는 단백질 분해 연쇄를 통해 염증·옵소닌화·막 공격을 연결한다. C3a·C5a의 염증 신호,C3b 계열의 표면 표지,C5b에서 시작하는 말단 복합체의 기능을 구별한다. C5a는 백혈구 모집과 활성에도 관여한다. 염증매개물질은 서로 생성을 촉진하거나 증폭하므로 한 물질의 차단 효과를 모든 염증의 완전 중단으로 일반화하지 않는다. 효소 억제와 수용체 차단은 표적과 남는 경로가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.4c7008a2639c",
+      "type": "heading",
+      "level": 2,
+      "text": "구르기와 안정 접착을 구별한다"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.ce425d2e07d3",
+      "type": "paragraph",
+      "markdown": "많은 조직의 염증성 후모세혈관세정맥에서 백혈구는 혈류 중 내피와 반복적으로 접촉하며 구르기(rolling)를 보인다. 셀렉틴(selectin)과 당화된 리간드의 결합은 대표적인 초기 연결이다. 내피 표면에 제시된 케모카인은 백혈구 수용체를 통해 integrin의 친화도·배열을 바꾸는 inside-out 신호를 유도할 수 있다. 접착분자가 존재하는 양과 실제 결합 가능한 활성 상태는 같은 변수가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.f034dbb8db96",
+      "type": "paragraph",
+      "markdown": "LFA-1 등 β2 integrin과 ICAM 계통,일부 세포의 α4 integrin과 VCAM-1 연결은 안정 접착과 이후 이동에 기여한다. 실제 모집에서는 느린 구르기·기어가기·내피 통과가 중첩되고,세포형과 장기마다 사용하는 경로가 다르다. 따라서 셀렉틴은 오직 구르기,인테그린은 오직 정지에만 작용한다는 배타적 분류는 지나치게 단순하다. 대표 단계 모형은 기전의 비교를 돕는 출발점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.c97d7a9934b1",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관을 통과한 뒤의 방향과 제거"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.5fc5fe436c2e",
+      "type": "paragraph",
+      "markdown": "백혈구의 내피 통과(transmigration)는 접합부 또는 세포를 가로지르는 경로와 주변 기질 통과를 포함할 수 있다. PECAM-1 등 접합부 분자는 그 일부에 관여한다. 조직 내 이동에는 유인 물질의 공간적 분포,기질과 접착,세포의 극성 형성이 필요하다. 혈액 내 백혈구 수가 많아도 조직 모집이나 미생물 제거 기능이 충분하다는 뜻은 아니다. 유착·산화적 살균·포식은 각각 다른 기능 축이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.b997a95c5b07",
+      "type": "paragraph",
+      "markdown": "모집된 세포는 방어에 기여하지만 효소·산화물·혈관 반응을 통해 주변 조직을 손상시킬 수도 있다. 원인이 제거되면 매개물질의 불활성화,추가 모집 감소,세포사멸과 대식세포에 의한 제거가 해소(resolution)에 기여한다. 해소는 단순히 염증성 물질을 수동적으로 희석하는 과정에 그치지 않는다. 죽은 세포의 효율적 제거와 회복 신호의 전환이 필요하며 지속 자극은 만성 염증과 섬유화의 환경을 만들 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.30e2907c8f1f",
+      "type": "heading",
+      "level": 2,
+      "text": "모집 실험의 분모를 읽는다"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.90a1f8cea57e",
+      "type": "paragraph",
+      "markdown": "가상 흐름 실험에서 주입한1000세포 중200세포가 구르고40세포가 안정 접착했다면,전체 대비 접착은4%이고 구르기 세포 대비 접착은20%다. 두 수치는 같은 자료에서 나왔지만 다른 질문에 답한다. 처치 후 구르기100세포·접착30세포이면 전체 접착은3%로 감소하면서 조건부 접착률은30%로 증가한다. 이를 단순한 접착 기능 향상이나 억제의 증거로 고정하지 않고 유입·초기 포획·관찰 기준의 변화를 함께 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.b.2f064c78dc4e",
+      "type": "paragraph",
+      "markdown": "정적 접착 실험의 결과는 전단력이 있는 흐름 환경과 다를 수 있다. 항체나 유전자 억제 실험은 세포 생존과 수용체 양,보상 경로,관찰 시간을 대조해야 한다. 막 통과 세포가 적을 때 접착 장애인지 이동 장애인지 구별하려면 단계별 세포수를 측정한다. 본문의 수치 표와 곡선은 이러한 분모와 단계를 연습하는 독립 자료이며 실제 환자의 면역 기능 검사 기준이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.diagram.recruitment-conditional-denominator",
+      "type": "diagram",
+      "diagramRef": "diagram.recruitment-conditional-denominator",
+      "path": "diagrams/diagram.recruitment-conditional-denominator.svg",
+      "alt": "가상 단계별 접착 자료의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.diagram.leukocyte-stage-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.leukocyte-stage-pairs",
+      "path": "diagrams/diagram.leukocyte-stage-pairs.svg",
+      "alt": "모집 단계의 대표 연결의 단계별 비교"
+    },
+    {
+      "id": "pathology.inflammation.mediators-leukocyte-recruitment.table.compare",
+      "type": "table",
+      "data": {
+        "title": "대표 모집 연결",
+        "columns": [
+          "계통",
+          "대표 연결",
+          "주의"
+        ],
+        "rows": [
+          [
+            "selectin",
+            "포획·구르기",
+            "단계가 배타적이지 않음"
+          ],
+          [
+            "chemokine",
+            "위치·integrin 활성",
+            "발현량과 활성 구별"
+          ],
+          [
+            "integrin",
+            "접착·이동",
+            "장기·세포형 차이"
+          ],
+          [
+            "C3b/C5a",
+            "표면표지/염증·모집",
+            "보체 기능 구별"
+          ]
+        ],
+        "notes": "정의와 대표 관계를 비교한다. 실제 측정·예외·모형 조건은 본문에서 구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/sections/pathology.inflammation.mediators-leukocyte-recruitment.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "조건부 접착률과 전체 대비 접착률은 분모가 다르다."
+  ],
+  "reviewQuestions": [
+    "question.pathology.inflammation.mediators-leukocyte-recruitment.001",
+    "question.pathology.inflammation.mediators-leukocyte-recruitment.002"
+  ],
+  "relatedLessons": [
+    "pathology.cell.adaptation-injury-mechanisms",
+    "pathology.cell.ischemia-reperfusion-mechanisms",
+    "pathology.repair.matrix-remodeling-fibrosis"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.inflammation.vascular-exudation",
+  "subjectId": "pathology",
+  "chapterId": "inflammation",
+  "title": {
+    "ko": "염증의 혈관 반응과 삼출",
+    "en": "Vascular Responses and Exudation"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.inflammation.vascular-exudation.lo.01",
+      "text": "충혈과 정체의 발생을 연결한다"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.lo.02",
+      "text": "삼출과 여출의 기전을 구별한다"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.lo.03",
+      "text": "부종의 공급·제거와 조직압을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.28229a1fb635",
+      "type": "heading",
+      "level": 2,
+      "text": "혈류 증가에서 정체까지"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.6e1c51ca6c0e",
+      "type": "paragraph",
+      "markdown": "급성 염증에서 소동맥 확장으로 국소 혈류가 증가하면 발적과 열감이 나타난다. 동시에 미세혈관 장벽의 투과성이 달라져 단백질과 액체가 조직으로 이동한다. 액체가 혈관 밖으로 빠지면 혈액 성분이 상대적으로 농축되고 흐름이 느려져 정체(stasis)가 생길 수 있다. 처음의 혈류 증가와 이후 일부 구역의 정체는 서로 모순되는 서술이 아니라 서로 다른 시간과 혈관 구획의 현상이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.50ebc351bdd0",
+      "type": "paragraph",
+      "markdown": "투과성 증가는 흔히 후모세혈관세정맥(postcapillary venule)의 내피 접합 변화와 연결된다. 히스타민 등에 의한 가역적 내피 수축, 사이토카인에 의한 접합 재편성, 심한 열·독성 손상에 의한 직접적인 내피 손상은 지속시간과 분포가 다르다. 백혈구가 내피에 부착한 뒤 방출하는 산화물과 효소도 장벽을 손상할 수 있다. 하나의 누출 소견에서도 원인과 시점은 다양하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.0b25459121aa",
+      "type": "heading",
+      "level": 2,
+      "text": "삼출액이 단백질을 포함하는 이유"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.b6e6b44f6240",
+      "type": "paragraph",
+      "markdown": "삼출액(exudate)은 장벽 투과성 변화와 염증에 관련하여 단백질·세포 성분이 풍부해진 체액이다. 여출액(transudate)은 상대적으로 장벽의 염증성 파괴보다 정수압·교질삼투압의 변화가 중심인 체액이다. 이는 형성 기전의 구별이며 육안의 투명도 하나로 결정하는 분류가 아니다. 실제 체강액에는 혼합된 기전과 시간에 따른 변화가 존재할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.ee1caa07d2ab",
+      "type": "paragraph",
+      "markdown": "혈장단백질의 이동은 항체와 보체를 조직에 전달하고 fibrin 형성의 재료를 제공한다. 그러나 같은 이동이 혈관 내 유효 용적을 줄이고 조직 부종을 악화시킬 수 있다. 단백질이 조직에 축적되면 물의 분포와 배액 부담도 달라진다. 염증성 누출은 방어에 필요한 운반과 기능을 방해하는 부종을 동시에 만들 수 있으므로, 단순히 누출이 많을수록 유익하다고 볼 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.187939ec1d46",
+      "type": "heading",
+      "level": 2,
+      "text": "여과와 림프 배액의 수지"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.e482d8f37783",
+      "type": "paragraph",
+      "markdown": "액체 축적은 혈관에서 들어오는 속도와 림프관 등으로 제거되는 속도의 차이다. 교육용 수지에서 조직 액체량 V의 변화는 dV/dt=Jin−Jout로 나타낸다. Jin과 Jout은 같은 부피/시간 단위를 사용한다. 유입이 증가해도 배액이 함께 늘면 축적이 제한될 수 있고, 유입이 평소와 비슷해도 림프 흐름이 막히면 부종이 생긴다. 눈에 보이는 부종량만으로 혈관 누출 속도를 직접 계산할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.ac62875d426c",
+      "type": "paragraph",
+      "markdown": "모세혈관의 정수압, 장벽의 수리전도도와 단백질에 대한 반사 특성, glycocalyx와 주변 압력은 액체 이동을 좌우한다. 고전적인 혈관 양끝의 여과·재흡수 그림만으로 모든 조직의 정상상태를 설명하기 어렵고 림프 배액의 역할이 중요하다. 부종이 있는 부위를 단지 혈관 끝에서 물이 다시 빨려 들어가지 않은 결과로 암기하면 염증성 장벽 변화와 림프계의 기여를 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.0af7fcc7c743",
+      "type": "heading",
+      "level": 2,
+      "text": "부종은 부위에 따라 기능적 비용이 다르다"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.2f19eff0433e",
+      "type": "paragraph",
+      "markdown": "느슨한 결합조직에서는 비교적 많은 액체가 축적되지만, 제한된 구획에서는 작은 변화도 압력을 높일 수 있다. 조직압 상승은 정맥 배출과 관류의 압력차를 불리하게 바꾸고 통증·신경 기능 저하를 만들 수 있다. 폐포 주변 부종은 가스교환 거리와 환기·관류 관계에 영향을 준다. 같은 부종량이라도 위치와 조직의 순응도에 따라 임상적 중요성이 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.b.22c80f3d22e5",
+      "type": "paragraph",
+      "markdown": "림프계는 액체뿐 아니라 항원과 세포의 이동 경로이기도 하다. 배액 림프절의 반응성 증대는 국소 면역반응과 연결되지만, 림프절이 커졌다는 사실만으로 특정 감염을 확정할 수 없다. 림프관을 따라 나타나는 염증 소견은 감염의 확산 경로를 평가하는 단서가 된다. 혈관 누출, 림프 배액과 조직 공간의 관계를 한 장면으로 연결하는 것이 부종의 기전을 이해하는 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.table.0822",
+      "type": "table",
+      "data": {
+        "title": "핵심 과정의 비교",
+        "columns": [
+          "과정·지표",
+          "의미"
+        ],
+        "rows": [
+          [
+            "혈관 확장",
+            "국소 혈류·열·발적"
+          ],
+          [
+            "투과성 변화",
+            "단백질과 액체의 이동"
+          ],
+          [
+            "림프 배액",
+            "조직 액체와 단백질 회수"
+          ],
+          [
+            "조직압",
+            "제한된 구획에서 관류·신경 기능에 영향"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pathology.inflammation.vascular-exudation.diagram.inflammation-fluid-balance-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.inflammation-fluid-balance-toy",
+      "path": "diagrams/diagram.inflammation-fluid-balance-toy.svg",
+      "alt": "같은 유입과 다른 배액의 축적의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/sections/pathology.inflammation.vascular-exudation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.inflammation.vascular-exudation.001",
+    "question.pathology.inflammation.vascular-exudation.002"
+  ],
+  "relatedLessons": [
+    "pathology.inflammation.pattern-recognition",
+    "pathology.inflammation.adhesion-cascade"
+  ]
+}

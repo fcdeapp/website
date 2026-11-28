@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.recovery.ileus-obstruction",
+  "subjectId": "general-surgery",
+  "chapterId": "recovery",
+  "title": {
+    "ko": "수술 후 장운동 저하와 기계적 폐쇄",
+    "en": "Postoperative Ileus and Mechanical Obstruction"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.lo.01",
+      "text": "운동 억제와 물리적 막힘을 구별한다"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.lo.02",
+      "text": "증상·분포·시간과 장기 위협을 통합한다"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.lo.03",
+      "text": "섭취·통증·전해질과 회복을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.2fc1128536db",
+      "type": "heading",
+      "level": 2,
+      "text": "수술 뒤 장은 신경과 염증의 영향을 받는다"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.6c7b916e286f",
+      "type": "paragraph",
+      "markdown": "수술 후 장마비(postoperative ileus)는 장의 추진 운동이 억제되어 내용물 이동과 섭취가 어려워지는 상태를 평가한다. 장 조작·염증과 교감신경, 통증과 오피오이드·전해질·전신 질환이 복합적으로 관여한다. 위·소장·대장의 기능은 같은 속도로 회복되지 않으며 수술 종류와 환자의 상태가 경과에 영향을 준다. 모든 환자에게 하나의 날짜를 적용하여 정상·비정상을 결정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.abdomen.intestine-mesenteric-vessels.organ-context"
+      ]
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.a1f7f7cdd285",
+      "type": "paragraph",
+      "markdown": "기계적 폐쇄(mechanical obstruction)는 내용물이 지나가는 통로가 물리적으로 제한되는 상황이다. 유착·탈장·종양과 꼬임 등 원인이 있으며 과거 복부 수술은 유착의 단서다. 장운동 저하와 폐쇄가 함께 존재할 수 있고, 복강 내 감염과 누출이 이차적으로 운동을 억제할 수 있다. 복부팽만과 구토라는 공통 증상만으로 한 진단을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.223f1b2c40cc",
+      "type": "heading",
+      "level": 2,
+      "text": "증상과 분포를 함께 읽는다"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.168f61a19fde",
+      "type": "paragraph",
+      "markdown": "통증의 성질·진행, 구토와 섭취, 팽만과 방귀·대변, 발열·맥박·수분 상태를 시간표로 정리한다. 일부 가스나 대변이 나왔다는 사실이 모든 부분 폐쇄를 배제하지 않는다. 장음도 시점과 검사 조건에 따라 달라지므로 소리가 없다는 사실만으로 장마비를 확진하거나 소리가 있다는 이유로 허혈을 배제하지 않는다. 이전 수술 내용과 약물·전해질·관의 상태를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.da33d0f16f05",
+      "type": "paragraph",
+      "markdown": "영상에서는 장의 직경·분포·전환점, 닫힌 고리와 장벽·장간막·복수 등 정보를 통합한다. 영상 하나의 확장 소견은 원인과 현재 생존을 모두 해결하지 않는다. 지속적이고 심한 통증·복막 자극, 저관류와 대사 악화 등은 장 허혈·교액·천공과 감염을 평가하게 한다. 현재 위험이 크면 보존적 회복을 기다리는 접근 자체를 다시 판단해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.89904e901947",
+      "type": "heading",
+      "level": 2,
+      "text": "수분과 약물이 회복에 관여한다"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.34e3f4bd1387",
+      "type": "paragraph",
+      "markdown": "구토와 위장관 배액은 물뿐 아니라 전해질·산염기 균형을 바꿀 수 있다. 저칼륨 등 대사 이상은 장운동에 영향을 주고, 탈수·신장 악화는 약물과 수액 계획을 바꾼다. 과도한 수액과 조직 부종도 장의 환경을 악화시킬 수 있어 무조건 많이 주는 방식이 해결책은 아니다. 손실·관류·체중·배설과 검사값을 함께 관찰한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.77819320e5c2",
+      "type": "paragraph",
+      "markdown": "통증을 적절히 조절하면서 장운동과 인지·호흡을 억제하는 약물 부담을 줄이는 균형이 필요하다. 여러 진통 접근과 구역 조절, 가능한 움직임 및 섭취 진행은 수술과 현재 상태에 맞춰 정한다. 조기 식이라는 원칙이 모든 폐쇄·흡인 위험과 심한 불안정에 동일하게 적용되는 것은 아니다. 반대로 배변이 있을 때까지 모든 환자를 기계적으로 금식시키는 관행도 개별 근거와 경로를 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.81c65577d357",
+      "type": "heading",
+      "level": 2,
+      "text": "회복의 기준은 기능이다"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.636d05ad81a2",
+      "type": "paragraph",
+      "markdown": "회복은 한 번의 방귀뿐 아니라 구역·구토와 팽만·통증, 실제 섭취 유지와 활동·수분 상태가 함께 좋아지는지로 본다. 기대보다 늦거나 다시 악화하면 누출·복강 감염·폐쇄·전해질·약물과 다른 장기 문제를 재평가한다. 초기 호전 후 새 악화는 이전 정상 경과라는 설명을 그대로 유지할 근거가 되지 않는다. 수술 전후 기록이 원인 구별에 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.e86b82019b2c",
+      "type": "paragraph",
+      "markdown": "유착은 복강 표면의 손상과 복구 뒤 섬유성 연결이 형성된 것으로, 정상 장관이 병적으로 붙거나 당겨질 수 있다. 그러나 모든 유착이 증상을 만들거나 모두 수술로 제거해야 하는 것은 아니다. 유착박리도 새로운 손상과 재유착·장 손상의 위험을 가질 수 있어 이득과 위해를 비교한다. 정상 인체 모형은 장 위치와 주변 관계를 보여줄 수 있지만 환자별 유착·전환점·허혈을 직접 표현하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.4622e4016e7e",
+      "type": "heading",
+      "level": 2,
+      "text": "장관 해부학과 실제 병변"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.423727cc0223",
+      "type": "paragraph",
+      "markdown": "장 내용물의 이동은 연속된 관의 개통과 벽·신경·평활근의 기능에 의존한다. 영상에서 한 구간이 확장되었을 때 그 위와 아래의 분포, 수술로 바뀐 연결을 함께 읽어야 한다. 정상 모형의 위치 관계는 기본 방향을 돕지만 장 길이·이동성과 수술 후 변형을 고정된 좌표처럼 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.b.03c9453d6551",
+      "type": "paragraph",
+      "markdown": "구토가 줄어든 것이 반드시 폐쇄 해소를 뜻하지는 않는다. 위장관 감압과 섭취 중단 때문에 증상이 감소할 수 있고, 부분 폐쇄에서 간헐적 통과도 가능하다. 통증·팽만과 섭취 재개 뒤 반응, 전신 관류와 영상·검사를 연결하여 실제 경과를 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.table0847",
+      "type": "table",
+      "data": {
+        "title": "구조·생리·근거와 관리의 연결",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "운동",
+            "신경·염증·약물·전해질"
+          ],
+          [
+            "막힘",
+            "유착·탈장·꼬임 등"
+          ],
+          [
+            "위험",
+            "허혈·교액·누출·전신 악화"
+          ],
+          [
+            "회복",
+            "구역·섭취·활동·수분"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.3d0847",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.abdomen.intestine-mesenteric-vessels.organ-context"
+    },
+    {
+      "id": "general-surgery.recovery.ileus-obstruction.limits0847",
+      "type": "clinicalPearl",
+      "markdown": "정상 장기와 주변 구조의 위치 문맥이다. 복막 공간의 병적 연결·수술 후 변형·누출·농양·유착·전환점·허혈·장운동 및 안전한 시술 경로를 이 정적 모형이 재현하거나 결정하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/recovery/sections/general-surgery.recovery.ileus-obstruction.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.recovery.ileus-obstruction.001"
+  ],
+  "relatedLessons": [
+    "general-surgery.prevention.vte-bleeding-balance",
+    "general-surgery.recovery.delirium-function"
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.diagnosis.serial-tests",
+  "subjectId": "cardiology",
+  "chapterId": "diagnosis",
+  "title": {
+    "ko": "연속 검사와 진단 확률의 갱신",
+    "en": "Serial Testing and Diagnostic Probability"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.diagnosis.serial-tests.lo.01",
+      "text": "검사 전 가능성과 예측도를 구별한다"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.lo.02",
+      "text": "연속 검사에서 시간과 의존성을 설명한다"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.lo.03",
+      "text": "Rule-out과 최종 퇴원 판단을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.fba0eaa330be",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 결과가 다른 의미를 갖는 이유"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.5febe524715d",
+      "type": "paragraph",
+      "markdown": "검사의 민감도와 특이도는 질환이 있거나 없는 조건에서 결과가 어떻게 나오는지를 나타낸다. 환자에게 필요한 것은 결과를 본 뒤 그 질환이 얼마나 가능한지다. 검사 전 가능성은 증상과 위험, 대상 집단에 따라 다르므로 같은 음성이라도 남은 위험이 같지 않을 수 있다. 예측도와 민감도를 같은 값으로 쓰면 낮은 위험군과 높은 위험군의 결과를 혼동한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.37fd7e56bf88",
+      "type": "paragraph",
+      "markdown": "가상 검사에서 민감도가0.9이고 특이도가0.8이면 양성 우도비는0.9/(1−0.8)=4.5다. 검사 전 odds에 이 값을 곱하면 검사 후 odds를 얻는다. 이 수치는 계산을 연습하기 위한 조건이며 실제 troponin이나 ACS 경로의 성능이 아니다. 임상에서 특정 경로를 사용할 때는 해당 분석법·증상 시간·집단에서 검증되었는지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.a5ad8f26948b",
+      "type": "heading",
+      "level": 2,
+      "text": "시간에 따라 바뀌는 검출 대상"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.fa4c7e96b92b",
+      "type": "paragraph",
+      "markdown": "급성 손상 초기에는 혈중에 충분한 단백질이 나타나지 않았을 수 있다. 이후의 상승과 하강은 첫 값과 다른 정보를 준다. 증상 시작과 채혈 시점, 새 증상의 발생 시간을 구별해야 한다. 첫 채혈 뒤 새 폐색이 생긴 상황을 같은 사건의 단순한 반복검사로 취급하면 시간적 원인을 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.c2cc2d094cf6",
+      "type": "paragraph",
+      "markdown": "절대 변화량과 상대 변화율은 다른 지표다. 시작값이 매우 작으면 작은 절대 변화도 큰 백분율이 될 수 있다. 이미 높은 값에서 같은 절대 변화가 상대적으로 작게 보일 수 있다. 따라서 보편적인 하나의 백분율을 모든 분석법과 모든 시작 농도에 적용하지 않는다. 측정 정밀도와 생물학적 변동도 변화량 해석에 포함한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.69cc7e5579dc",
+      "type": "heading",
+      "level": 2,
+      "text": "반복 결과는 독립적이지 않다"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.c67b8db0112b",
+      "type": "paragraph",
+      "markdown": "같은 환자에서 같은 시료 성질과 분석법으로 반복한 결과는 서로 관련된다. 첫 양성 뒤 두 번째 양성이라는 이유만으로 동일한 우도비를 독립 사건처럼 두 번 곱할 수는 없다. 연속 경로는 검사 간 시간과 값의 조합에서 성능을 검증한 도구다. 단일 검사의 성능을 임의로 연결한 산술과 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.598594d0548a",
+      "type": "paragraph",
+      "markdown": "심전도와 troponin 역시 완전히 독립적인 두 우연 사건은 아니다. 같은 허혈과 시간 경과가 두 검사에 영향을 준다. 두 자료의 일치는 중요하지만 단순한 확률 곱으로 전체 위험을 확정하지 않는다. 서로 다른 측정 수준을 통합하되 적용하려는 모형이 그 상관과 대상 집단을 고려했는지 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.7f97c8694b4d",
+      "type": "heading",
+      "level": 2,
+      "text": "경로의 종말점"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.0df407bd9d0a",
+      "type": "paragraph",
+      "markdown": "신속 평가 경로의 rule-out은 지정한 대상과 기간의 사건 위험을 낮게 분류하는 의미다. 모든 흉통 원인을 배제하거나 이후 어떤 사건도 없다고 보증하는 표현은 아니다. 폐색전증·대동맥질환 등 다른 응급 원인과 지속 증상, 혈역학적 불안정은 별도로 평가한다. 관상동맥 사건에 낮은 위험이라는 판단과 집에서 안전하게 관리할 수 있다는 판단은 관련되지만 같지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.b.2e1d2d036df3",
+      "type": "paragraph",
+      "markdown": "검사 선택은 더 많은 검사를 무조건 쌓는 과정이 아니다. 현재 가설을 바꾸거나 환자에게 필요한 행동을 결정하는 정보가 무엇인지 따진다. 남은 위험과 추적 책임, 증상 재발 시 대응을 설명해야 평가가 완성된다. 의사결정 경로의 적용 대상과 제외 조건을 이해하는 것이 검사 간격을 숫자로만 외우는 것보다 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "민감도",
+            "질환이 있을 때의 결과"
+          ],
+          [
+            "예측도",
+            "결과 뒤 실제 질환 가능성"
+          ],
+          [
+            "연속 결과",
+            "시간과 의존성을 고려"
+          ],
+          [
+            "Rule-out",
+            "검증 대상·종말점·기간의 범위"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.serial-tests.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.diagnosis.serial-tests.001"
+  ],
+  "relatedLessons": [
+    "cardiology.ischemia.mi-classification-2026",
+    "cardiology.testing.stress-ischemia"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.virulence.capsule-opsonization",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.virulence.capsule-opsonization.b.ad16ff107b45",
+      "sourceSha256": "ad16ff107b457a3d95cf2560beaffa643baef7732357ca0834628670cb6a2ba0",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.capsule-opsonization.b.25e89cd36868",
+      "sourceSha256": "25e89cd36868eba3b560d6ba94c823d3460c7e95154917481085d60035e7e8f8",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.4f54fbe50534ea613a28",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 95,
+            "end": 97,
+            "exact": "보체",
+            "prefix": " 뜻은 아니다. 특정 피막에 결합한 항체와 ",
+            "suffix": " 조각은 숙주 세포의 수용체가 잡을 표지를 "
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.virulence.capsule-opsonization.b.deb98e1a26ab",
+      "sourceSha256": "deb98e1a26ab705fbb7933921415dc189561e264393611522a010ffd3bb40087",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.capsule-opsonization.b.79e193a4c4b1",
+      "sourceSha256": "79e193a4c4b187f59956f8059c3e98789e06050cd4e9c73ee2bf3b079fe3997a",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.capsule-opsonization.b.424b234df668",
+      "sourceSha256": "424b234df668ab8a5e8df39b666ca5cd24fe574ca1dd63ebcb74746696451e44",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.capsule-opsonization.b.ac5d02c00bd7",
+      "sourceSha256": "ac5d02c00bd7bec0711eb91b491fba5859e545446d5d6141ca187a8503ec2953",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.capsule-opsonization.b.dcf338f59dcb",
+      "sourceSha256": "dcf338f59dcb755170aa9fc5049cf456c4490d477fe594668b044335a8b60c60",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.739c749ddb118bfd2830",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 36,
+            "end": 77,
+            "exact": "해부학적 비장 결손과 기능 저하는 피막세균 방어의 임상 문맥에서 중요하다.",
+            "prefix": "는 입자와 미생물에 대한 방어에 기여한다. ",
+            "suffix": " 다만 비장의 존재 여부만으로 모든 환자의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.virulence.capsule-opsonization.b.493d33dfbba6",
+      "sourceSha256": "493d33dfbba63370076d6db51ece19bf2b3e83ee52a9f43e2bea2aa16adbc075",
+      "sourceLengthUtf16": 168,
+      "annotations": [
+        {
+          "id": "ann.fb81571bf44780a8d467",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 99,
+            "end": 168,
+            "exact": "피막의 존재·양·조성·발현 시점이 서로 다른 변수임을 구별해야 실험 결과를 한 가지 인과 주장으로 과도하게 확대하지 않는다.",
+            "prefix": "슷한 성장 조건, 감염량 대조가 필요하다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.antibodies.effector-fcrn",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.antibodies.effector-fcrn.b.358a694c1e24",
+      "sourceSha256": "358a694c1e24e894941abeeedf497bf65e02a3f0ded4099f27cf26d0732542e8",
+      "sourceLengthUtf16": 233,
+      "annotations": [
+        {
+          "id": "ann.48d4dd8b33bdaba7cbef",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 44,
+            "end": 46,
+            "exact": "보체",
+            "prefix": " 항원의 특정 구조에 결합하고 Fc 부위로 ",
+            "suffix": "·세포 수용체 등과 상호작용한다. 결합 자체"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        },
+        {
+          "id": "ann.6f46600584a0cc475c3a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 65,
+            "end": 153,
+            "exact": "결합 자체가 독소나 바이러스의 중요한 부위를 가려 중화(neutralization)를 일으킬 수 있지만, 모든 결합 항체가 같은 정도로 중화하는 것은 아니다.",
+            "prefix": "위로 보체·세포 수용체 등과 상호작용한다. ",
+            "suffix": " 어느 epitope를 어떤 방향으로 점유하"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.antibodies.effector-fcrn.b.20312baaf6a2",
+      "sourceSha256": "20312baaf6a279ed265b5804966fdb1bff19b95b91bc0f6d92c1355fed0befb5",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.antibodies.effector-fcrn.b.8b3b7a17cbef",
+      "sourceSha256": "8b3b7a17cbefcbb3dfbb33b5f9c0156d6c9425ccce53b989c9aa8f0e106c3f78",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.antibodies.effector-fcrn.b.78219cfd22b0",
+      "sourceSha256": "78219cfd22b0b5b837fc19ff3c9482d8a5c13e1530de1edd44ae1968de54ac49",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.478714f14b8964fb098b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 147,
+            "end": 184,
+            "exact": "자가항체도 질환의 원인, 연관 표지와 우연한 검출을 구분해야 한다.",
+            "prefix": "하기 전에 표적 접근성과 기능을 확인한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.antibodies.effector-fcrn.b.0ae5c438454c",
+      "sourceSha256": "0ae5c438454c160e7f5def8bb1a7beec3a02564f299dd8c8d078d9e01ff449bd",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.antibodies.effector-fcrn.b.1c56fa5291e4",
+      "sourceSha256": "1c56fa5291e4fd076e0a2bcd9abb22e65932b185709e77c3c66ced7f40cebf85",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.antibodies.effector-fcrn.b.7c65354baef2",
+      "sourceSha256": "7c65354baef22bb2c5d66c3c6f6ad31e71ccb3832046ae654c8324285c71b3a7",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.antibodies.effector-fcrn.b.75162f0fef64",
+      "sourceSha256": "75162f0fef6427a7700f726ab9751539a328c41306bf225dcbbc11bbdb374a21",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    }
+  ]
+}

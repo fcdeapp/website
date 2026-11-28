@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.heart-failure.syndrome",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.dcad80791ed7",
+      "sourceSha256": "dcad80791ed754270b1286c647dc6b899ac27a56f686a37406cbecaf09cf895d",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.715b9d4fa5c4",
+      "sourceSha256": "715b9d4fa5c471e6d69cfce8ede2d7c0ace5c7ca4c3cd1458bd03dd51c5a988f",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.bf7226f5c437",
+      "sourceSha256": "bf7226f5c43735abc3b23531384b607347f55a5fca56b55b04c2fe8cac8bf455",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.dd895128b938",
+      "sourceSha256": "dd895128b9386d20278716e322bb20d25d50bba1adc9c0aa97aef0dc0c819cc0",
+      "sourceLengthUtf16": 252,
+      "annotations": [
+        {
+          "id": "ann.dd2be553d100e8765d84",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 6,
+            "end": 10,
+            "exact": "RAAS",
+            "prefix": "교감신경과 ",
+            "suffix": " 활성은 단기적으로 혈압과 관류를 보상하지만"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.38c049e758d5",
+      "sourceSha256": "9ff4a4774e0c5ddaa1b7d04622dfef7d33759bec9ab9b399c2c451dc96776701",
+      "sourceLengthUtf16": 227,
+      "annotations": [
+        {
+          "id": "ann.130598399cb9d5a74a15",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 120,
+            "end": 187,
+            "exact": "범주 명칭만으로 임상증후군이 확진되는 것은 아니며, 특히 박출률이 낮지 않은 경우 충만압 증가의 객관적 근거가 중요하다.",
+            "prefix": " 50% 이상을 HFpEF 범주로 나눈다. ",
+            "suffix": " 이전에 낮았던 박출률이 호전된 경우도 과거"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.710a33720573",
+      "sourceSha256": "710a33720573ba10c50d4e6d403030d6fcc1b45e027a73bc2397179601eaeed8",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.d03fc37f84e8",
+      "sourceSha256": "d03fc37f84e8225da7b623b2512776a1103243f186406fee44ec2a2d64fb8a92",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.f39544e17bf0",
+      "sourceSha256": "f39544e17bf02a6139171cd896a8ce9f1050fb3e2ad00d1aa06bd1e01b5b7b4b",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.d1f599d047460982d981",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 114,
+            "end": 152,
+            "exact": "차가운 말단과 의식 변화, 소변량 감소 등은 저관류 평가에 중요하다.",
+            "prefix": "음만으로 심인성 부종을 확정할 수도 없다. ",
+            "suffix": " 혈압이 유지되어도 장기 관류가 충분하지 않"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.caf39c4125ba",
+      "sourceSha256": "caf39c4125ba8f959a2d71b90fe06dd0638abfcacec7276db5b0ff6306f12625",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.a7537d7a6f5a",
+      "sourceSha256": "a7537d7a6f5ab54255de1f4f56576eea7893f6a34f82ad5d7452f6becea62d6c",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.dba29039ad79eb9a272a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 176,
+            "end": 181,
+            "exact": "약물 조정",
+            "prefix": "가도 관리에 중요하다. 검사 결과는 이뇨와 ",
+            "suffix": " 전후의 시간 경과를 함께 기록한다."
+          },
+          "conceptId": "reader.term.4d94a87f27739d1c",
+          "targetDocumentId": "patient-safety.medication.reconciliation-systems"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.a57c1958c449",
+      "sourceSha256": "11d90282cc204849d9b467c900dce0d0fc568cccf555e4049d61731bb7814900",
+      "sourceLengthUtf16": 248,
+      "annotations": [
+        {
+          "id": "ann.bfdee31feb9fd4b3e628",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 212,
+            "end": 248,
+            "exact": "급성 불안정 상태의 조치와 안정된 만성기의 시작·증량은 구분한다.",
+            "prefix": " 나머지 계열의 필요성을 판단하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.heart-failure.syndrome.b.44f459159093",
+      "sourceSha256": "44f45915909399855d8c82fd52fe4d2562401ba95f91dc1ed9a9d8e21488d96f",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    }
+  ]
+}

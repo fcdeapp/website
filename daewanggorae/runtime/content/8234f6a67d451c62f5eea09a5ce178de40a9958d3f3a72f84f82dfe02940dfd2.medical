@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-learning-data-0854-3",
+  "lessonId": "neurology.infection.meningitis-encephalitis",
+  "title": "독립 가상 자료: 수막염·뇌염의 증후군과 검사 해석",
+  "series": [
+    {
+      "label": "CSF",
+      "samples": [
+        {
+          "x": 1,
+          "y": 36
+        }
+      ]
+    },
+    {
+      "label": "혈당",
+      "samples": [
+        {
+          "x": 1,
+          "y": 120
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "notClinicalCutoffOrEfficacy": true
+  },
+  "render": {
+    "type": "bars",
+    "canvas": {
+      "width": 900,
+      "height": 700
+    },
+    "plot": {
+      "x": 180,
+      "y": 30,
+      "width": 640,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 150,
+      "ticks": [
+        0,
+        30,
+        60,
+        90,
+        120,
+        150
+      ],
+      "scale": "linear",
+      "label": "포도당(mg/dL)"
+    },
+    "rows": [
+      {
+        "id": "csf",
+        "label": "CSF",
+        "y": 100,
+        "height": 60,
+        "segments": [
+          {
+            "label": "포도당",
+            "valuePath": "series/0/samples/0/y",
+            "tone": "primary"
+          }
+        ]
+      },
+      {
+        "id": "blood",
+        "label": "혈액",
+        "y": 300,
+        "height": 60,
+        "segments": [
+          {
+            "label": "포도당",
+            "valuePath": "series/1/samples/0/y",
+            "tone": "primary"
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "실제 환자·공식 척도·진단 경계·치료효과·처방 자료가 아니다.",
+    "기록 시점의 연결은 연속 측정이나 인과관계의 증거가 아니다.",
+    "같은 임상 맥락의 두 검체를 비교하는 범주형 막대이며 연속 시간 변화가 아니다."
+  ],
+  "sourceImageUsed": false
+}

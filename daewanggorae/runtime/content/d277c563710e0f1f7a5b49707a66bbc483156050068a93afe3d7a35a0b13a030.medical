@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.heat-balance-0857",
+  "lessonId": "neonatology.temperature.heat-balance",
+  "title": "열손실과 순열량",
+  "series": [
+    {
+      "label": "생산 12단위",
+      "samples": [
+        {
+          "x": 8,
+          "y": 4
+        },
+        {
+          "x": 10,
+          "y": 2
+        },
+        {
+          "x": 12,
+          "y": 0
+        },
+        {
+          "x": 14,
+          "y": -2
+        },
+        {
+          "x": 16,
+          "y": -4
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "production": 12,
+    "formula": "12-loss",
+    "notTemperaturePrediction": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 8,
+      "max": 16,
+      "scale": "linear",
+      "ticks": [
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "label": "손실(단위/시간)"
+    },
+    "yAxis": {
+      "min": -6,
+      "max": 6,
+      "scale": "linear",
+      "ticks": [
+        -6.0,
+        -3.0,
+        0.0,
+        3.0,
+        6.0
+      ],
+      "label": "순열량(단위/시간)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "생산 12단위",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 자료다. 실제 환자 관찰값, 진단 절단값 또는 처방 기준이 아니다."
+  ],
+  "sourceImageUsed": false
+}

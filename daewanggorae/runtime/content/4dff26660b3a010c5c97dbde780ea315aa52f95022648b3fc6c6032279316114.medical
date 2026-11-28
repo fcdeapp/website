@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience.conduction.myelin-cable",
+  "subjectId": "neuroscience",
+  "chapterId": "conduction",
+  "title": {
+    "ko": "수동 전기특성과 수초·신경전도",
+    "en": "Passive Electrical Properties Myelin and Nerve Conduction"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroscience.conduction.myelin-cable.lo.01",
+      "text": "시간상수·길이상수의 의미를 설명한다"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.lo.02",
+      "text": "수초와 축삭의 전파를 연결한다"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.lo.03",
+      "text": "잠복기·전도속도와 임상 검사의 한계를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.8fef7d57d981",
+      "type": "heading",
+      "level": 2,
+      "text": "막은 저항과 축전의 성질을 가진다"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.3e3971589217",
+      "type": "paragraph",
+      "markdown": "세포막의 지질층은 전하를 저장하는 축전 성질을, 이온통로는 전류가 지나는 전도 성질을 가진다. 수동 근사에서 전압이 변하는 시간은 막저항 R과 막정전용량 C의 곱인 시간상수 τ=RC와 연결된다. 같은 정상상태 전압에 도달하더라도 시간상수가 다르면 입력의 겹침과 다음 발화에 미치는 효과가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.dd13accc45c0",
+      "type": "paragraph",
+      "markdown": "계단 입력의 단순 충전식은 V(t)=V∞(1−e^(−t/τ))다. t가 τ와 같으면 최종 변화의 약63.2%에 도달한다. 이는 균일한 수동 막을 가정한 관계이며 실제 수상돌기·전압개폐성 통로와 세포 전체를 모두 대표하지 않는다. 시간상수를 실제 사람의 신경 반응시간이나 특정 약물의 효과 시간으로 바꾸어 읽지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.a84ee7ccff28",
+      "type": "heading",
+      "level": 2,
+      "text": "공간을 따라 전달되는 전위"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.103616318a72",
+      "type": "paragraph",
+      "markdown": "축삭과 수상돌기를 따라 흐르는 전류는 막을 통한 누출과 내부 저항의 영향을 받는다. 길이상수(length constant)는 수동 전압이 공간적으로 얼마나 멀리 전달되는지를 요약하는 개념이다. 지름·막저항·세포내 저항과 가지 구조가 영향을 준다. 단순 전선의 길이상수와 활동전위의 전도속도는 관련되지만 같은 양과 단위가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.368f1f909fdc",
+      "type": "paragraph",
+      "markdown": "수초(myelin)는 축삭의 많은 부분을 절연하는 다층막 구조다. 중추에서는 희소돌기아교세포, 말초에서는 슈반세포가 수초 형성에 참여한다. 수초화는 막의 누출과 충전 조건을 바꾸고 랑비에결절(nodes of Ranvier)의 통로 분포와 함께 빠르고 효율적인 전파를 돕는다. 전하가 공간을 순간 이동하는 것이 아니라 결절 사이의 수동 전류와 결절의 재생성 반응이 이어진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.3f36f1af0ca5",
+      "type": "heading",
+      "level": 2,
+      "text": "탈수초와 축삭 손상"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.7cb11c92e842",
+      "type": "paragraph",
+      "markdown": "수초 손상은 전도 지연과 시간적 분산, 일부 조건의 전도 차단을 일으킬 수 있다. 축삭 손상은 반응 진폭과 기능에 다른 영향을 주지만 실제 질환에서는 두 변화가 겹칠 수 있다. 한 검사값만으로 모든 병리 유형을 확정하지 않는다. 증상의 분포와 발병 속도, 여러 신경·근육의 소견을 통합한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.4555e798dd92",
+      "type": "paragraph",
+      "markdown": "말초 신경전도검사에서는 자극 위치와 거리, 반응 잠복기·진폭·파형이 중요하다. 온도와 자극·기록 조건, 부종과 해부학적 차이도 결과에 영향을 준다. 검사가 정상이라는 사실이 중추 병변이나 모든 작은 신경섬유의 이상을 배제하는 것은 아니다. 어떤 섬유와 반응을 측정했는지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.fcad98d60ec3",
+      "type": "heading",
+      "level": 2,
+      "text": "거리와 시간의 계산"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.7d64d45060b9",
+      "type": "paragraph",
+      "markdown": "같은 운동신경의 두 지점에서 유발한 반응의 시작 잠복기 차이를 사용하면 공통 말단 지연의 일부를 상쇄하여 구간 속도를 추정할 수 있다. 두 지점 거리0.20m, 잠복기 차이4ms라면 단순 속도는50m/s다. ms를 초로 변환하지 않으면 천 배의 오류가 생긴다. 이 값은 가상 계산이며 개인의 정상 범위나 질환 진단을 뜻하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.b.a1d65427949a",
+      "type": "paragraph",
+      "markdown": "감각 반응과 운동 반응, 직접 측정과 여러 구간을 포함한 반응은 해석의 조건이 다르다. 여러 측정의 일관성과 실제 진찰·근전도 등을 연결한다. 정상 거시 신경구조의 3D 모델이 있더라도 수초의 미세구조·탈수초·전도속도를 직접 표현하는 것은 아니다. 구조와 전기생리 자료를 구분해서 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.suppheading0852",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 임상 해석의 연결"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.supp.fe81a675acd7",
+      "type": "paragraph",
+      "markdown": "충전 곡선을 최종 변화량으로 나누어 정규화하면 같은 높이에 도달하는 시간만 비교할 수 있다. 그러나 실제 통로가 더 열려 저항이 감소하면 시간상수뿐 아니라 같은 전류 입력의 정상상태 전압도 바뀔 수 있다. 따라서 최종값을1로 맞춘 그림에서 절대 전압의 크기까지 같다고 결론내리면 안 된다. 정규화의 목적과 분모가 실험의 어떤 차이를 지웠는지 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.supp.a884bbd32a8f",
+      "type": "paragraph",
+      "markdown": "수초와 축삭 지름, 결절 간격·통로 밀도는 함께 전도에 영향을 준다. 수초가 두꺼워질수록 모든 조건에서 속도가 무한히 증가한다는 단순 비례는 성립하지 않는다. 심한 손상에서는 전파에 필요한 안전 여유가 줄어 일부 자극이 다음 구간을 활성화하지 못할 수 있다. 전도속도·반응 진폭·분산을 분리하여 보면 지연과 차단, 축삭 손상의 다른 정보를 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.table0852",
+      "type": "table",
+      "data": {
+        "title": "관찰·가설과 임상 해석",
+        "columns": [
+          "항목",
+          "자료·의미"
+        ],
+        "rows": [
+          [
+            "구간 거리",
+            "0.20m"
+          ],
+          [
+            "잠복기 차이",
+            "4ms"
+          ],
+          [
+            "비교",
+            "같은 신경 두 지점,공통 말단 지연 일부 상쇄"
+          ],
+          [
+            "조건",
+            "온도·거리·기록의 질 확인"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neuroscience.conduction.myelin-cable.diagram.passive-charging-0852",
+      "type": "diagram",
+      "diagramRef": "diagram.passive-charging-0852",
+      "path": "diagrams/diagram.passive-charging-0852.svg",
+      "alt": "정규화된 수동 충전의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/conduction/sections/neuroscience.conduction.myelin-cable.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroscience.conduction.myelin-cable.001",
+    "question.neuroscience.conduction.myelin-cable.002"
+  ],
+  "relatedLessons": [
+    "neuroscience.membrane.ion-gradients"
+  ]
+}

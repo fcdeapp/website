@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.t-cells.tcr-costimulation",
+  "subjectId": "immunology",
+  "chapterId": "t-cells",
+  "title": {
+    "ko": "TCR 신호·공동자극과 클론 확장",
+    "en": "TCR Signaling Costimulation and Clonal Expansion"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.t-cells.tcr-costimulation.lo.01",
+      "text": "TCR의 인식과 CD3 신호를 연결한다"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.lo.02",
+      "text": "CD28·IL-2의 역할을 설명한다"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.lo.03",
+      "text": "증식 표지와 순세포 증가의 차이를 계산한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.7f309ac91cc7",
+      "type": "heading",
+      "level": 2,
+      "text": "인식 분자와 신호 부품"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.a4d0640300d4",
+      "type": "paragraph",
+      "markdown": "TCR의 가변부는 펩타이드–MHC를 인식하고 CD3와 ζ사슬 등의 신호 부품이 세포 안으로 정보를 전달한다. CD4 또는 CD8 보조수용체와 연관된 Lck는 ITAM 인산화와 ZAP-70 관련 신호 활성에 기여한다. 인식의 특이성과 신호 전달은 협력하지만 같은 구조의 기능은 아니다. 표면 TCR이 존재해도 하위 kinase나 세포골격 결함이 있으면 반응이 낮을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.853e64e78cde",
+      "type": "paragraph",
+      "markdown": "PLCγ1 경로의 IP3·칼슘·calcineurin·NFAT, DAG 관련 PKC와 NF-κB, Ras–MAPK와 AP-1 등은 전사와 대사 변화를 연결한다. 이 경로들은 서로 독립된 스위치 몇 개가 아니라 함께 반응의 질을 결정하는 신호망이다. 한 전사인자가 핵으로 이동했다는 결과만으로 모든 활성화 프로그램이 완성되었다고 판단하지 않는다. 신호의 세기·지속과 기존 세포 상태가 결과를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.2a0a1bab8b34",
+      "type": "heading",
+      "level": 2,
+      "text": "항원만으로 충분하지 않은 이유"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.7e9922a8f9e7",
+      "type": "paragraph",
+      "markdown": "미경험 T세포의 초기 활성화에는 TCR 신호와 함께 공동자극이 중요하다. 대표적으로 항원제시세포의 CD80·CD86과 T세포의 CD28 상호작용이 생존·대사와 증식 능력을 지지한다. 위험 맥락 없이 자기 항원을 만나는 상황에서 무분별한 반응이 일어나지 않도록 하는 조절과 연결된다. 다만 모든 효과기·기억 T세포가 미경험 세포와 동일한 공동자극 요구를 갖는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.e31e10766b1b",
+      "type": "paragraph",
+      "markdown": "IL-2 생성과 고친화성 수용체 구성의 변화는 활성화된 세포의 확장에 중요하다. CD25는 IL-2 수용체의 α사슬이며 단독으로 완전한 신호 수용체를 뜻하지 않는다. 활성 T세포와 일부 조절 T세포에서 나타날 수 있으므로 CD25 양성만으로 세포의 기능 계통을 확정하지 않는다. 수용체 구성과 신호, 생존과 증식 결과를 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.a6997ed89d82",
+      "type": "heading",
+      "level": 2,
+      "text": "증식과 생존은 따로 측정한다"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.1cfbb620b824",
+      "type": "paragraph",
+      "markdown": "분열 추적 염료의 희석은 세포가 분열한 흔적을 제공하지만 최종 생존 세포 수를 직접 알려 주지는 않는다. 많은 세포가 나뉜 뒤 동시에 죽으면 총수가 크게 늘지 않을 수 있다. 반대로 분열이 조금 있어도 사멸이 줄면 순수가 늘 수 있다. 교육용 모형 dN/dt=(b−d)N에서 b와 d는 분열·소실의 유효 상수이며, 관찰한 성장률 r은 그 차이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.88c253cee44f",
+      "type": "paragraph",
+      "markdown": "b=0.6, d=0.2인 임의시간 모형에서는 r=0.4이고 N=N0exp(0.4t)다. b=0.6, d=0.8이면 분열 활동이 있어도 r=−0.2로 수는 감소한다. 두 조건이 같은 분열 표지를 보일 수 있다는 점을 이해하면 증식 검사와 세포 계수가 달라 보이는 이유를 설명할 수 있다. 이는 실제 T세포의 표준 분열시간이나 환자 예후를 제시하는 식이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.46ee617593ad",
+      "type": "heading",
+      "level": 2,
+      "text": "억제 수용체와 자극의 문맥"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.444cc5ac9fc1",
+      "type": "paragraph",
+      "markdown": "CTLA-4는 CD80·CD86과의 상호작용을 통해 공동자극 환경을 조절하고, PD-1은 리간드와 결합하여 활성 신호를 제한할 수 있다. 두 수용체는 모두 반응을 제한하지만 위치·발현과 작동 방식이 동일하지 않다. 억제 신호는 정상 조직 손상을 막는 기능과 만성 감염·종양에서 효과기 반응을 제한하는 기능을 함께 가진다. 억제가 있다는 사실만으로 병적인 실패라고 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.b.f73acb8ff7c4",
+      "type": "paragraph",
+      "markdown": "실험에서는 항원제시세포와 T세포 수, 펩타이드–MHC와 공동자극, 가용성 사이토카인을 나누어 통제한다. 항-CD3 자극에 반응하지만 항원에는 반응하지 않는다면 가공·제시와 TCR repertoire의 차이도 검토한다. 반대로 하위 신호를 직접 자극하여 반응을 복원하면 결함의 위치를 좁힐 수 있다. 우회 자극은 정상 항원 특이 반응이 완전히 회복되었다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.diagram.immune-clone-net-growth-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-clone-net-growth-toy",
+      "path": "diagrams/diagram.immune-clone-net-growth-toy.svg",
+      "alt": "같은 분열률과 다른 소실률의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.t-cells.tcr-costimulation.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "TCR·CD3",
+            "특이 인식과 신호 부품"
+          ],
+          [
+            "CD28",
+            "대표적인 공동자극 수용체"
+          ],
+          [
+            "IL-2",
+            "확장·생존 및 조절 세포 유지에 관여"
+          ],
+          [
+            "순세포 증가",
+            "분열과 소실의 차이"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/t-cells/sections/immunology.t-cells.tcr-costimulation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.t-cells.tcr-costimulation.001",
+    "question.immunology.t-cells.tcr-costimulation.002"
+  ],
+  "relatedLessons": [
+    "immunology.presentation.cross-priming",
+    "immunology.t-cells.helper-differentiation"
+  ]
+}

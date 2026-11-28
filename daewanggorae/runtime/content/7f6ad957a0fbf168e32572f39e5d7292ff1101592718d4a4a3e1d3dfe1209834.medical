@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.hemoglobin-change-0857",
+  "lessonId": "pediatrics.hematology.iron-deficiency",
+  "title": "기준 혈색소 대비 변화",
+  "series": [
+    {
+      "label": "기준 8g/dL",
+      "samples": [
+        {
+          "x": 8,
+          "y": 0.0
+        },
+        {
+          "x": 8.5,
+          "y": 6.25
+        },
+        {
+          "x": 9,
+          "y": 12.5
+        },
+        {
+          "x": 9.5,
+          "y": 18.75
+        },
+        {
+          "x": 10,
+          "y": 25.0
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "baselineHb": 8,
+    "formula": "(Hb-8)/8*100",
+    "notDiagnosticOrTreatmentThreshold": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 8,
+      "max": 10,
+      "scale": "linear",
+      "ticks": [
+        8,
+        8.5,
+        9,
+        9.5,
+        10
+      ],
+      "label": "혈색소(g/dL)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 30,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        7.5,
+        15.0,
+        22.5,
+        30.0
+      ],
+      "label": "기준 대비 증가(%)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "기준 8g/dL",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 자료다. 실제 환자 관찰값, 진단 절단값 또는 처방 기준이 아니다."
+  ],
+  "sourceImageUsed": false
+}

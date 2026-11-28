@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "nephrology.ckd.evaluation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "nephrology.ckd.evaluation.b.549406690296",
+      "sourceSha256": "2bd5583946db07556e647babb99dc989a5d9b51b7ddde057c691b4a5d536af2e",
+      "sourceLengthUtf16": 260,
+      "annotations": [
+        {
+          "id": "ann.2fe168dd518eb7b5f81d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 91,
+            "end": 97,
+            "exact": "사구체여과율",
+            "prefix": "으로 존재하는 상태다. 만성콩팥병은 원인과 ",
+            "suffix": ", 알부민뇨를 함께 분류한다. 최소 3개월의"
+          },
+          "conceptId": "reader.term.301f3dc8f905a00f",
+          "targetDocumentId": "physiology.renal.filtration"
+        },
+        {
+          "id": "ann.d6604c87f6290ac4ccc9",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 186,
+            "end": 191,
+            "exact": "급성신손상",
+            "prefix": "는 사실만으로 만성이라고 단정하지 않는다. ",
+            "suffix": "이나 급성 신장질환이 겹칠 수 있기 때문이다"
+          },
+          "conceptId": "reader.term.62380df1b3110e38",
+          "targetDocumentId": "nephrology.acute.aki"
+        }
+      ]
+    },
+    {
+      "blockId": "nephrology.ckd.evaluation.b.0c4dd9c9b2b5",
+      "sourceSha256": "0c4dd9c9b2b5c385f4c1a90eb56416d55f7f8cecf05350453f8891fa39a77be0",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "nephrology.ckd.evaluation.b.d8aa60132cec",
+      "sourceSha256": "d8aa60132cec6b05f5eae3164b6299bbe856dfeb28f9ebc27e27c9a82c94f113",
+      "sourceLengthUtf16": 273,
+      "annotations": []
+    },
+    {
+      "blockId": "nephrology.ckd.evaluation.b.13c982cbaef7",
+      "sourceSha256": "13c982cbaef70636110817628b52fd2b10ba1f3c4a94157bfb24d8117a757054",
+      "sourceLengthUtf16": 247,
+      "annotations": [
+        {
+          "id": "ann.96f046ec6748cfc6f81c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 156,
+            "end": 220,
+            "exact": "단백뇨와 알부민뇨는 완전히 같은 용어가 아니며, 경쇄 등 비알부민 단백질이 중요한 질환에서는 추가 평가가 필요하다.",
+            "prefix": "일시적 요인이 결과에 영향을 줄 수 있다. ",
+            "suffix": " 반복 측정과 원인에 맞는 검사 선택이 중요"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "nephrology.ckd.evaluation.b.33f9d23ec054",
+      "sourceSha256": "33f9d23ec0540023cfcb3cdbb0a6e99feb8ccd1e624b006a6fc52059465347f9",
+      "sourceLengthUtf16": 253,
+      "annotations": [
+        {
+          "id": "ann.a5795cec1181b73b2b58",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 175,
+            "end": 253,
+            "exact": "작은 신장이 만성성의 단서가 될 수 있으나 일부 질환에서는 크기가 유지되거나 커질 수 있어 영상 크기 하나로 원인과 시기를 확정하지 않는다.",
+            "prefix": " 급성 손상, 치료 반응이 경과를 바꾼다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "nephrology.ckd.evaluation.b.b2270890aefa",
+      "sourceSha256": "b2270890aefa2f57d591463a76960361d2d7444bd847699896186268e9333a8f",
+      "sourceLengthUtf16": 232,
+      "annotations": [
+        {
+          "id": "ann.32444192ecdb42014a3a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 93,
+            "end": 96,
+            "exact": "PTH",
+            "prefix": " 빈혈에, 인산 처리와 활성 비타민 D 및 ",
+            "suffix": " 변화는 CKD-무기질골장애에 연결된다. 대"
+          },
+          "conceptId": "reader.term.e7124e6127a50104",
+          "targetDocumentId": "physiology.endocrine.calcium-phosphate"
+        }
+      ]
+    },
+    {
+      "blockId": "nephrology.ckd.evaluation.b.dd44b4adb771",
+      "sourceSha256": "4f6e18fad1e06da4e5c550607ed9f18bc3895440c7b43f3ab46dd342cfd8b50a",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.80bc4bad4b3ec2594bc3",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 56,
+            "end": 60,
+            "exact": "RAAS",
+            "prefix": " 관리, 신대체요법 준비를 함께 고려한다. ",
+            "suffix": " 차단과 SGLT2 억제 등은 특정 환자군에"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.27d62ba84ae075a7be64",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 56,
+            "end": 128,
+            "exact": "RAAS 차단과 SGLT2 억제 등은 특정 환자군에서 중요한 근거를 갖지만 적용 조건과 감시, 금기는 개별 지침 검증이 필요하다.",
+            "prefix": " 관리, 신대체요법 준비를 함께 고려한다. ",
+            "suffix": " 투석 시작은 eGFR 하나의 고정값만으로 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "nephrology.ckd.evaluation.b.d93071e24e31",
+      "sourceSha256": "6adaeb51c663c0e61c103ec5fe4cb89afd0de99335f26320b138f0f0bc70ac40",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    }
+  ]
+}

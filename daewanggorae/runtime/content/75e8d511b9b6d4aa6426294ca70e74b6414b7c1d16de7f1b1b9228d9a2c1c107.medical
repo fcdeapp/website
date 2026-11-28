@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.pulmonary-hypertension.hemodynamics",
+  "subjectId": "pulmonology",
+  "chapterId": "pulmonary-hypertension",
+  "title": {
+    "ko": "폐고혈압의 압력·유량·저항",
+    "en": "Pressure Flow and Resistance in Pulmonary Hypertension"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.lo.01",
+      "text": "폐동맥압과 저항을 구별한다"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.lo.02",
+      "text": "쐐기압·심박출량의 측정 가정을 설명한다"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.lo.03",
+      "text": "전모세혈관·후모세혈관 기전을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.91f4f50b0df8",
+      "type": "heading",
+      "level": 2,
+      "text": "높은 압력이 답하지 못하는 질문"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.ae0b0c91ceb3",
+      "type": "paragraph",
+      "markdown": "폐고혈압(pulmonary hypertension, PH)은 폐순환 압력이 비정상적으로 높아진 혈역학적 상태를 평가하는 개념이다. 폐동맥압 상승의 원인에는 폐혈관 저항의 증가, 높은 혈류량과 왼심장 쪽 압력의 전달 등 여러 경로가 있다. 압력만 높다는 사실과 폐세동맥 자체의 질환은 같지 않다. 어떤 구획과 기전이 압력을 만드는지 분리해야 치료의 대상을 정확히 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.4e0f450a05c8",
+      "type": "paragraph",
+      "markdown": "평균 폐동맥압은 단순 모형에서 폐동맥쐐기압과 폐혈관 저항·심박출량의 관계로 설명할 수 있다. PVR=(mPAP−PAWP)/CO이며 압력은mmHg, CO는L/min으로 쓰면 저항은Wood unit이다. 같은 평균 압력이라도 쐐기압과 유량이 다르면 저항은 다르다. 심한 질환에서 심박출량이 떨어지면 높은 저항에도 압력이 더 증가하지 않을 수 있어 압력 변화만으로 호전을 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.3e80eb0f5e80",
+      "type": "heading",
+      "level": 2,
+      "text": "쐐기압이 대표하는 것"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.7526c0742d0c",
+      "type": "paragraph",
+      "markdown": "폐동맥쐐기압(pulmonary arterial wedge pressure, PAWP)은 적절한 위치와 조건에서 폐정맥·왼심방 쪽 압력을 추정하는 데 쓰인다. 카테터 위치와 파형·호흡, 기준 높이와 기록 시점이 결과에 영향을 준다. 쐐기압과 왼심실 이완기말 압력은 관련되지만 모든 판막·흐름 조건에서 같은 값은 아니다. 한 숫자를 해석하기 전에 실제로 어떤 압력을 측정했는지 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.bcb050076874",
+      "type": "paragraph",
+      "markdown": "체액 상태와 이뇨·산소 및 양압 환기 등은 측정 당시의 생리를 바꿀 수 있다. 임상적으로 왼심장 기전이 의심되는데 한 번의 낮은 값만으로 전모세혈관 질환을 확정하지 않는다. 추가 부하 평가가 필요한지는 환자와 검사 목적에 따라 전문적으로 판단한다. 모든 환자에게 같은 유발 검사나 절단값을 무조건 적용하는 것이 아니라 측정 자료가 설명하지 못한 질문을 먼저 정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.c9f8073a9322",
+      "type": "heading",
+      "level": 2,
+      "text": "전모세혈관과 후모세혈관"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.a14c1bd935eb",
+      "type": "paragraph",
+      "markdown": "전모세혈관 기전에서는 왼심장 쪽 압력의 뚜렷한 상승 없이 폐혈관 저항이 증가하는 양상을 평가한다. 후모세혈관 기전에서는 왼심장·폐정맥 쪽 압력 상승의 전달이 중요하다. 오랜 압력 부담에 폐혈관 재형성이 더해져 두 요소가 함께 나타날 수도 있다. 분류는 측정 조건과 적용 정의에 맞게 이루어져야 하며 증상이나 심초음파 추정 압력만으로 모든 혈역학 범주를 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.66e1cf46ea07",
+      "type": "paragraph",
+      "markdown": "심박출량의 측정도 결과에 중요하다. Fick 방법의 산소 소모량과 채혈·혼합 가정, 열희석의 측정 조건과 단락 등의 영향은 유량과 저항 계산의 신뢰도를 바꿀 수 있다. 분모인 CO를 작게 측정하면 계산 저항은 커진다. 소수점이 많은 저항값이 입력 오차를 없애지는 않는다. 압력과 유량, 파형 및 산소화 자료가 서로 맞는지 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.2646d700be61",
+      "type": "heading",
+      "level": 2,
+      "text": "보고서는 생리를 남긴다"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.92ad82cf5558",
+      "type": "paragraph",
+      "markdown": "보고에는 평균 압력과 쐐기압·심박출량, 계산 저항 및 산소·호흡과 체액·기술 조건을 함께 기록한다. 분류 이름만 남기면 이후 다른 조건에서 얻은 결과를 비교하기 어렵다. 오른심실 기능과 증상·운동, 전신 관류는 별도의 위험 정보를 준다. 폐고혈압의 숫자가 같아도 오른심실의 적응과 예비력은 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.b.b0439bbc4162",
+      "type": "paragraph",
+      "markdown": "치료 전후 압력과 저항이 바뀌면 어느 입력과 기능이 함께 변했는지 확인한다. 저항이 낮아지고 유량이 늘면 평균 압력은 기대만큼 떨어지지 않을 수 있다. 반대로 유량 감소 때문에 압력이 낮아진 상태는 호전과 다르다. 정상 구조를 아는 데서 출발하되 실제 혈역학과 장기 기능을 측정해야 한다는 점이 폐순환 해석의 기본이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.h.extra0844",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 압력 아래 다른 저항"
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.p.extra0844.0",
+      "type": "paragraph",
+      "markdown": "평균 폐동맥압35mmHg,쐐기압10mmHg,심박출량5L/min이면 PVR은(35−10)/5=5Wood unit이다. 같은 평균 폐동맥압과 유량에서 쐐기압이20이면 저항은3이 된다. 폐동맥압이라는 결과만 보아서는 왼심장 압력의 기여와 폐혈관 자체의 저항을 구별할 수 없다. 각 예는 계산 관계를 설명하는 가상 입력이며 임상 분류와 중재를 자동 결정하지 않는다."
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.p.extra0844.1",
+      "type": "paragraph",
+      "markdown": "한편 PVR5와 쐐기압10을 고정하면 유량4에서 평균 압력30,유량6에서40mmHg가 된다. 유량 증가가 압력을 높일 수 있음을 보여 준다. 실제 혈관은 모집과 팽창,긴장 변화와 맥동을 가지므로 모든 범위에서 고정 저항의 직선처럼 작동하지는 않는다. 특히 치료 뒤 유량이 함께 증가하면 평균 압력의 변화만으로 효과를 판단하기 어렵다. 압력·유량·저항을 같은 기록에서 비교해야 한다."
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.table0844",
+      "type": "table",
+      "data": {
+        "title": "측정 대상과 생리적 의미",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "mPAP",
+            "평균 폐동맥압"
+          ],
+          [
+            "PAWP",
+            "조건에 맞춘 하류 압력 추정"
+          ],
+          [
+            "CO",
+            "방법과 가정을 확인한 유량"
+          ],
+          [
+            "PVR",
+            "(mPAP−PAWP)/CO"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pulmonology.pulmonary-hypertension.hemodynamics.diagram.pulmonary-pressure-flow-0844",
+      "type": "diagram",
+      "diagramRef": "diagram.pulmonary-pressure-flow-0844",
+      "path": "diagrams/diagram.pulmonary-pressure-flow-0844.svg",
+      "alt": "고정 저항의 유량과 평균 압력의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/pulmonary-hypertension/sections/pulmonology.pulmonary-hypertension.hemodynamics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.pulmonary-hypertension.hemodynamics.001",
+    "question.pulmonology.pulmonary-hypertension.hemodynamics.002"
+  ],
+  "relatedLessons": [
+    "cardiology.vascular.vte-treatment-principles",
+    "pulmonology.pulmonary-hypertension.causes"
+  ]
+}

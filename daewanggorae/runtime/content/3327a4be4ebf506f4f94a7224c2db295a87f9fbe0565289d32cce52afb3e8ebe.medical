@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.left-visual-field",
+  "lessonId": "neuroanatomy.visual.field-pathways",
+  "title": "왼쪽 시야 정보의 교차 뒤 경로",
+  "nodes": [
+    {
+      "id": "field",
+      "label": "양쪽 눈이 보는 왼쪽 시야",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "retinas",
+      "label": "오른눈 코쪽망막·왼눈 관자쪽망막",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "tract",
+      "label": "오른쪽 시각로",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "lgn",
+      "label": "오른쪽 가쪽무릎체",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "cortex",
+      "label": "오른쪽 일차시각겉질",
+      "x": 360,
+      "y": 680,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.left-visual-field.edge.1",
+      "source": "field",
+      "target": "retinas",
+      "relation": "directed",
+      "label": "상 형성"
+    },
+    {
+      "id": "diagram.left-visual-field.edge.2",
+      "source": "retinas",
+      "target": "tract",
+      "relation": "directed",
+      "label": "코쪽 섬유 교차"
+    },
+    {
+      "id": "diagram.left-visual-field.edge.3",
+      "source": "tract",
+      "target": "lgn",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.left-visual-field.edge.4",
+      "source": "lgn",
+      "target": "cortex",
+      "relation": "directed",
+      "label": "시각부챗살"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 820
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 820
+      },
+      "fontSize": 22,
+      "nodes": {
+        "field": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "retinas": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "tract": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "lgn": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        },
+        "cortex": {
+          "x": 240,
+          "y": 680,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "반쪽 시야 경로의 요약이며 두 눈 각각의 축삭·상하 구역·반사 경로를 분리하여 모두 그린 그림은 아니다."
+  ],
+  "sourceImageUsed": false
+}

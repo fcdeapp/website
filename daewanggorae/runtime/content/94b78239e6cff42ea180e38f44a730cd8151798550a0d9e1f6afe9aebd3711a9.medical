@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.congenital.ventricular-septal-defect",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.congenital.ventricular-septal-defect.b.69855b02cd85",
+      "sourceSha256": "69855b02cd85d58ad3bb5649acd6bafb5a72b19f68fb26e17146b153467f967d",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.congenital.ventricular-septal-defect.b.5cbf2c1dbf67",
+      "sourceSha256": "5cbf2c1dbf679d6724ed01eb6fa84f6f9df56397768e529af815b313b37f259f",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.20e58294591a1bf616c2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 97,
+            "end": 100,
+            "exact": "심부전",
+            "prefix": "란과 성장 부진, 빠른 호흡 등 폐과혈류와 ",
+            "suffix": "의 증상이 드러날 수 있다. 신생아기에 증상"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.congenital.ventricular-septal-defect.b.2f8643a1cbc3",
+      "sourceSha256": "2f8643a1cbc3be56f8a54bfd4a584dde0d2629ee6aa9ae80d17b5a6acf645b27",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.congenital.ventricular-septal-defect.b.19a689e8da97",
+      "sourceSha256": "19a689e8da972596220262bda22c51b6a614e8672eb4d8333810a52ac74eac8a",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.congenital.ventricular-septal-defect.b.ad91c40e9017",
+      "sourceSha256": "ad91c40e9017b304956d7179b30b0b5b95bda6e4fe7c1b1f258535fc742ea0d4",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.congenital.ventricular-septal-defect.b.eb440dba6c0e",
+      "sourceSha256": "eb440dba6c0e6f1e2007899ae1af538d35b37853675206692e62c3edde3312ca",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.congenital.ventricular-septal-defect.b.0151ecd08e8e",
+      "sourceSha256": "0151ecd08e8eb99b8da6984e1b141629408be18656168d0cd57cc56457cc8d2e",
+      "sourceLengthUtf16": 191,
+      "annotations": [
+        {
+          "id": "ann.7d7101226f8da3a72e91",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 154,
+            "end": 191,
+            "exact": "심한 폐혈관병에서의 단락은 폐쇄 전 혈역학적 평가가 특히 중요하다.",
+            "prefix": " 해부학 및 개입의 위해를 함께 평가한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.congenital.ventricular-septal-defect.b.67f0c2b87a65",
+      "sourceSha256": "67f0c2b87a65ee8166e599911b6fba0efeb48ca4f89c99be57f37648c2e7e73f",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.bd5fb743069cb21b4318",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 50,
+            "end": 107,
+            "exact": "교육에서는 결손을 찾는 질문, 흐름의 크기를 정하는 질문, 폐혈관의 가역성을 평가하는 질문을 구분한다.",
+            "prefix": " 판막 기능과 감염 관련 문제를 추적한다. ",
+            "suffix": " 이 세 질문은 서로 관련되지만 같은 영상 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

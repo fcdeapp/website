@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.nutrient-exit-route-pairs",
+  "lessonId": "physiology.digestive.lipid-protein-absorption",
+  "title": "흡수 후 다른 출구",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "아미노산·많은 단당류",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "문맥 쪽 출현",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "킬로미크론",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "유미관·흉관·전신 정맥",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "B12–내인자 복합체",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "말단회장 수용체 경로",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.nutrient-exit-route-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "상피 통과 뒤",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.nutrient-exit-route-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "림프 경로",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.nutrient-exit-route-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "흡수 전 결합",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "분자별예외와장세포대사가있다. 모든지방산이같은림프경로만이용하는것은아니다."
+  ],
+  "sourceImageUsed": false
+}

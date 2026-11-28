@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.shock.renal-tubular-injury",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.cd0130f76f68",
+      "sourceSha256": "cd0130f76f68558d90e5dfedb25f98764bf69ad4c3cb2899c55b7147ef0a4c71",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.3ddec9b23c27",
+      "sourceSha256": "3ddec9b23c275538ffe0fb31fee2419c7a688b3a4e80f88f26ec9cd9fbc00648",
+      "sourceLengthUtf16": 163,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.a9cfa5811263",
+      "sourceSha256": "a9cfa581126348a81837875eb5e5d5652dbbbd9c1b3b52156f8a8d9f6f4e6615",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.448526dcca69",
+      "sourceSha256": "448526dcca69a3782f9694aad81219c7597edd3845b3bc5363bd1bce121f4bf9",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.02bb53192878",
+      "sourceSha256": "02bb531928782ae1a14fa02e7e29079d3b2cb165598f0edfb92cce0270843c9c",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.94b708a34f2615f66284",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 122,
+            "exact": "GFR",
+            "prefix": ". 사구체가 처음부터 주된 병변이 아니어도 ",
+            "suffix": "이 줄 수 있는 이유다. 여과 지표의 저하를"
+          },
+          "conceptId": "reader.term.301f3dc8f905a00f",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.d01409bf8c6e",
+      "sourceSha256": "d01409bf8c6eb410d185650883ea9a71503fe72dea555434218a5a8ffb5ea405",
+      "sourceLengthUtf16": 148,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.73247583f727",
+      "sourceSha256": "73247583f727d9ca70c65afd1696502cbd5ab8d9cdee86d7527c62a8923380b9",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.f759f07704e85980178f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 149,
+            "end": 182,
+            "exact": "정한 숫자 하나로 모든 원인을 두 집단으로 확정하지 않는다.",
+            "prefix": "·기저 질환과 현재 생리에 영향을 받는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.e80a6c7e96ad",
+      "sourceSha256": "e80a6c7e96ad821774d058de546501e8cbba0001887fc78084ba02b5938a49ca",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.08f8e822be91",
+      "sourceSha256": "08f8e822be91a409e1757e5683cca67187815baf591f3b4b07feafd1f90d6754",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.renal-tubular-injury.b.3b5efd169a72",
+      "sourceSha256": "3b5efd169a72832a5fb28d212241213e2ee3705077d799bcfd05a46d5aab5348",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    }
+  ]
+}

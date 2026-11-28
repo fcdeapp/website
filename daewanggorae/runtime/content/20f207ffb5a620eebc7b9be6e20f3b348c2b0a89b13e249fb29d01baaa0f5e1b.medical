@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology",
+  "title": {
+    "ko": "호흡기내과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "pulmonology.chapter.airways",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/airways/chapter.json"
+    },
+    {
+      "id": "pulmonology.chapter.obstruction",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/obstruction/chapter.json"
+    },
+    {
+      "id": "pulmonology.chapter.vascular",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/vascular/chapter.json"
+    },
+    {
+      "id": "pulmonology.chapter.pulmonary-hypertension",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/pulmonary-hypertension/chapter.json"
+    },
+    {
+      "id": "pulmonology.chapter.testing",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/testing/chapter.json"
+    },
+    {
+      "id": "pulmonology.chapter.cough",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/cough/chapter.json"
+    },
+    {
+      "id": "pulmonology.chapter.infection",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/infection/chapter.json"
+    },
+    {
+      "id": "pulmonology.chapter.interstitial",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/interstitial/chapter.json"
+    },
+    {
+      "id": "pulmonology.chapter.pleural",
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/pleural/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "pulmonology.plan.001",
+    "pulmonology.plan.002",
+    "pulmonology.plan.003",
+    "pulmonology.plan.004",
+    "pulmonology.plan.005",
+    "pulmonology.plan.006",
+    "pulmonology.airways.asthma-mechanisms",
+    "pulmonology.obstruction.copd",
+    "pulmonology.vascular.pulmonary-embolism-gas-exchange",
+    "pulmonology.vascular.pulmonary-embolism-assessment",
+    "pulmonology.pulmonary-hypertension.hemodynamics",
+    "pulmonology.pulmonary-hypertension.causes",
+    "pulmonology.pulmonary-hypertension.right-ventricular-adaptation",
+    "pulmonology.pulmonary-hypertension.chronic-thromboembolic",
+    "pulmonology.testing.spirometry-quality",
+    "pulmonology.testing.flow-volume-loop",
+    "pulmonology.testing.lung-volumes",
+    "pulmonology.testing.diffusing-capacity",
+    "pulmonology.airways.asthma-diagnostic-variability",
+    "pulmonology.airways.asthma-inflammatory-phenotypes",
+    "pulmonology.airways.asthma-controller-inhaler",
+    "pulmonology.airways.asthma-exacerbation",
+    "pulmonology.airways.difficult-severe-asthma",
+    "pulmonology.obstruction.copd-small-airways-emphysema",
+    "pulmonology.obstruction.copd-integrated-assessment",
+    "pulmonology.obstruction.copd-maintenance-rehabilitation",
+    "pulmonology.obstruction.copd-exacerbation",
+    "pulmonology.airways.bronchiectasis-injury-cycle",
+    "pulmonology.airways.bronchiectasis-etiology-microbiology",
+    "pulmonology.airways.bronchiectasis-clearance-treatment",
+    "pulmonology.cough.cough-reflex-hypersensitivity",
+    "pulmonology.cough.chronic-cough-evaluation",
+    "pulmonology.cough.hemoptysis-airway-risk",
+    "pulmonology.airways.mucociliary-defense",
+    "pulmonology.infection.pneumonia-host-gas-exchange",
+    "pulmonology.infection.cap-diagnosis-severity",
+    "pulmonology.infection.cap-treatment-response",
+    "pulmonology.infection.aspiration-injury",
+    "pulmonology.infection.abscess-necrotizing-pneumonia",
+    "pulmonology.infection.hospital-ventilator-pneumonia",
+    "pulmonology.infection.immunocompromised-host",
+    "pulmonology.infection.tuberculosis-host-pathology",
+    "pulmonology.infection.tuberculosis-diagnostic-evidence",
+    "pulmonology.infection.tuberculosis-therapy-resistance",
+    "pulmonology.infection.tb-infection-prevention",
+    "pulmonology.infection.ntm-pulmonary-disease",
+    "pulmonology.interstitial.pattern-clinical-context",
+    "pulmonology.interstitial.ipf-progressive-fibrosis",
+    "pulmonology.pleural.effusion-fluid-mechanisms",
+    "pulmonology.pleural.infection-empyema"
+  ]
+}

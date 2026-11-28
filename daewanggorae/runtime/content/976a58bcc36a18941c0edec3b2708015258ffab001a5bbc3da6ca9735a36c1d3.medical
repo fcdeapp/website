@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cell-biology.cell-cycle.checkpoints",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.89ac14c7bee2",
+      "sourceSha256": "89ac14c7bee2ce2f7a1a0697a28f3dbb8deb9e9f719981e440573672ac74e557",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.06d68f8742b5",
+      "sourceSha256": "06d68f8742b51ed6db7db16edda999144b6d5ccaf78b3a1a018c9fb6f25b1dde",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.be8d91745c12",
+      "sourceSha256": "be8d91745c123b6dc613a0cc711902332f821c795c1b461670e532a45084eb8d",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.f6eb4fc1f6e8",
+      "sourceSha256": "f6eb4fc1f6e8f0523b69aae30276e6f93d57396fba9c1bda1fb6a72e919c55ea",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.3b4bf7a98097f58cc64a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 103,
+            "end": 131,
+            "exact": "유전자 발현의 변화와 복합체 결합 상태가 중요하다.",
+            "prefix": "사이클린–CDK 복합체의 억제와 관련된다. ",
+            "suffix": " 성장 자극이 존재해도 손상·접촉·영양 부족"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.8333f7db1fac",
+      "sourceSha256": "8333f7db1fac12a555694df13498c7b0a1a72de008359525e1f5ce7504f8e3ef",
+      "sourceLengthUtf16": 254,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.2f8bf2d70dd2",
+      "sourceSha256": "2f8bf2d70dd275bd7ac0672c7abd390766a40064f0464982260802bc5ed39729",
+      "sourceLengthUtf16": 252,
+      "annotations": [
+        {
+          "id": "ann.3af573dcd6f0dec47e5d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 80,
+            "end": 89,
+            "exact": "apoptosis",
+            "prefix": "·세포노화(senescence)·세포자멸사(",
+            "suffix": ") 등으로 이어질 수 있다. p53이 활성화"
+          },
+          "conceptId": "reader.term.712354658cd0ac30",
+          "targetDocumentId": "pathology.cell.injury-death"
+        }
+      ]
+    },
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.2744ffbdfe12",
+      "sourceSha256": "2744ffbdfe12e1351340fc93541aabe1de1368824fa8fb1853e96eb2375a4452",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.e33716b549f4",
+      "sourceSha256": "e33716b549f4374063efb5a32496502181f554c25b99ca0bfc8a2188147ffb32",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.0f9464301a03",
+      "sourceSha256": "0f9464301a036fdb465447e9e1bbea0c5a2846e457a4ce3a36a0df8ced007086",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-cycle.checkpoints.b.6af28c60d825",
+      "sourceSha256": "6af28c60d825196da4c8736f85f3c451a9d3bea191e3d7dbda11fbef6721560e",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.cd10fe532c1955780ddf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 158,
+            "end": 213,
+            "exact": "표나 흐름도를 읽을 때에는 감시 신호, 효소 활성, 표적 분해, 구조 변화의 인과 순서를 구별한다.",
+            "prefix": "사라지는 단일 스위치로만 이해하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

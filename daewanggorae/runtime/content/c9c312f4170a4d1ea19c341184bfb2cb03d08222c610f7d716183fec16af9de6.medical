@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pediatrics.fluid.compartment-assessment",
+  "subjectId": "pediatrics",
+  "chapterId": "fluid",
+  "title": {
+    "ko": "소아 체액 구획과 탈수 평가",
+    "en": "Pediatric Fluid Compartments and Dehydration"
+  },
+  "learningObjectives": [
+    {
+      "id": "pediatrics.fluid.compartment-assessment.lo.01",
+      "text": "총체액과 유효순환을 구별한다"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.lo.02",
+      "text": "탈수 소견을 통합한다"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.lo.03",
+      "text": "체중 기반 계산의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.b287134b1f15",
+      "type": "heading",
+      "level": 2,
+      "text": "체액량과 관류"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.a91114d84ed7",
+      "type": "paragraph",
+      "markdown": "소아의 탈수(dehydration)는 수분과 전해질의 섭취·손실 균형이 깨져 체내 저장이 감소한 상태다. 그러나 체내 수분 부족, 세포외액 감소, 혈관 내 유효순환 감소는 같은 개념이 아니다. 수분이 어느 구획에서 얼마나 줄었는지에 따라 혈청 나트륨과 순환 소견이 달라진다. 부종이 있는 소아도 혈관 내 유효순환이 충분하지 않을 수 있으므로 눈에 보이는 체액의 양만으로 관류를 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.896f1b9764ec",
+      "type": "paragraph",
+      "markdown": "세포외액(extracellular fluid, ECF)은 혈장과 간질액으로 나뉘고 세포내액(intracellular fluid, ICF)은 세포막 안쪽에 있다. 물은 유효 삼투질의 분포에 반응하여 이동한다. 나트륨은 세포외액의 주요 양이온이지만 혈청 나트륨 농도는 체내 나트륨 총량을 직접 나타내지 않는다. 수분 손실이 나트륨 손실보다 상대적으로 크면 고나트륨혈증이 발생할 수 있으며, 반대 상황이나 항이뇨호르몬의 작용과 수분 섭취가 겹치면 저나트륨혈증이 나타날 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.05ff017a3f2f",
+      "type": "paragraph",
+      "markdown": "같은 체중 감소율이라도 등장성·고장성·저장성 체액 변화에서 신경학적 소견과 순환 소견의 조합이 다를 수 있다. 고장성 상태에서 세포 안의 물이 밖으로 이동하면 세포외액 감소가 일부 완충되어 겉으로 보이는 탈수 소견이 실제 총수분 부족보다 덜 뚜렷할 수 있다. 반대로 검사값 하나만 보고 임상 관류의 악화를 놓쳐서도 안 된다. 구획과 농도, 순환의 질문을 분리한 뒤 다시 통합하는 것이 평가의 기본이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.6804602e4e0e",
+      "type": "heading",
+      "level": 2,
+      "text": "체중과 손실의 추정"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.c061c3b3267f",
+      "type": "paragraph",
+      "markdown": "질병 직전의 신뢰할 수 있는 체중과 현재 체중이 있다면 차이는 체액 손실 추정에 유용하다. 그러나 측정 저울과 옷, 기저귀, 수유 직후 여부가 다르면 작은 영아에서 상대 오차가 커진다. 과거 체중이 오래되었다면 정상 성장의 영향도 섞인다. 체중 변화가 전부 물이라는 가정이 성립하는 짧은 관찰 구간에서만 단순한 부피 환산이 가까운 근사가 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.394f7010cfe6",
+      "type": "paragraph",
+      "markdown": "교육용으로 질병 전 10.0kg, 현재 9.4kg인 소아를 생각하면 감소량은 0.6kg이고 질병 전 체중 대비 감소율은 6%다. 물의 밀도를 약 1kg/L로 두면 600mL의 차이에 해당한다. 이 계산은 이미 들어간 수액이나 지속 손실, 영양과 측정 오차를 반영하지 않는다. 또한 계산한 결핍량 전체를 즉시 한꺼번에 투여해야 한다는 처방이 아니다. 현재 관류와 전해질, 공급 경로, 진행 속도 및 재평가를 통해 실제 계획을 세운다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.cc0d5bff39af",
+      "type": "paragraph",
+      "markdown": "분모를 현재 체중으로 바꾸면 0.6/9.4로 다른 백분율이 나온다. 따라서 기록에는 어떤 체중을 분모로 사용했는지 명시해야 한다. 결핍량, 유지 요구량, 지속 손실은 서로 다른 항목이다. 유지량은 현재 상태와 불감손실 및 소변 배설 등의 영향을 받고, 이미 생긴 결핍량을 자동으로 포함하지 않는다. 설사·구토가 계속되면 처음 계산만으로 이후의 수지를 설명할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.2628132584d4",
+      "type": "heading",
+      "level": 2,
+      "text": "신체진찰의 통합"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.14eac1b80e40",
+      "type": "paragraph",
+      "markdown": "빈맥은 순환혈액량 감소의 보상 반응일 수 있지만 발열, 통증, 울음과 약물도 영향을 준다. 모세혈관 재충만 시간은 말초 온도와 측정 방식의 영향을 받으며, 점막 건조와 눈물 감소도 하나만으로 중증도를 확정하기 어렵다. 피부 긴장도, 눈의 함몰, 활동성, 수유 의지, 소변량과 체중 경과를 함께 평가한다. 영양 상태와 연령에 따라 전형적 소견이 덜 뚜렷하거나 다르게 보일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.480b55c91bf4",
+      "type": "paragraph",
+      "markdown": "혈압은 반드시 연령과 측정 조건을 고려해야 한다. 정상 범위의 혈압이 유지된다는 이유만으로 순환 장애가 배제되지는 않는다. 소아는 빈맥과 말초혈관 수축으로 혈압을 유지할 수 있으며, 저혈압은 이미 보상이 충분하지 않다는 중요한 소견일 수 있다. 반응성이 떨어지거나 사지가 차고 맥박이 약하며 소변이 줄어드는 경우에는 숫자 하나보다 전체 관류 경과가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.15a5a184165e",
+      "type": "paragraph",
+      "markdown": "보호자에게는 마지막으로 정상적인 수유와 소변을 보았던 시점, 평소와 비교한 기저귀 수, 구토와 대변의 양상, 먹이려 했을 때의 반응을 구체적으로 묻는다. 단순히 많이 토했다고 기록하면 빈도와 양, 담즙성 여부가 구별되지 않는다. 녹색 구토, 심한 국소 복통, 혈변, 의식 변화 등은 흔한 위장염이라는 초기 가정과 별도로 평가할 단서다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.6a06c7c1a9da",
+      "type": "heading",
+      "level": 2,
+      "text": "재평가와 치료 반응"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.5c681aa5cc1a",
+      "type": "paragraph",
+      "markdown": "재수화 후 체중과 맥박이 변했다는 사실만으로 모든 문제가 해결되었다고 판단하지 않는다. 활동성, 말초 관류, 호흡 부담, 소변, 경구 섭취가 같은 방향으로 호전되는지 확인한다. 체중 증가와 부종 또는 호흡 악화가 겹치면 공급량뿐 아니라 분포와 장기 기능을 다시 검토해야 한다. 치료 전후 검사는 같은 질문에 답하는 것이 아니라 진행 과정에서 새롭게 생긴 질문을 해결하는 데 사용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.fluid.compartment-assessment.b.30b4c0a4add9",
+      "type": "paragraph",
+      "markdown": "소변량 감소는 신장 관류 저하의 결과일 수 있지만 신장 자체의 손상이나 배출 장애와 구별해야 한다. 재수화 이후에도 감소가 지속되면 처음의 탈수 가정을 반복하는 대신 원인을 재평가한다. 혈청 크레아티닌은 시간에 따라 변하고 근육량에도 영향을 받으므로 단일 정상값으로 급성 변화 전체를 배제하지 않는다. 임상 경과와 검사 경향을 연결하는 것이 한 번의 정상·비정상 판정보다 유용하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/fluid/sections/pediatrics.fluid.compartment-assessment.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation"
+}

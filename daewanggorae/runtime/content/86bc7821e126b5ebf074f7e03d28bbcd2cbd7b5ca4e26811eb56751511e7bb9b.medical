@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.infection.rheumatic-fever",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.infection.rheumatic-fever.b.1b559c764d1f",
+      "sourceSha256": "1b559c764d1ff0ece9b1a00711a50b6a0ae3a75586552d7e6e9bab9247d94e42",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.rheumatic-fever.b.8b0afaf3e25e",
+      "sourceSha256": "8b0afaf3e25ea89ac3d15f8889e742e8d62c57508b22ebd6058297354d39bab5",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.rheumatic-fever.b.beff6252bf9a",
+      "sourceSha256": "beff6252bf9a589954d2615da051071bf9d7e53bc324f1d356180d4d2f49179d",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.1844aae3b15466e683c5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 117,
+            "end": 152,
+            "exact": "관절통이라는 단어 하나와 객관적인 관절염 소견을 구분해야 한다.",
+            "prefix": "염 후 반응성 관절염 등 감별이 필요하다. ",
+            "suffix": " 먼저 투여한 항염증 약물이 관찰되는 양상을"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.rheumatic-fever.b.1d4df85adbe2",
+      "sourceSha256": "1d4df85adbe2c3f1eb834a33e6ff74c8a6accaa34c1488a59f2e0b146fcc60a7",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.64334e1b340230aeedeb",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 16,
+            "end": 19,
+            "exact": "심부전",
+            "prefix": "심장염에서는 판막염과 역류, ",
+            "suffix": " 및 심전도 변화가 나타날 수 있다. 청진 "
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.rheumatic-fever.b.c8ae4390b0b5",
+      "sourceSha256": "c8ae4390b0b5d20ede8ffb8cf93971dadb08693dd98a73ed3b2ae093b67af703",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.9c7169c8f160e2c0b9dd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 152,
+            "end": 210,
+            "exact": "늦게 나타난 신경 소견과 현재 인두배양 음성의 조합을 시간표 없이 해석하면 중요한 연관을 놓칠 수 있다.",
+            "prefix": "른 약물·유전·면역·대사 원인과 감별한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.rheumatic-fever.b.8c0e69287b5c",
+      "sourceSha256": "8c0e69287b5c6e68f348845a86928ab6426ff1870030b8e4a693b7d1653a5fc1",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.rheumatic-fever.b.0cf12665475b",
+      "sourceSha256": "0cf12665475bcfab0e1899c2dc905e00aeb38cb693dbafcca1e56475bf2ba28e",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.rheumatic-fever.b.03981b414a79",
+      "sourceSha256": "03981b414a796fbbed0437e869f69d91e3ed3b1e219fc1161a1982bc029ec0b2",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.bcf44f4d8270b3d77758",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 54,
+            "exact": "치료의 목표는 남은 감염의 관리와 염증·증상의 완화, 심장 기능의 지지 및 재발 예방을 구별한다.",
+            "prefix": "",
+            "suffix": " 관절 통증이 빨리 줄어드는 것과 판막의 장"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.rheumatic-fever.p.extra0843.0",
+      "sourceSha256": "21ee711fcefe6ea89995dff8e25eb1a8b219f6224849f26cf60625fd89fee3c0",
+      "sourceLengthUtf16": 291,
+      "annotations": []
+    }
+  ]
+}

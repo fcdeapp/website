@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.cardiovascular.cardiac-output-venous-return",
+  "subjectId": "physiology",
+  "chapterId": "cardiovascular",
+  "title": {
+    "ko": "심박출량·정맥환류와 순환의 작동점",
+    "en": "Cardiac Output and Venous Return"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.lo.01",
+      "text": "심박출량과 정맥환류의 정상상태 수지를 설명한다"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.lo.02",
+      "text": "평균전신충만압·우심방압·환류 저항의 역할을 구별한다"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.lo.03",
+      "text": "심장 기능과 환류 곡선의 교점을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.4f169aaeda1b",
+      "type": "heading",
+      "level": 2,
+      "text": "폐쇄 순환의 수지"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.58834c2608e7",
+      "type": "paragraph",
+      "markdown": "심박출량(cardiac output, CO)은 분당 심장에서 나가는 혈액 부피이며 심박수와 일회박출량의 곱으로 표현할 수 있다. 일회박출량은 이완말용적에서 수축말용적을 뺀 값이고 박출률(ejection fraction)은 이를 이완말용적으로 나눈 분율이다. 따라서 박출률과 일회박출량은 단위와 의미가 다르다. 박출률이 같아도 이완말용적·심박수가 다르면 심박출량은 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.8aa5688ae065",
+      "type": "paragraph",
+      "markdown": "폐쇄된 순환이 정상상태를 유지할 때 전신 정맥환류와 심박출량은 평균적으로 같다. 두 값이 계속 다르면 어느 구획에 혈액이 축적되거나 줄어들어 압력·용적이 변하기 때문이다. 이 수지는 심장이 능동적인 펌프라는 사실이나 혈관이 환류 조건을 조절한다는 사실 중 하나만을 부정하지 않는다. 심장과 혈관은 결합된 체계이며 두 곡선이 만나는 조건에서 작동한다. 순간적인 변화와 새로운 정상상태를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.b00d354fbc1d",
+      "type": "heading",
+      "level": 2,
+      "text": "정맥의 저장 기능과 충만압"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.e63d485bcbc4",
+      "type": "paragraph",
+      "markdown": "정맥계는 높은 순응도로 비교적 많은 혈액을 담을 수 있다. 혈관에 일정량이 존재하더라도 모든 부피가 같은 정도의 탄성 압력을 만드는 것은 아니다. 비긴장용적(unstressed volume)과 긴장용적(stressed volume)의 구분은 혈관벽을 늘려 압력에 기여하는 부분을 설명하는 모형이다. 두 부피가 실제 혈관 안에서 칸막이로 분리되어 있다는 뜻은 아니다. 정맥 긴장 변화는 같은 총혈액량에서도 압력 형성에 참여하는 비중을 바꿀 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.5bb724669e32",
+      "type": "paragraph",
+      "markdown": "평균전신충만압(mean systemic filling pressure, Pmsf)은 전신 순환에서 흐름이 멈추고 압력이 평형에 도달하는 가상적 조건과 연결되는 지표이다. 실제 살아 있는 사람의 한 정맥에서 평상시에 측정한 압력과 자동으로 같은 값은 아니다. 측정·추정 방식에는 제한이 있으며 폐 순환까지 함께 포함하는 평균순환충만압과 용어도 구별한다. 이 개념은 혈액량과 혈관의 용량성 특성이 환류의 상류 조건을 어떻게 만드는지 설명하는 데 유용하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.9903d733f616",
+      "type": "heading",
+      "level": 2,
+      "text": "우심방압과 환류 저항"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.95d0dbd1e2b3",
+      "type": "paragraph",
+      "markdown": "단순 환류 모형은 VR=(Pmsf−Pra)/Rvr로 표현한다. Pra는 우심방압, Rvr는 정맥환류에 대한 유효 저항이다. Rvr는 동맥압·심박출량에서 계산한 전신혈관저항과 정의·가중이 같지 않으므로 두 값을 무조건 같은 숫자로 대체하지 않는다. 같은 Pmsf와Rvr에서 Pra가 올라가면 환류 구동압이 줄어드는 방향을 예측한다. 하지만 실제 Pra는 심장의 처리 능력과 가슴 안 압력 등에도 좌우되므로 독립적으로 조작되는 단순 손잡이는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.66cdfbfcfc69",
+      "type": "paragraph",
+      "markdown": "Pra를 아주 낮추면 가슴 안으로 들어오는 큰 정맥이 허탈할 수 있어 환류가 선형으로 계속 증가하지 않고 제한될 수 있다. 따라서 전체 곡선을 끝없이 뻗는 직선으로 외삽하지 않는다. 가슴막압이 달라지는 상황에서는 혈관의 안팎 압력과 기준 압력의 해석도 중요하다. 우심방의 내강 압력을 심근을 늘리는 실제 경벽압이나 적정 전부하와 같은 것으로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.e793ff5f3611",
+      "type": "heading",
+      "level": 2,
+      "text": "심장 기능 곡선"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.2166effec40c",
+      "type": "paragraph",
+      "markdown": "일정한 수축성·후부하·심박수 등의 조건에서 심장 기능 곡선은 충만 조건에 대한 심장의 배출 반응을 나타낸다. Frank–Starling 관계는 근육 길이와 활성화·힘의 상호작용을 통해 충만 증가가 박출에 영향을 주는 현상을 설명하지만 과도한 충만에서도 무한히 출력이 증가한다는 법칙은 아니다. 같은 우심방압에서 심장 기능이 달라지면 배출 반응도 달라질 수 있다. 실제 좌심실 기능을 우심방압 하나로 완벽하게 추정할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.5bef5054147b",
+      "type": "paragraph",
+      "markdown": "수축성 증가나 후부하 변화는 기능 곡선에 영향을 주고, 정맥 긴장·혈액량·혈관 저항 변화는 환류 곡선에 영향을 줄 수 있다. 그러나 생체의 약물·반사·운동은 두 곡선의 여러 조건을 동시에 바꾸는 경우가 많다. 한 곡선만 움직인 교육 그림을 실제 처치의 모든 효과와 동일시하지 않는다. 무엇을 고정했는지와 어떤 변화가 후속적으로 생기는지를 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.76d78cf70ce1",
+      "type": "heading",
+      "level": 2,
+      "text": "교점의 계산"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.02117642d0dd",
+      "type": "paragraph",
+      "markdown": "환류를 VR=7−Pra(L/min), 심장 출력을 CO=2+Pra(L/min)라는 임의 선형 모형으로 놓으면 두 값이 같은 Pra=2.5 mmHg, 유량4.5 L/min에서 교점이 생긴다. 여기서 환류식의 기울기는 유효 저항1 mmHg·min/L에 대응한다. 숫자는 교점 계산을 가르치기 위한 것이며 정상 사람의 실제 심장 곡선이나 충만압 표준이 아니다. 음의 유량이나 허탈 구간에 이 식을 무제한 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.287a5f795376",
+      "type": "paragraph",
+      "markdown": "Pmsf에 대응하는 환류식의 절편만7에서9로 높이고 나머지를 유지하면 새 교점은 Pra=3.5 mmHg, 유량5.5 L/min이다. 입력 변화의 크기가 유량으로 모두 일대일 전달되는 것이 아니라 우심방압도 함께 변한다. 반대로 심장 기능이 약해졌다는 모형에서는 교점의 유량이 줄면서 Pra가 증가할 수 있다. 심박출량과 충만압이 언제나 같은 방향으로 건강을 나타내는 지표가 아님을 보여 주는 비교이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.83ab141c48da",
+      "type": "heading",
+      "level": 2,
+      "text": "측정과 임상 연결"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.b3d5228a54bd",
+      "type": "paragraph",
+      "markdown": "정맥압이 높다는 소견은 혈액량·정맥 긴장·우심실 기능·가슴 안 압력·환류 저항 등 여러 요인과 관련된다. 한 값만으로 수액 반응성이나 심장 펌프 기능 전체를 확정할 수 없다. 수액 반응성도 특정 자극에 박출량이 얼마나 변하는지의 문제이지 단순히 혈관 안 물이 부족한지 여부와 완전히 같은 말은 아니다. 시간 변화·호흡·기계환기·좌우 심장의 연결을 함께 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.b.126795056297",
+      "type": "paragraph",
+      "markdown": "순환의 작동점은 심장과 혈관의 결합 결과이며 조절 이후의 최종 상태이다. 운동 중 혈류 재분배·근육펌프·정맥 긴장·심박수·수축성이 함께 변하면 한 곡선의 정적인 이동만으로 모든 반응을 설명하기 어렵다. 수지와 곡선의 교점은 이러한 복잡성을 정리하는 틀이다. 실제 환자의 수치에서 어떤 가정이 성립하는지 검토하는 것이 단순한 그래프 암기보다 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.diagram.cardiac-venous-intersection",
+      "type": "diagram",
+      "diagramRef": "diagram.cardiac-venous-intersection",
+      "path": "diagrams/diagram.cardiac-venous-intersection.svg",
+      "alt": "임의 심장·환류 곡선의 교점의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.cardiovascular.cardiac-output-venous-return.table.compare",
+      "type": "table",
+      "data": {
+        "title": "심장·환류 변수",
+        "columns": [
+          "변수",
+          "구별"
+        ],
+        "rows": [
+          [
+            "CO",
+            "심박수×일회박출량"
+          ],
+          [
+            "EF",
+            "SV/EDV,분율"
+          ],
+          [
+            "Pmsf",
+            "전신 충만 조건"
+          ],
+          [
+            "Rvr",
+            "전신혈관저항과 동일 숫자 아님"
+          ]
+        ],
+        "notes": "교점 계산은 선형 교육 모형의 정상상태이며 음의 정맥환류나 정맥 허탈 영역으로 외삽하지 않는다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/cardiovascular/sections/physiology.cardiovascular.cardiac-output-venous-return.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "Pra=2.5 mmHg, 유량4.5 L/min"
+  ],
+  "reviewQuestions": [
+    "question.physiology.cardiovascular.cardiac-output-venous-return.001",
+    "question.physiology.cardiovascular.cardiac-output-venous-return.002"
+  ],
+  "relatedLessons": [
+    "physiology.cardiovascular.hemodynamics-resistance",
+    "physiology.cardiovascular.microcirculation-glycocalyx"
+  ]
+}

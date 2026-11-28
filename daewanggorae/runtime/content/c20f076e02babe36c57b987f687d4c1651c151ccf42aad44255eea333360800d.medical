@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.examination.localizing-weakness",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.examination.localizing-weakness.b.8564efdb1e33",
+      "sourceSha256": "8564efdb1e3386ab4665496f2ef1873f1f406ed446a1060d6fedbb334d1984eb",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.examination.localizing-weakness.b.bab7b8e6c4ee",
+      "sourceSha256": "bab7b8e6c4ee3281d5eac974881c8d5ecedefbe83e163b0bc40ced6d4fe094f6",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.a9efd4f5b014d64a9622",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 125,
+            "end": 172,
+            "exact": "위치를 가설화하는 일과 허혈·염증·퇴행·유전·독성 등 원인을 확정하는 일은 구별한다.",
+            "prefix": "은 분포에서도 다른 원인을 생각하게 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.examination.localizing-weakness.b.5b74bee81ad5",
+      "sourceSha256": "5b74bee81ad58e5a166541750f28911dc591e47b137d783128836351b19505c8",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.examination.localizing-weakness.b.b7c289f0b165",
+      "sourceSha256": "b7c289f0b1654faa86439a3239571a5c9cef82b2aea1759619397c849a73e0e3",
+      "sourceLengthUtf16": 162,
+      "annotations": [
+        {
+          "id": "ann.8fe435aec864e1e5be0e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 51,
+            "exact": "척수 병변에서는 감각 수준과 장경로·자율신경 기능, 병변 수준의 분절 소견이 함께 중요하다.",
+            "prefix": "",
+            "suffix": " 뇌간에서는 뇌신경과 몸의 징후가 서로 다른"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.examination.localizing-weakness.b.258036317d32",
+      "sourceSha256": "258036317d322e7598a357bfa1b2f9e5458e3d3269c3eeb921ad2e83a49e2fdb",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.examination.localizing-weakness.b.8b47fc2e35ce",
+      "sourceSha256": "8b47fc2e35ce8e11f60b33bdbf8244b47b140eeb2fff8c3f217ef57a4a231c34",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.98b4a7913dd122a07d5c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 6,
+            "exact": "신경근접합부",
+            "prefix": "",
+            "suffix": " 질환에서는 반복에 따른 변동과 안구·구인두"
+          },
+          "conceptId": "reader.term.8ac0bcc79435bc5e",
+          "targetDocumentId": "neuroscience.nmj.release-safety-factor"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.examination.localizing-weakness.b.f67bc9fd69e1",
+      "sourceSha256": "f67bc9fd69e196bb57631f3e0047fceca46b7fbffa53269ccff80abb2e55898d",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.examination.localizing-weakness.b.3366f4753984",
+      "sourceSha256": "3366f47539848e433549c8c749ebd3461bc0d351a376c4400aebe599b1d28867",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.examination.localizing-weakness.supp.1779277ebeaf",
+      "sourceSha256": "1779277ebeaf6d93df1ccfa7b850a68b419bc5ac231f40099f398e7dc31f7af8",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.examination.localizing-weakness.supp.880291651e7d",
+      "sourceSha256": "880291651e7db1289abf0d2427ebacd058be5d63d3e8a42e7e7158554182045e",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    }
+  ]
+}

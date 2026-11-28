@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.lipids.cholesterol-synthesis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.27cc89ee47b3",
+      "sourceSha256": "27cc89ee47b3fe0ed2860ce9f12e619ecf21e06d8e29c75361b3581cb83bea3d",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.639193a00716",
+      "sourceSha256": "639193a00716e2ef35c314918a270980a24258ec8272626d438e4e29e331442f",
+      "sourceLengthUtf16": 219,
+      "annotations": [
+        {
+          "id": "ann.88022eeb32b6c787dde1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 11,
+            "end": 15,
+            "exact": "지단백질",
+            "prefix": "세포는 자체 합성, ",
+            "suffix": "의 유입, 저장 에스터의 가수분해 등을 통해"
+          },
+          "conceptId": "reader.term.26809eb678edebb9",
+          "targetDocumentId": "biochemistry.lipids.lipoproteins"
+        },
+        {
+          "id": "ann.d8027a9fc797615536bd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 191,
+            "end": 219,
+            "exact": "유입 수용체와 세포 내 수송이 정상인지도 중요하다.",
+            "prefix": "레스테롤을 감지하는지 직접 알 수는 없다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.642842b490dd",
+      "sourceSha256": "642842b490dddb8790354eab3ddf5d6874a05167834ee06b5edaab71d016aeed",
+      "sourceLengthUtf16": 281,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.264302d41a4c",
+      "sourceSha256": "264302d41a4cc1428b561df645bfb2a3f09eb1d2ef768ca190a8e731c840d3f7",
+      "sourceLengthUtf16": 249,
+      "annotations": [
+        {
+          "id": "ann.60ad0f8b4d51ad63fe91",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 212,
+            "exact": "또한 케톤체 합성과 명칭이 비슷한 HMG-CoA 단계가 등장하지만, 세포 구획과 효소 형태·뒤따르는 반응을 구별해야 한다.",
+            "prefix": "소프레노이드 분지의 기여를 놓칠 수 있다. ",
+            "suffix": " 같은 중간체 이름이 있다고 두 경로의 목적"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.31e2f12ff09c",
+      "sourceSha256": "31e2f12ff09cb5a6a539562518c0ca1772abab196db67bd03b4fae9683ff2349",
+      "sourceLengthUtf16": 274,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.9e833dea2fd0",
+      "sourceSha256": "9e833dea2fd054f1055d57650c70bdfabc57efad9457535bb6f96466eb3325b2",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.a105be7c963f",
+      "sourceSha256": "a105be7c963fcd27917bb9ab80d21f0b8b80998dc6705fe3bc78f395755a102a",
+      "sourceLengthUtf16": 230,
+      "annotations": [
+        {
+          "id": "ann.3c260f3f58bd23bf6bb4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 206,
+            "end": 230,
+            "exact": "저장과 이용 가능성을 구분해야 하는 사례다.",
+            "prefix": "다른 구획의 감지 반응과 어긋날 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.b36ef71be0ad",
+      "sourceSha256": "b36ef71be0adedc206875c6b037864b5d1c64c5eae439c47fa8ff4118cfbbddf",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.698345df2de7",
+      "sourceSha256": "698345df2de7efaa1e50ad34941e5074c599a83fae4a5e6b635c1be07aa9d510",
+      "sourceLengthUtf16": 249,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.cholesterol-synthesis.b.b9473d09b7c1",
+      "sourceSha256": "b9473d09b7c163779f545c082b1d221156dbec61de4be6b7eab77613f3c351ef",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    }
+  ]
+}

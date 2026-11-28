@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.inflammation.lipid-amine-mediators",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.inflammation.lipid-amine-mediators.b.383598bd45cf",
+      "sourceSha256": "383598bd45cf57d9b41fc51fa3ce814d3d88e7ad734de300902f722293feb0f1",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.a44060d5d086f36f2ec6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 140,
+            "end": 142,
+            "exact": "보체",
+            "prefix": "gE 수용체의 교차결합은 중요한 자극이지만 ",
+            "suffix": "와 조직 손상 등 다른 자극도 비만세포를 활"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        },
+        {
+          "id": "ann.93b39f153c806b99b280",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 115,
+            "end": 171,
+            "exact": "IgE 수용체의 교차결합은 중요한 자극이지만 보체와 조직 손상 등 다른 자극도 비만세포를 활성화한다.",
+            "prefix": "합성하는 반응보다 빠르게 시작할 수 있다. ",
+            "suffix": " 히스타민의 역할을 설명하는 것과 염증의 원"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.lipid-amine-mediators.b.dfccb61e2069",
+      "sourceSha256": "dfccb61e2069f256db514090f2c3eff228fabd90d63010e7651ce8de6fbaaafb",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.lipid-amine-mediators.b.4ff3bb5e8c61",
+      "sourceSha256": "4ff3bb5e8c619d46afc7ea0d17271079c4b9892a48674ea74a2f6c7e1ef78567",
+      "sourceLengthUtf16": 248,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.lipid-amine-mediators.b.d63cf9cc77c2",
+      "sourceSha256": "d63cf9cc77c28cc52afe622264cb07d6ccb4a8748a9ebde4ed88c3d1b31d74fb",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.lipid-amine-mediators.b.e06d3489d5b2",
+      "sourceSha256": "e06d3489d5b213614223532293c8285e24165de4958019fe005f7aee738ff681",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.235fd7e00773fc9b44c9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 46,
+            "exact": "Leukotriene B4(LTB4)는 호중구의 모집과 활성에 중요한 유인 신호다.",
+            "prefix": "",
+            "suffix": " Cysteinyl leukotriene인 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.lipid-amine-mediators.b.ce09a8acb4e5",
+      "sourceSha256": "ce09a8acb4e598bc9c9a5d15b7390c6f3e25f25a75986ff49d86a74d5516fa06",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.lipid-amine-mediators.b.5caad701613d",
+      "sourceSha256": "5caad701613d409549f371b33bd9fe30d7eee7bf34f2446e36054529bd719084",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.lipid-amine-mediators.b.4557ea453abe",
+      "sourceSha256": "4557ea453abede31c6b7eadbbc8c5e700b6ff1d33083a12eaba0ac21c521f491",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    }
+  ]
+}

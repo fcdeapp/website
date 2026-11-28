@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.methods.gram-stain-interpretation",
+  "subjectId": "bacteriology",
+  "chapterId": "methods",
+  "title": {
+    "ko": "그람염색의 원리와 불일치 결과 해석",
+    "en": "Gram Stain Principles and Discordance"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.lo.01",
+      "text": "탈색 단계와 외피 구조의 관계를 설명한다"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.lo.02",
+      "text": "검체와 배양 조건의 영향을 구별한다"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.lo.03",
+      "text": "염색과 동정·생존성의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.17757563919f",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 색소가 다른 결과를 만드는 이유"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.f276dd0c1550",
+      "type": "paragraph",
+      "markdown": "그람염색(Gram stain)은 먼저 들어간 염료를 모든 세포가 같은 정도로 붙들지 못한다는 차이를 이용한다. Crystal violet과 iodine이 만든 복합체가 탈색 과정에서 얼마나 유지되는지가 중요한 분기다. 이후 대조염색은 주염료가 빠진 세포를 보이게 한다. 따라서 최종 붉은색은 세포가 처음부터 주염료를 전혀 만나지 않았다는 뜻이 아니라 처리 과정 전체의 결과다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.f9d956067053",
+      "type": "paragraph",
+      "markdown": "전형적인 그람양성 세포의 두꺼운 펩티도글리칸과 그람음성 세포의 외막·얇은 벽은 탈색에 다르게 반응한다. 이 구분은 실용적이지만 세균 계통분류의 모든 특징을 한 번에 재는 검사는 아니다. 항산균처럼 특수한 외피를 가진 균이나 세포벽이 없는 균은 일상적인 그람염색만으로 충분히 평가하기 어렵다. 세포의 크기와 수, 관찰 장비의 해상도도 검출 가능성을 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.d2432ac59ad1",
+      "type": "heading",
+      "level": 2,
+      "text": "탈색의 과다와 부족"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.d51d15ed581c",
+      "type": "paragraph",
+      "markdown": "탈색이 지나치면 원래 주염료를 유지할 세포에서도 색이 빠질 수 있다. 반대로 탈색이 부족하거나 도말이 지나치게 두꺼우면 주염료가 남아 그람반응을 잘못 읽을 수 있다. 이때 대조염색만 더 강하게 하는 것으로 원인을 해결하지 못한다. 도말의 두께와 고정, 시약 상태와 처리 조건을 함께 확인해야 한다. 양성·음성 대조는 검사 과정의 방향을 점검하는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.bdb3c9a03be2",
+      "type": "paragraph",
+      "markdown": "오래된 배양에서는 벽의 손상과 세포 자가분해 때문에 염색성이 혼재할 수 있다. 항균제에 노출된 검체에서도 형태와 염색이 전형적이지 않을 수 있다. 같은 집락에서 나온 세포가 여러 색으로 보인다고 곧바로 두 균종의 혼합이라고 단정하지 않는다. 반대로 임상 검체의 실제 혼합 감염을 단순한 염색 오류로 지워 버려서도 안 된다. 재배양과 독립적인 동정 정보가 두 가설을 나눈다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.68ef67d874ae",
+      "type": "heading",
+      "level": 2,
+      "text": "형태·배열·배경을 함께 읽기"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.85ef2c3ad7b8",
+      "type": "paragraph",
+      "markdown": "알균·막대균과 사슬·포도송이 모양 배열은 분열면과 분리 양상을 반영한다. 그러나 가까이 놓였다는 이유만으로 특정 균종을 확진하지 않는다. 고름의 호중구, 상피세포, 점액 등 배경 정보는 검체가 어디서 왔고 얼마나 대표성이 있는지 판단하는 데 기여한다. 동일한 형태라도 무균 부위와 상재균이 많은 표면에서 얻었을 때 임상적 무게가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.1ff884a3c15c",
+      "type": "paragraph",
+      "markdown": "염색에서 균이 보이지 않는 것은 균량 부족, 관찰 범위의 한계나 이전 치료로도 생길 수 있다. 이는 감염 부재의 완전한 증명과 다르다. 반대로 보이는 균체는 살아서 증식할 수 있는지까지 직접 알려 주지 않는다. 현미경·배양·핵산 검사는 서로 다른 속성을 측정하므로 결과가 어긋날 때 어느 하나를 자동으로 정답으로 삼지 말고 각각의 검출 대상을 먼저 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.bcc51fe35a27",
+      "type": "heading",
+      "level": 2,
+      "text": "임상 추론의 출발점"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.b.2bfdb1129a16",
+      "type": "paragraph",
+      "markdown": "그람염색은 빠르게 가능한 병원체 범위를 좁히고 후속 검사를 안내한다. 그러나 색과 모양만으로 모든 내성 기전·항균 감수성·독소 생산을 결정할 수는 없다. 예비 결과는 검체의 질과 환자 상태를 포함해 전달하고 최종 동정·감수성 결과와 대조한다. 검사 속도의 이점을 살리면서도 형태 정보가 제공하지 않는 기능까지 추론하지 않는 것이 올바른 사용이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.gram-stain-interpretation.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "주염색·매염",
+            "Crystal violet–iodine 복합체"
+          ],
+          [
+            "탈색",
+            "외피 상태·두께·처리 시간 영향"
+          ],
+          [
+            "대조염색",
+            "주염료가 빠진 세포의 시각화"
+          ],
+          [
+            "최종 동정",
+            "모양·색 외 독립 정보 필요"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/methods/sections/bacteriology.methods.gram-stain-interpretation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.methods.gram-stain-interpretation.001"
+  ],
+  "relatedLessons": [
+    "bacteriology.structure.peptidoglycan-assembly",
+    "bacteriology.structure.outer-membrane-transport"
+  ]
+}

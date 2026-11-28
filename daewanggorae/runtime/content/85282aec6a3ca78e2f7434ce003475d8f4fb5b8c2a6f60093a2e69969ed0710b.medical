@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.deficiency.pattern-based-evaluation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.deficiency.pattern-based-evaluation.b.e21b87fc5c0c",
+      "sourceSha256": "e21b87fc5c0cab439316d39e1927321dd9e73168ddbdc1d2570e28773e21660b",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.deficiency.pattern-based-evaluation.b.75126791b042",
+      "sourceSha256": "75126791b042bacaeddafb9e28c85d8e74d854c64fc70dbd233f556ad03a5177",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.6d5061c8393bc23927a0",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 76,
+            "end": 78,
+            "exact": "보체",
+            "prefix": "른 면역세포의 조정에 중요하다. 포식세포와 ",
+            "suffix": "의 결함은 또 다른 감염 패턴을 만들 수 있"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        },
+        {
+          "id": "ann.b609f4a5d68222b2f033",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 69,
+            "exact": "항체 관련 기능은 세포외 병원체의 중화·옵소닌 등에 중요하고, T세포 기능은 세포내 감염과 다른 면역세포의 조정에 중요하다.",
+            "prefix": "",
+            "suffix": " 포식세포와 보체의 결함은 또 다른 감염 패"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.deficiency.pattern-based-evaluation.b.d68512e5261b",
+      "sourceSha256": "d68512e5261bde73e2b27223b918abbfc4af3fb2845111e328823fc69e8c3d48",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.deficiency.pattern-based-evaluation.b.2d5ff0fda5d3",
+      "sourceSha256": "2d5ff0fda5d3bec06185ab229265185f9b273054fec49acdd25071cad9be5bd2",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.deficiency.pattern-based-evaluation.b.9aea8bf2bfc2",
+      "sourceSha256": "9aea8bf2bfc287547774ec92cbc3233dfeab47e3300439f0fb8f353d1935a12f",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.deficiency.pattern-based-evaluation.b.2b6d9ecf6a71",
+      "sourceSha256": "2b6d9ecf6a716c28dfa1a222c1182828551d7e6d87195ca2e895a953b548f1ec",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.deficiency.pattern-based-evaluation.b.cd9f6221f065",
+      "sourceSha256": "cd9f6221f065845c0c467359c03fb0330656ac40724a624a4104096f56034582",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.deficiency.pattern-based-evaluation.b.e724f34cbadb",
+      "sourceSha256": "e724f34cbadb6b942fd3898282e91029ff44b4b5ab1ef92b5022c42c9314d869",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.cardiovascular.renin-angiotensin-drugs",
+  "subjectId": "pharmacology",
+  "chapterId": "cardiovascular",
+  "title": {
+    "ko": "레닌–안지오텐신계 약물의 작용과 신장 반응",
+    "en": "Renin–Angiotensin System Drugs and Renal Responses"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.lo.01",
+      "text": "ACE 억제제와 AT1 수용체 차단제의 표적을 구별한다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.lo.02",
+      "text": "사구체 내 압력과 장기 신장 보호를 시간축으로 설명한다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.lo.03",
+      "text": "칼륨·혈압·신기능 감시의 기전을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.8480cce010c4",
+      "type": "heading",
+      "level": 2,
+      "text": "순환량 조절에서 레닌의 위치"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.27bd829e0e45",
+      "type": "paragraph",
+      "markdown": "레닌–안지오텐신–알도스테론계(renin–angiotensin–aldosterone system, RAAS)는 관류와 나트륨 균형을 조절하는 여러 체계 중 하나다. 신장의 레닌 분비는 관류 압력, 치밀반점(macula densa)의 염분 전달과 교감신경 등 다양한 입력에 반응한다. 레닌은 angiotensinogen을 절단하여 angiotensin I을 만들고, angiotensin-converting enzyme(ACE)은 angiotensin II 생성에 관여한다. Angiotensin II는 대표적으로 AT1 수용체를 통해 혈관 긴장, 알도스테론 분비와 염분·물 조절에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.renal.raas.a4a46e35"
+      ]
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.anatomy3d.0814-organ-context",
+      "type": "anatomy3d",
+      "sceneRef": "scene.physiology.renal.raas.a4a46e35"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.7912394daf77",
+      "type": "paragraph",
+      "markdown": "이 계통의 농도와 작용은 같은 정보가 아니다. 수용체 차단 뒤 되먹임이 달라져 레닌이나 angiotensin II가 증가할 수 있어도 AT1 매개 효과가 그대로 증가했다고 결론 내리지 않는다. 약물이 어느 단계에 개입하는지와 측정한 검사가 어느 물질을 나타내는지 함께 살펴야 한다. 혈중 농도 한 값이 모든 국소 조직 신호를 대표하는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.1b796a8b813b",
+      "type": "heading",
+      "level": 2,
+      "text": "ACE 억제와 수용체 차단"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.27c564878477",
+      "type": "paragraph",
+      "markdown": "ACE 억제제(ACE inhibitor, ACEi)는 효소 단계를 억제하고, angiotensin receptor blocker(ARB)는 주로 AT1 수용체를 차단한다. Enalapril·lisinopril과 losartan·valsartan 등은 이들 군의 예지만, 같은 군에서도 활성화·제거·제형과 적응증의 차이가 있다. ACEi 가운데 전구약물과 활성 약물이 있고 신장·비신장 제거의 기여도 다르므로 약물군의 대표 특성을 개별 약물의 약동학 전체로 대체하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.1338be351a21",
+      "type": "paragraph",
+      "markdown": "ACE는 bradykinin 분해에도 관여한다. 따라서 ACEi의 작용은 angiotensin II 생성 감소라는 한 항만으로 완결되지 않으며 기침과 혈관부종을 이해할 때 이 경로가 중요하다. ARB는 ACE를 같은 방식으로 억제하지 않아 기침의 양상이 다를 수 있다. 그렇다고 ARB에서 혈관부종 위험이 절대0이라고 표현할 수는 없다. 과거 약물 반응과 환자의 위험을 고려해 약물별 안전성 정보를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.28005282e0cc",
+      "type": "heading",
+      "level": 2,
+      "text": "사구체 입구와 출구의 압력 관계"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.20a34cd35a46",
+      "type": "paragraph",
+      "markdown": "사구체의 여과는 신장 전체 혈류량만으로 결정되지 않는다. 수입세동맥과 수출세동맥의 상대 저항, 모세혈관 압력과 여과계수, 혈장 단백의 삼투압 등이 함께 영향을 준다. Angiotensin II는 특정 생리 조건에서 수출세동맥 긴장을 통해 여과 압력을 지지한다. RAAS 억제로 이 긴장이 줄면 사구체 내 압력이 낮아지고 초기 여과의 변화가 나타날 수 있다. 이는 혈압 저하와 별도로 이해해야 하는 국소 혈역학이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.c5e83a383300",
+      "type": "paragraph",
+      "markdown": "장기적으로 사구체 내 과도한 압력과 단백뇨를 줄이는 효과는 특정 만성콩팥병 환자에서 보호적 이득에 연결된다. 초기 크레아티닌 변화와 장기 신장 기능의 경과는 다른 시간축의 결과다. 그러나 초기 변화라면 어떤 크기의 신기능 저하도 안전하다는 뜻은 아니다. 저혈압·체액 감소, 병용 약물, 신동맥 질환과 급성 신손상 가능성을 함께 평가해야 한다. 검사 변화의 원인과 임상 상태를 분리하여 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.2d672df3b392",
+      "type": "heading",
+      "level": 2,
+      "text": "저항 모형의 조건과 한계"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.34fb6f2130f3",
+      "type": "paragraph",
+      "markdown": "교육용으로 정맥압을0, 동맥압을100, 수입·수출 저항을 각각 Ra=1, Re=1로 두면 Q=100/(Ra+Re)=50이다. 두 저항 사이의 압력은 P=QRe=50이다. Re만0.5로 낮추면 Q는약66.7로 증가하면서 P는약33.3으로 낮아진다. 전체 유량이 늘어도 중간 압력이 낮아질 수 있다는 직렬 회로의 성질이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.62a9794baf8c",
+      "type": "paragraph",
+      "markdown": "이 모형의 Q를 실제 신장혈류량으로, P를 곧바로 실제 사구체 여과율로 부르면 안 된다. 여과·혈장 교질삼투압·혈관 자기조절·여과계수의 변화를 생략했기 때문이다. 실제 약물 농도와 저항의 함수도 지정하지 않았다. 그래프는 수출 쪽 저항 변화의 방향을 이해하는 데 사용하며, 환자의 GFR이나 약물 용량을 산출하는 도구가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.57c4133b1af8",
+      "type": "heading",
+      "level": 2,
+      "text": "칼륨과 임상 감시"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.3e0f72dc5c73",
+      "type": "paragraph",
+      "markdown": "알도스테론 관련 신호가 줄면 원위 네프론의 칼륨 배설 능력이 영향을 받을 수 있다. 기저 신기능 저하, 칼륨 섭취·보충, 다른 칼륨 보존성 약물과 체액 상태는 고칼륨혈증 위험을 바꾼다. 혈압이 원하는 방향으로 변했다는 관찰만으로 전해질과 신기능의 안전성까지 입증되지는 않는다. 혈압·크레아티닌·칼륨은 서로 다른 결과변수로 추적해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.09abb6ec69c3",
+      "type": "paragraph",
+      "markdown": "만성콩팥병에서 ACEi 또는 ARB를 시작하거나 증량한 뒤에는 혈압·크레아티닌·칼륨을 통상2–4주 안에 확인한다(국제 지침 적용연도2024). 확인 시점은 현재 GFR과 칼륨 등에 따라 달라진다. 이 환자군에서 ACEi·ARB·직접 레닌 억제제를 서로 조합하는 이중 차단은 피한다. 감시 간격을 모든 약물과 급성 상태에 동일 적용하지 않으며, 약물별 허가정보와 환자 위험에 따른 더 이른 평가가 필요할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.0e1c5b18812c",
+      "type": "heading",
+      "level": 2,
+      "text": "임신과 치료 선택의 경계"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.e6310ddd5b67",
+      "type": "paragraph",
+      "markdown": "ACEi와 ARB는 임신 중 사용을 피해야 하는 약물이다. 태아의 신장 발달과 기능에 대한 위해를 비롯한 안전성 때문에 임신 가능성·계획과 실제 임신 상태를 약물 검토에 포함한다. 질환의 이득과 부작용은 동일한 표적에서 함께 나올 수 있으므로, 위험이 발견되었을 때의 대체 약물과 추적은 적응증·환자 상태에 맞추어 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.2ef4d81e5dee",
+      "type": "paragraph",
+      "markdown": "RAAS 계통에 속한다는 이유만으로 직접 레닌 억제제, ACEi, ARB와 mineralocorticoid receptor antagonist를 같은 용법으로 교환할 수 없다. 표적·임상 근거·허가 적응증과 위해의 조합이 다르다. 대표 수용체의 화살표를 외우는 것에서 나아가, 생리적 보상과 약물의 표적, 초기 검사 변화와 장기 임상 결과를 연결해서 이해해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.diagram.renal-series-pressure-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.renal-series-pressure-toy",
+      "path": "diagrams/diagram.renal-series-pressure-toy.svg",
+      "alt": "직렬 저항 중간 압력의 독립 모형의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.diagram.raas-target-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.raas-target-pairs",
+      "path": "diagrams/diagram.raas-target-pairs.svg",
+      "alt": "RAAS 약물의 표적과 결과의 단계별 비교"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.table.0813.0",
+      "type": "table",
+      "data": {
+        "title": "표적 비교",
+        "columns": [
+          "군",
+          "개입",
+          "추가 고려"
+        ],
+        "rows": [
+          [
+            "ACEi",
+            "효소 단계",
+            "bradykinin 처리·개별PK"
+          ],
+          [
+            "ARB",
+            "AT1 수용체",
+            "되먹임 농도와 효과 구별"
+          ],
+          [
+            "DRI",
+            "레닌 단계",
+            "ACEi/ARB와 병용을 단순 강화로 보지 않음"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pharmacology.cardiovascular.renin-angiotensin-drugs.table.0813.1",
+      "type": "table",
+      "data": {
+        "title": "감시의 다른 축",
+        "columns": [
+          "항목",
+          "기전 질문"
+        ],
+        "rows": [
+          [
+            "혈압",
+            "관류·전신 저항·증상"
+          ],
+          [
+            "크레아티닌",
+            "여과 변화·체액·시간"
+          ],
+          [
+            "칼륨",
+            "원위 배설·섭취·병용"
+          ],
+          [
+            "장기 결과",
+            "특정 질환·약물의 임상 근거"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/cardiovascular/sections/pharmacology.cardiovascular.renin-angiotensin-drugs.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "relatedLessons": [
+    "pharmacology.cardiovascular.mineralocorticoid-antagonists",
+    "pharmacology.cardiovascular.renal-drug-interactions"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.cardiovascular.renin-angiotensin-drugs.001",
+    "question.pharmacology.cardiovascular.renin-angiotensin-drugs.002"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.airways.asthma-diagnostic-variability",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.b.3e8dca71b4cb",
+      "sourceSha256": "3e8dca71b4cbd1997f6ab6925527a4a5ba78c7235e0e7ca75d79199c65feaa02",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.0d101bc95b4d59ed9b93",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 3,
+            "end": 9,
+            "exact": "asthma",
+            "prefix": "천식(",
+            "suffix": ")은 기도의 만성 염증과 함께 시간·강도가 "
+          },
+          "conceptId": "reader.term.0724de0dbf1ee4f5",
+          "targetDocumentId": "pulmonology.airways.asthma-mechanisms"
+        },
+        {
+          "id": "ann.b366508cb2b2cc5ef8ee",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 16,
+            "end": 21,
+            "exact": "만성 염증",
+            "prefix": "천식(asthma)은 기도의 ",
+            "suffix": "과 함께 시간·강도가 변하는 호흡 증상과 호"
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.b.bab66f255233",
+      "sourceSha256": "bab66f255233421f2d1034e25baecd67297d217712817899fb89ef9b8b3a4a77",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.b.7e7485f12ac5",
+      "sourceSha256": "7e7485f12ac5400e3dc30d49fe8fd35a6bc7eee0fcd720249a2d1add64099f11",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.b.6d8809863d06",
+      "sourceSha256": "6d8809863d0669c2901d5c3dfb89276178c12e864c39fe1208d75f46bc8d3fd0",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.b.429fa3b5399c",
+      "sourceSha256": "429fa3b5399c6b1b2bfd14dd7ccd52a994ac3178bd53379e60e8344aaff3bf73",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.54094702907aa9275589",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 122,
+            "end": 174,
+            "exact": "양성 반응은 과민성을 지지하지만 모든 양성 결과가 같은 임상 천식과 위험을 의미하지는 않는다.",
+            "prefix": "금기·약물 중단 조건 및 안전을 확인한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.b.1b6c96ba1427",
+      "sourceSha256": "1b6c96ba1427cc101b520fad3a531289d88ecf5a0bc2b66a2ebd338bf582cb03",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.b.c7556728ce13",
+      "sourceSha256": "c7556728ce1339da597040f6e732ab1780c6df925d16c478e72ea217d297e48b",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.b.48ccf268a0fd",
+      "sourceSha256": "48ccf268a0fd3ad4d491e73b11704f98912bb8d21a06f7be3aaee0837fa14500",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.e5f55b8a5de7da419b59",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 26,
+            "end": 30,
+            "exact": "COPD",
+            "prefix": "에는 유발성 후두폐쇄와 상기도·심장 질환, ",
+            "suffix": "와 기관지확장증, 감염과 다른 기침 원인이 "
+          },
+          "conceptId": "reader.term.b7474cec060b74ec",
+          "targetDocumentId": "pulmonology.obstruction.copd"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.p.extra0845.0",
+      "sourceSha256": "9c93ef826dce8458ef1cdccef7a00885cc9d4c28275c654ab6b4e6385ecbd57e",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-diagnostic-variability.p.extra0845.1",
+      "sourceSha256": "52777926d05aad07812197d99bf6b512b128b285f52707ff36505374d2e5cfb4",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    }
+  ]
+}

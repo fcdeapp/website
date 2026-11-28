@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "thoracic-surgery.pleura.pneumothorax",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.594266f6454d",
+      "sourceSha256": "594266f6454d0feb0ec7402f2fa7c000d82ef2c3e4b90c25104cda131cd5d5e1",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.cf971cdcc1d94f14d475",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 28,
+            "end": 30,
+            "exact": "흉막",
+            "prefix": "벽은 서로 다른 방향의 탄성 반동을 가지며 ",
+            "suffix": " 공간의 압력 관계가 폐를 펼치는 데 기여한"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        },
+        {
+          "id": "ann.3205e0f8809368a32cbd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 174,
+            "end": 213,
+            "exact": "공기가 어디에 있으며 폐와 순환에 어떤 영향을 주는지를 구별해야 한다.",
+            "prefix": " 폐포 안의 정상 공기와는 위치가 다르다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.aa78e4927d6d",
+      "sourceSha256": "aa78e4927d6ddc23b0f4a5e48c350bdd626eb8ded2101ada8469ba7fef612ccc",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.0f4ef7d8a3e7",
+      "sourceSha256": "0f4ef7d8a3e746bffaa9f8b4f43edf1ac6a64e77cd16af9bd2864c929e50c3f4",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.507a5099f09d",
+      "sourceSha256": "507a5099f09db37688530279fb23ea390f9c0e5f86dd818e0837f7be41efaceb",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.e567333f015e",
+      "sourceSha256": "e567333f015ebeff0be45966edf865e3a78d7eaf58087dc1c6c2a9c0c0d29ace",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.7674b2b03645",
+      "sourceSha256": "7674b2b036456b0787ff96cffc309e7a2ab1da746d1fc9dd4ac265845fd52669",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.98ac20053116",
+      "sourceSha256": "98ac20053116cbfe54410c851a120e8e595961a0dd6eaca48ce644f9e4739404",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.df5150d3acc4",
+      "sourceSha256": "df5150d3acc4039d3ad999f6b61095a7892579cd4680dbf96979452510277f56",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.caebc9973ddb",
+      "sourceSha256": "caebc9973ddbd664131ae283f63a9e5c5e6d52ba48ee849b69d24ab44498b754",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "thoracic-surgery.pleura.pneumothorax.b.0492f6ba8913",
+      "sourceSha256": "0492f6ba89131bbdc14358f77b44962658248afe370dcc1399c4ef31b5476e5d",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    }
+  ]
+}

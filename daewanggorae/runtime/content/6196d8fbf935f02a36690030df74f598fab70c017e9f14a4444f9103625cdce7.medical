@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.molecular-test-questions",
+  "lessonId": "pathology.genetic.molecular-diagnostics",
+  "title": "분자검사의 다른 질문",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "형태·단백질·핵산 검사",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "검출 대상·범위 확인",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "종양 표본과 혼합 세포",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "순도·복제수·클론의 분모",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "종양 변이 검출",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "생식세포계열·치료 의미 별도",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.molecular-test-questions.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "같은 결과 아님",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.molecular-test-questions.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "VAF와 세포수 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.molecular-test-questions.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "추가 근거 필요",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "실제 특정 변이 분류·허가 항암 적응증·환자 보고서를 대신하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

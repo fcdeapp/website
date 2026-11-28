@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.torsades-long-qt",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "긴 QT와 Torsades de Pointes",
+    "en": "Long QT and Torsades de Pointes"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.lo.01",
+      "text": "재분극 예비력과 조기후탈분극을 연결한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.lo.02",
+      "text": "QT 보정식의 단위와 한계를 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.lo.03",
+      "text": "긴 QT 관련 다형성 빈맥과 다른 기전을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.b.88c6ba61380e",
+      "type": "heading",
+      "level": 2,
+      "text": "재분극이 지연되는 환경"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.b.9fa66fcaf84b",
+      "type": "paragraph",
+      "markdown": "Torsades de pointes(TdP)는 긴 QT와 연관된 특징적 다형성 심실빈맥이다. 표면에서 QRS의 방향과 진폭이 기저선을 중심으로 변하는 양상이 보일 수 있지만 모든 다형성 심실빈맥을 TdP라고 부르지 않는다. 정상 QT를 배경으로 급성 허혈 등에서 발생하는 다형성 빈맥은 다른 기전과 접근을 가질 수 있다. 이름을 붙이기 전에 발작 전 심전도와 재분극, 약물 및 전해질 상태를 확인한다. 빈맥 자체의 변형된 QRS에서 평소 QT를 무리하게 측정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.b.e6edadda137a",
+      "type": "paragraph",
+      "markdown": "재분극은 여러 바깥쪽·안쪽 전류의 균형으로 유지된다. 한 전류가 줄어들어도 다른 전류가 보완할 여유를 재분극 예비력(repolarization reserve)이라는 개념으로 이해할 수 있다. 유전적 이온통로 이상, 약물, 저칼륨혈증과 서맥 등이 겹치면 여유가 줄어들 수 있다. 활동전위가 길어지는 환경은 조기후탈분극(early afterdepolarization, EAD)의 발생과 전파를 도울 수 있다. 단일 세포의 후탈분극이 조직 전체의 위험한 빈맥으로 이어지려면 주변 조직과의 전기적 관계도 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.b.824ebb2defe7",
+      "type": "heading",
+      "level": 2,
+      "text": "QT 측정과 보정"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.b.4413ad9fba29",
+      "type": "paragraph",
+      "markdown": "QT는 QRS 시작에서 T파 끝까지의 시간으로 심실 탈분극과 재분극을 함께 포함한다. T파가 낮거나 두 갈래이거나 U파와 겹치면 끝점을 정하기 어렵다. 유도와 측정법, 박동 선택 및 심박수 변화에 따라 값이 달라지므로 자동 측정 결과를 원 파형과 비교한다. QRS가 넓으면 QT 증가의 일부가 탈분극 지연에서 올 수 있어 재분극만 연장되었다고 단정하기 어렵다. 조율과 각차단에서는 평가 방법의 적용 범위를 따로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.b.81922b3833bd",
+      "type": "paragraph",
+      "markdown": "대표적 보정식은 Bazett의 QTc=QT/√RR과 Fridericia의 QTc=QT/RR^(1/3)다. 통상 QT와 RR을 초 단위로 넣는 관례를 사용하고 결과를 초 또는 밀리초로 명확히 보고한다. 같은 QT라도 RR이 달라지면 두 식의 보정 결과가 달라진다. 특히 빠르거나 느린 심박수에서 단순 보정의 오차가 커질 수 있다. QTc는 직접 관찰한 새로운 파형이 아니라 관찰값을 변환한 지표이며, 어떤 식을 썼는지 생략하면 서로 다른 검사 결과를 잘못 비교할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.b.ae7ebbee021d",
+      "type": "heading",
+      "level": 2,
+      "text": "복합 위험과 대응"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.b.cda1f9b5f8bf",
+      "type": "paragraph",
+      "markdown": "약물이 재분극을 늦추는 효과와 혈중 농도를 높이는 상호작용은 함께 평가한다. 신장 기능 저하로 축적되는 약물, 대사를 억제하는 병용 약물과 전해질 손실이 겹치면 같은 처방량에서도 위험이 달라질 수 있다. 느린 맥박과 긴 휴지기 뒤의 발작은 후천성 긴 QT 관련 TdP의 중요한 맥락이다. 반면 모든 긴 QT가 즉시 TdP를 일으키거나 모든 약물의 QT 연장이 같은 위험을 갖는 것은 아니다. 위험 인자의 결합과 실제 리듬을 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.b.50021d8aa36c",
+      "type": "paragraph",
+      "markdown": "발작이 지속되거나 순환을 위협하면 응급 대응과 함께 원인 약물 및 전해질, 저산소증 등 교정 가능한 요인을 확인한다. 긴 QT와 연관된 발작인지에 따라 재발을 막는 전략이 달라지므로 단순히 심실빈맥이라는 이름만으로 모든 항부정맥제를 같은 방식으로 선택하지 않는다. 선천성 가능성이 있으면 발작 상황과 가족력, 실신 및 반복 심전도를 종합한다. 교육용 QT 보정 곡선은 수학적 차이를 설명하는 자료이며 개인의 유전 진단이나 약물 중단 기준을 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "QT",
+            "심실 탈분극+재분극 시간"
+          ],
+          [
+            "Bazett",
+            "QT/√RR; 단위 관례 확인"
+          ],
+          [
+            "Fridericia",
+            "QT/RR^(1/3); 보정 오차 여전"
+          ],
+          [
+            "TdP",
+            "긴 QT 관련 다형성 빈맥"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.arrhythmias.torsades-long-qt.diagram.qtc-formula-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.qtc-formula-toy",
+      "path": "diagrams/diagram.qtc-formula-toy.svg",
+      "alt": "같은 QT에서의 보정식 비교의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.torsades-long-qt.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.torsades-long-qt.001",
+    "question.cardiology.arrhythmias.torsades-long-qt.002"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.monomorphic-ventricular-tachycardia",
+    "cardiology.arrhythmias.ventricular-fibrillation-arrest"
+  ]
+}

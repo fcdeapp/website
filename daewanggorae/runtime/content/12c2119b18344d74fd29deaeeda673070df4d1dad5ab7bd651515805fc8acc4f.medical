@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.atrioventricular-block",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "방실차단의 분류와 발생 위치",
+    "en": "Atrioventricular Block and Level of Disease"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.lo.01",
+      "text": "PR 변화와 전도 탈락으로 방실차단을 기술한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.lo.02",
+      "text": "2대1 차단의 분류 한계를 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.lo.03",
+      "text": "방실해리와 완전 방실차단을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.b.71e3271ca0cd",
+      "type": "heading",
+      "level": 2,
+      "text": "심방에서 심실까지의 지연"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.b.ac2b5e4d3be6",
+      "type": "paragraph",
+      "markdown": "방실차단(atrioventricular block)은 심방 자극이 심실로 전달되는 과정의 지연 또는 실패다. PR 간격은 심방 내 전도와 방실결절, 히스–푸르키네계의 시간을 합친 체표 지표이므로 긴 PR이 언제나 방실결절 한 곳의 지연을 뜻하지 않는다. 1도 방실차단에서는 모든 심방 자극이 전달되지만 PR이 길다. 이름에 차단이 들어가도 QRS가 탈락하는 형태와는 다르다. 심방의 속도와 리듬, 약물 및 자율신경 상태를 함께 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.thorax.heart.8aa996b1"
+      ]
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.b.f0a2e77cb426",
+      "type": "paragraph",
+      "markdown": "2도 차단은 일부 심방 자극 뒤 QRS가 나타나지 않는 양상이다. 먼저 P파를 전체 기록에서 추적하여 T파 안에 숨은 심방 활동과 비전도성 심방 조기수축을 구별해야 한다. 조기 심방 자극이 불응기의 방실결절에 도착하여 전달되지 않는 현상은 정상 동성 자극의 병적 전달 실패와 다른 설명을 가질 수 있다. 탈락한 QRS만 세고 P파의 시점과 모양을 보지 않으면 차단을 잘못 분류할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.b.e95c5dd039f3",
+      "type": "heading",
+      "level": 2,
+      "text": "Mobitz 분류의 조건"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.b.667773268b3b",
+      "type": "paragraph",
+      "markdown": "Mobitz I형의 전형적 Wenckebach 양상은 PR이 점차 길어진 뒤 심실 전도가 한 번 탈락하고 다시 주기가 시작되는 형태다. Mobitz II형은 적절한 조건에서 전달된 박동의 PR이 일정한 가운데 갑자기 전달이 실패하는 양상을 보인다. 실제 기록에서는 동성 주기의 변동, 은폐된 조기 자극과 비전형적 주기 때문에 분류가 복잡해진다. 각 유형은 파형의 정의와 함께 해석하며 단지 RR 간격이 길다는 이유로 이름을 붙이지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.b.12b391d3772e",
+      "type": "paragraph",
+      "markdown": "2:1 방실전도에서는 전달되는 P파 사이마다 하나가 전달되지 않는다. 연속해서 전달된 여러 PR의 변화를 비교할 수 없으므로 이 짧은 양상만으로 Mobitz I 또는 II를 확정할 수 없다. QRS 폭과 기저 전도 질환, 다른 시간의 기록 및 전문 검사 반응이 발생 위치 추정에 도움을 준다. 넓은 QRS는 히스계 아래 질환의 단서가 될 수 있지만 체표 폭 하나가 모든 차단 위치를 직접 측정하는 것은 아니다. 분류가 불확실하다는 사실도 정확한 판독의 일부다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.b.d774c7645510",
+      "type": "heading",
+      "level": 2,
+      "text": "해리와 대체 리듬"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.b.500d05ea2e83",
+      "type": "paragraph",
+      "markdown": "완전 방실차단에서는 심방 자극이 심실로 전달되지 않고 하위 대체 박동원이 심실을 활성화할 수 있다. P파와 QRS 사이의 지속적인 관계가 없어져 방실해리(AV dissociation)가 나타난다. 그러나 방실해리는 완전 차단의 동의어가 아니다. 심실 또는 접합부 리듬이 동성 리듬보다 빨라 경쟁하면서도 같은 현상이 보일 수 있다. 심방과 심실의 속도, 포획 가능성과 전도 관계를 함께 검토해야 기전을 구별할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.b.d0ba80e7ed68",
+      "type": "paragraph",
+      "markdown": "증상이 있는 서맥에서는 관류와 호흡 상태를 평가하면서 약물, 허혈과 대사 이상 등 교정 가능한 원인을 찾는다. 미국 2018년 지침은 가역적·생리적 원인이 아닌 후천성 Mobitz II형, 고도 또는 3도 방실차단의 위험을 별도로 다룬다. 이때 동결절 기능부전의 증상 중심 원칙을 그대로 적용하여 무증상이면 항상 관찰만 한다고 일반화해서는 안 된다. 정상 심장방의 위치와 실제 전도 조직의 병변 위치는 다르며, 정상 장기 모델만으로 차단 수준을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "1도",
+            "모든 P 전달·긴 PR"
+          ],
+          [
+            "Mobitz I",
+            "전형적으로 PR 연장 뒤 탈락"
+          ],
+          [
+            "Mobitz II",
+            "조건에 맞는 고정 PR·갑작스런 탈락"
+          ],
+          [
+            "2:1",
+            "짧은 양상만으로 I/II 확정 불가"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.anatomy3d.0828",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.thorax.heart.8aa996b1"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrioventricular-block.visualization-limits.0828",
+      "type": "clinicalPearl",
+      "markdown": "정상 심방과 심실의 공간 관계를 확인한다. 방실결절·히스계의 병변과 실제 전도 시간은 이 장면이 나타내지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.atrioventricular-block.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.atrioventricular-block.001"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.sinus-node-dysfunction",
+    "cardiology.arrhythmias.bundle-branch-wide-qrs"
+  ]
+}

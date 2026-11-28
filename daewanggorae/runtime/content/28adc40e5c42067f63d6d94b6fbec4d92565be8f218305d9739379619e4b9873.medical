@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.endocrine.insulin-glucagon",
+  "subjectId": "physiology",
+  "chapterId": "endocrine",
+  "title": {
+    "ko": "인슐린·글루카곤의 분비와 표적 반응",
+    "en": "Insulin and Glucagon Secretion and Target Responses"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.endocrine.insulin-glucagon.lo.01",
+      "text": "영양 신호를 전기적 분비 반응에 연결한다"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.lo.02",
+      "text": "호르몬 분비와 표적 조직의 저항성을 구별한다"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.lo.03",
+      "text": "간·근육·지방조직의 반응 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.ee4f049dd43f",
+      "type": "heading",
+      "level": 2,
+      "text": "혈당 조절은 여러 조직의 물질수지다"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.f2bdfe6b4825",
+      "type": "paragraph",
+      "markdown": "혈당은 장에서 흡수되는 포도당, 간과 신장이 혈액에 내보내는 포도당, 조직으로 들어가 사용되거나 저장되는 포도당의 균형으로 결정된다. 인슐린(insulin)과 글루카곤(glucagon)은 이 흐름을 조절하는 중요한 호르몬이지만, 혈당을 직접 붙잡아 없애거나 새로 만들어 내는 물질은 아니다. 혈중 농도는 각 장기의 유입·유출을 합친 결과다. 따라서 같은 혈당이라도 분비 능력, 인슐린 감수성, 식사와 운동의 영향이 서로 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.b37679362a77",
+      "type": "paragraph",
+      "markdown": "췌도(pancreatic islet)의 베타세포는 인슐린, 알파세포는 글루카곤, 델타세포는 소마토스타틴을 분비한다. 이 세포들은 혈액에서 오는 영양 신호뿐 아니라 신경과 주변 세포의 신호를 함께 받는다. 종과 췌도 부위에 따라 세포 배열이 다를 수 있어 동물의 단순 중심–주변 도식을 사람의 모든 췌도에 그대로 적용하지 않는다. 분비세포 사이의 국소 조절은 혈중 호르몬 한 가지로 환원되지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.650f2ec07f31",
+      "type": "heading",
+      "level": 2,
+      "text": "베타세포의 대사–전기–분비 연결"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.02d48ad4dabe",
+      "type": "paragraph",
+      "markdown": "포도당이 베타세포 안으로 들어와 글루코키나아제(glucokinase)에 의해 대사 경로로 유입되면 ATP/ADP 상태가 달라진다. 사람 베타세포에서는 GLUT1·GLUT3의 기여가 중요하며 설치류에서 강조되는 GLUT2를 사람의 유일한 운반체라고 설명하지 않는다. 포도당 운반과 세포 내 인산화·산화 대사는 별개의 단계다. 포도당이 세포 안에 들어왔다는 사실만으로 분비가 즉시 같은 비율로 증가한다고 볼 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.0a8399200a30",
+      "type": "paragraph",
+      "markdown": "ATP민감성 칼륨통로(ATP-sensitive potassium channel, KATP)의 닫힘은 바깥쪽 칼륨 전류를 줄여 막 탈분극에 기여한다. 이어서 전압개폐성 칼슘통로가 열리고 세포 내 칼슘 증가가 분비과립의 막융합과 인슐린 방출을 유발한다. ATP가 통로를 닫는데 분비가 증가한다는 연결을 이해하려면, 원래 열린 칼륨통로가 막전위를 더 음성인 방향으로 유지한다는 사실을 함께 보아야 한다. 단순히 통로가 열리면 기능이 켜지고 닫히면 꺼진다는 규칙으로 외우지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.bfcdde340127",
+      "type": "paragraph",
+      "markdown": "이 전기적 유발 경로 외에도 대사 신호가 칼슘에 대한 분비 반응을 증폭한다. GLP-1과 GIP 같은 인크레틴(incretins)은 cAMP 관련 신호를 통해 포도당 의존성 분비를 증폭하는 데 관여한다. 유발(triggering)과 증폭(amplification)은 연결되지만 동일한 단계는 아니다. 과립의 준비 상태와 장기 노출에 따른 세포 변화도 중요하므로 인슐린 분비를 KATP 하나의 개폐만으로 완전히 예측할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.531fefcbe58a",
+      "type": "heading",
+      "level": 2,
+      "text": "합성·가공·분비를 나누어 읽기"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.24c16b9c7099",
+      "type": "paragraph",
+      "markdown": "인슐린은 전구체의 합성·접힘·절단을 거쳐 만들어진다. 전구인슐린(proinsulin)의 가공으로 인슐린과 C펩타이드(C-peptide)가 생성되며 분비과립에 저장된다. C펩타이드는 내인성 분비를 평가하는 데 도움이 되지만, 혈중 인슐린과 같은 농도로 항상 유지되는 것은 아니다. 간의 초회 제거와 신장 기능 등 대사·제거 경로가 다르기 때문이다. 분비 때의 몰 관계와 말초 혈중 측정값의 관계를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.326757ff3e2f",
+      "type": "paragraph",
+      "markdown": "포도당 자극에 대한 초기·지속 분비 양상은 과립 동원과 여러 조절 과정의 결과다. 이 양상을 관찰하려면 자극 방법과 혈당 유지 조건, 채혈 간격이 명확해야 한다. 경구 포도당과 정맥 포도당은 장 호르몬과 흡수 속도가 다르므로 같은 입력이라고 취급하지 않는다. 임의로 그린 시간 곡선을 실제 정상인의 검사 결과나 특정 질환의 확진 파형으로 표시해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.658f02155892",
+      "type": "heading",
+      "level": 2,
+      "text": "인슐린 수용체 이후의 조직별 반응"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.83e76eb1d54f",
+      "type": "paragraph",
+      "markdown": "인슐린 수용체는 고유 티로신인산화효소 활성을 갖는다. IRS·PI3K–AKT 등은 대사 반응에, 다른 연결은 성장·전사 반응에 기여한다. 골격근과 지방조직에서는 GLUT4의 세포 표면 이동이 포도당 유입 증가와 관련된다. 그러나 모든 조직의 포도당 운반이 인슐린 의존성 GLUT4 하나로 결정되는 것은 아니다. 뇌·적혈구·간의 운반과 대사를 구별하여 학습해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.09e9b2927b58",
+      "type": "paragraph",
+      "markdown": "간에서는 인슐린이 포도당 생산과 저장·합성의 조절에 영향을 준다. 간세포의 포도당 유입을 근육의 GLUT4 이동과 동일한 기전으로 설명하지 않는다. 근육은 글리코젠을 주로 자신의 수축과 대사에 사용하고, 간은 유리 포도당을 혈액으로 공급할 수 있다는 기능 차이가 있다. 인슐린 저항성(insulin resistance)은 정해진 인슐린 자극에 대한 반응이 줄어드는 현상이며, 인슐린 분비가 전혀 없는 상태와 같은 말이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.232e68179d88",
+      "type": "heading",
+      "level": 2,
+      "text": "글루카곤은 인슐린의 거울상이 아니다"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.a67f3211aa98",
+      "type": "paragraph",
+      "markdown": "글루카곤은 간의 수용체와 cAMP 관련 신호를 통해 글리코젠 분해·당신생과 연료 대사 조절에 관여한다. 골격근의 글리코젠 분해를 간과 같은 직접 글루카곤 반응으로 일반화하지 않는다. 저혈당, 아미노산, 자율신경과 췌도 내부 신호는 분비에 영향을 준다. 단백질 식사 뒤에 인슐린과 글루카곤이 함께 증가할 수 있다는 사실은 두 호르몬을 언제나 반대 방향으로만 움직이는 쌍으로 외우면 설명하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.b.4f63a0e038be",
+      "type": "paragraph",
+      "markdown": "공복·식후를 비교할 때 인슐린과 글루카곤의 상대적 신호는 유용하지만, 단일 비율이 모든 장기의 대사 상태를 결정하는 공식은 아니다. 농도의 단위와 측정법이 다르면 비율의 숫자도 달라지고, 수용체 감수성과 신경·기질 공급도 작용한다. 사람 지방조직의 지방분해를 무조건 글루카곤의 직접 효과로 설명하기보다 인슐린 억제의 약화와 카테콜아민 등 조직별 조절을 함께 고려한다. 이러한 원리가 약물의 작용 부위와 질환의 분비·반응 결함을 구별하는 기초가 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.diagram.beta-cell-trigger-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.beta-cell-trigger-pairs",
+      "path": "diagrams/diagram.beta-cell-trigger-pairs.svg",
+      "alt": "베타세포의 분비 유발 연결의 단계별 비교"
+    },
+    {
+      "id": "physiology.endocrine.insulin-glucagon.table.compare",
+      "type": "table",
+      "data": {
+        "title": "분비와 반응의 단계",
+        "columns": [
+          "관찰",
+          "대표 과정",
+          "구별"
+        ],
+        "rows": [
+          [
+            "베타세포 입력",
+            "운반·글루코키나아제",
+            "사람/설치류"
+          ],
+          [
+            "분비 유발",
+            "KATP·탈분극·Ca²⁺",
+            "증폭과구별"
+          ],
+          [
+            "표적 반응",
+            "수용체·세포 내 신호",
+            "분비량과감수성"
+          ],
+          [
+            "혈중 측정",
+            "분포·제거",
+            "C펩타이드와인슐린"
+          ]
+        ],
+        "notes": "단일 혈당·농도만으로 분비와 저항성을 동시에 확정하지 않는다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/endocrine/sections/physiology.endocrine.insulin-glucagon.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "KATP 닫힘은 칼륨 바깥 전류를 줄여 베타세포 탈분극에 기여한다.",
+    "분비 때의 몰 관계와 말초 혈중 농도의 관계는 다르다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.endocrine.insulin-glucagon.001",
+    "question.physiology.endocrine.insulin-glucagon.002"
+  ],
+  "relatedLessons": [
+    "physiology.endocrine.hormone-kinetics"
+  ]
+}

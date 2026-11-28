@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.nutrition-delivery-0858",
+  "lessonId": "clinical-nutrition.assessment.malnutrition-inflammation",
+  "title": "계획량 대비 실제 섭취",
+  "series": [
+    {
+      "label": "계획 1800kcal",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0.0
+        },
+        {
+          "x": 450,
+          "y": 25.0
+        },
+        {
+          "x": 900,
+          "y": 50.0
+        },
+        {
+          "x": 1200,
+          "y": 66.666666666667
+        },
+        {
+          "x": 1350,
+          "y": 75.0
+        },
+        {
+          "x": 1800,
+          "y": 100.0
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "plannedKcal": 1800,
+    "formula": "x/1800*100"
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 1800,
+      "scale": "linear",
+      "ticks": [
+        0,
+        450,
+        900,
+        1350,
+        1800
+      ],
+      "label": "실제 섭취(kcal/일)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        25.0,
+        50.0,
+        75.0,
+        100.0
+      ],
+      "label": "달성률(%)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "계획 1800kcal",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립적인 수학 모형이다. 실제 환자 관측값·진단 경계·처방 설정이 아니다."
+  ],
+  "sourceImageUsed": false
+}

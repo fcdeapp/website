@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.hearing-transmission",
+  "lessonId": "anatomy.head-neck.ear-temporal-bone",
+  "title": "고막에서 청각신경으로 이어지는 전달",
+  "nodes": [
+    {
+      "id": "tympanum",
+      "label": "고막의 진동",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "ossicles",
+      "label": "망치뼈·모루뼈·등자뼈",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "oval",
+      "label": "안뜰창과 바깥림프 압력 변화",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "basilar",
+      "label": "바닥막·감각털의 상대 운동",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "hair",
+      "label": "털세포 수용기전위와 전달물질",
+      "x": 360,
+      "y": 680,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "nerve",
+      "label": "달팽이신경의 활동",
+      "x": 360,
+      "y": 830,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.hearing-transmission.edge.1",
+      "source": "tympanum",
+      "target": "ossicles",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.hearing-transmission.edge.2",
+      "source": "ossicles",
+      "target": "oval",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.hearing-transmission.edge.3",
+      "source": "oval",
+      "target": "basilar",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.hearing-transmission.edge.4",
+      "source": "basilar",
+      "target": "hair",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.hearing-transmission.edge.5",
+      "source": "hair",
+      "target": "nerve",
+      "relation": "directed",
+      "label": ""
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 970
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 970
+      },
+      "fontSize": 22,
+      "nodes": {
+        "tympanum": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "ossicles": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "oval": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "basilar": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        },
+        "hair": {
+          "x": 240,
+          "y": 680,
+          "width": 360,
+          "height": 88
+        },
+        "nerve": {
+          "x": 240,
+          "y": 830,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "주요 전달 단계의 도식이며 실제 음압·시간·주파수 응답을 계산하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

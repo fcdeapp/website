@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.physiology.neuro.autonomic-control.brainstem-context",
+  "sceneId": "scene.physiology.neuro.autonomic-control.brainstem-context",
+  "lessonId": "physiology.neuro.autonomic-control",
+  "triggerBlockId": "physiology.neuro.autonomic-control.b.c8ef18430a96",
+  "primaryStructures": [
+    "FMA62004",
+    "FMA67943",
+    "FMA61993"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA62004",
+    "FMA67943",
+    "FMA61993"
+  ],
+  "modelIds": [
+    "partof:FJ1769",
+    "partof:FJ1831",
+    "partof:FJ1775",
+    "partof:FJ1822",
+    "partof:FJ1738",
+    "partof:FJ1762",
+    "partof:FJ1770",
+    "partof:FJ1779",
+    "partof:FJ1810",
+    "partof:FJ1817",
+    "partof:FJ1826"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1769.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1831.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1775.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1822.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1738.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1762.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1770.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1779.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1810.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1817.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ1826.obj"
+  ],
+  "cameraPosition": [
+    -0.6519499999999994,
+    -262.1962955502214,
+    1505.4299999999998
+  ],
+  "cameraTarget": [
+    -0.6519499999999994,
+    -74.11285,
+    1505.4299999999998
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -21.7505,
+      -96.9866,
+      1464.5
+    ],
+    "max": [
+      20.4466,
+      -51.2391,
+      1546.36
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "자율신경 조절을 설명하는 뇌줄기의 거시 외형 위치",
+  "mappingConfidence": "attachment_metadata_paths_hashes_rechecked_context_curated_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "개별 자율신경핵·시상하부·척수 회로·신경전도는 이 외형 메시로 표현하지 않음",
+    "모델 파일·FMA·경계의 일치는 확인하되 새 문맥의 실제 앱 가시성·의학적 시각 검수는 미실시"
+  ],
+  "dynamicAnatomyIncluded": false
+}

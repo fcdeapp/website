@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "psychiatry.psychotherapy.cbt-formulation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "psychiatry.psychotherapy.cbt-formulation.b.4ca807c31c6a",
+      "sourceSha256": "4ca807c31c6a33ca91f5ef6ec5b9f81fd4a2dc7f836348128aa00002eba1cc6b",
+      "sourceLengthUtf16": 544,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.psychotherapy.cbt-formulation.b.8c234715d688",
+      "sourceSha256": "8c234715d688fe33974f95f82d7de2662bee800cfcb979f07f65941193d9d923",
+      "sourceLengthUtf16": 514,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.psychotherapy.cbt-formulation.b.1d6ec9e085d9",
+      "sourceSha256": "1d6ec9e085d9c37fca881fefa770d0f898b87941fa3a1511c8f489b623b90ced",
+      "sourceLengthUtf16": 529,
+      "annotations": [
+        {
+          "id": "ann.305d6f583f2968fd73b1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 490,
+            "end": 529,
+            "exact": "실제 위험을 피하는 행동은 적응적일 수 있으므로 병적 회피와 구별한다.",
+            "prefix": " 동반 질환과 현재 위험에 따라 조정한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.psychotherapy.cbt-formulation.b.c36e669d5526",
+      "sourceSha256": "c36e669d5526061d49b1a546d8ae3906154cd77d9f84a64886f904919fdc9d1b",
+      "sourceLengthUtf16": 506,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.psychotherapy.cbt-formulation.b.df16fb99316d",
+      "sourceSha256": "df16fb99316d3b4d9a7cc376a5522222ae79a3ce662e0b1c657e45c8af735745",
+      "sourceLengthUtf16": 485,
+      "annotations": [
+        {
+          "id": "ann.1a81f33679bf5f666bd8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 35,
+            "exact": "치료 목표는 구체적이고 환자에게 중요한 행동과 기능으로 정한다.",
+            "prefix": "",
+            "suffix": " 다른 사람의 평가를 전혀 걱정하지 않기보다"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

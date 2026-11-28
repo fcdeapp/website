@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.nucleotides.purine-pyrimidine",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.dd61a3105bc1",
+      "sourceSha256": "dd61a3105bc1c7206a196fc107f84997037385d52dc37256252c7ebe83e69722",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.9d4f8bcc7d527524b7dd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 68,
+            "end": 110,
+            "exact": "염기와 당으로 이루어진 뉴클레오사이드에 인산이 연결된 구조를 구별해야 한다.",
+            "prefix": ", 활성화된 대사 중간체의 구성에 쓰인다. ",
+            "suffix": " ATP와 GTP, UTP와 CTP는 염기만"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.338b630a7f18",
+      "sourceSha256": "338b630a7f1808a6f4cab986e11c16fe758c3306f75c70166e7ce69b67277afa",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.c1b2d2d8445c",
+      "sourceSha256": "c1b2d2d8445c974aafbf31a96c7a9a5266a86fc8231cd1dbc6ec6a9635f26438",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.2e6c8b456aa5fae9a0e6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 10,
+            "end": 17,
+            "exact": "오탄당인산경로",
+            "prefix": "리보스-5-인산은 ",
+            "suffix": "와 연결되며 PRPP는 활성화된 리보스 인산"
+          },
+          "conceptId": "reader.term.3fe931bd4395db73",
+          "targetDocumentId": "biochemistry.carbohydrate.pentose-phosphate"
+        },
+        {
+          "id": "ann.5e269a38a3fc9556d982",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 152,
+            "end": 192,
+            "exact": "퓨린 고리를 먼저 완성한 뒤 모든 당을 나중에 붙인다는 모형과 구별한다.",
+            "prefix": " 일탄소 단위 등이 원자 공급에 관여한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.f9d02240cf8a",
+      "sourceSha256": "f9d02240cf8a5c2624e700124506638c9083cf6451cd39295ebce46de9fcb2ac",
+      "sourceLengthUtf16": 215,
+      "annotations": [
+        {
+          "id": "ann.d2a346fe4876e0067c98",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 65,
+            "end": 120,
+            "exact": "각 가지가 같은 ATP 분자만을 같은 방식으로 사용하지는 않으며 가지 사이의 균형 유지가 중요하다.",
+            "prefix": "공급, 최종산물의 되먹임에 의해 조절된다. ",
+            "suffix": " 공급이 늘면 전구체가 무조건 계속 쌓이는 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.c96418e577de",
+      "sourceSha256": "c96418e577deebdafd922a7116b7a57b17c045ca8a146e2ac08d64e562aa1fdb",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.93f35ea916b1",
+      "sourceSha256": "93f35ea916b185a62f8bf9632223b2c1408c5146fce998e6274e8bcae22b69f3",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.2f69e6f10022",
+      "sourceSha256": "2f69e6f10022a1ef8886307d0bc96667148c8641f8e43bca2d0cac2557057767",
+      "sourceLengthUtf16": 168,
+      "annotations": [
+        {
+          "id": "ann.53fa6104d68f5f0f4110",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 84,
+            "end": 88,
+            "exact": "요소회로",
+            "prefix": " 계통은 글루타민을 질소 공급과 연결하며, ",
+            "suffix": "의 미토콘드리아 CPS1과 위치와 조절이 다"
+          },
+          "conceptId": "reader.term.06c0340a087289d4",
+          "targetDocumentId": "biochemistry.amino-acids.urea-cycle"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.d82a049cb230",
+      "sourceSha256": "d82a049cb230bc2bbd654e958b6e5bef1efc231d471b0377572a08a4e45dc349",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.55082118bf10",
+      "sourceSha256": "55082118bf1001cbaf9a3b6eeefccb7a691ccf097952da27bc9b64dcd6cff5ee",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.0342e846f7c6",
+      "sourceSha256": "0342e846f7c6478d3ed79ae813862dcaf8c72aca9a3d5b2b9ffcd07c02190afe",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.aa12d7ef1109",
+      "sourceSha256": "aa12d7ef1109e35e6b2de278c7cda38d5cafe363360a21e673f7f854e5c7280d",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.nucleotides.purine-pyrimidine.b.25d1a90dc3ab",
+      "sourceSha256": "25d1a90dc3aba9e9583b1be8848c36f6c1319625b34b4136b586baee5abb44c9",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    }
+  ]
+}

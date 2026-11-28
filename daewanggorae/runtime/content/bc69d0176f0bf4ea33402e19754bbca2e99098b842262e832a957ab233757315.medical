@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.valvular.aortic-stenosis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.valvular.aortic-stenosis.b.95371d41330e",
+      "sourceSha256": "95371d41330efd20d442d47670e1283f111c1ada3192ad4bb842e6f0ecc4175d",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.aortic-stenosis.b.7dddf84101db",
+      "sourceSha256": "7dddf84101db0b802b4cb8ef274be4e1d96edb84473c46ad9bced642dad4347a",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.aortic-stenosis.b.5f393fb6509a",
+      "sourceSha256": "5f393fb6509a2dce7859f41134dd064dfbdce5751fc061f8fd80d0ea4ccb737a",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.aortic-stenosis.b.4a0007e3a9fb",
+      "sourceSha256": "4a0007e3a9fb814aa273efe99ed904374fe2ba508cc4a43cdb6b59ab8f1ca78a",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.b9f1a6be4acda7a2bbfd",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 165,
+            "end": 168,
+            "exact": "심부전",
+            "prefix": "결론은 구별한다. 다만 현재 저관류나 급성 ",
+            "suffix": "이 있으면 원인 분석과 동시에 위험에 맞는 "
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.9b5468c00363b24d6b68",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 113,
+            "end": 150,
+            "exact": "증상이 있다는 사실과 모든 증상이 협착 때문이라는 결론은 구별한다.",
+            "prefix": "막병과 심근질환도 증상에 기여할 수 있다. ",
+            "suffix": " 다만 현재 저관류나 급성 심부전이 있으면 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.valvular.aortic-stenosis.b.15cdf9362889",
+      "sourceSha256": "15cdf93628892c08486f37ed90c8947be9a624aede72dfa81406371c1cd3e2f6",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.b6c5bb92f0dddcef41b2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 94,
+            "end": 122,
+            "exact": "정렬과 신호 구별, 여러 창에서의 확인이 중요하다.",
+            "prefix": "도 측정의 오차가 결과에 확대될 수 있다. ",
+            "suffix": " 유량이 달라지면 같은 판막도 속도와 압력차"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.valvular.aortic-stenosis.b.62021b363d96",
+      "sourceSha256": "62021b363d96254da60ce6405823d0c6bf45326c4b12bf1c0dee1e4df9db73a5",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.f044ff653cfde63e7d73",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 87,
+            "end": 126,
+            "exact": "유출로 직경을 제곱하여 면적을 얻는 과정 때문에 직경 오차가 중요하다.",
+            "prefix": " 속도시간적분을 연결하여 면적을 추정한다. ",
+            "suffix": " 단면이 완전한 원이 아닐 수 있고 표본 위"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.valvular.aortic-stenosis.b.f59d907b6f6e",
+      "sourceSha256": "f59d907b6f6ea695351f08862641bbeca348167a32ea3fe7c4bd3f8963c3c26c",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.aortic-stenosis.b.13358376be07",
+      "sourceSha256": "13358376be070f69fd772a8b73377a6ade1c4572d8a99e03f7a1a59e40f21b56",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    }
+  ]
+}

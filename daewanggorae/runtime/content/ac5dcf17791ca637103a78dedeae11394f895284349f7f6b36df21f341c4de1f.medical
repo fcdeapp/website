@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.humoral.germinal-center",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.humoral.germinal-center.b.1e4769e996a2",
+      "sourceSha256": "1e4769e996a29dd77b214016534e71ad91aa8306381fc5a4d8d1534b838133ec",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.3ae5e083f683",
+      "sourceSha256": "3ae5e083f683be8a8764a3448a320f0bb3d58b7770b795b29d04c3d8aca6be38",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.4c7a53a668e1ba1c8cbd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 86,
+            "end": 151,
+            "exact": "같은 단백질 또는 결합된 항원 복합체에서 유래한 peptide를 인식하는 도움 T세포와의 만남이 중요한 경우가 많다.",
+            "prefix": "의 항원 특이성을 T세포 도움과 연결한다. ",
+            "suffix": " T세포와 B세포가 반드시 항원의 동일한 작"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.eff5f29c8e82",
+      "sourceSha256": "eff5f29c8e8247102a874f6fd136b451f7bcb13be38bf317d8a0db9c0576911c",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.aed4112801cf3fae67c6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 138,
+            "end": 142,
+            "exact": "항원제시",
+            "prefix": " 조건이다. 선천면역의 신호와 항원 형태, ",
+            "suffix": "세포와 조직 환경도 반응의 규모와 방향을 바"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.4c4e156fad1d",
+      "sourceSha256": "4c4e156fad1de75f6857644efb0462f20ca1f06af2ab66ed833a9cbad30b28b8",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.f7a9d9611465",
+      "sourceSha256": "f7a9d9611465902afe7310e94c884c0baed2455e2c59054cfecefcee3e6a419a",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.2bc4063b02a0",
+      "sourceSha256": "2bc4063b02a006807151ce0c62ec1d374d33a4fe9c49f5c0b7628361c4220aa6",
+      "sourceLengthUtf16": 243,
+      "annotations": [
+        {
+          "id": "ann.699b28a6365b72c77a8f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 71,
+            "end": 118,
+            "exact": "일반적인 수지상세포가 미경험 T세포에 peptide를 제시하는 역할과 구분해야 한다.",
+            "prefix": "여 B세포의 항원 획득과 선택에 기여한다. ",
+            "suffix": " B세포는 표면 항원을 얻고 Tfh에 pep"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.9099754c619a",
+      "sourceSha256": "9099754c619a046907700fd0ab028378f4409a51b7d8c037504370e37f9b4190",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.13897dad7fd2",
+      "sourceSha256": "13897dad7fd29b7eaacb0bb5ff1028a1ae2160f15c0ddb33f5f76a59ae4588b3",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.eb69ba3f7e1a",
+      "sourceSha256": "eb69ba3f7e1ae43b6f5de77ae18dec7ecff44ed7ac6861b72e7dadbaa2e4f485",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.3b551a89b66b",
+      "sourceSha256": "3b551a89b66b23eea9d9d9456875dc2a87224df47289ed7c04006cb40d0831d1",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.a4430e7c6b05710c3ae6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 14,
+            "end": 16,
+            "exact": "보체",
+            "prefix": "상수영역은 Fc 수용체와 ",
+            "suffix": ", 점막 수송 및 태반 이동 등에 영향을 준"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.29f331502443",
+      "sourceSha256": "29f331502443c67fe2ebba2625ecd6af559f061c4c35c70fbaaf0ef35b67ddcb",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.f01f5f308a08",
+      "sourceSha256": "f01f5f308a08a10c2d0fa95c646cc4d8a117fc66118c1a65843a9f65da72f4e0",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.510b1c3c0f15",
+      "sourceSha256": "510b1c3c0f155a1a916b308d2c3e7e6be6302296b0e3dfb96296c5d28a8b1cb9",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.7a7372c44196cb47913d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 96,
+            "end": 177,
+            "exact": "접종 후 항체가 상승했다는 결과를 장기 방어의 모든 측면으로 확대하지 않고, 중화와 효과기 기능 및 세포성 반응을 포함한 보호의 근거를 구분한다.",
+            "prefix": "운 B세포 자극을 바꾸는 효과도 가능하다. ",
+            "suffix": " 개인의 검사값을 비교할 때에는 사용한 표준"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.14fd505b8df8",
+      "sourceSha256": "14fd505b8df864b8f5849225608a2ae2f8a05bb8eb8ddd189d3b4b30e51e2ea8",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.humoral.germinal-center.b.643bb9b2a1f2",
+      "sourceSha256": "643bb9b2a1f20a1132ce77495b495698532365e92b0672e72561bb41cdcf14bc",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    }
+  ]
+}

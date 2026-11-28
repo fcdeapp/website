@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.devices.pacemaker-icd-basics",
+  "subjectId": "cardiology",
+  "chapterId": "devices",
+  "title": {
+    "ko": "심박동기의 감지·출력·포획",
+    "en": "Sensing Output and Capture in Cardiac Pacing"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.lo.01",
+      "text": "감지와 포획을 구별한다"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.lo.02",
+      "text": "출력의 전기적 수지를 계산한다"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.lo.03",
+      "text": "기기 기록과 유효 순환의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.0fa5b2839062",
+      "type": "heading",
+      "level": 2,
+      "text": "감지에서 자극까지"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.371bc043f8a9",
+      "type": "paragraph",
+      "markdown": "심박동기(pacemaker)는 심장 내부의 전기 신호를 감지하고 설정된 시간 규칙에 따라 자극을 전달한다. 감지(sensing)는 이미 발생한 심장 활동을 기기가 인식하는 과정이며, 조율(pacing)은 기기가 전기 자극을 내보내는 과정이다. 포획(capture)은 그 자극이 실제 심근을 탈분극시키는 결과다. 세 과정은 연결되지만 동일하지 않다. 체표 심전도에서 자극 흔적이 보인다는 사실만으로 심근 포획이나 충분한 박출이 증명되지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.c6a144444210",
+      "type": "paragraph",
+      "markdown": "전극은 심근의 국소 전위와 주변 신호를 기록한다. 신호의 크기는 접촉과 위치, 활성화 방향 및 조직 상태에 영향을 받는다. 기기는 설정된 감지 기준과 시간 창으로 신호를 분류한다. 진짜 심장 신호를 놓치는 과소감지(undersensing)와 심장 활동으로 처리해서는 안 되는 잡음이나 다른 신호를 인식하는 과감지(oversensing)는 서로 다른 문제다. 낮은 감지 기준은 작은 신호를 더 쉽게 인식하게 하지만 불필요한 신호의 인식 가능성도 함께 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.bce62e81cf5f",
+      "type": "heading",
+      "level": 2,
+      "text": "출력과 역치"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.664e1a70505b",
+      "type": "paragraph",
+      "markdown": "자극의 진폭과 펄스 폭은 심근을 활성화하는 데 함께 작용한다. 포획 역치는 정해진 펄스 폭과 검사 조건에서 포획을 일으키는 최소 출력과 관련된다. 측정 시점의 역치와 이후의 안전 여유를 구분하며, 전극 위치와 조직의 염증·성숙, 약물 및 대사 상태의 변화를 고려한다. 전압만 높고 낮다고 비교하면 펄스 폭과 전극 조건의 차이를 놓칠 수 있다. 실제 설정은 기기 종류와 환자 의존도 및 측정 결과에 따라 전문적으로 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.4908a75eb71e",
+      "type": "paragraph",
+      "markdown": "순수 저항 R에 일정 전압 V를 시간 t 동안 전달하는 단순 모형에서는 전류 I=V/R, 전달 전하 Q=Vt/R, 에너지 E=V²t/R다. 이 식에서 같은 저항과 펄스 폭으로 전압을 두 배 높이면 에너지는 네 배다. 그러나 실제 전극과 조직은 순수 저항만으로 설명되지 않고 출력 회로와 배터리의 손실도 있다. 이 계산을 실제 배터리 수명이나 포획 성공률의 직접 예측식으로 사용하지 않는다. 에너지 수지와 조직의 흥분 역치는 다른 질문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.125fc469c3b9",
+      "type": "heading",
+      "level": 2,
+      "text": "시간 규칙과 방실 관계"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.2f9a6af2fb47",
+      "type": "paragraph",
+      "markdown": "기기는 감지한 사건과 직전 조율 뒤의 시간에 따라 다음 자극을 억제하거나 전달할 수 있다. 심방과 심실을 각각 감지·조율하는 시스템은 방실 관계를 조정할 수 있지만 모든 환자에서 같은 시간 설정이 적절한 것은 아니다. 너무 짧거나 긴 방실 간격은 충만과 역류, 불필요한 심실 조율 등에 다른 영향을 줄 수 있다. 조율된 QRS가 넓다는 사실은 활성화 경로가 정상 전도와 달라졌음을 반영할 수 있으며 장기 심실 기능과 함께 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.4958b172e7a4",
+      "type": "paragraph",
+      "markdown": "심장 재동기화 치료(cardiac resynchronization therapy, CRT)는 선택된 환자에서 심실 활성화의 비동기와 기계적 기능을 개선하려는 치료다. 삽입형 제세동기(ICD)는 위험한 빈맥을 감지하고 치료하는 기능을 갖는다. 일반적인 서맥 보조, 재동기화와 제세동은 목적이 다르며 하나의 장치에 여러 기능이 결합될 수 있다. 기기 이름만으로 모든 환자의 적응과 이득을 확정하지 않고 원인 질환, 심실 기능과 예상 조율 부담을 함께 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.37765c147d5e",
+      "type": "heading",
+      "level": 2,
+      "text": "기록을 임상 상태와 연결하기"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.b.bc520b4f4844",
+      "type": "paragraph",
+      "markdown": "기기 점검에서는 저장 전기도와 사건 표지, 전극 임피던스와 역치의 추세, 배터리 상태 및 실제 증상을 함께 확인한다. 임피던스가 변했다고 전극 단선이나 절연 손상이 단일 수치만으로 확진되는 것은 아니다. 추세와 다른 전기 지표, 영상 및 임상 상태를 대조해야 한다. 실신이나 저관류가 있으면 기기 오작동 가능성과 더불어 부정맥, 혈량과 혈압 및 비심장성 원인을 평가한다. 위험한 상태의 안정화를 정기 기기 점검 예약으로 대체해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-icd-basics.table",
+      "type": "table",
+      "data": {
+        "title": "기기의 입력·출력과 생리적 결과",
+        "columns": [
+          "단계",
+          "의미"
+        ],
+        "rows": [
+          [
+            "감지",
+            "기존 심장 전기 신호의 인식"
+          ],
+          [
+            "출력",
+            "전극으로 전달하는 자극"
+          ],
+          [
+            "포획",
+            "심근 탈분극의 발생"
+          ],
+          [
+            "유효 박출",
+            "전기적 포획과 별도로 평가"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.pacemaker-icd-basics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.devices.pacemaker-icd-basics.001"
+  ]
+}

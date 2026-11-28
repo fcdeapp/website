@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.toxicology-measurement-pairs",
+  "lessonId": "pathology.environmental.toxic-injury",
+  "title": "독성 평가의 다른 층",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "외부 농도·경로·시간",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "흡수·체내 처리",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "표적 노출·방어·수복",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "효과 표지·장기 기능",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "유해성의 존재",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "정한 노출의 실제 위험",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.toxicology-measurement-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "표적 용량과 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.toxicology-measurement-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "검출과 손상 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.toxicology-measurement-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "개인 인과 별도 평가",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "실제 물질 위험·법적 인과판정·노출 허용량의 알고리즘이 아니다."
+  ],
+  "sourceImageUsed": false
+}

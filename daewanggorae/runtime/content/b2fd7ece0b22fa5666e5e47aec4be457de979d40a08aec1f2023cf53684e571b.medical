@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.methods.biomarker-context-longitudinal",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.a1dc3bd527cc",
+      "sourceSha256": "a1dc3bd527cc532b5e6c45e3a905b50003bfe307d71dadd30f913438cc947147",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.13b3b9536a93",
+      "sourceSha256": "13b3b9536a93d4073e0a803419499fa9030903fb49f4d2a40394cd3acb53451c",
+      "sourceLengthUtf16": 208,
+      "annotations": [
+        {
+          "id": "ann.5bed0dc033014f875e05",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 3,
+            "exact": "약력학",
+            "prefix": "",
+            "suffix": "(pharmacodynamic) 지표는 약물"
+          },
+          "conceptId": "reader.term.3f6c24ce1179f5f7",
+          "targetDocumentId": "pharmacology.general.pharmacodynamics"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.879fc92582eb",
+      "sourceSha256": "879fc92582ebc03afb395ea11c4184cdf64e6cab4fef728e0f02f5ab682c1ca3",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.6f53a541fe8d",
+      "sourceSha256": "6f53a541fe8da352f6b84d82943bbb77cd035bc48b55e5e25d54d9c0c9313886",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.17f675982dcc",
+      "sourceSha256": "17f675982dcc64e33cd5bba8059cd9fcf00551c4033718bfad7ccd5f1ea57443",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.146e8a6ba845c2a0476f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 50,
+            "exact": "보체",
+            "prefix": "섬유화·세포 소실은 다른 시간층이다. 항체·",
+            "suffix": "와 사이토카인 지표가 개선되어도 기존 신경·"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.e1fdb9dc818c",
+      "sourceSha256": "e1fdb9dc818cc13da54ccc89fd1fc4d5585b7339f7560fc6be40aa074affd856",
+      "sourceLengthUtf16": 170,
+      "annotations": [
+        {
+          "id": "ann.a2b8997f878ef151c81a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 30,
+            "exact": "환자가 느끼는 통증·피로와 일상 기능도 중요한 결과다.",
+            "prefix": "",
+            "suffix": " 검사실 수치가 좋아졌다는 이유로 이러한 결"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.171243788679",
+      "sourceSha256": "1712437886797c3da5c9a105b6b815d9397a7e97a8c4462ad53221e21ebb9f7d",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.36809e040dbb",
+      "sourceSha256": "36809e040dbb393206ed5455094f6457cfa1fc0a7e09e8824f1d8700b26686be",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.1f8f8425d5c3",
+      "sourceSha256": "1f8f8425d5c3d9a1b6b43db2ef4b642427158c11783e4fca1fdfd15d90293158",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.methods.biomarker-context-longitudinal.b.5597ded81576",
+      "sourceSha256": "5597ded81576d7538c327eec9f5b6ed429a6223d30c73f9e984e1f0816084f15",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    }
+  ]
+}

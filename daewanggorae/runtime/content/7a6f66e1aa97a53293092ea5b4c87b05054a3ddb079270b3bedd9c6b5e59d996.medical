@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.repair.scar-mechanics",
+  "subjectId": "pathology",
+  "chapterId": "repair",
+  "title": {
+    "ko": "근섬유모세포와 반흔의 기계생물학",
+    "en": "Myofibroblasts and Scar Mechanobiology"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.repair.scar-mechanics.lo.01",
+      "text": "상처 수축과 구축을 구별한다"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.lo.02",
+      "text": "TGF-β·integrin·기계적 신호를 연결한다"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.lo.03",
+      "text": "비후성 반흔과 켈로이드의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.repair.scar-mechanics.b.de6bf6454fe8",
+      "type": "heading",
+      "level": 2,
+      "text": "기질을 만드는 세포가 힘도 만든다"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.adc7e1c09870",
+      "type": "paragraph",
+      "markdown": "근섬유모세포(myofibroblast)는 기질 생성과 수축 성질을 함께 갖는 세포 상태다. Actin과 myosin의 수축 장치, 기질에 힘을 전달하는 접착 구조가 상처 가장자리를 당기는 데 기여한다. α-smooth muscle actin(α-SMA)은 대표적 표지지만 이 단백질의 염색 하나가 모든 세포의 기원과 실제 수축력을 확정하는 것은 아니다. 혈관 평활근 등 다른 양성 세포와 위치를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.9a09c70fcd72",
+      "type": "paragraph",
+      "markdown": "세포의 수축력은 세포외기질에 전달되고 기질의 저항은 다시 세포의 신호를 바꾼다. Integrin과 초점접착(focal adhesion), FAK와 Rho 계열 경로는 이 연결에 관여한다. 따라서 기질은 단순한 반응의 최종 산물이 아니라 이후의 세포 행동을 조절하는 환경이다. 같은 가용성 성장인자를 주어도 배양 기질의 강성이 다르면 세포 반응이 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.d3a3a0689d53",
+      "type": "heading",
+      "level": 2,
+      "text": "잠복 신호와 힘의 되먹임"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.b955cc3d0cf4",
+      "type": "paragraph",
+      "markdown": "TGF-β는 기질 생성과 근섬유모세포 상태를 촉진하는 주요 신호 중 하나다. 기질에 결합된 잠복 복합체의 활성화에는 기계적 힘과 integrin의 상호작용이 참여할 수 있다. 활성 신호가 기질과 수축력을 늘리고, 높아진 기질 저항이 다시 신호의 활성화를 지지하는 되먹임이 형성될 수 있다. 이 때문에 처음 손상이 줄어든 뒤에도 섬유성 반응이 유지되는 상황이 생긴다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.937762b14cc8",
+      "type": "paragraph",
+      "markdown": "다만 모든 조직의 섬유모세포가 같은 경로에 같은 정도로 의존하는 것은 아니다. 장기, 세포의 기원과 손상 자극에 따라 반응이 다르다. 배양에서 억제제가 콜라겐을 줄였다는 결과를 정상 치유에 대한 영향 없이 모든 반흔을 없앤다는 결론으로 확대할 수 없다. 구조를 지지하는 초기 회복과 병적인 지속 반응을 나누는 것이 표적 연구의 과제다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.6c51b4bda757",
+      "type": "heading",
+      "level": 2,
+      "text": "수축은 공간을 줄이지만 기능을 제한할 수 있다"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.d14772e6d290",
+      "type": "paragraph",
+      "markdown": "상처 수축(contraction)은 결손의 면적을 줄이는 데 도움이 된다. 특히 조직 소실이 큰 이차유합에서는 주변 조직을 당기는 기여가 크다. 그러나 관절 주변과 화상 부위 등에서 과도한 수축이 지속되면 구축(contracture)으로 운동범위와 기능을 제한할 수 있다. 표면이 닫혔다는 성공과 기능적으로 움직일 수 있다는 성공은 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.1ae3fbb238ab",
+      "type": "paragraph",
+      "markdown": "기계적 하중의 방향도 중요하다. 같은 반흔 면적이라도 관절 운동을 가로지르는 위치와 느슨한 부위의 기능적 비용은 다를 수 있다. 경직된 조직과 주변 정상 조직의 경계에는 힘이 불균일하게 집중될 수 있다. 실제 조직에서 강성·탄성·파열 한계가 서로 다른 성질인 이유를 피부의 배열과 하중 방향에 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.eed60baa44f4",
+      "type": "heading",
+      "level": 2,
+      "text": "비후성 반흔과 켈로이드"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.8acf088d6e6b",
+      "type": "paragraph",
+      "markdown": "비후성 반흔(hypertrophic scar)은 대체로 원래 손상 경계 안에서 두드러지고, 켈로이드(keloid)는 경계를 넘어 지속적으로 확장하는 양상이 특징적이다. 둘은 기질 과다와 염증·기계 신호가 관여하는 섬유증식성 병변이지만 임상 경과가 동일하지 않다. 발생 위치, 이전 반흔의 경과와 개인적 소인도 평가한다. 조직 모양이나 한 유전자 발현만으로 모든 환자를 분류하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.a02d2acdfc9b",
+      "type": "paragraph",
+      "markdown": "반흔의 높이와 색, 가려움·통증, 유연성과 움직임 제한은 다른 결과 지표다. 외관의 개선이 감각과 기능의 회복을 모두 뜻하지 않는다. 추적할 때 같은 조명·자세와 측정 방법을 유지하고 환자가 중요하게 여기는 기능을 확인한다. 표면 사진만으로 깊은 유착과 하중 전달을 모두 평가할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.d972c5c07960",
+      "type": "heading",
+      "level": 2,
+      "text": "실험에서 힘을 측정한다"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.9d9c11a704a1",
+      "type": "paragraph",
+      "markdown": "콜라겐 겔 수축 실험은 세포가 기질의 크기를 줄이는 능력을 볼 수 있지만, 감소에는 세포 수와 생존, 부착과 분해도 영향을 준다. 겔의 초기 농도와 고정 조건이 다르면 결과의 크기도 달라진다. 세포 수를 맞추고 무세포 대조와 생존 검사를 포함해야 수축 신호의 변화와 독성을 구별할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.b.47d8f3abef82",
+      "type": "paragraph",
+      "markdown": "응력-변형률 곡선의 기울기는 정해진 구간의 강성을 나타내고, 최대 응력은 파열에 대한 정보를 준다. 곡선의 두 특성은 독립적으로 달라질 수 있다. 섬유가 처음 펴지는 구간과 이후 하중을 지탱하는 구간도 다르므로 모든 조직을 원점부터 하나의 직선으로 설명하지 않는다. 표준화된 하중·속도·방향과 조직 단면적의 기록이 해석에 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.table.0822",
+      "type": "table",
+      "data": {
+        "title": "핵심 과정의 비교",
+        "columns": [
+          "과정·지표",
+          "의미"
+        ],
+        "rows": [
+          [
+            "수축",
+            "결손 면적을 줄이는 데 기여"
+          ],
+          [
+            "구축",
+            "과도한 수축으로 기능을 제한"
+          ],
+          [
+            "비후성 반흔",
+            "대체로 원래 손상 경계 내"
+          ],
+          [
+            "켈로이드",
+            "경계를 넘어 확장하는 경과"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pathology.repair.scar-mechanics.diagram.repair-stress-strain-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.repair-stress-strain-toy",
+      "path": "diagrams/diagram.repair-stress-strain-toy.svg",
+      "alt": "두 선형 재료의 응력과 변형률의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/repair/sections/pathology.repair.scar-mechanics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.repair.scar-mechanics.001",
+    "question.pathology.repair.scar-mechanics.002"
+  ],
+  "relatedLessons": [
+    "pathology.repair.collagen-biosynthesis",
+    "pathology.repair.delayed-wound-healing"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurosurgery.physiology.intracranial-pressure",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.bf8cf9a3e5d0",
+      "sourceSha256": "bf8cf9a3e5d0f8913d2f2db391b35fc5def03ed5331c72edec2eb2db725145cd",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.846aa30e21ef3cec20c8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 25,
+            "end": 29,
+            "exact": "뇌척수액",
+            "prefix": "인의 단단한 두개골 안에는 뇌조직과 혈액, ",
+            "suffix": "이 존재한다. 이 구성 요소의 용적이 늘면 "
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.b1a964e4e832",
+      "sourceSha256": "b1a964e4e83248dcd8f929011cbd6959a0b442507aa140b263b67d9c36161545",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.ee7f75b6c0bf",
+      "sourceSha256": "ee7f75b6c0bf6f2b983057f3e22a3fad6ba656a2a349bd745a98372d0bff45c4",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.c728c20b7feb",
+      "sourceSha256": "c728c20b7feb978a60b9f15d867b4f616eefc894d4c0ad0b0abf0fab457e6bba",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.2f015832694e",
+      "sourceSha256": "2f015832694e17292ffd8583c5a2d3dcdce4caac1ef1e3ccbb36567c138ca8f2",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.36b91c41a253",
+      "sourceSha256": "36b91c41a2537e9dd624606e2637bf9cd30706516840aa9ebc3df6fee485b8e2",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.f3ef1d94612e",
+      "sourceSha256": "f3ef1d94612e1e3179ef39020392d6b6c7f7100df2efe2298613c480b74a6c5f",
+      "sourceLengthUtf16": 178,
+      "annotations": [
+        {
+          "id": "ann.f01d15c66dc15b87599e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 154,
+            "end": 178,
+            "exact": "무엇을 직접 관찰한 자료인지 구별해야 한다.",
+            "prefix": "한 영상 평가가 불필요해지는 것도 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.a79118aee0c8",
+      "sourceSha256": "a79118aee0c85a34470713b3808d4432cf0ddda6f95b8bbfd970843df4722c95",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.45277d7e9339",
+      "sourceSha256": "45277d7e9339133a47f4b537a5256f3e001f0108fe22023e25792d0997e6363d",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "neurosurgery.physiology.intracranial-pressure.b.384d2b5bc29b",
+      "sourceSha256": "384d2b5bc29b2c05046cf81e0d2cc8cab28456489720dbe39dc96600c80ff027",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    }
+  ]
+}

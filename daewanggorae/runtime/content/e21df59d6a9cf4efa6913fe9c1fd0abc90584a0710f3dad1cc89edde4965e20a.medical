@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience.sleep.circadian-arousal",
+  "subjectId": "neuroscience",
+  "chapterId": "sleep",
+  "title": {
+    "ko": "수면 압력·일주기와 각성 회로",
+    "en": "Sleep Pressure Circadian Timing and Arousal Networks"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroscience.sleep.circadian-arousal.lo.01",
+      "text": "수면 항상성과 일주기의 차이를 설명한다"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.lo.02",
+      "text": "수면 단계·각성과 임상 증상을 연결한다"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.lo.03",
+      "text": "수면기록과 증상의 시간축을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.47272aefad90",
+      "type": "heading",
+      "level": 2,
+      "text": "잠을 자려는 힘과 시간 신호"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.5e52e2cd2d10",
+      "type": "paragraph",
+      "markdown": "수면은 뇌가 모든 활동을 멈추는 상태가 아니라 여러 회로가 상태를 조절하는 과정이다. 깨어 있는 시간이 길어지며 증가하는 수면 압력과 하루 시간에 맞춰 각성·수면 가능성을 조절하는 일주기 리듬(circadian rhythm)은 서로 다른 축이다. 같은 피로 정도에서도 생체 시각과 빛·활동에 따라 잠들기 쉬운 정도가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neuroanatomy.brainstem.levels-localization.brainstem-levels"
+      ]
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.2f97fefb1cfb",
+      "type": "paragraph",
+      "markdown": "시교차상핵(suprachiasmatic nucleus)을 포함한 시상하부의 시간 조절과 망막의 빛 정보, 각성 관련 뇌간·시상하부·전뇌 회로가 연결된다. 멜라토닌은 어두움과 생체 시각을 반영하는 신호의 하나이며 수면 전체를 켜고 끄는 유일한 물질이 아니다. 빛의 강도와 노출 시점·교대근무·사회적 일정이 내부 시간과 실제 생활을 어긋나게 할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.6ffac17a7c45",
+      "type": "heading",
+      "level": 2,
+      "text": "단계와 관찰 신호"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.6b7bf7e2ddd0",
+      "type": "paragraph",
+      "markdown": "비렘수면(non-rapid eye movement sleep, NREM)과 렘수면(REM)은 뇌파·안구운동·근긴장 등의 조합으로 구별한다. 수면 구조는 나이와 질환·약물·전날 수면에 따라 달라진다. 밤의 모든 시간을 같은 생리 상태로 합치면 호흡·운동과 각성의 문제를 놓칠 수 있다. 특정 파형 한 조각만으로 밤 전체 수면의 질을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.5b160defc720",
+      "type": "paragraph",
+      "markdown": "수면 중에도 호흡·심혈관·체온과 감각 반응은 조절된다. 렘수면의 근긴장 조절과 꿈 경험, 비렘의 여러 단계는 서로 연결되지만 꿈과 특정 단계가 완벽히 일대일 대응한다고 단정하지 않는다. 수면의 기능에는 기억·대사·회복 등 여러 영역이 관여하며 어느 한 호르몬이나 구조만으로 모든 기능을 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.35f6ceff51c1",
+      "type": "heading",
+      "level": 2,
+      "text": "졸림과 불면의 다른 표현"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.0fca9e950ea9",
+      "type": "paragraph",
+      "markdown": "졸림은 잠들려는 성향, 피로는 에너지와 수행의 주관적 어려움으로 구별해 묻는다. 충분히 누워 있어도 호흡장애·빈번한 각성과 약물·우울 등이 낮 기능을 해칠 수 있다. 반대로 잠들 기회가 제한된 상태와 충분한 기회에도 잠들기 어려운 상태는 다르다. 수면 시간·환경·근무와 실제 낮 기능을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.026f7d28c42a",
+      "type": "paragraph",
+      "markdown": "수면일지에서는 잠자리에 든 시각·잠들기까지의 시간·중간 각성과 최종 기상, 낮잠과 카페인·약물·음주를 구체적으로 기록한다. 침대에 있던 시간이 실제 수면시간과 같지 않다. 가상 기록에서 침대8시간 중 실제 수면6시간이면 수면효율은75%지만 이 비율 하나로 질환·약물 필요와 안전을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.7db2f14981d2",
+      "type": "heading",
+      "level": 2,
+      "text": "위험과 치료 목표"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.12c733c7a74d",
+      "type": "paragraph",
+      "markdown": "심한 코골이와 관찰된 무호흡, 갑작스러운 수면 발작·이상행동과 부상, 운전 중 졸림 등은 추가 평가를 구체화한다. 불면과 불안·기분장애가 겹쳐도 모든 원인을 정신질환으로 돌리지 않는다. 병력·진찰과 질문에 맞는 수면검사를 연결한다. 소비자 기기의 추정 단계가 임상 수면검사와 같은 정확도·목적이라고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.b.a2f17fe21bfb",
+      "type": "paragraph",
+      "markdown": "치료에는 수면 기회와 일정·행동·동반 질환·약물의 영향을 함께 검토하는 과정이 포함된다. 인지행동적 접근과 약물은 목표·효과·위험과 적용 조건이 다르다. 진정되어 보이는 결과와 생리적 수면·낮 기능의 회복은 같은 결과가 아니다. 연령·낙상·호흡·의존과 다음 날 수행을 포함하여 개인별 선택과 추적을 설계한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.suppheading0852",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 임상 해석의 연결"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.supp.9e72c47a5b5f",
+      "type": "paragraph",
+      "markdown": "수면효율의 분모는 실제 잠을 잘 기회와 기록 방식에 따라 해석해야 한다. 가상7일 동안 매일 침대8시간, 실제 수면이6·5.5·7·6.5·6·7·7.5시간이면 총56시간 중45.5시간으로81.25%다. 각 날의 평균과 전체 비율은 분모가 같을 때 같은 결과를 주지만 침대 시간이 다르면 단순 평균이 달라질 수 있다. 이 값은 불면의 확진이나 처방 경계가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.supp.98dfd9ef707b",
+      "type": "paragraph",
+      "markdown": "수면을 늦추거나 앞당기는 일은 총시간을 바꾸는 것과 다른 생체시각의 질문이다. 휴일에 오래 자는 패턴과 교대근무의 변화, 빛·낮잠·약물의 시각을 함께 살핀다. 정상 뇌간 모형은 각성 회로가 위치하는 큰 구조를 학습할 수 있게 하지만 시교차상핵의 실제 메시와 일주기 신호를 검증한 그림은 아니다. 시간 자료와 구조의 표현 범위를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.table0852",
+      "type": "table",
+      "data": {
+        "title": "관찰·가설과 임상 해석",
+        "columns": [
+          "항목",
+          "자료·의미"
+        ],
+        "rows": [
+          [
+            "기록 기간",
+            "7일"
+          ],
+          [
+            "침대 시간",
+            "매일8h"
+          ],
+          [
+            "실제 수면(h)",
+            "6·5.5·7·6.5·6·7·7.5"
+          ],
+          [
+            "해석",
+            "공식 수면검사·진단 기준 아님"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.diagram.synthetic-sleep-diary-0852",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-sleep-diary-0852",
+      "path": "diagrams/diagram.synthetic-sleep-diary-0852.svg",
+      "alt": "가상 일지의 기회·실제 수면의 독립 계산 곡선"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.3d0852.0",
+      "type": "anatomy3d",
+      "sceneRef": "scene.neuroanatomy.brainstem.levels-localization.brainstem-levels"
+    },
+    {
+      "id": "neuroscience.sleep.circadian-arousal.limits0852",
+      "type": "clinicalPearl",
+      "markdown": "정상 거시 구조의 위치 문맥이다. 실제 축삭 연결·감각 교차·전기활동·도파민·시교차상핵·병변·폐색·관류·질환과 치료 적합성을 이 정적 모델이 표현하거나 정하지 않는다. 오른쪽만 확인된 구조를 좌우 완전 회로로 표시하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/sleep/sections/neuroscience.sleep.circadian-arousal.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroscience.sleep.circadian-arousal.001",
+    "question.neuroscience.sleep.circadian-arousal.002"
+  ],
+  "relatedLessons": [
+    "neurology.cognition.delirium-dementia"
+  ]
+}

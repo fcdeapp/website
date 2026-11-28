@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "infectious-diseases.mycobacteria.tuberculosis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.427b1cb6871f",
+      "sourceSha256": "427b1cb6871ff0158014cecd47b8aed6b886c1170a2d3fae177f214f66a2cf34",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.020e23c7978fb9edc4e2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 163,
+            "end": 168,
+            "exact": "항원 제시",
+            "prefix": "식이 곧바로 제거를 의미하지 않는다. 이후 ",
+            "suffix": "와 T세포 반응이 형성되면서 숙주의 억제 능"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        },
+        {
+          "id": "ann.4c122dec33079cc0fa8f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 110,
+            "end": 159,
+            "exact": "결핵균은 세포 내 생존에 유리한 성질을 지녀 초기 포식이 곧바로 제거를 의미하지 않는다.",
+            "prefix": "폐포에 도달하면 대식세포가 균을 포식한다. ",
+            "suffix": " 이후 항원 제시와 T세포 반응이 형성되면서"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.f62e7f485272",
+      "sourceSha256": "f62e7f485272c2d08d7fe3091fae985108f6bcbf2be135c7702810486444afe3",
+      "sourceLengthUtf16": 228,
+      "annotations": [
+        {
+          "id": "ann.281db52b5ae2f18d4ba5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 99,
+            "end": 181,
+            "exact": "건락괴사(caseous necrosis)는 중요한 병리 소견이지만 모든 검체에서 보이는 것은 아니며 다른 질환에서도 유사한 양상이 나타날 수 있다.",
+            "prefix": "ma)을 형성하고 주변 림프구가 반응한다. ",
+            "suffix": " 조직 모양을 병원체의 직접 증거와 구분하면"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.d219c0cdf9d0",
+      "sourceSha256": "d219c0cdf9d0ccd0ba2d40f6035e29146440b063e971af81caafab8c4b71c216",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.ce04877dce12",
+      "sourceSha256": "ce04877dce1261a96032e61186bd282f7327f5132612818075ab60e83241f8ab",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.7277a126cc68",
+      "sourceSha256": "7277a126cc683c9ec68425e33ef59d01a67014836cc10018b8abd6655d75c6ef",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.f35d3562262a",
+      "sourceSha256": "f35d3562262abc6a7a3cdedf26db472f22f9385e6ac65a1f7ca1e0dea2e2837a",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.95ce98398090",
+      "sourceSha256": "95ce9839809034097c59c6dced0ddee1199917b6df52773723f0a5b897deff9d",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.2456e3be451f",
+      "sourceSha256": "2456e3be451f8acd70af55c6a0d089ea0ae6bdef24b1e424b2d0a41b77ff574b",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.00c95cc3b21f",
+      "sourceSha256": "00c95cc3b21fa880de13d3c4c3734fbd79b9f8b1517651dc22ea588af315e7d3",
+      "sourceLengthUtf16": 228,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.06a8adb0c7d9",
+      "sourceSha256": "06a8adb0c7d9aa008cb6ff418ea6cb4ab0c373b816b37323fd61f95f5fb761ed",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.00a84825e05ec81ff6f3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 198,
+            "exact": "검사를 반복하거나 다른 검체를 선택할 때는 같은 정보를 늘리는지, 다른 질문에 답하는지 구분한다.",
+            "prefix": " 생존 균의 존재와 완전히 동일하지 않다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.c02b7eecc677",
+      "sourceSha256": "c02b7eecc6774897752fd2a38960e70b78043c0e209689b04cf08f9c5a7414b5",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    },
+    {
+      "blockId": "infectious-diseases.mycobacteria.tuberculosis.b.656a1e01556e",
+      "sourceSha256": "656a1e01556e3c869314610f249876110625b2405daa0c602e705bc07f708336",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    }
+  ]
+}

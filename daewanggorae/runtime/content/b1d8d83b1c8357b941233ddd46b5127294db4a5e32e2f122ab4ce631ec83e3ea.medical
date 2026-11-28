@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.endocrine.hormone-kinetics",
+  "subjectId": "physiology",
+  "chapterId": "endocrine",
+  "title": {
+    "ko": "호르몬의 운반·제거와 농도 해석",
+    "en": "Hormone Transport, Clearance and Concentration"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.endocrine.hormone-kinetics.lo.01",
+      "text": "분비량·농도·제거율의 단위를 구분한다"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.lo.02",
+      "text": "일구획 모형에서 정상상태와 반감기를 유도한다"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.lo.03",
+      "text": "결합단백질 변화와 유리 호르몬 해석을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.10592ff3c756",
+      "type": "heading",
+      "level": 2,
+      "text": "농도는 분비와 제거의 공동 결과다"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.1e1fc6e7678d",
+      "type": "paragraph",
+      "markdown": "혈중 농도(concentration)는 일정 부피에 존재하는 물질량이다. 분비율(secretion rate)은 단위 시간에 혈액으로 들어오는 양이다. 두 값의 차원부터 다르므로 ‘농도가 두 배이니 분비도 반드시 두 배’라고 말할 수 없다. 제거 능력이 줄거나 분포 공간과 결합 상태가 바뀌어도 농도는 달라진다. 혈액검사는 분비세포를 직접 관찰한 결과가 아니라 체내 유입·분포·대사의 합성 결과임을 전제로 읽어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.bbfcb4c7b3a1",
+      "type": "paragraph",
+      "markdown": "청소율(clearance, CL)은 단위 시간에 특정 물질이 완전히 제거된 것으로 환산한 혈장 부피다. 실제 장기가 그 부피의 혈장을 통째로 버린다는 뜻은 아니다. 농도 C가 물질량/L이고 CL이 L/min이면 CL·C는 물질량/min으로서 제거율이 된다. 여러 장기가 같은 농도 기준으로 독립적으로 제거한다고 근사할 수 있을 때에는 장기별 청소율을 합할 수 있지만, 결합·혈류·추출률과 대사산물의 재활용이 복잡하면 단순 합산의 가정을 다시 살펴야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.afb0ada456ae",
+      "type": "heading",
+      "level": 2,
+      "text": "일구획 모형의 물질수지"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.7e60c6b253a0",
+      "type": "paragraph",
+      "markdown": "분포용적 V가 일정하고 구획 내부가 순간적으로 균일해지며 제거가 농도에 비례한다고 가정하자. 구획의 물질량은 V·C이고 수지는 V·dC/dt=S−CL·C가 된다. 여기서 S는 일정한 분비율이다. 농도 변화가 없는 정상상태에서는 유입과 제거가 같아 C_ss=S/CL이다. 따라서 S=10 단위/min, CL=2 L/min인 교육 모형의 정상상태 농도는5 단위/L이다. 분비율이 그대로이고 청소율만1 L/min이 되면 최종 정상상태는10 단위/L가 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.af60b40e7cc4",
+      "type": "paragraph",
+      "markdown": "분비를 멈춘 뒤의 식은 dC/dt=−kC이고 k=CL/V다. 이를 적분하면 C(t)=C0·e^(−kt)이며, 농도가 절반이 되는 시간은 t_1/2=ln2/k=0.693V/CL이다. V=20 L, CL=2 L/min이면 반감기는 약6.93분이다. 이 모형에서는 일정 시간마다 같은 양이 아니라 같은 비율이 사라진다. 반감기 두 번 뒤에는 처음의1/4이 남으며, 선형 그래프의 기울기는 농도가 낮아질수록 완만해진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.847ba40144e0",
+      "type": "paragraph",
+      "markdown": "처음 농도가0이고 분비가 일정하게 시작되면 C(t)=C_ss[1−e^(−kt)]다. 한 반감기 뒤에 최종값의 절반, 두 반감기 뒤에3/4에 도달한다. 정상상태로의 접근을 순간적인 도약으로 그리면 신호의 시간 정보를 놓친다. 다만 실제 호르몬 분비는 맥동할 수 있고 결합과 조직 분포가 여러 시간 척도를 가지며 제거가 포화될 수 있다. 이 경우 하나의 반감기와 하나의 구획으로 모든 과정을 설명할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.1496ba8802fa",
+      "type": "heading",
+      "level": 2,
+      "text": "총농도와 유리농도"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.00bdf0d7f1c1",
+      "type": "paragraph",
+      "markdown": "혈중 호르몬은 유리형(free form)과 단백질 결합형(bound form)으로 나뉠 수 있다. 총농도는 두 형태의 합이다. 스테로이드·갑상샘호르몬의 운반에는 결합단백질이 중요하며, 일부 펩타이드와 성장인자도 특정 결합단백질을 가진다. ‘펩타이드는 모두 결합단백질이 없다’는 분류는 맞지 않는다. 결합은 용해·운반뿐 아니라 제거 속도와 조직으로의 전달에도 영향을 줄 수 있으므로 단순히 활성형과 쓸모없는 저장형으로 나누지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.67f1e5f6235f",
+      "type": "paragraph",
+      "markdown": "간단한 한 종류 결합자리 모형에서는 결합량 B=B_max·F/(K_d+F)로 쓸 수 있다. F는 자유 호르몬 농도, B_max는 결합용량, K_d는 해리상수다. F가 일정한 상태에서 B_max가 커지면 총농도 F+B는 증가한다. 예를 들어 F=1, K_d=1이라는 임의 단위 조건에서 B_max가8이면 B=4, 총농도는5다. B_max가18이면 B=9, 총농도는10이 된다. 총농도가 두 배인 이 예에서 유리농도는 바뀌지 않았다. 이는 조건을 고정한 대수적 예이며 결합단백질 변화 직후의 모든 생체 반응을 재현한 시뮬레이션은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.3878510961e6",
+      "type": "paragraph",
+      "markdown": "실제 되먹임이 작동하는 생체에서는 결합단백질 변화 직후 유리분획이 일시적으로 바뀌고, 분비와 제거가 조정된 뒤 새로운 상태가 형성될 수 있다. 총농도와 유리농도를 구별하는 이유는 이런 조절 때문이다. 임신·간질환·단백질 소실·약물 등의 영향은 호르몬과 검사법에 따라 다르게 평가한다. 총농도가 참고범위 밖이라는 이유만으로 곧바로 조직 수준의 과다·결핍을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.99da3641a47f",
+      "type": "heading",
+      "level": 2,
+      "text": "측정값의 생물학적 의미"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.68cd9693ecb2",
+      "type": "paragraph",
+      "markdown": "면역측정법은 항체가 인식하는 분자 구조를 읽는다. 그 신호가 수용체를 자극하는 능력과 완전히 같은 것은 아니다. 결합된 거대분자 형태, 교차반응 물질, 항체 간섭은 임상상과 검사값의 불일치를 만들 수 있다. 서로 다른 검사법에서 숫자가 다르다는 이유만으로 어느 한쪽이 무조건 틀렸다고 결론 내리지 말고 검체·분자형·보정·측정 범위를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.b.19388dea55bc",
+      "type": "paragraph",
+      "markdown": "이상 농도를 해석할 때에는 채혈 시간과 생리 상태를 먼저 정리하고, 분비·제거·결합 중 어느 과정이 바뀔 수 있는지 가설을 세운다. 이후 자극호르몬과 말초 호르몬의 조합, 관련 대사 지표, 필요 시 적절한 추가 검사를 연결한다. 계산식은 변수의 방향과 단위를 점검하는 데 유용하지만, 단일 측정치만으로 개인의 실제 분비율과 분포용적을 동시에 역산할 수 있다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.diagram.hormone-clearance-decay",
+      "type": "diagram",
+      "diagramRef": "diagram.hormone-clearance-decay",
+      "path": "diagrams/diagram.hormone-clearance-decay.svg",
+      "alt": "분비 중단 뒤 일구획 농도의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.diagram.hormone-secretion-approach",
+      "type": "diagram",
+      "diagramRef": "diagram.hormone-secretion-approach",
+      "path": "diagrams/diagram.hormone-secretion-approach.svg",
+      "alt": "일정 분비 시작 뒤 정상상태 접근의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.diagram.hormone-binding-total",
+      "type": "diagram",
+      "diagramRef": "diagram.hormone-binding-total",
+      "path": "diagrams/diagram.hormone-binding-total.svg",
+      "alt": "결합용량에 따른 총농도의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.endocrine.hormone-kinetics.table.compare",
+      "type": "table",
+      "data": {
+        "title": "농도 수지의 변수",
+        "columns": [
+          "기호",
+          "양",
+          "단위 예"
+        ],
+        "rows": [
+          [
+            "C",
+            "농도",
+            "단위/L"
+          ],
+          [
+            "S",
+            "분비율",
+            "단위/min"
+          ],
+          [
+            "CL",
+            "청소율",
+            "L/min"
+          ],
+          [
+            "V",
+            "분포용적",
+            "L"
+          ],
+          [
+            "k=CL/V",
+            "일차 제거상수",
+            "1/min"
+          ]
+        ],
+        "notes": "C_ss=S/CL과t_1/2=0.693V/CL은 일정V·일차 제거의 일구획 가정이다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/endocrine/sections/physiology.endocrine.hormone-kinetics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "농도는 분비·제거·분포의 공동 결과다.",
+    "총농도와 유리 농도를 구별한다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.endocrine.hormone-kinetics.001",
+    "question.physiology.endocrine.hormone-kinetics.002"
+  ],
+  "relatedLessons": [
+    "physiology.endocrine.hypothalamic-pituitary-axes",
+    "physiology.endocrine.gh-prolactin"
+  ]
+}

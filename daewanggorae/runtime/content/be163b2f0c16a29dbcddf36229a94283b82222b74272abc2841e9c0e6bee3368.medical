@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.shock.acid-base-integration",
+  "subjectId": "pathology",
+  "chapterId": "shock",
+  "title": {
+    "ko": "순환부전의 산염기와 전해질 통합 해석",
+    "en": "Integrated Acid–Base and Electrolyte Interpretation in Shock"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.shock.acid-base-integration.lo.01",
+      "text": "pH와 대사·호흡 과정을 구별한다"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.lo.02",
+      "text": "음이온차·알부민·염소의 맥락을 설명한다"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.lo.03",
+      "text": "칼륨의 농도·분포·총량을 통합한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.shock.acid-base-integration.b.bfe54b81ce88",
+      "type": "heading",
+      "level": 2,
+      "text": "pH는 여러 과정의 합성 결과다"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.7915528c88a8",
+      "type": "paragraph",
+      "markdown": "순환부전 환자에게 산증이 흔하다는 지식은 유용하지만, pH 하나가 원인을 확정해 주는 것은 아니다. 대사성 산 부하와 중탄산의 소실, 이산화탄소 배출의 변화와 기존 질환이 함께 작용할 수 있다. 서로 반대 방향의 과정이 겹치면 pH가 참고범위에 있어도 중요한 이상이 존재한다. pH를 상태값으로, 그 값을 만드는 과정을 별도로 읽어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.32b80bb8397a",
+      "type": "paragraph",
+      "markdown": "혈액가스의 pH·PaCO2와 중탄산 관련 값은 서로 연결되어 있다. 어느 값이 직접 측정이고 어떤 값이 계산인지 검사 방법을 확인한다. 동맥혈과 정맥혈은 질문과 채취 위치가 달라 모든 상황에서 같은 값으로 대체하지 않는다. 채혈·처리의 오차와 산소·환기 상태, 검사의 실제 시점을 함께 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.227cc350b677",
+      "type": "heading",
+      "level": 2,
+      "text": "대사 산 부하의 여러 출발점"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.9f5a0e7eeddb",
+      "type": "paragraph",
+      "markdown": "젖산 증가는 공급·이용과 제거의 이상을 포함할 수 있고, 신장의 산 배설 저하와 다른 내인성·외인성 산도 대사성 문제에 기여할 수 있다. 혈중 젖산이 높다는 사실만으로 모든 대사 산증의 크기를 같은 수치로 설명하지 않는다. 혼합 과정에서는 한 원인을 교정해도 다른 원인이 남을 수 있다. 검사 차이와 단위·시점을 먼저 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.1e7ad71556f7",
+      "type": "paragraph",
+      "markdown": "설사 등 중탄산 손실과 염소 관련 체액 변화도 중요하다. 많은 염소가 들어오는 조건에서는 전해질의 상대적 구성이 산염기 상태에 영향을 줄 수 있다. 원인 질환과 투여된 체액, 신장 처리를 한 시간축에 놓아야 변화를 설명할 수 있다. 순환 지표가 좋아지는 동시에 산염기 양상이 다른 방향으로 변했다고 반드시 모든 치료가 실패한 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.e226169722c2",
+      "type": "heading",
+      "level": 2,
+      "text": "음이온차의 분모와 구성"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.5df881ec10b0",
+      "type": "paragraph",
+      "markdown": "통상 음이온차(anion gap)는 측정한 주요 양이온과 음이온의 차이를 이용해 다른 음이온의 기여를 추정하는 접근이다. 사용하는 식에 칼륨을 포함하는지와 검사실 범위를 확인해야 한다. 알부민은 중요한 미측정 음이온이므로 농도가 낮으면 같은 다른 산 부하에도 관찰된 차이가 덜 커 보일 수 있다. 혈중 단백과 임상 상태를 함께 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.16ba574376ed",
+      "type": "paragraph",
+      "markdown": "가상의 식 AG=Na−(Cl+HCO3)에서 Na140,Cl104,HCO3 16이면20이다. 이 수치는 식의 산술 예시이며 특정 환자의 정상·이상 기준을 정한 것이 아니다. 알부민·검사법과 다른 임상 정보를 생략한 단순 계산을 확진 기준으로 사용하지 않는다. 단위를 맞추고 같은 시점의 전해질을 사용하는 기본 과정도 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.8064bc2e42a6",
+      "type": "heading",
+      "level": 2,
+      "text": "호흡의 반응과 별도 질환"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.cbb1606e83b5",
+      "type": "paragraph",
+      "markdown": "대사성 산증에서 환기가 증가하면 이산화탄소가 줄어드는 방향의 보상이 가능하다. 그러나 환기 능력·의식·호흡근과 폐 질환이 이를 제한할 수 있다. 반대로 통증·염증·중추 자극 등으로 별도의 호흡성 변화가 겹칠 수 있다. 예상 보상의 범위를 검토하는 것은 숨겨진 두 번째 과정을 찾는 방법이며 원인 질환을 직접 확진하는 검사는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.5be361d9f4c2",
+      "type": "paragraph",
+      "markdown": "기계환기·진정과 호흡의 일이 달라진 뒤의 혈액가스를 치료 이전과 같은 조건으로 읽지 않는다. PaCO2의 변화가 대사성 원인의 해소를 뜻하는 것도 아니다. 환기와 산 생성·배설은 다른 단계다. 증례의 표에는 환기 상태와 중재 시점을 포함해 호흡과 대사의 기여를 나누어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.c70bbb128069",
+      "type": "heading",
+      "level": 2,
+      "text": "칼륨의 농도와 체내 수지"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.9bc8243970c9",
+      "type": "paragraph",
+      "markdown": "칼륨의 혈중 농도는 총체내 양뿐 아니라 세포내외 분포와 용적의 영향을 받는다. 산염기 변화·인슐린·교감 신호와 세포 손상, 신장의 배설이 각각 기여할 수 있다. 모든 산증에서 같은 크기의 칼륨 이동이 생긴다는 단순 비례식을 사용하지 않는다. 유기산·무기산과 다른 대사 조건의 차이를 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.bdcd676dda6e",
+      "type": "paragraph",
+      "markdown": "신장 배설이 줄거나 조직 손상이 겹치면 실제 총량과 분포의 문제가 함께 있을 수 있다. 칼륨을 세포 안으로 이동시킨 뒤 혈중 값이 낮아졌다는 사실만으로 체외 제거가 끝났다고 판단하지 않는다. 반대로 혈중 농도가 정상이어도 총체내 고갈이 있을 수 있다. 치료 반응을 해석할 때 이동과 제거를 다른 열에 적는 방식이 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.bd8e874aa5b7",
+      "type": "heading",
+      "level": 2,
+      "text": "임상적 통합과 재평가"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.c80c958a4e7b",
+      "type": "paragraph",
+      "markdown": "산염기·전해질 이상은 순환부전의 결과이면서 심장·혈관과 신경·호흡 기능에 다시 영향을 줄 수 있다. 어느 한 검사 숫자의 변화만 목표로 하면 원인과 장기 기능을 놓칠 수 있다. 원인 교정, 필요한 지지와 부작용의 감시는 서로 연결되지만 목적이 다르다. 실제 교정 방법·속도·용량은 질환과 위험에 따른 별도의 근거를 요구한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.b.f4b885231c99",
+      "type": "paragraph",
+      "markdown": "자료 기반 문제에서는 같은 시점의 pH·CO2·전해질과 알부민·젖산, 신장 기능 및 투여·손실을 함께 제시한다. 학습자는 먼저 계산 가능한 양을 계산하고, 남은 불확실성과 가능한 혼합 과정을 설명해야 한다. 이를 통해 식의 암기와 환자 상태의 해석을 구별할 수 있다. 가상 자료를 실제 검사 정상범위나 처방량의 표로 표시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.table.0821",
+      "type": "table",
+      "data": {
+        "title": "관찰과 판단의 구별",
+        "columns": [
+          "관찰",
+          "정보"
+        ],
+        "rows": [
+          [
+            "pH",
+            7.4
+          ],
+          [
+            "PaCO2(mmHg)",
+            20
+          ],
+          [
+            "HCO3(같은 시점)",
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pathology.shock.acid-base-integration.diagram.anion-gap-bicarbonate-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.anion-gap-bicarbonate-toy",
+      "path": "diagrams/diagram.anion-gap-bicarbonate-toy.svg",
+      "alt": "고정 Na·Cl의 음이온차 산술의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/shock/sections/pathology.shock.acid-base-integration.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.shock.acid-base-integration.001",
+    "question.pathology.shock.acid-base-integration.002"
+  ],
+  "relatedLessons": [
+    "pathology.shock.multiorgan-recovery",
+    "pathology.shock.venous-backpressure"
+  ]
+}

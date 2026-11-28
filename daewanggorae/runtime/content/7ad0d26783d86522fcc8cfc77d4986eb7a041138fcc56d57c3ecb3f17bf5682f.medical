@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.shock.reperfusion-cell-injury",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.d9bd0ae04cbb",
+      "sourceSha256": "d9bd0ae04cbb89fc3a8b43cf797de956ac2538085b968714a29498bd7b1eddc5",
+      "sourceLengthUtf16": 168,
+      "annotations": [
+        {
+          "id": "ann.b55a30eb75b9bc12af77",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 75,
+            "end": 82,
+            "exact": "산화적 인산화",
+            "prefix": "압만 낮은 환경과 모든 조건이 같지 않다. ",
+            "suffix": "가 제한되면 ATP를 공급하는 다른 경로의 "
+          },
+          "conceptId": "reader.term.5fc2ffe077b5ada0",
+          "targetDocumentId": "biochemistry.bioenergetics.oxidative-phosphorylation"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.7a9a05a9e0e4",
+      "sourceSha256": "7a9a05a9e0e4747e0fa094fc2d47d3d661a2c695773c24742ac77fb2c9c224b1",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.e5f7e2e3746f",
+      "sourceSha256": "e5f7e2e3746f7c2c096de7b034e6bbbd6868fc24dd27315b8b4f366610cf6674",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.13811496fdb430e072e0",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 4,
+            "exact": "해당과정",
+            "prefix": "",
+            "suffix": "과 ATP 가수분해, 산성 대사 환경은 효소"
+          },
+          "conceptId": "reader.term.ae7821eb164e43a8",
+          "targetDocumentId": "biochemistry.carbohydrate.glycolysis"
+        },
+        {
+          "id": "ann.d547c22f98fa310f039f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 129,
+            "end": 174,
+            "exact": "반대로 산증이 있다는 한 사실만으로 어느 장기의 허혈이 원인인지 확정하지 않는다.",
+            "prefix": "사 환경이 즉시 회복되었다고 할 수 없다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.14064f759a13",
+      "sourceSha256": "14064f759a13da9206b3e67b3a951862f354c77cd45ad0e1a37f982ae9722e8d",
+      "sourceLengthUtf16": 175,
+      "annotations": [
+        {
+          "id": "ann.254c585e36625284ae7d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 153,
+            "end": 175,
+            "exact": "측정 구획과 실제 손상 기전을 구별한다.",
+            "prefix": "만 세포 내 과부하가 생기는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.612557fb37b0",
+      "sourceSha256": "612557fb37b0f9f90c5c21cc0f8be8218513433a34366fb6ad8ee5fa148fa8fc",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.e59d57c9efd5",
+      "sourceSha256": "e59d57c9efd5a6be8f2eca35f35836c19e845aaa82691928bcee9f6e3651fac9",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.74a5cea2834adffb9a37",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 62,
+            "end": 91,
+            "exact": "종류·농도·생성 위치와 항산화·수복 능력이 중요하다.",
+            "prefix": "가 언제나 같은 독성을 갖는 것은 아니다. ",
+            "suffix": " 실험에서 산화 표지자가 증가했다는 결과를 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.f761c9cc7712",
+      "sourceSha256": "f761c9cc77123299ea7b6cd5455b402af5fc520b79df9b8d2741eaff121f448a",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.b4f62129227a8ea4806a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 50,
+            "end": 53,
+            "exact": "막전위",
+            "prefix": "투과성 전이의 조건에 영향을 줄 수 있다. ",
+            "suffix": "와 ATP 생성이 지속적으로 무너지면 세포 "
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.6372bd2a7055",
+      "sourceSha256": "6372bd2a7055aff629d9439f5fa8ca2a315ab5c209009c335c5a108bd75e58e9",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.2bd64ee444bf",
+      "sourceSha256": "2bd64ee444bfa16e9c29a9519017cc8a059d74b0d62d50bdd587c1a71b471b3e",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.reperfusion-cell-injury.b.8210d3efb7e6",
+      "sourceSha256": "8210d3efb7e6edebf6dbc98757de055f5e87df483d92eb51fa57b8a15a35b7fb",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    }
+  ]
+}

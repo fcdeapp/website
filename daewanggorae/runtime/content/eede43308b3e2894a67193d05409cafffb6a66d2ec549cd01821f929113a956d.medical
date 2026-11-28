@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.assessment.anemia-hemostasis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.471ef8254306",
+      "sourceSha256": "471ef825430631f17c49beb9b1f1d0b227e40dd2be00f8e115166c65c21e4ffb",
+      "sourceLengthUtf16": 231,
+      "annotations": [
+        {
+          "id": "ann.abbe5002bb36163ff815",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 75,
+            "end": 80,
+            "exact": "망상적혈구",
+            "prefix": "과일 수 있다. 혈색소 농도와 적혈구 지수·",
+            "suffix": ", 철 대사와 필요한 원인 검사를 연결한다."
+          },
+          "conceptId": "reader.term.fec5506483a11f5d",
+          "targetDocumentId": "hematology.anemia.reticulocytes"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.58e7e6f00a7a",
+      "sourceSha256": "58e7e6f00a7a27b6ece25b4e77dd6f5dfedf8436f291ef6f5fca0efa45502771",
+      "sourceLengthUtf16": 190,
+      "annotations": [
+        {
+          "id": "ann.f91e3ad960abedee48f0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 140,
+            "end": 190,
+            "exact": "검사값을 정상화하는 것보다 원인과 기대 반응의 시간, 수술 손실을 고려한 전략이 중요하다.",
+            "prefix": "환의 긴급도에 맞춰 교정 기회를 계획한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.9f5f3c79c680",
+      "sourceSha256": "9f5f3c79c68037aa4d147ba47d69859c258036cb0c579ae5982d4f60954d3c7a",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.5abc7dac62bb",
+      "sourceSha256": "5abc7dac62bba3f63b7d8ffd2751e5196d431f63baa8cbfcc03e89487b7ba70d",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.f96114b4e60a",
+      "sourceSha256": "f96114b4e60a75c372046319200687dcb4793f0f82a850ac43cd513086a26896",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.e84d4976b2c5",
+      "sourceSha256": "e84d4976b2c58725faef69613891aa08593a912848febe93e43818d2f67d6939",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.51e4cc124aa9",
+      "sourceSha256": "51e4cc124aa9d348afc99f56fe1ac335de6b2699321a28d27548f071dbf8a0cd",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.6b9899532625",
+      "sourceSha256": "6b98995326251b04aa89e941d4c5f50bf361584181ea3727e7ff8de445ce2888",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.32eb6f1d477a",
+      "sourceSha256": "32eb6f1d477ada42f6c83a75da3bbda18942a398caed5ab611ccb6bcef5b1862",
+      "sourceLengthUtf16": 184,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.anemia-hemostasis.b.e5d7d65ded6a",
+      "sourceSha256": "e5d7d65ded6af0c80a47e9b34b4d87ef9cd95e204ebdd885650e730e592e1256",
+      "sourceLengthUtf16": 134,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.assessment.frailty-nutrition",
+  "subjectId": "general-surgery",
+  "chapterId": "assessment",
+  "title": {
+    "ko": "노쇠·근감소와 수술 영양 평가",
+    "en": "Frailty Sarcopenia and Surgical Nutrition Assessment"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.lo.01",
+      "text": "체중과 기능·섭취의 차이를 설명한다"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.lo.02",
+      "text": "알부민의 예후 정보와 영양 진단을 구별한다"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.lo.03",
+      "text": "수술 전 재활과 회복 목표를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.bce78755273d",
+      "type": "heading",
+      "level": 2,
+      "text": "나이와 예비력은 다르다"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.a3f7845ae313",
+      "type": "paragraph",
+      "markdown": "노쇠(frailty)는 스트레스에 대한 취약성이 커진 상태이며 단순한 고령과 같지 않다. 여러 생리 체계의 예비력이 감소하면 작은 감염과 절개·약물·침상 생활에도 기능 저하가 크게 나타날 수 있다. 근감소(sarcopenia)는 근육의 양뿐 아니라 근력과 수행 능력을 평가하는 개념이다. 체질량지수가 높아도 근육이 부족할 수 있고, 체중이 정상이어도 최근의 심한 체중 감소와 저섭취가 숨어 있을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.101b70b67d80",
+      "type": "paragraph",
+      "markdown": "평가는 원래의 보행과 이동·일상생활, 인지와 감각, 최근 낙상·피로·섭취 및 사회적 도움을 포함한다. 급성 통증과 입원 뒤의 기능만 보면 원래의 노쇠와 일시적 악화를 혼동할 수 있다. 검증된 도구는 정의와 적용 대상에 맞춰 사용하며 한 요소를 임의로 전체 점수로 바꾸지 않는다. 낮은 기능은 수술 포기의 근거가 아니라 예상 부담과 개선 가능성, 환자의 목표를 논의할 근거가 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.dc16f6dddcc4",
+      "type": "heading",
+      "level": 2,
+      "text": "영양 위험은 섭취와 손실의 시간표다"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.aa9e87731f9a",
+      "type": "paragraph",
+      "markdown": "최근 체중 변화와 식사량·기간, 삼킴과 치아·구강 문제, 구역과 통증·흡수장애, 설사·누공·염증을 확인한다. 체액 과다가 있으면 체중이 유지되어도 조직 손실이 진행할 수 있다. 암과 만성 염증에서는 식사를 늘리는 것만으로 모든 이화작용을 해결하지 못할 수 있다. 에너지와 단백질, 미량영양소의 공급 및 실제 이용을 함께 생각해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.9c432192b400",
+      "type": "paragraph",
+      "markdown": "알부민은 예후와 연관되지만 혈중 농도는 염증·간 합성·모세혈관 투과성·분포·소실과 체액 상태에도 영향을 받는다. 낮은 알부민 하나를 곧바로 섭취 부족의 정량값으로 바꾸거나 알부민 주입으로 근육·면역이 회복되었다고 해석하지 않는다. 영양 진단과 계획은 섭취와 체중·체성분·기능, 질환의 부담을 통합한다. 염증이 심한 시점과 안정 시점의 지표를 같은 뜻으로 비교해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.35d084bc4ae9",
+      "type": "heading",
+      "level": 2,
+      "text": "영양 공급의 경로와 목표"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.036add580896",
+      "type": "paragraph",
+      "markdown": "위장관을 사용할 수 있는지와 실제 섭취로 목표에 도달하는지를 구별한다. 경구 식사, 경관영양과 정맥영양은 접근과 위해·생리적 효과가 다르다. 장의 사용 가능성이 있어도 의식·연하·폐쇄·흡인 위험과 장기 기능에 따라 안전한 전달 방식이 달라진다. 공급한 열량과 흡수·이용한 양이 같지 않고, 처방된 영양이 실제로 모두 투여되었다는 보장도 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.89fa45f8338c",
+      "type": "paragraph",
+      "markdown": "장기간 섭취가 부족했던 환자에서는 영양 재개 뒤의 전해질과 체액·대사 변화에 주의한다. 인산염·칼륨·마그네슘의 세포 안 이동과 비타민 요구, 수분 저류가 함께 문제될 수 있다. 초기 정상 혈중 수치가 총 저장량의 충분함을 보장하지 않는다. 위험 평가와 점진적인 공급·관찰은 개별 상태에 맞춰 계획하며, 모든 환자에게 같은 시작 속도와 보충량을 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.a4527d07161f",
+      "type": "heading",
+      "level": 2,
+      "text": "수술 전 재활과 수술 후 연결"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.b41a12cb818c",
+      "type": "paragraph",
+      "markdown": "수술 전 재활(prehabilitation)은 운동 하나의 처방이 아니라 영양·호흡·신체활동·심리와 생활 문제를 묶어 회복 여력을 개선하는 접근이다. 할 수 있는 시간을 질환의 긴급도와 맞추고, 통증·빈혈·호흡 제한으로 운동이 어려운 원인을 다룬다. 체중 증가만을 성공으로 삼기보다 활동·섭취·근력과 환자가 원하는 기능의 변화를 살핀다. 효과의 크기는 집단과 중재의 조합에 따라 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.a0eea0a2724f",
+      "type": "paragraph",
+      "markdown": "수술 뒤에는 식이 진행·진통·구역 조절·조기 움직임과 돌봄 환경이 실제 섭취와 근육 사용을 좌우한다. 퇴원 후 약을 먹고 식사를 준비할 능력, 계단과 화장실을 사용할 조건을 확인해야 병원에서의 개선이 유지된다. 수술 부위가 잘 아물었다는 결과와 독립생활을 회복했다는 결과는 다르다. 영양과 노쇠 평가는 합병증 예방뿐 아니라 회복의 의미를 환자의 생활에 연결하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.42ee43fb1e11",
+      "type": "heading",
+      "level": 2,
+      "text": "체중 감소의 계산과 질"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.89d088024a48",
+      "type": "paragraph",
+      "markdown": "평소 체중 70kg에서 63kg으로 줄었다면 감소량은 7kg, 이전 체중 대비 10%다. 같은 비율도 변화 기간과 의도·섭취·수분 상태에 따라 의미가 다르다. 부종이 새로 생기면 실제 조직 손실이 체중계에서 가려질 수 있다. 따라서 절대 체중과 변화율, 시간과 원인을 함께 기록해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.b.74b817169a87",
+      "type": "paragraph",
+      "markdown": "운동 중재를 평가할 때에도 보행 검사와 근력, 일상생활에서 실제 필요한 과제를 연결한다. 검사 수행이 좋아져도 집의 계단·이동 보조·돌봄 조건이 해결되지 않으면 독립 생활은 어려울 수 있다. 영양 공급과 근육 사용, 생활 환경의 세 요소를 따로 평가하고 회복 계획에서 다시 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.frailty-nutrition.table0847",
+      "type": "table",
+      "data": {
+        "title": "구조·생리·근거와 관리의 연결",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "체중",
+            "기간·의도·수분의 영향"
+          ],
+          [
+            "근육",
+            "양·근력·실제 수행"
+          ],
+          [
+            "알부민",
+            "염증·합성·분포·소실도 영향"
+          ],
+          [
+            "계획",
+            "실제 섭취·재활·돌봄"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/assessment/sections/general-surgery.assessment.frailty-nutrition.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.assessment.frailty-nutrition.001"
+  ],
+  "relatedLessons": [
+    "general-surgery.assessment.cardiopulmonary-reserve",
+    "general-surgery.assessment.anemia-hemostasis"
+  ]
+}

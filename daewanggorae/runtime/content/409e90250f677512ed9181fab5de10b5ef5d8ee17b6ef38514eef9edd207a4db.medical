@@ -1,0 +1,59 @@
+{
+  "id": "cardiology.chapter.diagnosis",
+  "subjectId": "cardiology",
+  "sections": [
+    {
+      "id": "cardiology.diagnosis.chest-discomfort",
+      "title": {
+        "ko": "흉부 불편감의 병력과 위험 감별",
+        "en": "Chest Discomfort and Risk Differentiation"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.chest-discomfort.json"
+    },
+    {
+      "id": "cardiology.diagnosis.serial-tests",
+      "title": {
+        "ko": "연속 검사와 진단 확률의 갱신",
+        "en": "Serial Testing and Diagnostic Probability"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.serial-tests.json"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment",
+      "title": {
+        "ko": "실신의 정의와 초기 평가",
+        "en": "Definition and Initial Assessment of Syncope"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.syncope-assessment.json"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope",
+      "title": {
+        "ko": "반사성 실신의 순환 기전",
+        "en": "Circulatory Mechanisms of Reflex Syncope"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.reflex-syncope.json"
+    },
+    {
+      "id": "cardiology.diagnosis.orthostatic-hypotension",
+      "title": {
+        "ko": "기립성 저혈압의 기전과 측정",
+        "en": "Mechanisms and Measurement of Orthostatic Hypotension"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.orthostatic-hypotension.json"
+    },
+    {
+      "id": "cardiology.diagnosis.cardiac-syncope-monitoring",
+      "title": {
+        "ko": "심장성 실신과 사건–리듬 연관",
+        "en": "Cardiac Syncope and Symptom Rhythm Correlation"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.cardiac-syncope-monitoring.json"
+    }
+  ],
+  "status": "partial",
+  "title": {
+    "ko": "진단과 임상 판단",
+    "en": "Diagnosis and Clinical Assessment"
+  }
+}

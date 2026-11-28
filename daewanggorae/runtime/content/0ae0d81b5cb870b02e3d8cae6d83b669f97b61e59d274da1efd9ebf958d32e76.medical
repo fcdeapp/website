@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.transplant.allorecognition-pathways",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.transplant.allorecognition-pathways.b.d513654659c8",
+      "sourceSha256": "d513654659c8525ff4ee6cdb6f57b54d0fdbc6df2ea0b2db0f74db2f72cc67b8",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.4aa2957834c4d3b15953",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 112,
+            "end": 116,
+            "exact": "항원제시",
+            "prefix": "합체를 인식한다. 간접 인식에서는 수혜자의 ",
+            "suffix": "세포가 공여자 유래 단백질을 처리하여 자기 "
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.transplant.allorecognition-pathways.b.1fd1fb0a1290",
+      "sourceSha256": "1fd1fb0a12901d8e371c263d97753cd2c3fb8d575fcbcf4460aa9a33741ee771",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.allorecognition-pathways.b.3e2530dab414",
+      "sourceSha256": "3e2530dab414ddb4901e1215ef4de1c4c592f23f0e362db7d76fa5cd9799886a",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.28d5d687a646bb94531e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 85,
+            "exact": "MHC의 차이는 중요한 자극이지만 minor histocompatibility antigen 같은 다른 유전적 차이의 펩타이드도 반응에 기여할 수 있다.",
+            "prefix": "",
+            "suffix": " 공여자·수혜자의 노출 이력과 기억세포, 염"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.transplant.allorecognition-pathways.b.23c1777d886b",
+      "sourceSha256": "23c1777d886b4a7b99795fef2b2ed4f31b6d1566ea2d0a43326a4c1477e2b1e6",
+      "sourceLengthUtf16": 178,
+      "annotations": [
+        {
+          "id": "ann.32b2bbba756a025aa830",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 20,
+            "end": 22,
+            "exact": "보체",
+            "prefix": "항체는 공여자 관련 표적에 결합하여 ",
+            "suffix": "와 세포 효과기, 미세혈관 손상을 연결할 수"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        },
+        {
+          "id": "ann.5e531e76fe0f64941839",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 51,
+            "end": 100,
+            "exact": "그러나 항체 검출만으로 현재 장기의 모든 기능 저하가 항체매개 거부라고 확정하지 않는다.",
+            "prefix": "효과기, 미세혈관 손상을 연결할 수 있다. ",
+            "suffix": " 조직 소견과 장기별 진단 기준, 감염·독성"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.transplant.allorecognition-pathways.b.c34132839b4f",
+      "sourceSha256": "c34132839b4f4d0694c28194576bf67eb3764268df892520f5f6fa756d75be1a",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.allorecognition-pathways.b.b50ccdf2d14f",
+      "sourceSha256": "b50ccdf2d14f7d6f59bb4e6d80f077521fe4fceaeffaf7c3a7a63d89a5ad1d3e",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.allorecognition-pathways.b.3597d23440cd",
+      "sourceSha256": "3597d23440cd9d3f88f341f6441a3a9021482b2761c480f707307c5e9e8fc44b",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.allorecognition-pathways.b.0aa3eeaf4d86",
+      "sourceSha256": "0aa3eeaf4d869ee36cc84ea3570a6f15f465fb1b5f3e93a078cc50ad6bf038c1",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    }
+  ]
+}

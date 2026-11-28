@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.cough.cough-reflex-hypersensitivity",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.b.f6cb9bc8d60c",
+      "sourceSha256": "f6cb9bc8d60c9194e8acae3c06ed5003e5afc1ab7a355bcbbb131b4f5bc97501",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.b.76033d444703",
+      "sourceSha256": "76033d444703a14fdecbb03847ace85e7d2f517f7a1584df41c407aeaf062129",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.b.45c907943b9a",
+      "sourceSha256": "45c907943b9aad309c0fb68bc98a19cf9051a660ef7afa446d8802f8c0152d89",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.5327371e8c3c949e7b83",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 13,
+            "end": 29,
+            "exact": "hypersensitivity",
+            "prefix": "기침 과민성(cough ",
+            "suffix": ")은 약한 자극에도 기침 욕구와 반응이 쉽게"
+          },
+          "conceptId": "reader.term.c00cc6a01122c518",
+          "targetDocumentId": "immunology.hypersensitivity.mechanisms"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.b.a5d6cc6d1cd7",
+      "sourceSha256": "a5d6cc6d1cd77ddf0532b98682ff573c729dd4470801f96ca20f635cc0f6bfbd",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.b.21a918ee2021",
+      "sourceSha256": "21a918ee2021a6e71e67a124c19d29fd6293dec355b8221b80595f7f5be6cb1f",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.b.b96272c5f965",
+      "sourceSha256": "b96272c5f965b1b65dec6226af91a22ac9924ed885117ee07c4e34a1e5dd9dab",
+      "sourceLengthUtf16": 166,
+      "annotations": [
+        {
+          "id": "ann.602933e02ce3ee1b2a0a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 122,
+            "end": 166,
+            "exact": "보호 기능을 남기면서 불필요한 과민 반응과 생활 부담을 줄이는 균형이 중요하다.",
+            "prefix": " 분비물과 기도 보호의 필요성을 확인한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.b.cdfce534480e",
+      "sourceSha256": "cdfce534480ec247906b4e525cf5fc3687390ee0fda68514f6e9dad461fb79c7",
+      "sourceLengthUtf16": 161,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.b.4fae7e396d85",
+      "sourceSha256": "4fae7e396d85e8dd1149bfb759987496b20556bf54deb158dae6ad1c4d7a3e89",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.p.extra0845.0",
+      "sourceSha256": "65a1793ca864e6221fdaf7a6d151b4152d7763dcce2abdee669ce03688e1fe74",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.cough-reflex-hypersensitivity.p.extra0845.1",
+      "sourceSha256": "93e9384467c22f04cb11a50644fba3adc55671944ad0dfceeccdff73c622e9b2",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.0e89a4245aa92cf1c8d8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 135,
+            "end": 186,
+            "exact": "횟수가 비슷해도 두려움과 회피가 줄어 활동이 나아졌다면 그 변화도 중요한 반응으로 기록한다.",
+            "prefix": "용하면 서로 다른 결과를 포착할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

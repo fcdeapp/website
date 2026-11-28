@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "diagnostic-pathology.specimen.interpretation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.0af196685f66",
+      "sourceSha256": "0af196685f669fa06b42f99cdc810755bae8f0535c7f420135a8dfb87a6dcc99",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.2dcaa548da4dcdb4b5ff",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 101,
+            "end": 159,
+            "exact": "괴사 부위만 채취하거나 중요한 병변이 표본 밖에 있으면 정교한 염색을 해도 진단 정보가 제한될 수 있다.",
+            "prefix": "취 부위와 양, 보존과 처리에서 시작된다. ",
+            "suffix": " 임상 질문과 영상상 위치, 선행 치료와 병"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.a8b187109181",
+      "sourceSha256": "a8b18710918111e1650f52a96bc103d5a4260641d230d4c52d1e147db84336d6",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.3b55a2f42792",
+      "sourceSha256": "3b55a2f42792867cc89381836d2c86f238aaab820200e411b3c622c562a22152",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.a093ba60c3bbe122e861",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 72,
+            "end": 117,
+            "exact": "큰 장기의 모든 세포를 현미경으로 보는 것이 아니므로 표본 추출 전략이 중요하다.",
+            "prefix": " 조직 절편으로 만들지 선택하는 과정이다. ",
+            "suffix": " 종양의 가장 깊은 침범과 의심되는 절제연,"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.c7ea9d564710",
+      "sourceSha256": "c7ea9d5647100b66d92f1c39f2bb7030798e71681ee66fb90d175dfe3c8cad43",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.1130507cdaf6",
+      "sourceSha256": "1130507cdaf6ccc4b52bebac7d736ac168647bf15db15a96de2154570bd1e524",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.95c873930286",
+      "sourceSha256": "95c8739302863147d4a84588265d1cfd8d0f6788da786830af12a052ed670b9b",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.b1b2a184eb530af04af2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 36,
+            "end": 85,
+            "exact": "검출된 이상이 진단을 지지하는지, 치료 반응을 예측하는지, 의미가 불확실한지를 구별한다.",
+            "prefix": ", 증폭 등 특정 이상을 평가할 수 있다. ",
+            "suffix": " 종양 함량과 검체의 질, 검사 범위와 검출"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.6b8523cb2f47",
+      "sourceSha256": "6b8523cb2f473d7631a0457cc9fd13fc2a23e3561c39f4b366c3d4d7c9bcc3c4",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.cce2171170ba",
+      "sourceSha256": "cce2171170ba4352605efe7c027eaa770503a27ace2897cd159b00936279a66f",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.5993e1d59017",
+      "sourceSha256": "5993e1d59017e30d5f3f1f1dda23f2e0cc8eb24183768193dfa9b2e83c635f52",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "diagnostic-pathology.specimen.interpretation.b.aec5a63eed90",
+      "sourceSha256": "aec5a63eed902f9c6a63911227db60ea2ad590cc2e1fba838c503de63f972c4e",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    }
+  ]
+}

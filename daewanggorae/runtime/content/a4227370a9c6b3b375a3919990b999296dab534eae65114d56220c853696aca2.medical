@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "molecular-biology.rna.translation-code",
+  "subjectId": "molecular-biology",
+  "chapterId": "rna",
+  "title": {
+    "ko": "유전암호와 번역의 정확성·에너지",
+    "en": "Genetic Code, Translation Fidelity and Energetics"
+  },
+  "learningObjectives": [
+    {
+      "id": "molecular-biology.rna.translation-code.lo.01",
+      "text": "코돈과 해독틀을 올바른 방향으로 읽는다"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.lo.02",
+      "text": "tRNA 충전과 리보솜 해독의 정확성을 구별한다"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.lo.03",
+      "text": "번역 비용의 계산 경계를 명시한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "molecular-biology.rna.translation-code.b.83ef9994241c",
+      "type": "heading",
+      "level": 2,
+      "text": "세 글자 암호와 읽기 방향"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.2da7dc5814b8",
+      "type": "paragraph",
+      "markdown": "리보솜은 mRNA를5′→3′ 방향으로 읽고 폴리펩타이드를 아미노말단에서 카르복실말단 방향으로 연장한다. 세 뉴클레오타이드 코돈(codon)이 한 아미노산 또는 종결 신호와 연결되지만, 어느 위치에서 읽기 시작하는지에 따라 같은 서열의 해석이 달라진다. 해독틀(reading frame)을 고르지 않고 아무 위치에서나 세 글자씩 묶는 것은 번역을 재현한 것이 아니다. DNA와 RNA, 주형가닥과 암호화가닥의 방향부터 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.0ae0ad0eedaa",
+      "type": "paragraph",
+      "markdown": "표준 유전암호에서는 여러 코돈이 같은 아미노산을 지정하는 축퇴성(degeneracy)이 존재한다. 코돈 하나가 세포 상황과 무관하게 아무 아미노산이나 고른다는 뜻은 아니다. 미토콘드리아의 암호 등에는 예외가 있으므로 표준 세포질 암호를 모든 유전체에 그대로 적용하지 않는다. 종결코돈은 일반적으로 아미노산을 지정하는 tRNA 대신 방출인자에 의해 인식된다. 특정 맥락의 재해독 현상과 기본 규칙을 구별하여 학습한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.099d1bb32ffb",
+      "type": "heading",
+      "level": 2,
+      "text": "tRNA는 어댑터이고 충전효소가 화물을 고른다"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.008497b7f799",
+      "type": "paragraph",
+      "markdown": "전이RNA(transfer RNA, tRNA)의 안티코돈은 mRNA 코돈과 짝을 이루며,3′말단에는 아미노산이 붙는다. 아미노아실tRNA합성효소(aminoacyl-tRNA synthetase)는 아미노산과 적절한 tRNA를 선택하여 충전한다. ATP가 AMP와 피로인산으로 전환되고 피로인산 가수분해가 결합하여 반응을 진행시킨다. ATP 한 분자를 쓴다는 말과 고에너지 인산결합 두 당량을 소비한다는 말을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.671577adaec9",
+      "type": "paragraph",
+      "markdown": "리보솜은 주로 코돈–안티코돈 관계를 확인하며 tRNA에 붙은 아미노산의 화학적 정체를 직접 같은 방식으로 검증하는 장치는 아니다. 따라서 잘못 충전된 tRNA는 정확한 코돈 결합을 해도 잘못된 아미노산을 전달할 수 있다. 충전효소의 선택성과 교정(editing)은 번역 정확성의 별도 층이다. Wobble 짝짓기는 일부 위치의 허용된 유연성이지 충전 오류를 허용하는 장치가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.a31b85ebd7de",
+      "type": "heading",
+      "level": 2,
+      "text": "개시·신장·종결의 서로 다른 역할"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.bcf688dbffed",
+      "type": "paragraph",
+      "markdown": "진핵세포의 번역 개시에서는 작은 소단위체와 개시인자, 메티오닌 개시tRNA가 복합체를 이루고 mRNA의 시작 위치를 찾는다. 많은 mRNA에서 캡 의존성 모집과 스캐닝이 중요하지만 모든 번역이 같은 방식으로만 시작되는 것은 아니다. 시작 코돈 주변 서열과 구조는 위치 선택에 영향을 준다. 최초 메티오닌이 나중에 제거될 수 있으므로 성숙 단백질의 첫 아미노산과 번역 직후의 시작 잔기를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.ce13ed52b18e",
+      "type": "paragraph",
+      "markdown": "신장에서는 아미노아실tRNA가 A자리로 전달되고, P자리에 있던 사슬이 새 아미노산으로 옮겨지며, 리보솜이 이동한다. 진핵 신장인자 eEF1A와 eEF2는 각각 전달과 이동의 GTP 사용에 관여한다. 세균의 EF-Tu·EF-G와 기능을 비교할 수 있지만 사람 단백질의 이름으로 혼용하지 않는다. 개시tRNA가 처음 P자리에 들어간다는 사실은 일반적인 신장tRNA의 A자리 유입과 구별된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.e13c46e05136",
+      "type": "paragraph",
+      "markdown": "펩타이드결합 형성의 촉매 중심에는 rRNA가 핵심 역할을 한다. 리보솜을 단백질만으로 이루어진 효소라고 설명하지 않는다. 결합 형성에는 아미노아실tRNA에 저장된 에너지가 이용되며, 매 결합 순간 별도의 ATP가 직접 가수분해되어야 하는 것은 아니다. 종결 후에는 폴리펩타이드 방출과 리보솜 재활용이 이어진다. 종결코돈은 단백질 사슬의 추가 잔기 하나로 세지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.65d18f1c2461",
+      "type": "heading",
+      "level": 2,
+      "text": "번역 수지를 계산하는 경계"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.950dc022f053",
+      "type": "paragraph",
+      "markdown": "아미노산 n개인 사슬을 만들려면 n개의 tRNA 충전과 n−1회의 펩타이드결합 형성이 필요하다. 충전 비용을 잔기당2고에너지 인산결합 당량, 신장 전달·이동을 추가 잔기당2GTP로 두고 개시·종결·재활용 비용을 제외한 모형에서는 합계가2n+2(n−1)=4n−2당량이다. GTP와 ATP의 실제 농도·자유에너지가 언제나 같다는 뜻은 아니며 수지 비교용 당량으로 세는 것이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.1b6045c570f4",
+      "type": "paragraph",
+      "markdown": "예를 들어5잔기 사슬은 충전10당량, 신장8GTP로 이 경계의 합계18당량이다. 이것을 단백질 합성의 전체 세포 비용이라고 부르면 mRNA 합성·접힘·분해·수송과 제외한 단계들을 빠뜨린다. 또 전체5잔기에 신장 전달·이동을5회 적용하면 개시 잔기까지 일반 신장 잔기로 세는 오류가 생긴다. 문제의 계산 경계를 먼저 읽고 잔기 수와 결합 수를 나누어 적는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.5273c2e75bcc",
+      "type": "heading",
+      "level": 2,
+      "text": "서열의 길이와 단백질의 길이"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.8a3d79ef8ae0",
+      "type": "paragraph",
+      "markdown": "5′-AUG GCU UUU GGA UAC UAA-3′라는 가상 mRNA를 표시한 AUG에서 표준 암호로 읽으면 Met–Ala–Phe–Gly–Tyr의5잔기 뒤에 종결된다.6코돈 모두를 아미노산으로 세면 안 된다. 5′UTR이나3′UTR은 이 예에서 생략했으며, 실제 전체 mRNA 길이에는 이런 비번역 구간과 poly(A) 등이 포함될 수 있다. 전사체 길이만으로 단백질 길이를 항상 정할 수 없는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.b.6a397ab801f6",
+      "type": "paragraph",
+      "markdown": "염기 치환은 동의·미스센스·넌센스 변화 등을 만들 수 있고 삽입·결실은 해독틀에 영향을 줄 수 있다. 동의 변이도 스플라이싱·RNA 안정성·번역 속도 등에 영향을 줄 가능성이 있어 언제나 생물학적으로 중립이라고 할 수는 없다. 반대로 가능한 분자 효과를 발견했다고 곧바로 질환 원인으로 확정할 수도 없다. 서열 변화, 발현·기능 실험, 집단·임상 근거의 질문을 각각 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.diagram.translation-partial-cost",
+      "type": "diagram",
+      "diagramRef": "diagram.translation-partial-cost",
+      "path": "diagrams/diagram.translation-partial-cost.svg",
+      "alt": "번역의 한정된 비용 계수의 독립 계산 곡선"
+    },
+    {
+      "id": "molecular-biology.rna.translation-code.table.compare",
+      "type": "table",
+      "data": {
+        "title": "번역의 정확성과 비용",
+        "columns": [
+          "과정",
+          "주요 역할",
+          "수지/한계"
+        ],
+        "rows": [
+          [
+            "tRNA 충전",
+            "아미노산·tRNA 선택",
+            "ATP→AMP,2당량"
+          ],
+          [
+            "리보솜 해독",
+            "코돈·안티코돈",
+            "화물정체검사와구별"
+          ],
+          [
+            "신장",
+            "전달·이동",
+            "추가잔기당2GTP"
+          ],
+          [
+            "종결",
+            "방출·재활용",
+            "잔기수에미포함"
+          ]
+        ],
+        "notes": "계산은개시·종결·재활용을제외하며세균과진핵인자명칭을구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/molecular-biology/chapters/rna/sections/molecular-biology.rna.translation-code.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "종결코돈은 단백질 잔기로 세지 않는다.",
+    "tRNA 충전과 리보솜의 코돈 해독은 서로 다른 정확성 단계다."
+  ],
+  "reviewQuestions": [
+    "question.molecular-biology.rna.translation-code.001",
+    "question.molecular-biology.rna.translation-code.002"
+  ],
+  "relatedLessons": [
+    "molecular-biology.rna.transcription-processing",
+    "molecular-biology.proteins.targeting-quality-control",
+    "molecular-biology.rna.stability-silencing"
+  ]
+}

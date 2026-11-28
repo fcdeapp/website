@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.sterol-sensing-pairs",
+  "lessonId": "biochemistry.lipids.cholesterol-synthesis",
+  "title": "세포 내 스테롤 감지",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "소포체 스테롤 부족",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "SREBP2 이동·절단 활성화",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "활성 SREBP2",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "합성 효소·LDLR 발현",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "세포 내 에스터화",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "자유형의 저장 형태 전환",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.sterol-sensing-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "조건부 조절",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.sterol-sensing-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "전사 촉진",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.sterol-sensing-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "체외 제거와 구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "세포의 구획·수송·약물·발현과 유량의 차이를 생략한 대표 연결이다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.lipids.fatty-acid-synthesis",
+  "subjectId": "biochemistry",
+  "chapterId": "lipids",
+  "title": {
+    "ko": "지방산 합성의 탄소·환원력·조절",
+    "en": "Carbon, Reducing Power and Regulation in Fatty Acid Synthesis"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.lo.01",
+      "text": "ACC와 지방산합성효소의 역할을 구별한다"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.lo.02",
+      "text": "팔미트산 합성의 탄소·ATP·NADPH 수지를 계산한다"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.lo.03",
+      "text": "합성과 산화를 구획·보조인자·조절로 비교한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.c14a1abd38a9",
+      "type": "heading",
+      "level": 2,
+      "text": "합성은 산화 경로를 단순히 거꾸로 돌리는 일이 아니다"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.a9dedb978ffa",
+      "type": "paragraph",
+      "markdown": "새 지방산 합성(de novo lipogenesis)은 작은 탄소 단위를 긴 아실 사슬로 조립한다. 세포질의 지방산합성효소(fatty acid synthase, FASN)와 미토콘드리아 베타산화는 구획·효소·운반체·산화환원 보조인자가 다르다. 합성에는 주로 NADPH가 환원력을 제공하고, 산화에서는 NADH와 FAD 관련 전자 전달이 에너지 생성에 연결된다. 같은2탄소 단위가 등장해도 두 경로를 하나의 가역 효소 줄기로 외우면 조절을 설명하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.98fd75a31476",
+      "type": "paragraph",
+      "markdown": "미토콘드리아에서 만들어진 아세틸CoA의 탄소가 세포질 합성에 쓰이려면 구획을 건너는 경로가 필요하다. 시트르산(citrate)이 밖으로 이동한 뒤 ATP시트르산분해효소(ATP citrate lyase, ACLY)에 의해 세포질 아세틸CoA와 옥살로아세트산을 제공하는 경로가 중요하다. 이때 미토콘드리아 내막을 자유롭게 아세틸CoA가 통과한다고 설명하지 않는다. 다른 탄소 공급 경로도 세포와 영양 상태에 따라 기여할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.d67cbbd4505a",
+      "type": "heading",
+      "level": 2,
+      "text": "ATP를 써서 말로닐CoA를 만드는 이유"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.95d9a8a7e53b",
+      "type": "paragraph",
+      "markdown": "아세틸CoA카르복실화효소(acetyl-CoA carboxylase, ACC)는 중탄산의 탄소를 이용하여 아세틸CoA를 말로닐CoA(malonyl-CoA)로 전환하며 ATP와 비오틴(biotin)이 관여한다. 이 단계에서 붙인 탄소는 뒤의 축합에서 이산화탄소로 빠진다. 최종 지방산 사슬에 그대로 남을 탄소를 하나 추가하기 위한 반응이 아니라, 뒤따르는 탈탄산 축합이 진행되도록 활성화된 연장 단위를 만드는 과정으로 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.676ae4467258",
+      "type": "paragraph",
+      "markdown": "ACC의 동형효소와 세포 내 위치는 조절에 차이를 만든다. ACC1은 합성에 필요한 말로닐CoA 공급과, ACC2는 미토콘드리아 주변의 지방산 유입 조절과 특히 관련하여 설명할 수 있지만, 조직의 실제 기능을 완전히 분리된 두 상자로 고정하지 않는다. 시트르산·긴사슬 아실CoA와 에너지 상태, 인산화 및 발현 조절이 함께 작용한다. AMPK 관련 인산화는 에너지 부족에서 합성 경로를 억제하는 방향과 연결된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.fd389d39ff88",
+      "type": "heading",
+      "level": 2,
+      "text": "운반단백질 위에서 반복되는 네 반응"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.e96048dd0892",
+      "type": "paragraph",
+      "markdown": "지방산합성효소는 여러 촉매 기능을 가진 복합 단백질이며, 아실운반단백질(acyl carrier protein, ACP)의 포스포판테테인 팔이 중간체를 붙잡고 이동시킨다. 아세틸 시발체와 말로닐 연장 단위를 적재한 뒤 축합·환원·탈수·환원이 반복된다. 두 환원 단계에 NADPH가 사용되고 각 회차마다 사슬이 순수하게2탄소씩 길어진다. 지방산은 자유롭게 물에 떠다니는 중간체로 매번 확산하는 것이 아니라 효소의 기능 부위 사이를 전달된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.8db5b5a86aab",
+      "type": "paragraph",
+      "markdown": "포유류의 주된 지방산합성효소 반응은16탄소 팔미트산(palmitate)을 생성하는 방향으로 설명한다. 종결 시에는 티오에스터레이스 기능이 사슬을 방출한다. 이후의 연장과 불포화화는 별도 효소계와 구획에서 이루어질 수 있다. 소포체에서의 연장을 세포질 FASN과 동일한 다기능 복합체가 끝없이 수행한다고 설명하지 않는다. 일부 미토콘드리아의 별도 지방산 합성계도 있으므로 모든 합성을 세포질의 한 경로로만 일반화하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.a8ca56108772",
+      "type": "heading",
+      "level": 2,
+      "text": "팔미트산 한 분자의 수지"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.09187e657953",
+      "type": "paragraph",
+      "markdown": "2탄소 시발체에서16탄소 사슬에 도달하려면7회의2탄소 연장이 필요하다. 말로닐CoA는7분자이고 이를 만드는 데 아세틸CoA7분자와 ATP7분자가 쓰인다. 처음 시발체까지 합하면 아세틸CoA는8분자다. 각 연장 회차의 두 환원 단계에 필요한 NADPH는 총14분자다. 말로닐CoA가3탄소라는 이유로 최종 사슬을2+3×7=23탄소로 계산하면 축합 때의 탈탄산을 빠뜨린 것이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.543ed1db1810",
+      "type": "paragraph",
+      "markdown": "이7ATP·14NADPH라는 수지는 지정한 ACC와 FASN 단계의 비용이다. 미토콘드리아 탄소를 밖으로 내보내고 세포질 아세틸CoA를 재생하는 비용, NADPH 생성 경로의 비용, 합성된 지방산을 아실CoA로 활성화하는 비용까지 모두 포함한 전신 총비용은 아니다. 문제에서 어느 경계를 포함하는지 먼저 정해야 숫자를 비교할 수 있다. ATP 한 분자 사용과 고에너지 인산결합 당량도 반응 산물이 ADP인지 AMP인지에 따라 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.d60486668f0f",
+      "type": "heading",
+      "level": 2,
+      "text": "NADPH 공급과 합성의 상호 조절"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.c2fdf1ab4e6f",
+      "type": "paragraph",
+      "markdown": "오탄당인산경로(pentose phosphate pathway)와 말산효소(malic enzyme) 등은 세포질 NADPH 공급에 기여할 수 있다. 기여율은 세포와 기질 조건에 따라 달라지므로 언제나 정확히 절반씩 공급한다고 고정하지 않는다. NADPH는 지방산 합성뿐 아니라 항산화와 다른 환원 반응에도 필요하다. 한 경로의 유량이 증가해도 경쟁하는 사용처와 재생 능력에 따라 실제 합성량이 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.eaa62443b020",
+      "type": "paragraph",
+      "markdown": "말로닐CoA는 긴사슬 지방산의 미토콘드리아 유입에 관련된 CPT1을 억제하는 신호다. 합성 신호가 강할 때 같은 지방산을 즉시 산화 경로로 보내는 낭비를 줄이는 조절로 이해할 수 있다. 그러나 이는 모든 구획에서 합성과 산화가 절대 동시에 일어날 수 없다는 뜻은 아니다. 조직 간 차이와 구획별 대사가 존재하고, 관찰한 총유량에는 여러 세포가 섞여 있을 수 있다. 단순 그림의 상호 억제를 생체 전체의 불가능 조건으로 확대하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.f4ba82aece18",
+      "type": "heading",
+      "level": 2,
+      "text": "합성률과 혈중 중성지방은 같은 양이 아니다"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.b.329d604afc8e",
+      "type": "paragraph",
+      "markdown": "새 지방산은 중성지방·인지질 등에 편입되거나 다른 지질로 가공될 수 있다. 혈중 중성지방 농도에는 식사 유래 입자, 간의 분비, 말초 제거가 함께 영향을 준다. 따라서 농도가 높다는 정보만으로 간의 새 지방산 합성률을 바로 계산할 수 없다. 안정동위원소 추적 등은 탄소의 기원과 합성 유량을 묻는 데 이용되지만, 표지 희석·전구체 풀·시간에 관한 가정이 필요하다. 효소 발현량, 대사산물 농도, 실제 유량이라는 서로 다른 관찰을 구분하는 것이 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.diagram.fatty-synthesis-stoichiometry",
+      "type": "diagram",
+      "diagramRef": "diagram.fatty-synthesis-stoichiometry",
+      "path": "diagrams/diagram.fatty-synthesis-stoichiometry.svg",
+      "alt": "FASN 연장 회차의 계수의 독립 계산 곡선"
+    },
+    {
+      "id": "biochemistry.lipids.fatty-acid-synthesis.table.compare",
+      "type": "table",
+      "data": {
+        "title": "합성과 산화 비교",
+        "columns": [
+          "항목",
+          "대표 합성",
+          "대표 베타산화"
+        ],
+        "rows": [
+          [
+            "장소",
+            "세포질FASN",
+            "미토콘드리아"
+          ],
+          [
+            "운반",
+            "ACP",
+            "CoA"
+          ],
+          [
+            "전자",
+            "NADPH 소비",
+            "NADH·FAD관련생성"
+          ],
+          [
+            "2C 단위",
+            "말로닐탈탄산연장",
+            "아세틸CoA 방출"
+          ],
+          [
+            "조절 연결",
+            "말로닐CoA",
+            "CPT1 유입억제"
+          ]
+        ],
+        "notes": "별도 연장·소기관 경로가 있으며7ATP·14NADPH는ACC/FASN의 지정 경계다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/lipids/sections/biochemistry.lipids.fatty-acid-synthesis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "팔미트산의 지정 ACC·FASN 수지는 아세틸CoA 8,ATP 7,NADPH 14분자다.",
+    "각 말로닐 단위는 탈탄산 뒤 순수하게 2탄소를 연장한다."
+  ],
+  "reviewQuestions": [
+    "question.biochemistry.lipids.fatty-acid-synthesis.001",
+    "question.biochemistry.lipids.fatty-acid-synthesis.002"
+  ],
+  "relatedLessons": [
+    "biochemistry.metabolism.fed-fasting-integration",
+    "biochemistry.lipids.glycerolipid-synthesis"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.interstitial.ipf-progressive-fibrosis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.b.100209ad567c",
+      "sourceSha256": "100209ad567c90e26eeed29e7047255d32ce5d1f488f10b796e010745b5b34dd",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.1a605e9c38af7da11201",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 96,
+            "end": 150,
+            "exact": "반복 상피 손상과 비정상적인 회복, 섬유아세포·근섬유아세포와 세포외기질의 축적이 기전에 중요하다.",
+            "prefix": "임상·영상·병리 근거를 통합하여 진단한다. ",
+            "suffix": " 단순히 염증이 오래되어 흉터로 바뀌는 하나"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.b.98d771a07298",
+      "sourceSha256": "98d771a072980e0504d789e63251b36b7fb8e1db5f0c29b88dfb34b577095689",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.b.4f2fc417f46c",
+      "sourceSha256": "4f2fc417f46cce9e02b8666bf3b37baea555b86b29fbfc8366ae528f1d43b6b8",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.b.45f0daf44827",
+      "sourceSha256": "45f0daf4482761bc3921d97a9b02d4851bd0a8f2b01bc4168b17dda10d39ac2a",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.b.483486af7e9f",
+      "sourceSha256": "483486af7e9f392470aaa56c29deb9936f87100a45556677040237776977ca3d",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.b.8cc79c5e37ed",
+      "sourceSha256": "8cc79c5e37ede27abc96ee2a63f83f21d5722771774e4cbf5a6dc322a73dd018",
+      "sourceLengthUtf16": 180,
+      "annotations": [
+        {
+          "id": "ann.8d4195a20dee0c94acb5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 27,
+            "end": 29,
+            "exact": "기흉",
+            "prefix": " 호흡·산소화 악화에서는 감염과 부종·색전·",
+            "suffix": ", 약물과 다른 원인 및 급성 폐손상의 가능"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.b.d148ca234b7e",
+      "sourceSha256": "d148ca234b7e225601c60011edbd461308c4e374d49d669069b6d78195715b39",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.b.5ba8bf530bdb",
+      "sourceSha256": "5ba8bf530bdb109d8c2bc443b78871a1137303bd70576b8b931cbf8b1d306e2f",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.cc4a55d1364b1c568046",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 149,
+            "end": 186,
+            "exact": "진행을 늦추려는 목표와 오늘의 부담을 줄이는 목표가 모두 중요하다.",
+            "prefix": ", 이상반응과 환자 선호를 함께 비교한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.p.extra0846.0",
+      "sourceSha256": "701634eab8c07f565f0829fbf8e73d5b580ce79ab70e42d30476db2db5bfa349",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.interstitial.ipf-progressive-fibrosis.p.extra0846.1",
+      "sourceSha256": "1d7d0d9c709ea12b05fe2af66a08f9c77494f79c585915a76d113923caf43fe9",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    }
+  ]
+}

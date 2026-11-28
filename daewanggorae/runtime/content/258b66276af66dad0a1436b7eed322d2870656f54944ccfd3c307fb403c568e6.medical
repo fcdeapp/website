@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "molecular-biology.rna.stability-silencing",
+  "subjectId": "molecular-biology",
+  "chapterId": "rna",
+  "title": {
+    "ko": "RNA 안정성·소형 RNA·품질감시",
+    "en": "RNA Stability, Small RNAs and Surveillance"
+  },
+  "learningObjectives": [
+    {
+      "id": "molecular-biology.rna.stability-silencing.lo.01",
+      "text": "합성률과 분해율을 RNA 양에 연결한다"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.lo.02",
+      "text": "miRNA의 표적 인식과 효과를 구분한다"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.lo.03",
+      "text": "NMD와 단백질 분해의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.50bea55b1ea7",
+      "type": "heading",
+      "level": 2,
+      "text": "RNA 양은 생성과 소실의 차이다"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.b7d7121fd82d",
+      "type": "paragraph",
+      "markdown": "세포의 mRNA 양은 전사와 가공·이동뿐 아니라 분해에 의해 결정된다. 어떤 mRNA가 증가했을 때 전사인자가 더 작동했을 수도 있지만, 같은 합성률에서 분해가 느려졌을 수도 있다. 정상상태의 한 번 측정만으로 두 원인을 나누기는 어렵다. RNA양과 단백질양도 번역 효율과 단백질 수명에 따라 어긋날 수 있다. 여러 층의 조절을 거친 최종 결과를 하나의 원인으로 되돌려 읽지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.d021d98d0e49",
+      "type": "paragraph",
+      "markdown": "단순 모형에서 mRNA 수 M의 수지는 dM/dt=s−kM이다. s는 시간당 합성량, k는 일차 분해상수다. 일정 s와k, 균일한 집단을 가정하면 정상상태는 M_ss=s/k이고 반감기는 ln2/k다. 예를 들어 s=20분자/min이면 k=0.1/min에서200분자,0.2/min에서100분자가 된다. 합성률이 같아도 분해상수 차이만으로 RNA양이 두 배 달라지는 독립 계산이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.27ef59574e07",
+      "type": "heading",
+      "level": 2,
+      "text": "반감기와 유도 반응의 시간"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.46f35cbe7034",
+      "type": "paragraph",
+      "markdown": "새 합성을 멈춘 뒤에는 M(t)=M0e^(−kt)이고 같은 시간마다 같은 분율이 사라진다. 반감기10분이면20분 뒤에는 처음 양의1/4이 남는다. 처음 양이100인 조건의25와, 계속 합성이 일어나는 정상상태의 농도를 같은 식으로 계산해서는 안 된다. 실험에서 전사 억제제가 다른 세포 반응과 분해를 바꿀 가능성도 있어 관찰된 감소를 항상 교란 없는 자연 수명으로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.0425beda94a5",
+      "type": "paragraph",
+      "markdown": "초기량0에서 일정 합성이 시작되면 M(t)=M_ss[1−e^(−kt)]로 최종값에 접근한다. 안정한 mRNA는 다른 조건이 같을 때 정상상태 양이 커질 수 있고 변화에 반응하는 시간도 길어질 수 있다. 그러나 실제 유도 과정에서는 합성률 자체가 시간에 따라 변하고 세포분열·구획 이동도 영향을 준다. 지수 곡선 하나가 모든 세포와 모든 RNA의 시간 반응을 완전히 설명하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.c1e9c943f931",
+      "type": "heading",
+      "level": 2,
+      "text": "말단과 결합단백질이 만드는 분해 경로"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.cdf684fa9fcd",
+      "type": "paragraph",
+      "markdown": "일반적인 세포질 mRNA 분해에는 poly(A) 꼬리 단축(deadenylation), 캡 제거(decapping), 엑소뉴클레이스에 의한 소실 등이 관여한다. 내부 절단이나 다른 경로도 있다. Poly(A) 길이만으로 모든 RNA의 반감기를 같은 공식으로 정할 수 없으며, 결합단백질·세포 상태·번역과의 연결이 중요하다. UTR의 서열과 구조는 단백질과 소형 RNA가 인식하는 정보를 제공한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.2fcea04a779c",
+      "type": "paragraph",
+      "markdown": "일부 RNA결합단백질은 안정성을 높이고 다른 인자는 분해를 촉진할 수 있다. 같은 조절 인자가 세포·표적·상태에 따라 다른 효과를 가질 수도 있으므로 ‘UTR 결합은 모두 억제’라고 묶지 않는다. mRNA의 세포 내 위치와 번역 장소 역시 달라질 수 있다. 전사체가 존재한다는 사실은 그곳에서 즉시 같은 속도로 단백질이 생성된다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.c393d025246f",
+      "type": "heading",
+      "level": 2,
+      "text": "miRNA의 생성과 표적 인식"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.86612fd35e03",
+      "type": "paragraph",
+      "markdown": "마이크로RNA(microRNA, miRNA)는 짧은 비암호화 RNA로, Argonaute 단백질과 복합체를 이루어 상보적인 표적 RNA의 발현을 조절한다. 전형적 생성 경로에는 핵의 Drosha–DGCR8, 세포질의 Dicer 관련 가공이 관여하지만 비전형적 경로도 존재한다. 최종 유도 가닥의 선택과 복합체 적재가 필요하므로 전구 miRNA의 양과 활성 복합체의 양을 같다고 보지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.8148f849e911",
+      "type": "paragraph",
+      "markdown": "동물의 많은 표적 인식에서는 miRNA의 seed 부위와 표적의 짝짓기, 주변 서열·접근성·부가 짝짓기가 중요하다. 짧은 일치 서열이 있다고 모든 RNA가 반드시 생리적 표적이 되는 것은 아니다. 한 miRNA가 여러 표적을, 한 표적이 여러 miRNA의 조절을 받을 수 있다. 표적 예측만으로 실제 세포에서의 기능을 확정하지 않고 발현·결합·기능 교란의 근거를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.a770538cc911",
+      "type": "heading",
+      "level": 2,
+      "text": "번역 억제와 RNA 소실의 연결"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.946420d576cb",
+      "type": "paragraph",
+      "markdown": "miRNA 복합체는 번역 억제와 RNA 불안정화에 기여할 수 있다. TNRC6/GW182 및 탈아데닐화 관련 인자와의 연결은 표적 꼬리 단축과 캡 제거·분해로 이어질 수 있다. 모든 miRNA가 언제나 표적을 정확히 한 위치에서 절단하는 효소라고 설명하지 않는다. 일부 Argonaute의 절단 활성과 높은 상보성 조건을 일반적인 동물 miRNA 조절 전체와 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.4bedae8e6344",
+      "type": "paragraph",
+      "markdown": "표적 단백질이 줄었다는 관찰만으로 mRNA가 분해되었다고 확정할 수 없고, mRNA가 줄었다고 번역 억제가 전혀 없었다고 할 수도 없다. 시간 경과에 따라 두 효과의 기여가 달라질 수 있다. 또한 miRNA 과발현 실험의 비생리적 농도나 간접 표적 변화는 해석을 어렵게 한다. 독립적인 조작·구제 실험과 표적 부위 검토가 원인 관계를 좁히는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.5573580c69dd",
+      "type": "heading",
+      "level": 2,
+      "text": "비정상 번역을 감시하는 NMD"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.d9fa98dcf3f9",
+      "type": "paragraph",
+      "markdown": "넌센스매개 RNA분해(nonsense-mediated mRNA decay, NMD)는 번역 종결의 맥락과 연결된 RNA 감시·조절 경로다. 조기 종결코돈이 있는 일부 RNA가 제거될 수 있지만, 모든 넌센스 변이가 모든 조직에서 동일한 분율로 분해된다는 규칙은 아니다. 엑손 접합 관련 정보와 종결 위치, UTR 구조 등 여러 조건이 관여한다. NMD를 이미 만들어진 짧은 단백질을 프로테아좀에서 분해하는 반응과 혼동하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.b.1c85c707ef3f",
+      "type": "paragraph",
+      "markdown": "이 경로는 오류 전사체의 제거뿐 아니라 정상 유전자 발현의 조절과도 관련된다. 선택적 스플라이싱이 조기 종결을 만드는 형태를 생성하면 RNA양 조절과 연결될 수 있다. 따라서 특정 변이의 단백질 결과를 예상할 때에는 코돈표만 읽지 말고 RNA 가공·감시·잔존량까지 고려한다. 실제 병적 의미는 기능과 임상 근거의 대조가 필요하며, 단순한 모형 곡선이나 표적 예측으로 개인의 질환을 판정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.diagram.mrna-half-life-decay",
+      "type": "diagram",
+      "diagramRef": "diagram.mrna-half-life-decay",
+      "path": "diagrams/diagram.mrna-half-life-decay.svg",
+      "alt": "새 합성 중단 뒤 RNA 감소의 독립 계산 곡선"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.diagram.mrna-synthesis-decay-balance",
+      "type": "diagram",
+      "diagramRef": "diagram.mrna-synthesis-decay-balance",
+      "path": "diagrams/diagram.mrna-synthesis-decay-balance.svg",
+      "alt": "일정 합성과 분해의 접근의 독립 계산 곡선"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.diagram.rna-silencing-surveillance-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.rna-silencing-surveillance-pairs",
+      "path": "diagrams/diagram.rna-silencing-surveillance-pairs.svg",
+      "alt": "RNA 수준 조절의 세 연결의 단계별 비교"
+    },
+    {
+      "id": "molecular-biology.rna.stability-silencing.table.compare",
+      "type": "table",
+      "data": {
+        "title": "RNA 조절의 구별",
+        "columns": [
+          "과정",
+          "직접 질문",
+          "한계"
+        ],
+        "rows": [
+          [
+            "전사",
+            "합성률s",
+            "정상상태양과다름"
+          ],
+          [
+            "분해",
+            "상수k·반감기",
+            "구획·실험교란고려"
+          ],
+          [
+            "miRNA",
+            "표적인식·억제",
+            "예측만으로확진불가"
+          ],
+          [
+            "NMD",
+            "번역종결맥락의감시",
+            "모든넌센스동일아님"
+          ]
+        ],
+        "notes": "RNA양·단백질양·번역효율·단백질수명을각각구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/molecular-biology/chapters/rna/sections/molecular-biology.rna.stability-silencing.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "정상상태 RNA양은 일정 합성·일차 분해 모형에서 s/k다.",
+    "miRNA의 번역 억제와 RNA 불안정화는 구별하여 측정한다."
+  ],
+  "reviewQuestions": [
+    "question.molecular-biology.rna.stability-silencing.001",
+    "question.molecular-biology.rna.stability-silencing.002"
+  ],
+  "relatedLessons": [
+    "molecular-biology.rna.transcription-processing",
+    "molecular-biology.rna.translation-code",
+    "molecular-biology.proteins.targeting-quality-control"
+  ]
+}

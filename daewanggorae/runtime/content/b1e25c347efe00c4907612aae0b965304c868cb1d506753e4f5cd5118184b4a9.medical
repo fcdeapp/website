@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.general.renal-excretion-ionization",
+  "subjectId": "pharmacology",
+  "chapterId": "general",
+  "title": {
+    "ko": "신장 약물 배설과 이온화",
+    "en": "Renal Drug Excretion and Ionization"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.lo.01",
+      "text": "여과·분비·재흡수의 원약물 수지를 계산한다"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.lo.02",
+      "text": "총농도 기준 신장청소율과 자유분율을 구별한다"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.lo.03",
+      "text": "소변 pH와 이온화의 관계를 치료 권고와 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.0bbe57b06330",
+      "type": "heading",
+      "level": 2,
+      "text": "소변에 도달하는 원약물량"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.258d2fb60229",
+      "type": "paragraph",
+      "markdown": "신장 배설은 사구체 여과,세관 분비와 재흡수의 결합으로 결정된다. 원약물의 소변 배설속도는 Udrug×V로 계산하며 Udrug는 소변 농도,V는 소변 유량이다. 같은 시점·기간을 대표하는 혈장 농도로 나누면 신장청소율을 구할 수 있다. 소변에 나온 원약물만 측정했는지 대사체까지 포함했는지 명시해야 하며,혈중 총약물 감소의 모든 원인을 신장으로 돌리지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.e46c941c0906",
+      "type": "paragraph",
+      "markdown": "작고 자유롭게 여과되는 약물의 단순 조건에서 여과량은 GFR×Cu 또는 GFR×fu×Ct로 나타낼 수 있다. 혈장 결합 약물은 결합 상태로 자유롭게 여과되는 것은 아니지만 자유 약물의 제거에 따라 결합 풀에서 다시 공급될 수 있다. 높은 단백결합률만으로 신장 배설이 전혀 없다고 단정하지 않는다. 능동 분비와 해리 속도,장기 혈류가 함께 관여할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.333c91039d43",
+      "type": "heading",
+      "level": 2,
+      "text": "청소율 비교가 답하는 질문"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.7c9d4a6899a8",
+      "type": "paragraph",
+      "markdown": "분비와 재흡수가 없는 여과 전용 모형에서 총농도 기준 CLrenal은 fu×GFR이다. 관찰 신장청소율이 이 값보다 크면 순분비의 기여를 생각할 수 있지만,분비와 재흡수가 동시에 존재할 수 있어 두 유량을 단독 분리할 수는 없다. 더 작은 값도 재흡수 외에 추정한 자유분율·GFR·채뇨·혈중 대표성의 문제를 검토해야 한다. 단순 비교를 모든 약물의 고정 진단 규칙으로 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.807f00c38ea8",
+      "type": "paragraph",
+      "markdown": "가상 Ct=2mg/L,fu=0.5,GFR=6L/h인 여과 전용 조건에서 Cu=1mg/L,배설속도는6mg/h,총농도 기준 청소율은3L/h다. 청소율3L/h와 배설속도6mg/h는 다른 단위이며 서로 교환할 수 없다. 이 숫자는 실제 환자의 신기능 기준이나 특정 약물 용량이 아니라 자유분율과 분모를 연습하기 위한 독립 자료다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.0a3ac0e1b320",
+      "type": "heading",
+      "level": 2,
+      "text": "분비·재흡수와 내강 환경"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.c8eca78d7b89",
+      "type": "paragraph",
+      "markdown": "근위세관의 운반체는 혈액에서 세포를 거쳐 내강으로 분비하는 경로를 제공한다. 내강에서 혈액 쪽으로 돌아가는 재흡수에는 수동 이동과 기질별 운반 과정이 관여할 수 있다. 세관을 따라 물이 회수되면 내강 농도와 구동력이 바뀌므로 마지막 소변 농도 하나가 전 구간의 농도를 뜻하지 않는다. 소변 유량과 pH,막 투과성 및 운반체의 상태를 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.f82529ad9015",
+      "type": "paragraph",
+      "markdown": "여과가 유지되어도 분비 억제나 재흡수 변화로 약물 배설이 달라질 수 있다. 특정 내인성 표지자의 세관 분비가 변하면 실제 GFR 변화 없이 혈중 표지자가 달라지는 경우도 가능하다. 따라서 혈액검사 변화와 모든 약물의 제거 감소를 동일하게 묶지 않는다. 실제 임상에서는 표지자·추정식·근육량·급성 변화와 약물별 제거 특성을 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.45273b561d73",
+      "type": "heading",
+      "level": 2,
+      "text": "약산·약염기의 이온화 계산"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.d93003f1034a",
+      "type": "paragraph",
+      "markdown": "단일 약산 HA의 근사에서 pH=pKa+log([A−]/[HA])이다. 이온형 대 비이온형의 비는10^(pH−pKa),비이온형 분율은1/[1+10^(pH−pKa)]이다. 약염기 BH+에서는 pH=pKa+log([B]/[BH+])로 정의를 맞추어 비이온형 B의 분율을 계산한다. 산과 염기에 같은 형태의 분율식을 무조건 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.1aabcdbbb97b",
+      "type": "paragraph",
+      "markdown": "약산의 pH가 pKa와 같으면 비이온형 분율은0.5이고,pKa보다1높으면1/11이다. 막 이동이 비이온형에 크게 좌우되는 단순 조건에서는 소변 pH 변화가 재흡수 가능성을 바꿀 수 있다. 그러나 이온형도 운반체를 통해 이동할 수 있고 실제 내강·세포·혈액의 pH와 유량이 연결된다. Henderson–Hasselbalch 관계만으로 실제 약물의 배설량·안전성을 정확히 계산할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.5e80f83fa986",
+      "type": "heading",
+      "level": 2,
+      "text": "원리와 중독 치료를 구별한다"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.f1b481bf0350",
+      "type": "paragraph",
+      "markdown": "소변 이온 포획(ion trapping)은 구획 pH와 투과성의 차이로 총농도 분포가 달라지는 개념이다. 이 원리가 있다고 모든 중독에서 임의로 소변을 산성화·알칼리화하는 것이 적절한 것은 아니다. 실제 처치의 적응증·금기·목표·방법과 감시에는 약물별 독성학 근거가 필요하다. 이 절의 가상 pH 곡선은 치료 절차나 특정 약물의 용법으로 제공하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.b.1f271881606b",
+      "type": "paragraph",
+      "markdown": "신장 기능 변화가 있는 환자에서는 원약물과 활성 대사체의 노출,분포와 결합,추정 신기능과 실제 배설의 시간차를 함께 고려한다. 혈중 반감기가 길어졌다는 사실만으로 제거경로 하나를 특정하지 않는다. 연속 채혈과 채뇨 자료의 시간·단위·분석 대상을 확인하는 것이 분비·여과·재흡수의 원리를 실제 자료에 연결하는 출발점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.diagram.free-fraction-filtration-clearance",
+      "type": "diagram",
+      "diagramRef": "diagram.free-fraction-filtration-clearance",
+      "path": "diagrams/diagram.free-fraction-filtration-clearance.svg",
+      "alt": "자유분율과 여과 전용 청소율의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.diagram.acid-base-neutral-fraction",
+      "type": "diagram",
+      "diagramRef": "diagram.acid-base-neutral-fraction",
+      "path": "diagrams/diagram.acid-base-neutral-fraction.svg",
+      "alt": "단일 약산·약염기의 비이온형의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.renal-excretion-ionization.table.compare",
+      "type": "table",
+      "data": {
+        "title": "신장 배설 수지",
+        "columns": [
+          "과정",
+          "대표 항"
+        ],
+        "rows": [
+          [
+            "여과",
+            "GFR×fu×Ct"
+          ],
+          [
+            "분비",
+            "혈액에서 내강으로"
+          ],
+          [
+            "재흡수",
+            "내강에서 혈액으로"
+          ],
+          [
+            "소변 원약물",
+            "분석대상·채뇨기간 확인"
+          ]
+        ],
+        "notes": "정의·가정과 대표 관계의 비교이며 단일 임상 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/sections/pharmacology.general.renal-excretion-ionization.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "총농도 기준 여과 청소율에는 자유분율이 들어간다."
+  ],
+  "relatedLessons": [
+    "pharmacology.general.transporters-vectorial-flux",
+    "pharmacology.general.quantal-response-safety"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.general.renal-excretion-ionization.001",
+    "question.pharmacology.general.renal-excretion-ionization.002"
+  ]
+}

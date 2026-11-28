@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.atrial-fibrillation-mechanisms",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.500260d0180a",
+      "sourceSha256": "500260d0180ac530cde6a10a04c6249680a683a06a12054cb8d13f5dc7e65806",
+      "sourceLengthUtf16": 291,
+      "annotations": [
+        {
+          "id": "ann.543297a6651823500af3",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 258,
+            "end": 261,
+            "exact": "막전위",
+            "prefix": "적 자극을 운반한다는 뜻은 아니다. 근육의 ",
+            "suffix": "와 칼슘 조절, 주변 조직으로의 전도 관계가"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        },
+        {
+          "id": "ann.a4ef33a530353dc0f355",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 148,
+            "end": 212,
+            "exact": "폐정맥 안으로 이어진 심근 소매(myocardial sleeve)의 이소성 활동은 중요한 시작 자극이 될 수 있다.",
+            "prefix": "서 하나의 동일한 회로로 설명되지 않는다. ",
+            "suffix": " 그러나 폐정맥 자체의 혈액 흐름이 전기적 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.96ece40a4616",
+      "sourceSha256": "96ece40a46166e3e6d24dee93c9bed99d31743b341e8133d48919d738a904697",
+      "sourceLengthUtf16": 282,
+      "annotations": [
+        {
+          "id": "ann.18d9a130e8ed19e28054",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 184,
+            "end": 187,
+            "exact": "심부전",
+            "prefix": "돌아갈 여지가 생긴다. 고혈압, 판막질환과 ",
+            "suffix": "은 압력·용적 부하와 조직 변화를 통해 이러"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.d64d5bf5b3c282c8d7e7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 238,
+            "end": 282,
+            "exact": "비만과 수면무호흡, 음주 등도 심방의 환경과 발생 위험을 평가하는 데 중요하다.",
+            "prefix": "질(substrate)에 기여할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.485bd44298cb",
+      "sourceSha256": "485bd44298cbf349cc08c613e1936f14673d7c00de7e812a747400ae0467f714",
+      "sourceLengthUtf16": 250,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.74cb9f951fac",
+      "sourceSha256": "74cb9f951face51d91da7c0960d339cbc5a9b798d34d4f4e013e88fb27f89cc5",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.424b7fae5ba5",
+      "sourceSha256": "424b7fae5ba5024a750d93ff6e93c7e6c3163f96e544ca7628724b35a1e1ab42",
+      "sourceLengthUtf16": 235,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.216625312edf",
+      "sourceSha256": "216625312edfc8ec4d9b720b41e02f317dda9daa13ca4085ee26dcd4d529e502",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    }
+  ]
+}

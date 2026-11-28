@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.imprinting-test-questions",
+  "lessonId": "genetics.epigenetics.imprinting",
+  "title": "각인 영역 검사의 서로 다른 질문",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "복제수 유지",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "부모 기원·표지 상태는 별도 확인",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "같은 부모에서 두 사본",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "UPD와 구간별 구성 평가",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "동형이염색체 구간",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "열성 변이의 두 사본 여부 검토",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.imprinting-test-questions.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "추가 질문",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.imprinting-test-questions.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "기원 분석",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.imprinting-test-questions.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "유전형 확인",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "검사 질문의 구별이다. 특정 질환의 진단·재발률 또는 모든 검사 순서를 고정한 알고리즘이 아니다."
+  ],
+  "sourceImageUsed": false
+}

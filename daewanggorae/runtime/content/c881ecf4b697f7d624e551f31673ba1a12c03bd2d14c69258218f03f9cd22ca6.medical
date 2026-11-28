@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience.membrane.ion-gradients",
+  "subjectId": "neuroscience",
+  "chapterId": "membrane",
+  "title": {
+    "ko": "이온 기울기와 막전위·활동전위",
+    "en": "Ionic Gradients Membrane Potential and Action Potentials"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroscience.membrane.ion-gradients.lo.01",
+      "text": "전기화학적 구동력과 평형전위를 계산한다"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.lo.02",
+      "text": "전도도와 전류를 구별한다"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.lo.03",
+      "text": "활동전위와 이온 기울기의 유지 기전을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.a047139fe705",
+      "type": "heading",
+      "level": 2,
+      "text": "막의 양쪽에 있는 에너지"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.ff5a92568291",
+      "type": "paragraph",
+      "markdown": "신경세포막은 지질층과 선택적 이온통로를 통해 세포 안팎의 이온 분포를 구별한다. 농도 차이는 확산을, 전위 차이는 전하의 이동을 구동하며 두 힘이 함께 전기화학적 기울기를 만든다. 이온이 많다는 사실만으로 이동 방향이 결정되지는 않는다. 현재 막전위와 그 이온의 평형전위를 비교해야 열린 통로를 통한 순이동을 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.8375ee0fca77",
+      "type": "paragraph",
+      "markdown": "하나의 이온이 전기화학적 평형에 도달하는 전위를 네른스트전위(Nernst potential)라고 한다. 식은 E=RT/(zF)×ln([밖]/[안])이며 R은 기체상수, T는 절대온도, z는 이온의 전하수, F는 패러데이상수다. 같은 농도비라도 양이온과 음이온은 z의 부호가 달라 전위의 부호가 달라진다. 온도와 단위·농도의 정의를 명시해야 계산값을 비교할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.75db1c323eeb",
+      "type": "heading",
+      "level": 2,
+      "text": "평형전위와 실제 안정막전위"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.1d06b7e65b83",
+      "type": "paragraph",
+      "markdown": "37℃의 단가 양이온을 단순화하면 E≈61.5log₁₀([밖]/[안])mV로 계산할 수 있다. 가상 칼륨 농도가 안140mmol/L, 밖4mmol/L라면 약−95mV다. 이것은 하나의 이온과 고정 농도의 평형값이며 모든 뉴런의 안정막전위가 이 값과 같다는 뜻은 아니다. 실제 막은 여러 이온의 투과성과 전도도, 수송과 세포 상태에 영향을 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.e9d364dca019",
+      "type": "paragraph",
+      "markdown": "Na⁺/K⁺-ATPase는 ATP 에너지를 이용하여 이온 기울기 유지에 기여한다. 기울기가 유지되려면 에너지 공급과 대사·혈류가 필요하다. 펌프가 활동전위의 매 순간 탈분극을 직접 만드는 스위치라고 이해하면 전압개폐성 통로의 역할을 놓친다. 빠른 전위 변화와 긴 시간에 걸친 농도 유지의 규모를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.0e062fc77625",
+      "type": "heading",
+      "level": 2,
+      "text": "전류와 전도도"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.94da1b5b3485",
+      "type": "paragraph",
+      "markdown": "이온 전류는 단순 옴 모형에서 I=g(V−E)로 나타낼 수 있다. g는 전도도, V는 막전위, E는 해당 통로의 역전전위다. 통로가 열려도 V가 E와 같으면 순전류가 작을 수 있다. 같은 전도도 증가라도 당시의 구동력과 다른 입력에 따라 전압과 발화에 미치는 효과가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.5ea62df91d6e",
+      "type": "paragraph",
+      "markdown": "안정전위 가까운 역전전위를 가진 통로가 열리면 큰 과분극 없이 입력저항이 낮아져 다른 흥분성 입력의 전압 반응을 줄일 수 있다. 따라서 전압이 조금 탈분극했다는 관찰과 발화 가능성이 증가했다는 기능적 판단을 동일시하지 않는다. 통로의 종류와 전도도·역치·시간 및 입력 위치를 함께 해석해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.01ecc5b1a32d",
+      "type": "heading",
+      "level": 2,
+      "text": "재생성 반응과 불응기"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.46d59c2d0016",
+      "type": "paragraph",
+      "markdown": "활동전위(action potential)는 전압 의존 통로의 재생성 활성과 비활성화, 지연된 반응이 결합된 사건이다. 빠른 안쪽 전류가 탈분극을 증폭하고 이후 전류와 통로 상태 변화가 재분극에 기여한다. 불응기는 발화의 빈도와 전파의 시간 질서에 영향을 준다. 활동전위의 크기 하나로 모든 자극 강도를 부호화하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.b.333a1bb4233e",
+      "type": "paragraph",
+      "markdown": "허혈·저산소증과 대사 이상에서는 펌프·이온 분포·전달물질 처리와 세포 부피가 함께 변할 수 있다. 바깥 칼륨 증가가 평형전위를 덜 음성으로 만들더라도 지속 탈분극에 따른 통로 비활성화로 발화가 제한될 수 있다. 단순히 더 탈분극하면 언제나 더 잘 발화한다는 설명은 충분하지 않다. 정상 막의 계산과 실제 병적 조직의 생존은 별도의 질문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.suppheading0852",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 임상 해석의 연결"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.supp.932bd6c067f3",
+      "type": "paragraph",
+      "markdown": "전류의 부호는 정의한 관례를 확인해야 한다. I=g(V−E)에서 V가−70mV이고 E가−90mV인 양이온 통로의 구동력은+20mV다. 양의 바깥 전류라는 전기생리 관례와 실제 이온의 이동을 함께 연결한다. 음이온에서는 전하 부호 때문에 이온 이동과 전류 방향을 같은 말로 쓰지 않는다. 전류의 방향·막의 충전과 최종 전압 변화는 각각의 조건을 명시해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.supp.d6fb0d21d6ac",
+      "type": "paragraph",
+      "markdown": "여러 이온을 함께 고려하는 막전위 식은 선택성·농도와 투과도의 가정을 포함한다. 투과도와 전도도는 관련되지만 동일한 물리량은 아니다. 전압·농도가 크게 바뀌면 고정 전도도의 선형 모형도 실제 이온 흐름과 어긋날 수 있다. 간단한 식을 사용한 계산에서는 무엇을 고정했는지와 생략한 통로 동역학을 기록하고, 그 결과를 개인의 혈청 칼륨 위험이나 뉴런 생존 판정으로 확대하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.supp.e7c7008f2de2",
+      "type": "paragraph",
+      "markdown": "네른스트식의 로그는 농도에 따른 화학퍼텐셜의 관계에서 나온다. 이상 희석 근사에서 화학퍼텐셜은 μ=μ₀+RTln c로 표현된다. 막 안쪽과 바깥쪽의 전기화학적 차이는 RTln(c안/c밖)+zF(V안−V밖)이며 평형에서는0이다. 이를 전위 차이에 대해 정리하면 앞의 식이 된다. 평형이란 두 농도가 같아졌다는 뜻이 아니라 화학적 힘과 전기적 힘이 상쇄되어 순이동이 없는 상태다. 실제 세포는 여러 이온을 함께 다루므로 이 단일 이온의 평형과 세포 전체의 정상상태를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.table0852",
+      "type": "table",
+      "data": {
+        "title": "관찰·가설과 임상 해석",
+        "columns": [
+          "항목",
+          "자료·의미"
+        ],
+        "rows": [
+          [
+            "가상 조건",
+            "37℃·단가 양이온"
+          ],
+          [
+            "K⁺ 안/밖",
+            "140/4mmol/L"
+          ],
+          [
+            "막전위",
+            "여러 이온과 전도도의 결과"
+          ],
+          [
+            "임상",
+            "혈청 위험·생존의 판정식 아님"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neuroscience.membrane.ion-gradients.diagram.nernst-potassium-0852",
+      "type": "diagram",
+      "diagramRef": "diagram.nernst-potassium-0852",
+      "path": "diagrams/diagram.nernst-potassium-0852.svg",
+      "alt": "고정 세포내 농도의 K⁺ 평형의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/membrane/sections/neuroscience.membrane.ion-gradients.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroscience.membrane.ion-gradients.001",
+    "question.neuroscience.membrane.ion-gradients.002"
+  ],
+  "relatedLessons": [
+    "neuroscience.conduction.myelin-cable"
+  ]
+}

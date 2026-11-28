@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroanatomy",
+  "title": {
+    "ko": "신경해부학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "neuroanatomy.chapter.spinal-cord",
+      "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/spinal-cord/chapter.json"
+    },
+    {
+      "id": "neuroanatomy.chapter.brainstem",
+      "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/brainstem/chapter.json"
+    },
+    {
+      "id": "neuroanatomy.chapter.cerebellum",
+      "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/cerebellum/chapter.json"
+    },
+    {
+      "id": "neuroanatomy.chapter.meninges",
+      "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/meninges/chapter.json"
+    },
+    {
+      "id": "neuroanatomy.chapter.forebrain",
+      "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/forebrain/chapter.json"
+    },
+    {
+      "id": "neuroanatomy.chapter.visual",
+      "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/visual/chapter.json"
+    },
+    {
+      "id": "neuroanatomy.chapter.autonomic",
+      "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/autonomic/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "neuroanatomy.plan.001",
+    "neuroanatomy.plan.002",
+    "neuroanatomy.plan.003",
+    "neuroanatomy.plan.004",
+    "neuroanatomy.plan.005",
+    "neuroanatomy.plan.006",
+    "neuroanatomy.spinal-cord.tracts",
+    "neuroanatomy.brainstem.levels-localization",
+    "neuroanatomy.cerebellum.cortex-connections",
+    "neuroanatomy.meninges.ventricles-csf",
+    "neuroanatomy.forebrain.basal-ganglia",
+    "neuroanatomy.forebrain.thalamic-networks",
+    "neuroanatomy.visual.field-pathways",
+    "neuroanatomy.autonomic.central-peripheral"
+  ]
+}

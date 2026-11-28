@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.airways.asthma-inflammatory-phenotypes",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.b.4555ee9cfca6",
+      "sourceSha256": "4555ee9cfca61eb6128c6c8066a0f654d261a81f4b9da0825e40b3a2bfa48acd",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.fc833317f92eba31305c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 123,
+            "end": 125,
+            "exact": "천식",
+            "prefix": "상이 비슷해도 면역 경로는 다를 수 있다. ",
+            "suffix": "의 치료 반응이 모든 환자에게 같지 않은 이"
+          },
+          "conceptId": "reader.term.0724de0dbf1ee4f5",
+          "targetDocumentId": "pulmonology.airways.asthma-mechanisms"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.b.5e6ccda6f1db",
+      "sourceSha256": "5e6ccda6f1db58c900e6fb69ed014c9a37551c53be8ad6b6269fe79d18962c7a",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.26fc2ebd099615c9c907",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 68,
+            "end": 134,
+            "exact": "IL-4와 IL-13은 IgE 관련 반응과 점액·상피 기능 등 여러 과정에, IL-5는 호산구의 생존·활성에 중요하다.",
+            "prefix": "비만세포 및 기도 상피의 신호가 관여한다. ",
+            "suffix": " 상피의 손상·자극 신호도 면역세포를 활성화"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.b.ec6e86197cee",
+      "sourceSha256": "ec6e86197cee2713f672d79df5bec4c4f36c75f879eaf0ad780fade83c31f097",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.b.94018c758063",
+      "sourceSha256": "94018c758063249381a91d04cca52a7bba12ddaeb27e4f24aaa8eaa794564bff",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.b.16678f21112d",
+      "sourceSha256": "16678f21112d9ffb0d17f9247812f5556a9957d7dc0dea90927b833f9a13f5e6",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.b.8808801bcc85",
+      "sourceSha256": "8808801bcc85007ac1749feed2be44b4c496642c89c3dea7e2876fb12be498c0",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.b.9176c15e0d0a",
+      "sourceSha256": "9176c15e0d0a6af3a7d9ef9122c8f50515f7d8443c682ff11093e252a626ef64",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.b.6d6c089bfa36",
+      "sourceSha256": "6d6c089bfa36a0a368c9d094e3be6a6026ca8ac2a9f0e6f4e3f1cbcb6a23f262",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.p.extra0845.0",
+      "sourceSha256": "f753c9928d5528ddf4221c23fcdf618fd9c694fa692aa9093de88c28c6dd20d7",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.airways.asthma-inflammatory-phenotypes.p.extra0845.1",
+      "sourceSha256": "ba9c0a6b5ae44304ceef3d56f08f4069d13b5dfd842570c03bedff71a5a023fb",
+      "sourceLengthUtf16": 191,
+      "annotations": [
+        {
+          "id": "ann.983cea64349ee8df4a30",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 49,
+            "exact": "실험에서 세포 수가 줄었다는 결과와 기도 반응성·분비물·악화가 줄었다는 결과는 구별한다.",
+            "prefix": "",
+            "suffix": " 검체가 혈액인지 객담·조직인지,치료 전후의"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

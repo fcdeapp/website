@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.neurovascular.subarachnoid-hemorrhage",
+  "subjectId": "neurology",
+  "chapterId": "neurovascular",
+  "title": {
+    "ko": "동맥류성 지주막하출혈과 지연성 악화",
+    "en": "Aneurysmal Subarachnoid Hemorrhage and Delayed Deterioration"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.lo.01",
+      "text": "재출혈·수두증·지연성 허혈을 구별한다"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.lo.02",
+      "text": "동맥류 영상과 실제 출혈원을 평가한다"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.lo.03",
+      "text": "혈관 소견과 기능 결과를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.e0a017235010",
+      "type": "heading",
+      "level": 2,
+      "text": "지주막하 공간의 출혈"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.2e49890bf3b1",
+      "type": "paragraph",
+      "markdown": "지주막하출혈(subarachnoid hemorrhage, SAH)은 뇌척수액이 흐르는 공간에 혈액이 존재하는 상태로, 동맥류 파열을 포함한 여러 원인을 가진다. 갑자기 매우 심해지는 두통과 의식·신경 변화는 신속한 평가를 요구하지만 모든 환자가 같은 표현을 보이지는 않는다. 두통의 시작과 가장 심해진 시간, 운동·의식 소실과 목의 불편, 이전 사건과 약물·혈관 위험을 구체적으로 확인한다. 과거 편두통 병력으로 새로운 급성 양상을 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.0d12cf44bddd",
+      "type": "paragraph",
+      "markdown": "출혈은 두개내압과 관류, 수막 자극과 뇌척수액 흐름, 전신 스트레스 반응에 영향을 준다. 초기 손상과 재출혈, 이후의 합병증은 서로 다른 시간과 기전을 가진다. 호흡과 순환·혈당, 발작과 기도 보호를 평가하면서 진단과 원인 혈관 검사를 연결한다. 환자가 잠시 좋아졌다는 사실만으로 출혈과 동맥류 위험이 사라지는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.8ce9538ce53f",
+      "type": "heading",
+      "level": 2,
+      "text": "출혈 확인과 출혈원 판단"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.1a2218f97090",
+      "type": "paragraph",
+      "markdown": "CT의 진단 성능은 발병 뒤 시간과 촬영·판독, 출혈량과 환자 상태에 영향을 받는다. 음성 영상 뒤의 추가 평가 필요는 임상적 가능성과 검사 조건에 따라 판단한다. 요추천자와 혈관 영상은 서로 다른 질문에 답하며 금기와 위험·시점을 고려한다. 하나의 음성 결과를 모든 상황의 배제 기준으로 쓰거나, 모든 환자에게 같은 순서의 검사를 적용하지 않는다. 실제 진료에서는 현행 진단 경로와 전문 평가를 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.5b0cd5dea932",
+      "type": "paragraph",
+      "markdown": "혈관 영상에서 동맥류가 발견되어도 출혈의 분포와 형태·위치, 다른 원인과의 일관성을 검토한다. 우연히 존재하는 동맥류와 실제 파열 출혈원을 구별해야 한다. 동맥류의 목과 분지·주변 구조, 환자의 상태와 치료 경험은 중재 선택에 영향을 준다. 정상 혈관 모형의 모양으로 환자별 파열 위험과 수술·코일의 적합성을 계산할 수 없다. 실제 혈관 영상과 임상 자료가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.d897eacb5385",
+      "type": "heading",
+      "level": 2,
+      "text": "출혈원 치료와 이후 관리"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.7e2032bf84e2",
+      "type": "paragraph",
+      "markdown": "파열 동맥류의 치료는 재출혈 위험을 줄이려는 목적을 가지며, 혈관내 치료와 수술의 선택은 환자·동맥류와 해부학적 조건을 통합하여 판단한다. 어떤 방법이 모든 환자에서 우월하다고 단정하지 않는다. 치료 뒤에도 잔여 병변과 재성장·다른 동맥류 및 기능의 추적이 필요할 수 있다. 혈관의 폐쇄가 성공했다는 사실과 초기 뇌손상·이후 허혈의 위험이 해결되었다는 것은 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.fc92585896b7",
+      "type": "paragraph",
+      "markdown": "혈압과 혈액량의 관리에서는 재출혈·관류와 전신 합병증의 이득·위해를 함께 고려한다. 충분한 관류를 유지하려는 목적을 일률적인 과다 수액과 예방적 혈압 증강으로 바꾸어서는 안 된다. 실제 체액 상태와 심장·폐·신장, 두개내 상태를 반복 평가한다. 약물과 시술의 용량·시점과 금기는 환자의 조건과 현행 근거·국내 허가에 맞추어 확인해야 한다. 가상 그래프와 계산은 개인 처방을 정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.92b7eb22fa7b",
+      "type": "heading",
+      "level": 2,
+      "text": "지연성 뇌허혈과 혈관연축"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.d0b52bc566b5",
+      "type": "paragraph",
+      "markdown": "지연성 뇌허혈(delayed cerebral ischemia, DCI)은 이후 발생하는 신경 기능 악화와 허혈성 손상의 문제다. 혈관연축(vasospasm)은 혈관의 협착 소견을 가리키며 두 용어는 동일하지 않다. 큰 혈관의 협착 외에도 미세순환과 자동조절·대사 등 여러 기전이 결과에 영향을 줄 수 있다. 혈관 검사에서 협착이 보인다는 사실만으로 모든 임상 악화가 설명되는 것도, 협착이 뚜렷하지 않다고 모든 허혈이 배제되는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.b26788cbbd1c",
+      "type": "paragraph",
+      "markdown": "새 약화와 언어·의식 변화가 생기면 재출혈과 수두증, 발작·감염·전해질·약물과 전신 순환의 원인을 함께 평가한다. 진찰이 어려운 환자에서는 적절한 영상과 감시 자료가 추가 정보를 제공할 수 있다. 검사값 하나보다 시간 변화와 다른 자료의 일치·불일치를 확인한다. 원인에 따라 필요한 조치가 다르므로 모든 악화를 같은 혈관연축 치료로 다루지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.c14fa96e1596",
+      "type": "heading",
+      "level": 2,
+      "text": "뇌척수액과 전신 합병증"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.69f910d98f93",
+      "type": "paragraph",
+      "markdown": "혈액과 흐름의 변화는 수두증과 압력 문제로 이어질 수 있다. 의식과 뇌실·배액의 상태를 평가하고 배액 관련 감염과 출혈·과도한 배액 등 위험을 감시한다. 나트륨과 체액 변화는 신경 기능과 순환에 영향을 줄 수 있으므로 농도만이 아니라 혈액량과 신장·약물, 섭취와 배출을 함께 해석한다. 같은 낮은 나트륨 수치라도 원인과 교정의 부담은 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.b.9ad31c0593e6",
+      "type": "paragraph",
+      "markdown": "회복 뒤에는 겉으로 보이는 운동 장애가 작아도 기억과 주의·피로·기분, 업무 수행과 관계의 변화가 남을 수 있다. 퇴원 시의 보행 능력만으로 장기 기능을 대표하지 않는다. 환자와 돌봄 제공자에게 변화와 지원 필요를 묻고 재활·정신건강과 사회적 지원을 연결한다. 영상과 혈관의 기술적 성공, 생존과 실제 삶의 기능을 나누어 평가해야 치료의 결과를 정확히 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.subarachnoid-hemorrhage.table0856",
+      "type": "table",
+      "data": {
+        "title": "관찰과 감별의 범위",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "배경",
+            "동맥류성 출혈 치료 뒤"
+          ],
+          [
+            "새 변화",
+            "언어·의식 악화"
+          ],
+          [
+            "미확인",
+            "재출혈·수두증·발작·감염·전해질·관류"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/neurovascular/sections/neurology.neurovascular.subarachnoid-hemorrhage.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.neurovascular.subarachnoid-hemorrhage.001"
+  ],
+  "relatedLessons": [
+    "neurology.neurovascular.intracerebral-hemorrhage"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.proteins.amyloid-deposition",
+  "subjectId": "pathology",
+  "chapterId": "proteins",
+  "title": {
+    "ko": "아밀로이드의 구조·침착·유형 판정",
+    "en": "Amyloid Structure, Deposition and Typing"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.proteins.amyloid-deposition.lo.01",
+      "text": "아밀로이드를 단일 단백질명과 구별한다"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.lo.02",
+      "text": "AL·AA·ATTR의 전구체를 비교한다"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.lo.03",
+      "text": "침착 검출·유형 판정·장기 손상을 별도 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.05a943c50963",
+      "type": "heading",
+      "level": 2,
+      "text": "접힘의 변화가 만드는 공통 구조"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.5c9afa351eb6",
+      "type": "paragraph",
+      "markdown": "아밀로이드(amyloid)는 서로 다른 전구체 단백질이 공통적인 섬유 구조를 형성하여 조직에 침착하는 맥락을 가리킨다. 단백질 이름 하나와 동의어가 아니며,모든 단백질 덩어리나 호산성 물질이 아밀로이드는 아니다. 섬유의 교차β(cross-β) 구조와 응집 경향,주변 기질과 제거 능력이 침착에 관여한다. 정상 단백질의 과도한 공급 또는 구조적으로 불안정한 변이가 형성 가능성을 바꿀 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.e5b7e134f96c",
+      "type": "paragraph",
+      "markdown": "조직 침착은 전구체 생성·구조 변환·운반·국소 핵형성 및 제거가 연결된 과정이다. 혈중 전구체 농도가 같아도 조직 선호성과 기능 손상은 다를 수 있다. 침착물의 부피와 단백질의 직접 세포 독성,미세혈관·간질 구조 변화가 장기 기능에 기여할 수 있어 단순히 빈 공간을 채우는 물질로만 설명하기 어렵다. 국소성과 전신성도 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.b9610ba68211",
+      "type": "heading",
+      "level": 2,
+      "text": "전구체를 구별하는 이유"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.dfb68f0bee8d",
+      "type": "paragraph",
+      "markdown": "AL은 면역글로불린 경쇄(light chain)와 관련되고,AA는 염증성 급성기 반응의 serum amyloid A 계통과 관련된다. ATTR은 transthyretin에서 유래하며 유전적 변이형과 야생형이 모두 가능하다. 이 세 이름은 전구체가 다르다는 정보이며 모든 아밀로이드 유형을 포괄하지는 않는다. 오래된 원발성·이차성이라는 표현보다 실제 전구체를 확인하는 것이 원인과 치료 원리를 구별하는 데 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.1d64f2e55ce8",
+      "type": "paragraph",
+      "markdown": "단클론성 단백질이 혈중에 있다는 사실과 조직 침착물이 그 경쇄에서 유래했다는 판정은 같은 사건이 아니다. 서로 다른 상태가 함께 존재할 수 있으므로 침착물 유형을 별도로 확인해야 한다. ATTR이 확인되었다고 모든 환자에게 동일한 유전 변이가 있다는 뜻도 아니다. 실제 유전성 평가와 가족 상담은 분자 결과·임상 맥락에 따라 수행한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.25be773f13b7",
+      "type": "heading",
+      "level": 2,
+      "text": "조직 검출과 구조 확인"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.c1f06d5c9dd4",
+      "type": "paragraph",
+      "markdown": "일반 염색에서 무정형 호산성 세포외 물질이 보이면 여러 가능성을 고려한다. Congo red 염색과 편광 관찰은 아밀로이드 검출의 중요한 방법이지만 표본량·두께·관찰 조건과 판독 경험의 영향을 받는다. 편광에서의 특징적인 복굴절을 단순한 녹색 사진 한 장과 같은 것으로 취급하지 않는다. 학습용 색 도식은 실제 조직 사진이나 실제 염색 결과로 표시해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.4e7e2f8c788c",
+      "type": "paragraph",
+      "markdown": "전자현미경에서의 섬유 형태와 다른 조직 검사는 추가 정보를 줄 수 있다. 그러나 공통 섬유 모습이나 Congo red 양성만으로 AL·AA·ATTR이 서로 구분되지는 않는다. 유형 판정에는 적절한 면역조직화학·면역형광 또는 미세절제와 질량분석 기반 단백체 분석 등이 사용될 수 있다. 검사법마다 표본과 해석의 제한이 있으므로 비특이 결합과 검체 부족을 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.0fd2095ed367",
+      "type": "heading",
+      "level": 2,
+      "text": "침착 분포와 장기 기능"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.319e36286e20",
+      "type": "paragraph",
+      "markdown": "심장·신장·신경계·간·연조직 등 침범 양상은 유형과 환자에 따라 다르다. 심장의 벽이 두꺼워졌다는 영상 소견은 심근세포 비대만이 아니라 간질 침착 등의 가능성도 포함한다. 박출률이 보존되어도 이완·충만과 전도 기능이 영향을 받을 수 있다. 신장의 단백뇨나 기능 저하도 형태·분포와 연결하되 어떤 한 증상만으로 아밀로이드 유형을 확진하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.8f7bf0938a79",
+      "type": "paragraph",
+      "markdown": "혈중 표지자,영상,조직 소견과 기능 검사는 각기 다른 층을 반영한다. 침착 검출 여부,전구체 종류,장기 침범 정도와 예후 평가는 따로 정리하는 것이 좋다. 일부 핵의학 영상의 해석이나 생검을 생략하는 진단 경로는 매우 구체적인 임상 조건을 요구하므로 이 일반 병리 설명으로 판정하지 않는다. 최신 진단 알고리즘과 유형별 치료 선택은 임상 근거를 별도로 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.3536adc56e2e",
+      "type": "heading",
+      "level": 2,
+      "text": "축적 수지와 치료 원리의 구별"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.403ea0c8c0bb",
+      "type": "paragraph",
+      "markdown": "가상 침착량 M의 변화를 dM/dt=P−kM으로 두면,일정 유입P와 일차 제거k에서 정상상태는 P/k다. P가 줄어도 이미 쌓인 물질은 즉시0이 되지 않으며,제거가 느리면 잔여량의 변화도 느릴 수 있다. 실제 응집에서는 핵형성·포화·다중 구획이 관여하므로 이 모형은 양의 수지 원리만 보여 준다. 임상 침착 감소율이나 장기 기능 회복 시간을 예측하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.b.aec4587fd870",
+      "type": "paragraph",
+      "markdown": "치료의 원리는 전구체 공급을 줄이거나 구조 안정성과 응집·침착·제거에 관여하는 과정에 영향을 주는 방향으로 나누어 이해할 수 있다. 그러나 서로 다른 전구체 유형의 치료를 같은 처방으로 대체해서는 안 된다. 특정 약물·세포 표적 치료·장기 지지의 선택은 실제 유형과 장기 상태,최신 지침에 따른다. 본문의 비교표는 구조·전구체·진단 질문을 구별하는 학습 자료다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.diagram.deposit-residual-example",
+      "type": "diagram",
+      "diagramRef": "diagram.deposit-residual-example",
+      "path": "diagrams/diagram.deposit-residual-example.svg",
+      "alt": "추가 유입 중단 뒤 가상 잔여의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.diagram.amyloid-typing-questions",
+      "type": "diagram",
+      "diagramRef": "diagram.amyloid-typing-questions",
+      "path": "diagrams/diagram.amyloid-typing-questions.svg",
+      "alt": "침착과 전구체의 다른 질문의 단계별 비교"
+    },
+    {
+      "id": "pathology.proteins.amyloid-deposition.table.compare",
+      "type": "table",
+      "data": {
+        "title": "전구체와 유형",
+        "columns": [
+          "유형",
+          "대표 전구체",
+          "주의"
+        ],
+        "rows": [
+          [
+            "AL",
+            "면역글로불린 경쇄",
+            "혈중 단백만으로 조직 유형 확정 안 함"
+          ],
+          [
+            "AA",
+            "serum amyloid A 계통",
+            "염증과 공급 맥락"
+          ],
+          [
+            "ATTR",
+            "transthyretin",
+            "야생형·변이형 구별"
+          ]
+        ],
+        "notes": "정의·가정과 대표 관계의 비교이며 단일 임상 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/proteins/sections/pathology.proteins.amyloid-deposition.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "침착 검출과 전구체 유형·장기 기능은 별도로 평가한다."
+  ],
+  "relatedLessons": [
+    "pathology.hemodynamics.shock-perfusion-injury",
+    "pathology.immunity.hypersensitivity-mechanisms"
+  ],
+  "reviewQuestions": [
+    "question.pathology.proteins.amyloid-deposition.001",
+    "question.pathology.proteins.amyloid-deposition.002"
+  ]
+}

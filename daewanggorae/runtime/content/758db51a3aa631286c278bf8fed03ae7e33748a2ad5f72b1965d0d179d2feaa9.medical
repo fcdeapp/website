@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.cell.ischemia-reperfusion-mechanisms",
+  "subjectId": "pathology",
+  "chapterId": "cell",
+  "title": {
+    "ko": "허혈·재관류 손상의 에너지와 막 기전",
+    "en": "Energetic and Membrane Mechanisms of Ischemia–Reperfusion Injury"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.lo.01",
+      "text": "저산소와 허혈이 다른 공급 장애임을 설명한다"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.lo.02",
+      "text": "ATP·칼슘·미토콘드리아·막 손상의 연결을 설명한다"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.lo.03",
+      "text": "재관류의 이득과 추가 손상 기전을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.f5ad2291ea7d",
+      "type": "heading",
+      "level": 2,
+      "text": "산소 부족과 혈류 부족"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.909675d22d09",
+      "type": "paragraph",
+      "markdown": "저산소(hypoxia)는 조직 산소 이용에 필요한 공급이 부족한 상태를,허혈(ischemia)은 혈류가 감소한 상태를 가리킨다. 혈류 감소는 산소뿐 아니라 포도당 등 기질의 공급과 대사산물의 제거도 방해한다. 반대로 산소 운반 능력이 감소해도 혈류가 유지될 수 있다. 두 현상은 겹칠 수 있으나 같은 용어가 아니며,산소 분압만으로 영양 공급·미세순환·세포의 산소 이용 능력을 모두 판단할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.4d7607cb34e2",
+      "type": "paragraph",
+      "markdown": "세포는 기질과 ATP 저장,대체 에너지 생성 능력,기능 부하가 다르므로 동일한 혈류 감소에 같은 시간 동안 견디지 않는다. 조직 안에서도 관류 경로와 산소 소비가 달라 손상 분포가 불균일하다. 따라서 한 조직의 실험 시간을 다른 장기의 임상적 생존 한계로 전용하지 않는다. 손상의 크기를 이해할 때에는 혈류 감소의 정도·지속시간·재관류 상태와 이미 존재하던 세포 손상을 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.e55b292235d8",
+      "type": "heading",
+      "level": 2,
+      "text": "ATP 감소가 이온과 부피에 미치는 영향"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.19c6e84b39b4",
+      "type": "paragraph",
+      "markdown": "산화적 인산화가 제한되면 ATP 의존 펌프의 기능이 떨어지고 막의 이온 기울기 유지가 어려워진다. 나트륨과 물의 이동은 세포 종창에 기여하며 칼슘의 배출·저장소 회수가 저해될 수 있다. 해당 대사의 기여가 커지고 산성 대사산물과 수소이온의 처리도 달라진다. 단백질 합성과 세포골격 유지도 에너지 상태의 영향을 받는다. 세포 종창은 이러한 수지 변화의 형태적 결과 중 하나이며 처음부터 세포막 파열과 동일하지는 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.48574e1809bb",
+      "type": "paragraph",
+      "markdown": "잔여 ATP를 단순히 A(t)=A0exp(−kt)로 두면 일정 감소상수 k에서의 상대 감소를 비교할 수 있다. 실제 세포에서는 ATP 생성과 소비가 동시에 변하고 ADP·인산과 구획별 대사가 관여하므로 이 식을 허혈 시간의 임상 판정식으로 사용하지 않는다. 교육용 모형의 k=0.1min⁻¹에서10분 뒤 A/A0는 약0.368이다. 이 숫자가 살아 있는 세포의 비율36.8%나 비가역 손상의 문턱을 뜻하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.ee0d674a01ef",
+      "type": "heading",
+      "level": 2,
+      "text": "칼슘 과부하와 막 손상의 증폭"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.cdea0c836bd5",
+      "type": "paragraph",
+      "markdown": "세포질 칼슘 증가에는 막 통로·교환체의 변화,저장소 조절 이상,미토콘드리아와의 이동이 관여한다. 과도한 칼슘은 인지질분해효소·단백질분해효소와 일부 핵산분해 과정에 연결되고,막과 세포골격을 손상시킬 수 있다. 미토콘드리아에 축적된 칼슘과 산화 스트레스는 막 투과성 전이(mitochondrial permeability transition, MPT)에 관여한다. 다만 모든 칼슘 상승이 곧 파괴적 과부하는 아니며 정상 신호의 구획·크기·지속시간과 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.5581717d4637",
+      "type": "paragraph",
+      "markdown": "미토콘드리아 내막의 큰 투과성 변화는 막전위 유지와 ATP 생산을 위협한다. 외막을 통한 세포사멸 인자의 방출과 내막의 투과성 전이는 서로 연결될 수 있지만 동일한 구조적 사건은 아니다. 세포막 손상이 심해지면 내용물이 유출되고 세포외 위험 신호가 염증을 유도한다. 세포가 죽는 방식에는 조절된 경로도 존재하므로 괴사를 언제나 조절 불가능한 단순 폭발이라고 제한하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.d49cd0fa515d",
+      "type": "heading",
+      "level": 2,
+      "text": "혈류 회복 뒤에도 손상이 진행하는 이유"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.8cc0fdd28fea",
+      "type": "paragraph",
+      "markdown": "재관류(reperfusion)는 산소와 기질 공급을 회복하고 노폐물 제거를 돕는다. 동시에 산화환원 상태의 급격한 변화,칼슘 조절 장애,내피 활성화와 염증 반응이 추가 손상에 기여할 수 있다. 미토콘드리아·효소계·염증세포는 조건에 따라 활성산소종(reactive oxygen species, ROS)의 공급원이 된다. 재관류 손상의 존재가 혈류 회복을 포기할 근거는 아니다. 실제 재관류 치료의 적응증과 시점은 해당 질환의 임상 근거에 따라 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.ece1fe1efcd7",
+      "type": "paragraph",
+      "markdown": "큰 혈관의 개통과 모든 미세혈관의 기능 회복도 같지 않다. 내피 종창,혈구·혈소판과의 상호작용,간질 부종과 미세혈전 등이 미세순환 회복을 제한할 수 있다. 혈관 영상에서 흐름이 보이는 것과 조직 산소 공급·기능이 충분한 것은 별도로 평가해야 한다. 조직별로 이러한 기전의 비중이 다르고 임상 결과에는 염증뿐 아니라 기저 손상과 순환 상태도 관여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.de2161479926",
+      "type": "heading",
+      "level": 2,
+      "text": "형태·누출 표지·기능의 시간차"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.cf232a19ced4",
+      "type": "paragraph",
+      "markdown": "생화학적 변화가 먼저 생겨도 일반 광학현미경 소견은 나중에 분명해질 수 있다. 혈중 세포 성분의 증가에는 세포막 투과성,세포 손상 범위,재관류에 따른 유출,혈중 제거가 함께 영향을 준다. 따라서 혈중 수치가 낮다는 이유로 초기 손상을 모두 배제하거나,수치의 배수만으로 사멸 세포수를 선형 계산하지 않는다. 측정 시점과 분석법,원래의 세포내 분포를 함께 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.b.be87d8f855d4",
+      "type": "paragraph",
+      "markdown": "기전을 검증하는 실험에서는 산소·기질 공급,ATP 또는 호흡,막전위,칼슘,세포막 투과성,장기 기능을 서로 다른 지표로 측정한다. 형광 탐침 하나의 증가가 특정 ROS만의 생성량을 뜻하는지는 선택성과 교란을 확인해야 한다. 억제제가 손상을 줄였더라도 표적 외 효과와 측정 간섭을 배제해야 인과 주장이 강화된다. 여러 지표와 시간별 자료의 일치가 단일 종말점의 해석보다 중요한 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.diagram.atp-residual-example",
+      "type": "diagram",
+      "diagramRef": "diagram.atp-residual-example",
+      "path": "diagrams/diagram.atp-residual-example.svg",
+      "alt": "일정 감소상수의 ATP 상대 잔여의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.diagram.ischemia-injury-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.ischemia-injury-pairs",
+      "path": "diagrams/diagram.ischemia-injury-pairs.svg",
+      "alt": "손상 과정의 서로 다른 연결의 단계별 비교"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms.table.compare",
+      "type": "table",
+      "data": {
+        "title": "손상의 층",
+        "columns": [
+          "관찰",
+          "관련 기전",
+          "해석 범위"
+        ],
+        "rows": [
+          [
+            "ATP 감소",
+            "생성·소비 수지",
+            "생존율 자체 아님"
+          ],
+          [
+            "종창",
+            "이온·물 조절",
+            "막 파열과 구별"
+          ],
+          [
+            "칼슘 증가",
+            "유입·회수·구획",
+            "정상 신호와 과부하 구별"
+          ],
+          [
+            "혈관 개통",
+            "큰 혈관 흐름",
+            "미세관류·기능 별도"
+          ]
+        ],
+        "notes": "정의와 대표 관계를 비교한다. 실제 측정·예외·모형 조건은 본문에서 구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/cell/sections/pathology.cell.ischemia-reperfusion-mechanisms.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "혈류 회복은 공급을 돕지만 추가 손상과 미세순환 장애가 남을 수 있다."
+  ],
+  "reviewQuestions": [
+    "question.pathology.cell.ischemia-reperfusion-mechanisms.001",
+    "question.pathology.cell.ischemia-reperfusion-mechanisms.002"
+  ],
+  "relatedLessons": [
+    "pathology.cell.adaptation-injury-mechanisms",
+    "pathology.inflammation.mediators-leukocyte-recruitment",
+    "pathology.repair.matrix-remodeling-fibrosis"
+  ]
+}

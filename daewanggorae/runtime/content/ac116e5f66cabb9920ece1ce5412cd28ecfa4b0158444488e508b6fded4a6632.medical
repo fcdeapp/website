@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists",
+  "subjectId": "pharmacology",
+  "chapterId": "cardiovascular",
+  "title": {
+    "ko": "무기질코르티코이드 수용체 길항제",
+    "en": "Mineralocorticoid Receptor Antagonists"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.lo.01",
+      "text": "MR 길항과 ENaC 직접 차단의 차이를 설명한다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.lo.02",
+      "text": "칼륨 보존과 원위 네프론 수송을 연결한다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.lo.03",
+      "text": "약물별 선택성·대사·감시의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.d2d6bfa58eca",
+      "type": "heading",
+      "level": 2,
+      "text": "알도스테론과 세포 내 수용체"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.6ce4f8820cb4",
+      "type": "paragraph",
+      "markdown": "알도스테론(aldosterone)은 세포 내 mineralocorticoid receptor(MR)에 결합하여 유전자 발현과 세포 기능을 변화시키는 스테로이드 호르몬이다. 원위 네프론의 주세포(principal cell)에서는 나트륨 재흡수와 칼륨 분비를 지지하는 수송 체계와 연결된다. 관강 쪽 epithelial sodium channel(ENaC), 바닥가쪽 Na+/K+-ATPase 및 칼륨 통로는 서로 다른 위치에서 전기화학적 구배를 만든다. 실제 배설은 알도스테론뿐 아니라 원위 나트륨 전달과 유량, 신기능과 산염기 상태에도 좌우된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.renal.raas.a4a46e35"
+      ]
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.anatomy3d.0814-organ-context",
+      "type": "anatomy3d",
+      "sceneRef": "scene.physiology.renal.raas.a4a46e35"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.3455c062de5f",
+      "type": "paragraph",
+      "markdown": "스테로이드 수용체를 통한 전사 조절과 통로의 직접 차단은 개입 위치가 다르다. MR 길항제(mineralocorticoid receptor antagonist, MRA)는 호르몬의 수용체 작용을 방해하고, amiloride 같은 약물은 ENaC에 직접 작용한다. 둘 다 칼륨 보존성 이뇨제라는 기능적 분류에 들어갈 수 있지만 같은 분자 표적이나 같은 임상 근거를 가진 약물은 아니다. 소변량의 변화만으로 표적을 역추정할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.0e97aaea633d",
+      "type": "heading",
+      "level": 2,
+      "text": "나트륨 이동과 칼륨 분비의 연결"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.4462d553747c",
+      "type": "paragraph",
+      "markdown": "주세포에서 나트륨이 관강에서 세포로 이동하면 관강의 전기적 환경이 바뀌어 칼륨 분비를 돕는 조건을 만든다. MR 작용을 낮추면 이러한 연결이 약해져 칼륨 배설이 감소할 수 있다. 따라서 이뇨 작용이 있다는 이유로 혈중 칼륨이 반드시 감소한다고 생각해서는 안 된다. 네프론의 어느 부위와 어떤 수송을 변화시키는지가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.dfaab543dbcf",
+      "type": "paragraph",
+      "markdown": "혈중 칼륨의 변화는 식이·보충제·체내외 이동·신장 배설을 합친 결과다. 같은 약물에도 신기능이 낮거나 다른 RAAS 억제제가 병용되면 위험이 달라질 수 있다. 소변량이 유지된다는 사실이 칼륨 배설 능력까지 충분하다는 뜻은 아니다. 또 혈중 칼륨 한 시점이 정상이어도 이후 신기능·병용 약물·질병이 변하면 감시가 다시 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.a8a822ceaeec",
+      "type": "heading",
+      "level": 2,
+      "text": "스테로이드성 약물의 차이"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.e8edbfeac44b",
+      "type": "paragraph",
+      "markdown": "Spironolactone은 MR 외에 다른 스테로이드 수용체에 대한 영향도 있어 여성형유방(gynecomastia) 등 내분비 부작용을 이해할 때 이 선택성이 중요하다. 활성 대사체가 효과의 시간 경과에 기여할 수 있다. Eplerenone은 상대적으로 MR 선택성이 높지만 고칼륨혈증 위험이 사라지는 것은 아니다. 선택성이 높다는 말과 모든 부작용이 적다는 주장은 같은 내용이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.7d2199b0233e",
+      "type": "paragraph",
+      "markdown": "Eplerenone은 CYP3A4 대사가 중요하므로 이 효소를 강하게 억제하는 약물과의 병용은 노출·안전성에 영향을 줄 수 있다. 대사 억제로 농도가 증가하는 약동학적 상호작용과, 다른 약물이 칼륨 배설을 낮추는 약력학적 상호작용을 구별한다. 두 경로가 동시에 작용할 수도 있다. 같은 계열의 약물이라도 제거와 활성 대사체가 다르므로 동일한 밀리그램 수를 같은 효과로 바꾸어 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.4ca37afa8a3c",
+      "type": "heading",
+      "level": 2,
+      "text": "비스테로이드성 길항제와 근거의 범위"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.3073602c3a1a",
+      "type": "paragraph",
+      "markdown": "Finerenone 등 비스테로이드성 MRA도 MR 신호를 조절하지만 구조·분포·대사와 적응증의 근거가 스테로이드성 약물과 모두 같지는 않다. 어떤 약물에서 특정 신장·심혈관 결과가 개선되었다고 모든 MRA, 모든 신기능과 질환군에 동일한 이득을 부여할 수 없다. 임상시험의 대상·병용 치료·추적 기간과 실제 허가 범위를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.9aadc9156f65",
+      "type": "paragraph",
+      "markdown": "MR은 신장 상피뿐 아니라 다른 조직에도 관련되어 염증·재형성·섬유화와 연결될 수 있다. 이러한 기전은 소변량의 즉각적 증가와 장기 심혈관 결과가 반드시 비례하지 않는 이유를 이해하는 데 도움을 준다. 그러나 세포 수준에서 섬유화 신호가 줄었다는 결과만으로 특정 환자군의 생존 이득이 증명되지는 않는다. 분자 표적, 생리 지표와 임상 결과의 근거는 각각 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.ded197d70669",
+      "type": "heading",
+      "level": 2,
+      "text": "위해와 추적관찰"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.fa3d4fa40b5a",
+      "type": "paragraph",
+      "markdown": "Spironolactone의 미국 사용 기준(2024년7월 적용)에서는 시작·증량 뒤1주 이내와 이후 정기적으로 칼륨을 확인한다. 신기능 저하나 다른 칼륨 증가 약물과의 병용에서는 더 자주 확인할 수 있다. 이는 모든 MRA의 모든 적응증에 동일한 간격을 부여한 규칙이 아니다. 실제 제형·국내 허가정보·기저 칼륨·신기능과 병용에 맞추어 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.e4de3985189d",
+      "type": "paragraph",
+      "markdown": "고칼륨혈증, 저혈압과 신기능 변화는 중요한 위해다. 칼륨 보충과 칼륨 함유 대체소금, 다른 칼륨 보존 약물도 검토 대상이다. 내분비 부작용과 대사 상호작용은 약물별 차이를 추가로 평가한다. 임신 관련 안전성도 약물별로 확인해야 하며, spironolactone의 동물 자료에서 관찰된 수컷 태아 성분화 영향과 같은 경고를 단순한 이뇨제라는 이름으로 놓치지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.bf55527045c8",
+      "type": "heading",
+      "level": 2,
+      "text": "표적 반응과 농도 곡선 읽기"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.d35a74bf88fe",
+      "type": "paragraph",
+      "markdown": "독립적인 평형 결합 모형에서 자유 약물 농도를 C, 가상 해리상수를 K=2로 두면 점유 분율은 C/(2+C)다. C=2에서0.5, C=6에서0.75가 되지만 농도를3배로 올렸다고 점유가3배가 되지는 않는다. 이 포화 곡선은 단일 결합 부위·평형·자유 농도를 가정한다. 특정 MRA의 실제 K값이나 임상 노출 자료가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.d3fe01c7f27a",
+      "type": "paragraph",
+      "markdown": "점유 분율과 나트륨 배설량·혈압·고칼륨혈증 확률은 서로 다른 값이다. 실제 약물 효과에는 조직 접근, 내인성 호르몬, 수용체 이후 전사 반응과 시간 지연이 관여한다. 곡선에서 점유가 높다는 사실만으로 더 좋은 장기 결과나 허용 용량을 판정하지 않는다. 비교표에서는 표적, 제거, 주요 위해와 임상 근거를 따로 배치하여 같은 약물군 안의 차이를 드러낸다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.diagram.mr-occupancy-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.mr-occupancy-toy",
+      "path": "diagrams/diagram.mr-occupancy-toy.svg",
+      "alt": "고정 K의 가상 결합 점유의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.table.0813.0",
+      "type": "table",
+      "data": {
+        "title": "칼륨 보존 약물",
+        "columns": [
+          "군",
+          "직접 표적",
+          "구별"
+        ],
+        "rows": [
+          [
+            "MRA",
+            "MR",
+            "수용체 신호·시간"
+          ],
+          [
+            "ENaC 차단제",
+            "관강쪽 나트륨 통로",
+            "통로 직접 억제"
+          ],
+          [
+            "공통 위험",
+            "칼륨 배설 감소 가능",
+            "기저신기능·병용에 따라 다름"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pharmacology.cardiovascular.mineralocorticoid-antagonists.table.0813.1",
+      "type": "table",
+      "data": {
+        "title": "약물별 차이",
+        "columns": [
+          "약물",
+          "대표 고려"
+        ],
+        "rows": [
+          [
+            "Spironolactone",
+            "다른 스테로이드 수용체 영향·활성대사체"
+          ],
+          [
+            "Eplerenone",
+            "상대 선택성·CYP3A4"
+          ],
+          [
+            "비스테로이드성 MRA",
+            "구조·적응증·근거를 개별 확인"
+          ],
+          [
+            "공통",
+            "점유≠칼륨확률·임상 이득"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/cardiovascular/sections/pharmacology.cardiovascular.mineralocorticoid-antagonists.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "relatedLessons": [
+    "pharmacology.cardiovascular.renin-angiotensin-drugs",
+    "pharmacology.cardiovascular.renal-drug-interactions"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.cardiovascular.mineralocorticoid-antagonists.001",
+    "question.pharmacology.cardiovascular.mineralocorticoid-antagonists.002"
+  ]
+}

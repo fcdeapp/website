@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.testing.stress-ischemia",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.testing.stress-ischemia.b.96d49295200a",
+      "sourceSha256": "96d49295200a3b92bbbd1ed2b25bfd3aa7db91f21155825b8f9d4f400de35ff8",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.testing.stress-ischemia.b.84b22182a371",
+      "sourceSha256": "84b22182a371c031284ac76b044d9628f5248c51b923f865951b54fcf8510057",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.testing.stress-ischemia.b.32c234439825",
+      "sourceSha256": "32c234439825a75a73df2a6f14ea606bb34b22929389e6ead664e7f45f7087fe",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.testing.stress-ischemia.b.b000f67e5f20",
+      "sourceSha256": "b000f67e5f20fae781e01ba8ff25b7ad1986610ce670a8dc5c9ae87847cdab80",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.testing.stress-ischemia.b.dee9ca064fe4",
+      "sourceSha256": "dee9ca064fe44550f32891a06873a4be83dea21053c3e28007dd6b7a479236c2",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.testing.stress-ischemia.b.2972d9e55376",
+      "sourceSha256": "2972d9e5537610db6d3b52d1503a66651ff53a4e776b589d85d744f8887c6fd4",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.testing.stress-ischemia.b.3a0e78f01372",
+      "sourceSha256": "3a0e78f013722efe118cf3f48f499d72704a4eca0d031ffa283df6b80d62bb15",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.83fe2b8c72a4cfa77d5e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 128,
+            "exact": "급성관상동맥증후군",
+            "prefix": "전 안전성 판단과 적절한 감시가 필요하다. ",
+            "suffix": "에서 현재 위험을 평가하는 것과 만성 증상에"
+          },
+          "conceptId": "reader.term.da81b428602d1aae",
+          "targetDocumentId": "cardiology.ischemia.acute-coronary-syndrome"
+        },
+        {
+          "id": "ann.0ae5f95e9434bef0b806",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 33,
+            "end": 91,
+            "exact": "진행하는 급성 허혈이나 심한 불안정성이 있는 환자를 검증되지 않은 부하로 시험하는 방식과 구별해야 한다.",
+            "prefix": " 상황에서 허혈과 기능을 평가하는 도구다. ",
+            "suffix": " 검사 전 안전성 판단과 적절한 감시가 필요"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.testing.stress-ischemia.b.3a9421cc3fc8",
+      "sourceSha256": "3a9421cc3fc8ca37befc27ebdf61402bed66ba3dc70c5984b820c38159d2a061",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    }
+  ]
+}

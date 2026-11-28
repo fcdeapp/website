@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.coronary.microvascular-vasospastic",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.coronary.microvascular-vasospastic.b.914fe665d511",
+      "sourceSha256": "914fe665d511628f042f74adeed9f6b8c2602120f26f27e573122e9970525a15",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.microvascular-vasospastic.b.1638950f5eae",
+      "sourceSha256": "1638950f5eae0712ce5d6f3a7d343c8222a905dafb6567a5341798b0f6c5885f",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.microvascular-vasospastic.b.08b9bbd70074",
+      "sourceSha256": "08b9bbd700748aa2a294fab53a77ab713c85d028df34df392af914d2b791d58e",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.microvascular-vasospastic.b.26a82f47f10a",
+      "sourceSha256": "26a82f47f10ae2d078c1f0d4664b9d68c5e85ef9976fff2a2857352469583c14",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.microvascular-vasospastic.b.688976f17ed6",
+      "sourceSha256": "688976f17ed63f38d271725b4029e73cc71fac660434d70001b7fd018ed4af72",
+      "sourceLengthUtf16": 175,
+      "annotations": [
+        {
+          "id": "ann.f6dcf37186833e7a9d46",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 146,
+            "end": 175,
+            "exact": "검사 전제와 자극이 어떤 회로를 평가하는지 구별한다.",
+            "prefix": "평활근·구조 이상을 분류하려 하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.coronary.microvascular-vasospastic.b.8b55cbd52448",
+      "sourceSha256": "8b55cbd52448552f125716305495cd7fb36711095db3391b4851129fa5ff1865",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.coronary.microvascular-vasospastic.b.1b72d8eeb6bb",
+      "sourceSha256": "1b72d8eeb6bb42d5ad3578c61d2f162aa6a435f4442896d253ef877f13e9c955",
+      "sourceLengthUtf16": 157,
+      "annotations": [
+        {
+          "id": "ann.5e09f63c60597c840a9d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 92,
+            "end": 118,
+            "exact": "증상 완화와 사건 예방의 근거도 구별해야 한다.",
+            "prefix": "은 약물이 같은 효과를 내는 것은 아니다. ",
+            "suffix": " 검사에서 확인된 기능과 동반질환, 약물의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.coronary.microvascular-vasospastic.b.0de8b8cf51e9",
+      "sourceSha256": "0de8b8cf51e967f41718880976d463a82983db3c7e606234413444c86e49e38a",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.6ecadcf982226148c2f2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 135,
+            "end": 187,
+            "exact": "미세혈관 기능 장애는 중요한 설명이지만 남은 감별을 모두 덮는 최종 명칭으로 사용하지 않는다.",
+            "prefix": " 질환을 확인하는 과정이 별도로 필요하다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

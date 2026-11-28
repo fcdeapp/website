@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.hemodynamics.dic-consumption",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.bff5d7e28d89",
+      "sourceSha256": "bff5d7e28d89c19a65ad8dcc22f69b746d9882c92bdd6bb383ad87cbef22e180",
+      "sourceLengthUtf16": 233,
+      "annotations": [
+        {
+          "id": "ann.6f630c2741df9a58c1fe",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 127,
+            "end": 132,
+            "exact": "섬유소용해",
+            "prefix": "야 할 반응이 넓어지고, 내피·염증·응고와 ",
+            "suffix": "의 조절이 달라진다. 감염, 심한 조직 손상"
+          },
+          "conceptId": "reader.term.d74688e1467be81c",
+          "targetDocumentId": "hematology.hemostasis.platelet-coagulation"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.576533990476",
+      "sourceSha256": "5765339904761b20f5b81a37854c3c07c79dd6f76b7a62e419c3efd6858f3e30",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.665133625eba",
+      "sourceSha256": "665133625eba89a4287a1e2fb9a13379b8d03f0a8cffb578507760fa9021fcc6",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.3f27cdf68f1a",
+      "sourceSha256": "3f27cdf68f1ae6e6475409a41580c9df9ad91fecd418867542a90df7a033d0d9",
+      "sourceLengthUtf16": 228,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.736a18b1274d",
+      "sourceSha256": "736a18b1274d0f768a7da6407ea155548be1e86e7ec991aa749cab14431949b2",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.7c946b0bbfc7786bf325",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 10,
+            "end": 14,
+            "exact": "aPTT",
+            "prefix": "혈소판 수, PT·",
+            "suffix": ", fibrinogen과 fibrin 관련 "
+          },
+          "conceptId": "reader.term.2c463235cb32480d",
+          "targetDocumentId": "laboratory-medicine.coagulation.pt-aptt-patterns"
+        },
+        {
+          "id": "ann.3dbd9aab79bf379bbdb1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 59,
+            "end": 118,
+            "exact": "말초 도말의 분열적혈구는 미세혈관의 기계적 손상을 시사할 수 있으나 원인 질환을 단독으로 확정하지 않는다.",
+            "prefix": "관련 표지자는 서로 다른 과정을 관찰한다. ",
+            "suffix": " D-dimer 역시 교차결합 fibrin "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.49060543f0c9",
+      "sourceSha256": "49060543f0c9230c3bf785c06b7f902c8ac5dd90d287f51169372de68976b107",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.2e611b10eb8dbe27d46b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 47,
+            "exact": "진단 접근에서는 DIC를 유발할 임상 상황과 여러 검사의 조합·연속 변화가 중요하다.",
+            "prefix": "",
+            "suffix": " 초기 또는 완만한 상태에서 모든 검사 이상"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.7518584db185",
+      "sourceSha256": "7518584db1850f30c67da67eabf389a3fb98497acd11d3b3f8e5834e69aa0943",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.d96886dc4004",
+      "sourceSha256": "d96886dc4004aff64ea31040b1c1d97d48f2f3b5615e4b514bc166e36d13db70",
+      "sourceLengthUtf16": 161,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.b9f67e5e3c0a",
+      "sourceSha256": "b9f67e5e3c0ad0027335345612586d1195e69b79cb59641fce6a1dd4fc08d5ac",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.dic-consumption.b.db765e538f90",
+      "sourceSha256": "db765e538f90b3d4fd3e54302c2042a1fc966b43316ae83e8d28a36d73f1360e",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    }
+  ]
+}

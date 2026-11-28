@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.cardiovascular.repolarization-proarrhythmia",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.cdd26fa5d8a5",
+      "sourceSha256": "cdd26fa5d8a5daa25d73db4dfcf75202e18c1229cdfc2e6807432566cb14a6f5",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.f6376ce89d87",
+      "sourceSha256": "f6376ce89d8727b34d505d5c11ad40ef7872c6936d85891efe7e322082d09554",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.9b55a50909c1",
+      "sourceSha256": "9b55a50909c12235801a2b74bed8d1530f32ed6dac51a109039feca2e626dd9c",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.0312a3d43539",
+      "sourceSha256": "0312a3d4353927b5d6100b51733a3464770e4dc38aa3c3eee79c7d033bfad6a3",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.caa5b2779ad2",
+      "sourceSha256": "caa5b2779ad2fff66aa74e5ff682c6192b2cf268f20b02707d3f16e20ebc0257",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.97e4ecf5d654",
+      "sourceSha256": "97e4ecf5d654cbf2ab8763fbd93be1fe8de51deb5adefa1cdae60359dd2b5ad2",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.a2919ab9c68f259c77d3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 80,
+            "end": 132,
+            "exact": "신기능이 저하되어 노출이 달라지는 상황과 다른 QT 연장 약물의 병용은 위해 평가에 중요하다.",
+            "prefix": " 전해질 상태는 서로 연결된 감시 축이다. ",
+            "suffix": " 실제 시작·재시작·증량은 해당 제형과 적응"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.90989b30fc7a",
+      "sourceSha256": "90989b30fc7a37937d36816bc54a8e05e0608074951df15c24c242a5a0be53d7",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.f7306ae5a2617cbde1da",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 72,
+            "end": 75,
+            "exact": "약동학",
+            "prefix": "다른 약물의 제거를 억제하여 노출을 높이는 ",
+            "suffix": "적 상호작용과, 서로 재분극에 영향을 더하는"
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        },
+        {
+          "id": "ann.95cbcbca997cbd14df96",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 100,
+            "end": 103,
+            "exact": "약력학",
+            "prefix": " 상호작용과, 서로 재분극에 영향을 더하는 ",
+            "suffix": "적 상호작용은 구별한다. 두 경로가 동시에 "
+          },
+          "conceptId": "reader.term.3f6c24ce1179f5f7",
+          "targetDocumentId": "pharmacology.general.pharmacodynamics"
+        },
+        {
+          "id": "ann.fc17996424dc4ce66076",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 42,
+            "end": 116,
+            "exact": "한 약물이 다른 약물의 제거를 억제하여 노출을 높이는 약동학적 상호작용과, 서로 재분극에 영향을 더하는 약력학적 상호작용은 구별한다.",
+            "prefix": " 심장 질환은 약물 관련 위험의 맥락이다. ",
+            "suffix": " 두 경로가 동시에 작용할 수도 있다. 처방"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.000876bdd5b3",
+      "sourceSha256": "000876bdd5b3199909be3f605302766196178f82dfbef8ff2670d1dbb7e0df97",
+      "sourceLengthUtf16": 180,
+      "annotations": [
+        {
+          "id": "ann.16ca88e3c0a98f9ef1be",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 110,
+            "exact": "반대로 병용 가능성이 있다는 사실만으로 모든 환자에서 실제 부정맥이 발생한다고 확정하지 않는다.",
+            "prefix": "가 현재의 위험을 모두 배제하지는 않는다. ",
+            "suffix": " 약물·용량·시간과 환자 상태를 연결하여 노"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.063be6688475",
+      "sourceSha256": "063be6688475502681c3842044585eb67abbff0bd6f65e59779e051d87024f93",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.repolarization-proarrhythmia.b.29b60adec7d6",
+      "sourceSha256": "29b60adec7d6ee6eee3fe95d1b32b5cdd0f75e0510e4e53e4c407f1eafa9262b",
+      "sourceLengthUtf16": 159,
+      "annotations": []
+    }
+  ]
+}

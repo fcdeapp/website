@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "장기 심전도와 전기생리검사",
+    "en": "Ambulatory Monitoring and Electrophysiology Study"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.lo.01",
+      "text": "증상 빈도에 맞는 기록 전략을 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.lo.02",
+      "text": "검출 실패와 질환 부재를 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.lo.03",
+      "text": "심장 내부 시간과 해부학적 위치의 관계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.2e49f247ba6e",
+      "type": "heading",
+      "level": 2,
+      "text": "질문에 맞춘 기록"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.cdbbff37240f",
+      "type": "paragraph",
+      "markdown": "안정 시 심전도는 짧은 시간의 전기적 상태를 보여 준다. 간헐적인 실신과 두근거림이 그때 없었다면 정상 결과가 사건 당시의 리듬을 설명하지 못할 수 있다. 장기 심전도 검사의 목적은 단순히 기록 시간을 늘리는 데 있지 않고 증상과 리듬의 관계, 부정맥의 빈도·지속 및 치료 안전성을 확인하는 데 있다. 발생 빈도와 지속, 환자가 장치를 조작할 수 있는지 및 사건의 위험도를 고려하여 기록 방식을 선택한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.1e22472d3676",
+      "type": "paragraph",
+      "markdown": "Holter 기록과 패치형 연속 기록, 사건 기록기 및 루프 기록기는 관찰 시간과 활성화 방식, 유도 수가 다르다. 루프 방식은 현재 시점 이전의 일정 구간을 보관할 수 있어 증상 뒤 활성화한 경우에도 직전 리듬을 확인하는 데 도움이 된다. 자동 검출은 환자가 의식을 잃거나 증상을 인식하지 못할 때 유용하지만 잡음과 과감지의 판독이 필요하다. 장치를 착용했다는 사실만으로 전체 시간 동안 양질의 신호가 확보되었다고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.ac9b8003d388",
+      "type": "heading",
+      "level": 2,
+      "text": "음성 검사의 해석"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.caab307d28a1",
+      "type": "paragraph",
+      "markdown": "매일 나타나는 증상과 수개월에 한 번 나타나는 사건에 같은 짧은 검사만 적용하면 포착 가능성이 다르다. 증상이 검사 중 실제 재현되었는데 리듬이 정상인 경우와 증상 자체가 없었던 경우의 음성 결과는 구별한다. 첫 경우는 그 증상에서 부정맥의 기여를 평가하는 근거가 될 수 있지만, 다른 종류의 발작까지 모두 배제하는 것은 아니다. 두 번째 경우에는 단순히 관찰 창에서 사건을 만나지 못했을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.b177ca2369e7",
+      "type": "paragraph",
+      "markdown": "사건이 일정한 평균 발생률 λ로 독립적으로 생기는 교육용 Poisson 모형에서는 시간 T 안에 한 번 이상 포착할 확률을 1−exp(−λT)로 계산할 수 있다. 이 식은 관찰 시간이 길어질 때의 방향과 한계를 이해하는 자료다. 실제 부정맥은 군집하고 유발 조건에 따라 발생률이 달라지며 장치의 감도와 착용 중단도 영향을 준다. 따라서 이 모형의 숫자를 특정 장치의 실제 진단 수율이나 환자의 검사 선택 확률로 보고해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.b60c174540e3",
+      "type": "heading",
+      "level": 2,
+      "text": "전기생리검사의 시간과 공간"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.ee35f22256ab",
+      "type": "paragraph",
+      "markdown": "침습적 전기생리검사에서는 심장 내부 전기도와 계획된 자극으로 전도 시간, 불응기와 빈맥 회로의 반응을 평가한다. 심방 신호 A, 히스 신호 H와 심실 신호 V 사이의 간격은 표면 PR보다 전도 단계를 세분화하는 데 도움을 준다. AH는 주로 결절 전도, HV는 히스계 이하 전달의 평가에 활용되지만 측정 위치와 신호의 정의를 확인해야 한다. 하나의 표면 PR을 두 구간의 정확한 합으로 무조건 배분할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.5d82d93d542c",
+      "type": "paragraph",
+      "markdown": "전기해부학적 지도는 위치와 신호의 시간·전압을 함께 표시한다. 낮은 전압은 반흔의 단서가 될 수 있지만 접촉 상태, 파면 방향과 기록 조건도 영향을 준다. 자극으로 회로를 재설정하거나 빈맥을 종료하는 반응은 단순한 활성화 순서보다 회로 참여에 대한 추가 근거를 제공한다. 정상 BodyParts3D 좌표는 육안 구조의 위치이며 환자의 카테터 좌표나 전압 지도와 동일하지 않다. 지도와 해부학을 연결할 때에는 별도의 정합과 실제 환자 자료가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "연속 기록",
+            "유효 신호·관찰 창 명시"
+          ],
+          [
+            "증상 없는 음성",
+            "발작을 못 만났을 가능성"
+          ],
+          [
+            "AH·HV",
+            "내부 신호로 전도 단계 평가"
+          ],
+          [
+            "전기 지도",
+            "정상 육안 메시와 다른 자료"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.diagram.poisson-capture-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.poisson-capture-toy",
+      "path": "diagrams/diagram.poisson-capture-toy.svg",
+      "alt": "독립 사건 모형의 관찰 시간의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.ambulatory-monitoring-ep-study.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.ambulatory-monitoring-ep-study.001",
+    "question.cardiology.arrhythmias.ambulatory-monitoring-ep-study.002"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.antiarrhythmic-risk"
+  ]
+}

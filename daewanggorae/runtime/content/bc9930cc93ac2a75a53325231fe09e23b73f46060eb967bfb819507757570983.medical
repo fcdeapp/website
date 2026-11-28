@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.respiratory.mechanics-compliance",
+  "subjectId": "physiology",
+  "chapterId": "respiratory",
+  "title": {
+    "ko": "호흡역학·순응도·기도저항과 호흡일",
+    "en": "Respiratory Mechanics, Compliance, and Resistance"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.respiratory.mechanics-compliance.lo.01",
+      "text": "폐와 가슴벽의 압력·용적 관계를 구별한다"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.lo.02",
+      "text": "순응도와 저항의 정의 및 측정 조건을 설명한다"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.lo.03",
+      "text": "폐쇄성·제한성 변화와 호흡일의 관계를 기전으로 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.35a263c842c1",
+      "type": "heading",
+      "level": 2,
+      "text": "공기가 들어오는 조건"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.cc7a250367b0",
+      "type": "paragraph",
+      "markdown": "공기 흐름은 대기와 폐포 사이의 압력차가 기도 저항을 극복할 때 발생한다. 안정적인 들숨에서 가로막이 수축하면 가슴막압(pleural pressure)이 더 낮아지고 폐를 벌리는 압력인 경폐압(transpulmonary pressure)이 증가한다. 경폐압은 폐포압에서 가슴막압을 뺀 값이다. 폐포압이 대기압보다 잠시 낮아지면 공기가 들어온다. 들숨이 끝나 흐름이 멈춘 순간에는 폐포압이 대기압과 같아질 수 있어도 경폐압은 여전히 양수일 수 있다. 흐름을 만드는 압력차와 폐의 팽창을 유지하는 압력을 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.b116e7a2d6ea",
+      "type": "paragraph",
+      "markdown": "가슴막 공간에는 정상적으로 두 면이 미끄러질 수 있는 소량의 액체가 있고, 폐와 가슴벽의 반대 방향 되돌림 힘이 결합되어 있다. 안정 호기 말의 기능적잔기용량(functional residual capacity, FRC)은 호흡근 활동이 거의 없는 조건에서 폐의 안쪽 되돌림과 가슴벽의 바깥쪽 되돌림이 균형을 이루는 용적이다. 폐와 가슴벽이 각각 아무 힘도 만들지 않는 상태라는 뜻은 아니다. 기흉처럼 두 구조의 결합이 달라지면 이 균형과 폐용적이 변한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.b642bd2079ec",
+      "type": "heading",
+      "level": 2,
+      "text": "순응도와 탄성"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.f5d096e825a3",
+      "type": "paragraph",
+      "markdown": "순응도(compliance)는 특정 압력 변화에 대한 용적 변화 ΔV/ΔP로 정의한다. 폐만의 순응도를 말할 때에는 경폐압을, 전체 호흡계에서는 폐와 가슴벽을 함께 팽창시키는 압력을 고려한다. 같은 압력 변화로 용적이 많이 증가하면 순응도가 크고, 같은 용적을 만드는 데 큰 압력이 필요하면 순응도가 작다. 탄성계수(elastance)는 대응하는 조건에서 순응도의 역수 관계를 가진다. 두 용어를 모두 ‘잘 늘어난다’의 뜻으로 사용하면 방향이 뒤집힌다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.ddd0b7c3fa31",
+      "type": "paragraph",
+      "markdown": "압력·용적 곡선은 대체로 전 범위에서 직선이 아니다. 낮은 용적에서의 폐포 열림과 높은 용적에서의 조직 긴장은 곡선의 기울기를 바꾼다. 따라서 한 구간의 ΔV/ΔP와 특정 점의 기울기를 구별하고 어느 용적 범위에서 측정했는지 명시해야 한다. 폐 크기가 다르면 절대 순응도도 달라질 수 있어 용적으로 정규화한 특이순응도(specific compliance)를 비교하기도 한다. 순응도 숫자 하나만으로 모든 환자의 폐 조직 상태를 판단할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.6631d301ad93",
+      "type": "paragraph",
+      "markdown": "흐름이 없는 조건에서 측정하는 정적순응도와 흐름이 있는 과정에서 추정하는 동적 관계는 다를 수 있다. 저항과 시간상수가 다른 폐 단위가 함께 있는 경우 빠른 호흡에서는 모든 단위가 같은 정도로 채워지지 못한다. 이때 나타난 용적 변화의 차이를 조직의 탄성 변화만으로 설명해서는 안 된다. 측정 조건과 환자의 호흡근 활동도 압력 해석에 영향을 준다. 인공호흡기의 압력을 이용할 때에는 기도 압력과 실제 경폐압이 같지 않다는 점을 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.caf097829f8a",
+      "type": "heading",
+      "level": 2,
+      "text": "표면장력과 이력현상"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.8b08896aa51d",
+      "type": "paragraph",
+      "markdown": "폐의 탄성 되돌림에는 결합조직뿐 아니라 폐포의 공기·액체 경계면에서 생기는 표면장력이 기여한다. 표면활성제(surfactant)는 표면장력을 낮추고 폐포 안정성과 팽창 부담에 영향을 준다. 단순 구형 모형에서는 안팎 압력차가 2T/r로 표현되지만 실제 폐포는 서로 연결된 격막과 변하는 기하를 가진다. 따라서 작은 폐포가 독립적인 비누방울처럼 반드시 큰 폐포로 모두 비워진다고 설명하면 표면활성제와 조직 상호지지의 역할을 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.07762114ee58",
+      "type": "paragraph",
+      "markdown": "폐를 팽창시킬 때와 줄일 때 같은 압력에서 용적이 다른 이력현상(hysteresis)이 나타날 수 있다. 표면활성제의 상태 변화와 폐 단위의 모집·이탈 등 여러 요소가 관련된다. 곡선 사이의 면적을 볼 때에는 측정 주기와 조건을 확인해야 하며 이것을 단순한 한 종류의 조직 손상량으로 동일시하지 않는다. 폐가 잘 늘어난다는 사실도 항상 유리한 것은 아니다. 탄성 되돌림이 줄면 호기 동안 기도를 열어 두는 지지가 약해질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.e69452c294d7",
+      "type": "heading",
+      "level": 2,
+      "text": "기도저항과 유량"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.aad6010964e3",
+      "type": "paragraph",
+      "markdown": "기도저항(resistance)은 압력차를 유량으로 나눈 값이다. 길고 곧은 강체 원통에서 정상적인 층류를 가정하는 Poiseuille 모형에서는 저항이 점도와 길이에 비례하고 반지름의 네제곱에 반비례한다. 반지름을 줄이는 부종·분비물·평활근 수축이 흐름에 크게 영향을 줄 수 있다는 직관을 준다. 그러나 실제 기도는 분지하고 변형되며 난류와 관성도 관여하므로 반지름 비율만으로 모든 환자의 총 기도저항을 계산할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.46d659e507d4",
+      "type": "paragraph",
+      "markdown": "가장 작은 개별 세기관지가 반드시 전체에서 가장 큰 총 저항을 만드는 것은 아니다. 수많은 작은 기도가 병렬로 연결되어 있기 때문이다. 반대로 일부 작은 기도의 병적 협착은 전체 기능에 큰 영향을 줄 수 있다. 직렬·병렬 연결과 각 구간의 단면적 합을 구분해야 한다. 폐용적이 증가하면 주변 실질의 견인과 기도 지름 변화로 저항이 달라질 수 있어 같은 기도도 모든 용적에서 동일한 저항을 갖지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.4b1d3b7c8635",
+      "type": "heading",
+      "level": 2,
+      "text": "호기 유량 제한과 시간상수"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.741267b236f0",
+      "type": "paragraph",
+      "markdown": "강제호기에서는 가슴막압이 높아져 기도 안팎의 압력 관계가 달라지고 일부 구간에서 동적 압박이 발생한다. 기도 안 압력은 흐름을 따라 낮아지므로 입 쪽 전체가 폐포압과 같은 압력을 유지하는 것은 아니다. 어느 정도 이상의 호기 노력에서 유량이 더 증가하지 않는 현상은 단순히 호흡근이 힘을 더 못 내서만 생기는 것이 아니다. 폐의 탄성 되돌림과 기도의 압력 의존적 변형을 함께 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.bcd984454026",
+      "type": "paragraph",
+      "markdown": "단순한 저항·순응도 회로에서 시간상수 τ는 R×C로 표현된다. R의 단위가 cmH₂O·s/L이고 C가 L/cmH₂O이면 τ는 초가 된다. 저항이 크거나 순응도가 크면 일정한 압력 변화에 대한 용적 반응이 느려질 수 있다. 실제 폐는 여러 시간상수를 가지므로 한 값으로 모든 단위의 채움과 비움을 재현하지 않는다. 호기 시간이 충분하지 않으면 다음 들숨 전 공기가 남을 수 있으며 이를 평가할 때에는 호흡 주기와 흐름의 종료를 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.03b6b99f926f",
+      "type": "heading",
+      "level": 2,
+      "text": "호흡일과 임상 해석"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.92b04a975366",
+      "type": "paragraph",
+      "markdown": "호흡일은 압력과 용적 변화의 관계로 이해할 수 있으며 탄성 부담과 저항성 부담이 함께 포함된다. 빠르고 얕은 호흡이 어떤 조건에서 부담을 줄이더라도 사강 비율을 높일 수 있고, 깊은 호흡은 탄성 일을 늘릴 수 있다. 따라서 호흡 양식에는 역학과 가스교환 사이의 절충이 존재한다. 순응도가 작은 폐와 기도저항이 큰 폐에서 동일한 호흡수·일회호흡량이 같은 일을 요구한다고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.b.a3343ed9c61d",
+      "type": "paragraph",
+      "markdown": "폐쇄성 변화에서 호기 유량·공기 포획·저항을, 제한성 변화에서 용적·탄성 부담을 살피는 것은 유용한 출발점이다. 그러나 이러한 범주와 단일 조직 기전을 일대일로 고정하지 않는다. 폐기종에서는 순응도가 커지면서 되돌림이 약해질 수 있고 섬유화에서는 순응도가 작아질 수 있지만 폐기능검사·영상·증상을 함께 해석해야 한다. 호흡곤란은 역학 외에도 산소운반·호흡조절·심혈관 상태의 영향을 받는 통합된 증상이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.diagram.pressure-volume-linear",
+      "type": "diagram",
+      "diagramRef": "diagram.pressure-volume-linear",
+      "path": "diagrams/diagram.pressure-volume-linear.svg",
+      "alt": "일정 순응도 모형의 압력·용적 변화의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.diagram.airway-radius-resistance",
+      "type": "diagram",
+      "diagramRef": "diagram.airway-radius-resistance",
+      "path": "diagrams/diagram.airway-radius-resistance.svg",
+      "alt": "강체 층류 모형의 반지름과 상대 저항의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.table.comparison",
+      "type": "table",
+      "data": {
+        "title": "호흡역학의 서로 다른 양",
+        "columns": [
+          "항목",
+          "정의",
+          "단위 예"
+        ],
+        "rows": [
+          [
+            "순응도",
+            "ΔV/ΔP",
+            "L/cmH₂O"
+          ],
+          [
+            "탄성계수",
+            "ΔP/ΔV",
+            "cmH₂O/L"
+          ],
+          [
+            "저항",
+            "압력차/유량",
+            "cmH₂O·s/L"
+          ],
+          [
+            "시간상수",
+            "R×C",
+            "s"
+          ]
+        ],
+        "notes": "순응도와 저항은 다른 압력차·단위를 사용하며 시간상수는 제시한 단순 회로에서의 관계이다."
+      }
+    },
+    {
+      "id": "physiology.respiratory.mechanics-compliance.equation.core",
+      "type": "equation",
+      "latex": "C=\\frac{\\Delta V}{\\Delta P},\\quad R=\\frac{\\Delta P}{\\dot V},\\quad \\tau=RC",
+      "variables": {
+        "C": "순응도 (L/cmH₂O)",
+        "R": "저항 (cmH₂O·s/L)",
+        "tau": "시간상수 (s)",
+        "DeltaV": "용적 변화 (L)",
+        "DeltaP": "해당 구조를 구동하는 압력 변화 (cmH₂O)",
+        "Vdot": "유량 (L/s)"
+      },
+      "assumptions": [
+        "선형 저항·순응도 모형이며 폐의 전 용적·유량 범위를 표현하지 않는다."
+      ]
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/respiratory/sections/physiology.respiratory.mechanics-compliance.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.physiology.respiratory.mechanics-compliance.001",
+    "question.physiology.respiratory.mechanics-compliance.002"
+  ],
+  "keyFacts": [
+    "0.10 L/cmH₂O"
+  ],
+  "relatedLessons": [
+    "physiology.respiratory.alveolar-equation-deadspace",
+    "physiology.respiratory.diffusion-oxygen"
+  ]
+}

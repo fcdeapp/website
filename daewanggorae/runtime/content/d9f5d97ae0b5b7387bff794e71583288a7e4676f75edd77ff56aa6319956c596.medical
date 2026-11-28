@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neonatology.bilirubin.hours-risk-assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.b.928624717ffc",
+      "sourceSha256": "928624717ffceccf092bdd1df5f09d3b9d72314e35352fa6649d19b2ee374c04",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.b.0b3ce861c9ac",
+      "sourceSha256": "0b3ce861c9ac5afdac07dcc75a04498135613796a16b746eecc2ec9f0e22d458",
+      "sourceLengthUtf16": 167,
+      "annotations": [
+        {
+          "id": "ann.e9614e09f3122e1839f4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 108,
+            "end": 138,
+            "exact": "경피 측정과 혈청 측정은 원리와 적용 범위를 구별한다.",
+            "prefix": " 피부색과 조명·관찰 조건도 영향을 준다. ",
+            "suffix": " 치료 판단과 추적에는 해당 방법의 한계를 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.b.11e39b3b6b7c",
+      "sourceSha256": "11e39b3b6b7ca633df5c0dfcc8de2c2149ff453ff7b362bede135fc1ff529c03",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.6b79423a52947cf33bf7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 90,
+            "end": 136,
+            "exact": "섭취 부족과 체중·수분·배변 문제를 동반한 상황, 그 밖의 경과와 원인을 구별한다.",
+            "prefix": "든 황달을 같은 기전으로 설명하지 않는다. ",
+            "suffix": " 담즙 정체와 포합 빌리루빈 증가도 별도의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.b.1d70ec090849",
+      "sourceSha256": "1d70ec090849bf3454cd28d2d5fd35ac3baad8a2fd7482104da71246b503b2bf",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.b.4754fc38f81e",
+      "sourceSha256": "4754fc38f81e3d9d7e3261dcca9503269d07abb1eaf61e8744056c0c14682ee8",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.b.a3425fa1096b",
+      "sourceSha256": "a3425fa1096bf65240c29a5cd93bdc3b436237c2ed44a9d9b29e74a00d523741",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.b.232b6aa36f99",
+      "sourceSha256": "232b6aa36f999b570596cc37041f41d2053d0e2d4b798ceda6f1e435e90fe385",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.b.2aec6402f9a6",
+      "sourceSha256": "2aec6402f9a6daa9c55f7b5627d5cc4c245cdd2351c68cadf0f3ef4dbd3f51ac",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.supp.c718c63dc233",
+      "sourceSha256": "c718c63dc233e1ccf1c26a76a9796ef85b8c4b88b4485f1d3e78bb6e9c10eabd",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.hours-risk-assessment.supp.2814c6c557e2",
+      "sourceSha256": "2814c6c557e2ef8b099f2de700ad125cbb9032a40a299d5b047fbe2360e756c5",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.f744eca66fbf5969dfda",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 158,
+            "end": 185,
+            "exact": "어떤 형태의 빌리루빈이 왜 증가하는지를 구별한다.",
+            "prefix": "라도 분획과 증상·경과가 중요할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

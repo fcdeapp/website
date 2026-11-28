@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.testing.lung-volumes",
+  "subjectId": "pulmonology",
+  "chapterId": "testing",
+  "title": {
+    "ko": "폐용적·공기포획과 제한성 장애",
+    "en": "Lung Volumes Air Trapping and Restriction"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.testing.lung-volumes.lo.01",
+      "text": "폐용적의 합과 차이를 설명한다"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.lo.02",
+      "text": "폐활량검사로 잔기량을 못 재는 이유를 설명한다"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.lo.03",
+      "text": "가스 희석과 체적변동기록의 차이를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.testing.lung-volumes.b.70887508c7a9",
+      "type": "heading",
+      "level": 2,
+      "text": "움직인 공기와 남은 공기"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.91ddf2f52fa9",
+      "type": "paragraph",
+      "markdown": "총폐용량(total lung capacity, TLC)은 최대 흡기 때 폐 안의 전체 공기량이고, 잔기량(residual volume, RV)은 최대 호기 뒤 남는 양이다. 폐활량(vital capacity, VC)은 두 상태 사이에서 이동할 수 있는 양으로 TLC−RV다. 기능적잔기용량(functional residual capacity, FRC)은 편안한 호기 뒤의 평형 용적을 가리킨다. 폐와 흉벽의 반동, 자세와 기도 조건이 각 값에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+      ]
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.ba9d90e3917e",
+      "type": "paragraph",
+      "markdown": "폐활량검사는 입을 통해 이동한 공기를 측정하므로 끝까지 내쉰 뒤에도 폐에 남은 RV를 직접 재지 못한다. 따라서 낮은 FVC만으로 TLC가 실제로 작아졌다고 확정할 수 없다. 충분하지 않은 노력·호기 종료와 공기포획으로 내보낼 수 있는 양이 줄어든 경우가 있다. 환자의 총 용적과 실제 배출 가능한 용적을 구별하는 것이 해석의 출발점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.64bfa8a1f27a",
+      "type": "heading",
+      "level": 2,
+      "text": "공기포획과 과팽창"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.8b09aadfbf1a",
+      "type": "paragraph",
+      "markdown": "기류 제한과 느린 비움, 작은 기도의 조기 폐쇄는 RV를 늘릴 수 있다. TLC가 비슷해도 RV가 커지면 VC는 감소한다. 예를 들어 TLC6L에서 RV가2L에서3L로 늘면 VC는4L에서3L로 줄어든다. 이는 폐가 실제로 작아지지 않아도 낮은 폐활량이 나타날 수 있음을 보여 준다. 수치의 변화가 실제 환자에서 어떤 기전으로 생겼는지는 다른 자료와 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.07981ae0f6dd",
+      "type": "paragraph",
+      "markdown": "과팽창은 작동 폐용적과 호흡근의 기하·부담에 영향을 줄 수 있다. 운동 중 충분히 비우기 전에 다음 흡기가 시작되면 호기말 용적이 상승하는 동적 과팽창이 생길 수 있다. 안정 시 총 용적과 운동 중 작동 용적은 같은 질문이 아니다. 호흡곤란과 흡기 여유량, 호흡 시간과 유량을 함께 평가하면 운동 시 악화를 이해하는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.f86415257728",
+      "type": "heading",
+      "level": 2,
+      "text": "제한성 환기장애의 확인"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.0ad2cf9b7d8b",
+      "type": "paragraph",
+      "markdown": "제한성 양상은 TLC 감소로 확인하며 폐 실질의 경직뿐 아니라 흉벽과 신경·근육, 다른 기전이 원인일 수 있다. 폐활량과 비율이 비슷해도 확산과 영상·근력 및 임상 배경은 다를 수 있다. 낮은 TLC라는 기능적 분류와 간질성폐질환이라는 병인은 구별한다. 혼합 장애에서는 기류 제한과 실제 TLC 감소가 함께 있는지 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.5f4ae643eb97",
+      "type": "paragraph",
+      "markdown": "예측값과 정상 범위는 선택한 기준식과 환자 조건에 맞게 해석한다. 비만과 체위는 FRC와 다른 용적에 영향을 줄 수 있어 하나의 변화만으로 모든 원인을 정하지 않는다. 검사 품질과 협력·급성 질환도 확인한다. 경계의 결과는 측정 오차와 생물학적 변동을 고려하면서 증상·영상과 다른 기능 자료에 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.3d0e4a9aa336",
+      "type": "heading",
+      "level": 2,
+      "text": "서로 다른 용적 측정 방법"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.dec02fd50be0",
+      "type": "paragraph",
+      "markdown": "가스 희석·세척법은 검사 가스가 도달하고 섞이는 폐 공간에 의존한다. 심하게 환기가 느리거나 잘 연결되지 않는 공간은 측정에서 충분히 반영되지 않을 수 있다. 체적변동기록법은 압력과 부피 관계를 이용하여 흉곽 내 가스를 평가하지만 상기도와 압력 전달, 조작 빈도·기술 조건에 영향을 받는다. 두 검사가 다른 값을 보이면 하나가 무조건 참이고 다른 하나가 오류라고 처리하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.b.96316e2cbf5f",
+      "type": "paragraph",
+      "markdown": "검사 간 차이는 불균등 환기와 가스포획을 시사할 수 있으나 기술 오류도 검토해야 한다. 방법과 조건, 원래 자료와 품질을 보고 어떤 폐 공간을 얼마나 잘 측정했는지 확인한다. 추적에서는 같은 기법과 기준의 비교가 중요하다. 폐용적은 정적인 공간의 정보이며 실제 가스교환과 운동 시 환기의 충분함까지 단독으로 증명하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.h.extra0844",
+      "type": "heading",
+      "level": 2,
+      "text": "합과 차이의 여러 조합"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.p.extra0844.0",
+      "type": "paragraph",
+      "markdown": "총폐용량은 폐활량과 잔기량의 합이다. TLC6L에서 RV2L이면 VC4L이고,RV3L이면 VC3L다. 반면 TLC5L와RV2L에서도 VC는3L다. 같은 낮은 폐활량이 잔기 증가와 총용적 감소라는 서로 다른 조합에서 생길 수 있다. 단위와 정의를 먼저 확인하면 낮은 FVC만으로 제한성 장애를 확정하는 오류를 피할 수 있다."
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.p.extra0844.1",
+      "type": "paragraph",
+      "markdown": "기능적잔기용량은 호기예비량과 잔기량의 합이고,흡기용량은 TLC와 FRC의 차이다. 운동 중 호기말 용적이 커지면 TLC가 같더라도 들이쉴 수 있는 여유가 줄 수 있다. 각 용적은 독립된 상자가 아니라 같은 전체 공간을 나눈 양이므로 하나의 변화가 다른 조합에 영향을 준다. 안정 폐용적과 운동 시 작동 용적을 함께 생각하면 호흡곤란을 설명하는 연결이 더 분명해진다."
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.table0844",
+      "type": "table",
+      "data": {
+        "title": "측정 대상과 생리적 의미",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "TLC",
+            "최대 흡기 전체"
+          ],
+          [
+            "RV",
+            "최대 호기 뒤 남은 양"
+          ],
+          [
+            "VC",
+            "TLC−RV"
+          ],
+          [
+            "방법",
+            "가스가 섞인 공간과 흉곽 내 가스"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.diagram.residual-vital-volume-0844",
+      "type": "diagram",
+      "diagramRef": "diagram.residual-vital-volume-0844",
+      "path": "diagrams/diagram.residual-vital-volume-0844.svg",
+      "alt": "같은 총용량에서 잔기와 폐활량의 독립 계산 곡선"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.anatomy3d0844",
+      "type": "anatomy3d",
+      "sceneRef": "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes.limits0844",
+      "type": "clinicalPearl",
+      "markdown": "정상 폐와 관련 구조의 위치 문맥이다. 실제 혈전·미세혈관·폐포·환기 관류 분포·호흡 운동·환자별 과팽창은 이 정상 정적 모델이 측정하거나 재현하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/testing/sections/pulmonology.testing.lung-volumes.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.testing.lung-volumes.001",
+    "question.pulmonology.testing.lung-volumes.002"
+  ],
+  "relatedLessons": [
+    "pulmonology.testing.flow-volume-loop",
+    "pulmonology.testing.diffusing-capacity"
+  ]
+}

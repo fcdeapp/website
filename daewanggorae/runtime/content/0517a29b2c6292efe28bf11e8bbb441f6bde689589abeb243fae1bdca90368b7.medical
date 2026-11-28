@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.coronary.atherothrombosis",
+  "subjectId": "cardiology",
+  "chapterId": "coronary",
+  "title": {
+    "ko": "관상동맥 죽상판과 급성 혈전 형성",
+    "en": "Coronary Plaques and Atherothrombosis"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.coronary.atherothrombosis.lo.01",
+      "text": "죽상판 파열과 미란을 구별한다"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.lo.02",
+      "text": "혈소판·응고·혈관벽의 상호작용을 설명한다"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.lo.03",
+      "text": "내강 협착과 판의 위험 특성을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.38b3b76d6eca",
+      "type": "heading",
+      "level": 2,
+      "text": "내강보다 넓은 병변"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.810800f9f186",
+      "type": "paragraph",
+      "markdown": "죽상경화판(atherosclerotic plaque)은 내막의 지질 축적과 염증, 평활근세포와 세포외기질의 재편성이 만든 병변이다. 내피 아래에 머문 지단백은 변형과 면역 반응을 유도하고 대식세포의 지질 축적에 기여한다. 세포사와 제거의 불균형은 괴사성 중심을 만들 수 있다. 섬유성 덮개는 중심과 혈액을 구분하는 기계적 경계이며 단순히 혈관 안에 붙은 지방 덩어리와는 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.cardiology.coronary.atherothrombosis.normal-coronaries"
+      ]
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.dfbc0a3e1e4a",
+      "type": "paragraph",
+      "markdown": "혈관벽이 바깥쪽으로 커지는 재형성 때문에 판이 자라도 처음에는 내강이 비교적 보존될 수 있다. 따라서 조영술에서 보이는 협착 정도와 전체 판의 양은 같은 지표가 아니다. 혈류 제한이 적은 병변에서도 급성 사건이 생길 수 있다는 사실은 협착 측정이 무의미하다는 뜻이 아니다. 현재의 기능적 제한과 앞으로의 혈전 사건 가능성이 다른 질문이라는 뜻이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.78b0bf0ed1a6",
+      "type": "heading",
+      "level": 2,
+      "text": "파열과 미란"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.ddd46a18f8e4",
+      "type": "paragraph",
+      "markdown": "판 파열(rupture)에서는 섬유성 덮개의 연속성이 깨져 내부의 혈전 유발 물질이 혈액과 접촉한다. 덮개의 강도는 콜라겐의 생성·분해, 세포 구성과 국소 역학에 영향을 받는다. 얇은 덮개와 큰 지질 중심은 관련 위험 특성이지만 한 모양만으로 어느 시점에 파열할지 확정할 수 없다. 혈액의 응고 상태와 혈류 조건도 사건 형성에 기여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.f2d31ba170e1",
+      "type": "paragraph",
+      "markdown": "판 미란(erosion)은 덮개의 뚜렷한 파열 없이 표면 내피의 손상·소실과 혈전이 연결되는 기전이다. 파열과 평균적인 조직 구성이 다를 수 있으나 영상 소견을 조직학적 확정과 동일시하지 않는다. Optical coherence tomography(OCT)는 표면의 세부 구조를 평가하는 데 유리하고 혈관내초음파는 더 깊은 벽과 판 부담의 정보를 제공한다. 해상도와 침투 깊이의 차이가 각 검사의 해석 범위를 정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.962b20a2606b",
+      "type": "heading",
+      "level": 2,
+      "text": "혈소판과 응고의 결합"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.be35f916d18b",
+      "type": "paragraph",
+      "markdown": "손상된 표면에서 혈소판은 부착하고 활성화되며 수용체 기능과 과립 분비를 바꾼다. ADP와 thromboxane 관련 신호는 추가적인 활성화를 돕고 활성화된 integrin은 혈소판 사이 연결에 기여한다. 응고계에서 생긴 thrombin은 fibrin 형성뿐 아니라 혈소판 활성에도 관여한다. 혈소판 혈전과 fibrin 혈전을 완전히 독립적인 두 덩어리로 나누면 이런 상호증폭을 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.f89dd8923749",
+      "type": "paragraph",
+      "markdown": "관상동맥의 혈전은 완전 폐색·부분 폐색·반복적인 형성과 용해 사이에서 변할 수 있다. 작은 조각의 원위부 이동은 미세순환에도 영향을 준다. 따라서 검사 순간의 내강 모습은 사건 전체의 시간 경과를 완전히 대표하지 않는다. 증상의 변화와 심전도, 생체표지자와 영상은 서로 다른 시점과 수준의 정보를 제공한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.01018fc1b95d",
+      "type": "heading",
+      "level": 2,
+      "text": "협착과 압력 손실"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.5d40e4b03d7a",
+      "type": "paragraph",
+      "markdown": "협착 부위의 압력 손실은 유량이 커질수록 증가할 수 있다. 가상 모형 ΔP=aQ+bQ²에서 첫 항은 유량에 비례하는 소실을, 둘째 항은 더 빠르게 증가하는 성분을 표현한다. a와 b는 명시한 조건의 계수이며 실제 환자의 협착률에서 바로 정해지지 않는다. 이 모형은 안정 시에는 견디던 병변이 수요 증가 때 제한을 보일 수 있다는 점을 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.b.79bd9e0349db",
+      "type": "paragraph",
+      "markdown": "관상동맥질환의 평가는 판의 생물학, 내강의 기하학, 미세혈관의 조절과 숙주의 요구량을 함께 연결한다. 혈전을 확인했다는 사실과 전체 심근의 괴사 범위, 심장의 펌프 기능은 서로 다른 결과다. 정상 관상동맥 모델은 주행과 분지의 위치를 보여 주는 자료로 사용하고 그 표면을 실제 죽상판이나 혈전이라고 표시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.diagram.coronary-pressure-loss-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.coronary-pressure-loss-toy",
+      "path": "diagrams/diagram.coronary-pressure-loss-toy.svg",
+      "alt": "유량과 협착 압력 손실의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "판 부담",
+            "혈관벽 전체의 병변"
+          ],
+          [
+            "내강 협착",
+            "현재 혈액 통로의 기하학"
+          ],
+          [
+            "파열",
+            "섬유성 덮개의 연속성 소실"
+          ],
+          [
+            "미란",
+            "뚜렷한 덮개 파열 없는 표면 손상·혈전"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.anatomy3d.0826",
+      "type": "anatomy3d",
+      "sceneRef": "scene.cardiology.coronary.atherothrombosis.normal-coronaries",
+      "sceneRefs": [
+        "scene.cardiology.coronary.atherothrombosis.normal-coronaries"
+      ]
+    },
+    {
+      "id": "cardiology.coronary.atherothrombosis.visualization-limits.0826",
+      "type": "clinicalPearl",
+      "markdown": "정상 우·좌관상동맥과 심실의 위치를 확인한다. 죽상판·혈전·환자별 협착·혈류는 이 원본 모델에 없다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/coronary/sections/cardiology.coronary.atherothrombosis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.coronary.atherothrombosis.001",
+    "question.cardiology.coronary.atherothrombosis.002"
+  ],
+  "relatedLessons": [
+    "cardiology.ischemia.oxygen-balance"
+  ]
+}

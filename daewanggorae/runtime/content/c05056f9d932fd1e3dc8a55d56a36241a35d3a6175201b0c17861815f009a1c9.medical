@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.pericardium.effusion",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.pericardium.effusion.b.c4e4a85effa8",
+      "sourceSha256": "c4e4a85effa8bcc61c17f03c577b4e72db7daaca2c72e0d722ad2f22a2f5ea9e",
+      "sourceLengthUtf16": 228,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.effusion.b.a5b7ebaec393",
+      "sourceSha256": "a5b7ebaec393557d77ba27a8564bd6b806d9815ee891b20a39e3695a208c8f41",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.effusion.b.5baba4928851",
+      "sourceSha256": "5baba4928851268d79a99f8138d707db2056048c7c3d08812fd649c1649dd894",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.effusion.b.e135b67669c8",
+      "sourceSha256": "e135b67669c86bb83f9f453adf3e6daeb4a5e2386755e0d3d3f1f2521354a8dd",
+      "sourceLengthUtf16": 221,
+      "annotations": [
+        {
+          "id": "ann.0654e1e582368f1486e8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 36,
+            "exact": "심장방을 채우는 데 중요한 것은 내부 압력과 바깥 압력의 차이다.",
+            "prefix": "",
+            "suffix": " 경벽압(transmural pressure"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.pericardium.effusion.b.7e1d2768e7f7",
+      "sourceSha256": "7e1d2768e7f70a1b18d82fc6495c52aee38be17f813e757ffb8f690ca88700d8",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.effusion.b.bfbed0a61d2b",
+      "sourceSha256": "bfbed0a61d2bab7876ae38c1cc8929a0f9484794f9d564c71a602dc9f7da3a43",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.effusion.b.a585de9e83d5",
+      "sourceSha256": "a585de9e83d57267f4c585198d2972a8c93227794e861b8c777871984021dce3",
+      "sourceLengthUtf16": 223,
+      "annotations": [
+        {
+          "id": "ann.2f14c48117270fc47286",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 45,
+            "exact": "배액은 현재 순환 위협을 해결하려는 목적과 원인 자료를 얻으려는 목적을 구별한다.",
+            "prefix": "",
+            "suffix": " 모든 우연한 삼출이 같은 방식의 시술을 필"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.pericardium.effusion.b.c5c78ff15853",
+      "sourceSha256": "c5c78ff15853e78baddbef83a108de178c7102fa4510cf7e62ac1c52c4754029",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.pericardium.effusion.p.extra0842.0",
+      "sourceSha256": "10940cab49c8ac1653956510ebae3aa7c57fff9fa5b028cddf067a100398341d",
+      "sourceLengthUtf16": 191,
+      "annotations": [
+        {
+          "id": "ann.ab2ae7c230b0c661ba84",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 96,
+            "exact": "두 점을 이은 평균 기울기와 특정 점의 접선 기울기를 구별한다.",
+            "prefix": "고, 세로축은 그 결과 형성되는 압력이다. ",
+            "suffix": " 같은100mL가 추가되어도 처음의 완만한 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.pericardium.effusion.p.extra0842.1",
+      "sourceSha256": "0aafefcc8d04948476ddab82c6f618a7c18d5cf601efcf1a9a0617b735f96ef3",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.valvular.integrated-assessment",
+  "subjectId": "cardiology",
+  "chapterId": "valvular",
+  "title": {
+    "ko": "판막질환의 통합 평가와 혈류 수지",
+    "en": "Integrated Assessment of Valvular Disease"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.valvular.integrated-assessment.lo.01",
+      "text": "협착과 역류의 부하를 구별한다"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.lo.02",
+      "text": "증상·형태·혈역학의 불일치를 해석한다"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.lo.03",
+      "text": "연속 추적과 중재 목적을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.9df9da1b00fa",
+      "type": "heading",
+      "level": 2,
+      "text": "판막은 압력과 유량 사이에 있다"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.c0c141aadc60",
+      "type": "paragraph",
+      "markdown": "판막은 심장주기 동안 압력차에 따라 열리고 닫히며 혈액이 한 방향으로 이동하도록 한다. 협착(stenosis)은 열리는 통로가 제한되는 상태이고 역류(regurgitation)는 닫혀야 할 시점에 뒤쪽으로 혈액이 흐르는 상태다. 두 문제는 함께 있을 수 있다. 병변의 위치와 심장주기에 따라 어느 방이 압력 또는 용적의 부담을 받는지 구별해야 한다. 판막 이름을 외우는 것보다 입구·출구와 흐름의 방향을 연결하는 것이 혈역학의 출발점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.d56bac353af9",
+      "type": "paragraph",
+      "markdown": "협착을 지나는 유량은 판막 면적뿐 아니라 압력차와 심박수, 박출 시간과 다른 병변의 영향을 받는다. 역류도 구멍 크기 하나만이 아니라 두 구획의 압력과 역류 지속 시간, 구조의 동적 변화에 따라 달라진다. 따라서 빠른 속도나 큰 색상 제트 하나를 고정된 중증도와 일대일로 연결하지 않는다. 검사 시 혈압과 리듬, 체액 상태 및 사용한 방법의 가정을 기록해야 비교가 가능하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.049edcf52354",
+      "type": "heading",
+      "level": 2,
+      "text": "심장방이 받는 부하"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.bce31e4f9d87",
+      "type": "paragraph",
+      "markdown": "판막 앞쪽의 압력 상승과 뒤쪽으로 전달되는 울혈, 전방 유량의 감소를 나누어 생각한다. 승모판 협착은 왼심방의 유출을 제한하지만 대동맥판 협착은 왼심실의 박출을 제한한다. 역류에서는 한 심장방이 같은 혈액을 반복적으로 처리하여 용적 부담을 받을 수 있다. 급성 병변은 적응 시간이 없어 작은 용적 증가에도 압력이 크게 오를 수 있고, 만성 병변은 구조 재형성으로 증상을 늦추지만 부담 자체를 없애지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.788964494c7b",
+      "type": "paragraph",
+      "markdown": "보상은 무해하다는 뜻이 아니다. 심실 확장과 비후, 심방 확대와 폐순환 변화는 초기에는 전방 전달을 유지하는 데 기여할 수 있지만 장기적으로 기능과 리듬에 영향을 준다. 박출률이 정상 범위처럼 보여도 역류의 낮은 압력 출구나 부하 조건 때문에 실제 심근의 상태가 과대평가될 수 있다. 일회박출량과 전방량, 충만압과 용적의 추세를 함께 본다. 보존된 단일 지표가 모든 판막성 심장 부담을 배제하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.d0057e1eb33f",
+      "type": "heading",
+      "level": 2,
+      "text": "측정값의 통합"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.f772312b4e1a",
+      "type": "paragraph",
+      "markdown": "진찰에서는 잡음의 시기와 위치·방사, 맥박과 혈압, 울혈과 관류를 평가한다. 잡음이 크다는 사실만으로 병변이 가장 심하다고 보지 않는다. 낮은 유량이나 급성 압력 평형은 심한 병변에서도 소리를 약하게 만들 수 있다. 심초음파는 형태와 운동, 속도·면적과 역류 및 심장방 반응을 통합한다. 검사 사이에 결과가 맞지 않으면 기술적 품질과 부하, 여러 병변의 상호작용을 다시 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.145b89822865",
+      "type": "paragraph",
+      "markdown": "다중 영상은 같은 검사를 반복하는 것과 다르다. CT의 해부학과 석회화, CMR의 용적·유량 및 조직 정보, 경식도 영상의 세부 구조는 각각 다른 강점을 갖는다. 어떤 검사가 다음 의사결정을 바꿀지를 생각하여 선택한다. 검사의 가장 정밀한 숫자만을 참값으로 가정하지 않고 측정 대상과 오류 구조를 확인한다. 다른 검사들이 같은 임상 설명을 지지하는지와 불일치의 이유를 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.b81553b0f66a",
+      "type": "heading",
+      "level": 2,
+      "text": "시점과 평생 관리"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.9d6e5961dfbb",
+      "type": "paragraph",
+      "markdown": "중재의 목적은 증상 완화와 함께 되돌리기 어려운 심장 손상과 사건을 줄이는 데 있다. 증상·심장방 기능과 크기의 변화, 폐순환과 리듬 및 병변의 해부학적 적합성을 함께 고려한다. 수술과 경피적 접근의 선택에는 판막 종류와 연령, 기대 수명과 위험, 다른 심장질환과 추후 재중재의 가능성이 영향을 준다. 접근 혈관의 상태와 관상동맥의 위치, 기존 보철이나 다른 수술의 필요성도 시술 가능성과 위해를 바꾼다. 현재 개입의 편의뿐 아니라 향후 치료에 남겨 둘 경로까지 검토하는 것이 평생 관리의 중요한 부분이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.b.453c6240cf9a",
+      "type": "paragraph",
+      "markdown": "평생 관리에는 추적 간격과 증상의 실제 변화, 시술 뒤 잔여 병변과 보철 기능, 항혈전 치료 및 감염 관련 고려가 포함된다. 환자가 활동을 줄여 증상을 느끼지 않는 것과 운동 능력이 정상인 것은 다르다. 이전 생활 수준과 현재의 수행 능력을 구체적으로 묻는다. 한 번의 좋은 검사 결과를 영구 상태로 기록하지 않고 어떤 변화가 재평가를 요구하는지 설명한다. 이득과 위해의 균형에는 환자의 목표와 선호도 포함된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.integrated-assessment.table0842",
+      "type": "table",
+      "data": {
+        "title": "구조·혈류·심장 반응의 비교",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "협착",
+            "열린 시기의 유입·유출 제한"
+          ],
+          [
+            "역류",
+            "닫혀야 할 시기의 역방향량"
+          ],
+          [
+            "구조",
+            "원인·수선 가능성"
+          ],
+          [
+            "심장 반응",
+            "심방·심실·폐순환의 적응"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/valvular/sections/cardiology.valvular.integrated-assessment.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.valvular.integrated-assessment.001"
+  ],
+  "relatedLessons": [
+    "cardiology.pericardium.constrictive-pericarditis",
+    "cardiology.valvular.aortic-stenosis"
+  ]
+}

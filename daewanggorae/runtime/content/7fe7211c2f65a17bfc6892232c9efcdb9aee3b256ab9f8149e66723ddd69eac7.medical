@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "radiology.ct.attenuation-contrast",
+  "subjectId": "radiology",
+  "chapterId": "ct",
+  "title": {
+    "ko": "CT 감쇠·창 설정과 조영 시기의 해석",
+    "en": "CT Attenuation Windowing and Contrast Timing"
+  },
+  "learningObjectives": [
+    {
+      "id": "radiology.ct.attenuation-contrast.lo.01",
+      "text": "CT 감쇠와 HU의 의미를 설명한다"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.lo.02",
+      "text": "창 설정과 조직 평가를 연결한다"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.lo.03",
+      "text": "조영 시기·인공물과 진단 범위를 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "radiology.ct.attenuation-contrast.b.fa1f065609c6",
+      "type": "heading",
+      "level": 2,
+      "text": "단면이 만들어지는 원리"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.bc149414ca0e",
+      "type": "paragraph",
+      "markdown": "컴퓨터단층촬영(computed tomography, CT)은 여러 방향에서 측정한 엑스선 감쇠 정보를 이용하여 단면의 공간 분포를 재구성한다. 영상의 밝기는 조직의 감쇠 특성을 반영하지만 실제 장기의 색이나 조직검사에서 보는 염색의 진하기가 아니다. 관전압과 재구성 방법, 절편 두께와 움직임 및 조영제에 따라 같은 구조의 측정과 표현이 달라질 수 있다. 영상은 촬영 조건과 함께 읽어야 하는 측정 결과다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.d3a542b62931",
+      "type": "paragraph",
+      "markdown": "하운스필드단위(Hounsfield unit, HU)는 물을 기준으로 상대 감쇠를 나타내는 척도다. 개념적으로 HU=1000×(μ조직−μ물)/μ물로 표현하며 μ는 선감쇠계수다. 물과 공기는 척도를 이해하는 기준이지만 실제 조직의 값은 범위를 가지며 조영 상태와 에너지에 영향을 받는다. 특정 숫자 하나를 모든 상황에서 한 조직의 고유한 이름처럼 취급하면 부분용적과 인공물을 질환으로 오인할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.26466de5cdb2",
+      "type": "heading",
+      "level": 2,
+      "text": "창 너비와 창 높이"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.77faa72cc409",
+      "type": "paragraph",
+      "markdown": "창 너비(window width)는 표시할 감쇠 범위를, 창 높이 또는 중심(window level)은 그 범위의 중심을 정한다. 원자료의 모든 값이 화면의 제한된 명암 단계로 표현되므로 어떤 범위를 강조하느냐에 따라 구조의 대비가 달라진다. 창 설정은 원래 감쇠를 바꾸는 치료나 재촬영이 아니라 표시 방법의 변화다. 같은 단면도 폐와 연부조직·뼈를 평가할 때 서로 다른 설정으로 확인하는 이유가 여기에 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.d024fd4be4f8",
+      "type": "paragraph",
+      "markdown": "중심 40HU, 너비 400HU인 단순 표시 모형에서는 중심을 기준으로 절반씩 펼친 범위가 −160~240HU다. 이 범위 밖의 값은 화면에서 구별이 제한될 수 있다. 실제 화면의 변환과 장비 처리에는 구현 차이가 있지만 중심과 범위를 구별하는 원리는 같다. 한 창에서 밝게 보이지 않는 구조가 다른 창에서는 명확해질 수 있어 단일 표시만으로 병변 부재를 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.2dfb87d75850",
+      "type": "heading",
+      "level": 2,
+      "text": "조영 증강과 시간"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.56f254eb3218",
+      "type": "paragraph",
+      "markdown": "정맥 조영제는 혈관과 조직 사이의 분포 및 배설을 통해 시간에 따라 영상 대비를 바꾼다. 조영 전, 동맥 우세 시기, 문맥·실질 평가 시기와 지연 시기는 서로 다른 질문에 적합할 수 있다. 같은 부위의 조영 증강도 심박출량과 주입 조건, 혈류와 조직 성질에 영향을 받는다. 특정 시기의 영상이 없다는 사실은 해당 시기에만 잘 보이는 소견의 평가 한계가 될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.e755523a8a7a",
+      "type": "paragraph",
+      "markdown": "밝아졌다는 소견과 활동성 출혈을 동일시해서는 안 된다. 원래 감쇠가 높은 물질과 석회, 조영된 정상 혈관 및 조영제 누출은 위치·형태와 조영 전후 및 시간 변화로 구별한다. 한 시기의 고감쇠점만으로 모든 기전을 확정하지 않는다. 검사 목적에 맞는 다중 시기 촬영의 이득과 방사선·조영제 부담을 함께 고려하여 필요한 범위를 정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.33c7aa302b85",
+      "type": "heading",
+      "level": 2,
+      "text": "공간 해상도와 부분용적"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.cab29cb8e0b4",
+      "type": "paragraph",
+      "markdown": "한 화소 또는 복셀에 서로 다른 조직이 함께 포함되면 측정값이 혼합되어 나타날 수 있다. 작은 구조와 두꺼운 절편에서는 이러한 부분용적 효과(partial volume effect)가 해석에 영향을 준다. 미세한 병변이 주변 조직과 섞여 덜 분명해지거나 경계의 값이 실제 단일 조직과 달라질 수 있다. 절편 두께를 줄인다고 모든 잡음과 피폭·재구성 문제가 동시에 해결되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.9808a084b054",
+      "type": "paragraph",
+      "markdown": "금속과 매우 높은 감쇠, 움직임 및 재구성 과정은 줄무늬와 경계 왜곡 등을 만들 수 있다. 인공물이 의심되면 여러 단면과 재구성, 원자료 조건과 다른 검사 정보를 대조한다. 밝거나 어두운 한 점을 실제 해부학 구조로 확정하기 전에 주변과 연결되는 형태가 있는지 확인한다. 인공물 감소 기법을 사용해도 남는 한계를 보고서에 반영해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.75ae73e9303b",
+      "type": "heading",
+      "level": 2,
+      "text": "검사의 적합성과 안전"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.3a879c080400",
+      "type": "paragraph",
+      "markdown": "조영 CT의 선택에는 진단으로 얻을 이득과 현재 임상적 긴급성, 신장 기능과 급성 신손상, 이전 조영제 반응과 다른 검사 대안 등을 고려한다. 과거 반응의 종류와 중증도는 단순히 알레르기 있음이라는 기록보다 유용하다. 모든 불편감을 같은 기전의 중증 알레르기 반응으로 분류하지 않으며, 예방 조치가 모든 반응을 완전히 없애는 것도 아니다. 구체적인 약제·용량·예방 절차는 현행 지침과 기관 체계를 따라 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.b.1abb2f95a5cd",
+      "type": "paragraph",
+      "markdown": "CT의 구조 정보와 진단의 확실성도 구별해야 한다. 정상으로 보인다는 결과는 그 촬영 범위와 시기·민감도 안에서의 판단이다. 임상 질문이 충분히 해결되지 않으면 경과 관찰이나 다른 영상, 검사 또는 조직 평가가 필요할 수 있다. 영상에 어떤 단어가 적혔다는 사실보다 그 소견이 현재 환자의 증상과 얼마나 일치하고 다음 의사결정에 무엇을 바꾸는지를 설명하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.table0858",
+      "type": "table",
+      "data": {
+        "title": "소견과 평가 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "촬영",
+            "같은 CT 단면"
+          ],
+          [
+            "변경",
+            "창 너비와 중심"
+          ],
+          [
+            "관찰",
+            "조직의 대비가 달라짐"
+          ],
+          [
+            "원자료",
+            "변경하지 않음"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "radiology.ct.attenuation-contrast.diagram.ct-window-0858",
+      "type": "diagram",
+      "diagramRef": "diagram.ct-window-0858",
+      "path": "diagrams/diagram.ct-window-0858.svg",
+      "alt": "창 범위와 표시 상대값의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/radiology/chapters/ct/sections/radiology.ct.attenuation-contrast.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.radiology.ct.attenuation-contrast.001",
+    "question.radiology.ct.attenuation-contrast.002"
+  ],
+  "relatedLessons": [
+    "radiology.mri.safety-screening",
+    "emergency-medicine.dyspnea.initial-assessment"
+  ]
+}

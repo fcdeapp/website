@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.infection.endocarditis-cultures",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.b.f721cd4071e8",
+      "sourceSha256": "f721cd4071e86380b854531f2af722e304e7c0da6d4df2e27abfe21a4d21e6ba",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.453de7f507db875cab8a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 90,
+            "end": 140,
+            "exact": "발열의 꼭대기만 기다리는 것보다 충분한 양과 적절한 시점의 표본을 확보하는 것이 중요하다.",
+            "prefix": " 당시 항균제 노출이 검출에 영향을 준다. ",
+            "suffix": " 환자의 안전이 허용하면 항균제 시작 전에 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.b.dbf348434ccf",
+      "sourceSha256": "dbf348434ccf5103511c0440b8bf4a7bc3b0831fb950df12f1fce4f42bf4198a",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.b.d2de9e065736",
+      "sourceSha256": "d2de9e06573615853aed0f9cfcc1cfd54a8be26638935a9cd9b7b5965f5f4974",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.b.531da37442b0",
+      "sourceSha256": "531da37442b0d3064c235e66085ddf6c2c6f48658bd8a82294305354843cd5f6",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.b.aca8d57ef339",
+      "sourceSha256": "aca8d57ef339a0a6883bf96e7294635304306cf622eca8079096466c49cbd6cf",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.b.ede2fc571499",
+      "sourceSha256": "ede2fc5714997322b00c898bd07f5fde1c23a27f74cf9ec924124875fbcac666",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.b.ebf4dbf5ffcb",
+      "sourceSha256": "ebf4dbf5ffcbfa4c2d790c04d58623716e9159dc8e9f79ef830d28437b37cdfd",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.b.1d74b19f2556",
+      "sourceSha256": "1d74b19f25565fe8ca62970e920675856fc58a27723e6f6bdc6fe3043d9cdc44",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.fd8df206ca7222b3e359",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 122,
+            "end": 128,
+            "exact": "감염원 조절",
+            "prefix": "야 한다. 추가 검사는 결과가 진단과 치료·",
+            "suffix": "을 어떻게 바꿀지를 중심으로 선택한다. 이런"
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        },
+        {
+          "id": "ann.3f6a63fe98f3b44036b1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 62,
+            "exact": "최종 기록은 검체를 얻은 날짜와 항균제 시작의 선후, 양성 균과 감수성, 음성 검사에서 남은 가능성을 구별한다.",
+            "prefix": "",
+            "suffix": " 음성이라는 단어 뒤에 실제로 무엇을 얼마나"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.p.extra0843.0",
+      "sourceSha256": "afee2b1ff9d89aa2f44c7d9ff3b828434a668ac6bcf0a6161c66176f72f46d52",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.436b41b0a44a20c878bd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 140,
+            "end": 193,
+            "exact": "검사 대상과 결론의 범위를 구분해야 음성 결과를 과대평가하거나 양성을 지나치게 확대하지 않는다.",
+            "prefix": "손상 범위는 영상과 다른 근거가 필요하다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-cultures.p.extra0843.1",
+      "sourceSha256": "980cfe804f7d60ea4fb6fda481f9b67858a8b0c28bb7a4618bab5a1d7919ee1f",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    }
+  ]
+}

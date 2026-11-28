@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.genetic.repeat-expansion",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.6608221f70b4",
+      "sourceSha256": "6608221f70b4552ca1a8f0d9e579d98af23f74d3772f1a33535a067dce8f71a0",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.4ef07bad565b",
+      "sourceSha256": "4ef07bad565ba70a7df67d6a9cd4df8b478ad37007c2fb4eb5f3ef5ebffbcaa3",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.3c62a6cc430f",
+      "sourceSha256": "3c62a6cc430f763dbfb7254ba5bf45c50cd7438f743e9b197fad6dd841a9eae4",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.72fcbb12d6c7",
+      "sourceSha256": "72fcbb12d6c77d3828087fe98760810fc5bf23659593035ebbb2eacab5ed7712",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.e868b360c7c7",
+      "sourceSha256": "e868b360c7c798cf8b31735c76101536e808d31be53013032d82ceaa6df0aaca",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.7c066ed26149",
+      "sourceSha256": "7c066ed2614973d14fb76275be0b9ca8ea61ff6c698df01f8713cc545ebfb526",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.8d6fafc648df",
+      "sourceSha256": "8d6fafc648dfc3996bbcbc82219d62e0d6ea4660fc841c961992acbedb4a614c",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.e4c14316993d",
+      "sourceSha256": "e4c14316993dcb24be29af70633da03ce1610b03559a2e87e38328c62c32b54d",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.7aa1de6a5de8",
+      "sourceSha256": "7aa1de6a5de8ba439813d4481db78e9f5e3ab042454c1bc38826a807f41b39ca",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.genetic.repeat-expansion.b.11d8c9a5fd34",
+      "sourceSha256": "11d8c9a5fd34527a44ce254a01bc665b72ab566e2b92eacb973265a88d2de25d",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.de5fa4d396935787138c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 129,
+            "end": 185,
+            "exact": "생식 관련 선택과 예측 검사는 개인의 증상 검사와 목적이 다르므로 검사 전후 상담의 범위도 구분한다.",
+            "prefix": " 표현형과 가족 내 분리를 함께 검토한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

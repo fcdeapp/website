@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.hemodynamics.coagulation-control",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.hemodynamics.coagulation-control.b.8bcf73f602e1",
+      "sourceSha256": "8bcf73f602e15a3fe5ee4f7c0b1f1b24f5642bd755b4d4cc995817c610329cf1",
+      "sourceLengthUtf16": 257,
+      "annotations": [
+        {
+          "id": "ann.94a4f9f556ee9cf26bc0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 204,
+            "end": 257,
+            "exact": "단백질의 양이 존재한다는 사실과 국소적으로 기능하는 복합체가 형성되었다는 사실을 구별해야 한다.",
+            "prefix": "반응이 일어나는 표면은 서로 다른 요소다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.coagulation-control.b.d9fd138122df",
+      "sourceSha256": "d9fd138122df259408786440b005dcc0c7411548d9dc285d35f07f847d75680a",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.f3d88081a53e676ef69a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 147,
+            "end": 192,
+            "exact": "혈류에 의한 운반·희석과 내피의 억제 기능은 효소 반응을 둘러싼 중요한 조건이다.",
+            "prefix": "려면 반응이 손상 부위에 제한되어야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.coagulation-control.b.4fcf096ce9d4",
+      "sourceSha256": "4fcf096ce9d422aa1dff8a8d21686b4d3d75256270a74a60f1e1008eb2764997",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.coagulation-control.b.323955fb3bcc",
+      "sourceSha256": "323955fb3bcce90819a326cbe7828ef5a2ca074b2483a0f0acd10b81ac3045ec",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.coagulation-control.b.be9020c86db5",
+      "sourceSha256": "be9020c86db5c5102f636ae45157e2435b044b05aecb4f97c679cf0609274bba",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.coagulation-control.b.af66622c3d16",
+      "sourceSha256": "af66622c3d160291d4691fa26e1cf9feb46d2dc4dde27bfda209ea1d205cc3f1",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.coagulation-control.b.273ac8585302",
+      "sourceSha256": "273ac85853028ca31c736ed83e10292078baae831fd915a33a69632521ad1e53",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.d7177569d0c11de2de9c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 8,
+            "exact": "aPTT",
+            "prefix": "PT와 ",
+            "suffix": "는 정해진 시약과 시험관 조건에서 응고시간을"
+          },
+          "conceptId": "reader.term.2c463235cb32480d",
+          "targetDocumentId": "laboratory-medicine.coagulation.pt-aptt-patterns"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.coagulation-control.b.9dc89ed4db56",
+      "sourceSha256": "9dc89ed4db56f67da753ed4106af7630140599cb1cfdebc6434caf510ea4502e",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "gynecology",
+  "title": {
+    "ko": "부인과학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "gynecology.chapter.bleeding",
+      "path": "domains/07-obgyn-pediatrics/subjects/gynecology/chapters/bleeding/chapter.json"
+    },
+    {
+      "id": "gynecology.chapter.endometrium",
+      "path": "domains/07-obgyn-pediatrics/subjects/gynecology/chapters/endometrium/chapter.json"
+    },
+    {
+      "id": "gynecology.chapter.pelvic-pain",
+      "path": "domains/07-obgyn-pediatrics/subjects/gynecology/chapters/pelvic-pain/chapter.json"
+    },
+    {
+      "id": "gynecology.chapter.endometriosis",
+      "path": "domains/07-obgyn-pediatrics/subjects/gynecology/chapters/endometriosis/chapter.json"
+    },
+    {
+      "id": "gynecology.chapter.amenorrhea",
+      "path": "domains/07-obgyn-pediatrics/subjects/gynecology/chapters/amenorrhea/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "gynecology.plan.001",
+    "gynecology.plan.002",
+    "gynecology.plan.003",
+    "gynecology.plan.004",
+    "gynecology.plan.005",
+    "gynecology.plan.006",
+    "gynecology.bleeding.abnormal-uterine-bleeding",
+    "gynecology.endometrium.hyperplasia",
+    "gynecology.pelvic-pain.acute-differential",
+    "gynecology.endometriosis.pain-fertility",
+    "gynecology.amenorrhea.axis-differential"
+  ]
+}

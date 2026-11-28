@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.toxins.superantigen-activation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.toxins.superantigen-activation.b.7a1eba6399a0",
+      "sourceSha256": "7a1eba6399a075a2702bea9d416dd79a059e372c4dde6d0ad8e3631b377a39fc",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.toxins.superantigen-activation.b.96f48083d1a9",
+      "sourceSha256": "96f48083d1a9f327cd2bb7a260e770d12752997e66cae0c81fa3e642917f2e3e",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.toxins.superantigen-activation.b.09b48f4ab929",
+      "sourceSha256": "09b48f4ab929f6293612dc42e09d468c218514f8f445b1386cd17e04063b50cc",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.6353586eda9f54492a12",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 4,
+            "exact": "항원제시",
+            "prefix": "",
+            "suffix": "세포와 T세포의 신호가 연결되면 cytoki"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        },
+        {
+          "id": "ann.87de732bd358d4a8eebb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 176,
+            "end": 202,
+            "exact": "자극의 특이성과 효과의 공통성을 구별해야 한다.",
+            "prefix": "비슷한 매개체가 증가할 수 있기 때문이다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.toxins.superantigen-activation.b.4618130d4f88",
+      "sourceSha256": "4618130d4f8810607f4a9dae5ad2a0aab8605a8a7daafbb492eeccc061107b17",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.toxins.superantigen-activation.b.dc01ed1874e4",
+      "sourceSha256": "dc01ed1874e42987e33fa0dd61c030fbf7f6c68c7bdad77b1ef9bde971ffc7eb",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.toxins.superantigen-activation.b.1e267915d667",
+      "sourceSha256": "1e267915d667a0a000156a6cbf6ec7154039e521f51564b89eb389c187ff4cbe",
+      "sourceLengthUtf16": 164,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.toxins.superantigen-activation.b.537781d975ff",
+      "sourceSha256": "537781d975ffe0caef49bc53bab3800700dc48d9a2dedefb2e5494737abb1ceb",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.toxins.superantigen-activation.b.a60351ab3d9c",
+      "sourceSha256": "a60351ab3d9cfda4fce898f4a43ff9fe2a42a9d6f012536791fe0d0b5481dd66",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    }
+  ]
+}

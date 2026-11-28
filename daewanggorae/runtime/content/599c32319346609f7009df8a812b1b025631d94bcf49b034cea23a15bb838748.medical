@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.ambulatory-monitoring-ep-study",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.cdbbff37240f",
+      "sourceSha256": "cdbbff37240f0c39062afcbda7a67f2ca255016cc7214b9dc6cd385a413addf1",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.1e22472d3676",
+      "sourceSha256": "1e22472d36769c6ffc4defaf0c417a5813fa1d3b358825e2de0a269d90d9c198",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.caab307d28a1",
+      "sourceSha256": "caab307d28a1c41813528c24ecfbf4affc31b9055e7abf421ba4b0fb353ef561",
+      "sourceLengthUtf16": 223,
+      "annotations": [
+        {
+          "id": "ann.b7a0497f0ebea887dd36",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 58,
+            "end": 116,
+            "exact": "증상이 검사 중 실제 재현되었는데 리듬이 정상인 경우와 증상 자체가 없었던 경우의 음성 결과는 구별한다.",
+            "prefix": "은 검사만 적용하면 포착 가능성이 다르다. ",
+            "suffix": " 첫 경우는 그 증상에서 부정맥의 기여를 평"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.b177ca2369e7",
+      "sourceSha256": "b177ca2369e7553dd0af3f8a871fa79522030bf93e94cb5a697d2f097c0ab05f",
+      "sourceLengthUtf16": 241,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.ee35f22256ab",
+      "sourceSha256": "ee35f22256ab97e6236147445513e60fd96f168bf716c668c1e0d2159d8ae29e",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.ambulatory-monitoring-ep-study.b.5d82d93d542c",
+      "sourceSha256": "5d82d93d542cec27bafebadca3b4689f689434b627985e856a9a13c3844e7148",
+      "sourceLengthUtf16": 251,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-abscess-crp-0850",
+  "lessonId": "colorectal-surgery.diverticular.abscess-source-control",
+  "title": "가상 배액 후 CRP 관찰",
+  "series": [
+    {
+      "label": "독립 가상 증례",
+      "samples": [
+        {
+          "x": 0,
+          "y": 180
+        },
+        {
+          "x": 1,
+          "y": 130
+        },
+        {
+          "x": 2,
+          "y": 160
+        },
+        {
+          "x": 3,
+          "y": 210
+        },
+        {
+          "x": 5,
+          "y": 260
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "days": [
+      0,
+      1,
+      2,
+      3,
+      5
+    ],
+    "values": [
+      180,
+      130,
+      160,
+      210,
+      260
+    ],
+    "notExpectedCourse": true,
+    "interpolation": "straight_lines_between_observed_points"
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 5,
+      "scale": "linear",
+      "ticks": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "label": "배액 후 시간(일)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 300,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        75.0,
+        150.0,
+        225.0,
+        300.0
+      ],
+      "label": "CRP(mg/L)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "독립 가상 증례",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·전형적 경과·진단 기준·약물·수술 안전 기준을 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

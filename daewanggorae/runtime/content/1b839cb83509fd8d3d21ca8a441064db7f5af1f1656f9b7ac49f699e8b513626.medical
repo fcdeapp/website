@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-75g-ogtt-case-0851",
+  "lessonId": "obstetrics.diabetes.screening-pathways",
+  "title": "가상 75g OGTT 관찰값",
+  "series": [
+    {
+      "label": "독립 가상 증례",
+      "samples": [
+        {
+          "x": 0,
+          "y": 88
+        },
+        {
+          "x": 1,
+          "y": 185
+        },
+        {
+          "x": 2,
+          "y": 148
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "hours": [
+      0,
+      1,
+      2
+    ],
+    "values": [
+      88,
+      185,
+      148
+    ],
+    "properFastingAndSamplingAssumed": true,
+    "interpolation": "straight_lines_between_three_observations_not_continuous_measurement",
+    "notTreatmentTargets": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 2,
+      "scale": "linear",
+      "ticks": [
+        0,
+        0,
+        1,
+        2,
+        2
+      ],
+      "label": "부하 뒤 시간(h,0은 공복)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 220,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        55.0,
+        110.0,
+        165.0,
+        220.0
+      ],
+      "label": "혈장 포도당(mg/dL)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "독립 가상 증례",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·정상 범위·전형적 임신 경과·투약·검사/분만/치료 기준을 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

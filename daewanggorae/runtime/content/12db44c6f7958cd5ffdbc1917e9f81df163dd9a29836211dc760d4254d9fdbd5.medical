@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.infection.ssi-depth-evidence",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.476755d89ee0",
+      "sourceSha256": "476755d89ee09694e632135525207ebb5dd5fe27c5d6b5ff0eedac8c39467857",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.9b7d2f5e90b55fd03c2d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 142,
+            "end": 148,
+            "exact": "감염원 조절",
+            "prefix": "강과 같은 장기·공간의 문제는 증상과 접근·",
+            "suffix": "이 다를 수 있다. 피부가 깨끗하다는 이유로"
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.f5f47bd3ec96",
+      "sourceSha256": "f5f47bd3ec961552a733c2066f28e863e4f77cf72ec0b153b0240f31904c62ab",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.61bfe5a94d9b",
+      "sourceSha256": "61bfe5a94d9bdb9cdb68734c512a5155d2517f57bbb782be61e1e49ebcb43c1a",
+      "sourceLengthUtf16": 176,
+      "annotations": [
+        {
+          "id": "ann.984cc3e9d36d1a068148",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 122,
+            "end": 176,
+            "exact": "양성 결과도 오염·집락과 실제 감염을 구별해야 하며 음성도 미생물이 없다는 완전한 증거는 아니다.",
+            "prefix": "절한 검체가 원인 추정에 더 도움이 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.682d82f98937",
+      "sourceSha256": "682d82f98937abb17c832c0d4f91dfe2d19f1f449992908bad675e103ce0e228",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.cdfce7089497",
+      "sourceSha256": "cdfce7089497b4026097258d6947dcc37bf416c3076aea17bf74adbda4bf6d05",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.53eac46e0b50",
+      "sourceSha256": "53eac46e0b50e49db3e6bdc28fa1f7a201ba157ff995e1b41370095b66e9be20",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.4ea90c9c6081",
+      "sourceSha256": "4ea90c9c6081e1a2750163fcb766b241646eadee6e9175ca1a6cafdca3b7c8ee",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.b5ff57efb429",
+      "sourceSha256": "b5ff57efb429ed3a8c629b6a55108c3ae4f1bc7546488b1fa35d43e57bc2e953",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.c2073b26a67b",
+      "sourceSha256": "c2073b26a67bd4db8af4c591cf114335eecd3c25b8b300887ef6bbe94df67c67",
+      "sourceLengthUtf16": 148,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.infection.ssi-depth-evidence.b.2e0511757c66",
+      "sourceSha256": "2e0511757c661cf6d855249e63cef8693c87f1e73dd1be77ddf057bc57382ab8",
+      "sourceLengthUtf16": 148,
+      "annotations": []
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 /* Scoped to /daewanggorae/. Never caches authentication or other services. */
-const CACHE = "daewanggorae-web-v1";
+const CACHE = "daewanggorae-web-v2";
 self.addEventListener("install", (event) =>
   event.waitUntil(self.skipWaiting()),
 );
 self.addEventListener("activate", (event) =>
-  event.waitUntil(self.clients.claim()),
+  event.waitUntil((async () => { for (const key of await caches.keys()) { if (key.startsWith("daewanggorae-web-") && key !== CACHE) await caches.delete(key); } await self.clients.claim(); })()),
 );
 self.addEventListener("fetch", (event) => {
   const request = event.request,

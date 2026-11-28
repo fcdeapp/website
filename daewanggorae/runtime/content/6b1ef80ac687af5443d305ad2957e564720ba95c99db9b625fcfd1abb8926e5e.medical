@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.neurovascular.intracerebral-hemorrhage",
+  "subjectId": "neurology",
+  "chapterId": "neurovascular",
+  "title": {
+    "ko": "뇌내출혈의 기전·혈종 확장과 기능 평가",
+    "en": "Intracerebral Hemorrhage Mechanisms and Assessment"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.lo.01",
+      "text": "출혈의 일차 손상과 이차 손상을 구별한다"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.lo.02",
+      "text": "원인 혈관병과 항응고 노출을 평가한다"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.lo.03",
+      "text": "혈종 크기와 임상 의사결정을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.ca2bec6f1fbc",
+      "type": "heading",
+      "level": 2,
+      "text": "출혈은 지속되는 과정이다"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.c037e0b6b6b5",
+      "type": "paragraph",
+      "markdown": "뇌내출혈(intracerebral hemorrhage, ICH)은 혈액이 뇌실질로 유출되어 조직의 구조와 기능을 손상시키는 상태다. 처음 혈관이 파열될 때의 조직 손상과 혈종의 공간 효과뿐 아니라 이후 혈종 확장, 주변 부종과 염증·혈액 성분의 독성, 뇌실 침범과 뇌척수액 흐름의 변화가 경과에 영향을 준다. 첫 영상은 한 시점의 모습이며 이후 변화가 없다는 보증이 아니다. 의식과 국소 기능, 혈압과 약물 노출 및 영상의 시간축을 함께 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.e88947e2e4dd",
+      "type": "paragraph",
+      "markdown": "혈종의 위치는 원인과 기능 손상의 단서를 제공한다. 깊은 구조의 출혈과 엽성 출혈, 소뇌와 뇌간 출혈은 주변 경로와 공간의 조건이 다르다. 고혈압과 작은 혈관의 변화, 아밀로이드 관련 혈관병, 혈관기형과 종양·정맥 문제, 항응고와 다른 출혈 경향을 임상 맥락에 따라 평가한다. 위치만으로 원인을 확정하지 않으며 나이와 이전 출혈, 약물과 영상의 특징을 함께 검토한다. 새로운 정보를 얻으면 처음의 원인 가설을 수정할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.4b6562a61f37",
+      "type": "heading",
+      "level": 2,
+      "text": "초기 평가와 약물의 실제 노출"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.8b6568e66cef",
+      "type": "paragraph",
+      "markdown": "급성 약화와 의식 변화에서는 호흡·순환·혈당과 발작, 기도 보호와 삼킴의 위해를 확인한다. 뇌출혈과 뇌경색의 증상은 겹치므로 임상 외형만으로 구별하여 치료를 정하지 않는다. 비조영 CT와 필요한 혈관·추가 영상은 출혈과 위치·확장 위험 및 다른 원인을 평가하는 데 사용한다. 검사 결과를 기다리는 동안에도 의식과 동공·운동, 활력징후의 변화를 반복 관찰한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.5b94ddbed91c",
+      "type": "paragraph",
+      "markdown": "항응고제를 사용한다면 약 이름뿐 아니라 마지막 복용과 실제 순응, 신장 기능과 병용 약물, 검사법을 확인한다. 약물별 작용점과 제거·역전 방법이 달라 한 응고검사 수치로 모든 약물의 잔여 효과를 판단할 수 없다. 역전의 필요와 선택은 출혈의 위험과 현재 노출, 혈전 위험 및 현행 근거·허가를 통합한다. 항혈소판제 노출과 항응고제 노출도 같은 치료 문제로 합치지 않는다. 모든 환자에게 같은 수혈과 역전제를 일률적으로 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.3a0a394f5eef",
+      "type": "heading",
+      "level": 2,
+      "text": "혈압과 혈종 확장"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.868048af2799",
+      "type": "paragraph",
+      "markdown": "출혈 뒤 혈압은 기존 고혈압과 스트레스·통증, 두개내 상태와 약물의 영향을 받는다. 높다는 사실만으로 원인과 적절한 목표가 모두 정해지는 것은 아니다. 급성 조절에서는 환자의 상태와 해당 지침의 적용 범위, 과도한 저하와 변동·관류의 부담을 고려한다. 한 번의 수치보다 지속적인 추세와 치료 반응을 확인한다. 만성 예방 목표와 급성기의 치료 목표를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.52f65eecd22f",
+      "type": "paragraph",
+      "markdown": "혈종 확장의 위험은 발병 뒤 시간과 출혈 경향, 비조영·혈관 영상의 소견 등 여러 정보와 관련된다. 영상 표지자는 위험을 추정하는 자료이며 확장을 반드시 일으키는 원인이나 개인별 결과의 확정은 아니다. 증상이 악화되면 확장뿐 아니라 수두증·부종·발작과 대사·약물의 영향을 검토한다. 안정된 한 시점의 진찰과 처음 영상만으로 이후의 감시 필요를 없애지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.d83cd24c076d",
+      "type": "heading",
+      "level": 2,
+      "text": "부피와 임상적 의미"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.3162cb6cd43e",
+      "type": "paragraph",
+      "markdown": "불규칙한 혈종의 부피는 여러 방법으로 추정할 수 있다. 단순한 타원체 근사는 긴 지름과 직교 지름, 높이의 곱을 일정 계수로 환산하는 방식이지만 실제 윤곽과 뇌실 출혈의 분포를 완전히 담지 못한다. 가상으로 세 길이를 4·3·2cm라 놓고 ABC/2 근사를 사용하면 12cm³, 즉 12mL다. 이 값은 단위와 모형의 예시이지 실제 수술 기준과 환자의 예후를 정하는 자료가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.4053c526bf74",
+      "type": "paragraph",
+      "markdown": "같은 12mL라도 위치와 의식·진행, 압박과 뇌척수액 통로의 상태에 따라 의미가 다르다. 수술과 중재는 혈종의 크기 하나만으로 결정하지 않고 위치와 신경 기능·악화, 전신 상태와 치료 목표를 통합한다. 사망 감소와 기능 회복도 서로 다른 결과이므로 중재의 근거를 설명할 때 구별한다. 중증도 점수는 구조화된 정보를 제공하지만 개인의 의사와 장기 가능성을 대신하는 단독 결정 도구가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.992c6b191f7b",
+      "type": "heading",
+      "level": 2,
+      "text": "합병증과 회복"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.dd8a5a855339",
+      "type": "paragraph",
+      "markdown": "발작이 확인되거나 의심되는 상황과 예방적 약물 사용의 문제를 구별한다. 의식 저하가 출혈 범위에 비해 설명되지 않으면 비경련성 발작 등 다른 원인도 평가한다. 혈전 예방과 삼킴·영양, 감염과 피부·이동의 관리는 출혈의 치료와 함께 진행한다. 압박스타킹과 간헐적 압박, 약물 예방은 동일한 방법이 아니며 실제 적용 시점과 위험을 확인한다. 모든 뇌부종에 스테로이드가 도움이 되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.b.53055d65f1ac",
+      "type": "paragraph",
+      "markdown": "회복에서는 근력·언어·인지와 보행, 피로와 기분·돌봄 부담을 별도로 평가한다. 초기의 심한 장애가 장기 결과를 완벽하게 결정하지 않으며 집단 예후를 개인의 확정된 운명으로 설명하지 않는다. 재활의 종류와 강도·시점은 안정성과 기능에 맞추어 조정한다. 정상 뇌와 혈관의 3D 모형은 위치의 배경이며 실제 혈종과 부종·파열 혈관을 담지 않는다. 환자의 병변과 기능은 영상·진찰과 경과 자료를 근거로 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.table0856",
+      "type": "table",
+      "data": {
+        "title": "관찰과 감별의 범위",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "가상 혈종 길이",
+            "A4·B3·C2cm"
+          ],
+          [
+            "모형",
+            "ABC/2 근사"
+          ],
+          [
+            "미확인",
+            "위치·뇌실 침범·의식·실제 윤곽"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neurology.neurovascular.intracerebral-hemorrhage.diagram.hypothetical-hematoma-volume-0856",
+      "type": "diagram",
+      "diagramRef": "diagram.hypothetical-hematoma-volume-0856",
+      "path": "diagrams/diagram.hypothetical-hematoma-volume-0856.svg",
+      "alt": "고정 A·B의 ABC/2 근사의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/neurovascular/sections/neurology.neurovascular.intracerebral-hemorrhage.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.neurovascular.intracerebral-hemorrhage.001",
+    "question.neurology.neurovascular.intracerebral-hemorrhage.002"
+  ],
+  "relatedLessons": [
+    "neurology.neurovascular.subarachnoid-hemorrhage"
+  ]
+}

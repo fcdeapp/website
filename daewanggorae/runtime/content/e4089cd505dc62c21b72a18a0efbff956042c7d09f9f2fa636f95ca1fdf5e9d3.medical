@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-learning-data-0854-0",
+  "lessonId": "neuroscience.plasticity.activity-dependent",
+  "title": "독립 가상 자료: 활동 의존성 시냅스 가소성과 기억의 기전",
+  "series": [
+    {
+      "label": "유도 입력",
+      "samples": [
+        {
+          "x": 0,
+          "y": 100
+        },
+        {
+          "x": 1,
+          "y": 150
+        },
+        {
+          "x": 2,
+          "y": 148
+        },
+        {
+          "x": 3,
+          "y": 146
+        }
+      ]
+    },
+    {
+      "label": "대조 입력",
+      "samples": [
+        {
+          "x": 0,
+          "y": 100
+        },
+        {
+          "x": 1,
+          "y": 100
+        },
+        {
+          "x": 2,
+          "y": 99
+        },
+        {
+          "x": 3,
+          "y": 100
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "notClinicalCutoffOrEfficacy": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 3,
+      "scale": "linear",
+      "ticks": [
+        0,
+        1,
+        2,
+        2,
+        3
+      ],
+      "label": "기록 시점"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 200,
+      "scale": "linear",
+      "ticks": [
+        0,
+        50,
+        100,
+        150,
+        200
+      ],
+      "label": "기준 대비 반응(%)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "유도 입력",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "대조 입력",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "실제 환자·공식 척도·진단 경계·치료효과·처방 자료가 아니다.",
+    "기록 시점의 연결은 연속 측정이나 인과관계의 증거가 아니다."
+  ],
+  "sourceImageUsed": false
+}

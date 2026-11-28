@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "trauma-surgery",
+  "title": {
+    "ko": "외상외과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "trauma-surgery.chapter.resuscitation",
+      "path": "domains/06-surgery/subjects/trauma-surgery/chapters/resuscitation/chapter.json"
+    },
+    {
+      "id": "trauma-surgery.chapter.shock",
+      "path": "domains/06-surgery/subjects/trauma-surgery/chapters/shock/chapter.json"
+    },
+    {
+      "id": "trauma-surgery.chapter.hemostasis",
+      "path": "domains/06-surgery/subjects/trauma-surgery/chapters/hemostasis/chapter.json"
+    },
+    {
+      "id": "trauma-surgery.chapter.transfusion",
+      "path": "domains/06-surgery/subjects/trauma-surgery/chapters/transfusion/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "trauma-surgery.plan.001",
+    "trauma-surgery.plan.002",
+    "trauma-surgery.plan.003",
+    "trauma-surgery.plan.004",
+    "trauma-surgery.plan.005",
+    "trauma-surgery.plan.006",
+    "trauma-surgery.resuscitation.hemorrhagic-shock",
+    "trauma-surgery.shock.recognition-oxygen-debt",
+    "trauma-surgery.shock.resuscitation-source-control",
+    "trauma-surgery.hemostasis.trauma-coagulopathy",
+    "trauma-surgery.transfusion.massive-monitoring"
+  ]
+}

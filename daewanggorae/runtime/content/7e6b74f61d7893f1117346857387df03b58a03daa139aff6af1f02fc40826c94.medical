@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.carbohydrate.gluconeogenesis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.a842ea137232",
+      "sourceSha256": "a842ea137232c7af887777009df90d7038b65f80593073e897b3b760d64def46",
+      "sourceLengthUtf16": 234,
+      "annotations": [
+        {
+          "id": "ann.fd73dbcacc5ba012e8a2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 26,
+            "end": 34,
+            "exact": "glycogen",
+            "prefix": "에는 외부에서 포도당이 공급되지 않아 간의 ",
+            "suffix": " 분해와 포도당신생(gluconeogenes"
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.f31dd25b04b6",
+      "sourceSha256": "f31dd25b04b667e9d97c72a3f52dca9e42d6b1b2c0d17d7c5989bfb354d1df8b",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.0cc2b8e55352022f2e4c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 7,
+            "end": 11,
+            "exact": "해당과정",
+            "prefix": "포도당신생은 ",
+            "suffix": "의 단순한 역반응이 아니다. 해당의 큰 자유"
+          },
+          "conceptId": "reader.term.ae7821eb164e43a8",
+          "targetDocumentId": "biochemistry.carbohydrate.glycolysis"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.ab57c70309f3",
+      "sourceSha256": "ab57c70309f356ddb4a590480c7c05263b2d060b934bf8ed2a964eacec430730",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.3dfe803b29196e8f0bc7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 154,
+            "end": 216,
+            "exact": "같은 효소가 대사 상황에 따라 탄소를 다른 목적에 공급할 수 있어 효소 이름만으로 최종 경로를 확정하지 않는다.",
+            "prefix": "이면서 TCA 중간체 보충반응이기도 하다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.c31f288b6a67",
+      "sourceSha256": "c31f288b6a676e9f2710c570fe922174815205c29173e7656e77b5f4992c41f8",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.4bacdc1ee80f",
+      "sourceSha256": "4bacdc1ee80f1903cb2b29f6d5c4a896e56e1b283b4ff285f62eeeffe777f6a2",
+      "sourceLengthUtf16": 314,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.adb97839e2d7",
+      "sourceSha256": "adb97839e2d7411b6afde2c37cf8545bda33a44fa04b0e98a64e80d4de049aff",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.0603d1d921ca",
+      "sourceSha256": "0603d1d921ca25fc4f457b22687ea2ff9582a8669a377359bec3a583a2e2c90f",
+      "sourceLengthUtf16": 263,
+      "annotations": [
+        {
+          "id": "ann.337032f4a8cc0e964a50",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 228,
+            "end": 234,
+            "exact": "지방산 산화",
+            "prefix": "수한 포도당 증가로 직접 전환되지 않지만, ",
+            "suffix": "는 필요한 ATP와 환원력 및 조절 신호를 "
+          },
+          "conceptId": "reader.term.0ba7fa5b933b185a",
+          "targetDocumentId": "biochemistry.lipids.fatty-acid-oxidation"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.a0da33ac673c",
+      "sourceSha256": "a0da33ac673cd86031a861ebc37afe12e812811fc76a7ece0360dbc2b35fa07e",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.3482c16f2c05",
+      "sourceSha256": "3482c16f2c055b5de8b47c6d367bf44ddfb1224dfd385748ef6235483858d793",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.107518c61f73",
+      "sourceSha256": "107518c61f73c1187cc7ab07a1866517c85e897814f432c41275a10c32ffd807",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.47c202d29426",
+      "sourceSha256": "47c202d29426a3fd1b7934cd031b0667f9fa6962d7654c85073c12a4e02bdca7",
+      "sourceLengthUtf16": 261,
+      "annotations": [
+        {
+          "id": "ann.52ea0865ad94b0c737dc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 87,
+            "end": 176,
+            "exact": "Fructose-2,6-bisphosphate는 PFK-1 활성과 fructose-1,6-bisphosphatase 억제를 연결하여 두 흐름의 조정에 중요하다.",
+            "prefix": "후 저장과 이용에 적합한 반응을 촉진한다. ",
+            "suffix": " AMP가 높다는 신호는 에너지를 많이 소비"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.gluconeogenesis.b.94f908c45288",
+      "sourceSha256": "94f908c45288e321e3a3c802ba04735338d91167e2f678ed96937f82949493bc",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience.memory.encoding-retrieval",
+  "subjectId": "neuroscience",
+  "chapterId": "memory",
+  "title": {
+    "ko": "기억의 부호화·공고화·인출과 실험 설계",
+    "en": "Memory Encoding Consolidation Retrieval and Experiments"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroscience.memory.encoding-retrieval.lo.01",
+      "text": "기억 과정과 과제 수행을 구별한다"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.lo.02",
+      "text": "해마·분산 회로와 기억의 종류를 설명한다"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.lo.03",
+      "text": "인출 단서·간섭과 추적 실험을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.468440aae4e3",
+      "type": "heading",
+      "level": 2,
+      "text": "기억은 저장 상자 하나가 아니다"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.7ab04a5b7a62",
+      "type": "paragraph",
+      "markdown": "새 정보를 받아들이는 부호화(encoding), 시간이 지나도 이용할 수 있게 하는 공고화(consolidation), 필요할 때 접근하는 인출(retrieval)은 서로 관련되지만 구별되는 과정이다. 검사에서 회상하지 못했다는 사실만으로 정보가 완전히 저장되지 않았다고 단정할 수 없다. 처음에 주의를 기울이지 못했는지, 의미를 이해했는지와 인출 단서가 적절했는지도 확인한다. 기억 과제는 감각·언어·동기와 실행 기능에 의존하므로 한 번의 실패가 순수 기억 결함을 뜻하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.477149cdadb2",
+      "type": "paragraph",
+      "markdown": "작업기억(working memory)은 정보를 잠시 유지하며 조작하는 기능과 관련된다. 오랫동안 알고 있는 사실을 사용하는 것과 방금 들은 내용을 잠시 유지하는 것은 같은 과제가 아니다. 과제 길이와 방해 자극, 정보를 묶는 전략과 이전 지식이 수행을 바꾼다. 단순한 기억 용량의 숫자 하나로 개인의 모든 학습 능력을 대표하지 않는다. 피로와 수면 부족, 불안과 약물의 영향도 기억 평가에서 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.5442248a01a4",
+      "type": "heading",
+      "level": 2,
+      "text": "해마와 분산된 표상"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.9490b3e2a9d7",
+      "type": "paragraph",
+      "markdown": "해마(hippocampus)는 새로운 사건과 관계의 학습에 중요한 역할을 하지만 모든 기억이 해마에 한 가지 형태로 저장되는 것은 아니다. 지식과 기술·습관, 정서와 지각 학습은 서로 다른 회로와 과제를 가진다. 해마 손상에서 보이는 기억 장애와 기저핵·소뇌가 관여하는 학습의 변화를 구별하면 기억 체계의 다양성을 이해할 수 있다. 한 구조가 기억과 관련된다는 사실과 그 구조만이 기억의 유일한 장소라는 주장은 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.c5b1dd33d21a",
+      "type": "paragraph",
+      "markdown": "사건 기억은 장소·시간·내용과 감각·정서의 요소를 연결한다. 인출은 저장된 영상을 그대로 재생하는 수동 과정만이 아니라 현재의 단서·목표와 지식의 영향을 받는다. 회상의 확신과 정확도가 항상 같은 것은 아니다. 질문의 방식과 반복, 다른 사람의 정보와 기대가 보고에 영향을 줄 수 있다. 기억의 변화가 있다고 모두 의도적인 거짓말은 아니며, 반대로 자신 있게 말한다고 사실이 자동 보증되는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.ccb5a5455071",
+      "type": "heading",
+      "level": 2,
+      "text": "공고화와 수면"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.062a0f5c8173",
+      "type": "paragraph",
+      "markdown": "학습 뒤 시간이 지나며 기억의 안정성과 회로 참여가 달라질 수 있다. 세포 수준의 공고화와 넓은 회로의 재조직은 서로 다른 설명 수준이다. 수면은 학습과 기억의 여러 과정에 영향을 주지만 모든 기억을 같은 방식으로 강화하지는 않는다. 수면량과 단계, 과제의 종류와 학습 전후의 상태를 구별한다. 잠을 덜 잔 집단의 수행이 낮다면 공고화뿐 아니라 다음 날의 주의와 동기·피로가 결과에 기여했을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.94db4aae09f3",
+      "type": "paragraph",
+      "markdown": "실험에서는 학습 직후와 지연 뒤의 수행을 나누어 측정하고, 학습량과 초기 수행을 맞추는 방법을 고려한다. 반복 검사는 기억을 바꿀 수 있으므로 측정 자체도 중재가 될 수 있다. 같은 항목을 여러 번 테스트한 조건과 처음 보는 항목의 성적을 단순 비교하지 않는다. 검사의 간격과 순서, 단서와 피드백을 명시해야 결과를 재현하고 해석할 수 있다. 기억의 기전과 과제의 설계는 분리할 수 없는 관계다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.df634e5913a8",
+      "type": "heading",
+      "level": 2,
+      "text": "간섭과 인출 연습"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.0325249f010d",
+      "type": "paragraph",
+      "markdown": "새 학습이 이전 기억의 인출을 방해하거나 이전 학습이 새 과제에 간섭할 수 있다. 자료의 유사성과 맥락, 학습 순서와 반복이 영향을 준다. 망각을 시간이 지나 자동으로 사라지는 양 하나로만 설명하면 인출 경쟁과 단서의 역할을 놓친다. 인출 연습은 정보를 다시 읽는 것과 다른 학습 기회를 제공할 수 있지만, 피드백과 오류 수정·난이도와 간격이 중요하다. 모든 학습 과제에 같은 반복 횟수와 간격이 최적이라는 결론은 성립하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.8cbd67dc8960",
+      "type": "paragraph",
+      "markdown": "가상 실험에서 같은 20항목 중 지연 회상한 수가 12개에서 15개로 늘었다면 정확률은 60%에서 75%로 변하고 절대 차이는 15%포인트다. 상대 증가는 25%다. 항목의 난이도와 초기 학습·검사 경험이 같아야 비교가 의미 있다. 점수 차이만으로 시냅스의 수나 특정 분자의 증가를 역으로 추정하지 않는다. 표본 변동과 대조 조건, 실제 생활의 기억 전이를 함께 평가해야 학습 효과의 범위를 알 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.59a302e79532",
+      "type": "heading",
+      "level": 2,
+      "text": "임상과 교육에 연결하기"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.8b129423f888",
+      "type": "paragraph",
+      "markdown": "인지 재활과 학습에서는 의미 있는 연결과 단서, 환경의 구조와 외부 보조 도구가 역할을 할 수 있다. 지원 도구를 쓰는 것을 회복 실패로 보지 않고 실제 기능과 자율성에 도움이 되는지 평가한다. 정보를 저장하는 능력과 일상에서 적절한 시점에 사용하는 능력은 다를 수 있다. 약 복용과 약속 관리에서는 기억뿐 아니라 계획·주의와 생활의 규칙성이 중요하다. 검사실의 성적을 일상 안전으로 직접 바꾸어 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.86e9607f7cf1",
+      "type": "paragraph",
+      "markdown": "기억 연구의 결과를 사람에게 적용할 때는 실험 대상과 과제, 측정한 시간과 결과를 확인한다. 동물의 특정 회로를 조작한 결과가 인간의 모든 기억 장애 치료로 곧바로 이어지는 것은 아니다. 정상 해마와 주변 구조의 3D 모형은 위치 관계를 이해하게 하지만 기억 내용과 공고화의 시간 변화를 보여 주지 않는다. 구조의 역할은 병변·기록·행동과 여러 실험의 증거를 통합하여 이해하며, 하나의 영상이나 그래프에 과도한 설명을 맡기지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.f8b528d4d0f8",
+      "type": "heading",
+      "level": 2,
+      "text": "지식의 전이와 비교 과제"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.69b1b36993a5",
+      "type": "paragraph",
+      "markdown": "학습한 내용을 같은 문구로 다시 제시하면 기억해 낼 수 있어도 새로운 증례에 적용하지 못할 수 있다. 전이(transfer)는 표면이 달라진 과제에서 원리와 관계를 사용할 수 있는지를 묻는다. 예를 들어 같은 수치의 비율 계산과 다른 단위·분모를 가진 임상 자료의 해석은 요구가 다르다. 평가에서는 익숙한 예시의 재인과 새로운 문제 해결을 나누어 살핀다. 전이가 낮다면 단순한 반복 부족 외에도 개념의 이해와 단서의 의존, 과제 사이의 실제 차이를 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.71fa729738b5",
+      "type": "paragraph",
+      "markdown": "서로 비슷한 질환을 비교하는 학습은 차이를 구별하는 단서를 명확히 하는 데 도움을 줄 수 있다. 다만 표의 한 줄을 외워 모든 환자에게 적용하면 예외와 공존 질환을 놓친다. 공통 기전과 서로 다른 위치·시간·검사 범위를 연결하고, 왜 어떤 선지가 틀렸는지 설명하는 과정이 중요하다. 정답을 맞힌 횟수와 설명의 일관성, 확신과 정확도를 함께 평가하면 암기와 이해의 차이를 볼 수 있다. 학습 도구의 목적은 점수만 높이는 것이 아니라 새로운 자료를 해석할 수 있는 지식을 형성하는 데 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.f07cb904259d",
+      "type": "paragraph",
+      "markdown": "기억 연구에서 집단 평균이 좋아졌어도 모든 참여자가 같은 변화를 보이는 것은 아니다. 개인별 시작 수준과 측정 오차, 연습과 전략의 차이가 섞일 수 있다. 큰 집단에서 통계적 차이가 관찰되었다는 사실과 임상적으로 중요한 기능 개선은 구별한다. 효과의 크기와 불확실성, 비교 조건과 실제 적용 환경을 함께 검토해야 한다. 기억을 좋아지게 한다는 제품이나 중재의 주장을 평가할 때도 측정한 과제와 기간, 대조군과 맹검, 이상반응과 지속성을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.b.d534122b82bf",
+      "type": "paragraph",
+      "markdown": "동일한 결과를 여러 수준의 기전으로 설명할 수 있을 때는 어느 관찰이 가설을 구별하는지 생각한다. 회상 증가가 더 나은 부호화 때문이라면 학습 직후의 수행과 전략에서 차이가 나타날 수 있고, 인출 단서의 효과라면 단서 조건을 바꾼 검사에서 다른 양상을 보일 수 있다. 어느 설명도 숫자 하나만으로 확정되지 않는다. 기전을 주장하려면 그 기전에 특이적인 예측을 세우고 대안 설명을 줄이는 자료를 확보해야 한다. 이러한 사고는 기초 실험과 임상 검사, 교육 자료의 효과 평가에 공통으로 적용된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.memory.encoding-retrieval.table0854",
+      "type": "table",
+      "data": {
+        "title": "관찰과 추가로 확인할 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "항목",
+            "각 20개"
+          ],
+          [
+            "지연 회상",
+            "12개·15개"
+          ],
+          [
+            "미확인",
+            "초기 학습·단서·연습·난이도"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/memory/sections/neuroscience.memory.encoding-retrieval.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroscience.memory.encoding-retrieval.001"
+  ],
+  "relatedLessons": [
+    "neuroscience.plasticity.activity-dependent",
+    "neurology.cognition.dementia-patterns"
+  ]
+}

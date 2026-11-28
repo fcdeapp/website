@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.barrier-cell-roles-0855",
+  "lessonId": "neuroscience.glia.barrier-neurovascular",
+  "title": "장벽과 신경혈관단위의 역할",
+  "nodes": [
+    {
+      "id": "blood",
+      "label": "혈액의 물질",
+      "x": 350,
+      "y": 80,
+      "width": 300,
+      "height": 92
+    },
+    {
+      "id": "endo",
+      "label": "내피·이음·수송체",
+      "x": 350,
+      "y": 340,
+      "width": 340,
+      "height": 92
+    },
+    {
+      "id": "astro",
+      "label": "아교세포·주위세포",
+      "x": 535,
+      "y": 610,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "brain",
+      "label": "뇌의 세포외 환경",
+      "x": 165,
+      "y": 610,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "out",
+      "label": "결합·대사·배출",
+      "x": 165,
+      "y": 880,
+      "width": 280,
+      "height": 92
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.barrier-cell-roles-0855.e0",
+      "source": "blood",
+      "target": "endo",
+      "label": "접근",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.barrier-cell-roles-0855.e1",
+      "source": "endo",
+      "target": "brain",
+      "label": "선택적 이동",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.barrier-cell-roles-0855.e2",
+      "source": "astro",
+      "target": "endo",
+      "label": "유지 신호",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.barrier-cell-roles-0855.e3",
+      "source": "brain",
+      "target": "out",
+      "label": "분포·처리",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 700,
+      "height": 1040
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 650,
+        "height": 1040
+      },
+      "fontSize": 22,
+      "nodes": {
+        "blood": {
+          "x": 325.0,
+          "y": 80,
+          "width": 276.0,
+          "height": 92
+        },
+        "endo": {
+          "x": 325.0,
+          "y": 340,
+          "width": 312.8,
+          "height": 92
+        },
+        "astro": {
+          "x": 496.7857142857143,
+          "y": 610,
+          "width": 257.6,
+          "height": 92
+        },
+        "brain": {
+          "x": 153.21428571428572,
+          "y": 610,
+          "width": 257.6,
+          "height": 92
+        },
+        "out": {
+          "x": 153.21428571428572,
+          "y": 880,
+          "width": 257.6,
+          "height": 92
+        }
+      }
+    }
+  },
+  "limitations": [
+    "독립적인 역할·정보 연결 개념도이며 실제 세포 크기·축삭 경로·시간 간격과 환자의 병변을 나타내지 않는다.",
+    "정상 OBJ 자체의 미세구조·동적 기능으로 표시하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

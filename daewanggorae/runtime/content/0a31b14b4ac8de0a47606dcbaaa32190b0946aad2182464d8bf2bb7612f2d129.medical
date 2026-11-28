@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "trauma-surgery.resuscitation.hemorrhagic-shock",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.3ba1a7457dc9",
+      "sourceSha256": "3ba1a7457dc98283bc3a442aaf2af8a903f7cc3124ea89194ddda1feb28b9c9f",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.083957f429b9",
+      "sourceSha256": "083957f429b9c072c6f8b29e27c65ab806e91e4b6d668c75b95beb7dfdd97d36",
+      "sourceLengthUtf16": 275,
+      "annotations": [
+        {
+          "id": "ann.cddabe8a70d9c1876692",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 117,
+            "end": 123,
+            "exact": "항이뇨호르몬",
+            "prefix": "분배는 심장과 뇌의 관류를 유지하려 한다. ",
+            "suffix": "과 레닌-안지오텐신-알도스테론계도 체액 보존"
+          },
+          "conceptId": "reader.term.df6b37a2afc65475",
+          "targetDocumentId": "physiology.renal.urine-concentration"
+        },
+        {
+          "id": "ann.4a44494e905904bc390c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 125,
+            "end": 140,
+            "exact": "레닌-안지오텐신-알도스테론계",
+            "prefix": "뇌의 관류를 유지하려 한다. 항이뇨호르몬과 ",
+            "suffix": "도 체액 보존과 혈관 반응에 관여한다. 그러"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.6ad84b50b720",
+      "sourceSha256": "6ad84b50b7200bbc87f569e9f56e4ba2e6d8dea67f56ac336254e69476c96dfd",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    },
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.d3288a79f7a5",
+      "sourceSha256": "d3288a79f7a5edc1c0f9caaf8fb46d5340cefd9e3e46ba609edc7572d4deaa8a",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.29a151b6d8ca",
+      "sourceSha256": "29a151b6d8ca2498b90479b5e07638b1e06ed11c8f3e964beb8eabc17d150054",
+      "sourceLengthUtf16": 245,
+      "annotations": []
+    },
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.98c000adab0b",
+      "sourceSha256": "98c000adab0beb744732f7d054006cda3dd86ebf069a779ba18ab04975adb5a9",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.233760f3ff9f",
+      "sourceSha256": "233760f3ff9f199a156c741a989824fa0cd2e8e87edd55dc10f46d61371f119b",
+      "sourceLengthUtf16": 270,
+      "annotations": [
+        {
+          "id": "ann.308b88fdacee896a2e36",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 97,
+            "end": 102,
+            "exact": "섬유소용해",
+            "prefix": " 손상과 쇼크는 혈관내피, 혈소판, 응고와 ",
+            "suffix": "의 조절을 바꾸며 초기부터 지혈 능력이 손상"
+          },
+          "conceptId": "reader.term.d74688e1467be81c",
+          "targetDocumentId": "hematology.hemostasis.platelet-coagulation"
+        },
+        {
+          "id": "ann.336b61e9a8ffa5cdf7fc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 227,
+            "end": 270,
+            "exact": "출혈과 응고장애가 서로를 악화시키는 고리를 끊는 것이 소생의 중요한 목적이다.",
+            "prefix": "한 산증은 지혈 반응의 효율을 떨어뜨린다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.e8557ea02a45",
+      "sourceSha256": "e8557ea02a453e806e3e8cf191dc345b395b886e65f601bc22514ef17d1f54ca",
+      "sourceLengthUtf16": 256,
+      "annotations": [
+        {
+          "id": "ann.916b95de2d42d535506e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 24,
+            "end": 38,
+            "exact": "활성화부분트롬보플라스틴시간",
+            "prefix": "응고 평가에는 혈소판 수, 프로트롬빈시간, ",
+            "suffix": ", 피브리노겐 등의 정보가 이용된다. 이들은"
+          },
+          "conceptId": "reader.term.2c463235cb32480d",
+          "targetDocumentId": "laboratory-medicine.coagulation.pt-aptt-patterns"
+        }
+      ]
+    },
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.2f98838062bc",
+      "sourceSha256": "2f98838062bc742924edbc71cd102528daaf81ea268f17daa762c344a2cc73ba",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "trauma-surgery.resuscitation.hemorrhagic-shock.b.dbfebebc4c4c",
+      "sourceSha256": "dbfebebc4c4c688908e7efc6614b80f60d2adce2aafe83f3ecb66605d22dfe2f",
+      "sourceLengthUtf16": 290,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.pleural.infection-empyema",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.b.851acb346294",
+      "sourceSha256": "851acb346294929629316104183aaf033dc9fad979064da1c9df22cf900e202a",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.f83804a0e8789770605d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 11,
+            "end": 13,
+            "exact": "흉막",
+            "prefix": "폐렴 주위의 염증은 ",
+            "suffix": "액 생성을 늘릴 수 있고, 일부에서는 미생물"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.b.8586bcefd15b",
+      "sourceSha256": "8586bcefd15b3040774b0a1ab209076eefe9264a0f5a1372621d2e47c1b7165c",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.b.c6e38d11d27b",
+      "sourceSha256": "c6e38d11d27b2090ae3497f466b59141575b923e11c6171ee56d3de61459883c",
+      "sourceLengthUtf16": 156,
+      "annotations": [
+        {
+          "id": "ann.5f02de42281341344ea7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 128,
+            "end": 134,
+            "exact": "감염원 조절",
+            "prefix": " 배출 문제가 남을 수 있다. 약물 치료와 ",
+            "suffix": "은 서로 보완하지만 같은 개입은 아니다."
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.b.67bb4ad37795",
+      "sourceSha256": "67bb4ad377953b525682e7813811ab127dfa67ea6c071af86d81e3ccb27cc01e",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.b.d0c7eacebd6a",
+      "sourceSha256": "d0c7eacebd6aca285ac5d8f34866d2a4c555e643e1c7ad88516efd9c8757f563",
+      "sourceLengthUtf16": 162,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.b.cbeeef58a516",
+      "sourceSha256": "cbeeef58a5169da5ef09378cc52df44478b3797ba7030e4e05a45eda0ea198d8",
+      "sourceLengthUtf16": 164,
+      "annotations": [
+        {
+          "id": "ann.60d000361cd85a347d7c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 41,
+            "end": 79,
+            "exact": "따라서 화학적 분류만으로 모든 흉막 액체를 감염으로 확정하지 않는다.",
+            "prefix": "부 낮은 pH·당의 결과를 만들 수 있다. ",
+            "suffix": " 반대로 심한 임상 감염과 격벽·고름 등 자"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.b.41f5d1f4175a",
+      "sourceSha256": "41f5d1f4175a2c6f991b1bfb724964181839d08efee7169ecbe65474d8cb62f1",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.b.7371eb370a05",
+      "sourceSha256": "7371eb370a0563835847d13874253d62c4db51e8cfe0045336431b8936617487",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.p.extra0846.0",
+      "sourceSha256": "49f5e9dc528c91c40abdc3ac13f80e4ab48dd9cd3a0b5e6e36eff61dfd2c3e5f",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.ef1d4b3ea6c1d1ca9502",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 88,
+            "end": 134,
+            "exact": "전체 배출이 멈췄다는 사실만으로 총 액체가 사라졌다고 판단할 수 없음을 보여 준다.",
+            "prefix": "A는20분에 비지만B는300mL로 남는다. ",
+            "suffix": " 이 값은 환자의 실제 배액 속도와 시술 지"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.pleural.infection-empyema.p.extra0846.1",
+      "sourceSha256": "6a008890d0402212a6e0a5ce51ff9ed09aaf6a55a5eaa44d2fea6c7d8247d8ba",
+      "sourceLengthUtf16": 190,
+      "annotations": [
+        {
+          "id": "ann.795b1446dd756d0226ba",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 47,
+            "end": 103,
+            "exact": "관을 넣은 위치에서 표본과 흐름을 얻었다는 결과와 모든 공간의 감염원이 조절되었다는 결론을 구별한다.",
+            "prefix": " 위치·개통과 환자 호흡에 영향을 받는다. ",
+            "suffix": " 배출량이 줄면 호전 외에도 막힘·위치와 다"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

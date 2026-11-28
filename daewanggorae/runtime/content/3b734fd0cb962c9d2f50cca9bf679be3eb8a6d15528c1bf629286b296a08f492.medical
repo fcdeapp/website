@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.electrocardiography.lead-vectors",
+  "subjectId": "cardiology",
+  "chapterId": "electrocardiography",
+  "title": {
+    "ko": "심전도 유도와 허혈의 공간적 해석",
+    "en": "ECG Lead Vectors and Spatial Interpretation"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.lo.01",
+      "text": "전극과 유도의 차이를 설명한다"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.lo.02",
+      "text": "전기 벡터의 투영을 해석한다"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.lo.03",
+      "text": "전기적 영역과 관상동맥 주행의 관계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.d0990010f7a3",
+      "type": "heading",
+      "level": 2,
+      "text": "전압차를 보는 방향"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.a32bd4d285f5",
+      "type": "paragraph",
+      "markdown": "심전도(electrocardiogram, ECG)는 체표의 전위차를 시간에 따라 기록한다. 전극은 신체에 붙인 접점이고 유도(lead)는 그 접점들의 조합으로 정의한 관찰 방향이다. 전극 수와 유도 수가 같은 말이 아닌 이유다. 심장 한 지점의 실제 세포막 전위를 직접 꽂아 재는 검사가 아니라 여러 조직에서 생긴 전기적 활동이 체표에 합쳐진 결과를 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.e7a043bbf3b6",
+      "type": "paragraph",
+      "markdown": "정면의 사지 유도와 수평면의 흉부 유도는 서로 다른 방향의 정보를 제공한다. 단순 벡터 모형에서 전기벡터와 유도 축이 이루는 각도가 θ라면 기록 성분은 크기×cosθ로 표현할 수 있다. 평행하면 양의 성분이 크고 수직이면 작으며 반대 방향이면 음이 된다. 실제 심장은 하나의 고정 쌍극자가 아니므로 이 모형은 방향성을 이해하는 출발점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.c2989e9572bd",
+      "type": "heading",
+      "level": 2,
+      "text": "여러 유도를 함께 읽기"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.42d2da3905c3",
+      "type": "paragraph",
+      "markdown": "같은 사건을 향하는 유도와 반대쪽을 보는 유도에서 변화가 반대로 보일 수 있다. Reciprocal change는 이런 공간적 관계를 해석하는 단서다. 한 유도에서 내려간 ST분절이 반드시 그 전극 바로 아래만의 독립적인 병변을 뜻하지는 않는다. 서로 인접한 방향의 변화와 반대 방향 소견, 전체 QRS·ST·T의 관계를 함께 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.f8187ec204f5",
+      "type": "paragraph",
+      "markdown": "전극의 위치가 달라지거나 사지 연결이 바뀌면 전기적 공간이 달라져 병변처럼 보일 수 있다. 이전 검사와 비교할 때는 기록 속도·이득·필터와 전극 배치를 확인한다. 저전압·기저선 흔들림·근육 잡음도 판독을 방해할 수 있다. 관찰한 변화가 심장에서 시작한 것인지 측정 조건이 바뀐 것인지 먼저 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.337aa5c99236",
+      "type": "heading",
+      "level": 2,
+      "text": "해부학적 영역의 의미"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.9d72da62460a",
+      "type": "paragraph",
+      "markdown": "하벽·앞벽·가쪽벽 등 전기적 영역은 심근의 방향을 정리하는 표현이다. 특정 관상동맥과 관련되지만 모든 사람에서 같은 분지가 같은 경계를 공급하는 것은 아니다. 관상 우세성과 분지의 길이, 폐색 위치와 측부순환이 실제 허혈 영역을 바꾼다. 따라서 유도 묶음 하나를 고정된 한 혈관의 완전한 지도처럼 외우면 변이를 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.f22feda111b2",
+      "type": "paragraph",
+      "markdown": "표준 유도가 충분히 잘 보지 못하는 영역은 상황에 따라 추가 방향의 기록이 정보를 줄 수 있다. 후벽과 우심실 관련 평가가 대표적인 문맥이다. 추가 유도의 필요성은 증상·표준 심전도·혈역학에 연결하여 판단한다. 정상 인체 모델의 관상동맥 주행은 해부 관계를 확인하는 데 유용하지만 특정 환자의 우세성이나 폐색 부위를 확정하는 영상은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.2747921801db",
+      "type": "heading",
+      "level": 2,
+      "text": "진단 기준과 벡터의 차이"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.53d4f2375918",
+      "type": "paragraph",
+      "markdown": "각도 모형은 왜 같은 전기 사건이 서로 다르게 기록되는지 설명한다. 그러나 cosθ 값을 실제 ST 상승의 진단 절단값으로 사용하지 않는다. 임상 판독에는 파형의 시점과 크기, 인접 유도와 환자 배경, 전도 장애와 다른 원인이 필요하다. 수학적 투영과 질환의 진단 기준은 서로 다른 수준의 설명이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.b.93f9964afc76",
+      "type": "paragraph",
+      "markdown": "문제에서 가상 벡터 크기를 1로 놓으면 0도에서1, 90도에서0, 180도에서−1이 된다. 이 값은 방향의 부호를 연습하는 정규화 수치이며 실제 환자의 mV 기록이 아니다. 실제 12유도 파형을 구성하려면 시간에 따른 활성화·재분극과 몸통 전달을 고려해야 한다. 정적 OBJ를 움직여 보이는 것만으로 심전도의 전기생리를 재현했다고 표시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.diagram.ecg-vector-projection-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.ecg-vector-projection-toy",
+      "path": "diagrams/diagram.ecg-vector-projection-toy.svg",
+      "alt": "유도 축과 전기벡터의 투영의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.electrocardiography.lead-vectors.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "전극",
+            "체표의 접점"
+          ],
+          [
+            "유도",
+            "접점 조합의 관찰 방향"
+          ],
+          [
+            "벡터 투영",
+            "정규화 모형의 크기×cosθ"
+          ],
+          [
+            "전기 영역",
+            "개인 혈관 분포와 완전 일대일 아님"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/electrocardiography/sections/cardiology.electrocardiography.lead-vectors.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.electrocardiography.lead-vectors.001",
+    "question.cardiology.electrocardiography.lead-vectors.002"
+  ],
+  "relatedLessons": [
+    "cardiology.diagnosis.chest-discomfort",
+    "cardiology.electrocardiography.ischemic-evolution"
+  ]
+}

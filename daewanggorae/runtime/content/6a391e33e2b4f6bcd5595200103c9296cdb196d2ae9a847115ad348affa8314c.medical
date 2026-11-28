@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.ntm-pulmonary-disease",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.b.654ea64b0965",
+      "sourceSha256": "654ea64b09650d594fc5581090f1976acfc81defa1d0160350e5c92bec972802",
+      "sourceLengthUtf16": 169,
+      "annotations": [
+        {
+          "id": "ann.fa504aa31b242923a3f7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 1,
+            "end": 3,
+            "exact": "결핵",
+            "prefix": "비",
+            "suffix": "항산균(NTM)은 결핵균군과 다른 다양한 균"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        },
+        {
+          "id": "ann.12ee65df8cf382de9397",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 99,
+            "end": 144,
+            "exact": "객담에서 항산균이 보인 결과만으로 결핵 또는 특정 NTM 질환을 확정하지 않는다.",
+            "prefix": " 숙주 조건은 질병 가능성에 영향을 준다. ",
+            "suffix": " 균 동정과 검체·임상 맥락을 확인해야 한다"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.b.ed64d1e9f274",
+      "sourceSha256": "ed64d1e9f274d383dbbefc7649ef11ab3877166093135dfa71a5aedbb2522036",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.b.e08c6a433af5",
+      "sourceSha256": "e08c6a433af56cac81f3e087bde24e30c39e16e01d4c42092693d3b5808cdd6a",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.b.48a9d67380e6",
+      "sourceSha256": "48a9d67380e64b7f4d2460ee62de960608c665faabd7cf9512f5d71055099d8f",
+      "sourceLengthUtf16": 168,
+      "annotations": [
+        {
+          "id": "ann.f561e1bd0c0a6b0965f3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 34,
+            "end": 77,
+            "exact": "반대로 영상의 오래된 기관지확장을 현재 균이 모두 만들었다고 확정하지 않는다.",
+            "prefix": "이전 분리의 모든 의미를 지우지는 않는다. ",
+            "suffix": " 임상·구조·미생물의 시간표가 같은 질환을 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.b.265a63e6ed4c",
+      "sourceSha256": "265a63e6ed4c511e254be32e87b4bf463a32cc134b36f5cf618b83c0491d24b2",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.b.67d355a475d4",
+      "sourceSha256": "67d355a475d4254822c675b32d9ce0efc4cadc2a4e5714139be4962893123bac",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.b.b7e02771e88a",
+      "sourceSha256": "b7e02771e88ad6b3b1b2256533062dd280a07281f5b6708cba4ed8cc0f0198d2",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.b.bd0a51374b10",
+      "sourceSha256": "bd0a51374b10c67873903faced21dfbfa800613d9bab85ad844a3af6118f975f",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.p.extra0846.0",
+      "sourceSha256": "a9c5e94b245eb217ae9de30232a7e1207b33c2565204f0004fbd025e8888a254",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.ntm-pulmonary-disease.p.extra0846.1",
+      "sourceSha256": "2b8d4516d53e9ba2b0c1110cfe356e5ce72bd5ba68d0b12dc1bf430fc012563f",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    }
+  ]
+}

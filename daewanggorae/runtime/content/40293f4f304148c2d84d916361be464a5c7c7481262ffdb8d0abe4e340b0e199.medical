@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "molecular-biology",
+  "title": {
+    "ko": "분자생물학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "molecular-biology.chapter.genome",
+      "path": "domains/02-biomedical-sciences/subjects/molecular-biology/chapters/genome/chapter.json"
+    },
+    {
+      "id": "molecular-biology.chapter.dna",
+      "path": "domains/02-biomedical-sciences/subjects/molecular-biology/chapters/dna/chapter.json"
+    },
+    {
+      "id": "molecular-biology.chapter.rna",
+      "path": "domains/02-biomedical-sciences/subjects/molecular-biology/chapters/rna/chapter.json"
+    },
+    {
+      "id": "molecular-biology.chapter.proteins",
+      "path": "domains/02-biomedical-sciences/subjects/molecular-biology/chapters/proteins/chapter.json"
+    },
+    {
+      "id": "molecular-biology.chapter.gene-expression",
+      "path": "domains/02-biomedical-sciences/subjects/molecular-biology/chapters/gene-expression/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "molecular-biology.plan.001",
+    "molecular-biology.plan.002",
+    "molecular-biology.plan.003",
+    "molecular-biology.plan.004",
+    "molecular-biology.plan.005",
+    "molecular-biology.plan.006",
+    "molecular-biology.genome.replication-repair",
+    "molecular-biology.dna.repair-replication",
+    "molecular-biology.rna.transcription-processing",
+    "molecular-biology.rna.translation-code",
+    "molecular-biology.proteins.targeting-quality-control",
+    "molecular-biology.rna.stability-silencing",
+    "molecular-biology.gene-expression.chromatin-regulation",
+    "molecular-biology.gene-expression.cis-trans-enhancers"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.glycerolipid-branch-pairs",
+  "lessonId": "biochemistry.lipids.glycerolipid-synthesis",
+  "title": "글리세로지질의 분지 관계",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "G3P→LPA→PA",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "두 아실 사슬의 골격",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "PA→DAG",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "인산 제거와 분지",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "DAG와 아실CoA",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "TAG 생성",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.glycerolipid-branch-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "순차 아실화",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.glycerolipid-branch-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "PAP/lipin",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.glycerolipid-branch-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "DGAT",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "일부 대표 연결이다. PA의CDP-DAG 분지·머리그룹 교환·장세포MAG경로는본문에서구별한다."
+  ],
+  "sourceImageUsed": false
+}

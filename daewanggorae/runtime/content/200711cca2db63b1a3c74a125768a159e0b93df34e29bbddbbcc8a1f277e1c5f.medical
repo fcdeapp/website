@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.therapy.immunomodulation-targets",
+  "subjectId": "immunology",
+  "chapterId": "therapy",
+  "title": {
+    "ko": "면역조절 약물의 작용 단계와 기능적 결과",
+    "en": "Sites of Immunomodulation and Functional Consequences"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.therapy.immunomodulation-targets.lo.01",
+      "text": "Calcineurin·mTOR·핵산 합성 억제를 구별한다"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.lo.02",
+      "text": "세포 제거와 기능 억제를 비교한다"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.lo.03",
+      "text": "표적 작용·감염 위험·장기 결과를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.a6a13564e46c",
+      "type": "heading",
+      "level": 2,
+      "text": "면역반응의 어느 연결을 바꾸는가"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.0271e598b5d9",
+      "type": "paragraph",
+      "markdown": "면역조절 약물은 항원 인식·공동자극, 세포 내 신호와 사이토카인, 증식·생존과 효과기 실행 등 서로 다른 단계에 작용한다. 같은 T세포 반응 감소라도 원인 단계가 다를 수 있다. 약물군을 모두 면역을 낮추는 한 수치의 강도 순서로 나열하면 효과와 위해를 예측하기 어렵다. 표적과 세포·시간, 남아 있는 다른 경로를 먼저 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.fa45352c38c0",
+      "type": "paragraph",
+      "markdown": "Glucocorticoid는 세포 내 수용체를 통해 여러 전사 프로그램과 염증·이동·대사에 영향을 준다. 광범위한 작용이 장점과 부작용을 함께 만든다. 혈중 세포 수의 변화는 생성·소실뿐 아니라 분포와 이동의 변화로도 생길 수 있다. 혈액 계수가 달라졌다는 사실만으로 모든 조직의 효과기 기능을 같은 비율로 환산할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.6ff14f13c7e3",
+      "type": "heading",
+      "level": 2,
+      "text": "전사와 증식의 다른 단계"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.a12adfd3f930",
+      "type": "paragraph",
+      "markdown": "Cyclosporine은 cyclophilin, tacrolimus는 FKBP12와 복합체를 형성하여 calcineurin 관련 신호를 억제한다. 그 결과 NFAT의 탈인산화·핵 이동과 관련된 전사 반응이 제한될 수 있다. 이는 IL-2를 만드는 신호에 영향을 주는 대표적인 경로다. 약물이 IL-2 수용체를 직접 막는 항체와 같은 작용을 한다고 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.c97ad6bbe183",
+      "type": "paragraph",
+      "markdown": "Sirolimus 등은 FKBP12와의 상호작용을 포함하지만 주요 약리 표적은 mTOR 관련 경로다. 같은 결합 단백질이 관여한다는 이유로 calcineurin 억제와 동일시하지 않는다. 성장·대사와 증식 반응의 조절은 사이토카인의 생성 단계와 구별된다. 효과를 비교할 때는 어떤 자극을 주고 어느 종말점을 측정했는지가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.48ccc50a5501",
+      "type": "heading",
+      "level": 2,
+      "text": "핵산 재료와 공동자극"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.94f5af419eb9",
+      "type": "paragraph",
+      "markdown": "Mycophenolate는 inosine monophosphate dehydrogenase(IMPDH) 관련 purine 합성에 영향을 주어 증식 세포의 반응을 제한한다. 항원 특이 결합을 직접 지우는 방식이 아니라 세포가 확장하는 데 필요한 대사 경로를 다룬다. 분열 검사, 생존과 세포 구성 변화가 각각 평가 대상이다. 다른 세포 유형과 조직에도 영향이 있을 수 있어 림프구 전용 스위치로 단순화하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.d985f2df7fd8",
+      "type": "paragraph",
+      "markdown": "CTLA-4 관련 융합단백질 등은 CD80·CD86의 공동자극 환경을 바꾸는 기전으로 설명할 수 있다. 항원제시 자체와 공동자극은 연결되지만 같은 단계가 아니다. 이미 분화한 효과기·기억 세포와 미경험 세포의 요구가 다르면 같은 차단의 결과가 다를 수 있다. 실제 약물의 적용 범위는 승인·질환별 근거로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.6d960d8c2481",
+      "type": "heading",
+      "level": 2,
+      "text": "세포와 매개체를 선택적으로 다루는 생물학적 제제"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.d958d48151c5",
+      "type": "paragraph",
+      "markdown": "특정 세포 표면 표적을 겨냥한 약물은 해당 세포 집단의 제거·기능 변화를 유도할 수 있다. 표적을 발현하지 않는 분화 세포와 이미 분비된 항체가 같은 속도로 사라지는 것은 아니다. 예를 들어 B세포 수의 감소와 현재 항체 농도·장수명 형질세포 기능은 별도 시간축이다. 표적 발현·실제 세포 감소와 임상 반응을 나누어 추적한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.aacc569d4e42",
+      "type": "paragraph",
+      "markdown": "사이토카인이나 수용체를 차단하는 제제는 특정 회로의 기여를 줄이지만 다른 염증 경로가 남을 수 있다. 분자 결합이 확인되어도 조직 접근성과 중복 신호, 기존 구조 손상이 최종 결과를 제한할 수 있다. 약물 이름에 들어 있는 표적 하나로 모든 효과와 감염 위험을 동일하게 예측하지 않는다. 감염 방어에 대한 정상 역할도 함께 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.d48f976e9089",
+      "type": "heading",
+      "level": 2,
+      "text": "총 면역억제 상태와 임상 결과"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.8a08f1565fb4",
+      "type": "paragraph",
+      "markdown": "감염 위험은 현재 약물 하나뿐 아니라 병용·이전 치료, 장벽 손상과 기저질환·영양·감염 노출의 영향을 받는다. 면역 지표 하나가 낮거나 높다는 사실만으로 모든 기회감염 위험이 정해지지 않는다. 예방·선별과 백신의 적용은 질환·제제별 최신 근거와 환자 상태를 요구한다. 이 절의 기전 설명은 실제 용량·중단·병용 결정의 알고리즘이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.b.f0a26690b606",
+      "type": "paragraph",
+      "markdown": "실험에서는 표적 신호, 증식과 생존, 효과기 기능을 별도로 측정한다. 실제 진료에서는 질환 활동과 장기 기능, 약물 독성과 감염을 함께 평가한다. 염증이 줄었다는 결과와 안전하게 기능을 회복했다는 결과는 다르다. 기전 지식은 한 약물 반응을 다른 약물의 임상 효과로 무리하게 옮기지 않고 비교 가능한 층을 정하는 데 사용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.therapy.immunomodulation-targets.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "세포 제거",
+            "표적 세포의 수를 줄이는 전략"
+          ],
+          [
+            "신호 억제",
+            "수용체 하위 경로 작동을 제한"
+          ],
+          [
+            "매개체 중화",
+            "특정 cytokine 등의 이용 가능성 제한"
+          ],
+          [
+            "임상 결과",
+            "표적 작용과 유효성·유해성을 별도로 평가"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/therapy/sections/immunology.therapy.immunomodulation-targets.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.therapy.immunomodulation-targets.001"
+  ],
+  "relatedLessons": [
+    "immunology.methods.immunoassay-interference",
+    "immunology.methods.biomarker-context-longitudinal"
+  ]
+}

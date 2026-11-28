@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.congenital.atrial-septal-defect",
+  "subjectId": "cardiology",
+  "chapterId": "congenital",
+  "title": {
+    "ko": "심방중격결손과 우심장 용적 부하",
+    "en": "Atrial Septal Defect and Right Heart Volume Load"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.lo.01",
+      "text": "심방 단락과 우심실 순응도를 연결한다"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.lo.02",
+      "text": "결손 유형과 폐정맥 연결을 구별한다"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.lo.03",
+      "text": "우심장 확대와 폐쇄 후 변화를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.019c8c73ab82",
+      "type": "heading",
+      "level": 2,
+      "text": "낮은 압력 구획 사이의 흐름"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.d7f43abf4021",
+      "type": "paragraph",
+      "markdown": "심방중격결손(atrial septal defect, ASD)은 심방 사이의 비정상적 연결이다. 흔한 이차공형 결손뿐 아니라 일차공 부위와 정맥동 부위의 결손 등은 위치와 동반 구조가 다르다. 일차공 결손은 방실중격과 방실판막의 이상을 함께 평가해야 하며, 정맥동 부위에서는 비정상 폐정맥 연결을 확인하는 것이 중요하다. 심방의 구멍이라는 이름만으로 모든 형태의 검사와 폐쇄 방법이 같아지는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.thorax.heart.8aa996b1"
+      ]
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.09c2e783793f",
+      "type": "paragraph",
+      "markdown": "단락은 심방 압력차뿐 아니라 양심실의 이완과 충만 특성에도 영향을 받는다. 보통 오른심실이 더 잘 받아들이는 조건에서는 좌우단락이 생겨 오른심방·오른심실과 폐순환의 유량이 증가한다. 왼심실로 들어올 혈액 일부가 우회하는 결과도 생긴다. 나이가 들며 왼심실의 이완이 나빠지거나 폐혈관 저항이 변하면 같은 결손을 통한 흐름도 달라질 수 있다. 구멍의 직경을 유량과 일대일 대응시키지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.940bd044756d",
+      "type": "heading",
+      "level": 2,
+      "text": "증상과 진찰의 연결"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.b7a91817fe50",
+      "type": "paragraph",
+      "markdown": "작은 결손은 오랫동안 뚜렷한 증상이 없을 수 있고 큰 단락에서는 운동 능력 저하와 피로·호흡곤란이 나타날 수 있다. 오른심방의 확대와 장기적인 전기적 재형성은 심방성 부정맥의 배경이 된다. 늦게 발견된 환자에서 두근거림이 첫 단서일 수 있다. 호흡곤란이 모두 결손 때문이라고 단정하기보다 판막과 폐질환, 심실 이완 및 빈혈 같은 동반 원인을 함께 살핀다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.787964de15be",
+      "type": "paragraph",
+      "markdown": "청진에서 들리는 수축기 박출성 잡음은 흔히 결손 자체를 지나가는 소리보다 증가한 폐동맥판 통과 유량과 관련된다. 제2심음의 분열과 호흡 반응은 오른심실 박출 및 충만의 변화를 이해하는 단서다. 전형적인 청진 소견이 없다고 결손을 모두 배제하지는 않는다. 잡음의 위치와 시기, 부하를 받은 심장방을 연결하여 설명하면 단순 암기보다 병태생리를 이해하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.b8fbd251dba7",
+      "type": "heading",
+      "level": 2,
+      "text": "영상은 구멍과 결과를 함께 본다"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.e338036996a8",
+      "type": "paragraph",
+      "markdown": "심초음파에서는 중격의 실제 연결과 주변 가장자리, 단락 방향뿐 아니라 오른심실의 크기와 기능을 평가한다. 중격의 얇은 부위가 한 단면에서 보이지 않는 영상 결손을 실제 구멍으로 오인하지 않도록 여러 단면을 대조한다. 해부학적 가장자리는 기구로 닫을 수 있는지 판단할 때 중요하다. 결손과 가까운 대정맥·방실판막·대동맥 및 폐정맥의 위치가 접근의 이득과 위해를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.a01390b51d57",
+      "type": "paragraph",
+      "markdown": "비정상 폐정맥 환류는 우심실 용적 부담을 추가할 수 있다. 오른심실 확대가 결손 크기에 비해 커 보이거나 연결이 잘 보이지 않으면 다른 영상으로 폐정맥의 전체 경로와 유량을 확인할 수 있다. 조영 기포 검사는 우좌 이동을 보여 줄 수 있지만 검사 당시 압력과 유발 조건에 의존한다. 작은 우좌 이동이 관찰되었다는 사실과 장기적인 좌우단락의 크기를 동일한 결과로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.c743a409eac3",
+      "type": "heading",
+      "level": 2,
+      "text": "폐쇄 전후의 생리"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.7926a96c1e1f",
+      "type": "paragraph",
+      "markdown": "중재의 목표는 적절한 환자에서 만성 용적 부담과 그 결과를 줄이는 데 있다. 결손 형태와 오른심실의 반응, 폐혈관 상태 및 다른 질환을 함께 평가한다. 심한 폐혈관병에서의 우좌단락이나 특정 복합 해부학은 단순한 폐쇄 틀과 다르다. 왼심실이 경직된 환자에서는 결손이 왼심방의 압력을 낮추는 통로로 작용할 수 있어 닫은 뒤 왼심장 충만압이 상승할 가능성도 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.b.f9062f98f66a",
+      "type": "paragraph",
+      "markdown": "폐쇄 뒤 우심실 용적이 줄어드는 속도와 증상·부정맥의 변화는 같지 않을 수 있다. 오랜 재형성과 연령, 기존 심방 부정맥과 폐혈관 변화는 추적의 이유가 된다. 해부학적으로 결손이 닫혔다는 결과와 모든 장기 위험의 소멸은 별도로 평가한다. 수술·기구의 종류와 잔여 단락, 혈전과 인접 구조 및 리듬에 관한 기록을 남기면 이후 진료에서도 이전의 연결과 개입을 정확히 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.h.extra0843",
+      "type": "heading",
+      "level": 2,
+      "text": "난원공개존과의 구별"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.p.extra0843.0",
+      "type": "paragraph",
+      "markdown": "난원공개존(patent foramen ovale, PFO)은 태아 심방 사이의 판막성 통로가 출생 뒤 완전히 융합하지 않은 상태로, 조직 자체가 결손된 전형적인 이차공형 ASD와 구별한다. 일시적으로 오른심방 압력이 높아지면 우좌 이동이 관찰될 수 있지만 모든 PFO가 지속적인 큰 좌우단락과 오른심실 용적 부하를 만드는 것은 아니다. 기포가 통과했다는 결과와 장기 과혈류를 같은 진단으로 처리하지 않는다. 임상에서는 뇌 사건의 다른 원인과 연결의 특성, 연령과 동반 위험을 함께 평가한다. 결손과 통로의 형태를 정확히 기술해야 증거의 대상을 다른 질환에 잘못 적용하지 않을 수 있다."
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.table0843",
+      "type": "table",
+      "data": {
+        "title": "연결·기전·검사 대상의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "ASD",
+            "중격의 실제 결손과 유형"
+          ],
+          [
+            "PFO",
+            "판막성 태아 통로의 잔존"
+          ],
+          [
+            "부담",
+            "우심장 용적과 폐혈류"
+          ],
+          [
+            "폐정맥",
+            "비정상 연결 동반 여부"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.anatomy3d0843",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.thorax.heart.8aa996b1"
+    },
+    {
+      "id": "cardiology.congenital.atrial-septal-defect.limits0843",
+      "type": "clinicalPearl",
+      "markdown": "정상 심방·심실의 위치와 재순환 경로를 생각하기 위한 해부학 문맥이다. 중격결손·단락 통로·혈류·심장방 확장·환자별 선천성 또는 수술 구조를 이 정상 정적 모델로 표현하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/congenital/sections/cardiology.congenital.atrial-septal-defect.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.congenital.atrial-septal-defect.001"
+  ],
+  "relatedLessons": [
+    "cardiology.congenital.shunt-physiology",
+    "cardiology.congenital.ventricular-septal-defect"
+  ]
+}

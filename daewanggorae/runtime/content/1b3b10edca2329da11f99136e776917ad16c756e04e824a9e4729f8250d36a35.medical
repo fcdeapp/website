@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.respiratory.diffusion-oxygen",
+  "subjectId": "physiology",
+  "chapterId": "respiratory",
+  "title": {
+    "ko": "확산능·모세혈관 통과와 산소함량의 혼합",
+    "en": "Diffusion Capacity and Oxygen Content Mixing"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.lo.01",
+      "text": "Fick 확산 법칙의 면적·두께·분압 차를 구별한다"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.lo.02",
+      "text": "확산 제한과 관류 제한의 의미를 설명한다"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.lo.03",
+      "text": "혈액의 혼합을 분압 평균이 아닌 함량 수지로 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.885b6dbd9b91",
+      "type": "heading",
+      "level": 2,
+      "text": "장벽을 통과하는 가스"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.7d1627c3eb99",
+      "type": "paragraph",
+      "markdown": "폐포 공기와 혈액 사이의 기체 이동은 분압 차와 얇은 장벽의 물리적 성질에 의존한다. 단순한 균일 막의 정상상태에서 전달률은 면적 A, 분압 차 ΔP 및 기체의 용해도·확산 특성에 비례하고 두께 T에 반비례한다. 같은 산소분압 차라도 면적이 줄거나 두께가 증가하면 전달이 제한될 수 있다. 여기서 농도 기울기에 사용하는 확산계수와 분압 차에 사용하는 용해도를 포함한 유효 계수는 정의가 다르므로 기호가 같다는 이유만으로 단위를 섞지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.f628412de5a2",
+      "type": "paragraph",
+      "markdown": "막의 두께만 두 배로 하고 나머지를 고정한 모형은 전달률을 절반으로, 면적만 두 배로 하면 두 배로 예측한다. 면적이 절반이고 두께가 두 배이면 전달률은 원래의4분의1이다. 이 비율은 법칙의 구조를 이해하기 위한 비교이며 실제 폐의 절대 확산능을 그 값만으로 결정하지 않는다. 실제 가스교환에서는 혈관 내 이동과 헤모글로빈의 반응, 지역별 분압 차도 함께 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.7ad19c43ccdf",
+      "type": "heading",
+      "level": 2,
+      "text": "모세혈관을 따라 달라지는 분압"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.7f971deac917",
+      "type": "paragraph",
+      "markdown": "폐모세혈관으로 들어온 혈액의 산소분압은 폐포보다 낮아 산소가 혈액으로 이동한다. 산소가 들어오면서 혈액의 분압이 올라가므로 모세혈관 전체에서 ΔP가 일정하게 유지되는 것은 아니다. 혈액이 폐포 기체와 평형에 가까워진 뒤에는 장벽을 통한 추가 산소 이동의 원동력이 작아진다. 따라서 전달률을 구할 때 처음의 폐포·혼합정맥 분압 차를 모세혈관 끝까지 그대로 적용하는 계산에는 한계가 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.e56a629f87de",
+      "type": "paragraph",
+      "markdown": "관류 제한(perfusion limitation)은 충분히 평형이 이루어지는 조건에서 더 많은 가스를 전달하려면 새 혈액의 유입을 늘리는 것이 중요하다는 뜻이다. 확산 제한(diffusion limitation)은 통과 시간 안에 평형에 충분히 도달하지 못하여 장벽과 반응 과정이 전달을 제한하는 상황을 가리킨다. 두 표현은 어떤 기체의 영구적인 이름표만은 아니다. 같은 산소도 운동·낮은 흡입 산소·장벽 이상 등의 조건에서 평형 도달 여유가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.b6c7a23b1e8b",
+      "type": "heading",
+      "level": 2,
+      "text": "혈류와 운동"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.f33f7efcc620",
+      "type": "paragraph",
+      "markdown": "운동 중 심박출량이 증가하면 개별 혈액이 모세혈관에 머무는 시간이 짧아질 수 있다. 동시에 폐혈관의 모집과 확장, 유효 교환 면적의 변화가 일어나 가스교환을 돕는다. 따라서 심박출량 증가가 반드시 동맥 산소 저하를 일으킨다고 말할 수 없다. 정상 폐의 여유와 병든 폐의 여유가 다르다는 점이 중요하다. 휴식 검사에서 드러나지 않던 전달 문제가 운동 중 부하에서 나타날 수 있는 이유도 이와 연결된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.5d2f31ba6d95",
+      "type": "paragraph",
+      "markdown": "폐기종의 유효 교환 면적 감소와 간질성 질환의 장벽 변화는 서로 다른 구조적 출발점이다. 그러나 실제 질환에서는 혈관 침범·V/Q 불균형·폐용적 변화 등이 겹친다. 확산능 저하를 곧바로 막 두께 증가 하나로 해석해서는 안 된다. 환자의 헤모글로빈 농도나 측정된 폐포용적, 검사 수행 상태도 수치에 영향을 줄 수 있다. 검사 이름이 확산능이라고 해서 모든 변화가 순수한 막 확산만을 반영하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.d1d64a8f85c0",
+      "type": "heading",
+      "level": 2,
+      "text": "일산화탄소 확산능"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.1267281fb320",
+      "type": "paragraph",
+      "markdown": "일산화탄소(CO)는 헤모글로빈과 강하게 결합하여 모세혈관 기체분압이 낮게 유지되기 쉬운 성질을 검사에 이용한다. DLCO는 실제로 일산화탄소 이동을 이용하여 평가하는 확산능 지표이며 산소의 이동량을 직접 측정한 값은 아니다. 막을 통과하는 과정과 혈액 쪽 반응 능력이 모두 관여한다. CO 노출·흡연 관련 상태·빈혈·폐포 출혈 등은 서로 다른 방식으로 해석을 바꿀 수 있어 측정 조건과 병력을 함께 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.910537e72b3a",
+      "type": "paragraph",
+      "markdown": "정상상태의 막 모형에서 얻은 D와 실제 임상 DLCO의 단위·측정법을 구분한다. 단순 그래프에서 두께가 두 배이면 능력이 절반이 된다는 교육적 관계를 실제 검사값이 정확히 절반이 되는 규칙으로 전용하지 않는다. 여러 폐 단위가 불균일하게 참여하고 헤모글로빈과 폐혈관의 반응도 변한다. 정상화된 비율 도표는 기전의 방향을 비교하기 위한 것이며 환자의 진단 기준이나 치료 선택을 만드는 계산기는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.fc361dabedf1",
+      "type": "heading",
+      "level": 2,
+      "text": "헤모글로빈과 용해 산소"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.da365a259af2",
+      "type": "paragraph",
+      "markdown": "혈액 산소함량은 헤모글로빈 결합 산소와 혈장에 용해된 산소를 더하여 근사한다. 예시 계수1.34 mL O₂/g Hb, 용해계수0.0031 mL O₂/dL/mmHg를 사용하면 CaO₂≈1.34×Hb×SaO₂+0.0031×PaO₂이다. Hb는 g/dL, SaO₂는0에서1 사이의 분율로 넣는다. 포화도를97이라는 백분율 숫자로 그대로 넣으면 결합 산소를100배 과대평가한다. 계수의 선택과 단위는 계산 예시마다 일관되어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.06b7cedc167d",
+      "type": "paragraph",
+      "markdown": "헤모글로빈이 줄면 PaO₂가 유지되어도 결합하여 운반할 수 있는 산소량은 감소할 수 있다. 반대로 같은 함량 변화가 산소해리곡선의 평탄한 부위와 가파른 부위에서 다른 분압 변화로 나타날 수 있다. 산소분압은 용해 산소의 상태와 결합 평형을 반영하며 전체 산소 저장량과 동일한 단위가 아니다. 조직 산소공급은 산소함량에 혈류량을 곱한 것과 관련되므로 혈액가스의 분압 한 값으로 충분하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.bd2d7a0cc1e9",
+      "type": "heading",
+      "level": 2,
+      "text": "두 혈류가 섞일 때"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.a100766d6966",
+      "type": "paragraph",
+      "markdown": "혈액이 섞일 때 보존되는 것은 각 흐름이 운반한 산소량이다. 두 흐름의 혼합 함량은 유량으로 가중한 함량 평균으로 계산한다. 분압은 헤모글로빈 결합의 비선형성 때문에 같은 방식으로 단순 평균할 수 없다. 예를 들어 함량20 mL/dL의 혈액80%와 함량15 mL/dL의 혈액20%를 섞으면19 mL/dL이다. 이 결과를19 mmHg나 평균 산소분압으로 부르면 단위와 의미가 모두 틀린다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.b.05c5ff8d7c03",
+      "type": "paragraph",
+      "markdown": "이 함량 수지는 단락 혈류가 전체 산소화에 미치는 영향을 이해하는 데 유용하다. 하지만 실제 단락률을 산출하려면 폐모세혈관 말단·동맥·혼합정맥 산소함량의 적절한 추정이나 측정이 필요하다. 단순한 두 구획 모형은 연속적인 V/Q 분포와 산소 투여에 대한 실제 반응을 완전히 담지 않는다. 확산·관류·함량·혼합을 단계별로 나누어 계산하면 하나의 저산소혈증에서 여러 기전이 겹친다는 사실을 더 정확하게 해석할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.diagram.oxygen-content-mixture",
+      "type": "diagram",
+      "diagramRef": "diagram.oxygen-content-mixture",
+      "path": "diagrams/diagram.oxygen-content-mixture.svg",
+      "alt": "두 혈류의 비율과 혼합 산소함량의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.table.comparison",
+      "type": "table",
+      "data": {
+        "title": "확산과 산소운반의 구별",
+        "columns": [
+          "양",
+          "관계",
+          "혼동 주의"
+        ],
+        "rows": [
+          [
+            "막 전달률",
+            "면적·분압차에 비례, 두께에 반비례",
+            "임상 DLCO의 모든 변화를 막 두께로 설명하지 않음"
+          ],
+          [
+            "산소함량",
+            "Hb결합+용해 산소",
+            "분압과 단위가 다름"
+          ],
+          [
+            "혼합함량",
+            "혈류 가중 평균",
+            "분압의 단순 평균 아님"
+          ]
+        ],
+        "notes": "분압·함량·전달률은 단위가 다르며 환자 자료를 서로 대체하지 않는다."
+      }
+    },
+    {
+      "id": "physiology.respiratory.diffusion-oxygen.equation.core",
+      "type": "equation",
+      "latex": "C_{mix}=\\frac{Q_1C_1+Q_2C_2}{Q_1+Q_2}",
+      "variables": {
+        "Cmix": "혼합 산소함량 (mL/dL)",
+        "Q1": "첫 혈류 유량",
+        "Q2": "둘째 혈류 유량",
+        "C1": "첫 혈류 함량 (mL/dL)",
+        "C2": "둘째 혈류 함량 (mL/dL)"
+      },
+      "assumptions": [
+        "혼합 과정에서 산소 소비·추가 교환을 무시",
+        "분압의 산술평균 공식이 아니다."
+      ]
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/respiratory/sections/physiology.respiratory.diffusion-oxygen.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.physiology.respiratory.diffusion-oxygen.001",
+    "question.physiology.respiratory.diffusion-oxygen.002"
+  ],
+  "keyFacts": [
+    "원래의1/4"
+  ],
+  "relatedLessons": [
+    "physiology.respiratory.mechanics-compliance",
+    "physiology.respiratory.alveolar-equation-deadspace"
+  ]
+}

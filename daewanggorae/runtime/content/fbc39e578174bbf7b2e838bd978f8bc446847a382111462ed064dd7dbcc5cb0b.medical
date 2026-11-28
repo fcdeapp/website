@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "urology.bladder.storage-voiding",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "urology.bladder.storage-voiding.b.ebc5007f2519",
+      "sourceSha256": "ebc5007f2519f442272b305b2295727bd8cb9445ba652163ab06cfcfeab812df",
+      "sourceLengthUtf16": 221,
+      "annotations": [
+        {
+          "id": "ann.31c41c69afc4146bba81",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 184,
+            "end": 221,
+            "exact": "방광 용적이 크다는 사실이 곧 정상 저장 기능을 의미하지는 않는다.",
+            "prefix": " 순응도(compliance)로 설명한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "urology.bladder.storage-voiding.b.155e32a5bb20",
+      "sourceSha256": "155e32a5bb204619cf30deb83ee28c1862e53199434295aa4a23c5c7ddac6d55",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.99df2afa3cca5573e757",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 86,
+            "end": 89,
+            "exact": "당뇨병",
+            "prefix": "도 빈뇨와 절박감을 만들 수 있다. 반대로 ",
+            "suffix": "성 삼투이뇨나 수분 섭취 증가에서는 총소변량"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        },
+        {
+          "id": "ann.c394f5fda671979bc135",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 132,
+            "end": 163,
+            "exact": "빈뇨라는 증상과 다뇨라는 소변량의 증가는 구분해야 한다.",
+            "prefix": " 총소변량이 많아져 자주 배뇨할 수 있다. ",
+            "suffix": " 배뇨일지는 시간과 배뇨량, 절박감 및 누출"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "urology.bladder.storage-voiding.b.2547a3124795",
+      "sourceSha256": "2547a3124795f1551d8704cc5116c60e3786350f5ddbfc34ae10e9a541df8648",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "urology.bladder.storage-voiding.b.5f5290fc7def",
+      "sourceSha256": "5f5290fc7defd6385d991498f40c66e13c1fa15b6dcd010bb45d40bdb88b3bff",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "urology.bladder.storage-voiding.b.78534d36c692",
+      "sourceSha256": "78534d36c692764136da9722fcbe2eb8371b1c7f365266bec414b4a0e28691c4",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "urology.bladder.storage-voiding.b.7e50d3c8bf51",
+      "sourceSha256": "7e50d3c8bf51c7a9b2e513c79bc9b9dcb7d10314e8e1b897008d5180a3933cf5",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "urology.bladder.storage-voiding.b.50dcd502eb92",
+      "sourceSha256": "50dcd502eb92ab6054ffe00853584d940066e78ff6b529a81bb7996693c7430f",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.f6de503a2514847b2338",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 172,
+            "exact": "과민성방광 증후군과 검사상 배뇨근과활동도 서로 구분한다.",
+            "prefix": "과 출구의 상태와 일치하지 않을 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "urology.bladder.storage-voiding.b.27dfe45d0ddb",
+      "sourceSha256": "27dfe45d0ddbcc7cdef2dfdbdf5283183f9be3d3218f20e5e12c20c36d4036ae",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    }
+  ]
+}

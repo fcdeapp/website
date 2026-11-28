@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.innate.sensor-adaptor-networks",
+  "subjectId": "immunology",
+  "chapterId": "innate",
+  "title": {
+    "ko": "핵산 감지와 선천면역 신호의 분기",
+    "en": "Nucleic Acid Sensing and Innate Signaling Branches"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.lo.01",
+      "text": "TLR·RLR·cGAS의 위치와 어댑터를 구별한다"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.lo.02",
+      "text": "인터페론 생성과 반응을 분리한다"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.lo.03",
+      "text": "우회 자극 실험으로 신호 결함을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.d6e448ccb447",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 핵산도 위치가 의미를 바꾼다"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.bc0cc30af346",
+      "type": "paragraph",
+      "markdown": "미생물과 숙주는 모두 핵산을 가지므로 핵산의 존재만으로 위험을 구별할 수 없다. 수용체가 있는 구획, 핵산의 형태와 가공 상태, 비정상적 노출이 함께 인식에 기여한다. 엔도솜의 일부 Toll-like receptor(TLR)는 내부로 들어온 핵산을 감지하고, 세포질의 RIG-I·MDA5 같은 RIG-I-like receptor(RLR)는 다른 핵산 특징에 반응한다. 감지 위치의 분리는 정상 자기 성분에 대한 과도한 반응을 제한하는 한 방법이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.decaa0f3402f",
+      "type": "paragraph",
+      "markdown": "TLR3는 대표적으로 TRIF 어댑터를 사용하고 여러 다른 TLR은 MyD88 경로를 이용한다. TLR4는 위치와 조건에 따라 두 경로를 모두 활용한다. 따라서 MyD88가 없으면 모든 TLR 반응이 같은 정도로 소실된다는 도식은 부정확하다. 어댑터 뒤의 kinase와 전사인자는 일부 겹치므로 서로 다른 수용체 자극이 비슷한 최종 산물을 만들 수도 있다. 출력이 같다는 사실이 입력 경로가 같다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.fcf497d4e46d",
+      "type": "heading",
+      "level": 2,
+      "text": "RNA와 DNA의 세포질 감지"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.71089bf069ca",
+      "type": "paragraph",
+      "markdown": "RIG-I와 MDA5의 신호는 mitochondrial antiviral-signaling protein(MAVS)을 통해 연결된다. 이들은 모두 RNA 감지에 관여하지만 선호하는 핵산 특징과 반응 조건은 동일하지 않다. 세포질 DNA 감지 효소 cGAS는 cyclic GMP–AMP(cGAMP)를 만들고, cGAMP는 STING 신호를 활성화할 수 있다. cGAS는 DNA를 감지하는 단계이고 STING은 하위 신호를 전달하는 단계이므로 서로 같은 수용체 이름처럼 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.7a213708ca75",
+      "type": "paragraph",
+      "markdown": "TBK1과 IRF3 등을 통한 경로는 type I interferon 생성에 연결되고 NF-κB 관련 반응은 염증성 유전자 발현에 기여한다. 이는 대표적인 신호망이며 세포 유형과 자극 강도에 따라 출력이 달라진다. 자기 DNA가 비정상적으로 노출되거나 제거가 불량하면 감염 없이도 핵산 감지 경로가 지속될 수 있다. 항바이러스 방어와 자기염증의 연결은 같은 경보 체계의 위치·시간 조절로 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.535f7d6eda45",
+      "type": "heading",
+      "level": 2,
+      "text": "인터페론을 만드는 것과 듣는 것"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.a43456e82670",
+      "type": "paragraph",
+      "markdown": "분비된 type I interferon은 표적 세포의 수용체를 통해 JAK–STAT 관련 신호를 유도하고 interferon-stimulated gene(ISG)의 발현을 바꾼다. 생산 세포의 감지 경로와 반응 세포의 수용체·신호 경로는 다른 단계다. 감염 자극 뒤 ISG가 낮다면 interferon 생성 부족, 수용체 반응 결함과 세포 상태 등 여러 원인이 가능하다. 농도와 신호를 각각 측정해야 원인을 좁힐 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.0010cc510819",
+      "type": "paragraph",
+      "markdown": "실험에서 DNA 자극에는 반응하지 않지만 직접 전달한 cGAMP에 반응한다면 cGAS 쪽 또는 DNA 전달·접근의 문제를 검토할 수 있다. cGAMP에도 반응하지 않지만 외부 interferon에는 반응한다면 생성 경로의 더 아래 단계와 수용체 반응을 나누어 볼 수 있다. 다만 자극이 세포 안으로 들어가는 효율과 독성이 같아야 한다. 우회 자극의 복원은 경로 위치를 좁히는 근거이지 특정 유전자 변이의 단독 확진이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.6435135c5cd4",
+      "type": "heading",
+      "level": 2,
+      "text": "지속 반응의 비용과 검사 설계"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.9ef78d8504ce",
+      "type": "paragraph",
+      "markdown": "ISG 발현은 항바이러스 상태의 단서지만 특정 바이러스의 존재를 직접 검출하는 검사는 아니다. 염증성 질환과 약물, 세포 구성 변화도 결과에 영향을 준다. Type I과 type II interferon은 수용체와 신호의 세부가 다르며 일부 표적 유전자가 겹친다고 같은 경로로 취급하지 않는다. 혈중 서명과 조직 내 반응도 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.b.d860981f7474",
+      "type": "paragraph",
+      "markdown": "신호를 검증할 때 총 단백질과 인산화, 핵 이동과 유전자 발현, 분비 단백질을 시간 순서로 측정한다. 뒤의 지표가 감소했더라도 앞의 신호가 정상일 수 있다. 정상 대조·비자극 대조·전달 시약 대조와 세포 생존 검사를 함께 두면 면역 결함과 실험 조건을 분리하는 데 도움이 된다. 여러 단계의 결과를 연결해야 한 개의 양성 또는 음성 표지보다 정밀한 기전 설명이 가능하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.sensor-adaptor-networks.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "TLR3",
+            "TRIF 관련 신호의 대표 예"
+          ],
+          [
+            "여러 다른 TLR",
+            "MyD88 관련 신호; TLR4는 두 경로 활용"
+          ],
+          [
+            "RIG-I·MDA5",
+            "RNA 감지와 MAVS 연결"
+          ],
+          [
+            "cGAS·STING",
+            "DNA 감지→cGAMP 생성→하위 신호"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/innate/sections/immunology.innate.sensor-adaptor-networks.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.innate.sensor-adaptor-networks.001"
+  ],
+  "relatedLessons": [
+    "immunology.organization.lymphoid-trafficking",
+    "immunology.presentation.class-i-processing"
+  ]
+}

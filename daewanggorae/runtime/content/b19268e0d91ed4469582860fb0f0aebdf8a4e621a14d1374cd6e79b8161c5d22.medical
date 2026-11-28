@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.innate.complement-functional-tests",
+  "subjectId": "immunology",
+  "chapterId": "innate",
+  "title": {
+    "ko": "보체 경로의 기능검사와 단계별 해석",
+    "en": "Functional Complement Testing and Pathway Localization"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.innate.complement-functional-tests.lo.01",
+      "text": "CH50·AH50이 공유하는 단계를 설명한다"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.lo.02",
+      "text": "단백질 농도와 기능을 구별한다"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.lo.03",
+      "text": "결핍·소모·검체 영향을 나누어 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.innate.complement-functional-tests.b.de7a514c8aee",
+      "type": "heading",
+      "level": 2,
+      "text": "농도와 연쇄 기능은 다른 질문이다"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.3caf4c4e8c62",
+      "type": "paragraph",
+      "markdown": "보체는 여러 단백질이 순서대로 활성화되어 옵소닌·염증 신호와 막공격복합체를 만드는 반응망이다. 특정 단백질의 혈중 농도는 그 성분이 얼마나 검출되는지를 알려 주지만, 정상적인 효소 활성과 결합·절단을 보증하지는 않는다. 농도가 보존된 기능 결함과 실제 단백질 양의 부족은 서로 다른 원인이다. 여러 단계를 요구하는 기능검사와 개별 성분의 농도를 함께 사용하면 가능한 이상 위치를 좁힐 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.7d2dafb7cfa1",
+      "type": "paragraph",
+      "markdown": "CH50은 고전 경로의 시작부터 공통 말단 경로까지 작동하는 능력을, AH50은 대체 경로와 그 뒤의 공통 경로를 평가하는 대표 검사다. 이름에 있는 50은 전형적인 용혈성 측정의 절반 반응과 관련되며, 실제 보고 단위와 방법은 검사실별로 다를 수 있다. 두 검사를 같은 정상 단백질 농도의 다른 이름으로 취급하지 않는다. 렉틴 경로는 이 두 결과만으로 충분히 평가되지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.0aef0114102e",
+      "type": "heading",
+      "level": 2,
+      "text": "공유 부품을 이용한 위치 추론"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.3a892f0eac6d",
+      "type": "paragraph",
+      "markdown": "CH50이 낮고 AH50이 보존되면 고전 경로의 초기 성분이나 그 경로의 소모 등을 검토한다. 반대로 AH50만 낮으면 대체 경로 성분과 조절 인자의 문제를 우선 좁힐 수 있다. 두 경로가 모두 낮으면 공통 단계의 결함, 광범위한 소모나 억제, 검체 문제까지 가능하다. 이 분기는 후속 검사를 정하는 도구이며 한 결과 조합이 특정 유전자 진단을 완성하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.5ad3e656c672",
+      "type": "paragraph",
+      "markdown": "두 기능이 모두 보존되어도 모든 보체 이상이 배제되는 것은 아니다. 렉틴 경로, 부분 결함과 검사에서 포착하지 못하는 조절 이상을 고려할 수 있다. 어떤 자극과 종말점을 쓰는 검사인지가 중요하다. 혈중에서 정상으로 측정된 기능이 특정 조직 표면에서의 조절까지 완전히 대표하지는 않는다. 임상 표현과 기능검사의 해상도를 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.0e3853eca267",
+      "type": "heading",
+      "level": 2,
+      "text": "생성·소모·약물의 영향"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.bbe8658682f1",
+      "type": "paragraph",
+      "markdown": "낮은 C3·C4는 생성 부족뿐 아니라 활성화에 의한 소모와 분포 변화의 결과일 수 있다. 여러 성분이 함께 낮으면 공통 소모나 검체 취급을 검토하지만, 그 패턴만으로 선천성 결함을 완전히 배제할 수는 없다. 활성화 산물과 기능, 이전 결과를 함께 보면 원인 가설을 나누는 데 도움이 된다. 급성기 생성 증가가 소모의 일부를 가릴 수도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.36da77b15c26",
+      "type": "paragraph",
+      "markdown": "C5 등 특정 단계를 막는 약물이 투여되면 기능검사가 낮아지는 것이 의도한 약리 효과일 수 있다. 치료 전 결과와 약물·채혈 시점을 확인하지 않으면 약물로 생긴 억제를 새 유전성 결핍으로 오인할 수 있다. 반대로 기능 억제가 확인되었다는 사실과 실제 질환 조절이 충분하다는 결과는 다르다. 표적 차단과 장기 회복을 별도로 추적한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.f5ca24c6bfaa",
+      "type": "heading",
+      "level": 2,
+      "text": "검체에서도 반응이 변할 수 있다"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.7449907f6a22",
+      "type": "paragraph",
+      "markdown": "보체 성분과 활성화 산물은 채혈 뒤의 온도·시간, 분리와 냉동·해동의 영향을 받는다. 체내 활성과 시험관에서 생긴 활성화를 구별해야 하므로 검사 종류에 맞는 취급 조건이 필요하다. 서로 다른 검사실의 구체적인 운송 지시가 다를 수 있어 한 기관의 온도와 시간을 모든 검사에 적용하지 않는다. 농도용 검체와 기능·활성화 산물용 검체의 요구사항을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.b.9ac69092abd2",
+      "type": "paragraph",
+      "markdown": "예상과 다른 결과가 나왔을 때는 임상 위험과 검체 품질을 함께 검토한다. 확인 검사와 개별 성분·기능 평가, 필요 시 유전 분석으로 원인을 좁힐 수 있다. 반복 채혈이 가능하다는 이유로 중증 감염이나 장기 손상의 평가를 늦추지는 않는다. 보체검사는 임상 판단을 구성하는 자료이며, 경로를 읽는 논리와 실제 진료의 긴급성은 함께 고려되어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.diagram.immune-specimen-loss-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-specimen-loss-toy",
+      "path": "diagrams/diagram.immune-specimen-loss-toy.svg",
+      "alt": "시험관 내 손실의 가상 민감도의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.innate.complement-functional-tests.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "CH50",
+            "고전경로부터 말단 반응까지의 기능을 통합"
+          ],
+          [
+            "AH50",
+            "대체경로부터 말단 반응까지의 기능을 통합"
+          ],
+          [
+            "농도 검사",
+            "해당 성분의 양; 전체 경로 기능과 구별"
+          ],
+          [
+            "검체·약물",
+            "체외 활성화·소실과 보체 억제 치료의 영향 확인"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/innate/sections/immunology.innate.complement-functional-tests.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.innate.complement-functional-tests.001",
+    "question.immunology.innate.complement-functional-tests.002"
+  ],
+  "relatedLessons": [
+    "immunology.innate.complement-surface-regulation"
+  ]
+}

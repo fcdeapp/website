@@ -1,0 +1,2278 @@
+{
+  "diagrams": [
+    {
+      "id": "diagram.raas",
+      "path": "diagrams/diagram.raas.json",
+      "svgPath": "diagrams/diagram.raas.svg",
+      "lessonId": "physiology.renal.raas"
+    },
+    {
+      "id": "diagram.tca",
+      "path": "diagrams/diagram.tca.json",
+      "svgPath": "diagrams/diagram.tca.svg",
+      "lessonId": "biochemistry.metabolism.tca"
+    },
+    {
+      "id": "diagram.mhc",
+      "path": "diagrams/diagram.mhc.json",
+      "svgPath": "diagrams/diagram.mhc.svg",
+      "lessonId": "immunology.antigen.presentation"
+    },
+    {
+      "id": "diagram.apoptosis",
+      "path": "diagrams/diagram.apoptosis.json",
+      "svgPath": "diagrams/diagram.apoptosis.svg",
+      "lessonId": "pathology.cell.injury-death"
+    },
+    {
+      "id": "diagram.fetal-circulation",
+      "path": "diagrams/diagram.fetal-circulation.json",
+      "svgPath": "diagrams/diagram.fetal-circulation.svg",
+      "lessonId": "neonatology.transition.circulation"
+    },
+    {
+      "id": "diagram.pituitary-axis",
+      "path": "diagrams/diagram.pituitary-axis.json",
+      "svgPath": "diagrams/diagram.pituitary-axis.svg",
+      "lessonId": "endocrinology.pituitary.feedback"
+    },
+    {
+      "id": "diagram.oxygen-content",
+      "path": "diagrams/diagram.oxygen-content.json",
+      "svgPath": "diagrams/diagram.oxygen-content.svg",
+      "lessonId": "emergency-medicine.resuscitation.oxygen-delivery"
+    },
+    {
+      "id": "diagram.bayes-positive",
+      "path": "diagrams/diagram.bayes-positive.json",
+      "svgPath": "diagrams/diagram.bayes-positive.svg",
+      "lessonId": "internal-medicine.diagnosis.probability"
+    },
+    {
+      "id": "diagram.pharmacodynamics-curves",
+      "path": "diagrams/diagram.pharmacodynamics-curves.json",
+      "svgPath": "diagrams/diagram.pharmacodynamics-curves.svg",
+      "lessonId": "pharmacology.general.pharmacodynamics"
+    },
+    {
+      "id": "diagram.liver-blood-bile-flow",
+      "path": "diagrams/diagram.liver-blood-bile-flow.json",
+      "svgPath": "diagrams/diagram.liver-blood-bile-flow.svg",
+      "lessonId": "anatomy.abdomen.liver-segments"
+    },
+    {
+      "id": "diagram.cerebellar-core-circuit",
+      "path": "diagrams/diagram.cerebellar-core-circuit.json",
+      "svgPath": "diagrams/diagram.cerebellar-core-circuit.svg",
+      "lessonId": "neuroanatomy.cerebellum.cortex-connections"
+    },
+    {
+      "id": "diagram.csf-connections",
+      "path": "diagrams/diagram.csf-connections.json",
+      "svgPath": "diagrams/diagram.csf-connections.svg",
+      "lessonId": "neuroanatomy.meninges.ventricles-csf"
+    },
+    {
+      "id": "diagram.hearing-transmission",
+      "path": "diagrams/diagram.hearing-transmission.json",
+      "svgPath": "diagrams/diagram.hearing-transmission.svg",
+      "lessonId": "anatomy.head-neck.ear-temporal-bone"
+    },
+    {
+      "id": "diagram.sinus-drainage",
+      "path": "diagrams/diagram.sinus-drainage.json",
+      "svgPath": "diagrams/diagram.sinus-drainage.svg",
+      "lessonId": "anatomy.head-neck.nose-paranasal"
+    },
+    {
+      "id": "diagram.basal-direct-path",
+      "path": "diagrams/diagram.basal-direct-path.json",
+      "svgPath": "diagrams/diagram.basal-direct-path.svg",
+      "lessonId": "neuroanatomy.forebrain.basal-ganglia"
+    },
+    {
+      "id": "diagram.basal-indirect-path",
+      "path": "diagrams/diagram.basal-indirect-path.json",
+      "svgPath": "diagrams/diagram.basal-indirect-path.svg",
+      "lessonId": "neuroanatomy.forebrain.basal-ganglia"
+    },
+    {
+      "id": "diagram.pouch-migration",
+      "path": "diagrams/diagram.pouch-migration.json",
+      "svgPath": "diagrams/diagram.pouch-migration.svg",
+      "lessonId": "embryology.pharyngeal.arches-pouches"
+    },
+    {
+      "id": "diagram.thalamic-relays",
+      "path": "diagrams/diagram.thalamic-relays.json",
+      "svgPath": "diagrams/diagram.thalamic-relays.svg",
+      "lessonId": "neuroanatomy.forebrain.thalamic-networks"
+    },
+    {
+      "id": "diagram.left-visual-field",
+      "path": "diagrams/diagram.left-visual-field.json",
+      "svgPath": "diagrams/diagram.left-visual-field.svg",
+      "lessonId": "neuroanatomy.visual.field-pathways"
+    },
+    {
+      "id": "diagram.thick-skin-layers",
+      "path": "diagrams/diagram.thick-skin-layers.json",
+      "svgPath": "diagrams/diagram.thick-skin-layers.svg",
+      "lessonId": "histology.integument.skin-appendages"
+    },
+    {
+      "id": "diagram.sarcomere-band-geometry",
+      "path": "diagrams/diagram.sarcomere-band-geometry.json",
+      "svgPath": "diagrams/diagram.sarcomere-band-geometry.svg",
+      "lessonId": "histology.muscle.sarcomere-connective"
+    },
+    {
+      "id": "diagram.lymph-node-flow",
+      "path": "diagrams/diagram.lymph-node-flow.json",
+      "svgPath": "diagrams/diagram.lymph-node-flow.svg",
+      "lessonId": "histology.lymphoid.organ-architecture"
+    },
+    {
+      "id": "diagram.kidney-two-origins",
+      "path": "diagrams/diagram.kidney-two-origins.json",
+      "svgPath": "diagrams/diagram.kidney-two-origins.svg",
+      "lessonId": "embryology.urinary.kidney-collecting-system"
+    },
+    {
+      "id": "diagram.autonomic-transmitters",
+      "path": "diagrams/diagram.autonomic-transmitters.json",
+      "svgPath": "diagrams/diagram.autonomic-transmitters.svg",
+      "lessonId": "neuroanatomy.autonomic.central-peripheral"
+    },
+    {
+      "id": "diagram.pressure-volume-linear",
+      "path": "diagrams/diagram.pressure-volume-linear.json",
+      "svgPath": "diagrams/diagram.pressure-volume-linear.svg",
+      "lessonId": "physiology.respiratory.mechanics-compliance"
+    },
+    {
+      "id": "diagram.airway-radius-resistance",
+      "path": "diagrams/diagram.airway-radius-resistance.json",
+      "svgPath": "diagrams/diagram.airway-radius-resistance.svg",
+      "lessonId": "physiology.respiratory.mechanics-compliance"
+    },
+    {
+      "id": "diagram.alveolar-ventilation-co2",
+      "path": "diagrams/diagram.alveolar-ventilation-co2.json",
+      "svgPath": "diagrams/diagram.alveolar-ventilation-co2.svg",
+      "lessonId": "physiology.respiratory.alveolar-equation-deadspace"
+    },
+    {
+      "id": "diagram.oxygen-content-mixture",
+      "path": "diagrams/diagram.oxygen-content-mixture.json",
+      "svgPath": "diagrams/diagram.oxygen-content-mixture.svg",
+      "lessonId": "physiology.respiratory.diffusion-oxygen"
+    },
+    {
+      "id": "diagram.unaffected-carrier-risk",
+      "path": "diagrams/diagram.unaffected-carrier-risk.json",
+      "svgPath": "diagrams/diagram.unaffected-carrier-risk.svg",
+      "lessonId": "genetics.risk.penetrance-bayes"
+    },
+    {
+      "id": "diagram.negative-test-carrier-risk",
+      "path": "diagrams/diagram.negative-test-carrier-risk.json",
+      "svgPath": "diagrams/diagram.negative-test-carrier-risk.svg",
+      "lessonId": "genetics.risk.penetrance-bayes"
+    },
+    {
+      "id": "diagram.ppp-carbon-redox",
+      "path": "diagrams/diagram.ppp-carbon-redox.json",
+      "svgPath": "diagrams/diagram.ppp-carbon-redox.svg",
+      "lessonId": "biochemistry.carbohydrate.pentose-phosphate"
+    },
+    {
+      "id": "diagram.sugar-entry-paths",
+      "path": "diagrams/diagram.sugar-entry-paths.json",
+      "svgPath": "diagrams/diagram.sugar-entry-paths.svg",
+      "lessonId": "biochemistry.carbohydrate.fructose-galactose"
+    },
+    {
+      "id": "diagram.dna-repair-targets",
+      "path": "diagrams/diagram.dna-repair-targets.json",
+      "svgPath": "diagrams/diagram.dna-repair-targets.svg",
+      "lessonId": "molecular-biology.dna.repair-replication"
+    },
+    {
+      "id": "diagram.pressure-flow-resistors",
+      "path": "diagrams/diagram.pressure-flow-resistors.json",
+      "svgPath": "diagrams/diagram.pressure-flow-resistors.svg",
+      "lessonId": "physiology.cardiovascular.hemodynamics-resistance"
+    },
+    {
+      "id": "diagram.classical-filtration-example",
+      "path": "diagrams/diagram.classical-filtration-example.json",
+      "svgPath": "diagrams/diagram.classical-filtration-example.svg",
+      "lessonId": "physiology.cardiovascular.microcirculation-glycocalyx"
+    },
+    {
+      "id": "diagram.cardiac-venous-intersection",
+      "path": "diagrams/diagram.cardiac-venous-intersection.json",
+      "svgPath": "diagrams/diagram.cardiac-venous-intersection.svg",
+      "lessonId": "physiology.cardiovascular.cardiac-output-venous-return"
+    },
+    {
+      "id": "diagram.protein-pulse-decay",
+      "path": "diagrams/diagram.protein-pulse-decay.json",
+      "svgPath": "diagrams/diagram.protein-pulse-decay.svg",
+      "lessonId": "biochemistry.proteins.amino-acid-turnover"
+    },
+    {
+      "id": "diagram.receptor-occupancy-equilibrium",
+      "path": "diagrams/diagram.receptor-occupancy-equilibrium.json",
+      "svgPath": "diagrams/diagram.receptor-occupancy-equilibrium.svg",
+      "lessonId": "cell-biology.signaling.receptors-second-messengers"
+    },
+    {
+      "id": "diagram.gibbs-reaction-quotient",
+      "path": "diagrams/diagram.gibbs-reaction-quotient.json",
+      "svgPath": "diagrams/diagram.gibbs-reaction-quotient.svg",
+      "lessonId": "biochemistry.enzymes.allostery-thermodynamics"
+    },
+    {
+      "id": "diagram.hardy-weinberg-genotypes",
+      "path": "diagrams/diagram.hardy-weinberg-genotypes.json",
+      "svgPath": "diagrams/diagram.hardy-weinberg-genotypes.svg",
+      "lessonId": "genetics.population.hardy-weinberg"
+    },
+    {
+      "id": "diagram.protein-disposal-routes",
+      "path": "diagrams/diagram.protein-disposal-routes.json",
+      "svgPath": "diagrams/diagram.protein-disposal-routes.svg",
+      "lessonId": "biochemistry.proteins.amino-acid-turnover"
+    },
+    {
+      "id": "diagram.imprinting-test-questions",
+      "path": "diagrams/diagram.imprinting-test-questions.json",
+      "svgPath": "diagrams/diagram.imprinting-test-questions.svg",
+      "lessonId": "genetics.epigenetics.imprinting"
+    },
+    {
+      "id": "diagram.g-protein-effector-pairs",
+      "path": "diagrams/diagram.g-protein-effector-pairs.json",
+      "svgPath": "diagrams/diagram.g-protein-effector-pairs.svg",
+      "lessonId": "cell-biology.signaling.receptors-second-messengers"
+    },
+    {
+      "id": "diagram.hormone-clearance-decay",
+      "path": "diagrams/diagram.hormone-clearance-decay.json",
+      "svgPath": "diagrams/diagram.hormone-clearance-decay.svg",
+      "lessonId": "physiology.endocrine.hormone-kinetics"
+    },
+    {
+      "id": "diagram.hormone-secretion-approach",
+      "path": "diagrams/diagram.hormone-secretion-approach.json",
+      "svgPath": "diagrams/diagram.hormone-secretion-approach.svg",
+      "lessonId": "physiology.endocrine.hormone-kinetics"
+    },
+    {
+      "id": "diagram.hormone-binding-total",
+      "path": "diagrams/diagram.hormone-binding-total.json",
+      "svgPath": "diagrams/diagram.hormone-binding-total.svg",
+      "lessonId": "physiology.endocrine.hormone-kinetics"
+    },
+    {
+      "id": "diagram.bile-pool-repeated-loss",
+      "path": "diagrams/diagram.bile-pool-repeated-loss.json",
+      "svgPath": "diagrams/diagram.bile-pool-repeated-loss.svg",
+      "lessonId": "biochemistry.lipids.bile-acid-cycling"
+    },
+    {
+      "id": "diagram.dna-content-synthetic-density",
+      "path": "diagrams/diagram.dna-content-synthetic-density.json",
+      "svgPath": "diagrams/diagram.dna-content-synthetic-density.svg",
+      "lessonId": "cell-biology.cell-cycle.dna-content"
+    },
+    {
+      "id": "diagram.endocrine-feedback-pairs",
+      "path": "diagrams/diagram.endocrine-feedback-pairs.json",
+      "svgPath": "diagrams/diagram.endocrine-feedback-pairs.svg",
+      "lessonId": "physiology.endocrine.hypothalamic-pituitary-axes"
+    },
+    {
+      "id": "diagram.gh-prl-signaling-pairs",
+      "path": "diagrams/diagram.gh-prl-signaling-pairs.json",
+      "svgPath": "diagrams/diagram.gh-prl-signaling-pairs.svg",
+      "lessonId": "physiology.endocrine.gh-prolactin"
+    },
+    {
+      "id": "diagram.sterol-sensing-pairs",
+      "path": "diagrams/diagram.sterol-sensing-pairs.json",
+      "svgPath": "diagrams/diagram.sterol-sensing-pairs.svg",
+      "lessonId": "biochemistry.lipids.cholesterol-synthesis"
+    },
+    {
+      "id": "diagram.cell-cycle-control-pairs",
+      "path": "diagrams/diagram.cell-cycle-control-pairs.json",
+      "svgPath": "diagrams/diagram.cell-cycle-control-pairs.svg",
+      "lessonId": "cell-biology.cell-cycle.checkpoints"
+    },
+    {
+      "id": "diagram.apoptosis-entry-pairs",
+      "path": "diagrams/diagram.apoptosis-entry-pairs.json",
+      "svgPath": "diagrams/diagram.apoptosis-entry-pairs.svg",
+      "lessonId": "cell-biology.cell-death.apoptosis"
+    },
+    {
+      "id": "diagram.substrate-store-net-flux",
+      "path": "diagrams/diagram.substrate-store-net-flux.json",
+      "svgPath": "diagrams/diagram.substrate-store-net-flux.svg",
+      "lessonId": "biochemistry.metabolism.fed-fasting-integration"
+    },
+    {
+      "id": "diagram.fatty-synthesis-stoichiometry",
+      "path": "diagrams/diagram.fatty-synthesis-stoichiometry.json",
+      "svgPath": "diagrams/diagram.fatty-synthesis-stoichiometry.svg",
+      "lessonId": "biochemistry.lipids.fatty-acid-synthesis"
+    },
+    {
+      "id": "diagram.fatty-acid-net-release",
+      "path": "diagrams/diagram.fatty-acid-net-release.json",
+      "svgPath": "diagrams/diagram.fatty-acid-net-release.svg",
+      "lessonId": "biochemistry.lipids.glycerolipid-synthesis"
+    },
+    {
+      "id": "diagram.translation-partial-cost",
+      "path": "diagrams/diagram.translation-partial-cost.json",
+      "svgPath": "diagrams/diagram.translation-partial-cost.svg",
+      "lessonId": "molecular-biology.rna.translation-code"
+    },
+    {
+      "id": "diagram.protein-target-fold-fraction",
+      "path": "diagrams/diagram.protein-target-fold-fraction.json",
+      "svgPath": "diagrams/diagram.protein-target-fold-fraction.svg",
+      "lessonId": "molecular-biology.proteins.targeting-quality-control"
+    },
+    {
+      "id": "diagram.mrna-half-life-decay",
+      "path": "diagrams/diagram.mrna-half-life-decay.json",
+      "svgPath": "diagrams/diagram.mrna-half-life-decay.svg",
+      "lessonId": "molecular-biology.rna.stability-silencing"
+    },
+    {
+      "id": "diagram.mrna-synthesis-decay-balance",
+      "path": "diagrams/diagram.mrna-synthesis-decay-balance.json",
+      "svgPath": "diagrams/diagram.mrna-synthesis-decay-balance.svg",
+      "lessonId": "molecular-biology.rna.stability-silencing"
+    },
+    {
+      "id": "diagram.beta-cell-trigger-pairs",
+      "path": "diagrams/diagram.beta-cell-trigger-pairs.json",
+      "svgPath": "diagrams/diagram.beta-cell-trigger-pairs.svg",
+      "lessonId": "physiology.endocrine.insulin-glucagon"
+    },
+    {
+      "id": "diagram.glycerolipid-branch-pairs",
+      "path": "diagrams/diagram.glycerolipid-branch-pairs.json",
+      "svgPath": "diagrams/diagram.glycerolipid-branch-pairs.svg",
+      "lessonId": "biochemistry.lipids.glycerolipid-synthesis"
+    },
+    {
+      "id": "diagram.rna-processing-pairs",
+      "path": "diagrams/diagram.rna-processing-pairs.json",
+      "svgPath": "diagrams/diagram.rna-processing-pairs.svg",
+      "lessonId": "molecular-biology.rna.transcription-processing"
+    },
+    {
+      "id": "diagram.er-topology-quality-pairs",
+      "path": "diagrams/diagram.er-topology-quality-pairs.json",
+      "svgPath": "diagrams/diagram.er-topology-quality-pairs.svg",
+      "lessonId": "molecular-biology.proteins.targeting-quality-control"
+    },
+    {
+      "id": "diagram.rna-silencing-surveillance-pairs",
+      "path": "diagrams/diagram.rna-silencing-surveillance-pairs.json",
+      "svgPath": "diagrams/diagram.rna-silencing-surveillance-pairs.svg",
+      "lessonId": "molecular-biology.rna.stability-silencing"
+    },
+    {
+      "id": "diagram.quantal-binomial-sites",
+      "path": "diagrams/diagram.quantal-binomial-sites.json",
+      "svgPath": "diagrams/diagram.quantal-binomial-sites.svg",
+      "lessonId": "physiology.neuro.synaptic-transmission"
+    },
+    {
+      "id": "diagram.quantal-mean-response",
+      "path": "diagrams/diagram.quantal-mean-response.json",
+      "svgPath": "diagrams/diagram.quantal-mean-response.svg",
+      "lessonId": "physiology.neuro.synaptic-transmission"
+    },
+    {
+      "id": "diagram.synaptic-current-reversal",
+      "path": "diagrams/diagram.synaptic-current-reversal.json",
+      "svgPath": "diagrams/diagram.synaptic-current-reversal.svg",
+      "lessonId": "physiology.neuro.synaptic-integration"
+    },
+    {
+      "id": "diagram.shunt-conductance-response",
+      "path": "diagrams/diagram.shunt-conductance-response.json",
+      "svgPath": "diagrams/diagram.shunt-conductance-response.svg",
+      "lessonId": "physiology.neuro.synaptic-integration"
+    },
+    {
+      "id": "diagram.sensory-adaptation-components",
+      "path": "diagrams/diagram.sensory-adaptation-components.json",
+      "svgPath": "diagrams/diagram.sensory-adaptation-components.svg",
+      "lessonId": "physiology.neuro.sensory-coding"
+    },
+    {
+      "id": "diagram.sugar-transport-saturation",
+      "path": "diagrams/diagram.sugar-transport-saturation.json",
+      "svgPath": "diagrams/diagram.sugar-transport-saturation.svg",
+      "lessonId": "physiology.digestive.carbohydrate-absorption"
+    },
+    {
+      "id": "diagram.gastric-store-exponential-example",
+      "path": "diagrams/diagram.gastric-store-exponential-example.json",
+      "svgPath": "diagrams/diagram.gastric-store-exponential-example.svg",
+      "lessonId": "physiology.digestive.motility-control"
+    },
+    {
+      "id": "diagram.synaptic-release-pairs",
+      "path": "diagrams/diagram.synaptic-release-pairs.json",
+      "svgPath": "diagrams/diagram.synaptic-release-pairs.svg",
+      "lessonId": "physiology.neuro.synaptic-transmission"
+    },
+    {
+      "id": "diagram.nutrient-exit-route-pairs",
+      "path": "diagrams/diagram.nutrient-exit-route-pairs.json",
+      "svgPath": "diagrams/diagram.nutrient-exit-route-pairs.svg",
+      "lessonId": "physiology.digestive.lipid-protein-absorption"
+    },
+    {
+      "id": "diagram.chromatin-mechanism-pairs",
+      "path": "diagrams/diagram.chromatin-mechanism-pairs.json",
+      "svgPath": "diagrams/diagram.chromatin-mechanism-pairs.svg",
+      "lessonId": "molecular-biology.gene-expression.chromatin-regulation"
+    },
+    {
+      "id": "diagram.cis-trans-evidence-pairs",
+      "path": "diagrams/diagram.cis-trans-evidence-pairs.json",
+      "svgPath": "diagrams/diagram.cis-trans-evidence-pairs.svg",
+      "lessonId": "molecular-biology.gene-expression.cis-trans-enhancers"
+    },
+    {
+      "id": "diagram.reporter-normalization-pairs",
+      "path": "diagrams/diagram.reporter-normalization-pairs.json",
+      "svgPath": "diagrams/diagram.reporter-normalization-pairs.svg",
+      "lessonId": "molecular-biology.gene-expression.cis-trans-enhancers"
+    },
+    {
+      "id": "diagram.baroreflex-sign-example",
+      "path": "diagrams/diagram.baroreflex-sign-example.json",
+      "svgPath": "diagrams/diagram.baroreflex-sign-example.svg",
+      "lessonId": "physiology.neuro.autonomic-control"
+    },
+    {
+      "id": "diagram.conduction-distance-latency",
+      "path": "diagrams/diagram.conduction-distance-latency.json",
+      "svgPath": "diagrams/diagram.conduction-distance-latency.svg",
+      "lessonId": "physiology.cell.action-potential-conduction"
+    },
+    {
+      "id": "diagram.motor-unit-recruitment-example",
+      "path": "diagrams/diagram.motor-unit-recruitment-example.json",
+      "svgPath": "diagrams/diagram.motor-unit-recruitment-example.svg",
+      "lessonId": "physiology.neuro.motor-units-reflexes"
+    },
+    {
+      "id": "diagram.nociceptor-threshold-example",
+      "path": "diagrams/diagram.nociceptor-threshold-example.json",
+      "svgPath": "diagrams/diagram.nociceptor-threshold-example.svg",
+      "lessonId": "physiology.neuro.pain-modulation"
+    },
+    {
+      "id": "diagram.cofactor-active-fraction-example",
+      "path": "diagrams/diagram.cofactor-active-fraction-example.json",
+      "svgPath": "diagrams/diagram.cofactor-active-fraction-example.svg",
+      "lessonId": "biochemistry.vitamins.cofactors"
+    },
+    {
+      "id": "diagram.metabolite-clearance-example",
+      "path": "diagrams/diagram.metabolite-clearance-example.json",
+      "svgPath": "diagrams/diagram.metabolite-clearance-example.svg",
+      "lessonId": "biochemistry.vitamins.folate-cobalamin-one-carbon"
+    },
+    {
+      "id": "diagram.gsh-relative-redox-change",
+      "path": "diagrams/diagram.gsh-relative-redox-change.json",
+      "svgPath": "diagrams/diagram.gsh-relative-redox-change.svg",
+      "lessonId": "biochemistry.redox.antioxidant-systems"
+    },
+    {
+      "id": "diagram.autonomic-transmitter-pairs",
+      "path": "diagrams/diagram.autonomic-transmitter-pairs.json",
+      "svgPath": "diagrams/diagram.autonomic-transmitter-pairs.svg",
+      "lessonId": "physiology.neuro.autonomic-control"
+    },
+    {
+      "id": "diagram.spindle-tendon-reflex-pairs",
+      "path": "diagrams/diagram.spindle-tendon-reflex-pairs.json",
+      "svgPath": "diagrams/diagram.spindle-tendon-reflex-pairs.svg",
+      "lessonId": "physiology.neuro.motor-units-reflexes"
+    },
+    {
+      "id": "diagram.coenzyme-chemistry-pairs",
+      "path": "diagrams/diagram.coenzyme-chemistry-pairs.json",
+      "svgPath": "diagrams/diagram.coenzyme-chemistry-pairs.svg",
+      "lessonId": "biochemistry.vitamins.cofactors"
+    },
+    {
+      "id": "diagram.folate-cobalamin-reaction-pairs",
+      "path": "diagrams/diagram.folate-cobalamin-reaction-pairs.json",
+      "svgPath": "diagrams/diagram.folate-cobalamin-reaction-pairs.svg",
+      "lessonId": "biochemistry.vitamins.folate-cobalamin-one-carbon"
+    },
+    {
+      "id": "diagram.fat-soluble-function-pairs",
+      "path": "diagrams/diagram.fat-soluble-function-pairs.json",
+      "svgPath": "diagrams/diagram.fat-soluble-function-pairs.svg",
+      "lessonId": "biochemistry.vitamins.fat-soluble-functions"
+    },
+    {
+      "id": "diagram.cell-number-size-product",
+      "path": "diagrams/diagram.cell-number-size-product.json",
+      "svgPath": "diagrams/diagram.cell-number-size-product.svg",
+      "lessonId": "pathology.cell.adaptation-injury-mechanisms"
+    },
+    {
+      "id": "diagram.atp-residual-example",
+      "path": "diagrams/diagram.atp-residual-example.json",
+      "svgPath": "diagrams/diagram.atp-residual-example.svg",
+      "lessonId": "pathology.cell.ischemia-reperfusion-mechanisms"
+    },
+    {
+      "id": "diagram.recruitment-conditional-denominator",
+      "path": "diagrams/diagram.recruitment-conditional-denominator.json",
+      "svgPath": "diagrams/diagram.recruitment-conditional-denominator.svg",
+      "lessonId": "pathology.inflammation.mediators-leukocyte-recruitment"
+    },
+    {
+      "id": "diagram.matrix-balance-example",
+      "path": "diagrams/diagram.matrix-balance-example.json",
+      "svgPath": "diagrams/diagram.matrix-balance-example.svg",
+      "lessonId": "pathology.repair.matrix-remodeling-fibrosis"
+    },
+    {
+      "id": "diagram.volume-concentration-example",
+      "path": "diagrams/diagram.volume-concentration-example.json",
+      "svgPath": "diagrams/diagram.volume-concentration-example.svg",
+      "lessonId": "pharmacology.general.distribution-binding-models"
+    },
+    {
+      "id": "diagram.well-stirred-extraction-example",
+      "path": "diagrams/diagram.well-stirred-extraction-example.json",
+      "svgPath": "diagrams/diagram.well-stirred-extraction-example.svg",
+      "lessonId": "pharmacology.general.clearance-extraction-models"
+    },
+    {
+      "id": "diagram.saturable-elimination-clearance",
+      "path": "diagrams/diagram.saturable-elimination-clearance.json",
+      "svgPath": "diagrams/diagram.saturable-elimination-clearance.svg",
+      "lessonId": "pharmacology.general.clearance-extraction-models"
+    },
+    {
+      "id": "diagram.infusion-fraction-half-lives",
+      "path": "diagrams/diagram.infusion-fraction-half-lives.json",
+      "svgPath": "diagrams/diagram.infusion-fraction-half-lives.svg",
+      "lessonId": "pharmacology.general.repeated-dosing-accumulation"
+    },
+    {
+      "id": "diagram.competitive-efficacy-comparison",
+      "path": "diagrams/diagram.competitive-efficacy-comparison.json",
+      "svgPath": "diagrams/diagram.competitive-efficacy-comparison.svg",
+      "lessonId": "pharmacology.general.agonism-antagonism-curves"
+    },
+    {
+      "id": "diagram.ischemia-injury-pairs",
+      "path": "diagrams/diagram.ischemia-injury-pairs.json",
+      "svgPath": "diagrams/diagram.ischemia-injury-pairs.svg",
+      "lessonId": "pathology.cell.ischemia-reperfusion-mechanisms"
+    },
+    {
+      "id": "diagram.leukocyte-stage-pairs",
+      "path": "diagrams/diagram.leukocyte-stage-pairs.json",
+      "svgPath": "diagrams/diagram.leukocyte-stage-pairs.svg",
+      "lessonId": "pathology.inflammation.mediators-leukocyte-recruitment"
+    },
+    {
+      "id": "diagram.repair-matrix-pairs",
+      "path": "diagrams/diagram.repair-matrix-pairs.json",
+      "svgPath": "diagrams/diagram.repair-matrix-pairs.svg",
+      "lessonId": "pathology.repair.matrix-remodeling-fibrosis"
+    },
+    {
+      "id": "diagram.distribution-binding-pairs",
+      "path": "diagrams/diagram.distribution-binding-pairs.json",
+      "svgPath": "diagrams/diagram.distribution-binding-pairs.svg",
+      "lessonId": "pharmacology.general.distribution-binding-models"
+    },
+    {
+      "id": "diagram.accumulation-net-input",
+      "path": "diagrams/diagram.accumulation-net-input.json",
+      "svgPath": "diagrams/diagram.accumulation-net-input.svg",
+      "lessonId": "pathology.cell.accumulations-calcification"
+    },
+    {
+      "id": "diagram.interstitial-net-fluid-example",
+      "path": "diagrams/diagram.interstitial-net-fluid-example.json",
+      "svgPath": "diagrams/diagram.interstitial-net-fluid-example.svg",
+      "lessonId": "pathology.hemodynamics.edema-fluid-balance"
+    },
+    {
+      "id": "diagram.parent-metabolite-example",
+      "path": "diagrams/diagram.parent-metabolite-example.json",
+      "svgPath": "diagrams/diagram.parent-metabolite-example.svg",
+      "lessonId": "pharmacology.general.metabolism-biotransformation"
+    },
+    {
+      "id": "diagram.fraction-metabolized-exposure-ratio",
+      "path": "diagrams/diagram.fraction-metabolized-exposure-ratio.json",
+      "svgPath": "diagrams/diagram.fraction-metabolized-exposure-ratio.svg",
+      "lessonId": "pharmacology.general.metabolism-interactions"
+    },
+    {
+      "id": "diagram.oral-availability-fractions",
+      "path": "diagrams/diagram.oral-availability-fractions.json",
+      "svgPath": "diagrams/diagram.oral-availability-fractions.svg",
+      "lessonId": "pharmacology.general.bioavailability-first-pass"
+    },
+    {
+      "id": "diagram.calcification-question-pairs",
+      "path": "diagrams/diagram.calcification-question-pairs.json",
+      "svgPath": "diagrams/diagram.calcification-question-pairs.svg",
+      "lessonId": "pathology.cell.accumulations-calcification"
+    },
+    {
+      "id": "diagram.embolus-circulation-pairs",
+      "path": "diagrams/diagram.embolus-circulation-pairs.json",
+      "svgPath": "diagrams/diagram.embolus-circulation-pairs.svg",
+      "lessonId": "pathology.hemodynamics.thrombosis-embolism"
+    },
+    {
+      "id": "diagram.biotransformation-reaction-pairs",
+      "path": "diagrams/diagram.biotransformation-reaction-pairs.json",
+      "svgPath": "diagrams/diagram.biotransformation-reaction-pairs.svg",
+      "lessonId": "pharmacology.general.metabolism-biotransformation"
+    },
+    {
+      "id": "diagram.bioavailability-question-pairs",
+      "path": "diagrams/diagram.bioavailability-question-pairs.json",
+      "svgPath": "diagrams/diagram.bioavailability-question-pairs.svg",
+      "lessonId": "pharmacology.general.bioavailability-first-pass"
+    },
+    {
+      "id": "diagram.stroke-volume-esv-example",
+      "path": "diagrams/diagram.stroke-volume-esv-example.json",
+      "svgPath": "diagrams/diagram.stroke-volume-esv-example.svg",
+      "lessonId": "physiology.cardiovascular.cardiac-cycle"
+    },
+    {
+      "id": "diagram.minute-alveolar-ventilation-example",
+      "path": "diagrams/diagram.minute-alveolar-ventilation-example.json",
+      "svgPath": "diagrams/diagram.minute-alveolar-ventilation-example.svg",
+      "lessonId": "physiology.respiratory.ventilation-perfusion"
+    },
+    {
+      "id": "diagram.free-water-clearance-example",
+      "path": "diagrams/diagram.free-water-clearance-example.json",
+      "svgPath": "diagrams/diagram.free-water-clearance-example.svg",
+      "lessonId": "physiology.renal.urine-concentration"
+    },
+    {
+      "id": "diagram.shock-delivery-flow-example",
+      "path": "diagrams/diagram.shock-delivery-flow-example.json",
+      "svgPath": "diagrams/diagram.shock-delivery-flow-example.svg",
+      "lessonId": "pathology.hemodynamics.shock-perfusion-injury"
+    },
+    {
+      "id": "diagram.deposit-residual-example",
+      "path": "diagrams/diagram.deposit-residual-example.json",
+      "svgPath": "diagrams/diagram.deposit-residual-example.svg",
+      "lessonId": "pathology.proteins.amyloid-deposition"
+    },
+    {
+      "id": "diagram.transporter-saturable-flux",
+      "path": "diagrams/diagram.transporter-saturable-flux.json",
+      "svgPath": "diagrams/diagram.transporter-saturable-flux.svg",
+      "lessonId": "pharmacology.general.transporters-vectorial-flux"
+    },
+    {
+      "id": "diagram.free-fraction-filtration-clearance",
+      "path": "diagrams/diagram.free-fraction-filtration-clearance.json",
+      "svgPath": "diagrams/diagram.free-fraction-filtration-clearance.svg",
+      "lessonId": "pharmacology.general.renal-excretion-ionization"
+    },
+    {
+      "id": "diagram.acid-base-neutral-fraction",
+      "path": "diagrams/diagram.acid-base-neutral-fraction.json",
+      "svgPath": "diagrams/diagram.acid-base-neutral-fraction.svg",
+      "lessonId": "pharmacology.general.renal-excretion-ionization"
+    },
+    {
+      "id": "diagram.quantal-effect-toxicity-example",
+      "path": "diagrams/diagram.quantal-effect-toxicity-example.json",
+      "svgPath": "diagrams/diagram.quantal-effect-toxicity-example.svg",
+      "lessonId": "pharmacology.general.quantal-response-safety"
+    },
+    {
+      "id": "diagram.hypersensitivity-effector-pairs",
+      "path": "diagrams/diagram.hypersensitivity-effector-pairs.json",
+      "svgPath": "diagrams/diagram.hypersensitivity-effector-pairs.svg",
+      "lessonId": "pathology.immunity.hypersensitivity-mechanisms"
+    },
+    {
+      "id": "diagram.amyloid-typing-questions",
+      "path": "diagrams/diagram.amyloid-typing-questions.json",
+      "svgPath": "diagrams/diagram.amyloid-typing-questions.svg",
+      "lessonId": "pathology.proteins.amyloid-deposition"
+    },
+    {
+      "id": "diagram.vectorial-transport-membranes",
+      "path": "diagrams/diagram.vectorial-transport-membranes.json",
+      "svgPath": "diagrams/diagram.vectorial-transport-membranes.svg",
+      "lessonId": "pharmacology.general.transporters-vectorial-flux"
+    },
+    {
+      "id": "diagram.enzyme-rate-example",
+      "path": "diagrams/diagram.enzyme-rate-example.json",
+      "svgPath": "diagrams/diagram.enzyme-rate-example.svg",
+      "lessonId": "biochemistry.enzymes.kinetics"
+    },
+    {
+      "id": "diagram.metastatic-colonization-example",
+      "path": "diagrams/diagram.metastatic-colonization-example.json",
+      "svgPath": "diagrams/diagram.metastatic-colonization-example.svg",
+      "lessonId": "pathology.neoplasia.invasion-metastasis"
+    },
+    {
+      "id": "diagram.vessel-perfusion-fraction-example",
+      "path": "diagrams/diagram.vessel-perfusion-fraction-example.json",
+      "svgPath": "diagrams/diagram.vessel-perfusion-fraction-example.svg",
+      "lessonId": "pathology.neoplasia.microenvironment-angiogenesis"
+    },
+    {
+      "id": "diagram.tumor-purity-vaf-example",
+      "path": "diagrams/diagram.tumor-purity-vaf-example.json",
+      "svgPath": "diagrams/diagram.tumor-purity-vaf-example.svg",
+      "lessonId": "pathology.genetic.molecular-diagnostics"
+    },
+    {
+      "id": "diagram.direct-cholinergic-response-example",
+      "path": "diagrams/diagram.direct-cholinergic-response-example.json",
+      "svgPath": "diagrams/diagram.direct-cholinergic-response-example.svg",
+      "lessonId": "pharmacology.autonomic.direct-cholinergic-agonists"
+    },
+    {
+      "id": "diagram.ach-signal-residual-example",
+      "path": "diagrams/diagram.ach-signal-residual-example.json",
+      "svgPath": "diagrams/diagram.ach-signal-residual-example.svg",
+      "lessonId": "pharmacology.autonomic.cholinesterase-inhibition"
+    },
+    {
+      "id": "diagram.muscarinic-antagonist-ratio-example",
+      "path": "diagrams/diagram.muscarinic-antagonist-ratio-example.json",
+      "svgPath": "diagrams/diagram.muscarinic-antagonist-ratio-example.svg",
+      "lessonId": "pharmacology.autonomic.antimuscarinic-effects"
+    },
+    {
+      "id": "diagram.invasion-colonization-pairs",
+      "path": "diagrams/diagram.invasion-colonization-pairs.json",
+      "svgPath": "diagrams/diagram.invasion-colonization-pairs.svg",
+      "lessonId": "pathology.neoplasia.invasion-metastasis"
+    },
+    {
+      "id": "diagram.molecular-test-questions",
+      "path": "diagrams/diagram.molecular-test-questions.json",
+      "svgPath": "diagrams/diagram.molecular-test-questions.svg",
+      "lessonId": "pathology.genetic.molecular-diagnostics"
+    },
+    {
+      "id": "diagram.cholinergic-target-pairs",
+      "path": "diagrams/diagram.cholinergic-target-pairs.json",
+      "svgPath": "diagrams/diagram.cholinergic-target-pairs.svg",
+      "lessonId": "pharmacology.autonomic.direct-cholinergic-agonists"
+    },
+    {
+      "id": "diagram.cholinesterase-effect-pairs",
+      "path": "diagrams/diagram.cholinesterase-effect-pairs.json",
+      "svgPath": "diagrams/diagram.cholinesterase-effect-pairs.svg",
+      "lessonId": "pharmacology.autonomic.cholinesterase-inhibition"
+    },
+    {
+      "id": "diagram.growth-plate-length-example",
+      "path": "diagrams/diagram.growth-plate-length-example.json",
+      "svgPath": "diagrams/diagram.growth-plate-length-example.svg",
+      "lessonId": "embryology.skeleton.ossification-growth-plate"
+    },
+    {
+      "id": "diagram.defense-capacity-net-example",
+      "path": "diagrams/diagram.defense-capacity-net-example.json",
+      "svgPath": "diagrams/diagram.defense-capacity-net-example.svg",
+      "lessonId": "pathology.environmental.toxic-injury"
+    },
+    {
+      "id": "diagram.lq-fractionation-example",
+      "path": "diagrams/diagram.lq-fractionation-example.json",
+      "svgPath": "diagrams/diagram.lq-fractionation-example.svg",
+      "lessonId": "pathology.environmental.radiation-injury"
+    },
+    {
+      "id": "diagram.refeeding-compartment-shift-example",
+      "path": "diagrams/diagram.refeeding-compartment-shift-example.json",
+      "svgPath": "diagrams/diagram.refeeding-compartment-shift-example.svg",
+      "lessonId": "pathology.nutrition.undernutrition-refeeding"
+    },
+    {
+      "id": "diagram.adrenergic-direct-reflex-example",
+      "path": "diagrams/diagram.adrenergic-direct-reflex-example.json",
+      "svgPath": "diagrams/diagram.adrenergic-direct-reflex-example.svg",
+      "lessonId": "pharmacology.autonomic.adrenergic-agonists"
+    },
+    {
+      "id": "diagram.net-removal-example",
+      "path": "diagrams/diagram.net-removal-example.json",
+      "svgPath": "diagrams/diagram.net-removal-example.svg",
+      "lessonId": "pharmacology.autonomic.catecholamine-turnover"
+    },
+    {
+      "id": "diagram.adrenergic-blockade-response-example",
+      "path": "diagrams/diagram.adrenergic-blockade-response-example.json",
+      "svgPath": "diagrams/diagram.adrenergic-blockade-response-example.svg",
+      "lessonId": "pharmacology.autonomic.adrenergic-antagonists"
+    },
+    {
+      "id": "diagram.toxicology-measurement-pairs",
+      "path": "diagrams/diagram.toxicology-measurement-pairs.json",
+      "svgPath": "diagrams/diagram.toxicology-measurement-pairs.svg",
+      "lessonId": "pathology.environmental.toxic-injury"
+    },
+    {
+      "id": "diagram.radiation-injury-time-pairs",
+      "path": "diagrams/diagram.radiation-injury-time-pairs.json",
+      "svgPath": "diagrams/diagram.radiation-injury-time-pairs.svg",
+      "lessonId": "pathology.environmental.radiation-injury"
+    },
+    {
+      "id": "diagram.nutrition-assessment-pairs",
+      "path": "diagrams/diagram.nutrition-assessment-pairs.json",
+      "svgPath": "diagrams/diagram.nutrition-assessment-pairs.svg",
+      "lessonId": "pathology.nutrition.undernutrition-refeeding"
+    },
+    {
+      "id": "diagram.adrenergic-site-pairs",
+      "path": "diagrams/diagram.adrenergic-site-pairs.json",
+      "svgPath": "diagrams/diagram.adrenergic-site-pairs.svg",
+      "lessonId": "pharmacology.autonomic.adrenergic-agonists"
+    },
+    {
+      "id": "diagram.ejection-fraction-volume-example",
+      "path": "diagrams/diagram.ejection-fraction-volume-example.json",
+      "svgPath": "diagrams/diagram.ejection-fraction-volume-example.svg",
+      "lessonId": "cardiology.heart-failure.syndrome"
+    },
+    {
+      "id": "diagram.insulin-compensation-toy",
+      "path": "diagrams/diagram.insulin-compensation-toy.json",
+      "svgPath": "diagrams/diagram.insulin-compensation-toy.svg",
+      "lessonId": "pathology.nutrition.obesity-metabolic-injury"
+    },
+    {
+      "id": "diagram.functional-complex-toy",
+      "path": "diagrams/diagram.functional-complex-toy.json",
+      "svgPath": "diagrams/diagram.functional-complex-toy.svg",
+      "lessonId": "pathology.genetic.variant-phenotype"
+    },
+    {
+      "id": "diagram.penetrance-transmission-toy",
+      "path": "diagrams/diagram.penetrance-transmission-toy.json",
+      "svgPath": "diagrams/diagram.penetrance-transmission-toy.svg",
+      "lessonId": "pathology.genetic.variant-phenotype"
+    },
+    {
+      "id": "diagram.renal-series-pressure-toy",
+      "path": "diagrams/diagram.renal-series-pressure-toy.json",
+      "svgPath": "diagrams/diagram.renal-series-pressure-toy.svg",
+      "lessonId": "pharmacology.cardiovascular.renin-angiotensin-drugs"
+    },
+    {
+      "id": "diagram.mr-occupancy-toy",
+      "path": "diagrams/diagram.mr-occupancy-toy.json",
+      "svgPath": "diagrams/diagram.mr-occupancy-toy.svg",
+      "lessonId": "pharmacology.cardiovascular.mineralocorticoid-antagonists"
+    },
+    {
+      "id": "diagram.clearance-concentration-lag-toy",
+      "path": "diagrams/diagram.clearance-concentration-lag-toy.json",
+      "svgPath": "diagrams/diagram.clearance-concentration-lag-toy.svg",
+      "lessonId": "pharmacology.cardiovascular.renal-drug-interactions"
+    },
+    {
+      "id": "diagram.adipose-compartments-pairs",
+      "path": "diagrams/diagram.adipose-compartments-pairs.json",
+      "svgPath": "diagrams/diagram.adipose-compartments-pairs.svg",
+      "lessonId": "pathology.nutrition.obesity-metabolic-injury"
+    },
+    {
+      "id": "diagram.congenital-mechanism-pairs",
+      "path": "diagrams/diagram.congenital-mechanism-pairs.json",
+      "svgPath": "diagrams/diagram.congenital-mechanism-pairs.svg",
+      "lessonId": "pathology.genetic.congenital-disease"
+    },
+    {
+      "id": "diagram.raas-target-pairs",
+      "path": "diagrams/diagram.raas-target-pairs.json",
+      "svgPath": "diagrams/diagram.raas-target-pairs.svg",
+      "lessonId": "pharmacology.cardiovascular.renin-angiotensin-drugs"
+    },
+    {
+      "id": "diagram.renal-compensation-pairs",
+      "path": "diagrams/diagram.renal-compensation-pairs.json",
+      "svgPath": "diagrams/diagram.renal-compensation-pairs.svg",
+      "lessonId": "pharmacology.cardiovascular.renal-drug-interactions"
+    },
+    {
+      "id": "diagram.mixed-cell-mean-toy",
+      "path": "diagrams/diagram.mixed-cell-mean-toy.json",
+      "svgPath": "diagrams/diagram.mixed-cell-mean-toy.svg",
+      "lessonId": "hematology.anemia.reticulocytes"
+    },
+    {
+      "id": "diagram.local-anesthetic-unionized-toy",
+      "path": "diagrams/diagram.local-anesthetic-unionized-toy.json",
+      "svgPath": "diagrams/diagram.local-anesthetic-unionized-toy.svg",
+      "lessonId": "anesthesiology.regional.local-anesthetic"
+    },
+    {
+      "id": "diagram.mosaic-copy-ratio-toy",
+      "path": "diagrams/diagram.mosaic-copy-ratio-toy.json",
+      "svgPath": "diagrams/diagram.mosaic-copy-ratio-toy.svg",
+      "lessonId": "pathology.genetic.chromosomal-dosage"
+    },
+    {
+      "id": "diagram.cofactor-saturation-toy",
+      "path": "diagrams/diagram.cofactor-saturation-toy.json",
+      "svgPath": "diagrams/diagram.cofactor-saturation-toy.svg",
+      "lessonId": "pathology.nutrition.thiamine-deficiency"
+    },
+    {
+      "id": "diagram.matrix-recovery-lag-toy",
+      "path": "diagrams/diagram.matrix-recovery-lag-toy.json",
+      "svgPath": "diagrams/diagram.matrix-recovery-lag-toy.svg",
+      "lessonId": "pathology.nutrition.ascorbate-connective-tissue"
+    },
+    {
+      "id": "diagram.tubular-exposure-response-toy",
+      "path": "diagrams/diagram.tubular-exposure-response-toy.json",
+      "svgPath": "diagrams/diagram.tubular-exposure-response-toy.svg",
+      "lessonId": "pharmacology.cardiovascular.loop-diuretics"
+    },
+    {
+      "id": "diagram.distal-delivery-balance-toy",
+      "path": "diagrams/diagram.distal-delivery-balance-toy.json",
+      "svgPath": "diagrams/diagram.distal-delivery-balance-toy.svg",
+      "lessonId": "pharmacology.cardiovascular.distal-proximal-diuretics"
+    },
+    {
+      "id": "diagram.chromosome-question-pairs",
+      "path": "diagrams/diagram.chromosome-question-pairs.json",
+      "svgPath": "diagrams/diagram.chromosome-question-pairs.svg",
+      "lessonId": "pathology.genetic.chromosomal-dosage"
+    },
+    {
+      "id": "diagram.thiamine-reaction-pairs",
+      "path": "diagrams/diagram.thiamine-reaction-pairs.json",
+      "svgPath": "diagrams/diagram.thiamine-reaction-pairs.svg",
+      "lessonId": "pathology.nutrition.thiamine-deficiency"
+    },
+    {
+      "id": "diagram.cobalamin-function-pairs",
+      "path": "diagrams/diagram.cobalamin-function-pairs.json",
+      "svgPath": "diagrams/diagram.cobalamin-function-pairs.svg",
+      "lessonId": "pathology.nutrition.cobalamin-folate"
+    },
+    {
+      "id": "diagram.collagen-stage-pairs",
+      "path": "diagrams/diagram.collagen-stage-pairs.json",
+      "svgPath": "diagrams/diagram.collagen-stage-pairs.svg",
+      "lessonId": "pathology.nutrition.ascorbate-connective-tissue"
+    },
+    {
+      "id": "diagram.diuretic-segment-pairs",
+      "path": "diagrams/diagram.diuretic-segment-pairs.json",
+      "svgPath": "diagrams/diagram.diuretic-segment-pairs.svg",
+      "lessonId": "pharmacology.cardiovascular.distal-proximal-diuretics"
+    },
+    {
+      "id": "diagram.shunt-steady-voltage-toy",
+      "path": "diagrams/diagram.shunt-steady-voltage-toy.json",
+      "svgPath": "diagrams/diagram.shunt-steady-voltage-toy.svg",
+      "lessonId": "neuroscience.synapse.transmission"
+    },
+    {
+      "id": "diagram.absolute-relative-risk-toy",
+      "path": "diagrams/diagram.absolute-relative-risk-toy.json",
+      "svgPath": "diagrams/diagram.absolute-relative-risk-toy.svg",
+      "lessonId": "evidence-based-medicine.effects.absolute-relative"
+    },
+    {
+      "id": "diagram.channel-recovery-time-toy",
+      "path": "diagrams/diagram.channel-recovery-time-toy.json",
+      "svgPath": "diagrams/diagram.channel-recovery-time-toy.svg",
+      "lessonId": "pharmacology.cardiovascular.antiarrhythmic-mechanisms"
+    },
+    {
+      "id": "diagram.fibrin-marker-turnover-toy",
+      "path": "diagrams/diagram.fibrin-marker-turnover-toy.json",
+      "svgPath": "diagrams/diagram.fibrin-marker-turnover-toy.svg",
+      "lessonId": "pathology.hemodynamics.fibrinolysis-markers"
+    },
+    {
+      "id": "diagram.consumption-step-toy",
+      "path": "diagrams/diagram.consumption-step-toy.json",
+      "svgPath": "diagrams/diagram.consumption-step-toy.svg",
+      "lessonId": "pathology.hemodynamics.dic-consumption"
+    },
+    {
+      "id": "diagram.shock-delivery-flow-toy",
+      "path": "diagrams/diagram.shock-delivery-flow-toy.json",
+      "svgPath": "diagrams/diagram.shock-delivery-flow-toy.svg",
+      "lessonId": "pathology.shock.oxygen-budget"
+    },
+    {
+      "id": "diagram.shock-extraction-toy",
+      "path": "diagrams/diagram.shock-extraction-toy.json",
+      "svgPath": "diagrams/diagram.shock-extraction-toy.svg",
+      "lessonId": "pathology.shock.oxygen-budget"
+    },
+    {
+      "id": "diagram.hemorrhage-concentration-toy",
+      "path": "diagrams/diagram.hemorrhage-concentration-toy.json",
+      "svgPath": "diagrams/diagram.hemorrhage-concentration-toy.svg",
+      "lessonId": "pathology.shock.hypovolemia-response"
+    },
+    {
+      "id": "diagram.lactate-production-clearance-toy",
+      "path": "diagrams/diagram.lactate-production-clearance-toy.json",
+      "svgPath": "diagrams/diagram.lactate-production-clearance-toy.svg",
+      "lessonId": "pathology.shock.lactate-kinetics"
+    },
+    {
+      "id": "diagram.venous-backpressure-flow-toy",
+      "path": "diagrams/diagram.venous-backpressure-flow-toy.json",
+      "svgPath": "diagrams/diagram.venous-backpressure-flow-toy.svg",
+      "lessonId": "pathology.shock.venous-backpressure"
+    },
+    {
+      "id": "diagram.anion-gap-bicarbonate-toy",
+      "path": "diagrams/diagram.anion-gap-bicarbonate-toy.json",
+      "svgPath": "diagrams/diagram.anion-gap-bicarbonate-toy.svg",
+      "lessonId": "pathology.shock.acid-base-integration"
+    },
+    {
+      "id": "diagram.inflammation-occupancy-gradient-toy",
+      "path": "diagrams/diagram.inflammation-occupancy-gradient-toy.json",
+      "svgPath": "diagrams/diagram.inflammation-occupancy-gradient-toy.svg",
+      "lessonId": "pathology.inflammation.chemotactic-migration"
+    },
+    {
+      "id": "diagram.inflammation-direction-displacement-toy",
+      "path": "diagrams/diagram.inflammation-direction-displacement-toy.json",
+      "svgPath": "diagrams/diagram.inflammation-direction-displacement-toy.svg",
+      "lessonId": "pathology.inflammation.chemotactic-migration"
+    },
+    {
+      "id": "diagram.inflammation-marker-decay-toy",
+      "path": "diagrams/diagram.inflammation-marker-decay-toy.json",
+      "svgPath": "diagrams/diagram.inflammation-marker-decay-toy.svg",
+      "lessonId": "pathology.inflammation.systemic-acute-phase"
+    },
+    {
+      "id": "diagram.inflammation-efferocytosis-balance-toy",
+      "path": "diagrams/diagram.inflammation-efferocytosis-balance-toy.json",
+      "svgPath": "diagrams/diagram.inflammation-efferocytosis-balance-toy.svg",
+      "lessonId": "pathology.inflammation.resolution-efferocytosis"
+    },
+    {
+      "id": "diagram.repair-matrix-turnover-toy",
+      "path": "diagrams/diagram.repair-matrix-turnover-toy.json",
+      "svgPath": "diagrams/diagram.repair-matrix-turnover-toy.svg",
+      "lessonId": "pathology.repair.collagen-biosynthesis"
+    },
+    {
+      "id": "diagram.repair-radius-area-toy",
+      "path": "diagrams/diagram.repair-radius-area-toy.json",
+      "svgPath": "diagrams/diagram.repair-radius-area-toy.svg",
+      "lessonId": "pathology.repair.wound-measurement-geometry"
+    },
+    {
+      "id": "diagram.repair-stress-strain-toy",
+      "path": "diagrams/diagram.repair-stress-strain-toy.json",
+      "svgPath": "diagrams/diagram.repair-stress-strain-toy.svg",
+      "lessonId": "pathology.repair.scar-mechanics"
+    },
+    {
+      "id": "diagram.inflammation-fluid-balance-toy",
+      "path": "diagrams/diagram.inflammation-fluid-balance-toy.json",
+      "svgPath": "diagrams/diagram.inflammation-fluid-balance-toy.svg",
+      "lessonId": "pathology.inflammation.vascular-exudation"
+    },
+    {
+      "id": "diagram.immune-mhc-decay-toy",
+      "path": "diagrams/diagram.immune-mhc-decay-toy.json",
+      "svgPath": "diagrams/diagram.immune-mhc-decay-toy.svg",
+      "lessonId": "immunology.presentation.class-i-processing"
+    },
+    {
+      "id": "diagram.immune-clone-net-growth-toy",
+      "path": "diagrams/diagram.immune-clone-net-growth-toy.json",
+      "svgPath": "diagrams/diagram.immune-clone-net-growth-toy.svg",
+      "lessonId": "immunology.t-cells.tcr-costimulation"
+    },
+    {
+      "id": "diagram.immune-affinity-binding-toy",
+      "path": "diagrams/diagram.immune-affinity-binding-toy.json",
+      "svgPath": "diagrams/diagram.immune-affinity-binding-toy.svg",
+      "lessonId": "immunology.b-cells.aid-affinity-switch"
+    },
+    {
+      "id": "diagram.immune-antibody-production-toy",
+      "path": "diagrams/diagram.immune-antibody-production-toy.json",
+      "svgPath": "diagrams/diagram.immune-antibody-production-toy.svg",
+      "lessonId": "immunology.antibodies.effector-fcrn"
+    },
+    {
+      "id": "diagram.immune-absolute-count-toy",
+      "path": "diagrams/diagram.immune-absolute-count-toy.json",
+      "svgPath": "diagrams/diagram.immune-absolute-count-toy.svg",
+      "lessonId": "immunology.methods.flow-cytometry-counts"
+    },
+    {
+      "id": "diagram.immune-lysis-background-toy",
+      "path": "diagrams/diagram.immune-lysis-background-toy.json",
+      "svgPath": "diagrams/diagram.immune-lysis-background-toy.svg",
+      "lessonId": "immunology.cytotoxicity.cd8-nk-effector"
+    },
+    {
+      "id": "diagram.immune-mucosal-flux-toy",
+      "path": "diagrams/diagram.immune-mucosal-flux-toy.json",
+      "svgPath": "diagrams/diagram.immune-mucosal-flux-toy.svg",
+      "lessonId": "immunology.mucosal.iga-oral-tolerance"
+    },
+    {
+      "id": "diagram.immune-memory-two-pools-toy",
+      "path": "diagrams/diagram.immune-memory-two-pools-toy.json",
+      "svgPath": "diagrams/diagram.immune-memory-two-pools-toy.svg",
+      "lessonId": "immunology.memory.vaccine-response-layers"
+    },
+    {
+      "id": "diagram.immune-specimen-loss-toy",
+      "path": "diagrams/diagram.immune-specimen-loss-toy.json",
+      "svgPath": "diagrams/diagram.immune-specimen-loss-toy.svg",
+      "lessonId": "immunology.innate.complement-functional-tests"
+    },
+    {
+      "id": "diagram.immune-clone-survival-fraction-toy",
+      "path": "diagrams/diagram.immune-clone-survival-fraction-toy.json",
+      "svgPath": "diagrams/diagram.immune-clone-survival-fraction-toy.svg",
+      "lessonId": "immunology.innate.complement-surface-regulation"
+    },
+    {
+      "id": "diagram.immune-blood-tissue-transfer-toy",
+      "path": "diagrams/diagram.immune-blood-tissue-transfer-toy.json",
+      "svgPath": "diagrams/diagram.immune-blood-tissue-transfer-toy.svg",
+      "lessonId": "immunology.hypersensitivity.eosinophil-late-phase"
+    },
+    {
+      "id": "diagram.immune-receptor-function-toy",
+      "path": "diagrams/diagram.immune-receptor-function-toy.json",
+      "svgPath": "diagrams/diagram.immune-receptor-function-toy.svg",
+      "lessonId": "immunology.hypersensitivity.receptor-autoantibodies"
+    },
+    {
+      "id": "diagram.immune-pretest-ppv-toy",
+      "path": "diagrams/diagram.immune-pretest-ppv-toy.json",
+      "svgPath": "diagrams/diagram.immune-pretest-ppv-toy.svg",
+      "lessonId": "immunology.autoimmunity.ana-pretest-probability"
+    },
+    {
+      "id": "diagram.immune-hook-signal-toy",
+      "path": "diagrams/diagram.immune-hook-signal-toy.json",
+      "svgPath": "diagrams/diagram.immune-hook-signal-toy.svg",
+      "lessonId": "immunology.methods.immunoassay-interference"
+    },
+    {
+      "id": "diagram.immune-target-outcome-toy",
+      "path": "diagrams/diagram.immune-target-outcome-toy.json",
+      "svgPath": "diagrams/diagram.immune-target-outcome-toy.svg",
+      "lessonId": "immunology.methods.biomarker-context-longitudinal"
+    },
+    {
+      "id": "diagram.immune-early-late-toy",
+      "path": "diagrams/diagram.immune-early-late-toy.json",
+      "svgPath": "diagrams/diagram.immune-early-late-toy.svg",
+      "lessonId": "immunology.hypersensitivity.ige-sensitization"
+    },
+    {
+      "id": "diagram.bacteria-influx-loss-toy",
+      "path": "diagrams/diagram.bacteria-influx-loss-toy.json",
+      "svgPath": "diagrams/diagram.bacteria-influx-loss-toy.svg",
+      "lessonId": "bacteriology.structure.outer-membrane-transport"
+    },
+    {
+      "id": "diagram.bacteria-log2-growth-toy",
+      "path": "diagrams/diagram.bacteria-log2-growth-toy.json",
+      "svgPath": "diagrams/diagram.bacteria-log2-growth-toy.svg",
+      "lessonId": "bacteriology.growth.counts-and-kinetics"
+    },
+    {
+      "id": "diagram.bacteria-survival-tail-toy",
+      "path": "diagrams/diagram.bacteria-survival-tail-toy.json",
+      "svgPath": "diagrams/diagram.bacteria-survival-tail-toy.svg",
+      "lessonId": "bacteriology.survival.biofilm-heterogeneity"
+    },
+    {
+      "id": "diagram.bacteria-two-stage-transfer-toy",
+      "path": "diagrams/diagram.bacteria-two-stage-transfer-toy.json",
+      "svgPath": "diagrams/diagram.bacteria-two-stage-transfer-toy.svg",
+      "lessonId": "bacteriology.toxins.ab-toxin-trafficking"
+    },
+    {
+      "id": "diagram.bacteria-kill-rate-toy",
+      "path": "diagrams/diagram.bacteria-kill-rate-toy.json",
+      "svgPath": "diagrams/diagram.bacteria-kill-rate-toy.svg",
+      "lessonId": "bacteriology.methods.mic-mbc-timekill"
+    },
+    {
+      "id": "diagram.bacteria-sample-capture-toy",
+      "path": "diagrams/diagram.bacteria-sample-capture-toy.json",
+      "svgPath": "diagrams/diagram.bacteria-sample-capture-toy.svg",
+      "lessonId": "bacteriology.methods.specimen-culture-context"
+    },
+    {
+      "id": "diagram.bacteria-log-reduction-toy",
+      "path": "diagrams/diagram.bacteria-log-reduction-toy.json",
+      "svgPath": "diagrams/diagram.bacteria-log-reduction-toy.svg",
+      "lessonId": "bacteriology.control.log-reduction-validation"
+    },
+    {
+      "id": "diagram.bacteria-iron-uptake-toy",
+      "path": "diagrams/diagram.bacteria-iron-uptake-toy.json",
+      "svgPath": "diagrams/diagram.bacteria-iron-uptake-toy.svg",
+      "lessonId": "bacteriology.virulence.iron-acquisition"
+    },
+    {
+      "id": "diagram.screening-fixed-death-time-toy",
+      "path": "diagrams/diagram.screening-fixed-death-time-toy.json",
+      "svgPath": "diagrams/diagram.screening-fixed-death-time-toy.svg",
+      "lessonId": "preventive-medicine.screening.benefit-harm"
+    },
+    {
+      "id": "diagram.coronary-pressure-loss-toy",
+      "path": "diagrams/diagram.coronary-pressure-loss-toy.json",
+      "svgPath": "diagrams/diagram.coronary-pressure-loss-toy.svg",
+      "lessonId": "cardiology.coronary.atherothrombosis"
+    },
+    {
+      "id": "diagram.coronary-oxygen-content-toy",
+      "path": "diagrams/diagram.coronary-oxygen-content-toy.json",
+      "svgPath": "diagrams/diagram.coronary-oxygen-content-toy.svg",
+      "lessonId": "cardiology.ischemia.oxygen-balance"
+    },
+    {
+      "id": "diagram.coronary-reserve-denominator-toy",
+      "path": "diagrams/diagram.coronary-reserve-denominator-toy.json",
+      "svgPath": "diagrams/diagram.coronary-reserve-denominator-toy.svg",
+      "lessonId": "cardiology.coronary.flow-reserve"
+    },
+    {
+      "id": "diagram.ecg-vector-projection-toy",
+      "path": "diagrams/diagram.ecg-vector-projection-toy.json",
+      "svgPath": "diagrams/diagram.ecg-vector-projection-toy.svg",
+      "lessonId": "cardiology.electrocardiography.lead-vectors"
+    },
+    {
+      "id": "diagram.troponin-release-clearance-toy",
+      "path": "diagrams/diagram.troponin-release-clearance-toy.json",
+      "svgPath": "diagrams/diagram.troponin-release-clearance-toy.svg",
+      "lessonId": "cardiology.biomarkers.troponin-release"
+    },
+    {
+      "id": "diagram.coronary-downstream-resistance-toy",
+      "path": "diagrams/diagram.coronary-downstream-resistance-toy.json",
+      "svgPath": "diagrams/diagram.coronary-downstream-resistance-toy.svg",
+      "lessonId": "cardiology.coronary.pressure-flow-indices"
+    },
+    {
+      "id": "diagram.cardiac-forward-stroke-toy",
+      "path": "diagrams/diagram.cardiac-forward-stroke-toy.json",
+      "svgPath": "diagrams/diagram.cardiac-forward-stroke-toy.svg",
+      "lessonId": "cardiology.imaging.regional-wall-motion"
+    },
+    {
+      "id": "diagram.cardiac-wall-stress-toy",
+      "path": "diagrams/diagram.cardiac-wall-stress-toy.json",
+      "svgPath": "diagrams/diagram.cardiac-wall-stress-toy.svg",
+      "lessonId": "cardiology.complications.remodeling-wall-stress"
+    },
+    {
+      "id": "diagram.prevention-population-shift-toy",
+      "path": "diagrams/diagram.prevention-population-shift-toy.json",
+      "svgPath": "diagrams/diagram.prevention-population-shift-toy.svg",
+      "lessonId": "preventive-medicine.prevention.levels-and-strategies"
+    },
+    {
+      "id": "diagram.phase4-threshold-toy",
+      "path": "diagrams/diagram.phase4-threshold-toy.json",
+      "svgPath": "diagrams/diagram.phase4-threshold-toy.svg",
+      "lessonId": "cardiology.arrhythmias.automaticity-triggered-activity"
+    },
+    {
+      "id": "diagram.refractory-wavelength-toy",
+      "path": "diagrams/diagram.refractory-wavelength-toy.json",
+      "svgPath": "diagrams/diagram.refractory-wavelength-toy.svg",
+      "lessonId": "cardiology.arrhythmias.refractoriness-conduction"
+    },
+    {
+      "id": "diagram.rr-heart-rate-toy",
+      "path": "diagrams/diagram.rr-heart-rate-toy.json",
+      "svgPath": "diagrams/diagram.rr-heart-rate-toy.svg",
+      "lessonId": "cardiology.electrocardiography.rate-interval-measurement"
+    },
+    {
+      "id": "diagram.flutter-ratio-toy",
+      "path": "diagrams/diagram.flutter-ratio-toy.json",
+      "svgPath": "diagrams/diagram.flutter-ratio-toy.svg",
+      "lessonId": "cardiology.arrhythmias.atrial-flutter"
+    },
+    {
+      "id": "diagram.af-burden-denominator-toy",
+      "path": "diagrams/diagram.af-burden-denominator-toy.json",
+      "svgPath": "diagrams/diagram.af-burden-denominator-toy.svg",
+      "lessonId": "cardiology.arrhythmias.atrial-fibrillation-burden"
+    },
+    {
+      "id": "diagram.fixed-sv-output-toy",
+      "path": "diagrams/diagram.fixed-sv-output-toy.json",
+      "svgPath": "diagrams/diagram.fixed-sv-output-toy.svg",
+      "lessonId": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm"
+    },
+    {
+      "id": "diagram.vt-circuit-period-toy",
+      "path": "diagrams/diagram.vt-circuit-period-toy.json",
+      "svgPath": "diagrams/diagram.vt-circuit-period-toy.svg",
+      "lessonId": "cardiology.arrhythmias.monomorphic-ventricular-tachycardia"
+    },
+    {
+      "id": "diagram.qtc-formula-toy",
+      "path": "diagrams/diagram.qtc-formula-toy.json",
+      "svgPath": "diagrams/diagram.qtc-formula-toy.svg",
+      "lessonId": "cardiology.arrhythmias.torsades-long-qt"
+    },
+    {
+      "id": "diagram.poisson-capture-toy",
+      "path": "diagrams/diagram.poisson-capture-toy.json",
+      "svgPath": "diagrams/diagram.poisson-capture-toy.svg",
+      "lessonId": "cardiology.arrhythmias.ambulatory-monitoring-ep-study"
+    },
+    {
+      "id": "diagram.quiz-edv-esv-0831",
+      "path": "diagrams/diagram.quiz-edv-esv-0831.json",
+      "svgPath": "diagrams/diagram.quiz-edv-esv-0831.svg",
+      "lessonId": "physiology.cardiovascular.cardiac-cycle"
+    },
+    {
+      "id": "diagram.quiz-clearance-rate-0831",
+      "path": "diagrams/diagram.quiz-clearance-rate-0831.json",
+      "svgPath": "diagrams/diagram.quiz-clearance-rate-0831.svg",
+      "lessonId": "pharmacology.general.pharmacokinetics"
+    },
+    {
+      "id": "diagram.quiz-alveolar-frequency-0831",
+      "path": "diagrams/diagram.quiz-alveolar-frequency-0831.json",
+      "svgPath": "diagrams/diagram.quiz-alveolar-frequency-0831.svg",
+      "lessonId": "physiology.respiratory.ventilation-perfusion"
+    },
+    {
+      "id": "diagram.quiz-ppv-prevalence-0831",
+      "path": "diagrams/diagram.quiz-ppv-prevalence-0831.json",
+      "svgPath": "diagrams/diagram.quiz-ppv-prevalence-0831.svg",
+      "lessonId": "biostatistics.diagnosis.bayes"
+    },
+    {
+      "id": "diagram.quiz-camp-balance-0834",
+      "path": "diagrams/diagram.quiz-camp-balance-0834.json",
+      "svgPath": "diagrams/diagram.quiz-camp-balance-0834.svg",
+      "lessonId": "cell-biology.signaling.receptors"
+    },
+    {
+      "id": "diagram.quiz-acidbase-ratio-0835",
+      "path": "diagrams/diagram.quiz-acidbase-ratio-0835.json",
+      "svgPath": "diagrams/diagram.quiz-acidbase-ratio-0835.svg",
+      "lessonId": "electrolytes.acid-base.interpretation"
+    },
+    {
+      "id": "diagram.quiz-particle-cargo-0835",
+      "path": "diagrams/diagram.quiz-particle-cargo-0835.json",
+      "svgPath": "diagrams/diagram.quiz-particle-cargo-0835.svg",
+      "lessonId": "biochemistry.lipids.lipoproteins"
+    },
+    {
+      "id": "diagram.quiz-audiogram-gap-0836",
+      "path": "diagrams/diagram.quiz-audiogram-gap-0836.json",
+      "svgPath": "diagrams/diagram.quiz-audiogram-gap-0836.svg",
+      "lessonId": "otolaryngology.hearing.conduction"
+    },
+    {
+      "id": "diagram.quiz-ef-volume-0836",
+      "path": "diagrams/diagram.quiz-ef-volume-0836.json",
+      "svgPath": "diagrams/diagram.quiz-ef-volume-0836.svg",
+      "lessonId": "cardiology.heart-failure.syndrome"
+    },
+    {
+      "id": "diagram.quiz-bed-fraction-0836",
+      "path": "diagrams/diagram.quiz-bed-fraction-0836.json",
+      "svgPath": "diagrams/diagram.quiz-bed-fraction-0836.svg",
+      "lessonId": "radiation-oncology.principles.radiobiology"
+    },
+    {
+      "id": "diagram.quiz-pressure-resistance-0838",
+      "path": "diagrams/diagram.quiz-pressure-resistance-0838.json",
+      "svgPath": "diagrams/diagram.quiz-pressure-resistance-0838.svg",
+      "lessonId": "neurosurgery.physiology.intracranial-pressure"
+    },
+    {
+      "id": "diagram.quiz-budget-population-0838",
+      "path": "diagrams/diagram.quiz-budget-population-0838.json",
+      "svgPath": "diagrams/diagram.quiz-budget-population-0838.svg",
+      "lessonId": "health-economics.evaluation.cost-effectiveness"
+    },
+    {
+      "id": "diagram.quiz-dose-exposure-time-0838",
+      "path": "diagrams/diagram.quiz-dose-exposure-time-0838.json",
+      "svgPath": "diagrams/diagram.quiz-dose-exposure-time-0838.svg",
+      "lessonId": "environmental-health.risk.exposure-dose-response"
+    },
+    {
+      "id": "diagram.quiz-report-probability-0839",
+      "path": "diagrams/diagram.quiz-report-probability-0839.json",
+      "svgPath": "diagrams/diagram.quiz-report-probability-0839.svg",
+      "lessonId": "patient-safety.medication.reconciliation-systems"
+    },
+    {
+      "id": "diagram.quiz-access-utilization-0839",
+      "path": "diagrams/diagram.quiz-access-utilization-0839.json",
+      "svgPath": "diagrams/diagram.quiz-access-utilization-0839.svg",
+      "lessonId": "community-medicine.population.health-needs"
+    },
+    {
+      "id": "diagram.quiz-followup-observation-0839",
+      "path": "diagrams/diagram.quiz-followup-observation-0839.json",
+      "svgPath": "diagrams/diagram.quiz-followup-observation-0839.svg",
+      "lessonId": "research-methods.trials.randomization-estimands"
+    },
+    {
+      "id": "diagram.quiz-growth-stock-flux-0840",
+      "path": "diagrams/diagram.quiz-growth-stock-flux-0840.json",
+      "svgPath": "diagrams/diagram.quiz-growth-stock-flux-0840.svg",
+      "lessonId": "embryology.skeleton.ossification-growth-plate"
+    },
+    {
+      "id": "diagram.pacing-energy-0841",
+      "path": "diagrams/diagram.pacing-energy-0841.json",
+      "svgPath": "diagrams/diagram.pacing-energy-0841.svg",
+      "lessonId": "cardiology.devices.pacemaker-troubleshooting"
+    },
+    {
+      "id": "diagram.hydrostatic-height-0841",
+      "path": "diagrams/diagram.hydrostatic-height-0841.json",
+      "svgPath": "diagrams/diagram.hydrostatic-height-0841.svg",
+      "lessonId": "cardiology.diagnosis.orthostatic-hypotension"
+    },
+    {
+      "id": "diagram.dcmp-ejection-fraction-0841",
+      "path": "diagrams/diagram.dcmp-ejection-fraction-0841.json",
+      "svgPath": "diagrams/diagram.dcmp-ejection-fraction-0841.svg",
+      "lessonId": "cardiology.cardiomyopathy.dilated-cardiomyopathy"
+    },
+    {
+      "id": "diagram.doppler-pressure-square-0841",
+      "path": "diagrams/diagram.doppler-pressure-square-0841.json",
+      "svgPath": "diagrams/diagram.doppler-pressure-square-0841.svg",
+      "lessonId": "cardiology.cardiomyopathy.hypertrophic-obstruction"
+    },
+    {
+      "id": "diagram.restrictive-stiffness-0841",
+      "path": "diagrams/diagram.restrictive-stiffness-0841.json",
+      "svgPath": "diagrams/diagram.restrictive-stiffness-0841.svg",
+      "lessonId": "cardiology.cardiomyopathy.restrictive-physiology"
+    },
+    {
+      "id": "diagram.cardiogenetic-penetrance-0841",
+      "path": "diagrams/diagram.cardiogenetic-penetrance-0841.json",
+      "svgPath": "diagrams/diagram.cardiogenetic-penetrance-0841.svg",
+      "lessonId": "cardiology.cardiomyopathy.genetics-family-screening"
+    },
+    {
+      "id": "diagram.pericardial-compliance-0842",
+      "path": "diagrams/diagram.pericardial-compliance-0842.json",
+      "svgPath": "diagrams/diagram.pericardial-compliance-0842.svg",
+      "lessonId": "cardiology.pericardium.effusion"
+    },
+    {
+      "id": "diagram.transmural-pressure-0842",
+      "path": "diagrams/diagram.transmural-pressure-0842.json",
+      "svgPath": "diagrams/diagram.transmural-pressure-0842.svg",
+      "lessonId": "cardiology.pericardium.tamponade"
+    },
+    {
+      "id": "diagram.diameter-area-error-0842",
+      "path": "diagrams/diagram.diameter-area-error-0842.json",
+      "svgPath": "diagrams/diagram.diameter-area-error-0842.svg",
+      "lessonId": "cardiology.valvular.aortic-stenosis-discordance"
+    },
+    {
+      "id": "diagram.aortic-net-flow-0842",
+      "path": "diagrams/diagram.aortic-net-flow-0842.json",
+      "svgPath": "diagrams/diagram.aortic-net-flow-0842.svg",
+      "lessonId": "cardiology.valvular.aortic-regurgitation"
+    },
+    {
+      "id": "diagram.diastolic-time-flow-0842",
+      "path": "diagrams/diagram.diastolic-time-flow-0842.json",
+      "svgPath": "diagrams/diagram.diastolic-time-flow-0842.svg",
+      "lessonId": "cardiology.valvular.mitral-stenosis"
+    },
+    {
+      "id": "diagram.mitral-forward-volume-0842",
+      "path": "diagrams/diagram.mitral-forward-volume-0842.json",
+      "svgPath": "diagrams/diagram.mitral-forward-volume-0842.svg",
+      "lessonId": "cardiology.valvular.primary-mitral-regurgitation"
+    },
+    {
+      "id": "diagram.shunt-recirculation-0843",
+      "path": "diagrams/diagram.shunt-recirculation-0843.json",
+      "svgPath": "diagrams/diagram.shunt-recirculation-0843.svg",
+      "lessonId": "cardiology.congenital.shunt-physiology"
+    },
+    {
+      "id": "diagram.oxygen-content-0843",
+      "path": "diagrams/diagram.oxygen-content-0843.json",
+      "svgPath": "diagrams/diagram.oxygen-content-0843.svg",
+      "lessonId": "cardiology.congenital.cyanosis-eisenmenger"
+    },
+    {
+      "id": "diagram.mixing-oxygen-content-0843",
+      "path": "diagrams/diagram.mixing-oxygen-content-0843.json",
+      "svgPath": "diagrams/diagram.mixing-oxygen-content-0843.svg",
+      "lessonId": "cardiology.congenital.transposition-mixing"
+    },
+    {
+      "id": "diagram.fontan-pressure-resistance-0843",
+      "path": "diagrams/diagram.fontan-pressure-resistance-0843.json",
+      "svgPath": "diagrams/diagram.fontan-pressure-resistance-0843.svg",
+      "lessonId": "cardiology.congenital.fontan-circulation"
+    },
+    {
+      "id": "diagram.negative-test-bayes-0843",
+      "path": "diagrams/diagram.negative-test-bayes-0843.json",
+      "svgPath": "diagrams/diagram.negative-test-bayes-0843.svg",
+      "lessonId": "cardiology.infection.endocarditis-imaging"
+    },
+    {
+      "id": "diagram.aortic-wall-stress-ratio-0843",
+      "path": "diagrams/diagram.aortic-wall-stress-ratio-0843.json",
+      "svgPath": "diagrams/diagram.aortic-wall-stress-ratio-0843.svg",
+      "lessonId": "cardiology.aorta.aneurysm-wall-mechanics"
+    },
+    {
+      "id": "diagram.abi-pressure-ratio-0844",
+      "path": "diagrams/diagram.abi-pressure-ratio-0844.json",
+      "svgPath": "diagrams/diagram.abi-pressure-ratio-0844.svg",
+      "lessonId": "cardiology.vascular.ankle-brachial-assessment"
+    },
+    {
+      "id": "diagram.deadspace-alveolar-ventilation-0844",
+      "path": "diagrams/diagram.deadspace-alveolar-ventilation-0844.json",
+      "svgPath": "diagrams/diagram.deadspace-alveolar-ventilation-0844.svg",
+      "lessonId": "pulmonology.vascular.pulmonary-embolism-gas-exchange"
+    },
+    {
+      "id": "diagram.negative-probability-0844",
+      "path": "diagrams/diagram.negative-probability-0844.json",
+      "svgPath": "diagrams/diagram.negative-probability-0844.svg",
+      "lessonId": "pulmonology.vascular.pulmonary-embolism-assessment"
+    },
+    {
+      "id": "diagram.pulmonary-pressure-flow-0844",
+      "path": "diagrams/diagram.pulmonary-pressure-flow-0844.json",
+      "svgPath": "diagrams/diagram.pulmonary-pressure-flow-0844.svg",
+      "lessonId": "pulmonology.pulmonary-hypertension.hemodynamics"
+    },
+    {
+      "id": "diagram.exhaled-volume-time-0844",
+      "path": "diagrams/diagram.exhaled-volume-time-0844.json",
+      "svgPath": "diagrams/diagram.exhaled-volume-time-0844.svg",
+      "lessonId": "pulmonology.testing.spirometry-quality"
+    },
+    {
+      "id": "diagram.residual-vital-volume-0844",
+      "path": "diagrams/diagram.residual-vital-volume-0844.json",
+      "svgPath": "diagrams/diagram.residual-vital-volume-0844.svg",
+      "lessonId": "pulmonology.testing.lung-volumes"
+    },
+    {
+      "id": "diagram.airway-radius-resistance-0845",
+      "path": "diagrams/diagram.airway-radius-resistance-0845.json",
+      "svgPath": "diagrams/diagram.airway-radius-resistance-0845.svg",
+      "lessonId": "pulmonology.airways.asthma-diagnostic-variability"
+    },
+    {
+      "id": "diagram.inhaled-deposition-fraction-0845",
+      "path": "diagrams/diagram.inhaled-deposition-fraction-0845.json",
+      "svgPath": "diagrams/diagram.inhaled-deposition-fraction-0845.svg",
+      "lessonId": "pulmonology.airways.asthma-controller-inhaler"
+    },
+    {
+      "id": "diagram.passive-expiration-time-0845",
+      "path": "diagrams/diagram.passive-expiration-time-0845.json",
+      "svgPath": "diagrams/diagram.passive-expiration-time-0845.svg",
+      "lessonId": "pulmonology.airways.asthma-exacerbation"
+    },
+    {
+      "id": "diagram.alveolar-ventilation-co2-0845",
+      "path": "diagrams/diagram.alveolar-ventilation-co2-0845.json",
+      "svgPath": "diagrams/diagram.alveolar-ventilation-co2-0845.svg",
+      "lessonId": "pulmonology.obstruction.copd-exacerbation"
+    },
+    {
+      "id": "diagram.mucus-stock-clearance-0845",
+      "path": "diagrams/diagram.mucus-stock-clearance-0845.json",
+      "svgPath": "diagrams/diagram.mucus-stock-clearance-0845.svg",
+      "lessonId": "pulmonology.airways.bronchiectasis-injury-cycle"
+    },
+    {
+      "id": "diagram.ciliary-coordination-0845",
+      "path": "diagrams/diagram.ciliary-coordination-0845.json",
+      "svgPath": "diagrams/diagram.ciliary-coordination-0845.svg",
+      "lessonId": "pulmonology.airways.mucociliary-defense"
+    },
+    {
+      "id": "diagram.oxygen-mixing-shunt-0846",
+      "path": "diagrams/diagram.oxygen-mixing-shunt-0846.json",
+      "svgPath": "diagrams/diagram.oxygen-mixing-shunt-0846.svg",
+      "lessonId": "pulmonology.infection.pneumonia-host-gas-exchange"
+    },
+    {
+      "id": "diagram.positive-test-probability-0846",
+      "path": "diagrams/diagram.positive-test-probability-0846.json",
+      "svgPath": "diagrams/diagram.positive-test-probability-0846.svg",
+      "lessonId": "pulmonology.infection.tuberculosis-diagnostic-evidence"
+    },
+    {
+      "id": "diagram.selection-relative-fraction-0846",
+      "path": "diagrams/diagram.selection-relative-fraction-0846.json",
+      "svgPath": "diagrams/diagram.selection-relative-fraction-0846.svg",
+      "lessonId": "pulmonology.infection.tuberculosis-therapy-resistance"
+    },
+    {
+      "id": "diagram.diffusion-area-thickness-0846",
+      "path": "diagrams/diagram.diffusion-area-thickness-0846.json",
+      "svgPath": "diagrams/diagram.diffusion-area-thickness-0846.svg",
+      "lessonId": "pulmonology.interstitial.pattern-clinical-context"
+    },
+    {
+      "id": "diagram.ph-hydrogen-concentration-0846",
+      "path": "diagrams/diagram.ph-hydrogen-concentration-0846.json",
+      "svgPath": "diagrams/diagram.ph-hydrogen-concentration-0846.svg",
+      "lessonId": "pulmonology.pleural.effusion-fluid-mechanisms"
+    },
+    {
+      "id": "diagram.separate-fluid-compartments-0846",
+      "path": "diagrams/diagram.separate-fluid-compartments-0846.json",
+      "svgPath": "diagrams/diagram.separate-fluid-compartments-0846.svg",
+      "lessonId": "pulmonology.pleural.infection-empyema"
+    },
+    {
+      "id": "diagram.absolute-risk-benefit-0847",
+      "path": "diagrams/diagram.absolute-risk-benefit-0847.json",
+      "svgPath": "diagrams/diagram.absolute-risk-benefit-0847.svg",
+      "lessonId": "general-surgery.assessment.risk-benefit-timing"
+    },
+    {
+      "id": "diagram.hemoglobin-oxygen-delivery-0847",
+      "path": "diagrams/diagram.hemoglobin-oxygen-delivery-0847.json",
+      "svgPath": "diagrams/diagram.hemoglobin-oxygen-delivery-0847.svg",
+      "lessonId": "general-surgery.assessment.anemia-hemostasis"
+    },
+    {
+      "id": "diagram.nitrogen-balance-0847",
+      "path": "diagrams/diagram.nitrogen-balance-0847.json",
+      "svgPath": "diagrams/diagram.nitrogen-balance-0847.svg",
+      "lessonId": "general-surgery.physiology.stress-metabolism"
+    },
+    {
+      "id": "diagram.matrix-accumulation-0847",
+      "path": "diagrams/diagram.matrix-accumulation-0847.json",
+      "svgPath": "diagrams/diagram.matrix-accumulation-0847.svg",
+      "lessonId": "general-surgery.wound.remodeling-scar"
+    },
+    {
+      "id": "diagram.perioperative-decay-0847",
+      "path": "diagrams/diagram.perioperative-decay-0847.json",
+      "svgPath": "diagrams/diagram.perioperative-decay-0847.svg",
+      "lessonId": "general-surgery.infection.prevention-antimicrobial"
+    },
+    {
+      "id": "diagram.source-inflow-outflow-0847",
+      "path": "diagrams/diagram.source-inflow-outflow-0847.json",
+      "svgPath": "diagrams/diagram.source-inflow-outflow-0847.svg",
+      "lessonId": "general-surgery.infection.source-control"
+    },
+    {
+      "id": "diagram.shock-oxygen-flow-0848",
+      "path": "diagrams/diagram.shock-oxygen-flow-0848.json",
+      "svgPath": "diagrams/diagram.shock-oxygen-flow-0848.svg",
+      "lessonId": "trauma-surgery.shock.recognition-oxygen-debt"
+    },
+    {
+      "id": "diagram.hemoglobin-dilution-0848",
+      "path": "diagrams/diagram.hemoglobin-dilution-0848.json",
+      "svgPath": "diagrams/diagram.hemoglobin-dilution-0848.svg",
+      "lessonId": "trauma-surgery.transfusion.massive-monitoring"
+    },
+    {
+      "id": "diagram.minute-alveolar-ventilation-0848",
+      "path": "diagrams/diagram.minute-alveolar-ventilation-0848.json",
+      "svgPath": "diagrams/diagram.minute-alveolar-ventilation-0848.svg",
+      "lessonId": "general-surgery.respiratory.postoperative-hypoxemia"
+    },
+    {
+      "id": "diagram.suture-ideal-load-sharing-0848",
+      "path": "diagrams/diagram.suture-ideal-load-sharing-0848.json",
+      "svgPath": "diagrams/diagram.suture-ideal-load-sharing-0848.svg",
+      "lessonId": "general-surgery.technique.suture-tissue-mechanics"
+    },
+    {
+      "id": "diagram.drain-volume-solute-0848",
+      "path": "diagrams/diagram.drain-volume-solute-0848.json",
+      "svgPath": "diagrams/diagram.drain-volume-solute-0848.svg",
+      "lessonId": "general-surgery.technique.drains-fistula-balance"
+    },
+    {
+      "id": "diagram.esophageal-emptying-toy-0848",
+      "path": "diagrams/diagram.esophageal-emptying-toy-0848.json",
+      "svgPath": "diagrams/diagram.esophageal-emptying-toy-0848.svg",
+      "lessonId": "gi-surgery.esophagus.achalasia-intervention"
+    },
+    {
+      "id": "diagram.bicarbonate-fixed-co2-0849",
+      "path": "diagrams/diagram.bicarbonate-fixed-co2-0849.json",
+      "svgPath": "diagrams/diagram.bicarbonate-fixed-co2-0849.svg",
+      "lessonId": "gi-surgery.stomach.outlet-obstruction"
+    },
+    {
+      "id": "diagram.independent-negative-samples-0849",
+      "path": "diagrams/diagram.independent-negative-samples-0849.json",
+      "svgPath": "diagrams/diagram.independent-negative-samples-0849.svg",
+      "lessonId": "gi-surgery.stomach.gastrectomy-lymphatics"
+    },
+    {
+      "id": "diagram.synthetic-meal-glucose-0849",
+      "path": "diagrams/diagram.synthetic-meal-glucose-0849.json",
+      "svgPath": "diagrams/diagram.synthetic-meal-glucose-0849.svg",
+      "lessonId": "gi-surgery.stomach.postgastrectomy-function"
+    },
+    {
+      "id": "diagram.thin-cylinder-stress-0849",
+      "path": "diagrams/diagram.thin-cylinder-stress-0849.json",
+      "svgPath": "diagrams/diagram.thin-cylinder-stress-0849.svg",
+      "lessonId": "colorectal-surgery.obstruction.malignant-colonic-obstruction"
+    },
+    {
+      "id": "diagram.mesenteric-outflow-gradient-0849",
+      "path": "diagrams/diagram.mesenteric-outflow-gradient-0849.json",
+      "svgPath": "diagrams/diagram.mesenteric-outflow-gradient-0849.svg",
+      "lessonId": "gi-surgery.ischemia.strangulation-mesenteric-flow"
+    },
+    {
+      "id": "diagram.stoma-sodium-balance-0849",
+      "path": "diagrams/diagram.stoma-sodium-balance-0849.json",
+      "svgPath": "diagrams/diagram.stoma-sodium-balance-0849.svg",
+      "lessonId": "colorectal-surgery.stoma.fluid-skin-function"
+    },
+    {
+      "id": "diagram.roux-food-biliopancreatic-0849",
+      "path": "diagrams/diagram.roux-food-biliopancreatic-0849.json",
+      "svgPath": "diagrams/diagram.roux-food-biliopancreatic-0849.svg",
+      "lessonId": "gi-surgery.stomach.reconstruction-flow"
+    },
+    {
+      "id": "diagram.stoma-intake-absorption-loss-0849",
+      "path": "diagrams/diagram.stoma-intake-absorption-loss-0849.json",
+      "svgPath": "diagrams/diagram.stoma-intake-absorption-loss-0849.svg",
+      "lessonId": "colorectal-surgery.stoma.fluid-skin-function"
+    },
+    {
+      "id": "diagram.synthetic-abscess-crp-0850",
+      "path": "diagrams/diagram.synthetic-abscess-crp-0850.json",
+      "svgPath": "diagrams/diagram.synthetic-abscess-crp-0850.svg",
+      "lessonId": "colorectal-surgery.diverticular.abscess-source-control"
+    },
+    {
+      "id": "diagram.synthetic-postoperative-recurrence-0850",
+      "path": "diagrams/diagram.synthetic-postoperative-recurrence-0850.json",
+      "svgPath": "diagrams/diagram.synthetic-postoperative-recurrence-0850.svg",
+      "lessonId": "colorectal-surgery.ibd.postoperative-recurrence"
+    },
+    {
+      "id": "diagram.flr-denominator-0850",
+      "path": "diagrams/diagram.flr-denominator-0850.json",
+      "svgPath": "diagrams/diagram.flr-denominator-0850.svg",
+      "lessonId": "hpb-surgery.liver.future-remnant-function"
+    },
+    {
+      "id": "diagram.synthetic-pve-growth-0850",
+      "path": "diagrams/diagram.synthetic-pve-growth-0850.json",
+      "svgPath": "diagrams/diagram.synthetic-pve-growth-0850.svg",
+      "lessonId": "hpb-surgery.liver.pve-regeneration"
+    },
+    {
+      "id": "diagram.synthetic-bile-concentrations-0850",
+      "path": "diagrams/diagram.synthetic-bile-concentrations-0850.json",
+      "svgPath": "diagrams/diagram.synthetic-bile-concentrations-0850.svg",
+      "lessonId": "hpb-surgery.liver.posthepatectomy-complications"
+    },
+    {
+      "id": "diagram.spherical-volume-0850",
+      "path": "diagrams/diagram.spherical-volume-0850.json",
+      "svgPath": "diagrams/diagram.spherical-volume-0850.svg",
+      "lessonId": "hpb-surgery.liver.hcc-metastasis-selection"
+    },
+    {
+      "id": "diagram.anal-fistula-route-concepts-0850",
+      "path": "diagrams/diagram.anal-fistula-route-concepts-0850.json",
+      "svgPath": "diagrams/diagram.anal-fistula-route-concepts-0850.svg",
+      "lessonId": "colorectal-surgery.anorectal.fistula-sphincter"
+    },
+    {
+      "id": "diagram.liver-blood-bile-flow-0850",
+      "path": "diagrams/diagram.liver-blood-bile-flow-0850.json",
+      "svgPath": "diagrams/diagram.liver-blood-bile-flow-0850.svg",
+      "lessonId": "hpb-surgery.liver.functional-anatomy"
+    },
+    {
+      "id": "diagram.cardiac-output-product-0851",
+      "path": "diagrams/diagram.cardiac-output-product-0851.json",
+      "svgPath": "diagrams/diagram.cardiac-output-product-0851.svg",
+      "lessonId": "obstetrics.adaptation.cardiovascular-volume"
+    },
+    {
+      "id": "diagram.fixed-bicarbonate-co2-0851",
+      "path": "diagrams/diagram.fixed-bicarbonate-co2-0851.json",
+      "svgPath": "diagrams/diagram.fixed-bicarbonate-co2-0851.svg",
+      "lessonId": "obstetrics.adaptation.respiration-acid-base"
+    },
+    {
+      "id": "diagram.hypothetical-screening-ppv-0851",
+      "path": "diagrams/diagram.hypothetical-screening-ppv-0851.json",
+      "svgPath": "diagrams/diagram.hypothetical-screening-ppv-0851.svg",
+      "lessonId": "obstetrics.antenatal.aneuploidy-screening-diagnosis"
+    },
+    {
+      "id": "diagram.synthetic-hcg-followup-0851",
+      "path": "diagrams/diagram.synthetic-hcg-followup-0851.json",
+      "svgPath": "diagrams/diagram.synthetic-hcg-followup-0851.svg",
+      "lessonId": "obstetrics.early-pregnancy.location-viability"
+    },
+    {
+      "id": "diagram.doppler-ri-definition-0851",
+      "path": "diagrams/diagram.doppler-ri-definition-0851.json",
+      "svgPath": "diagrams/diagram.doppler-ri-definition-0851.svg",
+      "lessonId": "obstetrics.fetal-assessment.growth-doppler"
+    },
+    {
+      "id": "diagram.synthetic-height-followup-0851",
+      "path": "diagrams/diagram.synthetic-height-followup-0851.json",
+      "svgPath": "diagrams/diagram.synthetic-height-followup-0851.svg",
+      "lessonId": "pediatrics.growth.velocity-measurement"
+    },
+    {
+      "id": "diagram.synthetic-neonatal-bilirubin-0851",
+      "path": "diagrams/diagram.synthetic-neonatal-bilirubin-0851.json",
+      "svgPath": "diagrams/diagram.synthetic-neonatal-bilirubin-0851.svg",
+      "lessonId": "neonatology.bilirubin.hours-risk-assessment"
+    },
+    {
+      "id": "diagram.synthetic-newborn-weight-0851",
+      "path": "diagrams/diagram.synthetic-newborn-weight-0851.json",
+      "svgPath": "diagrams/diagram.synthetic-newborn-weight-0851.svg",
+      "lessonId": "neonatology.feeding.weight-hydration"
+    },
+    {
+      "id": "diagram.synthetic-75g-ogtt-case-0851",
+      "path": "diagrams/diagram.synthetic-75g-ogtt-case-0851.json",
+      "svgPath": "diagrams/diagram.synthetic-75g-ogtt-case-0851.svg",
+      "lessonId": "obstetrics.diabetes.screening-pathways"
+    },
+    {
+      "id": "diagram.placental-separate-streams-0851",
+      "path": "diagrams/diagram.placental-separate-streams-0851.json",
+      "svgPath": "diagrams/diagram.placental-separate-streams-0851.svg",
+      "lessonId": "obstetrics.placenta.exchange-endocrine"
+    },
+    {
+      "id": "diagram.preeclampsia-endothelial-links-0851",
+      "path": "diagrams/diagram.preeclampsia-endothelial-links-0851.json",
+      "svgPath": "diagrams/diagram.preeclampsia-endothelial-links-0851.svg",
+      "lessonId": "obstetrics.hypertension.classification-endothelium"
+    },
+    {
+      "id": "diagram.nernst-potassium-0852",
+      "path": "diagrams/diagram.nernst-potassium-0852.json",
+      "svgPath": "diagrams/diagram.nernst-potassium-0852.svg",
+      "lessonId": "neuroscience.membrane.ion-gradients"
+    },
+    {
+      "id": "diagram.passive-charging-0852",
+      "path": "diagrams/diagram.passive-charging-0852.json",
+      "svgPath": "diagrams/diagram.passive-charging-0852.svg",
+      "lessonId": "neuroscience.conduction.myelin-cable"
+    },
+    {
+      "id": "diagram.hypothetical-sensory-adaptation-0852",
+      "path": "diagrams/diagram.hypothetical-sensory-adaptation-0852.json",
+      "svgPath": "diagrams/diagram.hypothetical-sensory-adaptation-0852.svg",
+      "lessonId": "neuroscience.sensory.coding-pathways"
+    },
+    {
+      "id": "diagram.synthetic-sleep-diary-0852",
+      "path": "diagrams/diagram.synthetic-sleep-diary-0852.json",
+      "svgPath": "diagrams/diagram.synthetic-sleep-diary-0852.svg",
+      "lessonId": "neuroscience.sleep.circadian-arousal"
+    },
+    {
+      "id": "diagram.synthetic-headache-medication-days-0852",
+      "path": "diagrams/diagram.synthetic-headache-medication-days-0852.json",
+      "svgPath": "diagrams/diagram.synthetic-headache-medication-days-0852.svg",
+      "lessonId": "neurology.headache.primary-secondary"
+    },
+    {
+      "id": "diagram.hypothetical-cognitive-screen-ppv-0852",
+      "path": "diagrams/diagram.hypothetical-cognitive-screen-ppv-0852.json",
+      "svgPath": "diagrams/diagram.hypothetical-cognitive-screen-ppv-0852.svg",
+      "lessonId": "neurology.cognition.delirium-dementia"
+    },
+    {
+      "id": "diagram.synthetic-symptom-followup-0852",
+      "path": "diagrams/diagram.synthetic-symptom-followup-0852.json",
+      "svgPath": "diagrams/diagram.synthetic-symptom-followup-0852.svg",
+      "lessonId": "psychiatry.mood.depression-longitudinal"
+    },
+    {
+      "id": "diagram.synthetic-checking-distress-0852",
+      "path": "diagrams/diagram.synthetic-checking-distress-0852.json",
+      "svgPath": "diagrams/diagram.synthetic-checking-distress-0852.svg",
+      "lessonId": "psychiatry.anxiety.panic-ocd"
+    },
+    {
+      "id": "diagram.single-compartment-fraction-0852",
+      "path": "diagrams/diagram.single-compartment-fraction-0852.json",
+      "svgPath": "diagrams/diagram.single-compartment-fraction-0852.svg",
+      "lessonId": "psychiatry.treatment.monitoring-shared-decisions"
+    },
+    {
+      "id": "diagram.sensory-crossing-comparison-0852",
+      "path": "diagrams/diagram.sensory-crossing-comparison-0852.json",
+      "svgPath": "diagrams/diagram.sensory-crossing-comparison-0852.svg",
+      "lessonId": "neuroscience.sensory.coding-pathways"
+    },
+    {
+      "id": "diagram.neurological-localization-reasoning-0852",
+      "path": "diagrams/diagram.neurological-localization-reasoning-0852.json",
+      "svgPath": "diagrams/diagram.neurological-localization-reasoning-0852.svg",
+      "lessonId": "neurology.examination.localizing-weakness"
+    },
+    {
+      "id": "diagram.independent-release-zero-0853",
+      "path": "diagrams/diagram.independent-release-zero-0853.json",
+      "svgPath": "diagrams/diagram.independent-release-zero-0853.svg",
+      "lessonId": "neuroscience.nmj.release-safety-factor"
+    },
+    {
+      "id": "diagram.synthetic-isometric-force-0853",
+      "path": "diagrams/diagram.synthetic-isometric-force-0853.json",
+      "svgPath": "diagrams/diagram.synthetic-isometric-force-0853.svg",
+      "lessonId": "neuroscience.motor-unit.recruitment-fatigue"
+    },
+    {
+      "id": "diagram.synthetic-standing-bp-0853",
+      "path": "diagrams/diagram.synthetic-standing-bp-0853.json",
+      "svgPath": "diagrams/diagram.synthetic-standing-bp-0853.svg",
+      "lessonId": "neuroscience.autonomic.orthostatic-testing"
+    },
+    {
+      "id": "diagram.synthetic-parkinson-function-diary-0853",
+      "path": "diagrams/diagram.synthetic-parkinson-function-diary-0853.json",
+      "svgPath": "diagrams/diagram.synthetic-parkinson-function-diary-0853.svg",
+      "lessonId": "neurology.movement.parkinson-syndrome"
+    },
+    {
+      "id": "diagram.synthetic-distal-proximal-cmap-0853",
+      "path": "diagrams/diagram.synthetic-distal-proximal-cmap-0853.json",
+      "svgPath": "diagrams/diagram.synthetic-distal-proximal-cmap-0853.svg",
+      "lessonId": "neurology.neuropathy.axonal-demyelinating"
+    },
+    {
+      "id": "diagram.synthetic-repetitive-stimulation-0853",
+      "path": "diagrams/diagram.synthetic-repetitive-stimulation-0853.json",
+      "svgPath": "diagrams/diagram.synthetic-repetitive-stimulation-0853.svg",
+      "lessonId": "neurology.nmj.myasthenia-lambert-eaton"
+    },
+    {
+      "id": "diagram.synthetic-withdrawal-pulse-0853",
+      "path": "diagrams/diagram.synthetic-withdrawal-pulse-0853.json",
+      "svgPath": "diagrams/diagram.synthetic-withdrawal-pulse-0853.svg",
+      "lessonId": "psychiatry.substances.alcohol-intoxication-withdrawal"
+    },
+    {
+      "id": "diagram.synthetic-activation-tasks-0853",
+      "path": "diagrams/diagram.synthetic-activation-tasks-0853.json",
+      "svgPath": "diagrams/diagram.synthetic-activation-tasks-0853.svg",
+      "lessonId": "psychiatry.psychotherapy.cbt-formulation"
+    },
+    {
+      "id": "diagram.synthetic-functional-walking-0853",
+      "path": "diagrams/diagram.synthetic-functional-walking-0853.json",
+      "svgPath": "diagrams/diagram.synthetic-functional-walking-0853.svg",
+      "lessonId": "psychiatry.somatic.symptom-functional"
+    },
+    {
+      "id": "diagram.nmj-safety-factors-0853",
+      "path": "diagrams/diagram.nmj-safety-factors-0853.json",
+      "svgPath": "diagrams/diagram.nmj-safety-factors-0853.svg",
+      "lessonId": "neuroscience.nmj.release-safety-factor"
+    },
+    {
+      "id": "diagram.cbt-avoidance-formulation-0853",
+      "path": "diagrams/diagram.cbt-avoidance-formulation-0853.json",
+      "svgPath": "diagrams/diagram.cbt-avoidance-formulation-0853.svg",
+      "lessonId": "psychiatry.psychotherapy.cbt-formulation"
+    },
+    {
+      "id": "diagram.synthetic-learning-data-0854-0",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-0.json",
+      "svgPath": "diagrams/diagram.synthetic-learning-data-0854-0.svg",
+      "lessonId": "neuroscience.plasticity.activity-dependent"
+    },
+    {
+      "id": "diagram.synthetic-learning-data-0854-2",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-2.json",
+      "svgPath": "diagrams/diagram.synthetic-learning-data-0854-2.svg",
+      "lessonId": "neurology.inflammation.multiple-sclerosis-assessment"
+    },
+    {
+      "id": "diagram.synthetic-learning-data-0854-3",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-3.json",
+      "svgPath": "diagrams/diagram.synthetic-learning-data-0854-3.svg",
+      "lessonId": "neurology.infection.meningitis-encephalitis"
+    },
+    {
+      "id": "diagram.synthetic-learning-data-0854-5",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-5.json",
+      "svgPath": "diagrams/diagram.synthetic-learning-data-0854-5.svg",
+      "lessonId": "psychiatry.development.adhd-assessment"
+    },
+    {
+      "id": "diagram.synthetic-learning-data-0854-6",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-6.json",
+      "svgPath": "diagrams/diagram.synthetic-learning-data-0854-6.svg",
+      "lessonId": "psychiatry.development.autism-context"
+    },
+    {
+      "id": "diagram.synthetic-learning-data-0854-7",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-7.json",
+      "svgPath": "diagrams/diagram.synthetic-learning-data-0854-7.svg",
+      "lessonId": "psychiatry.eating.restriction-binge-risk"
+    },
+    {
+      "id": "diagram.synthetic-learning-data-0854-8",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-8.json",
+      "svgPath": "diagrams/diagram.synthetic-learning-data-0854-8.svg",
+      "lessonId": "psychiatry.sleep.insomnia-assessment"
+    },
+    {
+      "id": "diagram.synthetic-learning-data-0854-10",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-10.json",
+      "svgPath": "diagrams/diagram.synthetic-learning-data-0854-10.svg",
+      "lessonId": "neurology.cognition.gait-hydrocephalus"
+    },
+    {
+      "id": "diagram.hypothetical-barrier-accumulation-0855",
+      "path": "diagrams/diagram.hypothetical-barrier-accumulation-0855.json",
+      "svgPath": "diagrams/diagram.hypothetical-barrier-accumulation-0855.svg",
+      "lessonId": "neuroscience.glia.barrier-neurovascular"
+    },
+    {
+      "id": "diagram.hypothetical-energy-balance-0855",
+      "path": "diagrams/diagram.hypothetical-energy-balance-0855.json",
+      "svgPath": "diagrams/diagram.hypothetical-energy-balance-0855.svg",
+      "lessonId": "neuroscience.metabolism.energy-excitotoxicity"
+    },
+    {
+      "id": "diagram.hypothetical-cpp-0855",
+      "path": "diagrams/diagram.hypothetical-cpp-0855.json",
+      "svgPath": "diagrams/diagram.hypothetical-cpp-0855.svg",
+      "lessonId": "neurology.neurooncology.mass-pressure"
+    },
+    {
+      "id": "diagram.sphere-volume-ratio-0855",
+      "path": "diagrams/diagram.sphere-volume-ratio-0855.json",
+      "svgPath": "diagrams/diagram.sphere-volume-ratio-0855.svg",
+      "lessonId": "neurology.neurooncology.integrated-tumor-diagnosis"
+    },
+    {
+      "id": "diagram.event-denominator-0855",
+      "path": "diagrams/diagram.event-denominator-0855.json",
+      "svgPath": "diagrams/diagram.event-denominator-0855.svg",
+      "lessonId": "psychiatry.sleep.apnea-neurocognition"
+    },
+    {
+      "id": "diagram.synthetic-nap-latencies-0855",
+      "path": "diagrams/diagram.synthetic-nap-latencies-0855.json",
+      "svgPath": "diagrams/diagram.synthetic-nap-latencies-0855.svg",
+      "lessonId": "psychiatry.sleep.narcolepsy-hypersomnolence"
+    },
+    {
+      "id": "diagram.synthetic-parasomnia-events-0855",
+      "path": "diagrams/diagram.synthetic-parasomnia-events-0855.json",
+      "svgPath": "diagrams/diagram.synthetic-parasomnia-events-0855.svg",
+      "lessonId": "psychiatry.sleep.parasomnia-state-dissociation"
+    },
+    {
+      "id": "diagram.synthetic-grief-activity-0855",
+      "path": "diagrams/diagram.synthetic-grief-activity-0855.json",
+      "svgPath": "diagrams/diagram.synthetic-grief-activity-0855.svg",
+      "lessonId": "psychiatry.stress.adjustment-grief"
+    },
+    {
+      "id": "diagram.barrier-cell-roles-0855",
+      "path": "diagrams/diagram.barrier-cell-roles-0855.json",
+      "svgPath": "diagrams/diagram.barrier-cell-roles-0855.svg",
+      "lessonId": "neuroscience.glia.barrier-neurovascular"
+    },
+    {
+      "id": "diagram.right-field-major-pathway-0855",
+      "path": "diagrams/diagram.right-field-major-pathway-0855.json",
+      "svgPath": "diagrams/diagram.right-field-major-pathway-0855.svg",
+      "lessonId": "neuroscience.vision.retina-field-pathways"
+    },
+    {
+      "id": "diagram.hypothetical-hematoma-volume-0856",
+      "path": "diagrams/diagram.hypothetical-hematoma-volume-0856.json",
+      "svgPath": "diagrams/diagram.hypothetical-hematoma-volume-0856.svg",
+      "lessonId": "neurology.neurovascular.intracerebral-hemorrhage"
+    },
+    {
+      "id": "diagram.weight-loss-0857",
+      "path": "diagrams/diagram.weight-loss-0857.json",
+      "svgPath": "diagrams/diagram.weight-loss-0857.svg",
+      "lessonId": "pediatrics.gastroenteritis.dehydration-assessment"
+    },
+    {
+      "id": "diagram.feeding-ratio-0857",
+      "path": "diagrams/diagram.feeding-ratio-0857.json",
+      "svgPath": "diagrams/diagram.feeding-ratio-0857.svg",
+      "lessonId": "pediatrics.respiratory.bronchiolitis-work-breathing"
+    },
+    {
+      "id": "diagram.blood-loss-rate-0857",
+      "path": "diagrams/diagram.blood-loss-rate-0857.json",
+      "svgPath": "diagrams/diagram.blood-loss-rate-0857.svg",
+      "lessonId": "obstetrics.bleeding.postpartum-mechanisms"
+    },
+    {
+      "id": "diagram.glucose-infusion-0857",
+      "path": "diagrams/diagram.glucose-infusion-0857.json",
+      "svgPath": "diagrams/diagram.glucose-infusion-0857.svg",
+      "lessonId": "neonatology.glucose.transition-risk"
+    },
+    {
+      "id": "diagram.heat-balance-0857",
+      "path": "diagrams/diagram.heat-balance-0857.json",
+      "svgPath": "diagrams/diagram.heat-balance-0857.svg",
+      "lessonId": "neonatology.temperature.heat-balance"
+    },
+    {
+      "id": "diagram.hemoglobin-change-0857",
+      "path": "diagrams/diagram.hemoglobin-change-0857.json",
+      "svgPath": "diagrams/diagram.hemoglobin-change-0857.svg",
+      "lessonId": "pediatrics.hematology.iron-deficiency"
+    },
+    {
+      "id": "diagram.bowel-frequency-0857",
+      "path": "diagrams/diagram.bowel-frequency-0857.json",
+      "svgPath": "diagrams/diagram.bowel-frequency-0857.svg",
+      "lessonId": "pediatrics.gastrointestinal.constipation-retention"
+    },
+    {
+      "id": "diagram.positive-predictive-value-0857",
+      "path": "diagrams/diagram.positive-predictive-value-0857.json",
+      "svgPath": "diagrams/diagram.positive-predictive-value-0857.svg",
+      "lessonId": "pediatrics.allergy.food-reactions"
+    },
+    {
+      "id": "diagram.hh-0858",
+      "path": "diagrams/diagram.hh-0858.json",
+      "svgPath": "diagrams/diagram.hh-0858.svg",
+      "lessonId": "laboratory-medicine.acid-base.blood-gas-interpretation"
+    },
+    {
+      "id": "diagram.anion-gap-0858",
+      "path": "diagrams/diagram.anion-gap-0858.json",
+      "svgPath": "diagrams/diagram.anion-gap-0858.svg",
+      "lessonId": "laboratory-medicine.acid-base.blood-gas-interpretation"
+    },
+    {
+      "id": "diagram.ct-window-0858",
+      "path": "diagrams/diagram.ct-window-0858.json",
+      "svgPath": "diagrams/diagram.ct-window-0858.svg",
+      "lessonId": "radiology.ct.attenuation-contrast"
+    },
+    {
+      "id": "diagram.alveolar-ventilation-0858",
+      "path": "diagrams/diagram.alveolar-ventilation-0858.json",
+      "svgPath": "diagrams/diagram.alveolar-ventilation-0858.svg",
+      "lessonId": "critical-care.respiratory.ventilation-oxygenation"
+    },
+    {
+      "id": "diagram.nutrition-weight-0858",
+      "path": "diagrams/diagram.nutrition-weight-0858.json",
+      "svgPath": "diagrams/diagram.nutrition-weight-0858.svg",
+      "lessonId": "clinical-nutrition.assessment.malnutrition-inflammation"
+    },
+    {
+      "id": "diagram.nutrition-delivery-0858",
+      "path": "diagrams/diagram.nutrition-delivery-0858.json",
+      "svgPath": "diagrams/diagram.nutrition-delivery-0858.svg",
+      "lessonId": "clinical-nutrition.assessment.malnutrition-inflammation"
+    },
+    {
+      "id": "diagram.oxygen-ratio-0858",
+      "path": "diagrams/diagram.oxygen-ratio-0858.json",
+      "svgPath": "diagrams/diagram.oxygen-ratio-0858.svg",
+      "lessonId": "emergency-medicine.dyspnea.initial-assessment"
+    },
+    {
+      "id": "diagram.surface-pressure-0858",
+      "path": "diagrams/diagram.surface-pressure-0858.json",
+      "svgPath": "diagrams/diagram.surface-pressure-0858.svg",
+      "lessonId": "dermatology.pressure-injury.tissue-loading"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience.plasticity.activity-dependent",
+  "subjectId": "neuroscience",
+  "chapterId": "plasticity",
+  "title": {
+    "ko": "활동 의존성 시냅스 가소성과 기억의 기전",
+    "en": "Activity Dependent Synaptic Plasticity"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroscience.plasticity.activity-dependent.lo.01",
+      "text": "시냅스 효율의 변화와 활동전위를 구별한다"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.lo.02",
+      "text": "장기강화의 유도와 발현을 설명한다"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.lo.03",
+      "text": "실험 결과와 행동 기억의 추론 수준을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.c65657b3ca36",
+      "type": "heading",
+      "level": 2,
+      "text": "연결의 존재와 연결의 효율"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.0cd1ca4d9a4b",
+      "type": "paragraph",
+      "markdown": "신경계의 학습은 새로운 신경세포가 생기는 현상만을 뜻하지 않는다. 기존 연결에서도 시냅스전 방출, 시냅스후 수용체의 수와 성질, 가시돌기의 형태와 국소 단백질 합성 등이 달라질 수 있다. 시냅스 가소성(synaptic plasticity)은 이러한 활동과 경험에 따른 전달 효율의 변화를 다룬다. 한 세포의 흥분성이 높아지는 것과 특정 입력의 시냅스 효율이 증가하는 것은 다른 변화다. 입력이 같아도 출력이 커졌다는 관찰만으로 어느 단계가 바뀌었는지 확정할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.43af1c6b61fa",
+      "type": "paragraph",
+      "markdown": "시냅스후 전류를 기록하는 실험에서는 자극 강도와 입력 섬유의 수, 막전위와 전압 고정의 질을 확인한다. 흥분성 시냅스후 전위의 기울기를 세포 집단에서 측정하는 경우에는 집단 활동과 기록 위치도 결과에 영향을 준다. 기준선이 불안정하거나 자극 전극이 이동했다면 유도 자극 뒤 반응 증가가 실제 가소성인지 판단하기 어렵다. 자극하지 않은 대조 입력과 약물·시간 대조를 포함하면 특이성과 안정성을 검토할 수 있다. 관찰된 전압의 크기와 기억의 양을 직접 대응시키지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.d9c98b73319a",
+      "type": "heading",
+      "level": 2,
+      "text": "칼슘 신호가 다른 결과를 만드는 조건"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.ca0e69a1d8f3",
+      "type": "paragraph",
+      "markdown": "해마의 여러 실험에서 NMDA 수용체는 시냅스전 글루탐산 방출과 시냅스후 탈분극의 동시성을 감지하는 데 관여한다. 수용체가 열리기 위한 리간드 조건과 전압 의존적 마그네슘 차단의 완화가 함께 필요하기 때문이다. 수용체를 통해 들어오는 칼슘은 다양한 효소를 활성화하고 AMPA 수용체의 이동과 기능 변화로 이어질 수 있다. 그러나 모든 장기강화가 같은 NMDA 기전에 의존하지는 않으며, 뇌 부위·세포·발달 단계와 자극 조건에 따라 다른 기전이 작동한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.456ce0b6b2d7",
+      "type": "paragraph",
+      "markdown": "칼슘 농도가 높으면 강화, 낮으면 억제라는 단순한 두 단계 규칙은 실제 시공간적 신호를 충분히 표현하지 못한다. 유입 위치와 지속시간, 완충과 제거 속도, 활성화되는 인산화효소와 인산가수분해효소의 조합이 중요하다. 같은 평균 칼슘 농도라도 국소 미세영역의 신호는 다를 수 있다. 수용체의 인산화와 막으로의 삽입, 내재화는 서로 다른 시간 규모로 일어난다. 칼슘은 단일한 기억 물질이 아니라 여러 신호 과정을 연결하는 매개체다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.773c91559c70",
+      "type": "heading",
+      "level": 2,
+      "text": "유도·발현·유지의 구별"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.821c36cfc483",
+      "type": "paragraph",
+      "markdown": "장기강화(long-term potentiation, LTP)의 유도는 효율 변화가 시작되는 조건을, 발현은 실제 전달 증가가 어떤 방식으로 나타나는지를 말한다. 유지에는 변화가 지속되도록 하는 분자·세포 과정이 관여한다. 약물을 유도 전에 투여했을 때 강화가 사라졌다는 결과와 이미 생긴 강화가 약물 뒤 사라졌다는 결과는 다른 질문에 답한다. 약물의 비특이적 독성이나 기본 전달 억제가 가소성 차단처럼 보일 수 있어 기준선과 세포 상태를 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.933035e4db34",
+      "type": "paragraph",
+      "markdown": "초기의 변화는 기존 단백질의 기능과 위치 변화로 설명될 수 있고, 더 오래가는 변화에는 유전자 발현과 단백질 합성·구조 재편이 관여할 수 있다. 이 구분도 모든 시냅스에서 동일한 시계로 진행되는 절대 경계는 아니다. 단백질 합성 억제 실험은 약물의 적용 시점과 세포 생존, 행동 수행에 미치는 영향을 함께 평가해야 한다. 행동 과제의 수행 저하가 기억의 저장 실패인지, 감각·운동·동기 저하인지를 구별하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.7a50b6ef4110",
+      "type": "heading",
+      "level": 2,
+      "text": "약화와 안정화도 학습에 필요하다"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.25b8f39b15c8",
+      "type": "paragraph",
+      "markdown": "장기억제(long-term depression, LTD)는 특정 조건에서 전달 효율이 오래 감소하는 현상이다. 연결을 약하게 만드는 변화는 단순한 손실이 아니라 정보의 선택과 재조정에 기여할 수 있다. 모든 연결이 계속 강화되면 출력의 구별과 안정성이 무너질 수 있다. 항상성 가소성(homeostatic plasticity)은 장기적인 활동 변화에 대응하여 전체 흥분성과 전달을 조절하는 관점이다. 입력 특이적인 강화와 전체 세포의 활동 수준 조절은 서로 다른 목적과 측정 방법을 가진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.42ff51b3806a",
+      "type": "paragraph",
+      "markdown": "시냅스전후 발화의 상대적 시점에 따라 효율이 달라지는 시간 의존성 가소성도 연결의 방향성과 경험을 이해하는 데 도움을 준다. 그러나 하나의 시간 창을 모든 인간 학습의 보편 법칙으로 적용해서는 안 된다. 실제 회로에서는 억제성 세포와 신경조절물질, 반복과 수면, 이미 형성된 연결의 상태가 함께 관여한다. 한 시냅스의 변화는 넓은 회로의 입력·출력과 상호작용하므로 개별 연결의 증가가 곧바로 행동 능력의 증가를 뜻하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.33a46a6f1ff5",
+      "type": "heading",
+      "level": 2,
+      "text": "실험 자료를 읽는 방법"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.4d4f4598194e",
+      "type": "paragraph",
+      "markdown": "학습용 기록에서 기준 반응을 100으로 정규화하고 유도 뒤 150이 되었다면 기준 대비 수준은 150%, 증가는 50%다. 이 값은 기록한 반응의 상대 크기이며 시냅스 수나 기억 용량이 50% 늘었다는 뜻은 아니다. 대조군에서 같은 시간 동안 반응이 변했는지, 반복 표본의 변동과 독립 실험 수가 어떤지 확인한다. 같은 세포에서 여러 번 측정한 값과 서로 다른 동물의 독립 표본을 동일하게 세면 불확실성을 과소평가할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.b.fcfb2137b53d",
+      "type": "paragraph",
+      "markdown": "가소성 연구는 학습과 재활, 뇌전증과 만성 통증, 퇴행성 질환을 이해하는 기초가 된다. 그렇다고 강화가 항상 이롭고 억제가 항상 해롭다는 결론은 성립하지 않는다. 부적절한 회로의 지속적 증폭은 병적 기능과 연결될 수 있다. 임상적으로는 어떤 기능을 어떤 조건에서 바꾸려는지와 부작용을 함께 평가한다. 정상 뇌의 정적 모형은 시냅스 효율의 변화를 보여 주지 않으므로, 변화의 시간과 실험 가정은 별도의 그래프와 도식으로 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.table0854",
+      "type": "table",
+      "data": {
+        "title": "관찰과 추가로 확인할 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "기준",
+            "두 입력 각각 100"
+          ],
+          [
+            "유도 뒤",
+            "유도 입력 150·대조 100"
+          ],
+          [
+            "미확인",
+            "흥분성·기록 조건·행동과의 관계"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neuroscience.plasticity.activity-dependent.diagram.synthetic-learning-data-0854-0",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-learning-data-0854-0",
+      "path": "diagrams/diagram.synthetic-learning-data-0854-0.svg",
+      "alt": "독립 가상 자료: 활동 의존성 시냅스 가소성과 기억의 기전의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/plasticity/sections/neuroscience.plasticity.activity-dependent.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroscience.plasticity.activity-dependent.001",
+    "question.neuroscience.plasticity.activity-dependent.002"
+  ],
+  "relatedLessons": [
+    "neuroscience.memory.encoding-retrieval",
+    "neuroscience.development.myelination-critical-period"
+  ]
+}

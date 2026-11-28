@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.nutrition.obesity-metabolic-injury",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.ade44063a01d",
+      "sourceSha256": "ade44063a01d89c574c9650c1d2d76e5ebd9ef5f13870b90045e071b57725fdb",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.93d6451e36b0",
+      "sourceSha256": "93d6451e36b07dd22d1facf661a3333722d37e08082dceeacfb720edb4b685a3",
+      "sourceLengthUtf16": 281,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.7e4c1f22a800",
+      "sourceSha256": "7e4c1f22a800502165d46f82ce28c78ca56ffb065b10da8676c8eb5f20b5835c",
+      "sourceLengthUtf16": 251,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.341bee1c7589",
+      "sourceSha256": "341bee1c7589be88166e3101f64d9736a2b3c0d46809613aff1c7fd3e8e69cab",
+      "sourceLengthUtf16": 298,
+      "annotations": [
+        {
+          "id": "ann.caeaae6d2d26d79f27f5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 202,
+            "end": 262,
+            "exact": "또한 지방증(steatosis), 염증과 세포손상, 섬유화(fibrosis)는 구별해야 하는 병리적 층이다.",
+            "prefix": "환자의 유일한 원인이라고 단정할 수 없다. ",
+            "suffix": " 간에 지방이 있다는 사실만으로 진행된 섬유"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.49cbc6dd4caa",
+      "sourceSha256": "49cbc6dd4caa5c2d09288ef5bae990102913cdcdde121939171e50fd4345e1a9",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.62e8ebbdaac1",
+      "sourceSha256": "62e8ebbdaac10270c37721f3783b8f47f33d94649a80e360b5195150dbd81e83",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.f8166cb1520e",
+      "sourceSha256": "f8166cb1520eecdd8f611ecb19915561480ffcc8975e876fe37fc217e57102a8",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.c884626201ef",
+      "sourceSha256": "c884626201ef140a726247dd17c3bb13bebca3ce8fe36070c83ce4719df27669",
+      "sourceLengthUtf16": 223,
+      "annotations": [
+        {
+          "id": "ann.e7128f1aa2ee2caba945",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 7,
+            "exact": "당뇨병",
+            "prefix": "제2형 ",
+            "suffix": "의 발생에는 인슐린 작용의 저하뿐 아니라 그"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        },
+        {
+          "id": "ann.75c8983b885df2bb3bcc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 55,
+            "exact": "제2형 당뇨병의 발생에는 인슐린 작용의 저하뿐 아니라 그 요구에 대응하는 베타세포 기능이 중요하다.",
+            "prefix": "",
+            "suffix": " 같은 감수성 저하를 가진 두 사람도 분비 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.f7f859bd7e43",
+      "sourceSha256": "f7f859bd7e43b7217b4151ae4554469dd043a525e5141d5590bd665c10868f68",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.obesity-metabolic-injury.b.180fb5883bc3",
+      "sourceSha256": "180fb5883bc348669b063cb92471de62c6b6b743520901067693332085f35e56",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    }
+  ]
+}

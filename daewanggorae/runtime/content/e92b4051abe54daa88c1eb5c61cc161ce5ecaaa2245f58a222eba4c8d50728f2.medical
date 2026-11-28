@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy",
+  "subjectId": "cardiology",
+  "chapterId": "cardiomyopathy",
+  "title": {
+    "ko": "확장성 심근병증과 부하·수축의 관계",
+    "en": "Dilated Cardiomyopathy and Load Contractility Relations"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.lo.01",
+      "text": "심실 확장과 박출률의 관계를 설명한다"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.lo.02",
+      "text": "가역·유전 원인을 체계화한다"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.lo.03",
+      "text": "회복과 위험 소멸을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.b576cd78604d",
+      "type": "heading",
+      "level": 2,
+      "text": "커진 심실과 감소한 박출"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.cdee572bc59a",
+      "type": "paragraph",
+      "markdown": "확장성 심근병증(dilated cardiomyopathy, DCM) 표현형에서는 심실 확장과 수축 기능 저하가 중요한 소견이다. 심실이 커졌다는 것과 박출률이 낮다는 것은 서로 다른 측정이다. 박출률은 이완기말 용적 중 수축기에 배출한 비율이며 절대 일회박출량과 같은 값이 아니다. 큰 심실이 낮은 비율로 박출해도 일정한 절대 유량을 유지할 수 있고, 그 과정에서 높은 충만압과 에너지 부담이 생길 수 있다. 비율과 절대량을 함께 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.thorax.heart.8aa996b1"
+      ]
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.1e799b42d8c0",
+      "type": "paragraph",
+      "markdown": "확장이 지속되면 벽의 힘과 기하학적 관계, 판막 지지 구조와 유두근의 위치가 바뀔 수 있다. 기능성 방실판 역류는 심근과 심실 형태의 변화에 동반되어 전방 유량을 더 줄일 수 있다. 총 일회박출량이 모두 대동맥으로 나가는 것은 아니므로 역류가 있으면 전방 박출을 따로 생각한다. 얇은 구형 막의 벽응력 식은 반지름과 두께의 방향을 이해하는 도구지만 실제 두꺼운 비구형 심실의 국소 응력을 정확히 정하지는 못한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.7413818218cf",
+      "type": "heading",
+      "level": 2,
+      "text": "원인은 하나의 목록보다 시간 관계다"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.3a732c045aa6",
+      "type": "paragraph",
+      "markdown": "유전적 원인, 염증과 감염 뒤 변화, 독성 노출과 약물, 지속적인 빈맥 및 여러 대사·내분비 문제가 수축 기능 저하에 관여할 수 있다. 노출이 있었는지뿐 아니라 용량과 기간, 기능이 변한 시점과 다른 위험을 확인한다. 알코올이나 특정 치료를 받은 병력이 있다고 모든 원인을 그것으로 귀속하지 않는다. 관상동맥·판막·혈압 부하와 공존 질환을 평가하여 심근의 기능 변화를 설명하는 전체 맥락을 만든다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.25f8d6ebc531",
+      "type": "paragraph",
+      "markdown": "빠른 리듬이 먼저 지속되었고 그 뒤 심실 기능이 떨어졌다면 빈맥 유발 성분을 생각할 수 있다. 그러나 심근질환 자체가 빈맥을 만들기도 하므로 시간적 선후와 치료 뒤 반응을 함께 본다. 기능이 좋아지는 것은 가역 성분을 지지할 수 있지만 모든 기저 질환이 완전히 없어졌다는 증거는 아니다. 가족력과 전도 이상, 반흔 및 유전 자료가 다른 원인의 가능성을 남길 수 있다. 원인 탐색은 첫 진료에 한 번 끝나는 작업이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.3038424acd7c",
+      "type": "heading",
+      "level": 2,
+      "text": "진찰과 영상의 연결"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.771458fcbecc",
+      "type": "paragraph",
+      "markdown": "호흡곤란과 부종, 피로는 낮은 전방 유량과 높은 충만압의 여러 조합에서 생길 수 있다. 목정맥과 폐 소견, 말초 관류와 체액 상태를 함께 평가한다. 심초음파에서는 양 심실의 크기·기능과 판막, 심방과 충만 정보를 살핀다. CMR의 조직 정보는 허혈성·비허혈성 손상과 반흔의 분포를 구별하는 데 도움을 줄 수 있다. 단일 영상의 박출률 차이는 실제 변화와 측정 변동·부하 차이를 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.e2a0231be60f",
+      "type": "paragraph",
+      "markdown": "심실성 부정맥과 전도 질환이 동반되면 리듬 감시와 위험 평가의 중요성이 커진다. 일부 병인에서는 수축 기능 저하의 정도만으로 전기적 위험이 충분히 표현되지 않을 수 있다. 유전검사는 적절한 상담과 변이 해석을 포함하며 가족의 표현형 평가와 연결한다. 임상적 의미가 불확실한 변이를 병원성 변이처럼 처리하지 않는다. 검사 음성도 아직 모르는 유전자나 검사 범위의 한계 때문에 모든 유전적 기여를 배제하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.88f115ef376e",
+      "type": "heading",
+      "level": 2,
+      "text": "회복을 어떻게 기록할 것인가"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.6d1c58b70d26",
+      "type": "paragraph",
+      "markdown": "치료의 목표에는 증상과 울혈, 입원과 생존 및 부정맥·혈전 위험이 포함된다. 원인에 대한 교정과 적절한 심부전 치료를 함께 수행하고 기능의 시간 경과를 관찰한다. 약물과 기기의 선택은 근거의 대상, 혈압·신장 기능과 전해질 및 환자의 목표를 고려한다. 정상 수치로의 접근만을 위해 위해를 무시하거나 특정 약물을 임의 중단하는 식의 단순화는 적절하지 않다. 장기 치료와 가역 요인의 역할을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.b.6ccaf329d2d1",
+      "type": "paragraph",
+      "markdown": "박출률이 회복된 상태는 중요한 경과지만 병인과 재발 위험의 평가가 남는다. 약물에 의한 조절과 원인 교정 뒤의 변화, 측정 조건이 모두 영향을 줄 수 있다. 따라서 이전 진단과 가장 나빴던 기능, 현재 상태를 함께 기록한다. 환자가 느끼는 활동 능력과 삶의 질도 수치와 별도로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "EDV·ESV",
+            "절대 용적"
+          ],
+          [
+            "EF",
+            "박출 비율"
+          ],
+          [
+            "전방 박출",
+            "역류 방향과 구별"
+          ],
+          [
+            "회복",
+            "이전 병인·재발 위험 소멸과 별개"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.diagram.dcmp-ejection-fraction-0841",
+      "type": "diagram",
+      "diagramRef": "diagram.dcmp-ejection-fraction-0841",
+      "path": "diagrams/diagram.dcmp-ejection-fraction-0841.svg",
+      "alt": "같은EDV에서 ESV와박출률의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.anatomy3d0841",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.thorax.heart.8aa996b1"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.limits0841",
+      "type": "clinicalPearl",
+      "markdown": "정상 심방·심실의 위치 관계를 확인한다. 환자의 확장·강직·충만압·반흔·수축 운동은 이 정적 정상 모델이 측정하거나 재현하지 않는다."
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.heading.clinical0841",
+      "type": "heading",
+      "level": 2,
+      "text": "심실 형태와 기능성 역류"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.paragraph.clinical0841.0",
+      "type": "paragraph",
+      "markdown": "확장된 좌심실에서는 승모판 고리와 유두근 사이의 기하학적 관계가 달라질 수 있다. 첨판 자체의 일차 병변이 뚜렷하지 않아도 건삭의 견인과 접합의 변화로 수축기 역류가 생길 수 있다. 이때 역류는 심실질환의 결과이면서 용적 부담을 더하는 요인이다. 원인과 결과가 순환 고리를 이루므로 판막만 또는 심근만 보는 해석으로는 전체 경과를 설명하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.paragraph.clinical0841.1",
+      "type": "paragraph",
+      "markdown": "역류가 있는 수축에서 심실 용적 감소로 계산한 총 박출량은 대동맥 전방량과 좌심방 역류량의 합이다. 예를 들어 교육용 총량80mL 중30mL가 역류했다면 전방량은50mL다. 같은 총 박출률을 가진 두 상태라도 역류분율이 다르면 전방 전달이 달라질 수 있다. 혈압과 충만압, 증상 및 영상의 부하 조건을 함께 읽는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.dilated-cardiomyopathy.paragraph.clinical0841.2",
+      "type": "paragraph",
+      "markdown": "치료 뒤 역류가 감소했다면 판막 자체가 재생되었다는 결론보다 부하와 심실 형태·협동 수축이 어떻게 변했는지 검토한다. 반대로 체액 조절 뒤에도 역류와 증상이 남으면 원래 기질과 구조, 치료의 적합성을 다시 평가한다. 영상 추적은 가능한 한 비슷한 기록 조건과 여러 지표를 사용하고 측정 오차를 실제 생물학적 변화와 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 정상 심장 모델의 크기를 늘린 그림은 확장의 개념을 설명할 수 있지만 실제 환자의 벽응력·수축력·반흔을 검증한 모형으로 표시하지 않는다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/cardiomyopathy/sections/cardiology.cardiomyopathy.dilated-cardiomyopathy.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.cardiomyopathy.dilated-cardiomyopathy.001",
+    "question.cardiology.cardiomyopathy.dilated-cardiomyopathy.002"
+  ],
+  "relatedLessons": [
+    "cardiology.cardiomyopathy.phenotype-etiology",
+    "cardiology.cardiomyopathy.hypertrophic-obstruction"
+  ]
+}

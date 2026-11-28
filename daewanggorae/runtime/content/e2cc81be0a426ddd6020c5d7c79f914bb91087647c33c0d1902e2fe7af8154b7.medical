@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "molecular-biology.rna.transcription-processing",
+  "subjectId": "molecular-biology",
+  "chapterId": "rna",
+  "title": {
+    "ko": "전사와 RNA 가공의 연결",
+    "en": "Transcription and RNA Processing"
+  },
+  "learningObjectives": [
+    {
+      "id": "molecular-biology.rna.transcription-processing.lo.01",
+      "text": "전사 방향과 RNA중합효소의 역할을 설명한다"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.lo.02",
+      "text": "캡·스플라이싱·3말단 가공을 구별한다"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.lo.03",
+      "text": "엑손·번역영역·성숙 RNA 길이를 계산한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.36a9401dc453",
+      "type": "heading",
+      "level": 2,
+      "text": "유전자에서 기능성 RNA까지"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.1e0671b36bed",
+      "type": "paragraph",
+      "markdown": "전사(transcription)는 DNA 서열 정보를 RNA로 옮기는 과정이다. RNA중합효소(RNA polymerase)는 주형 DNA를3′→5′ 방향으로 읽으며 RNA를5′→3′ 방향으로 합성한다. 주형가닥과 반대편의 암호화가닥은 역할이 다르다. RNA 서열은 암호화가닥과 같은 방향으로 비교할 수 있지만 티민 대신 유라실이 들어간다. 유전자마다 어느 DNA 가닥이 주형으로 사용되는지가 다를 수 있으므로 한 염색체에서 항상 한쪽 가닥만 전사된다고 생각하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.eaaa4acab9df",
+      "type": "paragraph",
+      "markdown": "사람의 핵에서는 RNA중합효소I·II·III가 서로 다른 RNA 집단의 합성에 관여한다. 중합효소I는 큰 리보솜RNA 전구체, III는 tRNA와5S rRNA 등, II는 단백질 암호화 유전자의 전구 mRNA와 여러 비암호화 RNA의 전사에 중요하다. 5S rRNA까지 중합효소I의 같은 전구체에 들어 있다고 외우면 안 된다. 단백질을 만들지 않는 RNA도 기능성 유전자 산물이므로 유전자 발현을 단백질 합성과 같은 뜻으로만 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.8783d6356889",
+      "type": "heading",
+      "level": 2,
+      "text": "프로모터·전사인자·신장"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.0726db58ac89",
+      "type": "paragraph",
+      "markdown": "프로모터(promoter)와 일반 전사인자, 염색질 상태는 중합효소의 모집과 개시 위치 선택에 관여한다. 조절 서열은 RNA로 읽히는 서열과 항상 같은 범위가 아니며, 조절 인자의 결합과 실제 신장 유량도 구별해야 한다. 많은 진핵 유전자에는 전사 시작 뒤 일시 정지와 신장 조절이 존재한다. 프로모터에 중합효소가 보인다는 관찰만으로 완전한 성숙 mRNA가 같은 양으로 생성된다고 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.6fc99aadb0a1",
+      "type": "paragraph",
+      "markdown": "중합효소II의 C말단 영역(CTD)은 인산화 상태에 따라 여러 가공 인자의 결합을 조정하여 전사와 RNA 가공을 연결한다. 캡 형성·스플라이싱·3′말단 형성은 많은 경우 전사가 끝난 뒤에만 따로 시작되는 일이 아니라, 만들어지는 RNA와 결합한 단백질 복합체 안에서 함께 진행될 수 있다. 다만 모든 인트론이 언제나 같은 속도로 전사 중 제거된다는 뜻은 아니다. RNA·유전자·세포 상태마다 시간 관계가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.9a958a77b437",
+      "type": "heading",
+      "level": 2,
+      "text": "5′캡과 3′말단은 다른 반응으로 만든다"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.447c814829aa",
+      "type": "paragraph",
+      "markdown": "5′캡(cap)은 RNA의5′말단에 특수한5′–5′ 연결을 통해 메틸화 구아노신이 붙는 구조다. RNA 보호와 핵 밖 이동, 번역 개시 관련 인자의 인식에 기여한다. 일반적인 내부 뉴클레오타이드의3′–5′ 연결과 구별해야 한다. 캡을 단백질 덮개라고 표현하거나 DNA 서열에 원래 존재하던 한 구간을 그대로 잘라 붙인 것으로 이해하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.e5fcf06e012c",
+      "type": "paragraph",
+      "markdown": "대부분의 단백질 암호화 mRNA에서3′말단은 특정 신호와 가공 인자에 따른 절단 후 poly(A) 꼬리가 추가되어 형성된다. Poly(A)중합효소는 이 꼬리를 만들 때 DNA의 긴 T서열을 주형으로 그대로 복사하는 것이 아니다. 절단 위치와 전사 종결 위치는 같지 않을 수 있으며 중합효소는 절단 신호 뒤쪽까지 진행할 수 있다. 복제 의존성 히스톤 mRNA처럼 전형적인 poly(A) 꼬리가 없는 예외도 있어 모든 성숙 mRNA의 필수 구조라고 일반화하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.db8dbb9b4a7a",
+      "type": "heading",
+      "level": 2,
+      "text": "스플라이싱의 화학과 선택성"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.c9ef9f91e34d",
+      "type": "paragraph",
+      "markdown": "스플라이싱(splicing)은 전구 RNA의 일부 구간을 제거하고 남은 엑손(exons)을 이어 붙이는 과정이다. 스플라이소솜(spliceosome)의 작은핵리보핵단백질(snRNPs)과 여러 인자가 절단 위치와 분지점을 인식한다. 대표적인 기전에서는 분지점 아데노신의2′OH가 반응하여 인트론 올가미(lariat)가 형성되고, 이어지는 반응으로 엑손이 연결된다. 경로의 에너지 소비와 두 에스터교환 반응 자체를 같은 것으로 보지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.75e5ca267a7a",
+      "type": "paragraph",
+      "markdown": "엑손은 최종 RNA에 남는 구간이지 모두 단백질로 번역되는 구간은 아니다. 5′·3′비번역영역(untranslated regions, UTRs)도 엑손에 포함될 수 있다. 반대로 인트론 안의 변이가 무조건 기능이 없다고 할 수도 없다. 접합 신호·분지점·조절 요소 변화가 절단 선택과 RNA 양에 영향을 줄 수 있다. ‘암호화하지 않음’과 ‘기능이 없음’은 다른 의미다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.6537e71ec7ae",
+      "type": "heading",
+      "level": 2,
+      "text": "선택적 가공과 단백질 다양성"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.de602c3913e8",
+      "type": "paragraph",
+      "markdown": "선택적 스플라이싱(alternative splicing)은 엑손 포함 여부나 접합 위치를 바꾸어 서로 다른 RNA를 만든다. 대체 프로모터와 대체 poly(A) 위치도 RNA 형태를 바꿀 수 있다. 이러한 차이는 단백질 도메인을 바꾸기도 하지만 UTR·안정성·위치·번역 효율만 바꿀 수도 있다. RNA 형태가 다르다는 사실만으로 반드시 안정한 단백질 두 종류가 생성된다고 단정하지 않는다. 조기 종결과 RNA 감시 경로에 연결되는 형태도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.32cf51668be5",
+      "type": "paragraph",
+      "markdown": "암호화영역 내부의90뉴클레오타이드 엑손이 빠졌다고 가정하면 길이는3의 배수만큼 줄어 뒤쪽 해독틀이 유지될 수 있다. 그러나 그30아미노산이 기능에 불필요하다는 뜻은 아니다. 91뉴클레오타이드가 빠지는 경우에는 뒤쪽 해독틀 변화 가능성을 먼저 검토해야 한다. 실제 결과는 접합 위치·시작·종결 위치와 조절 서열까지 확인해야 하므로 길이만으로 단백질 기능이나 병적 의미를 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.431d6ea6dfa1",
+      "type": "heading",
+      "level": 2,
+      "text": "길이와 측정 위치를 명시하는 계산"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.059a0f966d4d",
+      "type": "paragraph",
+      "markdown": "전구 RNA가 엑손200·150·250뉴클레오타이드와 인트론300·400뉴클레오타이드로 구성되면 전체는1300이다. 모든 인트론이 제거된 엑손 연결체는600이며, poly(A)100을 별도로 더하면700이 된다. 이 계산에서는 캡의 특수 뉴클레오타이드는 길이 집계에서 제외한다고 명시한다. 600 전체를3으로 나누어 단백질200아미노산이라고 결론 내리면 UTR과 종결코돈의 존재를 빠뜨린 것이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.b.19eff39523f0",
+      "type": "paragraph",
+      "markdown": "RNA 실험에서는 탐침·프라이머가 어느 구간을 인식하는지가 중요하다. 인트론 신호, 엑손 내부 신호, 엑손–엑손 접합부 신호는 서로 다른 RNA 집단을 읽을 수 있다. 총신호의 변화가 전사량 증가인지 가공 지연인지 안정성 증가인지 구분하려면 추가 정보가 필요하다. DNA 혼입·역전사 단계·대조 표지 등의 기술 조건도 함께 고려한다. 전사·가공·양의 변화는 연결되지만 동일한 측정 대상이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.diagram.rna-processing-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.rna-processing-pairs",
+      "path": "diagrams/diagram.rna-processing-pairs.svg",
+      "alt": "RNA 가공의 서로 다른 질문의 단계별 비교"
+    },
+    {
+      "id": "molecular-biology.rna.transcription-processing.table.compare",
+      "type": "table",
+      "data": {
+        "title": "RNA 가공과 측정",
+        "columns": [
+          "정보",
+          "뜻",
+          "주의"
+        ],
+        "rows": [
+          [
+            "엑손",
+            "성숙RNA에남는구간",
+            "UTR포함가능"
+          ],
+          [
+            "인트론",
+            "제거될구간",
+            "조절변이가능"
+          ],
+          [
+            "poly(A)",
+            "절단뒤첨가",
+            "긴DNA주형직접복사아님"
+          ],
+          [
+            "전사 종결",
+            "중합효소이탈",
+            "절단위치와구별"
+          ]
+        ],
+        "notes": "대표적인mRNA가공이며전사와동시에진행될수있고예외전사체도있다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/molecular-biology/chapters/rna/sections/molecular-biology.rna.transcription-processing.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "엑손에는 비번역영역이 포함될 수 있다.",
+    "3′말단 절단과 전사 종결의 위치는 다를 수 있다."
+  ],
+  "reviewQuestions": [
+    "question.molecular-biology.rna.transcription-processing.001",
+    "question.molecular-biology.rna.transcription-processing.002"
+  ],
+  "relatedLessons": [
+    "molecular-biology.rna.translation-code",
+    "molecular-biology.proteins.targeting-quality-control",
+    "molecular-biology.rna.stability-silencing"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.infection.endocarditis-complications",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.infection.endocarditis-complications.b.af5bceb254af",
+      "sourceSha256": "af5bceb254af6d55d54019607c6f371ecca9d629e1c35e142323ddd85bb3af6d",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.50e537711fd578f01769",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 178,
+            "end": 181,
+            "exact": "심부전",
+            "prefix": "른 목표다. 미생물학적 반응이 좋더라도 새 ",
+            "suffix": "과 주위 농양의 평가를 멈추지 않는다."
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-complications.b.92d82f24f9f1",
+      "sourceSha256": "92d82f24f9f1bd7d330504f267ee8655f4d3a3969d7ea2c4d6a5e55fe77f9f25",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-complications.b.8ff822f19365",
+      "sourceSha256": "8ff822f19365eca6e8cfb42eae678cc27299c9860d9e2e80cdee4c9cff1d852b",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-complications.b.2df4d9b24506",
+      "sourceSha256": "2df4d9b245067f0e0572a25cc5d06955fa26a957509cdda2aed1613c2129ffb4",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-complications.b.1116ca8d0b94",
+      "sourceSha256": "1116ca8d0b9453b4976bdd66d5d6b8bae21c48ca0c199be1c536cdcd6bb6d49b",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.513d3ca4e5ecf54c8e13",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 49,
+            "end": 95,
+            "exact": "새 신경 증상에서는 허혈과 출혈, 감염성 동맥류나 농양 등 가능한 병변을 구별한다.",
+            "prefix": "심장 병변은 폐혈관에 영향을 줄 수 있다. ",
+            "suffix": " 심내막염의 뇌 사건에 일반적인 혈전성 뇌졸"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-complications.b.b5f9b768614d",
+      "sourceSha256": "b5f9b768614d06c41f03bdb0cdacee38937f1671bd255c914129ad175a734e0f",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.7bca3c009ea6c13fd875",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 138,
+            "end": 198,
+            "exact": "항응고를 시작하면 증식물이 제거된다고 이해하지 않으며, 기존 항응고 적응증과 감염성 색전의 문제를 구별한다.",
+            "prefix": "·이전 사건과 치료 경과의 영향을 받는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-complications.b.f00dfa542b2a",
+      "sourceSha256": "f00dfa542b2a267a4606df299fae001732dcca8d978961603f7655427f75ca80",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-complications.b.f7b53af97175",
+      "sourceSha256": "f7b53af9717504c73cf7ba6615d94ba7721cac332a51d332ec1db2582b63622f",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    }
+  ]
+}

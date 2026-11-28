@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "obstetrics.pregnancy.physiology",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "obstetrics.pregnancy.physiology.b.9d94c783c5f7",
+      "sourceSha256": "9d94c783c5f752e96778afcbe5d3c193856c13a72b294fd13969c009b83e6133",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.pregnancy.physiology.b.e809d2b81931",
+      "sourceSha256": "e809d2b8193171c6d9799f5dfb560d1163871867e9da2fa62a8a34fe4ccd6ec7",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.pregnancy.physiology.b.70159095c1c8",
+      "sourceSha256": "70159095c1c81883758dbcfbd161ae7639b07b082d2f367f062644f97fd67c54",
+      "sourceLengthUtf16": 270,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.pregnancy.physiology.b.06fca2c20987",
+      "sourceSha256": "06fca2c209875e53e8f0f5ad1b0eb8e524167b9c217c2bc81095b0c2a1bee2c5",
+      "sourceLengthUtf16": 245,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.pregnancy.physiology.b.28248b7b3cc0",
+      "sourceSha256": "28248b7b3cc0ec79af5190b8588924b1afa83996f76f58af88a6eb03e9efa3a5",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.c4c133e233a3c8e2a257",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 173,
+            "end": 176,
+            "exact": "당뇨병",
+            "prefix": " 않으면 고혈당이 나타날 수 있다. 임신성 ",
+            "suffix": "은 비임신 성인의 진단 기준을 그대로 적용하"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.pregnancy.physiology.b.4ec2251370d3",
+      "sourceSha256": "4ec2251370d3ada4a807fd8fb5e360ffe10353ec838654b35528a10404445ec2",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    }
+  ]
+}

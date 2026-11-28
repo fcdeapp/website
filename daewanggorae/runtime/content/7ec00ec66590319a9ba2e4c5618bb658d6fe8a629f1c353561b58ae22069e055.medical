@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.obstruction.copd-small-airways-emphysema",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.b.1b0484a7365e",
+      "sourceSha256": "1b0484a7365eff57815c1056d4b5f01b60fb5e30946213a83c1f9a04e90eec56",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.70af611f77465dbe2e5d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 8,
+            "exact": "만성폐쇄성폐질환",
+            "prefix": "",
+            "suffix": "(chronic obstructive pul"
+          },
+          "conceptId": "reader.term.b7474cec060b74ec",
+          "targetDocumentId": "pulmonology.obstruction.copd"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.b.f94b55ca4593",
+      "sourceSha256": "f94b55ca4593ad3f7c3f995995127dde48a892f5efc79cb637d3f4c7ec6fe2a2",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.b.02219645b989",
+      "sourceSha256": "02219645b989aa73ba1a671eac06326511b67000973d7c142c53327e34c82d05",
+      "sourceLengthUtf16": 184,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.b.434b093c88ca",
+      "sourceSha256": "434b093c88ca9880e271f7d92b4c6d857afa80a8159a4667b014bfe91bcaaa23",
+      "sourceLengthUtf16": 190,
+      "annotations": [
+        {
+          "id": "ann.a9c93bfe0c35ff70cac5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 58,
+            "exact": "폐기종(emphysema)에서는 폐포벽과 가스교환 면적의 손실, 탄성반동과 기도 지지의 감소가 중요하다.",
+            "prefix": "",
+            "suffix": " 내쉬는 동안 기도를 열어 두는 힘이 줄면 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.b.5e95229da69b",
+      "sourceSha256": "5e95229da69b11dd55073ae9cdf1dc03188ed7e5406f6159fe4e7e4145ab357e",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.b.f157c10a83a1",
+      "sourceSha256": "f157c10a83a1cb636701d9a2ad327da967887e7b500c5f10f09a2a27b038c9ca",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.b.9556be1f8d34",
+      "sourceSha256": "9556be1f8d34417d09441d3ac065ef9779c2b662e9ccdfaafe91670ce5b511ac",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.6757fddb8e503901a7bb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 56,
+            "end": 105,
+            "exact": "낮은 DLCO는 폐기종 등에서 나타날 수 있지만 빈혈·혈관과 다른 실질 기전도 구별한다.",
+            "prefix": "은 산소화·이산화탄소와 폐혈관에 기여한다. ",
+            "suffix": " 몸무게와 근육 감소·탈조건화, 심혈관과 다"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.b.5e071eff5394",
+      "sourceSha256": "5e071eff5394e21384feb9823e6fb1c3ebf6e2d482b3414bbd9c5a68c80654ed",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.p.extra0845.0",
+      "sourceSha256": "73ed42fde9ab3c48e4bea66801940de9a48b6e1077667357c320eb43a991ccfa",
+      "sourceLengthUtf16": 179,
+      "annotations": [
+        {
+          "id": "ann.f9fa265798a826f57f4a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 82,
+            "end": 140,
+            "exact": "강하게 내쉬면서 흉강압이 올라갈 때 입 쪽으로 갈수록 떨어지는 관강 압력과 바깥 압력의 관계가 중요하다.",
+            "prefix": "호기 때 기도가 더 쉽게 좁아질 수 있다. ",
+            "suffix": " 노력을 더해도 흐름이 충분히 늘지 않는 구"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-small-airways-emphysema.p.extra0845.1",
+      "sourceSha256": "6cd3678d6b0f5d1e3f0ef6d2b356ecb0e5112ef5df691be2e8d572d1643da949",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    }
+  ]
+}

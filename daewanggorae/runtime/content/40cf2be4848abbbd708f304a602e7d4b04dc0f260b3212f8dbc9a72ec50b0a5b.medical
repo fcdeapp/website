@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.event-denominator-0855",
+  "lessonId": "psychiatry.sleep.apnea-neurocognition",
+  "title": "같은 사건 수와 다른 분모",
+  "series": [
+    {
+      "label": "시간당 사건 수",
+      "samples": [
+        {
+          "x": 6,
+          "y": 20.0
+        },
+        {
+          "x": 8,
+          "y": 15.0
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "events": 120,
+    "notClinicalAHIClassification": true
+  },
+  "render": {
+    "type": "bars",
+    "canvas": {
+      "width": 900,
+      "height": 1100
+    },
+    "plot": {
+      "x": 180,
+      "y": 30,
+      "width": 640,
+      "height": 780
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 25,
+      "ticks": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "scale": "linear",
+      "label": "사건/시간(회/h)"
+    },
+    "rows": [
+      {
+        "id": "row0",
+        "label": "수면 6h 분모",
+        "y": 100,
+        "height": 60,
+        "segments": [
+          {
+            "label": "가상 계산값",
+            "valuePath": "series/0/samples/0/y",
+            "tone": "primary"
+          }
+        ]
+      },
+      {
+        "id": "row1",
+        "label": "기록 8h 분모",
+        "y": 280,
+        "height": 60,
+        "segments": [
+          {
+            "label": "가상 계산값",
+            "valuePath": "series/0/samples/1/y",
+            "tone": "primary"
+          }
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 또는 가상 기록이다. 실제 환자·정상 범위·검사 기준·치료효과·처방과 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

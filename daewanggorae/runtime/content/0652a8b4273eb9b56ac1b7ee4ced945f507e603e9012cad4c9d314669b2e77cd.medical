@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.neuro.synaptic-integration",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.0aa2f443a350",
+      "sourceSha256": "0aa2f443a350bf52d6d753893ad832284bdfc48277fd82adb621e8ac209f8e0f",
+      "sourceLengthUtf16": 257,
+      "annotations": [
+        {
+          "id": "ann.73fae2ccd15281799108",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 66,
+            "end": 69,
+            "exact": "막전위",
+            "prefix": "으로 쓴다. g_syn은 전도도, V_m은 ",
+            "suffix": ", E_syn은 순전류가0이 되는 역전전위("
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.43ef33645611",
+      "sourceSha256": "43ef336456117d41edc5fc285c27a4017f7573703edebf0b217519b576904421",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.a1c73fb032e1",
+      "sourceSha256": "a1c73fb032e17875dc61b2da212860c9323f0d45009e6b27677ae24caecb8238",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.f1d698c5e0d8ee244c05",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 97,
+            "end": 141,
+            "exact": "하지만 실제 효과에는 입력 위치와 시간,전압 의존 통로와 다른 입력도 중요하다.",
+            "prefix": "다 낮으면 억제를 이해하는 출발점이 된다. ",
+            "suffix": " 막을 조금 탈분극시켰다는 한 사실만으로 최"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.d00556ecf9a6",
+      "sourceSha256": "d00556ecf9a6f57c5c2e06a31a9d8dde1e815d828680ad4ccbbdbfffab3180d4",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.c211608342c4",
+      "sourceSha256": "c211608342c4966133d1bbeb495b3979010eeb06a91895a2e08e0cfc08a304d1",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.873b6b719208",
+      "sourceSha256": "873b6b719208413868bcddae82a3428a19e8b50f30ef1eb345d27b563d8fc1c0",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.a21bcdb2ac99",
+      "sourceSha256": "a21bcdb2ac9984bd4e289dfc9fc8c9a82f5c4a075c7f44d0bd5f0b1832f451f4",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.37055ec27c51",
+      "sourceSha256": "37055ec27c51d016bf3f0559401fda12b2b00cc7d0a6b6547ac76183d99b5f79",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.9ebde4860772",
+      "sourceSha256": "9ebde48607727b3969a8566e55a460334b09f2dd7d0a87732a0a728f27399224",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.deb0fc6cf988",
+      "sourceSha256": "deb0fc6cf9885d169a66575cb6c4aec840125f5796b3747cf24b65cb2ff91ae6",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.327d3bc0c968",
+      "sourceSha256": "327d3bc0c9683640d45ddf736fa241bfa2f8aa85bba13ce7f61954951fce04b4",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-integration.b.320a325f4425",
+      "sourceSha256": "320a325f44252742738bd2154f96ef1ccf2239482ca013da8e3cba0146bec422",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    }
+  ]
+}

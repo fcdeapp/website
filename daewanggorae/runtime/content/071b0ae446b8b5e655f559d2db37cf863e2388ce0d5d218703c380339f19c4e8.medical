@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.sinus-node-dysfunction",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.sinus-node-dysfunction.b.7504329486e5",
+      "sourceSha256": "7504329486e5df011282576a8447828283910d1130db43b76ecdc7765fe108ea",
+      "sourceLengthUtf16": 267,
+      "annotations": [
+        {
+          "id": "ann.3f0610b4f3b5a4eb6366",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 96,
+            "end": 147,
+            "exact": "노화와 섬유화가 중요한 원인이지만 허혈, 염증과 침윤성 질환, 수술 후 변화 등도 고려한다.",
+            "prefix": " 서맥이나 정지가 나타나는 임상적 범주다. ",
+            "suffix": " 표면 심전도에서 P파가 사라진 구간을 보았"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.sinus-node-dysfunction.b.a4f81892ea20",
+      "sourceSha256": "a4f81892ea20eb6a6b18da1d4628eccb47db2cb1d997c04337707d56b8356dd1",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.734a5439629584ee77c0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 56,
+            "end": 101,
+            "exact": "운동선수의 안정 시 서맥이나 수면 중 느린 맥박은 병적 기능부전과 구별해야 한다.",
+            "prefix": " 상태 등 외인성 요인도 심박수를 낮춘다. ",
+            "suffix": " 같은 심박수라도 활동 수준과 대사 요구, "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.sinus-node-dysfunction.b.73efe57cf1a0",
+      "sourceSha256": "73efe57cf1a0f74d859d24ada8ee909beca0a74460688c367d7319165e51062c",
+      "sourceLengthUtf16": 254,
+      "annotations": [
+        {
+          "id": "ann.df2d0f0a9e0760338a7e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 180,
+            "end": 254,
+            "exact": "전환 뒤 긴 간격이 있었다는 사실만으로 한 가지 기전을 확정하지 않으며, 그때 실신·어지럼이 발생했는지와 약물·가역 원인을 확인한다.",
+            "prefix": " 억제, 사용 약물이 복합적으로 작용한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.sinus-node-dysfunction.b.5c665c981a42",
+      "sourceSha256": "5c665c981a421f2f11754cab2e3450406b5abc03248bab5a47afa3144ca762a9",
+      "sourceLengthUtf16": 248,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.sinus-node-dysfunction.b.114e486398c2",
+      "sourceSha256": "114e486398c2bf09004613aecd579b32748c30b9617786e51b7294c387d1b460",
+      "sourceLengthUtf16": 249,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.sinus-node-dysfunction.b.44c69b7e4388",
+      "sourceSha256": "44c69b7e438846b8d798ba3b4642c81045db8946eef7e9e411d09c5b85ec879c",
+      "sourceLengthUtf16": 248,
+      "annotations": [
+        {
+          "id": "ann.754fec10b22cbef2c937",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 226,
+            "end": 231,
+            "exact": "약물 조정",
+            "prefix": "과, 합병증과 환자의 목표를 함께 논의하며 ",
+            "suffix": " 뒤에도 상태를 다시 평가한다."
+          },
+          "conceptId": "reader.term.4d94a87f27739d1c",
+          "targetDocumentId": "patient-safety.medication.reconciliation-systems"
+        }
+      ]
+    }
+  ]
+}

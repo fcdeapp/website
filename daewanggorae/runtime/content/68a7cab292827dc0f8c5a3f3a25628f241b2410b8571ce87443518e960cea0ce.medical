@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.general.distribution-binding-models",
+  "subjectId": "pharmacology",
+  "chapterId": "general",
+  "title": {
+    "ko": "약물 분포와 결합의 구획 모형",
+    "en": "Compartment Models of Drug Distribution and Binding"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.general.distribution-binding-models.lo.01",
+      "text": "겉보기 분포용적과 해부학적 용적을 구별한다"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.lo.02",
+      "text": "혈장·조직 결합과 자유 농도의 관계를 설명한다"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.lo.03",
+      "text": "분포상·제거상과 표적 부위 반응의 시간차를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.ae1c1811d16d",
+      "type": "heading",
+      "level": 2,
+      "text": "체내 약물량을 농도와 연결하는 매개변수"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.77e54bfb2e19",
+      "type": "paragraph",
+      "markdown": "분포(distribution)는 약물이 혈액과 여러 조직 사이에서 이동하는 과정이다. 막 투과성,혈류,운반체,이온화와 혈장·조직 결합이 모두 관여한다. 혈장 농도는 임상에서 접근하기 쉬운 측정값이지만 언제나 표적 부위의 자유 농도와 같은 것은 아니다. 투여 직후와 분포 평형에 가까운 시점,장벽이 있는 조직에서 그 관계가 달라질 수 있다. 따라서 측정 장소와 시점을 먼저 정해야 약물량과 농도를 연결할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.2438fc9807fe",
+      "type": "paragraph",
+      "markdown": "겉보기 분포용적(apparent volume of distribution, Vd)은 지정 시점과 모형에서 체내 약물량 A를 측정 농도 C로 나눈 값이다. Vd=A/C의 단위는 용적이지만 실제 약물이 채운 물주머니의 크기가 아니다. 조직에 강하게 결합하여 혈장 농도가 낮으면 큰 값이 나올 수 있으며 해부학적 총 체액량보다 클 수도 있다. 분모가 혈장 총농도인지 자유 농도인지,전혈 농도인지에 따라 정의가 달라지므로 계산 조건을 명시한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.4873a47320cd",
+      "type": "heading",
+      "level": 2,
+      "text": "자유 분율과 총농도를 분리한다"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.db18e2201b41",
+      "type": "paragraph",
+      "markdown": "혈장 총농도 Ct는 결합된 약물과 자유 약물의 합이다. 자유 분율 fu=Cu/Ct에서 Cu는 자유 농도이며,선형 결합 근사에서는 일정 조건 아래 fu를 사용한다. 많은 약물에서 자유 약물은 막 이동과 표적 결합에 직접 관여하지만 운반체·표적 위치·결합 속도와 표적 외 약리작용도 고려해야 한다. 단백결합률이 높다는 사실만으로 작용시간·투석 제거 가능성·독성을 모두 결정할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.fe07de0b780c",
+      "type": "paragraph",
+      "markdown": "알부민 감소나 다른 약물과의 경쟁으로 fu가 증가하면 같은 총농도에서 자유 농도는 높아진다. 그러나 실제 생체에서는 분포와 제거가 함께 변하여 총농도 자체가 내려갈 수 있다. 그러므로 결합 치환이 발생했다고 자유 정상상태 농도와 독성이 언제나 같은 비율로 지속 증가한다고 결론 내리지 않는다. 투여 경로,장기 추출,신장 기능,시간 경과와 측정한 농도의 종류를 함께 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.03312ca89679",
+      "type": "heading",
+      "level": 2,
+      "text": "조직 결합과 막의 선택성"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.d794f1c1a891",
+      "type": "paragraph",
+      "markdown": "조직 단백질·지질·세포소기관에 대한 결합은 혈장과 조직 사이의 총농도 비를 크게 만들 수 있다. 자유 약물의 평형이 성립하는 단순 조건에서는 혈장 자유 분율과 조직 자유 분율의 상대 크기가 분포에 영향을 준다. 하지만 능동 유입·유출,국소 pH 차이와 혈액뇌장벽처럼 선택적인 장벽이 있으면 단순한 수동 평형만으로 예측하기 어렵다. 약물이 지용성이라는 특성 하나만으로 중추 노출을 확정할 수 없는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.13d108e341a3",
+      "type": "paragraph",
+      "markdown": "약산·약염기의 이온화는 국소 pH와 pKa의 영향을 받는다. 비이온형과 이온형의 막 이동성이 다르면 구획 간 축적이 달라질 수 있지만,모든 약물이 비이온형으로만 이동한다는 규칙은 성립하지 않는다. 수송체와 통로,특정 제형·투여 경로가 관여하기 때문이다. 산도 차이가 있는 구획의 총농도 차이를 모두 단백질 결합이나 혈류 차이로만 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.6f4f8bbe72f4",
+      "type": "heading",
+      "level": 2,
+      "text": "구획은 측정 거동을 요약한다"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.0037c27403e4",
+      "type": "paragraph",
+      "markdown": "일구획 모형(one-compartment model)은 체내 분포가 측정 시간에 비해 충분히 빠르다고 근사하여 한 농도로 약물량을 나타낸다. 이구획 모형에서는 중심과 말초 사이 이동 및 제거를 분리할 수 있다. 중심구획이 혈관만,말초구획이 특정 장기 하나만을 정확히 뜻하는 것은 아니다. 구획은 여러 조직의 동역학적 거동을 묶은 표현이며 자료가 허용하는 모형의 식별 가능성을 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.3e9672ec914e",
+      "type": "paragraph",
+      "markdown": "정맥 일회 투여 뒤 초기의 빠른 혈장 농도 하강은 조직으로의 분포가 크게 기여할 수 있고 뒤의 완만한 구간은 다른 고유값을 반영할 수 있다. 말단 기울기의 반감기를 전체 과정의 유일한 제거 반감기로 취급하면 재분포와 채혈 시점의 영향을 빠뜨린다. 중심구획 용적,정상상태 분포용적,말단 용적은 서로 다른 정의로 산출될 수 있으므로 값의 이름과 산출 방식을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.61f57eddae39",
+      "type": "heading",
+      "level": 2,
+      "text": "표적 도달과 부하량 계산의 조건"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.79da1a7f7d96",
+      "type": "paragraph",
+      "markdown": "가상의 즉시 혼합 일구획에서 A=120mg,Vd=30L이면 C=4mg/L이다. 동일 약물량에서 Vd=60L이면2mg/L이다. 이 비교는 분포용적이 큰 조건에서 지정한 총농도가 낮다는 뜻이며 약리효과가 반드시 절반이라는 뜻은 아니다. 표적 자유 농도와 반응 관계,시간 지연 및 활성 대사체가 별도로 관여할 수 있다. 이 값은 실제 약물의 권장 용량이나 목표 농도로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.b.975d65dbf723",
+      "type": "paragraph",
+      "markdown": "목표 농도와 Vd를 연결하는 부하량(loading amount)의 기본 계산은 A=Ctarget×Vd이며 전신 이용 가능 분율 F를 포함하면 투여량은 Ctarget×Vd/F로 근사할 수 있다. 이 식은 가상 질량 수지이고 모든 약물에서 일회에 안전하게 줄 수 있는 투여속도나 임상 부하용법을 결정하지 않는다. 분포가 느리거나 투여 중 제거가 유의하면 더 정교한 모형이 필요하다. 실제 처방에서는 약물별 제형·경로·주입 속도·금기와 환자 조건을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.diagram.volume-concentration-example",
+      "type": "diagram",
+      "diagramRef": "diagram.volume-concentration-example",
+      "path": "diagrams/diagram.volume-concentration-example.svg",
+      "alt": "같은 체내량의 분포용적 비교의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.diagram.distribution-binding-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.distribution-binding-pairs",
+      "path": "diagrams/diagram.distribution-binding-pairs.svg",
+      "alt": "농도와 구획의 구별의 단계별 비교"
+    },
+    {
+      "id": "pharmacology.general.distribution-binding-models.table.compare",
+      "type": "table",
+      "data": {
+        "title": "분포 변수",
+        "columns": [
+          "기호",
+          "정의",
+          "주의"
+        ],
+        "rows": [
+          [
+            "A",
+            "체내량",
+            "농도 아님"
+          ],
+          [
+            "Ct",
+            "지정 매질 총농도",
+            "자유농도와 구별"
+          ],
+          [
+            "fu",
+            "Cu/Ct",
+            "결합·상태 의존"
+          ],
+          [
+            "Vd",
+            "A/C",
+            "해부학적 용적 아님"
+          ]
+        ],
+        "notes": "정의와 대표 관계를 비교한다. 실제 측정·예외·모형 조건은 본문에서 구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/sections/pharmacology.general.distribution-binding-models.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "겉보기 분포용적은 체내량과 지정 농도를 연결하는 모형 매개변수다."
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.general.distribution-binding-models.001",
+    "question.pharmacology.general.distribution-binding-models.002"
+  ],
+  "relatedLessons": [
+    "pharmacology.general.clearance-extraction-models",
+    "pharmacology.general.repeated-dosing-accumulation",
+    "pharmacology.general.agonism-antagonism-curves"
+  ]
+}

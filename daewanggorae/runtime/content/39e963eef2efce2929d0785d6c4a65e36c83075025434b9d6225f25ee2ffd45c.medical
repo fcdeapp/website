@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.devices.resynchronization-principles",
+  "subjectId": "cardiology",
+  "chapterId": "devices",
+  "title": {
+    "ko": "심장 재동기화와 전도계 조율의 원리",
+    "en": "Principles of Resynchronization and Conduction System Pacing"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.devices.resynchronization-principles.lo.01",
+      "text": "전기적 지연과 기계적 비동기를 구별한다"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.lo.02",
+      "text": "재동기화의 치료 목표를 설명한다"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.lo.03",
+      "text": "반응 평가의 여러 지표를 비교한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.88a187691852",
+      "type": "heading",
+      "level": 2,
+      "text": "비동기에서 에너지 손실로"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.8b6b09b60b1c",
+      "type": "paragraph",
+      "markdown": "정상 심실의 빠른 전도망은 여러 부위를 짧은 시간 안에 활성화한다. 전도 경로가 달라지면 일부 구역이 먼저 수축하고 다른 구역은 늦게 수축할 수 있다. 늦게 활성화되는 부위가 아직 늘어나는 동안 먼저 활성화된 부위의 힘이 내부 변형에 소모될 수 있다. 이는 전체 박출과 충만, 판막 닫힘에 영향을 준다. 그러나 QRS가 넓다는 사실만으로 모든 환자에서 같은 정도의 기계적 비동기와 치료 이득이 생기는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.a7a9433bf355",
+      "type": "paragraph",
+      "markdown": "심장 재동기화 치료(cardiac resynchronization therapy, CRT)는 선택된 환자에서 심실 활성화의 시간과 공간 관계를 바꾸려는 접근이다. 양심실 조율은 서로 다른 위치의 심실 자극을 조합한다. 전극의 위치와 반흔, 원래 전도 패턴과 방실 간격은 실제 활성화에 영향을 준다. 전기적 신호를 더 일찍 보냈다는 사실이 언제나 유효 수축의 개선으로 이어지지는 않으므로 기계적 결과와 임상 반응을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.c258300df7a6",
+      "type": "heading",
+      "level": 2,
+      "text": "전극 위치와 기질"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.e073cea178e0",
+      "type": "paragraph",
+      "markdown": "심근 반흔 부위는 전도와 포획, 수축의 반응이 정상 조직과 다를 수 있다. 영상으로 평가한 반흔과 전극 위치, 기기에서 얻은 포획 역치와 신호는 서로 다른 자료다. 최적의 위치를",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.c8fbf11cc731",
+      "type": "paragraph",
+      "markdown": "전도계 조율(conduction system pacing)은 히스계 또는 왼각 영역 등 전도계와 관련된 활성화를 이용하려는 접근이다. 자극 흔적이 있고 QRS가 좁아졌다는 관찰만으로 특정 전도 조직의 선택적 포획이 모두 증명되는 것은 아니다. 출력 변화에 따른 형태·시간의 전환과 내부 신호, 해부학 및 시술 기준을 통합하여 포획의 성격을 평가한다. 주위 심근 포획과 전도계 포획을 구별하는 것이 중요한 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.1ff6852ff124",
+      "type": "heading",
+      "level": 2,
+      "text": "반응이라는 말의 여러 의미"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.e3e0d0233597",
+      "type": "paragraph",
+      "markdown": "재동기화 뒤 반응은 증상 개선, 입원 감소와 생존, 심실 용적과 박출률 변화 등 여러 방식으로 평가될 수 있다. 한 지표가 개선되어도 다른 지표가 같은 정도로 바뀌지 않을 수 있다. 부하와 약물, 기저 질환의 변화도 영향을 준다. 반응이 없다는 말은 무엇을 어느 기간에 측정했는지와 함께 정의해야 한다. 작은 측정 오차를 임상적 실패로, 단일 용적 감소를 모든 위험의 소멸로 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.1cada5f6b117",
+      "type": "paragraph",
+      "markdown": "표시된 심실 조율 비율이 높아도 모든 자극이 유효한 양심실 포획으로 이어졌는지 확인해야 한다. 자발 전도와 융합, 조기박동과 빠른 심방 리듬은 유효 조율을 줄일 수 있다. 심방세동과 빈번한 심실 조기박동, 전극 문제와 설정은 반응 평가의 주요 검토 대상이다. 기기가 집계한 자극 수와 실제 협동 수축을 같은 값으로 취급하지 않는다. 원 전기도와 표면 심전도, 영상과 증상을 대조한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.1666a871b476",
+      "type": "heading",
+      "level": 2,
+      "text": "장기 전략의 위치"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.0c614233e07b",
+      "type": "paragraph",
+      "markdown": "재동기화는 심부전의 원인 치료와 약물, 체액 관리 및 위험 인자 조절을 대체하지 않는다. 기기 선택에서는 심실 기능과 전도 형태, 증상과 예상 조율 부담 및 기저 원인을 함께 고려한다. 일반 심박동기와 CRT, 제세동 기능을 가진 장치는 겹치는 부분이 있지만 목표가 다르다. 근거의 적용 대상과 환자의 기대·부담을 논의해야 하며 한 장치 명칭을 모든 환자의 표준 선택으로 일반화하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.b.6506a64cb49e",
+      "type": "clinicalPearl",
+      "markdown": "정상 해부학 3D로 양 심실과 중격, 정맥 접근의 큰 위치를 이해할 수 있지만 실제 전기적 지연과 포획을 보여 주지는 않는다. 비동기와 재동기화는 시간별 활성화와 수축을 분리한 다이어그램으로 표현하는 것이 적합하다. 도식에 쓰는 시간과 색은 교육용 변수인지 실제 검사에서 얻은 값인지를 명시한다. 정적 OBJ에 본래 포함된 기능으로 심근 전도나 수축 효과를 설명해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.resynchronization-principles.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "넓은 QRS",
+            "전기적 활성화 시간의 단서"
+          ],
+          [
+            "기계적 비동기",
+            "수축의 시공간 관계"
+          ],
+          [
+            "조율 비율",
+            "유효 포획과 동일하지 않을 수 있음"
+          ],
+          [
+            "반응",
+            "증상·사건·용적을 구별"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 정상 심장 모델의 표면 좌표 하나로 정할 수는 없다. 환자의 정맥 구조와 접근 가능성, 횡격신경 자극과 안정된 포획 등 여러 조건이 제한 요소가 된다. 시술 계획에는 환자별 영상과 실제 전기적 검증이 필요하다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.resynchronization-principles.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.devices.resynchronization-principles.001"
+  ],
+  "relatedLessons": [
+    "cardiology.devices.icd-detection-therapy",
+    "cardiology.diagnosis.syncope-assessment"
+  ]
+}

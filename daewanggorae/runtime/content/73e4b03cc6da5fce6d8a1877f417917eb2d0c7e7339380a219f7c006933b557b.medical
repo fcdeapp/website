@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.general.metabolism-interactions",
+  "subjectId": "pharmacology",
+  "chapterId": "general",
+  "title": {
+    "ko": "효소 억제·유도와 약물상호작용",
+    "en": "Enzyme Inhibition, Induction and Drug Interactions"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.general.metabolism-interactions.lo.01",
+      "text": "가역 억제·시간 의존 억제·효소 유도의 차이를 설명한다"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.lo.02",
+      "text": "약동학적 상호작용과 약력학적 상호작용을 구별한다"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.lo.03",
+      "text": "노출비 모형의 조건과 임상 적용의 한계를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.19d66a9eef4f",
+      "type": "heading",
+      "level": 2,
+      "text": "상호작용은 여러 경로에서 일어난다"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.6dbfdbc23e04",
+      "type": "paragraph",
+      "markdown": "약물상호작용(drug–drug interaction, DDI)은 함께 사용한 물질이 다른 약물의 노출이나 효과를 바꾸는 현상이다. 흡수 환경·대사효소·수송체·단백결합과 배설이 바뀌는 약동학적 상호작용과,혈중 노출 변화 없이 표적·장기 효과가 더해지거나 반대되는 약력학적 상호작용을 구별한다. 식품·보충제·흡연도 관련될 수 있으므로 처방약 목록만으로 모든 노출을 파악했다고 보지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.f3a12ca00aad",
+      "type": "paragraph",
+      "markdown": "상호작용 자료에서 기질(substrate),억제제(inhibitor),유도제(inducer)는 관계 속의 역할이다. 하나의 물질이 어떤 효소의 기질이면서 다른 경로를 억제할 수 있고,효소나 운반체에 따라 역할이 다를 수 있다. 기질이라는 이름 자체가 임상적으로 큰 상호작용을 뜻하지 않는다. 해당 경로가 전체 제거에서 차지하는 분율과 실제 자유 노출,치료역과 활성 대사체의 기여를 함께 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.1b86bd6b98a6",
+      "type": "heading",
+      "level": 2,
+      "text": "가역적 억제와 시간 의존적 억제"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.fe2b7047cc71",
+      "type": "paragraph",
+      "markdown": "가역 억제에서는 억제제 농도와 결합 평형이 효소의 관찰 활성을 바꾼다. 경쟁·혼합 등의 모형은 기질 농도와 반응 조건에 따라 다르게 보일 수 있다. 시험관에서 얻은 IC50은 실험의 기질 농도·시간·효소량 등 조건에 의존하므로 곧바로 생체 내 Ki나 임상 용량으로 대입하지 않는다. 세포 밖 총농도와 효소 부위의 자유 농도도 같은 값이라고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.ddbf0a846bbe",
+      "type": "paragraph",
+      "markdown": "시간 의존적 억제(time-dependent inhibition)에서는 노출 시간과 활성 효소의 변화가 중요하다. 기전 기반 불활성화가 발생하면 억제제가 혈중에서 줄어든 뒤에도 새 효소가 만들어질 때까지 영향이 지속될 수 있다. 그러나 시간에 따라 억제가 커졌다는 관찰만으로 공유결합 기전을 단독 확정할 수는 없다. 느린 결합·대사체·실험계 불안정성과 같은 대안을 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.04231b5d4191",
+      "type": "heading",
+      "level": 2,
+      "text": "효소 유도는 발현과 회전에 연결된다"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.6ef29a427e58",
+      "type": "paragraph",
+      "markdown": "유도(induction)는 핵수용체 등 신호를 통해 효소나 운반체의 발현·처리 능력이 증가하는 현상을 포함한다. 전사·번역·단백질 회전이 관여하므로 시작과 종료의 시간 경과가 약물의 혈중 반감기 하나로만 결정되지는 않는다. 어떤 경로가 유도되는지와 그 약물이 사용하는 경로를 함께 확인해야 한다. 유도제라는 분류를 모든 효소의 동일한 증가로 일반화하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.48e1e06e1215",
+      "type": "paragraph",
+      "markdown": "전구약물(prodrug)은 대사로 활성 물질이 생성될 수 있어 원약물 농도 감소와 효과 감소가 반드시 같은 방향이 아니다. 생성과 후속 제거가 모두 바뀌면 활성 대사체 노출의 방향도 단순하지 않다. 억제는 항상 독성을 늘리고 유도는 항상 효과를 낮춘다는 암기 규칙은 이러한 구조를 빠뜨린다. 실제 조합의 권고는 제품 허가정보와 임상 상호작용 자료에 따라 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.188c26135dce",
+      "type": "heading",
+      "level": 2,
+      "text": "병렬 제거경로의 독립 계산"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.77bd2ad4c104",
+      "type": "paragraph",
+      "markdown": "일정 이용률·선형 제거를 두고 한 경로가 기저 청소율의 분율 fm을 담당한다고 하자. 그 경로의 잔여 활성을 r로 줄이고 다른 경로는 그대로 두면 상대 총청소율은 (1−fm)+r×fm이다. 동일 투여량에서 AUC 비는 그 역수1/[(1−fm)+r×fm]로 근사할 수 있다. 이 식은 자유 분율·혈류·이용률·다른 경로가 바뀌지 않는다는 제한된 모형이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.a5c6b4b2893a",
+      "type": "paragraph",
+      "markdown": "fm=0.8,r=0.25이면 상대 청소율은0.4이고 AUC 비는2.5다. 같은 r에서 fm=0.2이면 상대 청소율0.85,AUC 비 약1.176이다. 억제의 세기가 같아도 해당 경로의 기여가 다르면 총노출 변화가 다른 이유다. 이 임의 모형의 비율은 특정 실제 약물의 상호작용 등급·감량 비율·안전성을 정하는 값이 아니다. 장과 간의 이용률 변화나 활성 대사체는 별도로 다뤄야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.b08964dfeab8",
+      "type": "heading",
+      "level": 2,
+      "text": "근거를 실제 조합에 적용하는 순서"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.1931e415aa06",
+      "type": "paragraph",
+      "markdown": "시험관 자료는 가능한 기전을 제시하지만 생체 노출과 임상 효과를 그대로 재현하지 않는다. 임상 연구의 AUC·Cmax 변화,대상 집단·용량·경로·시간,동반 질환과 평가한 이상반응을 확인해야 한다. 약물 농도 증가가 통계적으로 관찰되었다는 사실과 개별 환자의 조치가 필요한 정도는 다른 판단이다. 최신 허가정보에는 병용 금기·조절·감시 등 조합별 지침이 포함될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.b.52c73b2c9558",
+      "type": "paragraph",
+      "markdown": "상호작용 예시 목록은 전수 목록이 아니며 대사·수송 외 흡수와 약력학적 기전은 따로 검토해야 한다. 미국 규제기관 자료는 국내 허가사항과 동일하다고 가정하지 않는다. 이 절에서는 효소·수송 상호작용의 원리와 독립 계산을 다루며 특정 조합의 현재 병용 여부나 용량을 결정하는 알고리즘으로 대신하지 않는다. 자료의 확인일과 적용 범위는 본문 외 근거 기록에서 관리한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.diagram.fraction-metabolized-exposure-ratio",
+      "type": "diagram",
+      "diagramRef": "diagram.fraction-metabolized-exposure-ratio",
+      "path": "diagrams/diagram.fraction-metabolized-exposure-ratio.svg",
+      "alt": "병렬 제거경로의 조건부 노출비의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.metabolism-interactions.table.compare",
+      "type": "table",
+      "data": {
+        "title": "상호작용의 축",
+        "columns": [
+          "축",
+          "주요 질문"
+        ],
+        "rows": [
+          [
+            "흡수",
+            "용출·pH·결합·수송"
+          ],
+          [
+            "대사",
+            "억제·유도·경로 분율"
+          ],
+          [
+            "배설",
+            "운반·장기 기능"
+          ],
+          [
+            "약력학",
+            "노출 변화 없이 효과 변화"
+          ]
+        ],
+        "notes": "정의와 대표 관계의 비교이며 임상 단일 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/sections/pharmacology.general.metabolism-interactions.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "같은 경로 억제도 제거 기여분율에 따라 총노출 영향이 다르다."
+  ],
+  "relatedLessons": [
+    "pharmacology.general.metabolism-biotransformation",
+    "pharmacology.general.bioavailability-first-pass"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.general.metabolism-interactions.001",
+    "question.pharmacology.general.metabolism-interactions.002"
+  ]
+}

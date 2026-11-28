@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.autoimmunity.anca-specificity",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.autoimmunity.anca-specificity.b.7080454b20c1",
+      "sourceSha256": "7080454b20c1f3710c885a3afa8f9390c4841a23bc7e342ee5a7769e6520f661",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.anca-specificity.b.81231ee5cfe0",
+      "sourceSha256": "81231ee5cfe0ce0894af3e1a177be1e4d0f1b49451529074f61fb3be5e9ab866",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.anca-specificity.b.093cdb6fd99d",
+      "sourceSha256": "093cdb6fd99d173a4a4ff5b4645dc59c913c004587cb3057fc161513777722b9",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.510bcb4d0821ec529f1a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 117,
+            "end": 119,
+            "exact": "보체",
+            "prefix": "염증 신호를 증폭하는 데 기여할 수 있다. ",
+            "suffix": "와 호중구 사이의 되먹임도 중요하다. 항체가"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        },
+        {
+          "id": "ann.cafbbe7ad526da7177ae",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 140,
+            "end": 186,
+            "exact": "항체가 있다는 사실과 어떤 조직에서 실제 활성화가 일어났다는 결과는 구별해야 한다.",
+            "prefix": " 보체와 호중구 사이의 되먹임도 중요하다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.autoimmunity.anca-specificity.b.9a40434038b3",
+      "sourceSha256": "9a40434038b38abb88b0fa1307199bcb25b352d9db8a3808c21d95244bc60bfb",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.anca-specificity.b.efa52aea1b23",
+      "sourceSha256": "efa52aea1b23869af6546b61e020ae73da29bd864dbf53c88511156078351063",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.anca-specificity.b.9a4a5ea6ce06",
+      "sourceSha256": "9a4a5ea6ce06c0f90f6ce9e464d170b7735c7e9c2755e5b77d26a7bf26cb4448",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.anca-specificity.b.57e4cc173d35",
+      "sourceSha256": "57e4cc173d3509f35f50630450486d7d89d6a022d319b42870477020c7caa31a",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.anca-specificity.b.f522563f6224",
+      "sourceSha256": "f522563f62248b6d60857311c00b8aa1fa6a30c81f318dc9703161240017a893",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.anca-specificity.b.e158bc91ce9d",
+      "sourceSha256": "e158bc91ce9dff879d3bd603d2f9e315e264699145c1ece6d4054fae1c43cfea",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    }
+  ]
+}

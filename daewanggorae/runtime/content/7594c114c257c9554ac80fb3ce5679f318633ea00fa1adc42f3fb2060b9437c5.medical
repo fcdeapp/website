@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.ischemia.oxygen-balance",
+  "subjectId": "cardiology",
+  "chapterId": "ischemia",
+  "title": {
+    "ko": "심근 산소 공급과 수요의 균형",
+    "en": "Myocardial Oxygen Supply and Demand"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.ischemia.oxygen-balance.lo.01",
+      "text": "산소 함량·혈류·공급량을 구별한다"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.lo.02",
+      "text": "빈맥과 벽응력의 효과를 설명한다"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.lo.03",
+      "text": "심내막하 허혈의 취약성을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.a104326a03bf",
+      "type": "heading",
+      "level": 2,
+      "text": "농도와 유량의 곱"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.16c3aa67af08",
+      "type": "paragraph",
+      "markdown": "심근에 전달되는 산소량은 관상동맥 혈류와 동맥혈 산소 함량의 곱으로 설명할 수 있다. 동맥혈 산소 함량은 주로 헤모글로빈에 결합한 산소와 소량의 용해 산소로 구성된다. 산소포화도가 같아도 헤모글로빈이 낮으면 산소 함량은 줄어든다. 반대로 혈액에 산소가 충분해도 해당 부위의 혈류가 제한되면 조직의 공급은 부족할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.1d10e67a7163",
+      "type": "paragraph",
+      "markdown": "산소 공급량(delivery)과 실제 소비량(consumption)은 같은 수치가 아니다. 심근은 공급된 산소의 일부를 추출하며 필요와 여유에 따라 혈류와 추출을 조정한다. 좌심실 심근은 안정 시에도 상당한 추출을 하고 있어 수요가 커지면 혈류 증가가 중요해진다. 정맥 산소의 감소는 추출 증가의 단서가 될 수 있지만 혈류와 대사를 분리하지 않고 해석해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.2ddcd54de29d",
+      "type": "heading",
+      "level": 2,
+      "text": "소비량과 정맥혈의 정보"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.2cc181fe73a6",
+      "type": "paragraph",
+      "markdown": "정상상태의 Fick 수지에서는 산소 소비량을 Q×(Ca−Cv)로 표현할 수 있다. Ca와 Cv는 각각 동맥과 해당 조직에서 나온 정맥의 산소 함량이다. 혈류를 mL/min, 함량을 mL 산소/mL 혈액으로 쓰면 곱의 단위는 mL 산소/min이 된다. 함량을100mL 혈액당 값으로 제시했다면 그 단위 변환을 반영해야 한다. 포화도 차이를 산소 함량 차이와 같은 단위로 계산하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.cf661d2e4a55",
+      "type": "paragraph",
+      "markdown": "가상 혈류100에서 동정맥 함량 차이가0.1이면 소비량은10이다. 혈류가50으로 줄어도 차이가0.2로 커지면 같은 소비량이 가능하지만 추출의 여유에는 한계가 있다. 실제 심근에서는 지역별 혈류와 대사가 균일하지 않고 섞인 정맥혈이 모든 작은 허혈 부위를 대표하지 못할 수 있다. 따라서 전반적인 평균 소비량이 유지된다는 사실만으로 국소 허혈을 배제하지 않는다. 혈류·함량·추출과 공간 분포를 함께 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.790037b35820",
+      "type": "heading",
+      "level": 2,
+      "text": "심장이 일을 더 해야 할 때"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.e988cec46e79",
+      "type": "paragraph",
+      "markdown": "심박수, 수축력과 벽응력은 심근 산소 수요의 중요한 결정 요인이다. 같은 박출량이라도 높은 압력에 맞서 수축하면 비용이 다를 수 있다. 심실의 반지름과 벽 두께도 섬유가 부담하는 응력에 기여한다. 혈압과 심박수의 곱은 일부 상황에서 수요의 간접 지표로 쓰지만 실제 심근 산소 소비량의 직접 계측값과 동일하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.81e7200d3319",
+      "type": "paragraph",
+      "markdown": "빈맥은 단위 시간당 수축 횟수를 늘리는 동시에 이완기를 짧게 한다. 좌심실의 관상 관류는 이완기의 비중이 커서 수요 증가와 공급 시간 감소가 동시에 생길 수 있다. 맥박이 빨라졌다는 사실만으로 모든 환자에게 같은 정도의 허혈이 생기는 것은 아니다. 기저 혈류 예비력과 이완 압력, 혈압과 산소 함량이 함께 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.3359d08e5d43",
+      "type": "heading",
+      "level": 2,
+      "text": "수축하는 벽 안의 혈관"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.9236043e4a88",
+      "type": "paragraph",
+      "markdown": "심근 내 혈관은 수축하는 조직에 의해 압박된다. 좌심실 심내막하 층은 높은 조직 압력과 이완기의 의존성 때문에 공급 저하에 취약하다. 대동맥 이완 압력이 낮아지거나 심실 이완 압력이 높아지면 유효 관류 구동력이 줄어들 수 있다. 단순히 대동맥 평균압 하나만으로 모든 층의 실제 압력차를 대표하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.afb1cce88238",
+      "type": "paragraph",
+      "markdown": "심실비대는 근육량과 수요를 늘리고 미세순환의 여유에 영향을 줄 수 있다. 빈혈·저산소혈증·저혈압은 공급의 서로 다른 항을 바꾼다. 심한 대동맥판 질환이나 빈맥성 부정맥은 공급과 수요 양쪽에 관여할 수 있다. 이런 원인을 급성 죽상혈전과 구별하되 기존 관상동맥 병변이 함께 존재할 가능성도 열어 두어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.03561a7ddc9e",
+      "type": "heading",
+      "level": 2,
+      "text": "수지로 읽는 사례"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.92f7cd515561",
+      "type": "paragraph",
+      "markdown": "혈류를 일정하게 두고 헤모글로빈에 결합한 산소만 고려하는 가상 비교에서는 공급량이 헤모글로빈과 포화도에 비례한다. 예를 들어 헤모글로빈 지표가 12에서 8로 줄고 포화도가 같다면 결합 산소 공급의 상대값은 3분의 2가 된다. 실제 환자에서는 혈류와 추출의 보상이 더해지므로 이 비례식으로 수혈이나 산소 투여의 적응을 정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.b.a4aa56e668ca",
+      "type": "paragraph",
+      "markdown": "흉통과 troponin 변화가 있는 환자를 평가할 때는 혈관의 급성 병변뿐 아니라 산소 공급·수요의 전신 조건을 함께 본다. 다만 불균형을 유발하는 원인이 있다는 사실만으로 심근경색이 확정되지는 않는다. 허혈성 손상인지와 현재의 객관적 진단 근거를 추가로 확인해야 한다. 생리적 설명과 진단 분류는 연결되면서도 서로를 대체하지 않는 단계다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.diagram.coronary-oxygen-content-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.coronary-oxygen-content-toy",
+      "path": "diagrams/diagram.coronary-oxygen-content-toy.svg",
+      "alt": "헤모글로빈 지표와 결합 산소의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.ischemia.oxygen-balance.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "산소 함량",
+            "혈액 부피당 운반 산소"
+          ],
+          [
+            "전달량",
+            "혈류×동맥 산소 함량"
+          ],
+          [
+            "소비량",
+            "정상상태의 Q×(Ca−Cv)"
+          ],
+          [
+            "빈맥",
+            "수요 증가와 이완 관류 시간 감소 가능"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/ischemia/sections/cardiology.ischemia.oxygen-balance.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.ischemia.oxygen-balance.001",
+    "question.cardiology.ischemia.oxygen-balance.002"
+  ],
+  "relatedLessons": [
+    "cardiology.coronary.atherothrombosis",
+    "cardiology.coronary.flow-reserve"
+  ]
+}

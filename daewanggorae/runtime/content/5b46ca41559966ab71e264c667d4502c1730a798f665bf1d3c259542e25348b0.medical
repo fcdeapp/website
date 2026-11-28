@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pediatrics.development.surveillance-screening",
+  "subjectId": "pediatrics",
+  "chapterId": "development",
+  "title": {
+    "ko": "발달 감시·선별과 퇴행의 평가",
+    "en": "Developmental Surveillance Screening and Regression"
+  },
+  "learningObjectives": [
+    {
+      "id": "pediatrics.development.surveillance-screening.lo.01",
+      "text": "발달 영역과 감시·선별·진단을 구별한다"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.lo.02",
+      "text": "보호자·진찰과 표준화 검사 결과를 통합한다"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.lo.03",
+      "text": "퇴행·비대칭과 청각·시각 문제를 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pediatrics.development.surveillance-screening.b.b196e1eba297",
+      "type": "heading",
+      "level": 2,
+      "text": "기능의 획득은 여러 영역에서 일어난다"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.c6e65d2b7985",
+      "type": "paragraph",
+      "markdown": "발달(development)은 대근육·소근육, 언어·인지와 사회적 상호작용·적응 기능 등 여러 영역의 변화를 포함한다. 한 영역에서 빠르다고 다른 영역의 어려움이 사라지는 것은 아니다. 같은 연령에서도 획득 시점의 분포가 있으며 문화·경험과 기회, 감각과 운동 기능이 관찰에 영향을 준다. 숫자 하나로 아이의 전체 능력과 미래를 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.6688e68e817c",
+      "type": "paragraph",
+      "markdown": "보호자가 말하는 할 수 있는 행동과 실제 자발적으로 사용하는 기능은 구별해 살핀다. 진료실에서는 낯섦과 피로·수면·질병 때문에 평소 기능이 잘 드러나지 않을 수 있다. 반대로 특정 과제를 한 번 수행했다는 사실만으로 일상의 모든 기능을 설명할 수도 없다. 가정·보육 환경의 관찰과 진찰을 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.14bc37cb85b4",
+      "type": "heading",
+      "level": 2,
+      "text": "감시와 선별은 다른 과정이다"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.642ceefa2180",
+      "type": "paragraph",
+      "markdown": "발달 감시(surveillance)는 방문마다 병력·보호자 우려·관찰과 위험을 이어서 확인하는 과정이다. 선별(screening)은 정해진 도구와 절차로 추가 평가가 필요한 가능성을 찾는다. 선별 양성은 확진이 아니며 음성도 모든 질환을 배제하지 않는다. 우려가 명확하면 정기 선별 연령만 기다리며 평가를 미루지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.044a8b1307cf",
+      "type": "paragraph",
+      "markdown": "미국의 AAP·CDC 체계에서 안내하는 일반 발달 선별과 자폐스펙트럼 관련 선별의 방문 시기는 같은 표가 아니다. 국내 영유아검진과 도구·의뢰 경로를 미국 일정으로 그대로 대체하지 않는다. 검사 도구의 연령·언어와 검증 집단, 미숙아의 교정연령 적용 등 조건을 확인한다. 도구 이름이 같아도 판본·시행 조건과 점수의 의미가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.cecdcc86c3fc",
+      "type": "heading",
+      "level": 2,
+      "text": "지연과 퇴행의 차이"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.5bd01f3802b5",
+      "type": "paragraph",
+      "markdown": "지연은 기대되는 기능의 획득이 늦은 상태이고, 퇴행(regression)은 이미 안정적으로 하던 기능을 잃는 변화다. 퇴행은 단순한 늦은 획득과 다르게 평가해야 한다. 언어·운동·사회적 기능의 어떤 변화가 언제 시작되었고 지속·진행하는지 구체적으로 확인한다. 급성 의식 변화·경련과 근력 저하 등은 현재의 신경학적 위해를 별도로 평가하게 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.e36fa7b5da48",
+      "type": "paragraph",
+      "markdown": "움직임의 비대칭과 근긴장·반사, 시각·청각의 문제는 발달 표현에 영향을 준다. 말을 적게 한다는 관찰에서 언어 환경과 청력·이해·상호작용 및 신경학적 배경을 함께 본다. 다언어 환경을 모든 지연의 원인으로 확정하지 않는다. 기능의 여러 영역이 함께 영향을 받는지와 성장·머리둘레·다른 증상도 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.d1232419f955",
+      "type": "heading",
+      "level": 2,
+      "text": "지원은 진단명만 기다리지 않는다"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.8488e293599f",
+      "type": "paragraph",
+      "markdown": "추가 평가에는 발달·신경학적 진찰과 감각, 필요에 따른 검사·전문 평가가 포함된다. 모든 아이에게 같은 유전자·영상 검사를 한꺼번에 적용하지 않고 병력과 진찰에서 나온 질문에 맞춘다. 선별 결과는 가능성과 다음 단계를 설명하는 자료이며 아이를 한 점수로 부르는 낙인이 아니다. 강점과 실제 도움이 필요한 기능을 함께 기술한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.b.1ade7f78360f",
+      "type": "paragraph",
+      "markdown": "치료·교육과 가족 지원은 확정 진단의 이름을 기다리는 동안에도 필요한 범위에서 연결할 수 있다. 보호자에게 집에서 할 과제만 주는 대신 실제 접근 가능한 서비스와 목표·추적 계획을 함께 정한다. 시간이 지나며 바뀌는 기능과 새 우려를 기록하고 지원의 효과를 평가한다. 발달 평가는 분류와 진단을 넘어 아이와 가족의 일상 기능을 돕는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.suppheading0851",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 판단의 연결"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.supp.65e92f0adf6a",
+      "type": "paragraph",
+      "markdown": "검사 점수의 변화는 실제 기능 변화 외에도 검사 당시의 피로·언어 이해와 시행자·환경, 도구의 연령 구간 변화에 영향을 받을 수 있다. 점수가 좋아졌다고 모든 일상 어려움이 해결된 것은 아니고, 한 번 낮아졌다고 반드시 진행성 질환도 아니다. 동시에 실제로 하던 기능을 잃는 퇴행은 점수의 작은 흔들림과 구별하여 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.supp.3a5c8f3dd535",
+      "type": "paragraph",
+      "markdown": "지원 목표는 관찰 가능한 기능으로 설정하면 추적이 명확해진다. 예를 들어 의사 표현·이동·놀이와 일상 참여에서 어떤 도움이 필요한지를 보호자와 공유한다. 선별 점수를 높이는 것 자체가 유일한 치료 목표는 아니다. 청각·시각과 운동·언어·사회적 상호작용의 조건을 함께 확인하고 서비스가 실제 일상에 주는 변화를 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.development.surveillance-screening.table0851",
+      "type": "table",
+      "data": {
+        "title": "조건·측정·기전과 해석",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "감시",
+            "반복 병력·관찰·우려"
+          ],
+          [
+            "선별",
+            "표준화된 가능성 평가"
+          ],
+          [
+            "진단",
+            "기능·감각·신경과 원인"
+          ],
+          [
+            "퇴행",
+            "획득 지연과 다른 기능 소실"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/development/sections/pediatrics.development.surveillance-screening.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pediatrics.development.surveillance-screening.001"
+  ],
+  "relatedLessons": [
+    "pediatrics.growth.assessment",
+    "pediatrics.growth.velocity-measurement"
+  ]
+}

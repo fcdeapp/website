@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "trauma-surgery.transfusion.massive-monitoring",
+  "subjectId": "trauma-surgery",
+  "chapterId": "transfusion",
+  "title": {
+    "ko": "대량수혈의 실행과 합병증 감시",
+    "en": "Massive Transfusion Coordination and Monitoring"
+  },
+  "learningObjectives": [
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.lo.01",
+      "text": "혈액 성분의 역할과 전달 과정을 설명한다"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.lo.02",
+      "text": "수혈 관련 급성 악화의 감별을 구성한다"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.lo.03",
+      "text": "대량수혈 경로의 활성·전환·종료를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.fbbd8a3ab228",
+      "type": "heading",
+      "level": 2,
+      "text": "빠른 공급에는 조직화가 필요하다"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.c70d46802990",
+      "type": "paragraph",
+      "markdown": "대량 출혈에서는 혈액은행·진료팀·수술실과 검사·운반의 협업이 치료의 일부다. 적혈구는 주로 산소 운반을, 혈장·혈소판과 다른 지혈 성분은 부족한 기능의 보완을 목적으로 한다. 성분마다 보관·준비·호환과 투여 조건이 달라 처방만 했다고 즉시 환자에게 도달하지 않는다. 실제 출혈과 전달 지연을 함께 고려하여 필요한 경로를 조기에 가동한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.2f2a280a90ef",
+      "type": "paragraph",
+      "markdown": "대량수혈 프로토콜은 신속한 초기 공급과 역할 분담을 돕지만 환자별 검사를 대신하지 않는다. 초기의 경험적 공급에서 출혈·검사와 생리에 따른 조정으로 전환하고, 원천이 통제되면 불필요한 공급을 중단해야 한다. 사용한 성분과 실제 투여량·잔여·반응을 기록한다. 수술팀과 혈액은행의 종료 신호가 다르면 성분 낭비와 불필요한 노출이 생길 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.1584bedadefb",
+      "type": "heading",
+      "level": 2,
+      "text": "표본과 환자 확인"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.0131d6a1c5f9",
+      "type": "paragraph",
+      "markdown": "긴급 상황에서도 환자 식별과 표본·성분 확인은 치명적 오류를 막는 핵심이다. 응급 출고와 교차시험 결과의 전환, 기존 항체와 이전 수혈·임신력은 안전에 영향을 준다. 급하다는 이유로 표본과 환자의 연결을 흐리면 이후 검사와 성분 선택 전체가 잘못될 수 있다. 정해진 확인 역할과 기록을 유지하면서 지연을 최소화하는 체계가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.dd64cc896c09",
+      "type": "paragraph",
+      "markdown": "실제 투여 중에는 정맥 접근·기기의 흐름, 유출·가온과 필터 등 전달 조건을 확인한다. 처방량과 환자에게 들어간 양은 누출·라인 문제·중단 때문에 다를 수 있다. 채혈이 주입선에 오염되면 농도와 응고·전해질을 잘못 읽을 수 있다. 결과가 생리와 맞지 않으면 채혈 조건과 시점을 확인하고 현재 상태를 반복 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.ba5c087cbe56",
+      "type": "heading",
+      "level": 2,
+      "text": "대사와 체온의 변화"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.b0676d61c752",
+      "type": "paragraph",
+      "markdown": "많은 성분을 빠르게 투여하면 체온·이온화 칼슘·칼륨·산염기와 체액 부담이 변할 수 있다. 구연산 대사는 관류와 간 기능 등에 영향을 받으며 저칼슘은 응고와 순환에 악영향을 줄 수 있다. 저장과 투여 조건에 따른 전해질 변화도 고려한다. 모든 이상을 혈액의 문제로만 돌리지 말고 손상·저관류·신장 기능·동반 약물을 함께 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.99b43a8e6b68",
+      "type": "paragraph",
+      "markdown": "초기 대사 변화와 회복기의 변화는 다를 수 있어 한 번의 정상 검사로 감시를 끝내지 않는다. 수혈 뒤 혈색소 상승이 기대보다 작다면 지속 출혈·희석·채혈과 용혈 등을 구별한다. 높은 수치가 나와도 산소 전달이 충분하고 과부하가 없다는 보장은 아니다. 기능과 유량·호흡·순환의 실제 변화를 함께 관찰해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.e7f559cc131a",
+      "type": "heading",
+      "level": 2,
+      "text": "새 호흡·순환 악화의 감별"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.3aef4888ea88",
+      "type": "paragraph",
+      "markdown": "수혈 중 또는 뒤의 발열·오한·저혈압·호흡 악화·통증과 소변 변화는 수혈반응과 다른 응급 원인을 평가하게 한다. 용혈·알레르기·오염 관련 감염, 순환 과부하와 급성 폐손상 등은 기전과 접근이 다르다. 원래 출혈·폐손상·감염과 공존할 수 있으므로 시점만으로 단일 원인을 확정하지 않는다. 의심되면 정해진 안전 절차와 혈액은행 평가를 신속히 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.265e6ff595e4",
+      "type": "paragraph",
+      "markdown": "수혈 관련 순환 과부하와 급성 폐손상은 모두 저산소와 양측 음영을 보일 수 있지만 압력·체액과 비심장성 투과성 변화의 기여가 다를 수 있다. 임상·초음파·체액·검사와 시간 범위를 통합하며 운영 정의의 판본도 확인한다. 항목 하나로 분류를 고정하지 않는다. 대량수혈의 성공은 많은 성분을 투여한 양이 아니라 출혈과 생리 회복, 피할 수 있는 위해를 함께 줄인 결과다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.199748323734",
+      "type": "heading",
+      "level": 2,
+      "text": "수혈반응의 기록과 다음 노출"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.a261b60b55d0",
+      "type": "paragraph",
+      "markdown": "급성 악화가 의심되면 성분·시작과 중단 시각,증상·생체징후와 동반 약물·처치,표본과 잔여 성분의 평가를 정해진 체계에 연결한다. 수혈 전에 이미 있던 증상과 새 변화를 구별해야 원인과 분류를 정확히 평가할 수 있다. 한 번의 발열을 모두 같은 반응으로 기록하면 이후 필요한 예방과 검사가 맞지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.b.7ac0ff5bb88c",
+      "type": "paragraph",
+      "markdown": "확인된 반응과 항체·특수 성분 필요를 다음 진료에 전달하는 일도 안전의 일부다. 반응이 있었다는 이유만으로 이후 모든 수혈이 불가능해지는 것은 아니지만,원인과 위해를 고려한 계획이 필요하다. 출혈 소생 중 의심 반응이 생긴 상황에서는 현재 생명 위협과 대체 공급·혈액은행 평가를 함께 조정해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.table0848",
+      "type": "table",
+      "data": {
+        "title": "기전·근거·목표의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "공급",
+            "준비·호환·운반·실제 투여"
+          ],
+          [
+            "관찰",
+            "출혈·검사·체온·전해질"
+          ],
+          [
+            "새 악화",
+            "용혈·감염·알레르기·체액·폐손상 등"
+          ],
+          [
+            "종료",
+            "원천·생리·검사와 팀 간 신호"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "trauma-surgery.transfusion.massive-monitoring.diagram.hemoglobin-dilution-0848",
+      "type": "diagram",
+      "diagramRef": "diagram.hemoglobin-dilution-0848",
+      "path": "diagrams/diagram.hemoglobin-dilution-0848.svg",
+      "alt": "고정 질량의 희석의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/trauma-surgery/chapters/transfusion/sections/trauma-surgery.transfusion.massive-monitoring.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.trauma-surgery.transfusion.massive-monitoring.001",
+    "question.trauma-surgery.transfusion.massive-monitoring.002"
+  ],
+  "relatedLessons": [
+    "trauma-surgery.hemostasis.trauma-coagulopathy",
+    "general-surgery.respiratory.postoperative-hypoxemia"
+  ]
+}

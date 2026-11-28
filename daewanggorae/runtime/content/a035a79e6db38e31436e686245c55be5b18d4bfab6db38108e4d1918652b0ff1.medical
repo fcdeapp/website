@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.metabolism.fed-fasting-integration",
+  "subjectId": "biochemistry",
+  "chapterId": "metabolism",
+  "title": {
+    "ko": "식후·공복의 장기 간 대사 통합",
+    "en": "Interorgan Metabolism in Feeding and Fasting"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.lo.01",
+      "text": "탄소·에너지·질소 이동을 구분한다"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.lo.02",
+      "text": "장기별 연료 이용의 제약을 설명한다"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.lo.03",
+      "text": "저장량과 순유량을 물질수지로 계산한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.a0ece2589a4f",
+      "type": "heading",
+      "level": 2,
+      "text": "장기의 목적은 서로 다르다"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.025bedf93daa",
+      "type": "paragraph",
+      "markdown": "식후 대사는 흡수된 영양소를 즉시 사용하면서 일부를 저장하는 방향으로 조절된다. 공복에는 외부 공급이 줄어든 만큼 내부 저장과 합성 경로가 혈액을 통해 필요한 연료를 공급한다. 이 변화는 모든 효소가 한 순간에 반대 방향으로 바뀌는 전환이 아니다. 짧은 시간의 인산화 조절, 기질 농도, 장시간의 유전자 발현과 조직 적응이 겹친다. 공복 시간을 하나의 숫자로 정해 모든 사람의 글리코젠 고갈과 케톤 이용을 동일하게 예측하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.61d46a9f40ce",
+      "type": "paragraph",
+      "markdown": "간은 혈액의 연료를 분배하고 저장·생산하는 중심 역할을 한다. 골격근은 자신의 에너지 수요에 맞추어 연료를 이용하며, 지방조직은 중성지방을 저장하고 유리지방산과 글리세롤을 공급한다. 신장은 여과·재흡수뿐 아니라 조건에 따라 당신생에도 기여한다. 장기별 순유출을 읽을 때에는 세포 안에서 일어나는 경로와 혈액으로 실제 공급하는 결과를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.688c3490e75c",
+      "type": "heading",
+      "level": 2,
+      "text": "포도당이 필요한 세포의 이유"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.5dc1db6634da",
+      "type": "paragraph",
+      "markdown": "성숙 적혈구는 미토콘드리아가 없어 지방산과 케톤체를 산화하여 ATP를 얻을 수 없다. 해당과정으로 포도당을 분해하고 젖산을 내보내며, 이 과정에서 NAD+ 재생이 필요하다. 장기간 공복에도 적혈구의 포도당 요구가 사라지지 않는 이유다. 적혈구의 산소 운반 기능과 산소를 이용한 산화적 인산화 능력은 다른 문제다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.8d870568944a",
+      "type": "paragraph",
+      "markdown": "뇌는 일반적인 상태에서 포도당 의존성이 크지만 장기간의 연료 부족에 적응하면 케톤체의 기여가 증가할 수 있다. 그렇다고 뇌의 포도당 요구가 완전히0이 되거나 모든 신경세포가 긴사슬 지방산을 같은 방식으로 이용한다는 뜻은 아니다. 신장에서도 겉질과 속질의 산소 공급·대사 특성이 다르다. 한 장기의 이름만으로 전체 조직이 오직 하나의 연료만 쓴다고 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.5acab9e0e59a",
+      "type": "heading",
+      "level": 2,
+      "text": "간 글리코젠과 근육 글리코젠"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.ef376c03c380",
+      "type": "paragraph",
+      "markdown": "간 글리코젠 분해는 혈중 포도당 유지와 연결되고 근육 글리코젠 분해는 주로 근육 내부 에너지 공급에 쓰인다. 간의 포도당6인산가수분해효소(glucose-6-phosphatase) 계통과 근육의 차이가 중요한 이유다. 근육 저장량이 많다는 사실만으로 그 포도당을 그대로 혈액에 방출하여 간을 대체할 수는 없다. 다만 근육에서 나온 젖산·알라닌이 다른 장기의 포도당 생산에 간접 기여할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.de6a5ff40a05",
+      "type": "paragraph",
+      "markdown": "젖산이 간에서 포도당으로 다시 전환되는 코리회로(Cori cycle)는 탄소를 재활용하지만 전신에 공짜 에너지를 만드는 회로는 아니다. 간의 당신생은 에너지를 소비하고 그 에너지는 다른 연료의 산화로 충당될 수 있다. 근육이나 적혈구에서 빠르게 ATP를 얻고 탄소를 옮기는 기능과, 몸 전체의 에너지 수지를 함께 보아야 한다. 탄소가 순환한다는 사실과 ATP가 순생성된다는 사실을 혼동하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.8d913e83921b",
+      "type": "heading",
+      "level": 2,
+      "text": "지방 동원과 케톤체 공급"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.c285936e6919",
+      "type": "paragraph",
+      "markdown": "지방조직의 중성지방 분해로 나온 지방산은 알부민과 결합하여 여러 조직으로 이동할 수 있다. 글리세롤은 간 등에서 당신생의 탄소원으로 이용될 수 있다. 지방산 산화는 간에 ATP와 환원력을 공급하고, 아세틸CoA는 대사 경로의 조절과 케톤체 생성에 연결된다. 사람에서 짝수 탄소 지방산의 아세틸CoA가 순수하게 포도당 탄소를 늘리는 주요 경로가 되지는 않으므로 지방 전체를 포도당으로 바꾼다고 표현하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.26a8c7a07fa8",
+      "type": "paragraph",
+      "markdown": "케톤체의 주요 합성 장소는 간 미토콘드리아다. 생성된 아세토아세트산과 베타하이드록시부티르산은 다른 조직의 연료로 이용될 수 있지만, 간 자체는 케톤체 이용의 핵심 효소인 SCOT/OXCT1가 없어 이들을 자신의 주요 연료로 다시 산화하지 않는다. 적혈구도 미토콘드리아가 없어 이용할 수 없다. 생산 장기와 소비 장기의 분리는 다른 기관으로 연료를 보내는 체계의 일부다. 생리적 케톤 증가와 산증을 동반한 병적 상태도 동일한 말이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.8b2d2768b92c",
+      "type": "heading",
+      "level": 2,
+      "text": "아미노산 이동과 질소 처리"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.e063112fd15b",
+      "type": "paragraph",
+      "markdown": "근육 등에서 방출된 알라닌과 글루타민은 탄소와 질소의 운반에 관여한다. 탄소 골격이 당신생이나 산화에 사용되는 과정과 아미노질소가 요소 또는 암모늄으로 처리되는 과정을 나누어 따라가야 한다. 장기간의 적응에서 뇌의 케톤 이용이 증가하면 포도당 생산을 위한 단백질 분해 요구를 줄이는 데 도움이 될 수 있지만, 체단백 소실이 항상 완전히 멈추는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.3741a6b92a14",
+      "type": "paragraph",
+      "markdown": "신장의 글루타민 대사·암모늄 배설과 당신생은 산염기 상태에 따라서도 달라진다. 따라서 공복의 모든 포도당이 간에서만 만들어진다거나, 혈중 아미노산 농도가 낮으면 단백질 분해가 반드시 감소했다고 설명하지 않는다. 농도는 방출과 흡수의 결과이며 순유량은 별도의 측정·모형이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.55ea08f906a7",
+      "type": "heading",
+      "level": 2,
+      "text": "저장량·총유량·순유량의 계산"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.96a697962599",
+      "type": "paragraph",
+      "markdown": "저장고 G의 변화는 dG/dt=유입−유출이다. 처음100단위인 저장고에서 유입2단위/h, 유출6단위/h가 일정하면8시간 뒤68단위가 된다. 유출만 계산하여52라고 쓰면 유입을 빠뜨린 것이다. 혈당이 거의 일정하더라도 유입과 유출이 모두 큰 상태일 수 있고, 같은 농도가 대사 정지를 의미하지 않는다. 이 모형은 단위와 수지를 확인하기 위한 독립 계산이며 실제 간 글리코젠의 시간 변화를 재현하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.b.60168d16a374",
+      "type": "paragraph",
+      "markdown": "분석을 시작할 때에는 식사 여부·운동·호르몬 상태·관찰 시간을 정리하고, 각 장기에서 나오는 탄소와 들어가는 탄소를 표시한다. 다음으로 ATP를 얻는 반응과 소비하는 반응, 질소의 이동을 별도로 확인한다. 이런 방법은 단원별로 배운 해당·당신생·지방산 산화·요소회로가 실제로 동시에 작동하는 상황을 이해하게 한다. 한 가지 효소의 활성이나 한 번의 혈액검사만으로 전신의 모든 흐름을 결정할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.diagram.substrate-store-net-flux",
+      "type": "diagram",
+      "diagramRef": "diagram.substrate-store-net-flux",
+      "path": "diagrams/diagram.substrate-store-net-flux.svg",
+      "alt": "일정 유입·유출의 저장고 수지의 독립 계산 곡선"
+    },
+    {
+      "id": "biochemistry.metabolism.fed-fasting-integration.table.compare",
+      "type": "table",
+      "data": {
+        "title": "장기의 연료 역할",
+        "columns": [
+          "장기/세포",
+          "공급·이용",
+          "주의"
+        ],
+        "rows": [
+          [
+            "간",
+            "포도당·케톤체 공급",
+            "케톤체자체산화제약"
+          ],
+          [
+            "근육",
+            "자체연료·젖산/알라닌",
+            "글리코젠직접혈당공급과구별"
+          ],
+          [
+            "적혈구",
+            "해당·젖산",
+            "미토콘드리아없음"
+          ],
+          [
+            "뇌",
+            "포도당·적응시케톤",
+            "포도당요구완전소실아님"
+          ],
+          [
+            "신장",
+            "조건별당신생",
+            "겉질·속질구별"
+          ]
+        ],
+        "notes": "전환은 연속적이고 영양·운동·상태에 따라 달라지며 고정 공복 시점을 일반화하지 않는다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/metabolism/sections/biochemistry.metabolism.fed-fasting-integration.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "간은 케톤체의 주요 생산 장기지만 SCOT가 없어 자체 케톤체 산화가 제한된다.",
+    "성숙 적혈구는 미토콘드리아가 없어 케톤체를 산화 연료로 쓰지 못한다."
+  ],
+  "reviewQuestions": [
+    "question.biochemistry.metabolism.fed-fasting-integration.001",
+    "question.biochemistry.metabolism.fed-fasting-integration.002"
+  ],
+  "relatedLessons": [
+    "biochemistry.lipids.fatty-acid-synthesis",
+    "biochemistry.lipids.glycerolipid-synthesis"
+  ]
+}

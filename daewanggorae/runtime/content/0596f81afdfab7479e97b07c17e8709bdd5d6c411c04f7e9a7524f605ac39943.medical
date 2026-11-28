@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-withdrawal-pulse-0853",
+  "lessonId": "psychiatry.substances.alcohol-intoxication-withdrawal",
+  "title": "가상 금단 평가 중 맥박",
+  "series": [
+    {
+      "label": "맥박",
+      "samples": [
+        {
+          "x": 0,
+          "y": 78
+        },
+        {
+          "x": 2,
+          "y": 90
+        },
+        {
+          "x": 4,
+          "y": 108
+        },
+        {
+          "x": 8,
+          "y": 116
+        },
+        {
+          "x": 12,
+          "y": 110
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "hours": [
+      0,
+      2,
+      4,
+      8,
+      12
+    ],
+    "pulse_bpm": [
+      78,
+      90,
+      108,
+      116,
+      110
+    ],
+    "notFixedWithdrawalTimelineOrTreatmentTrigger": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 12,
+      "scale": "linear",
+      "ticks": [
+        0,
+        2,
+        4,
+        8,
+        12
+      ],
+      "label": "첫 기록 뒤 시간(h)"
+    },
+    "yAxis": {
+      "min": 40,
+      "max": 140,
+      "scale": "linear",
+      "ticks": [
+        40.0,
+        65.0,
+        90.0,
+        115.0,
+        140.0
+      ],
+      "label": "맥박(회/분)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "맥박",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정 또는 가상 증례 자료다. 실제 환자·정상 범위·검사 기준·진단·투약·치료효과와 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

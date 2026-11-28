@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.airways.asthma-diagnostic-variability",
+  "subjectId": "pulmonology",
+  "chapterId": "airways",
+  "title": {
+    "ko": "천식의 증상 변동과 객관적 진단",
+    "en": "Symptom Variability and Objective Diagnosis of Asthma"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.lo.01",
+      "text": "변동성 기류 제한과 증상 경과를 연결한다"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.lo.02",
+      "text": "기관지확장·유발 검사의 질문을 구별한다"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.lo.03",
+      "text": "치료 전후 검사 조건을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.fc74d196b0c5",
+      "type": "heading",
+      "level": 2,
+      "text": "달라지는 기도와 호흡"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.3e8dca71b4cb",
+      "type": "paragraph",
+      "markdown": "천식(asthma)은 기도의 만성 염증과 함께 시간·강도가 변하는 호흡 증상과 호기 기류 제한을 특징으로 하는 이질적 질환이다. 쌕쌕거림과 숨참·흉부 압박감·기침은 밤이나 새벽, 운동과 감염·알레르겐·자극 노출에 따라 달라질 수 있다. 증상이 없는 날의 진찰과 폐기능이 비교적 정상일 수 있는 이유다. 반복적인 양상을 확인하고 어느 상황에서 시작되고 얼마나 지속되는지 묻는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.bab66f255233",
+      "type": "paragraph",
+      "markdown": "기도 평활근 수축과 점막 부종, 점액은 내강을 좁히고 호기를 지연시킬 수 있다. 기도과민성에서는 비슷한 자극에 대한 반응이 크게 나타난다. 작은 반경 변화가 흐름에 큰 영향을 줄 수 있으나 실제 기도는 분지와 동적 압박, 점액과 불균등 환기를 포함한다. 하나의 관에 대한 단순 저항식을 환자의 전체 폐기능으로 그대로 환산하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.30ba28cd95d4",
+      "type": "heading",
+      "level": 2,
+      "text": "증상을 검사와 연결한다"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.7e7485f12ac5",
+      "type": "paragraph",
+      "markdown": "폐활량검사에서 FEV1과 FVC, 비율 및 원래 곡선과 품질을 확인한다. 기관지확장제 뒤 기류가 달라지는 현상은 변동성을 보여 주는 자료지만, 한 번의 음성이 모든 천식을 배제하는 것은 아니다. 검사 당시 증상과 사용 약물, 기저 기능이 반응의 여유를 바꾼다. 반대로 반응이 있다는 사실만으로 다른 모든 기류 제한 질환을 배제할 수도 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.6d8809863d06",
+      "type": "paragraph",
+      "markdown": "최대호기유량(peak expiratory flow, PEF)의 연속 기록은 시간에 따른 변화를 포착할 수 있다. 같은 장치와 조작·기록 시간을 유지하고 증상·노출과 약물 사용을 함께 적는다. PEF는 초기 노력과 큰 기도·시작 조건에 영향을 받으므로 부실한 기록을 생물학적 변동으로 오인하지 않는다. 진료실 한 점보다 시간표가 유용한 경우가 있지만 측정의 정확성을 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.a37c672ee759",
+      "type": "heading",
+      "level": 2,
+      "text": "기도유발과 염증 표지자"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.429fa3b5399c",
+      "type": "paragraph",
+      "markdown": "유발검사는 지정한 자극에 대한 기류의 반응을 평가한다. 직접 평활근을 자극하는 방식과 운동·삼투 변화 등 간접 경로를 이용하는 방식은 기전과 성능이 다르다. 검사 전 가능성과 금기·약물 중단 조건 및 안전을 확인한다. 양성 반응은 과민성을 지지하지만 모든 양성 결과가 같은 임상 천식과 위험을 의미하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.1b6c96ba1427",
+      "type": "paragraph",
+      "markdown": "호기 산화질소와 혈액 호산구, 알레르기 감작 검사는 기류 측정과 다른 정보를 준다. 감작은 특정 항원에 대한 면역 반응이고 실제 증상의 유발 관계는 노출·시간 경과로 확인한다. 표지자는 흡입 스테로이드와 전신 약물, 흡연과 동반질환 등에 영향을 받는다. 낮은 값만으로 모든 천식을 배제하거나 높은 값 하나로 모든 기침을 천식으로 확진하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.eb27b09b93ef",
+      "type": "heading",
+      "level": 2,
+      "text": "치료와 진단을 함께 정리한다"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.c7556728ce13",
+      "type": "paragraph",
+      "markdown": "가능하면 장기 치료로 변동성이 줄기 전에 객관적 근거를 확보한다. 이미 치료 중인 환자에서는 과거 기록과 진단 당시 자료, 현재의 약물·복약과 기능을 검토한다. 필요한 치료를 위험하게 중단하여 진단을 증명하려 해서는 안 된다. 검사와 치료의 조절은 현재 위험과 안전, 남은 질문에 맞추어 계획한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.b.48ccf268a0fd",
+      "type": "paragraph",
+      "markdown": "감별에는 유발성 후두폐쇄와 상기도·심장 질환, COPD와 기관지확장증, 감염과 다른 기침 원인이 포함된다. 한 환자에게 여러 기전이 공존할 수 있다. 진단 기록에는 특징적인 증상뿐 아니라 확인한 기류 변동과 당시 조건, 남아 있는 감별을 남긴다. 이름을 붙이는 과정과 현재의 조절·미래 악화 위험을 평가하는 과정은 서로 연결되지만 별개의 질문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.h.extra0845",
+      "type": "heading",
+      "level": 2,
+      "text": "반경과 흐름의 독립 근사"
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.p.extra0845.0",
+      "type": "paragraph",
+      "markdown": "길이와 점도,압력차가 일정한 단단한 원형 관의 층류에서는 저항이 반경의 네제곱에 반비례한다. 반경이 기준의0.8배라면 저항비는1/0.8⁴로 약2.44다. 작은 내강 변화가 흐름에 큰 영향을 줄 수 있음을 설명하는 관계다. 실제 기도에서는 벽의 변형과 분지,난류와 점액·불균등 환기가 함께 있으므로 이 비를 환자의 전체 기도저항이나 FEV1 변화로 곧바로 바꾸지 않는다."
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.p.extra0845.1",
+      "type": "paragraph",
+      "markdown": "혈관과 달리 기도 안팎의 압력차는 호흡 위상과 폐용적에 따라 크게 달라진다. 같은 평활근 긴장이라도 폐용적과 주변 지지가 다르면 내강이 달라질 수 있다. 따라서 검사 전후의 약물뿐 아니라 최대 흡기·시작과 조작 품질을 확인한다. 증상 기록에서 밤과 운동·감염의 차이를 묻는 것도 일정한 관 하나로 설명되지 않는 실제 변동을 포착하려는 과정이다."
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.table0845",
+      "type": "table",
+      "data": {
+        "title": "기전·측정·환자 결과의 비교",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "증상 변동",
+            "유발·시간과 반복 경과"
+          ],
+          [
+            "기류",
+            "품질·약물·기관지확장과 유발"
+          ],
+          [
+            "염증",
+            "호산구·FeNO 등 다른 구획"
+          ],
+          [
+            "진단",
+            "근거와 감별을 함께 기록"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pulmonology.airways.asthma-diagnostic-variability.diagram.airway-radius-resistance-0845",
+      "type": "diagram",
+      "diagramRef": "diagram.airway-radius-resistance-0845",
+      "path": "diagrams/diagram.airway-radius-resistance-0845.svg",
+      "alt": "원형 강체관의 반경과 저항의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/airways/sections/pulmonology.airways.asthma-diagnostic-variability.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.airways.asthma-diagnostic-variability.001",
+    "question.pulmonology.airways.asthma-diagnostic-variability.002"
+  ],
+  "relatedLessons": [
+    "pulmonology.airways.asthma-inflammatory-phenotypes"
+  ]
+}

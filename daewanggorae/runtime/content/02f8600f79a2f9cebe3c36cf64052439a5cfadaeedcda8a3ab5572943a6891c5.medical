@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.focal-atrial-tachycardia",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "국소 심방빈맥과 다소성 심방빈맥",
+    "en": "Focal and Multifocal Atrial Tachycardia"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.lo.01",
+      "text": "국소 심방 활성화와 발생 기전을 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.lo.02",
+      "text": "방실전도 변화 전후의 심방 활동을 해석한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.lo.03",
+      "text": "다소성 빈맥과 심방세동의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.b.cd3128f0e87d",
+      "type": "heading",
+      "level": 2,
+      "text": "심방 기원이라는 관찰"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.b.2a7adfe7145b",
+      "type": "paragraph",
+      "markdown": "국소 심방빈맥(focal atrial tachycardia)은 제한된 심방 부위에서 시작한 활성화가 주변으로 퍼지는 양상의 빈맥이다. 국소라는 말은 활성화 지도에서 보이는 공간적 출발점을 뜻하며 자동능, 유발활동 또는 작은 회귀 중 한 가지 기전을 자동 확정하지 않는다. 동결절과 다른 위치에서 시작하므로 P파 축과 모양이 동율동 때와 달라질 수 있다. 그러나 심방의 출구, 전도 지연과 수술 후 반흔은 표면 P파를 변형하므로 한 유도의 모양만으로 발생점을 정밀하게 표시하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.b.7ce18e9a7abf",
+      "type": "paragraph",
+      "markdown": "빈맥이 점차 빨라졌다 느려지는 가속·감속(warm-up, cool-down)은 자동능 증가의 단서가 될 수 있다. 회귀성 빈맥의 갑작스러운 시작·종료와 대비하여 생각할 수 있지만, 짧은 기록이나 자율신경 변화 때문에 경계가 명확하지 않을 때가 있다. 조기 자극으로 유도·종료되는 양상, 약물 반응과 심장 내부 활성화 지도를 통합해야 한다. 같은 임상 이름 아래 여러 기전이 존재한다는 점이 치료 반응의 다양성을 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.b.afb7ac0a1693",
+      "type": "heading",
+      "level": 2,
+      "text": "심방 속도와 심실 속도"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.b.85d3681fb341",
+      "type": "paragraph",
+      "markdown": "심방빈맥이 지속되어도 방실결절은 모든 심방 자극을 심실로 전달하지 않을 수 있다. 일시적인 방실차단으로 QRS가 줄어든 동안 같은 주기의 심방 활동이 계속된다면 심방의 빈맥 발생원이 방실결절을 필수 회귀 팔로 사용하지 않을 가능성을 지지한다. 표면에서 보이는 심실 맥박이 느려진 것을 빈맥 발생 자체가 사라진 것으로 판단하지 않는다. P파가 T파에 겹쳐 가려졌다면 전도비가 달라지는 순간에 심방 활동이 더 잘 드러날 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.b.6c607533c4ba",
+      "type": "paragraph",
+      "markdown": "심방 전도가 규칙적이어도 심실 반응은 가변 방실전도 때문에 불규칙할 수 있다. 따라서 불규칙한 RR 간격만으로 심방세동을 확진하지 않는다. 반대로 심방 활동의 일정한 형태와 주기를 찾는 데 실패했다는 이유만으로 국소 심방빈맥을 확정해서도 안 된다. 기록 길이와 유도, 잡음 및 전극 접촉을 확인하고 원래 신호에서 반복되는 P파를 검토한다. 표면 신호의 분해능과 실제 발생원의 성질을 구분하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.b.5636671782a1",
+      "type": "heading",
+      "level": 2,
+      "text": "다소성 활성화와 원인 평가"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.b.6c8d5eed4bd7",
+      "type": "paragraph",
+      "markdown": "다소성 심방빈맥(multifocal atrial tachycardia, MAT)에서는 여러 기원의 심방 활성화가 나타나 P파 모양과 PP 간격이 변하고 방실전도 시간도 달라질 수 있다. 분명한 P파와 그 사이의 등전위 구간을 찾는 것이 심방세동과 구별하는 데 도움이 된다. 저산소증, 폐질환의 악화, 전해질 이상과 약물 영향을 함께 평가한다. 심방에서 보이는 불규칙성을 설명하는 데 그치지 않고 그러한 전기적 환경을 만든 전신 상태를 교정하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.b.55dec51f96e6",
+      "type": "paragraph",
+      "markdown": "지속적인 빠른 심실 반응은 충만 시간과 심근 에너지 수지를 바꾸어 빈맥 유발 심근병증에 기여할 수 있다. 원인 치료 뒤 기능이 회복될 수 있지만 모든 심실 기능 저하를 빈맥 탓으로 돌리면 기저 심장질환을 놓친다. 증상의 빈도와 지속, 심방·심실 속도 및 심초음파 소견을 함께 추적한다. 국소 빈맥의 도자 절제는 실제 활성화 지도로 표적을 찾는 과정이며, 표면 P파만으로 정한 가상의 좌표나 정상 장기 메시를 전기생리 지도로 대체하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.focal-atrial-tachycardia.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "국소 AT",
+            "국소 출발 활성화; 발생 기전은 별도"
+          ],
+          [
+            "Warm-up",
+            "자동능 단서; 독점적 확진 소견 아님"
+          ],
+          [
+            "MAT",
+            "여러 P파 모양·변하는 주기"
+          ],
+          [
+            "방실차단",
+            "심방빈맥이 계속되는지 관찰"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.focal-atrial-tachycardia.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.focal-atrial-tachycardia.001"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.avrt-preexcitation",
+    "cardiology.arrhythmias.atrial-flutter"
+  ]
+}

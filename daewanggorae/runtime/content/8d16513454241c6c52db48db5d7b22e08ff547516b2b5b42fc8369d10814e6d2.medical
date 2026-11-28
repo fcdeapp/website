@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hpb-surgery.liver.hcc-metastasis-selection",
+  "subjectId": "hpb-surgery",
+  "chapterId": "liver",
+  "title": {
+    "ko": "간세포암과 대장암 간전이의 절제 선택",
+    "en": "Resection Selection in HCC and Colorectal Liver Metastases"
+  },
+  "learningObjectives": [
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.lo.01",
+      "text": "종양 생물학과 배경 간의 차이를 비교한다"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.lo.02",
+      "text": "기술적 절제 가능성과 환자의 순이득을 구별한다"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.lo.03",
+      "text": "수술·전신치료·국소치료의 연결을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.952ea89bbd5d",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 간 종양이지만 출발점이 다르다"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.e40956ae0d7e",
+      "type": "paragraph",
+      "markdown": "간세포암(hepatocellular carcinoma, HCC)은 간세포 계열의 원발 종양이며 만성 간질환·간경변이 동반되는 경우가 많다. 반면 대장암 간전이(colorectal liver metastasis)는 대장 원발암의 전신적 확산과 관련된다. 영상에서 간의 결절로 보인다는 공통점만으로 같은 병기·치료 체계를 적용할 수 없다. 종양의 기원과 생물학, 간 밖 병변과 배경 간을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.abdomen.liver-segments.organ-context"
+      ]
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.076f9c2f4cb5",
+      "type": "paragraph",
+      "markdown": "간세포암에서는 종양의 수·크기·위치와 혈관 침범·간 밖 전파뿐 아니라 간 기능과 문맥고혈압·전신 수행 상태가 치료에 중요하다. 같은 절제 범위라도 간경변이 있으면 기능 손실과 재생의 여유가 다르다. 절제·이식·소작과 다른 국소·전신 치료의 이득을 각각 비교한다. 국내와 해외 지침은 근거와 장기 배분·진료 환경이 달라 같은 환자의 선택을 설명하는 틀에 차이가 있을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.4e5f3a7f5b39",
+      "type": "heading",
+      "level": 2,
+      "text": "전이는 개수만으로 판단하지 않는다"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.e0f7914a3f9f",
+      "type": "paragraph",
+      "markdown": "대장암 간전이의 절제 평가는 모든 병변을 제거하거나 적절히 국소 통제할 가능성과 충분한 기능적 잔여간, 간 밖 질환의 통제와 전신 치료 반응을 포함한다. 종양의 개수 하나만으로 기술적·종양학적 가능성을 모두 정하지 않는다. 양엽의 분포와 혈관·담관 관계, 원발암의 상태와 분자 특성 및 전신 질환의 경과를 함께 본다. 같은 개수라도 남길 해부와 기능이 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.f5b781bffc8f",
+      "type": "paragraph",
+      "markdown": "항암 치료 뒤 영상에서 병변이 보이지 않게 되었다고 그 위치에 살아 있는 종양이 전혀 없다는 뜻은 아니다. 치료 전 위치와 크기·경계, 추적 영상과 수술 중 평가를 연결해야 한다. 반응을 치료 기회의 변화로 활용하되 영상 소실과 병리적 완전 반응을 같은 말로 쓰지 않는다. 이전 치료가 간 실질에 준 손상도 잔여간 기능 평가에 포함한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.a44ce9c27238",
+      "type": "heading",
+      "level": 2,
+      "text": "직경과 종양량의 관계"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.bfb76d6723b9",
+      "type": "paragraph",
+      "markdown": "구형이라는 단순 가정에서 부피는 4πr³/3이므로 반지름이 두 배가 되면 부피는 여덟 배가 된다. 직경도 같은 비율로 두 배가 된다면 같은 결과다. 따라서 길이의 상대 변화와 부피의 상대 변화를 구별한다. 실제 종양은 불규칙하고 괴사·섬유화·조영 변화가 있어 이 식만으로 살아 있는 종양량이나 위험을 정할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.027ca843ab7c",
+      "type": "paragraph",
+      "markdown": "영상에서 측정한 최대 직경과 여러 병변의 합, 체적과 기능적 섭취는 서로 다른 지표다. 검사 시기·기법과 치료 효과에 따른 변화도 비교의 전제다. 작은 크기라도 중요한 혈관·담관 가까이에 있으면 치료가 어려울 수 있고 큰 크기만으로 모든 국소 치료의 가능성을 같은 방식으로 판단할 수는 없다. 크기를 해부와 생물학의 맥락 속에서 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.beed75e9eef1",
+      "type": "heading",
+      "level": 2,
+      "text": "수술 전후 전략을 이어서 본다"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.1b2f3a3ec773",
+      "type": "paragraph",
+      "markdown": "절제의 기술적 가능성은 환자에게 실제 순이득이 있는지를 묻는 단계와 연결되어야 한다. 재발 위험·전신 질환·수술 후 기능과 회복, 대체 치료의 효과·독성을 함께 비교한다. 다학제 평가에서는 어떤 병변을 어떤 방법으로 통제하고 남은 간과 이후 치료 기회를 어떻게 지킬지 명시한다. 치료 순서가 바뀌면 그 이유와 재평가 조건도 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.b.cb77e676aabe",
+      "type": "paragraph",
+      "markdown": "수술 후 보조치료의 근거는 시간에 따라 바뀔 수 있다. 특정 임상시험의 초기 재발 지표가 후속 관찰에서도 유지되는지, 전체 생존과 독성·적용 집단이 어떠한지 확인해야 한다. 초기 보고를 영구적인 표준으로 고정하지 않는다. 수술 뒤 영상·종양 표지자와 간질환·전신 치료의 추적은 원래 종양의 성격과 최신 근거에 맞춰 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.suppheading0850",
+      "type": "heading",
+      "level": 2,
+      "text": "기전·측정과 장기 결과의 연결"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.supp.48b8da535b1f",
+      "type": "paragraph",
+      "markdown": "간세포암 재발은 원래 종양과 관련된 전파·잔여 질환의 경로와 만성 간질환에서 새 종양이 발생하는 경로가 함께 작용할 수 있다. 절제연이 확보되었다고 배경 간의 발암 위험이 없어지는 것은 아니다. 바이러스와 대사·알코올 등 기저 간질환의 관리와 추적은 종양 제거 뒤에도 중요하다. 종양학적 평가와 간질환 관리를 분리하면 장기 위험의 일부를 놓치게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.supp.6a23cbef7d38",
+      "type": "paragraph",
+      "markdown": "간전이의 치료 반응을 비교할 때에는 원발 종양의 분자 특성과 간 밖 병변, 항암 노출과 치료의 순서를 함께 본다. 반응이 좋았던 집단만 수술받았다면 수술군의 생존이 좋은 이유가 모두 수술 자체의 효과는 아닐 수 있다. 환자 선택·시간과 교란을 고려해야 관찰 결과를 해석할 수 있다. 다학제 결정은 기술적 제거 가능성과 질환 전체의 통제를 별도 질문으로 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.table0850",
+      "type": "table",
+      "data": {
+        "title": "해부·기전·측정과 판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "HCC",
+            "배경 간과 발암·종양"
+          ],
+          [
+            "간전이",
+            "원발암·전신 질환·치료 반응"
+          ],
+          [
+            "기술",
+            "남은 기능과 모든 병변 통제"
+          ],
+          [
+            "근거",
+            "초기 결과와 후속 관찰 구별"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.diagram.spherical-volume-0850",
+      "type": "diagram",
+      "diagramRef": "diagram.spherical-volume-0850",
+      "path": "diagrams/diagram.spherical-volume-0850.svg",
+      "alt": "구형 가정의 반지름과 부피의 독립 계산 곡선"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.3d0850",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.abdomen.liver-segments.organ-context"
+    },
+    {
+      "id": "hpb-surgery.liver.hcc-metastasis-selection.limits0850",
+      "type": "clinicalPearl",
+      "markdown": "정상 장기의 위치와 주변 구조 문맥이다. 농양·누공·협착·종양·실제 기능 분절·미세혈류·소작·절제선·환자별 기능과 안전 경로를 이 정적 모델이 표현하거나 정하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/hpb-surgery/chapters/liver/sections/hpb-surgery.liver.hcc-metastasis-selection.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.hpb-surgery.liver.hcc-metastasis-selection.001",
+    "question.hpb-surgery.liver.hcc-metastasis-selection.002"
+  ],
+  "relatedLessons": [
+    "hpb-surgery.liver.posthepatectomy-complications",
+    "hpb-surgery.liver.ablation-parenchyma"
+  ]
+}
