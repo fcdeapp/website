@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.tuberculosis-diagnostic-evidence",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.b.95e9c7d2aad3",
+      "sourceSha256": "95e9c7d2aad3e96ddf0810b224bf89582f2ab66ef8dc9850537fca6b42c46550",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.d287ad6f01bfb6f46c71",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 6,
+            "exact": "결핵",
+            "prefix": "활동성 ",
+            "suffix": "의 평가는 증상과 노출·면역, 영상과 미생물"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.b.bf896902176a",
+      "sourceSha256": "bf896902176a69a0ce9cb39cc8101ccb860f35d0a6bec248d10834bcb757f91c",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.b.5d5ebc0e1e1d",
+      "sourceSha256": "5d5ebc0e1e1dd749b60c19339877267e77fb55d0a4ff2a53bd1ed36347ac998c",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.b.609e3d1a0589",
+      "sourceSha256": "609e3d1a05896b0e161fbed05616ee17f55c5d96dc69e61ba2d8d22980011ef0",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.b.dc7092cd48d2",
+      "sourceSha256": "dc7092cd48d20f37870c397443d75c0b8d3001f7cbbf70be28cf201fb3559e4c",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.b.32cbf08e058c",
+      "sourceSha256": "32cbf08e058c61e1bad50d8df1084069b3266166093b124ff6bb3a4facd4ec7b",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.b.9d5c1593ced7",
+      "sourceSha256": "9d5c1593ced7f1358ee2d2847b072ff396101190428d57d7ff9c35758f8802d9",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.6cdd5bf56e1a689f638c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 59,
+            "end": 104,
+            "exact": "채취와 기침 유발 등은 노출을 늘릴 수 있어 적절한 공간·보호와 절차가 중요하다.",
+            "prefix": "의 완성을 기다리는 일과 별도로 평가한다. ",
+            "suffix": " 국내 신고·접촉자와 격리·해제는 적용 규정"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.b.bf036b215f36",
+      "sourceSha256": "bf036b215f3668329004469d89198c292cbfb6c9e8b79a6d6cfdfa5dab2f7fb4",
+      "sourceLengthUtf16": 169,
+      "annotations": [
+        {
+          "id": "ann.b05d0b6d69151a28fd13",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 115,
+            "end": 169,
+            "exact": "결핵 진단은 검사 이름의 수보다 서로 다른 근거가 같은 질병과 시간 과정을 설명하는지가 중요하다.",
+            "prefix": "별, 추가 표본·조직의 질문을 재평가한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.p.extra0846.0",
+      "sourceSha256": "9038e4054dd38adbb0abaf38d153eb2d94aa543364ee8716175a241f42e27c39",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-diagnostic-evidence.p.extra0846.1",
+      "sourceSha256": "a4b692ce46e6749ca3e734eda7bff0d523defc49b01debb4d3172fbe9800710f",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    }
+  ]
+}

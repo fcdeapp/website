@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience.motor-unit.recruitment-fatigue",
+  "subjectId": "neuroscience",
+  "chapterId": "motor-unit",
+  "title": {
+    "ko": "운동단위의 모집·발화율과 피로 계측",
+    "en": "Motor Unit Recruitment Rate Coding and Fatigue Measurement"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.lo.01",
+      "text": "힘 조절의 모집과 발화율을 구별한다"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.lo.02",
+      "text": "크기 원리의 가정과 제한을 설명한다"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.lo.03",
+      "text": "근력·피로와 측정 조건을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.88bfbca23627",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 힘을 만드는 여러 조합"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.0e89f0628b17",
+      "type": "paragraph",
+      "markdown": "운동단위(motor unit)는 한 운동뉴런과 그 지배 근섬유의 집합이다. 힘은 활성화된 단위의 수와 각 단위의 발화율, 근섬유의 수축 성질·길이·속도에 의해 달라진다. 같은 전체 힘도 서로 다른 단위의 조합과 시간 패턴에서 나올 수 있다. 표면근전도의 크기를 근력이나 운동뉴런 개수와 단순 일대일 대응시키지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.05f0cf213f54",
+      "type": "paragraph",
+      "markdown": "등척성 수축과 관절이 움직이는 과제는 기계적 조건이 다르다. 관절의 지렛팔과 자세·통증·노력, 협력근과 길항근의 활성도 측정된 힘에 영향을 준다. 악력이 줄었다는 결과만으로 신경근접합부의 피로라고 확정할 수 없다. 과제와 측정 조건을 구체적으로 정의해야 전후 비교가 가능하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.24602882f93a",
+      "type": "heading",
+      "level": 2,
+      "text": "크기 원리의 의미"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.8c7f24866fe1",
+      "type": "paragraph",
+      "markdown": "많은 조건에서 작은 운동뉴런과 낮은 역치 단위가 먼저 모집되고 요구가 커지며 더 큰 단위가 참여하는 경향이 있다. 이는 작은 힘을 정밀하게 조절하고 더 큰 힘을 확보하는 데 도움이 된다. 다만 모든 자연 동작과 근육의 모집이 완벽히 같은 순서를 보이는 것은 아니다. 과제의 역학·하행 입력과 감각 되먹임을 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.bb20d9f2c317",
+      "type": "paragraph",
+      "markdown": "느린 수축·피로 저항성과 빠른 큰 힘을 내는 특성은 단위 사이의 기능 차이를 이해하게 한다. 병적 탈신경과 재지배에서는 단위의 크기·구성이 바뀔 수 있다. 큰 운동단위 전위가 관찰되었다는 정보와 전체 근육이 더 건강하거나 강해졌다는 판단은 다르다. 근전도·신경전도와 임상 기능을 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.1314086d42f0",
+      "type": "heading",
+      "level": 2,
+      "text": "발화와 수축의 시간"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.29bb9d44638f",
+      "type": "paragraph",
+      "markdown": "한 번의 연축은 짧은 힘 반응을 만들며 연속 자극의 시간 간격이 짧아지면 기계적 합산이 생길 수 있다. 세포막 활동전위의 재생성 크기와 연속 수축의 힘은 다른 정보다. 근육의 Ca²⁺ 회수·가교 운동과 수축 속도가 합산에 영향을 준다. 같은 자극 빈도도 서로 다른 근육·온도와 질환에서 같은 힘을 만들지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.3f58debd99c1",
+      "type": "paragraph",
+      "markdown": "힘을 유지하는 동안 모집과 발화가 조정되고 말초·중추의 여러 기전이 수행을 제한할 수 있다. 대사와 에너지, 신경 구동·통증과 동기가 함께 영향을 준다. 환자가 피로하다고 말하는 경험과 반복 검사에서 실제 힘이 줄어드는 피로성 약화(fatigable weakness)를 구별해 묻는다. 두 현상이 동시에 존재할 수도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.27e9c79c1810",
+      "type": "heading",
+      "level": 2,
+      "text": "반복 계측의 분모"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.41bdb70abdf5",
+      "type": "paragraph",
+      "markdown": "가상 과제에서 첫 힘 100N, 다섯 번째 88N이면 절대 감소 12N, 첫 값 대비 감소 12%다. 마지막 값을 분모로 쓰면 다른 비율이 나오므로 비교 규칙을 명시한다. 쉬었다가 다시 측정할 때의 변화와 과제·자세·시행 간격도 기록한다. 이 독립 숫자만으로 특정 질환과 병태생리의 위치를 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.f92b604302df",
+      "type": "paragraph",
+      "markdown": "매번 최대 노력의 질이 다르면 감소율에 학습·피로·통증과 측정 오차가 섞인다. 보상 움직임과 검사자의 지시, 장비의 교정·손잡이 위치를 확인한다. 근력 등급과 정량 힘의 변화도 같은 척도가 아니다. 순서 등급의 한 단계 증가를 동일한 비율의 힘 회복으로 바꾸어 읽지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.363a7850b443",
+      "type": "heading",
+      "level": 2,
+      "text": "기능과 회로를 잇는다"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.1a147d93d413",
+      "type": "paragraph",
+      "markdown": "근방추와 힘줄기관, 피부·관절 감각은 척수와 상위 회로에 정보를 준다. 반사의 크기는 연결의 존재뿐 아니라 자세·사전 수축·하행 조절에 영향을 받는다. 반사가 보존되어도 모든 근력 문제를 배제하지 않으며 반사 저하 하나가 모든 병변을 말초로 확정하는 것도 아니다. 여러 근육과 분포·시간을 통합한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neuroanatomy.spinal-cord.tracts.4577b057"
+      ]
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.b.71fc30908dfb",
+      "type": "paragraph",
+      "markdown": "운동단위의 기초는 신경병증과 운동뉴런 질환·근육질환 및 재활의 차이를 설명한다. 치료 결과는 숫자의 최대 힘뿐 아니라 지속·보행·삼킴과 일상 과제에서 확인한다. 힘의 크기·유지와 협응, 환자가 실제로 할 수 있는 활동을 구분해서 평가하면 검사와 삶의 기능을 더 정확히 연결할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.table0853",
+      "type": "table",
+      "data": {
+        "title": "관찰 자료와 확인할 조건",
+        "columns": [
+          "항목",
+          "자료·평가 범위"
+        ],
+        "rows": [
+          [
+            "과제",
+            "동일한 등척성 힘 유지 과제 5회"
+          ],
+          [
+            "힘(N)",
+            "100·95·92·90·88"
+          ],
+          [
+            "조건",
+            "자세·휴식·기기 보정은 일정"
+          ],
+          [
+            "미확인",
+            "동기·통증·중추·접합부·근육의 기여"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.diagram.synthetic-isometric-force-0853",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-isometric-force-0853",
+      "path": "diagrams/diagram.synthetic-isometric-force-0853.svg",
+      "alt": "가상 반복 등척성 힘의 독립 계산 곡선"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.3d0853.0",
+      "type": "anatomy3d",
+      "sceneRef": "scene.neuroanatomy.spinal-cord.tracts.4577b057"
+    },
+    {
+      "id": "neuroscience.motor-unit.recruitment-fatigue.limits0853",
+      "type": "clinicalPearl",
+      "markdown": "정상 거시 구조의 위치를 설명하는 자료다. 실제 운동단위·자율신경 활성·시냅스·도파민·운동신경원 소실이나 환자별 병변을 나타내지 않는다. 오른쪽으로 확인된 구조를 양측의 완전 회로로 표시하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/motor-unit/sections/neuroscience.motor-unit.recruitment-fatigue.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroscience.motor-unit.recruitment-fatigue.001",
+    "question.neuroscience.motor-unit.recruitment-fatigue.002"
+  ],
+  "relatedLessons": [
+    "neuroscience.nmj.release-safety-factor",
+    "neurology.motor-neuron.muscle-differential"
+  ]
+}

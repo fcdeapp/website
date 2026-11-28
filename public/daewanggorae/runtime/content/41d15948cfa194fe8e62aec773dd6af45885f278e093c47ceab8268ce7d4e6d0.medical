@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "geriatrics",
+  "title": {
+    "ko": "노인의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "geriatrics.chapter.cognition",
+      "path": "domains/09-clinical-diagnostics/subjects/geriatrics/chapters/cognition/chapter.json"
+    },
+    {
+      "id": "geriatrics.chapter.falls",
+      "path": "domains/09-clinical-diagnostics/subjects/geriatrics/chapters/falls/chapter.json"
+    },
+    {
+      "id": "geriatrics.chapter.delirium",
+      "path": "domains/09-clinical-diagnostics/subjects/geriatrics/chapters/delirium/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "geriatrics.plan.001",
+    "geriatrics.plan.002",
+    "geriatrics.plan.003",
+    "geriatrics.plan.004",
+    "geriatrics.plan.005",
+    "geriatrics.plan.006",
+    "geriatrics.cognition.delirium",
+    "geriatrics.falls.multifactorial-assessment",
+    "geriatrics.delirium.attention-course"
+  ]
+}

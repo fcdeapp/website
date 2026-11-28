@@ -1,0 +1,34 @@
+{
+  "id": "pathology.chapter.neoplasia",
+  "subjectId": "pathology",
+  "sections": [
+    {
+      "id": "pathology.neoplasia.growth-control",
+      "title": {
+        "ko": "종양의 성장 조절과 유전체·미세환경",
+        "en": "Neoplasia: Growth Control, Genomes and Microenvironment"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/neoplasia/sections/pathology.neoplasia.growth-control.json"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis",
+      "title": {
+        "ko": "종양 침윤과 전이의 단계",
+        "en": "Tumor Invasion and the Metastatic Cascade"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/neoplasia/sections/pathology.neoplasia.invasion-metastasis.json"
+    },
+    {
+      "id": "pathology.neoplasia.microenvironment-angiogenesis",
+      "title": {
+        "ko": "종양 미세환경과 혈관 신생",
+        "en": "Tumor Microenvironment and Angiogenesis"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/neoplasia/sections/pathology.neoplasia.microenvironment-angiogenesis.json"
+    }
+  ],
+  "status": "partial",
+  "title": {
+    "ko": "종양 발생"
+  }
+}

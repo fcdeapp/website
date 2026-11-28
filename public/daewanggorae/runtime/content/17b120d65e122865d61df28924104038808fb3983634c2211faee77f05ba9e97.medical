@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "transfusion-medicine.reactions.initial-differential",
+  "subjectId": "transfusion-medicine",
+  "chapterId": "reactions",
+  "title": {
+    "ko": "수혈 중 새 증상의 평가",
+    "en": "Evaluation of New Symptoms During Transfusion"
+  },
+  "learningObjectives": [
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.lo.01",
+      "text": "수혈 반응 의심 시 초기 평가 목적을 설명한다"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.lo.02",
+      "text": "용혈·알레르기·감염·호흡기 반응을 구별한다"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.lo.03",
+      "text": "시간 연관성과 인과관계를 구분한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.d93bee9317ff",
+      "type": "heading",
+      "level": 2,
+      "text": "수혈이라는 시간적 단서"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.8b9b987e694b",
+      "type": "paragraph",
+      "markdown": "수혈 중 또는 수혈 뒤에 발생한 발열과 오한, 발진·호흡곤란·통증 및 혈압 변화는 수혈 관련 이상반응의 단서다. 그러나 시간적으로 뒤따랐다는 사실만으로 원인을 확정할 수는 없다. 기저 감염과 출혈, 심폐질환 및 동시에 투여한 약물도 증상을 일으킬 수 있다. 반대로 기존 질환이 있다는 이유로 새 변화를 무시하면 중대한 수혈 반응을 놓칠 수 있으므로 이전 상태와 시작 시점을 비교한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.02621c3e4f29",
+      "type": "paragraph",
+      "markdown": "반응이 의심되면 해당 수혈을 중단하고 환자의 기도·호흡·순환과 활력징후를 평가하면서 담당 의료진과 수혈 관련 부서에 알린다. 환자 확인과 혈액 성분의 식별, 연결 기록을 다시 대조한다. 이러한 행동은 원인 확진 뒤에만 시행하는 것이 아니라 중대한 위해의 진행을 막고 오류와 진단 자료를 확인하기 위한 초기 대응이다. 이후 조치는 증상과 중증도 및 기관의 대응 절차에 맞추어 진행한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.e008746e6822",
+      "type": "heading",
+      "level": 2,
+      "text": "용혈과 적합성"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.8dad980bc0a4",
+      "type": "paragraph",
+      "markdown": "급성 용혈 반응은 적혈구가 파괴되는 과정이며 면역학적 부적합 외에도 비면역성 손상 기전이 있을 수 있다. 발열·통증·저혈압이나 소변 색 변화 등의 소견은 경고 신호지만 모든 환자가 같은 증상을 보이지는 않는다. 의식이 없거나 마취 상태인 경우에는 표현 가능한 증상이 제한된다. 출혈과 순환 상태, 소변 및 검사 자료를 종합하여 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.06526de7df3a",
+      "type": "paragraph",
+      "markdown": "혈액형과 교차시험 기록이 있다는 사실은 확인 과정의 중요성을 없애지 않는다. 환자와 검체·혈액 성분의 식별 오류는 검사 자체의 정밀함과 다른 단계에서 일어날 수 있다. 직접항글로불린검사와 용혈 관련 항목, 혈액형·적합성 재확인 등은 의심한 기전에 따라 선택한다. 한 검사 양성만으로 반응의 전부를 설명하거나 음성 하나로 모든 비면역성 용혈까지 배제하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.4db9c90dac06",
+      "type": "heading",
+      "level": 2,
+      "text": "발열과 세균 오염"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.94b3e14761af",
+      "type": "paragraph",
+      "markdown": "수혈 관련 발열은 비용혈성 발열 반응으로 나타날 수 있지만 초기에는 급성 용혈과 오염 혈액에 의한 감염 같은 중대한 원인도 고려해야 한다. 해열제에 반응했다는 이유만으로 안전한 원인이 확정되지는 않는다. 체온의 변화뿐 아니라 오한의 정도, 혈압과 호흡, 통증 및 전신 경과를 확인한다. 기존에 항생제를 투여하고 있었다는 사실도 오염 가능성을 완전히 없애지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.99e82abb8827",
+      "type": "paragraph",
+      "markdown": "세균 오염이 의심되면 환자와 혈액 성분의 적절한 검체 평가 및 관련 부서의 신속한 대응이 필요하다. 제품과 연결 장치, 남아 있는 검체를 임의로 폐기하면 원인 조사와 다른 수혈자의 보호에 필요한 정보를 잃을 수 있다. 어떤 검체를 어느 시점에 확보할지는 기관 체계에 따라 시행한다. 오염 조사와 현재 환자의 안정화는 서로 대체하는 절차가 아니라 병행하는 목적이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.1b51e78ee36f",
+      "type": "heading",
+      "level": 2,
+      "text": "피부 반응과 아나필락시스"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.1e298ec86f3b",
+      "type": "paragraph",
+      "markdown": "두드러기와 가려움만 있는 상황과 기도·호흡·순환 이상이 동반된 상황은 위험 수준이 다르다. 피부 증상이 가볍게 시작했다고 이후의 전신 악화를 배제할 수 없다. 새 목소리 변화와 호흡음, 산소화 및 혈압·의식의 변화를 지속해서 확인한다. 반응을 항히스타민제에 대한 반응만으로 분류하지 않으며, 중증 반응의 응급 대응을 지연시키지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.705a274845ad",
+      "type": "paragraph",
+      "markdown": "알레르기 반응의 원인과 재수혈 계획은 중증도 및 관련 검사·병력에 따라 평가한다. 한 번의 증상만으로 모든 혈액 성분을 평생 사용할 수 없다고 기록하거나, 예방약을 사용했으므로 재발이 불가능하다고 설명해서는 안 된다. 어떤 성분과 노출에서 어떤 증상이 나타났는지, 이후의 필요성과 예방 전략이 무엇인지를 구체적으로 남긴다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.fe397a40784a",
+      "type": "heading",
+      "level": 2,
+      "text": "수혈 뒤 호흡곤란"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.c9294acd82f7",
+      "type": "paragraph",
+      "markdown": "수혈관련순환과부하(transfusion-associated circulatory overload, TACO)와 수혈관련급성폐손상(transfusion-related acute lung injury, TRALI)은 수혈 뒤 호흡기 악화를 평가할 때 구별할 중요한 개념이다. 순환의 과부하와 폐부종, 염증성 투과성 변화는 서로 다른 기전이지만 실제 환자에서는 위험요인이 겹치고 다른 원인이 공존할 수 있다. 수혈량·속도와 체액 수지, 심장 상태 및 영상·산소화의 변화를 통합한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.b.7f448f2dad59",
+      "type": "paragraph",
+      "markdown": "한 영상에서 양측 음영이 보인다는 사실만으로 두 반응을 완전히 나누기 어렵다. 산소 투여 조건과 이전 호흡 상태, 감염·흡인 및 다른 폐손상의 가능성도 함께 검토한다. 반응 보고에는 발생 시간과 객관적 변화, 투여 성분·양 및 시행한 대응을 기록한다. 이후의 수혈은 이전 반응의 평가 결과와 현재 필요성을 토대로 개별화하며, 단지 검사 수치를 정상 범위로 만들기 위한 반복 노출은 피한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "transfusion-medicine.reactions.initial-differential.table0858",
+      "type": "table",
+      "data": {
+        "title": "소견과 평가 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "상황",
+            "적혈구 수혈 시작 후"
+          ],
+          [
+            "새 증상",
+            "오한과 발열"
+          ],
+          [
+            "진행",
+            "호흡곤란과 혈압 저하"
+          ],
+          [
+            "확인 전",
+            "원인·환자와 제품 식별 재대조"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/transfusion-medicine/chapters/reactions/sections/transfusion-medicine.reactions.initial-differential.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.transfusion-medicine.reactions.initial-differential.001"
+  ],
+  "relatedLessons": [
+    "emergency-medicine.dyspnea.initial-assessment",
+    "laboratory-medicine.preanalytics.potassium-errors"
+  ]
+}

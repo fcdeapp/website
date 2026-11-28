@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.shock.intestinal-barrier",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.fcdf0581c91f",
+      "sourceSha256": "fcdf0581c91fbd62050b11ae2c71476ffc999ac635030b671f243faebd8b5333",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.9b0f00c7851a",
+      "sourceSha256": "9b0f00c7851a4b08276d8c0e0463f5206097411aba93a1a4085ce516355031cd",
+      "sourceLengthUtf16": 149,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.5c8e043b34d3",
+      "sourceSha256": "5c8e043b34d31b930165d9a23b569a6edcaf6603c4628f9f4c512832a57b73d6",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.0b70a8a5d3ca",
+      "sourceSha256": "0b70a8a5d3cac4c9ca85eacf7878b7d7639b777f9238b896f311848eb25d69a6",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.90fe3146b0ac25b9a44b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 114,
+            "end": 138,
+            "exact": "원인의 다양성과 실제 확인 근거를 구별한다.",
+            "prefix": "미생물 이동 하나로 설명되는 것은 아니다. ",
+            "suffix": " 동물 모델의 장벽 실험을 사람의 임상 인과"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.113febe42f77",
+      "sourceSha256": "113febe42f778098fea52b5e78036bc6c16db66338177f8fcb528095981c8cff",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.4a79f5bdbf74",
+      "sourceSha256": "4a79f5bdbf74b3b8938983dc0ec8f34aafce12bbe6b2a1d78c9eec30e4644948",
+      "sourceLengthUtf16": 150,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.eeba8ddad01f",
+      "sourceSha256": "eeba8ddad01fee2f543f1e99f6a083870fe154d8e3ded969869e692febabb5f2",
+      "sourceLengthUtf16": 171,
+      "annotations": [
+        {
+          "id": "ann.2f0b1db477ab3e7255b3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 82,
+            "end": 131,
+            "exact": "복통이 없다는 기록이 실제로 충분히 확인된 음성인지, 표현할 수 없던 상황인지 구별한다.",
+            "prefix": "에 전형적인 호소를 듣지 못할 수도 있다. ",
+            "suffix": " 새 복부 팽창·출혈과 설명되지 않는 전신 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.530b0a063649",
+      "sourceSha256": "530b0a0636491688b3c91c78c41b55f42215e54720f48a4413e124798616ba42",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.fa87471a9a98",
+      "sourceSha256": "fa87471a9a98567183b10a75ed9974b096c4fcda959d4b044528972d54fdc752",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.intestinal-barrier.b.8fd9b08c9d6d",
+      "sourceSha256": "8fd9b08c9d6db16ea67dc04b49f571936d052fbb1d8ca80151405a48f702280e",
+      "sourceLengthUtf16": 162,
+      "annotations": []
+    }
+  ]
+}

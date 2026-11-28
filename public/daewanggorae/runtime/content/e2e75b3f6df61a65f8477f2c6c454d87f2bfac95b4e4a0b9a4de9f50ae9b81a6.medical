@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "clinical-nutrition.metabolism.starvation-refeeding",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.a69151426967",
+      "sourceSha256": "a6915142696797468c78a443836b28bedb54daa4e22c69d655ee751ebb7f477f",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.acae6ab50211",
+      "sourceSha256": "acae6ab50211b71f798b22dd3ebb9b3b60c06a4dd93c205803c96506dd32ab28",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.b353b7cb6b3f737bb63f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 110,
+            "end": 115,
+            "exact": "급성 염증",
+            "prefix": "장량의 직접 측정치처럼 사용하면 안 된다. ",
+            "suffix": "에서 낮은 알부민을 단순히 식사량 부족 탓으"
+          },
+          "conceptId": "reader.term.f2acf854a49eb98c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.ff4bedf1067a",
+      "sourceSha256": "ff4bedf1067adb674efd131c18bb634fc4a8b19a611d65218949a5cf87a1f6ae",
+      "sourceLengthUtf16": 249,
+      "annotations": [
+        {
+          "id": "ann.57253dcf9d382475211b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 35,
+            "end": 39,
+            "exact": "글리코젠",
+            "prefix": "이 저장과 합성을 촉진하고, 공복에는 간의 ",
+            "suffix": " 분해와 포도당신생이 혈당을 지지한다. 공복"
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        },
+        {
+          "id": "ann.ea6f4afa8d3bbaeb3532",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 44,
+            "end": 49,
+            "exact": "포도당신생",
+            "prefix": " 촉진하고, 공복에는 간의 글리코젠 분해와 ",
+            "suffix": "이 혈당을 지지한다. 공복이 길어져 간의 글"
+          },
+          "conceptId": "reader.term.f6becb3579af9222",
+          "targetDocumentId": "biochemistry.carbohydrate.gluconeogenesis"
+        }
+      ]
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.aa198e4dc494",
+      "sourceSha256": "aa198e4dc494f4bc414411178f18c17d1ba227947611cf071428979c5427c4f8",
+      "sourceLengthUtf16": 250,
+      "annotations": [
+        {
+          "id": "ann.aee95f6a3af53deb4f1b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 121,
+            "end": 125,
+            "exact": "해당과정",
+            "prefix": "적혈구처럼 미토콘드리아가 없는 세포는 계속 ",
+            "suffix": "에 의존한다. 심한 감염과 외상에서는 염증과"
+          },
+          "conceptId": "reader.term.ae7821eb164e43a8",
+          "targetDocumentId": "biochemistry.carbohydrate.glycolysis"
+        }
+      ]
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.cc38fa920284",
+      "sourceSha256": "cc38fa92028475ee45cd6fec219e3c343e507a3dd74c882f91ccae21e2f25c65",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.36c7d1fdee23",
+      "sourceSha256": "36c7d1fdee2335113d3c5f2dd62a0f31483d93e8b9c3627d98b7adc51c757fd7",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.abe2451fbada",
+      "sourceSha256": "abe2451fbada01cd20b7b6a61a9551888828fd66879cc81df953c555d26bf121",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.6173600603d75d0e0095",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 72,
+            "exact": "티아민(thiamine)은 피루브산 탈수소효소와 α-케토글루타르산 탈수소효소 등 탄수화물 산화에 중요한 효소 반응의 보조인자이다.",
+            "prefix": "",
+            "suffix": " 저장이 부족한 상태에서 탄수화물 부하가 늘"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.5e420078a52c",
+      "sourceSha256": "5e420078a52c515944e9d897d4770a0ea5dd7c41e9f981078e03c340d6652702",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.dbc6d58e5a05",
+      "sourceSha256": "dbc6d58e5a05b35810d1c7d26cf51ad0db1883ec73e6df76f039695d14f45607",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.986aa1f65a69",
+      "sourceSha256": "986aa1f65a694d4ecddafcf5567d864687d83db25c70be07008ca917281b5e1d",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "clinical-nutrition.metabolism.starvation-refeeding.b.6f243f6d2e31",
+      "sourceSha256": "6f243f6d2e3148cff1ebaaf9e803942b71151bfbd9b08a4ddad9d18b0aa86b63",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    }
+  ]
+}

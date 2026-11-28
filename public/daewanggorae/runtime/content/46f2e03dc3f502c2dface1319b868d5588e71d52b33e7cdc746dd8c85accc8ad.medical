@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.atrioventricular-block",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.atrioventricular-block.b.ac2b5e4d3be6",
+      "sourceSha256": "ac2b5e4d3be63f9e411482698823ea815294a34f2a57b424ea410671a6b0ea8d",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrioventricular-block.b.f0a2e77cb426",
+      "sourceSha256": "f0a2e77cb426a164a7811070c2333ede86dc65d9f4f94e9e2b19008130ef7835",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.de70120187c21b6ca5f9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 37,
+            "end": 95,
+            "exact": "먼저 P파를 전체 기록에서 추적하여 T파 안에 숨은 심방 활동과 비전도성 심방 조기수축을 구별해야 한다.",
+            "prefix": "자극 뒤 QRS가 나타나지 않는 양상이다. ",
+            "suffix": " 조기 심방 자극이 불응기의 방실결절에 도착"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrioventricular-block.b.667773268b3b",
+      "sourceSha256": "667773268b3b91a60ea2ff5d1002d3a1026b876ac3982c2521cc912687ee551b",
+      "sourceLengthUtf16": 245,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrioventricular-block.b.12b391d3772e",
+      "sourceSha256": "12b391d3772e64707425707be40e703b062ec2b5c4e276e1225dc22da967561c",
+      "sourceLengthUtf16": 257,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrioventricular-block.b.500d05ea2e83",
+      "sourceSha256": "500d05ea2e836b387f115205018a760d49a044261bd0d50933875451e69f4e7b",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrioventricular-block.b.d0ba80e7ed68",
+      "sourceSha256": "d0ba80e7ed683f821784d583d9b18dfb9b37ad28966cd5fd5ed9d37344d56858",
+      "sourceLengthUtf16": 258,
+      "annotations": [
+        {
+          "id": "ann.07c6dad1b6dc7e7da145",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 196,
+            "end": 258,
+            "exact": "정상 심장방의 위치와 실제 전도 조직의 병변 위치는 다르며, 정상 장기 모델만으로 차단 수준을 확정하지 않는다.",
+            "prefix": "항상 관찰만 한다고 일반화해서는 안 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

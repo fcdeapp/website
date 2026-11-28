@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.therapy.antithrombotic-targets",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.therapy.antithrombotic-targets.b.869c0c4f4e2f",
+      "sourceSha256": "869c0c4f4e2f2dd33f0799e59b573b45d16e48de4319aa5ee65cb89ab375b6b3",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.therapy.antithrombotic-targets.b.8d48dc5f1ec5",
+      "sourceSha256": "8d48dc5f1ec5b76c3acda01cff64c802c60b45dda6ce917dc5722cf7ce2568a3",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.therapy.antithrombotic-targets.b.f2b2d4b2e211",
+      "sourceSha256": "f2b2d4b2e21175a0a4847b329e69745b99a1e88d4b40515245bb81a97933d245",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.therapy.antithrombotic-targets.b.3dfeb38a0b02",
+      "sourceSha256": "3dfeb38a0b02617b4568c565a3740f68771875b3807d545d5a4aa1af8b5214ea",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.therapy.antithrombotic-targets.b.20bb86fbf69a",
+      "sourceSha256": "20bb86fbf69a1aa79d5610eede9776681c7b301aeb49788707204742f854b0de",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.therapy.antithrombotic-targets.b.308d28eab5df",
+      "sourceSha256": "308d28eab5df36f7fcddc2680e588aeafb1356278f67f4655c0feff77a111d46",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.therapy.antithrombotic-targets.b.9ae48abf6a49",
+      "sourceSha256": "9ae48abf6a490c8eb023393ff03d1a83d26dd1453385e4923e876a7099bd9ac9",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.52ebaad85a1b489e2cf9",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 6,
+            "end": 9,
+            "exact": "ACS",
+            "prefix": "2025년 ",
+            "suffix": " 지침과 2026년 항혈소판 관련 과학적 문"
+          },
+          "conceptId": "reader.term.da81b428602d1aae",
+          "targetDocumentId": "cardiology.ischemia.acute-coronary-syndrome"
+        },
+        {
+          "id": "ann.336281aca6cb20f75d98",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 65,
+            "end": 111,
+            "exact": "기본 전략과 예외 조건을 구별해야 하므로 한 기간을 모든 환자에게 고정하지 않는다.",
+            "prefix": "료를 허혈·출혈 및 시술 문맥에 연결한다. ",
+            "suffix": " 오래된 처방표의 약물 순서를 새 임상 상황"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.therapy.antithrombotic-targets.b.4b68829a4527",
+      "sourceSha256": "4b68829a45273a64e561ecdcd21a581c7b979ea462faa6c9b8b0bba3b93d3a77",
+      "sourceLengthUtf16": 163,
+      "annotations": []
+    }
+  ]
+}

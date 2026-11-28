@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.sinus-drainage",
+  "lessonId": "anatomy.head-neck.nose-paranasal",
+  "title": "부비동·코눈물관의 배출 위치",
+  "nodes": [
+    {
+      "id": "anterior",
+      "label": "위턱굴·이마굴·앞/중간벌집",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "middle",
+      "label": "중간콧길과 관련 배출로",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "posterior",
+      "label": "뒤벌집",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "superior",
+      "label": "위콧길",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "sphenoid",
+      "label": "나비굴",
+      "x": 360,
+      "y": 680,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "recess",
+      "label": "나비벌집오목",
+      "x": 360,
+      "y": 830,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "lacrimal",
+      "label": "코눈물관",
+      "x": 360,
+      "y": 980,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "inferior",
+      "label": "아래콧길",
+      "x": 360,
+      "y": 1130,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.sinus-drainage.edge.1",
+      "source": "anterior",
+      "target": "middle",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.sinus-drainage.edge.2",
+      "source": "posterior",
+      "target": "superior",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.sinus-drainage.edge.3",
+      "source": "sphenoid",
+      "target": "recess",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.sinus-drainage.edge.4",
+      "source": "lacrimal",
+      "target": "inferior",
+      "relation": "directed",
+      "label": ""
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 1270
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 1270
+      },
+      "fontSize": 22,
+      "nodes": {
+        "anterior": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "middle": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "posterior": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "superior": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        },
+        "sphenoid": {
+          "x": 240,
+          "y": 680,
+          "width": 360,
+          "height": 88
+        },
+        "recess": {
+          "x": 240,
+          "y": 830,
+          "width": 360,
+          "height": 88
+        },
+        "lacrimal": {
+          "x": 240,
+          "y": 980,
+          "width": 360,
+          "height": 88
+        },
+        "inferior": {
+          "x": 240,
+          "y": 1130,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "배출 위치를 구분하는 모식도이며 실제 뼈 모양·길이·개구의 변이를 재현하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

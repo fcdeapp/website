@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.stoma-intake-absorption-loss-0849",
+  "lessonId": "colorectal-surgery.stoma.fluid-skin-function",
+  "title": "섭취·흡수·외부 손실의 구별",
+  "nodes": [
+    {
+      "id": "in",
+      "label": "섭취",
+      "x": 350,
+      "y": 70,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "gut",
+      "label": "장관",
+      "x": 350,
+      "y": 250,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "abs",
+      "label": "실제 흡수",
+      "x": 165,
+      "y": 450,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "out",
+      "label": "장루 유출",
+      "x": 535,
+      "y": 450,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "body",
+      "label": "체내 저장",
+      "x": 165,
+      "y": 650,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "urine",
+      "label": "소변·기타 손실",
+      "x": 165,
+      "y": 850,
+      "width": 270,
+      "height": 92
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.stoma-intake-absorption-loss-0849.e0",
+      "source": "in",
+      "target": "gut",
+      "label": "유입",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.stoma-intake-absorption-loss-0849.e1",
+      "source": "gut",
+      "target": "abs",
+      "label": "흡수 경로",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.stoma-intake-absorption-loss-0849.e2",
+      "source": "gut",
+      "target": "out",
+      "label": "배출 경로",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.stoma-intake-absorption-loss-0849.e3",
+      "source": "abs",
+      "target": "body",
+      "label": "몸으로 이동",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.stoma-intake-absorption-loss-0849.e4",
+      "source": "body",
+      "target": "urine",
+      "label": "몸 밖으로",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 700,
+      "height": 960
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 650,
+        "height": 960
+      },
+      "fontSize": 22,
+      "nodes": {
+        "in": {
+          "x": 325.0,
+          "y": 70,
+          "width": 220.8,
+          "height": 92
+        },
+        "gut": {
+          "x": 325.0,
+          "y": 250,
+          "width": 220.8,
+          "height": 92
+        },
+        "abs": {
+          "x": 153.21428571428572,
+          "y": 450,
+          "width": 220.8,
+          "height": 92
+        },
+        "out": {
+          "x": 496.7857142857143,
+          "y": 450,
+          "width": 220.8,
+          "height": 92
+        },
+        "body": {
+          "x": 153.21428571428572,
+          "y": 650,
+          "width": 220.8,
+          "height": 92
+        },
+        "urine": {
+          "x": 153.21428571428572,
+          "y": 850,
+          "width": 248.4,
+          "height": 92
+        }
+      }
+    }
+  },
+  "limitations": [
+    "독립 학습용 연결 관계이며 실제 장 길이·문합 위치·회전·혈류·수술 순서·시술 경로를 정하지 않는다.",
+    "정상 BodyParts3D를 재건·장루 모형으로 변형하지 않았다."
+  ],
+  "sourceImageUsed": false
+}

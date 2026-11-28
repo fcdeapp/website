@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "obstetrics.diabetes.screening-pathways",
+  "subjectId": "obstetrics",
+  "chapterId": "diabetes",
+  "title": {
+    "ko": "임신성 당뇨병의 기전과 검사 경로",
+    "en": "Gestational Diabetes Mechanisms and Screening Pathways"
+  },
+  "learningObjectives": [
+    {
+      "id": "obstetrics.diabetes.screening-pathways.lo.01",
+      "text": "인슐린 저항성과 β세포 보상을 연결한다"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.lo.02",
+      "text": "단계별 당부하검사와 판정 규칙을 구별한다"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.lo.03",
+      "text": "초기 당뇨 발견과 후기 선별의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.0f64ce7ee8f4",
+      "type": "heading",
+      "level": 2,
+      "text": "적응과 보상의 불균형"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.4e4ee863450f",
+      "type": "paragraph",
+      "markdown": "임신 후반에는 태반 호르몬과 대사 변화가 모체의 인슐린 감수성을 낮추는 데 관여한다. 췌장 β세포가 인슐린 분비를 늘려 요구를 보상하면 혈당이 조절되지만, 보상이 충분하지 않으면 고혈당이 드러날 수 있다. 임신성 당뇨병(gestational diabetes mellitus, GDM)은 이런 적응과 기존의 대사 감수성이 만나는 질환이다. 단순히 임신 중 단 음식을 먹었다는 한 가지 원인으로 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.97ab6a10390e",
+      "type": "paragraph",
+      "markdown": "모체의 포도당 공급은 태반을 통해 태아 대사와 연결된다. 태아의 인슐린 반응은 성장과 지방 축적 등에 영향을 주며 출생 뒤에는 모체 기질 공급의 중단과 신생아 대사의 전환이 중요하다. 그러나 모든 임신 중 고혈당이 같은 시기에 같은 위험을 만드는 것은 아니다. 임신 전부터 있던 당뇨와 기관 형성기의 노출, 후기 GDM을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.1429713b1330",
+      "type": "heading",
+      "level": 2,
+      "text": "검사 조건이 진단의 일부다"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.90aa18d6ae4e",
+      "type": "paragraph",
+      "markdown": "당부하검사는 포도당의 양·공복 여부·채혈 시점과 혈장 측정을 정해진 경로로 시행한다. 일상 식사 뒤의 임의 혈당을 표준 당부하검사의 같은 시점 값으로 바꾸어 읽지 않는다. 검사 전 급성 질환·섭취와 약물, 실제 공복·채혈 시각과 검체 처리도 결과에 영향을 줄 수 있다. 경계값만 외우기보다 어떤 경로에서 나온 값인지 먼저 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.8fa47b149a8d",
+      "type": "paragraph",
+      "markdown": "국내 2025년 지침에서 24~28주에 사용하는 한 단계 경로는 75g 경구당부하검사(oral glucose tolerance test, OGTT)다. 공복 92mg/dL, 1시간 180mg/dL, 2시간 153mg/dL 중 하나 이상이 해당 기준 이상이면 GDM으로 판정한다. 세 값 모두가 높아야 하는 규칙이 아니다. 이 기준을 임신 초기의 기존 당뇨 발견이나 모든 해외 지침의 같은 기준으로 확대하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.013a2bca2a96",
+      "type": "heading",
+      "level": 2,
+      "text": "두 단계와 해외 기준의 구별"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.ffe65cb14a6c",
+      "type": "paragraph",
+      "markdown": "두 단계 경로는 먼저 50g 부하 뒤의 혈당으로 추가 검사의 필요를 판단하고 이어 100g 진단검사를 시행하는 방식이다. 국내 지침의 이 경로에서는 진단 단계의 여러 시점 중 둘 이상이 기준을 충족하는 규칙을 사용한다. 50g 선별 양성을 최종 확진으로 바꾸거나 100g의 개수 규칙을 75g 검사에 적용하지 않는다. 같은 이름의 GDM이라도 검사 경로를 기록해야 비교할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.7685e8e5feda",
+      "type": "paragraph",
+      "markdown": "영국 NICE의 75g 경로는 공복 5.6mmol/L 이상 또는 2시간 7.8mmol/L 이상이라는 별도의 기준을 사용한다. 이는 국내 한 단계 경로의 92·180·153mg/dL와 같은 판정 체계가 아니다. 단위를 변환하는 일과 지침의 기준을 바꾸는 일도 다르다. 서로 다른 기준에서 진단율·합병증과 의료 부담을 비교할 때에는 적용 집단과 경로를 명시한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.d91c96e9102b",
+      "type": "heading",
+      "level": 2,
+      "text": "초기 발견과 이후 계획"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.28c81e09de68",
+      "type": "paragraph",
+      "markdown": "임신 초기에는 미진단 당뇨병과 높은 위험의 대사 이상을 찾는 질문이 있다. 후기 GDM 기준을 검증 범위가 다른 초기 임신에 무조건 적용하지 않는다. ADA 2026년 기준도 초기 평가와 24~28주 선별의 목적·근거를 구별한다. 이전 GDM과 비만·가족력 및 다른 위험, 기존 검사를 바탕으로 평가를 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.b.cb5c512d612b",
+      "type": "paragraph",
+      "markdown": "진단 뒤에는 실제 식사·혈당 추세·태아 성장과 모체 건강을 평가하고 교육·영양·활동 및 필요한 약물 치료를 계획한다. 검사 때 기준을 넘은 사실과 치료 중 목표 범위는 같은 값과 목적이 아니다. 분만 뒤 혈당이 좋아져도 이후 당뇨 발생 위험에 대한 추적이 필요하다. 산전 진단을 산욕·장기 대사 건강과 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.suppheading0851",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 판단의 연결"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.supp.c372180fea2c",
+      "type": "paragraph",
+      "markdown": "포도당을 mg/dL에서 mmol/L로 근사 환산할 때에는18로 나눈다. 예를 들어180mg/dL는 약10mmol/L다. 단위를 변환해도 어떤 검사량·시점·판정 경로를 적용했는지는 바뀌지 않는다. 75g검사의1시간180mg/dL와 일상 식후 측정의 같은 숫자는 조건과 목적이 다르다. 다른 지침에서2시간값만을 쓰는 규칙에1시간값을 임의 추가하면 원래 기준과 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.supp.142f55011ec7",
+      "type": "paragraph",
+      "markdown": "가상75g검사에서 공복88·1시간185·2시간148mg/dL라면 국내 한 단계 기준에서는1시간값 하나가 경계를 넘는다. 두 수치가 정상이라는 이유로 음성으로 바꾸지 않는다. 반대로50g 선별 양성 뒤 필요한 진단 단계를 생략해서도 안 된다. 임신 주수와 공복·검사량·시점·경로를 결과와 함께 기록하면 같은 수치를 다른 규칙으로 잘못 해석하는 일을 줄일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.table0851",
+      "type": "table",
+      "data": {
+        "title": "조건·측정·기전과 해석",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "75g 한 단계",
+            "공복92·1h180·2h153mg/dL 중≥1개"
+          ],
+          [
+            "50g 선별",
+            "추가 진단검사 필요를 판단"
+          ],
+          [
+            "100g 진단",
+            "적용 경로의 여러 값 중≥2개"
+          ],
+          [
+            "NICE75g",
+            "공복5.6 또는2h7.8mmol/L,별도 기준"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "obstetrics.diabetes.screening-pathways.diagram.synthetic-75g-ogtt-case-0851",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-75g-ogtt-case-0851",
+      "path": "diagrams/diagram.synthetic-75g-ogtt-case-0851.svg",
+      "alt": "가상 75g OGTT 관찰값의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/obstetrics/chapters/diabetes/sections/obstetrics.diabetes.screening-pathways.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.obstetrics.diabetes.screening-pathways.001"
+  ],
+  "relatedLessons": [
+    "obstetrics.diabetes.monitoring-postpartum"
+  ]
+}

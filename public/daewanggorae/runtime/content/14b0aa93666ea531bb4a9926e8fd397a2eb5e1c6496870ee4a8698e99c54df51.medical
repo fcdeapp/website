@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.methods.specimen-culture-context",
+  "subjectId": "bacteriology",
+  "chapterId": "methods",
+  "title": {
+    "ko": "검체의 대표성과 배양·분자 결과의 통합",
+    "en": "Specimen Quality and Culture Context"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.methods.specimen-culture-context.lo.01",
+      "text": "오염·집락화·감염을 구별한다"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.lo.02",
+      "text": "채취·운송·검출 한계의 영향을 설명한다"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.lo.03",
+      "text": "배양과 핵산 검사의 불일치를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.bc12d4bfda39",
+      "type": "heading",
+      "level": 2,
+      "text": "검체는 병변의 표본이다"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.309b9ffed2ee",
+      "type": "paragraph",
+      "markdown": "미생물 검사는 환자의 모든 조직을 직접 보는 것이 아니라 선택한 부위와 시간의 표본을 분석한다. 병변을 대표하는 깊이와 부피, 채취 과정의 오염 가능성이 중요하다. 병원체를 잘 검출하는 분석법도 병변과 무관한 표면 시료를 받으면 다른 질문에 답할 수 있다. 분석 민감도와 적절한 검체 선택은 서로를 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.dc17fb530357",
+      "type": "paragraph",
+      "markdown": "오염(contamination)은 채취·처리 과정 등에서 의도한 병변 외의 미생물이 섞이는 문제다. 집락화(colonization)는 미생물이 존재하면서도 해당 증상을 만드는 침습성 감염이 확인되지 않은 상태와 관련된다. 감염은 미생물의 위치와 숙주 반응, 조직 손상과 임상 경과를 통합하여 평가한다. 같은 균종의 검출도 무균 부위와 상재균이 많은 표면에서 의미가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.ab2976631163",
+      "type": "heading",
+      "level": 2,
+      "text": "채취 시점과 운송"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.1a2f315ccb60",
+      "type": "paragraph",
+      "markdown": "이전 항균제 노출은 배양 가능한 균량을 줄일 수 있다. 시간이 지나면서 생존이 떨어지는 균과 운송 중 오히려 자라는 균이 있어 검체 내 비율이 달라질 수도 있다. 채취 후의 온도·시간·운송 매체와 산소 노출이 결과에 영향을 준다. 특정 검사 지시를 다른 검체와 모든 병원체에 적용하지 말고 의심 질환과 검사실의 요구조건을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.dbb1ac25c30b",
+      "type": "paragraph",
+      "markdown": "배양 음성은 감염 부재와 같은 단일 결론이 아니다. 균량이 적거나 검체가 병변을 놓쳤고 필요한 배지·배양 조건이 맞지 않았을 수 있다. 그렇다고 음성을 언제나 기술적 실패라고 해석할 수도 없다. 검사 전 가능성과 실제 채취·분석 조건을 대조하여 결과가 원래 가설을 어느 정도 바꾸는지 판단해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.f0c0a2478856",
+      "type": "heading",
+      "level": 2,
+      "text": "검사량과 확률"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.70e0a5e5282f",
+      "type": "paragraph",
+      "markdown": "균이 잘 섞인 가상 액체에 mCFU/mL가 있고 v mL를 검사한다면, 독립적인 무작위 분포 모형에서 기대 집락 단위수는 λ=mv다. 적어도 한 단위가 포함될 확률은 1−e^(−λ)다. 같은 낮은 농도에서도 더 큰 부피가 표본에 포함될 가능성을 높인다. 이는 균의 생존과 배양 회수율을 모두 완전하다고 가정한 표본 모형이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.e33a6e8e1299",
+      "type": "paragraph",
+      "markdown": "실제 검체는 균이 뭉치거나 여러 구획에 나뉘고 배양 회수율도 일정하지 않다. 따라서 위 식으로 개별 환자의 음성 확률을 정확히 계산하거나 채취 지시를 정할 수 없다. 이 모형은 적은 양을 검사한 음성과 충분한 양을 검사한 음성이 같은 정보량은 아니라는 점을 설명한다. 검출 한계와 부피는 결과의 의미에 포함된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.0e2afc9e407a",
+      "type": "heading",
+      "level": 2,
+      "text": "살아 있는 균과 남은 신호"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.f8541c4eb2d4",
+      "type": "paragraph",
+      "markdown": "핵산 증폭 검사는 표적 염기서열을 검출하며 모든 양성이 생존 균의 증식을 뜻하지 않는다. 반대로 패널에 없는 병원체나 표적 변이, 억제 물질 때문에 감염이 있어도 음성이 가능하다. 배양은 지정 조건에서 자랄 능력을 확인하지만 배양이 까다로운 미생물과 이전 치료의 영향을 받는다. 두 검사는 강점과 한계가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.b.304736b261ba",
+      "type": "paragraph",
+      "markdown": "배양 양성·분자 음성이면 동정과 패널 범위, 시료 분할과 균량을 검토한다. 분자 양성·배양 음성이면 잔존 핵산뿐 아니라 낮은 생균량과 배양 조건도 고려한다. 결과의 불일치를 하나의 고정된 원인으로 설명하지 않는다. 임상 정보와 병변 위치, 반복 결과가 어떤 가설을 지지하는지 단계적으로 비교하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.diagram.bacteria-sample-capture-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.bacteria-sample-capture-toy",
+      "path": "diagrams/diagram.bacteria-sample-capture-toy.svg",
+      "alt": "표본 부피와 포함 확률의 독립 계산 곡선"
+    },
+    {
+      "id": "bacteriology.methods.specimen-culture-context.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "오염",
+            "채취·처리 과정 등에서 다른 원천 혼입"
+          ],
+          [
+            "집락화",
+            "존재와 증상 원인 관계를 구별"
+          ],
+          [
+            "배양",
+            "지정 조건에서 자랄 수 있는 미생물"
+          ],
+          [
+            "핵산",
+            "표적 서열의 존재; 생존량과 구별"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/methods/sections/bacteriology.methods.specimen-culture-context.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.methods.specimen-culture-context.001",
+    "question.bacteriology.methods.specimen-culture-context.002"
+  ],
+  "relatedLessons": [
+    "bacteriology.methods.susceptibility-interpretation",
+    "bacteriology.control.log-reduction-validation"
+  ]
+}

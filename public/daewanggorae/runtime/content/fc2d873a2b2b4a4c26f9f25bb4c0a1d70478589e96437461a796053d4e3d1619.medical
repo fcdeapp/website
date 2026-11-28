@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.neuro.synaptic-transmission",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.8a8081222fa9",
+      "sourceSha256": "8a8081222fa959395ff6f54b7996fff5e8ac0033c180a85b613461b8002bb233",
+      "sourceLengthUtf16": 250,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.8794b4f9732c",
+      "sourceSha256": "8794b4f9732c5272acf66cd799e91be43108238122524617e141ce504ef50a41",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.27f51a86916784f5d8a8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 85,
+            "end": 88,
+            "exact": "막전위",
+            "prefix": "를 만드는 것은 아니다. 전달량과 수용체, ",
+            "suffix": "와 다른 입력에 따라 작은 전위 변화만 생기"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        },
+        {
+          "id": "ann.d631b125f8aa80d16e8c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 131,
+            "end": 185,
+            "exact": "시냅스전 활동전위, 시냅스후 전류, 시냅스후 전위, 최종 발화를 서로 다른 관찰로 구분해야 한다.",
+            "prefix": "화만 생기거나 발화 가능성이 줄 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.f1edebda3811",
+      "sourceSha256": "f1edebda38116ba71e8b058dea5a71b684326c00a75dbfbaa72e1e183f16b3ee",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.d0bea966b6fb",
+      "sourceSha256": "d0bea966b6fbb9b5dd753a3ccaea874ec8f0b0ef717651ee3a64d4aef6b95bbd",
+      "sourceLengthUtf16": 264,
+      "annotations": [
+        {
+          "id": "ann.7af7d960e460dff7fa92",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 117,
+            "exact": "Synaptobrevin/VAMP, syntaxin, SNAP-25 같은 SNARE 단백질은 막의 가까워짐과 융합 기구에 관여하고, synaptotagmin은 여러 빠른 방출에서 중요한 칼슘 감지자로 작용한다.",
+            "prefix": "",
+            "suffix": " 준비된 소포의 도킹·프라이밍과 실제 융합은"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.455b3bd21bb4",
+      "sourceSha256": "455b3bd21bb42bea002661819e27cc25492f724475114d8f2b04f2879aeae9dc",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.96089213b3ec",
+      "sourceSha256": "96089213b3ec53f4b59f2261821cb14c06756d5f634a45604850a5c2c154b3bd",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.777f7f7c6ef4",
+      "sourceSha256": "777f7f7c6ef40d8def4a3cdd028d978b23bef6ff26fa8279e5c35cf7aa6140b3",
+      "sourceLengthUtf16": 237,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.3db5996e14a7",
+      "sourceSha256": "3db5996e14a7b75f12be6860d204b3618a06ec3972914398ab257dbebe9317c9",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.f5198a45e878",
+      "sourceSha256": "f5198a45e87897dfe1c64f61b3155c4131d3b1678a58c0dbd24b928a287b4e13",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.4392168ea5fa",
+      "sourceSha256": "4392168ea5fa4603ac5f4bb552c5b54bc197ac23d9db0468ef931da3e4818590",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.9bb56c222b1f",
+      "sourceSha256": "9bb56c222b1f8880149d57eef0a642eb6bd71a03080a3fa65a720016355171c4",
+      "sourceLengthUtf16": 179,
+      "annotations": [
+        {
+          "id": "ann.6f3045a0712dfabf71f1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 93,
+            "end": 125,
+            "exact": "전달물질 자체의 회수와 분해산물의 재활용도 구별해야 한다.",
+            "prefix": "산의 신경·교세포 수송은 서로 다른 예다. ",
+            "suffix": " 제거 경로를 억제하면 신호의 크기뿐 아니라"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.neuro.synaptic-transmission.b.20998274b4fa",
+      "sourceSha256": "20998274b4fa09e7301eb7a419130673b00517e50cd37ce7211a54f91e93fda8",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.027e8e5dc74bb3e81c0c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 67,
+            "exact": "신경근접합부",
+            "prefix": "·융합·수용체·제거 중 어디인지 표시한다. ",
+            "suffix": " 전달 장애와 중추 시냅스의 흥분·억제 조절"
+          },
+          "conceptId": "reader.term.8ac0bcc79435bc5e",
+          "targetDocumentId": "neuroscience.nmj.release-safety-factor"
+        }
+      ]
+    }
+  ]
+}

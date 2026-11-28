@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "obstetrics.hypertension.classification-endothelium",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.b.dc5091564d8a",
+      "sourceSha256": "dc5091564d8a30bb8810d5634f0c6dfea7ca3b8f7c82e7a16590756217c150a7",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.b.6cc13eb1847d",
+      "sourceSha256": "6cc13eb1847d40c09dc9d1a302c341fcfc3e75cba0648725108e49a2e781ae99",
+      "sourceLengthUtf16": 196,
+      "annotations": [
+        {
+          "id": "ann.965a3d46823cc3faae23",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 92,
+            "end": 104,
+            "exact": "preeclampsia",
+            "prefix": " 새 고혈압에서는 임신성 고혈압과 자간전증(",
+            "suffix": ")의 가능성을 평가한다. 기존 고혈압에 자간"
+          },
+          "conceptId": "reader.term.d2c736b19e48618f",
+          "targetDocumentId": "obstetrics.hypertension.severe-disease-delivery"
+        },
+        {
+          "id": "ann.0f26e371a1a549ad0769",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 57,
+            "exact": "임신 전부터 있거나 이른 임신에 확인된 만성 고혈압과, 임신 중 새로 나타난 고혈압의 맥락을 구별한다.",
+            "prefix": "",
+            "suffix": " 임신 20주 이후의 새 고혈압에서는 임신성"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.b.4a0c00eda2e3",
+      "sourceSha256": "4a0c00eda2e395b827d58f7268161de8d9afa04f2daabcd605fb78f5da01123a",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.b.2245fc7224cb",
+      "sourceSha256": "2245fc7224cb8da9dda9aff092e2ca48e801477889dbe9555c198a9485255b68",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.884bd291147c60903abd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 118,
+            "end": 166,
+            "exact": "혈소판 감소와 용혈·간 손상이 함께 나타나는 HELLP 증후군도 관련 평가에 중요하다.",
+            "prefix": " 변화와 경련 등의 위험이 생길 수 있다. ",
+            "suffix": " 각 장기의 수치는 병태생리의 서로 다른 결"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.b.f2b532bc503b",
+      "sourceSha256": "f2b532bc503b0568d0412f1a93dacd675f1d296ffbc6915e07426f573d428b62",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.603d2731307249a63c63",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 48,
+            "exact": "단백뇨는 자간전증 평가의 중요한 단서지만 모든 진단과 위험을 단독으로 결정하지 않는다.",
+            "prefix": "",
+            "suffix": " 새 고혈압과 함께 특정 장기 손상이 있으면"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.b.4fc53eb6ef2c",
+      "sourceSha256": "4fc53eb6ef2c76720e20069f43f30917fa50689d6809e2823d38779875df96f0",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.b.fdeb6aca1adc",
+      "sourceSha256": "fdeb6aca1adc294b9f096536c54b1904bb66ce1bcd0fe3f78d39b7f11f1b3fed",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.b.fa728438c0bf",
+      "sourceSha256": "fa728438c0bff3a5b8120df7d6a4ddf2c82c36f01d86773e1db231e781cb95bb",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.c09a5bd02f18f6b6501d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 25,
+            "end": 28,
+            "exact": "당뇨병",
+            "prefix": "방과 감시는 이전 자간전증·고혈압·신질환과 ",
+            "suffix": "·자가면역질환 등 위험에 맞춰 논의한다. 예"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.supp.db9ada01a9d3",
+      "sourceSha256": "db9ada01a9d393144c06c8f89da21485325abe239df321783ff083528e64f380",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.hypertension.classification-endothelium.supp.f6f65433f9c3",
+      "sourceSha256": "f6f65433f9c391f36ff34263d889e01abb947ff0d417e177f0e6c77eefed0cc7",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.biomarkers.troponin-release",
+  "subjectId": "cardiology",
+  "chapterId": "biomarkers",
+  "title": {
+    "ko": "심장 트로포닌의 방출·소실과 검사 해석",
+    "en": "Cardiac Troponin Release Clearance and Measurement"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.biomarkers.troponin-release.lo.01",
+      "text": "혈중 농도와 심근 방출량을 구별한다"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.lo.02",
+      "text": "급성·만성 손상의 시간 정보를 설명한다"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.lo.03",
+      "text": "분석법과 생물학적 차이를 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.fe5560929ea6",
+      "type": "heading",
+      "level": 2,
+      "text": "심근 단백질이 혈액에 나타나는 과정"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.e95070c0ee1f",
+      "type": "paragraph",
+      "markdown": "심장 troponin I와 T는 심근 수축 조절 복합체와 관련된 단백질이다. 검사에서 검출하는 신호는 세포에서 방출되어 혈중에 존재하는 여러 형태의 분자에 대한 것이다. 일부는 비교적 쉽게 이동 가능한 풀과 관련되고 구조 단백질의 분해·방출은 더 긴 시간 경과에 기여할 수 있다. 검출 농도를 한 시점의 죽은 세포수와 일대일 대응시키지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.92c4f59185a3",
+      "type": "paragraph",
+      "markdown": "혈중 농도는 방출과 분포·분해·제거가 합쳐진 결과다. 재관류는 손상 부위에서 혈액으로 씻겨 나오는 양상을 바꿀 수 있다. 따라서 빨리 높아진 농도가 언제나 더 큰 최종 손상만을 뜻하지 않는다. 농도의 감소 역시 모든 조직 손상이 즉시 멈췄다는 직접 증거가 아니다. 유출과 소실을 구분해야 시간 곡선을 올바르게 읽을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.8e5140df6891",
+      "type": "heading",
+      "level": 2,
+      "text": "단순 수지의 해석"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.8fbff9b2a5ea",
+      "type": "paragraph",
+      "markdown": "가상 모형에서 혈중 양을 C, 심근에서의 유입을 R(t), 소실상수를 k라 두면 dC/dt=R(t)−kC다. 관찰 곡선이 내려가는 구간에서도 R(t)가 0일 필요는 없다. 유입이 소실보다 작으면 농도는 감소한다. 반대로 농도가 일정하면 유입이 계속되는 상태와 낮은 변동의 만성 상태 등 여러 가설이 가능하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.3ba42836fe75",
+      "type": "paragraph",
+      "markdown": "방출을 e^(−t), 소실상수를0.2로 놓고 시작값을0으로 둔 독립 모형에서는 C=(e^(−0.2t)−e^(−t))/0.8이다. 처음에는 유입 때문에 올라가다가 소실이 더 커지면 내려간다. 수식의 시간과 농도는 임의 단위이며 실제 troponin 반감기나 경색 발생 시간을 추정하는 식이 아니다. 이 곡선은 생성·제거의 차이가 관찰값을 만든다는 개념을 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.02718b53ae1f",
+      "type": "heading",
+      "level": 2,
+      "text": "기준값과 변화량"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.287bc51217e0",
+      "type": "paragraph",
+      "markdown": "심근손상은 해당 분석법과 적절한 기준집단의 상한을 넘는 cardiac troponin과 연결하여 정의한다. 2026년 국제 정의는 성별에 따른 99백분위 상한을 강조한다. 분석법의 숫자와 단위를 다른 검사로 그대로 옮기지 않는다. 급성 변화의 판단에는 시점별 상승·하강과 임상 문맥이 필요하고 안정적으로 높은 값에서는 만성 손상 가능성도 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.a3a97614daf4",
+      "type": "paragraph",
+      "markdown": "상한을 넘었다는 결과는 심근 기원의 손상 정보를 주지만 그 원인을 자동으로 확정하지 않는다. 급성 관상동맥 병변 외에 심근염·심부전·전신 질환 등도 평가 대상이다. 만성 신장질환의 상승을 무조건 의미 없는 양성으로 지우거나 모든 상승을 급성 혈전으로 분류하면 모두 오류다. 변화와 증상·심전도·영상, 기존 수치를 함께 비교한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.4d973953a054",
+      "type": "heading",
+      "level": 2,
+      "text": "분석의 범위"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.1ff7ab4d4308",
+      "type": "paragraph",
+      "markdown": "고감도는 낮은 농도를 더 정밀하게 측정하는 분석 성능의 성격이다. 질환 특이성이 무한하다는 뜻이나 모든 초기 음성이 안전한 배제를 뜻하지 않는다. 증상 시작 시점과 검증된 연속 경로, 해당 분석법의 성능을 확인한다. 서로 다른 플랫폼의 수치 차이를 실제로 발생한 급격한 생물학적 변화로 오인하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.b.ebebf9eb8fd9",
+      "type": "paragraph",
+      "markdown": "용혈과 검체 조건, 이종항체·자가항체 등은 특정 분석법의 결과에 영향을 줄 수 있다. 임상과 크게 어긋나는 반복값에서는 검사실과 함께 대체법과 간섭을 검토한다. 반복 측정이 일치해도 동일한 편향이 반복된 것일 수 있다. 다만 간섭 가능성만을 이유로 실제 급성 손상의 평가와 응급 판단을 지연해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.diagram.troponin-release-clearance-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.troponin-release-clearance-toy",
+      "path": "diagrams/diagram.troponin-release-clearance-toy.svg",
+      "alt": "방출과 소실의 합성 시간곡선의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.biomarkers.troponin-release.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "방출 R",
+            "혈중으로 들어오는 속도"
+          ],
+          [
+            "혈중량 C",
+            "유입·분포·제거의 합친 결과"
+          ],
+          [
+            "소실 kC",
+            "농도·제거 조건의 영향"
+          ],
+          [
+            "감소 곡선",
+            "R=0을 반드시 뜻하지 않음"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/biomarkers/sections/cardiology.biomarkers.troponin-release.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.biomarkers.troponin-release.001",
+    "question.cardiology.biomarkers.troponin-release.002"
+  ],
+  "relatedLessons": [
+    "cardiology.electrocardiography.ischemic-evolution",
+    "cardiology.ischemia.mi-classification-2026"
+  ]
+}

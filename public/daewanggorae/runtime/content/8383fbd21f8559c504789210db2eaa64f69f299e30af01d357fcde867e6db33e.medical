@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.infection.endocarditis-mechanisms",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.infection.endocarditis-mechanisms.b.91e1b3cfa399",
+      "sourceSha256": "91e1b3cfa3991bd762e6cdc1610a796dca672c6fb517f95360e1c051feed29d4",
+      "sourceLengthUtf16": 245,
+      "annotations": [
+        {
+          "id": "ann.e758aaaabd8137ac1095",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 208,
+            "end": 245,
+            "exact": "병원체의 부착과 침습 능력, 숙주와 인공물의 상태가 함께 중요하다.",
+            "prefix": " 손상된 판막에서만 시작되는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-mechanisms.b.153ad2ce3470",
+      "sourceSha256": "153ad2ce34706e98b2ad231d3f8998b7d8a21b154fdbd52e07a9b78989d8ec80",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-mechanisms.b.51b44aa356c9",
+      "sourceSha256": "51b44aa356c9821bad11d0f2629e6c47564670ee8b5c35f46369cf870059f25d",
+      "sourceLengthUtf16": 197,
+      "annotations": [
+        {
+          "id": "ann.5a39ea52992894820a2a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 45,
+            "exact": "황색포도알균은 급성 침습과 조직 파괴, 혈류·의료 관련 노출의 맥락에서 중요하다.",
+            "prefix": "",
+            "suffix": " 구강 관련 사슬알균, 장알균과 다른 병원체"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-mechanisms.b.1c4c332b23f3",
+      "sourceSha256": "1c4c332b23f378991c4f0137595ced82f8d68ef24df6d7d7b75daeba706cdcd1",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.dfe27c6053fac1f7fea9",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 29,
+            "end": 32,
+            "exact": "심부전",
+            "prefix": "에서는 빠른 발열과 패혈증, 판막 파괴 및 ",
+            "suffix": "이 두드러질 수 있다. 아급성 경과에서는 피"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-mechanisms.b.283c08d26f78",
+      "sourceSha256": "283c08d26f7814485c7c6fb5b24cfe766d03ab34045aa5d30e338770ed997581",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-mechanisms.b.fa9785007ae9",
+      "sourceSha256": "fa9785007ae9efb105013881844c173a3eb6b42a5764aea0b6020e790bd18dac",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.0a9471dcab069d776865",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 130,
+            "end": 173,
+            "exact": "같은 혈뇨도 신장 색전과 면역복합체 손상, 약물과 다른 원인을 구별해야 한다.",
+            "prefix": ", 신장과 피부 등에 영향을 줄 수 있다. ",
+            "suffix": " 병변 위치와 전신 소견의 경로를 그리면 서"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-mechanisms.b.992e409eb8a2",
+      "sourceSha256": "992e409eb8a211cfa0d31de68bd78715cf5121ed7f8c3a5de91eef12a41c9c55",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.infection.endocarditis-mechanisms.b.ffb2ed4b73f8",
+      "sourceSha256": "ffb2ed4b73f8573e23d6839a96ef15a3cbd1149ac0364706c5f839a0c8ccd588",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    }
+  ]
+}

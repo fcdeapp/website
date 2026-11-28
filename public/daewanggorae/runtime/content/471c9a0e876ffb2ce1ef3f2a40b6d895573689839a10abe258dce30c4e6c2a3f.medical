@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.assessment.cardiopulmonary-reserve",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.a2270c46d99b",
+      "sourceSha256": "a2270c46d99ba8b8e434694fb7db46cf7e27fb1a36589de613bd329c5c22b39e",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.41546bf959db",
+      "sourceSha256": "41546bf959db118f8c33c3c7eb843462864c0a95f661bd5812190bb78b2e4c67",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.e130b05508cedc783341",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 3,
+            "exact": "심부전",
+            "prefix": "",
+            "suffix": "에서는 전부하·후부하와 수축·이완의 변화가 "
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.56a893c5d640",
+      "sourceSha256": "56a893c5d640c456b526e875de26e956fca61934e90561eebd0b1d83f359c4b3",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.448436b9b7f4",
+      "sourceSha256": "448436b9b7f4b7b88aeb3b7653ad0a9b0fffa0a12ebf75b1526e033c7f574af8",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.77fde0b5c95d",
+      "sourceSha256": "77fde0b5c95db1870644ece44e2f5aebc1ac35c713fd1f7a9e8c389b595b5c48",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.bcae843c53c8",
+      "sourceSha256": "bcae843c53c8fe34b2e6f6b3a0d7506aa82d7ca313511b6cbb22c91051dbc9ec",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.c418b01eb2bc",
+      "sourceSha256": "c418b01eb2bcc376111613351b19733ac3dd09d0dc21928b33b1b744ce82921d",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.0106f573f1cec8c3177f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 97,
+            "end": 138,
+            "exact": "반대로 빈혈에 대한 심박출 증가가 언제나 충분한 보상을 의미하지는 않는다.",
+            "prefix": "포화도가 같아도 산소 전달은 줄 수 있다. ",
+            "suffix": " 관상동맥질환과 심실 기능, 대사 요구와 분"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.d09a1b3d6521",
+      "sourceSha256": "d09a1b3d6521f38331b9a5ae38cb54559e8adc4a5d748b2b336288f8bd77aa29",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.712578460f09",
+      "sourceSha256": "712578460f097988c4e2d79d168a9451d98a5f570545eb04c6489ab798591bd9",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.cardiopulmonary-reserve.b.01f24226159a",
+      "sourceSha256": "01f24226159adedbc72500ced5e7681326c19b01bc38bb4c459de2546e51535d",
+      "sourceLengthUtf16": 150,
+      "annotations": []
+    }
+  ]
+}

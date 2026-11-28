@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pediatrics.growth.velocity-measurement",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.b.774eeae5239d",
+      "sourceSha256": "774eeae5239d98d0066ae9d9149f856c44f4259dcb41543dceb8199e69c0c3c8",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.b.0b98ff0244ea",
+      "sourceSha256": "0b98ff0244ea9b7212afeab7b6b77ff4c573f5c2054e86be2d7a4b0be4715cf2",
+      "sourceLengthUtf16": 161,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.b.adce98c8ece6",
+      "sourceSha256": "adce98c8ece613d79db779235ddce7dd66e4ee306b7dfcecab2862df1a556f4e",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.b.feac85bc3dc6",
+      "sourceSha256": "feac85bc3dc6f95509a350009739929449acb4513218aeedbe4e5eca72973d5c",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.b.a37da52dffe2",
+      "sourceSha256": "a37da52dffe281ca36c72ca91b9774f68b5dac02f1f4df8ed02673935007eac5",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.b.8f4b52a884c7",
+      "sourceSha256": "8f4b52a884c796267ab057d392766c4328488923f56cc4d88e3a5f5c305d084d",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.f944ff6cb8704cc23cac",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 96,
+            "end": 149,
+            "exact": "향후 개정 시에는 과거 곡선과의 차이가 아이의 실제 성장 변화인지 기준 변경 때문인지 구별한다.",
+            "prefix": " 기준값이 확정·적용되었다는 뜻이 아니다. ",
+            "suffix": " 공식 자료를 확인하지 않은 새 백분위값을 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.b.6115486f4215",
+      "sourceSha256": "6115486f42150f954f07e852c953458cd5235bef288898b49c15a859e16d2c7f",
+      "sourceLengthUtf16": 169,
+      "annotations": [
+        {
+          "id": "ann.2dcd024734c6e848ff06",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 56,
+            "end": 61,
+            "exact": "만성 염증",
+            "prefix": " 함께 평가해야 한다. 섭취·흡수의 문제와 ",
+            "suffix": "·장기 질환, 내분비·유전 및 심리사회적 요"
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        },
+        {
+          "id": "ann.30630ea0843af8e0bd3e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 105,
+            "end": 133,
+            "exact": "한 지표의 감소만으로 원인 질환을 확정하지 않는다.",
+            "prefix": "회적 요인이 다양한 궤적을 만들 수 있다. ",
+            "suffix": " 부모의 키와 사춘기 시기·출생력·약물과 증"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.b.8b411e5a1a2c",
+      "sourceSha256": "8b411e5a1a2c8ce11178f975384d52b378aa9cf18e69e1f4d6603c4428bcf799",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.supp.f88fb6c03f73",
+      "sourceSha256": "f88fb6c03f73430a902cbe09d5bbee30174fbecfc3440b6cca7d99fcbe76a3f5",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.growth.velocity-measurement.supp.9fd95086978e",
+      "sourceSha256": "9fd95086978e5af87ab016f097ba050bc651b0f0f7a645bf08dcdbdd7d2e0bf9",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    }
+  ]
+}

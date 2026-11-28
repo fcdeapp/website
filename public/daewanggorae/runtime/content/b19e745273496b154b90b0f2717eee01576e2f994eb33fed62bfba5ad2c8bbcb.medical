@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "genetics.population.hardy-weinberg",
+  "subjectId": "genetics",
+  "chapterId": "population",
+  "title": {
+    "ko": "대립유전자 빈도·Hardy–Weinberg와 집단 구조",
+    "en": "Allele Frequencies and Hardy–Weinberg Models"
+  },
+  "learningObjectives": [
+    {
+      "id": "genetics.population.hardy-weinberg.lo.01",
+      "text": "표본 유전형 수로 대립유전자 빈도를 계산한다"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.lo.02",
+      "text": "무작위 결합 모형의 유전형 비율과 가정을 설명한다"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.lo.03",
+      "text": "질환 빈도·보인자 빈도·집단 혼합의 해석을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "genetics.population.hardy-weinberg.b.ac7cd94ae991",
+      "type": "heading",
+      "level": 2,
+      "text": "빈도의 분모를 먼저 정하기"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.e4aeb03337bb",
+      "type": "paragraph",
+      "markdown": "한 상염색체 위치에서 두 대립유전자 A와a를 두고 각각 빈도를p와q라고 하자. 이배체 개인N명의 유전형 수가 NAA·NAa·Naa이면 A의 사본 수는2NAA+NAa, 전체 사본 수는2N이다. 따라서 p=(2NAA+NAa)/(2N)이고 q도 같은 방식으로 구한다. 개인 수의 비율과 대립유전자 사본의 비율은 다른 분모를 사용한다. Aa인 개인은 A와a를 각각 하나씩 제공한다는 점을 세면 혼동을 줄일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.a47189f9e3fb",
+      "type": "paragraph",
+      "markdown": "예를 들어 AA64명·Aa32명·aa4명인100명 표본에서는 A가160사본, a가40사본이므로 p=0.8, q=0.2이다. aa 개인4%라는 값과 a 대립유전자 빈도20%는 같은 수치가 아니다. 이 사본 세기는 표본의 유전형을 정확히 알고 해당 이배체 위치를 다룬다면 Hardy–Weinberg 평형을 먼저 가정하지 않고도 할 수 있다. 빈도를 세는 일과 모형에 맞는지를 검사하는 일을 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.20771340e6ff",
+      "type": "heading",
+      "level": 2,
+      "text": "무작위 결합 모형"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.7ff2dd851728",
+      "type": "paragraph",
+      "markdown": "각 성의 생식세포가 같은 대립유전자 빈도p·q를 가지고 무작위로 결합한다고 두면 자녀의 유전형 확률은 p²·2pq·q²이다. 이형접합은 A를 한쪽에서 받고a를 다른 쪽에서 받는 두 경우를 포함하여2가 붙는다. p+q=1이므로 세 유전형 확률의 합도1이다. 이는 무작위 결합의 곱셈 규칙을 이용한 결과이며 열성 대립유전자는 언제나 희귀하다는 가정에서 나온 식이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.3bec69e75e9c",
+      "type": "paragraph",
+      "markdown": "집단의 대립유전자 빈도가 여러 세대에 안정적으로 유지된다는 논의에는 선택·돌연변이·이동·유전적 부동 등 다른 조건도 고려한다. 한 세대의 유전형 결합 비율과 장기적인 진화 요인의 부재를 같은 문장으로 단순화하지 않는다. 실제 집단은 이상적인 모든 조건을 완벽하게 충족하지 않을 수 있다. Hardy–Weinberg 관계는 비교를 위한 귀무 모형으로 유용하지만 모든 자료가 반드시 따라야 할 경험 법칙은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.85a162b37a30",
+      "type": "heading",
+      "level": 2,
+      "text": "열성 질환 빈도에서의 추정"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.f318bbd6eda5",
+      "type": "paragraph",
+      "markdown": "완전 침투도의 단일 상염색체 열성 모형에서 질환이aa에만 대응하고 모형 조건이 맞으면 유병 비율을q²로 놓아 q를 추정할 수 있다. q²=1/10000이면 q=0.01이고 보인자2pq=2×0.99×0.01=0.0198이다. 희귀 대립유전자에서는2q라는 근사가 가능하지만 정확한 값은2q(1−q)이다. q가 커질수록 두 값의 차이가 커지므로 모든 빈도에 희귀 근사를 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.e7269f53a018",
+      "type": "paragraph",
+      "markdown": "실제 유전 질환은 여러 병적 변이의 복합이형접합, 불완전 침투도·연령, 검사·진단 편향, 다른 유전 양식 등의 영향을 받을 수 있다. 따라서 진단명 하나의 빈도를 언제나 한 변이의 q²로 환산해서는 안 된다. 표현형 빈도와 특정 유전형 빈도의 연결을 먼저 검토한다. 보인자 검사나 가족 위험에 적용할 때에는 실제 모집단과 원인 변이 범위를 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.caafde9ec7c1",
+      "type": "heading",
+      "level": 2,
+      "text": "이형접합과 집단의 관계"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.2b1e77412fdd",
+      "type": "paragraph",
+      "markdown": "두 대립유전자 모형의 이형접합 비율2q(1−q)는 q=0.5에서 최대0.5이다. 한 대립유전자가 매우 희귀하거나 거의 고정되면 이형접합이 줄어드는 수학적 관계를 보여 준다. 이 결과를 이형접합인 개인의 건강이 언제나 더 좋거나 나쁘다는 뜻으로 해석하지 않는다. 집단의 유전형 분포와 개별 변이의 기능·선택 효과는 서로 다른 질문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.42e53cd1528e",
+      "type": "paragraph",
+      "markdown": "서로 다른 대립유전자 빈도를 가진 소집단을 합치면 전체 빈도를 사용해 계산한 기대 이형접합과 실제 합친 비율이 달라질 수 있다. 각 소집단이 자신의 빈도에서 모형에 맞더라도 전체는 이형접합 부족처럼 보일 수 있다. 이는 집단 구조를 무시한 혼합의 효과이며 곧바로 모든 개인의 근친교배나 검사 오류를 뜻하지 않는다. 자료가 어떤 집단에서 어떻게 모집되었는지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.2eaeb6ab9561",
+      "type": "heading",
+      "level": 2,
+      "text": "모형에서 벗어나는 자료"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.b22d8979f10e",
+      "type": "paragraph",
+      "markdown": "유전형 분포가 기대와 다르면 표본 변동·검사 오류·집단 구조·비무작위 짝짓기·선택 등 다양한 원인을 검토한다. 큰 표본의 작은 차이와 작은 표본의 큰 차이는 통계적 평가가 다를 수 있다. 특히 희귀 유전형에서 기대 도수가 작을 때 사용하는 검사 방법과 가정이 중요하다. 단순한 비율 불일치를 확인한 것과 원인 기전을 확정한 것은 다른 단계이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.7566ff95dc00",
+      "type": "paragraph",
+      "markdown": "상염색체 이배체 한 위치의 식을 성염색체나 여러 대립유전자·연관된 위치에 그대로 적용하지 않는다. 성별 사본 수, 반수체 구간, 대립유전자 수와 짝짓기 구조에 따라 모형을 바꾸어야 한다. 염기서열에서 한 변이를 검출했다는 사실만으로 해당 표본의 배수성과 빈도 계산 단위가 자동 결정되는 것은 아니다. 분모를 세고 모형의 모집단을 정의하는 일이 계산보다 먼저다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.633266c11467",
+      "type": "heading",
+      "level": 2,
+      "text": "임상유전과 연구 적용"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.a9fbbe8799af",
+      "type": "paragraph",
+      "markdown": "집단 빈도는 변이 해석과 선별 연구에서 중요한 정보이지만 병원성을 단독 결정하지 않는다. 질환의 중증도·침투도·유전 양식과 양립할 수 있는 빈도인지, 자료 집단의 대표성이 어떤지 함께 검토한다. 데이터베이스에 없다는 이유만으로 새 변이가 병적이라고 확정해서도 안 된다. 관찰되지 않았다는 사실은 모집 규모·표본·검출 방식에 따라 의미가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.b.7d0b1f97cffe",
+      "type": "paragraph",
+      "markdown": "수치 예시는 대립유전자 사본과 무작위 결합을 연결하기 위해 작성한 모형이다. 실제 환자의 보인자·발병 위험과 집단유전의 평균 빈도를 혼동하지 않는다. 가족력과 확인된 부모 유전형이 있다면 집단 사전빈도만 사용할 때와 다른 조건부확률을 적용해야 한다. 개인·가족·집단이라는 세 수준을 구별하면 같은 숫자 기호를 다른 질문에 잘못 적용하는 오류를 줄일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.diagram.hardy-weinberg-genotypes",
+      "type": "diagram",
+      "diagramRef": "diagram.hardy-weinberg-genotypes",
+      "path": "diagrams/diagram.hardy-weinberg-genotypes.svg",
+      "alt": "두 대립유전자 모형의 유전형 비율의 독립 계산 곡선"
+    },
+    {
+      "id": "genetics.population.hardy-weinberg.table.compare",
+      "type": "table",
+      "data": {
+        "title": "표본의 유전형",
+        "columns": [
+          "유전형",
+          "개인 수",
+          "a사본 수"
+        ],
+        "rows": [
+          [
+            "AA",
+            "64",
+            "0"
+          ],
+          [
+            "Aa",
+            "32",
+            "32"
+          ],
+          [
+            "aa",
+            "4",
+            "8"
+          ]
+        ],
+        "notes": "관찰 대립유전자 빈도 산출에는 평형 가정이 필요하지 않으며 기대 유전자형 계산에는 해당 가정을 밝힌다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/genetics/chapters/population/sections/genetics.population.hardy-weinberg.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "0.20"
+  ],
+  "reviewQuestions": [
+    "question.genetics.population.hardy-weinberg.001",
+    "question.genetics.population.hardy-weinberg.002"
+  ],
+  "relatedLessons": [
+    "genetics.epigenetics.imprinting"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "colorectal-surgery",
+  "title": {
+    "ko": "대장항문외과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "colorectal-surgery.chapter.appendix",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/appendix/chapter.json"
+    },
+    {
+      "id": "colorectal-surgery.chapter.colon",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/colon/chapter.json"
+    },
+    {
+      "id": "colorectal-surgery.chapter.rectum",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/rectum/chapter.json"
+    },
+    {
+      "id": "colorectal-surgery.chapter.obstruction",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/obstruction/chapter.json"
+    },
+    {
+      "id": "colorectal-surgery.chapter.anastomosis",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/anastomosis/chapter.json"
+    },
+    {
+      "id": "colorectal-surgery.chapter.stoma",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/stoma/chapter.json"
+    },
+    {
+      "id": "colorectal-surgery.chapter.diverticular",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/diverticular/chapter.json"
+    },
+    {
+      "id": "colorectal-surgery.chapter.ibd",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/ibd/chapter.json"
+    },
+    {
+      "id": "colorectal-surgery.chapter.anorectal",
+      "path": "domains/06-surgery/subjects/colorectal-surgery/chapters/anorectal/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "colorectal-surgery.plan.001",
+    "colorectal-surgery.plan.002",
+    "colorectal-surgery.plan.003",
+    "colorectal-surgery.plan.004",
+    "colorectal-surgery.plan.005",
+    "colorectal-surgery.plan.006",
+    "colorectal-surgery.appendix.appendicitis",
+    "colorectal-surgery.colon.cancer-staging-resection",
+    "colorectal-surgery.rectum.pelvic-staging-tme",
+    "colorectal-surgery.obstruction.malignant-colonic-obstruction",
+    "colorectal-surgery.anastomosis.leak-perfusion-diversion",
+    "colorectal-surgery.stoma.fluid-skin-function",
+    "colorectal-surgery.diverticular.wall-inflammation",
+    "colorectal-surgery.diverticular.abscess-source-control",
+    "colorectal-surgery.diverticular.elective-resection-fistula",
+    "colorectal-surgery.ibd.crohn-stricture-bowel-preservation",
+    "colorectal-surgery.ibd.penetrating-crohn",
+    "colorectal-surgery.ibd.uc-colectomy-staging",
+    "colorectal-surgery.ibd.postoperative-recurrence",
+    "colorectal-surgery.anorectal.abscess-spaces",
+    "colorectal-surgery.anorectal.fistula-sphincter",
+    "colorectal-surgery.anorectal.perianal-crohn"
+  ]
+}

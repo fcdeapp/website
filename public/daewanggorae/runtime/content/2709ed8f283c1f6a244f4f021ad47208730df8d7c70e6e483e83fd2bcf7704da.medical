@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.neuroanatomy.forebrain.basal-ganglia.right-context",
+  "sceneId": "scene.neuroanatomy.forebrain.basal-ganglia.right-context",
+  "lessonId": "neuroanatomy.forebrain.basal-ganglia",
+  "triggerBlockId": "neuroanatomy.forebrain.basal-ganglia.b.03ed286a4ed0",
+  "primaryStructures": [
+    "FMA72826",
+    "FMA72828",
+    "FMA72830"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA72826",
+    "FMA72828",
+    "FMA72830"
+  ],
+  "modelIds": [
+    "isa:FJ1802",
+    "isa:FJ1823",
+    "isa:FJ1805"
+  ],
+  "modelPaths": [
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ1802.obj",
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ1823.obj",
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ1805.obj"
+  ],
+  "cameraPosition": [
+    -19.47666,
+    -239.32354030437492,
+    1558.81
+  ],
+  "cameraTarget": [
+    -19.47666,
+    -92.1515,
+    1558.81
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -35.7525,
+      -123.932,
+      1540.27
+    ],
+    "max": [
+      -3.20082,
+      -60.371,
+      1577.35
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "오른쪽 바닥핵의 직접·간접·초직접 회로의 정상 구조 위치",
+  "verificationStatus": "original_OBJ_hash_and_bounds_checked_GLB_and_visual_review_pending",
+  "visualizationLimitations": [
+    "정상 성인 정적 메시로 기능 회로나 병변·발화를 재현하지 않는다.",
+    "전달본 preview-models에 이 장면의 GLB가 없으므로 원본 앱에서 모델 생성·가시성 검토가 필요하다.",
+    "창백핵 메시가 안쪽·가쪽 핵의 개별 구분을 제공한다고 가정하지 않는다."
+  ],
+  "dynamicAnatomyIncluded": false
+}

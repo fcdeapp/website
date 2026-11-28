@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.hypersensitivity.receptor-autoantibodies",
+  "subjectId": "immunology",
+  "chapterId": "hypersensitivity",
+  "title": {
+    "ko": "수용체 항체의 자극·차단·소실 유도",
+    "en": "Stimulating Blocking and Modulating Receptor Antibodies"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.lo.01",
+      "text": "결합 검사와 기능 검사를 구별한다"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.lo.02",
+      "text": "Graves병과 신경근접합부의 기전을 비교한다"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.lo.03",
+      "text": "항체 농도와 증상 정도가 달라질 수 있는 이유를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.d122d5cb232c",
+      "type": "heading",
+      "level": 2,
+      "text": "세포를 죽이지 않고도 기능을 바꾼다"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.acf6f5a6989a",
+      "type": "paragraph",
+      "markdown": "항체매개 질환은 세포를 용해하거나 포식하게 만드는 반응에만 한정되지 않는다. 수용체에 결합한 항체가 정상 리간드 작용을 흉내 내거나, 결합을 막거나, 교차결합 뒤 수용체의 내재화·분해를 늘릴 수 있다. 살아 있는 세포의 신호와 표면 수용체량이 바뀌는 것이다. 이러한 기능 변화는 항체매개 과민반응의 범주를 이해할 때 세포독성과 구별하여 다룬다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.c2aa1eec4423",
+      "type": "paragraph",
+      "markdown": "TSH 수용체 항체는 자극성 또는 차단성 등 서로 다른 기능을 가질 수 있다. 한 환자의 항체 집단에도 여러 성질이 섞일 수 있다. 수용체 결합을 검출하는 검사와 세포의 cAMP 같은 기능 반응을 측정하는 검사는 같은 질문이 아니다. 결합 양성만으로 자극 방향과 강도를 모두 확정하지 않는다. 실제 갑상샘 기능검사와 임상 상태를 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.828ea2265918",
+      "type": "heading",
+      "level": 2,
+      "text": "리간드 신호와 되먹임"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.3503cad7413c",
+      "type": "paragraph",
+      "markdown": "수용체 자극이 늘면 말초 호르몬 생성과 표적 조직의 반응이 바뀌고, 정상 되먹임에 의해 뇌하수체 자극은 감소할 수 있다. 자극 호르몬이 낮다는 자료와 표적 수용체가 계속 자극받는 현상은 모순되지 않는다. 정상 리간드의 농도와 수용체의 전체 활성은 별도 변수다. 이 논리는 항체나 외인성 작용제가 정상 조절 회로를 우회하는 여러 상황에 적용된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.b7d89c57c6ec",
+      "type": "paragraph",
+      "markdown": "단순 모형에서 정상 리간드와 자극성 성분이 수용체 반응을 함께 높이거나 차단성 성분이 반응을 낮추는 곡선을 그릴 수 있다. 하지만 실제 항체는 결합 부위와 다가성, 수용체 이동을 바꾸므로 단일 경쟁 억제식으로 모두 설명할 수 없다. 학습용 포화 곡선은 변수의 역할을 비교하는 도구이며 환자의 호르몬량이나 치료 반응을 직접 예측하는 식이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.4ee508028c69",
+      "type": "heading",
+      "level": 2,
+      "text": "신경근접합부에서 다른 단계가 손상된다"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.ddf344136a6e",
+      "type": "paragraph",
+      "markdown": "AChR 관련 중증근무력증에서는 항체 결합 뒤 보체성 접합부 손상, 수용체의 교차결합·내재화와 일부 차단 작용이 기능 저하에 기여할 수 있다. 같은 질환군에서도 표적이 MuSK 등으로 다르면 항체 특성과 주된 병리 경로가 달라질 수 있다. 모든 신경근접합부 항체를 보체를 똑같이 활성화하는 항체로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.a229f3876548",
+      "type": "paragraph",
+      "markdown": "근육 수축의 실패는 신경의 전기 신호, transmitter 방출, 접합부의 안전 여유와 근섬유 반응을 거친 결과다. 항체 농도 하나가 이 모든 요소의 현재 기능을 대표하지는 않는다. 표적 특이 항체 검사와 반복신경자극·단일섬유 근전도 등은 서로 다른 정보를 제공한다. 검사 선택과 임상 분포·피로성의 해석을 함께 해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.e09710dbf947",
+      "type": "heading",
+      "level": 2,
+      "text": "어떤 시험이 기전을 지지하는가"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.92f032bb7750",
+      "type": "paragraph",
+      "markdown": "수용체 발현 세포에서 항체 처리 뒤 신호가 증가하면 자극 기능을, 정상 리간드 반응이 줄면 차단 또는 신호 억제 가능성을 검토한다. 표면 수용체량과 생존을 함께 측정하면 내재화와 독성을 나누는 데 도움이 된다. 리간드와 항체 처리 순서, 노출 시간과 농도는 결과를 바꾼다. 한 종말점의 감소를 모두 직접 결합 차단으로 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.b.beac9529f928",
+      "type": "paragraph",
+      "markdown": "혈중 항체가 줄어도 이미 손상된 조직의 회복에는 시간이 걸릴 수 있고, 조직·수용체의 보상으로 기능이 먼저 달라질 수도 있다. 반대로 낮은 항체량에서도 높은 기능적 효력이 나타날 수 있다. 항체의 존재, 기능·조직 손상과 환자의 실제 기능을 따로 기록하면 검사와 증상의 불일치를 더 정확히 설명할 수 있다. 치료 순서와 용량은 질환별 최신 근거를 별도로 적용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.diagram.immune-receptor-function-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-receptor-function-toy",
+      "path": "diagrams/diagram.immune-receptor-function-toy.svg",
+      "alt": "자극항과 경쟁항의 가상 반응의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.hypersensitivity.receptor-autoantibodies.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "자극 항체",
+            "수용체 작동을 증가시킬 수 있음"
+          ],
+          [
+            "차단 항체",
+            "리간드 결합·수용체 작동을 제한할 수 있음"
+          ],
+          [
+            "결합 검사",
+            "결합의 존재를 확인하는 방법"
+          ],
+          [
+            "기능 검사",
+            "신호·세포 반응의 변화를 확인하는 방법"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/hypersensitivity/sections/immunology.hypersensitivity.receptor-autoantibodies.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.hypersensitivity.receptor-autoantibodies.001",
+    "question.immunology.hypersensitivity.receptor-autoantibodies.002"
+  ],
+  "relatedLessons": [
+    "immunology.hypersensitivity.antibody-hemolysis-dat",
+    "immunology.hypersensitivity.type-iii-local-systemic"
+  ]
+}

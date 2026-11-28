@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "심방세동의 혈전색전 위험과 예방",
+    "en": "Thromboembolic Risk and Prevention in Atrial Fibrillation"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.lo.01",
+      "text": "혈류 정체와 심방 기질을 혈전 형성에 연결한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.lo.02",
+      "text": "위험 점수의 연도와 지역 차이를 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.lo.03",
+      "text": "항응고의 순이득과 용량 선택 원칙을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.259df15d3d16",
+      "type": "heading",
+      "level": 2,
+      "text": "정체와 혈전 형성"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.fdc0c81690c1",
+      "type": "paragraph",
+      "markdown": "심방세동에서 동시 수축의 소실과 심방·좌심방이(left atrial appendage)의 유동 변화는 혈액 정체에 기여한다. 여기에 심방 내피의 변화와 염증, 전신 응고 성향 및 동반 질환이 작용하여 혈전이 형성될 수 있다. 위험은 빠른 맥박 하나의 결과가 아니다. 심실 속도가 잘 조절되어도 심방의 혈전 형성 환경과 기저 위험이 남을 수 있다. 항응고는 심박수를 낮추는 약물과 목표가 다르며, 출혈 위험을 동반하는 예방적 개입이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.e8e8e744d6df",
+      "type": "paragraph",
+      "markdown": "뇌졸중 위험 평가에서는 연령, 과거 뇌졸중이나 전신 색전, 고혈압과 심부전, 당뇨병 및 혈관질환 등의 임상 정보를 정리한다. 과거 위험 점수는 이러한 정보를 결합하여 의사결정을 돕지만 개인의 미래 사건을 확정하지는 않는다. 같은 점수라도 연령 구성과 질환의 조절 상태, 연구 집단에 따라 실제 절대 위험이 달라질 수 있다. 위험 인자는 추적 중 새로 생기므로 처음 평가를 평생 고정된 등급으로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.74cf38001dce",
+      "type": "heading",
+      "level": 2,
+      "text": "지침의 점수와 적용 범위"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.70e0469f9cf1",
+      "type": "paragraph",
+      "markdown": "미국 2023년 ACC/AHA/ACCP/HRS 지침은 CHA2DS2-VASc 등을 검증된 위험 평가 도구로 다루고 추정 연간 위험과 임상 맥락을 연결한다. 유럽 2024년 ESC 지침의 공식 설명에서는 성별 항목을 제외한 CHA2DS2-VA를 중심에 둔다. 두 점수는 구성과 해석이 같지 않으므로 이름과 숫자만 복사하여 같은 표에 혼합하지 않는다. 국내 환자에게 적용할 때에는 국내 허가사항과 진료 환경, 적용하려는 지침의 출판 연도와 대상 집단을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.f842768299e3",
+      "type": "paragraph",
+      "markdown": "출혈 위험 평가의 목적은 항응고를 기계적으로 금지하는 데 있지 않다. 조절되지 않는 혈압, 불필요한 항혈소판제 병용과 약물 상호작용, 신장 기능 및 출혈 병력을 검토하여 수정 가능한 위험을 줄인다. 뇌졸중 위험과 출혈 위험이 함께 높은 환자도 있으므로 한 점수의 높고 낮음만으로 결론을 내리기 어렵다. 환자가 중요하게 생각하는 결과와 치료 부담을 포함해 순이득을 논의하고 치료 중에도 상태를 다시 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.3e9f98496258",
+      "type": "heading",
+      "level": 2,
+      "text": "약물 선택과 추적"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.e3969907c9bd",
+      "type": "paragraph",
+      "markdown": "직접 경구항응고제(direct oral anticoagulant, DOAC)는 표적과 배설·대사 특성이 약물마다 다르다. 적절한 용량은 해당 약물의 허가 기준, 신장 기능 산출 방법, 연령·체중과 병용 약물을 함께 확인하여 정한다. 출혈이 걱정된다는 이유로 근거 없이 감량하면 예방 효과가 불충분해질 수 있다. 기계판막이나 특정 승모판 협착 등에서는 일반적인 심방세동 환자의 약물 선택 근거를 그대로 적용하지 않는다. 항혈소판제는 적응증이 다르며 항응고의 자동 대체제가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.3b6c7eda6e91",
+      "type": "paragraph",
+      "markdown": "심율동전환이나 절제 뒤 동율동이 유지되더라도 항응고의 지속 여부를 맥박의 규칙성만으로 정하지 않는다. 임상적 뇌졸중 위험, 시술 전후의 상황과 추적 자료를 함께 고려한다. 복약 누락과 출혈 증상, 새 신장 기능 저하 및 시술 계획을 확인하는 과정도 예방의 일부다. 교육에서는 특정 점수나 약품명만 암기하기보다 어떤 사건을 예방하는지, 어떤 집단의 근거인지, 현재 환자에서 무엇이 변했는지를 순서대로 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "혈전 기전",
+            "정체·내피·응고 환경"
+          ],
+          [
+            "미국2023",
+            "CHA2DS2-VASc 등 위험 도구"
+          ],
+          [
+            "유럽2024",
+            "CHA2DS2-VA 중심; 성별 항목 차이"
+          ],
+          [
+            "출혈 평가",
+            "수정 위험과 순이득; 단독 배제 도구 아님"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.001"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.atrial-fibrillation-burden",
+    "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm"
+  ]
+}

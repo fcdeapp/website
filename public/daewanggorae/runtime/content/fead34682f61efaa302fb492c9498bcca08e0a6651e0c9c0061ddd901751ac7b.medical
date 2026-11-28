@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.ischemia.reperfusion-microcirculation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.ischemia.reperfusion-microcirculation.b.9e3b9ba813a9",
+      "sourceSha256": "9e3b9ba813a91d7d6788bbfa52e230434317aeb139ec7e29199db652f30018b2",
+      "sourceLengthUtf16": 180,
+      "annotations": [
+        {
+          "id": "ann.0ae529113a0c7375e353",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 149,
+            "end": 180,
+            "exact": "상류의 개통과 하류의 기능을 나누어 보는 것이 중요하다.",
+            "prefix": "수축·폐색이 조직 공급을 제한할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.ischemia.reperfusion-microcirculation.b.369c76c7e3b9",
+      "sourceSha256": "369c76c7e3b9820567db0ab533891276cb2b2bdbe7ba58c7c19da24afc7110e0",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.reperfusion-microcirculation.b.e69eeae8f15f",
+      "sourceSha256": "e69eeae8f15f0e6a7deac4e39a036ead0c6117b4efdc947c4bdf4d787cab113d",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.08076547f1fe779bede7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 149,
+            "end": 186,
+            "exact": "생존 심근을 구하는 이득과 회복 과정의 손상 기전을 함께 구별한다.",
+            "prefix": " 자체를 해로운 것으로 일반화하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.ischemia.reperfusion-microcirculation.b.e0921711cace",
+      "sourceSha256": "e0921711cacedc8188b82593a866b3d5c06333e460ea0c38dff44f43fe5f0735",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.reperfusion-microcirculation.b.04678a0bd23f",
+      "sourceSha256": "04678a0bd23f9d4796086039cd8d7e7399b1d4104e4092ffdf6e7cdb6590472b",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.reperfusion-microcirculation.b.9caf10808620",
+      "sourceSha256": "9caf10808620ef79b14e42642e063d4981a9379ab7583b15b9bcb46dcbcfb84a",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.reperfusion-microcirculation.b.705cfe2cdef2",
+      "sourceSha256": "705cfe2cdef2251297c0f960c4b55cc6fca779f29809f1c80ca516ae3ad731b6",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.918372b7d52a3813bbe3",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 10,
+            "end": 13,
+            "exact": "ACS",
+            "prefix": "2025년 미국의 ",
+            "suffix": " 지침과 국내의 2026년 재혈관화 합의문은"
+          },
+          "conceptId": "reader.term.da81b428602d1aae",
+          "targetDocumentId": "cardiology.ischemia.acute-coronary-syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.ischemia.reperfusion-microcirculation.b.579920df6ea4",
+      "sourceSha256": "579920df6ea48d3b89294580df76a71deff798e11f94fc22fb6208b28c75c4d7",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    }
+  ]
+}

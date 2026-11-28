@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "allergy.emergencies.anaphylaxis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.02ffd4a862f2",
+      "sourceSha256": "02ffd4a862f2c178b041823a8d36e045b0b199884172b42be1847cb05aec8ad3",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.bc45d7c8172b6bdd6f57",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 46,
+            "end": 50,
+            "exact": "과민반응",
+            "prefix": "르게 발생하여 생명을 위협할 수 있는 전신 ",
+            "suffix": "이다. 비만세포와 호염기구 등의 활성으로 나"
+          },
+          "conceptId": "reader.term.c00cc6a01122c518",
+          "targetDocumentId": "immunology.hypersensitivity.mechanisms"
+        }
+      ]
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.d8308a3703ee",
+      "sourceSha256": "d8308a3703ee3e7a885c22483dabefc63aa5a2f4222d77203f671920c8c9a016",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.a3013266a8cc",
+      "sourceSha256": "a3013266a8cca2d3959b0100af9aff6baa09c6f46a6b08aa854135df76e79f20",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.da3eb7ca239e",
+      "sourceSha256": "da3eb7ca239e1997a8da5e33b583102c2077caa1ab4ceae607f09792332579f1",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.fbcc4fed2efef91d2bd8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 105,
+            "end": 107,
+            "exact": "천식",
+            "prefix": "및 치료 반응을 반복하여 평가한다. 실신과 ",
+            "suffix": " 악화, 다른 쇼크 및 비면역성 반응은 감별"
+          },
+          "conceptId": "reader.term.0724de0dbf1ee4f5",
+          "targetDocumentId": "pulmonology.airways.asthma-mechanisms"
+        },
+        {
+          "id": "ann.36bf584b38d2cd0ce7ce",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 175,
+            "end": 213,
+            "exact": "피부 증상이 없더라도 노출과 급성 기도·순환 소견의 조합은 중요하다.",
+            "prefix": " 필요한 초기 처치를 늦추어서는 안 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.a7094381f20f",
+      "sourceSha256": "a7094381f20fa70e2b7db008c1a591880fef389b654f74a5517a45de124b2cab",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.d8b898af202a",
+      "sourceSha256": "d8b898af202a157f4699680c3e4455524365ce20122966962222393c0e9ba8e2",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.60c166738042",
+      "sourceSha256": "60c166738042df91ccd2a1e8d5022fe63943e3e85a88530958aaf4acb166603e",
+      "sourceLengthUtf16": 158,
+      "annotations": []
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.5f3f80b7c3d8",
+      "sourceSha256": "5f3f80b7c3d8f8890644a92a04734782a15374eb245c58a6239fff97904e367c",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.dee4500ca50b",
+      "sourceSha256": "dee4500ca50b1483d13f11f1271ac81be2313f3cfc9b12fba48f8f39f15619ac",
+      "sourceLengthUtf16": 221,
+      "annotations": [
+        {
+          "id": "ann.37fb32706e9f59fe7f18",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 171,
+            "end": 221,
+            "exact": "원인이 확정되지 않은 상태를 확정된 알레르기 표지로 영구 기록하지 않도록 근거를 구분한다.",
+            "prefix": "않으며 후속 원인 평가의 자료로 이용한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.b6572b1c98c9",
+      "sourceSha256": "b6572b1c98c9c1b5e4fc89ab0562ad2727a8041be55917e9309bbe52d2fbb6ab",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "allergy.emergencies.anaphylaxis.b.e45d913aadf4",
+      "sourceSha256": "e45d913aadf4ad72277e8c4297fec3d640b912777933dfb0afebcd08f042bc78",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    }
+  ]
+}

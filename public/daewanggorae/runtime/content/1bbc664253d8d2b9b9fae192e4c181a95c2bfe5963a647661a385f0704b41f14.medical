@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.diagnosis.chest-discomfort",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.diagnosis.chest-discomfort.b.cf7ee4619fe3",
+      "sourceSha256": "cf7ee4619fe30fd299f261f65a100068c38d59dc287c5657dbd60e1a9df5b5ca",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.chest-discomfort.b.188e7a9ea0f0",
+      "sourceSha256": "188e7a9ea0f0b89dc8a94a31bb45e6b9acb1c65e9d4bbbe4ac26e0933ebb3599",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.chest-discomfort.b.9ffe752e2d6b",
+      "sourceSha256": "9ffe752e2d6b803a06adc765a5add94c9cf7d05a66b2d7fefe36ecf6a0c2a05c",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.chest-discomfort.b.849e3b368c40",
+      "sourceSha256": "849e3b368c40d317dfece4aeb9df7ca74ee891418bbd586895e12a1e4e5550ea",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.ea1a1011cb808740666b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 18,
+            "end": 20,
+            "exact": "기흉",
+            "prefix": "급성 대동맥질환과 폐색전증, 긴장",
+            "suffix": "·심장압전 등도 흉부 증상과 순환 악화를 만"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.chest-discomfort.b.5acc0d808cc8",
+      "sourceSha256": "5acc0d808cc8283a821ee9b7c36299eb56b997e3760fcf2356b093b2145c0dd9",
+      "sourceLengthUtf16": 161,
+      "annotations": [
+        {
+          "id": "ann.c4c424c2cb697e610a04",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 18,
+            "end": 20,
+            "exact": "흉막",
+            "prefix": "흉벽·근골격, 식도·위장관, 폐·",
+            "suffix": "과 불안 관련 증상도 중요하다. 압통이 재현"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        },
+        {
+          "id": "ann.b62a5e122fb57061ec0b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 37,
+            "exact": "흉벽·근골격, 식도·위장관, 폐·흉막과 불안 관련 증상도 중요하다.",
+            "prefix": "",
+            "suffix": " 압통이 재현되면 흉벽 기여를 지지할 수 있"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.chest-discomfort.b.4c7e13f24b04",
+      "sourceSha256": "4c7e13f24b04a6219388585d952e91fa398bd07713549e1b8e761369e40965de",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.chest-discomfort.b.43e22eab71c4",
+      "sourceSha256": "43e22eab71c41ff58ccdf76f63661ddfa3b6c7fb7304e9f760a92b0a76adec46",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.f0b878887ea6f0e87ac5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 147,
+            "end": 184,
+            "exact": "결과가 정상인 이유가 질환 부재인지 검출 시점의 한계인지 구별한다.",
+            "prefix": " 전기적 변화가 남아 있지 않을 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.chest-discomfort.b.44be7cf99391",
+      "sourceSha256": "44be7cf993915612a871c03208ad953ca223282b585f9f2d88ff8dd96ab25254",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    }
+  ]
+}

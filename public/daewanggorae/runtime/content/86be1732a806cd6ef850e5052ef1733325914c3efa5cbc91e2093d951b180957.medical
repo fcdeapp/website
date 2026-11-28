@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.liver-blood-bile-flow-0850",
+  "lessonId": "hpb-surgery.liver.functional-anatomy",
+  "title": "간의 혈액·담즙 흐름 개념",
+  "nodes": [
+    {
+      "id": "in",
+      "label": "문맥·동맥 유입",
+      "x": 165,
+      "y": 80,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "sin",
+      "label": "굴모세혈관",
+      "x": 165,
+      "y": 310,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "out",
+      "label": "간정맥 유출",
+      "x": 165,
+      "y": 600,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "cell",
+      "label": "간세포",
+      "x": 535,
+      "y": 310,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "bile",
+      "label": "담세관·담관",
+      "x": 535,
+      "y": 600,
+      "width": 280,
+      "height": 92
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.liver-blood-bile-flow-0850.e0",
+      "source": "in",
+      "target": "sin",
+      "label": "혈액",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.liver-blood-bile-flow-0850.e1",
+      "source": "sin",
+      "target": "out",
+      "label": "혈액 배출",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.liver-blood-bile-flow-0850.e2",
+      "source": "sin",
+      "target": "cell",
+      "label": "교환",
+      "relation": "bidirectional"
+    },
+    {
+      "id": "diagram.liver-blood-bile-flow-0850.e3",
+      "source": "cell",
+      "target": "bile",
+      "label": "담즙 분비·배출",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 700,
+      "height": 750
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 650,
+        "height": 750
+      },
+      "fontSize": 22,
+      "nodes": {
+        "in": {
+          "x": 153.21428571428572,
+          "y": 80,
+          "width": 257.6,
+          "height": 92
+        },
+        "sin": {
+          "x": 153.21428571428572,
+          "y": 310,
+          "width": 257.6,
+          "height": 92
+        },
+        "out": {
+          "x": 153.21428571428572,
+          "y": 600,
+          "width": 257.6,
+          "height": 92
+        },
+        "cell": {
+          "x": 496.7857142857143,
+          "y": 310,
+          "width": 220.8,
+          "height": 92
+        },
+        "bile": {
+          "x": 496.7857142857143,
+          "y": 600,
+          "width": 257.6,
+          "height": 92
+        }
+      }
+    }
+  },
+  "limitations": [
+    "독립 연결 개념도이며 환자별 공간·길이·각도·절개·절제·시술 경로가 아니다.",
+    "정상 메시에는 이 도식의 통로·기능·미세구조가 새로 포함되지 않는다."
+  ],
+  "sourceImageUsed": false
+}

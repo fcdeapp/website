@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "psychiatry.substances.stimulant-cannabis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "psychiatry.substances.stimulant-cannabis.b.3f8fb60dce13",
+      "sourceSha256": "3f8fb60dce1311965bfcb122f5e94940455a002becc04a1e4842183e52af6aec",
+      "sourceLengthUtf16": 486,
+      "annotations": [
+        {
+          "id": "ann.e12e1f139ac00d7af1d3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 448,
+            "end": 486,
+            "exact": "증상이 잠시 가라앉았다는 사실과 위험이 해결되었다는 판단을 구별한다.",
+            "prefix": " 등 합병증의 평가가 남아 있을 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.substances.stimulant-cannabis.b.c1f6911c2c04",
+      "sourceSha256": "c1f6911c2c045596b29701ed7deb1d2fbffd2cdf071ae8c844c873992c5bcb67",
+      "sourceLengthUtf16": 508,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.substances.stimulant-cannabis.b.029123136c2a",
+      "sourceSha256": "029123136c2a7ad735c5bf051e6cd7826c0b49dff18a933541fc4f9f38deecd0",
+      "sourceLengthUtf16": 516,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.substances.stimulant-cannabis.b.67f134873ee9",
+      "sourceSha256": "ce2638710a079bcc8c6d2b762c0debb5775b2378ab1cb8381d6fe3d36b97513c",
+      "sourceLengthUtf16": 538,
+      "annotations": [
+        {
+          "id": "ann.156340e5bcac6e89eee3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 64,
+            "exact": "대마 사용과 정신증 위험의 연관은 중요한 교육 내용이지만 관찰된 연관이 모든 개인의 발병을 결정한다는 뜻은 아니다.",
+            "prefix": "",
+            "suffix": " 노출 강도와 시기, 유전적 취약성, 다른 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.substances.stimulant-cannabis.b.19c84b601236",
+      "sourceSha256": "19c84b6012361a7b4c353467fe641e152c60b8caf3bb5eece209d00e39d04101",
+      "sourceLengthUtf16": 546,
+      "annotations": [
+        {
+          "id": "ann.8665e4fef922524ff9b4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 395,
+            "end": 443,
+            "exact": "약물의 사용이 검토되는 경우에도 승인 상태와 근거, 동반 질환과 안전을 구분해야 한다.",
+            "prefix": "약물 체계와 같은 것으로 가정하지 않는다. ",
+            "suffix": " 재사용 뒤에는 처벌보다 어떤 상황과 기대가"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

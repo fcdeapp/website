@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.motor-neuron.muscle-differential",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.motor-neuron.muscle-differential.b.02054b445213",
+      "sourceSha256": "02054b445213a579d76e8628a4f92b22ec5d2664aa9ca5b7c47cfd863631e212",
+      "sourceLengthUtf16": 473,
+      "annotations": [
+        {
+          "id": "ann.e283753c21fed3bd74c5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 278,
+            "end": 284,
+            "exact": "신경근접합부",
+            "prefix": "동반 징후에서 출발한다. 신경뿌리·말초신경·",
+            "suffix": "·근육의 장애는 서로 다른 양상을 보일 수 "
+          },
+          "conceptId": "reader.term.8ac0bcc79435bc5e",
+          "targetDocumentId": "neuroscience.nmj.release-safety-factor"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.motor-neuron.muscle-differential.b.6e092733bb00",
+      "sourceSha256": "6e092733bb00d717d3e95f352768850167861c86bc9f018012cdd96cf4a0b048",
+      "sourceLengthUtf16": 546,
+      "annotations": [
+        {
+          "id": "ann.c6660d7cb44427a83b81",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 237,
+            "end": 280,
+            "exact": "위축의 원인에는 비사용과 영양·근육 질환도 있어 관찰 소견의 조합이 중요하다.",
+            "prefix": "의 반사로 모든 국소화를 결정하지 않는다. ",
+            "suffix": "\n근위축측삭경화증(amyotrophic la"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.motor-neuron.muscle-differential.b.c6ecf8be6411",
+      "sourceSha256": "c6ecf8be6411d2a24dea484bc72125ad34cc632c65495d49f35b1365687c4bd7",
+      "sourceLengthUtf16": 509,
+      "annotations": [
+        {
+          "id": "ann.65b8b3b896f9c37687ce",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 28,
+            "end": 34,
+            "exact": "흥분수축연결",
+            "prefix": "myopathy)에서는 근섬유의 구조·대사·",
+            "suffix": " 등 다양한 단계가 손상될 수 있다. 염증성"
+          },
+          "conceptId": "reader.term.8cd207f17b9c619f",
+          "targetDocumentId": "physiology.muscle.excitation-contraction"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.motor-neuron.muscle-differential.b.fec09bd53cd7",
+      "sourceSha256": "fec09bd53cd7edb5c3020337350aacb295df2844585caf100509d62b303bf5ad",
+      "sourceLengthUtf16": 490,
+      "annotations": [
+        {
+          "id": "ann.3d9ae9cbc74f567ad250",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 354,
+            "end": 396,
+            "exact": "침을 처리하지 못하거나 체중이 줄어드는 문제는 단순한 식욕 저하와 구별한다.",
+            "prefix": "을 확인하고 적절한 기능 검사를 연결한다. ",
+            "suffix": " 약화의 원인 진단과 함께 환자가 의사를 표"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.motor-neuron.muscle-differential.b.74f8f1fcf3df",
+      "sourceSha256": "74f8f1fcf3df17b240e12fac248e7586ac60a92bf86ea1472f801bba0838b7c9",
+      "sourceLengthUtf16": 480,
+      "annotations": [
+        {
+          "id": "ann.64e4bf41dd44f06cff95",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 418,
+            "end": 480,
+            "exact": "감별표에서는 분포·반사·감각·시간 경과를 함께 제시하여 단일 징후로 병명을 외우는 오류를 줄이는 것이 중요하다.",
+            "prefix": "나 환자의 기능 수준을 보여 주지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "psychiatry.substances.opioid-sedative",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "psychiatry.substances.opioid-sedative.b.57602254203b",
+      "sourceSha256": "57602254203b377d990af2cfc2abb73f48c139788033cdcdec97355c8ecaa4c6",
+      "sourceLengthUtf16": 529,
+      "annotations": [
+        {
+          "id": "ann.38dc4cddd04c82be0ecc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 447,
+            "end": 497,
+            "exact": "환자가 깨어났는지뿐 아니라 실제 호흡과 산소화·환기, 반복 악화와 안전한 관찰이 중요하다.",
+            "prefix": " 다른 동반 원인이 사라지는 것은 아니다. ",
+            "suffix": " 특정 투여량을 모든 상황의 공통 정답으로 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.substances.opioid-sedative.b.0c2a549eaa66",
+      "sourceSha256": "0c2a549eaa661e7af2b3ae1c83f75973c3766d93f3f6ee8acb769347c9c1c626",
+      "sourceLengthUtf16": 491,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.substances.opioid-sedative.b.60e505a59dca",
+      "sourceSha256": "60e505a59dcad28e69a6d80d53c58a634e8cc484741d2e64f8d9dc5554af5475",
+      "sourceLengthUtf16": 511,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.substances.opioid-sedative.b.4ee9fcac2f6f",
+      "sourceSha256": "4ee9fcac2f6f5a170a15e0063d12b64b036bc263246c24357d45577c0e54d09c",
+      "sourceLengthUtf16": 514,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.substances.opioid-sedative.b.52ea16d214f7",
+      "sourceSha256": "feb8e03ffe4eb9a1fa1b7c84911c40f1cc7dce0a33d4361d07d27bd535015a79",
+      "sourceLengthUtf16": 541,
+      "annotations": [
+        {
+          "id": "ann.1572da2adae07e113dd0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 234,
+            "end": 283,
+            "exact": "길항제의 이름을 아는 것과 적응증·위험을 판단하여 안전하게 사용하는 것은 구별해야 한다.",
+            "prefix": " 반복 진찰과 실제 환기 상태가 중요하다. ",
+            "suffix": "\n장기 진료에서는 불안·불면·통증의 치료와 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.wound.proliferation-matrix",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.3f6325d0c090",
+      "sourceSha256": "3f6325d0c0905e6ddd87a905d70249fafebb1cfe7858f1f2c97b2b37eb571bd2",
+      "sourceLengthUtf16": 215,
+      "annotations": [
+        {
+          "id": "ann.6ed1427f986cdd68244c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 183,
+            "end": 188,
+            "exact": "만성 염증",
+            "prefix": "를 포함한다. 육안의 붉고 과립상인 조직을 ",
+            "suffix": "의 육아종(granuloma)과 혼동하지 않"
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.2e5abdd9e52b",
+      "sourceSha256": "2e5abdd9e52b7bc6ab8c0d77eaff3527b2e40b66e7c313c15ab4ded65f04dfe7",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.481b410fd5c6",
+      "sourceSha256": "481b410fd5c69a4672d3e78a602166eb7233de240b8864a929484ba3da0bdf2a",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.cfe3e6dc58ee91ddd1a2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 188,
+            "exact": "붉은 색이 있다는 사실과 충분한 깊은 혈류·산소가 확보되었다는 사실은 구별한다.",
+            "prefix": " 쉽게 출혈하거나 부종을 동반할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.0358cdaf831a",
+      "sourceSha256": "0358cdaf831a42e84b532f7ee2852d7a88d27387ebef133bed9af54714c07cc9",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.6f68b15ef040",
+      "sourceSha256": "6f68b15ef040acd7b2aa0880fcb778c8261e93eff519be90288810dee03aba72",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.97296ce33543",
+      "sourceSha256": "97296ce33543fcdfd8c1b2c0eb0e88899d339ea90eaf886886d0e86d0d172f07",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.31e196572ca2bec36931",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 146,
+            "end": 199,
+            "exact": "제품 이름보다 상처와 주변 피부의 현재 조건, 실제 교체 과정과 환자 생활에 맞는지가 중요하다.",
+            "prefix": "호·수분·관찰의 목적을 구별하여 선택한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.0aca36224ecb",
+      "sourceSha256": "0aca36224ecb05f1d16c71614f3ccd65168b29d76e7ad17a391e2ac75f76c33b",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.19b7610fd236",
+      "sourceSha256": "19b7610fd2367259cf54e8e2becc537db095aac3d42e8b5ea33db1d067591fce",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.14411d1dda19",
+      "sourceSha256": "14411d1dda199076a649d116bb183633338061b62e47ee2edde2b8e38b2b73b4",
+      "sourceLengthUtf16": 143,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.proliferation-matrix.b.b5bc7216a0e6",
+      "sourceSha256": "b5bc7216a0e6fe94bf1e242c7792ca253879d70f4656688fcb02c1525d272c81",
+      "sourceLengthUtf16": 151,
+      "annotations": []
+    }
+  ]
+}

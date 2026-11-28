@@ -1,6 +1,8 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { AnatomyMaterials } from "./materials";
+const materials = new AnatomyMaterials();
 const emit = (payload) =>
   window.ReactNativeWebView
     ? window.ReactNativeWebView.postMessage(JSON.stringify(payload))
@@ -35,6 +37,7 @@ const group = new THREE.Group();
 scene.add(group);
 const loader = new GLTFLoader();
 const models = new Map();
+let location = null, savedCamera = null, baseIds = new Set();
 let current,
   animation,
   disposed = false,
@@ -45,21 +48,22 @@ let current,
   viewportHeight = 0;
 const reset = () => {
   if (!current) return;
+  const framing = location ? { ...current, bounds: location.bounds, autoFit: true } : current;
   const bounds = new THREE.Box3(
-    new THREE.Vector3(...current.bounds.min),
-    new THREE.Vector3(...current.bounds.max),
+    new THREE.Vector3(...framing.bounds.min),
+    new THREE.Vector3(...framing.bounds.max)
   );
   const target = new THREE.Vector3(...current.cameraTarget);
   const position = new THREE.Vector3(...current.cameraPosition);
   camera.up.set(...current.cameraUp);
   camera.fov = current.cameraFovDegrees || 35;
-  if (current.autoFit) {
+  if (framing.autoFit) {
     bounds.getCenter(target);
     const size = bounds.getSize(new THREE.Vector3());
     const radius = size.length() / 2;
     const fitFov = Math.min(
       (camera.fov * Math.PI) / 180,
-      2 * Math.atan(Math.tan((camera.fov * Math.PI) / 360) * camera.aspect),
+      2 * Math.atan(Math.tan((camera.fov * Math.PI) / 360) * camera.aspect)
     );
     const distance = Math.max(10, (radius / Math.sin(fitFov / 2)) * 1.12);
     let dir = position.clone().sub(target);
@@ -82,12 +86,24 @@ function disposeModels() {
   for (const mesh of [...group.children]) {
     mesh.traverse((o) => {
       o.geometry?.dispose();
-      if (Array.isArray(o.material)) o.material.forEach((m) => m.dispose());
-      else o.material?.dispose();
+      // Pooled material disposal is owned by AnatomyMaterials, once per instance.
     });
     group.remove(mesh);
   }
   models.clear();
+  materials.clear();
+}
+function updateVisibility() {
+  for (const [id, root] of models) root.visible = location
+    ? location.modelIds.includes(id) && !materials.state.hidden?.includes(id)
+    : baseIds.has(id) && !materials.state.hidden?.includes(id) && (!materials.state.isolate || id === selection);
+}
+function trimContext(keep) {
+  for (const [id, root] of models) {
+    if (baseIds.has(id) || keep.has(id)) continue;
+    root.traverse((o) => { if (o.isMesh) materials.unregister(o); o.geometry?.dispose(); });
+    group.remove(root); models.delete(id);
+  }
 }
 window.receive = async (data) => {
   try {
@@ -95,19 +111,24 @@ window.receive = async (data) => {
       generation++;
       disposeModels();
       current = data.scene;
+      location = null; savedCamera = null; baseIds = new Set(data.scene.modelIds);
+      materials.update({ location: null });
       selection = "";
       if (data.background) scene.background.set(data.background);
       reset();
     }
     if (data.type === "model") {
-      if (models.has(data.id)) return;
+      if (data.sceneId !== current?.id || (data.context && (!location || !location.modelIds.includes(data.id)))) return;
+      if (models.has(data.id)) { emit({ type: "loaded", id: data.id, sceneId: data.sceneId, locationId: location?.id, context: !!data.context }); return; }
       const sceneGeneration = generation;
       const bytes = Uint8Array.from(atob(data.base64), (c) => c.charCodeAt(0));
       const parsed = await loader.parseAsync(bytes.buffer, "");
       if (
         disposed ||
+        models.has(data.id) ||
         sceneGeneration !== generation ||
-        data.sceneId !== current?.id
+        data.sceneId !== current?.id ||
+        (data.context && (!location || !location.modelIds.includes(data.id)))
       ) {
         parsed.scene.traverse((o) => {
           o.geometry?.dispose();
@@ -117,16 +138,13 @@ window.receive = async (data) => {
       }
       parsed.scene.traverse((o) => {
         if (o.isMesh) {
-          o.geometry.computeVertexNormals();
-          o.material?.dispose();
-          o.material = new THREE.MeshStandardMaterial({
-            color: data.color || "#B9B8AD",
-            roughness: 0.74,
-            metalness: 0,
-            side: THREE.DoubleSide,
-            transparent: true,
-            opacity: data.opacity ?? 1,
-          });
+          // Our OBJ→GLB pipeline omits normals. Preserve valid imported normals.
+          const normal = o.geometry.getAttribute("normal");
+          if (!normal || normal.count !== o.geometry.getAttribute("position").count ||
+              !normal.array.every(Number.isFinite) || normal.array.every((n) => n === 0)) o.geometry.computeVertexNormals();
+          if (Array.isArray(o.material)) o.material.forEach((m) => m.dispose());
+          else o.material?.dispose();
+          materials.register(o, data);
           o.userData = {
             id: data.id,
             color: data.color,
@@ -135,30 +153,44 @@ window.receive = async (data) => {
           };
         }
       });
+      parsed.scene.visible = !materials.state.hidden?.includes(data.id) &&
+        (!materials.state.isolate || data.id === materials.state.selected);
       group.add(parsed.scene);
       models.set(data.id, parsed.scene);
-      emit({ type: "loaded", id: data.id });
+      updateVisibility();
+      emit({ type: "loaded", id: data.id, sceneId: data.sceneId, locationId: location?.id, context: !!data.context });
+    }
+    if (data.type === "location" && data.sceneId === current?.id) {
+      if (data.location) {
+        if (!location) savedCamera = { position: camera.position.clone(), target: controls.target.clone(),
+          up: camera.up.clone(), fov: camera.fov, near: camera.near, far: camera.far };
+        location = data.location;
+        materials.update({ location });
+        trimContext(new Set(location.modelIds));
+        reset();
+      } else {
+        location = null;
+        materials.update({ location: null });
+        if (savedCamera) {
+          transition = null;
+          camera.position.copy(savedCamera.position); controls.target.copy(savedCamera.target);
+          camera.up.copy(savedCamera.up); camera.fov = savedCamera.fov;
+          camera.near = savedCamera.near; camera.far = savedCamera.far;
+          camera.updateProjectionMatrix(); controls.update(); savedCamera = null;
+        }
+      }
+      updateVisibility();
     }
     if (data.type === "reset") reset();
     if (data.type === "background") scene.background.set(data.color);
+    if (data.type === "mode") {
+      materials.update({ mode: data.mode === "anatomical" ? "anatomical" : "default" });
+    }
     if (data.type === "style") {
       selection = data.selected || "";
-      for (const [id, root] of models) {
-        root.visible =
-          !data.hidden?.includes(id) && (!data.isolate || id === selection);
-        root.traverse((o) => {
-          if (o.isMesh) {
-            o.material.color.set(
-              id === selection ? "#E6A963" : o.userData.color || "#B9B8AD",
-            );
-            o.material.opacity =
-              id === selection
-                ? (data.opacity ?? o.userData.baseOpacity)
-                : o.userData.baseOpacity;
-            o.material.depthWrite = o.material.opacity > 0.95;
-          }
-        });
-      }
+      materials.update({ selected: selection, hovered: data.hovered || "", hidden: data.hidden || [],
+        isolate: !!data.isolate, opacity: data.opacity, highlighted: data.highlighted });
+      updateVisibility();
     }
     if (data.type === "dispose") {
       disposed = true;
@@ -186,11 +218,12 @@ renderer.domElement.addEventListener("pointerup", (e) => {
   raycaster.setFromCamera(
     new THREE.Vector2(
       ((e.clientX - r.left) / r.width) * 2 - 1,
-      (-(e.clientY - r.top) / r.height) * 2 + 1,
+      (-(e.clientY - r.top) / r.height) * 2 + 1
     ),
-    camera,
+    camera
   );
   const hit = raycaster.intersectObjects(group.children, true).find((h) => {
+    if (location && !location.focusIds.includes(h.object.userData.id)) return false;
     let node = h.object;
     while (node) {
       if (!node.visible) return false;
@@ -230,7 +263,7 @@ function tick(now) {
     controls.target.lerpVectors(
       transition.targetFrom,
       transition.targetTo,
-      eased,
+      eased
     );
     if (t === 1) transition = null;
   }

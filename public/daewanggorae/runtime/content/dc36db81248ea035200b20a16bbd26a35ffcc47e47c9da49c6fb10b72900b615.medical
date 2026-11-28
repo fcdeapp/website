@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "critical-care.shock.hemodynamics",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "critical-care.shock.hemodynamics.b.e707f77afc46",
+      "sourceSha256": "e707f77afc46586661d9fd9279231919ed539d2147feba4d0cb930ef3e806d52",
+      "sourceLengthUtf16": 257,
+      "annotations": [
+        {
+          "id": "ann.7adf7fa9da68820e0ca2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 62,
+            "end": 94,
+            "exact": "저혈압은 중요한 단서지만 쇼크와 완전히 같은 말은 아니다.",
+            "prefix": " 못하는 순환부전 상태로 이해할 수 있다. ",
+            "suffix": " 보상성 혈관수축이 혈압을 유지하는 동안 이"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "critical-care.shock.hemodynamics.b.7b25eeb24ca7",
+      "sourceSha256": "7b25eeb24ca73cac1662b073ac27413cde56b9f3c183dc407d263cfa19a3199d",
+      "sourceLengthUtf16": 251,
+      "annotations": []
+    },
+    {
+      "blockId": "critical-care.shock.hemodynamics.b.2b9480fb57ad",
+      "sourceSha256": "2b9480fb57ade5fa6d2129077a55a8bb2f84bd69d77bf6a3c1f70120167a823f",
+      "sourceLengthUtf16": 226,
+      "annotations": [
+        {
+          "id": "ann.8c4dbc18d2c272a1ca35",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 108,
+            "end": 139,
+            "exact": "분포성 쇼크는 혈관 긴장과 혈류 분배의 변화가 중요하다.",
+            "prefix": " 유출을 방해하는 기계적 문제와 관련된다. ",
+            "suffix": " 실제 환자에서는 출혈과 심근 손상, 감염과"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "critical-care.shock.hemodynamics.b.dd830cd17373",
+      "sourceSha256": "dd830cd17373b0605fe3bfb816c4b6e835b92fb48e3048383007fcf960592c1a",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "critical-care.shock.hemodynamics.b.2e87f51092c7",
+      "sourceSha256": "2e87f51092c7757b0da65d39672ffdcc05cb699b4e95a43761271ab7c7abdc9c",
+      "sourceLengthUtf16": 237,
+      "annotations": []
+    },
+    {
+      "blockId": "critical-care.shock.hemodynamics.b.c2634d4e803b",
+      "sourceSha256": "8daa4fcd54f8fa401bcaaedafd5dd665c07653d86f4f2d101ce7ad82f16fb528",
+      "sourceLengthUtf16": 125,
+      "annotations": [
+        {
+          "id": "ann.6abea3f932a2819b5dfc",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 67,
+            "end": 73,
+            "exact": "감염원 조절",
+            "prefix": ", 혈관작용제, 심근수축제, 기계적 처치와 ",
+            "suffix": "은 원인과 생리에 따라 역할이 다르다. 원인"
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    }
+  ]
+}

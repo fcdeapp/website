@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.hh-0858",
+  "lessonId": "laboratory-medicine.acid-base.blood-gas-interpretation",
+  "title": "중탄산염 고정 시 pH",
+  "series": [
+    {
+      "label": "HCO₃⁻ 24mmol/L",
+      "samples": [
+        {
+          "x": 20,
+          "y": 7.702059991328
+        },
+        {
+          "x": 30,
+          "y": 7.525968732272
+        },
+        {
+          "x": 40,
+          "y": 7.401029995664
+        },
+        {
+          "x": 50,
+          "y": 7.304119982656
+        },
+        {
+          "x": 60,
+          "y": 7.224938736608
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "HCO3": 24,
+    "formula": "6.1+log10(24/(0.03*x))"
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 20,
+      "max": 60,
+      "scale": "linear",
+      "ticks": [
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "label": "PaCO₂(mmHg)"
+    },
+    "yAxis": {
+      "min": 7.1,
+      "max": 7.9,
+      "scale": "linear",
+      "ticks": [
+        7.1,
+        7.3,
+        7.5,
+        7.7,
+        7.9
+      ],
+      "label": "pH"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "HCO₃⁻ 24mmol/L",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립적인 수학 모형이다. 실제 환자 관측값·진단 경계·처방 설정이 아니다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.protein-disposal-routes",
+  "lessonId": "biochemistry.proteins.amino-acid-turnover",
+  "title": "단백질 제거의 두 주요 경로",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "E1·E2·E3와 기질 표지",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "프로테아좀의 선택적 처리",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "세포질·소기관의 자가포식 전달",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "리소좀 내 분해",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.protein-disposal-routes.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "일부 유비퀴틴 표지",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.protein-disposal-routes.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "유입·융합·분해",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 650
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 650
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "모든 유비퀴틴 표지가 분해 신호는 아니며 자가포식은 선택성을 가질 수 있다.",
+    "자가포식소체 증가만으로 전체 분해 유량을 확정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

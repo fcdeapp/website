@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cell-biology.signaling.receptors-second-messengers",
+  "subjectId": "cell-biology",
+  "chapterId": "signaling",
+  "title": {
+    "ko": "수용체 점유·G단백질·이차전령과 신호 종료",
+    "en": "Receptor Occupancy and Second Messengers"
+  },
+  "learningObjectives": [
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.lo.01",
+      "text": "결합 친화도와 세포 반응을 구별한다"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.lo.02",
+      "text": "Gs·Gi·Gq 경로와 수용체 유형의 차이를 설명한다"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.lo.03",
+      "text": "증폭·구획화·종료·탈감작이 신호에 미치는 영향을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.014530170fe4",
+      "type": "heading",
+      "level": 2,
+      "text": "세포가 자극을 구별하는 방법"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.cdfe1799fe13",
+      "type": "paragraph",
+      "markdown": "세포는 같은 호르몬이나 전달물질에 노출되어도 수용체의 종류·양과 세포 안의 연결이 다르면 다른 반응을 보일 수 있다. 세포막 수용체에는 리간드개폐통로, G단백질연결수용체(GPCR), 효소와 연결된 수용체 등 여러 계통이 있고 지용성 신호는 세포 안 수용체와 연결될 수 있다. 모든 호르몬이 막에서 cAMP만 올려 반응한다는 설명은 맞지 않는다. 입력의 인식과 그 이후 신호 변환을 나누어 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.6a92049825e9",
+      "type": "paragraph",
+      "markdown": "한 종류의 결합 부위와 평형을 가정하면 점유 분율 θ는 L/(Kd+L)로 표현할 수 있다. L은 자유 리간드 농도이고 Kd는 같은 단위의 해리상수이다. L=Kd에서 절반이 점유되며 Kd가 작으면 이 모형에서 친화도가 크다. 총 첨가 농도와 자유 농도가 같지 않을 수 있고 결합 부위가 여러 종류이거나 협동성이 있으면 단순식의 가정이 달라진다. 결합 곡선의 수학적 모양과 실제 생체 실험의 해석 범위를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.46bcd323cc90",
+      "type": "heading",
+      "level": 2,
+      "text": "점유와 반응의 차이"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.6a7d29beaa79",
+      "type": "paragraph",
+      "markdown": "수용체가 절반 점유되었다고 세포의 최대반응 절반이 반드시 나타나는 것은 아니다. 신호 증폭·수용체 여유분·하류의 포화와 조절 때문에 반응의 EC50과 결합의 Kd가 달라질 수 있다. 결합 데이터와 기능 데이터를 같은 y축으로 바꾸어 쓰면 친화도와 효능을 혼동한다. 또한 수용체가 많아졌다는 사실만으로 모든 자극에 더 큰 최종반응이 생긴다고 단정할 수 없다. 제한되는 단계가 다른 위치에 있을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.bbd132b029c7",
+      "type": "paragraph",
+      "markdown": "리간드가 결합한 뒤 반응의 크기뿐 아니라 시간·위치·지속성도 중요하다. 짧은 펄스와 지속 자극은 평균 농도가 같아도 다른 유전자 발현과 적응을 만들 수 있다. 한 시점의 수용체 점유율만으로 수시간 뒤 세포 운명을 완전히 예측할 수 없는 이유이다. 정적인 평형 곡선은 한 관계를 설명하며 동적인 신호 전달을 실시간으로 계산하는 모형과는 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.5e79e720b51b",
+      "type": "heading",
+      "level": 2,
+      "text": "Gs와 Gi의 전형적 연결"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.fe66ba474456",
+      "type": "paragraph",
+      "markdown": "GPCR 활성은 이형삼량체 G단백질의 뉴클레오타이드 상태 변화와 연결된다. Gα의 GDP·GTP 전환과 가수분해는 활성·종료 과정에 중요하고 βγ 성분도 자체 표적에 작용할 수 있다. G단백질이 이름에 G가 들어간다는 이유로 모두 같은 효소나 같은 이차전령을 조절하는 것은 아니다. 수용체와 결합하는 G단백질의 종류 및 세포의 표적 조합을 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.d370cc2bff16",
+      "type": "paragraph",
+      "markdown": "전형적인 Gs 경로는 아데닐릴고리화효소(adenylyl cyclase)를 통해 cAMP 생성을 높이는 방향으로 작용하고, Gi 계통은 이 효소에 대한 억제와 연결될 수 있다. cAMP는 PKA 등 여러 하류 체계에 영향을 주며 단백질 인산화는 표적에 따라 기능을 높이거나 낮출 수 있다. 따라서 ‘Gs=모든 장기 수축’ 또는 ‘Gi=모든 반응 소실’로 번역하면 잘못이다. 자극 신호의 분자 부호와 장기 수준의 효과는 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.1e2bd7dbda4f",
+      "type": "heading",
+      "level": 2,
+      "text": "Gq와 막 인지질"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.611ad38569a4",
+      "type": "paragraph",
+      "markdown": "Gq 계통은 전형적으로 PLCβ를 활성화하여 PIP₂를 IP₃와 DAG로 나누는 경로와 연결된다. IP₃는 세포 안 저장소의 수용체를 통해 Ca²⁺ 방출에 영향을 주고 DAG는 막에 남아 PKC 계통 등과 관련된다. 세포질로 퍼지는 전령과 막에 남는 전령이 같은 기질에서 생긴다는 점이 공간적 신호의 예이다. Ca²⁺ 상승은 저장소 방출과 세포 밖 유입·제거가 결합한 결과일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.ccfc1717d1b9",
+      "type": "paragraph",
+      "markdown": "세포질 Ca²⁺를 낮게 유지하는 막 수송과 완충은 신호를 종료하고 다음 자극에 반응할 조건을 만든다. 한 번 Ca²⁺가 올라가면 항상 같은 농도로 계속 유지되는 것이 아니다. 파동·진동·국소 영역 등의 패턴이 다른 표적의 반응과 연결될 수 있다. 단순한 ‘IP₃→Ca²⁺’ 화살표는 주된 관계를 보여 주지만 저장소의 양·통로의 상태·재흡수와 실제 시간 패턴까지 제공하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.3bccacb56e37",
+      "type": "heading",
+      "level": 2,
+      "text": "인산화와 신호의 종료"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.3ca33a706bd4",
+      "type": "paragraph",
+      "markdown": "단백질키네이스는 인산기를 붙이고 포스파테이스는 이를 제거하여 단백질 기능·위치·상호작용을 조절한다. 인산화가 언제나 활성화이고 탈인산화가 언제나 비활성화라는 규칙은 성립하지 않는다. 어느 잔기와 표적이 바뀌었는지에 따라 효과가 다르다. cAMP의 분해에는 포스포다이에스터레이스(PDE)가 관련되고 GTP 가수분해·전령 제거·수용체 내재화 등도 종료와 조절의 서로 다른 단계이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.910aac5b0b1d",
+      "type": "paragraph",
+      "markdown": "지속적인 자극에서 수용체 인산화·조절 단백질 결합·내재화·재활용 또는 분해가 일어날 수 있다. 탈감작(desensitization)은 같은 자극에 대한 반응성이 줄어드는 현상을 가리키며 수용체 수 감소만이 유일한 기전은 아니다. 하류 연결의 조절과 전령 분해·보상도 중요하다. 수용체가 안으로 들어갔다고 그 순간 모든 신호가 완전히 끝난다고 단정할 수도 없다. 신호의 세포 내 위치와 시간에 따른 연결을 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.a417cc996321",
+      "type": "heading",
+      "level": 2,
+      "text": "효소 연결 수용체와 교차작용"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.26c7f4181ae0",
+      "type": "paragraph",
+      "markdown": "수용체타이로신키네이스는 리간드 결합 뒤 인산화 부위를 통해 여러 신호 단백질을 모집할 수 있다. 효소 활성이 수용체 자체에 있는 경우와 결합한 세포질 키네이스가 작용하는 경우도 구별한다. 하류의 MAPK·PI3K 등의 경로는 성장·대사·생존과 연결되지만 모든 세포에서 하나의 고정된 최종 결과를 보장하지 않는다. 동시에 들어온 신호와 세포 상태에 따라 반응이 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.b.a9a6bc1927e3",
+      "type": "paragraph",
+      "markdown": "세포 신호 실험에서는 결합·전령·인산화·전사·기능의 어느 단계를 측정했는지 적어야 한다. 특정 인산화 표지가 증가했다고 최종 기능이 반드시 같은 방향으로 변했다는 뜻은 아니다. 약물이나 유전자 조작의 표적 특이성·시간·농도 및 다른 경로의 보상을 함께 검토한다. 수용체 점유 곡선과 연결도는 이러한 질문을 구분하기 위한 도구이며 검사값 하나에서 치료 반응을 자동 예측하는 장치가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.diagram.receptor-occupancy-equilibrium",
+      "type": "diagram",
+      "diagramRef": "diagram.receptor-occupancy-equilibrium",
+      "path": "diagrams/diagram.receptor-occupancy-equilibrium.svg",
+      "alt": "단일 결합 부위의 평형 점유의 독립 계산 곡선"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.diagram.g-protein-effector-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.g-protein-effector-pairs",
+      "path": "diagrams/diagram.g-protein-effector-pairs.svg",
+      "alt": "G단백질의 전형적 이차전령 연결의 단계별 비교"
+    },
+    {
+      "id": "cell-biology.signaling.receptors-second-messengers.table.compare",
+      "type": "table",
+      "data": {
+        "title": "전형적 G단백질 비교",
+        "columns": [
+          "계통",
+          "대표 연결",
+          "주의"
+        ],
+        "rows": [
+          [
+            "Gs",
+            "AC·cAMP 증가",
+            "최종 효과는 표적별"
+          ],
+          [
+            "Gi",
+            "AC 억제",
+            "βγ 등 다른 연결도 존재"
+          ],
+          [
+            "Gq",
+            "PLCβ·IP₃·DAG",
+            "저장소·막 전령 구별"
+          ]
+        ],
+        "notes": "세포 유형·수용체 아형·신호의 시간 경과에 따라 최종 반응이 달라질 수 있다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/cell-biology/chapters/signaling/sections/cell-biology.signaling.receptors-second-messengers.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "0.5"
+  ],
+  "reviewQuestions": [
+    "question.cell-biology.signaling.receptors-second-messengers.001",
+    "question.cell-biology.signaling.receptors-second-messengers.002"
+  ],
+  "relatedLessons": [
+    "cell-biology.signaling.receptors"
+  ]
+}

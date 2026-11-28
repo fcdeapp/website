@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.general.metabolism-biotransformation",
+  "subjectId": "pharmacology",
+  "chapterId": "general",
+  "title": {
+    "ko": "약물 생체변환과 대사체",
+    "en": "Drug Biotransformation and Metabolites"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.lo.01",
+      "text": "1상·2상 반응을 기능적 분류로 설명한다"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.lo.02",
+      "text": "대사와 불활성화·배설을 구별한다"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.lo.03",
+      "text": "원약물과 대사체의 동시 수지를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.4486307c360b",
+      "type": "heading",
+      "level": 2,
+      "text": "화학 구조의 변화와 체외 제거"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.93f9587bd8eb",
+      "type": "paragraph",
+      "markdown": "약물대사(drug metabolism) 또는 생체변환(biotransformation)은 약물의 화학 구조를 바꾸는 효소 반응이다. 간이 중요한 장소지만 장벽·신장·혈액·폐 등 간 밖에서도 일어날 수 있다. 대사는 원약물의 제거에 기여하면서 대사체(metabolite)를 새로 만든다. 그 대사체가 비활성인지,활성이 있는지,독성에 기여하는지는 별도 질문이다. 대사되었다는 사실을 해독·효과 종료·몸 밖 배출과 모두 같은 사건으로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.6f154a16fc81",
+      "type": "paragraph",
+      "markdown": "배설(excretion)은 원약물 또는 대사체가 소변·담즙 등으로 체외 이동하는 과정이다. 담즙으로 나간 물질이 장에서 다시 흡수되면 체내 노출이 연장될 수 있다. 대사와 수송이 서로 연결되므로 화학반응만 알고 총청소율을 정확히 예측하기는 어렵다. 혈중 원약물 감소와 소변의 특정 대사체 증가는 각각 생성·분포·제거의 여러 과정을 반영한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.5216483f1a77",
+      "type": "heading",
+      "level": 2,
+      "text": "1상과 2상은 반드시 차례로 일어나는 번호가 아니다"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.785bc010d449",
+      "type": "paragraph",
+      "markdown": "1상(phase I) 반응에는 산화·환원·가수분해가 포함된다. 기능기를 새로 만들거나 드러내어 물성을 바꾸기도 한다. Cytochrome P450(CYP)은 여러 산화반응에 중요하지만 모든1상 반응이 CYP로만 진행되지는 않는다. 에스터·아미드 등의 가수분해와 다른 산화·환원효소도 고려해야 한다. CYP 계통을 이야기할 때에는 효소의 이름,세포내 위치와 요구되는 전자 전달을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.35119a830d65",
+      "type": "paragraph",
+      "markdown": "2상(phase II) 반응은 glucuronidation,sulfation,glutathione 결합,acetylation,methylation 등 여러 접합 반응을 포함한다. 원래 기능기를 가진 약물은1상을 거치지 않고 접합될 수 있다. 일부 물질은 한 계열 반응만으로 처리되고,여러 경로가 병렬로 작동하기도 한다. 따라서 두 상을 모든 약물이 반드시 통과하는 일렬의 순서도로 그리지 않는다. 접합이 언제나 수용성을 크게 높이거나 활성을 없앤다는 규칙도 성립하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.5933f0572e3b",
+      "type": "heading",
+      "level": 2,
+      "text": "효소와 보조기질의 구획"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.9e2243033a59",
+      "type": "paragraph",
+      "markdown": "많은 CYP와 UDP-glucuronosyltransferase(UGT)는 소포체와 관련되고,다른 접합 효소들은 세포질 등에 존재한다. CYP는 전자 전달과 산소를 이용하는 반응에 관여하며 UGT는 활성화된 glucuronic acid 공여체를 사용한다. Glutathione S-transferase(GST) 계통은 GSH와 친전자성 물질의 반응에 관여할 수 있다. 효소량만 아니라 보조기질 공급·경쟁·구획과 수송이 실제 유량을 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.7beccc5d41b1",
+      "type": "paragraph",
+      "markdown": "친전자성 중간체가 생성되는 생체활성화(bioactivation)는 원약물보다 반응성이 큰 물질을 만들 수 있다. GSH 결합과 다른 방어 경로는 이를 처리하는 데 기여하지만 방어 능력에는 한계가 있다. 구조적으로 대사 가능하다는 사실만으로 특정 개인에서 독성이 발생한다고 예측하지 않는다. 대사량·해당 조직의 노출·보상 능력과 다른 손상 요인이 함께 관여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.82132d4863f3",
+      "type": "heading",
+      "level": 2,
+      "text": "원약물과 대사체의 시간차"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.c45c264599de",
+      "type": "paragraph",
+      "markdown": "원약물 P가 일차 속도상수 kf로 대사체 M을 만들고 M이 km로 제거되는 단순 모형에서는 dM/dt=kfP−kmM이다. 원약물의 양이 줄어도 생성 유량이 제거 유량보다 크면 대사체 양은 한동안 증가할 수 있다. 최고 농도 시점과 반감기가 서로 다를 수 있는 이유다. 실제로는 다른 원약물 제거 경로와 다중 대사체,구획 이동이 추가되어 더 복잡하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.baf21006a6a5",
+      "type": "paragraph",
+      "markdown": "가상 자료에서 P=100단위,kf=0.2h⁻¹,M=20단위,km=0.5h⁻¹이면 그 순간 생성은20단위/h,제거는10단위/h,순증가는10단위/h다. 이 순간값을 다음 한 시간 동안 일정하다고 자동 가정하지 않는다. P와M이 계속 변하기 때문이다. 물질별 분석법으로 시계열을 측정하면 원약물 감소만으로는 보이지 않는 대사체 노출을 검토할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.dee35f1ee36d",
+      "type": "heading",
+      "level": 2,
+      "text": "유전·생리·노출의 영향"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.a17061c93865",
+      "type": "paragraph",
+      "markdown": "효소와 운반체의 유전적 차이는 일부 약물의 노출에 영향을 줄 수 있으나 유전자형이 모든 약동학을 혼자 결정하지는 않는다. 연령·간과 신장 기능·염증·동반 약물·흡연·식품과 복약 상태도 관여한다. 특정 유전자–약물의 실제 처방 적용에는 해당 조합의 검증된 근거가 필요하다. 효소 이름이 같다는 이유만으로 모든 기질에서 같은 크기의 변화가 생긴다고 보지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.b.c1344d907af4",
+      "type": "paragraph",
+      "markdown": "실험에서 대사가 줄었을 때에는 효소의 직접 억제,발현 감소,보조기질 부족,세포 손상과 수송 변화 등을 나누어 검토한다. 시험관의 효소 활성과 장기 전체 청소율 사이에는 자유 농도·혈류·막 이동이라는 연결 단계가 있다. 본문의 경로도는 대표 화학과 수지를 설명하는 독립 도식이며 특정 약물의 실제 대사 비율·처방량·독성 문턱을 나타내지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.diagram.parent-metabolite-example",
+      "type": "diagram",
+      "diagramRef": "diagram.parent-metabolite-example",
+      "path": "diagrams/diagram.parent-metabolite-example.svg",
+      "alt": "생성과 제거를 분리한 대사체의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.diagram.biotransformation-reaction-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.biotransformation-reaction-pairs",
+      "path": "diagrams/diagram.biotransformation-reaction-pairs.svg",
+      "alt": "변환의 화학과 결과의 단계별 비교"
+    },
+    {
+      "id": "pharmacology.general.metabolism-biotransformation.table.compare",
+      "type": "table",
+      "data": {
+        "title": "변환과 결과",
+        "columns": [
+          "과정",
+          "구별"
+        ],
+        "rows": [
+          [
+            "1상",
+            "산화·환원·가수분해; CYP 외 경로도"
+          ],
+          [
+            "2상",
+            "접합;1상 선행 필수 아님"
+          ],
+          [
+            "활성화",
+            "대사체 활성·독성은 별도"
+          ],
+          [
+            "배설",
+            "체외 이동; 재흡수 가능성 구별"
+          ]
+        ],
+        "notes": "정의와 대표 관계의 비교이며 임상 단일 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/sections/pharmacology.general.metabolism-biotransformation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "대사와 불활성화·배설은 동의어가 아니다."
+  ],
+  "relatedLessons": [
+    "pharmacology.general.metabolism-interactions",
+    "pharmacology.general.bioavailability-first-pass"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.general.metabolism-biotransformation.001",
+    "question.pharmacology.general.metabolism-biotransformation.002"
+  ]
+}

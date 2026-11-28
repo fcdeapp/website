@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.hemodynamics.fibrinolysis-markers",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.hemodynamics.fibrinolysis-markers.b.cc28b41d359f",
+      "sourceSha256": "cc28b41d359f766345a505310a026db7c34fdecd8675f5889c4de04f855f8086",
+      "sourceLengthUtf16": 228,
+      "annotations": [
+        {
+          "id": "ann.1cad92e6a388ad8aac01",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 6,
+            "end": 18,
+            "exact": "fibrinolysis",
+            "prefix": "섬유소용해(",
+            "suffix": ")는 만들어진 fibrin을 분해하는 체계다"
+          },
+          "conceptId": "reader.term.d74688e1467be81c",
+          "targetDocumentId": "hematology.hemostasis.platelet-coagulation"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.fibrinolysis-markers.b.7386ace0214c",
+      "sourceSha256": "7386ace0214c7d4f697d2de82b334a779064a8fbbfdc802685119d632b7a2409",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.fibrinolysis-markers.b.a3b1b9376a16",
+      "sourceSha256": "a3b1b9376a16dd76ea40c85344de6d43eb53d86214eb42c77f513c4287a05df1",
+      "sourceLengthUtf16": 252,
+      "annotations": [
+        {
+          "id": "ann.3b4bce6f5d9aae2bbc9e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 89,
+            "exact": "Plasminogen activator inhibitor-1(PAI-1)은 활성화 단계의 조절에, α2-antiplasmin은 plasmin의 억제에 중요하다.",
+            "prefix": "",
+            "suffix": " 시작 효소를 제한하는 것과 이미 만들어진 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.fibrinolysis-markers.b.9189143bfbda",
+      "sourceSha256": "9189143bfbda57d994baa7f6df2adefdd43fa20284cfa5e4b75fee1ba42e84cb",
+      "sourceLengthUtf16": 159,
+      "annotations": [
+        {
+          "id": "ann.1bf7fe8c565ba44ae6db",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 37,
+            "exact": "응고를 억제하는 약물과 섬유소용해를 직접 촉진하는 치료도 구별한다.",
+            "prefix": "",
+            "suffix": " 항응고가 기존 모든 혈전을 즉시 녹였다는 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.fibrinolysis-markers.b.d603ee6122af",
+      "sourceSha256": "d603ee6122af66e41a3f4749169e4a8c0a1b201fd32dfbbf8842828713865af5",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.fibrinolysis-markers.b.9966a20debb3",
+      "sourceSha256": "9966a20debb34f8dd30241740d7643c646131776006da9519a06d66c6503d335",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.fibrinolysis-markers.b.13e58590c555",
+      "sourceSha256": "13e58590c555864a07fe39bdd455984e8f9b4e2f3b1eaf8f7c298f81d87b25d4",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.fibrinolysis-markers.b.4335ed629f76",
+      "sourceSha256": "4335ed629f76dff8d613d3f236183e7fc5301c0b908f6a84e14f546186310c01",
+      "sourceLengthUtf16": 175,
+      "annotations": [
+        {
+          "id": "ann.14a2aa7d01fc8d5272b7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 81,
+            "end": 130,
+            "exact": "단일 구획·고정 생성·일차 제거라는 가정을 확인하고 시간별 접근과 최종 농도를 구별한다.",
+            "prefix": "의 위치·크기와 치료량을 계산하지 않는다. ",
+            "suffix": " 검사 표지자와 그 원인이 되는 생물학적 과"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

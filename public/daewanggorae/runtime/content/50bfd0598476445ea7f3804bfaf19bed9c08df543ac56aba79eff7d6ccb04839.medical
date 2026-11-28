@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.therapy.antithrombotic-targets",
+  "subjectId": "cardiology",
+  "chapterId": "therapy",
+  "title": {
+    "ko": "항혈소판·항응고 치료의 표적과 위해",
+    "en": "Antithrombotic Targets and Competing Risks"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.lo.01",
+      "text": "혈소판과 응고 경로의 표적을 구별한다"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.lo.02",
+      "text": "약물 활성화·효과 지속의 차이를 설명한다"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.lo.03",
+      "text": "허혈·출혈 위험을 함께 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.8c7ba26e75f1",
+      "type": "heading",
+      "level": 2,
+      "text": "여러 단계가 만드는 혈전"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.869c0c4f4e2f",
+      "type": "paragraph",
+      "markdown": "혈소판의 부착과 활성·응집, 응고계의 thrombin 생성과 fibrin 형성은 서로 연결된다. Aspirin의 COX-1 관련 작용은 thromboxane 계통을 줄이고 P2Y12 억제는 ADP 관련 활성화를 제한한다. GP IIb/IIIa는 활성화된 혈소판 사이의 연결에 관련된다. 이 표적들은 모두 혈소판 기능에 관여하지만 같은 단계와 같은 방식으로 작동하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.8d48dc5f1ec5",
+      "type": "paragraph",
+      "markdown": "Thrombin과 factor Xa 계통을 겨냥하는 항응고 작용은 응고 경로의 다른 축이다. 항혈소판제와 항응고제를 같은 약물의 두 이름으로 취급하지 않는다. Thrombin이 혈소판도 활성화한다는 연결이 있어 두 체계는 독립적이지 않다. 그렇다고 한쪽을 억제하면 다른 모든 단계가 완전히 사라지는 것도 아니다. 치료 효과와 잔여 위험을 구분하여 설명해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.6a5097e363a8",
+      "type": "heading",
+      "level": 2,
+      "text": "결합과 임상 반응 사이"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.f2b2d4b2e211",
+      "type": "paragraph",
+      "markdown": "일부 P2Y12 억제제는 활성 대사물 형성을 거치며 간의 효소와 상호작용, 유전적 차이가 효과에 영향을 줄 수 있다. 직접 작용과 전구약물, 가역성과 비가역성은 구별되는 성질이다. 혈중 약물이 줄어드는 시간과 혈소판 기능이 회복되는 시간이 반드시 같지는 않다. 새로운 혈소판의 공급과 결합 특성이 효과 지속에 관여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.3dfeb38a0b02",
+      "type": "paragraph",
+      "markdown": "신장 기능과 체중·나이, 동반 약물과 시술 계획은 여러 항혈전제의 노출과 위해를 바꿀 수 있다. 같은 계열의 약이라도 대사·배설·결합이 다르므로 일반적인 계열 이름만으로 모든 용량 조정을 정할 수 없다. 실제 투여는 약물별 근거와 허가 정보, 환자 조건을 확인해야 한다. 이 기전 설명은 처방량이나 투여 순서를 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.556bfd1c2e4a",
+      "type": "heading",
+      "level": 2,
+      "text": "출혈도 치료의 결과다"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.20bb86fbf69a",
+      "type": "paragraph",
+      "markdown": "혈전 억제는 허혈성 사건을 줄이는 이득과 출혈의 위해를 함께 가진다. 혈소판 기능이 더 강하게 줄었다는 검사 결과가 언제나 더 좋은 환자 결과를 뜻하지 않는다. 출혈은 빈혈과 저관류, 치료 중단을 통해 이후의 허혈 위험에도 연결될 수 있다. 두 위험은 서로 별개 목록으로만 존재하는 것이 아니라 시간에 따라 상호작용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.308d28eab5df",
+      "type": "paragraph",
+      "markdown": "이전 출혈과 현재 혈색소, 신장 기능과 다른 항응고 적응은 치료 판단의 다른 정보를 준다. 위험 점수는 적용 집단과 예측 기간을 가진 도구이며 환자의 모든 상황을 대체하지 않는다. 관상동맥 스텐트와 부정맥에 대한 항응고 필요가 겹치면 약물 수를 단순히 더하는 방식보다 각 적응과 중복 위해를 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.5019b6cc5918",
+      "type": "heading",
+      "level": 2,
+      "text": "적용 연도와 개별화"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.9ae48abf6a49",
+      "type": "paragraph",
+      "markdown": "2025년 ACS 지침과 2026년 항혈소판 관련 과학적 문서는 항혈전 치료를 허혈·출혈 및 시술 문맥에 연결한다. 기본 전략과 예외 조건을 구별해야 하므로 한 기간을 모든 환자에게 고정하지 않는다. 오래된 처방표의 약물 순서를 새 임상 상황에 자동 적용하지 않는다. 이번 학습에서는 표적·노출·효과와 위해의 관계를 중심으로 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.b.4b68829a4527",
+      "type": "paragraph",
+      "markdown": "환자에게는 약을 임의로 끊거나 중복하지 않도록 목적과 이상반응, 다른 진료과 시술 전 확인의 필요성을 설명한다. 처방 목록의 전달과 실제 복용·출혈 감시·진료 연결은 다른 단계다. 치료의 질은 억제 표적이 많다는 사실보다 올바른 적응과 안전한 지속, 변화하는 위험에 맞는 재평가에서 결정된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.therapy.antithrombotic-targets.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "COX-1 계통",
+            "Thromboxane 관련 혈소판 표적"
+          ],
+          [
+            "P2Y12",
+            "ADP 관련 활성"
+          ],
+          [
+            "Thrombin·Xa",
+            "응고 경로의 표적"
+          ],
+          [
+            "순이득",
+            "허혈 감소와 출혈·부담 통합"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/therapy/sections/cardiology.therapy.antithrombotic-targets.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.therapy.antithrombotic-targets.001"
+  ],
+  "relatedLessons": [
+    "cardiology.ischemia.reperfusion-microcirculation",
+    "cardiology.complications.structural-failure"
+  ]
+}

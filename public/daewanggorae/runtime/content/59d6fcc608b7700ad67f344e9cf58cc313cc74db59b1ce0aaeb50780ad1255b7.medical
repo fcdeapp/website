@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.bundle-branch-wide-qrs",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "각차단과 넓은 QRS 빈맥의 해석",
+    "en": "Bundle Branch Block and Wide Complex Tachycardia"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.lo.01",
+      "text": "전도 지연과 비정상 활성화 경로를 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.lo.02",
+      "text": "넓은 QRS 빈맥의 주요 기전을 비교한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.lo.03",
+      "text": "진단 단서의 양성·음성 의미를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.aa027899e3b7",
+      "type": "heading",
+      "level": 2,
+      "text": "활성화의 경로가 바뀔 때"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.5fdd59d24227",
+      "type": "paragraph",
+      "markdown": "QRS 폭은 심실 전체의 탈분극이 체표 기록에 걸쳐 나타나는 시간적 범위다. 정상 히스–푸르키네계는 여러 부위를 빠르게 활성화하여 전체 시간이 짧다. 한쪽 가지의 전도가 지연되거나 차단되면 반대쪽에서 시작한 활성화가 근육을 따라 늦게 전달되어 폭과 모양이 바뀔 수 있다. 우각차단과 좌각차단은 유도별 초기·말기 벡터의 관계가 다르다. QRS가 넓다는 관찰은 전도와 활성화의 이상을 뜻하지만 발생원이 반드시 심실이라는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.5da75f05042d",
+      "type": "paragraph",
+      "markdown": "넓은 QRS는 각차단 외에도 심실 기원 박동, 부전도로 조기흥분, 심실 조율과 약물 또는 전해질에 의한 전도 지연에서 나타날 수 있다. 안정 시 심전도와 비교하면 새로 생긴 변화인지 기저 소견인지 구별하는 데 도움이 된다. 빠른 속도에서만 생기는 기능적 변행전도(aberrancy)도 가능하다. 주기가 바뀌면서 불응기의 회복 정도가 달라지는 현상이므로 단일 박동의 모양을 고정된 해부학적 손상과 일대일로 연결하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.030080b11a79",
+      "type": "heading",
+      "level": 2,
+      "text": "빈맥에서의 감별"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.463b2f038280",
+      "type": "paragraph",
+      "markdown": "넓은 QRS 빈맥의 주요 감별은 심실빈맥, 변행전도를 동반한 상심실성 빈맥과 조기흥분성 빈맥이다. 관찰할 정보는 규칙성, QRS 형태와 축, 흉부유도의 진행 및 P파와 QRS의 관계다. 이전 경색과 구조적 심장질환, 사용 약물과 기저 심전도는 검사 전 가능성을 바꾼다. 심실빈맥도 혈압이 비교적 유지될 수 있으므로 안정적으로 보인다는 이유만으로 상심실성 기원을 확정해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.07708ff867cc",
+      "type": "paragraph",
+      "markdown": "방실해리, 포획박동(capture beat)과 융합박동(fusion beat)은 심실 기원을 지지하는 중요한 단서다. 포획박동은 적절한 시점에 전달된 상위 자극이 심실을 활성화한 박동이고, 융합박동은 두 활성화가 합쳐진 결과다. 그러나 이런 소견이 짧은 기록에서 관찰되지 않았다고 심실빈맥을 배제하지 못한다. P파가 가려져 있거나 역행성 심방 활성화가 있어 방실 관계가 단순하지 않을 수 있다. 양성 단서의 특이성과 음성 소견의 배제력을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.de765f3300d9",
+      "type": "heading",
+      "level": 2,
+      "text": "형태 판단과 임상 안전"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.f909990bfeeb",
+      "type": "paragraph",
+      "markdown": "여러 형태 판독 기준은 가능한 기전을 좁히는 데 도움이 되지만 모든 환자에서 완벽한 정확도를 갖지는 않는다. 특히 기저 전도 질환과 조율, 약물에 따른 전도 변화가 있으면 적용에 주의한다. 규칙적인 빈맥을 대상으로 만든 기준을 불규칙한 넓은 QRS 빈맥에 그대로 적용하지 않는다. 조기흥분 심방세동, 다형성 심실빈맥과 잡음은 서로 다른 위험과 접근을 요구한다. 가능한 경우 여러 유도의 원 신호를 확보하고 환자의 실제 맥박과 비교한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.5c977f5aa543",
+      "type": "paragraph",
+      "markdown": "저관류, 의식 변화와 급성 심부전이 동반되면 안정화가 진단 알고리즘의 완성보다 우선한다. 반대로 한 번의 심전도 이름만으로 장기 제세동기 적응이나 약물 선택까지 자동 결정하지 않는다. 빈맥의 원인과 재발 위험, 가역 요인 및 심장 구조를 추가로 평가한다. QRS의 폭은 전기적 시간 정보이며, 정상 3D 심실의 모양으로 환자의 전도 지연을 추정하거나 심실빈맥 회로를 직접 표시할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.bundle-branch-wide-qrs.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "각차단",
+            "심실 활성화 경로의 지연"
+          ],
+          [
+            "심실빈맥",
+            "심실 발생원·회귀 등"
+          ],
+          [
+            "SVT+변행",
+            "상위 발생원+심실 전도 변화"
+          ],
+          [
+            "포획·융합",
+            "심실 기원 단서; 부재는 배제 아님"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.bundle-branch-wide-qrs.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.bundle-branch-wide-qrs.001"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.atrioventricular-block",
+    "cardiology.arrhythmias.monomorphic-ventricular-tachycardia"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.assessment.anemia-hemostasis",
+  "subjectId": "general-surgery",
+  "chapterId": "assessment",
+  "title": {
+    "ko": "수술 전 빈혈과 지혈·혈전의 균형",
+    "en": "Preoperative Anemia Hemostasis and Thrombosis"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.lo.01",
+      "text": "빈혈의 원인과 산소 운반을 연결한다"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.lo.02",
+      "text": "혈소판·응고검사의 적용 한계를 설명한다"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.lo.03",
+      "text": "항혈전제 중단·재개의 상충 위험을 분석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.21b126973e5f",
+      "type": "heading",
+      "level": 2,
+      "text": "혈색소가 낮아진 이유를 찾는다"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.471ef8254306",
+      "type": "paragraph",
+      "markdown": "수술 전 빈혈(anemia)은 출혈과 영양 결핍, 염증·신장질환·골수질환 등 여러 원인의 결과일 수 있다. 혈색소 농도와 적혈구 지수·망상적혈구, 철 대사와 필요한 원인 검사를 연결한다. 작은 적혈구라는 소견이 모든 경우 철 결핍을 뜻하지 않고, 정상 크기도 초기 결핍과 복합 원인을 배제하지 않는다. 수술 전에 발견한 빈혈이 수술 후 수혈 가능성을 높일 수 있다는 사실과 수혈이 원인을 치료한다는 주장은 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.58e7e6f00a7a",
+      "type": "paragraph",
+      "markdown": "철 저장과 이용은 염증의 영향을 받는다. 페리틴이 높거나 정상이어도 염증 속 철 이용 제한과 동반 결핍이 존재할 수 있어 다른 지표·출혈 원인과 함께 읽는다. 생식기와 소화관 등 실제 소실 경로를 확인하고 질환의 긴급도에 맞춰 교정 기회를 계획한다. 검사값을 정상화하는 것보다 원인과 기대 반응의 시간, 수술 손실을 고려한 전략이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.7db79982f2c2",
+      "type": "heading",
+      "level": 2,
+      "text": "출혈 성향은 병력에서 시작한다"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.9f5f3c79c680",
+      "type": "paragraph",
+      "markdown": "과거 수술·발치·분만과 외상에서의 출혈, 코피·월경·멍, 가족력과 간·신장질환, 항혈전제·진통제·보충제 사용을 묻는다. 출혈 위치와 양상은 혈소판·혈관과 응고인자 장애를 구별하는 단서지만 완벽히 일치하지는 않는다. 실제 투여 약명과 마지막 복용, 적응증·신장 기능을 확인해야 계획을 세울 수 있다. 환자가 약을 모르면 처방 기록과 약 포장을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.5abc7dac62bb",
+      "type": "paragraph",
+      "markdown": "혈소판 수가 충분해도 기능 장애가 있을 수 있고, 일반 응고시간이 정상이어도 특정 약물 효과와 출혈질환이 배제되는 것은 아니다. 반대로 검사 연장이 항상 임상 출혈의 크기와 비례하지 않는다. 검체 오염과 채혈 조건·간질환·억제인자 등도 해석에 영향을 준다. 검사를 일괄 나열하기보다 병력과 수술의 위해에 따라 선택하고, 설명되지 않는 결과는 시술 전에 의미를 규명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.8b0199afa8d8",
+      "type": "heading",
+      "level": 2,
+      "text": "항혈전 치료에는 두 방향의 위험이 있다"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.f96114b4e60a",
+      "type": "paragraph",
+      "markdown": "항혈소판제와 항응고제는 같은 약물군이 아니다. 관상동맥 스텐트·판막·심방세동·최근 정맥혈전 등 적응증과 사건 시점에 따라 중단의 위험이 달라진다. 출혈의 결과도 수술 부위에 따라 다르다. 적은 출혈이 신경학적 손상을 만들 수 있는 공간과 압박으로 조절 가능한 표재 부위는 같은 기준으로 다루지 않는다. 약물의 반감기뿐 아니라 제거 기능·상호작용·지혈과 재개 조건을 함께 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.e84d4976b2c5",
+      "type": "paragraph",
+      "markdown": "가교 항응고(bridging)는 중단 중의 혈전 위험을 줄이려는 목적이 있지만 출혈을 증가시킬 수 있어 모든 환자에게 유리한 것은 아니다. 약물 종류와 적응증·최근 사건, 수술과 신경축 시술 여부에 따라 전문적인 계획이 필요하다. 중단 날짜만 기록하고 재개와 누가 확인할지를 남기지 않으면 위험한 공백이 생길 수 있다. 환자에게는 계획과 변경 시 연락할 경로를 이해하기 쉬운 말로 전달한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.c8dea84358ba",
+      "type": "heading",
+      "level": 2,
+      "text": "수혈과 원인 조절"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.51e4cc124aa9",
+      "type": "paragraph",
+      "markdown": "적혈구 수혈은 산소 운반 능력을 늘릴 수 있지만 면역·체액과 수혈 관련 위해가 있다. 안정 환자의 수치 판단과 진행 중 대량 출혈·저관류에서의 판단은 다르다. 급성 출혈 직후에는 혈액과 혈장이 함께 소실되어 혈색소 농도의 변화가 실제 손실을 즉시 반영하지 않을 수 있다. 혈압·의식·말초 관류·혈류와 지속 출혈을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.6b9899532625",
+      "type": "paragraph",
+      "markdown": "혈액 성분의 공급은 출혈 원인 통제와 분리할 수 없다. 지속적으로 새는 혈관을 해결하지 않은 채 검사값만 교정하면 손실과 희석·저체온·산증이 악순환을 이룰 수 있다. 산소 운반, 혈소판·응고와 체온·칼슘·대사를 통합하되 실제 수혈 기준과 용량은 환자의 상황과 정해진 임상 경로에 따른다. 빈혈, 출혈 성향, 혈전 예방을 같은 수치 한 개로 해결하려 하지 않는 것이 수술 전후 지혈 관리의 출발점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.1ddda9ee4080",
+      "type": "heading",
+      "level": 2,
+      "text": "농도와 실제 순환량"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.32eb6f1d477a",
+      "type": "paragraph",
+      "markdown": "혈색소 12g/dL, 포화도 0.98에서 결합 산소함량을 1.34×혈색소×포화도로 근사하면 약 15.76mL/dL다. 혈색소가 8g/dL라면 같은 조건에서 약 10.51mL/dL로 줄어든다. 심박출량 5L/min을 고정하면 이 성분의 전달은 약 788과 525mL/min이다. 용해 산소와 실제 보상·추출은 이 계산에서 생략했다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.b.e5d7d65ded6a",
+      "type": "paragraph",
+      "markdown": "포화도가 유지되어도 결합 자리가 줄면 운반량이 달라진다는 점이 핵심이다. 실제 수혈 결정은 출혈·증상·허혈과 순환 및 임상 근거를 통합한다. 모형에서 계산한 전달량을 모든 환자의 수혈 기준이나 조직 산소화의 직접 측정값으로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.table0847",
+      "type": "table",
+      "data": {
+        "title": "구조·생리·근거와 관리의 연결",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "빈혈",
+            "원인·기간·예상 손실"
+          ],
+          [
+            "지혈",
+            "병력·약물·검사 범위"
+          ],
+          [
+            "혈전",
+            "적응증·최근 사건과 중단 위험"
+          ],
+          [
+            "인계",
+            "중단·재개·확인 담당"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "general-surgery.assessment.anemia-hemostasis.diagram.hemoglobin-oxygen-delivery-0847",
+      "type": "diagram",
+      "diagramRef": "diagram.hemoglobin-oxygen-delivery-0847",
+      "path": "diagrams/diagram.hemoglobin-oxygen-delivery-0847.svg",
+      "alt": "혈색소와 결합 산소 전달의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/assessment/sections/general-surgery.assessment.anemia-hemostasis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.assessment.anemia-hemostasis.001",
+    "question.general-surgery.assessment.anemia-hemostasis.002"
+  ],
+  "relatedLessons": [
+    "general-surgery.assessment.frailty-nutrition",
+    "general-surgery.physiology.stress-metabolism"
+  ]
+}

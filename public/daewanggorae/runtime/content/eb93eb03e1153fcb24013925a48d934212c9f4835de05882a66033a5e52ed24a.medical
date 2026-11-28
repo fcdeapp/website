@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.carbohydrate.fructose-galactose",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.ad0d31e991c0",
+      "sourceSha256": "ad0d31e991c068ef84d8109b183bc7ac2be9a5eebcb9e49be8e4a1fcb3700810",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.71f082d4f153",
+      "sourceSha256": "71f082d4f1531b24ad7f518989897327f4e5841f2f9c0a7729acf7074f3c1e50",
+      "sourceLengthUtf16": 274,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.07b14972480f",
+      "sourceSha256": "07b14972480f43be38cdc779ced9420894610552df8d8087b52d00128e290333",
+      "sourceLengthUtf16": 237,
+      "annotations": [
+        {
+          "id": "ann.9c23132226c4533c5e14",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 197,
+            "end": 237,
+            "exact": "반응 진입점의 차이는 중요한 기전이며 실제 영양 효과 전체와는 구별한다.",
+            "prefix": "경로 그림만으로 동일하게 해석하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.9afcaa3ac54a",
+      "sourceSha256": "9afcaa3ac54a3d87fa66c17673419cdde6f16aabd351d00b2158e5260c1a705e",
+      "sourceLengthUtf16": 244,
+      "annotations": [
+        {
+          "id": "ann.d7c207d1307ef3e91897",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 114,
+            "end": 118,
+            "exact": "글리코젠",
+            "prefix": "묶이고 ATP 회복에 부담을 줄 수 있다. ",
+            "suffix": " 분해에는 무기인산을 사용하는 반응이 포함되"
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        },
+        {
+          "id": "ann.2eb3ee71069eb02d1bed",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 149,
+            "exact": "포도당신생",
+            "prefix": "해에는 무기인산을 사용하는 반응이 포함되고 ",
+            "suffix": "에도 에너지가 필요하므로, 당을 섭취했는데도"
+          },
+          "conceptId": "reader.term.f6becb3579af9222",
+          "targetDocumentId": "biochemistry.carbohydrate.gluconeogenesis"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.37179b33a040",
+      "sourceSha256": "37179b33a040cbdf222e573deed2012dcc869067d85b86b33c7fd6fd98286ef0",
+      "sourceLengthUtf16": 223,
+      "annotations": [
+        {
+          "id": "ann.ecd3f5fb41a8078b0e8f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 49,
+            "exact": "과당이 포함된 식품뿐 아니라 과당으로 이어지는 자당·소르비톨의 관계도 병력에서 중요하다.",
+            "prefix": "",
+            "suffix": " 반면 프룩토키네이스 결핍의 본태성 과당뇨는"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.0aded0714e30",
+      "sourceSha256": "0aded0714e30152d63c51b3b1a9a6076b1d27e52fac1ea1ce74af0681a58599f",
+      "sourceLengthUtf16": 271,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.c0051390af80",
+      "sourceSha256": "c0051390af80bee5b280e9c7c0d20024adf5244dc4149ac930bf6412bdf6f398",
+      "sourceLengthUtf16": 249,
+      "annotations": [
+        {
+          "id": "ann.5cea820a2891baf533b7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 59,
+            "exact": "GALT 기능 저하가 있는 고전적 갈락토스혈증에서는 유해 대사물 축적과 여러 장기의 기능 이상이 중요하다.",
+            "prefix": "",
+            "suffix": " 갈락토키네이스 결핍과 GALE 관련 이상은"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.bd3a485e3650",
+      "sourceSha256": "bd3a485e3650498194af35d36ad20c8395bb86ae34387233273fdfa808d4c559",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.0ddb7338a4d1",
+      "sourceSha256": "0ddb7338a4d1de8fd6a69cf2f96401abd33142833578a48e2719432a53b2ffff",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.carbohydrate.fructose-galactose.b.5936f6f1d7da",
+      "sourceSha256": "5936f6f1d7da1047290e6de34c6defabc8b7d5abb8ce340b62677e792b5aad5f",
+      "sourceLengthUtf16": 260,
+      "annotations": []
+    }
+  ]
+}

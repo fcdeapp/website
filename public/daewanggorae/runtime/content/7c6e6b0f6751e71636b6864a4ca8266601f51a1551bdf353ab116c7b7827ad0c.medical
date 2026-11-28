@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.complexes.clearance-deposition",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.complexes.clearance-deposition.b.71a90b87b9f5",
+      "sourceSha256": "71a90b87b9f52b9731b50ffa1f6bcce300f26a1f7c1da86015ea568f43551b2f",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.complexes.clearance-deposition.b.38d69eb25f2d",
+      "sourceSha256": "38d69eb25f2ddd312adf90ab2d0e0bf9d25069483b3a10a0bf623f0bfffa2760",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.complexes.clearance-deposition.b.c5f78a604c09",
+      "sourceSha256": "c5f78a604c09f8ea334c5e8ac1a8482959e7496d7ad71ae20cab0eab2197c8a9",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.a6f48dd2981e9aa5fcca",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 12,
+            "end": 14,
+            "exact": "보체",
+            "prefix": "C1q 등으로 시작한 ",
+            "suffix": " 활성은 복합체에 C4b·C3b 등의 표지를"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        },
+        {
+          "id": "ann.554b196f800407cbc800",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 134,
+            "end": 182,
+            "exact": "운반한 복합체는 대식세포 등에서 처리되며 운반과 분해를 다른 세포의 기능으로 구별한다.",
+            "prefix": "가 복합체를 삼켜 분해한다는 뜻은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.complexes.clearance-deposition.b.71197730f414",
+      "sourceSha256": "71197730f4149c5863b9f4789fcc931bc581b9b295b09de60f3985aeb221413d",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.complexes.clearance-deposition.b.1cab5e532170",
+      "sourceSha256": "1cab5e5321707de6876e28a07898d60fa246e97b7d8ba95aeca9c1b55366875d",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.complexes.clearance-deposition.b.c1652f8805eb",
+      "sourceSha256": "c1652f8805ebfc1e906456d72b9c4101063383a5cbdcb0356b6407b6e2b8afe5",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.complexes.clearance-deposition.b.5964166e52d0",
+      "sourceSha256": "5964166e52d040f3b1f8fa6f7c7ce2d9f7019de935bfe92db4334ada638f3841",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.complexes.clearance-deposition.b.836ddb5227a0",
+      "sourceSha256": "836ddb5227a0b534c2d52f1b7ace82285f0338655d5b21803022f54bd1138b99",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    }
+  ]
+}

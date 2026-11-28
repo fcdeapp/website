@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.inflammation.systemic-acute-phase",
+  "subjectId": "pathology",
+  "chapterId": "inflammation",
+  "title": {
+    "ko": "급성기 반응과 염증검사의 시간 해석",
+    "en": "Acute Phase Response and Inflammatory Marker Kinetics"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.lo.01",
+      "text": "급성기 단백질의 양성·음성 반응을 설명한다"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.lo.02",
+      "text": "농도와 합성률을 구별한다"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.lo.03",
+      "text": "CRP·ESR·ferritin의 차이를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.fbe6777a03d3",
+      "type": "heading",
+      "level": 2,
+      "text": "국소 반응이 간과 체온 조절로 이어진다"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.10035ababa08",
+      "type": "paragraph",
+      "markdown": "국소에서 만들어진 IL-1, IL-6와 TNF 등은 간의 단백질 합성과 중추 체온 조절, 골수와 대사에 영향을 줄 수 있다. 발열은 체온이 우연히 높아진 현상과 달리 체온 조절의 설정 변화가 관여하는 반응이다. PGE2를 포함한 신호가 이 과정에 참여한다. 그러나 환자의 체온은 약물, 연령과 측정 조건의 영향을 받으므로 발열 부재가 염증 부재를 의미하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.6fe3dc365ca4",
+      "type": "paragraph",
+      "markdown": "급성기 반응(acute phase response)은 여러 단백질의 생성과 혈중 농도를 바꾼다. CRP, serum amyloid A, fibrinogen, ferritin과 hepcidin은 증가할 수 있는 양성 급성기 반응물이고, albumin과 transferrin은 감소할 수 있는 음성 반응물이다. 양성과 음성은 유익성과 유해성의 구분이 아니라 염증 중 농도 변화의 방향이다. 영양평가에서도 이러한 변화가 수치의 의미를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.ee91e11bf562",
+      "type": "heading",
+      "level": 2,
+      "text": "농도는 합성과 제거의 결과다"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.cf1532e03a3c",
+      "type": "paragraph",
+      "markdown": "단순한 일정 부피 모형에서 표지자 농도 C는 dC/dt=P−kC로 표현할 수 있다. P는 단위시간의 농도 증가에 해당하는 생성 항이고 k는 1/시간 단위의 제거상수다. 생성이 멈춰도 이미 존재하던 표지자는 즉시 없어지지 않으며 C(t)=C0 exp(−kt)로 감소한다. 이 식은 독립적인 수지 모형이며 모든 염증표지의 생체동역학이 동일하다는 가정은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.e6b6b6b4413c",
+      "type": "paragraph",
+      "markdown": "어제보다 농도가 낮아졌다는 관찰은 생성과 제거의 균형이 바뀌었음을 보여 주지만 원인 자극이 완전히 사라졌다는 증거는 아니다. 일부 생성이 계속되어도 제거가 더 크면 농도는 떨어진다. 채혈 간격과 치료·수액·장기 기능의 변화도 함께 기록한다. 서로 다른 검사실이나 단위를 비교할 때는 측정법의 차이가 임상 변화처럼 보이지 않는지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.fcbdfe4d691b",
+      "type": "heading",
+      "level": 2,
+      "text": "CRP와 ESR은 같은 검사가 아니다"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.06031721ef9e",
+      "type": "paragraph",
+      "markdown": "CRP는 혈중 단백질 농도를 측정하지만 ESR은 적혈구가 정해진 조건에서 침강하는 물리적 현상을 측정한다. Fibrinogen과 면역글로불린 등에 의한 적혈구 응집, 적혈구 수와 모양이 ESR에 영향을 준다. 따라서 빈혈이나 비정상 적혈구 형태가 있으면 같은 염증 정도에서도 결과가 달라질 수 있다. ESR과 CRP가 다르다고 어느 한 검사가 반드시 틀렸다고 볼 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.7d7f135f2f50",
+      "type": "paragraph",
+      "markdown": "CRP는 감염 외에도 조직 손상과 여러 염증 질환에서 증가한다. 높은 값 하나로 세균성 감염을 확정하거나 낮은 초기 값만으로 감염을 배제하지 않는다. 검사 전 확률, 증상 발생 후 시간과 병변의 국소화가 해석에 필요하다. Procalcitonin 역시 특정 임상 맥락에서 보조 자료가 될 수 있지만 장기 기능·비감염성 자극 등 영향을 받으며 모든 감염에 동일한 단일 판정법을 제공하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.8c85b5c7ad62",
+      "type": "heading",
+      "level": 2,
+      "text": "철과 단백질의 재분포"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.d21471f2e02a",
+      "type": "paragraph",
+      "markdown": "Hepcidin 증가는 ferroportin을 통한 철의 이동을 억제하여 장 흡수와 저장세포의 철 방출을 제한하는 방향으로 작용한다. 혈중 철이 낮아도 저장 철이 모두 고갈된 것과는 다른 기전일 수 있다. Ferritin이 염증 중 상승할 수 있으므로 높은 ferritin 하나로 모든 철 결핍 가능성을 지우지 않는다. 혈액검사와 철 운반·저장 지표, 염증 상태를 통합한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.b.75db8cce051e",
+      "type": "paragraph",
+      "markdown": "Albumin 저하는 합성 변화뿐 아니라 분포, 누출과 소실의 영향을 받는다. 단기간의 낮은 albumin을 음식 섭취량의 직접적인 기록으로 해석하면 오류가 생긴다. 반대로 염증의 영향이 있다는 이유로 영양불량을 평가하지 않아도 되는 것은 아니다. 생성·제거·분포와 기능을 나누어 해석하면 여러 검사 결과를 하나의 원인으로 성급하게 환원하지 않게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.table.0822",
+      "type": "table",
+      "data": {
+        "title": "핵심 과정의 비교",
+        "columns": [
+          "과정·지표",
+          "의미"
+        ],
+        "rows": [
+          [
+            "CRP",
+            "단백질 농도; 원인에 비특이적"
+          ],
+          [
+            "ESR",
+            "적혈구 침강; 단백질·적혈구 상태의 영향"
+          ],
+          [
+            "Ferritin",
+            "저장과 염증의 영향을 함께 받음"
+          ],
+          [
+            "Albumin",
+            "합성·분포·누출·소실을 함께 고려"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pathology.inflammation.systemic-acute-phase.diagram.inflammation-marker-decay-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.inflammation-marker-decay-toy",
+      "path": "diagrams/diagram.inflammation-marker-decay-toy.svg",
+      "alt": "생성 중단 뒤 다른 제거 속도의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/sections/pathology.inflammation.systemic-acute-phase.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.inflammation.systemic-acute-phase.001",
+    "question.pathology.inflammation.systemic-acute-phase.002"
+  ],
+  "relatedLessons": [
+    "pathology.inflammation.acute-morphology",
+    "pathology.inflammation.resolution-efferocytosis"
+  ]
+}

@@ -1,0 +1,4331 @@
+{
+  "schemaVersion": "1.0.0",
+  "documents": [
+    {
+      "documentId": "anatomy.thorax.heart",
+      "path": "reader/annotations/anatomy.thorax.heart.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "biochemistry.enzymes.kinetics",
+      "path": "reader/annotations/biochemistry.enzymes.kinetics.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "biochemistry.metabolism.tca",
+      "path": "reader/annotations/biochemistry.metabolism.tca.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "biostatistics.diagnosis.bayes",
+      "path": "reader/annotations/biostatistics.diagnosis.bayes.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "clinical-reasoning.diagnosis.problem-representation",
+      "path": "reader/annotations/clinical-reasoning.diagnosis.problem-representation.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "colorectal-surgery.appendix.appendicitis",
+      "path": "reader/annotations/colorectal-surgery.appendix.appendicitis.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "critical-care.shock.hemodynamics",
+      "path": "reader/annotations/critical-care.shock.hemodynamics.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "electrolytes.acid-base.interpretation",
+      "path": "reader/annotations/electrolytes.acid-base.interpretation.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "embryology.early.germ-layers",
+      "path": "reader/annotations/embryology.early.germ-layers.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "endocrinology.diabetes.foundations",
+      "path": "reader/annotations/endocrinology.diabetes.foundations.json",
+      "highlights": 3,
+      "links": 4
+    },
+    {
+      "documentId": "endocrinology.pituitary.feedback",
+      "path": "reader/annotations/endocrinology.pituitary.feedback.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "hematology.anemia.reticulocytes",
+      "path": "reader/annotations/hematology.anemia.reticulocytes.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "histology.epithelium.polarity",
+      "path": "reader/annotations/histology.epithelium.polarity.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "history-taking.interview.structure",
+      "path": "reader/annotations/history-taking.interview.structure.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.antigen.presentation",
+      "path": "reader/annotations/immunology.antigen.presentation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "infectious-diseases.antibiotics.stewardship",
+      "path": "reader/annotations/infectious-diseases.antibiotics.stewardship.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "medical-ethics.consent.shared-decisions",
+      "path": "reader/annotations/medical-ethics.consent.shared-decisions.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "neonatology.transition.circulation",
+      "path": "reader/annotations/neonatology.transition.circulation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "nephrology.ckd.evaluation",
+      "path": "reader/annotations/nephrology.ckd.evaluation.json",
+      "highlights": 3,
+      "links": 4
+    },
+    {
+      "documentId": "neurology.localization.stroke",
+      "path": "reader/annotations/neurology.localization.stroke.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "obstetrics.pregnancy.physiology",
+      "path": "reader/annotations/obstetrics.pregnancy.physiology.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.cell.injury-death",
+      "path": "reader/annotations/pathology.cell.injury-death.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "patient-safety.systems.handover",
+      "path": "reader/annotations/patient-safety.systems.handover.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pediatrics.growth.assessment",
+      "path": "reader/annotations/pediatrics.growth.assessment.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pharmacology.general.pharmacokinetics",
+      "path": "reader/annotations/pharmacology.general.pharmacokinetics.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "physiology.cardiovascular.cardiac-cycle",
+      "path": "reader/annotations/physiology.cardiovascular.cardiac-cycle.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.cell.membrane-potential",
+      "path": "reader/annotations/physiology.cell.membrane-potential.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.renal.filtration",
+      "path": "reader/annotations/physiology.renal.filtration.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.renal.raas",
+      "path": "reader/annotations/physiology.renal.raas.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "physiology.respiratory.ventilation-perfusion",
+      "path": "reader/annotations/physiology.respiratory.ventilation-perfusion.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "bacteriology.structure.cell-envelope",
+      "path": "reader/annotations/bacteriology.structure.cell-envelope.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "virology.replication.host-cell",
+      "path": "reader/annotations/virology.replication.host-cell.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "genetics.inheritance.variant-interpretation",
+      "path": "reader/annotations/genetics.inheritance.variant-interpretation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cell-biology.signaling.receptors",
+      "path": "reader/annotations/cell-biology.signaling.receptors.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "laboratory-medicine.quality.preanalytics",
+      "path": "reader/annotations/laboratory-medicine.quality.preanalytics.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.wound.healing",
+      "path": "reader/annotations/general-surgery.wound.healing.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "neuroanatomy.spinal-cord.tracts",
+      "path": "reader/annotations/neuroanatomy.spinal-cord.tracts.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.inflammation.acute-chronic",
+      "path": "reader/annotations/pathology.inflammation.acute-chronic.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "endocrinology.thyroid.hormone-synthesis",
+      "path": "reader/annotations/endocrinology.thyroid.hormone-synthesis.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "hematology.hemostasis.platelet-coagulation",
+      "path": "reader/annotations/hematology.hemostasis.platelet-coagulation.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "molecular-biology.genome.replication-repair",
+      "path": "reader/annotations/molecular-biology.genome.replication-repair.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "biochemistry.lipids.lipoproteins",
+      "path": "reader/annotations/biochemistry.lipids.lipoproteins.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.assessment.mental-status",
+      "path": "reader/annotations/psychiatry.assessment.mental-status.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "dermatology.morphology.lesion-description",
+      "path": "reader/annotations/dermatology.morphology.lesion-description.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "orthopedics.fracture.healing-stability",
+      "path": "reader/annotations/orthopedics.fracture.healing-stability.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "urology.bladder.storage-voiding",
+      "path": "reader/annotations/urology.bladder.storage-voiding.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "ophthalmology.vision.optics-pathway",
+      "path": "reader/annotations/ophthalmology.vision.optics-pathway.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "otolaryngology.hearing.conduction",
+      "path": "reader/annotations/otolaryngology.hearing.conduction.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.heart-failure.syndrome",
+      "path": "reader/annotations/cardiology.heart-failure.syndrome.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pulmonology.airways.asthma-mechanisms",
+      "path": "reader/annotations/pulmonology.airways.asthma-mechanisms.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "hepatology.cirrhosis.portal-hypertension",
+      "path": "reader/annotations/hepatology.cirrhosis.portal-hypertension.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "rheumatology.joints.inflammatory-patterns",
+      "path": "reader/annotations/rheumatology.joints.inflammatory-patterns.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "physiology.renal.segmental-transport",
+      "path": "reader/annotations/physiology.renal.segmental-transport.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "physiology.renal.urine-concentration",
+      "path": "reader/annotations/physiology.renal.urine-concentration.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "biochemistry.carbohydrate.glycolysis",
+      "path": "reader/annotations/biochemistry.carbohydrate.glycolysis.json",
+      "highlights": 1,
+      "links": 3
+    },
+    {
+      "documentId": "biochemistry.carbohydrate.gluconeogenesis",
+      "path": "reader/annotations/biochemistry.carbohydrate.gluconeogenesis.json",
+      "highlights": 2,
+      "links": 3
+    },
+    {
+      "documentId": "biochemistry.bioenergetics.oxidative-phosphorylation",
+      "path": "reader/annotations/biochemistry.bioenergetics.oxidative-phosphorylation.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.innate.complement",
+      "path": "reader/annotations/immunology.innate.complement.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroscience.synapse.transmission",
+      "path": "reader/annotations/neuroscience.synapse.transmission.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "biochemistry.carbohydrate.glycogen",
+      "path": "reader/annotations/biochemistry.carbohydrate.glycogen.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "physiology.renal.potassium",
+      "path": "reader/annotations/physiology.renal.potassium.json",
+      "highlights": 3,
+      "links": 5
+    },
+    {
+      "documentId": "pharmacology.autonomic.receptors",
+      "path": "reader/annotations/pharmacology.autonomic.receptors.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "systemic-pathology.kidney.glomerular-patterns",
+      "path": "reader/annotations/systemic-pathology.kidney.glomerular-patterns.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "immunology.humoral.germinal-center",
+      "path": "reader/annotations/immunology.humoral.germinal-center.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.neoplasia.growth-control",
+      "path": "reader/annotations/pathology.neoplasia.growth-control.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "systemic-pharmacology.antimicrobials.beta-lactams",
+      "path": "reader/annotations/systemic-pharmacology.antimicrobials.beta-lactams.json",
+      "highlights": 3,
+      "links": 4
+    },
+    {
+      "documentId": "immunology.hypersensitivity.mechanisms",
+      "path": "reader/annotations/immunology.hypersensitivity.mechanisms.json",
+      "highlights": 2,
+      "links": 3
+    },
+    {
+      "documentId": "physiology.endocrine.calcium-phosphate",
+      "path": "reader/annotations/physiology.endocrine.calcium-phosphate.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "physiology.muscle.excitation-contraction",
+      "path": "reader/annotations/physiology.muscle.excitation-contraction.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "toxicology.principles.exposure-and-toxidromes",
+      "path": "reader/annotations/toxicology.principles.exposure-and-toxidromes.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "mycology.foundations.host-and-fungus",
+      "path": "reader/annotations/mycology.foundations.host-and-fungus.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "parasitology.malaria.life-cycle",
+      "path": "reader/annotations/parasitology.malaria.life-cycle.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "internal-medicine.diagnosis.probability",
+      "path": "reader/annotations/internal-medicine.diagnosis.probability.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "gastroenterology.digestion.malabsorption",
+      "path": "reader/annotations/gastroenterology.digestion.malabsorption.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "oncology.principles.staging-and-response",
+      "path": "reader/annotations/oncology.principles.staging-and-response.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "emergency-medicine.resuscitation.oxygen-delivery",
+      "path": "reader/annotations/emergency-medicine.resuscitation.oxygen-delivery.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "anesthesiology.regional.local-anesthetic",
+      "path": "reader/annotations/anesthesiology.regional.local-anesthetic.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "trauma-surgery.resuscitation.hemorrhagic-shock",
+      "path": "reader/annotations/trauma-surgery.resuscitation.hemorrhagic-shock.json",
+      "highlights": 1,
+      "links": 4
+    },
+    {
+      "documentId": "histology.liver.microcirculation",
+      "path": "reader/annotations/histology.liver.microcirculation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "embryology.cardiovascular.septation",
+      "path": "reader/annotations/embryology.cardiovascular.septation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "radiology.mri.signal-and-diffusion",
+      "path": "reader/annotations/radiology.mri.signal-and-diffusion.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "reproductive-medicine.ovarian-cycle.feedback",
+      "path": "reader/annotations/reproductive-medicine.ovarian-cycle.feedback.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "neonatology.bilirubin.production-and-clearance",
+      "path": "reader/annotations/neonatology.bilirubin.production-and-clearance.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "geriatrics.cognition.delirium",
+      "path": "reader/annotations/geriatrics.cognition.delirium.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "biostatistics.inference.uncertainty",
+      "path": "reader/annotations/biostatistics.inference.uncertainty.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "epidemiology.causal-inference.bias-confounding",
+      "path": "reader/annotations/epidemiology.causal-inference.bias-confounding.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "evidence-based-medicine.effects.absolute-relative",
+      "path": "reader/annotations/evidence-based-medicine.effects.absolute-relative.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "transfusion-medicine.compatibility.components-reactions",
+      "path": "reader/annotations/transfusion-medicine.compatibility.components-reactions.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "clinical-nutrition.metabolism.starvation-refeeding",
+      "path": "reader/annotations/clinical-nutrition.metabolism.starvation-refeeding.json",
+      "highlights": 1,
+      "links": 4
+    },
+    {
+      "documentId": "rehabilitation.motor-control.weakness-and-tone",
+      "path": "reader/annotations/rehabilitation.motor-control.weakness-and-tone.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "biochemistry.amino-acids.urea-cycle",
+      "path": "reader/annotations/biochemistry.amino-acids.urea-cycle.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "physiology.respiratory.control-of-breathing",
+      "path": "reader/annotations/physiology.respiratory.control-of-breathing.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "imaging-anatomy.cross-sectional.orientation",
+      "path": "reader/annotations/imaging-anatomy.cross-sectional.orientation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "gynecology.bleeding.abnormal-uterine-bleeding",
+      "path": "reader/annotations/gynecology.bleeding.abnormal-uterine-bleeding.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.perioperative.wound-healing",
+      "path": "reader/annotations/general-surgery.perioperative.wound-healing.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "family-medicine.prevention.health-screening",
+      "path": "reader/annotations/family-medicine.prevention.health-screening.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.perioperative.surgical-infection",
+      "path": "reader/annotations/general-surgery.perioperative.surgical-infection.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "gynecology.endometrium.hyperplasia",
+      "path": "reader/annotations/gynecology.endometrium.hyperplasia.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "family-medicine.prevention.counseling",
+      "path": "reader/annotations/family-medicine.prevention.counseling.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "transplant-surgery.immunology.rejection",
+      "path": "reader/annotations/transplant-surgery.immunology.rejection.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "vascular-surgery.arterial.lower-limb-ischemia",
+      "path": "reader/annotations/vascular-surgery.arterial.lower-limb-ischemia.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "breast-surgery.assessment.breast-mass",
+      "path": "reader/annotations/breast-surgery.assessment.breast-mass.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "radiation-oncology.principles.radiobiology",
+      "path": "reader/annotations/radiation-oncology.principles.radiobiology.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "nuclear-medicine.imaging.tracer-kinetics",
+      "path": "reader/annotations/nuclear-medicine.imaging.tracer-kinetics.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "diagnostic-pathology.specimen.interpretation",
+      "path": "reader/annotations/diagnostic-pathology.specimen.interpretation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "palliative-care.principles.symptom-and-goals",
+      "path": "reader/annotations/palliative-care.principles.symptom-and-goals.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "research-ethics.human-subjects.consent",
+      "path": "reader/annotations/research-ethics.human-subjects.consent.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "medical-informatics.clinical-data.decision-support",
+      "path": "reader/annotations/medical-informatics.clinical-data.decision-support.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "research-methods.design.question-and-estimand",
+      "path": "reader/annotations/research-methods.design.question-and-estimand.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "physical-examination.cardiovascular.venous-pulse",
+      "path": "reader/annotations/physical-examination.cardiovascular.venous-pulse.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "clinical-communication.consultation.shared-decisions",
+      "path": "reader/annotations/clinical-communication.consultation.shared-decisions.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "procedures.safety.aseptic-injection",
+      "path": "reader/annotations/procedures.safety.aseptic-injection.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "symptom-differential.respiratory.dyspnea",
+      "path": "reader/annotations/symptom-differential.respiratory.dyspnea.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "allergy.emergencies.anaphylaxis",
+      "path": "reader/annotations/allergy.emergencies.anaphylaxis.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "endocrine-surgery.thyroid.recurrent-laryngeal-nerve",
+      "path": "reader/annotations/endocrine-surgery.thyroid.recurrent-laryngeal-nerve.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "hpb-surgery.biliary.obstructive-jaundice",
+      "path": "reader/annotations/hpb-surgery.biliary.obstructive-jaundice.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "occupational-medicine.exposure.work-history",
+      "path": "reader/annotations/occupational-medicine.exposure.work-history.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.obstruction.mechanical-ileus",
+      "path": "reader/annotations/gi-surgery.obstruction.mechanical-ileus.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "neurosurgery.physiology.intracranial-pressure",
+      "path": "reader/annotations/neurosurgery.physiology.intracranial-pressure.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pediatric-surgery.intestine.intussusception",
+      "path": "reader/annotations/pediatric-surgery.intestine.intussusception.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "environmental-health.risk.exposure-dose-response",
+      "path": "reader/annotations/environmental-health.risk.exposure-dose-response.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "health-management.financing.pooling-and-purchasing",
+      "path": "reader/annotations/health-management.financing.pooling-and-purchasing.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "health-economics.evaluation.cost-effectiveness",
+      "path": "reader/annotations/health-economics.evaluation.cost-effectiveness.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "plastic-surgery.reconstruction.graft-and-flap",
+      "path": "reader/annotations/plastic-surgery.reconstruction.graft-and-flap.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "thoracic-surgery.pleura.pneumothorax",
+      "path": "reader/annotations/thoracic-surgery.pleura.pneumothorax.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "forensic-medicine.postmortem.changes",
+      "path": "reader/annotations/forensic-medicine.postmortem.changes.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "community-medicine.population.health-needs",
+      "path": "reader/annotations/community-medicine.population.health-needs.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "industrial-health.physical.noise",
+      "path": "reader/annotations/industrial-health.physical.noise.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "preventive-medicine.prevention.levels-and-strategies",
+      "path": "reader/annotations/preventive-medicine.prevention.levels-and-strategies.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cpx.consultation.integrated-assessment",
+      "path": "reader/annotations/cpx.consultation.integrated-assessment.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "medical-humanities.illness.experience-and-narrative",
+      "path": "reader/annotations/medical-humanities.illness.experience-and-narrative.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "medical-law.consent.disclosure",
+      "path": "reader/annotations/medical-law.consent.disclosure.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "osce.performance.safe-structured-examination",
+      "path": "reader/annotations/osce.performance.safe-structured-examination.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "clerkships.practice.problem-list-and-handover",
+      "path": "reader/annotations/clerkships.practice.problem-list-and-handover.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.ischemia.acute-coronary-syndrome",
+      "path": "reader/annotations/cardiology.ischemia.acute-coronary-syndrome.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "pulmonology.obstruction.copd",
+      "path": "reader/annotations/pulmonology.obstruction.copd.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "biochemistry.nucleotides.purine-pyrimidine",
+      "path": "reader/annotations/biochemistry.nucleotides.purine-pyrimidine.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "nephrology.acute.aki",
+      "path": "reader/annotations/nephrology.acute.aki.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "endocrinology.diabetes.hyperglycemic-emergencies",
+      "path": "reader/annotations/endocrinology.diabetes.hyperglycemic-emergencies.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pharmacology.general.pharmacodynamics",
+      "path": "reader/annotations/pharmacology.general.pharmacodynamics.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "electrolytes.acid-base.systematic-analysis",
+      "path": "reader/annotations/electrolytes.acid-base.systematic-analysis.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "electrolytes.water.sodium-disorders",
+      "path": "reader/annotations/electrolytes.water.sodium-disorders.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "electrolytes.potassium.distribution-excretion",
+      "path": "reader/annotations/electrolytes.potassium.distribution-excretion.json",
+      "highlights": 3,
+      "links": 4
+    },
+    {
+      "documentId": "infectious-diseases.mycobacteria.tuberculosis",
+      "path": "reader/annotations/infectious-diseases.mycobacteria.tuberculosis.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "genetics.inheritance.mendelian-mechanisms",
+      "path": "reader/annotations/genetics.inheritance.mendelian-mechanisms.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "systemic-pharmacology.autonomic.cholinergic-adrenergic",
+      "path": "reader/annotations/systemic-pharmacology.autonomic.cholinergic-adrenergic.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "bacteriology.genetics.antimicrobial-resistance",
+      "path": "reader/annotations/bacteriology.genetics.antimicrobial-resistance.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "embryology.neural.neurulation-crest",
+      "path": "reader/annotations/embryology.neural.neurulation-crest.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "oncology.molecular.dna-repair",
+      "path": "reader/annotations/oncology.molecular.dna-repair.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.heart-failure.mechanisms-evaluation",
+      "path": "reader/annotations/cardiology.heart-failure.mechanisms-evaluation.json",
+      "highlights": 3,
+      "links": 4
+    },
+    {
+      "documentId": "gastroenterology.inflammation.ibd",
+      "path": "reader/annotations/gastroenterology.inflammation.ibd.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "biochemistry.lipids.fatty-acid-oxidation",
+      "path": "reader/annotations/biochemistry.lipids.fatty-acid-oxidation.json",
+      "highlights": 1,
+      "links": 3
+    },
+    {
+      "documentId": "biochemistry.heme.synthesis-breakdown",
+      "path": "reader/annotations/biochemistry.heme.synthesis-breakdown.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "physiology.digestive.secretion-control",
+      "path": "reader/annotations/physiology.digestive.secretion-control.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "preventive-medicine.screening.benefit-harm",
+      "path": "reader/annotations/preventive-medicine.screening.benefit-harm.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "research-methods.trials.randomization-estimands",
+      "path": "reader/annotations/research-methods.trials.randomization-estimands.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "patient-safety.medication.reconciliation-systems",
+      "path": "reader/annotations/patient-safety.medication.reconciliation-systems.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.general.orientation-fascia",
+      "path": "reader/annotations/anatomy.general.orientation-fascia.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.upper-limb.pectoral-girdle",
+      "path": "reader/annotations/anatomy.upper-limb.pectoral-girdle.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "anatomy.upper-limb.shoulder-rotator-cuff",
+      "path": "reader/annotations/anatomy.upper-limb.shoulder-rotator-cuff.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.upper-limb.brachial-plexus",
+      "path": "reader/annotations/anatomy.upper-limb.brachial-plexus.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.upper-limb.axilla-vessels",
+      "path": "reader/annotations/anatomy.upper-limb.axilla-vessels.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "anatomy.upper-limb.arm-elbow",
+      "path": "reader/annotations/anatomy.upper-limb.arm-elbow.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.upper-limb.forearm-wrist",
+      "path": "reader/annotations/anatomy.upper-limb.forearm-wrist.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.upper-limb.hand-intrinsics",
+      "path": "reader/annotations/anatomy.upper-limb.hand-intrinsics.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "histology.connective.matrix-cells",
+      "path": "reader/annotations/histology.connective.matrix-cells.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "histology.supporting.cartilage-bone",
+      "path": "reader/annotations/histology.supporting.cartilage-bone.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "embryology.skeleton.ossification-growth-plate",
+      "path": "reader/annotations/embryology.skeleton.ossification-growth-plate.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "anatomy.axial.vertebral-column",
+      "path": "reader/annotations/anatomy.axial.vertebral-column.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "anatomy.thorax.wall-diaphragm",
+      "path": "reader/annotations/anatomy.thorax.wall-diaphragm.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.thorax.lungs-pleura",
+      "path": "reader/annotations/anatomy.thorax.lungs-pleura.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "anatomy.abdomen.wall-peritoneum",
+      "path": "reader/annotations/anatomy.abdomen.wall-peritoneum.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.abdomen.inguinal-canal",
+      "path": "reader/annotations/anatomy.abdomen.inguinal-canal.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.abdomen.peritoneal-compartments",
+      "path": "reader/annotations/anatomy.abdomen.peritoneal-compartments.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.abdomen.foregut",
+      "path": "reader/annotations/anatomy.abdomen.foregut.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.abdomen.liver-segments",
+      "path": "reader/annotations/anatomy.abdomen.liver-segments.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.abdomen.biliary-pancreas",
+      "path": "reader/annotations/anatomy.abdomen.biliary-pancreas.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.abdomen.spleen",
+      "path": "reader/annotations/anatomy.abdomen.spleen.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "anatomy.abdomen.intestine-mesenteric-vessels",
+      "path": "reader/annotations/anatomy.abdomen.intestine-mesenteric-vessels.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.retroperitoneum.kidney-ureter",
+      "path": "reader/annotations/anatomy.retroperitoneum.kidney-ureter.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.pelvis.floor-organs",
+      "path": "reader/annotations/anatomy.pelvis.floor-organs.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.pelvis.rectum-anal-canal",
+      "path": "reader/annotations/anatomy.pelvis.rectum-anal-canal.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "histology.digestive.wall-regional-patterns",
+      "path": "reader/annotations/histology.digestive.wall-regional-patterns.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "histology.renal.nephron-vessels",
+      "path": "reader/annotations/histology.renal.nephron-vessels.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "embryology.digestive.rotation-fixation",
+      "path": "reader/annotations/embryology.digestive.rotation-fixation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.lower-limb.pelvic-girdle",
+      "path": "reader/annotations/anatomy.lower-limb.pelvic-girdle.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.lower-limb.hip-gluteal",
+      "path": "reader/annotations/anatomy.lower-limb.hip-gluteal.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.lower-limb.femoral-triangle",
+      "path": "reader/annotations/anatomy.lower-limb.femoral-triangle.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.lower-limb.knee-popliteal",
+      "path": "reader/annotations/anatomy.lower-limb.knee-popliteal.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.lower-limb.leg-ankle",
+      "path": "reader/annotations/anatomy.lower-limb.leg-ankle.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.lower-limb.foot-arches",
+      "path": "reader/annotations/anatomy.lower-limb.foot-arches.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.head-neck.skull-base-foramina",
+      "path": "reader/annotations/anatomy.head-neck.skull-base-foramina.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "anatomy.head-neck.neck-fascia-triangles",
+      "path": "reader/annotations/anatomy.head-neck.neck-fascia-triangles.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "anatomy.head-neck.larynx-vocal-folds",
+      "path": "reader/annotations/anatomy.head-neck.larynx-vocal-folds.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.head-neck.thyroid-parathyroid-relations",
+      "path": "reader/annotations/anatomy.head-neck.thyroid-parathyroid-relations.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "histology.endocrine.thyroid-parathyroid",
+      "path": "reader/annotations/histology.endocrine.thyroid-parathyroid.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "histology.respiratory.airways-alveoli",
+      "path": "reader/annotations/histology.respiratory.airways-alveoli.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "anatomy.head-neck.oral-tongue-salivary",
+      "path": "reader/annotations/anatomy.head-neck.oral-tongue-salivary.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.head-neck.pharynx-soft-palate",
+      "path": "reader/annotations/anatomy.head-neck.pharynx-soft-palate.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.head-neck.orbit-extraocular",
+      "path": "reader/annotations/anatomy.head-neck.orbit-extraocular.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroanatomy.brainstem.levels-localization",
+      "path": "reader/annotations/neuroanatomy.brainstem.levels-localization.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "neuroanatomy.cerebellum.cortex-connections",
+      "path": "reader/annotations/neuroanatomy.cerebellum.cortex-connections.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroanatomy.meninges.ventricles-csf",
+      "path": "reader/annotations/neuroanatomy.meninges.ventricles-csf.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "anatomy.head-neck.ear-temporal-bone",
+      "path": "reader/annotations/anatomy.head-neck.ear-temporal-bone.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "anatomy.head-neck.nose-paranasal",
+      "path": "reader/annotations/anatomy.head-neck.nose-paranasal.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroanatomy.forebrain.basal-ganglia",
+      "path": "reader/annotations/neuroanatomy.forebrain.basal-ganglia.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "embryology.pharyngeal.arches-pouches",
+      "path": "reader/annotations/embryology.pharyngeal.arches-pouches.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroanatomy.forebrain.thalamic-networks",
+      "path": "reader/annotations/neuroanatomy.forebrain.thalamic-networks.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "neuroanatomy.visual.field-pathways",
+      "path": "reader/annotations/neuroanatomy.visual.field-pathways.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "histology.integument.skin-appendages",
+      "path": "reader/annotations/histology.integument.skin-appendages.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "histology.muscle.sarcomere-connective",
+      "path": "reader/annotations/histology.muscle.sarcomere-connective.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "histology.lymphoid.organ-architecture",
+      "path": "reader/annotations/histology.lymphoid.organ-architecture.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "histology.vascular.wall-microcirculation",
+      "path": "reader/annotations/histology.vascular.wall-microcirculation.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "embryology.urinary.kidney-collecting-system",
+      "path": "reader/annotations/embryology.urinary.kidney-collecting-system.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "neuroanatomy.autonomic.central-peripheral",
+      "path": "reader/annotations/neuroanatomy.autonomic.central-peripheral.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.respiratory.mechanics-compliance",
+      "path": "reader/annotations/physiology.respiratory.mechanics-compliance.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "physiology.respiratory.alveolar-equation-deadspace",
+      "path": "reader/annotations/physiology.respiratory.alveolar-equation-deadspace.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.respiratory.diffusion-oxygen",
+      "path": "reader/annotations/physiology.respiratory.diffusion-oxygen.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "biochemistry.carbohydrate.pentose-phosphate",
+      "path": "reader/annotations/biochemistry.carbohydrate.pentose-phosphate.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "biochemistry.carbohydrate.fructose-galactose",
+      "path": "reader/annotations/biochemistry.carbohydrate.fructose-galactose.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "genetics.risk.penetrance-bayes",
+      "path": "reader/annotations/genetics.risk.penetrance-bayes.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "genetics.chromosomes.structural-number",
+      "path": "reader/annotations/genetics.chromosomes.structural-number.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "molecular-biology.dna.repair-replication",
+      "path": "reader/annotations/molecular-biology.dna.repair-replication.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.cardiovascular.hemodynamics-resistance",
+      "path": "reader/annotations/physiology.cardiovascular.hemodynamics-resistance.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.cardiovascular.microcirculation-glycocalyx",
+      "path": "reader/annotations/physiology.cardiovascular.microcirculation-glycocalyx.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.cardiovascular.cardiac-output-venous-return",
+      "path": "reader/annotations/physiology.cardiovascular.cardiac-output-venous-return.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "biochemistry.proteins.amino-acid-turnover",
+      "path": "reader/annotations/biochemistry.proteins.amino-acid-turnover.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "genetics.epigenetics.imprinting",
+      "path": "reader/annotations/genetics.epigenetics.imprinting.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cell-biology.signaling.receptors-second-messengers",
+      "path": "reader/annotations/cell-biology.signaling.receptors-second-messengers.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "biochemistry.enzymes.allostery-thermodynamics",
+      "path": "reader/annotations/biochemistry.enzymes.allostery-thermodynamics.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "genetics.population.hardy-weinberg",
+      "path": "reader/annotations/genetics.population.hardy-weinberg.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.endocrine.hypothalamic-pituitary-axes",
+      "path": "reader/annotations/physiology.endocrine.hypothalamic-pituitary-axes.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "physiology.endocrine.hormone-kinetics",
+      "path": "reader/annotations/physiology.endocrine.hormone-kinetics.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "physiology.endocrine.gh-prolactin",
+      "path": "reader/annotations/physiology.endocrine.gh-prolactin.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "biochemistry.lipids.cholesterol-synthesis",
+      "path": "reader/annotations/biochemistry.lipids.cholesterol-synthesis.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "biochemistry.lipids.bile-acid-cycling",
+      "path": "reader/annotations/biochemistry.lipids.bile-acid-cycling.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cell-biology.cell-cycle.checkpoints",
+      "path": "reader/annotations/cell-biology.cell-cycle.checkpoints.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cell-biology.cell-cycle.dna-content",
+      "path": "reader/annotations/cell-biology.cell-cycle.dna-content.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cell-biology.cell-death.apoptosis",
+      "path": "reader/annotations/cell-biology.cell-death.apoptosis.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "physiology.endocrine.insulin-glucagon",
+      "path": "reader/annotations/physiology.endocrine.insulin-glucagon.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "biochemistry.metabolism.fed-fasting-integration",
+      "path": "reader/annotations/biochemistry.metabolism.fed-fasting-integration.json",
+      "highlights": 3,
+      "links": 5
+    },
+    {
+      "documentId": "biochemistry.lipids.fatty-acid-synthesis",
+      "path": "reader/annotations/biochemistry.lipids.fatty-acid-synthesis.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "biochemistry.lipids.glycerolipid-synthesis",
+      "path": "reader/annotations/biochemistry.lipids.glycerolipid-synthesis.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "molecular-biology.rna.transcription-processing",
+      "path": "reader/annotations/molecular-biology.rna.transcription-processing.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "molecular-biology.rna.translation-code",
+      "path": "reader/annotations/molecular-biology.rna.translation-code.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "molecular-biology.proteins.targeting-quality-control",
+      "path": "reader/annotations/molecular-biology.proteins.targeting-quality-control.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "molecular-biology.rna.stability-silencing",
+      "path": "reader/annotations/molecular-biology.rna.stability-silencing.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.neuro.synaptic-transmission",
+      "path": "reader/annotations/physiology.neuro.synaptic-transmission.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "physiology.neuro.synaptic-integration",
+      "path": "reader/annotations/physiology.neuro.synaptic-integration.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "physiology.neuro.sensory-coding",
+      "path": "reader/annotations/physiology.neuro.sensory-coding.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.digestive.carbohydrate-absorption",
+      "path": "reader/annotations/physiology.digestive.carbohydrate-absorption.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "physiology.digestive.lipid-protein-absorption",
+      "path": "reader/annotations/physiology.digestive.lipid-protein-absorption.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "physiology.digestive.motility-control",
+      "path": "reader/annotations/physiology.digestive.motility-control.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "molecular-biology.gene-expression.chromatin-regulation",
+      "path": "reader/annotations/molecular-biology.gene-expression.chromatin-regulation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "molecular-biology.gene-expression.cis-trans-enhancers",
+      "path": "reader/annotations/molecular-biology.gene-expression.cis-trans-enhancers.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.neuro.autonomic-control",
+      "path": "reader/annotations/physiology.neuro.autonomic-control.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "physiology.cell.action-potential-conduction",
+      "path": "reader/annotations/physiology.cell.action-potential-conduction.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "physiology.neuro.motor-units-reflexes",
+      "path": "reader/annotations/physiology.neuro.motor-units-reflexes.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "physiology.neuro.pain-modulation",
+      "path": "reader/annotations/physiology.neuro.pain-modulation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "biochemistry.vitamins.cofactors",
+      "path": "reader/annotations/biochemistry.vitamins.cofactors.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "biochemistry.vitamins.folate-cobalamin-one-carbon",
+      "path": "reader/annotations/biochemistry.vitamins.folate-cobalamin-one-carbon.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "biochemistry.redox.antioxidant-systems",
+      "path": "reader/annotations/biochemistry.redox.antioxidant-systems.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "biochemistry.vitamins.fat-soluble-functions",
+      "path": "reader/annotations/biochemistry.vitamins.fat-soluble-functions.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.cell.adaptation-injury-mechanisms",
+      "path": "reader/annotations/pathology.cell.adaptation-injury-mechanisms.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.cell.ischemia-reperfusion-mechanisms",
+      "path": "reader/annotations/pathology.cell.ischemia-reperfusion-mechanisms.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.inflammation.mediators-leukocyte-recruitment",
+      "path": "reader/annotations/pathology.inflammation.mediators-leukocyte-recruitment.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.repair.matrix-remodeling-fibrosis",
+      "path": "reader/annotations/pathology.repair.matrix-remodeling-fibrosis.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "pharmacology.general.distribution-binding-models",
+      "path": "reader/annotations/pharmacology.general.distribution-binding-models.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "pharmacology.general.clearance-extraction-models",
+      "path": "reader/annotations/pharmacology.general.clearance-extraction-models.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pharmacology.general.repeated-dosing-accumulation",
+      "path": "reader/annotations/pharmacology.general.repeated-dosing-accumulation.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pharmacology.general.agonism-antagonism-curves",
+      "path": "reader/annotations/pharmacology.general.agonism-antagonism-curves.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.cell.accumulations-calcification",
+      "path": "reader/annotations/pathology.cell.accumulations-calcification.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.hemodynamics.edema-fluid-balance",
+      "path": "reader/annotations/pathology.hemodynamics.edema-fluid-balance.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.hemodynamics.thrombosis-embolism",
+      "path": "reader/annotations/pathology.hemodynamics.thrombosis-embolism.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pharmacology.general.metabolism-biotransformation",
+      "path": "reader/annotations/pharmacology.general.metabolism-biotransformation.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "pharmacology.general.metabolism-interactions",
+      "path": "reader/annotations/pharmacology.general.metabolism-interactions.json",
+      "highlights": 2,
+      "links": 3
+    },
+    {
+      "documentId": "pharmacology.general.bioavailability-first-pass",
+      "path": "reader/annotations/pharmacology.general.bioavailability-first-pass.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.hemodynamics.shock-perfusion-injury",
+      "path": "reader/annotations/pathology.hemodynamics.shock-perfusion-injury.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.immunity.hypersensitivity-mechanisms",
+      "path": "reader/annotations/pathology.immunity.hypersensitivity-mechanisms.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.proteins.amyloid-deposition",
+      "path": "reader/annotations/pathology.proteins.amyloid-deposition.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pharmacology.general.transporters-vectorial-flux",
+      "path": "reader/annotations/pharmacology.general.transporters-vectorial-flux.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "pharmacology.general.renal-excretion-ionization",
+      "path": "reader/annotations/pharmacology.general.renal-excretion-ionization.json",
+      "highlights": 0,
+      "links": 2
+    },
+    {
+      "documentId": "pharmacology.general.quantal-response-safety",
+      "path": "reader/annotations/pharmacology.general.quantal-response-safety.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.neoplasia.invasion-metastasis",
+      "path": "reader/annotations/pathology.neoplasia.invasion-metastasis.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.neoplasia.microenvironment-angiogenesis",
+      "path": "reader/annotations/pathology.neoplasia.microenvironment-angiogenesis.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.genetic.molecular-diagnostics",
+      "path": "reader/annotations/pathology.genetic.molecular-diagnostics.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pharmacology.autonomic.direct-cholinergic-agonists",
+      "path": "reader/annotations/pharmacology.autonomic.direct-cholinergic-agonists.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pharmacology.autonomic.cholinesterase-inhibition",
+      "path": "reader/annotations/pharmacology.autonomic.cholinesterase-inhibition.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pharmacology.autonomic.antimuscarinic-effects",
+      "path": "reader/annotations/pharmacology.autonomic.antimuscarinic-effects.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.environmental.toxic-injury",
+      "path": "reader/annotations/pathology.environmental.toxic-injury.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.environmental.radiation-injury",
+      "path": "reader/annotations/pathology.environmental.radiation-injury.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.nutrition.undernutrition-refeeding",
+      "path": "reader/annotations/pathology.nutrition.undernutrition-refeeding.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pharmacology.autonomic.adrenergic-agonists",
+      "path": "reader/annotations/pharmacology.autonomic.adrenergic-agonists.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "pharmacology.autonomic.catecholamine-turnover",
+      "path": "reader/annotations/pharmacology.autonomic.catecholamine-turnover.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pharmacology.autonomic.adrenergic-antagonists",
+      "path": "reader/annotations/pharmacology.autonomic.adrenergic-antagonists.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.nutrition.obesity-metabolic-injury",
+      "path": "reader/annotations/pathology.nutrition.obesity-metabolic-injury.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.genetic.congenital-disease",
+      "path": "reader/annotations/pathology.genetic.congenital-disease.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.genetic.variant-phenotype",
+      "path": "reader/annotations/pathology.genetic.variant-phenotype.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pharmacology.cardiovascular.renin-angiotensin-drugs",
+      "path": "reader/annotations/pharmacology.cardiovascular.renin-angiotensin-drugs.json",
+      "highlights": 1,
+      "links": 6
+    },
+    {
+      "documentId": "pharmacology.cardiovascular.mineralocorticoid-antagonists",
+      "path": "reader/annotations/pharmacology.cardiovascular.mineralocorticoid-antagonists.json",
+      "highlights": 3,
+      "links": 4
+    },
+    {
+      "documentId": "pharmacology.cardiovascular.renal-drug-interactions",
+      "path": "reader/annotations/pharmacology.cardiovascular.renal-drug-interactions.json",
+      "highlights": 3,
+      "links": 6
+    },
+    {
+      "documentId": "pathology.genetic.chromosomal-dosage",
+      "path": "reader/annotations/pathology.genetic.chromosomal-dosage.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.nutrition.thiamine-deficiency",
+      "path": "reader/annotations/pathology.nutrition.thiamine-deficiency.json",
+      "highlights": 2,
+      "links": 3
+    },
+    {
+      "documentId": "pathology.nutrition.cobalamin-folate",
+      "path": "reader/annotations/pathology.nutrition.cobalamin-folate.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.nutrition.ascorbate-connective-tissue",
+      "path": "reader/annotations/pathology.nutrition.ascorbate-connective-tissue.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pharmacology.cardiovascular.loop-diuretics",
+      "path": "reader/annotations/pharmacology.cardiovascular.loop-diuretics.json",
+      "highlights": 2,
+      "links": 5
+    },
+    {
+      "documentId": "pharmacology.cardiovascular.distal-proximal-diuretics",
+      "path": "reader/annotations/pharmacology.cardiovascular.distal-proximal-diuretics.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.nutrition.fat-soluble-vitamins",
+      "path": "reader/annotations/pathology.nutrition.fat-soluble-vitamins.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.genetic.repeat-expansion",
+      "path": "reader/annotations/pathology.genetic.repeat-expansion.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pharmacology.cardiovascular.antiarrhythmic-mechanisms",
+      "path": "reader/annotations/pharmacology.cardiovascular.antiarrhythmic-mechanisms.json",
+      "highlights": 0,
+      "links": 2
+    },
+    {
+      "documentId": "pharmacology.cardiovascular.repolarization-proarrhythmia",
+      "path": "reader/annotations/pharmacology.cardiovascular.repolarization-proarrhythmia.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.hemodynamics.thrombus-evolution",
+      "path": "reader/annotations/pathology.hemodynamics.thrombus-evolution.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.hemodynamics.coagulation-control",
+      "path": "reader/annotations/pathology.hemodynamics.coagulation-control.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.hemodynamics.fibrinolysis-markers",
+      "path": "reader/annotations/pathology.hemodynamics.fibrinolysis-markers.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.hemodynamics.dic-consumption",
+      "path": "reader/annotations/pathology.hemodynamics.dic-consumption.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.hemodynamics.microangiopathic-injury",
+      "path": "reader/annotations/pathology.hemodynamics.microangiopathic-injury.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.shock.circulatory-failure",
+      "path": "reader/annotations/pathology.shock.circulatory-failure.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.oxygen-budget",
+      "path": "reader/annotations/pathology.shock.oxygen-budget.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.hypovolemia-response",
+      "path": "reader/annotations/pathology.shock.hypovolemia-response.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.pump-obstruction",
+      "path": "reader/annotations/pathology.shock.pump-obstruction.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.distributive-dysfunction",
+      "path": "reader/annotations/pathology.shock.distributive-dysfunction.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.endothelial-barrier",
+      "path": "reader/annotations/pathology.shock.endothelial-barrier.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.reperfusion-cell-injury",
+      "path": "reader/annotations/pathology.shock.reperfusion-cell-injury.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "pathology.shock.renal-tubular-injury",
+      "path": "reader/annotations/pathology.shock.renal-tubular-injury.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.shock.lung-barrier-injury",
+      "path": "reader/annotations/pathology.shock.lung-barrier-injury.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.cerebral-hypoperfusion",
+      "path": "reader/annotations/pathology.shock.cerebral-hypoperfusion.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.shock.hepatic-hypoxia",
+      "path": "reader/annotations/pathology.shock.hepatic-hypoxia.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.intestinal-barrier",
+      "path": "reader/annotations/pathology.shock.intestinal-barrier.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.lactate-kinetics",
+      "path": "reader/annotations/pathology.shock.lactate-kinetics.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.shock.monitoring-inference",
+      "path": "reader/annotations/pathology.shock.monitoring-inference.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.multiorgan-recovery",
+      "path": "reader/annotations/pathology.shock.multiorgan-recovery.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.acid-base-integration",
+      "path": "reader/annotations/pathology.shock.acid-base-integration.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.shock.venous-backpressure",
+      "path": "reader/annotations/pathology.shock.venous-backpressure.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.inflammation.pattern-recognition",
+      "path": "reader/annotations/pathology.inflammation.pattern-recognition.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.inflammation.vascular-exudation",
+      "path": "reader/annotations/pathology.inflammation.vascular-exudation.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.inflammation.adhesion-cascade",
+      "path": "reader/annotations/pathology.inflammation.adhesion-cascade.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.inflammation.chemotactic-migration",
+      "path": "reader/annotations/pathology.inflammation.chemotactic-migration.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.inflammation.opsonin-phagolysosome",
+      "path": "reader/annotations/pathology.inflammation.opsonin-phagolysosome.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.inflammation.oxidative-killing",
+      "path": "reader/annotations/pathology.inflammation.oxidative-killing.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.inflammation.lipid-amine-mediators",
+      "path": "reader/annotations/pathology.inflammation.lipid-amine-mediators.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.inflammation.complement-kinin-crossroads",
+      "path": "reader/annotations/pathology.inflammation.complement-kinin-crossroads.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.inflammation.acute-morphology",
+      "path": "reader/annotations/pathology.inflammation.acute-morphology.json",
+      "highlights": 1,
+      "links": 3
+    },
+    {
+      "documentId": "pathology.inflammation.systemic-acute-phase",
+      "path": "reader/annotations/pathology.inflammation.systemic-acute-phase.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.inflammation.resolution-efferocytosis",
+      "path": "reader/annotations/pathology.inflammation.resolution-efferocytosis.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.inflammation.chronic-inflammatory-network",
+      "path": "reader/annotations/pathology.inflammation.chronic-inflammatory-network.json",
+      "highlights": 0,
+      "links": 3
+    },
+    {
+      "documentId": "pathology.inflammation.granulomatous-patterns",
+      "path": "reader/annotations/pathology.inflammation.granulomatous-patterns.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pathology.repair.regeneration-cell-cycle",
+      "path": "reader/annotations/pathology.repair.regeneration-cell-cycle.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.repair.angiogenesis-granulation",
+      "path": "reader/annotations/pathology.repair.angiogenesis-granulation.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.repair.collagen-biosynthesis",
+      "path": "reader/annotations/pathology.repair.collagen-biosynthesis.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.repair.scar-mechanics",
+      "path": "reader/annotations/pathology.repair.scar-mechanics.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pathology.repair.delayed-wound-healing",
+      "path": "reader/annotations/pathology.repair.delayed-wound-healing.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pathology.repair.wound-measurement-geometry",
+      "path": "reader/annotations/pathology.repair.wound-measurement-geometry.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.organization.lymphoid-trafficking",
+      "path": "reader/annotations/immunology.organization.lymphoid-trafficking.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.innate.sensor-adaptor-networks",
+      "path": "reader/annotations/immunology.innate.sensor-adaptor-networks.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.presentation.class-i-processing",
+      "path": "reader/annotations/immunology.presentation.class-i-processing.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.presentation.class-ii-loading",
+      "path": "reader/annotations/immunology.presentation.class-ii-loading.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.presentation.cross-priming",
+      "path": "reader/annotations/immunology.presentation.cross-priming.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.t-cells.tcr-costimulation",
+      "path": "reader/annotations/immunology.t-cells.tcr-costimulation.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.t-cells.helper-differentiation",
+      "path": "reader/annotations/immunology.t-cells.helper-differentiation.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "immunology.cytotoxicity.cd8-nk-effector",
+      "path": "reader/annotations/immunology.cytotoxicity.cd8-nk-effector.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.tolerance.thymic-selection",
+      "path": "reader/annotations/immunology.tolerance.thymic-selection.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.tolerance.peripheral-regulation",
+      "path": "reader/annotations/immunology.tolerance.peripheral-regulation.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.b-cells.development-receptor-editing",
+      "path": "reader/annotations/immunology.b-cells.development-receptor-editing.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.b-cells.aid-affinity-switch",
+      "path": "reader/annotations/immunology.b-cells.aid-affinity-switch.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "immunology.antibodies.effector-fcrn",
+      "path": "reader/annotations/immunology.antibodies.effector-fcrn.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.memory.vaccine-response-layers",
+      "path": "reader/annotations/immunology.memory.vaccine-response-layers.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.deficiency.pattern-based-evaluation",
+      "path": "reader/annotations/immunology.deficiency.pattern-based-evaluation.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.transplant.allorecognition-pathways",
+      "path": "reader/annotations/immunology.transplant.allorecognition-pathways.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "immunology.tumor.immunoediting-escape",
+      "path": "reader/annotations/immunology.tumor.immunoediting-escape.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.mucosal.iga-oral-tolerance",
+      "path": "reader/annotations/immunology.mucosal.iga-oral-tolerance.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.methods.flow-cytometry-counts",
+      "path": "reader/annotations/immunology.methods.flow-cytometry-counts.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.innate.complement-functional-tests",
+      "path": "reader/annotations/immunology.innate.complement-functional-tests.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.innate.complement-surface-regulation",
+      "path": "reader/annotations/immunology.innate.complement-surface-regulation.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.complexes.clearance-deposition",
+      "path": "reader/annotations/immunology.complexes.clearance-deposition.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.hypersensitivity.ige-sensitization",
+      "path": "reader/annotations/immunology.hypersensitivity.ige-sensitization.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.hypersensitivity.eosinophil-late-phase",
+      "path": "reader/annotations/immunology.hypersensitivity.eosinophil-late-phase.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.hypersensitivity.allergy-test-context",
+      "path": "reader/annotations/immunology.hypersensitivity.allergy-test-context.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.hypersensitivity.antibody-hemolysis-dat",
+      "path": "reader/annotations/immunology.hypersensitivity.antibody-hemolysis-dat.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "immunology.hypersensitivity.receptor-autoantibodies",
+      "path": "reader/annotations/immunology.hypersensitivity.receptor-autoantibodies.json",
+      "highlights": 1,
+      "links": 4
+    },
+    {
+      "documentId": "immunology.hypersensitivity.type-iii-local-systemic",
+      "path": "reader/annotations/immunology.hypersensitivity.type-iii-local-systemic.json",
+      "highlights": 0,
+      "links": 2
+    },
+    {
+      "documentId": "immunology.hypersensitivity.contact-t-cell-response",
+      "path": "reader/annotations/immunology.hypersensitivity.contact-t-cell-response.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.hypersensitivity.drug-recognition-mechanisms",
+      "path": "reader/annotations/immunology.hypersensitivity.drug-recognition-mechanisms.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.autoimmunity.triggers-epitope-spreading",
+      "path": "reader/annotations/immunology.autoimmunity.triggers-epitope-spreading.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "immunology.autoimmunity.ana-pretest-probability",
+      "path": "reader/annotations/immunology.autoimmunity.ana-pretest-probability.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.autoimmunity.anca-specificity",
+      "path": "reader/annotations/immunology.autoimmunity.anca-specificity.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.autoimmunity.renal-immunofluorescence",
+      "path": "reader/annotations/immunology.autoimmunity.renal-immunofluorescence.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.transplant.hla-antibody-assays",
+      "path": "reader/annotations/immunology.transplant.hla-antibody-assays.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.methods.immunoassay-interference",
+      "path": "reader/annotations/immunology.methods.immunoassay-interference.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "immunology.therapy.immunomodulation-targets",
+      "path": "reader/annotations/immunology.therapy.immunomodulation-targets.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "immunology.methods.biomarker-context-longitudinal",
+      "path": "reader/annotations/immunology.methods.biomarker-context-longitudinal.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "bacteriology.structure.peptidoglycan-assembly",
+      "path": "reader/annotations/bacteriology.structure.peptidoglycan-assembly.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "bacteriology.methods.gram-stain-interpretation",
+      "path": "reader/annotations/bacteriology.methods.gram-stain-interpretation.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.structure.outer-membrane-transport",
+      "path": "reader/annotations/bacteriology.structure.outer-membrane-transport.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "bacteriology.structure.mycolates-wallless",
+      "path": "reader/annotations/bacteriology.structure.mycolates-wallless.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "bacteriology.virulence.capsule-opsonization",
+      "path": "reader/annotations/bacteriology.virulence.capsule-opsonization.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "bacteriology.virulence.adhesion-motility",
+      "path": "reader/annotations/bacteriology.virulence.adhesion-motility.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.survival.endospore-dormancy",
+      "path": "reader/annotations/bacteriology.survival.endospore-dormancy.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.growth.counts-and-kinetics",
+      "path": "reader/annotations/bacteriology.growth.counts-and-kinetics.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.growth.oxygen-energy",
+      "path": "reader/annotations/bacteriology.growth.oxygen-energy.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.survival.biofilm-heterogeneity",
+      "path": "reader/annotations/bacteriology.survival.biofilm-heterogeneity.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "bacteriology.toxins.ab-toxin-trafficking",
+      "path": "reader/annotations/bacteriology.toxins.ab-toxin-trafficking.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.toxins.superantigen-activation",
+      "path": "reader/annotations/bacteriology.toxins.superantigen-activation.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "bacteriology.toxins.lps-compartment-sensing",
+      "path": "reader/annotations/bacteriology.toxins.lps-compartment-sensing.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.genetics.horizontal-transfer-pathways",
+      "path": "reader/annotations/bacteriology.genetics.horizontal-transfer-pathways.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.genetics.mobile-elements-integrons",
+      "path": "reader/annotations/bacteriology.genetics.mobile-elements-integrons.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.methods.mic-mbc-timekill",
+      "path": "reader/annotations/bacteriology.methods.mic-mbc-timekill.json",
+      "highlights": 1,
+      "links": 3
+    },
+    {
+      "documentId": "bacteriology.methods.susceptibility-interpretation",
+      "path": "reader/annotations/bacteriology.methods.susceptibility-interpretation.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "bacteriology.methods.specimen-culture-context",
+      "path": "reader/annotations/bacteriology.methods.specimen-culture-context.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.control.log-reduction-validation",
+      "path": "reader/annotations/bacteriology.control.log-reduction-validation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "bacteriology.virulence.iron-acquisition",
+      "path": "reader/annotations/bacteriology.virulence.iron-acquisition.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.coronary.atherothrombosis",
+      "path": "reader/annotations/cardiology.coronary.atherothrombosis.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.ischemia.oxygen-balance",
+      "path": "reader/annotations/cardiology.ischemia.oxygen-balance.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.coronary.flow-reserve",
+      "path": "reader/annotations/cardiology.coronary.flow-reserve.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.coronary.microvascular-vasospastic",
+      "path": "reader/annotations/cardiology.coronary.microvascular-vasospastic.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.diagnosis.chest-discomfort",
+      "path": "reader/annotations/cardiology.diagnosis.chest-discomfort.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "cardiology.electrocardiography.lead-vectors",
+      "path": "reader/annotations/cardiology.electrocardiography.lead-vectors.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.electrocardiography.ischemic-evolution",
+      "path": "reader/annotations/cardiology.electrocardiography.ischemic-evolution.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "cardiology.biomarkers.troponin-release",
+      "path": "reader/annotations/cardiology.biomarkers.troponin-release.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.ischemia.mi-classification-2026",
+      "path": "reader/annotations/cardiology.ischemia.mi-classification-2026.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.diagnosis.serial-tests",
+      "path": "reader/annotations/cardiology.diagnosis.serial-tests.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.testing.stress-ischemia",
+      "path": "reader/annotations/cardiology.testing.stress-ischemia.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.imaging.coronary-ct",
+      "path": "reader/annotations/cardiology.imaging.coronary-ct.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.coronary.pressure-flow-indices",
+      "path": "reader/annotations/cardiology.coronary.pressure-flow-indices.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.imaging.regional-wall-motion",
+      "path": "reader/annotations/cardiology.imaging.regional-wall-motion.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.ischemia.reperfusion-microcirculation",
+      "path": "reader/annotations/cardiology.ischemia.reperfusion-microcirculation.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.therapy.antithrombotic-targets",
+      "path": "reader/annotations/cardiology.therapy.antithrombotic-targets.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.complications.structural-failure",
+      "path": "reader/annotations/cardiology.complications.structural-failure.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.complications.remodeling-wall-stress",
+      "path": "reader/annotations/cardiology.complications.remodeling-wall-stress.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "cardiology.hemodynamics.right-ventricular-infarction",
+      "path": "reader/annotations/cardiology.hemodynamics.right-ventricular-infarction.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.prevention.secondary-prevention",
+      "path": "reader/annotations/cardiology.prevention.secondary-prevention.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.reentry-conduction",
+      "path": "reader/annotations/cardiology.arrhythmias.reentry-conduction.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.automaticity-triggered-activity",
+      "path": "reader/annotations/cardiology.arrhythmias.automaticity-triggered-activity.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.arrhythmias.refractoriness-conduction",
+      "path": "reader/annotations/cardiology.arrhythmias.refractoriness-conduction.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.electrocardiography.rate-interval-measurement",
+      "path": "reader/annotations/cardiology.electrocardiography.rate-interval-measurement.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.narrow-complex-differential",
+      "path": "reader/annotations/cardiology.arrhythmias.narrow-complex-differential.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.avnrt",
+      "path": "reader/annotations/cardiology.arrhythmias.avnrt.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.avrt-preexcitation",
+      "path": "reader/annotations/cardiology.arrhythmias.avrt-preexcitation.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.focal-atrial-tachycardia",
+      "path": "reader/annotations/cardiology.arrhythmias.focal-atrial-tachycardia.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.atrial-flutter",
+      "path": "reader/annotations/cardiology.arrhythmias.atrial-flutter.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.atrial-fibrillation-mechanisms",
+      "path": "reader/annotations/cardiology.arrhythmias.atrial-fibrillation-mechanisms.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "cardiology.arrhythmias.atrial-fibrillation-burden",
+      "path": "reader/annotations/cardiology.arrhythmias.atrial-fibrillation-burden.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention",
+      "path": "reader/annotations/cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.json",
+      "highlights": 0,
+      "links": 2
+    },
+    {
+      "documentId": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm",
+      "path": "reader/annotations/cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.arrhythmias.sinus-node-dysfunction",
+      "path": "reader/annotations/cardiology.arrhythmias.sinus-node-dysfunction.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.arrhythmias.atrioventricular-block",
+      "path": "reader/annotations/cardiology.arrhythmias.atrioventricular-block.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.bundle-branch-wide-qrs",
+      "path": "reader/annotations/cardiology.arrhythmias.bundle-branch-wide-qrs.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.arrhythmias.monomorphic-ventricular-tachycardia",
+      "path": "reader/annotations/cardiology.arrhythmias.monomorphic-ventricular-tachycardia.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.torsades-long-qt",
+      "path": "reader/annotations/cardiology.arrhythmias.torsades-long-qt.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.arrhythmias.ventricular-fibrillation-arrest",
+      "path": "reader/annotations/cardiology.arrhythmias.ventricular-fibrillation-arrest.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.arrhythmias.antiarrhythmic-risk",
+      "path": "reader/annotations/cardiology.arrhythmias.antiarrhythmic-risk.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.arrhythmias.ambulatory-monitoring-ep-study",
+      "path": "reader/annotations/cardiology.arrhythmias.ambulatory-monitoring-ep-study.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.devices.pacemaker-icd-basics",
+      "path": "reader/annotations/cardiology.devices.pacemaker-icd-basics.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.devices.pacemaker-troubleshooting",
+      "path": "reader/annotations/cardiology.devices.pacemaker-troubleshooting.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.devices.pacemaker-timing",
+      "path": "reader/annotations/cardiology.devices.pacemaker-timing.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.devices.icd-detection-therapy",
+      "path": "reader/annotations/cardiology.devices.icd-detection-therapy.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.devices.resynchronization-principles",
+      "path": "reader/annotations/cardiology.devices.resynchronization-principles.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.diagnosis.syncope-assessment",
+      "path": "reader/annotations/cardiology.diagnosis.syncope-assessment.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.diagnosis.reflex-syncope",
+      "path": "reader/annotations/cardiology.diagnosis.reflex-syncope.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.diagnosis.orthostatic-hypotension",
+      "path": "reader/annotations/cardiology.diagnosis.orthostatic-hypotension.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.diagnosis.cardiac-syncope-monitoring",
+      "path": "reader/annotations/cardiology.diagnosis.cardiac-syncope-monitoring.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.cardiomyopathy.phenotype-etiology",
+      "path": "reader/annotations/cardiology.cardiomyopathy.phenotype-etiology.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.cardiomyopathy.dilated-cardiomyopathy",
+      "path": "reader/annotations/cardiology.cardiomyopathy.dilated-cardiomyopathy.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.cardiomyopathy.hypertrophic-obstruction",
+      "path": "reader/annotations/cardiology.cardiomyopathy.hypertrophic-obstruction.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.cardiomyopathy.restrictive-physiology",
+      "path": "reader/annotations/cardiology.cardiomyopathy.restrictive-physiology.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.cardiomyopathy.cardiac-amyloidosis",
+      "path": "reader/annotations/cardiology.cardiomyopathy.cardiac-amyloidosis.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.cardiomyopathy.myocarditis-assessment",
+      "path": "reader/annotations/cardiology.cardiomyopathy.myocarditis-assessment.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.cardiomyopathy.arrhythmogenic-substrate",
+      "path": "reader/annotations/cardiology.cardiomyopathy.arrhythmogenic-substrate.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.cardiomyopathy.genetics-family-screening",
+      "path": "reader/annotations/cardiology.cardiomyopathy.genetics-family-screening.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.pericardium.pericarditis",
+      "path": "reader/annotations/cardiology.pericardium.pericarditis.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "cardiology.pericardium.effusion",
+      "path": "reader/annotations/cardiology.pericardium.effusion.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.pericardium.tamponade",
+      "path": "reader/annotations/cardiology.pericardium.tamponade.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.pericardium.constrictive-pericarditis",
+      "path": "reader/annotations/cardiology.pericardium.constrictive-pericarditis.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.valvular.integrated-assessment",
+      "path": "reader/annotations/cardiology.valvular.integrated-assessment.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.valvular.aortic-stenosis",
+      "path": "reader/annotations/cardiology.valvular.aortic-stenosis.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.valvular.aortic-stenosis-discordance",
+      "path": "reader/annotations/cardiology.valvular.aortic-stenosis-discordance.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.valvular.aortic-regurgitation",
+      "path": "reader/annotations/cardiology.valvular.aortic-regurgitation.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.valvular.mitral-stenosis",
+      "path": "reader/annotations/cardiology.valvular.mitral-stenosis.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.valvular.mitral-stenosis-rhythm-thrombosis",
+      "path": "reader/annotations/cardiology.valvular.mitral-stenosis-rhythm-thrombosis.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.valvular.primary-mitral-regurgitation",
+      "path": "reader/annotations/cardiology.valvular.primary-mitral-regurgitation.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.valvular.secondary-mitral-regurgitation",
+      "path": "reader/annotations/cardiology.valvular.secondary-mitral-regurgitation.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.valvular.tricuspid-regurgitation",
+      "path": "reader/annotations/cardiology.valvular.tricuspid-regurgitation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.valvular.pulmonary-valve-right-outflow",
+      "path": "reader/annotations/cardiology.valvular.pulmonary-valve-right-outflow.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.valvular.prosthetic-valve-assessment",
+      "path": "reader/annotations/cardiology.valvular.prosthetic-valve-assessment.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.valvular.mixed-multivalve",
+      "path": "reader/annotations/cardiology.valvular.mixed-multivalve.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.congenital.shunt-physiology",
+      "path": "reader/annotations/cardiology.congenital.shunt-physiology.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.congenital.atrial-septal-defect",
+      "path": "reader/annotations/cardiology.congenital.atrial-septal-defect.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.congenital.ventricular-septal-defect",
+      "path": "reader/annotations/cardiology.congenital.ventricular-septal-defect.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.congenital.patent-ductus-aorta",
+      "path": "reader/annotations/cardiology.congenital.patent-ductus-aorta.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.congenital.cyanosis-eisenmenger",
+      "path": "reader/annotations/cardiology.congenital.cyanosis-eisenmenger.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.congenital.tetralogy-fallot-repaired",
+      "path": "reader/annotations/cardiology.congenital.tetralogy-fallot-repaired.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.congenital.transposition-mixing",
+      "path": "reader/annotations/cardiology.congenital.transposition-mixing.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.congenital.fontan-circulation",
+      "path": "reader/annotations/cardiology.congenital.fontan-circulation.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.infection.endocarditis-mechanisms",
+      "path": "reader/annotations/cardiology.infection.endocarditis-mechanisms.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.infection.endocarditis-cultures",
+      "path": "reader/annotations/cardiology.infection.endocarditis-cultures.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.infection.endocarditis-imaging",
+      "path": "reader/annotations/cardiology.infection.endocarditis-imaging.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.infection.endocarditis-complications",
+      "path": "reader/annotations/cardiology.infection.endocarditis-complications.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.infection.rheumatic-fever",
+      "path": "reader/annotations/cardiology.infection.rheumatic-fever.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.infection.rheumatic-heart-prevention",
+      "path": "reader/annotations/cardiology.infection.rheumatic-heart-prevention.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.aorta.aneurysm-wall-mechanics",
+      "path": "reader/annotations/cardiology.aorta.aneurysm-wall-mechanics.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.aorta.acute-aortic-syndrome",
+      "path": "reader/annotations/cardiology.aorta.acute-aortic-syndrome.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "cardiology.vascular.peripheral-arterial-mechanisms",
+      "path": "reader/annotations/cardiology.vascular.peripheral-arterial-mechanisms.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.vascular.ankle-brachial-assessment",
+      "path": "reader/annotations/cardiology.vascular.ankle-brachial-assessment.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.vascular.chronic-limb-threatening",
+      "path": "reader/annotations/cardiology.vascular.chronic-limb-threatening.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.vascular.acute-limb-ischemia",
+      "path": "reader/annotations/cardiology.vascular.acute-limb-ischemia.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "cardiology.vascular.deep-vein-thrombosis",
+      "path": "reader/annotations/cardiology.vascular.deep-vein-thrombosis.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.vascular.pulmonary-embolism-gas-exchange",
+      "path": "reader/annotations/pulmonology.vascular.pulmonary-embolism-gas-exchange.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.vascular.pulmonary-embolism-assessment",
+      "path": "reader/annotations/pulmonology.vascular.pulmonary-embolism-assessment.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "cardiology.vascular.vte-treatment-principles",
+      "path": "reader/annotations/cardiology.vascular.vte-treatment-principles.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.pulmonary-hypertension.hemodynamics",
+      "path": "reader/annotations/pulmonology.pulmonary-hypertension.hemodynamics.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.pulmonary-hypertension.causes",
+      "path": "reader/annotations/pulmonology.pulmonary-hypertension.causes.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.pulmonary-hypertension.right-ventricular-adaptation",
+      "path": "reader/annotations/pulmonology.pulmonary-hypertension.right-ventricular-adaptation.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.pulmonary-hypertension.chronic-thromboembolic",
+      "path": "reader/annotations/pulmonology.pulmonary-hypertension.chronic-thromboembolic.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.testing.spirometry-quality",
+      "path": "reader/annotations/pulmonology.testing.spirometry-quality.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.testing.flow-volume-loop",
+      "path": "reader/annotations/pulmonology.testing.flow-volume-loop.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.testing.lung-volumes",
+      "path": "reader/annotations/pulmonology.testing.lung-volumes.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.testing.diffusing-capacity",
+      "path": "reader/annotations/pulmonology.testing.diffusing-capacity.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.airways.asthma-diagnostic-variability",
+      "path": "reader/annotations/pulmonology.airways.asthma-diagnostic-variability.json",
+      "highlights": 1,
+      "links": 3
+    },
+    {
+      "documentId": "pulmonology.airways.asthma-inflammatory-phenotypes",
+      "path": "reader/annotations/pulmonology.airways.asthma-inflammatory-phenotypes.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.airways.asthma-controller-inhaler",
+      "path": "reader/annotations/pulmonology.airways.asthma-controller-inhaler.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.airways.asthma-exacerbation",
+      "path": "reader/annotations/pulmonology.airways.asthma-exacerbation.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "pulmonology.airways.difficult-severe-asthma",
+      "path": "reader/annotations/pulmonology.airways.difficult-severe-asthma.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.obstruction.copd-small-airways-emphysema",
+      "path": "reader/annotations/pulmonology.obstruction.copd-small-airways-emphysema.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.obstruction.copd-integrated-assessment",
+      "path": "reader/annotations/pulmonology.obstruction.copd-integrated-assessment.json",
+      "highlights": 1,
+      "links": 3
+    },
+    {
+      "documentId": "pulmonology.obstruction.copd-maintenance-rehabilitation",
+      "path": "reader/annotations/pulmonology.obstruction.copd-maintenance-rehabilitation.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "pulmonology.obstruction.copd-exacerbation",
+      "path": "reader/annotations/pulmonology.obstruction.copd-exacerbation.json",
+      "highlights": 2,
+      "links": 3
+    },
+    {
+      "documentId": "pulmonology.airways.bronchiectasis-injury-cycle",
+      "path": "reader/annotations/pulmonology.airways.bronchiectasis-injury-cycle.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pulmonology.airways.bronchiectasis-etiology-microbiology",
+      "path": "reader/annotations/pulmonology.airways.bronchiectasis-etiology-microbiology.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.airways.bronchiectasis-clearance-treatment",
+      "path": "reader/annotations/pulmonology.airways.bronchiectasis-clearance-treatment.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "pulmonology.cough.cough-reflex-hypersensitivity",
+      "path": "reader/annotations/pulmonology.cough.cough-reflex-hypersensitivity.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.cough.chronic-cough-evaluation",
+      "path": "reader/annotations/pulmonology.cough.chronic-cough-evaluation.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.cough.hemoptysis-airway-risk",
+      "path": "reader/annotations/pulmonology.cough.hemoptysis-airway-risk.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pulmonology.airways.mucociliary-defense",
+      "path": "reader/annotations/pulmonology.airways.mucociliary-defense.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.infection.pneumonia-host-gas-exchange",
+      "path": "reader/annotations/pulmonology.infection.pneumonia-host-gas-exchange.json",
+      "highlights": 1,
+      "links": 4
+    },
+    {
+      "documentId": "pulmonology.infection.cap-diagnosis-severity",
+      "path": "reader/annotations/pulmonology.infection.cap-diagnosis-severity.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pulmonology.infection.cap-treatment-response",
+      "path": "reader/annotations/pulmonology.infection.cap-treatment-response.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "pulmonology.infection.aspiration-injury",
+      "path": "reader/annotations/pulmonology.infection.aspiration-injury.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.infection.abscess-necrotizing-pneumonia",
+      "path": "reader/annotations/pulmonology.infection.abscess-necrotizing-pneumonia.json",
+      "highlights": 2,
+      "links": 4
+    },
+    {
+      "documentId": "pulmonology.infection.hospital-ventilator-pneumonia",
+      "path": "reader/annotations/pulmonology.infection.hospital-ventilator-pneumonia.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.infection.immunocompromised-host",
+      "path": "reader/annotations/pulmonology.infection.immunocompromised-host.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.infection.tuberculosis-host-pathology",
+      "path": "reader/annotations/pulmonology.infection.tuberculosis-host-pathology.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "pulmonology.infection.tuberculosis-diagnostic-evidence",
+      "path": "reader/annotations/pulmonology.infection.tuberculosis-diagnostic-evidence.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.infection.tuberculosis-therapy-resistance",
+      "path": "reader/annotations/pulmonology.infection.tuberculosis-therapy-resistance.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.infection.tb-infection-prevention",
+      "path": "reader/annotations/pulmonology.infection.tb-infection-prevention.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.infection.ntm-pulmonary-disease",
+      "path": "reader/annotations/pulmonology.infection.ntm-pulmonary-disease.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.interstitial.pattern-clinical-context",
+      "path": "reader/annotations/pulmonology.interstitial.pattern-clinical-context.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pulmonology.interstitial.ipf-progressive-fibrosis",
+      "path": "reader/annotations/pulmonology.interstitial.ipf-progressive-fibrosis.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pulmonology.pleural.effusion-fluid-mechanisms",
+      "path": "reader/annotations/pulmonology.pleural.effusion-fluid-mechanisms.json",
+      "highlights": 2,
+      "links": 4
+    },
+    {
+      "documentId": "pulmonology.pleural.infection-empyema",
+      "path": "reader/annotations/pulmonology.pleural.infection-empyema.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "general-surgery.assessment.risk-benefit-timing",
+      "path": "reader/annotations/general-surgery.assessment.risk-benefit-timing.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "general-surgery.assessment.cardiopulmonary-reserve",
+      "path": "reader/annotations/general-surgery.assessment.cardiopulmonary-reserve.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "general-surgery.assessment.frailty-nutrition",
+      "path": "reader/annotations/general-surgery.assessment.frailty-nutrition.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "general-surgery.assessment.anemia-hemostasis",
+      "path": "reader/annotations/general-surgery.assessment.anemia-hemostasis.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "general-surgery.physiology.stress-metabolism",
+      "path": "reader/annotations/general-surgery.physiology.stress-metabolism.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "general-surgery.physiology.fluid-kidney-balance",
+      "path": "reader/annotations/general-surgery.physiology.fluid-kidney-balance.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.wound.hemostasis-inflammation",
+      "path": "reader/annotations/general-surgery.wound.hemostasis-inflammation.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "general-surgery.wound.proliferation-matrix",
+      "path": "reader/annotations/general-surgery.wound.proliferation-matrix.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "general-surgery.wound.remodeling-scar",
+      "path": "reader/annotations/general-surgery.wound.remodeling-scar.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.wound.failure-perfusion-pressure",
+      "path": "reader/annotations/general-surgery.wound.failure-perfusion-pressure.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "general-surgery.infection.ssi-depth-evidence",
+      "path": "reader/annotations/general-surgery.infection.ssi-depth-evidence.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "general-surgery.infection.prevention-antimicrobial",
+      "path": "reader/annotations/general-surgery.infection.prevention-antimicrobial.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.infection.source-control",
+      "path": "reader/annotations/general-surgery.infection.source-control.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "general-surgery.prevention.vte-bleeding-balance",
+      "path": "reader/annotations/general-surgery.prevention.vte-bleeding-balance.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.recovery.ileus-obstruction",
+      "path": "reader/annotations/general-surgery.recovery.ileus-obstruction.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.recovery.delirium-function",
+      "path": "reader/annotations/general-surgery.recovery.delirium-function.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "trauma-surgery.shock.recognition-oxygen-debt",
+      "path": "reader/annotations/trauma-surgery.shock.recognition-oxygen-debt.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "trauma-surgery.shock.resuscitation-source-control",
+      "path": "reader/annotations/trauma-surgery.shock.resuscitation-source-control.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "trauma-surgery.hemostasis.trauma-coagulopathy",
+      "path": "reader/annotations/trauma-surgery.hemostasis.trauma-coagulopathy.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "trauma-surgery.transfusion.massive-monitoring",
+      "path": "reader/annotations/trauma-surgery.transfusion.massive-monitoring.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.respiratory.postoperative-hypoxemia",
+      "path": "reader/annotations/general-surgery.respiratory.postoperative-hypoxemia.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "general-surgery.respiratory.atelectasis-secretion",
+      "path": "reader/annotations/general-surgery.respiratory.atelectasis-secretion.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "general-surgery.respiratory.aspiration-airway-protection",
+      "path": "reader/annotations/general-surgery.respiratory.aspiration-airway-protection.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.respiratory.postoperative-pe-differential",
+      "path": "reader/annotations/general-surgery.respiratory.postoperative-pe-differential.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "general-surgery.technique.suture-tissue-mechanics",
+      "path": "reader/annotations/general-surgery.technique.suture-tissue-mechanics.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.technique.drains-fistula-balance",
+      "path": "reader/annotations/general-surgery.technique.drains-fistula-balance.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.esophagus.structure-function",
+      "path": "reader/annotations/gi-surgery.esophagus.structure-function.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "gi-surgery.esophagus.gerd-surgery-selection",
+      "path": "reader/annotations/gi-surgery.esophagus.gerd-surgery-selection.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.esophagus.hiatal-hernia",
+      "path": "reader/annotations/gi-surgery.esophagus.hiatal-hernia.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.esophagus.achalasia-intervention",
+      "path": "reader/annotations/gi-surgery.esophagus.achalasia-intervention.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.esophagus.perforation-contamination",
+      "path": "reader/annotations/gi-surgery.esophagus.perforation-contamination.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "gi-surgery.esophagus.cancer-stage-resection",
+      "path": "reader/annotations/gi-surgery.esophagus.cancer-stage-resection.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.acute-abdomen.visceral-parietal-pain",
+      "path": "reader/annotations/general-surgery.acute-abdomen.visceral-parietal-pain.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "general-surgery.acute-abdomen.peritonitis-contamination",
+      "path": "reader/annotations/general-surgery.acute-abdomen.peritonitis-contamination.json",
+      "highlights": 0,
+      "links": 1
+    },
+    {
+      "documentId": "gi-surgery.ulcer.bleeding-vascular-control",
+      "path": "reader/annotations/gi-surgery.ulcer.bleeding-vascular-control.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.ulcer.perforation-operative-reasoning",
+      "path": "reader/annotations/gi-surgery.ulcer.perforation-operative-reasoning.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.stomach.outlet-obstruction",
+      "path": "reader/annotations/gi-surgery.stomach.outlet-obstruction.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "gi-surgery.stomach.cancer-depth-staging",
+      "path": "reader/annotations/gi-surgery.stomach.cancer-depth-staging.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.stomach.gastrectomy-lymphatics",
+      "path": "reader/annotations/gi-surgery.stomach.gastrectomy-lymphatics.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.stomach.reconstruction-flow",
+      "path": "reader/annotations/gi-surgery.stomach.reconstruction-flow.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.stomach.postgastrectomy-function",
+      "path": "reader/annotations/gi-surgery.stomach.postgastrectomy-function.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "colorectal-surgery.colon.cancer-staging-resection",
+      "path": "reader/annotations/colorectal-surgery.colon.cancer-staging-resection.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "colorectal-surgery.rectum.pelvic-staging-tme",
+      "path": "reader/annotations/colorectal-surgery.rectum.pelvic-staging-tme.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "colorectal-surgery.obstruction.malignant-colonic-obstruction",
+      "path": "reader/annotations/colorectal-surgery.obstruction.malignant-colonic-obstruction.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.obstruction.adhesive-small-bowel",
+      "path": "reader/annotations/gi-surgery.obstruction.adhesive-small-bowel.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "gi-surgery.ischemia.strangulation-mesenteric-flow",
+      "path": "reader/annotations/gi-surgery.ischemia.strangulation-mesenteric-flow.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "colorectal-surgery.anastomosis.leak-perfusion-diversion",
+      "path": "reader/annotations/colorectal-surgery.anastomosis.leak-perfusion-diversion.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "colorectal-surgery.stoma.fluid-skin-function",
+      "path": "reader/annotations/colorectal-surgery.stoma.fluid-skin-function.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "colorectal-surgery.diverticular.wall-inflammation",
+      "path": "reader/annotations/colorectal-surgery.diverticular.wall-inflammation.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "colorectal-surgery.diverticular.abscess-source-control",
+      "path": "reader/annotations/colorectal-surgery.diverticular.abscess-source-control.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "colorectal-surgery.diverticular.elective-resection-fistula",
+      "path": "reader/annotations/colorectal-surgery.diverticular.elective-resection-fistula.json",
+      "highlights": 0,
+      "links": 2
+    },
+    {
+      "documentId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation",
+      "path": "reader/annotations/colorectal-surgery.ibd.crohn-stricture-bowel-preservation.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "colorectal-surgery.ibd.penetrating-crohn",
+      "path": "reader/annotations/colorectal-surgery.ibd.penetrating-crohn.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "colorectal-surgery.ibd.uc-colectomy-staging",
+      "path": "reader/annotations/colorectal-surgery.ibd.uc-colectomy-staging.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "colorectal-surgery.ibd.postoperative-recurrence",
+      "path": "reader/annotations/colorectal-surgery.ibd.postoperative-recurrence.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "colorectal-surgery.anorectal.abscess-spaces",
+      "path": "reader/annotations/colorectal-surgery.anorectal.abscess-spaces.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "colorectal-surgery.anorectal.fistula-sphincter",
+      "path": "reader/annotations/colorectal-surgery.anorectal.fistula-sphincter.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "colorectal-surgery.anorectal.perianal-crohn",
+      "path": "reader/annotations/colorectal-surgery.anorectal.perianal-crohn.json",
+      "highlights": 1,
+      "links": 3
+    },
+    {
+      "documentId": "hpb-surgery.liver.functional-anatomy",
+      "path": "reader/annotations/hpb-surgery.liver.functional-anatomy.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "hpb-surgery.liver.future-remnant-function",
+      "path": "reader/annotations/hpb-surgery.liver.future-remnant-function.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "hpb-surgery.liver.pve-regeneration",
+      "path": "reader/annotations/hpb-surgery.liver.pve-regeneration.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "hpb-surgery.liver.posthepatectomy-complications",
+      "path": "reader/annotations/hpb-surgery.liver.posthepatectomy-complications.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "hpb-surgery.liver.hcc-metastasis-selection",
+      "path": "reader/annotations/hpb-surgery.liver.hcc-metastasis-selection.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "hpb-surgery.liver.ablation-parenchyma",
+      "path": "reader/annotations/hpb-surgery.liver.ablation-parenchyma.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.adaptation.cardiovascular-volume",
+      "path": "reader/annotations/obstetrics.adaptation.cardiovascular-volume.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.adaptation.respiration-acid-base",
+      "path": "reader/annotations/obstetrics.adaptation.respiration-acid-base.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.adaptation.renal-fluid-laboratory",
+      "path": "reader/annotations/obstetrics.adaptation.renal-fluid-laboratory.json",
+      "highlights": 3,
+      "links": 4
+    },
+    {
+      "documentId": "obstetrics.placenta.exchange-endocrine",
+      "path": "reader/annotations/obstetrics.placenta.exchange-endocrine.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.antenatal.initial-assessment-dating",
+      "path": "reader/annotations/obstetrics.antenatal.initial-assessment-dating.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "obstetrics.antenatal.aneuploidy-screening-diagnosis",
+      "path": "reader/annotations/obstetrics.antenatal.aneuploidy-screening-diagnosis.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.early-pregnancy.location-viability",
+      "path": "reader/annotations/obstetrics.early-pregnancy.location-viability.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.fetal-assessment.growth-doppler",
+      "path": "reader/annotations/obstetrics.fetal-assessment.growth-doppler.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.hypertension.classification-endothelium",
+      "path": "reader/annotations/obstetrics.hypertension.classification-endothelium.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "obstetrics.hypertension.severe-disease-delivery",
+      "path": "reader/annotations/obstetrics.hypertension.severe-disease-delivery.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.diabetes.screening-pathways",
+      "path": "reader/annotations/obstetrics.diabetes.screening-pathways.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "obstetrics.diabetes.monitoring-postpartum",
+      "path": "reader/annotations/obstetrics.diabetes.monitoring-postpartum.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "pediatrics.growth.velocity-measurement",
+      "path": "reader/annotations/pediatrics.growth.velocity-measurement.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pediatrics.development.surveillance-screening",
+      "path": "reader/annotations/pediatrics.development.surveillance-screening.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "neonatology.bilirubin.hours-risk-assessment",
+      "path": "reader/annotations/neonatology.bilirubin.hours-risk-assessment.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neonatology.feeding.weight-hydration",
+      "path": "reader/annotations/neonatology.feeding.weight-hydration.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroscience.membrane.ion-gradients",
+      "path": "reader/annotations/neuroscience.membrane.ion-gradients.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "neuroscience.conduction.myelin-cable",
+      "path": "reader/annotations/neuroscience.conduction.myelin-cable.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "neuroscience.sensory.coding-pathways",
+      "path": "reader/annotations/neuroscience.sensory.coding-pathways.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "neuroscience.motor.basal-ganglia-cerebellum",
+      "path": "reader/annotations/neuroscience.motor.basal-ganglia-cerebellum.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "neuroscience.sleep.circadian-arousal",
+      "path": "reader/annotations/neuroscience.sleep.circadian-arousal.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neurology.examination.localizing-weakness",
+      "path": "reader/annotations/neurology.examination.localizing-weakness.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "neurology.stroke.acute-ischemia-assessment",
+      "path": "reader/annotations/neurology.stroke.acute-ischemia-assessment.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neurology.epilepsy.first-seizure-eeg",
+      "path": "reader/annotations/neurology.epilepsy.first-seizure-eeg.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "neurology.headache.primary-secondary",
+      "path": "reader/annotations/neurology.headache.primary-secondary.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "neurology.cognition.delirium-dementia",
+      "path": "reader/annotations/neurology.cognition.delirium-dementia.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.mood.depression-longitudinal",
+      "path": "reader/annotations/psychiatry.mood.depression-longitudinal.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.mood.bipolar-mania",
+      "path": "reader/annotations/psychiatry.mood.bipolar-mania.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.psychosis.syndrome-differential",
+      "path": "reader/annotations/psychiatry.psychosis.syndrome-differential.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.anxiety.panic-ocd",
+      "path": "reader/annotations/psychiatry.anxiety.panic-ocd.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.trauma.stress-ptsd",
+      "path": "reader/annotations/psychiatry.trauma.stress-ptsd.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.treatment.monitoring-shared-decisions",
+      "path": "reader/annotations/psychiatry.treatment.monitoring-shared-decisions.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "neuroscience.nmj.release-safety-factor",
+      "path": "reader/annotations/neuroscience.nmj.release-safety-factor.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "neuroscience.motor-unit.recruitment-fatigue",
+      "path": "reader/annotations/neuroscience.motor-unit.recruitment-fatigue.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "neuroscience.pain.phenotype-lesion",
+      "path": "reader/annotations/neuroscience.pain.phenotype-lesion.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroscience.autonomic.orthostatic-testing",
+      "path": "reader/annotations/neuroscience.autonomic.orthostatic-testing.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "neurology.movement.parkinson-syndrome",
+      "path": "reader/annotations/neurology.movement.parkinson-syndrome.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "neurology.movement.tremor-dystonia",
+      "path": "reader/annotations/neurology.movement.tremor-dystonia.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "neurology.neuropathy.axonal-demyelinating",
+      "path": "reader/annotations/neurology.neuropathy.axonal-demyelinating.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "neurology.neuropathy.acute-inflammatory",
+      "path": "reader/annotations/neurology.neuropathy.acute-inflammatory.json",
+      "highlights": 2,
+      "links": 3
+    },
+    {
+      "documentId": "neurology.nmj.myasthenia-lambert-eaton",
+      "path": "reader/annotations/neurology.nmj.myasthenia-lambert-eaton.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "neurology.motor-neuron.muscle-differential",
+      "path": "reader/annotations/neurology.motor-neuron.muscle-differential.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "psychiatry.substances.alcohol-intoxication-withdrawal",
+      "path": "reader/annotations/psychiatry.substances.alcohol-intoxication-withdrawal.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.substances.opioid-sedative",
+      "path": "reader/annotations/psychiatry.substances.opioid-sedative.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.substances.stimulant-cannabis",
+      "path": "reader/annotations/psychiatry.substances.stimulant-cannabis.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.psychotherapy.cbt-formulation",
+      "path": "reader/annotations/psychiatry.psychotherapy.cbt-formulation.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.psychotherapy.interpersonal-family",
+      "path": "reader/annotations/psychiatry.psychotherapy.interpersonal-family.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.somatic.symptom-functional",
+      "path": "reader/annotations/psychiatry.somatic.symptom-functional.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroscience.plasticity.activity-dependent",
+      "path": "reader/annotations/neuroscience.plasticity.activity-dependent.json",
+      "highlights": 2,
+      "links": 2
+    },
+    {
+      "documentId": "neuroscience.development.myelination-critical-period",
+      "path": "reader/annotations/neuroscience.development.myelination-critical-period.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "neurology.inflammation.multiple-sclerosis-assessment",
+      "path": "reader/annotations/neurology.inflammation.multiple-sclerosis-assessment.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "neurology.infection.meningitis-encephalitis",
+      "path": "reader/annotations/neurology.infection.meningitis-encephalitis.json",
+      "highlights": 2,
+      "links": 4
+    },
+    {
+      "documentId": "neurology.cognition.dementia-patterns",
+      "path": "reader/annotations/neurology.cognition.dementia-patterns.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "psychiatry.development.adhd-assessment",
+      "path": "reader/annotations/psychiatry.development.adhd-assessment.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.development.autism-context",
+      "path": "reader/annotations/psychiatry.development.autism-context.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "psychiatry.eating.restriction-binge-risk",
+      "path": "reader/annotations/psychiatry.eating.restriction-binge-risk.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.sleep.insomnia-assessment",
+      "path": "reader/annotations/psychiatry.sleep.insomnia-assessment.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "neurology.vestibular.dizziness-patterns",
+      "path": "reader/annotations/neurology.vestibular.dizziness-patterns.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "neurology.cognition.gait-hydrocephalus",
+      "path": "reader/annotations/neurology.cognition.gait-hydrocephalus.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "psychiatry.personality.longitudinal-formulation",
+      "path": "reader/annotations/psychiatry.personality.longitudinal-formulation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroscience.memory.encoding-retrieval",
+      "path": "reader/annotations/neuroscience.memory.encoding-retrieval.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "neuroscience.glia.barrier-neurovascular",
+      "path": "reader/annotations/neuroscience.glia.barrier-neurovascular.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "neuroscience.vision.retina-field-pathways",
+      "path": "reader/annotations/neuroscience.vision.retina-field-pathways.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neuroscience.metabolism.energy-excitotoxicity",
+      "path": "reader/annotations/neuroscience.metabolism.energy-excitotoxicity.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "neurology.neurooncology.mass-pressure",
+      "path": "reader/annotations/neurology.neurooncology.mass-pressure.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "neurology.neurooncology.integrated-tumor-diagnosis",
+      "path": "reader/annotations/neurology.neurooncology.integrated-tumor-diagnosis.json",
+      "highlights": 3,
+      "links": 3
+    },
+    {
+      "documentId": "neurology.cranial.ocular-motor-diplopia",
+      "path": "reader/annotations/neurology.cranial.ocular-motor-diplopia.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "neurology.cranial.facial-trigeminal",
+      "path": "reader/annotations/neurology.cranial.facial-trigeminal.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neurology.spinal.myelopathy-cauda-equina",
+      "path": "reader/annotations/neurology.spinal.myelopathy-cauda-equina.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "psychiatry.sleep.apnea-neurocognition",
+      "path": "reader/annotations/psychiatry.sleep.apnea-neurocognition.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.sleep.narcolepsy-hypersomnolence",
+      "path": "reader/annotations/psychiatry.sleep.narcolepsy-hypersomnolence.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.sleep.parasomnia-state-dissociation",
+      "path": "reader/annotations/psychiatry.sleep.parasomnia-state-dissociation.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "psychiatry.dissociation.memory-reality-assessment",
+      "path": "reader/annotations/psychiatry.dissociation.memory-reality-assessment.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "psychiatry.stress.adjustment-grief",
+      "path": "reader/annotations/psychiatry.stress.adjustment-grief.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "neurology.neurovascular.intracerebral-hemorrhage",
+      "path": "reader/annotations/neurology.neurovascular.intracerebral-hemorrhage.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "neurology.neurovascular.subarachnoid-hemorrhage",
+      "path": "reader/annotations/neurology.neurovascular.subarachnoid-hemorrhage.json",
+      "highlights": 1,
+      "links": 2
+    },
+    {
+      "documentId": "pediatrics.gastroenteritis.dehydration-assessment",
+      "path": "reader/annotations/pediatrics.gastroenteritis.dehydration-assessment.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pediatrics.respiratory.bronchiolitis-work-breathing",
+      "path": "reader/annotations/pediatrics.respiratory.bronchiolitis-work-breathing.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pediatrics.infection.fever-clinical-assessment",
+      "path": "reader/annotations/pediatrics.infection.fever-clinical-assessment.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pediatrics.renal.urinary-infection",
+      "path": "reader/annotations/pediatrics.renal.urinary-infection.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.preterm.labor-membranes",
+      "path": "reader/annotations/obstetrics.preterm.labor-membranes.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "obstetrics.bleeding.postpartum-mechanisms",
+      "path": "reader/annotations/obstetrics.bleeding.postpartum-mechanisms.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "gynecology.pelvic-pain.acute-differential",
+      "path": "reader/annotations/gynecology.pelvic-pain.acute-differential.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "gynecology.endometriosis.pain-fertility",
+      "path": "reader/annotations/gynecology.endometriosis.pain-fertility.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neonatology.glucose.transition-risk",
+      "path": "reader/annotations/neonatology.glucose.transition-risk.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "neonatology.temperature.heat-balance",
+      "path": "reader/annotations/neonatology.temperature.heat-balance.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pediatrics.hematology.iron-deficiency",
+      "path": "reader/annotations/pediatrics.hematology.iron-deficiency.json",
+      "highlights": 1,
+      "links": 1
+    },
+    {
+      "documentId": "pediatrics.gastrointestinal.constipation-retention",
+      "path": "reader/annotations/pediatrics.gastrointestinal.constipation-retention.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "pediatrics.allergy.food-reactions",
+      "path": "reader/annotations/pediatrics.allergy.food-reactions.json",
+      "highlights": 3,
+      "links": 2
+    },
+    {
+      "documentId": "gynecology.amenorrhea.axis-differential",
+      "path": "reader/annotations/gynecology.amenorrhea.axis-differential.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "laboratory-medicine.preanalytics.potassium-errors",
+      "path": "reader/annotations/laboratory-medicine.preanalytics.potassium-errors.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "laboratory-medicine.coagulation.pt-aptt-patterns",
+      "path": "reader/annotations/laboratory-medicine.coagulation.pt-aptt-patterns.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "laboratory-medicine.acid-base.blood-gas-interpretation",
+      "path": "reader/annotations/laboratory-medicine.acid-base.blood-gas-interpretation.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "radiology.ct.attenuation-contrast",
+      "path": "reader/annotations/radiology.ct.attenuation-contrast.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "radiology.mri.safety-screening",
+      "path": "reader/annotations/radiology.mri.safety-screening.json",
+      "highlights": 1,
+      "links": 0
+    },
+    {
+      "documentId": "transfusion-medicine.reactions.initial-differential",
+      "path": "reader/annotations/transfusion-medicine.reactions.initial-differential.json",
+      "highlights": 0,
+      "links": 0
+    },
+    {
+      "documentId": "emergency-medicine.dyspnea.initial-assessment",
+      "path": "reader/annotations/emergency-medicine.dyspnea.initial-assessment.json",
+      "highlights": 2,
+      "links": 3
+    },
+    {
+      "documentId": "critical-care.respiratory.ventilation-oxygenation",
+      "path": "reader/annotations/critical-care.respiratory.ventilation-oxygenation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "geriatrics.falls.multifactorial-assessment",
+      "path": "reader/annotations/geriatrics.falls.multifactorial-assessment.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "rehabilitation.swallowing.aspiration-risk",
+      "path": "reader/annotations/rehabilitation.swallowing.aspiration-risk.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "clinical-nutrition.assessment.malnutrition-inflammation",
+      "path": "reader/annotations/clinical-nutrition.assessment.malnutrition-inflammation.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "ophthalmology.red-eye.pain-vision",
+      "path": "reader/annotations/ophthalmology.red-eye.pain-vision.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "otolaryngology.vertigo.timing-examination",
+      "path": "reader/annotations/otolaryngology.vertigo.timing-examination.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "geriatrics.delirium.attention-course",
+      "path": "reader/annotations/geriatrics.delirium.attention-course.json",
+      "highlights": 2,
+      "links": 0
+    },
+    {
+      "documentId": "dermatology.pressure-injury.tissue-loading",
+      "path": "reader/annotations/dermatology.pressure-injury.tissue-loading.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "neonatology.bilirubin.production-clearance",
+      "path": "reader/annotations/neonatology.bilirubin.production-clearance.json",
+      "highlights": 3,
+      "links": 1
+    },
+    {
+      "documentId": "pediatrics.fluid.compartment-assessment",
+      "path": "reader/annotations/pediatrics.fluid.compartment-assessment.json",
+      "highlights": 2,
+      "links": 1
+    },
+    {
+      "documentId": "pediatrics.gastroenteritis.transport-rehydration",
+      "path": "reader/annotations/pediatrics.gastroenteritis.transport-rehydration.json",
+      "highlights": 3,
+      "links": 0
+    },
+    {
+      "documentId": "pediatrics.respiratory.bronchiolitis-mechanics",
+      "path": "reader/annotations/pediatrics.respiratory.bronchiolitis-mechanics.json",
+      "highlights": 3,
+      "links": 1
+    }
+  ]
+}

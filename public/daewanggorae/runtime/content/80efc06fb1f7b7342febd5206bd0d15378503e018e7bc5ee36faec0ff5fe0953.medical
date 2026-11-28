@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.testing.lung-volumes",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.testing.lung-volumes.b.91ddf2f52fa9",
+      "sourceSha256": "91ddf2f52fa961977981aa9d29f08886bab08296b030e996341a0a6f387681c9",
+      "sourceLengthUtf16": 255,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.testing.lung-volumes.b.ba9d90e3917e",
+      "sourceSha256": "ba9d90e3917e3cce49032f2d40a89b2ed248e06d5ce83a18b95b66b801332c27",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.testing.lung-volumes.b.8b09aadfbf1a",
+      "sourceSha256": "8b09aadfbf1aa996bbdfa342571d6a4131b7f077394b7fdb9da1bae0c8432d2f",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.testing.lung-volumes.b.07981ae0f6dd",
+      "sourceSha256": "07981ae0f6dde5c52f4ccbd1e3cec2962bd3f60dee75e6f6c40f5559efe77b8d",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.testing.lung-volumes.b.0ad2cf9b7d8b",
+      "sourceSha256": "0ad2cf9b7d8bca7e0eb1d8ab00b6c1b1fe56f4d49026b91f7d294c1dc6f40a73",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.02adcbca94bddee060e1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 105,
+            "end": 141,
+            "exact": "낮은 TLC라는 기능적 분류와 간질성폐질환이라는 병인은 구별한다.",
+            "prefix": "영상·근력 및 임상 배경은 다를 수 있다. ",
+            "suffix": " 혼합 장애에서는 기류 제한과 실제 TLC "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.testing.lung-volumes.b.5f4ae643eb97",
+      "sourceSha256": "5f4ae643eb972258d4ddc7eeb84ac74e52f91da4a978a0c5b92e2f8df0833ff5",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.testing.lung-volumes.b.dec02fd50be0",
+      "sourceSha256": "dec02fd50be01da71eedf8617b374aad3816f233adb766cee8fa32818f662179",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.testing.lung-volumes.b.96316e2cbf5f",
+      "sourceSha256": "96316e2cbf5f41d7c98724ac01b9149aaece52e5ee2ad0b0143351604a8f0bbc",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.f3311356f77ff36a523b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 98,
+            "end": 124,
+            "exact": "추적에서는 같은 기법과 기준의 비교가 중요하다.",
+            "prefix": "폐 공간을 얼마나 잘 측정했는지 확인한다. ",
+            "suffix": " 폐용적은 정적인 공간의 정보이며 실제 가스"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.testing.lung-volumes.p.extra0844.0",
+      "sourceSha256": "206b11f2a6c1f7bd369a074ccab2e5374fda8f2f87d3ad42d6bd2b84ad60c94b",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.testing.lung-volumes.p.extra0844.1",
+      "sourceSha256": "8be1fb0d391456186ab1360b821af12cafa16691e728ebe89c83c7b9a43ab8d8",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    }
+  ]
+}

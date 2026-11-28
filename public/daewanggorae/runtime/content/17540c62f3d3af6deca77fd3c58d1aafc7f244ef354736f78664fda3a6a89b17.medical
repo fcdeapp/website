@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.bioavailability-question-pairs",
+  "lessonId": "pharmacology.general.bioavailability-first-pass",
+  "title": "경로별 이용률의 질문",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "흡수 Fa",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "장관에서 들어온 분율",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "장벽·간 통과 Fg·Fh",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "초회통과 제거를 피한 분율",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "용량 보정 AUC 비",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "비교 조건의 절대 이용률",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.bioavailability-question-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "전신 도달과 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.bioavailability-question-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "모형 정의 확인",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.bioavailability-question-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "같은CL·선형성 등 필요",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "실제 제형의 교체 가능성·허가 판정이나 특정 제품 연구를 나타내지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience.vision.retina-field-pathways",
+  "subjectId": "neuroscience",
+  "chapterId": "vision",
+  "title": {
+    "ko": "망막의 신호 변환과 시야 경로",
+    "en": "Retinal Transduction and Visual Field Pathways"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroscience.vision.retina-field-pathways.lo.01",
+      "text": "빛의 수용과 망막 회로를 설명한다"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.lo.02",
+      "text": "시야와 망막·교차의 좌우를 연결한다"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.lo.03",
+      "text": "동공 반사와 시각 인식의 경로를 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.d0b2e1474584",
+      "type": "heading",
+      "level": 2,
+      "text": "빛은 광수용체를 과분극시킨다"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.68aca2e0312d",
+      "type": "paragraph",
+      "markdown": "막대세포와 원뿔세포는 빛을 전기적 신호로 바꾸지만 일반적인 감각 입력의 단순 탈분극 그림과는 다르다. 어두운 상태에서 고리형 GMP(cGMP)에 의해 열린 통로는 양이온 유입에 기여한다. 빛에 의한 시각색소와 G단백질·인산다이에스터레이스의 활성은 cGMP를 줄이고 이 전류를 감소시켜 광수용체를 과분극시킨다. 이 변화는 시냅스에서 글루탐산 방출의 감소로 이어진다. 빛이 들어오면 모든 망막세포가 같은 방향으로 탈분극한다는 설명은 성립하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.a657d72afb2c",
+      "type": "paragraph",
+      "markdown": "ON과 OFF 경로는 광수용체의 출력 변화를 서로 다른 수용체와 회로로 해석한다. ON 양극세포는 빛으로 글루탐산 입력이 줄 때 활성화되는 방향의 반응을 보일 수 있고, OFF 경로는 다른 관계를 가진다. 수평세포와 무축삭세포는 공간·시간의 대비와 회로 조절에 기여한다. 망막의 출력은 단순한 화소별 밝기 목록이 아니라 대비와 변화가 이미 처리된 정보다. 신경절세포의 수용장과 반응 종류도 다양하여 한 세포의 발화로 전체 시각 경험을 대표할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.739f5ece1248",
+      "type": "heading",
+      "level": 2,
+      "text": "적응과 시각의 범위"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.41db4f6982bf",
+      "type": "paragraph",
+      "markdown": "밝기에 적응하는 과정은 광수용체와 망막 회로의 여러 수준에서 일어난다. 막대세포는 낮은 조도에서 중요한 반면 원뿔세포는 밝은 환경의 색과 높은 공간 분해능에 기여한다. 중심와와 주변 망막은 세포 분포와 수렴 정도가 다르다. 어두운 곳의 희미한 물체가 시선을 조금 옆으로 돌릴 때 잘 보이는 경험은 이러한 분포와 연결하여 생각할 수 있다. 하지만 시각 능력은 광수용체 수뿐 아니라 광학계와 회로·피질 처리에 의존한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.aa0ecb46f036",
+      "type": "paragraph",
+      "markdown": "시력과 시야, 색각과 대비 감도는 서로 다른 검사다. 시력이 비교적 좋아도 넓은 시야의 일부를 놓치거나 색각과 시각 처리의 장애가 있을 수 있다. 검사 중 굴절과 조명·피로와 주의, 눈의 질환을 확인한다. 환자가 보이지 않는다고 말할 때 한쪽 눈인지 두 눈인지, 시야의 어느 부분인지와 시간 경과를 구체적으로 묻는다. 흐리게 보임·겹쳐 보임·시야의 소실은 다른 현상일 수 있어 같은 용어로 뭉뚱그리지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.cafd9d5e817d",
+      "type": "heading",
+      "level": 2,
+      "text": "망막상과 시야의 좌우"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.3d78dad5c218",
+      "type": "paragraph",
+      "markdown": "광학계 때문에 오른쪽 시야의 정보는 각 눈 망막의 왼쪽 절반에 맺힌다. 코쪽 망막에서 나온 축삭은 시교차에서 반대쪽으로 향하고 귀쪽 망막의 축삭은 같은 쪽으로 진행한다. 그 결과 오른쪽 시야의 정보는 주로 왼쪽 시삭 이후 경로로 모인다. 망막의 좌우와 환자가 보는 외부 시야의 좌우를 구별해야 시야결손의 국소화를 이해할 수 있다. 눈의 이름만으로 시야의 방향을 정하면 혼동하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.e878e4b1a23f",
+      "type": "paragraph",
+      "markdown": "한쪽 시신경 손상은 그 눈의 입력을, 시교차 주변 병변은 교차 섬유의 조합을, 시교차 뒤 병변은 양쪽 눈의 같은 쪽 시야 정보를 침범할 수 있다. 실제 결손의 형태는 병변 범위와 검사 방법에 따라 다르다. 시방사와 후두엽 경로의 구역별 배치는 추가적인 국소화 단서를 제공하지만, 단일한 도식으로 모든 환자의 결손을 확정하지 않는다. 주의와 언어 이해, 눈의 고정과 검사 신뢰도를 함께 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.8d04c476a993",
+      "type": "heading",
+      "level": 2,
+      "text": "반사와 의식적 시각"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.ba4590bd682c",
+      "type": "paragraph",
+      "markdown": "동공 빛반사는 망막 입력과 중뇌의 연결, 양측 부교감 출력 및 홍채의 반응을 포함한다. 이 경로는 의식적인 시각 인식의 전체 경로와 같지 않다. 동공 반응이 있다는 사실만으로 모든 시각 인식과 후두엽 기능이 정상이라는 뜻은 아니다. 반대로 동공 크기나 반응이 다르면 구심성 입력과 원심성 출력, 약물과 홍채·안구의 상태를 나누어 검토한다. 빛을 비추는 조건과 관찰 방법도 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.751aabcf69fe",
+      "type": "paragraph",
+      "markdown": "상대구심동공운동장애(relative afferent pupillary defect)는 양측 입력을 비교하는 검사 맥락에서 해석한다. 한쪽 동공 자체의 운동 장애와 같은 말이 아니다. 양측 병변이 비슷한 정도이면 상대적인 차이가 작을 수 있고, 검사 조건과 해석의 질도 영향을 준다. 시력·색각·시야와 안저, 다른 신경 소견을 통합하여 어느 단계의 문제인지 가설을 세운다. 동공 검사 하나로 모든 시신경 질환과 중추 시각 장애를 배제하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.88d34122993e",
+      "type": "heading",
+      "level": 2,
+      "text": "공간 정보에서 인식으로"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.53025967abe5",
+      "type": "paragraph",
+      "markdown": "외측무릎체와 시각겉질을 거친 정보는 여러 피질 영역과 연결되어 물체와 공간·움직임, 행동의 조절에 이용된다. 같은 시각 자극도 주의와 기대·이전 경험에 따라 보고가 달라질 수 있다. 시야결손과 무시, 물체 인식의 장애는 구별하여 평가한다. 예를 들어 한쪽 공간을 잘 탐색하지 않는 현상은 망막과 시신경의 입력 소실만으로 설명되지 않을 수 있다. 관찰과 간단한 과제, 전체 신경학적 진찰이 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.b.057cea1aaf7d",
+      "type": "paragraph",
+      "markdown": "시각 경로의 학습에서는 외부 시야와 망막, 교차와 최종 반구를 순서대로 추적하는 것이 유용하다. 정상 시신경이나 뇌의 표면 모형이 있더라도 실제 축삭의 교차와 시방사 섬유가 검증된 것은 아니다. 거시 위치와 개념적 정보 흐름은 별도로 표현한다. 환자의 시야결손을 정상 모델의 색만으로 확진하거나, 없는 경로 파일을 비슷한 구조로 대신 표시하지 않는다. 경로 도식은 국소화의 가설을 돕는 자료이며 실제 검사를 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.table0855",
+      "type": "table",
+      "data": {
+        "title": "관찰과 확인할 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "관찰",
+            "양안 오른쪽 시야의 반응 저하 의심"
+          ],
+          [
+            "미확인",
+            "주시 고정·주의·색각·다른 신경 소견"
+          ],
+          [
+            "도식",
+            "시야→망막→시교차 뒤 주요 경로"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neuroscience.vision.retina-field-pathways.diagram.right-field-major-pathway-0855",
+      "type": "diagram",
+      "diagramRef": "diagram.right-field-major-pathway-0855",
+      "path": "diagrams/diagram.right-field-major-pathway-0855.svg",
+      "alt": "오른쪽 시야의 주요 교차 관계"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/vision/sections/neuroscience.vision.retina-field-pathways.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroscience.vision.retina-field-pathways.001"
+  ],
+  "relatedLessons": [
+    "neurology.cranial.ocular-motor-diplopia",
+    "neurology.cranial.facial-trigeminal"
+  ]
+}

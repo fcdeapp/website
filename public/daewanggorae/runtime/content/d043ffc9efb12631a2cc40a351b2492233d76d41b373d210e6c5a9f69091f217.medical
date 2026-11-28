@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry",
+  "title": {
+    "ko": "생화학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "biochemistry.chapter.enzymes",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/enzymes/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.metabolism",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/metabolism/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.lipids",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/lipids/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.carbohydrate",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/carbohydrate/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.bioenergetics",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/bioenergetics/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.amino-acids",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/amino-acids/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.nucleotides",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/nucleotides/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.heme",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/heme/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.proteins",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/proteins/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.vitamins",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/vitamins/chapter.json"
+    },
+    {
+      "id": "biochemistry.chapter.redox",
+      "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/redox/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "biochemistry.plan.001",
+    "biochemistry.plan.002",
+    "biochemistry.plan.003",
+    "biochemistry.plan.004",
+    "biochemistry.plan.005",
+    "biochemistry.plan.006",
+    "biochemistry.plan.007",
+    "biochemistry.enzymes.kinetics",
+    "biochemistry.metabolism.tca",
+    "biochemistry.lipids.lipoproteins",
+    "biochemistry.carbohydrate.glycolysis",
+    "biochemistry.carbohydrate.gluconeogenesis",
+    "biochemistry.bioenergetics.oxidative-phosphorylation",
+    "biochemistry.carbohydrate.glycogen",
+    "biochemistry.amino-acids.urea-cycle",
+    "biochemistry.nucleotides.purine-pyrimidine",
+    "biochemistry.lipids.fatty-acid-oxidation",
+    "biochemistry.heme.synthesis-breakdown",
+    "biochemistry.carbohydrate.pentose-phosphate",
+    "biochemistry.carbohydrate.fructose-galactose",
+    "biochemistry.proteins.amino-acid-turnover",
+    "biochemistry.enzymes.allostery-thermodynamics",
+    "biochemistry.lipids.cholesterol-synthesis",
+    "biochemistry.lipids.bile-acid-cycling",
+    "biochemistry.metabolism.fed-fasting-integration",
+    "biochemistry.lipids.fatty-acid-synthesis",
+    "biochemistry.lipids.glycerolipid-synthesis",
+    "biochemistry.vitamins.cofactors",
+    "biochemistry.vitamins.folate-cobalamin-one-carbon",
+    "biochemistry.redox.antioxidant-systems",
+    "biochemistry.vitamins.fat-soluble-functions"
+  ]
+}

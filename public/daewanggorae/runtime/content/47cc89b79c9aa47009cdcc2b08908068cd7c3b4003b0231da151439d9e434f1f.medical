@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "electrolytes.potassium.distribution-excretion",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.9ec5a334896a",
+      "sourceSha256": "9ec5a334896a4a4df70dc710548352ed4f2511a28576d2ef675413f776d9d018",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.80b43a2a2ad7",
+      "sourceSha256": "80b43a2a2ad7d35f81059845deb7ed7b7ce019a11ba77072e24d06bc8cd2790d",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.bc45e044f68b9bf20041",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 2,
+            "end": 5,
+            "exact": "막전위",
+            "prefix": "안정",
+            "suffix": "는 여러 이온의 투과성과 농도 차에 의해 결"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        },
+        {
+          "id": "ann.b39e5bb10a6179cf82a0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 51,
+            "exact": "안정막전위는 여러 이온의 투과성과 농도 차에 의해 결정되며 안정 시 칼륨 투과성이 중요하다.",
+            "prefix": "",
+            "suffix": " 세포외 칼륨이 증가하면 칼륨의 평형전위가 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.b6b75a5a9354",
+      "sourceSha256": "b6b75a5a935427d837d18eae1c300489679e3e803bddb5e12d96cada053de6e4",
+      "sourceLengthUtf16": 230,
+      "annotations": [
+        {
+          "id": "ann.754590dcd19e5c9b6dcc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 145,
+            "end": 193,
+            "exact": "세포 안으로 이동시켜 혈중 농도를 낮추는 조치는 체내 칼륨을 제거하는 조치와 구별한다.",
+            "prefix": " 자극도 세포 내 이동을 촉진할 수 있다. ",
+            "suffix": " 효과가 소실되거나 세포에서 다시 나오면 농"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.82d552a43765",
+      "sourceSha256": "82d552a43765e5804577f90a75095d9b8a59fee944c2f4723f6be21a6d1ef670",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.953e31902609",
+      "sourceSha256": "953e319026099c06490264f6767627f115312ab9be786e2ea256c1fcd8ab3c08",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.b302d19b6749",
+      "sourceSha256": "b302d19b6749d4d95460a5d3f67b3a7c6e84695201a3e10fb3cc01854c0794b3",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.986854f4f892aeb61be1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 5,
+            "exact": "알도스테론",
+            "prefix": "",
+            "suffix": "은 이러한 수송계의 발현과 활성을 조절한다."
+          },
+          "conceptId": "reader.term.2dbad37f3f8aa1cf",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.6dba8dd89bf7808d4b9d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 132,
+            "end": 137,
+            "exact": "루프이뇨제",
+            "prefix": " 유량이 증가하면 분비가 촉진될 수 있다. ",
+            "suffix": "와 티아지드이뇨제에 의한 칼륨 소실은 원위 "
+          },
+          "conceptId": "reader.term.959cfee28f635784",
+          "targetDocumentId": "physiology.renal.segmental-transport"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.dfe102d0cbf7",
+      "sourceSha256": "dfe102d0cbf710676864069c6d40c9f1b03fc9db513ef052fc9965d4b3fd46a0",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.6d9765064439",
+      "sourceSha256": "6d9765064439c5cfef8947c275c19b0769c4626b1154f19131aca8e3ed09acb5",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.217167a40194",
+      "sourceSha256": "217167a401940346b9aea24cfb69cbaa7ec9cae108654b36907afe5c745faccd",
+      "sourceLengthUtf16": 231,
+      "annotations": [
+        {
+          "id": "ann.14694cc237904dc26a64",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 67,
+            "exact": "고칼륨혈증(hyperkalemia)에서는 배설 장애, 세포외 이동, 과도한 공급 및 검체에서 생긴 가성 상승을 구분한다.",
+            "prefix": "",
+            "suffix": " 용혈된 검체에서는 세포의 칼륨이 혈청으로 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.b6ac5a8245d0",
+      "sourceSha256": "b6ac5a8245d01ac17a5b32c25f66ae2cfaddc45be9b3f1246df7c3d374d3beea",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.potassium.distribution-excretion.b.e39aeaec47ab",
+      "sourceSha256": "e39aeaec47abe311e8d428c76eff6b4d1433124156c2e41ec9baa2613212626e",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.80e513a3869f8ad14b16",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 4,
+            "exact": "RAAS",
+            "prefix": "",
+            "suffix": " 억제제, 미네랄코르티코이드 수용체 길항제 "
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    }
+  ]
+}

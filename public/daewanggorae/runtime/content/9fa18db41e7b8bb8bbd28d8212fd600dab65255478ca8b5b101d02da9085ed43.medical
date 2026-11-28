@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.thalamic-relays",
+  "lessonId": "neuroanatomy.forebrain.thalamic-networks",
+  "title": "감각별 시상 중계의 구별",
+  "nodes": [
+    {
+      "id": "body",
+      "label": "몸의 체성감각 경로",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "vpl",
+      "label": "VPL",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "face",
+      "label": "얼굴의 삼차감각 경로",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "vpm",
+      "label": "VPM",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "retina",
+      "label": "시각로",
+      "x": 360,
+      "y": 680,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "lgn",
+      "label": "가쪽무릎체 LGN",
+      "x": 360,
+      "y": 830,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "hearing",
+      "label": "청각 뇌줄기 경로",
+      "x": 360,
+      "y": 980,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "mgn",
+      "label": "안쪽무릎체 MGN",
+      "x": 360,
+      "y": 1130,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.thalamic-relays.edge.1",
+      "source": "body",
+      "target": "vpl",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.thalamic-relays.edge.2",
+      "source": "face",
+      "target": "vpm",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.thalamic-relays.edge.3",
+      "source": "retina",
+      "target": "lgn",
+      "relation": "directed",
+      "label": ""
+    },
+    {
+      "id": "diagram.thalamic-relays.edge.4",
+      "source": "hearing",
+      "target": "mgn",
+      "relation": "directed",
+      "label": ""
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 1270
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 1270
+      },
+      "fontSize": 22,
+      "nodes": {
+        "body": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "vpl": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "face": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "vpm": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        },
+        "retina": {
+          "x": 240,
+          "y": 680,
+          "width": 360,
+          "height": 88
+        },
+        "lgn": {
+          "x": 240,
+          "y": 830,
+          "width": 360,
+          "height": 88
+        },
+        "hearing": {
+          "x": 240,
+          "y": 980,
+          "width": 360,
+          "height": 88
+        },
+        "mgn": {
+          "x": 240,
+          "y": 1130,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "각 핵의 주된 입력을 비교한 도식으로 핵 내부의 세포군·되먹임·겉질 표적 전체를 표시하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

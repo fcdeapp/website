@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.general.pharmacodynamics",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.2dfb6ff55a36",
+      "sourceSha256": "2dfb6ff55a36ab183eb03e00e0c68503a29fabe91f2bb4a444288c747921207e",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.2fe0d1b8766e",
+      "sourceSha256": "2fe0d1b8766e761d23dda899f431b0c56d69a1f1abe14b423702f9fe686c2380",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.30d2caf3ef1d",
+      "sourceSha256": "30d2caf3ef1d49b62c80d595dd73412dbe0c89a2517374714018e309d8933ad9",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.4cfa84285a6c",
+      "sourceSha256": "4cfa84285a6c014d2666c7e33e8d88b3c6579a2b33fb643ba2c1f9d9772d5b7e",
+      "sourceLengthUtf16": 208,
+      "annotations": [
+        {
+          "id": "ann.d26bc0b4eb8182ebac6b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 161,
+            "end": 164,
+            "exact": "약동학",
+            "prefix": "에서도 시점에 따라 반응이 다를 수 있다. ",
+            "suffix": "과 약력학을 나누어 배우되 실제 투여에서는 "
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.039535f2ebf5",
+      "sourceSha256": "039535f2ebf595e24daa69c65ca731daf2340606939118defa66cd0fa6c855ba",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.8c597580383d",
+      "sourceSha256": "8c597580383d50fbf05678c87f1c4c007ee6a40195286e7924f8fadb2c78aff8",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.5bd04a438d73",
+      "sourceSha256": "5bd04a438d7354d2e6a627cc46173c2126f6dfea66c8646475030cb85ca76000",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.c9c937cbfa22",
+      "sourceSha256": "c9c937cbfa22091c0b09ba61161bd4528d37e9a7305b23f3b8fc316471d45d68",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.d7d95ef9dc4327e1bb74",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 120,
+            "end": 166,
+            "exact": "약물 상호작용을 해석할 때 표적에서의 관계와 흡수·대사 등 노출의 변화도 구별한다.",
+            "prefix": " 결합 자리를 놓고 경쟁하는 것은 아니다. ",
+            "suffix": " 반응이 줄었다는 현상 하나만으로 기전을 확"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.6d81c91bc1a4",
+      "sourceSha256": "6d81c91bc1a4fe200d8919e4aa1a0610a45198f54df530e80064b8b0b6509208",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.2b43955ddece",
+      "sourceSha256": "2b43955ddeced6719c98e9476804d3415ada18e121a009ee6b8c2fca084365b7",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.445311d0d6e3",
+      "sourceSha256": "445311d0d6e300fb7cf51dcfdcb909884f9e36f60abf88b9564bb5a93bf6394b",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacodynamics.b.3c746fc8430f",
+      "sourceSha256": "3c746fc8430f34285c20a07670b73eb6b407162ecd852baf1fad20567f324288",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    }
+  ]
+}

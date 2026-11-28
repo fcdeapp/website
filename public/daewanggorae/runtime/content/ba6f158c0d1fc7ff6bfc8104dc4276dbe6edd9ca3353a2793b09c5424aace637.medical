@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.complications.remodeling-wall-stress",
+  "subjectId": "cardiology",
+  "chapterId": "complications",
+  "title": {
+    "ko": "경색 후 재형성과 벽응력",
+    "en": "Postinfarction Remodeling and Wall Stress"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.lo.01",
+      "text": "경색부·경계부·원격부의 반응을 설명한다"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.lo.02",
+      "text": "Laplace 근사의 전제를 설명한다"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.lo.03",
+      "text": "심실 용적·박출률·관류의 관계를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.3f642fc75d37",
+      "type": "heading",
+      "level": 2,
+      "text": "치유는 원래 조직의 단순 복원이 아니다"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.3b935a5fce9e",
+      "type": "paragraph",
+      "markdown": "심근경색 뒤 괴사한 조직은 염증세포의 제거와 섬유모세포·세포외기질의 반응을 거쳐 반흔으로 바뀐다. 반흔은 구조를 지지하지만 정상 심근과 같은 능동 수축을 하지 않는다. 염증이 너무 오래 지속되거나 기질의 생성·분해가 균형을 잃으면 벽의 강도와 형태가 불리하게 변할 수 있다. 손상 제거와 조직 지지는 서로 연결되지만 다른 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.7e4d990198f9",
+      "type": "paragraph",
+      "markdown": "경색부의 늘어남과 벽 두께 감소, 심실의 전반적 확장과 구형화가 재형성(remodeling)에 기여한다. 경계부는 손상 조직과 살아 있는 조직 사이에서 새로운 기계적 부담을 받고 원격부도 증가한 일을 맡을 수 있다. 따라서 초기 괴사 범위와 나중의 심실 기능은 같은 고정값이 아니다. 손상 뒤의 부하와 신경호르몬, 재관류와 합병증이 경과를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.eaee40940d8d",
+      "type": "heading",
+      "level": 2,
+      "text": "기하학이 만드는 부담"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.c15b2d504c52",
+      "type": "paragraph",
+      "markdown": "얇은 구형 막의 단순 근사에서 벽응력은 σ≈Pr/(2h)로 쓸 수 있다. P는 내외 압력차, r은 반지름, h는 벽 두께다. 압력과 두께가 같으면 반지름이 커질수록 응력이 증가한다. 실제 심실은 두꺼운 비구형·비등방성의 수축 조직이므로 이 식의 절대값을 환자 심근의 국소 응력으로 그대로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.49849e7377fd",
+      "type": "paragraph",
+      "markdown": "가상 압력차1, 반지름2에서 두께1이면 근사 응력은1이고 두께0.5이면2다. 늘어나고 얇아진 벽이 같은 압력을 만들기 위해 더 큰 부담을 받는 방향을 보여 준다. 벽응력 증가는 산소 수요와 추가 재형성에 연결될 수 있다. 그러나 기하학의 단순 상관만으로 특정 약물의 임상 이득을 직접 입증할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.e337a07a1f4b",
+      "type": "heading",
+      "level": 2,
+      "text": "보상과 장기적 비용"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.8939567a50fa",
+      "type": "paragraph",
+      "markdown": "교감신경·RAAS 계통은 급성 저관류에서 압력과 체액을 유지하는 데 기여한다. 지속 활성은 후부하·울혈·섬유화와 심근 부담을 늘리는 경로가 될 수 있다. 같은 신호가 초기 보상과 만성 위해의 다른 문맥을 가진다는 점이 중요하다. 신호를 억제하는 약물의 작용기전과 실제 환자에서의 적응·안전성을 별도로 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.ec07d6095493",
+      "type": "paragraph",
+      "markdown": "심실이 커지면 총 박출량을 유지하려는 보상이 가능하지만 충만 압력과 산소 비용이 높아질 수 있다. 박출률의 변화는 이완기말·수축기말 용적의 조합으로 결정된다. 같은 LVEF에서도 절대 용적과 전방 유량, 판막 역류가 다르면 임상 상태가 다르다. 비율 하나를 원래 조직의 회복 정도와 동일시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.4f36690ab22e",
+      "type": "heading",
+      "level": 2,
+      "text": "재형성을 측정하는 자료"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.6c0f12b8ec28",
+      "type": "paragraph",
+      "markdown": "연속 심초음파와 자기공명은 용적·형태·기능, 반흔과 생존 심근에 대한 정보를 제공한다. 비교할 때는 부하 조건과 영상 방법, 측정 변동을 확인한다. 이뇨 뒤 용적이 줄었다는 결과가 반흔 자체의 재생을 뜻하지는 않는다. 혈관 내 체액과 심실 기하학, 조직의 구조적 변화는 시간 규모가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.e2428c94ee90",
+      "type": "paragraph",
+      "markdown": "부정맥 위험과 혈전, 기능성 승모판 역류와 심부전은 재형성의 다른 결과가 될 수 있다. 다만 한 소견이 모든 결과를 직접 예측하는 것은 아니다. 증상·운동 능력·장기 관류와 영상, 약물 부작용과 추적을 함께 평가해야 한다. 구조의 역재형성과 환자가 느끼는 회복, 입원·생존의 이득은 각각 구별하여 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.61dac2862b04",
+      "type": "heading",
+      "level": 2,
+      "text": "정상 모델의 활용"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.b.c3154a1f4769",
+      "type": "paragraph",
+      "markdown": "정상 심실의 위치와 벽·판막 관계는 해부학 모델로 설명할 수 있다. 모델의 전체 크기를 단순히 늘린 그림은 실제 경색부 확장과 반흔의 분포를 재현한 환자 영상이 아니다. 가정한 반지름·두께를 바꾸는 도표는 수학적 방향성을 설명하는 자료로 표시한다. 정상 육안 구조와 병적 기하학, 생체 역학의 수준을 나누어 학습한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.diagram.cardiac-wall-stress-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.cardiac-wall-stress-toy",
+      "path": "diagrams/diagram.cardiac-wall-stress-toy.svg",
+      "alt": "반지름·두께와 근사 벽응력의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.complications.remodeling-wall-stress.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "경색부",
+            "제거·반흔·확장"
+          ],
+          [
+            "경계·원격부",
+            "부하 재분배·신경호르몬 반응"
+          ],
+          [
+            "얇은 구형 근사",
+            "σ≈Pr/(2h)"
+          ],
+          [
+            "추적 영상",
+            "부하 변화와 조직 변화를 구별"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/complications/sections/cardiology.complications.remodeling-wall-stress.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.complications.remodeling-wall-stress.001",
+    "question.cardiology.complications.remodeling-wall-stress.002"
+  ],
+  "relatedLessons": [
+    "cardiology.complications.structural-failure",
+    "cardiology.hemodynamics.right-ventricular-infarction"
+  ]
+}

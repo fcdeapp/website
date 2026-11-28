@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.cytotoxicity.cd8-nk-effector",
+  "subjectId": "immunology",
+  "chapterId": "cytotoxicity",
+  "title": {
+    "ko": "CD8 T세포와 NK세포의 표적 제거",
+    "en": "Target Elimination by CD8 T Cells and NK Cells"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.lo.01",
+      "text": "TCR 제한적 인식과 NK 신호 통합을 비교한다"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.lo.02",
+      "text": "탈과립과 표적 세포사를 구별한다"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.lo.03",
+      "text": "missing-self와 교육의 의미를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.c4de546a88b6",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 살상 장치를 다른 방식으로 겨눈다"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.1ecb3704fb72",
+      "type": "paragraph",
+      "markdown": "세포독성 CD8 T세포는 TCR을 통해 특정 펩타이드–MHC I을 인식하고 표적과 접촉한다. NK(natural killer) 세포는 활성·억제 수용체의 신호를 통합하여 반응하며 같은 방식의 재배열 TCR 특이성을 사용하지 않는다. 두 세포는 perforin·granzyme 관련 과립 방출 등 일부 제거 장치를 공유한다. 인식 방식이 다르다는 사실과 실행 기계가 일부 겹친다는 사실을 함께 이해해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.e26539fc6eea",
+      "type": "paragraph",
+      "markdown": "면역시냅스에서 세포골격과 과립의 방향이 조율되면 효과기 물질을 표적 쪽에 집중시킬 수 있다. Perforin은 granzyme이 표적 안에서 작동하도록 돕고 granzyme은 세포사 경로를 활성화할 수 있다. Fas–FasL과 같은 사멸수용체 경로도 관여한다. 과립 단백질이 있다는 사실만으로 방출·전달·표적 반응까지 모두 정상이라고 판단하지 않는다. 각 단계의 결함은 비슷한 최종 살상 저하를 만들 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.4227a2d86757",
+      "type": "heading",
+      "level": 2,
+      "text": "MHC I의 감소가 주는 서로 다른 신호"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.c8e892ce22c2",
+      "type": "paragraph",
+      "markdown": "MHC I이 낮아지면 일부 CD8 T세포의 인식이 감소할 수 있다. NK세포에서는 자기 MHC 관련 억제 신호가 약해지는 missing-self 효과가 반응을 유리하게 만들 수 있다. 그러나 활성 리간드와 수용체 조합, 세포의 교육 상태가 필요하므로 MHC I이 낮은 모든 세포가 즉시 모든 NK세포에 제거되는 것은 아니다. 억제 신호의 소실은 충분조건이 아닌 반응 조건의 한 부분이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.1d6c04e52bb0",
+      "type": "paragraph",
+      "markdown": "NK 교육 또는 licensing은 자기 MHC와 억제 수용체의 상호작용을 포함하여 반응 능력이 조정되는 과정이다. 자기 성분과 결합하는 억제 수용체가 정상 시에는 반응을 막으면서 발달·조절 과정에서는 기능적 반응성에 기여할 수 있다. 순간 억제와 장기적인 반응 능력의 조정은 다른 시간축이다. 수용체 하나가 억제성이라는 이름만으로 모든 효과를 설명할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.7816b434a112",
+      "type": "heading",
+      "level": 2,
+      "text": "항체가 표적을 가리키는 방식"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.993b90eacc15",
+      "type": "paragraph",
+      "markdown": "일부 NK세포의 CD16은 표적에 결합한 IgG의 Fc를 인식하여 antibody-dependent cellular cytotoxicity(ADCC)에 참여한다. 이때 항원 특이성은 항체가 제공하고 실행은 NK세포의 수용체·과립 기능이 담당한다. 항체의 결합과 실제 살상이 분리되는 또 하나의 예다. 표적 항원의 밀도와 항체의 Fc 특성, 효과기 세포의 상태가 결과에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.0e1ea2d363f5",
+      "type": "paragraph",
+      "markdown": "항체가 표적에 잘 붙어도 Fc가 수용체를 적절히 활성화하지 못하면 ADCC는 달라질 수 있다. 반대로 직접 중화 기능이 약해도 다른 Fc 관련 기능이 기여할 수 있다. 시험관의 결합 곡선과 세포 기반의 살상 곡선이 항상 같은 순서로 나타나지 않는 이유다. 어떤 기능을 측정하는지 명시해야 항체의 성능을 정확히 비교할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.4256a2c8d2a9",
+      "type": "heading",
+      "level": 2,
+      "text": "살상 검사의 대조"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.0a3a62985847",
+      "type": "paragraph",
+      "markdown": "효과기와 표적의 비율(E:T ratio), 접촉 시간과 표적의 자연 사멸률은 결과에 중요하다. 표적만 둔 대조에서 이미 많이 죽으면 효과기 특이적 살상을 과대평가할 수 있다. 표지 유출 검사에서는 자연 유출과 최대 유출의 범위를 고려하고, 세포 계수에서는 살아 있는 표적과 효과기를 구별한다. 같은 비율이라도 절대 세포 수와 접촉 환경이 다르면 결과가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.b.700328c2a886",
+      "type": "paragraph",
+      "markdown": "CD107a 표면 노출은 탈과립의 단서를 제공하지만 최종 표적 세포사와 같은 검사는 아니다. 탈과립이 보존되어도 과립 내용이나 표적의 세포사 저항이 문제일 수 있다. 반대로 특정 시간창의 낮은 표지는 자극·채혈 처리의 영향을 받을 수 있다. 인식·방출·표적 반응을 나누어 측정하면 면역결핍과 종양 회피의 기전을 더 정확하게 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.diagram.immune-lysis-background-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-lysis-background-toy",
+      "path": "diagrams/diagram.immune-lysis-background-toy.svg",
+      "alt": "자연 유출 보정의 산술의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.cytotoxicity.cd8-nk-effector.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "CD8",
+            "특정 펩타이드–MHC I과 TCR"
+          ],
+          [
+            "NK",
+            "활성·억제·교육 신호의 통합"
+          ],
+          [
+            "탈과립",
+            "내용물 방출의 단서"
+          ],
+          [
+            "표적 세포사",
+            "전달과 표적 반응을 포함한 별도 결과"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/cytotoxicity/sections/immunology.cytotoxicity.cd8-nk-effector.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.cytotoxicity.cd8-nk-effector.001",
+    "question.immunology.cytotoxicity.cd8-nk-effector.002"
+  ],
+  "relatedLessons": [
+    "immunology.t-cells.helper-differentiation",
+    "immunology.tolerance.thymic-selection"
+  ]
+}

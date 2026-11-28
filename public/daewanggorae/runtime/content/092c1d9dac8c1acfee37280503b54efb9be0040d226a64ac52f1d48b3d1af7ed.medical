@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.shock.oxygen-budget",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.79ccb6a4507f",
+      "sourceSha256": "79ccb6a4507f644ba49c6e3cb6a2c558b981cf3cec1d56ebf54cfe209b2e12b9",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.399a71cc0a9c",
+      "sourceSha256": "399a71cc0a9c8150f434d6fb20ffbef91c15c49d9773ae6a4a4ba18b49581d6d",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.64e361b31c27",
+      "sourceSha256": "64e361b31c27fdac2fb88b4eb69974bfbd79cb7ffaff5fbb3adbd6276e7f4ccf",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.1d5e791e39e6",
+      "sourceSha256": "1d5e791e39e6c3f7b02301a6ef696cfb8a0a37ace4253f9e85c82cf94aefabf9",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.16483fb2c465",
+      "sourceSha256": "16483fb2c465ee25843b3091afb0094da09e24f23e9b5b2338e2dba03845abc8",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.88850e78139022c20298",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 45,
+            "end": 99,
+            "exact": "혼합정맥혈 함량은 여러 장기의 사용 결과가 섞인 값이며, 검체가 어디에서 채취되었는지가 중요하다.",
+            "prefix": "은 CO×(CaO2−CvO2)로 연결된다. ",
+            "suffix": " CO=5L/min, 함량 차이가5mL/dL"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.f6b6761c0a26",
+      "sourceSha256": "f6b6761c0a269c3cb3776085a9771497636e11cda09270666329ccd5607b2b02",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.1517b2e5bbaf",
+      "sourceSha256": "1517b2e5bbaf64bde49ac49df75b0bff390de2c1b785954e01606b0779835728",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.6e434c8c1147",
+      "sourceSha256": "6e434c8c1147a5e712ea8f1cc7c33c09a8e98c245fc6bb3602b14863c5ef74e7",
+      "sourceLengthUtf16": 162,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.3fa7b6a78feb",
+      "sourceSha256": "3fa7b6a78feb14549d24d631c137f933aacecf96efe35a705ebdc93ba222ddf5",
+      "sourceLengthUtf16": 147,
+      "annotations": [
+        {
+          "id": "ann.c8cc8b73e47bb1c22408",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 147,
+            "exact": "전신 수지와 장기별 검사·진찰의 해상도를 구별한다.",
+            "prefix": "미세혈관 손상이 동시에 존재할 수도 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.shock.oxygen-budget.b.a47750a8516d",
+      "sourceSha256": "a47750a8516d8e0ad07cbb3a6c1c2b510243fb5e224d351a447e2c0701dae978",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    }
+  ]
+}

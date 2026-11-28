@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.hospital-ventilator-pneumonia",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.b.2ea83bb22630",
+      "sourceSha256": "2ea83bb22630d129fe321889fc18432f89b496d3bde1a951496025e2fa763c09",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.b.d32a3e043a8f",
+      "sourceSha256": "d32a3e043a8f967f30054e0fe4dd8e0f1c932521a0ad45e89733483eae82f97b",
+      "sourceLengthUtf16": 180,
+      "annotations": [
+        {
+          "id": "ann.54ceb17c556b33ed603a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 112,
+            "end": 146,
+            "exact": "기계환기 장치가 있다는 사실과 실제 폐 실질 감염은 구별한다.",
+            "prefix": " 진정·체위와 기도 관리가 함께 관여한다. ",
+            "suffix": " 기도 검체의 균은 집락과 감염의 다른 의미"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.b.29827e8d222a",
+      "sourceSha256": "29827e8d222aef3a21c4fe0dcb78cd317d59e792ead97d9676449ca4d9e2231e",
+      "sourceLengthUtf16": 167,
+      "annotations": [
+        {
+          "id": "ann.daf70df07d07eebc4b80",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 121,
+            "end": 167,
+            "exact": "분비물이 늘거나 균이 자랐다는 한 관찰만으로 모든 악화를 폐렴으로 확정하지 않는다.",
+            "prefix": ", 검체와 약물·시점의 변화를 함께 본다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.b.dd9affcd3f36",
+      "sourceSha256": "dd9affcd3f36521851621011a890d0bd658b72216a5a1c5372b1eaba753598d7",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.6fedd239b52e9ac4003f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 132,
+            "end": 134,
+            "exact": "기흉",
+            "prefix": "면 실제 환자와 기도·회로, 분비물 막힘과 ",
+            "suffix": " 등 즉시 해결할 문제를 확인한다. 검사 이"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.b.a54064b4cb0d",
+      "sourceSha256": "a54064b4cb0d88301e4c81cc5a9ff9e06d35e17f26cfc9bd484c67367a2138e2",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.b.c0c7d12d0ae0",
+      "sourceSha256": "c0c7d12d0ae0777e8a2c26f1e4b1b12fa1a6212e5734a65a06d4cc46e8170d43",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.02ec2b6f03bb990341ae",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 136,
+            "end": 172,
+            "exact": "신장과 용적 변화, 약물 상호작용과 실제 투여의 조건도 중요하다.",
+            "prefix": " 책임 원인 치료가 보장되는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.b.21a6421cc72e",
+      "sourceSha256": "21a6421cc72e02dc02dbbfa720314ed38301835fcac9859189875e3c0fe85e52",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.b.de1504ca8153",
+      "sourceSha256": "de1504ca815300995487063401be76899acf3b3a528bbbc858a2430e824ca3de",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.p.extra0846.0",
+      "sourceSha256": "3b5546a57ba79e1525ed6ec01514512c838d40f5ab43ecc8b18bf288796de10d",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.hospital-ventilator-pneumonia.p.extra0846.1",
+      "sourceSha256": "d964b318523a97274911bd557b96ea12fb58aee026e4d6712562fac3c720b837",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    }
+  ]
+}

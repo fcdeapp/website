@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.digestive.lipid-protein-absorption",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.4f6dc15c2980",
+      "sourceSha256": "4f6dc15c298084b09c84db2a54204dc83749f1e00dd1ef076f7a6d42ef32cbf2",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.4e48b19f95bc",
+      "sourceSha256": "4e48b19f95bcfe503dcf934138919a9916639245ee5d5c4b12778ccda3235f9c",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.10046d4edc02201c595d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 138,
+            "end": 210,
+            "exact": "나트륨–수소 교환과 세포 내 pH 조절은 수소 기울기 유지에 연결될 수 있지만,PEPT1이 직접 결합하는 이온과는 구별해야 한다.",
+            "prefix": "나트륨 직접 공동수송으로 부르면 안 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.a6cc37e8f4ef",
+      "sourceSha256": "a6cc37e8f4ef36f1d21ab246921908b7ff728597d8fae2c3a7462aabc11214c5",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.d4af00052ac4",
+      "sourceSha256": "d4af00052ac407aced1c94b3f70a6e4ed34babe1b2a1a9b34dabbb3bdd3570af",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.8ed22df54175",
+      "sourceSha256": "8ed22df5417571798deeb2cde7086389ca03a160e5384c5466813ae36178165f",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.d1167da6991832cf483c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 198,
+            "end": 218,
+            "exact": "가수분해·가용화·막 통과를 구별한다.",
+            "prefix": "가 그대로 혈중 입자가 되는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.b43a5a4c316c",
+      "sourceSha256": "b43a5a4c316c7bfbfc2b7cdc2be7141551e81016ee724db1102c7d5297cbfcc4",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.fe675bc505ae",
+      "sourceSha256": "fe675bc505aed64c5fb1dd1acf09a170129bd9f56aa24f61c076af7964d4a525",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.8617c5cfa1d0",
+      "sourceSha256": "8617c5cfa1d09cc5bdf537c391cc8174f1e2e597c677126b55dbb59c3ae56525",
+      "sourceLengthUtf16": 208,
+      "annotations": [
+        {
+          "id": "ann.b43bc61d4b0d67ec8182",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 106,
+            "end": 110,
+            "exact": "지단백질",
+            "prefix": "문맥으로 가는 수용성 영양소와 림프로 가는 ",
+            "suffix": "의 차이는 흡수 후 간에 먼저 도달하는 방식"
+          },
+          "conceptId": "reader.term.26809eb678edebb9",
+          "targetDocumentId": "biochemistry.lipids.lipoproteins"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.e7f2713e66a3",
+      "sourceSha256": "e7f2713e66a3028cf2a294e2bfacb943c296c27dbcede98152ac581de6e6a91b",
+      "sourceLengthUtf16": 249,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.ceafd0c6c426",
+      "sourceSha256": "ceafd0c6c426e5af7db549a1a30794edf4ea346ac773ef3c523ed9d21396733c",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.37e56a4e31d345ca2956",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 33,
+            "end": 77,
+            "exact": "높은 양에서의 비수용체성 흡수 기여와 정상 식사의 내인자 의존 경로도 구별한다.",
+            "prefix": " 운반단백질을 통한 조직 전달이 필요하다. ",
+            "suffix": " 식이 부족,벽세포·내인자 이상,췌장 기능,"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.94435ade911e",
+      "sourceSha256": "94435ade911e5a33734ce2473e2650534db7aa9fe093d319bfbb330c3b82c8b6",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.digestive.lipid-protein-absorption.b.47749101c608",
+      "sourceSha256": "47749101c608410ae5328104cafada0988333c1163c391632873ba27469c4e70",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    }
+  ]
+}

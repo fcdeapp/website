@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.lipids.glycerolipid-synthesis",
+  "subjectId": "biochemistry",
+  "chapterId": "lipids",
+  "title": {
+    "ko": "중성지방·글리세로인지질 합성과 지방방울",
+    "en": "Glycerolipid Synthesis and Lipid Droplets"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.lo.01",
+      "text": "글리세롤3인산 경로의 분지점을 설명한다"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.lo.02",
+      "text": "합성·지방분해·재에스터화의 순유량을 계산한다"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.lo.03",
+      "text": "저장 지질과 막 지질의 구조·기능을 비교한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.bcd103b97e40",
+      "type": "heading",
+      "level": 2,
+      "text": "세 지방산 저장형과 막의 양친매성 지질"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.42bad7924ab7",
+      "type": "paragraph",
+      "markdown": "트리아실글리세롤(triacylglycerol, TAG)은 글리세롤의 세 수산기에 지방산이 에스터 결합한 중성 지질이다. 에너지가 풍부하고 물을 많이 결합하지 않아 장기 저장에 적합하다. 글리세로인지질(glycerophospholipids)은 인산을 포함한 극성 머리와 소수성 사슬을 함께 가져 막의 구성과 신호에 중요하다. 두 지질의 합성 경로가 중간체를 공유한다는 사실은 에너지 저장과 막 생성이 대사적으로 연결되어 있음을 뜻한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.fd68fa55b954",
+      "type": "paragraph",
+      "markdown": "세포막의 모든 인지질이 동일한 글리세롤 골격을 가진다고 일반화해서는 안 된다. 예를 들어 스핑고미엘린은 다른 골격을 사용한다. 또한 같은 머리그룹이라도 지방산 사슬과 결합 형태가 달라 성질이 달라질 수 있다. 지질 이름 하나를 하나의 고정된 분자로만 취급하면 막의 유동성·곡률과 신호 기능의 다양성을 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.31e7a17cf531",
+      "type": "heading",
+      "level": 2,
+      "text": "글리세롤3인산에서 두 아실 사슬까지"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.579887d2060b",
+      "type": "paragraph",
+      "markdown": "글리세롤3인산(glycerol-3-phosphate, G3P)은 해당과정의 디하이드록시아세톤인산(DHAP)을 환원하여 얻을 수 있다. 간 등에서는 글리세롤을 인산화하는 경로도 이용한다. DHAP에서 G3P로 가는 반응을 산화라고 부르면 보조인자와 수소 이동을 반대로 이해하게 된다. 지방조직의 G3P 공급은 포도당 이용과 글리세론생성(glyceroneogenesis) 등의 영향을 받으므로 단일 공급 경로가 언제나 유일하다고 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.d689b66ce9ae",
+      "type": "paragraph",
+      "markdown": "GPAT는 첫 아실기를 붙여 리소포스파티드산(lysophosphatidic acid, LPA)을 만들고, AGPAT 계열은 다음 아실기를 붙여 포스파티드산(phosphatidic acid, PA)을 만든다. 아실CoA는 지방산을 공급하는 활성화된 형태다. 자유 지방산의 양과 이용 가능한 아실CoA의 양은 같은 정보가 아니며, 효소의 위치와 기질 선택성이 어떤 지질로 편입되는지에 영향을 줄 수 있다. 경로의 약어를 순서만 암기하기보다 매 단계의 골격·아실기·인산을 세어 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.cd7bc970ef29",
+      "type": "heading",
+      "level": 2,
+      "text": "포스파티드산과 다이아실글리세롤의 분지"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.1fb2a988ee4e",
+      "type": "paragraph",
+      "markdown": "포스파티드산 인산가수분해효소(phosphatidic acid phosphatase, PAP; lipin 계열 등)가 인산을 제거하면 다이아실글리세롤(diacylglycerol, DAG)이 된다. 여기에 DGAT가 세 번째 아실기를 더하면 TAG가 형성된다. TAG 한 분자의 세 아실 사슬을 모두 처음부터 새 지방산 합성으로 만들어야 하는 것은 아니다. 식사·혈중 유입·세포 내 재활용에서 온 사슬도 쓰일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.f375bcc438f7",
+      "type": "paragraph",
+      "markdown": "PA는 CDP-DAG를 거치는 인지질 합성에도, DAG는 활성화된 머리그룹을 붙이는 인지질 합성에도 연결된다. 포스파티딜콜린(PC)과 포스파티딜에탄올아민(PE)의 CDP콜린·CDP에탄올아민 경로가 대표적이다. 사람의 포스파티딜세린(PS) 합성에서는 PC·PE에 대한 머리그룹 교환을 구별해야 하며, 단순히 DAG에 유리 세린을 직접 붙이는 한 단계로 표시하지 않는다. 세포 내 인지질의 위치별 조성은 합성뿐 아니라 이동과 재가공에 의해 유지된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.bac1d53a6bfd",
+      "type": "heading",
+      "level": 2,
+      "text": "장세포의 재합성은 출발 물질이 다를 수 있다"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.dfa2d2c856c9",
+      "type": "paragraph",
+      "markdown": "식이지방 소화 뒤 장세포에는 모노아실글리세롤과 지방산이 공급된다. 모노아실글리세롤 경로는 이 물질을 재에스터화하여 TAG를 만드는 데 중요하다. 따라서 모든 조직의 TAG가 반드시 G3P에서 시작하는 동일한 경로만을 이용한다고 설명하지 않는다. 간의 VLDL 조립과 장의 킬로미크론 조립도 관련되지만 같은 입자·같은 아포단백질이라고 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.e47b068e3eb9",
+      "type": "paragraph",
+      "markdown": "TAG 합성의 효소 반응과 지단백질 입자로 포장하여 분비하는 과정은 서로 다른 단계다. 합성이 가능해도 조립·수송이 막히면 저장과 분비의 균형이 바뀐다. 혈중 중성지방이 낮다고 세포 내 지질이 반드시 적은 것도 아니고, 세포 내 지방방울이 많다고 새 합성만 증가한 것도 아니다. 수지에 들어오는 항목을 모두 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.c3462c6795db",
+      "type": "heading",
+      "level": 2,
+      "text": "지방방울은 단순한 기름주머니가 아니다"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.7fd389b968e6",
+      "type": "paragraph",
+      "markdown": "지방방울(lipid droplet)은 TAG·콜레스테릴 에스터 같은 중성 지질 중심부와 인지질 단층 표면, 관련 단백질로 구성된다. 표면을 세포막과 같은 인지질 이중층이라고 설명하지 않는다. 소포체와의 연결, 지방방울 단백질과 효소의 접근은 저장과 동원을 조절한다. 지방을 격리하여 자유 지방산과 일부 중간체의 과잉 영향을 완화하는 기능도 고려할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.c881f0bf823e",
+      "type": "paragraph",
+      "markdown": "지방분해에서는 ATGL·HSL·모노아실글리세롤가수분해효소 등이 서로 다른 단계에 중요하다. ATGL은 TAG, HSL은 특히 DAG 분해와 관련된다. HSL 혼자 모든 지방분해 단계를 담당한다는 오래된 단순화는 피한다. 호르몬 신호와 perilipin 등 지방방울 표면의 조절이 효소 접근을 바꿀 수 있으며, 생성된 지방산의 일부는 다시 에스터화될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.99af236ebb5f",
+      "type": "heading",
+      "level": 2,
+      "text": "총분해와 순방출을 구별하는 계산"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.ac36308b00aa",
+      "type": "paragraph",
+      "markdown": "같은 시간 동안 지방산이 가수분해로10단위 생성되고6단위가 다시 에스터화된다면, 다른 유입·유출이 없다는 가정에서 순방출은4단위다. 분해효소의 작용이10인데 혈액으로 나오는 양이4라는 것은 모순이 아니다. 반대로 저장 TAG의 순변화가0이어도 합성과 분해가 모두 활발할 수 있다. 대사적 회전(turnover)과 저장량을 구별해야 하는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.b.3312062d09c2",
+      "type": "paragraph",
+      "markdown": "재에스터화 분율 r을 고정하고 총생성 F에서 다른 경로를 무시하면 순방출은 F(1−r)로 쓸 수 있다. r이 커질수록 순방출은 줄지만 F 자체가 줄었다고 증명되는 것은 아니다. 이 수지는 독립 교육 모형이며 특정 지방조직의 실측 재에스터화율이 아니다. 실제 연구에서는 지방산 산화·조직 내 이동·혈류와 표지 희석을 포함하여 측정 경계를 설정한다. 농도나 지방방울 사진 하나만으로 유량을 확정하지 않는 것이 기본 원칙이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.diagram.fatty-acid-net-release",
+      "type": "diagram",
+      "diagramRef": "diagram.fatty-acid-net-release",
+      "path": "diagrams/diagram.fatty-acid-net-release.svg",
+      "alt": "재에스터화 분율과 순방출의 독립 계산 곡선"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.diagram.glycerolipid-branch-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.glycerolipid-branch-pairs",
+      "path": "diagrams/diagram.glycerolipid-branch-pairs.svg",
+      "alt": "글리세로지질의 분지 관계의 단계별 비교"
+    },
+    {
+      "id": "biochemistry.lipids.glycerolipid-synthesis.table.compare",
+      "type": "table",
+      "data": {
+        "title": "글리세로지질의 분지",
+        "columns": [
+          "단계",
+          "효소/과정",
+          "결과"
+        ],
+        "rows": [
+          [
+            "G3P→LPA",
+            "GPAT",
+            "첫아실화"
+          ],
+          [
+            "LPA→PA",
+            "AGPAT",
+            "둘째아실화"
+          ],
+          [
+            "PA→DAG",
+            "PAP/lipin",
+            "탈인산화"
+          ],
+          [
+            "DAG→TAG",
+            "DGAT",
+            "세번째아실화"
+          ],
+          [
+            "인지질",
+            "CDP-DAG·활성머리그룹등",
+            "막지질합성"
+          ]
+        ],
+        "notes": "사람PS의머리그룹교환·장세포MAG경로는별도로구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/lipids/sections/biochemistry.lipids.glycerolipid-synthesis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "지방방울의 표면은 인지질 단층이다.",
+    "총 지방산 생성과 재에스터화를 뺀 순방출은 다르다."
+  ],
+  "reviewQuestions": [
+    "question.biochemistry.lipids.glycerolipid-synthesis.001",
+    "question.biochemistry.lipids.glycerolipid-synthesis.002"
+  ],
+  "relatedLessons": [
+    "biochemistry.metabolism.fed-fasting-integration",
+    "biochemistry.lipids.fatty-acid-synthesis"
+  ]
+}

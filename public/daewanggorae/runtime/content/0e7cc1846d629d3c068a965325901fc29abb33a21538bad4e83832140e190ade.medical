@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.monomorphic-ventricular-tachycardia",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.monomorphic-ventricular-tachycardia.b.659a47fca5e9",
+      "sourceSha256": "659a47fca5e99da5073cfc3771b778832c7f069c0a5a501c3bed60a6d38ab3f3",
+      "sourceLengthUtf16": 237,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.monomorphic-ventricular-tachycardia.b.87855a668ab3",
+      "sourceSha256": "87855a668ab3f14c18d07dc00e9a77e81734a5cd96c850c096b0c6f796bf77a5",
+      "sourceLengthUtf16": 229,
+      "annotations": [
+        {
+          "id": "ann.6036624a983d1c4d1915",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 196,
+            "end": 229,
+            "exact": "형태는 중요한 정보지만 원인 질환을 완전히 대신하지 못한다.",
+            "prefix": " 관련 회귀와 다른 발생 기전도 감별한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.monomorphic-ventricular-tachycardia.b.6eca71569d6c",
+      "sourceSha256": "6eca71569d6c3011048deb941c4fc317f1eae8101d73c205bd75c175dfc6f42b",
+      "sourceLengthUtf16": 230,
+      "annotations": [
+        {
+          "id": "ann.4b6a9d2aebda4b266e7d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 132,
+            "end": 202,
+            "exact": "실제 회로의 존재에는 일방향 차단과 출구, 전도 안전성 등이 더 필요하므로 이 부등식만으로 회귀가 발생한다고 확정하지 않는다.",
+            "prefix": "앞에 회복된 조직이 있을 가능성이 생긴다. ",
+            "suffix": " 단위도 길이, 시간과 속도가 서로 일치해야"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.monomorphic-ventricular-tachycardia.b.1b4bb420fa2f",
+      "sourceSha256": "1b4bb420fa2f56eb77685526c89798a59abd9e87177e628fcbf1a5918211f212",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.monomorphic-ventricular-tachycardia.b.f453996ea556",
+      "sourceSha256": "f453996ea556b6f1b57e640bc0b8676f0ae4ff79e2f7e8ad1a6bf4a94dbac2dc",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.monomorphic-ventricular-tachycardia.b.b91e23cb3c65",
+      "sourceSha256": "b91e23cb3c654b47be856c7f734149dddc94e0ce11b9e35c042baa69c6e913d2",
+      "sourceLengthUtf16": 270,
+      "annotations": []
+    }
+  ]
+}

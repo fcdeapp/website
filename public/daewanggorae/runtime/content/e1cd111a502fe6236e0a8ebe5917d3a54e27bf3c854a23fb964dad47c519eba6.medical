@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.perioperative.wound-healing",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.e75dae8276ee",
+      "sourceSha256": "e75dae8276ee43963574be70f110b6fb207d8fe42ba0adf7eaf32bdfc4f2e8a7",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.ba51c304d8f2",
+      "sourceSha256": "ba51c304d8f20a4fe84f291125c77569087d5ea71924fe518264203938a59f0c",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.f5a58c998131",
+      "sourceSha256": "f5a58c998131b0724a58206accda2e8a73174c51beed9120079c14c141ab3ff6",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.fe98d469f715",
+      "sourceSha256": "fe98d469f71593040929c44b17b92305da200cbe77fbde1bfd85089c5a4b7cc7",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.97067ee76eba48c8d188",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 115,
+            "end": 118,
+            "exact": "당뇨병",
+            "prefix": " 따른 연속적인 특성을 가진다. 면역억제와 ",
+            "suffix": " 등은 미생물 처리와 세포 기능에 영향을 줄"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.8671ebb0d47e",
+      "sourceSha256": "8671ebb0d47edfb4662fc2ab43773faff0b76f89df1294643485c39c00461eb2",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.88ae8da9309d775787ee",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 40,
+            "end": 58,
+            "exact": "granulation tissue",
+            "prefix": "기질을 만들고 새로운 혈관이 자라 육아조직(",
+            "suffix": ")이 형성된다. 이는 만성 육아종성 염증의 "
+          },
+          "conceptId": "reader.term.8a331b02bb0d602d",
+          "targetDocumentId": "general-surgery.wound.proliferation-matrix"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.cd17a295ce1c",
+      "sourceSha256": "cd17a295ce1c5bc849f1cc5816d47b82201e1b3bb5d2507475dcb49c463dcaf2",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.6b72f893a675",
+      "sourceSha256": "6b72f893a6750c95b4c95785f0a6030827be9accc7e7aa02867edb84e7f80da5",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.737610df0742d86278ef",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 59,
+            "end": 103,
+            "exact": "콜라겐 합성과 성숙에는 산소, 영양과 여러 효소 및 보조인자의 조건이 중요하다.",
+            "prefix": "분해와 새 기질의 축적이 동시에 진행된다. ",
+            "suffix": " 비타민 C 결핍은 콜라겐의 수산화 과정과 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.b7087c2ac588",
+      "sourceSha256": "b7087c2ac58832940a9d95d865c29e387331e4e3046570b6d5007d1b1bfad244",
+      "sourceLengthUtf16": 223,
+      "annotations": [
+        {
+          "id": "ann.a0d0a9e17458d121be48",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 151,
+            "end": 223,
+            "exact": "창상 표면적과 색, 통증의 감소와 강도 회복은 같은 속도로 변하지 않으므로 한 지표만으로 운동과 하중의 안전성을 확정하지 않는다.",
+            "prefix": "조와 기능이 그대로 재현되는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.db797fdd9b23",
+      "sourceSha256": "db797fdd9b23078007dea610de1bd5c4bf94e175aef1f9ef232035d7568ba96d",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.6ec11638b0d6",
+      "sourceSha256": "6ec11638b0d654b7c94c7c2188a833875543be5a27b980c50f15f0fee86fbdb0",
+      "sourceLengthUtf16": 254,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.0c8c7f44da81",
+      "sourceSha256": "0c8c7f44da812826af90d6e3f30dd6df0cf5c60121a89fed10c9299ecaf98818",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.8f5472a9245f",
+      "sourceSha256": "8f5472a9245f7735b0549014349b21138dc16613c10fe07087314a6897a333a0",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.perioperative.wound-healing.b.538f7f953b08",
+      "sourceSha256": "538f7f953b08849808eacbe47255ea31397783bbe48638272a0b2fd27a3c0bf6",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "genetics.risk.penetrance-bayes",
+  "subjectId": "genetics",
+  "chapterId": "risk",
+  "title": {
+    "ko": "침투도·검사 결과와 가족 위험의 조건부확률",
+    "en": "Penetrance and Conditional Genetic Risk"
+  },
+  "learningObjectives": [
+    {
+      "id": "genetics.risk.penetrance-bayes.lo.01",
+      "text": "변이 전달 확률·발병 위험·검사 검출률을 구별한다"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.lo.02",
+      "text": "무증상 정보와 음성 검사로 사전확률을 갱신한다"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.lo.03",
+      "text": "독립 사건 가정과 가족 내 상관의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "genetics.risk.penetrance-bayes.b.56d5b642d9e9",
+      "type": "heading",
+      "level": 2,
+      "text": "전달과 발병은 다른 사건"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.5f9a0fc58bac",
+      "type": "paragraph",
+      "markdown": "침투도(penetrance)는 특정 유전형을 가진 집단에서 정의한 표현형이 나타나는 비율이다. 표현도(expressivity)는 발현한 특성의 종류·정도 차이에 관한 개념이다. 이형접합 부모에서 자녀로 한 대립유전자가 전달될 확률과, 그 대립유전자를 받은 자녀가 특정 나이까지 발병할 확률은 같은 값이 아니다. 변이 전달 확률이1/2이고 해당 조건의 침투도가0.8이라면 단순 모형의 변이 관련 발병 위험은0.5×0.8=0.4이다. 이 계산은 실제 질환의 위험을 임의로40%로 고정하는 규칙이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.8ddace6a6f8b",
+      "type": "paragraph",
+      "markdown": "침투도는 나이·성별·환경·변이 종류·연구 집단과 표현형 정의에 따라 달라질 수 있다. 어린 나이에 증상이 없다는 사실과 평생 발현하지 않는다는 사실도 다르다. 임상적으로 정상인 부모에게서 병적 변이가 나오는 상황은 불완전 침투도·모자이크·신생변이 등 다양한 설명을 검토하게 한다. 그러나 가족력이 없다는 소견만으로 유전적 원인을 배제하거나, 한 가족의 관찰 비율을 전체 집단의 침투도로 그대로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.773a9b8e0f36",
+      "type": "heading",
+      "level": 2,
+      "text": "사전확률과 무증상 정보"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.9901f181c682",
+      "type": "paragraph",
+      "markdown": "H를 해당 변이 보유 사건, U를 특정 나이까지 무증상 사건이라고 하자. 사전 보유 확률이p이고 보유자의 그 나이까지 침투도가f이면 P(U|H)=1−f이다. 비보유자는 모두 무증상이라고 단순화할 때 P(H|U)=p(1−f)/[p(1−f)+(1−p)]이다. 분자는 보유하면서 무증상인 집단이고 분모는 보유·비보유를 합친 무증상 집단 전체이다. 조건이 붙은 사건의 분모를 정하는 것이 계산의 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.e834a5e01831",
+      "type": "paragraph",
+      "markdown": "p=1/2, f=0.8이면 보유하면서 무증상인 비중은0.1, 비보유 무증상은0.5이므로 무증상인 사람의 보유 확률은1/6이다. 무증상이라는 이유로0이 되지는 않으며 사전확률1/2를 그대로 유지하는 것도 아니다. 표현형 정보가 보유 가능성을 낮춘 것이다. 비보유자도 유사 증상을 보이는 표현형모사(phenocopy)가 존재하거나 나이·관찰이 불완전하면 조건부확률을 바꾸어 계산해야 한다. 간단한 모형의 가정을 먼저 적는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.70dff4eac751",
+      "type": "heading",
+      "level": 2,
+      "text": "검사가 음성일 때"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.a6b7588a41ab",
+      "type": "paragraph",
+      "markdown": "검사 민감도 Se는 보유자에서 양성이 나올 확률이고 특이도 Sp는 비보유자에서 음성이 나올 확률이다. 사전 보유 확률p에서 음성 결과 뒤의 보유 확률은 p(1−Se)/[p(1−Se)+(1−p)Sp]이다. 음성 후 위험은 검사의 민감도만을1에서 뺀 값이 아니다. 사전위험과 비보유자의 음성 비율을 함께 반영한다. 양성예측도·음성예측도와 민감도·특이도는 조건의 방향이 다른 값이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.3e730b8f73fc",
+      "type": "paragraph",
+      "markdown": "p=0.25, Se=0.9, Sp=1인 학습 모형에서는 음성인 보유자의 비중이0.025, 음성인 비보유자가0.75이므로 잔여 보유 확률은1/31, 약3.23%이다. 이후 그 사람의 자녀가 변이를 받을 확률을 계산하려면 전달 모형을 추가해야 한다. 상염색체 이형접합 보유자의 전달률을1/2로 두는 특정 조건에서는1/62가 되지만 이것이 자녀의 발병 위험과 자동으로 같은 것은 아니다. 자녀의 침투도와 다른 부모의 유전형 등을 별도로 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.3d665ad15459",
+      "type": "heading",
+      "level": 2,
+      "text": "검사 범위와 변이 해석"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.8b96996c8643",
+      "type": "paragraph",
+      "markdown": "분석 민감도, 임상적 검출률, 변이의 병원성 분류는 구별해야 한다. 한 위치의 염기를 정확하게 읽는 기술적 능력이 높더라도 질환을 일으키는 모든 변이 유형을 포괄하는 것은 아니다. 반복서열 확장·큰 구조변이·깊은 인트론 변이·저수준 모자이크 등은 검사 방식에 따라 확인이 어려울 수 있다. ‘유전자검사 음성’이라는 말만으로 어떤 질환의 모든 유전적 원인이 제외되었다고 설명할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.bde0dd8fde46",
+      "type": "paragraph",
+      "markdown": "가족의 원인 병적 변이가 이미 확정되어 그 변이를 표적으로 검사한 상황과, 원인이 불명확한 가족에서 넓은 패널이 음성인 상황은 의미가 다르다. 임상적 의미가 불명확한 변이(VUS)를 질환 원인으로 확정하여 분리검사나 치료 결정을 자동 진행해서도 안 된다. 결과의 의미는 표현형 적합성, 변이 근거, 가족 정보 및 검사 범위와 연결된다. 확률 계산의 정밀한 소수점이 근거가 불확실한 병원성 판단을 대신해 주지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.cb47a28ae57a",
+      "type": "heading",
+      "level": 2,
+      "text": "열성 유전의 조건부확률"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.5e5068a6009e",
+      "type": "paragraph",
+      "markdown": "두 부모가 같은 상염색체 열성 질환의 이형접합 보유자이고 완전 침투도를 가정하면 각 임신에서 AA:Aa:aa의 확률은1:2:1이다. aa가 발병하고 나머지가 무증상이라면 무증상인 자녀가 보인자일 확률은2/3이다. 분모에서 발병한1/4을 제외하고 남은3/4 중 보인자1/2의 비율을 계산한 결과이다. 무증상 자녀 두 사람을 비교하더라도 각자의 유전형을 무조건 이미 확인한 것처럼 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.2738385cc5b8",
+      "type": "paragraph",
+      "markdown": "다음 임신의 분리 확률은 부모 유전형과 모형을 고정했을 때 이전 자녀의 결과 때문에 자동으로 보정되지 않는다. 그러나 부모 유전형 자체가 불확실한 상황에서는 여러 자녀의 결과가 그 불확실성을 갱신할 수 있다. 자녀의 사건이 조건부로 독립이라는 말과 모든 정보를 모르는 상태에서도 무조건 독립이라는 말은 다르다. 가족 위험을 계산할 때 무엇을 이미 알고 조건으로 두었는지 명시해야 하는 이유이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.0d3a4e9ac6a8",
+      "type": "heading",
+      "level": 2,
+      "text": "위험 설명과 임상 사용"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.b.1d0666a88f0b",
+      "type": "paragraph",
+      "markdown": "위험은 어떤 사건을 어느 기간까지 예측하는지 함께 설명해야 한다. 변이 보유·전달·특정 장기 질환·증상 발현·중증 합병증은 서로 다른 결과이다. 절대위험과 상대위험, 집단 평균과 개인의 불확실성도 구별한다. 계산 예시는 확률의 논리를 가르치기 위한 것이며 실제 가족의 상담에서는 확인된 진단과 변이, 연령별 침투도 및 최신 자료가 필요하다. 숫자만 전달하기보다 그 숫자를 바꾸는 가정과 아직 모르는 정보를 함께 제시한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.diagram.unaffected-carrier-risk",
+      "type": "diagram",
+      "diagramRef": "diagram.unaffected-carrier-risk",
+      "path": "diagrams/diagram.unaffected-carrier-risk.svg",
+      "alt": "무증상 정보와 잔여 보유 확률의 독립 계산 곡선"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.diagram.negative-test-carrier-risk",
+      "type": "diagram",
+      "diagramRef": "diagram.negative-test-carrier-risk",
+      "path": "diagrams/diagram.negative-test-carrier-risk.svg",
+      "alt": "민감도와 음성 후 잔여 보유 확률의 독립 계산 곡선"
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.table.comparison",
+      "type": "table",
+      "data": {
+        "title": "유전 위험에서 다른 조건",
+        "columns": [
+          "값",
+          "조건의 방향"
+        ],
+        "rows": [
+          [
+            "침투도",
+            "P(발병|유전형)"
+          ],
+          [
+            "전달률",
+            "P(자녀 변이|부모 유전형)"
+          ],
+          [
+            "민감도",
+            "P(양성|보유)"
+          ],
+          [
+            "음성 후 잔여 위험",
+            "P(보유|음성)"
+          ]
+        ],
+        "notes": "보유·발병·전달과 검출은 다른 사건이다. 실제 위험은 확인된 조건에 따라 계산한다."
+      }
+    },
+    {
+      "id": "genetics.risk.penetrance-bayes.equation.core",
+      "type": "equation",
+      "latex": "P(H\\mid -)=\\frac{p(1-Se)}{p(1-Se)+(1-p)Sp}",
+      "variables": {
+        "H": "변이 보유 사건",
+        "p": "사전 보유 확률",
+        "Se": "P(양성|보유)",
+        "Sp": "P(음성|비보유)"
+      },
+      "assumptions": [
+        "제시한 보유 정의와 검사의 성능을 동일 집단에 적용하는 모형",
+        "수치 예시는 실제 검사·질환의 성능 추정치가 아니다."
+      ]
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/genetics/chapters/risk/sections/genetics.risk.penetrance-bayes.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.genetics.risk.penetrance-bayes.001",
+    "question.genetics.risk.penetrance-bayes.002"
+  ],
+  "keyFacts": [
+    "1/6"
+  ],
+  "relatedLessons": [
+    "genetics.chromosomes.structural-number"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.electrocardiography.lead-vectors",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.electrocardiography.lead-vectors.b.a32bd4d285f5",
+      "sourceSha256": "a32bd4d285f54132b37fa3fe53b1e9aeb8256dc8bdc2aff8f84141dcdc997699",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.lead-vectors.b.e7a043bbf3b6",
+      "sourceSha256": "e7a043bbf3b65b523afea213c2539f0e956dd159208716331e95f92a8b210936",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.lead-vectors.b.42d2da3905c3",
+      "sourceSha256": "42d2da3905c304f26306a8d62098e3bbf76f6f712715bd61c1007e3bc5e54703",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.lead-vectors.b.f8187ec204f5",
+      "sourceSha256": "f8187ec204f5c18be767ac9fe2532247563fe2628ef5f4b9c88c3bb7f51918a4",
+      "sourceLengthUtf16": 170,
+      "annotations": [
+        {
+          "id": "ann.7fac0c903861f77128f1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 124,
+            "end": 170,
+            "exact": "관찰한 변화가 심장에서 시작한 것인지 측정 조건이 바뀐 것인지 먼저 구분해야 한다.",
+            "prefix": "들림·근육 잡음도 판독을 방해할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.electrocardiography.lead-vectors.b.9d72da62460a",
+      "sourceSha256": "9d72da62460a1d409ee5e388239e64859eb64e9b1ebcf55dbc76ae5f0ae5ff62",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.lead-vectors.b.f22feda111b2",
+      "sourceSha256": "f22feda111b2b7e8a06bb30b6e1381ac82dbc2dc5f96b0b0a067705eb1caecdc",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.lead-vectors.b.53d4f2375918",
+      "sourceSha256": "53d4f237591886e7885d9e0c5a7239307b00b6a18277749723e4a0c913132b5b",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.electrocardiography.lead-vectors.b.93f9964afc76",
+      "sourceSha256": "93f9964afc7618b95976994b0ebd4b1e28364ca89ffbbb43e94b8a4dbbdb377b",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    }
+  ]
+}

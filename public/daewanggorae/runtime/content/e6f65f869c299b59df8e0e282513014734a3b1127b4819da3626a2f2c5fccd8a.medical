@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "심방세동의 발생원과 기질",
+    "en": "Triggers and Substrate of Atrial Fibrillation"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.lo.01",
+      "text": "방아쇠와 유지 기질을 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.lo.02",
+      "text": "전기적·구조적 재형성을 연결한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.lo.03",
+      "text": "심방 기능 저하의 혈역학적 의미를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.7feafa9af599",
+      "type": "heading",
+      "level": 2,
+      "text": "방아쇠와 유지 환경"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.500260d0180a",
+      "type": "paragraph",
+      "markdown": "심방세동(atrial fibrillation, AF)은 심방의 활성화가 조직화된 하나의 주기로 유지되지 못하는 부정맥이다. 빠른 국소 방출, 여러 파의 전파와 충돌, 회귀를 지지하는 조직의 이질성 등이 관여하며 모든 환자에서 하나의 동일한 회로로 설명되지 않는다. 폐정맥 안으로 이어진 심근 소매(myocardial sleeve)의 이소성 활동은 중요한 시작 자극이 될 수 있다. 그러나 폐정맥 자체의 혈액 흐름이 전기적 자극을 운반한다는 뜻은 아니다. 근육의 막전위와 칼슘 조절, 주변 조직으로의 전도 관계가 관여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.thorax.heart.8aa996b1"
+      ]
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.96ece40a4616",
+      "type": "paragraph",
+      "markdown": "시작 자극(trigger)이 있다는 것과 심방 전체가 지속적으로 세동할 수 있다는 것은 다른 문제다. 섬유화, 심방 확장, 세포 간 연결 변화 및 불응기의 공간적 차이는 파가 느리거나 불균일하게 퍼지게 한다. 조직 일부가 회복되는 동안 다른 부분은 여전히 불응 상태이면 파가 쪼개지거나 돌아갈 여지가 생긴다. 고혈압, 판막질환과 심부전은 압력·용적 부하와 조직 변화를 통해 이러한 기질(substrate)에 기여할 수 있다. 비만과 수면무호흡, 음주 등도 심방의 환경과 발생 위험을 평가하는 데 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.0d687f0d772c",
+      "type": "heading",
+      "level": 2,
+      "text": "재형성과 지속성"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.485bd44298cb",
+      "type": "paragraph",
+      "markdown": "빠른 심방 활성화가 반복되면 이온전류와 칼슘 취급이 바뀌는 전기적 재형성(electrical remodeling)이 일어날 수 있다. 활동전위와 불응기의 변화는 다시 빠른 활성화의 유지에 영향을 준다. 더 긴 시간축에서는 확장과 섬유화, 염증 및 세포외기질 변화가 전도 환경을 바꾼다. 이 과정은 단순히 시간을 재는 분류와 동일하지 않다. 오래 지속되었다는 정보만으로 모든 조직 변화의 정도가 정해지지 않으며 개인마다 가역성과 기저 질환이 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.74cb9f951fac",
+      "type": "paragraph",
+      "markdown": "발작성, 지속성 등 임상적 분류는 발작의 지속과 종료 양상 및 치료 결정의 맥락을 정리한다. 이 분류는 한 번의 짧은 심전도로 확정하는 해부학적 병기가 아니다. 환자가 증상을 느끼지 못하는 기간에도 부정맥이 존재할 수 있고, 같은 환자에서 시간에 따라 양상이 변한다. 따라서 증상 빈도, 실제 기록 시간과 심방의 구조 및 동반 질환을 연결하여 평가한다. 환자가 느낀 두근거림의 길이만을 심방세동의 전체 지속 시간으로 치환하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.673166a03ea3",
+      "type": "heading",
+      "level": 2,
+      "text": "전기적 불규칙성과 순환"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.424b7fae5ba5",
+      "type": "paragraph",
+      "markdown": "심방의 동시 수축이 약해지면 심실 충만에 기여하던 심방 수축이 줄어들고, 빠르고 불규칙한 방실전도는 충만 시간과 박출량을 박동마다 바꿀 수 있다. 특히 심실 이완이 나쁘거나 유입에 제한이 있는 상태에서는 심방 수축 소실이 더 큰 영향을 줄 수 있다. 심방세동의 심실 반응이 언제나 빠른 것은 아니다. 방실전도 질환과 약물 영향에 따라 느릴 수 있으며, 완전 방실차단 등이 동반되면 심실 리듬이 규칙적으로 보일 수도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.b.216625312edf",
+      "type": "paragraph",
+      "markdown": "진단에는 실제 심전도에서 심방 활동과 심실 반응을 확인하는 과정이 필요하다. 광학 맥파의 불규칙 경고는 검사를 시작할 단서지만 심방 전기활동 자체를 직접 기록한 것은 아니다. 정상 3D 심방과 심실은 위치와 유입·유출 관계를 이해하는 보조 자료다. 정상 OBJ의 표면으로 심방세동의 파면이나 폐정맥 발생원, 섬유화 정도를 표현할 수는 없다. 전기적 진행을 보여 주려면 가정과 근거가 명시된 별도의 전기생리 도식이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "방아쇠",
+            "폐정맥 심근 등 발생 자극"
+          ],
+          [
+            "기질",
+            "섬유화·확장·전도 이질성"
+          ],
+          [
+            "전기적 재형성",
+            "전류·칼슘·불응기 변화"
+          ],
+          [
+            "기계적 결과",
+            "심방 수축 소실·충만 영향"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.anatomy3d.0828",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.thorax.heart.8aa996b1"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-mechanisms.visualization-limits.0828",
+      "type": "clinicalPearl",
+      "markdown": "정상 심방과 심실의 위치를 확인한다. 심방세동 파면·폐정맥 발생원·섬유화는 원본 정상 정적 메시에서 보이지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.atrial-fibrillation-mechanisms.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.atrial-fibrillation-mechanisms.001"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.atrial-flutter",
+    "cardiology.arrhythmias.atrial-fibrillation-burden"
+  ]
+}

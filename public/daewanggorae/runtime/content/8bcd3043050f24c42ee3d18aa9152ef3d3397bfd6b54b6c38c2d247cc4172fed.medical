@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.complications.remodeling-wall-stress",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.complications.remodeling-wall-stress.b.3b935a5fce9e",
+      "sourceSha256": "3b935a5fce9ef57b3a28e03962be57910e252d55189a7eaa8974ff40a972719c",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.complications.remodeling-wall-stress.b.7e4d990198f9",
+      "sourceSha256": "7e4d990198f91999e103b923290375beb373c4b0b9631b8d7687636f34a76241",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.complications.remodeling-wall-stress.b.c15b2d504c52",
+      "sourceSha256": "c15b2d504c52f213e50c5b36fa9dab4dc383aac0ba6a59fc158aea15338b7ce7",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.complications.remodeling-wall-stress.b.49849e7377fd",
+      "sourceSha256": "49849e7377fde203cfafb12564284f0cdb93abf038c27307b78c5bd3e3b3f7ae",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.complications.remodeling-wall-stress.b.8939567a50fa",
+      "sourceSha256": "8939567a50fa480101fbef1d7d7998ba06494e0249dcb8e6391e73293b52551e",
+      "sourceLengthUtf16": 176,
+      "annotations": [
+        {
+          "id": "ann.d7e2c0f58abbe8ea00e6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 5,
+            "end": 9,
+            "exact": "RAAS",
+            "prefix": "교감신경·",
+            "suffix": " 계통은 급성 저관류에서 압력과 체액을 유지"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.cd4d3702ea2694b98b5f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 86,
+            "end": 127,
+            "exact": "같은 신호가 초기 보상과 만성 위해의 다른 문맥을 가진다는 점이 중요하다.",
+            "prefix": " 심근 부담을 늘리는 경로가 될 수 있다. ",
+            "suffix": " 신호를 억제하는 약물의 작용기전과 실제 환"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.complications.remodeling-wall-stress.b.ec07d6095493",
+      "sourceSha256": "ec07d6095493e4bc991ccff82bc91227e2693ec4dcbd0ec8689daf194179c309",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.complications.remodeling-wall-stress.b.6c0f12b8ec28",
+      "sourceSha256": "6c0f12b8ec282bcd9bb03487b609a5fe4d0613499771aea20c04d0e216ddfdfa",
+      "sourceLengthUtf16": 162,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.complications.remodeling-wall-stress.b.e2428c94ee90",
+      "sourceSha256": "e2428c94ee90a6f4fb11e59b32dea224a7a4a684052372784dadd859747077b3",
+      "sourceLengthUtf16": 171,
+      "annotations": [
+        {
+          "id": "ann.97fa9f4241747d0111f2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 24,
+            "end": 27,
+            "exact": "심부전",
+            "prefix": "부정맥 위험과 혈전, 기능성 승모판 역류와 ",
+            "suffix": "은 재형성의 다른 결과가 될 수 있다. 다만"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.complications.remodeling-wall-stress.b.c3154a1f4769",
+      "sourceSha256": "c3154a1f476911a7e6f5ab974904937ceb769e9d4d35e62a703eba2a2d6df79b",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    }
+  ]
+}

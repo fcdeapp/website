@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "clinical-nutrition.assessment.malnutrition-inflammation",
+  "subjectId": "clinical-nutrition",
+  "chapterId": "assessment",
+  "title": {
+    "ko": "영양불량과 염증·체액 상태의 통합 평가",
+    "en": "Malnutrition Inflammation and Fluid Status"
+  },
+  "learningObjectives": [
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.lo.01",
+      "text": "영양 선별과 진단 평가를 구별한다"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.lo.02",
+      "text": "체중·근육·섭취·염증을 통합한다"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.lo.03",
+      "text": "알부민과 공급량의 해석 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.2912d9e3ebc1",
+      "type": "heading",
+      "level": 2,
+      "text": "부족한 영양의 여러 경로"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.95852daaf760",
+      "type": "paragraph",
+      "markdown": "영양불량(malnutrition)은 단순히 체중이 적다는 한 가지 모습으로 나타나지 않는다. 음식 섭취와 흡수의 부족, 요구량과 손실의 증가 및 염증에 따른 대사 변화가 서로 다른 비중으로 작용한다. 체중이 높은 사람에게도 근육과 기능의 손실이 있을 수 있다. 질병의 종류와 시간 경과, 최근 식사와 체중의 변화를 함께 살피는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.a2a25fd5348a",
+      "type": "paragraph",
+      "markdown": "영양 선별(screening)은 위험이 있어 자세한 평가가 필요한 사람을 찾는 단계다. 상세 평가는 체중·신체 구성과 기능, 섭취·흡수 및 질병과 염증의 영향을 통합한다. 선별 점수가 높다는 사실과 원인·중증도를 모두 확정한 진단은 구별해야 한다. 점수를 얻는 데 그치지 않고 실제 공급을 방해하는 통증과 구역·삼킴장애, 경제·돌봄 및 접근성 문제를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.b4a596a93d66",
+      "type": "heading",
+      "level": 2,
+      "text": "체중의 변화와 체액"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.a88b7516f899",
+      "type": "paragraph",
+      "markdown": "체중 감소율은 기준 체중에서 줄어든 양을 기준 체중으로 나누어 계산한다. 60kg에서 54kg으로 감소한 예에서는 6/60×100=10%다. 그러나 같은 감소율이라도 기간과 의도 여부, 질병 및 섭취 상황에 따라 의미가 달라진다. 언제의 어떤 조건에서 측정한 값인지, 부종과 수액·이뇨가 얼마나 영향을 주었는지도 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.80483b29b4ae",
+      "type": "paragraph",
+      "markdown": "체액이 늘면 근육과 지방이 줄어도 체중 감소가 가려질 수 있다. 반대로 탈수가 교정되거나 부종이 줄 때의 체중 변화는 조직의 급격한 생성·소실과 같지 않다. 체중을 단독으로 읽기보다 부종과 체액 수지, 신체진찰과 기능 및 실제 섭취를 함께 평가한다. 하루 사이의 숫자 변화에 맞추어 영양 상태가 모두 좋아졌거나 나빠졌다고 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.0e56ad3e02df",
+      "type": "heading",
+      "level": 2,
+      "text": "근육과 기능의 평가"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.a63e7d18ae98",
+      "type": "paragraph",
+      "markdown": "근육량은 저장과 구조뿐 아니라 움직임·호흡 및 회복의 여력과 관련된다. 신체진찰과 신체 구성 측정, 기능 평가 등은 서로 다른 측면을 보여준다. 측정 방법과 자세·부종, 통증과 협조 및 도구의 기준이 해석에 영향을 준다. 한 부위의 수치가 전신 기능과 완전히 같지는 않으며, 반복 비교에는 같은 조건을 유지하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.f39626e643e8",
+      "type": "paragraph",
+      "markdown": "악력과 보행 등 수행 검사는 기능의 단서가 되지만 관절 질환과 신경계 이상, 피로와 학습·동기의 영향을 받는다. 근육의 형태가 줄었다는 소견과 힘이 떨어진 원인을 함께 검토해야 한다. 영양 공급만으로 모든 기능 저하가 회복된다고 기대하지 않으며 재활과 질환 치료·통증 조절을 병행한다. 환자가 실제로 하고 싶은 활동의 변화도 결과 평가에 포함한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.8f20fafc0873",
+      "type": "heading",
+      "level": 2,
+      "text": "알부민과 염증"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.5563f6079999",
+      "type": "paragraph",
+      "markdown": "혈청 알부민은 간 합성과 분포, 혈관 투과성과 체액·손실 등 여러 요인의 영향을 받는다. 염증이 있는 환자에서 낮은 농도를 곧바로 먹지 못한 양의 정밀한 측정값으로 읽을 수 없다. 반대로 농도가 정상이라고 최근의 심한 섭취 부족과 근육 손실을 모두 배제할 수도 없다. 알부민은 임상 맥락을 이해하는 자료지만 독립적인 영양 성적표가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.bfaa831c407c",
+      "type": "paragraph",
+      "markdown": "치료 뒤 알부민이 변할 때에도 염증의 호전과 체액 이동, 간과 신장·장관의 변화 등을 함께 본다. 농도를 올리는 조치와 조직의 영양 상태를 회복하는 과정은 같은 결과가 아니다. 정맥으로 알부민을 투여해 측정값이 올랐다는 사실을 근육과 식사 능력이 회복되었다는 증거로 사용하지 않는다. 영양 평가와 다른 적응증의 치료 목적을 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.b9c403ec86e7",
+      "type": "heading",
+      "level": 2,
+      "text": "계획량과 실제 공급량"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.d6f6c6d54dd0",
+      "type": "paragraph",
+      "markdown": "하루 공급을 계획한 열량과 실제 환자에게 전달되어 이용된 양은 다를 수 있다. 검사와 시술로 중단된 시간, 구역·설사와 주입 문제, 남긴 음식과 보조 식품의 실제 섭취량을 기록한다. 예를 들어 계획 1,800kcal 중 실제 1,200kcal를 섭취했다면 달성률은 약 66.7%다. 처방이 적혀 있다는 사실만으로 충분한 공급이 이루어졌다고 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.b.a47b66df4f48",
+      "type": "paragraph",
+      "markdown": "공급을 늘리는 속도와 경로는 질환과 소화관 기능, 전해질과 대사·체액 및 재급식 위험을 고려하여 개별화한다. 추적에는 실제 섭취와 불편감, 체중의 조건·근육과 기능, 전해질 및 원인 질환의 변화를 함께 포함한다. 더 많은 열량이 언제나 더 좋은 결과를 뜻하지 않는다. 환자가 감당할 수 있는 공급과 회복 목표, 치료 부담을 통합한 계획이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.table0858",
+      "type": "table",
+      "data": {
+        "title": "소견과 평가 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "체중",
+            "부종이 있어 이전과 비슷함"
+          ],
+          [
+            "섭취",
+            "최근 지속 감소"
+          ],
+          [
+            "기능",
+            "근력과 활동 저하"
+          ],
+          [
+            "검사",
+            "염증 소견, 알부민 감소"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.diagram.nutrition-weight-0858",
+      "type": "diagram",
+      "diagramRef": "diagram.nutrition-weight-0858",
+      "path": "diagrams/diagram.nutrition-weight-0858.svg",
+      "alt": "기준 체중 대비 감소율의 독립 계산 곡선"
+    },
+    {
+      "id": "clinical-nutrition.assessment.malnutrition-inflammation.diagram.nutrition-delivery-0858",
+      "type": "diagram",
+      "diagramRef": "diagram.nutrition-delivery-0858",
+      "path": "diagrams/diagram.nutrition-delivery-0858.svg",
+      "alt": "계획량 대비 실제 섭취의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/clinical-nutrition/chapters/assessment/sections/clinical-nutrition.assessment.malnutrition-inflammation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.clinical-nutrition.assessment.malnutrition-inflammation.001",
+    "question.clinical-nutrition.assessment.malnutrition-inflammation.002",
+    "question.clinical-nutrition.assessment.malnutrition-inflammation.003"
+  ],
+  "relatedLessons": [
+    "rehabilitation.swallowing.aspiration-risk",
+    "dermatology.pressure-injury.tissue-loading"
+  ]
+}

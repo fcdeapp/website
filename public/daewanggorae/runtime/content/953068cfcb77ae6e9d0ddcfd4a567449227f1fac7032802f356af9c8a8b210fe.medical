@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.inflammation.acute-morphology",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.inflammation.acute-morphology.b.df61722c6151",
+      "sourceSha256": "df61722c61512271da1fc77112c3928ec714e3ae654fbf409757a8724a2a4e92",
+      "sourceLengthUtf16": 200,
+      "annotations": [
+        {
+          "id": "ann.6680b1dcaee810b1de2d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 5,
+            "exact": "급성 염증",
+            "prefix": "",
+            "suffix": "의 육안과 조직 소견은 혈관 반응, 유출된 "
+          },
+          "conceptId": "reader.term.f2acf854a49eb98c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.acute-morphology.b.a44dc0ba566e",
+      "sourceSha256": "a44dc0ba566e268bce3ca130b75560157538ae2c9cdfde25ece73ae9fd60453a",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.acute-morphology.b.2189e2f3e568",
+      "sourceSha256": "2189e2f3e568f32c30c5e716454c4c4b4e1023efcde60af91b565f07451d29a8",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.acute-morphology.b.1ae0ebcd258f",
+      "sourceSha256": "1ae0ebcd258f8659701ec9c2c60dfca5d9767f38c8b8e5f0bd289cc37fe3495b",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.acute-morphology.b.ee0328b70228",
+      "sourceSha256": "ee0328b70228066cad675dcbe1a406869126f06a7472bafe08a1fe8717230a8b",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.f03eaafe628e2b27d5f3",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 122,
+            "end": 126,
+            "exact": "육아조직",
+            "prefix": "을 구별할 수 있다. 주변부는 시간에 따라 ",
+            "suffix": "과 섬유성 벽을 형성할 수 있다. 중심의 표"
+          },
+          "conceptId": "reader.term.8a331b02bb0d602d",
+          "targetDocumentId": "general-surgery.wound.proliferation-matrix"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.acute-morphology.b.827836667c7f",
+      "sourceSha256": "827836667c7f1388778bac89347e364a2746c1f669fc51c30bd6ef97f6904807",
+      "sourceLengthUtf16": 189,
+      "annotations": [
+        {
+          "id": "ann.94b9c74266704189076e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 56,
+            "exact": "고름이 관찰된다는 사실이 특정 균종을 확정하지 않으며, 고름이 적다는 사실도 감염을 배제하지 않는다.",
+            "prefix": "",
+            "suffix": " 세포 동원 결함이나 면역억제는 병변의 세포"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.acute-morphology.b.3ed8d6bba6dc",
+      "sourceSha256": "3ed8d6bba6dc781367649d0f76f2e02fa9dd7631e83bb695ea9ccee58dd2570c",
+      "sourceLengthUtf16": 173,
+      "annotations": [
+        {
+          "id": "ann.d21d176570481cd03a2b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 133,
+            "end": 138,
+            "exact": "만성 염증",
+            "prefix": "수 있다. 표면의 급성 삼출과 깊은 부위의 ",
+            "suffix": "·섬유화가 함께 존재하는 것은 흔히 다른 시"
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.acute-morphology.b.12a04e59d425",
+      "sourceSha256": "12a04e59d425881864fe4649e96a96ecc23f2110847f05eb12562dd6b331ceb4",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    }
+  ]
+}

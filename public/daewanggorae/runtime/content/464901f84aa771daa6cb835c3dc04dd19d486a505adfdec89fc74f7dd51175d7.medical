@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "colorectal-surgery.ibd.uc-colectomy-staging",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.b.6925638b56d3",
+      "sourceSha256": "6925638b56d3bf322c696b5fdec8d748c667f8dbccc01b7df2544b62c1f72f9c",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.f9a7ca99d09fc83f59a2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 8,
+            "end": 26,
+            "exact": "ulcerative colitis",
+            "prefix": "궤양성 대장염(",
+            "suffix": ", UC)은 대장의 점막 염증을 중심으로 하"
+          },
+          "conceptId": "reader.term.9cc9daa84df18d88",
+          "targetDocumentId": "gastroenterology.inflammation.ibd"
+        },
+        {
+          "id": "ann.793c45193d38a23e54a2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 175,
+            "end": 212,
+            "exact": "같은 설사라도 활성 염증·감염·약물과 기능적 원인은 구별해야 한다.",
+            "prefix": " 상태에서 감염성 원인이 겹칠 수도 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.b.f4ccf345b7d8",
+      "sourceSha256": "f4ccf345b7d86e8ad75ae161a33abd257034b527e66fbde7343020a73e0a9316",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.b.89980e395f26",
+      "sourceSha256": "89980e395f2648bad5c5de145b6b4676dcec180c67a44b4d97a60851c058226f",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.b.37a375bf068a",
+      "sourceSha256": "37a375bf068a6b1d781f3b4b4cc21d6420f74f312d43396a4cf6d1ff663b38b1",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.36e5015f0589a7285838",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 180,
+            "end": 210,
+            "exact": "절제된 장의 병리도 최종 진단과 이후 계획에 중요하다.",
+            "prefix": "류·혈전 위험·상처·장루·영양을 관리한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.b.60ade4228c1a",
+      "sourceSha256": "60ade4228c1a209cb92a9f3b96e99240c92be2bc68d624b7aba54bb56edb8422",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.b.60c26506b395",
+      "sourceSha256": "60c26506b395904dfa10b257ac90a3778b3f21620769ef431ab5a1a8b4fcf103",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.b.2a08c4aa9992",
+      "sourceSha256": "2a08c4aa99929ae93859637ba7fe8f31b595d739ac2a0fb37804f2c52b610f09",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.fe7c538f3775b79729d4",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 75,
+            "end": 78,
+            "exact": "크론병",
+            "prefix": "만들 수 있다. 감염과 배출 장애·누공 및 ",
+            "suffix": " 가능성 등도 감별한다. 증상을 낭염 하나로"
+          },
+          "conceptId": "reader.term.e3bba5256033da1f",
+          "targetDocumentId": "gastroenterology.inflammation.ibd"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.b.93c326473470",
+      "sourceSha256": "93c326473470de5f97282bb20c002debbd7ecb1fe91efce1efeaef3cd58acfc2",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.supp.6498d42fdc22",
+      "sourceSha256": "6498d42fdc22497839a5d72cb211c63f7c84d365790df92fa748c75ed7eefda7",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.uc-colectomy-staging.supp.32e924669079",
+      "sourceSha256": "32e9246690796127bd9a02056b0d817ae613e82997604eeb353bfc016940ec70",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.bundle-branch-wide-qrs",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.5fdd59d24227",
+      "sourceSha256": "5fdd59d2422719b1d84c263befd65da061d685c3cf122c380dae4eb121b4d222",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.5da75f05042d",
+      "sourceSha256": "5da75f05042d04b659f235824499f5235e860887202cdf55256358e840b239a2",
+      "sourceLengthUtf16": 235,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.463b2f038280",
+      "sourceSha256": "463b2f038280d3f7a6be3275eef1c90872aa3b4001f4c39d7c6c95fb082dc1a8",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.07708ff867cc",
+      "sourceSha256": "07708ff867cce04aec80c1cccf9c8363dd59f12adad6c1cbf55041ac233f3d66",
+      "sourceLengthUtf16": 250,
+      "annotations": [
+        {
+          "id": "ann.be438f0e69dcbbbd74fe",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 221,
+            "end": 250,
+            "exact": "양성 단서의 특이성과 음성 소견의 배제력을 구별한다.",
+            "prefix": "있어 방실 관계가 단순하지 않을 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.f909990bfeeb",
+      "sourceSha256": "f909990bfeeb33c88843759da6fcb4427853f96b3b2a4f373810528be5e70b45",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.bundle-branch-wide-qrs.b.5c977f5aa543",
+      "sourceSha256": "5c977f5aa5433592d16c71abeb1891920236ed8b100feb23ba0c26786c558468",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.d0684f528bd4959ce8ea",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 15,
+            "end": 18,
+            "exact": "심부전",
+            "prefix": "저관류, 의식 변화와 급성 ",
+            "suffix": "이 동반되면 안정화가 진단 알고리즘의 완성보"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    }
+  ]
+}

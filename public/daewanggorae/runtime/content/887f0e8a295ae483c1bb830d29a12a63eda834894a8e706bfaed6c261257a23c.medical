@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.infection.meningitis-encephalitis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.71af89a3d12c",
+      "sourceSha256": "71af89a3d12c75469bf25241d0ff16c5d73d13290e6037d8dce6dbe70ae0d9b1",
+      "sourceLengthUtf16": 257,
+      "annotations": [
+        {
+          "id": "ann.7860c344826a9dbd31ae",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 31,
+            "end": 35,
+            "exact": "뇌척수액",
+            "prefix": "ingitis)은 뇌와 척수를 둘러싼 막과 ",
+            "suffix": " 공간의 염증을, 뇌염(encephaliti"
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.af8754a3328d",
+      "sourceSha256": "af8754a3328dd10b631816f0c5aeaf094f37e7ce377b735509d850da11c22878",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.32f87ef942f6",
+      "sourceSha256": "32f87ef942f6fb849602a70423783e3ec0070699df89384a213084a898c6a89a",
+      "sourceLengthUtf16": 259,
+      "annotations": [
+        {
+          "id": "ann.426b3464ce45b1bedda5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 72,
+            "exact": "요추천자(lumbar puncture)는 뇌척수액의 세포와 단백·포도당, 배양과 분자검사를 통해 원인 가설을 좁히는 데 중요하다.",
+            "prefix": "",
+            "suffix": " 그러나 검사 전에는 천자와 관련된 위험과 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.86126f323a9b",
+      "sourceSha256": "86126f323a9b4d4c52aa82f8c355350ca8e416d5ca74e9df0c91a37e4da37fd5",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.6f22cb713e67",
+      "sourceSha256": "6f22cb713e67866f8a64c04634da3db6dd56c4eb0df7f8c590681aea5cd37b58",
+      "sourceLengthUtf16": 231,
+      "annotations": [
+        {
+          "id": "ann.66271f4e22298ab2c8a7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 116,
+            "end": 118,
+            "exact": "결핵",
+            "prefix": "면역 상태에 따라 겹치는 결과가 나타난다. ",
+            "suffix": "과 진균, 악성 침범과 비감염성 염증도 감별"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.1aee134196be",
+      "sourceSha256": "1aee134196be45e1b2a38c896d5012325c62176a16ff7905e755af70b362a0f5",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.bf77185dd3d2",
+      "sourceSha256": "bf77185dd3d2b77e2735ef9a5ffd389bc3427c65e3763e56fba7144bbc67bfa0",
+      "sourceLengthUtf16": 233,
+      "annotations": [
+        {
+          "id": "ann.8d58c7fd6a4e92688815",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 193,
+            "end": 233,
+            "exact": "항체의 종류와 혈청·뇌척수액 검체, 검사법과 검사 전 가능성이 중요하다.",
+            "prefix": "않는 자가면역 뇌염을 확정해서도 안 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.63aae46e8f34",
+      "sourceSha256": "63aae46e8f3452cf289ee8bda8a7854de7375034940eda040b03617ee10d6aeb",
+      "sourceLengthUtf16": 226,
+      "annotations": [
+        {
+          "id": "ann.18e11bcba7e7ec6e780f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 13,
+            "end": 16,
+            "exact": "뇌전증",
+            "prefix": "뇌파는 발작과 비경련성 ",
+            "suffix": "지속상태의 평가에 도움을 줄 수 있고, MR"
+          },
+          "conceptId": "reader.term.8a39cd8bd33af7ea",
+          "targetDocumentId": "neurology.epilepsy.first-seizure-eeg"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.446769454fe4",
+      "sourceSha256": "446769454fe4ba7d28a29ab45378f40da51ed597bfe8269cb71ae7aa53b113ec",
+      "sourceLengthUtf16": 227,
+      "annotations": [
+        {
+          "id": "ann.19cf8d0e753ea1cc3e33",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 202,
+            "end": 206,
+            "exact": "두개내압",
+            "prefix": "는 것은 적절하지 않다. 치료와 함께 발작·",
+            "suffix": "·호흡·수분과 전해질 문제를 감시한다."
+          },
+          "conceptId": "reader.term.f470c35f2a4dec51",
+          "targetDocumentId": "neurosurgery.physiology.intracranial-pressure"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.infection.meningitis-encephalitis.b.7e8205becc29",
+      "sourceSha256": "7e8205becc2972c1f489c5c732c02ad06b405542ce104c6cb85017b52bd1346f",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    }
+  ]
+}

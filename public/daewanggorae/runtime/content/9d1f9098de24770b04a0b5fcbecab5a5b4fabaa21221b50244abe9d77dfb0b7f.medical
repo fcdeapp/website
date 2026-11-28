@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "mycology.foundations.host-and-fungus",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.3b0ff01373f3",
+      "sourceSha256": "3b0ff01373f39cc55dfd9008bbb718d3f29e9b338097ba43ee667d4ca4fa99f8",
+      "sourceLengthUtf16": 271,
+      "annotations": []
+    },
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.d5c3294b97a8",
+      "sourceSha256": "d5c3294b97a8a7c9b046bbf785621938cd4716dc19153a55931ff6dbdbe2a365",
+      "sourceLengthUtf16": 278,
+      "annotations": []
+    },
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.23a3c54f9d4f",
+      "sourceSha256": "23a3c54f9d4fc36c78beffc7932cb5721d7aba7f2b00318b25337130831bb75a",
+      "sourceLengthUtf16": 298,
+      "annotations": []
+    },
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.d85d03bd1bae",
+      "sourceSha256": "d85d03bd1bae4697dd67a35c55f8e2086fb37bf41f0240cbbd2ee02c48a1d3bd",
+      "sourceLengthUtf16": 283,
+      "annotations": []
+    },
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.d1faf73e9bb4",
+      "sourceSha256": "d1faf73e9bb443393fc0021b60e7ea6ecfc6c9ee52020981690a200860b851c8",
+      "sourceLengthUtf16": 264,
+      "annotations": [
+        {
+          "id": "ann.e19dfda8fc31c7738ad1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 184,
+            "end": 187,
+            "exact": "당뇨병",
+            "prefix": "바꾼다. 같은 약제를 쓰더라도 점막 손상, ",
+            "suffix": ", 신장 기능, 환경 노출에 따라 임상상이 "
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        },
+        {
+          "id": "ann.3cd5d7b7eac89df1eadf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 217,
+            "end": 264,
+            "exact": "위험 인자를 열거하는 데서 나아가 어떤 방어선이 손상되었는지 연결하는 것이 중요하다.",
+            "prefix": "능, 환경 노출에 따라 임상상이 달라진다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.c78df4837fd9",
+      "sourceSha256": "c78df4837fd92ddec4e893fd90587b0e5b5a5b0df5c15220dd4be492d510a8ce",
+      "sourceLengthUtf16": 253,
+      "annotations": [
+        {
+          "id": "ann.c62af20401ace7766452",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 117,
+            "end": 161,
+            "exact": "객담이나 소변에서 칸디다가 배양되었다고 언제나 침습성 질환을 의미하지는 않는다.",
+            "prefix": "은 침습성 감염을 고려하게 하는 맥락이다. ",
+            "suffix": " 검체가 채취된 부위, 환자의 증상, 숙주 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.a32d68ff435d",
+      "sourceSha256": "a32d68ff435d61342b821ec1c57da38af5d5553a5e27e3e2f065d80c23e311f7",
+      "sourceLengthUtf16": 271,
+      "annotations": []
+    },
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.69357600bdc4",
+      "sourceSha256": "69357600bdc42fe09e7669c35badd9a8857325386c92962067cd7267b646b537",
+      "sourceLengthUtf16": 248,
+      "annotations": []
+    },
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.a56d631e20de",
+      "sourceSha256": "a56d631e20dea7eb7ee6ff8e5dc8d57959454a2e568a62c17349c44b61235a85",
+      "sourceLengthUtf16": 257,
+      "annotations": []
+    },
+    {
+      "blockId": "mycology.foundations.host-and-fungus.b.4a90db992fb6",
+      "sourceSha256": "4a90db992fb669f877c43c849c66aa18b95898388a9e81ce9c95e91e484a261d",
+      "sourceLengthUtf16": 256,
+      "annotations": []
+    }
+  ]
+}

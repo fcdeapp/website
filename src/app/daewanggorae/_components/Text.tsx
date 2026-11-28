@@ -1,11 +1,14 @@
 "use client";
-import { useEffect, useState } from "react";
+import { ReaderContext } from "./ReaderContext";
+import type { ReaderData } from "../_lib/reader";
+import { useEffect, useState, useContext } from "react";
 import s from "../daewanggorae.module.css";
 declare global {
   interface Window {
     DGText?: {
       markdown: (t: string) => string;
       formula: (t: string) => string;
+      reader: (t:string, blockId:string, data:ReaderData|null, enabled:boolean) => Promise<string>;
     };
   }
 }
@@ -34,28 +37,27 @@ function renderer() {
 export function Text({
   text,
   formula = false,
+  blockId,
 }: {
   text: string;
   formula?: boolean;
+  blockId?: string;
 }) {
+  const reader = useContext(ReaderContext);
   const [html, setHtml] = useState("");
   useEffect(() => {
     let active = true;
     setHtml("");
     void renderer()
-      .then(() => {
-        if (active)
-          setHtml(
-            formula
-              ? window.DGText!.formula(text)
-              : window.DGText!.markdown(text),
-          );
+      .then(async () => {
+        const result = formula ? window.DGText!.formula(text) : blockId ? await window.DGText!.reader(text, blockId, reader.data, reader.enabled) : window.DGText!.markdown(text);
+        if (active) setHtml(result);
       })
       .catch(() => {});
     return () => {
       active = false;
     };
-  }, [text, formula]);
+  }, [text, formula, blockId, reader.data, reader.enabled]);
   return html ? (
     <div
       className={formula ? s.formula : s.markdown}

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cell-biology.cell-cycle.dna-content",
+  "subjectId": "cell-biology",
+  "chapterId": "cell-cycle",
+  "title": {
+    "ko": "DNA 함량과 증식 분석의 해석",
+    "en": "DNA Content and Proliferation Analysis"
+  },
+  "learningObjectives": [
+    {
+      "id": "cell-biology.cell-cycle.dna-content.lo.01",
+      "text": "배수성·DNA 함량·염색체 수를 구별한다"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.lo.02",
+      "text": "DNA 히스토그램과 표지 실험의 한계를 설명한다"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.lo.03",
+      "text": "싱글렛 선별과 분모 선택을 적용한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.77955a3eb39c",
+      "type": "heading",
+      "level": 2,
+      "text": "n과 C를 구별해야 하는 이유"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.37c4e93762fc",
+      "type": "paragraph",
+      "markdown": "배수성(ploidy)을 나타내는 n은 염색체 세트 수와 관련되고, C는 반수체 유전체 한 벌을 기준으로 한 DNA 양을 나타낼 때 사용한다. 정상 이배체 체세포는 G1에서2n·2C이며 DNA를 복제한 G2에서는 보통2n·4C로 기술한다. DNA가 두 배가 되었다고 바로4n이라고 부르면 자매염색분체의 복제와 염색체 세트 수를 혼동한다. 유사분열 후기에는 분리된 염색체를 어느 공간과 시점에서 세는지에 따라 기술이 달라지므로, 관찰 단위를 먼저 밝혀야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.8ca975d64043",
+      "type": "paragraph",
+      "markdown": "세포질분열이 끝난 두 딸세포는 각각 원래의 이배체 구성을 가진다. 이에 비해 일부 정상 조직의 다배수성이나 종양의 이수성은 별도의 현상이다. DNA 함량4C인 세포가 반드시 분열 직전의 정상 이배체라는 보장은 없다. 사배체 G1 세포와 이배체 G2 세포는 단순 DNA 함량만으로 겹칠 수 있다. 해석에는 세포 유형·정상 대조·핵의 형태와 다른 표지를 함께 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.b5d68d784690",
+      "type": "heading",
+      "level": 2,
+      "text": "DNA 염색 히스토그램의 축"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.705ce2ecc597",
+      "type": "paragraph",
+      "markdown": "DNA 결합 염료를 적절한 조건에서 사용하면 세포별 형광 강도가 DNA 양과 관련된다. 히스토그램의 가로축은 DNA 관련 신호, 세로축은 해당 범위의 사건 수 또는 밀도다. 정상 이배체 집단에서는2C 부근의 G0/G1 집단과4C 부근의 G2/M 집단, 그 사이의 S기 분포를 생각할 수 있다. 그러나 피크의 높이와 그 구간에 들어 있는 전체 세포 비율은 같은 값이 아니다. 폭이 다른 분포에서는 면적 또는 배정 사건 수가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.3bf183a2f60d",
+      "type": "paragraph",
+      "markdown": "DNA 함량만으로 G0와 G1을 구분할 수 없고, G2와 M도 구분할 수 없다. ‘2C 피크는 모두 증식 중인 G1’ 또는 ‘4C 피크는 모두 유사분열 중’이라는 설명은 과도하다. 고정·투과화·염색의 조건, RNA 결합 여부와 처리, 측정 선형성도 중요하다. 프로피디움요오드화물(propidium iodide, PI)처럼 핵산 결합 신호를 이용하는 경우에는 정확한 시약명과 처리법을 확인해야 하며, 실험법에 따라 RNase 처리 등의 통제가 필요할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.bbb1f552d5eb",
+      "type": "heading",
+      "level": 2,
+      "text": "싱글렛 선별은 분석의 일부다"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.83cf14e4fc4e",
+      "type": "paragraph",
+      "markdown": "한 사건(event)이 세포 하나라는 가정은 장비 데이터에서 자동으로 충족되지 않는다. G1 세포 두 개가 함께 통과한 이중체(doublet)는 합쳐진 신호가4C처럼 보일 수 있다. 펄스의 면적·높이·폭 관계를 이용한 싱글렛(singlet) 선별과 적절한 산란광·잔해 제외가 필요하다. 선별 순서와 제외된 비율을 기록하지 않으면 처리 전후4C 증가가 실제 세포주기 변화인지 응집 변화인지 알기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.0676bf6c7a49",
+      "type": "paragraph",
+      "markdown": "예를 들어 전체 기록 사건1000개 중200개를 잔해·이중체 등으로 제외하고, 분석 대상800개에서 G0/G1=400, S=240, G2/M=160이라면 비율은50%,30%,20%다. 전체1000개를 분모로40%,24%,16%라고 계산한 값은 같은 질문의 답이 아니다. 어떤 분모를 사용했는지와 제외 집단의 정의를 함께 제시해야 비교할 수 있다. 제외 과정 자체가 처리군마다 달라질 가능성도 살펴야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.bd8c48351685",
+      "type": "heading",
+      "level": 2,
+      "text": "합성 표지와 증식 표지는 서로 다른 질문을 한다"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.942ba0a3ba12",
+      "type": "paragraph",
+      "markdown": "짧은 시간의 EdU 또는 BrdU 표지는 그 시간 동안 DNA 합성에 참여한 세포를 검출하는 데 이용된다. 단순 세포수 증가와 동일하지 않으며, 표지 시간과 농도·검출법·배경이 해석에 영향을 준다. DNA 수선 합성 등도 조건에 따라 고려해야 하므로 표지 양성 하나만으로 항상 완전한 세포주기 진행을 확정하지 않는다. 펄스–추적(pulse–chase) 실험에서는 표지된 집단이 이후 DNA 함량 구간을 어떻게 이동하는지 관찰할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.da585f4aa032",
+      "type": "paragraph",
+      "markdown": "Ki-67은 증식 상태 평가에 흔히 사용되지만 모든 양성 세포가 같은 속도로 분열한다는 의미는 아니다. DNA 함량과 함께 측정하면 단독 DNA 염색으로 구분하기 어려운 상태를 더 나누는 데 도움을 줄 수 있다. 인산화 히스톤H3 같은 표지는 유사분열 관련 평가에 사용될 수 있으나, 항체·세포·조건별 검증과 함께 읽어야 한다. 여러 표지를 결합한다는 것은 불확실성이 사라지는 것이 아니라 서로 다른 질문을 나누어 묻는 것이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.b9d925e2f697",
+      "type": "heading",
+      "level": 2,
+      "text": "집단의 순간 사진과 이동 속도"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.437385a6981b",
+      "type": "paragraph",
+      "markdown": "처리 후4C 세포 비율이 증가했다면 G2 또는M에서 체류시간이 늘어난 가설을 생각할 수 있다. 그러나 그 관찰만으로 특정 효소의 억제를 확정할 수는 없다. S기로 들어가는 세포 감소, 다른 집단의 선택적 소실, 다배수성, 선별 오류도 분포를 바꾼다. 시간 경과, 총 세포수, 생존율, 표지 추적과 분자 지표를 함께 확인하면 가설을 구분하는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.b.d8e42808590f",
+      "type": "paragraph",
+      "markdown": "비동기 집단의 단계별 비율을 그대로 단계별 소요시간으로 읽는 데에도 가정이 필요하다. 모든 세포가 같은 주기를 반복하고 사멸과 유입이 없다는 조건조차 실제 배양에서 완벽하지 않을 수 있으며, 증식 집단은 나이 분포가 균일하지 않다. 따라서 S기30%라는 단일 관찰만으로 S기가 전체 주기의 정확히30% 시간이라고 단정하지 않는다. 자료가 직접 보여 주는 분포와 추가 모형으로 추정하는 속도를 분리하는 태도가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.diagram.dna-content-synthetic-density",
+      "type": "diagram",
+      "diagramRef": "diagram.dna-content-synthetic-density",
+      "path": "diagrams/diagram.dna-content-synthetic-density.svg",
+      "alt": "싱글렛 DNA 신호의 합성 분포의 독립 계산 곡선"
+    },
+    {
+      "id": "cell-biology.cell-cycle.dna-content.table.compare",
+      "type": "table",
+      "data": {
+        "title": "분석법이 묻는 것",
+        "columns": [
+          "측정",
+          "직접 정보",
+          "한계"
+        ],
+        "rows": [
+          [
+            "DNA 신호",
+            "세포별핵산 관련 양",
+            "G0/G1·G2/M 겹침"
+          ],
+          [
+            "EdU/BrdU",
+            "표지 시간의DNA합성",
+            "분열 완료와 다름"
+          ],
+          [
+            "Ki-67",
+            "증식 상태 관련 표지",
+            "단일 속도계 아님"
+          ],
+          [
+            "펄스 형태",
+            "싱글렛 선별",
+            "이중체 제외 필요"
+          ]
+        ],
+        "notes": "n은 염색체 세트,C는DNA양으로 정의하며 분모·게이팅·염색 조건을 기록한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/cell-biology/chapters/cell-cycle/sections/cell-biology.cell-cycle.dna-content.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "2n·4C는 정상 G2세포에서 가능하다.",
+    "DNA만으로 G0/G1을 구별할 수 없다."
+  ],
+  "reviewQuestions": [
+    "question.cell-biology.cell-cycle.dna-content.001",
+    "question.cell-biology.cell-cycle.dna-content.002"
+  ],
+  "relatedLessons": [
+    "cell-biology.cell-cycle.checkpoints",
+    "cell-biology.cell-death.apoptosis"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.anion-gap-0858",
+  "lessonId": "laboratory-medicine.acid-base.blood-gas-interpretation",
+  "title": "고정 Na·Cl에서 음이온차",
+  "series": [
+    {
+      "label": "Na140·Cl104",
+      "samples": [
+        {
+          "x": 8,
+          "y": 28
+        },
+        {
+          "x": 12,
+          "y": 24
+        },
+        {
+          "x": 16,
+          "y": 20
+        },
+        {
+          "x": 20,
+          "y": 16
+        },
+        {
+          "x": 24,
+          "y": 12
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "Na": 140,
+    "Cl": 104,
+    "formula": "140-104-x"
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 8,
+      "max": 24,
+      "scale": "linear",
+      "ticks": [
+        8,
+        12,
+        16,
+        20,
+        24
+      ],
+      "label": "HCO₃⁻(mmol/L)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 32,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        8.0,
+        16.0,
+        24.0,
+        32.0
+      ],
+      "label": "음이온차(mmol/L)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "Na140·Cl104",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립적인 수학 모형이다. 실제 환자 관측값·진단 경계·처방 설정이 아니다."
+  ],
+  "sourceImageUsed": false
+}

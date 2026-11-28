@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pediatrics.gastroenteritis.dehydration-assessment",
+  "subjectId": "pediatrics",
+  "chapterId": "gastroenteritis",
+  "title": {
+    "ko": "급성 위장관염과 탈수의 평가",
+    "en": "Gastroenteritis and Assessment of Dehydration"
+  },
+  "learningObjectives": [
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.lo.01",
+      "text": "수분 손실과 순환 장애를 연결한다"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.lo.02",
+      "text": "체중·진찰·섭취배출을 통합한다"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.lo.03",
+      "text": "재수화 경로와 반복 평가를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.0d90ffb2c883",
+      "type": "heading",
+      "level": 2,
+      "text": "손실이 순환에 미치는 영향"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.f53e27b45c1e",
+      "type": "paragraph",
+      "markdown": "급성 위장관염에서는 장의 분비와 흡수 변화, 구토와 섭취 감소가 수분·전해질의 균형을 바꾼다. 같은 설사 횟수라도 실제 배출량과 수분 함량, 섭취와 신장 반응이 다르면 탈수 정도가 달라진다. 영아는 체중 대비 수분 교환이 크고 스스로 마실 수 없어 돌봄과 공급에 의존한다. 신장이 농축과 산염기를 조절하는 능력, 기저 질환과 발열·호흡에 의한 불감손실도 고려해야 한다. 횟수만으로 체액 결핍량을 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.055717875501",
+      "type": "paragraph",
+      "markdown": "세포외액이 줄어들면 정맥환류와 심박출량이 감소하고 빈맥·말초혈관 수축 등의 보상이 나타날 수 있다. 소변량 감소는 신장 관류와 호르몬 조절의 결과일 수 있으나 신장질환과 약물·관찰 오류도 감별한다. 혈압은 보상 상태에서 유지될 수 있어 정상 혈압 하나로 관류 장애를 배제하지 않는다. 의식과 반응, 말초 온도·피부와 맥박, 호흡과 모세혈관 재충만을 함께 평가한다. 심한 순환 이상은 원인 검사의 완료를 기다리는 문제가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.80fb19407d0a",
+      "type": "heading",
+      "level": 2,
+      "text": "체중과 진찰을 함께 읽기"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.a457c8c92f92",
+      "type": "paragraph",
+      "markdown": "질병 전후의 신뢰할 만한 체중은 변화량을 추정하는 데 유용하다. 이전 10.0kg, 현재 9.4kg이라면 0.6kg 감소이며 시작 체중 대비 6%다. 이를 물 600mL의 결핍에 근사할 수 있지만, 측정 조건과 성장·섭취·대변·소변 등 체중에 영향을 주는 요소를 확인해야 한다. 기저 체중이 오래전 값이거나 다른 저울과 옷을 사용했다면 오차가 커진다. 계산값을 모든 환자의 정맥 수액 처방으로 바로 옮기지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.fdd511e88547",
+      "type": "paragraph",
+      "markdown": "눈물과 구강 점막, 눈과 피부 긴장도, 활동과 마시는 능력은 여러 정보를 더한다. 단일 소견의 민감도와 특이도는 충분하지 않아 조합과 경과가 중요하다. 영양 상태와 연령·발열이 소견을 바꿀 수 있다. 보호자가 평소와 다르다고 설명하는 반응과 소변·섭취의 변화도 확인한다. 검사실 수치가 없더라도 임상 평가와 위험 분류를 시작할 수 있으며, 검사 결과가 정상이라고 관찰되는 악화를 무시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.f1a4147e6240",
+      "type": "heading",
+      "level": 2,
+      "text": "다른 원인을 시사하는 자료"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.20a8bcd48ca4",
+      "type": "paragraph",
+      "markdown": "담즙성 구토와 국소적인 심한 복통, 복막 자극, 혈변과 의식 변화는 단순 위장관염 외의 원인을 검토하게 한다. 장폐색과 장중첩증·충수염, 패혈증과 대사 이상, 독성 노출과 다른 질환이 구토·설사처럼 보일 수 있다. 구토 뒤 잠시 편안해졌다는 사실만으로 급성 복부 질환이 배제되는 것도 아니다. 증상의 시작과 순서, 통증의 위치와 반복, 복부 팽만과 전신 상태를 구체적으로 묻는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.0aa2b0414f54",
+      "type": "paragraph",
+      "markdown": "대변 검사는 모든 환자에게 같은 목록으로 시행하지 않는다. 혈액과 점액, 지속성·여행과 집단 발생, 면역 상태와 패혈증의 의심 등 결과가 진료와 감염 관리에 미칠 영향을 고려한다. 혈액과 전해질·신장 기능 검사는 중증 탈수와 쇼크, 정맥 치료의 필요와 고나트륨혈증 등 구체적 질문에 맞추어 선택한다. 병원체가 확인되었다는 사실과 현재의 체액·순환 상태가 충분하다는 판단은 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.5c7f5fbd5108",
+      "type": "heading",
+      "level": 2,
+      "text": "재수화의 원리"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.51b6e6946d20",
+      "type": "paragraph",
+      "markdown": "경구수분보충액(oral rehydration solution, ORS)은 물만 공급하는 음료가 아니다. 포도당과 나트륨의 결합 수송을 이용하여 장에서 수분 흡수를 돕는 조성을 가진다. 당이 많은 주스와 탄산음료를 같은 것으로 취급하면 삼투와 전해질의 차이를 놓치게 된다. 경구 경로의 적합성은 의식·기도와 마시는 능력, 구토와 순환 상태에 따라 평가한다. 한 번 토했다는 사실만으로 모든 경구 재수화가 불가능한 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.601e5e65f00a",
+      "type": "paragraph",
+      "markdown": "재수화에서는 작은 양을 반복 공급하는 방법과 실제 받아들인 양·손실을 확인한다. 심한 순환 장애와 경구·경관 경로의 실패 등에서는 정맥 치료가 필요할 수 있다. 결핍량과 유지량, 지속 손실과 이미 투여한 양을 분리해서 생각해야 중복 공급을 줄일 수 있다. 체액의 구성과 속도는 나트륨·혈당과 신장·심장 상태 및 반복 진찰에 맞추어 조정한다. 계산식은 계획의 출발점이며 변화하는 환자 상태를 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.df69f12d02eb",
+      "type": "heading",
+      "level": 2,
+      "text": "회복과 지속 손실"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.2bacf1061301",
+      "type": "paragraph",
+      "markdown": "치료 뒤에는 반응과 관류, 소변·체중과 섭취를 다시 확인한다. 체중 증가가 모두 조직 회복인 것은 아니며 과도한 체액 축적의 가능성도 살핀다. 구토·설사가 계속되면 새 손실을 별도로 기록하고, 실제 먹은 양과 공급량을 구별한다. 모유와 영양의 재개·지속은 나이와 임상 상태에 맞추어 계획한다. 무조건 오래 금식시키면 에너지와 회복의 부담이 커질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.b.18070361480f",
+      "type": "paragraph",
+      "markdown": "보호자에게는 어떤 음료와 방법을 사용할지, 소변과 반응·구토·혈변 등 무엇을 관찰할지 설명한다. 잘 마시지 못하거나 반응이 줄고 호흡·순환이 변하는 경우처럼 다시 평가할 상황을 구체화한다. 처방을 이해했는지뿐 아니라 필요한 물품과 돌봄·접근성이 있는지도 확인한다. 정상 소화기관 3D 모형은 위치를 보여 줄 뿐 장의 분비·흡수와 탈수량을 측정하지 않는다. 체액의 시간 변화는 섭취배출 표와 그래프로 따로 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.table0857",
+      "type": "table",
+      "data": {
+        "title": "관찰 자료와 해석의 출발점",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "연령·경과",
+            "18개월, 설사와 구토 2일"
+          ],
+          [
+            "체중",
+            "발병 전 10.0kg, 현재 9.4kg"
+          ],
+          [
+            "관찰",
+            "소변 감소, 입안 건조"
+          ],
+          [
+            "현재 상태",
+            "깨어 있고 경구 섭취 가능"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.diagram.weight-loss-0857",
+      "type": "diagram",
+      "diagramRef": "diagram.weight-loss-0857",
+      "path": "diagrams/diagram.weight-loss-0857.svg",
+      "alt": "체중 감소율의 독립 계산 곡선"
+    },
+    {
+      "id": "pediatrics.gastroenteritis.dehydration-assessment.comparison0857",
+      "type": "table",
+      "data": {
+        "title": "수분 요구량의 구분",
+        "columns": [
+          "구분",
+          "의미",
+          "재평가 항목"
+        ],
+        "rows": [
+          [
+            "결핍량",
+            "이미 잃은 수분",
+            "체중 변화·관류·전해질"
+          ],
+          [
+            "유지 요구량",
+            "일상적인 생리적 요구",
+            "체중·연령·상태"
+          ],
+          [
+            "지속 손실",
+            "이후 새로 생기는 손실",
+            "설사·구토·소변·기타 배출"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/gastroenteritis/sections/pediatrics.gastroenteritis.dehydration-assessment.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pediatrics.gastroenteritis.dehydration-assessment.001",
+    "question.pediatrics.gastroenteritis.dehydration-assessment.002"
+  ],
+  "relatedLessons": [
+    "pediatrics.respiratory.bronchiolitis-work-breathing",
+    "pediatrics.infection.fever-clinical-assessment"
+  ]
+}

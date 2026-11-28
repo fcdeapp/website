@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.general.quantal-response-safety",
+  "subjectId": "pharmacology",
+  "chapterId": "general",
+  "title": {
+    "ko": "양적·전무 반응과 약물 안전성",
+    "en": "Graded and Quantal Responses and Drug Safety"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.general.quantal-response-safety.lo.01",
+      "text": "한 개체 반응크기와 집단 사건비율을 구별한다"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.lo.02",
+      "text": "ED50·TD50·치료지수의 정의와 한계를 설명한다"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.lo.03",
+      "text": "위험 평가에서 분포의 꼬리와 중증도·시간을 고려한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.7311cf83cd4d",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 반응곡선처럼 보여도 세로축이 다르다"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.a63152a84063",
+      "type": "paragraph",
+      "markdown": "양적 반응(graded response)은 지정한 실험계에서 반응 크기가 연속적으로 달라지는 자료다. 효소 활성,근육 장력,혈압 변화 등이 해당할 수 있다. 전무 반응(quantal response)은 정한 사건이 각 대상에서 발생했는지 여부를 기록하고 집단의 발생 비율을 나타낸다. 두 곡선이 모두 S자처럼 보일 수 있어도 세로축의 의미는 같지 않다. 최대반응의 절반과 사람 절반에서 사건 발생은 다른 진술이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.20816a4fd177",
+      "type": "paragraph",
+      "markdown": "전무 사건은 정의가 필요하다. 효과가 특정 기준을 넘었는지,정해진 이상반응이 생겼는지,얼마나 관찰했는지에 따라 발생률이 달라진다. 관찰 시간이 짧거나 평가 기준이 바뀌면 같은 노출에서도 다른 비율이 나올 수 있다. 반응 크기를 인위적으로 둘로 나눈 자료는 그 기준의 선택을 포함하므로 원래 연속 정보를 모두 보존하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.9799161b8e9f",
+      "type": "heading",
+      "level": 2,
+      "text": "반수 지표와 분모"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.1269f3dbce2a",
+      "type": "paragraph",
+      "markdown": "전무 반응의 ED50은 지정 효과가 집단의50%에서 관찰되는 용량이다. 양적 실험에서 반최대 효과의 용량을 같은 기호로 부르는 관행도 있어 어떤 정의인지 먼저 확인해야 한다. 농도를 사용한 EC50과 투여량을 사용한 ED50도 노출 연결 없이 같은 숫자로 바꾸지 않는다. 투여 경로·흡수·분포가 다르면 같은 용량이 같은 표적 농도를 만들지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.0d82c76e080d",
+      "type": "paragraph",
+      "markdown": "TD50은 정의한 독성 사건이50%에서 발생하는 용량이며,치료지수(therapeutic index)를 TD50/ED50로 나타내는 관행이 있다. 과거 동물 실험의 LD50은 사망 사건을 기준으로 한 별도 지표다. 사람에서 실제 처방을 LD50에 맞추어 계산하는 자료가 아니다. 어떤 사건과 집단·경로·시간에 대한 수치인지 명시하지 않은 지수는 의미가 제한된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.54e5490950b6",
+      "type": "heading",
+      "level": 2,
+      "text": "중앙값 비만으로 위험을 설명할 수 없는 이유"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.bb93ebce7c35",
+      "type": "paragraph",
+      "markdown": "두 반수 용량의 비가 같아도 효과와 독성 분포의 기울기·겹침은 다를 수 있다. 독성에 민감한 집단의 꼬리에서 낮은 용량에도 사건이 생길 수 있고,효과가 나타나기 어려운 집단과 겹칠 수도 있다. 중앙값 비 하나는 드문 중증 사건의 확률과 중증도를 요약하지 못한다. 치료역(therapeutic window)이라는 표현도 실제 약물·적응증·측정 방식에 따라 정의를 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.382f5cf38204",
+      "type": "paragraph",
+      "markdown": "가상 약물 X의 ED50=2단위,TD50=20단위이면 중앙값 비는10이다. 이 값이10명 중1명에게 독성이 생긴다거나 모든 개인에게10배 증량이 안전하다는 뜻은 아니다. 비율의 분모는 효과 용량이지 사람 수가 아니다. 실제 투여량 결정을 위해서는 약물별 검증된 용법과 개별 환자의 이득·위험을 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.64cb59c19640",
+      "type": "heading",
+      "level": 2,
+      "text": "노출·시간·장기 취약성"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.4f0404233587",
+      "type": "paragraph",
+      "markdown": "약물 안전성에는 최고 농도·누적 노출·노출 기간과 장기 기능,활성 대사체 및 표적 외 작용이 관여한다. 어떤 이상반응은 알려진 약리 작용과 용량에 관련되고,다른 반응은 면역 또는 특이 체질 등의 기전이 중요하다. 이 구분도 모든 사건을 둘로 완벽하게 나누는 고정 규칙은 아니다. 일정 혈중 농도가 같아도 조직 노출과 취약성이 달라 결과가 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.4a191edc4599",
+      "type": "paragraph",
+      "markdown": "신장·간 기능과 단백결합,유전적 차이,동반 약물은 노출을 바꿀 수 있다. 같은 약물의 정상적인 약리효과가 특정 장기 상태에서는 위해가 될 수도 있다. 반면 위험 신호가 발견되었다는 사실만으로 개별 사건의 원인이 반드시 그 약물이라고 확정하지 않는다. 시간 관계,대체 원인,재현성·기전과 대조 자료를 함께 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.cf99ca9e5c95",
+      "type": "heading",
+      "level": 2,
+      "text": "자료표와 그래프의 해석"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.dcbceffaac7e",
+      "type": "paragraph",
+      "markdown": "독립 집단에서 용량별 효과 발생 수와 독성 발생 수를 기록하면 각 열의 분모와 관찰 시간을 표시해야 한다. 같은 대상을 여러 용량으로 반복 측정한 자료와 서로 다른 집단의 누적 사건 비율은 통계적 구조가 다르다. 두 사건이 동시에 생길 수 있다면 효과100%와 독성0%가 반드시 서로 보완적인 값이라는 가정도 틀린다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.b.a81feb0dae21",
+      "type": "paragraph",
+      "markdown": "교육용 누적 반응 곡선은 분율이0과1사이에 있도록 정의하고 중앙 용량과 기울기를 명시한다. 그 곡선은 실제 약물의 연구 결과·승인 기준·정상 참고범위가 아니다. 표에서 반수 지표,낮은 빈도의 사건과 겹침을 각각 읽으면 높은 치료지수가 모든 상황의 안전 보증이라는 오개념을 피할 수 있다. 실제 약물의 감시 항목·금기·용법은 개별 근거를 별도로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.diagram.quantal-effect-toxicity-example",
+      "type": "diagram",
+      "diagramRef": "diagram.quantal-effect-toxicity-example",
+      "path": "diagrams/diagram.quantal-effect-toxicity-example.svg",
+      "alt": "독립 가상 사건의 누적 비율의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.quantal-response-safety.table.compare",
+      "type": "table",
+      "data": {
+        "title": "반응의 축",
+        "columns": [
+          "값",
+          "의미"
+        ],
+        "rows": [
+          [
+            "양적 반응",
+            "하나의 지정계에서 크기"
+          ],
+          [
+            "전무 반응",
+            "정한 사건의 집단 비율"
+          ],
+          [
+            "ED50·TD50",
+            "정의한 효과/독성의 반수 용량"
+          ],
+          [
+            "TI",
+            "중앙값 비; 개인 안전 보장 아님"
+          ]
+        ],
+        "notes": "정의·가정과 대표 관계의 비교이며 단일 임상 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/sections/pharmacology.general.quantal-response-safety.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "치료지수는 중앙값 비이며 개인 안전 배수가 아니다."
+  ],
+  "relatedLessons": [
+    "pharmacology.general.transporters-vectorial-flux",
+    "pharmacology.general.renal-excretion-ionization"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.general.quantal-response-safety.001",
+    "question.pharmacology.general.quantal-response-safety.002"
+  ]
+}

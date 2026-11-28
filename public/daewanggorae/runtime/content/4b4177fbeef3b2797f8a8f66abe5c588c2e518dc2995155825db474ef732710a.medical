@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.devices.resynchronization-principles",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.devices.resynchronization-principles.b.8b6b09b60b1c",
+      "sourceSha256": "8b6b09b60b1c81ae36511a8b895e37f670f0cd53af9c0ea9c73c205411b5e62e",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.devices.resynchronization-principles.b.a7a9433bf355",
+      "sourceSha256": "a7a9433bf3550b66f713c9d286b0f7f678366107b0dffa7a8573cb1a25e3f9e9",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.devices.resynchronization-principles.b.e073cea178e0",
+      "sourceSha256": "ed58ada225fac9fab848472ae5abcb5fa31777b3eed1a40c557b1e60c006fc5d",
+      "sourceLengthUtf16": 99,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.devices.resynchronization-principles.b.c8fbf11cc731",
+      "sourceSha256": "c8fbf11cc731dfe79617c7b33dee803cb0f04295a13141e0a16398b8539d157a",
+      "sourceLengthUtf16": 230,
+      "annotations": [
+        {
+          "id": "ann.7a999cae37cdbf7b85ee",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 196,
+            "end": 230,
+            "exact": "주위 심근 포획과 전도계 포획을 구별하는 것이 중요한 이유다.",
+            "prefix": " 기준을 통합하여 포획의 성격을 평가한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.devices.resynchronization-principles.b.e3e0d0233597",
+      "sourceSha256": "e3e0d02335973ffd9b964260db19f593f11649ea103d8f1a130f96c4b776f0bf",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.devices.resynchronization-principles.b.1cada5f6b117",
+      "sourceSha256": "1cada5f6b117ffdfb74472d4508a7d724f07c13151dcfeb1bd42b123170876d7",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.devices.resynchronization-principles.b.0c614233e07b",
+      "sourceSha256": "0c614233e07b898da32aa52e06a6baa9f974e0009eeb83fa90a080e72b5ce17e",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.50c5272129695b3e2e6d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 6,
+            "end": 9,
+            "exact": "심부전",
+            "prefix": "재동기화는 ",
+            "suffix": "의 원인 치료와 약물, 체액 관리 및 위험 "
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    }
+  ]
+}

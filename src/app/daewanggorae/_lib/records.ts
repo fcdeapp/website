@@ -127,7 +127,7 @@ export function nextReview(
 export function latestAttempts(records: Records) {
   const result: Record<string, LearningRecord> = {};
   for (const r of Object.values(records))
-    if (r.kind === "attempt" && !r.deleted) {
+    if (r.kind === "attempt" && !r.deleted && !r.data.candidate) {
       const id = String(r.data.questionId);
       if (!result[id] || result[id].updatedAt < r.updatedAt) result[id] = r;
     }

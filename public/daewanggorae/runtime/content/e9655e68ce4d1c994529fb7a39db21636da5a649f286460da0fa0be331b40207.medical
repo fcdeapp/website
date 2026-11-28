@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.toxins.ab-toxin-trafficking",
+  "subjectId": "bacteriology",
+  "chapterId": "toxins",
+  "title": {
+    "ko": "A–B 독소의 결합·이동과 세포 표적",
+    "en": "A–B Toxin Entry and Intracellular Targets"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.lo.01",
+      "text": "수용체 결합과 효소 작용을 구별한다"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.lo.02",
+      "text": "대표 독소의 표적과 결과를 연결한다"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.lo.03",
+      "text": "독소 유전자와 실제 활성의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.f2e9ed794880",
+      "type": "heading",
+      "level": 2,
+      "text": "표적에 도달해야 효소가 작동한다"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.f8bfbd61cfb2",
+      "type": "paragraph",
+      "markdown": "A–B형 독소는 기능적으로 세포에 결합·전달하는 부분과 세포 안의 반응을 바꾸는 부분을 구별하여 이해한다. A와 B가 언제나 같은 크기의 두 사슬로만 존재하는 것은 아니다. 결합체의 조립과 수용체, 내부 이동 경로는 독소별로 다르다. 독소가 표면에 붙는 것과 효소 부분이 세포질 표적에 도달하는 것은 별도 단계다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.bdceaadd11b6",
+      "type": "paragraph",
+      "markdown": "수용체의 분포는 어떤 조직이 잘 영향을 받는지에 기여한다. 이후 세포내이입과 구획 이동, 막 통과가 효소 활성의 전제가 될 수 있다. 효소가 시험관에서 기질을 바꾸는 능력이 있어도 세포에 들어가지 못하면 같은 세포 독성이 나타나지 않을 수 있다. 반대로 결합량이 같아도 내부 이동이 다른 세포에서는 반응이 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.c191364e61bd",
+      "type": "heading",
+      "level": 2,
+      "text": "단백질 합성을 억제하는 표적"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.308f3cce089f",
+      "type": "paragraph",
+      "markdown": "Diphtheria toxin의 대표 작용은 EF-2의 ADP-ribosylation을 통해 번역 신장을 방해하는 것이다. Pseudomonas exotoxin A도 관련된 최종 표적 작용으로 설명하지만 두 독소의 유전자·수용체·이동 경로까지 동일하다는 뜻은 아니다. 같은 세포 기능을 억제하는 독소도 표적에 이르는 경로는 다를 수 있다. 최종 결과의 유사성과 분자적 동일성을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.200cd1e5eb81",
+      "type": "paragraph",
+      "markdown": "Shiga toxin 계통은 리보솜 RNA의 특정 부위를 손상시키는 작용으로 단백질 합성을 방해한다. 이는 EF-2를 수정하는 반응과 다르다. 단백질 합성이 줄었다는 실험 종말점 하나로 어느 효소 반응이 원인인지 확정하지 않는다. 수용체와 이동, 리보솜 상태를 분리한 대조가 있어야 유사한 세포 결과 사이의 기전을 구별할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.4c9e718b469f",
+      "type": "heading",
+      "level": 2,
+      "text": "신호를 바꾸는 독소"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.04f0751e5744",
+      "type": "paragraph",
+      "markdown": "Cholera toxin은 Gsα 관련 조절을 바꾸어 adenylate cyclase·cAMP 경로와 장 상피의 분비를 증가시키는 기전으로 연결된다. Pertussis toxin은 Giα 관련 신호에 작용한다. 두 독소 모두 ADP-ribosylation과 관련되지만 같은 G단백질을 같은 방향으로 바꾸는 것은 아니다. 최종 cAMP 변화만 외우면 정상 억제 신호가 사라지는 기전을 놓칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.e7ecf5d51231",
+      "type": "paragraph",
+      "markdown": "세포 내 효소 반응은 적은 독소량으로도 여러 기질 분자에 영향을 줄 수 있어 결합량과 효과가 단순 비례하지 않을 수 있다. 그러나 이런 증폭이 모든 독소에 같은 강도와 시간으로 나타난다고 가정하지 않는다. 표적의 재생성과 단백질 교체, 세포 손상과 회복은 반응의 지속에 영향을 준다. 학습용 농도·효과 곡선은 실제 환자의 독소량이나 중증도를 계산하는 식과 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.8cbc294938c3",
+      "type": "heading",
+      "level": 2,
+      "text": "독소를 확인하는 증거"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.69e087d2f637",
+      "type": "paragraph",
+      "markdown": "독소 유전자 검출은 독소를 만들 잠재력을 지지하지만 해당 시점의 발현·분비·활성을 직접 측정하지 않는다. 항원 검사는 단백질 성분을, 기능 검사는 특정 세포 효과를 평가한다. 독소 생산 균이 검출되어도 증상과 노출의 관계를 확인해야 한다. 반대로 균이 검출되지 않는 시점에도 이미 전달된 독소 효과가 남을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.b.54ad16082722",
+      "type": "paragraph",
+      "markdown": "결합을 차단하는 항체가 표적 효소의 시험관 반응은 막지 못하면서 세포 독성은 줄인다면 진입 단계의 억제를 생각할 수 있다. 이 해석에는 항체가 세포를 손상시키지 않았고 실제 독소 농도가 같았다는 대조가 필요하다. 독소 기능을 세포막·세포내 구획·효소 표적으로 나누어 보면 유전자·항원·기능 자료를 일관되게 비교할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.diagram.bacteria-two-stage-transfer-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.bacteria-two-stage-transfer-toy",
+      "path": "diagrams/diagram.bacteria-two-stage-transfer-toy.svg",
+      "alt": "두 단계 전달의 가상 시간차의 독립 계산 곡선"
+    },
+    {
+      "id": "bacteriology.toxins.ab-toxin-trafficking.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "결합·진입",
+            "표적 구획에 효소 전달"
+          ],
+          [
+            "Diphtheria toxin",
+            "EF-2 수정 관련 번역 억제"
+          ],
+          [
+            "Shiga toxin",
+            "리보솜 RNA 손상 관련 번역 억제"
+          ],
+          [
+            "Cholera·pertussis",
+            "Gs와 Gi 관련 조절의 차이"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/toxins/sections/bacteriology.toxins.ab-toxin-trafficking.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.toxins.ab-toxin-trafficking.001",
+    "question.bacteriology.toxins.ab-toxin-trafficking.002"
+  ],
+  "relatedLessons": [
+    "bacteriology.survival.biofilm-heterogeneity",
+    "bacteriology.toxins.superantigen-activation"
+  ]
+}

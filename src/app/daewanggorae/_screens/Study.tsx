@@ -6,6 +6,7 @@ import { useLoad } from "../_lib/hooks";
 import { useRecords, recordsOf, saveRecord, createRecord } from "../_lib/store";
 import { latestAttempts, nextReview } from "../_lib/records";
 import { Heading, Row, State, url } from "../_components/UI";
+import { Text } from "../_components/Text";
 import s from "../daewanggorae.module.css";
 export function Study() {
   const records = useRecords();
@@ -20,6 +21,7 @@ export function Study() {
         ["bookmarks", "북마크와 필기", "표시해 둔 문단·문항·개인 메모"],
         ["plan", "학습 계획", "오늘 읽을 내용과 나의 목표"],
         ["statistics", "학습 기록", "열람 시간·진도·문제 풀이"],
+        ["history", "문제풀이 기록", "당시 선택한 답과 해설 다시 보기"],
         ["account", "계정과 동기화", "게스트 학습 / 대왕고래 계정"],
         ["settings", "설정", "화면·콘텐츠·저장 공간"],
       ].map(([path, title, detail]) => (
@@ -322,20 +324,15 @@ export function Review() {
           {l.data ? (
             fact ? (
               <>
-                <p className={s.notice}>
-                  {l.data.title.ko} · 핵심 지식 {index + 1} /{" "}
-                  {l.data.keyFacts?.length}
-                </p>
-                <div className={s.reviewNumber}>
-                  {String(index + 1).padStart(3, "0")}
-                </div>
+                <div className={s.reviewHeading}><Link href={url("lesson",lessonId)}>{l.data.title.ko}</Link><span>{index + 1} / {l.data.keyFacts?.length}</span></div>
+                <progress className={s.reviewProgress} value={index} max={l.data.keyFacts?.length || 1} aria-label="복습 진행" />
                 <h2>이 단원의 핵심 개념을 떠올려 보세요.</h2>
                 <div className={s.flashBody}>
                   {revealed ? (
-                    fact
+                    <Text text={fact} />
                   ) : (
                     <button
-                      className={s.primary}
+                      className={s.button}
                       onClick={() => setRevealed(true)}
                     >
                       핵심 지식 확인

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.hypersensitivity.type-iii-local-systemic",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.hypersensitivity.type-iii-local-systemic.b.f6141986eced",
+      "sourceSha256": "f6141986ecedc66c2e811758757c003e6edaa7e89516be85e76ae8abaf638538",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.973e91e6431bbe85e716",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 9,
+            "end": 13,
+            "exact": "과민반응",
+            "prefix": "Type III ",
+            "suffix": "은 항원–항체 복합체가 조직에 형성·침착되어"
+          },
+          "conceptId": "reader.term.c00cc6a01122c518",
+          "targetDocumentId": "immunology.hypersensitivity.mechanisms"
+        },
+        {
+          "id": "ann.5c737cb8bc10e0284d72",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 38,
+            "end": 40,
+            "exact": "보체",
+            "prefix": " 항원–항체 복합체가 조직에 형성·침착되어 ",
+            "suffix": "와 염증세포를 통해 손상을 만드는 기전을 중"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.type-iii-local-systemic.b.1c1f30dabf68",
+      "sourceSha256": "1c1f30dabf6878af5de53682e22961938c467872a9c4425f8fa9d36b7bf55d5c",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.type-iii-local-systemic.b.79235c8b08a2",
+      "sourceSha256": "79235c8b08a29c064f7e6f845770d01b96fd086eabb3e9221c5e3f951a15078a",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.type-iii-local-systemic.b.e99539d48bc4",
+      "sourceSha256": "e99539d48bc4762cde3e0f8fa417ef330f267dcbf9022732617a30cdc1cb0aed",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.type-iii-local-systemic.b.0b610b8e3a56",
+      "sourceSha256": "0b610b8e3a562e44f914588d988fc166391ee81132c1ee0126419ac7e10d0e83",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.type-iii-local-systemic.b.b3d3c81089bc",
+      "sourceSha256": "b3d3c81089bcc014d6f70c9705c00367d557025c8c9094107a102e3025f2f8b3",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.type-iii-local-systemic.b.960ce51628db",
+      "sourceSha256": "960ce51628db2faafff084aedb60dce70e8d56517e8db3f402c5e550eb6022f3",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.type-iii-local-systemic.b.fa2143fe4d59",
+      "sourceSha256": "fa2143fe4d597df08a66f683e8f598dfd2853138e5f7030f073854d45e8dba4e",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.preeclampsia-endothelial-links-0851",
+  "lessonId": "obstetrics.hypertension.classification-endothelium",
+  "title": "자간전증의 선택된 기전",
+  "nodes": [
+    {
+      "id": "p",
+      "label": "태반·모체의 상호작용",
+      "x": 350,
+      "y": 80,
+      "width": 400,
+      "height": 92
+    },
+    {
+      "id": "e",
+      "label": "내피 기능 변화",
+      "x": 350,
+      "y": 300,
+      "width": 320,
+      "height": 92
+    },
+    {
+      "id": "v",
+      "label": "혈관 긴장·저항",
+      "x": 165,
+      "y": 540,
+      "width": 260,
+      "height": 92
+    },
+    {
+      "id": "l",
+      "label": "투과성·지혈 변화",
+      "x": 535,
+      "y": 540,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "o",
+      "label": "혈압·다기관의 영향",
+      "x": 350,
+      "y": 800,
+      "width": 400,
+      "height": 92
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.preeclampsia-endothelial-links-0851.e0",
+      "source": "p",
+      "target": "e",
+      "label": "선택 경로",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.preeclampsia-endothelial-links-0851.e1",
+      "source": "e",
+      "target": "v",
+      "label": "연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.preeclampsia-endothelial-links-0851.e2",
+      "source": "e",
+      "target": "l",
+      "label": "연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.preeclampsia-endothelial-links-0851.e3",
+      "source": "v",
+      "target": "o",
+      "label": "영향",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.preeclampsia-endothelial-links-0851.e4",
+      "source": "l",
+      "target": "o",
+      "label": "영향",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 700,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 650,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "p": {
+          "x": 325.0,
+          "y": 80,
+          "width": 368.0,
+          "height": 92
+        },
+        "e": {
+          "x": 325.0,
+          "y": 300,
+          "width": 294.40000000000003,
+          "height": 92
+        },
+        "v": {
+          "x": 153.21428571428572,
+          "y": 540,
+          "width": 239.20000000000002,
+          "height": 92
+        },
+        "l": {
+          "x": 496.7857142857143,
+          "y": 540,
+          "width": 257.6,
+          "height": 92
+        },
+        "o": {
+          "x": 325.0,
+          "y": 800,
+          "width": 368.0,
+          "height": 92
+        }
+      }
+    }
+  },
+  "limitations": [
+    "복합 질환의 선택된 관계를 단순화한 독립 도식이며 모든 환자의 필수 단일 경로가 아니다.",
+    "임상 진단·투약·분만 알고리즘이나 환자별 태반·혈관 모델이 아니다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,35 @@
+{
+  "id": "cardiology.chapter.electrocardiography",
+  "subjectId": "cardiology",
+  "sections": [
+    {
+      "id": "cardiology.electrocardiography.lead-vectors",
+      "title": {
+        "ko": "심전도 유도와 허혈의 공간적 해석",
+        "en": "ECG Lead Vectors and Spatial Interpretation"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/electrocardiography/sections/cardiology.electrocardiography.lead-vectors.json"
+    },
+    {
+      "id": "cardiology.electrocardiography.ischemic-evolution",
+      "title": {
+        "ko": "허혈성 심전도 변화의 기전과 시간 경과",
+        "en": "Mechanisms and Evolution of Ischemic ECG Changes"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/electrocardiography/sections/cardiology.electrocardiography.ischemic-evolution.json"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement",
+      "title": {
+        "ko": "심박수·간격과 기록 조건의 측정",
+        "en": "Measuring Heart Rate and ECG Intervals"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/electrocardiography/sections/cardiology.electrocardiography.rate-interval-measurement.json"
+    }
+  ],
+  "status": "partial",
+  "title": {
+    "ko": "심전도 원리와 해석",
+    "en": "Principles and Interpretation of Electrocardiography"
+  }
+}

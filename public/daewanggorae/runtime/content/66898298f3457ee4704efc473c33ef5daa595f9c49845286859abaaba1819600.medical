@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.t-cells.helper-differentiation",
+  "subjectId": "immunology",
+  "chapterId": "t-cells",
+  "title": {
+    "ko": "도움 T세포의 분화와 사이토카인망",
+    "en": "Helper T Cell Differentiation and Cytokine Networks"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.t-cells.helper-differentiation.lo.01",
+      "text": "Th1·Th2·Th17·Tfh·Treg의 기능을 비교한다"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.lo.02",
+      "text": "분화 유도와 분비 산물을 구별한다"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.lo.03",
+      "text": "세포 계통 표지의 해석 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.c981bba8afec",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 항원 인식 뒤 다른 반응이 생긴다"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.0499895ab37e",
+      "type": "paragraph",
+      "markdown": "CD4 T세포는 인식하는 항원뿐 아니라 항원제시세포의 상태와 사이토카인 환경에 따라 다른 효과기 프로그램을 형성한다. 이 차이는 세포 내 병원체, 큰 기생충과 장벽 감염에 적합한 방어 기전을 동원하는 데 중요하다. 분화는 한 사이토카인이 단독으로 운명을 결정하는 과정이라기보다 TCR·공동자극·대사와 전사 조절의 결합이다. 사람의 조직 세포는 실험 배양의 순수한 계통 모형과 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.f6d8a2928521",
+      "type": "paragraph",
+      "markdown": "Th1 관련 T-bet과 IFN-γ 반응은 대식세포의 미생물 방어와 연결된다. IL-12 등은 이러한 프로그램을 지지할 수 있다. Th2 관련 GATA3와 IL-4·IL-5·IL-13은 IgE 반응, 호산구와 장벽·기생충 방어 등에 관여한다. 분화를 돕는 입력 사이토카인과 분화한 세포가 만드는 출력 사이토카인을 구분해야 한다. 같은 분자가 되먹임에 관여할 수 있어 둘이 완전히 배타적 목록은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.52c66a1c27cc",
+      "type": "heading",
+      "level": 2,
+      "text": "장벽 방어와 호중구 동원"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.2df6722a73d3",
+      "type": "paragraph",
+      "markdown": "Th17 관련 RORγt와 IL-17A·IL-17F는 상피·기질세포를 통해 호중구 동원과 장벽 방어를 지지한다. 세포가 호중구를 직접 운반하는 것이 아니라 주변 세포의 케모카인과 방어 프로그램을 바꾼다. IL-22 역시 일부 장벽 반응에서 중요하지만 한 세포 계통에서만 만들어지는 것은 아니다. 사이토카인 한 종류의 검출을 특정 세포의 존재와 일대일로 연결하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.ecb2a26a122b",
+      "type": "paragraph",
+      "markdown": "Th17 프로그램의 유도·유지에는 여러 사이토카인과 STAT3 관련 신호가 관여하고 조건은 종과 조직에 따라 다르다. IL-23은 일부 Th17 반응의 유지·병원성과 연결되지만 모든 미경험 세포의 초기 분화를 단독으로 설명하는 물질은 아니다. TGF-β도 문맥에 따라 조절과 다른 분화에 기여할 수 있다. 한 분자의 항염증·염증성 이름만으로 최종 반응을 예측하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.de55e9524b29",
+      "type": "heading",
+      "level": 2,
+      "text": "여포에서 항체를 돕는 프로그램"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.a83d41fb34b5",
+      "type": "paragraph",
+      "markdown": "T follicular helper(Tfh) 세포는 CXCR5와 Bcl-6 관련 프로그램을 갖고 여포·배중심의 B세포 도움에 참여한다. CD40L과 사이토카인을 통한 선택·분화 지원은 고품질 항체반응에 중요하다. Tfh가 많다는 수만으로 효과적인 항체 생성과 친화도 성숙이 보장되는 것은 아니다. 항원 제시, B세포의 상태와 선택 환경이 함께 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.0bda86cda02f",
+      "type": "paragraph",
+      "markdown": "FOXP3 관련 조절 T세포(Treg)는 면역반응의 제한과 관용에 중요하다. IL-2는 효과기 세포의 확장뿐 아니라 Treg 유지에도 기여한다. 따라서 IL-2 신호를 단순히 염증을 증가시키는 한 방향의 스위치로 이해하면 균형을 놓친다. 세포가 받는 양·위치와 수용체 상태, 다른 신호의 조합이 결과를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.df81e18dc338",
+      "type": "heading",
+      "level": 2,
+      "text": "기능과 표지와 가소성"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.86b41563b969",
+      "type": "paragraph",
+      "markdown": "전사인자와 사이토카인의 대표 조합은 학습의 출발점이지만 실제 세포는 여러 표지를 함께 보이거나 환경에 따라 프로그램을 바꿀 수 있다. 특정 유전자 발현이 높다는 결과는 그 단백질의 분비량과 생체 기능의 크기와 같지 않다. 유세포분석의 자극 조건과 세포내 염색, 분비 검사와 유전자 자료는 각각 다른 단계의 정보를 제공한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.b.68ce9ab64a4e",
+      "type": "paragraph",
+      "markdown": "자가면역과 알레르기에서는 방어 프로그램의 부적절한 표적·강도·지속이 질환을 만든다. 반대로 특정 프로그램이 불량하면 일부 감염에 취약할 수 있다. 검사 결과를 질환에 연결할 때는 세포 수, 기능·표적과 조직 위치를 함께 본다. 동일한 사이토카인 증가가 감염 방어의 적응 반응인지 지속 질병의 기여인지 판단하려면 시간과 임상 문맥이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.t-cells.helper-differentiation.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "Th1",
+            "T-bet·IFN-γ 관련 프로그램"
+          ],
+          [
+            "Th2",
+            "GATA3·IL-4·IL-5·IL-13 관련"
+          ],
+          [
+            "Th17",
+            "RORγt·IL-17 관련 장벽 반응"
+          ],
+          [
+            "Tfh·Treg",
+            "B세포 도움과 반응 제한의 대표 프로그램"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/t-cells/sections/immunology.t-cells.helper-differentiation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.t-cells.helper-differentiation.001"
+  ],
+  "relatedLessons": [
+    "immunology.t-cells.tcr-costimulation",
+    "immunology.cytotoxicity.cd8-nk-effector"
+  ]
+}

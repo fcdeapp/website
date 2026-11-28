@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.t-cells.helper-differentiation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.t-cells.helper-differentiation.b.0499895ab37e",
+      "sourceSha256": "0499895ab37e8ca6dfedc808d549d7284f2da5503672cf92d506dfcf8ca23edd",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.812e1f59bc67abcc49cb",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 22,
+            "end": 26,
+            "exact": "항원제시",
+            "prefix": "CD4 T세포는 인식하는 항원뿐 아니라 ",
+            "suffix": "세포의 상태와 사이토카인 환경에 따라 다른 "
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        },
+        {
+          "id": "ann.7450327b968d0408428c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 66,
+            "end": 119,
+            "exact": "이 차이는 세포 내 병원체, 큰 기생충과 장벽 감염에 적합한 방어 기전을 동원하는 데 중요하다.",
+            "prefix": "에 따라 다른 효과기 프로그램을 형성한다. ",
+            "suffix": " 분화는 한 사이토카인이 단독으로 운명을 결"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.t-cells.helper-differentiation.b.f6d8a2928521",
+      "sourceSha256": "f6d8a29285217d50f474b5e544fe3f92ae17c43690a5bf6c18310d223b7f16dd",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.d5591842d393a94543f9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 136,
+            "end": 183,
+            "exact": "분화를 돕는 입력 사이토카인과 분화한 세포가 만드는 출력 사이토카인을 구분해야 한다.",
+            "prefix": "호산구와 장벽·기생충 방어 등에 관여한다. ",
+            "suffix": " 같은 분자가 되먹임에 관여할 수 있어 둘이"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.t-cells.helper-differentiation.b.2df6722a73d3",
+      "sourceSha256": "2df6722a73d3a167c486057a2b170ce0b2a83484ebcface8733920b8783c8f85",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.t-cells.helper-differentiation.b.ecb2a26a122b",
+      "sourceSha256": "ecb2a26a122bcdfd43024eb2865bbaedb765c8c221b637b0d7896798681dc3d5",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.t-cells.helper-differentiation.b.a83d41fb34b5",
+      "sourceSha256": "a83d41fb34b5562dbaeb7c2104fd9220b43c287a69c4aab41a29308a78de66c5",
+      "sourceLengthUtf16": 197,
+      "annotations": [
+        {
+          "id": "ann.b06b7a839e32c3fd9df8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 60,
+            "exact": "배중심",
+            "prefix": "5와 Bcl-6 관련 프로그램을 갖고 여포·",
+            "suffix": "의 B세포 도움에 참여한다. CD40L과 사"
+          },
+          "conceptId": "reader.term.1966bf382cfdfae7",
+          "targetDocumentId": "immunology.humoral.germinal-center"
+        },
+        {
+          "id": "ann.b90393986f2221895901",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 76,
+            "end": 118,
+            "exact": "CD40L과 사이토카인을 통한 선택·분화 지원은 고품질 항체반응에 중요하다.",
+            "prefix": "고 여포·배중심의 B세포 도움에 참여한다. ",
+            "suffix": " Tfh가 많다는 수만으로 효과적인 항체 생"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.t-cells.helper-differentiation.b.0bda86cda02f",
+      "sourceSha256": "0bda86cda02f6a8f7cd076a872dab3a0718488ceb34d98af08e17c8f44483480",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.t-cells.helper-differentiation.b.86b41563b969",
+      "sourceSha256": "86b41563b9699a93e37a06f73c6db85ec2ca7076646b4564fe3b39307dc505f3",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.t-cells.helper-differentiation.b.68ce9ab64a4e",
+      "sourceSha256": "68ce9ab64a4e16ac8828883a83f1d31a50cd9e55aa289b8e813cb0db4dcbe7f0",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    }
+  ]
+}

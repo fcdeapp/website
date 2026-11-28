@@ -1,6 +1,8 @@
 "use client";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { profileLabel } from "../_lib/questions/model";
 import { getCatalog } from "../_lib/content";
 import { useLoad } from "../_lib/hooks";
 import { useRecords } from "../_lib/store";
@@ -33,7 +35,8 @@ export default function Questions() {
   );
   return (
     <>
-      <Heading title="문제은행" detail="자체 제작 연습문항 · 전문의 검수 전" />
+      <Heading title="문제은행" detail="과목과 단원별로 풀어보는 자체 제작 학습 문항" />
+      <Link className={s.button} href={url("history")}>학습 기록</Link>
       <label className={s.field}>
         문항 검색
         <input
@@ -119,7 +122,7 @@ export default function Questions() {
           key={q.id}
           number={String(i + 1).padStart(2, "0")}
           title={q.title}
-          detail={c.lessons.find((l) => l.id === q.lessonId)?.title}
+          detail={[c.lessons.find((l) => l.id === q.lessonId)?.title, profileLabel(q.profile || "")].filter(Boolean).join(" · ")}
           meta={
             !attempts[q.id]
               ? "미풀이"

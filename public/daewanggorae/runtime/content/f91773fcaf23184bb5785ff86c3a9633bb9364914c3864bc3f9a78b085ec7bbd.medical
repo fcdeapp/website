@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange",
+  "subjectId": "pulmonology",
+  "chapterId": "vascular",
+  "title": {
+    "ko": "폐색전증의 환기·관류와 우심실 부하",
+    "en": "Gas Exchange and Right Ventricular Load in PE"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.lo.01",
+      "text": "폐혈관 폐쇄와 사강을 연결한다"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.lo.02",
+      "text": "저산소혈증의 여러 기전을 구별한다"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.lo.03",
+      "text": "우심실 부하와 전신 관류를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.18b0152a6d37",
+      "type": "heading",
+      "level": 2,
+      "text": "공기는 들어가지만 혈액이 가지 않을 때"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.f56f9c76bfbd",
+      "type": "paragraph",
+      "markdown": "폐색전증(pulmonary embolism, PE)은 폐동맥 계통의 혈류가 색전으로 제한된 상태다. 정맥혈전에서 유래한 혈전성 색전이 중요하지만 다른 종류의 색전도 감별 맥락에 따라 고려한다. 한 구역의 혈류가 줄면 그 구역은 환기에 비해 관류가 적어져 사강 성분이 증가할 수 있다. 산소가 폐포에 도달했다는 사실만으로 그 산소가 충분한 혈액에 실려 전신으로 전달되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+      ]
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.ed8fa2e55606",
+      "type": "paragraph",
+      "markdown": "폐혈관의 기계적 폐쇄와 혈관 반응은 폐혈관 저항을 높일 수 있다. 폐쇄 범위와 위치, 기존 심폐 예비력 및 체액·리듬이 결과를 바꾼다. CT에서 보이는 혈전의 길이나 중심 위치만으로 전신 위험을 모두 정하지 않는다. 같은 해부학적 부담도 정상에 가까운 오른심실과 기존 폐고혈압·심실질환이 있는 환자에게 다른 결과를 만들 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.b3e3e8d58700",
+      "type": "heading",
+      "level": 2,
+      "text": "저산소혈증은 한 기전이 아니다"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.fcd0054fbfcf",
+      "type": "paragraph",
+      "markdown": "혈류가 다른 폐구역으로 재분배되면 상대적으로 낮은 환기·관류 영역도 생길 수 있다. 무기폐와 폐 실질의 변화, 낮아진 혼합정맥 산소함량 및 특정 상황의 우좌단락이 산소화에 기여한다. 폐색전의 가스교환을 사강 증가 하나만으로 설명하면 저산소혈증의 전체 기전을 놓친다. 산소화와 이산화탄소, 환기 및 전방량을 함께 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.2cf19e5e586a",
+      "type": "paragraph",
+      "markdown": "호흡 자극으로 과환기가 생기면 이산화탄소 분압이 낮아질 수 있지만 모든 환자에게 같은 양상은 아니다. 정상에 가까운 혈액가스나 포화도만으로 폐색전을 배제하지 않는다. 반대로 저산소혈증과 호흡성 알칼리증은 여러 질환에서 나타난다. 증상 시작과 위험 배경, 호흡·순환 자료를 통합하여 검사 전 가능성을 평가하고 적절한 검사를 선택한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.d443d0697b94",
+      "type": "heading",
+      "level": 2,
+      "text": "오른심실이 갑자기 받는 저항"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.b8c9cb5b3937",
+      "type": "paragraph",
+      "markdown": "얇고 순응성 높은 오른심실은 급격한 후부하 증가를 충분히 견디지 못할 수 있다. 확장과 벽응력 증가는 산소 요구를 늘리고 관상 관류 환경과 함께 허혈·기능 저하에 관여한다. 심실중격 이동과 심낭 안 상호의존성은 왼심실 충만도 줄일 수 있다. 오른심실 문제는 폐순환에만 머무르지 않고 전신 박출 저하로 이어진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.bd8b396f2bfe",
+      "type": "paragraph",
+      "markdown": "전신 압력이 떨어지면 오른심실 관상 관류가 더 나빠지는 악순환이 생길 수 있다. 빈맥과 혈관 긴장 증가는 일시적인 보상일 수 있지만 충분한 안정성을 보장하지 않는다. 혈압이 아직 유지되어도 관류와 호흡·심실 부담이 악화할 수 있어 변화의 추세를 관찰한다. 우심실 확장과 손상 표지자의 의미는 현재 급성 사건과 기존 질환을 구별하여 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.cee8ca06eeef",
+      "type": "heading",
+      "level": 2,
+      "text": "가스와 순환의 자료를 함께 읽는다"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.a4f10d673dd2",
+      "type": "paragraph",
+      "markdown": "호흡곤란과 흉통·실신, 맥박과 혈압 및 저관류 소견은 서로 다른 축의 정보다. 영상의 폐혈관 병변과 심장방의 반응, 심근손상·부하 표지자 및 임상 중증도를 통합한다. 정상 심장 모형은 폐순환과 양심실의 위치를 이해하는 데 도움을 주지만 환자의 혈전과 저항·운동을 재현하지는 않는다. 생리적 과정과 정적 구조를 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.b.0d6486587d90",
+      "type": "paragraph",
+      "markdown": "치료의 큰 목표는 추가 혈전과 재발을 막는 것, 필요한 경우 폐혈관의 급성 폐쇄와 순환 위협을 줄이는 것 및 지지 치료의 균형이다. 산소를 공급하는 것과 폐혈관의 흐름을 회복하는 것은 다른 개입이다. 항응고·재관류 및 호흡·순환 지원의 적합성은 현재 위험과 출혈·시술 위해, 환자 조건에 따라 평가한다. 하나의 포화도 목표만으로 모든 치료 결정을 대신할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.h.extra0844",
+      "type": "heading",
+      "level": 2,
+      "text": "사강과 폐포환기의 수지"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.p.extra0844.0",
+      "type": "paragraph",
+      "markdown": "분당 환기량 VE는 일회호흡량 VT와 호흡수 f의 곱이고, 단순 폐포환기 VA는(VT−VD)f로 쓴다. VD는 한 호흡에서 효과적인 가스교환에 기여하지 못하는 사강 성분이다. VT0.5L와 f12/min에서 VD0.15L이면 VE6L/min,VA4.2L/min이다. VD가0.25L로 늘고 다른 조건을 고정하면 VE는 같지만 VA는3L/min으로 줄어든다."
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.p.extra0844.1",
+      "type": "paragraph",
+      "markdown": "정상상태와 고정된 이산화탄소 생성의 단순 모형에서는 폐포환기가 감소할수록 동맥 이산화탄소 분압이 올라가는 관계를 생각할 수 있다. 실제 폐색전 환자는 호흡수와 깊이를 바꾸고 폐 안의 분포도 달라지므로 이 고정 입력 계산과 같은 경과를 반드시 보이지 않는다. 전체 환기량이 같다는 사실과 효과적인 가스교환 환기가 같다는 사실을 구별하는 것이 핵심이다."
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.table0844",
+      "type": "table",
+      "data": {
+        "title": "측정 대상과 생리적 의미",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "사강",
+            "환기에 비해 관류 적은 영역"
+          ],
+          [
+            "저산소",
+            "재분배·무기폐·정맥산소·단락"
+          ],
+          [
+            "우심실",
+            "급성 후부하·확장·허혈"
+          ],
+          [
+            "전신",
+            "충만 감소와 전방량 저하"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.diagram.deadspace-alveolar-ventilation-0844",
+      "type": "diagram",
+      "diagramRef": "diagram.deadspace-alveolar-ventilation-0844",
+      "path": "diagrams/diagram.deadspace-alveolar-ventilation-0844.svg",
+      "alt": "고정 호흡에서 사강과 폐포환기의 독립 계산 곡선"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.anatomy3d0844",
+      "type": "anatomy3d",
+      "sceneRef": "scene.physiology.respiratory.ventilation-perfusion.920b9e40"
+    },
+    {
+      "id": "pulmonology.vascular.pulmonary-embolism-gas-exchange.limits0844",
+      "type": "clinicalPearl",
+      "markdown": "정상 폐와 관련 구조의 위치 문맥이다. 실제 혈전·미세혈관·폐포·환기 관류 분포·호흡 운동·환자별 과팽창은 이 정상 정적 모델이 측정하거나 재현하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/vascular/sections/pulmonology.vascular.pulmonary-embolism-gas-exchange.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.vascular.pulmonary-embolism-gas-exchange.001",
+    "question.pulmonology.vascular.pulmonary-embolism-gas-exchange.002"
+  ],
+  "relatedLessons": [
+    "cardiology.vascular.deep-vein-thrombosis",
+    "pulmonology.vascular.pulmonary-embolism-assessment"
+  ]
+}

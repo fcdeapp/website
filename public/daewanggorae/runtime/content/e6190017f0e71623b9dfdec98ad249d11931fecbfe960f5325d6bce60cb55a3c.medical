@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0.0",
+  "version": "0.9.1",
+  "documents": "reader/documents.json",
+  "concepts": "reader/concepts.json",
+  "annotationIndex": "reader/annotation-index.json",
+  "runtime": "reader/runtime/annotations.mjs",
+  "annotationSchema": "reader/schemas/annotation.schema.json",
+  "offsetUnit": "utf16",
+  "sourceField": "blocks[].markdown",
+  "reviewStatus": "editorial_seed_requires_review",
+  "linkPolicy": {
+    "firstConceptOccurrencePerDocument": true,
+    "maxLinksPerParagraph": 3,
+    "maxLinksPerDocument": 12,
+    "selfLinks": false,
+    "unavailableDocuments": "plain_text",
+    "ambiguousTerms": "skip"
+  },
+  "highlightPolicy": {
+    "maxHighlightsPerDocument": 3,
+    "maxHighlightsPerParagraph": 1,
+    "medicalApprovalImplied": false
+  },
+  "routing": "resolve by documentId; host app supplies route; sourcePath is a JSON resource, not a page URL"
+}

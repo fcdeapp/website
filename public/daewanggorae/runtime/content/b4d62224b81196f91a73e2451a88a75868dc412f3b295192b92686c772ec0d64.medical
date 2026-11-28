@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.general.metabolism-interactions",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.6dbfdbc23e04",
+      "sourceSha256": "6dbfdbc23e04fa2c4bd6dd89e2d1eccb6f8ebffe3aa09fef5a8d38ed6e72421c",
+      "sourceLengthUtf16": 215,
+      "annotations": [
+        {
+          "id": "ann.1cd03fce1ac4a3a511f3",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 102,
+            "end": 105,
+            "exact": "약동학",
+            "prefix": "·대사효소·수송체·단백결합과 배설이 바뀌는 ",
+            "suffix": "적 상호작용과,혈중 노출 변화 없이 표적·장"
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        },
+        {
+          "id": "ann.c15d0306e240d0ab1d08",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 146,
+            "end": 149,
+            "exact": "약력학",
+            "prefix": "없이 표적·장기 효과가 더해지거나 반대되는 ",
+            "suffix": "적 상호작용을 구별한다. 식품·보충제·흡연도"
+          },
+          "conceptId": "reader.term.3f6c24ce1179f5f7",
+          "targetDocumentId": "pharmacology.general.pharmacodynamics"
+        },
+        {
+          "id": "ann.c4a741fc86ea4645ad37",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 73,
+            "end": 162,
+            "exact": "흡수 환경·대사효소·수송체·단백결합과 배설이 바뀌는 약동학적 상호작용과,혈중 노출 변화 없이 표적·장기 효과가 더해지거나 반대되는 약력학적 상호작용을 구별한다.",
+            "prefix": " 약물의 노출이나 효과를 바꾸는 현상이다. ",
+            "suffix": " 식품·보충제·흡연도 관련될 수 있으므로 처"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.f3a12ca00aad",
+      "sourceSha256": "f3a12ca00aad6c22a67d972c040759d32c252e7b5dcbea2be953e9b1e12e0247",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.fe2b7047cc71",
+      "sourceSha256": "fe2b7047cc7192dd406e8ab9130b8eaa6c691e6224ab45a25cdf0e0a3401fc17",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.ddbf0a846bbe",
+      "sourceSha256": "ddbf0a846bbe2eea9cb98f69d4e414b82d25c3633ec6bddd2f020b7cb24911fa",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.a2fdc925a5c2d9915b8c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 63,
+            "exact": "시간 의존적 억제(time-dependent inhibition)에서는 노출 시간과 활성 효소의 변화가 중요하다.",
+            "prefix": "",
+            "suffix": " 기전 기반 불활성화가 발생하면 억제제가 혈"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.6ef29a427e58",
+      "sourceSha256": "6ef29a427e582a14a462b4af0794e3209528e488354146019ab14d84e7db0087",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.48e1e06e1215",
+      "sourceSha256": "48e1e06e1215636029a4edbab482031d10168610c6217094e048edfc7a288938",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.77bd2ad4c104",
+      "sourceSha256": "77bd2ad4c104e8b7ddf61521f10982709f96002b374e9298fabd63accfe366bd",
+      "sourceLengthUtf16": 196,
+      "annotations": [
+        {
+          "id": "ann.b8d26d45da363de8c4a4",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 26,
+            "end": 29,
+            "exact": "청소율",
+            "prefix": " 이용률·선형 제거를 두고 한 경로가 기저 ",
+            "suffix": "의 분율 fm을 담당한다고 하자. 그 경로의"
+          },
+          "conceptId": "reader.term.52a8b75072525e18",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.a5c6b4b2893a",
+      "sourceSha256": "a5c6b4b2893a46b41a090ac5eeea062e89d43a7dd74bd0dce7c1381656fb900d",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.1931e415aa06",
+      "sourceSha256": "1931e415aa069be7bea1ad73e52193a3c94803955d42abc8223cf070e3a9e53e",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-interactions.b.52c73b2c9558",
+      "sourceSha256": "52c73b2c9558db93bc53098580ea928a5a3995d252738fd73addae985defd0e0",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    }
+  ]
+}

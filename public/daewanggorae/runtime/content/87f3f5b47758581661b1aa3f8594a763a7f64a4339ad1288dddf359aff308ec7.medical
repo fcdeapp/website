@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.localization.stroke",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.localization.stroke.b.afaa3b9203d1",
+      "sourceSha256": "afaa3b9203d1c0644e33ce95e9b7b02b199b4a696c41f78071432eec18717705",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.localization.stroke.b.e38fc093507b",
+      "sourceSha256": "e38fc093507b65a64ad278f2d03e41f3bf58cd29f200c6e36b9db385021c883e",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.21a464cc0a8d1db39469",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 125,
+            "end": 151,
+            "exact": "약화의 좌우만으로 혈관 이름을 확정하지 않는다.",
+            "prefix": "함께 보아야 병변 높이를 추정할 수 있다. ",
+            "suffix": " 깊은 관통동맥 영역의 작은 병변도 밀집된 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.localization.stroke.b.309ce372e201",
+      "sourceSha256": "309ce372e201ee33db0a67d8a1135b737e89ccc25fd8a8cfde111391585f340f",
+      "sourceLengthUtf16": 243,
+      "annotations": [
+        {
+          "id": "ann.a9f5c7a1703e26d5a436",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 101,
+            "end": 140,
+            "exact": "비우성반구 손상에서는 편측무시나 공간 처리 장애가 중요한 단서가 된다.",
+            "prefix": " 우성반구에서는 실어증이 나타날 수 있다. ",
+            "suffix": " 실어증은 언어 체계의 장애이고 구음장애는 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.localization.stroke.b.431afcf13af0",
+      "sourceSha256": "c4b114cf4163c9b07fed82ad7f54817e3370dd2c2b8915233cc507611dcfb02b",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.localization.stroke.b.aa071436ee1e",
+      "sourceSha256": "aa071436ee1e843973192e778f805bfc15ee1b3522171b53986f9d91eee4f14d",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.a0edcda28d3279fa8554",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 128,
+            "end": 179,
+            "exact": "복시, 구음장애, 삼킴장애, 심한 실조와 안진을 동반한 어지럼은 후방순환 평가에서 중요하다.",
+            "prefix": "과서적 조합을 완전히 보이는 것은 아니다. ",
+            "suffix": " 어지럼을 한 가지 증상만으로 말초성이라고 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.localization.stroke.b.aa830ede048c",
+      "sourceSha256": "aa830ede048c3bd8c03718aa838b7e0e608eaf06810d56c48de4010ca2bcfe2f",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.68c116d2f60b70c35df7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 2,
+            "exact": "소뇌",
+            "prefix": "",
+            "suffix": " 손상은 근력 저하보다 측정장애, 운동분해,"
+          },
+          "conceptId": "reader.term.4799594fa35f4571",
+          "targetDocumentId": "neuroanatomy.cerebellum.cortex-connections"
+        },
+        {
+          "id": "ann.c4cf4f2cdde0112798d1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 145,
+            "exact": "뇌척수액",
+            "prefix": ". 소뇌 부종은 좁은 뒤머리오목에서 뇌간과 ",
+            "suffix": " 흐름에 영향을 줄 수 있으므로 초기 기능장"
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.localization.stroke.b.de6221c5d1ab",
+      "sourceSha256": "eb8380732f0e34d616b80fb47342067258323c22980f7ae9a0ca9b248328ec59",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    }
+  ]
+}

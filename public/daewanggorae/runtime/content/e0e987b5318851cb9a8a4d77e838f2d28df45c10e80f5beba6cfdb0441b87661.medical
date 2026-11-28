@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.transplant.allorecognition-pathways",
+  "subjectId": "immunology",
+  "chapterId": "transplant",
+  "title": {
+    "ko": "이식 항원의 직접·간접·반직접 인식",
+    "en": "Direct Indirect and Semidirect Allorecognition"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.transplant.allorecognition-pathways.lo.01",
+      "text": "항원제시세포와 MHC의 기원을 구분한다"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.lo.02",
+      "text": "이식 거부와 이식편대숙주 반응의 방향을 비교한다"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.lo.03",
+      "text": "면역검사와 장기 기능의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.a4026d468e92",
+      "type": "heading",
+      "level": 2,
+      "text": "누구의 세포가 누구의 MHC를 보여 주는가"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.d513654659c8",
+      "type": "paragraph",
+      "markdown": "동종 이식에서 수혜자 T세포는 공여자의 다른 HLA·펩타이드와 관련된 정보를 인식할 수 있다. 직접 인식에서는 수혜자 T세포가 공여자 세포의 온전한 MHC 복합체를 인식한다. 간접 인식에서는 수혜자의 항원제시세포가 공여자 유래 단백질을 처리하여 자기 MHC에 제시한다. 두 경로의 차이는 외부 물질을 보느냐의 여부보다 제시 세포와 MHC, 펩타이드의 기원에 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.1fd1fb0a1290",
+      "type": "paragraph",
+      "markdown": "반직접 인식에서는 수혜자 항원제시세포가 공여자의 온전한 MHC 복합체를 받아 제시할 수 있다. 이때 제시 세포는 수혜자이지만 보이는 MHC는 공여자에서 왔다는 조합이 된다. 막·소포를 통한 복합체 전달과 관련된 cross-dressing의 맥락이다. 표면의 공여자 MHC를 보았다고 공여자 세포 자체가 남아 있다고 자동 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.22da54692af1",
+      "type": "heading",
+      "level": 2,
+      "text": "HLA 일치가 모든 차이를 없애지는 않는다"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.3e2530dab414",
+      "type": "paragraph",
+      "markdown": "MHC의 차이는 중요한 자극이지만 minor histocompatibility antigen 같은 다른 유전적 차이의 펩타이드도 반응에 기여할 수 있다. 공여자·수혜자의 노출 이력과 기억세포, 염증·허혈 재관류도 면역환경을 바꾼다. HLA가 잘 맞는다는 정보는 위험을 줄이는 데 중요하지만 모든 면역·비면역 손상을 배제하지는 않는다. 임상 위험은 여러 층의 합이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.23c1777d886b",
+      "type": "paragraph",
+      "markdown": "항체는 공여자 관련 표적에 결합하여 보체와 세포 효과기, 미세혈관 손상을 연결할 수 있다. 그러나 항체 검출만으로 현재 장기의 모든 기능 저하가 항체매개 거부라고 확정하지 않는다. 조직 소견과 장기별 진단 기준, 감염·독성·혈역학 등 다른 원인을 통합한다. 항원 특이 면역반응과 실제 장기 손상은 별도로 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.3f1a35f58613",
+      "type": "heading",
+      "level": 2,
+      "text": "시간 구분과 기전의 구분"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.c34132839b4f",
+      "type": "paragraph",
+      "markdown": "초급성·급성·만성이라는 시간적 용어는 전형적인 발생 양상을 배우는 데 유용하지만 단일 면역 기전과 완전하게 일치하지 않는다. 세포성·항체 관련 손상이 겹치고 치료 뒤의 경과도 달라질 수 있다. 이식 후 시간이 오래 지났다는 이유만으로 새로운 급성 면역 손상이나 감염을 배제하지 않는다. 현재의 자료와 장기별 기준을 우선한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.b50ccdf2d14f",
+      "type": "paragraph",
+      "markdown": "직접 경로는 공여자 항원제시세포의 존재와 관련되고 간접 경로는 공여 항원 공급이 지속되는 동안 작동할 수 있다. 다만 직접은 급성에만, 간접은 만성에만 관여한다는 절대 구분은 지나치다. 반직접 전달과 세포 이동, 기억과 염증은 경로의 기여를 바꾼다. 실험에서 규정한 시간표를 모든 사람의 이식에 그대로 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.27b5267fb5fc",
+      "type": "heading",
+      "level": 2,
+      "text": "면역 공격의 방향"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.3597d23440cd",
+      "type": "paragraph",
+      "markdown": "이식편 거부는 주로 수혜자 면역계가 공여 조직을 공격하는 방향이다. 이식편대숙주병(graft-versus-host disease, GVHD)은 이식된 면역세포가 수혜자 조직을 표적으로 하는 방향이 중심이다. 같은 이식이라는 상황에서도 공격하는 세포와 표적의 기원이 반대다. 모든 이식 후 염증을 거부반응이라는 한 단어로 표현하면 이 차이를 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.b.0aa3eeaf4d86",
+      "type": "paragraph",
+      "markdown": "Crossmatch와 항체 검사, HLA 정보는 이식 위험평가의 서로 다른 정보를 준다. 한 음성 검사로 미래의 모든 면역반응을 보장할 수 없으며, 검사의 표적·방법과 시점을 이해해야 한다. 실제 면역억제 약물과 감염 예방, 장기별 거부 진단은 최신 전문 지침이 필요한 별도 임상 과제다. 기본 면역학은 어떤 자료가 어떤 기전을 지지하는지 설명하는 데 사용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.transplant.allorecognition-pathways.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "직접",
+            "공여 세포의 공여 MHC를 인식"
+          ],
+          [
+            "간접",
+            "수혜 APC가 자기 MHC로 공여 펩타이드 제시"
+          ],
+          [
+            "반직접",
+            "수혜 APC가 온전한 공여 MHC를 전달받음"
+          ],
+          [
+            "GVHD",
+            "공여 면역세포→수혜 조직의 공격 방향"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/transplant/sections/immunology.transplant.allorecognition-pathways.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.transplant.allorecognition-pathways.001"
+  ],
+  "relatedLessons": [
+    "immunology.deficiency.pattern-based-evaluation",
+    "immunology.tumor.immunoediting-escape"
+  ]
+}

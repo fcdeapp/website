@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.vascular.pulmonary-embolism-assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.b.912c44c7c82d",
+      "sourceSha256": "912c44c7c82d16f1976b0785917e60e0e75c0144c688d97428203358e699c58b",
+      "sourceLengthUtf16": 209,
+      "annotations": [
+        {
+          "id": "ann.f627df2137edce9d00e5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 184,
+            "end": 186,
+            "exact": "기흉",
+            "prefix": " 호흡곤란과 흉통이 있어도 관상동맥·대동맥·",
+            "suffix": "·감염 등 다른 응급 원인을 함께 살핀다."
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.b.37d982d81a56",
+      "sourceSha256": "37d982d81a56c6091866da16712b255393d3c0e14db63f87c7f43df155301740",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.b.d82dbcfe2f3c",
+      "sourceSha256": "d82dbcfe2f3c895905a3b4fa35f4a5692843bd836e05d2bbe83a27286fa06bfe",
+      "sourceLengthUtf16": 167,
+      "annotations": [
+        {
+          "id": "ann.3c8678b3ae1a795c8c83",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 83,
+            "end": 125,
+            "exact": "제한된 검사에서 보이지 않았다는 결과와 충분히 평가한 음성 결과를 구별한다.",
+            "prefix": " 분지와 영상 품질이 결과에 영향을 준다. ",
+            "suffix": " 작은 말초 결손의 신뢰성과 실제 임상 의미"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.b.a585f1f0c4eb",
+      "sourceSha256": "a585f1f0c4eb6b61f3d2a0d9f4124c033f53b7bfb83d23c67dcce3226be52031",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.b.be18548f9325",
+      "sourceSha256": "be18548f93259a955f17f2503115cba787d98ae0223ec2844cc585174bbb55b0",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.b.e0c9a05571a5",
+      "sourceSha256": "e0c9a05571a5b37f6a1d1d4ba6545bde2df298519effc95e7a62d3934a32aece",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.b.94f767a3de6f",
+      "sourceSha256": "94f767a3de6f00b07832e0a3b5b818884e3eaaa658e920f62f43352c4e5b36a1",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.b.664d5a2ac8c7",
+      "sourceSha256": "664d5a2ac8c72ed7e9d5758756960ed5e5a01aa63b3bd5392b8103f17ca4652b",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.5a9e729ba54611b2a2b2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 51,
+            "end": 104,
+            "exact": "지속하는 호흡곤란은 탈조건화와 심폐 동반질환, 잔여 폐혈관 폐쇄와 만성 폐고혈압 등을 구별한다.",
+            "prefix": "성, 출혈·재발 및 기능 회복을 확인한다. ",
+            "suffix": " 급성 위험을 넘겼다는 결과와 운동 능력이 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.p.extra0844.0",
+      "sourceSha256": "a4b0ed0ef681a936ae2a7bb90854cd0239dbed8c062fabd9bb9a086ad5c867e5",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.vascular.pulmonary-embolism-assessment.p.extra0844.1",
+      "sourceSha256": "e2cb473e72573167ea2e47604351f2c1fe5f28fbe03db449629c3c509a2628e2",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    }
+  ]
+}

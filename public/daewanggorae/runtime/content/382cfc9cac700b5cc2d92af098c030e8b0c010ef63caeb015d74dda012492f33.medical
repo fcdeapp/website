@@ -1,0 +1,212 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "molecular-biology.proteins.targeting-quality-control",
+  "subjectId": "molecular-biology",
+  "chapterId": "proteins",
+  "title": {
+    "ko": "단백질 표적화와 소포체 품질관리",
+    "en": "Protein Targeting and Endoplasmic Reticulum Quality Control"
+  },
+  "learningObjectives": [
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.lo.01",
+      "text": "주소 신호와 막통과 기전을 연결한다"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.lo.02",
+      "text": "분비 단백질과 막단백질의 위상을 구별한다"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.lo.03",
+      "text": "접힘 반응·스트레스 반응·분해를 비교한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.36796711c1a9",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 세포질에서 시작해도 목적지는 다르다"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.18fcb9bacd43",
+      "type": "paragraph",
+      "markdown": "대부분의 핵 유래 단백질은 세포질 리보솜에서 합성을 시작하지만 최종 위치는 신호 서열과 세포의 수송 기전에 따라 달라진다. 핵·미토콘드리아·소포체로 향하는 단백질은 서로 다른 인식·통과 경로를 이용한다. 조면소포체에 붙은 리보솜과 자유 리보솜이 본질적으로 다른 유전암호를 읽는 종류는 아니다. 새 사슬에 나타나는 신호와 수용체가 합성 장소의 연결을 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.68eeebfa1874",
+      "type": "paragraph",
+      "markdown": "목적지 신호는 단순한 우편번호 비유를 넘어서 위치·전하·소수성·단백질 구조에 영향을 받는다. 신호를 제거하거나 붙인 실험은 그 서열의 필요성·충분성을 묻지만, 모든 단백질에서 같은 결과를 보증하지는 않는다. 수송 인자와 접힘 상태, 실험계가 갖추어져 있는지도 확인해야 한다. 최종 형광 위치만으로 통과 시점과 경로를 모두 확정하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.792c6cd5f13b",
+      "type": "heading",
+      "level": 2,
+      "text": "SRP와 소포체 막의 연결"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.3772f1a9d5b3",
+      "type": "paragraph",
+      "markdown": "많은 분비·막 단백질에서는 소수성 소포체 신호가 합성 중 노출되면 신호인식입자(signal recognition particle, SRP)가 이를 인식한다. SRP 수용체와 막의 단백질 통로인 Sec61 등을 통해 리보솜–새 사슬이 소포체에 연결되고 번역과 이동이 연동될 수 있다. 신호가 나타나기 전부터 완성 단백질이 소포체 안에서 새로 번역을 시작한다고 표현하지 않는다. 일부 단백질에는 다른 표적화·삽입 경로도 있어 모든 소포체 유입을 SRP의 동일한 반응 하나로 제한하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.f0b0d3b31330",
+      "type": "paragraph",
+      "markdown": "절단 가능한 아미노말단 신호펩타이드는 통과를 시작한 뒤 제거될 수 있다. 그러나 모든 소포체 신호가 절단되지는 않는다. 내부 신호고정서열(signal anchor)은 막에 남아 단일 통과 단백질의 일부가 될 수 있다. 시작·정지 통과 신호의 배열과 주변 전하는 어느 부분이 내강 또는 세포질을 향하는지에 영향을 준다. 같은 소수성 구간이라는 이유만으로 모든 단백질의 아미노말단이 내강을 향한다고 고정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.f57dffa0929d",
+      "type": "heading",
+      "level": 2,
+      "text": "막의 위상은 수송 뒤에도 보존된다"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.65b3528dabb1",
+      "type": "paragraph",
+      "markdown": "소포체 내강으로 들어간 영역은 분비 경로를 따라 소포의 내강과 골지체 내강에 놓인다. 이 소포가 세포막과 융합하면 그쪽은 세포 밖을 향하게 된다. 반대로 세포질을 향한 영역은 세포질 쪽을 유지한다. 따라서 세포막 수용체의 세포외 도메인과 세포질 신호 도메인이 왜 서로 다른 환경에서 가공되는지 위상(topology)으로 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.85733c2896e0",
+      "type": "paragraph",
+      "markdown": "N결합 당화(N-linked glycosylation)는 소포체 내강 쪽에서 시작되는 대표적 가공이다. 적절한 서열 모티프가 있어도 모든 위치가 반드시 같은 정도로 당화되는 것은 아니며 접근성과 단백질 상태가 영향을 준다. 세포질 도메인의 동일한 서열만 보고 내강 효소에 의해 같은 당화가 일어날 것이라고 예측해서는 안 된다. 분자 서열뿐 아니라 막의 어느 쪽에 있는지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.0319334ca8d9",
+      "type": "heading",
+      "level": 2,
+      "text": "접힘과 이황화결합"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.476c6836df07",
+      "type": "paragraph",
+      "markdown": "소포체의 샤페론(chaperones)과 산화적 접힘 환경은 분비 단백질의 구조 형성을 돕는다. 단백질이황화결합이성화효소(protein disulfide isomerase, PDI) 계통은 이황화결합의 형성과 재배열에 관여한다. 이황화결합이 많으면 무조건 접힘이 빠르거나 안정성이 높다는 단순 규칙은 성립하지 않는다. 잘못 연결된 결합의 교정과 조립 파트너의 존재가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.b08372cf0973",
+      "type": "paragraph",
+      "markdown": "당단백질의 당사슬 처리와 calnexin·calreticulin 관련 경로는 접힘 상태를 살피는 데 관여한다. 가공은 단백질에 장식만 더하는 과정이 아니라 보유·이동·분해 선택에 연결될 수 있다. 돌연변이가 촉매 부위를 직접 바꾸지 않아도 접힘과 수송을 방해하여 표면 발현을 줄일 수 있다는 점이 임상적 의미를 가진다. 단백질 총량과 올바른 위치의 기능성 양은 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.bf2ff0adf877",
+      "type": "heading",
+      "level": 2,
+      "text": "스트레스 반응과 분해의 선택"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.13aae92ed702",
+      "type": "paragraph",
+      "markdown": "접힘 부담이 늘면 미접힘단백질반응(unfolded protein response, UPR)이 활성화될 수 있다. IRE1·PERK·ATF6 경로는 전사·번역과 소포체 처리 능력을 조절하는 서로 다른 연결을 가진다. 초기 적응은 부하를 줄이고 접힘·분해 능력을 높이는 데 기여하지만, 강하고 지속적인 스트레스에서는 세포사멸과도 연결될 수 있다. UPR 표지 하나가 증가했다는 이유만으로 이미 자멸사가 확정되었다고 말하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.fde2f60a539b",
+      "type": "paragraph",
+      "markdown": "소포체연관분해(ER-associated degradation, ERAD)는 선택된 비정상 단백질을 세포질 쪽 분해계로 보내는 과정에 관여한다. 프로테아좀과 유비퀴틴 관련 단계가 연결되지만, 모든 소포체 유래 단백질이 같은 경로로 제거되는 것은 아니다. 리소좀·자가포식 관련 경로도 구별한다. 접힘 교정, 번역량 감소, 표적 분해는 비슷한 최종 농도 감소를 만들 수 있어 어떤 과정이 변했는지 나누어 측정해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.2e0c056c2860",
+      "type": "heading",
+      "level": 2,
+      "text": "실험 자료를 읽는 법"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.1c4eed481387",
+      "type": "paragraph",
+      "markdown": "막 소포를 이용한 단백질분해효소 보호 실험에서는 소포막이 온전할 때 내강 영역은 외부 효소로부터 보호될 수 있다. 세제를 넣어 막을 무너뜨리면 접근성이 바뀐다. 그러나 분해되지 않았다는 결과를 곧바로 내강 위치의 확정으로 바꾸려면 효소 활성·접힘·응집과 적절한 대조를 확인해야 한다. 보호의 유무와 당화 변화, 신호 절단, 시간 경과를 함께 보면 표적화와 막 위상에 대한 가설을 구별할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.b.55eb9cfb1b1c",
+      "type": "paragraph",
+      "markdown": "이동 경로의 효율을 계산할 때에도 순서를 명시한다. 합성된100분자 중80%가 소포체로 들어가고 그중75%가 올바르게 접힌다고 가정하면 접힌 유입 분자는60이다. 전체100의75%인75로 계산하면 두 번째 비율의 분모를 바꾼 것이다. 이 비율은 조건부 수지를 위한 가상 값이며 특정 단백질이나 세포의 실제 효율이 아니다. 최종 기능성 단백질 양은 합성뿐 아니라 표적화·접힘·분해의 곱과 수지에 달려 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.diagram.protein-target-fold-fraction",
+      "type": "diagram",
+      "diagramRef": "diagram.protein-target-fold-fraction",
+      "path": "diagrams/diagram.protein-target-fold-fraction.svg",
+      "alt": "유입·접힘의 조건부 수지의 독립 계산 곡선"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.diagram.er-topology-quality-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.er-topology-quality-pairs",
+      "path": "diagrams/diagram.er-topology-quality-pairs.svg",
+      "alt": "표적화·위상·품질관리의 단계별 비교"
+    },
+    {
+      "id": "molecular-biology.proteins.targeting-quality-control.table.compare",
+      "type": "table",
+      "data": {
+        "title": "소포체 단계 비교",
+        "columns": [
+          "단계",
+          "대표 요소",
+          "질문"
+        ],
+        "rows": [
+          [
+            "표적화",
+            "신호·SRP·수용체",
+            "어디로이동하는가"
+          ],
+          [
+            "막 위상",
+            "시작/정지·신호고정",
+            "어느면인가"
+          ],
+          [
+            "접힘",
+            "샤페론·PDI",
+            "기능구조인가"
+          ],
+          [
+            "적응",
+            "IRE1·PERK·ATF6",
+            "부하조절인가"
+          ],
+          [
+            "분해",
+            "ERAD 등",
+            "어떤경로로제거하는가"
+          ]
+        ],
+        "notes": "모든신호가절단되거나모든UPR이즉시사멸을뜻하지않는다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/molecular-biology/chapters/proteins/sections/molecular-biology.proteins.targeting-quality-control.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "소포체 내강 영역은 분비 경로의 위상을 따라 세포외 쪽이 될 수 있다.",
+    "유입 뒤 접힘 분율의 분모는 유입된 집단이다."
+  ],
+  "reviewQuestions": [
+    "question.molecular-biology.proteins.targeting-quality-control.001",
+    "question.molecular-biology.proteins.targeting-quality-control.002"
+  ],
+  "relatedLessons": [
+    "molecular-biology.rna.transcription-processing",
+    "molecular-biology.rna.translation-code",
+    "molecular-biology.rna.stability-silencing"
+  ]
+}

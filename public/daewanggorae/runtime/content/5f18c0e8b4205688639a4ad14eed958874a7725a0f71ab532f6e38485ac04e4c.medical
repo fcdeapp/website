@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroanatomy.forebrain.thalamic-networks",
+  "subjectId": "neuroanatomy",
+  "chapterId": "forebrain",
+  "title": {
+    "ko": "시상핵·감각 중계·시상겉질 회로",
+    "en": "Thalamic Nuclei and Thalamocortical Networks"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.lo.01",
+      "text": "시상의 위치와 주요 핵의 입력·출력을 설명한다"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.lo.02",
+      "text": "몸과 얼굴의 감각 중계 및 시각·청각 중계를 구별한다"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.lo.03",
+      "text": "시상그물핵의 억제와 각성 상태 변화 및 병변을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.1c9247cf1ddb",
+      "type": "heading",
+      "level": 2,
+      "text": "셋째뇌실 양옆의 핵 집합"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.1db49d738870",
+      "type": "paragraph",
+      "markdown": "시상(thalamus)은 사이뇌의 큰 회색질 집합으로 셋째뇌실의 양옆에 놓인다. 가쪽에는 속섬유막이 가까우며 아래의 시상하부와는 기능·구조적으로 구분된다. 양쪽 시상을 잇는 시상사이유착(interthalamic adhesion)은 개인차가 있어 없을 수 있으며, 뇌량처럼 양쪽 대뇌반구를 연결하는 대표적인 교련섬유 다발로 보지 않는다. 시상은 하나의 균일한 핵이 아니라 여러 입력과 표적을 갖는 핵들의 모임이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neuroanatomy.forebrain.thalamic-networks.right-context"
+      ],
+      "conceptRefs": [
+        "FMA258714"
+      ]
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.032a4f673793",
+      "type": "paragraph",
+      "markdown": "속섬유판(internal medullary lamina) 등의 백질 경계를 기준으로 앞쪽·안쪽·가쪽 핵군과 판속핵군을 구분한다. 핵의 이름은 위치와 역사적 명명에 따른 부분이 있어 약어만으로 기능이 결정되지는 않는다. 시상을 감각이 지나가는 중계소라고 부르는 것은 출발점으로 유용하지만 모든 핵이 같은 감각을 같은 방식으로 전달한다는 뜻은 아니다. 운동·각성·주의·기억 관련 회로도 시상에 연결되어 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.60d0757a5774",
+      "type": "heading",
+      "level": 2,
+      "text": "VPL과 VPM"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.dc4e07c7591f",
+      "type": "paragraph",
+      "markdown": "배쪽뒤가쪽핵(ventral posterolateral nucleus, VPL)은 몸에서 올라온 정교한 촉각·진동·고유감각과 앞가쪽계통의 감각 입력을 받는다. 배쪽뒤안쪽핵(ventral posteromedial nucleus, VPM)은 얼굴의 삼차신경 감각계와 관련된다. 이 구분은 말초의 몸·얼굴 감각이 서로 다른 핵과 신경로를 거쳐 중추로 올라온다는 사실을 반영한다. 두 핵 모두 체성감각겉질과 연결되며 입력의 공간적 배열이 보존되는 특성이 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.3e2493302770",
+      "type": "paragraph",
+      "markdown": "감각 중계핵으로 향하는 경로는 종류마다 교차 위치가 다르다. 몸의 뒤기둥 경로는 숨뇌에서, 앞가쪽계통은 척수에서 교차한 성분이 중요하고 얼굴의 감각 역시 뇌줄기 핵을 거쳐 반대쪽으로 이어지는 경로가 포함된다. 따라서 한쪽 시상 감각핵의 병변에서 반대쪽 몸과 얼굴의 감각 이상이 나타날 수 있다. 다만 어떤 감각이 어느 정도 손상되는지는 핵·주변 섬유와 병변 크기에 따라 달라진다. 모든 시상 병변이 완전한 반신감각소실을 만든다고 기대하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.7bc05b52e074",
+      "type": "paragraph",
+      "markdown": "통증의 위치·강도에 관한 정보는 배쪽뒤핵 계통과 관련되지만 통증의 모든 정서·각성 반응이 그 핵 하나에서 처리되는 것은 아니다. 판속핵과 여러 대뇌겉질·변연계 연결도 참여한다. 감각 입력이 줄어든 뒤 통증이 새롭게 생기거나 과도해질 수 있다는 사실은 중추 통증이 단순한 말초 통각수용체의 과활성만으로 설명되지 않음을 보여 준다. 감각 둔화와 통증이 함께 있는 소견은 모순이 아니라 서로 다른 회로 변화가 겹친 결과일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.7fa0b48c37d4",
+      "type": "heading",
+      "level": 2,
+      "text": "무릎체와 운동 관련 시상핵"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.ba2662140d99",
+      "type": "paragraph",
+      "markdown": "가쪽무릎체(lateral geniculate nucleus, LGN)는 망막에서 온 시각 경로의 주요 중계핵으로 시각부챗살을 통해 일차시각겉질과 연결된다. 안쪽무릎체(medial geniculate nucleus, MGN)는 아래둔덕 등에서 오는 청각 입력과 청각겉질 연결에 중요하다. 두 무릎체가 같은 시상 뒤쪽 영역에 있다고 같은 감각을 담당하는 것은 아니다. 시각 경로의 시야별 배열과 청각 경로의 양측성이 임상 병변의 차이를 만드는 근거가 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.5a1f82da0474",
+      "type": "paragraph",
+      "markdown": "배쪽앞핵(VA)과 배쪽가쪽핵(VL)은 바닥핵·소뇌와 대뇌 운동계 사이의 회로와 관련된다. 각 입력은 시상 안의 위치와 표적이 다를 수 있으며 두 핵을 감각핵 VPL과 같은 이름의 변형으로 이해해서는 안 된다. 바닥핵 출력의 GABA성 억제와 소뇌 출력의 흥분성 연결은 시상에 다른 방식으로 영향을 준다. 시상이 운동 명령을 단독 생성한다기보다 여러 회로의 정보를 대뇌겉질과 주고받으며 운동 조절을 가능하게 한다고 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.851f393cdfca",
+      "type": "heading",
+      "level": 2,
+      "text": "연합·기억 관련 핵"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.f99f1846906a",
+      "type": "paragraph",
+      "markdown": "시상앞핵은 유두체·띠이랑 등과의 연결을 통해 기억 관련 회로에 참여한다. 등쪽안쪽핵(mediodorsal nucleus)은 전전두겉질과의 연결이 중요하며 인지·정서·목표 지향 행동의 여러 요소와 관련된다. 베개핵(pulvinar)은 시각 연합영역과 주의 조절의 맥락에서 중요하다. 이러한 연결은 시상 병변에서 감각 외에 기억·주의·행동 변화가 나타날 수 있음을 설명한다. 핵 하나와 심리 기능 하나를 완전히 일대일로 대응시키는 표는 실제 분산 회로를 지나치게 단순화한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.ced0a57707f6",
+      "type": "paragraph",
+      "markdown": "판속핵(intralaminar nuclei)과 정중핵군은 그물체·바닥핵·대뇌겉질의 여러 연결과 관련된다. 특히 양측의 특정 시상 영역이 손상되면 각성 유지에 심한 변화가 나타날 수 있다. 의식이 저하되었다는 사실을 대뇌겉질 전체가 직접 파괴되었다는 뜻으로만 해석하지 않는다. 뇌줄기에서 시상과 대뇌로 이어지는 활성화 체계의 연결이 끊겨도 상태가 바뀔 수 있다. 의식 수준과 의식 내용의 변화는 서로 구분하여 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.8527cada93f9",
+      "type": "heading",
+      "level": 2,
+      "text": "시상그물핵의 위치와 억제"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.b6c9080760b2",
+      "type": "paragraph",
+      "markdown": "시상그물핵(thalamic reticular nucleus)은 시상의 가쪽을 얇게 둘러싸는 GABA성 뉴런군이다. 시상 중계뉴런과 대뇌겉질 사이를 오가는 섬유의 곁가지에서 입력을 받아 시상핵으로 억제성 출력을 보낸다. 이 핵은 다른 시상핵처럼 정보를 직접 대뇌겉질로 중계하는 주된 출력핵이 아니다. 같은 뇌줄기그물체(reticular formation)라는 이름의 일부로 오인하지 않고 위치와 연결을 나누어 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.b6bc4d01847e",
+      "type": "paragraph",
+      "markdown": "시상그물핵의 억제는 정보 흐름의 선택과 시간적 패턴을 바꾸는 데 기여한다. 수면·각성 상태에 따라 중계뉴런의 막전위와 발화 방식이 달라지고 시상겉질 회로의 동기화 양상도 변한다. 억제가 존재한다는 이유로 그 회로가 항상 기능을 없애는 것만은 아니다. 억제 뒤 반응성과 특정 이온통로의 작용이 시간적 신호를 형성할 수 있다. 다만 정상 수면의 동기화와 병적인 발작 회로를 같은 현상으로 동일시해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.3f5b4d018fac",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관과 단면 국소화"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.e5b4c9215533",
+      "type": "paragraph",
+      "markdown": "시상은 뒤대뇌동맥·뒤교통동맥 계통의 작은 관통가지와 맥락동맥 계통 등의 분포를 받으며 영역별 변이가 있다. 한 혈관 이름만으로 모든 시상 병변의 증상을 고정하지 않는다. 병변이 시상 안에 머무는지 속섬유막·중간뇌까지 이어지는지에 따라 마비·눈운동·각성 소견이 달라질 수 있다. 특히 핵과 백질이 가까운 경계에서는 영상과 진찰을 함께 배치해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.b.491d65d5654a",
+      "type": "paragraph",
+      "markdown": "진찰에서는 몸과 얼굴, 감각 종류, 운동·협응, 눈운동, 언어·주의·기억의 변화를 함께 살핀다. 같은 ‘감각이 이상하다’는 호소도 말초신경·척수·뇌줄기·시상·겉질 병변에서 나타날 수 있다. 한쪽 얼굴과 몸을 포괄하는 반대쪽 감각 변화에 시상 관련 인지·통증 소견이 더해지는지 확인하면 병변 후보를 좁힐 수 있다. 시상의 여러 핵을 배우는 목적은 명칭 암기만이 아니라 이 조합을 구조와 연결하는 데 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.thalamic-networks.block.thalamic-relays",
+      "type": "diagram",
+      "diagramRef": "diagram.thalamic-relays",
+      "path": "diagrams/diagram.thalamic-relays.svg",
+      "alt": "감각별 시상 중계의 구별의 구성 요소와 연결 방향을 보여주는 도해"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/forebrain/sections/neuroanatomy.forebrain.thalamic-networks.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroanatomy.forebrain.thalamic-networks.001"
+  ],
+  "keyFacts": [
+    "시상그물핵은 중계핵에 억제성 영향을 주는 GABA성 회로에 관여한다."
+  ],
+  "relatedLessons": [
+    "neuroanatomy.forebrain.basal-ganglia",
+    "neuroanatomy.visual.field-pathways",
+    "neuroanatomy.autonomic.central-peripheral"
+  ]
+}

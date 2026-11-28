@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
+import { State } from "./_components/UI";
 import Shell from "./_components/Shell";
 import { BRAND_LINE } from "./_lib/brand";
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <Shell>
-      <Suspense fallback={<p role="status">학습 화면을 불러오고 있습니다.</p>}>
+      <Suspense fallback={<State />}>
         {children}
       </Suspense>
     </Shell>

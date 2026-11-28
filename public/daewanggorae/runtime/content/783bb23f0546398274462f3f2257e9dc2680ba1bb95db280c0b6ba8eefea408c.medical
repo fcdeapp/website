@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.quantal-binomial-sites",
+  "lessonId": "physiology.neuro.synaptic-transmission",
+  "title": "독립 방출 자리의 양자 수",
+  "series": [
+    {
+      "label": "p=0.2",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0.32768
+        },
+        {
+          "x": 1,
+          "y": 0.4096
+        },
+        {
+          "x": 2,
+          "y": 0.2048
+        },
+        {
+          "x": 3,
+          "y": 0.0512
+        },
+        {
+          "x": 4,
+          "y": 0.0064
+        },
+        {
+          "x": 5,
+          "y": 0.00032
+        }
+      ]
+    },
+    {
+      "label": "p=0.5",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0.03125
+        },
+        {
+          "x": 1,
+          "y": 0.15625
+        },
+        {
+          "x": 2,
+          "y": 0.3125
+        },
+        {
+          "x": 3,
+          "y": 0.3125
+        },
+        {
+          "x": 4,
+          "y": 0.15625
+        },
+        {
+          "x": 5,
+          "y": 0.03125
+        }
+      ]
+    },
+    {
+      "label": "p=0.8",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0.00032
+        },
+        {
+          "x": 1,
+          "y": 0.0064
+        },
+        {
+          "x": 2,
+          "y": 0.0512
+        },
+        {
+          "x": 3,
+          "y": 0.2048
+        },
+        {
+          "x": 4,
+          "y": 0.4096
+        },
+        {
+          "x": 5,
+          "y": 0.32768
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "N": 5,
+    "independentIdenticalSites": true,
+    "oneQuantumPerSite": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 5,
+      "scale": "linear",
+      "ticks": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "label": "방출 수 k"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 0.5,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        0.125,
+        0.25,
+        0.375,
+        0.5
+      ],
+      "label": "확률"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "p=0.2",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "p=0.5",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      },
+      {
+        "id": "s2",
+        "label": "p=0.8",
+        "samplesPath": "series/2/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "tertiary"
+      }
+    ]
+  },
+  "limitations": [
+    "이항분포의독립계산이다. 실제시냅스기록이아니며자리별차이·수용체포화등을생략한다.",
+    "정수k자료의연결선은중간방출수나연속반응속도를뜻하지않는다."
+  ],
+  "sourceImageUsed": false
+}

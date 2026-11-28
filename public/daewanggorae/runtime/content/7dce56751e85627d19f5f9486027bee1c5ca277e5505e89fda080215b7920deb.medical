@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.proteins.amino-acid-turnover",
+  "subjectId": "biochemistry",
+  "chapterId": "proteins",
+  "title": {
+    "ko": "단백질 회전·분해 표지·아미노산 풀",
+    "en": "Protein Turnover and Amino Acid Pools"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.lo.01",
+      "text": "단백질 양을 합성·분해의 동적 수지로 설명한다"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.lo.02",
+      "text": "유비퀴틴·프로테아좀과 리소좀 경로를 구별한다"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.lo.03",
+      "text": "아미노산 질소와 탄소골격의 사용을 조직 간 대사에 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.b1fcaabaab32",
+      "type": "heading",
+      "level": 2,
+      "text": "일정한 양도 정지 상태는 아니다"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.ad57d50d892f",
+      "type": "paragraph",
+      "markdown": "세포의 단백질 양은 합성과 분해의 차이로 결정된다. 양이 일정하다고 새 합성이나 분해가 모두 멈췄다는 뜻은 아니다. 같은 양을 유지하면서 빠르게 교체되는 단백질과 느리게 교체되는 단백질은 자극에 대한 반응 속도와 에너지 비용이 다를 수 있다. 단백질의 농도·총량·합성률·분해율을 서로 다른 변수로 구분해야 한다. 세포 부피가 변하면 농도 변화와 총량 변화도 일치하지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.faadb8fb5181",
+      "type": "paragraph",
+      "markdown": "단순한 모형에서 단백질 양N의 변화는 dN/dt=S−kN으로 쓸 수 있다. S는 시간당 합성량, k는 일차 분해 상수이다. S=0이면 N(t)=N0e^(−kt)이고 반감기는 ln2/k이다. N0=100임의단위, 반감기4시간인 표지 집단을 새 합성 없이 관찰하면4시간50,8시간25가 남는 계산이 된다. 이는 특정 사람 단백질의 측정값이 아니라 수지와 지수 감소를 설명하는 모형이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.60cf755222c4",
+      "type": "paragraph",
+      "markdown": "합성률S가 일정하면 정상상태 양은 S/k이다. 초기량이 이 값보다 작으면 시간이 지나며 증가할 수 있어 분해가 계속되어도 총량이 늘어나는 상황이 가능하다. 반감기가 길어져 분해가 줄었을 때와 합성이 늘었을 때 최종 양이 비슷하더라도 도달 시간과 기전은 다르다. 단백질 양을 한 시점에 측정한 결과만으로 합성 또는 분해 중 어느 쪽이 바뀌었는지 단독 판단할 수 없는 이유이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.623edf4a4dd6",
+      "type": "heading",
+      "level": 2,
+      "text": "선택적 분해를 위한 표지"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.06dfda2f9aa8",
+      "type": "paragraph",
+      "markdown": "유비퀴틴(ubiquitin)은 단백질의 운명과 기능을 조절하는 작은 단백질 표지이다. E1의 활성화, E2의 전달, 여러 E3의 기질 선택이 결합하여 표적에 유비퀴틴을 붙인다. ATP는 활성화 과정 등에서 필요하다. 하지만 유비퀴틴 하나가 붙었다는 사실을 모두 즉시 분해하라는 신호로 읽어서는 안 된다. 사슬의 연결 방식·개수·위치와 이를 읽는 단백질에 따라 수송·신호·DNA반응 등 다른 기능도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.b2bfcfab9909",
+      "type": "paragraph",
+      "markdown": "프로테아좀(proteasome)은 적절히 표지된 여러 세포질·핵 단백질의 분해에 중요하다. 기질 인식·풀림·통과·절단을 거치고 유비퀴틴은 회수될 수 있다. 큰 단백질이 소기관이나 막 복합체와 어떤 관계로 존재하는지도 처리 방식에 영향을 준다. 프로테아좀을 모든 세포 성분을 무조건 삼키는 소낭과 같은 것으로 보면 리소좀 경로와 구조·에너지 사용·기질의 차이가 사라진다. 조절 단백질의 제거는 세포주기·전사 신호의 종료에도 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.faec3b84ee60",
+      "type": "heading",
+      "level": 2,
+      "text": "리소좀과 자가포식"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.d6e9ee835e2a",
+      "type": "paragraph",
+      "markdown": "리소좀은 산성 내강의 가수분해효소를 통해 세포 안팎에서 들어온 여러 물질을 처리한다. 자가포식(autophagy)은 세포질 성분이나 소기관을 리소좀 계통으로 보내는 여러 경로를 포함한다. 거대자가포식의 이중막 자가포식소체가 리소좀과 연결되는 과정은 프로테아좀의 중심 통로로 한 단백질을 넣는 과정과 다르다. 손상 소기관을 선택적으로 처리하는 경우도 있어 자가포식은 언제나 완전히 무작위라는 설명도 적절하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.aab449695cbe",
+      "type": "paragraph",
+      "markdown": "영양 부족에서는 분해 산물이 재사용되어 생존을 돕고 손상된 성분의 축적을 줄일 수 있다. 그러나 자가포식 관련 표지가 늘었다는 한 관찰만으로 분해 유량이 증가했다고 결론 내릴 수는 없다. 만들어지는 속도가 늘었는지, 뒤의 융합·분해가 막혀 쌓였는지 구별해야 한다. 중간체의 축적과 전체 유량은 다른 개념이다. 실험에서는 시간·억제 조건·분해 산물과 여러 지표를 결합해 해석해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.f106a4ed8430",
+      "type": "heading",
+      "level": 2,
+      "text": "아미노산 풀과 질소 전달"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.f907cb5ee18d",
+      "type": "paragraph",
+      "markdown": "아미노산은 식이 단백질과 체내 단백질 회전에서 공급되고 새 단백질·질소 함유 물질의 합성 또는 에너지 대사에 사용된다. 지방조직의 중성지방처럼 필요할 때까지 무제한 저장하는 전용 아미노산 저장고가 있는 것은 아니다. 필요 이상의 공급이나 공복 상태에서 질소와 탄소골격의 처리가 중요해진다. 단백질을 분해했다는 사건과 그 아미노산이 즉시 모두 산화되었다는 사건도 동일하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.b2622f04d7ec",
+      "type": "paragraph",
+      "markdown": "아미노기전달반응(transamination)은 많은 아미노산의 아미노기를 α-케토산과 교환하며 피리독살인산(PLP)을 사용한다. 질소를 글루탐산 계통에 모으고 탄소골격을 다른 대사로 연결하는 데 중요하다. 그러나 모든 아미노산이 동일한 효소·첫 단계로 분해되는 것은 아니다. 글루탐산에서의 질소 방출, 글루타민·알라닌의 운반, 간의 요소 합성과 콩팥의 암모늄 처리 등은 서로 연결되면서 다른 반응이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.7c35bf1d27b0",
+      "type": "heading",
+      "level": 2,
+      "text": "조직 사이의 분업"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.d6aaba15cc11",
+      "type": "paragraph",
+      "markdown": "골격근은 대량의 단백질을 가지고 있지만 근육 단백질의 분해는 장기의 기능을 유지하는 구조를 소모하는 일이기도 하다. 공복·스트레스 상황에서 방출된 아미노산은 간·콩팥 등의 포도당신생과 질소 처리에 연결될 수 있다. 한편 식후의 합성과 공복의 분해는 호르몬·활동·염증 상태의 영향을 받는다. 식이 단백질이 적다는 사실만으로 조직별 분해율을 하나의 고정 비율로 계산할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.a505290d2a20",
+      "type": "paragraph",
+      "markdown": "탄소골격이 피루브산·시트르산회로 중간체 등으로 들어가는지, 아세틸CoA·아세토아세트산 계통으로 이어지는지에 따라 포도당생성성과 케톤생성성을 구별한다. 질소를 제거했다는 이유로 모든 탄소가 순포도당으로 바뀔 수 있는 것은 아니다. 해당·TCA·요소회로·지방산 대사와 연결할 때에는 탄소 수지와 질소 수지를 따로 추적해야 한다. 효소 이름을 외우는 것과 물질이 어느 조직에서 어떤 목적에 사용되는지 이해하는 것은 다른 수준이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.b96c14683a3b",
+      "type": "heading",
+      "level": 2,
+      "text": "질소 균형과 측정"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.1c023fbf75a0",
+      "type": "paragraph",
+      "markdown": "질소 균형은 들어온 질소와 배출된 질소의 차이를 평가하는 개념이다. 소변 요소질소만으로 모든 배출을 완벽히 측정할 수 없고 대변·피부·배액 등도 상황에 따라 중요하다. 양의 균형은 유입이 배출보다 많다는 뜻이며 단백질의 질이나 특정 근육의 기능이 자동으로 정상이라는 보증은 아니다. 실제 영양·질환 평가에서는 측정 누락과 정상상태 여부를 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.b.9a879b0f3b72",
+      "type": "paragraph",
+      "markdown": "단백질 회전의 모형과 임상 영양 지표는 각각 가정을 가진다. 혈중 특정 단백질 농도는 염증·간 합성·혈관 분포·체액량 등에 영향을 받으므로 식이 단백질 섭취량의 단순 계기판으로 사용하지 않는다. 표지 추적 실험 역시 관찰한 풀과 시간 범위가 무엇인지 확인해야 한다. 합성·분해·분포·희석을 나누어 생각하면 같은 검사값이 여러 다른 기전에서 나타날 수 있음을 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.diagram.protein-pulse-decay",
+      "type": "diagram",
+      "diagramRef": "diagram.protein-pulse-decay",
+      "path": "diagrams/diagram.protein-pulse-decay.svg",
+      "alt": "새 합성 없는 표지 단백질의 감소의 독립 계산 곡선"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.diagram.protein-disposal-routes",
+      "type": "diagram",
+      "diagramRef": "diagram.protein-disposal-routes",
+      "path": "diagrams/diagram.protein-disposal-routes.svg",
+      "alt": "단백질 제거의 두 주요 경로의 단계별 비교"
+    },
+    {
+      "id": "biochemistry.proteins.amino-acid-turnover.table.compare",
+      "type": "table",
+      "data": {
+        "title": "단백질 회전의 변수",
+        "columns": [
+          "양",
+          "정의"
+        ],
+        "rows": [
+          [
+            "N",
+            "단백질 양"
+          ],
+          [
+            "S",
+            "시간당 합성량"
+          ],
+          [
+            "kN",
+            "시간당 분해량"
+          ],
+          [
+            "S/k",
+            "일정 합성·일차 분해 모형의 정상상태"
+          ]
+        ],
+        "notes": "단백질의 구획·표지·소기관 유입 경로에 따라 분해 경로가 달라진다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/proteins/sections/biochemistry.proteins.amino-acid-turnover.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "25단위"
+  ],
+  "reviewQuestions": [
+    "question.biochemistry.proteins.amino-acid-turnover.001",
+    "question.biochemistry.proteins.amino-acid-turnover.002"
+  ],
+  "relatedLessons": [
+    "biochemistry.enzymes.allostery-thermodynamics"
+  ]
+}

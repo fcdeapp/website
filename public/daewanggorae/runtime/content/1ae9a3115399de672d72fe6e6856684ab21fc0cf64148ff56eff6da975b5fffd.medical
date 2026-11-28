@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.amino-acids.urea-cycle",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.c8002d07e763",
+      "sourceSha256": "c8002d07e7635d5f3e64cdc37e1d5867f5253940932d1b7e32da7854325068f0",
+      "sourceLengthUtf16": 241,
+      "annotations": [
+        {
+          "id": "ann.dd3c24cec7a3e52a571e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 61,
+            "exact": "해당과정",
+            "prefix": "구체가 될 수 있다. 분해할 때 탄소골격은 ",
+            "suffix": "이나 TCA 회로의 중간체, 케톤체 생성 경"
+          },
+          "conceptId": "reader.term.ae7821eb164e43a8",
+          "targetDocumentId": "biochemistry.carbohydrate.glycolysis"
+        },
+        {
+          "id": "ann.fcb213e6766a86666da7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 64,
+            "end": 70,
+            "exact": "TCA 회로",
+            "prefix": " 있다. 분해할 때 탄소골격은 해당과정이나 ",
+            "suffix": "의 중간체, 케톤체 생성 경로 등으로 연결되"
+          },
+          "conceptId": "reader.term.289e64faed605b46",
+          "targetDocumentId": "biochemistry.metabolism.tca"
+        },
+        {
+          "id": "ann.b1ffb0e650919f09bc64",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 114,
+            "end": 166,
+            "exact": "탄수화물이나 지방과 달리 질소를 제거하는 부담이 있다는 점이 아미노산 대사의 중요한 특징이다.",
+            "prefix": " 연결되지만 질소는 별도로 처리해야 한다. ",
+            "suffix": " 아미노기가 남아 있는 채로 모든 탄소가 곧"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.ec0d2c3c3ced",
+      "sourceSha256": "ec0d2c3c3ced9b801e1af6d1e9d3e90ff5f7a3460f235fa7f099cf2787a4bd24",
+      "sourceLengthUtf16": 295,
+      "annotations": [
+        {
+          "id": "ann.e76cf0c554e1973877f0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 247,
+            "end": 295,
+            "exact": "효소가 혈중으로 유출되어 나타나는 간 손상 지표와 정상 세포 내 대사 기능도 구별한다.",
+            "prefix": "어 간의 요소 합성 등에 질소를 제공한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.538c9ba42823",
+      "sourceSha256": "538c9ba428231cd99bcc7d75cb00c9f22fd69ddfee1dbe5230dbef5d953a8ee0",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.8a18cbed33c72684c8e8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 93,
+            "exact": "말초 조직의 질소를 혈류로 운반할 때에는 글루타민과 알라닌 같은 형태가 중요하다.",
+            "prefix": "지며 과도한 축적은 특히 신경계에 해롭다. ",
+            "suffix": " 글루타민합성효소는 글루탐산에 질소를 결합하"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.73625d888728",
+      "sourceSha256": "73625d888728af785bece93fa9404efb9fb173758a3fef5ebdd8755c6a638e12",
+      "sourceLengthUtf16": 251,
+      "annotations": [
+        {
+          "id": "ann.1f66efe733a61d362cc4",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 62,
+            "end": 67,
+            "exact": "포도당신생",
+            "prefix": "로 운반할 수 있다. 간은 알라닌의 탄소를 ",
+            "suffix": " 등에 이용하고 질소를 요소 생성과 연결한다"
+          },
+          "conceptId": "reader.term.f6becb3579af9222",
+          "targetDocumentId": "biochemistry.carbohydrate.gluconeogenesis"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.d514d7ae1eb0",
+      "sourceSha256": "d514d7ae1eb0594a1b4046d83c3c756c41a4b1fa5d3030659907c424cf7236e1",
+      "sourceLengthUtf16": 235,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.5bf696e522b0",
+      "sourceSha256": "5bf696e522b0c10f7ed3ebc47151b1f58e20c58668775336bc85883b3f73a089",
+      "sourceLengthUtf16": 273,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.d3901e91e9d7",
+      "sourceSha256": "d3901e91e9d7eabcac849573b7b11af88aa3ed22761082bb9623ea6eec03f4d7",
+      "sourceLengthUtf16": 308,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.9f4aa470bad6",
+      "sourceSha256": "9f4aa470bad60f45c8e9d4eac4bd7f1b2488843d7886435f057268e247897bfa",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.b88a9fe0354c",
+      "sourceSha256": "b88a9fe0354c5587708777b23da9ee0ffad5e28fe9c5591973b590c073cd286e",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.d635fcf50c96",
+      "sourceSha256": "d635fcf50c961febae6e7c06b5779a32ddd1d1a2374ebea877469eb90671d6d5",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.4186691ac42d",
+      "sourceSha256": "4186691ac42dc02e94991787c30196c61f5cfbdf663815215c15a74b04de865c",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.amino-acids.urea-cycle.b.86343bb57d26",
+      "sourceSha256": "86343bb57d2693a9eb15ea1377db0b814e5c6ab64dfb1096ee96b4fb5946bdc1",
+      "sourceLengthUtf16": 259,
+      "annotations": []
+    }
+  ]
+}

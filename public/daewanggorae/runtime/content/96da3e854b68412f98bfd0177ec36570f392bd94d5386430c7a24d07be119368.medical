@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.infection.prevention-antimicrobial",
+  "subjectId": "general-surgery",
+  "chapterId": "infection",
+  "title": {
+    "ko": "수술부위감염 예방과 항균제의 목적",
+    "en": "SSI Prevention and Antimicrobial Purpose"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.lo.01",
+      "text": "오염과 숙주 방어의 균형을 설명한다"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.lo.02",
+      "text": "예방적 항균제와 감염 치료를 구별한다"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.lo.03",
+      "text": "피부 준비·체온·혈당과 실행 과정을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.03834b3620a5",
+      "type": "heading",
+      "level": 2,
+      "text": "오염을 줄이고 방어를 유지한다"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.2b1b77815a61",
+      "type": "paragraph",
+      "markdown": "수술은 피부와 점막 장벽을 지나므로 미생물 유입 가능성이 생긴다. 감염 성립은 균의 양과 성질, 이물·괴사조직과 죽은 공간, 관류·산소·대사·면역 및 수술 과정에 의해 달라진다. 청결과 오염 정도의 분류는 예방 계획과 결과 해석에 도움이 되지만 감염 여부 자체는 아니다. 오염 가능성이 있는 수술이 모두 이미 감염된 것은 아니며, 청결 수술도 이식물과 숙주 조건에 따라 감염이 생길 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.13f4cd94e5b0",
+      "type": "paragraph",
+      "markdown": "예방은 한 약물보다 여러 단계의 연속성에 달려 있다. 적절한 피부 준비와 필요한 제모 방식, 손 위생·무균술과 조직 보존, 체온·혈당·산소화·관류, 지혈과 사강 관리가 연결된다. 소독액은 적용 부위·점막·눈·신경·화재 위험과 건조 조건이 다르다. 농도가 높을수록 모든 상황에서 안전하고 효과적이라는 생각은 잘못이다. 제품과 시술에 맞는 사용 조건을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.00d8624caf86",
+      "type": "heading",
+      "level": 2,
+      "text": "예방과 치료는 출발 질문이 다르다"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.cd10368b81bd",
+      "type": "paragraph",
+      "markdown": "예방적 항균제는 절개와 오염 위험 시기에 적절한 조직 노출을 확보하여 감염 성립을 줄이려는 목적이다. 이미 존재하는 복막염·농양·감염된 이식물의 치료는 병원체와 감염원·숙주를 다루는 별도 과정이다. 두 상황을 혼동하면 불필요한 장기 투여를 하거나 실제 감염을 짧은 예방 과정으로 오해할 수 있다. 수술 전에 목적과 적응증을 명확히 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.fe12f84540a1",
+      "type": "paragraph",
+      "markdown": "선택에는 수술 부위에서 예상되는 미생물, 환자의 알레르기와 내성 위험, 약물의 분포·반감기·신장 기능이 영향을 준다. 알레르기라는 기록도 어떤 약물에 어떤 반응이 언제 생겼는지 확인해야 한다. 처방이 있었다는 사실과 절개 시점에 적절한 노출이 있었다는 사실은 다르다. 실제 투여 시작·완료와 절개, 긴 수술·큰 출혈에 따른 재평가의 시점을 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.65a5819eee6c",
+      "type": "heading",
+      "level": 2,
+      "text": "약동학은 시간의 문제다"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.82106038b861",
+      "type": "paragraph",
+      "markdown": "단순한 일차 소실 모형에서 농도는 C(t)=C₀·exp(−kt)이고 반감기는 ln2/k다. 두 반감기가 지나면 초기의 4분의 1이 된다. 이는 시간과 농도 감소를 설명하지만 실제 수술 중 조직 농도는 투여 경로·분포·신장 기능·체액 변화와 출혈에 영향을 받는다. 혈중 모형의 한 선을 그대로 모든 조직의 예방 효과와 재투여 기준으로 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.8c663faaac59",
+      "type": "paragraph",
+      "markdown": "투여가 너무 늦으면 오염 시점의 노출이 부족할 수 있고, 불필요하게 오래 지속하면 약물이상반응·내성과 관련 감염의 위해가 늘 수 있다. 배액관이 남아 있다는 사실만으로 모든 예방 항균제를 계속해야 한다고 가정하지 않는다. 실제 중단과 치료 전환은 수술·감염 여부·지침과 지역 경로에 따른다. 유효한 예방과 항균제 사용량의 증가는 같은 지표가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.64da936740bd",
+      "type": "heading",
+      "level": 2,
+      "text": "실행과 측정"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.e10749956c83",
+      "type": "paragraph",
+      "markdown": "체온과 혈당의 관리는 극단을 피하고 방어·회복 조건을 유지하는 과정이다. 심한 저체온은 지혈과 회복에, 고혈당은 면역·대사에 영향을 줄 수 있지만 과도한 교정도 위해가 있다. 환자의 상태와 시술·기관의 검증된 경로에 맞게 모니터링한다. 단일 목표 숫자를 외우는 것보다 측정의 시점·방법과 반응에 따른 조정이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.982cfc811760",
+      "type": "paragraph",
+      "markdown": "예방 과정의 평가는 처방률뿐 아니라 실제 시행·누락·지연과 임상 결과를 본다. 수술부위감염 감소와 알레르기·신장 손상·항균제 관련 위해가 함께 관찰되어야 균형을 평가할 수 있다. 지표를 비교할 때 수술 종류와 위험·분모·추적 기간을 맞춘다. 환자와 의료진에게 실행하기 쉬운 역할과 확인 시점을 정하고, 실패를 개인의 기억력만으로 설명하지 않는 것이 지속적인 개선에 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.cad2ee7d8364",
+      "type": "heading",
+      "level": 2,
+      "text": "과정 실패의 위치"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.c535b83b3d7a",
+      "type": "paragraph",
+      "markdown": "항균제 예방 과정은 약물 선택·실제 투여·절개 시점·수술 중 변화와 중단의 여러 단계로 나뉜다. 선택이 맞아도 투여가 누락되면 목적을 달성하지 못하고, 시점이 맞아도 알레르기와 제거 기능을 놓치면 위해가 생길 수 있다. 누락이 어느 단계에서 발생했는지 구체적으로 확인해야 개선이 가능하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.b.946e16fd3f48",
+      "type": "paragraph",
+      "markdown": "알림과 확인 절차도 실제 업무 흐름과 맞아야 한다. 중복 알림이 많으면 중요한 신호가 묻힐 수 있고, 책임자가 모호하면 모두가 확인했다고 생각할 수 있다. 처방·투여·수술의 기록을 연결하고 예외와 변경을 인계하는 방식은 의학 지식만큼 실행의 정확성에 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.table0847",
+      "type": "table",
+      "data": {
+        "title": "구조·생리·근거와 관리의 연결",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "예방",
+            "오염 시기 조직 노출"
+          ],
+          [
+            "치료",
+            "이미 있는 감염의 원인·숙주"
+          ],
+          [
+            "실행",
+            "선택·투여·절개·변화·중단"
+          ],
+          [
+            "환경",
+            "무균·조직·체온·혈당·관류"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "general-surgery.infection.prevention-antimicrobial.diagram.perioperative-decay-0847",
+      "type": "diagram",
+      "diagramRef": "diagram.perioperative-decay-0847",
+      "path": "diagrams/diagram.perioperative-decay-0847.svg",
+      "alt": "반감기와 상대 농도의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/infection/sections/general-surgery.infection.prevention-antimicrobial.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.infection.prevention-antimicrobial.001",
+    "question.general-surgery.infection.prevention-antimicrobial.002"
+  ],
+  "relatedLessons": [
+    "general-surgery.infection.ssi-depth-evidence",
+    "general-surgery.infection.source-control"
+  ]
+}

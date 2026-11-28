@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "medical-law.consent.disclosure",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "medical-law.consent.disclosure.b.149076b3e831",
+      "sourceSha256": "149076b3e831c571692eb6241a5353f0f7d2d4b771abdd76be76cd8212ac1d9e",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.f00349949d820a7c5533",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 122,
+            "exact": "서면 동의는 그 과정과 선택을 기록하는 중요한 방식이지만 서명 한 번이 모든 의무와 판단을 대신하지는 않는다.",
+            "prefix": " 있도록 필요한 정보를 전달하는 과정이다. ",
+            "suffix": " 환자가 어떤 처치를 받고 어떤 위험과 대안"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "medical-law.consent.disclosure.b.0e33e9c730e8",
+      "sourceSha256": "0e33e9c730e821274421130f63ea73a6e55d8d31e2ac570a8e21db4bccfe9035",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "medical-law.consent.disclosure.b.b641ab3ca5b9",
+      "sourceSha256": "b641ab3ca5b9948bfda94157a51d3431efd1146c039ae149faac9da23638deeb",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.af9c7dea0d0d5fac08f2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 26,
+            "end": 32,
+            "exact": "의사결정능력",
+            "prefix": "의 설명과 동의 대상은 환자이며, 환자에게 ",
+            "suffix": "이 없는 경우에는 법정대리인을 기준으로 규정"
+          },
+          "conceptId": "reader.term.558f849ea5dc0e35",
+          "targetDocumentId": "medical-ethics.consent.shared-decisions"
+        }
+      ]
+    },
+    {
+      "blockId": "medical-law.consent.disclosure.b.4f1faee858a6",
+      "sourceSha256": "4f1faee858a64ffc50b9992c38cf7c275c2098828ff43b4dc274ed0fa23139cb",
+      "sourceLengthUtf16": 189,
+      "annotations": [
+        {
+          "id": "ann.372e9ec86d7af5257c43",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 161,
+            "end": 189,
+            "exact": "임상적 능력 평가와 법률상 권한의 문제를 구별한다.",
+            "prefix": " 적용되는 절차를 확인하고 기록해야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "medical-law.consent.disclosure.b.3e96e9b37af2",
+      "sourceSha256": "3e96e9b37af29567bb1f46d27ee4385ba124f8251fd9544413b466482bf50fe3",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "medical-law.consent.disclosure.b.a51749392d2e",
+      "sourceSha256": "a51749392d2e0dd0be3663d5c477d18cdaf9d3057ddaf2704abc4fdd24ba865a",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.996b99d3e6db70f5a935",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 47,
+            "exact": "위험을 설명할 때에는 발생 가능성과 중대성, 환자에게 중요한 기능과 선택을 고려한다.",
+            "prefix": "",
+            "suffix": " 모든 상황에서 모든 가능한 희귀 사건을 기"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "medical-law.consent.disclosure.b.673593dd67b8",
+      "sourceSha256": "673593dd67b81df636c6c06dc54b15d402527892ef5f65a2560d63e629f94bba",
+      "sourceLengthUtf16": 184,
+      "annotations": []
+    },
+    {
+      "blockId": "medical-law.consent.disclosure.b.62861252be90",
+      "sourceSha256": "62861252be90f57b6a27251f10e58c96d6ffb9c94318dcf502ac8dc741a54fef",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "medical-law.consent.disclosure.b.568737575432",
+      "sourceSha256": "568737575432f012a58bd8568a869b5d0e2eb7beb034d6c5ce84acd748525cf4",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "medical-law.consent.disclosure.b.eaf598e4616a",
+      "sourceSha256": "eaf598e4616a6b59c26885c04a51d71cee6bd684cfc65ca0e0f1b6883f82372b",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    }
+  ]
+}

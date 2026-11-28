@@ -1,0 +1,42 @@
+{
+  "id": "pathology.chapter.cell",
+  "subjectId": "pathology",
+  "sections": [
+    {
+      "id": "pathology.cell.injury-death",
+      "title": {
+        "ko": "세포손상과 세포사멸의 기전",
+        "en": "Cell Injury and Cell Death"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/cell/sections/pathology.cell.injury-death.json"
+    },
+    {
+      "id": "pathology.cell.adaptation-injury-mechanisms",
+      "title": {
+        "ko": "세포적응과 손상으로의 이행",
+        "en": "Cellular Adaptation and the Transition to Injury"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/cell/sections/pathology.cell.adaptation-injury-mechanisms.json"
+    },
+    {
+      "id": "pathology.cell.ischemia-reperfusion-mechanisms",
+      "title": {
+        "ko": "허혈·재관류 손상의 에너지와 막 기전",
+        "en": "Energetic and Membrane Mechanisms of Ischemia–Reperfusion Injury"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/cell/sections/pathology.cell.ischemia-reperfusion-mechanisms.json"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification",
+      "title": {
+        "ko": "세포내 축적과 병적 석회화",
+        "en": "Intracellular Accumulations and Pathologic Calcification"
+      },
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/cell/sections/pathology.cell.accumulations-calcification.json"
+    }
+  ],
+  "status": "partial",
+  "title": {
+    "ko": "세포 생리와 손상"
+  }
+}

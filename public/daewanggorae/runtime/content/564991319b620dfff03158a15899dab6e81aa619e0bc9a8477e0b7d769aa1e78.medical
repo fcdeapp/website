@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.hemodynamics.right-ventricular-infarction",
+  "subjectId": "cardiology",
+  "chapterId": "hemodynamics",
+  "title": {
+    "ko": "우심실 경색과 심실 상호의존성",
+    "en": "Right Ventricular Infarction and Ventricular Interdependence"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.lo.01",
+      "text": "우심실의 관류·부하 특성을 설명한다"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.lo.02",
+      "text": "높은 정맥압과 낮은 좌심실 충만의 공존을 설명한다"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.lo.03",
+      "text": "전부하 반응과 과부하를 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.e7c29d0cdfec",
+      "type": "heading",
+      "level": 2,
+      "text": "낮은 압력의 펌프도 필수다"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.efd8f53cd148",
+      "type": "paragraph",
+      "markdown": "우심실은 폐순환으로 혈액을 전달하여 좌심실의 유입을 유지한다. 정상에서는 좌심실보다 낮은 압력에 맞서 작동하고 벽 구조와 관류의 시간 양상이 다르다. 이런 특징이 허혈에 대한 반응을 바꿀 수 있지만 우심실 손상이 임상적으로 가볍다는 뜻은 아니다. 심한 기능 저하는 좌심실 자체의 수축이 보존되어도 전신 박출을 떨어뜨릴 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.thorax.heart.8aa996b1"
+      ]
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.2036d641a84c",
+      "type": "paragraph",
+      "markdown": "우관상동맥과 우심실 분지의 주행, 폐색 위치와 관상 우세성은 손상 분포에 영향을 준다. 하벽 경색의 문맥에서 우심실 침범을 평가하지만 모든 하벽 경색이 같은 정도의 우심실 손상을 동반하지는 않는다. 표준 심전도와 추가 유도, 초음파와 임상 소견을 연결하여 확인한다. 한 유도나 혈압 소견을 단독 확진으로 삼지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.163333b41022",
+      "type": "heading",
+      "level": 2,
+      "text": "뒤에는 쌓이고 앞에는 모자라는 혈액"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.a79fde2fe71f",
+      "type": "paragraph",
+      "markdown": "우심실이 충분히 앞으로 보내지 못하면 우심방과 정맥의 압력은 높아지고 폐순환을 거친 좌심실 유입은 줄 수 있다. 따라서 목정맥 울혈과 전신 저관류가 함께 나타날 수 있다. 정맥에 혈액이 많아 보인다는 사실과 좌심실이 충분히 채워진다는 사실은 다르다. 압력과 유량, 각 구획의 체액을 나누어 해석해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.cbda7f828758",
+      "type": "paragraph",
+      "markdown": "우심실의 확장은 심실중격과 심낭의 제약을 통해 좌심실 충만에 영향을 줄 수 있다. 두 심실은 직렬로 연결되면서 같은 중격과 공간의 일부를 공유한다. 이 심실 상호의존성(ventricular interdependence)은 우심실 문제를 단순히 오른쪽만의 독립적인 병으로 볼 수 없게 한다. 우심실 부하가 바뀌면 좌심실 형상과 유량도 바뀔 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.dc258fc55d71",
+      "type": "heading",
+      "level": 2,
+      "text": "전부하는 무조건 높일수록 좋지 않다"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.24a78df34df8",
+      "type": "paragraph",
+      "markdown": "충만이 부족한 상태에서는 적절한 전부하가 유량에 도움이 될 수 있지만 이미 심한 확장과 울혈이 있으면 더 많은 체액이 부담을 키울 수 있다. 전부하 반응성은 현재 상태와 개입에 대한 변화로 평가해야 한다. 우심실 경색이라는 병명 하나로 모든 환자에게 동일한 양의 수액을 주는 원칙을 만들 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.e270a02d9f77",
+      "type": "paragraph",
+      "markdown": "우심실의 후부하는 폐혈관 저항과 좌심계 압력, 호흡과 기계환기의 영향을 받는다. 저산소혈증·산증과 과도한 흉강 압력 등은 실제 상태에 따라 부담을 바꿀 수 있다. 정맥 환류와 폐혈관·좌심실의 영향을 함께 보아야 처치 뒤 혈압이 오르거나 떨어진 원인을 설명할 수 있다. 혈압 반응 하나를 우심실의 모든 회복으로 읽지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.c298dfeaf5c7",
+      "type": "heading",
+      "level": 2,
+      "text": "리듬과 충만의 관계"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.10317a430de7",
+      "type": "paragraph",
+      "markdown": "우심방 수축과 방실 동기성은 손상된 우심실의 충만·박출에 중요할 수 있다. 서맥과 방실차단, 빠른 부정맥은 다른 방식으로 유량을 제한한다. 같은 심박수라도 충만 시간과 심방 수축의 기여가 달라지면 결과가 다르다. 전기적 리듬과 압력·유량의 기계적 반응을 함께 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.b.d05a2f78eabc",
+      "type": "paragraph",
+      "markdown": "관상동맥의 원인과 재관류, 호흡·관류·울혈, 리듬과 좌심실의 동반 손상을 통합하는 것이 치료의 토대다. 신속한 원인 평가와 상태에 맞춘 감시가 필요하며 고정된 수액·약물 순서를 일반화하지 않는다. 심장방 3D 모델은 우심방–우심실–폐순환–좌심실의 위치 관계를 보여 주지만 압력과 충만의 실제 변화를 자체적으로 계산하는 모델은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "정맥압 상승",
+            "우심실 뒤쪽의 정체"
+          ],
+          [
+            "좌심실 유입 감소",
+            "폐순환 전방 전달 부족 가능"
+          ],
+          [
+            "심실 상호의존성",
+            "공유 중격·심낭과 직렬 연결"
+          ],
+          [
+            "전부하 개입",
+            "부족·반응·과부하를 구별"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.anatomy3d.0826",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.thorax.heart.8aa996b1"
+    },
+    {
+      "id": "cardiology.hemodynamics.right-ventricular-infarction.visualization-limits.0826",
+      "type": "clinicalPearl",
+      "markdown": "정상 심장방의 위치 관계를 확인한다. 우심실 경색·충만·압력과 중격 운동은 정적 메시의 기능이 아니다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/hemodynamics/sections/cardiology.hemodynamics.right-ventricular-infarction.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.hemodynamics.right-ventricular-infarction.001"
+  ],
+  "relatedLessons": [
+    "cardiology.complications.remodeling-wall-stress",
+    "cardiology.prevention.secondary-prevention"
+  ]
+}

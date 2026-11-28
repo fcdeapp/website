@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.aorta.acute-aortic-syndrome",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.b.035775a8a4c8",
+      "sourceSha256": "035775a8a4c8a48db2aa3c025651b2876247eb1210cc9be61b7ec874473adcc6",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.b.6a71e738d73b",
+      "sourceSha256": "6a71e738d73bb2eb754bba66ac9602b411389f13271737d44d518789a0b1f872",
+      "sourceLengthUtf16": 190,
+      "annotations": [
+        {
+          "id": "ann.00e525c34a1187e38dd5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 122,
+            "end": 125,
+            "exact": "심부전",
+            "prefix": "을 표현하지는 않는다. 실신과 신경 증상, ",
+            "suffix": " 또는 장기 관류 장애가 앞설 수도 있다. "
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.b.f919ba242374",
+      "sourceSha256": "f919ba242374e6373c5a02803e8c5bb304050a34df8968b9a704d6b579bd3144",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.43c92826994cfd8e02ed",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 49,
+            "exact": "상행대동맥 침범은 대동맥 뿌리와 판막, 관상동맥 및 심낭과의 관계 때문에 특히 중요하다.",
+            "prefix": "",
+            "suffix": " 급성 역류와 관상 관류 장애, 심낭 출혈·"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.b.7cc5b1d0007e",
+      "sourceSha256": "7cc5b1d0007e352cde9f487c93eaa42f02f71ddf3df005860d2292b0044ae219",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.b.5ec8a5e14ad2",
+      "sourceSha256": "5ec8a5e14ad24e43624fce9ccf7223cf718e3a2896bc7cc75def50796f35d122",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.59f614be69d9ea15eab0",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 36,
+            "end": 38,
+            "exact": "흉막",
+            "prefix": "변과 전체 범위, 분지의 관계와 파열·심낭·",
+            "suffix": " 및 장기 관류를 평가한다. CT는 넓은 범"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.b.1345c340ae1e",
+      "sourceSha256": "1345c340ae1e4e46dff8bc8084ff0b0b21abedc72b14d8afccf78dda977472ff",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.b.cba14ed8c0e9",
+      "sourceSha256": "cba14ed8c0e9f4dfa9b74553464c48bbf6e987325e17051de31d91eae294861f",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.27477fc856f106cec9b6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 178,
+            "end": 210,
+            "exact": "현재 합병증의 유형과 시간 경과를 기록하는 것이 중요하다.",
+            "prefix": ", 재관류 뒤의 변화는 서로 다른 평가다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.b.cba91aa8be47",
+      "sourceSha256": "cba91aa8be47ff35fe5f21b44814bb898e92e3d83ed316a80ea4d38911aecd41",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.p.extra0843.0",
+      "sourceSha256": "7c2c404b79c32eec32630b7241aebfb39d46c85577a419f87ba0fbc8b51144eb",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.aorta.acute-aortic-syndrome.p.extra0843.1",
+      "sourceSha256": "96a04765341956119ded629d4c9b678387a4103972b714241127a7e971807f25",
+      "sourceLengthUtf16": 236,
+      "annotations": [
+        {
+          "id": "ann.0f6ddc1adbe53c8f24a0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 183,
+            "end": 236,
+            "exact": "이러한 자료는 벽 병변의 범위만큼이나 현재 개입의 긴급성과 회복 가능성을 평가하는 데 중요하다.",
+            "prefix": "속·진행 및 영상의 분지 연결을 대조한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

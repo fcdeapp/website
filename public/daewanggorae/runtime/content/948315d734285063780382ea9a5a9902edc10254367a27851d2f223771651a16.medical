@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.embolus-circulation-pairs",
+  "lessonId": "pathology.hemodynamics.thrombosis-embolism",
+  "title": "출발점과 일반적 색전 경로",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "체정맥·오른심장 경로",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "폐동맥 계통",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "왼심장·체동맥 경로",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "체동맥 말초 장기",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "정맥 물질·우좌단락 조건",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "역설적 체동맥 색전 가능",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.embolus-circulation-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "일반 경로",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.embolus-circulation-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "일반 경로",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.embolus-circulation-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "단락·압력 조건 필요",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "정상 흐름의 개념도다. 모든 색전이 혈전이 아니며 실제 이동·혈전 형성·경색을 시뮬레이션하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

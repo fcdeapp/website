@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.wound.healing",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.wound.healing.b.c0ed55451976",
+      "sourceSha256": "c0ed5545197631a3fcaec6369aae65cb59f273bc2b79410045047e7fef93efaa",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.healing.b.ca7f5744587a",
+      "sourceSha256": "ca7f5744587af6957d01e79bc2eb3827c532231f930c623578ff8099c8cda1a2",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.3006d539b8b63c415c38",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 82,
+            "end": 100,
+            "exact": "granulation tissue",
+            "prefix": "관, 표면 장벽 형성에 기여한다. 육아조직(",
+            "suffix": ")은 새 모세혈관과 섬유모세포, 기질이 풍부"
+          },
+          "conceptId": "reader.term.8a331b02bb0d602d",
+          "targetDocumentId": "general-surgery.wound.proliferation-matrix"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.wound.healing.b.cd6f398be8f5",
+      "sourceSha256": "cd6f398be8f52c7bf2be9af54f2c4be6f7dbf5e4717567637fa2900b6a2533ab",
+      "sourceLengthUtf16": 226,
+      "annotations": [
+        {
+          "id": "ann.ca79c0a1155a5903e263",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 130,
+            "end": 182,
+            "exact": "콜라겐 합성에 필요한 영양과 보조인자, 산소화가 영향을 주며, 분해와 합성의 균형도 중요하다.",
+            "prefix": "세포·기질 구성 및 기능이 다를 수 있다. ",
+            "suffix": " 상처 강도를 시간에 따른 고정 백분율 하나"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.wound.healing.b.ed89388139f2",
+      "sourceSha256": "ed89388139f23ad7c0b2b3405c7e070e29ddbbddd4b653757ccf50122673dab4",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.healing.b.444621d5930f",
+      "sourceSha256": "444621d5930fc05ca5c5c68c7fcee1d7e2f1dfb40aeae3faee89ffb34443559c",
+      "sourceLengthUtf16": 258,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.healing.b.ef1c1e59ac6e",
+      "sourceSha256": "ef1c1e59ac6e3b07cee54ecd55fb27cdaf1ea68b2986f84acce3580321f0896e",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.wound.healing.b.dd843e62ced5",
+      "sourceSha256": "15b3f01b1eefbd9abc7698005a7ea40ea45e431873dff42ee4facbe10ec5758a",
+      "sourceLengthUtf16": 171,
+      "annotations": [
+        {
+          "id": "ann.d799e8085e543ffdb222",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 76,
+            "end": 104,
+            "exact": "상처가 벌어졌다는 관찰과 그 원인을 구분해야 한다.",
+            "prefix": "기술적 요인, 전신 상태가 함께 관여한다. ",
+            "suffix": " 만성 상처에서는 혈관성, 신경병성, 압박성"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

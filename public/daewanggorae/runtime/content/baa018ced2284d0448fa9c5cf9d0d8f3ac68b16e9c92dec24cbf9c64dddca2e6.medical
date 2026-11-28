@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "anatomy.thorax.heart",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "anatomy.thorax.heart.b.160da28e6b17",
+      "sourceSha256": "160da28e6b1741e53b10f76b6f1ab7c73b0a5c2ea61d3bc4590792fb455b0fa7",
+      "sourceLengthUtf16": 363,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.heart.b.f85b3cfea1f4",
+      "sourceSha256": "f85b3cfea1f4dffbf1fc5c07a20883d11b62616cb654d95dd411d5f89caf92f6",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.heart.b.e4ece3645565",
+      "sourceSha256": "e4ece3645565a79af91cf41a679db921241039df33a2f480ba7a7f1019edbb07",
+      "sourceLengthUtf16": 310,
+      "annotations": [
+        {
+          "id": "ann.7f5f4103ebc1543bdd89",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 244,
+            "end": 310,
+            "exact": "가로심낭굴은 동맥쪽 유출로와 정맥쪽 유입부 사이의 공간으로, 심장수술에서 큰혈관의 상대적 위치를 이해하는 데 중요하다.",
+            "prefix": "사되면서 가로심낭굴과 빗심낭굴이 형성된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "anatomy.thorax.heart.b.807d03fee8b4",
+      "sourceSha256": "807d03fee8b480d2cd0767bed12d4f8a48a43b578fb2bea9038e79f3686b4930",
+      "sourceLengthUtf16": 289,
+      "annotations": [
+        {
+          "id": "ann.be7122d82d2e15bdf830",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 53,
+            "end": 96,
+            "exact": "반대로 미주신경(vagus nerve)은 폐뿌리 뒤를 지나는 관계가 중요하다.",
+            "prefix": "면을 따라 내려가며 폐뿌리의 앞을 지난다. ",
+            "suffix": " 벽쪽 심낭의 통증은 가로막신경이 담당하는 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "anatomy.thorax.heart.b.e4bcd3df7d24",
+      "sourceSha256": "e4bcd3df7d2430f409e93ba5c5d415976ce5ac6726fbe0626613108419341d32",
+      "sourceLengthUtf16": 322,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.heart.b.707d342f6121",
+      "sourceSha256": "707d342f6121d8fa087ae9685b722ba0e095500aa022d20f4f293650f170cafd",
+      "sourceLengthUtf16": 280,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.heart.b.1f8c576c27cc",
+      "sourceSha256": "1f8c576c27ccdbe6be31c963ab5faec500f8fb1fb79ae7c8ec13088b41ccb192",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.heart.b.2be485ad3b16",
+      "sourceSha256": "2be485ad3b16d54a30da954f8067ac71cf959e334782165b20713254082c4abf",
+      "sourceLengthUtf16": 273,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.heart.b.bf458a0987c8",
+      "sourceSha256": "bf458a0987c8d2fb4c9d288931685df5db7f84d6159faa8b604089c32475d904",
+      "sourceLengthUtf16": 331,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.heart.b.cb5344f68bcf",
+      "sourceSha256": "def14b4c855e08a8d09748df248ed15d154546ceed21907168d33607c1ea9644",
+      "sourceLengthUtf16": 299,
+      "annotations": [
+        {
+          "id": "ann.b6c9dade27b4bd5608d3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 166,
+            "end": 225,
+            "exact": "심낭액은 심장 바깥의 공간에서, 판막 운동은 주기별 영상에서 평가하며, 형태 관찰과 혈류 평가를 구분한다.",
+            "prefix": "단면에 포함되는 범위가 달라지기 때문이다. ",
+            "suffix": " 도플러 신호의 방향과 속도는 초음파 빔과 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neonatology.bilirubin.hours-risk-assessment",
+  "subjectId": "neonatology",
+  "chapterId": "bilirubin",
+  "title": {
+    "ko": "신생아 황달의 시간·위험과 측정 해석",
+    "en": "Neonatal Jaundice Postnatal Hours Risk and Measurement"
+  },
+  "learningObjectives": [
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.lo.01",
+      "text": "출생 후 시간·재태주수와 빌리루빈을 연결한다"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.lo.02",
+      "text": "생성·제거와 신경독성 위험을 구별한다"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.lo.03",
+      "text": "측정·광선치료와 추적의 목적을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.165dfde54c7a",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 농도도 시간에 따라 다르다"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.928624717ffc",
+      "type": "paragraph",
+      "markdown": "신생아의 빌리루빈은 적혈구 분해와 간의 섭취·포합·배출, 장간순환과 섭취·배변의 영향을 받는다. 출생 후 변화가 빠르므로 생후 며칠이라는 거친 표현보다 채혈 때의 정확한 시간과 재태주수를 기록한다. 같은 총빌리루빈 농도라도 생후 시간과 위험에 따라 의미가 다르다. 모든 신생아에게 하나의 농도만 적용하는 치료 경계를 만들지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.0b3ce861c9ac",
+      "type": "paragraph",
+      "markdown": "아주 이른 황달과 빠른 상승, 빈혈·용혈과 감염·불안정, 섭취 문제는 평가를 구체화한다. 피부의 노란 정도만으로 실제 혈중 농도를 정확히 알 수 없으며 피부색과 조명·관찰 조건도 영향을 준다. 경피 측정과 혈청 측정은 원리와 적용 범위를 구별한다. 치료 판단과 추적에는 해당 방법의 한계를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.73445555a74e",
+      "type": "heading",
+      "level": 2,
+      "text": "생성·제거·신경독성"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.11e39b3b6b7c",
+      "type": "paragraph",
+      "markdown": "빌리루빈 생성이 많아지는 용혈과 포합·배출의 미숙성, 장간순환 증가는 서로 다른 경로다. 모유를 먹는다는 사실만으로 모든 황달을 같은 기전으로 설명하지 않는다. 섭취 부족과 체중·수분·배변 문제를 동반한 상황, 그 밖의 경과와 원인을 구별한다. 담즙 정체와 포합 빌리루빈 증가도 별도의 원인 평가가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.1d70ec090849",
+      "type": "paragraph",
+      "markdown": "신경독성의 위험은 총농도뿐 아니라 재태주수와 용혈·감염·임상 불안정 및 단백결합 등의 조건에 영향을 받는다. AAP 2022년 지침의 적용 대상은 재태주수 35주 이상이며 더 미숙한 신생아에게 같은 도표를 임의 적용하지 않는다. 지침의 위험인자와 치료 경계를 실제 환자에 맞게 확인한다. 위험인자는 황달이 생길 가능성과 신경독성 감수성을 구별하여 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.8cb92d382148",
+      "type": "heading",
+      "level": 2,
+      "text": "시간당 변화와 치료 경계"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.4754fc38f81e",
+      "type": "paragraph",
+      "markdown": "가상 자료에서 생후 24시간의 총빌리루빈 8mg/dL가 36시간에 11mg/dL가 되었다면 구간 평균 상승 속도는 0.25mg/dL/시간이다. 이후 48시간에 13mg/dL가 되었다면 다음 구간은 약 0.167mg/dL/시간이다. 두 시점 사이의 평균 속도이며 매시간 실제 선형 증가를 관찰한 것은 아니다. 이 독립 자료만으로 용혈·치료 적응증과 퇴원을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.a3425fa1096b",
+      "type": "paragraph",
+      "markdown": "치료 결정에는 시간·재태주수·위험인자에 맞는 검증된 기준과 실제 임상 상태가 필요하다. 성인에서 사용하는 황달 기준이나 단순한 정상 범위를 신생아 치료 경계로 바꾸지 않는다. 퇴원 전 수치와 치료 경계까지의 차이, 섭취·체중과 추적 가능성도 이후 계획에 영향을 준다. 서로 다른 학회의 도표를 한 숫자씩 섞어 새로운 경계선을 만들지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.dada852205f8",
+      "type": "heading",
+      "level": 2,
+      "text": "광선치료와 이후 평가"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.232b6aa36f99",
+      "type": "paragraph",
+      "markdown": "광선치료(phototherapy)는 빌리루빈의 광화학적 변화를 통해 배출 가능한 형태의 형성을 돕는다. 단순히 체온을 올려 땀으로 없애는 치료가 아니다. 치료의 실제 조사 조건과 반응·수분·체온과 수유, 시력 보호와 모니터링을 임상 지침에 따라 관리한다. 효과가 부족하면 원인·치료 전달과 현재 위험을 재검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.b.2aec6402f9a6",
+      "type": "paragraph",
+      "markdown": "치료 뒤 농도가 낮아져도 원인과 반등 가능성·섭취·추적을 함께 평가한다. 심한 황달의 상승과 신경 증상·불안정은 즉시 더 높은 수준의 평가·치료를 요구할 수 있다. 단순한 계산 곡선은 광선치료나 교환수혈의 권고 도표가 아니다. 시간·기전·현재 건강과 진료 접근을 함께 보아야 안전한 추적이 가능하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.suppheading0851",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 판단의 연결"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.supp.c718c63dc233",
+      "type": "paragraph",
+      "markdown": "빌리루빈을 mg/dL에서 μmol/L로 근사 환산할 때에는17.1을 곱한다. 따라서11mg/dL는 약188.1μmol/L다. 포도당의18환산과 방향·물질이 다르므로 같은 규칙으로 외우지 않는다. 단위 변환은 치료 기준의 출처와 적용 대상을 바꾸지 않으며 다른 지침의 표를 혼합하는 근거도 아니다. 채혈 시각과 재태주수·위험인자를 그대로 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.supp.2814c6c557e2",
+      "type": "paragraph",
+      "markdown": "포합 빌리루빈 증가와 회백색 변·진한 소변, 지속되는 황달 등은 비포합 빌리루빈의 초기 전환 문제와 다른 원인을 생각하게 한다. 모유 수유 중이라는 사실만으로 간담도 질환과 감염·대사 원인의 평가를 생략하지 않는다. 총농도가 아주 높지 않더라도 분획과 증상·경과가 중요할 수 있다. 어떤 형태의 빌리루빈이 왜 증가하는지를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.table0851",
+      "type": "table",
+      "data": {
+        "title": "조건·측정·기전과 해석",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "농도",
+            "정확한 생후 시간·단위"
+          ],
+          [
+            "대상",
+            "재태주수·임상 위험"
+          ],
+          [
+            "측정",
+            "피부 관찰·경피·혈청 구별"
+          ],
+          [
+            "치료",
+            "검증된 지침,가상 곡선은 경계 아님"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neonatology.bilirubin.hours-risk-assessment.diagram.synthetic-neonatal-bilirubin-0851",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-neonatal-bilirubin-0851",
+      "path": "diagrams/diagram.synthetic-neonatal-bilirubin-0851.svg",
+      "alt": "가상 생후 시간별 빌리루빈의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/neonatology/chapters/bilirubin/sections/neonatology.bilirubin.hours-risk-assessment.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neonatology.bilirubin.hours-risk-assessment.001",
+    "question.neonatology.bilirubin.hours-risk-assessment.002"
+  ],
+  "relatedLessons": [
+    "neonatology.bilirubin.production-and-clearance",
+    "neonatology.feeding.weight-hydration"
+  ]
+}

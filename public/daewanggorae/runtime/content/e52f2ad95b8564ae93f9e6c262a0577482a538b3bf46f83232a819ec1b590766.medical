@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.valvular.mitral-stenosis",
+  "subjectId": "cardiology",
+  "chapterId": "valvular",
+  "title": {
+    "ko": "승모판 협착과 왼심방·폐순환",
+    "en": "Mitral Stenosis and Left Atrial Pulmonary Circulation"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.valvular.mitral-stenosis.lo.01",
+      "text": "이완기 유입 제한을 설명한다"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.lo.02",
+      "text": "류마티스성·석회성 형태를 구별한다"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.lo.03",
+      "text": "판막 면적과 혈역학의 관계를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.958e6b1865f7",
+      "type": "heading",
+      "level": 2,
+      "text": "심실로 들어가는 길의 제한"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.76a2e3391e80",
+      "type": "paragraph",
+      "markdown": "승모판 협착(mitral stenosis, MS)은 이완기에 왼심방에서 왼심실로 혈액이 이동하는 통로가 제한된 상태다. 일정한 전방 유량을 보내기 위해 왼심방 압력이 높아질 수 있고 그 영향이 폐정맥과 폐순환에 전달된다. 왼심실 박출률이 유지되더라도 호흡곤란과 운동 제한이 생길 수 있다. 낮은 전방량과 높은 상류 압력이 양립한다는 점을 이해해야 한다. 심실 수축 비율 하나만으로 유입 판막의 질환을 배제하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.28fb96142be2",
+      "type": "paragraph",
+      "markdown": "류마티스성 변화는 첨판과 교련, 건삭의 구조를 바꿀 수 있다. 석회화가 판막 고리와 첨판 기저부에 영향을 주는 형태는 통로가 좁아도 구조적 기전이 다르다. 두 형태는 중재의 적합성과 위험에서 차이를 가질 수 있다. 판막 면적 숫자만 같다고 동일한 해부학과 치료 대상을 가진다고 보지 않는다. 형태와 움직임, 석회화와 동반 역류 및 주변 구조를 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.2e9ed96d0f82",
+      "type": "heading",
+      "level": 2,
+      "text": "압력차는 시간과 유량에 의존한다"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.420a0c8a018c",
+      "type": "paragraph",
+      "markdown": "승모판 평균 압력차는 판막의 제한뿐 아니라 심박수와 이완 시간, 통과 유량에 영향을 받는다. 빠른 맥박에서는 같은 분당량을 더 짧은 이완기 동안 통과시켜야 할 수 있다. 운동과 임신, 빈혈 등에서 순환 요구가 달라지면 증상이 드러날 수 있다. 검사 시 심박수와 리듬을 함께 기록해야 이전 검사와 의미 있는 비교를 할 수 있다. 다른 시간에 얻은 압력차 숫자의 차이를 곧바로 판막 면적 변화로 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.29645230ec7a",
+      "type": "paragraph",
+      "markdown": "심방세동은 심방의 조직화된 수축과 규칙성을 잃게 하고 심박수도 바꿀 수 있다. 왼심방의 확장과 압력 부담은 부정맥의 기질이 될 수 있으며 부정맥은 다시 충만과 증상을 악화시킨다. 심방과 판막의 문제가 원인과 결과의 고리를 이루는 셈이다. 폐울혈과 운동 제한을 평가할 때 판막 면적만이 아니라 현재의 리듬과 심박수, 체액과 다른 질환을 함께 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.bbf22b63563f",
+      "type": "heading",
+      "level": 2,
+      "text": "면적을 추정하는 방법의 차이"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.ae619bf3b095",
+      "type": "paragraph",
+      "markdown": "영상에서 통로를 직접 추적하는 방법과 혈류의 시간·속도 관계로 면적을 추정하는 방법은 같은 오차 구조를 갖지 않는다. 적절한 절단면과 영상 해상도, 석회화로 인한 음영 및 판독 위치가 직접 측정에 영향을 준다. 유입 압력이 떨어지는 시간은 판막 외에도 심방과 심실의 순응도, 동반 병변과 중재 직후의 혈역학에 영향을 받을 수 있다. 계산값을 사용한 방법의 전제를 확인하지 않고 독립적인 참값으로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.e0e2acd41322",
+      "type": "paragraph",
+      "markdown": "보고에는 판막 구조와 면적·압력차, 리듬과 심박수 및 심방·폐순환의 반응을 함께 포함한다. 증상과 안정 시 지표가 맞지 않으면 활동에서의 변화와 다른 원인을 검토한다. 검사 결과가 불일치할 때는 기술적 품질과 부하 조건, 여러 판막의 상호작용부터 확인한다. 하나의 병기 이름이 환자의 모든 기능 상태를 대신하지 못한다. 표준화된 반복 측정과 임상 경과가 진단을 더 분명하게 만든다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.14de8b156fb8",
+      "type": "heading",
+      "level": 2,
+      "text": "원인별 중재와 추적"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.c326d190bb19",
+      "type": "paragraph",
+      "markdown": "치료는 증상과 순환 부담, 혈전색전과 부정맥 위험 및 원인 판막의 구조를 함께 다룬다. 교련이 붙어 좁아진 류마티스성 구조에서의 풍선 중재와 심한 고리 석회화가 만드는 제한은 같은 기법의 대상이 아니다. 동반 역류와 심방 혈전 등도 적합성에 영향을 준다. 실제 중재의 선택은 해당 연도의 근거와 환자별 해부학, 위해와 기대 효과 및 전문적 평가를 통합하여 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.b.e603fca948bf",
+      "type": "paragraph",
+      "markdown": "중재 뒤에는 압력차와 면적의 변화뿐 아니라 역류, 폐순환과 우심실, 심방과 리듬을 추적한다. 통로가 넓어졌다고 오래된 폐혈관과 심방의 변화가 즉시 완전히 사라지는 것은 아니다. 환자의 실제 활동 능력과 울혈, 혈전 위험과 치료의 부작용을 별도로 확인한다. 이전과 현재의 심박수·부하 조건을 맞추어 읽으면 겉으로 좋은 숫자가 실제 회복을 얼마나 반영하는지 더 정확히 판단할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.h.extra0842",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 유량을 더 짧은 시간에 전달할 때"
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.p.extra0842.0",
+      "type": "paragraph",
+      "markdown": "일정한 분당 유입량을 유지하면서 유입이 가능한 시간의 비율이 줄면 열린 시간 동안의 평균 유속은 커져야 한다. 전체 시간 중 유입 가능한 비율을f, 시간 전체로 평균한 유량을Q라 하면 유입 기간의 평균 유량은Q/f다. 예를 들어f가0.6에서0.4로 감소하고Q가 같다면 이 기간의 평균 유량은1.5배다. 협착된 구멍에서 속도와 압력차가 증가할 수 있는 이유를 이 관계로 이해한다."
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.p.extra0842.1",
+      "type": "paragraph",
+      "markdown": "이 단순 수지는 실제 이완기 유량이 직사각형 파형이라는 뜻이 아니다. 심방 수축, 압력의 시간 변화, 판막 면적과 심실의 이완이 순간 유입을 결정한다. 심박수가 빨라졌을 때 평균 압력차가 높아지는 현상을 판막 면적의 갑작스러운 축소로만 해석하지 않는다. 검사 당시의 리듬과 속도, 혈류량을 기록해 두면 서로 다른 시점의 결과를 비교하기 쉽다."
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.table0842",
+      "type": "table",
+      "data": {
+        "title": "구조·혈류·심장 반응의 비교",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "류마티스성",
+            "교련 융합 등 형태"
+          ],
+          [
+            "석회화성",
+            "고리·기저부의 다른 기전"
+          ],
+          [
+            "빠른 속도",
+            "충만 시간·유량·압력차 변화"
+          ],
+          [
+            "폐순환",
+            "좌심방 압력의 전달"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.valvular.mitral-stenosis.diagram.diastolic-time-flow-0842",
+      "type": "diagram",
+      "diagramRef": "diagram.diastolic-time-flow-0842",
+      "path": "diagrams/diagram.diastolic-time-flow-0842.svg",
+      "alt": "유입 가능 시간과 평균 유량의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/valvular/sections/cardiology.valvular.mitral-stenosis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.valvular.mitral-stenosis.001",
+    "question.cardiology.valvular.mitral-stenosis.002"
+  ],
+  "relatedLessons": [
+    "cardiology.valvular.aortic-regurgitation",
+    "cardiology.valvular.mitral-stenosis-rhythm-thrombosis"
+  ]
+}

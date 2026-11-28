@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.testing.flow-volume-loop",
+  "subjectId": "pulmonology",
+  "chapterId": "testing",
+  "title": {
+    "ko": "유량–용적 곡선과 기류 제한",
+    "en": "Flow Volume Loops and Airflow Limitation"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.testing.flow-volume-loop.lo.01",
+      "text": "축과 곡선 방향을 설명한다"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.lo.02",
+      "text": "폐 탄성반동과 동적 기도압박을 연결한다"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.lo.03",
+      "text": "상기도 패턴과 기술 오류를 감별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.2f3ce78719f2",
+      "type": "heading",
+      "level": 2,
+      "text": "두 곡선은 같은 기록의 다른 보기다"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.279e37af962a",
+      "type": "paragraph",
+      "markdown": "용적–시간 곡선은 호기 시작 뒤 누적된 부피를 시간에 따라 나타내고 유량–용적 곡선은 해당 부피 위치의 유량을 나타낸다. 가로축이 내쉰 용적인지 폐 안에 남은 용적인지, 흡기와 호기를 어느 방향에 표시했는지 확인해야 한다. 서로 다른 표시 관례의 그림을 같은 모양으로 외우면 방향을 혼동할 수 있다. 축과 단위·출발점을 먼저 읽는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.d62f5b3b9c6d",
+      "type": "paragraph",
+      "markdown": "초기 최대호기유량은 노력과 큰 기도·시작 조건에 영향을 받는다. 호기가 진행되면 폐의 탄성반동과 기도 구경, 동적 압박이 흐름에 중요해진다. 폐용적이 낮아질수록 기도를 바깥에서 지지하는 힘과 반동이 변한다. 곡선의 한 지점은 여러 구조와 생리가 합쳐진 결과이므로 그 점의 저하를 특정 작은 기도의 단독 병변으로 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.8a8733c2f0ed",
+      "type": "heading",
+      "level": 2,
+      "text": "더 세게 내쉬어도 한계가 생기는 이유"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.f5ea3f9cde33",
+      "type": "paragraph",
+      "markdown": "강한 호기에서 흉강 안 압력이 올라가면 폐포를 미는 압력도 커지지만 기도 바깥 압박도 증가한다. 기도 안 압력은 입 쪽으로 흐르면서 낮아지고 바깥 압력과 같아지는 위치와 그 이후의 압박이 중요해진다. 일부 구간에서는 노력을 더해도 흐름이 충분히 증가하지 않는 제한이 나타날 수 있다. 이 현상은 노력 부족과 모든 기류 제한을 같은 것으로 취급하지 않게 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.9b82c8445749",
+      "type": "paragraph",
+      "markdown": "탄성반동이 감소하거나 기도가 좁아지면 호기 동안의 흐름과 배출 시간이 달라질 수 있다. 곡선의 호기 하행부가 오목하게 보이는 양상은 기류 제한의 단서지만 개인의 병인을 단독 확진하지 않는다. 용적 범위와 반복 조작, FEV1과 FVC 및 다른 검사를 함께 본다. 일부 유량 지표는 FVC와 배출 범위·노력에 의존하여 단독 진단의 한계가 크다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.f2530805fe6e",
+      "type": "heading",
+      "level": 2,
+      "text": "상기도와 흡기 부분"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.03cceb7c11dc",
+      "type": "paragraph",
+      "markdown": "흡기와 호기 가지가 모두 평평해지거나 한쪽이 더 제한되는 패턴은 고정 또는 가변성 상기도 제한을 생각하게 할 수 있다. 흉곽 안팎의 압력 환경과 기도 위치가 패턴에 영향을 준다. 다만 낮은 노력과 성문 움직임·입막힘, 누출 등 기술 오류도 모양을 바꿀 수 있다. 반복 가능한 패턴과 증상·진찰을 대조하고 필요한 해부학적 검사를 선택한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.4389358ece8e",
+      "type": "paragraph",
+      "markdown": "목 부위 소리와 운동·자세 또는 발성에 따른 증상, 이전 기도 수술·삽관과 신경·근육의 맥락이 단서를 준다. 정적 영상이 정상이라고 모든 유발성 기도 문제를 배제하는 것은 아니며, 한 번의 평평한 곡선만으로 고정 협착을 확정하지도 않는다. 언제 어떤 조작에서 모양이 생겼는지 원래 기록을 보존하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.eae344fe8afa",
+      "type": "heading",
+      "level": 2,
+      "text": "숫자와 모양의 통합"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.38c7546a27ef",
+      "type": "paragraph",
+      "markdown": "작고 좁은 곡선은 폐용적 감소를 시사할 수 있지만 실제 제한성 환기장애의 확인에는 총폐용량이 필요하다. 공기포획과 충분하지 않은 호기·흡기 등으로 FVC가 낮아지는 경우를 구별한다. 곡선 모양은 정보를 요약하지만 원인의 모든 층위를 포함하지는 않는다. 품질과 부피·비율 및 폐용적·확산을 연결하여 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.b.0add3a66eeb1",
+      "type": "paragraph",
+      "markdown": "교육용 곡선은 명시한 수학 관계의 가상 자료로 축과 경향을 학습하는 데 쓰일 수 있다. 실제 환자 파형과 진단 기준으로 표시해서는 안 된다. 특히 곡선의 곡률 하나를 특정 질환과 일대일 대응시키면 혼합 장애와 기술 오류를 놓친다. 같은 부피를 서로 다른 시간 과정으로 배출할 수 있다는 점을 이해하면 유량과 누적 부피의 관계를 더 정확히 읽을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.h.extra0844",
+      "type": "heading",
+      "level": 2,
+      "text": "기술적 종료와 비율의 왜곡"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.p.extra0844.0",
+      "type": "paragraph",
+      "markdown": "가상으로 첫1초에2L를 내쉬고 충분한 호기 뒤 총4L를 내쉴 수 있는 상태를 생각하면 비는0.5다. 첫1초 자료는 같지만 조작을 너무 일찍 끝내 총량이2.5L로 기록되면 계산 비는0.8이 된다. 기도가 실제로 좋아진 것이 아니라 분모가 작게 측정된 예다. 정상처럼 보이는 비를 확인할 때에도 전체 곡선과 종료의 품질을 확인해야 한다."
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.p.extra0844.1",
+      "type": "paragraph",
+      "markdown": "반대로 시작이 좋지 않으면 첫 시간 구간의 부피 자체가 달라질 수 있다. 분자와 분모의 오류가 동시에 생기면 비율의 방향을 단순하게 예측하기도 어렵다. 반복 조작의 일치와 실제 허용 가능성을 각각 평가하는 이유다. 숫자가 임상과 맞지 않을 때에는 새로운 병태생리를 추측하기 전에 흡기·시작·기침·종료와 누출을 원래 곡선에서 검토한다."
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop.table0844",
+      "type": "table",
+      "data": {
+        "title": "측정 대상과 생리적 의미",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "시간곡선",
+            "시간에 따른 누적 부피"
+          ],
+          [
+            "유량곡선",
+            "용적 위치의 변화율"
+          ],
+          [
+            "기류 제한",
+            "탄성반동·동적 압박·기도 구경"
+          ],
+          [
+            "패턴",
+            "기술 오류·상기도·하부기도 감별"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/testing/sections/pulmonology.testing.flow-volume-loop.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.testing.flow-volume-loop.001"
+  ],
+  "relatedLessons": [
+    "pulmonology.testing.spirometry-quality",
+    "pulmonology.testing.lung-volumes"
+  ]
+}

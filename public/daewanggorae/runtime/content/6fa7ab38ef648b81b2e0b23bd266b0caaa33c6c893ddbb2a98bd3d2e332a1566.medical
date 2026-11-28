@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.general.repeated-dosing-accumulation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.de17d8482437",
+      "sourceSha256": "de17d8482437fb34141c51a3a3a6db6b7dcab08abe8accacdcfc07442b3f3ee1",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.d58d193232cf",
+      "sourceSha256": "d58d193232cf2ff53d41ca5bffd806a1415113e6f9ff289481d7691eac5ca3c0",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.792acaa76664",
+      "sourceSha256": "792acaa76664b3916bc99692eeda3f7da2d4a7482d74992661f806c8a8ee79b0",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.77d79df70eac",
+      "sourceSha256": "77d79df70eac67b67632851c3d18e4481c8a96489eaf5de1afe877a4994964ce",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.4ed367a2496470c7e63d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 64,
+            "end": 105,
+            "exact": "일정 주입의 정상상태와 반복 일회 투여의 주기적 정상상태를 구별해야 한다.",
+            "prefix": "이며 농도가 항상 일정하다는 뜻은 아니다. ",
+            "suffix": " 한 투여 간격 동안 체내 약물량의 순변화가"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.32487e2e3e66",
+      "sourceSha256": "32487e2e3e66f4b2c7a10508368adce87bc6d553e7436ef749bd1d46d5126dc5",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.45ed70dc33b1",
+      "sourceSha256": "45ed70dc33b17307369d9acc1ce85f2b3ee6656639653716922e4ecae76b35d2",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.e043ab76a8b1",
+      "sourceSha256": "e043ab76a8b11bca7a06278f3df0520cb31c2372bd73c12e724b5c17f8ec9b03",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.ff71d32ad32f",
+      "sourceSha256": "ff71d32ad32fa8d6bb5cef420c1f5166fcf23264b7da47f7e958e9d9eb8734f4",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.d2531cca0e84",
+      "sourceSha256": "d2531cca0e849ce6c9d7b2e7093adff9b213c6ac7271242fef72b7ce207cbf74",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.repeated-dosing-accumulation.b.8fa39ad0e76c",
+      "sourceSha256": "8fa39ad0e76c6b1328f848f6f9bc4c76782c31fb7d6b587a6cc204fb0709b3ad",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.fb9788e46dee840a639a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 180,
+            "end": 183,
+            "exact": "약동학",
+            "prefix": "폭을 각각 읽는 습관이 하나의 숫자로 모든 ",
+            "suffix": "을 판단하는 오류를 줄인다."
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        }
+      ]
+    }
+  ]
+}

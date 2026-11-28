@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.respiratory.mechanics-compliance",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.cc7a250367b0",
+      "sourceSha256": "cc7a250367b0ae7db9d630cdd46054bcba1e26685502923fe6f3f36bf4a0364f",
+      "sourceLengthUtf16": 288,
+      "annotations": [
+        {
+          "id": "ann.3d17173e74434bd417f6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 62,
+            "end": 65,
+            "exact": "가슴막",
+            "prefix": "한다. 안정적인 들숨에서 가로막이 수축하면 ",
+            "suffix": "압(pleural pressure)이 더 낮"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        },
+        {
+          "id": "ann.1dcdcb24f52af5236022",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 251,
+            "end": 288,
+            "exact": "흐름을 만드는 압력차와 폐의 팽창을 유지하는 압력을 구분해야 한다.",
+            "prefix": " 있어도 경폐압은 여전히 양수일 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.b116e7a2d6ea",
+      "sourceSha256": "b116e7a2d6ea7ff2e6789e281275aca46f9f7656cfa7f08cb0319596779d23e1",
+      "sourceLengthUtf16": 255,
+      "annotations": [
+        {
+          "id": "ann.f49bb52c3cf064401174",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 220,
+            "end": 222,
+            "exact": "기흉",
+            "prefix": " 힘도 만들지 않는 상태라는 뜻은 아니다. ",
+            "suffix": "처럼 두 구조의 결합이 달라지면 이 균형과 "
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.f5d096e825a3",
+      "sourceSha256": "f5d096e825a3a471e30e6ee79d1a2177b9f5aa8e046a889fd65e88155b598591",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.ddd0b7c3fa31",
+      "sourceSha256": "ddd0b7c3fa31a90e8c7109a9dee5ae7dd8c751cf61216368d27ba47eb0fe8b8c",
+      "sourceLengthUtf16": 248,
+      "annotations": [
+        {
+          "id": "ann.62911687d465f2a19237",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 210,
+            "end": 248,
+            "exact": "순응도 숫자 하나만으로 모든 환자의 폐 조직 상태를 판단할 수 없다.",
+            "prefix": " compliance)를 비교하기도 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.6631d301ad93",
+      "sourceSha256": "6631d301ad9365eaa4d567e007dd62e43012f89780179a8b777d6f7a9e6fdb45",
+      "sourceLengthUtf16": 244,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.8b08896aa51d",
+      "sourceSha256": "8b08896aa51df9fb575174c16afb9c55c393a00d3670e8a4054227e99c430945",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.07762114ee58",
+      "sourceSha256": "07762114ee58393247e7516b5b012c5cf469a445202cff72543a0cf14423e0fb",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.aad6010964e3",
+      "sourceSha256": "aad6010964e3cf4b5d51d3c2399faeb47c935f980464fb69522d0843c8433a9c",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.46d659e507d4",
+      "sourceSha256": "46d659e507d43b76a16f9e66bad3ad1520953a40efafee652ee54a17b7f37f55",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.d3850c3b7e934b1a49d8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 118,
+            "end": 149,
+            "exact": "직렬·병렬 연결과 각 구간의 단면적 합을 구분해야 한다.",
+            "prefix": "착은 전체 기능에 큰 영향을 줄 수 있다. ",
+            "suffix": " 폐용적이 증가하면 주변 실질의 견인과 기도"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.741267b236f0",
+      "sourceSha256": "741267b236f031966fe8bdaf4d2bec4706e811332006ee39f91efe636ea9fed4",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.bcd984454026",
+      "sourceSha256": "bcd9844540266e3fe29bdaf9be04d481413dbe228664a62e4bb6edd0086527d4",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.92b04a975366",
+      "sourceSha256": "92b04a975366725075e568167cb61cfa8b232f18d9be4abc209d75cbe5773996",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.respiratory.mechanics-compliance.b.a3343ed9c61d",
+      "sourceSha256": "a3343ed9c61deed48304d333d9b93ceadbf5f1bb956675a1031915c52451cdeb",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    }
+  ]
+}

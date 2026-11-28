@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.nutrition.fat-soluble-vitamins",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.625d924aada5",
+      "sourceSha256": "625d924aada5c0de778d0ac1b1a9e5f4c472b299c98f47ac5e000712f26c3472",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.13ef5947f531",
+      "sourceSha256": "13ef5947f5312d372d9c97d183f8b5426f1785a0d9a612a9d1e1b3d5b1e7a8b7",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.135a71452453",
+      "sourceSha256": "135a71452453e8249808a637c68faf54f102c1e0894e3676f03002c68af7ee4f",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.e5476a53ec31",
+      "sourceSha256": "e5476a53ec31f28fa5e76391b9ed8571119e05b2f1e2a32336fa351313ef4170",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.3082d3da6b91",
+      "sourceSha256": "3082d3da6b916e8aff7f7e05b4048e2173e88cb185000c251129b3d032915511",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.ba43d9274e50",
+      "sourceSha256": "ba43d9274e50c7c47d7b2d45ae4b519a1373839ea437b9844e06efe9e19fbbb9",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.5b4090b788c19e3eb203",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 158,
+            "end": 161,
+            "exact": "PTH",
+            "prefix": " 뜻하지 않는다. 혈중 칼슘이 유지되더라도 ",
+            "suffix": " 관련 보상과 인산·뼈의 변화가 존재할 수 "
+          },
+          "conceptId": "reader.term.e7124e6127a50104",
+          "targetDocumentId": "physiology.endocrine.calcium-phosphate"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.420b45885f9c",
+      "sourceSha256": "420b45885f9ca70ef14e0c0f7f21f3365e079d466b250d8d4ededb2f47e6c10c",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.73c1f5c12fc9",
+      "sourceSha256": "73c1f5c12fc9c1d1a61117722aaabdcf87238ac5754212cf669ce3efc257e987",
+      "sourceLengthUtf16": 168,
+      "annotations": [
+        {
+          "id": "ann.56846fbe0d85d88a39a1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 29,
+            "end": 92,
+            "exact": "결핍은 신경·근육 기능과 적혈구 막의 안정성에 영향을 줄 수 있으며, 지방 흡수와 운반의 문제가 중요한 원인이다.",
+            "prefix": "는 지질 환경의 산화환원 방어와 연결된다. ",
+            "suffix": " 신경 증상과 용혈이 함께 가능하다는 사실을"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.1ee74c2a3423",
+      "sourceSha256": "1ee74c2a342305e00c1b31fa04744ebb79f95d4a4daf96e287ac1e76269dca61",
+      "sourceLengthUtf16": 165,
+      "annotations": [
+        {
+          "id": "ann.225ad958c6b1432750da",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 116,
+            "end": 165,
+            "exact": "결핍 교정, 정상적인 필요량 충족과 고용량의 예방 목적 투여를 별개의 질문으로 구분한다.",
+            "prefix": " 관련 위해와 약물 병용도 고려해야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.ce78554f1366",
+      "sourceSha256": "ce78554f1366d7dabfd00407b1d07384eedb90a2e1bdaa176bea823d2a3ac56c",
+      "sourceLengthUtf16": 215,
+      "annotations": [
+        {
+          "id": "ann.be5617b2107a3ec282cd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 175,
+            "end": 215,
+            "exact": "단백질이 합성되었다는 사실과 적절히 가공되어 기능한다는 사실을 구별한다.",
+            "prefix": "응고만 증가시키는 물질로 설명하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.fat-soluble-vitamins.b.f0161743a124",
+      "sourceSha256": "f0161743a1244b3cf8689e5597966dda68a125cd5f35a610c715f0ebd341ef3a",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    }
+  ]
+}

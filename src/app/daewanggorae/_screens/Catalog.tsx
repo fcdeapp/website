@@ -7,7 +7,7 @@ import { useLoad } from "../_lib/hooks";
 import { recordsOf, useRecords } from "../_lib/store";
 import { Heading, Row, Select, State, url } from "../_components/UI";
 import s from "../daewanggorae.module.css";
-import { BRAND_TAGLINE } from "../_lib/brand";
+import SceneViewer from "../_components/SceneViewer";
 export function Home() {
   const r = useLoad(getCatalog, "catalog");
   const records = useRecords();
@@ -15,13 +15,15 @@ export function Home() {
     (a, b) => b.updatedAt - a.updatedAt,
   )[0];
   const lesson = r.data?.lessons.find((l) => l.id === last?.data.lessonId);
+  const resumeScenes = r.data?.scenes.filter(s => s.lessonId === lesson?.id) || [];
+  const resumeScene = resumeScenes.find(s=>s.triggerBlockId===last?.data.lastBlockId) || resumeScenes[0];
   const goals = recordsOf(records, "goal").filter((x) => !x.data.completed);
   const due = recordsOf(records, "review").filter(
     (x) => Number(x.data.due) <= Date.now(),
   );
   return (
     <>
-      <Heading title={BRAND_TAGLINE} />
+      <Heading title={lesson ? "이어서 학습하기" : "교과서에서 시작하기"} />
       <div className={s.columns}>
         <div>
           <section className={`${s.intro} ${s.homeIntro}`}>
@@ -65,6 +67,7 @@ export function Home() {
               </>
             )}
           </section>
+          {resumeScene && <section className={s.section}><h2>{resumeScene.title}</h2><SceneViewer sceneId={resumeScene.id} /></section>}
           <section className={s.section}>
             <h2>의학 전 분야</h2>
             {r.data ? (

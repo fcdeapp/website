@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "psychiatry.substances.alcohol-intoxication-withdrawal",
+  "subjectId": "psychiatry",
+  "chapterId": "substances",
+  "title": {
+    "ko": "알코올 사용·급성 중독과 금단",
+    "en": "Alcohol Use, Intoxication and Withdrawal"
+  },
+  "learningObjectives": [
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.lo.01",
+      "text": "급성 중독과 금단의 시간 관계를 구별한다"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.lo.02",
+      "text": "금단 위험과 다른 급성 원인을 함께 평가한다"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.lo.03",
+      "text": "장기 회복 치료와 금단 치료를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.b4ab954fd468",
+      "type": "heading",
+      "level": 2,
+      "text": "노출과 기능 손상의 구분"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.8f24ff750fe7",
+      "type": "paragraph",
+      "markdown": "알코올 사용을 평가할 때는 마셨는지 여부만으로 충분하지 않다. 종류와 양, 마신 속도와 마지막 사용 시각, 평소의 반복 양상, 식사와 다른 약물·물질의 동시 사용을 확인한다. 혈중 농도는 노출의 한 지표지만 임상 손상과 항상 같은 정도로 대응하지 않는다. 내성, 흡수 시점, 간 기능과 동반 약물에 따라 같은 농도에서도 관찰 소견이 달라질 수 있다. 말이 느리고 보행이 불안정한 환자에게 알코올 냄새가 난다고 다른 원인을 배제해서는 안 된다.\n급성 중독에서는 의식·호흡·혈당과 외상, 흡인과 체온 문제를 함께 평가한다. 머리 손상, 저혈당, 뇌혈관 질환과 다른 진정 물질 노출이 중독처럼 보이거나 함께 존재할 수 있다. 증상이 예상보다 오래가거나 국소 신경 소견이 있으면 단순한 술 취함이라는 설명을 다시 검토한다. 환자의 정보 제공 능력이 떨어진 경우 주변 정보와 실제 처방·현장 자료를 활용하되, 회복 뒤 본인의 설명과 동의를 다시 확인한다. 비난하는 태도는 정확한 노출 정보를 얻는 데도 방해가 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.e43f2437f25c",
+      "type": "heading",
+      "level": 2,
+      "text": "적응한 신경계와 금단"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.8ce5cf9dfdb8",
+      "type": "paragraph",
+      "markdown": "반복적인 알코올 노출에 적응한 신경계에서 사용이 갑자기 줄거나 중단되면 흥분성·억제성 조절의 균형이 달라져 금단(withdrawal)이 나타날 수 있다. 떨림, 불면과 불안, 발한·빈맥 같은 자율신경 증상에서 경련과 섬망에 이르기까지 표현이 다양하다. 마지막 사용 시각은 중요하지만 모든 환자가 같은 순서와 시각에 진행하지는 않는다. 혈중 알코올이 검출된다는 이유만으로 금단이 원리적으로 불가능하다고 판단해서도 안 된다. 평소 노출에 비해 농도가 떨어지는 맥락과 임상 경과를 본다.\n이전의 심한 금단이나 경련·섬망 경험, 동반 신체 질환과 다른 물질의 사용은 위험 평가에 중요하다. 현재의 증상 강도가 낮아 보여도 앞으로의 위험이 반드시 낮다는 뜻은 아니다. 반대로 빈맥과 불안을 모두 금단으로 해석하면 감염·출혈·통증·저산소증 등을 놓칠 수 있다. 위험 예측과 현재 증상 평가, 다른 원인의 감별은 목적이 다르다. 표준화 도구를 사용하더라도 도구의 적용 대상과 의사소통 가능성, 동반 질환이 결과에 미치는 영향을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.f2b11d0c871b",
+      "type": "heading",
+      "level": 2,
+      "text": "변동하는 활력징후의 해석"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.1259f95721bc",
+      "type": "paragraph",
+      "markdown": "활력징후의 추적은 한 번의 수치보다 변화와 맥락을 보여 준다. 학습용 가상 기록에서 맥박이 처음 78회/분에서 8시간 뒤 116회/분으로 증가했다면 절대 증가는 38회/분이고, 그 구간 평균 변화율은 시간당 4.75회/분이다. 이것은 두 시점 사이의 산술 평균이며 매시간 일정하게 증가했다는 뜻이 아니다. 실제 환자의 금단 단계나 약물 투여 기준으로 이 곡선을 사용하지 않는다. 체온·혈압·의식·호흡과 노출 정보가 함께 필요하다.\n섬망이 있는 환자에서는 지남력뿐 아니라 주의와 각성의 변동, 의식 수준을 평가한다. 알코올 관련 섬망을 의심하더라도 감염과 대사, 약물과 신경계 원인을 병행하여 검토한다. 환각이 있다는 사실만으로 원발 정신병이나 특정 금단 단계가 확정되는 것도 아니다. 환자가 질문에 답하기 어려우면 주관적 증상에 크게 의존하는 척도의 해석이 제한될 수 있다. 관찰 가능한 소견과 위험 기능을 중심으로 감시 환경과 평가 방법을 조정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.7a5a44e033c1",
+      "type": "heading",
+      "level": 2,
+      "text": "치료의 서로 다른 목적"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.71b52a27395c",
+      "type": "paragraph",
+      "markdown": "급성 금단의 치료는 신경계 과흥분과 경련·섬망 위험을 다루고 안전한 환경과 감시를 확보하는 데 목적이 있다. 약물 선택과 투여 방식은 증상의 중증도, 간 기능, 호흡 상태와 다른 진정 물질 노출 등에 따라 달라진다. 고정된 감량표를 모든 환자에게 적용하거나 점수 하나만으로 처방을 결정하지 않는다. 영양과 수분·전해질 상태를 평가하며 티아민 결핍과 베르니케뇌병증(Wernicke encephalopathy)의 가능성도 고려한다. 저혈당이 있는 환자의 즉각적인 포도당 치료를 티아민 준비 때문에 지연해서는 안 된다.\n알코올 관련 영양 결핍과 의식 변화는 전형적인 세 증상이 모두 갖추어지지 않을 수 있다. 보행·눈운동과 정신 상태의 변화, 영양과 노출 맥락을 통합한다. 급성 중독을 빨리 깨우는 것이 모든 치료의 목표는 아니며, 기도·환기와 외상 등 현재 위험이 우선한다. 진정 효과가 나타났다는 이유만으로 금단의 모든 합병증과 다른 원인이 해결된 것으로 판단하지 않는다. 반복적인 기능과 활력징후 평가를 통해 이득과 과도한 진정의 위험을 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.253a1d8c017d",
+      "type": "heading",
+      "level": 2,
+      "text": "금단 이후의 치료"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.b.06be56397507",
+      "type": "paragraph",
+      "markdown": "신체적 의존(physical dependence)은 반복 노출에 따른 적응을 뜻하며 사용장애의 모든 진단 요소와 같지는 않다. 사용 조절의 어려움, 지속적인 기능 손상과 위험한 사용, 삶에서 차지하는 비중을 장기적인 맥락에서 평가한다. 금단을 안전하게 마친 것만으로 알코올사용장애 치료가 완료되지는 않는다. 재사용의 상황, 동반 우울·불안과 수면, 관계와 주거·경제적 문제를 함께 다루어야 한다. 치료 목표는 환자와 논의하며 위험 감소와 장기 회복을 구체적인 행동으로 연결한다.\n약물과 심리사회적 치료는 각각 적응증과 금기, 환자의 선호를 고려하여 선택한다. 반복적인 사용을 의지 부족만으로 설명하면 위험 신호와 치료 기회를 놓치게 된다. 재사용이 발생하면 그 전후의 상황과 도움이 된 전략을 분석하고 다음 대응을 조정한다. 마지막 사용 시각·의식·호흡·외상과 과거 금단을 함께 정리하면 현재 증상의 원인과 앞으로의 위험을 구별하기 쉽다. 환자의 주관적 불편과 관찰되는 징후, 치료 뒤의 변화는 각각 기록하여 다음 평가와 비교한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.table0853",
+      "type": "table",
+      "data": {
+        "title": "관찰 자료와 확인할 조건",
+        "columns": [
+          "항목",
+          "자료·평가 범위"
+        ],
+        "rows": [
+          [
+            "평소",
+            "반복적인 많은 알코올 사용"
+          ],
+          [
+            "변화",
+            "섭취량 감소 뒤 떨림·발한과 불면"
+          ],
+          [
+            "가상 맥박",
+            "0h 78·2h 90·4h 108·8h 116·12h 110"
+          ],
+          [
+            "미확인",
+            "감염·외상·저혈당·동반 물질·과거 중증 금단"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "psychiatry.substances.alcohol-intoxication-withdrawal.diagram.synthetic-withdrawal-pulse-0853",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-withdrawal-pulse-0853",
+      "path": "diagrams/diagram.synthetic-withdrawal-pulse-0853.svg",
+      "alt": "가상 금단 평가 중 맥박의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/substances/sections/psychiatry.substances.alcohol-intoxication-withdrawal.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.psychiatry.substances.alcohol-intoxication-withdrawal.001",
+    "question.psychiatry.substances.alcohol-intoxication-withdrawal.002"
+  ],
+  "relatedLessons": [
+    "psychiatry.substances.opioid-sedative",
+    "psychiatry.substances.stimulant-cannabis"
+  ]
+}

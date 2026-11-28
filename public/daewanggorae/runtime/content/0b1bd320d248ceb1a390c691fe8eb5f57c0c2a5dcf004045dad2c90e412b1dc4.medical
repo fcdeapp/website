@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.valvular.secondary-mitral-regurgitation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.valvular.secondary-mitral-regurgitation.b.1e1b30343cb2",
+      "sourceSha256": "1e1b30343cb286e3e38320b50b3f0c520da8d51cf21de0dcd1ac8cbbd0aa571e",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.secondary-mitral-regurgitation.b.3e2238650e34",
+      "sourceSha256": "3e2238650e34a3b11eb0f04d3194b619286966004750026a1a60c88df772e37d",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.secondary-mitral-regurgitation.b.d15fb6315ce3",
+      "sourceSha256": "d15fb6315ce3b5cacd4a06cc60405064ecc462a0e6f4d96e035c589fe869242c",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.secondary-mitral-regurgitation.b.cbe1a118a959",
+      "sourceSha256": "cbe1a118a9592819671e5b16d70f6a6d17c47224e2ac24b8e5100faaa0e5eb2e",
+      "sourceLengthUtf16": 226,
+      "annotations": [
+        {
+          "id": "ann.e87903e20ea1c4eeaedc",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 9,
+            "end": 12,
+            "exact": "심부전",
+            "prefix": "이차성 역류에서 ",
+            "suffix": "의 적절한 치료와 원인 평가가 중요한 이유는"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.2cb1276cb832bd62f60c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 55,
+            "exact": "이차성 역류에서 심부전의 적절한 치료와 원인 평가가 중요한 이유는 판막 밖 기질을 다루기 때문이다.",
+            "prefix": "",
+            "suffix": " 구조적 역류를 보는 것과 해당 환자의 최적"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.valvular.secondary-mitral-regurgitation.b.2d87d9d67bde",
+      "sourceSha256": "2d87d9d67bde26eb7b57badd49408bcdbf795489c52947cb5545efedcc802e14",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.secondary-mitral-regurgitation.b.3b43c939c0f7",
+      "sourceSha256": "3b43c939c0f7eaf9c7dd1f1abbe73da7dd40fc578bbf47016098f2ce6b152f84",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.62dfcb68cb11f64ec1d5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 110,
+            "exact": "판막을 교정하면 순환이 얼마나 좋아질 여지가 있는지와 진행된 심근질환이 남기는 제한을 구별한다.",
+            "prefix": " 전체에서 차지하는 역할을 평가해야 한다. ",
+            "suffix": " 반대로 역류가 중요한 부담인데 심실질환의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.valvular.secondary-mitral-regurgitation.b.e986f2ecf3b8",
+      "sourceSha256": "e986f2ecf3b862f0eb33966458d7d065bf66478a457a3ab9148f53e5b2a6f1a9",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.secondary-mitral-regurgitation.b.00482ef09b3f",
+      "sourceSha256": "00482ef09b3f75891608c0647d04d358a723510d43348401a875cc7964cea68f",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    }
+  ]
+}

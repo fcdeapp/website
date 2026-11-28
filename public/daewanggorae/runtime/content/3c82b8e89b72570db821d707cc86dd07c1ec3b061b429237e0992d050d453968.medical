@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "genetics",
+  "title": {
+    "ko": "의학유전학 및 유전체의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "genetics.chapter.inheritance",
+      "path": "domains/02-biomedical-sciences/subjects/genetics/chapters/inheritance/chapter.json"
+    },
+    {
+      "id": "genetics.chapter.risk",
+      "path": "domains/02-biomedical-sciences/subjects/genetics/chapters/risk/chapter.json"
+    },
+    {
+      "id": "genetics.chapter.chromosomes",
+      "path": "domains/02-biomedical-sciences/subjects/genetics/chapters/chromosomes/chapter.json"
+    },
+    {
+      "id": "genetics.chapter.epigenetics",
+      "path": "domains/02-biomedical-sciences/subjects/genetics/chapters/epigenetics/chapter.json"
+    },
+    {
+      "id": "genetics.chapter.population",
+      "path": "domains/02-biomedical-sciences/subjects/genetics/chapters/population/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "genetics.plan.001",
+    "genetics.plan.002",
+    "genetics.plan.003",
+    "genetics.plan.004",
+    "genetics.plan.005",
+    "genetics.plan.006",
+    "genetics.inheritance.variant-interpretation",
+    "genetics.inheritance.mendelian-mechanisms",
+    "genetics.risk.penetrance-bayes",
+    "genetics.chromosomes.structural-number",
+    "genetics.epigenetics.imprinting",
+    "genetics.population.hardy-weinberg"
+  ]
+}

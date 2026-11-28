@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "embryology",
+  "title": {
+    "ko": "발생학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "embryology.chapter.early",
+      "path": "domains/01-anatomy/subjects/embryology/chapters/early/chapter.json"
+    },
+    {
+      "id": "embryology.chapter.cardiovascular",
+      "path": "domains/01-anatomy/subjects/embryology/chapters/cardiovascular/chapter.json"
+    },
+    {
+      "id": "embryology.chapter.neural",
+      "path": "domains/01-anatomy/subjects/embryology/chapters/neural/chapter.json"
+    },
+    {
+      "id": "embryology.chapter.skeleton",
+      "path": "domains/01-anatomy/subjects/embryology/chapters/skeleton/chapter.json"
+    },
+    {
+      "id": "embryology.chapter.digestive",
+      "path": "domains/01-anatomy/subjects/embryology/chapters/digestive/chapter.json"
+    },
+    {
+      "id": "embryology.chapter.pharyngeal",
+      "path": "domains/01-anatomy/subjects/embryology/chapters/pharyngeal/chapter.json"
+    },
+    {
+      "id": "embryology.chapter.urinary",
+      "path": "domains/01-anatomy/subjects/embryology/chapters/urinary/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "embryology.plan.001",
+    "embryology.plan.002",
+    "embryology.plan.003",
+    "embryology.plan.004",
+    "embryology.plan.005",
+    "embryology.plan.006",
+    "embryology.early.germ-layers",
+    "embryology.cardiovascular.septation",
+    "embryology.neural.neurulation-crest",
+    "embryology.skeleton.ossification-growth-plate",
+    "embryology.digestive.rotation-fixation",
+    "embryology.pharyngeal.arches-pouches",
+    "embryology.urinary.kidney-collecting-system"
+  ]
+}

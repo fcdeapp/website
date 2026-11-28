@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.hypersensitivity.antibody-hemolysis-dat",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.hypersensitivity.antibody-hemolysis-dat.b.ac09d8500d60",
+      "sourceSha256": "ac09d8500d6074a4a1a4078690708c2151ff20108f0fe06a736c240171d7c4f9",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.ec5bbef5b70fd03fa8d6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 24,
+            "end": 26,
+            "exact": "보체",
+            "prefix": "적혈구 항원에 결합한 항체는 Fc 수용체와 ",
+            "suffix": "를 통해 제거를 유도할 수 있다. 항체로 덮"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.antibody-hemolysis-dat.b.66b7fa4031b4",
+      "sourceSha256": "66b7fa4031b4c2a09d65ea3fa07a9765d8c1e50aacd417255fd294e4539078e0",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.antibody-hemolysis-dat.b.e2a938a84917",
+      "sourceSha256": "e2a938a849179b618a5ac35dd099c997968497b4ee4f86f9c2ef3ff95dacdee6",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.antibody-hemolysis-dat.b.d66b5dd5f2f7",
+      "sourceSha256": "d66b5dd5f2f749bc8d171e513f20f26467ce5bc5f308e23fa972cdc6d4da8481",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.antibody-hemolysis-dat.b.06470c37e0ea",
+      "sourceSha256": "06470c37e0ea77303ee6178d4a2465c7eaea8550e58fcaecb2c773a4d77ab95f",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.7318c05c53a554842999",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 11,
+            "end": 16,
+            "exact": "망상적혈구",
+            "prefix": "헤모글로빈의 추세, ",
+            "suffix": "와 bilirubin·LDH·haptoglo"
+          },
+          "conceptId": "reader.term.fec5506483a11f5d",
+          "targetDocumentId": "hematology.anemia.reticulocytes"
+        },
+        {
+          "id": "ann.264fb1f517f34e66e130",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 139,
+            "end": 201,
+            "exact": "단일 지표가 전형적이지 않다는 이유로 모든 용혈을 배제하거나, LDH 상승만으로 면역성 용혈을 확정하지 않는다.",
+            "prefix": " 기대한 망상적혈구 증가가 작을 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.antibody-hemolysis-dat.b.32f77f96be55",
+      "sourceSha256": "32f77f96be55a7de2cab4255cc9523722bc083c531c56a4b5e2f1ba01317f39e",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.antibody-hemolysis-dat.b.cefcbeae200a",
+      "sourceSha256": "cefcbeae200a6c21581babcb93bddc3339460161bdc88a20c9c6e1a467e4bc71",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.antibody-hemolysis-dat.b.87b3f8ad6b12",
+      "sourceSha256": "87b3f8ad6b128e1b5486985165ce8d563f3b64fcad0a4349a15436f15aee4648",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    }
+  ]
+}

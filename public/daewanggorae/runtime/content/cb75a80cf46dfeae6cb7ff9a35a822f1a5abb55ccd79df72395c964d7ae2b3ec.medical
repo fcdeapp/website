@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.quiz-audiogram-gap-0836",
+  "lessonId": "otolaryngology.hearing.conduction",
+  "title": "가상 기도·골도 역치 비교",
+  "series": [
+    {
+      "label": "기도",
+      "samples": [
+        {
+          "x": 250,
+          "y": 40
+        },
+        {
+          "x": 500,
+          "y": 40
+        },
+        {
+          "x": 1000,
+          "y": 40
+        },
+        {
+          "x": 2000,
+          "y": 40
+        },
+        {
+          "x": 4000,
+          "y": 40
+        }
+      ]
+    },
+    {
+      "label": "골도",
+      "samples": [
+        {
+          "x": 250,
+          "y": 10
+        },
+        {
+          "x": 500,
+          "y": 10
+        },
+        {
+          "x": 1000,
+          "y": 10
+        },
+        {
+          "x": 2000,
+          "y": 10
+        },
+        {
+          "x": 4000,
+          "y": 10
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "constantToyThresholds": true,
+    "clinicalAudiogramAxisConvention": false
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 250,
+      "max": 4000,
+      "scale": "linear",
+      "ticks": [
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "label": "주파수(Hz)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 60,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        15.0,
+        30.0,
+        45.0,
+        60.0
+      ],
+      "label": "역치(dB HL)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "기도",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "골도",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 모형이며 실제 환자 관측값·진단 기준·처방·치료 효과가 아니다.",
+    "일반 수학축으로 값 증가를 위로 표시했다. 임상 청력도의 반전 세로축과 구별한다."
+  ],
+  "sourceImageUsed": false
+}

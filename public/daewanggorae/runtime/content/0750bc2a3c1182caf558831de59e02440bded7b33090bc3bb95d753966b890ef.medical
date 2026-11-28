@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.general.clearance-extraction-models",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.28b869898f8c",
+      "sourceSha256": "28b869898f8c14f8aa1ab62692f4ed529e86a9333cea77c5029831e87c226c5b",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.bab0575a305bbddcdecd",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 13,
+            "exact": "clearance",
+            "prefix": "청소율(",
+            "suffix": ", CL)은 제거속도를 지정한 농도로 나눈 "
+          },
+          "conceptId": "reader.term.52a8b75072525e18",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.56b06b6a9979",
+      "sourceSha256": "56b06b6a99790bbf7157b07f8641cf9fa03ad9ffcfec36a2b5b73dc68237efee",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.01f3a50ad870",
+      "sourceSha256": "01f3a50ad8703fb493c9f25cf73741bcccc78572f1173ff7636375a8d0630547",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.22ec6875cb5b",
+      "sourceSha256": "22ec6875cb5bc7796935ab299c0837aa862c478115236956f0e9438f4eeb8e99",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.19a876a1614a",
+      "sourceSha256": "19a876a1614a2db31e8da86414935b5ab8b5fc68e30a06637afa10a942954649",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.4d54c43bd270",
+      "sourceSha256": "4d54c43bd2709a7c54b89be7ef0b9e0736da464e41fc5fcc37ed5afa145798ae",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.566c60311964",
+      "sourceSha256": "566c603119643d9bb82356f9f19204dfba14e56921fb9e7e0934a68d3ef1ca72",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.bc2c267fc82aebf0e209",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 121,
+            "end": 165,
+            "exact": "낮은 농도에서의 일차 근사와 높은 농도에서의 거의 일정한 양의 제거를 구별한다.",
+            "prefix": "C)이므로 청소율은 농도에 따라 감소한다. ",
+            "suffix": " 어느 한 시점의 선형 근사를 모든 투여량·"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.74649e3a95f0",
+      "sourceSha256": "74649e3a95f03fed0a07f434975cdd7db0dc18f0ddd1d5d2b298c4ee0447c4b8",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.900577d9be91e9ad1a15",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 130,
+            "end": 182,
+            "exact": "실제 생체에 다른 경로가 있다는 사실과,제시한 식 자체에 해가 없다는 수학적 진술을 구별한다.",
+            "prefix": " 이 모형에는 유한한 정상상태 해가 없다. ",
+            "suffix": " 가상 곡선을 특정 약물의 증량 지침으로 사"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.d1d9641d7df9",
+      "sourceSha256": "d1d9641d7df9c35a043181906e3b037e8128ccb6eafb1605fa35eb81593e27b9",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.clearance-extraction-models.b.ef1a6ca578c5",
+      "sourceSha256": "ef1a6ca578c573fc5e2500b936ff756b5d39fff4d5fd122789e1e4b7b2c9665d",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    }
+  ]
+}

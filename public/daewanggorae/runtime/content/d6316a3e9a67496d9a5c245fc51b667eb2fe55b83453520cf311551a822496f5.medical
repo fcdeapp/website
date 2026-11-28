@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "molecular-biology.rna.translation-code",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.2da7dc5814b8",
+      "sourceSha256": "2da7dc5814b8526433b18cfcca1bca43da66c6f283f59da6241a4d28050063e4",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.0ae0ad0eedaa",
+      "sourceSha256": "0ae0ad0eedaad392350d12a91cfe6dd02a4033bbdad3acb3e1107bd240ab0660",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.008497b7f799",
+      "sourceSha256": "008497b7f7991379eb55047cc24094f829e851eb4830a7c87d68d441bfeae5b2",
+      "sourceLengthUtf16": 232,
+      "annotations": [
+        {
+          "id": "ann.4044710ed1de7a686fad",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 185,
+            "end": 232,
+            "exact": "ATP 한 분자를 쓴다는 말과 고에너지 인산결합 두 당량을 소비한다는 말을 구별한다.",
+            "prefix": "산 가수분해가 결합하여 반응을 진행시킨다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.671577adaec9",
+      "sourceSha256": "671577adaec9a3fe19ee4ce3d1b445bcee9f05ed27e4fd97bbb2b14f9e6add8d",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.bcf688dbffed",
+      "sourceSha256": "bcf688dbffed9f2b5fb46af9c016d3d15b89265e72ab82e833f0a895a30ba7cf",
+      "sourceLengthUtf16": 221,
+      "annotations": [
+        {
+          "id": "ann.b262a2efa88fd2f0df37",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 162,
+            "end": 221,
+            "exact": "최초 메티오닌이 나중에 제거될 수 있으므로 성숙 단백질의 첫 아미노산과 번역 직후의 시작 잔기를 구별한다.",
+            "prefix": " 서열과 구조는 위치 선택에 영향을 준다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.ce13ed52b18e",
+      "sourceSha256": "ce13ed52b18e166dcfc58970467ed765f733aefa10738acf27468f473565b88d",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.e13c46e05136",
+      "sourceSha256": "e13c46e05136dfbd32a8df54b18d1490a482b57f4990a057b16dcbd1421718ac",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.950dc022f053",
+      "sourceSha256": "950dc022f0539ba5a312e9879013d2cf94a9941cb26040e1cd1a38ff160f31dc",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.1b6045c570f4",
+      "sourceSha256": "1b6045c570f4ddb874d5646cd878ebcd9aeb306f0d42fa8cf2cc26d26163df16",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.8a3d79ef8ae0",
+      "sourceSha256": "8a3d79ef8ae0033e11bfea1af5f34d64db69ea97d043e6cd1ed0d19584c54c25",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "molecular-biology.rna.translation-code.b.6a397ab801f6",
+      "sourceSha256": "6a397ab801f6138c61f4cb3ae1d2b5cc700c35d519ed7f45befc711380a4ab82",
+      "sourceLengthUtf16": 210,
+      "annotations": [
+        {
+          "id": "ann.0b6341c197538b9c7898",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 171,
+            "end": 210,
+            "exact": "서열 변화, 발현·기능 실험, 집단·임상 근거의 질문을 각각 구분한다.",
+            "prefix": " 곧바로 질환 원인으로 확정할 수도 없다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.valvular.aortic-stenosis",
+  "subjectId": "cardiology",
+  "chapterId": "valvular",
+  "title": {
+    "ko": "대동맥판 협착의 압력 부하와 증상",
+    "en": "Pressure Load and Symptoms in Aortic Stenosis"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.valvular.aortic-stenosis.lo.01",
+      "text": "좌심실 압력 부하와 비후를 연결한다"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.lo.02",
+      "text": "혈류 의존적 속도와 압력차를 설명한다"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.lo.03",
+      "text": "증상과 보상 실패의 의미를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.c3bc92ba103b",
+      "type": "heading",
+      "level": 2,
+      "text": "좁아진 박출 통로"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.95371d41330e",
+      "type": "paragraph",
+      "markdown": "대동맥판 협착(aortic stenosis, AS)은 수축기 좌심실에서 대동맥으로 나가는 통로가 제한된 상태다. 판막의 석회화와 선천적 이엽판, 류마티스성 변화 등 서로 다른 배경이 가능하다. 같은 협착이라는 표현형 아래에서도 판막의 구조와 대동맥의 동반 상태, 진행 양상이 다를 수 있다. 좌심실은 전방 유량을 유지하기 위해 더 높은 수축기 압력을 만들어야 하며, 이는 심근의 장력과 에너지 요구에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.thorax.heart.d585d4db"
+      ]
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.7dddf84101db",
+      "type": "paragraph",
+      "markdown": "압력 부하에 대한 동심성 비후는 벽응력의 증가를 완화하는 방향의 적응이 될 수 있다. 그러나 두꺼운 벽이 항상 정상 기능과 충분한 혈류를 보장하지는 않는다. 이완의 제한과 높은 충만압, 미세순환과 에너지 수지의 변화가 생길 수 있다. 심방 수축과 적절한 충만이 중요해질 수 있어 빠른 리듬이나 방실 관계의 변화가 증상에 영향을 준다. 비후는 보상의 기록이면서 장기 부담의 단서다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.94d72b069b0e",
+      "type": "heading",
+      "level": 2,
+      "text": "허혈과 운동 시 순환"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.5f393fb6509a",
+      "type": "paragraph",
+      "markdown": "흉통은 큰 관상동맥 병변과 동반될 수 있지만 협착에 따른 심근 수요·공급의 불균형도 평가한다. 높아진 심실 압력과 질량은 수요를 늘리고 이완기 충만압과 관류 환경은 공급 여유에 영향을 준다. 호흡곤란은 충만압과 폐순환, 낮은 전방 유량의 조합에서 생길 수 있다. 운동 중 어지럼과 실신에서는 유량 제한과 혈관 반응, 부정맥 등 여러 기전을 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.4a0007e3a9fb",
+      "type": "paragraph",
+      "markdown": "증상은 활동 수준에 의존한다. 환자가 천천히 걷거나 계단을 피하면서 스스로 무증상이라고 표현할 수 있으므로 실제 활동의 변화를 묻는다. 빈혈과 폐질환, 다른 판막병과 심근질환도 증상에 기여할 수 있다. 증상이 있다는 사실과 모든 증상이 협착 때문이라는 결론은 구별한다. 다만 현재 저관류나 급성 심부전이 있으면 원인 분석과 동시에 위험에 맞는 평가가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.864037ca27c1",
+      "type": "heading",
+      "level": 2,
+      "text": "도플러와 면적"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.15cdf9362889",
+      "type": "paragraph",
+      "markdown": "연속파 도플러 속도와 압력차, 유효 판막 면적은 협착 평가의 여러 축이다. 단순화한 압력차 관계는 속도의 제곱에 의존하므로 속도 측정의 오차가 결과에 확대될 수 있다. 정렬과 신호 구별, 여러 창에서의 확인이 중요하다. 유량이 달라지면 같은 판막도 속도와 압력차가 달라질 수 있어 숫자 하나만으로 해부학적 중증도를 고정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.62021b363d96",
+      "type": "paragraph",
+      "markdown": "연속방정식은 같은 시간 동안 지나간 유량의 보존을 이용한다. 좌심실 유출로의 단면적과 속도시간적분, 판막을 지나는 속도시간적분을 연결하여 면적을 추정한다. 유출로 직경을 제곱하여 면적을 얻는 과정 때문에 직경 오차가 중요하다. 단면이 완전한 원이 아닐 수 있고 표본 위치와 리듬도 영향을 준다. 계산식의 자릿수를 늘리는 것이 입력의 한계를 없애지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.30862564ed32",
+      "type": "heading",
+      "level": 2,
+      "text": "진행과 치료 판단"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.f59d907b6f6e",
+      "type": "paragraph",
+      "markdown": "판막의 제한과 심실 반응은 시간에 따라 변한다. 증상과 박출·충만, 용적과 비후 및 검사 지표의 추세를 통합한다. 중재는 해부학적 병변과 임상 위험, 기대 효과와 시술·수술의 부담을 함께 고려한다. 수술 위험 점수 하나나 연령 하나만으로 모든 선택을 정하지 않는다. 대동맥과 관상동맥, 다른 판막의 병변과 접근 혈관, 향후 치료의 경로가 선택에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.b.13358376be07",
+      "type": "paragraph",
+      "markdown": "추적 중에는 새로운 운동 제한과 흉통·실신, 울혈과 리듬 변화의 의미를 설명한다. 약물로 동반 혈압과 체액을 관리하는 것과 협착 판막 자체의 유효 통로를 바꾸는 것은 다른 목표다. 현재 부하와 다른 질환을 고려하지 않은 획일적 처치는 적절하지 않다. 시술 뒤에도 잔여 압력차와 역류, 보철 기능과 심실 회복 및 장기 합병증의 평가가 남는다. 판막을 교체했다는 사실만으로 모든 심근 부담이 즉시 사라지는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.table0842",
+      "type": "table",
+      "data": {
+        "title": "구조·혈류·심장 반응의 비교",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "판구",
+            "열림과 유효 흐름 단면"
+          ],
+          [
+            "유량",
+            "같은 면적에서도 속도 변화"
+          ],
+          [
+            "심실",
+            "압력부하·이완·수축"
+          ],
+          [
+            "증상",
+            "운동·관류·리듬과 연결"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.anatomy3d0842",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.thorax.heart.d585d4db"
+    },
+    {
+      "id": "cardiology.valvular.aortic-stenosis.limits0842",
+      "type": "clinicalPearl",
+      "markdown": "정상 판막과 심장방의 위치 관계를 확인한다. 협착·석회화·건삭 파열·역류 제트·판막 운동·환자별 수술 구조는 이 정적 정상 모델에 포함되지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/valvular/sections/cardiology.valvular.aortic-stenosis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.valvular.aortic-stenosis.001"
+  ],
+  "relatedLessons": [
+    "cardiology.valvular.integrated-assessment",
+    "cardiology.valvular.aortic-stenosis-discordance"
+  ]
+}

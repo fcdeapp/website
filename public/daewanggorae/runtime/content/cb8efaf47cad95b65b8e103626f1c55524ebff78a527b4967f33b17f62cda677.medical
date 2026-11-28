@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.fat-soluble-function-pairs",
+  "lessonId": "biochemistry.vitamins.fat-soluble-functions",
+  "title": "지용성 비타민의 다른 기능",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "A·D의 활성 형태",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "시각·전사·호르몬 조절",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "E와 환원 네트워크",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "지질 연쇄 산화 조절",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "K와 재생 회로",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "특정 단백질 γ카르복실화",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.fat-soluble-function-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "형태와기능구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.fat-soluble-function-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "임상이득은별도검증",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.fat-soluble-function-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "합성·가공구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "공통흡수성질이같은기능을뜻하지않는다. 보충용량·개별치료권고를제시하지않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.endocrine.hormone-kinetics",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.1e1fc6e7678d",
+      "sourceSha256": "1e1fc6e7678d75e87631cc25b63ac65c7fc1061153581e2974ad1137eee6d7ca",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.bbfcb4c7b3a1",
+      "sourceSha256": "bbfcb4c7b3a101cbd16aac81b55c697bf6bdd9a8eefd3a7d37427750b582c455",
+      "sourceLengthUtf16": 254,
+      "annotations": [
+        {
+          "id": "ann.bc8cba0ec3828602866e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 13,
+            "exact": "clearance",
+            "prefix": "청소율(",
+            "suffix": ", CL)은 단위 시간에 특정 물질이 완전히"
+          },
+          "conceptId": "reader.term.52a8b75072525e18",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.7e60c6b253a0",
+      "sourceSha256": "7e60c6b253a0e7d33f35a1e87c5ec11e4ee61e3079e5fb55882d55d330eddd88",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.af60b40e7cc4",
+      "sourceSha256": "af60b40e7cc4b0d39cf7c267b9aadb60a78b484dd671245d3607801e255cac0a",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.847ba40144e0",
+      "sourceSha256": "847ba40144e0e0460a903d142ea790376515ffe07cfb2bb8d3866467a055f835",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.00bdf0d7f1c1",
+      "sourceSha256": "00bdf0d7f1c1f716c2eac5e821a58a5b5f8be814a18f2cd22d6bd358d45f17ae",
+      "sourceLengthUtf16": 241,
+      "annotations": [
+        {
+          "id": "ann.fe3484dc48bbca83fa15",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 77,
+            "end": 83,
+            "exact": "갑상샘호르몬",
+            "prefix": ". 총농도는 두 형태의 합이다. 스테로이드·",
+            "suffix": "의 운반에는 결합단백질이 중요하며, 일부 펩"
+          },
+          "conceptId": "reader.term.e2e4f3aa621148f4",
+          "targetDocumentId": "endocrinology.thyroid.hormone-synthesis"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.67f1e5f6235f",
+      "sourceSha256": "67f1e5f6235fa054a980ae43f25920a82899e896d99ff02a545694b5a7c1e49e",
+      "sourceLengthUtf16": 298,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.3878510961e6",
+      "sourceSha256": "3878510961e64806142a003178c82ecdea5b012ac59fc0ad032ab93c245c0ddb",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.bdc8ded55cae66b652a4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 159,
+            "end": 207,
+            "exact": "총농도가 참고범위 밖이라는 이유만으로 곧바로 조직 수준의 과다·결핍을 확정하지 않는다.",
+            "prefix": " 호르몬과 검사법에 따라 다르게 평가한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.68cd9693ecb2",
+      "sourceSha256": "68cd9693ecb259515106e5faf9421a01c4d101414393bdf18da05b0a70faa2ad",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.hormone-kinetics.b.19388dea55bc",
+      "sourceSha256": "19388dea55bcc385e34bd8e4736dc8acf886e6e70845fa1634678f22b384020d",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    }
+  ]
+}

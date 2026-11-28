@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.valvular.prosthetic-valve-assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.b.d29a09324280",
+      "sourceSha256": "d29a09324280e021c3efc5572612111b8eaba23d1ffd9c4e9e894db662f7d09b",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.0d51e94e291eb707de9c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 152,
+            "end": 218,
+            "exact": "판막을 가진 환자의 한 번 높은 속도를 보았다고 곧바로 새 협착으로 확정하지 않고 원래 보철의 특성과 유량을 확인한다.",
+            "prefix": "준 심초음파는 이후 변화의 비교점이 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.b.ab10255ad30e",
+      "sourceSha256": "ab10255ad30e3603adbe8b8c0587504e75ec448e412e2931bdf95da259eae2b3",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.b.cc419403a4f0",
+      "sourceSha256": "cc419403a4f0134b5abf2befa981fd74b41fc1388a586ab7880c859c2c64d92b",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.b.17bf37c2a91a",
+      "sourceSha256": "17bf37c2a91a790296bbaf525076fb83397444af125f72db019c63ec369bf97c",
+      "sourceLengthUtf16": 211,
+      "annotations": [
+        {
+          "id": "ann.3810d5202d30face43d6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 64,
+            "end": 67,
+            "exact": "심부전",
+            "prefix": "k)은 위치와 기전이 다르다. 주변 누출은 ",
+            "suffix": "뿐 아니라 용혈과 관련될 수 있다. 작은 색"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.b.2b1052df5956",
+      "sourceSha256": "2b1052df595668f5ec87b2124c89260617e1dce9a5806249794349bc4e4cdfd4",
+      "sourceLengthUtf16": 228,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.b.323c5d69034c",
+      "sourceSha256": "323c5d69034c41f946e49a8876644f197b835d44bf6e5d294f6957c808f28a6a",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.b.1c61cdd03297",
+      "sourceSha256": "1c61cdd0329770d96cf9bf777457d3e59204df171697e9283de16588f7df1f5f",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.b.ae3421562acd",
+      "sourceSha256": "ae3421562acdc301c751a26a23b5df5f58edfb9449082f4405921bde16010817",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.p.extra0842.0",
+      "sourceSha256": "dbc781cabc2894af995f345c793161b33b2947034b60d0bce8c17f7e3d40bb5b",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.valvular.prosthetic-valve-assessment.p.extra0842.1",
+      "sourceSha256": "0364385b1bb936d2d3f1f78f12c1b7489c3e9055de2083c36b0f5c27b6d1c3f5",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.6932b2e7dbb0e578b73a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 54,
+            "end": 92,
+            "exact": "판막 둘레로 새는 혈류는 판막 내부의 정상적인 세척 유동과 구별한다.",
+            "prefix": "로 대조하면 가능한 원인을 좁힐 수 있다. ",
+            "suffix": " 새 빈혈과 용혈 소견이 생겼을 때에는 작은"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

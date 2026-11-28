@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.t-cells.tcr-costimulation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.t-cells.tcr-costimulation.b.a4d0640300d4",
+      "sourceSha256": "a4d0640300d43ac70c31a4494e42ec6d1f306d95d259d051928b8bc6cf5cb8d7",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.t-cells.tcr-costimulation.b.853e64e78cde",
+      "sourceSha256": "853e64e78cde80ddfd4dd0da5fd92ab36f5b97283027970ff793b31bf26ad9d1",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.t-cells.tcr-costimulation.b.7e9922a8f9e7",
+      "sourceSha256": "7e9922a8f9e7c8b493f5221cc5a7ae627c21bd7ceede5d9507d78db189446f0e",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.db0ebfae2ffac88c4b7f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 47,
+            "end": 51,
+            "exact": "항원제시",
+            "prefix": "호와 함께 공동자극이 중요하다. 대표적으로 ",
+            "suffix": "세포의 CD80·CD86과 T세포의 CD28"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        },
+        {
+          "id": "ann.1676d0343611bc2c02d0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 40,
+            "exact": "미경험 T세포의 초기 활성화에는 TCR 신호와 함께 공동자극이 중요하다.",
+            "prefix": "",
+            "suffix": " 대표적으로 항원제시세포의 CD80·CD86"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.t-cells.tcr-costimulation.b.e31e10766b1b",
+      "sourceSha256": "e31e10766b1b9c1694e57b8bbdc9e548cf9c16058c77d22a955d03ba204a5b58",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.3f1f86445d8e01d6070d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 44,
+            "exact": "IL-2 생성과 고친화성 수용체 구성의 변화는 활성화된 세포의 확장에 중요하다.",
+            "prefix": "",
+            "suffix": " CD25는 IL-2 수용체의 α사슬이며 단"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.t-cells.tcr-costimulation.b.1cfbb620b824",
+      "sourceSha256": "1cfbb620b8248c0eefbcff9fcff39f7568e9d307e5fd3646e1416d8f37d579f5",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.t-cells.tcr-costimulation.b.88c253cee44f",
+      "sourceSha256": "88c253cee44f03ac59c07c3581525fda55169260ed7eae3bc6fd62ab484d015d",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.t-cells.tcr-costimulation.b.444cc5ac9fc1",
+      "sourceSha256": "444cc5ac9fc1590b7d041e0691d2d22f3202fa8c388025e312d985a4a54899a5",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.t-cells.tcr-costimulation.b.f73acb8ff7c4",
+      "sourceSha256": "f73acb8ff7c4c9618953ee6f11c2a136a05e8a508082182bd3c4f382077b5971",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    }
+  ]
+}

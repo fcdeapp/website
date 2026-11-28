@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.toxins.lps-compartment-sensing",
+  "subjectId": "bacteriology",
+  "chapterId": "toxins",
+  "title": {
+    "ko": "LPS의 구조와 구획별 선천면역 인식",
+    "en": "LPS Structure and Compartmental Sensing"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.lo.01",
+      "text": "Lipid A·core·O 항원을 구별한다"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.lo.02",
+      "text": "TLR4와 세포질 인식을 구별한다"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.lo.03",
+      "text": "LPS 노출과 패혈증의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.0ae3ba0ea915",
+      "type": "heading",
+      "level": 2,
+      "text": "표면 항원과 염증 유발 부분"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.a1d28308aa1e",
+      "type": "paragraph",
+      "markdown": "Lipopolysaccharide(LPS)는 전형적인 그람음성 외막의 중요한 성분으로 lipid A, core 당 부분과 O 항원 사슬을 구별할 수 있다. Lipid A는 막에 고정하는 지질 부분이면서 강한 선천면역 자극과 관련된다. O 항원은 균주의 표면 항원 다양성에 기여한다. 모든 균이 같은 길이와 구성을 가진 LPS를 만드는 것은 아니며 O 사슬이 짧거나 없는 lipooligosaccharide(LOS)도 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.1ec2c15c378f",
+      "type": "paragraph",
+      "markdown": "O 항원의 차이로 혈청형이 나뉜다고 lipid A의 모든 면역 자극이 같다는 뜻은 아니다. 지방산의 수와 배치 등 구조 차이는 숙주 수용체 반응에 영향을 줄 수 있다. LPS를 한 가지 분자량의 단일 물질처럼 취급하면 균종과 실험 조건에 따른 차이를 놓친다. 추출된 LPS의 양과 실제 생물학적 활성을 같은 단위로 자동 환산할 수도 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.304c027b9f69",
+      "type": "heading",
+      "level": 2,
+      "text": "표면과 세포내 소포의 인식"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.8ef352bf5e31",
+      "type": "paragraph",
+      "markdown": "세포 밖 LPS는 LPS-binding protein(LBP), CD14, MD-2와 TLR4 계통의 상호작용을 거쳐 신호를 유발한다. CD14를 세포 안으로 신호를 직접 전달하는 일반적인 막관통 수용체와 동일시하지 않는다. 보조 단백질에 의한 전달과 TLR4 복합체의 신호 형성은 다른 역할이다. 같은 양의 LPS라도 전달 환경과 세포 종류에 따라 반응이 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.1eb58c58e21c",
+      "type": "paragraph",
+      "markdown": "TLR4는 위치와 연결되는 어댑터에 따라 여러 전사 프로그램을 활성화한다. MyD88 관련 염증 신호와 TRIF 관련 반응을 구별하되 두 경로가 항상 서로 배타적으로만 작동한다고 생각하지 않는다. 표면 반응과 세포내 구획의 반응은 시간과 위치가 다를 수 있다. 한 cytokine 측정만으로 어느 구획에서 어떤 회로가 시작되었는지 모두 확정할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.0670248a56a6",
+      "type": "heading",
+      "level": 2,
+      "text": "세포질에 도달한 LPS"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.5dedfdd1c08b",
+      "type": "paragraph",
+      "markdown": "숙주 세포질에 도달한 LPS는 사람의 caspase-4·5 계통과 관련된 비정형 inflammasome 반응을 유발할 수 있다. 생쥐의 caspase-11과 대응시켜 설명하되 종 사이의 단백질 이름을 섞지 않는다. Gasdermin D 절단과 막공 형성, pyroptosis는 이 회로의 중요한 결과다. 세포 밖 LPS 자극과 세포질 전달을 같은 실험 조건으로 취급하면 수용체 결손의 결과를 잘못 읽을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.977ae0b79226",
+      "type": "paragraph",
+      "markdown": "세포가 죽었다는 관찰만으로 특정 inflammasome을 확진하지 않는다. 막 손상·독성·다른 세포사 경로를 대조하고 절단 산물·유전자 기능과 전달 조건을 확인한다. LPS를 세포질로 넣는 실험 도구 자체가 세포를 손상시키지 않았는지도 중요하다. 같은 시약의 대조 조건이 있어야 전달과 분자 인식의 기여를 분리할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.cd6a7d0c2dd7",
+      "type": "heading",
+      "level": 2,
+      "text": "독소와 임상 증후군"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.807454a53cda",
+      "type": "paragraph",
+      "markdown": "Endotoxin은 미생물 단백질 exotoxin과 분자적 성격이 다르다. LPS는 균의 용해뿐 아니라 외막 소포 등과 관련되어 숙주에 노출될 수 있어 균이 죽을 때만 나오며 살아 있을 때는 전혀 노출되지 않는다고 설명하지 않는다. 그러나 혈중 LPS의 검출과 패혈증의 진단은 같은 정의가 아니다. 패혈증은 감염에 대한 조절되지 않은 숙주 반응과 장기 기능장애의 임상 문맥에서 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.b.10ddfffd2580",
+      "type": "paragraph",
+      "markdown": "그람양성균과 진균 등도 심각한 전신 감염을 일으킬 수 있다. 쇼크가 있다고 LPS가 유일한 원인이라고 단정하지 않는다. 선천 인식·응고·혈관 반응과 미생물의 위치, 숙주의 기존 상태가 함께 결과를 만든다. 분자 구조에서 시작한 설명은 임상 증후군으로 이어지지만 하나의 분자 측정값을 환자 전체의 중증도와 동일시하지 않는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.lps-compartment-sensing.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "Lipid A",
+            "막 고정과 선천 자극 관련"
+          ],
+          [
+            "O 항원",
+            "표면 항원 다양성"
+          ],
+          [
+            "TLR4·MD-2",
+            "세포 밖·소포 관련 인식 회로"
+          ],
+          [
+            "Caspase-4·5",
+            "사람 세포질 LPS 관련 반응"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/toxins/sections/bacteriology.toxins.lps-compartment-sensing.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.toxins.lps-compartment-sensing.001"
+  ],
+  "relatedLessons": [
+    "bacteriology.toxins.superantigen-activation",
+    "bacteriology.genetics.horizontal-transfer-pathways"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.hypothetical-cpp-0855",
+  "lessonId": "neurology.neurooncology.mass-pressure",
+  "title": "고정 MAP의 CPP 근사",
+  "series": [
+    {
+      "label": "MAP90 가정",
+      "samples": [
+        {
+          "x": 5,
+          "y": 85
+        },
+        {
+          "x": 10,
+          "y": 80
+        },
+        {
+          "x": 15,
+          "y": 75
+        },
+        {
+          "x": 20,
+          "y": 70
+        },
+        {
+          "x": 25,
+          "y": 65
+        },
+        {
+          "x": 30,
+          "y": 60
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "equation": "90-ICP",
+    "notActualFlowOrTreatmentThreshold": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 5,
+      "max": 30,
+      "scale": "linear",
+      "ticks": [
+        5,
+        10,
+        15,
+        25,
+        30
+      ],
+      "label": "가상 ICP(mmHg)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 100,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        25.0,
+        50.0,
+        75.0,
+        100.0
+      ],
+      "label": "MAP−ICP(mmHg)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "MAP90 가정",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 또는 가상 기록이다. 실제 환자·정상 범위·검사 기준·치료효과·처방과 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

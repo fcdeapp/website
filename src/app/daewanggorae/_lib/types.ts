@@ -29,7 +29,7 @@ export type Catalog = {
   subjects: Entry[];
   chapters: Entry[];
   lessons: LessonEntry[];
-  questions: (Entry & { lessonId: string })[];
+  questions: (Entry & { lessonId: string; profile?: string })[];
   scenes: (Entry & {
     lessonId: string;
     triggerBlockId: string;

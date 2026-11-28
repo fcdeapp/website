@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "psychiatry",
+  "title": {
+    "ko": "정신건강의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "psychiatry.chapter.assessment",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/assessment/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.mood",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/mood/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.psychosis",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/psychosis/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.anxiety",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/anxiety/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.trauma",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/trauma/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.treatment",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/treatment/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.substances",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/substances/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.psychotherapy",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/psychotherapy/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.somatic",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/somatic/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.development",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/development/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.eating",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/eating/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.sleep",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/sleep/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.personality",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/personality/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.dissociation",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/dissociation/chapter.json"
+    },
+    {
+      "id": "psychiatry.chapter.stress",
+      "path": "domains/08-neuroscience-psychiatry/subjects/psychiatry/chapters/stress/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "psychiatry.plan.001",
+    "psychiatry.plan.002",
+    "psychiatry.plan.003",
+    "psychiatry.plan.004",
+    "psychiatry.plan.005",
+    "psychiatry.plan.006",
+    "psychiatry.plan.007",
+    "psychiatry.assessment.mental-status",
+    "psychiatry.mood.depression-longitudinal",
+    "psychiatry.mood.bipolar-mania",
+    "psychiatry.psychosis.syndrome-differential",
+    "psychiatry.anxiety.panic-ocd",
+    "psychiatry.trauma.stress-ptsd",
+    "psychiatry.treatment.monitoring-shared-decisions",
+    "psychiatry.substances.alcohol-intoxication-withdrawal",
+    "psychiatry.substances.opioid-sedative",
+    "psychiatry.substances.stimulant-cannabis",
+    "psychiatry.psychotherapy.cbt-formulation",
+    "psychiatry.psychotherapy.interpersonal-family",
+    "psychiatry.somatic.symptom-functional",
+    "psychiatry.development.adhd-assessment",
+    "psychiatry.development.autism-context",
+    "psychiatry.eating.restriction-binge-risk",
+    "psychiatry.sleep.insomnia-assessment",
+    "psychiatry.personality.longitudinal-formulation",
+    "psychiatry.sleep.apnea-neurocognition",
+    "psychiatry.sleep.narcolepsy-hypersomnolence",
+    "psychiatry.sleep.parasomnia-state-dissociation",
+    "psychiatry.dissociation.memory-reality-assessment",
+    "psychiatry.stress.adjustment-grief"
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.cardiomyopathy.restrictive-physiology",
+  "subjectId": "cardiology",
+  "chapterId": "cardiomyopathy",
+  "title": {
+    "ko": "제한성 충만 생리와 감별",
+    "en": "Restrictive Filling Physiology and Differential Diagnosis"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.lo.01",
+      "text": "심근 강직과 충만압을 연결한다"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.lo.02",
+      "text": "박출률과 충만 기능을 구별한다"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.lo.03",
+      "text": "심낭 수축과 심근 질환의 감별 원리를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.08770d7908a5",
+      "type": "heading",
+      "level": 2,
+      "text": "잘 늘어나지 않는 심실"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.7e9499b25121",
+      "type": "paragraph",
+      "markdown": "제한성 생리(restrictive physiology)는 심실이 혈액을 받아들이는 능력이 제한되어 작은 용적 변화에도 충만압이 높아지는 관계를 중심으로 이해한다. 심근의 강직과 침윤·섬유화 등 여러 원인이 가능하다. 심방이 높은 압력과 지속적인 부담을 받으면서 커질 수 있고, 울혈과 낮은 전방 유량이 함께 나타날 수 있다. 심실의 크기가 크게 늘지 않았다고 기능이 정상인 것은 아니다. 수축 비율과 이완기 압력–용적 관계는 다른 축이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.thorax.heart.8aa996b1"
+      ]
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.54f8a2938deb",
+      "type": "paragraph",
+      "markdown": "박출률이 보존되어도 일회박출량이 충분하지 않거나 충만압이 높을 수 있다. 작거나 정상 크기의 심실에서 전체 용적 중 일정 비율을 내보내더라도 절대량은 제한될 수 있기 때문이다. 따라서 증상과 목정맥·부종 등 울혈, 혈압과 말초 관류를 함께 평가한다. 단일 비율 하나가 환자의 모든 순환을 대표하지 못한다. 질환이 진행하면 수축 기능도 저하될 수 있어 제한성이라는 이름을 평생 고정된 정상 수축 상태로 이해하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.998741361a40",
+      "type": "heading",
+      "level": 2,
+      "text": "초기 충만과 후반의 제한"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.6ad40747e3f7",
+      "type": "paragraph",
+      "markdown": "도플러 유입 파형은 심방과 심실의 압력차 및 이완·강직, 심박수와 방실 관계의 영향을 받는다. 빠른 초기 유입이 있었다고 심실의 이완이 반드시 좋다는 뜻은 아니다. 높은 심방압이 유입을 밀어 주는 상황과 심근의 이완 기능을 구별해야 한다. 파형의 비율과 감속 시간, 조직 도플러와 심방 크기 등 여러 정보를 통합한다. 한 파형을 모든 연령과 리듬, 판막 상태에 같은 방식으로 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.18d86ef21367",
+      "type": "paragraph",
+      "markdown": "압력–용적 관계에서 순응도는 변화량 dV/dP로, 강직은 그 역방향의 관계로 생각할 수 있다. 실제 이완기 곡선은 비선형이므로 같은 심실도 작동하는 용적 범위에 따라 변화율이 다르다. 넓은 범위의 압력과 용적 두 점으로 계산한 평균을 어느 지점의 국소 기울기와 동일시하지 않는다. 간단한 지수 곡선은 방향을 가르치는 모형이며 환자의 실제 충만압을 용적만으로 확정하는 계산기는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.65476fa33dfb",
+      "type": "heading",
+      "level": 2,
+      "text": "심근과 심낭의 다른 제한"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.747af7a2822a",
+      "type": "paragraph",
+      "markdown": "수축성 심낭염(constrictive pericarditis)도 심실 충만을 제한하여 제한성 심근병증과 유사한 울혈을 만들 수 있다. 그러나 제한의 주된 위치와 호흡에 따른 압력 전달, 심실 상호의존성은 다를 수 있다. 심낭의 두께와 석회화, 심실 중격의 움직임과 정맥 유입, 조직 도플러 및 필요한 혈역학 자료를 통합한다. 심낭이 두껍다는 사실만으로 모든 기능적 수축이 확정되거나 정상 두께만으로 모든 수축이 배제되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.eb8cd5c5437f",
+      "type": "paragraph",
+      "markdown": "호흡에 따른 양 심실의 충만 변화와 압력 관계를 평가할 때는 호흡 방식과 체액 상태, 부정맥과 동반 폐질환의 영향을 고려한다. 두 질환은 서로 다른 치료를 요구할 수 있어 감별의 임상적 의미가 크다. 다만 혼합 병변도 가능하므로 하나의 전형적 소견이 나왔다고 모든 다른 성분을 배제하지 않는다. 영상의 형태와 실제 혈역학, 조직의 성격이 서로 맞는지를 확인하는 과정이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.45edcfa6fcb5",
+      "type": "heading",
+      "level": 2,
+      "text": "원인과 관리"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.3de43d1bca52",
+      "type": "paragraph",
+      "markdown": "침윤·저장 질환과 전신 염증, 방사선 또는 다른 손상 뒤의 변화 등 가능한 원인을 병력과 심장 외 단서에 연결한다. 원인에 따라 혈액·유전·특수 영상과 선택적 조직검사가 도움이 된다. 증상과 울혈을 조절하면서 지나친 충만 감소로 전방 유량이 떨어지지 않는지 살핀다. 체액은 부족과 과다 모두 문제가 될 수 있으므로 낮은 혈압이나 부종 하나만으로 같은 처치를 반복하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.b.da8594b99289",
+      "type": "paragraph",
+      "markdown": "추적은 체중과 부종뿐 아니라 활동 능력, 신장 기능과 전해질 및 리듬을 포함한다. 심방 기능과 방실 동기성의 소실이 순환에 영향을 줄 수 있어 부정맥의 원인과 결과를 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.heading.numeric0841",
+      "type": "heading",
+      "level": 2,
+      "text": "비선형 곡선의 국소 기울기"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.paragraph.numeric0841",
+      "type": "paragraph",
+      "markdown": "가상 압력–용적 관계를 P=A[exp(BV)−1]로 놓으면 국소 강직은 dP/dV=ABexp(BV)다. A와B가 양수일 때 용적이 커질수록 같은 작은 용적 증가에 대한 압력 증가가 더 커진다. 국소 순응도는 그 역수인 dV/dP로 생각할 수 있다. 여기서 지수의 BV는 무차원이어야 하므로 B의 단위는 용적의 역수다. A는 압력 단위로 정한다. 실제 심실은 이완 과정과 외부 압력·심낭 및 상호의존성을 포함하므로 하나의 고정 지수식으로 모든 상태를 설명할 수 없다. 곡선은 기울기의 의미와 선형 평균의 한계를 가르치는 독립 모형이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "순응도",
+            "dV/dP"
+          ],
+          [
+            "강직",
+            "dP/dV"
+          ],
+          [
+            "초기 유입",
+            "높은 심방압과 이완을 구별"
+          ],
+          [
+            "심낭 수축",
+            "주된 제한 위치·호흡 반응 대조"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.diagram.restrictive-stiffness-0841",
+      "type": "diagram",
+      "diagramRef": "diagram.restrictive-stiffness-0841",
+      "path": "diagrams/diagram.restrictive-stiffness-0841.svg",
+      "alt": "지수 관계의 비선형성의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.anatomy3d0841",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.thorax.heart.8aa996b1"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.restrictive-physiology.limits0841",
+      "type": "clinicalPearl",
+      "markdown": "정상 심방·심실의 위치 관계를 확인한다. 환자의 확장·강직·충만압·반흔·수축 운동은 이 정적 정상 모델이 측정하거나 재현하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 정상 심장 모델은 심실·심방과 심낭의 위치 관계를 설명하지만 강직과 압력 전달을 측정하는 모형은 아니다. 제한성 학습에는 압력–용적 곡선, 호흡별 충만 비교와 실제 영상의 출처를 구별한 자료가 필요하다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/cardiomyopathy/sections/cardiology.cardiomyopathy.restrictive-physiology.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.cardiomyopathy.restrictive-physiology.001",
+    "question.cardiology.cardiomyopathy.restrictive-physiology.002"
+  ],
+  "relatedLessons": [
+    "cardiology.cardiomyopathy.hypertrophic-obstruction",
+    "cardiology.cardiomyopathy.cardiac-amyloidosis"
+  ]
+}

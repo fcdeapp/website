@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.presentation.cross-priming",
+  "subjectId": "immunology",
+  "chapterId": "presentation",
+  "title": {
+    "ko": "교차제시·교차초회반응과 항원 전달",
+    "en": "Cross Presentation Cross Priming and Antigen Transfer"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.presentation.cross-priming.lo.01",
+      "text": "항원 기원과 제시 분자를 나누어 분류한다"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.lo.02",
+      "text": "교차제시와 CD8 초기 활성화를 구별한다"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.lo.03",
+      "text": "cross-dressing과의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.presentation.cross-priming.b.83a7333c5ca7",
+      "type": "heading",
+      "level": 2,
+      "text": "감염되지 않은 세포도 정보를 전달한다"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.f0ddc63d4e18",
+      "type": "paragraph",
+      "markdown": "외부에서 얻은 단백질을 MHC I에 올리는 교차제시(cross-presentation)는 통상적인 항원 경로 분류의 중요한 예외다. 수지상세포가 감염 세포나 종양의 성분을 섭취한 뒤 CD8 T세포에 정보를 제공할 수 있다. 수지상세포 자체가 해당 병원체에 감염되어 단백질을 합성해야만 하는 것은 아니다. 항원이 어디에서 왔는지와 최종적으로 어떤 MHC가 제시하는지를 별도 축으로 분류해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.d584a1e456b6",
+      "type": "paragraph",
+      "markdown": "교차제시를 통해 미경험 CD8 T세포의 실제 초기 반응이 유도되는 것은 cross-priming이다. 펩타이드–MHC I이 만들어졌다는 분자적 결과만으로 충분한 증식·분화가 일어났다고 판단할 수 없다. 공동자극, 사이토카인과 이동 장소가 필요하다. 같은 외부 항원이라도 염증과 위험 신호의 맥락에 따라 반응 또는 관용에 연결될 수 있다. 교차제시는 항원의 통로를, priming은 림프구의 결과를 기술한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.b1c05231ce2c",
+      "type": "heading",
+      "level": 2,
+      "text": "둘 이상의 가공 경로"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.2cd8dc73458b",
+      "type": "paragraph",
+      "markdown": "세포질 경로에서는 섭취한 단백질의 일부가 세포질로 접근하고 proteasome과 TAP 관련 가공을 거쳐 제시될 수 있다. 소포 경로에서는 내부 구획의 단백질분해와 MHC I 적재가 관여할 수 있다. 경로별 의존성은 항원 형태·세포 종류와 실험 조건에 따라 다르다. 모든 교차제시가 TAP에 의존한다거나 모두 독립적이라는 일반화는 적절하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.c588e511f47b",
+      "type": "paragraph",
+      "markdown": "특히 cDC1은 여러 상황에서 교차제시에 중요한 역할을 하지만, 세포군의 이름만으로 모든 조건의 기능을 단정하지 않는다. 섭취량과 항원의 보존, 구획 산도·수송과 MHC 공급이 효율을 바꾼다. 외부 단백질을 많이 먹은 세포가 항상 가장 잘 교차제시하는 것은 아니다. 과도한 분해로 필요한 epitope가 소실될 수도 있어 포식과 제시의 최적 조건이 같지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.5e45a9458820",
+      "type": "heading",
+      "level": 2,
+      "text": "이미 만들어진 복합체를 받는 경우"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.d35e665697ac",
+      "type": "paragraph",
+      "markdown": "다른 세포의 온전한 펩타이드–MHC 복합체를 받아 표면에 나타내는 cross-dressing은 자기 MHC에 새 펩타이드를 적재하는 교차제시와 구별된다. 두 경우 모두 외부 유래 정보가 CD8 T세포에 보일 수 있지만 MHC의 기원과 가공의 필요성이 다르다. 막 조각과 소포를 통한 전달은 이식의 반직접 인식과도 연결된다. 어떤 현상을 관찰했는지에 따라 실험의 대조가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.92c949634afc",
+      "type": "paragraph",
+      "markdown": "항원 제공 세포와 수지상세포의 MHC 대립유전자를 다르게 하고, T세포가 어떤 대립유전자에 제한되는지 확인하면 두 기전을 구분하는 데 도움이 된다. 제공 세포의 MHC를 인식한다면 이미 만들어진 복합체 전달 가능성을 검토한다. 수용 세포의 MHC에 제한되면 새로운 가공·적재를 검토할 수 있다. 그러나 표본의 오염과 직접 세포 접촉, 잔여 제공 세포를 통제해야 결론을 낼 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.e5ff1497f626",
+      "type": "heading",
+      "level": 2,
+      "text": "암과 백신에 연결되는 기전"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.24edb77854e1",
+      "type": "paragraph",
+      "markdown": "종양 항원을 모은 수지상세포는 종양 특이 T세포의 형성에 기여할 수 있다. 그렇지만 항원 제시가 관찰되어도 종양 부위에 효과기 세포가 들어가고 기능해야 한다. 종양의 제시 결함과 국소 억제, 효과기 기능은 다른 제한 요소다. 항원을 더 공급하는 전략이 모든 면역 회피를 해결하지 않는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.b.549ec4064f68",
+      "type": "paragraph",
+      "markdown": "실험에서 reporter T세포가 반응하면 특정 펩타이드의 제시 가능성을 보여 주지만 실제 다클론 미경험 세포의 반응과 같지는 않다. Reporter의 감도와 기존 활성 상태를 확인한다. 교차제시·cross-priming·cross-dressing을 나누면 항원 전달, T세포 활성과 실제 방어를 단계별로 평가할 수 있고, 한 양성 결과를 면역 전체의 성공으로 확대하는 오류를 줄일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.cross-priming.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "교차제시",
+            "외부 유래 항원을 MHC I에 새로 제시"
+          ],
+          [
+            "Cross-priming",
+            "미경험 CD8 반응을 실제 유도"
+          ],
+          [
+            "Cross-dressing",
+            "외부의 온전한 펩타이드–MHC 전달"
+          ],
+          [
+            "실험의 구분",
+            "제시 세포·MHC·항원의 기원을 추적"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/presentation/sections/immunology.presentation.cross-priming.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.presentation.cross-priming.001"
+  ],
+  "relatedLessons": [
+    "immunology.presentation.class-ii-loading",
+    "immunology.t-cells.tcr-costimulation"
+  ]
+}

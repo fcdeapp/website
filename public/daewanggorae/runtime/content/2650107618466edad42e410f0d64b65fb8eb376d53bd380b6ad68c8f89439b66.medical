@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.diagnosis.reflex-syncope",
+  "subjectId": "cardiology",
+  "chapterId": "diagnosis",
+  "title": {
+    "ko": "반사성 실신의 순환 기전",
+    "en": "Circulatory Mechanisms of Reflex Syncope"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.lo.01",
+      "text": "정맥환류와 혈관 반응을 연결한다"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.lo.02",
+      "text": "혈관억제와 심장억제를 구별한다"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.lo.03",
+      "text": "유발 상황·증상과 검사 반응을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.4030919b1dcd",
+      "type": "heading",
+      "level": 2,
+      "text": "서 있는 상태의 순환"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.d5b36809f2b5",
+      "type": "paragraph",
+      "markdown": "사람이 일어서면 중력 때문에 혈액의 일부가 다리와 내장 정맥에 머무를 수 있다. 정상 순환은 정맥의 긴장과 근육 펌프, 심박수와 혈관 저항을 조절하여 뇌로 가는 혈류를 유지한다. 오래 서 있기와 더운 환경, 체액 부족 등은 이러한 보상의 부담을 높일 수 있다. 같은 자세에서도 자율신경 반응과 체액 상태 및 약물에 따라 결과가 다르다. 반사성 실신을 설명할 때 단순히 심장이 약해서 쓰러진다는 표현만으로는 기전을 충분히 이해할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.c8ab9f2cfa3a",
+      "type": "paragraph",
+      "markdown": "반사성 실신(reflex syncope)에서는 부적절한 자율신경 반응이 혈압과 때로는 심박수를 떨어뜨려 전뇌 관류를 낮출 수 있다. 혈관 긴장 감소에 따른 혈관억제(vasodepression)와 서맥·정지 등 심장억제(cardioinhibition)의 기여가 서로 다르다. 두 요소는 함께 나타날 수 있으며 어느 하나가 우세할 수도 있다. 사건 중 서맥이 보였다는 사실만으로 혈관성 성분을 모두 배제하지 않는다. 심박수와 혈압의 시간 관계를 함께 보는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.0c89d492d871",
+      "type": "heading",
+      "level": 2,
+      "text": "상황과 전구 증상"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.b5b739dce4d9",
+      "type": "paragraph",
+      "markdown": "혈관미주신경성 실신은 통증·공포와 채혈, 오래 서 있기 등 특정 상황과 연관될 수 있다. 구역, 열감과 식은땀, 시야 흐려짐과 청각 변화가 사건 전에 나타나기도 한다. 배뇨·배변과 기침 등의 상황성 반응도 평가한다. 그러나 같은 유발 상황에서 모든 의식소실이 같은 반사 기전인 것은 아니다. 심장질환과 출혈, 약물 등의 배경을 함께 확인해야 한다. 전형적 상황이 있다는 이유만으로 현재의 위험한 상태를 무시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.f2e47f154044",
+      "type": "paragraph",
+      "markdown": "전구 증상을 인지하면 자세를 바꾸거나 일부 근육 긴장 동작으로 혈압 저하의 진행을 줄일 기회가 있을 수 있다. 이 접근의 적합성은 환자의 능력과 사건의 예측 가능성에 달려 있다. 갑작스럽게 의식소실이 생기는 환자에게 전구 증상 활용만을 유일한 안전 전략으로 제시할 수는 없다. 낙상과 외상 위험, 직업과 이동 상황 등 실제 생활의 결과도 평가해야 한다. 교육은 유발 환경과 조기 신호를 환자가 이해할 수 있게 설명하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.2f139bc01345",
+      "type": "heading",
+      "level": 2,
+      "text": "혈압과 박출량"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.386a962478ce",
+      "type": "paragraph",
+      "markdown": "평균 동맥압은 심박출량과 혈관 저항의 관계로 생각할 수 있다. 정맥환류가 줄면 심실 충만과 일회박출량이 감소할 수 있고 혈관 확장이 겹치면 압력이 더 낮아질 수 있다. 심박수가 처음에는 보상적으로 올라가다가 나중에 떨어질 수도 있다. 따라서 사건의 마지막 순간에 낮은 심박수가 있었다는 정보만으로 전체 시작 기전을 역으로 단정하지 않는다. 단일 평균값보다 사건 전후 연속 기록이 원인 순서를 더 잘 보여 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.0cb2938830a5",
+      "type": "paragraph",
+      "markdown": "심박동기로 서맥을 보조하는 것과 혈관 확장·정맥환류 저하를 교정하는 것은 같은 개입이 아니다. 반사성 사건에서 장치 치료의 적합성을 판단하려면 실제 사건과 심장억제의 연관, 환자의 특성과 재발 위험 및 다른 성분을 검토해야 한다. 기기에서 특정 길이의 정지가 검출되었다는 사실만으로 모든 실신에 동일한 치료가 필요하다고 일반화하지 않는다. 원인을 분류하는 목적은 기전에 맞는 예방과 안전 전략을 세우는 데 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.506c0a6578f7",
+      "type": "heading",
+      "level": 2,
+      "text": "기립경사검사의 해석"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.f0197f7555ba",
+      "type": "paragraph",
+      "markdown": "기립경사검사(tilt-table testing)는 통제된 자세 변화에서 증상과 혈압·심박수 반응을 관찰하는 방법이다. 검사에서 유발된 반응이 실제 자연 발생 사건의 모든 세부와 완전히 같다는 뜻은 아니다. 병력과 검사 중 증상의 유사성, 반응의 시간 과정 및 사용한 유발 조건을 확인한다. 양성이라는 한 단어만으로 모든 과거 사건을 같은 기전으로 확정하거나 다른 심장성 원인을 배제하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.b.14868757f9b6",
+      "type": "paragraph",
+      "markdown": "반사성 실신의 경과는 재발 빈도와 상황, 외상과 삶의 질의 부담으로 평가한다. 실신 자체가 일시적으로 회복되었다고 이후의 낙상·안전 문제가 없어지는 것은 아니다. 환자와 함께 유발 조건과 약물, 생활 환경을 검토하고 효과를 추적한다. 순환 도식은 정맥 저류와 환류, 박출·저항을 분리하여 보여 주는 것이 좋다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.reflex-syncope.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "혈관억제",
+            "혈관 긴장 감소의 기여"
+          ],
+          [
+            "심장억제",
+            "서맥·정지의 기여"
+          ],
+          [
+            "전구 증상",
+            "상황·시간 순서 대조"
+          ],
+          [
+            "경사검사",
+            "유발 반응과 자연 사건 구별"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 정상 인체의 정적 메시를 혈관 긴장과 자율신경 반응을 측정한 질환 모형으로 표시하지 않는다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.reflex-syncope.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.diagnosis.reflex-syncope.001"
+  ],
+  "relatedLessons": [
+    "cardiology.diagnosis.syncope-assessment",
+    "cardiology.diagnosis.orthostatic-hypotension"
+  ]
+}

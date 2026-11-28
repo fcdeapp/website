@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.vascular.vte-treatment-principles",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.vascular.vte-treatment-principles.b.29ca5f297b4c",
+      "sourceSha256": "29ca5f297b4cb9f89db226398f5f08319fe240fc8f09593d80325b9d9c1f3015",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.vascular.vte-treatment-principles.b.2329392d5e82",
+      "sourceSha256": "2329392d5e826beecd47ba73a4c5c1be83b3e658822128aae679a1942f0ac9f3",
+      "sourceLengthUtf16": 198,
+      "annotations": [
+        {
+          "id": "ann.79b51839f4ec1d1498bf",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 76,
+            "end": 79,
+            "exact": "약동학",
+            "prefix": "다. 경구 약물과 주사 약물은 시작 방식과 ",
+            "suffix": ", 모니터링과 중단·역전의 조건이 다르다. "
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.vascular.vte-treatment-principles.b.8b930c5483a7",
+      "sourceSha256": "8b930c5483a7a280df6d75dc5bc65691fb9b7b8d24083ec6487657250e43f707",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.vascular.vte-treatment-principles.b.5cae5768cf95",
+      "sourceSha256": "5cae5768cf95477513605684306179bb70b3e296367109a127a050d9e17e4b8c",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.vascular.vte-treatment-principles.b.7f5a604c1cc0",
+      "sourceSha256": "7f5a604c1cc0c73e22efebebe1d4ac88c0b647c4fb5b6431ed46df73d7651f48",
+      "sourceLengthUtf16": 190,
+      "annotations": [
+        {
+          "id": "ann.9db7001dd82421a7453b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 103,
+            "end": 150,
+            "exact": "초기 치료를 마쳤다는 시점과 연장 치료의 이득·위해를 다시 평가하는 시점은 구별한다.",
+            "prefix": "장기 기능 및 환자의 선호도 영향을 준다. ",
+            "suffix": " 한 기간을 모든 VTE에 기계적으로 적용하"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.vascular.vte-treatment-principles.b.cb4384ef14ce",
+      "sourceSha256": "cb4384ef14cedb8428a87cb64fa868c811432946e67b3fa13d039dbb2f68a054",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.595a090e230da2a79e95",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 79,
+            "end": 134,
+            "exact": "작은 출혈과 중요한 장기·지속 출혈의 원인을 구별하고 무분별한 중단과 불필요한 지속 모두를 피한다.",
+            "prefix": " 낙상·생활 변화가 균형을 바꿀 수 있다. ",
+            "suffix": " 항응고 중 새 통증·부종·호흡곤란이 생기면"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.vascular.vte-treatment-principles.b.7dcb922c3c1b",
+      "sourceSha256": "7dcb922c3c1b6a7dd68ace5c8467a70ad8fbf7d1c67c58145bcf6aa0f2ef5e6d",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.vascular.vte-treatment-principles.b.815a968b9e6b",
+      "sourceSha256": "815a968b9e6bde9ef85ca927a41da719b24474c410a5ae2df14826b3a61ef786",
+      "sourceLengthUtf16": 211,
+      "annotations": [
+        {
+          "id": "ann.fc12abdd12d4373f3951",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 169,
+            "end": 211,
+            "exact": "약물의 선택만큼 복약과 추적을 지속할 수 있는 조건을 만드는 것이 중요하다.",
+            "prefix": " 지속하는 이유와 재평가 계획을 설명한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

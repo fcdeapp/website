@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "심실세동과 심정지 리듬",
+    "en": "Ventricular Fibrillation and Cardiac Arrest Rhythms"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.lo.01",
+      "text": "전기적 활성과 유효 순환을 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.lo.02",
+      "text": "제세동과 동기화 전환의 차이를 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.lo.03",
+      "text": "충격 가능·불가능 리듬을 구분한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.a0f2eb86b4d1",
+      "type": "heading",
+      "level": 2,
+      "text": "전기적 활동과 펌프 기능"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.bf3a0e345158",
+      "type": "paragraph",
+      "markdown": "심실세동(ventricular fibrillation, VF)은 심실 활성화가 정상적인 순서와 협동을 잃어 유효한 박출이 이루어지지 않는 치명적 리듬이다. 체표에서 빠르게 흔들리는 전기 신호가 보인다고 심실이 그 횟수만큼 유효하게 수축하는 것은 아니다. 여러 부위가 서로 다른 시점에 활성화되어 공동 압력을 만들지 못하는 것이 핵심이다. 급성 허혈과 심근병증, 전해질 이상 및 여러 전기적 질환이 관련될 수 있다. 한 번 소생한 뒤에도 시작 원인을 별도로 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.ae9fc1a25db9",
+      "type": "paragraph",
+      "markdown": "심정지는 리듬 이름만이 아니라 반응과 호흡, 순환의 부재를 임상적으로 인식하는 상황이다. 모니터의 조직화된 신호가 있어도 유효 맥박이 없을 수 있으며, 움직임이나 전극 접촉 문제는 위험 리듬처럼 보이는 잡음을 만들 수 있다. 따라서 환자의 상태와 모니터를 함께 평가한다. 불필요하게 긴 리듬 분석으로 순환 보조가 중단되면 뇌와 심근의 관류가 악화될 수 있다. 전기적 판독과 실제 환자 평가의 시간적 균형이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.838271b27454",
+      "type": "heading",
+      "level": 2,
+      "text": "충격의 목적"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.5109ae537f08",
+      "type": "paragraph",
+      "markdown": "제세동(defibrillation)은 광범위한 심근을 동시에 활성화하여 세동을 유지하는 파의 진행을 끊고 조직화된 리듬이 회복될 기회를 만드는 처치다. 무맥성 심실빈맥과 심실세동은 심정지에서 충격 가능 리듬으로 분류된다. 충격이 전달되었다는 사실만으로 자발순환 회복이 확정되는 것은 아니다. 이후의 전기적 리듬과 유효 순환을 다시 평가하고 소생을 계속한다. 충격 에너지와 세부 순서는 장비 및 적용 소생 지침에 맞춰야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.ca823e02e33a",
+      "type": "paragraph",
+      "markdown": "동기화 심율동전환(synchronized cardioversion)은 QRS와의 시간을 맞추어 충격을 전달하는 방식으로, 맥박이 있는 특정 빈맥에서 사용한다. 재분극의 취약한 시점에 자극이 가는 위험을 줄이려는 목적이 있다. 심실세동에서는 안정적인 QRS 기준점 자체가 없어 같은 동기화 방식을 기다릴 수 없다. 다형성 리듬에서도 신뢰할 동기화가 어려울 수 있다. 전기적 충격을 준다는 공통점만으로 두 방식을 동일시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.d5741179eebb",
+      "type": "heading",
+      "level": 2,
+      "text": "다른 심정지 리듬"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.e909183992d4",
+      "type": "paragraph",
+      "markdown": "무맥성 전기활동(pulseless electrical activity, PEA)은 조직화된 전기 신호가 있으나 유효 맥박이 없는 임상 범주다. 수축을 만들 에너지·대사 환경이 부족하거나 심장 충만과 박출이 기계적으로 제한되는 상황 등 여러 원인이 가능하다. 무수축(asystole)은 심실 전기활동이 보이지 않는 리듬이다. 전극·연결과 신호 조건도 확인해야 한다. 이들은 심실세동과 같은 충격 표적이 아니므로 모든 심정지에 반복 충격을 주는 접근은 적절하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.b.f765bad84017",
+      "type": "paragraph",
+      "markdown": "2025년 AHA 성인 전문소생술의 구분을 학습할 때에는 충격 가능 여부, 고품질 순환 보조와 교정 가능한 원인의 탐색을 연결한다. 저산소증과 혈량 부족, 전해질·대사 이상, 긴장기흉과 압전, 혈전 등은 임상 맥락에 따라 평가한다. 자발순환 회복 뒤에는 원인 심장질환뿐 아니라 호흡·산소화, 혈역학과 뇌 기능 및 재발 위험을 관리한다. 정상 심장 메시의 떨림 애니메이션을 실제 세동의 전기생리나 소생 효과를 검증한 모형으로 표시해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.ventricular-fibrillation-arrest.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "VF·무맥성 VT",
+            "심정지의 충격 가능 리듬"
+          ],
+          [
+            "PEA",
+            "전기 신호 있으나 유효 맥박 없음"
+          ],
+          [
+            "무수축",
+            "심실 전기활동 부재; 연결 확인"
+          ],
+          [
+            "전기적 종료",
+            "자발순환 회복과 별도 확인"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.ventricular-fibrillation-arrest.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.ventricular-fibrillation-arrest.001"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.torsades-long-qt",
+    "cardiology.arrhythmias.antiarrhythmic-risk"
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.neurooncology.mass-pressure",
+  "subjectId": "neurology",
+  "chapterId": "neurooncology",
+  "title": {
+    "ko": "두개내 종괴·부종과 압력의 임상 생리",
+    "en": "Intracranial Mass Edema and Pressure"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.neurooncology.mass-pressure.lo.01",
+      "text": "두개내 용적과 순응도의 관계를 설명한다"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.lo.02",
+      "text": "압력·관류·탈출 위험을 구별한다"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.lo.03",
+      "text": "종괴의 증상과 영상·시술 안전을 통합한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.034ac2631881",
+      "type": "heading",
+      "level": 2,
+      "text": "고정된 공간과 변하는 내용물"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.004a56c04337",
+      "type": "paragraph",
+      "markdown": "성인의 두개강에는 뇌 조직과 혈액·뇌척수액이 공간을 차지한다. 새로운 종괴와 부종이 늘 때 초기에는 다른 구획의 이동과 감소가 용적을 일부 보상할 수 있다. 보상 여지가 줄어들면 같은 용적 증가에도 압력이 더 크게 오를 수 있다. 따라서 용적과 압력의 관계를 모든 상황에서 일정한 기울기의 직선으로 가정하지 않는다. 두개내 순응도(compliance)는 용적 변화에 대한 압력 반응의 성질이며, 환자의 실제 위험을 판단하려면 원인과 시간·구획을 함께 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.2680e7630280",
+      "type": "paragraph",
+      "markdown": "느리게 자란 종양과 급성 출혈은 같은 크기라도 임상 양상이 다를 수 있다. 병변의 위치와 주변 부종, 뇌척수액 흐름과 정맥 배출, 기존 조직 상태도 영향을 준다. 양성 조직형이라는 말은 두개내에서 무해하다는 뜻이 아니다. 작은 병변도 중요한 통로와 구조를 압박하면 시각·호흡과 내분비, 의식과 운동 기능을 위협할 수 있다. 반대로 우연히 발견한 작은 병변이 모든 두통과 인지 변화의 원인인 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.71540d73530f",
+      "type": "heading",
+      "level": 2,
+      "text": "압력과 관류는 다른 지표다"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.76edce4ddb2d",
+      "type": "paragraph",
+      "markdown": "뇌관류압(cerebral perfusion pressure, CPP)을 평균동맥압과 두개내압의 차이로 근사하는 식은 공급 압력의 관계를 이해하게 한다. 가상 자료에서 평균동맥압이 90mmHg, 두개내압이 20mmHg이면 차이는 70mmHg다. 그러나 이 차이만으로 실제 뇌혈류와 산소 이용이 충분하다고 확정할 수 없다. 혈관 저항과 자동조절, 정맥 압력과 측정 기준, 지역별 손상과 전신 상태가 중요하다. 환자별 치료 목표와 안전 경계를 이 단순 계산으로 정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.25ac4e42d050",
+      "type": "paragraph",
+      "markdown": "평균 압력이 같아도 구획 사이의 압력 차이와 조직의 이동이 위험할 수 있다. 뇌탈출(herniation)은 단순히 전체 압력이 높다는 말보다 특정 경계와 통로를 넘어 조직이 이동하며 구조를 압박하는 과정으로 이해한다. 의식의 급격한 변화와 동공·안구운동, 새로운 운동과 호흡 소견은 신속한 평가가 필요하다. 한 가지 고전적인 징후가 나타날 때까지 기다려서는 안 된다. 관찰 소견과 원인·영상, 현재의 전신 기능을 통합한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.7dfb36316dd4",
+      "type": "heading",
+      "level": 2,
+      "text": "두통·구토와 국소 소견"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.a482e38220b4",
+      "type": "paragraph",
+      "markdown": "두개내 종괴는 국소 신경 기능의 장애, 발작, 두통과 구토, 인지·행동과 성격 변화 등으로 나타날 수 있다. 두통의 특정 시간대나 형태만으로 종양을 진단하지 않는다. 진행하는 양상과 새 신경 소견, 암·면역 저하의 배경과 전신 증상을 확인한다. 유두부종(papilledema)은 두개내압 상승과 관련된 중요한 소견이지만 안저 소견 하나만으로 모든 압력과 원인이 정해지지는 않는다. 시각 증상과 안구·신경 평가를 함께 시행한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.73040c754422",
+      "type": "paragraph",
+      "markdown": "병변의 위치 가설은 운동·감각·언어·시야와 안구운동, 보행과 뇌신경 소견에서 만든다. 발작 뒤 일시적 약화와 약물 진정, 대사 이상이 관찰을 바꿀 수도 있다. 주변 부종과 기능적 연결의 영향 때문에 증상이 종괴의 경계와 정확히 일치하지 않을 수 있다. 진찰을 영상의 결론에 맞추어 생략하지 않고, 불일치가 있으면 위치와 시간·다른 원인을 다시 검토한다. 국소화와 원인 질환의 확정, 치료 적합성은 서로 다른 판단이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.219497660e02",
+      "type": "heading",
+      "level": 2,
+      "text": "영상과 침습적 검사의 순서"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.1a040cf492bc",
+      "type": "paragraph",
+      "markdown": "CT와 MRI는 각각 속도와 촬영 조건, 출혈·구조와 조직 특성에 대한 정보를 제공한다. 조영 증강은 장벽·혈관과 조직의 성질을 반영하는 소견이지 악성도와 같은 단일 값이 아니다. 확산과 관류, 뇌척수액 통로와 압박의 양상도 질문에 맞추어 해석한다. 촬영 중 움직임과 기존 수술·치료, 스테로이드 같은 약물의 영향을 확인한다. 영상의 전형적인 모양만으로 조직과 분자 진단을 모두 대체하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.7fafc1bc1c76",
+      "type": "paragraph",
+      "markdown": "요추천자와 다른 침습적 검사는 얻을 정보와 두개내 상태·출혈 및 감염 위험을 함께 고려한다. 종괴와 압력 차이가 의심되는 상황에서 뇌척수액을 채취하는 것이 언제나 안전한 것은 아니다. 반대로 모든 신경 증상에서 무조건 같은 영상·천자 순서를 적용하는 것도 적절하지 않다. 임상적 질문과 시급성, 금기와 대안, 전문 평가를 통합한다. 확진 검사보다 먼저 다루어야 할 호흡·순환·발작과 의식의 위해를 놓치지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.bb27f40fe218",
+      "type": "heading",
+      "level": 2,
+      "text": "치료 목표의 구분"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.5ce8d13077c2",
+      "type": "paragraph",
+      "markdown": "종괴를 줄이는 치료와 주변 부종·압력의 치료, 발작과 통증·내분비 기능의 관리는 서로 다른 목표를 가진다. 스테로이드는 일부 종양 관련 부종에서 역할이 있을 수 있지만 모든 뇌부종과 두개내 손상의 공통 해법은 아니다. 원인과 적용 근거, 감염·혈당과 다른 위해를 검토한다. 조직 진단이 필요한 질환에서는 치료 전후의 순서가 진단 수율에 영향을 줄 수도 있다. 약물의 즉각적인 증상 개선을 종양 소실과 동일하게 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.b.e9437eb12830",
+      "type": "paragraph",
+      "markdown": "추적에서는 영상의 크기와 실제 신경 기능, 환자의 생활·치료 부담을 나누어 기록한다. 치료 뒤 새로운 변화는 재발뿐 아니라 부종과 출혈·감염, 치료 관련 손상과 약물의 영향도 고려한다. 정상 뇌·뇌실·뇌간의 모형은 압박될 수 있는 위치 관계를 이해하는 배경이다. 실제 종양과 부종, 뇌탈출의 변형은 포함하지 않으므로 정상 구조를 질환 모형이라고 표시하지 않는다. 환자의 영상과 기능은 독립적인 근거로 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neuroanatomy.brainstem.levels-localization.brainstem-levels"
+      ]
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.table0855",
+      "type": "table",
+      "data": {
+        "title": "관찰과 확인할 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "새 변화",
+            "의식·동공"
+          ],
+          [
+            "가상 MAP",
+            "90mmHg"
+          ],
+          [
+            "가상 ICP",
+            "5·10·15·20·25·30mmHg"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.diagram.hypothetical-cpp-0855",
+      "type": "diagram",
+      "diagramRef": "diagram.hypothetical-cpp-0855",
+      "path": "diagrams/diagram.hypothetical-cpp-0855.svg",
+      "alt": "고정 MAP의 CPP 근사의 독립 계산 곡선"
+    },
+    {
+      "id": "neurology.neurooncology.mass-pressure.3d0855",
+      "type": "anatomy3d",
+      "sceneRef": "scene.neuroanatomy.brainstem.levels-localization.brainstem-levels"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/neurooncology/sections/neurology.neurooncology.mass-pressure.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.neurooncology.mass-pressure.001",
+    "question.neurology.neurooncology.mass-pressure.002"
+  ],
+  "relatedLessons": [
+    "neurology.neurooncology.integrated-tumor-diagnosis",
+    "neurology.spinal.myelopathy-cauda-equina"
+  ]
+}

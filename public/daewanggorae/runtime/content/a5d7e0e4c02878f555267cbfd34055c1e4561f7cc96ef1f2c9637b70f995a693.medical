@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.memory.vaccine-response-layers",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.memory.vaccine-response-layers.b.4ab6de0af6ab",
+      "sourceSha256": "4ab6de0af6abdef17f1b7a9b9783236e02455f4506845a96a4220ce1360543c7",
+      "sourceLengthUtf16": 208,
+      "annotations": [
+        {
+          "id": "ann.8f9e0df3dd25ce83181b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 179,
+            "end": 208,
+            "exact": "병원체의 진입 속도와 위치, 항원의 변화가 중요하다.",
+            "prefix": "서 감염을 완전히 막는다는 보장도 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.memory.vaccine-response-layers.b.b92fa63868c9",
+      "sourceSha256": "b92fa63868c9e0146968b14a0b06be2feeacaac39e71d0514b055ec3b04ce481",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.memory.vaccine-response-layers.b.c8659e2c5e9c",
+      "sourceSha256": "c8659e2c5e9c45e1cedc34086bff97b028a6644ca05621256591e930a81209de",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.memory.vaccine-response-layers.b.2acf51291259",
+      "sourceSha256": "2acf51291259a1816ccddae337db30cdee5fadc82487b4a79cbf9feef53c18ee",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.memory.vaccine-response-layers.b.bc8eab2c9efd",
+      "sourceSha256": "bc8eab2c9efdec6b59961e65bc1722c50ed86c26b2d8a6da6b1758324d751be2",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.memory.vaccine-response-layers.b.0edc794bae39",
+      "sourceSha256": "0edc794bae39ff929d00b9af116c70176c5e12b2918b4e4c7d4cb884b928dd6b",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.memory.vaccine-response-layers.b.d8c2289118ac",
+      "sourceSha256": "d8c2289118ac3a0ab474ff481d2f2c657c3b77aa44341851449dba4de58c0f57",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.27d00eac702b1f554e01",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 80,
+            "end": 84,
+            "exact": "항원제시",
+            "prefix": "는 단순히 항체량만 늘리는 첨가물이 아니라 ",
+            "suffix": "세포와 국소 환경을 바꾸는 데 기여할 수 있"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.memory.vaccine-response-layers.b.cee172061b75",
+      "sourceSha256": "cee172061b7512db0e1c0957daa85a7f352ef3ae2cb972c6d11b9126a7431aec",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.fde176f25479c11252e8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 56,
+            "end": 85,
+            "exact": "채혈 시점이 초기 peak인지 안정기인지도 중요하다.",
+            "prefix": "증식과 실제 보호 결과를 나누어 측정한다. ",
+            "suffix": " 시간에 따른 농도 감소만으로 기억이 사라졌"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

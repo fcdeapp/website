@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-symptom-followup-0852",
+  "lessonId": "psychiatry.mood.depression-longitudinal",
+  "title": "독립 가상 증상 추적 점수",
+  "series": [
+    {
+      "label": "학습용 점수",
+      "samples": [
+        {
+          "x": 0,
+          "y": 20
+        },
+        {
+          "x": 2,
+          "y": 17
+        },
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 10
+        },
+        {
+          "x": 8,
+          "y": 8
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "weeks": [
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "scores": [
+      20,
+      17,
+      14,
+      10,
+      8
+    ],
+    "notPublishedScaleOrTreatmentEffect": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 8,
+      "scale": "linear",
+      "ticks": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "label": "추적 시간(주)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 24,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        6.0,
+        12.0,
+        18.0,
+        24.0
+      ],
+      "label": "임의 증상 점수"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "학습용 점수",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·정상치·검사성능·진단·투약·치료효과와 안전 기준을 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

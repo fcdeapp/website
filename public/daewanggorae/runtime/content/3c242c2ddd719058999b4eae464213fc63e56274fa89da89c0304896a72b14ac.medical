@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.diagnosis.serial-tests",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.diagnosis.serial-tests.b.5febe524715d",
+      "sourceSha256": "5febe524715dedaade59f07a7aec587905b940289a81993daf0d4f28e1c6e07e",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.serial-tests.b.37fd7e56bf88",
+      "sourceSha256": "37fd7e56bf885260b42898581a6a2e6671f88dc1ed7470e3ba4b49a9fc23eb2e",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.fae4cf481dad3a5d3d00",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 126,
+            "end": 129,
+            "exact": "ACS",
+            "prefix": "기 위한 조건이며 실제 troponin이나 ",
+            "suffix": " 경로의 성능이 아니다. 임상에서 특정 경로"
+          },
+          "conceptId": "reader.term.da81b428602d1aae",
+          "targetDocumentId": "cardiology.ischemia.acute-coronary-syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.serial-tests.b.fa4c7e96b92b",
+      "sourceSha256": "fa4c7e96b92bc40b916ba4e12c561ecf0115e4b30d6587311350bda268df8f43",
+      "sourceLengthUtf16": 161,
+      "annotations": [
+        {
+          "id": "ann.2ca8e28dae7bac648476",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 67,
+            "end": 102,
+            "exact": "증상 시작과 채혈 시점, 새 증상의 발생 시간을 구별해야 한다.",
+            "prefix": "상승과 하강은 첫 값과 다른 정보를 준다. ",
+            "suffix": " 첫 채혈 뒤 새 폐색이 생긴 상황을 같은 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.serial-tests.b.c2cc2d094cf6",
+      "sourceSha256": "c2cc2d094cf639046bbaf2f2636c5b54a764b5d5edd9802455503464f2806a46",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.serial-tests.b.c67b8db0112b",
+      "sourceSha256": "c67b8db0112b9b313f71ca90894ff80bc722c7c0a4b0fdfc8a9a43dddcee435f",
+      "sourceLengthUtf16": 164,
+      "annotations": [
+        {
+          "id": "ann.f1936c5d91062e1cbf9b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 133,
+            "end": 164,
+            "exact": "단일 검사의 성능을 임의로 연결한 산술과 구별해야 한다.",
+            "prefix": "간과 값의 조합에서 성능을 검증한 도구다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.serial-tests.b.598594d0548a",
+      "sourceSha256": "598594d0548aaf17cba5524f4ba3bd9b71f03a87716d29f8c3e90da466995e16",
+      "sourceLengthUtf16": 164,
+      "annotations": [
+        {
+          "id": "ann.97c32b7aa694e9f157c7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 68,
+            "end": 111,
+            "exact": "두 자료의 일치는 중요하지만 단순한 확률 곱으로 전체 위험을 확정하지 않는다.",
+            "prefix": "혈과 시간 경과가 두 검사에 영향을 준다. ",
+            "suffix": " 서로 다른 측정 수준을 통합하되 적용하려는"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.serial-tests.b.0df407bd9d0a",
+      "sourceSha256": "0df407bd9d0a5b87e9a35c9b9ab564f783d91ad0fbcdd036f9d960bff17e587d",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.serial-tests.b.2e1d2d036df3",
+      "sourceSha256": "2e1d2d036df3a124c24e3ee9f1dc85e9c01ab2e0e9e2afb53a25816ad3d80fcd",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    }
+  ]
+}

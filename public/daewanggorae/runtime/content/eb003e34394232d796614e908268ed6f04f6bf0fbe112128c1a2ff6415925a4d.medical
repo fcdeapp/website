@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-isometric-force-0853",
+  "lessonId": "neuroscience.motor-unit.recruitment-fatigue",
+  "title": "가상 반복 등척성 힘",
+  "series": [
+    {
+      "label": "측정 힘",
+      "samples": [
+        {
+          "x": 1,
+          "y": 100
+        },
+        {
+          "x": 2,
+          "y": 95
+        },
+        {
+          "x": 3,
+          "y": 92
+        },
+        {
+          "x": 4,
+          "y": 90
+        },
+        {
+          "x": 5,
+          "y": 88
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "trials": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "force_N": [
+      100,
+      95,
+      92,
+      90,
+      88
+    ],
+    "notLesionLocalization": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 5,
+      "scale": "linear",
+      "ticks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "반복 회차"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 120,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        30.0,
+        60.0,
+        90.0,
+        120.0
+      ],
+      "label": "힘(N)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "측정 힘",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정 또는 가상 증례 자료다. 실제 환자·정상 범위·검사 기준·진단·투약·치료효과와 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

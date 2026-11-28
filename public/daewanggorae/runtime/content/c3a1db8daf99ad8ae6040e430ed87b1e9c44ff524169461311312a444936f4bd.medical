@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.inflammation.opsonin-phagolysosome",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.inflammation.opsonin-phagolysosome.b.6d2abb3ddb45",
+      "sourceSha256": "6d2abb3ddb45d60770c2d311bc5a6d84d9f2ccd785b7830d1df44320fb438432",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.944e1d5666633cf98170",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 97,
+            "end": 99,
+            "exact": "보체",
+            "prefix": "를 직접 인식하거나, 표적에 결합한 항체와 ",
+            "suffix": "를 인식하여 효율적으로 포식한다. 표적을 감"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.opsonin-phagolysosome.b.3192076a1b5f",
+      "sourceSha256": "3192076a1b5fac18d6d97d54b50fa3797050c4eb0c5db67f8bdfd53320d457df",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.b5996496a6ac9699ac01",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 138,
+            "end": 213,
+            "exact": "항체가 존재한다는 사실만으로 모든 미생물이 동일한 효율로 제거되는 것은 아니며 항체의 특성, 표적 접근성과 세포 기능이 함께 중요하다.",
+            "prefix": "체와 보체가 함께 있으면 경로가 협력한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.opsonin-phagolysosome.b.7e56d15d05d3",
+      "sourceSha256": "7e56d15d05d36fb4982907ab14d0187238d4926c5ddf3498b2abc914aff38b86",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.opsonin-phagolysosome.b.e66c4991ad18",
+      "sourceSha256": "e66c4991ad18e9b03eb99399b7a092ccf594fd08ff4ee3bdc7bf15940c051f59",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.opsonin-phagolysosome.b.3e86d3cbcc09",
+      "sourceSha256": "3e86d3cbcc09ba9365b8e88a1f5800e8bf0328cd708ef8d53af86bff949729ae",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.opsonin-phagolysosome.b.8d5ae9afad8c",
+      "sourceSha256": "8d5ae9afad8cebaee41e95948e96901b01b6cb2372b39f6d060aa2fea7e8cb68",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.opsonin-phagolysosome.b.df5ca6649d7c",
+      "sourceSha256": "df5ca6649d7c82d2de2cf97f99bede14d839f00ba67df309d09ecb61c9de591d",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.5ca9e052d691c6917e63",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 87,
+            "end": 126,
+            "exact": "섭취한 미생물 수와 시간에 따른 살아 있는 미생물 수를 구별해야 한다.",
+            "prefix": "는 사실은 제거에 성공했다는 뜻이 아니다. ",
+            "suffix": " 표적의 형광 신호는 죽은 미생물에서도 남을"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.opsonin-phagolysosome.b.983cc89d8e89",
+      "sourceSha256": "983cc89d8e89314d319e41c86af81c6766361cab111478169f593a7e515a8aea",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.5194c614b43260f6477a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 23,
+            "end": 28,
+            "exact": "항원 제시",
+            "prefix": "수지상세포와 대식세포에서는 단백질 분해가 ",
+            "suffix": "와도 연결된다. 완전한 분해를 극대화하는 목"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    }
+  ]
+}

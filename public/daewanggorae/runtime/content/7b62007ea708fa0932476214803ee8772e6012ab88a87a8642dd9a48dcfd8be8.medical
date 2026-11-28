@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "electrolytes.acid-base.systematic-analysis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.4bea37426909",
+      "sourceSha256": "4bea37426909d6824e9c1424e2589fe3f114f8d45ad2d0815c8c98f747a67348",
+      "sourceLengthUtf16": 258,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.3387b0559c4d",
+      "sourceSha256": "3387b0559c4dc8d35fda5d15c94572219725e989f27e6e5ac9c572bb51e7a02e",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.6df6c64766ca",
+      "sourceSha256": "6df6c64766cab4aac58fb1d65c00cd8c506af232f8cad234daec303679efbab5",
+      "sourceLengthUtf16": 299,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.68c2e1108f4b",
+      "sourceSha256": "68c2e1108f4baa9b10122a1b34ac3ce8e8005bbea26164c96bf901f5ea2a6479",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.dad09911672a",
+      "sourceSha256": "dad09911672a8afce71818068405cb6888ac2815ec521b4661350147c696f27b",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.d48e25104d442e31b4fd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 104,
+            "end": 162,
+            "exact": "이때 혈액으로 돌아가는 중탄산염은 이미 여과된 것을 되찾는 것이므로 새로운 중탄산염의 순생성과 구분한다.",
+            "prefix": " 안으로 들어가 다시 중탄산염을 형성한다. ",
+            "suffix": " 여과 중탄산염을 소변으로 잃으면 그만큼 체"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.ea463524e2ff",
+      "sourceSha256": "ea463524e2ffcee83d3e47aa422e77e62cd596ec65e2094018d5a483270a7996",
+      "sourceLengthUtf16": 258,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.96b58e2fc581",
+      "sourceSha256": "96b58e2fc5810af9faa1818a56a60ed77f1433ffa8d64fe9d071dd664c1587aa",
+      "sourceLengthUtf16": 248,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.272bc1070492",
+      "sourceSha256": "272bc1070492fe4f3edb64a35845979de6f6825af9597066642146d27bf83cd7",
+      "sourceLengthUtf16": 260,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.41d551c21e9a",
+      "sourceSha256": "41d551c21e9a79e53c6df56ee9a5c5adb8feb5b6517bb9ac2b459546432c24b8",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.d2b58e3640c0",
+      "sourceSha256": "d2b58e3640c05029a0a5c5200599a86c403762579afeb9d3a96491384863c96e",
+      "sourceLengthUtf16": 250,
+      "annotations": [
+        {
+          "id": "ann.09b9c3e35ecb04369f1d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 19,
+            "exact": "알부민은 중요한 미측정 음이온이다.",
+            "prefix": "",
+            "suffix": " 저알부민혈증에서는 기저 음이온차가 낮아져 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.c8b615434e25",
+      "sourceSha256": "c8b615434e2552db52953e1965dc58b3c8582cb06081732819817ad12496861c",
+      "sourceLengthUtf16": 256,
+      "annotations": [
+        {
+          "id": "ann.52b0eb84a79d37b465f0",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 184,
+            "end": 189,
+            "exact": "알도스테론",
+            "prefix": "서는 원위 산성화가 손상된다. 제4형에서는 ",
+            "suffix": "의 부족이나 작용 저하 및 고칼륨혈증과 연관"
+          },
+          "conceptId": "reader.term.2dbad37f3f8aa1cf",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.d6d716d638af950787a0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 177,
+            "end": 231,
+            "exact": "제4형에서는 알도스테론의 부족이나 작용 저하 및 고칼륨혈증과 연관된 암모늄 배설 저하가 중요하다.",
+            "prefix": "고, 원위형에서는 원위 산성화가 손상된다. ",
+            "suffix": " 칼륨 방향과 임상 배경을 함께 보아야 한다"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.01fece340050",
+      "sourceSha256": "01fece340050432a78dd3fbfff10c7320e91778df95c89a5cc0aa23e5316c5bf",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.acid-base.systematic-analysis.b.10735999e0a6",
+      "sourceSha256": "10735999e0a61691b0ef3345cd16d40b5d2f6ff6c979f79576561bf6999132ec",
+      "sourceLengthUtf16": 235,
+      "annotations": []
+    }
+  ]
+}

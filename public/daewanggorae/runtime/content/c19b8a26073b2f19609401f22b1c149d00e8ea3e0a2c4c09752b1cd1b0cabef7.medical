@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.cholinergic-target-pairs",
+  "lessonId": "pharmacology.autonomic.direct-cholinergic-agonists",
+  "title": "콜린성 약물의 작용 위치",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "직접 작용제",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "수용체 활성화",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "효소 억제제",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "ACh 분해 감소",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "항무스카린제",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "무스카린 반응 차단",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.cholinergic-target-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "약물별 선택성",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cholinergic-target-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "수용체 직접 자극과 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cholinergic-target-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "니코틴 표적과 구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "실제 치료 순서·중독 대응 용법을 표시하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

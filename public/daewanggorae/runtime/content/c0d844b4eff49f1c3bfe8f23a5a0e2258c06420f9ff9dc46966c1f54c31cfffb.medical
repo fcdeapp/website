@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.neoplasia.invasion-metastasis",
+  "subjectId": "pathology",
+  "chapterId": "neoplasia",
+  "title": {
+    "ko": "종양 침윤과 전이의 단계",
+    "en": "Tumor Invasion and the Metastatic Cascade"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.lo.01",
+      "text": "침윤과 원격 전이를 구별한다"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.lo.02",
+      "text": "기질 이동·혈관 진입·생존·정착의 연결을 설명한다"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.lo.03",
+      "text": "전이 단계의 단순 확률 모형을 실제 위험과 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.5bde9927037e",
+      "type": "heading",
+      "level": 2,
+      "text": "경계를 넘는 성장과 먼 부위의 정착"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.1ebdfc021be6",
+      "type": "paragraph",
+      "markdown": "침윤(invasion)은 종양세포가 원래의 조직 경계를 넘어 주변 조직으로 들어가는 과정이다. 전이(metastasis)는 원발 부위에서 떨어진 곳에 종양이 형성되는 현상으로,단순한 인접 확장과 구별한다. 상피 종양에서 기저막과 지지 기질의 관계는 침윤을 판정하는 중요한 구조적 맥락이다. 그러나 모든 종양의 경계와 분류가 상피암과 같지는 않으며 병리 판정에는 종양 종류·조직·표본의 기준이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.3d28d0c4f2d2",
+      "type": "paragraph",
+      "markdown": "원발 종양의 크기와 전이 가능성은 관련될 수 있지만 같은 변수는 아니다. 작은 병변도 전이가 가능하고 큰 종괴가 반드시 같은 정도의 원격 진행을 보이는 것은 아니다. 세포의 분자적 상태,주변 기질,혈관과 면역 환경,관찰 시점이 영향을 준다. 국소 침윤·림프혈관 침범·전이 병변의 관찰은 서로 다른 정보이며 하나가 나머지를 자동으로 모두 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.bd221e464452",
+      "type": "heading",
+      "level": 2,
+      "text": "접착과 기질의 재편"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.bdc23b23e56d",
+      "type": "paragraph",
+      "markdown": "종양세포가 이동하려면 세포 사이 접착과 극성,세포골격,기질과의 상호작용이 변한다. Cadherin·integrin 계통은 서로 다른 연결을 매개하고,단백질분해효소와 기질 재배열은 이동 경로와 국소 신호를 바꿀 수 있다. 세포가 기질을 분해한다는 설명만으로 침윤 전체가 완성되지는 않는다. 이동 방식과 조직의 물리적 제약,여러 세포의 협동을 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.0d9fb803423a",
+      "type": "paragraph",
+      "markdown": "상피–간엽 전환(epithelial–mesenchymal transition, EMT)은 극성과 접착·이동 성질의 변화를 이해하는 한 틀이다. 실제 종양에서는 완전한 두 상태만 존재하기보다 부분적 상태와 가역성,집단 이동이 관찰될 수 있다. 한 표지자의 감소나 증가를 모든 침윤과 전이의 필수·충분 조건으로 쓰지 않는다. 분화 표지와 기능적 이동 능력의 측정은 다른 질문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.49d5b14ee108",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관 진입과 순환 생존"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.fcdf9449a4b2",
+      "type": "paragraph",
+      "markdown": "혈관내 진입(intravasation)은 종양세포가 혈관 또는 림프관 안으로 들어가는 과정이다. 내피·기저막·주변세포와의 상호작용,혈관의 비정상 구조와 면역세포의 신호가 영향을 줄 수 있다. 순환에 들어간 세포는 전단력·부착 소실·면역 감시 등의 환경을 만난다. 혈소판과 다른 세포와의 상호작용이나 세포 집단의 상태는 생존과 이동에 영향을 줄 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.4a9c2e0e592f",
+      "type": "paragraph",
+      "markdown": "순환종양세포(circulating tumor cell, CTC)가 검출되었다는 사실과 실제로 원격 전이가 형성되었다는 판정은 같지 않다. 검출법·표지자·채혈량과 시간에 따라 민감도가 달라지고,모든 검출 세포가 정착 능력을 갖는 것은 아니다. 반대로 검체에서 보이지 않았다고 모든 조직의 미세 전이를 배제할 수 없다. 혈중에서 세포를 측정한 결과와 영상·조직에서 병변을 확인한 결과를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.5ba7a3c43988",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관 밖 이동과 장기 선호성"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.6a3d9a786442",
+      "type": "paragraph",
+      "markdown": "혈관외 유출(extravasation) 뒤에도 새로운 조직에서 살아남고 성장해야 전이 병변이 형성된다. 혈류의 해부학적 경로는 도착 가능성에 영향을 주지만 장기 선호성을 전부 설명하지는 못한다. 국소 수용체·케모카인·기질·영양과 면역 환경,원발 종양이 바꾼 원격 미세환경이 정착에 관여할 수 있다. 씨앗과 토양(seed and soil)이라는 비유는 이러한 상호 의존을 나타내는 개념적 틀이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.02b47d8d0260",
+      "type": "paragraph",
+      "markdown": "도착한 세포가 휴면(dormancy) 상태로 남거나 제거되고,일부만 나중에 증식할 수 있다. 따라서 원발 병변 치료 뒤 시간차를 두고 나타나는 재발을 단순히 같은 속도의 연속 지수성장만으로 설명하기 어렵다. 유전적 클론 선택과 가소성,환경 변화가 함께 관여한다. 원발과 전이 병변은 공통 기원을 가지면서도 분자 구성이 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.9983688d3d36",
+      "type": "heading",
+      "level": 2,
+      "text": "표본과 단계 자료의 해석"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.595c1651e2a1",
+      "type": "paragraph",
+      "markdown": "기질 내 종양세포,혈관 내 종양색전,림프절 또는 원격 병변은 다른 위치의 관찰이다. 절제 표본의 일부만 검사했다면 표본추출과 절단면의 한계를 고려한다. 전이 병변의 조직형과 면역·분자 검사는 원발 기원을 추론하는 데 도움을 주지만 모든 소견이 단독으로 특이적인 것은 아니다. 특정 암의 병기와 전이 평가에는 암종별 기준이 필요하며 이 일반 기전이 이를 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.b.9afb14f99221",
+      "type": "paragraph",
+      "markdown": "가상 독립 단계 모형에서10000세포가 출발하고 순환 생존0.1,혈관 밖 도달0.2,정착0.01의 조건부 분율을 순차로 두면 최종 기대수는2다. 각 분율은 바로 앞 단계를 통과한 집단을 분모로 한다. 실제로 단계들은 독립적이지 않고 세포들이 서로 영향을 주며 검출 확률도 따로 존재한다. 따라서 이 곱은 분모·병목을 익히는 교육용 계산이지 환자의 전이 확률이나 실제 종양세포 수를 예측하는 값이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.diagram.metastatic-colonization-example",
+      "type": "diagram",
+      "diagramRef": "diagram.metastatic-colonization-example",
+      "path": "diagrams/diagram.metastatic-colonization-example.svg",
+      "alt": "조건부 정착 분율과 기대수의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.diagram.invasion-colonization-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.invasion-colonization-pairs",
+      "path": "diagrams/diagram.invasion-colonization-pairs.svg",
+      "alt": "전이의 다른 단계의 단계별 비교"
+    },
+    {
+      "id": "pathology.neoplasia.invasion-metastasis.table.compare",
+      "type": "table",
+      "data": {
+        "title": "전이의 관찰 층",
+        "columns": [
+          "층",
+          "질문"
+        ],
+        "rows": [
+          [
+            "침윤",
+            "주변 경계·기질 통과"
+          ],
+          [
+            "혈관 진입/유출",
+            "이동 경로"
+          ],
+          [
+            "순환 검출",
+            "표본 내 세포·분자"
+          ],
+          [
+            "정착",
+            "원격 조직의 생존·성장"
+          ]
+        ],
+        "notes": "기전·정의의 비교이며 실제 진단·치료 판정은 별도 근거가 필요하다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/neoplasia/sections/pathology.neoplasia.invasion-metastasis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "침윤·순환 검출·원격 정착은 서로 다른 관찰이다."
+  ],
+  "relatedLessons": [
+    "pathology.neoplasia.microenvironment-angiogenesis",
+    "pathology.genetic.molecular-diagnostics"
+  ],
+  "reviewQuestions": [
+    "question.pathology.neoplasia.invasion-metastasis.001",
+    "question.pathology.neoplasia.invasion-metastasis.002"
+  ]
+}

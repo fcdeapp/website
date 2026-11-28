@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.blood-loss-rate-0857",
+  "lessonId": "obstetrics.bleeding.postpartum-mechanisms",
+  "title": "시간별 누적량",
+  "series": [
+    {
+      "label": "일정 유출",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 100
+        },
+        {
+          "x": 2,
+          "y": 200
+        },
+        {
+          "x": 3,
+          "y": 300
+        },
+        {
+          "x": 4,
+          "y": 400
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "hypotheticalRateMlPerMinute": 100,
+    "formula": "100*t"
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 4,
+      "scale": "linear",
+      "ticks": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "경과(분)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 500,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        125.0,
+        250.0,
+        375.0,
+        500.0
+      ],
+      "label": "누적량(mL)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "일정 유출",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 자료다. 실제 환자 관찰값, 진단 절단값 또는 처방 기준이 아니다."
+  ],
+  "sourceImageUsed": false
+}

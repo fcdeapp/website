@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-meal-glucose-0849",
+  "lessonId": "gi-surgery.stomach.postgastrectomy-function",
+  "title": "독립 가상 식후 혈당 자료",
+  "series": [
+    {
+      "label": "가상 증례",
+      "samples": [
+        {
+          "x": 0,
+          "y": 90
+        },
+        {
+          "x": 30,
+          "y": 180
+        },
+        {
+          "x": 60,
+          "y": 140
+        },
+        {
+          "x": 90,
+          "y": 80
+        },
+        {
+          "x": 120,
+          "y": 55
+        },
+        {
+          "x": 180,
+          "y": 90
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "empiricalPatientData": false,
+    "interpolation": "straight_lines_between_six_authored_points",
+    "times_min": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      180
+    ],
+    "values_mg_dL": [
+      90,
+      180,
+      140,
+      80,
+      55,
+      90
+    ],
+    "notDiagnosticOrTypicalCurve": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 180,
+      "scale": "linear",
+      "ticks": [
+        0,
+        30,
+        60,
+        120,
+        180
+      ],
+      "label": "식후 시간(min)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 200,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0
+      ],
+      "label": "혈당(mg/dL)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "가상 증례",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "가정을 명시한 독립 교육 자료이며 실제 환자·정상치·투약·수술·시술·보충량·진단 기준을 나타내지 않는다."
+  ],
+  "sourceImageUsed": false
+}

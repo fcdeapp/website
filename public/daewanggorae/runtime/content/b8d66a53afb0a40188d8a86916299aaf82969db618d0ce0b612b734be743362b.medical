@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.inflammation.lipid-amine-mediators",
+  "subjectId": "pathology",
+  "chapterId": "inflammation",
+  "title": {
+    "ko": "히스타민과 지질 매개체의 생성·작용",
+    "en": "Histamine and Lipid Mediators"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.lo.01",
+      "text": "저장 매개체와 새 합성 매개체를 구별한다"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.lo.02",
+      "text": "COX와 lipoxygenase 산물의 기능을 비교한다"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.lo.03",
+      "text": "표적 차단의 효과와 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.188ee67ddf98",
+      "type": "heading",
+      "level": 2,
+      "text": "저장되어 있다가 빠르게 나오는 신호"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.383598bd45cf",
+      "type": "paragraph",
+      "markdown": "히스타민(histamine)은 비만세포 과립 등에서 방출되어 혈관 확장과 투과성 변화에 관여한다. 저장 물질을 내보내는 반응은 새로운 유전자 전사를 거쳐 단백질을 합성하는 반응보다 빠르게 시작할 수 있다. IgE 수용체의 교차결합은 중요한 자극이지만 보체와 조직 손상 등 다른 자극도 비만세포를 활성화한다. 히스타민의 역할을 설명하는 것과 염증의 원인을 알레르기로 확정하는 것은 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.dfccb61e2069",
+      "type": "paragraph",
+      "markdown": "수용체의 종류와 표적 세포에 따라 같은 분자의 결과가 달라진다. H1 관련 신호는 혈관·감각과 기도 등의 반응에 관여하고 다른 수용체는 다른 기능을 조절한다. 항히스타민제가 한 반응을 줄였다고 이후의 모든 사이토카인·지질 매개체 반응까지 사라지는 것은 아니다. 시간과 수용체를 함께 생각해야 약리학적 효과를 정확히 해석할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.3e40afe41deb",
+      "type": "heading",
+      "level": 2,
+      "text": "막지질이 매개체의 재료가 된다"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.4ff3bb5e8c61",
+      "type": "paragraph",
+      "markdown": "세포막 인지질에서 phospholipase A2 등의 작용으로 유리되는 arachidonic acid는 여러 효소 경로의 재료다. Cyclooxygenase(COX) 경로는 prostaglandin과 thromboxane 생성으로 이어지고, lipoxygenase 경로는 leukotriene과 다른 지질 신호에 관여한다. 모든 지질 매개체가 같은 세포에서 같은 비율로 만들어지는 것은 아니며 효소 발현과 세포 간 협력이 산물의 조합을 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.d63cf9cc77c2",
+      "type": "paragraph",
+      "markdown": "Prostaglandin E2(PGE2)는 통각 과민과 발열, 혈관 반응 등에 관여한다. Prostacyclin(PGI2)은 혈관과 혈소판 반응에서 thromboxane A2(TXA2)와 다른 방향의 효과를 가진다. 다만 이들을 무조건 좋은 물질과 나쁜 물질로 나누면 정상 지혈과 장기 보호 기능을 설명할 수 없다. 같은 경로를 넓게 억제하면 염증 억제와 함께 생리적 기능의 변화가 발생할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.88aa322d8f58",
+      "type": "heading",
+      "level": 2,
+      "text": "Leukotriene의 기능도 서로 다르다"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.e06d3489d5b2",
+      "type": "paragraph",
+      "markdown": "Leukotriene B4(LTB4)는 호중구의 모집과 활성에 중요한 유인 신호다. Cysteinyl leukotriene인 LTC4·LTD4·LTE4는 기도 수축과 혈관 투과성 등에서 역할을 한다. 따라서 leukotriene이라는 공통 이름만으로 모든 산물의 표적과 임상 효과를 같게 볼 수 없다. 어떤 효소 또는 수용체를 막는지에 따라 영향을 받는 범위가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.ce09a8acb4e5",
+      "type": "paragraph",
+      "markdown": "COX 억제제가 leukotriene 수용체 길항제와 같은 작용을 하는 것은 아니다. 하나는 기질에서 특정 산물로 가는 효소 경로를, 다른 하나는 산물이 표적에 신호를 전달하는 수용체 단계를 주로 다룬다. 효소 억제와 수용체 차단을 구별하면 약물군별 효과와 교차효과를 논리적으로 예측할 수 있다. 실제 약물 선택과 용량은 이러한 기전 외에 질환별 근거와 환자의 위험을 요구한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.355fe4a30b78",
+      "type": "heading",
+      "level": 2,
+      "text": "종료를 돕는 지질 신호"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.5caad701613d",
+      "type": "paragraph",
+      "markdown": "염증이 가라앉는 과정에는 단순히 염증성 물질의 공급이 끊기는 것 외에도 lipoxin과 resolvin 등 종료 촉진 지질 매개체가 관여한다. 이들 신호는 백혈구의 추가 동원, 죽은 세포의 제거와 조직 회복의 방향을 조절한다. 종료는 수동적 소실만이 아니라 생합성 경로와 수용체 반응이 바뀌는 능동적 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.b.4557ea453abe",
+      "type": "paragraph",
+      "markdown": "매개체를 연구할 때 혈중 농도는 국소 생성량과 같지 않다. 짧은 수명, 주변 세포의 대사와 시료 처리 중 분해가 결과에 영향을 준다. 배양액에 한 물질을 넣어 얻은 효과와 생체에서 여러 물질이 동시에 만들어지는 반응도 다르다. 시간별 시료, 효소 발현과 표적 신호를 함께 확인해야 한 번의 농도 측정으로 반응 전체를 단정하지 않게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.lipid-amine-mediators.table.0822",
+      "type": "table",
+      "data": {
+        "title": "핵심 과정의 비교",
+        "columns": [
+          "과정·지표",
+          "의미"
+        ],
+        "rows": [
+          [
+            "히스타민",
+            "저장 과립에서 빠르게 방출 가능"
+          ],
+          [
+            "PGE2",
+            "통각 과민·발열·혈관 반응 등에 관여"
+          ],
+          [
+            "LTB4",
+            "호중구 유인·활성"
+          ],
+          [
+            "Cysteinyl LT",
+            "기도 수축·투과성 등의 반응"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/sections/pathology.inflammation.lipid-amine-mediators.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.inflammation.lipid-amine-mediators.001"
+  ],
+  "relatedLessons": [
+    "pathology.inflammation.oxidative-killing",
+    "pathology.inflammation.complement-kinin-crossroads"
+  ]
+}

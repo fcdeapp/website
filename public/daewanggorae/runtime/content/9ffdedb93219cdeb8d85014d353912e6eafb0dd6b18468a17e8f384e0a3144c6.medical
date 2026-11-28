@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cell-biology.cell-death.apoptosis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.a044a8e0665f",
+      "sourceSha256": "a044a8e0665fc1662f8b217479d076f229aa85b3a14b54caafab4f07f7d91ac0",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.15cde0356dd91f4e4db3",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 6,
+            "end": 15,
+            "exact": "apoptosis",
+            "prefix": "세포자멸사(",
+            "suffix": ")는 발생·조직 항상성·손상 세포 제거에 관"
+          },
+          "conceptId": "reader.term.712354658cd0ac30",
+          "targetDocumentId": "pathology.cell.injury-death"
+        }
+      ]
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.3323cf3abc12",
+      "sourceSha256": "3323cf3abc121c82ba97afdfc28dc82c30a7b177f5d8a1e6dce27ee155ac3995",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.484f9b87e894",
+      "sourceSha256": "484f9b87e8948324a05d108919fb563831a5e4280ad452eaf95341b0678e5d3d",
+      "sourceLengthUtf16": 276,
+      "annotations": [
+        {
+          "id": "ann.b5ef1c8b3e1361a0aa39",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 107,
+            "exact": "내인성 경로(intrinsic pathway)의 중요한 사건은 미토콘드리아 바깥막 투과성 증가(mitochondrial outer membrane permeabilization, MOMP)다.",
+            "prefix": "",
+            "suffix": " BAX·BAK 같은 효과기와 BH3-onl"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.abdd765a9955",
+      "sourceSha256": "abdd765a995582bf7893b552a4f09d4eec1076e6b06c400b223c12a5709f677d",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.1b59c65bbd9f",
+      "sourceSha256": "1b59c65bbd9f7e9556207c161c7f7dc252420ec9fa4f4e936eb97c08821e97cc",
+      "sourceLengthUtf16": 237,
+      "annotations": [
+        {
+          "id": "ann.b8f69f705a87afddbad0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 203,
+            "exact": "카스페이스는 인산화효소가 아니라 단백질분해효소이며, 효소 전구체의 존재와 활성화된 효소의 작용을 구별해야 한다.",
+            "prefix": " 단백질과 세포 구조가 순차적으로 변한다. ",
+            "suffix": " 단백질 총량만 측정하면 절단과 활성의 변화"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.05095b08c646",
+      "sourceSha256": "05095b08c646c08510aca6a97124d0df59681797d9163b7f858b607036bd8d41",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.83d43bb95478",
+      "sourceSha256": "83d43bb9547868db45b9ef52d9c9166a55fee11abe12cacb0b0abed2fb5d9644",
+      "sourceLengthUtf16": 200,
+      "annotations": [
+        {
+          "id": "ann.7e56d7719ffedfaa1211",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 77,
+            "end": 157,
+            "exact": "수용체에 리간드가 결합하는 것과 효율적인 사멸 복합체가 형성되는 것은 구별해야 하며, 수용체 유형과 세포 내 조절단백질에 따라 결과가 달라진다.",
+            "prefix": "개시 카스페이스8 등의 활성화에 연결된다. ",
+            "suffix": " 모든 TNF 계열 수용체 자극을 즉시 같은"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.3c1304c66526",
+      "sourceSha256": "3c1304c66526a4e65d89d659e4c0ee5ac47d6527b68b4669701802de18f59e15",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.a271d4441850",
+      "sourceSha256": "a271d44418500dc39e009ad20703bedba04273cc52c9cdf3d7b8430aa12bc188",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.f733eeb96204",
+      "sourceSha256": "f733eeb962041313c58402e180f1fa5bdc38f28a062e9f53ed096ad556de05fd",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    },
+    {
+      "blockId": "cell-biology.cell-death.apoptosis.b.41ae7a033e02",
+      "sourceSha256": "41ae7a033e024d701d8f5fe13a52a5a2d94a2fbd17c1c525019feab10e7d3eae",
+      "sourceLengthUtf16": 271,
+      "annotations": []
+    }
+  ]
+}

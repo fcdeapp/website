@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "laboratory-medicine.acid-base.blood-gas-interpretation",
+  "subjectId": "laboratory-medicine",
+  "chapterId": "acid-base",
+  "title": {
+    "ko": "혈액가스분석과 혼합 산염기 이상",
+    "en": "Blood Gas Analysis and Mixed Acid Base Disorders"
+  },
+  "learningObjectives": [
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.lo.01",
+      "text": "pH·이산화탄소·중탄산염의 관계를 설명한다"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.lo.02",
+      "text": "보상 반응과 혼합 장애를 구별한다"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.lo.03",
+      "text": "검체와 산소화 지표의 범위를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.9c617c4fdcf7",
+      "type": "heading",
+      "level": 2,
+      "text": "pH를 결정하는 비율"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.22a9628ebf7c",
+      "type": "paragraph",
+      "markdown": "혈액의 산염기 상태는 수소이온 농도와 완충계, 폐의 이산화탄소 배출 및 신장의 산 배설·중탄산염 조절이 함께 결정한다. 중탄산염 완충계에서는 pH를 중탄산염과 용해 이산화탄소의 비율로 설명할 수 있다. 임상에서 사용하는 근사식은 pH=6.1+log₁₀([HCO₃⁻]/(0.03×PaCO₂))다. 중탄산염은 mmol/L, 이산화탄소분압은 mmHg로 표현한 조건이며 온도와 계수의 전제가 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.63b86d947d5d",
+      "type": "paragraph",
+      "markdown": "분자가 감소하거나 분모가 증가하면 이 비율은 작아져 pH가 내려가는 방향으로 작용한다. 반대로 중탄산염이 증가하거나 이산화탄소분압이 감소하면 pH가 올라가는 방향으로 작용한다. 로그 관계이므로 pH가 조금 달라져도 수소이온 농도의 변화는 작지 않을 수 있다. pH 숫자를 산의 양 그 자체로 읽거나 pH의 두 배가 수소이온 농도의 두 배라고 해석해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.3c6f2b221fac",
+      "type": "heading",
+      "level": 2,
+      "text": "일차 변화와 보상"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.fb1179438e71",
+      "type": "paragraph",
+      "markdown": "산혈증(acidemia)과 알칼리혈증(alkalemia)은 현재 혈액 pH의 상태를 말한다. 산증(acidosis)과 알칼리증(alkalosis)은 pH를 낮추거나 높이는 과정이다. 여러 과정이 함께 있으면 pH가 기준 범위에 가까워도 중요한 장애가 존재할 수 있다. 먼저 pH와 이산화탄소·중탄산염의 방향을 읽고 어떤 과정이 주요한지, 다른 변화가 예상되는 보상 범위에 있는지를 살핀다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.bd2868b7f3c4",
+      "type": "paragraph",
+      "markdown": "대사성 산증에서 환기가 증가하면 이산화탄소분압이 낮아져 pH 감소를 완화할 수 있다. 호흡성 이상에서는 신장의 조절이 시간에 따라 달라지므로 급성 변화와 지속된 변화의 중탄산염 반응이 다를 수 있다. 보상은 일차 이상을 없애는 원인 치료가 아니다. 또한 단순 장애에서 예상되는 범위를 벗어난 반응은 다른 과정의 공존을 의심하게 한다. 만성 질환과 현재 악화의 시간을 함께 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.889cefd2ea96",
+      "type": "heading",
+      "level": 2,
+      "text": "음이온차의 의미"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.8713d9649adc",
+      "type": "paragraph",
+      "markdown": "음이온차(anion gap)는 흔히 나트륨에서 염소와 중탄산염의 합을 뺀 값으로 계산한다. 혈액의 전기적 중성 자체가 깨졌다는 뜻이 아니라 계산에 포함하지 않은 이온들의 차이를 간접적으로 보는 지표다. 나트륨 140, 염소 104, 중탄산염 12mmol/L인 예에서는 140−104−12=24mmol/L다. 검사실과 계산 방식에 따라 기준이 다르며 칼륨을 포함한 공식과 섞어 비교하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.bdbadff5bc8c",
+      "type": "paragraph",
+      "markdown": "알부민은 측정되지 않은 음이온의 중요한 성분이므로 알부민이 낮으면 음이온차 해석에 영향을 준다. 겉으로 높지 않은 값이 축적된 산의 존재를 모두 배제하지 못한다. 젖산과 케톤, 신장 기능과 독성 물질의 가능성은 병력과 직접 검사로 평가한다. 계산한 차이만으로 산의 종류를 확진하지 않으며, 젖산 상승도 조직 저산소증 한 가지 원인으로만 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.517e085035f6",
+      "type": "heading",
+      "level": 2,
+      "text": "혼합 장애를 읽는 순서"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.89cd5014666a",
+      "type": "paragraph",
+      "markdown": "음이온차의 변화와 중탄산염 감소를 비교하면 추가 대사성 과정의 단서를 얻을 수 있다. 하지만 원래의 중탄산염과 알부민, 검사 오차 및 질환의 시간 경과에 따라 해석이 달라진다. 구토와 설사, 이뇨제와 수액, 만성 호흡기 질환이 함께 있으면 단순한 하나의 장애로 정리하기 어려울 수 있다. 공식에 숫자를 넣은 뒤에도 환자에게 그 과정이 실제로 존재하는지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.93026015ddb8",
+      "type": "paragraph",
+      "markdown": "예를 들어 중탄산염이 낮은 환자에서 이산화탄소분압이 기대보다 높으면 적절한 환기 보상이 이루어지지 않았거나 호흡성 산증이 함께 있을 수 있다. 반대로 지나치게 낮으면 추가 호흡성 알칼리증 가능성을 검토한다. 기대 범위는 사용하는 공식과 임상 조건을 명시해야 한다. 모든 연령·임신·온도와 환기 상태에 같은 근사식을 무조건 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.e70d783e843c",
+      "type": "heading",
+      "level": 2,
+      "text": "검체와 산소화의 범위"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.098b0b8bcc92",
+      "type": "paragraph",
+      "markdown": "동맥혈과 정맥혈은 같은 구획의 혈액이 아니다. pH와 이산화탄소의 비교가 특정 상황에서 도움이 될 수 있어도 정맥 산소분압을 동맥 산소화 지표로 그대로 대체할 수 없다. 산소 투여량과 장치, 채혈 시점, 환기 설정과 순환 상태를 함께 기록해야 산소분압의 의미를 읽을 수 있다. 산소포화도와 산소분압도 서로 다른 지표이며 혈색소 농도가 낮으면 포화도가 유지되어도 산소 함량이 줄 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.b.6919d58d453c",
+      "type": "paragraph",
+      "markdown": "검체에 공기가 섞이거나 분석이 지연되면 세포 대사와 기체 교환으로 값이 달라질 수 있다. 채혈 과정과 보관·운반 조건을 확인하고, 현장 분석값과 중앙 검사실 결과를 비교할 때에는 시간과 측정 원리의 차이를 고려한다. 계산된 중탄산염과 화학검사의 총이산화탄소도 동일한 측정 절차가 아니다. 불일치를 하나의 질환으로 설명하기 전에 검체와 시간의 차이를 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.table0858",
+      "type": "table",
+      "data": {
+        "title": "소견과 평가 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "pH",
+            "기준 범위에 가까움"
+          ],
+          [
+            "PaCO₂",
+            "감소"
+          ],
+          [
+            "HCO₃⁻",
+            "감소"
+          ],
+          [
+            "병력",
+            "설사와 빠른 호흡"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.diagram.hh-0858",
+      "type": "diagram",
+      "diagramRef": "diagram.hh-0858",
+      "path": "diagrams/diagram.hh-0858.svg",
+      "alt": "중탄산염 고정 시 pH의 독립 계산 곡선"
+    },
+    {
+      "id": "laboratory-medicine.acid-base.blood-gas-interpretation.diagram.anion-gap-0858",
+      "type": "diagram",
+      "diagramRef": "diagram.anion-gap-0858",
+      "path": "diagrams/diagram.anion-gap-0858.svg",
+      "alt": "고정 Na·Cl에서 음이온차의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/laboratory-medicine/chapters/acid-base/sections/laboratory-medicine.acid-base.blood-gas-interpretation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.laboratory-medicine.acid-base.blood-gas-interpretation.001",
+    "question.laboratory-medicine.acid-base.blood-gas-interpretation.002",
+    "question.laboratory-medicine.acid-base.blood-gas-interpretation.003"
+  ],
+  "relatedLessons": [
+    "emergency-medicine.dyspnea.initial-assessment",
+    "critical-care.respiratory.ventilation-oxygenation"
+  ]
+}

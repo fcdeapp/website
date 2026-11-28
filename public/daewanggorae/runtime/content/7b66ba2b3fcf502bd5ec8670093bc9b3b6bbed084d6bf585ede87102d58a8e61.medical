@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.coronary.pressure-flow-indices",
+  "subjectId": "cardiology",
+  "chapterId": "coronary",
+  "title": {
+    "ko": "압력비와 혈류 지표의 통합 해석",
+    "en": "Integrating Coronary Pressure and Flow Indices"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.lo.01",
+      "text": "FFR의 측정 전제를 설명한다"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.lo.02",
+      "text": "미세혈관 저항이 압력비에 미치는 영향을 설명한다"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.lo.03",
+      "text": "해부학·압력·혈류의 불일치를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.536d9e591cee",
+      "type": "heading",
+      "level": 2,
+      "text": "압력 손실에서 기능을 추론하기"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.64ea214619ba",
+      "type": "paragraph",
+      "markdown": "관상동맥 협착 앞뒤의 압력을 비교하면 혈류가 지나는 동안 생기는 압력 손실을 평가할 수 있다. Fractional flow reserve(FFR)는 충분한 충혈 상태에서 원위 관상동맥 압력과 대동맥 압력의 비를 주로 이용하여 병변의 기능적 제한을 판단하는 지표다. 압력을 직접 재지만 비율을 혈류 제한과 연결하려면 미세혈관 저항과 충혈 상태에 대한 전제가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.cardiology.coronary.atherothrombosis.normal-coronaries"
+      ]
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.69c1a6f5d7a2",
+      "type": "paragraph",
+      "markdown": "임상적으로 쓰는 단순화는 정맥 압력의 영향과 측정 조건을 고려한다. 원위 압력은 센서가 놓인 위치보다 앞의 병변과 확산성 질환, 그 뒤의 미세순환이 함께 만드는 결과다. 한 지점의 비율을 단일 판의 성질만 담은 고립된 숫자로 해석하지 않는다. 압력 파형과 위치, 기저 혈역학을 함께 확인하는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.5345f41b0116",
+      "type": "heading",
+      "level": 2,
+      "text": "하류 저항이 바뀌면"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.9537e291e0b6",
+      "type": "paragraph",
+      "markdown": "가상 직렬 모형에서 대동맥 압력을1, 정맥 압력을0, 협착 저항을 Rs, 미세혈관 저항을 Rm이라 두면 유량은1/(Rs+Rm)이다. 원위 압력비는 Rm/(Rs+Rm)이 된다. Rs가 같아도 Rm이 커지면 유량은 줄면서 압력비는 높아질 수 있다. 하류가 막혀 덜 흐르면 협착을 지나는 압력 손실도 줄기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.b915a4367fea",
+      "type": "paragraph",
+      "markdown": "이 계산은 실제 환자의 FFR을 정확히 재현하는 공식이 아니다. 실제 협착의 압력 손실은 유량에 비선형적으로 의존하고 측부순환·박동과 여러 혈관층이 더해진다. 그래도 충분한 충혈이 되지 않았을 때 압력비만으로 협착의 제한을 과소평가할 수 있는 이유를 보여 준다. 압력비가 덜 낮다는 결과와 심근 혈류가 충분하다는 결과를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.04bc85f71ca9",
+      "type": "heading",
+      "level": 2,
+      "text": "서로 다른 지표의 질문"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.4c7de6046e8d",
+      "type": "paragraph",
+      "markdown": "CFR은 충혈 대비가 아니라 충혈 혈류를 안정 혈류로 나눈 예비력이며 큰 혈관과 미세순환을 함께 반영한다. 압력 기반 지표와 혈류 예비력이 어긋나면 안정 수요·미세혈관 기능·확산성 병변을 검토한다. 한 지표가 정상이므로 다른 모든 기능이 정상이라는 해석은 부적절하다. 검사끼리의 불일치 자체가 혈관 구획을 나누는 단서가 될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.e68ff184371a",
+      "type": "paragraph",
+      "markdown": "휴식기 압력 지표는 특정 시기나 전체 심장주기의 압력 정보를 활용하는 등 방법이 다르다. 약리적 최대 충혈 상태의 FFR과 같은 조건에서 얻은 값이 아니다. 각 지표의 검증 범위와 경계값을 다른 방식으로 그대로 옮기지 않는다. 같은 비율처럼 보이는 수치도 측정 시점과 생리적 전제가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.11266b6f8c12",
+      "type": "heading",
+      "level": 2,
+      "text": "측정의 품질"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.b5588e3bad34",
+      "type": "paragraph",
+      "markdown": "압력 센서의 drift, 근위 압력 감쇠와 카테터 위치, 충분하지 않은 충혈은 결과를 바꿀 수 있다. 분지와 여러 연속 병변이 있으면 각 협착의 영향이 서로 간섭한다. Pullback 정보는 압력 손실이 국소적인지 넓게 분포하는지 파악하는 데 기여한다. 한 지점의 측정만으로 모든 병변을 개별적으로 분리할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.b.2015611b97f7",
+      "type": "paragraph",
+      "markdown": "검사 결과는 환자의 증상·허혈 범위·해부학적 위험과 함께 치료 판단에 연결한다. 원래 적용하지 않은 급성 상황에 안정 상태의 단일 기준을 기계적으로 적용하지 않는다. 기능 지표는 시술 여부를 위한 중요한 근거지만 그 숫자 자체가 환자의 모든 이득·위험과 선호를 대신하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.diagram.coronary-downstream-resistance-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.coronary-downstream-resistance-toy",
+      "path": "diagrams/diagram.coronary-downstream-resistance-toy.svg",
+      "alt": "하류 저항과 압력비·유량의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "FFR",
+            "충혈 압력비와 기능 추론"
+          ],
+          [
+            "CFR",
+            "충혈/안정 혈류의 예비력"
+          ],
+          [
+            "하류 저항",
+            "유량과 압력 손실에 동시 영향"
+          ],
+          [
+            "품질 확인",
+            "Drift·위치·충혈·근위 압력"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.anatomy3d.0826",
+      "type": "anatomy3d",
+      "sceneRef": "scene.cardiology.coronary.atherothrombosis.normal-coronaries"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices.visualization-limits.0826",
+      "type": "clinicalPearl",
+      "markdown": "정상 큰 관상동맥의 주행을 확인한다. 압력비·저항·충혈·미세순환은 별도 도표이며 정적 메시가 계산하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/coronary/sections/cardiology.coronary.pressure-flow-indices.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.coronary.pressure-flow-indices.001",
+    "question.cardiology.coronary.pressure-flow-indices.002"
+  ],
+  "relatedLessons": [
+    "cardiology.imaging.coronary-ct",
+    "cardiology.imaging.regional-wall-motion"
+  ]
+}

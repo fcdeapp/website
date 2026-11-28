@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-parasomnia-events-0855",
+  "lessonId": "psychiatry.sleep.parasomnia-state-dissociation",
+  "title": "가상 주간 위험 행동 기록",
+  "series": [
+    {
+      "label": "위험 행동",
+      "samples": [
+        {
+          "x": 1,
+          "y": 6
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 4,
+          "y": 2
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "notDrugEfficacyOrRBDDiagnosis": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 4,
+      "scale": "linear",
+      "ticks": [
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "label": "기록 주"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 8,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "label": "관찰 횟수(회)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "위험 행동",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 또는 가상 기록이다. 실제 환자·정상 범위·검사 기준·치료효과·처방과 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

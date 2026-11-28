@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.cobalamin-function-pairs",
+  "lessonId": "pathology.nutrition.cobalamin-folate",
+  "title": "B12의 두 반응과 임상 해석",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "위·IF·회장·운반",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "세포 내 이용",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "Methionine synthase",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "엽산 재생·일탄소 대사",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "Methylmalonyl-CoA mutase",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "MMA 관련 경로",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.cobalamin-function-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "섭취와 흡수 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cobalamin-function-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "B12와 엽산 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cobalamin-function-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "신기능 등과 통합",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "직접환자검사자료나원문대사경로도가아니다.혈구호전과신경회복을동일시하지않는다."
+  ],
+  "sourceImageUsed": false
+}

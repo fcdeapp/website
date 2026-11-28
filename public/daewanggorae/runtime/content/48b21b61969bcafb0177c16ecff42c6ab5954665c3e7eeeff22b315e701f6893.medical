@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.repair.matrix-remodeling-fibrosis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.15c6adb88738",
+      "sourceSha256": "15c6adb8873872d80bf3d248a473a6037dcd0a01c941dfc8dcddede54b53a738",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.233da55627f4661e0212",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 102,
+            "exact": "남은 세포의 증식 능력,줄기·전구세포의 공급,기저막과 지지 틀의 보존이 중요하다.",
+            "prefix": " 구조와 기능의 회복에 기여하는 과정이다. ",
+            "suffix": " 반흔(scar) 형성은 결손을 연결하고 기"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.4935c3cfdcfc",
+      "sourceSha256": "4935c3cfdcfcf64103093574d7a5effaca43f1cfdffafef5f2bbe426c76d674a",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.1d759d1f2aa1",
+      "sourceSha256": "1d759d1f2aa1d84c3a5f355c4649da96c0883a07fbb36e18354ebab654a25f3d",
+      "sourceLengthUtf16": 227,
+      "annotations": [
+        {
+          "id": "ann.95f7144b2eb2f9151239",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 5,
+            "end": 23,
+            "exact": "granulation tissue",
+            "prefix": "육아조직(",
+            "suffix": ")은 신생혈관과 섬유모세포,성긴 기질 및 염"
+          },
+          "conceptId": "reader.term.8a331b02bb0d602d",
+          "targetDocumentId": "general-surgery.wound.proliferation-matrix"
+        },
+        {
+          "id": "ann.da4b13e59c2f82d197a7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 91,
+            "end": 96,
+            "exact": "만성 염증",
+            "prefix": "아종(granuloma)은 대식세포 중심의 ",
+            "suffix": " 구조로 다른 용어다. VEGF 등은 혈관 "
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.89b2d3ccfb19",
+      "sourceSha256": "89b2d3ccfb19cd7f925f606487053ec2db7245ea4eca808debb282519c082663",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.f930b9144ca0",
+      "sourceSha256": "f930b9144ca00f806239dd646cf479c6609feaef396f752b7535a7b6ffa8f367",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.18c1963bf447",
+      "sourceSha256": "18c1963bf447b50d62dace75e2738216a9338b54b4c93e7a33a338f026d881ab",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.e76cf677f8c6",
+      "sourceSha256": "e76cf677f8c65228cd93d6bca296b10caa367d2c35e1dc8233b90d3fb75909cd",
+      "sourceLengthUtf16": 232,
+      "annotations": [
+        {
+          "id": "ann.436d7e2e9da667545247",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 209,
+            "end": 232,
+            "exact": "효소의 양과 실제 활성도도 구별해야 한다.",
+            "prefix": "기질 축적과 재형성 장애가 생길 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.a19f6faeeb76",
+      "sourceSha256": "a19f6faeeb7633e6917b51a8a427c2cb36fe13a5e718bd8680e923ac246332b0",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.6ea41ef9d6a6",
+      "sourceSha256": "6ea41ef9d6a65a548bf8599dc6e79aea87819f0368b277d1242f4a6ea4b12349",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.matrix-remodeling-fibrosis.b.4812bba45c96",
+      "sourceSha256": "4812bba45c9680f2102d9be5c51da3990253700ae76ae88a40d643e38f0ed38f",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    }
+  ]
+}

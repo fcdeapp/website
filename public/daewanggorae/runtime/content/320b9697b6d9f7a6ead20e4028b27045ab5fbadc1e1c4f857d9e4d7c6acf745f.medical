@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "histology.vascular.wall-microcirculation",
+  "subjectId": "histology",
+  "chapterId": "vascular",
+  "title": {
+    "ko": "동맥·정맥·모세혈관 벽과 미세순환",
+    "en": "Vessel Walls and Microcirculation"
+  },
+  "learningObjectives": [
+    {
+      "id": "histology.vascular.wall-microcirculation.lo.01",
+      "text": "혈관 세 층의 구성과 동맥·정맥의 차이를 설명한다"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.lo.02",
+      "text": "탄력형·근육형 동맥과 세동맥을 구별한다"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.lo.03",
+      "text": "모세혈관 장벽의 종류를 장기 기능 및 염증과 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "histology.vascular.wall-microcirculation.b.b5e7b349f0eb",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관을 읽는 공통 좌표"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.4d1dfca95e32",
+      "type": "paragraph",
+      "markdown": "혈관은 내강에서 바깥쪽으로 속막(tunica intima), 중간막(tunica media), 바깥막(tunica adventitia)의 구획으로 설명할 수 있다. 속막에는 내피와 그 지지 바닥판·바닥쪽 조직이, 중간막에는 평활근과 탄력 성분이, 바깥막에는 아교섬유와 주변 조직과의 연결이 중요하다. 그러나 모든 혈관이 세 층을 같은 두께로 뚜렷하게 갖는 것은 아니다. 모세혈관은 큰 동맥의 세 층을 축소 복사한 벽이 아니라 교환 기능에 적합하도록 단순화된 벽이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.22e8c34230dd",
+      "type": "paragraph",
+      "markdown": "동맥·정맥은 산소 함량이 아니라 심장에 대한 흐름 방향으로 정의한다. 폐동맥과 폐정맥은 산소 함량을 기준으로 이름을 붙이면 반대로 분류되는 대표적인 예이다. 조직 표본에서는 벽과 내강의 비율, 탄력막·평활근, 이웃 구조를 함께 보아야 한다. 표본 처리와 혈관 수축·허탈에 따라 모양이 달라지므로 둥글면 동맥이고 납작하면 정맥이라는 규칙만으로 모든 혈관을 판별할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.2eb8a6eec08c",
+      "type": "heading",
+      "level": 2,
+      "text": "내피는 능동적인 경계이다"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.c166eb510d8f",
+      "type": "paragraph",
+      "markdown": "내피(endothelium)는 단층편평상피성 배열로 혈액과 혈관벽 사이를 구분한다. 물질 이동을 제한·조절하면서 혈관 긴장, 응고와 혈소판 반응, 염증세포의 부착·통과에 관여한다. 정상 내피와 활성화·손상된 내피는 같은 매끄러운 벽이라는 외형 설명으로 충분하지 않다. 내피가 만드는 산화질소와 다른 신호는 이웃 평활근에 영향을 주고 혈류에 의한 전단 자극도 세포 반응을 바꿀 수 있다. 세포의 위치와 기능이 혈액의 성질에 직접 연결된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.8f9bee5e5f3c",
+      "type": "paragraph",
+      "markdown": "혈관 손상은 속막의 단순한 찢어짐뿐 아니라 내피 기능의 변화와 아래 기질의 노출로도 반응을 유발한다. 혈소판이 접하는 물질과 국소 응고 조절 환경이 달라지면 혈전 형성의 조건이 바뀔 수 있다. 그렇다고 내피가 조금 자극될 때마다 반드시 혈관이 완전히 막히는 것은 아니다. 항응고·섬유소용해·혈류 등 여러 요소가 함께 작용한다. 조직학은 혈관벽의 어느 부분이 바뀌었는지를 서술하는 데 기여하며 임상적인 혈전 위험 전체를 한 절편에서 계산해 주지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.7903f052c286",
+      "type": "heading",
+      "level": 2,
+      "text": "탄력형과 근육형 동맥"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.9c13223f30f0",
+      "type": "paragraph",
+      "markdown": "대동맥 같은 탄력형 동맥(elastic artery)은 중간막의 여러 탄력판과 그 사이 평활근이 특징이다. 수축기 동안 저장한 탄성 에너지가 이완기에 벽의 되돌림으로 이어져 심장의 간헐적 박출과 말초의 더 연속적인 흐름을 연결한다. 탄력섬유가 많다는 사실은 평활근이 없다는 뜻이 아니다. 벽의 기질은 평활근세포가 유지·재형성하며 나이·혈압·질환에 따라 구조가 변할 수 있다. 혈관벽의 탄성은 단순히 내강 직경 하나와 같지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.8bac3be53e08",
+      "type": "paragraph",
+      "markdown": "근육형 동맥(muscular artery)은 중간막의 평활근 층과 뚜렷한 속탄력막(internal elastic lamina)이 판별에 도움을 준다. 큰 혈관과 작은 혈관 사이에는 연속적인 변화가 있어 모든 절편이 교과서의 전형적인 두 모양 중 하나로 완벽히 나뉘지는 않는다. 탄력염색은 탄력막의 위치를 강조하고 일반 염색은 세포·아교섬유와의 관계를 보완한다. 혈관의 크기와 근육층 배열을 함께 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.62d4bfa600c1",
+      "type": "paragraph",
+      "markdown": "세동맥(arteriole)은 적은 수의 평활근 층으로 내강을 둘러싸며 저항 조절에 중요하다. 내강이 작다는 이유로 모세혈관이라고 부르기 전에 둘레의 연속적인 평활근이 있는지 살핀다. 반대로 모세혈관의 벽세포(pericyte)는 평활근과 관련된 성질을 일부 가져도 큰 동맥의 중간막과 같은 완전한 여러 층의 벽을 이루지 않는다. 미세순환의 지름과 벽 두께·조절 방식의 차이가 혈압과 교환을 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.eff843754814",
+      "type": "heading",
+      "level": 2,
+      "text": "모세혈관 장벽의 다양성"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.1068a9e29415",
+      "type": "paragraph",
+      "markdown": "연속모세혈관(continuous capillary)은 내피세포 사이 접합과 연속적인 바닥판이 특징이다. 같은 연속형이라도 장기별 운반체·접합 특성이 달라 뇌의 혈액뇌장벽과 골격근의 교환을 동일한 투과성으로 설명할 수 없다. 창문모세혈관(fenestrated capillary)은 내피의 창문 구조를 통해 물질 교환에 적응하며 내분비샘과 장관 등에서 중요하다. 콩팥 사구체의 창문 내피는 발세포·기저막과 결합해 선택적 여과장벽을 이루므로 구멍이 있다는 사실만으로 혈구·단백질이 자유롭게 통과하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.9c7b1723f2a4",
+      "type": "paragraph",
+      "markdown": "굴모양 또는 불연속형 혈관(sinusoidal or discontinuous vessel)은 내피와 지지 구조가 기관별로 특수화되어 간·골수·지라 등에서 서로 다른 교환을 가능하게 한다. 세 기관의 혈관을 모두 똑같은 큰 구멍의 관으로 그리면 간의 단백질 교환, 골수의 혈액세포 이동, 지라의 적혈구 처리 사이 차이를 놓친다. 간 굴모양혈관의 내피 아래 공간과 지라 정맥굴의 세포 통과 구조는 같은 이름의 반복이 아니라 장기별 미세환경이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.b65fc903be73",
+      "type": "heading",
+      "level": 2,
+      "text": "정맥과 정맥판막"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.e25ed7b08767",
+      "type": "paragraph",
+      "markdown": "정맥은 같은 규모의 동맥에 비해 일반적으로 중간막이 덜 발달하고 바깥막의 비중이 클 수 있다. 큰 정맥에서는 바깥막의 세로 방향 평활근이 관찰될 수 있어 모든 정맥 벽이 평활근 없이 얇은 결합조직만으로 이루어졌다고 말할 수 없다. 낮은 압력에서 많은 혈액을 담는 저장 기능은 벽의 변형성과 관련된다. 정맥의 허탈 정도와 판막의 존재도 표본 방향·부위에 따라 달라지므로 한 시야에서 판막이 없다고 정맥을 배제하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.67e0ba8ad5df",
+      "type": "paragraph",
+      "markdown": "정맥판막은 속막의 접힘이 형성한 구조로 역류를 제한하고 근육펌프와 함께 정맥환류에 기여한다. 판막 자체가 능동적으로 혈액을 위로 펌프질하는 근육은 아니다. 판막 기능, 이웃 근육의 수축, 호흡에 따른 압력 변화와 심장 쪽 압력 관계가 함께 흐름을 만든다. 이 원리를 이해하면 오래 서 있는 상태와 움직이는 상태에서 정맥 압력과 혈액 정체가 달라지는 이유를 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.d1b345a0b7c5",
+      "type": "heading",
+      "level": 2,
+      "text": "벽의 혈관과 염증세포의 통과"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.274631a52bcb",
+      "type": "paragraph",
+      "markdown": "큰 동맥·정맥의 바깥쪽 벽에는 혈관벽혈관(vasa vasorum)이 분포하여 내강에서의 확산만으로 공급하기 어려운 조직을 돕는다. 혈액이 흐르는 관의 벽 자체에도 대사와 공급이 필요하다는 뜻이다. 작은 혈관의 벽은 상대적으로 확산 경로가 짧고 큰 혈관은 벽 두께와 공급 구조의 관계가 달라진다. 모든 혈관에서 같은 밀도의 혈관벽혈관이 존재한다고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "histology.vascular.wall-microcirculation.b.db26e1560dd6",
+      "type": "paragraph",
+      "markdown": "염증에서 백혈구가 조직으로 이동하는 과정은 특히 모세혈관 뒤 세정맥(postcapillary venule)과 관련된다. 굴러가기·부착·내피 통과에는 세포표면 분자와 신호가 참여하며 단순히 벽의 물리적인 구멍에 세포가 수동적으로 빠지는 것과 다르다. 투과성 증가와 세포 이동이 항상 같은 정도·같은 시점으로 일어나는 것도 아니다. 조직 부종과 염증세포 침윤은 혈관 종류·내피 상태·압력·기질과 림프 배액을 함께 고려하여 해석한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/histology/chapters/vascular/sections/histology.vascular.wall-microcirculation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.histology.vascular.wall-microcirculation.001"
+  ],
+  "keyFacts": [
+    "근육형 동맥은 중간막 평활근과 속탄력막이 판별에 도움이 된다."
+  ],
+  "relatedLessons": [
+    "histology.integument.skin-appendages",
+    "histology.muscle.sarcomere-connective",
+    "histology.lymphoid.organ-architecture"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-bile-concentrations-0850",
+  "lessonId": "hpb-surgery.liver.posthepatectomy-complications",
+  "title": "가상 동시 배액·혈청 빌리루빈",
+  "series": [
+    {
+      "label": "배액",
+      "samples": [
+        {
+          "x": 1,
+          "y": 6
+        },
+        {
+          "x": 3,
+          "y": 9
+        },
+        {
+          "x": 5,
+          "y": 12
+        }
+      ]
+    },
+    {
+      "label": "혈청",
+      "samples": [
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 3
+        },
+        {
+          "x": 5,
+          "y": 6
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "postoperativeDays": [
+      1,
+      3,
+      5
+    ],
+    "drain": [
+      6,
+      9,
+      12
+    ],
+    "serum": [
+      2,
+      3,
+      6
+    ],
+    "ratio": [
+      3,
+      3,
+      2
+    ],
+    "notDiagnosticCriterion": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 5,
+      "scale": "linear",
+      "ticks": [
+        1,
+        1,
+        3,
+        5,
+        5
+      ],
+      "label": "수술 후 일"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 14,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        3.5,
+        7.0,
+        10.5,
+        14.0
+      ],
+      "label": "빌리루빈(mg/dL)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "배액",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "혈청",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·전형적 경과·진단 기준·약물·수술 안전 기준을 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

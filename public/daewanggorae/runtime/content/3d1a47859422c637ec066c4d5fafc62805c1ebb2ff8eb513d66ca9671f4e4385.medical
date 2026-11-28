@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pediatrics.infection.fever-clinical-assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.d7e380a4ec80",
+      "sourceSha256": "d7e380a4ec8013eca4da02652038bb6f065c9d9a598c654205a982ad250bacb5",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.41cac6e2fa01",
+      "sourceSha256": "41cac6e2fa01d4572de105275f18b9bced6b47ead2fca7f29633926576c79622",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.f5f399763795",
+      "sourceSha256": "f5f3997637955e9b82ca475d2210154861f49772e57e398cd0cc983aafa50f0a",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.f4e7f623a655",
+      "sourceSha256": "f4e7f623a6551a9b33995ae974950ea3c10988b65c923e4a411f3195e403a0b5",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.65f96b7693ec",
+      "sourceSha256": "65f96b7693ec98368a92d11f26ebccf75609a3e89ee44a4704501f1b192d38c7",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.a3c994bfabce",
+      "sourceSha256": "a3c994bfabce96eb925595a2ae5441a73b65c39100d0708b0da68a1d1df06cf9",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.d0178d3420c8c308304f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 145,
+            "end": 206,
+            "exact": "한 번의 정상 진찰은 이후 악화를 보증하지 않으므로 초진과 추적의 시점과 관찰 조건을 기록하는 것이 중요하다.",
+            "prefix": "과 반응 저하가 남으면 가설을 재검토한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.f42016a8d64e",
+      "sourceSha256": "f42016a8d64e7b8979aa118b50979f0e092d4968efb88060decb11dea4aa10c4",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.974c3865e0eda6bab066",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 22,
+            "end": 26,
+            "exact": "뇌척수액",
+            "prefix": "요검사와 배양, 혈액·염증 지표와 영상·",
+            "suffix": " 검사는 서로 다른 질문에 답한다. 채취 방"
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.bd60565ede05",
+      "sourceSha256": "bd60565ede052a063c355be2db20152543078fdefc8e9f8e2f34b50ce91991de",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.2c75fee533e7",
+      "sourceSha256": "2c75fee533e762ddcf7c2ec50a5ec2113ec64f45f56193a94fe46dd04c51aee2",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.infection.fever-clinical-assessment.b.f253d45d0af9",
+      "sourceSha256": "f253d45d0af91d827f8426bdf072daa1a899e39b6024c49a82dcb9f982e38dfb",
+      "sourceLengthUtf16": 260,
+      "annotations": []
+    }
+  ]
+}

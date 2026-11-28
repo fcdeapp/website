@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.cholinesterase-effect-pairs",
+  "lessonId": "pharmacology.autonomic.cholinesterase-inhibition",
+  "title": "효소·분포·효과의 다른 축",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "효소 억제와 회복",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "표적 상호작용·재합성",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "중추·말초 접근",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "노출·장벽·이온화",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "여러 콜린성 표적",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "무스카린·니코틴·중추 효과",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.cholinesterase-effect-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "약물 제거와 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cholinesterase-effect-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "동일 약물군도 차이",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cholinesterase-effect-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "하나의 길항으로 모두 복구 아님",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "정적 인체 모델에 구현된 시냅스·신경근 움직임이나 실제 증상 예측이 아니다."
+  ],
+  "sourceImageUsed": false
+}

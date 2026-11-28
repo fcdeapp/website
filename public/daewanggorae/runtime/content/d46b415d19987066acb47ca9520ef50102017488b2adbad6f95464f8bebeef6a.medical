@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.refractoriness-conduction",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.refractoriness-conduction.b.e5f91fe9eef5",
+      "sourceSha256": "e5f91fe9eef5bb84da49baabe1e7d3b3efde2a231ba120a8f792f2f4e398d851",
+      "sourceLengthUtf16": 179,
+      "annotations": [
+        {
+          "id": "ann.a2129ee714784ff7e657",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 143,
+            "end": 146,
+            "exact": "막전위",
+            "prefix": "할 수는 없다. 표적이 같아도 세포 종류와 ",
+            "suffix": ", 자극 빈도에 따라 약물의 기능적 영향이 "
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        },
+        {
+          "id": "ann.f98b6b4ab1b770172c99",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 51,
+            "end": 86,
+            "exact": "동방·방실결절의 대표적인 전도에는 칼슘 전류의 기여가 중요하다.",
+            "prefix": " 상승은 주로 빠른 Na 전류와 관련된다. ",
+            "suffix": " 모든 심장 세포의0상과 전도 지연을 같은 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.refractoriness-conduction.b.58612d163eec",
+      "sourceSha256": "58612d163eec7aaad267d892fbf8fbbfb904ee2360e931ba7821c2e5d8609736",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.refractoriness-conduction.b.0304743c73d4",
+      "sourceSha256": "0304743c73d468ee62c3faa66ea604dbddf69e841bbc7f44e7fe07b1fef14c72",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.refractoriness-conduction.b.85b3081b04d8",
+      "sourceSha256": "85b3081b04d8b2d84cf24eb4eaa6fe5d100a63c0f5bfe93c1030f09a245dab60",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.refractoriness-conduction.b.d6f9144f68e2",
+      "sourceSha256": "d6f9144f68e234b7e1b19467b8f2329b11ee37c368fbf1ce7688c511072247bb",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.refractoriness-conduction.b.1023f25b2a89",
+      "sourceSha256": "1023f25b2a89e55987bee9d434a342ae8714201acb119b1ca81d12bfc8b0988f",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.refractoriness-conduction.b.83a868f377bb",
+      "sourceSha256": "83a868f377bbf105f401b833314fa5aa68f4800ad18bb29c015d773ef009e6ac",
+      "sourceLengthUtf16": 156,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.refractoriness-conduction.b.68831c6ae027",
+      "sourceSha256": "68831c6ae0277e3208be689eeb0483f6f51168b5d7d9ccb0da7fe1ed916e3b6f",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.refractoriness-conduction.paragraph.extension0828",
+      "sourceSha256": "4cefb3d8aef52c10adc0f0c1c833b8300b453fd7e3cc49d93a5dd201dd3ba05e",
+      "sourceLengthUtf16": 323,
+      "annotations": []
+    }
+  ]
+}

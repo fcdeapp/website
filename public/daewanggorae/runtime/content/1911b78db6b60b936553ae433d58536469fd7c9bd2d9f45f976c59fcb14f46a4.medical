@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.hemodynamics.microangiopathic-injury",
+  "subjectId": "pathology",
+  "chapterId": "hemodynamics",
+  "title": {
+    "ko": "혈전미세혈관병증과 용혈의 해석",
+    "en": "Thrombotic Microangiopathy and Hemolysis"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.lo.01",
+      "text": "미세혈관병성 용혈과 면역성 용혈을 구별한다"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.lo.02",
+      "text": "ADAMTS13·VWF와 TTP를 연결한다"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.lo.03",
+      "text": "공통 표현형과 서로 다른 원인 및 응급성을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.586a4442c92d",
+      "type": "heading",
+      "level": 2,
+      "text": "혈관 안의 손상이 적혈구에 남기는 흔적"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.fc8fb01dcb13",
+      "type": "paragraph",
+      "markdown": "혈전미세혈관병증(thrombotic microangiopathy, TMA)은 미세혈관의 내피 손상과 혈전성 병변, 장기 기능 이상을 연결하는 질환군이다. 손상된 미세혈관을 지나며 적혈구가 기계적으로 파괴되면 미세혈관병성 용혈빈혈(microangiopathic hemolytic anemia, MAHA)이 나타날 수 있다. 분열적혈구, LDH·간접 빌리루빈과 haptoglobin의 변화는 용혈 평가의 단서다. 그러나 각각이 원인 질환을 단독으로 확정하는 검사는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.739fef17cb7f",
+      "type": "paragraph",
+      "markdown": "기계적 파괴와 항체가 관여하는 면역성 용혈은 다른 기전이다. 같은 빈혈과 LDH 상승이 관찰되어도 검사와 감별의 질문이 달라진다. 분열적혈구가 보인다는 소견만으로 모든 TMA를 같은 병명으로 바꾸지 않는다. DIC와 다른 기계적 상황에서도 유사한 소견이 나타날 수 있다. 혈소판, 응고검사와 장기 기능의 전체 맥락을 함께 살핀다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.d5904bb8b675",
+      "type": "heading",
+      "level": 2,
+      "text": "ADAMTS13과 VWF의 조절"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.d399b4efb08f",
+      "type": "paragraph",
+      "markdown": "ADAMTS13은 von Willebrand factor(VWF)의 크기와 기능 조절에 관여하는 단백분해효소다. 심한 활성 결핍에서는 큰 VWF multimer와 혈소판 상호작용이 적절히 제한되지 않아 TTP의 미세혈관 혈전 형성과 연결된다. 혈소판 감소는 응고인자 전체의 같은 정도 소모와 동의어가 아니다. 혈소판 중심 상호작용과 fibrin 관련 전신 반응의 차이를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.7bc7fc896842",
+      "type": "paragraph",
+      "markdown": "활성 결핍에는 면역성 억제·자가항체와 유전적 원인 등 서로 다른 배경이 있다. ADAMTS13의 활성, 억제물질과 항체 검사는 같은 정보가 아니며 이용 가능성도 다를 수 있다. 치료 이전 검체와 이후 검체의 의미가 달라질 수 있어 채혈·중재 시점을 기록한다. 특정 결과를 해석할 때 사용한 방법과 기저 질환을 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.b0872939d873",
+      "type": "heading",
+      "level": 2,
+      "text": "TTP는 전형적 다섯 소견을 기다리는 진단이 아니다"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.713346cab2dc",
+      "type": "paragraph",
+      "markdown": "TTP에서는 혈소판 감소와 MAHA에 다양한 장기 이상이 동반될 수 있다. 고전적으로 열과 신경·신장 소견을 함께 설명하지만 모든 소견이 갖추어질 때까지 의심과 대응을 미루어서는 안 된다. 급성 장기 허혈의 위해가 크기 때문이다. 검사 확정과 임상적 의심에 따른 신속한 대응은 시간축에서 다른 단계다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.4c2d4d4c0b7c",
+      "type": "paragraph",
+      "markdown": "평가에는 ADAMTS13과 임상 확률, 다른 원인 검토가 연결된다. 예측 점수는 정해진 변수와 적용 범위가 있어 일부 항목만으로 결과를 만들어서는 안 된다. 신장·신경 소견의 상대적 비중도 질환을 구분하는 단서이지 모든 환자에게 절대적으로 적용되는 경계는 아니다. 혈소판 감소의 정도 하나로 병명을 고정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.6bde54bc28c4",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 표현형에 이르는 다른 경로"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.bf9deed976b7",
+      "type": "paragraph",
+      "markdown": "Shiga toxin 관련 HUS, 보체 조절과 연관된 TMA, 임신 관련 상태와 다른 이차성 원인들은 공통된 미세혈관 손상 표현형을 만들 수 있다. 설사 병력 하나나 특정 장기 소견만으로 모든 원인을 확정·배제하지 않는다. 감염·약물·임신·혈압과 기저 질환의 시간 관계를 확인하고 원인에 맞는 검사를 선택한다. 공통 증후군이라는 분류와 원인 확진은 구별된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.80350d1ae62c",
+      "type": "paragraph",
+      "markdown": "DIC는 전신 응고 활성화와 소모라는 축을 강조하고, TMA는 내피·미세혈관 혈전과 용혈이라는 축으로 접근한다. 응고시간이 비교적 보존되는 양상은 일부 TMA 감별에 도움이 되지만 정상 PT·aPTT만으로 TTP를 확진하지 않는다. 두 과정이 공존하거나 다른 질환과 겹칠 수도 있다. 비교표는 절대적인 배타 규칙보다 어떤 검사가 어떤 기전을 관찰하는지 보여 주어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.8cbd4c4c128c",
+      "type": "heading",
+      "level": 2,
+      "text": "결과를 나누어 추적한다"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.0ca940fef7be",
+      "type": "paragraph",
+      "markdown": "혈소판 회복, 용혈 표지 변화와 장기 기능 회복은 속도와 의미가 다를 수 있다. 한 지표가 좋아졌다고 모든 미세혈관 손상과 원인 문제가 해결되었다고 판단하지 않는다. 원인별 치료, 재발과 장기 합병증의 관리가 각각 필요하다. 실제 치료의 약제·혈장 관련 중재·용량·순서는 원인과 환자 상태 및 적용 지침에 따른다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.b.f07192b88aa5",
+      "type": "paragraph",
+      "markdown": "정상 장기 메시를 확대해도 미세혈관 혈전과 적혈구 파편, VWF·ADAMTS13 반응이 나타나는 것은 아니다. 이 단원에는 구조적 반응 도식과 검사 조합·추세표가 적절하다. 실제 혈액 도말 사진이 필요한 경우에는 검증된 출처와 재사용 권한을 확보해야 하며, 교육용 도식을 실제 환자 도말이라고 표시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.microangiopathic-injury.table.0820",
+      "type": "table",
+      "data": {
+        "title": "미세혈관 손상의 층",
+        "columns": [
+          "층",
+          "구별"
+        ],
+        "rows": [
+          [
+            "MAHA",
+            "기계적 용혈의 표현형"
+          ],
+          [
+            "TMA",
+            "미세혈관 손상 질환군"
+          ],
+          [
+            "TTP",
+            "ADAMTS13 관련 원인"
+          ],
+          [
+            "장기 소견",
+            "단독 원인 확정과 다름"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/hemodynamics/sections/pathology.hemodynamics.microangiopathic-injury.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.hemodynamics.microangiopathic-injury.001",
+    "question.pathology.hemodynamics.microangiopathic-injury.002"
+  ]
+}

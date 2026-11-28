@@ -1,0 +1,43 @@
+{
+  "id": "cardiology.chapter.coronary",
+  "subjectId": "cardiology",
+  "sections": [
+    {
+      "id": "cardiology.coronary.atherothrombosis",
+      "title": {
+        "ko": "관상동맥 죽상판과 급성 혈전 형성",
+        "en": "Coronary Plaques and Atherothrombosis"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/coronary/sections/cardiology.coronary.atherothrombosis.json"
+    },
+    {
+      "id": "cardiology.coronary.flow-reserve",
+      "title": {
+        "ko": "자가조절과 관상동맥 혈류 예비력",
+        "en": "Autoregulation and Coronary Flow Reserve"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/coronary/sections/cardiology.coronary.flow-reserve.json"
+    },
+    {
+      "id": "cardiology.coronary.microvascular-vasospastic",
+      "title": {
+        "ko": "미세혈관 기능 장애와 관상동맥 연축",
+        "en": "Microvascular Dysfunction and Coronary Spasm"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/coronary/sections/cardiology.coronary.microvascular-vasospastic.json"
+    },
+    {
+      "id": "cardiology.coronary.pressure-flow-indices",
+      "title": {
+        "ko": "압력비와 혈류 지표의 통합 해석",
+        "en": "Integrating Coronary Pressure and Flow Indices"
+      },
+      "path": "domains/05-internal-medicine/subjects/cardiology/chapters/coronary/sections/cardiology.coronary.pressure-flow-indices.json"
+    }
+  ],
+  "status": "partial",
+  "title": {
+    "ko": "관상동맥의 구조·기능과 질환",
+    "en": "Coronary Structure Function and Disease"
+  }
+}

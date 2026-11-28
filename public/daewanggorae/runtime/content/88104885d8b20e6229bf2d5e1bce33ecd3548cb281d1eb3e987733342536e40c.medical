@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.surface-pressure-0858",
+  "lessonId": "dermatology.pressure-injury.tissue-loading",
+  "title": "고정 힘과 접촉 면적",
+  "series": [
+    {
+      "label": "수직 힘 100N",
+      "samples": [
+        {
+          "x": 25,
+          "y": 40.0
+        },
+        {
+          "x": 50,
+          "y": 20.0
+        },
+        {
+          "x": 75,
+          "y": 13.333333333333
+        },
+        {
+          "x": 100,
+          "y": 10.0
+        },
+        {
+          "x": 125,
+          "y": 8.0
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "forceN": 100,
+    "formula": "100/(x*1e-4)/1000",
+    "notInternalTissuePressureOrInjuryThreshold": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 25,
+      "max": 125,
+      "scale": "linear",
+      "ticks": [
+        25,
+        50,
+        75,
+        100,
+        125
+      ],
+      "label": "접촉 면적(cm²)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 50,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        12.5,
+        25.0,
+        37.5,
+        50.0
+      ],
+      "label": "평균 압력(kPa)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "수직 힘 100N",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립적인 수학 모형이다. 실제 환자 관측값·진단 경계·처방 설정이 아니다."
+  ],
+  "sourceImageUsed": false
+}

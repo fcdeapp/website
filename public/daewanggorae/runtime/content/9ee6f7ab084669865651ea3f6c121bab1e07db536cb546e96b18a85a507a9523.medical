@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.diagnosis.syncope-assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.diagnosis.syncope-assessment.b.36357805cb57",
+      "sourceSha256": "36357805cb57c1f74e2bdf49c246dd57b6576cdbe5d064837825e55ee59879ea",
+      "sourceLengthUtf16": 265,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.syncope-assessment.b.177f0c900105",
+      "sourceSha256": "177f0c900105d1f3afec47a75a765896dd2db001e994703e1358fc7b3649a661",
+      "sourceLengthUtf16": 228,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.syncope-assessment.b.9fe8197ff88e",
+      "sourceSha256": "9fe8197ff88eb56e9cbb31f79eeac2e2b4f29b4f9a06286cc7b743fab6aefc6e",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.1a1a2e8a896d7649768c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 156,
+            "end": 205,
+            "exact": "갑작스러운 시작과 전구 증상 부재는 중요한 단서지만 이것만으로 부정맥을 확진하지 않는다.",
+            "prefix": "을 멈춘 뒤의 사건은 같은 상황이 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.syncope-assessment.b.5497039132c4",
+      "sourceSha256": "5497039132c44f05ecfb0199b191ec0a1f31747756ae3d500063ccff670232a7",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.f1d26bf76ba36910d34d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 102,
+            "end": 105,
+            "exact": "뇌전증",
+            "prefix": " 움직임이 있었다는 이유만으로 모든 사건을 ",
+            "suffix": "이라고 판단하지 않는다. 저관류 중에도 비자"
+          },
+          "conceptId": "reader.term.8a39cd8bd33af7ea",
+          "targetDocumentId": "neurology.epilepsy.first-seizure-eeg"
+        },
+        {
+          "id": "ann.9c5a2f9bb5bcecc938aa",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 193,
+            "end": 224,
+            "exact": "한 소견의 유무보다 사건 전체의 시간적 순서가 중요하다.",
+            "prefix": "는 양상 등은 다른 기전을 평가하게 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.syncope-assessment.b.45199fb6b42d",
+      "sourceSha256": "45199fb6b42d282abadd6a2184868123b728901279cbf5b98ee61bf33d6aaf71",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.syncope-assessment.b.78f8f9e1c8bb",
+      "sourceSha256": "78f8f9e1c8bbc4f057501fafba59c03b64fbf052352d40a93e11fa2f053edad9",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.diagnosis.syncope-assessment.b.da68d4e68e43",
+      "sourceSha256": "da68d4e68e4321c50d5356490ba39dd68a84209d66ae886824db2aedf01ede3c",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.374b353554dc6361e00b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 129,
+            "end": 217,
+            "exact": "미국 2017년 실신 지침의 공개 설명은 병력·진찰·심전도의 중요성과, 국소 신경학적 단서 없이 일률적으로 시행하는 신경 영상·뇌파의 제한적 역할을 구별한다.",
+            "prefix": " 것만으로 진단의 질이 좋아지지는 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.diagnosis.syncope-assessment.b.08292dc18b7a",
+      "sourceSha256": "a7f9d2ddc0a29fde4edb2b4ffeaf1839b082f29972ea8c89154a56937e40fd75",
+      "sourceLengthUtf16": 125,
+      "annotations": []
+    }
+  ]
+}

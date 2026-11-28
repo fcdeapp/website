@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.shock.venous-backpressure",
+  "subjectId": "pathology",
+  "chapterId": "shock",
+  "title": {
+    "ko": "정맥 울혈과 장기 관류의 배출 조건",
+    "en": "Venous Congestion and Organ Outflow Conditions"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.shock.venous-backpressure.lo.01",
+      "text": "유입압과 배출압을 함께 해석한다"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.lo.02",
+      "text": "정맥 용적·울혈·조직압을 구별한다"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.lo.03",
+      "text": "관류와 체액의 이득·위해를 통합한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.shock.venous-backpressure.b.e097befc628d",
+      "type": "heading",
+      "level": 2,
+      "text": "순환의 뒤쪽도 압력이다"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.4ceefe16ecbb",
+      "type": "paragraph",
+      "markdown": "장기를 흐르게 하는 힘을 설명하려면 유입 쪽 압력뿐 아니라 배출 쪽 조건이 필요하다. 정맥압이 높아지면 같은 동맥압에서도 유효한 압력차가 작아질 수 있다. 단순 선형 회로에서 Q=(Pa−Pv)/R로 두면 Pa80,Pv5,R15일 때 Q는5이고, Pa가같은데 Pv20이면4다. 단위가 일치하는 독립 회로의 예시로, 실제 장기 유량의 정상값이나 환자의 관류를 보정한 식은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.9b03bd6e6bdf",
+      "type": "paragraph",
+      "markdown": "실제 장기에는 자동 조절과 변형 가능한 혈관, 조직압과 구획의 제한이 있다. 모든 경우에 측정한 중심정맥압이 각 장기의 실제 배출압과 정확히 같지는 않다. 따라서 단순 회로는 압력차의 방향을 이해하는 도구이며 모든 조직의 유량을 직접 계산하는 환자 모델이 아니다. 측정 위치와 실제 생리적 질문을 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.9c6260682ffb",
+      "type": "heading",
+      "level": 2,
+      "text": "압력과 용적은 한 가지 정보가 아니다"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.f9ca3d17cdd4",
+      "type": "paragraph",
+      "markdown": "정맥계는 많은 혈액을 저장하고 긴장도 변화로 유효한 환류를 바꿀 수 있다. 같은 혈액량에서도 정맥의 긴장과 분포가 달라지면 중심 압력과 환류 조건이 달라진다. 반대로 측정한 압력이 같아도 심장·흉강과 혈관의 순응도가 다르면 용적은 다를 수 있다. 압력 한 숫자를 혈액량의 직접 눈금으로 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.c4dd613e7bff",
+      "type": "paragraph",
+      "markdown": "양압환기와 호흡, 우심실 기능과 판막은 중심정맥압 해석에 영향을 준다. 복강 내 압력과 장기의 배출 조건도 중요하다. 파형과 측정 기준점, 시점을 확인하지 않으면 실제 변화와 장치·주변 압력의 변화를 혼동할 수 있다. 어떤 수치가 높다는 말에는 무엇을 기준으로 어디에서 측정했는지가 포함되어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.0c9f78385f0b",
+      "type": "heading",
+      "level": 2,
+      "text": "신장의 공급과 배출"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.bed9ad83ad53",
+      "type": "paragraph",
+      "markdown": "정맥 쪽 압력은 신장 혈관·간질과 여과·세뇨관 처리의 조건에 영향을 줄 수 있다. 동맥 쪽 공급이 유지되어도 울혈과 조직의 압력 환경이 기능을 저해할 수 있다. 신기능 악화를 언제나 혈액량 부족 하나로만 설명하면 이 경로를 놓친다. 급성 질병에서는 저유량과 울혈이 동시에 있을 수도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.fae68ba28afd",
+      "type": "paragraph",
+      "markdown": "신장은 장기 전체의 유량뿐 아니라 여과와 수송의 에너지 요구, 수질의 산소 환경이 다르다. 정맥압을 낮추는 변화가 관류에 도움이 될 수 있는 상황과, 지나친 체액 감소로 유입이 줄어드는 위험을 함께 보아야 한다. 두 방향의 가능성이 있다는 사실이 아무 결정도 할 수 없다는 뜻은 아니다. 환자별 자료로 현재 제한 요소를 분해하는 것이 목적이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.4a6634ee82f1",
+      "type": "heading",
+      "level": 2,
+      "text": "간과 장의 정맥 환경"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.4973722f4a82",
+      "type": "paragraph",
+      "markdown": "간정맥과 우심계의 연결은 간의 울혈과 산소 예비력에 중요하다. 혈액이 많이 고여 보이는 것과 산소가 충분히 전달·이용되는 것은 다른 개념이다. 울혈에 저유량·저산소가 겹치면 손상의 기여가 달라질 수 있다. 간효소와 합성·배설 기능을 같은 지표로 취급하지 않고 시간 경과와 순환 조건을 함께 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.2e00113864d8",
+      "type": "paragraph",
+      "markdown": "장관에서도 정맥 배출 장애와 벽의 부종·압력은 동맥 유입과 다른 축의 문제다. 큰 동맥이 열려 있다는 사실만으로 점막의 모든 관류가 충분하다고 할 수 없다. 울혈·팽창·염증과 현재의 전신 순환을 함께 평가한다. 해부학적 개통, 유효 혈류와 조직 생존은 각각 다른 결과다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.fa6f63d166fc",
+      "type": "heading",
+      "level": 2,
+      "text": "체액 관리의 목적을 나눈다"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.4a186b9903ae",
+      "type": "paragraph",
+      "markdown": "추가 체액으로 유량이 늘 수 있는 성질이 있다고 반드시 그 체액이 필요한 것은 아니다. 이미 높은 배출압과 부종의 비용이 있는지, 실제로 개선하려는 관류 문제가 무엇인지 확인한다. 반대로 울혈이 있다는 이유만으로 모든 환자의 유효 충만이 충분하다고 단정할 수도 없다. 압력·유량·조직 기능과 시간별 반응을 종합한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.c4e996e939df",
+      "type": "paragraph",
+      "markdown": "중재 뒤에는 압력이 바뀌었다는 사실과 장기 기능이 좋아졌다는 결과를 따로 확인한다. 크레아티닌·간효소와 소변량은 변화의 시간과 기전이 다르다. 환자의 호흡·활동과 부종·증상도 추적해야 한다. 실제 교정의 용량·순서·속도는 기전식 하나로 결정하지 않고 질환과 현재 위험에 맞는 근거를 적용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.d145ea72e917",
+      "type": "paragraph",
+      "markdown": "같은 혈관 내 압력이라도 주변 압력이 달라지면 혈관 벽을 실제로 늘리는 경벽압은 달라진다. 예를 들어 흉강 압력이 높아진 뒤 중심정맥압이 상승했다면, 그 변화 전부를 혈액량 증가로 해석할 수 없다. 호흡 주기와 환기 설정, 측정 기준점을 기록하는 이유다. 압력 파형의 모양과 시간적 변화도 단일 평균값과 다른 정보를 줄 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.b.48c0a58799df",
+      "type": "paragraph",
+      "markdown": "가상 증례에서 평균동맥압이 비슷한 두 시점에 정맥압과 신기능이 함께 변했다고 해서 정맥압만이 원인이라고 단정하지 않는다. 같은 기간에 심박출량·체액·약물·복강 압력이 바뀌었는지 확인한다. 반대로 모든 변수가 섞였다는 이유로 배출압의 생리적 역할을 무시하지도 않는다. 기전으로 가능한 설명과 실제 자료가 뒷받침하는 인과의 강도를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.table.0821",
+      "type": "table",
+      "data": {
+        "title": "관찰과 판단의 구별",
+        "columns": [
+          "관찰",
+          "정보"
+        ],
+        "rows": [
+          [
+            "Pa",
+            "고정"
+          ],
+          [
+            "Pv",
+            "증가"
+          ],
+          [
+            "R",
+            "고정 가정"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pathology.shock.venous-backpressure.diagram.venous-backpressure-flow-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.venous-backpressure-flow-toy",
+      "path": "diagrams/diagram.venous-backpressure-flow-toy.svg",
+      "alt": "고정 유입압에서 배출압의 영향의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/shock/sections/pathology.shock.venous-backpressure.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.shock.venous-backpressure.001",
+    "question.pathology.shock.venous-backpressure.002"
+  ],
+  "relatedLessons": [
+    "pathology.shock.acid-base-integration"
+  ]
+}

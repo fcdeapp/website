@@ -1,0 +1,42 @@
+{
+  "id": "pulmonology.chapter.testing",
+  "subjectId": "pulmonology",
+  "sections": [
+    {
+      "id": "pulmonology.testing.spirometry-quality",
+      "title": {
+        "ko": "폐활량검사의 측정과 품질",
+        "en": "Measurement and Quality in Spirometry"
+      },
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/testing/sections/pulmonology.testing.spirometry-quality.json"
+    },
+    {
+      "id": "pulmonology.testing.flow-volume-loop",
+      "title": {
+        "ko": "유량–용적 곡선과 기류 제한",
+        "en": "Flow Volume Loops and Airflow Limitation"
+      },
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/testing/sections/pulmonology.testing.flow-volume-loop.json"
+    },
+    {
+      "id": "pulmonology.testing.lung-volumes",
+      "title": {
+        "ko": "폐용적·공기포획과 제한성 장애",
+        "en": "Lung Volumes Air Trapping and Restriction"
+      },
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/testing/sections/pulmonology.testing.lung-volumes.json"
+    },
+    {
+      "id": "pulmonology.testing.diffusing-capacity",
+      "title": {
+        "ko": "일산화탄소확산능과 폐포·혈관",
+        "en": "Carbon Monoxide Transfer and the Alveolar Vascular Unit"
+      },
+      "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/testing/sections/pulmonology.testing.diffusing-capacity.json"
+    }
+  ],
+  "status": "partial",
+  "title": {
+    "ko": "폐기능검사"
+  }
+}

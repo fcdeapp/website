@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.b-cells.aid-affinity-switch",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.b-cells.aid-affinity-switch.b.2e5f9f011bb1",
+      "sourceSha256": "2e5f9f011bb15dafc2c1dc994db8830cd46e1dcaba3e540f82f462b71d46f0cd",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.b-cells.aid-affinity-switch.b.7934ee66e5e7",
+      "sourceSha256": "7934ee66e5e7004437ef830002594cd86b61bce1f60640474612bcdb8775b062",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.b-cells.aid-affinity-switch.b.6e7bf5262546",
+      "sourceSha256": "6e7bf5262546b4f4d411f2ea60f6572c1cd8cb3dda7309434d32a3879af72008",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.b3c26855a590d6de5225",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 35,
+            "end": 50,
+            "exact": "germinal center",
+            "prefix": "합을 좋게도 나쁘게도 할 수 있다. 배중심(",
+            "suffix": ")에서는 B세포가 항원을 얻고 Tfh 도움을"
+          },
+          "conceptId": "reader.term.1966bf382cfdfae7",
+          "targetDocumentId": "immunology.humoral.germinal-center"
+        },
+        {
+          "id": "ann.6c00c29c190e968fc2a3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 165,
+            "end": 188,
+            "exact": "선택 환경과 표적 항원의 변화가 중요하다.",
+            "prefix": "유익한 친화도 증가는 같은 결과가 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.b-cells.aid-affinity-switch.b.7ff0410c7433",
+      "sourceSha256": "7ff0410c74335e2ef9865420e1f62699d5291ac93d372b39d64a0934515b06de",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.b-cells.aid-affinity-switch.b.6f46bb33da02",
+      "sourceSha256": "6f46bb33da0232fdfa53d5b759c2337dc058b026fe7fbfa29772ab83fa856a75",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.12be5eda258227c2bc3a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 110,
+            "end": 114,
+            "exact": "항원제시",
+            "prefix": " 반응이 불량할 수 있다. 이 경로는 다른 ",
+            "suffix": "·방어세포와도 상호작용하므로 단순한 항체 분"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        },
+        {
+          "id": "ann.02a77e58b018e10b295d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 51,
+            "exact": "활성 T세포의 CD40L과 B세포의 CD40 상호작용은 많은 T의존성 항체반응에서 중요하다.",
+            "prefix": "",
+            "suffix": " CD40L이 불량하면 B세포 수가 남아 있"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.b-cells.aid-affinity-switch.b.a1869adf522f",
+      "sourceSha256": "a1869adf522ff22b4e5e7d0ee0245c11b4953c09fec26dd51ea8f25d3947c108",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.b-cells.aid-affinity-switch.b.b1fee7ff1854",
+      "sourceSha256": "b1fee7ff185405d7c54fb51740ab39346b9c974da9ac8e1a591e578efa4f6bad",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.b-cells.aid-affinity-switch.b.c49d6bd85f5c",
+      "sourceSha256": "c49d6bd85f5c114516488e877dc9e1b2e0b660c5253caf66963741b820e23558",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    }
+  ]
+}

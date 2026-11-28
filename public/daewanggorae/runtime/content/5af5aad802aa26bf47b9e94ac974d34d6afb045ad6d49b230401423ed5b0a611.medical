@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.hypothetical-barrier-accumulation-0855",
+  "lessonId": "neuroscience.glia.barrier-neurovascular",
+  "title": "가상 표지물질의 조직 쪽 축적",
+  "series": [
+    {
+      "label": "조건 A",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 4
+        },
+        {
+          "x": 3,
+          "y": 6
+        }
+      ]
+    },
+    {
+      "label": "조건 B",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 3
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "noClearanceOrBindingInference": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 3,
+      "scale": "linear",
+      "ticks": [
+        0,
+        1,
+        2,
+        2,
+        3
+      ],
+      "label": "시간(min)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 8,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "label": "표지물질 축적(pmol)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "조건 A",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "조건 B",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 또는 가상 기록이다. 실제 환자·정상 범위·검사 기준·치료효과·처방과 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.b-cells.development-receptor-editing",
+  "subjectId": "immunology",
+  "chapterId": "b-cells",
+  "title": {
+    "ko": "B세포 발달과 수용체 편집",
+    "en": "B Cell Development and Receptor Editing"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.b-cells.development-receptor-editing.lo.01",
+      "text": "V(D)J 재배열과 발달 점검을 연결한다"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.lo.02",
+      "text": "RAG·BTK의 역할을 구별한다"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.lo.03",
+      "text": "수용체 편집과 동형전환을 비교한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.706bf9f27bcd",
+      "type": "heading",
+      "level": 2,
+      "text": "항원 노출 전에 만들어지는 다양성"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.58fb3f2c9b40",
+      "type": "paragraph",
+      "markdown": "B세포수용체의 다양성은 항원을 보고 필요한 유전자 조각을 새로 만드는 방식이 아니다. 골수 발달 과정에서 RAG1·RAG2가 재조합 신호서열과 관련된 절단을 시작하고, DNA 수선 과정이 유전자 조각을 연결한다. 중쇄에는 V·D·J, 경쇄에는 V·J 조합이 사용된다. 조각 선택과 연결 부위의 변화, 중쇄·경쇄 조합이 다양한 특이성을 만든다. 생산적인 재배열과 유전체의 안전한 복구가 함께 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.1638eba29eb3",
+      "type": "paragraph",
+      "markdown": "성공적으로 만들어진 중쇄는 surrogate light chain과 함께 pre-BCR 점검에 참여한다. 이후 경쇄의 재배열과 완전한 BCR 형성으로 진행한다. 발달 단계의 신호가 불량하면 말초에서 B세포가 적어질 수 있다. 항원이 부족해서 세포가 처음 만들어지지 않은 상황과 발달 장치의 결함은 다르다. 발달 초기의 결함은 다양한 항체가 전반적으로 부족한 결과로 나타날 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.8d2113520a3c",
+      "type": "heading",
+      "level": 2,
+      "text": "신호를 전달하는 부품"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.dc14c1befcb0",
+      "type": "paragraph",
+      "markdown": "막 면역글로불린은 항원 결합에, Igα·Igβ(CD79a·CD79b) 등은 신호 전달에 중요하다. BTK와 다른 kinase·효소 경로는 발달과 활성 신호를 연결한다. 표면 면역글로불린이 있다고 하위 신호가 모두 정상인 것은 아니다. 반대로 세포가 거의 없으면 혈중 항체 감소가 형질세포 분비 조절의 문제인지부터 따지는 것은 순서가 맞지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.523455e7d8a3",
+      "type": "paragraph",
+      "markdown": "BTK 관련 X연관 무감마글로불린혈증은 대표적인 발달 결함이지만, 비슷한 세포·항체 패턴을 만드는 다른 유전자와 이차성 원인도 있다. 혈중 B세포의 감소만으로 특정 유전자를 확정하지 않는다. 연령, 모체 항체와 치료로 투여된 면역글로불린은 항체 농도 해석에 영향을 준다. 기능하는 B세포 수와 현재 혈중 항체량은 다른 시간층의 정보다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.50ae7d3a00b1",
+      "type": "heading",
+      "level": 2,
+      "text": "자기반응 수용체를 고친다"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.9c6be262ee68",
+      "type": "paragraph",
+      "markdown": "미성숙 B세포가 자기 항원에 강하게 반응하면 제거되거나 반응성이 낮아질 수 있고, 경쇄 재배열을 다시 하여 특이성을 바꾸는 수용체 편집(receptor editing)이 일어날 수 있다. 편집은 발달 중 자기반응성 제한의 한 방식이다. 같은 가변부를 두고 중쇄 불변부를 바꾸는 class-switch recombination과는 목적·시점·분자 장치가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.042736405a16",
+      "type": "paragraph",
+      "markdown": "편집 뒤 새로운 경쇄가 자기반응성을 줄일 수 있지만 모든 편집이 반드시 적절한 수용체를 만드는 것은 아니다. 생산성·특이성과 생존 점검이 계속 필요하다. 일부 자기반응성 세포가 말초에 남더라도 추가 관용 장치가 작동한다. 자가항체 또는 자기 결합 B세포가 검출된다는 사실만으로 임상적 자기조직 손상이 확정되지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.8b26a841afe0",
+      "type": "heading",
+      "level": 2,
+      "text": "세포 수를 발달 단계와 연결한다"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.8088f60429ac",
+      "type": "paragraph",
+      "markdown": "Pro-B, pre-B와 미성숙·성숙 B세포를 구분하는 표지는 발달 위치를 추정하는 데 도움을 준다. 그러나 표지 한 가지는 활성 상태나 채취 조직에 따라 달라질 수 있다. 혈액 표본은 골수의 모든 발달 단계를 대표하지도 않는다. 여러 표지와 기능, 유전 자료를 결합하여 가능한 결함을 좁힌다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.b.4c4593c7ec29",
+      "type": "paragraph",
+      "markdown": "RAG 관련 재배열 결함은 T세포 수용체 발달에도 영향을 줄 수 있으므로 B세포만의 문제로 제한하지 않는다. 완전한 기능 소실과 일부 잔여 기능이 있는 경우의 표현형도 다를 수 있다. 반복 감염과 자기염증·자가면역이 함께 존재할 수 있다는 점은 면역결핍이 언제나 단순한 반응 감소만 만드는 것이 아님을 보여 준다. 세포 수, repertoire의 다양성과 기능을 함께 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.development-receptor-editing.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "RAG",
+            "발달 시 수용체 재배열 시작"
+          ],
+          [
+            "Pre-BCR",
+            "중쇄 형성 뒤 발달 점검"
+          ],
+          [
+            "BTK",
+            "발달·BCR 관련 신호"
+          ],
+          [
+            "수용체 편집",
+            "자기반응성 제한을 위한 특이성 수정"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/b-cells/sections/immunology.b-cells.development-receptor-editing.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.b-cells.development-receptor-editing.001"
+  ],
+  "relatedLessons": [
+    "immunology.tolerance.peripheral-regulation",
+    "immunology.b-cells.aid-affinity-switch"
+  ]
+}

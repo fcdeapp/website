@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.cell.accumulations-calcification",
+  "subjectId": "pathology",
+  "chapterId": "cell",
+  "title": {
+    "ko": "세포내 축적과 병적 석회화",
+    "en": "Intracellular Accumulations and Pathologic Calcification"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.cell.accumulations-calcification.lo.01",
+      "text": "물질 축적을 유입·생성·처리·배출의 수지로 설명한다"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.lo.02",
+      "text": "대표 색소와 저장 물질의 해석을 구별한다"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.lo.03",
+      "text": "이영양성·전이성 석회화와 골형성을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.cell.accumulations-calcification.b.5352a14cf62d",
+      "type": "heading",
+      "level": 2,
+      "text": "축적은 물질의 양과 위치가 바뀐 결과다"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.635e521ebab3",
+      "type": "paragraph",
+      "markdown": "세포내 축적(intracellular accumulation)은 정상 성분이 과도해지거나 비정상 성분의 처리가 제한되어 세포 안에 물질이 쌓이는 현상이다. 유입과 합성 증가,접힘·수송·분해 장애,외부에서 들어온 물질의 제거 곤란이 원인이 될 수 있다. 같은 형태의 공포가 보여도 지질·글리코젠·물·단백질인지 구별해야 하며,고정·표본 처리 중 성분이 빠져나간 빈 공간인지도 확인한다. 형태 소견은 분석의 시작이며 화학적 정체와 원인을 동시에 확정하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.44e58067953d",
+      "type": "paragraph",
+      "markdown": "단순 수지에서 축적량 M의 변화는 유입률 I와 제거률 O의 차이,dM/dt=I−O다. 가상 조건 I=8단위/일,O=5단위/일이면 하루 순증가는3단위다. 양이 늘었다는 사실만으로 유입이 증가했는지 제거가 감소했는지는 알 수 없다. 일정 제거를 두는 모형은 실제 세포의 포화·되먹임·분열을 생략하므로 원인 규명에는 시간별 유량과 효소·수송의 측정이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.017fe5a74dc2",
+      "type": "heading",
+      "level": 2,
+      "text": "지방과 단백질의 축적"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.282711dad4b3",
+      "type": "paragraph",
+      "markdown": "지방변성(steatosis)은 세포내 중성지방 축적을 뜻하며 간에서 흔히 관찰된다. 유리지방산의 공급,새 합성,산화,지질단백 조립과 배출의 균형이 바뀌면 발생할 수 있다. 지방방울의 크기·분포와 핵의 위치는 형태적 단서이지만 원인과 염증·섬유화의 정도는 별도로 평가한다. 지방이 보인다는 사실만으로 특정 원인이나 진행 병기가 확정되지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.3f81bbc859e6",
+      "type": "paragraph",
+      "markdown": "단백질 축적은 재흡수한 단백질의 증가,면역글로불린 합성의 증가,비정상 단백질의 접힘·수송 장애 등 여러 상황에서 생길 수 있다. 호산성 물질이라는 염색 성질만으로 단백질 종류를 특정하지 않는다. 소포체의 처리 능력을 넘는 접힘 스트레스는 적응 반응과 연결되고,지속되면 기능 손상과 세포사멸에 기여할 수 있다. 세포내 단백질 덩어리와 세포외 아밀로이드 침착은 위치와 구조가 다른 질문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.b70d5b405edd",
+      "type": "heading",
+      "level": 2,
+      "text": "글리코젠과 저장 질환"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.4846166bf9fc",
+      "type": "paragraph",
+      "markdown": "글리코젠(glycogen)은 정상적인 에너지 저장 물질이지만 대사 조절 변화나 분해·수송의 유전적 장애에서 축적될 수 있다. 조직에서 PAS 양성이 관찰될 때에는 다른 당질 성분의 염색과 구별하고 효소 처리에 대한 반응 등 보조 검사를 해석한다. 염색 하나만으로 특정 저장 질환의 유전자나 효소 결함을 확진하지 않는다. 장기 분포·생화학·분자 검사를 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.a599ed9e3d07",
+      "type": "paragraph",
+      "markdown": "리소좀 저장 질환(lysosomal storage disease)은 여러 효소·운반 단백질·세포 내 수송 결함을 포함하는 이질적 질환군이다. 공통적으로 처리되지 못한 성분이 축적될 수 있으나 모든 질환의 기질과 장기 침범은 같지 않다. 세포의 풍선 모양 변화나 거품 모양 세포는 다양한 원인에서 나타날 수 있다. 분해 장애가 세포 기능에 미치는 영향에는 직접 축적 외에도 염증과 이차적인 수송·자가포식 변화가 관여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.20a358d799d5",
+      "type": "heading",
+      "level": 2,
+      "text": "색소는 생성 경로와 분포를 읽는다"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.437cca46139c",
+      "type": "paragraph",
+      "markdown": "리포푸신(lipofuscin)은 산화와 분해 뒤 남은 성분과 관련된 과립성 색소로,일부 오래 사는 세포에서 누적될 수 있다. 색소가 많다는 사실을 곧바로 현재의 세포사멸 속도나 특정 질환의 중증도로 바꾸지 않는다. 헤모시데린(hemosiderin)은 철 저장과 관련된 과립으로 국소 출혈 뒤 대식세포에서 관찰되거나 전신 철 과잉 환경에서 나타날 수 있다. 철 염색 양성은 철의 존재를 뒷받침하지만 그 자체로 유전적 철 과부하의 원인을 확진하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.268a04d8c9c8",
+      "type": "paragraph",
+      "markdown": "멜라닌(melanin),빌리루빈(bilirubin)과 외인성 탄소 입자는 생성과 이동 경로가 서로 다르다. 갈색 또는 검은색이라는 육안 색만으로 물질을 동일시하지 않는다. 병리에서는 세포형과 위치,염색 특성,임상 배경을 함께 본다. 외부 입자를 포식한 세포가 보이면 물질의 유입 경로와 배출·림프 이동을 고려하며,모든 입자가 같은 독성과 섬유화 능력을 가진다고 일반화하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.d781d95952db",
+      "type": "heading",
+      "level": 2,
+      "text": "석회화와 골형성의 구별"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.933c8bea8526",
+      "type": "paragraph",
+      "markdown": "이영양성 석회화(dystrophic calcification)는 손상되거나 죽은 조직의 국소 환경에서 칼슘염이 침착하는 현상으로,혈중 칼슘·인 수치가 정상이어도 발생할 수 있다. 전이성 석회화(metastatic calcification)는 전신 칼슘·인 대사의 이상과 연결된 침착을 가리킨다. 전이성이라는 이름은 암세포의 전이를 뜻하지 않는다. 실제 석회화에는 국소 손상과 전신 대사 변화가 함께 작용할 수 있어 한 순간의 혈액검사만으로 모든 병인을 나누지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.b.8a8b9b324fbf",
+      "type": "paragraph",
+      "markdown": "석회화와 골형성(ossification)은 동의어가 아니다. 골형성에서는 골모세포·골기질과 조직화된 뼈 구조를 평가한다. 혈관 석회화 역시 수동적인 소금 침전만으로 설명되지 않고 세포의 표현형·염증·기질 및 무기질 조절이 관여할 수 있다. 조직 내 광물 성분의 위치를 분자적 원인이나 임상 위험과 바로 동일시하지 않는다. 특히 혈청 칼슘×인의 단일 곱을 모든 석회화의 보편 진단 절단값으로 쓰는 것은 부정확하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.diagram.accumulation-net-input",
+      "type": "diagram",
+      "diagramRef": "diagram.accumulation-net-input",
+      "path": "diagrams/diagram.accumulation-net-input.svg",
+      "alt": "일정 유입·유출의 축적의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.diagram.calcification-question-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.calcification-question-pairs",
+      "path": "diagrams/diagram.calcification-question-pairs.svg",
+      "alt": "침착과 원인의 다른 층의 단계별 비교"
+    },
+    {
+      "id": "pathology.cell.accumulations-calcification.table.compare",
+      "type": "table",
+      "data": {
+        "title": "축적의 평가 축",
+        "columns": [
+          "관찰",
+          "확인할 것"
+        ],
+        "rows": [
+          [
+            "공포",
+            "물·지질·당질·처리 인공물"
+          ],
+          [
+            "색소",
+            "위치·세포형·염색"
+          ],
+          [
+            "국소 광물",
+            "손상·대사 맥락"
+          ],
+          [
+            "골형성",
+            "골세포·골기질과 조직화"
+          ]
+        ],
+        "notes": "정의와 대표 관계의 비교이며 임상 단일 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/cell/sections/pathology.cell.accumulations-calcification.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "축적은 유입·처리·배출의 수지와 위치를 함께 해석한다."
+  ],
+  "relatedLessons": [
+    "pathology.hemodynamics.edema-fluid-balance",
+    "pathology.hemodynamics.thrombosis-embolism"
+  ],
+  "reviewQuestions": [
+    "question.pathology.cell.accumulations-calcification.001",
+    "question.pathology.cell.accumulations-calcification.002"
+  ]
+}

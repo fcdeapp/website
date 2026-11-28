@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.cardiovascular.renal-drug-interactions",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.486176ad4a15",
+      "sourceSha256": "486176ad4a15292a97855f0ef1c484682a6acb1b7950a2e3b8ddf97411b36674",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.9ae2568f2727",
+      "sourceSha256": "9ae2568f2727d8add6c6cf3df5cb0355743dbbde7f3f82d893b9f6c84b5c6fa3",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.0fa19567aab2418f7e3a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 152,
+            "end": 184,
+            "exact": "총체액과 장기 관류에 기여하는 순환 상태를 구별해야 한다.",
+            "prefix": "내 유효순환이 충분하다고 단정하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.09d261375908",
+      "sourceSha256": "09d261375908d2af775800764c9bb27c2bef9f05a72fcdf436c0308ff4cfe8a0",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.a4f5af0cdd44",
+      "sourceSha256": "a4f5af0cdd446f8d67d644c73d02c8d6b934bc4e06c15e327ddf714d816f15cd",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.ae0197bc84c9e4d52641",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 62,
+            "end": 157,
+            "exact": "약물의 신장 영향에는 혈역학적 기전 외에 간질성 신염 등 다른 경로도 있으므로, NSAID 사용 뒤 신기능이 변했다고 원인을 항상 한 가지 혈관 반응으로 확정하지 않는다.",
+            "prefix": "명뿐 아니라 성분과 중복을 확인해야 한다. ",
+            "suffix": " 투여 시점·증상·검사와 대체 원인을 함께 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.fede8411e0db",
+      "sourceSha256": "fede8411e0db5ab62b2ba3c396e788028f94cf3b54afce0c7b5cf4d23506581b",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.89fa8547da072a14c495",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 11,
+            "end": 25,
+            "exact": "angiotensin II",
+            "prefix": "ACEi나 ARB는 ",
+            "suffix": " 관련 수출 쪽 긴장을 낮추어 사구체 내 압"
+          },
+          "conceptId": "reader.term.3daef66a52cb90df",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.4f5a5671a7e8a062ddfa",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 123,
+            "exact": "RAAS",
+            "prefix": "러 장치가 동시에 약해질 수 있다. 이뇨제·",
+            "suffix": " 억제제·NSAID를 함께 평가할 때의 핵심"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.e8fd535d4bcafaae30cb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 115,
+            "end": 172,
+            "exact": "이뇨제·RAAS 억제제·NSAID를 함께 평가할 때의 핵심은 개별 약물의 이름보다 이 기능적 중첩이다.",
+            "prefix": "하던 여러 장치가 동시에 약해질 수 있다. ",
+            "suffix": " 급성 질병, 구토·설사와 섭취 감소는 같은"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.65364111d979",
+      "sourceSha256": "65364111d979b6fb647843b7662a4af61885f3b0efdc7edeb914449a242bbdf9",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.57339c1926d1",
+      "sourceSha256": "57339c1926d169a777aef7c71ab1b35e82366f9514822caefe79187f219671cd",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.85d923ba940d03853ff7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 87,
+            "end": 90,
+            "exact": "GFR",
+            "prefix": "에 도달하지 않는다. 급성 변화 중의 추정 ",
+            "suffix": " 수치를 안정 상태와 똑같이 읽지 않아야 하"
+          },
+          "conceptId": "reader.term.301f3dc8f905a00f",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.ddf9cca0d2d6",
+      "sourceSha256": "ddf9cca0d2d6f20bbc0aa9d81f673a968923e7ce6cc87aaaa744563f2d2c5edc",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.d48b6cbf3e71",
+      "sourceSha256": "d48b6cbf3e712d961fcdc553ce676a86e01df03741173a6b79882dceb2dd32fe",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.88d54beea1f78f6ff641",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 30,
+            "end": 33,
+            "exact": "청소율",
+            "prefix": "구획 모형에서 생성률 G가 일정하고 제거가 ",
+            "suffix": " Cl과 농도 C의 곱이면 정상상태는 C=G"
+          },
+          "conceptId": "reader.term.52a8b75072525e18",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.2e176473264c",
+      "sourceSha256": "2e176473264cb9ef6e88c051cb637a0002cdb404631ee24ee6980f8c1238e1e6",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.541b0929129d",
+      "sourceSha256": "541b0929129d23397a4d100995608d405aeae6bf61ef34775f125859c017f5d0",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.65e21a0fd538ad79ec63",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 84,
+            "end": 87,
+            "exact": "약동학",
+            "prefix": "액·크레아티닌·칼륨의 변화와 이를 대조하면 ",
+            "suffix": "적 노출 증가인지, 같은 기능에 대한 영향의"
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renal-drug-interactions.b.0e05d0e9609d",
+      "sourceSha256": "0e05d0e9609d8624f1cc9a2b8bb541b2a33b363bb4720286427f30b50db9eb4e",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.7ff8f6183a1303901603",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 168,
+            "end": 173,
+            "exact": "약물 조정",
+            "prefix": "하는 도구이며 임상 결과를 자동 확정하거나 ",
+            "suffix": "의 구체 용법을 대신하는 규칙이 아니다."
+          },
+          "conceptId": "reader.term.4d94a87f27739d1c",
+          "targetDocumentId": "patient-safety.medication.reconciliation-systems"
+        }
+      ]
+    }
+  ]
+}

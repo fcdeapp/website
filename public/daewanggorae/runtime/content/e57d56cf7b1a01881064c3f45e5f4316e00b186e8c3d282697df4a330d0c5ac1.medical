@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.methods.susceptibility-interpretation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.methods.susceptibility-interpretation.b.e7fd73a96375",
+      "sourceSha256": "e7fd73a96375550f756decc595930c7ede2778ac654e4c330f4d91651f797d56",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.6e98760a4a665bd4632d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 133,
+            "end": 136,
+            "exact": "약동학",
+            "prefix": "물이 도달할 수 있는 노출과 미생물 분포, ",
+            "suffix": "·약력학과 임상 자료가 기준 설정에 관련된다"
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        },
+        {
+          "id": "ann.b5e8c07bf3b3fdaf79b8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 137,
+            "end": 140,
+            "exact": "약력학",
+            "prefix": "달할 수 있는 노출과 미생물 분포, 약동학·",
+            "suffix": "과 임상 자료가 기준 설정에 관련된다. 같은"
+          },
+          "conceptId": "reader.term.3f6c24ce1179f5f7",
+          "targetDocumentId": "pharmacology.general.pharmacodynamics"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.methods.susceptibility-interpretation.b.6db823c7d4c5",
+      "sourceSha256": "6db823c7d4c55ce34acd6706a5d726e220c093b38a1134756ec9c1375f5a6766",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.259062795fa94f2d177e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 172,
+            "end": 212,
+            "exact": "기준이 답하는 질문을 구별해야 역학 정보와 임상 판단을 혼동하지 않는다.",
+            "prefix": "출 조건에서 반드시 실패하는 것도 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.methods.susceptibility-interpretation.b.7b66638ee937",
+      "sourceSha256": "7b66638ee937dacd6444156ab3c6363932a850dba8d32c2712e072b14accb4b0",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.susceptibility-interpretation.b.c30e2266bc84",
+      "sourceSha256": "c30e2266bc8427ce5445431dec5fa26ff5d021fd957aba55ecc692a4909aa79d",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.susceptibility-interpretation.b.dcdc90381b94",
+      "sourceSha256": "dcdc90381b947a1715b8cb638905902c66a63a86a7e5ad7dd97af52418544a00",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.susceptibility-interpretation.b.57471c173565",
+      "sourceSha256": "57471c173565f157ff170341cfd71c64bb973c3f8f6393c89ed15a831745050a",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.susceptibility-interpretation.b.5265ccf14dfd",
+      "sourceSha256": "5265ccf14dfd13744cb95d2c4383bc69d2804dd085b2804610604bdda009705e",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.methods.susceptibility-interpretation.b.7217150d4adf",
+      "sourceSha256": "7217150d4adfc5b8d505141dd439f0375d8e6893bac75733c4c6cfd00f3969c6",
+      "sourceLengthUtf16": 184,
+      "annotations": []
+    }
+  ]
+}

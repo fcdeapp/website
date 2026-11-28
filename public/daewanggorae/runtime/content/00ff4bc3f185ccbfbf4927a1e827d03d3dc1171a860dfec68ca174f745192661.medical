@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-hcg-followup-0851",
+  "lessonId": "obstetrics.early-pregnancy.location-viability",
+  "title": "가상 초기 임신 hCG 추적",
+  "series": [
+    {
+      "label": "독립 가상 증례",
+      "samples": [
+        {
+          "x": 0,
+          "y": 1000
+        },
+        {
+          "x": 48,
+          "y": 1400
+        },
+        {
+          "x": 96,
+          "y": 1700
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "hours": [
+      0,
+      48,
+      96
+    ],
+    "values": [
+      1000,
+      1400,
+      1700
+    ],
+    "notViabilityOrLocationCriterion": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 96,
+      "scale": "linear",
+      "ticks": [
+        0,
+        0,
+        48,
+        96,
+        96
+      ],
+      "label": "첫 채혈 뒤 시간(h)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 2000,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        500.0,
+        1000.0,
+        1500.0,
+        2000.0
+      ],
+      "label": "hCG(IU/L)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "독립 가상 증례",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·정상 범위·전형적 임신 경과·투약·검사/분만/치료 기준을 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

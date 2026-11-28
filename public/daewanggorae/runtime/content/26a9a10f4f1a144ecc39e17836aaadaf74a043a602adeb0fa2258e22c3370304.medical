@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology",
+  "title": {
+    "ko": "신경과학 및 임상신경학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "neurology.chapter.localization",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/localization/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.examination",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/examination/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.stroke",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/stroke/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.epilepsy",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/epilepsy/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.headache",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/headache/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.cognition",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/cognition/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.movement",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/movement/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.neuropathy",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/neuropathy/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.nmj",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/nmj/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.motor-neuron",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/motor-neuron/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.inflammation",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/inflammation/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.infection",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/infection/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.vestibular",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/vestibular/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.neurooncology",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/neurooncology/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.cranial",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/cranial/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.spinal",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/spinal/chapter.json"
+    },
+    {
+      "id": "neurology.chapter.neurovascular",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/neurovascular/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "neurology.plan.001",
+    "neurology.plan.002",
+    "neurology.plan.003",
+    "neurology.plan.004",
+    "neurology.plan.005",
+    "neurology.plan.006",
+    "neurology.plan.007",
+    "neurology.localization.stroke",
+    "neurology.examination.localizing-weakness",
+    "neurology.stroke.acute-ischemia-assessment",
+    "neurology.epilepsy.first-seizure-eeg",
+    "neurology.headache.primary-secondary",
+    "neurology.cognition.delirium-dementia",
+    "neurology.movement.parkinson-syndrome",
+    "neurology.movement.tremor-dystonia",
+    "neurology.neuropathy.axonal-demyelinating",
+    "neurology.neuropathy.acute-inflammatory",
+    "neurology.nmj.myasthenia-lambert-eaton",
+    "neurology.motor-neuron.muscle-differential",
+    "neurology.inflammation.multiple-sclerosis-assessment",
+    "neurology.infection.meningitis-encephalitis",
+    "neurology.cognition.dementia-patterns",
+    "neurology.vestibular.dizziness-patterns",
+    "neurology.cognition.gait-hydrocephalus",
+    "neurology.neurooncology.mass-pressure",
+    "neurology.neurooncology.integrated-tumor-diagnosis",
+    "neurology.cranial.ocular-motor-diplopia",
+    "neurology.cranial.facial-trigeminal",
+    "neurology.spinal.myelopathy-cauda-equina",
+    "neurology.neurovascular.intracerebral-hemorrhage",
+    "neurology.neurovascular.subarachnoid-hemorrhage"
+  ]
+}

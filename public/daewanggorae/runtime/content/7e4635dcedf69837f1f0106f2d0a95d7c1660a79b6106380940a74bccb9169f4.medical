@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.oxygen-ratio-0858",
+  "lessonId": "emergency-medicine.dyspnea.initial-assessment",
+  "title": "산소분압 고정 시 비율",
+  "series": [
+    {
+      "label": "PaO₂ 80mmHg",
+      "samples": [
+        {
+          "x": 0.2,
+          "y": 400.0
+        },
+        {
+          "x": 0.3,
+          "y": 266.666666666667
+        },
+        {
+          "x": 0.4,
+          "y": 200.0
+        },
+        {
+          "x": 0.5,
+          "y": 160.0
+        },
+        {
+          "x": 0.6,
+          "y": 133.333333333333
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "PaO2": 80,
+    "formula": "80/x",
+    "notPhysiologicalResponseCurve": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0.2,
+      "max": 0.6,
+      "scale": "linear",
+      "ticks": [
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6
+      ],
+      "label": "흡입산소농도(비율)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 500,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        125.0,
+        250.0,
+        375.0,
+        500.0
+      ],
+      "label": "PaO₂/FiO₂(mmHg)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "PaO₂ 80mmHg",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립적인 수학 모형이다. 실제 환자 관측값·진단 경계·처방 설정이 아니다."
+  ],
+  "sourceImageUsed": false
+}

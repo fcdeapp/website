@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.amyloid-typing-questions",
+  "lessonId": "pathology.proteins.amyloid-deposition",
+  "title": "침착과 전구체의 다른 질문",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "공통 섬유·염색 소견",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "침착 검출 여부",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "AL·AA·ATTR 등 전구체",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "조직의 단백질 유형 확인",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "장기 분포·기능",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "침착량 외 손상 기전",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.amyloid-typing-questions.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "유형 판정과 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.amyloid-typing-questions.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "혈중 단백만으로 확정 안 함",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.amyloid-typing-questions.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "임상 정도 별도 평가",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "실제 병리 사진·편광 영상이나 생검 생략 알고리즘이 아니다."
+  ],
+  "sourceImageUsed": false
+}

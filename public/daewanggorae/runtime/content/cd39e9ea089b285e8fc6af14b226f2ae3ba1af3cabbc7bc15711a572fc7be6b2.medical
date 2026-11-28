@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.vectorial-transport-membranes",
+  "lessonId": "pharmacology.general.transporters-vectorial-flux",
+  "title": "근위세관 양이온 경로의 구획",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "혈액 쪽·바닥가쪽막",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "OCT2 관련 유입",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "세포 안",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "유입·유출·대사의 수지",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "내강 쪽·꼭대기막",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "MATE 관련 이동",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.vectorial-transport-membranes.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "대표 사람 신장 맥락",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.vectorial-transport-membranes.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "축적과 배설 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.vectorial-transport-membranes.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "H+ 등 구동력·조건",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "모든 약물·종의 수송을 포괄하지 않고 실제 세포막 위치의 3D 메시가 아니다."
+  ],
+  "sourceImageUsed": false
+}

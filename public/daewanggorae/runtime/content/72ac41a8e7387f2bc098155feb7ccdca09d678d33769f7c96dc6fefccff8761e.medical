@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.hypothetical-energy-balance-0855",
+  "lessonId": "neuroscience.metabolism.energy-excitotoxicity",
+  "title": "고정 공급에서 수요와 차이",
+  "series": [
+    {
+      "label": "공급−수요",
+      "samples": [
+        {
+          "x": 80,
+          "y": 20
+        },
+        {
+          "x": 100,
+          "y": 0
+        },
+        {
+          "x": 120,
+          "y": -20
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "equation": "100-demand",
+    "notRealATPOrInjuryTime": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 80,
+      "max": 120,
+      "scale": "linear",
+      "ticks": [
+        80,
+        80,
+        100,
+        120,
+        120
+      ],
+      "label": "가상 수요(단위)"
+    },
+    "yAxis": {
+      "min": -40,
+      "max": 40,
+      "scale": "linear",
+      "ticks": [
+        -40.0,
+        -20.0,
+        0.0,
+        20.0,
+        40.0
+      ],
+      "label": "공급−수요(단위)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "공급−수요",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 또는 가상 기록이다. 실제 환자·정상 범위·검사 기준·치료효과·처방과 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

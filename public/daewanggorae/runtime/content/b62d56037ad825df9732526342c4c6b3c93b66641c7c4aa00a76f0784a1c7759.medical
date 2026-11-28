@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.b.8aa84bcc596c",
+      "sourceSha256": "8aa84bcc596c1a306a59fdb31005b0cba4065c07810327b3ed6dfb4bc28d16d0",
+      "sourceLengthUtf16": 221,
+      "annotations": [
+        {
+          "id": "ann.139de543e1d4b664c9dd",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 17,
+            "exact": "Crohn disease",
+            "prefix": "크론병(",
+            "suffix": ")은 소화관의 여러 구간에 불연속적인 염증과"
+          },
+          "conceptId": "reader.term.e3bba5256033da1f",
+          "targetDocumentId": "gastroenterology.inflammation.ibd"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.b.6d3ac819ffe5",
+      "sourceSha256": "6d3ac819ffe57b0b288310d6add44da624229da0b96ee22703178658b4a17e02",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.b.0b360b57c3df",
+      "sourceSha256": "0b360b57c3dff2788113edddb9f088692c83e017eef1d9248e8beb04fb3f2e70",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.b.60e41afe4d0f",
+      "sourceSha256": "60e41afe4d0fd336708d8709d7b33fc9aa9b2058ecfdd9c5be7ad3e0c3a97a05",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.b.9ae304839616",
+      "sourceSha256": "9ae304839616f64dad60dbf3088985b2062b999a5e52b212ba372d733dae076f",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.b.162b52de31ba",
+      "sourceSha256": "162b52de31bafe0b246f5536f5c3f616bbcf553b79a34245edbe51ca44671b8e",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.b.20ba5dcd718d",
+      "sourceSha256": "20ba5dcd718d535afce7e0a6a4bac5f498397729583fec04b6d0b395403a3a12",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.24feca10b1cd695534e8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 168,
+            "end": 192,
+            "exact": "필요한 내시경과 영상·검사 질문을 구별한다.",
+            "prefix": "만으로 모든 질환 통제를 확정하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.b.23a9ab2d2d08",
+      "sourceSha256": "23a9ab2d2d087c06545189a74abc7461d2d29529db4a31c4209bdf042fe27131",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.supp.1811b951b092",
+      "sourceSha256": "1811b951b092c47679686cdafc70a54031c6cf1f4794ecabb2c35414d40335c4",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.4241296582cf1389e252",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 47,
+            "end": 107,
+            "exact": "증상이 식사량과 성상에 따라 달라질 수 있고, 일부 내용물이 지나가더라도 중요한 협착은 남아 있을 수 있다.",
+            "prefix": "과하는 저항과 장운동·분비의 상호작용이다. ",
+            "suffix": " 부종성 염증과 섬유화는 하나의 병변에 함께"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.ibd.crohn-stricture-bowel-preservation.supp.cea191dc46e0",
+      "sourceSha256": "cea191dc46e0ef4875ef6851cf8942b08cad5bf5ab411d2a3467959e58c65fd3",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.18ff3e848df735580a48",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 87,
+            "exact": "남은 길이 외에도 회장·회맹판·결장의 유무와 염증, 연속성이 중요하다.",
+            "prefix": "되어 장기적인 흡수 능력을 바꿀 수 있다. ",
+            "suffix": " 협착성형술은 선택된 병변에서 길이 보존의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.neurovascular.intracerebral-hemorrhage",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.c037e0b6b6b5",
+      "sourceSha256": "c037e0b6b6b518be0a2bdbe66d796ad36432d70887a063b8531d4cce21312dc7",
+      "sourceLengthUtf16": 250,
+      "annotations": [
+        {
+          "id": "ann.28b5edde273a612801c9",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 148,
+            "end": 152,
+            "exact": "뇌척수액",
+            "prefix": "종과 염증·혈액 성분의 독성, 뇌실 침범과 ",
+            "suffix": " 흐름의 변화가 경과에 영향을 준다. 첫 영"
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.e88947e2e4dd",
+      "sourceSha256": "e88947e2e4dda213b3323d46ce8ebf6a4e0685459d82c6d0b47f8c0e4c7fbf99",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.a5c29304d6dfa0e5c7da",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 47,
+            "end": 49,
+            "exact": "소뇌",
+            "prefix": "제공한다. 깊은 구조의 출혈과 엽성 출혈, ",
+            "suffix": "와 뇌간 출혈은 주변 경로와 공간의 조건이 "
+          },
+          "conceptId": "reader.term.4799594fa35f4571",
+          "targetDocumentId": "neuroanatomy.cerebellum.cortex-connections"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.8b6568e66cef",
+      "sourceSha256": "8b6568e66cef613b73903043efaa193c4171b34fecd33bfc213cb03582d1d1ef",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.5b94ddbed91c",
+      "sourceSha256": "5b94ddbed91c455d7ed227a33fb5c37fc5a7f066ce5de007178e8ae09c12ea96",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.868048af2799",
+      "sourceSha256": "868048af27995d6b8c14ecef7ce8e498c3b43ed59a4e6012c5996239b1db5fad",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.9e0bd749896e13b5dedc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 173,
+            "end": 203,
+            "exact": "만성 예방 목표와 급성기의 치료 목표를 구별해야 한다.",
+            "prefix": "다 지속적인 추세와 치료 반응을 확인한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.52f65eecd22f",
+      "sourceSha256": "52f65eecd22f21784a3780e8faad586bfbfd5ebd13a8546f52c3c1d362872ace",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.3162cb6cd43e",
+      "sourceSha256": "3162cb6cd43eb42b551581e5e35be59cd6de27f23dfe235384182eac346a8805",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.4053c526bf74",
+      "sourceSha256": "4053c526bf74f4db0cbf0dbd2294eb9487dd819e38dede4261e3a6cfd6a01ed2",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.74a51db78b1f5d24ac26",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 113,
+            "end": 158,
+            "exact": "사망 감소와 기능 회복도 서로 다른 결과이므로 중재의 근거를 설명할 때 구별한다.",
+            "prefix": "악화, 전신 상태와 치료 목표를 통합한다. ",
+            "suffix": " 중증도 점수는 구조화된 정보를 제공하지만 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.dd8a5a855339",
+      "sourceSha256": "dd8a5a8553396c76a2ceec982f2d94f015669a978585bc859ca0dd5f0688b308",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.0998b8dff4452c180ff2",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 39,
+            "exact": "발작이 확인되거나 의심되는 상황과 예방적 약물 사용의 문제를 구별한다.",
+            "prefix": "",
+            "suffix": " 의식 저하가 출혈 범위에 비해 설명되지 않"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurovascular.intracerebral-hemorrhage.b.53055d65f1ac",
+      "sourceSha256": "53055d65f1ac86512129decbaf329a22e2882803690caeb534998f077443276f",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    }
+  ]
+}

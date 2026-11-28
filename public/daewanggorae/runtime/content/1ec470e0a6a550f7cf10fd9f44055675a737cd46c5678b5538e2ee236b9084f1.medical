@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "endocrinology.diabetes.foundations",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "endocrinology.diabetes.foundations.b.58def06610a5",
+      "sourceSha256": "58def06610a53cc1db2b7c7ad3723b8f4f90a219855d6eca15410ed41e45d027",
+      "sourceLengthUtf16": 276,
+      "annotations": [
+        {
+          "id": "ann.67cf8a84c9ab69e1a4da",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 148,
+            "end": 152,
+            "exact": "글리코젠",
+            "prefix": " 이용 및 저장을 촉진한다. 공복에는 간의 ",
+            "suffix": "분해와 포도당신생이 혈중 공급을 유지하며, "
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        },
+        {
+          "id": "ann.c3456f7c3b4f3e7f7dbb",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 156,
+            "end": 161,
+            "exact": "포도당신생",
+            "prefix": "을 촉진한다. 공복에는 간의 글리코젠분해와 ",
+            "suffix": "이 혈중 공급을 유지하며, 글루카곤과 여러 "
+          },
+          "conceptId": "reader.term.f6becb3579af9222",
+          "targetDocumentId": "biochemistry.carbohydrate.gluconeogenesis"
+        }
+      ]
+    },
+    {
+      "blockId": "endocrinology.diabetes.foundations.b.8769d6a751c7",
+      "sourceSha256": "8769d6a751c78b705f6c14c1616a5c75a6e3a8fafd127f9b09de4984e94472ca",
+      "sourceLengthUtf16": 271,
+      "annotations": [
+        {
+          "id": "ann.1af565d70e3aea17a147",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 204,
+            "end": 271,
+            "exact": "근육과 지방조직에서 GLUT4의 막 이동은 중요한 기전이지만 모든 조직의 포도당 유입이 인슐린 의존적이라는 뜻은 아니다.",
+            "prefix": " 경로를 통해 여러 대사 작용을 연결한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "endocrinology.diabetes.foundations.b.b0d23b18f943",
+      "sourceSha256": "b0d23b18f9431c8392085ad13392b08cd7ffb800936e1fe5545bd34df9657fdf",
+      "sourceLengthUtf16": 262,
+      "annotations": [
+        {
+          "id": "ann.089bd0fbab51894754bf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 163,
+            "end": 201,
+            "exact": "이자질환, 내분비질환, 약물, 임신과 관련된 고혈당도 구분해야 한다.",
+            "prefix": "이나 단일유전자 질환 등을 놓칠 수 있다. ",
+            "suffix": " C-peptide와 자가항체 검사는 분류를"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "endocrinology.diabetes.foundations.b.354c4f1a48cc",
+      "sourceSha256": "354c4f1a48cc4af0739395fbc99a26ee6b8ffd6f07e0ff416cbee02f5af9152b",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "endocrinology.diabetes.foundations.b.515546d201ad",
+      "sourceSha256": "e2a94e2db4c03fb1c4fbc4616045675591413b426efd5c1969f58dc5305cd095",
+      "sourceLengthUtf16": 285,
+      "annotations": []
+    },
+    {
+      "blockId": "endocrinology.diabetes.foundations.b.7af452fa0c9f",
+      "sourceSha256": "7af452fa0c9f6d2c24adc935277be328c5d772136d6b8109e51b4bff1a73c303",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "endocrinology.diabetes.foundations.b.76892472d75b",
+      "sourceSha256": "76892472d75bbb3be2d01a87ec252bd8838d24711ab9b47a1cc8efa77507b9e3",
+      "sourceLengthUtf16": 231,
+      "annotations": [
+        {
+          "id": "ann.f118483df9b800a0b02c",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 118,
+            "exact": "인슐린 결핍이 심하면 지방분해와 케톤 생성이 증가하여 산증으로 이어질 수 있고, 다른 경우에는 현저한 고삼투 상태가 중요하다.",
+            "prefix": " 통해 다뇨·갈증·탈수를 일으킬 수 있다. ",
+            "suffix": " 만성 고혈당은 단백질 당화, 산화스트레스,"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "endocrinology.diabetes.foundations.b.236b38ee631b",
+      "sourceSha256": "0fe8595e280981140014f40fe388de589079057ad8243212581c07198ad36af6",
+      "sourceLengthUtf16": 156,
+      "annotations": [
+        {
+          "id": "ann.2fccc74d7a59d202fcb0",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 64,
+            "exact": "심부전",
+            "prefix": "관리교육과 함께 저혈당 위험, 심혈관질환, ",
+            "suffix": ", 만성콩팥병, 체중, 비용과 접근성을 고려"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.5eb4a1ebe65196bc5489",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 66,
+            "end": 71,
+            "exact": "만성콩팥병",
+            "prefix": " 함께 저혈당 위험, 심혈관질환, 심부전, ",
+            "suffix": ", 체중, 비용과 접근성을 고려해야 한다. "
+          },
+          "conceptId": "reader.term.159be36f6802076a",
+          "targetDocumentId": "nephrology.ckd.evaluation"
+        }
+      ]
+    }
+  ]
+}

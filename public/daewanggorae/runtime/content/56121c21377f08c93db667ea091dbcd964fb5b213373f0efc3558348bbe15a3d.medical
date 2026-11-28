@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.presentation.cross-priming",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.presentation.cross-priming.b.f0ddc63d4e18",
+      "sourceSha256": "f0ddc63d4e18644207b42a28c8e1fc6b25e5328f323d1a9ecfbbee3c0f2bc33b",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.e43b1f8bc989ea6a1290",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 73,
+            "exact": "외부에서 얻은 단백질을 MHC I에 올리는 교차제시(cross-presentation)는 통상적인 항원 경로 분류의 중요한 예외다.",
+            "prefix": "",
+            "suffix": " 수지상세포가 감염 세포나 종양의 성분을 섭"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.presentation.cross-priming.b.d584a1e456b6",
+      "sourceSha256": "d584a1e456b6bedc8a5557d2a1460c2372b7074cd0303e974391f38ffaeed679",
+      "sourceLengthUtf16": 227,
+      "annotations": [
+        {
+          "id": "ann.c73796e8b145a64022ee",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 112,
+            "exact": "펩타이드–MHC I이 만들어졌다는 분자적 결과만으로 충분한 증식·분화가 일어났다고 판단할 수 없다.",
+            "prefix": "도되는 것은 cross-priming이다. ",
+            "suffix": " 공동자극, 사이토카인과 이동 장소가 필요하"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.presentation.cross-priming.b.2cd8dc73458b",
+      "sourceSha256": "2cd8dc73458bec9f9d9252fb85fe3fc7f484589a6986043941de694b9f534bfc",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.presentation.cross-priming.b.c588e511f47b",
+      "sourceSha256": "c588e511f47bad1261b76038a238aeacd82c9768f1e091a83de0c7632523cf1c",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.1c2705ef8744c5f04086",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 67,
+            "exact": "특히 cDC1은 여러 상황에서 교차제시에 중요한 역할을 하지만, 세포군의 이름만으로 모든 조건의 기능을 단정하지 않는다.",
+            "prefix": "",
+            "suffix": " 섭취량과 항원의 보존, 구획 산도·수송과 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.presentation.cross-priming.b.d35e665697ac",
+      "sourceSha256": "d35e665697ac04effdcf65a3673cb07b1d89dadac43a972dbb8362985b786725",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.presentation.cross-priming.b.92c949634afc",
+      "sourceSha256": "92c949634afc6a0df7f21cb9b287d9fc933d1243481848f63582285f99d6aef6",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.presentation.cross-priming.b.24edb77854e1",
+      "sourceSha256": "24edb77854e1f2b8007d46219bd58774cc24ad096293140cb4dfa3e3d159614e",
+      "sourceLengthUtf16": 163,
+      "annotations": [
+        {
+          "id": "ann.5462802f69f637ac4c0b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 47,
+            "end": 52,
+            "exact": "항원 제시",
+            "prefix": "T세포의 형성에 기여할 수 있다. 그렇지만 ",
+            "suffix": "가 관찰되어도 종양 부위에 효과기 세포가 들"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.presentation.cross-priming.b.549ec4064f68",
+      "sourceSha256": "549ec4064f681839fe618af70e7eeee99e3a6a3040b8967d2ecd68a231d4fbe6",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    }
+  ]
+}

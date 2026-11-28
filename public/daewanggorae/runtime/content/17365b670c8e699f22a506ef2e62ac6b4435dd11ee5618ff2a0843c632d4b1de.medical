@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.inflammation.resolution-efferocytosis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.inflammation.resolution-efferocytosis.b.8c9119ea9933",
+      "sourceSha256": "8c9119ea9933d0260cda0d7549a4097f13c3a1c72cc7f0ebda3e77d1cdb420e4",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.resolution-efferocytosis.b.73b7bf7abf22",
+      "sourceSha256": "73b7bf7abf224364c1d5173f9107733f5c3d5724f7e46cf2f0926a36664dbfd4",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.356bb66bc97344663d02",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 15,
+            "end": 24,
+            "exact": "apoptosis",
+            "prefix": "호중구가 임무를 수행한 뒤 ",
+            "suffix": "를 거쳐 대식세포에 의해 처리되는 과정은 종"
+          },
+          "conceptId": "reader.term.712354658cd0ac30",
+          "targetDocumentId": "pathology.cell.injury-death"
+        },
+        {
+          "id": "ann.9ed9174b84bd2c80dd25",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 59,
+            "exact": "호중구가 임무를 수행한 뒤 apoptosis를 거쳐 대식세포에 의해 처리되는 과정은 종료의 중요한 축이다.",
+            "prefix": "",
+            "suffix": " 사멸세포를 포식하여 처리하는 efferoc"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.resolution-efferocytosis.b.c7e8174c1cd7",
+      "sourceSha256": "c7e8174c1cd76abfe4c5e1ab98b38d83a13cd4440fb2120226d9f0c9130bc638",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.resolution-efferocytosis.b.ab128c7f328d",
+      "sourceSha256": "ab128c7f328d6313cd3643307548e1b04c3ed28beae0b36f97a314f7efaeb1fe",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.resolution-efferocytosis.b.b744ed891e8c",
+      "sourceSha256": "b744ed891e8c59d1172d1b3e3346408ca5b49ebede27d31e5c0b83f919050a01",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.resolution-efferocytosis.b.707c6bdcaab9",
+      "sourceSha256": "707c6bdcaab938e6a335270a500b6d5475643a4ca01236bd42862fbc78f1e30f",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.resolution-efferocytosis.b.9ad0e07df506",
+      "sourceSha256": "9ad0e07df5060c710fb49b2d453937ca07d2a4d6a659605fb5479cb3d45ff131",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.resolution-efferocytosis.b.7a4357729719",
+      "sourceSha256": "7a4357729719cbf6208e5befd25528828546d3617fb99af9a89c786a0c6de294",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.5c6c3b92c83554828fe7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 105,
+            "end": 140,
+            "exact": "이들을 자극 제거와 정상 회복을 동반한 능동적 종료와 구별한다.",
+            "prefix": " 이동만 차단되어도 조직 침윤이 줄어든다. ",
+            "suffix": " 종료가 잘 이루어졌다는 결론에는 조직 손상"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

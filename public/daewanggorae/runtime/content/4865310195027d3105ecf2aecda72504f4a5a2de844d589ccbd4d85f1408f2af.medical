@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.alveolar-ventilation-0858",
+  "lessonId": "critical-care.respiratory.ventilation-oxygenation",
+  "title": "분당환기 6L에서 폐포환기",
+  "series": [
+    {
+      "label": "사강 150mL",
+      "samples": [
+        {
+          "x": 200,
+          "y": 1.5
+        },
+        {
+          "x": 250,
+          "y": 2.4
+        },
+        {
+          "x": 300,
+          "y": 3.0
+        },
+        {
+          "x": 400,
+          "y": 3.75
+        },
+        {
+          "x": 500,
+          "y": 4.2
+        },
+        {
+          "x": 600,
+          "y": 4.5
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "minuteMl": 6000,
+    "deadspaceMl": 150,
+    "formula": "(x-150)*(6000/x)/1000"
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 200,
+      "max": 600,
+      "scale": "linear",
+      "ticks": [
+        200,
+        250,
+        300,
+        500,
+        600
+      ],
+      "label": "일회호흡량(mL)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 6,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        1.5,
+        3.0,
+        4.5,
+        6.0
+      ],
+      "label": "폐포환기(L/분)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "사강 150mL",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립적인 수학 모형이다. 실제 환자 관측값·진단 경계·처방 설정이 아니다."
+  ],
+  "sourceImageUsed": false
+}

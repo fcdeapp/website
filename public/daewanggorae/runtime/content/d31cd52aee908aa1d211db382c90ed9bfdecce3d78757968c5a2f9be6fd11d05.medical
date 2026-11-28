@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-repetitive-stimulation-0853",
+  "lessonId": "neurology.nmj.myasthenia-lambert-eaton",
+  "title": "가상 반복 자극 반응",
+  "series": [
+    {
+      "label": "CMAP 진폭",
+      "samples": [
+        {
+          "x": 1,
+          "y": 10
+        },
+        {
+          "x": 2,
+          "y": 9.2
+        },
+        {
+          "x": 3,
+          "y": 8.8
+        },
+        {
+          "x": 4,
+          "y": 8.5
+        },
+        {
+          "x": 5,
+          "y": 8.4
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "stimuli": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "amplitudes_mV": [
+      10,
+      9.2,
+      8.8,
+      8.5,
+      8.4
+    ],
+    "notClinicalCutoffOrMGSubtypeTest": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 5,
+      "scale": "linear",
+      "ticks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "label": "자극 순서"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 12,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        3.0,
+        6.0,
+        9.0,
+        12.0
+      ],
+      "label": "CMAP 진폭(mV)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "CMAP 진폭",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정 또는 가상 증례 자료다. 실제 환자·정상 범위·검사 기준·진단·투약·치료효과와 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

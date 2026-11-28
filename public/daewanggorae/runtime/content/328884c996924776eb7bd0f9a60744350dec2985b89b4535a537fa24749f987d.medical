@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.motor-unit-recruitment-example",
+  "lessonId": "physiology.neuro.motor-units-reflexes",
+  "title": "고정 힘 단위의 단순 동원",
+  "series": [
+    {
+      "label": "단순 합",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 10
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "unitForces": [
+      2,
+      3,
+      5
+    ],
+    "fixedLengthRate": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 3,
+      "scale": "linear",
+      "ticks": [
+        0,
+        1,
+        2,
+        2,
+        3
+      ],
+      "label": "동원 단위 수"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 10,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        2.5,
+        5.0,
+        7.5,
+        10.0
+      ],
+      "label": "힘 (임의단위)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "단순 합",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "정수단위의독립산술모형이다. 실제운동단위분포·근육힘곡선이아니다.",
+    "연결선은부분운동단위나연속동원법칙을뜻하지않는다."
+  ],
+  "sourceImageUsed": false
+}

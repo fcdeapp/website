@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.diuretic-segment-pairs",
+  "lessonId": "pharmacology.cardiovascular.distal-proximal-diuretics",
+  "title": "분절별 표적과 관찰 결과",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "근위 CA와 중탄산 회수",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "소변 HCO3·혈중 HCO3",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "TAL NKCC2·DCT NCC",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "염분 전달·희석·수질",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "MR·ENaC 등 원위 표적",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "칼륨 분비와 체액",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.diuretic-segment-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "소변과 혈액 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.diuretic-segment-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "분절·표적의 차이",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.diuretic-segment-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "소변량과 기전 구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "원문네프론도판이아닌독립표적비교다.실제분절메시·약물작동애니메이션아님."
+  ],
+  "sourceImageUsed": false
+}

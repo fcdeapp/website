@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.respiratory.atelectasis-secretion",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.8eb36ad550c7",
+      "sourceSha256": "8eb36ad550c7d88052072fcd3b6324af2ae02dddcf83e838bc1ef4c0e57b0d4b",
+      "sourceLengthUtf16": 221,
+      "annotations": [
+        {
+          "id": "ann.7537af781e1730921afd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 167,
+            "end": 221,
+            "exact": "영상의 음영과 용적 감소를 다른 실질 병변과 구별하되 한 소견만으로 모든 원인을 확정하지 않는다.",
+            "prefix": "되는 구역에서 가스교환이 나빠질 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.beb468208b40",
+      "sourceSha256": "beb468208b40b1e04e4adeaf0c80c3bfefae8b8df8f3fb06be4237fac6779126",
+      "sourceLengthUtf16": 191,
+      "annotations": [
+        {
+          "id": "ann.60f5290087e4133e1664",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 45,
+            "end": 47,
+            "exact": "기흉",
+            "prefix": "입 제한으로 허탈이 진행할 수 있다. 흉수·",
+            "suffix": "과 주변 압박도 폐 확장을 제한할 수 있으며"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.70f0be322bba",
+      "sourceSha256": "70f0be322bba125bdcfa00a9eb62ddf664bba3bb59b1e81906beedbbb69bb1d9",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.6a5351b13c0f",
+      "sourceSha256": "6a5351b13c0fb690055b6dc44192be7b577596251bf8781e1d37d2a05c319984",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.f24b00a75ad2",
+      "sourceSha256": "f24b00a75ad2e7542ad314abaa2a2877d5877cb91fa18cbe5da507ecb6611ecb",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.c39650deb73a",
+      "sourceSha256": "c39650deb73ad8078ff44ddc331e73d1cd7a1fbe55df65e12aed62c6ce7f487b",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.f889f492a19d",
+      "sourceSha256": "f889f492a19d142554c672471672d3d158ef45f43b516a475d4346a71b77e203",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.708df7f9bf93b7e06432",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 36,
+            "end": 38,
+            "exact": "흉막",
+            "prefix": " 엽의 허탈이 지속되면 분비물 막힘과 기도·",
+            "suffix": "·실질 원인을 다시 평가한다. 단순 호흡 운"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.7bdc130afb22",
+      "sourceSha256": "7bdc130afb2218845592a6ad15dac29edf682d8cdaba862bd6d7f3904ad82fca",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.b88cd4bb169a",
+      "sourceSha256": "b88cd4bb169aeabf5478c578beeb50f914ed17495bd811c1a44cc2a7a8a5bea7",
+      "sourceLengthUtf16": 160,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.respiratory.atelectasis-secretion.b.5707ddc50f5b",
+      "sourceSha256": "5707ddc50f5b0fbc29252794b9956ea95c84751438236cd99a1160b2f6a634f0",
+      "sourceLengthUtf16": 178,
+      "annotations": [
+        {
+          "id": "ann.a00798a4ca557820677d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 143,
+            "end": 178,
+            "exact": "호전의 일부를 전체 원인의 해결로 확대하지 않는 것이 중요하다.",
+            "prefix": " 실질·혈관·체액 원인이 공존할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

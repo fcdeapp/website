@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.antiarrhythmic-risk",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.antiarrhythmic-risk.b.3767d5f6ffda",
+      "sourceSha256": "3767d5f6ffdad371f726aef22fc8fcda6aa3ad60a09c35fcedf39ece7bf66ba7",
+      "sourceLengthUtf16": 242,
+      "annotations": [
+        {
+          "id": "ann.5f933be394dae583643e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 178,
+            "end": 181,
+            "exact": "약동학",
+            "prefix": "분포도 다르다. 같은 분류에 속한다고 모든 ",
+            "suffix": "·금기와 임상 결과가 같지는 않다. 분류는 "
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.antiarrhythmic-risk.b.9c2da33e117a",
+      "sourceSha256": "9c2da33e117a04027b3c8df6504a974c1c0e3b60b3e3a91b032e0dff4c768f11",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.antiarrhythmic-risk.b.869c9c92543b",
+      "sourceSha256": "869c9c92543bb14eb489501ce02c155bc132d3eceb48518f45a98cdb6afd28e0",
+      "sourceLengthUtf16": 270,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.antiarrhythmic-risk.b.8fd4533223f8",
+      "sourceSha256": "8fd4533223f81accec05f47d9b03e1c351aac32e70acc7d396c72a2500674ca0",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.antiarrhythmic-risk.b.4b4942cc210c",
+      "sourceSha256": "4b4942cc210c1edd2a73af9d8fdc8f285d3d0d6c8933899e9dfeff7624d691d8",
+      "sourceLengthUtf16": 243,
+      "annotations": [
+        {
+          "id": "ann.1faed7d331a8687add28",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 217,
+            "end": 243,
+            "exact": "파형의 개선과 환자에게 중요한 결과를 구별한다.",
+            "prefix": "및 임상 종말점을 확인해야 한다는 뜻이다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.antiarrhythmic-risk.b.7a134255e586",
+      "sourceSha256": "7a134255e586a4cf888c79b7c2c03d55e95e701b33ea572c6ada3a8ef2b1819b",
+      "sourceLengthUtf16": 254,
+      "annotations": []
+    }
+  ]
+}

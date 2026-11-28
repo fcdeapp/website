@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.examination.localizing-weakness",
+  "subjectId": "neurology",
+  "chapterId": "examination",
+  "title": {
+    "ko": "근력·반사·감각을 통합한 병변 국소화",
+    "en": "Localization Through Strength Reflexes and Sensation"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.examination.localizing-weakness.lo.01",
+      "text": "약화·피로·운동느림을 구별한다"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.lo.02",
+      "text": "상위·하위운동뉴런과 신경근접합부·근육 소견을 비교한다"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.lo.03",
+      "text": "분포·시간과 다른 신경 기능을 통합한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.examination.localizing-weakness.b.7e38cbed2099",
+      "type": "heading",
+      "level": 2,
+      "text": "증상을 검사 가능한 질문으로 바꾼다"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.8564efdb1e33",
+      "type": "paragraph",
+      "markdown": "환자가 말하는 힘없음은 실제 근력 저하 외에 피로·통증·움직임의 느림과 균형 문제를 포함할 수 있다. 어떤 동작이 어렵고 언제 시작되었는지, 하루와 반복 동작에서 어떻게 달라지는지를 묻는다. 진찰에서는 이해·통증과 관절의 제한을 확인한 뒤 여러 근육군을 일관된 자세에서 비교한다. 숫자로 기록된 근력 등급은 이러한 조건을 함께 기술해야 의미가 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neuroanatomy.brainstem.levels-localization.brainstem-levels"
+      ]
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.bab7b8e6c4ee",
+      "type": "paragraph",
+      "markdown": "국소화는 먼저 증상의 분포와 여러 기능의 조합을 정리하는 과정이다. 한쪽 얼굴과 팔·다리, 근위와 원위, 대칭성과 감각·반사·뇌신경을 연결한다. 갑작스러운 발생과 수개월의 진행은 같은 분포에서도 다른 원인을 생각하게 한다. 위치를 가설화하는 일과 허혈·염증·퇴행·유전·독성 등 원인을 확정하는 일은 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.3358a0e47f0d",
+      "type": "heading",
+      "level": 2,
+      "text": "상위와 하위 운동계"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.5b74bee81ad5",
+      "type": "paragraph",
+      "markdown": "상위운동뉴런 병변은 약화와 근긴장·깊은힘줄반사의 변화, 병적 반사 등의 조합에서 단서를 얻는다. 하위운동뉴런 또는 운동 단위의 손상에서는 약화와 위축·근다발수축·반사 저하가 나타날 수 있다. 급성기에는 전형적 긴장·반사 양상이 아직 형성되지 않을 수 있다. 한 번 정상 반사가 나왔다고 모든 중추 병변을 배제하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.b7c289f0b165",
+      "type": "paragraph",
+      "markdown": "척수 병변에서는 감각 수준과 장경로·자율신경 기능, 병변 수준의 분절 소견이 함께 중요하다. 뇌간에서는 뇌신경과 몸의 징후가 서로 다른 좌우로 나타나는 조합이 단서다. 대뇌피질에서는 언어·시야·주의와 감각 통합을 확인한다. 약화의 좌우만으로 하나의 혈관 이름과 병변 크기를 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.37a65e34c2cd",
+      "type": "heading",
+      "level": 2,
+      "text": "말초신경·신경근접합부·근육"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.258036317d32",
+      "type": "paragraph",
+      "markdown": "신경뿌리와 말초신경 병변은 근육의 분포와 감각 영역·통증·반사를 비교한다. 신경뿌리의 근육 지배는 여러 말초신경에 걸치며 피부절과 말초신경 영역도 같은 지도는 아니다. 여러 신경이 대칭적으로 원위에서 침범되는 양상은 다발신경병증의 질문을 만든다. 정상 신경전도검사가 모든 작은 섬유 질환을 배제하는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.8b47fc2e35ce",
+      "type": "paragraph",
+      "markdown": "신경근접합부 질환에서는 반복에 따른 변동과 안구·구인두·호흡 근육의 소견 등이 중요할 수 있다. 근육질환에서는 근위 약화가 단서일 수 있으나 모든 질환이 같은 패턴은 아니다. 감각의 동반 여부와 검사·약물·기저 질환을 연결한다. 호흡·삼킴이 위협받는 상황은 정교한 최종 국소화가 끝날 때까지 미루어서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.0d0e2cf25284",
+      "type": "heading",
+      "level": 2,
+      "text": "검사와 가설의 재평가"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.f67bc9fd69e1",
+      "type": "paragraph",
+      "markdown": "영상과 전기생리·혈액검사는 각각의 국소화 가설에 맞는 질문으로 선택한다. 우연히 발견된 퇴행성 영상 소견이 모든 증상의 원인이라고 확정되지는 않는다. 검사와 진찰이 불일치하면 위치·시간·기술적 한계와 다른 가설을 다시 검토한다. 질환 이름을 먼저 고정하면 필요한 진찰의 범위를 좁히게 될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.b.3366f4753984",
+      "type": "paragraph",
+      "markdown": "기록에는 시행 조건·분포·진행과 남은 불확실성을 포함한다. 기능신경학적 증상도 양성 임상 소견과 적절한 평가를 통해 판단하며 단순히 검사가 정상이라는 이유만으로 결론내리지 않는다. 신체·정신의학적 요인이 함께 존재할 수 있다. 국소화의 목표는 환자의 기능과 현재 위험을 이해하면서 다음 검사·치료의 정확도를 높이는 것이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.suppheading0852",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 임상 해석의 연결"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.supp.1779277ebeaf",
+      "type": "paragraph",
+      "markdown": "근력 등급은 관찰을 정리하는 순서 척도이며 인접 등급 사이의 힘 차이가 항상 동일하다는 뜻은 아니다. 점수4에서5로 변한 결과를20%근력 증가로 해석하지 않는다. 검사자의 저항·환자 노력과 통증, 자세와 피로를 함께 기록해야 한다. 실제 기능에서는 관절의 가동과 균형·협응도 영향을 주므로 한 점수와 걷기·계단·일상 수행을 구별해 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.supp.880291651e7d",
+      "type": "paragraph",
+      "markdown": "반복 활동 뒤의 약화가 있다고 모두 신경근접합부 질환은 아니다. 통증·피로와 호흡·심장 문제, 근육 및 다른 신경질환의 영향을 비교한다. 반대로 안구 소견이 없다는 이유만으로 모든 관련 질환을 배제하지 않는다. 어떤 근육이 어떤 활동과 시간 뒤에 달라지고 휴식에 어떻게 반응하는지 구체적인 자료로 정리하면 다음 검사 선택이 명확해진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.table0852",
+      "type": "table",
+      "data": {
+        "title": "관찰·가설과 임상 해석",
+        "columns": [
+          "항목",
+          "자료·의미"
+        ],
+        "rows": [
+          [
+            "얼굴",
+            "왼쪽 말초형 약화 양상"
+          ],
+          [
+            "몸",
+            "오른쪽 팔다리 약화"
+          ],
+          [
+            "평가",
+            "다른 뇌신경·감각·반사와 영상 미완료"
+          ],
+          [
+            "안전",
+            "호흡·삼킴과 급성 위해도 확인"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.diagram.neurological-localization-reasoning-0852",
+      "type": "diagram",
+      "diagramRef": "diagram.neurological-localization-reasoning-0852",
+      "path": "diagrams/diagram.neurological-localization-reasoning-0852.svg",
+      "alt": "국소화에서 원인·행동으로"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.3d0852.0",
+      "type": "anatomy3d",
+      "sceneRef": "scene.neuroanatomy.brainstem.levels-localization.brainstem-levels"
+    },
+    {
+      "id": "neurology.examination.localizing-weakness.limits0852",
+      "type": "clinicalPearl",
+      "markdown": "정상 거시 구조의 위치 문맥이다. 실제 축삭 연결·감각 교차·전기활동·도파민·시교차상핵·병변·폐색·관류·질환과 치료 적합성을 이 정적 모델이 표현하거나 정하지 않는다. 오른쪽만 확인된 구조를 좌우 완전 회로로 표시하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/examination/sections/neurology.examination.localizing-weakness.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.examination.localizing-weakness.001"
+  ],
+  "relatedLessons": [
+    "neuroscience.sensory.coding-pathways",
+    "neuroscience.motor.basal-ganglia-cerebellum",
+    "neurology.stroke.acute-ischemia-assessment"
+  ]
+}

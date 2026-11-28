@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.neuro.sensory-coding",
+  "subjectId": "physiology",
+  "chapterId": "neuro",
+  "title": {
+    "ko": "감각 변환·부호화·적응",
+    "en": "Sensory Transduction, Coding and Adaptation"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.neuro.sensory-coding.lo.01",
+      "text": "수용기 전위와 활동전위의 차이를 설명한다"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.lo.02",
+      "text": "강도·시간·공간 정보의 부호화를 구별한다"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.lo.03",
+      "text": "적응·수용야·측방억제의 의미를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.neuro.sensory-coding.b.d76fcb762daf",
+      "type": "heading",
+      "level": 2,
+      "text": "자극 에너지가 신경 신호가 되는 과정"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.16734e1710bc",
+      "type": "paragraph",
+      "markdown": "감각변환(sensory transduction)은 빛·기계적 변형·온도·화학적 자극 등의 에너지를 수용기의 전기·생화학 신호로 바꾸는 과정이다. 수용기 전위(receptor potential)는 자극과 통로 상태에 따라 크기가 달라지는 국소 신호일 수 있다. 활동전위는 재생성되는 전기 사건이므로 한 축삭에서 자극 강도 정보를 주로 매번 더 큰 활동전위의 진폭으로 표현하는 것은 아니다. 변환과 발화의 단계를 나누어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.514919b40d7c",
+      "type": "paragraph",
+      "markdown": "일차 감각뉴런의 말단 자체가 변환을 담당하기도 하고,별도의 수용기세포가 전달물질을 방출하여 구심뉴런을 조절하기도 한다. 망막 광수용기처럼 자극에 대한 전위 변화 방향과 전달 방식이 단순한 탈분극–활동전위 그림과 다른 예가 있다. 모든 감각 수용기가 같은 통로와 같은 극성을 사용하는 것은 아니다. 어떤 세포에서 어떤 양을 측정했는지가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.b9b8783e4869",
+      "type": "heading",
+      "level": 2,
+      "text": "신경의 표지선과 집단의 패턴"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.8b54a33fa2ff",
+      "type": "paragraph",
+      "markdown": "감각 종류와 위치 정보는 어떤 경로가 활성화되는지와 관련된다. 특정 수용기·구심 경로의 연결은 자극의 성격을 해석하는 표지선(labeled line)의 기초다. 동시에 실제 지각에는 여러 뉴런의 활동 패턴과 맥락이 기여한다. 한 뉴런이 한 대상만을 완벽하게 대표한다는 식으로 모든 감각계를 설명하기는 어렵다. 동일한 발화 수라도 어떤 집단과 어떤 시간 패턴에서 발생했는지에 따라 정보가 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.b0c8f2e2f86b",
+      "type": "paragraph",
+      "markdown": "자극 강도가 증가하면 개별 뉴런의 발화 빈도나 활성화되는 뉴런의 수가 증가할 수 있다. 역치와 포화 범위가 다른 수용기를 동원하면 한 뉴런의 제한된 반응 범위를 넘어 집단적으로 정보를 나타낼 수 있다. 단일 세포의 반응이 포화되었다고 감각계 전체가 더 강한 자극을 전혀 구분하지 못한다고 결론 내리지 않는다. 통증·청각·시각의 실제 부호화는 각 수용기와 회로의 특성에 따라 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.9d93342083bc",
+      "type": "heading",
+      "level": 2,
+      "text": "시간 정보는 평균 빈도만으로 충분하지 않을 수 있다"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.cf4df14d80a2",
+      "type": "paragraph",
+      "markdown": "같은 시간 구간에 같은 수의 활동전위가 있어도 첫 반응 지연,발화 간격,집단 간 동기화가 다를 수 있다. 시간 부호화(temporal coding)는 이런 차이를 포함한다. 자극의 시작·끝이나 빠른 변화가 중요한 상황에서는 평균 빈도로 압축하면 정보가 사라질 수 있다. 반대로 짧은 기록의 우연한 변동을 의미 있는 시간 암호로 해석하려면 반복성과 적절한 대조가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.f283f8204361",
+      "type": "paragraph",
+      "markdown": "발화 빈도를 계산할 때에는 사건 수와 관찰 시간을 함께 제시한다.100ms 동안5회면 해당 창의 평균은50회/s이고,1초 동안5회와 다르다. 그러나100ms의 값을1초 단위로 환산했다고 그 세포가1초 내내50회씩 발화했다고 측정한 것은 아니다. 측정 창과 환산 단위를 나누어 읽는 태도가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.f8c70047ac52",
+      "type": "heading",
+      "level": 2,
+      "text": "수용야는 반응을 바꾸는 자극 영역이다"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.6ebc474811b1",
+      "type": "paragraph",
+      "markdown": "수용야(receptive field)는 특정 뉴런의 활동을 바꾸는 자극 공간이나 특성의 범위로 정의할 수 있다. 체성감각에서는 피부의 위치,시각에서는 시야의 영역 등이 해당하지만 모든 수용야가 단순 원형의 해부학적 말단 영역과 같은 것은 아니다. 측정 자극·배경·분석 방식에 따라 추정한 수용야가 달라질 수 있다. 회로의 입력 통합이 만드는 기능적 관계이기도 하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.b0c3a3d574b8",
+      "type": "paragraph",
+      "markdown": "중심–주변(center–surround) 구성과 측방억제(lateral inhibition)는 주변 입력이 중심 반응을 조절하여 경계와 대비 표현에 기여하는 예다. 이를 ‘주변의 모든 뉴런을 항상 완전히 끄는 과정’이라고 해석하면 안 된다. 반응은 자극의 범위·배경과 세포 유형에 따라 달라진다. 큰 자극이 작은 자극보다 어떤 뉴런의 반응을 줄이는 결과도,수용야의 흥분·억제 영역을 함께 보면 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.4f9ea40f719e",
+      "type": "heading",
+      "level": 2,
+      "text": "적응은 감각계의 상태 변화다"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.2aea3a6fda5e",
+      "type": "paragraph",
+      "markdown": "같은 자극이 지속될 때 반응이 시간에 따라 달라지는 현상을 적응(adaptation)과 연결하여 이해할 수 있다. 빠르게 적응하는 반응은 변화나 시작·끝을 강조하고,지속 반응은 자극의 유지 정보를 제공할 수 있다. 다만 모든 수용기를 오직 빠른·느린 두 부류로 완전히 나눌 수는 없으며,말초 통로·전달·중추 회로의 여러 단계에서 적응이 생긴다. 통로의 탈감작·세포의 발화 적응·회로의 정규화는 동일한 분자 반응이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.6470a1ad9ea8",
+      "type": "paragraph",
+      "markdown": "일정한 자극을 주는 가상 모형을 R(t)=5+10+35e^(−t/τ)회/s로 두면 시작 반응은50회/s,충분한 시간이 지난 반응은15회/s다.5회/s는 자발 기저,10회/s는 지속된 자극 반응,35회/s는 감소하는 성분으로 정했다. 반응이 줄었다고 자극이 사라졌거나 최종 반응이0이 되었다는 뜻은 아니다. 이 곡선은 특정 수용기의 실제 기록이 아니라 성분과 시간 척도를 구분하는 독립 계산이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.a3f67bbb5f6e",
+      "type": "heading",
+      "level": 2,
+      "text": "적응과 피로·손상을 같은 것으로 보지 않기"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.8a81fc03181a",
+      "type": "paragraph",
+      "markdown": "적응은 환경의 통계와 배경에 맞추어 민감도와 작동 범위를 바꿀 수 있다. 하지만 감소한 반응만 보고 언제나 유익한 적응이라고 단정할 수는 없다. 에너지 부족·수용체 손상·전도 실패·주의 상태 변화도 측정 신호를 바꿀 수 있다. 자극 제거 후 회복,다른 강도에 대한 반응,대조 경로와 시간 경과를 통해 가설을 나누어 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.b.694fcc3e17f2",
+      "type": "paragraph",
+      "markdown": "감각검사와 생리 기록을 연결할 때에는 물리적 자극,말초 신호,중추 반응,주관적 지각이라는 서로 다른 층을 구별한다. 정상 수용기 모형의 그래프가 개인의 감각 역치나 신경 병변 위치를 직접 진단하는 것은 아니다. 강도–반응·시간–반응·공간 수용야의 축을 각각 분명히 표시하면 감각계를 단순한 직선 증폭기로 오해하는 것을 줄일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.diagram.sensory-adaptation-components",
+      "type": "diagram",
+      "diagramRef": "diagram.sensory-adaptation-components",
+      "path": "diagrams/diagram.sensory-adaptation-components.svg",
+      "alt": "지속 자극의 가상 적응 성분의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.neuro.sensory-coding.table.compare",
+      "type": "table",
+      "data": {
+        "title": "감각 자료의 축",
+        "columns": [
+          "정보",
+          "대표 관찰",
+          "주의"
+        ],
+        "rows": [
+          [
+            "강도",
+            "빈도·집단 동원",
+            "활동전위진폭과구별"
+          ],
+          [
+            "시간",
+            "지연·간격·동기",
+            "평균빈도만으로불충분"
+          ],
+          [
+            "공간",
+            "수용야·대비",
+            "측정맥락의존"
+          ],
+          [
+            "적응",
+            "지속입력뒤반응변화",
+            "피로·손상과자동동일시아님"
+          ]
+        ],
+        "notes": "같은사건수도관찰시간에따라평균률이다르며단위환산은추가관찰이아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/neuro/sections/physiology.neuro.sensory-coding.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "적응으로 반응이 감소해도 지속 자극의 신호가 남을 수 있다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.neuro.sensory-coding.001",
+    "question.physiology.neuro.sensory-coding.002"
+  ],
+  "relatedLessons": [
+    "physiology.neuro.synaptic-transmission",
+    "physiology.neuro.synaptic-integration",
+    "physiology.digestive.carbohydrate-absorption"
+  ]
+}

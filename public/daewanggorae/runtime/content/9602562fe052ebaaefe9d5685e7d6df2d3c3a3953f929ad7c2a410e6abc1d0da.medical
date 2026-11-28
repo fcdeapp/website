@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.coenzyme-chemistry-pairs",
+  "lessonId": "biochemistry.vitamins.cofactors",
+  "title": "보조효소가 다루는 화학",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "TPP·비오틴",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "다른 탄소 반응",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "FAD/FMN·NAD(P)",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "산화환원 연결",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "CoA/ACP·PLP",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "아실기·아미노산 반응",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.coenzyme-chemistry-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "탈탄산/탄소전달구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.coenzyme-chemistry-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "결합·구획구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.coenzyme-chemistry-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "서로다른화학",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "대표기능의비교이며모든비타민반응을세쌍으로제한하지않는다."
+  ],
+  "sourceImageUsed": false
+}

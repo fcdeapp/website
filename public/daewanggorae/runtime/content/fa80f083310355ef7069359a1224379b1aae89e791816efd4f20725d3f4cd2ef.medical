@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.physiology.stress-metabolism",
+  "subjectId": "general-surgery",
+  "chapterId": "physiology",
+  "title": {
+    "ko": "수술 스트레스와 대사 반응",
+    "en": "Surgical Stress and Metabolic Response"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.physiology.stress-metabolism.lo.01",
+      "text": "신경내분비·염증 반응의 목적을 설명한다"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.lo.02",
+      "text": "고혈당과 단백 이화를 연결한다"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.lo.03",
+      "text": "회복을 위한 부담 조절과 생리 지원을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.4d0ce3df5931",
+      "type": "heading",
+      "level": 2,
+      "text": "손상 신호가 전신에 전달된다"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.bb709a7e200f",
+      "type": "paragraph",
+      "markdown": "수술은 병변을 제거하거나 통로를 복원하는 치료인 동시에 조직 손상이다. 절개·견인·허혈과 통증은 신경 자극과 국소 손상 연관 신호를 만들고, 시상하부·뇌하수체·부신 축과 교감신경, 면역·내피 반응을 활성화한다. 카테콜아민·코르티솔과 여러 염증 매개물질은 혈류·연료·면역을 재분배한다. 이러한 변화는 초기 생존에 도움이 될 수 있지만 크고 오래 지속되면 장기 기능과 회복을 해칠 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.4fc732e96112",
+      "type": "paragraph",
+      "markdown": "반응의 정도는 절개 길이 하나로 정해지지 않는다. 수술 시간과 조직 손상·출혈·감염, 통증과 저체온, 기존 염증·영양·내분비 상태가 더해진다. 최소침습 접근도 실제 생리 부담이 없다는 뜻은 아니다. 수술 뒤의 빈맥과 고혈당을 정상 스트레스라는 한 설명에 고정하면 출혈·감염·저산소를 놓칠 수 있다. 예상되는 반응과 현재의 위험을 시간·정도·동반 소견으로 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.dcaf7ed5c638",
+      "type": "heading",
+      "level": 2,
+      "text": "연료를 동원하지만 이용은 달라진다"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.9a172f226f28",
+      "type": "paragraph",
+      "markdown": "간의 포도당 생성과 글리코겐 분해, 말초 인슐린 저항성은 혈중 포도당을 높일 수 있다. 평소 당뇨병이 없던 환자에게도 고혈당이 생기며, 기존 당뇨병에서는 약물·금식·장기 기능의 영향이 더해진다. 혈당이 높다는 사실이 모든 세포의 에너지 이용이 충분하다는 뜻은 아니다. 반대로 혈당을 무조건 낮추면 저혈당이라는 별도 위해가 생길 수 있어 모니터링과 개별 조절이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.142cfd54c253",
+      "type": "paragraph",
+      "markdown": "근육 단백의 분해는 아미노산을 공급하여 당신생과 면역·복구의 재료로 사용하게 하지만, 근력과 호흡·이동 능력의 손실로 이어질 수 있다. 지방 분해와 케톤·지질의 이용도 상태에 따라 달라진다. 열량을 많이 주는 것만으로 염증성 이화작용이 완전히 사라지지는 않는다. 공급량·단백질·혈당·장기 기능과 실제 활동을 연결해야 하며 과잉 공급도 대사와 호흡의 부담이 될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.4dca38cfd87f",
+      "type": "heading",
+      "level": 2,
+      "text": "질소 수지와 그 한계"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.11345c172adf",
+      "type": "paragraph",
+      "markdown": "질소 수지는 섭취 질소에서 배설과 손실 질소를 뺀 값이다. 단백질의 질소 함량을 평균 약 16%로 가정하면 단백질 100g은 질소 약 16g에 해당한다. 소변 요소질소는 총 질소 손실의 일부이며 대변·피부·상처·배액과 기타 비요소 손실을 고려해야 한다. 음성 수지는 순 단백 소실의 단서지만 특정 근육이 얼마나 줄었는지를 직접 측정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.7cd2b4970ae2",
+      "type": "paragraph",
+      "markdown": "채뇨가 불완전하거나 신장 기능·투석·누공 손실이 변하면 계산이 흔들린다. 가상으로 섭취 질소 16g, 소변 요소질소 14g, 기타 손실 4g이라면 수지는 −2g이다. 이 값을 단독으로 다음 날의 영양 처방량으로 치환하지 않는다. 이전 공급과 대사·수분·배설의 시간차, 실제 투여 중단과 흡수까지 확인해야 해석할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.75152fe5ef67",
+      "type": "heading",
+      "level": 2,
+      "text": "회복을 돕는 다중 접근"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.aed184883a4a",
+      "type": "paragraph",
+      "markdown": "적절한 통증 조절과 체온·산소화·관류 유지, 과도한 금식과 침상 생활의 감소는 스트레스 부담과 회복 능력에 영향을 준다. 이 요소들은 별개 처방 목록이 아니라 서로 연결된다. 통증이 심하면 깊은 호흡과 움직임·섭취가 어렵고, 과도한 진정은 호흡·기침과 인지를 떨어뜨릴 수 있다. 약물과 비약물 접근을 조합하여 실제 기능을 확인하는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.525ca6e66c99",
+      "type": "paragraph",
+      "markdown": "수술 후 회복 촉진(enhanced recovery)의 핵심은 모든 환자를 같은 날짜에 퇴원시키는 것이 아니라 생리·증상·기능을 함께 회복시키는 데 있다. 수술 종류와 합병증, 환자의 예비력에 맞게 계획을 조정한다. 회복이 늦을 때에는 의지와 순응만 탓하지 말고 감염·출혈·영양 전달·통증·수면·이동 제한을 찾는다. 스트레스 반응을 이해하면 검사값의 변화와 실제 회복을 한 흐름으로 읽을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.29414914c9e4",
+      "type": "heading",
+      "level": 2,
+      "text": "회복 지표의 서로 다른 시간"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.67176e11df15",
+      "type": "paragraph",
+      "markdown": "혈당과 질소 배설, 염증 표지자와 근력은 같은 시간 척도로 변하지 않는다. 혈당이 안정되어도 섭취 부족과 부동으로 단백 소실이 지속될 수 있고, 염증이 감소해도 활동 능력은 늦게 회복될 수 있다. 대사 관리는 한 검사값의 정상화가 아니라 공급·분해·기능의 추세를 함께 보는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.b.95105312fd57",
+      "type": "paragraph",
+      "markdown": "장기간 금식과 불필요한 검사 대기, 식사 중단의 반복은 실제 영양 전달을 크게 줄일 수 있다. 처방된 하루 열량을 모두 공급했다고 가정하지 말고 중단과 남긴 양·흡수 문제를 확인한다. 구역·통증과 도움 부족처럼 작은 장애가 누적되면 회복의 병목이 될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.table0847",
+      "type": "table",
+      "data": {
+        "title": "구조·생리·근거와 관리의 연결",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "신호",
+            "신경내분비·염증"
+          ],
+          [
+            "혈당",
+            "생성·이용·약물·저혈당 위해"
+          ],
+          [
+            "단백",
+            "공급·분해·기능과 시간"
+          ],
+          [
+            "회복",
+            "통증·온도·섭취·활동"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "general-surgery.physiology.stress-metabolism.diagram.nitrogen-balance-0847",
+      "type": "diagram",
+      "diagramRef": "diagram.nitrogen-balance-0847",
+      "path": "diagrams/diagram.nitrogen-balance-0847.svg",
+      "alt": "섭취와 질소 수지의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/physiology/sections/general-surgery.physiology.stress-metabolism.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.physiology.stress-metabolism.001",
+    "question.general-surgery.physiology.stress-metabolism.002"
+  ],
+  "relatedLessons": [
+    "general-surgery.assessment.anemia-hemostasis",
+    "general-surgery.physiology.fluid-kidney-balance"
+  ]
+}

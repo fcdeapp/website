@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.virulence.adhesion-motility",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.virulence.adhesion-motility.b.ea3136d2021d",
+      "sourceSha256": "ea3136d2021dccccabd78934b3d906dc1f2edcb28ad03bb166774a8f49f7c03b",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.adhesion-motility.b.af7aa5d41075",
+      "sourceSha256": "af7aa5d410755921fc81b64b38b6767624a7ab996a7a58b57740dc9fea285c83",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.adhesion-motility.b.e7bc200b86ab",
+      "sourceSha256": "e7bc200b86ab8dd2ebe30c75fe0c6bbcb7bcbf29328284f891ec01e57937401c",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.bd9f31879840afa7386b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 60,
+            "exact": "Fimbriae와 pili라는 용어는 문맥에 따라 겹쳐 쓰이지만 특정 구조의 기능을 확인하는 것이 중요하다.",
+            "prefix": "",
+            "suffix": " 일부 선모는 부착에, 일부는 유전물질 전달"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.virulence.adhesion-motility.b.7d2a8deb0fe2",
+      "sourceSha256": "7d2a8deb0fe2a4eafe67d2e09de9e49f7312a65b641af6afd35941e525d4ae99",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.adhesion-motility.b.84c0c3d6d12d",
+      "sourceSha256": "84c0c3d6d12de55426b2509ae4c4c6e6743f54629c609ea8d0c73b6593db1344",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.adhesion-motility.b.b1e1fd93e707",
+      "sourceSha256": "b1e1fd93e70761d0041738acd722662ae15c35f917a48b49978469f6adeec8f7",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.adhesion-motility.b.7dcc2bad9b29",
+      "sourceSha256": "7dcc2bad9b29721bb1ebd883eedc07f095c454f95d83199c6bebe26b4cf31522",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.virulence.adhesion-motility.b.d1b0b576b06c",
+      "sourceSha256": "d1b0b576b06c6d150fd38f6ffd9fe1c7fb1ee45c8a870ad9e9fd0f8c9de2eda1",
+      "sourceLengthUtf16": 190,
+      "annotations": [
+        {
+          "id": "ann.0bc3c2b92194e05a10e9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 131,
+            "end": 190,
+            "exact": "편모 유전자의 검출은 구조의 실제 조립·운동과 동일하지 않으므로 분자 검사와 기능 관찰의 범위를 구분한다.",
+            "prefix": "증상, 검체의 대표성을 함께 읽어야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

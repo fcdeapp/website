@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.cardiovascular.renal-drug-interactions",
+  "subjectId": "pharmacology",
+  "chapterId": "cardiovascular",
+  "title": {
+    "ko": "신장 혈역학과 약물 상호작용",
+    "en": "Renal Hemodynamics and Drug Interactions"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.lo.01",
+      "text": "체액·수입세동맥·수출세동맥의 상호작용을 설명한다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.lo.02",
+      "text": "약동학적 상호작용과 기능적 위해의 중첩을 구별한다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.lo.03",
+      "text": "크레아티닌·칼륨·혈압의 시계열을 분리하여 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.88c6f1c122fd",
+      "type": "heading",
+      "level": 2,
+      "text": "하나의 장기에 모이는 서로 다른 작용"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.486176ad4a15",
+      "type": "paragraph",
+      "markdown": "약물 상호작용은 한 약물이 다른 약물의 혈중 농도를 바꾸는 경우에만 생기는 것이 아니다. 서로 다른 표적에 작용해도 같은 장기의 보상 여유를 동시에 줄이면 기능적 위해가 커질 수 있다. 신장은 관류 압력, 혈관 긴장과 세뇨관 수송을 통해 여과와 배설을 유지하므로 여러 약물의 영향이 만나는 대표적 장기다. 같은 병용이라도 체액 상태와 기저 신기능이 달라지면 결과가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.9ae2568f2727",
+      "type": "paragraph",
+      "markdown": "이뇨제가 언제나 탈수를 일으키는 것은 아니며, 울혈을 교정해 상태가 호전되는 경우도 있다. 다만 체액 감소나 낮은 유효순환혈량이 있는 조건에서는 추가적인 염분·물 손실이 관류 여유를 줄일 수 있다. 부종이 있다는 사실만으로 혈관 내 유효순환이 충분하다고 단정하지 않는다. 총체액과 장기 관류에 기여하는 순환 상태를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.2057aceb9c5a",
+      "type": "heading",
+      "level": 2,
+      "text": "프로스타글란딘과 수입 쪽 보상"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.09d261375908",
+      "type": "paragraph",
+      "markdown": "신장의 프로스타글란딘 관련 반응은 특히 관류가 위협받는 상황에서 수입 쪽 혈관 긴장과 혈류 유지에 기여할 수 있다. 비스테로이드소염제(nonsteroidal anti-inflammatory drug, NSAID)는 cyclooxygenase를 억제하여 이러한 보상에 영향을 준다. 그 결과의 크기는 정상 안정 상태와 탈수·저혈압·신기능 저하 상태에서 같지 않다. 모든 노출에서 같은 정도의 손상이 반드시 발생한다고 표현해서도 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.a4f5af0cdd44",
+      "type": "paragraph",
+      "markdown": "일반의약품 진통제와 감기약에도 NSAID 성분이 포함될 수 있어 제품명뿐 아니라 성분과 중복을 확인해야 한다. 약물의 신장 영향에는 혈역학적 기전 외에 간질성 신염 등 다른 경로도 있으므로, NSAID 사용 뒤 신기능이 변했다고 원인을 항상 한 가지 혈관 반응으로 확정하지 않는다. 투여 시점·증상·검사와 대체 원인을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.50d35098f0a7",
+      "type": "heading",
+      "level": 2,
+      "text": "수출 쪽 보상과 체액의 동시 변화"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.fede8411e0db",
+      "type": "paragraph",
+      "markdown": "ACEi나 ARB는 angiotensin II 관련 수출 쪽 긴장을 낮추어 사구체 내 압력에 영향을 준다. 관류 압력이 낮고 수입 쪽 보상까지 제한되면 여과를 지지하던 여러 장치가 동시에 약해질 수 있다. 이뇨제·RAAS 억제제·NSAID를 함께 평가할 때의 핵심은 개별 약물의 이름보다 이 기능적 중첩이다. 급성 질병, 구토·설사와 섭취 감소는 같은 처방의 위험을 변화시키는 새로운 조건이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.65364111d979",
+      "type": "paragraph",
+      "markdown": "장기적으로 유익한 약물도 특정 급성 상태에서는 재평가가 필요할 수 있다. 반대로 상호작용 가능성이 있다는 이유만으로 모든 병용의 이득을 부정하거나 환자에게 일률적인 자가 중단을 지시해서는 안 된다. 원인 질환, 저혈압·울혈·체액 감소, 신기능·칼륨과 적응증을 종합하여 처방 조정과 재개·추적 계획을 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.4fe9b72ab85d",
+      "type": "heading",
+      "level": 2,
+      "text": "크레아티닌은 시간 지연을 가진 관찰값이다"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.57339c1926d1",
+      "type": "paragraph",
+      "markdown": "혈청 크레아티닌 농도는 생성, 분포 용적과 제거의 결과다. 여과가 갑자기 변해도 혈중 농도가 즉시 새로운 정상상태에 도달하지 않는다. 급성 변화 중의 추정 GFR 수치를 안정 상태와 똑같이 읽지 않아야 하는 이유다. 근육량·검사 간섭과 분비에 대한 약물 영향도 고려해야 한다. 농도 상승은 중요한 신호지만 조직 괴사의 양을 직접 측정한 값은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.ddf9cca0d2d6",
+      "type": "paragraph",
+      "markdown": "혈압, 소변량, 크레아티닌과 칼륨은 같은 시간에 같은 방향으로 변할 필요가 없다. 소변량이 남아 있어도 여과나 칼륨 배설의 이상이 있을 수 있고, 크레아티닌이 아직 크게 오르지 않았어도 새로운 위험 조건이 존재할 수 있다. 단일 검사 대신 기저값과 변화 속도, 복용·질병의 시간 관계를 읽는다. 검사의 변화와 원인 판정, 처치 결정을 각각 연결하되 동일시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.f698a0968372",
+      "type": "heading",
+      "level": 2,
+      "text": "정상상태의 역수 관계와 급성 변화"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.d48b6cbf3e71",
+      "type": "paragraph",
+      "markdown": "교육용 한 구획 모형에서 생성률 G가 일정하고 제거가 청소율 Cl과 농도 C의 곱이면 정상상태는 C=G/Cl이다. G=1, Cl=1에서 C=1이고, Cl=0.5이면 C=2다. 이는 생성률과 다른 조건이 일정하다는 가정에서의 역수 관계다. 실제 크레아티닌 생성량·단위·세뇨관 분비를 그대로 대입한 환자 계산식은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.2e176473264c",
+      "type": "paragraph",
+      "markdown": "같은 모형에 분포 용적 V를 넣으면 dC/dt=(G−ClC)/V가 된다. V=1, 초기 C=1에서 Cl을0.5로 갑자기 바꾸면 C(t)=2−exp(−0.5t)다. 시간1에서약1.393, 시간4에서약1.865로 새 평형2에 접근한다. 그래프의 시간은 임의 단위이며 실제 급성 신손상의 시간표가 아니다. 지연이 있다는 사실과 실제 환자의 손상 원인이 무엇인지는 다른 질문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.e379d9b549c1",
+      "type": "heading",
+      "level": 2,
+      "text": "안전성 정보를 정리하는 방식"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.541b0929129d",
+      "type": "paragraph",
+      "markdown": "약물 목록에는 처방약, 일반의약품, 보충제와 대체소금을 포함하고, 시작·증량·중단 시점을 기록한다. 혈압·체액·크레아티닌·칼륨의 변화와 이를 대조하면 약동학적 노출 증가인지, 같은 기능에 대한 영향의 중첩인지, 급성 질병의 새 기여인지 구분하는 데 도움이 된다. 하나의 설명만으로 모든 변화가 해소되지 않으면 다른 신장·신장 외 원인을 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.b.0e05d0e9609d",
+      "type": "paragraph",
+      "markdown": "상호작용 표는 금지 목록의 단순 암기가 아니라 어떤 보상 기능이 줄고 무엇을 확인해야 하는지를 보여 주어야 한다. 급성 상태의 대응은 개인의 질병과 검사에 따라 달라지므로, 기존 장기 처방의 이득과 현재의 위험을 함께 검토한다. 생리학의 방향성은 위험을 예상하는 도구이며 임상 결과를 자동 확정하거나 약물 조정의 구체 용법을 대신하는 규칙이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.diagram.clearance-concentration-lag-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.clearance-concentration-lag-toy",
+      "path": "diagrams/diagram.clearance-concentration-lag-toy.svg",
+      "alt": "제거 감소 후 농도의 가상 지연의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.diagram.renal-compensation-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.renal-compensation-pairs",
+      "path": "diagrams/diagram.renal-compensation-pairs.svg",
+      "alt": "신장 보상에 모이는 영향의 단계별 비교"
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.table.0813.0",
+      "type": "table",
+      "data": {
+        "title": "보상의 중첩",
+        "columns": [
+          "조건",
+          "기능적 영향"
+        ],
+        "rows": [
+          [
+            "체액 감소",
+            "관류 여유 감소 가능"
+          ],
+          [
+            "NSAID",
+            "국소 프로스타글란딘 보상 영향"
+          ],
+          [
+            "RAAS 억제",
+            "수출쪽 긴장 영향"
+          ],
+          [
+            "급성 질병",
+            "같은 처방의 위험 조건 변화"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pharmacology.cardiovascular.renal-drug-interactions.table.0813.1",
+      "type": "table",
+      "data": {
+        "title": "시간별 평가",
+        "columns": [
+          "관찰",
+          "주의"
+        ],
+        "rows": [
+          [
+            "혈압",
+            "여과·전해질의 전체 대리값 아님"
+          ],
+          [
+            "소변량",
+            "남아 있어도 배설 기능 이상 가능"
+          ],
+          [
+            "크레아티닌",
+            "급성 변화에서 지연·비정상상태"
+          ],
+          [
+            "칼륨",
+            "수지·이동·배설을 함께 평가"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/cardiovascular/sections/pharmacology.cardiovascular.renal-drug-interactions.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "relatedLessons": [
+    "pharmacology.cardiovascular.renin-angiotensin-drugs",
+    "pharmacology.cardiovascular.mineralocorticoid-antagonists"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.cardiovascular.renal-drug-interactions.001",
+    "question.pharmacology.cardiovascular.renal-drug-interactions.002"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.g-protein-effector-pairs",
+  "lessonId": "cell-biology.signaling.receptors-second-messengers",
+  "title": "G단백질의 전형적 이차전령 연결",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Gs",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "AC·cAMP 생성 증가",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "Gi",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "AC·cAMP 생성 억제",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "Gq·PLCβ",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "PIP₂→IP₃·DAG",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.g-protein-effector-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "전형적 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.g-protein-effector-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "전형적 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.g-protein-effector-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "전형적 연결",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "세포별 표적·βγ 작용·종료·신호 구획화를 생략한 비교다. 장기 수축·이완을 단독 결정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

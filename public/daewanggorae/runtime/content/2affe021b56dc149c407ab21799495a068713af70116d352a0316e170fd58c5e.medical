@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.digestive.carbohydrate-absorption",
+  "subjectId": "physiology",
+  "chapterId": "digestive",
+  "title": {
+    "ko": "탄수화물 소화와 상피 수송·수분 흡수",
+    "en": "Carbohydrate Digestion, Epithelial Transport and Water Absorption"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.lo.01",
+      "text": "관강 소화와 막 소화를 구별한다"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.lo.02",
+      "text": "꼭대기막·기저외측막의 운반을 연결한다"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.lo.03",
+      "text": "포화·기울기·순흡수의 의미를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.c3b5bb4ba89a",
+      "type": "heading",
+      "level": 2,
+      "text": "흡수 가능한 단위까지 분해하기"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.03c4970da087",
+      "type": "paragraph",
+      "markdown": "식이 탄수화물은 전분·이당류·단당류 등 다양한 형태로 들어온다. 아밀레이스(amylase)는 전분의 일부 결합을 절단하여 짧은 당을 만들지만,최종 흡수를 위해서는 솔가장자리(brush border)의 이당류·올리고당 분해 효소가 중요하다. Lactase, sucrase–isomaltase 등의 기능을 구별해야 한다. 관강 효소가 존재한다고 모든 탄수화물이 그대로 흡수 가능한 단당류가 되는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.832911077dac",
+      "type": "paragraph",
+      "markdown": "소화(digestion)는 분자를 잘라 흡수 가능한 형태로 만드는 과정이고,흡수(absorption)는 상피 장벽을 건너는 과정이다. 소화효소 결핍과 운반체 결함은 모두 흡수되는 양을 줄일 수 있지만 원인과 남는 기질이 다르다. 같은 설사나 복부팽만이 있어도 어떤 탄수화물에서 문제가 생기는지에 따라 가설을 구분한다. 증상 한 가지를 특정 효소 결핍의 확진으로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.0a459a74fb61",
+      "type": "heading",
+      "level": 2,
+      "text": "극성을 가진 상피가 방향을 만든다"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.6d15b8d72c75",
+      "type": "paragraph",
+      "markdown": "장세포의 꼭대기막(apical membrane)은 관강을,기저외측막(basolateral membrane)은 간질과 혈액 쪽을 향한다. 두 막의 운반체 구성이 다르기 때문에 한 세포 안에서 연속적인 흡수가 가능하다. 세포로 들어오는 단계와 혈액 쪽으로 나가는 단계를 모두 갖추어야 순흡수가 유지된다. 한 막의 운반체가 활발하다는 사실만으로 상피 전체의 순유량을 알 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.916a8e89ea71",
+      "type": "paragraph",
+      "markdown": "포도당·갈락토스의 꼭대기막 유입에는 나트륨–포도당 공동수송체1(SGLT1)이 중요하다. 과당은 대표적으로 GLUT5를 통한 촉진확산으로 들어온다. SGLT1의 전기화학적 결합과 GLUT 계열의 촉진확산을 같은 에너지 기전으로 외우지 않는다. 기저외측의 GLUT2 등은 단당류가 혈액 쪽으로 이동하는 과정에 관여한다. 영양·세포 상태에 따른 수송체 조절이 존재하므로 모든 상황의 위치와 기여율을 고정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.4ec7251a38a3",
+      "type": "heading",
+      "level": 2,
+      "text": "펌프의 ATP와 공동수송의 간접 에너지"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.4c0272179e13",
+      "type": "paragraph",
+      "markdown": "기저외측 Na+/K+ATPase는 ATP를 사용하여 세포 내 나트륨을 낮게 유지하는 데 기여한다. 이 기울기가 SGLT1 같은 이차능동수송(secondary active transport)의 에너지원이 된다. SGLT1이 자신의 반응마다 ATP를 직접 가수분해하는 펌프라는 설명은 부정확하다. 에너지 공급의 직접 단계와 연결된 운반 단계가 다르다. 막전위도 나트륨의 전기화학적 구동력에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.968c9f3b16ab",
+      "type": "paragraph",
+      "markdown": "촉진확산(facilitated diffusion)은 단백질을 사용하지만 그 자체가 대사 에너지를 써서 자유 포도당을 언제나 기울기 반대로 옮긴다는 뜻은 아니다. 운반 방향은 해당 기질의 조건과 다른 막의 수송·대사에 따라 정해진다. 세포 안에서 기질이 소비되거나 반대쪽으로 빠져나가면 유입을 유지하는 데 도움이 될 수 있다. 운반체 이름과 이동 방향을 고정된 화살표 하나로만 학습하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.988294f551b7",
+      "type": "heading",
+      "level": 2,
+      "text": "포화 곡선이 말하는 것과 말하지 않는 것"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.3fe1c29559f2",
+      "type": "paragraph",
+      "markdown": "한 조건의 운반을 J=J_max·S/(K+S)로 근사할 수 있다. S는 관강 기질 농도, J는 지정 면적·시간의 유량, K는 이 모형에서 반최대 유량을 만드는 농도다. J_max=100단위/min,K=5mM이면 S=5mM에서50단위/min이다. 기질을 두 배로 늘려도 이미 포화에 가까우면 유량이 두 배가 되지 않는다. 수용체 점유의 Kd나 특정 효소 Km과 같은 물리적 의미라고 자동 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.56aaa5d9c807",
+      "type": "paragraph",
+      "markdown": "이 단순 곡선은 나트륨·막전위·세포 상태·기저외측 유출 등 조건을 고정한 현상적 모형이다. 다중 기질 공동수송의 모든 전기생리와 실제 장의 혈류·혼합·비교반층을 계산하지 않는다. J_max 변화와 K 변화가 구분되는 실험 조건을 갖추어야 운반 능력과 겉보기 농도 의존성을 비교할 수 있다. 곡선 하나만으로 특정 환자의 운반체 유전자 이상을 진단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.f51eb6b62e7b",
+      "type": "heading",
+      "level": 2,
+      "text": "흡수되지 않은 당과 수분의 관계"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.0920784b3d1c",
+      "type": "paragraph",
+      "markdown": "관강에 남은 작은 용질은 삼투 환경을 바꾸어 수분 흡수·분비의 균형에 영향을 준다. 대장 미생물의 발효는 가스와 짧은사슬지방산 등을 만들며 증상과 관강 성질을 더 바꿀 수 있다. 사람의 효소로 잘 분해되지 않는 탄수화물을 모두 아무 변화 없이 배설되는 물질이라고 볼 수는 없다. 기질 종류와 장내 환경에 따라 발효 정도와 산물이 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.10f558e45195",
+      "type": "paragraph",
+      "markdown": "나트륨과 포도당의 연결된 흡수는 수분 이동을 이해하는 중요한 생리적 기반이다. 장에서 물을 옮기는 모든 과정을 한 분자가 직접 끌고 가는 방식으로만 설명하지 않고,용질 이동과 삼투·상피 경로의 관계를 함께 본다. 이 원리는 경구수분보충의 기전을 이해하는 데 도움이 되지만,실제 조성·농도·투여량은 검증된 기준을 사용해야 한다. 임의의 포도당 농도 증가가 언제나 수분 흡수를 개선하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.685710538aff",
+      "type": "heading",
+      "level": 2,
+      "text": "점막의 건강과 흡수 면적"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.8b43ee35a296",
+      "type": "paragraph",
+      "markdown": "융모·미세융모의 면적과 솔가장자리 효소,세포 교체와 장벽의 상태는 흡수에 영향을 준다. 점막 질환에서는 특정 효소의 감소와 여러 영양소의 흡수 변화가 겹칠 수 있다. 장 길이만으로 기능적 흡수 능력을 완전히 예측하기 어려운 이유다. 장운동에 따른 접촉 시간과 혈류도 수송체의 분자 기능과 별개로 최종 유량을 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.b.5409357de1e2",
+      "type": "paragraph",
+      "markdown": "자료를 읽을 때에는 관강 투여량,단당류 생성량,상피 통과량,문맥으로의 출현량을 나누어 적는다. 소장 내 대사나 장세포의 사용이 있으면 이 숫자들이 모두 같을 필요가 없다. 비교표의 막 위치·기질·구동력을 먼저 확인하고,실험 곡선의 조건과 실제 환자의 증상을 연결하는 추가 근거가 무엇인지 점검하는 방식으로 학습한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.diagram.sugar-transport-saturation",
+      "type": "diagram",
+      "diagramRef": "diagram.sugar-transport-saturation",
+      "path": "diagrams/diagram.sugar-transport-saturation.svg",
+      "alt": "조건 고정의 흡수 포화 모형의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.digestive.carbohydrate-absorption.table.compare",
+      "type": "table",
+      "data": {
+        "title": "상피 운반의 위치",
+        "columns": [
+          "기질/과정",
+          "대표 요소",
+          "구동력·위치"
+        ],
+        "rows": [
+          [
+            "포도당·갈락토스",
+            "SGLT1",
+            "꼭대기막·Na결합"
+          ],
+          [
+            "과당",
+            "GLUT5",
+            "꼭대기막·촉진확산"
+          ],
+          [
+            "단당류 출구",
+            "GLUT2 등",
+            "기저외측"
+          ],
+          [
+            "나트륨 기울기",
+            "Na/K ATPase",
+            "기저외측·ATP직접"
+          ]
+        ],
+        "notes": "분자별조건·세포내사용·유출을함께고려하며단순포화곡선은현상적근사다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/digestive/sections/physiology.digestive.carbohydrate-absorption.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "SGLT1은 나트륨 기울기를 이용하고 Na/K ATPase는 ATP를 직접 사용한다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.digestive.carbohydrate-absorption.001",
+    "question.physiology.digestive.carbohydrate-absorption.002"
+  ],
+  "relatedLessons": [
+    "physiology.neuro.synaptic-transmission",
+    "physiology.neuro.synaptic-integration",
+    "physiology.neuro.sensory-coding"
+  ]
+}

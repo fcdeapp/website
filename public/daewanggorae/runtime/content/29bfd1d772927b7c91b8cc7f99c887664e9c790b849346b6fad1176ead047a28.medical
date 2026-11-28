@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.infection.endocarditis-imaging",
+  "subjectId": "cardiology",
+  "chapterId": "infection",
+  "title": {
+    "ko": "심내막염 영상과 진단 근거의 통합",
+    "en": "Imaging and Integrated Evidence in Endocarditis"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.infection.endocarditis-imaging.lo.01",
+      "text": "경흉부·경식도 영상의 질문을 구별한다"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.lo.02",
+      "text": "해부학적·대사 영상의 한계를 설명한다"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.lo.03",
+      "text": "진단 분류와 실제 의심을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.ebc6160ae04a",
+      "type": "heading",
+      "level": 2,
+      "text": "영상에서 확인할 네 가지"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.39473da92418",
+      "type": "paragraph",
+      "markdown": "심내막염 영상은 덩어리의 존재뿐 아니라 판막의 기능, 판막 주위 확장과 인공물의 안정성 및 심장방 반응을 평가한다. 증식물의 위치·운동과 크기, 첨판 천공과 새 역류, 농양·가성동맥류·비정상 연결은 서로 다른 정보를 준다. 한 장의 영상에 보이는 최대 길이만으로 모든 위험을 표현하지 않는다. 작은 병변도 위치와 기능 손상, 병원체 및 환자의 순환에 따라 중요할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.b3bc5d01bc6d",
+      "type": "paragraph",
+      "markdown": "경흉부 심초음파(transthoracic echocardiography, TTE)는 접근성과 기능 평가의 장점이 있다. 그러나 음향창과 병변 위치, 인공물의 가림은 검출을 제한할 수 있다. 경식도 심초음파(transesophageal echocardiography, TEE)는 가까운 위치에서 세부 구조를 볼 수 있지만 모든 병변과 모든 시점에서 완벽한 검사는 아니다. 불안정과 식도 문제, 진정의 부담 등 검사 선택의 조건도 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.920c40cc27b7",
+      "type": "heading",
+      "level": 2,
+      "text": "음성 검사는 시간과 사전 가능성을 갖는다"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.64bbdeff32a5",
+      "type": "paragraph",
+      "markdown": "감염 초기에 작은 병변이 아직 잘 보이지 않거나, 인공판막 뒤의 가림 때문에 병변을 놓칠 수 있다. 첫 검사 음성이 모든 시점의 감염을 배제하는 것은 아니다. 지속 균혈증과 높은 의심, 새 기능장애나 전도·색전 변화가 있다면 추가 또는 반복 검사가 해결할 질문을 정한다. 일정 시간이 지났다는 이유만으로 반복하는 것보다 새 임상 자료와 검출 한계를 연결하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.ba9f52f7c642",
+      "type": "paragraph",
+      "markdown": "같은 검사라도 사전 가능성이 높은 환자와 낮은 환자에서 음성 결과의 의미가 다르다. 예를 들어 검사 민감도와 특이도가 같아도 고위험 균혈증·인공판막 환자에게 남는 가능성은 더 클 수 있다. 작은 영상 소견을 임상 근거 없이 양성으로 과해석하는 문제도 있다. 음성·양성의 이분법 대신 무엇이 보였고 무엇이 가려졌는지 기술하면 후속 판단에 더 유용하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.5d123924b9f3",
+      "type": "heading",
+      "level": 2,
+      "text": "다른 영상이 더하는 정보"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.a5fae0bcab0b",
+      "type": "paragraph",
+      "markdown": "심장 CT는 판막 주위 구조와 농양·가성동맥류 등 해부학적 확장을 보완할 수 있다. 핵의학 영상은 대사·염증의 분포를 평가하여 특정 인공물 감염과 원격 병소의 탐색에 도움을 줄 수 있다. 하지만 생리적 섭취와 비감염성 염증, 수술 뒤 변화 및 검사 준비가 해석에 영향을 준다. 밝은 섭취나 조영 영상의 한 점을 미생물 배양과 같은 증거로 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.97d3dbcb2fb1",
+      "type": "paragraph",
+      "markdown": "뇌와 다른 장기의 영상은 색전과 출혈, 감염성 동맥 병변 및 원격 감염의 평가에 쓰일 수 있다. 환자의 증상과 위험, 결과가 치료 시점에 미칠 영향을 고려하여 선택한다. 판막의 이상을 찾는 질문과 뇌 합병증의 종류를 구별하는 질문은 검사 위치와 목적이 다르다. 모든 검사를 한꺼번에 시행하는 것 자체가 정확성을 보장하지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.bcddfbf1b2aa",
+      "type": "heading",
+      "level": 2,
+      "text": "분류와 임상 판단"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.54825fc71b88",
+      "type": "paragraph",
+      "markdown": "진단 분류 체계는 미생물·영상과 임상 자료를 표준화하여 결합하는 데 도움을 준다. 주요·부수 근거는 적용한 체계와 개정 연도에 따라 정의와 포함 범위가 다를 수 있다. 서로 다른 체계의 항목을 임의로 섞어 하나의 점수처럼 사용하지 않는다. 분류가 아직 충분하지 않다는 상태와 실제 임상 의심이 낮다는 상태도 구분한다. 고위험 환자의 필요한 평가와 치료는 현재 위험에 맞게 진행되어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.b.8d4e5cb3f613",
+      "type": "paragraph",
+      "markdown": "보고서에는 검사 방법과 시점, 인공물과 기술적 제한 및 관찰된 기능 손상을 포함한다. 이전 영상과 비교해 새로 생긴 역류나 주위 변화인지 확인한다. 혈액배양과 영상의 날짜를 대조하면 진행과 치료 반응을 이해하는 데 도움이 된다. 심내막염 진단은 하나의 표지가 대신하는 일이 아니라, 서로 다른 증거가 같은 병변과 시간 과정을 설명하는지 검토하는 과정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.h.extra0843",
+      "type": "heading",
+      "level": 2,
+      "text": "음성 검사 뒤 남는 가능성의 계산"
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.p.extra0843.0",
+      "type": "paragraph",
+      "markdown": "검사의 민감도를0.8, 특이도를0.9로 고정한 가상 모형에서 검사 전 질환 가능성을p라 하자. 음성 환자 중 질환이 있는 비율은0.2p/[0.2p+0.9(1−p)]다. p=0.5이면0.1/(0.1+0.45)로 약18.2%가 남고, p=0.1이면0.02/(0.02+0.81)로 약2.4%가 남는다. 같은 음성 결과도 출발 가능성에 따라 의미가 달라진다."
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.p.extra0843.1",
+      "type": "paragraph",
+      "markdown": "여기서 사용한 성능은 실제 TTE나TEE의 고정 성능이 아니다. 실제 민감도는 병변 크기와 위치·시점, 인공물과 영상 품질에 따라 달라지고 검사 전 가능성 자체에도 불확실성이 있다. 두 검사의 오류가 서로 독립이라고 보장되지도 않는다. 이 모형은 반복 검사를 기계적으로 계산하는 지침이 아니라, 높은 임상 의심에서 음성 하나를 최종 배제로 쓰기 어려운 이유를 설명한다."
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.table0843",
+      "type": "table",
+      "data": {
+        "title": "연결·기전·검사 대상의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "TTE",
+            "접근성·기능,창·가림 제한"
+          ],
+          [
+            "TEE",
+            "세부 구조,시점·검사 부담"
+          ],
+          [
+            "CT",
+            "주위 해부학·확장"
+          ],
+          [
+            "핵의학",
+            "대사 분포,염증·수술 후 변화 감별"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.infection.endocarditis-imaging.diagram.negative-test-bayes-0843",
+      "type": "diagram",
+      "diagramRef": "diagram.negative-test-bayes-0843",
+      "path": "diagrams/diagram.negative-test-bayes-0843.svg",
+      "alt": "음성 검사 뒤 남는 가능성의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/infection/sections/cardiology.infection.endocarditis-imaging.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.infection.endocarditis-imaging.001",
+    "question.cardiology.infection.endocarditis-imaging.002"
+  ],
+  "relatedLessons": [
+    "cardiology.infection.endocarditis-cultures",
+    "cardiology.infection.endocarditis-complications"
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.cardiomyopathy.hypertrophic-obstruction",
+  "subjectId": "cardiology",
+  "chapterId": "cardiomyopathy",
+  "title": {
+    "ko": "비후성 심근병증과 동적 유출로 폐쇄",
+    "en": "Hypertrophic Cardiomyopathy and Dynamic Outflow Obstruction"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.lo.01",
+      "text": "벽 두께 증가의 원인을 감별한다"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.lo.02",
+      "text": "동적 압력차와 부하를 연결한다"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.lo.03",
+      "text": "증상·부정맥·가족 위험을 분리한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.5c534d3f3f4b",
+      "type": "heading",
+      "level": 2,
+      "text": "두꺼운 벽의 여러 원인"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.461b04d7ef62",
+      "type": "paragraph",
+      "markdown": "비후성 심근병증(hypertrophic cardiomyopathy, HCM)을 평가할 때는 벽 두께 증가를 설명할 압력 부하와 다른 원인을 검토한다. 고혈압과 대동맥판질환, 운동 적응 및 침윤·저장 질환은 비후처럼 보이는 표현형을 만들 수 있다. 벽이 두꺼우니 수축력이 좋고 안전하다는 해석은 맞지 않는다. 두꺼운 심실은 충만과 미세순환, 에너지 수지와 전기적 기질에 문제를 가질 수 있다. 형태와 전체 기능을 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.d21fbf4bd38b",
+      "type": "paragraph",
+      "markdown": "비후의 분포는 비대칭 중격뿐 아니라 다른 부위와 심첨부 등에서 다양하다. 영상에서 가장 두꺼운 부위를 정확히 측정하고 심실 형태와 판막·유두근의 관계를 살핀다. 측정 방향과 영상 질이 결과에 영향을 준다. 미국 2024년 HCM 지침의 공개 설명은 심장 외 단서와 가족력 및 다른 비후 원인을 함께 검토하는 접근을 강조한다. 한 기준 숫자만 외워 모든 환자의 원인과 위험을 확정하는 방식은 충분하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.f4b86d3c4e8b",
+      "type": "heading",
+      "level": 2,
+      "text": "움직이는 유출로"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.3506f015ed56",
+      "type": "paragraph",
+      "markdown": "일부 HCM에서는 좌심실 유출로의 동적 폐쇄가 나타난다. 중격의 형태와 승모판 및 지지 구조의 관계, 수축 시 유동과 힘의 작용이 함께 관여한다. 승모판의 수축기 전방운동(systolic anterior motion, SAM)은 유출로를 좁히고 역류에 기여할 수 있다. 이를 판막을 혈액이 단순히 빨아당기는 한 현상으로만 설명하기보다 구조와 수축·유동의 상호작용으로 이해한다. 모든 비후 환자가 폐쇄를 갖는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.06068efddaa3",
+      "type": "paragraph",
+      "markdown": "전부하가 감소하여 심실 용적이 작아지거나 수축 상태와 후부하가 바뀌면 유출로 압력차가 달라질 수 있다. 안정 시 압력차가 작아도 특정 유발 조건이나 운동에서 커질 수 있다. 반대로 측정 시점과 부하가 다르면 같은 환자의 수치도 달라진다. 동적 폐쇄와 고정된 판막 협착의 기전을 구별해야 하는 이유다. 압력차의 변화와 증상 재현을 함께 보며 한 번의 안정 시 수치로 활동 중 상태를 모두 추정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.5042a0f18152",
+      "type": "heading",
+      "level": 2,
+      "text": "압력차의 측정과 한계"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.d23fe0f45a13",
+      "type": "paragraph",
+      "markdown": "도플러 속도로 압력차를 근사할 때는 신호의 위치와 방향, 오염 가능성을 확인한다. 승모판 역류의 높은 속도와 유출 신호를 혼동하면 해석이 달라질 수 있다. 단순화한 Bernoulli 관계의 제곱 의존성은 속도 오차가 압력차에 증폭될 수 있음을 보여 준다. 이 식은 측정 구간과 가정 안에서 사용하며 실제 심근의 수축력이나 모든 장기 관류를 직접 산출하지 않는다. 신뢰할 수 없는 입력을 정확히 계산해도 유효한 임상 결론이 되지는 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.0148fadfeadb",
+      "type": "paragraph",
+      "markdown": "흉통과 호흡곤란, 운동 제한과 실신의 원인은 폐쇄뿐 아니라 이완 기능과 미세혈관, 부정맥 등 여러 성분을 가질 수 있다. 심방세동은 충만과 증상, 혈전색전 위험에서 중요하다. 실신이 있었다고 모든 사건을 유출로 압력차 하나로 설명하지 않는다. 당시 리듬과 상황, 체액과 혈압 및 가족·구조 자료를 함께 검토한다. 폐쇄의 치료 목표와 돌연사 위험 평가를 별도의 질문으로 유지한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.a3ef7373b035",
+      "type": "heading",
+      "level": 2,
+      "text": "치료와 가족 평가의 층"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.3e7ceef31795",
+      "type": "paragraph",
+      "markdown": "증상성 폐쇄의 관리는 부하·수축과 리듬, 동반 질환을 고려한다. 약물과 중격 축소 치료 등은 적응과 위해, 경험 있는 기관의 평가가 중요하다. 특정 약물을 모든 비후 환자에게 같은 순서로 적용하거나 압력차 숫자만으로 시술을 확정하지 않는다. 심근 미오신 억제와 같은 표적 치료도 수축 기능과 임신 등 특수 상황의 안전 검토가 필요하며 실제 처방은 해당 연도의 지침과 허가사항을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.b.ac5d83587493",
+      "type": "paragraph",
+      "markdown": "장기 위험에는 심정지·심실성 부정맥, 부정맥성 실신과 가족의 조기 사망, 비후와 심첨부 병변 및 반흔 등 여러 정보가 관여한다. 유전상담과 친족의 임상 평가는 병원성 변이와 표현형의 관계를 구별하여 진행한다. 유전자 양성·표현형 음성이라는 상태가 곧 현재의 증상성 HCM과 같은 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.heading.numeric0841",
+      "type": "heading",
+      "level": 2,
+      "text": "속도 오차와 압력차 근사"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.paragraph.numeric0841",
+      "type": "paragraph",
+      "markdown": "단순화한 도플러 압력차 관계를 ΔP≈4v²로 쓰고 v를m/s로 넣으면 결과는mmHg의 관례로 표현한다. 교육용 v=2이면16, v=3이면36이다. 속도는1.5배지만 근사 압력차는2.25배다. 관찰값v에 작은 오차δv가 있을 때 제곱을 전개하면 변화는 대략8vδv가 되어 높은 속도에서 같은 절대 속도 오차의 영향이 커질 수 있다. 이 계산은 도플러 정렬과 신호 식별을 확인해야 한다는 뜻이지, 같은 환자의 압력차를 실제 측정 없이 추정하는 방법이 아니다. 근위 속도가 무시되지 않는 조건에서는 단순식의 적용을 다시 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "비후",
+            "압력부하·다른 원인 감별"
+          ],
+          [
+            "동적 폐쇄",
+            "부하·구조·수축 상호작용"
+          ],
+          [
+            "도플러",
+            "신호 식별·정렬·가정"
+          ],
+          [
+            "장기 평가",
+            "증상과 돌연사 위험 구별"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.diagram.doppler-pressure-square-0841",
+      "type": "diagram",
+      "diagramRef": "diagram.doppler-pressure-square-0841",
+      "path": "diagrams/diagram.doppler-pressure-square-0841.svg",
+      "alt": "속도와 단순 압력차 근사의 독립 계산 곡선"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.heading.clinical0841",
+      "type": "heading",
+      "level": 2,
+      "text": "비후와 허혈·충만의 연결"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.paragraph.clinical0841.0",
+      "type": "paragraph",
+      "markdown": "비후된 심근은 질량과 장력, 세포 수준의 에너지 요구가 달라질 수 있다. 큰 관상동맥의 폐색이 없더라도 미세순환의 공급 여유와 높은 이완기 압력, 짧아진 이완 시간 등이 산소 공급과 수요의 불균형에 기여할 수 있다. 흉통을 유출로 폐쇄의 한 결과로만 정하지 않고 관상동맥 질환과 미세순환, 혈압과 리듬을 함께 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.paragraph.clinical0841.1",
+      "type": "paragraph",
+      "markdown": "심실 이완이 제한된 상태에서는 빠른 속도가 충만 시간을 줄이고 심방 수축의 기여가 더 중요해질 수 있다. 새 심방세동이 생긴 뒤 갑자기 활동 능력이 나빠지는 현상은 심실 속도뿐 아니라 심방 수축과 규칙성의 소실로도 설명할 수 있다. 같은 평균 심박수라도 긴 간격과 짧은 간격이 섞인 양상은 박동별 충만과 박출을 다르게 만든다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.cardiomyopathy.hypertrophic-obstruction.paragraph.clinical0841.2",
+      "type": "paragraph",
+      "markdown": "운동 시 증상을 해석할 때에는 속도와 유출 압력차, 혈압·허혈 및 부정맥이 같은 시간에 어떻게 변했는지 확인한다. 가장 큰 압력차가 보인 시점과 가장 심한 증상이 있던 시점이 다를 수 있다. 여러 생리 축을 동시에 읽으면 한 수치를 낮춘 뒤에도 남는 증상의 이유를 더 정확히 평가할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 정상 OBJ의 중격과 판막은 위치 학습을 보조하지만 SAM의 실제 운동과 환자별 유출로 폐쇄를 직접 표시하는 자료가 아니다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/cardiomyopathy/sections/cardiology.cardiomyopathy.hypertrophic-obstruction.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.cardiomyopathy.hypertrophic-obstruction.001",
+    "question.cardiology.cardiomyopathy.hypertrophic-obstruction.002"
+  ],
+  "relatedLessons": [
+    "cardiology.cardiomyopathy.dilated-cardiomyopathy",
+    "cardiology.cardiomyopathy.restrictive-physiology"
+  ]
+}

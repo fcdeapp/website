@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.nutrition-weight-0858",
+  "lessonId": "clinical-nutrition.assessment.malnutrition-inflammation",
+  "title": "기준 체중 대비 감소율",
+  "series": [
+    {
+      "label": "기준 60kg",
+      "samples": [
+        {
+          "x": 48,
+          "y": 20.0
+        },
+        {
+          "x": 51,
+          "y": 15.0
+        },
+        {
+          "x": 54,
+          "y": 10.0
+        },
+        {
+          "x": 57,
+          "y": 5.0
+        },
+        {
+          "x": 60,
+          "y": 0.0
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "baselineKg": 60,
+    "formula": "(60-x)/60*100",
+    "sameMeasurementConditions": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 48,
+      "max": 60,
+      "scale": "linear",
+      "ticks": [
+        48,
+        51,
+        54,
+        57,
+        60
+      ],
+      "label": "측정 체중(kg)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 25,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        6.25,
+        12.5,
+        18.75,
+        25.0
+      ],
+      "label": "감소율(%)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "기준 60kg",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립적인 수학 모형이다. 실제 환자 관측값·진단 경계·처방 설정이 아니다."
+  ],
+  "sourceImageUsed": false
+}

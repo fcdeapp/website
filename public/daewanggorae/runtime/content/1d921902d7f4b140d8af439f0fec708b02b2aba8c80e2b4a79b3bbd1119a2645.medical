@@ -1,0 +1,205 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pediatrics.hematology.iron-deficiency",
+  "subjectId": "pediatrics",
+  "chapterId": "hematology",
+  "title": {
+    "ko": "소아 철 결핍과 빈혈의 기전·검사",
+    "en": "Iron Deficiency and Anemia in Children"
+  },
+  "learningObjectives": [
+    {
+      "id": "pediatrics.hematology.iron-deficiency.lo.01",
+      "text": "철 저장·운반과 적혈구 생성을 연결한다"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.lo.02",
+      "text": "혈색소·적혈구 지표·철 검사를 통합한다"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.lo.03",
+      "text": "섭취·손실·염증과 치료 반응을 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.5485c04c8aed",
+      "type": "heading",
+      "level": 2,
+      "text": "철의 공급과 성장 수요"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.83cf429cfeb4",
+      "type": "paragraph",
+      "markdown": "철은 헤모글로빈의 산소 운반뿐 아니라 여러 효소와 대사 기능에 관여한다. 소아에서는 성장에 필요한 양과 출생 시 저장, 음식의 종류와 흡수·손실이 균형을 이룬다. 미숙과 빠른 성장, 철이 부족한 식사와 과도하게 치우친 섭취, 만성 출혈과 흡수 문제 등은 서로 다른 위험을 만든다. 체중이 잘 늘었다는 사실만으로 미량영양소의 충분함이 보장되는 것은 아니다. 실제 먹는 양과 구성·주기, 식사의 환경을 구체적으로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.34ac157acb48",
+      "type": "paragraph",
+      "markdown": "철 저장의 감소와 철 제한성 적혈구 생성, 혈색소가 낮아진 빈혈은 시간과 정도가 다를 수 있다. 빈혈이 아직 없다고 모든 철 결핍이 배제되는 것도 아니며, 빈혈이 있다는 이유로 모두 철 결핍인 것도 아니다. 연령에 맞는 기준과 검사 방법을 확인한다. 산소 운반과 성장·기능의 영향을 평가하되 집중과 발달의 모든 문제를 하나의 철 수치로 설명하지 않는다. 여러 영양·수면·의학적 원인이 공존할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.aa9e69748271",
+      "type": "heading",
+      "level": 2,
+      "text": "적혈구 지표의 의미"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.9e5feca3f286",
+      "type": "paragraph",
+      "markdown": "평균적혈구용적(mean corpuscular volume, MCV)과 분포·망상적혈구 등은 빈혈의 기전을 좁히는 자료다. 작은 적혈구는 철 부족과 지중해빈혈 등 여러 상태에서 나타날 수 있다. 적혈구 수와 분포, 가족과 출신 배경·혈색소병증, 이전 검사와 염증·신장·출혈을 함께 검토한다. 계산 지수 하나를 확진 검사로 쓰거나 유전성 질환과 영양 결핍이 공존하지 않는다고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.f2bf67c5153b",
+      "type": "paragraph",
+      "markdown": "혈색소 농도는 수분 상태와 검사 시점·방법에 영향을 받는다. 급성 실혈 직후와 체액이 재분포된 뒤의 값은 같은 의미가 아닐 수 있다. 창백과 빈맥·호흡, 활동과 성장, 심한 경우의 순환 부담을 검사와 함께 평가한다. 숫자의 낮음만으로 모든 수혈과 약물의 결정을 일률적으로 정하지 않는다. 발생 속도와 만성 적응, 증상과 동반 질환이 같은 농도의 임상적 의미를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.6716b31d9844",
+      "type": "heading",
+      "level": 2,
+      "text": "페리틴과 염증"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.2bc9bfa71153",
+      "type": "paragraph",
+      "markdown": "페리틴은 저장 철의 정보를 제공하지만 급성기 반응과 염증·간 상태 등의 영향을 받는다. 낮은 페리틴은 중요한 단서가 될 수 있으나 정상 또는 높은 수치만으로 모든 상황의 철 부족을 배제하지 않는다. 염증과 철 이용 제한, 실제 저장량과 이동을 구별한다. 트랜스페린과 포화도, 망상적혈구 관련 지표 등 다른 검사는 서로 다른 질문에 답한다. 하나의 검사만 반복하기보다 임상 가설에 맞는 조합을 선택한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.393a6856e138",
+      "type": "paragraph",
+      "markdown": "헵시딘(hepcidin)은 장에서의 흡수와 저장 세포에서의 철 방출을 조절하는 데 관여한다. 염증과 철 상태가 조절에 영향을 주어 혈중 철의 감소가 단순한 식사 부족만을 뜻하지 않을 수 있다. 이러한 기전을 이해하면 염증성 빈혈과 절대 철 결핍의 차이·공존을 생각할 수 있다. 수치의 방향을 외우는 것에 그치지 않고 철이 어느 구획에 있고 적혈구 생성에 이용 가능한지 질문한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.4fbfaac8a2dc",
+      "type": "heading",
+      "level": 2,
+      "text": "치료와 실제 복용"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.f3bbd3373255",
+      "type": "paragraph",
+      "markdown": "철 치료는 실제 원소철의 양과 체중·제제, 투여 방법과 안전을 확인한다. 상품의 전체 염 무게와 원소철 함량은 같지 않으므로 단위를 혼동하면 용량 오류가 생긴다. 위장관 불편과 맛·복용 횟수, 음식과 다른 약물·흡수, 보호자의 이해가 실제 공급을 바꿀 수 있다. 처방했다는 사실만으로 충분한 양이 지속적으로 들어갔다고 가정하지 않는다. 필요한 영양·출혈과 원인 교정도 함께 시행한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.30b9a48ec76d",
+      "type": "paragraph",
+      "markdown": "치료 반응은 시간에 따른 망상적혈구와 혈색소·저장 철, 증상과 기능으로 평가한다. 혈색소가 회복되어도 저장량의 회복은 다른 과정일 수 있다. 반응이 부족하면 실제 복용과 함량·흡수, 지속 손실과 염증·다른 빈혈 원인을 재검토한다. 무조건 용량을 늘리거나 여러 보충제를 겹쳐 사용하는 것은 적절하지 않다. 철 제제는 과량 섭취의 위험이 있어 보관과 어린이의 접근을 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.92e45ba0384d",
+      "type": "heading",
+      "level": 2,
+      "text": "수치의 변화와 추적"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.d2fe5f31210f",
+      "type": "paragraph",
+      "markdown": "가상 기록에서 혈색소가 8.0에서 10.0g/dL로 변했다면 절대 증가는 2.0g/dL, 처음 대비 상대 증가는 25%다. 이 계산이 정상화와 원인 확진, 신경 발달 회복을 뜻하지는 않는다. 연령 기준과 검사 조건, 실제 치료와 시간·기능을 확인해야 한다. 빈혈의 추적은 숫자의 최대 증가만이 아니라 지속 가능한 식사와 원인 교정·재발 위험을 포함한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.b.e504bda11b09",
+      "type": "paragraph",
+      "markdown": "보호자와 식사의 편중과 음식 접근성, 가족과 돌봄의 환경을 논의한다. 아이가 먹지 않는다는 말에 비난하기보다 먹기 기술과 감각·위장관 문제, 섭식의 갈등과 실제 기회를 검토한다. 정상 장과 간·골수 관련 거시 모형은 흡수와 저장·생성의 위치 배경을 제공할 수 있지만 철 저장량과 헵시딘·적혈구 기능을 보여 주지 않는다. 물질의 구획과 이동은 별도의 경로 그림과 표로 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.table0857",
+      "type": "table",
+      "data": {
+        "title": "관찰 자료와 해석의 출발점",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "연령",
+            "20개월"
+          ],
+          [
+            "식이",
+            "우유 섭취가 많고 철 함유 음식 섭취가 적음"
+          ],
+          [
+            "혈액검사",
+            "소구성 빈혈"
+          ],
+          [
+            "동반 상태",
+            "급성 염증성 질환이 있음"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.diagram.hemoglobin-change-0857",
+      "type": "diagram",
+      "diagramRef": "diagram.hemoglobin-change-0857",
+      "path": "diagrams/diagram.hemoglobin-change-0857.svg",
+      "alt": "기준 혈색소 대비 변화의 독립 계산 곡선"
+    },
+    {
+      "id": "pediatrics.hematology.iron-deficiency.comparison0857",
+      "type": "table",
+      "data": {
+        "title": "빈혈 자료가 나타내는 서로 다른 측면",
+        "columns": [
+          "자료",
+          "주요 의미",
+          "해석 주의점"
+        ],
+        "rows": [
+          [
+            "혈색소",
+            "빈혈의 정도",
+            "연령·수분 상태·경과 고려"
+          ],
+          [
+            "평균적혈구용적",
+            "혈구의 평균 크기",
+            "소구성이 철결핍에 특이적이지 않음"
+          ],
+          [
+            "페리틴",
+            "저장 철의 단서",
+            "염증에 의해 증가 가능"
+          ],
+          [
+            "식이와 출혈 병력",
+            "섭취·손실의 단서",
+            "질환과 흡수 장애도 검토"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/hematology/sections/pediatrics.hematology.iron-deficiency.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pediatrics.hematology.iron-deficiency.001",
+    "question.pediatrics.hematology.iron-deficiency.002"
+  ],
+  "relatedLessons": [
+    "pediatrics.gastroenteritis.dehydration-assessment",
+    "gynecology.amenorrhea.axis-differential"
+  ]
+}

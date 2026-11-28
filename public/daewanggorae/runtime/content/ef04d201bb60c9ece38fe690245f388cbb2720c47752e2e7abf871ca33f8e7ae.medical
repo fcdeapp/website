@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.lipids.fatty-acid-synthesis",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.a9dedb978ffa",
+      "sourceSha256": "a9dedb978ffa27f3bf857c1c51c41a4c76ba7346bc13fbda47f944ae5d90765f",
+      "sourceLengthUtf16": 254,
+      "annotations": [
+        {
+          "id": "ann.b7b216fc09898a08c82b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 104,
+            "end": 108,
+            "exact": "베타산화",
+            "prefix": "synthase, FASN)와 미토콘드리아 ",
+            "suffix": "는 구획·효소·운반체·산화환원 보조인자가 다"
+          },
+          "conceptId": "reader.term.0ba7fa5b933b185a",
+          "targetDocumentId": "biochemistry.lipids.fatty-acid-oxidation"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.98fd75a31476",
+      "sourceSha256": "98fd75a31476d744224238abea636793d0ebf8300c0c1eb451963439615bcf56",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.5b3c82c34cf68ef04637",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 158,
+            "exact": "시트르산(citrate)이 밖으로 이동한 뒤 ATP시트르산분해효소(ATP citrate lyase, ACLY)에 의해 세포질 아세틸CoA와 옥살로아세트산을 제공하는 경로가 중요하다.",
+            "prefix": " 쓰이려면 구획을 건너는 경로가 필요하다. ",
+            "suffix": " 이때 미토콘드리아 내막을 자유롭게 아세틸C"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.95d9a8a7e53b",
+      "sourceSha256": "95d9a8a7e53be747ffd8b233caf7b0049a4db96b1ca26fc13368d6b207375aa0",
+      "sourceLengthUtf16": 237,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.676ae4467258",
+      "sourceSha256": "676ae446725810ec8c6fdac88716c77a79eb7c63ef3f138b2bc440ce42f00a84",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.e96048dd0892",
+      "sourceSha256": "e96048dd0892ed2a83deaaceb71923f8f8965cc301acaeb02862758f8c02d43a",
+      "sourceLengthUtf16": 244,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.8db5b5a86aab",
+      "sourceSha256": "8db5b5a86aabe293c714c06e9da836f73852d08a38fc57f96d1fcf945daecb18",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.09187e657953",
+      "sourceSha256": "09187e657953b62f16ff3a38a870d314d6c23e3f79715dc5f5002588091042ea",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.543ed1db1810",
+      "sourceSha256": "543ed1db1810b4b195ec3f8a51dd7875fe7f549ab14f4b1c9f27f3a333fc6bec",
+      "sourceLengthUtf16": 243,
+      "annotations": [
+        {
+          "id": "ann.1508b5eb9801fcf4e217",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 188,
+            "end": 243,
+            "exact": "ATP 한 분자 사용과 고에너지 인산결합 당량도 반응 산물이 ADP인지 AMP인지에 따라 구별한다.",
+            "prefix": "는지 먼저 정해야 숫자를 비교할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.c2fdf1ab4e6f",
+      "sourceSha256": "c2fdf1ab4e6fc431f6ef2b1dea7246e974f2670321a2c664307dafcda16aad3d",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.b34749d540f35e4a1e41",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 8,
+            "end": 33,
+            "exact": "pentose phosphate pathway",
+            "prefix": "오탄당인산경로(",
+            "suffix": ")와 말산효소(malic enzyme) 등은"
+          },
+          "conceptId": "reader.term.3fe931bd4395db73",
+          "targetDocumentId": "biochemistry.carbohydrate.pentose-phosphate"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.eaa62443b020",
+      "sourceSha256": "eaa62443b0204c944b2b17df93067aa551f4b40c8c179922e8d20d250f2fc679",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.lipids.fatty-acid-synthesis.b.329d604afc8e",
+      "sourceSha256": "329d604afc8e3fed5b6f66a48b59b294bbda7ca55313018062619263c6ef9ea1",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    }
+  ]
+}

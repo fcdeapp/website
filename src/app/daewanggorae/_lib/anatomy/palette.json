@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "colorSpace": "srgb",
+  "purpose": "Educational design presets, not measured tissue properties. Artery/vein colors are anatomical conventions, not oxygenation measurements.",
+  "presets": {
+    "bone": {
+      "labelKo": "뼈",
+      "baseColor": "#E4DAC5",
+      "roughness": 0.72,
+      "metallic": 0
+    },
+    "skeletal_muscle": {
+      "labelKo": "골격근",
+      "baseColor": "#A34C47",
+      "roughness": 0.58,
+      "metallic": 0
+    },
+    "cardiac_muscle": {
+      "labelKo": "심장근",
+      "baseColor": "#913E43",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "smooth_muscle": {
+      "labelKo": "평활근",
+      "baseColor": "#B77976",
+      "roughness": 0.52,
+      "metallic": 0
+    },
+    "tendon": {
+      "labelKo": "힘줄",
+      "baseColor": "#DDD8C9",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "ligament": {
+      "labelKo": "인대",
+      "baseColor": "#C6C0A9",
+      "roughness": 0.55,
+      "metallic": 0
+    },
+    "cartilage": {
+      "labelKo": "연골",
+      "baseColor": "#A8C1C5",
+      "roughness": 0.38,
+      "metallic": 0
+    },
+    "fascia": {
+      "labelKo": "근막",
+      "baseColor": "#D5CEC0",
+      "roughness": 0.58,
+      "metallic": 0
+    },
+    "intervertebral_disc": {
+      "labelKo": "추간판",
+      "baseColor": "#91A7AD",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "artery": {
+      "labelKo": "동맥",
+      "baseColor": "#BE4149",
+      "roughness": 0.4,
+      "metallic": 0
+    },
+    "vein": {
+      "labelKo": "정맥",
+      "baseColor": "#4E709D",
+      "roughness": 0.4,
+      "metallic": 0
+    },
+    "capillary": {
+      "labelKo": "모세혈관",
+      "baseColor": "#A16B85",
+      "roughness": 0.45,
+      "metallic": 0
+    },
+    "lymphatic_vessel": {
+      "labelKo": "림프관",
+      "baseColor": "#86A78B",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "lymph_node": {
+      "labelKo": "림프절",
+      "baseColor": "#6D9678",
+      "roughness": 0.55,
+      "metallic": 0
+    },
+    "heart": {
+      "labelKo": "심장",
+      "baseColor": "#963F46",
+      "roughness": 0.45,
+      "metallic": 0
+    },
+    "peripheral_nerve": {
+      "labelKo": "말초신경",
+      "baseColor": "#DCC184",
+      "roughness": 0.58,
+      "metallic": 0
+    },
+    "gray_matter": {
+      "labelKo": "회색질",
+      "baseColor": "#B5A19D",
+      "roughness": 0.58,
+      "metallic": 0
+    },
+    "white_matter": {
+      "labelKo": "백색질",
+      "baseColor": "#E0D7C5",
+      "roughness": 0.55,
+      "metallic": 0
+    },
+    "brain": {
+      "labelKo": "뇌",
+      "baseColor": "#C4ADA5",
+      "roughness": 0.52,
+      "metallic": 0
+    },
+    "spinal_cord": {
+      "labelKo": "척수",
+      "baseColor": "#D5C3A2",
+      "roughness": 0.52,
+      "metallic": 0
+    },
+    "meninges": {
+      "labelKo": "수막",
+      "baseColor": "#BFAAA1",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "ganglion": {
+      "labelKo": "신경절",
+      "baseColor": "#C5A365",
+      "roughness": 0.55,
+      "metallic": 0
+    },
+    "lung": {
+      "labelKo": "폐",
+      "baseColor": "#C28E92",
+      "roughness": 0.55,
+      "metallic": 0
+    },
+    "liver": {
+      "labelKo": "간",
+      "baseColor": "#79433E",
+      "roughness": 0.42,
+      "metallic": 0
+    },
+    "stomach": {
+      "labelKo": "위",
+      "baseColor": "#C28E7E",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "small_intestine": {
+      "labelKo": "소장",
+      "baseColor": "#C9A18D",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "large_intestine": {
+      "labelKo": "대장",
+      "baseColor": "#A88B79",
+      "roughness": 0.52,
+      "metallic": 0
+    },
+    "pancreas": {
+      "labelKo": "췌장",
+      "baseColor": "#D6B580",
+      "roughness": 0.55,
+      "metallic": 0
+    },
+    "gallbladder": {
+      "labelKo": "담낭",
+      "baseColor": "#839263",
+      "roughness": 0.4,
+      "metallic": 0
+    },
+    "spleen": {
+      "labelKo": "비장",
+      "baseColor": "#815365",
+      "roughness": 0.45,
+      "metallic": 0
+    },
+    "kidney": {
+      "labelKo": "신장",
+      "baseColor": "#92534C",
+      "roughness": 0.43,
+      "metallic": 0
+    },
+    "urinary_bladder": {
+      "labelKo": "방광",
+      "baseColor": "#C5A28D",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "esophagus": {
+      "labelKo": "식도",
+      "baseColor": "#B9807A",
+      "roughness": 0.52,
+      "metallic": 0
+    },
+    "trachea_bronchus": {
+      "labelKo": "기관·기관지",
+      "baseColor": "#A6B9B9",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "thyroid": {
+      "labelKo": "갑상샘",
+      "baseColor": "#B66F63",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "parathyroid": {
+      "labelKo": "부갑상샘",
+      "baseColor": "#B89862",
+      "roughness": 0.52,
+      "metallic": 0
+    },
+    "adrenal_gland": {
+      "labelKo": "부신",
+      "baseColor": "#D0AD72",
+      "roughness": 0.52,
+      "metallic": 0
+    },
+    "pituitary_gland": {
+      "labelKo": "뇌하수체",
+      "baseColor": "#B88A99",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "thymus": {
+      "labelKo": "흉선",
+      "baseColor": "#C6A69C",
+      "roughness": 0.55,
+      "metallic": 0
+    },
+    "reproductive_organ": {
+      "labelKo": "생식기관",
+      "baseColor": "#B98691",
+      "roughness": 0.48,
+      "metallic": 0
+    },
+    "adipose_tissue": {
+      "labelKo": "지방조직",
+      "baseColor": "#E1C98B",
+      "roughness": 0.62,
+      "metallic": 0
+    },
+    "skin": {
+      "labelKo": "피부",
+      "baseColor": "#C9A28C",
+      "roughness": 0.65,
+      "metallic": 0
+    },
+    "connective_tissue": {
+      "labelKo": "결합조직",
+      "baseColor": "#D0C7B9",
+      "roughness": 0.62,
+      "metallic": 0
+    },
+    "unclassified": {
+      "labelKo": "미분류",
+      "baseColor": "#BDBDBD",
+      "roughness": 0.65,
+      "metallic": 0
+    },
+    "heart_valve": {
+      "labelKo": "심장판막",
+      "baseColor": "#D4C6B3",
+      "roughness": 0.52,
+      "metallic": 0
+    },
+    "tooth": {
+      "labelKo": "치아",
+      "baseColor": "#E8E0CE",
+      "roughness": 0.48,
+      "metallic": 0
+    }
+  }
+}

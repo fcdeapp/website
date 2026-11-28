@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroscience",
+  "title": {
+    "ko": "신경과학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "neuroscience.chapter.synapse",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/synapse/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.membrane",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/membrane/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.conduction",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/conduction/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.sensory",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/sensory/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.motor",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/motor/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.sleep",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/sleep/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.nmj",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/nmj/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.motor-unit",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/motor-unit/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.pain",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/pain/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.autonomic",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/autonomic/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.plasticity",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/plasticity/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.development",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/development/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.memory",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/memory/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.glia",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/glia/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.vision",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/vision/chapter.json"
+    },
+    {
+      "id": "neuroscience.chapter.metabolism",
+      "path": "domains/08-neuroscience-psychiatry/subjects/neuroscience/chapters/metabolism/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "neuroscience.plan.001",
+    "neuroscience.plan.002",
+    "neuroscience.plan.003",
+    "neuroscience.plan.004",
+    "neuroscience.plan.005",
+    "neuroscience.plan.006",
+    "neuroscience.synapse.transmission",
+    "neuroscience.membrane.ion-gradients",
+    "neuroscience.conduction.myelin-cable",
+    "neuroscience.sensory.coding-pathways",
+    "neuroscience.motor.basal-ganglia-cerebellum",
+    "neuroscience.sleep.circadian-arousal",
+    "neuroscience.nmj.release-safety-factor",
+    "neuroscience.motor-unit.recruitment-fatigue",
+    "neuroscience.pain.phenotype-lesion",
+    "neuroscience.autonomic.orthostatic-testing",
+    "neuroscience.plasticity.activity-dependent",
+    "neuroscience.development.myelination-critical-period",
+    "neuroscience.memory.encoding-retrieval",
+    "neuroscience.glia.barrier-neurovascular",
+    "neuroscience.vision.retina-field-pathways",
+    "neuroscience.metabolism.energy-excitotoxicity"
+  ]
+}

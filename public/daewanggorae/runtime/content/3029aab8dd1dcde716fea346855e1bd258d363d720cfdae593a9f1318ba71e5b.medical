@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "gastroenterology.inflammation.ibd",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.b553a0e3976b",
+      "sourceSha256": "b553a0e3976bb178e9eb7a804acc8f0ea1b08decaabe14ee0d381fb9e70d206f",
+      "sourceLengthUtf16": 250,
+      "annotations": [
+        {
+          "id": "ann.d920faff47c427d0e4c9",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 99,
+            "end": 104,
+            "exact": "만성 염증",
+            "prefix": "ative colitis)을 중심으로 하는 ",
+            "suffix": " 질환군이다. 유전적 감수성, 장내 미생물,"
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        },
+        {
+          "id": "ann.4e3c128d722d7b0be7de",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 195,
+            "end": 250,
+            "exact": "스트레스가 증상과 생활 기능에 영향을 줄 수 있다는 사실과 만성 염증의 발생 원인은 구분해야 한다.",
+            "prefix": "트레스만으로 전체 병인을 설명하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.bbfcdf35ffee",
+      "sourceSha256": "bbfcdf35ffee0fa89afc911372593485ff8a59e149a7fd4513c1dbb4a13ab66a",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.8b7795e22ace",
+      "sourceSha256": "8b7795e22acec904c46a44088c80ccbe53e2e462209bab4ba3e3a7f177989c49",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.796735edb147",
+      "sourceSha256": "796735edb14754da7069c22467b0937cace6a1aeb16b93931166590e9766101e",
+      "sourceLengthUtf16": 200,
+      "annotations": [
+        {
+          "id": "ann.774763719fd501539c68",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 98,
+            "exact": "장벽 전층의 염증은 누공, 농양과 협착을 설명하는 중요한 특징이다.",
+            "prefix": "상대적으로 보존된 구간이 존재할 수 있다. ",
+            "suffix": " 회장 침범이나 절제는 담즙산 및 비타민 B"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.858ebd5019a4",
+      "sourceSha256": "858ebd5019a4c0230d8cceeafea89d436258a09ab032435c3fc1d6a0390e8d2a",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.17b0d7ae3c39",
+      "sourceSha256": "17b0d7ae3c399e5feb6239c36ca57b331eff693ba60dcb43d732f4aec484cabd",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.ec6836d79f1f211bd205",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 121,
+            "end": 183,
+            "exact": "청소년에서는 성장과 사춘기 진행을 관찰해야 하며, 성인에서도 근육량과 영양 결핍이 질환 부담의 중요한 부분이다.",
+            "prefix": "만성 염증이 함께 만드는 결과일 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.5d88f5b71138",
+      "sourceSha256": "5d88f5b711389d612923c64717ee3b93b84df0ca9e9252c12aca260652e8afb8",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.3c90c53a3b08796594d2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 54,
+            "end": 56,
+            "exact": "결핵",
+            "prefix": " 적절한 영상이 필요하다. 감염성 장염, 장",
+            "suffix": ", 약물 손상, 허혈성 질환 및 다른 염증성"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        }
+      ]
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.3b807ee578da",
+      "sourceSha256": "3b807ee578da528515d36e72583b30afd6a0250891f506a597fb577f054054ab",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.c7bba2c0715f",
+      "sourceSha256": "c7bba2c0715f3cb4a83db0bef5a819f22e88b0783ed2b50f045f676f27ed221c",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.1c5039ca6a90",
+      "sourceSha256": "1c5039ca6a90857200e1ee4b731b2f1e3d7146027204441d3309719fb8c25cfa",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.ba40362c297e",
+      "sourceSha256": "ba40362c297e541498c898821f1778967d0ae6f09c9008ac32fc17efe511d66b",
+      "sourceLengthUtf16": 245,
+      "annotations": []
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.bafc02a4bf13",
+      "sourceSha256": "bafc02a4bf1347e1b48cb1497b167c3be0166b6b125746089776ce878f788906",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.dc0f06bea8a0dace4d79",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 107,
+            "end": 113,
+            "exact": "감염원 조절",
+            "prefix": "충분히 해결되지 않을 수 있다. 농양에서는 ",
+            "suffix": "과 항균 치료 및 시술·수술의 필요성을 평가"
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.d21d8ceec7e2",
+      "sourceSha256": "d21d8ceec7e2f0797ef90a4b2b4185a2bc9f7133ffac7252bc1ff63812994102",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.3232ba4f5487",
+      "sourceSha256": "3232ba4f5487c2a1ae6ec9ed6c8f3ce7333ef19cba9f544451e4b31f566ba290",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "gastroenterology.inflammation.ibd.b.d718bda6bf7a",
+      "sourceSha256": "d718bda6bf7acc17a4284f65d26e493680f3397cce7b358e59621d06b606550a",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    }
+  ]
+}

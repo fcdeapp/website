@@ -1,5 +1,5 @@
-import { BASE, getManifest, getCatalog } from "./content";
-export const CACHE = "daewanggorae-web-v1";
+import { BASE, getManifest, getCatalog, content } from "./content";
+export const CACHE = "daewanggorae-web-v2";
 export async function downloadSubject(
   subjectId: string,
   signal: AbortSignal,
@@ -19,6 +19,16 @@ export async function downloadSubject(
       (p) => p.startsWith("diagrams/") || p === "references/references.json",
     ),
   ]);
+  const revisions = await content.read<{candidates:{id:string;path:string}[]}>("compiled/question-revisions.json");
+  const presentations = await content.read<Record<string,{index:number}>>("compiled/question-presentation-index.json");
+  const questionIds=new Set(catalog.questions.filter(q=>q.subjectId===subjectId).map(q=>q.id));
+  paths.add("compiled/question-revisions.json"); paths.add("compiled/question-presentation-index.json");
+  for(const q of revisions.candidates) if(questionIds.has(q.id)) {
+    paths.add(q.path);
+    if(presentations[q.id])paths.add("compiled/question-presentation/"+presentations[q.id].index+".json");
+  }
+  // Evidence resources are small vectors and three shared source photos; answer-free.
+  for(const path of Object.keys(manifest.files)) if(path.startsWith("compiled/question-evidence/") || path.startsWith("reader/")) paths.add(path);
   const cache = await caches.open(CACHE);
   let done = 0;
   onProgress(0, paths.size);

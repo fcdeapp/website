@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "electrolytes.water.sodium-disorders",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.1be6714fdece",
+      "sourceSha256": "1be6714fdece9c106b9b9f836f5f11e4e857d1620a47387641db612abd6951a4",
+      "sourceLengthUtf16": 263,
+      "annotations": [
+        {
+          "id": "ann.adb2bd1a4152a23fb65e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 96,
+            "end": 99,
+            "exact": "심부전",
+            "prefix": "는지에 영향을 받는 농도이다. 부종이 있는 ",
+            "suffix": " 환자는 체내 나트륨 총량이 증가해도 물이 "
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.4bd7b2d531b2",
+      "sourceSha256": "4bd7b2d531b2f5e52c2af04ec39c3e3f9e43ed9102cb633c128776bef9f25e4a",
+      "sourceLengthUtf16": 219,
+      "annotations": [
+        {
+          "id": "ann.d8d3498e27b5612c6ce0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 152,
+            "end": 219,
+            "exact": "특정 측정법에서 심한 고지질혈증이나 고단백혈증이 물 분획 추정에 영향을 주는 가성저나트륨혈증도 실제 물 이동과 구별한다.",
+            "prefix": " 보고 저긴장성 상태로 판단하면 안 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.3edff4c5667e",
+      "sourceSha256": "3edff4c5667e36e86125984b30c551f26ec2a91dfb8dba3bae9be2351f0410f8",
+      "sourceLengthUtf16": 256,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.b992461a08eb",
+      "sourceSha256": "b992461a08eb3566ad2759e4b79870a0331cd47782afa45c394bfaf5e6fbb841",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.7dfa163e027f",
+      "sourceSha256": "7dfa163e027f134502f6cd1ad975dffa54361a2d421c135c2f12695371515b24",
+      "sourceLengthUtf16": 229,
+      "annotations": [
+        {
+          "id": "ann.e0479cd60f8421b525e1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 23,
+            "end": 34,
+            "exact": "vasopressin",
+            "prefix": "항이뇨호르몬인 바소프레신(arginine ",
+            "suffix": ", AVP)은 집합관의 V2 수용체를 통해 "
+          },
+          "conceptId": "reader.term.df6b37a2afc65475",
+          "targetDocumentId": "physiology.renal.urine-concentration"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.2d8c77d6441c",
+      "sourceSha256": "2d8c77d6441ca5b3d15554d6d530bf039497314ec3ddbae1f09117afb062e9de",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.2c450c3310e6",
+      "sourceSha256": "2c450c3310e6f2b28928e53b4509bd6693883822af1e46d1f6f95e0a33259b8e",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.5b1df12f2c2b",
+      "sourceSha256": "5b1df12f2c2bb2437c57a72320b87783d6147ffa1ec59201d19c06f119bb8c46",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.a4f6bd34b673",
+      "sourceSha256": "a4f6bd34b673336d2ee45cac448a7ee33ec4fe069b3505d60ad3d0e3582133a6",
+      "sourceLengthUtf16": 251,
+      "annotations": []
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.59c0602c6d44",
+      "sourceSha256": "59c0602c6d4432989f34982055012b6ed3c9ebc34f4e144d69dcccfe520229c9",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.79ac98721e8c8392e656",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 126,
+            "end": 131,
+            "exact": "알도스테론",
+            "prefix": "여한다. 반면 이차성 부신 기능 저하에서는 ",
+            "suffix": " 조절이 상대적으로 보존될 수 있다. 같은 "
+          },
+          "conceptId": "reader.term.2dbad37f3f8aa1cf",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.e1fadf7f7467",
+      "sourceSha256": "e1fadf7f7467c93f44d8a0c3210b6c63a6fbc189c28f2f9fa561b524e0dace4a",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.29ebb4ef1e9438f9d54a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 50,
+            "end": 105,
+            "exact": "의식이 명료하고 갈증이 정상이며 물을 자유롭게 얻을 수 있는 사람에서는 갈증이 중요한 방어기전이다.",
+            "prefix": " 드물게 과도한 나트륨 공급으로 발생한다. ",
+            "suffix": " 영유아, 인지장애 환자, 중환자에서는 물에"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "electrolytes.water.sodium-disorders.b.deb10fe982ea",
+      "sourceSha256": "deb10fe982ea000d13dc4320a162a1fb920cde6148f8cdeaef19d3fbeddff0fd",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.c2601fdc5dd293ad9445",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 188,
+            "end": 235,
+            "exact": "치료 과정의 핵심은 신경학적 상태와 반복 측정으로 실제 변화 속도를 확인하는 것이다.",
+            "prefix": "한, 호흡, 소변 손실을 대신하지 못한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

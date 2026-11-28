@@ -9,6 +9,8 @@ import { verificationLabel } from "../_lib/labels";
 import { Block, Structured } from "../_components/Blocks";
 import { State, url } from "../_components/UI";
 import SceneViewer from "../_components/SceneViewer";
+import { ReaderContext } from "../_components/ReaderContext";
+import { getReaderDocument } from "../_lib/reader";
 import s from "../daewanggorae.module.css";
 export default function LessonScreen() {
   const id = useSearchParams().get("id") || "";
@@ -23,6 +25,7 @@ function Reader({ id }: { id: string }) {
       "lesson:" + id,
     ),
     records = useRecords();
+  const annotations = useLoad(() => getReaderDocument(id), "reader:" + id);
   const [error, setError] = useState(""),
     [find, setFind] = useState(""),
     [noteBlock, setNoteBlock] = useState(""),
@@ -140,7 +143,7 @@ function Reader({ id }: { id: string }) {
       )
     : [];
   return (
-    <>
+    <ReaderContext.Provider value={{data:annotations.data ?? null, enabled:records["preference:settings"]?.data.readerHighlights !== false}}>
       <div className={s.breadcrumb}>
         <Link href={url("textbook")}>교과서</Link>
         <span>/</span>
@@ -456,6 +459,8 @@ function Reader({ id }: { id: string }) {
                 placeholder="단어 찾기"
               />
             </label>
+            <label className={s.check}><input type="checkbox" checked={records["preference:settings"]?.data.readerHighlights !== false} onChange={e => void saveRecord("preference","settings",{...records["preference:settings"]?.data,readerHighlights:e.target.checked}).catch(e=>setError(String(e)))} />핵심 내용 강조</label>
+            {annotations.error && <p className={s.notice}>어휘 링크를 불러오지 못했습니다. <button onClick={annotations.retry}>다시 시도</button></p>}
             <label className={s.field}>
               글자 크기
               <select
@@ -503,6 +508,6 @@ function Reader({ id }: { id: string }) {
           )}
         </aside>
       </div>
-    </>
+    </ReaderContext.Provider>
   );
 }

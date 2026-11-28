@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.movement.parkinson-syndrome",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.movement.parkinson-syndrome.b.09caabf2e47a",
+      "sourceSha256": "09caabf2e47af4f28986bc4837fae86b604a67378d7a4df25c92b7b181a0bd7e",
+      "sourceLengthUtf16": 596,
+      "annotations": [
+        {
+          "id": "ann.ba2274586af291e74890",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 46,
+            "end": 59,
+            "exact": "basal ganglia",
+            "prefix": "보내는 사건만으로 완성되지 않는다. 기저핵(",
+            "suffix": ")은 대뇌겉질·시상과 연결되어 필요한 운동의"
+          },
+          "conceptId": "reader.term.f86911b56a42fbf2",
+          "targetDocumentId": "neuroanatomy.forebrain.basal-ganglia"
+        },
+        {
+          "id": "ann.f5e5a0bbe4fb47a3296a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 434,
+            "end": 506,
+            "exact": "관절 통증 때문에 천천히 움직이는 경우, 근력 저하로 반복 수행이 어려운 경우, 검사 지시를 이해하지 못한 경우와 구별해야 한다.",
+            "prefix": " 감소, 멈칫함과 리듬의 붕괴를 관찰한다. ",
+            "suffix": " 한 손의 작은 움직임과 보행·일어서기의 큰"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.movement.parkinson-syndrome.b.640b0739b793",
+      "sourceSha256": "640b0739b793c11ff4d75a73166730f2620d673c933f8eef2d1f4cb173df0e02",
+      "sourceLengthUtf16": 569,
+      "annotations": [
+        {
+          "id": "ann.8413e89ded2e5948753c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 377,
+            "end": 379,
+            "exact": "소뇌",
+            "prefix": "낙상, 심한 자율신경 이상, 눈운동 장애, ",
+            "suffix": " 징후, 빠른 기능 악화는 진단 가설을 다시"
+          },
+          "conceptId": "reader.term.4799594fa35f4571",
+          "targetDocumentId": "neuroanatomy.cerebellum.cortex-connections"
+        },
+        {
+          "id": "ann.efc803a8a91770f5b047",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 151,
+            "end": 228,
+            "exact": "경직은 수동 관절 운동의 속도에 비교적 덜 의존하는 저항으로 평가하며, 속도에 따라 저항이 달라지는 경직성 마비의 근긴장 증가와 구별한다.",
+            "prefix": "지만, 모든 환자에게 떨림이 있지는 않다. ",
+            "suffix": " 검사자의 힘과 환자의 긴장, 통증도 소견을"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.movement.parkinson-syndrome.b.4b506fe3f848",
+      "sourceSha256": "4b506fe3f84821b5965a92b5262dd008f98bd929b52653e3f1113247f4585103",
+      "sourceLengthUtf16": 516,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.movement.parkinson-syndrome.b.6c97c55f0d1c",
+      "sourceSha256": "6c97c55f0d1c86652c5104505c767da6b326ab44712e870047f4415bb43d5cd8",
+      "sourceLengthUtf16": 566,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.movement.parkinson-syndrome.b.00117b454bc2",
+      "sourceSha256": "00117b454bc26b74fa47cffe6c60d514b74032117cb7dc8bfbd86dbc10ff8655",
+      "sourceLengthUtf16": 528,
+      "annotations": []
+    }
+  ]
+}

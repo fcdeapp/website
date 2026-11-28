@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "colorectal-surgery.anorectal.fistula-sphincter",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.b.1430e39b7be0",
+      "sourceSha256": "1430e39b7be028b07aaf87b4516321468ffd9e8be917baf0a4ae4e366698cc30",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.24fb96f2ad3e026e52d7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 193,
+            "end": 196,
+            "exact": "크론병",
+            "prefix": "복 부종과 분비의 경과, 과거 배액·수술과 ",
+            "suffix": " 등의 배경을 함께 확인한다."
+          },
+          "conceptId": "reader.term.e3bba5256033da1f",
+          "targetDocumentId": "gastroenterology.inflammation.ibd"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.b.ff0f1e7b02fe",
+      "sourceSha256": "ff0f1e7b02fe14d9757649f2b2b6ade41257a487a5f1bcf174d86e3f1c731b27",
+      "sourceLengthUtf16": 268,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.b.c5daf50a97ca",
+      "sourceSha256": "c5daf50a97cafd1ae7890ee5ffc0a1dc1ae71c61714cee5dc64c646b5adbd290",
+      "sourceLengthUtf16": 184,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.b.99cd91a11e6e",
+      "sourceSha256": "99cd91a11e6ed7fc18012870ba1b63eb71a973051f545d34aa5a7a41f815ae7c",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.b.1bca87dc4579",
+      "sourceSha256": "1bca87dc45794cf98ec21b46239b88810c6ca9dda88ca7abdcf98041f8db3512",
+      "sourceLengthUtf16": 200,
+      "annotations": [
+        {
+          "id": "ann.c5985cb16a2a60ad76c4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 112,
+            "end": 156,
+            "exact": "재축적을 줄이는 목적과 통로를 닫는 목적, 괄약근을 손상시키는 정도를 구별한다.",
+            "prefix": "모든 치루의 확정 치유를 뜻하지는 않는다. ",
+            "suffix": " 세톤의 종류·긴장과 적용 목적이 다르면 같"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.b.34c5357e2063",
+      "sourceSha256": "34c5357e2063102ea66b5fb265668028eff8d9108ddd4ac570ad2ac6e91ba5fd",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.b.9b8005295f3d",
+      "sourceSha256": "9b8005295f3dca9569cce20ad7436916038bad0c6bea21ac89b6ebd42fedce8b",
+      "sourceLengthUtf16": 184,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.b.90f67f45f32e",
+      "sourceSha256": "90f67f45f32e29f844294634603619d07fb6d418e9e7b96d60ec4744e806ec3a",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.supp.ea5adf3e9665",
+      "sourceSha256": "ea5adf3e966543b7ca87f78c3af35d1af975ce6ae83bcf42d429fdb230cdcda2",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "colorectal-surgery.anorectal.fistula-sphincter.supp.59b11015fd15",
+      "sourceSha256": "59b11015fd15bb99b8ed2512a5d5e0642d9b79cf625ad357f7035c6fa5348d63",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.b44fed947ea6500c20a1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 102,
+            "end": 143,
+            "exact": "실금의 평가도 가스·액체·고형변과 급박감 및 환자의 생활 영향을 구별한다.",
+            "prefix": " 추적은 장기 결과를 과대평가할 수 있다. ",
+            "suffix": " 수술 방법의 우열은 통로 형태와 기저 기능"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

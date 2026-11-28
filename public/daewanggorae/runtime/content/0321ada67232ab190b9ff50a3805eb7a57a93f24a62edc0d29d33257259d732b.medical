@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.hypersensitivity-effector-pairs",
+  "lessonId": "pathology.immunity.hypersensitivity-mechanisms",
+  "title": "표적과 효과기의 비교",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "IgE·FcεRI 가교",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "비만세포 활성과 매개물질",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "고정 항원 항체·가용성 복합체",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "표적 기능·조직 염증의 다른 맥락",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "항원 특이 T세포",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "사이토카인·세포독성 계통",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.hypersensitivity-effector-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "대표 I형",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.hypersensitivity-effector-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "II·III형 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.hypersensitivity-effector-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "대표 IV형",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "유형은 고정 시간표·단일 검사 확진 규칙이 아니며 한 질환에 여러 기전이 겹칠 수 있다."
+  ],
+  "sourceImageUsed": false
+}

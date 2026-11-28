@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.neurooncology.mass-pressure",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.004a56c04337",
+      "sourceSha256": "004a56c0433786bfd0e49cd35d30e1cf6c6e8cdaf9e0d9ce13abfeb33f25ef2a",
+      "sourceLengthUtf16": 260,
+      "annotations": [
+        {
+          "id": "ann.894bed916387e7b70f7e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 19,
+            "end": 23,
+            "exact": "뇌척수액",
+            "prefix": "성인의 두개강에는 뇌 조직과 혈액·",
+            "suffix": "이 공간을 차지한다. 새로운 종괴와 부종이 "
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.2680e7630280",
+      "sourceSha256": "2680e7630280473ad6f47104d139a9128c15cae806d3ed20e911f813ac14f4a8",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.148faaed7b61b056ce7d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 124,
+            "end": 180,
+            "exact": "작은 병변도 중요한 통로와 구조를 압박하면 시각·호흡과 내분비, 의식과 운동 기능을 위협할 수 있다.",
+            "prefix": " 말은 두개내에서 무해하다는 뜻이 아니다. ",
+            "suffix": " 반대로 우연히 발견한 작은 병변이 모든 두"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.76edce4ddb2d",
+      "sourceSha256": "76edce4ddb2d4481ea8d3da85cfc254f227cddc05c46671dfaef409f44ee07ad",
+      "sourceLengthUtf16": 263,
+      "annotations": [
+        {
+          "id": "ann.77433068195eb0d4dc0f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 47,
+            "end": 51,
+            "exact": "두개내압",
+            "prefix": " pressure, CPP)을 평균동맥압과 ",
+            "suffix": "의 차이로 근사하는 식은 공급 압력의 관계를"
+          },
+          "conceptId": "reader.term.f470c35f2a4dec51",
+          "targetDocumentId": "neurosurgery.physiology.intracranial-pressure"
+        },
+        {
+          "id": "ann.2e1d17302516e2aed5cd",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 179,
+            "end": 226,
+            "exact": "혈관 저항과 자동조절, 정맥 압력과 측정 기준, 지역별 손상과 전신 상태가 중요하다.",
+            "prefix": " 산소 이용이 충분하다고 확정할 수 없다. ",
+            "suffix": " 환자별 치료 목표와 안전 경계를 이 단순 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.25ac4e42d050",
+      "sourceSha256": "25ac4e42d050dfb54f7071ba14020a288849daab1ae4f7572081311bd8abc6e1",
+      "sourceLengthUtf16": 236,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.a482e38220b4",
+      "sourceSha256": "a482e38220b4730a1a2808beec2db408911ec0e33f932fc4fad7ef1e47ee5da0",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.40235d66e8cc432279ca",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 137,
+            "end": 212,
+            "exact": "유두부종(papilledema)은 두개내압 상승과 관련된 중요한 소견이지만 안저 소견 하나만으로 모든 압력과 원인이 정해지지는 않는다.",
+            "prefix": "면역 저하의 배경과 전신 증상을 확인한다. ",
+            "suffix": " 시각 증상과 안구·신경 평가를 함께 시행한"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.73040c754422",
+      "sourceSha256": "73040c7544221addbc43aaf993ffccca85380baa61af27770fddaf55770eaaff",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.1a040cf492bc",
+      "sourceSha256": "1a040cf492bc52c4eac746d36da2b32421767db2e2b24df97259777cd80f6764",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.7fafc1bc1c76",
+      "sourceSha256": "7fafc1bc1c768328d4ff5d4c21002aa33ee3456a353a830070d30c1a427cc095",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.5ce8d13077c2",
+      "sourceSha256": "5ce8d13077c224230345353b04d3cc81e55c272fde44cea0ae2296119dcd3131",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurooncology.mass-pressure.b.e9437eb12830",
+      "sourceSha256": "e9437eb12830e1e8045ab4084d2e09288f78247eaf71c8fba183cfe5411812c7",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    }
+  ]
+}

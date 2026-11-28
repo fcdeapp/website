@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.innate.complement-surface-regulation",
+  "subjectId": "immunology",
+  "chapterId": "innate",
+  "title": {
+    "ko": "숙주 표면의 보체 조절과 조절 결함",
+    "en": "Complement Regulation on Host Surfaces"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.innate.complement-surface-regulation.lo.01",
+      "text": "CD55·CD59·factor H의 역할을 구별한다"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.lo.02",
+      "text": "PNH의 후천성 클론 기전을 설명한다"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.lo.03",
+      "text": "C1 억제인자와 bradykinin의 연결을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.8d19e9091064",
+      "type": "heading",
+      "level": 2,
+      "text": "자기 표면을 지키는 단계별 안전장치"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.6c004dad9e72",
+      "type": "paragraph",
+      "markdown": "보체 활성화는 미생물 제거에 필요하지만 숙주 세포 표면에서도 제한되지 않으면 손상을 만든다. CD55는 표면 convertase의 붕괴를 촉진하고 CD59는 말단 막공격복합체 형성을 제한한다. 둘 다 보체를 억제하지만 작동 위치가 다르다. 한 단계를 차단했다고 모든 상위 절단과 옵소닌 침착이 사라지는 것은 아니므로 연쇄 반응을 단계별로 읽어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.920a404c0514",
+      "type": "paragraph",
+      "markdown": "혈장 factor H와 factor I, 막의 CD46 같은 조절 성분은 C3b 등의 반응을 제한하는 데 협력한다. 표면의 당사슬 환경과 결합 인자는 숙주와 미생물에서 조절이 다르게 작동하도록 돕는다. 보체 단백질 농도가 충분해도 표면에서의 조절이 불량하면 병리가 생길 수 있다. 방어 부품의 부족과 과활성 제어의 실패는 모두 질환을 만들지만 같은 기전은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.537ecccbdb39",
+      "type": "heading",
+      "level": 2,
+      "text": "GPI 연결의 소실"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.82bef5655071",
+      "type": "paragraph",
+      "markdown": "발작성야간혈색소뇨증(paroxysmal nocturnal hemoglobinuria, PNH)은 조혈줄기세포의 후천적 클론 이상과 관련된 질환이다. 대표적으로 PIGA의 체세포 변이는 glycosylphosphatidylinositol(GPI) anchor 형성을 손상하여 CD55·CD59 같은 GPI 연결 단백질의 발현을 줄인다. 개별 보체 단백질의 유전적 결핍과 달리 세포가 자기 표면의 보호 장치를 잃는 경로다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.4cb87bebfaa5",
+      "type": "paragraph",
+      "markdown": "같은 줄기세포에서 나온 여러 혈구 계열에 결함이 나타날 수 있으며 정상 클론과 결함 클론이 함께 존재할 수 있다. 적혈구는 보체 공격으로 선택적으로 소실되고 수혈은 정상 적혈구의 비율을 바꾸므로, 적혈구의 결함 비율이 조혈 클론의 크기를 그대로 나타내지 않을 수 있다. 용혈과 혈전, 골수 기능 이상은 별도 축으로 평가한다. 이름에 야간이 들어간다고 증상이 밤에만 발생해야 하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.6864a0ee606a",
+      "type": "heading",
+      "level": 2,
+      "text": "표면 검사의 해석"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.9ecb639e7775",
+      "type": "paragraph",
+      "markdown": "유세포분석은 계열 표지와 GPI 관련 표지를 조합하여 결함 집단을 평가한다. FLAER는 GPI anchor 관련 구조를 인식하는 시약으로 주로 적절한 유핵세포 계열의 평가에 사용한다. 적혈구와 백혈구에 동일한 표지 조합을 기계적으로 적용하지 않는다. 세포의 생존·계열 선택과 두 종류 이상의 표지 정보를 이용하는 이유는 기술적 저발현과 실제 클론을 구별하기 위해서다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.07d9dd04df91",
+      "type": "paragraph",
+      "markdown": "한 표지가 낮다는 이유만으로 PNH를 확정하지 않으며, 드문 작은 집단의 의미는 검사의 감도와 임상 맥락을 요구한다. 수혈·용혈·골수질환과 이전 결과를 확인한다. 보체에 취약한 세포의 존재와 현재 용혈의 크기는 관련되지만 일대일 수치가 아니다. 같은 클론 비율에서도 활성화 환경과 치료가 임상 결과를 바꿀 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.395175534b28",
+      "type": "heading",
+      "level": 2,
+      "text": "C1 억제인자는 보체만 다루지 않는다"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.6726d6c59399",
+      "type": "paragraph",
+      "markdown": "C1 inhibitor(C1-INH)는 고전 경로의 시작 성분 외에 접촉·kallikrein 계통의 조절에도 관여한다. 양이나 기능이 불량하면 bradykinin 생성 조절이 흐트러져 혈관부종과 연결될 수 있다. 따라서 단백질 이름에 C1이 있다는 이유로 부종을 모두 보체의 막공격 때문이라고 설명하지 않는다. 혈관 투과성을 높이는 매개체와 세포 용해는 다른 현상이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.b.e0bcaff2c369",
+      "type": "paragraph",
+      "markdown": "C1-INH 항원량과 기능을 구분하고 C4 등과 임상 양상을 연결한다. 항원량이 보존되어도 기능은 낮을 수 있다. 두드러기를 동반하는 히스타민성 반응과 bradykinin 관련 반응은 겹치는 표현에도 기전과 치료 반응이 다를 수 있다. 실제 기도·순환을 위협하는 부종은 신속한 평가가 필요하며, 검사 분류를 위해 위험한 증상을 기다려서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.diagram.immune-clone-survival-fraction-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-clone-survival-fraction-toy",
+      "path": "diagrams/diagram.immune-clone-survival-fraction-toy.svg",
+      "alt": "차등 생존과 측정 클론 비율의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.innate.complement-surface-regulation.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "CD55",
+            "전환효소의 붕괴 촉진"
+          ],
+          [
+            "CD59",
+            "막공격복합체의 형성 제한"
+          ],
+          [
+            "Factor H·I",
+            "C3b 조절과 자기 표면 보호"
+          ],
+          [
+            "PNH 클론 비율",
+            "생산·세포 소실·수혈 등 분모 변화의 영향"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/innate/sections/immunology.innate.complement-surface-regulation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.innate.complement-surface-regulation.001",
+    "question.immunology.innate.complement-surface-regulation.002"
+  ],
+  "relatedLessons": [
+    "immunology.innate.complement-functional-tests",
+    "immunology.complexes.clearance-deposition"
+  ]
+}

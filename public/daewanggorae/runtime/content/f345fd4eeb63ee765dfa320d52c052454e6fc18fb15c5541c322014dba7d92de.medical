@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "psychiatry.development.autism-context",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "psychiatry.development.autism-context.b.9fb4f124c407",
+      "sourceSha256": "9fb4f124c407b34d67897198f8a850daaa7ec9535a239580c07fce1f48acd270",
+      "sourceLengthUtf16": 251,
+      "annotations": [
+        {
+          "id": "ann.b0837db5d4f3780d75bb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 216,
+            "end": 251,
+            "exact": "눈 맞춤의 빈도나 특정 관심 하나만으로 진단을 확정하지 않는다.",
+            "prefix": " 환경에서 어떤 지원이 필요한지는 다르다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.development.autism-context.b.5d924ed22867",
+      "sourceSha256": "5d924ed228672a270497721c06bbed203d1b685f3b0623d48a11b1a6aaddee6e",
+      "sourceLengthUtf16": 237,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.development.autism-context.b.1c9452aa0e82",
+      "sourceSha256": "1c9452aa0e82f7a5eb1be8b1475f623483fdb37812666d344f38b8dcbe4e2a66",
+      "sourceLengthUtf16": 234,
+      "annotations": [
+        {
+          "id": "ann.e263130b61041b6f9292",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 51,
+            "end": 90,
+            "exact": "표현 언어와 수용 언어, 운동과 감각, 불안과 상황의 요구를 구별한다.",
+            "prefix": " 사고 능력이 없다고 판단해서는 안 된다. ",
+            "suffix": " 말이 유창하더라도 대화의 맥락과 암묵적 의"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.development.autism-context.b.3e1cf0b27764",
+      "sourceSha256": "3e1cf0b277645b23c6ae09611c5f3017ced81577a298cbe09b9014b4b2033cf3",
+      "sourceLengthUtf16": 277,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.development.autism-context.b.55d72b1e4c23",
+      "sourceSha256": "55d72b1e4c233f5510b917611af5db9e2ddf1300c11652b0bfb002a48a71e1bb",
+      "sourceLengthUtf16": 229,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.development.autism-context.b.6c162f03ed50",
+      "sourceSha256": "6c162f03ed50cf2f21996592df9e74757740449d301ac0b3e3d8618aedb52961",
+      "sourceLengthUtf16": 243,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.development.autism-context.b.13de360d8bd3",
+      "sourceSha256": "13de360d8bd3502518256e11638e6ae7f4289b4f6b0131d19ef547a8c85b5816",
+      "sourceLengthUtf16": 228,
+      "annotations": [
+        {
+          "id": "ann.9424143580b79685d30e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 22,
+            "end": 26,
+            "exact": "ADHD",
+            "prefix": "청각과 시각, 언어·학습과 지적 기능, ",
+            "suffix": "와 불안·우울, 수면과 뇌전증 등 동반 문제"
+          },
+          "conceptId": "reader.term.13968b9627976717",
+          "targetDocumentId": "psychiatry.development.adhd-assessment"
+        },
+        {
+          "id": "ann.2aef5629a802757d03e8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 39,
+            "end": 42,
+            "exact": "뇌전증",
+            "prefix": "지적 기능, ADHD와 불안·우울, 수면과 ",
+            "suffix": " 등 동반 문제를 필요에 따라 평가한다. 새"
+          },
+          "conceptId": "reader.term.8a39cd8bd33af7ea",
+          "targetDocumentId": "neurology.epilepsy.first-seizure-eeg"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.development.autism-context.b.c52d038ae30b",
+      "sourceSha256": "c52d038ae30bd0d8ccc1d7eee8335ee26fa66968212c1d442d486aa92f5fa287",
+      "sourceLengthUtf16": 235,
+      "annotations": [
+        {
+          "id": "ann.5bc9181053cd891243cb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 170,
+            "end": 235,
+            "exact": "진단의 설명과 치료 선택은 본인의 참여와 동의·의사결정 지원을 포함하며, 개인의 강점과 선호도 계획의 중요한 자료다.",
+            "prefix": " 학교와 지역사회의 지원을 함께 고려한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "psychiatry.development.autism-context.b.38ea852422e4",
+      "sourceSha256": "38ea852422e4b54fa5a86d0d3fa86036348bef77cb3f6251cebb11c702e9a60c",
+      "sourceLengthUtf16": 245,
+      "annotations": []
+    },
+    {
+      "blockId": "psychiatry.development.autism-context.b.bb313a3fb4d6",
+      "sourceSha256": "bb313a3fb4d621dceffd22440d618a41aef794639f00702aa393c836489988c7",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.immunity.hypersensitivity-mechanisms",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.de94bb162da9",
+      "sourceSha256": "de94bb162da99541c92440f06ab1922cb1b87dbdfdd6eee0c39aafdcbc4de34d",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.96a5acefd0b45a225014",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 5,
+            "end": 21,
+            "exact": "hypersensitivity",
+            "prefix": "과민반응(",
+            "suffix": ")은 면역 반응이 숙주 조직의 손상이나 기능"
+          },
+          "conceptId": "reader.term.c00cc6a01122c518",
+          "targetDocumentId": "immunology.hypersensitivity.mechanisms"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.580474442711",
+      "sourceSha256": "5804744427118b5384dd4e6900f90dc7d0b91c031d8d84833320419658852fbe",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.21eb4a35022c",
+      "sourceSha256": "21eb4a35022c8adb606e5b7f367c2761bf072fc129fd3c9d2cedb00e45877857",
+      "sourceLengthUtf16": 219,
+      "annotations": [
+        {
+          "id": "ann.488cffd6745bc951f1e1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 135,
+            "end": 166,
+            "exact": "감작 단계와 이후 재노출의 효과기 단계를 구별해야 한다.",
+            "prefix": " 합성이 서로 다른 시간 경과에 기여한다. ",
+            "suffix": " 모든 급성 비만세포 활성이나 유사 증상이 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.4e49d6c7bfcb",
+      "sourceSha256": "4e49d6c7bfcb180bc702cc4e8445b100332f2e88258ed40763a34ab29e81da0f",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.348d854cfc64",
+      "sourceSha256": "348d854cfc6407739c3a4800eb2accfd7e6ec3cf19cbb4818932eaa1a108237b",
+      "sourceLengthUtf16": 196,
+      "annotations": [
+        {
+          "id": "ann.89da1d0f1b29030c5a97",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 51,
+            "end": 53,
+            "exact": "보체",
+            "prefix": "한 항체 반응을 중심으로 이해한다. 항체가 ",
+            "suffix": "·포식·세포독성 효과기를 동원하여 세포 손상"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.c986b1064f9c",
+      "sourceSha256": "c986b1064f9c867e798444ed04fa0b78cfa7e0d56a9cb2ffd2de9c4e7cf89619",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.43676ab8b3c0",
+      "sourceSha256": "43676ab8b3c0bcbf8001854da81b4c14c3a583c94f8a6f5cbdb87b1818f6c201",
+      "sourceLengthUtf16": 190,
+      "annotations": [
+        {
+          "id": "ann.1ab3cf5abafb9d4faccf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 142,
+            "end": 190,
+            "exact": "모든 면역복합체 형성이 병적 침착으로 이어지는 것은 아니며 정상 제거 과정과 구별한다.",
+            "prefix": "을 통해 백혈구와 염증을 연결할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.ea8fcd8c5d29",
+      "sourceSha256": "ea8fcd8c5d29e702e2bc5536ad6d77123da4e53a91e1e989c39ca4ae5779434a",
+      "sourceLengthUtf16": 193,
+      "annotations": [
+        {
+          "id": "ann.c6ed5651ef3fc1947603",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 153,
+            "end": 193,
+            "exact": "표면 고정 항원에 대한 항체와 가용성 복합체 맥락을 개념적으로 구분한다.",
+            "prefix": "조직의 보체 관여를 모두 배제하지 못한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.084d4e362653",
+      "sourceSha256": "084d4e36265383ee5f84bd2ce04e127bf21bb821cdac2562d29dc9e0caa1934e",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.immunity.hypersensitivity-mechanisms.b.297f0eb664ec",
+      "sourceSha256": "297f0eb664ecc0a4cfba039c4cdb9b858414a028c0cab767303c493423bd3cd7",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    }
+  ]
+}

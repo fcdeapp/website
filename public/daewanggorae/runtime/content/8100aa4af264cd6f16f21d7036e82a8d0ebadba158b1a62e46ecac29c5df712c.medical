@@ -1,0 +1,213 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.neuro.synaptic-transmission",
+  "subjectId": "physiology",
+  "chapterId": "neuro",
+  "title": {
+    "ko": "화학 시냅스의 방출·수용·신호 종료",
+    "en": "Release, Reception and Termination at Chemical Synapses"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.neuro.synaptic-transmission.lo.01",
+      "text": "칼슘 유입과 소포 융합을 연결한다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.lo.02",
+      "text": "방출 확률·양자 크기·수용체 반응을 구별한다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.lo.03",
+      "text": "전달물질의 작용과 제거를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.aa986b631dae",
+      "type": "heading",
+      "level": 2,
+      "text": "전기 신호가 화학 신호로 바뀌는 접점"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.8a8081222fa9",
+      "type": "paragraph",
+      "markdown": "시냅스(synapse)는 한 세포의 활동이 다른 세포의 기능에 영향을 주는 접점이다. 화학 시냅스에서는 시냅스전 말단의 신호가 전달물질 방출로 바뀌고, 시냅스후 세포의 수용체가 이를 다시 전기·생화학 반응으로 바꾼다. 전기 시냅스는 간극이음(gap junction)을 통한 전류 전달이 중요하므로 소포 방출의 모든 단계를 요구하지 않는다. 두 종류는 속도·방향성·조절 방식이 다르며, 전기 시냅스가 항상 완전히 대칭적인 전달만 한다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.8794b4f9732c",
+      "type": "paragraph",
+      "markdown": "화학 전달에는 방출·확산·수용체 반응의 시간이 필요하다. 활동전위가 도착했다고 시냅스후 세포가 반드시 활동전위를 만드는 것은 아니다. 전달량과 수용체, 막전위와 다른 입력에 따라 작은 전위 변화만 생기거나 발화 가능성이 줄 수 있다. 시냅스전 활동전위, 시냅스후 전류, 시냅스후 전위, 최종 발화를 서로 다른 관찰로 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.5500304f4fe1",
+      "type": "heading",
+      "level": 2,
+      "text": "활성영역의 칼슘과 융합 기구"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.f1edebda3811",
+      "type": "paragraph",
+      "markdown": "활동전위에 따른 말단 탈분극은 전압개폐성 칼슘통로를 열 수 있다. 활성영역(active zone) 가까이의 국소 칼슘 증가가 융합 반응을 빠르게 유발한다. 말단 전체의 평균 칼슘 농도만으로 소포 바로 옆의 짧은 신호를 모두 설명할 수는 없다. 통로와 소포의 거리, 완충능, 직전 활동에 따른 잔류 칼슘이 반응에 영향을 준다. 외액 칼슘을 바꾸는 실험의 효과를 모든 시냅스에 같은 고정 거듭제곱으로 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.d0bea966b6fb",
+      "type": "paragraph",
+      "markdown": "Synaptobrevin/VAMP, syntaxin, SNAP-25 같은 SNARE 단백질은 막의 가까워짐과 융합 기구에 관여하고, synaptotagmin은 여러 빠른 방출에서 중요한 칼슘 감지자로 작용한다. 준비된 소포의 도킹·프라이밍과 실제 융합은 같은 단계가 아니다. 칼슘이 들어오면 새로운 소포가 처음부터 완전히 조립된 뒤 방출된다는 그림보다, 준비된 집단의 빠른 반응과 이후 보충을 나누어 이해해야 한다. 융합 뒤 막과 단백질은 재활용되어 다음 전달에 기여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.434f4051d464",
+      "type": "heading",
+      "level": 2,
+      "text": "양자성은 소포 단위의 확률을 뜻한다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.455b3bd21bb4",
+      "type": "paragraph",
+      "markdown": "전달물질은 소포에 포장되어 양자(quanta) 단위로 방출될 수 있다. 단순 모형에서 독립된 방출 가능 자리 수를 N, 각 자리의 방출 확률을 p, 한 양자가 만드는 평균 반응 크기를 q라 두면 평균 반응은 Npq다. N=5,p=0.2,q=0.4mV라는 가상 조건에서는 평균0.4mV다. 각 시행의 반응이 항상0.4mV라는 뜻은 아니다. 어떤 시행은 방출이 없고 다른 시행은 하나 이상이 방출될 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.96089213b3ec",
+      "type": "paragraph",
+      "markdown": "동일 확률·독립 자리·자리당 최대 한 양자라는 가정에서는 방출 수 k의 분포를 이항분포로 나타낼 수 있다. 평균은 Np,분산은 Np(1−p)다. 실제 시냅스에는 자리별 확률 차이,다중소포 방출,수용체 포화와 탈감작,전기적 비선형성이 있어 단순 분포가 맞지 않을 수 있다. 특히 큰 시냅스후 전위에서는 구동력이 변화하므로 관찰된 전압을 양자 수에 무조건 비례시키지 않는다. 모형의 N·p·q와 실험에서 관찰한 진폭의 관계에는 가정이 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.bedac1753ec1",
+      "type": "heading",
+      "level": 2,
+      "text": "작은 반응과 유발 반응이 묻는 질문"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.777f7f7c6ef4",
+      "type": "paragraph",
+      "markdown": "자발적 소형 반응(miniature synaptic events)은 시냅스의 국소 전달과 시냅스후 반응을 평가하는 데 도움을 준다. 사건의 진폭·빈도·시간 경과는 서로 다른 정보를 제공한다. 진폭 변화는 수용체 수나 기능과 관련될 수 있지만 소포의 내용물이나 전기적 필터링도 영향을 준다. 빈도 변화도 방출 확률뿐 아니라 기능하는 접점 수와 검출 기준의 영향을 받는다. 한 통계량의 변화만으로 전·후 위치를 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.3db5996e14a7",
+      "type": "paragraph",
+      "markdown": "유발 반응의 평균이 줄었을 때에는 축삭 전도 실패,칼슘 유입 변화,소포 준비 집단,융합 확률,전달물질 양,시냅스후 수용체를 나누어 검토한다. 같은 최종 감소를 만드는 기전이 여럿이기 때문이다. 단시간 촉진(facilitation)과 억압(depression)은 잔류 칼슘·소포 고갈·수용체 상태 등 여러 과정에 연결된다. 두 자극 반응의 비율만으로 모든 경우의 방출 확률을 정확히 역산할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.17f8cf327ba4",
+      "type": "heading",
+      "level": 2,
+      "text": "수용체가 전류와 세포 반응을 정한다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.f5198a45e878",
+      "type": "paragraph",
+      "markdown": "이온성 수용체(ionotropic receptor)는 리간드 결합과 이온 통로 기능이 직접 연결되어 빠른 전류를 만들 수 있다. 대사성 수용체(metabotropic receptor)는 G단백질과 세포 내 신호를 통해 통로·효소·전사를 조절한다. 빠르거나 느리다는 대표 경향은 유용하지만,전달물질 이름 하나로 최종 효과를 고정해서는 안 된다. 아세틸콜린의 니코틴성·무스카린성 수용체가 좋은 예다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.4392168ea5fa",
+      "type": "paragraph",
+      "markdown": "글루탐산의 AMPA·NMDA 수용체와 GABA의 GABA_A·GABA_B 수용체도 통로·조절 방식이 다르다. NMDA 반응은 리간드뿐 아니라 전압 의존적 마그네슘 차단과 공작용제 조건 등을 고려해야 한다. GABA_A가 전도하는 음이온의 평형과 세포의 발화 문턱은 그 작용을 해석하는 데 중요하다. ‘양이온이면 항상 발화,음이온이면 항상 과분극’이라는 규칙은 구동력과 세포 상태를 빠뜨린다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.903461412c01",
+      "type": "heading",
+      "level": 2,
+      "text": "신호를 끝내고 다음 신호를 준비하기"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.9bb56c222b1f",
+      "type": "paragraph",
+      "markdown": "전달물질은 재흡수·효소 분해·확산 등에 의해 수용체 주변에서 줄어든다. 아세틸콜린의 분해,모노아민의 수송체 매개 회수,글루탐산의 신경·교세포 수송은 서로 다른 예다. 전달물질 자체의 회수와 분해산물의 재활용도 구별해야 한다. 제거 경로를 억제하면 신호의 크기뿐 아니라 시간 경과와 반복 입력에 대한 반응도 바뀔 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.b.20998274b4fa",
+      "type": "paragraph",
+      "markdown": "시냅스 기능을 약물이나 독소와 연결할 때에는 작용 부위가 합성·저장·융합·수용체·제거 중 어디인지 표시한다. 신경근접합부 전달 장애와 중추 시냅스의 흥분·억제 조절은 공통 원리를 공유하지만 표적·안전 여유·회로의 결과가 다르다. 정상 전달 모형의 수치를 임상 검사 기준이나 치료 용량으로 바꾸지 않고,기전과 실제 진단의 근거를 구별하여 학습한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.diagram.quantal-binomial-sites",
+      "type": "diagram",
+      "diagramRef": "diagram.quantal-binomial-sites",
+      "path": "diagrams/diagram.quantal-binomial-sites.svg",
+      "alt": "독립 방출 자리의 양자 수의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.diagram.quantal-mean-response",
+      "type": "diagram",
+      "diagramRef": "diagram.quantal-mean-response",
+      "path": "diagrams/diagram.quantal-mean-response.svg",
+      "alt": "방출 확률과 평균 반응의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.diagram.synaptic-release-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.synaptic-release-pairs",
+      "path": "diagrams/diagram.synaptic-release-pairs.svg",
+      "alt": "시냅스 전달의 서로 다른 단계의 단계별 비교"
+    },
+    {
+      "id": "physiology.neuro.synaptic-transmission.table.compare",
+      "type": "table",
+      "data": {
+        "title": "시냅스 관찰과 기전",
+        "columns": [
+          "관찰",
+          "관련 과정",
+          "한계"
+        ],
+        "rows": [
+          [
+            "말단 Ca²⁺",
+            "유발·국소 결합",
+            "평균농도와국소신호구별"
+          ],
+          [
+            "양자 크기q",
+            "소포·수용체·전기필터",
+            "후시냅스만의단독지표아님"
+          ],
+          [
+            "평균 반응",
+            "N·p·q",
+            "모형가정필요"
+          ],
+          [
+            "신호 종료",
+            "재흡수·분해·확산",
+            "물질별차이"
+          ]
+        ],
+        "notes": "단순Npq와이항분포는동일·독립자리·선형반응등의가정아래사용한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/neuro/sections/physiology.neuro.synaptic-transmission.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "동일·독립 방출 자리 모형의 평균은 Npq다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.neuro.synaptic-transmission.001",
+    "question.physiology.neuro.synaptic-transmission.002"
+  ],
+  "relatedLessons": [
+    "physiology.neuro.synaptic-integration",
+    "physiology.neuro.sensory-coding",
+    "physiology.digestive.carbohydrate-absorption"
+  ]
+}

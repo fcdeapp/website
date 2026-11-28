@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.dna-repair-targets",
+  "lessonId": "molecular-biology.dna.repair-replication",
+  "title": "손상 인식과 대표 수선 경로",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "일부 손상 염기",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "염기절제수선 BER",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "나선 왜곡 손상",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "뉴클레오타이드절제수선 NER",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "복제 후 불일치·작은 고리",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "불일치수선 MMR",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n6",
+      "label": "이중가닥절단",
+      "x": 350,
+      "y": 950,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n7",
+      "label": "HR·NHEJ 등",
+      "x": 350,
+      "y": 1095,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.dna-repair-targets.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "대표 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.dna-repair-targets.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "대표 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.dna-repair-targets.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "대표 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.dna-repair-targets.e3",
+      "source": "n6",
+      "target": "n7",
+      "label": "세포 상태·주형 고려",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 1230
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 1230
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        },
+        "n6": {
+          "x": 260,
+          "y": 950,
+          "width": 400,
+          "height": 88
+        },
+        "n7": {
+          "x": 260,
+          "y": 1095,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "대표 손상과 경로의 비교이며 경로 간 중첩·세부 단백질·세포주기 동역학을 모두 표현하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-grief-activity-0855",
+  "lessonId": "psychiatry.stress.adjustment-grief",
+  "title": "가상 일상의 외부 활동",
+  "series": [
+    {
+      "label": "외부 활동",
+      "samples": [
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 3
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "notRecoveryOrRiskScale": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 4,
+      "scale": "linear",
+      "ticks": [
+        1,
+        2,
+        3,
+        3,
+        4
+      ],
+      "label": "기록 주"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 4,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "label": "활동 횟수(회)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "외부 활동",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 또는 가상 기록이다. 실제 환자·정상 범위·검사 기준·치료효과·처방과 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.cardiomyopathy.genetics-family-screening",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.cardiomyopathy.genetics-family-screening.b.a717b4cce3ef",
+      "sourceSha256": "a717b4cce3ef4e84500bdf8648445f350def7ce51d2128654ea70e43301b4453",
+      "sourceLengthUtf16": 231,
+      "annotations": [
+        {
+          "id": "ann.08b3566872cfcb5dd344",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 36,
+            "end": 39,
+            "exact": "심부전",
+            "prefix": "은 병명이 있는지 묻는 데 그치지 않는다. ",
+            "suffix": "·이식과 심근병증, 조율기와 제세동기, 부정"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.genetics-family-screening.b.b6f0afb360ab",
+      "sourceSha256": "b6f0afb360ab8370f2dcdbc9d2062093f4c39fbed3fe7372d1d4a9b99e5039fd",
+      "sourceLengthUtf16": 257,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.genetics-family-screening.b.9d2cbf85da7b",
+      "sourceSha256": "9d2cbf85da7bf5292cb512663c24c3ea5647d640794e45e284374e53fd3dd9d5",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.genetics-family-screening.b.1017640d7e6c",
+      "sourceSha256": "1017640d7e6cdfe6047a9169616184a8e2862ca2e44381f9e08a1bb32ad59e4a",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.genetics-family-screening.b.747fcfc2ca0d",
+      "sourceSha256": "747fcfc2ca0d6a9f0e31880ff578b160937b5d3b61ef479e0437e614e15b4bd7",
+      "sourceLengthUtf16": 209,
+      "annotations": [
+        {
+          "id": "ann.cdb2dabe9548b4bca857",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 171,
+            "end": 209,
+            "exact": "검사 전 어떤 질문을 했는지와 어느 결과가 나왔는지를 구분해야 한다.",
+            "prefix": "황을 같은 위험 감소로 설명하면 안 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.genetics-family-screening.b.b51a355cd098",
+      "sourceSha256": "b51a355cd098230ce2bece317df41dd2aacc4c681d662a175031e8f86865b86c",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.genetics-family-screening.b.86e1b27237bc",
+      "sourceSha256": "86e1b27237bc31104130977cb5fcccd83b5d2fcfdbc933813647e8c568f658fe",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.genetics-family-screening.b.01e3ca79a6d9",
+      "sourceSha256": "5555979b6dc193b896af3b874954364c1139add459c90930b741f06c797fc383",
+      "sourceLengthUtf16": 100,
+      "annotations": []
+    }
+  ]
+}

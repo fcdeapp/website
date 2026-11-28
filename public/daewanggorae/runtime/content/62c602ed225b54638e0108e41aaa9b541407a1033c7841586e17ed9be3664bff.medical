@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.beta-cell-trigger-pairs",
+  "lessonId": "physiology.endocrine.insulin-glucagon",
+  "title": "베타세포의 분비 유발 연결",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "포도당 대사·ATP/ADP 변화",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "KATP 닫힘",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "칼륨 전류 감소",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "막 탈분극·전압성 Ca²⁺ 유입",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "세포 내 Ca²⁺ 증가",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "과립 막융합·인슐린 방출",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.beta-cell-trigger-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "대사–통로 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.beta-cell-trigger-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "전기적 연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.beta-cell-trigger-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "분비 유발",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "대표 유발 경로다. 대사·인크레틴 증폭과 과립의 준비 상태를 모두 재현하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

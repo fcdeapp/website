@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "gi-surgery.esophagus.perforation-contamination",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.2a842a1704f7",
+      "sourceSha256": "2a842a1704f7d6fd9945dd8237a969c20dfef73b0e91c1f8e3ec7f74bbe2e4a4",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.079819b827830e58d15c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 136,
+            "end": 138,
+            "exact": "흉막",
+            "prefix": "다. 경부·흉부·복부의 위치에 따라 종격동·",
+            "suffix": "·복강과 주변 조직에 미치는 영향이 다르다."
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.2d757fb263d1",
+      "sourceSha256": "2d757fb263d1eccb6cfcfd598298356ef0b5f283d5faa87f909ed3917ca35a68",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.2906cfed5369",
+      "sourceSha256": "2906cfed5369e94958f087d4c779dc9b1d50d2150bbb99d27cd4126c72ce15d1",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.663664413838",
+      "sourceSha256": "663664413838e0f4a4137537b85085a73165725170973dc709195f08fce5413d",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.59e8256b303e",
+      "sourceSha256": "59e8256b303e80f17b56504d87ee257e4e08d5ea2d0f2bff055cc2946a114bb1",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.b4f8acacb83f",
+      "sourceSha256": "b4f8acacb83fac86b7ebcbee6e94d64e5e4ce871add38b66eb65218e44fc0121",
+      "sourceLengthUtf16": 208,
+      "annotations": [
+        {
+          "id": "ann.86bbae4bc7cbce24be08",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 62,
+            "end": 123,
+            "exact": "누출의 범위·배출과 지속 오염, 패혈증과 기저 식도질환, 면밀한 관찰과 신속한 구조 개입의 가능성이 중요하다.",
+            "prefix": " 정상이라는 조건 하나로 결정하지 않는다. ",
+            "suffix": " 항균 치료는 미생물 위험과 감염원·숙주에 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.9a0e1594ba65",
+      "sourceSha256": "9a0e1594ba652e657e57c79b64fd5eb8f05bdd2e836846ce7c3baf3f0c1300d7",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.93652c1b1587",
+      "sourceSha256": "93652c1b1587794adfb6c3a731cbc61fe41104f47a9858ee9c26913897f812f4",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.ce64015c22e2",
+      "sourceSha256": "ce64015c22e2e14eeaf2dac9d1ea23ff41acef159c01688be358282f2e2adc91",
+      "sourceLengthUtf16": 166,
+      "annotations": [
+        {
+          "id": "ann.7325b9179c79a1cb105d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 166,
+            "exact": "검사 결과와 영상 원본,시행한 처치의 시각이 다음 치료의 지연을 줄이는 데 중요하다.",
+            "prefix": "·범위와 생리적 긴급성이 전달되지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "gi-surgery.esophagus.perforation-contamination.b.18192ebe0df6",
+      "sourceSha256": "18192ebe0df65559a27ca9d4849019e41574c0b4fb90e21d78978312073ecaef",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    }
+  ]
+}

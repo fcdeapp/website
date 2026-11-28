@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.congenital.shunt-physiology",
+  "subjectId": "cardiology",
+  "chapterId": "congenital",
+  "title": {
+    "ko": "선천성 단락의 혈류와 산소 수지",
+    "en": "Flow and Oxygen Balance in Congenital Shunts"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.congenital.shunt-physiology.lo.01",
+      "text": "압력·저항과 단락 방향을 연결한다"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.lo.02",
+      "text": "폐혈류와 체혈류를 구별한다"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.lo.03",
+      "text": "산소 수지의 가정과 오차를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.de7d356c3ea6",
+      "type": "heading",
+      "level": 2,
+      "text": "연결이 바꾸는 순환"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.cf1ab9b57265",
+      "type": "paragraph",
+      "markdown": "정상 순환에서는 체정맥 혈액이 오른심장과 폐를 지나 왼심장으로 돌아온 뒤 체동맥으로 나간다. 선천성 단락(shunt)은 두 순환 사이에 추가 경로를 만들어 혈액의 일부가 다시 폐로 가거나 폐를 충분히 거치지 않고 체동맥으로 나가게 한다. 단락의 위치와 크기만으로 흐름이 정해지는 것은 아니다. 두 구획의 압력, 통로의 저항, 양심실의 순응도와 폐·체혈관 저항이 함께 방향과 양을 결정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.eeee2204b769",
+      "type": "paragraph",
+      "markdown": "좌우단락(left-to-right shunt)에서는 산소화된 혈액 일부가 폐순환으로 재순환한다. 초기에는 체동맥 산소포화도가 유지되어도 폐혈류와 특정 심장방의 용적 부담이 증가할 수 있다. 우좌단락(right-to-left shunt)에서는 정맥성 혈액이 체동맥에 섞여 저산소혈증을 만들 수 있다. 같은 결손에서도 성장과 폐혈관 변화, 호흡·운동 및 다른 폐쇄성 병변에 따라 방향이 달라질 수 있다. 결손을 고정된 크기의 일방향 관으로만 생각하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.49d3cf3820c6",
+      "type": "heading",
+      "level": 2,
+      "text": "Qp와 Qs의 정의"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.dc26d9964565",
+      "type": "paragraph",
+      "markdown": "폐혈류량 Qp와 체혈류량 Qs는 각각 폐순환과 체순환을 통과하는 유량이다. 좌우단락만 있고 다른 경로가 없다는 단순 모형에서 Qp가8L/min, Qs가5L/min이면 폐로 재순환하는 차이는3L/min이며 Qp/Qs는1.6이다. 이 값은 폐에 간 혈액이 모두 전신으로 전달되는 것은 아님을 보여 준다. 반대로 우좌단락이 있으면 폐혈류가 체혈류보다 작아질 수 있다. 양방향 단락이나 복잡한 연결에서는 단순 차이를 해석할 때 더 많은 조건을 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.df0c0e16b0bd",
+      "type": "paragraph",
+      "markdown": "산소 소모량을 이용하는 Fick 원리는 각 순환에서 유입·유출 혈액의 산소 함량 차이와 유량을 연결한다. 정상상태에서 같은 전신 산소 소모량을 쓰면 Qp/Qs=(체동맥 산소함량−혼합정맥 산소함량)/(폐정맥 산소함량−폐동맥 산소함량)로 정리할 수 있다. 산소함량은 포화도만이 아니라 혈색소와 용해 산소에도 의존한다. 혈색소가 같고 용해 성분을 무시할 수 있을 때 포화도 차이를 근사적으로 사용할 수 있지만 모든 상황의 정확한 공식은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.ac3284bab528",
+      "type": "heading",
+      "level": 2,
+      "text": "채혈 위치와 보존 관계"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.448395434308",
+      "type": "paragraph",
+      "markdown": "혼합정맥 혈액은 어느 한 말초정맥의 혈액과 같지 않다. 상대정맥·하대정맥과 관상정맥의 흐름 및 산소 추출이 달라 표본 위치와 혼합 정도가 중요하다. 우심장 안에서 산소포화도가 단계적으로 상승하는 현상은 좌우단락 위치의 단서가 될 수 있지만 채혈의 시점과 흐름의 편향, 산소 투여와 진정 상태가 결과에 영향을 준다. 한 표본의 작은 차이를 곧 새로운 결손의 확정으로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.3a7482b761a2",
+      "type": "paragraph",
+      "markdown": "예를 들어 체동맥95%, 혼합정맥65%, 폐정맥98%, 폐동맥78%이고 근사 조건을 만족한다면 비는30/20=1.5다. 분모가 작은 상태에서는 작은 측정 오차도 비를 크게 바꿀 수 있다. 혈역학적 자료와 심장방 확대, 영상에서 확인한 연결을 함께 읽어야 한다. 측정값이 서로 맞지 않을 때에는 모든 숫자가 독립적이고 완벽하다고 가정하기보다 표본과 계산 가정을 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.2be9e1600152",
+      "type": "heading",
+      "level": 2,
+      "text": "유량과 혈관병을 나누어 보기"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.02d83119c822",
+      "type": "paragraph",
+      "markdown": "많은 폐혈류와 높은 폐혈관 저항은 다른 개념이다. 폐동맥압이 높아도 원인이 큰 유량인지, 좌심방 압력 전달인지, 폐혈관 저항의 상승인지 구별해야 한다. 저항은 압력차를 유량으로 나눈 관계로 표현하므로 유량 정보 없이 압력만으로 폐혈관병의 정도를 정할 수 없다. 오랜 과혈류가 혈관 재형성과 연결될 수 있지만 모든 단락이 같은 속도로 진행하는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.b.f70ce5a65868",
+      "type": "paragraph",
+      "markdown": "결손의 폐쇄 가능성은 결손이 있다는 사실과 별개의 질문이다. 현재의 방향과 혈관 저항, 심장방 기능 및 폐쇄 뒤 압력·유량의 변화를 평가해야 한다. 심한 폐혈관병에서 단락이 압력의 배출 경로 역할을 한다면 폐쇄가 오히려 순환을 악화시킬 수 있다. 단락 비 하나로 중재의 적응을 자동 결정하지 않고, 해부학적 연결과 생리적 결과를 같은 순환도 위에서 설명하는 것이 기본이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.h.extra0843",
+      "type": "heading",
+      "level": 2,
+      "text": "재순환의 보존식을 확인하는 방법"
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.p.extra0843.0",
+      "type": "paragraph",
+      "markdown": "단순 좌우단락에서 체혈류 Qs=5L/min을 고정하고 재순환량 L을0에서4L/min으로 늘리면 폐혈류 Qp=5+L이다. Qp/Qs는1에서1.8로 증가하지만 체혈류는 이 가정 안에서5로 같다. 폐로 통과하는 양과 전신에 유효하게 전달되는 양이 다르다는 점을 보여 준다. 실제 환자의 심실은 부하에 반응하므로 Qs가 반드시 고정되지는 않는다."
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.p.extra0843.1",
+      "type": "paragraph",
+      "markdown": "계산에서 단락 위치를 옮기면 같은 재순환량이라도 용적을 받아들이는 심장방이 달라진다. 심방 수준의 좌우단락은 오른심실을 거쳐 폐로 가는 양을 늘리고, 심실이나 대혈관 수준의 단락은 폐정맥 환류를 통해 왼심장 부담을 만들 수 있다. 유량의 숫자와 심장방의 위치를 함께 표시하면 결손 위치를 단순히 암기하는 대신 재순환의 전체 경로를 설명할 수 있다."
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.table0843",
+      "type": "table",
+      "data": {
+        "title": "연결·기전·검사 대상의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "Qp",
+            "폐를 통과하는 유량"
+          ],
+          [
+            "Qs",
+            "체순환 유량"
+          ],
+          [
+            "좌우단락 단순 수지",
+            "Qp=Qs+재순환량"
+          ],
+          [
+            "측정",
+            "산소함량·채혈 위치·정상상태 가정"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.congenital.shunt-physiology.diagram.shunt-recirculation-0843",
+      "type": "diagram",
+      "diagramRef": "diagram.shunt-recirculation-0843",
+      "path": "diagrams/diagram.shunt-recirculation-0843.svg",
+      "alt": "좌우단락의 단순 유량 수지의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/congenital/sections/cardiology.congenital.shunt-physiology.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.congenital.shunt-physiology.001",
+    "question.cardiology.congenital.shunt-physiology.002"
+  ],
+  "relatedLessons": [
+    "cardiology.congenital.atrial-septal-defect"
+  ]
+}

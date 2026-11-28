@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.general.agonism-antagonism-curves",
+  "subjectId": "pharmacology",
+  "chapterId": "general",
+  "title": {
+    "ko": "효능·길항·농도반응 곡선",
+    "en": "Efficacy, Antagonism and Concentration–Response Curves"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.lo.01",
+      "text": "친화도·효력·효능을 구별한다"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.lo.02",
+      "text": "경쟁 길항의 농도비와 가정을 설명한다"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.lo.03",
+      "text": "부분작용제·역작용제·여분수용체의 해석을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.71999eec905e",
+      "type": "heading",
+      "level": 2,
+      "text": "결합과 반응은 같은 축이 아니다"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.e8b2f8f3107b",
+      "type": "paragraph",
+      "markdown": "수용체에 결합하는 정도와 그 결합이 만드는 반응은 구별해야 한다. 친화도(affinity)는 지정 조건의 결합 평형과 관련되고,효력(potency)은 특정 효과를 내는 데 필요한 농도나 용량과 관련된다. 효능(efficacy)은 수용체 활성화와 반응 생성 능력에 관한 개념이지만 관찰 최대반응은 조직과 측정계의 한계에도 좌우된다. EC50은 지정 실험에서 최대반응의 절반을 만드는 농도이며 결합 해리상수 Kd와 반드시 같지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.dc74bdc2f9c9",
+      "type": "paragraph",
+      "markdown": "같은 약물도 수용체 밀도,신호 증폭,측정한 반응에 따라 EC50과 최대반응이 달라질 수 있다. 서로 다른 조직의 곡선을 비교할 때에는 농도가 자유 농도인지,노출 시간이 같은지,세포 생존과 기저 반응을 어떻게 처리했는지 확인해야 한다. 낮은 EC50을 가진 약물이 언제나 더 큰 최대효과나 임상적 우월성을 가진다는 결론은 나오지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.08ad9b0cceaa",
+      "type": "heading",
+      "level": 2,
+      "text": "기본 반응식과 로그 농도축"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.44dfc0d85679",
+      "type": "paragraph",
+      "markdown": "Hill 기울기를1로 둔 단순 반응식은 E=Emax×A/(EC50+A)다. A는 작용제 농도이고 E는 측정 반응이다. 이 식은 실험 거동을 요약하는 모형이며 모든 경우에 수용체 한 분자의 점유를 직접 측정한 식이 아니다. 선형 농도축에서는 포화 쌍곡선,로그 농도축에서는 S자형에 가까운 곡선으로 보인다. 표시 축이 바뀌어도 동일한 농도와 반응 자료는 같다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.05705bfefa28",
+      "type": "paragraph",
+      "markdown": "같은 Emax에서 EC50만 커지면 더 높은 농도에서 같은 반응이 필요하다. Emax가 줄면 포화시킬 만큼 충분한 농도에서도 관찰 최대값이 낮아진다. 그러나 실제 곡선의 수평 이동·최대반응 저하만으로 결합 부위나 분자 기전을 확정할 수는 없다. 비평형,신호 억제,세포 독성,농도 범위 부족과 측정 간섭도 비슷한 형태를 만들 수 있다. 곡선 형태와 원인을 분리한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.74c23e69ecd5",
+      "type": "heading",
+      "level": 2,
+      "text": "가역 경쟁 길항의 조건부 예측"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.91eed7918fae",
+      "type": "paragraph",
+      "markdown": "단일 수용체의 평형에서 중성 길항제 B가 작용제와 상호 배타적으로 결합하고 다른 반응 연결을 바꾸지 않는다면 농도비 CR=1+B/KB가 성립할 수 있다. KB는 그 조건의 길항제 해리상수다. 동일 효과를 얻기 위한 작용제 농도가 CR배가 되어 이상적인 곡선은 오른쪽으로 이동한다. 충분한 작용제 범위를 제공하고 최대반응 생성 능력이 유지되는 조건에서는 원래 최대반응에 접근할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.c4de80f067a1",
+      "type": "paragraph",
+      "markdown": "Schild 분석은 log(CR−1)을 logB에 대해 비교한다. 단순 경쟁 조건에서 기울기1이 예상되지만,관찰 결과가 그 식과 맞는다고 결합 부위의 동일성이 단독으로 증명되지는 않는다. 농도 평형·단일 수용체군·선택성 등 가정이 중요하다. 길항제의 혈장 농도와 수용체 부위 자유 농도가 다르거나 관찰 시간이 짧으면 이 이상적 관계를 임상 수치에 곧바로 적용할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.2234cc0d443f",
+      "type": "heading",
+      "level": 2,
+      "text": "여분수용체와 비가역적 차단"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.2087bf3075bb",
+      "type": "paragraph",
+      "markdown": "최대반응에 모든 수용체의 점유가 필요하지 않은 반응계에서는 여분수용체 또는 수용체 예비력(receptor reserve)을 말한다. 이는 사용하지 않는 별도 종류의 수용체가 존재한다는 뜻이 아니라 수용체 활성과 하류 반응 사이의 증폭 관계다. 일부 수용체를 비가역적으로 차단해도 처음에는 최대반응이 유지되면서 더 높은 작용제 농도가 필요할 수 있다. 차단이 커져 예비력이 소진되면 최대반응이 감소할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.09e65617d39e",
+      "type": "paragraph",
+      "markdown": "따라서 비가역 길항이면 언제나 첫 조건부터 최대반응이 즉시 낮아진다는 규칙은 성립하지 않는다. 비경쟁적이라는 기능적 표현도 반드시 특정 공유결합 기전 하나만 뜻하지 않는다. 하류 효과기의 억제나 일부 알로스테릭 조절은 다른 방식으로 반응을 제한할 수 있다. 분자 기전의 확정에는 결합·시간 의존성·세척 후 회복과 신호 측정을 함께 설계해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.1834850ef687",
+      "type": "heading",
+      "level": 2,
+      "text": "부분작용제와 역작용제"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.6b06c88a2518",
+      "type": "paragraph",
+      "markdown": "부분작용제(partial agonist)는 지정 반응계에서 완전작용제보다 낮은 최대반응을 보일 수 있다. 동시에 같은 수용체 자리를 경쟁하면 완전작용제에 대한 반응을 낮추는 역할을 할 수 있다. 약물 이름만으로 모든 조직에서 동일한 부분효능을 고정하지 않고 수용체 밀도와 연결 효율을 고려한다. 두 약물을 섞은 결과는 농도·친화도·내재 효능의 조합에 달려 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.81c7ff605633",
+      "type": "paragraph",
+      "markdown": "역작용제(inverse agonist)는 구성적 수용체 활성(constitutive activity)이 있는 계에서 그 활성을 낮추는 방향으로 작용한다. 중성 길항제는 그 기저 활성을 직접 바꾸지 않으면서 작용제 결합을 막는 개념이다. 기저 신호가 낮거나 측정 민감도가 부족하면 구별이 어렵다. 서로 다른 신호 경로에 대한 선택성도 가능하므로 하나의 반응값으로 모든 수용체 기능을 대표시키지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.67d2ca5b50d2",
+      "type": "heading",
+      "level": 2,
+      "text": "곡선 해석을 위한 계산"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.b.ac6dd568fa81",
+      "type": "paragraph",
+      "markdown": "가상 모형에서 Emax=100,EC50=2이고 B/KB=3인 경쟁 조건을 두면 이동 후 EC50은8이다. A=8일 때 대조 반응은80,경쟁 조건은50이다. 별도로 Emax=50,EC50=2인 제한 모형도 같은 A에서40을 보이지만 이는 최대반응만 바꾼 비교 조건이지 특정 실제 길항제의 실험 결과가 아니다. 그래프는 계산 관계를 연습하도록 독립 작성하며 실제 환자의 용량·안전성·치료 우열로 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.diagram.competitive-efficacy-comparison",
+      "type": "diagram",
+      "diagramRef": "diagram.competitive-efficacy-comparison",
+      "path": "diagrams/diagram.competitive-efficacy-comparison.svg",
+      "alt": "같은 농도에서의 반응 모형의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.agonism-antagonism-curves.table.compare",
+      "type": "table",
+      "data": {
+        "title": "결합과 반응",
+        "columns": [
+          "용어",
+          "질문",
+          "주의"
+        ],
+        "rows": [
+          [
+            "Kd",
+            "결합 평형",
+            "EC50와 다를 수 있음"
+          ],
+          [
+            "EC50",
+            "관찰 최대반응의 절반",
+            "실험계 의존"
+          ],
+          [
+            "효능",
+            "반응 생성 능력",
+            "조직·연결 영향"
+          ],
+          [
+            "여분수용체",
+            "최대반응에 전체 점유 불필요",
+            "별도 수용체 종류 아님"
+          ]
+        ],
+        "notes": "정의와 대표 관계를 비교한다. 실제 측정·예외·모형 조건은 본문에서 구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/sections/pharmacology.general.agonism-antagonism-curves.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "EC50·Kd·최대반응과 결합 기전은 구별해야 한다."
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.general.agonism-antagonism-curves.001",
+    "question.pharmacology.general.agonism-antagonism-curves.002"
+  ],
+  "relatedLessons": [
+    "pharmacology.general.distribution-binding-models",
+    "pharmacology.general.clearance-extraction-models",
+    "pharmacology.general.repeated-dosing-accumulation"
+  ]
+}

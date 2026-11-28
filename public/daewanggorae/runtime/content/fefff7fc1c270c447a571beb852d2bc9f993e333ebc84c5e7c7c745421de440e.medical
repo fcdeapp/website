@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "general-surgery.assessment.risk-benefit-timing",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.e4be13e3a4a3",
+      "sourceSha256": "e4be13e3a4a34cb3b898e8bfef4f7bf2f1c4a039013dbd9bd26c5b1ccb630ad8",
+      "sourceLengthUtf16": 261,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.ceca7b89e9dc",
+      "sourceSha256": "ceca7b89e9dcdcd2dc8eb7a82d8a23dcd73cb68f6aa80934cbab66ab38b85691",
+      "sourceLengthUtf16": 219,
+      "annotations": [
+        {
+          "id": "ann.926002c7890a177dede7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 41,
+            "end": 47,
+            "exact": "감염원 조절",
+            "prefix": " 정상화할 때까지 기다릴 수 없다. 소생과 ",
+            "suffix": "·출혈 통제가 병행되며 지연 자체가 위해가 "
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.8c69479f2006",
+      "sourceSha256": "8c69479f20066f89844e986c599937b79d8aaafbed7549b6a7a6db295b992eaf",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.df7e349cd0ef234d2da9",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 19,
+            "end": 22,
+            "exact": "당뇨병",
+            "prefix": "환자 요인에는 심폐질환·신장 기능·",
+            "suffix": "·감염·빈혈과 이전 수술·마취의 문제가 포함"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        },
+        {
+          "id": "ann.900bb3ed2b7cc869ba60",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 50,
+            "end": 87,
+            "exact": "인지와 이동·섭취, 노쇠(frailty)와 사회적 지원도 중요하다.",
+            "prefix": "빈혈과 이전 수술·마취의 문제가 포함된다. ",
+            "suffix": " 수술 요인에는 절개와 조직 손상의 크기, "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.300ae1f38ae6",
+      "sourceSha256": "300ae1f38ae645aec8e7010bbe1eb5f9edc85e06fa5e60db7fc2d02a79fefc10",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.5e6e8429c816e06312f3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 127,
+            "end": 183,
+            "exact": "기능이 떨어졌을 때에는 심폐 제한인지, 관절 통증·신경 장애인지, 탈조건화와 영양 문제인지 구별한다.",
+            "prefix": " 침상에 의존하던 환자의 예비력은 다르다. ",
+            "suffix": " 활동량이 적다는 관찰을 곧바로 심근 허혈의"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.59dc8672b596",
+      "sourceSha256": "59dc8672b596da7f71f0e99a5637ac4b553524908038098e07917cdea1ef240f",
+      "sourceLengthUtf16": 219,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.b905ace264f4",
+      "sourceSha256": "b905ace264f4d8d41ae28c3dfebd8c9fc3f582f455856819db39fffa775a4a5a",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.0cafbfbb3702",
+      "sourceSha256": "0cafbfbb3702234c29c7f26a0bf0bca2874e5f751845bfe1ab6fe6bb77aa059d",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.619302a44443",
+      "sourceSha256": "619302a444433c6609f188c1ba9c04ce55c114bb71954250fa45510c1fa3dc0b",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.3a76a08c8172",
+      "sourceSha256": "3a76a08c8172ded3f446c921deab37922addc5931b7b81cf9a9fa07ef7ed5877",
+      "sourceLengthUtf16": 165,
+      "annotations": []
+    },
+    {
+      "blockId": "general-surgery.assessment.risk-benefit-timing.b.37985efa984b",
+      "sourceSha256": "37985efa984b418fb38b2dcb4b7a47ea01b3db5d5f52087a8846a649eae6cbf6",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    }
+  ]
+}

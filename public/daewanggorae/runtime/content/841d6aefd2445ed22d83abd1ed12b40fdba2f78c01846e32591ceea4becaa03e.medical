@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "research-ethics.human-subjects.consent",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.3b06e1a5b97b",
+      "sourceSha256": "3b06e1a5b97bc8d9baf260e83b9e4c923af4d5036715925c24b3e80d84709fd6",
+      "sourceLengthUtf16": 264,
+      "annotations": []
+    },
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.3a6016a314f4",
+      "sourceSha256": "3a6016a314f4fef80d7f776fd9acbb8738603798cd8ffae9c4c773fc7b3f2fe6",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.b642edbadc63",
+      "sourceSha256": "b642edbadc63841de32efea39ad3ef0cd5b8b20e30706d73aad3199ba079948d",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.ee3aba66bcce",
+      "sourceSha256": "ee3aba66bcce074e4110e7c03b1efb788bdcd3ac200dc3b805d812093a6abbfa",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.3a82e9313c91",
+      "sourceSha256": "3a82e9313c91b1fb4748b28ca3091cbedd02b218944f39e247be7c841d0307a8",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.8148b4e614b327187056",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 75,
+            "end": 114,
+            "exact": "문서에 서명했다는 사실만으로 모든 정보가 이해되었다고 확정하지 않는다.",
+            "prefix": " 자발적인 결정을 가능하게 하는 과정이다. ",
+            "suffix": " 연구 목적과 절차, 예상 위험과 이익, 대"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.6cae1560f830",
+      "sourceSha256": "6cae1560f83027813aaa40d0477aee4c954b6fa58c6bf9f0dba41a628e4b695c",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.b534095ce13b",
+      "sourceSha256": "b534095ce13bb64c75ceab371551aedafbc789712a6ae5e7a3048d6bced2661d",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.78489bcbd335bed21e87",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 107,
+            "end": 113,
+            "exact": "의사결정능력",
+            "prefix": " 등록 시점의 한 사건으로 끝나지 않는다. ",
+            "suffix": "이 제한된 상황에서는 적용되는 요건에 맞는 "
+          },
+          "conceptId": "reader.term.558f849ea5dc0e35",
+          "targetDocumentId": "medical-ethics.consent.shared-decisions"
+        },
+        {
+          "id": "ann.8d966e68d9e232a6ab96",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 56,
+            "exact": "연구 중 새 위험과 중요한 정보가 확인되거나 절차가 바뀌면 기존 동의만으로 충분한지 재평가해야 한다.",
+            "prefix": "",
+            "suffix": " 참여자의 상태와 의사도 변할 수 있으므로 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.f804602f2163",
+      "sourceSha256": "f804602f2163c2b89699d13240ba49fa41db26e0ec5bc06ffb006db0e82817cd",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.acaa4ede4c48",
+      "sourceSha256": "acaa4ede4c48b111bb1a232a893c74167efcf3d2cdc86143b16fee7de848bdbd",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "research-ethics.human-subjects.consent.b.b4ea19e51f5d",
+      "sourceSha256": "b4ea19e51f5d44265021bd73147c7a27974ae257b9500b4e285fbbb1b83707b6",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    }
+  ]
+}

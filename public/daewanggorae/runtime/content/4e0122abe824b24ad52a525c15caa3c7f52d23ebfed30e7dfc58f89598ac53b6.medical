@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology",
+  "title": {
+    "ko": "생리학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "physiology.chapter.cardiovascular",
+      "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/cardiovascular/chapter.json"
+    },
+    {
+      "id": "physiology.chapter.renal",
+      "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/renal/chapter.json"
+    },
+    {
+      "id": "physiology.chapter.cell",
+      "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/cell/chapter.json"
+    },
+    {
+      "id": "physiology.chapter.respiratory",
+      "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/respiratory/chapter.json"
+    },
+    {
+      "id": "physiology.chapter.endocrine",
+      "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/endocrine/chapter.json"
+    },
+    {
+      "id": "physiology.chapter.muscle",
+      "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/muscle/chapter.json"
+    },
+    {
+      "id": "physiology.chapter.digestive",
+      "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/digestive/chapter.json"
+    },
+    {
+      "id": "physiology.chapter.neuro",
+      "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/neuro/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "physiology.plan.001",
+    "physiology.plan.002",
+    "physiology.plan.003",
+    "physiology.plan.004",
+    "physiology.plan.005",
+    "physiology.plan.006",
+    "physiology.plan.007",
+    "physiology.cardiovascular.cardiac-cycle",
+    "physiology.renal.filtration",
+    "physiology.renal.raas",
+    "physiology.cell.membrane-potential",
+    "physiology.respiratory.ventilation-perfusion",
+    "physiology.renal.segmental-transport",
+    "physiology.renal.urine-concentration",
+    "physiology.renal.potassium",
+    "physiology.endocrine.calcium-phosphate",
+    "physiology.muscle.excitation-contraction",
+    "physiology.respiratory.control-of-breathing",
+    "physiology.digestive.secretion-control",
+    "physiology.respiratory.mechanics-compliance",
+    "physiology.respiratory.alveolar-equation-deadspace",
+    "physiology.respiratory.diffusion-oxygen",
+    "physiology.cardiovascular.hemodynamics-resistance",
+    "physiology.cardiovascular.microcirculation-glycocalyx",
+    "physiology.cardiovascular.cardiac-output-venous-return",
+    "physiology.endocrine.hypothalamic-pituitary-axes",
+    "physiology.endocrine.hormone-kinetics",
+    "physiology.endocrine.gh-prolactin",
+    "physiology.endocrine.insulin-glucagon",
+    "physiology.neuro.synaptic-transmission",
+    "physiology.neuro.synaptic-integration",
+    "physiology.neuro.sensory-coding",
+    "physiology.digestive.carbohydrate-absorption",
+    "physiology.digestive.lipid-protein-absorption",
+    "physiology.digestive.motility-control",
+    "physiology.neuro.autonomic-control",
+    "physiology.cell.action-potential-conduction",
+    "physiology.neuro.motor-units-reflexes",
+    "physiology.neuro.pain-modulation"
+  ]
+}

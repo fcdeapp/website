@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.general.transporters-vectorial-flux",
+  "subjectId": "pharmacology",
+  "chapterId": "general",
+  "title": {
+    "ko": "약물 수송체와 방향성 이동",
+    "en": "Drug Transporters and Vectorial Flux"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.lo.01",
+      "text": "SLC·ABC 계통과 에너지 결합을 구별한다"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.lo.02",
+      "text": "근위세관 양쪽 막의 수송 연결을 설명한다"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.lo.03",
+      "text": "세포내 축적과 체외 배설이 같은 결과가 아님을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.986e042239db",
+      "type": "heading",
+      "level": 2,
+      "text": "막을 가로지르는 이동의 선택성"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.e2aab3b0e968",
+      "type": "paragraph",
+      "markdown": "약물의 세포막 이동은 지질막을 통한 수동 이동뿐 아니라 특정 수송 단백질의 영향을 받는다. Solute carrier(SLC)와 ATP-binding cassette(ABC)는 큰 계통 이름이며 그 안의 모든 단백질이 동일한 기질·방향·에너지원으로 작동하지는 않는다. 촉진 확산,이온 기울기와 결합한 이동,ATP 가수분해와 연결된 유출을 구별해야 한다. 수송체가 존재한다는 사실과 특정 약물이 실제 임상 농도에서 유의하게 운반된다는 주장은 다른 수준의 근거를 요구한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.90ff69b65ff4",
+      "type": "paragraph",
+      "markdown": "수송은 기질 선택성을 가지면서 여러 물질에 대해 겹칠 수 있다. 한 약물이 여러 운반체의 기질이거나 한 운반체가 서로 다른 구조의 물질을 취급할 수 있다. 수송체 이름이 유기음이온·유기양이온을 포함하더라도 실제 기질 범위를 단순한 전하 한 가지로만 예측하지 않는다. 유전형·발현량·막 위치와 다른 기질의 경쟁이 관찰 유량을 바꿀 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.700e340d52dd",
+      "type": "heading",
+      "level": 2,
+      "text": "극성을 가진 상피의 두 막"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.3ff8dde7d16d",
+      "type": "paragraph",
+      "markdown": "상피세포의 바닥가쪽막(basolateral membrane)과 꼭대기막(apical membrane)은 서로 다른 구획을 향한다. 근위세관에서는 혈액 쪽에서 세포로 들어오는 단계와 세포에서 내강으로 나가는 단계가 연결되어 방향성 분비(vectorial secretion)를 만들 수 있다. 한쪽 막의 유입만 측정한 결과를 세포 전체를 가로지르는 배설로 동일시하면 뒷 단계의 병목을 놓친다. 장과 간에서도 막의 위치·바깥 구획이 다르므로 명칭과 방향을 함께 읽어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.1b17b9b9f98b",
+      "type": "paragraph",
+      "markdown": "사람 신장의 대표 양이온 분비에서는 OCT2의 바닥가쪽 유입과 MATE1·MATE2-K의 내강 쪽 이동이 연결된다. OCT 계통은 막전위와,MATE 계통은 H+ 교환 등 전기화학적 환경과 연관된다. 각각을 동일한 ATP 직접 펌프로 부르지 않는다. OAT1·OAT3 등 음이온 계통은 다른 구동력과 교환 관계를 가지며 내강 쪽의 여러 유출 경로와 협동한다. 사람과 설치류의 발현 차이도 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.e33ee8afaeeb",
+      "type": "heading",
+      "level": 2,
+      "text": "수송의 포화와 경쟁"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.74dad1f9f3ea",
+      "type": "paragraph",
+      "markdown": "한 운반 과정의 유량을 J=Jmax×C/(Kt+C)로 근사하면 낮은 기질 농도에서는 농도에 비례하고 높은 농도에서는 포화한다. Kt는 지정 실험계에서 반최대 유량에 해당하는 농도이며 결합 해리상수나 임상 독성 문턱과 반드시 같지 않다. 이 식은 단일 과정의 근사이므로 양쪽 막과 세포내 결합이 있는 장기 전체의 유량을 그대로 나타내지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.b9c01843a07c",
+      "type": "paragraph",
+      "markdown": "경쟁 물질이 있으면 관찰 농도–유량 관계가 바뀔 수 있지만 시험관 억제만으로 임상 상호작용이 확정되지는 않는다. 세포 밖 총농도와 수송체 부위의 자유 농도,노출 시간과 대체 경로가 중요하다. 가상 Jmax=12단위/min,Kt=3단위/L에서 C=3이면 J=6단위/min이다. 이 숫자는 실제 운반체의 Km이나 특정 약물의 안전 용량을 뜻하지 않는 독립 계산이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.23eb4de99eee",
+      "type": "heading",
+      "level": 2,
+      "text": "세포 축적과 소변 배설의 분리"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.ff3cbd3aca1a",
+      "type": "paragraph",
+      "markdown": "혈액 쪽 유입이 유지되면서 내강 쪽 유출이 감소하면 세포내 약물량이 늘면서 배설 유량은 줄 수 있다. 반대로 유입이 줄면 세포내 노출과 소변 분비가 함께 줄 수 있다. 따라서 소변 배설이 감소했다는 관찰만으로 세포내 독성이 감소했다고 결론 내리지 않는다. 기질의 반응성과 세포내 표적,다른 제거 경로가 장기 손상의 위험에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.ea9b7719babc",
+      "type": "paragraph",
+      "markdown": "단순 세포 수지 dAcell/dt=Jin−Jout−Jmet에서 Jin은 유입,Jout은 유출,Jmet은 세포내 대사다. 같은 양의 변화가 여러 유량 조합으로 가능하며,한 시점의 세포내 농도만으로 각 막의 수송 능력을 분리할 수 없다. 방향별 투과 실험과 세포 축적,대사체·매질 농도를 함께 측정하면 해석이 개선된다. 세포 생존 저하와 막 누출이 수송 억제처럼 보이는 교란도 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.548d1a0195d3",
+      "type": "heading",
+      "level": 2,
+      "text": "장기 간 연결과 실험의 범위"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.d4912aeb818a",
+      "type": "paragraph",
+      "markdown": "신장 수송체는 외인성 약물뿐 아니라 내인성 대사물질의 처리에도 관여한다. 간·장·신장 등의 수송과 대사가 연결되어 혈중 노출과 담즙·소변 배설을 바꾼다. 한 장기에서 발현이 많다는 정보와 전체 청소율에서 그 경로가 차지하는 비율은 같지 않다. 장벽과 혈류의 제약을 포함하지 않은 세포 실험의 최대 유량을 생체 전체에 직접 곱하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.b.dd233661eb8a",
+      "type": "paragraph",
+      "markdown": "정적 정상 신장 3D 외형은 기관의 위치를 보여 줄 수 있지만,근위세관의 양쪽 막·수송체 위치·전하 구동력은 거시 OBJ에 포함되지 않는다. 이 절에서는 혈액–세포–내강을 분리한 벡터 도식으로 방향을 표시한다. 실제 약물별 수송체 억제·병용 조치·환자 용량은 최신 허가정보와 검증된 약동학 자료에 따라 별도로 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.diagram.transporter-saturable-flux",
+      "type": "diagram",
+      "diagramRef": "diagram.transporter-saturable-flux",
+      "path": "diagrams/diagram.transporter-saturable-flux.svg",
+      "alt": "단일 수송 과정의 포화의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.diagram.vectorial-transport-membranes",
+      "type": "diagram",
+      "diagramRef": "diagram.vectorial-transport-membranes",
+      "path": "diagrams/diagram.vectorial-transport-membranes.svg",
+      "alt": "근위세관 양이온 경로의 구획의 단계별 비교"
+    },
+    {
+      "id": "pharmacology.general.transporters-vectorial-flux.table.compare",
+      "type": "table",
+      "data": {
+        "title": "수송 구획",
+        "columns": [
+          "구획",
+          "대표 연결",
+          "주의"
+        ],
+        "rows": [
+          [
+            "혈액쪽",
+            "사람 OCT2·OAT1/3 등",
+            "기질·구동력 다름"
+          ],
+          [
+            "세포",
+            "유입−유출−대사",
+            "축적과 배설 구별"
+          ],
+          [
+            "내강쪽",
+            "MATE 등",
+            "종·경로별 차이"
+          ]
+        ],
+        "notes": "정의·가정과 대표 관계의 비교이며 단일 임상 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/sections/pharmacology.general.transporters-vectorial-flux.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "상피 양쪽 막의 연결과 세포 축적·배설은 구별한다."
+  ],
+  "relatedLessons": [
+    "pharmacology.general.renal-excretion-ionization",
+    "pharmacology.general.quantal-response-safety"
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.general.transporters-vectorial-flux.001",
+    "question.pharmacology.general.transporters-vectorial-flux.002"
+  ]
+}

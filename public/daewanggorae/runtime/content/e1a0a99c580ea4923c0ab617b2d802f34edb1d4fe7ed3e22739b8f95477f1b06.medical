@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-standing-bp-0853",
+  "lessonId": "neuroscience.autonomic.orthostatic-testing",
+  "title": "가상 기립 시점별 혈압",
+  "series": [
+    {
+      "label": "수축기",
+      "samples": [
+        {
+          "x": 0,
+          "y": 130
+        },
+        {
+          "x": 1,
+          "y": 118
+        },
+        {
+          "x": 3,
+          "y": 108
+        },
+        {
+          "x": 5,
+          "y": 110
+        }
+      ]
+    },
+    {
+      "label": "이완기",
+      "samples": [
+        {
+          "x": 0,
+          "y": 80
+        },
+        {
+          "x": 1,
+          "y": 76
+        },
+        {
+          "x": 3,
+          "y": 72
+        },
+        {
+          "x": 5,
+          "y": 74
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "minutes": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "systolic": [
+      130,
+      118,
+      108,
+      110
+    ],
+    "diastolic": [
+      80,
+      76,
+      72,
+      74
+    ],
+    "notContinuousMeasurement": true,
+    "notDiagnosticThresholdOrCause": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 5,
+      "scale": "linear",
+      "ticks": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "label": "시점(min)·0은 누움"
+    },
+    "yAxis": {
+      "min": 40,
+      "max": 160,
+      "scale": "linear",
+      "ticks": [
+        40.0,
+        70.0,
+        100.0,
+        130.0,
+        160.0
+      ],
+      "label": "혈압(mmHg)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "수축기",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "이완기",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정 또는 가상 증례 자료다. 실제 환자·정상 범위·검사 기준·진단·투약·치료효과와 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

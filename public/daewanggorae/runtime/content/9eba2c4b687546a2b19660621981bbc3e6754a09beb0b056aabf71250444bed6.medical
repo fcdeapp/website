@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.cardiovascular.microcirculation-glycocalyx",
+  "subjectId": "physiology",
+  "chapterId": "cardiovascular",
+  "title": {
+    "ko": "미세혈관 여과·글리코칼릭스·림프와 부종",
+    "en": "Microvascular Filtration, Glycocalyx, and Lymph"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.lo.01",
+      "text": "정수압과 교질삼투압의 작용 방향을 설명한다"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.lo.02",
+      "text": "고전적 Starling 모형과 수정된 관점을 구별한다"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.lo.03",
+      "text": "여과·림프 배액·장벽 변화가 부종에 미치는 영향을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.47b376433546",
+      "type": "heading",
+      "level": 2,
+      "text": "물과 단백질이 이동하는 경계"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.6219ce3a83c7",
+      "type": "paragraph",
+      "markdown": "미세혈관의 물 이동은 혈관 안팎의 압력뿐 아니라 내피 장벽의 성질과 유효 교환 면적에 좌우된다. 모세혈관압이 높아지면 다른 조건이 같을 때 바깥쪽 여과를 촉진할 수 있고, 혈장 단백질이 만드는 교질삼투압은 장벽의 선택성과 함께 반대 방향의 힘에 기여한다. 그러나 물과 단백질이 같은 비율로 자유롭게 통과하는 장벽이라면 단백질의 삼투성 효과도 달라진다. 압력 숫자와 장벽의 반사계수를 함께 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.5fb6b08a52a7",
+      "type": "paragraph",
+      "markdown": "고전적인 표현은 Jv=Kf[(Pc−Pi)−σ(πc−πi)]이다. Pc·Pi는 혈관·사이질 정수압, πc·πi는 교질삼투압, σ는 단백질 반사계수, Kf는 유효 면적과 수리전도도를 포함하는 계수이다. σ가1에 가까우면 해당 용질의 삼투성 효과가 더 잘 유지되고0에 가까우면 감소한다. 이 관계는 물질의 모든 종류에 하나의 고정 σ를 쓰는 식은 아니다. 어떤 용질과 장벽을 다루는지 명시해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.686643ef76b9",
+      "type": "heading",
+      "level": 2,
+      "text": "고전적 그림의 유용성과 한계"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.1f48efd753bf",
+      "type": "paragraph",
+      "markdown": "동맥쪽에서 여과하고 정맥쪽에서 대부분 지속적으로 재흡수한다는 고전적인 그림은 압력의 방향을 배우는 데 쓰였지만 여러 조직의 정상상태를 그대로 재현하지는 못한다. 평균적인 사이질 단백질 농도만을 혈관벽 바로 바깥의 유효 삼투 환경과 같게 놓는 데 한계가 있기 때문이다. 혈관을 따라 압력이 내려간다는 사실만으로 어느 지점부터 영구적인 대량 재흡수가 반드시 시작된다고 결론 내릴 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.a7e5e8d9679e",
+      "type": "paragraph",
+      "markdown": "내피 표면의 글리코칼릭스(glycocalyx)는 단백질과 물의 통과에 영향을 주는 중요한 구조이다. 수정된 Starling 관점에서는 장벽 바로 아래의 국소 환경, 특히 글리코칼릭스 아래 공간의 단백질 상태를 고려한다. 조직 전체에서 채취한 사이질액의 평균 농도와 이 국소 공간이 언제나 같지는 않다. 장벽의 구조와 여과에 의한 씻김·확산이 이 차이를 유지하는 데 관여한다. 이를 모든 장기의 미세혈관에 동일한 두께·투과성의 막이 있다는 뜻으로 해석하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.125b810175dd",
+      "type": "heading",
+      "level": 2,
+      "text": "재흡수와 림프 배액"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.03b6427e631b",
+      "type": "paragraph",
+      "markdown": "많은 조직의 정상상태에서는 지속적인 정맥 말단 재흡수만으로 여과된 액체가 대부분 돌아온다는 모형보다 림프 배액의 역할을 중요하게 본다. 급격한 압력 변화 뒤의 일시적 재흡수와, 특정 특수 혈관층에서의 흡수는 별도로 구별해야 한다. 수정된 관점이 혈관으로의 흡수는 어떠한 조건에서도 존재할 수 없다는 뜻은 아니다. 정상상태·과도기·장기별 구조의 차이를 함께 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.7fb397526bee",
+      "type": "paragraph",
+      "markdown": "림프는 여과된 물과 함께 단백질·입자·세포 등의 회수에 관여한다. 조직의 압력과 움직임, 림프관의 판막·수축 및 중심 정맥으로의 배출 조건이 흐름에 영향을 준다. 림프관이 열려 있다는 사실만으로 어떤 속도의 여과도 무조건 처리할 수 있는 것은 아니다. 여과 증가에 대한 여유가 있지만 지속적인 부담이 이를 넘어가면 조직의 액체가 증가할 수 있다. 림프 배액을 수동적인 남는 액체의 우회관 하나로 보지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.80b5aaff0a55",
+      "type": "heading",
+      "level": 2,
+      "text": "부종을 만드는 여러 변화"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.132762422611",
+      "type": "paragraph",
+      "markdown": "모세혈관 정수압의 증가, 혈장 교질삼투압의 감소, 장벽 투과성 변화, 림프 배액 저하는 각각 부종에 기여할 수 있다. 실제 질환에서는 한 기전만 독립적으로 변하지 않는 경우가 많다. 염증은 단백질 통과·내피 기능·혈류를 함께 바꿀 수 있고, 정맥압 상승은 여과 구동력과 림프 배출에 영향을 줄 수 있다. 혈장 단백질 농도 하나가 낮다고 모든 부종의 원인을 그 값으로 확정해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.3c8d0971947d",
+      "type": "paragraph",
+      "markdown": "사이질의 결합조직과 압력–용적 관계도 중요하다. 액체가 조금 늘어날 때의 압력 반응과 더 크게 축적된 뒤의 반응은 다를 수 있다. 조직의 단단함·기질 변화·단백질 양과 염증이 부종의 촉감과 지속성에 영향을 준다. 부종이 눌린다는 소견과 특정 장기 질환 사이에는 전형적인 연결이 있지만 단일 진찰 소견으로 모든 원인을 확정하지 않는다. 위치·좌우·시간 경과와 전신 상태를 함께 살핀다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.f082b07b331c",
+      "type": "heading",
+      "level": 2,
+      "text": "정량 모형을 읽는 방법"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.ba18d5279859",
+      "type": "paragraph",
+      "markdown": "Pc=25, Pi=0, πc=25, πi=5 mmHg, σ=1의 고전적 계산 예시에서는 괄호 안 순구동압이5 mmHg이다. Pc만30으로 올리면10 mmHg로 변한다. 같은 Kf를 고정했다면 여과율이 두 배가 되는 선형 모형이다. 이 숫자는 실제 환자나 특정 장기의 측정값이 아니며 글리코칼릭스 아래 환경·투과성 변화·림프 반응을 계산하지 않는다. 수식의 방향을 확인하는 도구와 생체의 여과량을 예측하는 도구를 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.aa2933a851c2",
+      "type": "paragraph",
+      "markdown": "단백질 반사계수를 낮추면서 다른 항을 고정한 모형은 교질삼투압 차의 억제 효과가 줄어드는 방향을 보여 줄 수 있다. 그러나 장벽 손상에서 Kf와 국소 단백질 상태가 함께 변한다면 σ 하나만 바꾼 그래프로 전체 반응을 설명할 수 없다. 물리량의 단위와 유지한 가정을 먼저 쓰고, 실제 병태생리에서 동시에 바뀔 변수를 별도로 표시한다. 단순 모형의 교육적 가치를 살리려면 한계도 함께 이해해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.3751d06b2fa0",
+      "type": "heading",
+      "level": 2,
+      "text": "체액 이동과 임상 추론"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.a8dc302a82ab",
+      "type": "paragraph",
+      "markdown": "혈관 안 액체가 늘었다는 사실과 조직의 수분이 줄었다는 사실은 같은 사건이 아니다. 순환 혈액량·정맥압·장벽·림프 배액이 함께 작용하며, 시간에 따라 분포가 바뀔 수 있다. 수액이나 단백질 제제의 효과를 교질삼투압 하나로 단순히 예측할 수 없는 이유이다. 이 단원은 체액 교환 기전을 설명하며 특정 환자의 수액 종류·용량을 정하는 지침을 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.b.424d1795eb0c",
+      "type": "paragraph",
+      "markdown": "부종을 해석할 때에는 어느 구획의 액체가 늘었는지, 혈관압과 혈장 단백질·장벽·배액 가운데 어떤 변화가 관찰되는지 묻는다. 국소 정맥 폐쇄와 전신적인 나트륨 저류가 같은 분포를 만들지는 않으며 림프 장애는 장기적인 조직 재형성과도 연결될 수 있다. 원인·적응 반응·결과를 구분하면 증상과 검사값을 여러 미세순환 변수에 일관되게 연결할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.diagram.classical-filtration-example",
+      "type": "diagram",
+      "diagramRef": "diagram.classical-filtration-example",
+      "path": "diagrams/diagram.classical-filtration-example.svg",
+      "alt": "고전적 여과식의 압력 비교의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.cardiovascular.microcirculation-glycocalyx.table.compare",
+      "type": "table",
+      "data": {
+        "title": "교환과 부종의 변수",
+        "columns": [
+          "변수",
+          "모형의 의미"
+        ],
+        "rows": [
+          [
+            "Pc−Pi",
+            "정수압 차"
+          ],
+          [
+            "πc−πi",
+            "고전적 교질삼투압 차"
+          ],
+          [
+            "σ",
+            "용질 반사계수"
+          ],
+          [
+            "Kf",
+            "면적·수리전도도 반영"
+          ]
+        ],
+        "notes": "고전적 식의 수치 예와 글리코칼릭스·림프 배액에 관한 설명을 구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/cardiovascular/sections/physiology.cardiovascular.microcirculation-glycocalyx.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "0.05 임의용적단위/min"
+  ],
+  "reviewQuestions": [
+    "question.physiology.cardiovascular.microcirculation-glycocalyx.001",
+    "question.physiology.cardiovascular.microcirculation-glycocalyx.002"
+  ],
+  "relatedLessons": [
+    "physiology.cardiovascular.hemodynamics-resistance",
+    "physiology.cardiovascular.cardiac-output-venous-return"
+  ]
+}

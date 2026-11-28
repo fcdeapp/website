@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.antibodies.effector-fcrn",
+  "subjectId": "immunology",
+  "chapterId": "antibodies",
+  "title": {
+    "ko": "항체의 결합·효과기 기능과 재순환",
+    "en": "Antibody Binding Effector Functions and Recycling"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.antibodies.effector-fcrn.lo.01",
+      "text": "Fab·Fc가 답하는 질문을 구별한다"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.lo.02",
+      "text": "중화·옵소닌·ADCC를 비교한다"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.lo.03",
+      "text": "FcRn의 분포·수명 조절을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.3b3a16b8c8b9",
+      "type": "heading",
+      "level": 2,
+      "text": "붙는 기능과 제거하는 기능"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.358a694c1e24",
+      "type": "paragraph",
+      "markdown": "항체는 가변부를 포함한 Fab 부위로 항원의 특정 구조에 결합하고 Fc 부위로 보체·세포 수용체 등과 상호작용한다. 결합 자체가 독소나 바이러스의 중요한 부위를 가려 중화(neutralization)를 일으킬 수 있지만, 모든 결합 항체가 같은 정도로 중화하는 것은 아니다. 어느 epitope를 어떤 방향으로 점유하는지와 필요한 점유 수준이 다르다. 항체의 혈중 농도와 항원 특이 결합 역가, 중화력은 별도 지표다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.20312baaf6a2",
+      "type": "paragraph",
+      "markdown": "Fc는 표적과 효과기를 연결한다. 포식세포의 Fcγ 수용체는 IgG로 덮인 표적의 섭취를 돕고, 일부 NK세포는 CD16을 통해 ADCC에 참여한다. 보체 활성과도 연결될 수 있다. 항체 동형·아형과 Fc의 당화, 수용체의 분포와 활성·억제 조합이 결과에 영향을 준다. 같은 Fab 특이성을 가진 항체라도 Fc를 바꾸면 기능과 분포가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.8af043a35f48",
+      "type": "heading",
+      "level": 2,
+      "text": "항원 결합의 두 수준"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.8b3b7a17cbef",
+      "type": "paragraph",
+      "markdown": "Affinity는 한 결합 자리와 표적 사이의 상호작용 성질이고 avidity는 여러 결합이 함께 작동하는 전체 결합의 안정성과 관련된다. 다가항체와 표면에 반복된 항원의 조합에서는 한 결합이 풀려도 다른 결합이 남아 재결합을 도울 수 있다. 따라서 단일 결합의 Kd와 입자·세포 표면에서 관찰한 결합 안정성이 같지 않을 수 있다. 항원 밀도와 배치가 검사 결과를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.78219cfd22b0",
+      "type": "paragraph",
+      "markdown": "결합 검사는 고정된 항원, 용액 항원과 세포 표면 등 조건에 따라 서로 다른 결과를 낼 수 있다. 고정 과정에서 생체에서 숨겨져 있던 구조가 드러날 수도 있다. 양성 결합을 실제 감염 보호나 조직 손상의 직접 증거로 해석하기 전에 표적 접근성과 기능을 확인한다. 자가항체도 질환의 원인, 연관 표지와 우연한 검출을 구분해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.2bf971aa0923",
+      "type": "heading",
+      "level": 2,
+      "text": "FcRn은 다른 Fc 수용체다"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.0ae5c438454c",
+      "type": "paragraph",
+      "markdown": "Neonatal Fc receptor(FcRn)는 IgG의 세포 내 분류·재순환과 운반에 관여한다. 산성 endosomal 환경에서 IgG를 붙잡고 분해 경로로 가는 것을 줄인 뒤, 중성 환경에서 방출하는 기전이 IgG 수명 유지에 기여한다. Fcγ 수용체의 세포 활성화와는 다른 역할이다. 이름에 Fc가 들어간다는 이유만으로 모두 포식이나 ADCC를 유도한다고 생각하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.1c56fa5291e4",
+      "type": "paragraph",
+      "markdown": "FcRn은 모체 IgG의 태반 전달과도 관련된다. 영아에서 측정한 IgG가 모두 영아 B세포가 새로 만든 항체는 아니며 투여된 면역글로불린도 측정에 포함될 수 있다. 혈중 항체가 유지된다는 사실과 자가 생산 능력은 다른 질문이다. 연령과 수동 전달·치료 이력을 함께 고려해야 면역결핍 검사의 의미를 이해할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.cd2b89d9519c",
+      "type": "heading",
+      "level": 2,
+      "text": "생성과 제거를 함께 본다"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.7c65354baef2",
+      "type": "paragraph",
+      "markdown": "항체 농도 C의 단순 수지 dC/dt=P−kC에서 P는 생산, k는 유효 제거상수다. 장수명 형질세포가 생산을 유지하면 항원이 없어도 항체가 지속될 수 있다. 반대로 생산 세포가 남아 있어도 소실이 증가하면 농도가 낮아질 수 있다. 실제 생체에는 여러 구획·재순환과 동형별 차이가 있으므로 한 지수식으로 모든 면역글로불린을 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.b.75162f0fef64",
+      "type": "paragraph",
+      "markdown": "치료 항체를 평가할 때는 표적 결합뿐 아니라 조직 접근, Fc 기능과 제거, 면역원성 등을 함께 본다. 시험관 중화가 우수하더라도 충분한 농도가 필요한 부위에 도달하는지는 별도 문제다. 반대로 같은 혈중 농도에서도 표적의 밀도·변형과 효과기 세포의 상태가 반응을 바꾼다. 항체의 성능을 단일 결합 수치로 순위화하지 않는 것이 약리학과 면역학을 연결하는 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.diagram.immune-antibody-production-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-antibody-production-toy",
+      "path": "diagrams/diagram.immune-antibody-production-toy.svg",
+      "alt": "항체 농도와 지속 생산의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.antibodies.effector-fcrn.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "Fab",
+            "항원 인식·결합"
+          ],
+          [
+            "Fcγ 수용체",
+            "세포 효과기 기능과 연결"
+          ],
+          [
+            "FcRn",
+            "IgG 분류·재순환과 운반"
+          ],
+          [
+            "Affinity·avidity",
+            "단일 결합과 다중 결합의 전체 안정성"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/antibodies/sections/immunology.antibodies.effector-fcrn.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.antibodies.effector-fcrn.001",
+    "question.immunology.antibodies.effector-fcrn.002"
+  ],
+  "relatedLessons": [
+    "immunology.b-cells.aid-affinity-switch",
+    "immunology.memory.vaccine-response-layers"
+  ]
+}

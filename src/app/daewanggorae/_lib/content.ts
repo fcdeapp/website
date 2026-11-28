@@ -39,7 +39,11 @@ export async function readText(path: string) {
   const response = await fetch(await fileURL(path));
   if (!response.ok)
     throw new Error("자료를 불러오지 못했습니다. 다시 시도해 주세요.");
-  return response.text();
+  const bytes = await response.arrayBuffer();
+  const file = (await getManifest()).files[path];
+  const digest = Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", bytes))).map(b=>b.toString(16).padStart(2,"0")).join("");
+  if (bytes.byteLength !== file.bytes || digest !== file.sha256) throw new Error("자료 파일이 변경되었거나 손상되었습니다. 다시 불러와 주세요.");
+  return new TextDecoder().decode(bytes);
 }
 export const content = new ContentRepository({ readText }, 32);
 export const getCatalog = () => content.read<Catalog>("compiled/catalog.json");
@@ -75,6 +79,7 @@ export type ModelIndex = Record<
     bytes: number;
     bounds: { min: number[]; max: number[] };
     originalPath: string;
+    sourceSha256?: string;
   }
 >;
 export const getModels = () => content.read<ModelIndex>("compiled/models.json");

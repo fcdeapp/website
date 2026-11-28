@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.transplant.hla-antibody-assays",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.transplant.hla-antibody-assays.b.81dca269c8fc",
+      "sourceSha256": "81dca269c8fcd9e3d96ae4231c0f455de98d721c85a21bb3cfe6de012b62927f",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.hla-antibody-assays.b.efa2caf98873",
+      "sourceSha256": "efa2caf988737a71960c21716585332077ca29131b00b933d1ebbea63446df07",
+      "sourceLengthUtf16": 164,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.hla-antibody-assays.b.e9248a1fb3b5",
+      "sourceSha256": "e9248a1fb3b5a8aeed9586fef88d7322a8d4d6791d09efd60d7bebf30a144189",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.hla-antibody-assays.b.f49494b0f26f",
+      "sourceSha256": "f49494b0f26fc33e8288760ef4622a96da4457ec3eda2ce929a61c7cb43d898e",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.97e5ec14234133813e05",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 159,
+            "end": 188,
+            "exact": "항체 목록과 공여자 유전형의 정확도가 함께 중요하다.",
+            "prefix": "tope는 충분히 평가되지 않을 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.transplant.hla-antibody-assays.b.b624970fb8af",
+      "sourceSha256": "b624970fb8afdf989fc13fba88db733466ddc6a67805acbdd77bf9b17003a35b",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.e3c6220ebb3c3a32ce6a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 12,
+            "end": 14,
+            "exact": "보체",
+            "prefix": "일부 검체에서는 항체·",
+            "suffix": " 등의 간섭으로 검출 항체의 결합이 방해되어"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.transplant.hla-antibody-assays.b.4a037ede43eb",
+      "sourceSha256": "4a037ede43eb5d5f5dd5f6e05217816785f53cee822f052233c74eee28216023",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.hla-antibody-assays.b.3c6fa646a224",
+      "sourceSha256": "3c6fa646a224ce833e88777a5eba92956ba74f3c83b96715978396c0bf274c97",
+      "sourceLengthUtf16": 158,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.hla-antibody-assays.b.66d027954afd",
+      "sourceSha256": "66d027954afdd160be16e0306eb7ab533cef7b4e4ab466b9fe1812eb9de07c4a",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.transplant.hla-antibody-assays.b.ae2f6e30d79c",
+      "sourceSha256": "ae2f6e30d79c8242a87cee42da8710b1b0c9ed27e38f13f7c6f7641649756ed1",
+      "sourceLengthUtf16": 212,
+      "annotations": [
+        {
+          "id": "ann.eba8b20aa3bc0a3aee47",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 109,
+            "end": 156,
+            "exact": "수치가 감소한 이유가 실제 항체 감소인지 결합·간섭 환경의 변화인지를 구분해야 한다.",
+            "prefix": "과 미세혈관·침착 소견은 별도로 추적한다. ",
+            "suffix": " MFI를 임의의 보편적 처방 절단값으로 사"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

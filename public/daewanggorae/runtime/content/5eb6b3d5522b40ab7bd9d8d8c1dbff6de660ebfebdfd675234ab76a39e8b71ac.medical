@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.autonomic.catecholamine-turnover",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.51b6e94dc33c",
+      "sourceSha256": "51b6e94dc33ca0845f52f1f7fad6ebf0632e3a87b794f8ebc3c85aa2d09bca10",
+      "sourceLengthUtf16": 272,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.3014e5ae62ba",
+      "sourceSha256": "3014e5ae62ba8a4cd29b1c21caaf5d9585c06a846a18f123d4ca20f623dae068",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.37af186eb7a9",
+      "sourceSha256": "37af186eb7a96fa0037caeb1603cc1710dceaabe56879036932acb3d495ee2d8",
+      "sourceLengthUtf16": 183,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.30a58e4fcf36",
+      "sourceSha256": "30a58e4fcf36aa142b04a096ae8a9b4376784342f123a50f98c14545fdf4c3e0",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.58fc31cf53c5",
+      "sourceSha256": "58fc31cf53c53745402b5788ea60541b899710c56c51d5cbc0b9907601c50aa3",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.220f1e75d99fad780042",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 167,
+            "end": 194,
+            "exact": "소포·세포질·세포외 조직과 장기 처리를 구별한다.",
+            "prefix": "해가 시냅스틈에서만 일어나는 것은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.27f26fbfcc5a",
+      "sourceSha256": "27f26fbfcc5a8db779c820b7f1a8b7a22549bb74f325c0b03f98eb152719c114",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.4065370b9d86",
+      "sourceSha256": "4065370b9d86ffd0e885c11d3aa08c89a74130bbdfc22b27b5871929623f8427",
+      "sourceLengthUtf16": 175,
+      "annotations": [
+        {
+          "id": "ann.ed4f5071a8aaa04e6d20",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 44,
+            "end": 47,
+            "exact": "약동학",
+            "prefix": "는 저장량 변화,수용체 탈감작,신호 조절과 ",
+            "suffix": " 변화가 관여할 수 있다. 빠른 반응 감소를"
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.33776788cad2",
+      "sourceSha256": "33776788cad280a6dcf3e25905cdde1d78bd7e1dd92461be5c6c890ed225f40b",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.619edcdf662b",
+      "sourceSha256": "619edcdf662b272bcc0191ad99a4fe83d90d975e5e53528a1bb6a370f8caeb11",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.autonomic.catecholamine-turnover.b.f4b7ea8cd366",
+      "sourceSha256": "f4b7ea8cd36641278d3b993f82bd0669916f804a4d7686a50ffda1da7a5a4db5",
+      "sourceLengthUtf16": 164,
+      "annotations": [
+        {
+          "id": "ann.906828592c6f74b3f1db",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 52,
+            "exact": "자료를 해석할 때에는 분비된 양,시냅스외 농도,저장량,대사체,최종 장기 반응을 각각 구별한다.",
+            "prefix": "",
+            "suffix": " 하나가 증가했다고 모두 같은 방향으로 같은"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

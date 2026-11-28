@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.hypersensitivity.eosinophil-late-phase",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.hypersensitivity.eosinophil-late-phase.b.ebe191fcae60",
+      "sourceSha256": "ebe191fcae608f9b27ca77ffabf791c4478ac010240d5926d0e819607b7ea938",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.199566175fce6b11f02d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 191,
+            "end": 213,
+            "exact": "반응의 시작과 지속·재활성화를 구별한다.",
+            "prefix": "이 그 시점에 처음 생겼다는 뜻도 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.eosinophil-late-phase.b.758c363c612c",
+      "sourceSha256": "758c363c612cce08c9dec43732bb6cfa4bd658e4d1a68f18018e391d21185d05",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.75b96b5521655a20defb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 154,
+            "end": 203,
+            "exact": "특정 사이토카인 하나가 검출되었다는 사실만으로 생산 세포를 한 계통으로 확정하지 않는다.",
+            "prefix": "포 반응이 적응면역 반응과 함께 작동한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.eosinophil-late-phase.b.ef2496e7455d",
+      "sourceSha256": "ef2496e7455d841a03bbe3c6288e67a0ddc4ce2c42400725856cbe30e7edf835",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.eosinophil-late-phase.b.4bc5b29525df",
+      "sourceSha256": "4bc5b29525df2d6c5f1efc224c5456018f1252cb98db1a2449f70a7747ad49c0",
+      "sourceLengthUtf16": 170,
+      "annotations": [
+        {
+          "id": "ann.a6f99050c3833c128426",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 20,
+            "end": 23,
+            "exact": "CSF",
+            "prefix": "조직에 도착한 뒤에도 IL-3·GM-",
+            "suffix": " 등과 국소 환경이 생존을 바꿀 수 있다. "
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.eosinophil-late-phase.b.73b1ec64c2e7",
+      "sourceSha256": "73b1ec64c2e72b965e1dc6fa981d80437c2564dfcd0f1f7111c9088b40f7b11d",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.06c9a54bf07d449f8b7f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 154,
+            "end": 217,
+            "exact": "단순히 호산구가 많으면 그만큼 과립이 밖으로 방출되었다고 볼 수는 없으므로 세포 수와 활성·방출 지표를 구분한다.",
+            "prefix": "토카인의 생성도 주변 세포와 상호작용한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.hypersensitivity.eosinophil-late-phase.b.0b228d9cb2d1",
+      "sourceSha256": "0b228d9cb2d108d1e50466b54aa0c0a09cc1c3a4b33164d5ab06153456b124b0",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.eosinophil-late-phase.b.aa3c37066617",
+      "sourceSha256": "aa3c370666171343d906d1e37f7e0e79fc2cce15c7c76bdad610712695393ce9",
+      "sourceLengthUtf16": 218,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.hypersensitivity.eosinophil-late-phase.b.a6e15c8b4463",
+      "sourceSha256": "a6e15c8b4463dc55ae0cccb9accf05fe3ad301665c6127e0e0d83512e420d5f1",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    }
+  ]
+}

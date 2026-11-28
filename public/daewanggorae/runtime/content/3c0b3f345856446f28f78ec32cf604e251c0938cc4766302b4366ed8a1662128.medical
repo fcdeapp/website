@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neuroscience.motor.basal-ganglia-cerebellum",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.b.76bef97b34dc",
+      "sourceSha256": "76bef97b34dc679a4c2b96e39d49d9ab56885dfb3c705564ca379a000e15c5f0",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.f561db2e4bcd4e3fe18f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 43,
+            "end": 46,
+            "exact": "기저핵",
+            "prefix": " 힘과 속도·방향을 조정하는 과정에는 피질·",
+            "suffix": "·소뇌·뇌간·척수가 함께 참여한다. 근육에 "
+          },
+          "conceptId": "reader.term.f86911b56a42fbf2",
+          "targetDocumentId": "neuroanatomy.forebrain.basal-ganglia"
+        },
+        {
+          "id": "ann.cfe4d89c79d789a9f99c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 47,
+            "end": 49,
+            "exact": "소뇌",
+            "prefix": "속도·방향을 조정하는 과정에는 피질·기저핵·",
+            "suffix": "·뇌간·척수가 함께 참여한다. 근육에 도달하"
+          },
+          "conceptId": "reader.term.4799594fa35f4571",
+          "targetDocumentId": "neuroanatomy.cerebellum.cortex-connections"
+        },
+        {
+          "id": "ann.7a308bbecbbb69ba7694",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 104,
+            "end": 154,
+            "exact": "힘이 약한 상태와 힘은 보존되지만 시작이 느리거나 방향·시간이 맞지 않는 상태는 구별한다.",
+            "prefix": "는 이 여러 회로와 감각 되먹임의 결과다. ",
+            "suffix": " 한 동작의 실패만으로 하나의 구조를 확정하"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.b.ac7bbecd2574",
+      "sourceSha256": "ac7bbecd25749a260d79509c5f4bf7b3aa666bc7a498a2d0361b10d7b4240530",
+      "sourceLengthUtf16": 163,
+      "annotations": [
+        {
+          "id": "ann.9639ada57d6ae0b6e626",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 103,
+            "end": 128,
+            "exact": "발병 시기와 급성기·만성기의 차이도 중요하다.",
+            "prefix": "사·근위축과 약화의 조합에서 단서를 준다. ",
+            "suffix": " 같은 위치의 손상도 시간에 따라 진찰 소견"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.b.ae0398dd7e7f",
+      "sourceSha256": "ae0398dd7e7ffc4696c9beddef79ee98bc1dcae5dc93653b2f5d214d0631a4d0",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.b.9ca5d444a442",
+      "sourceSha256": "9ca5d444a4426a672e60efbc168c08a84e3b61aa29b9d0d6e2b85f86797acf12",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.b.afa65a29afd2",
+      "sourceSha256": "afa65a29afd24ff688005646f2deaf9d65378f5f6c07c440dc8f79e9108d68b7",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.b.8376f0288539",
+      "sourceSha256": "8376f0288539147221bec730c332b6cffeb0b867fc738c9dce5de41b9be9b234",
+      "sourceLengthUtf16": 166,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.b.6025f3d2574f",
+      "sourceSha256": "6025f3d2574f5eb34d6e5066cb98484535811ac9226f515c68fe9e5abbfbd1bc",
+      "sourceLengthUtf16": 166,
+      "annotations": [
+        {
+          "id": "ann.49de76e5f54168da324d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 55,
+            "end": 99,
+            "exact": "도파민 차단 약물의 운동 이상과 기저 질환·대사·퇴행 및 구조 병변을 구별한다.",
+            "prefix": "진단 전체를 자동 확정하는 검사는 아니다. ",
+            "suffix": " 치료의 목표는 관찰된 동작뿐 아니라 낙상·"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.b.806266b3fc4c",
+      "sourceSha256": "806266b3fc4c7114143b0005436452db953de25a43410bf03e01125352cefe73",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.supp.792384d08688",
+      "sourceSha256": "792384d08688408a7cc78024fe53cd4f3fa7785c57fad04f0d685d4e181dbed1",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.motor.basal-ganglia-cerebellum.supp.4d4a37f99e65",
+      "sourceSha256": "4d4a37f99e65563af5e0f98b67b764495dd14e8a3acbd780bbb6aea0d031db74",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    }
+  ]
+}

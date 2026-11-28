@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "laboratory-medicine.quality.preanalytics",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "laboratory-medicine.quality.preanalytics.b.1a0ecd1590fd",
+      "sourceSha256": "1a0ecd1590fdeec4741e8294919c1d56a5ce2fb57d4fddaa117faadae45be82d",
+      "sourceLengthUtf16": 228,
+      "annotations": [
+        {
+          "id": "ann.a4ba4b15d30d90e602b8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 106,
+            "end": 139,
+            "exact": "채혈관 종류와 첨가제, 혼합, 보관 온도와 지연도 중요하다.",
+            "prefix": "약물은 검사별로 다른 영향을 줄 수 있다. ",
+            "suffix": " 검체에 적힌 환자 정보가 틀리면 분석 장비"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "laboratory-medicine.quality.preanalytics.b.9c266e332b32",
+      "sourceSha256": "9c266e332b3202f2f5a582cca0611697340db345a542bedc496c8f385d2a4eef",
+      "sourceLengthUtf16": 263,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.quality.preanalytics.b.8f863d8041fb",
+      "sourceSha256": "8f863d8041fbf0fdd5368d5e86eee141a1ba299faf5432ebeb27a6869a925dfe",
+      "sourceLengthUtf16": 218,
+      "annotations": [
+        {
+          "id": "ann.e27748d65f367e5f4cd1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 36,
+            "exact": "정확도(accuracy)와 정밀도(precision)는 구분한다.",
+            "prefix": "",
+            "suffix": " 반복 측정값이 가깝다고 참값에 가까운 것은"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "laboratory-medicine.quality.preanalytics.b.b4807042df5b",
+      "sourceSha256": "b4807042df5b39db65b5c215e5e31fe72350d1fbe3039ad20815d2720e30f027",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.quality.preanalytics.b.6da0c20265a7",
+      "sourceSha256": "6da0c20265a72b01cd9a0832f2958fa3ece7d7929f08d4b8192de3472553495d",
+      "sourceLengthUtf16": 243,
+      "annotations": [
+        {
+          "id": "ann.6f7b1fd88dfe9bf28bd7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 185,
+            "end": 243,
+            "exact": "많은 검사를 동시에 하면 우연히 구간을 벗어나는 값이 나올 가능성이 커지므로 사전 임상 질문이 중요하다.",
+            "prefix": "법에 따라 적절한 구간이 달라질 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "laboratory-medicine.quality.preanalytics.b.3735079c0c57",
+      "sourceSha256": "3735079c0c57eb71ddf01542a9746de1700450d8d2614d300861acd160111bb3",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "laboratory-medicine.quality.preanalytics.b.f4c299e86a21",
+      "sourceSha256": "452bd6e97392a657488cc285fb1b8b1139a686a7c832227c4bba3336004f7edc",
+      "sourceLengthUtf16": 149,
+      "annotations": []
+    }
+  ]
+}

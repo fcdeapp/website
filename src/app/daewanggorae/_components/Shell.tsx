@@ -57,7 +57,7 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           /\/(subject|chapter|lesson)(?:\/|$)/.test(path)) ||
         (slug === "questions" && path.includes("/quiz")) ||
         (slug === "study" &&
-          /\/(review|bookmarks|statistics|plan|account|settings|terms|sources)$/.test(
+          /\/(review|history|bookmarks|statistics|plan|account|settings|terms|sources)$/.test(
             path,
           ))
       : path === "/daewanggorae";

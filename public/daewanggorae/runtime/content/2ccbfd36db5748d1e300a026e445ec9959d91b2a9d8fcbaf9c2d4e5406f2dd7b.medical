@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.autonomic-transmitter-pairs",
+  "lessonId": "physiology.neuro.autonomic-control",
+  "title": "연결 단계와 대표 전달",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "교감·부교감 절전 ACh",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "신경절 니코틴성 빠른 전달",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "많은 교감 절후 NE",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "아드레날린수용체 반응",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "콜린성 교감 땀샘",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "ACh·무스카린 반응",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.autonomic-transmitter-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "연결 단계",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.autonomic-transmitter-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "표적·수용체 의존",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.autonomic-transmitter-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "계통 예외",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "대표관계의비교다. 모든자율반응을두전달물질로환원하지않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.electrocardiography.rate-interval-measurement",
+  "subjectId": "cardiology",
+  "chapterId": "electrocardiography",
+  "title": {
+    "ko": "심박수·간격과 기록 조건의 측정",
+    "en": "Measuring Heart Rate and ECG Intervals"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.lo.01",
+      "text": "기록 속도와 시간 단위를 변환한다"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.lo.02",
+      "text": "규칙·불규칙 리듬의 측정을 구별한다"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.lo.03",
+      "text": "PR·QRS·QT의 대상을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.a73d2c9e27ca",
+      "type": "heading",
+      "level": 2,
+      "text": "길이를 시간으로 바꾸기"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.ad4ac10a5c28",
+      "type": "paragraph",
+      "markdown": "심전도의 가로 길이는 기록 속도로 시간에 대응시킨다.25mm/s 조건에서1mm는0.04s이고5mm는0.20s다.50mm/s이면 같은 길이가 절반의 시간에 해당한다. 모양이 길어 보인다는 인상보다 실제 속도와 표시 단위를 확인해야 한다. 디지털 확대 배율은 기록 당시의 시간축과 다르며 화면에서 늘어난 길이를 같은 종이 눈금으로 읽지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.1ee2db53e4ec",
+      "type": "paragraph",
+      "markdown": "세로 높이는 전압 이득에 따른다. 같은 파형이 높아 보여도 이득·전극 접촉과 몸통의 전달 조건이 영향을 준다. 기저선 흔들림과 필터는 작은 파형의 시작·끝을 흐릴 수 있다. 수치를 잰 뒤에는 생리적 변화와 기록 조건의 변화를 분리한다. 자동 기기가 제공한 숫자도 이런 경계를 적절히 인식했는지 검토할 수 있어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.1b6731ab2a33",
+      "type": "heading",
+      "level": 2,
+      "text": "간격의 역수와 평균 속도"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.7c767059470a",
+      "type": "paragraph",
+      "markdown": "규칙적 리듬에서 RR을 초 단위로 재면 심실 박동수는60/RR이다. RR=0.75s이면80회/분이다. 단위 없이 칸 수를 분모에 넣으면 틀린 값이 된다. 조기박동이나 탈락 박동이 끼었는지와 규칙성이 유지되는지도 확인한다. 단일 간격이 관찰 기간의 전체 리듬을 대표하지 못하는 경우가 있기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.817c7c0c0ae9",
+      "type": "paragraph",
+      "markdown": "불규칙 리듬에서는 일정 시간의 QRS 수로 평균 박동수를 추정한다. 평균이 같아도 긴 휴지기와 짧은 간격이 섞인 정도는 다를 수 있다. 역수 관계 때문에 각 RR에서 계산한 심박수의 평균과 전체 시간에서 센 평균 박동수는 항상 같지 않다. 평균과 간격 분포를 함께 보면 두근거림·실신과 혈역학의 차이를 설명하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.ded15085c299",
+      "type": "heading",
+      "level": 2,
+      "text": "각 간격이 담는 단계"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.0bd871f1272b",
+      "type": "paragraph",
+      "markdown": "PR은 심방 탈분극의 시작부터 심실 탈분극의 시작까지이며 방실결절만의 순수 전도시간과 같지 않다. QRS 폭은 심실 활성화의 시간적 분포를 반영하고 QT는 탈분극에서 재분극 끝까지를 포함한다. 넓은 QRS 때문에 QT가 길어진 경우와 재분극 자체의 지연은 구별해야 한다. 한 간격이 길다는 사실만으로 이상 위치를 하나로 정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.1b58c380e4ec",
+      "type": "paragraph",
+      "markdown": "P파나 T파가 작거나 겹치면 경계 설정에 차이가 생긴다. 여러 유도와 연속 박동, 이전 기록을 대조하고 자동값을 확인한다. U파와 T파의 구분도 QT 측정에 영향을 준다. 노이즈 때문에 보이지 않는 활동과 실제 활동의 부재를 구별해야 한다. 같은 박동을 다른 판독자가 쟀을 때의 차이도 결과의 불확실성에 포함된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.7ca578d655ea",
+      "type": "heading",
+      "level": 2,
+      "text": "보정식의 전제"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.68f96575e3e1",
+      "type": "paragraph",
+      "markdown": "QT는 심박수에 따라 달라져 여러 QTc 보정식이 사용된다. 보정은 특정 관계를 근사하는 작업이며 모든 빈도에서 오차를 없애지는 않는다. 빠르거나 불규칙한 리듬에서는 선택한 박동과 식을 명시한다. 서로 다른 식으로 계산한 수치 차이를 새롭게 생긴 심근 상태 변화로 오인하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.b.79b4e5977c80",
+      "type": "paragraph",
+      "markdown": "측정 문제에는 기록 속도·시간·전압의 단위를 명확히 제시한다. 실제 환자 판독에는 나이와 리듬·전도·약물과 임상 상태가 더해진다. RR–심박수 곡선은 역수 관계를 설명하는 수학 자료이며 환자의 파형이나 치료 시작값이 아니다. 정상 심장 모델의 회전·확대는 전극의 관찰 방향을 설명할 수 있어도 간격을 실제로 측정한 검사를 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.paragraph.extension0828",
+      "type": "paragraph",
+      "markdown": "불규칙한 RR 두 간격이 각각 0.5초와 1.5초인 가상 기록을 생각하면, 두 주기의 총시간은 2초이고 전체 시간에서 구한 평균 심박수는 2/2×60=분당 60회다. 반면 각 간격의 역수로 얻은 120회와 40회를 산술평균하면 80회다. 짧은 간격의 큰 환산값에 긴 간격과 같은 가중치를 부여했기 때문에 차이가 생긴다. 전체 평균이 목적이면 총 관찰 시간에 대한 실제 주기 수를 사용하고, 순간적 변동이 목적이면 각 간격을 따로 보고한다. 한 가지 평균을 다른 정의의 평균과 교환해서는 안 된다. 기록 양 끝에서 불완전한 주기를 어떻게 처리했는지도 짧은 표본의 계산에 영향을 준다. 이 예시는 간격의 역수와 시간 가중의 수학적 차이를 보여 주며 임상적 심방세동을 확진하는 파형은 아니다."
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "시간축",
+            "종이 속도·디지털 눈금 확인"
+          ],
+          [
+            "심박수",
+            "규칙 RR에서60/RR(s)"
+          ],
+          [
+            "PR",
+            "심방에서 심실 활성화까지의 합친 지표"
+          ],
+          [
+            "QTc",
+            "보정식과 단위 명시"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.electrocardiography.rate-interval-measurement.diagram.rr-heart-rate-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.rr-heart-rate-toy",
+      "path": "diagrams/diagram.rr-heart-rate-toy.svg",
+      "alt": "RR 간격과 환산 심박수의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/electrocardiography/sections/cardiology.electrocardiography.rate-interval-measurement.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.electrocardiography.rate-interval-measurement.001",
+    "question.cardiology.electrocardiography.rate-interval-measurement.002"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.refractoriness-conduction",
+    "cardiology.arrhythmias.narrow-complex-differential"
+  ]
+}

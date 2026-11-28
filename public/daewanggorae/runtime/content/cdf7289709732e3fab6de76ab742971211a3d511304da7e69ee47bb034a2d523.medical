@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.inflammation.complement-kinin-crossroads",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.inflammation.complement-kinin-crossroads.b.f5a5fffe2a2d",
+      "sourceSha256": "f5a5fffe2a2dbf279e65c5d12280633becfa38f54bb5bd828a798db0c4867c7c",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.7279ef10f5078ecb517f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 53,
+            "end": 63,
+            "exact": "complement",
+            "prefix": " 활성화되는 여러 방어 체계가 있다. 보체(",
+            "suffix": "), 키닌(kinin), 응고와 섬유소용해는"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        },
+        {
+          "id": "ann.3f1b46b8ad12e3967ebb",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 81,
+            "end": 86,
+            "exact": "섬유소용해",
+            "prefix": "lement), 키닌(kinin), 응고와 ",
+            "suffix": "는 독립된 목록이 아니라 서로 영향을 주는 "
+          },
+          "conceptId": "reader.term.d74688e1467be81c",
+          "targetDocumentId": "hematology.hemostasis.platelet-coagulation"
+        },
+        {
+          "id": "ann.056e83a51292a4144093",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 157,
+            "end": 188,
+            "exact": "그만큼 반응의 위치와 지속을 제한하는 억제체가 중요하다.",
+            "prefix": "활성화하므로 작은 자극이 증폭될 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.complement-kinin-crossroads.b.c358b2da1c7b",
+      "sourceSha256": "c358b2da1c7b60d07e877c3a189601d3c7bc8bda794881a57b86d69033057dd1",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.complement-kinin-crossroads.b.735fca00a551",
+      "sourceSha256": "735fca00a551936bc6aee06d03fa3e2e0abe554dfbe35a910e56ccf9b952c470",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.685213d4ac7fccb728db",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 25,
+            "exact": "C5a는 호중구의 유인·활성에 중요한 신호다.",
+            "prefix": "",
+            "suffix": " 그러나 감염 부위로 세포를 유도하는 기능과"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.complement-kinin-crossroads.b.2df700081d08",
+      "sourceSha256": "2df700081d0812eb9c09c8d538b496cab5e3321662bbf7ae9dbe2a15e679632f",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.complement-kinin-crossroads.b.4190452309e4",
+      "sourceSha256": "4190452309e438e420858f4ea66408f180c2bce7b13ce18901e45d8077b0b911",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.complement-kinin-crossroads.b.9af69cfee248",
+      "sourceSha256": "9af69cfee248c550e10334eb01109a21077b139008ba3c617fc484c02e1df989",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.complement-kinin-crossroads.b.1c75dfb23438",
+      "sourceSha256": "1c75dfb234388007920c67fe8355a42c0edf774d4601a788e7e283b18caebc0d",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.complement-kinin-crossroads.b.24ac57b7f56c",
+      "sourceSha256": "24ac57b7f56cd1633e29351edb1e4f70887c367967fd8b375083ff512f7050d4",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.9fbdb4cec7bd5dd65f67",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 88,
+            "exact": "체내에서 활성화된 산물과 채취 뒤 시험관에서 생긴 산물을 구별해야 한다.",
+            "prefix": "혈 후 시간이 결과에 영향을 줄 수 있다. ",
+            "suffix": " 총 단백질 농도, 기능 검사와 절단 산물 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

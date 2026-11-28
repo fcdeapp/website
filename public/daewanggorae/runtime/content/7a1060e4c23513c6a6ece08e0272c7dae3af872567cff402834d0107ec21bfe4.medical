@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "biochemistry.metabolism.fed-fasting-integration",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.025bedf93daa",
+      "sourceSha256": "025bedf93daa6c7017bce9e96d12b7b46602184a718c6abc7c80fd3cd85c8a6b",
+      "sourceLengthUtf16": 241,
+      "annotations": [
+        {
+          "id": "ann.56245e09c80ac13b7a12",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 211,
+            "end": 215,
+            "exact": "글리코젠",
+            "prefix": "복 시간을 하나의 숫자로 정해 모든 사람의 ",
+            "suffix": " 고갈과 케톤 이용을 동일하게 예측하지 않는"
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.61d46a9f40ce",
+      "sourceSha256": "61d46a9f40cee9ee69bb46fc41ea256e81630b9fe9bbf0240e428f11fcfabdb8",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.27b2a8bc9b6c20b0aab7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 137,
+            "end": 194,
+            "exact": "장기별 순유출을 읽을 때에는 세포 안에서 일어나는 경로와 혈액으로 실제 공급하는 결과를 구별해야 한다.",
+            "prefix": " 아니라 조건에 따라 당신생에도 기여한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.5dc1db6634da",
+      "sourceSha256": "5dc1db6634da72209bd87473128db6948824d6610b8d811e7f25dbd3718a467d",
+      "sourceLengthUtf16": 174,
+      "annotations": [
+        {
+          "id": "ann.380a3a4a232321678511",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 52,
+            "exact": "해당과정",
+            "prefix": "케톤체를 산화하여 ATP를 얻을 수 없다. ",
+            "suffix": "으로 포도당을 분해하고 젖산을 내보내며, 이"
+          },
+          "conceptId": "reader.term.ae7821eb164e43a8",
+          "targetDocumentId": "biochemistry.carbohydrate.glycolysis"
+        },
+        {
+          "id": "ann.c5c7f5408974ef656f7f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 155,
+            "end": 162,
+            "exact": "산화적 인산화",
+            "prefix": " 적혈구의 산소 운반 기능과 산소를 이용한 ",
+            "suffix": " 능력은 다른 문제다."
+          },
+          "conceptId": "reader.term.5fc2ffe077b5ada0",
+          "targetDocumentId": "biochemistry.bioenergetics.oxidative-phosphorylation"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.8d870568944a",
+      "sourceSha256": "8d870568944af7665f5a2492dc52fe508d0d9e86062277426bb908497c46a64a",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.ef376c03c380",
+      "sourceSha256": "ef376c03c380bf5c19dd1f7e51366c5811cb82b29aa974acf4e880596eea04cb",
+      "sourceLengthUtf16": 219,
+      "annotations": [
+        {
+          "id": "ann.44ea8944c764fee98f17",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 120,
+            "exact": "간의 포도당6인산가수분해효소(glucose-6-phosphatase) 계통과 근육의 차이가 중요한 이유다.",
+            "prefix": "는 주로 근육 내부 에너지 공급에 쓰인다. ",
+            "suffix": " 근육 저장량이 많다는 사실만으로 그 포도당"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.de6a5ff40a05",
+      "sourceSha256": "de6a5ff40a05fd0f357b176463bf07d55a71c669daee4a653335291a3fa2c986",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.c285936e6919",
+      "sourceSha256": "c285936e691962b5106f451ca5b4218d2257ef0e9e0e04f540ab094b61e8b558",
+      "sourceLengthUtf16": 228,
+      "annotations": [
+        {
+          "id": "ann.537149136de8099ea9e1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 84,
+            "end": 90,
+            "exact": "지방산 산화",
+            "prefix": "에서 당신생의 탄소원으로 이용될 수 있다. ",
+            "suffix": "는 간에 ATP와 환원력을 공급하고, 아세틸"
+          },
+          "conceptId": "reader.term.0ba7fa5b933b185a",
+          "targetDocumentId": "biochemistry.lipids.fatty-acid-oxidation"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.26a8c7a07fa8",
+      "sourceSha256": "26a8c7a07fa8579aeec6a3c71c1aa4235880005d50241907a60518f09bb9b097",
+      "sourceLengthUtf16": 244,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.e063112fd15b",
+      "sourceSha256": "e063112fd15b1cb0355b448022b6f63e5ca415f6ab6e2ea6359e49d03bc769f7",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.3741a6b92a14",
+      "sourceSha256": "3741a6b92a140cbc2b58e3354bfaea924f782ca768bb5d3c990850e12440c815",
+      "sourceLengthUtf16": 156,
+      "annotations": []
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.96a697962599",
+      "sourceSha256": "96a697962599dee7cb7cf2c3a3c17444dde61130faf6f2f4a56c42c665e09e4c",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.fe20c7ef13842773e4a6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 107,
+            "end": 167,
+            "exact": "혈당이 거의 일정하더라도 유입과 유출이 모두 큰 상태일 수 있고, 같은 농도가 대사 정지를 의미하지 않는다.",
+            "prefix": "산하여52라고 쓰면 유입을 빠뜨린 것이다. ",
+            "suffix": " 이 모형은 단위와 수지를 확인하기 위한 독"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "biochemistry.metabolism.fed-fasting-integration.b.60168d16a374",
+      "sourceSha256": "60168d16a3749a96e7ec6d42d5480b8d5e61efaa3af199c8951f1bf10a4916bc",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.d73d2f503c5c05723c2a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 144,
+            "end": 148,
+            "exact": "요소회로",
+            "prefix": "은 단원별로 배운 해당·당신생·지방산 산화·",
+            "suffix": "가 실제로 동시에 작동하는 상황을 이해하게 "
+          },
+          "conceptId": "reader.term.06c0340a087289d4",
+          "targetDocumentId": "biochemistry.amino-acids.urea-cycle"
+        }
+      ]
+    }
+  ]
+}

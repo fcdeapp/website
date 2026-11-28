@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.basal-indirect-path",
+  "lessonId": "neuroanatomy.forebrain.basal-ganglia",
+  "title": "바닥핵 간접 경로의 연결 부호",
+  "nodes": [
+    {
+      "id": "cortex",
+      "label": "대뇌겉질 입력",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "d2",
+      "label": "줄무늬체 간접 경로 뉴런",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "gpe",
+      "label": "GPe",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "stn",
+      "label": "시상밑핵 STN",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "gpi",
+      "label": "GPi·SNr",
+      "x": 360,
+      "y": 680,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "thalamus",
+      "label": "운동 관련 시상",
+      "x": 360,
+      "y": 830,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "return",
+      "label": "대뇌겉질로 돌아가는 입력",
+      "x": 360,
+      "y": 980,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.basal-indirect-path.edge.1",
+      "source": "cortex",
+      "target": "d2",
+      "relation": "directed",
+      "label": "흥분"
+    },
+    {
+      "id": "diagram.basal-indirect-path.edge.2",
+      "source": "d2",
+      "target": "gpe",
+      "relation": "inhibitory",
+      "label": "GABA"
+    },
+    {
+      "id": "diagram.basal-indirect-path.edge.3",
+      "source": "gpe",
+      "target": "stn",
+      "relation": "inhibitory",
+      "label": "GABA"
+    },
+    {
+      "id": "diagram.basal-indirect-path.edge.4",
+      "source": "stn",
+      "target": "gpi",
+      "relation": "directed",
+      "label": "흥분"
+    },
+    {
+      "id": "diagram.basal-indirect-path.edge.5",
+      "source": "gpi",
+      "target": "thalamus",
+      "relation": "inhibitory",
+      "label": "GABA"
+    },
+    {
+      "id": "diagram.basal-indirect-path.edge.6",
+      "source": "thalamus",
+      "target": "return",
+      "relation": "directed",
+      "label": "흥분"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 1120
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 1120
+      },
+      "fontSize": 22,
+      "nodes": {
+        "cortex": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "d2": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "gpe": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "stn": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        },
+        "gpi": {
+          "x": 240,
+          "y": 680,
+          "width": 360,
+          "height": 88
+        },
+        "thalamus": {
+          "x": 240,
+          "y": 830,
+          "width": 360,
+          "height": 88
+        },
+        "return": {
+          "x": 240,
+          "y": 980,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "D2·도파민 조절, 초직접 경로, 되먹임과 시간적 동역학은 이 연결도에서 생략한다."
+  ],
+  "sourceImageUsed": false
+}

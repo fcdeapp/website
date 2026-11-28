@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.chromatin-mechanism-pairs",
+  "lessonId": "molecular-biology.gene-expression.chromatin-regulation",
+  "title": "염색질 조절의 세 기전",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "ATP 의존 리모델링",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "위치·점유·구성 변화",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "히스톤 화학 수식",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "잔기·표지 인식 변화",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "DNA 메틸화",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "영역·세포 맥락의 조절",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.chromatin-mechanism-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "구조 조절",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.chromatin-mechanism-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "writer/eraser/reader",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.chromatin-mechanism-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "히스톤 수식과구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "모든수식을동일방향의전사스위치로보지않는다. 측정상관과인과를구별한다."
+  ],
+  "sourceImageUsed": false
+}

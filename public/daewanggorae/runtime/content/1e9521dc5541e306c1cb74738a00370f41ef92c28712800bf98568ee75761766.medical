@@ -1,0 +1,131 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology",
+  "title": {
+    "ko": "일반병리학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "pathology.chapter.cell",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/cell/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.inflammation",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.neoplasia",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/neoplasia/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.repair",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/repair/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.hemodynamics",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/hemodynamics/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.immunity",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/immunity/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.proteins",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/proteins/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.genetic",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/genetic/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.environmental",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/environmental/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.nutrition",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/nutrition/chapter.json"
+    },
+    {
+      "id": "pathology.chapter.shock",
+      "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/shock/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "pathology.plan.001",
+    "pathology.plan.002",
+    "pathology.plan.003",
+    "pathology.plan.004",
+    "pathology.plan.005",
+    "pathology.plan.006",
+    "pathology.cell.injury-death",
+    "pathology.inflammation.acute-chronic",
+    "pathology.neoplasia.growth-control",
+    "pathology.cell.adaptation-injury-mechanisms",
+    "pathology.cell.ischemia-reperfusion-mechanisms",
+    "pathology.inflammation.mediators-leukocyte-recruitment",
+    "pathology.repair.matrix-remodeling-fibrosis",
+    "pathology.cell.accumulations-calcification",
+    "pathology.hemodynamics.edema-fluid-balance",
+    "pathology.hemodynamics.thrombosis-embolism",
+    "pathology.hemodynamics.shock-perfusion-injury",
+    "pathology.immunity.hypersensitivity-mechanisms",
+    "pathology.proteins.amyloid-deposition",
+    "pathology.neoplasia.invasion-metastasis",
+    "pathology.neoplasia.microenvironment-angiogenesis",
+    "pathology.genetic.molecular-diagnostics",
+    "pathology.environmental.toxic-injury",
+    "pathology.environmental.radiation-injury",
+    "pathology.nutrition.undernutrition-refeeding",
+    "pathology.nutrition.obesity-metabolic-injury",
+    "pathology.genetic.congenital-disease",
+    "pathology.genetic.variant-phenotype",
+    "pathology.genetic.chromosomal-dosage",
+    "pathology.nutrition.thiamine-deficiency",
+    "pathology.nutrition.cobalamin-folate",
+    "pathology.nutrition.ascorbate-connective-tissue",
+    "pathology.nutrition.fat-soluble-vitamins",
+    "pathology.genetic.repeat-expansion",
+    "pathology.hemodynamics.thrombus-evolution",
+    "pathology.hemodynamics.coagulation-control",
+    "pathology.hemodynamics.fibrinolysis-markers",
+    "pathology.hemodynamics.dic-consumption",
+    "pathology.hemodynamics.microangiopathic-injury",
+    "pathology.shock.circulatory-failure",
+    "pathology.shock.oxygen-budget",
+    "pathology.shock.hypovolemia-response",
+    "pathology.shock.pump-obstruction",
+    "pathology.shock.distributive-dysfunction",
+    "pathology.shock.endothelial-barrier",
+    "pathology.shock.reperfusion-cell-injury",
+    "pathology.shock.renal-tubular-injury",
+    "pathology.shock.lung-barrier-injury",
+    "pathology.shock.cerebral-hypoperfusion",
+    "pathology.shock.hepatic-hypoxia",
+    "pathology.shock.intestinal-barrier",
+    "pathology.shock.lactate-kinetics",
+    "pathology.shock.monitoring-inference",
+    "pathology.shock.multiorgan-recovery",
+    "pathology.shock.acid-base-integration",
+    "pathology.shock.venous-backpressure",
+    "pathology.inflammation.pattern-recognition",
+    "pathology.inflammation.vascular-exudation",
+    "pathology.inflammation.adhesion-cascade",
+    "pathology.inflammation.chemotactic-migration",
+    "pathology.inflammation.opsonin-phagolysosome",
+    "pathology.inflammation.oxidative-killing",
+    "pathology.inflammation.lipid-amine-mediators",
+    "pathology.inflammation.complement-kinin-crossroads",
+    "pathology.inflammation.acute-morphology",
+    "pathology.inflammation.systemic-acute-phase",
+    "pathology.inflammation.resolution-efferocytosis",
+    "pathology.inflammation.chronic-inflammatory-network",
+    "pathology.inflammation.granulomatous-patterns",
+    "pathology.repair.regeneration-cell-cycle",
+    "pathology.repair.angiogenesis-granulation",
+    "pathology.repair.collagen-biosynthesis",
+    "pathology.repair.scar-mechanics",
+    "pathology.repair.delayed-wound-healing",
+    "pathology.repair.wound-measurement-geometry"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.hemodynamics.microangiopathic-injury",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.fc8fb01dcb13",
+      "sourceSha256": "fc8fb01dcb138a6ae61555edb0ed36aebc638b1798c65447bb6252f59d39e734",
+      "sourceLengthUtf16": 262,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.739fef17cb7f",
+      "sourceSha256": "739fef17cb7fd5164623c54a84967f2f65fa5e78e41b359a1416bb516cf153a2",
+      "sourceLengthUtf16": 184,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.d399b4efb08f",
+      "sourceSha256": "d399b4efb08fa00ebec620648aa7c93fcdb38341e9b994f804955e80ae79b32d",
+      "sourceLengthUtf16": 215,
+      "annotations": [
+        {
+          "id": "ann.e035a3fbd565b0567ba8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 173,
+            "end": 215,
+            "exact": "혈소판 중심 상호작용과 fibrin 관련 전신 반응의 차이를 구별해야 한다.",
+            "prefix": "전체의 같은 정도 소모와 동의어가 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.7bc7fc896842",
+      "sourceSha256": "7bc7fc8968428519e120f6c6085066cf0c74a659567352e9223fcb11592a7db9",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.713346cab2dc",
+      "sourceSha256": "713346cab2dc1da1c3823ba3f0acc2474893f66da0478237da78c4661166dbed",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.4c2d4d4c0b7c",
+      "sourceSha256": "4c2d4d4c0b7cf49f91d10fb835b3cb3c14a487ac899f9a1ca657db726423a01e",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.bf9deed976b7",
+      "sourceSha256": "bf9deed976b72af867a0efdc6405a09a753b17b49eee65306521d22dcf312d08",
+      "sourceLengthUtf16": 201,
+      "annotations": [
+        {
+          "id": "ann.191adaa38dc0546b88d1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 20,
+            "end": 22,
+            "exact": "보체",
+            "prefix": "Shiga toxin 관련 HUS, ",
+            "suffix": " 조절과 연관된 TMA, 임신 관련 상태와 "
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.80350d1ae62c",
+      "sourceSha256": "80350d1ae62cdcb3ebc016428323e6a47de0d37a078215a52d8b20f33609a281",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.db9d4ae2bf35acd00944",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 107,
+            "end": 111,
+            "exact": "aPTT",
+            "prefix": "부 TMA 감별에 도움이 되지만 정상 PT·",
+            "suffix": "만으로 TTP를 확진하지 않는다. 두 과정이"
+          },
+          "conceptId": "reader.term.2c463235cb32480d",
+          "targetDocumentId": "laboratory-medicine.coagulation.pt-aptt-patterns"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.0ca940fef7be",
+      "sourceSha256": "0ca940fef7be9c13afc33043085efe4d6cf13abe434291be95dba5c9011839ac",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.microangiopathic-injury.b.f07192b88aa5",
+      "sourceSha256": "f07192b88aa5c3c57b5a1233e032c32a74567aa21294c76c903115b715ef0bf1",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    }
+  ]
+}

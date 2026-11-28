@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.respiratory.alveolar-equation-deadspace",
+  "subjectId": "physiology",
+  "chapterId": "respiratory",
+  "title": {
+    "ko": "사강·폐포환기와 폐포기체방정식",
+    "en": "Dead Space and Alveolar Gas Equations"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.lo.01",
+      "text": "분당환기량과 폐포환기량의 차이를 계산한다"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.lo.02",
+      "text": "이산화탄소 생성과 환기의 정상상태 물질수지를 설명한다"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.lo.03",
+      "text": "흡입 산소·기압·이산화탄소가 폐포 산소분압에 미치는 영향을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.b350390b03c0",
+      "type": "heading",
+      "level": 2,
+      "text": "공기를 움직인 양과 유효 환기"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.d908397c7e75",
+      "type": "paragraph",
+      "markdown": "분당환기량(minute ventilation)은 일회호흡량 VT와 분당 호흡수 f의 곱이다. 그러나 한 호흡에서 움직인 공기가 모두 폐포의 가스교환에 참여하지는 않는다. 해부학적 사강은 코·기관·기관지 등 전도기도의 공기 부피와 관련되고, 폐포사강은 환기는 되지만 가스교환에 효과적으로 참여하지 못하는 폐포 단위의 기여이다. 생리적 사강은 두 요소를 포함한다. 전도기도가 가스교환을 하지 않는다는 말은 가온·가습·방어 같은 기능까지 없다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.5bb2e9510c07",
+      "type": "paragraph",
+      "markdown": "사강부피 VD를 단순하게 한 호흡마다 일정하다고 가정하면 폐포환기량은 (VT−VD)×f이다. 이 식에서 VD는 부피이고 분당 사강환기는 VD×f이므로 두 변수를 같은 단위로 사용하면 안 된다. 실제 VD는 자세·호흡량·장비·폐 질환에 따라 달라질 수 있다. 따라서 계산 예시의 고정된 사강을 모든 사람에게 적용하는 정상 표준으로 오인하지 않는다. 사강 추정 방법 자체의 차이도 해석에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.1dcf283227b4",
+      "type": "paragraph",
+      "markdown": "VT=0.50 L, VD=0.15 L, f=12/min인 모형의 분당환기량은 6.0 L/min이고 폐포환기량은 4.2 L/min이다. 같은 분당환기량을 VT=0.30 L, f=20/min으로 만들면 폐포환기량은 3.0 L/min이다. 더 빠르게 호흡해도 사강으로 움직이는 비중이 커져 유효 환기가 감소할 수 있다. 호흡수가 높다는 소견과 과환기는 동의어가 아니며, 대사성 이산화탄소 생성에 비해 폐포환기가 충분한지를 판단해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.73dede836a4e",
+      "type": "heading",
+      "level": 2,
+      "text": "이산화탄소의 물질수지"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.ac321e5fca42",
+      "type": "paragraph",
+      "markdown": "정상상태에서 몸이 만드는 이산화탄소와 폐를 통해 내보내는 양이 같다면 폐포 이산화탄소분압은 생성량에 비례하고 폐포환기량에 반비례한다. VCO₂를 STPD 기준 L/min, 폐포환기량 VA를 BTPS 기준 L/min으로 표현할 때 PACO₂≈863×VCO₂/VA(mmHg)로 계산할 수 있다. 863은 서로 다른 온도·압력·습도 기준을 연결하는 환산 상수이다. VCO₂를 mL/min으로 넣는 형태에서는 0.863을 사용하므로 입력 단위를 바꾸면서 상수를 그대로 두면 천 배의 오류가 난다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.abdf76361d0e",
+      "type": "paragraph",
+      "markdown": "VCO₂=0.20 L/min, VA=4.0 L/min이면 모형의 PACO₂는 약43.2 mmHg이다. 생성량을 그대로 두고 VA를 8.0 L/min으로 늘리면 약21.6 mmHg로 줄고, VA를 유지하면서 생성량을 두 배로 하면 분압도 두 배가 된다. 이 관계는 정상상태의 평균 물질수지이며 갑작스러운 환기 변화 직후의 저장량 변화와 여러 폐 단위의 불균일성을 모두 포함하지 않는다. 동맥 PaCO₂를 폐포 값의 근사로 사용할 때에도 혼합과 가스교환 상태를 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.17e599d8a901",
+      "type": "heading",
+      "level": 2,
+      "text": "사강의 서로 다른 추정"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.afbe18511bfd",
+      "type": "paragraph",
+      "markdown": "Bohr 접근에서는 이상적으로 폐포 이산화탄소분압과 혼합호기 이산화탄소분압을 비교하여 사강 비율을 추정한다. 임상에서 동맥 PaCO₂를 대신 쓰는 Enghoff 변형은 사강뿐 아니라 환기관류 불균형과 단락의 영향도 포함할 수 있다. 두 값이 비슷한 상황이 있더라도 개념적으로 동일한 순수한 해부학적 부피 측정은 아니다. 측정된 지표가 어떤 가정을 통해 계산되었는지 먼저 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.2d042347828e",
+      "type": "paragraph",
+      "markdown": "환기는 되지만 관류가 없는 극한에서는 V/Q가 매우 커져 폐포사강의 개념과 연결된다. 반대로 관류는 되지만 환기가 없는 극한에서는 V/Q가0인 단락 성격의 단위가 된다. 두 상태를 모두 ‘공기가 안 통한다’로 묶으면 기전이 반대가 된다. 실제 폐에는 연속적인 V/Q 분포가 있으며 두 극한만으로 모든 저산소혈증을 설명하지 않는다. 호기말 CO₂와 동맥 CO₂의 차이도 이 불균일성의 영향을 받을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.53b2c5182d2a",
+      "type": "heading",
+      "level": 2,
+      "text": "흡입 공기의 산소분압"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.80316761b899",
+      "type": "paragraph",
+      "markdown": "같은 산소분율 FiO₂라도 전체 기압 PB가 낮아지면 흡입 산소의 분압이 낮아진다. 기도에서37°C로 완전히 가습된 조건의 수증기압을47 mmHg로 두면 PIO₂=FiO₂×(PB−47)이다. 해수면 PB=760 mmHg, FiO₂=0.21이면 약149.7 mmHg이다. 공기의 산소분율21%와 건조 공기의 산소분압, 가습된 흡입 공기의 산소분압은 서로 다른 값이다. 분율과 분압을 같은 숫자 단위로 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.b320a0231e19",
+      "type": "paragraph",
+      "markdown": "폐포에는 산소가 혈액으로 이동하고 이산화탄소가 유입되는 과정이 있어 폐포 산소분압은 가습된 흡입 산소분압보다 낮아진다. 흔히 사용하는 근사식은 PAO₂≈FiO₂(PB−PH₂O)−PaCO₂/R이다. 여기서 R은 이산화탄소 배출과 산소 섭취의 비율을 반영하는 값으로 학습 예시에서는0.8로 둔다. 높은 흡입 산소나 특수한 비정상상태 등에서는 더 완전한 식과 측정 조건을 고려해야 하므로 이 식을 모든 상황에서 오차 없는 항등식으로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.e01e7dbcff9d",
+      "type": "paragraph",
+      "markdown": "PB=760 mmHg, PH₂O=47 mmHg, FiO₂=0.21, PaCO₂=40 mmHg, R=0.8이면 PAO₂는 약99.7 mmHg이다. 다른 조건을 그대로 두고 PaCO₂가60 mmHg이면 약74.7 mmHg로 줄어든다. 따라서 저환기 자체도 폐포 산소를 낮출 수 있다. 고도를 반영해 PB를600 mmHg로 바꾸되 PaCO₂=40을 유지하는 별도의 모형에서는 약66.1 mmHg이다. 실제 고도 적응에서는 환기와 PaCO₂도 변하므로 이 계산을 실제 사람의 고도별 측정값으로 부르지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.79bd4b30596c",
+      "type": "heading",
+      "level": 2,
+      "text": "폐포와 동맥의 차이"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.a6c28c46033f",
+      "type": "paragraph",
+      "markdown": "PAO₂와 동맥 PaO₂는 같은 변수가 아니다. 폐포기체방정식으로 추정한 값에서 실제 동맥 값을 뺀 A–a 차이는 가스 전달·혼합을 해석하는 도구이다. 나이·흡입 산소·기압·측정 조건에 따라 해석이 달라져 고정된 정상 숫자 하나를 모든 상황에 적용할 수 없다. 낮은 흡입 산소나 단순 저환기와, V/Q 불균형·단락·확산장애가 보이는 전형적 차이를 비교하되 여러 기전이 동시에 존재할 수 있음을 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.b.ed015bfdc588",
+      "type": "paragraph",
+      "markdown": "폐포 산소분압을 올리는 것과 혈액의 산소함량을 높이는 것은 같은 단계가 아니다. 헤모글로빈 농도와 결합 특성, 심박출량도 조직 산소공급에 영향을 준다. 또한 산소 투여가 PaO₂를 개선했다고 이산화탄소 제거가 충분하다는 뜻은 아니다. 환기·산소화·산소운반을 구분하면 혈액가스 수치가 겉보기로 엇갈리는 상황을 이해할 수 있다. 계산값은 가정을 검토하기 위한 도구이며 환자 전체의 평가를 대체하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.diagram.alveolar-ventilation-co2",
+      "type": "diagram",
+      "diagramRef": "diagram.alveolar-ventilation-co2",
+      "path": "diagrams/diagram.alveolar-ventilation-co2.svg",
+      "alt": "폐포환기와 정상상태 CO₂ 분압의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.table.comparison",
+      "type": "table",
+      "data": {
+        "title": "두 호흡 양식의 조건",
+        "columns": [
+          "양식",
+          "VT(L)",
+          "f(/min)",
+          "VD(L)"
+        ],
+        "rows": [
+          [
+            "A",
+            "0.50",
+            "12",
+            "0.15"
+          ],
+          [
+            "B",
+            "0.30",
+            "20",
+            "0.15"
+          ]
+        ],
+        "notes": "VD=0.15 L를 고정한 학습 모형이다. 실제 사강은 조건에 따라 달라질 수 있다."
+      }
+    },
+    {
+      "id": "physiology.respiratory.alveolar-equation-deadspace.equation.core",
+      "type": "equation",
+      "latex": "\\dot V_A=(V_T-V_D)f,\\quad P_{ACO_2}\\simeq\\frac{863\\dot V_{CO_2}}{\\dot V_A}",
+      "variables": {
+        "VA": "폐포환기 (L/min, BTPS)",
+        "VT": "일회호흡량 (L)",
+        "VD": "한 호흡 사강부피 (L)",
+        "f": "호흡수 (/min)",
+        "VCO2": "CO₂ 생성 (L/min, STPD)",
+        "PACO2": "폐포 CO₂ 분압 (mmHg)"
+      },
+      "assumptions": [
+        "정상상태·일정 VD의 모형",
+        "VCO₂가 mL/min이면 상수는0.863이며 단위를 혼용하지 않는다."
+      ]
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/respiratory/sections/physiology.respiratory.alveolar-equation-deadspace.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.physiology.respiratory.alveolar-equation-deadspace.001",
+    "question.physiology.respiratory.alveolar-equation-deadspace.002"
+  ],
+  "keyFacts": [
+    "4.2 L/min, 3.0 L/min"
+  ],
+  "relatedLessons": [
+    "physiology.respiratory.mechanics-compliance",
+    "physiology.respiratory.diffusion-oxygen"
+  ]
+}

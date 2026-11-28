@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.headache.primary-secondary",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.headache.primary-secondary.b.a0d8f76a760a",
+      "sourceSha256": "a0d8f76a760a103d0787d5f424a25e29903117b37327a79fbad7c6f1e1002aed",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.headache.primary-secondary.b.aba5faba40e0",
+      "sourceSha256": "aba5faba40e0ad891d395d66b078a206f5de189042f5d603530b41a97485666e",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.headache.primary-secondary.b.060aceacd253",
+      "sourceSha256": "060aceacd253d403098afb8031403e266c2e9a0ec8aab697a36f803ec424e0be",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.headache.primary-secondary.b.4f7e9697fb54",
+      "sourceSha256": "4f7e9697fb54c9ff8e88e067e6dfcb508ff3cd8477217c2a38a801313fb08b5a",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.headache.primary-secondary.b.e4203108e8c5",
+      "sourceSha256": "e4203108e8c5349b5f13b4ef2a4a686ff45368a0858347fdf21bb80886d27b47",
+      "sourceLengthUtf16": 166,
+      "annotations": [
+        {
+          "id": "ann.0e643c1fe60f7bf18344",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 56,
+            "end": 60,
+            "exact": "뇌척수액",
+            "prefix": " 등 필요한 질문을 확인한다. 영상과 혈액·",
+            "suffix": " 검사는 의심되는 원인과 시점에 맞춰 선택한"
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.headache.primary-secondary.b.8adc8b4d1ff2",
+      "sourceSha256": "8adc8b4d1ff2ad564e6d4b07fd093d17ec81ed677f5688bc6bfb4cc9857dbb69",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.headache.primary-secondary.b.8fef4cebda2d",
+      "sourceSha256": "8fef4cebda2dbf1bdc090edf02e60b96542821b9a3f4f2ceb25bedb08aef78fc",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.headache.primary-secondary.b.42561a3a1b9e",
+      "sourceSha256": "42561a3a1b9e09e5709715ebc7a602c1d826424e31a57142cf053d9614bb205a",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.headache.primary-secondary.supp.1464c921f6ae",
+      "sourceSha256": "1464c921f6ae7e896dcb120f15b2f8741fc483ae013494ea55ad39d12e5844e4",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.headache.primary-secondary.supp.475a0975b132",
+      "sourceSha256": "475a0975b1326d9565943f5f195ad3f2f7e49844408c0fdcf560f9d4757cb64e",
+      "sourceLengthUtf16": 173,
+      "annotations": [
+        {
+          "id": "ann.328442482ce86c3de681",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 45,
+            "exact": "사용일수의 평가에서는 약물군별 노출과 조합,처방·비처방 및 실제 복용을 구별한다.",
+            "prefix": "",
+            "suffix": " 복합제의 여러 성분을 각각 별개의 두통일수"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

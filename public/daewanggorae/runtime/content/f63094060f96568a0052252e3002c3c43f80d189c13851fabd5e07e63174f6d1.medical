@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.gi-surgery.esophagus.hiatus.normal-context",
+  "sceneId": "scene.gi-surgery.esophagus.hiatus.normal-context",
+  "lessonId": "gi-surgery.esophagus.structure-function",
+  "triggerBlockId": "gi-surgery.esophagus.structure-function.b.e3f57abd866e",
+  "primaryStructures": [
+    "FMA7131",
+    "FMA7148"
+  ],
+  "contextStructures": [
+    "FMA13295"
+  ],
+  "highlightStructures": [
+    "FMA7131"
+  ],
+  "modelIds": [
+    "partof:FJ2563",
+    "partof:FJ2564",
+    "partof:FJ3131"
+  ],
+  "modelPaths": [
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ2563.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ2564.obj",
+    "bodyparts3d/partof_BP3D_4.0_obj_99/partof_BP3D_4.0_obj_99/FJ3131.obj"
+  ],
+  "cameraPosition": [
+    -0.732999999999997,
+    -1036.490500605215,
+    1188.121
+  ],
+  "cameraTarget": [
+    -0.732999999999997,
+    -115.6194,
+    1188.121
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraView": "anterior",
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -122.329,
+      -205.323,
+      985.852
+    ],
+    "max": [
+      120.863,
+      -25.9158,
+      1390.39
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "정상 식도·위·횡격막의 거시 위치 관계",
+  "mappingConfidence": "exact_attachment_ids_bounds_and_hashes_verified_visual_review_pending",
+  "verificationStatus": "attachment_metadata_bounds_and_file_hash_verified",
+  "visualizationLimitations": [
+    "정상 정적 장기이며 식도 벽층·하부괄약근·횡격막 다리를 각각 분할한 모델이 아니다.",
+    "열공탈장·염전·이완불능증·천공·암·수술 후 변형·장기 운동과 환자별 시술 경로를 재현하지 않는다.",
+    "원본 좌표와 경계 상자로 카메라를 계산했으며 실제 WebGL·전문의 시각 검수는 남아 있다."
+  ],
+  "dynamicAnatomyIncluded": false
+}

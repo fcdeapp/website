@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.thiamine-reaction-pairs",
+  "lessonId": "pathology.nutrition.thiamine-deficiency",
+  "title": "티아민의 반응과 결과",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "PDH·αKGDH 등",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "탄소 흐름·산화 대사",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "Transketolase",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "비산화적 탄소 재배치",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "영양 위험·임상 소견",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "검사와 신속한 대응",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.thiamine-reaction-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "연료량과 이용 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.thiamine-reaction-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "직접 NADPH 생성 아님",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.thiamine-reaction-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "삼징후의 한계",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "독립기전도다.실제투여량·응급처치순서알고리즘을표시하지않는다."
+  ],
+  "sourceImageUsed": false
+}

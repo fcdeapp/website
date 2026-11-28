@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.narrow-complex-differential",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "좁은 QRS 빈맥의 기전별 감별",
+    "en": "Differentiating Narrow Complex Tachycardias"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.lo.01",
+      "text": "규칙성과 심방·심실 관계를 평가한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.lo.02",
+      "text": "폭과 발생 위치의 차이를 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.lo.03",
+      "text": "치료 반응의 진단적 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.caed6bebdc0d",
+      "type": "heading",
+      "level": 2,
+      "text": "환자의 상태와 리듬"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.5e56f92bce98",
+      "type": "paragraph",
+      "markdown": "빈맥에서는 맥박과 장기 관류, 의식·호흡과 흉부 증상을 먼저 연결한다. 같은 박동수도 전부하·심실 기능과 지속시간에 따라 영향이 다르다. 저관류 환자를 안정된 외래의 분류 문제처럼 다루지 않는다. 리듬을 자세히 분석하는 일과 현재 위험에 대응하는 일은 함께 이루어져야 한다. 전기적 속도와 실제 유효 순환은 같은 측정값이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.97a739f02fc9",
+      "type": "paragraph",
+      "markdown": "좁은 QRS는 심실 활성화가 대체로 빠른 전도계를 이용한다는 단서다. 회로의 모든 부분이 심방에만 있다는 뜻은 아니다. 방실결절회귀와 정상 전도계를 내려가는 방실회귀에서도 QRS가 좁을 수 있다. 반대로 심실상성 리듬도 각차단·변행전도로 넓어질 수 있다. 폭과 기전을 같은 분류로 외우면 예외를 설명하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.52f32594ea89",
+      "type": "heading",
+      "level": 2,
+      "text": "심방과 심실의 관계"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.43bc96b35814",
+      "type": "paragraph",
+      "markdown": "규칙적 빈맥에서는 동성빈맥·심방빈맥·방실결절회귀·방실회귀와 일정 비율로 전도되는 조동을 구별한다. 불규칙하면 세동 외에 가변 방실전도의 조동·심방빈맥과 여러 조기박동도 가능하다. 규칙적이라는 한 단어를 병명 하나와 연결하지 않는다. 충분한 길이의 기록과 시작·종료 부분이 간격 변화를 읽는 데 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.b3ed52db64fb",
+      "type": "paragraph",
+      "markdown": "P파가 QRS 앞·안·뒤 어디에 있는지, 모양과 심방·심실의 수적 관계를 확인한다. P파가 보이지 않는 것은 QRS나 T파에 겹친 결과일 수 있다. 실제 심방 활성과 체표에서 구분되는 파형은 다르다. 여러 유도와 방실전도의 일시적 변화는 숨은 활동을 드러내는 단서가 되지만 판독 조건과 잡음을 함께 점검한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.875989e3c70e",
+      "type": "heading",
+      "level": 2,
+      "text": "시작과 유지의 조건"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.a373529e6e96",
+      "type": "paragraph",
+      "markdown": "서서히 빨라졌다가 느려지는 양상은 자동능을, 갑자기 시작·끝나는 양상은 회귀를 생각하게 할 수 있다. 이런 패턴만으로 모든 기전을 확정하지 않는다. 유발활동과 자율신경·약물이 모양을 바꿀 수 있다. 원래 시작을 관찰하지 못한 기록을 갑작스러운 시작이라고 단정해서도 안 된다. 증상 발생과 기기 기록이 시작된 시점도 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.4a45960d1067",
+      "type": "paragraph",
+      "markdown": "방실결절 전도를 일시적으로 늦추면 심방 활동이 드러나거나 방실결절이 필요한 회로가 중단될 수 있다. 그러나 특정 약물 반응이 언제나 하나의 기전만을 뜻하지 않는다. 일부 심방 기원 활동도 반응할 수 있고 심방 리듬은 남은 채 심실 전도만 줄 수 있다. 심방 활성의 변화와 심실 반응의 변화를 따로 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.ca6f5d5e40be",
+      "type": "heading",
+      "level": 2,
+      "text": "감별을 행동으로 연결하기"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.d714b7903f73",
+      "type": "paragraph",
+      "markdown": "동성빈맥은 통증·발열·저혈량·저산소혈증 등에 대한 보상일 수 있다. 숫자만 낮추면 원인을 놓칠 수 있다. 반면 빠른 리듬 자체가 기능 저하에 기여하는 경우도 있다. 원인과 결과의 양방향 관계를 환자 상태와 시간 경과로 평가한다. 검사실·심초음파와 병력은 전기 기록만으로 설명되지 않는 배경을 보완한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.b.a23128acb131",
+      "type": "paragraph",
+      "markdown": "최종 감별에는12유도·연속 기록과 필요한 경우 전기생리 검사가 연결된다. 좁은 QRS라는 이유로 안전성을 보증하지 않는다. 심방·방실결절·심실의 순서를 분리한 사다리 도식은 기전에 도움이 된다. 정상 육안 메시만으로 회로 방향과 불응기가 실제 표현된다고 설명하지 않으며 구조의 위치와 동적 전기 현상을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.narrow-complex-differential.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "규칙성",
+            "RR와 심방 주기를 별도 확인"
+          ],
+          [
+            "짧은 RP",
+            "AVNRT 등 단서; 단독 확진 아님"
+          ],
+          [
+            "P파 지속·QRS 감소",
+            "심방 발생원과 방실 출력 구별"
+          ],
+          [
+            "불안정성",
+            "진단명과 별도로 관류 평가"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.narrow-complex-differential.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.narrow-complex-differential.001"
+  ],
+  "relatedLessons": [
+    "cardiology.electrocardiography.rate-interval-measurement",
+    "cardiology.arrhythmias.avnrt"
+  ]
+}

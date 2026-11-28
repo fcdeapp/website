@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.roux-food-biliopancreatic-0849",
+  "lessonId": "gi-surgery.stomach.reconstruction-flow",
+  "title": "전절제 뒤 두 흐름의 합류",
+  "nodes": [
+    {
+      "id": "e",
+      "label": "식도",
+      "x": 165,
+      "y": 90,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "a",
+      "label": "음식 사지",
+      "x": 165,
+      "y": 300,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "d",
+      "label": "십이지장",
+      "x": 535,
+      "y": 90,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "b",
+      "label": "담췌액 사지",
+      "x": 535,
+      "y": 300,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "j",
+      "label": "합류 뒤 소장",
+      "x": 350,
+      "y": 550,
+      "width": 320,
+      "height": 92
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.roux-food-biliopancreatic-0849.e0",
+      "source": "e",
+      "target": "a",
+      "label": "음식",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.roux-food-biliopancreatic-0849.e1",
+      "source": "a",
+      "target": "j",
+      "label": "음식 흐름",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.roux-food-biliopancreatic-0849.e2",
+      "source": "d",
+      "target": "b",
+      "label": "담췌액",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.roux-food-biliopancreatic-0849.e3",
+      "source": "b",
+      "target": "j",
+      "label": "분비물 흐름",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 700,
+      "height": 680
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 650,
+        "height": 680
+      },
+      "fontSize": 22,
+      "nodes": {
+        "e": {
+          "x": 153.21428571428572,
+          "y": 90,
+          "width": 220.8,
+          "height": 92
+        },
+        "a": {
+          "x": 153.21428571428572,
+          "y": 300,
+          "width": 220.8,
+          "height": 92
+        },
+        "d": {
+          "x": 496.7857142857143,
+          "y": 90,
+          "width": 220.8,
+          "height": 92
+        },
+        "b": {
+          "x": 496.7857142857143,
+          "y": 300,
+          "width": 220.8,
+          "height": 92
+        },
+        "j": {
+          "x": 325.0,
+          "y": 550,
+          "width": 294.40000000000003,
+          "height": 92
+        }
+      }
+    }
+  },
+  "limitations": [
+    "독립 학습용 연결 관계이며 실제 장 길이·문합 위치·회전·혈류·수술 순서·시술 경로를 정하지 않는다.",
+    "정상 BodyParts3D를 재건·장루 모형으로 변형하지 않았다."
+  ],
+  "sourceImageUsed": false
+}

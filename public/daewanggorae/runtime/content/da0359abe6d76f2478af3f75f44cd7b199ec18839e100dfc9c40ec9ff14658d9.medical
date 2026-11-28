@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.cap-diagnosis-severity",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.b.c00e02f54663",
+      "sourceSha256": "c00e02f54663cef4463db2b630c7cf8f22de2706b0026b37a2cc13dfe9eafa3f",
+      "sourceLengthUtf16": 215,
+      "annotations": [
+        {
+          "id": "ann.b095c6e04dbe89f778af",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 123,
+            "end": 126,
+            "exact": "심부전",
+            "prefix": "의 영상 근거를 연결한다. 급성 기관지염과 ",
+            "suffix": "·폐색전·출혈 등 비슷한 양상을 구별한다. "
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.31771282a55dce1c7199",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 114,
+            "end": 149,
+            "exact": "급성 기관지염과 심부전·폐색전·출혈 등 비슷한 양상을 구별한다.",
+            "prefix": "증상에 실질 침범의 영상 근거를 연결한다. ",
+            "suffix": " 고령과 면역저하, 조기 검사와 탈수 등에서"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.b.cc913f5a3205",
+      "sourceSha256": "cc913f5a3205b5f213024e364a2503d36d5e5eb8e2de58c69b4310534a414483",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.8ff847d0e9ed02a62cdd",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 46,
+            "end": 48,
+            "exact": "흉막",
+            "prefix": "에 맞게 선택한다. 폐초음파는 접근 가능한 ",
+            "suffix": " 가까운 병변과 액체 등 정보를 줄 수 있지"
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.b.91e3b1a613ff",
+      "sourceSha256": "91e3b1a613ffba16ff25084d98dc30c0e254511afceed6185989a7f372cf5a03",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.b.1ddde2d6e7e0",
+      "sourceSha256": "1ddde2d6e7e008bea0e1a12e2accf090420621bf3531afe4f6826f9d5ad885cd",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.b.aa6353f83fe4",
+      "sourceSha256": "aa6353f83fe475d24adb03561e869bfeb955e38b5478e202cdcdab25da2706aa",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.b.070bb17aafbc",
+      "sourceSha256": "070bb17aafbcb5c844d0d6d2c936c2e1e7d7803d9a4bf63840d0e5a9453dffd3",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.b.452581d80614",
+      "sourceSha256": "452581d8061496c5950c88d3e3e7d09015a53c992dc050a25463de3106d76e58",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.b.123e851de9a6",
+      "sourceSha256": "123e851de9a66d1478edf6cdd1c29dedcdbaf190ac6d505cc5414c6165446d70",
+      "sourceLengthUtf16": 187,
+      "annotations": [
+        {
+          "id": "ann.3345fd7de379634d4892",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 55,
+            "exact": "지역사회에서 생겼다는 이름은 흔한 원인을 정리하지만 균종과 감수성, 환자별 위해를 확정하지 않는다.",
+            "prefix": "",
+            "suffix": " 최근 입원·항균제와 이전 미생물, 지역 역"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.p.extra0846.0",
+      "sourceSha256": "b339dd03d94fe144b35d915a5ba8a40f758b4c5e5997355191ae3dbf985d0ed3",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.9b7ed1fbd94ec1ecf73b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 100,
+            "end": 152,
+            "exact": "젊은 환자에서 나이 관련 점수가 작아도 빠르게 악화하는 저산소와 호흡 작업은 중요한 위험이다.",
+            "prefix": "지를 평가하는 판단은 같은 목표가 아니다. ",
+            "suffix": " 점수의 낮은 숫자를 실제 관찰보다 우선시하"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.cap-diagnosis-severity.p.extra0846.1",
+      "sourceSha256": "f5a17a19e07e90ca78a584c711e9ea227d9b6ecc11428675de242da6fe345b90",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    }
+  ]
+}

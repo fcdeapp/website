@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neonatology.glucose.transition-risk",
+  "subjectId": "neonatology",
+  "chapterId": "glucose",
+  "title": {
+    "ko": "신생아 포도당 전환과 저혈당의 평가",
+    "en": "Neonatal Glucose Transition and Hypoglycemia"
+  },
+  "learningObjectives": [
+    {
+      "id": "neonatology.glucose.transition-risk.lo.01",
+      "text": "출생 전후 포도당 공급의 변화를 설명한다"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.lo.02",
+      "text": "혈당의 시점·측정과 임상 상태를 통합한다"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.lo.03",
+      "text": "일시적 변화와 지속성 원인을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neonatology.glucose.transition-risk.b.7fd35856ac06",
+      "type": "heading",
+      "level": 2,
+      "text": "공급 경로의 전환"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.be82964d599c",
+      "type": "paragraph",
+      "markdown": "태아는 태반을 통해 모체에서 포도당을 공급받는다. 출생과 탯줄 결찰 뒤에는 이 연속 공급이 끊기고 간의 저장과 포도당 생성, 지방과 다른 연료·수유가 에너지 균형에 기여해야 한다. 호르몬의 변화와 효소·저장량, 체온·호흡과 활동의 부담은 전환 과정에 영향을 준다. 출생 뒤의 혈당은 성인의 공복 상태와 같은 조건으로만 해석할 수 없다. 생후 시간과 위험 요인, 먹기와 실제 임상 상태를 함께 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.88a85b29ae75",
+      "type": "paragraph",
+      "markdown": "미숙과 작은 체격·성장 문제, 모체 당뇨와 주산기 스트레스 등은 저장과 생성·소비 및 인슐린 조절의 다른 경로로 위험을 바꿀 수 있다. 위험 요인이 있다는 사실만으로 저혈당을 확정하지 않고, 위험 요인이 없다고 모든 증상성 저혈당을 배제하지 않는다. 저체온과 감염·호흡곤란, 약물과 내분비·대사 질환도 고려한다. 출생 체중의 크기만으로 신생아의 실제 대사 적응을 대표하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.930679b2c451",
+      "type": "heading",
+      "level": 2,
+      "text": "숫자와 신경 기능"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.059f31b7ecc6",
+      "type": "paragraph",
+      "markdown": "낮은 혈당이 뇌 기능에 미치는 영향은 정도와 지속·반복, 다른 연료와 산소·혈류 및 동반 질환에 따라 달라질 수 있다. 한 숫자로 모든 신경 손상의 유무를 확정하거나 안전한 시간을 정하지 않는다. 떨림과 반응 저하·수유 곤란, 무호흡과 경련 같은 증상은 저혈당 외의 원인에서도 나타난다. 현재의 기능과 혈당을 평가하면서 감염·전해질·신경계 등의 감별을 병행한다. 증상이 뚜렷한 환아의 필요한 처치를 확진 검사만 기다리며 미루지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.e08dc20ba715",
+      "type": "paragraph",
+      "markdown": "진단과 중재에 쓰는 기준은 생후 시간·위험군·증상과 적용 지침에 따라 차이가 있다. 선별 검사와 치료 시작, 지속성 질환 평가의 경계를 한 값으로 합치지 않는다. 현장에서 사용하는 기준과 검사법, 재측정과 치료 반응의 기록이 중요하다. 해외 지침의 한 숫자를 국내 모든 신생아의 공통 정상치로 제시하면 안 된다. 수치의 의미와 실제 의사결정의 목적을 구별하여 학습한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.ec10162c413f",
+      "type": "heading",
+      "level": 2,
+      "text": "측정 방법과 검체"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.8607fbe771a2",
+      "type": "paragraph",
+      "markdown": "현장 혈당기는 빠른 정보를 제공하지만 낮은 범위와 신생아의 헤마토크릿·검체 조건에서 정확도의 제한이 있을 수 있다. 전혈과 혈장, 채혈과 분석의 시간·처리가 결과를 바꾼다. 낮은 측정값은 방법의 한계를 고려하여 확인하되 임상적으로 필요한 조치를 부적절하게 지연하지 않는다. 손끝의 작은 수치 차이를 생리의 큰 변화로 단정하지 않고 동일한 조건과 추세를 함께 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.442c6b3af6c1",
+      "type": "paragraph",
+      "markdown": "수유 전후와 마지막 수유 시각, 실제 섭취와 구토·호흡, 포도당 투여가 측정에 미친 영향을 기록한다. 검체를 언제 채취했는지 모르면 원인 해석과 치료 반응의 평가가 어려워진다. 수유를 했다는 사실과 충분한 양을 실제로 먹고 흡수했다는 것은 다르다. 경련과 반응 저하가 있는 환아에게 먹이기만 시도하는 것이 안전한지도 별도로 판단해야 한다. 기도 보호와 호흡·순환을 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.7a572fd796cb",
+      "type": "heading",
+      "level": 2,
+      "text": "공급과 투여량의 사고"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.0270fe44f2e3",
+      "type": "paragraph",
+      "markdown": "경구·수유 보조와 특정 제제·정맥 포도당은 임상 상태와 적용 근거에 따라 역할이 다르다. 모든 방법을 같은 단계의 처치로 취급하지 않는다. 정맥 공급에서는 용액의 농도와 유속, 체중을 연결하여 포도당 주입률을 계산한다. 농도를 mg/mL, 유속을 mL/h로 곱한 뒤 체중 kg와 60분으로 나누면 mg/kg/min이 된다. 실제 제제와 경로·농도의 안전, 펌프와 정맥로를 확인해야 계산이 실제 공급과 일치한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.30965941810f",
+      "type": "paragraph",
+      "markdown": "가상으로 100mg/mL 용액을 6mL/h, 체중 2kg에 공급한다면 600mg/h를 120kg·min으로 나누어 5mg/kg/min이다. 이 숫자는 단위 연습이며 신생아별 시작량과 목표·증량 속도를 정하지 않는다. 공급을 바꾸면 혈당과 수분·전해질, 실제 투여와 임상 반응을 다시 평가한다. 높은 농도와 빠른 유속은 각각의 다른 부담을 만들 수 있어 필요한 경로와 감시를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.1e3de6782f07",
+      "type": "heading",
+      "level": 2,
+      "text": "지속되는 문제와 추적"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.20db7746b8f9",
+      "type": "paragraph",
+      "markdown": "혈당이 반복해서 낮거나 전환 시기를 넘어 지속하고 많은 공급이 필요하면 인슐린과 내분비·대사 등 원인을 검토한다. 특정 원인 검체는 낮은 혈당 당시의 대사 상태에서 의미가 있을 수 있으므로 채취 계획과 치료의 선후를 전문 팀과 조율한다. 그러나 원인 검사를 위해 위험한 저혈당을 의도적으로 방치하지 않는다. 치료 후 수치 하나가 정상이 되었다는 사실과 원인이 해결되었다는 판단은 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.b.17a666e389e4",
+      "type": "paragraph",
+      "markdown": "수유·체온과 호흡이 안정되고 적절한 관찰과 추적이 가능한지 확인한다. 보호자에게 먹기와 반응·호흡 등 다시 평가할 변화와 실제 수유 방법을 설명한다. 신경 발달의 추적 필요는 손상 위험과 동반 상태에 따라 판단하며 집단의 연관을 개인의 확정적인 예후로 바꾸지 않는다. 정상 신생아·뇌 모형이 있더라도 포도당 이용과 호르몬·신경 기능을 보여 주는 것은 아니므로 시간 자료와 대사 경로를 별도로 설명한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.table0857",
+      "type": "table",
+      "data": {
+        "title": "관찰 자료와 해석의 출발점",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "재태주수",
+            "39주"
+          ],
+          [
+            "생후 시간",
+            "출생 초기"
+          ],
+          [
+            "위험요인",
+            "산모의 당뇨병"
+          ],
+          [
+            "관찰",
+            "수유가 잘 되지 않고 떨림이 있음"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neonatology.glucose.transition-risk.diagram.glucose-infusion-0857",
+      "type": "diagram",
+      "diagramRef": "diagram.glucose-infusion-0857",
+      "path": "diagrams/diagram.glucose-infusion-0857.svg",
+      "alt": "체중별 포도당 공급 계산의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/07-obgyn-pediatrics/subjects/neonatology/chapters/glucose/sections/neonatology.glucose.transition-risk.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neonatology.glucose.transition-risk.001",
+    "question.neonatology.glucose.transition-risk.002"
+  ],
+  "relatedLessons": [
+    "neonatology.temperature.heat-balance",
+    "pediatrics.gastroenteritis.dehydration-assessment"
+  ]
+}

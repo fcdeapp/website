@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery",
+  "title": {
+    "ko": "외과 총론"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "general-surgery.chapter.wound",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/wound/chapter.json"
+    },
+    {
+      "id": "general-surgery.chapter.perioperative",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/perioperative/chapter.json"
+    },
+    {
+      "id": "general-surgery.chapter.assessment",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/assessment/chapter.json"
+    },
+    {
+      "id": "general-surgery.chapter.physiology",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/physiology/chapter.json"
+    },
+    {
+      "id": "general-surgery.chapter.infection",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/infection/chapter.json"
+    },
+    {
+      "id": "general-surgery.chapter.prevention",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/prevention/chapter.json"
+    },
+    {
+      "id": "general-surgery.chapter.recovery",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/recovery/chapter.json"
+    },
+    {
+      "id": "general-surgery.chapter.respiratory",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/respiratory/chapter.json"
+    },
+    {
+      "id": "general-surgery.chapter.technique",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/technique/chapter.json"
+    },
+    {
+      "id": "general-surgery.chapter.acute-abdomen",
+      "path": "domains/06-surgery/subjects/general-surgery/chapters/acute-abdomen/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "general-surgery.plan.001",
+    "general-surgery.plan.002",
+    "general-surgery.plan.003",
+    "general-surgery.plan.004",
+    "general-surgery.plan.005",
+    "general-surgery.plan.006",
+    "general-surgery.wound.healing",
+    "general-surgery.perioperative.wound-healing",
+    "general-surgery.perioperative.surgical-infection",
+    "general-surgery.assessment.risk-benefit-timing",
+    "general-surgery.assessment.cardiopulmonary-reserve",
+    "general-surgery.assessment.frailty-nutrition",
+    "general-surgery.assessment.anemia-hemostasis",
+    "general-surgery.physiology.stress-metabolism",
+    "general-surgery.physiology.fluid-kidney-balance",
+    "general-surgery.wound.hemostasis-inflammation",
+    "general-surgery.wound.proliferation-matrix",
+    "general-surgery.wound.remodeling-scar",
+    "general-surgery.wound.failure-perfusion-pressure",
+    "general-surgery.infection.ssi-depth-evidence",
+    "general-surgery.infection.prevention-antimicrobial",
+    "general-surgery.infection.source-control",
+    "general-surgery.prevention.vte-bleeding-balance",
+    "general-surgery.recovery.ileus-obstruction",
+    "general-surgery.recovery.delirium-function",
+    "general-surgery.respiratory.postoperative-hypoxemia",
+    "general-surgery.respiratory.atelectasis-secretion",
+    "general-surgery.respiratory.aspiration-airway-protection",
+    "general-surgery.respiratory.postoperative-pe-differential",
+    "general-surgery.technique.suture-tissue-mechanics",
+    "general-surgery.technique.drains-fistula-balance",
+    "general-surgery.acute-abdomen.visceral-parietal-pain",
+    "general-surgery.acute-abdomen.peritonitis-contamination"
+  ]
+}

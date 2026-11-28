@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.nutrition.undernutrition-refeeding",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.99869a081b66",
+      "sourceSha256": "99869a081b662c8983d9cb481216563308ffd814b35a7ebeb74c6c74ebf28397",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.fc9839abd210",
+      "sourceSha256": "fc9839abd210fc16306b6a7d1a86ce9acc66c13188dc4cfc45218720115ab551",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.36abafe1772c",
+      "sourceSha256": "36abafe1772cb6947be204600c7edf3c67812309f0ec1d9c0f8ddd67f14d8b7c",
+      "sourceLengthUtf16": 172,
+      "annotations": [
+        {
+          "id": "ann.ed908166a3a4ed83a608",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 11,
+            "end": 15,
+            "exact": "글리코젠",
+            "prefix": "에너지 섭취가 줄면 ",
+            "suffix": "·지방·단백질 대사의 기여가 시간과 질환에 "
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.8e21d92b5028",
+      "sourceSha256": "8e21d92b50283c5bcadd0985d621287d71be33285b811484e4e8a373270dfea6",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.e3dcb4d078db",
+      "sourceSha256": "e3dcb4d078db0b0ae6c47d85c2e42dadc66b14aa66fd2c04811bfeff703a4063",
+      "sourceLengthUtf16": 160,
+      "annotations": [
+        {
+          "id": "ann.091c0ac1c46918277afb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 94,
+            "exact": "낮은 값은 중요한 임상 정보일 수 있지만 단일 영양 섭취량의 직접 측정값은 아니다.",
+            "prefix": "·소실·염증과 수분 상태에 영향을 받는다. ",
+            "suffix": " 정상 알부민도 영양결핍 부재를 보장하지 않"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.6185389a8a5c",
+      "sourceSha256": "6185389a8a5cf2c1cea1bed8f42df756203c5359180c0cfbed07865744b83d70",
+      "sourceLengthUtf16": 170,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.a1ff29fbf2da",
+      "sourceSha256": "a1ff29fbf2dae32983c2b47dcf2786b272857ba209f4a587092445548c0854e9",
+      "sourceLengthUtf16": 175,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.88594f84a3a0",
+      "sourceSha256": "88594f84a3a0114f7d44701d84a9dc537c8fb216fb29891ba72c0816da9d7c75",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.5b93457e0630",
+      "sourceSha256": "5b93457e06304692eb77e36f2d2b6472fff993e6d12762bb37911af45f70fdac",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.nutrition.undernutrition-refeeding.b.6755ac4f6b00",
+      "sourceSha256": "6755ac4f6b00ef92872950e527518eef64ce4ae579442690700a39f1afd269f7",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    }
+  ]
+}

@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import type { Concept, Scene } from "../_lib/types";
 import {
   BASE,
+  content,
   getScene,
   getModels,
   getConcepts,
@@ -12,6 +13,9 @@ import {
 } from "../_lib/content";
 import { useLoad } from "../_lib/hooks";
 import { State, url } from "./UI";
+import { locationOptions } from "../_lib/anatomy/location";
+import palette from "../_lib/anatomy/palette.json";
+import { useRecords, saveRecord } from "../_lib/store";
 import s from "../daewanggorae.module.css";
 export function conceptScene(c: Concept, models: ModelIndex): Scene {
   const ids = (
@@ -107,6 +111,13 @@ function Viewer({
   concepts: Record<string, Concept>;
   catalog: Awaited<ReturnType<typeof getCatalog>>;
 }) {
+  const records = useRecords();
+  const mode = records["preference:anatomy-rendering"]?.data.mode === "anatomical" ? "anatomical" : "default";
+  const mapping = useLoad(() => content.read<Record<string,{materialKey:string;sourceSha256:string}>>("compiled/materials.json"), "materials");
+  const materialKey = (id:string) => mapping.data?.[id]?.sourceSha256 === models[id]?.sourceSha256 ? mapping.data?.[id]?.materialKey : "unclassified";
+  const [locationId,setLocationId] = useState("");
+  const locations = useMemo(() => locationOptions(scene.primaryStructures,concepts,models,scene.modelIds),[scene,concepts,models]);
+  const location = locations.find(l=>l.id===locationId);
   const frame = useRef<HTMLIFrameElement>(null);
   const [ready, setReady] = useState(false),
     [loaded, setLoaded] = useState(0),
@@ -131,7 +142,7 @@ function Viewer({
         return;
       const d = e.data.payload;
       if (d.type === "ready") setReady(true);
-      if (d.type === "loaded") setLoaded((n) => n + 1);
+      if (d.type === "loaded" && !d.context) setLoaded((n) => n + 1);
       if (d.type === "selected") {
         setSelected(String(d.id));
         setSelectedConcepts(Array.isArray(d.conceptIds) ? d.conceptIds : []);
@@ -142,7 +153,7 @@ function Viewer({
     return () => window.removeEventListener("message", receive);
   }, []);
   useEffect(() => {
-    if (!ready) return;
+    if (!ready || !mapping.data) return;
     let active = true;
     const controller = new AbortController();
     setLoaded(0);
@@ -187,6 +198,8 @@ function Viewer({
           id,
           base64: encode(bytes),
           conceptIds: model.conceptIds,
+          materialKey: materialKey(id),
+          highlighted: highlight.has(id),
           color: highlight.has(id)
             ? "#467D9E"
             : primary.has(id)
@@ -212,7 +225,29 @@ function Viewer({
     };
     // The Viewer is keyed by scene ID; scene and model metadata are immutable for its lifetime.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, retry]);
+  }, [ready, retry, mapping.data]);
+  useEffect(() => { if (ready) send({type:"mode",mode}); },[ready,mode]);
+  useEffect(() => {
+    if (!ready || !mapping.data) return;
+    const controller = new AbortController(); let active=true;
+    send({type:"location",sceneId:scene.id,location:location ?? null});
+    if (location) void (async()=>{
+      for (const id of location.modelIds.filter(id=>!ids.includes(id))) {
+        const model=models[id];
+        if(!/^[a-f0-9]+\.glb$/.test(model.file))throw new Error("모델 경로를 확인할 수 없습니다.");
+        const response=await fetch(BASE+"/models/"+model.file,{signal:controller.signal});
+        if(!response.ok)throw new Error("주변 구조를 불러오지 못했습니다.");
+        const bytes=new Uint8Array(await response.arrayBuffer());
+        const digest=Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",bytes))).map(b=>b.toString(16).padStart(2,"0")).join("");
+        if(bytes.length!==model.bytes || digest!==model.sha256)throw new Error("모델 파일이 손상되었습니다.");
+        if(!active)return;
+        send({type:"model",sceneId:scene.id,context:true,id,base64:encode(bytes),conceptIds:model.conceptIds,materialKey:materialKey(id),color:scene.color.context,opacity:0.12});
+      }
+    })().catch(e=>{if(active)setError(String(e));});
+    return ()=>{active=false;controller.abort();};
+    // The scene and metadata stay immutable for this mounted viewer.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[ready,locationId,mapping.data,retry]);
   useEffect(() => {
     send({ type: "style", selected, hidden, isolate, opacity });
   }, [selected, hidden, isolate, opacity, loaded]);
@@ -255,6 +290,12 @@ function Viewer({
           title="대화형 3D 해부학 모델"
         />
       </div>
+      <div className={s.actions} role="group" aria-label="해부학 색상">
+        {(["default","anatomical"] as const).map(value=><button key={value} aria-pressed={mode===value} onClick={()=>void saveRecord("preference","anatomy-rendering",{mode:value}).catch(e=>setError(String(e)))}>{value==="default"?"기본":"해부학 색상"}</button>)}
+        {!!locations.length && <label>주변 구조 <select aria-label="주변 구조 범위" value={locationId} onChange={e=>setLocationId(e.target.value)}><option value="">선택한 구조만</option>{locations.map(l=><option key={l.id} value={l.id}>{l.title}</option>)}</select></label>}
+      </div>
+      {mode==="anatomical" && <details><summary>색상 범례</summary><div className={s.legend}>{[...new Set((location?.modelIds ?? ids).map(materialKey))].map(key=>{const preset=palette.presets[key as keyof typeof palette.presets];return preset?<span key={key}><i style={{background:preset.baseColor}} />{preset.labelKo}</span>:null;})}</div></details>}
+      {mapping.error && <State error={mapping.error} retry={mapping.retry} />}
       <div className={s.actions}>
         <span className={s.muted}>
           {loaded} / {ids.length} 구조
@@ -302,7 +343,7 @@ function Viewer({
             max="1"
             step=".05"
             value={opacity}
-            disabled={!selected}
+            disabled={!selected || !!location}
             onChange={(e) => setOpacity(Number(e.target.value))}
           />
         </label>
@@ -312,7 +353,7 @@ function Viewer({
           <p>
             {selectedConcepts
               .slice(0, 5)
-              .map((id) => concepts[id]?.nameKo || concepts[id]?.nameEn)
+              .map((id) => [concepts[id]?.nameKo, concepts[id]?.nameEn].filter(Boolean).join(" · "))
               .filter(Boolean)
               .join(" · ")}
           </p>

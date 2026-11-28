@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.neurovascular.subarachnoid-hemorrhage",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.2e49890bf3b1",
+      "sourceSha256": "2e49890bf3b1ccb57ca33e14adfdffb36d75dfc90672eb2f64c82efef76fdb5b",
+      "sourceLengthUtf16": 251,
+      "annotations": [
+        {
+          "id": "ann.ead4eaa0a32406f391e7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 38,
+            "end": 42,
+            "exact": "뇌척수액",
+            "prefix": "hnoid hemorrhage, SAH)은 ",
+            "suffix": "이 흐르는 공간에 혈액이 존재하는 상태로, "
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.0d12cf44bddd",
+      "sourceSha256": "0d12cf44bdddf9235443de83d12643695f8ab190437218c1535fc778c28f5616",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.4bf09275e7a1005797c1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 4,
+            "end": 8,
+            "exact": "두개내압",
+            "prefix": "출혈은 ",
+            "suffix": "과 관류, 수막 자극과 뇌척수액 흐름, 전신"
+          },
+          "conceptId": "reader.term.f470c35f2a4dec51",
+          "targetDocumentId": "neurosurgery.physiology.intracranial-pressure"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.1a2218f97090",
+      "sourceSha256": "1a2218f9709031af34b3c4a4aab41d1e185c984481501557491146a30b8cd25e",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.5b0cd5dea932",
+      "sourceSha256": "5b0cd5dea9320e3c92f15a46894ef75adb6f895c22417997cc7b25fad9a16d29",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.19ef19caf2c249dd5412",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 53,
+            "end": 86,
+            "exact": "우연히 존재하는 동맥류와 실제 파열 출혈원을 구별해야 한다.",
+            "prefix": "·위치, 다른 원인과의 일관성을 검토한다. ",
+            "suffix": " 동맥류의 목과 분지·주변 구조, 환자의 상"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.7e2032bf84e2",
+      "sourceSha256": "7e2032bf84e28ffbb1ec8b46e78434943e88f26b7780613fb0ddf28bd50c357a",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.fc92585896b7",
+      "sourceSha256": "fc92585896b73beda478ea771d0e3b8369182e8e8d301daf21c335970bcebd8c",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.d0b52bc566b5",
+      "sourceSha256": "d0b52bc566b50d0ee5d8374db7f8ada710009537eb802349a1b20b2d17df8d3c",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.b26788cbbd1c",
+      "sourceSha256": "b26788cbbd1cacfadf77f05bcc72fce996afe94d94e39f4adb099a7f13b5cd53",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.69f910d98f93",
+      "sourceSha256": "69f910d98f936a182f7a1a7bb7b604dff0a8882469af3e8e5758676886d11434",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.neurovascular.subarachnoid-hemorrhage.b.9ad31c0593e6",
+      "sourceSha256": "9ad31c0593e644c247486e19b3a1efe1f94c4af3a578922162c0826fae235ec3",
+      "sourceLengthUtf16": 206,
+      "annotations": []
+    }
+  ]
+}

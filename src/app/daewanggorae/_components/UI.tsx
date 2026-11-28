@@ -66,6 +66,7 @@ export function State({
   retry?: () => void;
   empty?: string;
 }) {
+  if (!error && !empty) return <div className={s.skeleton} role="status" aria-label="자료를 불러오는 중"><div aria-hidden="true">{Array.from({length:8},(_,i)=><span key={i} />)}</div></div>;
   return (
     <div className={s.empty} role={error ? "alert" : "status"}>
       <p>{error || empty || "자료를 불러오고 있습니다."}</p>

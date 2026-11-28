@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.adrenergic-site-pairs",
+  "lessonId": "pharmacology.autonomic.adrenergic-agonists",
+  "title": "표적 위치와 대표 신호",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "α1·Gq / β·Gs",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "세포별 하류 반응",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "시냅스전·중추 α2 등",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "방출·교감 유출 조절",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "혈관·심장·반사",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "최종 혈역학의 합",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.adrenergic-site-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "장기 수축 방향과 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.adrenergic-site-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "작용제=전신흥분 아님",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.adrenergic-site-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "직접 작용만으로 확정 안 함",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "대표 신호의 비교로 모든 아형·세포를 포괄하지 않고 실제 처방 순서가 아니다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.virulence.adhesion-motility",
+  "subjectId": "bacteriology",
+  "chapterId": "virulence",
+  "title": {
+    "ko": "부착소·선모·편모와 조직 정착",
+    "en": "Adhesins Pili and Flagellar Motility"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.virulence.adhesion-motility.lo.01",
+      "text": "부착과 운동의 역할을 구별한다"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.lo.02",
+      "text": "수용체 특이성과 조직 친화성을 연결한다"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.lo.03",
+      "text": "표면 변이와 면역 회피를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.3bfd4ccf87f7",
+      "type": "heading",
+      "level": 2,
+      "text": "흐름을 견디는 첫 접촉"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.ea3136d2021d",
+      "type": "paragraph",
+      "markdown": "감염이 시작되려면 세균이 해당 부위에 도달하고 숙주의 제거 작용을 견뎌야 한다. 부착소(adhesin)는 숙주 표면의 분자와 상호작용하여 정착을 돕는다. 부착 구조는 선모의 끝이나 세균 표면의 다른 단백질에 존재할 수 있다. 모든 부착소가 동일한 모양의 긴 선모인 것은 아니며, 모든 선모가 부착만을 담당하는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.af7aa5d41075",
+      "type": "paragraph",
+      "markdown": "특정 당사슬이나 단백질과의 결합은 조직 친화성(tropism)에 기여한다. 같은 숙주라도 조직별 수용체와 점액·유속·상피 상태가 달라 정착 조건이 다르다. 수용체가 있다는 사실만으로 감염이 반드시 성립하지는 않는다. 부착 이후 증식에 필요한 영양과 온도, 면역 방어를 견디는 능력도 필요하다. 시험관의 부착량과 실제 침습성 사이에는 여러 단계가 남아 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.d85daf64696f",
+      "type": "heading",
+      "level": 2,
+      "text": "선모의 서로 다른 기능"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.e7bc200b86ab",
+      "type": "paragraph",
+      "markdown": "Fimbriae와 pili라는 용어는 문맥에 따라 겹쳐 쓰이지만 특정 구조의 기능을 확인하는 것이 중요하다. 일부 선모는 부착에, 일부는 유전물질 전달에 관련된다. Type IV pilus처럼 신장·수축에 의해 표면 이동에 기여하는 구조도 있다. 부착 결함과 접합 결함을 같은 유전자 기능으로 단정하지 않고 구조와 실험 종말점을 각각 연결해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.7d2a8deb0fe2",
+      "type": "paragraph",
+      "markdown": "부착 억제 실험에서 수용체 유사 물질을 넣어 부착이 줄었다면 경쟁적 상호작용을 가설로 삼을 수 있다. 하지만 물질이 세균 성장이나 세포 생존에 영향을 주었는지 확인해야 한다. 씻은 뒤 남은 세균 수는 최초 결합과 탈락의 합친 결과다. 시간과 흐름 조건을 바꾸어 보면 평형 결합만으로 설명할 수 없는 기계적 유지의 차이가 드러날 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.5cc7960a275e",
+      "type": "heading",
+      "level": 2,
+      "text": "편모와 화학주성"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.84c0c3d6d12d",
+      "type": "paragraph",
+      "markdown": "전형적인 세균 편모(flagellum)는 기저체·갈고리·필라멘트가 연결된 회전 운동 장치다. 진핵세포 섬모의 미세소관 구조와 동일하지 않다. 많은 편모의 구동에는 막을 가로지르는 이온 기울기가 이용된다. 모든 종이 같은 이온이나 같은 회전 배열을 쓰는 것은 아니므로 특정 균의 구조를 전체 세균에 일괄 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.b1e1fd93e707",
+      "type": "paragraph",
+      "markdown": "화학주성(chemotaxis)은 유리하거나 불리한 환경 신호에 따라 운동의 확률과 방향성을 조절한다. 세균이 눈으로 먼 표적을 보고 직선으로 향하는 방식이 아니다. 시간에 따른 농도 변화의 감지와 운동 패턴의 편향이 집단의 분포를 바꾼다. 운동성이 사라졌다고 세포가 반드시 죽은 것은 아니며, 성장 자체의 결함인지 에너지·신호·운동 장치의 결함인지 분리해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.960046d2b6ab",
+      "type": "heading",
+      "level": 2,
+      "text": "변이하는 표면"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.7dcc2bad9b29",
+      "type": "paragraph",
+      "markdown": "표면 항원의 발현을 켜고 끄는 phase variation과 항원의 구조를 바꾸는 antigenic variation은 관련되지만 같은 정의가 아니다. 한 환경에서 부착에 유리한 표면이 다른 환경에서는 면역 표적이 될 수 있다. 유전형이 같은 집단에도 발현 상태의 차이가 생겨 관찰 표현형이 섞일 수 있다. 집락 하나의 결과를 종 전체의 고정 성질로 해석하지 않는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.b.d1b0b576b06c",
+      "type": "paragraph",
+      "markdown": "임상적으로 부착·운동·침습·독소 생산은 서로 연결되면서도 독립적으로 평가할 수 있는 병독성 요소다. 소변이나 점막에서 균이 검출되었다고 모든 요소가 작동했다는 뜻은 아니다. 병변 위치와 숙주 증상, 검체의 대표성을 함께 읽어야 한다. 편모 유전자의 검출은 구조의 실제 조립·운동과 동일하지 않으므로 분자 검사와 기능 관찰의 범위를 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.adhesion-motility.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "부착소",
+            "숙주 표면과의 결합"
+          ],
+          [
+            "Type IV pilus",
+            "일부 부착·수축·표면 이동"
+          ],
+          [
+            "접합 장치",
+            "DNA 전달의 특정 기능"
+          ],
+          [
+            "편모·주성",
+            "회전 장치와 운동 방향의 편향"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/virulence/sections/bacteriology.virulence.adhesion-motility.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.virulence.adhesion-motility.001"
+  ],
+  "relatedLessons": [
+    "bacteriology.virulence.capsule-opsonization",
+    "bacteriology.survival.endospore-dormancy"
+  ]
+}

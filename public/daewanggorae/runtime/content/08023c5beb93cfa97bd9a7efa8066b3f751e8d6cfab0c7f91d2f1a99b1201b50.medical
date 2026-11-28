@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "transplant-surgery.immunology.rejection",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.1e3eec9ea677",
+      "sourceSha256": "1e3eec9ea6775a2fbca4fc9114b553cd1778a7b5d2fb2d5c096baacbc8f31a6e",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.d80c525de40f",
+      "sourceSha256": "d80c525de40f9d8347b4437e268b5ace307ab2c6a6da8eb7f6f968c72bfec2c7",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.b9b77b969c7afc27c402",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 54,
+            "end": 95,
+            "exact": "공여자와 수혜자의 HLA를 비롯한 항원 차이는 면역반응의 중요한 기반이다.",
+            "prefix": "은 종의 다른 개체에서 온 조직을 받는다. ",
+            "suffix": " 그러나 적합성을 단순히 혈액형이 같다는 한"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.70ebb41e556c",
+      "sourceSha256": "70ebb41e556c79f80d8c664ae66439491c4b255dcc143356a9a1bf17404b5c38",
+      "sourceLengthUtf16": 242,
+      "annotations": [
+        {
+          "id": "ann.80c2b44247836ebb965a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 17,
+            "end": 21,
+            "exact": "항원제시",
+            "prefix": "수혜자의 T세포는 공여자 유래 ",
+            "suffix": "세포의 MHC를 인식하는 직접 경로와, 수혜"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.58f7d8030b24",
+      "sourceSha256": "58f7d8030b2423f60c4c0e653b23635d7851e1fb2992148d8ff3a23e81e228e3",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.9144bffd24b1c10f47d1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 69,
+            "end": 71,
+            "exact": "보체",
+            "prefix": "항체는 혈관내피 등의 공여 항원과 결합하여 ",
+            "suffix": "와 세포성 효과기, 혈관 손상을 유발할 수 "
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.0775a0099b42",
+      "sourceSha256": "0775a0099b42f914b5dbecb94ab3e1eb0ba217a42ce26d1363d4c642c0345ab7",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.18ede8968499",
+      "sourceSha256": "18ede896849970d35507ab14657a10f01aea5f0d87dbe9edf4ef3e708945e132",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.29150ca90e73",
+      "sourceSha256": "29150ca90e7338fe59348c8feb3387d12eca11beabe33c764543e35b70fb918a",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    },
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.b11a0f2173f8",
+      "sourceSha256": "b11a0f2173f8d42a01689a1c9bacca0d027f5885e5698f45c05516eb24f440c1",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.86dde8220e42",
+      "sourceSha256": "86dde8220e42c961e0a3e2865308ac33d83acabf69b9ab86940a6a9aa1f49ddc",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "transplant-surgery.immunology.rejection.b.c496f36ab3c5",
+      "sourceSha256": "c496f36ab3c56952cde43ae009be747e69a979ce385c704fbffad79dc668a3c0",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    }
+  ]
+}

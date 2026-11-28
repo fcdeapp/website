@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.movement.parkinson-syndrome",
+  "subjectId": "neurology",
+  "chapterId": "movement",
+  "title": {
+    "ko": "파킨슨증의 운동회로와 임상 평가",
+    "en": "Parkinsonism: Circuits and Clinical Assessment"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.movement.parkinson-syndrome.lo.01",
+      "text": "운동완만의 질적 특징을 설명한다"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.lo.02",
+      "text": "파킨슨병과 파킨슨증을 구별한다"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.lo.03",
+      "text": "운동 변동과 비운동 증상을 함께 평가한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.75be8afdd3cd",
+      "type": "heading",
+      "level": 2,
+      "text": "운동의 크기와 속도를 조절하는 회로"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.09caabf2e47a",
+      "type": "paragraph",
+      "markdown": "수의운동은 일차운동겉질이 근육에 명령을 보내는 사건만으로 완성되지 않는다. 기저핵(basal ganglia)은 대뇌겉질·시상과 연결되어 필요한 운동의 선택, 크기와 실행의 용이성을 조절한다. 흑질 치밀부(substantia nigra pars compacta)에서 선조체로 향하는 도파민성 입력은 이 과정에 영향을 준다. 직접·간접 경로를 서로 반대되는 두 스위치로 외우면 운동 조절의 일부 방향성은 이해할 수 있지만, 실제 회로의 병렬 연결과 발화 시점, 진동, 행동 맥락을 충분히 설명하지 못한다. 도파민 감소도 모든 운동이 같은 비율로 느려진다는 뜻은 아니다.\n운동완만(bradykinesia)을 평가할 때는 반복 동작의 처음 속도만 보지 않는다. 손가락 두드리기, 손의 열고 닫기, 발 두드리기에서 반복에 따른 진폭이나 속도의 감소, 멈칫함과 리듬의 붕괴를 관찰한다. 관절 통증 때문에 천천히 움직이는 경우, 근력 저하로 반복 수행이 어려운 경우, 검사 지시를 이해하지 못한 경우와 구별해야 한다. 한 손의 작은 움직임과 보행·일어서기의 큰 움직임을 함께 보아야 일상 활동에 미치는 의미를 알 수 있다. 한 과제의 낮은 수행만으로 파킨슨증을 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neuroanatomy.forebrain.basal-ganglia.right-context"
+      ]
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.a6927ff12fdf",
+      "type": "heading",
+      "level": 2,
+      "text": "증후군에서 원인 질환으로"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.640b0739b793",
+      "type": "paragraph",
+      "markdown": "파킨슨증(parkinsonism)은 임상적인 운동 소견의 조합을 가리키며 파킨슨병(Parkinson disease)과 동의어가 아니다. 파킨슨병에서는 운동완만에 안정떨림이나 경직이 동반될 수 있고 시작 시 좌우 차이가 단서가 되지만, 모든 환자에게 떨림이 있지는 않다. 경직은 수동 관절 운동의 속도에 비교적 덜 의존하는 저항으로 평가하며, 속도에 따라 저항이 달라지는 경직성 마비의 근긴장 증가와 구별한다. 검사자의 힘과 환자의 긴장, 통증도 소견을 바꾸므로 같은 자세와 조건에서 반복해서 확인한다.\n원인을 감별할 때는 도파민 신호에 영향을 주는 약물 노출, 혈관성 손상, 다른 퇴행성 질환을 검토한다. 초기부터 두드러지는 반복 낙상, 심한 자율신경 이상, 눈운동 장애, 소뇌 징후, 빠른 기능 악화는 진단 가설을 다시 살펴보게 한다. 이러한 소견 하나가 특정 비전형 파킨슨증을 자동 확정하는 것은 아니다. 시작 시점과 진행 순서, 다른 신경 소견, 실제 약물 복용과 반응을 종합해야 한다. 진단명은 경과 관찰 중 수정될 수 있으며, 초기 불확실성을 숨기기보다 어떤 관찰이 가설을 바꿀지 명확히 하는 편이 유용하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.74192c9b4a6a",
+      "type": "heading",
+      "level": 2,
+      "text": "비운동 증상과 기능의 평가"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.4b506fe3f848",
+      "type": "paragraph",
+      "markdown": "변비, 기립 시 어지럼, 후각 변화, 수면 중 이상행동, 기분과 인지 변화는 운동 증상과 함께 일상 기능을 제한할 수 있다. 다만 흔한 증상이라는 이유로 모든 원인을 파킨슨병에 귀속하지 않는다. 예를 들어 변비에는 식이·활동·약물·다른 장질환이, 어지럼에는 탈수·혈압약·심장 문제와 자율신경 이상이 함께 관여할 수 있다. 비운동 증상의 시작 시기와 약물 변경, 식사·수면·배변 양상을 따로 기록하면 운동 기능과 다른 경로의 문제를 구별하는 데 도움이 된다.\n보행에서는 보폭과 팔 흔들림뿐 아니라 방향 전환, 좁은 문 통과, 출발 시 발이 붙는 느낌을 관찰한다. 동결보행(freezing of gait)은 단순한 근력 저하와 다르며 환경과 주의 분배에 따라 달라질 수 있다. 넘어짐의 원인은 동결, 균형 반응, 기립혈압, 시각과 감각, 주거 환경이 복합적으로 작용한다. 보행 속도가 좋아졌다는 한 지표만으로 낙상 위험이 모두 해결되었다고 판단하지 않는다. 식사·삼킴·말하기, 옷 입기와 약 관리 능력도 치료 목표에 포함한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.f00eb21c7ecd",
+      "type": "heading",
+      "level": 2,
+      "text": "약물 반응을 해석하는 방법"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.6c97c55f0d1c",
+      "type": "paragraph",
+      "markdown": "레보도파(levodopa)는 도파민의 전구체로 중추에서 도파민으로 전환되며, 말초 대사를 줄이는 약물과 함께 사용된다. 도파민 수용체 작용제, 도파민 대사에 영향을 주는 약물 등은 작용점과 이상반응의 양상이 서로 다르다. 약물 선택은 운동 장애의 영향, 인지와 정신증 증상, 졸림, 기립 증상, 충동 조절 문제 및 개인의 목표를 함께 고려한다. 약 이름의 효과 순위를 외우는 것만으로 충분하지 않다. 특히 환각이나 충동 조절 변화가 생기면 질환 자체의 경과와 약물의 영향을 나누어 평가해야 한다.\n진행 중 약효가 다음 복용 전에 줄어드는 소진현상(wearing-off), 예측하기 어려운 운동 변동, 이상운동증(dyskinesia)이 나타날 수 있다. 같은 시간대의 움직임 저하가 모두 약효 소진은 아니다. 실제 복용 시각, 식사, 수면, 변비와 스트레스, 동반 질환을 일지에 함께 기록한다. 학습용으로 하루 활동 어려움을 0~10의 임의 평정으로 기록한 곡선을 그릴 수 있지만, 이것은 공식 운동 척도나 도파민 농도 그래프가 아니다. 특정 시점의 점수 변화만으로 약을 추가하거나 수술 적합성을 결정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.58e343821767",
+      "type": "heading",
+      "level": 2,
+      "text": "장기 치료의 목표"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.b.00117b454bc2",
+      "type": "paragraph",
+      "markdown": "운동 증상이 줄어드는 것과 삶의 기능이 회복되는 것은 관련되지만 동일하지 않다. 재활과 규칙적인 활동, 말·삼킴 평가, 낙상 예방, 영양과 사회적 지원을 약물 치료와 함께 계획한다. 진행된 운동 변동에 대한 기기 보조 치료나 수술은 증상 유형과 약물 반응, 인지·정신건강 및 전신 상태를 평가하여 적합성을 판단한다. 정상 기저핵의 삼차원 모형은 구조의 위치를 보여 줄 뿐 도파민 소실이나 환자별 회로 기능, 수술 표적의 안전한 좌표를 제공하지 않는다.\n추적 진료에서는 이전에 정한 목표가 실제로 달성되었는지 확인한다. 환자가 가장 힘들어하는 문제가 걷기인지, 낮 졸림인지, 환각인지에 따라 우선순위가 달라진다. 약물 변경 뒤에는 운동 개선과 이상반응을 같은 시간축에서 살피고, 환자와 돌봄 제공자의 관찰이 다르면 상황과 시점을 비교한다. 갑작스러운 기능 악화는 늘 퇴행의 진행으로 설명하기보다 감염·탈수·약물 누락과 급성 신경 문제를 다시 검토해야 한다. 치료의 평가는 단일 운동 징후보다 안전과 자율성, 지속 가능한 일상 기능에 중심을 둔다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.table0853",
+      "type": "table",
+      "data": {
+        "title": "관찰 자료와 확인할 조건",
+        "columns": [
+          "항목",
+          "자료·평가 범위"
+        ],
+        "rows": [
+          [
+            "손가락 두드리기",
+            "반복하며 진폭 감소와 멈칫함"
+          ],
+          [
+            "수동 운동",
+            "속도 의존성이 낮은 저항"
+          ],
+          [
+            "경과",
+            "수개월 동안 일상 동작이 느려짐"
+          ],
+          [
+            "동반",
+            "변비·기립 어지럼, 약물 노출 미확인"
+          ],
+          [
+            "일지",
+            "시간별 어려움은 별도 임의 평정"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.diagram.synthetic-parkinson-function-diary-0853",
+      "type": "diagram",
+      "diagramRef": "diagram.synthetic-parkinson-function-diary-0853",
+      "path": "diagrams/diagram.synthetic-parkinson-function-diary-0853.svg",
+      "alt": "가상 하루 활동 어려움 일지의 독립 계산 곡선"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.3d0853.0",
+      "type": "anatomy3d",
+      "sceneRef": "scene.neuroanatomy.forebrain.basal-ganglia.right-context"
+    },
+    {
+      "id": "neurology.movement.parkinson-syndrome.limits0853",
+      "type": "clinicalPearl",
+      "markdown": "정상 거시 구조의 위치를 설명하는 자료다. 실제 운동단위·자율신경 활성·시냅스·도파민·운동신경원 소실이나 환자별 병변을 나타내지 않는다. 오른쪽으로 확인된 구조를 양측의 완전 회로로 표시하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/movement/sections/neurology.movement.parkinson-syndrome.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.movement.parkinson-syndrome.001"
+  ],
+  "relatedLessons": [
+    "neurology.movement.tremor-dystonia",
+    "neuroscience.autonomic.orthostatic-testing"
+  ]
+}

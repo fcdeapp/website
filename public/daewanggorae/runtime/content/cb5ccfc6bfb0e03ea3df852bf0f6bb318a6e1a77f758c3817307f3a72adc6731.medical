@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.presentation.class-i-processing",
+  "subjectId": "immunology",
+  "chapterId": "presentation",
+  "title": {
+    "ko": "MHC I 항원 가공과 펩타이드 적재",
+    "en": "MHC Class I Processing and Peptide Loading"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.presentation.class-i-processing.lo.01",
+      "text": "Proteasome·TAP·적재복합체의 순서를 설명한다"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.lo.02",
+      "text": "MHC 제한성과 항원의 기원을 구별한다"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.lo.03",
+      "text": "외부 펩타이드 복원 실험의 한계를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.presentation.class-i-processing.b.2d1340123ef5",
+      "type": "heading",
+      "level": 2,
+      "text": "세포 안의 단백질을 표면의 정보로 바꾼다"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.583563ae52d3",
+      "type": "paragraph",
+      "markdown": "고전적 MHC class I은 세포 내 단백질에서 얻은 펩타이드를 표면에 전시하여 CD8 T세포의 감시에 제공한다. 정상 자기 단백질도 계속 처리되므로 MHC I이 표면에 있다는 사실 자체가 감염을 뜻하지는 않는다. T세포수용체(T-cell receptor, TCR)는 펩타이드와 MHC가 만드는 복합 표면을 인식한다. 펩타이드의 존재, MHC에 대한 결합과 특정 TCR의 인식은 서로 이어지지만 다른 선택 단계다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.1b6caf455918",
+      "type": "paragraph",
+      "markdown": "사람의 고전적 class I 중쇄는 HLA-A·HLA-B·HLA-C에 의해 암호화되고 β2-microglobulin과 결합한다. 대립유전자별 결합 홈의 차이는 어떤 펩타이드가 잘 제시되는지에 영향을 준다. 한 사람의 HLA 유전형이 모든 항원에 대한 반응 크기를 단독 결정하지는 않는다. 항원 발현·가공, TCR repertoire와 공동자극도 필요하다. 같은 단백질이라도 다른 HLA 배경에서 주요 epitope가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.e1b70c152461",
+      "type": "heading",
+      "level": 2,
+      "text": "분해와 이동과 적재"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.5fa9b9c4493d",
+      "type": "paragraph",
+      "markdown": "세포질·핵의 단백질은 proteasome 관련 가공을 거쳐 펩타이드의 공급원이 된다. TAP(transporter associated with antigen processing)은 ATP 의존적으로 펩타이드를 소포체 안으로 운반한다. 소포체에서는 일부 펩타이드가 aminopeptidase에 의해 더 다듬어지고 MHC I에 적재된다. 분해가 증가한다고 제시되는 모든 펩타이드가 같은 비율로 늘지는 않는다. 절단 위치와 펩타이드의 생존·이동·결합이 각각 결과를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.2dc20c6b92d6",
+      "type": "paragraph",
+      "markdown": "Tapasin과 calreticulin, ERp57 등의 적재 관련 성분은 안정적인 복합체 형성을 돕는다. 적절한 펩타이드가 결합하면 복합체는 분비 경로를 거쳐 표면으로 이동한다. 펩타이드가 없을 때의 불안정성과 세포 내 보유는 표면 MHC I 감소의 한 원인이 될 수 있다. 그러나 표면량 감소만으로 TAP 결함을 확정하지 않는다. 중쇄·β2-microglobulin, 이동과 분해의 변화도 같은 결과를 만들 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.0697a0bd40a2",
+      "type": "heading",
+      "level": 2,
+      "text": "억제와 복원으로 단계를 좁힌다"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.c3096f9d8b60",
+      "type": "paragraph",
+      "markdown": "전장 단백질로 유도한 T세포 반응은 낮으나 적절한 짧은 펩타이드를 외부에서 공급하면 반응이 회복되는 가상 실험을 생각할 수 있다. 이 결과는 펩타이드 공급 이전의 가공·이동 단계 문제를 지지할 수 있다. 외부 펩타이드는 정상 가공 경로의 일부를 우회할 수 있기 때문이다. 그러나 표적 세포와 HLA, T세포의 생존·기능과 펩타이드 농도를 통제해야 해석할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.b3a88d5e9504",
+      "type": "paragraph",
+      "markdown": "Proteasome 억제 뒤 반응이 줄었다면 가공 의존성을 검토하지만 약물의 세포 독성과 표면 단백질 전반의 변화도 확인한다. 특정 펩타이드가 복원된다고 proteasome의 어떤 절단 반응이 원인인지까지 직접 알 수는 없다. 유전자 복원, 적재량과 표면 복합체, T세포 기능을 함께 측정하면 결론의 범위를 좁힐 수 있다. 자극 입력과 최종 세포사를 한 지표로만 연결하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.3b59f80618e4",
+      "type": "heading",
+      "level": 2,
+      "text": "표면 제시와 실제 제거"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.4c56b9a1cf0f",
+      "type": "paragraph",
+      "markdown": "표면의 펩타이드–MHC I 양은 시간에 따라 이동·내재화·안정성의 영향을 받는다. 단순한 새 공급 없는 모형에서는 복합체 수 N을 dN/dt=−kN으로 표현할 수 있다. 이때 N(t)=N0exp(−kt)이지만 실제 세포에서는 재활용과 새로운 공급이 계속될 수 있다. 독립 감소 곡선은 제거상수의 의미를 배우는 자료이며 모든 HLA·펩타이드의 반감기를 나타내지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.b.67c3cab8aad1",
+      "type": "paragraph",
+      "markdown": "표적이 펩타이드를 제시해도 CD8 T세포가 조직에 도착하고 적절히 활성화되어야 제거가 가능하다. 억제 수용체와 표적의 사멸 저항도 결과에 영향을 준다. 따라서 표면 제시, TCR 결합과 실제 살상은 별도로 검사한다. MHC I 가공 지식은 바이러스 감염과 종양의 면역 회피를 연결하는 기반이지만 단일 분자량으로 임상 반응을 예측하는 도구는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.diagram.immune-mhc-decay-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-mhc-decay-toy",
+      "path": "diagrams/diagram.immune-mhc-decay-toy.svg",
+      "alt": "새 공급이 없는 복합체 감소의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.presentation.class-i-processing.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "Proteasome",
+            "펩타이드 공급의 가공"
+          ],
+          [
+            "TAP",
+            "소포체로의 펩타이드 이동"
+          ],
+          [
+            "적재복합체",
+            "안정적 MHC I–펩타이드 형성 지원"
+          ],
+          [
+            "CD8 TCR",
+            "특정 펩타이드–MHC I 인식"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/presentation/sections/immunology.presentation.class-i-processing.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.presentation.class-i-processing.001",
+    "question.immunology.presentation.class-i-processing.002"
+  ],
+  "relatedLessons": [
+    "immunology.innate.sensor-adaptor-networks",
+    "immunology.presentation.class-ii-loading"
+  ]
+}

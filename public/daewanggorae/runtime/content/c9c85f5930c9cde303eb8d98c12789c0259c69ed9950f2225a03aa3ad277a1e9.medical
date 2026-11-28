@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.atrial-fibrillation-burden",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "심방세동의 검출과 부담",
+    "en": "Detection and Burden of Atrial Fibrillation"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.lo.01",
+      "text": "심방세동 부담의 분자와 분모를 정의한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.lo.02",
+      "text": "기기 검출과 확진을 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.lo.03",
+      "text": "기록되지 않은 기간의 불확실성을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.b.8614e5312d69",
+      "type": "heading",
+      "level": 2,
+      "text": "기록의 시간 범위"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.b.6de40267945c",
+      "type": "paragraph",
+      "markdown": "심방세동 부담(AF burden)은 관찰 기간 중 심방세동이 차지한 시간이나 발작의 빈도·지속 등으로 기술하는 개념이다. 시간 비율로 표현할 때는 심방세동으로 판정된 시간 D를 해석 가능한 총 기록 시간 T로 나누어 100D/T로 계산한다. 발작이 여섯 시간 기록되었더라도 총 기록이 하루인지 이틀인지에 따라 비율은 달라진다. 실제 검사에서는 신호 소실과 판독 불가능한 구간을 어떻게 분모에서 처리했는지 확인해야 한다. 단순한 착용 시간과 유효 기록 시간이 항상 같지는 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.b.e67437ae1b79",
+      "type": "paragraph",
+      "markdown": "부담의 수치는 관찰 창에 의존한다. 하루의 기록에서 세동이 없었다고 한 달 동안 없었다고 단정할 수 없다. 발작이 모여 발생하는 환자와 드물게 흩어져 발생하는 환자에서는 같은 길이의 검사도 포착 가능성이 다르다. 검사를 길게 하면 무조건 같은 비율이 더 정확하게 나온다는 보장도 없다. 치료와 생활 조건이 달라지거나 발작 양상 자체가 변할 수 있기 때문이다. 서로 다른 시기의 검사 결과를 비교할 때는 장치, 분석 기준과 관찰 기간을 함께 제시한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.b.e59e2ff87f40",
+      "type": "heading",
+      "level": 2,
+      "text": "장치가 감지한 사건"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.b.48ab6e5b1513",
+      "type": "paragraph",
+      "markdown": "심장 삽입 기기가 감지한 심방 고빈도 사건(atrial high-rate episode, AHRE)은 설정된 속도와 지속 조건을 만족한 기기 사건이다. 모든 사건이 임상적으로 확인된 심방세동과 같은 것은 아니다. 과감지, 잡음과 다른 심방빈맥이 포함될 수 있으므로 저장된 심장 내부 전기도와 감지 조건을 검토한다. 반대로 심방 감지가 없는 장치는 심실 간격만으로 추정하여 다른 오류 구조를 가질 수 있다. 기기 이름이 같아도 설정과 알고리즘이 다르면 결과의 의미가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.b.f88e87e9ea79",
+      "type": "paragraph",
+      "markdown": "손목 광학 맥파와 단일유도 심전도 역시 측정 대상이 다르다. 광학 신호는 말초 맥파의 시간 변화를 보고, 심전도는 전위 차이를 기록한다. 움직임과 접촉 불량은 두 방식 모두에 영향을 줄 수 있으나 오류의 원리가 같지는 않다. 자동 판독이 양성이라고 나오면 원 신호와 임상 맥락을 확인한다. 저위험 집단에서는 위양성이 양성 결과에서 큰 비중을 차지할 수 있으므로 장치의 정확도와 검사 전 확률을 함께 이해해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.b.8f7c214b78b8",
+      "type": "heading",
+      "level": 2,
+      "text": "부담과 의사결정"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.b.f920fec20883",
+      "type": "paragraph",
+      "markdown": "증상이 심한 짧은 발작과 증상이 거의 없는 긴 발작은 삶에 미치는 영향과 기록 부담이 서로 다를 수 있다. 증상 조절의 목표를 세울 때에는 환자의 경험과 기능을 듣고, 부정맥의 시간 자료를 별도로 정리한다. 혈전색전 위험은 부정맥 부담만으로 단순 결정하지 않는다. 임상적으로 확인된 심방세동인지, 기기 검출만 있는지, 동반 위험 인자와 출혈 위험은 어떠한지에 따라 근거의 적용 범위가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.b.bd192c9ea41c",
+      "type": "paragraph",
+      "markdown": "발작의 최장 지속 시간, 누적 시간, 관찰 일수와 관찰 방법을 함께 보고하면 단일 백분율보다 해석이 풍부해진다. 치료 뒤 부담이 감소해도 그 기간의 검출 한계가 남는다. 정상 동율동이 관찰되었다는 이유만으로 이전의 혈전 위험 평가나 추적이 모두 종료되지는 않는다. 기록은 임상 추론의 근거이며 기록되지 않은 시간까지 직접 관찰한 증거가 아니다. 장기 추적의 목적을 진단 확인, 증상 연관, 치료 반응 및 안전 감시로 나누어 검사 결과를 사용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "누적 시간 D",
+            "판정된 AF 시간"
+          ],
+          [
+            "유효 기록 T",
+            "해석 가능한 관찰 시간"
+          ],
+          [
+            "시간 부담",
+            "100D/T; 분모 명시"
+          ],
+          [
+            "AHRE",
+            "기기 사건; 저장 신호로 판정 검토"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-burden.diagram.af-burden-denominator-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.af-burden-denominator-toy",
+      "path": "diagrams/diagram.af-burden-denominator-toy.svg",
+      "alt": "동일 발작 시간과 다른 관찰 분모의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.atrial-fibrillation-burden.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.atrial-fibrillation-burden.001",
+    "question.cardiology.arrhythmias.atrial-fibrillation-burden.002"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.atrial-fibrillation-mechanisms",
+    "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention"
+  ]
+}

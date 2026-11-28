@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.cardiomyopathy.myocarditis-assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.cardiomyopathy.myocarditis-assessment.b.e0dbb4e8b169",
+      "sourceSha256": "e0dbb4e8b16935755d9b27e98b8e3f250d35ffd48867027bfd48b83fdbca39a3",
+      "sourceLengthUtf16": 225,
+      "annotations": [
+        {
+          "id": "ann.429ce621463f98bffa60",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 72,
+            "end": 75,
+            "exact": "심부전",
+            "prefix": " 과정과 연관될 수 있다. 흉통과 부정맥, ",
+            "suffix": "으로 나타나거나 증상이 비특이적일 수 있다."
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.myocarditis-assessment.b.72fd0ce34d3a",
+      "sourceSha256": "72fd0ce34d3aaa6d93ae8cf2263cc55972876be20b317aa83e01b45e8ddec930",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.94fcaa0dfab36d4a39b1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 63,
+            "end": 137,
+            "exact": "심전도와 심초음파, troponin은 중요한 정보를 제공하지만 의심이 높은 상황의 정상 검사 하나가 모든 심근염을 배제하지는 않는다.",
+            "prefix": "조합에서 의심을 유지하는 접근을 제시한다. ",
+            "suffix": " 검사의 민감도는 시점과 분포, 질환의 양상"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.myocarditis-assessment.b.a327a2bb68a4",
+      "sourceSha256": "a327a2bb68a46d5caf083492682c7c2dc5b9cdf26b9421a54bf86fba0cbe6652",
+      "sourceLengthUtf16": 221,
+      "annotations": [
+        {
+          "id": "ann.f3577fc11d70ce8bac8e",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 55,
+            "exact": "Troponin 상승은 심근손상의 근거로 활용되지만 염증의 원인이나 병원체를 단독 확정하지 않는다.",
+            "prefix": "",
+            "suffix": " 박출률이 유지되어도 전도 질환과 위험 부정"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.myocarditis-assessment.b.18e83820c056",
+      "sourceSha256": "18e83820c056948ffdd5244d78ee0a42e9f90a69206a70d409cb3dbbb374aaf3",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.myocarditis-assessment.b.5d04f84354fe",
+      "sourceSha256": "5d04f84354fef0ae1373f21ca2124971d2d58f27860587f4600319a63b2de3af",
+      "sourceLengthUtf16": 245,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.myocarditis-assessment.b.110274802ffd",
+      "sourceSha256": "110274802ffd94845b90d400bf27cd58a66e80e7b2fa5c9a76c48d008d737cb0",
+      "sourceLengthUtf16": 234,
+      "annotations": [
+        {
+          "id": "ann.359dc261c1e143c12404",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 52,
+            "exact": "혈중 바이러스 항체가 있었다는 사실은 과거 노출과 현재의 심근 내 원인 증명을 구별해야 한다.",
+            "prefix": "",
+            "suffix": " 조직의 분자 검사도 검출된 물질의 의미와 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.myocarditis-assessment.b.ee7c6a99db7c",
+      "sourceSha256": "ee7c6a99db7cab146fe87bdd835d65f402f242839ce1cde1bc37fe41970bdd2c",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.cardiomyopathy.myocarditis-assessment.b.da24ff38d154",
+      "sourceSha256": "efea3239c63d6cf8d656dde5c2a5e56a8432d5dcc9ee18c339300b3b1a23c8ee",
+      "sourceLengthUtf16": 110,
+      "annotations": []
+    }
+  ]
+}

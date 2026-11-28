@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.aspiration-injury",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.b.80ed8bfab409",
+      "sourceSha256": "80ed8bfab4099157c04bac0de41d62a5cea30d29871c8bd5a2ee0acbd4bbb96f",
+      "sourceLengthUtf16": 184,
+      "annotations": [
+        {
+          "id": "ann.122f09fca3975c97bdbb",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 104,
+            "end": 138,
+            "exact": "연하와 기침·성문 보호, 의식과 자세·역류의 조건이 중요하다.",
+            "prefix": "와 반복·시간에 따라 다른 손상이 생긴다. ",
+            "suffix": " 한 번의 기침이나 식사 장면을 보지 못했다"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.b.432e96f23fee",
+      "sourceSha256": "432e96f23fee4b4d88f51a9920608207065932f59103ae87d3182b3c4806783d",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.b.332c4d4e3341",
+      "sourceSha256": "332c4d4e3341cf177b53192c153dfec38f19cda086121c2ac14dfde6dabd9792",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.b.51cd9e3c527a",
+      "sourceSha256": "51cd9e3c527aff5909b47144334d0cf2999038ce108628170573c9efafc33859",
+      "sourceLengthUtf16": 166,
+      "annotations": [
+        {
+          "id": "ann.138a8f611a55e0d0ef66",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 62,
+            "end": 64,
+            "exact": "흉막",
+            "prefix": " 바꾼다. 혐기성 감염의 범위와 농양·괴사·",
+            "suffix": " 합병증의 존재는 치료 질문에 영향을 준다."
+          },
+          "conceptId": "reader.term.4c5bc9c0ba87947a",
+          "targetDocumentId": "anatomy.thorax.lungs-pleura"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.b.dd8829720134",
+      "sourceSha256": "dd8829720134a0197100e2ca238f0c86ebfc23193aee5a7418355f88d7e78078",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.b.e9c738c0efd4",
+      "sourceSha256": "e9c738c0efd4d6d5263b19c18ba61ff7ba46425065d2a577fc848a10a07b9a4f",
+      "sourceLengthUtf16": 154,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.b.1d620eb6625e",
+      "sourceSha256": "1d620eb6625ee563df8c74aa62e441d13b872f50eada94f4ad61b97d27ad4346",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.b.a2bae47fe43b",
+      "sourceSha256": "a2bae47fe43bc96117c1680aa981cd5c9b0674c69de9f21e7f9ef2f0f2f9f1bf",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.p.extra0846.0",
+      "sourceSha256": "8234520d13a4fcfdf6eb64b217e9a74adc6baab7df345287b63e355302915c86",
+      "sourceLengthUtf16": 174,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.aspiration-injury.p.extra0846.1",
+      "sourceSha256": "b8206eefeed5bf8cd626444f749ca6cafee87ea4d65e4c2b4da70c74153fa69d",
+      "sourceLengthUtf16": 215,
+      "annotations": []
+    }
+  ]
+}

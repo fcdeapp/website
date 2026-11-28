@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.b-cells.aid-affinity-switch",
+  "subjectId": "immunology",
+  "chapterId": "b-cells",
+  "title": {
+    "ko": "AID·체성과변이·동형전환의 분리",
+    "en": "AID Somatic Hypermutation and Class Switching"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.lo.01",
+      "text": "친화도 성숙과 동형전환을 구별한다"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.lo.02",
+      "text": "AID와 DNA 수선의 역할을 설명한다"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.lo.03",
+      "text": "CD40L 관련 결함과 B세포 자체 결함을 비교한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.b977087597e5",
+      "type": "heading",
+      "level": 2,
+      "text": "가변부와 불변부를 다른 목적으로 바꾼다"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.2e5f9f011bb1",
+      "type": "paragraph",
+      "markdown": "활성 B세포는 항원의 인식과 효과기 기능을 서로 다른 유전적 변화로 조정할 수 있다. 체성과변이(somatic hypermutation, SHM)는 주로 가변부의 서열에 변화를 주며, 선택 과정을 거쳐 높은 친화도의 세포가 늘 수 있다. 동형전환(class-switch recombination, CSR)은 중쇄 불변부를 바꾸어 Fc 관련 기능과 분포를 조절한다. 항체가 IgM에서 IgG로 바뀌었다는 사실만으로 친화도가 얼마나 높아졌는지 알 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.7934ee66e5e7",
+      "type": "paragraph",
+      "markdown": "Activation-induced cytidine deaminase(AID)는 DNA의 cytidine을 uracil로 바꾸어 두 과정에 필요한 손상을 시작한다. 이후 염기절제·불일치 수선과 DNA 절단·연결 장치가 다른 방식으로 관여한다. 항체 다양화는 제어된 DNA 손상과 정확한 복구를 이용하는 과정이다. 조절 실패는 기능 결함뿐 아니라 유전체 불안정성과 부적절한 재배열 위험으로 이어질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.f7788d0c1709",
+      "type": "heading",
+      "level": 2,
+      "text": "선택이 친화도를 높인다"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.6e7bf5262546",
+      "type": "paragraph",
+      "markdown": "변이 자체는 항원 결합을 좋게도 나쁘게도 할 수 있다. 배중심(germinal center)에서는 B세포가 항원을 얻고 Tfh 도움을 확보하는 과정이 생존·확장을 차등화한다. 그 결과 평균 친화도가 높아지는 것이 친화도 성숙이다. 따라서 변이율 증가와 유익한 친화도 증가는 같은 결과가 아니다. 선택 환경과 표적 항원의 변화가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.7ff0410c7433",
+      "type": "paragraph",
+      "markdown": "FDC는 상대적으로 온전한 항원과 면역복합체를 유지하여 BCR 인식에 제공하고, B세포는 섭취한 단백질 유래 펩타이드를 MHC II로 Tfh에 제시한다. BCR 결합과 TCR 도움을 연결하는 이 과정은 항체 반응의 질을 조정한다. FDC와 통상적인 수지상세포를 같은 세포로 취급하면 항원 보존과 펩타이드 제시의 차이가 흐려진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.ff0a998ce3e1",
+      "type": "heading",
+      "level": 2,
+      "text": "도움의 결함과 내부 장치의 결함"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.6f46bb33da02",
+      "type": "paragraph",
+      "markdown": "활성 T세포의 CD40L과 B세포의 CD40 상호작용은 많은 T의존성 항체반응에서 중요하다. CD40L이 불량하면 B세포 수가 남아 있어도 동형전환·배중심 반응이 불량할 수 있다. 이 경로는 다른 항원제시·방어세포와도 상호작용하므로 단순한 항체 분비 결함보다 넓은 면역 문제를 만들 수 있다. IgM이 보존되거나 높고 다른 동형이 낮은 패턴은 원인 확정이 아니라 경로 평가의 단서다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.a1869adf522f",
+      "type": "paragraph",
+      "markdown": "B세포 안의 AID나 다른 수선 장치 결함도 비슷한 항체 동형 패턴을 만들 수 있지만 도움 신호의 결함과 동일하지 않다. 정상 T세포와 시험 B세포, 정상 B세포와 시험 도움 조건을 교차 비교하면 결함의 위치를 좁힐 수 있다. 세포 수·생존과 자극 강도를 맞추고 Ig 분비량과 전환된 세포 비율을 나누어 본다. 적절한 유전·기능 확인이 원인 진단에 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.0dacdd8d593c",
+      "type": "heading",
+      "level": 2,
+      "text": "결합 곡선의 의미"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.b1fee7ff1854",
+      "type": "paragraph",
+      "markdown": "단일 결합 부위의 평형 모형에서 점유율 θ=L/(Kd+L)로 두면 Kd가 작을수록 같은 자유 항원 농도에서 점유율이 높다. 이 식은 친화도의 개념을 보여 주지만 다가항체의 avidity와 표면 항원의 배열, 결합·해리 속도를 모두 담지 못한다. IgM과 IgG의 결합을 이 식 하나로 직접 비교해 실제 방어력을 순서화할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.b.c49d6bd85f5c",
+      "type": "paragraph",
+      "markdown": "동형전환 뒤에도 가변부의 항원 특이성이 대체로 유지되는 원리와 SHM에 의한 특이성·친화도 변화를 구분하면 항체 검사 결과를 더 정확히 해석할 수 있다. 혈중 동형별 농도, 항원 특이 역가와 기능적 중화는 서로 다른 양이다. 한 양성 결합 검사만으로 친화도 성숙과 효과기 기능이 모두 충분하다고 결론내리지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.diagram.immune-affinity-binding-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-affinity-binding-toy",
+      "path": "diagrams/diagram.immune-affinity-binding-toy.svg",
+      "alt": "단일 부위 친화도와 점유의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.b-cells.aid-affinity-switch.table.0823",
+      "type": "table",
+      "data": {
+        "title": "주요 과정과 판독의 비교",
+        "columns": [
+          "과정·지표",
+          "핵심 의미"
+        ],
+        "rows": [
+          [
+            "SHM",
+            "가변부 변이와 선택의 재료"
+          ],
+          [
+            "CSR",
+            "중쇄 불변부 전환"
+          ],
+          [
+            "AID",
+            "DNA의 cytidine 탈아미노화"
+          ],
+          [
+            "Tfh·CD40L",
+            "여러 T의존성 항체반응의 도움"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/b-cells/sections/immunology.b-cells.aid-affinity-switch.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.b-cells.aid-affinity-switch.001",
+    "question.immunology.b-cells.aid-affinity-switch.002"
+  ],
+  "relatedLessons": [
+    "immunology.b-cells.development-receptor-editing",
+    "immunology.antibodies.effector-fcrn"
+  ]
+}

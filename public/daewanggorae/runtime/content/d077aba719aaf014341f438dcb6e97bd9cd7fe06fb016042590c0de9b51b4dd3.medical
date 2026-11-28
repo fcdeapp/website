@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "emergency-medicine",
+  "title": {
+    "ko": "응급의학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "emergency-medicine.chapter.resuscitation",
+      "path": "domains/09-clinical-diagnostics/subjects/emergency-medicine/chapters/resuscitation/chapter.json"
+    },
+    {
+      "id": "emergency-medicine.chapter.dyspnea",
+      "path": "domains/09-clinical-diagnostics/subjects/emergency-medicine/chapters/dyspnea/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "emergency-medicine.plan.001",
+    "emergency-medicine.plan.002",
+    "emergency-medicine.plan.003",
+    "emergency-medicine.plan.004",
+    "emergency-medicine.plan.005",
+    "emergency-medicine.plan.006",
+    "emergency-medicine.resuscitation.oxygen-delivery",
+    "emergency-medicine.dyspnea.initial-assessment"
+  ]
+}

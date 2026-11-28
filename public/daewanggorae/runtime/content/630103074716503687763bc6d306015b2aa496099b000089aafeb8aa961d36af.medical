@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neurology.stroke.acute-ischemia-assessment",
+  "subjectId": "neurology",
+  "chapterId": "stroke",
+  "title": {
+    "ko": "급성 뇌허혈의 조직·혈관과 재관류 평가",
+    "en": "Acute Cerebral Ischemia Tissue Vessel and Reperfusion Assessment"
+  },
+  "learningObjectives": [
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.lo.01",
+      "text": "허혈 중심부와 위험 조직을 구별한다"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.lo.02",
+      "text": "발병·마지막 정상 시각과 영상의 역할을 설명한다"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.lo.03",
+      "text": "재관류와 출혈 위험·이후 기능을 통합한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.5d9f23a1d221",
+      "type": "heading",
+      "level": 2,
+      "text": "혈류가 줄어든 조직"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.701047227e5f",
+      "type": "paragraph",
+      "markdown": "뇌조직은 산소·포도당과 에너지 공급의 지속성에 의존한다. 허혈에서는 이온 기울기와 전달물질 처리·세포 부피 및 미세순환이 함께 변한다. 손상이 진행된 중심부와 아직 회복 가능성이 남은 위험 조직은 시간·잔여 혈류·측부순환과 대사 조건에 따라 달라진다. 시간만으로 모든 환자의 동일한 조직 상태를 예측하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neurology.localization.stroke.14ce8cbb"
+      ]
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.fe79cd80e1b8",
+      "type": "paragraph",
+      "markdown": "혈관이 다시 열리는 재개통과 조직의 충분한 재관류, 신경 기능의 회복은 같은 결과가 아니다. 미세혈류와 부종·출혈성 변환, 이미 손상된 연결망 등이 결과에 영향을 준다. 반대로 증상이 가벼워 보인다는 이유만으로 모든 중요한 혈관 병변이 없다고 판단하지 않는다. 현재 장애의 성격과 생활 기능에 미치는 영향을 구체적으로 본다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.4cfdbd7021c4",
+      "type": "heading",
+      "level": 2,
+      "text": "응급 평가의 시간과 표현"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.dacb0ec1b5bd",
+      "type": "paragraph",
+      "markdown": "증상이 처음 관찰된 시각과 마지막으로 정상임이 확인된 시각(last known well)은 구별한다. 잠에서 깨어 증상이 발견되면 관찰 시각을 곧 발병 시각으로 바꾸지 않는다. 병력·목격자와 기록, 증상의 변동·최근 약물과 항응고 노출을 확인한다. 저혈당과 발작 후 상태·편두통 등 유사 표현도 고려하면서 평가를 진행한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.b8e2741a867c",
+      "type": "paragraph",
+      "markdown": "언어·시야·감각·운동·주의·협응과 의식은 서로 다른 장애를 드러낸다. 점수화 도구는 표준화에 도움이 되지만 모든 기능과 혈관 영역을 균등하게 반영하는 것은 아니다. 낮은 총점에서도 일상에 큰 장애를 만드는 증상이나 후방순환의 위해가 있을 수 있다. 점수 하나를 환자의 전체 위험과 치료 적합성으로 바꾸지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.90eb7b477f3e",
+      "type": "heading",
+      "level": 2,
+      "text": "영상은 질문에 따라 다르다"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.fe254205cf83",
+      "type": "paragraph",
+      "markdown": "비조영 CT 등은 출혈과 다른 병변을 평가하고, 혈관영상은 폐색 위치와 혈관 구조의 정보를 준다. MRI 확산과 다른 영상 조합, 관류 추정은 선택된 상황의 조직 평가에 이용될 수 있다. 초기 영상이 뚜렷하지 않다고 모든 급성 허혈이 배제되는 것은 아니다. 각 검사의 시간·기술적 한계와 현재 증상을 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.fe983c46cf53",
+      "type": "paragraph",
+      "markdown": "관류 영상의 중심부·위험 조직 추정은 장비·처리 방식과 역치·동작 등에 영향을 받는다. 색칠된 지도는 실제 세포 생존을 직접 전수 측정한 결과가 아니다. 혈관 폐색과 측부순환·임상·영상 간의 일치와 불일치를 검토한다. 정상 3D 뇌혈관은 위치 문맥을 제공하며 환자의 폐색·관류 지도나 치료 계획을 대신하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.fd3ab9dbbe03",
+      "type": "heading",
+      "level": 2,
+      "text": "재관류와 이후 관리"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.c83865af3993",
+      "type": "paragraph",
+      "markdown": "2026년 AHA/ASA 지침은 혈전용해제의 선택과 혈관내치료의 대상, 조직 평가와 관리에 관한 갱신을 포함한다. 정맥내 약물과 혈전제거술은 대상·시간·영상과 금기를 함께 판단하는 서로 다른 치료다. 표준 시간 창의 적합 환자와 확장된 시간·영상 선택 환자를 구별한다. 특정 숫자나 정상 모델만으로 모든 재관류 적합성을 자동 판정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.b.b0f1b7bea554",
+      "type": "paragraph",
+      "markdown": "재관류 후에도 신경 상태·혈압·출혈과 부종, 삼킴과 호흡·영양·혈전 및 재활을 이어서 평가한다. 큰 혈관이 열렸다고 강한 혈압 저하가 언제나 이롭다고 전제하지 않는다. 이후 원인 평가와 재발 예방은 심장·혈관·대사 및 출혈 위험에 따라 달라진다. 급성 혈관 치료와 장기 기능 회복·예방을 구분하면서 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.suppheading0852",
+      "type": "heading",
+      "level": 2,
+      "text": "측정·기전과 임상 해석의 연결"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.supp.e938d4ef580b",
+      "type": "paragraph",
+      "markdown": "시간 기록의 가상 예에서22시에 마지막 정상,다음날06시에 증상 발견,07시에 병원 도착했다면 발견부터 도착은1시간이지만 마지막 정상부터는9시간이다. 두 시간의 질문을 구별하고 날짜가 바뀐 점을 반영한다. 이 계산만으로 치료가 가능하거나 불가능하다고 판정할 수 없다. 발병 불명 환자의 조직·영상 선택과 임상 적합성은 별도로 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.supp.216b23a26c71",
+      "type": "paragraph",
+      "markdown": "급성 장애가 줄었다가 다시 악화하면 혈류 변동·새 사건·부종·출혈·발작과 대사 요인 등을 재검토한다. 첫 영상과 점수의 결과가 이후의 상태를 대신하지 않는다. 증상·진찰과 영상·혈압·혈당의 시간표를 연결하고 이전 자료와의 차이를 설명한다. 치료 뒤의 재개통 지표와 실제 신경학적 기능, 장기 생활의 결과를 서로 다른 층위로 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.table0852",
+      "type": "table",
+      "data": {
+        "title": "관찰·가설과 임상 해석",
+        "columns": [
+          "항목",
+          "자료·의미"
+        ],
+        "rows": [
+          [
+            "마지막 정상",
+            "전날22:00"
+          ],
+          [
+            "증상 발견",
+            "오늘06:00"
+          ],
+          [
+            "도착",
+            "오늘07:00"
+          ],
+          [
+            "현재",
+            "언어·약화,혈당과 영상·재관류 적합성 평가 중"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.3d0852.0",
+      "type": "anatomy3d",
+      "sceneRef": "scene.neurology.localization.stroke.14ce8cbb"
+    },
+    {
+      "id": "neurology.stroke.acute-ischemia-assessment.limits0852",
+      "type": "clinicalPearl",
+      "markdown": "정상 거시 구조의 위치 문맥이다. 실제 축삭 연결·감각 교차·전기활동·도파민·시교차상핵·병변·폐색·관류·질환과 치료 적합성을 이 정적 모델이 표현하거나 정하지 않는다. 오른쪽만 확인된 구조를 좌우 완전 회로로 표시하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/08-neuroscience-psychiatry/subjects/neurology/chapters/stroke/sections/neurology.stroke.acute-ischemia-assessment.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neurology.stroke.acute-ischemia-assessment.001"
+  ],
+  "relatedLessons": [
+    "neurology.examination.localizing-weakness"
+  ]
+}

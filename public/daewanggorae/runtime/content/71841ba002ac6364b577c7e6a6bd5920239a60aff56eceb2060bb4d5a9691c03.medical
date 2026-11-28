@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.general.pharmacokinetics",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.cd014f1ae98c",
+      "sourceSha256": "cd014f1ae98c82d18b292253f8279963ded880a628fc1f3dfe845e5bbbb71074",
+      "sourceLengthUtf16": 279,
+      "annotations": [
+        {
+          "id": "ann.5fe0f4ed59876d2afce5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 172,
+            "end": 188,
+            "exact": "pharmacodynamics",
+            "prefix": " 결합 이후의 지연이 영향을 준다. 약력학(",
+            "suffix": ", PD)은 농도와 효과의 관계를 다루므로 "
+          },
+          "conceptId": "reader.term.3f6c24ce1179f5f7",
+          "targetDocumentId": "pharmacology.general.pharmacodynamics"
+        },
+        {
+          "id": "ann.0ba6662d7655dc7a2519",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 57,
+            "end": 103,
+            "exact": "혈중 농도는 약효를 결정하는 중요한 정보지만 표적 부위 농도와 언제나 같지는 않다.",
+            "prefix": "·분포·대사·배설되는 시간 경과를 다룬다. ",
+            "suffix": " 약물이 혈액과 조직 사이에서 이동하는 속도"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.0ccf8305ab9f",
+      "sourceSha256": "0ccf8305ab9f1b9042391b5d807277eff95f8ce17b77074eafe957a52860f3af",
+      "sourceLengthUtf16": 256,
+      "annotations": [
+        {
+          "id": "ann.2e4ab7b3004caed53de9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 92,
+            "end": 148,
+            "exact": "다구획 모형에서는 혈액과 빠르게 평형을 이루는 중심 구획, 더 천천히 분포하는 말초 구획을 구분한다.",
+            "prefix": " 몸이 한 개의 물주머니라는 뜻은 아니다. ",
+            "suffix": " 정맥 투여 직후 농도가 빠르게 떨어지는 분"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.783684c0d04f",
+      "sourceSha256": "783684c0d04f17d7fb8c66a334d4920a5dfeafc18a8f2105bb8865b83a70fe5a",
+      "sourceLengthUtf16": 256,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.a9c90e54865c",
+      "sourceSha256": "a9c90e54865cf18a93bff2dfc2f6e029a8472ba80a190e4becb16dbe1686a411",
+      "sourceLengthUtf16": 272,
+      "annotations": [
+        {
+          "id": "ann.472df39c75b4a71e06c7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 80,
+            "end": 83,
+            "exact": "청소율",
+            "prefix": "방향으로 변한다고 단정할 수 없다. 동시에 ",
+            "suffix": "과 분포가 변할 수 있기 때문이다. 비만, "
+          },
+          "conceptId": "reader.term.52a8b75072525e18",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.5788af1ed51c",
+      "sourceSha256": "5788af1ed51c407e71ae48b8b5144f90a1e56fc69f130314d6af08f4b89c9bf7",
+      "sourceLengthUtf16": 249,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.e236037e9184",
+      "sourceSha256": "e236037e91844618824e9a3ab498715a4a59c5701008e450015b41c55b9318f0",
+      "sourceLengthUtf16": 275,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.c100a5d59cd2",
+      "sourceSha256": "c100a5d59cd2fba54df48c537b161aeb5b64b325727320601032d4882cfa4776",
+      "sourceLengthUtf16": 257,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.5f7aec3eed3d",
+      "sourceSha256": "5f7aec3eed3d0696a5e8f524679e6faec5c3ad07ae41278c40005d5a38a2a84a",
+      "sourceLengthUtf16": 248,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.bf1d25f3a315",
+      "sourceSha256": "bf1d25f3a3154029d11834ea1abceb785826bcc47dd2640846a340b86e8923a0",
+      "sourceLengthUtf16": 292,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.pharmacokinetics.b.bb90c91fac09",
+      "sourceSha256": "bb90c91fac09f64681ba65975400d5acb3255f95e10bd036516b88b8dd422ff7",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    }
+  ]
+}

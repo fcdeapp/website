@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.hemodynamics.shock-perfusion-injury",
+  "subjectId": "pathology",
+  "chapterId": "hemodynamics",
+  "title": {
+    "ko": "쇼크·산소 전달·미세순환 손상",
+    "en": "Shock, Oxygen Delivery and Microcirculatory Injury"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.lo.01",
+      "text": "쇼크를 혈압 수치와 구별하여 정의한다"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.lo.02",
+      "text": "산소 전달·소비·추출의 수지를 계산한다"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.lo.03",
+      "text": "젖산·정맥혈 산소 자료의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.929752b2a09b",
+      "type": "heading",
+      "level": 2,
+      "text": "혈류·공급·세포 이용의 불균형"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.069007c53439",
+      "type": "paragraph",
+      "markdown": "쇼크(shock)는 조직의 대사 요구에 맞는 관류와 산소 공급·이용이 유지되지 못하여 세포 기능과 장기 기능이 위협받는 순환 부전 상태다. 저혈압은 중요한 징후일 수 있지만 특정 혈압 수치 하나가 모든 쇼크를 정의하거나 배제하지는 않는다. 초기 보상으로 동맥압이 유지되어도 국소 관류가 감소할 수 있고,만성적으로 낮은 혈압과 급성 조직 저관류의 의미도 다르다. 순환의 압력·유량·분포·산소 운반을 나누어 평가해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.0c1a43196e34",
+      "type": "paragraph",
+      "markdown": "저혈량성·심장성·폐쇄성·분포성이라는 구분은 원인 기전의 큰 축을 요약한다. 실제로는 감염에 따른 혈관확장과 심근 기능 저하,체액 소실 등이 섞일 수 있다. 각 이름을 심박출량·혈관저항·충만압이 언제나 같은 방향으로만 변하는 고정표로 사용하지 않는다. 환자의 시점,보상 반응과 이미 받은 처치가 관찰값에 영향을 주기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.801ff009e1be",
+      "type": "heading",
+      "level": 2,
+      "text": "산소 전달의 단위와 수지"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.714d21cae327",
+      "type": "paragraph",
+      "markdown": "전신 산소 전달량(oxygen delivery, DO2)은 심박출량(CO)과 동맥혈 산소함량(CaO2)의 곱이다. CO를 L/min,CaO2를 mL O2/dL로 쓰면 DO2=CO×CaO2×10으로 용적 단위를 맞춘다. 산소함량은 주로 헤모글로빈량과 포화도에 영향을 받고 혈장에 녹은 산소도 일부 기여한다. 동맥 산소분압과 산소함량은 같은 변수가 아니므로 정상 분압이 산소 운반량의 충분함을 단독 보장하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.fe13dd4c0ed2",
+      "type": "paragraph",
+      "markdown": "질량 수지가 성립하는 조건에서 산소 소비량(VO2)은 CO×(CaO2−CvO2)×10으로 나타낼 수 있다. CvO2는 대표적인 혼합정맥혈 산소함량이다. 산소추출률(OER)은 VO2/DO2이며,같은 단위 조건에서는 (CaO2−CvO2)/CaO2다. 중심정맥 검체는 혼합정맥 검체와 위치·대표성이 달라 같은 값이라고 가정하지 않는다. 산소포화도 비만으로 함량 차이를 대체할 때에도 헤모글로빈과 용존 산소 등 가정을 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.dba76e367d32",
+      "type": "heading",
+      "level": 2,
+      "text": "보상 추출과 미세순환"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.f9f5847cc0ae",
+      "type": "paragraph",
+      "markdown": "공급이 줄 때 조직이 산소 추출을 높이면 일정 범위에서 소비가 유지될 수 있다. 그러나 그 여유에는 한계가 있고,장기별 부하와 혈류 분포가 다르다. 전신 평균 전달량이 충분해 보여도 미세혈관의 흐름이 불균일하거나 세포 이용이 저해되면 일부 조직은 부족할 수 있다. 전신 평균 지표 하나와 모든 세포의 대사 상태를 동일시하지 않는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.2e80c35ce935",
+      "type": "paragraph",
+      "markdown": "염증과 내피·글리코칼릭스 손상은 장벽 투과성,혈구와 내피의 상호작용,국소 응고 및 혈류 분포를 바꿀 수 있다. 간질 부종은 확산 거리와 미세관류에 영향을 줄 수 있고,심한 손상에서는 미토콘드리아의 기능도 변한다. 이 과정은 혈류가 충분한 정상 조직의 단순 압력식만으로 모두 설명되지 않는다. 거시 순환 개선과 미세순환·장기 기능의 회복은 서로 관련되지만 동일한 사건은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.7674691f4ebc",
+      "type": "heading",
+      "level": 2,
+      "text": "젖산을 해석하는 범위"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.6e65e5631287",
+      "type": "paragraph",
+      "markdown": "혈중 젖산(lactate)은 생성과 이용·제거의 수지에 따라 달라진다. 산소 부족 아래 해당 대사의 기여가 커질 수 있으나,교감 자극과 대사 유량 증가,간·신장의 처리 변화 등도 관여한다. 젖산 상승만으로 특정 위치의 무산소 상태나 원인을 확정하지 않는다. 연속 수치가 감소했다는 사실도 변화한 생성과 제거,시간·검체 조건을 함께 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.edaafa423d92",
+      "type": "paragraph",
+      "markdown": "정맥혈 산소가 높다는 관찰은 언제나 충분한 조직 이용을 뜻하지 않는다. 낮은 요구량,특정 혈류 분포,추출 장애나 검체 위치 등이 영향을 줄 수 있다. 반대로 낮은 값은 전달량과 소비량 사이의 균형을 평가하는 단서이지 단독 원인 진단이 아니다. 젖산과 정맥혈 지표를 네 개의 칸에 넣는 단순 도식은 학습에는 유용할 수 있으나 각 칸이 특정 임상 상태를 확진한다고 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.1464dae6cf2b",
+      "type": "heading",
+      "level": 2,
+      "text": "장기 손상과 시간 경과"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.2fa6d4204bb1",
+      "type": "paragraph",
+      "markdown": "지속 관류 부전은 신장·간·뇌·심장 등 여러 장기의 기능을 위협하며,원래 장기 기능과 손상 민감도에 따라 표현이 다르다. 소변량·의식·피부 관류·호흡과 혈액검사는 서로 다른 측면을 반영한다. 어떤 지표는 변화가 늦게 나타날 수 있어 단일 정상값으로 초기 손상을 모두 배제하기 어렵다. 정상 3D 장기 외형은 위치 관계를 보조할 수 있지만 그 자체가 쇼크의 혈류·장벽·세포 손상 모델은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.b.dd395b18ad42",
+      "type": "paragraph",
+      "markdown": "독립 계산에서 CO=4L/min,CaO2=18mL/dL이면 DO2=720mL O2/min이다. VO2=180mL/min을 별도로 지정하면 OER=0.25다. CO를3L/min으로 줄이고 소비를 같은 값으로 유지하는 모형에서는 DO2=540,OER은1/3로 증가한다. 이 수치는 산소 수지 연습용이며 정상 범위·치료 목표·실제 환자의 추출 가능 한계를 뜻하지 않는다. 실제 쇼크 치료의 약물·수액·시술 선택과 목표는 질환·원인별 임상 근거로 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.diagram.shock-delivery-flow-example",
+      "type": "diagram",
+      "diagramRef": "diagram.shock-delivery-flow-example",
+      "path": "diagrams/diagram.shock-delivery-flow-example.svg",
+      "alt": "함량을 고정한 산소 전달의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.hemodynamics.shock-perfusion-injury.table.compare",
+      "type": "table",
+      "data": {
+        "title": "쇼크의 자료 층",
+        "columns": [
+          "값",
+          "질문"
+        ],
+        "rows": [
+          [
+            "혈압",
+            "압력과 보상 상태"
+          ],
+          [
+            "CO·CaO2",
+            "전달 유량과 함량"
+          ],
+          [
+            "VO2·OER",
+            "수지·추출"
+          ],
+          [
+            "젖산·정맥혈",
+            "생성/제거·검체·분포 확인"
+          ]
+        ],
+        "notes": "정의·가정과 대표 관계의 비교이며 단일 임상 판정 규칙이 아니다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/hemodynamics/sections/pathology.hemodynamics.shock-perfusion-injury.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "쇼크의 압력·유량·산소 운반과 세포 이용은 구별한다."
+  ],
+  "relatedLessons": [
+    "pathology.immunity.hypersensitivity-mechanisms",
+    "pathology.proteins.amyloid-deposition"
+  ],
+  "reviewQuestions": [
+    "question.pathology.hemodynamics.shock-perfusion-injury.001",
+    "question.pathology.hemodynamics.shock-perfusion-injury.002"
+  ]
+}

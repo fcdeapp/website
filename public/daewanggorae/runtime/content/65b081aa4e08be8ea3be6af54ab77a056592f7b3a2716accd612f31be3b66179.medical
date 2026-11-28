@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.cell.accumulations-calcification",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.635e521ebab3",
+      "sourceSha256": "635e521ebab3e7dcb702ffb07c5b563778452c2f61c4f8baa7743a3424fb9a25",
+      "sourceLengthUtf16": 256,
+      "annotations": [
+        {
+          "id": "ann.84443eacf629f0545394",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 159,
+            "end": 163,
+            "exact": "글리코젠",
+            "prefix": "수 있다. 같은 형태의 공포가 보여도 지질·",
+            "suffix": "·물·단백질인지 구별해야 하며,고정·표본 처"
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        },
+        {
+          "id": "ann.bb9b6c363da07188d6ef",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 213,
+            "exact": "같은 형태의 공포가 보여도 지질·글리코젠·물·단백질인지 구별해야 하며,고정·표본 처리 중 성분이 빠져나간 빈 공간인지도 확인한다.",
+            "prefix": " 물질의 제거 곤란이 원인이 될 수 있다. ",
+            "suffix": " 형태 소견은 분석의 시작이며 화학적 정체와"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.44e58067953d",
+      "sourceSha256": "44e58067953d02355ff5116418d7cb9f0511cfba335e07577bd3445c23d6da50",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.282711dad4b3",
+      "sourceSha256": "282711dad4b3947d9d70097c95356aea4108c18e726e2aab228f4ce11520adfe",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.3f81bbc859e6",
+      "sourceSha256": "3f81bbc859e635ab93f2511bfd9bc1cf99bdb979f7368c13da72960c63c928ee",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.4846166bf9fc",
+      "sourceSha256": "4846166bf9fcc93a4e962556c93dd1649e1a21f23cefa9308e4aa23da168e2a0",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.a599ed9e3d07",
+      "sourceSha256": "a599ed9e3d07aec4a81dc2b4843498b8b9acabb494cf56475dcca078975ab880",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.437cca46139c",
+      "sourceSha256": "437cca46139c97177c15ecee7af51f126e1582538d1d5e804fbba00258369e02",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.268a04d8c9c8",
+      "sourceSha256": "268a04d8c9c8379099dc23975ab7097d0d10c10df43917f77f8df77c7985bb7d",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.933c8bea8526",
+      "sourceSha256": "933c8bea8526d9c168487f68d67a45f5ff2285c0df0bd378d9c9618badf7ed61",
+      "sourceLengthUtf16": 261,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.accumulations-calcification.b.8a8b9b324fbf",
+      "sourceSha256": "8a8b9b324fbf9135d704af2c957b44bf7ac0db36338731f087a3010fb21890ec",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    }
+  ]
+}

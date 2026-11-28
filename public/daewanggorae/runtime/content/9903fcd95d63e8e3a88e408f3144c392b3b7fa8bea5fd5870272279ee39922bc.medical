@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pediatrics.hematology.iron-deficiency",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.83cf429cfeb4",
+      "sourceSha256": "83cf429cfeb462a18fdf65eae0aa3e44e2fca311948a50c0eb91b70e4391e308",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.34ac157acb48",
+      "sourceSha256": "34ac157acb484a492a95636b8374cb7730e1c890e380ea2f847b64245e385098",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.9e5feca3f286",
+      "sourceSha256": "9e5feca3f2861847b49ad6b37ff76fa45b21742e91c0dd0c29dc32e9730bd046",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.f308ef6352fa7c4eaa73",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 42,
+            "end": 47,
+            "exact": "망상적혈구",
+            "prefix": "scular volume, MCV)과 분포·",
+            "suffix": " 등은 빈혈의 기전을 좁히는 자료다. 작은 "
+          },
+          "conceptId": "reader.term.fec5506483a11f5d",
+          "targetDocumentId": "hematology.anemia.reticulocytes"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.f2bf67c5153b",
+      "sourceSha256": "f2bf67c5153bbfd4a5f3e4d4256f8eadc98cb878fe978c0d60d616ff55257e67",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.2bc9bfa71153",
+      "sourceSha256": "2bc9bfa71153d37843474ed540ca3ba80a94ba0ac4d90529c30e465af65a2b33",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.6418c99d606aa084d3bf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 111,
+            "end": 141,
+            "exact": "염증과 철 이용 제한, 실제 저장량과 이동을 구별한다.",
+            "prefix": " 모든 상황의 철 부족을 배제하지 않는다. ",
+            "suffix": " 트랜스페린과 포화도, 망상적혈구 관련 지표"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.393a6856e138",
+      "sourceSha256": "393a6856e138c0dcd50884d80cdf7bc2cf10c69173f3fe925271c09bf13cf695",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.f3bbd3373255",
+      "sourceSha256": "f3bbd3373255581eee4f28935d7abbc9907d4fc619c0421b590dc6f4b0edf5b3",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.30b9a48ec76d",
+      "sourceSha256": "30b9a48ec76d6e51ee805796108256ac54b5c1663b64ed1a200ade158cabd667",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.d2fe5f31210f",
+      "sourceSha256": "d2fe5f31210fd6c14137dc56fe48c2215815342a18412b5828ff2d997d461096",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "pediatrics.hematology.iron-deficiency.b.e504bda11b09",
+      "sourceSha256": "e504bda11b095cc88fa8416c775655fd9bd48181e5a371f5c973ebc51f3e73ce",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    }
+  ]
+}

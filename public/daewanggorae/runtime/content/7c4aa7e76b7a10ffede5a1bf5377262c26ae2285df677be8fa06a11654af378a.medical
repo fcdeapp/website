@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pulmonology.infection.cap-diagnosis-severity",
+  "subjectId": "pulmonology",
+  "chapterId": "infection",
+  "title": {
+    "ko": "지역사회폐렴의 진단과 중증도",
+    "en": "Diagnosis and Severity in Community Acquired Pneumonia"
+  },
+  "learningObjectives": [
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.lo.01",
+      "text": "증상·영상·미생물의 근거를 통합한다"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.lo.02",
+      "text": "장소 결정과 생리적 위험을 구별한다"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.lo.03",
+      "text": "검사 선택과 결과의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.23e4db702df0",
+      "type": "heading",
+      "level": 2,
+      "text": "증후군을 확인한다"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.c00e02f54663",
+      "type": "paragraph",
+      "markdown": "지역사회획득폐렴(community-acquired pneumonia, CAP)은 발생 환경과 숙주·임상 맥락에서 평가한다. 기침과 가래·발열, 숨참·흉통과 전신 증상에 실질 침범의 영상 근거를 연결한다. 급성 기관지염과 심부전·폐색전·출혈 등 비슷한 양상을 구별한다. 고령과 면역저하, 조기 검사와 탈수 등에서는 전형적 소견이 약할 수 있어 한 가지 증상만으로 진단을 고정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.cc913f5a3205",
+      "type": "paragraph",
+      "markdown": "흉부사진과 필요한 다른 영상은 실제 질문에 맞게 선택한다. 폐초음파는 접근 가능한 흉막 가까운 병변과 액체 등 정보를 줄 수 있지만 검사자와 부위·조건에 의존한다. CT는 다른 구조와 합병증·감별을 보완할 수 있다. 감염의 존재를 확인하는 질문과 책임 균종을 찾는 질문, 중재할 합병증을 찾는 질문은 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.a7b6000c81fb",
+      "type": "heading",
+      "level": 2,
+      "text": "중증도는 현재와 미래를 본다"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.91e3b1a613ff",
+      "type": "paragraph",
+      "markdown": "의식과 호흡수·산소화, 혈압·관류와 장기 기능을 우선 평가한다. 나이와 동반질환, 기능·취약성과 이전의 예비력도 현재 위험을 바꾼다. 임상 점수는 검증된 대상과 정의에 맞게 활용하되 저산소나 빠른 악화, 장기 지원의 필요성을 모두 대신하지 않는다. 낮은 점수가 모든 환자의 안전한 외래 치료를 보장하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.1ddde2d6e7e0",
+      "type": "paragraph",
+      "markdown": "입원·중환자실 등 장소 선택에는 생리적 위험과 함께 복약·식사·수분 섭취, 보호자와 생활·추적의 접근성이 영향을 준다. 같은 검사 수치라도 집에서 관찰·재평가를 받을 수 있는 조건이 다를 수 있다. 면역억제와 특정 숙주는 일반 CAP의 예측 도구와 치료 근거 대상에서 다르게 평가해야 한다. 위험 범주와 실제 지원 필요를 따로 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.e4127d8298d6",
+      "type": "heading",
+      "level": 2,
+      "text": "미생물검사는 대상과 시점이 중요하다"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.aa6353f83fe4",
+      "type": "paragraph",
+      "markdown": "객담의 질과 선행 항균제, 혈액배양의 채취 조건은 검출에 영향을 준다. 바이러스 핵산과 특정 항원 검사는 각기 다른 대상을 본다. 검사의 양성은 동시 세균 감염의 가능성까지 모두 해결하지 않으며, 음성도 검사 범위 밖의 미생물을 배제하지 않는다. 결과가 치료의 범위·감염관리와 합병증 평가를 바꿀지 생각하여 선택한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.070bb17aafbc",
+      "type": "paragraph",
+      "markdown": "중증과 특정 내성 위험·집단 노출, 치료 실패에서는 더 많은 진단 자료가 필요할 수 있다. 반대로 모든 안정 환자에게 같은 침습 검사와 배양을 일률적으로 나열하는 것이 정확성을 보장하지 않는다. 프로칼시토닌과 염증 지표도 숙주·시점과 다른 질환에 영향을 받는다. 한 수치만으로 실제 임상·영상 근거가 있는 감염의 관리 방향을 자동 결정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.bf3239c8f9b7",
+      "type": "heading",
+      "level": 2,
+      "text": "시작 자료를 남긴다"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.452581d80614",
+      "type": "paragraph",
+      "markdown": "증상 시작과 검체·항균제의 날짜, 산소와 호흡·순환 상태 및 영상 범위를 기록한다. 치료 뒤의 변화는 이 기준과 비교해야 의미가 있다. 발열과 증상, 표지자와 영상의 회복 속도는 다르므로 하나가 남았다는 이유만으로 즉시 실패로 보지 않는다. 반대로 새 저관류·의식·호흡 악화는 초기 진단과 다른 합병증을 재평가하게 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.b.123e851de9a6",
+      "type": "paragraph",
+      "markdown": "지역사회에서 생겼다는 이름은 흔한 원인을 정리하지만 균종과 감수성, 환자별 위해를 확정하지 않는다. 최근 입원·항균제와 이전 미생물, 지역 역학과 노출을 구체적으로 확인한다. 국내와 다른 지역의 내성·허가와 임상 근거를 구별하여 적용한다. 원인 가능성과 현재 중증도, 검사와 관리 장소의 판단을 같은 시간표에서 연결하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.h.extra0846",
+      "type": "heading",
+      "level": 2,
+      "text": "점수와 생리의 불일치"
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.p.extra0846.0",
+      "type": "paragraph",
+      "markdown": "임상 예측 도구는 원래 연구된 집단과 결과를 바탕으로 위험을 정리한다. 사망 위험을 추정하는 도구와 현재의 침습 환기·혈압 지원이 필요한지를 평가하는 판단은 같은 목표가 아니다. 젊은 환자에서 나이 관련 점수가 작아도 빠르게 악화하는 저산소와 호흡 작업은 중요한 위험이다. 점수의 낮은 숫자를 실제 관찰보다 우선시하지 않는다."
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.p.extra0846.1",
+      "type": "paragraph",
+      "markdown": "원래의 활동과 인지·섭취,가정의 지원도 장소의 안전을 바꾼다. 생리적으로 비교적 안정적이어도 약물과 수분을 섭취할 수 없거나 재평가가 어려우면 같은 외래 경로를 유지하기 어려울 수 있다. 반대로 충분한 지원이 있어도 새 저관류와 장기 실패를 대신하지는 못한다. 기록에서는 점수와 현재 생리,실제 지원의 세 근거를 나누어 적으면 다음 진료자가 판단의 이유를 이해하기 쉽다."
+    },
+    {
+      "id": "pulmonology.infection.cap-diagnosis-severity.table0846",
+      "type": "table",
+      "data": {
+        "title": "근거·기전·관리 목표의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "진단",
+            "증후군·영상·감별"
+          ],
+          [
+            "위험",
+            "호흡·순환·의식·장기"
+          ],
+          [
+            "도구",
+            "원래 집단과 예측 결과"
+          ],
+          [
+            "장소",
+            "생리+복약·섭취·추적 조건"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/pulmonology/chapters/infection/sections/pulmonology.infection.cap-diagnosis-severity.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pulmonology.infection.cap-diagnosis-severity.001"
+  ],
+  "relatedLessons": [
+    "pulmonology.infection.pneumonia-host-gas-exchange",
+    "pulmonology.infection.cap-treatment-response"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-activation-tasks-0853",
+  "lessonId": "psychiatry.psychotherapy.cbt-formulation",
+  "title": "가상 활동 계획·완료 기록",
+  "series": [
+    {
+      "label": "계획",
+      "samples": [
+        {
+          "x": 1,
+          "y": 4
+        },
+        {
+          "x": 2,
+          "y": 5
+        },
+        {
+          "x": 3,
+          "y": 6
+        },
+        {
+          "x": 4,
+          "y": 6
+        }
+      ]
+    },
+    {
+      "label": "완료",
+      "samples": [
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 3
+        },
+        {
+          "x": 3,
+          "y": 4
+        },
+        {
+          "x": 4,
+          "y": 5
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "weeks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "planned": [
+      4,
+      5,
+      6,
+      6
+    ],
+    "completed": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "noTaskDifficultyEquivalenceOrCausalEfficacy": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1,
+      "max": 4,
+      "scale": "linear",
+      "ticks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label": "기록 주"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 8,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "label": "과제 수(개)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "계획",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "완료",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정 또는 가상 증례 자료다. 실제 환자·정상 범위·검사 기준·진단·투약·치료효과와 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

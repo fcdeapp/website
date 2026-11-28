@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.hemodynamics.edema-fluid-balance",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.21d927909c2e",
+      "sourceSha256": "21d927909c2ef7b6722f59e09e129741382c2edb451be25a358edf2caf7cb799",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.3527f8ca752e29c596ad",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 36,
+            "end": 83,
+            "exact": "장막 공간의 액체 증가도 관련 수지로 이해할 수 있지만 위치와 임상 용어는 구별한다.",
+            "prefix": "직 간질의 액체가 과도하게 증가한 상태다. ",
+            "suffix": " 혈관에서 간질로 나오는 유량이 늘거나 림프"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.c4e8d94683cf",
+      "sourceSha256": "c4e8d94683cf5bc412e694a58830d8da58fdac713057b469cf3b7f114c9442e3",
+      "sourceLengthUtf16": 221,
+      "annotations": [
+        {
+          "id": "ann.4fa9d04fc773e869b217",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 192,
+            "end": 196,
+            "exact": "RAAS",
+            "prefix": "소는 동시에 존재할 수 있어 부종이 있으면 ",
+            "suffix": "가 언제나 억제된다는 규칙은 성립하지 않는다"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.2e11d99195dc",
+      "sourceSha256": "2e11d99195dcb51852b39e2315936180bc821e9711bed8fcf2f814707baa1122",
+      "sourceLengthUtf16": 196,
+      "annotations": [
+        {
+          "id": "ann.79720dcde7d35c61c4e9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 31,
+            "exact": "정수압은 혈관과 간질 사이 물 이동의 중요한 구동력이다.",
+            "prefix": "",
+            "suffix": " 정맥압 상승은 일부 혈관층의 모세혈관 정수"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.663aa62abc1b",
+      "sourceSha256": "663aa62abc1bf08c7743c8df9e6b4b9f040a4cffaba3fc0d97f3740ccf3f77f3",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.487d198c14b346a046a5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 74,
+            "end": 111,
+            "exact": "림프 회수는 여과된 물과 단백질을 순환으로 돌려보내는 데 중요하다.",
+            "prefix": "모두 회수된다는 고전적 그림은 불완전하다. ",
+            "suffix": " 혈관 압력이 갑자기 감소하면 일시적인 흡수"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.ce43b54717b6",
+      "sourceSha256": "ce43b54717b6a7db9e69a8ea1668152e1e20c85a9490c68869b92a9c5500382a",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.dafd23334145",
+      "sourceSha256": "dafd23334145313c476ff76f405d4eb38816a2d8869b95d0e2c8b6584e7588a8",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.05d05f82eaea",
+      "sourceSha256": "05d05f82eaeabd97f6130faba85e881dfc44da505219a9e8ae707a30b8a12c25",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.dc2c4d0c9c30",
+      "sourceSha256": "dc2c4d0c9c303d6d3087c93330e0f133affa37b87ddc3845258d28ccd3c1cfa5",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.e98b410b1cb1",
+      "sourceSha256": "e98b410b1cb13e2ee7cf28dc82f6a9c1568accc4d742a2db690cf9f63440e149",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.hemodynamics.edema-fluid-balance.b.f6e12728def4",
+      "sourceSha256": "f6e12728def413c779a446ef149230a2dd024b2a3838744b9550666fddd0a0d5",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    }
+  ]
+}

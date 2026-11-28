@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "transfusion-medicine.compatibility.components-reactions",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.ac4cdd7177a0",
+      "sourceSha256": "ac4cdd7177a0d1b417792ec92203b9e14154a0831e25735d8ca45021c6e3ecf5",
+      "sourceLengthUtf16": 255,
+      "annotations": []
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.6129fa294bcf",
+      "sourceSha256": "6129fa294bcf09b2309286a13d4d67f68446b42400f4d6b521d9c47924868574",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.b27fa0509970",
+      "sourceSha256": "b27fa0509970e718230e76e51ca849a3c30326b91183b95ed37521a1e3f85d99",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.2afc2db417519637313a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 46,
+            "end": 91,
+            "exact": "적혈구제제에서는 공여 적혈구의 항원이 수혜자의 혈장 항체와 반응하는지가 중요하다.",
+            "prefix": " 항체의 관계가 ABO 적합성의 기본이다. ",
+            "suffix": " O형 적혈구는 A와 B 항원이 없어 일부 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.d084f19710cf",
+      "sourceSha256": "d084f19710cf239c336ba36034f0e07f886e31d26b73a80c73f25dd7946a41c5",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.341e731b7115",
+      "sourceSha256": "341e731b711596d213cd05fcb30a1148ee0a7dab44536f909eb13afd02189d78",
+      "sourceLengthUtf16": 240,
+      "annotations": [
+        {
+          "id": "ann.6e3e8ec9b3d41e2488f6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 148,
+            "end": 178,
+            "exact": "과거 항체 기록과 정확한 환자 식별이 중요한 이유이다.",
+            "prefix": "시험은 이런 반응 위험을 줄이는 과정이다. ",
+            "suffix": " 검사가 정교해도 다른 사람의 검체를 사용하"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.f57c04637ca4",
+      "sourceSha256": "f57c04637ca4d8d00783c9cc31da798906a88612e9ea8b9744c7b72ae2146071",
+      "sourceLengthUtf16": 237,
+      "annotations": [
+        {
+          "id": "ann.271e1f6ce1d635e616ac",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 39,
+            "end": 41,
+            "exact": "보체",
+            "prefix": "에서는 항체와 공여 적혈구 항원의 반응 및 ",
+            "suffix": " 활성 등이 적혈구 파괴를 일으킬 수 있다."
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        },
+        {
+          "id": "ann.593030c31c5c58244fc4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 203,
+            "exact": "마취 중인 환자는 통증이나 불안감을 표현하지 못하므로 출혈 양상과 혈역학 변화 등이 중요한 단서가 될 수 있다.",
+            "prefix": "견이 처음부터 함께 나타나는 것은 아니다. ",
+            "suffix": " 수혈 중 새 이상을 단순한 수술 반응으로만"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.ff1e6e727bdf",
+      "sourceSha256": "ff1e6e727bdffcb6d84f7a1ed6dddd44150e0b9601d03928d48930e0fa8596f6",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.1bc0e8170389",
+      "sourceSha256": "1bc0e81703896e21a2ecbdffa1997b3b3bd62fb77afe0275226aa52ba7499bc1",
+      "sourceLengthUtf16": 242,
+      "annotations": [
+        {
+          "id": "ann.b7497f19d1774dc3a972",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 149,
+            "end": 155,
+            "exact": "아나필락시스",
+            "prefix": "심의 알레르기 반응과 기도·순환을 위협하는 ",
+            "suffix": "도 중증도가 다르다. 새로운 반응이 의심되면"
+          },
+          "conceptId": "reader.term.f3a181572606371b",
+          "targetDocumentId": "allergy.emergencies.anaphylaxis"
+        }
+      ]
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.cc54ccccf52d",
+      "sourceSha256": "cc54ccccf52d489a65388a0b2f0a38b9be32eeca67e2699dbcb98bc6f9acc383",
+      "sourceLengthUtf16": 338,
+      "annotations": []
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.bfe8d382f760",
+      "sourceSha256": "bfe8d382f760fac893c21d47c32d55c64e7c86ab4674cb4943e21f2e39b8a7fb",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "transfusion-medicine.compatibility.components-reactions.b.26b4b4a7aa70",
+      "sourceSha256": "26b4b4a7aa709474cf8c480d31d07aaa9dc3a6877ae92e727590db479e4bd10f",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    }
+  ]
+}

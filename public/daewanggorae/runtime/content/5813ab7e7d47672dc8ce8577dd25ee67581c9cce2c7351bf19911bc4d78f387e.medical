@@ -1,0 +1,163 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.physiology.fluid-kidney-balance",
+  "subjectId": "general-surgery",
+  "chapterId": "physiology",
+  "title": {
+    "ko": "수술 전후 체액·관류와 신장",
+    "en": "Perioperative Fluid Perfusion and Kidney Function"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.lo.01",
+      "text": "체액 분포와 유효 순환을 구별한다"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.lo.02",
+      "text": "소변량·체중·농도 변화를 통합한다"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.lo.03",
+      "text": "수액 반응성과 투여 이득의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.a7799896340d",
+      "type": "heading",
+      "level": 2,
+      "text": "들어온 양과 순환에 쓰이는 양"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.9b1951c56d96",
+      "type": "paragraph",
+      "markdown": "체내 수분은 세포 안과 밖으로 나뉘며 세포외액도 혈관 안과 간질에 분포한다. 수액이 몸 안에 들어왔다는 사실과 충분한 유효 순환이 확보되었다는 사실은 다르다. 출혈·탈수는 용적을 줄이고, 마취·염증에 따른 혈관 확장과 투과성 변화는 분포를 바꾼다. 심장 펌프 기능과 정맥 울혈도 관류에 영향을 준다. 부종이 있는 환자에게도 저관류가 공존할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.edf020ba82c7",
+      "type": "paragraph",
+      "markdown": "혈압은 압력이며 조직 혈류·산소 전달의 완전한 대리값이 아니다. 정상 혈압에서도 분포 이상과 낮은 유량이 있을 수 있고, 개인의 평소 압력·혈관 저항에 따라 같은 숫자의 의미가 달라진다. 의식과 피부·말초 관류, 맥박·호흡, 소변과 대사 지표, 출혈 및 심장·초음파 자료를 통합한다. 한 지표가 좋아졌다는 이유로 다른 장기의 악화를 무시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.774cb11f687b",
+      "type": "heading",
+      "level": 2,
+      "text": "수액 반응성과 수액 필요성"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.71630c48bebe",
+      "type": "paragraph",
+      "markdown": "수액 반응성은 전부하 변화에 심박출량이 증가하는지를 뜻한다. 심박출량이 늘 수 있다는 사실만으로 환자에게 더 많은 수액이 이롭다고 단정할 수 없다. 이미 폐·간질 부종과 정맥 울혈이 심한 상태에서는 추가 용적의 위해가 이득을 넘을 수 있다. 동적 지표도 자발호흡·부정맥·일회호흡량과 흉복부 압력 등 적용 조건에 영향을 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.d3aff4e2f5c1",
+      "type": "paragraph",
+      "markdown": "수액은 적응증과 목표, 투여 뒤 재평가를 함께 정하는 치료다. 출혈에서의 혈액 성분과 비출혈성 체액 손실, 유지와 소실 보충은 서로 다른 질문이다. 단순히 소변량을 늘리기 위해 반복 주입하면 실제 저관류 원인·막힘·신장 손상을 놓칠 수 있다. 심한 손실이 계속되면 유입량만 보지 말고 원천을 통제하고 유출의 종류와 전해질 조성을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.b464949e355b",
+      "type": "heading",
+      "level": 2,
+      "text": "신장 관찰은 시간 축을 가진다"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.2017088fbf89",
+      "type": "paragraph",
+      "markdown": "수술 뒤 소변 감소는 저관류·호르몬성 수분 보존·신장 실질 손상·정맥 울혈·요로 폐쇄 등 여러 원인으로 생길 수 있다. 먼저 수집이 정확한지와 관·방광의 문제를 살핀다. 크레아티닌은 생성과 분포·배설의 결과이며 급성 변화 뒤 늦게 상승할 수 있다. 근육이 적은 환자에서 낮은 농도가 항상 좋은 여과를 뜻하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.295144ddfd1d",
+      "type": "paragraph",
+      "markdown": "이전 신장 기능과 수술·약물·저혈압·감염의 시점, 누적 수지와 체중을 연결한다. 이뇨 후 소변량 증가가 실질 손상의 회복과 같은 것은 아니고, 혈중 크레아티닌이 낮아진 것이 희석 때문일 수도 있다. 가능한 원인을 구별하면서 신독성 노출과 용량 조정, 전해질·산염기 및 체액 과다를 관리한다. 검사 하나의 정상을 기다리는 동안 장기 위협을 놓치지 않도록 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.646fb10685a1",
+      "type": "heading",
+      "level": 2,
+      "text": "수지와 농도의 구별"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.f340493f59eb",
+      "type": "paragraph",
+      "markdown": "가상의 하루 유입이 3.0L, 소변 1.2L와 배액 0.4L라면 기록된 순수지는 +1.4L다. 하지만 불감 손실·대변·숨은 손실과 기록 오차가 빠져 있다. 이 숫자를 그대로 혈관 내 증가량이나 실제 체중 변화와 동일시하지 않는다. 수지·체중·부종·순환·검사값을 비교하면 누락과 분포 변화를 찾는 데 도움이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.13879bd02285",
+      "type": "paragraph",
+      "markdown": "혈청 나트륨은 총 나트륨 저장량만이 아니라 체수분에 대한 교환 가능한 양이 반영된 농도다. 희석과 소실·보존, 호르몬과 투여 조성에 따라 변화한다. 염소가 많은 용액의 큰 투여와 산염기 변화, 포도당·칼륨의 조건도 고려한다. 특정 용액 하나가 모든 수술과 모든 단계에 최선이라고 일반화하지 않고, 목적과 손실·장기 기능에 맞춰 조성·양·속도를 정한 뒤 반응을 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.22e00c1f0250",
+      "type": "heading",
+      "level": 2,
+      "text": "순환과 정맥 배출"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.b70b80182a9d",
+      "type": "paragraph",
+      "markdown": "신장의 여과 환경에는 동맥 쪽 압력뿐 아니라 정맥 쪽의 압력도 영향을 준다. 울혈이 심하면 높은 혈압과 부종이 있어도 신장 기능이 나빠질 수 있다. 따라서 낮은 소변량을 모두 동맥 유입 부족으로 설명하여 반복 수액만 주는 접근은 문제를 악화시킬 수 있다. 심장·폐와 정맥 상태를 함께 살핀다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.b.340980ae6372",
+      "type": "paragraph",
+      "markdown": "이전보다 체중이 늘고 산소 요구가 증가하면서 소변이 줄었다면 기록된 수지와 실제 투여, 심장·폐·방광과 약물의 조건을 대조한다. 수액을 줄일지 늘릴지의 판단에 앞서 현재의 기전을 확인해야 한다. 손실이 있는 환자와 과부하가 있는 환자에게 같은 소변량 숫자가 같은 처치를 뜻하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.physiology.fluid-kidney-balance.table0847",
+      "type": "table",
+      "data": {
+        "title": "구조·생리·근거와 관리의 연결",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "체액",
+            "총량과 분포의 차이"
+          ],
+          [
+            "수액",
+            "반응 가능성과 실제 이득"
+          ],
+          [
+            "신장",
+            "관류·울혈·실질·폐쇄"
+          ],
+          [
+            "기록",
+            "수지·체중·생리의 대조"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/physiology/sections/general-surgery.physiology.fluid-kidney-balance.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.physiology.fluid-kidney-balance.001"
+  ],
+  "relatedLessons": [
+    "general-surgery.physiology.stress-metabolism",
+    "general-surgery.wound.hemostasis-inflammation"
+  ]
+}

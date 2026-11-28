@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.inflammation.chronic-inflammatory-network",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.inflammation.chronic-inflammatory-network.b.47a9d5ef2362",
+      "sourceSha256": "47a9d5ef2362b1edaefe2a2fe3791e84df355aeb73e69a5a4f5b0fd2e821628a",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.43702ce92d34f792bff4",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 5,
+            "exact": "만성 염증",
+            "prefix": "",
+            "suffix": "(chronic inflammation)은 "
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        },
+        {
+          "id": "ann.d70e5d11daadb170f6c7",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 75,
+            "end": 80,
+            "exact": "급성 염증",
+            "prefix": "상, 회복 시도가 함께 나타나는 반응이다. ",
+            "suffix": "이 오래 지속된 뒤 생길 수도 있고, 자가면"
+          },
+          "conceptId": "reader.term.f2acf854a49eb98c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.chronic-inflammatory-network.b.5ba72529fd3e",
+      "sourceSha256": "5ba72529fd3ea13823cc4a83ea31499fd00229c338feeadc6eecec181c9983c6",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.chronic-inflammatory-network.b.1e275a35901b",
+      "sourceSha256": "1e275a35901bed63c1b3fdff46c7d2260be325176f2fa24c447cfeae7a61e5d6",
+      "sourceLengthUtf16": 203,
+      "annotations": [
+        {
+          "id": "ann.45364dd090fecfbe0599",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 24,
+            "end": 29,
+            "exact": "항원 제시",
+            "prefix": "대식세포는 포식과 살균, 사이토카인 생성과 ",
+            "suffix": ", 기질 재구성에 참여한다. T세포의 IFN"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.inflammation.chronic-inflammatory-network.b.f92d95214708",
+      "sourceSha256": "f92d95214708590562c2c982ec4535cebe09708f0ceefa8caca2b7c699837c87",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.chronic-inflammatory-network.b.9a8a0f77b393",
+      "sourceSha256": "9a8a0f77b3934a6b8d10bbba3b8194f0878136ac368d8c2c78a592591d3620fe",
+      "sourceLengthUtf16": 209,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.chronic-inflammatory-network.b.60dc9b64adfa",
+      "sourceSha256": "60dc9b64adfafb7edb484b56067f325031171b898ffcfa90fc8c78e977826ff3",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.chronic-inflammatory-network.b.0a966924144c",
+      "sourceSha256": "0a966924144c95b6e885505346098b76e1d6b48ceca7ba6fc6e697eb14064bc1",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.inflammation.chronic-inflammatory-network.b.fc7167b6767b",
+      "sourceSha256": "fc7167b6767b20c42fc1ceb1ff4a82b45f58a04b29e6f726217d369a09f6a6a1",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    }
+  ]
+}

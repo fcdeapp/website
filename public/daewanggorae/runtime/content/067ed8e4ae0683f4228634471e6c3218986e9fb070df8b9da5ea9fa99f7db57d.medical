@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.raas-target-pairs",
+  "lessonId": "pharmacology.cardiovascular.renin-angiotensin-drugs",
+  "title": "RAAS 약물의 표적과 결과",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "ACE 단계 억제",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "Ang II 생성·bradykinin 처리",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "AT1 수용체 차단",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "해당 수용체 매개 반응",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "혈관·원위 네프론 변화",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "BP·Cr·K의 다른 결과",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.raas-target-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "수용체 차단과 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.raas-target-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "혈중 농도와 작용 구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.raas-target-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "장기 이득과 초기 변화 구별",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "독립표적비교도다. 실제처방순서·약물동등용량표가아니다."
+  ],
+  "sourceImageUsed": false
+}

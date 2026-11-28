@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scene.neuroanatomy.forebrain.thalamic-networks.right-context",
+  "sceneId": "scene.neuroanatomy.forebrain.thalamic-networks.right-context",
+  "lessonId": "neuroanatomy.forebrain.thalamic-networks",
+  "triggerBlockId": "neuroanatomy.forebrain.thalamic-networks.b.1db49d738870",
+  "primaryStructures": [
+    "FMA258714"
+  ],
+  "contextStructures": [],
+  "highlightStructures": [
+    "FMA258714"
+  ],
+  "modelIds": [
+    "isa:FJ1827"
+  ],
+  "modelPaths": [
+    "bodyparts3d/isa_BP3D_4.0_obj_99/isa_BP3D_4.0_obj_99/FJ1827.obj"
+  ],
+  "cameraPosition": [
+    -12.926575,
+    -170.3559995986583,
+    1553.9250000000002
+  ],
+  "cameraTarget": [
+    -12.926575,
+    -80.1187,
+    1553.9250000000002
+  ],
+  "cameraUp": [
+    0,
+    0,
+    1
+  ],
+  "cameraFovDegrees": 35,
+  "autoFit": true,
+  "bounds": {
+    "min": [
+      -24.6054,
+      -98.3669,
+      1542.13
+    ],
+    "max": [
+      -1.24775,
+      -61.8705,
+      1565.72
+    ]
+  },
+  "opacity": {
+    "primary": 1,
+    "context": 0.18
+  },
+  "color": {
+    "primary": "#78649c",
+    "context": "#b5bcc7"
+  },
+  "transitionDuration": 700,
+  "easing": "easeInOutCubic",
+  "educationalPurpose": "오른쪽 시상핵·감각 중계·시상겉질 회로의 정상 구조 위치",
+  "verificationStatus": "original_OBJ_hash_and_bounds_checked_GLB_and_visual_review_pending",
+  "visualizationLimitations": [
+    "정상 성인 정적 메시로 기능 회로나 병변·발화를 재현하지 않는다.",
+    "전달본 preview-models에 이 장면의 GLB가 없으므로 원본 앱에서 모델 생성·가시성 검토가 필요하다.",
+    "VPL·VPM 등 개별 시상핵은 이 외형 메시에서 따로 확인되지 않는다."
+  ],
+  "dynamicAnatomyIncluded": false
+}

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.shock.reperfusion-cell-injury",
+  "subjectId": "pathology",
+  "chapterId": "shock",
+  "title": {
+    "ko": "허혈·재관류의 세포 손상",
+    "en": "Cellular Injury in Ischemia and Reperfusion"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.lo.01",
+      "text": "ATP 고갈과 이온 구배의 붕괴를 설명한다"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.lo.02",
+      "text": "재관류의 이득과 손상 증폭을 구별한다"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.lo.03",
+      "text": "미토콘드리아·칼슘·염증의 연결을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.7f166a11d5e8",
+      "type": "heading",
+      "level": 2,
+      "text": "산소 부족과 대사 흐름"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.d9bd0ae04cbb",
+      "type": "paragraph",
+      "markdown": "허혈은 혈류 감소로 산소뿐 아니라 기질 공급과 대사산물 제거가 함께 달라지는 상태다. 산소분압만 낮은 환경과 모든 조건이 같지 않다. 산화적 인산화가 제한되면 ATP를 공급하는 다른 경로의 기여와 세포의 에너지 요구 사이에 불균형이 생긴다. 세포 유형과 저장 기질, 온도·부하가 손상의 속도를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.7a9a05a9e0e4",
+      "type": "paragraph",
+      "markdown": "ATP가 줄면 이온 펌프, 단백질 합성과 세포 내 운반의 유지가 어려워진다. 나트륨과 물의 이동으로 세포가 붓고, 소포체·세포골격과 막 기능이 달라질 수 있다. 이러한 초기 변화는 일부 조건에서 회복 가능하지만 시간과 강도가 커지면 막과 미토콘드리아의 지속적인 손상으로 이어진다. 세포 부종 하나를 이미 모든 세포가 괴사했다는 증거로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.8e27fc8105e1",
+      "type": "heading",
+      "level": 2,
+      "text": "산염기와 칼슘"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.e5f7e2e3746f",
+      "type": "paragraph",
+      "markdown": "해당과정과 ATP 가수분해, 산성 대사 환경은 효소·막과 수송체에 영향을 준다. 세포 내 pH의 변화와 혈중 pH는 같은 구획의 값이 아니다. 혈액가스가 정상에 가까워졌다고 모든 조직의 대사 환경이 즉시 회복되었다고 할 수 없다. 반대로 산증이 있다는 한 사실만으로 어느 장기의 허혈이 원인인지 확정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.14064f759a13",
+      "type": "paragraph",
+      "markdown": "칼슘은 신호와 미토콘드리아 대사에 필요한 이온이지만 과도하게 축적되면 단백질분해효소·인지질분해효소와 여러 손상 경로가 활성화될 수 있다. 세포질·소포체·미토콘드리아는 서로 다른 칼슘 구획이다. 혈중 칼슘 농도가 같은 방향으로 변해야만 세포 내 과부하가 생기는 것은 아니다. 측정 구획과 실제 손상 기전을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.f7a760c7f883",
+      "type": "heading",
+      "level": 2,
+      "text": "산소가 돌아온 뒤의 변화"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.612557fb37b0",
+      "type": "paragraph",
+      "markdown": "재관류는 생존 가능한 조직에 산소와 기질을 다시 제공하고 대사산물 제거를 돕는다. 동시에 손상된 전자전달과 환원 상태에서 활성산소 생성이 증가하고 칼슘·pH의 급격한 변화가 손상을 증폭할 수 있다. 재관류 손상이 존재한다는 사실은 필요한 혈류 회복을 일반적으로 피해야 한다는 뜻이 아니다. 손상의 기전과 치료의 순이득은 다른 질문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.e59d57c9efd5",
+      "type": "paragraph",
+      "markdown": "활성산소는 지질·단백질·핵산에 영향을 줄 수 있지만 모든 반응성 산소가 언제나 같은 독성을 갖는 것은 아니다. 종류·농도·생성 위치와 항산화·수복 능력이 중요하다. 실험에서 산화 표지자가 증가했다는 결과를 특정 약물의 임상 효과로 바로 연결하지 않는다. 세포 신호와 비가역 손상, 환자의 결과 사이의 단계를 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.35a8bfc519e7",
+      "type": "heading",
+      "level": 2,
+      "text": "미토콘드리아의 문턱"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.f761c9cc7712",
+      "type": "paragraph",
+      "markdown": "칼슘 과부하와 산화 스트레스 등은 미토콘드리아 투과성 전이의 조건에 영향을 줄 수 있다. 막전위와 ATP 생성이 지속적으로 무너지면 세포 회복이 어려워진다. 바깥막의 투과 변화와 cytochrome c 방출 등은 세포 사멸 신호와 연결된다. 투과성 전이와 모든 미토콘드리아 반응을 동일한 단일 통로 사건으로 단순화하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.6372bd2a7055",
+      "type": "paragraph",
+      "markdown": "세포 사멸에는 괴사·아폽토시스와 여러 조절된 경로가 관여할 수 있다. 같은 조직에서도 손상 강도와 위치에 따라 다른 형태가 공존한다. 한 표지자의 변화만으로 전체 사멸 방식이 확정되는 것은 아니며, 실험 방법과 관찰 시점의 한계를 고려한다. 임상적으로는 조직의 구조와 실제 기능 결과를 함께 살펴야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.8d8b5210eb1e",
+      "type": "heading",
+      "level": 2,
+      "text": "염증과 미세혈관"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.2bd64ee444bf",
+      "type": "paragraph",
+      "markdown": "손상 세포에서 나온 성분은 면역 반응과 내피 활성화에 참여할 수 있다. 백혈구·혈소판과 장벽의 변화가 미세혈관 흐름과 부종을 바꾸면 큰 혈관이 열려도 조직의 충분한 재관류가 이루어지지 않을 수 있다. 혈관 개통과 세포 수준의 회복을 분리하는 이유다. 모든 미세관류 장애를 동일한 한 기전으로 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.b.8210d3efb7e6",
+      "type": "paragraph",
+      "markdown": "장기별로 대사 요구·혈관 구조·수복 능력이 달라 같은 순환 사건의 결과가 다르다. 세포 배양과 동물 모델의 결과는 기전 가설을 주지만 실제 환자군·중재 시점과 같지 않다. 조직 사진과 기능 검사, 분자 표지를 서로 다른 해상도의 증거로 사용한다. 정상 장기 모델에는 이러한 세포 내 손상 기능이 내장되어 있지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.reperfusion-cell-injury.table.0821",
+      "type": "table",
+      "data": {
+        "title": "관찰과 판단의 구별",
+        "columns": [
+          "관찰",
+          "정보"
+        ],
+        "rows": [
+          [
+            "큰 혈관",
+            "개통"
+          ],
+          [
+            "조직 기능",
+            "회복 미완료"
+          ],
+          [
+            "시점",
+            "재관류 뒤"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/shock/sections/pathology.shock.reperfusion-cell-injury.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.shock.reperfusion-cell-injury.001"
+  ],
+  "relatedLessons": [
+    "pathology.shock.endothelial-barrier",
+    "pathology.shock.renal-tubular-injury"
+  ]
+}

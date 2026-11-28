@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.cell-cycle-control-pairs",
+  "lessonId": "cell-biology.cell-cycle.checkpoints",
+  "title": "주기 진행을 조절하는 세 관계",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "DNA 손상 반응",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "CDK 활성의 억제·지연",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "활성 방추체 점검점",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "APC/C–CDC20 억제",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "APC/C 활성",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "securin·cyclin B 분해",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.cell-cycle-control-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "p53–p21 등",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cell-cycle-control-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "부착 이상 시",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.cell-cycle-control-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "표적 유비퀴틴화",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "각 조건의 대표 연결이다. 점검점 신호가 즉시 복구나 사멸을 보증하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.survival.endospore-dormancy",
+  "subjectId": "bacteriology",
+  "chapterId": "survival",
+  "title": {
+    "ko": "내생포자의 형성·발아와 생존 전략",
+    "en": "Endospore Formation and Germination"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.survival.endospore-dormancy.lo.01",
+      "text": "포자 형성과 증식을 구별한다"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.lo.02",
+      "text": "포자의 층과 저항성을 연결한다"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.lo.03",
+      "text": "발아·생존·소독 검사의 종말점을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.15fb34821b6f",
+      "type": "heading",
+      "level": 2,
+      "text": "증식 대신 보존을 택하는 과정"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.c64edfda21aa",
+      "type": "paragraph",
+      "markdown": "내생포자(endospore)는 일부 세균이 불리한 조건에서 유전정보와 생존 가능성을 보존하는 분화 형태다. 한 영양세포가 하나의 포자를 만들고 그 포자가 다시 하나의 영양세포로 돌아오는 과정 자체는 개체수를 늘리지 않는다. 곰팡이의 여러 생식 포자와 이름이 비슷해도 같은 생식 방식으로 해석하지 않는다. 모든 그람양성균이 포자를 만드는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.3e240afee4b6",
+      "type": "paragraph",
+      "markdown": "포자 형성에서는 비대칭 분열과 전포자의 포획, 여러 보호층 형성이 조정된다. 중심부의 낮은 수분과 단백질·DNA 보호, cortex와 coat의 특성이 열과 화학적 손상에 대한 저항성에 기여한다. 저항성은 한 물질이 단독으로 모든 손상을 막는 결과가 아니다. 손상의 종류와 포자의 성숙 정도에 따라 중요 요소가 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.eb0f61f0965e",
+      "type": "heading",
+      "level": 2,
+      "text": "휴면과 죽음의 차이"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.217c6f29e97a",
+      "type": "paragraph",
+      "markdown": "성숙 포자는 대사가 낮고 일반적인 증식 신호가 거의 없지만 적절한 조건에서 다시 자랄 능력을 유지할 수 있다. 대사 신호가 약하다는 이유만으로 죽었다고 판정할 수 없다. 반대로 포자 모양이 관찰된다고 그 입자가 모두 발아 가능한 것은 아니다. 구조적 잔존과 생존 가능성은 다른 속성이므로 측정 목적에 맞는 검사를 선택한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.e189720dece9",
+      "type": "paragraph",
+      "markdown": "발아(germination)는 환경 신호를 받아 보호 상태를 풀고 물과 이온의 상태를 바꾸는 전환이다. 이후 outgrowth를 거쳐 영양세포의 성장과 분열이 이루어진다. 발아의 시작을 보는 검사와 최종 집락 형성을 보는 검사는 서로 다른 단계에 대한 증거다. 발아는 시작했지만 손상 때문에 더 자라지 못하는 포자도 가능하므로 검사 종말점을 명시해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.78b7f1a7f11c",
+      "type": "heading",
+      "level": 2,
+      "text": "포자와 임상 병원성"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.5a9ccec5b8a7",
+      "type": "paragraph",
+      "markdown": "Bacillus와 여러 Clostridia 계통의 임상적으로 중요한 세균은 포자 형성과 관련된다. 포자는 환경에서 살아남고 새로운 숙주로 이동하는 데 기여할 수 있지만 증상의 직접 원인은 독소·증식·숙주 염증 등으로 나누어 설명해야 한다. 포자 그 자체를 모든 질환의 독성 분자로 취급하지 않는다. 산소 요구성과 독소 특성도 포자 형성 여부와 별도로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.e66feab8aaa5",
+      "type": "paragraph",
+      "markdown": "일상적인 피부 소독과 의료기구 멸균은 목표와 적용 대상이 다르다. 영양세포를 줄이는 처리가 포자까지 충분히 제거한다는 보장은 없다. 그러나 이 사실만으로 어떤 소독제든 항상 무효라고 일반화할 수도 없다. 물질·농도·시간·온도·유기물과 대상 표면에 따라 효과가 달라지며 실제 절차는 검증된 제품 지시와 기관 기준을 따라야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.30697aa69131",
+      "type": "heading",
+      "level": 2,
+      "text": "실험 결과를 읽는 방법"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.8b6e45b486bd",
+      "type": "paragraph",
+      "markdown": "처리 뒤 배양이 음성이라면 회복 배지와 배양 조건이 손상된 포자의 성장을 허용했는지 확인한다. 잔류 소독제가 배양 중에도 작용하면 실제 처리 효과가 과대평가될 수 있다. 반대로 시료 채취가 부적절하면 남아 있는 포자를 놓칠 수 있다. 무처리 대조·회수 대조·중화 대조는 서로 다른 오류를 검토한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.b.0248deb3a5a0",
+      "type": "paragraph",
+      "markdown": "포자 수를 줄이는 효과는 시작 오염량과 검출 한계를 포함하여 표현해야 한다. 배양에서 집락이 없다는 사실은 검사한 부피에서 검출되지 않았다는 뜻이며 무한한 정밀도의 절대 0과 다르다. 저항성 높은 구조의 존재, 실제 잔존 생존량, 재오염 가능성을 구별해야 포자 관찰을 감염관리의 적절한 판단으로 연결할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.survival.endospore-dormancy.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "포자 형성",
+            "생존 분화; 그 자체는 개체수 증가 아님"
+          ],
+          [
+            "발아",
+            "보호 상태에서 나오는 전환"
+          ],
+          [
+            "Outgrowth",
+            "영양세포 성장 재개"
+          ],
+          [
+            "집락 형성",
+            "지정 조건에서의 최종 회수 능력"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/survival/sections/bacteriology.survival.endospore-dormancy.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.survival.endospore-dormancy.001"
+  ],
+  "relatedLessons": [
+    "bacteriology.virulence.adhesion-motility",
+    "bacteriology.growth.counts-and-kinetics"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.repair.delayed-wound-healing",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.b51cbd2ffed1",
+      "sourceSha256": "b51cbd2ffed14f2729213a57edfffd78a88a55ba62e49161165faebee1ff0204",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.401898b03a1a",
+      "sourceSha256": "401898b03a1aa8fbfed6a6bf5d1bf0b49b5b9e34d7333c981ec448dfc441ab89",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.7a510e9d87ec",
+      "sourceSha256": "7a510e9d87ec4ac6abe70db58c807058c702fac079cd4f8279f37d147da0ff53",
+      "sourceLengthUtf16": 191,
+      "annotations": [
+        {
+          "id": "ann.aa6e59585abb26e61607",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 3,
+            "exact": "당뇨병",
+            "prefix": "",
+            "suffix": "에서는 고혈당과 면역·혈관 기능의 변화, 신"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.bfa07f64dbd2",
+      "sourceSha256": "bfa07f64dbd25298fdef9a8c4847d15840d61bcdf4a4f69e80ffa1a67d39e32c",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.0d3c16d64927",
+      "sourceSha256": "0d3c16d64927d2a8bcb5f0b1998ba06e9232c2dedd95759f1f690f57345447e9",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.1561ff2610fd",
+      "sourceSha256": "1561ff2610fd4aa3688499bd1a4e246fe05b3a58cbd91dc543874d531e3c882c",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.f6307b8a6f81",
+      "sourceSha256": "f6307b8a6f8136e42b0b968fb7071004e539edd61139e929b834206da3c09129",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.675b062ef8f62b4c7918",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 146,
+            "end": 183,
+            "exact": "양이 많거나 적다는 서술보다 생성·분해와 조직화의 균형이 중요하다.",
+            "prefix": "흔은 이동과 정상 배열을 방해할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.014d621f929c",
+      "sourceSha256": "014d621f929c477faf5d28184f432114623c5c42e8acb99b8fc275918fb9e2d8",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.1e1748ee4b02",
+      "sourceSha256": "1e1748ee4b02882777a8b810174c83c1edd862fb487a9730a312216dcbab749a",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.repair.delayed-wound-healing.b.cd18e48497f1",
+      "sourceSha256": "cd18e48497f1075c97747f1691518f0c1141d0fb5aee60ae2c6853cc97381b9e",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    }
+  ]
+}

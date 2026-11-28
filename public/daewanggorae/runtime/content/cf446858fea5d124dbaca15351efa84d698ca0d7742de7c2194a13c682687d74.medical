@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.vascular.deep-vein-thrombosis",
+  "subjectId": "cardiology",
+  "chapterId": "vascular",
+  "title": {
+    "ko": "심부정맥혈전증의 형성과 진단 추론",
+    "en": "Formation and Diagnostic Reasoning in DVT"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.lo.01",
+      "text": "정체·내피·응고의 상호작용을 설명한다"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.lo.02",
+      "text": "사전 가능성과 검사의 의미를 연결한다"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.lo.03",
+      "text": "압박초음파의 범위와 잔여 변화를 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.6885d051bfe3",
+      "type": "heading",
+      "level": 2,
+      "text": "정맥에서 혈전이 생기는 조건"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.ef694035a74d",
+      "type": "paragraph",
+      "markdown": "심부정맥혈전증(deep vein thrombosis, DVT)은 심부정맥 안에 혈전이 형성된 상태다. 정체와 혈관 내피의 변화, 응고 경향은 서로 영향을 주어 형성과 진행에 관여한다. 수술·외상과 움직임 감소, 암과 호르몬 관련 노출, 임신 및 이전 혈전 등은 맥락에 따라 위험을 바꾼다. 위험요인이 없다고 모두 배제되는 것도 아니며, 위험요인 하나가 있다는 이유로 현재의 부종을 곧 혈전으로 확진하는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.2458e7683c32",
+      "type": "paragraph",
+      "markdown": "정맥 판막 주머니와 느린 흐름은 국소 정체와 혈액·벽의 상호작용에 영향을 줄 수 있다. 혈전이 정맥 배출을 제한하면 원위 정맥압과 부종·통증이 생길 수 있다. 하지만 증상은 위치와 범위, 측부 배액 및 전신 상태에 따라 다양하다. 근위부와 원위부 혈전은 같은 이름 아래에서도 위험과 진단 범위·관리의 질문이 다르므로 위치를 명시한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.35bca16c7304",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 다리 부종의 다른 원인"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.f2c67bc52660",
+      "type": "paragraph",
+      "markdown": "한쪽 다리의 붓기와 압통은 DVT의 단서지만 근육 손상·감염·관절 주변 병변과 림프·만성 정맥질환에서도 나타날 수 있다. 양측 부종과 전신 체액 상태, 오래된 비대칭과 새 변화도 구별한다. 피부색이나 한 가지 진찰 동작으로 혈전을 확진·배제하지 않는다. 증상 시작과 진행, 최근 수술·고정과 다른 위험을 종합하여 검사 전 가능성을 판단한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.818b23026f5a",
+      "type": "paragraph",
+      "markdown": "사전 가능성은 다음 검사의 결과를 해석하는 출발점이다. 같은 음성 검사도 낮은 가능성과 높은 가능성에서 남는 위험이 다르다. 임상 예측 도구는 검증된 대상과 정의에 맞게 사용하고 다른 도구의 항목을 임의로 합치지 않는다. 임신과 입원·암, 이전 혈전 등에서는 도구와 검사의 성능·적용성을 별도로 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.2c25e46e836b",
+      "type": "heading",
+      "level": 2,
+      "text": "D-dimer와 초음파는 다른 질문이다"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.f739a493fa2a",
+      "type": "paragraph",
+      "markdown": "D-dimer는 가교된 섬유소의 분해와 관련된 표지자로 혈전 형성·분해의 단서다. 감염과 염증·수술·암 및 나이 등 여러 조건에서도 상승할 수 있어 양성만으로 DVT의 위치와 존재를 확정하지 못한다. 적절한 사전 가능성과 검증된 검사·절단값을 사용하는 음성 결과가 배제에 기여할 수 있다. 단위와 검사법이 다르면 같은 숫자를 그대로 비교하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.7eed08b61497",
+      "type": "paragraph",
+      "markdown": "압박초음파는 정맥이 적절히 눌리는지와 관강·혈류 등의 정보를 평가한다. 근위부를 중심으로 검사했는지 전체 다리를 보았는지에 따라 음성 결과의 범위가 다르다. 영상이 제한되었거나 의심이 유지되는 상황에서는 추가 평가의 질문을 정한다. 만성 잔여 혈전과 벽 변화는 재발 감별을 어렵게 하므로 이전 영상과 위치·범위를 비교하는 것이 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.bdf96fef214c",
+      "type": "heading",
+      "level": 2,
+      "text": "급성 사건과 장기 결과"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.e6b2eda71661",
+      "type": "paragraph",
+      "markdown": "정맥 혈전의 일부가 이동하면 폐혈관에 색전을 만들 수 있다. 그러나 다리 증상의 크기만으로 폐색전의 존재와 중증도를 정할 수 없다. 새 호흡곤란과 흉통·실신 및 저관류는 별도로 평가한다. 치료는 혈전 진행과 재발·색전의 예방 및 출혈 위해를 함께 고려한다. 항응고가 혈전을 즉시 녹이는 약이라는 설명은 형성 억제와 체내 분해·재개통의 과정을 혼동한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.b.d9a11e1bb847",
+      "type": "paragraph",
+      "markdown": "장기적으로 판막 손상과 정맥압 상승, 잔여 폐쇄는 혈전후증후군의 통증·부종과 피부 변화에 기여할 수 있다. 급성 혈전이 조절되었다는 결과와 모든 정맥 기능의 회복은 다르다. 추적에는 새 재발과 오래된 증상, 항응고의 적합성과 출혈 및 기능을 구분한다. 검사 결과만 보관하기보다 처음 위치와 범위·위험 배경을 기록해야 이후의 새 증상을 정확히 해석할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.h.extra0844",
+      "type": "heading",
+      "level": 2,
+      "text": "압박 검사의 위치와 재발"
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.p.extra0844.0",
+      "type": "paragraph",
+      "markdown": "초음파 보고서에는 단순 양성·음성 외에 어느 정맥 구간을 얼마나 잘 보았는지를 남기는 것이 중요하다. 근위부 검사에서 음성인 상태와 원위부까지 충분히 확인한 상태는 관찰 범위가 다르다. 체형과 부종·통증, 골반 안 위치와 이전 수술 등은 검사를 제한할 수 있다. 제한된 구간의 음성을 다리 전체와 모든 시간의 음성으로 확대하지 않는다."
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.p.extra0844.1",
+      "type": "paragraph",
+      "markdown": "이전 혈전 뒤 정맥벽이 두꺼워지고 압박성이 일부 변한 상태는 새 재발의 판독을 어렵게 할 수 있다. 새로운 증상과 과거 영상의 동일 구간을 비교하고 실제로 새 범위가 생겼는지 확인한다. 증상이 심해졌다는 사실만으로 혈전이 늘었다고 단정하지 않고, 영상 잔여 변화만으로 모든 증상이 새 급성 혈전이라고 보지도 않는다. 과거 위치와 범위·날짜의 기록은 이후의 검사를 해석하는 기준이 된다."
+    },
+    {
+      "id": "cardiology.vascular.deep-vein-thrombosis.table0844",
+      "type": "table",
+      "data": {
+        "title": "측정 대상과 생리적 의미",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "형성",
+            "정체·내피·응고 경향"
+          ],
+          [
+            "D-dimer",
+            "분해 표지,위치 확진 아님"
+          ],
+          [
+            "초음파",
+            "검사 구간·압박·기술 조건"
+          ],
+          [
+            "추적",
+            "새 재발과 잔여 변화 구별"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/vascular/sections/cardiology.vascular.deep-vein-thrombosis.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.vascular.deep-vein-thrombosis.001"
+  ],
+  "relatedLessons": [
+    "cardiology.vascular.acute-limb-ischemia",
+    "pulmonology.vascular.pulmonary-embolism-gas-exchange"
+  ]
+}

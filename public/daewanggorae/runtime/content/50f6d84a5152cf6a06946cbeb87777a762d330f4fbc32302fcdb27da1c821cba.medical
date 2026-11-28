@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.avrt-preexcitation",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "부전도로와 방실회귀성 빈맥",
+    "en": "Accessory Pathways and Atrioventricular Reentrant Tachycardia"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.lo.01",
+      "text": "조기흥분과 부전도로의 전도 방향을 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.lo.02",
+      "text": "정방향·역방향 회귀의 QRS 차이를 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.lo.03",
+      "text": "조기흥분 심방세동의 위험을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.b.22992aaccfef",
+      "type": "heading",
+      "level": 2,
+      "text": "방실 연결의 우회"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.b.b9397404ef96",
+      "type": "paragraph",
+      "markdown": "방실회귀성 빈맥(atrioventricular reentrant tachycardia, AVRT)은 심방과 심실 사이의 정상 방실전도계와 부전도로(accessory pathway)가 회귀의 서로 다른 팔로 참여하는 빈맥이다. 정상적으로 심방과 심실 사이 섬유성 절연은 전기적 전달을 방실결절–히스계로 모은다. 일부 근육성 연결이 이 경계를 우회하면 심방에서 심실로, 심실에서 심방으로 또는 양방향으로 전도할 수 있다. 부전도로가 존재한다는 사실과 실제 증상성 빈맥이 발생한다는 사실은 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.b.79d33f543507",
+      "type": "paragraph",
+      "markdown": "동성 자극이 부전도로를 통해 심실 일부에 먼저 도착하면 정상 히스–푸르키네계에 의한 활성화와 융합하여 QRS 시작 부분의 완만한 델타파(delta wave)를 만들 수 있다. 조기흥분의 정도는 두 경로의 도착 시간, 자율신경 상태와 부전도로 위치에 따라 달라진다. 짧은 PR과 델타파를 보이는 심전도 양상을 임상적 빈맥 증후군과 같은 말로 취급하지 않는다. Wolff–Parkinson–White 양상과 증후군은 증상과 부정맥의 존재까지 고려하여 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.b.9cdc3d5f2f17",
+      "type": "heading",
+      "level": 2,
+      "text": "회귀 방향과 심실 활성화"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.b.8670c00916ea",
+      "type": "paragraph",
+      "markdown": "정방향 AVRT(orthodromic AVRT)는 정상 방실전도계를 따라 심실로 내려간 뒤 부전도로를 통해 심방으로 돌아온다. 심실이 히스–푸르키네계를 따라 활성화되므로 일반적으로 QRS가 좁다. 빈맥 중 각차단이 생기면 QRS가 넓어질 수 있어 좁은 QRS만이 정방향 회귀의 필수 조건은 아니다. 역행성 심방 활성화는 QRS 뒤 P파로 보일 수 있으며, 그 시점은 부전도로의 위치와 전도 시간에 영향을 받는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.b.2d1a7a9120a2",
+      "type": "paragraph",
+      "markdown": "역방향 AVRT(antidromic AVRT)에서는 부전도로를 통해 순방향으로 심실에 들어가고 다른 경로를 통해 심방으로 돌아온다. 정상 전도망을 통한 동시 활성화 대신 근육을 따라 퍼지는 부분이 커지므로 넓은 QRS 빈맥이 가능하다. 한편 역행성으로만 전도하는 숨은 부전도로(concealed pathway)는 동율동에서 심실 조기흥분을 만들지 않아 델타파가 없을 수 있다. 따라서 안정 시 델타파가 없다는 관찰은 모든 부전도로 매개 회귀를 배제하지 못한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.b.905913d27231",
+      "type": "heading",
+      "level": 2,
+      "text": "심방세동이 동반될 때"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.b.08aa15958f90",
+      "type": "paragraph",
+      "markdown": "심방세동의 빠르고 불규칙한 자극이 순방향 전도가 가능한 부전도로를 타고 내려가면 매우 빠른 심실 활성화가 일어날 수 있다. 방실결절의 생리적 여과만으로 심실이 보호되지 않는 상황이다. QRS 폭과 형태가 박동마다 달라지는 불규칙 빈맥은 조기흥분 심방세동의 가능성을 포함해 평가한다. 정상적인 좁은 QRS 빈맥에서 쓰는 접근을 그대로 적용해서는 안 된다. 방실결절만 차단하는 약물은 부전도로를 통한 전달을 남겨 위험해질 수 있으므로 부정맥 종류와 혈역학에 맞는 전문적 응급 처치가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.b.315aeb61d745",
+      "type": "paragraph",
+      "markdown": "장기 위험은 델타파의 유무 하나로 결정하지 않는다. 부전도로가 빠른 심방 자극을 얼마나 잘 전달하는지, 여러 경로가 있는지, 증상과 가족력 및 검사 소견이 어떠한지를 함께 평가한다. 전기생리검사는 전도 방향과 불응기를 측정하고 빈맥이 유도될 때 회로 참여를 검증한다. 절제술은 부전도로 연결 자체를 차단하는 치료이며 위치에 따른 정상 전도계·관상동맥·판막 주변 구조의 위험을 고려한다. 정상 3D 심장 모델은 심방과 심실의 위치 관계를 설명할 수 있지만 개별 환자의 부전도로 위치를 보여 주지는 못한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avrt-preexcitation.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "정방향 AVRT",
+            "정상계 순방향·부전도로 역방향"
+          ],
+          [
+            "역방향 AVRT",
+            "부전도로 순방향·다른 경로 역방향"
+          ],
+          [
+            "숨은 부전도로",
+            "역행성만 전도하면 안정 시 델타파 없을 수 있음"
+          ],
+          [
+            "조기흥분 AF",
+            "빠른 심방 자극의 우회 전달 위험"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.avrt-preexcitation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.avrt-preexcitation.001"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.avnrt",
+    "cardiology.arrhythmias.focal-atrial-tachycardia"
+  ]
+}

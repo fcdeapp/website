@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-pve-growth-0850",
+  "lessonId": "hpb-surgery.liver.pve-regeneration",
+  "title": "가상 PVE 뒤 잔여간 부피",
+  "series": [
+    {
+      "label": "독립 가상 증례",
+      "samples": [
+        {
+          "x": 0,
+          "y": 300
+        },
+        {
+          "x": 7,
+          "y": 340
+        },
+        {
+          "x": 14,
+          "y": 380
+        },
+        {
+          "x": 28,
+          "y": 450
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "days": [
+      0,
+      7,
+      14,
+      28
+    ],
+    "values_mL": [
+      300,
+      340,
+      380,
+      450
+    ],
+    "normalizationDenominator_mL": 1500,
+    "notTypicalGrowth": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 28,
+      "scale": "linear",
+      "ticks": [
+        0,
+        7,
+        14,
+        14,
+        28
+      ],
+      "label": "PVE 후 시간(일)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 500,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        125.0,
+        250.0,
+        375.0,
+        500.0
+      ],
+      "label": "잔여간 부피(mL)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "독립 가상 증례",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·전형적 경과·진단 기준·약물·수술 안전 기준을 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

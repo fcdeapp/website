@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-neonatal-bilirubin-0851",
+  "lessonId": "neonatology.bilirubin.hours-risk-assessment",
+  "title": "가상 생후 시간별 빌리루빈",
+  "series": [
+    {
+      "label": "독립 가상 증례",
+      "samples": [
+        {
+          "x": 24,
+          "y": 8
+        },
+        {
+          "x": 36,
+          "y": 11
+        },
+        {
+          "x": 48,
+          "y": 13
+        },
+        {
+          "x": 72,
+          "y": 12
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "hours": [
+      24,
+      36,
+      48,
+      72
+    ],
+    "values": [
+      8,
+      11,
+      13,
+      12
+    ],
+    "noPhototherapyOrExchangeThresholds": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 24,
+      "max": 72,
+      "scale": "linear",
+      "ticks": [
+        24,
+        36,
+        48,
+        48,
+        72
+      ],
+      "label": "정확한 생후 시간(h)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 16,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        4.0,
+        8.0,
+        12.0,
+        16.0
+      ],
+      "label": "총빌리루빈(mg/dL)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "독립 가상 증례",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·정상 범위·전형적 임신 경과·투약·검사/분만/치료 기준을 정하지 않는다.",
+    "광선치료·교환수혈의 경계선이나 정상 경과가 아니다."
+  ],
+  "sourceImageUsed": false
+}

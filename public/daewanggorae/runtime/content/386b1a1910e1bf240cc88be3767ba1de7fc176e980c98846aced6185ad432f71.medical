@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.shock.circulatory-failure",
+  "subjectId": "pathology",
+  "chapterId": "shock",
+  "title": {
+    "ko": "순환부전의 조직 병리와 쇼크의 개념",
+    "en": "Tissue Pathology of Circulatory Failure"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.shock.circulatory-failure.lo.01",
+      "text": "쇼크와 저혈압을 구별한다"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.lo.02",
+      "text": "거시순환·미세순환·세포 이용을 연결한다"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.lo.03",
+      "text": "원인 분류와 시간 경과를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.shock.circulatory-failure.b.0de8f3fe265e",
+      "type": "heading",
+      "level": 2,
+      "text": "혈압의 아래에 있는 조직의 문제"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.01285bba990c",
+      "type": "paragraph",
+      "markdown": "쇼크(shock)는 급성 순환부전으로 조직의 관류와 산소 이용이 적절하지 않아 세포 기능과 장기가 위협받는 증후군이다. 혈압 저하는 중요한 경고지만 정의 전체가 아니다. 초기 보상으로 혈압이 유지되어도 특정 조직의 혈류와 기능이 나빠질 수 있고, 평소 혈압이 낮은 사람의 수치 하나만으로 쇼크를 진단할 수도 없다. 어떤 장기에 무엇이 부족하며 그 결과가 어떻게 나타나는지 묻는 것이 출발점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.2c287c9901f6",
+      "type": "paragraph",
+      "markdown": "관류(perfusion)는 조직을 통과하는 혈류의 문제이고, 산소전달(oxygen delivery)은 그 혈류가 운반하는 산소량의 문제다. 세포의 산소 소비와 ATP 생성은 다시 다른 단계다. 혈액이 흐르지만 산소함량이 매우 낮거나, 큰 혈관의 유량이 회복되어도 미세혈관 분포가 불균일하면 세포는 계속 어려움을 겪을 수 있다. 이 단계들을 구별해야 심박출량과 산소포화도가 모두 정상으로 보이는 상황에서도 기능 장애를 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.43dda0e0e2cb",
+      "type": "heading",
+      "level": 2,
+      "text": "압력과 흐름의 구별"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.720a3e0d46ab",
+      "type": "paragraph",
+      "markdown": "혈류는 구동압과 저항, 정맥 쪽 배출 조건의 영향을 받는다. 단순 정상상태에서 압력차는 유량과 저항의 곱이지만 실제 혈관은 능동적으로 긴장도를 바꾸고 변형된다. 같은 평균동맥압에서도 심박출량·장기별 저항·정맥압이 달라지면 실제 흐름은 다르다. 혈압 숫자를 같은 값으로 맞추었다고 동일한 조직 관류를 만들었다고 생각해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.88fd76f9cb8f",
+      "type": "paragraph",
+      "markdown": "정맥압 상승도 관류의 반대쪽에서 작용한다. 동맥압만 유지되고 배출 쪽 압력이 높으면 장기의 유효 압력차가 줄 수 있다. 울혈이 있는 심장·신장·간의 기능 장애를 단순히 동맥 쪽 저관류만으로 설명하기 어려운 이유다. 압력을 볼 때는 어디에서 어디로 흐르게 하는 압력인지, 측정 위치가 무엇인지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.012ee66efd72",
+      "type": "heading",
+      "level": 2,
+      "text": "기전 분류는 중첩될 수 있다"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.eaea618c9884",
+      "type": "paragraph",
+      "markdown": "저혈량성 쇼크는 유효한 순환 혈액량의 감소, 심인성 쇼크는 심장의 펌프 기능, 폐쇄성 쇼크는 충만이나 박출을 방해하는 기계적 조건, 분포성 쇼크는 혈관 긴장과 혈류 분배의 이상으로 접근한다. 이 분류는 원인을 찾는 지도이며 환자를 반드시 하나의 상자에만 넣는 체계가 아니다. 감염 환자에게 심근 기능 저하와 체액 손실이 함께 있을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.b061ef8316ba",
+      "type": "paragraph",
+      "markdown": "병태생리가 변하면 같은 환자도 시간에 따라 다른 양상을 보인다. 초기에는 혈관확장과 높은 유량이 두드러져도 이후 심기능·체액과 미세혈관 상태가 달라질 수 있다. 치료 역시 그때의 생리적 조건을 바꾸므로 처음 붙인 분류 이름이 이후 모든 결정을 대신할 수 없다. 반복 평가에서 원인과 반응, 새로 생긴 문제를 분리한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.0382a638f4e0",
+      "type": "heading",
+      "level": 2,
+      "text": "보상과 손상의 연속선"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.70eeecdc7160",
+      "type": "paragraph",
+      "markdown": "교감신경·호르몬 반응은 심박수, 혈관 긴장과 염분·수분 처리를 바꾼다. 단기적으로 주요 장기의 흐름을 지지할 수 있지만 빈맥의 산소 요구 증가, 말초 관류 감소와 체액 저류 등 비용도 따른다. 보상은 정상 기능과 같은 상태가 아니며, 보상이 보인다는 사실 자체가 원인이 해결되었다는 뜻도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.c31fa7bb7e68",
+      "type": "paragraph",
+      "markdown": "지속적인 산소·연료 이용 장애는 이온 구배, 단백질 합성과 세포막 기능에 영향을 준다. 세포가 붓거나 장벽이 새고 염증·응고가 달라지면 처음의 순환 문제를 더욱 악화시키는 되먹임이 생긴다. 기능 장애와 조직 사멸의 경계는 장기·온도·기저 질환과 지속시간에 따라 다르다. 일정한 저혈압 시간 하나를 모든 조직의 괴사 시각으로 외우지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.34688132358a",
+      "type": "heading",
+      "level": 2,
+      "text": "침상 소견은 서로 다른 창이다"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.78d07d86a6db",
+      "type": "paragraph",
+      "markdown": "의식, 피부의 온도와 모세혈관 재충만, 소변량과 호흡 양상은 다른 장기와 반응을 보여 준다. 피부가 따뜻하다고 모든 조직 관류가 좋다는 뜻은 아니고, 소변량이 적다고 원인이 반드시 같은 것도 아니다. 진찰과 수치는 동시에 보되 하나를 나머지 전부의 대리값으로 삼지 않는다. 진찰 조건·환경과 이전 상태도 기록한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.b.dd9e5e54c2fd",
+      "type": "paragraph",
+      "markdown": "젖산, 산염기와 신장·간 표지는 유용하지만 시점과 생성·제거의 영향을 받는다. 쇼크라는 임상 판단은 관찰 소견·가능한 원인·검사의 조합과 추세를 통합한다. 정상 인체 모델은 관련 장기의 위치를 설명할 수 있으나 관류의 부족이나 세포 사멸을 직접 나타내지 않는다. 이를 설명하는 시각자료는 혈류 경로, 수지식과 시간별 기능을 나누어 구성해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.shock.circulatory-failure.table.0821",
+      "type": "table",
+      "data": {
+        "title": "관찰과 판단의 구별",
+        "columns": [
+          "관찰",
+          "정보"
+        ],
+        "rows": [
+          [
+            "혈압",
+            "이전과 유사"
+          ],
+          [
+            "의식·소변",
+            "새 변화"
+          ],
+          [
+            "유량",
+            "감소"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/shock/sections/pathology.shock.circulatory-failure.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.shock.circulatory-failure.001"
+  ],
+  "relatedLessons": [
+    "pathology.shock.oxygen-budget"
+  ]
+}

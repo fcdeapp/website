@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cell-biology.cell-cycle.checkpoints",
+  "subjectId": "cell-biology",
+  "chapterId": "cell-cycle",
+  "title": {
+    "ko": "세포주기 조절과 유전체 점검점",
+    "en": "Cell-Cycle Control and Genome Checkpoints"
+  },
+  "learningObjectives": [
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.lo.01",
+      "text": "사이클린–CDK 조절을 단백질 인산화·분해와 연결한다"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.lo.02",
+      "text": "Rb–E2F와 DNA 손상 반응의 역할을 구별한다"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.lo.03",
+      "text": "복제 허가와 방추체 점검점의 목적을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.3ac127c4f811",
+      "type": "heading",
+      "level": 2,
+      "text": "주기의 단계와 조절기의 역할"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.89ac14c7bee2",
+      "type": "paragraph",
+      "markdown": "세포주기(cell cycle)는 DNA 복제와 세포 분열을 순서 있게 연결한다. G1기에는 성장과 환경 신호의 통합, S기에는 DNA 합성, G2기에는 복제 이후 준비, M기에는 염색체 분리와 세포질분열이 이어진다. 그러나 이 구분은 각 단계에 단 하나의 작업만 일어난다는 뜻이 아니다. 단백질 합성과 대사, 손상 감지는 여러 단계에서 지속된다. G0는 증식 주기를 벗어난 상태를 나타내며, 모든 G0 세포가 영구히 분열 능력을 잃었다고 볼 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.06d68f8742b5",
+      "type": "paragraph",
+      "markdown": "주요 조절기는 사이클린의존성인산화효소(cyclin-dependent kinase, CDK)와 사이클린(cyclin)의 복합체다. 사이클린의 합성과 분해는 활성이 나타나는 시간을 조절하고, CDK의 인산화 상태와 억제단백질도 반응을 바꾼다. 따라서 사이클린 단백질량의 곡선과 실제 기질 인산화 활성을 항상 같은 곡선으로 그려서는 안 된다. 조절기는 여러 기질을 동시에 바꾸어 복제·염색체 응축·핵막 변화 같은 사건의 순서를 맞춘다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.a012abeb8594",
+      "type": "heading",
+      "level": 2,
+      "text": "성장 신호가 복제 진입으로 이어지는 연결"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.be8d91745c12",
+      "type": "paragraph",
+      "markdown": "포유류 세포에서 성장 신호는 사이클린D–CDK4/6 등과 Rb–E2F 조절에 연결된다. Rb 단백질은 E2F 관련 전사를 억제하는 기능을 가지며, 세포주기 진행 중의 인산화 변화는 복제 관련 유전자 발현을 허용하는 방향으로 작용한다. 사이클린E–CDK2 등도 G1/S 전이에 관여한다. 이 개요는 여러 단계와 단백질 상태를 요약한 것이므로 Rb의 모든 인산화가 언제나 같은 기능을 가진다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.f6eb4fc1f6e8",
+      "type": "paragraph",
+      "markdown": "CDK 억제단백질(CDK inhibitors, CKIs)은 이 신호를 제어한다. p16 계열은 CDK4/6 조절과, p21·p27 등은 여러 사이클린–CDK 복합체의 억제와 관련된다. 유전자 발현의 변화와 복합체 결합 상태가 중요하다. 성장 자극이 존재해도 손상·접촉·영양 부족에 따른 억제 신호가 우세하면 S기로 진행하지 않을 수 있다. 증식률은 자극 신호 하나의 농도보다 많은 조건의 통합 결과다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.1541d97e15e5",
+      "type": "heading",
+      "level": 2,
+      "text": "DNA 손상 반응은 시간을 확보한다"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.8333f7db1fac",
+      "type": "paragraph",
+      "markdown": "DNA 이중가닥 절단과 복제 스트레스는 ATM·ATR 및 하위 CHK1·CHK2 같은 신호체계에 연결된다. 이 경로는 서로 완전히 분리되어 있지 않지만 대표적인 자극과 반응을 구별하여 학습할 수 있다. p53의 안정화와 p21 발현 증가는 CDK 활성을 낮추어 진행을 늦추는 기전 중 하나다. CDC25 인산가수분해효소의 조절 등은 CDK를 활성화하는 과정에도 제동을 건다. 손상을 알리는 것과 실제 DNA를 복구하는 것은 관련되지만 같은 반응은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.2f8bf2d70dd2",
+      "type": "paragraph",
+      "markdown": "일시적 정지는 복구 시간을 제공하지만 복구 성공을 보증하지 않는다. 손상이 해결되지 않으면 지속 정지·세포노화(senescence)·세포자멸사(apoptosis) 등으로 이어질 수 있다. p53이 활성화되면 반드시 즉시 모든 세포가 죽는다고 설명하지 않는다. 신호의 강도·시간, 세포 유형과 주변 환경에 따라 결과가 달라진다. 점검점 결함은 손상된 유전체를 가진 세포의 진행을 허용할 수 있지만, 단일 변이만으로 모든 종양의 행동을 예측할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.f589cf873754",
+      "type": "heading",
+      "level": 2,
+      "text": "복제는 한 주기에 한 번 일어나야 한다"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.2744ffbdfe12",
+      "type": "paragraph",
+      "markdown": "복제 시작점(origin)의 허가(licensing)와 실제 시작(firing)을 시간적으로 구분하면 재복제를 막는 원리를 이해할 수 있다. 낮은 CDK 활성의 시기에 ORC·CDC6·CDT1 등의 도움으로 MCM 복합체가 적재되고, 이후 S기 조절 신호에 의해 복제가 시작된다. 복제가 진행되는 동안 높은 CDK 활성과 geminin 등은 새로운 허가 형성을 제한한다. 이미 복제된 DNA에서 같은 시작점이 다시 무제한 작동하지 않도록 하는 구조다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.e33716b549f4",
+      "type": "paragraph",
+      "markdown": "복제가 아직 끝나지 않았는데 M기로 들어가면 불완전한 염색체를 분리할 위험이 있다. 복제 스트레스에 따른 지연은 이러한 순서 오류를 줄인다. 반대로 복제 완료와 세포 크기만 확인했다고 염색체의 올바른 방추체 부착까지 확인한 것은 아니다. 세포주기에는 서로 다른 문제를 감시하는 여러 조절 단계가 있으며, 이를 하나의 G1 점검점만으로 묶지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.950440eda381",
+      "type": "heading",
+      "level": 2,
+      "text": "분해가 만들어 내는 비가역적 전환"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.0f9464301a03",
+      "type": "paragraph",
+      "markdown": "방추체조립 점검점(spindle assembly checkpoint, SAC)은 키네토코어와 미세소관 연결 상태를 감시하여 후기로의 진행을 조절한다. 부착이 적절하지 않을 때 APC/C–CDC20의 작용이 억제된다. 조건이 충족되면 APC/C라는 유비퀴틴 연결효소 복합체가 securin과 사이클린B 등의 분해를 촉진한다. Securin 감소로 separase가 활성화되어 cohesin 절단과 자매염색분체 분리가 가능해지고, 사이클린B 감소는 유사분열 종료에 기여한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.b.6af28c60d825",
+      "type": "paragraph",
+      "markdown": "인산화는 빠르게 되돌릴 수 있는 조절이지만 특정 단백질의 분해는 다시 합성하기 전까지 그 상태를 유지하게 한다. 이 차이가 순서와 방향성을 만든다. 다만 APC/C의 활성화인자와 표적은 시기에 따라 바뀌므로 모든 표적이 같은 순간에 완전히 사라지는 단일 스위치로만 이해하지 않는다. 표나 흐름도를 읽을 때에는 감시 신호, 효소 활성, 표적 분해, 구조 변화의 인과 순서를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.diagram.cell-cycle-control-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.cell-cycle-control-pairs",
+      "path": "diagrams/diagram.cell-cycle-control-pairs.svg",
+      "alt": "주기 진행을 조절하는 세 관계의 단계별 비교"
+    },
+    {
+      "id": "cell-biology.cell-cycle.checkpoints.table.compare",
+      "type": "table",
+      "data": {
+        "title": "세포주기 조절의 질문",
+        "columns": [
+          "계통",
+          "질문",
+          "대표 연결"
+        ],
+        "rows": [
+          [
+            "G1/S",
+            "환경·복제 진입",
+            "Rb–E2F·CDK"
+          ],
+          [
+            "손상 반응",
+            "유전체 스트레스",
+            "ATM/ATR·p53/p21"
+          ],
+          [
+            "복제 허가",
+            "한 주기 한 번",
+            "MCM·CDT1 등"
+          ],
+          [
+            "방추체 점검점",
+            "부착 상태",
+            "APC/C 억제"
+          ],
+          [
+            "후기 전환",
+            "분리·종료",
+            "securin·cyclinB 분해"
+          ]
+        ],
+        "notes": "각 경로의 대표 관계이며 점검점은 복구 성공을 보증하지 않는다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/cell-biology/chapters/cell-cycle/sections/cell-biology.cell-cycle.checkpoints.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "주기 정지는 복구 성공과 동일하지 않다.",
+    "APC/C는 단백질 분해를 통해 순서를 조절한다."
+  ],
+  "reviewQuestions": [
+    "question.cell-biology.cell-cycle.checkpoints.001",
+    "question.cell-biology.cell-cycle.checkpoints.002"
+  ],
+  "relatedLessons": [
+    "cell-biology.cell-cycle.dna-content",
+    "cell-biology.cell-death.apoptosis"
+  ]
+}

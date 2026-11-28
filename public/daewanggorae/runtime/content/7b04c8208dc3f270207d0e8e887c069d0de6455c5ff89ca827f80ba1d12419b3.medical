@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "critical-care.respiratory.ventilation-oxygenation",
+  "subjectId": "critical-care",
+  "chapterId": "respiratory",
+  "title": {
+    "ko": "산소화·환기와 인공호흡의 기본 변수",
+    "en": "Oxygenation Ventilation and Basic Ventilator Variables"
+  },
+  "learningObjectives": [
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.lo.01",
+      "text": "분당환기와 폐포환기를 계산한다"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.lo.02",
+      "text": "산소화와 이산화탄소 배출의 차이를 설명한다"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.lo.03",
+      "text": "인공호흡기 수치와 환자 부담을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.fed06eb62b19",
+      "type": "heading",
+      "level": 2,
+      "text": "공기를 움직이는 것과 교환하는 것"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.11ff98187f50",
+      "type": "paragraph",
+      "markdown": "분당환기량(minute ventilation)은 일회호흡량과 호흡수의 곱이다. 그러나 들어온 공기 전부가 폐포에서 기체교환에 참여하는 것은 아니다. 전도기도와 관류가 충분하지 않은 폐포 등 사강(dead space)의 비중을 고려해야 한다. 단순 모형에서 폐포환기량은 (일회호흡량−사강량)×호흡수로 계산한다. 같은 분당환기라도 호흡 깊이와 사강의 관계에 따라 유효 환기가 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.4c5e19ed19f0",
+      "type": "paragraph",
+      "markdown": "일회호흡량 500mL, 사강량 150mL, 분당 12회인 모형의 분당환기는 6L/분이고 폐포환기는 4.2L/분이다. 일회호흡량을 250mL로 줄이면서 24회로 빠르게 호흡하면 분당환기는 여전히 6L/분이지만 같은 사강을 가정한 폐포환기는 2.4L/분이다. 실제 사강은 고정값이 아닐 수 있으므로 이 계산은 깊이와 빈도를 구별하는 개념 모형으로 사용한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.39c639aeef37",
+      "type": "heading",
+      "level": 2,
+      "text": "이산화탄소와 폐포환기"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.bd6b5af023c3",
+      "type": "paragraph",
+      "markdown": "안정된 조건에서 이산화탄소분압은 이산화탄소 생성량에 비례하고 폐포환기에 반비례하는 관계로 이해할 수 있다. 생성량이 일정하면 유효 환기가 줄수록 이산화탄소분압이 올라가는 방향으로 작용한다. 발열·대사 변화와 활동, 영양 및 질환에 따라 생성량도 달라질 수 있어 환기 설정만 보고 분압을 확정하지 않는다. 동맥혈가스와 실제 경과를 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.f9d97a8558b8",
+      "type": "paragraph",
+      "markdown": "산소포화도는 이산화탄소 제거 능력의 직접 지표가 아니다. 보조 산소를 받는 환자에서 포화도가 유지되어도 환기 저하와 이산화탄소 축적이 진행할 수 있다. 진정과 신경근 약화, 흉벽·폐 역학과 기도 문제 등 원인을 함께 고려한다. 의식 변화와 호흡 노력의 감소가 항상 편안한 회복을 뜻하지 않는 이유도 여기에 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.bf15b7fb85cf",
+      "type": "heading",
+      "level": 2,
+      "text": "산소화의 다른 결정요인"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.cdae6d0d7bf9",
+      "type": "paragraph",
+      "markdown": "산소화는 흡입산소농도와 폐포환기뿐 아니라 환기·관류 불균형, 단락과 확산 및 혼합정맥혈 조건의 영향을 받는다. 산소분압을 흡입산소농도로 나눈 비율은 조건을 정리하는 지표지만 원인과 폐 역학 전체를 보여주지는 않는다. 양압과 호기말양압, 순환 및 측정 시점이 해석에 영향을 준다. 같은 비율이어도 환자에게 필요한 지원과 질환 기전이 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.8ed6c46498b6",
+      "type": "paragraph",
+      "markdown": "호기말양압(positive end-expiratory pressure, PEEP)은 일부 폐포의 허탈을 줄이고 산소화를 도울 수 있지만 과팽창과 순환 영향도 고려해야 한다. 산소화가 좋아졌다는 사실만으로 모든 폐포가 더 안전해졌다고 판단하지 않는다. 환자의 폐 상태와 혈압·혈류, 압력과 용적 및 전신 결과를 함께 본다. 수치 하나를 최대화하는 것이 치료의 전체 목표는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.4617fd9a8a6f",
+      "type": "heading",
+      "level": 2,
+      "text": "압력과 용적을 구별하기"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.340c864dfa6f",
+      "type": "paragraph",
+      "markdown": "기계가 표시하는 압력에는 기도 저항과 폐·흉벽의 탄성, 흐름과 환자의 호흡 노력이 영향을 준다. 최고기도압이 올라갔을 때는 분비물이나 관의 문제, 기관지 수축과 탄성 변화 등을 구별해야 한다. 적절한 조건에서 측정한 고원압은 흐름 저항 성분을 줄여 보는 데 도움이 되지만 자발 노력과 측정 조건의 영향을 확인해야 한다. 최고압과 고원압을 같은 뜻으로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.fd9e064ae5ed",
+      "type": "paragraph",
+      "markdown": "순응도(compliance)는 용적 변화량을 압력 변화량으로 나눈 값으로 표현할 수 있다. 어떤 압력 차이를 사용했는지와 환자의 자발 노력, 누출 및 측정 조건을 명시해야 비교가 가능하다. 폐와 흉벽의 기여가 합쳐진 호흡계 순응도와 폐만의 성질도 구별한다. 설정된 용적이 같다는 사실만으로 조직의 기계적 부담이 모두 같다고 할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.28bb8077f02e",
+      "type": "heading",
+      "level": 2,
+      "text": "환자와 장치의 상호작용"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.cd27a9a639a5",
+      "type": "paragraph",
+      "markdown": "인공호흡기의 모드 이름만으로 실제 환기와 안전성이 정해지지는 않는다. 설정값과 실제 전달량, 환자의 자발 호흡 및 장치와의 동조를 확인해야 한다. 통증·불안과 과도한 진정, 분비물과 기도 저항, 누출 및 질환의 변화가 서로 영향을 준다. 경보는 단순히 끄는 소리가 아니라 어떤 이상을 감지했는지 판단해야 하는 정보다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.b.69f6a69022a7",
+      "type": "paragraph",
+      "markdown": "추적 평가는 혈액가스·산소화와 함께 의식과 호흡 노력, 순환 및 장기 기능, 원인 질환의 회복을 포함한다. 산소 지원을 줄일 수 있는지와 기계적 지원에서 벗어날 준비가 되었는지도 서로 관련되지만 동일한 판단은 아니다. 기도 보호와 분비물 처리, 신경근 기능 및 재악화 위험을 함께 평가한다. 본문의 계산 모형을 실제 환자의 초기 설정이나 감량 처방으로 그대로 사용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.table0858",
+      "type": "table",
+      "data": {
+        "title": "소견과 평가 조건",
+        "columns": [
+          "항목",
+          "자료"
+        ],
+        "rows": [
+          [
+            "조건 A",
+            "일회호흡량 500mL, 12회/분"
+          ],
+          [
+            "조건 B",
+            "일회호흡량 250mL, 24회/분"
+          ],
+          [
+            "사강량",
+            "두 조건에서 150mL로 고정"
+          ],
+          [
+            "분당환기",
+            "두 조건 모두 6L/분"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.diagram.alveolar-ventilation-0858",
+      "type": "diagram",
+      "diagramRef": "diagram.alveolar-ventilation-0858",
+      "path": "diagrams/diagram.alveolar-ventilation-0858.svg",
+      "alt": "분당환기 6L에서 폐포환기의 독립 계산 곡선"
+    },
+    {
+      "id": "critical-care.respiratory.ventilation-oxygenation.3d0858",
+      "type": "anatomy3d",
+      "sceneRef": "scene.pulmonology.airways.asthma-mechanisms.662e9064"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/09-clinical-diagnostics/subjects/critical-care/chapters/respiratory/sections/critical-care.respiratory.ventilation-oxygenation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.critical-care.respiratory.ventilation-oxygenation.001",
+    "question.critical-care.respiratory.ventilation-oxygenation.002"
+  ],
+  "relatedLessons": [
+    "emergency-medicine.dyspnea.initial-assessment",
+    "laboratory-medicine.acid-base.blood-gas-interpretation"
+  ]
+}

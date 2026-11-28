@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "general-surgery.technique.drains-fistula-balance",
+  "subjectId": "general-surgery",
+  "chapterId": "technique",
+  "title": {
+    "ko": "배액관·누공과 유출의 해석",
+    "en": "Drains Fistulas and Interpretation of Output"
+  },
+  "learningObjectives": [
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.lo.01",
+      "text": "배액량·농도·하루 유출량을 구별한다"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.lo.02",
+      "text": "누공의 해부학과 생리 손실을 연결한다"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.lo.03",
+      "text": "관의 기능·이득·제거 판단의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.ff450dfed74b",
+      "type": "heading",
+      "level": 2,
+      "text": "관은 연결된 곳의 정보만 준다"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.8df994413dac",
+      "type": "paragraph",
+      "markdown": "배액관(drain)은 액체·공기 등을 특정 공간에서 밖으로 유도하거나 관찰하는 수단이다. 관의 끝과 측공·연결, 압력과 중력·점도·막힘이 실제 유출에 영향을 준다. 관이 존재한다는 사실과 필요한 공간이 충분히 배액된다는 사실은 다르다. 서로 연결되지 않은 구획과 지속 누출·괴사조직은 하나의 관으로 모두 해결되지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.08d91c11521d",
+      "type": "paragraph",
+      "markdown": "배액량이 줄면 공간이 감소한 것일 수도 있지만 관 막힘·이동과 연결 단절, 점도의 변화 때문일 수도 있다. 처음 많이 나오고 이후 조용해졌다는 관찰만으로 원천 해결을 확정하지 않는다. 통증과 열·관류·장기 기능, 영상과 배액 성상·관의 상태를 함께 본다. 분비물의 색이나 냄새도 단서이며 특정 물질과 미생물을 항상 확정하는 검사는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.bee847d55f95",
+      "type": "heading",
+      "level": 2,
+      "text": "농도와 하루 물질 손실"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.b1e08c1036a7",
+      "type": "paragraph",
+      "markdown": "배액의 부피 V와 농도 C가 주어지면 단순 모형에서 물질 유출량은 V×C다. 0.8L에 나트륨 100mmol/L라면 80mmol이 나가고, 0.4L에 160mmol/L라면 64mmol이다. 농도가 더 높은 두 번째가 반드시 더 큰 하루 손실을 뜻하지 않는다. 농도·부피·시간과 실제 수집 완전성을 함께 계산해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.52ab781a2fc2",
+      "type": "paragraph",
+      "markdown": "배액 손실은 수분뿐 아니라 전해질·산염기, 단백질·효소와 영양 전달에 영향을 준다. 분비물 조성은 장기와 위치·섭취·희석·시간에 따라 다르다. 한 표본의 농도를 모든 하루 배액에 고정하면 실제 손실을 잘못 추정할 수 있다. 누락과 관 세척액·다른 유입을 구별하고 환자의 체중·소변·관류·검사와 비교한다. 계산은 보충의 근거 일부이며 단독 처방 공식은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.78423a62caad",
+      "type": "heading",
+      "level": 2,
+      "text": "누공은 통로와 원인의 문제다"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.ed2b3dfc8ed8",
+      "type": "paragraph",
+      "markdown": "누공(fistula)은 정상적으로 연결되지 않는 두 표면·공간 사이의 비정상 통로다. 장피누공에서는 장 내용물이 피부 쪽으로 나올 수 있고, 다른 장기와 장기 사이 연결도 가능하다. 피부 구멍의 크기와 깊은 통로·원천은 같지 않다. 수술과 감염·허혈·염증·종양·이물 등의 원인, 원위부 막힘과 실제 장관 연속성을 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.6abfb79654f4",
+      "type": "paragraph",
+      "markdown": "관리에는 감염과 장기 위협의 통제, 수분·전해질과 영양, 피부 보호와 유출 관리, 원인의 규명과 필요한 재건 계획이 포함된다. 밖으로 잘 나온다는 사실만으로 감염·영양 손실이 해결된 것은 아니다. 반대로 유출이 작아도 닫힌 내부 공간에 감염이 남을 수 있다. 저절로 닫힐 가능성과 재건 시점은 해부학과 원인·숙주에 따라 달라진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.f3de972f9a45",
+      "type": "heading",
+      "level": 2,
+      "text": "관의 이득과 위해를 다시 본다"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.53b67f510090",
+      "type": "paragraph",
+      "markdown": "관은 진단과 배출에 도움을 주지만 감염·통증·압박과 조직 손상, 이동·우발적 제거와 누공 지속 등의 위해가 있을 수 있다. 관을 오래 두는 것이 항상 더 안전한 것은 아니다. 제거는 숫자 하나보다 원래 목적·원천·양과 성상·경과·영상·수술 부위를 통합하여 결정한다. 다른 수술의 제거 기준을 임의 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.879946bb679e",
+      "type": "paragraph",
+      "markdown": "환자와 보호자에게는 당김·막힘·갑작스러운 양과 성상 변화, 발열·통증과 피부 손상의 연락 방법을 안내한다. 누가 수집·기록하고 물품을 제공하며 추적할지 정해야 병원 밖에서도 관리가 이어진다. 관을 세척하거나 위치를 바꾸는 행동은 기구와 수술에 따라 위험이 달라 임의로 하지 않도록 계획을 명확히 한다. 관의 존재가 아니라 실제 기능과 환자의 상태를 중심으로 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.6796ef5ee302",
+      "type": "heading",
+      "level": 2,
+      "text": "누공 주변 피부의 보호"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.2edc8bf59249",
+      "type": "paragraph",
+      "markdown": "소화액과 습기·접착제의 반복 노출은 누공 주변 피부를 손상시켜 통증과 밀폐 실패를 만들 수 있다. 밀폐가 나빠지면 실제 유출량 기록도 부정확해져 수분·전해질 손실을 과소평가할 수 있다. 피부 보호와 수집 장치의 맞춤,환자의 움직임과 돌봄 능력은 단순 미용 문제가 아니라 생리 관리의 조건이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.b.e4381d144555",
+      "type": "paragraph",
+      "markdown": "배액 농도에서 효소·담즙 성분 등이 의심될 때에는 수술 부위·혈중 값과 채취 조건을 함께 고려한다. 특정 분석값 하나가 통로의 전체 해부·조직 생존·자연 폐쇄 가능성을 확정하지는 않는다. 누공의 위치와 길이·연결,원위부 막힘·염증·이물과 감염을 구별하여 기록해야 치료의 다음 단계와 영양 전략을 논의할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.table0848",
+      "type": "table",
+      "data": {
+        "title": "기전·근거·목표의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "양",
+            "시간·완전 수집·관 조건"
+          ],
+          [
+            "농도",
+            "희석·표본 시점·물질"
+          ],
+          [
+            "누공",
+            "통로·원천·막힘·숙주"
+          ],
+          [
+            "이득",
+            "배출과 정보,피부·감염·이물 위해"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "general-surgery.technique.drains-fistula-balance.diagram.drain-volume-solute-0848",
+      "type": "diagram",
+      "diagramRef": "diagram.drain-volume-solute-0848",
+      "path": "diagrams/diagram.drain-volume-solute-0848.svg",
+      "alt": "부피와 물질 유출량의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/general-surgery/chapters/technique/sections/general-surgery.technique.drains-fistula-balance.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.general-surgery.technique.drains-fistula-balance.001",
+    "question.general-surgery.technique.drains-fistula-balance.002"
+  ],
+  "relatedLessons": [
+    "general-surgery.technique.suture-tissue-mechanics",
+    "gi-surgery.esophagus.structure-function"
+  ]
+}

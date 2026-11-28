@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.folate-cobalamin-reaction-pairs",
+  "lessonId": "biochemistry.vitamins.folate-cobalamin-one-carbon",
+  "title": "엽산·B12의 다른 연결",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "엽산 일탄소 형태",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "퓨린·dTMP 등 합성",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "메틸B12·methionine synthase",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "homocysteine→methionine",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "아데노실B12·mutase",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "methylmalonyl→succinyl-CoA",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.folate-cobalamin-reaction-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "형태·재생구별",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.folate-cobalamin-reaction-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "엽산재생연결",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.folate-cobalamin-reaction-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "골격재배열",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "각반응의대표연결이다. 대사산물하나로결핍이나질환을확진하지않는다."
+  ],
+  "sourceImageUsed": false
+}

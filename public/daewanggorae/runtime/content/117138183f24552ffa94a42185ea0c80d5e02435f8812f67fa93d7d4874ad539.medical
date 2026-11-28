@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.inflammation.adhesion-cascade",
+  "subjectId": "pathology",
+  "chapterId": "inflammation",
+  "title": {
+    "ko": "백혈구의 포획·구르기·부착과 혈관 밖 이동",
+    "en": "Leukocyte Capture Rolling Adhesion and Transmigration"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.inflammation.adhesion-cascade.lo.01",
+      "text": "Selectin과 integrin의 역할을 단계별로 설명한다"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.lo.02",
+      "text": "inside-out 신호를 설명한다"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.lo.03",
+      "text": "혈중 세포 수와 조직 동원의 차이를 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.12f71ebb39fb",
+      "type": "heading",
+      "level": 2,
+      "text": "흐르는 세포를 벽에 붙잡는 과정"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.54eefc2e857e",
+      "type": "paragraph",
+      "markdown": "백혈구가 염증 부위에 들어가려면 빠르게 흐르는 혈액에서 혈관 벽과 접촉하고, 움직임을 늦춘 뒤 안정적으로 붙고, 내피와 기저막을 통과해야 한다. 혈류의 정체와 적혈구의 배열 변화는 백혈구가 벽 가까이 위치하는 변연화(margination)에 기여한다. 변연화는 특정 수용체 결합 자체와 같지 않으며 혈역학적 조건과 세포 접착이 이어지는 준비 단계다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.912cf0663a36",
+      "type": "paragraph",
+      "markdown": "포획과 구르기(rolling)에는 selectin 계열과 당화된 리간드의 가역적 결합이 중요하다. 내피의 P-selectin은 저장 소포에서 표면으로 빠르게 이동할 수 있고, E-selectin 발현은 염증성 자극에 의한 새로운 합성의 영향을 받는다. 백혈구의 L-selectin도 모집 과정에 기여한다. 결합이 형성되고 풀리는 반복으로 세포가 계속 굴러갈 수 있다는 점이 안정 부착과 다른 특징이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.78d7604a982a",
+      "type": "heading",
+      "level": 2,
+      "text": "케모카인이 접착력을 바꾼다"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.21f2b9e438c2",
+      "type": "paragraph",
+      "markdown": "혈관 표면에 제시된 케모카인은 백혈구의 G단백질연결수용체를 통해 integrin의 상태를 바꾼다. 세포 안쪽 신호가 막단백질의 형태와 군집을 변화시키는 inside-out 활성화다. 단백질의 총량을 급격히 늘리지 않고도 리간드에 대한 친화도와 전체 결합력을 높일 수 있다. 따라서 표면 발현량이 유지되어 있다는 검사만으로 부착 기능이 정상이라고 할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.34a1967a3d13",
+      "type": "paragraph",
+      "markdown": "β2 integrin에 속하는 LFA-1과 Mac-1은 ICAM 계열 등과 상호작용한다. 일부 백혈구의 α4β1 integrin은 VCAM-1 결합에 참여한다. Integrin이 세포외 리간드에 결합한 뒤에는 세포골격과 이동 신호로 이어지는 outside-in 신호도 생긴다. Selectin이 처음 접촉을 지지하고 integrin이 강한 부착을 돕는 대표적 도식은 유용하지만 세포 종류와 혈관 구역마다 세부 참여 분자는 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.b12bc65659c3",
+      "type": "heading",
+      "level": 2,
+      "text": "부착 다음에는 이동 장벽이 남아 있다"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.6a6fc957d86f",
+      "type": "paragraph",
+      "markdown": "안정적으로 붙은 백혈구는 내피 표면을 따라 이동하며 통과 지점을 찾을 수 있다. 내피세포 사이를 지나가는 경로에서는 PECAM-1(CD31) 등 여러 접착·접합 성분이 관여한다. 모든 이동이 세포 사이 경로에 한정되는 것은 아니며 내피세포를 가로지르는 경로도 있다. 내피를 통과한 뒤에도 기저막과 주변 지지세포, 간질을 통과해야 하므로 혈관 벽은 단일한 구멍이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.a23296fb2237",
+      "type": "paragraph",
+      "markdown": "백혈구는 세포골격 재편성과 변형 능력을 이용한다. 통과가 일어나는 동안 접합부와 내피의 능동 반응도 중요하다. 정상적인 백혈구 이동을 단지 내피가 파괴되어 세포가 새는 현상으로 설명할 수 없다. 반대로 과도한 활성화에서는 백혈구 산물로 장벽 손상이 동반될 수 있으므로 생리적 이동과 염증성 손상의 범위를 나누어 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.7b99d1f92996",
+      "type": "heading",
+      "level": 2,
+      "text": "접착 결함을 단계별로 추론한다"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.ce2df012f02b",
+      "type": "paragraph",
+      "markdown": "β2 integrin의 공통 사슬인 CD18의 결함은 백혈구접착결핍(leukocyte adhesion deficiency, LAD)의 대표적인 기전이다. 혈중 호중구가 많아도 조직 동원이 불량하여 감염 부위의 고름 형성이 부족할 수 있다. 혈중 수는 생산·분포·소실의 결과이고, 조직에서 작동하는 능력은 별도이므로 세포가 많다는 사실이 효과적인 방어를 보증하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.b.a981e41852a1",
+      "type": "paragraph",
+      "markdown": "실험에서 구르기는 보존되나 안정 부착만 감소했다면 selectin 단계보다 integrin 활성·결합을 우선 검토할 수 있다. 그러나 한 패턴만으로 환자의 유전자 결함을 확정하지는 않는다. 유속·세포 생존·내피 활성화와 리간드 발현이 같은 조건인지 확인해야 한다. 정적 배양 접착 검사와 실제 전단력이 있는 유동 실험의 결과가 다른 이유도 이러한 조건 차이에 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.inflammation.adhesion-cascade.table.0822",
+      "type": "table",
+      "data": {
+        "title": "핵심 과정의 비교",
+        "columns": [
+          "과정·지표",
+          "의미"
+        ],
+        "rows": [
+          [
+            "Selectin",
+            "포획·구르기의 대표 결합"
+          ],
+          [
+            "Integrin",
+            "활성화된 부착과 세포골격 연결"
+          ],
+          [
+            "ICAM·VCAM",
+            "내피 쪽 리간드의 대표 예"
+          ],
+          [
+            "PECAM-1",
+            "내피 통과에 관여하는 여러 성분 중 하나"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/inflammation/sections/pathology.inflammation.adhesion-cascade.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.pathology.inflammation.adhesion-cascade.001"
+  ],
+  "relatedLessons": [
+    "pathology.inflammation.vascular-exudation",
+    "pathology.inflammation.chemotactic-migration"
+  ]
+}

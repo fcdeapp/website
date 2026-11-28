@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.fdc0c81690c1",
+      "sourceSha256": "fdc0c81690c1c558e9450800db748586fbaedd9cd58268f9903547312c331f99",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.e8e8e744d6df",
+      "sourceSha256": "e8e8e744d6df5697d7069a98d03c505ad5ed184e6828e72770c5549c3fbd0c18",
+      "sourceLengthUtf16": 229,
+      "annotations": [
+        {
+          "id": "ann.4a46b19daa720407cbe6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 38,
+            "end": 41,
+            "exact": "심부전",
+            "prefix": "령, 과거 뇌졸중이나 전신 색전, 고혈압과 ",
+            "suffix": ", 당뇨병 및 혈관질환 등의 임상 정보를 정"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.16a52b5b8012cb74f754",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 43,
+            "end": 46,
+            "exact": "당뇨병",
+            "prefix": " 뇌졸중이나 전신 색전, 고혈압과 심부전, ",
+            "suffix": " 및 혈관질환 등의 임상 정보를 정리한다. "
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.70e0469f9cf1",
+      "sourceSha256": "70e0469f9cf13c6a0f434b05c742de20667577f0d6349e3b3b82f01482842f21",
+      "sourceLengthUtf16": 256,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.f842768299e3",
+      "sourceSha256": "f842768299e3dcee302197af97630368e28ef48f977bce19af63ccff9a957385",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.e3969907c9bd",
+      "sourceSha256": "e3969907c9bd32c022cb985b9f4bd2f809b39dff16652b5becab04d201380662",
+      "sourceLengthUtf16": 267,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention.b.3b6c7eda6e91",
+      "sourceSha256": "3b6c7eda6e9180db7443235e4ac600b3817b61bb3e27aa1bcc8b681e019676b0",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    }
+  ]
+}

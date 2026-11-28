@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.refractoriness-conduction",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "활동전위·불응기와 전도 안전성",
+    "en": "Action Potentials Refractoriness and Conduction"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.lo.01",
+      "text": "빠른 반응과 결절 전도를 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.lo.02",
+      "text": "재분극과 흥분성 회복의 차이를 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.lo.03",
+      "text": "전도속도·불응기·회로 길이를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.47c60bd2c679",
+      "type": "heading",
+      "level": 2,
+      "text": "세포 종류에 따라 달라지는 전도"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.e5f91fe9eef5",
+      "type": "paragraph",
+      "markdown": "작업 심근과 Purkinje 계통의 빠른 활동전위 상승은 주로 빠른 Na 전류와 관련된다. 동방·방실결절의 대표적인 전도에는 칼슘 전류의 기여가 중요하다. 모든 심장 세포의0상과 전도 지연을 같은 통로 변화로 설명할 수는 없다. 표적이 같아도 세포 종류와 막전위, 자극 빈도에 따라 약물의 기능적 영향이 달라질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.58612d163eec",
+      "type": "paragraph",
+      "markdown": "빠른 Na 통로는 활성화·불활성화·회복을 거친다. 충분히 재분극되지 않으면 이용 가능한 통로가 줄어 전도에 영향을 준다. 활동전위 상승 기울기는 전파에 기여하지만 조직의 전도속도와 동일한 변수는 아니다. 세포 연결과 섬유 방향, 다음 조직의 전기적 부하가 함께 작동한다. 한 세포에서 얻은 전류를 조직 전체의 속도로 직접 바꿀 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.019ffafe95be",
+      "type": "heading",
+      "level": 2,
+      "text": "전위 회복과 반응 회복"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.0304743c73d4",
+      "type": "paragraph",
+      "markdown": "유효불응기(effective refractory period, ERP)는 앞선 흥분 뒤 충분한 전파 반응을 만들 수 없는 구간과 관련된다. 활동전위가 끝나는 시점과 흥분성이 완전히 회복하는 시점은 반드시 같지 않다. 약물과 손상에 따라 재분극 이후에도 반응이 제한될 수 있다. 활동전위 지속시간을 모든 조건의 ERP와 같은 값으로 쓰지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.85b3081b04d8",
+      "type": "paragraph",
+      "markdown": "상대불응기에는 강한 자극이 필요하거나 반응 크기와 전도가 달라질 수 있다. 자극의 강도·시점과 기록 위치가 없으면 불응기 숫자의 의미가 불완전하다. 국소 반응이 생긴 것과 멀리 전파되어 조직을 활성화한 것은 다른 종말점이다. 전기생리 검사에서는 자극의 전달 여부와 다음 조직에서의 반응을 따로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.711b831e24ed",
+      "type": "heading",
+      "level": 2,
+      "text": "구조와 전도 방향"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.d6f9144f68e2",
+      "type": "paragraph",
+      "markdown": "심근 섬유 방향과 세포 연결은 종방향·횡방향 전도의 차이를 만들 수 있다. 반흔 주변에서는 살아 있는 근섬유가 좁은 통로를 이루고 흥분이 우회하거나 느려질 수 있다. 같은 병변도 자극 방향과 시점에 따라 기능적 차단을 보인다. 고정된 해부학적 장벽과 순간적인 불응성 장벽을 구별하면 회로의 가변성을 설명할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.1023f25b2a89",
+      "type": "paragraph",
+      "markdown": "전파는 활성 조직이 다음 조직을 충분히 탈분극시킬 수 있어야 유지된다. 좁은 통로에서 넓은 조직으로 나갈 때 부담이 커지면 전도가 끊길 수 있다. 길이와 속도만으로 모든 전파를 설명할 수 없는 이유다. 수학적으로 고리가 가능해 보여도 출구의 전도 안전성이 부족하면 실제 지속 회귀가 성립하지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.17af754df4f1",
+      "type": "heading",
+      "level": 2,
+      "text": "파장의 적용 범위"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.83a868f377bb",
+      "type": "paragraph",
+      "markdown": "균일 고리에서 파장λ는 전도속도v와 ERP의 곱이다. 같은 속도에서 ERP가 길어지면 파장이 커지고 같은 ERP에서 속도가 느려지면 파장이 짧아진다. 이는 회로가 흥분파를 수용할 여유를 생각하는 도구다. 실제 심장의 곡률·이질성과 여러 회로를 한 가지 고정된λ로 환산하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.b.68831c6ae027",
+      "type": "paragraph",
+      "markdown": "가상 v=50cm/s,ERP=0.20s라면λ=10cm다. ERP를0.30s로 늘리면15cm다. 회로 길이가12cm인 균일 모형에서는 두 조건의 여유가 다르지만 이 값으로 환자의 약물 성공이나 절제 위치를 정할 수는 없다. 전도와 불응기를 바꾸는 작용은 치료 표적이면서 새로운 차단·부정맥의 원인이 될 수도 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.paragraph.extension0828",
+      "type": "paragraph",
+      "markdown": "은폐전도(concealed conduction)는 자극이 조직의 일부에 들어갔지만 다음 구획까지 완전하게 전달되지 않아 체표의 독립된 출력으로 드러나지 않는 현상이다. 겉으로 QRS를 만들지 못한 심방 자극도 방실결절의 회복 상태를 바꾸어 다음 자극의 전달을 지연하거나 막을 수 있다. 따라서 관찰된 심방 주기와 심실 주기의 관계가 단순한 고정 비율로 설명되지 않을 수 있다. 보이지 않는 사건을 임의로 가정하는 것이 아니라 반복 기록과 자극 반응으로 가능한 전도 이력을 검증해야 한다. 불응기는 조직의 고정된 명찰이 아니라 직전 활성화와 주기 길이에 영향을 받는 상태 변수다."
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "유효불응기",
+            "자극이 유효 전파를 만들지 못하는 시간"
+          ],
+          [
+            "전도속도 v",
+            "거리/시간"
+          ],
+          [
+            "파장 λ",
+            "v×ERP의 균일 조직 근사"
+          ],
+          [
+            "회귀",
+            "일방향 차단·회복·연결 조건 추가"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.arrhythmias.refractoriness-conduction.diagram.refractory-wavelength-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.refractory-wavelength-toy",
+      "path": "diagrams/diagram.refractory-wavelength-toy.svg",
+      "alt": "전도속도와 파장의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.refractoriness-conduction.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.refractoriness-conduction.001",
+    "question.cardiology.arrhythmias.refractoriness-conduction.002"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.automaticity-triggered-activity",
+    "cardiology.electrocardiography.rate-interval-measurement"
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.testing.stress-ischemia",
+  "subjectId": "cardiology",
+  "chapterId": "testing",
+  "title": {
+    "ko": "부하검사의 생리와 허혈 검출",
+    "en": "Stress Testing and Ischemia Detection"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.testing.stress-ischemia.lo.01",
+      "text": "수요 부하와 혈관확장 부하를 구별한다"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.lo.02",
+      "text": "관류·운동·전기 변화의 종말점을 설명한다"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.lo.03",
+      "text": "상대 관류의 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.testing.stress-ischemia.b.756c7be9910b",
+      "type": "heading",
+      "level": 2,
+      "text": "안정 시 숨어 있는 제한"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.96d49295200a",
+      "type": "paragraph",
+      "markdown": "협착과 미세혈관 이상이 있어도 안정 수요를 만족시키면 검사에서 큰 차이가 드러나지 않을 수 있다. 부하검사는 공급의 여유와 수요 증가에 대한 반응을 평가한다. 운동과 일부 약리 부하는 심박수·수축력 등 수요를 올리고, 혈관확장 자극은 혈류의 증가 능력을 비교하는 데 이용된다. 두 자극은 모두 부하라는 이름을 쓰지만 같은 생리적 조작은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.84b22182a371",
+      "type": "paragraph",
+      "markdown": "운동 능력은 증상의 재현과 혈압·리듬 반응, 기능 상태에 대한 정보도 제공한다. 그러나 목표한 정도의 부하에 도달하지 못하면 음성 결과의 의미가 달라질 수 있다. 약물과 기존 전도 변화, 근골격 제한이 어떤 검사에 적합한지 영향을 준다. 환자가 움직일 수 있는지와 심전도를 해석할 수 있는지를 검사 선택의 서로 다른 조건으로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.d8976cface5b",
+      "type": "heading",
+      "level": 2,
+      "text": "허혈의 여러 층"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.32c234439825",
+      "type": "paragraph",
+      "markdown": "공급이 부족해지는 과정에서 관류·대사·이완·수축과 전기적 변화, 증상은 서로 다른 수준의 정보를 준다. 관류 영상과 부하심초음파, 운동 심전도가 같은 검사의 다른 이름이 아닌 이유다. 도식적인 허혈 연쇄는 이해에 도움이 되지만 모든 환자에서 각 변화가 고정된 순서와 시간으로 나타나는 것은 아니다. 측정 민감도와 병변의 범위도 결과를 바꾼다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.b000f67e5f20",
+      "type": "paragraph",
+      "markdown": "부하심초음파는 국소 벽운동과 수축기 두꺼워짐의 변화를 평가한다. 정상 영역과 비교한 기능적 저하가 단서가 되지만 영상의 질과 관찰자의 해석, 기존 손상이 영향을 준다. 관류 영상은 방사성 추적자·자기공명 등 방법에 따라 혈류의 분포와 정량 정보를 제공한다. 어떤 신호를 재는지 확인한 뒤 양성의 의미를 해석해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.0a4deb875e7d",
+      "type": "heading",
+      "level": 2,
+      "text": "상대값이 놓치는 균일한 저하"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.dee9ca064fe4",
+      "type": "paragraph",
+      "markdown": "일부 관류 검사는 다른 심근 영역과의 상대적인 섭취 차이를 중심으로 읽는다. 여러 영역의 공급이 함께 낮아지면 가장 잘 보이는 부위와의 대비가 작아질 수 있다. 정상처럼 균일하다는 결과가 모든 영역의 절대 관류가 충분하다는 뜻은 아니다. 절대 혈류 정량과 임상 위험, 다른 고위험 소견이 보완하는 이유다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.2972d9e55376",
+      "type": "paragraph",
+      "markdown": "감쇠와 움직임, 부하 부족과 약물의 영향은 위양성·위음성의 다른 원인이 된다. 큰 관상동맥 협착이 없더라도 미세혈관 이상으로 기능 검사가 비정상일 수 있다. 이를 무조건 가짜 양성으로 지우지 않는다. 반대로 비정상 기능 검사 하나로 치료할 혈관의 위치와 방법을 곧바로 정하는 것도 충분하지 않다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.1aa072dc408b",
+      "type": "heading",
+      "level": 2,
+      "text": "적절한 질문과 적용 범위"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.3a0e78f01372",
+      "type": "paragraph",
+      "markdown": "부하검사는 안정된 상황에서 허혈과 기능을 평가하는 도구다. 진행하는 급성 허혈이나 심한 불안정성이 있는 환자를 검증되지 않은 부하로 시험하는 방식과 구별해야 한다. 검사 전 안전성 판단과 적절한 감시가 필요하다. 급성관상동맥증후군에서 현재 위험을 평가하는 것과 만성 증상에서 예비력을 확인하는 것은 우선순위가 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.b.3a9421cc3fc8",
+      "type": "paragraph",
+      "markdown": "해부학적 검사와 기능 검사는 증상·환자 조건·검사 전 가능성에 따라 선택하고 조합한다. 어느 검사든 정상이라는 말에는 그 검사가 답한 질문이 포함된다. 검사 뒤에는 결과가 위험인자 관리와 증상 치료, 추가 해부·기능 평가에 어떤 영향을 주는지 연결해야 한다. 양성·음성 표지 하나를 공부하는 대신 검사 생리와 임상 질문을 함께 익힌다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.testing.stress-ischemia.table.0826",
+      "type": "table",
+      "data": {
+        "title": "평가 대상과 임상 의미의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "운동·일부 약리 부하",
+            "수요와 혈역학 반응"
+          ],
+          [
+            "혈관확장 부하",
+            "충혈·공급 여유의 평가"
+          ],
+          [
+            "벽운동",
+            "기계적 수축·두꺼워짐"
+          ],
+          [
+            "관류",
+            "상대 분포와 절대 정량 구별"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/testing/sections/cardiology.testing.stress-ischemia.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.testing.stress-ischemia.001"
+  ],
+  "relatedLessons": [
+    "cardiology.diagnosis.serial-tests",
+    "cardiology.imaging.coronary-ct"
+  ]
+}

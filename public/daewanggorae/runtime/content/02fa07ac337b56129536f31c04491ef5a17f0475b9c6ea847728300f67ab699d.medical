@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.atrial-flutter",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "심방조동의 회로와 전도비",
+    "en": "Atrial Flutter Circuits and Conduction Ratios"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.lo.01",
+      "text": "큰 회귀와 협부의 역할을 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.lo.02",
+      "text": "심방 주기와 방실전도비를 분리하여 해석한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.lo.03",
+      "text": "전형적·비전형적 조동을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.b.eab224f6715c",
+      "type": "heading",
+      "level": 2,
+      "text": "큰 회귀가 만드는 반복 활성화"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.b.c0c101e48504",
+      "type": "paragraph",
+      "markdown": "심방조동(atrial flutter)은 조직화된 빠른 심방 활성화를 보이는 큰 회귀성 빈맥의 대표적 형태다. 전형적 심방조동은 우심방의 삼첨판륜 주변을 도는 회로와 하대정맥–삼첨판 협부(cavotricuspid isthmus, CTI)를 포함한다. 판륜과 정맥 입구 같은 해부학적 경계, 기능적 전도 차단과 조직의 전도 특성이 순환 경로를 제한한다. 파가 일정한 회로를 반복하여 표면 심전도에서 규칙적인 심방 활동이 보일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.b.2cb130dbb17e",
+      "type": "paragraph",
+      "markdown": "회전 방향과 심방 활성화 순서에 따라 유도별 조동파의 방향이 달라진다. 전형적으로 알려진 톱니 모양은 유용한 단서지만 모든 환자와 모든 조동에서 같은 모양이 나오는 것은 아니다. 수술이나 심방세동 절제 뒤 생긴 반흔을 중심으로 우심방 또는 좌심방에서 다른 큰 회귀가 유지될 수 있다. 비전형적 조동은 전형적 협부 의존 회로와 같은 말이 아니며, 같은 심방 속도만으로 CTI 절제가 적절한 표적인지 판단하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.b.e54203a9faf8",
+      "type": "heading",
+      "level": 2,
+      "text": "방실결절을 통과한 출력"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.b.15103e956225",
+      "type": "paragraph",
+      "markdown": "심방이 빠르게 활성화되어도 심실이 반드시 같은 속도로 뛰지는 않는다. 방실결절의 불응성과 은폐전도(concealed conduction) 때문에 일부 심방 자극만 심실에 전달될 수 있다. 일정한 2:1 전도에서는 심방이 두 번 활성화될 때 QRS가 한 번 발생하여 심실 RR 간격은 규칙적이다. 이 경우 하나의 조동파가 QRS 또는 T파에 겹쳐 규칙적인 다른 상심실성 빈맥처럼 보일 수 있다. 조동이 언제나 불규칙 맥박을 만든다는 생각은 잘못이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.b.eccc8c9b6efb",
+      "type": "paragraph",
+      "markdown": "교육용으로 심방 속도를 분당 300회에 고정하고 모든 n번째 자극만 전달된다고 가정하면 심실 속도는 300/n회다. 2:1이면 150회, 3:1이면 100회가 된다. 이 계산은 전도비의 뜻을 보여 주는 예이며 특정 심박수에서 조동을 확진하는 기준이 아니다. 실제 전도비가 2:1과 3:1 사이에서 바뀌면 RR 간격이 불규칙해질 수 있다. 심방 주기와 심실 주기를 각각 측정해야 원래 회로의 변화와 방실결절 출력의 변화를 구별할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.b.14f2c8fca072",
+      "type": "heading",
+      "level": 2,
+      "text": "회로 치료와 장기 위험"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.b.2d5d1a145efd",
+      "type": "paragraph",
+      "markdown": "협부 의존성이 확인된 조동에서는 협부를 가로지르는 전도 차단을 만들어 회귀가 유지될 통로를 끊는 도자 절제가 기전 중심 치료가 된다. 시술로 빈맥이 끝나는 것과 양방향 전도 차단이 지속되는 것은 다른 확인 항목이다. 비전형적 회로는 활성화 지도와 자극 반응에 따라 표적이 달라진다. 정상 심장 3D 모델로 우심방·삼첨판의 위치를 이해할 수 있지만 개별 환자의 반흔, 전도 차단선과 임계 협부를 직접 나타내지는 못한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.b.3a53b6bec451",
+      "type": "paragraph",
+      "markdown": "심방조동 환자에서 심방세동이 동반되거나 나중에 발생할 수 있다. 리듬이 규칙적이고 절제로 조동이 종료되었다는 사실만으로 혈전색전 위험이 없어졌다고 결론 내리지 않는다. 혈전 예방은 동반 질환, 다른 심방 부정맥의 기록, 심율동전환의 상황 및 적용 지침을 함께 고려한다. 조동만 있는 환자의 위험 평가와 심방세동의 확립된 기준을 구분하여 읽어야 하며, 빈맥의 모양을 교정하는 목표와 뇌졸중을 예방하는 목표는 별도로 추적한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "전형적 조동",
+            "CTI 포함 큰 회귀"
+          ],
+          [
+            "비전형적 조동",
+            "다른 경계·반흔 주위 회로 가능"
+          ],
+          [
+            "고정 전도비",
+            "심실 리듬이 규칙적일 수 있음"
+          ],
+          [
+            "가변 전도비",
+            "심실 RR이 불규칙할 수 있음"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-flutter.diagram.flutter-ratio-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.flutter-ratio-toy",
+      "path": "diagrams/diagram.flutter-ratio-toy.svg",
+      "alt": "고정 심방 속도와 전도비의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.atrial-flutter.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.atrial-flutter.001",
+    "question.cardiology.arrhythmias.atrial-flutter.002"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.focal-atrial-tachycardia",
+    "cardiology.arrhythmias.atrial-fibrillation-mechanisms"
+  ]
+}

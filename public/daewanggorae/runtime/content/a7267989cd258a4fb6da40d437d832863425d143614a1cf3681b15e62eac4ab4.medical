@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pediatrics",
+  "title": {
+    "ko": "소아청소년과학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "pediatrics.chapter.growth",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/growth/chapter.json"
+    },
+    {
+      "id": "pediatrics.chapter.development",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/development/chapter.json"
+    },
+    {
+      "id": "pediatrics.chapter.gastroenteritis",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/gastroenteritis/chapter.json"
+    },
+    {
+      "id": "pediatrics.chapter.respiratory",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/respiratory/chapter.json"
+    },
+    {
+      "id": "pediatrics.chapter.infection",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/infection/chapter.json"
+    },
+    {
+      "id": "pediatrics.chapter.renal",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/renal/chapter.json"
+    },
+    {
+      "id": "pediatrics.chapter.hematology",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/hematology/chapter.json"
+    },
+    {
+      "id": "pediatrics.chapter.gastrointestinal",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/gastrointestinal/chapter.json"
+    },
+    {
+      "id": "pediatrics.chapter.allergy",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/allergy/chapter.json"
+    },
+    {
+      "id": "pediatrics.chapter.fluid",
+      "path": "domains/07-obgyn-pediatrics/subjects/pediatrics/chapters/fluid/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "pediatrics.plan.001",
+    "pediatrics.plan.002",
+    "pediatrics.plan.003",
+    "pediatrics.plan.004",
+    "pediatrics.plan.005",
+    "pediatrics.plan.006",
+    "pediatrics.plan.007",
+    "pediatrics.growth.assessment",
+    "pediatrics.growth.velocity-measurement",
+    "pediatrics.development.surveillance-screening",
+    "pediatrics.gastroenteritis.dehydration-assessment",
+    "pediatrics.respiratory.bronchiolitis-work-breathing",
+    "pediatrics.infection.fever-clinical-assessment",
+    "pediatrics.renal.urinary-infection",
+    "pediatrics.hematology.iron-deficiency",
+    "pediatrics.gastrointestinal.constipation-retention",
+    "pediatrics.allergy.food-reactions",
+    "pediatrics.fluid.compartment-assessment",
+    "pediatrics.gastroenteritis.transport-rehydration",
+    "pediatrics.respiratory.bronchiolitis-mechanics"
+  ]
+}

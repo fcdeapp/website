@@ -150,7 +150,7 @@ export function Block({ block: b }: { block: ContentBlock }) {
     case "heading":
       return b.level <= 2 ? <h2>{b.text}</h2> : <h3>{b.text}</h3>;
     case "paragraph":
-      return <Text text={b.markdown} />;
+      return <Text text={b.markdown} blockId={b.id} />;
     case "definition":
     case "clinicalPearl":
     case "warning":

@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.survival.biofilm-heterogeneity",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.survival.biofilm-heterogeneity.b.9386f9d193c6",
+      "sourceSha256": "9386f9d193c694feaf16702728629d87b91c55a08fb794cc69b2443260aafaac",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.survival.biofilm-heterogeneity.b.df0d528c1d6c",
+      "sourceSha256": "df0d528c1d6c569213d79cac9d475eb21ca28be5605ace7bcc13565bb7281670",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.bdcb3aa04d82c1c1cbac",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 122,
+            "end": 186,
+            "exact": "약물 결합·분해·배출·세포 상태의 차이가 함께 작용하며 무엇이 중요한지는 균종과 약물, 생물막 조건에 따라 다르다.",
+            "prefix": "은 성장률 때문에 반응이 달라질 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.survival.biofilm-heterogeneity.b.1cd6e83cbc69",
+      "sourceSha256": "1cd6e83cbc6972b59bc5385ee314625c0250401320d08202576c05ebd5f25310",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.survival.biofilm-heterogeneity.b.b2e27386bb90",
+      "sourceSha256": "b2e27386bb906759bee1235eaa64f62bbef9a1f5f4d5a71bd65be2d4b8740b73",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.survival.biofilm-heterogeneity.b.2f09e8b7ee2c",
+      "sourceSha256": "2f09e8b7ee2c79d2a321e85b7ef6010dd7ed5f0e40880b95f668adff48b41f93",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.survival.biofilm-heterogeneity.b.4edd8632adbd",
+      "sourceSha256": "4edd8632adbd69c1b788f989ad5d522b1de2b7f4d5ae0def47faa61d8b0d0148",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.survival.biofilm-heterogeneity.b.54d72e1301c2",
+      "sourceSha256": "54d72e1301c2b9100d0e3a3e24608e9fbfa78ab9cd7de22e19ea0a89dde6683b",
+      "sourceLengthUtf16": 197,
+      "annotations": [
+        {
+          "id": "ann.995790d9b23338b8240d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 169,
+            "end": 175,
+            "exact": "감염원 조절",
+            "prefix": "구별해야 한다. 구조물 제거 여부를 포함한 ",
+            "suffix": "의 판단도 환자별 위험과 함께 평가된다."
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        },
+        {
+          "id": "ann.e2d6ab6436b5197b37ab",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 118,
+            "end": 153,
+            "exact": "오염·집락화와 실제 감염을 부위와 경과에 맞추어 구별해야 한다.",
+            "prefix": "증상이 생물막 때문이라고 확정하지 않는다. ",
+            "suffix": " 구조물 제거 여부를 포함한 감염원 조절의 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.survival.biofilm-heterogeneity.b.41d2ae6280fd",
+      "sourceSha256": "41d2ae6280fdeb9406bf279c321b1795c2cc42207295f27a4ff29d6aed652c90",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    }
+  ]
+}

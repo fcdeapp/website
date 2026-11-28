@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neuroscience.sleep.circadian-arousal",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.b.5e52e2cd2d10",
+      "sourceSha256": "5e52e2cd2d1050d302becad43f31b27bab1997083b25bfe5baf18491caf7a0f5",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.b.2f97fefb1cfb",
+      "sourceSha256": "2f97fefb1cfb283af8d9d7591e258b9d6aa7206636b58b562816a4aa176b0c92",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.b.6b7bf7e2ddd0",
+      "sourceSha256": "6b7bf7e2ddd045af7a615e8ea4fea99ede50ac19772a10c249f106abd9cc0101",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.5c3e50cbcbceb9c28469",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 77,
+            "exact": "비렘수면(non-rapid eye movement sleep, NREM)과 렘수면(REM)은 뇌파·안구운동·근긴장 등의 조합으로 구별한다.",
+            "prefix": "",
+            "suffix": " 수면 구조는 나이와 질환·약물·전날 수면에"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.b.5b160defc720",
+      "sourceSha256": "5b160defc720e099f88ffbc2870ba0e2df7c3d15cb9e07bbe35a6aa8bbab96fd",
+      "sourceLengthUtf16": 169,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.b.0fca9e950ea9",
+      "sourceSha256": "0fca9e950ea9d09bf21c8d2e6018097a02fb4989b36cc3bc4e5a665561439bdd",
+      "sourceLengthUtf16": 168,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.b.026f7d28c42a",
+      "sourceSha256": "026f7d28c42a812bb27208fa1cc0bd947d5d7e46ef9bb90b0432ff428c733842",
+      "sourceLengthUtf16": 166,
+      "annotations": [
+        {
+          "id": "ann.a11492f5430593dff0a9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 96,
+            "end": 166,
+            "exact": "가상 기록에서 침대8시간 중 실제 수면6시간이면 수면효율은75%지만 이 비율 하나로 질환·약물 필요와 안전을 확정하지 않는다.",
+            "prefix": " 있던 시간이 실제 수면시간과 같지 않다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.b.12c733c7a74d",
+      "sourceSha256": "12c733c7a74d7b91088a3b0da25e6ca1283265d5132a98c821ecd895e14d958e",
+      "sourceLengthUtf16": 176,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.b.a2f17fe21bfb",
+      "sourceSha256": "a2f17fe21bfb5352534e3047d30379498f5b451504ce435cccfe71d51216124d",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.supp.9e72c47a5b5f",
+      "sourceSha256": "9e72c47a5b5f1c5c7c51d6bda00dbdaa6ae6f57cc3a76dfedd7928852e74503c",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroscience.sleep.circadian-arousal.supp.98dfd9ef707b",
+      "sourceSha256": "98dfd9ef707b04d8036fe9a5f5276979bc5bd252c2b51fc3241524802219614c",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.cf1e8a9ad9aa0d034409",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 165,
+            "end": 188,
+            "exact": "시간 자료와 구조의 표현 범위를 구별한다.",
+            "prefix": "시와 일주기 신호를 검증한 그림은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

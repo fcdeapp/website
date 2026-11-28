@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "research-methods.design.question-and-estimand",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.094d60948640",
+      "sourceSha256": "094d6094864092334877d1803dee2ba2933256e546dce657eacffd334dce56ec",
+      "sourceLengthUtf16": 224,
+      "annotations": [
+        {
+          "id": "ann.74bc0c584c62e47b3cdf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 171,
+            "end": 224,
+            "exact": "편리하게 측정할 수 있는 검사 수치가 환자에게 중요한 결과를 충분히 대신하는지도 검토해야 한다.",
+            "prefix": "상 완화, 부작용과 비용은 다른 질문이다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.cd443800a6c6",
+      "sourceSha256": "cd443800a6c6b541013a83e291bfbc9549896ec7773e2a784db9b2ddad34ca39",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.5f9a72efcc76",
+      "sourceSha256": "5f9a72efcc76c83a1af9279289f72a01861cb45c465743fb61e2858e550b7698",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.4c8056cb9438",
+      "sourceSha256": "4c8056cb9438b6138fd66882a37ce387e6461440d1c7a9970522daae274d8b84",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.e026d91a3a64",
+      "sourceSha256": "e026d91a3a6447e038c0a0ee93b968bea170e7f68726c95d793e938c39258bea",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.1931370025b9",
+      "sourceSha256": "1931370025b951a710b7b70aad5231aa76f3c30b9995f9b40edf173b114cc226",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.38fff53c8e5c",
+      "sourceSha256": "38fff53c8e5cfdbe86c023ae56a8770224658355f25724a033becc1fabf8ce7c",
+      "sourceLengthUtf16": 226,
+      "annotations": [
+        {
+          "id": "ann.30024dec50ee77d4dc05",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 53,
+            "end": 134,
+            "exact": "대리결과변수(surrogate outcome)는 빠르게 변화를 볼 수 있지만 그 변화가 환자에게 중요한 장기 결과 개선을 반드시 보장하지 않는다.",
+            "prefix": "도와 관찰 가능성을 함께 고려하여 정한다. ",
+            "suffix": " 복합결과는 사건을 묶어 정보량을 늘릴 수 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.5bfa281a99a6",
+      "sourceSha256": "5bfa281a99a6fc545777411c44792fa0362817a5554919e39411ee8521ca2381",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.30327a8d9fc3",
+      "sourceSha256": "30327a8d9fc3c95e2adb41ef6e04e7c6e510cb2be847641cceac1cfe79ffed48",
+      "sourceLengthUtf16": 205,
+      "annotations": [
+        {
+          "id": "ann.a8585f0907aece01dd29",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 176,
+            "end": 180,
+            "exact": "신뢰구간",
+            "prefix": "성의 증거로 표현해서는 안 된다. 정밀도와 ",
+            "suffix": "이 질문에 답할 만큼 충분한지 판단해야 한다"
+          },
+          "conceptId": "reader.term.77cbeb95f38406c9",
+          "targetDocumentId": "biostatistics.inference.uncertainty"
+        },
+        {
+          "id": "ann.c344d36d66809e0e5f42",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 66,
+            "exact": "표본 수 계획에는 임상적으로 중요한 차이와 예상 변동 또는 사건 위험, 오류 기준과 검정력 및 탈락 가능성이 관여한다.",
+            "prefix": "",
+            "suffix": " 예산에 맞춘 표본 수를 계산한 뒤 그 연구"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.4072b604f343",
+      "sourceSha256": "4072b604f3437ddad34a1e5991f968571e632f1e33ed2fc89ae1cb6d1a7c0855",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.e370ebe9f2f8",
+      "sourceSha256": "e370ebe9f2f868e02bc959e736097e9d432fb27c58d088e8380aac47d752cd87",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "research-methods.design.question-and-estimand.b.769e8092aa48",
+      "sourceSha256": "769e8092aa48c61cda927921ad17a228b9dceac2aa9eb732162b1c5b8cecb053",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    }
+  ]
+}

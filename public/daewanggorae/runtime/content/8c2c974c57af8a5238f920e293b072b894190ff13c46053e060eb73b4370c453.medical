@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.structure.cell-envelope",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.structure.cell-envelope.b.809a2ba46e33",
+      "sourceSha256": "809a2ba46e33b75e73d6b8d45129a1f74dcb73abf5521c5d75d5756c8f930248",
+      "sourceLengthUtf16": 246,
+      "annotations": [
+        {
+          "id": "ann.6b903f7c1095bd3e04b4",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 209,
+            "end": 246,
+            "exact": "배양 조건과 염색 상태가 형태 관찰에 영향을 준다는 점도 중요하다.",
+            "prefix": "계에 따라 임상적 의미가 달라질 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.cell-envelope.b.78d447cc6f16",
+      "sourceSha256": "78d447cc6f1692c40efadb5179e4e3b4181a14496638cd934e17cfc4b49fd29b",
+      "sourceLengthUtf16": 250,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.cell-envelope.b.c4581d023d93",
+      "sourceSha256": "c4581d023d93d184336515c6859fdd4ef83d60fbf2015db04022919af7d8e7b8",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.cell-envelope.b.d4102624a53b",
+      "sourceSha256": "d4102624a53bb52fd3b6a58a5e4d45335971fea4e594c78b22178abe9e6303e4",
+      "sourceLengthUtf16": 256,
+      "annotations": [
+        {
+          "id": "ann.5e6ab8ee5460bf62a00b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 116,
+            "end": 173,
+            "exact": "Lipopolysaccharide(LPS)의 lipid A는 숙주 선천면역의 중요한 자극으로 작용한다.",
+            "prefix": "여러 효소와 수송 관련 단백질이 존재한다. ",
+            "suffix": " 내독소라는 용어를 살아 있는 균이 능동적으"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.cell-envelope.b.2a18dd2a205a",
+      "sourceSha256": "2a18dd2a205a589cf4186ac25fba9276847df3820bf04b93c00229c7b08e4fdc",
+      "sourceLengthUtf16": 257,
+      "annotations": [
+        {
+          "id": "ann.8853dc1f1281e13f98c8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 84,
+            "end": 86,
+            "exact": "보체",
+            "prefix": " 같은 화학적 성분인 것은 아니다. 항체와 ",
+            "suffix": "에 의한 opsonization은 식세포가 "
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        },
+        {
+          "id": "ann.2950a07cb2a512035f9f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 198,
+            "end": 257,
+            "exact": "부착 능력은 감염 시작의 중요한 요소지만 해당 균이 검출되었다는 사실이 곧 조직 침범을 증명하지는 않는다.",
+            "prefix": " 특정 숙주 표면에 결합하는 데 기여한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.cell-envelope.b.54ef7596dbfe",
+      "sourceSha256": "54ef7596dbfea13ed5f07e9fa39c83244983609c4a65a771f5785fcb87f3b939",
+      "sourceLengthUtf16": 246,
+      "annotations": [
+        {
+          "id": "ann.8e6ef7a82586c3e30699",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 228,
+            "end": 234,
+            "exact": "감염원 조절",
+            "prefix": " 수 있다. 감염된 기구 제거와 배액 같은 ",
+            "suffix": "이 중요해지는 이유다."
+          },
+          "conceptId": "reader.term.179dfaad25505156",
+          "targetDocumentId": "general-surgery.infection.source-control"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.cell-envelope.b.71ad58961e11",
+      "sourceSha256": "71ad58961e11ff2293d2131311b60ce5299f5636063c9551fdee9aef80c1f3ab",
+      "sourceLengthUtf16": 280,
+      "annotations": [
+        {
+          "id": "ann.2ce931cf8e3c94a77778",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 8,
+            "exact": "β-lactam",
+            "prefix": "",
+            "suffix": " 계열은 penicillin-binding "
+          },
+          "conceptId": "reader.term.fafbfe2ccab0afab",
+          "targetDocumentId": "systemic-pharmacology.antimicrobials.beta-lactams"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.cell-envelope.b.57f8b3757933",
+      "sourceSha256": "57f8b3757933e9ff2a1ae4c4adfd1b886f350e94a3a3986e58fd3ce982c3d774",
+      "sourceLengthUtf16": 259,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "biochemistry.enzymes.allostery-thermodynamics",
+  "subjectId": "biochemistry",
+  "chapterId": "enzymes",
+  "title": {
+    "ko": "반응 자유에너지·평형·효소와 알로스테리",
+    "en": "Reaction Energetics, Equilibrium, and Allostery"
+  },
+  "learningObjectives": [
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.lo.01",
+      "text": "활성화 장벽과 반응 자유에너지 변화를 구별한다"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.lo.02",
+      "text": "반응지수와 평형상수의 관계를 계산한다"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.lo.03",
+      "text": "알로스테릭 조절과 협동성의 구별 및 결합 반응을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.f38650c449fb",
+      "type": "heading",
+      "level": 2,
+      "text": "빠르기와 방향은 다른 문제"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.c469ddca9654",
+      "type": "paragraph",
+      "markdown": "반응이 열역학적으로 유리하다는 사실은 즉시 빠르게 진행한다는 뜻이 아니다. 반응물과 생성물 사이에는 전이상태에 도달하기 위한 활성화 장벽이 있고, 효소는 경로를 제공하여 이 장벽과 반응속도에 영향을 준다. 그러나 효소가 반응의 처음·끝 상태의 자유에너지 차를 새로 바꾸거나 평형상수 자체를 바꾸는 것은 아니다. 정방향과 역방향이 모두 촉진될 수 있어 평형에 도달하는 시간과 평형의 위치를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.48705aec3eae",
+      "type": "paragraph",
+      "markdown": "어떤 반응에서 생성물이 계속 제거되거나 반응물이 공급되면 실제 세포는 닫힌 시험관의 평형과 다른 상태를 유지할 수 있다. 대사 유량이 존재하는 정상상태는 모든 반응의 순변화가0인 화학평형과 동일하지 않다. 중간체 농도가 일정해도 유입·유출이 계속될 수 있다는 뜻이다. 효소량 변화가 유량과 농도에 영향을 주어 간접적으로 전체 대사 상태를 바꿀 수 있지만 이것을 그 효소가 개별 반응의 평형상수를 바꿨다고 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.31a643f8abb3",
+      "type": "heading",
+      "level": 2,
+      "text": "실제 자유에너지와 반응지수"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.d110023dce31",
+      "type": "paragraph",
+      "markdown": "특정 온도와 표준 상태 정의에서 ΔG=ΔG°′+RTlnQ로 실제 반응 자유에너지를 표현한다. Q는 반응식의 화학양론에 따라 정한 활동도 비이며 실용적으로 농도를 근사에 사용할 때에는 기준·단위를 일관되게 처리해야 한다. 생화학적 표준 변환량의 프라임은 pH 등 지정된 조건을 반영한다. ΔG°′와 현재 세포 안의 ΔG를 같은 숫자라고 가정하면 기질·생성물 농도가 방향에 미치는 영향을 놓친다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.9b4803185151",
+      "type": "paragraph",
+      "markdown": "평형에서는 ΔG=0이고 Q=Keq이므로 ΔG°′=−RTlnKeq이다. 따라서 ΔG=RTln(Q/Keq)로도 쓸 수 있다. Q가Keq보다 작으면 정의한 정방향의 ΔG가 음수, 같으면0, 크면 양수이다. 부호는 반응식을 어느 방향으로 적었는지에 의존하므로 역반응을 적으면 Q와Keq 및 자유에너지의 대응도 바뀐다. 임의의 농도 비율을 화학양론 확인 없이 Q라고 부르지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.23c2a6238d33",
+      "type": "heading",
+      "level": 2,
+      "text": "수치 예시와 단위"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.8d7ea28e0b16",
+      "type": "paragraph",
+      "markdown": "T=310 K, R=8.314 J/mol/K, Keq=10인 가상 반응을 두면 Q=1에서 ΔG는 약−5.93 kJ/mol이다. Q=10이면0이고 Q=100이면 약+5.93 kJ/mol이다. 계산의 로그는 자연로그이며 J를 kJ로 바꾸는1000의 환산이 필요하다. 이 예시는 반응지수와 방향의 관계를 보여 주는 것이며 특정 생체 반응의 실측 표준 자유에너지나 세포 농도를 제시한 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.e1961cc2b461",
+      "type": "paragraph",
+      "markdown": "ΔG가0이라는 말은 분자가 모두 움직임을 멈췄다는 뜻이 아니다. 정·역방향 과정이 계속될 수 있지만 순방향 변화가 없는 상태이다. 또한 ΔG가 음수라는 사실만으로 활성화 장벽·효소량·기질 수송의 제한을 무시하여 실제 유량을 계산할 수 없다. 속도론과 열역학은 서로 연결되지만 답하는 질문이 다르다. 문제에서 어느 쪽을 물었는지 먼저 확인하면 효소 조절과 평형을 혼동하지 않을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.c7e247351a92",
+      "type": "heading",
+      "level": 2,
+      "text": "에너지 결합"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.771c4be6ddbc",
+      "type": "paragraph",
+      "markdown": "불리한 반응은 유리한 반응과 적절한 화학적 기전으로 결합하여 진행될 수 있다. ATP 가수분해와 함께 쓴다는 설명은 단순히 두 반응이 가까운 공간에서 동시에 일어나면 에너지가 자동으로 전달된다는 뜻이 아니다. 공유 중간체·인산기 전달·단백질 구조 변화 등 실제 연결 기전이 필요하다. 결합한 전체 반응의 자유에너지 변화는 일관된 조건에서 합산할 수 있지만 개별 반응의 속도와 경로는 별도로 검토해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.5964311eb1c1",
+      "type": "paragraph",
+      "markdown": "ATP의 인산 결합을 끊는 행위 자체만이 무조건 에너지를 내는 사건이라고 설명하면 결합 형성·용매화·이온 상태를 포함한 전체 가수분해의 의미가 흐려진다. 반응물과 생성물의 전체 자유에너지 차가 중요하다. 세포의 ATP·ADP·인산 농도와 조건에 따라 실제 구동력이 달라질 수 있다. 따라서 모든 세포에서 ATP 한 분자가 언제나 동일한 고정 에너지를 낸다고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.73b7a52dbfc2",
+      "type": "heading",
+      "level": 2,
+      "text": "알로스테릭 조절"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.6f4bc209a0b0",
+      "type": "paragraph",
+      "markdown": "알로스테리(allostery)는 한 부위의 결합이나 변화가 다른 부위의 기능·결합 상태에 영향을 주는 현상을 가리킨다. 조절 부위와 촉매 부위의 관계, 단백질 구조 집단의 변화와 상호작용이 중요하다. 기질이 늘면 활성 부위가 더 많이 차는 현상만으로 모든 조절을 알로스테리라고 부르지는 않는다. 억제제는 기질과 같은 부위에서 경쟁할 수도 있고 다른 부위에서 기능을 바꿀 수도 있어 실제 기전을 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.23904988cc3c",
+      "type": "paragraph",
+      "markdown": "협동성(cooperativity)은 여러 결합 사건 사이의 상호 영향과 관련되며 알로스테리와 관계가 있지만 같은 말은 아니다. S자 모양의 곡선은 특정 모형에서 양의 협동성과 연결되지만 Hill 계수 하나가 정확한 소단위 수나 모든 구조 전환을 직접 알려 주지는 않는다. 음의 협동성·이질적인 결합 부위·복잡한 반응 단계가 곡선에 영향을 줄 수 있다. Michaelis–Menten 모형과 다른 곡선에는 그에 맞는 가정을 사용해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.132aceb51311",
+      "type": "heading",
+      "level": 2,
+      "text": "대사 조절의 통합"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.7f6616a7e61c",
+      "type": "paragraph",
+      "markdown": "끝산물 억제와 공유결합성 변형, 효소량의 변화는 서로 다른 시간·분자 수준의 조절이다. 특정 효소가 중요하다고 전체 경로의 유량을 언제나 그 효소 하나가100% 결정하는 것은 아니다. 기질 공급·다른 단계·세포 구획과 에너지 상태가 함께 영향을 준다. 조절 효소를 이해할 때에는 실험 조건에서 관찰한 변화와 생체 내 유량 제어의 범위를 구분한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.b.4fb7dc07aaac",
+      "type": "paragraph",
+      "markdown": "효소의 활성 곡선과 자유에너지 곡선은 y축부터 다르다. 전자는 시간당 반응량 등의 속도, 후자는 상태 변화의 열역학적 구동력이다. 비슷한 모양의 그래프를 같은 의미로 해석하지 않는다. 이 구분은 대사 질환·약물 효과·영양 변화에서 중간체가 쌓이거나 유량이 달라지는 원인을 설명하는 데 기본이 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.diagram.gibbs-reaction-quotient",
+      "type": "diagram",
+      "diagramRef": "diagram.gibbs-reaction-quotient",
+      "path": "diagrams/diagram.gibbs-reaction-quotient.svg",
+      "alt": "반응지수와 정방향 자유에너지의 독립 계산 곡선"
+    },
+    {
+      "id": "biochemistry.enzymes.allostery-thermodynamics.table.compare",
+      "type": "table",
+      "data": {
+        "title": "열역학과 속도",
+        "columns": [
+          "양",
+          "질문"
+        ],
+        "rows": [
+          [
+            "ΔG",
+            "현재 조건의 방향"
+          ],
+          [
+            "ΔG°′",
+            "지정 표준 조건"
+          ],
+          [
+            "Keq",
+            "평형의 위치"
+          ],
+          [
+            "활성화 장벽",
+            "경로와 속도"
+          ]
+        ],
+        "notes": "효소의 활성화 장벽 효과와 반응 평형·자유에너지의 관계를 구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/biochemistry/chapters/enzymes/sections/biochemistry.enzymes.allostery-thermodynamics.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "−5.93 kJ/mol"
+  ],
+  "reviewQuestions": [
+    "question.biochemistry.enzymes.allostery-thermodynamics.001",
+    "question.biochemistry.enzymes.allostery-thermodynamics.002"
+  ],
+  "relatedLessons": [
+    "biochemistry.proteins.amino-acid-turnover"
+  ]
+}

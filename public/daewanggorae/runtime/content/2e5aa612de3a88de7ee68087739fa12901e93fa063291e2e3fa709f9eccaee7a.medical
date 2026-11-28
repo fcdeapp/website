@@ -1,0 +1,178 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "neuroanatomy.forebrain.basal-ganglia",
+  "subjectId": "neuroanatomy",
+  "chapterId": "forebrain",
+  "title": {
+    "ko": "바닥핵의 직접·간접·초직접 회로",
+    "en": "Basal Ganglia Circuits"
+  },
+  "learningObjectives": [
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.lo.01",
+      "text": "줄무늬체·창백핵·시상밑핵·검은질의 위치와 역할을 구별한다"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.lo.02",
+      "text": "억제성 연결의 연쇄를 이용하여 직접·간접 경로를 해석한다"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.lo.03",
+      "text": "단순 회로모형의 한계와 파킨슨증·무도증의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.c95aa4117405",
+      "type": "heading",
+      "level": 2,
+      "text": "이름과 해부학적 경계"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.03ed286a4ed0",
+      "type": "paragraph",
+      "markdown": "바닥핵(basal ganglia)은 대뇌겉질 아래의 여러 핵과 기능적으로 연결된 중간뇌·사이뇌 구조를 묶는 개념이다. 꼬리핵(caudate nucleus)과 조가비핵(putamen)은 등쪽줄무늬체(dorsal striatum)를 이루고 창백핵(globus pallidus)은 가쪽부분(GPe)과 안쪽부분(GPi)으로 구별한다. 꼬리핵·조가비핵·창백핵은 속섬유막(internal capsule)과 가까우며 단면마다 서로 다른 모양으로 보인다. 꼬리핵은 가쪽뇌실을 따라 휘는 형태를 가져 한 절편에서 보이는 둥근 단면이 핵 전체는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.neuroanatomy.forebrain.basal-ganglia.right-context"
+      ],
+      "conceptRefs": [
+        "FMA72826",
+        "FMA72828",
+        "FMA72830"
+      ]
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.57d4c04994d5",
+      "type": "paragraph",
+      "markdown": "조가비핵과 창백핵을 함께 렌즈핵(lentiform nucleus)이라고 부르는 것은 형태에 따른 구분이다. 꼬리핵과 조가비핵을 줄무늬체로 묶는 기능적 구분과 기준이 다르다. 시상밑핵(subthalamic nucleus, STN)과 검은질(substantia nigra)도 회로에 포함되지만 같은 대뇌반구의 한 덩어리 안에 모두 모여 있는 것은 아니다. 검은질은 치밀부분(SNc)의 도파민성 조절과 그물부분(SNr)의 출력 기능을 구별해야 한다. ‘바닥핵이 운동을 담당한다’는 한 문장만으로 이러한 연결 차이를 설명할 수 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.1f969010d2cb",
+      "type": "heading",
+      "level": 2,
+      "text": "입력과 지속적인 억제 출력"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.43a28df2a188",
+      "type": "paragraph",
+      "markdown": "줄무늬체는 대뇌겉질과 시상의 흥분성 입력을 받아 여러 후보 행동과 상태에 관한 정보를 통합한다. 주요 투사뉴런은 GABA성 억제뉴런이다. GPi와 SNr은 시상과 일부 뇌줄기 표적에 지속적인 억제성 영향을 준다. 따라서 회로의 효과를 판단하려면 신호가 많아진다는 말만이 아니라 어느 억제성 세포의 활동이 증가하거나 감소하는지를 추적해야 한다. 억제하는 세포를 다시 억제하면 표적의 활동이 상대적으로 풀릴 수 있으며 이를 탈억제(disinhibition)라고 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.b8c34fac35ec",
+      "type": "paragraph",
+      "markdown": "바닥핵의 출력이 대뇌 운동겉질이나 뇌줄기 회로로 되돌아가 행동 선택·크기·속도·순서 등에 영향을 주지만, 척수 운동뉴런으로 내려가는 직접적인 근육 명령과 동일하지는 않다. 운동뿐 아니라 눈운동·인지·보상·습관과 관련된 평행 회로도 있다. 기능적으로 구별되는 회로가 존재하더라도 실제 연결은 완전히 절연된 선들이 아니며 정보가 만나는 영역도 있다. 운동 회로를 먼저 익힌 뒤 전체 기능을 그 모형 밖으로 확대하는 것이 적절하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.4fd50b627b86",
+      "type": "heading",
+      "level": 2,
+      "text": "직접 경로의 부호를 계산하기"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.edc0e7b9e29d",
+      "type": "paragraph",
+      "markdown": "직접 경로(direct pathway)에서는 대뇌겉질의 흥분성 입력이 줄무늬체의 특정 투사뉴런을 활성화하고 이 뉴런이 GPi·SNr을 억제한다. 그 결과 시상을 억제하던 출력이 줄어 대뇌겉질로 돌아가는 흥분성 영향이 상대적으로 증가할 수 있다. ‘직접 경로가 흥분성이다’라는 말은 최종 효과를 요약한 표현일 뿐, 줄무늬체에서 GPi로 가는 시냅스 자체가 흥분성이라는 뜻은 아니다. 개별 연결은 억제성이며 두 번의 억제를 통해 탈억제가 나타나는 구조이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.3e455858e7a3",
+      "type": "paragraph",
+      "markdown": "줄무늬체의 직접 경로 뉴런은 고전적으로 D1 계열 수용체의 발현과 연결하여 설명한다. SNc의 도파민은 이러한 뉴런의 반응성을 높이는 방향의 조절을 할 수 있다. 그러나 수용체 이름을 곧바로 특정 행동의 켜기 스위치로 치환해서는 안 된다. 실제 뉴런의 반응은 겉질 입력·다른 조절물질·활동 이력과 시간적 패턴에 좌우된다. 이 회로는 자발 운동을 만들 수 있는 조건을 조절하며 움직임의 모든 세부 정보를 새로 계산해 근육으로 보내는 단독 장치는 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.9174528d0cc9",
+      "type": "heading",
+      "level": 2,
+      "text": "간접 경로와 시상밑핵"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.4396f88937d2",
+      "type": "paragraph",
+      "markdown": "간접 경로(indirect pathway)의 고전적 순서는 줄무늬체에서 GPe로 가는 억제, GPe에서 STN으로 가는 억제, STN에서 GPi·SNr로 가는 흥분을 포함한다. 줄무늬체의 억제가 커지면 GPe의 활동이 낮아지고 STN에 대한 억제가 풀린다. 활성화된 STN은 출력핵의 억제성 영향을 높이는 방향으로 작용할 수 있다. 최종적으로 시상에 대한 억제가 증가하는 전형적 효과를 설명하지만, 각 중간 단계의 신호 방향이 모두 같은 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.b3a494251f76",
+      "type": "paragraph",
+      "markdown": "간접 경로 뉴런의 D2 계열 수용체에 대한 도파민 작용은 고전적 모형에서 이 경로의 활동을 낮추는 방향으로 설명한다. 그러면 도파민은 직접 경로를 돕는 작용과 간접 경로의 제동을 낮추는 작용을 통해 운동이 쉽게 일어나도록 조절할 수 있다. 도파민 감소가 나타나면 이러한 균형이 바뀌어 운동완만과 관련될 수 있다. 이것은 중요한 개념 모형이지만 파킨슨병의 떨림·강직·비운동 증상을 평균 발화율 하나로 완전히 예측하지는 못한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.d3c0c58c8ca0",
+      "type": "heading",
+      "level": 2,
+      "text": "초직접 경로와 시간"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.3745b599d28a",
+      "type": "paragraph",
+      "markdown": "대뇌겉질에서 STN으로 직접 가는 흥분성 경로를 초직접 경로(hyperdirect pathway)라고 한다. 이 경로는 줄무늬체와 GPe의 여러 단계를 거치지 않고 출력핵에 영향을 줄 수 있어 빠른 제동과 관련된 모형에서 중요하다. 한 행동이 선택될 때 모든 경쟁 동작이 단순히 같은 시점에 일괄 억제되는 것은 아니며 과제와 시간에 따라 회로의 참여가 달라진다. 연결도에 화살표가 있다고 그 화살표가 항상 같은 크기의 전류를 전달한다고 생각하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.04cee5f1f441",
+      "type": "paragraph",
+      "markdown": "고전적 직접·간접 구분은 회로 부호를 배우는 출발점이지만 실제 행동 중 두 집단이 함께 활성화되는 현상, GPe 내부의 다양한 세포군, 반복 연결을 모두 담지는 않는다. 따라서 직접 경로의 활동 증가는 항상 움직임의 무조건적인 증가라는 식의 문항 해석은 과도한 일반화이다. 특정 조건에서 어느 연결의 변화가 어떤 방향의 효과를 예측하게 하는지 명시해야 한다. 구조·전달물질·동역학과 관찰된 행동을 구분하는 것이 현대적 해석의 기본이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.989554a1cbcd",
+      "type": "heading",
+      "level": 2,
+      "text": "병변과 운동 이상"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.3cc634a5d004",
+      "type": "paragraph",
+      "markdown": "STN의 한쪽 병변은 반대쪽 팔다리의 큰 불수의운동과 연결될 수 있지만 모든 병변이 같은 양상을 만들지는 않는다. 헌팅턴병에서는 줄무늬체의 특정 신경세포 소실과 회로 변화가 무도증의 이해에 중요하며 질병 단계에 따라 운동 양상이 달라질 수 있다. 파킨슨증은 검은질 도파민 계통의 변화와 관련되지만 원인과 동반 병리는 다양하다. 서로 다른 질환을 ‘운동이 많다·적다’의 두 칸만으로 분류하면 인지·정신·자율신경 기능과 시간 경과를 놓치게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.b.871adf6b4d26",
+      "type": "paragraph",
+      "markdown": "바닥핵 병변은 피라미드척수로의 직접 손상과 달리 뚜렷한 일차 근력 저하 없이 운동 개시·크기·속도의 이상을 만들 수 있다. 그러나 가까운 속섬유막이 함께 침범되면 마비가 동반될 수 있다. 이 때문에 영상에서 핵의 이름을 확인하는 것과 임상 소견 전체를 설명하는 것은 별개의 단계이다. 단면에서 병변이 핵 안에 한정되는지, 이웃 백질·시상·뇌줄기까지 미치는지 연결하여 판단해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.block.basal-direct-path",
+      "type": "diagram",
+      "diagramRef": "diagram.basal-direct-path",
+      "path": "diagrams/diagram.basal-direct-path.svg",
+      "alt": "바닥핵 직접 경로의 억제와 탈억제의 구성 요소와 연결 방향을 보여주는 도해"
+    },
+    {
+      "id": "neuroanatomy.forebrain.basal-ganglia.block.basal-indirect-path",
+      "type": "diagram",
+      "diagramRef": "diagram.basal-indirect-path",
+      "path": "diagrams/diagram.basal-indirect-path.svg",
+      "alt": "바닥핵 간접 경로의 연결 부호의 구성 요소와 연결 방향을 보여주는 도해"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/01-anatomy/subjects/neuroanatomy/chapters/forebrain/sections/neuroanatomy.forebrain.basal-ganglia.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.neuroanatomy.forebrain.basal-ganglia.001"
+  ],
+  "keyFacts": [
+    "시상에 대한 GPi의 억제가 줄어 탈억제가 일어날 수 있다."
+  ],
+  "relatedLessons": [
+    "neuroanatomy.forebrain.thalamic-networks",
+    "neuroanatomy.visual.field-pathways",
+    "neuroanatomy.autonomic.central-peripheral"
+  ]
+}

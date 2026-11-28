@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "gi-surgery",
+  "title": {
+    "ko": "위장관외과"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "gi-surgery.chapter.obstruction",
+      "path": "domains/06-surgery/subjects/gi-surgery/chapters/obstruction/chapter.json"
+    },
+    {
+      "id": "gi-surgery.chapter.esophagus",
+      "path": "domains/06-surgery/subjects/gi-surgery/chapters/esophagus/chapter.json"
+    },
+    {
+      "id": "gi-surgery.chapter.ulcer",
+      "path": "domains/06-surgery/subjects/gi-surgery/chapters/ulcer/chapter.json"
+    },
+    {
+      "id": "gi-surgery.chapter.stomach",
+      "path": "domains/06-surgery/subjects/gi-surgery/chapters/stomach/chapter.json"
+    },
+    {
+      "id": "gi-surgery.chapter.ischemia",
+      "path": "domains/06-surgery/subjects/gi-surgery/chapters/ischemia/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "gi-surgery.plan.001",
+    "gi-surgery.plan.002",
+    "gi-surgery.plan.003",
+    "gi-surgery.plan.004",
+    "gi-surgery.plan.005",
+    "gi-surgery.plan.006",
+    "gi-surgery.obstruction.mechanical-ileus",
+    "gi-surgery.esophagus.structure-function",
+    "gi-surgery.esophagus.gerd-surgery-selection",
+    "gi-surgery.esophagus.hiatal-hernia",
+    "gi-surgery.esophagus.achalasia-intervention",
+    "gi-surgery.esophagus.perforation-contamination",
+    "gi-surgery.esophagus.cancer-stage-resection",
+    "gi-surgery.ulcer.bleeding-vascular-control",
+    "gi-surgery.ulcer.perforation-operative-reasoning",
+    "gi-surgery.stomach.outlet-obstruction",
+    "gi-surgery.stomach.cancer-depth-staging",
+    "gi-surgery.stomach.gastrectomy-lymphatics",
+    "gi-surgery.stomach.reconstruction-flow",
+    "gi-surgery.stomach.postgastrectomy-function",
+    "gi-surgery.obstruction.adhesive-small-bowel",
+    "gi-surgery.ischemia.strangulation-mesenteric-flow"
+  ]
+}

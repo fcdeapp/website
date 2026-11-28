@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "endocrinology.pituitary.feedback",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "endocrinology.pituitary.feedback.b.505b14da181d",
+      "sourceSha256": "505b14da181d736e91da0d8d5f7e7c8552ab8b00c26a3fb22a22debe5a870c2d",
+      "sourceLengthUtf16": 257,
+      "annotations": [
+        {
+          "id": "ann.b83c0143bf1cbc20d2f1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 125,
+            "end": 136,
+            "exact": "vasopressin",
+            "prefix": "세포의 분비를 조절한다. 후엽에서 방출되는 ",
+            "suffix": "과 oxytocin은 주로 시상하부 신경세포"
+          },
+          "conceptId": "reader.term.df6b37a2afc65475",
+          "targetDocumentId": "physiology.renal.urine-concentration"
+        },
+        {
+          "id": "ann.61d69ecf65df6381c0c3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 231,
+            "end": 257,
+            "exact": "저장과 방출 장소, 합성 장소를 구분해야 한다.",
+            "prefix": " 주된 합성 장소라고 표현하면 부정확하다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "endocrinology.pituitary.feedback.b.8ac2e7b1edca",
+      "sourceSha256": "8ac2e7b1edcafe9a8e99d3d8e8abfca4f7f8900200587bb1800e6d6f2781d8fb",
+      "sourceLengthUtf16": 244,
+      "annotations": []
+    },
+    {
+      "blockId": "endocrinology.pituitary.feedback.b.6061ee611ec3",
+      "sourceSha256": "6061ee611ec33b3a51b76679d93b2c7b65f022b4ea637f546711336e1abbbc35",
+      "sourceLengthUtf16": 234,
+      "annotations": [
+        {
+          "id": "ann.4f6bbe506d0f72d99744",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 191,
+            "end": 234,
+            "exact": "현재 말초호르몬 상태에 비추어 부적절하게 정상인 값을 인식하는 것이 중요하다.",
+            "prefix": "있어도 생리적으로 적절하다는 뜻은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "endocrinology.pituitary.feedback.b.7ef21c6ef839",
+      "sourceSha256": "7ef21c6ef8392387c7fb5dff9fe4c1cdfb524d5b28d035faf07bb75abca0d318",
+      "sourceLengthUtf16": 216,
+      "annotations": []
+    },
+    {
+      "blockId": "endocrinology.pituitary.feedback.b.bf190500855a",
+      "sourceSha256": "bf190500855ad9b9c3f08c22a6b6477b844649bb6d0db0aa30bf86d2063249cc",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "endocrinology.pituitary.feedback.b.78d8d344c609",
+      "sourceSha256": "cd6f2111d28b01015c2936345a845021497357f7dade32b9efcf3c2c1c192f31",
+      "sourceLengthUtf16": 107,
+      "annotations": []
+    }
+  ]
+}

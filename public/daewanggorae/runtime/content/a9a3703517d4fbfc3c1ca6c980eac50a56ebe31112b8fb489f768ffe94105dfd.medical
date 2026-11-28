@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.cardiovascular.mineralocorticoid-antagonists",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.6ce4f8820cb4",
+      "sourceSha256": "6ce4f8820cb4f50fde4e5baa33cb66c6f38d131d7ec5514f445fe861d65d73ca",
+      "sourceLengthUtf16": 305,
+      "annotations": [
+        {
+          "id": "ann.ea5ac007aaf9a7a60924",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 6,
+            "end": 17,
+            "exact": "aldosterone",
+            "prefix": "알도스테론(",
+            "suffix": ")은 세포 내 mineralocorticoi"
+          },
+          "conceptId": "reader.term.2dbad37f3f8aa1cf",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.3455c062de5f",
+      "sourceSha256": "3455c062de5f9ed95c6918646dd6672bd29253915f2aab143f477d83e87cfd73",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.4462d553747c",
+      "sourceSha256": "4462d553747c24c311fb9921fcdf1e62ab70e40c14d681cb3d9a2578789418bc",
+      "sourceLengthUtf16": 180,
+      "annotations": [
+        {
+          "id": "ann.b001c310b6aeb259f662",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 148,
+            "end": 180,
+            "exact": "네프론의 어느 부위와 어떤 수송을 변화시키는지가 중요하다.",
+            "prefix": "이 반드시 감소한다고 생각해서는 안 된다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.dfaab543dbcf",
+      "sourceSha256": "dfaab543dbcf9b5f44479020eddc0424ca552602d19f9abe14eacd5226e81345",
+      "sourceLengthUtf16": 182,
+      "annotations": [
+        {
+          "id": "ann.b9abdffb214df25a3e86",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 60,
+            "end": 64,
+            "exact": "RAAS",
+            "prefix": "과다. 같은 약물에도 신기능이 낮거나 다른 ",
+            "suffix": " 억제제가 병용되면 위험이 달라질 수 있다."
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.e8edbfeac44b",
+      "sourceSha256": "e8edbfeac44b9e9f5b320cbf8eb319f62a55748ff259b372f1d1ad3fc8f47a2a",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.7d2199b0233e",
+      "sourceSha256": "7d2199b0233e9d18145e9658e87c3733761c11d00c30109174078dd83d85dd00",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.369b47203fe76d13cdf5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 89,
+            "end": 92,
+            "exact": "약동학",
+            "prefix": "줄 수 있다. 대사 억제로 농도가 증가하는 ",
+            "suffix": "적 상호작용과, 다른 약물이 칼륨 배설을 낮"
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        },
+        {
+          "id": "ann.ab29921027b3b59c5e4d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 122,
+            "exact": "약력학",
+            "prefix": "호작용과, 다른 약물이 칼륨 배설을 낮추는 ",
+            "suffix": "적 상호작용을 구별한다. 두 경로가 동시에 "
+          },
+          "conceptId": "reader.term.3f6c24ce1179f5f7",
+          "targetDocumentId": "pharmacology.general.pharmacodynamics"
+        },
+        {
+          "id": "ann.cdd825f4ea311557aaa1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 73,
+            "end": 135,
+            "exact": "대사 억제로 농도가 증가하는 약동학적 상호작용과, 다른 약물이 칼륨 배설을 낮추는 약력학적 상호작용을 구별한다.",
+            "prefix": "병용은 노출·안전성에 영향을 줄 수 있다. ",
+            "suffix": " 두 경로가 동시에 작용할 수도 있다. 같은"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.3073602c3a1a",
+      "sourceSha256": "3073602c3a1a34fa6c4277759ceecdb367bdb306c24fbc9f145c8eada063918a",
+      "sourceLengthUtf16": 185,
+      "annotations": [
+        {
+          "id": "ann.e28040cd8f072b492259",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 148,
+            "end": 185,
+            "exact": "임상시험의 대상·병용 치료·추적 기간과 실제 허가 범위를 구별한다.",
+            "prefix": " 질환군에 동일한 이득을 부여할 수 없다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.9aadc9156f65",
+      "sourceSha256": "9aadc9156f65e67b5473d5bbd7b343d5a78129f991c78b082b73c71ebf2d77a7",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.fa3d4fa40b5a",
+      "sourceSha256": "13b8cea32ea9d4bc96318de62054911dc49e5fb559e36fd0500b1b929d376b6e",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.e4de3985189d",
+      "sourceSha256": "e4de3985189d82285b1a30e62ee791006e447fd72202c1d95114831444160a8e",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.d35a74bf88fe",
+      "sourceSha256": "d35a74bf88fe24d05e4de0e5438a35b88147acc1d19afceb1377c41a2e6784f0",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.mineralocorticoid-antagonists.b.d3fe01c7f27a",
+      "sourceSha256": "d3fe01c7f27a73e0d6ecd95026c1df894710813433eac3aced0ee211a7801755",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    }
+  ]
+}

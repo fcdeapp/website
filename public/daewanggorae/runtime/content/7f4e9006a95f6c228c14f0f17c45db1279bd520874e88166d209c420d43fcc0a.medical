@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.cardiovascular.renin-angiotensin-drugs",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.27bd829e0e45",
+      "sourceSha256": "27bd829e0e45668aaa24ca2b1364d3cbe23952ebe8a38c0876e5dcf4a5262643",
+      "sourceLengthUtf16": 331,
+      "annotations": [
+        {
+          "id": "ann.9aef67e5a68b7796e779",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 15,
+            "exact": "레닌–안지오텐신–알도스테론계",
+            "prefix": "",
+            "suffix": "(renin–angiotensin–aldos"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.232ca05aef60189e8242",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 34,
+            "end": 45,
+            "exact": "aldosterone",
+            "prefix": "도스테론계(renin–angiotensin–",
+            "suffix": " system, RAAS)는 관류와 나트륨 "
+          },
+          "conceptId": "reader.term.2dbad37f3f8aa1cf",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.366a5ebaab032628dfa6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 239,
+            "end": 253,
+            "exact": "angiotensin II",
+            "prefix": "converting enzyme(ACE)은 ",
+            "suffix": " 생성에 관여한다. Angiotensin I"
+          },
+          "conceptId": "reader.term.3daef66a52cb90df",
+          "targetDocumentId": "physiology.renal.raas"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.7912394daf77",
+      "sourceSha256": "7912394daf775763be3cc419d5ea84c6369ebed379d656668544d2799fe5f44a",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.27c564878477",
+      "sourceSha256": "27c5648784774d206b20e72f543a5328e414552a6ff40b22a6970ac4cc0af798",
+      "sourceLengthUtf16": 264,
+      "annotations": [
+        {
+          "id": "ann.04aa7091c9b9edfc67b2",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 247,
+            "end": 250,
+            "exact": "약동학",
+            "prefix": "다르므로 약물군의 대표 특성을 개별 약물의 ",
+            "suffix": " 전체로 대체하지 않는다."
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.1338be351a21",
+      "sourceSha256": "1338be351a211e3734e7fe71296532df58a6b3c6e78d52a685bdefe149c97c3a",
+      "sourceLengthUtf16": 228,
+      "annotations": [
+        {
+          "id": "ann.c6a4de684cedeaf793b5",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 27,
+            "end": 107,
+            "exact": "따라서 ACEi의 작용은 angiotensin II 생성 감소라는 한 항만으로 완결되지 않으며 기침과 혈관부종을 이해할 때 이 경로가 중요하다.",
+            "prefix": "는 bradykinin 분해에도 관여한다. ",
+            "suffix": " ARB는 ACE를 같은 방식으로 억제하지 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.20a34cd35a46",
+      "sourceSha256": "20a34cd35a46d3ff6fcf5323ab17c90d462a6a9f76f8067fab2651f32e74299b",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.c5e83a383300",
+      "sourceSha256": "c5e83a3833003bb6324f307c7c4489fa8fda3f45525f10722129d1e32e5e8180",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.6a1192452f8b22929a93",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 36,
+            "end": 41,
+            "exact": "만성콩팥병",
+            "prefix": "과도한 압력과 단백뇨를 줄이는 효과는 특정 ",
+            "suffix": " 환자에서 보호적 이득에 연결된다. 초기 크"
+          },
+          "conceptId": "reader.term.159be36f6802076a",
+          "targetDocumentId": "nephrology.ckd.evaluation"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.34fb6f2130f3",
+      "sourceSha256": "34fb6f2130f31335c4c2c26798eec1ff73bd8410203e51fa064dae899747c1bb",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.62a9794baf8c",
+      "sourceSha256": "62a9794baf8cabdf75a67adbd8ce864a3cb4ecc9b34d07dda8b595e082452b48",
+      "sourceLengthUtf16": 183,
+      "annotations": [
+        {
+          "id": "ann.456c590582d62093f8e6",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 31,
+            "end": 38,
+            "exact": "사구체 여과율",
+            "prefix": "를 실제 신장혈류량으로, P를 곧바로 실제 ",
+            "suffix": "로 부르면 안 된다. 여과·혈장 교질삼투압·"
+          },
+          "conceptId": "reader.term.301f3dc8f905a00f",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.3e0f72dc5c73",
+      "sourceSha256": "3e0f72dc5c73fea3eeea6d92ae8b4ca9031cd920d9aa47de11cf6614071f7163",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.09abb6ec69c3",
+      "sourceSha256": "a3be47dcd575c885ed0a64da96cedd463300e9863d2ac0ca2c6354f9b1f00ca0",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.e6310ddd5b67",
+      "sourceSha256": "e6310ddd5b6791e091c29811b1232a9c43802542dc31be0d85af3801012f7149",
+      "sourceLengthUtf16": 181,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.cardiovascular.renin-angiotensin-drugs.b.2ef4d81e5dee",
+      "sourceSha256": "2ef4d81e5dee932b372fb400169bbbd5615623ad9c79e409db4ac8d06f15be88",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    }
+  ]
+}

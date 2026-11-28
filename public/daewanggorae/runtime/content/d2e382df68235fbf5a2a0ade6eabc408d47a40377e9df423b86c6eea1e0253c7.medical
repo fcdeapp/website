@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.general.bioavailability-first-pass",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.21a791139205",
+      "sourceSha256": "21a79113920599e79cd29e6b4ec2bbcd38c2edc0453aecd405326efb3b6de1ce",
+      "sourceLengthUtf16": 227,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.e7e55cc83702",
+      "sourceSha256": "e7e55cc83702de7eb065665995da51f69f26b01adf1f5a360fe359699ea4af98",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.62c989bcad2f",
+      "sourceSha256": "62c989bcad2ffb2240c1e8603336b18d5b773a4238da1cd2fd1179aa5cb76b7f",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.a4fc70bbce46",
+      "sourceSha256": "a4fc70bbce46d64862e69768ae61b94dde841628a24a06bc82dae0fa3d7dcb4b",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.2782ecf600e312f0de6d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 72,
+            "end": 75,
+            "exact": "청소율",
+            "prefix": " 함께 관여할 수 있다. 정맥 자료에서 본 ",
+            "suffix": " 변화와 경구 자료에서 본 AUC 변화는 이"
+          },
+          "conceptId": "reader.term.52a8b75072525e18",
+          "targetDocumentId": "physiology.renal.filtration"
+        },
+        {
+          "id": "ann.95496c54804c8504d854",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 129,
+            "end": 176,
+            "exact": "따라서 경구 AUC 증가만 보고 전신 청소율이 그 역수로 감소했다고 확정하지 않는다.",
+            "prefix": "때문에 단순한 같은 배수가 아닐 수 있다. ",
+            "suffix": " 경로 비교와 모형 가정을 먼저 확인한다."
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.9628ede69c74",
+      "sourceSha256": "9628ede69c740547b687d5e86bef4b8ad433b6566c008f5723884bd2fc3c63fa",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.ebdd0b3eacf1",
+      "sourceSha256": "ebdd0b3eacf1b4ae0a86740fc4a7fefa76190638115834f69fd9ddc0a74415e8",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.047b69d18c23",
+      "sourceSha256": "047b69d18c239d06d2abd361d15088f17995230170ccfb94eff4788ab5e57fb9",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.c3ae42fd19f1",
+      "sourceSha256": "c3ae42fd19f155f955d8e099d40e541a551a43490befcb54b3b98ceb913058b0",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.2409c32cac55eb7106f6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 137,
+            "end": 188,
+            "exact": "연구 목적이 전신노출 비교인지 국소효과 평가인지 구별해야 적절한 결과변수를 선택할 수 있다.",
+            "prefix": "나 더 안전하거나 우수함을 뜻하지 않는다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.0f9e048e067d",
+      "sourceSha256": "0f9e048e067d3815e08af562687d960f404862b2bd91bc7ad04340bab7b587c3",
+      "sourceLengthUtf16": 173,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.bioavailability-first-pass.b.a7a310526090",
+      "sourceSha256": "a7a31052609066405634d29ecf3bde2c793c7ed9bbcf71d934276dc635a90b5d",
+      "sourceLengthUtf16": 234,
+      "annotations": []
+    }
+  ]
+}

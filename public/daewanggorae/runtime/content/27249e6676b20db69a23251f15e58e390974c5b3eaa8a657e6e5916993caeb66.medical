@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "gi-surgery.ischemia.strangulation-mesenteric-flow",
+  "subjectId": "gi-surgery",
+  "chapterId": "ischemia",
+  "title": {
+    "ko": "교액과 장간막 허혈의 유입·배출",
+    "en": "Strangulation Mesenteric Inflow and Venous Outflow"
+  },
+  "learningObjectives": [
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.lo.01",
+      "text": "동맥·정맥·비폐쇄성 허혈을 구별한다"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.lo.02",
+      "text": "정맥 울혈과 벽부종·관류 악순환을 설명한다"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.lo.03",
+      "text": "진단·혈류 회복·생존 평가를 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.1dc2a6f05ea3",
+      "type": "heading",
+      "level": 2,
+      "text": "혈액이 들어오고 나가야 한다"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.42116256e99d",
+      "type": "paragraph",
+      "markdown": "장 허혈은 동맥의 유입과 정맥의 배출, 미세순환·산소 이용의 균형이 깨질 때 발생할 수 있다. 색전·혈전과 저유량·혈관 수축, 정맥 혈전과 교액 등은 다른 기전이다. 혈관이 영상에서 완전히 막혀 있지 않아도 전신 저관류와 분포 이상으로 장이 손상될 수 있다. 반대로 폐쇄가 있는 환자의 장기 위협을 모두 같은 동맥 색전으로 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending",
+      "sceneRefs": [
+        "scene.anatomy.abdomen.intestine-mesenteric-vessels.organ-context"
+      ]
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.aec9ea0d1007",
+      "type": "paragraph",
+      "markdown": "교액(strangulation)은 기계적 막힘에 혈관·장간막의 압박과 순환 장애가 더해지는 상황을 뜻한다. 정맥 배출이 먼저 제한되면 울혈·벽부종과 출혈, 조직 압력 증가가 생기고 동맥 유입도 악화될 수 있다. 닫힌 고리의 장은 지속 유입·팽창과 배출 제한이 겹쳐 빠르게 위험해질 수 있다. 장관 통과의 막힘과 혈관 통과의 장애를 함께 그려 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.79d247681efd",
+      "type": "heading",
+      "level": 2,
+      "text": "점막에서 전층 손상으로"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.85b4e112794a",
+      "type": "paragraph",
+      "markdown": "장 점막은 활발한 대사와 흡수·장벽 기능을 수행하며 허혈에 취약하다. 손상이 진행하면 투과성과 장벽 방어가 나빠지고 염증·미생물 성분의 전신 영향, 괴사·천공과 장기 기능 저하가 더해질 수 있다. 혈류가 회복되어도 재관류와 염증·부종이 영향을 주므로 한 번의 큰 혈관 개통이 모든 조직 기능의 즉시 정상화를 보장하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.c7712c5ab803",
+      "type": "paragraph",
+      "markdown": "초기에는 통증에 비해 진찰 소견이 약할 수 있고, 이후 복막 자극이 나타나면 더 깊은 손상을 검토해야 한다. 그러나 전형적인 불일치가 모든 환자에게 나타나지는 않는다. 고령·혈관질환·심방세동과 저유량·혈전 위험, 수술·약물·폐쇄의 맥락을 통합한다. 혈변·설사·구토가 있어도 단순 장염으로만 고정하지 않는다. 현재 관류와 변화 속도가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.d5a0e1b0b924",
+      "type": "heading",
+      "level": 2,
+      "text": "검사와 원인의 확인"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.d0dffb26b83c",
+      "type": "paragraph",
+      "markdown": "혈액검사는 산염기·젖산·장기 기능과 염증의 정보를 주지만 한 정상 값으로 장 생존을 확정할 수 없다. 필요한 혈관 영상은 동맥·정맥·장벽·장간막과 다른 원인을 함께 평가한다. 조영과 촬영 단계·시간에 따라 정보가 다르고, 실제 임상 위협과 검사 결과가 맞지 않으면 해석·진단을 다시 검토한다. 지연이 회복 가능한 장을 잃게 할 수 있다는 점을 의사결정에 반영한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.c06c86f909a6",
+      "type": "paragraph",
+      "markdown": "치료 목표에는 생리 지원과 원인 혈류의 회복, 살아 있지 않은 장·오염의 처리 및 가능한 장 보존이 포함된다. 혈관내와 수술적 접근은 원인·해부·장기 위협·현재 생리와 자원에 따라 달라진다. 모든 환자에게 같은 항응고·혈관 중재·절제를 일률 적용하지 않는다. 회복 가능성과 남은 장의 기능, 추가 평가·재수술의 필요를 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.820c640cc308",
+      "type": "heading",
+      "level": 2,
+      "text": "생존과 기능의 재평가"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.40ec15411e57",
+      "type": "paragraph",
+      "markdown": "수술에서 장의 색·움직임·맥박과 다른 보조 정보는 생존 평가에 도움을 주지만 각각 한계가 있다. 경계가 모호하고 생리가 크게 변하는 상황에서는 이후 재평가 전략이 필요할 수 있다. 넓은 절제는 감염원과 괴사를 통제하는 이득과 남는 흡수·수분·영양 기능의 손실을 함께 갖는다. 장의 길이뿐 아니라 어느 부위가 남고 연결되어 있는지도 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.270026e7759b",
+      "type": "paragraph",
+      "markdown": "회복 중에는 감염·출혈·신장·호흡과 재허혈, 실제 섭취와 수분·전해질·영양을 추적한다. 원인 혈전과 색전·심장·저유량 상태의 장기 계획도 남아 있다. 급성 허혈을 이겼다는 결과와 이후 충분한 장 기능을 회복했다는 결과를 구별한다. 정상 3D 모델로 혈관·장간막의 기본 관계를 익히되 폐색·울혈·미세관류·괴사와 시술 경로를 환자별로 표현했다고 주장하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.e53b8f2cc4e5",
+      "type": "heading",
+      "level": 2,
+      "text": "유입 압력과 배출 압력"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.e7014732589a",
+      "type": "paragraph",
+      "markdown": "고정 저항의 가상 혈류를Q=(Pa−Pv)/R로 두면 동맥 쪽 압력Pa가 같아도 정맥 쪽Pv가 올라갈 때 구동 차이가 줄어든다. Pa100과R10에서Pv20이면Q8,60이면Q4다. 모두 임의단위이며 실제 장간막 압력·유량의 목표나 측정값이 아니다. 정맥 배출의 문제가 유입에 영향을 주는 원리를 비교한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.b.4b4b12aaf99f",
+      "type": "paragraph",
+      "markdown": "실제 교액에서는 저항·조직 압력·혈관 형태와 부종·미세순환도 함께 변한다. 단순 식이 장벽 생존과 회복 시간을 직접 예측하지는 못한다. 큰 동맥의 통로가 보여도 정맥·미세혈류·산소 이용을 모두 확인한 것은 아니므로,현재 생리와 장벽·장간막 및 원인의 자료를 통합한다. 출혈성 울혈과 창백한 허혈은 다른 기전의 표현일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.table0849",
+      "type": "table",
+      "data": {
+        "title": "구조·기전·증거와 목표의 연결",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "동맥",
+            "색전·혈전·저유량"
+          ],
+          [
+            "정맥",
+            "배출 제한·부종·조직 압력"
+          ],
+          [
+            "장벽",
+            "점막·장벽 방어·전층 생존"
+          ],
+          [
+            "목표",
+            "혈류·괴사·오염·남은 기능"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.diagram.mesenteric-outflow-gradient-0849",
+      "type": "diagram",
+      "diagramRef": "diagram.mesenteric-outflow-gradient-0849",
+      "path": "diagrams/diagram.mesenteric-outflow-gradient-0849.svg",
+      "alt": "하류 압력과 고정 저항 유량의 독립 계산 곡선"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.3d0849",
+      "type": "anatomy3d",
+      "sceneRef": "scene.anatomy.abdomen.intestine-mesenteric-vessels.organ-context"
+    },
+    {
+      "id": "gi-surgery.ischemia.strangulation-mesenteric-flow.limits0849",
+      "type": "clinicalPearl",
+      "markdown": "정상 거시 구조의 위치 문맥이다. 궤양·출혈점·천공·절제재건·장루·유착·전환점·허혈·미세관류와 환자별 안전 시술 경로는 이 정적 모델이 표현하거나 결정하지 않는다."
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/06-surgery/subjects/gi-surgery/chapters/ischemia/sections/gi-surgery.ischemia.strangulation-mesenteric-flow.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.gi-surgery.ischemia.strangulation-mesenteric-flow.001",
+    "question.gi-surgery.ischemia.strangulation-mesenteric-flow.002"
+  ],
+  "relatedLessons": [
+    "gi-surgery.obstruction.adhesive-small-bowel",
+    "colorectal-surgery.anastomosis.leak-perfusion-diversion"
+  ]
+}

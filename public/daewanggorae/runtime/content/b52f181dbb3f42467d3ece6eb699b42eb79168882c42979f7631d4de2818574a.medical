@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-postoperative-recurrence-0850",
+  "lessonId": "colorectal-surgery.ibd.postoperative-recurrence",
+  "title": "가상 두 집단의 누적 재발",
+  "series": [
+    {
+      "label": "집단A",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 6,
+          "y": 10
+        },
+        {
+          "x": 12,
+          "y": 18
+        },
+        {
+          "x": 24,
+          "y": 25
+        }
+      ]
+    },
+    {
+      "label": "집단B",
+      "samples": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 6,
+          "y": 6
+        },
+        {
+          "x": 12,
+          "y": 12
+        },
+        {
+          "x": 24,
+          "y": 20
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticData": true,
+    "N_each": 100,
+    "completeFollowup": true,
+    "months": [
+      0,
+      6,
+      12,
+      24
+    ],
+    "A": [
+      0,
+      10,
+      18,
+      25
+    ],
+    "B": [
+      0,
+      6,
+      12,
+      20
+    ],
+    "notTreatmentEfficacy": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 24,
+      "scale": "linear",
+      "ticks": [
+        0,
+        6,
+        12,
+        12,
+        24
+      ],
+      "label": "추적 기간(개월)"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 30,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        7.5,
+        15.0,
+        22.5,
+        30.0
+      ],
+      "label": "누적 재발(%)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "집단A",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      },
+      {
+        "id": "s1",
+        "label": "집단B",
+        "samplesPath": "series/1/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "secondary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·전형적 경과·진단 기준·약물·수술 안전 기준을 정하지 않는다.",
+    "치료 인과효과와 실제 크론병 재발률을 나타내지 않는다."
+  ],
+  "sourceImageUsed": false
+}

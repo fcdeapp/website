@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.tolerance.peripheral-regulation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.tolerance.peripheral-regulation.b.fabf1f4465bd",
+      "sourceSha256": "fabf1f4465bdff24daccfffbe9ca0a42c0ead8d24e454e7ddcfd05e3e84be1c4",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.peripheral-regulation.b.ec49ae901d68",
+      "sourceSha256": "ec49ae901d686bfc3b33616f171c3df51865f1e6bdd3d8ac101016ba52e51132",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.peripheral-regulation.b.063e71687e33",
+      "sourceSha256": "063e71687e33db50028bb0ef249a0b9d8b03c98701dc51d7d765343874a20dc4",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.75a913679a06be6fce13",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 52,
+            "end": 56,
+            "exact": "항원제시",
+            "prefix": "증의 제한에 중요하다. CTLA-4를 통한 ",
+            "suffix": "세포의 공동자극 환경 조절, IL-10·TG"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        },
+        {
+          "id": "ann.60328c55f70a13e0e1ea",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 40,
+            "exact": "FOXP3 관련 조절 T세포는 자기관용과 과도한 염증의 제한에 중요하다.",
+            "prefix": "",
+            "suffix": " CTLA-4를 통한 항원제시세포의 공동자극"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.tolerance.peripheral-regulation.b.a9a905b0a1ce",
+      "sourceSha256": "a9a905b0a1ceaf56329c7c4bac80b6158e8d347c79af26c7f4c3c47b19bb64ca",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.peripheral-regulation.b.968546c0d59e",
+      "sourceSha256": "968546c0d59ec7db47d60cbfdd50e15fe0504e98316e7a4f75c33515798d2ef8",
+      "sourceLengthUtf16": 210,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.peripheral-regulation.b.8464f6a46ab1",
+      "sourceSha256": "8464f6a46ab1004c3aeee93f3af6a091de0430c2a1bf6070b0f28c91bafa7cb2",
+      "sourceLengthUtf16": 191,
+      "annotations": [
+        {
+          "id": "ann.4c0f4620e1b73dbb9dab",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 47,
+            "exact": "특정 표지자의 결손이 억제 감소와 관련되면 유전자 복원과 세포 상태 검사가 중요하다.",
+            "prefix": "",
+            "suffix": " 그 단백질이 Treg의 수·생존을 바꿨는지"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.tolerance.peripheral-regulation.b.68d113bfd7d5",
+      "sourceSha256": "68d113bfd7d549885d41f564c5ba0c5ba9e54add77e1d29ddad77ac329a249a2",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.tolerance.peripheral-regulation.b.07f390be8dd3",
+      "sourceSha256": "07f390be8dd3805d0cc7e7b527af7ee378a91f8111a3ec22df6e6ca1a760f717",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.adc0895445b0bca3455d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 167,
+            "end": 214,
+            "exact": "이들을 구별해야 억제 신호 차단의 이득과 자기조직 손상 위험을 함께 이해할 수 있다.",
+            "prefix": "유하지만 같은 상태의 다른 이름은 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

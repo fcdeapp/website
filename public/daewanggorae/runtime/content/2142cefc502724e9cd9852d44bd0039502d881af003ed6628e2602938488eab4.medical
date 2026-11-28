@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.autoimmunity.triggers-epitope-spreading",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.autoimmunity.triggers-epitope-spreading.b.e112b9e82035",
+      "sourceSha256": "e112b9e82035b795a9e03d06f48a4f63a611d361f6cd2f046e111ab832883f8c",
+      "sourceLengthUtf16": 187,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.triggers-epitope-spreading.b.e9047b992832",
+      "sourceSha256": "e9047b992832b2a62e43443e833fce1a16efdbbaae6588f571e06ca054c323a4",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.af6e295fc425a013242a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 52,
+            "end": 121,
+            "exact": "질환과의 통계적 연관은 중요한 단서지만 그 유전형을 가진 모든 사람이 발병하거나 없는 사람은 발병할 수 없다는 뜻은 아니다.",
+            "prefix": "지와 선택·활성화의 환경을 바꿀 수 있다. ",
+            "suffix": " 여러 유전자와 환경, 성별·연령과 이전 노"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.autoimmunity.triggers-epitope-spreading.b.d786c34efc8b",
+      "sourceSha256": "d786c34efc8bb71318911ec9e56dd43f6c8fc502e253c5d8b94ba2b960fd0cf8",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.triggers-epitope-spreading.b.208727889d13",
+      "sourceSha256": "208727889d13369b53a1c5ce78281da7e5bfc701e8257deda4bb7b8114b3eb6b",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.triggers-epitope-spreading.b.661d3ae8054e",
+      "sourceSha256": "661d3ae8054e88d7e346dd88738a216dae315199f28397a375e50371409a3612",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.df9c4089714ec987550b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 97,
+            "end": 101,
+            "exact": "항원제시",
+            "prefix": "말한다. 조직 손상으로 새 항원이 제공되고 ",
+            "suffix": "·도움이 바뀌면서 후속 반응이 생길 수 있다"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        },
+        {
+          "id": "ann.0b6de386795bbc516eaf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 161,
+            "end": 204,
+            "exact": "단순히 항체량이 증가한 것과 인식하는 표적 범위가 넓어진 것은 구별해야 한다.",
+            "prefix": " 뒤에도 자기반응이 유지되는 한 설명이다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.autoimmunity.triggers-epitope-spreading.b.8f8ac1a3300b",
+      "sourceSha256": "8f8ac1a3300bfdaeb99c8451af542dd074f2f8eeaac2058e9e91fa2c95eb4dc5",
+      "sourceLengthUtf16": 198,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.autoimmunity.triggers-epitope-spreading.b.e5ae7e5def13",
+      "sourceSha256": "e5ae7e5def13347aea50f95b42f380705b1dc98de41ef2e6a4d28a37372d3602",
+      "sourceLengthUtf16": 176,
+      "annotations": [
+        {
+          "id": "ann.b0c0f2892345bc57f62f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 12,
+            "end": 14,
+            "exact": "보체",
+            "prefix": "면역세포 활성과 항체·",
+            "suffix": " 변화는 비교적 빠르게 바뀔 수 있지만 이미"
+          },
+          "conceptId": "reader.term.841b1d4d1d705967",
+          "targetDocumentId": "immunology.innate.complement"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.autoimmunity.triggers-epitope-spreading.b.bfa42c257667",
+      "sourceSha256": "bfa42c257667a7df50fde0dbdee56912c4b017fbf753d61d5c6c7c7e6593ceb0",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    }
+  ]
+}

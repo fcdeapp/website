@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.toxins.superantigen-activation",
+  "subjectId": "bacteriology",
+  "chapterId": "toxins",
+  "title": {
+    "ko": "초항원과 비정상적인 T세포 활성",
+    "en": "Superantigens and Aberrant T Cell Activation"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.toxins.superantigen-activation.lo.01",
+      "text": "초항원과 통상적인 항원 제시를 구별한다"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.lo.02",
+      "text": "Vβ 편향과 반응 규모를 설명한다"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.lo.03",
+      "text": "독소성 염증과 균혈증을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.ffb14d8214ed",
+      "type": "heading",
+      "level": 2,
+      "text": "펩타이드 특이성의 우회"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.7a1eba6399a0",
+      "type": "paragraph",
+      "markdown": "일반적인 T세포 반응은 가공된 펩타이드와 MHC가 이루는 복합체를 특정 TCR이 인식하는 과정이다. 초항원(superantigen)은 대표적으로 MHC II와 TCR의 특정 Vβ 계통을 비정상적으로 이어 많은 T세포를 활성화할 수 있다. 통상적인 펩타이드 결합 홈의 특이성을 그대로 따르는 반응과 다르다. 초항원을 단지 아주 강한 보통 항원의 다른 이름으로 이해해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.96f48083d1a9",
+      "type": "paragraph",
+      "markdown": "초항원별 결합 위치와 인식하는 TCR 집단은 다를 수 있다. 따라서 모든 T세포가 예외 없이 같은 정도로 반응한다는 설명은 부정확하다. 서로 다른 펩타이드 특이성을 가진 T세포라도 공통 Vβ 관련 특성 때문에 함께 활성화될 수 있다는 점이 핵심이다. 반응 집단의 크기와 원래 펩타이드 특이성의 폭을 나누어 생각해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.8f2bf45791d0",
+      "type": "heading",
+      "level": 2,
+      "text": "세포 사이의 증폭"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.09b48f4ab929",
+      "type": "paragraph",
+      "markdown": "항원제시세포와 T세포의 신호가 연결되면 cytokine 분비와 여러 염증 회로가 함께 증폭될 수 있다. 이 과정에서 혈관 기능과 조직 관류가 영향을 받을 수 있다. 그러나 특정 cytokine 농도 하나만으로 초항원 원인을 확정할 수는 없다. 심한 감염과 다른 염증에서도 비슷한 매개체가 증가할 수 있기 때문이다. 자극의 특이성과 효과의 공통성을 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.4618130d4f88",
+      "type": "paragraph",
+      "markdown": "빠른 활성 뒤에는 기능 변화와 소실·반응성 감소 등 후속 상태가 생길 수 있다. 한 번 측정한 T세포 수나 반응성이 전체 시간 경과를 대표하지 않는다. 실험 시점이 다르면 초기 활성과 이후의 억제가 반대 결과처럼 보일 수 있다. 생존 세포수와 세포당 cytokine, 반응하는 Vβ 집단의 비율을 따로 확인하면 이 차이를 해석하기 쉽다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.fdc38053ed37",
+      "type": "heading",
+      "level": 2,
+      "text": "독소 생산과 균의 위치"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.dc01ed1874e4",
+      "type": "paragraph",
+      "markdown": "일부 Staphylococcus와 Streptococcus 독소는 초항원 기전과 관련된다. 독소가 만들어지는 부위와 전신 효과가 나타나는 부위는 같지 않을 수 있다. 따라서 전신 독소 효과가 있으면 혈액에서 반드시 균이 배양되어야 한다고 추론할 수 없다. 반대로 혈액 배양 음성만으로 심각한 감염과 독소성 질환을 안전하게 배제할 수도 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.1e267915d667",
+      "type": "paragraph",
+      "markdown": "독소 유전자를 가진 균이 발견되었다고 해당 독소가 실제 증상의 유일한 원인이라는 뜻은 아니다. 발현·단백질·기능과 임상 문맥을 함께 평가한다. 발진이나 발열 같은 공통 표현만으로 특정 독소 기전을 구분하는 데는 한계가 있다. 감염원과 숙주의 기존 면역, 염증의 시간 경과도 결과에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.d3cb17280aec",
+      "type": "heading",
+      "level": 2,
+      "text": "실험에서 기전을 구별하기"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.537781d975ff",
+      "type": "paragraph",
+      "markdown": "가상 실험에서 항원 처리 과정을 제한해도 T세포 반응이 남고 특정 MHC II·Vβ 조건에 의존한다면 초항원 가설을 지지할 수 있다. 그러나 처리 억제제가 실제로 작동했는지와 세포 생존, 양성 대조를 함께 확인해야 한다. 단순히 많은 세포가 반응했다는 결과는 비특이 자극이나 다른 공동자극으로도 생길 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.b.a60351ab3d9c",
+      "type": "paragraph",
+      "markdown": "초항원과 endotoxin은 둘 다 전신 염증을 일으킬 수 있지만 분자 성분과 최초 인식 회로가 다르다. 전자는 대표적으로 단백질과 TCR–MHC의 연결, 후자는 LPS 관련 선천 인식 회로로 설명한다. 쇼크라는 임상 결과를 공유한다고 두 물질을 같은 독소로 분류하지 않는다. 이런 구분은 증상·검사·기전을 분리하는 임상 추론의 토대가 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.toxins.superantigen-activation.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "통상 제시",
+            "가공된 펩타이드–MHC와 특이 TCR"
+          ],
+          [
+            "초항원",
+            "대표적으로 MHC II·특정 Vβ 계통 연결"
+          ],
+          [
+            "Cytokine",
+            "반응 결과; 원인 독소의 단독 확정 아님"
+          ],
+          [
+            "배양",
+            "균 위치와 독소 효과 위치가 다를 수 있음"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/toxins/sections/bacteriology.toxins.superantigen-activation.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.toxins.superantigen-activation.001"
+  ],
+  "relatedLessons": [
+    "bacteriology.toxins.ab-toxin-trafficking",
+    "bacteriology.toxins.lps-compartment-sensing"
+  ]
+}

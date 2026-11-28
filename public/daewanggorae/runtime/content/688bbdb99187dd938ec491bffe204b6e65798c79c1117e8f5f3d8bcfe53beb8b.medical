@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.cough.hemoptysis-airway-risk",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.b.941dc94ecee5",
+      "sourceSha256": "941dc94ecee590380113a229d2dc6b11283fa450a5c90d350a73cb0a94c47db3",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.8f922390352696782787",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 49,
+            "end": 101,
+            "exact": "코·입·인두의 출혈이나 토혈과 구별하되 환자가 표현한 색과 거품만으로 출처를 확정하지 않는다.",
+            "prefix": "혈액을 기침으로 배출하는 현상을 가리킨다. ",
+            "suffix": " 기침·구역·코피의 선후, 구강·비강과 위장"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.b.833214de5670",
+      "sourceSha256": "833214de56705222ddf0bde01105d0968ffe0130ecb979417b65b1bcba7597ff",
+      "sourceLengthUtf16": 181,
+      "annotations": [
+        {
+          "id": "ann.fc9f471080f7c1a24ff8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 63,
+            "exact": "결핵",
+            "prefix": " 응고 관련 요인 등이 있다. 지역 역학과 ",
+            "suffix": "·감염 노출, 흡연과 암 위험, 항응고·항혈"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.b.cba4665de91c",
+      "sourceSha256": "cba4665de91cdd3285af54e6626998d8bedb7a99f373457710ab6eb3e440bc0e",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.b.ece9ca8324ad",
+      "sourceSha256": "ece9ca8324ad2439eb40a7283d8cc2fb8018744290cee2389acfc80c485566f4",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.5a13160fcf81da18fd8d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 129,
+            "end": 177,
+            "exact": "자세와 기도 확보·격리 등의 전문 판단에는 출처와 현재 상태 및 가용 자원이 중요하다.",
+            "prefix": "환 지지를 진행하는 일은 병행되어야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.b.02cbf0d3a073",
+      "sourceSha256": "02cbf0d3a073dea69a2ff18523245dbdb03c3060455de5eea9ef62dc0a5ac6e1",
+      "sourceLengthUtf16": 177,
+      "annotations": [
+        {
+          "id": "ann.b62a6fcdb472ed1575e4",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 32,
+            "end": 37,
+            "exact": "만성 염증",
+            "prefix": "압력의 기관지동맥 계통으로 공급을 받는다. ",
+            "suffix": "과 혈관 재형성·측부 변화는 출혈의 배경이 "
+          },
+          "conceptId": "reader.term.e46d051c67b4cb9c",
+          "targetDocumentId": "pathology.inflammation.acute-chronic"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.b.7fba0937bdd3",
+      "sourceSha256": "7fba0937bdd3e545a523e442d9628c0b60838e8a79b7a6bea89c0d52384fdb8e",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.b.98e4f7197143",
+      "sourceSha256": "98e4f71971437f4e1211d5853bff084a8e95b55b24c29a3f941ee6681f799cbf",
+      "sourceLengthUtf16": 158,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.b.a6534e20747f",
+      "sourceSha256": "a6534e20747fc02a31955527e78d0590cb1daba74fa153c57ecdc337d1c96a91",
+      "sourceLengthUtf16": 175,
+      "annotations": [
+        {
+          "id": "ann.2934a589efc048cfdaf6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 51,
+            "end": 82,
+            "exact": "같은 병소의 재출혈과 새로운 감염·다른 병변을 구별한다.",
+            "prefix": " 원인 치료 및 약물의 재조정을 평가한다. ",
+            "suffix": " 환자에게는 다시 출혈할 때의 재평가와 응급"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.p.extra0845.0",
+      "sourceSha256": "d92aaf546d492af120e8d1039bc72519032583c2412fc26c48f77c27bd8e0188",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.cough.hemoptysis-airway-risk.p.extra0845.1",
+      "sourceSha256": "0ce3ea3ef8d0840111e70d8d8eca804d5e3da9cb406c4b36684b605e00f74c71",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    }
+  ]
+}

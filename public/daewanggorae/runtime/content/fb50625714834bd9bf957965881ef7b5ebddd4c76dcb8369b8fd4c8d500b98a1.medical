@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pharmacology.general.metabolism-biotransformation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.93f9587bd8eb",
+      "sourceSha256": "93f9587bd8eb14e6b193923e6896fd235d15e778093d068da990397a141d0cea",
+      "sourceLengthUtf16": 249,
+      "annotations": [
+        {
+          "id": "ann.fcacdf5b8c65b44f23f3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 74,
+            "end": 115,
+            "exact": "간이 중요한 장소지만 장벽·신장·혈액·폐 등 간 밖에서도 일어날 수 있다.",
+            "prefix": "약물의 화학 구조를 바꾸는 효소 반응이다. ",
+            "suffix": " 대사는 원약물의 제거에 기여하면서 대사체("
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.6f154a16fc81",
+      "sourceSha256": "6f154a16fc8154f9d37f5363dc9d81f88ce96d6db197218d81b53c1f6b7b03eb",
+      "sourceLengthUtf16": 190,
+      "annotations": [
+        {
+          "id": "ann.7a6e162c92567cd625f4",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 122,
+            "exact": "청소율",
+            "prefix": " 수송이 서로 연결되므로 화학반응만 알고 총",
+            "suffix": "을 정확히 예측하기는 어렵다. 혈중 원약물 "
+          },
+          "conceptId": "reader.term.52a8b75072525e18",
+          "targetDocumentId": "physiology.renal.filtration"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.785bc010d449",
+      "sourceSha256": "785bc010d4490b7c24c35d5c83cb491b46803b59d38c449ae645980a8fc21371",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.46bfd32f258b1fa58e3b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 167,
+            "end": 216,
+            "exact": "CYP 계통을 이야기할 때에는 효소의 이름,세포내 위치와 요구되는 전자 전달을 구별한다.",
+            "prefix": "해와 다른 산화·환원효소도 고려해야 한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.35119a830d65",
+      "sourceSha256": "35119a830d6520f5df88d6d9809b846857e7cc7015a35de09993c199be993ae3",
+      "sourceLengthUtf16": 265,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.9e2243033a59",
+      "sourceSha256": "9e2243033a595c4dc529ba9e1fe3f3a7f98909f28efa6837784de480d3ab2558",
+      "sourceLengthUtf16": 245,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.7beccc5d41b1",
+      "sourceSha256": "7beccc5d41b112f9f8c92b1214e250074d5e74a2327f418955ee6ce0afd1fbd7",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.c45c264599de",
+      "sourceSha256": "c45c264599de1b58412c21e8dacd488dfe2318f97d6303a7d98031694c4b9e55",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.baf21006a6a5",
+      "sourceSha256": "baf21006a6a5b8de472efe5e14ef9cc7f30a192bf9d83fc129c2e339ae730eb4",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.a17061c93865",
+      "sourceSha256": "a17061c938651c072080fbe0fee4979487621f96b5629a54408d6755d8510cfc",
+      "sourceLengthUtf16": 200,
+      "annotations": [
+        {
+          "id": "ann.bbffd37d249dd69c476f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 49,
+            "end": 52,
+            "exact": "약동학",
+            "prefix": "출에 영향을 줄 수 있으나 유전자형이 모든 ",
+            "suffix": "을 혼자 결정하지는 않는다. 연령·간과 신장"
+          },
+          "conceptId": "reader.term.5b6a5f213a56c7b7",
+          "targetDocumentId": "pharmacology.general.pharmacokinetics"
+        }
+      ]
+    },
+    {
+      "blockId": "pharmacology.general.metabolism-biotransformation.b.c1344d907af4",
+      "sourceSha256": "c1344d907af46e584668f32c0d64bb25a8e7a43c5e5ddb35edaccb7f7d876258",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    }
+  ]
+}

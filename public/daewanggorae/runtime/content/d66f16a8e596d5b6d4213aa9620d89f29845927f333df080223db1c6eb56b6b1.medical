@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.sphere-volume-ratio-0855",
+  "lessonId": "neurology.neurooncology.integrated-tumor-diagnosis",
+  "title": "구형 가정의 길이·부피 비율",
+  "series": [
+    {
+      "label": "부피 비율",
+      "samples": [
+        {
+          "x": 1.0,
+          "y": 1.0
+        },
+        {
+          "x": 1.01,
+          "y": 1.030301
+        },
+        {
+          "x": 1.02,
+          "y": 1.061208
+        },
+        {
+          "x": 1.03,
+          "y": 1.092727
+        },
+        {
+          "x": 1.04,
+          "y": 1.124864
+        },
+        {
+          "x": 1.05,
+          "y": 1.157625
+        },
+        {
+          "x": 1.06,
+          "y": 1.191016
+        },
+        {
+          "x": 1.07,
+          "y": 1.225043
+        },
+        {
+          "x": 1.08,
+          "y": 1.259712
+        },
+        {
+          "x": 1.09,
+          "y": 1.295029
+        },
+        {
+          "x": 1.1,
+          "y": 1.331
+        },
+        {
+          "x": 1.11,
+          "y": 1.367631
+        },
+        {
+          "x": 1.12,
+          "y": 1.404928
+        },
+        {
+          "x": 1.13,
+          "y": 1.442897
+        },
+        {
+          "x": 1.14,
+          "y": 1.481544
+        },
+        {
+          "x": 1.15,
+          "y": 1.520875
+        },
+        {
+          "x": 1.16,
+          "y": 1.560896
+        },
+        {
+          "x": 1.17,
+          "y": 1.601613
+        },
+        {
+          "x": 1.18,
+          "y": 1.643032
+        },
+        {
+          "x": 1.19,
+          "y": 1.685159
+        },
+        {
+          "x": 1.2,
+          "y": 1.728
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "equation": "radiusRatio^3",
+    "hypotheticalSphere": true,
+    "notTumorProgressionCriterion": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 1.0,
+      "max": 1.2,
+      "scale": "linear",
+      "ticks": [
+        1.0,
+        1.05,
+        1.1,
+        1.15,
+        1.2
+      ],
+      "label": "반지름/시작 반지름"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 2,
+      "scale": "linear",
+      "ticks": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "label": "부피/시작 부피"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "부피 비율",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 계산 또는 가상 기록이다. 실제 환자·정상 범위·검사 기준·치료효과·처방과 안전 경계를 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

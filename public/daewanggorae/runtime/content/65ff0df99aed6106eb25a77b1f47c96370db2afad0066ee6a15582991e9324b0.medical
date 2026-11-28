@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.devices.pacemaker-troubleshooting",
+  "subjectId": "cardiology",
+  "chapterId": "devices",
+  "title": {
+    "ko": "심박동기 이상 소견의 체계적 판독",
+    "en": "Systematic Assessment of Pacemaker Dysfunction"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.lo.01",
+      "text": "출력 실패·포획 실패·감지 이상을 구별한다"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.lo.02",
+      "text": "기기 기록과 환자 상태를 통합한다"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.lo.03",
+      "text": "오작동처럼 보이는 정상 기능을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.3ff053331d96",
+      "type": "heading",
+      "level": 2,
+      "text": "환자의 순환과 기기의 시간"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.1f89df9df891",
+      "type": "paragraph",
+      "markdown": "심박동기(pacemaker)를 가진 환자의 어지럼이나 실신을 평가할 때 첫 질문은 현재 유효 순환이 유지되는가이다. 모니터에 조율 자극이 보이는 것과 심실이 탈분극하는 것, 맥박과 혈압이 형성되는 것은 서로 다른 단계다. 의식·호흡·맥박과 관류를 확인하면서 심전도를 확보한다. 불안정한 환자의 대응을 기기 종류를 모두 확인할 때까지 미루지 않는다. 반대로 기기가 있다는 이유만으로 모든 증상을 기기 고장으로 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.4657dde0403e",
+      "type": "paragraph",
+      "markdown": "판독에서는 예상되는 자극 시점과 실제 신호를 비교한다. 그러나 예상 시점은 단순한 기본 심박수의 역수만으로 정해지지 않는다. 자기 심박의 감지, 불응기와 차단 시간, 방실 지연과 속도 반응 설정이 개입한다. 기기가 정상적인 자발 QRS를 감지하여 출력을 억제했다면 조율 흔적이 없는 것은 정상 기능일 수 있다. 저장된 사건 표지(marker channel)는 기기가 무엇을 인식하고 어떤 판단을 했는지 보여 주지만 실제 전기도와 환자 상태를 대조해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.5cd7a648089a",
+      "type": "heading",
+      "level": 2,
+      "text": "출력과 포획의 분리"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.258f7351e970",
+      "type": "paragraph",
+      "markdown": "출력 실패(failure to pace)는 자극이 필요할 것으로 예상되는 상황에서 조율 출력이 나타나지 않는 문제다. 배터리와 회로, 연결 및 설정을 검토한다. 과감지로 정상 억제가 잘못 작동한 경우도 출력이 없는 모양을 만들 수 있다. 체표에서 작은 자극 흔적을 놓치거나 필터가 이를 흐리게 할 수도 있으므로 한 유도만으로 출력 자체의 부재를 확정하지 않는다. 기기 점검과 여러 유도, 기록 조건을 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.ea4736b4ca78",
+      "type": "paragraph",
+      "markdown": "포획 실패(failure to capture)는 출력은 있었지만 해당 심방 또는 심실의 탈분극이 뒤따르지 않는 현상이다. 전극 위치 변화와 접촉, 역치 상승, 출력 설정과 조직 상태를 평가한다. 전극의 절연 손상이나 단선은 임피던스 변화의 단서가 될 수 있지만 한 수치만으로 모든 원인을 분류하지 않는다. 전해질·산염기와 약물도 흥분성에 영향을 줄 수 있다. 자극이 다른 박동의 불응기에 도달한 경우와 실제 출력 부족을 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.99f024eec042",
+      "type": "heading",
+      "level": 2,
+      "text": "감지 문제의 방향"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.9e4cc249774c",
+      "type": "paragraph",
+      "markdown": "과소감지(undersensing)는 실제 심장 신호를 기기가 놓치는 것이다. 자발 박동이 있었는데도 예정된 조율이 계속되어 불필요한 자극이 나타날 수 있다. 과감지(oversensing)는 잡음이나 다른 신호를 심장 활동으로 잘못 인식하는 것이다. 억제형 기능에서는 필요한 출력을 늦추거나 멈추는 결과를 만들 수 있다. 기기 화면의 감도 수치가 낮을수록 작은 신호를 더 잘 인식하도록 설정되는 경우가 있어 숫자의 크기와 감지 능력의 방향을 혼동하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.7dccc4deabcb",
+      "type": "paragraph",
+      "markdown": "근전위와 전자기 간섭, 전극 잡음과 심장 내 다른 신호는 감지 오류의 후보가 된다. 특정 동작과의 시간 관계, 저장 신호의 모양과 전극 지표의 추세를 본다. 다만 증상과 잡음이 같은 때 관찰되었다는 사실만으로 원인 전체가 확정되지는 않는다. 잠재적인 가역 요인과 기저 부정맥, 혈압과 비심장성 원인을 함께 검토한다. 자석 반응이나 설정 변경은 장치마다 다르므로 한 기기의 동작을 모든 장치에 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.921f9d6af554",
+      "type": "heading",
+      "level": 2,
+      "text": "추적 자료의 사용"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.b.0db255c61959",
+      "type": "paragraph",
+      "markdown": "평가에는 장치 식별 정보, 조율 의존도, 최근 시술과 이전 점검 결과가 중요하다. 역치와 감지 진폭, 임피던스와 배터리의 단일 값보다 추세 변화가 더 많은 정보를 줄 수 있다. 정상 점검 시점의 자료가 간헐적 사건을 완전히 배제하는 것은 아니다. 원격 모니터링의 경고도 임상적 확인과 후속 행동에 연결되어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.heading.numeric0841",
+      "type": "heading",
+      "level": 2,
+      "text": "출력 수지와 포획의 차이"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.paragraph.numeric0841",
+      "type": "paragraph",
+      "markdown": "순수 저항500Ω에2V를0.5ms 동안 전달하는 교육용 펄스에서는 에너지가 V²t/R=4μJ다. 전압을4V로 바꾸고 다른 조건을 고정하면16μJ가 된다. 전압 두 배와 에너지 두 배를 같은 말로 취급하지 않는다. 이 수지는 실제 전극–조직 계면과 출력 회로의 손실을 생략했으므로 배터리 수명을 직접 계산하지 못한다. 또한 전달 에너지가 증가했다는 사실만으로 포획이 반드시 성공한다고 보장할 수 없다. 역치는 펄스 폭과 조직 흥분성·접촉 상태에 따라 달라지므로 전기적 입력과 관찰된 생물학적 반응을 별도로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "출력",
+            "기기가 자극을 전달"
+          ],
+          [
+            "포획",
+            "자극 뒤 조직 탈분극"
+          ],
+          [
+            "과소감지",
+            "실제 신호를 놓침"
+          ],
+          [
+            "과감지",
+            "불필요한 신호를 심장 사건으로 인식"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.devices.pacemaker-troubleshooting.diagram.pacing-energy-0841",
+      "type": "diagram",
+      "diagramRef": "diagram.pacing-energy-0841",
+      "path": "diagrams/diagram.pacing-energy-0841.svg",
+      "alt": "고정저항·폭의 펄스에너지의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 정상 해부학 모델은 전극이 위치하는 심장방의 문맥을 보조하지만 실제 전극 위치와 파손, 기기의 시간 규칙을 직접 측정하는 자료가 아니다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/devices/sections/cardiology.devices.pacemaker-troubleshooting.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.devices.pacemaker-troubleshooting.001",
+    "question.cardiology.devices.pacemaker-troubleshooting.002"
+  ],
+  "relatedLessons": [
+    "cardiology.devices.pacemaker-timing"
+  ]
+}

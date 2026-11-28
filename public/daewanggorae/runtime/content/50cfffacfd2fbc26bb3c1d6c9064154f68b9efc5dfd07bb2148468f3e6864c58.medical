@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "immunology.autoimmunity.ana-pretest-probability",
+  "subjectId": "immunology",
+  "chapterId": "autoimmunity",
+  "title": {
+    "ko": "ANA·항원 특이 항체와 검사 전 확률",
+    "en": "ANA Specific Autoantibodies and Pretest Probability"
+  },
+  "learningObjectives": [
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.lo.01",
+      "text": "ANA의 방법·역가·패턴을 구별한다"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.lo.02",
+      "text": "민감도·특이도와 양성예측도를 계산한다"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.lo.03",
+      "text": "검사 결과와 질환 분류·활동성을 나누어 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.e5c07550391b",
+      "type": "heading",
+      "level": 2,
+      "text": "무엇에 대한 항체를 어떻게 측정했는가"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.ffbbd155fc0c",
+      "type": "paragraph",
+      "markdown": "항핵항체(antinuclear antibody, ANA)는 하나의 항원에 대한 한 종류의 항체명이 아니다. 핵과 세포 성분에 대한 여러 결합 반응을 포함하고 검사 방법에 따라 포착하는 범위가 다르다. HEp-2 세포 기반 간접면역형광은 세포 내 분포에 따른 패턴 정보를 제공하고, 고형상 면역검사는 선택한 항원의 목록과 형태에 따라 반응을 측정한다. 두 방법의 불일치를 단순히 어느 한 검사의 실패로 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.86583a7016f6",
+      "type": "paragraph",
+      "markdown": "역가(titer)는 정해진 판독 조건에서 반응이 검출되는 희석의 범위를 표현한다. 표지 강도·역가와 임상적 병원성은 다른 개념이다. 같은 역가라도 패턴·항원 특이성과 환자의 증상에 따라 의미가 달라진다. 핵균질·반점·중심절·핵소체 등은 가능한 표적과 감별을 좁히는 단서지만 하나의 패턴을 단일 질환의 확진으로 사용하지 않는다. 검체 처리와 판독자·시약의 차이도 고려한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.f51103accb82",
+      "type": "heading",
+      "level": 2,
+      "text": "임상 가설이 예측도를 바꾼다"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.2b9297f47a3b",
+      "type": "paragraph",
+      "markdown": "민감도는 질환이 있는 사람 중 양성인 비율이고 특이도는 질환이 없는 사람 중 음성인 비율이다. 양성예측도(positive predictive value, PPV)는 양성인 사람 중 실제 질환이 있는 비율이다. 세 비율의 분모가 다르므로 높은 민감도를 높은 양성예측도와 같은 말로 쓰지 않는다. 검사 전 확률이 낮은 집단에서는 위양성의 절대수가 상대적으로 커질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.589c383cee27",
+      "type": "paragraph",
+      "markdown": "가상 검사에서 민감도0.90, 특이도0.95, 유병확률 p라면 PPV=0.90p/[0.90p+0.05(1−p)]다. 분자의 진양성과 분모의 전체 양성을 같은 모집단 비율로 계산한 식이다. p=0.01인 가상 10,000명에서는 질환자100명 중90명이 양성, 비질환자9,900명 중495명이 양성이다. 따라서 PPV는90/585로 약15.38%다. 이 수치는 실제 ANA 검사 성능이나 특정 질환의 유병률을 제시한 것이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.e38014d41bbe",
+      "type": "paragraph",
+      "markdown": "같은 성능을 가진 검사를 p=0.20인 가상 집단에 적용하면 진양성1,800명과 위양성400명으로 PPV는 약81.82%다. 검사 자체를 바꾸지 않아도 적용 집단의 차이가 의미를 바꾼다. 증상과 진찰, 장기 소견으로 검사 전 확률을 정하는 이유다. 특정 질환의 실제 사전확률은 단순한 인구 유병률과 동일하지 않을 수 있으며 의뢰된 환자 집단의 선택을 고려해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.8ee8b6b37fc6",
+      "type": "heading",
+      "level": 2,
+      "text": "특이 항체로 질문을 좁힌다"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.6084d70ba238",
+      "type": "paragraph",
+      "markdown": "임상 표현과 ANA 결과에 따라 이중가닥 DNA, Sm·Ro·La 등 특정 항원에 대한 검사가 추가 정보를 줄 수 있다. 각 항체의 질환 연관성과 검사법의 범위가 다르다. 큰 패널에서 우연히 여러 양성이 나왔다는 사실만으로 여러 질환이 동시에 확정된 것은 아니다. 항체가 실제로 해당 임상 표현을 지지하는지와 다른 원인을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.c04015ea3b05",
+      "type": "paragraph",
+      "markdown": "음성 ANA가 모든 전신 자가면역 질환을 완전히 배제하는 것은 아니다. 검사 항원과 방법, 임상적으로 의심되는 질환이 무엇인지에 따라 다음 질문이 달라진다. 반대로 불특정 피로나 통증만으로 큰 패널을 반복하면 관련 없는 양성으로 진료가 왜곡될 수 있다. 검사 추가의 목적과 결과에 따라 바뀔 결정을 먼저 정한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.a11228790e7b",
+      "type": "heading",
+      "level": 2,
+      "text": "진단과 추적은 같은 쓰임새가 아니다"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.6a8d6e4b8a8c",
+      "type": "paragraph",
+      "markdown": "질환의 분류 기준은 연구 집단의 일관성을 위한 목적을 포함하며, 한 기준 항목이나 항체 양성이 개인의 진단 전체와 같지는 않다. 진단·분류·활동성 추적에서 어떤 검사가 검증되었는지를 구별한다. ANA 자체의 반복 변화가 모든 류마티스 질환의 현재 활동도를 직접 반영하는 것은 아니다. 장기별 임상 변화와 질환에 맞는 지표가 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.b.403ac709d010",
+      "type": "paragraph",
+      "markdown": "추적 중 검사법이 바뀌면 수치 차이가 생물학적 변화처럼 보일 수 있다. 치료, 감염과 시간 경과도 항체와 증상의 관계를 바꾼다. 결과를 설명할 때는 양성이라는 단어뿐 아니라 방법·역가·패턴과 관련 증상, 미확인 사항을 함께 기록한다. 이는 불필요한 질환 표지와 놓친 장기 이상을 모두 줄이는 방향의 해석이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.diagram.immune-pretest-ppv-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.immune-pretest-ppv-toy",
+      "path": "diagrams/diagram.immune-pretest-ppv-toy.svg",
+      "alt": "기저확률과 양성예측도의 독립 계산 곡선"
+    },
+    {
+      "id": "immunology.autoimmunity.ana-pretest-probability.table.0824",
+      "type": "table",
+      "data": {
+        "title": "기전과 검사 해석의 비교",
+        "columns": [
+          "항목",
+          "해석"
+        ],
+        "rows": [
+          [
+            "민감도",
+            "질환이 있을 때 양성일 조건부 확률"
+          ],
+          [
+            "특이도",
+            "질환이 없을 때 음성일 조건부 확률"
+          ],
+          [
+            "검사 전 확률",
+            "증상·대상군에 따른 사전 정보"
+          ],
+          [
+            "양성예측도",
+            "검사 전 확률을 포함하여 계산"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/immunology/chapters/autoimmunity/sections/immunology.autoimmunity.ana-pretest-probability.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.immunology.autoimmunity.ana-pretest-probability.001",
+    "question.immunology.autoimmunity.ana-pretest-probability.002"
+  ],
+  "relatedLessons": [
+    "immunology.autoimmunity.triggers-epitope-spreading",
+    "immunology.autoimmunity.anca-specificity"
+  ]
+}

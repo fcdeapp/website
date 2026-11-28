@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.infection.tuberculosis-host-pathology",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.b.4d2ab3edcc96",
+      "sourceSha256": "4d2ab3edcc967a77173288f621cac07c9d425e03f4e9721d130bf00719ebc83c",
+      "sourceLengthUtf16": 192,
+      "annotations": [
+        {
+          "id": "ann.74e63b74f9e71e5d7166",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 19,
+            "end": 31,
+            "exact": "tuberculosis",
+            "prefix": "결핵균군(Mycobacterium ",
+            "suffix": " complex)은 공기 중 전파와 흡입 뒤"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.b.d025fb0be8b0",
+      "sourceSha256": "d025fb0be8b0c45e630adf234fd4a02f4aeec8c5f96d3fe5f096aa468fc9232e",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.b.87e1ab674d5b",
+      "sourceSha256": "87e1ab674d5b149e32f19b999cc627a552f66b24c1cd38dc1688a06a2cab5b0b",
+      "sourceLengthUtf16": 180,
+      "annotations": [
+        {
+          "id": "ann.2d3be22c3c037300d608",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 5,
+            "exact": "항원 제시",
+            "prefix": "",
+            "suffix": "와 T세포, IFN-γ를 통한 대식세포 활성"
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        },
+        {
+          "id": "ann.ae37210f4d1d4d28cc23",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 63,
+            "exact": "항원 제시와 T세포, IFN-γ를 통한 대식세포 활성 및 TNF 관련 신호 등은 균 조절과 조직 반응에 중요하다.",
+            "prefix": "",
+            "suffix": " 세포가 모인 육아종은 숙주 방어와 균의 지"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.b.33bc1c01acff",
+      "sourceSha256": "33bc1c01acff4f54f41c9b12c198e9b5d5e470d696c4867602950f3bc557181f",
+      "sourceLengthUtf16": 171,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.b.a9b201fe4b97",
+      "sourceSha256": "a9b201fe4b976f11f05b7f59abb92c255ddc6ed4d4b3559ec3887090d1c58cb1",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.b.36cce28d70b3",
+      "sourceSha256": "36cce28d70b377ba66250d01cdfdb841c519b9224fb32a7e431e087b9e8bf4ef",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.b.b527ce0fdaa8",
+      "sourceSha256": "b527ce0fdaa87b302215ebefb8711ea7a295fcf0318685f3fc6cf14ad3b56134",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.b.c8162934e570",
+      "sourceSha256": "c8162934e5704ff3edef54a6223b5bb78e62c67833f1e081abab55f97dcb8241",
+      "sourceLengthUtf16": 179,
+      "annotations": [
+        {
+          "id": "ann.cf6d99aba799067229d6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 80,
+            "end": 129,
+            "exact": "새 악화에서는 불충분한 약물 노출과 내성·다른 감염, 면역 반응과 다른 질환을 구별한다.",
+            "prefix": "성 변화가 같은 속도로 회복되지는 않는다. ",
+            "suffix": " 결핵은 균의 존재뿐 아니라 숙주의 시간과 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.p.extra0846.0",
+      "sourceSha256": "b63a8065d9ce1a08b949c49a559e40dfade10ed26c821347d45021d167d55422",
+      "sourceLengthUtf16": 176,
+      "annotations": [
+        {
+          "id": "ann.869d858943c5647f0ab7",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 110,
+            "end": 152,
+            "exact": "조직에 균이 적게 보인다는 결과와 전체 질환 부담이 작다는 결론을 구별한다.",
+            "prefix": " 소견의 조합이 전형적이지 않을 수 있다. ",
+            "suffix": " 채취한 위치와 방법이 검출 범위를 정한다."
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.infection.tuberculosis-host-pathology.p.extra0846.1",
+      "sourceSha256": "be5fd66654b3e2dc0b93d083735c4b372307b8511f00b237495b16fa2007943c",
+      "sourceLengthUtf16": 205,
+      "annotations": []
+    }
+  ]
+}

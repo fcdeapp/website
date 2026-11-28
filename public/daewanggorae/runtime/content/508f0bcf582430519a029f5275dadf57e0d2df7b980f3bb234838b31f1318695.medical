@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.vascular.ankle-brachial-assessment",
+  "subjectId": "cardiology",
+  "chapterId": "vascular",
+  "title": {
+    "ko": "발목상완지수와 하지 관류검사",
+    "en": "Ankle Brachial Index and Limb Perfusion Testing"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.lo.01",
+      "text": "압력비의 계산과 측정 조건을 설명한다"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.lo.02",
+      "text": "비압박성 혈관의 오류를 해석한다"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.lo.03",
+      "text": "휴식·운동·국소 관류검사의 질문을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.eeffdb23ba5c",
+      "type": "heading",
+      "level": 2,
+      "text": "압력의 비를 재는 이유"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.cf6ae4a2e1d6",
+      "type": "paragraph",
+      "markdown": "발목상완지수(ankle-brachial index, ABI)는 발목과 팔의 수축기 압력을 비교하는 생리 지표다. 도플러로 발등동맥과 뒤정강동맥, 양쪽 상완동맥의 압력을 측정하고 정해진 방식으로 각 다리의 비를 계산한다. 어느 압력을 분자와 분모로 사용했는지 명시해야 비교가 가능하다. 발목의 압력은 특정 큰 동맥 수준의 정보를 주며 발가락 상처 주변의 미세순환을 직접 측정하는 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.9e861df6a75b",
+      "type": "paragraph",
+      "markdown": "예를 들어 해당 다리의 선택한 발목 압력이90mmHg이고 기준 상완 압력이120mmHg라면 비는0.75다. 비에는 단위가 없고 분자·분모의 측정 오차가 모두 반영된다. 커프 크기와 위치, 안정 시간과 자세, 도플러 신호의 식별이 결과에 영향을 준다. 수치가 이전과 달라졌다면 질환 변화뿐 아니라 측정 조건과 사용한 압력을 먼저 비교한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.0922a31d6e3f",
+      "type": "heading",
+      "level": 2,
+      "text": "높은 수치가 항상 좋은 것은 아니다"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.ea49a53cdd8d",
+      "type": "paragraph",
+      "markdown": "당뇨와 만성콩팥병 등에서 혈관벽이 잘 눌리지 않으면 커프로 동맥을 차단하기 어려워 발목 압력이 실제 관류에 비해 높게 나올 수 있다. 이런 비압박성 혈관에서는 높은 지수를 정상 혈류의 증거로 읽지 않는다. 발가락 압력과 발가락상완지수(toe-brachial index, TBI), 파형 등 다른 자료가 질문을 보완할 수 있다. 각 검사의 적용성과 기술적 한계도 함께 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.6339be85b071",
+      "type": "paragraph",
+      "markdown": "양팔 압력이 다르면 상완동맥 위쪽의 병변이나 측정 오류 등이 가능하다. 분모를 임의로 선택하면 지수의 의미가 바뀔 수 있다. 발목의 두 동맥이 다른 결과를 보이는 경우에는 어느 혈관을 통해 원위 조직에 혈액이 가는지와 파형을 함께 본다. 정해진 계산 규칙을 따르면서도 원래의 압력과 신호를 보존하면 단일 비에 가려진 정보를 검토할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.55ef69ae0953",
+      "type": "heading",
+      "level": 2,
+      "text": "운동이 드러내는 제한"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.2ffa9d7fbef6",
+      "type": "paragraph",
+      "markdown": "안정 시 요구가 작으면 협착이 있어도 휴식 압력이 비교적 유지될 수 있다. 반복적인 운동 증상이 있는데 안정 검사만으로 충분히 설명되지 않으면 적절한 운동 후 검사에서 원위 압력과 회복의 변화를 평가할 수 있다. 운동의 강도·지속과 실제 증상, 측정까지의 시간이 결과에 영향을 준다. 다른 날의 검사도 같은 부하 조건인지 확인해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.df1680031597",
+      "type": "paragraph",
+      "markdown": "운동 뒤 변화를 볼 때에는 단순히 지수가 떨어졌는지뿐 아니라 원래 압력과 팔 압력, 증상의 재현 및 회복 경과를 함께 본다. 운동을 충분히 하지 못했다면 음성 결과의 배제력이 달라진다. 심폐·근골격 제한 때문에 목표 부하에 도달하지 못한 경우도 기록한다. 검사에서 관찰한 흐름의 제한과 걷기 불편의 모든 원인을 동일하게 취급하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.af50039e28ac",
+      "type": "heading",
+      "level": 2,
+      "text": "국소 조직 관류와 영상"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.9b50ed9d9339",
+      "type": "paragraph",
+      "markdown": "만성 상처와 조직 손상이 있으면 발가락 압력, 경피 산소와 피부 관류압 등이 상처 부위의 치유 가능성을 평가하는 데 보완 정보를 줄 수 있다. 온도와 부종·감염, 위치와 검사 기법이 결과를 바꿀 수 있어 단일 숫자를 모든 상처에 동일하게 적용하지 않는다. 괴사 조직과 감염의 범위, 압력 손상 및 신경병증도 상처 경과에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.b.960973947672",
+      "type": "paragraph",
+      "markdown": "초음파와 CT·MR 혈관영상은 재혈관화 계획에 필요한 병변 위치와 원위 유출로 등을 보여 준다. 생리검사가 흐름의 결과를 묻는다면 영상은 그 결과를 만드는 구조를 찾는 데 기여한다. 조영제와 신장 기능, 석회화와 금속 및 접근의 부담도 고려한다. 좋은 검사는 숫자나 사진의 수가 많은 검사가 아니라 현재 판단에서 남은 질문을 줄이는 검사다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.h.extra0844",
+      "type": "heading",
+      "level": 2,
+      "text": "비율 오차를 분자와 분모로 나누기"
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.p.extra0844.0",
+      "type": "paragraph",
+      "markdown": "발목 압력이90이고 팔 압력이120이면 지수는0.75다. 발목 압력을 같은90으로 두고 팔 측정만100으로 낮게 얻으면 지수는0.9가 된다. 다리의 압력이 바뀌지 않았어도 분모의 차이로 해석이 달라질 수 있다. 이 예는 실제 분모 선택 규칙을 바꾸는 지시가 아니라, 원래 압력과 양팔 자료를 확인해야 하는 이유를 보여 준다. 혈관의 비압박성과 일반적인 측정 오차는 서로 다른 문제다."
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.p.extra0844.1",
+      "type": "paragraph",
+      "markdown": "연속 검사에서 지수만 저장하면 발목의 실제 압력과 전신 혈압이 함께 변한 상황을 구별하기 어렵다. 예를 들어 팔과 발목 압력이 모두 낮아져 같은 비가 유지되어도 전신 순환의 상태는 이전과 다를 수 있다. 증상과 상처·온도, 파형 및 원래 측정값을 함께 보관해야 한다. 숫자의 추세는 유용하지만 그 비를 만드는 두 양의 생리적 의미를 지워서는 안 된다."
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.table0844",
+      "type": "table",
+      "data": {
+        "title": "측정 대상과 생리적 의미",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "ABI",
+            "선택 발목압/기준 상완압"
+          ],
+          [
+            "분자·분모",
+            "각각 측정 조건 확인"
+          ],
+          [
+            "비압박성",
+            "높은 값이 정상 관류 보장 아님"
+          ],
+          [
+            "국소 상처",
+            "발가락·파형·조직 관류 보완"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.vascular.ankle-brachial-assessment.diagram.abi-pressure-ratio-0844",
+      "type": "diagram",
+      "diagramRef": "diagram.abi-pressure-ratio-0844",
+      "path": "diagrams/diagram.abi-pressure-ratio-0844.svg",
+      "alt": "고정 상완압과 발목 압력비의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/vascular/sections/cardiology.vascular.ankle-brachial-assessment.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.vascular.ankle-brachial-assessment.001",
+    "question.cardiology.vascular.ankle-brachial-assessment.002"
+  ],
+  "relatedLessons": [
+    "cardiology.vascular.peripheral-arterial-mechanisms",
+    "cardiology.vascular.chronic-limb-threatening"
+  ]
+}

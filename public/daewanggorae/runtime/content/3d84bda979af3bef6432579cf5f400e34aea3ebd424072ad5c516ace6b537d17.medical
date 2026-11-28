@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neuroanatomy.forebrain.thalamic-networks",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.1db49d738870",
+      "sourceSha256": "1db49d738870c79a4888489ad9910dc0b5a77ccab948202eaa8b2f556f3e1760",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.032a4f673793",
+      "sourceSha256": "032a4f673793ce9ffe5adbe0f45bf639a1d1219faa3804c56c5960e1cc25dcc1",
+      "sourceLengthUtf16": 226,
+      "annotations": [
+        {
+          "id": "ann.4e2328263b4de94384cc",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 71,
+            "exact": "속섬유판(internal medullary lamina) 등의 백질 경계를 기준으로 앞쪽·안쪽·가쪽 핵군과 판속핵군을 구분한다.",
+            "prefix": "",
+            "suffix": " 핵의 이름은 위치와 역사적 명명에 따른 부"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.dc4e07c7591f",
+      "sourceSha256": "dc4e07c7591f39ab2727dbb6af52dbf846ef9758b85f26237d07fb9c22701562",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.3e2493302770",
+      "sourceSha256": "3e2493302770b0c8c7bd8444de47fe659161062e9317ea4ee060a4a577063afb",
+      "sourceLengthUtf16": 249,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.7bc05b52e074",
+      "sourceSha256": "7bc05b52e074afd526856111fd13678c8dacd7e2be251543f9338a6ac85d2f13",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.ba2662140d99",
+      "sourceSha256": "ba2662140d99b349c7ce5d5ae2ffbdd832a0009150afa3ba037ded699f44bd10",
+      "sourceLengthUtf16": 253,
+      "annotations": [
+        {
+          "id": "ann.fe6e979319178b1311a0",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 87,
+            "end": 159,
+            "exact": "안쪽무릎체(medial geniculate nucleus, MGN)는 아래둔덕 등에서 오는 청각 입력과 청각겉질 연결에 중요하다.",
+            "prefix": "시각부챗살을 통해 일차시각겉질과 연결된다. ",
+            "suffix": " 두 무릎체가 같은 시상 뒤쪽 영역에 있다고"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.5a1f82da0474",
+      "sourceSha256": "5a1f82da04748a79fb552242f601e33319f997f2de93a62ffe7758535bb97585",
+      "sourceLengthUtf16": 236,
+      "annotations": [
+        {
+          "id": "ann.3c1e8a71f53638e60237",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 21,
+            "end": 24,
+            "exact": "바닥핵",
+            "prefix": "배쪽앞핵(VA)과 배쪽가쪽핵(VL)은 ",
+            "suffix": "·소뇌와 대뇌 운동계 사이의 회로와 관련된다"
+          },
+          "conceptId": "reader.term.f86911b56a42fbf2",
+          "targetDocumentId": "neuroanatomy.forebrain.basal-ganglia"
+        },
+        {
+          "id": "ann.8484b3eeb6b64de0a6f4",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 25,
+            "end": 27,
+            "exact": "소뇌",
+            "prefix": "쪽앞핵(VA)과 배쪽가쪽핵(VL)은 바닥핵·",
+            "suffix": "와 대뇌 운동계 사이의 회로와 관련된다. 각"
+          },
+          "conceptId": "reader.term.4799594fa35f4571",
+          "targetDocumentId": "neuroanatomy.cerebellum.cortex-connections"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.f99f1846906a",
+      "sourceSha256": "f99f1846906a4820b279de6fd846bd186ebb8f400d48f0903051769bf72054ba",
+      "sourceLengthUtf16": 263,
+      "annotations": [
+        {
+          "id": "ann.d8edcbcfc9f57e85597d",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 115,
+            "end": 156,
+            "exact": "베개핵(pulvinar)은 시각 연합영역과 주의 조절의 맥락에서 중요하다.",
+            "prefix": "·목표 지향 행동의 여러 요소와 관련된다. ",
+            "suffix": " 이러한 연결은 시상 병변에서 감각 외에 기"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.ced0a57707f6",
+      "sourceSha256": "ced0a57707f692217b8d8002d4c235ef01fd6e85aa4f7fb40de6f0054e0561a8",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.b6c9080760b2",
+      "sourceSha256": "b6c9080760b2ebd476e125519b6ddabe48bd61d3cdb862b8f5703d71e4e75175",
+      "sourceLengthUtf16": 233,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.b6bc4d01847e",
+      "sourceSha256": "b6bc4d01847e23882d4dc3cece48a66a4f730609b19dcf538a324a766114a708",
+      "sourceLengthUtf16": 227,
+      "annotations": [
+        {
+          "id": "ann.dcbcd73844e50742a116",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 64,
+            "exact": "막전위",
+            "prefix": "여한다. 수면·각성 상태에 따라 중계뉴런의 ",
+            "suffix": "와 발화 방식이 달라지고 시상겉질 회로의 동"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        }
+      ]
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.e5b4c9215533",
+      "sourceSha256": "e5b4c92155332dad5350f5b0e399ebb043e3f7fa3a2a0d4379442dc5c13247cf",
+      "sourceLengthUtf16": 194,
+      "annotations": []
+    },
+    {
+      "blockId": "neuroanatomy.forebrain.thalamic-networks.b.491d65d5654a",
+      "sourceSha256": "491d65d5654a45395659d697b4df0be56420c55c24792973aba812002b88b310",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    }
+  ]
+}

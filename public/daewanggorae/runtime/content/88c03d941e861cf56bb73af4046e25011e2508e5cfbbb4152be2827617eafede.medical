@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "immunology.organization.lymphoid-trafficking",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "immunology.organization.lymphoid-trafficking.b.4a77bb0661ed",
+      "sourceSha256": "4a77bb0661ed3cfadee422802f8b39ba61619ea389d43f86a7a79add1ed5e9a9",
+      "sourceLengthUtf16": 231,
+      "annotations": [
+        {
+          "id": "ann.8a7ec3febe6e528760b8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 118,
+            "end": 122,
+            "exact": "항원제시",
+            "prefix": "ry lymphoid organ)은 항원과 ",
+            "suffix": "세포, 순환 림프구를 좁은 공간에서 만나게 "
+          },
+          "conceptId": "reader.term.a79943039e613d8b",
+          "targetDocumentId": "immunology.antigen.presentation"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.organization.lymphoid-trafficking.b.38dfd07126d6",
+      "sourceSha256": "38dfd07126d697ca9d998ee82fdd7c8e1adfec2e19f1a419688d0699f7c1c8ba",
+      "sourceLengthUtf16": 216,
+      "annotations": [
+        {
+          "id": "ann.57f98cc34d9c62e1cfc3",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 47,
+            "end": 85,
+            "exact": "비장은 혈액을 감시하는 구조이며 혈행성 항원에 대한 반응에 중요하다.",
+            "prefix": "액체와 항원, 이동성 수지상세포를 받는다. ",
+            "suffix": " 비장을 단지 커다란 림프절로 이해하면 입력"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.organization.lymphoid-trafficking.b.5a720d1cefb2",
+      "sourceSha256": "5a720d1cefb27ee791b95e68eb957c8635d3af97b540cffa76495513e4c480dd",
+      "sourceLengthUtf16": 224,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.organization.lymphoid-trafficking.b.f41161978c94",
+      "sourceSha256": "f41161978c94308e8a9f74c360dba94d6198113b4d3dc9f3779afde1db2bfc8f",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.06cafec64e1a563562c8",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 40,
+            "end": 78,
+            "exact": "B세포의 CXCR5와 CXCL13 관련 이동은 여포 위치에 중요하다.",
+            "prefix": "서로 분리되어 있으면서 경계에서 협력한다. ",
+            "suffix": " 활성화 뒤 세포의 케모카인 수용체 조합이 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "immunology.organization.lymphoid-trafficking.b.eddb2a55bcb7",
+      "sourceSha256": "eddb2a55bcb7f99771a0ebcd76382cc6b6cad4722cc6cce08287b15d529a6f8a",
+      "sourceLengthUtf16": 249,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.organization.lymphoid-trafficking.b.84d846e9edae",
+      "sourceSha256": "84d846e9edaea404edc04f7e3fc9af1778b873862d298a2ce86ab5a325b1bb54",
+      "sourceLengthUtf16": 167,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.organization.lymphoid-trafficking.b.aa865da22ee9",
+      "sourceSha256": "aa865da22ee911f28c4e8ab4130d4e63ac69dd87394b5670b9a8d9b5f970459b",
+      "sourceLengthUtf16": 212,
+      "annotations": []
+    },
+    {
+      "blockId": "immunology.organization.lymphoid-trafficking.b.6a0cbdb8c83e",
+      "sourceSha256": "6a0cbdb8c83eddaf0d1f86fc79cb9d50cd2a329223e87581fff50684dd358faa",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    }
+  ]
+}

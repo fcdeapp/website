@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pharmacology.general.clearance-extraction-models",
+  "subjectId": "pharmacology",
+  "chapterId": "general",
+  "title": {
+    "ko": "청소율·장기 추출·포화 제거",
+    "en": "Clearance, Organ Extraction and Saturable Elimination"
+  },
+  "learningObjectives": [
+    {
+      "id": "pharmacology.general.clearance-extraction-models.lo.01",
+      "text": "청소율과 제거속도의 단위를 구별한다"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.lo.02",
+      "text": "장기 혈류·추출률·내인 청소율을 연결한다"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.lo.03",
+      "text": "선형 제거와 포화 제거의 농도 의존성을 해석한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.61876a140166",
+      "type": "heading",
+      "level": 2,
+      "text": "청소율은 제거된 양이 아니라 정규화한 용적률이다"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.28b869898f8c",
+      "type": "paragraph",
+      "markdown": "청소율(clearance, CL)은 제거속도를 지정한 농도로 나눈 값이다. 제거속도가 mg/h이고 농도가 mg/L이면 CL은 L/h다. 이는 매 시간 실제로 혈액 일부를 완전히 비워 버린다는 뜻이 아니라,관찰된 제거량을 농도로 정규화한 매개변수다. 농도가 두 배일 때 제거속도도 두 배이면 CL은 같을 수 있다. 따라서 청소율이 일정한 선형 제거에서도 시간당 제거되는 약물량은 농도에 따라 바뀐다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.56b06b6a9979",
+      "type": "paragraph",
+      "markdown": "동일한 농도 기준을 사용하고 독립적으로 병렬 작동하는 경로를 근사하면 총청소율은 각 경로의 청소율 합이다. 신장 배설과 간 대사 등을 더할 때 전혈·혈장 기준이 섞이지 않았는지 확인해야 한다. 소변에서 원약물을 측정해 얻는 신장청소율은 모든 대사체의 제거와 같지 않다. 약물이 체내에서 다른 물질로 바뀌는 것은 원약물의 제거가 될 수 있지만 그 대사체가 약리적으로 비활성이라는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.c6d93f58fc91",
+      "type": "heading",
+      "level": 2,
+      "text": "장기 추출과 혈류의 관계"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.01f3a50ad870",
+      "type": "paragraph",
+      "markdown": "장기 유입과 유출의 약물 농도를 Cin,Cout이라고 하면 추출률 E=(Cin−Cout)/Cin이다. 단순 정상상태 장기 수지에서 제거속도는 Q(Cin−Cout),유입 농도 기준 청소율은 Q×E다. Q는 그 농도와 같은 매질 기준의 장기 유량이다. 전혈 농도를 사용할 때는 혈류를,혈장 농도를 사용할 때는 혈액·혈장 분배 관계를 일관되게 다뤄야 한다. 분모 정의를 바꾸고 같은 Q를 무조건 대입하면 오류가 생긴다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.22ec6875cb5b",
+      "type": "paragraph",
+      "markdown": "추출률이 높은 조건에서 장기 청소율은 혈류의 영향을 크게 받을 수 있다. 추출률이 낮은 조건에서는 결합과 세포의 처리 능력이 상대적으로 중요해질 수 있다. 그러나 높은 추출·낮은 추출은 고정된 두 생물학적 종이 아니라 조건에 따른 연속적 특성이다. 효소 포화,운반체,질환·상호작용에 의해 같은 약물의 관찰 값이 달라질 수 있고,혈장 농도에서 본 변화와 자유 농도에서 본 변화도 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.29af3ba0cb2e",
+      "type": "heading",
+      "level": 2,
+      "text": "잘 섞인 모형의 유도와 제한"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.19a876a1614a",
+      "type": "paragraph",
+      "markdown": "정맥평형 또는 well-stirred 모형에서는 장기 내부의 제거에 노출되는 자유 농도를 유출 농도와 연결하여 근사한다. 자유 분율 fu와 내인 청소율 CLint를 일정하게 두면 정상상태 수지 Q(Cin−Cout)=fu×CLint×Cout이다. 이를 풀면 CL=Q×fu×CLint/(Q+fu×CLint)가 된다. CLint는 이 모형에서 혈류 제한을 제외한 처리 능력을 나타내며,혈류를 무한히 늘리면 실제 간이 무한히 제거한다는 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.4d54c43bd270",
+      "type": "paragraph",
+      "markdown": "fu×CLint가 Q보다 매우 작으면 CL은 fu×CLint에 가깝고,매우 크면 Q에 가까워진다. 이 두 극한은 수식의 민감도를 설명한다. 실제 장기에는 혈류·효소·수송체의 공간적 이질성과 막 통과가 있으므로 균일 혼합은 해부학적 사실이 아니라 모형 가정이다. 모형과 맞는 자료를 얻었다고 내부의 모든 미세 과정이 입증되는 것은 아니다. 능동 유입과 담즙 배출이 중요하면 확장된 수지가 필요할 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.72c471de75b6",
+      "type": "heading",
+      "level": 2,
+      "text": "제거의 포화는 청소율을 농도 의존적으로 만든다"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.566c60311964",
+      "type": "paragraph",
+      "markdown": "제거속도를 v=Vmax×C/(Km+C)로 근사하면 낮은 농도에서 v≈(Vmax/Km)C이고,높은 농도에서는 v가 Vmax에 접근한다. 이때 CL(C)=v/C=Vmax/(Km+C)이므로 청소율은 농도에 따라 감소한다. 낮은 농도에서의 일차 근사와 높은 농도에서의 거의 일정한 양의 제거를 구별한다. 어느 한 시점의 선형 근사를 모든 투여량·모든 시간에 확대하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.74649e3a95f0",
+      "type": "paragraph",
+      "markdown": "이상적인 단일 포화 제거 모형에서 일정 투입률 R이 Vmax보다 작으면 정상상태 농도는 R×Km/(Vmax−R)이다. R이 Vmax에 가까워질수록 농도가 비선형적으로 증가하고,R≥Vmax이면 이 모형에는 유한한 정상상태 해가 없다. 실제 생체에 다른 경로가 있다는 사실과,제시한 식 자체에 해가 없다는 수학적 진술을 구별한다. 가상 곡선을 특정 약물의 증량 지침으로 사용해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.480b8d91ac2f",
+      "type": "heading",
+      "level": 2,
+      "text": "청소율의 추정과 인과 해석"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.d1d9641d7df9",
+      "type": "paragraph",
+      "markdown": "정맥 투여 뒤 선형 조건에서 원약물의 총노출 AUC와 용량 D를 연결하면 CL=D/AUC로 추정할 수 있다. 경구 자료만으로는 이용률 F와 CL을 분리하기 어려워 CL/F가 산출될 수 있다. 노출 증가가 대사 억제인지 흡수 증가인지 해석하려면 경로와 자료가 필요하다. 반감기 증가 역시 Vd 변화 때문일 수 있으므로 청소율 감소의 단독 증거가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.b.ef1a6ca578c5",
+      "type": "paragraph",
+      "markdown": "가상 장기에서 Q=90L/h,fu×CLint=10L/h이면 CL=9L/h다. 같은 Q에서 처리 항이90L/h이면 CL=45L/h이고,무한히 커지면90L/h에 접근한다. 이 계산은 매질 기준이 같은 교육용 수지다. 실제 약물의 간청소율·신장 용량 조절·환자별 처방에는 검증된 약물 정보와 임상 측정이 필요하며 이 임의 숫자를 기준값으로 삼지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.diagram.well-stirred-extraction-example",
+      "type": "diagram",
+      "diagramRef": "diagram.well-stirred-extraction-example",
+      "path": "diagrams/diagram.well-stirred-extraction-example.svg",
+      "alt": "정맥평형 모형의 처리 능력의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.diagram.saturable-elimination-clearance",
+      "type": "diagram",
+      "diagramRef": "diagram.saturable-elimination-clearance",
+      "path": "diagrams/diagram.saturable-elimination-clearance.svg",
+      "alt": "포화 제거에서의 청소율의 독립 계산 곡선"
+    },
+    {
+      "id": "pharmacology.general.clearance-extraction-models.table.compare",
+      "type": "table",
+      "data": {
+        "title": "제거 변수",
+        "columns": [
+          "변수",
+          "단위",
+          "구별"
+        ],
+        "rows": [
+          [
+            "v",
+            "mg/h",
+            "시간당 제거량"
+          ],
+          [
+            "CL",
+            "L/h",
+            "v/C"
+          ],
+          [
+            "E",
+            "무차원",
+            "(Cin−Cout)/Cin"
+          ],
+          [
+            "CLint",
+            "L/h",
+            "모형의 내인 처리 능력"
+          ]
+        ],
+        "notes": "정의와 대표 관계를 비교한다. 실제 측정·예외·모형 조건은 본문에서 구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pharmacology/chapters/general/sections/pharmacology.general.clearance-extraction-models.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "청소율과 제거속도는 농도로 연결되며 단위가 다르다."
+  ],
+  "reviewQuestions": [
+    "question.pharmacology.general.clearance-extraction-models.001",
+    "question.pharmacology.general.clearance-extraction-models.002"
+  ],
+  "relatedLessons": [
+    "pharmacology.general.distribution-binding-models",
+    "pharmacology.general.repeated-dosing-accumulation",
+    "pharmacology.general.agonism-antagonism-curves"
+  ]
+}

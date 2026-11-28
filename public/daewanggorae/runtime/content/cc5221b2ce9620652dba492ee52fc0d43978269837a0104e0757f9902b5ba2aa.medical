@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.digestive.motility-control",
+  "subjectId": "physiology",
+  "chapterId": "digestive",
+  "title": {
+    "ko": "위장관 운동·느린파·장신경 반사",
+    "en": "Gastrointestinal Motility, Slow Waves and Enteric Reflexes"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.digestive.motility-control.lo.01",
+      "text": "느린파와 수축을 구별한다"
+    },
+    {
+      "id": "physiology.digestive.motility-control.lo.02",
+      "text": "혼합·추진·저장 기능을 비교한다"
+    },
+    {
+      "id": "physiology.digestive.motility-control.lo.03",
+      "text": "근육·간질세포·신경·호르몬 조절을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.digestive.motility-control.b.c7230c8c9d07",
+      "type": "heading",
+      "level": 2,
+      "text": "운동의 목적은 빨리 보내는 것만이 아니다"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.806434254031",
+      "type": "paragraph",
+      "markdown": "위장관 운동은 저장,분쇄·혼합,표면 접촉,구간별 추진,배출을 조절한다. 통과가 빠르면 언제나 기능이 좋아지는 것이 아니며,너무 느리거나 너무 빠른 통과 모두 소화·흡수와 증상에 영향을 줄 수 있다. 근육 수축이 관찰되었다고 반드시 내용물이 같은 방향으로 순이동한 것은 아니다. 관강의 압력 차,인접 구간과 조임근의 상태를 함께 살펴야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.6cd464259838",
+      "type": "paragraph",
+      "markdown": "위는 식사 용적을 수용하고 내용물을 혼합·분쇄하여 소장으로 전달한다. 소장은 분절운동(segmentation)으로 혼합과 접촉을 돕고 연동운동(peristalsis) 등으로 이동을 조절한다. 대장은 수분 회수와 저장,구간별 추진을 수행한다. 분절은 언제나 순이동0,연동은 언제나 같은 속도의 연속파라는 엄격한 구분보다는 대표 기능과 실제 복합 패턴을 나누어 이해한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.c515db7a9cb2",
+      "type": "heading",
+      "level": 2,
+      "text": "카할 간질세포와 느린 전기 리듬"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.c5b055f9cf78",
+      "type": "paragraph",
+      "markdown": "카할 간질세포(interstitial cells of Cajal, ICC)는 위장관의 전기적 리듬 형성과 전달에 중요하다. 느린파(slow waves)는 주기적 막전위 변동으로,평활근의 흥분·칼슘 유입과 수축이 나타날 수 있는 시간 구조를 제공한다. 장 평활근·간질세포·신경의 전기적·화학적 상호작용을 함께 보아야 한다. 모든 느린파를 운동신경에서 매번 보내는 활동전위라고 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.a3a9f1b2672c",
+      "type": "paragraph",
+      "markdown": "느린파 한 번이 반드시 같은 크기의 수축 한 번을 만든다는 뜻은 아니다. 막전위 수준과 흥분성 입력에 따라 칼슘통로 활성과 스파이크 양상,수축 강도가 달라질 수 있다. 반대로 조임근의 긴장성 수축과 모든 운동 패턴을 같은 느린파 도식에 억지로 넣지 않는다. 위장관의 부위별 전기 특성과 구강·식도의 골격근 성분 등도 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.b808f46c5895",
+      "type": "heading",
+      "level": 2,
+      "text": "장신경계는 국소 회로를 이룬다"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.bcc2e21d5edd",
+      "type": "paragraph",
+      "markdown": "근육층신경얼기(myenteric plexus)는 운동 조절과,점막밑신경얼기(submucosal plexus)는 분비·혈류 등 점막 기능과 대표적으로 연결된다. 두 계통은 완전히 독립된 회로가 아니며 감각·중간·운동 뉴런의 상호작용이 있다. 장신경계(enteric nervous system, ENS)는 국소 반사를 구성할 수 있지만 외부 자율신경·중추·호르몬의 영향도 받는다. 독립성이 있다는 말은 몸의 다른 조절과 무관하다는 뜻이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.ec7c0ba6577f",
+      "type": "paragraph",
+      "markdown": "내용물에 의한 신장·화학 신호는 구강쪽의 흥분성 운동과 항문쪽의 억제성 운동을 연결하는 반사에 관여할 수 있다. 아세틸콜린·tachykinins는 흥분성,질소산화물(NO)·VIP 등은 억제성 전달의 대표 예다. 그러나 전달물질 하나가 장 전체의 모든 부위에서 같은 최종 이동을 만든다고 고정하지 않는다. 억제성 신경은 추진을 막는 쓸모없는 신호가 아니라 앞쪽 구간을 이완시켜 이동을 가능하게 하는 데도 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.c00ac12d30ea",
+      "type": "heading",
+      "level": 2,
+      "text": "위의 저장과 배출은 다른 기능이다"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.80edca1de236",
+      "type": "paragraph",
+      "markdown": "식사 뒤 위의 수용성 이완과 적응은 큰 압력 상승 없이 용적을 수용하는 데 기여한다. 위전정부의 혼합·분쇄와 유문,십이지장의 되먹임은 배출을 조절한다. 액체와 고형물의 배출은 다를 수 있고 식사 조성·입자 크기·에너지 함량·삼투·소장 상태가 영향을 준다. 모든 식사의 배출을 하나의 고정 반감기로 나타낼 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.f574a49f178d",
+      "type": "paragraph",
+      "markdown": "가상 단일 저장고에서 내용물이 일차 속도로 배출된다고 가정하면 남은 양 Q(t)=Q0·2^(−t/H)로 쓸 수 있다. Q0=100,H=20분이면40분 뒤25가 남는다. 실제 고형 식사의 지연기·분쇄·되먹임을 포함하지 않는 모형이므로 이를 정상인의 검사 기준 곡선으로 사용하지 않는다. 그래프는 남은 양과 이미 배출된 양100−Q를 구별하는 교육용 자료다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.dead09069d95",
+      "type": "heading",
+      "level": 2,
+      "text": "식사와 공복의 운동 상태"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.3500ec4edbe9",
+      "type": "paragraph",
+      "markdown": "공복에는 이동성운동복합체(migrating motor complex, MMC)와 관련된 주기적 패턴이 나타날 수 있고 식사 후에는 운동 양상이 바뀐다. 이 변화는 흡수와 연료 상태,신경·호르몬 신호와 연결된다. Motilin 등의 역할을 배울 때에는 종별 차이와 위장관 부위를 확인해야 한다. MMC를 소장에 있는 영양소를 항상 일정 속도로 밀어내는 하나의 연동파로만 설명하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.7a46db647108",
+      "type": "paragraph",
+      "markdown": "십이지장의 산·지방·삼투 환경은 위 배출과 분비의 되먹임에 관여한다. 같은 호르몬이 분비와 운동을 함께 조절하더라도 모든 장기의 수축을 일괄적으로 증가 또는 감소시키는 단일 스위치는 아니다. 배출 속도와 흡수 속도도 동일하지 않다. 위에서 소장으로 넘어온 양과 장세포를 거쳐 혈액·림프로 출현한 양은 다른 측정이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.ee3f4a9f1643",
+      "type": "heading",
+      "level": 2,
+      "text": "전기·압력·이동을 구별하는 검사 해석"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.8cf8e9579e58",
+      "type": "paragraph",
+      "markdown": "전기 신호 기록은 리듬과 전도 상태를,압력측정은 구간의 기계적 활동을,배출·통과 검사는 실제 내용물의 이동을 묻는다. 어느 한 검사가 다른 두 가지를 완전히 대신하지 않는다. 압력이 높아도 출구가 닫혀 순유량이 작을 수 있고,전기적 리듬이 있어도 협응이 부족할 수 있다. 검사 조건·식사·약물·관찰 시간을 함께 읽어야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.b.f4389aa9984c",
+      "type": "paragraph",
+      "markdown": "운동 장애를 추론할 때에는 근육 기능,ICC 관련 리듬,장신경의 흥분·억제,자율신경과 기계적 폐색을 나누어 생각한다. 증상만으로 이들 가운데 하나를 확진하거나 교육용 지수 곡선으로 개인의 배출 이상을 판정하지 않는다. 해부학적 구간과 실제 이동 방향을 표시하고 신호·압력·내용물의 축을 구별하면 생리와 임상의 연결이 명확해진다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.digestive.motility-control.diagram.gastric-store-exponential-example",
+      "type": "diagram",
+      "diagramRef": "diagram.gastric-store-exponential-example",
+      "path": "diagrams/diagram.gastric-store-exponential-example.svg",
+      "alt": "단일 저장고의 가상 배출의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.digestive.motility-control.table.compare",
+      "type": "table",
+      "data": {
+        "title": "운동의 다른 측정",
+        "columns": [
+          "관찰",
+          "직접 질문",
+          "한계"
+        ],
+        "rows": [
+          [
+            "전기 리듬",
+            "ICC·느린파·전도",
+            "수축강도와다름"
+          ],
+          [
+            "구간 압력",
+            "기계적활동",
+            "순이동보증아님"
+          ],
+          [
+            "배출·통과",
+            "내용물이동",
+            "상피흡수와다름"
+          ],
+          [
+            "장신경 반사",
+            "흥분·억제의협응",
+            "외부조절과연결"
+          ]
+        ],
+        "notes": "위배출지수모형은실제검사·고형식지연기·참고범위를대신하지않는다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/digestive/sections/physiology.digestive.motility-control.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "느린파·수축·내용물 이동은 다른 관찰이다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.digestive.motility-control.001",
+    "question.physiology.digestive.motility-control.002"
+  ],
+  "relatedLessons": [
+    "physiology.neuro.synaptic-transmission",
+    "physiology.neuro.synaptic-integration",
+    "physiology.neuro.sensory-coding"
+  ]
+}

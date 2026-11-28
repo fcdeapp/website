@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.autonomic-transmitters",
+  "lessonId": "neuroanatomy.autonomic.central-peripheral",
+  "title": "전형적 자율신경의 전달 단계",
+  "nodes": [
+    {
+      "id": "sympre",
+      "label": "교감 절전뉴런",
+      "x": 360,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "sympost",
+      "label": "신경절 니코틴성 수용체·절후뉴런",
+      "x": 360,
+      "y": 230,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "symtarget",
+      "label": "노르에피네프린·아드레날린성 표적",
+      "x": 360,
+      "y": 380,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "parapre",
+      "label": "부교감 절전뉴런",
+      "x": 360,
+      "y": 530,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "parapost",
+      "label": "신경절 니코틴성 수용체·절후뉴런",
+      "x": 360,
+      "y": 680,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "paratarget",
+      "label": "ACh·무스카린성 표적",
+      "x": 360,
+      "y": 830,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.autonomic-transmitters.edge.1",
+      "source": "sympre",
+      "target": "sympost",
+      "relation": "directed",
+      "label": "ACh"
+    },
+    {
+      "id": "diagram.autonomic-transmitters.edge.2",
+      "source": "sympost",
+      "target": "symtarget",
+      "relation": "directed",
+      "label": "대부분"
+    },
+    {
+      "id": "diagram.autonomic-transmitters.edge.3",
+      "source": "parapre",
+      "target": "parapost",
+      "relation": "directed",
+      "label": "ACh"
+    },
+    {
+      "id": "diagram.autonomic-transmitters.edge.4",
+      "source": "parapost",
+      "target": "paratarget",
+      "relation": "directed",
+      "label": "ACh"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 780,
+      "height": 970
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 970
+      },
+      "fontSize": 22,
+      "nodes": {
+        "sympre": {
+          "x": 240,
+          "y": 80,
+          "width": 360,
+          "height": 88
+        },
+        "sympost": {
+          "x": 240,
+          "y": 230,
+          "width": 360,
+          "height": 88
+        },
+        "symtarget": {
+          "x": 240,
+          "y": 380,
+          "width": 360,
+          "height": 88
+        },
+        "parapre": {
+          "x": 240,
+          "y": 530,
+          "width": 360,
+          "height": 88
+        },
+        "parapost": {
+          "x": 240,
+          "y": 680,
+          "width": 360,
+          "height": 88
+        },
+        "paratarget": {
+          "x": 240,
+          "y": 830,
+          "width": 360,
+          "height": 88
+        }
+      },
+      "edges": {}
+    }
+  },
+  "limitations": [
+    "에크린땀샘의 콜린성 교감신경·부신속질 등 예외와 공동전달물질을 생략한 전형적 비교이다."
+  ],
+  "sourceImageUsed": false
+}

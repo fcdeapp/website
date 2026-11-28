@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.41bf760c3137",
+      "sourceSha256": "41bf760c31372c98839e5aaf8c3462184de2aa7e3983c5227961837014c117c2",
+      "sourceLengthUtf16": 254,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.eddba8efa7fd",
+      "sourceSha256": "eddba8efa7fdeb2bcf9f2dea103d144cb1f06a3f524822adc91d0a90cc7594ab",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.7a248a099b6a",
+      "sourceSha256": "7a248a099b6a54f54924affd45f44046a6eae5af33fe29df1683a752283b6dc1",
+      "sourceLengthUtf16": 237,
+      "annotations": [
+        {
+          "id": "ann.852202d5e2ae0b63cef8",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 149,
+            "end": 152,
+            "exact": "심부전",
+            "prefix": "술을 같은 순서로 적용한다는 뜻은 아니다. ",
+            "suffix": "의 형태와 허혈성·구조적 심장질환에 따라 안"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.21afa7b9b304",
+      "sourceSha256": "21afa7b9b304d9f902c0ad089d3b38e15a8e64f1a9f8107c2ab3f16b4f78baa4",
+      "sourceLengthUtf16": 243,
+      "annotations": [
+        {
+          "id": "ann.a71a4d475570d256e680",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 69,
+            "end": 107,
+            "exact": "해부학적 경계와 실제 전기적 연결, 시술 뒤 재연결은 구별해야 한다.",
+            "prefix": "맥 혈류를 막는 것이 치료 목적은 아니다. ",
+            "suffix": " 증상과 부담의 감소가 중요한 결과이지만 재"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.d383f0a63d35",
+      "sourceSha256": "d383f0a63d353268a99d695c1f0fc6cdfef1839f5cc3717c6cdd9f9688e9ce7b",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.5094cdbcbfd8",
+      "sourceSha256": "5094cdbcbfd8cea4abfa1c88ad7050e49d2f9a93ae8ca32e8ce8b03c6a86f08e",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "심방세동의 속도조절과 리듬조절",
+    "en": "Rate and Rhythm Control in Atrial Fibrillation"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.lo.01",
+      "text": "속도조절과 리듬조절의 목표를 구별한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.lo.02",
+      "text": "빈맥의 혈역학적 영향을 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.lo.03",
+      "text": "심율동전환 뒤 전기적·기계적 회복의 차이를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.12979b831a4e",
+      "type": "heading",
+      "level": 2,
+      "text": "서로 다른 치료 목표"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.41bf760c3137",
+      "type": "paragraph",
+      "markdown": "속도조절(rate control)은 주로 방실전도를 조절하여 심실 반응을 적절하게 만드는 전략이다. 심방세동 자체가 지속되어도 심실이 지나치게 빠르게 반응하는 부담을 줄일 수 있다. 리듬조절(rhythm control)은 동율동의 회복과 유지 또는 심방세동 부담의 감소를 목표로 한다. 두 전략은 증상, 심실 기능과 예후에 미치는 효과 및 위해가 다르며, 환자의 경과에 따라 함께 사용하거나 바꿀 수 있다. 혈전 예방과 동반 질환 관리도 별도로 필요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.eddba8efa7fd",
+      "type": "paragraph",
+      "markdown": "빈맥은 심실 충만 시간을 줄이고 심근 산소 수요를 높일 수 있다. 불규칙한 RR 간격에서는 이완기의 길이와 이전 박동의 칼슘 동역학이 달라져 박동별 박출량도 변한다. 심박출량이 심박수와 일회박출량의 곱이라는 관계는 맞지만, 실제 환자에서 일회박출량이 모든 속도에서 일정하다는 가정은 맞지 않는다. 심박수를 높이면 심박출량이 항상 선형으로 증가한다는 결론을 도출해서는 안 된다. 충만과 수축 기능 및 혈압 반응을 함께 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.a68fee65a40b",
+      "type": "heading",
+      "level": 2,
+      "text": "개인별 전략의 선택"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.7a248a099b6a",
+      "type": "paragraph",
+      "markdown": "증상의 정도와 지속 기간, 심방세동의 경과, 심방 크기와 심실 기능, 동반 질환 및 환자의 선호가 전략 선택에 관여한다. 최근 지침은 적절히 선택한 환자에서 조기 리듬조절의 역할을 강조하지만 모든 환자에게 하나의 약물이나 시술을 같은 순서로 적용한다는 뜻은 아니다. 심부전의 형태와 허혈성·구조적 심장질환에 따라 안전하게 사용할 수 있는 약물이 다르다. 약물의 효과뿐 아니라 서맥, 전도 지연과 심실성 부정맥 위험을 살핀다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.21afa7b9b304",
+      "type": "paragraph",
+      "markdown": "도자 절제는 흔히 폐정맥과 좌심방 사이의 전기적 연결을 표적으로 하며, 정상 폐정맥 혈류를 막는 것이 치료 목적은 아니다. 해부학적 경계와 실제 전기적 연결, 시술 뒤 재연결은 구별해야 한다. 증상과 부담의 감소가 중요한 결과이지만 재발 가능성과 반복 시술의 필요성, 합병증을 함께 설명한다. 시술을 했다는 사실만으로 모든 심방 조직의 기질이 정상으로 돌아왔다고 보지 않는다. 위험 인자와 동반 질환의 관리도 장기 결과에 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.b4233a36f147",
+      "type": "heading",
+      "level": 2,
+      "text": "심율동전환과 안전"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.d383f0a63d35",
+      "type": "paragraph",
+      "markdown": "전기적 심율동전환은 적절한 시점에 동기화한 전기 자극으로 조직화된 리듬을 회복시키려는 방법이다. 전기 신호가 동율동으로 바뀌어도 심방의 기계적 수축이 즉시 완전히 회복되는 것은 아니다. 전환 전부터 존재하던 혈전과 전환 뒤 일시적 수축 저하를 고려해야 하므로 발작 지속의 확실성, 항응고 상태와 혈전 평가 및 응급성을 함께 판단한다. 심박수가 정상으로 보인다는 이유만으로 전환 전후 예방 조치를 생략하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.b.5094cdbcbfd8",
+      "type": "paragraph",
+      "markdown": "저혈압, 의식 변화와 허혈 또는 급성 심부전 등 불안정성이 있으면 원인과 부정맥의 기여를 신속하게 평가한다. 리듬의 이름을 확인하는 작업 때문에 순환과 호흡에 필요한 처치를 지연해서는 안 된다. 안정 환자에서는 속도, 증상과 활동 능력 및 치료 부작용을 추적하여 목표를 조정한다. 속도조절의 성공, 리듬조절의 성공과 뇌졸중 예방의 성공은 서로 다른 결과이므로 각각의 근거와 추적 항목을 구분하여 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "속도조절",
+            "심실 반응 조절"
+          ],
+          [
+            "리듬조절",
+            "동율동·AF 부담 목표"
+          ],
+          [
+            "항응고",
+            "혈전색전 예방의 별도 목표"
+          ],
+          [
+            "전환 직후",
+            "전기적 회복과 기계적 회복 불일치 가능"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.diagram.fixed-sv-output-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.fixed-sv-output-toy",
+      "path": "diagrams/diagram.fixed-sv-output-toy.svg",
+      "alt": "일회박출량을 고정한 수지의 독립 계산 곡선"
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.001",
+    "question.cardiology.arrhythmias.atrial-fibrillation-rate-rhythm.002"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.atrial-fibrillation-stroke-prevention",
+    "cardiology.arrhythmias.sinus-node-dysfunction"
+  ]
+}

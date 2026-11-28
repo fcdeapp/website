@@ -1,0 +1,144 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "cardiology.ischemia.acute-coronary-syndrome",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.ff3b248e3eaa",
+      "sourceSha256": "ff3b248e3eaa537baea10a6e6941afecfcf567626161f404e9e0588fbb0e07a5",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.726ca7b5df73",
+      "sourceSha256": "726ca7b5df7355c0a4a70a36db573711f762fe5bafda46d8efe97982a6723129",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.a1d86269e470",
+      "sourceSha256": "a1d86269e470079ac801c9e94c3ffec9bb3ed7c35ee275fabb2e6d0aa6af13ac",
+      "sourceLengthUtf16": 188,
+      "annotations": [
+        {
+          "id": "ann.593a25df64d800e7499e",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 60,
+            "end": 63,
+            "exact": "심부전",
+            "prefix": "중요한 지표이다. 상승은 급성 허혈 외에도 ",
+            "suffix": "과 심근염, 심한 전신 질환 등에서 나타날 "
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.0380e4381e3cb5cec352",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 45,
+            "exact": "심장 트로포닌(cardiac troponin)은 심근세포 손상의 중요한 지표이다.",
+            "prefix": "",
+            "suffix": " 상승은 급성 허혈 외에도 심부전과 심근염,"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.24ced2f26030",
+      "sourceSha256": "24ced2f26030af1e0ba4d4043b703946503fa7df14dc03702cd12c5fd8e0a699",
+      "sourceLengthUtf16": 220,
+      "annotations": [
+        {
+          "id": "ann.8db1ee96baf6e8b36216",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 182,
+            "end": 220,
+            "exact": "검사의 이름보다 채혈 시점과 사용한 분석법, 검사실 기준이 중요하다.",
+            "prefix": "황도 기준과 변화, 증상을 함께 해석한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.0d63775668bf",
+      "sourceSha256": "0d63775668bf4a9113a32fc8c51a5a4e528cc66e85cab7d13474f5c78e79d38c",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.d24261db541a0054b6e5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 119,
+            "end": 122,
+            "exact": "당뇨병",
+            "prefix": " 및 기능 저하로 나타날 수 있다. 고령과 ",
+            "suffix": ", 의사소통의 제한 등은 표현과 인지에 영향"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        }
+      ]
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.9ed8e4ebd121",
+      "sourceSha256": "9ed8e4ebd121c1b9ce503d69d447cec51bff92262f858d5ac9bbd9f9052dbf21",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.c0dfc09eb060",
+      "sourceSha256": "c0dfc09eb0600a308375552b21cbf41f38ee18d9f37343938cf0e04842675c6c",
+      "sourceLengthUtf16": 191,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.ccf54f5c18c5",
+      "sourceSha256": "ccf54f5c18c5f43add5caf5be0393a64d93da534146770126e816a859c741b08",
+      "sourceLengthUtf16": 178,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.437da20ec486",
+      "sourceSha256": "437da20ec4863dbb33d778c26455e0e6474185fd8bd26cde3981c689df3b72e4",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.984e9c2d362b",
+      "sourceSha256": "984e9c2d362b1ab037ba73d3891b3c5bbea71c26271782a0220fcdbda80ee556",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.02ac2e6b022d",
+      "sourceSha256": "02ac2e6b022dfa3bf7b111835d94a5dfb0e16b6283a40132b5bdd5a9d06b7b71",
+      "sourceLengthUtf16": 177,
+      "annotations": []
+    },
+    {
+      "blockId": "cardiology.ischemia.acute-coronary-syndrome.b.457c9382ac9e",
+      "sourceSha256": "457c9382ac9e754aa01ccd7366ab5de9f7a1b8aea5f128ff906186ecfe04fbec",
+      "sourceLengthUtf16": 192,
+      "annotations": []
+    }
+  ]
+}

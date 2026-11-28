@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.placental-separate-streams-0851",
+  "lessonId": "obstetrics.placenta.exchange-endocrine",
+  "title": "태반의 두 혈류와 교환",
+  "nodes": [
+    {
+      "id": "mi",
+      "label": "모체 유입",
+      "x": 165,
+      "y": 80,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "ms",
+      "label": "융모사이 공간",
+      "x": 165,
+      "y": 330,
+      "width": 260,
+      "height": 92
+    },
+    {
+      "id": "mo",
+      "label": "모체 배출",
+      "x": 165,
+      "y": 600,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "fi",
+      "label": "태아측 유출",
+      "x": 535,
+      "y": 80,
+      "width": 240,
+      "height": 92
+    },
+    {
+      "id": "fs",
+      "label": "융모내 태아혈관",
+      "x": 535,
+      "y": 330,
+      "width": 280,
+      "height": 92
+    },
+    {
+      "id": "fo",
+      "label": "태아측 환류",
+      "x": 535,
+      "y": 600,
+      "width": 240,
+      "height": 92
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.placental-separate-streams-0851.e0",
+      "source": "mi",
+      "target": "ms",
+      "label": "혈액",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.placental-separate-streams-0851.e1",
+      "source": "ms",
+      "target": "mo",
+      "label": "혈액",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.placental-separate-streams-0851.e2",
+      "source": "fi",
+      "target": "fs",
+      "label": "태아→태반",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.placental-separate-streams-0851.e3",
+      "source": "fs",
+      "target": "fo",
+      "label": "태반→태아",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.placental-separate-streams-0851.e4",
+      "source": "ms",
+      "target": "fs",
+      "label": "교환",
+      "relation": "bidirectional"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 700,
+      "height": 750
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 650,
+        "height": 750
+      },
+      "fontSize": 22,
+      "nodes": {
+        "mi": {
+          "x": 153.21428571428572,
+          "y": 80,
+          "width": 220.8,
+          "height": 92
+        },
+        "ms": {
+          "x": 153.21428571428572,
+          "y": 330,
+          "width": 239.20000000000002,
+          "height": 92
+        },
+        "mo": {
+          "x": 153.21428571428572,
+          "y": 600,
+          "width": 220.8,
+          "height": 92
+        },
+        "fi": {
+          "x": 496.7857142857143,
+          "y": 80,
+          "width": 220.8,
+          "height": 92
+        },
+        "fs": {
+          "x": 496.7857142857143,
+          "y": 330,
+          "width": 257.6,
+          "height": 92
+        },
+        "fo": {
+          "x": 496.7857142857143,
+          "y": 600,
+          "width": 220.8,
+          "height": 92
+        }
+      }
+    }
+  },
+  "limitations": [
+    "서로 다른 혈류 사이 물질 교환을 나타내는 독립 개념도다. 두 혈액의 공통 내강·직접 혼합을 뜻하지 않는다.",
+    "실제 태반의 공간 배치·혈관 길이·태아 순환 전체·환자별 관류와 병변이 아니다."
+  ],
+  "sourceImageUsed": false
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.endocrine.insulin-glucagon",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.f2bdfe6b4825",
+      "sourceSha256": "f2bdfe6b4825336eba44f1867f110e41b6d9db8227b53616d0799de2bad7f9e1",
+      "sourceLengthUtf16": 243,
+      "annotations": [
+        {
+          "id": "ann.418eae0fce8a1018010f",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 75,
+            "end": 162,
+            "exact": "인슐린(insulin)과 글루카곤(glucagon)은 이 흐름을 조절하는 중요한 호르몬이지만, 혈당을 직접 붙잡아 없애거나 새로 만들어 내는 물질은 아니다.",
+            "prefix": "거나 저장되는 포도당의 균형으로 결정된다. ",
+            "suffix": " 혈중 농도는 각 장기의 유입·유출을 합친 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.b37679362a77",
+      "sourceSha256": "b37679362a77ecf2c5cecdf93379cbe89094acc06fc3a615c47f237fb02008f8",
+      "sourceLengthUtf16": 222,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.02d48ad4dabe",
+      "sourceSha256": "02d48ad4dabedfe4df8f43d12a8f9eaf2affd3e75000c116badf0e1cd692ebe4",
+      "sourceLengthUtf16": 232,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.0a8399200a30",
+      "sourceSha256": "0a8399200a30a3f150878611f4fce8054fcb54e02aabb43101ce8c1dd7b244ed",
+      "sourceLengthUtf16": 265,
+      "annotations": [
+        {
+          "id": "ann.f89623d1858062b55c62",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 186,
+            "end": 189,
+            "exact": "막전위",
+            "prefix": " 연결을 이해하려면, 원래 열린 칼륨통로가 ",
+            "suffix": "를 더 음성인 방향으로 유지한다는 사실을 함"
+          },
+          "conceptId": "reader.term.f832c1a1232ee773",
+          "targetDocumentId": "physiology.cell.membrane-potential"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.bfcdde340127",
+      "sourceSha256": "bfcdde340127205448d4b4bad584b06273685aef9802d108195ba07896d429cd",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.24c16b9c7099",
+      "sourceSha256": "24c16b9c7099b7186b630bb1057e468b98a791cf2ea9044b159afb5c5dd24fe5",
+      "sourceLengthUtf16": 226,
+      "annotations": [
+        {
+          "id": "ann.64e097b595ab4e66d6ba",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 194,
+            "end": 226,
+            "exact": "분비 때의 몰 관계와 말초 혈중 측정값의 관계를 구별한다.",
+            "prefix": "능 등 대사·제거 경로가 다르기 때문이다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.326757ff3e2f",
+      "sourceSha256": "326757ff3e2fb615fcd50f7b6b52ea5cddb8d173936ed224f4776ab2da08dbbe",
+      "sourceLengthUtf16": 200,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.83e76eb1d54f",
+      "sourceSha256": "83e76eb1d54f7db0d139880afef4be0df76bd12dab976a3ca6612f07ae9dec5b",
+      "sourceLengthUtf16": 204,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.09e9b2927b58",
+      "sourceSha256": "09e9b2927b5839b8fca50485ee40a5daf36922a9b7d2950f3a0a85c3ee202cbb",
+      "sourceLengthUtf16": 238,
+      "annotations": [
+        {
+          "id": "ann.3ec2c601639109a00e49",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 87,
+            "end": 91,
+            "exact": "글리코젠",
+            "prefix": " 동일한 기전으로 설명하지 않는다. 근육은 ",
+            "suffix": "을 주로 자신의 수축과 대사에 사용하고, 간"
+          },
+          "conceptId": "reader.term.d642b36c32690a2f",
+          "targetDocumentId": "biochemistry.carbohydrate.glycogen"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.a67f3211aa98",
+      "sourceSha256": "a67f3211aa984b42d7c57c7299009b77e546b1e1b020a0c75e3626bbb037c282",
+      "sourceLengthUtf16": 221,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.endocrine.insulin-glucagon.b.4f63a0e038be",
+      "sourceSha256": "4f63a0e038bec7df8296ed587de4e9ec0a8c54ca350f80aaca61809ca427faa9",
+      "sourceLengthUtf16": 251,
+      "annotations": []
+    }
+  ]
+}

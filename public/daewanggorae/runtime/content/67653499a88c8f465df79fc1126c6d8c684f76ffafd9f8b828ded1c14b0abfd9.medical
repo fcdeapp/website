@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pathology.cell.injury-death",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pathology.cell.injury-death.b.b35b9e89f0ab",
+      "sourceSha256": "b35b9e89f0ab3eae48ae6d3bdcb5ae768621de5578947aa54de6c80ea0d312db",
+      "sourceLengthUtf16": 281,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.injury-death.b.8a734cf29f5d",
+      "sourceSha256": "8a734cf29f5d6e8f55112e1da9d2fa8fa5189b50e6a884194f334b580fe0eb3d",
+      "sourceLengthUtf16": 314,
+      "annotations": [
+        {
+          "id": "ann.8da1e09b7e4f3ae27f53",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 31,
+            "exact": "세포가 크기나 수를 바꾸는 적응과 손상을 구분해야 한다.",
+            "prefix": "",
+            "suffix": " 비대(hypertrophy)는 개별 세포의"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.cell.injury-death.b.2d716c118680",
+      "sourceSha256": "2d716c11868037dc30674bd39747dc7d0befde8f056f9c3b54f231d81699d3a8",
+      "sourceLengthUtf16": 249,
+      "annotations": [
+        {
+          "id": "ann.85366812f673c737a44f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 7,
+            "exact": "산화적 인산화",
+            "prefix": "",
+            "suffix": "가 억제되면 ATP가 감소한다. Na+/K+"
+          },
+          "conceptId": "reader.term.5fc2ffe077b5ada0",
+          "targetDocumentId": "biochemistry.bioenergetics.oxidative-phosphorylation"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.cell.injury-death.b.06bebfc81779",
+      "sourceSha256": "06bebfc8177947b80c1554b1e2216b0f035733674f591b0e132bf8da141ae5b6",
+      "sourceLengthUtf16": 270,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.injury-death.b.ead1fb6ee472",
+      "sourceSha256": "ead1fb6ee472628df191572ae26297a35eff50910037d4363ecf14b702036a05",
+      "sourceLengthUtf16": 262,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.injury-death.b.1c459ecd0826",
+      "sourceSha256": "1c459ecd08261583347359bd2b41d7477e76a2e5efdebd13bf9debcdc7b7d23e",
+      "sourceLengthUtf16": 314,
+      "annotations": [
+        {
+          "id": "ann.32a1dd606cd5221aa7fc",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 194,
+            "end": 196,
+            "exact": "결핵",
+            "prefix": "건락괴사(caseous necrosis)는 ",
+            "suffix": " 등에서 관찰되는 부스러지는 형태를 가리키며"
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        }
+      ]
+    },
+    {
+      "blockId": "pathology.cell.injury-death.b.60fe1e759c0a",
+      "sourceSha256": "60fe1e759c0aaa7fd2ad65f8040ba2683c1f53dd402ba86a5eab441c0ca2680c",
+      "sourceLengthUtf16": 270,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.injury-death.b.7fe018ddb64e",
+      "sourceSha256": "7fe018ddb64e38f5aa942821938d14e3d8b6645487741249341165c7cfe76d4e",
+      "sourceLengthUtf16": 348,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.injury-death.b.b6a78ffffef0",
+      "sourceSha256": "b6a78ffffef020465bee7dce841aedcab23543fa4f3c35dc61295e80c8d5cb1e",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "pathology.cell.injury-death.b.dbb36bed7c23",
+      "sourceSha256": "8ed83985114887cf1f8a898fdd8783bd9e64373840673dffe6830d6eb064e991",
+      "sourceLengthUtf16": 163,
+      "annotations": [
+        {
+          "id": "ann.68435ddea22cb70b20a6",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 129,
+            "end": 163,
+            "exact": "치료의 이익과 손상 기전을 서로 다른 수준에서 구분해야 한다.",
+            "prefix": "는 혈류 회복이 필요 없다는 뜻이 아니다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    }
+  ]
+}

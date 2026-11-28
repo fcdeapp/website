@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "bacteriology.structure.mycolates-wallless",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "bacteriology.structure.mycolates-wallless.b.e0597c9d8501",
+      "sourceSha256": "e0597c9d850110058aa912e670a45feef7bfbb1a4572b4bd90256d606af5b2aa",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.mycolates-wallless.b.2f6b8395e35e",
+      "sourceSha256": "2f6b8395e35efb20390988cd611498cf827477a2f044bf6339209c36acfd0176",
+      "sourceLengthUtf16": 206,
+      "annotations": [
+        {
+          "id": "ann.c52d3ef44f39576d2e3b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 168,
+            "end": 170,
+            "exact": "결핵",
+            "prefix": " 배양·분자 동정이 필요하다. 항산 양성과 ",
+            "suffix": "균 확진을 같은 명제로 바꾸면 비결핵항산균 "
+          },
+          "conceptId": "reader.term.f88cc4999b5ca3af",
+          "targetDocumentId": "infectious-diseases.mycobacteria.tuberculosis"
+        },
+        {
+          "id": "ann.39cfdd2ee46a7a9a6dbf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 65,
+            "end": 114,
+            "exact": "염색의 양성은 외피의 성질을 보여 주지만 특정 종이나 생존성을 한 번에 확정하지 않는다.",
+            "prefix": "탈색 조건에서도 유지되는 성질을 이용한다. ",
+            "suffix": " 항산균의 종류와 검체 조건, 관찰 민감도에"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.mycolates-wallless.b.995529153b18",
+      "sourceSha256": "995529153b1855ea778fc818e5d664c71cbdabbc1f55c8d177c2cd86dea72324",
+      "sourceLengthUtf16": 195,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.mycolates-wallless.b.830138b9f42c",
+      "sourceSha256": "830138b9f42cbdcce2ddd813690a170303883a04f4212250340f7a9eafcad427",
+      "sourceLengthUtf16": 180,
+      "annotations": []
+    },
+    {
+      "blockId": "bacteriology.structure.mycolates-wallless.b.9d38d14e76c3",
+      "sourceSha256": "9d38d14e76c3a2cf7dfb07fa90aa474c623f3fac84e2814b3cc241393cf9e017",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.e92dbb138594dffa836b",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 59,
+            "end": 67,
+            "exact": "β-lactam",
+            "prefix": "룬다. 따라서 펩티도글리칸 합성을 겨냥하는 ",
+            "suffix": "의 표적이 본래 없다. 이는 약물에 노출된 "
+          },
+          "conceptId": "reader.term.fafbfe2ccab0afab",
+          "targetDocumentId": "systemic-pharmacology.antimicrobials.beta-lactams"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.mycolates-wallless.b.65aad89ce0c3",
+      "sourceSha256": "65aad89ce0c37715a07c15d7fe5d67757cdd911c7ceae795ccc653eb46c95928",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.924b473dd5c11331ba00",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 43,
+            "end": 97,
+            "exact": "일부 세균에서 벽 합성이 방해되어 생긴 상태와, 해당 계통의 정상적인 외피 특성은 구별해야 한다.",
+            "prefix": "-form은 같은 출발점을 뜻하지 않는다. ",
+            "suffix": " 막 지질에 sterol이 포함되는 Myco"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "bacteriology.structure.mycolates-wallless.b.55f75ede57ec",
+      "sourceSha256": "55f75ede57ecb67f01044bb29476cc9165eb3408a059db28f1ccd96e44062f6a",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    }
+  ]
+}

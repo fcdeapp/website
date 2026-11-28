@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.methods.mic-mbc-timekill",
+  "subjectId": "bacteriology",
+  "chapterId": "methods",
+  "title": {
+    "ko": "MIC·MBC·시간–살상 곡선",
+    "en": "MIC MBC and Time Kill Curves"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.lo.01",
+      "text": "증식 억제와 생존 감소를 구별한다"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.lo.02",
+      "text": "살상 곡선의 두 구획을 계산한다"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.lo.03",
+      "text": "관용·지속·이질내성의 감별 조건을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.d7fc543e82ef",
+      "type": "heading",
+      "level": 2,
+      "text": "성장하지 않는 것과 죽은 것"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.984d5f0232cf",
+      "type": "paragraph",
+      "markdown": "최소억제농도(minimum inhibitory concentration, MIC)는 정해진 배지·접종량·배양 조건에서 가시적 성장을 억제하는 가장 낮은 시험 농도다. 이는 모든 세포가 죽는 최저 농도와 같은 정의가 아니다. 최소살균농도(minimum bactericidal concentration, MBC)는 약물 노출 뒤 살아남아 다시 자랄 수 있는 세포의 감소를 별도 회수 과정으로 평가한다. 어떤 종말점을 썼는지 먼저 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.12e54f7a3239",
+      "type": "paragraph",
+      "markdown": "MIC는 단계적으로 시험한 농도 중 한 값을 보고하는 경우가 많다. 한 단계 차이를 무한히 정밀한 연속 농도의 차이처럼 해석하지 않는다. 접종량·배지·배양 시간과 판독 오차가 결과에 영향을 준다. 서로 다른 약물의 MIC 숫자만 나란히 놓고 작은 쪽이 언제나 더 좋은 치료라고 결론 내릴 수 없는 이유도 약물 노출과 표적, 해석 기준이 다르기 때문이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.e8df139f0866",
+      "type": "heading",
+      "level": 2,
+      "text": "시간을 더하면 보이는 현상"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.04db52308a5b",
+      "type": "paragraph",
+      "markdown": "Time-kill 실험은 노출 시간에 따라 회수 가능한 생균이 얼마나 남는지 본다. 동일 MIC를 가진 두 집단에서도 죽는 속도는 다를 수 있다. 가상 일차 감소에서 N/N0=e^(−kt)라면 ln(N/N0)의 시간 기울기는 −k다. k가 작을수록 같은 노출 시간에 더 많이 남는다. 이 식의 k는 명시한 조건의 교육용 상수이며 실제 약물의 표준 살균 속도가 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.00cc81cd7f8e",
+      "type": "paragraph",
+      "markdown": "두 상태의 합을 가정하면 N/N0=(1−f)e^(−k1t)+fe^(−k2t)로 쓸 수 있다. f는 처음의 느린 집단 비율이고 k1과 k2는 각 집단의 감소상수다. 처음에는 빠른 집단이 곡선을 지배하고 시간이 지나면 느린 집단이 남아 꼬리를 만든다. 꼬리가 생겼다는 모양만으로 특정 휴면 유전자나 임상 치료 기간을 계산할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.e179792d68f6",
+      "type": "heading",
+      "level": 2,
+      "text": "같은 생존의 다른 원인"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.f8a01ddac290",
+      "type": "paragraph",
+      "markdown": "관용은 억제 농도의 증가 없이 살상이 느려지는 현상으로 구별할 수 있다. Persistence는 집단의 일부가 상대적으로 오래 남는 이질적인 관용 반응과 관련된다. Heteroresistance에서는 집단의 일부가 더 높은 농도에서 증식할 수 있어 질문 자체가 다르다. 살아남은 세포의 존재만으로 세 현상을 같은 이름으로 묶지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.e3055543954b",
+      "type": "paragraph",
+      "markdown": "일부 생존 세포를 다시 키워 MIC와 반복 노출 반응을 확인하면 안정적인 내성 변이가 선택되었는지 좁힐 수 있다. 약물이 시간에 따라 분해되거나 세포가 뭉쳐 보호되었을 가능성도 대조한다. 일시적 생리 상태와 유전적 경향은 완전히 상호 배타적이지 않다. 집단의 지속 빈도에 영향을 주는 유전적 배경이 있을 수 있어 관용을 유전자가 전혀 관여하지 않는 현상으로 정의하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.63776c7ba0ff",
+      "type": "heading",
+      "level": 2,
+      "text": "회수 검사의 함정"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.ec9391f5e891",
+      "type": "paragraph",
+      "markdown": "약물이 남은 채로 배양하면 원래 노출이 끝난 뒤에도 살상이 이어져 생존량이 낮게 측정될 수 있다. 반대로 세척과 희석 중 세포가 소실되면 회수 과정이 결과를 바꾼다. 중화와 회수 대조는 이런 기술적 원인을 나눈다. CFU의 검출 한계 아래를 절대적인 전멸로 표시하지 않고 검사 부피와 한계를 기록해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.b.58f716147556",
+      "type": "paragraph",
+      "markdown": "임상 결과에는 감염 부위의 유효 노출과 숙주 면역, 농양이나 이물 같은 감염원이 더해진다. 시험관에서 살상이 빠르다는 사실만으로 환자에서 더 우수한 치료를 보장할 수는 없다. 약물의 생물학적 성질과 환자의 실제 조건을 연결하려면 감수성·약동학·약력학·감염원 조절을 함께 보아야 한다. 검사 수치의 정의를 엄밀히 읽는 것이 그 출발점이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.diagram.bacteria-kill-rate-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.bacteria-kill-rate-toy",
+      "path": "diagrams/diagram.bacteria-kill-rate-toy.svg",
+      "alt": "같은 억제와 다른 생존 속도의 독립 계산 곡선"
+    },
+    {
+      "id": "bacteriology.methods.mic-mbc-timekill.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "MIC",
+            "정해진 조건의 가시적 성장 억제"
+          ],
+          [
+            "MBC",
+            "회수 생존 감소의 별도 종말점"
+          ],
+          [
+            "관용",
+            "억제 농도와 다른 살상 속도"
+          ],
+          [
+            "Persistence",
+            "일부 집단의 이질적 관용 반응"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/methods/sections/bacteriology.methods.mic-mbc-timekill.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.methods.mic-mbc-timekill.001",
+    "question.bacteriology.methods.mic-mbc-timekill.002"
+  ],
+  "relatedLessons": [
+    "bacteriology.genetics.mobile-elements-integrons",
+    "bacteriology.methods.susceptibility-interpretation"
+  ]
+}

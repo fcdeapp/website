@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "hepatology.cirrhosis.portal-hypertension",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.6daf2cf574b6",
+      "sourceSha256": "6daf2cf574b629132c84e6ca7a958317423b69d6d44dfd05e8efff0f186720aa",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.866c32e3a893",
+      "sourceSha256": "866c32e3a8932408f94866873c0edfc7f3bd624bcab6cddc7bd6d7367b964425",
+      "sourceLengthUtf16": 211,
+      "annotations": [
+        {
+          "id": "ann.f33706908c22aba1b788",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 150,
+            "end": 211,
+            "exact": "문맥고혈압은 간경변 외의 앞·뒤 문맥계 또는 혈관 질환에서도 생길 수 있어 혈류 경로에 따라 원인을 구분한다.",
+            "prefix": "서도 중요한 문맥고혈압이 존재할 수 있다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.c3e1ad402b0a",
+      "sourceSha256": "c3e1ad402b0a023e768f8e9784903e301e3ee14eccbb5b6196f48062a529a8ac",
+      "sourceLengthUtf16": 227,
+      "annotations": [
+        {
+          "id": "ann.5c9158c3a4dcdf7124bf",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 61,
+            "end": 115,
+            "exact": "복수와 정맥류 출혈, 간성뇌증 등 비보상을 나타내는 사건은 예후와 관리 전략에 중요한 전환점이다.",
+            "prefix": " 문맥고혈압과 장기 위험은 남을 수 있다. ",
+            "suffix": " 원인 제거와 질환 조절로 경과가 달라질 수"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.69589a6e6661",
+      "sourceSha256": "69589a6e66610724dcf97cef1319251fc385f9ac12d81ce8f7762568b1b3d9ae",
+      "sourceLengthUtf16": 186,
+      "annotations": [
+        {
+          "id": "ann.f46d8fbf01e3ccf1e414",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 141,
+            "end": 186,
+            "exact": "비침습적 검사로 평가할 수 있는 범위와 조직검사가 답할 수 있는 질문을 구분한다.",
+            "prefix": " 원인검사를 임상 상황에 맞추어 결합한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.e50a7126f367",
+      "sourceSha256": "e50a7126f3670aae9ce876d8d2306412a49ad7cfbbee705a2d78f45698463903",
+      "sourceLengthUtf16": 211,
+      "annotations": [
+        {
+          "id": "ann.d5998b00e4ab29fb39ea",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 112,
+            "end": 116,
+            "exact": "RAAS",
+            "prefix": "백질 저하 하나로 모두 설명할 수는 없다. ",
+            "suffix": "와 교감신경, 바소프레신 반응은 나트륨과 수"
+          },
+          "conceptId": "reader.term.9a257c716be9894a",
+          "targetDocumentId": "physiology.renal.raas"
+        },
+        {
+          "id": "ann.63b623c7d3f84db8378f",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 124,
+            "end": 129,
+            "exact": "바소프레신",
+            "prefix": " 설명할 수는 없다. RAAS와 교감신경, ",
+            "suffix": " 반응은 나트륨과 수분 처리를 바꾸고 저나트"
+          },
+          "conceptId": "reader.term.df6b37a2afc65475",
+          "targetDocumentId": "physiology.renal.urine-concentration"
+        }
+      ]
+    },
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.e966a839f20e",
+      "sourceSha256": "e966a839f20ee25641cb36582f19fe75deb577d2d0f43493ee9b4994b840e5a0",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.b7d6b35494aa",
+      "sourceSha256": "b7d6b35494aa3519855d723b99a322eb5271d2a2a9978eb06a2a226fc24dd268",
+      "sourceLengthUtf16": 208,
+      "annotations": []
+    },
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.564f07a0a355",
+      "sourceSha256": "564f07a0a3558d1d7b7d6a0da86245d6c186596823b6f512397d95af767b3953",
+      "sourceLengthUtf16": 199,
+      "annotations": []
+    },
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.8884fad0a147",
+      "sourceSha256": "8884fad0a1472a74db97074f9ebb1af47da942976e36651243769a3a93a0a649",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "hepatology.cirrhosis.portal-hypertension.b.95eeb19c746f",
+      "sourceSha256": "95eeb19c746f7aa86d785336fe91f4be0a7b04aceddc74203d386bca9a7b3f9e",
+      "sourceLengthUtf16": 230,
+      "annotations": []
+    }
+  ]
+}

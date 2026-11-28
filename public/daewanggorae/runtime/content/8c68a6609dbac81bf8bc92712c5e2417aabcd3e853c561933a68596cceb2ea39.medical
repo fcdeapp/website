@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.arrhythmias.avnrt",
+  "subjectId": "cardiology",
+  "chapterId": "arrhythmias",
+  "title": {
+    "ko": "방실결절 회귀성 빈맥",
+    "en": "Atrioventricular Nodal Reentrant Tachycardia"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.arrhythmias.avnrt.lo.01",
+      "text": "이중 방실결절 생리와 일방향 차단의 관계를 설명한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.lo.02",
+      "text": "심방과 심실의 활성화 시점으로 심전도를 해석한다"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.lo.03",
+      "text": "빈맥 종료 반응과 확진을 구별한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.arrhythmias.avnrt.b.b27cf9f710c0",
+      "type": "heading",
+      "level": 2,
+      "text": "빠른 경로와 느린 경로"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.b.c37352218637",
+      "type": "paragraph",
+      "markdown": "방실결절 회귀성 빈맥(atrioventricular nodal reentrant tachycardia, AVNRT)은 방실결절과 그 주변의 기능적으로 다른 전도 특성이 회귀를 지지하여 생기는 빈맥이다. 빠른 경로(fast pathway)는 상대적으로 빠르게 전도하지만 불응기가 길고, 느린 경로(slow pathway)는 전도가 느리지만 불응기가 짧은 전형적 관계를 보인다. 두 경로는 해부학적으로 완전히 분리된 두 전선이라는 뜻이 아니다. 세포의 배열과 접속, 결절 주변 조직의 이질성이 기능적 경로를 형성한다. 따라서 정상 육안해부학 모델에 두 선을 그려 놓고 실제 전도 조직이 직접 보인다고 설명해서는 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.b.18bf8935947f",
+      "type": "paragraph",
+      "markdown": "정상 동성 자극이 도달하면 두 경로가 모두 활성화될 수 있지만 빠른 경로의 파가 먼저 아래쪽으로 도달한다. 느린 경로를 통해 내려오던 파는 이미 활성화된 조직과 만나 소멸할 수 있다. 충분히 이른 심방 조기 자극이 도달하면 아직 회복되지 않은 빠른 경로에서는 순방향 전도가 막히고, 더 짧은 불응기를 가진 느린 경로를 통해서만 내려갈 수 있다. 느린 전도에 걸린 시간 동안 빠른 경로가 회복되면 파가 이를 거슬러 올라갈 여지가 생긴다. 회복된 조직에 다시 도달하는 시공간적 조건이 회귀의 핵심이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.b.3be1ce528d10",
+      "type": "heading",
+      "level": 2,
+      "text": "전형적 회로와 표면 심전도"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.b.53f8b72fc833",
+      "type": "paragraph",
+      "markdown": "흔한 느림–빠름형(slow–fast) AVNRT에서는 느린 경로가 순방향, 빠른 경로가 역방향 전도에 참여한다. 심방과 심실이 거의 동시에 활성화될 수 있어 역행성 P파가 QRS 안에 숨어 보이지 않거나 QRS 끝부분을 조금 변형한다. 일부 유도에서 가성 r′ 또는 가성 S처럼 관찰되는 이유가 여기에 있다. 그러나 이런 작은 변형은 기저 심전도, 잡음과 전극 위치의 영향을 받는다. 한 유도의 작은 돌기만으로 기전을 확정하지 않고 빈맥 전후의 QRS와 여러 유도를 비교한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.b.d7cf9c371d92",
+      "type": "paragraph",
+      "markdown": "비전형적 회귀에서는 순방향과 역방향의 상대적 지연이 달라 긴 RP 간격이 나타날 수 있다. 따라서 짧은 RP가 AVNRT의 필수 정의도 아니고, 긴 RP가 곧 심방빈맥이라는 뜻도 아니다. RP와 PR의 관계는 가능한 회로를 줄이는 단서다. 심방과 심실은 관찰 가능한 출력이며, 전형적 AVNRT의 핵심 회로가 반드시 심실 전체를 통과해야 하는 것은 아니다. 이 점이 심방과 심실을 잇는 부전도로가 필수적으로 포함되는 방실회귀성 빈맥과의 중요한 차이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.b.680130347499",
+      "type": "heading",
+      "level": 2,
+      "text": "관찰에서 치료 표적으로"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.b.0689e408509c",
+      "type": "paragraph",
+      "markdown": "규칙적인 좁은 QRS 빈맥에서 방실결절 전도를 일시적으로 늦추는 조작 뒤 빈맥이 끝났다면 방실결절 의존성 회귀를 지지한다. 그러나 자극에 대한 다른 빈맥의 반응과 종료 시점을 함께 보아야 하므로 종료 여부 하나가 AVNRT의 독점적 증거는 아니다. 발작성 빈맥의 갑작스러운 시작과 끝, P파와 QRS의 시간 관계, 기저 조기흥분 여부를 통합하며, 필요한 경우 전기생리검사에서 심장 내부 신호와 자극 반응으로 회로를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.b.5c76a9d55d34",
+      "type": "paragraph",
+      "markdown": "반복 증상으로 생활이 제한되는 환자에서는 약물 억제와 도자 절제술(catheter ablation)의 이득과 위험을 비교한다. 느린 경로의 전도 특성을 조절하는 절제는 회귀가 유지될 조건을 바꾸는 접근이다. 방실결절과 가까운 위치를 다루므로 정상 전도 손상 가능성도 설명해야 한다. 시술 뒤 증상이 사라지는 것과 모든 종류의 미래 부정맥이 없어지는 것은 별개다. 실신이나 저관류가 동반되면 기전 이름을 붙이는 과정과 동시에 현재의 혈역학적 위험을 평가한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.arrhythmias.avnrt.table.0828",
+      "type": "table",
+      "data": {
+        "title": "기전과 관찰을 구별하는 기준",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "빠른 경로",
+            "상대적으로 빠른 전도·긴 불응기"
+          ],
+          [
+            "느린 경로",
+            "상대적으로 느린 전도·짧은 불응기"
+          ],
+          [
+            "전형적 회귀",
+            "느린 순방향·빠른 역방향"
+          ],
+          [
+            "P파",
+            "QRS 안 또는 끝에 겹칠 수 있음"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/arrhythmias/sections/cardiology.arrhythmias.avnrt.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.arrhythmias.avnrt.001"
+  ],
+  "relatedLessons": [
+    "cardiology.arrhythmias.narrow-complex-differential",
+    "cardiology.arrhythmias.avrt-preexcitation"
+  ]
+}

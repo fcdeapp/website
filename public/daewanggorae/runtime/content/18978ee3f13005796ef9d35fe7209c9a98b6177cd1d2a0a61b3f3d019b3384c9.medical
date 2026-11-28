@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.neuro.synaptic-integration",
+  "subjectId": "physiology",
+  "chapterId": "neuro",
+  "title": {
+    "ko": "시냅스후 전류와 신경세포의 입력 통합",
+    "en": "Postsynaptic Currents and Neuronal Integration"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.neuro.synaptic-integration.lo.01",
+      "text": "역전전위·구동력·발화 문턱을 구별한다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.lo.02",
+      "text": "전도도 증가와 분로억제를 설명한다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.lo.03",
+      "text": "입력저항·시정수·합산의 관계를 계산한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.neuro.synaptic-integration.b.61c38fb2caa6",
+      "type": "heading",
+      "level": 2,
+      "text": "전류의 방향은 막전위와 역전전위의 차이에 달린다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.0aa2f443a350",
+      "type": "paragraph",
+      "markdown": "단순한 시냅스 통로 모형에서 전류는 I_syn=g_syn(V_m−E_syn)으로 쓴다. g_syn은 전도도, V_m은 막전위, E_syn은 순전류가0이 되는 역전전위(reversal potential)다. 이 식에서는 바깥 방향의 양전하 전류를 양수로 정한다. 통로가 열렸다는 사실만으로 전류 크기와 방향이 정해지지 않으며,전도도와 구동력을 함께 알아야 한다. 여러 이온이 통과하는 수용체의 역전전위를 한 이온의 Nernst 전위와 언제나 같다고 놓지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.43ef33645611",
+      "type": "paragraph",
+      "markdown": "예를 들어 g=0.1µS,E_syn=−70mV,V_m=−60mV이면 I_syn=+1nA다. µS와mV의 곱이nA임을 확인한다. 같은 전도도라도 V_m=−70mV이면 순전류는0이다. 그러나 이때 통로가 닫혔다고 결론 내릴 수 없다. 열린 통로의 전도도가 다른 입력에 대한 전압 반응을 바꿀 수 있기 때문이다. 전류가0이라는 관찰과 전도도가0이라는 상태는 다르다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.6902991ba391",
+      "type": "heading",
+      "level": 2,
+      "text": "흥분과 억제는 발화 가능성의 변화다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.a1c73fb032e1",
+      "type": "paragraph",
+      "markdown": "흥분성·억제성이라는 말은 입력이 발화에 미치는 기능적 영향을 나타낸다. 보통 역전전위가 발화 문턱보다 충분히 양성이면 흥분을,문턱보다 낮으면 억제를 이해하는 출발점이 된다. 하지만 실제 효과에는 입력 위치와 시간,전압 의존 통로와 다른 입력도 중요하다. 막을 조금 탈분극시켰다는 한 사실만으로 최종 발화가 늘었다고 단정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.d00556ecf9a6",
+      "type": "paragraph",
+      "markdown": "GABA 관련 역전전위가 휴지전위보다 약간 양성이지만 발화 문턱보다 낮다면 탈분극과 억제가 함께 나타날 수 있다. 세포 내 염화물 조절과 중탄산의 기여,발달·질환 상태에 따라 반응이 달라질 수 있다. 억제성 입력은 반드시 큰 음의 전위로 보인다는 도식은 불충분하다. 발화 확률,입력저항,다른 흥분성 입력의 전달을 함께 살펴야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.97d922f0b51c",
+      "type": "heading",
+      "level": 2,
+      "text": "전도도가 커지면 같은 전류의 전압 효과가 작아진다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.c211608342c4",
+      "type": "paragraph",
+      "markdown": "수동 일구획 근사에서 입력저항 R_in은 총전도도 G_total의 역수다. 외부에서 작은 일정 전류 I를 넣었을 때 정상상태 전압 변화는 ΔV=I/G_total이다. 원래 전도도가10nS이고 추가 전도도가10nS 열리면 총전도도는20nS가 된다. I=10pA에 대한 변화는1mV에서0.5mV로 줄어든다. 전도도의 합은 병렬 통로의 합이며 저항을 단순히 더하는 것이 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.873b6b719208",
+      "type": "paragraph",
+      "markdown": "이런 효과를 분로억제(shunting inhibition)와 연결할 수 있다. 추가 통로의 역전전위가 원래 막전위에 가까우면 그 통로 자체는 큰 전압 변화를 만들지 않으면서 흥분성 전류가 만드는 전압 변화를 줄일 수 있다. 단,입력 위치·능동 통로·시냅스 시간 경과가 있는 실제 뉴런에서 억제를 언제나 일정한 나눗셈 연산 하나로 표현할 수는 없다. 단순 수동 모형의 유용성과 적용 한계를 함께 기억한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.063ff241e404",
+      "type": "heading",
+      "level": 2,
+      "text": "시정수는 신호가 겹칠 시간을 바꾼다"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.a21bcdb2ac99",
+      "type": "paragraph",
+      "markdown": "막의 수동 시정수(time constant)는 τ=C_m/G_total=R_inC_m이다. C_m=100pF,G_total=10nS이면 τ=10ms이고,전도도가20nS가 되면5ms다. 전도도 증가로 전압 반응이 작아지는 것과 더 빠르게 변하고 사라지는 것은 연결된 효과다. 전압 반응이 오래 남으면 가까운 시간의 입력이 겹치기 쉽고,빠르게 사라지면 더 짧은 시간 창의 동시 입력이 중요해질 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.37055ec27c51",
+      "type": "paragraph",
+      "markdown": "시정수와 통로가 실제로 열려 있는 시간은 같은 값이 아니다. 시냅스 전도도가 짧게 변한 뒤에도 막의 충전·방전과 수상돌기 전달 때문에 전위 변화가 더 오래 관찰될 수 있다. 또한 실제 신경세포에는 여러 전기적 구획과 시정수가 존재한다. 한 번의 지수 적합에서 얻은 값이 모든 위치·상태에 고정된 세포 고유 상수라고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.b7285619f7c6",
+      "type": "heading",
+      "level": 2,
+      "text": "시간·공간 합산과 수상돌기의 역할"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.9ebde4860772",
+      "type": "paragraph",
+      "markdown": "시간 합산(temporal summation)은 앞선 전위 변화가 남아 있을 때 다음 입력이 더해지는 현상이다. 공간 합산(spatial summation)은 다른 위치에서 들어온 입력이 통합되는 현상이다. 수상돌기의 전기적 길이와 분지,입력 위치에 따라 세포체에서 보이는 크기가 달라진다. 시냅스 근처의 큰 반응이 세포체에서는 작고 느리게 보일 수 있어,기록 진폭만으로 모든 시냅스의 국소 강도를 비교하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.deb0fc6cf988",
+      "type": "paragraph",
+      "markdown": "동시에 열린 시냅스가 반드시 단독 전위 두 개의 산술합을 만드는 것은 아니다. 막전위가 역전전위에 가까워지면 구동력이 줄고,전도도 증가가 다른 입력의 효과를 바꾼다. 반대로 전압 의존 칼슘·나트륨 통로나 NMDA 반응 등이 국소 비선형 증폭을 만들 수도 있다. 선형 합산은 작은 수동 반응의 근사이며 모든 수상돌기 계산의 법칙은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.0e2f7db2bcdb",
+      "type": "heading",
+      "level": 2,
+      "text": "측정 모드와 결론의 범위를 맞추기"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.327d3bc0c968",
+      "type": "paragraph",
+      "markdown": "전압고정(voltage clamp)은 막전위를 지정하고 필요한 전류를 측정하는 방식이며,전류고정(current clamp)은 전류를 주거나 고정한 상태에서 전압 변화를 읽는다. 같은 입력도 두 방식에서 관찰하는 양이 다르다. 실제 전압고정에서는 먼 수상돌기까지 완벽히 같은 전위가 유지되지 않을 수 있는 공간고정 한계를 고려해야 한다. 실험 조건을 생략한 전류–전압 그림은 해석하기 어렵다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.b.320a325f4425",
+      "type": "paragraph",
+      "markdown": "신경계의 억제를 이해하려면 전달물질 이름,역전전위,막의 저항·용량,입력 위치와 발화 결과를 나누어 묻는다. 한 약물 투여 뒤 전위가 더 양성이 되었다고 흥분성 효과가 확정되거나,큰 과분극이 없다고 억제가 없다고 결론 내리지 않는다. 구조화된 변수 표와 단위를 먼저 정리하면 전류의 부호와 생물학적 기능을 혼동하는 오류를 줄일 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.diagram.synaptic-current-reversal",
+      "type": "diagram",
+      "diagramRef": "diagram.synaptic-current-reversal",
+      "path": "diagrams/diagram.synaptic-current-reversal.svg",
+      "alt": "전도도 고정의 전류–전압의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.diagram.shunt-conductance-response",
+      "type": "diagram",
+      "diagramRef": "diagram.shunt-conductance-response",
+      "path": "diagrams/diagram.shunt-conductance-response.svg",
+      "alt": "추가 전도도와 작은 전류 반응의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.neuro.synaptic-integration.table.compare",
+      "type": "table",
+      "data": {
+        "title": "전류·전도도·시정수",
+        "columns": [
+          "양",
+          "관계",
+          "단위 예"
+        ],
+        "rows": [
+          [
+            "구동력",
+            "Vm−E",
+            "mV"
+          ],
+          [
+            "전류",
+            "g(Vm−E)",
+            "µS·mV=nA"
+          ],
+          [
+            "입력저항",
+            "1/G",
+            "nS의역수"
+          ],
+          [
+            "시정수",
+            "C/G",
+            "pF/nS=ms"
+          ],
+          [
+            "작은전압반응",
+            "I/G",
+            "pA/nS=mV"
+          ]
+        ],
+        "notes": "전류부호는바깥양전하전류를양으로정하며단위·발화효과를구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/neuro/sections/physiology.neuro.synaptic-integration.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "순전류가0이어도 통로의 전도도는0이 아닐 수 있다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.neuro.synaptic-integration.001",
+    "question.physiology.neuro.synaptic-integration.002"
+  ],
+  "relatedLessons": [
+    "physiology.neuro.synaptic-transmission",
+    "physiology.neuro.sensory-coding",
+    "physiology.digestive.carbohydrate-absorption"
+  ]
+}

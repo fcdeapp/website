@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bacteriology.virulence.iron-acquisition",
+  "subjectId": "bacteriology",
+  "chapterId": "virulence",
+  "title": {
+    "ko": "철 획득과 영양면역의 경쟁",
+    "en": "Iron Acquisition and Nutritional Immunity"
+  },
+  "learningObjectives": [
+    {
+      "id": "bacteriology.virulence.iron-acquisition.lo.01",
+      "text": "철 제한의 방어 기능을 설명한다"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.lo.02",
+      "text": "Siderophore와 수용체 수송을 연결한다"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.lo.03",
+      "text": "성장 복원 실험의 인과 한계를 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.f21c52fc25b1",
+      "type": "heading",
+      "level": 2,
+      "text": "풍부하지만 자유롭지 않은 원소"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.1a7d4f731c31",
+      "type": "paragraph",
+      "markdown": "철은 여러 산화환원 효소와 생합성에 중요하지만 숙주에서 자유롭게 이용 가능한 양은 제한된다. Transferrin과 lactoferrin, heme 관련 결합은 철의 위치와 이용 가능성을 조절한다. 총 철이 존재한다는 사실과 미생물이 사용할 수 있는 철이 충분하다는 사실은 다르다. 숙주의 영양면역(nutritional immunity)은 이런 필수 자원의 접근을 제한하는 방어 전략과 관련된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.1fd65afff5d1",
+      "type": "paragraph",
+      "markdown": "숙주는 철을 무조건 낮추기만 하면 항상 이익을 얻는 것이 아니다. 철은 숙주 세포의 기능에도 필요하고 과도한 자유 철은 산화 손상에 기여할 수 있다. 미생물과 숙주가 서로 다른 구획에서 철을 이용하므로 혈액의 한 지표를 감염 부위의 모든 가용 철과 동일시하지 않는다. 염증 중 철 지표가 달라지는 현상도 생성·운반·저장·분포의 관계에서 해석해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.aad3e23c7673",
+      "type": "heading",
+      "level": 2,
+      "text": "철을 모으는 분자"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.aaef5ef50b8d",
+      "type": "paragraph",
+      "markdown": "Siderophore는 철과 결합하여 미생물의 획득을 돕는 작은 분자 계통이다. 철을 붙잡는 능력과 그 복합체를 세포 안으로 운반하는 능력은 별도 단계다. 어떤 균은 자신이 만든 분자를 이용하고 다른 균이 만든 복합체를 활용할 수도 있다. 모든 균이 하나의 siderophore와 하나의 수용체만 가진다고 생각하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.3fd892cb5d6e",
+      "type": "paragraph",
+      "markdown": "그람음성균에서는 외막 수용체와 에너지 전달, 이후 내막 수송이 연결될 수 있다. TonB 관련 계통은 일부 외막 수송을 막의 에너지 상태와 연결한다. 철 결합 분자가 바깥에 많이 생겼어도 수용체가 없거나 전달이 막히면 내부 공급이 부족할 수 있다. 따라서 배양액의 siderophore 양과 세포 내부 철 이용을 같은 종말점으로 처리하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.51a2fe162330",
+      "type": "heading",
+      "level": 2,
+      "text": "다른 획득 경로와 숙주 대응"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.2d16bc4e14ed",
+      "type": "paragraph",
+      "markdown": "일부 세균은 heme나 숙주 철 결합 단백질을 활용하는 경로를 가진다. 표적 단백질의 종류와 숙주 특이성은 조직 정착과 관련될 수 있다. 숙주는 일부 siderophore를 결합하여 이용을 제한하는 단백질을 제공할 수 있고 미생물은 다른 구조나 경로를 이용할 수 있다. 하나의 획득계를 막았다고 모든 철 공급이 사라진다고 가정하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.f62bf68fd9ef",
+      "type": "paragraph",
+      "markdown": "철 조절 단백질은 외부 철 이용 가능성에 따라 획득 유전자의 발현을 조정한다. 조건에 따라 독소와 대사, 산화 스트레스 반응도 함께 달라질 수 있다. 철 제한에서 성장률이 낮아졌다는 결과는 단순한 영양 부족 외에 광범위한 발현 변화를 포함할 수 있다. 유전자 발현 증가가 곧 실제 운반량 증가와 같은 뜻은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.ab26fcf0fde6",
+      "type": "heading",
+      "level": 2,
+      "text": "결손과 복원으로 원인 좁히기"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.d8099b3f6fa3",
+      "type": "paragraph",
+      "markdown": "가상 균주에서 siderophore 합성 유전자를 없앴더니 철 제한 조건에서 성장하지 못하고 유전자를 복원하자 회복되었다면 해당 경로의 기여를 지지한다. 이때 다른 영양 조건과 성장 배경이 같았는지 확인한다. 철을 추가해 성장한 경우에도 고농도 철이 여러 경로를 우회했을 수 있어 원래 수송 단계가 직접 입증된 것은 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.b.99eac74e09fd",
+      "type": "paragraph",
+      "markdown": "단순 포화 모형 v=Vmax·F/(K+F)에서 F는 이용 가능한 철, K는 반최대 속도의 가상 상수다. 같은 Vmax에서 K가 커지면 낮은 F에서 획득이 줄어든다. 이는 농도와 운반의 관계를 보여 주는 교육용 함수이며 특정 균의 실제 상수나 환자 철 보충의 처방식이 아니다. 결합·수송·성장과 숙주의 안전성을 서로 다른 수준으로 구별해야 분자 기전을 임상 의미에 과도하게 확대하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.diagram.bacteria-iron-uptake-toy",
+      "type": "diagram",
+      "diagramRef": "diagram.bacteria-iron-uptake-toy",
+      "path": "diagrams/diagram.bacteria-iron-uptake-toy.svg",
+      "alt": "가용 철과 가상 획득 속도의 독립 계산 곡선"
+    },
+    {
+      "id": "bacteriology.virulence.iron-acquisition.table.0825",
+      "type": "table",
+      "data": {
+        "title": "구조·과정·검출 대상의 구분",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "총 철",
+            "결합·위치를 포함한 전체 양"
+          ],
+          [
+            "가용 철",
+            "해당 미생물이 접근 가능한 부분"
+          ],
+          [
+            "Siderophore",
+            "결합·포획 기능"
+          ],
+          [
+            "수용체·수송",
+            "복합체의 내부 획득 단계"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/04-immunity-infection/subjects/bacteriology/chapters/virulence/sections/bacteriology.virulence.iron-acquisition.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.bacteriology.virulence.iron-acquisition.001",
+    "question.bacteriology.virulence.iron-acquisition.002"
+  ],
+  "relatedLessons": [
+    "bacteriology.control.log-reduction-validation"
+  ]
+}

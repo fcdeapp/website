@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "physiology.renal.filtration",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "physiology.renal.filtration.b.73a8850056e4",
+      "sourceSha256": "73a8850056e410d54a5209a6060dbb4085ac46bc82ae39a41b9c0d7595d27f53",
+      "sourceLengthUtf16": 266,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.filtration.b.63f2a0d080b0",
+      "sourceSha256": "63f2a0d080b0c2c45f873e222ab3c30909ce185cdbbe3a320a3e62cb06f95add",
+      "sourceLengthUtf16": 252,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.filtration.b.5d79a8ea332b",
+      "sourceSha256": "5d79a8ea332bdf021a1d76d117c5199bcb2393c93c7f7c997aa68eb255ad892f",
+      "sourceLengthUtf16": 244,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.filtration.b.1d93fb4d6bfd",
+      "sourceSha256": "1d93fb4d6bfd824f776f7bbb5ea105ccc60da2a851fac4a3b17fd4af93a5c3c1",
+      "sourceLengthUtf16": 251,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.filtration.b.a7d2e7e7de97",
+      "sourceSha256": "a7d2e7e7de974d2d792cb8f6bb0ff5cdef8f9c8f8bf77e83427532b092894eda",
+      "sourceLengthUtf16": 301,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.filtration.b.af28c6a0fd99",
+      "sourceSha256": "af28c6a0fd9964544b604264853b7aa0f36aa646cc4e9b610ec8600d574b93ce",
+      "sourceLengthUtf16": 255,
+      "annotations": []
+    },
+    {
+      "blockId": "physiology.renal.filtration.b.2a38e095cd0a",
+      "sourceSha256": "2a38e095cd0abf6468534f0d3d457eba5c4def9c7ad0a9e9a85cf7d31e6b9500",
+      "sourceLengthUtf16": 282,
+      "annotations": [
+        {
+          "id": "ann.d016813eb71114181780",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 186,
+            "end": 234,
+            "exact": "혈청 크레아티닌을 이용한 추정 GFR은 별도의 방정식이며 직접 측정값과 구분해야 한다.",
+            "prefix": "율은 GFR을 약간 높게 추정할 수 있다. ",
+            "suffix": " 급격히 신기능이 변할 때는 혈중 농도가 정"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.filtration.b.434b91e5ff87",
+      "sourceSha256": "434b91e5ff8740e40b7bc0bfbc5cc4ce5d3617c96bc0019055a95fa80cc028bb",
+      "sourceLengthUtf16": 297,
+      "annotations": [
+        {
+          "id": "ann.3fedc4b704f7eb2d4578",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 117,
+            "end": 154,
+            "exact": "RBF를 분모에 넣으면 다른 양을 계산하는 것이므로 구분해야 한다.",
+            "prefix": "action, FF)은 GFR/RPF이다. ",
+            "suffix": " 파라아미노마뇨산(PAH)은 적절한 낮은 농"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "physiology.renal.filtration.b.45880a0d7ed5",
+      "sourceSha256": "d2537cff97ecae18f161dd151972afbde6b729475a02f8aa7ed2b9293b85da76",
+      "sourceLengthUtf16": 124,
+      "annotations": []
+    }
+  ]
+}

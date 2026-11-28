@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "anatomy",
+  "title": {
+    "ko": "육안해부학"
+  },
+  "status": "partial",
+  "chapters": [
+    {
+      "id": "anatomy.chapter.thorax",
+      "path": "domains/01-anatomy/subjects/anatomy/chapters/thorax/chapter.json"
+    },
+    {
+      "id": "anatomy.chapter.general",
+      "path": "domains/01-anatomy/subjects/anatomy/chapters/general/chapter.json"
+    },
+    {
+      "id": "anatomy.chapter.upper-limb",
+      "path": "domains/01-anatomy/subjects/anatomy/chapters/upper-limb/chapter.json"
+    },
+    {
+      "id": "anatomy.chapter.axial",
+      "path": "domains/01-anatomy/subjects/anatomy/chapters/axial/chapter.json"
+    },
+    {
+      "id": "anatomy.chapter.abdomen",
+      "path": "domains/01-anatomy/subjects/anatomy/chapters/abdomen/chapter.json"
+    },
+    {
+      "id": "anatomy.chapter.retroperitoneum",
+      "path": "domains/01-anatomy/subjects/anatomy/chapters/retroperitoneum/chapter.json"
+    },
+    {
+      "id": "anatomy.chapter.pelvis",
+      "path": "domains/01-anatomy/subjects/anatomy/chapters/pelvis/chapter.json"
+    },
+    {
+      "id": "anatomy.chapter.lower-limb",
+      "path": "domains/01-anatomy/subjects/anatomy/chapters/lower-limb/chapter.json"
+    },
+    {
+      "id": "anatomy.chapter.head-neck",
+      "path": "domains/01-anatomy/subjects/anatomy/chapters/head-neck/chapter.json"
+    }
+  ],
+  "plannedUnits": [
+    "anatomy.plan.001",
+    "anatomy.plan.002",
+    "anatomy.plan.003",
+    "anatomy.plan.004",
+    "anatomy.plan.005",
+    "anatomy.plan.006",
+    "anatomy.plan.007",
+    "anatomy.plan.008",
+    "anatomy.thorax.heart",
+    "anatomy.general.orientation-fascia",
+    "anatomy.upper-limb.pectoral-girdle",
+    "anatomy.upper-limb.shoulder-rotator-cuff",
+    "anatomy.upper-limb.brachial-plexus",
+    "anatomy.upper-limb.axilla-vessels",
+    "anatomy.upper-limb.arm-elbow",
+    "anatomy.upper-limb.forearm-wrist",
+    "anatomy.upper-limb.hand-intrinsics",
+    "anatomy.axial.vertebral-column",
+    "anatomy.thorax.wall-diaphragm",
+    "anatomy.thorax.lungs-pleura",
+    "anatomy.abdomen.wall-peritoneum",
+    "anatomy.abdomen.inguinal-canal",
+    "anatomy.abdomen.peritoneal-compartments",
+    "anatomy.abdomen.foregut",
+    "anatomy.abdomen.liver-segments",
+    "anatomy.abdomen.biliary-pancreas",
+    "anatomy.abdomen.spleen",
+    "anatomy.abdomen.intestine-mesenteric-vessels",
+    "anatomy.retroperitoneum.kidney-ureter",
+    "anatomy.pelvis.floor-organs",
+    "anatomy.pelvis.rectum-anal-canal",
+    "anatomy.lower-limb.pelvic-girdle",
+    "anatomy.lower-limb.hip-gluteal",
+    "anatomy.lower-limb.femoral-triangle",
+    "anatomy.lower-limb.knee-popliteal",
+    "anatomy.lower-limb.leg-ankle",
+    "anatomy.lower-limb.foot-arches",
+    "anatomy.head-neck.skull-base-foramina",
+    "anatomy.head-neck.neck-fascia-triangles",
+    "anatomy.head-neck.larynx-vocal-folds",
+    "anatomy.head-neck.thyroid-parathyroid-relations",
+    "anatomy.head-neck.oral-tongue-salivary",
+    "anatomy.head-neck.pharynx-soft-palate",
+    "anatomy.head-neck.orbit-extraocular",
+    "anatomy.head-neck.ear-temporal-bone",
+    "anatomy.head-neck.nose-paranasal"
+  ]
+}

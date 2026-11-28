@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "physiology.neuro.motor-units-reflexes",
+  "subjectId": "physiology",
+  "chapterId": "neuro",
+  "title": {
+    "ko": "운동단위·근방추·척수 반사",
+    "en": "Motor Units, Muscle Spindles and Spinal Reflexes"
+  },
+  "learningObjectives": [
+    {
+      "id": "physiology.neuro.motor-units-reflexes.lo.01",
+      "text": "운동단위 동원과 발화율 조절을 구별한다"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.lo.02",
+      "text": "근방추와 골지힘줄기관의 배치를 비교한다"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.lo.03",
+      "text": "반사 회로의 감각·운동·하행 조절을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.91ab06621ed6",
+      "type": "heading",
+      "level": 2,
+      "text": "신경 입력이 근육 힘으로 바뀌는 집단"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.aa42031e9630",
+      "type": "paragraph",
+      "markdown": "운동단위(motor unit)는 한 알파운동뉴런과 그 뉴런이 지배하는 골격근 섬유 집단이다. 같은 근육에도 여러 운동단위가 섞여 있으며 각 단위의 크기·수축 특성이 다를 수 있다. 근육의 총힘은 활동하는 단위 수,각 뉴런의 발화율,근육 길이·피로·수축 이력에 따라 달라진다. 근전도 신호의 크기를 단순히 근육 힘과 항상 일대일로 대응시키지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.7c01bf5e4833",
+      "type": "paragraph",
+      "markdown": "일반적으로 작은 힘 요구에서 낮은 문턱의 단위가 먼저 동원되고 요구가 커지면 추가 단위가 참여하는 크기원리(size principle)는 운동 조절을 이해하는 중요한 경향이다. 그러나 모든 과제와 근육에서 완전히 고정된 순서를 보증하는 것은 아니다. 감각·하행 입력의 분포와 움직임 조건에 따라 달라질 수 있다. 동원(recruitment)과 같은 단위의 발화율 증가(rate coding)는 서로 다른 조절 축이다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.1932c91a03c2",
+      "type": "heading",
+      "level": 2,
+      "text": "연축의 합산과 힘 조절"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.830267f4ce06",
+      "type": "paragraph",
+      "markdown": "한 활동전위 뒤의 기계적 연축(twitch)은 전기 신호보다 오래 지속될 수 있다. 다음 자극이 이완 전에 도착하면 칼슘과 수축 기구의 시간 경과에 따라 힘이 합산되어 불완전·완전 강축(tetanus) 양상으로 이어질 수 있다. 활동전위 자체가 매번 더 큰 진폭으로 합쳐지는 것이 아니다. 전기적 불응기와 기계적 연축의 기간을 나누어 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.e1b31dbeeb02",
+      "type": "paragraph",
+      "markdown": "독립 가상 모형에서 세 운동단위가 정해진 조건에서 각각2·3·5단위의 힘을 더한다고 두면 첫 두 개의 합은5,세 개의 합은10이다. 이 산술합은 일정한 길이·동일한 수축 상태와 단순 합산을 가정한 예다. 실제 근육의 비선형 역학과 발화율·공통 힘줄의 상호작용을 재현한 실험 자료가 아니다. 어떤 변수를 고정했는지 밝히면 동원과 발화율의 기여를 혼동하지 않게 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.d0fc53dd494e",
+      "type": "heading",
+      "level": 2,
+      "text": "근방추는 길이와 그 변화를 감지한다"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.342cdd35001c",
+      "type": "paragraph",
+      "markdown": "근방추(muscle spindle)는 추내근섬유(intrafusal fibers)와 감각 말단으로 이루어진 구조로,큰 힘을 내는 추외근섬유(extrafusal fibers)와 대체로 병렬적으로 배치된다. 근육이 늘어날 때 수용부의 기계적 상태가 변하여 Ia·II 구심 신호가 달라진다. 길이뿐 아니라 변화 속도와 방추 자체의 조절 상태도 중요하다. 근육이 이완하면 언제나 방추가 같은 크기로 발화한다는 식으로 수동 길이와 운동 명령을 분리할 수는 없다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.a4eaf01383db",
+      "type": "paragraph",
+      "markdown": "감마운동뉴런(gamma motor neurons)은 추내근섬유의 수축부를 조절하여 수용부의 감도를 바꾼다. 알파–감마 공동활성은 근육 수축 중에도 방추의 유용한 감각 범위를 유지하는 데 기여할 수 있다. 감마뉴런이 근육의 대부분 힘을 직접 만드는 알파뉴런과 같은 표적을 갖는 것은 아니다. 같은 근육 안의 감각 조절 구조와 주된 힘 생성 구조를 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.5eb552ec6be2",
+      "type": "heading",
+      "level": 2,
+      "text": "늘림반사의 빠른 연결과 주변 회로"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.e77fa53562c9",
+      "type": "paragraph",
+      "markdown": "신장반사(stretch reflex)의 대표적인 흥분 경로는 Ia 구심 입력이 같은 근육의 알파운동뉴런을 빠르게 흥분시키는 연결이다. 길이가 늘어난 뒤 수축이 증가하여 외란을 줄이는 기능과 연결할 수 있다. 하지만 실제 힘줄반사는 한 시냅스만 존재하는 완전히 고립된 두 뉴런 회로 전체와 같지는 않다. 다른 근육·중간뉴런·하행 입력이 관여하고 기계적 자극 전달과 기록 조건도 영향을 준다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.b565b8c9188e",
+      "type": "paragraph",
+      "markdown": "상호억제(reciprocal inhibition)는 길항근 운동뉴런의 활동을 중간뉴런을 통해 조절하는 대표적 연결이다. 작용근 수축과 길항근의 적절한 조절은 움직임을 돕지만,모든 동작에서 길항근을 완전히 꺼야 하는 것은 아니다. 관절 안정성을 위한 공동수축(co-contraction)도 존재한다. 하나의 반사 도식을 전체 운동 과제의 유일한 제어 규칙으로 적용하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.21d72684fb29",
+      "type": "heading",
+      "level": 2,
+      "text": "힘줄기관은 장력과 관련된 다른 감각을 보낸다"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.257656ede601",
+      "type": "paragraph",
+      "markdown": "골지힘줄기관(Golgi tendon organ)은 근육–힘줄 연결에서 추외근섬유와 직렬적인 기계적 관계를 가지며 Ib 구심 신호가 장력과 관련된다. 근방추의 길이·속도 감지와 비교하되,길이와 힘이 실제 움직임에서 항상 독립적으로 변하는 것은 아니라는 점을 기억한다. 수동 늘림과 능동 수축에서 두 수용기의 상대 반응이 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.17ac967b458a",
+      "type": "paragraph",
+      "markdown": "Ib 회로의 자가억제(autogenic inhibition)는 대표적인 교육 도식이지만,수용기가 일정 문턱 이상의 힘에서만 작동하여 근육을 비상 정지시키는 단순 스위치는 아니다. 감각 피드백은 정상 힘 조절과 움직임에 지속적으로 기여하고 회로의 순효과는 과제·상태·하행 조절에 따라 달라질 수 있다. 오래된 고정 억제 회로와 실제 상태 의존적 운동 제어를 구별해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.e17d7a887c05",
+      "type": "heading",
+      "level": 2,
+      "text": "반사 소견에서 병변을 추론하는 범위"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.5052f407a2f3",
+      "type": "paragraph",
+      "markdown": "반사 반응이 감소하면 감각 유입,신경뿌리·말초신경,척수 연결,운동 출력,신경근접합부와 근육·기계적 조건을 나누어 생각한다. 증가한 반사는 하행 조절 변화와 연결될 수 있지만,한 번의 반사 크기로 병변 위치를 단독 확정하지 않는다. 좌우·다른 분절과 근력·근긴장·감각·병적 반사 등을 함께 평가한다. 급성기와 만성기의 소견도 다를 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.b.319746957318",
+      "type": "paragraph",
+      "markdown": "실험이나 문제에서는 자극의 장소,감각 종류,기록하는 전기 또는 힘 신호,하행 회로의 조건을 명시한다. 유발전위의 잠복기,근육의 기계적 지연,척수 시냅스 수를 같은 시간으로 취급하지 않는다. 정상 해부학 외형에는 근방추·시냅스의 미세 회로가 포함되지 않을 수 있으므로 회로도와 비교표가 필요하다. 구조와 기능의 서로 다른 관찰을 연결하는 방식으로 학습한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.diagram.motor-unit-recruitment-example",
+      "type": "diagram",
+      "diagramRef": "diagram.motor-unit-recruitment-example",
+      "path": "diagrams/diagram.motor-unit-recruitment-example.svg",
+      "alt": "고정 힘 단위의 단순 동원의 독립 계산 곡선"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.diagram.spindle-tendon-reflex-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.spindle-tendon-reflex-pairs",
+      "path": "diagrams/diagram.spindle-tendon-reflex-pairs.svg",
+      "alt": "감각 구조와 운동 조절의 단계별 비교"
+    },
+    {
+      "id": "physiology.neuro.motor-units-reflexes.table.compare",
+      "type": "table",
+      "data": {
+        "title": "운동 감각·출력 비교",
+        "columns": [
+          "요소",
+          "주요 대상",
+          "구별"
+        ],
+        "rows": [
+          [
+            "알파운동뉴런",
+            "추외근힘",
+            "동원·발화율"
+          ],
+          [
+            "감마운동뉴런",
+            "추내근감도",
+            "대부분힘의직접출력아님"
+          ],
+          [
+            "근방추Ia/II",
+            "길이·속도",
+            "대체로병렬"
+          ],
+          [
+            "힘줄기관Ib",
+            "장력",
+            "직렬·상태의존회로"
+          ]
+        ],
+        "notes": "신장반사의빠른연결과실제과제의복합회로를구별한다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/02-biomedical-sciences/subjects/physiology/chapters/neuro/sections/physiology.neuro.motor-units-reflexes.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "운동단위 동원과 같은 단위의 발화율 조절은 다른 축이다."
+  ],
+  "reviewQuestions": [
+    "question.physiology.neuro.motor-units-reflexes.001",
+    "question.physiology.neuro.motor-units-reflexes.002"
+  ],
+  "relatedLessons": [
+    "physiology.neuro.autonomic-control",
+    "physiology.cell.action-potential-conduction",
+    "physiology.neuro.pain-modulation"
+  ]
+}

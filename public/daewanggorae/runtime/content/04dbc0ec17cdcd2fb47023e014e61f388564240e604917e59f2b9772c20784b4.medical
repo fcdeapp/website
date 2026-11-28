@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "anatomy.thorax.lungs-pleura",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.cee74672d200",
+      "sourceSha256": "cee74672d20048ab114ce94d281125f4bf54401928f458d73263da8bd2b930ca",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.61fc9a45d32a",
+      "sourceSha256": "61fc9a45d32ad8262455d1432c076222c6ca5db4cb0ef1e98853b24189499fec",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.fec66d9cce66",
+      "sourceSha256": "fec66d9cce668db6aefc96c195a805995a0f613ebd1c155c814809ddbfd0de98",
+      "sourceLengthUtf16": 202,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.a04a7d7a899b",
+      "sourceSha256": "a04a7d7a899bd8ca697a1720410734e788f05444a6692930634d47a29912d57e",
+      "sourceLengthUtf16": 194,
+      "annotations": [
+        {
+          "id": "ann.87772d2b78984f86719a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 43,
+            "exact": "폐뿌리 주위에서 가로막신경은 앞쪽, 미주신경은 뒤쪽을 지나는 관계가 중요하다.",
+            "prefix": "",
+            "suffix": " 주변의 대동맥활, 홀정맥활과 식도 등은 좌"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.c35b54858311",
+      "sourceSha256": "c35b5485831169ae693f4489b6212faf0fa326badb02d3812e10d77212649131",
+      "sourceLengthUtf16": 179,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.3a6d7724aec6",
+      "sourceSha256": "3a6d7724aec62205e84eacbfc7e0569422daa819229439a96fbddb19f8e16bcd",
+      "sourceLengthUtf16": 189,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.a3c03c2a3c0d",
+      "sourceSha256": "a3c03c2a3c0d28c6d5de2cff8b4042da4aae8d4bf67fb5458bc60354d4a18a5a",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.72ac690570fb",
+      "sourceSha256": "72ac690570fb1429f43ed828a1dfc58ac55cf8d6bbadc7c914362b657e3d3d6c",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.960ab16a00d8",
+      "sourceSha256": "960ab16a00d87d766cb899337ef61e7398192eb9a3a5014b416f8016fb45d4d2",
+      "sourceLengthUtf16": 207,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.e9a496785a95",
+      "sourceSha256": "e9a496785a95bd0e706953c04ad41a4399ceb51cf70cc7975f158d4fd7b218d3",
+      "sourceLengthUtf16": 179,
+      "annotations": [
+        {
+          "id": "ann.056cdaca60b0105b5770",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 155,
+            "end": 179,
+            "exact": "통증의 성질 하나로 병인을 확정하지 않는다.",
+            "prefix": "근골격 질환과 다른 흉부 원인도 고려한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.f4633e896b34",
+      "sourceSha256": "f4633e896b340a4deab3ac7e1aa90de588620050983bd604a047b762949f458c",
+      "sourceLengthUtf16": 214,
+      "annotations": []
+    },
+    {
+      "blockId": "anatomy.thorax.lungs-pleura.b.9ffab98168ca",
+      "sourceSha256": "9ffab98168ca6817fc1bd53d464c14903844c170fc5591c8df03c7e633be513d",
+      "sourceLengthUtf16": 213,
+      "annotations": [
+        {
+          "id": "ann.fbd817f7f9588bb7bef5",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 2,
+            "exact": "기흉",
+            "prefix": "",
+            "suffix": "에서는 가슴막안으로 공기가 들어가 폐와 가슴"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    }
+  ]
+}

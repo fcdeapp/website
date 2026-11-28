@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.synthetic-height-followup-0851",
+  "lessonId": "pediatrics.growth.velocity-measurement",
+  "title": "가상 반복 신장 계측",
+  "series": [
+    {
+      "label": "독립 가상 증례",
+      "samples": [
+        {
+          "x": 0,
+          "y": 100
+        },
+        {
+          "x": 3,
+          "y": 102
+        },
+        {
+          "x": 6,
+          "y": 103
+        },
+        {
+          "x": 9,
+          "y": 103.5
+        },
+        {
+          "x": 12,
+          "y": 104
+        }
+      ]
+    }
+  ],
+  "assumptions": {
+    "syntheticCase": true,
+    "months": [
+      0,
+      3,
+      6,
+      9,
+      12
+    ],
+    "heights_cm": [
+      100,
+      102,
+      103,
+      103.5,
+      104
+    ],
+    "notAgeSexGrowthReference": true
+  },
+  "render": {
+    "type": "line",
+    "canvas": {
+      "width": 900,
+      "height": 760
+    },
+    "plot": {
+      "x": 90,
+      "y": 30,
+      "width": 730,
+      "height": 420
+    },
+    "xAxis": {
+      "min": 0,
+      "max": 12,
+      "scale": "linear",
+      "ticks": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "label": "추적 시작 뒤 시간(개월)"
+    },
+    "yAxis": {
+      "min": 95,
+      "max": 110,
+      "scale": "linear",
+      "ticks": [
+        95.0,
+        98.75,
+        102.5,
+        106.25,
+        110.0
+      ],
+      "label": "신장(cm)"
+    },
+    "series": [
+      {
+        "id": "s0",
+        "label": "독립 가상 증례",
+        "samplesPath": "series/0/samples",
+        "xKey": "x",
+        "yKey": "y",
+        "tone": "primary"
+      }
+    ]
+  },
+  "limitations": [
+    "독립 가정·가상 자료이며 실제 환자·정상 범위·전형적 임신 경과·투약·검사/분만/치료 기준을 정하지 않는다."
+  ],
+  "sourceImageUsed": false
+}

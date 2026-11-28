@@ -109,7 +109,9 @@ test("every authored lesson, question, scene and diagram resolves", () => {
     const q = read(e.path);
     parseQuestionMedia(q.media);
     assert.ok(lessons.has(q.lessonId));
-    assert.ok(q.options.some((x) => x.id === q.answer));
+    assert.ok(q.options.length >= 2);
+    assert.equal(new Set(q.options.map((x) => x.id)).size, q.options.length);
+    assert.equal(q.answer, undefined, "public display data must not contain answers");
     for (const m of q.media?.items || []) {
       if (m.type === "diagram") assert.ok(diagrams.has(m.diagramRef));
       if (m.type === "anatomy3d") assert.ok(scenes.has(m.sceneRef));

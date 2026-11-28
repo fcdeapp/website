@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "patient-safety.systems.handover",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "patient-safety.systems.handover.b.9b47e98efd4f",
+      "sourceSha256": "9b47e98efd4f3fae651e3ccac5b4a379c16936d3c9a06850eef785014b8bd761",
+      "sourceLengthUtf16": 257,
+      "annotations": []
+    },
+    {
+      "blockId": "patient-safety.systems.handover.b.5a0272fb98ae",
+      "sourceSha256": "5a0272fb98aee6ed5f4f1c9f751849c1e943a5a39b4adff846e42167539ce3ea",
+      "sourceLengthUtf16": 255,
+      "annotations": []
+    },
+    {
+      "blockId": "patient-safety.systems.handover.b.f3dd01d3b405",
+      "sourceSha256": "f3dd01d3b40517e4cc2feba872dd465115b5e1dae65b00fb2920f04b408a01e1",
+      "sourceLengthUtf16": 236,
+      "annotations": [
+        {
+          "id": "ann.3c9380d682ee248e89aa",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 5,
+            "end": 30,
+            "exact": "medication reconciliation",
+            "prefix": "투약조정(",
+            "suffix": ")은 환자가 실제 사용하는 약을 가능한 정확"
+          },
+          "conceptId": "reader.term.4d94a87f27739d1c",
+          "targetDocumentId": "patient-safety.medication.reconciliation-systems"
+        },
+        {
+          "id": "ann.bb21e057d963b7b187ce",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 187,
+            "end": 236,
+            "exact": "입원, 병동 이동, 퇴원처럼 진료 전환 때 약물이 빠지거나 중복되기 쉬워 특히 중요하다.",
+            "prefix": "제, 알레르기와 이상반응을 함께 확인한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "patient-safety.systems.handover.b.40c7739a579c",
+      "sourceSha256": "40c7739a579cb130ce3629aa3f9630125198d2b9ce214a5b382290f0eb510fe0",
+      "sourceLengthUtf16": 217,
+      "annotations": []
+    },
+    {
+      "blockId": "patient-safety.systems.handover.b.5b9ae864d5ce",
+      "sourceSha256": "5b9ae864d5cea40c5c6ac80d782eebf998b86f1a537b870fc25705c9949712c5",
+      "sourceLengthUtf16": 226,
+      "annotations": [
+        {
+          "id": "ann.d360bc1db08bfb5d686a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 76,
+            "exact": "안전한 인계(handover)는 환자의 현재 상태, 중요한 배경, 진행 중인 문제, 해야 할 일, 악화 시 대응과 담당 책임을 전달한다.",
+            "prefix": "",
+            "suffix": " 모든 과거 정보를 빠르게 읽는 것보다 다음"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "patient-safety.systems.handover.b.9c8187a46e75",
+      "sourceSha256": "9c8187a46e7577c6f6858e92f9f99f53f92e01141c559e8ec8d4bbdb0adf8300",
+      "sourceLengthUtf16": 239,
+      "annotations": []
+    }
+  ]
+}

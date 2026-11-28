@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "pathology.environmental.radiation-injury",
+  "subjectId": "pathology",
+  "chapterId": "environmental",
+  "title": {
+    "ko": "전리방사선의 세포·조직 손상",
+    "en": "Cellular and Tissue Injury from Ionizing Radiation"
+  },
+  "learningObjectives": [
+    {
+      "id": "pathology.environmental.radiation-injury.lo.01",
+      "text": "전리·DNA 손상·세포 운명의 연결을 설명한다"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.lo.02",
+      "text": "흡수선량과 방사선 방호량의 단위를 구별한다"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.lo.03",
+      "text": "급성·지연 조직 반응과 분할의 조건을 설명한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pathology.environmental.radiation-injury.b.70ecf334d343",
+      "type": "heading",
+      "level": 2,
+      "text": "에너지 침착과 생물학적 결과"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.d95ba5f54e21",
+      "type": "paragraph",
+      "markdown": "전리방사선(ionizing radiation)은 물질에 에너지를 전달하여 이온화와 분자 변화를 만들 수 있다. DNA에 직접 영향을 주거나 물 등의 방사선분해에서 생성되는 반응성 종을 통해 간접 손상을 유도할 수 있다. 산소·화학 환경,방사선의 종류와 에너지 침착 양상,세포주기와 수복 능력이 반응에 영향을 준다. 같은 총 에너지라는 사실만으로 모든 조직에서 같은 결과를 기대하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.c81937c0de5c",
+      "type": "paragraph",
+      "markdown": "흡수선량의 gray(Gy)는 단위 질량당 침착 에너지로1Gy=1J/kg이다. 방사선 방호에서 쓰는 sievert(Sv)는 방사선·조직 가중 등의 개념이 포함되는 양으로 흡수선량과 목적이 다르다. 방사능의 becquerel(Bq)은 초당 붕괴 수이므로 Gy나 Sv와 같은 단위가 아니다. 물리량의 이름과 목적을 정하지 않고 같은 숫자로 교환하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.54c8defecf3e",
+      "type": "heading",
+      "level": 2,
+      "text": "DNA 손상과 세포의 운명"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.b66772cc95d8",
+      "type": "paragraph",
+      "markdown": "염기 손상·단일가닥 및 이중가닥 절단과 복잡한 손상은 감지·복구 경로와 세포주기 조절을 활성화할 수 있다. 복구가 잘 되거나,증식이 중단되거나,사멸과 잘못된 수복에 따른 유전적 변화가 생길 수 있다. 손상 직후 살아 보이는 세포와 장기적으로 증식 가능한 세포의 비율은 같은 측정이 아니다. 일부 세포는 이후 분열 과정에서 생존 능력을 잃을 수 있다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.1d9fa88f7921",
+      "type": "paragraph",
+      "markdown": "이중가닥 절단의 복구에는 비상동말단연결과 상동재조합 등 여러 경로가 관여한다. 세포주기와 손상의 성질,경로의 정확도·이용 가능성이 결과를 바꾼다. 정상세포가 언제나 모든 종양세포보다 잘 복구한다는 보편 규칙은 성립하지 않는다. 치료적 선택성과 조직 손상의 차이는 노출 분포·분할·증식·복구 및 미세환경을 함께 보아야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.21544139d84d",
+      "type": "heading",
+      "level": 2,
+      "text": "줄기세포 풀과 조직의 시간차"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.b418ab013d9f",
+      "type": "paragraph",
+      "markdown": "빠르게 회전하는 조직에서는 줄기·전구세포의 손상이 보충 능력을 낮추어 이후 세포 소실이 임상 반응으로 나타날 수 있다. 일부 세포는 비교적 빠른 사멸 반응을 보이고,다른 조직은 혈관·기질·세포 기능 변화가 장기간 누적되어 증상을 만들 수 있다. 급성 반응이 없다고 모든 지연 손상이 배제되는 것은 아니다. 노출 부위·체적·기저 상태와 실제 기능 검사가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.50814b4426ed",
+      "type": "paragraph",
+      "markdown": "염증·내피·미세혈관 손상과 기질 재형성은 지연 반응과 섬유화에 관여할 수 있다. 같은 장기에서도 세포형과 구역에 따라 반응이 다르다. 방사선 뒤의 조직 변화가 모두 같은 기전이나 단일 시점의 완결된 사건은 아니다. 실제 조직 사진 없이 만든 도식은 기전의 개념도이며 환자의 병리영상으로 표시하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.14d47ffb1a5a",
+      "type": "heading",
+      "level": 2,
+      "text": "분할과 시간의 역할"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.45e4a093b46c",
+      "type": "paragraph",
+      "markdown": "같은 총선량을 한 번에 전달하는 경우와 나누는 경우는 세포의 수복·재분포·재산소화·재증식 조건이 달라질 수 있다. 그 상대적 기여는 조직과 조사 조건에 따라 다르다. 따라서 총선량만 같으면 효과가 같다고 볼 수 없다. 반대로 분할 횟수 하나만으로 정상 조직 보호와 종양 제어가 보장되는 것도 아니다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.7097b0e95791",
+      "type": "paragraph",
+      "markdown": "치료 방사선에서는 표적과 정상 조직의 공간 분포,선량률·분할 크기·치료 간격과 이전 노출을 종합한다. 실제 치료 계획의 허용선량과 분할 처방은 암종·장기·장비·환자 상태에 따른 전문 근거가 필요하다. 일반 기전이나 교육 곡선의 계수를 임상 처방에 대입하지 않는다. 거시 장기 모델을 선량분포 지도나 실제 방사선 치료계획으로 표시해서도 안 된다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.026a6c4801e3",
+      "type": "heading",
+      "level": 2,
+      "text": "독립 생존 모형의 범위"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.0d7ffd2fcdd3",
+      "type": "paragraph",
+      "markdown": "단순 선형–이차(linear–quadratic, LQ) 모형의 생존 분율을 S=exp(−αd−βd²)로 둘 수 있다. d는 모형의1회 선량,α와β는 각각 선량의 역수와 제곱 역수 단위를 가진다. 가상 α=0.2Gy⁻¹,β=0.05Gy⁻²에서 d=2Gy이면 S=exp(−0.6)이다. 이 값은 어떤 실제 조직·암의 계수가 아니며 독립 계산 자료다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.b.567fda43e09a",
+      "type": "paragraph",
+      "markdown": "각 분할 사이 완전 수복,동일 계수와 재증식 없음 등을 추가로 가정하면 n회 뒤 S를 exp[−n(αd+βd²)]로 비교할 수 있다. 이 조건에서만 같은 총선량의 분할 크기 효과를 산술적으로 살펴볼 수 있다. 실제 고선량·불완전 수복·시간·산소 변화와 복잡한 조직 반응은 모형 적용을 제한한다. 세포집락 형성의 생존 분율을 곧바로 환자의 생존확률이나 종양 제어율로 읽지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.diagram.lq-fractionation-example",
+      "type": "diagram",
+      "diagramRef": "diagram.lq-fractionation-example",
+      "path": "diagrams/diagram.lq-fractionation-example.svg",
+      "alt": "동일 총선량의 조건부 분할 비교의 독립 계산 곡선"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.diagram.radiation-injury-time-pairs",
+      "type": "diagram",
+      "diagramRef": "diagram.radiation-injury-time-pairs",
+      "path": "diagrams/diagram.radiation-injury-time-pairs.svg",
+      "alt": "방사선 반응의 시간과 층의 단계별 비교"
+    },
+    {
+      "id": "pathology.environmental.radiation-injury.table.compare",
+      "type": "table",
+      "data": {
+        "title": "방사선의 다른 양",
+        "columns": [
+          "양",
+          "단위·해석"
+        ],
+        "rows": [
+          [
+            "붕괴율",
+            "Bq=초당 붕괴수"
+          ],
+          [
+            "흡수선량",
+            "Gy=J/kg"
+          ],
+          [
+            "방호량",
+            "Sv;가중·정의 확인"
+          ],
+          [
+            "세포 생존",
+            "집락·증식 측정과 환자 생존 구별"
+          ]
+        ],
+        "notes": "기전·측정의 비교이며 실제 진단·치료는 별도 근거에 따른다."
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음"
+    ]
+  },
+  "path": "domains/03-pathology-pharmacology/subjects/pathology/chapters/environmental/sections/pathology.environmental.radiation-injury.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "keyFacts": [
+    "물리량·세포 생존·조직 반응과 임상 결과를 구별한다."
+  ],
+  "relatedLessons": [
+    "pathology.environmental.toxic-injury",
+    "pathology.nutrition.undernutrition-refeeding"
+  ],
+  "reviewQuestions": [
+    "question.pathology.environmental.radiation-injury.001",
+    "question.pathology.environmental.radiation-injury.002"
+  ]
+}

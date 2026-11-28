@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "obstetrics.antenatal.initial-assessment-dating",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.b.101ea5bcadff",
+      "sourceSha256": "101ea5bcadfff1b5a26ca2b98f63f19b1a1c88e0fb1c35ab6564ed42a4635c95",
+      "sourceLengthUtf16": 190,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.b.729d599667d1",
+      "sourceSha256": "729d599667d170d7a4d42b9e32611c3fe82719a2ee730356ff7c2e8da3a5203c",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.45d5a20295e590cf462d",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 11,
+            "end": 14,
+            "exact": "당뇨병",
+            "prefix": "과거력에서는 고혈압·",
+            "suffix": "·신장·심장·자가면역질환과 혈전·수술, 이전"
+          },
+          "conceptId": "reader.term.2a34e83265532d8f",
+          "targetDocumentId": "endocrinology.diabetes.foundations"
+        },
+        {
+          "id": "ann.062c65bb4fefc5887a78",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 43,
+            "end": 47,
+            "exact": "자간전증",
+            "prefix": "장·자가면역질환과 혈전·수술, 이전 조산과 ",
+            "suffix": "·태아 성장 문제 등을 구체적으로 살핀다. "
+          },
+          "conceptId": "reader.term.d2c736b19e48618f",
+          "targetDocumentId": "obstetrics.hypertension.severe-disease-delivery"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.b.7f2d2db554f5",
+      "sourceSha256": "7f2d2db554f5408b86161bcd98e65df27988ef52a01c5d8c6ee0df20dc2152c1",
+      "sourceLengthUtf16": 199,
+      "annotations": [
+        {
+          "id": "ann.0bbc6f2f8d78116723f9",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 162,
+            "end": 199,
+            "exact": "마지막 월경일을 정확히 안다는 것과 배란일을 안다는 것을 구별한다.",
+            "prefix": " 월경으로 기억한 경우 등이 영향을 준다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.b.d596f6c53f0d",
+      "sourceSha256": "d596f6c53f0d14ff5b79bd0d35151d904081494c4b0224f2fe3892f75c9ea73f",
+      "sourceLengthUtf16": 202,
+      "annotations": [
+        {
+          "id": "ann.1a4de41bb2fa33b9faa1",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 38,
+            "exact": "초기 초음파의 태아 계측은 임신 주수 설정에 중요한 정보를 제공한다.",
+            "prefix": "",
+            "suffix": " 이미 적절히 설정된 주수를 후기 태아 크기"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.b.5a8db9fdd01e",
+      "sourceSha256": "5a8db9fdd01e30abc600bff2bb29354692a036b3b948cc5d8611a0034489569f",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.b.3be44d590bd8",
+      "sourceSha256": "3be44d590bd8e662e83989f987652b7d9a37ffb55cbc1990e898313b225c21ca",
+      "sourceLengthUtf16": 195,
+      "annotations": [
+        {
+          "id": "ann.d016584851c88f089841",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 94,
+            "end": 131,
+            "exact": "검사받지 않을 권리와 정보의 범위를 알고 선택하는 과정도 중요하다.",
+            "prefix": "서도 남는 위험이 무엇인지 미리 상담한다. ",
+            "suffix": " 태아 관련 결과는 임신부와 가족의 가치관에"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.b.193f222d9de3",
+      "sourceSha256": "193f222d9de3c3cfe8c310c18388df8a7445fd2a835d578316e89e2a2c79ccf6",
+      "sourceLengthUtf16": 196,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.b.b2828b3e1a95",
+      "sourceSha256": "b2828b3e1a95897e28f9352993386bc5915c9abd1d89b5aa092cf31fcce91db3",
+      "sourceLengthUtf16": 203,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.supp.38037d9d9756",
+      "sourceSha256": "38037d9d97568b3dec27b848331184d0bba16f5680cf0337c145adc682fcaa7a",
+      "sourceLengthUtf16": 188,
+      "annotations": []
+    },
+    {
+      "blockId": "obstetrics.antenatal.initial-assessment-dating.supp.bd82c393d079",
+      "sourceSha256": "bd82c393d07935e7250e114212e83b83c2c7d3e66b9168a98f0cf20d373104ca",
+      "sourceLengthUtf16": 193,
+      "annotations": []
+    }
+  ]
+}

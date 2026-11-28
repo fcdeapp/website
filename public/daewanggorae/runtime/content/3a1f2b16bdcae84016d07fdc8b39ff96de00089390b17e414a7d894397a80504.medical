@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "histology.muscle.sarcomere-connective",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.4ccb46dd4787",
+      "sourceSha256": "e3ecb2d72b8b1985466f73cf7315c71ee14279d3b028010d10f0365f9ddc21f7",
+      "sourceLengthUtf16": 253,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.5d886491b9a6",
+      "sourceSha256": "5d886491b9a61160b4c2ea00cc00a455c8ef99e409bcbc687538e18d8b94e5a6",
+      "sourceLengthUtf16": 223,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.bf1f81f6e357",
+      "sourceSha256": "bf1f81f6e3578085ecd5cc56df150432e9f826082ee26b36f1506656556ea4e3",
+      "sourceLengthUtf16": 244,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.b744e2fc712f",
+      "sourceSha256": "b744e2fc712faae21f815c01b1f9b6f8d82cabafce934c65bae8bdeec187cbfe",
+      "sourceLengthUtf16": 207,
+      "annotations": [
+        {
+          "id": "ann.37207be427b8debfbd1b",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 115,
+            "end": 152,
+            "exact": "이 관계는 가로무늬의 변화를 수축 기전과 연결하는 중요한 근거이다.",
+            "prefix": " 거의 일정하고 I띠와 H구역이 짧아진다. ",
+            "suffix": " 근육이 짧아진다는 관찰을 단백질 필라멘트가"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.4ec4a60fadc7",
+      "sourceSha256": "4ec4a60fadc7304cbe83e5fe76171c2f5e4e2b840e17c9589653b83e34c45c73",
+      "sourceLengthUtf16": 266,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.7ebe543cc130",
+      "sourceSha256": "7ebe543cc1302b6bbd8ac3cddff131f1d4cab204a866d4a7e36b023abe617711",
+      "sourceLengthUtf16": 281,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.3d5173989020",
+      "sourceSha256": "3d51739890208f604191778000f85d16b0257b2268c4c89d2ec9bdc5a3563cc4",
+      "sourceLengthUtf16": 276,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.1303547e47f2",
+      "sourceSha256": "1303547e47f2a14e3c71208f4b12d5c921595ce2fcc16b88d1e7652693f8090a",
+      "sourceLengthUtf16": 251,
+      "annotations": [
+        {
+          "id": "ann.f92b6395d69247f53122",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 158,
+            "end": 212,
+            "exact": "근육의 부피 증가도 수축 단백질 증가, 섬유의 크기 변화, 지방·결합조직의 증가를 구별해야 한다.",
+            "prefix": "에 따라 재생과 섬유화의 비중이 달라진다. ",
+            "suffix": " 외형이 커졌다는 사실만으로 수축 기능이 향"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.b12646e85fa4",
+      "sourceSha256": "b12646e85fa44668b70cd1410be3fc137ced47aea60498da896f6944751109da",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.e808a28efa5b",
+      "sourceSha256": "e808a28efa5baf34ae9de6584ed3b3e921448088c6aad4d33290844055289c75",
+      "sourceLengthUtf16": 242,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.a187540f4d75",
+      "sourceSha256": "a187540f4d755286e9fd11f9e9e8ac2a327297ff6ae7845e27a34b8363b2511f",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.93f440d5b0dc",
+      "sourceSha256": "93f440d5b0dcd6f4c518a7daf9d6046b1f550952c80e62e4edf8f98182c1b61d",
+      "sourceLengthUtf16": 214,
+      "annotations": [
+        {
+          "id": "ann.896dfa4957a98e0f3cac",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 95,
+            "end": 101,
+            "exact": "흥분수축연결",
+            "prefix": "입과 그에 따른 그물의 칼슘 방출은 심장근 ",
+            "suffix": "의 핵심이다. 가로무늬가 있다는 이유로 두 "
+          },
+          "conceptId": "reader.term.8cd207f17b9c619f",
+          "targetDocumentId": "physiology.muscle.excitation-contraction"
+        },
+        {
+          "id": "ann.ba9a0477a22019187c27",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 61,
+            "exact": "심장근의 가로세관과 근육세포질그물의 배열은 골격근의 전형적 세동이와 다르며 이중체(dyad) 관계가 중요하다.",
+            "prefix": "",
+            "suffix": " 세포 밖 칼슘 유입과 그에 따른 그물의 칼"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.7842626085eb",
+      "sourceSha256": "7842626085eb2994a83284f426b9326f5f9671a87e556e1cc9478414e7b00b88",
+      "sourceLengthUtf16": 235,
+      "annotations": []
+    },
+    {
+      "blockId": "histology.muscle.sarcomere-connective.b.cdad5aa5a122",
+      "sourceSha256": "cdad5aa5a12226a5a14266dad619767d3d4e30e167d89c60837d0811be6ebcea",
+      "sourceLengthUtf16": 237,
+      "annotations": []
+    }
+  ]
+}

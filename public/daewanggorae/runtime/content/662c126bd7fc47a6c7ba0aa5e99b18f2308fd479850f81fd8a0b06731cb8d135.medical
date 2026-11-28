@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "diagram.ischemia-injury-pairs",
+  "lessonId": "pathology.cell.ischemia-reperfusion-mechanisms",
+  "title": "손상 과정의 서로 다른 연결",
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "ATP 생성·펌프 기능 저하",
+      "x": 350,
+      "y": 80,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n1",
+      "label": "이온·물 수지의 교란",
+      "x": 350,
+      "y": 225,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n2",
+      "label": "칼슘·산화 스트레스",
+      "x": 350,
+      "y": 370,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n3",
+      "label": "막·효소·미토콘드리아 손상",
+      "x": 350,
+      "y": 515,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n4",
+      "label": "혈류 재개",
+      "x": 350,
+      "y": 660,
+      "width": 490,
+      "height": 88
+    },
+    {
+      "id": "n5",
+      "label": "공급 회복·추가 손상 가능성",
+      "x": 350,
+      "y": 805,
+      "width": 490,
+      "height": 88
+    }
+  ],
+  "edges": [
+    {
+      "id": "diagram.ischemia-injury-pairs.e0",
+      "source": "n0",
+      "target": "n1",
+      "label": "에너지와 수송",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.ischemia-injury-pairs.e1",
+      "source": "n2",
+      "target": "n3",
+      "label": "조건 의존 증폭",
+      "relation": "directed"
+    },
+    {
+      "id": "diagram.ischemia-injury-pairs.e2",
+      "source": "n4",
+      "target": "n5",
+      "label": "재관류의 두 측면",
+      "relation": "directed"
+    }
+  ],
+  "render": {
+    "type": "graph",
+    "canvas": {
+      "width": 760,
+      "height": 940
+    },
+    "fontSize": 22,
+    "compact": {
+      "canvas": {
+        "width": 550,
+        "height": 940
+      },
+      "fontSize": 22,
+      "nodes": {
+        "n0": {
+          "x": 260,
+          "y": 80,
+          "width": 400,
+          "height": 88
+        },
+        "n1": {
+          "x": 260,
+          "y": 225,
+          "width": 400,
+          "height": 88
+        },
+        "n2": {
+          "x": 260,
+          "y": 370,
+          "width": 400,
+          "height": 88
+        },
+        "n3": {
+          "x": 260,
+          "y": 515,
+          "width": 400,
+          "height": 88
+        },
+        "n4": {
+          "x": 260,
+          "y": 660,
+          "width": 400,
+          "height": 88
+        },
+        "n5": {
+          "x": 260,
+          "y": 805,
+          "width": 400,
+          "height": 88
+        }
+      }
+    }
+  },
+  "limitations": [
+    "병리 기전의 독립 비교도다. 실제 조직의 시간표·생존율·치료 알고리즘이 아니다."
+  ],
+  "sourceImageUsed": false
+}

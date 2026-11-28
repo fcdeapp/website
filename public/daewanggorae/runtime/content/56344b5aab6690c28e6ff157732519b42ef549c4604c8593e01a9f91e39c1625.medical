@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "cardiology.diagnosis.syncope-assessment",
+  "subjectId": "cardiology",
+  "chapterId": "diagnosis",
+  "title": {
+    "ko": "실신의 정의와 초기 평가",
+    "en": "Definition and Initial Assessment of Syncope"
+  },
+  "learningObjectives": [
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.lo.01",
+      "text": "일과성 의식소실을 기전별로 분류한다"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.lo.02",
+      "text": "사건 전후 병력을 구조화한다"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.lo.03",
+      "text": "위험 신호와 검사의 목적을 연결한다"
+    }
+  ],
+  "blocks": [
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.83a66f6265d6",
+      "type": "heading",
+      "level": 2,
+      "text": "의식소실을 먼저 정의하기"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.36357805cb57",
+      "type": "paragraph",
+      "markdown": "실신(syncope)은 일시적인 전뇌 저관류로 발생하는 빠른 시작의 짧은 의식소실이며 일반적으로 자발적이고 완전한 회복을 보인다. 일과성 의식소실(transient loss of consciousness)의 모든 원인이 실신은 아니다. 발작, 대사·중독성 상태와 기능성 사건 및 외상 등은 다른 기전을 가질 수 있다. 환자가 쓰러졌다는 말만으로 뇌혈류 저하가 확인된 것은 아니다. 실제 의식소실이 있었는지, 자세 유지가 불가능했는지와 반응·회복의 경과를 구체적으로 확인한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.177f0c900105",
+      "type": "paragraph",
+      "markdown": "전실신(presyncope)은 의식소실 직전과 비슷한 어지럼·흐려짐을 느끼지만 완전한 의식소실은 없는 상태를 가리킨다. 증상 이름의 차이가 모든 위험의 차이를 뜻하지는 않는다. 현재의 저혈압과 심장질환, 출혈 또는 부정맥 등 배경에 따라 중요성이 달라진다. 빙빙 도는 감각, 불안정감과 기운 없음도 환자가 어지럼으로 표현할 수 있어 구체적인 경험을 묻는다. 언어적 표현을 하나의 진단에 바로 연결하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.c22d2b23e7a7",
+      "type": "heading",
+      "level": 2,
+      "text": "사건의 시간표"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.9fe8197ff88e",
+      "type": "paragraph",
+      "markdown": "병력은 사건 전, 의식소실 중, 회복 뒤로 나누면 누락을 줄일 수 있다. 사건 전에는 자세와 활동, 오래 서 있었는지와 통증·공포·배뇨 등 유발 상황, 두근거림·흉통·호흡곤란과 구역·열감 등의 전구 증상을 묻는다. 운동 중 쓰러짐과 운동을 멈춘 뒤의 사건은 같은 상황이 아니다. 갑작스러운 시작과 전구 증상 부재는 중요한 단서지만 이것만으로 부정맥을 확진하지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.5497039132c4",
+      "type": "paragraph",
+      "markdown": "사건 중의 정보를 얻기 위해 목격자와 기록이 도움이 된다. 피부색, 움직임과 눈 상태, 반응 및 대략적인 지속 시간을 확인한다. 짧은 경련성 움직임이 있었다는 이유만으로 모든 사건을 뇌전증이라고 판단하지 않는다. 저관류 중에도 비자발적 움직임이 나타날 수 있다. 반대로 회복이 오래 걸리고 혼돈이 지속되는 양상 등은 다른 기전을 평가하게 한다. 한 소견의 유무보다 사건 전체의 시간적 순서가 중요하다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.fda53493080a",
+      "type": "heading",
+      "level": 2,
+      "text": "현재 위험과 원인 가능성"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.45199fb6b42d",
+      "type": "paragraph",
+      "markdown": "초기에는 활력징후와 관류, 외상과 출혈, 심장과 신경학적 진찰을 확인한다. 안정 시 12유도 심전도는 전도 이상과 부정맥, 일부 심근질환의 단서를 제공한다. 기립 시 혈압·심박수의 변화는 자세 관련 기전을 평가하는 데 도움이 된다. 그러나 검사 중 정상이라는 사실이 사건 당시의 부정맥이나 간헐적 저혈압을 모두 배제하지는 않는다. 검사 결과가 질문한 시간과 상황을 실제로 관찰했는지 생각해야 한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.78f8f9e1c8bb",
+      "type": "paragraph",
+      "markdown": "운동 중 또는 누운 상태의 사건, 직전 두근거림과 알려진 구조적 심장질환, 비정상 심전도와 가족의 조기 돌연사 등은 심장성 기전을 더 주의하여 보게 한다. 위험 평가는 원인 이름을 확정하는 일과 다르다. 원인이 아직 불명확해도 현재 중대한 상태가 의심되면 신속한 평가와 적절한 관찰이 필요하다. 점수는 검증된 대상과 목적 안에서 보조 자료로 사용하며 하나의 숫자가 임상적 위험 신호를 지우지 않는다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.1ae279c61b6c",
+      "type": "heading",
+      "level": 2,
+      "text": "검사 선택의 논리"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.da68d4e68e43",
+      "type": "paragraph",
+      "markdown": "검사는 가능한 기전과 결과가 다음 행동을 어떻게 바꿀지를 기준으로 선택한다. 심장 구조가 의심되면 영상이, 간헐적 리듬이 의심되면 사건 빈도에 맞는 기록이 도움이 된다. 검사 목록을 넓히는 것만으로 진단의 질이 좋아지지는 않는다. 미국 2017년 실신 지침의 공개 설명은 병력·진찰·심전도의 중요성과, 국소 신경학적 단서 없이 일률적으로 시행하는 신경 영상·뇌파의 제한적 역할을 구별한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.b.08292dc18b7a",
+      "type": "paragraph",
+      "markdown": "진단이 확정되지 않았을 때는 무엇이 배제되었는지와 무엇이 남아 있는지를 구체적으로 설명한다. 짧은 관찰에서 사건이 없었다는 사실과 원인의 소멸은 다르다. 재발의 상황과 위험 증상을 기록하고 후속 검사와 책임·시점을 연결한다.",
+      "verificationStatus": "editorial_draft_claim_check_pending"
+    },
+    {
+      "id": "cardiology.diagnosis.syncope-assessment.table0841",
+      "type": "table",
+      "data": {
+        "title": "관찰·기전·판단의 구별",
+        "columns": [
+          "항목",
+          "의미"
+        ],
+        "rows": [
+          [
+            "일과성 의식소실",
+            "실신 외 원인 포함"
+          ],
+          [
+            "실신",
+            "전뇌 저관류 기전"
+          ],
+          [
+            "병력",
+            "사건 전·중·회복 뒤"
+          ],
+          [
+            "위험",
+            "원인 확정 전에도 평가"
+          ]
+        ]
+      }
+    }
+  ],
+  "verification": {
+    "status": "draft",
+    "lastChecked": null,
+    "unresolvedIssues": [
+      "전체 문장별 출처 대조 미완료",
+      "전문의 검수 미실시",
+      "전체 과목 또는 완결 교과서의 대체로 승인되지 않음",
+      "시각자료 범위: 정상 심장 모델로 심장방의 관계를 볼 수 있지만 실신의 발생 시점과 뇌관류를 직접 재현할 수는 없다. 실신의 학습에는 사건 시간표와 순환 조절 도식이 더 직접적인 시각 자료가 된다."
+    ]
+  },
+  "path": "domains/05-internal-medicine/subjects/cardiology/chapters/diagnosis/sections/cardiology.diagnosis.syncope-assessment.json",
+  "copyrightStatus": "independent_editorial_draft_not_a_translation",
+  "reviewQuestions": [
+    "question.cardiology.diagnosis.syncope-assessment.001"
+  ],
+  "relatedLessons": [
+    "cardiology.devices.resynchronization-principles",
+    "cardiology.diagnosis.reflex-syncope"
+  ]
+}

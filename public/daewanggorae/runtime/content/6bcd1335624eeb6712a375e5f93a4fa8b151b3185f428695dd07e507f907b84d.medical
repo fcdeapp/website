@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "pulmonology.obstruction.copd-exacerbation",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.b.92d9ccd0d6c5",
+      "sourceSha256": "92d9ccd0d6c50045e29d2cbae202eeb093cfdd197158725ce0116671df5b6c7d",
+      "sourceLengthUtf16": 179,
+      "annotations": [
+        {
+          "id": "ann.8e64f229ad44ea844b0c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 4,
+            "exact": "COPD",
+            "prefix": "",
+            "suffix": " 환자에서 숨참과 기침·가래가 평소보다 나빠"
+          },
+          "conceptId": "reader.term.b7474cec060b74ec",
+          "targetDocumentId": "pulmonology.obstruction.copd"
+        },
+        {
+          "id": "ann.3663efc7f4c74f85592a",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 100,
+            "end": 103,
+            "exact": "심부전",
+            "prefix": "장치 문제와 다른 요인이 기여할 수 있다. ",
+            "suffix": "과 폐렴·폐색전·기흉·부정맥 등은 악화를 닮"
+          },
+          "conceptId": "reader.term.1ea6d707f6d07d7b",
+          "targetDocumentId": "cardiology.heart-failure.syndrome"
+        },
+        {
+          "id": "ann.b2cd03e47e6a0ae7dbaf",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 112,
+            "end": 114,
+            "exact": "기흉",
+            "prefix": "이 기여할 수 있다. 심부전과 폐렴·폐색전·",
+            "suffix": "·부정맥 등은 악화를 닮거나 함께 나타날 수"
+          },
+          "conceptId": "reader.term.15d1dae316ad8011",
+          "targetDocumentId": "thoracic-surgery.pleura.pneumothorax"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.b.ddd538286ffa",
+      "sourceSha256": "ddd538286ffa89feaa472a55579eb599ad9c0278e7e7b75f44f2b052a0bf7d70",
+      "sourceLengthUtf16": 182,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.b.c83695fbfea2",
+      "sourceSha256": "c83695fbfea25c870b3f9b3f3a601da86934a5db4af691c723a9f3941319066d",
+      "sourceLengthUtf16": 172,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.b.0b85286148e7",
+      "sourceSha256": "0b85286148e737d6a056332093a86791c96f07753e8e35ee41faaa1fced5b825",
+      "sourceLengthUtf16": 157,
+      "annotations": [
+        {
+          "id": "ann.7d3df6cd08683e5500df",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 48,
+            "end": 89,
+            "exact": "만성 고탄산혈증과 그 위에 생긴 급성 변화는 보상과 시점을 통해 구별한다.",
+            "prefix": "소·중탄산염 및 임상 경과를 함께 읽는다. ",
+            "suffix": " 평소 값과 신장·대사 상태가 해석에 중요하"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.b.084f39a697b2",
+      "sourceSha256": "084f39a697b207897b1c90f5dc3274507a381705213fa6f7ec6b4e6a503b908d",
+      "sourceLengthUtf16": 201,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.b.3e85d5bb9616",
+      "sourceSha256": "3e85d5bb9616641530a3439b860061886f57b423ba342eb2916f5dcdbfe82fd6",
+      "sourceLengthUtf16": 185,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.b.963033ac4cc9",
+      "sourceSha256": "963033ac4cc9c3ae4ba997c847ae889f75a1144b96b2151d14af4eaaa743016f",
+      "sourceLengthUtf16": 164,
+      "annotations": [
+        {
+          "id": "ann.3c7a035bd6f0724ca88a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 124,
+            "end": 164,
+            "exact": "저산소와 산증의 개선이 모든 감염·심장 부담의 해결을 의미하지는 않는다.",
+            "prefix": "혈당, 감염과 다른 약물 위해도 관찰한다. ",
+            "suffix": ""
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.b.37d48cbe0497",
+      "sourceSha256": "37d48cbe0497b4be424ef1de255cb4caf0293a08c277765cdc48be15674e2070",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.p.extra0845.0",
+      "sourceSha256": "1d47bc4ef5ca39ffdd976bcc76ad54f4f6d1fb965f37b78571b327a09d5b0a2b",
+      "sourceLengthUtf16": 197,
+      "annotations": []
+    },
+    {
+      "blockId": "pulmonology.obstruction.copd-exacerbation.p.extra0845.1",
+      "sourceSha256": "d3c657b9bc624fba36fa5bb4d085bf1db55daa5acb31f1a432114810f095a8a8",
+      "sourceLengthUtf16": 186,
+      "annotations": []
+    }
+  ]
+}

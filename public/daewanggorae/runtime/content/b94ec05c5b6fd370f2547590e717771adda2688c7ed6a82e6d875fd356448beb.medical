@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neonatology.bilirubin.production-and-clearance",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.55f9cea32b5c",
+      "sourceSha256": "55f9cea32b5c55abe79cd256b8b0bddee31976f516358773e882f5a37e3e7db9",
+      "sourceLengthUtf16": 247,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.dac939872440",
+      "sourceSha256": "dac939872440c1c97cc80585db56d05ec23f5d2bc8ca28a8ab1fe60c51b8a784",
+      "sourceLengthUtf16": 238,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.e274afb05f35",
+      "sourceSha256": "e274afb05f3525e391a7c563c566c08162287fab15177dff05279bfed1f4d0c7",
+      "sourceLengthUtf16": 217,
+      "annotations": [
+        {
+          "id": "ann.2dc957ccf9c19e84dd7c",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 133,
+            "end": 138,
+            "exact": "망상적혈구",
+            "prefix": " 배제할 수는 없으며, 혈액형과 면역검사, ",
+            "suffix": ", 말초혈액 소견 등을 상황에 따라 함께 해"
+          },
+          "conceptId": "reader.term.fec5506483a11f5d",
+          "targetDocumentId": "hematology.anemia.reticulocytes"
+        }
+      ]
+    },
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.f8478e513af7",
+      "sourceSha256": "f8478e513af7cf1300a4e38100cae1f0636f121b2ff5e212a622ce0e31129201",
+      "sourceLengthUtf16": 246,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.fe038c7b1a5d",
+      "sourceSha256": "fe038c7b1a5d7e9ad7c85361e97dcdfd56406acf0e5c8f16fc6744d554d8061c",
+      "sourceLengthUtf16": 211,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.9b9c080e4dbb",
+      "sourceSha256": "9b9c080e4dbb4b9f53bca8dc971e138beff3fbe880ec3cb8d60fa948f0988bc3",
+      "sourceLengthUtf16": 262,
+      "annotations": [
+        {
+          "id": "ann.3a1837c16e0c08480237",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 99,
+            "exact": "검사에서 말하는 직접반응 빌리루빈(direct-reacting bilirubin)은 측정법상의 범주이므로 순수한 포합 빌리루빈과 완전히 같은 물질 집합을 의미하지 않을 수 있다.",
+            "prefix": "",
+            "suffix": " 총 빌리루빈만으로 분획과 원인을 알 수 없"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.4b7b72d564b3",
+      "sourceSha256": "4b7b72d564b364ba885edd7e5249cab42e65d4c6fb932a79e8b96d0a05c82c01",
+      "sourceLengthUtf16": 220,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.17f3170dcaa8",
+      "sourceSha256": "17f3170dcaa82845ebff87bb5fab504a874bd462cdd4c5cfa0091d47d4c0fdd4",
+      "sourceLengthUtf16": 225,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.3963c4763c97",
+      "sourceSha256": "3963c4763c977b8ec3d8ca7a095a2e9eb19132f98d174b2a2d4ad193c2df2b87",
+      "sourceLengthUtf16": 240,
+      "annotations": []
+    },
+    {
+      "blockId": "neonatology.bilirubin.production-and-clearance.b.55eb9c2c384b",
+      "sourceSha256": "55eb9c2c384b709460b2159cf70a10881e53357c72b53b670df52f27a160acb1",
+      "sourceLengthUtf16": 226,
+      "annotations": []
+    }
+  ]
+}

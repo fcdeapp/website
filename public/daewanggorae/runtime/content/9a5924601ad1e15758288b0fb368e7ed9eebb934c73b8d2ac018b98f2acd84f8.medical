@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "documentId": "neurology.inflammation.multiple-sclerosis-assessment",
+  "offsetBasis": "paragraph.markdown_exact_utf16",
+  "blocks": [
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.a77c0360b983",
+      "sourceSha256": "a77c0360b9830a7f0ee5a19d2fe5278a6b3a5bf655da65733148c7fe0b92fa12",
+      "sourceLengthUtf16": 244,
+      "annotations": [
+        {
+          "id": "ann.419184fa17a625bd3da1",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 77,
+            "end": 79,
+            "exact": "소뇌",
+            "prefix": " 손상이 관여하는 질환이다. 시신경과 뇌간·",
+            "suffix": "·척수 등 위치에 따라 시력 저하, 복시, "
+          },
+          "conceptId": "reader.term.4799594fa35f4571",
+          "targetDocumentId": "neuroanatomy.cerebellum.cortex-connections"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.15dfb5695943",
+      "sourceSha256": "15dfb569594359025718bfcda0f092233f281cb377bc6b60178ad1ca944db57d",
+      "sourceLengthUtf16": 211,
+      "annotations": [
+        {
+          "id": "ann.7514cd7b53d94600a506",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 67,
+            "end": 93,
+            "exact": "혈관성·망막·안와와 다른 염증 질환을 구별한다.",
+            "prefix": "든 단안 시력 저하가 같은 원인은 아니다. ",
+            "suffix": " 척수 증상에서는 감각 수준과 약화·반사·방"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.cc0140c9edbe",
+      "sourceSha256": "cc0140c9edbe6cd1605f773b1ded21eff7875a9ba7c0bc66f0b956c7232cf315",
+      "sourceLengthUtf16": 244,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.a668535d19cb",
+      "sourceSha256": "a668535d19cb8931666bf438c2940d26f3d587b56995e4512103de99c3471732",
+      "sourceLengthUtf16": 237,
+      "annotations": [
+        {
+          "id": "ann.e9127cc8b7d40266d9ac",
+          "kind": "conceptLink",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 4,
+            "exact": "뇌척수액",
+            "prefix": "",
+            "suffix": "의 면역글로불린 관련 소견은 중추 면역 활동"
+          },
+          "conceptId": "reader.term.c945be38ff68f3d1",
+          "targetDocumentId": "neuroanatomy.meninges.ventricles-csf"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.c9bda55b720e",
+      "sourceSha256": "c9bda55b720e1b298b1ea0333a66f5292575c005ce821667def0f245d74ffc9d",
+      "sourceLengthUtf16": 256,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.94c4cc32fec7",
+      "sourceSha256": "94c4cc32fec7ec85b20376d23f7417b8fea4327a69e6b1a4039a334feec63db4",
+      "sourceLengthUtf16": 213,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.ce3b5daf53df",
+      "sourceSha256": "ce3b5daf53df7ad9809b466058a1518d9619464a7c4ef9bfe883359a1b5b461c",
+      "sourceLengthUtf16": 222,
+      "annotations": [
+        {
+          "id": "ann.8303a3601695ba35798a",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 0,
+            "end": 63,
+            "exact": "새로운 염증 활동에 의한 재발과 열·감염·피로 등으로 기존 증상이 일시적으로 심해지는 가성 악화는 구별해야 한다.",
+            "prefix": "",
+            "suffix": " 두 과정이 공존할 수도 있다. 증상의 시작"
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.bfabe21f4881",
+      "sourceSha256": "bfabe21f488121bfdf0df24a384926390bfc9d69c275aab1e1138dc66a39cffd",
+      "sourceLengthUtf16": 231,
+      "annotations": []
+    },
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.e59e281d712e",
+      "sourceSha256": "e59e281d712e61bd8ce312d7aea7026a239ea10745b4e32d5cb334c0369f8e89",
+      "sourceLengthUtf16": 204,
+      "annotations": [
+        {
+          "id": "ann.ef5eb01b51786272a511",
+          "kind": "highlight",
+          "selector": {
+            "type": "TextPositionAndQuote",
+            "offsetUnit": "utf16",
+            "start": 58,
+            "end": 111,
+            "exact": "환자가 피로하다고 말할 때 졸림과 근력의 저하, 주관적 소진과 실제 반복 수행 감소를 구별한다.",
+            "prefix": "혈, 약물과 활동의 영향을 받을 수 있다. ",
+            "suffix": " 원인을 하나로 고정하지 않고 생활 패턴과 "
+          },
+          "level": "key",
+          "reason": "distinction_or_caution_rule",
+          "reviewStatus": "editorial_seed_not_medically_certified"
+        }
+      ]
+    },
+    {
+      "blockId": "neurology.inflammation.multiple-sclerosis-assessment.b.d36444f947bd",
+      "sourceSha256": "d36444f947bd45ca2960b5babcd005c3fd5c2c13a02355fa2fbb81ee86594267",
+      "sourceLengthUtf16": 241,
+      "annotations": []
+    }
+  ]
+}
